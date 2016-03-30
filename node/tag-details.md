@@ -77,6 +77,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -90,6 +91,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -107,6 +109,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -127,6 +130,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -175,6 +179,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -197,6 +202,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
 
@@ -210,6 +216,7 @@ ENV NODE_VERSION=0.10.43
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
 
@@ -223,6 +230,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
 
@@ -243,6 +251,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 27.0 MB (27008399 bytes)
 -	v2 Blob: `sha256:e74a9441929bd9481627530a1c9a12bfa563125bea2719a93af2a86428b70323`
 -	v2 Content-Length: 10.1 MB (10145853 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:51 GMT
 
 #### `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
 
@@ -256,6 +265,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.10`
 
@@ -279,6 +289,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -292,6 +303,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -309,6 +321,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -329,6 +342,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -377,6 +391,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -399,6 +414,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
 
@@ -412,6 +428,7 @@ ENV NODE_VERSION=0.10.43
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
 
@@ -425,6 +442,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
 
@@ -445,6 +463,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 27.0 MB (27008399 bytes)
 -	v2 Blob: `sha256:e74a9441929bd9481627530a1c9a12bfa563125bea2719a93af2a86428b70323`
 -	v2 Content-Length: 10.1 MB (10145853 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:51 GMT
 
 #### `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
 
@@ -458,6 +477,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.10.43-onbuild`
 
@@ -481,6 +501,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -494,6 +515,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -511,6 +533,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -531,6 +554,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -579,6 +603,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -601,6 +626,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
 
@@ -614,6 +640,7 @@ ENV NODE_VERSION=0.10.43
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
 
@@ -627,6 +654,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
 
@@ -647,6 +675,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 27.0 MB (27008399 bytes)
 -	v2 Blob: `sha256:e74a9441929bd9481627530a1c9a12bfa563125bea2719a93af2a86428b70323`
 -	v2 Content-Length: 10.1 MB (10145853 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:51 GMT
 
 #### `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
 
@@ -660,6 +689,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c65f9f172332933962e51ece7f853261eeb4c3f45559877dcadfe6dbd7472b1a`
 
@@ -673,6 +703,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8b9aae0d2327d02c7542257fdd3115e599a0047fe08e669e75fa3e4bf3a0c69b`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:03:42 GMT
 
 #### `46fd0cc35fceab647fcbf1e11b9ad93796c9c0045ec50645e0462f8a65e4b88b`
 
@@ -686,6 +717,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `918f0e5f7152c3bb58f72f9463346aad534c65d849d06cfe114992935af18809`
 
@@ -699,6 +731,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `89d29e60c5ee8e1512ac59eab9a3e88308403a38f3842399c88b4031e6a5acb4`
 
@@ -712,6 +745,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4cdf88d4ed0be333278e32546cd2d198b91482d1ffbd9f64d099a5a54c177990`
 
@@ -725,6 +759,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b4557cc507581e8d5ae04111192aab82329c3f33401775a585d1f41ea36f9fa`
 
@@ -738,6 +773,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.10-onbuild`
 
@@ -761,6 +797,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -774,6 +811,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -791,6 +829,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -811,6 +850,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -859,6 +899,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -881,6 +922,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
 
@@ -894,6 +936,7 @@ ENV NODE_VERSION=0.10.43
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
 
@@ -907,6 +950,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
 
@@ -927,6 +971,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 27.0 MB (27008399 bytes)
 -	v2 Blob: `sha256:e74a9441929bd9481627530a1c9a12bfa563125bea2719a93af2a86428b70323`
 -	v2 Content-Length: 10.1 MB (10145853 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:51 GMT
 
 #### `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
 
@@ -940,6 +985,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c65f9f172332933962e51ece7f853261eeb4c3f45559877dcadfe6dbd7472b1a`
 
@@ -953,6 +999,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8b9aae0d2327d02c7542257fdd3115e599a0047fe08e669e75fa3e4bf3a0c69b`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:03:42 GMT
 
 #### `46fd0cc35fceab647fcbf1e11b9ad93796c9c0045ec50645e0462f8a65e4b88b`
 
@@ -966,6 +1013,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `918f0e5f7152c3bb58f72f9463346aad534c65d849d06cfe114992935af18809`
 
@@ -979,6 +1027,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `89d29e60c5ee8e1512ac59eab9a3e88308403a38f3842399c88b4031e6a5acb4`
 
@@ -992,6 +1041,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4cdf88d4ed0be333278e32546cd2d198b91482d1ffbd9f64d099a5a54c177990`
 
@@ -1005,6 +1055,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b4557cc507581e8d5ae04111192aab82329c3f33401775a585d1f41ea36f9fa`
 
@@ -1018,6 +1069,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.10.43-slim`
 
@@ -1041,6 +1093,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1054,6 +1107,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a9fb96d30501dbf68907efc653635cd8e068b66fde1678cd6d06f6522b2e01b`
 
@@ -1076,6 +1130,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:44dc6f2cf8e8e7ca81adf3ed6ab4c0eec204c4b4bfa35012c0d3a0af0f2a78b9`
 -	v2 Content-Length: 26.9 KB (26933 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:13:13 GMT
 
 #### `2a1bfbf05e82e32cbcd8b38ee3e7f9009cb6ed0b02436dbbc9270139a3318ebd`
 
@@ -1089,6 +1144,7 @@ ENV NODE_VERSION=0.10.43
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `37e72cfd29dfee35dcedd18e938f77c4431259d3911eb97dd0c3201a6ad084af`
 
@@ -1102,6 +1158,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b88b12b140c7687ef3609c4464fe19566c6d2e419d2eb9dfbea9faaece5733ff`
 
@@ -1127,6 +1184,7 @@ RUN buildDeps='curl ca-certificates xz-utils' \
 -	Virtual Size: 32.7 MB (32713653 bytes)
 -	v2 Blob: `sha256:339db5bde8bb4c553e5ea75600b9c673b19661ce89f2c1dae76aeb31d200e64a`
 -	v2 Content-Length: 12.6 MB (12623885 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 05:26:11 GMT
 
 #### `5a97a31b1d69478b2fd6738acef0b417a6a4863697c68a94c8069dc7258746ce`
 
@@ -1140,6 +1198,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.10-slim`
 
@@ -1163,6 +1222,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1176,6 +1236,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a9fb96d30501dbf68907efc653635cd8e068b66fde1678cd6d06f6522b2e01b`
 
@@ -1198,6 +1259,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:44dc6f2cf8e8e7ca81adf3ed6ab4c0eec204c4b4bfa35012c0d3a0af0f2a78b9`
 -	v2 Content-Length: 26.9 KB (26933 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:13:13 GMT
 
 #### `2a1bfbf05e82e32cbcd8b38ee3e7f9009cb6ed0b02436dbbc9270139a3318ebd`
 
@@ -1211,6 +1273,7 @@ ENV NODE_VERSION=0.10.43
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `37e72cfd29dfee35dcedd18e938f77c4431259d3911eb97dd0c3201a6ad084af`
 
@@ -1224,6 +1287,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b88b12b140c7687ef3609c4464fe19566c6d2e419d2eb9dfbea9faaece5733ff`
 
@@ -1249,6 +1313,7 @@ RUN buildDeps='curl ca-certificates xz-utils' \
 -	Virtual Size: 32.7 MB (32713653 bytes)
 -	v2 Blob: `sha256:339db5bde8bb4c553e5ea75600b9c673b19661ce89f2c1dae76aeb31d200e64a`
 -	v2 Content-Length: 12.6 MB (12623885 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 05:26:11 GMT
 
 #### `5a97a31b1d69478b2fd6738acef0b417a6a4863697c68a94c8069dc7258746ce`
 
@@ -1262,6 +1327,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.10.43-wheezy`
 
@@ -1285,6 +1351,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1298,6 +1365,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -1315,6 +1383,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -1335,6 +1404,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -1383,6 +1453,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -1405,6 +1476,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `dadaa21b02bcd3bac4ddff15898dee7f3d69c17e229db9b1c0ea82011a6734cd`
 
@@ -1418,6 +1490,7 @@ ENV NODE_VERSION=0.10.43
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `921abb520f211460813b245ddb95f9c3fe2300609e0f3f80ee55759b55c7a159`
 
@@ -1431,6 +1504,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c1b280d7910eab2b9bf30db2487d0fab47a2a988e22319059a653e144426880`
 
@@ -1451,6 +1525,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 27.0 MB (27008399 bytes)
 -	v2 Blob: `sha256:f18293d2c2ea994735b61932655483800b3ad0730bf754c7a8ba76b9f2e027f3`
 -	v2 Content-Length: 10.1 MB (10145853 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:07 GMT
 
 #### `1e9f8dcebe04f475712a8825947297c78cf85df2eeb47a340d6c4bfbaff051d4`
 
@@ -1464,6 +1539,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.10-wheezy`
 
@@ -1487,6 +1563,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1500,6 +1577,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -1517,6 +1595,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -1537,6 +1616,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -1585,6 +1665,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -1607,6 +1688,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `dadaa21b02bcd3bac4ddff15898dee7f3d69c17e229db9b1c0ea82011a6734cd`
 
@@ -1620,6 +1702,7 @@ ENV NODE_VERSION=0.10.43
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `921abb520f211460813b245ddb95f9c3fe2300609e0f3f80ee55759b55c7a159`
 
@@ -1633,6 +1716,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c1b280d7910eab2b9bf30db2487d0fab47a2a988e22319059a653e144426880`
 
@@ -1653,6 +1737,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 27.0 MB (27008399 bytes)
 -	v2 Blob: `sha256:f18293d2c2ea994735b61932655483800b3ad0730bf754c7a8ba76b9f2e027f3`
 -	v2 Content-Length: 10.1 MB (10145853 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:07 GMT
 
 #### `1e9f8dcebe04f475712a8825947297c78cf85df2eeb47a340d6c4bfbaff051d4`
 
@@ -1666,6 +1751,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.12.12`
 
@@ -1689,6 +1775,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1702,6 +1789,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1719,6 +1807,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -1739,6 +1828,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -1787,6 +1877,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -1809,6 +1900,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `77d09a563e9600ddb518280577c1883577133c22644ea3debba589552ba0849c`
 
@@ -1822,6 +1914,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f63e8da778b8eff16ceeb4ea0ad8c26946ebd1c758a738d8b3e8c95202f978ff`
 
@@ -1840,6 +1933,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 30.4 MB (30373489 bytes)
 -	v2 Blob: `sha256:075e8c676bacb8a19d92308a79e916cbe3c906ff0c35565a9043c7358efed810`
 -	v2 Content-Length: 9.8 MB (9793736 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:05:45 GMT
 
 #### `70e9dc51ac393c18e505583dfcfe8e59fd540d79a24936c3f8f96a89eae58ca5`
 
@@ -1853,6 +1947,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.12`
 
@@ -1876,6 +1971,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1889,6 +1985,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1906,6 +2003,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -1926,6 +2024,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -1974,6 +2073,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -1996,6 +2096,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `77d09a563e9600ddb518280577c1883577133c22644ea3debba589552ba0849c`
 
@@ -2009,6 +2110,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f63e8da778b8eff16ceeb4ea0ad8c26946ebd1c758a738d8b3e8c95202f978ff`
 
@@ -2027,6 +2129,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 30.4 MB (30373489 bytes)
 -	v2 Blob: `sha256:075e8c676bacb8a19d92308a79e916cbe3c906ff0c35565a9043c7358efed810`
 -	v2 Content-Length: 9.8 MB (9793736 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:05:45 GMT
 
 #### `70e9dc51ac393c18e505583dfcfe8e59fd540d79a24936c3f8f96a89eae58ca5`
 
@@ -2040,6 +2143,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0`
 
@@ -2063,6 +2167,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2076,6 +2181,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2093,6 +2199,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2113,6 +2220,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -2161,6 +2269,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -2183,6 +2292,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `77d09a563e9600ddb518280577c1883577133c22644ea3debba589552ba0849c`
 
@@ -2196,6 +2306,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f63e8da778b8eff16ceeb4ea0ad8c26946ebd1c758a738d8b3e8c95202f978ff`
 
@@ -2214,6 +2325,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 30.4 MB (30373489 bytes)
 -	v2 Blob: `sha256:075e8c676bacb8a19d92308a79e916cbe3c906ff0c35565a9043c7358efed810`
 -	v2 Content-Length: 9.8 MB (9793736 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:05:45 GMT
 
 #### `70e9dc51ac393c18e505583dfcfe8e59fd540d79a24936c3f8f96a89eae58ca5`
 
@@ -2227,6 +2339,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.12.12-onbuild`
 
@@ -2250,6 +2363,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2263,6 +2377,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2280,6 +2395,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2300,6 +2416,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -2348,6 +2465,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -2370,6 +2488,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `77d09a563e9600ddb518280577c1883577133c22644ea3debba589552ba0849c`
 
@@ -2383,6 +2502,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f63e8da778b8eff16ceeb4ea0ad8c26946ebd1c758a738d8b3e8c95202f978ff`
 
@@ -2401,6 +2521,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 30.4 MB (30373489 bytes)
 -	v2 Blob: `sha256:075e8c676bacb8a19d92308a79e916cbe3c906ff0c35565a9043c7358efed810`
 -	v2 Content-Length: 9.8 MB (9793736 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:05:45 GMT
 
 #### `70e9dc51ac393c18e505583dfcfe8e59fd540d79a24936c3f8f96a89eae58ca5`
 
@@ -2414,6 +2535,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ac5aef4632128bf9fe77a2e1a68d4de5d9e74f74b075abb5a788b208313b80c`
 
@@ -2427,6 +2549,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:762e301782d0f4ef286e586dd6140590ed9be6fb9d50202340ea288d2445a8ca`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:06:13 GMT
 
 #### `6d490d81e79ac246d48be1eee6dbd9b68bb1522618d409e41a6ff1d37549bcd6`
 
@@ -2440,6 +2563,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1fd66e65e9e5b3189da6c9855c5ef033004cf6c44e829ba4835c3be58af5d703`
 
@@ -2453,6 +2577,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1cc46d5d1feea313a67b49b364e77480a92dc81326f4852c3169e703b7f9bf40`
 
@@ -2466,6 +2591,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a9f50ab307b7268b3eb59c94b8650f16c170f31de1f5ebaacc83d9347082683`
 
@@ -2479,6 +2605,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c58154b7517da8cae2c800da82d357b4dc380e04a4c03e499d7dce48cdfd22a0`
 
@@ -2492,6 +2619,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.12-onbuild`
 
@@ -2515,6 +2643,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2528,6 +2657,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2545,6 +2675,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2565,6 +2696,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -2613,6 +2745,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -2635,6 +2768,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `77d09a563e9600ddb518280577c1883577133c22644ea3debba589552ba0849c`
 
@@ -2648,6 +2782,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f63e8da778b8eff16ceeb4ea0ad8c26946ebd1c758a738d8b3e8c95202f978ff`
 
@@ -2666,6 +2801,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 30.4 MB (30373489 bytes)
 -	v2 Blob: `sha256:075e8c676bacb8a19d92308a79e916cbe3c906ff0c35565a9043c7358efed810`
 -	v2 Content-Length: 9.8 MB (9793736 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:05:45 GMT
 
 #### `70e9dc51ac393c18e505583dfcfe8e59fd540d79a24936c3f8f96a89eae58ca5`
 
@@ -2679,6 +2815,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ac5aef4632128bf9fe77a2e1a68d4de5d9e74f74b075abb5a788b208313b80c`
 
@@ -2692,6 +2829,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:762e301782d0f4ef286e586dd6140590ed9be6fb9d50202340ea288d2445a8ca`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:06:13 GMT
 
 #### `6d490d81e79ac246d48be1eee6dbd9b68bb1522618d409e41a6ff1d37549bcd6`
 
@@ -2705,6 +2843,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1fd66e65e9e5b3189da6c9855c5ef033004cf6c44e829ba4835c3be58af5d703`
 
@@ -2718,6 +2857,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1cc46d5d1feea313a67b49b364e77480a92dc81326f4852c3169e703b7f9bf40`
 
@@ -2731,6 +2871,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a9f50ab307b7268b3eb59c94b8650f16c170f31de1f5ebaacc83d9347082683`
 
@@ -2744,6 +2885,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c58154b7517da8cae2c800da82d357b4dc380e04a4c03e499d7dce48cdfd22a0`
 
@@ -2757,6 +2899,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0-onbuild`
 
@@ -2780,6 +2923,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2793,6 +2937,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2810,6 +2955,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2830,6 +2976,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -2878,6 +3025,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -2900,6 +3048,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `77d09a563e9600ddb518280577c1883577133c22644ea3debba589552ba0849c`
 
@@ -2913,6 +3062,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f63e8da778b8eff16ceeb4ea0ad8c26946ebd1c758a738d8b3e8c95202f978ff`
 
@@ -2931,6 +3081,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 30.4 MB (30373489 bytes)
 -	v2 Blob: `sha256:075e8c676bacb8a19d92308a79e916cbe3c906ff0c35565a9043c7358efed810`
 -	v2 Content-Length: 9.8 MB (9793736 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:05:45 GMT
 
 #### `70e9dc51ac393c18e505583dfcfe8e59fd540d79a24936c3f8f96a89eae58ca5`
 
@@ -2944,6 +3095,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ac5aef4632128bf9fe77a2e1a68d4de5d9e74f74b075abb5a788b208313b80c`
 
@@ -2957,6 +3109,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:762e301782d0f4ef286e586dd6140590ed9be6fb9d50202340ea288d2445a8ca`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:06:13 GMT
 
 #### `6d490d81e79ac246d48be1eee6dbd9b68bb1522618d409e41a6ff1d37549bcd6`
 
@@ -2970,6 +3123,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1fd66e65e9e5b3189da6c9855c5ef033004cf6c44e829ba4835c3be58af5d703`
 
@@ -2983,6 +3137,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1cc46d5d1feea313a67b49b364e77480a92dc81326f4852c3169e703b7f9bf40`
 
@@ -2996,6 +3151,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a9f50ab307b7268b3eb59c94b8650f16c170f31de1f5ebaacc83d9347082683`
 
@@ -3009,6 +3165,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c58154b7517da8cae2c800da82d357b4dc380e04a4c03e499d7dce48cdfd22a0`
 
@@ -3022,6 +3179,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.12.12-slim`
 
@@ -3045,6 +3203,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3058,6 +3217,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a9fb96d30501dbf68907efc653635cd8e068b66fde1678cd6d06f6522b2e01b`
 
@@ -3080,6 +3240,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:44dc6f2cf8e8e7ca81adf3ed6ab4c0eec204c4b4bfa35012c0d3a0af0f2a78b9`
 -	v2 Content-Length: 26.9 KB (26933 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:13:13 GMT
 
 #### `4f8e7718ea84d082b61f425ba2dfe47bc21cf93e59c47d5d9bb94f75b2510db5`
 
@@ -3093,6 +3254,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `708a1706ed826a7215c5a0bf1cd7e5fc0784aa4dac59387c82cb92788cc78c90`
 
@@ -3116,6 +3278,7 @@ RUN buildDeps='curl ca-certificates xz-utils' \
 -	Virtual Size: 36.1 MB (36078743 bytes)
 -	v2 Blob: `sha256:992dbaa1666745fd8fdc075f7f4fd5a316831d76d2e476b880d99e53a483c97f`
 -	v2 Content-Length: 12.3 MB (12264347 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 18:37:11 GMT
 
 #### `8a598342646f38124aa77b6ea52d27b7f31a0a68f400ac2649d77e577fd99972`
 
@@ -3129,6 +3292,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.12-slim`
 
@@ -3152,6 +3316,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3165,6 +3330,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a9fb96d30501dbf68907efc653635cd8e068b66fde1678cd6d06f6522b2e01b`
 
@@ -3187,6 +3353,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:44dc6f2cf8e8e7ca81adf3ed6ab4c0eec204c4b4bfa35012c0d3a0af0f2a78b9`
 -	v2 Content-Length: 26.9 KB (26933 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:13:13 GMT
 
 #### `4f8e7718ea84d082b61f425ba2dfe47bc21cf93e59c47d5d9bb94f75b2510db5`
 
@@ -3200,6 +3367,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `708a1706ed826a7215c5a0bf1cd7e5fc0784aa4dac59387c82cb92788cc78c90`
 
@@ -3223,6 +3391,7 @@ RUN buildDeps='curl ca-certificates xz-utils' \
 -	Virtual Size: 36.1 MB (36078743 bytes)
 -	v2 Blob: `sha256:992dbaa1666745fd8fdc075f7f4fd5a316831d76d2e476b880d99e53a483c97f`
 -	v2 Content-Length: 12.3 MB (12264347 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 18:37:11 GMT
 
 #### `8a598342646f38124aa77b6ea52d27b7f31a0a68f400ac2649d77e577fd99972`
 
@@ -3236,6 +3405,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0-slim`
 
@@ -3259,6 +3429,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3272,6 +3443,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a9fb96d30501dbf68907efc653635cd8e068b66fde1678cd6d06f6522b2e01b`
 
@@ -3294,6 +3466,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:44dc6f2cf8e8e7ca81adf3ed6ab4c0eec204c4b4bfa35012c0d3a0af0f2a78b9`
 -	v2 Content-Length: 26.9 KB (26933 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:13:13 GMT
 
 #### `4f8e7718ea84d082b61f425ba2dfe47bc21cf93e59c47d5d9bb94f75b2510db5`
 
@@ -3307,6 +3480,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `708a1706ed826a7215c5a0bf1cd7e5fc0784aa4dac59387c82cb92788cc78c90`
 
@@ -3330,6 +3504,7 @@ RUN buildDeps='curl ca-certificates xz-utils' \
 -	Virtual Size: 36.1 MB (36078743 bytes)
 -	v2 Blob: `sha256:992dbaa1666745fd8fdc075f7f4fd5a316831d76d2e476b880d99e53a483c97f`
 -	v2 Content-Length: 12.3 MB (12264347 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 18:37:11 GMT
 
 #### `8a598342646f38124aa77b6ea52d27b7f31a0a68f400ac2649d77e577fd99972`
 
@@ -3343,6 +3518,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.12.12-wheezy`
 
@@ -3366,6 +3542,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -3379,6 +3556,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -3396,6 +3574,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -3416,6 +3595,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -3464,6 +3644,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -3486,6 +3667,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `e4c1eb36a613ddabafe2c6b3c0104c22cb1c0875490b290e7f53f2d84813b0a7`
 
@@ -3499,6 +3681,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86ed1981615e8a9ad2384f992650d2f654c97a876da3cf81d34eacf7fb74dea4`
 
@@ -3517,6 +3700,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 30.4 MB (30373489 bytes)
 -	v2 Blob: `sha256:a612ba815cef88c80cd0a61f0e889c680461df1d7644e1f77b5d8727a959942a`
 -	v2 Content-Length: 9.8 MB (9793747 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:06:47 GMT
 
 #### `3282dcf9386874c954f73ace4ed21d5bd911a6b5f43ee33ca0f2914742b91f06`
 
@@ -3530,6 +3714,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0.12-wheezy`
 
@@ -3553,6 +3738,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -3566,6 +3752,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -3583,6 +3770,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -3603,6 +3791,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -3651,6 +3840,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -3673,6 +3863,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `e4c1eb36a613ddabafe2c6b3c0104c22cb1c0875490b290e7f53f2d84813b0a7`
 
@@ -3686,6 +3877,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86ed1981615e8a9ad2384f992650d2f654c97a876da3cf81d34eacf7fb74dea4`
 
@@ -3704,6 +3896,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 30.4 MB (30373489 bytes)
 -	v2 Blob: `sha256:a612ba815cef88c80cd0a61f0e889c680461df1d7644e1f77b5d8727a959942a`
 -	v2 Content-Length: 9.8 MB (9793747 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:06:47 GMT
 
 #### `3282dcf9386874c954f73ace4ed21d5bd911a6b5f43ee33ca0f2914742b91f06`
 
@@ -3717,6 +3910,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:0-wheezy`
 
@@ -3740,6 +3934,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -3753,6 +3948,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -3770,6 +3966,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -3790,6 +3987,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -3838,6 +4036,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -3860,6 +4059,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `e4c1eb36a613ddabafe2c6b3c0104c22cb1c0875490b290e7f53f2d84813b0a7`
 
@@ -3873,6 +4073,7 @@ ENV NODE_VERSION=0.12.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86ed1981615e8a9ad2384f992650d2f654c97a876da3cf81d34eacf7fb74dea4`
 
@@ -3891,6 +4092,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 30.4 MB (30373489 bytes)
 -	v2 Blob: `sha256:a612ba815cef88c80cd0a61f0e889c680461df1d7644e1f77b5d8727a959942a`
 -	v2 Content-Length: 9.8 MB (9793747 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:06:47 GMT
 
 #### `3282dcf9386874c954f73ace4ed21d5bd911a6b5f43ee33ca0f2914742b91f06`
 
@@ -3904,6 +4106,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4.4.1`
 
@@ -3927,6 +4130,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3940,6 +4144,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3957,6 +4162,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -3977,6 +4183,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -4025,6 +4232,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -4047,6 +4255,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -4060,6 +4269,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `366fb16095a98fd67f673463e20ee873f242a60a6f20dcf814f4c83b63fab720`
 
@@ -4073,6 +4283,7 @@ ENV NODE_VERSION=4.4.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c48bdca43df5352a7ffcbf82d2c818b658cc519c7d4819c1657c814b626707f`
 
@@ -4086,6 +4297,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (37000672 bytes)
 -	v2 Blob: `sha256:b5164802a74985f94700bba420ce38f6d900ec8890addccf2ad6d9cb7383645e`
 -	v2 Content-Length: 12.1 MB (12112164 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:07:14 GMT
 
 #### `409b14a74fa15a3466b313b804d0ae669786666d9345f644e5e8de9f91ff761c`
 
@@ -4099,6 +4311,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4.4`
 
@@ -4122,6 +4335,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4135,6 +4349,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4152,6 +4367,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -4172,6 +4388,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -4220,6 +4437,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -4242,6 +4460,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -4255,6 +4474,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbca0a03808805fb91fda570b1000d444f1266d80a762858558f4a28d54fc07f`
 
@@ -4268,6 +4488,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6ab93d55d0714cffc7e063b957c048db3ca6483e020ec03d947d73fce752ea3b`
 
@@ -4281,6 +4502,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (36977785 bytes)
 -	v2 Blob: `sha256:7981a65ce4b10062cc685a555c738263c01c6aca6fc65d77403895fd8dad1ede`
 -	v2 Content-Length: 12.1 MB (12109649 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:27:58 GMT
 
 #### `19372b832591e03e6784534105d4a62fecf15e7e42e326d47e75d56aeedbacd5`
 
@@ -4294,6 +4516,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4`
 
@@ -4317,6 +4540,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4330,6 +4554,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4347,6 +4572,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -4367,6 +4593,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -4415,6 +4642,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -4437,6 +4665,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -4450,6 +4679,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbca0a03808805fb91fda570b1000d444f1266d80a762858558f4a28d54fc07f`
 
@@ -4463,6 +4693,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6ab93d55d0714cffc7e063b957c048db3ca6483e020ec03d947d73fce752ea3b`
 
@@ -4476,6 +4707,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (36977785 bytes)
 -	v2 Blob: `sha256:7981a65ce4b10062cc685a555c738263c01c6aca6fc65d77403895fd8dad1ede`
 -	v2 Content-Length: 12.1 MB (12109649 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:27:58 GMT
 
 #### `19372b832591e03e6784534105d4a62fecf15e7e42e326d47e75d56aeedbacd5`
 
@@ -4489,6 +4721,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:argon`
 
@@ -4512,6 +4745,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4525,6 +4759,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4542,6 +4777,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -4562,6 +4798,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -4610,6 +4847,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -4632,6 +4870,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -4645,6 +4884,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbca0a03808805fb91fda570b1000d444f1266d80a762858558f4a28d54fc07f`
 
@@ -4658,6 +4898,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6ab93d55d0714cffc7e063b957c048db3ca6483e020ec03d947d73fce752ea3b`
 
@@ -4671,6 +4912,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (36977785 bytes)
 -	v2 Blob: `sha256:7981a65ce4b10062cc685a555c738263c01c6aca6fc65d77403895fd8dad1ede`
 -	v2 Content-Length: 12.1 MB (12109649 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:27:58 GMT
 
 #### `19372b832591e03e6784534105d4a62fecf15e7e42e326d47e75d56aeedbacd5`
 
@@ -4684,6 +4926,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4.4.1-onbuild`
 
@@ -4707,6 +4950,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4720,6 +4964,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4737,6 +4982,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -4757,6 +5003,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -4805,6 +5052,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -4827,6 +5075,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -4840,6 +5089,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `366fb16095a98fd67f673463e20ee873f242a60a6f20dcf814f4c83b63fab720`
 
@@ -4853,6 +5103,7 @@ ENV NODE_VERSION=4.4.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c48bdca43df5352a7ffcbf82d2c818b658cc519c7d4819c1657c814b626707f`
 
@@ -4866,6 +5117,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (37000672 bytes)
 -	v2 Blob: `sha256:b5164802a74985f94700bba420ce38f6d900ec8890addccf2ad6d9cb7383645e`
 -	v2 Content-Length: 12.1 MB (12112164 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:07:14 GMT
 
 #### `409b14a74fa15a3466b313b804d0ae669786666d9345f644e5e8de9f91ff761c`
 
@@ -4879,6 +5131,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8b38a42b9586a7d0b75e96f850c8955e73140810197e4c5a7676a15a67df8b14`
 
@@ -4892,6 +5145,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:dba8bb6091d8cb375307476c07f2a5dcc978509fe8c33b4d07b69b096ee9cbb0`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:07:51 GMT
 
 #### `69617613da4b19695765205f562aea9f876717edf8845f83ec3d88f0c664545e`
 
@@ -4905,6 +5159,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `81849148b9a9629a3024a94980b05cad66f8af438b23167c450de3e823e4848e`
 
@@ -4918,6 +5173,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `114f5442c7017e63064d14d043f500500982a7230485fbb01eae1cda9de96e4b`
 
@@ -4931,6 +5187,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b33b241bb20c3cd3c684891688bdc149b63311f3c3fd45751f632f503a666219`
 
@@ -4944,6 +5201,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `241d677467fa83f70a311dd38785f768c5a8d686a656bded6e0fc3d4318fb674`
 
@@ -4957,6 +5215,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4.4-onbuild`
 
@@ -4980,6 +5239,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4993,6 +5253,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5010,6 +5271,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -5030,6 +5292,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -5078,6 +5341,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -5100,6 +5364,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -5113,6 +5378,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbca0a03808805fb91fda570b1000d444f1266d80a762858558f4a28d54fc07f`
 
@@ -5126,6 +5392,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6ab93d55d0714cffc7e063b957c048db3ca6483e020ec03d947d73fce752ea3b`
 
@@ -5139,6 +5406,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (36977785 bytes)
 -	v2 Blob: `sha256:7981a65ce4b10062cc685a555c738263c01c6aca6fc65d77403895fd8dad1ede`
 -	v2 Content-Length: 12.1 MB (12109649 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:27:58 GMT
 
 #### `19372b832591e03e6784534105d4a62fecf15e7e42e326d47e75d56aeedbacd5`
 
@@ -5152,6 +5420,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1a63000059b6adf40d86c741148b5b283946451cc50860ff18ad7d6ced80471`
 
@@ -5165,6 +5434,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e9c4bafea414efeabffad69c95f0ac717540d73f5c443c4915a77779a022a611`
 -	v2 Content-Length: 126.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:28:32 GMT
 
 #### `31d27b8abd5d91a63a18585d0a046be7d66b1dc31242a03509a68f7b22d9aa04`
 
@@ -5178,6 +5448,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `716021165d8baf6fb6d68be83edfe3567f625bdd1b691db43bcc7096ae2b7fd4`
 
@@ -5191,6 +5462,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93ecad5ae1e92cc1346d2bc729ed7ca0482c450a6c1137eaf909b430f3fbb777`
 
@@ -5204,6 +5476,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `924ff33b8ee46fbdeb6a8193ed6d7110c3588d98f97fd7650e727e8fe962ebe3`
 
@@ -5217,6 +5490,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83302cc85f52d797a73e3803b21ca7f9a67098583be2b0bdf109ff388f0702fc`
 
@@ -5230,6 +5504,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4-onbuild`
 
@@ -5253,6 +5528,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5266,6 +5542,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5283,6 +5560,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -5303,6 +5581,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -5351,6 +5630,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -5373,6 +5653,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -5386,6 +5667,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbca0a03808805fb91fda570b1000d444f1266d80a762858558f4a28d54fc07f`
 
@@ -5399,6 +5681,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6ab93d55d0714cffc7e063b957c048db3ca6483e020ec03d947d73fce752ea3b`
 
@@ -5412,6 +5695,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (36977785 bytes)
 -	v2 Blob: `sha256:7981a65ce4b10062cc685a555c738263c01c6aca6fc65d77403895fd8dad1ede`
 -	v2 Content-Length: 12.1 MB (12109649 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:27:58 GMT
 
 #### `19372b832591e03e6784534105d4a62fecf15e7e42e326d47e75d56aeedbacd5`
 
@@ -5425,6 +5709,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1a63000059b6adf40d86c741148b5b283946451cc50860ff18ad7d6ced80471`
 
@@ -5438,6 +5723,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e9c4bafea414efeabffad69c95f0ac717540d73f5c443c4915a77779a022a611`
 -	v2 Content-Length: 126.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:28:32 GMT
 
 #### `31d27b8abd5d91a63a18585d0a046be7d66b1dc31242a03509a68f7b22d9aa04`
 
@@ -5451,6 +5737,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `716021165d8baf6fb6d68be83edfe3567f625bdd1b691db43bcc7096ae2b7fd4`
 
@@ -5464,6 +5751,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93ecad5ae1e92cc1346d2bc729ed7ca0482c450a6c1137eaf909b430f3fbb777`
 
@@ -5477,6 +5765,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `924ff33b8ee46fbdeb6a8193ed6d7110c3588d98f97fd7650e727e8fe962ebe3`
 
@@ -5490,6 +5779,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83302cc85f52d797a73e3803b21ca7f9a67098583be2b0bdf109ff388f0702fc`
 
@@ -5503,6 +5793,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:argon-onbuild`
 
@@ -5526,6 +5817,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5539,6 +5831,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5556,6 +5849,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -5576,6 +5870,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -5624,6 +5919,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -5646,6 +5942,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -5659,6 +5956,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbca0a03808805fb91fda570b1000d444f1266d80a762858558f4a28d54fc07f`
 
@@ -5672,6 +5970,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6ab93d55d0714cffc7e063b957c048db3ca6483e020ec03d947d73fce752ea3b`
 
@@ -5685,6 +5984,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (36977785 bytes)
 -	v2 Blob: `sha256:7981a65ce4b10062cc685a555c738263c01c6aca6fc65d77403895fd8dad1ede`
 -	v2 Content-Length: 12.1 MB (12109649 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:27:58 GMT
 
 #### `19372b832591e03e6784534105d4a62fecf15e7e42e326d47e75d56aeedbacd5`
 
@@ -5698,6 +5998,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1a63000059b6adf40d86c741148b5b283946451cc50860ff18ad7d6ced80471`
 
@@ -5711,6 +6012,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e9c4bafea414efeabffad69c95f0ac717540d73f5c443c4915a77779a022a611`
 -	v2 Content-Length: 126.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:28:32 GMT
 
 #### `31d27b8abd5d91a63a18585d0a046be7d66b1dc31242a03509a68f7b22d9aa04`
 
@@ -5724,6 +6026,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `716021165d8baf6fb6d68be83edfe3567f625bdd1b691db43bcc7096ae2b7fd4`
 
@@ -5737,6 +6040,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93ecad5ae1e92cc1346d2bc729ed7ca0482c450a6c1137eaf909b430f3fbb777`
 
@@ -5750,6 +6054,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `924ff33b8ee46fbdeb6a8193ed6d7110c3588d98f97fd7650e727e8fe962ebe3`
 
@@ -5763,6 +6068,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83302cc85f52d797a73e3803b21ca7f9a67098583be2b0bdf109ff388f0702fc`
 
@@ -5776,6 +6082,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4.4.1-slim`
 
@@ -5799,6 +6106,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5812,6 +6120,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5829,6 +6138,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `e569cd081a6e285f4a1f90f513fc70dc9f1d7e5d3eb91ae4eac14fb100b59728`
 
@@ -5851,6 +6161,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b6c4c5059134a4e9f52b9512688dcdb3b8890b31d438b23c1b03e1d1cbc6303f`
 -	v2 Content-Length: 26.9 KB (26938 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:19:58 GMT
 
 #### `f1eef947ddacd23aefc079c83eec1f482d74eb262c4f9900f82fd32958c23af8`
 
@@ -5864,6 +6175,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `63864cf376d9d573206f8fa225d7eae4efe75a82605c490d44f46e69bedf5d81`
 
@@ -5877,6 +6189,7 @@ ENV NODE_VERSION=4.4.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fe96612881d52100b9e905e790eca4fe9ece280129407ca85525c6483929a3b`
 
@@ -5900,6 +6213,7 @@ RUN buildDeps='xz-utils'\
 -	Virtual Size: 37.3 MB (37344003 bytes)
 -	v2 Blob: `sha256:a1a2de04661754eda9e4a7e43dc0241f52a61f0125f2ae9d5b8f50a9bc4748f9`
 -	v2 Content-Length: 12.2 MB (12191259 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:08:19 GMT
 
 #### `eeb1217b95f8923f3c29d0b63dd1031db4d6f8460efc9b2a12db50154cbd8d2e`
 
@@ -5913,6 +6227,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4.4-slim`
 
@@ -5936,6 +6251,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5949,6 +6265,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5966,6 +6283,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `e569cd081a6e285f4a1f90f513fc70dc9f1d7e5d3eb91ae4eac14fb100b59728`
 
@@ -5988,6 +6306,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b6c4c5059134a4e9f52b9512688dcdb3b8890b31d438b23c1b03e1d1cbc6303f`
 -	v2 Content-Length: 26.9 KB (26938 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:19:58 GMT
 
 #### `f1eef947ddacd23aefc079c83eec1f482d74eb262c4f9900f82fd32958c23af8`
 
@@ -6001,6 +6320,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0ecf2a8e380b6f709450437820719ef4496e08eb0bde5500b2e9bb48746d8b68`
 
@@ -6014,6 +6334,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6859482cdc1fdbdf5f87b6e4122c657256ef54c01f443e4fbed6fa1bd87ee56`
 
@@ -6037,6 +6358,7 @@ RUN buildDeps='xz-utils'\
 -	Virtual Size: 37.3 MB (37321116 bytes)
 -	v2 Blob: `sha256:8542bf5830b2c21f22751c00a1cc385a0057bc6f489b9ac9068be8319ed7bd76`
 -	v2 Content-Length: 12.2 MB (12188758 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:28:59 GMT
 
 #### `9e1603d060c0306c222d763708899e089304971cd511f8226d5e488977916b85`
 
@@ -6050,6 +6372,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4-slim`
 
@@ -6073,6 +6396,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6086,6 +6410,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6103,6 +6428,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `e569cd081a6e285f4a1f90f513fc70dc9f1d7e5d3eb91ae4eac14fb100b59728`
 
@@ -6125,6 +6451,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b6c4c5059134a4e9f52b9512688dcdb3b8890b31d438b23c1b03e1d1cbc6303f`
 -	v2 Content-Length: 26.9 KB (26938 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:19:58 GMT
 
 #### `f1eef947ddacd23aefc079c83eec1f482d74eb262c4f9900f82fd32958c23af8`
 
@@ -6138,6 +6465,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0ecf2a8e380b6f709450437820719ef4496e08eb0bde5500b2e9bb48746d8b68`
 
@@ -6151,6 +6479,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6859482cdc1fdbdf5f87b6e4122c657256ef54c01f443e4fbed6fa1bd87ee56`
 
@@ -6174,6 +6503,7 @@ RUN buildDeps='xz-utils'\
 -	Virtual Size: 37.3 MB (37321116 bytes)
 -	v2 Blob: `sha256:8542bf5830b2c21f22751c00a1cc385a0057bc6f489b9ac9068be8319ed7bd76`
 -	v2 Content-Length: 12.2 MB (12188758 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:28:59 GMT
 
 #### `9e1603d060c0306c222d763708899e089304971cd511f8226d5e488977916b85`
 
@@ -6187,6 +6517,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:argon-slim`
 
@@ -6210,6 +6541,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6223,6 +6555,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6240,6 +6573,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `e569cd081a6e285f4a1f90f513fc70dc9f1d7e5d3eb91ae4eac14fb100b59728`
 
@@ -6262,6 +6596,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b6c4c5059134a4e9f52b9512688dcdb3b8890b31d438b23c1b03e1d1cbc6303f`
 -	v2 Content-Length: 26.9 KB (26938 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:19:58 GMT
 
 #### `f1eef947ddacd23aefc079c83eec1f482d74eb262c4f9900f82fd32958c23af8`
 
@@ -6275,6 +6610,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0ecf2a8e380b6f709450437820719ef4496e08eb0bde5500b2e9bb48746d8b68`
 
@@ -6288,6 +6624,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6859482cdc1fdbdf5f87b6e4122c657256ef54c01f443e4fbed6fa1bd87ee56`
 
@@ -6311,6 +6648,7 @@ RUN buildDeps='xz-utils'\
 -	Virtual Size: 37.3 MB (37321116 bytes)
 -	v2 Blob: `sha256:8542bf5830b2c21f22751c00a1cc385a0057bc6f489b9ac9068be8319ed7bd76`
 -	v2 Content-Length: 12.2 MB (12188758 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:28:59 GMT
 
 #### `9e1603d060c0306c222d763708899e089304971cd511f8226d5e488977916b85`
 
@@ -6324,6 +6662,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4.4.1-wheezy`
 
@@ -6347,6 +6686,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -6360,6 +6700,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -6377,6 +6718,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -6397,6 +6739,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -6445,6 +6788,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -6467,6 +6811,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `d21fb20ab0127d3825e534ee2c784fce4cfe56912b21277050b89b15de7df166`
 
@@ -6480,6 +6825,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c3aeec7911f0bc1846766dfe4ded4a1c76b98abbdf004748db2fd4c80e69c4f9`
 
@@ -6493,6 +6839,7 @@ ENV NODE_VERSION=4.4.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f00928bc4c7c049a6bd1d4fb0e5de477f8544dca8d6f085cbfbc7fac84bf518`
 
@@ -6506,6 +6853,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (37000672 bytes)
 -	v2 Blob: `sha256:83e29189628fe890d898a41b485a164e6476725621b426785ebce5037eedecf1`
 -	v2 Content-Length: 12.1 MB (12112166 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:08:49 GMT
 
 #### `b042e2828ef2a926a1a23e519c148c8b467ce65246001a260ba21cd751057a70`
 
@@ -6519,6 +6867,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4.4-wheezy`
 
@@ -6542,6 +6891,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -6555,6 +6905,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -6572,6 +6923,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -6592,6 +6944,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -6640,6 +6993,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -6662,6 +7016,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `d21fb20ab0127d3825e534ee2c784fce4cfe56912b21277050b89b15de7df166`
 
@@ -6675,6 +7030,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7d650e3a321ac9553b5745e93b7ed63aa20920d8a030bd271e59990486d9b41`
 
@@ -6688,6 +7044,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5f9003e351946c9bb00ccb8b8b74eac7aaf2a2ecbb4fed19ed965525fe14cb9a`
 
@@ -6701,6 +7058,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (36977785 bytes)
 -	v2 Blob: `sha256:25b352361d5b96738d62255737cd5522532b4883de2e6a65fbb03c8700776c8c`
 -	v2 Content-Length: 12.1 MB (12109649 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:29:26 GMT
 
 #### `028b3f5446b4c30dd8a5c52795d989e44e60ced433b5831085ad8c2a3402db5a`
 
@@ -6714,6 +7072,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:4-wheezy`
 
@@ -6737,6 +7096,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -6750,6 +7110,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -6767,6 +7128,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -6787,6 +7149,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -6835,6 +7198,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -6857,6 +7221,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `d21fb20ab0127d3825e534ee2c784fce4cfe56912b21277050b89b15de7df166`
 
@@ -6870,6 +7235,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7d650e3a321ac9553b5745e93b7ed63aa20920d8a030bd271e59990486d9b41`
 
@@ -6883,6 +7249,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5f9003e351946c9bb00ccb8b8b74eac7aaf2a2ecbb4fed19ed965525fe14cb9a`
 
@@ -6896,6 +7263,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (36977785 bytes)
 -	v2 Blob: `sha256:25b352361d5b96738d62255737cd5522532b4883de2e6a65fbb03c8700776c8c`
 -	v2 Content-Length: 12.1 MB (12109649 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:29:26 GMT
 
 #### `028b3f5446b4c30dd8a5c52795d989e44e60ced433b5831085ad8c2a3402db5a`
 
@@ -6909,6 +7277,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:argon-wheezy`
 
@@ -6932,6 +7301,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -6945,6 +7315,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -6962,6 +7333,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -6982,6 +7354,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -7030,6 +7403,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -7052,6 +7426,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `d21fb20ab0127d3825e534ee2c784fce4cfe56912b21277050b89b15de7df166`
 
@@ -7065,6 +7440,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7d650e3a321ac9553b5745e93b7ed63aa20920d8a030bd271e59990486d9b41`
 
@@ -7078,6 +7454,7 @@ ENV NODE_VERSION=4.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5f9003e351946c9bb00ccb8b8b74eac7aaf2a2ecbb4fed19ed965525fe14cb9a`
 
@@ -7091,6 +7468,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.0 MB (36977785 bytes)
 -	v2 Blob: `sha256:25b352361d5b96738d62255737cd5522532b4883de2e6a65fbb03c8700776c8c`
 -	v2 Content-Length: 12.1 MB (12109649 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:29:26 GMT
 
 #### `028b3f5446b4c30dd8a5c52795d989e44e60ced433b5831085ad8c2a3402db5a`
 
@@ -7104,6 +7482,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5.9.1`
 
@@ -7127,6 +7506,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7140,6 +7520,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7157,6 +7538,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -7177,6 +7559,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -7225,6 +7608,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -7247,6 +7631,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -7260,6 +7645,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3758da52393ff9a7496519efe0e63e9136229dc432a6a477d217884d0b950a33`
 
@@ -7273,6 +7659,7 @@ ENV NODE_VERSION=5.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a5c3ef487ccb353c7ffa4ac4d59d18407718a38dd4cca7c12c349a28bfeb2735`
 
@@ -7286,6 +7673,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37511769 bytes)
 -	v2 Blob: `sha256:e0f4745fa41d5a2c7f43731b0a3cdc4c7472fcbb49f374ad4f1e36da1b56e733`
 -	v2 Content-Length: 12.2 MB (12247160 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:09:27 GMT
 
 #### `75ae26553d99905d35e3b8bc038034f4340d4990856e85e8d04712f11f61163f`
 
@@ -7299,6 +7687,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5.9`
 
@@ -7322,6 +7711,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7335,6 +7725,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7352,6 +7743,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -7372,6 +7764,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -7420,6 +7813,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -7442,6 +7836,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -7455,6 +7850,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c88f029bcb12f64e286749a9e1e26efe3626529a975c39f2fc9c1a709959b27`
 
@@ -7468,6 +7864,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d3533bde148f702ea9e97cabda4c337cb766e69abc78e38d41b4fde310d730c4`
 
@@ -7481,6 +7878,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37539582 bytes)
 -	v2 Blob: `sha256:2109bd3acb9790e697aec425d36cd2b2863706987f52ed0fa8092138faa2c687`
 -	v2 Content-Length: 12.3 MB (12252272 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:29:57 GMT
 
 #### `6a06ae308acc2c4d06ed5ef9870a8dcd25885f7c4b2f9dce66ca6770bc6d9694`
 
@@ -7494,6 +7892,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5`
 
@@ -7517,6 +7916,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7530,6 +7930,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7547,6 +7948,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -7567,6 +7969,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -7615,6 +8018,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -7637,6 +8041,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -7650,6 +8055,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c88f029bcb12f64e286749a9e1e26efe3626529a975c39f2fc9c1a709959b27`
 
@@ -7663,6 +8069,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d3533bde148f702ea9e97cabda4c337cb766e69abc78e38d41b4fde310d730c4`
 
@@ -7676,6 +8083,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37539582 bytes)
 -	v2 Blob: `sha256:2109bd3acb9790e697aec425d36cd2b2863706987f52ed0fa8092138faa2c687`
 -	v2 Content-Length: 12.3 MB (12252272 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:29:57 GMT
 
 #### `6a06ae308acc2c4d06ed5ef9870a8dcd25885f7c4b2f9dce66ca6770bc6d9694`
 
@@ -7689,6 +8097,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:latest`
 
@@ -7712,6 +8121,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7725,6 +8135,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7742,6 +8153,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -7762,6 +8174,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -7810,6 +8223,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -7832,6 +8246,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -7845,6 +8260,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c88f029bcb12f64e286749a9e1e26efe3626529a975c39f2fc9c1a709959b27`
 
@@ -7858,6 +8274,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d3533bde148f702ea9e97cabda4c337cb766e69abc78e38d41b4fde310d730c4`
 
@@ -7871,6 +8288,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37539582 bytes)
 -	v2 Blob: `sha256:2109bd3acb9790e697aec425d36cd2b2863706987f52ed0fa8092138faa2c687`
 -	v2 Content-Length: 12.3 MB (12252272 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:29:57 GMT
 
 #### `6a06ae308acc2c4d06ed5ef9870a8dcd25885f7c4b2f9dce66ca6770bc6d9694`
 
@@ -7884,6 +8302,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5.9.1-onbuild`
 
@@ -7907,6 +8326,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7920,6 +8340,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7937,6 +8358,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -7957,6 +8379,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -8005,6 +8428,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -8027,6 +8451,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -8040,6 +8465,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3758da52393ff9a7496519efe0e63e9136229dc432a6a477d217884d0b950a33`
 
@@ -8053,6 +8479,7 @@ ENV NODE_VERSION=5.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a5c3ef487ccb353c7ffa4ac4d59d18407718a38dd4cca7c12c349a28bfeb2735`
 
@@ -8066,6 +8493,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37511769 bytes)
 -	v2 Blob: `sha256:e0f4745fa41d5a2c7f43731b0a3cdc4c7472fcbb49f374ad4f1e36da1b56e733`
 -	v2 Content-Length: 12.2 MB (12247160 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:09:27 GMT
 
 #### `75ae26553d99905d35e3b8bc038034f4340d4990856e85e8d04712f11f61163f`
 
@@ -8079,6 +8507,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1157f578f5cca41105fce0a2e4354f15cc1219be0353029122aa73b3ece597dd`
 
@@ -8092,6 +8521,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:60cd0591a7d2044e8b5584fe9da93445157a500bcc3992565b0a58797df5e158`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:09:59 GMT
 
 #### `4386f11c3c0d6a9bb5b80e9668636305f8987aea2ceab6aecabc43f1f0d27dce`
 
@@ -8105,6 +8535,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `23466b480184c45e89c504ddc4371e7bf4a21ce7e1d763745e393e081933fbfd`
 
@@ -8118,6 +8549,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ac36d60b82cbe4ddb36fa908228fd55e21291f55cbb65fe93b4ae64060231251`
 
@@ -8131,6 +8563,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aabb10a1e74c2d8f3068ff56ca323fcd33db9c38cf938006e5e527452a7b701c`
 
@@ -8144,6 +8577,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `91f5b5afa365e84c38d181fba5db2c6ab0c88ddcbd7eeadf6d06faf2825d56cc`
 
@@ -8157,6 +8591,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5.9-onbuild`
 
@@ -8180,6 +8615,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8193,6 +8629,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -8210,6 +8647,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -8230,6 +8668,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -8278,6 +8717,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -8300,6 +8740,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -8313,6 +8754,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c88f029bcb12f64e286749a9e1e26efe3626529a975c39f2fc9c1a709959b27`
 
@@ -8326,6 +8768,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d3533bde148f702ea9e97cabda4c337cb766e69abc78e38d41b4fde310d730c4`
 
@@ -8339,6 +8782,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37539582 bytes)
 -	v2 Blob: `sha256:2109bd3acb9790e697aec425d36cd2b2863706987f52ed0fa8092138faa2c687`
 -	v2 Content-Length: 12.3 MB (12252272 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:29:57 GMT
 
 #### `6a06ae308acc2c4d06ed5ef9870a8dcd25885f7c4b2f9dce66ca6770bc6d9694`
 
@@ -8352,6 +8796,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `693df4677c9571cc82229888968d857bca06f7a9569c356546db771663314ccc`
 
@@ -8365,6 +8810,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:515dccd16ff0ba1c0fd827c23fab139b9e7f9bc8dfe48916c3db795bc929c4e0`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:30:29 GMT
 
 #### `1af119c42ef8878a83aad12102efbb0be664ae3cd3a122d8a6aa6c1201850bfc`
 
@@ -8378,6 +8824,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dcd983eda3ec0e1e692f8ef1f61e4abce759ce24600d8ae72098d2d20526293e`
 
@@ -8391,6 +8838,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6cd95fa8d6af4f973b25fbd60320cbb03409dc13d3e2ad1a6e05c3d557c95b32`
 
@@ -8404,6 +8852,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ffe6b60b7d093b6384790359a2ab6dbd3159be0828e8807a94a4e9fc5adb651a`
 
@@ -8417,6 +8866,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `babbe115c08f166a0097b8ef3fec538cab19e8f863c3f2547fc134e8b2f5d34e`
 
@@ -8430,6 +8880,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5-onbuild`
 
@@ -8453,6 +8904,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8466,6 +8918,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -8483,6 +8936,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -8503,6 +8957,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -8551,6 +9006,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -8573,6 +9029,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -8586,6 +9043,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c88f029bcb12f64e286749a9e1e26efe3626529a975c39f2fc9c1a709959b27`
 
@@ -8599,6 +9057,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d3533bde148f702ea9e97cabda4c337cb766e69abc78e38d41b4fde310d730c4`
 
@@ -8612,6 +9071,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37539582 bytes)
 -	v2 Blob: `sha256:2109bd3acb9790e697aec425d36cd2b2863706987f52ed0fa8092138faa2c687`
 -	v2 Content-Length: 12.3 MB (12252272 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:29:57 GMT
 
 #### `6a06ae308acc2c4d06ed5ef9870a8dcd25885f7c4b2f9dce66ca6770bc6d9694`
 
@@ -8625,6 +9085,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `693df4677c9571cc82229888968d857bca06f7a9569c356546db771663314ccc`
 
@@ -8638,6 +9099,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:515dccd16ff0ba1c0fd827c23fab139b9e7f9bc8dfe48916c3db795bc929c4e0`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:30:29 GMT
 
 #### `1af119c42ef8878a83aad12102efbb0be664ae3cd3a122d8a6aa6c1201850bfc`
 
@@ -8651,6 +9113,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dcd983eda3ec0e1e692f8ef1f61e4abce759ce24600d8ae72098d2d20526293e`
 
@@ -8664,6 +9127,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6cd95fa8d6af4f973b25fbd60320cbb03409dc13d3e2ad1a6e05c3d557c95b32`
 
@@ -8677,6 +9141,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ffe6b60b7d093b6384790359a2ab6dbd3159be0828e8807a94a4e9fc5adb651a`
 
@@ -8690,6 +9155,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `babbe115c08f166a0097b8ef3fec538cab19e8f863c3f2547fc134e8b2f5d34e`
 
@@ -8703,6 +9169,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:onbuild`
 
@@ -8726,6 +9193,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8739,6 +9207,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -8756,6 +9225,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -8776,6 +9246,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -8824,6 +9295,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -8846,6 +9318,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `c32f3278cf8fb65bb6cdbbffb5dabbf4e00934f437881f837033653a24b170f9`
 
@@ -8859,6 +9332,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c88f029bcb12f64e286749a9e1e26efe3626529a975c39f2fc9c1a709959b27`
 
@@ -8872,6 +9346,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d3533bde148f702ea9e97cabda4c337cb766e69abc78e38d41b4fde310d730c4`
 
@@ -8885,6 +9360,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37539582 bytes)
 -	v2 Blob: `sha256:2109bd3acb9790e697aec425d36cd2b2863706987f52ed0fa8092138faa2c687`
 -	v2 Content-Length: 12.3 MB (12252272 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:29:57 GMT
 
 #### `6a06ae308acc2c4d06ed5ef9870a8dcd25885f7c4b2f9dce66ca6770bc6d9694`
 
@@ -8898,6 +9374,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `693df4677c9571cc82229888968d857bca06f7a9569c356546db771663314ccc`
 
@@ -8911,6 +9388,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:515dccd16ff0ba1c0fd827c23fab139b9e7f9bc8dfe48916c3db795bc929c4e0`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:30:29 GMT
 
 #### `1af119c42ef8878a83aad12102efbb0be664ae3cd3a122d8a6aa6c1201850bfc`
 
@@ -8924,6 +9402,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dcd983eda3ec0e1e692f8ef1f61e4abce759ce24600d8ae72098d2d20526293e`
 
@@ -8937,6 +9416,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6cd95fa8d6af4f973b25fbd60320cbb03409dc13d3e2ad1a6e05c3d557c95b32`
 
@@ -8950,6 +9430,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ffe6b60b7d093b6384790359a2ab6dbd3159be0828e8807a94a4e9fc5adb651a`
 
@@ -8963,6 +9444,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `babbe115c08f166a0097b8ef3fec538cab19e8f863c3f2547fc134e8b2f5d34e`
 
@@ -8976,6 +9458,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5.9.1-slim`
 
@@ -8999,6 +9482,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9012,6 +9496,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -9029,6 +9514,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `e569cd081a6e285f4a1f90f513fc70dc9f1d7e5d3eb91ae4eac14fb100b59728`
 
@@ -9051,6 +9537,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b6c4c5059134a4e9f52b9512688dcdb3b8890b31d438b23c1b03e1d1cbc6303f`
 -	v2 Content-Length: 26.9 KB (26938 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:19:58 GMT
 
 #### `f1eef947ddacd23aefc079c83eec1f482d74eb262c4f9900f82fd32958c23af8`
 
@@ -9064,6 +9551,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8ad04f44f02f214870932b0395b58d2d196ad2a3840a350cdc900bfde05587a4`
 
@@ -9077,6 +9565,7 @@ ENV NODE_VERSION=5.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `201259ffafc913a9c8dfc289a5e15b7bb044b5fbd5b97ea94569ec825a7f859a`
 
@@ -9100,6 +9589,7 @@ RUN buildDeps='xz-utils'\
 -	Virtual Size: 37.9 MB (37855100 bytes)
 -	v2 Blob: `sha256:d05beab7a6f34760da9eaa9295364c50a405553b37b1add371864f82243f08da`
 -	v2 Content-Length: 12.3 MB (12326033 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:10:27 GMT
 
 #### `a97a6eda33d230257f77774f4bbe2146abc63c05c024d06aad6e9c489bea7b3c`
 
@@ -9113,6 +9603,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5.9-slim`
 
@@ -9136,6 +9627,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9149,6 +9641,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -9166,6 +9659,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `e569cd081a6e285f4a1f90f513fc70dc9f1d7e5d3eb91ae4eac14fb100b59728`
 
@@ -9188,6 +9682,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b6c4c5059134a4e9f52b9512688dcdb3b8890b31d438b23c1b03e1d1cbc6303f`
 -	v2 Content-Length: 26.9 KB (26938 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:19:58 GMT
 
 #### `f1eef947ddacd23aefc079c83eec1f482d74eb262c4f9900f82fd32958c23af8`
 
@@ -9201,6 +9696,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3eb6f75f4abed6c983c04572ae558371e5a9c74c3dbc07d0de41e14c1d66d665`
 
@@ -9214,6 +9710,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bdbb77a807532bae641e17fab9a5cc1dfc9a9598058dd1755723df35a7aea0db`
 
@@ -9237,6 +9734,7 @@ RUN buildDeps='xz-utils'\
 -	Virtual Size: 37.9 MB (37882913 bytes)
 -	v2 Blob: `sha256:e65808a0fea3a43d3a7b96f469a0eb59fe86d8dd98fdb822f7a4154586cb21fd`
 -	v2 Content-Length: 12.3 MB (12331425 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:30:56 GMT
 
 #### `378342001fc01fe5c9f48e427f42908a00121809bbae2b64c0de74636bdd5870`
 
@@ -9250,6 +9748,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5-slim`
 
@@ -9273,6 +9772,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9286,6 +9786,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -9303,6 +9804,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `e569cd081a6e285f4a1f90f513fc70dc9f1d7e5d3eb91ae4eac14fb100b59728`
 
@@ -9325,6 +9827,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b6c4c5059134a4e9f52b9512688dcdb3b8890b31d438b23c1b03e1d1cbc6303f`
 -	v2 Content-Length: 26.9 KB (26938 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:19:58 GMT
 
 #### `f1eef947ddacd23aefc079c83eec1f482d74eb262c4f9900f82fd32958c23af8`
 
@@ -9338,6 +9841,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3eb6f75f4abed6c983c04572ae558371e5a9c74c3dbc07d0de41e14c1d66d665`
 
@@ -9351,6 +9855,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bdbb77a807532bae641e17fab9a5cc1dfc9a9598058dd1755723df35a7aea0db`
 
@@ -9374,6 +9879,7 @@ RUN buildDeps='xz-utils'\
 -	Virtual Size: 37.9 MB (37882913 bytes)
 -	v2 Blob: `sha256:e65808a0fea3a43d3a7b96f469a0eb59fe86d8dd98fdb822f7a4154586cb21fd`
 -	v2 Content-Length: 12.3 MB (12331425 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:30:56 GMT
 
 #### `378342001fc01fe5c9f48e427f42908a00121809bbae2b64c0de74636bdd5870`
 
@@ -9387,6 +9893,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:slim`
 
@@ -9410,6 +9917,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9423,6 +9931,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -9440,6 +9949,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `e569cd081a6e285f4a1f90f513fc70dc9f1d7e5d3eb91ae4eac14fb100b59728`
 
@@ -9462,6 +9972,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b6c4c5059134a4e9f52b9512688dcdb3b8890b31d438b23c1b03e1d1cbc6303f`
 -	v2 Content-Length: 26.9 KB (26938 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 00:19:58 GMT
 
 #### `f1eef947ddacd23aefc079c83eec1f482d74eb262c4f9900f82fd32958c23af8`
 
@@ -9475,6 +9986,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3eb6f75f4abed6c983c04572ae558371e5a9c74c3dbc07d0de41e14c1d66d665`
 
@@ -9488,6 +10000,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bdbb77a807532bae641e17fab9a5cc1dfc9a9598058dd1755723df35a7aea0db`
 
@@ -9511,6 +10024,7 @@ RUN buildDeps='xz-utils'\
 -	Virtual Size: 37.9 MB (37882913 bytes)
 -	v2 Blob: `sha256:e65808a0fea3a43d3a7b96f469a0eb59fe86d8dd98fdb822f7a4154586cb21fd`
 -	v2 Content-Length: 12.3 MB (12331425 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:30:56 GMT
 
 #### `378342001fc01fe5c9f48e427f42908a00121809bbae2b64c0de74636bdd5870`
 
@@ -9524,6 +10038,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5.9.1-wheezy`
 
@@ -9547,6 +10062,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -9560,6 +10076,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -9577,6 +10094,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -9597,6 +10115,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -9645,6 +10164,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -9667,6 +10187,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `d21fb20ab0127d3825e534ee2c784fce4cfe56912b21277050b89b15de7df166`
 
@@ -9680,6 +10201,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9d4b6e0b3ab0514b28fba5b96b4569f40753afaebd2ab2132253b8a42c15e0e2`
 
@@ -9693,6 +10215,7 @@ ENV NODE_VERSION=5.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7de143a23d2435f8598d819633913bb0dca6ebaf5b6106fa4898b67e5318ae12`
 
@@ -9706,6 +10229,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37511769 bytes)
 -	v2 Blob: `sha256:843eb8bd6a21b6a5f0b2662f0cb328df3ef2e59ea48fc004049d57b7f35ae968`
 -	v2 Content-Length: 12.2 MB (12247157 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:10:56 GMT
 
 #### `907ecf954eb6dfdc6f6a54cc1ebc351a34653d95dc00e4c4fca7a4b8fbafc20a`
 
@@ -9719,6 +10243,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5.9-wheezy`
 
@@ -9742,6 +10267,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -9755,6 +10281,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -9772,6 +10299,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -9792,6 +10320,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -9840,6 +10369,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -9862,6 +10392,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `d21fb20ab0127d3825e534ee2c784fce4cfe56912b21277050b89b15de7df166`
 
@@ -9875,6 +10406,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dcd58efb66229a663503e1a9b5a048b852743c81a525e5882142049a680c503f`
 
@@ -9888,6 +10420,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d310fe52c6ad846f4441fe4913a3c7ec19f4ee6bd0c0e7fcd2153f31c875d028`
 
@@ -9901,6 +10434,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37539582 bytes)
 -	v2 Blob: `sha256:c68f35094835d30156cb5954adf85442009191ada6925c5541760edde491990a`
 -	v2 Content-Length: 12.3 MB (12252274 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:31:26 GMT
 
 #### `1a9737c2963294e2e83dd121c71e889069f9ca656aaa8c3356e1964f0387a0d4`
 
@@ -9914,6 +10448,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:5-wheezy`
 
@@ -9937,6 +10472,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -9950,6 +10486,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -9967,6 +10504,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -9987,6 +10525,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -10035,6 +10574,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -10057,6 +10597,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `d21fb20ab0127d3825e534ee2c784fce4cfe56912b21277050b89b15de7df166`
 
@@ -10070,6 +10611,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dcd58efb66229a663503e1a9b5a048b852743c81a525e5882142049a680c503f`
 
@@ -10083,6 +10625,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d310fe52c6ad846f4441fe4913a3c7ec19f4ee6bd0c0e7fcd2153f31c875d028`
 
@@ -10096,6 +10639,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37539582 bytes)
 -	v2 Blob: `sha256:c68f35094835d30156cb5954adf85442009191ada6925c5541760edde491990a`
 -	v2 Content-Length: 12.3 MB (12252274 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:31:26 GMT
 
 #### `1a9737c2963294e2e83dd121c71e889069f9ca656aaa8c3356e1964f0387a0d4`
 
@@ -10109,6 +10653,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `node:wheezy`
 
@@ -10132,6 +10677,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -10145,6 +10691,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -10162,6 +10709,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -10182,6 +10730,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `b19e77a2d45ce16bd20a7d42d257b015122ca9503748163a1c0d02f2867b3486`
 
@@ -10230,6 +10779,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 250.6 MB (250595596 bytes)
 -	v2 Blob: `sha256:6bbba34b800b1a0fb4e9d591164579213f4b37ab9ee2bb33e6a5d56287516df8`
 -	v2 Content-Length: 94.3 MB (94308147 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:17:14 GMT
 
 #### `1a022c6dda30006270f3c405dc79461711b2fce330d8592723298d313011d08d`
 
@@ -10252,6 +10802,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:4a71c6b12d06dff0a99eca9165f60323917ab3ad2e48fa3dfdff7dea1fae0e17`
 -	v2 Content-Length: 29.1 KB (29121 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:04:17 GMT
 
 #### `d21fb20ab0127d3825e534ee2c784fce4cfe56912b21277050b89b15de7df166`
 
@@ -10265,6 +10816,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dcd58efb66229a663503e1a9b5a048b852743c81a525e5882142049a680c503f`
 
@@ -10278,6 +10830,7 @@ ENV NODE_VERSION=5.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d310fe52c6ad846f4441fe4913a3c7ec19f4ee6bd0c0e7fcd2153f31c875d028`
 
@@ -10291,6 +10844,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 37.5 MB (37539582 bytes)
 -	v2 Blob: `sha256:c68f35094835d30156cb5954adf85442009191ada6925c5541760edde491990a`
 -	v2 Content-Length: 12.3 MB (12252274 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:31:26 GMT
 
 #### `1a9737c2963294e2e83dd121c71e889069f9ca656aaa8c3356e1964f0387a0d4`
 
@@ -10304,3 +10858,4 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

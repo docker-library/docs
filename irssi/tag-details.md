@@ -29,6 +29,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -42,6 +43,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6da17636e9668b96c8cb2b113f5ebb84a940c0aed6d27f1a58b611decf951839`
 
@@ -63,6 +65,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 99.8 MB (99799800 bytes)
 -	v2 Blob: `sha256:e5fc345b93a20833fea4dc81c619147e0ad618c78c0ae0742565e53318680e4e`
 -	v2 Content-Length: 34.1 MB (34147252 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:34:12 GMT
 
 #### `f8baf283c3e5ae0b3802c87e2e752fa3aea752fd4ea7e4779da825d9378d0e99`
 
@@ -76,6 +79,7 @@ ENV HOME=/home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `175bb31010e5f41c4deec81923160b99419c66ede1a42306cb1b55eb887509e1`
 
@@ -91,6 +95,7 @@ RUN useradd --create-home --home-dir $HOME user \
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:f928bfec035ffe4df3766f75b69b3bd3b51e6549cbb0a72d18a06e83b5838d4d`
 -	v2 Content-Length: 4.4 KB (4363 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:33:55 GMT
 
 #### `c362a13890987eb5cd623c0dafd70ebc291253ef7c6474a7c637140de09d2dac`
 
@@ -104,6 +109,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de227c09d039948df7538a88a20f25e4034fa642f3a6090e8c8f64d5a71bb18d`
 
@@ -117,6 +123,7 @@ ENV IRSSI_VERSION=0.8.17
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ccdfcd2b93e4736015becbc16548d0732bb558b39e02b878acb60bea6d5ec12b`
 
@@ -164,6 +171,7 @@ RUN buildDeps=' \
 -	Virtual Size: 35.9 MB (35912631 bytes)
 -	v2 Blob: `sha256:46e4113f1257b6fcbba0dbb92c30724374250175150bc3e5f42d96249f3468b5`
 -	v2 Content-Length: 12.0 MB (12006917 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:39:01 GMT
 
 #### `255700c99868b3f4762e819eadde72c32cb717257289968c29d8d4d8b0d9a002`
 
@@ -177,6 +185,7 @@ WORKDIR /home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d569f8261462eec071c2a5793c3d35ce2352b3fceab7479a124966fd9ca8f979`
 
@@ -190,6 +199,7 @@ VOLUME [/home/user/.irssi]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fee2f5b779d0aeede2296a8599fe5f2ad0af1cf53b896bee77f0acdf39fb2ad`
 
@@ -203,6 +213,7 @@ USER [user]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a42c6c819541074e9960cfcff3b8ee3edf252bad0725c053b6f56cc118c22d1`
 
@@ -216,6 +227,7 @@ CMD ["irssi"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `irssi:0.8`
 
@@ -239,6 +251,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -252,6 +265,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6da17636e9668b96c8cb2b113f5ebb84a940c0aed6d27f1a58b611decf951839`
 
@@ -273,6 +287,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 99.8 MB (99799800 bytes)
 -	v2 Blob: `sha256:e5fc345b93a20833fea4dc81c619147e0ad618c78c0ae0742565e53318680e4e`
 -	v2 Content-Length: 34.1 MB (34147252 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:34:12 GMT
 
 #### `f8baf283c3e5ae0b3802c87e2e752fa3aea752fd4ea7e4779da825d9378d0e99`
 
@@ -286,6 +301,7 @@ ENV HOME=/home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `175bb31010e5f41c4deec81923160b99419c66ede1a42306cb1b55eb887509e1`
 
@@ -301,6 +317,7 @@ RUN useradd --create-home --home-dir $HOME user \
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:f928bfec035ffe4df3766f75b69b3bd3b51e6549cbb0a72d18a06e83b5838d4d`
 -	v2 Content-Length: 4.4 KB (4363 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:33:55 GMT
 
 #### `c362a13890987eb5cd623c0dafd70ebc291253ef7c6474a7c637140de09d2dac`
 
@@ -314,6 +331,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de227c09d039948df7538a88a20f25e4034fa642f3a6090e8c8f64d5a71bb18d`
 
@@ -327,6 +345,7 @@ ENV IRSSI_VERSION=0.8.17
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ccdfcd2b93e4736015becbc16548d0732bb558b39e02b878acb60bea6d5ec12b`
 
@@ -374,6 +393,7 @@ RUN buildDeps=' \
 -	Virtual Size: 35.9 MB (35912631 bytes)
 -	v2 Blob: `sha256:46e4113f1257b6fcbba0dbb92c30724374250175150bc3e5f42d96249f3468b5`
 -	v2 Content-Length: 12.0 MB (12006917 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:39:01 GMT
 
 #### `255700c99868b3f4762e819eadde72c32cb717257289968c29d8d4d8b0d9a002`
 
@@ -387,6 +407,7 @@ WORKDIR /home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d569f8261462eec071c2a5793c3d35ce2352b3fceab7479a124966fd9ca8f979`
 
@@ -400,6 +421,7 @@ VOLUME [/home/user/.irssi]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fee2f5b779d0aeede2296a8599fe5f2ad0af1cf53b896bee77f0acdf39fb2ad`
 
@@ -413,6 +435,7 @@ USER [user]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a42c6c819541074e9960cfcff3b8ee3edf252bad0725c053b6f56cc118c22d1`
 
@@ -426,6 +449,7 @@ CMD ["irssi"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `irssi:0`
 
@@ -449,6 +473,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -462,6 +487,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6da17636e9668b96c8cb2b113f5ebb84a940c0aed6d27f1a58b611decf951839`
 
@@ -483,6 +509,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 99.8 MB (99799800 bytes)
 -	v2 Blob: `sha256:e5fc345b93a20833fea4dc81c619147e0ad618c78c0ae0742565e53318680e4e`
 -	v2 Content-Length: 34.1 MB (34147252 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:34:12 GMT
 
 #### `f8baf283c3e5ae0b3802c87e2e752fa3aea752fd4ea7e4779da825d9378d0e99`
 
@@ -496,6 +523,7 @@ ENV HOME=/home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `175bb31010e5f41c4deec81923160b99419c66ede1a42306cb1b55eb887509e1`
 
@@ -511,6 +539,7 @@ RUN useradd --create-home --home-dir $HOME user \
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:f928bfec035ffe4df3766f75b69b3bd3b51e6549cbb0a72d18a06e83b5838d4d`
 -	v2 Content-Length: 4.4 KB (4363 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:33:55 GMT
 
 #### `c362a13890987eb5cd623c0dafd70ebc291253ef7c6474a7c637140de09d2dac`
 
@@ -524,6 +553,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de227c09d039948df7538a88a20f25e4034fa642f3a6090e8c8f64d5a71bb18d`
 
@@ -537,6 +567,7 @@ ENV IRSSI_VERSION=0.8.17
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ccdfcd2b93e4736015becbc16548d0732bb558b39e02b878acb60bea6d5ec12b`
 
@@ -584,6 +615,7 @@ RUN buildDeps=' \
 -	Virtual Size: 35.9 MB (35912631 bytes)
 -	v2 Blob: `sha256:46e4113f1257b6fcbba0dbb92c30724374250175150bc3e5f42d96249f3468b5`
 -	v2 Content-Length: 12.0 MB (12006917 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:39:01 GMT
 
 #### `255700c99868b3f4762e819eadde72c32cb717257289968c29d8d4d8b0d9a002`
 
@@ -597,6 +629,7 @@ WORKDIR /home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d569f8261462eec071c2a5793c3d35ce2352b3fceab7479a124966fd9ca8f979`
 
@@ -610,6 +643,7 @@ VOLUME [/home/user/.irssi]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fee2f5b779d0aeede2296a8599fe5f2ad0af1cf53b896bee77f0acdf39fb2ad`
 
@@ -623,6 +657,7 @@ USER [user]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a42c6c819541074e9960cfcff3b8ee3edf252bad0725c053b6f56cc118c22d1`
 
@@ -636,6 +671,7 @@ CMD ["irssi"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `irssi:latest`
 
@@ -659,6 +695,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -672,6 +709,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6da17636e9668b96c8cb2b113f5ebb84a940c0aed6d27f1a58b611decf951839`
 
@@ -693,6 +731,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 99.8 MB (99799800 bytes)
 -	v2 Blob: `sha256:e5fc345b93a20833fea4dc81c619147e0ad618c78c0ae0742565e53318680e4e`
 -	v2 Content-Length: 34.1 MB (34147252 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:34:12 GMT
 
 #### `f8baf283c3e5ae0b3802c87e2e752fa3aea752fd4ea7e4779da825d9378d0e99`
 
@@ -706,6 +745,7 @@ ENV HOME=/home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `175bb31010e5f41c4deec81923160b99419c66ede1a42306cb1b55eb887509e1`
 
@@ -721,6 +761,7 @@ RUN useradd --create-home --home-dir $HOME user \
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:f928bfec035ffe4df3766f75b69b3bd3b51e6549cbb0a72d18a06e83b5838d4d`
 -	v2 Content-Length: 4.4 KB (4363 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:33:55 GMT
 
 #### `c362a13890987eb5cd623c0dafd70ebc291253ef7c6474a7c637140de09d2dac`
 
@@ -734,6 +775,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de227c09d039948df7538a88a20f25e4034fa642f3a6090e8c8f64d5a71bb18d`
 
@@ -747,6 +789,7 @@ ENV IRSSI_VERSION=0.8.17
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ccdfcd2b93e4736015becbc16548d0732bb558b39e02b878acb60bea6d5ec12b`
 
@@ -794,6 +837,7 @@ RUN buildDeps=' \
 -	Virtual Size: 35.9 MB (35912631 bytes)
 -	v2 Blob: `sha256:46e4113f1257b6fcbba0dbb92c30724374250175150bc3e5f42d96249f3468b5`
 -	v2 Content-Length: 12.0 MB (12006917 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:39:01 GMT
 
 #### `255700c99868b3f4762e819eadde72c32cb717257289968c29d8d4d8b0d9a002`
 
@@ -807,6 +851,7 @@ WORKDIR /home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d569f8261462eec071c2a5793c3d35ce2352b3fceab7479a124966fd9ca8f979`
 
@@ -820,6 +865,7 @@ VOLUME [/home/user/.irssi]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fee2f5b779d0aeede2296a8599fe5f2ad0af1cf53b896bee77f0acdf39fb2ad`
 
@@ -833,6 +879,7 @@ USER [user]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a42c6c819541074e9960cfcff3b8ee3edf252bad0725c053b6f56cc118c22d1`
 
@@ -846,3 +893,4 @@ CMD ["irssi"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

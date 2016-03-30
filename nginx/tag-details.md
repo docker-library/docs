@@ -35,6 +35,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -48,6 +49,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f5a1ef78853bb98ec950bcfd31a3b5366d2aba374b9e9c3147dbf3abb3e2d829`
 
@@ -61,6 +63,7 @@ MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `605083c53cc5770e133fadc6cd3c0e4904c279fe27f690a753e26578cf705e89`
 
@@ -74,6 +77,7 @@ ENV NGINX_VERSION=1.9.12-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c95d1af3960da69424749e63ded71fd3cd730796ddf33c7666544f21ce24e5a6`
 
@@ -97,6 +101,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 65.4 MB (65401634 bytes)
 -	v2 Blob: `sha256:716f7a5f3082a52923e6b276061d3d52a14c781e0c276dee79879ca3a186f6a9`
 -	v2 Content-Length: 23.5 MB (23514348 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:19 GMT
 
 #### `0a410ba58143f8d3b75f1b37560fee03fba95ec6468709db01c813c068315a21`
 
@@ -111,6 +116,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:7b10f03a030928818d8b6639c189f9c270dfe8226af57868477633883c8b883f`
 -	v2 Content-Length: 196.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:10 GMT
 
 #### `fb6fc13654c9550f90ed54ce01a24a077dbbd2f96a406ca5f4a3b0685f502697`
 
@@ -124,6 +130,7 @@ EXPOSE 443/tcp 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `36b0adefb2f371685aa764c3d47eaaf12583814c7bccb13282a0fe9423526fb5`
 
@@ -137,6 +144,7 @@ CMD ["nginx" "-g" "daemon off;"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nginx:1`
 
@@ -160,6 +168,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -173,6 +182,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f5a1ef78853bb98ec950bcfd31a3b5366d2aba374b9e9c3147dbf3abb3e2d829`
 
@@ -186,6 +196,7 @@ MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `605083c53cc5770e133fadc6cd3c0e4904c279fe27f690a753e26578cf705e89`
 
@@ -199,6 +210,7 @@ ENV NGINX_VERSION=1.9.12-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c95d1af3960da69424749e63ded71fd3cd730796ddf33c7666544f21ce24e5a6`
 
@@ -222,6 +234,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 65.4 MB (65401634 bytes)
 -	v2 Blob: `sha256:716f7a5f3082a52923e6b276061d3d52a14c781e0c276dee79879ca3a186f6a9`
 -	v2 Content-Length: 23.5 MB (23514348 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:19 GMT
 
 #### `0a410ba58143f8d3b75f1b37560fee03fba95ec6468709db01c813c068315a21`
 
@@ -236,6 +249,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:7b10f03a030928818d8b6639c189f9c270dfe8226af57868477633883c8b883f`
 -	v2 Content-Length: 196.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:10 GMT
 
 #### `fb6fc13654c9550f90ed54ce01a24a077dbbd2f96a406ca5f4a3b0685f502697`
 
@@ -249,6 +263,7 @@ EXPOSE 443/tcp 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `36b0adefb2f371685aa764c3d47eaaf12583814c7bccb13282a0fe9423526fb5`
 
@@ -262,6 +277,7 @@ CMD ["nginx" "-g" "daemon off;"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nginx:1.9`
 
@@ -285,6 +301,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -298,6 +315,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f5a1ef78853bb98ec950bcfd31a3b5366d2aba374b9e9c3147dbf3abb3e2d829`
 
@@ -311,6 +329,7 @@ MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `605083c53cc5770e133fadc6cd3c0e4904c279fe27f690a753e26578cf705e89`
 
@@ -324,6 +343,7 @@ ENV NGINX_VERSION=1.9.12-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c95d1af3960da69424749e63ded71fd3cd730796ddf33c7666544f21ce24e5a6`
 
@@ -347,6 +367,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 65.4 MB (65401634 bytes)
 -	v2 Blob: `sha256:716f7a5f3082a52923e6b276061d3d52a14c781e0c276dee79879ca3a186f6a9`
 -	v2 Content-Length: 23.5 MB (23514348 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:19 GMT
 
 #### `0a410ba58143f8d3b75f1b37560fee03fba95ec6468709db01c813c068315a21`
 
@@ -361,6 +382,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:7b10f03a030928818d8b6639c189f9c270dfe8226af57868477633883c8b883f`
 -	v2 Content-Length: 196.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:10 GMT
 
 #### `fb6fc13654c9550f90ed54ce01a24a077dbbd2f96a406ca5f4a3b0685f502697`
 
@@ -374,6 +396,7 @@ EXPOSE 443/tcp 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `36b0adefb2f371685aa764c3d47eaaf12583814c7bccb13282a0fe9423526fb5`
 
@@ -387,6 +410,7 @@ CMD ["nginx" "-g" "daemon off;"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nginx:1.9.12`
 
@@ -410,6 +434,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -423,6 +448,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f5a1ef78853bb98ec950bcfd31a3b5366d2aba374b9e9c3147dbf3abb3e2d829`
 
@@ -436,6 +462,7 @@ MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `605083c53cc5770e133fadc6cd3c0e4904c279fe27f690a753e26578cf705e89`
 
@@ -449,6 +476,7 @@ ENV NGINX_VERSION=1.9.12-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c95d1af3960da69424749e63ded71fd3cd730796ddf33c7666544f21ce24e5a6`
 
@@ -472,6 +500,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 65.4 MB (65401634 bytes)
 -	v2 Blob: `sha256:716f7a5f3082a52923e6b276061d3d52a14c781e0c276dee79879ca3a186f6a9`
 -	v2 Content-Length: 23.5 MB (23514348 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:19 GMT
 
 #### `0a410ba58143f8d3b75f1b37560fee03fba95ec6468709db01c813c068315a21`
 
@@ -486,6 +515,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:7b10f03a030928818d8b6639c189f9c270dfe8226af57868477633883c8b883f`
 -	v2 Content-Length: 196.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:10 GMT
 
 #### `fb6fc13654c9550f90ed54ce01a24a077dbbd2f96a406ca5f4a3b0685f502697`
 
@@ -499,6 +529,7 @@ EXPOSE 443/tcp 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `36b0adefb2f371685aa764c3d47eaaf12583814c7bccb13282a0fe9423526fb5`
 
@@ -512,6 +543,7 @@ CMD ["nginx" "-g" "daemon off;"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nginx:stable`
 
@@ -535,6 +567,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -548,6 +581,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f5a1ef78853bb98ec950bcfd31a3b5366d2aba374b9e9c3147dbf3abb3e2d829`
 
@@ -561,6 +595,7 @@ MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `777ff39b646283420dfa1b5cbebaec067ddbe6c2e8360f9df11d20fd69876561`
 
@@ -574,6 +609,7 @@ ENV NGINX_VERSION=1.8.1-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d57f878987ca152e0f578416e8a5363dd4e2511cca56dd795b0b3640a605b9b`
 
@@ -591,6 +627,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 8.2 MB (8222887 bytes)
 -	v2 Blob: `sha256:6e0199a452711642a89464b4d013ba59983fd8cc47efcdb40b24073af9213cb5`
 -	v2 Content-Length: 3.5 MB (3523659 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:46 GMT
 
 #### `31548d3264b59535ff0a720606d8816c15317b1d339260c5e4e9f1b32883aa76`
 
@@ -605,6 +642,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:ed8649d0f26457cc5d9c9ea32a090d5c0432ac48c85f918b52b8ac73d6881565`
 -	v2 Content-Length: 196.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:41 GMT
 
 #### `617b38ee1c7667f832fd2922c9c1d9aa7f97485530da24601c9de4f543f9ad98`
 
@@ -618,6 +656,7 @@ EXPOSE 443/tcp 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `866d2654a320604cf0203f930bc97036d1cfac660734269c5215fa06a7d6f1af`
 
@@ -631,6 +670,7 @@ CMD ["nginx" "-g" "daemon off;"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nginx:1.8`
 
@@ -654,6 +694,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -667,6 +708,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f5a1ef78853bb98ec950bcfd31a3b5366d2aba374b9e9c3147dbf3abb3e2d829`
 
@@ -680,6 +722,7 @@ MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `777ff39b646283420dfa1b5cbebaec067ddbe6c2e8360f9df11d20fd69876561`
 
@@ -693,6 +736,7 @@ ENV NGINX_VERSION=1.8.1-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d57f878987ca152e0f578416e8a5363dd4e2511cca56dd795b0b3640a605b9b`
 
@@ -710,6 +754,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 8.2 MB (8222887 bytes)
 -	v2 Blob: `sha256:6e0199a452711642a89464b4d013ba59983fd8cc47efcdb40b24073af9213cb5`
 -	v2 Content-Length: 3.5 MB (3523659 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:46 GMT
 
 #### `31548d3264b59535ff0a720606d8816c15317b1d339260c5e4e9f1b32883aa76`
 
@@ -724,6 +769,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:ed8649d0f26457cc5d9c9ea32a090d5c0432ac48c85f918b52b8ac73d6881565`
 -	v2 Content-Length: 196.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:41 GMT
 
 #### `617b38ee1c7667f832fd2922c9c1d9aa7f97485530da24601c9de4f543f9ad98`
 
@@ -737,6 +783,7 @@ EXPOSE 443/tcp 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `866d2654a320604cf0203f930bc97036d1cfac660734269c5215fa06a7d6f1af`
 
@@ -750,6 +797,7 @@ CMD ["nginx" "-g" "daemon off;"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nginx:1.8.1`
 
@@ -773,6 +821,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -786,6 +835,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f5a1ef78853bb98ec950bcfd31a3b5366d2aba374b9e9c3147dbf3abb3e2d829`
 
@@ -799,6 +849,7 @@ MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `777ff39b646283420dfa1b5cbebaec067ddbe6c2e8360f9df11d20fd69876561`
 
@@ -812,6 +863,7 @@ ENV NGINX_VERSION=1.8.1-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d57f878987ca152e0f578416e8a5363dd4e2511cca56dd795b0b3640a605b9b`
 
@@ -829,6 +881,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 8.2 MB (8222887 bytes)
 -	v2 Blob: `sha256:6e0199a452711642a89464b4d013ba59983fd8cc47efcdb40b24073af9213cb5`
 -	v2 Content-Length: 3.5 MB (3523659 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:46 GMT
 
 #### `31548d3264b59535ff0a720606d8816c15317b1d339260c5e4e9f1b32883aa76`
 
@@ -843,6 +896,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:ed8649d0f26457cc5d9c9ea32a090d5c0432ac48c85f918b52b8ac73d6881565`
 -	v2 Content-Length: 196.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:41 GMT
 
 #### `617b38ee1c7667f832fd2922c9c1d9aa7f97485530da24601c9de4f543f9ad98`
 
@@ -856,6 +910,7 @@ EXPOSE 443/tcp 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `866d2654a320604cf0203f930bc97036d1cfac660734269c5215fa06a7d6f1af`
 
@@ -869,6 +924,7 @@ CMD ["nginx" "-g" "daemon off;"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nginx:stable-alpine`
 
@@ -892,6 +948,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `25e5fff3d572b535ae7228f89146a963d30435869e8c7737c4813a1523ae648e`
 
@@ -905,6 +962,7 @@ MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b5a5b33135cae92d334deeab4e173379271519aa5536b4b9f0c066d79342323`
 
@@ -918,6 +976,7 @@ ENV NGINX_VERSION=1.8.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cbb654e7b198ca020999cf9b43680aca22fb1dcc6dfdcc53baa289ca382330cd`
 
@@ -931,6 +990,7 @@ ENV GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `94b2a402586c025be73e466fe3d99241e89daf83c33dd6e637f8094dae2dedf2`
 
@@ -944,6 +1004,7 @@ ENV CONFIG=	--prefix=/etc/nginx 	--sbin-path=/usr/sbin/nginx 	--conf-path=/etc/n
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3115224c8759543271db06d6c9e00eb15ffd94c04e1d977bfa1f7659be22906a`
 
@@ -997,6 +1058,7 @@ RUN addgroup -S nginx \
 -	Virtual Size: 2.7 MB (2667872 bytes)
 -	v2 Blob: `sha256:8a2061630efcda291926dc13ec467ed1ddd84faa54cef04f6d45a19d64604f15`
 -	v2 Content-Length: 1.1 MB (1108666 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:39:03 GMT
 
 #### `85cad9484b9ce4774e2fb0de2841fc5973e413c1483c804af47bebee466ab1fa`
 
@@ -1010,6 +1072,7 @@ EXPOSE 443/tcp 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3764c88aa9a307b8ef71997605875b407807b21d4f452e61a63b4a3730c6a356`
 
@@ -1023,6 +1086,7 @@ CMD ["nginx" "-g" "daemon off;"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nginx:mainline-alpine`
 
@@ -1046,6 +1110,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `25e5fff3d572b535ae7228f89146a963d30435869e8c7737c4813a1523ae648e`
 
@@ -1059,6 +1124,7 @@ MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3dfb21b47cdf6f7af76e22c173ee5d3aa5c98d1ce5bba97a0385df34748e93db`
 
@@ -1072,6 +1138,7 @@ ENV NGINX_VERSION=1.9.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `014d057e4d45acaa782a695595340523c1ecf71ba5a2e0e3caeb7b8b867635a5`
 
@@ -1085,6 +1152,7 @@ ENV GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35e8ef69b40a30e36c240aa8f80f402142829176eaf0b9451efbb0277bf8a0e8`
 
@@ -1098,6 +1166,7 @@ ENV CONFIG=	--prefix=/etc/nginx 	--sbin-path=/usr/sbin/nginx 	--modules-path=/us
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4cb30e44374099cb581b26fcedc8154c47c810a841328de1e32b463e26c236ad`
 
@@ -1162,6 +1231,7 @@ RUN addgroup -S nginx \
 -	Virtual Size: 8.2 MB (8174359 bytes)
 -	v2 Blob: `sha256:f8e631ebf414d2852d0610f281f2d6d100f90d7f60e447d16b5628c59c90d3bf`
 -	v2 Content-Length: 3.3 MB (3301687 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:39:27 GMT
 
 #### `9bb500e55cdb4160f1867c8468d737bfec4bb610589e1066c74e1329c3a1f894`
 
@@ -1175,6 +1245,7 @@ EXPOSE 443/tcp 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `06cc8ef88e05b70c7e6a84d55710c081090d03b4643f6a3c632b7711b9050266`
 
@@ -1188,6 +1259,7 @@ CMD ["nginx" "-g" "daemon off;"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nginx:alpine`
 
@@ -1211,6 +1283,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `25e5fff3d572b535ae7228f89146a963d30435869e8c7737c4813a1523ae648e`
 
@@ -1224,6 +1297,7 @@ MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3dfb21b47cdf6f7af76e22c173ee5d3aa5c98d1ce5bba97a0385df34748e93db`
 
@@ -1237,6 +1311,7 @@ ENV NGINX_VERSION=1.9.12
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `014d057e4d45acaa782a695595340523c1ecf71ba5a2e0e3caeb7b8b867635a5`
 
@@ -1250,6 +1325,7 @@ ENV GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35e8ef69b40a30e36c240aa8f80f402142829176eaf0b9451efbb0277bf8a0e8`
 
@@ -1263,6 +1339,7 @@ ENV CONFIG=	--prefix=/etc/nginx 	--sbin-path=/usr/sbin/nginx 	--modules-path=/us
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4cb30e44374099cb581b26fcedc8154c47c810a841328de1e32b463e26c236ad`
 
@@ -1327,6 +1404,7 @@ RUN addgroup -S nginx \
 -	Virtual Size: 8.2 MB (8174359 bytes)
 -	v2 Blob: `sha256:f8e631ebf414d2852d0610f281f2d6d100f90d7f60e447d16b5628c59c90d3bf`
 -	v2 Content-Length: 3.3 MB (3301687 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:39:27 GMT
 
 #### `9bb500e55cdb4160f1867c8468d737bfec4bb610589e1066c74e1329c3a1f894`
 
@@ -1340,6 +1418,7 @@ EXPOSE 443/tcp 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `06cc8ef88e05b70c7e6a84d55710c081090d03b4643f6a3c632b7711b9050266`
 
@@ -1353,3 +1432,4 @@ CMD ["nginx" "-g" "daemon off;"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

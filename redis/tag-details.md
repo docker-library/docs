@@ -43,6 +43,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -56,6 +57,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -69,6 +71,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -85,6 +88,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -98,6 +102,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -119,6 +124,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `f618868ae80dde2bc7f7c471a16321e47263878a52cb0a90b81f5064c0319aec`
 
@@ -132,6 +138,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `14737cca6a5125449b551eb5c793711e2e169c1990978451a3d9ed3b09d5d6b8`
 
@@ -145,6 +152,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `523064b69297c552ce34f26f1dd3a2c8a2afc653cf8a3ff0466e413808e9faeb`
 
@@ -158,6 +166,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `443af4cbf5204d2b913cb32c454ea697fdfa6f0eb272debbd90f819b52a22c5a`
 
@@ -183,6 +192,7 @@ RUN buildDeps='gcc libc6-dev make' \
 -	Virtual Size: 8.7 MB (8714602 bytes)
 -	v2 Blob: `sha256:8de500daf5d71cdc241571940a398333220256fde381e129e91f2da936c62271`
 -	v2 Content-Length: 2.9 MB (2872692 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:02 GMT
 
 #### `2554ba9168a23640a4143faf78c92fa9a3d5e11ffdd070d721920bda7f73b747`
 
@@ -196,6 +206,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:788fee3bdabf17d217e7f7b567fff92a1b915b53efa29da5a2d9c076c9fa1eae`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:10:59 GMT
 
 #### `42c01c0b386e9fdf5cf21b57db7f6110ad9ba2172ca7ee7816b58f2ceaa1dcc5`
 
@@ -209,6 +220,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `746a77a123828a5105a558f4161cd25e9fde4e31710b58fb31c3b6bf23df0e2d`
 
@@ -222,6 +234,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bec96996c534519b41a7f93bc4567f11476e69ae50c1cddc15201d6e87ee24fa`
 
@@ -235,6 +248,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `93bcf652250440c6faef0b2387e3d7de1ea8b9b6026b427703fe4e7a3debb836`
 
@@ -248,6 +262,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40403291d228d1f2e2a11e6fa29e556caf4d8ecef03d941ed6985b49f2bbe903`
 
@@ -261,6 +276,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5d78a05e663fab5854725ee84782e407d8d2e45581c8dfa4a5dfa88c0b6524e0`
 
@@ -274,6 +290,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:2.8`
 
@@ -297,6 +314,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -310,6 +328,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -323,6 +342,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -339,6 +359,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -352,6 +373,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -373,6 +395,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `f618868ae80dde2bc7f7c471a16321e47263878a52cb0a90b81f5064c0319aec`
 
@@ -386,6 +409,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `14737cca6a5125449b551eb5c793711e2e169c1990978451a3d9ed3b09d5d6b8`
 
@@ -399,6 +423,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `523064b69297c552ce34f26f1dd3a2c8a2afc653cf8a3ff0466e413808e9faeb`
 
@@ -412,6 +437,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `443af4cbf5204d2b913cb32c454ea697fdfa6f0eb272debbd90f819b52a22c5a`
 
@@ -437,6 +463,7 @@ RUN buildDeps='gcc libc6-dev make' \
 -	Virtual Size: 8.7 MB (8714602 bytes)
 -	v2 Blob: `sha256:8de500daf5d71cdc241571940a398333220256fde381e129e91f2da936c62271`
 -	v2 Content-Length: 2.9 MB (2872692 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:02 GMT
 
 #### `2554ba9168a23640a4143faf78c92fa9a3d5e11ffdd070d721920bda7f73b747`
 
@@ -450,6 +477,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:788fee3bdabf17d217e7f7b567fff92a1b915b53efa29da5a2d9c076c9fa1eae`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:10:59 GMT
 
 #### `42c01c0b386e9fdf5cf21b57db7f6110ad9ba2172ca7ee7816b58f2ceaa1dcc5`
 
@@ -463,6 +491,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `746a77a123828a5105a558f4161cd25e9fde4e31710b58fb31c3b6bf23df0e2d`
 
@@ -476,6 +505,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bec96996c534519b41a7f93bc4567f11476e69ae50c1cddc15201d6e87ee24fa`
 
@@ -489,6 +519,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `93bcf652250440c6faef0b2387e3d7de1ea8b9b6026b427703fe4e7a3debb836`
 
@@ -502,6 +533,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40403291d228d1f2e2a11e6fa29e556caf4d8ecef03d941ed6985b49f2bbe903`
 
@@ -515,6 +547,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5d78a05e663fab5854725ee84782e407d8d2e45581c8dfa4a5dfa88c0b6524e0`
 
@@ -528,6 +561,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:2`
 
@@ -551,6 +585,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -564,6 +599,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -577,6 +613,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -593,6 +630,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -606,6 +644,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -627,6 +666,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `f618868ae80dde2bc7f7c471a16321e47263878a52cb0a90b81f5064c0319aec`
 
@@ -640,6 +680,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `14737cca6a5125449b551eb5c793711e2e169c1990978451a3d9ed3b09d5d6b8`
 
@@ -653,6 +694,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `523064b69297c552ce34f26f1dd3a2c8a2afc653cf8a3ff0466e413808e9faeb`
 
@@ -666,6 +708,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `443af4cbf5204d2b913cb32c454ea697fdfa6f0eb272debbd90f819b52a22c5a`
 
@@ -691,6 +734,7 @@ RUN buildDeps='gcc libc6-dev make' \
 -	Virtual Size: 8.7 MB (8714602 bytes)
 -	v2 Blob: `sha256:8de500daf5d71cdc241571940a398333220256fde381e129e91f2da936c62271`
 -	v2 Content-Length: 2.9 MB (2872692 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:02 GMT
 
 #### `2554ba9168a23640a4143faf78c92fa9a3d5e11ffdd070d721920bda7f73b747`
 
@@ -704,6 +748,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:788fee3bdabf17d217e7f7b567fff92a1b915b53efa29da5a2d9c076c9fa1eae`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:10:59 GMT
 
 #### `42c01c0b386e9fdf5cf21b57db7f6110ad9ba2172ca7ee7816b58f2ceaa1dcc5`
 
@@ -717,6 +762,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `746a77a123828a5105a558f4161cd25e9fde4e31710b58fb31c3b6bf23df0e2d`
 
@@ -730,6 +776,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bec96996c534519b41a7f93bc4567f11476e69ae50c1cddc15201d6e87ee24fa`
 
@@ -743,6 +790,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `93bcf652250440c6faef0b2387e3d7de1ea8b9b6026b427703fe4e7a3debb836`
 
@@ -756,6 +804,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40403291d228d1f2e2a11e6fa29e556caf4d8ecef03d941ed6985b49f2bbe903`
 
@@ -769,6 +818,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5d78a05e663fab5854725ee84782e407d8d2e45581c8dfa4a5dfa88c0b6524e0`
 
@@ -782,6 +832,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:2.8.23-32bit`
 
@@ -805,6 +856,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -818,6 +870,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -831,6 +884,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -847,6 +901,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -860,6 +915,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -881,6 +937,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `f618868ae80dde2bc7f7c471a16321e47263878a52cb0a90b81f5064c0319aec`
 
@@ -894,6 +951,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `14737cca6a5125449b551eb5c793711e2e169c1990978451a3d9ed3b09d5d6b8`
 
@@ -907,6 +965,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `523064b69297c552ce34f26f1dd3a2c8a2afc653cf8a3ff0466e413808e9faeb`
 
@@ -920,6 +979,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c36bc9791e5e8ff45f82a52f2ff1206c5494df6f93257c80c31d6f3ca8613445`
 
@@ -933,6 +993,7 @@ RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && r
 -	Virtual Size: 10.2 MB (10159692 bytes)
 -	v2 Blob: `sha256:1c8007651bf4a180da4ddb3a6fab575ffe5ebe971b7974489341c4626838da74`
 -	v2 Content-Length: 4.2 MB (4224817 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:08 GMT
 
 #### `42ba8ccf34add5835697d7750f7a9453ee5203240a9bd7d67156d171b47c3a13`
 
@@ -958,6 +1019,7 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.6 MB (6602400 bytes)
 -	v2 Blob: `sha256:4bc68ec2dbcedcbb2ae88bc97359d52d56169f5b248c49f19c313592bd17c2d9`
 -	v2 Content-Length: 2.6 MB (2570099 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:04 GMT
 
 #### `588e02fc4faaf86bfc6586bc57fdd2e11e72122d95dc87fad924c44e2a4e0d7e`
 
@@ -971,6 +1033,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:03c4109869e72cbdcb9871abfa34ebbac3eabb0e75e7d3747e28152bc00b1ad4`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:01 GMT
 
 #### `65f690dd4e1f57cea328707ec84a01976395b05f630d569a77e5c1e94226c85f`
 
@@ -984,6 +1047,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0a736e5f81191da4319bb1c984c5cb1ec3e4bdd7ed44c8a7caf83afd3be623ec`
 
@@ -997,6 +1061,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `560006677c7a2ab235e271c752c508e52365963ec8f943125cf6d54bf82c6ab1`
 
@@ -1010,6 +1075,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `67156798d1e0c5317ed2c6575a38265fb1a5addc3e2e5221f72c616048d040c5`
 
@@ -1023,6 +1089,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `68f6033474731b8550dde598c4badb1584a9406347232a1c4292f2ac821a2b02`
 
@@ -1036,6 +1103,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fb0472f4e471f797010baaf8634587f2aefdf99e71f2c38de8cdc29f84ee00af`
 
@@ -1049,6 +1117,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:2.8-32bit`
 
@@ -1072,6 +1141,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1085,6 +1155,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -1098,6 +1169,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -1114,6 +1186,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -1127,6 +1200,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -1148,6 +1222,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `f618868ae80dde2bc7f7c471a16321e47263878a52cb0a90b81f5064c0319aec`
 
@@ -1161,6 +1236,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `14737cca6a5125449b551eb5c793711e2e169c1990978451a3d9ed3b09d5d6b8`
 
@@ -1174,6 +1250,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `523064b69297c552ce34f26f1dd3a2c8a2afc653cf8a3ff0466e413808e9faeb`
 
@@ -1187,6 +1264,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c36bc9791e5e8ff45f82a52f2ff1206c5494df6f93257c80c31d6f3ca8613445`
 
@@ -1200,6 +1278,7 @@ RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && r
 -	Virtual Size: 10.2 MB (10159692 bytes)
 -	v2 Blob: `sha256:1c8007651bf4a180da4ddb3a6fab575ffe5ebe971b7974489341c4626838da74`
 -	v2 Content-Length: 4.2 MB (4224817 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:08 GMT
 
 #### `42ba8ccf34add5835697d7750f7a9453ee5203240a9bd7d67156d171b47c3a13`
 
@@ -1225,6 +1304,7 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.6 MB (6602400 bytes)
 -	v2 Blob: `sha256:4bc68ec2dbcedcbb2ae88bc97359d52d56169f5b248c49f19c313592bd17c2d9`
 -	v2 Content-Length: 2.6 MB (2570099 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:04 GMT
 
 #### `588e02fc4faaf86bfc6586bc57fdd2e11e72122d95dc87fad924c44e2a4e0d7e`
 
@@ -1238,6 +1318,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:03c4109869e72cbdcb9871abfa34ebbac3eabb0e75e7d3747e28152bc00b1ad4`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:01 GMT
 
 #### `65f690dd4e1f57cea328707ec84a01976395b05f630d569a77e5c1e94226c85f`
 
@@ -1251,6 +1332,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0a736e5f81191da4319bb1c984c5cb1ec3e4bdd7ed44c8a7caf83afd3be623ec`
 
@@ -1264,6 +1346,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `560006677c7a2ab235e271c752c508e52365963ec8f943125cf6d54bf82c6ab1`
 
@@ -1277,6 +1360,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `67156798d1e0c5317ed2c6575a38265fb1a5addc3e2e5221f72c616048d040c5`
 
@@ -1290,6 +1374,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `68f6033474731b8550dde598c4badb1584a9406347232a1c4292f2ac821a2b02`
 
@@ -1303,6 +1388,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fb0472f4e471f797010baaf8634587f2aefdf99e71f2c38de8cdc29f84ee00af`
 
@@ -1316,6 +1402,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:2-32bit`
 
@@ -1339,6 +1426,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1352,6 +1440,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -1365,6 +1454,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -1381,6 +1471,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -1394,6 +1485,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -1415,6 +1507,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `f618868ae80dde2bc7f7c471a16321e47263878a52cb0a90b81f5064c0319aec`
 
@@ -1428,6 +1521,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `14737cca6a5125449b551eb5c793711e2e169c1990978451a3d9ed3b09d5d6b8`
 
@@ -1441,6 +1535,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `523064b69297c552ce34f26f1dd3a2c8a2afc653cf8a3ff0466e413808e9faeb`
 
@@ -1454,6 +1549,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c36bc9791e5e8ff45f82a52f2ff1206c5494df6f93257c80c31d6f3ca8613445`
 
@@ -1467,6 +1563,7 @@ RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && r
 -	Virtual Size: 10.2 MB (10159692 bytes)
 -	v2 Blob: `sha256:1c8007651bf4a180da4ddb3a6fab575ffe5ebe971b7974489341c4626838da74`
 -	v2 Content-Length: 4.2 MB (4224817 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:08 GMT
 
 #### `42ba8ccf34add5835697d7750f7a9453ee5203240a9bd7d67156d171b47c3a13`
 
@@ -1492,6 +1589,7 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.6 MB (6602400 bytes)
 -	v2 Blob: `sha256:4bc68ec2dbcedcbb2ae88bc97359d52d56169f5b248c49f19c313592bd17c2d9`
 -	v2 Content-Length: 2.6 MB (2570099 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:04 GMT
 
 #### `588e02fc4faaf86bfc6586bc57fdd2e11e72122d95dc87fad924c44e2a4e0d7e`
 
@@ -1505,6 +1603,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:03c4109869e72cbdcb9871abfa34ebbac3eabb0e75e7d3747e28152bc00b1ad4`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:01 GMT
 
 #### `65f690dd4e1f57cea328707ec84a01976395b05f630d569a77e5c1e94226c85f`
 
@@ -1518,6 +1617,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0a736e5f81191da4319bb1c984c5cb1ec3e4bdd7ed44c8a7caf83afd3be623ec`
 
@@ -1531,6 +1631,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `560006677c7a2ab235e271c752c508e52365963ec8f943125cf6d54bf82c6ab1`
 
@@ -1544,6 +1645,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `67156798d1e0c5317ed2c6575a38265fb1a5addc3e2e5221f72c616048d040c5`
 
@@ -1557,6 +1659,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `68f6033474731b8550dde598c4badb1584a9406347232a1c4292f2ac821a2b02`
 
@@ -1570,6 +1673,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fb0472f4e471f797010baaf8634587f2aefdf99e71f2c38de8cdc29f84ee00af`
 
@@ -1583,6 +1687,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:3.0.7`
 
@@ -1606,6 +1711,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1619,6 +1725,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -1632,6 +1739,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -1648,6 +1756,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -1661,6 +1770,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -1682,6 +1792,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `fa8694d8f3da8c067810723615919e1f0dabd90b58911bd97303e4e89cedd1c8`
 
@@ -1695,6 +1806,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274486942ad1533fa3050674c4cb5c1fa55d018159ba9215faa7b722f8fa135a`
 
@@ -1708,6 +1820,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `332a7a8c4b60df7324f89ebbc00a676861d1ec144563e217a16f5bc874701da8`
 
@@ -1721,6 +1834,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32191c283da7522728035ae0ee590ee1471b21f0131c066163337474c36efa6e`
 
@@ -1746,6 +1860,7 @@ RUN buildDeps='gcc libc6-dev make' \
 -	Virtual Size: 9.0 MB (8980602 bytes)
 -	v2 Blob: `sha256:30e2a5e0acbed017fd002c403cba579612eb00497ca9334f50554caddbd3b099`
 -	v2 Content-Length: 3.0 MB (2981546 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:51 GMT
 
 #### `0803a9e53b9f65b5469eb57b7dddf355dca88da8f5d5236a57058948087199c7`
 
@@ -1759,6 +1874,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5db2b51ce0e977688653eb1ee2e2ce3741d751a12d6135542b754fb6000fb16b`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:47 GMT
 
 #### `cb30f8d3ec9c08a138c73a96ee25ce23d5108c6792704a4e343ab9862c6eb837`
 
@@ -1772,6 +1888,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bd2693d78915c07eeeb2cfc2be67a4113ffc8957c5a7b213726faebc73d4a05`
 
@@ -1785,6 +1902,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `47450255ecb0980f00256fd9f8e47874b8429657bd363da4a116a9be62932960`
 
@@ -1798,6 +1916,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `6b7d62dadf863b59f057e2755a4db4a2d4a23e5160eac333e402878a19b29d1e`
 
@@ -1811,6 +1930,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fdb52e133ade681ff9563dd515261975bd923fa97b14395ac7f58c92245bd669`
 
@@ -1824,6 +1944,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d81cd6f6c5e84880439b498611652251d8f456854971f3a8e88196e11ba4713`
 
@@ -1837,6 +1958,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:3.0`
 
@@ -1860,6 +1982,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1873,6 +1996,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -1886,6 +2010,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -1902,6 +2027,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -1915,6 +2041,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -1936,6 +2063,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `fa8694d8f3da8c067810723615919e1f0dabd90b58911bd97303e4e89cedd1c8`
 
@@ -1949,6 +2077,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274486942ad1533fa3050674c4cb5c1fa55d018159ba9215faa7b722f8fa135a`
 
@@ -1962,6 +2091,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `332a7a8c4b60df7324f89ebbc00a676861d1ec144563e217a16f5bc874701da8`
 
@@ -1975,6 +2105,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32191c283da7522728035ae0ee590ee1471b21f0131c066163337474c36efa6e`
 
@@ -2000,6 +2131,7 @@ RUN buildDeps='gcc libc6-dev make' \
 -	Virtual Size: 9.0 MB (8980602 bytes)
 -	v2 Blob: `sha256:30e2a5e0acbed017fd002c403cba579612eb00497ca9334f50554caddbd3b099`
 -	v2 Content-Length: 3.0 MB (2981546 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:51 GMT
 
 #### `0803a9e53b9f65b5469eb57b7dddf355dca88da8f5d5236a57058948087199c7`
 
@@ -2013,6 +2145,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5db2b51ce0e977688653eb1ee2e2ce3741d751a12d6135542b754fb6000fb16b`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:47 GMT
 
 #### `cb30f8d3ec9c08a138c73a96ee25ce23d5108c6792704a4e343ab9862c6eb837`
 
@@ -2026,6 +2159,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bd2693d78915c07eeeb2cfc2be67a4113ffc8957c5a7b213726faebc73d4a05`
 
@@ -2039,6 +2173,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `47450255ecb0980f00256fd9f8e47874b8429657bd363da4a116a9be62932960`
 
@@ -2052,6 +2187,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `6b7d62dadf863b59f057e2755a4db4a2d4a23e5160eac333e402878a19b29d1e`
 
@@ -2065,6 +2201,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fdb52e133ade681ff9563dd515261975bd923fa97b14395ac7f58c92245bd669`
 
@@ -2078,6 +2215,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d81cd6f6c5e84880439b498611652251d8f456854971f3a8e88196e11ba4713`
 
@@ -2091,6 +2229,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:3`
 
@@ -2114,6 +2253,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2127,6 +2267,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -2140,6 +2281,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -2156,6 +2298,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -2169,6 +2312,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -2190,6 +2334,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `fa8694d8f3da8c067810723615919e1f0dabd90b58911bd97303e4e89cedd1c8`
 
@@ -2203,6 +2348,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274486942ad1533fa3050674c4cb5c1fa55d018159ba9215faa7b722f8fa135a`
 
@@ -2216,6 +2362,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `332a7a8c4b60df7324f89ebbc00a676861d1ec144563e217a16f5bc874701da8`
 
@@ -2229,6 +2376,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32191c283da7522728035ae0ee590ee1471b21f0131c066163337474c36efa6e`
 
@@ -2254,6 +2402,7 @@ RUN buildDeps='gcc libc6-dev make' \
 -	Virtual Size: 9.0 MB (8980602 bytes)
 -	v2 Blob: `sha256:30e2a5e0acbed017fd002c403cba579612eb00497ca9334f50554caddbd3b099`
 -	v2 Content-Length: 3.0 MB (2981546 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:51 GMT
 
 #### `0803a9e53b9f65b5469eb57b7dddf355dca88da8f5d5236a57058948087199c7`
 
@@ -2267,6 +2416,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5db2b51ce0e977688653eb1ee2e2ce3741d751a12d6135542b754fb6000fb16b`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:47 GMT
 
 #### `cb30f8d3ec9c08a138c73a96ee25ce23d5108c6792704a4e343ab9862c6eb837`
 
@@ -2280,6 +2430,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bd2693d78915c07eeeb2cfc2be67a4113ffc8957c5a7b213726faebc73d4a05`
 
@@ -2293,6 +2444,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `47450255ecb0980f00256fd9f8e47874b8429657bd363da4a116a9be62932960`
 
@@ -2306,6 +2458,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `6b7d62dadf863b59f057e2755a4db4a2d4a23e5160eac333e402878a19b29d1e`
 
@@ -2319,6 +2472,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fdb52e133ade681ff9563dd515261975bd923fa97b14395ac7f58c92245bd669`
 
@@ -2332,6 +2486,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d81cd6f6c5e84880439b498611652251d8f456854971f3a8e88196e11ba4713`
 
@@ -2345,6 +2500,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:latest`
 
@@ -2368,6 +2524,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2381,6 +2538,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -2394,6 +2552,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -2410,6 +2569,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -2423,6 +2583,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -2444,6 +2605,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `fa8694d8f3da8c067810723615919e1f0dabd90b58911bd97303e4e89cedd1c8`
 
@@ -2457,6 +2619,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274486942ad1533fa3050674c4cb5c1fa55d018159ba9215faa7b722f8fa135a`
 
@@ -2470,6 +2633,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `332a7a8c4b60df7324f89ebbc00a676861d1ec144563e217a16f5bc874701da8`
 
@@ -2483,6 +2647,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32191c283da7522728035ae0ee590ee1471b21f0131c066163337474c36efa6e`
 
@@ -2508,6 +2673,7 @@ RUN buildDeps='gcc libc6-dev make' \
 -	Virtual Size: 9.0 MB (8980602 bytes)
 -	v2 Blob: `sha256:30e2a5e0acbed017fd002c403cba579612eb00497ca9334f50554caddbd3b099`
 -	v2 Content-Length: 3.0 MB (2981546 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:51 GMT
 
 #### `0803a9e53b9f65b5469eb57b7dddf355dca88da8f5d5236a57058948087199c7`
 
@@ -2521,6 +2687,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5db2b51ce0e977688653eb1ee2e2ce3741d751a12d6135542b754fb6000fb16b`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:47 GMT
 
 #### `cb30f8d3ec9c08a138c73a96ee25ce23d5108c6792704a4e343ab9862c6eb837`
 
@@ -2534,6 +2701,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bd2693d78915c07eeeb2cfc2be67a4113ffc8957c5a7b213726faebc73d4a05`
 
@@ -2547,6 +2715,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `47450255ecb0980f00256fd9f8e47874b8429657bd363da4a116a9be62932960`
 
@@ -2560,6 +2729,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `6b7d62dadf863b59f057e2755a4db4a2d4a23e5160eac333e402878a19b29d1e`
 
@@ -2573,6 +2743,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fdb52e133ade681ff9563dd515261975bd923fa97b14395ac7f58c92245bd669`
 
@@ -2586,6 +2757,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d81cd6f6c5e84880439b498611652251d8f456854971f3a8e88196e11ba4713`
 
@@ -2599,6 +2771,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:3.0.7-32bit`
 
@@ -2622,6 +2795,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2635,6 +2809,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -2648,6 +2823,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -2664,6 +2840,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -2677,6 +2854,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -2698,6 +2876,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `fa8694d8f3da8c067810723615919e1f0dabd90b58911bd97303e4e89cedd1c8`
 
@@ -2711,6 +2890,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274486942ad1533fa3050674c4cb5c1fa55d018159ba9215faa7b722f8fa135a`
 
@@ -2724,6 +2904,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `332a7a8c4b60df7324f89ebbc00a676861d1ec144563e217a16f5bc874701da8`
 
@@ -2737,6 +2918,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `090d71cf65b40707fff4a011a79b084c91e0bd24d4c84bd0db7715ab0c942d0b`
 
@@ -2750,6 +2932,7 @@ RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && r
 -	Virtual Size: 10.2 MB (10159692 bytes)
 -	v2 Blob: `sha256:08e310351b3f2c1ace2fc78bf8995b9876ab30d639cd7d7f32a10d68efa8b0dc`
 -	v2 Content-Length: 4.2 MB (4224827 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:29 GMT
 
 #### `8b1aac1dba912d518ae1d2e2930877eba82bf9bc585b1b240002d1f3c844abf2`
 
@@ -2775,6 +2958,7 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.8 MB (6792760 bytes)
 -	v2 Blob: `sha256:9b2e5bbe8f653d8ac5c3d1540b841c9478d83f2459d8c12bcff99df6ea42347a`
 -	v2 Content-Length: 2.7 MB (2669588 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:24 GMT
 
 #### `51ca2290faac3415d2e235c4db2a43a806cddb8911ae87d1b49932b314acbb19`
 
@@ -2788,6 +2972,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:210bab2cc62afd69445f705d55d26ed70dceecbe7ea907dba73d7e6013e5d2fb`
 -	v2 Content-Length: 96.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:21 GMT
 
 #### `93b7b22651d2858dc72b07c4213d4ca6da8669113241eee0eaeca8192276d229`
 
@@ -2801,6 +2986,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cd6137a6106305097f8228da058f0028054948344348f236b2d95c48126c0f03`
 
@@ -2814,6 +3000,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `665852dc4ab74876a2dea0263bdd700b5ea2ef0ea7c446bee8f432369e2d5c55`
 
@@ -2827,6 +3014,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `1852800902fb9d965e99731079f38948558744f3c83dc4edcc4550cd52896d72`
 
@@ -2840,6 +3028,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e74b73c06d1c0bc85fd9f891834cb6b3c44b45f15baec836cd91f89c6b92006a`
 
@@ -2853,6 +3042,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `be6dad05bbfce6eaaaaf5ebb29ca27157397b21bee7f908c044005b474069d50`
 
@@ -2866,6 +3056,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:3.0-32bit`
 
@@ -2889,6 +3080,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2902,6 +3094,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -2915,6 +3108,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -2931,6 +3125,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -2944,6 +3139,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -2965,6 +3161,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `fa8694d8f3da8c067810723615919e1f0dabd90b58911bd97303e4e89cedd1c8`
 
@@ -2978,6 +3175,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274486942ad1533fa3050674c4cb5c1fa55d018159ba9215faa7b722f8fa135a`
 
@@ -2991,6 +3189,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `332a7a8c4b60df7324f89ebbc00a676861d1ec144563e217a16f5bc874701da8`
 
@@ -3004,6 +3203,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `090d71cf65b40707fff4a011a79b084c91e0bd24d4c84bd0db7715ab0c942d0b`
 
@@ -3017,6 +3217,7 @@ RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && r
 -	Virtual Size: 10.2 MB (10159692 bytes)
 -	v2 Blob: `sha256:08e310351b3f2c1ace2fc78bf8995b9876ab30d639cd7d7f32a10d68efa8b0dc`
 -	v2 Content-Length: 4.2 MB (4224827 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:29 GMT
 
 #### `8b1aac1dba912d518ae1d2e2930877eba82bf9bc585b1b240002d1f3c844abf2`
 
@@ -3042,6 +3243,7 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.8 MB (6792760 bytes)
 -	v2 Blob: `sha256:9b2e5bbe8f653d8ac5c3d1540b841c9478d83f2459d8c12bcff99df6ea42347a`
 -	v2 Content-Length: 2.7 MB (2669588 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:24 GMT
 
 #### `51ca2290faac3415d2e235c4db2a43a806cddb8911ae87d1b49932b314acbb19`
 
@@ -3055,6 +3257,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:210bab2cc62afd69445f705d55d26ed70dceecbe7ea907dba73d7e6013e5d2fb`
 -	v2 Content-Length: 96.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:21 GMT
 
 #### `93b7b22651d2858dc72b07c4213d4ca6da8669113241eee0eaeca8192276d229`
 
@@ -3068,6 +3271,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cd6137a6106305097f8228da058f0028054948344348f236b2d95c48126c0f03`
 
@@ -3081,6 +3285,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `665852dc4ab74876a2dea0263bdd700b5ea2ef0ea7c446bee8f432369e2d5c55`
 
@@ -3094,6 +3299,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `1852800902fb9d965e99731079f38948558744f3c83dc4edcc4550cd52896d72`
 
@@ -3107,6 +3313,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e74b73c06d1c0bc85fd9f891834cb6b3c44b45f15baec836cd91f89c6b92006a`
 
@@ -3120,6 +3327,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `be6dad05bbfce6eaaaaf5ebb29ca27157397b21bee7f908c044005b474069d50`
 
@@ -3133,6 +3341,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:3-32bit`
 
@@ -3156,6 +3365,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3169,6 +3379,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -3182,6 +3393,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -3198,6 +3410,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -3211,6 +3424,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -3232,6 +3446,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `fa8694d8f3da8c067810723615919e1f0dabd90b58911bd97303e4e89cedd1c8`
 
@@ -3245,6 +3460,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274486942ad1533fa3050674c4cb5c1fa55d018159ba9215faa7b722f8fa135a`
 
@@ -3258,6 +3474,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `332a7a8c4b60df7324f89ebbc00a676861d1ec144563e217a16f5bc874701da8`
 
@@ -3271,6 +3488,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `090d71cf65b40707fff4a011a79b084c91e0bd24d4c84bd0db7715ab0c942d0b`
 
@@ -3284,6 +3502,7 @@ RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && r
 -	Virtual Size: 10.2 MB (10159692 bytes)
 -	v2 Blob: `sha256:08e310351b3f2c1ace2fc78bf8995b9876ab30d639cd7d7f32a10d68efa8b0dc`
 -	v2 Content-Length: 4.2 MB (4224827 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:29 GMT
 
 #### `8b1aac1dba912d518ae1d2e2930877eba82bf9bc585b1b240002d1f3c844abf2`
 
@@ -3309,6 +3528,7 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.8 MB (6792760 bytes)
 -	v2 Blob: `sha256:9b2e5bbe8f653d8ac5c3d1540b841c9478d83f2459d8c12bcff99df6ea42347a`
 -	v2 Content-Length: 2.7 MB (2669588 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:24 GMT
 
 #### `51ca2290faac3415d2e235c4db2a43a806cddb8911ae87d1b49932b314acbb19`
 
@@ -3322,6 +3542,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:210bab2cc62afd69445f705d55d26ed70dceecbe7ea907dba73d7e6013e5d2fb`
 -	v2 Content-Length: 96.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:21 GMT
 
 #### `93b7b22651d2858dc72b07c4213d4ca6da8669113241eee0eaeca8192276d229`
 
@@ -3335,6 +3556,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cd6137a6106305097f8228da058f0028054948344348f236b2d95c48126c0f03`
 
@@ -3348,6 +3570,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `665852dc4ab74876a2dea0263bdd700b5ea2ef0ea7c446bee8f432369e2d5c55`
 
@@ -3361,6 +3584,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `1852800902fb9d965e99731079f38948558744f3c83dc4edcc4550cd52896d72`
 
@@ -3374,6 +3598,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e74b73c06d1c0bc85fd9f891834cb6b3c44b45f15baec836cd91f89c6b92006a`
 
@@ -3387,6 +3612,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `be6dad05bbfce6eaaaaf5ebb29ca27157397b21bee7f908c044005b474069d50`
 
@@ -3400,6 +3626,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:32bit`
 
@@ -3423,6 +3650,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3436,6 +3664,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `242f673dc7b366ccc604332d9a32305dbc2d0dfd9d18f7c9eedb4dc71226a75b`
 
@@ -3449,6 +3678,7 @@ RUN groupadd -r redis && useradd -r -g redis redis
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:3868e1e933d64c8a5a98b6d05b35ec4e02561582e61bb802d35187a0dd50011f`
 -	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:25 GMT
 
 #### `248844fa7401ede7b0207f9fcb66dbec2d7a4ed3f78f686b4550a1feab2d4e50`
 
@@ -3465,6 +3695,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:1d007c18c656d2a2686a71d4c23ca02e477d979939ab4fd5cbdfc28a31023f5d`
 -	v2 Content-Length: 16.6 MB (16617789 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:22 GMT
 
 #### `5bf576255e99d10dfc4bb76b4a7c5b41ab83b4f97b7b5035a1dcad517585bf22`
 
@@ -3478,6 +3709,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a87736afb5cf2e2bd6b4fc34383afc3cdeba60addaa01e1a2ce1c0867c44ebde`
 
@@ -3499,6 +3731,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:ad75a8697e9c1b33713cce5427b5606b1167f51e51988c72891f26dcbb02d3d7`
 -	v2 Content-Length: 807.9 KB (807932 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:11:12 GMT
 
 #### `fa8694d8f3da8c067810723615919e1f0dabd90b58911bd97303e4e89cedd1c8`
 
@@ -3512,6 +3745,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274486942ad1533fa3050674c4cb5c1fa55d018159ba9215faa7b722f8fa135a`
 
@@ -3525,6 +3759,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `332a7a8c4b60df7324f89ebbc00a676861d1ec144563e217a16f5bc874701da8`
 
@@ -3538,6 +3773,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `090d71cf65b40707fff4a011a79b084c91e0bd24d4c84bd0db7715ab0c942d0b`
 
@@ -3551,6 +3787,7 @@ RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && r
 -	Virtual Size: 10.2 MB (10159692 bytes)
 -	v2 Blob: `sha256:08e310351b3f2c1ace2fc78bf8995b9876ab30d639cd7d7f32a10d68efa8b0dc`
 -	v2 Content-Length: 4.2 MB (4224827 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:29 GMT
 
 #### `8b1aac1dba912d518ae1d2e2930877eba82bf9bc585b1b240002d1f3c844abf2`
 
@@ -3576,6 +3813,7 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.8 MB (6792760 bytes)
 -	v2 Blob: `sha256:9b2e5bbe8f653d8ac5c3d1540b841c9478d83f2459d8c12bcff99df6ea42347a`
 -	v2 Content-Length: 2.7 MB (2669588 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:24 GMT
 
 #### `51ca2290faac3415d2e235c4db2a43a806cddb8911ae87d1b49932b314acbb19`
 
@@ -3589,6 +3827,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:210bab2cc62afd69445f705d55d26ed70dceecbe7ea907dba73d7e6013e5d2fb`
 -	v2 Content-Length: 96.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:13:21 GMT
 
 #### `93b7b22651d2858dc72b07c4213d4ca6da8669113241eee0eaeca8192276d229`
 
@@ -3602,6 +3841,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cd6137a6106305097f8228da058f0028054948344348f236b2d95c48126c0f03`
 
@@ -3615,6 +3855,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `665852dc4ab74876a2dea0263bdd700b5ea2ef0ea7c446bee8f432369e2d5c55`
 
@@ -3628,6 +3869,7 @@ COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /e
 -	Virtual Size: 194.0 B
 -	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
 -	v2 Content-Length: 260.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:25:22 GMT
 
 #### `1852800902fb9d965e99731079f38948558744f3c83dc4edcc4550cd52896d72`
 
@@ -3641,6 +3883,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e74b73c06d1c0bc85fd9f891834cb6b3c44b45f15baec836cd91f89c6b92006a`
 
@@ -3654,6 +3897,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `be6dad05bbfce6eaaaaf5ebb29ca27157397b21bee7f908c044005b474069d50`
 
@@ -3667,6 +3911,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:3.0.7-alpine`
 
@@ -3690,6 +3935,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `bbc29d5712c3e53db4ed3bfabcd9ed65411f8955aa09076056a3fe1fff2cc144`
 
@@ -3703,6 +3949,7 @@ RUN addgroup -S redis && adduser -S -G redis redis
 -	Virtual Size: 4.9 KB (4923 bytes)
 -	v2 Blob: `sha256:a790394eb78d803e9235a74fbef3aef7477cff006b907f0b5304d7a54fc75e74`
 -	v2 Content-Length: 1.3 KB (1261 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:22:16 GMT
 
 #### `d4ec163f10308ed37403dbcd889ebd85c8b15c64e0ef5866533f4210fc01a43c`
 
@@ -3716,6 +3963,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85579da6dcb18a3d9ee340985ae46380f7b10bdf67505d145f8ae0717579f32b`
 
@@ -3742,6 +3990,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2716367 bytes)
 -	v2 Blob: `sha256:10d0b5c4aea4d3c6086d7c09920b27bbcb23ede6809f7e3fb5e026a558113907`
 -	v2 Content-Length: 815.1 KB (815062 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:22:10 GMT
 
 #### `01e06c3a4e5f4f50da3cb3d325388481e2defff42e0cebfad7f0a8a99648de91`
 
@@ -3755,6 +4004,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e82e7b66a15e7137857dc9c3d5be0ede2423b0c0de6c93c9dc8c277d4455fe8f`
 
@@ -3768,6 +4018,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea345a98575a406bca4693db9a50d642827ad9566c5d43e1129480b4e5127b6c`
 
@@ -3781,6 +4032,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4390d6d944d7b790fcf44f7097dedb796e6b9ec240ac2273b9473e92e76beffe`
 
@@ -3809,6 +4061,7 @@ RUN set -x \
 -	Virtual Size: 8.4 MB (8435367 bytes)
 -	v2 Blob: `sha256:514036a3f4722b4e448f2f0166d0cf370eed91d1f78a1059d913cd3045854e46`
 -	v2 Content-Length: 2.8 MB (2840220 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:21:59 GMT
 
 #### `395d382b3460b08b2887fd85a09a3f5bb27ca50abba289c27dcd89388d7b291d`
 
@@ -3822,6 +4075,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7eb566aca788ad235ba4a3df62dc837abe28ead4c78b547aaec60053e052f487`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:21:56 GMT
 
 #### `5dc7db5e38f9ea9c911894523a7a3b82fca99ab9b96c112f9370e4e4aac7d9a2`
 
@@ -3835,6 +4089,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0b10be2f1936fc443b36ab0db604722c41f5bf93db7c02bf3c6bafc74bb3520`
 
@@ -3848,6 +4103,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5ef4df80730fb3ae3f48e3f54adbc7756a66a098a4bd5efd1efc15851fca4b1b`
 
@@ -3861,6 +4117,7 @@ COPY file:439eb3f0b5599dea9962c4d9ceaf5bebb4c0c7e376292e21ca0f83decd967e4d in /e
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:6fedafd6ed95c205896c61b1acf8524d827f3812a7fd34acf8a6780dc88b7e68`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:27:03 GMT
 
 #### `95a328b349dc81d857ce907aee81bc5c53c0c97e7e2257648c90ed3bb993709f`
 
@@ -3874,6 +4131,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `616a3d23b5e3640c46d090b71ae460c3094a4fda3b308a9a820b43a431691cd0`
 
@@ -3887,6 +4145,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `06f0e22653ede0fca15c6898b5a3a2fa260f9ae258df686b7d3c459aca14ac33`
 
@@ -3900,6 +4159,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:3.0-alpine`
 
@@ -3923,6 +4183,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `bbc29d5712c3e53db4ed3bfabcd9ed65411f8955aa09076056a3fe1fff2cc144`
 
@@ -3936,6 +4197,7 @@ RUN addgroup -S redis && adduser -S -G redis redis
 -	Virtual Size: 4.9 KB (4923 bytes)
 -	v2 Blob: `sha256:a790394eb78d803e9235a74fbef3aef7477cff006b907f0b5304d7a54fc75e74`
 -	v2 Content-Length: 1.3 KB (1261 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:22:16 GMT
 
 #### `d4ec163f10308ed37403dbcd889ebd85c8b15c64e0ef5866533f4210fc01a43c`
 
@@ -3949,6 +4211,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85579da6dcb18a3d9ee340985ae46380f7b10bdf67505d145f8ae0717579f32b`
 
@@ -3975,6 +4238,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2716367 bytes)
 -	v2 Blob: `sha256:10d0b5c4aea4d3c6086d7c09920b27bbcb23ede6809f7e3fb5e026a558113907`
 -	v2 Content-Length: 815.1 KB (815062 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:22:10 GMT
 
 #### `01e06c3a4e5f4f50da3cb3d325388481e2defff42e0cebfad7f0a8a99648de91`
 
@@ -3988,6 +4252,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e82e7b66a15e7137857dc9c3d5be0ede2423b0c0de6c93c9dc8c277d4455fe8f`
 
@@ -4001,6 +4266,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea345a98575a406bca4693db9a50d642827ad9566c5d43e1129480b4e5127b6c`
 
@@ -4014,6 +4280,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4390d6d944d7b790fcf44f7097dedb796e6b9ec240ac2273b9473e92e76beffe`
 
@@ -4042,6 +4309,7 @@ RUN set -x \
 -	Virtual Size: 8.4 MB (8435367 bytes)
 -	v2 Blob: `sha256:514036a3f4722b4e448f2f0166d0cf370eed91d1f78a1059d913cd3045854e46`
 -	v2 Content-Length: 2.8 MB (2840220 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:21:59 GMT
 
 #### `395d382b3460b08b2887fd85a09a3f5bb27ca50abba289c27dcd89388d7b291d`
 
@@ -4055,6 +4323,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7eb566aca788ad235ba4a3df62dc837abe28ead4c78b547aaec60053e052f487`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:21:56 GMT
 
 #### `5dc7db5e38f9ea9c911894523a7a3b82fca99ab9b96c112f9370e4e4aac7d9a2`
 
@@ -4068,6 +4337,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0b10be2f1936fc443b36ab0db604722c41f5bf93db7c02bf3c6bafc74bb3520`
 
@@ -4081,6 +4351,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5ef4df80730fb3ae3f48e3f54adbc7756a66a098a4bd5efd1efc15851fca4b1b`
 
@@ -4094,6 +4365,7 @@ COPY file:439eb3f0b5599dea9962c4d9ceaf5bebb4c0c7e376292e21ca0f83decd967e4d in /e
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:6fedafd6ed95c205896c61b1acf8524d827f3812a7fd34acf8a6780dc88b7e68`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:27:03 GMT
 
 #### `95a328b349dc81d857ce907aee81bc5c53c0c97e7e2257648c90ed3bb993709f`
 
@@ -4107,6 +4379,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `616a3d23b5e3640c46d090b71ae460c3094a4fda3b308a9a820b43a431691cd0`
 
@@ -4120,6 +4393,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `06f0e22653ede0fca15c6898b5a3a2fa260f9ae258df686b7d3c459aca14ac33`
 
@@ -4133,6 +4407,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:3-alpine`
 
@@ -4156,6 +4431,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `bbc29d5712c3e53db4ed3bfabcd9ed65411f8955aa09076056a3fe1fff2cc144`
 
@@ -4169,6 +4445,7 @@ RUN addgroup -S redis && adduser -S -G redis redis
 -	Virtual Size: 4.9 KB (4923 bytes)
 -	v2 Blob: `sha256:a790394eb78d803e9235a74fbef3aef7477cff006b907f0b5304d7a54fc75e74`
 -	v2 Content-Length: 1.3 KB (1261 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:22:16 GMT
 
 #### `d4ec163f10308ed37403dbcd889ebd85c8b15c64e0ef5866533f4210fc01a43c`
 
@@ -4182,6 +4459,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85579da6dcb18a3d9ee340985ae46380f7b10bdf67505d145f8ae0717579f32b`
 
@@ -4208,6 +4486,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2716367 bytes)
 -	v2 Blob: `sha256:10d0b5c4aea4d3c6086d7c09920b27bbcb23ede6809f7e3fb5e026a558113907`
 -	v2 Content-Length: 815.1 KB (815062 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:22:10 GMT
 
 #### `01e06c3a4e5f4f50da3cb3d325388481e2defff42e0cebfad7f0a8a99648de91`
 
@@ -4221,6 +4500,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e82e7b66a15e7137857dc9c3d5be0ede2423b0c0de6c93c9dc8c277d4455fe8f`
 
@@ -4234,6 +4514,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea345a98575a406bca4693db9a50d642827ad9566c5d43e1129480b4e5127b6c`
 
@@ -4247,6 +4528,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4390d6d944d7b790fcf44f7097dedb796e6b9ec240ac2273b9473e92e76beffe`
 
@@ -4275,6 +4557,7 @@ RUN set -x \
 -	Virtual Size: 8.4 MB (8435367 bytes)
 -	v2 Blob: `sha256:514036a3f4722b4e448f2f0166d0cf370eed91d1f78a1059d913cd3045854e46`
 -	v2 Content-Length: 2.8 MB (2840220 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:21:59 GMT
 
 #### `395d382b3460b08b2887fd85a09a3f5bb27ca50abba289c27dcd89388d7b291d`
 
@@ -4288,6 +4571,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7eb566aca788ad235ba4a3df62dc837abe28ead4c78b547aaec60053e052f487`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:21:56 GMT
 
 #### `5dc7db5e38f9ea9c911894523a7a3b82fca99ab9b96c112f9370e4e4aac7d9a2`
 
@@ -4301,6 +4585,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0b10be2f1936fc443b36ab0db604722c41f5bf93db7c02bf3c6bafc74bb3520`
 
@@ -4314,6 +4599,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5ef4df80730fb3ae3f48e3f54adbc7756a66a098a4bd5efd1efc15851fca4b1b`
 
@@ -4327,6 +4613,7 @@ COPY file:439eb3f0b5599dea9962c4d9ceaf5bebb4c0c7e376292e21ca0f83decd967e4d in /e
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:6fedafd6ed95c205896c61b1acf8524d827f3812a7fd34acf8a6780dc88b7e68`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:27:03 GMT
 
 #### `95a328b349dc81d857ce907aee81bc5c53c0c97e7e2257648c90ed3bb993709f`
 
@@ -4340,6 +4627,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `616a3d23b5e3640c46d090b71ae460c3094a4fda3b308a9a820b43a431691cd0`
 
@@ -4353,6 +4641,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `06f0e22653ede0fca15c6898b5a3a2fa260f9ae258df686b7d3c459aca14ac33`
 
@@ -4366,6 +4655,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `redis:alpine`
 
@@ -4389,6 +4679,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `bbc29d5712c3e53db4ed3bfabcd9ed65411f8955aa09076056a3fe1fff2cc144`
 
@@ -4402,6 +4693,7 @@ RUN addgroup -S redis && adduser -S -G redis redis
 -	Virtual Size: 4.9 KB (4923 bytes)
 -	v2 Blob: `sha256:a790394eb78d803e9235a74fbef3aef7477cff006b907f0b5304d7a54fc75e74`
 -	v2 Content-Length: 1.3 KB (1261 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:22:16 GMT
 
 #### `d4ec163f10308ed37403dbcd889ebd85c8b15c64e0ef5866533f4210fc01a43c`
 
@@ -4415,6 +4707,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85579da6dcb18a3d9ee340985ae46380f7b10bdf67505d145f8ae0717579f32b`
 
@@ -4441,6 +4734,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2716367 bytes)
 -	v2 Blob: `sha256:10d0b5c4aea4d3c6086d7c09920b27bbcb23ede6809f7e3fb5e026a558113907`
 -	v2 Content-Length: 815.1 KB (815062 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:22:10 GMT
 
 #### `01e06c3a4e5f4f50da3cb3d325388481e2defff42e0cebfad7f0a8a99648de91`
 
@@ -4454,6 +4748,7 @@ ENV REDIS_VERSION=3.0.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e82e7b66a15e7137857dc9c3d5be0ede2423b0c0de6c93c9dc8c277d4455fe8f`
 
@@ -4467,6 +4762,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea345a98575a406bca4693db9a50d642827ad9566c5d43e1129480b4e5127b6c`
 
@@ -4480,6 +4776,7 @@ ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4390d6d944d7b790fcf44f7097dedb796e6b9ec240ac2273b9473e92e76beffe`
 
@@ -4508,6 +4805,7 @@ RUN set -x \
 -	Virtual Size: 8.4 MB (8435367 bytes)
 -	v2 Blob: `sha256:514036a3f4722b4e448f2f0166d0cf370eed91d1f78a1059d913cd3045854e46`
 -	v2 Content-Length: 2.8 MB (2840220 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:21:59 GMT
 
 #### `395d382b3460b08b2887fd85a09a3f5bb27ca50abba289c27dcd89388d7b291d`
 
@@ -4521,6 +4819,7 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7eb566aca788ad235ba4a3df62dc837abe28ead4c78b547aaec60053e052f487`
 -	v2 Content-Length: 98.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:21:56 GMT
 
 #### `5dc7db5e38f9ea9c911894523a7a3b82fca99ab9b96c112f9370e4e4aac7d9a2`
 
@@ -4534,6 +4833,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0b10be2f1936fc443b36ab0db604722c41f5bf93db7c02bf3c6bafc74bb3520`
 
@@ -4547,6 +4847,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5ef4df80730fb3ae3f48e3f54adbc7756a66a098a4bd5efd1efc15851fca4b1b`
 
@@ -4560,6 +4861,7 @@ COPY file:439eb3f0b5599dea9962c4d9ceaf5bebb4c0c7e376292e21ca0f83decd967e4d in /e
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:6fedafd6ed95c205896c61b1acf8524d827f3812a7fd34acf8a6780dc88b7e68`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 23:27:03 GMT
 
 #### `95a328b349dc81d857ce907aee81bc5c53c0c97e7e2257648c90ed3bb993709f`
 
@@ -4573,6 +4875,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `616a3d23b5e3640c46d090b71ae460c3094a4fda3b308a9a820b43a431691cd0`
 
@@ -4586,6 +4889,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `06f0e22653ede0fca15c6898b5a3a2fa260f9ae258df686b7d3c459aca14ac33`
 
@@ -4599,3 +4903,4 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

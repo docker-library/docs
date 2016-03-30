@@ -36,6 +36,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -61,6 +62,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -74,6 +76,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -87,6 +90,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b409bfffca040141bf9cd7cee1982d9cd8de99d2df9cea789d0f9f276852e59`
 
@@ -100,6 +104,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8ec2450c6b63ac256f7ed6f8d90e3fe72cb14d41a8c8634d9a169579eda6eb`
 
@@ -113,6 +118,7 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:efa7035358b87f71c21bae8d025a0761bdaf3c8bd9731f2609c15b0db2622e7d`
 -	v2 Content-Length: 329.2 KB (329189 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:33 GMT
 
 #### `fea18d173ca4e41fe240658683c36b6e59075023fa973b20006491aed6f094ca`
 
@@ -126,6 +132,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c9bb5cbe512f948eececa9b293b036ca713082863cd1db6cdc91e2e12270633`
 
@@ -139,6 +146,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1
 -	Virtual Size: 25.8 KB (25832 bytes)
 -	v2 Blob: `sha256:492b493cc7ff45315e1f76492ad223c59218eebcbb0c49b28936e6934aa0b287`
 -	v2 Content-Length: 13.1 KB (13071 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:26 GMT
 
 #### `ae87b758dd0d325cd9784f6662fcab6cbbf63339f020f44af72748867e640f12`
 
@@ -152,6 +160,7 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources
 -	Virtual Size: 51.0 B
 -	v2 Blob: `sha256:b95358183d2d44d9ba8e011fce3b9dd6fdef4476498ff82fd651da83c579a5eb`
 -	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:23 GMT
 
 #### `9cadeb3affd320e1074dae3d51d6926f5361802f5c63b8f13f28752b095550f1`
 
@@ -165,6 +174,7 @@ ENV ROS_DISTRO=indigo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c28b2d84bd76f22bbee4d37980eb2e362ab2ea4e9769ad29323f58d8180697e`
 
@@ -182,6 +192,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89903558 bytes)
 -	v2 Blob: `sha256:103c3645b87a94e1ba0c93cf8715b35a2ae3a269756cda609a97cdaf3c85ed36`
 -	v2 Content-Length: 31.9 MB (31922456 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:13 GMT
 
 #### `0c7cd879039b9740088c973d186379f35eb92a0b7529dbd5804d892b822dccac`
 
@@ -196,6 +207,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1688191 bytes)
 -	v2 Blob: `sha256:1cd6ee992a455f70ecca24b35c98d525870d3a6b66745da09e573b47c8420371`
 -	v2 Content-Length: 538.6 KB (538614 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:50 GMT
 
 #### `e8530b0325b8a48de94ef95dd7c3d173e8afee7e41a7e762f7e512ebfc8810f0`
 
@@ -211,6 +223,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:1fc2ba02a5ca509b815ae236e857c09356592d194bc258ebbd0832afedfc4655`
 -	v2 Content-Length: 151.7 MB (151654268 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:40 GMT
 
 #### `8ab2cb273ccb83e67d6475501df4a49dfb94b7d0149b24f940d63db9340a68c1`
 
@@ -224,6 +237,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `c7411052df4962c87cfa1185b14627e54bf3f1e5340b3bfacf72af2bb1c12049`
 
@@ -237,6 +251,7 @@ ENTRYPOINT &{["/ros_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec05b0e2ef74a39f3396b76c87a3455430c01226954876bbc6dbc28031343f24`
 
@@ -250,6 +265,7 @@ CMD ["bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ros:indigo-ros-base`
 
@@ -273,6 +289,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -298,6 +315,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -311,6 +329,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -324,6 +343,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b409bfffca040141bf9cd7cee1982d9cd8de99d2df9cea789d0f9f276852e59`
 
@@ -337,6 +357,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8ec2450c6b63ac256f7ed6f8d90e3fe72cb14d41a8c8634d9a169579eda6eb`
 
@@ -350,6 +371,7 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:efa7035358b87f71c21bae8d025a0761bdaf3c8bd9731f2609c15b0db2622e7d`
 -	v2 Content-Length: 329.2 KB (329189 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:33 GMT
 
 #### `fea18d173ca4e41fe240658683c36b6e59075023fa973b20006491aed6f094ca`
 
@@ -363,6 +385,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c9bb5cbe512f948eececa9b293b036ca713082863cd1db6cdc91e2e12270633`
 
@@ -376,6 +399,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1
 -	Virtual Size: 25.8 KB (25832 bytes)
 -	v2 Blob: `sha256:492b493cc7ff45315e1f76492ad223c59218eebcbb0c49b28936e6934aa0b287`
 -	v2 Content-Length: 13.1 KB (13071 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:26 GMT
 
 #### `ae87b758dd0d325cd9784f6662fcab6cbbf63339f020f44af72748867e640f12`
 
@@ -389,6 +413,7 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources
 -	Virtual Size: 51.0 B
 -	v2 Blob: `sha256:b95358183d2d44d9ba8e011fce3b9dd6fdef4476498ff82fd651da83c579a5eb`
 -	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:23 GMT
 
 #### `9cadeb3affd320e1074dae3d51d6926f5361802f5c63b8f13f28752b095550f1`
 
@@ -402,6 +427,7 @@ ENV ROS_DISTRO=indigo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c28b2d84bd76f22bbee4d37980eb2e362ab2ea4e9769ad29323f58d8180697e`
 
@@ -419,6 +445,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89903558 bytes)
 -	v2 Blob: `sha256:103c3645b87a94e1ba0c93cf8715b35a2ae3a269756cda609a97cdaf3c85ed36`
 -	v2 Content-Length: 31.9 MB (31922456 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:13 GMT
 
 #### `0c7cd879039b9740088c973d186379f35eb92a0b7529dbd5804d892b822dccac`
 
@@ -433,6 +460,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1688191 bytes)
 -	v2 Blob: `sha256:1cd6ee992a455f70ecca24b35c98d525870d3a6b66745da09e573b47c8420371`
 -	v2 Content-Length: 538.6 KB (538614 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:50 GMT
 
 #### `e8530b0325b8a48de94ef95dd7c3d173e8afee7e41a7e762f7e512ebfc8810f0`
 
@@ -448,6 +476,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:1fc2ba02a5ca509b815ae236e857c09356592d194bc258ebbd0832afedfc4655`
 -	v2 Content-Length: 151.7 MB (151654268 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:40 GMT
 
 #### `8ab2cb273ccb83e67d6475501df4a49dfb94b7d0149b24f940d63db9340a68c1`
 
@@ -461,6 +490,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `c7411052df4962c87cfa1185b14627e54bf3f1e5340b3bfacf72af2bb1c12049`
 
@@ -474,6 +504,7 @@ ENTRYPOINT &{["/ros_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec05b0e2ef74a39f3396b76c87a3455430c01226954876bbc6dbc28031343f24`
 
@@ -487,6 +518,7 @@ CMD ["bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c366f9bb95b3bf35b6f4484df747d6b5f9f673ff4b9e364f6fdf4601e38b61da`
 
@@ -500,6 +532,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e795c44879530637ab6bb3eb91c62bfc7ff7b6e74fb3bc9689c2ab72103e71b8`
 
@@ -515,6 +548,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:f580de0c172a7c8314bf716263a2f881c0a9d677ea767f926c5f74e4abb147e3`
 -	v2 Content-Length: 3.4 MB (3406863 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:44 GMT
 
 ## `ros:indigo-robot`
 
@@ -538,6 +572,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -563,6 +598,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -576,6 +612,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -589,6 +626,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b409bfffca040141bf9cd7cee1982d9cd8de99d2df9cea789d0f9f276852e59`
 
@@ -602,6 +640,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8ec2450c6b63ac256f7ed6f8d90e3fe72cb14d41a8c8634d9a169579eda6eb`
 
@@ -615,6 +654,7 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:efa7035358b87f71c21bae8d025a0761bdaf3c8bd9731f2609c15b0db2622e7d`
 -	v2 Content-Length: 329.2 KB (329189 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:33 GMT
 
 #### `fea18d173ca4e41fe240658683c36b6e59075023fa973b20006491aed6f094ca`
 
@@ -628,6 +668,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c9bb5cbe512f948eececa9b293b036ca713082863cd1db6cdc91e2e12270633`
 
@@ -641,6 +682,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1
 -	Virtual Size: 25.8 KB (25832 bytes)
 -	v2 Blob: `sha256:492b493cc7ff45315e1f76492ad223c59218eebcbb0c49b28936e6934aa0b287`
 -	v2 Content-Length: 13.1 KB (13071 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:26 GMT
 
 #### `ae87b758dd0d325cd9784f6662fcab6cbbf63339f020f44af72748867e640f12`
 
@@ -654,6 +696,7 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources
 -	Virtual Size: 51.0 B
 -	v2 Blob: `sha256:b95358183d2d44d9ba8e011fce3b9dd6fdef4476498ff82fd651da83c579a5eb`
 -	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:23 GMT
 
 #### `9cadeb3affd320e1074dae3d51d6926f5361802f5c63b8f13f28752b095550f1`
 
@@ -667,6 +710,7 @@ ENV ROS_DISTRO=indigo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c28b2d84bd76f22bbee4d37980eb2e362ab2ea4e9769ad29323f58d8180697e`
 
@@ -684,6 +728,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89903558 bytes)
 -	v2 Blob: `sha256:103c3645b87a94e1ba0c93cf8715b35a2ae3a269756cda609a97cdaf3c85ed36`
 -	v2 Content-Length: 31.9 MB (31922456 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:13 GMT
 
 #### `0c7cd879039b9740088c973d186379f35eb92a0b7529dbd5804d892b822dccac`
 
@@ -698,6 +743,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1688191 bytes)
 -	v2 Blob: `sha256:1cd6ee992a455f70ecca24b35c98d525870d3a6b66745da09e573b47c8420371`
 -	v2 Content-Length: 538.6 KB (538614 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:50 GMT
 
 #### `e8530b0325b8a48de94ef95dd7c3d173e8afee7e41a7e762f7e512ebfc8810f0`
 
@@ -713,6 +759,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:1fc2ba02a5ca509b815ae236e857c09356592d194bc258ebbd0832afedfc4655`
 -	v2 Content-Length: 151.7 MB (151654268 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:40 GMT
 
 #### `8ab2cb273ccb83e67d6475501df4a49dfb94b7d0149b24f940d63db9340a68c1`
 
@@ -726,6 +773,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `c7411052df4962c87cfa1185b14627e54bf3f1e5340b3bfacf72af2bb1c12049`
 
@@ -739,6 +787,7 @@ ENTRYPOINT &{["/ros_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec05b0e2ef74a39f3396b76c87a3455430c01226954876bbc6dbc28031343f24`
 
@@ -752,6 +801,7 @@ CMD ["bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c366f9bb95b3bf35b6f4484df747d6b5f9f673ff4b9e364f6fdf4601e38b61da`
 
@@ -765,6 +815,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e795c44879530637ab6bb3eb91c62bfc7ff7b6e74fb3bc9689c2ab72103e71b8`
 
@@ -780,6 +831,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:f580de0c172a7c8314bf716263a2f881c0a9d677ea767f926c5f74e4abb147e3`
 -	v2 Content-Length: 3.4 MB (3406863 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:44 GMT
 
 #### `41388e9217d95f7ee9c29ecfec49012f4d5f7bab0fb04935e8295b0e533fe8d2`
 
@@ -793,6 +845,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1eebac28bacb468bc45c61a3d27c72a46703476063207fe6461540be1a812cfd`
 
@@ -808,6 +861,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 210.9 MB (210875125 bytes)
 -	v2 Blob: `sha256:3fc2c23b3dd1e12b763b8bbf6a36af895e65c96d5e48a40412520b137944da34`
 -	v2 Content-Length: 68.1 MB (68126901 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:27:23 GMT
 
 ## `ros:indigo-perception`
 
@@ -831,6 +885,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -856,6 +911,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -869,6 +925,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -882,6 +939,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b409bfffca040141bf9cd7cee1982d9cd8de99d2df9cea789d0f9f276852e59`
 
@@ -895,6 +953,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8ec2450c6b63ac256f7ed6f8d90e3fe72cb14d41a8c8634d9a169579eda6eb`
 
@@ -908,6 +967,7 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:efa7035358b87f71c21bae8d025a0761bdaf3c8bd9731f2609c15b0db2622e7d`
 -	v2 Content-Length: 329.2 KB (329189 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:33 GMT
 
 #### `fea18d173ca4e41fe240658683c36b6e59075023fa973b20006491aed6f094ca`
 
@@ -921,6 +981,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c9bb5cbe512f948eececa9b293b036ca713082863cd1db6cdc91e2e12270633`
 
@@ -934,6 +995,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1
 -	Virtual Size: 25.8 KB (25832 bytes)
 -	v2 Blob: `sha256:492b493cc7ff45315e1f76492ad223c59218eebcbb0c49b28936e6934aa0b287`
 -	v2 Content-Length: 13.1 KB (13071 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:26 GMT
 
 #### `ae87b758dd0d325cd9784f6662fcab6cbbf63339f020f44af72748867e640f12`
 
@@ -947,6 +1009,7 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources
 -	Virtual Size: 51.0 B
 -	v2 Blob: `sha256:b95358183d2d44d9ba8e011fce3b9dd6fdef4476498ff82fd651da83c579a5eb`
 -	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:23 GMT
 
 #### `9cadeb3affd320e1074dae3d51d6926f5361802f5c63b8f13f28752b095550f1`
 
@@ -960,6 +1023,7 @@ ENV ROS_DISTRO=indigo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c28b2d84bd76f22bbee4d37980eb2e362ab2ea4e9769ad29323f58d8180697e`
 
@@ -977,6 +1041,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89903558 bytes)
 -	v2 Blob: `sha256:103c3645b87a94e1ba0c93cf8715b35a2ae3a269756cda609a97cdaf3c85ed36`
 -	v2 Content-Length: 31.9 MB (31922456 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:13 GMT
 
 #### `0c7cd879039b9740088c973d186379f35eb92a0b7529dbd5804d892b822dccac`
 
@@ -991,6 +1056,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1688191 bytes)
 -	v2 Blob: `sha256:1cd6ee992a455f70ecca24b35c98d525870d3a6b66745da09e573b47c8420371`
 -	v2 Content-Length: 538.6 KB (538614 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:50 GMT
 
 #### `e8530b0325b8a48de94ef95dd7c3d173e8afee7e41a7e762f7e512ebfc8810f0`
 
@@ -1006,6 +1072,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:1fc2ba02a5ca509b815ae236e857c09356592d194bc258ebbd0832afedfc4655`
 -	v2 Content-Length: 151.7 MB (151654268 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:40 GMT
 
 #### `8ab2cb273ccb83e67d6475501df4a49dfb94b7d0149b24f940d63db9340a68c1`
 
@@ -1019,6 +1086,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `c7411052df4962c87cfa1185b14627e54bf3f1e5340b3bfacf72af2bb1c12049`
 
@@ -1032,6 +1100,7 @@ ENTRYPOINT &{["/ros_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec05b0e2ef74a39f3396b76c87a3455430c01226954876bbc6dbc28031343f24`
 
@@ -1045,6 +1114,7 @@ CMD ["bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c366f9bb95b3bf35b6f4484df747d6b5f9f673ff4b9e364f6fdf4601e38b61da`
 
@@ -1058,6 +1128,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e795c44879530637ab6bb3eb91c62bfc7ff7b6e74fb3bc9689c2ab72103e71b8`
 
@@ -1073,6 +1144,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:f580de0c172a7c8314bf716263a2f881c0a9d677ea767f926c5f74e4abb147e3`
 -	v2 Content-Length: 3.4 MB (3406863 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:44 GMT
 
 #### `41388e9217d95f7ee9c29ecfec49012f4d5f7bab0fb04935e8295b0e533fe8d2`
 
@@ -1086,6 +1158,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0f2b81add63b094a3dfd9b76f0218e089ae1a9414e9a01fa0f7bc3b55d31c676`
 
@@ -1101,6 +1174,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 920.4 MB (920444121 bytes)
 -	v2 Blob: `sha256:605fdd2e837a3ad4b1cf85c65819f380223b9f15f2e768036c246480379451d9`
 -	v2 Content-Length: 267.8 MB (267791176 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:29:54 GMT
 
 ## `ros:indigo`
 
@@ -1124,6 +1198,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -1149,6 +1224,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1162,6 +1238,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1175,6 +1252,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b409bfffca040141bf9cd7cee1982d9cd8de99d2df9cea789d0f9f276852e59`
 
@@ -1188,6 +1266,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8ec2450c6b63ac256f7ed6f8d90e3fe72cb14d41a8c8634d9a169579eda6eb`
 
@@ -1201,6 +1280,7 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:efa7035358b87f71c21bae8d025a0761bdaf3c8bd9731f2609c15b0db2622e7d`
 -	v2 Content-Length: 329.2 KB (329189 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:33 GMT
 
 #### `fea18d173ca4e41fe240658683c36b6e59075023fa973b20006491aed6f094ca`
 
@@ -1214,6 +1294,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c9bb5cbe512f948eececa9b293b036ca713082863cd1db6cdc91e2e12270633`
 
@@ -1227,6 +1308,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1
 -	Virtual Size: 25.8 KB (25832 bytes)
 -	v2 Blob: `sha256:492b493cc7ff45315e1f76492ad223c59218eebcbb0c49b28936e6934aa0b287`
 -	v2 Content-Length: 13.1 KB (13071 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:26 GMT
 
 #### `ae87b758dd0d325cd9784f6662fcab6cbbf63339f020f44af72748867e640f12`
 
@@ -1240,6 +1322,7 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources
 -	Virtual Size: 51.0 B
 -	v2 Blob: `sha256:b95358183d2d44d9ba8e011fce3b9dd6fdef4476498ff82fd651da83c579a5eb`
 -	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:23 GMT
 
 #### `9cadeb3affd320e1074dae3d51d6926f5361802f5c63b8f13f28752b095550f1`
 
@@ -1253,6 +1336,7 @@ ENV ROS_DISTRO=indigo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c28b2d84bd76f22bbee4d37980eb2e362ab2ea4e9769ad29323f58d8180697e`
 
@@ -1270,6 +1354,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89903558 bytes)
 -	v2 Blob: `sha256:103c3645b87a94e1ba0c93cf8715b35a2ae3a269756cda609a97cdaf3c85ed36`
 -	v2 Content-Length: 31.9 MB (31922456 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:13 GMT
 
 #### `0c7cd879039b9740088c973d186379f35eb92a0b7529dbd5804d892b822dccac`
 
@@ -1284,6 +1369,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1688191 bytes)
 -	v2 Blob: `sha256:1cd6ee992a455f70ecca24b35c98d525870d3a6b66745da09e573b47c8420371`
 -	v2 Content-Length: 538.6 KB (538614 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:50 GMT
 
 #### `e8530b0325b8a48de94ef95dd7c3d173e8afee7e41a7e762f7e512ebfc8810f0`
 
@@ -1299,6 +1385,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:1fc2ba02a5ca509b815ae236e857c09356592d194bc258ebbd0832afedfc4655`
 -	v2 Content-Length: 151.7 MB (151654268 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:40 GMT
 
 #### `8ab2cb273ccb83e67d6475501df4a49dfb94b7d0149b24f940d63db9340a68c1`
 
@@ -1312,6 +1399,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `c7411052df4962c87cfa1185b14627e54bf3f1e5340b3bfacf72af2bb1c12049`
 
@@ -1325,6 +1413,7 @@ ENTRYPOINT &{["/ros_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec05b0e2ef74a39f3396b76c87a3455430c01226954876bbc6dbc28031343f24`
 
@@ -1338,6 +1427,7 @@ CMD ["bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c366f9bb95b3bf35b6f4484df747d6b5f9f673ff4b9e364f6fdf4601e38b61da`
 
@@ -1351,6 +1441,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e795c44879530637ab6bb3eb91c62bfc7ff7b6e74fb3bc9689c2ab72103e71b8`
 
@@ -1366,6 +1457,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:f580de0c172a7c8314bf716263a2f881c0a9d677ea767f926c5f74e4abb147e3`
 -	v2 Content-Length: 3.4 MB (3406863 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:44 GMT
 
 ## `ros:latest`
 
@@ -1389,6 +1481,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -1414,6 +1507,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1427,6 +1521,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1440,6 +1535,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b409bfffca040141bf9cd7cee1982d9cd8de99d2df9cea789d0f9f276852e59`
 
@@ -1453,6 +1549,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8ec2450c6b63ac256f7ed6f8d90e3fe72cb14d41a8c8634d9a169579eda6eb`
 
@@ -1466,6 +1563,7 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:efa7035358b87f71c21bae8d025a0761bdaf3c8bd9731f2609c15b0db2622e7d`
 -	v2 Content-Length: 329.2 KB (329189 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:33 GMT
 
 #### `fea18d173ca4e41fe240658683c36b6e59075023fa973b20006491aed6f094ca`
 
@@ -1479,6 +1577,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c9bb5cbe512f948eececa9b293b036ca713082863cd1db6cdc91e2e12270633`
 
@@ -1492,6 +1591,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1
 -	Virtual Size: 25.8 KB (25832 bytes)
 -	v2 Blob: `sha256:492b493cc7ff45315e1f76492ad223c59218eebcbb0c49b28936e6934aa0b287`
 -	v2 Content-Length: 13.1 KB (13071 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:26 GMT
 
 #### `ae87b758dd0d325cd9784f6662fcab6cbbf63339f020f44af72748867e640f12`
 
@@ -1505,6 +1605,7 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources
 -	Virtual Size: 51.0 B
 -	v2 Blob: `sha256:b95358183d2d44d9ba8e011fce3b9dd6fdef4476498ff82fd651da83c579a5eb`
 -	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:23 GMT
 
 #### `9cadeb3affd320e1074dae3d51d6926f5361802f5c63b8f13f28752b095550f1`
 
@@ -1518,6 +1619,7 @@ ENV ROS_DISTRO=indigo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c28b2d84bd76f22bbee4d37980eb2e362ab2ea4e9769ad29323f58d8180697e`
 
@@ -1535,6 +1637,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89903558 bytes)
 -	v2 Blob: `sha256:103c3645b87a94e1ba0c93cf8715b35a2ae3a269756cda609a97cdaf3c85ed36`
 -	v2 Content-Length: 31.9 MB (31922456 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:13 GMT
 
 #### `0c7cd879039b9740088c973d186379f35eb92a0b7529dbd5804d892b822dccac`
 
@@ -1549,6 +1652,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1688191 bytes)
 -	v2 Blob: `sha256:1cd6ee992a455f70ecca24b35c98d525870d3a6b66745da09e573b47c8420371`
 -	v2 Content-Length: 538.6 KB (538614 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:50 GMT
 
 #### `e8530b0325b8a48de94ef95dd7c3d173e8afee7e41a7e762f7e512ebfc8810f0`
 
@@ -1564,6 +1668,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:1fc2ba02a5ca509b815ae236e857c09356592d194bc258ebbd0832afedfc4655`
 -	v2 Content-Length: 151.7 MB (151654268 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:25:40 GMT
 
 #### `8ab2cb273ccb83e67d6475501df4a49dfb94b7d0149b24f940d63db9340a68c1`
 
@@ -1577,6 +1682,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `c7411052df4962c87cfa1185b14627e54bf3f1e5340b3bfacf72af2bb1c12049`
 
@@ -1590,6 +1696,7 @@ ENTRYPOINT &{["/ros_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec05b0e2ef74a39f3396b76c87a3455430c01226954876bbc6dbc28031343f24`
 
@@ -1603,6 +1710,7 @@ CMD ["bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c366f9bb95b3bf35b6f4484df747d6b5f9f673ff4b9e364f6fdf4601e38b61da`
 
@@ -1616,6 +1724,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e795c44879530637ab6bb3eb91c62bfc7ff7b6e74fb3bc9689c2ab72103e71b8`
 
@@ -1631,6 +1740,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:f580de0c172a7c8314bf716263a2f881c0a9d677ea767f926c5f74e4abb147e3`
 -	v2 Content-Length: 3.4 MB (3406863 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:44 GMT
 
 ## `ros:jade-ros-core`
 
@@ -1654,6 +1764,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -1679,6 +1790,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1692,6 +1804,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1705,6 +1818,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b409bfffca040141bf9cd7cee1982d9cd8de99d2df9cea789d0f9f276852e59`
 
@@ -1718,6 +1832,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8ec2450c6b63ac256f7ed6f8d90e3fe72cb14d41a8c8634d9a169579eda6eb`
 
@@ -1731,6 +1846,7 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:efa7035358b87f71c21bae8d025a0761bdaf3c8bd9731f2609c15b0db2622e7d`
 -	v2 Content-Length: 329.2 KB (329189 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:33 GMT
 
 #### `fea18d173ca4e41fe240658683c36b6e59075023fa973b20006491aed6f094ca`
 
@@ -1744,6 +1860,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c9bb5cbe512f948eececa9b293b036ca713082863cd1db6cdc91e2e12270633`
 
@@ -1757,6 +1874,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1
 -	Virtual Size: 25.8 KB (25832 bytes)
 -	v2 Blob: `sha256:492b493cc7ff45315e1f76492ad223c59218eebcbb0c49b28936e6934aa0b287`
 -	v2 Content-Length: 13.1 KB (13071 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:26 GMT
 
 #### `ae87b758dd0d325cd9784f6662fcab6cbbf63339f020f44af72748867e640f12`
 
@@ -1770,6 +1888,7 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources
 -	Virtual Size: 51.0 B
 -	v2 Blob: `sha256:b95358183d2d44d9ba8e011fce3b9dd6fdef4476498ff82fd651da83c579a5eb`
 -	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:23 GMT
 
 #### `371545de2cda27e16fc257fda9f0e74b88ff1beb1edbc8100861495d53bd3b97`
 
@@ -1783,6 +1902,7 @@ ENV ROS_DISTRO=jade
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `679e7a03214ce18992c40babd4216a0b976199715d595cc6d4ade0c62796922f`
 
@@ -1800,6 +1920,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89903558 bytes)
 -	v2 Blob: `sha256:e0d4dc5ab8602b5a698d42d849eaf88b6c949d2c677da2e933ca8956b3ee3850`
 -	v2 Content-Length: 31.9 MB (31922595 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:35:16 GMT
 
 #### `18c88e82fcdbbf4c74d65e48e3d38dec68172e5e1ef7ae3197870bd2bfbc546a`
 
@@ -1814,6 +1935,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1688191 bytes)
 -	v2 Blob: `sha256:610070ee57a72b607b084f67b07fbd2a5eadc6c792eb79b9af08c8d3ae45c375`
 -	v2 Content-Length: 538.6 KB (538612 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:34:01 GMT
 
 #### `37390a97922821a5f4194c595d99237a65bc7995f640e5bf4780dec6b9b0c2a3`
 
@@ -1829,6 +1951,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:b93a425121016d7e0aba91637c0ac6d38edf16eef0ecf25eeadc3369e7df56ac`
 -	v2 Content-Length: 151.8 MB (151773370 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:33:51 GMT
 
 #### `8de55a865bf339786656256f56a3e8be8ecc41c7b574851494d3416e3b742c47`
 
@@ -1842,6 +1965,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:de527462fcc35dfb21c76a53397692e48b9ce65c5dc1b3e9a8fa4fbc6dea7b91`
 -	v2 Content-Length: 198.0 B
+-	v2 Last-Modified: Thu, 11 Jun 2015 23:24:43 GMT
 
 #### `5516076bfa366c9901ec21c7429c4390c053977f9bff0f6f53e749637253fb8c`
 
@@ -1855,6 +1979,7 @@ ENTRYPOINT &{["/ros_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2f5ac382be6182fad6b44a6582a5475cfba931d6a3f6bfdefde40839f4c8b17`
 
@@ -1868,6 +1993,7 @@ CMD ["bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ros:jade-ros-base`
 
@@ -1891,6 +2017,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -1916,6 +2043,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1929,6 +2057,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1942,6 +2071,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b409bfffca040141bf9cd7cee1982d9cd8de99d2df9cea789d0f9f276852e59`
 
@@ -1955,6 +2085,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8ec2450c6b63ac256f7ed6f8d90e3fe72cb14d41a8c8634d9a169579eda6eb`
 
@@ -1968,6 +2099,7 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:efa7035358b87f71c21bae8d025a0761bdaf3c8bd9731f2609c15b0db2622e7d`
 -	v2 Content-Length: 329.2 KB (329189 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:33 GMT
 
 #### `fea18d173ca4e41fe240658683c36b6e59075023fa973b20006491aed6f094ca`
 
@@ -1981,6 +2113,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c9bb5cbe512f948eececa9b293b036ca713082863cd1db6cdc91e2e12270633`
 
@@ -1994,6 +2127,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1
 -	Virtual Size: 25.8 KB (25832 bytes)
 -	v2 Blob: `sha256:492b493cc7ff45315e1f76492ad223c59218eebcbb0c49b28936e6934aa0b287`
 -	v2 Content-Length: 13.1 KB (13071 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:26 GMT
 
 #### `ae87b758dd0d325cd9784f6662fcab6cbbf63339f020f44af72748867e640f12`
 
@@ -2007,6 +2141,7 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources
 -	Virtual Size: 51.0 B
 -	v2 Blob: `sha256:b95358183d2d44d9ba8e011fce3b9dd6fdef4476498ff82fd651da83c579a5eb`
 -	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:23 GMT
 
 #### `371545de2cda27e16fc257fda9f0e74b88ff1beb1edbc8100861495d53bd3b97`
 
@@ -2020,6 +2155,7 @@ ENV ROS_DISTRO=jade
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `679e7a03214ce18992c40babd4216a0b976199715d595cc6d4ade0c62796922f`
 
@@ -2037,6 +2173,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89903558 bytes)
 -	v2 Blob: `sha256:e0d4dc5ab8602b5a698d42d849eaf88b6c949d2c677da2e933ca8956b3ee3850`
 -	v2 Content-Length: 31.9 MB (31922595 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:35:16 GMT
 
 #### `18c88e82fcdbbf4c74d65e48e3d38dec68172e5e1ef7ae3197870bd2bfbc546a`
 
@@ -2051,6 +2188,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1688191 bytes)
 -	v2 Blob: `sha256:610070ee57a72b607b084f67b07fbd2a5eadc6c792eb79b9af08c8d3ae45c375`
 -	v2 Content-Length: 538.6 KB (538612 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:34:01 GMT
 
 #### `37390a97922821a5f4194c595d99237a65bc7995f640e5bf4780dec6b9b0c2a3`
 
@@ -2066,6 +2204,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:b93a425121016d7e0aba91637c0ac6d38edf16eef0ecf25eeadc3369e7df56ac`
 -	v2 Content-Length: 151.8 MB (151773370 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:33:51 GMT
 
 #### `8de55a865bf339786656256f56a3e8be8ecc41c7b574851494d3416e3b742c47`
 
@@ -2079,6 +2218,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:de527462fcc35dfb21c76a53397692e48b9ce65c5dc1b3e9a8fa4fbc6dea7b91`
 -	v2 Content-Length: 198.0 B
+-	v2 Last-Modified: Thu, 11 Jun 2015 23:24:43 GMT
 
 #### `5516076bfa366c9901ec21c7429c4390c053977f9bff0f6f53e749637253fb8c`
 
@@ -2092,6 +2232,7 @@ ENTRYPOINT &{["/ros_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2f5ac382be6182fad6b44a6582a5475cfba931d6a3f6bfdefde40839f4c8b17`
 
@@ -2105,6 +2246,7 @@ CMD ["bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e7c8fa9346be4e3c8f6fd3a979812ca0dec38beee29cd5770337dd9345dde64`
 
@@ -2118,6 +2260,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62656838229edeac8e56ce9538c6bd26f63ae2e38078344dc87fe4fbd0748062`
 
@@ -2133,6 +2276,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.6 MB (14616075 bytes)
 -	v2 Blob: `sha256:778f8f75eb4b8c37281f0f2576e3eab359624f7dd4f8b802e88c4672713564cd`
 -	v2 Content-Length: 3.4 MB (3420812 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:35:30 GMT
 
 ## `ros:jade-robot`
 
@@ -2156,6 +2300,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -2181,6 +2326,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2194,6 +2340,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2207,6 +2354,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b409bfffca040141bf9cd7cee1982d9cd8de99d2df9cea789d0f9f276852e59`
 
@@ -2220,6 +2368,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8ec2450c6b63ac256f7ed6f8d90e3fe72cb14d41a8c8634d9a169579eda6eb`
 
@@ -2233,6 +2382,7 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:efa7035358b87f71c21bae8d025a0761bdaf3c8bd9731f2609c15b0db2622e7d`
 -	v2 Content-Length: 329.2 KB (329189 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:33 GMT
 
 #### `fea18d173ca4e41fe240658683c36b6e59075023fa973b20006491aed6f094ca`
 
@@ -2246,6 +2396,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c9bb5cbe512f948eececa9b293b036ca713082863cd1db6cdc91e2e12270633`
 
@@ -2259,6 +2410,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1
 -	Virtual Size: 25.8 KB (25832 bytes)
 -	v2 Blob: `sha256:492b493cc7ff45315e1f76492ad223c59218eebcbb0c49b28936e6934aa0b287`
 -	v2 Content-Length: 13.1 KB (13071 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:26 GMT
 
 #### `ae87b758dd0d325cd9784f6662fcab6cbbf63339f020f44af72748867e640f12`
 
@@ -2272,6 +2424,7 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources
 -	Virtual Size: 51.0 B
 -	v2 Blob: `sha256:b95358183d2d44d9ba8e011fce3b9dd6fdef4476498ff82fd651da83c579a5eb`
 -	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:23 GMT
 
 #### `371545de2cda27e16fc257fda9f0e74b88ff1beb1edbc8100861495d53bd3b97`
 
@@ -2285,6 +2438,7 @@ ENV ROS_DISTRO=jade
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `679e7a03214ce18992c40babd4216a0b976199715d595cc6d4ade0c62796922f`
 
@@ -2302,6 +2456,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89903558 bytes)
 -	v2 Blob: `sha256:e0d4dc5ab8602b5a698d42d849eaf88b6c949d2c677da2e933ca8956b3ee3850`
 -	v2 Content-Length: 31.9 MB (31922595 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:35:16 GMT
 
 #### `18c88e82fcdbbf4c74d65e48e3d38dec68172e5e1ef7ae3197870bd2bfbc546a`
 
@@ -2316,6 +2471,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1688191 bytes)
 -	v2 Blob: `sha256:610070ee57a72b607b084f67b07fbd2a5eadc6c792eb79b9af08c8d3ae45c375`
 -	v2 Content-Length: 538.6 KB (538612 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:34:01 GMT
 
 #### `37390a97922821a5f4194c595d99237a65bc7995f640e5bf4780dec6b9b0c2a3`
 
@@ -2331,6 +2487,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:b93a425121016d7e0aba91637c0ac6d38edf16eef0ecf25eeadc3369e7df56ac`
 -	v2 Content-Length: 151.8 MB (151773370 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:33:51 GMT
 
 #### `8de55a865bf339786656256f56a3e8be8ecc41c7b574851494d3416e3b742c47`
 
@@ -2344,6 +2501,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:de527462fcc35dfb21c76a53397692e48b9ce65c5dc1b3e9a8fa4fbc6dea7b91`
 -	v2 Content-Length: 198.0 B
+-	v2 Last-Modified: Thu, 11 Jun 2015 23:24:43 GMT
 
 #### `5516076bfa366c9901ec21c7429c4390c053977f9bff0f6f53e749637253fb8c`
 
@@ -2357,6 +2515,7 @@ ENTRYPOINT &{["/ros_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2f5ac382be6182fad6b44a6582a5475cfba931d6a3f6bfdefde40839f4c8b17`
 
@@ -2370,6 +2529,7 @@ CMD ["bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e7c8fa9346be4e3c8f6fd3a979812ca0dec38beee29cd5770337dd9345dde64`
 
@@ -2383,6 +2543,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62656838229edeac8e56ce9538c6bd26f63ae2e38078344dc87fe4fbd0748062`
 
@@ -2398,6 +2559,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.6 MB (14616075 bytes)
 -	v2 Blob: `sha256:778f8f75eb4b8c37281f0f2576e3eab359624f7dd4f8b802e88c4672713564cd`
 -	v2 Content-Length: 3.4 MB (3420812 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:35:30 GMT
 
 #### `b088554857583461ffdd8c197bb2d76d8e308da86210a350cfafb0ba6984f5ad`
 
@@ -2411,6 +2573,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b6bd59719a9502727326cf91feb42021839b56b5fd9ee1f9ea37c90951158f2a`
 
@@ -2426,6 +2589,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 210.5 MB (210506861 bytes)
 -	v2 Blob: `sha256:14bc139bbe26a15ae9867edf84a312b9da40064a6d30a4638612aa02e5c3f7bb`
 -	v2 Content-Length: 68.0 MB (68026926 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:36:20 GMT
 
 ## `ros:jade-perception`
 
@@ -2449,6 +2613,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -2474,6 +2639,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2487,6 +2653,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2500,6 +2667,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b409bfffca040141bf9cd7cee1982d9cd8de99d2df9cea789d0f9f276852e59`
 
@@ -2513,6 +2681,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8ec2450c6b63ac256f7ed6f8d90e3fe72cb14d41a8c8634d9a169579eda6eb`
 
@@ -2526,6 +2695,7 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:efa7035358b87f71c21bae8d025a0761bdaf3c8bd9731f2609c15b0db2622e7d`
 -	v2 Content-Length: 329.2 KB (329189 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:33 GMT
 
 #### `fea18d173ca4e41fe240658683c36b6e59075023fa973b20006491aed6f094ca`
 
@@ -2539,6 +2709,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c9bb5cbe512f948eececa9b293b036ca713082863cd1db6cdc91e2e12270633`
 
@@ -2552,6 +2723,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1
 -	Virtual Size: 25.8 KB (25832 bytes)
 -	v2 Blob: `sha256:492b493cc7ff45315e1f76492ad223c59218eebcbb0c49b28936e6934aa0b287`
 -	v2 Content-Length: 13.1 KB (13071 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:26 GMT
 
 #### `ae87b758dd0d325cd9784f6662fcab6cbbf63339f020f44af72748867e640f12`
 
@@ -2565,6 +2737,7 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources
 -	Virtual Size: 51.0 B
 -	v2 Blob: `sha256:b95358183d2d44d9ba8e011fce3b9dd6fdef4476498ff82fd651da83c579a5eb`
 -	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:23 GMT
 
 #### `371545de2cda27e16fc257fda9f0e74b88ff1beb1edbc8100861495d53bd3b97`
 
@@ -2578,6 +2751,7 @@ ENV ROS_DISTRO=jade
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `679e7a03214ce18992c40babd4216a0b976199715d595cc6d4ade0c62796922f`
 
@@ -2595,6 +2769,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89903558 bytes)
 -	v2 Blob: `sha256:e0d4dc5ab8602b5a698d42d849eaf88b6c949d2c677da2e933ca8956b3ee3850`
 -	v2 Content-Length: 31.9 MB (31922595 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:35:16 GMT
 
 #### `18c88e82fcdbbf4c74d65e48e3d38dec68172e5e1ef7ae3197870bd2bfbc546a`
 
@@ -2609,6 +2784,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1688191 bytes)
 -	v2 Blob: `sha256:610070ee57a72b607b084f67b07fbd2a5eadc6c792eb79b9af08c8d3ae45c375`
 -	v2 Content-Length: 538.6 KB (538612 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:34:01 GMT
 
 #### `37390a97922821a5f4194c595d99237a65bc7995f640e5bf4780dec6b9b0c2a3`
 
@@ -2624,6 +2800,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:b93a425121016d7e0aba91637c0ac6d38edf16eef0ecf25eeadc3369e7df56ac`
 -	v2 Content-Length: 151.8 MB (151773370 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:33:51 GMT
 
 #### `8de55a865bf339786656256f56a3e8be8ecc41c7b574851494d3416e3b742c47`
 
@@ -2637,6 +2814,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:de527462fcc35dfb21c76a53397692e48b9ce65c5dc1b3e9a8fa4fbc6dea7b91`
 -	v2 Content-Length: 198.0 B
+-	v2 Last-Modified: Thu, 11 Jun 2015 23:24:43 GMT
 
 #### `5516076bfa366c9901ec21c7429c4390c053977f9bff0f6f53e749637253fb8c`
 
@@ -2650,6 +2828,7 @@ ENTRYPOINT &{["/ros_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2f5ac382be6182fad6b44a6582a5475cfba931d6a3f6bfdefde40839f4c8b17`
 
@@ -2663,6 +2842,7 @@ CMD ["bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e7c8fa9346be4e3c8f6fd3a979812ca0dec38beee29cd5770337dd9345dde64`
 
@@ -2676,6 +2856,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62656838229edeac8e56ce9538c6bd26f63ae2e38078344dc87fe4fbd0748062`
 
@@ -2691,6 +2872,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.6 MB (14616075 bytes)
 -	v2 Blob: `sha256:778f8f75eb4b8c37281f0f2576e3eab359624f7dd4f8b802e88c4672713564cd`
 -	v2 Content-Length: 3.4 MB (3420812 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:35:30 GMT
 
 #### `b088554857583461ffdd8c197bb2d76d8e308da86210a350cfafb0ba6984f5ad`
 
@@ -2704,6 +2886,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dec925c0cb400717f6e3b410f2d81d2d988bff93bd80480ecf60ed1807e371be`
 
@@ -2719,6 +2902,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 919.6 MB (919631486 bytes)
 -	v2 Blob: `sha256:b5dfb4e66a88a455c18c9a40496428eba5d3334718088abbdc7726af5e66ae20`
 -	v2 Content-Length: 267.6 MB (267566362 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:38:40 GMT
 
 ## `ros:jade`
 
@@ -2742,6 +2926,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -2767,6 +2952,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2780,6 +2966,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2793,6 +2980,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b409bfffca040141bf9cd7cee1982d9cd8de99d2df9cea789d0f9f276852e59`
 
@@ -2806,6 +2994,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8ec2450c6b63ac256f7ed6f8d90e3fe72cb14d41a8c8634d9a169579eda6eb`
 
@@ -2819,6 +3008,7 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:efa7035358b87f71c21bae8d025a0761bdaf3c8bd9731f2609c15b0db2622e7d`
 -	v2 Content-Length: 329.2 KB (329189 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:33 GMT
 
 #### `fea18d173ca4e41fe240658683c36b6e59075023fa973b20006491aed6f094ca`
 
@@ -2832,6 +3022,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c9bb5cbe512f948eececa9b293b036ca713082863cd1db6cdc91e2e12270633`
 
@@ -2845,6 +3036,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1
 -	Virtual Size: 25.8 KB (25832 bytes)
 -	v2 Blob: `sha256:492b493cc7ff45315e1f76492ad223c59218eebcbb0c49b28936e6934aa0b287`
 -	v2 Content-Length: 13.1 KB (13071 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:26 GMT
 
 #### `ae87b758dd0d325cd9784f6662fcab6cbbf63339f020f44af72748867e640f12`
 
@@ -2858,6 +3050,7 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources
 -	Virtual Size: 51.0 B
 -	v2 Blob: `sha256:b95358183d2d44d9ba8e011fce3b9dd6fdef4476498ff82fd651da83c579a5eb`
 -	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:26:23 GMT
 
 #### `371545de2cda27e16fc257fda9f0e74b88ff1beb1edbc8100861495d53bd3b97`
 
@@ -2871,6 +3064,7 @@ ENV ROS_DISTRO=jade
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `679e7a03214ce18992c40babd4216a0b976199715d595cc6d4ade0c62796922f`
 
@@ -2888,6 +3082,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89903558 bytes)
 -	v2 Blob: `sha256:e0d4dc5ab8602b5a698d42d849eaf88b6c949d2c677da2e933ca8956b3ee3850`
 -	v2 Content-Length: 31.9 MB (31922595 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:35:16 GMT
 
 #### `18c88e82fcdbbf4c74d65e48e3d38dec68172e5e1ef7ae3197870bd2bfbc546a`
 
@@ -2902,6 +3097,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1688191 bytes)
 -	v2 Blob: `sha256:610070ee57a72b607b084f67b07fbd2a5eadc6c792eb79b9af08c8d3ae45c375`
 -	v2 Content-Length: 538.6 KB (538612 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:34:01 GMT
 
 #### `37390a97922821a5f4194c595d99237a65bc7995f640e5bf4780dec6b9b0c2a3`
 
@@ -2917,6 +3113,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:b93a425121016d7e0aba91637c0ac6d38edf16eef0ecf25eeadc3369e7df56ac`
 -	v2 Content-Length: 151.8 MB (151773370 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:33:51 GMT
 
 #### `8de55a865bf339786656256f56a3e8be8ecc41c7b574851494d3416e3b742c47`
 
@@ -2930,6 +3127,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:de527462fcc35dfb21c76a53397692e48b9ce65c5dc1b3e9a8fa4fbc6dea7b91`
 -	v2 Content-Length: 198.0 B
+-	v2 Last-Modified: Thu, 11 Jun 2015 23:24:43 GMT
 
 #### `5516076bfa366c9901ec21c7429c4390c053977f9bff0f6f53e749637253fb8c`
 
@@ -2943,6 +3141,7 @@ ENTRYPOINT &{["/ros_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2f5ac382be6182fad6b44a6582a5475cfba931d6a3f6bfdefde40839f4c8b17`
 
@@ -2956,6 +3155,7 @@ CMD ["bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e7c8fa9346be4e3c8f6fd3a979812ca0dec38beee29cd5770337dd9345dde64`
 
@@ -2969,6 +3169,7 @@ MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62656838229edeac8e56ce9538c6bd26f63ae2e38078344dc87fe4fbd0748062`
 
@@ -2984,3 +3185,4 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.6 MB (14616075 bytes)
 -	v2 Blob: `sha256:778f8f75eb4b8c37281f0f2576e3eab359624f7dd4f8b802e88c4672713564cd`
 -	v2 Content-Length: 3.4 MB (3420812 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:35:30 GMT

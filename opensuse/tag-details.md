@@ -31,6 +31,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f2da88b7a66ec55db9b9a1e28f3589c5d1a30af6a4cf2609298967a487fd9210`
 
@@ -44,6 +45,7 @@ ADD file:cef2a9cd5b39bed76cdfb32a06257c9a0b1696e677c8bb3cde417912ef866481 in /
 -	Virtual Size: 96.2 MB (96197819 bytes)
 -	v2 Blob: `sha256:fb8b8e66b197ff0dce02a1bc99a833281096c4c7c414ffa81ad5f627703445dd`
 -	v2 Content-Length: 38.1 MB (38089358 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:04:12 GMT
 
 ## `opensuse:harlequin`
 
@@ -67,6 +69,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f2da88b7a66ec55db9b9a1e28f3589c5d1a30af6a4cf2609298967a487fd9210`
 
@@ -80,6 +83,7 @@ ADD file:cef2a9cd5b39bed76cdfb32a06257c9a0b1696e677c8bb3cde417912ef866481 in /
 -	Virtual Size: 96.2 MB (96197819 bytes)
 -	v2 Blob: `sha256:fb8b8e66b197ff0dce02a1bc99a833281096c4c7c414ffa81ad5f627703445dd`
 -	v2 Content-Length: 38.1 MB (38089358 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:04:12 GMT
 
 ## `opensuse:42.1`
 
@@ -103,6 +107,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d81e08fa7819755c792657e19525f55bf27000b368d37878a7694f47589e112c`
 
@@ -116,6 +121,7 @@ ADD file:fd90c90410e0683f0261676429f6ebf83b1c27afb21d1b523f9f7c1326c345b1 in /
 -	Virtual Size: 97.7 MB (97698128 bytes)
 -	v2 Blob: `sha256:be8b775b9629acb710a85f8e9026ea902185d0a8b84f844feea6df6ae07298fd`
 -	v2 Content-Length: 37.9 MB (37884556 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:04:42 GMT
 
 ## `opensuse:leap`
 
@@ -139,6 +145,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d81e08fa7819755c792657e19525f55bf27000b368d37878a7694f47589e112c`
 
@@ -152,6 +159,7 @@ ADD file:fd90c90410e0683f0261676429f6ebf83b1c27afb21d1b523f9f7c1326c345b1 in /
 -	Virtual Size: 97.7 MB (97698128 bytes)
 -	v2 Blob: `sha256:be8b775b9629acb710a85f8e9026ea902185d0a8b84f844feea6df6ae07298fd`
 -	v2 Content-Length: 37.9 MB (37884556 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:04:42 GMT
 
 ## `opensuse:latest`
 
@@ -175,6 +183,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d81e08fa7819755c792657e19525f55bf27000b368d37878a7694f47589e112c`
 
@@ -188,6 +197,7 @@ ADD file:fd90c90410e0683f0261676429f6ebf83b1c27afb21d1b523f9f7c1326c345b1 in /
 -	Virtual Size: 97.7 MB (97698128 bytes)
 -	v2 Blob: `sha256:be8b775b9629acb710a85f8e9026ea902185d0a8b84f844feea6df6ae07298fd`
 -	v2 Content-Length: 37.9 MB (37884556 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:04:42 GMT
 
 ## `opensuse:tumbleweed`
 
@@ -211,6 +221,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `80530af1ad33b0f43a4279492e2382f709d8d34e0e387a5f209601a9f93a9489`
 
@@ -224,6 +235,7 @@ ADD file:136b73c54179d80bb4e4df7cc15d18b67e769289b73d2c3ecdfd36123a87a167 in /
 -	Virtual Size: 97.7 MB (97698128 bytes)
 -	v2 Blob: `sha256:be8b775b9629acb710a85f8e9026ea902185d0a8b84f844feea6df6ae07298fd`
 -	v2 Content-Length: 37.9 MB (37884556 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:04:42 GMT
 
 #### `d196096feb162f9d9bd912cf0c95c279e2032dfc12c8cde31fb907ec731762e3`
 
@@ -237,3 +249,4 @@ RUN zypper -n ar -f http://download.opensuse.org/factory/repo/oss/ OSS
 -	Virtual Size: 403.6 KB (403622 bytes)
 -	v2 Blob: `sha256:a49b5b2e314441d32aedc4c21cdd5bfe53fe47902a8a424c82d5dbb9c312dc84`
 -	v2 Content-Length: 119.7 KB (119747 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:04:58 GMT

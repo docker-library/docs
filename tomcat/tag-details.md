@@ -55,6 +55,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -68,6 +69,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -85,6 +87,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -102,6 +105,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -115,6 +119,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -134,6 +139,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -147,6 +153,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -160,6 +167,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -173,6 +181,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -191,6 +200,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -204,6 +214,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -217,6 +228,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -230,6 +242,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -243,6 +256,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ff1e2e97a2f5b3a21a33ab342b7b4be8c8a28383e67012e4d4cf2e10e00f2fd`
 
@@ -274,6 +288,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:860a2ce966c1bc505649d0048e9a52834493e3e7bd6851451f7d2553bc646d06`
 -	v2 Content-Length: 261.8 KB (261842 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:05 GMT
 
 #### `378b43d5692578b5e312801fff8c7f86cc49ddf9f89498f4375a7772c117ae92`
 
@@ -287,6 +302,7 @@ ENV TOMCAT_MAJOR=6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ff51d62a2a381a5bf62ba752a09c202c6a0fd79fb1455eaa500acd49dda25`
 
@@ -300,6 +316,7 @@ ENV TOMCAT_VERSION=6.0.45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f3f241bca4672e0dc620fabe9bc460ce97c7d4e791c86fa70b89aa3e3cf46009`
 
@@ -313,6 +330,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.45/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `45c5f628ab269d4964eee7b90cfd903391619d3da6152317edb8db6bfe1672d9`
 
@@ -332,6 +350,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -345,6 +364,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c3308d514829ccb1b8cc576264a058399e1644417e2d5ba9a993f5ba0c64229`
 
@@ -358,6 +378,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:6.0-jre7`
 
@@ -381,6 +402,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -394,6 +416,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -411,6 +434,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -428,6 +452,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -441,6 +466,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -460,6 +486,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -473,6 +500,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -486,6 +514,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -499,6 +528,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -517,6 +547,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -530,6 +561,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -543,6 +575,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -556,6 +589,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -569,6 +603,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ff1e2e97a2f5b3a21a33ab342b7b4be8c8a28383e67012e4d4cf2e10e00f2fd`
 
@@ -600,6 +635,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:860a2ce966c1bc505649d0048e9a52834493e3e7bd6851451f7d2553bc646d06`
 -	v2 Content-Length: 261.8 KB (261842 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:05 GMT
 
 #### `378b43d5692578b5e312801fff8c7f86cc49ddf9f89498f4375a7772c117ae92`
 
@@ -613,6 +649,7 @@ ENV TOMCAT_MAJOR=6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ff51d62a2a381a5bf62ba752a09c202c6a0fd79fb1455eaa500acd49dda25`
 
@@ -626,6 +663,7 @@ ENV TOMCAT_VERSION=6.0.45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f3f241bca4672e0dc620fabe9bc460ce97c7d4e791c86fa70b89aa3e3cf46009`
 
@@ -639,6 +677,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.45/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `45c5f628ab269d4964eee7b90cfd903391619d3da6152317edb8db6bfe1672d9`
 
@@ -658,6 +697,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -671,6 +711,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c3308d514829ccb1b8cc576264a058399e1644417e2d5ba9a993f5ba0c64229`
 
@@ -684,6 +725,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:6-jre7`
 
@@ -707,6 +749,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -720,6 +763,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -737,6 +781,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -754,6 +799,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -767,6 +813,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -786,6 +833,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -799,6 +847,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -812,6 +861,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -825,6 +875,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -843,6 +894,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -856,6 +908,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -869,6 +922,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -882,6 +936,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -895,6 +950,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ff1e2e97a2f5b3a21a33ab342b7b4be8c8a28383e67012e4d4cf2e10e00f2fd`
 
@@ -926,6 +982,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:860a2ce966c1bc505649d0048e9a52834493e3e7bd6851451f7d2553bc646d06`
 -	v2 Content-Length: 261.8 KB (261842 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:05 GMT
 
 #### `378b43d5692578b5e312801fff8c7f86cc49ddf9f89498f4375a7772c117ae92`
 
@@ -939,6 +996,7 @@ ENV TOMCAT_MAJOR=6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ff51d62a2a381a5bf62ba752a09c202c6a0fd79fb1455eaa500acd49dda25`
 
@@ -952,6 +1010,7 @@ ENV TOMCAT_VERSION=6.0.45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f3f241bca4672e0dc620fabe9bc460ce97c7d4e791c86fa70b89aa3e3cf46009`
 
@@ -965,6 +1024,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.45/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `45c5f628ab269d4964eee7b90cfd903391619d3da6152317edb8db6bfe1672d9`
 
@@ -984,6 +1044,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -997,6 +1058,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c3308d514829ccb1b8cc576264a058399e1644417e2d5ba9a993f5ba0c64229`
 
@@ -1010,6 +1072,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:6.0.45`
 
@@ -1033,6 +1096,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1046,6 +1110,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1063,6 +1128,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1080,6 +1146,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -1093,6 +1160,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -1112,6 +1180,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -1125,6 +1194,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -1138,6 +1208,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -1151,6 +1222,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -1169,6 +1241,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -1182,6 +1255,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -1195,6 +1269,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -1208,6 +1283,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -1221,6 +1297,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ff1e2e97a2f5b3a21a33ab342b7b4be8c8a28383e67012e4d4cf2e10e00f2fd`
 
@@ -1252,6 +1329,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:860a2ce966c1bc505649d0048e9a52834493e3e7bd6851451f7d2553bc646d06`
 -	v2 Content-Length: 261.8 KB (261842 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:05 GMT
 
 #### `378b43d5692578b5e312801fff8c7f86cc49ddf9f89498f4375a7772c117ae92`
 
@@ -1265,6 +1343,7 @@ ENV TOMCAT_MAJOR=6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ff51d62a2a381a5bf62ba752a09c202c6a0fd79fb1455eaa500acd49dda25`
 
@@ -1278,6 +1357,7 @@ ENV TOMCAT_VERSION=6.0.45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f3f241bca4672e0dc620fabe9bc460ce97c7d4e791c86fa70b89aa3e3cf46009`
 
@@ -1291,6 +1371,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.45/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `45c5f628ab269d4964eee7b90cfd903391619d3da6152317edb8db6bfe1672d9`
 
@@ -1310,6 +1391,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -1323,6 +1405,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c3308d514829ccb1b8cc576264a058399e1644417e2d5ba9a993f5ba0c64229`
 
@@ -1336,6 +1419,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:6.0`
 
@@ -1359,6 +1443,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1372,6 +1457,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1389,6 +1475,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1406,6 +1493,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -1419,6 +1507,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -1438,6 +1527,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -1451,6 +1541,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -1464,6 +1555,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -1477,6 +1569,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -1495,6 +1588,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -1508,6 +1602,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -1521,6 +1616,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -1534,6 +1630,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -1547,6 +1644,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ff1e2e97a2f5b3a21a33ab342b7b4be8c8a28383e67012e4d4cf2e10e00f2fd`
 
@@ -1578,6 +1676,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:860a2ce966c1bc505649d0048e9a52834493e3e7bd6851451f7d2553bc646d06`
 -	v2 Content-Length: 261.8 KB (261842 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:05 GMT
 
 #### `378b43d5692578b5e312801fff8c7f86cc49ddf9f89498f4375a7772c117ae92`
 
@@ -1591,6 +1690,7 @@ ENV TOMCAT_MAJOR=6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ff51d62a2a381a5bf62ba752a09c202c6a0fd79fb1455eaa500acd49dda25`
 
@@ -1604,6 +1704,7 @@ ENV TOMCAT_VERSION=6.0.45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f3f241bca4672e0dc620fabe9bc460ce97c7d4e791c86fa70b89aa3e3cf46009`
 
@@ -1617,6 +1718,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.45/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `45c5f628ab269d4964eee7b90cfd903391619d3da6152317edb8db6bfe1672d9`
 
@@ -1636,6 +1738,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -1649,6 +1752,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c3308d514829ccb1b8cc576264a058399e1644417e2d5ba9a993f5ba0c64229`
 
@@ -1662,6 +1766,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:6`
 
@@ -1685,6 +1790,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1698,6 +1804,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1715,6 +1822,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1732,6 +1840,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -1745,6 +1854,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -1764,6 +1874,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -1777,6 +1888,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -1790,6 +1902,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -1803,6 +1916,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -1821,6 +1935,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -1834,6 +1949,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -1847,6 +1963,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -1860,6 +1977,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -1873,6 +1991,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ff1e2e97a2f5b3a21a33ab342b7b4be8c8a28383e67012e4d4cf2e10e00f2fd`
 
@@ -1904,6 +2023,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:860a2ce966c1bc505649d0048e9a52834493e3e7bd6851451f7d2553bc646d06`
 -	v2 Content-Length: 261.8 KB (261842 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:05 GMT
 
 #### `378b43d5692578b5e312801fff8c7f86cc49ddf9f89498f4375a7772c117ae92`
 
@@ -1917,6 +2037,7 @@ ENV TOMCAT_MAJOR=6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ff51d62a2a381a5bf62ba752a09c202c6a0fd79fb1455eaa500acd49dda25`
 
@@ -1930,6 +2051,7 @@ ENV TOMCAT_VERSION=6.0.45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f3f241bca4672e0dc620fabe9bc460ce97c7d4e791c86fa70b89aa3e3cf46009`
 
@@ -1943,6 +2065,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.45/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `45c5f628ab269d4964eee7b90cfd903391619d3da6152317edb8db6bfe1672d9`
 
@@ -1962,6 +2085,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -1975,6 +2099,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c3308d514829ccb1b8cc576264a058399e1644417e2d5ba9a993f5ba0c64229`
 
@@ -1988,6 +2113,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:6.0.45-jre8`
 
@@ -2011,6 +2137,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2024,6 +2151,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2041,6 +2169,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2058,6 +2187,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2071,6 +2201,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2084,6 +2215,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -2103,6 +2235,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2116,6 +2249,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2129,6 +2263,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2142,6 +2277,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2155,6 +2291,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -2174,6 +2311,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2187,6 +2325,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -2200,6 +2339,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d8f328e02041fe79c5252f7e2900d0587799e402e8dd3f54e0d432b66a211a0`
 
@@ -2213,6 +2353,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55dadda5f8f127b23de28d2c1c732c9093f686ee782896e6004bf94be270885e`
 
@@ -2226,6 +2367,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1567559b13deddafa53d0c5c58a264e0814fb754110a3a2854b357c98f3969da`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:36 GMT
 
 #### `bef369ff36f850d89051b66ee25686e301f4f70ee8739432b385171022573988`
 
@@ -2239,6 +2381,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f65fed7269d5ebc84ddfb498dcbe10a6cb8268371422d455abf4907a098298c2`
 
@@ -2270,6 +2413,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:e8cb1bbb01da7d6d5ae77675268b97aadbb6eadd318b431228499154661a4bc7`
 -	v2 Content-Length: 261.8 KB (261844 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:26 GMT
 
 #### `ca5ad7924b88f052bebf98473b61aacc627e2dfe0dab2e4100305276ca3985f9`
 
@@ -2283,6 +2427,7 @@ ENV TOMCAT_MAJOR=6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93e1d6bbc9d23e401b462a1d3294181f3c154efce454d9fc9470f8380a75d82f`
 
@@ -2296,6 +2441,7 @@ ENV TOMCAT_VERSION=6.0.45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `481798b0662dafd59d6832ae3168e424becf6783969fe3f64cda964fb6fbe2ea`
 
@@ -2309,6 +2455,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.45/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7464dc4d9aae5ff98d2fb01b9bbaa279090c8e855af291a03e6a618354e5a2ae`
 
@@ -2328,6 +2475,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:852218bd14e15acd508f1b0619fd6dd7ca76e03ab8d63f01ed2051934da6a68b`
 -	v2 Content-Length: 7.1 MB (7073009 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:13 GMT
 
 #### `712cb6e376916655178acdb8e9658fab5435b42026d2a3d193bb1d3f8c8d567e`
 
@@ -2341,6 +2489,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5bbdd89cf5cad38e5cd83e824e5bd0bad0debc6a266a69d2bfd6bf1af8f334bf`
 
@@ -2354,6 +2503,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:6.0-jre8`
 
@@ -2377,6 +2527,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2390,6 +2541,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2407,6 +2559,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2424,6 +2577,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2437,6 +2591,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2450,6 +2605,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -2469,6 +2625,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2482,6 +2639,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2495,6 +2653,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2508,6 +2667,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2521,6 +2681,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -2540,6 +2701,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2553,6 +2715,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -2566,6 +2729,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d8f328e02041fe79c5252f7e2900d0587799e402e8dd3f54e0d432b66a211a0`
 
@@ -2579,6 +2743,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55dadda5f8f127b23de28d2c1c732c9093f686ee782896e6004bf94be270885e`
 
@@ -2592,6 +2757,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1567559b13deddafa53d0c5c58a264e0814fb754110a3a2854b357c98f3969da`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:36 GMT
 
 #### `bef369ff36f850d89051b66ee25686e301f4f70ee8739432b385171022573988`
 
@@ -2605,6 +2771,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f65fed7269d5ebc84ddfb498dcbe10a6cb8268371422d455abf4907a098298c2`
 
@@ -2636,6 +2803,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:e8cb1bbb01da7d6d5ae77675268b97aadbb6eadd318b431228499154661a4bc7`
 -	v2 Content-Length: 261.8 KB (261844 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:26 GMT
 
 #### `ca5ad7924b88f052bebf98473b61aacc627e2dfe0dab2e4100305276ca3985f9`
 
@@ -2649,6 +2817,7 @@ ENV TOMCAT_MAJOR=6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93e1d6bbc9d23e401b462a1d3294181f3c154efce454d9fc9470f8380a75d82f`
 
@@ -2662,6 +2831,7 @@ ENV TOMCAT_VERSION=6.0.45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `481798b0662dafd59d6832ae3168e424becf6783969fe3f64cda964fb6fbe2ea`
 
@@ -2675,6 +2845,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.45/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7464dc4d9aae5ff98d2fb01b9bbaa279090c8e855af291a03e6a618354e5a2ae`
 
@@ -2694,6 +2865,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:852218bd14e15acd508f1b0619fd6dd7ca76e03ab8d63f01ed2051934da6a68b`
 -	v2 Content-Length: 7.1 MB (7073009 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:13 GMT
 
 #### `712cb6e376916655178acdb8e9658fab5435b42026d2a3d193bb1d3f8c8d567e`
 
@@ -2707,6 +2879,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5bbdd89cf5cad38e5cd83e824e5bd0bad0debc6a266a69d2bfd6bf1af8f334bf`
 
@@ -2720,6 +2893,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:6-jre8`
 
@@ -2743,6 +2917,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2756,6 +2931,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2773,6 +2949,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2790,6 +2967,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2803,6 +2981,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2816,6 +2995,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -2835,6 +3015,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2848,6 +3029,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2861,6 +3043,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2874,6 +3057,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2887,6 +3071,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -2906,6 +3091,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2919,6 +3105,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -2932,6 +3119,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d8f328e02041fe79c5252f7e2900d0587799e402e8dd3f54e0d432b66a211a0`
 
@@ -2945,6 +3133,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55dadda5f8f127b23de28d2c1c732c9093f686ee782896e6004bf94be270885e`
 
@@ -2958,6 +3147,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1567559b13deddafa53d0c5c58a264e0814fb754110a3a2854b357c98f3969da`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:36 GMT
 
 #### `bef369ff36f850d89051b66ee25686e301f4f70ee8739432b385171022573988`
 
@@ -2971,6 +3161,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f65fed7269d5ebc84ddfb498dcbe10a6cb8268371422d455abf4907a098298c2`
 
@@ -3002,6 +3193,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:e8cb1bbb01da7d6d5ae77675268b97aadbb6eadd318b431228499154661a4bc7`
 -	v2 Content-Length: 261.8 KB (261844 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:26 GMT
 
 #### `ca5ad7924b88f052bebf98473b61aacc627e2dfe0dab2e4100305276ca3985f9`
 
@@ -3015,6 +3207,7 @@ ENV TOMCAT_MAJOR=6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93e1d6bbc9d23e401b462a1d3294181f3c154efce454d9fc9470f8380a75d82f`
 
@@ -3028,6 +3221,7 @@ ENV TOMCAT_VERSION=6.0.45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `481798b0662dafd59d6832ae3168e424becf6783969fe3f64cda964fb6fbe2ea`
 
@@ -3041,6 +3235,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.45/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7464dc4d9aae5ff98d2fb01b9bbaa279090c8e855af291a03e6a618354e5a2ae`
 
@@ -3060,6 +3255,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:852218bd14e15acd508f1b0619fd6dd7ca76e03ab8d63f01ed2051934da6a68b`
 -	v2 Content-Length: 7.1 MB (7073009 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:13 GMT
 
 #### `712cb6e376916655178acdb8e9658fab5435b42026d2a3d193bb1d3f8c8d567e`
 
@@ -3073,6 +3269,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5bbdd89cf5cad38e5cd83e824e5bd0bad0debc6a266a69d2bfd6bf1af8f334bf`
 
@@ -3086,6 +3283,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:7.0.68-jre7`
 
@@ -3109,6 +3307,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3122,6 +3321,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3139,6 +3339,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3156,6 +3357,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -3169,6 +3371,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -3188,6 +3391,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -3201,6 +3405,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -3214,6 +3419,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -3227,6 +3433,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -3245,6 +3452,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -3258,6 +3466,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -3271,6 +3480,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -3284,6 +3494,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -3297,6 +3508,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4aa75b3eb48862cef6e9b7441b8a599bfadb705770d9e2a80ef51e8d5a2b876e`
 
@@ -3327,6 +3539,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -3340,6 +3553,7 @@ ENV TOMCAT_MAJOR=7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d0f01fbce1a18abf64725511da43a25f06aa4d4bf68b1c1aa95e223cf864008a`
 
@@ -3353,6 +3567,7 @@ ENV TOMCAT_VERSION=7.0.68
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ac07b6ba68772b23b8c95a957a022527041217a4d73efb85ca9468a13cdf0`
 
@@ -3366,6 +3581,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.68/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21d42787f28ff585f231527e65adba437dbfacc2af9dc4d293248f9b925c025c`
 
@@ -3385,6 +3601,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:6471dbf8b3c9232a6be2041b1924a80013f6011f310377ca0b893769e1303ca9`
 -	v2 Content-Length: 8.9 MB (8896259 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:40:46 GMT
 
 #### `244d5fa7e5302f898fa06a1d878cfd261e3720a07e5e9776f17b51a6717146f2`
 
@@ -3398,6 +3615,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `19c9ffd1ebbf2ade2d3f5c1ed7cba016f194c25f2271079b463bb38fcb81748d`
 
@@ -3411,6 +3629,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:7.0-jre7`
 
@@ -3434,6 +3653,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3447,6 +3667,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3464,6 +3685,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3481,6 +3703,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -3494,6 +3717,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -3513,6 +3737,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -3526,6 +3751,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -3539,6 +3765,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -3552,6 +3779,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -3570,6 +3798,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -3583,6 +3812,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -3596,6 +3826,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -3609,6 +3840,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -3622,6 +3854,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4aa75b3eb48862cef6e9b7441b8a599bfadb705770d9e2a80ef51e8d5a2b876e`
 
@@ -3652,6 +3885,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -3665,6 +3899,7 @@ ENV TOMCAT_MAJOR=7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d0f01fbce1a18abf64725511da43a25f06aa4d4bf68b1c1aa95e223cf864008a`
 
@@ -3678,6 +3913,7 @@ ENV TOMCAT_VERSION=7.0.68
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ac07b6ba68772b23b8c95a957a022527041217a4d73efb85ca9468a13cdf0`
 
@@ -3691,6 +3927,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.68/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21d42787f28ff585f231527e65adba437dbfacc2af9dc4d293248f9b925c025c`
 
@@ -3710,6 +3947,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:6471dbf8b3c9232a6be2041b1924a80013f6011f310377ca0b893769e1303ca9`
 -	v2 Content-Length: 8.9 MB (8896259 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:40:46 GMT
 
 #### `244d5fa7e5302f898fa06a1d878cfd261e3720a07e5e9776f17b51a6717146f2`
 
@@ -3723,6 +3961,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `19c9ffd1ebbf2ade2d3f5c1ed7cba016f194c25f2271079b463bb38fcb81748d`
 
@@ -3736,6 +3975,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:7-jre7`
 
@@ -3759,6 +3999,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3772,6 +4013,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3789,6 +4031,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3806,6 +4049,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -3819,6 +4063,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -3838,6 +4083,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -3851,6 +4097,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -3864,6 +4111,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -3877,6 +4125,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -3895,6 +4144,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -3908,6 +4158,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -3921,6 +4172,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -3934,6 +4186,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -3947,6 +4200,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4aa75b3eb48862cef6e9b7441b8a599bfadb705770d9e2a80ef51e8d5a2b876e`
 
@@ -3977,6 +4231,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -3990,6 +4245,7 @@ ENV TOMCAT_MAJOR=7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d0f01fbce1a18abf64725511da43a25f06aa4d4bf68b1c1aa95e223cf864008a`
 
@@ -4003,6 +4259,7 @@ ENV TOMCAT_VERSION=7.0.68
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ac07b6ba68772b23b8c95a957a022527041217a4d73efb85ca9468a13cdf0`
 
@@ -4016,6 +4273,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.68/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21d42787f28ff585f231527e65adba437dbfacc2af9dc4d293248f9b925c025c`
 
@@ -4035,6 +4293,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:6471dbf8b3c9232a6be2041b1924a80013f6011f310377ca0b893769e1303ca9`
 -	v2 Content-Length: 8.9 MB (8896259 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:40:46 GMT
 
 #### `244d5fa7e5302f898fa06a1d878cfd261e3720a07e5e9776f17b51a6717146f2`
 
@@ -4048,6 +4307,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `19c9ffd1ebbf2ade2d3f5c1ed7cba016f194c25f2271079b463bb38fcb81748d`
 
@@ -4061,6 +4321,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:7.0.68`
 
@@ -4084,6 +4345,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4097,6 +4359,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4114,6 +4377,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4131,6 +4395,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -4144,6 +4409,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -4163,6 +4429,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -4176,6 +4443,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -4189,6 +4457,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -4202,6 +4471,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -4220,6 +4490,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -4233,6 +4504,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -4246,6 +4518,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -4259,6 +4532,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -4272,6 +4546,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4aa75b3eb48862cef6e9b7441b8a599bfadb705770d9e2a80ef51e8d5a2b876e`
 
@@ -4302,6 +4577,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -4315,6 +4591,7 @@ ENV TOMCAT_MAJOR=7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d0f01fbce1a18abf64725511da43a25f06aa4d4bf68b1c1aa95e223cf864008a`
 
@@ -4328,6 +4605,7 @@ ENV TOMCAT_VERSION=7.0.68
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ac07b6ba68772b23b8c95a957a022527041217a4d73efb85ca9468a13cdf0`
 
@@ -4341,6 +4619,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.68/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21d42787f28ff585f231527e65adba437dbfacc2af9dc4d293248f9b925c025c`
 
@@ -4360,6 +4639,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:6471dbf8b3c9232a6be2041b1924a80013f6011f310377ca0b893769e1303ca9`
 -	v2 Content-Length: 8.9 MB (8896259 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:40:46 GMT
 
 #### `244d5fa7e5302f898fa06a1d878cfd261e3720a07e5e9776f17b51a6717146f2`
 
@@ -4373,6 +4653,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `19c9ffd1ebbf2ade2d3f5c1ed7cba016f194c25f2271079b463bb38fcb81748d`
 
@@ -4386,6 +4667,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:7.0`
 
@@ -4409,6 +4691,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4422,6 +4705,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4439,6 +4723,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4456,6 +4741,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -4469,6 +4755,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -4488,6 +4775,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -4501,6 +4789,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -4514,6 +4803,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -4527,6 +4817,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -4545,6 +4836,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -4558,6 +4850,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -4571,6 +4864,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -4584,6 +4878,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -4597,6 +4892,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4aa75b3eb48862cef6e9b7441b8a599bfadb705770d9e2a80ef51e8d5a2b876e`
 
@@ -4627,6 +4923,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -4640,6 +4937,7 @@ ENV TOMCAT_MAJOR=7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d0f01fbce1a18abf64725511da43a25f06aa4d4bf68b1c1aa95e223cf864008a`
 
@@ -4653,6 +4951,7 @@ ENV TOMCAT_VERSION=7.0.68
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ac07b6ba68772b23b8c95a957a022527041217a4d73efb85ca9468a13cdf0`
 
@@ -4666,6 +4965,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.68/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21d42787f28ff585f231527e65adba437dbfacc2af9dc4d293248f9b925c025c`
 
@@ -4685,6 +4985,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:6471dbf8b3c9232a6be2041b1924a80013f6011f310377ca0b893769e1303ca9`
 -	v2 Content-Length: 8.9 MB (8896259 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:40:46 GMT
 
 #### `244d5fa7e5302f898fa06a1d878cfd261e3720a07e5e9776f17b51a6717146f2`
 
@@ -4698,6 +4999,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `19c9ffd1ebbf2ade2d3f5c1ed7cba016f194c25f2271079b463bb38fcb81748d`
 
@@ -4711,6 +5013,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:7`
 
@@ -4734,6 +5037,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4747,6 +5051,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4764,6 +5069,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4781,6 +5087,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -4794,6 +5101,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -4813,6 +5121,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -4826,6 +5135,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -4839,6 +5149,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -4852,6 +5163,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -4870,6 +5182,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -4883,6 +5196,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -4896,6 +5210,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -4909,6 +5224,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -4922,6 +5238,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4aa75b3eb48862cef6e9b7441b8a599bfadb705770d9e2a80ef51e8d5a2b876e`
 
@@ -4952,6 +5269,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -4965,6 +5283,7 @@ ENV TOMCAT_MAJOR=7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d0f01fbce1a18abf64725511da43a25f06aa4d4bf68b1c1aa95e223cf864008a`
 
@@ -4978,6 +5297,7 @@ ENV TOMCAT_VERSION=7.0.68
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d9ac07b6ba68772b23b8c95a957a022527041217a4d73efb85ca9468a13cdf0`
 
@@ -4991,6 +5311,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.68/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21d42787f28ff585f231527e65adba437dbfacc2af9dc4d293248f9b925c025c`
 
@@ -5010,6 +5331,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:6471dbf8b3c9232a6be2041b1924a80013f6011f310377ca0b893769e1303ca9`
 -	v2 Content-Length: 8.9 MB (8896259 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:40:46 GMT
 
 #### `244d5fa7e5302f898fa06a1d878cfd261e3720a07e5e9776f17b51a6717146f2`
 
@@ -5023,6 +5345,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `19c9ffd1ebbf2ade2d3f5c1ed7cba016f194c25f2271079b463bb38fcb81748d`
 
@@ -5036,6 +5359,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:7.0.68-jre8`
 
@@ -5059,6 +5383,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5072,6 +5397,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5089,6 +5415,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -5106,6 +5433,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -5119,6 +5447,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -5132,6 +5461,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -5151,6 +5481,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -5164,6 +5495,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -5177,6 +5509,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -5190,6 +5523,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -5203,6 +5537,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -5222,6 +5557,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5235,6 +5571,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -5248,6 +5585,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d8f328e02041fe79c5252f7e2900d0587799e402e8dd3f54e0d432b66a211a0`
 
@@ -5261,6 +5599,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55dadda5f8f127b23de28d2c1c732c9093f686ee782896e6004bf94be270885e`
 
@@ -5274,6 +5613,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1567559b13deddafa53d0c5c58a264e0814fb754110a3a2854b357c98f3969da`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:36 GMT
 
 #### `bef369ff36f850d89051b66ee25686e301f4f70ee8739432b385171022573988`
 
@@ -5287,6 +5627,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea45ee40be9843e87deb883fd5eb1c05c2fa701ebba43ebe240492c995a575e0`
 
@@ -5317,6 +5658,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:fa13522aad358e640b7b93895d6d1dab2337b1cf107f035d8ff3c0e94c267dc6`
 -	v2 Content-Length: 106.1 KB (106134 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:05 GMT
 
 #### `23d09e462c4ceef172630a4d8cf5506104af1a52c7c4a8dc0c31c61b4eac7e6c`
 
@@ -5330,6 +5672,7 @@ ENV TOMCAT_MAJOR=7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae763c60e78944b93503069556d15d9fe0001b393327e043a86da9a9c14a9329`
 
@@ -5343,6 +5686,7 @@ ENV TOMCAT_VERSION=7.0.68
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bc4a0cebc0fdff05bef93d3cfb4049148ba09bc358f83df4ef7593e9b266d8ab`
 
@@ -5356,6 +5700,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.68/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7e735c8542fc317b711b58b7ea5a21653958ede55fe5e83de3bfcb8c008c38c4`
 
@@ -5375,6 +5720,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:c71292183fb2909865d0b9c106bda66df5604cee74d560a542121e5a82241516`
 -	v2 Content-Length: 8.9 MB (8896245 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:53 GMT
 
 #### `e2d769dccc4a6b0ba79a49ab3104dd9e8331383e4b8b7fb48b326de6875989a1`
 
@@ -5388,6 +5734,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0eec8625c1dcb7f1cd28b4e35d84c778de9e30aa8df96591195cc0aa544c02ad`
 
@@ -5401,6 +5748,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:7.0-jre8`
 
@@ -5424,6 +5772,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5437,6 +5786,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5454,6 +5804,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -5471,6 +5822,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -5484,6 +5836,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -5497,6 +5850,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -5516,6 +5870,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -5529,6 +5884,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -5542,6 +5898,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -5555,6 +5912,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -5568,6 +5926,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -5587,6 +5946,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5600,6 +5960,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -5613,6 +5974,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d8f328e02041fe79c5252f7e2900d0587799e402e8dd3f54e0d432b66a211a0`
 
@@ -5626,6 +5988,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55dadda5f8f127b23de28d2c1c732c9093f686ee782896e6004bf94be270885e`
 
@@ -5639,6 +6002,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1567559b13deddafa53d0c5c58a264e0814fb754110a3a2854b357c98f3969da`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:36 GMT
 
 #### `bef369ff36f850d89051b66ee25686e301f4f70ee8739432b385171022573988`
 
@@ -5652,6 +6016,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea45ee40be9843e87deb883fd5eb1c05c2fa701ebba43ebe240492c995a575e0`
 
@@ -5682,6 +6047,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:fa13522aad358e640b7b93895d6d1dab2337b1cf107f035d8ff3c0e94c267dc6`
 -	v2 Content-Length: 106.1 KB (106134 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:05 GMT
 
 #### `23d09e462c4ceef172630a4d8cf5506104af1a52c7c4a8dc0c31c61b4eac7e6c`
 
@@ -5695,6 +6061,7 @@ ENV TOMCAT_MAJOR=7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae763c60e78944b93503069556d15d9fe0001b393327e043a86da9a9c14a9329`
 
@@ -5708,6 +6075,7 @@ ENV TOMCAT_VERSION=7.0.68
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bc4a0cebc0fdff05bef93d3cfb4049148ba09bc358f83df4ef7593e9b266d8ab`
 
@@ -5721,6 +6089,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.68/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7e735c8542fc317b711b58b7ea5a21653958ede55fe5e83de3bfcb8c008c38c4`
 
@@ -5740,6 +6109,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:c71292183fb2909865d0b9c106bda66df5604cee74d560a542121e5a82241516`
 -	v2 Content-Length: 8.9 MB (8896245 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:53 GMT
 
 #### `e2d769dccc4a6b0ba79a49ab3104dd9e8331383e4b8b7fb48b326de6875989a1`
 
@@ -5753,6 +6123,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0eec8625c1dcb7f1cd28b4e35d84c778de9e30aa8df96591195cc0aa544c02ad`
 
@@ -5766,6 +6137,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:7-jre8`
 
@@ -5789,6 +6161,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5802,6 +6175,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5819,6 +6193,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -5836,6 +6211,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -5849,6 +6225,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -5862,6 +6239,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -5881,6 +6259,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -5894,6 +6273,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -5907,6 +6287,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -5920,6 +6301,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -5933,6 +6315,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -5952,6 +6335,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5965,6 +6349,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -5978,6 +6363,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d8f328e02041fe79c5252f7e2900d0587799e402e8dd3f54e0d432b66a211a0`
 
@@ -5991,6 +6377,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55dadda5f8f127b23de28d2c1c732c9093f686ee782896e6004bf94be270885e`
 
@@ -6004,6 +6391,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1567559b13deddafa53d0c5c58a264e0814fb754110a3a2854b357c98f3969da`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:36 GMT
 
 #### `bef369ff36f850d89051b66ee25686e301f4f70ee8739432b385171022573988`
 
@@ -6017,6 +6405,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea45ee40be9843e87deb883fd5eb1c05c2fa701ebba43ebe240492c995a575e0`
 
@@ -6047,6 +6436,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:fa13522aad358e640b7b93895d6d1dab2337b1cf107f035d8ff3c0e94c267dc6`
 -	v2 Content-Length: 106.1 KB (106134 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:05 GMT
 
 #### `23d09e462c4ceef172630a4d8cf5506104af1a52c7c4a8dc0c31c61b4eac7e6c`
 
@@ -6060,6 +6450,7 @@ ENV TOMCAT_MAJOR=7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae763c60e78944b93503069556d15d9fe0001b393327e043a86da9a9c14a9329`
 
@@ -6073,6 +6464,7 @@ ENV TOMCAT_VERSION=7.0.68
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bc4a0cebc0fdff05bef93d3cfb4049148ba09bc358f83df4ef7593e9b266d8ab`
 
@@ -6086,6 +6478,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.68/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7e735c8542fc317b711b58b7ea5a21653958ede55fe5e83de3bfcb8c008c38c4`
 
@@ -6105,6 +6498,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:c71292183fb2909865d0b9c106bda66df5604cee74d560a542121e5a82241516`
 -	v2 Content-Length: 8.9 MB (8896245 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:53 GMT
 
 #### `e2d769dccc4a6b0ba79a49ab3104dd9e8331383e4b8b7fb48b326de6875989a1`
 
@@ -6118,6 +6512,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0eec8625c1dcb7f1cd28b4e35d84c778de9e30aa8df96591195cc0aa544c02ad`
 
@@ -6131,6 +6526,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:8.0.32-jre7`
 
@@ -6154,6 +6550,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6167,6 +6564,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6184,6 +6582,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -6201,6 +6600,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -6214,6 +6614,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -6233,6 +6634,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -6246,6 +6648,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -6259,6 +6662,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -6272,6 +6676,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -6290,6 +6695,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -6303,6 +6709,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -6316,6 +6723,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -6329,6 +6737,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -6342,6 +6751,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c17574cde82b5631aef1e1bb9c266884303a895fa4e463e15701635ec2574bb8`
 
@@ -6371,6 +6781,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -6384,6 +6795,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `761b438dd85c1a4443feacf3afe1c97301cc98376342700103b7c1cf5faeacf6`
 
@@ -6397,6 +6809,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c2b3d3aa01c0e698be650825f245f9126b94d9933ef820b7531d879af7e807c1`
 
@@ -6410,6 +6823,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eaaeb65fec36ac39e518d4430d2d999febd1ccd55a1db3d31626c61b682269a7`
 
@@ -6429,6 +6843,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -6442,6 +6857,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b462938183d61aeae3cac6a7a2335b8806d561498a1495353b6650d65e1e403`
 
@@ -6455,6 +6871,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:8.0-jre7`
 
@@ -6478,6 +6895,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6491,6 +6909,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6508,6 +6927,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -6525,6 +6945,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -6538,6 +6959,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -6557,6 +6979,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -6570,6 +6993,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -6583,6 +7007,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -6596,6 +7021,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -6614,6 +7040,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -6627,6 +7054,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -6640,6 +7068,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -6653,6 +7082,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -6666,6 +7096,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c17574cde82b5631aef1e1bb9c266884303a895fa4e463e15701635ec2574bb8`
 
@@ -6695,6 +7126,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -6708,6 +7140,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `761b438dd85c1a4443feacf3afe1c97301cc98376342700103b7c1cf5faeacf6`
 
@@ -6721,6 +7154,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c2b3d3aa01c0e698be650825f245f9126b94d9933ef820b7531d879af7e807c1`
 
@@ -6734,6 +7168,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eaaeb65fec36ac39e518d4430d2d999febd1ccd55a1db3d31626c61b682269a7`
 
@@ -6753,6 +7188,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -6766,6 +7202,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b462938183d61aeae3cac6a7a2335b8806d561498a1495353b6650d65e1e403`
 
@@ -6779,6 +7216,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:8-jre7`
 
@@ -6802,6 +7240,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6815,6 +7254,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6832,6 +7272,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -6849,6 +7290,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -6862,6 +7304,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -6881,6 +7324,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -6894,6 +7338,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -6907,6 +7352,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -6920,6 +7366,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -6938,6 +7385,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -6951,6 +7399,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -6964,6 +7413,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -6977,6 +7427,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -6990,6 +7441,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c17574cde82b5631aef1e1bb9c266884303a895fa4e463e15701635ec2574bb8`
 
@@ -7019,6 +7471,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -7032,6 +7485,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `761b438dd85c1a4443feacf3afe1c97301cc98376342700103b7c1cf5faeacf6`
 
@@ -7045,6 +7499,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c2b3d3aa01c0e698be650825f245f9126b94d9933ef820b7531d879af7e807c1`
 
@@ -7058,6 +7513,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eaaeb65fec36ac39e518d4430d2d999febd1ccd55a1db3d31626c61b682269a7`
 
@@ -7077,6 +7533,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -7090,6 +7547,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b462938183d61aeae3cac6a7a2335b8806d561498a1495353b6650d65e1e403`
 
@@ -7103,6 +7561,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:jre7`
 
@@ -7126,6 +7585,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7139,6 +7599,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7156,6 +7617,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -7173,6 +7635,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -7186,6 +7649,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -7205,6 +7669,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -7218,6 +7683,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -7231,6 +7697,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -7244,6 +7711,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -7262,6 +7730,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -7275,6 +7744,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -7288,6 +7758,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -7301,6 +7772,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -7314,6 +7786,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c17574cde82b5631aef1e1bb9c266884303a895fa4e463e15701635ec2574bb8`
 
@@ -7343,6 +7816,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -7356,6 +7830,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `761b438dd85c1a4443feacf3afe1c97301cc98376342700103b7c1cf5faeacf6`
 
@@ -7369,6 +7844,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c2b3d3aa01c0e698be650825f245f9126b94d9933ef820b7531d879af7e807c1`
 
@@ -7382,6 +7858,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eaaeb65fec36ac39e518d4430d2d999febd1ccd55a1db3d31626c61b682269a7`
 
@@ -7401,6 +7878,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -7414,6 +7892,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b462938183d61aeae3cac6a7a2335b8806d561498a1495353b6650d65e1e403`
 
@@ -7427,6 +7906,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:8.0.32`
 
@@ -7450,6 +7930,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7463,6 +7944,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7480,6 +7962,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -7497,6 +7980,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -7510,6 +7994,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -7529,6 +8014,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -7542,6 +8028,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -7555,6 +8042,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -7568,6 +8056,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -7586,6 +8075,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -7599,6 +8089,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -7612,6 +8103,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -7625,6 +8117,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -7638,6 +8131,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c17574cde82b5631aef1e1bb9c266884303a895fa4e463e15701635ec2574bb8`
 
@@ -7667,6 +8161,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -7680,6 +8175,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `761b438dd85c1a4443feacf3afe1c97301cc98376342700103b7c1cf5faeacf6`
 
@@ -7693,6 +8189,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c2b3d3aa01c0e698be650825f245f9126b94d9933ef820b7531d879af7e807c1`
 
@@ -7706,6 +8203,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eaaeb65fec36ac39e518d4430d2d999febd1ccd55a1db3d31626c61b682269a7`
 
@@ -7725,6 +8223,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -7738,6 +8237,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b462938183d61aeae3cac6a7a2335b8806d561498a1495353b6650d65e1e403`
 
@@ -7751,6 +8251,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:8.0`
 
@@ -7774,6 +8275,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7787,6 +8289,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7804,6 +8307,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -7821,6 +8325,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -7834,6 +8339,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -7853,6 +8359,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -7866,6 +8373,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -7879,6 +8387,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -7892,6 +8401,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -7910,6 +8420,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -7923,6 +8434,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -7936,6 +8448,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -7949,6 +8462,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -7962,6 +8476,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c17574cde82b5631aef1e1bb9c266884303a895fa4e463e15701635ec2574bb8`
 
@@ -7991,6 +8506,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -8004,6 +8520,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `761b438dd85c1a4443feacf3afe1c97301cc98376342700103b7c1cf5faeacf6`
 
@@ -8017,6 +8534,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c2b3d3aa01c0e698be650825f245f9126b94d9933ef820b7531d879af7e807c1`
 
@@ -8030,6 +8548,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eaaeb65fec36ac39e518d4430d2d999febd1ccd55a1db3d31626c61b682269a7`
 
@@ -8049,6 +8568,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -8062,6 +8582,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b462938183d61aeae3cac6a7a2335b8806d561498a1495353b6650d65e1e403`
 
@@ -8075,6 +8596,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:8`
 
@@ -8098,6 +8620,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8111,6 +8634,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -8128,6 +8652,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -8145,6 +8670,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -8158,6 +8684,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -8177,6 +8704,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -8190,6 +8718,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -8203,6 +8732,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -8216,6 +8746,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -8234,6 +8765,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -8247,6 +8779,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -8260,6 +8793,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -8273,6 +8807,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -8286,6 +8821,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c17574cde82b5631aef1e1bb9c266884303a895fa4e463e15701635ec2574bb8`
 
@@ -8315,6 +8851,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -8328,6 +8865,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `761b438dd85c1a4443feacf3afe1c97301cc98376342700103b7c1cf5faeacf6`
 
@@ -8341,6 +8879,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c2b3d3aa01c0e698be650825f245f9126b94d9933ef820b7531d879af7e807c1`
 
@@ -8354,6 +8893,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eaaeb65fec36ac39e518d4430d2d999febd1ccd55a1db3d31626c61b682269a7`
 
@@ -8373,6 +8913,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -8386,6 +8927,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b462938183d61aeae3cac6a7a2335b8806d561498a1495353b6650d65e1e403`
 
@@ -8399,6 +8941,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:latest`
 
@@ -8422,6 +8965,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8435,6 +8979,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -8452,6 +8997,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -8469,6 +9015,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -8482,6 +9029,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
@@ -8501,6 +9049,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:05 GMT
 
 #### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
@@ -8514,6 +9063,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
@@ -8527,6 +9077,7 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
@@ -8540,6 +9091,7 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
@@ -8558,6 +9110,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `448549ad531ecb28b9627a0bdefb866b814688c47a97d0a7f5b6db326536aaf1`
 
@@ -8571,6 +9124,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f151c0d1579d797de8ca431fb6efe8fe62516d4b86c61b9e6b3611363b4be9bb`
 
@@ -8584,6 +9138,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f24b076d51734e25d24156e14476a84edb309f55a3a0a73ff8650619bdbaf9`
 
@@ -8597,6 +9152,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -8610,6 +9166,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c17574cde82b5631aef1e1bb9c266884303a895fa4e463e15701635ec2574bb8`
 
@@ -8639,6 +9196,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -8652,6 +9210,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `761b438dd85c1a4443feacf3afe1c97301cc98376342700103b7c1cf5faeacf6`
 
@@ -8665,6 +9224,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c2b3d3aa01c0e698be650825f245f9126b94d9933ef820b7531d879af7e807c1`
 
@@ -8678,6 +9238,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eaaeb65fec36ac39e518d4430d2d999febd1ccd55a1db3d31626c61b682269a7`
 
@@ -8697,6 +9258,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -8710,6 +9272,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b462938183d61aeae3cac6a7a2335b8806d561498a1495353b6650d65e1e403`
 
@@ -8723,6 +9286,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:8.0.32-jre8`
 
@@ -8746,6 +9310,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8759,6 +9324,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -8776,6 +9342,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -8793,6 +9360,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -8806,6 +9374,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -8819,6 +9388,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -8838,6 +9408,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -8851,6 +9422,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -8864,6 +9436,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -8877,6 +9450,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -8890,6 +9464,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -8909,6 +9484,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -8922,6 +9498,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -8935,6 +9512,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d8f328e02041fe79c5252f7e2900d0587799e402e8dd3f54e0d432b66a211a0`
 
@@ -8948,6 +9526,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55dadda5f8f127b23de28d2c1c732c9093f686ee782896e6004bf94be270885e`
 
@@ -8961,6 +9540,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1567559b13deddafa53d0c5c58a264e0814fb754110a3a2854b357c98f3969da`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:36 GMT
 
 #### `bef369ff36f850d89051b66ee25686e301f4f70ee8739432b385171022573988`
 
@@ -8974,6 +9554,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e777897fc1e937be436e4cd0bf13cea69a412ae73a511ae1c85feffbdd42f46`
 
@@ -9003,6 +9584,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:484556345911d7b3e685745d5bf8d2e4b9c914bd82704fa628a156dd730aebed`
 -	v2 Content-Length: 100.7 KB (100713 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:41 GMT
 
 #### `9c7c15b5844e9ffdb59d2fee6e40fad09decdf69a608d53a8d0a53caf332b990`
 
@@ -9016,6 +9598,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c31648b80ff8859e787471b6e4428ac1c78fddee66e09f5a55d68185c8eac300`
 
@@ -9029,6 +9612,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f1ab2efd525d61f2db984fc5bb40cf66d3fef46bf2e7165c5438a3605389682`
 
@@ -9042,6 +9626,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0da874d9dcb5aa7cece0b404883b686ba0c08718c3b656f6a7d94a83129f181f`
 
@@ -9061,6 +9646,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:1353741524b3b0883db41a306ca0c9735fc4a0c1f04254de95258205675aeeb4`
 -	v2 Content-Length: 9.2 MB (9164748 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:29 GMT
 
 #### `2ea870ca35863cf084463155640295cadd70a956ec8ec1c0d97a630fe16c66af`
 
@@ -9074,6 +9660,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fb6643b9b9b497650b5263784dc341cea2381c38bd20ca9472ec5e98ac67ca8`
 
@@ -9087,6 +9674,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:8.0-jre8`
 
@@ -9110,6 +9698,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9123,6 +9712,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -9140,6 +9730,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -9157,6 +9748,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -9170,6 +9762,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -9183,6 +9776,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -9202,6 +9796,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -9215,6 +9810,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -9228,6 +9824,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -9241,6 +9838,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -9254,6 +9852,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -9273,6 +9872,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -9286,6 +9886,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -9299,6 +9900,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d8f328e02041fe79c5252f7e2900d0587799e402e8dd3f54e0d432b66a211a0`
 
@@ -9312,6 +9914,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55dadda5f8f127b23de28d2c1c732c9093f686ee782896e6004bf94be270885e`
 
@@ -9325,6 +9928,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1567559b13deddafa53d0c5c58a264e0814fb754110a3a2854b357c98f3969da`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:36 GMT
 
 #### `bef369ff36f850d89051b66ee25686e301f4f70ee8739432b385171022573988`
 
@@ -9338,6 +9942,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e777897fc1e937be436e4cd0bf13cea69a412ae73a511ae1c85feffbdd42f46`
 
@@ -9367,6 +9972,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:484556345911d7b3e685745d5bf8d2e4b9c914bd82704fa628a156dd730aebed`
 -	v2 Content-Length: 100.7 KB (100713 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:41 GMT
 
 #### `9c7c15b5844e9ffdb59d2fee6e40fad09decdf69a608d53a8d0a53caf332b990`
 
@@ -9380,6 +9986,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c31648b80ff8859e787471b6e4428ac1c78fddee66e09f5a55d68185c8eac300`
 
@@ -9393,6 +10000,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f1ab2efd525d61f2db984fc5bb40cf66d3fef46bf2e7165c5438a3605389682`
 
@@ -9406,6 +10014,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0da874d9dcb5aa7cece0b404883b686ba0c08718c3b656f6a7d94a83129f181f`
 
@@ -9425,6 +10034,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:1353741524b3b0883db41a306ca0c9735fc4a0c1f04254de95258205675aeeb4`
 -	v2 Content-Length: 9.2 MB (9164748 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:29 GMT
 
 #### `2ea870ca35863cf084463155640295cadd70a956ec8ec1c0d97a630fe16c66af`
 
@@ -9438,6 +10048,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fb6643b9b9b497650b5263784dc341cea2381c38bd20ca9472ec5e98ac67ca8`
 
@@ -9451,6 +10062,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:8-jre8`
 
@@ -9474,6 +10086,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9487,6 +10100,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -9504,6 +10118,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -9521,6 +10136,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -9534,6 +10150,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -9547,6 +10164,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -9566,6 +10184,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -9579,6 +10198,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -9592,6 +10212,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -9605,6 +10226,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -9618,6 +10240,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -9637,6 +10260,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -9650,6 +10274,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -9663,6 +10288,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d8f328e02041fe79c5252f7e2900d0587799e402e8dd3f54e0d432b66a211a0`
 
@@ -9676,6 +10302,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55dadda5f8f127b23de28d2c1c732c9093f686ee782896e6004bf94be270885e`
 
@@ -9689,6 +10316,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1567559b13deddafa53d0c5c58a264e0814fb754110a3a2854b357c98f3969da`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:36 GMT
 
 #### `bef369ff36f850d89051b66ee25686e301f4f70ee8739432b385171022573988`
 
@@ -9702,6 +10330,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e777897fc1e937be436e4cd0bf13cea69a412ae73a511ae1c85feffbdd42f46`
 
@@ -9731,6 +10360,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:484556345911d7b3e685745d5bf8d2e4b9c914bd82704fa628a156dd730aebed`
 -	v2 Content-Length: 100.7 KB (100713 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:41 GMT
 
 #### `9c7c15b5844e9ffdb59d2fee6e40fad09decdf69a608d53a8d0a53caf332b990`
 
@@ -9744,6 +10374,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c31648b80ff8859e787471b6e4428ac1c78fddee66e09f5a55d68185c8eac300`
 
@@ -9757,6 +10388,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f1ab2efd525d61f2db984fc5bb40cf66d3fef46bf2e7165c5438a3605389682`
 
@@ -9770,6 +10402,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0da874d9dcb5aa7cece0b404883b686ba0c08718c3b656f6a7d94a83129f181f`
 
@@ -9789,6 +10422,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:1353741524b3b0883db41a306ca0c9735fc4a0c1f04254de95258205675aeeb4`
 -	v2 Content-Length: 9.2 MB (9164748 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:29 GMT
 
 #### `2ea870ca35863cf084463155640295cadd70a956ec8ec1c0d97a630fe16c66af`
 
@@ -9802,6 +10436,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fb6643b9b9b497650b5263784dc341cea2381c38bd20ca9472ec5e98ac67ca8`
 
@@ -9815,6 +10450,7 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `tomcat:jre8`
 
@@ -9838,6 +10474,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9851,6 +10488,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -9868,6 +10506,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -9885,6 +10524,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -9898,6 +10538,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -9911,6 +10552,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -9930,6 +10572,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -9943,6 +10586,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -9956,6 +10600,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -9969,6 +10614,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -9982,6 +10628,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -10001,6 +10648,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -10014,6 +10662,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -10027,6 +10676,7 @@ ENV CATALINA_HOME=/usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d8f328e02041fe79c5252f7e2900d0587799e402e8dd3f54e0d432b66a211a0`
 
@@ -10040,6 +10690,7 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55dadda5f8f127b23de28d2c1c732c9093f686ee782896e6004bf94be270885e`
 
@@ -10053,6 +10704,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1567559b13deddafa53d0c5c58a264e0814fb754110a3a2854b357c98f3969da`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:36 GMT
 
 #### `bef369ff36f850d89051b66ee25686e301f4f70ee8739432b385171022573988`
 
@@ -10066,6 +10718,7 @@ WORKDIR /usr/local/tomcat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e777897fc1e937be436e4cd0bf13cea69a412ae73a511ae1c85feffbdd42f46`
 
@@ -10095,6 +10748,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:484556345911d7b3e685745d5bf8d2e4b9c914bd82704fa628a156dd730aebed`
 -	v2 Content-Length: 100.7 KB (100713 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:41 GMT
 
 #### `9c7c15b5844e9ffdb59d2fee6e40fad09decdf69a608d53a8d0a53caf332b990`
 
@@ -10108,6 +10762,7 @@ ENV TOMCAT_MAJOR=8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c31648b80ff8859e787471b6e4428ac1c78fddee66e09f5a55d68185c8eac300`
 
@@ -10121,6 +10776,7 @@ ENV TOMCAT_VERSION=8.0.32
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f1ab2efd525d61f2db984fc5bb40cf66d3fef46bf2e7165c5438a3605389682`
 
@@ -10134,6 +10790,7 @@ ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apach
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0da874d9dcb5aa7cece0b404883b686ba0c08718c3b656f6a7d94a83129f181f`
 
@@ -10153,6 +10810,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:1353741524b3b0883db41a306ca0c9735fc4a0c1f04254de95258205675aeeb4`
 -	v2 Content-Length: 9.2 MB (9164748 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:29 GMT
 
 #### `2ea870ca35863cf084463155640295cadd70a956ec8ec1c0d97a630fe16c66af`
 
@@ -10166,6 +10824,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fb6643b9b9b497650b5263784dc341cea2381c38bd20ca9472ec5e98ac67ca8`
 
@@ -10179,3 +10838,4 @@ CMD ["catalina.sh" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

@@ -27,6 +27,7 @@ MAINTAINER "Juan Luis Baptiste" <juancho@mageia.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3162a9a45a24922b58acb93ed4a09460ec7d194a7beefad5a09644a051411f5`
 
@@ -40,6 +41,7 @@ ADD file:73ee62b144bac8d9d72c5dc76bf703a276337f870e3642587989993e1a174e52 in /
 -	Virtual Size: 193.1 MB (193078371 bytes)
 -	v2 Blob: `sha256:4ebd5f6e5b3a697ae43287a11a7a93c4b2b10745f6b3cce61e5d9b624ff0f303`
 -	v2 Content-Length: 72.4 MB (72358211 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 17:44:26 GMT
 
 ## `mageia:5`
 
@@ -63,6 +65,7 @@ MAINTAINER "Juan Luis Baptiste" <juancho@mageia.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3162a9a45a24922b58acb93ed4a09460ec7d194a7beefad5a09644a051411f5`
 
@@ -76,3 +79,4 @@ ADD file:73ee62b144bac8d9d72c5dc76bf703a276337f870e3642587989993e1a174e52 in /
 -	Virtual Size: 193.1 MB (193078371 bytes)
 -	v2 Blob: `sha256:4ebd5f6e5b3a697ae43287a11a7a93c4b2b10745f6b3cce61e5d9b624ff0f303`
 -	v2 Content-Length: 72.4 MB (72358211 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 17:44:26 GMT
