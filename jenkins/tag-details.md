@@ -319,7 +319,12 @@ ARG gid=1000
 #### `c544834e394c775353dc22852f40f0286318b80210229bc2351a7cadb0bb06c3`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","groupadd -g ${gid} ${group}     && useradd -d \"$JENKINS_HOME\" -u ${uid} -g ${gid} -m -s \/bin\/bash ${user}"]
+# ARG: "gid" => "1000"
+# ARG: "group" => "jenkins"
+# ARG: "uid" => "1000"
+# ARG: "user" => "jenkins"
+RUN groupadd -g ${gid} ${group}\
+     && useradd -d "$JENKINS_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:29 GMT
@@ -345,7 +350,11 @@ VOLUME [/var/jenkins_home]
 #### `72f9802e5a219806c7b8e815b0d8664404c3c338052a0d722937c273ef1127af`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","mkdir -p \/usr\/share\/jenkins\/ref\/init.groovy.d"]
+# ARG: "gid" => "1000"
+# ARG: "group" => "jenkins"
+# ARG: "uid" => "1000"
+# ARG: "user" => "jenkins"
+RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:31 GMT
@@ -371,7 +380,11 @@ ENV TINI_SHA=066ad710107dc7ee05d3aa6e4974f01dc98f3888
 #### `83c710fcd4369b16c7b610a99d2bc48db32385edb814d8cdef58034b2d887ff3`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","curl -fL https:\/\/github.com\/krallin\/tini\/releases\/download\/v0.5.0\/tini-static -o \/bin\/tini && chmod +x \/bin\/tini   && echo \"$TINI_SHA \/bin\/tini\" | sha1sum -c -"]
+# ARG: "gid" => "1000"
+# ARG: "group" => "jenkins"
+# ARG: "uid" => "1000"
+# ARG: "user" => "jenkins"
+RUN curl -fL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /bin/tini && chmod +x /bin/tini   && echo "$TINI_SHA /bin/tini" | sha1sum -c -
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:34 GMT
@@ -449,7 +462,11 @@ ENV JENKINS_SHA=2203f94a9b8fbd8d767ba244726f63ef01175b95
 #### `0800958f5f7d50aa6889192075c54b6af20308b2b9b7751873503808811860ba`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","curl -fL http:\/\/repo.jenkins-ci.org\/public\/org\/jenkins-ci\/main\/jenkins-war\/${JENKINS_VERSION}\/jenkins-war-${JENKINS_VERSION}.war -o \/usr\/share\/jenkins\/jenkins.war   && echo \"$JENKINS_SHA \/usr\/share\/jenkins\/jenkins.war\" | sha1sum -c -"]
+# ARG: "gid" => "1000"
+# ARG: "group" => "jenkins"
+# ARG: "uid" => "1000"
+# ARG: "user" => "jenkins"
+RUN curl -fL http://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war -o /usr/share/jenkins/jenkins.war   && echo "$JENKINS_SHA /usr/share/jenkins/jenkins.war" | sha1sum -c -
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:45 GMT
@@ -475,7 +492,11 @@ ENV JENKINS_UC=https://updates.jenkins-ci.org
 #### `8d913bbed61e72b6c9d6fe047a08463ea27b972b3936b97bdb9802c323d265f6`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","chown -R ${user} \"$JENKINS_HOME\" \/usr\/share\/jenkins\/ref"]
+# ARG: "gid" => "1000"
+# ARG: "group" => "jenkins"
+# ARG: "uid" => "1000"
+# ARG: "user" => "jenkins"
+RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:47 GMT
@@ -889,7 +910,8 @@ ARG gid=1000
 #### `c544834e394c775353dc22852f40f0286318b80210229bc2351a7cadb0bb06c3`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","groupadd -g ${gid} ${group}     && useradd -d \"$JENKINS_HOME\" -u ${uid} -g ${gid} -m -s \/bin\/bash ${user}"]
+RUN groupadd -g ${gid} ${group}\
+     && useradd -d "$JENKINS_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:29 GMT
@@ -915,7 +937,7 @@ VOLUME [/var/jenkins_home]
 #### `72f9802e5a219806c7b8e815b0d8664404c3c338052a0d722937c273ef1127af`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","mkdir -p \/usr\/share\/jenkins\/ref\/init.groovy.d"]
+RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:31 GMT
@@ -941,7 +963,7 @@ ENV TINI_SHA=066ad710107dc7ee05d3aa6e4974f01dc98f3888
 #### `83c710fcd4369b16c7b610a99d2bc48db32385edb814d8cdef58034b2d887ff3`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","curl -fL https:\/\/github.com\/krallin\/tini\/releases\/download\/v0.5.0\/tini-static -o \/bin\/tini && chmod +x \/bin\/tini   && echo \"$TINI_SHA \/bin\/tini\" | sha1sum -c -"]
+RUN curl -fL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /bin/tini && chmod +x /bin/tini   && echo "$TINI_SHA /bin/tini" | sha1sum -c -
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:34 GMT
@@ -1019,7 +1041,7 @@ ENV JENKINS_SHA=2203f94a9b8fbd8d767ba244726f63ef01175b95
 #### `0800958f5f7d50aa6889192075c54b6af20308b2b9b7751873503808811860ba`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","curl -fL http:\/\/repo.jenkins-ci.org\/public\/org\/jenkins-ci\/main\/jenkins-war\/${JENKINS_VERSION}\/jenkins-war-${JENKINS_VERSION}.war -o \/usr\/share\/jenkins\/jenkins.war   && echo \"$JENKINS_SHA \/usr\/share\/jenkins\/jenkins.war\" | sha1sum -c -"]
+RUN curl -fL http://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war -o /usr/share/jenkins/jenkins.war   && echo "$JENKINS_SHA /usr/share/jenkins/jenkins.war" | sha1sum -c -
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:45 GMT
@@ -1045,7 +1067,7 @@ ENV JENKINS_UC=https://updates.jenkins-ci.org
 #### `8d913bbed61e72b6c9d6fe047a08463ea27b972b3936b97bdb9802c323d265f6`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","chown -R ${user} \"$JENKINS_HOME\" \/usr\/share\/jenkins\/ref"]
+RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:47 GMT
@@ -1459,7 +1481,8 @@ ARG gid=1000
 #### `c544834e394c775353dc22852f40f0286318b80210229bc2351a7cadb0bb06c3`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","groupadd -g ${gid} ${group}     && useradd -d \"$JENKINS_HOME\" -u ${uid} -g ${gid} -m -s \/bin\/bash ${user}"]
+RUN groupadd -g ${gid} ${group}\
+     && useradd -d "$JENKINS_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:29 GMT
@@ -1485,7 +1508,7 @@ VOLUME [/var/jenkins_home]
 #### `72f9802e5a219806c7b8e815b0d8664404c3c338052a0d722937c273ef1127af`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","mkdir -p \/usr\/share\/jenkins\/ref\/init.groovy.d"]
+RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:31 GMT
@@ -1511,7 +1534,7 @@ ENV TINI_SHA=066ad710107dc7ee05d3aa6e4974f01dc98f3888
 #### `83c710fcd4369b16c7b610a99d2bc48db32385edb814d8cdef58034b2d887ff3`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","curl -fL https:\/\/github.com\/krallin\/tini\/releases\/download\/v0.5.0\/tini-static -o \/bin\/tini && chmod +x \/bin\/tini   && echo \"$TINI_SHA \/bin\/tini\" | sha1sum -c -"]
+RUN curl -fL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /bin/tini && chmod +x /bin/tini   && echo "$TINI_SHA /bin/tini" | sha1sum -c -
 ```
 
 -	Created: Wed, 30 Mar 2016 22:55:34 GMT
@@ -1589,7 +1612,11 @@ ENV JENKINS_SHA=ee60952941668f2b08b668b58c19e0b0ecee16df
 #### `f077109fcf16fbc143905a6606aa9392dacca666bdb48e20afaccf6582f2c3a8`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","curl -fL http:\/\/repo.jenkins-ci.org\/public\/org\/jenkins-ci\/main\/jenkins-war\/${JENKINS_VERSION}\/jenkins-war-${JENKINS_VERSION}.war -o \/usr\/share\/jenkins\/jenkins.war   && echo \"$JENKINS_SHA \/usr\/share\/jenkins\/jenkins.war\" | sha1sum -c -"]
+# ARG: "gid" => "1000"
+# ARG: "group" => "jenkins"
+# ARG: "uid" => "1000"
+# ARG: "user" => "jenkins"
+RUN curl -fL http://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war -o /usr/share/jenkins/jenkins.war   && echo "$JENKINS_SHA /usr/share/jenkins/jenkins.war" | sha1sum -c -
 ```
 
 -	Created: Wed, 30 Mar 2016 22:57:47 GMT
@@ -1615,7 +1642,11 @@ ENV JENKINS_UC=https://updates.jenkins-ci.org
 #### `772506934edc307507f9c087a66d71120b42d648ddbf0927a330f2b87bd17e10`
 
 ```dockerfile
-RUN ["|4","gid=1000","group=jenkins","uid=1000","user=jenkins","\/bin\/sh","-c","chown -R ${user} \"$JENKINS_HOME\" \/usr\/share\/jenkins\/ref"]
+# ARG: "gid" => "1000"
+# ARG: "group" => "jenkins"
+# ARG: "uid" => "1000"
+# ARG: "user" => "jenkins"
+RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
 ```
 
 -	Created: Wed, 30 Mar 2016 22:57:50 GMT
