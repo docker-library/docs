@@ -165,7 +165,6 @@ RUN mkdir -p /data/db /data/configdb \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3b5cd1b4372c5d86b8cb51c80200c225de4c8093fadec98b68e14f4f462bb600`
 -	v2 Content-Length: 140.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:55:35 GMT
 
 #### `ef4fd45c9cf0002c1ae744943a6a9e5c438c2643e43fe247a1a97448ecac81a7`
 
@@ -379,7 +378,6 @@ RUN mkdir -p /data/db /data/configdb \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3b5cd1b4372c5d86b8cb51c80200c225de4c8093fadec98b68e14f4f462bb600`
 -	v2 Content-Length: 140.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:55:35 GMT
 
 #### `ef4fd45c9cf0002c1ae744943a6a9e5c438c2643e43fe247a1a97448ecac81a7`
 
