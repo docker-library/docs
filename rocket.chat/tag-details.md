@@ -10,13 +10,13 @@
 ## `rocket.chat:0.22.0`
 
 ```console
-$ docker pull library/rocket.chat@sha256:485eec719ba624c4ac69501a32b4a5732e317ec6a3d7684c2e536f5c16553710
+$ docker pull library/rocket.chat@sha256:b859627a42bd778fd484f04bc12da589626ca24747f08d394d6fb22dbd997364
 ```
 
--	Total Virtual Size: 737.7 MB (737736894 bytes)
--	Total v2 Content-Length: 281.5 MB (281485289 bytes)
+-	Total Virtual Size: 733.6 MB (733564685 bytes)
+-	Total v2 Content-Length: 278.4 MB (278360093 bytes)
 
-### Layers (22)
+### Layers (21)
 
 #### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
@@ -150,33 +150,20 @@ RUN set -ex   && for key in\
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
 
-#### `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
+#### `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 
 ```dockerfile
-ENV NODE_VERSION=0.10.43
+ENV NODE_VERSION=0.10.44
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:24 GMT
+-	Created: Fri, 01 Apr 2016 15:08:19 GMT
 -	Parent Layer: `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
-
-```dockerfile
-ENV NPM_VERSION=2.14.1
-```
-
--	Created: Thu, 24 Mar 2016 02:42:25 GMT
--	Parent Layer: `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
-
-#### `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
+#### `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
@@ -184,182 +171,180 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 	&& gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc \
 	&& grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c - \
 	&& tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1 \
-	&& rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt \
-	&& npm install -g npm@"$NPM_VERSION" \
-	&& npm cache clear
+	&& rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:39 GMT
--	Parent Layer: `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
+-	Created: Fri, 01 Apr 2016 15:08:24 GMT
+-	Parent Layer: `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 -	Docker Version: 1.9.1
--	Virtual Size: 27.0 MB (27008399 bytes)
--	v2 Blob: `sha256:e74a9441929bd9481627530a1c9a12bfa563125bea2719a93af2a86428b70323`
--	v2 Content-Length: 10.1 MB (10145853 bytes)
+-	Virtual Size: 22.8 MB (22832566 bytes)
+-	v2 Blob: `sha256:3f09b27c007a43d83daa560d741ad464d364e57edfec9d2931e0f862c47fb6ac`
+-	v2 Content-Length: 7.0 MB (7019562 bytes)
 
-#### `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
+#### `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:42 GMT
--	Parent Layer: `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
+-	Created: Fri, 01 Apr 2016 15:08:26 GMT
+-	Parent Layer: `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a60afadf511c3625c9e32823898203de0ac5751bcd9ae2fa7cdd409100e59a9b`
+#### `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 
 ```dockerfile
 MAINTAINER buildmaster@rocket.chat
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:10 GMT
--	Parent Layer: `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
+-	Created: Fri, 01 Apr 2016 18:07:05 GMT
+-	Parent Layer: `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `df3551563edcf6914253e9af41240965f23a08214cfeb7b274a35f12a94732ec`
+#### `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 
 ```dockerfile
 RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:11 GMT
--	Parent Layer: `a60afadf511c3625c9e32823898203de0ac5751bcd9ae2fa7cdd409100e59a9b`
+-	Created: Fri, 01 Apr 2016 18:07:07 GMT
+-	Parent Layer: `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.4 KB (330441 bytes)
--	v2 Blob: `sha256:17cd9dcb43dd0f89929a9dcb9c3677059f43a2b6a7e7e921dbdf82d596a6f784`
--	v2 Content-Length: 2.1 KB (2057 bytes)
+-	v2 Blob: `sha256:c2ff0cd2fccad562e22b9f3d595aa94a42c31a38175ae0d67e3a40b69c6662b4`
+-	v2 Content-Length: 2.1 KB (2056 bytes)
 
-#### `1331f2252d1fb3b9621014a1444c6bca5828bc5cd55ce1713d5204fbcf884fbc`
+#### `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 
 ```dockerfile
 VOLUME [/app/uploads]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:11 GMT
--	Parent Layer: `df3551563edcf6914253e9af41240965f23a08214cfeb7b274a35f12a94732ec`
+-	Created: Fri, 01 Apr 2016 18:07:07 GMT
+-	Parent Layer: `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `8e01326d80087fff8bd854847dd5b3018db8347bece4f86eb18ba3e3ff3abbd4`
+#### `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:14 GMT
--	Parent Layer: `1331f2252d1fb3b9621014a1444c6bca5828bc5cd55ce1713d5204fbcf884fbc`
+-	Created: Fri, 01 Apr 2016 18:07:10 GMT
+-	Parent Layer: `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 -	Docker Version: 1.9.1
 -	Virtual Size: 52.2 KB (52235 bytes)
--	v2 Blob: `sha256:5d0d25ea3fbd38f699b0c955493529a2393af9719db7ae9853531b172a5e616a`
--	v2 Content-Length: 26.6 KB (26621 bytes)
+-	v2 Blob: `sha256:b1d33984f532db1d50655905d98145a5dbeadcd61ffa22077fee52e9b9e22def`
+-	v2 Content-Length: 26.6 KB (26620 bytes)
 
-#### `b09507b9e49ce1322e2cc9a81288393ea0b9eee0c281485e35a1ea2999750569`
+#### `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 
 ```dockerfile
 ENV RC_VERSION=0.22.0
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:14 GMT
--	Parent Layer: `8e01326d80087fff8bd854847dd5b3018db8347bece4f86eb18ba3e3ff3abbd4`
+-	Created: Fri, 01 Apr 2016 18:07:10 GMT
+-	Parent Layer: `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `805f5d821f894094ab6bc7d272d36ecc1d9d1a906c1e2aac74ea9bc601b2fc5b`
+#### `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 
 ```dockerfile
 WORKDIR /app
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:15 GMT
--	Parent Layer: `b09507b9e49ce1322e2cc9a81288393ea0b9eee0c281485e35a1ea2999750569`
+-	Created: Fri, 01 Apr 2016 18:07:11 GMT
+-	Parent Layer: `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a8779ead8a5808bb18dd66e40b3e5b24709a5de0ab55ab10ea6119e8e759fc1e`
+#### `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 
 ```dockerfile
 RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.chat.tgz &&  curl -fSL "https://rocket.chat/releases/${RC_VERSION}/asc" -o rocket.chat.tgz.asc &&  gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz &&  tar zxvf rocket.chat.tgz &&  rm rocket.chat.tgz rocket.chat.tgz.asc &&  cd bundle/programs/server &&  npm install
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:30 GMT
--	Parent Layer: `805f5d821f894094ab6bc7d272d36ecc1d9d1a906c1e2aac74ea9bc601b2fc5b`
+-	Created: Fri, 01 Apr 2016 18:07:26 GMT
+-	Parent Layer: `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 -	Docker Version: 1.9.1
--	Virtual Size: 103.6 MB (103572512 bytes)
--	v2 Blob: `sha256:52b2e17d68d85c7efdee50884e978c4f67812028712da4b9dfa8f91125052c70`
--	v2 Content-Length: 30.3 MB (30281609 bytes)
+-	Virtual Size: 103.6 MB (103576136 bytes)
+-	v2 Blob: `sha256:b459ea4f9124617710f0c8bba2f214ee93a965ebc95176e756eedfa57ebc2be0`
+-	v2 Content-Length: 30.3 MB (30282738 bytes)
 
-#### `80189d2211b66de9b43beb0c38fa503e845cdc9e903051a79579105f41bbd225`
+#### `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 
 ```dockerfile
 USER [rocketchat]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:35 GMT
--	Parent Layer: `a8779ead8a5808bb18dd66e40b3e5b24709a5de0ab55ab10ea6119e8e759fc1e`
+-	Created: Fri, 01 Apr 2016 18:07:31 GMT
+-	Parent Layer: `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `85388395ad915ef96ed1974f3e34eeb983c3361431242971962dd41c740b5909`
+#### `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 
 ```dockerfile
 WORKDIR /app/bundle
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:35 GMT
--	Parent Layer: `80189d2211b66de9b43beb0c38fa503e845cdc9e903051a79579105f41bbd225`
+-	Created: Fri, 01 Apr 2016 18:07:32 GMT
+-	Parent Layer: `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `08d240048f5841852452667def3b8559a72dcbca2ea6b1e34de2b71f0f05a4f2`
+#### `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 
 ```dockerfile
 ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:36 GMT
--	Parent Layer: `85388395ad915ef96ed1974f3e34eeb983c3361431242971962dd41c740b5909`
+-	Created: Fri, 01 Apr 2016 18:07:32 GMT
+-	Parent Layer: `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `11ea867b29b5e6e053d2e098a5cfb628ca4e9ea227729abfbc1d9a342f8f9536`
+#### `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:36 GMT
--	Parent Layer: `08d240048f5841852452667def3b8559a72dcbca2ea6b1e34de2b71f0f05a4f2`
+-	Created: Fri, 01 Apr 2016 18:07:33 GMT
+-	Parent Layer: `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2d696bfcfe9997e4493a04762b76d9fad03247a3c5897feccf27e9e13278166e`
+#### `1430f36c71f6cc2650767c5963be754f451a0a9207cc646801f9d4b8318af77b`
 
 ```dockerfile
 CMD ["node" "main.js"]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:37 GMT
--	Parent Layer: `11ea867b29b5e6e053d2e098a5cfb628ca4e9ea227729abfbc1d9a342f8f9536`
+-	Created: Fri, 01 Apr 2016 18:07:33 GMT
+-	Parent Layer: `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -368,13 +353,13 @@ CMD ["node" "main.js"]
 ## `rocket.chat:0.22`
 
 ```console
-$ docker pull library/rocket.chat@sha256:e1ad006f6c141dcc7480c749849d1d5f102e9b7474d9c9b1c9fb113e7162956f
+$ docker pull library/rocket.chat@sha256:672ae0e83033f074dbe519eb2221e536cda0e33d190f908f4ae4aeddbc470fe8
 ```
 
--	Total Virtual Size: 737.7 MB (737736894 bytes)
--	Total v2 Content-Length: 281.5 MB (281485289 bytes)
+-	Total Virtual Size: 733.6 MB (733564685 bytes)
+-	Total v2 Content-Length: 278.4 MB (278360093 bytes)
 
-### Layers (22)
+### Layers (21)
 
 #### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
@@ -508,33 +493,20 @@ RUN set -ex   && for key in\
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
 
-#### `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
+#### `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 
 ```dockerfile
-ENV NODE_VERSION=0.10.43
+ENV NODE_VERSION=0.10.44
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:24 GMT
+-	Created: Fri, 01 Apr 2016 15:08:19 GMT
 -	Parent Layer: `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
-
-```dockerfile
-ENV NPM_VERSION=2.14.1
-```
-
--	Created: Thu, 24 Mar 2016 02:42:25 GMT
--	Parent Layer: `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
-
-#### `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
+#### `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
@@ -542,182 +514,180 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 	&& gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc \
 	&& grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c - \
 	&& tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1 \
-	&& rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt \
-	&& npm install -g npm@"$NPM_VERSION" \
-	&& npm cache clear
+	&& rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:39 GMT
--	Parent Layer: `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
+-	Created: Fri, 01 Apr 2016 15:08:24 GMT
+-	Parent Layer: `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 -	Docker Version: 1.9.1
--	Virtual Size: 27.0 MB (27008399 bytes)
--	v2 Blob: `sha256:e74a9441929bd9481627530a1c9a12bfa563125bea2719a93af2a86428b70323`
--	v2 Content-Length: 10.1 MB (10145853 bytes)
+-	Virtual Size: 22.8 MB (22832566 bytes)
+-	v2 Blob: `sha256:3f09b27c007a43d83daa560d741ad464d364e57edfec9d2931e0f862c47fb6ac`
+-	v2 Content-Length: 7.0 MB (7019562 bytes)
 
-#### `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
+#### `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:42 GMT
--	Parent Layer: `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
+-	Created: Fri, 01 Apr 2016 15:08:26 GMT
+-	Parent Layer: `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a60afadf511c3625c9e32823898203de0ac5751bcd9ae2fa7cdd409100e59a9b`
+#### `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 
 ```dockerfile
 MAINTAINER buildmaster@rocket.chat
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:10 GMT
--	Parent Layer: `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
+-	Created: Fri, 01 Apr 2016 18:07:05 GMT
+-	Parent Layer: `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `df3551563edcf6914253e9af41240965f23a08214cfeb7b274a35f12a94732ec`
+#### `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 
 ```dockerfile
 RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:11 GMT
--	Parent Layer: `a60afadf511c3625c9e32823898203de0ac5751bcd9ae2fa7cdd409100e59a9b`
+-	Created: Fri, 01 Apr 2016 18:07:07 GMT
+-	Parent Layer: `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.4 KB (330441 bytes)
--	v2 Blob: `sha256:17cd9dcb43dd0f89929a9dcb9c3677059f43a2b6a7e7e921dbdf82d596a6f784`
--	v2 Content-Length: 2.1 KB (2057 bytes)
+-	v2 Blob: `sha256:c2ff0cd2fccad562e22b9f3d595aa94a42c31a38175ae0d67e3a40b69c6662b4`
+-	v2 Content-Length: 2.1 KB (2056 bytes)
 
-#### `1331f2252d1fb3b9621014a1444c6bca5828bc5cd55ce1713d5204fbcf884fbc`
+#### `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 
 ```dockerfile
 VOLUME [/app/uploads]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:11 GMT
--	Parent Layer: `df3551563edcf6914253e9af41240965f23a08214cfeb7b274a35f12a94732ec`
+-	Created: Fri, 01 Apr 2016 18:07:07 GMT
+-	Parent Layer: `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `8e01326d80087fff8bd854847dd5b3018db8347bece4f86eb18ba3e3ff3abbd4`
+#### `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:14 GMT
--	Parent Layer: `1331f2252d1fb3b9621014a1444c6bca5828bc5cd55ce1713d5204fbcf884fbc`
+-	Created: Fri, 01 Apr 2016 18:07:10 GMT
+-	Parent Layer: `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 -	Docker Version: 1.9.1
 -	Virtual Size: 52.2 KB (52235 bytes)
--	v2 Blob: `sha256:5d0d25ea3fbd38f699b0c955493529a2393af9719db7ae9853531b172a5e616a`
--	v2 Content-Length: 26.6 KB (26621 bytes)
+-	v2 Blob: `sha256:b1d33984f532db1d50655905d98145a5dbeadcd61ffa22077fee52e9b9e22def`
+-	v2 Content-Length: 26.6 KB (26620 bytes)
 
-#### `b09507b9e49ce1322e2cc9a81288393ea0b9eee0c281485e35a1ea2999750569`
+#### `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 
 ```dockerfile
 ENV RC_VERSION=0.22.0
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:14 GMT
--	Parent Layer: `8e01326d80087fff8bd854847dd5b3018db8347bece4f86eb18ba3e3ff3abbd4`
+-	Created: Fri, 01 Apr 2016 18:07:10 GMT
+-	Parent Layer: `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `805f5d821f894094ab6bc7d272d36ecc1d9d1a906c1e2aac74ea9bc601b2fc5b`
+#### `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 
 ```dockerfile
 WORKDIR /app
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:15 GMT
--	Parent Layer: `b09507b9e49ce1322e2cc9a81288393ea0b9eee0c281485e35a1ea2999750569`
+-	Created: Fri, 01 Apr 2016 18:07:11 GMT
+-	Parent Layer: `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a8779ead8a5808bb18dd66e40b3e5b24709a5de0ab55ab10ea6119e8e759fc1e`
+#### `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 
 ```dockerfile
 RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.chat.tgz &&  curl -fSL "https://rocket.chat/releases/${RC_VERSION}/asc" -o rocket.chat.tgz.asc &&  gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz &&  tar zxvf rocket.chat.tgz &&  rm rocket.chat.tgz rocket.chat.tgz.asc &&  cd bundle/programs/server &&  npm install
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:30 GMT
--	Parent Layer: `805f5d821f894094ab6bc7d272d36ecc1d9d1a906c1e2aac74ea9bc601b2fc5b`
+-	Created: Fri, 01 Apr 2016 18:07:26 GMT
+-	Parent Layer: `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 -	Docker Version: 1.9.1
--	Virtual Size: 103.6 MB (103572512 bytes)
--	v2 Blob: `sha256:52b2e17d68d85c7efdee50884e978c4f67812028712da4b9dfa8f91125052c70`
--	v2 Content-Length: 30.3 MB (30281609 bytes)
+-	Virtual Size: 103.6 MB (103576136 bytes)
+-	v2 Blob: `sha256:b459ea4f9124617710f0c8bba2f214ee93a965ebc95176e756eedfa57ebc2be0`
+-	v2 Content-Length: 30.3 MB (30282738 bytes)
 
-#### `80189d2211b66de9b43beb0c38fa503e845cdc9e903051a79579105f41bbd225`
+#### `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 
 ```dockerfile
 USER [rocketchat]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:35 GMT
--	Parent Layer: `a8779ead8a5808bb18dd66e40b3e5b24709a5de0ab55ab10ea6119e8e759fc1e`
+-	Created: Fri, 01 Apr 2016 18:07:31 GMT
+-	Parent Layer: `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `85388395ad915ef96ed1974f3e34eeb983c3361431242971962dd41c740b5909`
+#### `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 
 ```dockerfile
 WORKDIR /app/bundle
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:35 GMT
--	Parent Layer: `80189d2211b66de9b43beb0c38fa503e845cdc9e903051a79579105f41bbd225`
+-	Created: Fri, 01 Apr 2016 18:07:32 GMT
+-	Parent Layer: `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `08d240048f5841852452667def3b8559a72dcbca2ea6b1e34de2b71f0f05a4f2`
+#### `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 
 ```dockerfile
 ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:36 GMT
--	Parent Layer: `85388395ad915ef96ed1974f3e34eeb983c3361431242971962dd41c740b5909`
+-	Created: Fri, 01 Apr 2016 18:07:32 GMT
+-	Parent Layer: `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `11ea867b29b5e6e053d2e098a5cfb628ca4e9ea227729abfbc1d9a342f8f9536`
+#### `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:36 GMT
--	Parent Layer: `08d240048f5841852452667def3b8559a72dcbca2ea6b1e34de2b71f0f05a4f2`
+-	Created: Fri, 01 Apr 2016 18:07:33 GMT
+-	Parent Layer: `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2d696bfcfe9997e4493a04762b76d9fad03247a3c5897feccf27e9e13278166e`
+#### `1430f36c71f6cc2650767c5963be754f451a0a9207cc646801f9d4b8318af77b`
 
 ```dockerfile
 CMD ["node" "main.js"]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:37 GMT
--	Parent Layer: `11ea867b29b5e6e053d2e098a5cfb628ca4e9ea227729abfbc1d9a342f8f9536`
+-	Created: Fri, 01 Apr 2016 18:07:33 GMT
+-	Parent Layer: `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -726,13 +696,13 @@ CMD ["node" "main.js"]
 ## `rocket.chat:0`
 
 ```console
-$ docker pull library/rocket.chat@sha256:d9e4505c8a99ab98911f99c6a2fb43b4feb9d023c2db1e93bec29b05918adaf4
+$ docker pull library/rocket.chat@sha256:e81ccc3661ae7b7afeb540238e914e85b45a7afc872fc6c0c5db418d8a5b8da5
 ```
 
--	Total Virtual Size: 737.7 MB (737736894 bytes)
--	Total v2 Content-Length: 281.5 MB (281485289 bytes)
+-	Total Virtual Size: 733.6 MB (733564685 bytes)
+-	Total v2 Content-Length: 278.4 MB (278360093 bytes)
 
-### Layers (22)
+### Layers (21)
 
 #### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
@@ -866,33 +836,20 @@ RUN set -ex   && for key in\
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
 
-#### `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
+#### `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 
 ```dockerfile
-ENV NODE_VERSION=0.10.43
+ENV NODE_VERSION=0.10.44
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:24 GMT
+-	Created: Fri, 01 Apr 2016 15:08:19 GMT
 -	Parent Layer: `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
-
-```dockerfile
-ENV NPM_VERSION=2.14.1
-```
-
--	Created: Thu, 24 Mar 2016 02:42:25 GMT
--	Parent Layer: `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
-
-#### `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
+#### `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
@@ -900,182 +857,180 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 	&& gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc \
 	&& grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c - \
 	&& tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1 \
-	&& rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt \
-	&& npm install -g npm@"$NPM_VERSION" \
-	&& npm cache clear
+	&& rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:39 GMT
--	Parent Layer: `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
+-	Created: Fri, 01 Apr 2016 15:08:24 GMT
+-	Parent Layer: `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 -	Docker Version: 1.9.1
--	Virtual Size: 27.0 MB (27008399 bytes)
--	v2 Blob: `sha256:e74a9441929bd9481627530a1c9a12bfa563125bea2719a93af2a86428b70323`
--	v2 Content-Length: 10.1 MB (10145853 bytes)
+-	Virtual Size: 22.8 MB (22832566 bytes)
+-	v2 Blob: `sha256:3f09b27c007a43d83daa560d741ad464d364e57edfec9d2931e0f862c47fb6ac`
+-	v2 Content-Length: 7.0 MB (7019562 bytes)
 
-#### `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
+#### `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:42 GMT
--	Parent Layer: `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
+-	Created: Fri, 01 Apr 2016 15:08:26 GMT
+-	Parent Layer: `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a60afadf511c3625c9e32823898203de0ac5751bcd9ae2fa7cdd409100e59a9b`
+#### `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 
 ```dockerfile
 MAINTAINER buildmaster@rocket.chat
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:10 GMT
--	Parent Layer: `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
+-	Created: Fri, 01 Apr 2016 18:07:05 GMT
+-	Parent Layer: `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `df3551563edcf6914253e9af41240965f23a08214cfeb7b274a35f12a94732ec`
+#### `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 
 ```dockerfile
 RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:11 GMT
--	Parent Layer: `a60afadf511c3625c9e32823898203de0ac5751bcd9ae2fa7cdd409100e59a9b`
+-	Created: Fri, 01 Apr 2016 18:07:07 GMT
+-	Parent Layer: `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.4 KB (330441 bytes)
--	v2 Blob: `sha256:17cd9dcb43dd0f89929a9dcb9c3677059f43a2b6a7e7e921dbdf82d596a6f784`
--	v2 Content-Length: 2.1 KB (2057 bytes)
+-	v2 Blob: `sha256:c2ff0cd2fccad562e22b9f3d595aa94a42c31a38175ae0d67e3a40b69c6662b4`
+-	v2 Content-Length: 2.1 KB (2056 bytes)
 
-#### `1331f2252d1fb3b9621014a1444c6bca5828bc5cd55ce1713d5204fbcf884fbc`
+#### `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 
 ```dockerfile
 VOLUME [/app/uploads]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:11 GMT
--	Parent Layer: `df3551563edcf6914253e9af41240965f23a08214cfeb7b274a35f12a94732ec`
+-	Created: Fri, 01 Apr 2016 18:07:07 GMT
+-	Parent Layer: `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `8e01326d80087fff8bd854847dd5b3018db8347bece4f86eb18ba3e3ff3abbd4`
+#### `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:14 GMT
--	Parent Layer: `1331f2252d1fb3b9621014a1444c6bca5828bc5cd55ce1713d5204fbcf884fbc`
+-	Created: Fri, 01 Apr 2016 18:07:10 GMT
+-	Parent Layer: `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 -	Docker Version: 1.9.1
 -	Virtual Size: 52.2 KB (52235 bytes)
--	v2 Blob: `sha256:5d0d25ea3fbd38f699b0c955493529a2393af9719db7ae9853531b172a5e616a`
--	v2 Content-Length: 26.6 KB (26621 bytes)
+-	v2 Blob: `sha256:b1d33984f532db1d50655905d98145a5dbeadcd61ffa22077fee52e9b9e22def`
+-	v2 Content-Length: 26.6 KB (26620 bytes)
 
-#### `b09507b9e49ce1322e2cc9a81288393ea0b9eee0c281485e35a1ea2999750569`
+#### `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 
 ```dockerfile
 ENV RC_VERSION=0.22.0
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:14 GMT
--	Parent Layer: `8e01326d80087fff8bd854847dd5b3018db8347bece4f86eb18ba3e3ff3abbd4`
+-	Created: Fri, 01 Apr 2016 18:07:10 GMT
+-	Parent Layer: `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `805f5d821f894094ab6bc7d272d36ecc1d9d1a906c1e2aac74ea9bc601b2fc5b`
+#### `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 
 ```dockerfile
 WORKDIR /app
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:15 GMT
--	Parent Layer: `b09507b9e49ce1322e2cc9a81288393ea0b9eee0c281485e35a1ea2999750569`
+-	Created: Fri, 01 Apr 2016 18:07:11 GMT
+-	Parent Layer: `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a8779ead8a5808bb18dd66e40b3e5b24709a5de0ab55ab10ea6119e8e759fc1e`
+#### `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 
 ```dockerfile
 RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.chat.tgz &&  curl -fSL "https://rocket.chat/releases/${RC_VERSION}/asc" -o rocket.chat.tgz.asc &&  gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz &&  tar zxvf rocket.chat.tgz &&  rm rocket.chat.tgz rocket.chat.tgz.asc &&  cd bundle/programs/server &&  npm install
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:30 GMT
--	Parent Layer: `805f5d821f894094ab6bc7d272d36ecc1d9d1a906c1e2aac74ea9bc601b2fc5b`
+-	Created: Fri, 01 Apr 2016 18:07:26 GMT
+-	Parent Layer: `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 -	Docker Version: 1.9.1
--	Virtual Size: 103.6 MB (103572512 bytes)
--	v2 Blob: `sha256:52b2e17d68d85c7efdee50884e978c4f67812028712da4b9dfa8f91125052c70`
--	v2 Content-Length: 30.3 MB (30281609 bytes)
+-	Virtual Size: 103.6 MB (103576136 bytes)
+-	v2 Blob: `sha256:b459ea4f9124617710f0c8bba2f214ee93a965ebc95176e756eedfa57ebc2be0`
+-	v2 Content-Length: 30.3 MB (30282738 bytes)
 
-#### `80189d2211b66de9b43beb0c38fa503e845cdc9e903051a79579105f41bbd225`
+#### `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 
 ```dockerfile
 USER [rocketchat]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:35 GMT
--	Parent Layer: `a8779ead8a5808bb18dd66e40b3e5b24709a5de0ab55ab10ea6119e8e759fc1e`
+-	Created: Fri, 01 Apr 2016 18:07:31 GMT
+-	Parent Layer: `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `85388395ad915ef96ed1974f3e34eeb983c3361431242971962dd41c740b5909`
+#### `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 
 ```dockerfile
 WORKDIR /app/bundle
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:35 GMT
--	Parent Layer: `80189d2211b66de9b43beb0c38fa503e845cdc9e903051a79579105f41bbd225`
+-	Created: Fri, 01 Apr 2016 18:07:32 GMT
+-	Parent Layer: `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `08d240048f5841852452667def3b8559a72dcbca2ea6b1e34de2b71f0f05a4f2`
+#### `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 
 ```dockerfile
 ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:36 GMT
--	Parent Layer: `85388395ad915ef96ed1974f3e34eeb983c3361431242971962dd41c740b5909`
+-	Created: Fri, 01 Apr 2016 18:07:32 GMT
+-	Parent Layer: `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `11ea867b29b5e6e053d2e098a5cfb628ca4e9ea227729abfbc1d9a342f8f9536`
+#### `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:36 GMT
--	Parent Layer: `08d240048f5841852452667def3b8559a72dcbca2ea6b1e34de2b71f0f05a4f2`
+-	Created: Fri, 01 Apr 2016 18:07:33 GMT
+-	Parent Layer: `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2d696bfcfe9997e4493a04762b76d9fad03247a3c5897feccf27e9e13278166e`
+#### `1430f36c71f6cc2650767c5963be754f451a0a9207cc646801f9d4b8318af77b`
 
 ```dockerfile
 CMD ["node" "main.js"]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:37 GMT
--	Parent Layer: `11ea867b29b5e6e053d2e098a5cfb628ca4e9ea227729abfbc1d9a342f8f9536`
+-	Created: Fri, 01 Apr 2016 18:07:33 GMT
+-	Parent Layer: `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1084,13 +1039,13 @@ CMD ["node" "main.js"]
 ## `rocket.chat:latest`
 
 ```console
-$ docker pull library/rocket.chat@sha256:16eff32b44ca8a63a52062ba390fcf0b9dfac88c2b8b1d6f6adadc4725e0840d
+$ docker pull library/rocket.chat@sha256:e682e51876c16a74e8abc97b1f07e4b66bb3ff7c6cbc77e3d04aaea9688710f4
 ```
 
--	Total Virtual Size: 737.7 MB (737736894 bytes)
--	Total v2 Content-Length: 281.5 MB (281485289 bytes)
+-	Total Virtual Size: 733.6 MB (733564685 bytes)
+-	Total v2 Content-Length: 278.4 MB (278360093 bytes)
 
-### Layers (22)
+### Layers (21)
 
 #### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
@@ -1224,33 +1179,20 @@ RUN set -ex   && for key in\
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
 
-#### `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
+#### `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 
 ```dockerfile
-ENV NODE_VERSION=0.10.43
+ENV NODE_VERSION=0.10.44
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:24 GMT
+-	Created: Fri, 01 Apr 2016 15:08:19 GMT
 -	Parent Layer: `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
-
-```dockerfile
-ENV NPM_VERSION=2.14.1
-```
-
--	Created: Thu, 24 Mar 2016 02:42:25 GMT
--	Parent Layer: `fc272c39be85ae5ff0805116663eb01cb29902d19d84b55ffdd20f73c4f01dbb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
-
-#### `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
+#### `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
@@ -1258,182 +1200,180 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 	&& gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc \
 	&& grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c - \
 	&& tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1 \
-	&& rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt \
-	&& npm install -g npm@"$NPM_VERSION" \
-	&& npm cache clear
+	&& rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:39 GMT
--	Parent Layer: `e43fa54200b7823ea31f27988ac1805d43e4866eeb44b7b74b22c4d838bf3201`
+-	Created: Fri, 01 Apr 2016 15:08:24 GMT
+-	Parent Layer: `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 -	Docker Version: 1.9.1
--	Virtual Size: 27.0 MB (27008399 bytes)
--	v2 Blob: `sha256:e74a9441929bd9481627530a1c9a12bfa563125bea2719a93af2a86428b70323`
--	v2 Content-Length: 10.1 MB (10145853 bytes)
+-	Virtual Size: 22.8 MB (22832566 bytes)
+-	v2 Blob: `sha256:3f09b27c007a43d83daa560d741ad464d364e57edfec9d2931e0f862c47fb6ac`
+-	v2 Content-Length: 7.0 MB (7019562 bytes)
 
-#### `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
+#### `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Thu, 24 Mar 2016 02:42:42 GMT
--	Parent Layer: `e117086d2fd7176e771e7b8fec4db9bb228014c26fa5725541482d2236e87660`
+-	Created: Fri, 01 Apr 2016 15:08:26 GMT
+-	Parent Layer: `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a60afadf511c3625c9e32823898203de0ac5751bcd9ae2fa7cdd409100e59a9b`
+#### `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 
 ```dockerfile
 MAINTAINER buildmaster@rocket.chat
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:10 GMT
--	Parent Layer: `ef787ec5a9a7a9414774ff3f2de853ccd8689996ea1a9d7989b443da0cedf398`
+-	Created: Fri, 01 Apr 2016 18:07:05 GMT
+-	Parent Layer: `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `df3551563edcf6914253e9af41240965f23a08214cfeb7b274a35f12a94732ec`
+#### `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 
 ```dockerfile
 RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:11 GMT
--	Parent Layer: `a60afadf511c3625c9e32823898203de0ac5751bcd9ae2fa7cdd409100e59a9b`
+-	Created: Fri, 01 Apr 2016 18:07:07 GMT
+-	Parent Layer: `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.4 KB (330441 bytes)
--	v2 Blob: `sha256:17cd9dcb43dd0f89929a9dcb9c3677059f43a2b6a7e7e921dbdf82d596a6f784`
--	v2 Content-Length: 2.1 KB (2057 bytes)
+-	v2 Blob: `sha256:c2ff0cd2fccad562e22b9f3d595aa94a42c31a38175ae0d67e3a40b69c6662b4`
+-	v2 Content-Length: 2.1 KB (2056 bytes)
 
-#### `1331f2252d1fb3b9621014a1444c6bca5828bc5cd55ce1713d5204fbcf884fbc`
+#### `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 
 ```dockerfile
 VOLUME [/app/uploads]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:11 GMT
--	Parent Layer: `df3551563edcf6914253e9af41240965f23a08214cfeb7b274a35f12a94732ec`
+-	Created: Fri, 01 Apr 2016 18:07:07 GMT
+-	Parent Layer: `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `8e01326d80087fff8bd854847dd5b3018db8347bece4f86eb18ba3e3ff3abbd4`
+#### `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:14 GMT
--	Parent Layer: `1331f2252d1fb3b9621014a1444c6bca5828bc5cd55ce1713d5204fbcf884fbc`
+-	Created: Fri, 01 Apr 2016 18:07:10 GMT
+-	Parent Layer: `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 -	Docker Version: 1.9.1
 -	Virtual Size: 52.2 KB (52235 bytes)
--	v2 Blob: `sha256:5d0d25ea3fbd38f699b0c955493529a2393af9719db7ae9853531b172a5e616a`
--	v2 Content-Length: 26.6 KB (26621 bytes)
+-	v2 Blob: `sha256:b1d33984f532db1d50655905d98145a5dbeadcd61ffa22077fee52e9b9e22def`
+-	v2 Content-Length: 26.6 KB (26620 bytes)
 
-#### `b09507b9e49ce1322e2cc9a81288393ea0b9eee0c281485e35a1ea2999750569`
+#### `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 
 ```dockerfile
 ENV RC_VERSION=0.22.0
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:14 GMT
--	Parent Layer: `8e01326d80087fff8bd854847dd5b3018db8347bece4f86eb18ba3e3ff3abbd4`
+-	Created: Fri, 01 Apr 2016 18:07:10 GMT
+-	Parent Layer: `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `805f5d821f894094ab6bc7d272d36ecc1d9d1a906c1e2aac74ea9bc601b2fc5b`
+#### `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 
 ```dockerfile
 WORKDIR /app
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:15 GMT
--	Parent Layer: `b09507b9e49ce1322e2cc9a81288393ea0b9eee0c281485e35a1ea2999750569`
+-	Created: Fri, 01 Apr 2016 18:07:11 GMT
+-	Parent Layer: `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a8779ead8a5808bb18dd66e40b3e5b24709a5de0ab55ab10ea6119e8e759fc1e`
+#### `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 
 ```dockerfile
 RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.chat.tgz &&  curl -fSL "https://rocket.chat/releases/${RC_VERSION}/asc" -o rocket.chat.tgz.asc &&  gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz &&  tar zxvf rocket.chat.tgz &&  rm rocket.chat.tgz rocket.chat.tgz.asc &&  cd bundle/programs/server &&  npm install
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:30 GMT
--	Parent Layer: `805f5d821f894094ab6bc7d272d36ecc1d9d1a906c1e2aac74ea9bc601b2fc5b`
+-	Created: Fri, 01 Apr 2016 18:07:26 GMT
+-	Parent Layer: `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 -	Docker Version: 1.9.1
--	Virtual Size: 103.6 MB (103572512 bytes)
--	v2 Blob: `sha256:52b2e17d68d85c7efdee50884e978c4f67812028712da4b9dfa8f91125052c70`
--	v2 Content-Length: 30.3 MB (30281609 bytes)
+-	Virtual Size: 103.6 MB (103576136 bytes)
+-	v2 Blob: `sha256:b459ea4f9124617710f0c8bba2f214ee93a965ebc95176e756eedfa57ebc2be0`
+-	v2 Content-Length: 30.3 MB (30282738 bytes)
 
-#### `80189d2211b66de9b43beb0c38fa503e845cdc9e903051a79579105f41bbd225`
+#### `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 
 ```dockerfile
 USER [rocketchat]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:35 GMT
--	Parent Layer: `a8779ead8a5808bb18dd66e40b3e5b24709a5de0ab55ab10ea6119e8e759fc1e`
+-	Created: Fri, 01 Apr 2016 18:07:31 GMT
+-	Parent Layer: `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `85388395ad915ef96ed1974f3e34eeb983c3361431242971962dd41c740b5909`
+#### `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 
 ```dockerfile
 WORKDIR /app/bundle
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:35 GMT
--	Parent Layer: `80189d2211b66de9b43beb0c38fa503e845cdc9e903051a79579105f41bbd225`
+-	Created: Fri, 01 Apr 2016 18:07:32 GMT
+-	Parent Layer: `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `08d240048f5841852452667def3b8559a72dcbca2ea6b1e34de2b71f0f05a4f2`
+#### `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 
 ```dockerfile
 ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:36 GMT
--	Parent Layer: `85388395ad915ef96ed1974f3e34eeb983c3361431242971962dd41c740b5909`
+-	Created: Fri, 01 Apr 2016 18:07:32 GMT
+-	Parent Layer: `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `11ea867b29b5e6e053d2e098a5cfb628ca4e9ea227729abfbc1d9a342f8f9536`
+#### `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:36 GMT
--	Parent Layer: `08d240048f5841852452667def3b8559a72dcbca2ea6b1e34de2b71f0f05a4f2`
+-	Created: Fri, 01 Apr 2016 18:07:33 GMT
+-	Parent Layer: `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2d696bfcfe9997e4493a04762b76d9fad03247a3c5897feccf27e9e13278166e`
+#### `1430f36c71f6cc2650767c5963be754f451a0a9207cc646801f9d4b8318af77b`
 
 ```dockerfile
 CMD ["node" "main.js"]
 ```
 
--	Created: Thu, 24 Mar 2016 10:30:37 GMT
--	Parent Layer: `11ea867b29b5e6e053d2e098a5cfb628ca4e9ea227729abfbc1d9a342f8f9536`
+-	Created: Fri, 01 Apr 2016 18:07:33 GMT
+-	Parent Layer: `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
