@@ -393,7 +393,6 @@ RUN curl -fL https://github.com/krallin/tini/releases/download/v0.5.0/tini-stati
 -	Virtual Size: 819.3 KB (819272 bytes)
 -	v2 Blob: `sha256:80df1a8e0deaf7607720bee88c407b578ee1007bf038a538914ce01c3ed748bc`
 -	v2 Content-Length: 335.2 KB (335225 bytes)
--	v2 Last-Modified: Wed, 30 Mar 2016 22:58:41 GMT
 
 #### `efa514780581c76d2308467e3768a3ac045b8561200e5e79578724f11c8b3c0e`
 
@@ -973,7 +972,6 @@ RUN curl -fL https://github.com/krallin/tini/releases/download/v0.5.0/tini-stati
 -	Virtual Size: 819.3 KB (819272 bytes)
 -	v2 Blob: `sha256:80df1a8e0deaf7607720bee88c407b578ee1007bf038a538914ce01c3ed748bc`
 -	v2 Content-Length: 335.2 KB (335225 bytes)
--	v2 Last-Modified: Wed, 30 Mar 2016 22:58:41 GMT
 
 #### `efa514780581c76d2308467e3768a3ac045b8561200e5e79578724f11c8b3c0e`
 
@@ -1545,7 +1543,6 @@ RUN curl -fL https://github.com/krallin/tini/releases/download/v0.5.0/tini-stati
 -	Virtual Size: 819.3 KB (819272 bytes)
 -	v2 Blob: `sha256:80df1a8e0deaf7607720bee88c407b578ee1007bf038a538914ce01c3ed748bc`
 -	v2 Content-Length: 335.2 KB (335225 bytes)
--	v2 Last-Modified: Wed, 30 Mar 2016 22:58:41 GMT
 
 #### `efa514780581c76d2308467e3768a3ac045b8561200e5e79578724f11c8b3c0e`
 
