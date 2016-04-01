@@ -1,8 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.3`, `1.2`, `latest` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/08b645312bcbf020214e36679eec248234485b3a/1.2/Dockerfile)
+-	[`1.2.4`, `1.2`, `latest` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8a1bf2bebcf4488408fc5e9f51c6ef09e0abbee6/1.2/Dockerfile)
+-	[`1.2.3` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/08b645312bcbf020214e36679eec248234485b3a/1.2/Dockerfile)
 
-[![](https://badge.imagelayers.io/elixir:latest.svg)](https://imagelayers.io/?images=elixir:1.2.3)
+[![](https://badge.imagelayers.io/elixir:latest.svg)](https://imagelayers.io/?images=elixir:1.2.4,elixir:1.2.3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elixir`)](https://github.com/docker-library/official-images/blob/master/library/elixir). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felixir).
 
