@@ -4638,6 +4638,7 @@ RUN docker-php-ext-install mysqli
 -	Virtual Size: 2.9 MB (2938329 bytes)
 -	v2 Blob: `sha256:a8e4c56bf3ff66c12d3ebf22488830d9df68abafd274609c42ff1a024dfb91e5`
 -	v2 Content-Length: 794.7 KB (794700 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:39:54 GMT
 
 #### `2cb32ef0e0537d66d491b91dd8ae1c8f2d157261bd87b70842da6a357d88c564`
 
@@ -5163,6 +5164,7 @@ RUN docker-php-ext-install mysqli
 -	Virtual Size: 2.9 MB (2938329 bytes)
 -	v2 Blob: `sha256:a8e4c56bf3ff66c12d3ebf22488830d9df68abafd274609c42ff1a024dfb91e5`
 -	v2 Content-Length: 794.7 KB (794700 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:39:54 GMT
 
 #### `2cb32ef0e0537d66d491b91dd8ae1c8f2d157261bd87b70842da6a357d88c564`
 
@@ -5688,6 +5690,7 @@ RUN docker-php-ext-install mysqli
 -	Virtual Size: 2.9 MB (2938329 bytes)
 -	v2 Blob: `sha256:a8e4c56bf3ff66c12d3ebf22488830d9df68abafd274609c42ff1a024dfb91e5`
 -	v2 Content-Length: 794.7 KB (794700 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:39:54 GMT
 
 #### `2cb32ef0e0537d66d491b91dd8ae1c8f2d157261bd87b70842da6a357d88c564`
 
@@ -6213,6 +6216,7 @@ RUN docker-php-ext-install mysqli
 -	Virtual Size: 2.9 MB (2938329 bytes)
 -	v2 Blob: `sha256:a8e4c56bf3ff66c12d3ebf22488830d9df68abafd274609c42ff1a024dfb91e5`
 -	v2 Content-Length: 794.7 KB (794700 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:39:54 GMT
 
 #### `2cb32ef0e0537d66d491b91dd8ae1c8f2d157261bd87b70842da6a357d88c564`
 
