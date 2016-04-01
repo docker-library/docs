@@ -11,114 +11,114 @@
 ## `alpine:3.1`
 
 ```console
-$ docker pull library/alpine@sha256:77e106a72b89c9f9c6e51a64f281f5b5e7167ff7b8a7ee7a501f6018bc48b6bc
+$ docker pull library/alpine@sha256:9ee9ba28a5c6816167ae10829003e68a8a56740a3278787d37f3dcfb5dd0ac4b
 ```
 
 -	Total Virtual Size: 5.0 MB (5043973 bytes)
--	Total v2 Content-Length: 2.2 MB (2242092 bytes)
+-	Total v2 Content-Length: 2.2 MB (2242091 bytes)
 
 ### Layers (1)
 
-#### `16255da630a2061e9df968d4baef97f3571b5b9dfe626ea31fce3be23f41b236`
+#### `e27b3b7de7fd87fa319e1ca6ef7c49a1e3c52044c8de15d7a696f947cce0e2a9`
 
 ```dockerfile
-ADD file:f98914439a9d95efe3c772813ce47c9461bae8033d1bac0851564a286c64f670 in /
+ADD file:565780895060f27a6a1b89c77d11a2a0ce05d432ee864a0816a8bfaad3276017 in /
 ```
 
--	Created: Wed, 02 Mar 2016 17:15:50 GMT
+-	Created: Fri, 01 Apr 2016 20:52:52 GMT
 -	Docker Version: 1.9.1
 -	Virtual Size: 5.0 MB (5043973 bytes)
--	v2 Blob: `sha256:0c1d2331339656a5dda2a0cb706017b20da6340d9daa4df59d48d18d179b9813`
--	v2 Content-Length: 2.2 MB (2242092 bytes)
+-	v2 Blob: `sha256:2adb67ce5cbbd5ff721a8297b9c5505fbfd5e4a60493ffc13ad9587b1b9eae79`
+-	v2 Content-Length: 2.2 MB (2242091 bytes)
 
 ## `alpine:3.2`
 
 ```console
-$ docker pull library/alpine@sha256:4f2d8bbad359e3e6f23c0498e009aaa3e2f31996cbea7269b78f92ee43647811
+$ docker pull library/alpine@sha256:5ce3a47c403a4561ebc0deb19431d73bd1ef219a4331ca5ce03348092fc98657
 ```
 
 -	Total Virtual Size: 5.3 MB (5257781 bytes)
--	Total v2 Content-Length: 2.5 MB (2492246 bytes)
+-	Total v2 Content-Length: 2.5 MB (2492160 bytes)
 
 ### Layers (1)
 
-#### `88077d36149044d9b1939f7a3e5141355ed6c53566853f7df9466ef8e43cfa63`
+#### `39f6016b887b9eae88e8e0d24640cfef586655ab3d29bb95774bd0770c6b8666`
 
 ```dockerfile
-ADD file:cda4b589f22e7984e3527bc653be228f0cd48420145b04aecf4b003b17fe3043 in /
+ADD file:68035bea47f796d77eb4d9912cb8e3ac35546abbf0a6a296dc80ac745f0b581e in /
 ```
 
--	Created: Wed, 02 Mar 2016 17:15:55 GMT
+-	Created: Fri, 01 Apr 2016 20:52:56 GMT
 -	Docker Version: 1.9.1
 -	Virtual Size: 5.3 MB (5257781 bytes)
--	v2 Blob: `sha256:e49bb2b1d8f0811c1cd35a809c42016cb37f592044e00e66e3d29516385bc13f`
--	v2 Content-Length: 2.5 MB (2492246 bytes)
+-	v2 Blob: `sha256:e6c44a677827621302a4415776a9bd1ed1dbd5f08ef816330363425a4af6a7c3`
+-	v2 Content-Length: 2.5 MB (2492160 bytes)
 
 ## `alpine:3.3`
 
 ```console
-$ docker pull library/alpine@sha256:1849e75e25b5a005781b32e7ce0ec2892c85ef3d40d76861a6d3c721f1acc353
+$ docker pull library/alpine@sha256:41eb14107cd1c1a5b50c2cedc534d53e8c1904c5f9e81070426feb23b424b28e
 ```
 
--	Total Virtual Size: 4.8 MB (4797951 bytes)
--	Total v2 Content-Length: 2.3 MB (2319773 bytes)
+-	Total Virtual Size: 4.8 MB (4798063 bytes)
+-	Total v2 Content-Length: 2.3 MB (2319870 bytes)
 
 ### Layers (1)
 
-#### `2a250d324882b789296fa2ce98083ed9685e6b5ed9afdb397648aed9b6cf04a4`
+#### `f58d61a874bedb7cdcb5a409ebb0c53b0656b880695c14e78a69902873358d5f`
 
 ```dockerfile
-ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
+ADD file:033ab063740d9ff4dcfb1c69eccf25f91d88729f57cd5a73050e014e3e094aa0 in /
 ```
 
--	Created: Wed, 02 Mar 2016 17:16:00 GMT
+-	Created: Fri, 01 Apr 2016 20:53:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4797951 bytes)
--	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
--	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	Virtual Size: 4.8 MB (4798063 bytes)
+-	v2 Blob: `sha256:420890c9e918b6668faaedd9000e220190f2493b0693ee563ebd7b4cc754a57d`
+-	v2 Content-Length: 2.3 MB (2319870 bytes)
 
 ## `alpine:latest`
 
 ```console
-$ docker pull library/alpine@sha256:7739b19a213f3a0aa8dacbd5898c8bd467e6eaf71074296a3d75824e76257396
+$ docker pull library/alpine@sha256:9cacb71397b640eca97488cf08582ae4e4068513101088e9f96c9814bfda95e0
 ```
 
--	Total Virtual Size: 4.8 MB (4797951 bytes)
--	Total v2 Content-Length: 2.3 MB (2319773 bytes)
+-	Total Virtual Size: 4.8 MB (4798063 bytes)
+-	Total v2 Content-Length: 2.3 MB (2319870 bytes)
 
 ### Layers (1)
 
-#### `2a250d324882b789296fa2ce98083ed9685e6b5ed9afdb397648aed9b6cf04a4`
+#### `f58d61a874bedb7cdcb5a409ebb0c53b0656b880695c14e78a69902873358d5f`
 
 ```dockerfile
-ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
+ADD file:033ab063740d9ff4dcfb1c69eccf25f91d88729f57cd5a73050e014e3e094aa0 in /
 ```
 
--	Created: Wed, 02 Mar 2016 17:16:00 GMT
+-	Created: Fri, 01 Apr 2016 20:53:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4797951 bytes)
--	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
--	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	Virtual Size: 4.8 MB (4798063 bytes)
+-	v2 Blob: `sha256:420890c9e918b6668faaedd9000e220190f2493b0693ee563ebd7b4cc754a57d`
+-	v2 Content-Length: 2.3 MB (2319870 bytes)
 
 ## `alpine:edge`
 
 ```console
-$ docker pull library/alpine@sha256:d589e6df461e153f9ff27314770db73eb19d060dffb1f57f912f89039781d8d5
+$ docker pull library/alpine@sha256:629213db18c2a25ed77ca8a70038263fafafe712a9292559fb853d48d3936c4e
 ```
 
--	Total Virtual Size: 4.8 MB (4806298 bytes)
--	Total v2 Content-Length: 2.3 MB (2322510 bytes)
+-	Total Virtual Size: 4.8 MB (4814978 bytes)
+-	Total v2 Content-Length: 2.3 MB (2322150 bytes)
 
 ### Layers (1)
 
-#### `49f47bc8d6c89779f43be234b1bd5d8d1c55a3ba40cbeef61af1d926be5bfbda`
+#### `6373691ec676f0e4770821b86cf0dc5668fefc081ebada16836baaa4f89238f9`
 
 ```dockerfile
-ADD file:791fd00b507db0182b7bd63d0a56eedc14d94561b6bec3eeb8f57f45e93e36ba in /
+ADD file:12cb7efda7fd6d577530cedd96f7eed2621a3b1a5fa959690bdea67784b64046 in /
 ```
 
--	Created: Wed, 02 Mar 2016 17:16:08 GMT
+-	Created: Fri, 01 Apr 2016 20:53:06 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4806298 bytes)
--	v2 Blob: `sha256:d6db411aa8ac18fb24aacdc90c38d0f84bde69bd444f9b71603f8b7113b8abbd`
--	v2 Content-Length: 2.3 MB (2322510 bytes)
+-	Virtual Size: 4.8 MB (4814978 bytes)
+-	v2 Blob: `sha256:6d6a6a7dae296854b09c2b3c16941416f1efe6dc89cbec1dade03f84233a783f`
+-	v2 Content-Length: 2.3 MB (2322150 bytes)
