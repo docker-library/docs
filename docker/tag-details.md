@@ -682,7 +682,6 @@ RUN apk add --no-cache \
 -	Virtual Size: 3.3 MB (3276820 bytes)
 -	v2 Blob: `sha256:e53d01f11e6b302de4df02eb0881480ac76d7f179426c37ea3be9a8ea2e624fe`
 -	v2 Content-Length: 1.2 MB (1246857 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:13:26 GMT
 
 #### `e081fd252168a7203a7bc1d5bad7f246bb41606ea49be600c0866f68e7787611`
 
@@ -921,7 +920,6 @@ RUN apk add --no-cache \
 -	Virtual Size: 3.3 MB (3276820 bytes)
 -	v2 Blob: `sha256:e53d01f11e6b302de4df02eb0881480ac76d7f179426c37ea3be9a8ea2e624fe`
 -	v2 Content-Length: 1.2 MB (1246857 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:13:26 GMT
 
 #### `e081fd252168a7203a7bc1d5bad7f246bb41606ea49be600c0866f68e7787611`
 
@@ -1160,7 +1158,6 @@ RUN apk add --no-cache \
 -	Virtual Size: 3.3 MB (3276820 bytes)
 -	v2 Blob: `sha256:e53d01f11e6b302de4df02eb0881480ac76d7f179426c37ea3be9a8ea2e624fe`
 -	v2 Content-Length: 1.2 MB (1246857 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:13:26 GMT
 
 #### `e081fd252168a7203a7bc1d5bad7f246bb41606ea49be600c0866f68e7787611`
 
@@ -1399,7 +1396,6 @@ RUN apk add --no-cache \
 -	Virtual Size: 3.3 MB (3276820 bytes)
 -	v2 Blob: `sha256:e53d01f11e6b302de4df02eb0881480ac76d7f179426c37ea3be9a8ea2e624fe`
 -	v2 Content-Length: 1.2 MB (1246857 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:13:26 GMT
 
 #### `e081fd252168a7203a7bc1d5bad7f246bb41606ea49be600c0866f68e7787611`
 
