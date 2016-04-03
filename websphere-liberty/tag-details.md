@@ -830,7 +830,6 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 ## `websphere-liberty:8.5.5.9-common`
 
@@ -1111,7 +1110,6 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 ## `websphere-liberty:webProfile6`
 
@@ -1392,7 +1390,6 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `dec17fcaf3b09b95816d0669481c6888ec52e8798c4cd82e899ca363e3968242`
 
@@ -1701,7 +1698,6 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `dec17fcaf3b09b95816d0669481c6888ec52e8798c4cd82e899ca363e3968242`
 
@@ -2010,7 +2006,6 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -2318,7 +2313,6 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -2626,7 +2620,6 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -2961,7 +2954,6 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -3296,7 +3288,6 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -3631,7 +3622,6 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -3966,7 +3956,6 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
