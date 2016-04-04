@@ -39,6 +39,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -52,6 +53,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -69,6 +71,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -89,6 +92,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -137,6 +141,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `03b59fec6f465a2d9b6137571fcc37567842a5ca44cd0cef3a5058f46b9eae6e`
 
@@ -150,6 +155,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26c7cd6289d4362e98786897cefde2f98205dda6af9e906b798fa79649fa9524`
 
@@ -180,6 +186,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726507 bytes)
 -	v2 Blob: `sha256:b9d4fb5116edb11064ca451d4b487561f5c8801367e118f923d1d6d593d35a69`
 -	v2 Content-Length: 58.2 MB (58174233 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:41 GMT
 
 #### `69e1a34501fd1d51df88ebafdd2a2c0b2d76ff532e2aeba4e98f76ba0d85746b`
 
@@ -193,6 +200,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cd440b3331ee2342eb4d1dd7addb434bf7cc2704b6c854f5fabd30d5461055d`
 
@@ -206,6 +214,7 @@ ENV REBAR_VERSION=2.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `99de4ba77bcca6033b2f044b645c1c6297b668a9606c5d9617cdcf219e843d8c`
 
@@ -230,6 +239,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202795 bytes)
 -	v2 Blob: `sha256:48113ea2a478f2f546113bdf592dd6e766255101de852a334e67790f156bd293`
 -	v2 Content-Length: 196.1 KB (196078 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:16 GMT
 
 #### `67323d80f829756566d9cbfff89b2578e6432a689e270e21bb5de7d7fad0c046`
 
@@ -243,6 +253,7 @@ ENV REBAR3_VERSION=3.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40f20e0f4589ac1c8591f107db05f1cc1dec010ce70cb12cdc1b905ad07ea1dd`
 
@@ -291,6 +302,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -304,6 +316,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -321,6 +334,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -341,6 +355,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -389,6 +404,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `03b59fec6f465a2d9b6137571fcc37567842a5ca44cd0cef3a5058f46b9eae6e`
 
@@ -402,6 +418,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26c7cd6289d4362e98786897cefde2f98205dda6af9e906b798fa79649fa9524`
 
@@ -432,6 +449,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726507 bytes)
 -	v2 Blob: `sha256:b9d4fb5116edb11064ca451d4b487561f5c8801367e118f923d1d6d593d35a69`
 -	v2 Content-Length: 58.2 MB (58174233 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:41 GMT
 
 #### `69e1a34501fd1d51df88ebafdd2a2c0b2d76ff532e2aeba4e98f76ba0d85746b`
 
@@ -445,6 +463,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cd440b3331ee2342eb4d1dd7addb434bf7cc2704b6c854f5fabd30d5461055d`
 
@@ -458,6 +477,7 @@ ENV REBAR_VERSION=2.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `99de4ba77bcca6033b2f044b645c1c6297b668a9606c5d9617cdcf219e843d8c`
 
@@ -482,6 +502,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202795 bytes)
 -	v2 Blob: `sha256:48113ea2a478f2f546113bdf592dd6e766255101de852a334e67790f156bd293`
 -	v2 Content-Length: 196.1 KB (196078 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:16 GMT
 
 #### `67323d80f829756566d9cbfff89b2578e6432a689e270e21bb5de7d7fad0c046`
 
@@ -495,6 +516,7 @@ ENV REBAR3_VERSION=3.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40f20e0f4589ac1c8591f107db05f1cc1dec010ce70cb12cdc1b905ad07ea1dd`
 
@@ -543,6 +565,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -556,6 +579,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -573,6 +597,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -593,6 +618,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -641,6 +667,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `03b59fec6f465a2d9b6137571fcc37567842a5ca44cd0cef3a5058f46b9eae6e`
 
@@ -654,6 +681,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26c7cd6289d4362e98786897cefde2f98205dda6af9e906b798fa79649fa9524`
 
@@ -684,6 +712,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726507 bytes)
 -	v2 Blob: `sha256:b9d4fb5116edb11064ca451d4b487561f5c8801367e118f923d1d6d593d35a69`
 -	v2 Content-Length: 58.2 MB (58174233 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:41 GMT
 
 #### `69e1a34501fd1d51df88ebafdd2a2c0b2d76ff532e2aeba4e98f76ba0d85746b`
 
@@ -697,6 +726,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cd440b3331ee2342eb4d1dd7addb434bf7cc2704b6c854f5fabd30d5461055d`
 
@@ -710,6 +740,7 @@ ENV REBAR_VERSION=2.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `99de4ba77bcca6033b2f044b645c1c6297b668a9606c5d9617cdcf219e843d8c`
 
@@ -734,6 +765,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202795 bytes)
 -	v2 Blob: `sha256:48113ea2a478f2f546113bdf592dd6e766255101de852a334e67790f156bd293`
 -	v2 Content-Length: 196.1 KB (196078 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:16 GMT
 
 #### `67323d80f829756566d9cbfff89b2578e6432a689e270e21bb5de7d7fad0c046`
 
@@ -747,6 +779,7 @@ ENV REBAR3_VERSION=3.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40f20e0f4589ac1c8591f107db05f1cc1dec010ce70cb12cdc1b905ad07ea1dd`
 
@@ -795,6 +828,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -808,6 +842,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fc0cd6a7f6cf9b440adff25a279c67aa755af316a2adb2cea10dd5717d356ef`
 
@@ -821,6 +856,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a08efcc01d6e7370c5f236e90321dceb4f0d18825fd51b23556ba3ff399ff4c`
 
@@ -867,6 +903,7 @@ RUN set -xe \
 -	Virtual Size: 162.9 MB (162892148 bytes)
 -	v2 Blob: `sha256:a88f6536d7698f49d52f699aefbf8069827660cc13c21337d23dd0abf1708786`
 -	v2 Content-Length: 66.3 MB (66265062 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:52 GMT
 
 #### `50edba596dcb9dcb70bb9fa336501b2877a82c346866b2b179bf11d63b3fd721`
 
@@ -880,6 +917,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `erlang:18-slim`
 
@@ -903,6 +941,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -916,6 +955,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fc0cd6a7f6cf9b440adff25a279c67aa755af316a2adb2cea10dd5717d356ef`
 
@@ -929,6 +969,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a08efcc01d6e7370c5f236e90321dceb4f0d18825fd51b23556ba3ff399ff4c`
 
@@ -975,6 +1016,7 @@ RUN set -xe \
 -	Virtual Size: 162.9 MB (162892148 bytes)
 -	v2 Blob: `sha256:a88f6536d7698f49d52f699aefbf8069827660cc13c21337d23dd0abf1708786`
 -	v2 Content-Length: 66.3 MB (66265062 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:52 GMT
 
 #### `50edba596dcb9dcb70bb9fa336501b2877a82c346866b2b179bf11d63b3fd721`
 
@@ -988,6 +1030,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `erlang:slim`
 
@@ -1011,6 +1054,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1024,6 +1068,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fc0cd6a7f6cf9b440adff25a279c67aa755af316a2adb2cea10dd5717d356ef`
 
@@ -1037,6 +1082,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a08efcc01d6e7370c5f236e90321dceb4f0d18825fd51b23556ba3ff399ff4c`
 
@@ -1083,6 +1129,7 @@ RUN set -xe \
 -	Virtual Size: 162.9 MB (162892148 bytes)
 -	v2 Blob: `sha256:a88f6536d7698f49d52f699aefbf8069827660cc13c21337d23dd0abf1708786`
 -	v2 Content-Length: 66.3 MB (66265062 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:52 GMT
 
 #### `50edba596dcb9dcb70bb9fa336501b2877a82c346866b2b179bf11d63b3fd721`
 
@@ -1096,6 +1143,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `erlang:18.3-onbuild`
 
@@ -1119,6 +1167,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1132,6 +1181,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1149,6 +1199,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -1169,6 +1220,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -1217,6 +1269,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `03b59fec6f465a2d9b6137571fcc37567842a5ca44cd0cef3a5058f46b9eae6e`
 
@@ -1230,6 +1283,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26c7cd6289d4362e98786897cefde2f98205dda6af9e906b798fa79649fa9524`
 
@@ -1260,6 +1314,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726507 bytes)
 -	v2 Blob: `sha256:b9d4fb5116edb11064ca451d4b487561f5c8801367e118f923d1d6d593d35a69`
 -	v2 Content-Length: 58.2 MB (58174233 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:41 GMT
 
 #### `69e1a34501fd1d51df88ebafdd2a2c0b2d76ff532e2aeba4e98f76ba0d85746b`
 
@@ -1273,6 +1328,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cd440b3331ee2342eb4d1dd7addb434bf7cc2704b6c854f5fabd30d5461055d`
 
@@ -1286,6 +1342,7 @@ ENV REBAR_VERSION=2.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `99de4ba77bcca6033b2f044b645c1c6297b668a9606c5d9617cdcf219e843d8c`
 
@@ -1310,6 +1367,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202795 bytes)
 -	v2 Blob: `sha256:48113ea2a478f2f546113bdf592dd6e766255101de852a334e67790f156bd293`
 -	v2 Content-Length: 196.1 KB (196078 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:16 GMT
 
 #### `67323d80f829756566d9cbfff89b2578e6432a689e270e21bb5de7d7fad0c046`
 
@@ -1323,6 +1381,7 @@ ENV REBAR3_VERSION=3.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40f20e0f4589ac1c8591f107db05f1cc1dec010ce70cb12cdc1b905ad07ea1dd`
 
@@ -1361,6 +1420,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:f1e6444bf0c667eca6f2f49a56cfbcdfc972b60ec1b9d472a288b93087582b5f`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:23:14 GMT
 
 #### `02db2a3734c57cb990a8d4295b5949c5effcffe97722a6e48b9b3752bc7c7758`
 
@@ -1374,6 +1434,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `293e180d0eefdde27cc185d3b38d3b02b41a28ef550b923f30b1fd1c1f5ccb61`
 
@@ -1387,6 +1448,7 @@ ONBUILD COPY rebar.config /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a413c5f6336b506092368ff7ac4e6eff66a9974cbdbaf2523ca1cadde81005fa`
 
@@ -1400,6 +1462,7 @@ ONBUILD RUN rebar3 update
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8eb377c6f901b428e706bfa2bf10e6a9fd39bae6bd5034196420ed366065be54`
 
@@ -1413,6 +1476,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `446a7c75cbccb6073124890bb0a085ed9087387d29dca8c51e5323516b885a3c`
 
@@ -1426,6 +1490,7 @@ ONBUILD RUN rebar3 release
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d69a3b947f94cc44cca9b624fff89b5647ba63718dfb19cae19783b172a7d1a2`
 
@@ -1439,6 +1504,7 @@ CMD ["rebar3" "shell"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `erlang:18-onbuild`
 
@@ -1462,6 +1528,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1475,6 +1542,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1492,6 +1560,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -1512,6 +1581,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -1560,6 +1630,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `03b59fec6f465a2d9b6137571fcc37567842a5ca44cd0cef3a5058f46b9eae6e`
 
@@ -1573,6 +1644,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26c7cd6289d4362e98786897cefde2f98205dda6af9e906b798fa79649fa9524`
 
@@ -1603,6 +1675,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726507 bytes)
 -	v2 Blob: `sha256:b9d4fb5116edb11064ca451d4b487561f5c8801367e118f923d1d6d593d35a69`
 -	v2 Content-Length: 58.2 MB (58174233 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:41 GMT
 
 #### `69e1a34501fd1d51df88ebafdd2a2c0b2d76ff532e2aeba4e98f76ba0d85746b`
 
@@ -1616,6 +1689,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cd440b3331ee2342eb4d1dd7addb434bf7cc2704b6c854f5fabd30d5461055d`
 
@@ -1629,6 +1703,7 @@ ENV REBAR_VERSION=2.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `99de4ba77bcca6033b2f044b645c1c6297b668a9606c5d9617cdcf219e843d8c`
 
@@ -1653,6 +1728,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202795 bytes)
 -	v2 Blob: `sha256:48113ea2a478f2f546113bdf592dd6e766255101de852a334e67790f156bd293`
 -	v2 Content-Length: 196.1 KB (196078 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:16 GMT
 
 #### `67323d80f829756566d9cbfff89b2578e6432a689e270e21bb5de7d7fad0c046`
 
@@ -1666,6 +1742,7 @@ ENV REBAR3_VERSION=3.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40f20e0f4589ac1c8591f107db05f1cc1dec010ce70cb12cdc1b905ad07ea1dd`
 
@@ -1704,6 +1781,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:f1e6444bf0c667eca6f2f49a56cfbcdfc972b60ec1b9d472a288b93087582b5f`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:23:14 GMT
 
 #### `02db2a3734c57cb990a8d4295b5949c5effcffe97722a6e48b9b3752bc7c7758`
 
@@ -1717,6 +1795,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `293e180d0eefdde27cc185d3b38d3b02b41a28ef550b923f30b1fd1c1f5ccb61`
 
@@ -1730,6 +1809,7 @@ ONBUILD COPY rebar.config /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a413c5f6336b506092368ff7ac4e6eff66a9974cbdbaf2523ca1cadde81005fa`
 
@@ -1743,6 +1823,7 @@ ONBUILD RUN rebar3 update
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8eb377c6f901b428e706bfa2bf10e6a9fd39bae6bd5034196420ed366065be54`
 
@@ -1756,6 +1837,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `446a7c75cbccb6073124890bb0a085ed9087387d29dca8c51e5323516b885a3c`
 
@@ -1769,6 +1851,7 @@ ONBUILD RUN rebar3 release
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d69a3b947f94cc44cca9b624fff89b5647ba63718dfb19cae19783b172a7d1a2`
 
@@ -1782,6 +1865,7 @@ CMD ["rebar3" "shell"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `erlang:onbuild`
 
@@ -1805,6 +1889,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1818,6 +1903,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1835,6 +1921,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -1855,6 +1942,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -1903,6 +1991,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `03b59fec6f465a2d9b6137571fcc37567842a5ca44cd0cef3a5058f46b9eae6e`
 
@@ -1916,6 +2005,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26c7cd6289d4362e98786897cefde2f98205dda6af9e906b798fa79649fa9524`
 
@@ -1946,6 +2036,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726507 bytes)
 -	v2 Blob: `sha256:b9d4fb5116edb11064ca451d4b487561f5c8801367e118f923d1d6d593d35a69`
 -	v2 Content-Length: 58.2 MB (58174233 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:41 GMT
 
 #### `69e1a34501fd1d51df88ebafdd2a2c0b2d76ff532e2aeba4e98f76ba0d85746b`
 
@@ -1959,6 +2050,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cd440b3331ee2342eb4d1dd7addb434bf7cc2704b6c854f5fabd30d5461055d`
 
@@ -1972,6 +2064,7 @@ ENV REBAR_VERSION=2.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `99de4ba77bcca6033b2f044b645c1c6297b668a9606c5d9617cdcf219e843d8c`
 
@@ -1996,6 +2089,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202795 bytes)
 -	v2 Blob: `sha256:48113ea2a478f2f546113bdf592dd6e766255101de852a334e67790f156bd293`
 -	v2 Content-Length: 196.1 KB (196078 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:21:16 GMT
 
 #### `67323d80f829756566d9cbfff89b2578e6432a689e270e21bb5de7d7fad0c046`
 
@@ -2009,6 +2103,7 @@ ENV REBAR3_VERSION=3.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40f20e0f4589ac1c8591f107db05f1cc1dec010ce70cb12cdc1b905ad07ea1dd`
 
@@ -2047,6 +2142,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:f1e6444bf0c667eca6f2f49a56cfbcdfc972b60ec1b9d472a288b93087582b5f`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:23:14 GMT
 
 #### `02db2a3734c57cb990a8d4295b5949c5effcffe97722a6e48b9b3752bc7c7758`
 
@@ -2060,6 +2156,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `293e180d0eefdde27cc185d3b38d3b02b41a28ef550b923f30b1fd1c1f5ccb61`
 
@@ -2073,6 +2170,7 @@ ONBUILD COPY rebar.config /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a413c5f6336b506092368ff7ac4e6eff66a9974cbdbaf2523ca1cadde81005fa`
 
@@ -2086,6 +2184,7 @@ ONBUILD RUN rebar3 update
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8eb377c6f901b428e706bfa2bf10e6a9fd39bae6bd5034196420ed366065be54`
 
@@ -2099,6 +2198,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `446a7c75cbccb6073124890bb0a085ed9087387d29dca8c51e5323516b885a3c`
 
@@ -2112,6 +2212,7 @@ ONBUILD RUN rebar3 release
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d69a3b947f94cc44cca9b624fff89b5647ba63718dfb19cae19783b172a7d1a2`
 
@@ -2125,6 +2226,7 @@ CMD ["rebar3" "shell"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `erlang:17.5.6.8`
 
@@ -2148,6 +2250,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2161,6 +2264,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2178,6 +2282,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2198,6 +2303,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -2246,6 +2352,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `edecc377a21619ae934555b0e14e931810e102410972e603beb2afeef5b8f9a4`
 
@@ -2259,6 +2366,7 @@ ENV OTP_VERSION=17.5.6.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `df455afb8e8ff7ec1384cfdb23c8e641c17d06daa4e22aacff073af24abd687d`
 
@@ -2288,6 +2396,7 @@ RUN set -xe \
 -	Virtual Size: 136.3 MB (136273753 bytes)
 -	v2 Blob: `sha256:0a7fc708e01883f289d2d00090322c0343a3ed9be1f53ebbb3513ef68889f2d0`
 -	v2 Content-Length: 56.9 MB (56874738 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:23:49 GMT
 
 #### `41f75488a30eaab6525d46085e5f2e1b72c4bcfad89b0dee170548ef16d0efe3`
 
@@ -2301,6 +2410,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `erlang:17.5`
 
@@ -2324,6 +2434,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2337,6 +2448,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2354,6 +2466,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2374,6 +2487,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -2422,6 +2536,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `edecc377a21619ae934555b0e14e931810e102410972e603beb2afeef5b8f9a4`
 
@@ -2435,6 +2550,7 @@ ENV OTP_VERSION=17.5.6.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `df455afb8e8ff7ec1384cfdb23c8e641c17d06daa4e22aacff073af24abd687d`
 
@@ -2464,6 +2580,7 @@ RUN set -xe \
 -	Virtual Size: 136.3 MB (136273753 bytes)
 -	v2 Blob: `sha256:0a7fc708e01883f289d2d00090322c0343a3ed9be1f53ebbb3513ef68889f2d0`
 -	v2 Content-Length: 56.9 MB (56874738 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:23:49 GMT
 
 #### `41f75488a30eaab6525d46085e5f2e1b72c4bcfad89b0dee170548ef16d0efe3`
 
@@ -2477,6 +2594,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `erlang:17`
 
@@ -2500,6 +2618,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2513,6 +2632,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2530,6 +2650,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2550,6 +2671,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -2598,6 +2720,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `edecc377a21619ae934555b0e14e931810e102410972e603beb2afeef5b8f9a4`
 
@@ -2611,6 +2734,7 @@ ENV OTP_VERSION=17.5.6.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `df455afb8e8ff7ec1384cfdb23c8e641c17d06daa4e22aacff073af24abd687d`
 
@@ -2640,6 +2764,7 @@ RUN set -xe \
 -	Virtual Size: 136.3 MB (136273753 bytes)
 -	v2 Blob: `sha256:0a7fc708e01883f289d2d00090322c0343a3ed9be1f53ebbb3513ef68889f2d0`
 -	v2 Content-Length: 56.9 MB (56874738 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:23:49 GMT
 
 #### `41f75488a30eaab6525d46085e5f2e1b72c4bcfad89b0dee170548ef16d0efe3`
 
@@ -2653,6 +2778,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `erlang:17.5-slim`
 
@@ -2676,6 +2802,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2689,6 +2816,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `68557b9ece393f8628145ae8d914b3942262f89c59ba01c40554014200f066c3`
 
@@ -2702,6 +2830,7 @@ ENV OTP_VERSION=17.5.6.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7d98e7e7baffca16e8d4becde0f73f2b733276995a9f79f403fae9deb85f52a`
 
@@ -2749,6 +2878,7 @@ RUN set -xe \
 -	Virtual Size: 159.4 MB (159439836 bytes)
 -	v2 Blob: `sha256:52fab0f3a190e5fccf72ef344f7ad806f424b12b16655a5aaed52adbb8a7cf9b`
 -	v2 Content-Length: 65.0 MB (64970064 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:01:35 GMT
 
 #### `58fdde8d3f5ed3c3b6fee76a266c2a81d26a2904c1c21d4994757c69f97affbb`
 
@@ -2762,6 +2892,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `erlang:17-slim`
 
@@ -2785,6 +2916,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2798,6 +2930,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `68557b9ece393f8628145ae8d914b3942262f89c59ba01c40554014200f066c3`
 
@@ -2811,6 +2944,7 @@ ENV OTP_VERSION=17.5.6.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7d98e7e7baffca16e8d4becde0f73f2b733276995a9f79f403fae9deb85f52a`
 
@@ -2858,6 +2992,7 @@ RUN set -xe \
 -	Virtual Size: 159.4 MB (159439836 bytes)
 -	v2 Blob: `sha256:52fab0f3a190e5fccf72ef344f7ad806f424b12b16655a5aaed52adbb8a7cf9b`
 -	v2 Content-Length: 65.0 MB (64970064 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:01:35 GMT
 
 #### `58fdde8d3f5ed3c3b6fee76a266c2a81d26a2904c1c21d4994757c69f97affbb`
 
@@ -2871,3 +3006,4 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

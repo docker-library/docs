@@ -269,6 +269,7 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111372500 bytes)
 -	v2 Blob: `sha256:8ad062c2fee17440fe708de1581bb7ef526a65419b6c60fd068213a21785c4ac`
 -	v2 Content-Length: 32.1 MB (32129387 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:57:29 GMT
 
 #### `7135154ef9b403bebf060ce3dbe633951793691d32fdf06d5efbaae4e0d8d820`
 
@@ -603,6 +604,7 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111372500 bytes)
 -	v2 Blob: `sha256:8ad062c2fee17440fe708de1581bb7ef526a65419b6c60fd068213a21785c4ac`
 -	v2 Content-Length: 32.1 MB (32129387 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:57:29 GMT
 
 #### `7135154ef9b403bebf060ce3dbe633951793691d32fdf06d5efbaae4e0d8d820`
 
@@ -937,6 +939,7 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111372500 bytes)
 -	v2 Blob: `sha256:8ad062c2fee17440fe708de1581bb7ef526a65419b6c60fd068213a21785c4ac`
 -	v2 Content-Length: 32.1 MB (32129387 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:57:29 GMT
 
 #### `7135154ef9b403bebf060ce3dbe633951793691d32fdf06d5efbaae4e0d8d820`
 
@@ -1049,6 +1052,7 @@ RUN bundle config --global frozen 1
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:028dcae979434fd0d222e9bdf30fe50952d4a477b505ae593388b97dfe75c7b1`
 -	v2 Content-Length: 186.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:59:04 GMT
 
 #### `8d4422185a4e2bd033fc07db8db002832c03a53406a16e5a3c6b8b53fb5cff51`
 
@@ -1368,6 +1372,7 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111372500 bytes)
 -	v2 Blob: `sha256:8ad062c2fee17440fe708de1581bb7ef526a65419b6c60fd068213a21785c4ac`
 -	v2 Content-Length: 32.1 MB (32129387 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:57:29 GMT
 
 #### `7135154ef9b403bebf060ce3dbe633951793691d32fdf06d5efbaae4e0d8d820`
 
@@ -1480,6 +1485,7 @@ RUN bundle config --global frozen 1
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:028dcae979434fd0d222e9bdf30fe50952d4a477b505ae593388b97dfe75c7b1`
 -	v2 Content-Length: 186.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:59:04 GMT
 
 #### `8d4422185a4e2bd033fc07db8db002832c03a53406a16e5a3c6b8b53fb5cff51`
 
@@ -1644,6 +1650,7 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `3824940005cea264eefd9b0aa47d64caa5ffd4dd26123a5c8b329c267492b4bb`
 
@@ -1924,6 +1931,7 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `3824940005cea264eefd9b0aa47d64caa5ffd4dd26123a5c8b329c267492b4bb`
 
@@ -2893,6 +2901,7 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111388089 bytes)
 -	v2 Blob: `sha256:cbda56dbc3dfb3e3de054cce5a2cb979d59101d0aa4d41b7f2ba3b63dc4018b9`
 -	v2 Content-Length: 32.6 MB (32638648 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 19:00:06 GMT
 
 #### `f1316f899084d1005149695dd42d6554eb1d7b0f4e2e4696c6ae71eeda661953`
 
@@ -2977,6 +2986,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7e62db0511eb73a30f1c82c0703260c54c796e68b562187935a86ee207b6306e`
 -	v2 Content-Length: 160.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:59:35 GMT
 
 #### `1f2870126096b1db6bc5df4218c64b3c9ff922fd3569814d470daeaff2382d97`
 
@@ -3226,6 +3236,7 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111388089 bytes)
 -	v2 Blob: `sha256:cbda56dbc3dfb3e3de054cce5a2cb979d59101d0aa4d41b7f2ba3b63dc4018b9`
 -	v2 Content-Length: 32.6 MB (32638648 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 19:00:06 GMT
 
 #### `f1316f899084d1005149695dd42d6554eb1d7b0f4e2e4696c6ae71eeda661953`
 
@@ -3310,6 +3321,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7e62db0511eb73a30f1c82c0703260c54c796e68b562187935a86ee207b6306e`
 -	v2 Content-Length: 160.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:59:35 GMT
 
 #### `1f2870126096b1db6bc5df4218c64b3c9ff922fd3569814d470daeaff2382d97`
 
@@ -3559,6 +3571,7 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111388089 bytes)
 -	v2 Blob: `sha256:cbda56dbc3dfb3e3de054cce5a2cb979d59101d0aa4d41b7f2ba3b63dc4018b9`
 -	v2 Content-Length: 32.6 MB (32638648 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 19:00:06 GMT
 
 #### `f1316f899084d1005149695dd42d6554eb1d7b0f4e2e4696c6ae71eeda661953`
 
@@ -3643,6 +3656,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7e62db0511eb73a30f1c82c0703260c54c796e68b562187935a86ee207b6306e`
 -	v2 Content-Length: 160.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:59:35 GMT
 
 #### `1f2870126096b1db6bc5df4218c64b3c9ff922fd3569814d470daeaff2382d97`
 
@@ -3670,6 +3684,7 @@ RUN bundle config --global frozen 1
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:bceb7237c30c27d2fc21a6699dba072651ecc514e6a369f16807a97fa3275d4d`
 -	v2 Content-Length: 186.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 19:00:46 GMT
 
 #### `dbe822a7c9a5b8659f769224824edd29169408fae0c5aedc1f1c20eb4c2cb063`
 
@@ -3989,6 +4004,7 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111388089 bytes)
 -	v2 Blob: `sha256:cbda56dbc3dfb3e3de054cce5a2cb979d59101d0aa4d41b7f2ba3b63dc4018b9`
 -	v2 Content-Length: 32.6 MB (32638648 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 19:00:06 GMT
 
 #### `f1316f899084d1005149695dd42d6554eb1d7b0f4e2e4696c6ae71eeda661953`
 
@@ -4073,6 +4089,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7e62db0511eb73a30f1c82c0703260c54c796e68b562187935a86ee207b6306e`
 -	v2 Content-Length: 160.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:59:35 GMT
 
 #### `1f2870126096b1db6bc5df4218c64b3c9ff922fd3569814d470daeaff2382d97`
 
@@ -4100,6 +4117,7 @@ RUN bundle config --global frozen 1
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:bceb7237c30c27d2fc21a6699dba072651ecc514e6a369f16807a97fa3275d4d`
 -	v2 Content-Length: 186.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 19:00:46 GMT
 
 #### `dbe822a7c9a5b8659f769224824edd29169408fae0c5aedc1f1c20eb4c2cb063`
 
@@ -4264,6 +4282,7 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -4364,6 +4383,7 @@ RUN set -ex \
 -	Virtual Size: 112.2 MB (112194380 bytes)
 -	v2 Blob: `sha256:f9bc2842207a7dea86225bf6dfbac2114f554abf2e1418e15b998cff53813286`
 -	v2 Content-Length: 32.8 MB (32835750 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:39:14 GMT
 
 #### `acf137f0e41844e00f70d44b14aa58c0facc5fa8ce31fa66a86d2b4adf5cf835`
 
@@ -4391,6 +4411,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -4542,6 +4563,7 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -4642,6 +4664,7 @@ RUN set -ex \
 -	Virtual Size: 112.2 MB (112194380 bytes)
 -	v2 Blob: `sha256:f9bc2842207a7dea86225bf6dfbac2114f554abf2e1418e15b998cff53813286`
 -	v2 Content-Length: 32.8 MB (32835750 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:39:14 GMT
 
 #### `acf137f0e41844e00f70d44b14aa58c0facc5fa8ce31fa66a86d2b4adf5cf835`
 
@@ -4669,6 +4692,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -4907,6 +4931,7 @@ RUN set -ex \
 -	Virtual Size: 112.0 MB (112005341 bytes)
 -	v2 Blob: `sha256:b2609e3bbc33a986307ffd35e262b1bd7e4daec803934dd7266a1208caec2d18`
 -	v2 Content-Length: 33.5 MB (33514683 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:27:34 GMT
 
 #### `df0e218b4e48b00ec0b7d6bcaa650e04d60876f325bc373f2f9e9efb46d8df5a`
 
@@ -4934,6 +4959,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:c633a04a18eed97d4f9b6a823289268c4469b212aec296840daa65a6073107f3`
 -	v2 Content-Length: 522.8 KB (522774 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:27:13 GMT
 
 #### `4fa9e04c7991651f409d513a030ad05d5264bbb910e83f88075a6ea4baa84106`
 
@@ -5172,6 +5198,7 @@ RUN set -ex \
 -	Virtual Size: 112.0 MB (112005341 bytes)
 -	v2 Blob: `sha256:b2609e3bbc33a986307ffd35e262b1bd7e4daec803934dd7266a1208caec2d18`
 -	v2 Content-Length: 33.5 MB (33514683 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:27:34 GMT
 
 #### `df0e218b4e48b00ec0b7d6bcaa650e04d60876f325bc373f2f9e9efb46d8df5a`
 
@@ -5199,6 +5226,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:c633a04a18eed97d4f9b6a823289268c4469b212aec296840daa65a6073107f3`
 -	v2 Content-Length: 522.8 KB (522774 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:27:13 GMT
 
 #### `4fa9e04c7991651f409d513a030ad05d5264bbb910e83f88075a6ea4baa84106`
 
@@ -6972,6 +7000,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:66bb0eb6ebf7995d492f151308650d3d1167fde8ac84e510e090dbfcb85e71b6`
 -	v2 Content-Length: 125.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:13 GMT
 
 #### `42f20359050b6f2d8d5163da46b6fb50c7536d3a01fa800232113a1cdd46a34e`
 
@@ -7404,6 +7433,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:66bb0eb6ebf7995d492f151308650d3d1167fde8ac84e510e090dbfcb85e71b6`
 -	v2 Content-Length: 125.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:13 GMT
 
 #### `42f20359050b6f2d8d5163da46b6fb50c7536d3a01fa800232113a1cdd46a34e`
 
@@ -7836,6 +7866,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:66bb0eb6ebf7995d492f151308650d3d1167fde8ac84e510e090dbfcb85e71b6`
 -	v2 Content-Length: 125.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:13 GMT
 
 #### `42f20359050b6f2d8d5163da46b6fb50c7536d3a01fa800232113a1cdd46a34e`
 
@@ -8268,6 +8299,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:66bb0eb6ebf7995d492f151308650d3d1167fde8ac84e510e090dbfcb85e71b6`
 -	v2 Content-Length: 125.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:13 GMT
 
 #### `42f20359050b6f2d8d5163da46b6fb50c7536d3a01fa800232113a1cdd46a34e`
 
@@ -8418,6 +8450,7 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `29ba3bda43688c6ed91058eec7a709b69f758ace68236113a26f9b6e69b4eb1d`
 
@@ -8603,6 +8636,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1106861be02a96e7288f1a085a86418eb9b599ff54b072d863632958d80b237a`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:52:43 GMT
 
 #### `41bb4e536f92d478d84f3ce43a499820f7a2afd81ee3a35bfbcd000a71af5cf4`
 
@@ -8697,6 +8731,7 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `29ba3bda43688c6ed91058eec7a709b69f758ace68236113a26f9b6e69b4eb1d`
 
@@ -8882,6 +8917,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1106861be02a96e7288f1a085a86418eb9b599ff54b072d863632958d80b237a`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:52:43 GMT
 
 #### `41bb4e536f92d478d84f3ce43a499820f7a2afd81ee3a35bfbcd000a71af5cf4`
 
@@ -8976,6 +9012,7 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `29ba3bda43688c6ed91058eec7a709b69f758ace68236113a26f9b6e69b4eb1d`
 
@@ -9161,6 +9198,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1106861be02a96e7288f1a085a86418eb9b599ff54b072d863632958d80b237a`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:52:43 GMT
 
 #### `41bb4e536f92d478d84f3ce43a499820f7a2afd81ee3a35bfbcd000a71af5cf4`
 
@@ -9255,6 +9293,7 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `29ba3bda43688c6ed91058eec7a709b69f758ace68236113a26f9b6e69b4eb1d`
 
@@ -9440,6 +9479,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1106861be02a96e7288f1a085a86418eb9b599ff54b072d863632958d80b237a`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:52:43 GMT
 
 #### `41bb4e536f92d478d84f3ce43a499820f7a2afd81ee3a35bfbcd000a71af5cf4`
 
@@ -9621,6 +9661,7 @@ RUN set -ex \
 -	Virtual Size: 119.7 MB (119716570 bytes)
 -	v2 Blob: `sha256:937a1d18314fd3ec5f6a1b1ed8615891814f7be04262c3d6817be75155a375a7`
 -	v2 Content-Length: 35.6 MB (35554451 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:29:25 GMT
 
 #### `3480a5d24026f130f4e9c1892254e1ed3b45a3a7e51ce1c3efea73c708378636`
 
@@ -9648,6 +9689,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:d56bf94a485c285c673f358cd78b9ee42a0bf7aecd1db716ce6ce51380e53c92`
 -	v2 Content-Length: 522.8 KB (522781 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:28:58 GMT
 
 #### `445c43243974bb56c36c63ad54df5aef647e11c9d2b9e83449693669c68e00da`
 
@@ -9886,6 +9928,7 @@ RUN set -ex \
 -	Virtual Size: 119.7 MB (119716570 bytes)
 -	v2 Blob: `sha256:937a1d18314fd3ec5f6a1b1ed8615891814f7be04262c3d6817be75155a375a7`
 -	v2 Content-Length: 35.6 MB (35554451 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:29:25 GMT
 
 #### `3480a5d24026f130f4e9c1892254e1ed3b45a3a7e51ce1c3efea73c708378636`
 
@@ -9913,6 +9956,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:d56bf94a485c285c673f358cd78b9ee42a0bf7aecd1db716ce6ce51380e53c92`
 -	v2 Content-Length: 522.8 KB (522781 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:28:58 GMT
 
 #### `445c43243974bb56c36c63ad54df5aef647e11c9d2b9e83449693669c68e00da`
 
@@ -10151,6 +10195,7 @@ RUN set -ex \
 -	Virtual Size: 119.7 MB (119716570 bytes)
 -	v2 Blob: `sha256:937a1d18314fd3ec5f6a1b1ed8615891814f7be04262c3d6817be75155a375a7`
 -	v2 Content-Length: 35.6 MB (35554451 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:29:25 GMT
 
 #### `3480a5d24026f130f4e9c1892254e1ed3b45a3a7e51ce1c3efea73c708378636`
 
@@ -10178,6 +10223,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:d56bf94a485c285c673f358cd78b9ee42a0bf7aecd1db716ce6ce51380e53c92`
 -	v2 Content-Length: 522.8 KB (522781 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:28:58 GMT
 
 #### `445c43243974bb56c36c63ad54df5aef647e11c9d2b9e83449693669c68e00da`
 
@@ -10416,6 +10462,7 @@ RUN set -ex \
 -	Virtual Size: 119.7 MB (119716570 bytes)
 -	v2 Blob: `sha256:937a1d18314fd3ec5f6a1b1ed8615891814f7be04262c3d6817be75155a375a7`
 -	v2 Content-Length: 35.6 MB (35554451 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:29:25 GMT
 
 #### `3480a5d24026f130f4e9c1892254e1ed3b45a3a7e51ce1c3efea73c708378636`
 
@@ -10443,6 +10490,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:d56bf94a485c285c673f358cd78b9ee42a0bf7aecd1db716ce6ce51380e53c92`
 -	v2 Content-Length: 522.8 KB (522781 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:28:58 GMT
 
 #### `445c43243974bb56c36c63ad54df5aef647e11c9d2b9e83449693669c68e00da`
 

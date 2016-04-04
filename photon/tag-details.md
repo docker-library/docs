@@ -28,6 +28,7 @@ MAINTAINER Fabio Rapposelli <fabio@vmware.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7d41096d06c78235a35f549572d46daf906658e9e0da6e1df73e5211c6187e3`
 
@@ -55,6 +56,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `photon:latest`
 
@@ -78,6 +80,7 @@ MAINTAINER Fabio Rapposelli <fabio@vmware.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7d41096d06c78235a35f549572d46daf906658e9e0da6e1df73e5211c6187e3`
 
@@ -105,6 +108,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `photon:1.0TP2`
 
@@ -128,6 +132,7 @@ MAINTAINER Fabio Rapposelli <fabio@vmware.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `590b61c4886f0443b9d1ebacf5949e365735cc391beb4fb41a055aa450a79883`
 
@@ -141,6 +146,7 @@ ADD file:539115675b3a1fb0452ddc0a7d4e711421797ba0ae343285835b58888a7a3163 in /
 -	Virtual Size: 106.8 MB (106752115 bytes)
 -	v2 Blob: `sha256:fad227bc1ed4464660f8c2e5e897c5ab44192cce71722aaba5e53a128446cbdc`
 -	v2 Content-Length: 39.1 MB (39116340 bytes)
+-	v2 Last-Modified: Fri, 15 Jan 2016 17:08:24 GMT
 
 #### `6ed98056624c9404e6c71c6d7d1fcaed9b5222a9f062e9510d3dfb99c7b128ae`
 
@@ -154,3 +160,4 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

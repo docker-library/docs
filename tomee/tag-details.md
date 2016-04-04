@@ -284,6 +284,7 @@ RUN set -x \
 -	Virtual Size: 41.4 MB (41362178 bytes)
 -	v2 Blob: `sha256:24a8e91feb1291a842d757def1a7848140a72eab5d5adaf562aecbbaa6ed3b20`
 -	v2 Content-Length: 34.6 MB (34585589 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:44:15 GMT
 
 #### `91f31d0a845bd0f28dcd4ec9d9e64f0a43793eadefd95ecc9220407309aa324b`
 
@@ -575,6 +576,7 @@ RUN set -x \
 -	Virtual Size: 60.2 MB (60167790 bytes)
 -	v2 Blob: `sha256:f70e1defc47fbf30c3049800ed30bc74d38d501e3bf878e19bf0956ead56d637`
 -	v2 Content-Length: 51.5 MB (51526170 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:45:11 GMT
 
 #### `f20816d5c274ab744d8d207c63cce21c15f92ae64f14e71a08da90ce3c63e77f`
 
@@ -1158,6 +1160,7 @@ RUN set -x \
 -	Virtual Size: 37.6 MB (37573546 bytes)
 -	v2 Blob: `sha256:d4eda5277d2f6ceba656d5c28b0ba7c6c04f1f9774de1990f8dafe1c0fba0de1`
 -	v2 Content-Length: 31.1 MB (31141851 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:45:47 GMT
 
 #### `c21e00026df0a6e470c2cadf1027d15617319996cefeadabd2282f137e6440a1`
 
@@ -1209,6 +1212,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1240,6 +1244,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1499,6 +1504,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1530,6 +1536,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1737,6 +1744,7 @@ RUN set -x \
 -	Virtual Size: 60.2 MB (60167790 bytes)
 -	v2 Blob: `sha256:ee832a57e62f5e660882a1c2a519d1a23807488e95efe7691d26cd167d479eb4`
 -	v2 Content-Length: 51.5 MB (51526184 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:47:13 GMT
 
 #### `eac59f609b94c3e6ef421f15f817f80b3eaa5a3733430535bb468ed3912bffc7`
 
@@ -1788,6 +1796,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1819,6 +1828,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2026,6 +2036,7 @@ RUN set -x \
 -	Virtual Size: 51.9 MB (51857029 bytes)
 -	v2 Blob: `sha256:b1b2827c93b203653f4ecf86fd5ba7e07bcbb6077614f1264dab22abf960bcf8`
 -	v2 Content-Length: 43.9 MB (43870920 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:47:34 GMT
 
 #### `1e3dc53e1621f12b6959a3463d5debf4efb39002e0580bb4c737df00d0f6f5e5`
 
@@ -2077,6 +2088,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2108,6 +2120,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2367,6 +2380,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2398,6 +2412,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2429,6 +2444,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2538,6 +2554,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2698,6 +2715,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2729,6 +2747,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2760,6 +2779,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2869,6 +2889,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3029,6 +3050,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3060,6 +3082,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3091,6 +3114,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -3200,6 +3224,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3308,6 +3333,7 @@ RUN set -x \
 -	Virtual Size: 51.9 MB (51857029 bytes)
 -	v2 Blob: `sha256:6a9382709aa9f9b8f7f5c9f2822794cea5d4b7db59dac2f949264568755a29e0`
 -	v2 Content-Length: 43.9 MB (43870939 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:49:44 GMT
 
 #### `85596ba1fd94f745d0726d7c46d6fd706fd548812c0e43594d776614fad9bda4`
 
@@ -3359,6 +3385,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3390,6 +3417,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3421,6 +3449,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -3530,6 +3559,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3690,6 +3720,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3721,6 +3752,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3980,6 +4012,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4011,6 +4044,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4218,6 +4252,7 @@ RUN set -x \
 -	Virtual Size: 58.0 MB (57952518 bytes)
 -	v2 Blob: `sha256:5df4cd70fa8200e81b5732a4451442b67680119fa104cd6b2041b461adad4ef1`
 -	v2 Content-Length: 49.9 MB (49893864 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:51:09 GMT
 
 #### `e4e3089d594002c2600d99ec6056a5fa9e5977619a84dafcc8415e34e0ba9546`
 
@@ -4269,6 +4304,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4300,6 +4336,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4507,6 +4544,7 @@ RUN set -x \
 -	Virtual Size: 41.0 MB (41020366 bytes)
 -	v2 Blob: `sha256:98fd01f6b195bf667922d03cba30fb748d181af0b7cf15a09e9ff774db6a3f05`
 -	v2 Content-Length: 34.9 MB (34944417 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:51:26 GMT
 
 #### `d0e5fee1330b24139cdb5d2cf637c566467e66b6cc9655514da52820d52b4059`
 
@@ -4558,6 +4596,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4589,6 +4628,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4620,6 +4660,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -4729,6 +4770,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -4837,6 +4879,7 @@ RUN set -x \
 -	Virtual Size: 65.1 MB (65055523 bytes)
 -	v2 Blob: `sha256:c7cfee16e5f08eb11019087c5d15f6d06ce30aebe51d7c9d15120e683c919fe3`
 -	v2 Content-Length: 56.5 MB (56486585 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:51:45 GMT
 
 #### `ae149e12ee6ba1e1b7d8f830aec1ac4b0dcc5fba0a54135c8be24c710ef2e85a`
 
@@ -4888,6 +4931,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4919,6 +4963,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4950,6 +4995,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -5059,6 +5105,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5219,6 +5266,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5250,6 +5298,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -5281,6 +5330,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -5390,6 +5440,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5550,6 +5601,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5581,6 +5633,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -5612,6 +5665,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -5721,6 +5775,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 

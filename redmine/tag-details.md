@@ -47,6 +47,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -353,6 +354,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -388,6 +390,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -520,6 +523,7 @@ RUN buildDeps='\
 -	Virtual Size: 93.7 MB (93716254 bytes)
 -	v2 Blob: `sha256:c76d59c074cb50d46ecac3d5b003d7cde5e241bd4dfe69af85ab228543e6e3ab`
 -	v2 Content-Length: 42.6 MB (42626850 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:37:48 GMT
 
 #### `e73609e8e4873538657a5705fe412bc15b778669fdf1664b88c227b214f85d7b`
 
@@ -547,6 +551,7 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:3258c940be2455abe9c25b47e4c321a194236b1b3097577a05ee18d6b608f006`
 -	v2 Content-Length: 1.1 KB (1066 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:49:41 GMT
 
 #### `9503c5c9a1057c8d02c214e46e68dcc543d9fee4f08a039048080f5951ecf05c`
 
@@ -612,6 +617,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -918,6 +924,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -953,6 +960,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -1085,6 +1093,7 @@ RUN buildDeps='\
 -	Virtual Size: 93.7 MB (93716254 bytes)
 -	v2 Blob: `sha256:c76d59c074cb50d46ecac3d5b003d7cde5e241bd4dfe69af85ab228543e6e3ab`
 -	v2 Content-Length: 42.6 MB (42626850 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:37:48 GMT
 
 #### `e73609e8e4873538657a5705fe412bc15b778669fdf1664b88c227b214f85d7b`
 
@@ -1112,6 +1121,7 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:3258c940be2455abe9c25b47e4c321a194236b1b3097577a05ee18d6b608f006`
 -	v2 Content-Length: 1.1 KB (1066 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:49:41 GMT
 
 #### `9503c5c9a1057c8d02c214e46e68dcc543d9fee4f08a039048080f5951ecf05c`
 
@@ -1177,6 +1187,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1483,6 +1494,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -1518,6 +1530,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -1650,6 +1663,7 @@ RUN buildDeps='\
 -	Virtual Size: 93.7 MB (93716254 bytes)
 -	v2 Blob: `sha256:c76d59c074cb50d46ecac3d5b003d7cde5e241bd4dfe69af85ab228543e6e3ab`
 -	v2 Content-Length: 42.6 MB (42626850 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:37:48 GMT
 
 #### `e73609e8e4873538657a5705fe412bc15b778669fdf1664b88c227b214f85d7b`
 
@@ -1677,6 +1691,7 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:3258c940be2455abe9c25b47e4c321a194236b1b3097577a05ee18d6b608f006`
 -	v2 Content-Length: 1.1 KB (1066 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:49:41 GMT
 
 #### `9503c5c9a1057c8d02c214e46e68dcc543d9fee4f08a039048080f5951ecf05c`
 
@@ -1742,6 +1757,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2048,6 +2064,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -2083,6 +2100,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -2215,6 +2233,7 @@ RUN buildDeps='\
 -	Virtual Size: 93.7 MB (93716254 bytes)
 -	v2 Blob: `sha256:c76d59c074cb50d46ecac3d5b003d7cde5e241bd4dfe69af85ab228543e6e3ab`
 -	v2 Content-Length: 42.6 MB (42626850 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:37:48 GMT
 
 #### `e73609e8e4873538657a5705fe412bc15b778669fdf1664b88c227b214f85d7b`
 
@@ -2242,6 +2261,7 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:3258c940be2455abe9c25b47e4c321a194236b1b3097577a05ee18d6b608f006`
 -	v2 Content-Length: 1.1 KB (1066 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:49:41 GMT
 
 #### `9503c5c9a1057c8d02c214e46e68dcc543d9fee4f08a039048080f5951ecf05c`
 
@@ -2333,6 +2353,7 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:3d1a1a0ddef61ea3a47a769bbcfd61c3ac8266deb5e5797111a3659d43410d59`
 -	v2 Content-Length: 10.2 MB (10159401 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:39:45 GMT
 
 #### `3d3e60082aea07c362acc35dd1e31365d86fbebc9b7cd0f6c94259f84c4e913e`
 
@@ -2370,6 +2391,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2676,6 +2698,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -2711,6 +2734,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -2843,6 +2867,7 @@ RUN buildDeps='\
 -	Virtual Size: 93.7 MB (93716254 bytes)
 -	v2 Blob: `sha256:c76d59c074cb50d46ecac3d5b003d7cde5e241bd4dfe69af85ab228543e6e3ab`
 -	v2 Content-Length: 42.6 MB (42626850 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:37:48 GMT
 
 #### `e73609e8e4873538657a5705fe412bc15b778669fdf1664b88c227b214f85d7b`
 
@@ -2870,6 +2895,7 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:3258c940be2455abe9c25b47e4c321a194236b1b3097577a05ee18d6b608f006`
 -	v2 Content-Length: 1.1 KB (1066 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:49:41 GMT
 
 #### `9503c5c9a1057c8d02c214e46e68dcc543d9fee4f08a039048080f5951ecf05c`
 
@@ -2961,6 +2987,7 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:3d1a1a0ddef61ea3a47a769bbcfd61c3ac8266deb5e5797111a3659d43410d59`
 -	v2 Content-Length: 10.2 MB (10159401 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:39:45 GMT
 
 #### `3d3e60082aea07c362acc35dd1e31365d86fbebc9b7cd0f6c94259f84c4e913e`
 
@@ -2998,6 +3025,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3304,6 +3332,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -3339,6 +3368,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -3471,6 +3501,7 @@ RUN buildDeps='\
 -	Virtual Size: 93.7 MB (93716254 bytes)
 -	v2 Blob: `sha256:c76d59c074cb50d46ecac3d5b003d7cde5e241bd4dfe69af85ab228543e6e3ab`
 -	v2 Content-Length: 42.6 MB (42626850 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:37:48 GMT
 
 #### `e73609e8e4873538657a5705fe412bc15b778669fdf1664b88c227b214f85d7b`
 
@@ -3498,6 +3529,7 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:3258c940be2455abe9c25b47e4c321a194236b1b3097577a05ee18d6b608f006`
 -	v2 Content-Length: 1.1 KB (1066 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:49:41 GMT
 
 #### `9503c5c9a1057c8d02c214e46e68dcc543d9fee4f08a039048080f5951ecf05c`
 
@@ -3589,6 +3621,7 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:3d1a1a0ddef61ea3a47a769bbcfd61c3ac8266deb5e5797111a3659d43410d59`
 -	v2 Content-Length: 10.2 MB (10159401 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:39:45 GMT
 
 #### `3d3e60082aea07c362acc35dd1e31365d86fbebc9b7cd0f6c94259f84c4e913e`
 
@@ -3626,6 +3659,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3932,6 +3966,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -3967,6 +4002,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -4065,6 +4101,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.3 MB (9299596 bytes)
 -	v2 Blob: `sha256:a1711571e538f119692cbe649e57f5fb88d122cadf404cc46172bcdda86fc6fe`
 -	v2 Content-Length: 2.1 MB (2144256 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:40:53 GMT
 
 #### `9e6a7b2a40f35f54e89f6342682f90ce07b12fa35d4a620907be57180ded27eb`
 
@@ -4098,6 +4135,7 @@ RUN buildDeps='\
 -	Virtual Size: 127.2 MB (127237609 bytes)
 -	v2 Blob: `sha256:9bf876c7139f9dca5372659d8fb8390dc0fe42f8bd3f58e4955c94c6ba890f40`
 -	v2 Content-Length: 58.7 MB (58734213 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:40:47 GMT
 
 #### `6ed2cd8723b216814a71e7b37bb1a6d2bc750ff61be77fa4330772da9d936ab5`
 
@@ -4125,6 +4163,7 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:3258c940be2455abe9c25b47e4c321a194236b1b3097577a05ee18d6b608f006`
 -	v2 Content-Length: 1.1 KB (1066 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:49:41 GMT
 
 #### `7d8d750291644c9820b9780667d9420a537e0caceacd2b42e3eae64684269dd2`
 
@@ -4190,6 +4229,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4496,6 +4536,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -4531,6 +4572,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -4629,6 +4671,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.3 MB (9299596 bytes)
 -	v2 Blob: `sha256:a1711571e538f119692cbe649e57f5fb88d122cadf404cc46172bcdda86fc6fe`
 -	v2 Content-Length: 2.1 MB (2144256 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:40:53 GMT
 
 #### `9e6a7b2a40f35f54e89f6342682f90ce07b12fa35d4a620907be57180ded27eb`
 
@@ -4662,6 +4705,7 @@ RUN buildDeps='\
 -	Virtual Size: 127.2 MB (127237609 bytes)
 -	v2 Blob: `sha256:9bf876c7139f9dca5372659d8fb8390dc0fe42f8bd3f58e4955c94c6ba890f40`
 -	v2 Content-Length: 58.7 MB (58734213 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:40:47 GMT
 
 #### `6ed2cd8723b216814a71e7b37bb1a6d2bc750ff61be77fa4330772da9d936ab5`
 
@@ -4689,6 +4733,7 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:3258c940be2455abe9c25b47e4c321a194236b1b3097577a05ee18d6b608f006`
 -	v2 Content-Length: 1.1 KB (1066 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:49:41 GMT
 
 #### `7d8d750291644c9820b9780667d9420a537e0caceacd2b42e3eae64684269dd2`
 
@@ -4754,6 +4799,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5060,6 +5106,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -5095,6 +5142,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -5193,6 +5241,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.3 MB (9299596 bytes)
 -	v2 Blob: `sha256:a1711571e538f119692cbe649e57f5fb88d122cadf404cc46172bcdda86fc6fe`
 -	v2 Content-Length: 2.1 MB (2144256 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:40:53 GMT
 
 #### `9e6a7b2a40f35f54e89f6342682f90ce07b12fa35d4a620907be57180ded27eb`
 
@@ -5226,6 +5275,7 @@ RUN buildDeps='\
 -	Virtual Size: 127.2 MB (127237609 bytes)
 -	v2 Blob: `sha256:9bf876c7139f9dca5372659d8fb8390dc0fe42f8bd3f58e4955c94c6ba890f40`
 -	v2 Content-Length: 58.7 MB (58734213 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:40:47 GMT
 
 #### `6ed2cd8723b216814a71e7b37bb1a6d2bc750ff61be77fa4330772da9d936ab5`
 
@@ -5253,6 +5303,7 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:3258c940be2455abe9c25b47e4c321a194236b1b3097577a05ee18d6b608f006`
 -	v2 Content-Length: 1.1 KB (1066 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:49:41 GMT
 
 #### `7d8d750291644c9820b9780667d9420a537e0caceacd2b42e3eae64684269dd2`
 
@@ -5328,6 +5379,7 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:5f5af87871f752baec41b60e39ede3694009bae06f0bc4a9cdd3b8929490015b`
 -	v2 Content-Length: 20.9 MB (20931309 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:41:28 GMT
 
 #### `0871259817a822e33aa3b1564495a4e811cb894a62d8f82204c8a47207c3437a`
 
@@ -5343,6 +5395,7 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:7cee72876416a2cad87078d5fd6601f5962c1e4e40844d2054a9d68704de0498`
 -	v2 Content-Length: 10.2 MB (10159385 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:41:21 GMT
 
 #### `8d96f2ae3ab63cb92654c5849fdc9769e85937b084aa8a872693a8bbc88e18c2`
 
@@ -5380,6 +5433,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5686,6 +5740,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -5721,6 +5776,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -5819,6 +5875,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.3 MB (9299596 bytes)
 -	v2 Blob: `sha256:a1711571e538f119692cbe649e57f5fb88d122cadf404cc46172bcdda86fc6fe`
 -	v2 Content-Length: 2.1 MB (2144256 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:40:53 GMT
 
 #### `9e6a7b2a40f35f54e89f6342682f90ce07b12fa35d4a620907be57180ded27eb`
 
@@ -5852,6 +5909,7 @@ RUN buildDeps='\
 -	Virtual Size: 127.2 MB (127237609 bytes)
 -	v2 Blob: `sha256:9bf876c7139f9dca5372659d8fb8390dc0fe42f8bd3f58e4955c94c6ba890f40`
 -	v2 Content-Length: 58.7 MB (58734213 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:40:47 GMT
 
 #### `6ed2cd8723b216814a71e7b37bb1a6d2bc750ff61be77fa4330772da9d936ab5`
 
@@ -5879,6 +5937,7 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:3258c940be2455abe9c25b47e4c321a194236b1b3097577a05ee18d6b608f006`
 -	v2 Content-Length: 1.1 KB (1066 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:49:41 GMT
 
 #### `7d8d750291644c9820b9780667d9420a537e0caceacd2b42e3eae64684269dd2`
 
@@ -5954,6 +6013,7 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:5f5af87871f752baec41b60e39ede3694009bae06f0bc4a9cdd3b8929490015b`
 -	v2 Content-Length: 20.9 MB (20931309 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:41:28 GMT
 
 #### `0871259817a822e33aa3b1564495a4e811cb894a62d8f82204c8a47207c3437a`
 
@@ -5969,6 +6029,7 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:7cee72876416a2cad87078d5fd6601f5962c1e4e40844d2054a9d68704de0498`
 -	v2 Content-Length: 10.2 MB (10159385 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:41:21 GMT
 
 #### `8d96f2ae3ab63cb92654c5849fdc9769e85937b084aa8a872693a8bbc88e18c2`
 
@@ -6006,6 +6067,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6312,6 +6374,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -6347,6 +6410,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -6479,6 +6543,7 @@ RUN buildDeps='\
 -	Virtual Size: 133.1 MB (133054496 bytes)
 -	v2 Blob: `sha256:9c2c86462b92b83015d1be3023bcd2462a65928c6200d5759ddd79a5cdaea015`
 -	v2 Content-Length: 60.5 MB (60479503 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:42:21 GMT
 
 #### `bfd7fc5bef0998c3e0c98dca04ad4a02de5ca921c3c52cf9c6a0738fd6a28b30`
 
@@ -6572,6 +6637,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6878,6 +6944,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -6913,6 +6980,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -7045,6 +7113,7 @@ RUN buildDeps='\
 -	Virtual Size: 133.1 MB (133054496 bytes)
 -	v2 Blob: `sha256:9c2c86462b92b83015d1be3023bcd2462a65928c6200d5759ddd79a5cdaea015`
 -	v2 Content-Length: 60.5 MB (60479503 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:42:21 GMT
 
 #### `bfd7fc5bef0998c3e0c98dca04ad4a02de5ca921c3c52cf9c6a0738fd6a28b30`
 
@@ -7138,6 +7207,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7444,6 +7514,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -7479,6 +7550,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -7611,6 +7683,7 @@ RUN buildDeps='\
 -	Virtual Size: 133.1 MB (133054496 bytes)
 -	v2 Blob: `sha256:9c2c86462b92b83015d1be3023bcd2462a65928c6200d5759ddd79a5cdaea015`
 -	v2 Content-Length: 60.5 MB (60479503 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:42:21 GMT
 
 #### `bfd7fc5bef0998c3e0c98dca04ad4a02de5ca921c3c52cf9c6a0738fd6a28b30`
 
@@ -7714,6 +7787,7 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:d9941597bd9182aefd2cf26659eb8ecc7bfef6384a47fe847d5bac32823096cc`
 -	v2 Content-Length: 20.9 MB (20931328 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:43:05 GMT
 
 #### `583abeb57d78b6481168f915a5271a5db12db25a7114b8013a63f802e409ddcc`
 
@@ -7729,6 +7803,7 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:68d9e5fd2687324234bdf14cca8f9424d21ed15003a02b5f0a99705281712968`
 -	v2 Content-Length: 10.2 MB (10159389 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:42:57 GMT
 
 #### `fa43861e355370bcef0a13b44d3ffd3eefa3766e2ebb8b96b8a66e8d8bcad449`
 
@@ -7766,6 +7841,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8072,6 +8148,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -8107,6 +8184,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -8239,6 +8317,7 @@ RUN buildDeps='\
 -	Virtual Size: 133.1 MB (133054496 bytes)
 -	v2 Blob: `sha256:9c2c86462b92b83015d1be3023bcd2462a65928c6200d5759ddd79a5cdaea015`
 -	v2 Content-Length: 60.5 MB (60479503 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:42:21 GMT
 
 #### `bfd7fc5bef0998c3e0c98dca04ad4a02de5ca921c3c52cf9c6a0738fd6a28b30`
 
@@ -8342,6 +8421,7 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:d9941597bd9182aefd2cf26659eb8ecc7bfef6384a47fe847d5bac32823096cc`
 -	v2 Content-Length: 20.9 MB (20931328 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:43:05 GMT
 
 #### `583abeb57d78b6481168f915a5271a5db12db25a7114b8013a63f802e409ddcc`
 
@@ -8357,6 +8437,7 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:68d9e5fd2687324234bdf14cca8f9424d21ed15003a02b5f0a99705281712968`
 -	v2 Content-Length: 10.2 MB (10159389 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:42:57 GMT
 
 #### `fa43861e355370bcef0a13b44d3ffd3eefa3766e2ebb8b96b8a66e8d8bcad449`
 
@@ -8394,6 +8475,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8700,6 +8782,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -8735,6 +8818,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -8833,6 +8917,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.6 MB (10637944 bytes)
 -	v2 Blob: `sha256:052a4e65b740df413ada28ea1beb96c3ceaf8069137866123c5da9d7cd67113f`
 -	v2 Content-Length: 2.3 MB (2328505 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:05 GMT
 
 #### `2ae1b9b64bf2a72fce0ddb3fd8627aa80158323841e0436e334f5cf8fa8d87c9`
 
@@ -8866,6 +8951,7 @@ RUN buildDeps='\
 -	Virtual Size: 143.0 MB (142996474 bytes)
 -	v2 Blob: `sha256:edf47808a5cc2352b2ccb0f229272ee8d10ef0aadbb286083b6685ce73cf3854`
 -	v2 Content-Length: 69.1 MB (69085084 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:43:52 GMT
 
 #### `b9f2e4e0ae06c8b654c644cf2d21f3874853e8e478157096506b832fb5c3c241`
 
@@ -8959,6 +9045,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9265,6 +9352,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -9300,6 +9388,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -9398,6 +9487,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.6 MB (10637944 bytes)
 -	v2 Blob: `sha256:052a4e65b740df413ada28ea1beb96c3ceaf8069137866123c5da9d7cd67113f`
 -	v2 Content-Length: 2.3 MB (2328505 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:05 GMT
 
 #### `2ae1b9b64bf2a72fce0ddb3fd8627aa80158323841e0436e334f5cf8fa8d87c9`
 
@@ -9431,6 +9521,7 @@ RUN buildDeps='\
 -	Virtual Size: 143.0 MB (142996474 bytes)
 -	v2 Blob: `sha256:edf47808a5cc2352b2ccb0f229272ee8d10ef0aadbb286083b6685ce73cf3854`
 -	v2 Content-Length: 69.1 MB (69085084 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:43:52 GMT
 
 #### `b9f2e4e0ae06c8b654c644cf2d21f3874853e8e478157096506b832fb5c3c241`
 
@@ -9524,6 +9615,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9830,6 +9922,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -9865,6 +9958,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -9963,6 +10057,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.6 MB (10637944 bytes)
 -	v2 Blob: `sha256:052a4e65b740df413ada28ea1beb96c3ceaf8069137866123c5da9d7cd67113f`
 -	v2 Content-Length: 2.3 MB (2328505 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:05 GMT
 
 #### `2ae1b9b64bf2a72fce0ddb3fd8627aa80158323841e0436e334f5cf8fa8d87c9`
 
@@ -9996,6 +10091,7 @@ RUN buildDeps='\
 -	Virtual Size: 143.0 MB (142996474 bytes)
 -	v2 Blob: `sha256:edf47808a5cc2352b2ccb0f229272ee8d10ef0aadbb286083b6685ce73cf3854`
 -	v2 Content-Length: 69.1 MB (69085084 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:43:52 GMT
 
 #### `b9f2e4e0ae06c8b654c644cf2d21f3874853e8e478157096506b832fb5c3c241`
 
@@ -10089,6 +10185,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -10395,6 +10492,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -10430,6 +10528,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -10528,6 +10627,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.6 MB (10637944 bytes)
 -	v2 Blob: `sha256:052a4e65b740df413ada28ea1beb96c3ceaf8069137866123c5da9d7cd67113f`
 -	v2 Content-Length: 2.3 MB (2328505 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:05 GMT
 
 #### `2ae1b9b64bf2a72fce0ddb3fd8627aa80158323841e0436e334f5cf8fa8d87c9`
 
@@ -10561,6 +10661,7 @@ RUN buildDeps='\
 -	Virtual Size: 143.0 MB (142996474 bytes)
 -	v2 Blob: `sha256:edf47808a5cc2352b2ccb0f229272ee8d10ef0aadbb286083b6685ce73cf3854`
 -	v2 Content-Length: 69.1 MB (69085084 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:43:52 GMT
 
 #### `b9f2e4e0ae06c8b654c644cf2d21f3874853e8e478157096506b832fb5c3c241`
 
@@ -10654,6 +10755,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -10960,6 +11062,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -10995,6 +11098,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -11093,6 +11197,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.6 MB (10637944 bytes)
 -	v2 Blob: `sha256:052a4e65b740df413ada28ea1beb96c3ceaf8069137866123c5da9d7cd67113f`
 -	v2 Content-Length: 2.3 MB (2328505 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:05 GMT
 
 #### `2ae1b9b64bf2a72fce0ddb3fd8627aa80158323841e0436e334f5cf8fa8d87c9`
 
@@ -11126,6 +11231,7 @@ RUN buildDeps='\
 -	Virtual Size: 143.0 MB (142996474 bytes)
 -	v2 Blob: `sha256:edf47808a5cc2352b2ccb0f229272ee8d10ef0aadbb286083b6685ce73cf3854`
 -	v2 Content-Length: 69.1 MB (69085084 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:43:52 GMT
 
 #### `b9f2e4e0ae06c8b654c644cf2d21f3874853e8e478157096506b832fb5c3c241`
 
@@ -11229,6 +11335,7 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:a5bdb82ab12c33c54d14c047ef186bcf68890db90dc07f4404bacf439275f748`
 -	v2 Content-Length: 20.9 MB (20931277 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:57 GMT
 
 #### `a9375a32d3e73360090cdda2b51e9041f52fd9ce38079d0b13fd582b0296ddbd`
 
@@ -11244,6 +11351,7 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:a1395de891dded5af5f509c3975f447ffdab3ff744cf6a6b1b7d4fd882449bc5`
 -	v2 Content-Length: 10.2 MB (10159380 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:49 GMT
 
 #### `2eb8dd333a53563545ebf2dd6eeffc510944b69ca5fd6e6e77ee12d716e68738`
 
@@ -11281,6 +11389,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -11587,6 +11696,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -11622,6 +11732,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -11720,6 +11831,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.6 MB (10637944 bytes)
 -	v2 Blob: `sha256:052a4e65b740df413ada28ea1beb96c3ceaf8069137866123c5da9d7cd67113f`
 -	v2 Content-Length: 2.3 MB (2328505 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:05 GMT
 
 #### `2ae1b9b64bf2a72fce0ddb3fd8627aa80158323841e0436e334f5cf8fa8d87c9`
 
@@ -11753,6 +11865,7 @@ RUN buildDeps='\
 -	Virtual Size: 143.0 MB (142996474 bytes)
 -	v2 Blob: `sha256:edf47808a5cc2352b2ccb0f229272ee8d10ef0aadbb286083b6685ce73cf3854`
 -	v2 Content-Length: 69.1 MB (69085084 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:43:52 GMT
 
 #### `b9f2e4e0ae06c8b654c644cf2d21f3874853e8e478157096506b832fb5c3c241`
 
@@ -11856,6 +11969,7 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:a5bdb82ab12c33c54d14c047ef186bcf68890db90dc07f4404bacf439275f748`
 -	v2 Content-Length: 20.9 MB (20931277 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:57 GMT
 
 #### `a9375a32d3e73360090cdda2b51e9041f52fd9ce38079d0b13fd582b0296ddbd`
 
@@ -11871,6 +11985,7 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:a1395de891dded5af5f509c3975f447ffdab3ff744cf6a6b1b7d4fd882449bc5`
 -	v2 Content-Length: 10.2 MB (10159380 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:49 GMT
 
 #### `2eb8dd333a53563545ebf2dd6eeffc510944b69ca5fd6e6e77ee12d716e68738`
 
@@ -11908,6 +12023,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -12214,6 +12330,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -12249,6 +12366,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -12347,6 +12465,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.6 MB (10637944 bytes)
 -	v2 Blob: `sha256:052a4e65b740df413ada28ea1beb96c3ceaf8069137866123c5da9d7cd67113f`
 -	v2 Content-Length: 2.3 MB (2328505 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:05 GMT
 
 #### `2ae1b9b64bf2a72fce0ddb3fd8627aa80158323841e0436e334f5cf8fa8d87c9`
 
@@ -12380,6 +12499,7 @@ RUN buildDeps='\
 -	Virtual Size: 143.0 MB (142996474 bytes)
 -	v2 Blob: `sha256:edf47808a5cc2352b2ccb0f229272ee8d10ef0aadbb286083b6685ce73cf3854`
 -	v2 Content-Length: 69.1 MB (69085084 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:43:52 GMT
 
 #### `b9f2e4e0ae06c8b654c644cf2d21f3874853e8e478157096506b832fb5c3c241`
 
@@ -12483,6 +12603,7 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:a5bdb82ab12c33c54d14c047ef186bcf68890db90dc07f4404bacf439275f748`
 -	v2 Content-Length: 20.9 MB (20931277 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:57 GMT
 
 #### `a9375a32d3e73360090cdda2b51e9041f52fd9ce38079d0b13fd582b0296ddbd`
 
@@ -12498,6 +12619,7 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:a1395de891dded5af5f509c3975f447ffdab3ff744cf6a6b1b7d4fd882449bc5`
 -	v2 Content-Length: 10.2 MB (10159380 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:49 GMT
 
 #### `2eb8dd333a53563545ebf2dd6eeffc510944b69ca5fd6e6e77ee12d716e68738`
 
@@ -12535,6 +12657,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -12841,6 +12964,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:075b8f44c087eebe7c9b1f2813015a77bdcbafff1052d92310966971c6ab1f4a`
 -	v2 Content-Length: 807.9 KB (807924 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:37 GMT
 
 #### `45e901407357d35c4773f336bd5d4b671f4dd0a445aee8b7f195a03f5e2a7889`
 
@@ -12876,6 +13000,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -12974,6 +13099,7 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.6 MB (10637944 bytes)
 -	v2 Blob: `sha256:052a4e65b740df413ada28ea1beb96c3ceaf8069137866123c5da9d7cd67113f`
 -	v2 Content-Length: 2.3 MB (2328505 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:05 GMT
 
 #### `2ae1b9b64bf2a72fce0ddb3fd8627aa80158323841e0436e334f5cf8fa8d87c9`
 
@@ -13007,6 +13133,7 @@ RUN buildDeps='\
 -	Virtual Size: 143.0 MB (142996474 bytes)
 -	v2 Blob: `sha256:edf47808a5cc2352b2ccb0f229272ee8d10ef0aadbb286083b6685ce73cf3854`
 -	v2 Content-Length: 69.1 MB (69085084 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:43:52 GMT
 
 #### `b9f2e4e0ae06c8b654c644cf2d21f3874853e8e478157096506b832fb5c3c241`
 
@@ -13110,6 +13237,7 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:a5bdb82ab12c33c54d14c047ef186bcf68890db90dc07f4404bacf439275f748`
 -	v2 Content-Length: 20.9 MB (20931277 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:57 GMT
 
 #### `a9375a32d3e73360090cdda2b51e9041f52fd9ce38079d0b13fd582b0296ddbd`
 
@@ -13125,6 +13253,7 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:a1395de891dded5af5f509c3975f447ffdab3ff744cf6a6b1b7d4fd882449bc5`
 -	v2 Content-Length: 10.2 MB (10159380 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:44:49 GMT
 
 #### `2eb8dd333a53563545ebf2dd6eeffc510944b69ca5fd6e6e77ee12d716e68738`
 

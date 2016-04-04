@@ -65,6 +65,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -82,6 +83,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -95,6 +97,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -128,6 +131,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -203,6 +207,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -244,6 +249,7 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36796826 bytes)
 -	v2 Blob: `sha256:a99bdf23e0e49175202ab49abfd36d9107acca01d4068094b13fffd41a5ed5c5`
 -	v2 Content-Length: 10.1 MB (10076356 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:33:08 GMT
 
 #### `7f2a5d758d7fa2d3a63123e18822e6d14da832d758b24105fca4f8cfffe4b030`
 
@@ -355,6 +361,7 @@ RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://arch
 -	Virtual Size: 212.7 MB (212699944 bytes)
 -	v2 Blob: `sha256:78bc425cdb4d9b03502bb50ee7ffb9671e38d3ce57c8139117412ba9c42acf9c`
 -	v2 Content-Length: 134.9 MB (134929482 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:32:31 GMT
 
 #### `1e5b029b30c9d937d8106313536755a4cea4f8ee2bf75b6cf26153d7a1284954`
 
@@ -466,6 +473,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -483,6 +491,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -496,6 +505,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -529,6 +539,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -604,6 +615,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -645,6 +657,7 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36796826 bytes)
 -	v2 Blob: `sha256:a99bdf23e0e49175202ab49abfd36d9107acca01d4068094b13fffd41a5ed5c5`
 -	v2 Content-Length: 10.1 MB (10076356 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:33:08 GMT
 
 #### `7f2a5d758d7fa2d3a63123e18822e6d14da832d758b24105fca4f8cfffe4b030`
 
@@ -756,6 +769,7 @@ RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://arch
 -	Virtual Size: 212.7 MB (212699944 bytes)
 -	v2 Blob: `sha256:78bc425cdb4d9b03502bb50ee7ffb9671e38d3ce57c8139117412ba9c42acf9c`
 -	v2 Content-Length: 134.9 MB (134929482 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:32:31 GMT
 
 #### `1e5b029b30c9d937d8106313536755a4cea4f8ee2bf75b6cf26153d7a1284954`
 
@@ -867,6 +881,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -884,6 +899,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -897,6 +913,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -930,6 +947,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1005,6 +1023,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -1046,6 +1065,7 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36796826 bytes)
 -	v2 Blob: `sha256:a99bdf23e0e49175202ab49abfd36d9107acca01d4068094b13fffd41a5ed5c5`
 -	v2 Content-Length: 10.1 MB (10076356 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:33:08 GMT
 
 #### `7f2a5d758d7fa2d3a63123e18822e6d14da832d758b24105fca4f8cfffe4b030`
 
@@ -1269,6 +1289,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1286,6 +1307,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -1299,6 +1321,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -1332,6 +1355,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1407,6 +1431,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -1448,6 +1473,7 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36796826 bytes)
 -	v2 Blob: `sha256:a99bdf23e0e49175202ab49abfd36d9107acca01d4068094b13fffd41a5ed5c5`
 -	v2 Content-Length: 10.1 MB (10076356 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:33:08 GMT
 
 #### `7f2a5d758d7fa2d3a63123e18822e6d14da832d758b24105fca4f8cfffe4b030`
 
@@ -1671,6 +1697,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1688,6 +1715,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -1701,6 +1729,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -1734,6 +1763,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1809,6 +1839,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -1850,6 +1881,7 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36796826 bytes)
 -	v2 Blob: `sha256:a99bdf23e0e49175202ab49abfd36d9107acca01d4068094b13fffd41a5ed5c5`
 -	v2 Content-Length: 10.1 MB (10076356 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:33:08 GMT
 
 #### `7f2a5d758d7fa2d3a63123e18822e6d14da832d758b24105fca4f8cfffe4b030`
 
@@ -2073,6 +2105,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2090,6 +2123,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2103,6 +2137,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2136,6 +2171,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2211,6 +2247,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2252,6 +2289,7 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36796826 bytes)
 -	v2 Blob: `sha256:a99bdf23e0e49175202ab49abfd36d9107acca01d4068094b13fffd41a5ed5c5`
 -	v2 Content-Length: 10.1 MB (10076356 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:33:08 GMT
 
 #### `7f2a5d758d7fa2d3a63123e18822e6d14da832d758b24105fca4f8cfffe4b030`
 
@@ -2475,6 +2513,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2492,6 +2531,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2505,6 +2545,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2538,6 +2579,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2613,6 +2655,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2654,6 +2697,7 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36796826 bytes)
 -	v2 Blob: `sha256:a99bdf23e0e49175202ab49abfd36d9107acca01d4068094b13fffd41a5ed5c5`
 -	v2 Content-Length: 10.1 MB (10076356 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:33:08 GMT
 
 #### `7f2a5d758d7fa2d3a63123e18822e6d14da832d758b24105fca4f8cfffe4b030`
 
@@ -2877,6 +2921,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2894,6 +2939,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2907,6 +2953,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2940,6 +2987,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -3015,6 +3063,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3056,6 +3105,7 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36796826 bytes)
 -	v2 Blob: `sha256:a99bdf23e0e49175202ab49abfd36d9107acca01d4068094b13fffd41a5ed5c5`
 -	v2 Content-Length: 10.1 MB (10076356 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:33:08 GMT
 
 #### `7f2a5d758d7fa2d3a63123e18822e6d14da832d758b24105fca4f8cfffe4b030`
 

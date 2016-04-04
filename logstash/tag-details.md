@@ -47,6 +47,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -60,6 +61,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -77,6 +79,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -94,6 +97,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -107,6 +111,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -120,6 +125,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -139,6 +145,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -152,6 +159,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -165,6 +173,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -178,6 +187,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -191,6 +201,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -210,6 +221,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -223,6 +235,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -238,6 +251,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -252,6 +266,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -265,6 +280,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -286,6 +302,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -299,6 +316,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `be7484652d4b5d47a943eabe7dd46897e05b6126a5f2762b828eb2e0e675b4ec`
 
@@ -312,6 +330,7 @@ ENV LOGSTASH_MAJOR=1.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26b82a6e25fba129c0d4ced8ea08f2a7a6d9aa8717b4e38ca5dd243a38de60f5`
 
@@ -325,6 +344,7 @@ ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3939bc228bde4878dd57270ce1e19fdadee9f325cad2688a29fdf0e7aadd429`
 
@@ -338,6 +358,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:94d5472ca901711da4b77c8bee7049b502e55463ea12bbdf8878bc3170e3578c`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:08 GMT
 
 #### `2583f3e4102a9722e38d7e2caf25c6b7798d632eda86407f262ff03b56892e56`
 
@@ -354,6 +375,7 @@ RUN set -x \
 -	Virtual Size: 109.0 MB (108971383 bytes)
 -	v2 Blob: `sha256:debb87e7e1ff2e8bbdb05bc1a15230a41376cf01e35f15c10ed68ef60b25e51c`
 -	v2 Content-Length: 74.1 MB (74127609 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:04 GMT
 
 #### `1506f2acb0fc23e7e36ef67a1c0a24c6d10d144cd7d372ae26d6de0679543913`
 
@@ -367,6 +389,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `251fa9b12f40dab76aefaa852e652d51560e8a9efff45afe51047471acd58a20`
 
@@ -380,6 +403,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `52c8e665841760a49839c1934d85a075d181a49db19d172f4d05a7145cbee80a`
 
@@ -393,6 +417,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5b0557874ef30c3ff847af920845e21c5de1475807ed9bd240ee4b4b719219f1`
 
@@ -406,6 +431,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:1.4.5-1`
 
@@ -429,6 +455,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -442,6 +469,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -459,6 +487,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -476,6 +505,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -489,6 +519,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -502,6 +533,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -521,6 +553,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -534,6 +567,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -547,6 +581,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -560,6 +595,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -573,6 +609,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -592,6 +629,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -605,6 +643,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -620,6 +659,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -634,6 +674,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -647,6 +688,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -668,6 +710,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -681,6 +724,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `be7484652d4b5d47a943eabe7dd46897e05b6126a5f2762b828eb2e0e675b4ec`
 
@@ -694,6 +738,7 @@ ENV LOGSTASH_MAJOR=1.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26b82a6e25fba129c0d4ced8ea08f2a7a6d9aa8717b4e38ca5dd243a38de60f5`
 
@@ -707,6 +752,7 @@ ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3939bc228bde4878dd57270ce1e19fdadee9f325cad2688a29fdf0e7aadd429`
 
@@ -720,6 +766,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:94d5472ca901711da4b77c8bee7049b502e55463ea12bbdf8878bc3170e3578c`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:08 GMT
 
 #### `2583f3e4102a9722e38d7e2caf25c6b7798d632eda86407f262ff03b56892e56`
 
@@ -736,6 +783,7 @@ RUN set -x \
 -	Virtual Size: 109.0 MB (108971383 bytes)
 -	v2 Blob: `sha256:debb87e7e1ff2e8bbdb05bc1a15230a41376cf01e35f15c10ed68ef60b25e51c`
 -	v2 Content-Length: 74.1 MB (74127609 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:04 GMT
 
 #### `1506f2acb0fc23e7e36ef67a1c0a24c6d10d144cd7d372ae26d6de0679543913`
 
@@ -749,6 +797,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `251fa9b12f40dab76aefaa852e652d51560e8a9efff45afe51047471acd58a20`
 
@@ -762,6 +811,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `52c8e665841760a49839c1934d85a075d181a49db19d172f4d05a7145cbee80a`
 
@@ -775,6 +825,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5b0557874ef30c3ff847af920845e21c5de1475807ed9bd240ee4b4b719219f1`
 
@@ -788,6 +839,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:1.4.5`
 
@@ -811,6 +863,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -824,6 +877,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -841,6 +895,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -858,6 +913,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -871,6 +927,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -884,6 +941,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -903,6 +961,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -916,6 +975,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -929,6 +989,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -942,6 +1003,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -955,6 +1017,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -974,6 +1037,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -987,6 +1051,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -1002,6 +1067,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -1016,6 +1082,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -1029,6 +1096,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -1050,6 +1118,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -1063,6 +1132,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `be7484652d4b5d47a943eabe7dd46897e05b6126a5f2762b828eb2e0e675b4ec`
 
@@ -1076,6 +1146,7 @@ ENV LOGSTASH_MAJOR=1.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26b82a6e25fba129c0d4ced8ea08f2a7a6d9aa8717b4e38ca5dd243a38de60f5`
 
@@ -1089,6 +1160,7 @@ ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3939bc228bde4878dd57270ce1e19fdadee9f325cad2688a29fdf0e7aadd429`
 
@@ -1102,6 +1174,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:94d5472ca901711da4b77c8bee7049b502e55463ea12bbdf8878bc3170e3578c`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:08 GMT
 
 #### `2583f3e4102a9722e38d7e2caf25c6b7798d632eda86407f262ff03b56892e56`
 
@@ -1118,6 +1191,7 @@ RUN set -x \
 -	Virtual Size: 109.0 MB (108971383 bytes)
 -	v2 Blob: `sha256:debb87e7e1ff2e8bbdb05bc1a15230a41376cf01e35f15c10ed68ef60b25e51c`
 -	v2 Content-Length: 74.1 MB (74127609 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:04 GMT
 
 #### `1506f2acb0fc23e7e36ef67a1c0a24c6d10d144cd7d372ae26d6de0679543913`
 
@@ -1131,6 +1205,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `251fa9b12f40dab76aefaa852e652d51560e8a9efff45afe51047471acd58a20`
 
@@ -1144,6 +1219,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `52c8e665841760a49839c1934d85a075d181a49db19d172f4d05a7145cbee80a`
 
@@ -1157,6 +1233,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5b0557874ef30c3ff847af920845e21c5de1475807ed9bd240ee4b4b719219f1`
 
@@ -1170,6 +1247,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:1.4`
 
@@ -1193,6 +1271,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1206,6 +1285,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1223,6 +1303,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1240,6 +1321,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -1253,6 +1335,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -1266,6 +1349,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -1285,6 +1369,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1298,6 +1383,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -1311,6 +1397,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -1324,6 +1411,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -1337,6 +1425,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -1356,6 +1445,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -1369,6 +1459,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -1384,6 +1475,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -1398,6 +1490,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -1411,6 +1504,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -1432,6 +1526,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -1445,6 +1540,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `be7484652d4b5d47a943eabe7dd46897e05b6126a5f2762b828eb2e0e675b4ec`
 
@@ -1458,6 +1554,7 @@ ENV LOGSTASH_MAJOR=1.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26b82a6e25fba129c0d4ced8ea08f2a7a6d9aa8717b4e38ca5dd243a38de60f5`
 
@@ -1471,6 +1568,7 @@ ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3939bc228bde4878dd57270ce1e19fdadee9f325cad2688a29fdf0e7aadd429`
 
@@ -1484,6 +1582,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:94d5472ca901711da4b77c8bee7049b502e55463ea12bbdf8878bc3170e3578c`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:08 GMT
 
 #### `2583f3e4102a9722e38d7e2caf25c6b7798d632eda86407f262ff03b56892e56`
 
@@ -1500,6 +1599,7 @@ RUN set -x \
 -	Virtual Size: 109.0 MB (108971383 bytes)
 -	v2 Blob: `sha256:debb87e7e1ff2e8bbdb05bc1a15230a41376cf01e35f15c10ed68ef60b25e51c`
 -	v2 Content-Length: 74.1 MB (74127609 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:04 GMT
 
 #### `1506f2acb0fc23e7e36ef67a1c0a24c6d10d144cd7d372ae26d6de0679543913`
 
@@ -1513,6 +1613,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `251fa9b12f40dab76aefaa852e652d51560e8a9efff45afe51047471acd58a20`
 
@@ -1526,6 +1627,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `52c8e665841760a49839c1934d85a075d181a49db19d172f4d05a7145cbee80a`
 
@@ -1539,6 +1641,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5b0557874ef30c3ff847af920845e21c5de1475807ed9bd240ee4b4b719219f1`
 
@@ -1552,6 +1655,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:1.5.6-1`
 
@@ -1575,6 +1679,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1588,6 +1693,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1605,6 +1711,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1622,6 +1729,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -1635,6 +1743,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -1648,6 +1757,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -1667,6 +1777,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1680,6 +1791,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -1693,6 +1805,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -1706,6 +1819,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -1719,6 +1833,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -1738,6 +1853,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -1751,6 +1867,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -1766,6 +1883,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -1780,6 +1898,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -1793,6 +1912,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -1814,6 +1934,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -1827,6 +1948,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `142008e656e33bdddc6771d663860e36217695523cf7b1c5fcf1ac9e22f0cdd0`
 
@@ -1840,6 +1962,7 @@ ENV LOGSTASH_MAJOR=1.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `747c245dbf135d43c04ee1248e951207d96818f82314295e6b8a7878610a01b5`
 
@@ -1853,6 +1976,7 @@ ENV LOGSTASH_VERSION=1:1.5.6-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ec889bc6f158dde9cf32ef6ae3775ab77d7cb46942178d614e427366a7fc045`
 
@@ -1866,6 +1990,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:07d7d0bcc9f652c3f5de8e91391d021b95b8dfe256e047b5e487b9f8fefa09ea`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:41:20 GMT
 
 #### `8afe7d9816b5d02473f66925ccea20fca681e22bd9a987a6c0084c575ccbb159`
 
@@ -1882,6 +2007,7 @@ RUN set -x \
 -	Virtual Size: 143.2 MB (143152449 bytes)
 -	v2 Blob: `sha256:4d65e53336bd205e172c451af420b05d3c0255ec70695c74c2a7427d1ae48fbe`
 -	v2 Content-Length: 90.8 MB (90753329 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:41:15 GMT
 
 #### `776a94c5e59c4c42d66fde6af17e150057bc094692302fd597bec4c11b49beac`
 
@@ -1895,6 +2021,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b3bb38501969d0cc43d9c6333836c32a87c4ab4c6e5f1a29c21714ed57e3107`
 
@@ -1908,6 +2035,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `6d23c0f1ce3b1384e8c8b20796d22dedbff4791a56bd6a9588880c9d23703445`
 
@@ -1921,6 +2049,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f603da02d559444a4880269aef5ee2c110e5c85797efb70461af7210a1a3cce0`
 
@@ -1934,6 +2063,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:1.5.6`
 
@@ -1957,6 +2087,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1970,6 +2101,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1987,6 +2119,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2004,6 +2137,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2017,6 +2151,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2030,6 +2165,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -2049,6 +2185,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2062,6 +2199,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2075,6 +2213,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2088,6 +2227,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2101,6 +2241,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -2120,6 +2261,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2133,6 +2275,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -2148,6 +2291,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -2162,6 +2306,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -2175,6 +2320,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -2196,6 +2342,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -2209,6 +2356,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `142008e656e33bdddc6771d663860e36217695523cf7b1c5fcf1ac9e22f0cdd0`
 
@@ -2222,6 +2370,7 @@ ENV LOGSTASH_MAJOR=1.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `747c245dbf135d43c04ee1248e951207d96818f82314295e6b8a7878610a01b5`
 
@@ -2235,6 +2384,7 @@ ENV LOGSTASH_VERSION=1:1.5.6-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ec889bc6f158dde9cf32ef6ae3775ab77d7cb46942178d614e427366a7fc045`
 
@@ -2248,6 +2398,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:07d7d0bcc9f652c3f5de8e91391d021b95b8dfe256e047b5e487b9f8fefa09ea`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:41:20 GMT
 
 #### `8afe7d9816b5d02473f66925ccea20fca681e22bd9a987a6c0084c575ccbb159`
 
@@ -2264,6 +2415,7 @@ RUN set -x \
 -	Virtual Size: 143.2 MB (143152449 bytes)
 -	v2 Blob: `sha256:4d65e53336bd205e172c451af420b05d3c0255ec70695c74c2a7427d1ae48fbe`
 -	v2 Content-Length: 90.8 MB (90753329 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:41:15 GMT
 
 #### `776a94c5e59c4c42d66fde6af17e150057bc094692302fd597bec4c11b49beac`
 
@@ -2277,6 +2429,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b3bb38501969d0cc43d9c6333836c32a87c4ab4c6e5f1a29c21714ed57e3107`
 
@@ -2290,6 +2443,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `6d23c0f1ce3b1384e8c8b20796d22dedbff4791a56bd6a9588880c9d23703445`
 
@@ -2303,6 +2457,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f603da02d559444a4880269aef5ee2c110e5c85797efb70461af7210a1a3cce0`
 
@@ -2316,6 +2471,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:1.5`
 
@@ -2339,6 +2495,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2352,6 +2509,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2369,6 +2527,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2386,6 +2545,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2399,6 +2559,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2412,6 +2573,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -2431,6 +2593,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2444,6 +2607,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2457,6 +2621,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2470,6 +2635,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2483,6 +2649,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -2502,6 +2669,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2515,6 +2683,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -2530,6 +2699,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -2544,6 +2714,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -2557,6 +2728,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -2578,6 +2750,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -2591,6 +2764,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `142008e656e33bdddc6771d663860e36217695523cf7b1c5fcf1ac9e22f0cdd0`
 
@@ -2604,6 +2778,7 @@ ENV LOGSTASH_MAJOR=1.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `747c245dbf135d43c04ee1248e951207d96818f82314295e6b8a7878610a01b5`
 
@@ -2617,6 +2792,7 @@ ENV LOGSTASH_VERSION=1:1.5.6-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ec889bc6f158dde9cf32ef6ae3775ab77d7cb46942178d614e427366a7fc045`
 
@@ -2630,6 +2806,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:07d7d0bcc9f652c3f5de8e91391d021b95b8dfe256e047b5e487b9f8fefa09ea`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:41:20 GMT
 
 #### `8afe7d9816b5d02473f66925ccea20fca681e22bd9a987a6c0084c575ccbb159`
 
@@ -2646,6 +2823,7 @@ RUN set -x \
 -	Virtual Size: 143.2 MB (143152449 bytes)
 -	v2 Blob: `sha256:4d65e53336bd205e172c451af420b05d3c0255ec70695c74c2a7427d1ae48fbe`
 -	v2 Content-Length: 90.8 MB (90753329 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:41:15 GMT
 
 #### `776a94c5e59c4c42d66fde6af17e150057bc094692302fd597bec4c11b49beac`
 
@@ -2659,6 +2837,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b3bb38501969d0cc43d9c6333836c32a87c4ab4c6e5f1a29c21714ed57e3107`
 
@@ -2672,6 +2851,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `6d23c0f1ce3b1384e8c8b20796d22dedbff4791a56bd6a9588880c9d23703445`
 
@@ -2685,6 +2865,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f603da02d559444a4880269aef5ee2c110e5c85797efb70461af7210a1a3cce0`
 
@@ -2698,6 +2879,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:1`
 
@@ -2721,6 +2903,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2734,6 +2917,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2751,6 +2935,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2768,6 +2953,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2781,6 +2967,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2794,6 +2981,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -2813,6 +3001,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2826,6 +3015,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2839,6 +3029,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2852,6 +3043,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2865,6 +3057,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -2884,6 +3077,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2897,6 +3091,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -2912,6 +3107,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -2926,6 +3122,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -2939,6 +3136,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -2960,6 +3158,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -2973,6 +3172,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `142008e656e33bdddc6771d663860e36217695523cf7b1c5fcf1ac9e22f0cdd0`
 
@@ -2986,6 +3186,7 @@ ENV LOGSTASH_MAJOR=1.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `747c245dbf135d43c04ee1248e951207d96818f82314295e6b8a7878610a01b5`
 
@@ -2999,6 +3200,7 @@ ENV LOGSTASH_VERSION=1:1.5.6-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ec889bc6f158dde9cf32ef6ae3775ab77d7cb46942178d614e427366a7fc045`
 
@@ -3012,6 +3214,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:07d7d0bcc9f652c3f5de8e91391d021b95b8dfe256e047b5e487b9f8fefa09ea`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:41:20 GMT
 
 #### `8afe7d9816b5d02473f66925ccea20fca681e22bd9a987a6c0084c575ccbb159`
 
@@ -3028,6 +3231,7 @@ RUN set -x \
 -	Virtual Size: 143.2 MB (143152449 bytes)
 -	v2 Blob: `sha256:4d65e53336bd205e172c451af420b05d3c0255ec70695c74c2a7427d1ae48fbe`
 -	v2 Content-Length: 90.8 MB (90753329 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:41:15 GMT
 
 #### `776a94c5e59c4c42d66fde6af17e150057bc094692302fd597bec4c11b49beac`
 
@@ -3041,6 +3245,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b3bb38501969d0cc43d9c6333836c32a87c4ab4c6e5f1a29c21714ed57e3107`
 
@@ -3054,6 +3259,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `6d23c0f1ce3b1384e8c8b20796d22dedbff4791a56bd6a9588880c9d23703445`
 
@@ -3067,6 +3273,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f603da02d559444a4880269aef5ee2c110e5c85797efb70461af7210a1a3cce0`
 
@@ -3080,6 +3287,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.0.0-1`
 
@@ -3103,6 +3311,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3116,6 +3325,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3133,6 +3343,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3150,6 +3361,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -3163,6 +3375,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -3176,6 +3389,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -3195,6 +3409,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -3208,6 +3423,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -3221,6 +3437,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -3234,6 +3451,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -3247,6 +3465,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -3266,6 +3485,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3279,6 +3499,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -3294,6 +3515,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -3308,6 +3530,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -3321,6 +3544,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -3342,6 +3566,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -3355,6 +3580,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `6a743ef3b6132689bf739ba5c27cb332477ddb5a5fe34cb6c5e692e4241a736b`
 
@@ -3368,6 +3594,7 @@ ENV LOGSTASH_MAJOR=2.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ce81ca5a7a4ac486ae83b458d8ed0ab61526173598d6297ca21c5cba8eea358`
 
@@ -3381,6 +3608,7 @@ ENV LOGSTASH_VERSION=1:2.0.0-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f99dd91960b7b820f72bca6d1f1d3072b391c6a7bd72665d5c681e2d4e8f54b1`
 
@@ -3394,6 +3622,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:1acc40cef75e9555b726dd22567d46c21be8a42a64846310dc0c7548d2667ca1`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:42:20 GMT
 
 #### `38a4ae8bbcb8be99c10f02f96319ea9ce1ed425cd66ca7f652d9ab5108c017ba`
 
@@ -3410,6 +3639,7 @@ RUN set -x \
 -	Virtual Size: 140.4 MB (140357961 bytes)
 -	v2 Blob: `sha256:c9fae862581d33c2aab899584c25834230290a5dccd9b80c4df1fbb09b3f9748`
 -	v2 Content-Length: 81.5 MB (81533709 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:42:15 GMT
 
 #### `d13355891bba0e118a0a4d9ae311b87f84626bf086e574d275b4c26ff608bae7`
 
@@ -3423,6 +3653,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56c1bcae430dde6032247c354853bf805d817cca6c280c24edb5f70f40ad5259`
 
@@ -3436,6 +3667,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:020fb47f74bbacad292355664d83f687f5f16239215cdbe1e23af7b7c397b7ee`
 -	v2 Content-Length: 252.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:39:46 GMT
 
 #### `35f7c59ddb28b9d1420273853c1c46282bf3c224187bf99fa9000ce0d297f26b`
 
@@ -3449,6 +3681,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3780b831bfa231477412de8ef82d8c5e5b273907d910e6b3846c3ad0a99e50f7`
 
@@ -3462,6 +3695,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.0.0`
 
@@ -3485,6 +3719,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3498,6 +3733,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3515,6 +3751,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3532,6 +3769,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -3545,6 +3783,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -3558,6 +3797,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -3577,6 +3817,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -3590,6 +3831,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -3603,6 +3845,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -3616,6 +3859,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -3629,6 +3873,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -3648,6 +3893,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3661,6 +3907,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -3676,6 +3923,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -3690,6 +3938,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -3703,6 +3952,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -3724,6 +3974,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -3737,6 +3988,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `6a743ef3b6132689bf739ba5c27cb332477ddb5a5fe34cb6c5e692e4241a736b`
 
@@ -3750,6 +4002,7 @@ ENV LOGSTASH_MAJOR=2.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ce81ca5a7a4ac486ae83b458d8ed0ab61526173598d6297ca21c5cba8eea358`
 
@@ -3763,6 +4016,7 @@ ENV LOGSTASH_VERSION=1:2.0.0-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f99dd91960b7b820f72bca6d1f1d3072b391c6a7bd72665d5c681e2d4e8f54b1`
 
@@ -3776,6 +4030,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:1acc40cef75e9555b726dd22567d46c21be8a42a64846310dc0c7548d2667ca1`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:42:20 GMT
 
 #### `38a4ae8bbcb8be99c10f02f96319ea9ce1ed425cd66ca7f652d9ab5108c017ba`
 
@@ -3792,6 +4047,7 @@ RUN set -x \
 -	Virtual Size: 140.4 MB (140357961 bytes)
 -	v2 Blob: `sha256:c9fae862581d33c2aab899584c25834230290a5dccd9b80c4df1fbb09b3f9748`
 -	v2 Content-Length: 81.5 MB (81533709 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:42:15 GMT
 
 #### `d13355891bba0e118a0a4d9ae311b87f84626bf086e574d275b4c26ff608bae7`
 
@@ -3805,6 +4061,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56c1bcae430dde6032247c354853bf805d817cca6c280c24edb5f70f40ad5259`
 
@@ -3818,6 +4075,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:020fb47f74bbacad292355664d83f687f5f16239215cdbe1e23af7b7c397b7ee`
 -	v2 Content-Length: 252.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:39:46 GMT
 
 #### `35f7c59ddb28b9d1420273853c1c46282bf3c224187bf99fa9000ce0d297f26b`
 
@@ -3831,6 +4089,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3780b831bfa231477412de8ef82d8c5e5b273907d910e6b3846c3ad0a99e50f7`
 
@@ -3844,6 +4103,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.0`
 
@@ -3867,6 +4127,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3880,6 +4141,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3897,6 +4159,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3914,6 +4177,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -3927,6 +4191,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -3940,6 +4205,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -3959,6 +4225,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -3972,6 +4239,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -3985,6 +4253,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -3998,6 +4267,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -4011,6 +4281,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -4030,6 +4301,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -4043,6 +4315,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -4058,6 +4331,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -4072,6 +4346,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -4085,6 +4360,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -4106,6 +4382,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -4119,6 +4396,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `6a743ef3b6132689bf739ba5c27cb332477ddb5a5fe34cb6c5e692e4241a736b`
 
@@ -4132,6 +4410,7 @@ ENV LOGSTASH_MAJOR=2.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ce81ca5a7a4ac486ae83b458d8ed0ab61526173598d6297ca21c5cba8eea358`
 
@@ -4145,6 +4424,7 @@ ENV LOGSTASH_VERSION=1:2.0.0-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f99dd91960b7b820f72bca6d1f1d3072b391c6a7bd72665d5c681e2d4e8f54b1`
 
@@ -4158,6 +4438,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:1acc40cef75e9555b726dd22567d46c21be8a42a64846310dc0c7548d2667ca1`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:42:20 GMT
 
 #### `38a4ae8bbcb8be99c10f02f96319ea9ce1ed425cd66ca7f652d9ab5108c017ba`
 
@@ -4174,6 +4455,7 @@ RUN set -x \
 -	Virtual Size: 140.4 MB (140357961 bytes)
 -	v2 Blob: `sha256:c9fae862581d33c2aab899584c25834230290a5dccd9b80c4df1fbb09b3f9748`
 -	v2 Content-Length: 81.5 MB (81533709 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:42:15 GMT
 
 #### `d13355891bba0e118a0a4d9ae311b87f84626bf086e574d275b4c26ff608bae7`
 
@@ -4187,6 +4469,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56c1bcae430dde6032247c354853bf805d817cca6c280c24edb5f70f40ad5259`
 
@@ -4200,6 +4483,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:020fb47f74bbacad292355664d83f687f5f16239215cdbe1e23af7b7c397b7ee`
 -	v2 Content-Length: 252.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:39:46 GMT
 
 #### `35f7c59ddb28b9d1420273853c1c46282bf3c224187bf99fa9000ce0d297f26b`
 
@@ -4213,6 +4497,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3780b831bfa231477412de8ef82d8c5e5b273907d910e6b3846c3ad0a99e50f7`
 
@@ -4226,6 +4511,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.1.3-1`
 
@@ -4249,6 +4535,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4262,6 +4549,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4279,6 +4567,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4296,6 +4585,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -4309,6 +4599,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -4322,6 +4613,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -4341,6 +4633,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -4354,6 +4647,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -4367,6 +4661,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -4380,6 +4675,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -4393,6 +4689,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -4412,6 +4709,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -4425,6 +4723,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -4440,6 +4739,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -4454,6 +4754,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -4467,6 +4768,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -4488,6 +4790,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -4501,6 +4804,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `1d1d36a399c72f5f69547ba7d96927f74572515e5d61f54c1d755a2e22f71f91`
 
@@ -4514,6 +4818,7 @@ ENV LOGSTASH_MAJOR=2.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5bcfc516f81b57083e480245921a4c4c8b8533b9e5885adce4b6ada071efae58`
 
@@ -4527,6 +4832,7 @@ ENV LOGSTASH_VERSION=1:2.1.3-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a5d0ec1933d37697752dbb6137b8fb6b02aba3e7668cd55cd3174936ac7baa1b`
 
@@ -4540,6 +4846,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:6d98417f3de3132eba6612dd4188c064bb49316e8233a196bcf2cb08cba51006`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:43:13 GMT
 
 #### `114cac50aaa8432175b81a78af10efd8ae34f303a16c39a21fb034635b2c1daa`
 
@@ -4556,6 +4863,7 @@ RUN set -x \
 -	Virtual Size: 135.7 MB (135685475 bytes)
 -	v2 Blob: `sha256:c1e550d210ca53d5f49ff61529c5746a992e34ade3c4a0f1af890603c36df9d4`
 -	v2 Content-Length: 75.3 MB (75337486 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:43:08 GMT
 
 #### `2b903c9a057757373a8397f9ff5699829f826a509b7c929b7d3d7267f1320c88`
 
@@ -4569,6 +4877,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e879565cc4b41f103069f08289ddc4d68d63b73c3d6285df41f3f28ab09f8bb4`
 
@@ -4582,6 +4891,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:03b8b7dc7d814a38e3c05a08bdb812a928dd71f8ed0cf689714c42364e9e94fa`
 -	v2 Content-Length: 252.0 B
+-	v2 Last-Modified: Tue, 24 Nov 2015 18:53:06 GMT
 
 #### `31e25fd3a2bc2b7f712c18a6ffd3ccdd7c78985b70411073c6d617840e142bbb`
 
@@ -4595,6 +4905,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3eb6e6c1410bc6e6b8a113f521c9dc20c634c1cfd02a72e4e3b9328dab84012f`
 
@@ -4608,6 +4919,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.1.3`
 
@@ -4631,6 +4943,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4644,6 +4957,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4661,6 +4975,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4678,6 +4993,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -4691,6 +5007,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -4704,6 +5021,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -4723,6 +5041,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -4736,6 +5055,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -4749,6 +5069,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -4762,6 +5083,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -4775,6 +5097,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -4794,6 +5117,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -4807,6 +5131,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -4822,6 +5147,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -4836,6 +5162,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -4849,6 +5176,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -4870,6 +5198,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -4883,6 +5212,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `1d1d36a399c72f5f69547ba7d96927f74572515e5d61f54c1d755a2e22f71f91`
 
@@ -4896,6 +5226,7 @@ ENV LOGSTASH_MAJOR=2.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5bcfc516f81b57083e480245921a4c4c8b8533b9e5885adce4b6ada071efae58`
 
@@ -4909,6 +5240,7 @@ ENV LOGSTASH_VERSION=1:2.1.3-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a5d0ec1933d37697752dbb6137b8fb6b02aba3e7668cd55cd3174936ac7baa1b`
 
@@ -4922,6 +5254,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:6d98417f3de3132eba6612dd4188c064bb49316e8233a196bcf2cb08cba51006`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:43:13 GMT
 
 #### `114cac50aaa8432175b81a78af10efd8ae34f303a16c39a21fb034635b2c1daa`
 
@@ -4938,6 +5271,7 @@ RUN set -x \
 -	Virtual Size: 135.7 MB (135685475 bytes)
 -	v2 Blob: `sha256:c1e550d210ca53d5f49ff61529c5746a992e34ade3c4a0f1af890603c36df9d4`
 -	v2 Content-Length: 75.3 MB (75337486 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:43:08 GMT
 
 #### `2b903c9a057757373a8397f9ff5699829f826a509b7c929b7d3d7267f1320c88`
 
@@ -4951,6 +5285,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e879565cc4b41f103069f08289ddc4d68d63b73c3d6285df41f3f28ab09f8bb4`
 
@@ -4964,6 +5299,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:03b8b7dc7d814a38e3c05a08bdb812a928dd71f8ed0cf689714c42364e9e94fa`
 -	v2 Content-Length: 252.0 B
+-	v2 Last-Modified: Tue, 24 Nov 2015 18:53:06 GMT
 
 #### `31e25fd3a2bc2b7f712c18a6ffd3ccdd7c78985b70411073c6d617840e142bbb`
 
@@ -4977,6 +5313,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3eb6e6c1410bc6e6b8a113f521c9dc20c634c1cfd02a72e4e3b9328dab84012f`
 
@@ -4990,6 +5327,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.1`
 
@@ -5013,6 +5351,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5026,6 +5365,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5043,6 +5383,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -5060,6 +5401,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -5073,6 +5415,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -5086,6 +5429,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -5105,6 +5449,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -5118,6 +5463,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -5131,6 +5477,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -5144,6 +5491,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -5157,6 +5505,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -5176,6 +5525,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5189,6 +5539,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -5204,6 +5555,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -5218,6 +5570,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -5231,6 +5584,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -5252,6 +5606,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -5265,6 +5620,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `1d1d36a399c72f5f69547ba7d96927f74572515e5d61f54c1d755a2e22f71f91`
 
@@ -5278,6 +5634,7 @@ ENV LOGSTASH_MAJOR=2.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5bcfc516f81b57083e480245921a4c4c8b8533b9e5885adce4b6ada071efae58`
 
@@ -5291,6 +5648,7 @@ ENV LOGSTASH_VERSION=1:2.1.3-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a5d0ec1933d37697752dbb6137b8fb6b02aba3e7668cd55cd3174936ac7baa1b`
 
@@ -5304,6 +5662,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:6d98417f3de3132eba6612dd4188c064bb49316e8233a196bcf2cb08cba51006`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:43:13 GMT
 
 #### `114cac50aaa8432175b81a78af10efd8ae34f303a16c39a21fb034635b2c1daa`
 
@@ -5320,6 +5679,7 @@ RUN set -x \
 -	Virtual Size: 135.7 MB (135685475 bytes)
 -	v2 Blob: `sha256:c1e550d210ca53d5f49ff61529c5746a992e34ade3c4a0f1af890603c36df9d4`
 -	v2 Content-Length: 75.3 MB (75337486 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:43:08 GMT
 
 #### `2b903c9a057757373a8397f9ff5699829f826a509b7c929b7d3d7267f1320c88`
 
@@ -5333,6 +5693,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e879565cc4b41f103069f08289ddc4d68d63b73c3d6285df41f3f28ab09f8bb4`
 
@@ -5346,6 +5707,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:03b8b7dc7d814a38e3c05a08bdb812a928dd71f8ed0cf689714c42364e9e94fa`
 -	v2 Content-Length: 252.0 B
+-	v2 Last-Modified: Tue, 24 Nov 2015 18:53:06 GMT
 
 #### `31e25fd3a2bc2b7f712c18a6ffd3ccdd7c78985b70411073c6d617840e142bbb`
 
@@ -5359,6 +5721,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3eb6e6c1410bc6e6b8a113f521c9dc20c634c1cfd02a72e4e3b9328dab84012f`
 
@@ -5372,6 +5735,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.2.3-1`
 
@@ -5395,6 +5759,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5408,6 +5773,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5425,6 +5791,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -5442,6 +5809,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -5455,6 +5823,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -5468,6 +5837,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -5487,6 +5857,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -5500,6 +5871,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -5513,6 +5885,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -5526,6 +5899,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -5539,6 +5913,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -5558,6 +5933,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5571,6 +5947,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -5586,6 +5963,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -5600,6 +5978,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -5613,6 +5992,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -5634,6 +6014,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -5647,6 +6028,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `bbea877b910a0e82aa966fcb91a7c2e483c5f9e2e26d3a968db0cea72a8a87d9`
 
@@ -5660,6 +6042,7 @@ ENV LOGSTASH_MAJOR=2.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c77a106ddf539887234f1542f9a29395085cf7ae7df97e035faf702928716d2d`
 
@@ -5673,6 +6056,7 @@ ENV LOGSTASH_VERSION=1:2.2.3-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f2c515cdbb012f11a7d8ffd6c94c8708d292f8df83e7a29fe4ad54bd30542dca`
 
@@ -5686,6 +6070,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:16dcdc29b420a9ba1bf695fc50cf3aea827d151928671e74efa732bf30e123ea`
 -	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:08 GMT
 
 #### `9210d881e672e67a2b8646fdecff9ffeca0d982c4bda1375e1e33f6667453e15`
 
@@ -5702,6 +6087,7 @@ RUN set -x \
 -	Virtual Size: 136.6 MB (136607121 bytes)
 -	v2 Blob: `sha256:5b60e5c4d4307c4f35c8f2f2320dbf43ea0331d0e9675c58238a4d3864d293cb`
 -	v2 Content-Length: 76.0 MB (76013829 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:01 GMT
 
 #### `95f23b5c2d7a9689011a8461d878d53ae13fafcf2d618b433594c7527212bdcc`
 
@@ -5715,6 +6101,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd0e54d11785d4ba17c84ee4ec655ab3144f5c1b0a6992b4ed729ff54c1f1c6`
 
@@ -5728,6 +6115,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:a27e11167e686b20f54fe7d2854cde954b18b68fc84b8453a4fd01ace1510a2b`
 -	v2 Content-Length: 252.0 B
+-	v2 Last-Modified: Tue, 02 Feb 2016 23:42:32 GMT
 
 #### `3570b281a5d8402a1848fb6efe38ddfe4c86aab7b886d7ea851a4b3dcd55f293`
 
@@ -5741,6 +6129,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `03d35d879eb26d0cd7e6230642e3cff7678e9e06c8e45ecd68593326cf122bf9`
 
@@ -5754,6 +6143,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.2.3`
 
@@ -5777,6 +6167,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5790,6 +6181,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5807,6 +6199,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -5824,6 +6217,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -5837,6 +6231,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -5850,6 +6245,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -5869,6 +6265,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -5882,6 +6279,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -5895,6 +6293,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -5908,6 +6307,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -5921,6 +6321,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -5940,6 +6341,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5953,6 +6355,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -5968,6 +6371,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -5982,6 +6386,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -5995,6 +6400,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -6016,6 +6422,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -6029,6 +6436,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `bbea877b910a0e82aa966fcb91a7c2e483c5f9e2e26d3a968db0cea72a8a87d9`
 
@@ -6042,6 +6450,7 @@ ENV LOGSTASH_MAJOR=2.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c77a106ddf539887234f1542f9a29395085cf7ae7df97e035faf702928716d2d`
 
@@ -6055,6 +6464,7 @@ ENV LOGSTASH_VERSION=1:2.2.3-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f2c515cdbb012f11a7d8ffd6c94c8708d292f8df83e7a29fe4ad54bd30542dca`
 
@@ -6068,6 +6478,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:16dcdc29b420a9ba1bf695fc50cf3aea827d151928671e74efa732bf30e123ea`
 -	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:08 GMT
 
 #### `9210d881e672e67a2b8646fdecff9ffeca0d982c4bda1375e1e33f6667453e15`
 
@@ -6084,6 +6495,7 @@ RUN set -x \
 -	Virtual Size: 136.6 MB (136607121 bytes)
 -	v2 Blob: `sha256:5b60e5c4d4307c4f35c8f2f2320dbf43ea0331d0e9675c58238a4d3864d293cb`
 -	v2 Content-Length: 76.0 MB (76013829 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:01 GMT
 
 #### `95f23b5c2d7a9689011a8461d878d53ae13fafcf2d618b433594c7527212bdcc`
 
@@ -6097,6 +6509,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd0e54d11785d4ba17c84ee4ec655ab3144f5c1b0a6992b4ed729ff54c1f1c6`
 
@@ -6110,6 +6523,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:a27e11167e686b20f54fe7d2854cde954b18b68fc84b8453a4fd01ace1510a2b`
 -	v2 Content-Length: 252.0 B
+-	v2 Last-Modified: Tue, 02 Feb 2016 23:42:32 GMT
 
 #### `3570b281a5d8402a1848fb6efe38ddfe4c86aab7b886d7ea851a4b3dcd55f293`
 
@@ -6123,6 +6537,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `03d35d879eb26d0cd7e6230642e3cff7678e9e06c8e45ecd68593326cf122bf9`
 
@@ -6136,6 +6551,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.2`
 
@@ -6159,6 +6575,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6172,6 +6589,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6189,6 +6607,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -6206,6 +6625,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -6219,6 +6639,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -6232,6 +6653,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -6251,6 +6673,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -6264,6 +6687,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -6277,6 +6701,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -6290,6 +6715,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -6303,6 +6729,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -6322,6 +6749,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -6335,6 +6763,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -6350,6 +6779,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -6364,6 +6794,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -6377,6 +6808,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -6398,6 +6830,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -6411,6 +6844,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `bbea877b910a0e82aa966fcb91a7c2e483c5f9e2e26d3a968db0cea72a8a87d9`
 
@@ -6424,6 +6858,7 @@ ENV LOGSTASH_MAJOR=2.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c77a106ddf539887234f1542f9a29395085cf7ae7df97e035faf702928716d2d`
 
@@ -6437,6 +6872,7 @@ ENV LOGSTASH_VERSION=1:2.2.3-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f2c515cdbb012f11a7d8ffd6c94c8708d292f8df83e7a29fe4ad54bd30542dca`
 
@@ -6450,6 +6886,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:16dcdc29b420a9ba1bf695fc50cf3aea827d151928671e74efa732bf30e123ea`
 -	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:08 GMT
 
 #### `9210d881e672e67a2b8646fdecff9ffeca0d982c4bda1375e1e33f6667453e15`
 
@@ -6466,6 +6903,7 @@ RUN set -x \
 -	Virtual Size: 136.6 MB (136607121 bytes)
 -	v2 Blob: `sha256:5b60e5c4d4307c4f35c8f2f2320dbf43ea0331d0e9675c58238a4d3864d293cb`
 -	v2 Content-Length: 76.0 MB (76013829 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:01 GMT
 
 #### `95f23b5c2d7a9689011a8461d878d53ae13fafcf2d618b433594c7527212bdcc`
 
@@ -6479,6 +6917,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fd0e54d11785d4ba17c84ee4ec655ab3144f5c1b0a6992b4ed729ff54c1f1c6`
 
@@ -6492,6 +6931,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:a27e11167e686b20f54fe7d2854cde954b18b68fc84b8453a4fd01ace1510a2b`
 -	v2 Content-Length: 252.0 B
+-	v2 Last-Modified: Tue, 02 Feb 2016 23:42:32 GMT
 
 #### `3570b281a5d8402a1848fb6efe38ddfe4c86aab7b886d7ea851a4b3dcd55f293`
 
@@ -6505,6 +6945,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `03d35d879eb26d0cd7e6230642e3cff7678e9e06c8e45ecd68593326cf122bf9`
 
@@ -6518,6 +6959,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.3.0-1`
 
@@ -6541,6 +6983,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6554,6 +6997,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6571,6 +7015,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -6588,6 +7033,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -6601,6 +7047,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -6614,6 +7061,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -6633,6 +7081,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -6646,6 +7095,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -6659,6 +7109,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -6672,6 +7123,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -6685,6 +7137,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -6704,6 +7157,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -6717,6 +7171,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -6732,6 +7187,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -6746,6 +7202,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -6759,6 +7216,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -6780,6 +7238,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -6793,6 +7252,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `35deb5785d9f51a8a20758fa5b90eba44863ee5eb74ea7bcd0217882aa3078b7`
 
@@ -6806,6 +7266,7 @@ ENV LOGSTASH_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5ca8c4afc6acf7e171adcf9582cdfbd6ae825ecdb7c7688aa37132e2e557fcd`
 
@@ -6819,6 +7280,7 @@ ENV LOGSTASH_VERSION=1:2.3.0-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bab782b48ba00ecd6eab8d3c0e8e9f1394ebf6dfad93ba43a24f0756d4807987`
 
@@ -6832,6 +7294,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:076a404ae6f4191d99693d8d0fee0c29794bbcbfeeced4813c52fedae8830ff1`
 -	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:45:12 GMT
 
 #### `ffd055711fde1ddacbff62e6dbd8ef97be0f0ef92353450182094675ce092ddb`
 
@@ -6848,6 +7311,7 @@ RUN set -x \
 -	Virtual Size: 134.6 MB (134621811 bytes)
 -	v2 Blob: `sha256:39d770d26a53aeeed35e6d47dada7a218bcd2b6f1ed30c4fe43b181e0f04a72c`
 -	v2 Content-Length: 74.5 MB (74497273 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:55 GMT
 
 #### `65ed3aaf3edfa9137ebef09b9859799b2284b554f18197738c84398e14acb87e`
 
@@ -6861,6 +7325,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418391067e726a1ad6220a2d2364044ebaf68cf17f656030cbac7db5877c0107`
 
@@ -6874,6 +7339,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:b3e1f2f8f97aa0f73ba07c7f09dfd9b07979c8f63603c39574ff6deb462e2c34`
 -	v2 Content-Length: 250.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:38 GMT
 
 #### `ff040908a3424823baa529998a9754f40b561282e27a11ffd3829a8c4e8a23da`
 
@@ -6887,6 +7353,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6587c8103ae5a5e31847a364c0d449279e192deae657d2a5be272057f61fe24`
 
@@ -6900,6 +7367,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.3.0`
 
@@ -6923,6 +7391,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6936,6 +7405,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6953,6 +7423,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -6970,6 +7441,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -6983,6 +7455,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -6996,6 +7469,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -7015,6 +7489,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -7028,6 +7503,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -7041,6 +7517,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -7054,6 +7531,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -7067,6 +7545,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -7086,6 +7565,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -7099,6 +7579,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -7114,6 +7595,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -7128,6 +7610,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -7141,6 +7624,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -7162,6 +7646,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -7175,6 +7660,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `35deb5785d9f51a8a20758fa5b90eba44863ee5eb74ea7bcd0217882aa3078b7`
 
@@ -7188,6 +7674,7 @@ ENV LOGSTASH_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5ca8c4afc6acf7e171adcf9582cdfbd6ae825ecdb7c7688aa37132e2e557fcd`
 
@@ -7201,6 +7688,7 @@ ENV LOGSTASH_VERSION=1:2.3.0-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bab782b48ba00ecd6eab8d3c0e8e9f1394ebf6dfad93ba43a24f0756d4807987`
 
@@ -7214,6 +7702,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:076a404ae6f4191d99693d8d0fee0c29794bbcbfeeced4813c52fedae8830ff1`
 -	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:45:12 GMT
 
 #### `ffd055711fde1ddacbff62e6dbd8ef97be0f0ef92353450182094675ce092ddb`
 
@@ -7230,6 +7719,7 @@ RUN set -x \
 -	Virtual Size: 134.6 MB (134621811 bytes)
 -	v2 Blob: `sha256:39d770d26a53aeeed35e6d47dada7a218bcd2b6f1ed30c4fe43b181e0f04a72c`
 -	v2 Content-Length: 74.5 MB (74497273 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:55 GMT
 
 #### `65ed3aaf3edfa9137ebef09b9859799b2284b554f18197738c84398e14acb87e`
 
@@ -7243,6 +7733,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418391067e726a1ad6220a2d2364044ebaf68cf17f656030cbac7db5877c0107`
 
@@ -7256,6 +7747,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:b3e1f2f8f97aa0f73ba07c7f09dfd9b07979c8f63603c39574ff6deb462e2c34`
 -	v2 Content-Length: 250.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:38 GMT
 
 #### `ff040908a3424823baa529998a9754f40b561282e27a11ffd3829a8c4e8a23da`
 
@@ -7269,6 +7761,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6587c8103ae5a5e31847a364c0d449279e192deae657d2a5be272057f61fe24`
 
@@ -7282,6 +7775,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2.3`
 
@@ -7305,6 +7799,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7318,6 +7813,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7335,6 +7831,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -7352,6 +7849,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -7365,6 +7863,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -7378,6 +7877,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -7397,6 +7897,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -7410,6 +7911,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -7423,6 +7925,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -7436,6 +7939,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -7449,6 +7953,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -7468,6 +7973,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -7481,6 +7987,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -7496,6 +8003,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -7510,6 +8018,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -7523,6 +8032,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -7544,6 +8054,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -7557,6 +8068,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `35deb5785d9f51a8a20758fa5b90eba44863ee5eb74ea7bcd0217882aa3078b7`
 
@@ -7570,6 +8082,7 @@ ENV LOGSTASH_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5ca8c4afc6acf7e171adcf9582cdfbd6ae825ecdb7c7688aa37132e2e557fcd`
 
@@ -7583,6 +8096,7 @@ ENV LOGSTASH_VERSION=1:2.3.0-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bab782b48ba00ecd6eab8d3c0e8e9f1394ebf6dfad93ba43a24f0756d4807987`
 
@@ -7596,6 +8110,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:076a404ae6f4191d99693d8d0fee0c29794bbcbfeeced4813c52fedae8830ff1`
 -	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:45:12 GMT
 
 #### `ffd055711fde1ddacbff62e6dbd8ef97be0f0ef92353450182094675ce092ddb`
 
@@ -7612,6 +8127,7 @@ RUN set -x \
 -	Virtual Size: 134.6 MB (134621811 bytes)
 -	v2 Blob: `sha256:39d770d26a53aeeed35e6d47dada7a218bcd2b6f1ed30c4fe43b181e0f04a72c`
 -	v2 Content-Length: 74.5 MB (74497273 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:55 GMT
 
 #### `65ed3aaf3edfa9137ebef09b9859799b2284b554f18197738c84398e14acb87e`
 
@@ -7625,6 +8141,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418391067e726a1ad6220a2d2364044ebaf68cf17f656030cbac7db5877c0107`
 
@@ -7638,6 +8155,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:b3e1f2f8f97aa0f73ba07c7f09dfd9b07979c8f63603c39574ff6deb462e2c34`
 -	v2 Content-Length: 250.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:38 GMT
 
 #### `ff040908a3424823baa529998a9754f40b561282e27a11ffd3829a8c4e8a23da`
 
@@ -7651,6 +8169,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6587c8103ae5a5e31847a364c0d449279e192deae657d2a5be272057f61fe24`
 
@@ -7664,6 +8183,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:2`
 
@@ -7687,6 +8207,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7700,6 +8221,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7717,6 +8239,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -7734,6 +8257,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -7747,6 +8271,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -7760,6 +8285,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -7779,6 +8305,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -7792,6 +8319,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -7805,6 +8333,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -7818,6 +8347,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -7831,6 +8361,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -7850,6 +8381,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -7863,6 +8395,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -7878,6 +8411,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -7892,6 +8426,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -7905,6 +8440,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -7926,6 +8462,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -7939,6 +8476,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `35deb5785d9f51a8a20758fa5b90eba44863ee5eb74ea7bcd0217882aa3078b7`
 
@@ -7952,6 +8490,7 @@ ENV LOGSTASH_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5ca8c4afc6acf7e171adcf9582cdfbd6ae825ecdb7c7688aa37132e2e557fcd`
 
@@ -7965,6 +8504,7 @@ ENV LOGSTASH_VERSION=1:2.3.0-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bab782b48ba00ecd6eab8d3c0e8e9f1394ebf6dfad93ba43a24f0756d4807987`
 
@@ -7978,6 +8518,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:076a404ae6f4191d99693d8d0fee0c29794bbcbfeeced4813c52fedae8830ff1`
 -	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:45:12 GMT
 
 #### `ffd055711fde1ddacbff62e6dbd8ef97be0f0ef92353450182094675ce092ddb`
 
@@ -7994,6 +8535,7 @@ RUN set -x \
 -	Virtual Size: 134.6 MB (134621811 bytes)
 -	v2 Blob: `sha256:39d770d26a53aeeed35e6d47dada7a218bcd2b6f1ed30c4fe43b181e0f04a72c`
 -	v2 Content-Length: 74.5 MB (74497273 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:55 GMT
 
 #### `65ed3aaf3edfa9137ebef09b9859799b2284b554f18197738c84398e14acb87e`
 
@@ -8007,6 +8549,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418391067e726a1ad6220a2d2364044ebaf68cf17f656030cbac7db5877c0107`
 
@@ -8020,6 +8563,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:b3e1f2f8f97aa0f73ba07c7f09dfd9b07979c8f63603c39574ff6deb462e2c34`
 -	v2 Content-Length: 250.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:38 GMT
 
 #### `ff040908a3424823baa529998a9754f40b561282e27a11ffd3829a8c4e8a23da`
 
@@ -8033,6 +8577,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6587c8103ae5a5e31847a364c0d449279e192deae657d2a5be272057f61fe24`
 
@@ -8046,6 +8591,7 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:latest`
 
@@ -8069,6 +8615,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8082,6 +8629,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -8099,6 +8647,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -8116,6 +8665,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -8129,6 +8679,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -8142,6 +8693,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -8161,6 +8713,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -8174,6 +8727,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -8187,6 +8741,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -8200,6 +8755,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -8213,6 +8769,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -8232,6 +8789,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -8245,6 +8803,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `09d3dd78a83720660bdd4769ce6428f1324d72bbe6cef3b92795324b07ad0e96`
 
@@ -8260,6 +8819,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.9 MB (1874160 bytes)
 -	v2 Blob: `sha256:7c88bc870daeb0caa3ecdf40dcc9acf90fdccfc33308df677bf0193cd442110a`
 -	v2 Content-Length: 933.9 KB (933924 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:25 GMT
 
 #### `7b5b29794c0f5395cd2b54e9bc3687e12e1a2e4a096f4bfd2ba0ac5d3651c8c4`
 
@@ -8274,6 +8834,7 @@ RUN mkdir -p /usr/local/lib \
 -	Virtual Size: 37.0 B
 -	v2 Blob: `sha256:06584954262ea17fef17356ce0b3e52b7f046d887de5f29e6911efa3ba14e8b2`
 -	v2 Content-Length: 191.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:23 GMT
 
 #### `259ed153028dce136398b08f75be9e2b826ff7cb51f154366f7e41bc5d212aa2`
 
@@ -8287,6 +8848,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbf7d253947cc740f9648e93143d01122d1653596e29c369adac05fc199b6230`
 
@@ -8308,6 +8870,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:00cb1f2d3e646355d6f7bf6639c11a3273e046b5ff57852d3a6a2dab60dd076c`
 -	v2 Content-Length: 807.9 KB (807929 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:19 GMT
 
 #### `d79aed8e893faf2bfa77325bcbb90a6d97213895fc1e621ab2db79c7b2ce6013`
 
@@ -8321,6 +8884,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:3260d87061eb7417de5025b7eeb91e42781fd8f0df7fa406947ef6dabc432f6d`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:40:15 GMT
 
 #### `35deb5785d9f51a8a20758fa5b90eba44863ee5eb74ea7bcd0217882aa3078b7`
 
@@ -8334,6 +8898,7 @@ ENV LOGSTASH_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5ca8c4afc6acf7e171adcf9582cdfbd6ae825ecdb7c7688aa37132e2e557fcd`
 
@@ -8347,6 +8912,7 @@ ENV LOGSTASH_VERSION=1:2.3.0-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bab782b48ba00ecd6eab8d3c0e8e9f1394ebf6dfad93ba43a24f0756d4807987`
 
@@ -8360,6 +8926,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:076a404ae6f4191d99693d8d0fee0c29794bbcbfeeced4813c52fedae8830ff1`
 -	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:45:12 GMT
 
 #### `ffd055711fde1ddacbff62e6dbd8ef97be0f0ef92353450182094675ce092ddb`
 
@@ -8376,6 +8943,7 @@ RUN set -x \
 -	Virtual Size: 134.6 MB (134621811 bytes)
 -	v2 Blob: `sha256:39d770d26a53aeeed35e6d47dada7a218bcd2b6f1ed30c4fe43b181e0f04a72c`
 -	v2 Content-Length: 74.5 MB (74497273 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:55 GMT
 
 #### `65ed3aaf3edfa9137ebef09b9859799b2284b554f18197738c84398e14acb87e`
 
@@ -8389,6 +8957,7 @@ ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418391067e726a1ad6220a2d2364044ebaf68cf17f656030cbac7db5877c0107`
 
@@ -8402,6 +8971,7 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:b3e1f2f8f97aa0f73ba07c7f09dfd9b07979c8f63603c39574ff6deb462e2c34`
 -	v2 Content-Length: 250.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:44:38 GMT
 
 #### `ff040908a3424823baa529998a9754f40b561282e27a11ffd3829a8c4e8a23da`
 
@@ -8415,6 +8985,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6587c8103ae5a5e31847a364c0d449279e192deae657d2a5be272057f61fe24`
 
@@ -8428,3 +8999,4 @@ CMD ["logstash" "agent"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

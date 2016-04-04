@@ -80,6 +80,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -157,6 +158,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -234,6 +236,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -311,6 +314,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -348,6 +352,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -425,6 +430,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -502,6 +508,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -579,6 +586,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -656,6 +664,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 

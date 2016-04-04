@@ -37,6 +37,7 @@ ADD file:1978c4eec755462e5b1b293602ad22cacf2f61392b909537d893e2c054e9a04a in /
 -	Virtual Size: 85.8 MB (85781002 bytes)
 -	v2 Blob: `sha256:c2a68515378ac0ab2f47e61f452016afb3d29346539245bceaefe53ea99551c8`
 -	v2 Content-Length: 35.6 MB (35567687 bytes)
+-	v2 Last-Modified: Thu, 20 Aug 2015 23:54:51 GMT
 
 #### `6fdc7ecb7bc81b700573ed4a0aad2e5b87140cfa225db85a7a73ea319723ef52`
 
@@ -50,6 +51,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-debootstrap:12.04`
 
@@ -73,6 +75,7 @@ ADD file:1978c4eec755462e5b1b293602ad22cacf2f61392b909537d893e2c054e9a04a in /
 -	Virtual Size: 85.8 MB (85781002 bytes)
 -	v2 Blob: `sha256:c2a68515378ac0ab2f47e61f452016afb3d29346539245bceaefe53ea99551c8`
 -	v2 Content-Length: 35.6 MB (35567687 bytes)
+-	v2 Last-Modified: Thu, 20 Aug 2015 23:54:51 GMT
 
 #### `6fdc7ecb7bc81b700573ed4a0aad2e5b87140cfa225db85a7a73ea319723ef52`
 
@@ -86,6 +89,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-debootstrap:precise`
 
@@ -109,6 +113,7 @@ ADD file:1978c4eec755462e5b1b293602ad22cacf2f61392b909537d893e2c054e9a04a in /
 -	Virtual Size: 85.8 MB (85781002 bytes)
 -	v2 Blob: `sha256:c2a68515378ac0ab2f47e61f452016afb3d29346539245bceaefe53ea99551c8`
 -	v2 Content-Length: 35.6 MB (35567687 bytes)
+-	v2 Last-Modified: Thu, 20 Aug 2015 23:54:51 GMT
 
 #### `6fdc7ecb7bc81b700573ed4a0aad2e5b87140cfa225db85a7a73ea319723ef52`
 
@@ -122,6 +127,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-debootstrap:14.04.3`
 
@@ -145,6 +151,7 @@ ADD file:1d6c943b8cfe3ff8248653657d4bdd832f647e03df1925d1df6444c1b6e7a4e0 in /
 -	Virtual Size: 87.1 MB (87087291 bytes)
 -	v2 Blob: `sha256:c02c7df4a131d5f0376e1c7f1648add5f443facc8e18c7deeb0e85af7308ec76`
 -	v2 Content-Length: 34.9 MB (34865160 bytes)
+-	v2 Last-Modified: Thu, 20 Aug 2015 23:55:51 GMT
 
 #### `cb54a9ba0f34d140e8a03e7b9bf736a891b5526edc7b49f7c910bdf5e5cf5162`
 
@@ -158,6 +165,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-debootstrap:14.04`
 
@@ -181,6 +189,7 @@ ADD file:1d6c943b8cfe3ff8248653657d4bdd832f647e03df1925d1df6444c1b6e7a4e0 in /
 -	Virtual Size: 87.1 MB (87087291 bytes)
 -	v2 Blob: `sha256:c02c7df4a131d5f0376e1c7f1648add5f443facc8e18c7deeb0e85af7308ec76`
 -	v2 Content-Length: 34.9 MB (34865160 bytes)
+-	v2 Last-Modified: Thu, 20 Aug 2015 23:55:51 GMT
 
 #### `cb54a9ba0f34d140e8a03e7b9bf736a891b5526edc7b49f7c910bdf5e5cf5162`
 
@@ -194,6 +203,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-debootstrap:trusty`
 
@@ -217,6 +227,7 @@ ADD file:1d6c943b8cfe3ff8248653657d4bdd832f647e03df1925d1df6444c1b6e7a4e0 in /
 -	Virtual Size: 87.1 MB (87087291 bytes)
 -	v2 Blob: `sha256:c02c7df4a131d5f0376e1c7f1648add5f443facc8e18c7deeb0e85af7308ec76`
 -	v2 Content-Length: 34.9 MB (34865160 bytes)
+-	v2 Last-Modified: Thu, 20 Aug 2015 23:55:51 GMT
 
 #### `cb54a9ba0f34d140e8a03e7b9bf736a891b5526edc7b49f7c910bdf5e5cf5162`
 
@@ -230,6 +241,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-debootstrap:latest`
 
@@ -253,6 +265,7 @@ ADD file:1d6c943b8cfe3ff8248653657d4bdd832f647e03df1925d1df6444c1b6e7a4e0 in /
 -	Virtual Size: 87.1 MB (87087291 bytes)
 -	v2 Blob: `sha256:c02c7df4a131d5f0376e1c7f1648add5f443facc8e18c7deeb0e85af7308ec76`
 -	v2 Content-Length: 34.9 MB (34865160 bytes)
+-	v2 Last-Modified: Thu, 20 Aug 2015 23:55:51 GMT
 
 #### `cb54a9ba0f34d140e8a03e7b9bf736a891b5526edc7b49f7c910bdf5e5cf5162`
 
@@ -266,6 +279,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-debootstrap:15.04`
 
@@ -303,6 +317,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-debootstrap:vivid`
 
@@ -340,6 +355,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-debootstrap:15.10`
 
@@ -363,6 +379,7 @@ ADD file:699c6d39fef26eb23c346031700b5bdb1a5c68423e8c2f482b4c5e8b2b682322 in /
 -	Virtual Size: 111.0 MB (110989448 bytes)
 -	v2 Blob: `sha256:4be0eda8c0e03d6d036656cef154dc8b1475312ec8ccbee5b2b5440ddda3579f`
 -	v2 Content-Length: 44.4 MB (44394296 bytes)
+-	v2 Last-Modified: Thu, 20 Aug 2015 23:58:02 GMT
 
 #### `23c445f92f1274dc3fad69d0781046e93bfdfb273ce799416b0ff8e05956a170`
 
@@ -376,6 +393,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-debootstrap:wily`
 
@@ -399,6 +417,7 @@ ADD file:699c6d39fef26eb23c346031700b5bdb1a5c68423e8c2f482b4c5e8b2b682322 in /
 -	Virtual Size: 111.0 MB (110989448 bytes)
 -	v2 Blob: `sha256:4be0eda8c0e03d6d036656cef154dc8b1475312ec8ccbee5b2b5440ddda3579f`
 -	v2 Content-Length: 44.4 MB (44394296 bytes)
+-	v2 Last-Modified: Thu, 20 Aug 2015 23:58:02 GMT
 
 #### `23c445f92f1274dc3fad69d0781046e93bfdfb273ce799416b0ff8e05956a170`
 
@@ -412,6 +431,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-debootstrap:devel`
 
@@ -449,3 +469,4 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

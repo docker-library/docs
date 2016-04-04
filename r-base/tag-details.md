@@ -72,6 +72,7 @@ RUN useradd docker \
 -	Virtual Size: 330.9 KB (330909 bytes)
 -	v2 Blob: `sha256:931e71193a1f8fc00291196f95b58450151429ccf73cfd1a506c4772d007afa5`
 -	v2 Content-Length: 2.1 KB (2110 bytes)
+-	v2 Last-Modified: Thu, 31 Mar 2016 22:31:21 GMT
 
 #### `23d20a2473102833512af460498442abf36b298d79ba0ba85703eb1dc570c362`
 
@@ -109,6 +110,7 @@ RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
 -	Virtual Size: 1.6 MB (1638740 bytes)
 -	v2 Blob: `sha256:0fa72e65997e6d57c5ba408aef2bb7a7feeacaac10a6a6dfef70954652c34c64`
 -	v2 Content-Length: 330.1 KB (330072 bytes)
+-	v2 Last-Modified: Thu, 31 Mar 2016 22:31:06 GMT
 
 #### `db7844785afe479fa1f198bb171f71c42e59fdc7bb57b8a2cb9d3ae0b108beac`
 
@@ -151,6 +153,7 @@ RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/
 -	Virtual Size: 75.0 B
 -	v2 Blob: `sha256:1ad7cb8b6870234136fe3a35ce69e81d99e8aded2d9612067034d7287efe582b`
 -	v2 Content-Length: 292.0 B
+-	v2 Last-Modified: Thu, 31 Mar 2016 22:30:59 GMT
 
 #### `e000796f0f15292f6c1541987eb891a73a453fce331b4dcd123abbb5cf1c89e2`
 
@@ -193,6 +196,7 @@ RUN apt-get update \
 -	Virtual Size: 871.7 MB (871732784 bytes)
 -	v2 Blob: `sha256:c2531534e59ddb98240c54e78fdf223172f8329702d0671ca3a1a76d23e485f5`
 -	v2 Content-Length: 349.7 MB (349650178 bytes)
+-	v2 Last-Modified: Thu, 31 Mar 2016 22:30:42 GMT
 
 #### `d6b7b82c46d4432739c8196456849127d217eb85a1773208e35999e72b63c09f`
 
@@ -275,6 +279,7 @@ RUN useradd docker \
 -	Virtual Size: 330.9 KB (330909 bytes)
 -	v2 Blob: `sha256:931e71193a1f8fc00291196f95b58450151429ccf73cfd1a506c4772d007afa5`
 -	v2 Content-Length: 2.1 KB (2110 bytes)
+-	v2 Last-Modified: Thu, 31 Mar 2016 22:31:21 GMT
 
 #### `23d20a2473102833512af460498442abf36b298d79ba0ba85703eb1dc570c362`
 
@@ -312,6 +317,7 @@ RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
 -	Virtual Size: 1.6 MB (1638740 bytes)
 -	v2 Blob: `sha256:0fa72e65997e6d57c5ba408aef2bb7a7feeacaac10a6a6dfef70954652c34c64`
 -	v2 Content-Length: 330.1 KB (330072 bytes)
+-	v2 Last-Modified: Thu, 31 Mar 2016 22:31:06 GMT
 
 #### `db7844785afe479fa1f198bb171f71c42e59fdc7bb57b8a2cb9d3ae0b108beac`
 
@@ -354,6 +360,7 @@ RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/
 -	Virtual Size: 75.0 B
 -	v2 Blob: `sha256:1ad7cb8b6870234136fe3a35ce69e81d99e8aded2d9612067034d7287efe582b`
 -	v2 Content-Length: 292.0 B
+-	v2 Last-Modified: Thu, 31 Mar 2016 22:30:59 GMT
 
 #### `e000796f0f15292f6c1541987eb891a73a453fce331b4dcd123abbb5cf1c89e2`
 
@@ -396,6 +403,7 @@ RUN apt-get update \
 -	Virtual Size: 871.7 MB (871732784 bytes)
 -	v2 Blob: `sha256:c2531534e59ddb98240c54e78fdf223172f8329702d0671ca3a1a76d23e485f5`
 -	v2 Content-Length: 349.7 MB (349650178 bytes)
+-	v2 Last-Modified: Thu, 31 Mar 2016 22:30:42 GMT
 
 #### `d6b7b82c46d4432739c8196456849127d217eb85a1773208e35999e72b63c09f`
 

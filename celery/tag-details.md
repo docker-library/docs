@@ -29,6 +29,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -42,6 +43,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -55,6 +57,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -68,6 +71,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a699b99b291e96839ab8f72057dc1753a256fc3788d512f943fdd3ca3028acb`
 
@@ -85,6 +89,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -98,6 +103,7 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2347eb9d7b5d21e012e73c4d594f3f29a9d8c0af59e01ae7c55332faa49690a`
 
@@ -111,6 +117,7 @@ ENV PYTHON_VERSION=3.4.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b907fdf3566db3780369e2a4bfffd14ed418ac0e7d17805da8f16d5c04d30c8`
 
@@ -124,6 +131,7 @@ ENV PYTHON_PIP_VERSION=8.1.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `599d984d792552107c2ac21e29c0992da8e1f5c6151cef4dbc37fd520915df17`
 
@@ -172,6 +180,7 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -190,6 +199,7 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -203,6 +213,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c357715085b065ae545fdc26a3d8f1b02277e589df0685243e0fe6e97adc04b2`
 
@@ -216,6 +227,7 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:c46a42807696c07efefe1802e2d2055db5d8ec0ecf40b2309f6cdaf56612d82f`
 -	v2 Content-Length: 4.3 KB (4334 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:44 GMT
 
 #### `2cf4cc8995def30b97cd1da1f3dea8f95e696a8e02155e762e11d6a3602f9465`
 
@@ -229,6 +241,7 @@ WORKDIR /home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a6856d227665f7c277a3e7b56718c0740f5bdfee87e378fe68c5326ae039afe0`
 
@@ -242,6 +255,7 @@ RUN pip install redis
 -	Virtual Size: 4.4 MB (4356387 bytes)
 -	v2 Blob: `sha256:2370c3207f2f1af6aaf359384fabee8ce4b85e7a08ce92709d1855ae716450b5`
 -	v2 Content-Length: 1.7 MB (1663276 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:38 GMT
 
 #### `7e0c95d4978e210b4e76f98be52e090ad0e0b1a66dcd2c97002643a2f19f2aab`
 
@@ -255,6 +269,7 @@ ENV CELERY_VERSION=3.1.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e2baf7c9c06cdcce31d8119a131475532c892ea29911d2f6fd1cfdbcdfcbd7fd`
 
@@ -268,6 +283,7 @@ RUN pip install celery=="$CELERY_VERSION"
 -	Virtual Size: 10.1 MB (10127647 bytes)
 -	v2 Blob: `sha256:693136eeef0bd885c4b46a343b5fb8e14968bc498ecfb0c7ea4e04d146bea326`
 -	v2 Content-Length: 4.1 MB (4058028 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:11:44 GMT
 
 #### `813fc952e3e0dc9ea2fffdca0eb40e42acc438f573d209e9af0cb54aba1611ce`
 
@@ -283,6 +299,7 @@ RUN { \
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:02126534924a7ee996402b437fa4b358b9a337b0e461fce24441967bdc454d80`
 -	v2 Content-Length: 232.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:11:36 GMT
 
 #### `248b5af051cf984fafffa1ab3531e603bc9a3c26c0ba637c2579acc7dd5d0114`
 
@@ -296,6 +313,7 @@ ENV CELERY_BROKER_URL=amqp://guest@rabbit
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `80681d164e9222711be8a8244a76249eb4192b67942ca286d82137dc99e49837`
 
@@ -309,6 +327,7 @@ USER [user]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ce2886006e17cacf070c532045aa3a9b3e1dc6eb4c92c0b740402c753e32d9d`
 
@@ -322,6 +341,7 @@ CMD ["celery" "worker"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `celery:3.1`
 
@@ -345,6 +365,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -358,6 +379,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -371,6 +393,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -384,6 +407,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a699b99b291e96839ab8f72057dc1753a256fc3788d512f943fdd3ca3028acb`
 
@@ -401,6 +425,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -414,6 +439,7 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2347eb9d7b5d21e012e73c4d594f3f29a9d8c0af59e01ae7c55332faa49690a`
 
@@ -427,6 +453,7 @@ ENV PYTHON_VERSION=3.4.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b907fdf3566db3780369e2a4bfffd14ed418ac0e7d17805da8f16d5c04d30c8`
 
@@ -440,6 +467,7 @@ ENV PYTHON_PIP_VERSION=8.1.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `599d984d792552107c2ac21e29c0992da8e1f5c6151cef4dbc37fd520915df17`
 
@@ -488,6 +516,7 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -506,6 +535,7 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -519,6 +549,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c357715085b065ae545fdc26a3d8f1b02277e589df0685243e0fe6e97adc04b2`
 
@@ -532,6 +563,7 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:c46a42807696c07efefe1802e2d2055db5d8ec0ecf40b2309f6cdaf56612d82f`
 -	v2 Content-Length: 4.3 KB (4334 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:44 GMT
 
 #### `2cf4cc8995def30b97cd1da1f3dea8f95e696a8e02155e762e11d6a3602f9465`
 
@@ -545,6 +577,7 @@ WORKDIR /home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a6856d227665f7c277a3e7b56718c0740f5bdfee87e378fe68c5326ae039afe0`
 
@@ -558,6 +591,7 @@ RUN pip install redis
 -	Virtual Size: 4.4 MB (4356387 bytes)
 -	v2 Blob: `sha256:2370c3207f2f1af6aaf359384fabee8ce4b85e7a08ce92709d1855ae716450b5`
 -	v2 Content-Length: 1.7 MB (1663276 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:38 GMT
 
 #### `7e0c95d4978e210b4e76f98be52e090ad0e0b1a66dcd2c97002643a2f19f2aab`
 
@@ -571,6 +605,7 @@ ENV CELERY_VERSION=3.1.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e2baf7c9c06cdcce31d8119a131475532c892ea29911d2f6fd1cfdbcdfcbd7fd`
 
@@ -584,6 +619,7 @@ RUN pip install celery=="$CELERY_VERSION"
 -	Virtual Size: 10.1 MB (10127647 bytes)
 -	v2 Blob: `sha256:693136eeef0bd885c4b46a343b5fb8e14968bc498ecfb0c7ea4e04d146bea326`
 -	v2 Content-Length: 4.1 MB (4058028 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:11:44 GMT
 
 #### `813fc952e3e0dc9ea2fffdca0eb40e42acc438f573d209e9af0cb54aba1611ce`
 
@@ -599,6 +635,7 @@ RUN { \
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:02126534924a7ee996402b437fa4b358b9a337b0e461fce24441967bdc454d80`
 -	v2 Content-Length: 232.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:11:36 GMT
 
 #### `248b5af051cf984fafffa1ab3531e603bc9a3c26c0ba637c2579acc7dd5d0114`
 
@@ -612,6 +649,7 @@ ENV CELERY_BROKER_URL=amqp://guest@rabbit
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `80681d164e9222711be8a8244a76249eb4192b67942ca286d82137dc99e49837`
 
@@ -625,6 +663,7 @@ USER [user]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ce2886006e17cacf070c532045aa3a9b3e1dc6eb4c92c0b740402c753e32d9d`
 
@@ -638,6 +677,7 @@ CMD ["celery" "worker"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `celery:3`
 
@@ -661,6 +701,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -674,6 +715,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -687,6 +729,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -700,6 +743,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a699b99b291e96839ab8f72057dc1753a256fc3788d512f943fdd3ca3028acb`
 
@@ -717,6 +761,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -730,6 +775,7 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2347eb9d7b5d21e012e73c4d594f3f29a9d8c0af59e01ae7c55332faa49690a`
 
@@ -743,6 +789,7 @@ ENV PYTHON_VERSION=3.4.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b907fdf3566db3780369e2a4bfffd14ed418ac0e7d17805da8f16d5c04d30c8`
 
@@ -756,6 +803,7 @@ ENV PYTHON_PIP_VERSION=8.1.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `599d984d792552107c2ac21e29c0992da8e1f5c6151cef4dbc37fd520915df17`
 
@@ -804,6 +852,7 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -822,6 +871,7 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -835,6 +885,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c357715085b065ae545fdc26a3d8f1b02277e589df0685243e0fe6e97adc04b2`
 
@@ -848,6 +899,7 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:c46a42807696c07efefe1802e2d2055db5d8ec0ecf40b2309f6cdaf56612d82f`
 -	v2 Content-Length: 4.3 KB (4334 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:44 GMT
 
 #### `2cf4cc8995def30b97cd1da1f3dea8f95e696a8e02155e762e11d6a3602f9465`
 
@@ -861,6 +913,7 @@ WORKDIR /home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a6856d227665f7c277a3e7b56718c0740f5bdfee87e378fe68c5326ae039afe0`
 
@@ -874,6 +927,7 @@ RUN pip install redis
 -	Virtual Size: 4.4 MB (4356387 bytes)
 -	v2 Blob: `sha256:2370c3207f2f1af6aaf359384fabee8ce4b85e7a08ce92709d1855ae716450b5`
 -	v2 Content-Length: 1.7 MB (1663276 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:38 GMT
 
 #### `7e0c95d4978e210b4e76f98be52e090ad0e0b1a66dcd2c97002643a2f19f2aab`
 
@@ -887,6 +941,7 @@ ENV CELERY_VERSION=3.1.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e2baf7c9c06cdcce31d8119a131475532c892ea29911d2f6fd1cfdbcdfcbd7fd`
 
@@ -900,6 +955,7 @@ RUN pip install celery=="$CELERY_VERSION"
 -	Virtual Size: 10.1 MB (10127647 bytes)
 -	v2 Blob: `sha256:693136eeef0bd885c4b46a343b5fb8e14968bc498ecfb0c7ea4e04d146bea326`
 -	v2 Content-Length: 4.1 MB (4058028 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:11:44 GMT
 
 #### `813fc952e3e0dc9ea2fffdca0eb40e42acc438f573d209e9af0cb54aba1611ce`
 
@@ -915,6 +971,7 @@ RUN { \
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:02126534924a7ee996402b437fa4b358b9a337b0e461fce24441967bdc454d80`
 -	v2 Content-Length: 232.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:11:36 GMT
 
 #### `248b5af051cf984fafffa1ab3531e603bc9a3c26c0ba637c2579acc7dd5d0114`
 
@@ -928,6 +985,7 @@ ENV CELERY_BROKER_URL=amqp://guest@rabbit
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `80681d164e9222711be8a8244a76249eb4192b67942ca286d82137dc99e49837`
 
@@ -941,6 +999,7 @@ USER [user]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ce2886006e17cacf070c532045aa3a9b3e1dc6eb4c92c0b740402c753e32d9d`
 
@@ -954,6 +1013,7 @@ CMD ["celery" "worker"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `celery:latest`
 
@@ -977,6 +1037,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -990,6 +1051,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -1003,6 +1065,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -1016,6 +1079,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a699b99b291e96839ab8f72057dc1753a256fc3788d512f943fdd3ca3028acb`
 
@@ -1033,6 +1097,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -1046,6 +1111,7 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2347eb9d7b5d21e012e73c4d594f3f29a9d8c0af59e01ae7c55332faa49690a`
 
@@ -1059,6 +1125,7 @@ ENV PYTHON_VERSION=3.4.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b907fdf3566db3780369e2a4bfffd14ed418ac0e7d17805da8f16d5c04d30c8`
 
@@ -1072,6 +1139,7 @@ ENV PYTHON_PIP_VERSION=8.1.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `599d984d792552107c2ac21e29c0992da8e1f5c6151cef4dbc37fd520915df17`
 
@@ -1120,6 +1188,7 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -1138,6 +1207,7 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -1151,6 +1221,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c357715085b065ae545fdc26a3d8f1b02277e589df0685243e0fe6e97adc04b2`
 
@@ -1164,6 +1235,7 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:c46a42807696c07efefe1802e2d2055db5d8ec0ecf40b2309f6cdaf56612d82f`
 -	v2 Content-Length: 4.3 KB (4334 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:44 GMT
 
 #### `2cf4cc8995def30b97cd1da1f3dea8f95e696a8e02155e762e11d6a3602f9465`
 
@@ -1177,6 +1249,7 @@ WORKDIR /home/user
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a6856d227665f7c277a3e7b56718c0740f5bdfee87e378fe68c5326ae039afe0`
 
@@ -1190,6 +1263,7 @@ RUN pip install redis
 -	Virtual Size: 4.4 MB (4356387 bytes)
 -	v2 Blob: `sha256:2370c3207f2f1af6aaf359384fabee8ce4b85e7a08ce92709d1855ae716450b5`
 -	v2 Content-Length: 1.7 MB (1663276 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:24:38 GMT
 
 #### `7e0c95d4978e210b4e76f98be52e090ad0e0b1a66dcd2c97002643a2f19f2aab`
 
@@ -1203,6 +1277,7 @@ ENV CELERY_VERSION=3.1.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e2baf7c9c06cdcce31d8119a131475532c892ea29911d2f6fd1cfdbcdfcbd7fd`
 
@@ -1216,6 +1291,7 @@ RUN pip install celery=="$CELERY_VERSION"
 -	Virtual Size: 10.1 MB (10127647 bytes)
 -	v2 Blob: `sha256:693136eeef0bd885c4b46a343b5fb8e14968bc498ecfb0c7ea4e04d146bea326`
 -	v2 Content-Length: 4.1 MB (4058028 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:11:44 GMT
 
 #### `813fc952e3e0dc9ea2fffdca0eb40e42acc438f573d209e9af0cb54aba1611ce`
 
@@ -1231,6 +1307,7 @@ RUN { \
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:02126534924a7ee996402b437fa4b358b9a337b0e461fce24441967bdc454d80`
 -	v2 Content-Length: 232.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:11:36 GMT
 
 #### `248b5af051cf984fafffa1ab3531e603bc9a3c26c0ba637c2579acc7dd5d0114`
 
@@ -1244,6 +1321,7 @@ ENV CELERY_BROKER_URL=amqp://guest@rabbit
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `80681d164e9222711be8a8244a76249eb4192b67942ca286d82137dc99e49837`
 
@@ -1257,6 +1335,7 @@ USER [user]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ce2886006e17cacf070c532045aa3a9b3e1dc6eb4c92c0b740402c753e32d9d`
 
@@ -1270,3 +1349,4 @@ CMD ["celery" "worker"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

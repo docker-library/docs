@@ -42,6 +42,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ff9c2740a9adc9edfaac97f77a8690d576dd4c866106a53d2f5af6f773a4252d`
 
@@ -85,6 +86,7 @@ COPY file:a478f74440f88ea974a27f7286adb23d0c9b5881c487a0eea2dc551c2320a7c1 in /e
 -	Virtual Size: 315.0 B
 -	v2 Blob: `sha256:4831699594bca2432e2fdbe44d2566ab0bc00e27629be720c66883b1c4df018c`
 -	v2 Content-Length: 379.0 B
+-	v2 Last-Modified: Tue, 08 Mar 2016 21:09:05 GMT
 
 #### `f8d59247ae98914a7ba9fa05a83ef87beed4d81c1f42d383434171a0f3c61b5c`
 
@@ -98,6 +100,7 @@ VOLUME [/var/lib/registry]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `71ec1472d5d080fa6f5536a682632ec6ff24d014ba1c62b2ce307c4d02214db1`
 
@@ -111,6 +114,7 @@ EXPOSE 5000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c72dce2618dc8f7b794d2b2c2b1e64e0205ead5befc294f8111da23bd6a2c799`
 
@@ -124,6 +128,7 @@ ENTRYPOINT &{["/bin/registry"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65b0a3f42eef70d1e5490127dbc68bade2dcdce4c0cd8e0fc4a31a4c4458874c`
 
@@ -137,6 +142,7 @@ CMD ["/etc/docker/registry/config.yml"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `registry:2.3`
 
@@ -174,6 +180,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ff9c2740a9adc9edfaac97f77a8690d576dd4c866106a53d2f5af6f773a4252d`
 
@@ -217,6 +224,7 @@ COPY file:a478f74440f88ea974a27f7286adb23d0c9b5881c487a0eea2dc551c2320a7c1 in /e
 -	Virtual Size: 315.0 B
 -	v2 Blob: `sha256:4831699594bca2432e2fdbe44d2566ab0bc00e27629be720c66883b1c4df018c`
 -	v2 Content-Length: 379.0 B
+-	v2 Last-Modified: Tue, 08 Mar 2016 21:09:05 GMT
 
 #### `f8d59247ae98914a7ba9fa05a83ef87beed4d81c1f42d383434171a0f3c61b5c`
 
@@ -230,6 +238,7 @@ VOLUME [/var/lib/registry]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `71ec1472d5d080fa6f5536a682632ec6ff24d014ba1c62b2ce307c4d02214db1`
 
@@ -243,6 +252,7 @@ EXPOSE 5000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c72dce2618dc8f7b794d2b2c2b1e64e0205ead5befc294f8111da23bd6a2c799`
 
@@ -256,6 +266,7 @@ ENTRYPOINT &{["/bin/registry"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65b0a3f42eef70d1e5490127dbc68bade2dcdce4c0cd8e0fc4a31a4c4458874c`
 
@@ -269,6 +280,7 @@ CMD ["/etc/docker/registry/config.yml"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `registry:2.3.1`
 
@@ -306,6 +318,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ff9c2740a9adc9edfaac97f77a8690d576dd4c866106a53d2f5af6f773a4252d`
 
@@ -349,6 +362,7 @@ COPY file:a478f74440f88ea974a27f7286adb23d0c9b5881c487a0eea2dc551c2320a7c1 in /e
 -	Virtual Size: 315.0 B
 -	v2 Blob: `sha256:4831699594bca2432e2fdbe44d2566ab0bc00e27629be720c66883b1c4df018c`
 -	v2 Content-Length: 379.0 B
+-	v2 Last-Modified: Tue, 08 Mar 2016 21:09:05 GMT
 
 #### `f8d59247ae98914a7ba9fa05a83ef87beed4d81c1f42d383434171a0f3c61b5c`
 
@@ -362,6 +376,7 @@ VOLUME [/var/lib/registry]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `71ec1472d5d080fa6f5536a682632ec6ff24d014ba1c62b2ce307c4d02214db1`
 
@@ -375,6 +390,7 @@ EXPOSE 5000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c72dce2618dc8f7b794d2b2c2b1e64e0205ead5befc294f8111da23bd6a2c799`
 
@@ -388,6 +404,7 @@ ENTRYPOINT &{["/bin/registry"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65b0a3f42eef70d1e5490127dbc68bade2dcdce4c0cd8e0fc4a31a4c4458874c`
 
@@ -401,3 +418,4 @@ CMD ["/etc/docker/registry/config.yml"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

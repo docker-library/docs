@@ -65,6 +65,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -78,6 +79,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -166,6 +168,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -210,6 +213,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -252,6 +256,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -344,6 +349,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -357,6 +363,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -445,6 +452,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -489,6 +497,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -531,6 +540,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -623,6 +633,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -636,6 +647,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -724,6 +736,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -768,6 +781,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -810,6 +824,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -866,6 +881,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 ## `websphere-liberty:8.5.5.9-common`
 
@@ -915,6 +931,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -928,6 +945,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1016,6 +1034,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -1060,6 +1079,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -1102,6 +1122,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -1158,6 +1179,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 ## `websphere-liberty:webProfile6`
 
@@ -1207,6 +1229,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1220,6 +1243,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1308,6 +1332,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -1352,6 +1377,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -1394,6 +1420,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -1450,6 +1477,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `dec17fcaf3b09b95816d0669481c6888ec52e8798c4cd82e899ca363e3968242`
 
@@ -1529,6 +1557,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1542,6 +1571,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1630,6 +1660,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -1674,6 +1705,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -1716,6 +1748,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -1772,6 +1805,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `dec17fcaf3b09b95816d0669481c6888ec52e8798c4cd82e899ca363e3968242`
 
@@ -1851,6 +1885,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1864,6 +1899,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1952,6 +1988,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -1996,6 +2033,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -2038,6 +2076,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -2094,6 +2133,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -2122,6 +2162,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 ## `websphere-liberty:8.5.5.9-webProfile7`
 
@@ -2171,6 +2212,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2184,6 +2226,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2272,6 +2315,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -2316,6 +2360,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -2358,6 +2403,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -2414,6 +2460,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -2442,6 +2489,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 ## `websphere-liberty:javaee7`
 
@@ -2491,6 +2539,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2504,6 +2553,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2592,6 +2642,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -2636,6 +2687,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -2678,6 +2730,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -2734,6 +2787,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -2762,6 +2816,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 #### `352f74ef0d2f5b11a0806c728849a1cb8a29ba25e07f46b3bb1e868b7be54803`
 
@@ -2790,6 +2845,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 48.4 MB (48361029 bytes)
 -	v2 Blob: `sha256:c32a1bb035ebf4394571fb45d351b7fd2c6d75230270dd18a412586625660ffd`
 -	v2 Content-Length: 42.2 MB (42172775 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:13 GMT
 
 ## `websphere-liberty:8.5.5.9-javaee7`
 
@@ -2839,6 +2895,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2852,6 +2909,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2940,6 +2998,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -2984,6 +3043,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -3026,6 +3086,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -3082,6 +3143,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -3110,6 +3172,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 #### `352f74ef0d2f5b11a0806c728849a1cb8a29ba25e07f46b3bb1e868b7be54803`
 
@@ -3138,6 +3201,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 48.4 MB (48361029 bytes)
 -	v2 Blob: `sha256:c32a1bb035ebf4394571fb45d351b7fd2c6d75230270dd18a412586625660ffd`
 -	v2 Content-Length: 42.2 MB (42172775 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:13 GMT
 
 ## `websphere-liberty:8.5.5.9`
 
@@ -3187,6 +3251,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -3200,6 +3265,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -3288,6 +3354,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -3332,6 +3399,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -3374,6 +3442,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -3430,6 +3499,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -3458,6 +3528,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 #### `352f74ef0d2f5b11a0806c728849a1cb8a29ba25e07f46b3bb1e868b7be54803`
 
@@ -3486,6 +3557,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 48.4 MB (48361029 bytes)
 -	v2 Blob: `sha256:c32a1bb035ebf4394571fb45d351b7fd2c6d75230270dd18a412586625660ffd`
 -	v2 Content-Length: 42.2 MB (42172775 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:13 GMT
 
 ## `websphere-liberty:8.5.5`
 
@@ -3535,6 +3607,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -3548,6 +3621,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -3636,6 +3710,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -3680,6 +3755,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -3722,6 +3798,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -3778,6 +3855,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -3806,6 +3884,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 #### `352f74ef0d2f5b11a0806c728849a1cb8a29ba25e07f46b3bb1e868b7be54803`
 
@@ -3834,6 +3913,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 48.4 MB (48361029 bytes)
 -	v2 Blob: `sha256:c32a1bb035ebf4394571fb45d351b7fd2c6d75230270dd18a412586625660ffd`
 -	v2 Content-Length: 42.2 MB (42172775 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:13 GMT
 
 ## `websphere-liberty:latest`
 
@@ -3883,6 +3963,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -3896,6 +3977,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -3984,6 +4066,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648670 bytes)
 -	v2 Blob: `sha256:bc8ec9599b60fb1bf2497074b2fd74fc5c27dc9670a39207c40cca21a84371ef`
 -	v2 Content-Length: 109.7 MB (109701380 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:55 GMT
 
 #### `30c98a5e52001286848b1fe775776ff0717b12ba4110220ee100e2f2b9456e22`
 
@@ -4028,6 +4111,7 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
 -	Virtual Size: 18.5 MB (18465437 bytes)
 -	v2 Blob: `sha256:e706200e9c9a476b7e2cdb8778dd69c783eca5b17b69bdacfa5767637eb8fc86`
 -	v2 Content-Length: 11.3 MB (11334575 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:27 GMT
 
 #### `85d995a3f42dbb4d0699d64b497fb38319eeaeffea05650ef2170ff7faaa4529`
 
@@ -4070,6 +4154,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -4126,6 +4211,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -4154,6 +4240,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 #### `352f74ef0d2f5b11a0806c728849a1cb8a29ba25e07f46b3bb1e868b7be54803`
 
@@ -4182,6 +4269,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 48.4 MB (48361029 bytes)
 -	v2 Blob: `sha256:c32a1bb035ebf4394571fb45d351b7fd2c6d75230270dd18a412586625660ffd`
 -	v2 Content-Length: 42.2 MB (42172775 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:13 GMT
 
 ## `websphere-liberty:beta`
 
@@ -4231,6 +4319,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -4244,6 +4333,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 

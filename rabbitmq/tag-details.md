@@ -61,6 +61,7 @@ RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbi
 -	Virtual Size: 334.8 KB (334802 bytes)
 -	v2 Blob: `sha256:bee8ad0114a16557f3222fcdf902819c6f7ae74d59661dc8ad4813781ea9ff29`
 -	v2 Content-Length: 4.3 KB (4333 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:23 GMT
 
 #### `40b7a6ef116838fb72dd01e1e5323aafcf6fd8457408913469198ccb36c87d03`
 
@@ -154,6 +155,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50
 -	Virtual Size: 5.7 KB (5652 bytes)
 -	v2 Blob: `sha256:78eac5c85a00212959ec4ef3d6e45e0d3e718821dfa318c41c3ccfc2da674328`
 -	v2 Content-Length: 3.7 KB (3685 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:09 GMT
 
 #### `4b4d22e73c650ecd5dd655700fe2f19d027ce5fd6c05197db73e4d3cb039af3f`
 
@@ -212,6 +214,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 171.1 MB (171092468 bytes)
 -	v2 Blob: `sha256:3f6c4f484cbbba980b856e835e206ea2033cb79dd4e0c9712cb57dd7405b5725`
 -	v2 Content-Length: 87.0 MB (86995777 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:55 GMT
 
 #### `617e2cfc4f6ee00e7b0e7291076ad76a69432ecec98ae866f3846a1122112d55`
 
@@ -239,6 +242,7 @@ RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 -	Virtual Size: 36.0 B
 -	v2 Blob: `sha256:cd80a7678eacbbee23d8162597415f7bae449c8d1dcdc6ba50209072dc08eb26`
 -	v2 Content-Length: 190.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:28 GMT
 
 #### `2df89329412edebc2471d24374e7127c3b8fca44ed8d4b4666d60e9144bf143e`
 
@@ -296,6 +300,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -417,6 +422,7 @@ RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbi
 -	Virtual Size: 334.8 KB (334802 bytes)
 -	v2 Blob: `sha256:bee8ad0114a16557f3222fcdf902819c6f7ae74d59661dc8ad4813781ea9ff29`
 -	v2 Content-Length: 4.3 KB (4333 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:23 GMT
 
 #### `40b7a6ef116838fb72dd01e1e5323aafcf6fd8457408913469198ccb36c87d03`
 
@@ -510,6 +516,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50
 -	Virtual Size: 5.7 KB (5652 bytes)
 -	v2 Blob: `sha256:78eac5c85a00212959ec4ef3d6e45e0d3e718821dfa318c41c3ccfc2da674328`
 -	v2 Content-Length: 3.7 KB (3685 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:09 GMT
 
 #### `4b4d22e73c650ecd5dd655700fe2f19d027ce5fd6c05197db73e4d3cb039af3f`
 
@@ -568,6 +575,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 171.1 MB (171092468 bytes)
 -	v2 Blob: `sha256:3f6c4f484cbbba980b856e835e206ea2033cb79dd4e0c9712cb57dd7405b5725`
 -	v2 Content-Length: 87.0 MB (86995777 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:55 GMT
 
 #### `617e2cfc4f6ee00e7b0e7291076ad76a69432ecec98ae866f3846a1122112d55`
 
@@ -595,6 +603,7 @@ RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 -	Virtual Size: 36.0 B
 -	v2 Blob: `sha256:cd80a7678eacbbee23d8162597415f7bae449c8d1dcdc6ba50209072dc08eb26`
 -	v2 Content-Length: 190.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:28 GMT
 
 #### `2df89329412edebc2471d24374e7127c3b8fca44ed8d4b4666d60e9144bf143e`
 
@@ -652,6 +661,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -773,6 +783,7 @@ RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbi
 -	Virtual Size: 334.8 KB (334802 bytes)
 -	v2 Blob: `sha256:bee8ad0114a16557f3222fcdf902819c6f7ae74d59661dc8ad4813781ea9ff29`
 -	v2 Content-Length: 4.3 KB (4333 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:23 GMT
 
 #### `40b7a6ef116838fb72dd01e1e5323aafcf6fd8457408913469198ccb36c87d03`
 
@@ -866,6 +877,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50
 -	Virtual Size: 5.7 KB (5652 bytes)
 -	v2 Blob: `sha256:78eac5c85a00212959ec4ef3d6e45e0d3e718821dfa318c41c3ccfc2da674328`
 -	v2 Content-Length: 3.7 KB (3685 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:09 GMT
 
 #### `4b4d22e73c650ecd5dd655700fe2f19d027ce5fd6c05197db73e4d3cb039af3f`
 
@@ -924,6 +936,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 171.1 MB (171092468 bytes)
 -	v2 Blob: `sha256:3f6c4f484cbbba980b856e835e206ea2033cb79dd4e0c9712cb57dd7405b5725`
 -	v2 Content-Length: 87.0 MB (86995777 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:55 GMT
 
 #### `617e2cfc4f6ee00e7b0e7291076ad76a69432ecec98ae866f3846a1122112d55`
 
@@ -951,6 +964,7 @@ RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 -	Virtual Size: 36.0 B
 -	v2 Blob: `sha256:cd80a7678eacbbee23d8162597415f7bae449c8d1dcdc6ba50209072dc08eb26`
 -	v2 Content-Length: 190.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:28 GMT
 
 #### `2df89329412edebc2471d24374e7127c3b8fca44ed8d4b4666d60e9144bf143e`
 
@@ -1008,6 +1022,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -1129,6 +1144,7 @@ RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbi
 -	Virtual Size: 334.8 KB (334802 bytes)
 -	v2 Blob: `sha256:bee8ad0114a16557f3222fcdf902819c6f7ae74d59661dc8ad4813781ea9ff29`
 -	v2 Content-Length: 4.3 KB (4333 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:23 GMT
 
 #### `40b7a6ef116838fb72dd01e1e5323aafcf6fd8457408913469198ccb36c87d03`
 
@@ -1222,6 +1238,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50
 -	Virtual Size: 5.7 KB (5652 bytes)
 -	v2 Blob: `sha256:78eac5c85a00212959ec4ef3d6e45e0d3e718821dfa318c41c3ccfc2da674328`
 -	v2 Content-Length: 3.7 KB (3685 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:09 GMT
 
 #### `4b4d22e73c650ecd5dd655700fe2f19d027ce5fd6c05197db73e4d3cb039af3f`
 
@@ -1280,6 +1297,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 171.1 MB (171092468 bytes)
 -	v2 Blob: `sha256:3f6c4f484cbbba980b856e835e206ea2033cb79dd4e0c9712cb57dd7405b5725`
 -	v2 Content-Length: 87.0 MB (86995777 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:55 GMT
 
 #### `617e2cfc4f6ee00e7b0e7291076ad76a69432ecec98ae866f3846a1122112d55`
 
@@ -1307,6 +1325,7 @@ RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 -	Virtual Size: 36.0 B
 -	v2 Blob: `sha256:cd80a7678eacbbee23d8162597415f7bae449c8d1dcdc6ba50209072dc08eb26`
 -	v2 Content-Length: 190.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:28 GMT
 
 #### `2df89329412edebc2471d24374e7127c3b8fca44ed8d4b4666d60e9144bf143e`
 
@@ -1364,6 +1383,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -1485,6 +1505,7 @@ RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbi
 -	Virtual Size: 334.8 KB (334802 bytes)
 -	v2 Blob: `sha256:bee8ad0114a16557f3222fcdf902819c6f7ae74d59661dc8ad4813781ea9ff29`
 -	v2 Content-Length: 4.3 KB (4333 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:23 GMT
 
 #### `40b7a6ef116838fb72dd01e1e5323aafcf6fd8457408913469198ccb36c87d03`
 
@@ -1578,6 +1599,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50
 -	Virtual Size: 5.7 KB (5652 bytes)
 -	v2 Blob: `sha256:78eac5c85a00212959ec4ef3d6e45e0d3e718821dfa318c41c3ccfc2da674328`
 -	v2 Content-Length: 3.7 KB (3685 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:09 GMT
 
 #### `4b4d22e73c650ecd5dd655700fe2f19d027ce5fd6c05197db73e4d3cb039af3f`
 
@@ -1636,6 +1658,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 171.1 MB (171092468 bytes)
 -	v2 Blob: `sha256:3f6c4f484cbbba980b856e835e206ea2033cb79dd4e0c9712cb57dd7405b5725`
 -	v2 Content-Length: 87.0 MB (86995777 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:55 GMT
 
 #### `617e2cfc4f6ee00e7b0e7291076ad76a69432ecec98ae866f3846a1122112d55`
 
@@ -1663,6 +1686,7 @@ RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 -	Virtual Size: 36.0 B
 -	v2 Blob: `sha256:cd80a7678eacbbee23d8162597415f7bae449c8d1dcdc6ba50209072dc08eb26`
 -	v2 Content-Length: 190.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:28 GMT
 
 #### `2df89329412edebc2471d24374e7127c3b8fca44ed8d4b4666d60e9144bf143e`
 
@@ -1720,6 +1744,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -1869,6 +1894,7 @@ RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbi
 -	Virtual Size: 334.8 KB (334802 bytes)
 -	v2 Blob: `sha256:bee8ad0114a16557f3222fcdf902819c6f7ae74d59661dc8ad4813781ea9ff29`
 -	v2 Content-Length: 4.3 KB (4333 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:23 GMT
 
 #### `40b7a6ef116838fb72dd01e1e5323aafcf6fd8457408913469198ccb36c87d03`
 
@@ -1962,6 +1988,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50
 -	Virtual Size: 5.7 KB (5652 bytes)
 -	v2 Blob: `sha256:78eac5c85a00212959ec4ef3d6e45e0d3e718821dfa318c41c3ccfc2da674328`
 -	v2 Content-Length: 3.7 KB (3685 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:09 GMT
 
 #### `4b4d22e73c650ecd5dd655700fe2f19d027ce5fd6c05197db73e4d3cb039af3f`
 
@@ -2020,6 +2047,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 171.1 MB (171092468 bytes)
 -	v2 Blob: `sha256:3f6c4f484cbbba980b856e835e206ea2033cb79dd4e0c9712cb57dd7405b5725`
 -	v2 Content-Length: 87.0 MB (86995777 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:55 GMT
 
 #### `617e2cfc4f6ee00e7b0e7291076ad76a69432ecec98ae866f3846a1122112d55`
 
@@ -2047,6 +2075,7 @@ RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 -	Virtual Size: 36.0 B
 -	v2 Blob: `sha256:cd80a7678eacbbee23d8162597415f7bae449c8d1dcdc6ba50209072dc08eb26`
 -	v2 Content-Length: 190.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:28 GMT
 
 #### `2df89329412edebc2471d24374e7127c3b8fca44ed8d4b4666d60e9144bf143e`
 
@@ -2104,6 +2133,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -2253,6 +2283,7 @@ RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbi
 -	Virtual Size: 334.8 KB (334802 bytes)
 -	v2 Blob: `sha256:bee8ad0114a16557f3222fcdf902819c6f7ae74d59661dc8ad4813781ea9ff29`
 -	v2 Content-Length: 4.3 KB (4333 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:23 GMT
 
 #### `40b7a6ef116838fb72dd01e1e5323aafcf6fd8457408913469198ccb36c87d03`
 
@@ -2346,6 +2377,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50
 -	Virtual Size: 5.7 KB (5652 bytes)
 -	v2 Blob: `sha256:78eac5c85a00212959ec4ef3d6e45e0d3e718821dfa318c41c3ccfc2da674328`
 -	v2 Content-Length: 3.7 KB (3685 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:09 GMT
 
 #### `4b4d22e73c650ecd5dd655700fe2f19d027ce5fd6c05197db73e4d3cb039af3f`
 
@@ -2404,6 +2436,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 171.1 MB (171092468 bytes)
 -	v2 Blob: `sha256:3f6c4f484cbbba980b856e835e206ea2033cb79dd4e0c9712cb57dd7405b5725`
 -	v2 Content-Length: 87.0 MB (86995777 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:55 GMT
 
 #### `617e2cfc4f6ee00e7b0e7291076ad76a69432ecec98ae866f3846a1122112d55`
 
@@ -2431,6 +2464,7 @@ RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 -	Virtual Size: 36.0 B
 -	v2 Blob: `sha256:cd80a7678eacbbee23d8162597415f7bae449c8d1dcdc6ba50209072dc08eb26`
 -	v2 Content-Length: 190.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:28 GMT
 
 #### `2df89329412edebc2471d24374e7127c3b8fca44ed8d4b4666d60e9144bf143e`
 
@@ -2488,6 +2522,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -2637,6 +2672,7 @@ RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbi
 -	Virtual Size: 334.8 KB (334802 bytes)
 -	v2 Blob: `sha256:bee8ad0114a16557f3222fcdf902819c6f7ae74d59661dc8ad4813781ea9ff29`
 -	v2 Content-Length: 4.3 KB (4333 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:23 GMT
 
 #### `40b7a6ef116838fb72dd01e1e5323aafcf6fd8457408913469198ccb36c87d03`
 
@@ -2730,6 +2766,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50
 -	Virtual Size: 5.7 KB (5652 bytes)
 -	v2 Blob: `sha256:78eac5c85a00212959ec4ef3d6e45e0d3e718821dfa318c41c3ccfc2da674328`
 -	v2 Content-Length: 3.7 KB (3685 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:09 GMT
 
 #### `4b4d22e73c650ecd5dd655700fe2f19d027ce5fd6c05197db73e4d3cb039af3f`
 
@@ -2788,6 +2825,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 171.1 MB (171092468 bytes)
 -	v2 Blob: `sha256:3f6c4f484cbbba980b856e835e206ea2033cb79dd4e0c9712cb57dd7405b5725`
 -	v2 Content-Length: 87.0 MB (86995777 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:55 GMT
 
 #### `617e2cfc4f6ee00e7b0e7291076ad76a69432ecec98ae866f3846a1122112d55`
 
@@ -2815,6 +2853,7 @@ RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 -	Virtual Size: 36.0 B
 -	v2 Blob: `sha256:cd80a7678eacbbee23d8162597415f7bae449c8d1dcdc6ba50209072dc08eb26`
 -	v2 Content-Length: 190.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:28 GMT
 
 #### `2df89329412edebc2471d24374e7127c3b8fca44ed8d4b4666d60e9144bf143e`
 
@@ -2872,6 +2911,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 

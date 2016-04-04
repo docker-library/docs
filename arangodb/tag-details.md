@@ -34,6 +34,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -47,6 +48,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa263e301cbd9d8d7d73d801e00137c2f1a3ee8b56853f59562165fd092154de`
 
@@ -60,6 +62,7 @@ MAINTAINER Frank Celler <info@arangodb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84f596b2c9fe5f25cd57861da27ad416deda5ac31f0a682b41b9b17cd9061085`
 
@@ -73,6 +76,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -86,6 +90,7 @@ ENV ARCHITECTURE=amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe2e34cbdf3ffb0eaa8f135783d77404e71b9c58e78e8eb01207e48f2c4d3496`
 
@@ -99,6 +104,7 @@ ENV ARANGO_VERSION=2.5.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51e4252af895594ee5f67667c2a2dca26deb1f827d6700ee13f9c84797a45701`
 
@@ -112,6 +118,7 @@ ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ed6f7637d5a677485b44bcdd33201de96d45a15def76da6d5534a2f15f3d68e`
 
@@ -125,6 +132,7 @@ ENV ARANGO_PACKAGE=arangodb_2.5.5_amd64.deb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f74e8da6630e273b3c3ff222eb1303b70a3e2927b69c3e314e970c5012f694ba`
 
@@ -138,6 +146,7 @@ ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cb50a07d575d0383c36424e1ce02163b1dca5b58e24d98a79ac239b4ff480f84`
 
@@ -151,6 +160,7 @@ ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b4bcdd7b18d2c497a51d4065ce3218e12dea2e9560f16d71fb001ccb7666445e`
 
@@ -180,6 +190,7 @@ RUN apt-get update &&\
 -	Virtual Size: 177.5 MB (177513374 bytes)
 -	v2 Blob: `sha256:f2253e9c52dc9761314ddbe7540689b917e50770c09336bedfb01694e6b12188`
 -	v2 Content-Length: 55.1 MB (55096739 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:44:44 GMT
 
 #### `0d43b4376b4a95a6f5931fdaeefcb217753330bce6e2b306c47b3af220c0fb25`
 
@@ -193,6 +204,7 @@ VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c45566d430ae2d06931e9a781846133097c0365c4b59b475608622fa7865854c`
 
@@ -206,6 +218,7 @@ EXPOSE 8529/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f263bc0a53230f242f380ddd5430381ecf7836438cb3bacac7480152a066689`
 
@@ -219,6 +232,7 @@ CMD ["/usr/sbin/arangod"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `arangodb:2.5`
 
@@ -242,6 +256,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -255,6 +270,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa263e301cbd9d8d7d73d801e00137c2f1a3ee8b56853f59562165fd092154de`
 
@@ -268,6 +284,7 @@ MAINTAINER Frank Celler <info@arangodb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84f596b2c9fe5f25cd57861da27ad416deda5ac31f0a682b41b9b17cd9061085`
 
@@ -281,6 +298,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -294,6 +312,7 @@ ENV ARCHITECTURE=amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe2e34cbdf3ffb0eaa8f135783d77404e71b9c58e78e8eb01207e48f2c4d3496`
 
@@ -307,6 +326,7 @@ ENV ARANGO_VERSION=2.5.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51e4252af895594ee5f67667c2a2dca26deb1f827d6700ee13f9c84797a45701`
 
@@ -320,6 +340,7 @@ ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ed6f7637d5a677485b44bcdd33201de96d45a15def76da6d5534a2f15f3d68e`
 
@@ -333,6 +354,7 @@ ENV ARANGO_PACKAGE=arangodb_2.5.5_amd64.deb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f74e8da6630e273b3c3ff222eb1303b70a3e2927b69c3e314e970c5012f694ba`
 
@@ -346,6 +368,7 @@ ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cb50a07d575d0383c36424e1ce02163b1dca5b58e24d98a79ac239b4ff480f84`
 
@@ -359,6 +382,7 @@ ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b4bcdd7b18d2c497a51d4065ce3218e12dea2e9560f16d71fb001ccb7666445e`
 
@@ -388,6 +412,7 @@ RUN apt-get update &&\
 -	Virtual Size: 177.5 MB (177513374 bytes)
 -	v2 Blob: `sha256:f2253e9c52dc9761314ddbe7540689b917e50770c09336bedfb01694e6b12188`
 -	v2 Content-Length: 55.1 MB (55096739 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:44:44 GMT
 
 #### `0d43b4376b4a95a6f5931fdaeefcb217753330bce6e2b306c47b3af220c0fb25`
 
@@ -401,6 +426,7 @@ VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c45566d430ae2d06931e9a781846133097c0365c4b59b475608622fa7865854c`
 
@@ -414,6 +440,7 @@ EXPOSE 8529/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f263bc0a53230f242f380ddd5430381ecf7836438cb3bacac7480152a066689`
 
@@ -427,6 +454,7 @@ CMD ["/usr/sbin/arangod"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `arangodb:2.6`
 
@@ -450,6 +478,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -463,6 +492,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa263e301cbd9d8d7d73d801e00137c2f1a3ee8b56853f59562165fd092154de`
 
@@ -476,6 +506,7 @@ MAINTAINER Frank Celler <info@arangodb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84f596b2c9fe5f25cd57861da27ad416deda5ac31f0a682b41b9b17cd9061085`
 
@@ -489,6 +520,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -502,6 +534,7 @@ ENV ARCHITECTURE=amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7ad6081b5977e89051024c2165b1a2c1e0ed501f794aa849773020f6bbc66b96`
 
@@ -515,6 +548,7 @@ ENV ARANGO_VERSION=2.6.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a057e3d5dbb336fb0b50784f4a946e4109aafe77bed17022f4250c2117e62f51`
 
@@ -528,6 +562,7 @@ ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a3e076de0dee637a69ed61ee28a0ac6618258a45845de95b8ef0ff5b07bb9968`
 
@@ -541,6 +576,7 @@ ENV ARANGO_PACKAGE=arangodb_2.6.10_amd64.deb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d13095f277acd0fda34e16b76af8806b9719b4a3415c9c572384570501dfe98d`
 
@@ -554,6 +590,7 @@ ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `11228299cc5503a6e5d9e8f8070a7b91fde6f40448c73d845dcff4b63afd313a`
 
@@ -567,6 +604,7 @@ ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `527859d888ffab5298e69e240ed76b35570a5d7638b631b09e49fc331568f3c3`
 
@@ -597,6 +635,7 @@ RUN apt-get update &&\
 -	Virtual Size: 209.2 MB (209170746 bytes)
 -	v2 Blob: `sha256:58940c63b1fde7810ed67548c1e9a6faaec2d861d3caaab2ff0dae687ba431dc`
 -	v2 Content-Length: 73.5 MB (73541003 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:46:26 GMT
 
 #### `0f0157adb7c32833730e4548e7b3d218a2ada04ecec1d6c005ba778e504b0d38`
 
@@ -610,6 +649,7 @@ VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `483db2ce9d5ea7d7a5d04346a890ae59a049c5d8fe4027f180df1ee33b17bb94`
 
@@ -623,6 +663,7 @@ EXPOSE 8529/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7501eada9051043871201a977d2114942b45033a4c5d026a94e64aad439b66d`
 
@@ -636,6 +677,7 @@ CMD ["/usr/sbin/arangod"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `arangodb:2.6.10`
 
@@ -659,6 +701,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -672,6 +715,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa263e301cbd9d8d7d73d801e00137c2f1a3ee8b56853f59562165fd092154de`
 
@@ -685,6 +729,7 @@ MAINTAINER Frank Celler <info@arangodb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84f596b2c9fe5f25cd57861da27ad416deda5ac31f0a682b41b9b17cd9061085`
 
@@ -698,6 +743,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -711,6 +757,7 @@ ENV ARCHITECTURE=amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7ad6081b5977e89051024c2165b1a2c1e0ed501f794aa849773020f6bbc66b96`
 
@@ -724,6 +771,7 @@ ENV ARANGO_VERSION=2.6.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a057e3d5dbb336fb0b50784f4a946e4109aafe77bed17022f4250c2117e62f51`
 
@@ -737,6 +785,7 @@ ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a3e076de0dee637a69ed61ee28a0ac6618258a45845de95b8ef0ff5b07bb9968`
 
@@ -750,6 +799,7 @@ ENV ARANGO_PACKAGE=arangodb_2.6.10_amd64.deb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d13095f277acd0fda34e16b76af8806b9719b4a3415c9c572384570501dfe98d`
 
@@ -763,6 +813,7 @@ ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `11228299cc5503a6e5d9e8f8070a7b91fde6f40448c73d845dcff4b63afd313a`
 
@@ -776,6 +827,7 @@ ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `527859d888ffab5298e69e240ed76b35570a5d7638b631b09e49fc331568f3c3`
 
@@ -806,6 +858,7 @@ RUN apt-get update &&\
 -	Virtual Size: 209.2 MB (209170746 bytes)
 -	v2 Blob: `sha256:58940c63b1fde7810ed67548c1e9a6faaec2d861d3caaab2ff0dae687ba431dc`
 -	v2 Content-Length: 73.5 MB (73541003 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:46:26 GMT
 
 #### `0f0157adb7c32833730e4548e7b3d218a2ada04ecec1d6c005ba778e504b0d38`
 
@@ -819,6 +872,7 @@ VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `483db2ce9d5ea7d7a5d04346a890ae59a049c5d8fe4027f180df1ee33b17bb94`
 
@@ -832,6 +886,7 @@ EXPOSE 8529/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7501eada9051043871201a977d2114942b45033a4c5d026a94e64aad439b66d`
 
@@ -845,6 +900,7 @@ CMD ["/usr/sbin/arangod"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `arangodb:2.7`
 
@@ -868,6 +924,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -881,6 +938,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa263e301cbd9d8d7d73d801e00137c2f1a3ee8b56853f59562165fd092154de`
 
@@ -894,6 +952,7 @@ MAINTAINER Frank Celler <info@arangodb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84f596b2c9fe5f25cd57861da27ad416deda5ac31f0a682b41b9b17cd9061085`
 
@@ -907,6 +966,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -920,6 +980,7 @@ ENV ARCHITECTURE=amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5061744c3982967f75a0c82fd75b9ee44983af69e527d0c431a6e8ca5783ca44`
 
@@ -933,6 +994,7 @@ ENV ARANGO_VERSION=2.7.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `61e2a818caae1dfdaf599d511102a8b11fca5f5f2d175aa7214c226c52263ce4`
 
@@ -946,6 +1008,7 @@ ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae598d2cc883c98e1c39ce0bf5534180f92d963065538ce9ae07d98ad0a5d234`
 
@@ -959,6 +1022,7 @@ ENV ARANGO_PACKAGE=arangodb_2.7.5_amd64.deb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a756121058de16089fea7012db33e7a77786788785688fe7c2fd507fe47c993`
 
@@ -972,6 +1036,7 @@ ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `22f1ad7271b903d12e6e22f64f8db85fe1625e6fbe821659389524302a4eb4e7`
 
@@ -985,6 +1050,7 @@ ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3991f5c8eb63d26bb9c30afb7fc68a50811b8de9d23f159f4d5eb345aecec34`
 
@@ -1015,6 +1081,7 @@ RUN apt-get update &&\
 -	Virtual Size: 209.6 MB (209556048 bytes)
 -	v2 Blob: `sha256:29bc091aea33dcd2860751fa1efb179585be712c591cecc28ddeb12440bfbe56`
 -	v2 Content-Length: 75.7 MB (75692813 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:47:36 GMT
 
 #### `8dbf0a84a8a9c4e5e85715b15f77c4135729c38d0d07de91b49d7be48444faaa`
 
@@ -1028,6 +1095,7 @@ VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `beaeb47f1b2b19f2cd96760734015aa64dd39ad910b2d0d9dc464f263b4ebf4b`
 
@@ -1041,6 +1109,7 @@ EXPOSE 8529/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d68127602a5ec122a8bb6a790a74f8841ba87a70b2d68cf96b1034c49fbca2e`
 
@@ -1054,6 +1123,7 @@ CMD ["/usr/sbin/arangod"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `arangodb:2.7.5`
 
@@ -1077,6 +1147,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1090,6 +1161,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa263e301cbd9d8d7d73d801e00137c2f1a3ee8b56853f59562165fd092154de`
 
@@ -1103,6 +1175,7 @@ MAINTAINER Frank Celler <info@arangodb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84f596b2c9fe5f25cd57861da27ad416deda5ac31f0a682b41b9b17cd9061085`
 
@@ -1116,6 +1189,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1129,6 +1203,7 @@ ENV ARCHITECTURE=amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5061744c3982967f75a0c82fd75b9ee44983af69e527d0c431a6e8ca5783ca44`
 
@@ -1142,6 +1217,7 @@ ENV ARANGO_VERSION=2.7.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `61e2a818caae1dfdaf599d511102a8b11fca5f5f2d175aa7214c226c52263ce4`
 
@@ -1155,6 +1231,7 @@ ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae598d2cc883c98e1c39ce0bf5534180f92d963065538ce9ae07d98ad0a5d234`
 
@@ -1168,6 +1245,7 @@ ENV ARANGO_PACKAGE=arangodb_2.7.5_amd64.deb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a756121058de16089fea7012db33e7a77786788785688fe7c2fd507fe47c993`
 
@@ -1181,6 +1259,7 @@ ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `22f1ad7271b903d12e6e22f64f8db85fe1625e6fbe821659389524302a4eb4e7`
 
@@ -1194,6 +1273,7 @@ ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3991f5c8eb63d26bb9c30afb7fc68a50811b8de9d23f159f4d5eb345aecec34`
 
@@ -1224,6 +1304,7 @@ RUN apt-get update &&\
 -	Virtual Size: 209.6 MB (209556048 bytes)
 -	v2 Blob: `sha256:29bc091aea33dcd2860751fa1efb179585be712c591cecc28ddeb12440bfbe56`
 -	v2 Content-Length: 75.7 MB (75692813 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:47:36 GMT
 
 #### `8dbf0a84a8a9c4e5e85715b15f77c4135729c38d0d07de91b49d7be48444faaa`
 
@@ -1237,6 +1318,7 @@ VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `beaeb47f1b2b19f2cd96760734015aa64dd39ad910b2d0d9dc464f263b4ebf4b`
 
@@ -1250,6 +1332,7 @@ EXPOSE 8529/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d68127602a5ec122a8bb6a790a74f8841ba87a70b2d68cf96b1034c49fbca2e`
 
@@ -1263,6 +1346,7 @@ CMD ["/usr/sbin/arangod"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `arangodb:2.8`
 
@@ -1286,6 +1370,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1299,6 +1384,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa263e301cbd9d8d7d73d801e00137c2f1a3ee8b56853f59562165fd092154de`
 
@@ -1312,6 +1398,7 @@ MAINTAINER Frank Celler <info@arangodb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84f596b2c9fe5f25cd57861da27ad416deda5ac31f0a682b41b9b17cd9061085`
 
@@ -1325,6 +1412,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1338,6 +1426,7 @@ ENV ARCHITECTURE=amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d76f0362e2eaf6fe23d522f9002e38ee0c8d5d44fa38916c4e847a95757d6a05`
 
@@ -1351,6 +1440,7 @@ ENV ARANGO_VERSION=2.8.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8cc4e4945af8d93326602ce309dfbfcfb3738c55b12f121fb5034eb16f780ad8`
 
@@ -1364,6 +1454,7 @@ ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3beab74453c8c58fff836ae47b4c4972f19d3209499bda02698804e178da64ea`
 
@@ -1377,6 +1468,7 @@ ENV ARANGO_PACKAGE=arangodb_2.8.6_amd64.deb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `538195f631807e6858b02e19263c4b5bb69f115d87e990793f53b08e17c39b74`
 
@@ -1390,6 +1482,7 @@ ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `789f7dc650fee3ed4061f838328929d7bbd32643930d29d96893d83fe0d27f98`
 
@@ -1403,6 +1496,7 @@ ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8fd1dfa62b6b153f2158db8b56fcc283e4cdb278260944b65db27b1cbb983315`
 
@@ -1450,6 +1544,7 @@ RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:76aee0a22f434f2cf4f3be9e3babda043d2b86f1c355972464a94e44b6e16a19`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:41:20 GMT
 
 #### `2079f4f5ca1d764f46416d092459f1ea90b3bd1a8090a46c6ff1b981e8c2dcef`
 
@@ -1463,6 +1558,7 @@ VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `22a6a9b76cb3b9aec0c92dc73727439aa447894dd2d125ebcf5cf45399a165ad`
 
@@ -1476,6 +1572,7 @@ COPY file:514c54d7402860ba75cbd5101cdee06b49ed9f5a23c389ce5dc7ac989a0f5362 in /e
 -	Virtual Size: 2.5 KB (2465 bytes)
 -	v2 Blob: `sha256:26b70aa1429f4ea0ef1dffeda33f343894744864346a9d52524065901eea4022`
 -	v2 Content-Length: 1.1 KB (1097 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:41:14 GMT
 
 #### `da1aef2769f9716af4d269b18d02b85d81b1eef89a6665611741894fc5498283`
 
@@ -1489,6 +1586,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21e5512d20a5062914285da48e96ea4f6d5426d46a61b031eeda788b3003c15c`
 
@@ -1502,6 +1600,7 @@ EXPOSE 8529/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bdcc999f6244ce19533242ba2eaceaf0c3bc61a799ed2eecfa25eb907f1bc8d1`
 
@@ -1515,6 +1614,7 @@ USER [arangodb]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `063561de1654d44030a54ac209b56d5e512760236a62b5446fda1d6e36fe987d`
 
@@ -1528,6 +1628,7 @@ CMD ["arangod"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `arangodb:2.8.6`
 
@@ -1551,6 +1652,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1564,6 +1666,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa263e301cbd9d8d7d73d801e00137c2f1a3ee8b56853f59562165fd092154de`
 
@@ -1577,6 +1680,7 @@ MAINTAINER Frank Celler <info@arangodb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84f596b2c9fe5f25cd57861da27ad416deda5ac31f0a682b41b9b17cd9061085`
 
@@ -1590,6 +1694,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1603,6 +1708,7 @@ ENV ARCHITECTURE=amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d76f0362e2eaf6fe23d522f9002e38ee0c8d5d44fa38916c4e847a95757d6a05`
 
@@ -1616,6 +1722,7 @@ ENV ARANGO_VERSION=2.8.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8cc4e4945af8d93326602ce309dfbfcfb3738c55b12f121fb5034eb16f780ad8`
 
@@ -1629,6 +1736,7 @@ ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3beab74453c8c58fff836ae47b4c4972f19d3209499bda02698804e178da64ea`
 
@@ -1642,6 +1750,7 @@ ENV ARANGO_PACKAGE=arangodb_2.8.6_amd64.deb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `538195f631807e6858b02e19263c4b5bb69f115d87e990793f53b08e17c39b74`
 
@@ -1655,6 +1764,7 @@ ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `789f7dc650fee3ed4061f838328929d7bbd32643930d29d96893d83fe0d27f98`
 
@@ -1668,6 +1778,7 @@ ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8fd1dfa62b6b153f2158db8b56fcc283e4cdb278260944b65db27b1cbb983315`
 
@@ -1715,6 +1826,7 @@ RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:76aee0a22f434f2cf4f3be9e3babda043d2b86f1c355972464a94e44b6e16a19`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:41:20 GMT
 
 #### `2079f4f5ca1d764f46416d092459f1ea90b3bd1a8090a46c6ff1b981e8c2dcef`
 
@@ -1728,6 +1840,7 @@ VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `22a6a9b76cb3b9aec0c92dc73727439aa447894dd2d125ebcf5cf45399a165ad`
 
@@ -1741,6 +1854,7 @@ COPY file:514c54d7402860ba75cbd5101cdee06b49ed9f5a23c389ce5dc7ac989a0f5362 in /e
 -	Virtual Size: 2.5 KB (2465 bytes)
 -	v2 Blob: `sha256:26b70aa1429f4ea0ef1dffeda33f343894744864346a9d52524065901eea4022`
 -	v2 Content-Length: 1.1 KB (1097 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:41:14 GMT
 
 #### `da1aef2769f9716af4d269b18d02b85d81b1eef89a6665611741894fc5498283`
 
@@ -1754,6 +1868,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21e5512d20a5062914285da48e96ea4f6d5426d46a61b031eeda788b3003c15c`
 
@@ -1767,6 +1882,7 @@ EXPOSE 8529/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bdcc999f6244ce19533242ba2eaceaf0c3bc61a799ed2eecfa25eb907f1bc8d1`
 
@@ -1780,6 +1896,7 @@ USER [arangodb]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `063561de1654d44030a54ac209b56d5e512760236a62b5446fda1d6e36fe987d`
 
@@ -1793,6 +1910,7 @@ CMD ["arangod"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `arangodb:latest`
 
@@ -1816,6 +1934,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1829,6 +1948,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa263e301cbd9d8d7d73d801e00137c2f1a3ee8b56853f59562165fd092154de`
 
@@ -1842,6 +1962,7 @@ MAINTAINER Frank Celler <info@arangodb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84f596b2c9fe5f25cd57861da27ad416deda5ac31f0a682b41b9b17cd9061085`
 
@@ -1855,6 +1976,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1868,6 +1990,7 @@ ENV ARCHITECTURE=amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d76f0362e2eaf6fe23d522f9002e38ee0c8d5d44fa38916c4e847a95757d6a05`
 
@@ -1881,6 +2004,7 @@ ENV ARANGO_VERSION=2.8.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8cc4e4945af8d93326602ce309dfbfcfb3738c55b12f121fb5034eb16f780ad8`
 
@@ -1894,6 +2018,7 @@ ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3beab74453c8c58fff836ae47b4c4972f19d3209499bda02698804e178da64ea`
 
@@ -1907,6 +2032,7 @@ ENV ARANGO_PACKAGE=arangodb_2.8.6_amd64.deb
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `538195f631807e6858b02e19263c4b5bb69f115d87e990793f53b08e17c39b74`
 
@@ -1920,6 +2046,7 @@ ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `789f7dc650fee3ed4061f838328929d7bbd32643930d29d96893d83fe0d27f98`
 
@@ -1933,6 +2060,7 @@ ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8fd1dfa62b6b153f2158db8b56fcc283e4cdb278260944b65db27b1cbb983315`
 
@@ -1980,6 +2108,7 @@ RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:76aee0a22f434f2cf4f3be9e3babda043d2b86f1c355972464a94e44b6e16a19`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:41:20 GMT
 
 #### `2079f4f5ca1d764f46416d092459f1ea90b3bd1a8090a46c6ff1b981e8c2dcef`
 
@@ -1993,6 +2122,7 @@ VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `22a6a9b76cb3b9aec0c92dc73727439aa447894dd2d125ebcf5cf45399a165ad`
 
@@ -2006,6 +2136,7 @@ COPY file:514c54d7402860ba75cbd5101cdee06b49ed9f5a23c389ce5dc7ac989a0f5362 in /e
 -	Virtual Size: 2.5 KB (2465 bytes)
 -	v2 Blob: `sha256:26b70aa1429f4ea0ef1dffeda33f343894744864346a9d52524065901eea4022`
 -	v2 Content-Length: 1.1 KB (1097 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:41:14 GMT
 
 #### `da1aef2769f9716af4d269b18d02b85d81b1eef89a6665611741894fc5498283`
 
@@ -2019,6 +2150,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21e5512d20a5062914285da48e96ea4f6d5426d46a61b031eeda788b3003c15c`
 
@@ -2032,6 +2164,7 @@ EXPOSE 8529/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bdcc999f6244ce19533242ba2eaceaf0c3bc61a799ed2eecfa25eb907f1bc8d1`
 
@@ -2045,6 +2178,7 @@ USER [arangodb]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `063561de1654d44030a54ac209b56d5e512760236a62b5446fda1d6e36fe987d`
 
@@ -2058,3 +2192,4 @@ CMD ["arangod"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

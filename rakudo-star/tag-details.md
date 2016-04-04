@@ -41,6 +41,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -79,6 +80,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `7df69ddd15eee79faf98598c984fb2631565a9db8626aa1d314d34db88c9d25f`
 
@@ -92,6 +94,7 @@ MAINTAINER Rob Hoelz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c471bbb2247265d53eba224d295684caf8575f713d9196c914089233f4f2b2d0`
 
@@ -119,6 +122,7 @@ ENV rakudo_version=2016.01
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `757d08baf94776aeed165181ec1f7f7e8b23d32110e56e926e3346785a70d77f`
 
@@ -151,6 +155,7 @@ RUN buildDeps='\
 -	Virtual Size: 41.3 MB (41324124 bytes)
 -	v2 Blob: `sha256:57637398f1916aa191e844ad75f2300aa3c98fdf974be1fcb7bce7f6e8731433`
 -	v2 Content-Length: 11.1 MB (11078358 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:33 GMT
 
 #### `5325ad99166cb3168abe83c7e4ce6040c6f10e53118c3885a7fc22207ac4995e`
 
@@ -164,6 +169,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `175ba12eb398383794311a12f60833c4b69e1f52e4a6f92844fd6d197d2ef9b5`
 
@@ -177,6 +183,7 @@ CMD ["rlwrap" "perl6"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rakudo-star:latest`
 
@@ -214,6 +221,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -252,6 +260,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `7df69ddd15eee79faf98598c984fb2631565a9db8626aa1d314d34db88c9d25f`
 
@@ -265,6 +274,7 @@ MAINTAINER Rob Hoelz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c471bbb2247265d53eba224d295684caf8575f713d9196c914089233f4f2b2d0`
 
@@ -292,6 +302,7 @@ ENV rakudo_version=2016.01
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `757d08baf94776aeed165181ec1f7f7e8b23d32110e56e926e3346785a70d77f`
 
@@ -324,6 +335,7 @@ RUN buildDeps='\
 -	Virtual Size: 41.3 MB (41324124 bytes)
 -	v2 Blob: `sha256:57637398f1916aa191e844ad75f2300aa3c98fdf974be1fcb7bce7f6e8731433`
 -	v2 Content-Length: 11.1 MB (11078358 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:33 GMT
 
 #### `5325ad99166cb3168abe83c7e4ce6040c6f10e53118c3885a7fc22207ac4995e`
 
@@ -337,6 +349,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `175ba12eb398383794311a12f60833c4b69e1f52e4a6f92844fd6d197d2ef9b5`
 
@@ -350,3 +363,4 @@ CMD ["rlwrap" "perl6"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

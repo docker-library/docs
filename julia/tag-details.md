@@ -28,6 +28,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -41,6 +42,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `161285fbfaf043c496ea4dfee22506e43ac76ee77fc301f02ea2b007835dafa1`
 
@@ -56,6 +58,7 @@ RUN apt-get update \
 -	Virtual Size: 70.2 MB (70162658 bytes)
 -	v2 Blob: `sha256:c8e84525f4d6568abfb02e8f8be9121577c59922db8b9854c2ebb9afbaef9e74`
 -	v2 Content-Length: 26.8 MB (26764063 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:44:08 GMT
 
 #### `660a5490e46761ea78e13aa8ddf0169c05e96de7d253ff62ba78e68be9084d10`
 
@@ -69,6 +72,7 @@ ENV JULIA_PATH=/usr/local/julia
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ba95ce0a6ac5b4f25ef322bde2f936c73bac4027dd7b9553f1e6386a06abb6f1`
 
@@ -82,6 +86,7 @@ ENV JULIA_VERSION=0.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `022dcf4ddc104cf45884beb0e1f9b6877243fd723d4d2ed84fe8873a669f8de2`
 
@@ -104,6 +109,7 @@ RUN mkdir $JULIA_PATH \
 -	Virtual Size: 186.1 MB (186105002 bytes)
 -	v2 Blob: `sha256:f9451c5dbcc6156d28dcc101d9d47b8d33ed44eb969439267ba866d662aae4a2`
 -	v2 Content-Length: 51.7 MB (51731790 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:43:46 GMT
 
 #### `2328302f397634d742353d730c3262e82e60e122c884943dcc3e17103d2a348f`
 
@@ -117,6 +123,7 @@ ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e404ed4240ffc4a445e1f6d468ebde68ab31b3308c8c549fe9375e92c641c413`
 
@@ -130,6 +137,7 @@ CMD ["julia"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `julia:0.4`
 
@@ -153,6 +161,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -166,6 +175,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `161285fbfaf043c496ea4dfee22506e43ac76ee77fc301f02ea2b007835dafa1`
 
@@ -181,6 +191,7 @@ RUN apt-get update \
 -	Virtual Size: 70.2 MB (70162658 bytes)
 -	v2 Blob: `sha256:c8e84525f4d6568abfb02e8f8be9121577c59922db8b9854c2ebb9afbaef9e74`
 -	v2 Content-Length: 26.8 MB (26764063 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:44:08 GMT
 
 #### `660a5490e46761ea78e13aa8ddf0169c05e96de7d253ff62ba78e68be9084d10`
 
@@ -194,6 +205,7 @@ ENV JULIA_PATH=/usr/local/julia
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ba95ce0a6ac5b4f25ef322bde2f936c73bac4027dd7b9553f1e6386a06abb6f1`
 
@@ -207,6 +219,7 @@ ENV JULIA_VERSION=0.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `022dcf4ddc104cf45884beb0e1f9b6877243fd723d4d2ed84fe8873a669f8de2`
 
@@ -229,6 +242,7 @@ RUN mkdir $JULIA_PATH \
 -	Virtual Size: 186.1 MB (186105002 bytes)
 -	v2 Blob: `sha256:f9451c5dbcc6156d28dcc101d9d47b8d33ed44eb969439267ba866d662aae4a2`
 -	v2 Content-Length: 51.7 MB (51731790 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:43:46 GMT
 
 #### `2328302f397634d742353d730c3262e82e60e122c884943dcc3e17103d2a348f`
 
@@ -242,6 +256,7 @@ ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e404ed4240ffc4a445e1f6d468ebde68ab31b3308c8c549fe9375e92c641c413`
 
@@ -255,6 +270,7 @@ CMD ["julia"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `julia:latest`
 
@@ -278,6 +294,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -291,6 +308,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `161285fbfaf043c496ea4dfee22506e43ac76ee77fc301f02ea2b007835dafa1`
 
@@ -306,6 +324,7 @@ RUN apt-get update \
 -	Virtual Size: 70.2 MB (70162658 bytes)
 -	v2 Blob: `sha256:c8e84525f4d6568abfb02e8f8be9121577c59922db8b9854c2ebb9afbaef9e74`
 -	v2 Content-Length: 26.8 MB (26764063 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:44:08 GMT
 
 #### `660a5490e46761ea78e13aa8ddf0169c05e96de7d253ff62ba78e68be9084d10`
 
@@ -319,6 +338,7 @@ ENV JULIA_PATH=/usr/local/julia
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ba95ce0a6ac5b4f25ef322bde2f936c73bac4027dd7b9553f1e6386a06abb6f1`
 
@@ -332,6 +352,7 @@ ENV JULIA_VERSION=0.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `022dcf4ddc104cf45884beb0e1f9b6877243fd723d4d2ed84fe8873a669f8de2`
 
@@ -354,6 +375,7 @@ RUN mkdir $JULIA_PATH \
 -	Virtual Size: 186.1 MB (186105002 bytes)
 -	v2 Blob: `sha256:f9451c5dbcc6156d28dcc101d9d47b8d33ed44eb969439267ba866d662aae4a2`
 -	v2 Content-Length: 51.7 MB (51731790 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:43:46 GMT
 
 #### `2328302f397634d742353d730c3262e82e60e122c884943dcc3e17103d2a348f`
 
@@ -367,6 +389,7 @@ ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e404ed4240ffc4a445e1f6d468ebde68ab31b3308c8c549fe9375e92c641c413`
 
@@ -380,3 +403,4 @@ CMD ["julia"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

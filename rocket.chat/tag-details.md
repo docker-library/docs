@@ -43,6 +43,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -81,6 +82,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -152,6 +154,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 
@@ -165,6 +168,7 @@ ENV NODE_VERSION=0.10.44
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 
@@ -197,6 +201,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 
@@ -210,6 +215,7 @@ MAINTAINER buildmaster@rocket.chat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 
@@ -237,6 +243,7 @@ VOLUME [/app/uploads]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 
@@ -264,6 +271,7 @@ ENV RC_VERSION=0.22.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 
@@ -277,6 +285,7 @@ WORKDIR /app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 
@@ -290,6 +299,7 @@ RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.ch
 -	Virtual Size: 103.6 MB (103576136 bytes)
 -	v2 Blob: `sha256:b459ea4f9124617710f0c8bba2f214ee93a965ebc95176e756eedfa57ebc2be0`
 -	v2 Content-Length: 30.3 MB (30282738 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:09:54 GMT
 
 #### `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 
@@ -303,6 +313,7 @@ USER [rocketchat]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 
@@ -316,6 +327,7 @@ WORKDIR /app/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 
@@ -329,6 +341,7 @@ ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 
@@ -342,6 +355,7 @@ EXPOSE 3000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1430f36c71f6cc2650767c5963be754f451a0a9207cc646801f9d4b8318af77b`
 
@@ -355,6 +369,7 @@ CMD ["node" "main.js"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rocket.chat:0.22`
 
@@ -392,6 +407,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -430,6 +446,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -501,6 +518,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 
@@ -514,6 +532,7 @@ ENV NODE_VERSION=0.10.44
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 
@@ -546,6 +565,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 
@@ -559,6 +579,7 @@ MAINTAINER buildmaster@rocket.chat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 
@@ -586,6 +607,7 @@ VOLUME [/app/uploads]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 
@@ -613,6 +635,7 @@ ENV RC_VERSION=0.22.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 
@@ -626,6 +649,7 @@ WORKDIR /app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 
@@ -639,6 +663,7 @@ RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.ch
 -	Virtual Size: 103.6 MB (103576136 bytes)
 -	v2 Blob: `sha256:b459ea4f9124617710f0c8bba2f214ee93a965ebc95176e756eedfa57ebc2be0`
 -	v2 Content-Length: 30.3 MB (30282738 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:09:54 GMT
 
 #### `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 
@@ -652,6 +677,7 @@ USER [rocketchat]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 
@@ -665,6 +691,7 @@ WORKDIR /app/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 
@@ -678,6 +705,7 @@ ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 
@@ -691,6 +719,7 @@ EXPOSE 3000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1430f36c71f6cc2650767c5963be754f451a0a9207cc646801f9d4b8318af77b`
 
@@ -704,6 +733,7 @@ CMD ["node" "main.js"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rocket.chat:0`
 
@@ -741,6 +771,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -779,6 +810,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -850,6 +882,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 
@@ -863,6 +896,7 @@ ENV NODE_VERSION=0.10.44
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 
@@ -895,6 +929,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 
@@ -908,6 +943,7 @@ MAINTAINER buildmaster@rocket.chat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 
@@ -935,6 +971,7 @@ VOLUME [/app/uploads]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 
@@ -962,6 +999,7 @@ ENV RC_VERSION=0.22.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 
@@ -975,6 +1013,7 @@ WORKDIR /app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 
@@ -988,6 +1027,7 @@ RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.ch
 -	Virtual Size: 103.6 MB (103576136 bytes)
 -	v2 Blob: `sha256:b459ea4f9124617710f0c8bba2f214ee93a965ebc95176e756eedfa57ebc2be0`
 -	v2 Content-Length: 30.3 MB (30282738 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:09:54 GMT
 
 #### `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 
@@ -1001,6 +1041,7 @@ USER [rocketchat]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 
@@ -1014,6 +1055,7 @@ WORKDIR /app/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 
@@ -1027,6 +1069,7 @@ ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 
@@ -1040,6 +1083,7 @@ EXPOSE 3000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1430f36c71f6cc2650767c5963be754f451a0a9207cc646801f9d4b8318af77b`
 
@@ -1053,6 +1097,7 @@ CMD ["node" "main.js"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rocket.chat:latest`
 
@@ -1090,6 +1135,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1128,6 +1174,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `a00e4cef421d0ea073beb20879e834a8cbb42bae7f6702cc9811b75705827852`
 
@@ -1199,6 +1246,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 60.4 KB (60380 bytes)
 -	v2 Blob: `sha256:5a3b05f77d24f950fb90d116685f3c95a113afde8e5f6b66a2555f809fb83a8f`
 -	v2 Content-Length: 29.1 KB (29120 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 03:01:59 GMT
 
 #### `a0194208aa83644b222378f6a03f309b86d83792eeeb06d06c8afc72b1dec919`
 
@@ -1212,6 +1260,7 @@ ENV NODE_VERSION=0.10.44
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `059a1d1f6f7ced00e1d44c1fb81dfbd9db3cd19032c0dae8aac364bf0c76297e`
 
@@ -1244,6 +1293,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39cd5844ac0ad8868708a66056007cae750d20f3992f6ff30c6922754d2ba696`
 
@@ -1257,6 +1307,7 @@ MAINTAINER buildmaster@rocket.chat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `392231c5bd280b652f48a82694c73c60a2bed4be36ca5fbbef62653592b71e91`
 
@@ -1284,6 +1335,7 @@ VOLUME [/app/uploads]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1e97ae87a353552d87f657247562bb22f3c721fb7539c3e05744c0ea76e2752e`
 
@@ -1311,6 +1363,7 @@ ENV RC_VERSION=0.22.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e8274bfca9c903a094167c54ab4218b3e68909c6e8636b27709c0c4e091fab7b`
 
@@ -1324,6 +1377,7 @@ WORKDIR /app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eab084a562eee9f4f3813f938aac7e92f6165a2f93d40a39591aa82b462cc7af`
 
@@ -1337,6 +1391,7 @@ RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.ch
 -	Virtual Size: 103.6 MB (103576136 bytes)
 -	v2 Blob: `sha256:b459ea4f9124617710f0c8bba2f214ee93a965ebc95176e756eedfa57ebc2be0`
 -	v2 Content-Length: 30.3 MB (30282738 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:09:54 GMT
 
 #### `5c9359f71740d8288c797d8fe2a35403549d3327458ad140cfa944fb63833c26`
 
@@ -1350,6 +1405,7 @@ USER [rocketchat]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a4dfbf82cc2a820b450d3c9dfda665bbe957e3e39d48d05060d5f5cb0757bfc`
 
@@ -1363,6 +1419,7 @@ WORKDIR /app/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9390e06a7fa5d13d707db04214154b019c0881d46ccc96a7cbc9252d6163e8a5`
 
@@ -1376,6 +1433,7 @@ ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a56083eab3d5bb2252e61607c3e9171337d72c5ccd0a005a64b892a80b501496`
 
@@ -1389,6 +1447,7 @@ EXPOSE 3000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1430f36c71f6cc2650767c5963be754f451a0a9207cc646801f9d4b8318af77b`
 
@@ -1402,3 +1461,4 @@ CMD ["node" "main.js"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

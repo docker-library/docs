@@ -29,6 +29,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -42,6 +43,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fc0cd6a7f6cf9b440adff25a279c67aa755af316a2adb2cea10dd5717d356ef`
 
@@ -55,6 +57,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a08efcc01d6e7370c5f236e90321dceb4f0d18825fd51b23556ba3ff399ff4c`
 
@@ -101,6 +104,7 @@ RUN set -xe \
 -	Virtual Size: 162.9 MB (162892148 bytes)
 -	v2 Blob: `sha256:a88f6536d7698f49d52f699aefbf8069827660cc13c21337d23dd0abf1708786`
 -	v2 Content-Length: 66.3 MB (66265062 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:52 GMT
 
 #### `50edba596dcb9dcb70bb9fa336501b2877a82c346866b2b179bf11d63b3fd721`
 
@@ -114,6 +118,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cff37b5e9352e6311eb3b44e381e3f6aa2697e876a028dbb7007f5a432aacc3e`
 
@@ -127,6 +132,7 @@ ENV ELIXIR_VERSION=v1.2.4 LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `846d739c28175898758e6a72170180eadd8eecf7153c0998a3dda3e2a9658161`
 
@@ -155,6 +161,7 @@ RUN set -xe \
 -	Virtual Size: 6.6 MB (6632979 bytes)
 -	v2 Blob: `sha256:71b3a7bdc5c854f2eff567144820a210f25cdc90ba9875673834d7f0f6471408`
 -	v2 Content-Length: 3.5 MB (3477385 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 20:55:56 GMT
 
 #### `42163db2be0c8dd14b33cadbf6fdffac283bfd871ecae537a73857eb87ea83d6`
 
@@ -168,6 +175,7 @@ CMD ["iex"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `elixir:1.2`
 
@@ -191,6 +199,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -204,6 +213,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fc0cd6a7f6cf9b440adff25a279c67aa755af316a2adb2cea10dd5717d356ef`
 
@@ -217,6 +227,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a08efcc01d6e7370c5f236e90321dceb4f0d18825fd51b23556ba3ff399ff4c`
 
@@ -263,6 +274,7 @@ RUN set -xe \
 -	Virtual Size: 162.9 MB (162892148 bytes)
 -	v2 Blob: `sha256:a88f6536d7698f49d52f699aefbf8069827660cc13c21337d23dd0abf1708786`
 -	v2 Content-Length: 66.3 MB (66265062 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:52 GMT
 
 #### `50edba596dcb9dcb70bb9fa336501b2877a82c346866b2b179bf11d63b3fd721`
 
@@ -276,6 +288,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cff37b5e9352e6311eb3b44e381e3f6aa2697e876a028dbb7007f5a432aacc3e`
 
@@ -289,6 +302,7 @@ ENV ELIXIR_VERSION=v1.2.4 LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `846d739c28175898758e6a72170180eadd8eecf7153c0998a3dda3e2a9658161`
 
@@ -317,6 +331,7 @@ RUN set -xe \
 -	Virtual Size: 6.6 MB (6632979 bytes)
 -	v2 Blob: `sha256:71b3a7bdc5c854f2eff567144820a210f25cdc90ba9875673834d7f0f6471408`
 -	v2 Content-Length: 3.5 MB (3477385 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 20:55:56 GMT
 
 #### `42163db2be0c8dd14b33cadbf6fdffac283bfd871ecae537a73857eb87ea83d6`
 
@@ -330,6 +345,7 @@ CMD ["iex"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `elixir:latest`
 
@@ -353,6 +369,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -366,6 +383,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fc0cd6a7f6cf9b440adff25a279c67aa755af316a2adb2cea10dd5717d356ef`
 
@@ -379,6 +397,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a08efcc01d6e7370c5f236e90321dceb4f0d18825fd51b23556ba3ff399ff4c`
 
@@ -425,6 +444,7 @@ RUN set -xe \
 -	Virtual Size: 162.9 MB (162892148 bytes)
 -	v2 Blob: `sha256:a88f6536d7698f49d52f699aefbf8069827660cc13c21337d23dd0abf1708786`
 -	v2 Content-Length: 66.3 MB (66265062 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:52 GMT
 
 #### `50edba596dcb9dcb70bb9fa336501b2877a82c346866b2b179bf11d63b3fd721`
 
@@ -438,6 +458,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cff37b5e9352e6311eb3b44e381e3f6aa2697e876a028dbb7007f5a432aacc3e`
 
@@ -451,6 +472,7 @@ ENV ELIXIR_VERSION=v1.2.4 LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `846d739c28175898758e6a72170180eadd8eecf7153c0998a3dda3e2a9658161`
 
@@ -479,6 +501,7 @@ RUN set -xe \
 -	Virtual Size: 6.6 MB (6632979 bytes)
 -	v2 Blob: `sha256:71b3a7bdc5c854f2eff567144820a210f25cdc90ba9875673834d7f0f6471408`
 -	v2 Content-Length: 3.5 MB (3477385 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 20:55:56 GMT
 
 #### `42163db2be0c8dd14b33cadbf6fdffac283bfd871ecae537a73857eb87ea83d6`
 
@@ -492,6 +515,7 @@ CMD ["iex"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `elixir:1.2.3`
 
@@ -515,6 +539,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -528,6 +553,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fc0cd6a7f6cf9b440adff25a279c67aa755af316a2adb2cea10dd5717d356ef`
 
@@ -541,6 +567,7 @@ ENV OTP_VERSION=18.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a08efcc01d6e7370c5f236e90321dceb4f0d18825fd51b23556ba3ff399ff4c`
 
@@ -587,6 +614,7 @@ RUN set -xe \
 -	Virtual Size: 162.9 MB (162892148 bytes)
 -	v2 Blob: `sha256:a88f6536d7698f49d52f699aefbf8069827660cc13c21337d23dd0abf1708786`
 -	v2 Content-Length: 66.3 MB (66265062 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:52 GMT
 
 #### `50edba596dcb9dcb70bb9fa336501b2877a82c346866b2b179bf11d63b3fd721`
 
@@ -600,6 +628,7 @@ CMD ["erl"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ebcdb8b32d641d64ec28c0ec65c457271bdd37b369a7e90c04c60ef3e65c851`
 
@@ -613,6 +642,7 @@ ENV ELIXIR_VERSION=v1.2.3 LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a589a79390d637f7dad8eb40bbf9bbef247e29a6c1aadc5468fb1502dbb2f3b`
 
@@ -641,6 +671,7 @@ RUN set -xe \
 -	Virtual Size: 6.6 MB (6559392 bytes)
 -	v2 Blob: `sha256:9ea4947244b1230171a48c24cea9c7b11d151cac0e8d4162c87ae090089b6aac`
 -	v2 Content-Length: 3.5 MB (3461626 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 20:56:47 GMT
 
 #### `d7ef185f575683151ee259a358d374611c868e43cd2216fe9222b8d3865dded9`
 
@@ -654,3 +685,4 @@ CMD ["iex"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

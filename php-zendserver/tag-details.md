@@ -60,6 +60,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -73,6 +74,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -86,6 +88,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `24941ef24456b505ca811153d2c28bfdc65bc75079b819dafbef2662aeff4030`
 
@@ -99,6 +102,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -126,6 +130,7 @@ RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-
 -	Virtual Size: 547.9 MB (547876662 bytes)
 -	v2 Blob: `sha256:d09e5eb7e660a8ca41ae0562b1706169f6a500962ff1fe43161d277ce0d11cd8`
 -	v2 Content-Length: 251.0 MB (250989648 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:32 GMT
 
 #### `0a63537945b514cbbd1f5a6bce40a5acc29758a5b878ce6dd34f8970d1389fcd`
 
@@ -153,6 +158,7 @@ ENV ZS_INIT_VERSION=0.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a81fc31691c1bc47ae38502849c19ef2e31ce797fad8332219c1bc16892c4382`
 
@@ -166,6 +172,7 @@ ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c3741848baded2d33d4c2278a1bb906f2328ab7cdc22c05e353f01cf0aecf06`
 
@@ -211,6 +218,7 @@ WORKDIR /usr/local/zs-init
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75602ad16acff8be731ed5244c26977e0e18c26e7ca1865916c63a4424973034`
 
@@ -224,6 +232,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581791 bytes)
 -	v2 Blob: `sha256:d80338da30aac4a2fb1e385822d6f4a1049afd1efe777aa4804eeebbc63ba8b4`
 -	v2 Content-Length: 426.5 KB (426460 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:01:06 GMT
 
 #### `6e953cf2b08526deec37a0a87018a1464a8e7d3f1885f481c207bd694e89ed5a`
 
@@ -237,6 +246,7 @@ RUN /usr/local/zend/bin/php composer.phar update
 -	Virtual Size: 34.2 MB (34220851 bytes)
 -	v2 Blob: `sha256:4985eaa66163cbea055ffdb85aac17153d78ff29eda06e26a685fc2e1ed716fc`
 -	v2 Content-Length: 7.9 MB (7931307 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:01:02 GMT
 
 #### `a32cdbb74565c0d4dbd048b8da606f4197fb740612874a46b1b05abfa4435992`
 
@@ -264,6 +274,7 @@ COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /us
 -	Virtual Size: 2.9 KB (2934 bytes)
 -	v2 Blob: `sha256:4be5827c05b824a454bd3b0582d437e6e9fab74c2c8cfa59c9f3904420d29021`
 -	v2 Content-Length: 2.5 KB (2511 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:00:54 GMT
 
 #### `386f882aaa88b583263e6985250693c76c53d98f2b63debe67ce948040b81f8e`
 
@@ -291,6 +302,7 @@ COPY dir:58f81ce7769099822a16db14dd4168ec8a58f6e744eceea4eb4a7f924b4bf4e4 in /va
 -	Virtual Size: 2.3 KB (2281 bytes)
 -	v2 Blob: `sha256:a93600e97344a98781ae7929b9c1e8c98c310428eb934e5232425483fe6b9258`
 -	v2 Content-Length: 1.2 KB (1241 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:00:48 GMT
 
 #### `79bc96bc8d629b2d082180c1ee50efa9089bc0725dea890aec84139f76fdee91`
 
@@ -304,6 +316,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dba637a0ea2c381a6ae89964eaf432c695a50bc135446f5f9f15326e3132dfd4`
 
@@ -317,6 +330,7 @@ EXPOSE 443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea7cefde46b85edfa94320fbb733cfd3f8a2751eb68d18c60be1559d9338dfc7`
 
@@ -330,6 +344,7 @@ EXPOSE 10081/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8f79f05279581872f4dfa708fff4256499bcf04836d00bff048ee594f705a192`
 
@@ -343,6 +358,7 @@ EXPOSE 10082/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe466b0cb298e1c67d1d01ed1af9d2fa3ef9c82e287429ece1ef1833b040c521`
 
@@ -356,6 +372,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c37b8055ffa782fdc1b36e101bd309334b1c8f08cbd2e68c3b44c99588a9b5c9`
 
@@ -369,6 +386,7 @@ CMD ["/usr/local/bin/run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php-zendserver:8.5-php5.5`
 
@@ -418,6 +436,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -431,6 +450,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -444,6 +464,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `24941ef24456b505ca811153d2c28bfdc65bc75079b819dafbef2662aeff4030`
 
@@ -457,6 +478,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -484,6 +506,7 @@ RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-
 -	Virtual Size: 547.9 MB (547876662 bytes)
 -	v2 Blob: `sha256:d09e5eb7e660a8ca41ae0562b1706169f6a500962ff1fe43161d277ce0d11cd8`
 -	v2 Content-Length: 251.0 MB (250989648 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:32 GMT
 
 #### `0a63537945b514cbbd1f5a6bce40a5acc29758a5b878ce6dd34f8970d1389fcd`
 
@@ -511,6 +534,7 @@ ENV ZS_INIT_VERSION=0.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a81fc31691c1bc47ae38502849c19ef2e31ce797fad8332219c1bc16892c4382`
 
@@ -524,6 +548,7 @@ ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c3741848baded2d33d4c2278a1bb906f2328ab7cdc22c05e353f01cf0aecf06`
 
@@ -569,6 +594,7 @@ WORKDIR /usr/local/zs-init
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75602ad16acff8be731ed5244c26977e0e18c26e7ca1865916c63a4424973034`
 
@@ -582,6 +608,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581791 bytes)
 -	v2 Blob: `sha256:d80338da30aac4a2fb1e385822d6f4a1049afd1efe777aa4804eeebbc63ba8b4`
 -	v2 Content-Length: 426.5 KB (426460 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:01:06 GMT
 
 #### `6e953cf2b08526deec37a0a87018a1464a8e7d3f1885f481c207bd694e89ed5a`
 
@@ -595,6 +622,7 @@ RUN /usr/local/zend/bin/php composer.phar update
 -	Virtual Size: 34.2 MB (34220851 bytes)
 -	v2 Blob: `sha256:4985eaa66163cbea055ffdb85aac17153d78ff29eda06e26a685fc2e1ed716fc`
 -	v2 Content-Length: 7.9 MB (7931307 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:01:02 GMT
 
 #### `a32cdbb74565c0d4dbd048b8da606f4197fb740612874a46b1b05abfa4435992`
 
@@ -622,6 +650,7 @@ COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /us
 -	Virtual Size: 2.9 KB (2934 bytes)
 -	v2 Blob: `sha256:4be5827c05b824a454bd3b0582d437e6e9fab74c2c8cfa59c9f3904420d29021`
 -	v2 Content-Length: 2.5 KB (2511 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:00:54 GMT
 
 #### `386f882aaa88b583263e6985250693c76c53d98f2b63debe67ce948040b81f8e`
 
@@ -649,6 +678,7 @@ COPY dir:58f81ce7769099822a16db14dd4168ec8a58f6e744eceea4eb4a7f924b4bf4e4 in /va
 -	Virtual Size: 2.3 KB (2281 bytes)
 -	v2 Blob: `sha256:a93600e97344a98781ae7929b9c1e8c98c310428eb934e5232425483fe6b9258`
 -	v2 Content-Length: 1.2 KB (1241 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:00:48 GMT
 
 #### `79bc96bc8d629b2d082180c1ee50efa9089bc0725dea890aec84139f76fdee91`
 
@@ -662,6 +692,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dba637a0ea2c381a6ae89964eaf432c695a50bc135446f5f9f15326e3132dfd4`
 
@@ -675,6 +706,7 @@ EXPOSE 443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea7cefde46b85edfa94320fbb733cfd3f8a2751eb68d18c60be1559d9338dfc7`
 
@@ -688,6 +720,7 @@ EXPOSE 10081/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8f79f05279581872f4dfa708fff4256499bcf04836d00bff048ee594f705a192`
 
@@ -701,6 +734,7 @@ EXPOSE 10082/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe466b0cb298e1c67d1d01ed1af9d2fa3ef9c82e287429ece1ef1833b040c521`
 
@@ -714,6 +748,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c37b8055ffa782fdc1b36e101bd309334b1c8f08cbd2e68c3b44c99588a9b5c9`
 
@@ -727,6 +762,7 @@ CMD ["/usr/local/bin/run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php-zendserver:5.6`
 
@@ -776,6 +812,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -789,6 +826,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -802,6 +840,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `24941ef24456b505ca811153d2c28bfdc65bc75079b819dafbef2662aeff4030`
 
@@ -815,6 +854,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -842,6 +882,7 @@ RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-
 -	Virtual Size: 528.6 MB (528575710 bytes)
 -	v2 Blob: `sha256:6f166f31537352cff46abbc419e94f6cc9473636098e57de69709c096ccd6532`
 -	v2 Content-Length: 243.8 MB (243834975 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:05:19 GMT
 
 #### `39cd9c0049700e8b4f0cacba101f9950ec6d618f5debac4999ce726310cfbc40`
 
@@ -869,6 +910,7 @@ ENV ZS_INIT_VERSION=0.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9afed5aff0038309bd1038c2535ab6479689804e4bf11657af1671038ef2fd8e`
 
@@ -882,6 +924,7 @@ ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `68d47a796e9d031271eb4bb38d118ca73c9a9d0d667997a96cb29f11a3d5f182`
 
@@ -895,6 +938,7 @@ RUN apt-get install -y curl
 -	Virtual Size: 1.7 MB (1688797 bytes)
 -	v2 Blob: `sha256:8d4449fce8631e04fcb90a5946c9fa21ca1fa936ba42cbc9167432fa42d46e8a`
 -	v2 Content-Length: 473.3 KB (473341 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:04:04 GMT
 
 #### `786d1c623bbd858324207ba2e5bc35abf0fc7cf3ce96c3998b0e03507eacd1a5`
 
@@ -912,6 +956,7 @@ RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${
 -	Virtual Size: 65.5 KB (65481 bytes)
 -	v2 Blob: `sha256:3df38ff1dc855cde80afd94ed8927e52a37f5dbac7347b034f7281063859a393`
 -	v2 Content-Length: 15.6 KB (15594 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:04:01 GMT
 
 #### `b2298769e300c577e88a0e01c8e2bb2e38987bb8abe13b90245bf5edb5e47a9f`
 
@@ -925,6 +970,7 @@ WORKDIR /usr/local/zs-init
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9598c9742c82b3856c3edbd9af933a1d93e79ae64b29f222619052109a0358a`
 
@@ -938,6 +984,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581791 bytes)
 -	v2 Blob: `sha256:7b4fd3af022812f8ed4fe79d25f467739aeed88a74343291eb5bc08bd9c4a794`
 -	v2 Content-Length: 426.5 KB (426462 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:57 GMT
 
 #### `957666f5a716bcaa0ccf796d7b566f33208a7e198aa1230c6374e279be8fc99a`
 
@@ -965,6 +1012,7 @@ COPY dir:26e66ef8f923a58e38cb459694c48e6ba5757efd48d643136f3d67c7e489711e in /us
 -	Virtual Size: 32.2 KB (32211 bytes)
 -	v2 Blob: `sha256:9bfe580c1274c2e069b457719a3cf16a221b24c53f83f7f475d88131b4c17de4`
 -	v2 Content-Length: 12.7 KB (12683 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:47 GMT
 
 #### `498e4247d99b493adf8fa3d1e1e3a65e6e43347803fef19b9fb8381381f316e4`
 
@@ -978,6 +1026,7 @@ COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /us
 -	Virtual Size: 2.9 KB (2934 bytes)
 -	v2 Blob: `sha256:a16d458d5f4783f526fc1fb600ded07c580743db72f92dbfcca7489dc9443912`
 -	v2 Content-Length: 2.5 KB (2513 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:45 GMT
 
 #### `33d8867ed2571cf70de13edb5ac02418aa9955a7717b3aa5a16bb0e374c68d5e`
 
@@ -1019,6 +1068,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3fbecf78718798ec37813bdd9a5295d930a929c970bd943b1ba630f51252962f`
 
@@ -1032,6 +1082,7 @@ EXPOSE 443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c76eee7a55dbe726da99063da60770e6b34fdd85fd94d6ec3ae668613cc3ebc`
 
@@ -1045,6 +1096,7 @@ EXPOSE 10081/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e24540113bfaf67abcbd66661fe1959236b9d9b27abf88adb38a200d2c0a450`
 
@@ -1058,6 +1110,7 @@ EXPOSE 10082/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b055485ea4b7ed29c96e87cfc8367ba866cf43b3da0128b93062a05174138cde`
 
@@ -1071,6 +1124,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dba12996627e0c699ac50a025e004edfd33eedc7b1c2642b1ad05fb47627ec9d`
 
@@ -1084,6 +1138,7 @@ CMD ["/usr/local/bin/run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php-zendserver:8.5-php5.6`
 
@@ -1133,6 +1188,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1146,6 +1202,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1159,6 +1216,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `24941ef24456b505ca811153d2c28bfdc65bc75079b819dafbef2662aeff4030`
 
@@ -1172,6 +1230,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -1199,6 +1258,7 @@ RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-
 -	Virtual Size: 528.6 MB (528575710 bytes)
 -	v2 Blob: `sha256:6f166f31537352cff46abbc419e94f6cc9473636098e57de69709c096ccd6532`
 -	v2 Content-Length: 243.8 MB (243834975 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:05:19 GMT
 
 #### `39cd9c0049700e8b4f0cacba101f9950ec6d618f5debac4999ce726310cfbc40`
 
@@ -1226,6 +1286,7 @@ ENV ZS_INIT_VERSION=0.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9afed5aff0038309bd1038c2535ab6479689804e4bf11657af1671038ef2fd8e`
 
@@ -1239,6 +1300,7 @@ ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `68d47a796e9d031271eb4bb38d118ca73c9a9d0d667997a96cb29f11a3d5f182`
 
@@ -1252,6 +1314,7 @@ RUN apt-get install -y curl
 -	Virtual Size: 1.7 MB (1688797 bytes)
 -	v2 Blob: `sha256:8d4449fce8631e04fcb90a5946c9fa21ca1fa936ba42cbc9167432fa42d46e8a`
 -	v2 Content-Length: 473.3 KB (473341 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:04:04 GMT
 
 #### `786d1c623bbd858324207ba2e5bc35abf0fc7cf3ce96c3998b0e03507eacd1a5`
 
@@ -1269,6 +1332,7 @@ RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${
 -	Virtual Size: 65.5 KB (65481 bytes)
 -	v2 Blob: `sha256:3df38ff1dc855cde80afd94ed8927e52a37f5dbac7347b034f7281063859a393`
 -	v2 Content-Length: 15.6 KB (15594 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:04:01 GMT
 
 #### `b2298769e300c577e88a0e01c8e2bb2e38987bb8abe13b90245bf5edb5e47a9f`
 
@@ -1282,6 +1346,7 @@ WORKDIR /usr/local/zs-init
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9598c9742c82b3856c3edbd9af933a1d93e79ae64b29f222619052109a0358a`
 
@@ -1295,6 +1360,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581791 bytes)
 -	v2 Blob: `sha256:7b4fd3af022812f8ed4fe79d25f467739aeed88a74343291eb5bc08bd9c4a794`
 -	v2 Content-Length: 426.5 KB (426462 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:57 GMT
 
 #### `957666f5a716bcaa0ccf796d7b566f33208a7e198aa1230c6374e279be8fc99a`
 
@@ -1322,6 +1388,7 @@ COPY dir:26e66ef8f923a58e38cb459694c48e6ba5757efd48d643136f3d67c7e489711e in /us
 -	Virtual Size: 32.2 KB (32211 bytes)
 -	v2 Blob: `sha256:9bfe580c1274c2e069b457719a3cf16a221b24c53f83f7f475d88131b4c17de4`
 -	v2 Content-Length: 12.7 KB (12683 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:47 GMT
 
 #### `498e4247d99b493adf8fa3d1e1e3a65e6e43347803fef19b9fb8381381f316e4`
 
@@ -1335,6 +1402,7 @@ COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /us
 -	Virtual Size: 2.9 KB (2934 bytes)
 -	v2 Blob: `sha256:a16d458d5f4783f526fc1fb600ded07c580743db72f92dbfcca7489dc9443912`
 -	v2 Content-Length: 2.5 KB (2513 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:45 GMT
 
 #### `33d8867ed2571cf70de13edb5ac02418aa9955a7717b3aa5a16bb0e374c68d5e`
 
@@ -1376,6 +1444,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3fbecf78718798ec37813bdd9a5295d930a929c970bd943b1ba630f51252962f`
 
@@ -1389,6 +1458,7 @@ EXPOSE 443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c76eee7a55dbe726da99063da60770e6b34fdd85fd94d6ec3ae668613cc3ebc`
 
@@ -1402,6 +1472,7 @@ EXPOSE 10081/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e24540113bfaf67abcbd66661fe1959236b9d9b27abf88adb38a200d2c0a450`
 
@@ -1415,6 +1486,7 @@ EXPOSE 10082/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b055485ea4b7ed29c96e87cfc8367ba866cf43b3da0128b93062a05174138cde`
 
@@ -1428,6 +1500,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dba12996627e0c699ac50a025e004edfd33eedc7b1c2642b1ad05fb47627ec9d`
 
@@ -1441,6 +1514,7 @@ CMD ["/usr/local/bin/run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php-zendserver:8.5`
 
@@ -1490,6 +1564,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1503,6 +1578,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1516,6 +1592,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `24941ef24456b505ca811153d2c28bfdc65bc75079b819dafbef2662aeff4030`
 
@@ -1529,6 +1606,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -1556,6 +1634,7 @@ RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-
 -	Virtual Size: 528.6 MB (528575710 bytes)
 -	v2 Blob: `sha256:6f166f31537352cff46abbc419e94f6cc9473636098e57de69709c096ccd6532`
 -	v2 Content-Length: 243.8 MB (243834975 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:05:19 GMT
 
 #### `39cd9c0049700e8b4f0cacba101f9950ec6d618f5debac4999ce726310cfbc40`
 
@@ -1583,6 +1662,7 @@ ENV ZS_INIT_VERSION=0.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9afed5aff0038309bd1038c2535ab6479689804e4bf11657af1671038ef2fd8e`
 
@@ -1596,6 +1676,7 @@ ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `68d47a796e9d031271eb4bb38d118ca73c9a9d0d667997a96cb29f11a3d5f182`
 
@@ -1609,6 +1690,7 @@ RUN apt-get install -y curl
 -	Virtual Size: 1.7 MB (1688797 bytes)
 -	v2 Blob: `sha256:8d4449fce8631e04fcb90a5946c9fa21ca1fa936ba42cbc9167432fa42d46e8a`
 -	v2 Content-Length: 473.3 KB (473341 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:04:04 GMT
 
 #### `786d1c623bbd858324207ba2e5bc35abf0fc7cf3ce96c3998b0e03507eacd1a5`
 
@@ -1626,6 +1708,7 @@ RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${
 -	Virtual Size: 65.5 KB (65481 bytes)
 -	v2 Blob: `sha256:3df38ff1dc855cde80afd94ed8927e52a37f5dbac7347b034f7281063859a393`
 -	v2 Content-Length: 15.6 KB (15594 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:04:01 GMT
 
 #### `b2298769e300c577e88a0e01c8e2bb2e38987bb8abe13b90245bf5edb5e47a9f`
 
@@ -1639,6 +1722,7 @@ WORKDIR /usr/local/zs-init
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9598c9742c82b3856c3edbd9af933a1d93e79ae64b29f222619052109a0358a`
 
@@ -1652,6 +1736,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581791 bytes)
 -	v2 Blob: `sha256:7b4fd3af022812f8ed4fe79d25f467739aeed88a74343291eb5bc08bd9c4a794`
 -	v2 Content-Length: 426.5 KB (426462 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:57 GMT
 
 #### `957666f5a716bcaa0ccf796d7b566f33208a7e198aa1230c6374e279be8fc99a`
 
@@ -1679,6 +1764,7 @@ COPY dir:26e66ef8f923a58e38cb459694c48e6ba5757efd48d643136f3d67c7e489711e in /us
 -	Virtual Size: 32.2 KB (32211 bytes)
 -	v2 Blob: `sha256:9bfe580c1274c2e069b457719a3cf16a221b24c53f83f7f475d88131b4c17de4`
 -	v2 Content-Length: 12.7 KB (12683 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:47 GMT
 
 #### `498e4247d99b493adf8fa3d1e1e3a65e6e43347803fef19b9fb8381381f316e4`
 
@@ -1692,6 +1778,7 @@ COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /us
 -	Virtual Size: 2.9 KB (2934 bytes)
 -	v2 Blob: `sha256:a16d458d5f4783f526fc1fb600ded07c580743db72f92dbfcca7489dc9443912`
 -	v2 Content-Length: 2.5 KB (2513 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:45 GMT
 
 #### `33d8867ed2571cf70de13edb5ac02418aa9955a7717b3aa5a16bb0e374c68d5e`
 
@@ -1733,6 +1820,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3fbecf78718798ec37813bdd9a5295d930a929c970bd943b1ba630f51252962f`
 
@@ -1746,6 +1834,7 @@ EXPOSE 443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c76eee7a55dbe726da99063da60770e6b34fdd85fd94d6ec3ae668613cc3ebc`
 
@@ -1759,6 +1848,7 @@ EXPOSE 10081/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e24540113bfaf67abcbd66661fe1959236b9d9b27abf88adb38a200d2c0a450`
 
@@ -1772,6 +1862,7 @@ EXPOSE 10082/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b055485ea4b7ed29c96e87cfc8367ba866cf43b3da0128b93062a05174138cde`
 
@@ -1785,6 +1876,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dba12996627e0c699ac50a025e004edfd33eedc7b1c2642b1ad05fb47627ec9d`
 
@@ -1798,6 +1890,7 @@ CMD ["/usr/local/bin/run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php-zendserver:5.4`
 
@@ -1847,6 +1940,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1860,6 +1954,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1873,6 +1968,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bdb68dade2584ca0c7425f45e84e223396ccda8ca14fe4522dcb87151b6ce087`
 
@@ -1900,6 +1996,7 @@ COPY file:b41779e1f854d0cbd9f908d776d0b3a06d6d01a6cbd70347c053a657292d7cae in /u
 -	Virtual Size: 29.6 KB (29576 bytes)
 -	v2 Blob: `sha256:ba4d80d6fddb3c65665731a99c4296fa8802f01752412476b62d1971003c4ece`
 -	v2 Content-Length: 11.7 KB (11704 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:07:35 GMT
 
 #### `350f25aae3cb3e2b0f5a438b92a69d679159d353e0abdaef2d5db8cd4d53cf4f`
 
@@ -1955,6 +2052,7 @@ RUN apt-get update && apt-get install -y zend-server-php-5.4 && /usr/local/zend/
 -	Virtual Size: 505.9 MB (505880801 bytes)
 -	v2 Blob: `sha256:0df4824b4dbaf5b9bb933cb79040f9ef531e81f1552404b2f14872354f45deb6`
 -	v2 Content-Length: 225.2 MB (225217589 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:07:14 GMT
 
 #### `7a81c3238d5d316e366f570738de08504036da612bfa5081c1eb2052e611ec69`
 
@@ -1968,6 +2066,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ba7e9e2e85cbfb47c7868445f7820ed8774abfdb9b583da03b503ff91468e4e1`
 
@@ -1981,6 +2080,7 @@ EXPOSE 443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9875d359979a86d7904e76ccc06bc7ed7fde7079300e71de3a4710269b7594d`
 
@@ -1994,6 +2094,7 @@ EXPOSE 10081/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33b1dd8a562f45867da3d0219cbb3e1d4abf979fe11e030ce6a425ba58824b0a`
 
@@ -2007,6 +2108,7 @@ EXPOSE 10082/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3fe028d488185c13abec1fd7a45247716838a875d28450c537d8e608091c2b1`
 
@@ -2020,6 +2122,7 @@ EXPOSE 10060/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `05cfccf200fe695b62384d7bd29a0030efd230701dc13bf3b866672175f5ab07`
 
@@ -2033,6 +2136,7 @@ EXPOSE 10061/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33dd8148e231803aad92c58471aecac3bbc7190d46dbf1110860fc514a257f7c`
 
@@ -2046,6 +2150,7 @@ EXPOSE 10062/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d7e10181a4d31b63a2324f9d142669b370b9770ce5391c1b738f2dbe62c24aa`
 
@@ -2059,6 +2164,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cb009c424dc5da648e3a1bf8a70e599c8f34b2aef20e9dfcc2982a78507b505`
 
@@ -2072,6 +2178,7 @@ CMD ["/usr/local/bin/run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php-zendserver:7.0-php5.4`
 
@@ -2121,6 +2228,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2134,6 +2242,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2147,6 +2256,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bdb68dade2584ca0c7425f45e84e223396ccda8ca14fe4522dcb87151b6ce087`
 
@@ -2174,6 +2284,7 @@ COPY file:b41779e1f854d0cbd9f908d776d0b3a06d6d01a6cbd70347c053a657292d7cae in /u
 -	Virtual Size: 29.6 KB (29576 bytes)
 -	v2 Blob: `sha256:ba4d80d6fddb3c65665731a99c4296fa8802f01752412476b62d1971003c4ece`
 -	v2 Content-Length: 11.7 KB (11704 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:07:35 GMT
 
 #### `350f25aae3cb3e2b0f5a438b92a69d679159d353e0abdaef2d5db8cd4d53cf4f`
 
@@ -2229,6 +2340,7 @@ RUN apt-get update && apt-get install -y zend-server-php-5.4 && /usr/local/zend/
 -	Virtual Size: 505.9 MB (505880801 bytes)
 -	v2 Blob: `sha256:0df4824b4dbaf5b9bb933cb79040f9ef531e81f1552404b2f14872354f45deb6`
 -	v2 Content-Length: 225.2 MB (225217589 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:07:14 GMT
 
 #### `7a81c3238d5d316e366f570738de08504036da612bfa5081c1eb2052e611ec69`
 
@@ -2242,6 +2354,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ba7e9e2e85cbfb47c7868445f7820ed8774abfdb9b583da03b503ff91468e4e1`
 
@@ -2255,6 +2368,7 @@ EXPOSE 443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9875d359979a86d7904e76ccc06bc7ed7fde7079300e71de3a4710269b7594d`
 
@@ -2268,6 +2382,7 @@ EXPOSE 10081/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33b1dd8a562f45867da3d0219cbb3e1d4abf979fe11e030ce6a425ba58824b0a`
 
@@ -2281,6 +2396,7 @@ EXPOSE 10082/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3fe028d488185c13abec1fd7a45247716838a875d28450c537d8e608091c2b1`
 
@@ -2294,6 +2410,7 @@ EXPOSE 10060/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `05cfccf200fe695b62384d7bd29a0030efd230701dc13bf3b866672175f5ab07`
 
@@ -2307,6 +2424,7 @@ EXPOSE 10061/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33dd8148e231803aad92c58471aecac3bbc7190d46dbf1110860fc514a257f7c`
 
@@ -2320,6 +2438,7 @@ EXPOSE 10062/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d7e10181a4d31b63a2324f9d142669b370b9770ce5391c1b738f2dbe62c24aa`
 
@@ -2333,6 +2452,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cb009c424dc5da648e3a1bf8a70e599c8f34b2aef20e9dfcc2982a78507b505`
 
@@ -2346,6 +2466,7 @@ CMD ["/usr/local/bin/run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php-zendserver:9.0-techpreview2-php7.0GA`
 
@@ -2395,6 +2516,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2408,6 +2530,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2421,6 +2544,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `24941ef24456b505ca811153d2c28bfdc65bc75079b819dafbef2662aeff4030`
 
@@ -2434,6 +2558,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `e2ddebfc44efea9ed988106874982ead3d286b5c4c0902b5e94ce0b9811ec29b`
 
@@ -2447,6 +2572,7 @@ RUN echo "deb http://repos.zend.com/zend-server/early-access/zs-php7-tech-previe
 -	Virtual Size: 109.0 B
 -	v2 Blob: `sha256:ee9660c580b2fd41e33b615d2ebb9d9c06a10db5a2730e7e8f55870f404cd227`
 -	v2 Content-Length: 261.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:09:59 GMT
 
 #### `b22bab26858301d1743f7d604c3f192667402eae1092bf06d0a29ead867897c7`
 
@@ -2460,6 +2586,7 @@ RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-
 -	Virtual Size: 543.8 MB (543827432 bytes)
 -	v2 Blob: `sha256:45047470b4fd091be76c858610521f566b7cc05d77659d9ec2095a5e0edd6b0c`
 -	v2 Content-Length: 248.9 MB (248892968 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:09:43 GMT
 
 #### `7c16fac35b13830491f04bdfae399bcb2220f16be053c066afc17a23e5babece`
 
@@ -2487,6 +2614,7 @@ ENV ZS_INIT_VERSION=0.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7ca50aefb689aae3013d4e60f0770e5ff24ccbd8995bfd5866c45e114e651587`
 
@@ -2500,6 +2628,7 @@ ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fde5c95230a2b9489ae1d8bd93504a8198d33d88c2771d6a47ede9dad2ff13c0`
 
@@ -2513,6 +2642,7 @@ RUN apt-get install -y curl
 -	Virtual Size: 1.6 MB (1623421 bytes)
 -	v2 Blob: `sha256:538fa0ebb61681ebb3877726e14788d84b4f12df73629e51dbdd2def43df2b24`
 -	v2 Content-Length: 460.7 KB (460706 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:08:26 GMT
 
 #### `f517bb5335b2a465698bc65ef800ce5eef9233d6d7c6255691cce4f4293dd47d`
 
@@ -2544,6 +2674,7 @@ WORKDIR /usr/local/zs-init
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `621346a26dfc51ae9e58808560f481c95aa1b827cacc9d8cf3f7a3648d8cf03b`
 
@@ -2557,6 +2688,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581797 bytes)
 -	v2 Blob: `sha256:691dcc24fac678a4bb57b336756b477fca5d39114ebcdc6e5fa2d7858b9b6932`
 -	v2 Content-Length: 426.7 KB (426709 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:08:19 GMT
 
 #### `981ed8555b660fc169d3cd5b6dfc603d6ae8cb9ffc6b3045cc046a23dfd20631`
 
@@ -2570,6 +2702,7 @@ RUN /usr/local/zend/bin/php composer.phar update
 -	Virtual Size: 34.5 MB (34458425 bytes)
 -	v2 Blob: `sha256:79961e27a39820729ed305a731dbe81460525e27441e6a13794f30094179ca38`
 -	v2 Content-Length: 8.0 MB (7974974 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:08:15 GMT
 
 #### `7ec5a4f47e396dd6c4f2dd8d5c6789bac85a6c022243177e35de11f51d9f24be`
 
@@ -2611,6 +2744,7 @@ RUN rm /var/www/html/index.html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:55762d319efa6b3d56c154ae848b45de510a6c63d090df0a8f010587be57a2b9`
 -	v2 Content-Length: 169.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:08:04 GMT
 
 #### `59bf3b75f5692b93458ce37235fda77f4a325ee7ca0da51671a8a54e7a92e71b`
 
@@ -2638,6 +2772,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a401a0bdcf715fea15af6863ce620265e4e049eaf5f6db38c0819f9d864f53ce`
 
@@ -2651,6 +2786,7 @@ EXPOSE 443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6a0d8e54a2e838b0297e55080c0c9297664ef3132a4d737d0b0ad117116bcd29`
 
@@ -2664,6 +2800,7 @@ EXPOSE 10081/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `19f7b4141ed8301be27b581525a4922c21cb64cae6be4543f892beb7ddc9b165`
 
@@ -2677,6 +2814,7 @@ EXPOSE 10082/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `978ba74c9a7b11c4ba4091011a97190a79c261c5f787f1017bf3ad57bfe93edc`
 
@@ -2690,6 +2828,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `60b305094864a5c010b3c965a96c9f94e9c70711f3fa9cdde8807cb5ece91387`
 
@@ -2703,6 +2842,7 @@ CMD ["/usr/local/bin/run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php-zendserver:latest`
 
@@ -2752,6 +2892,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2765,6 +2906,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2778,6 +2920,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `24941ef24456b505ca811153d2c28bfdc65bc75079b819dafbef2662aeff4030`
 
@@ -2791,6 +2934,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -2818,6 +2962,7 @@ RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-
 -	Virtual Size: 528.6 MB (528575710 bytes)
 -	v2 Blob: `sha256:6f166f31537352cff46abbc419e94f6cc9473636098e57de69709c096ccd6532`
 -	v2 Content-Length: 243.8 MB (243834975 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:05:19 GMT
 
 #### `39cd9c0049700e8b4f0cacba101f9950ec6d618f5debac4999ce726310cfbc40`
 
@@ -2845,6 +2990,7 @@ ENV ZS_INIT_VERSION=0.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9afed5aff0038309bd1038c2535ab6479689804e4bf11657af1671038ef2fd8e`
 
@@ -2858,6 +3004,7 @@ ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `68d47a796e9d031271eb4bb38d118ca73c9a9d0d667997a96cb29f11a3d5f182`
 
@@ -2871,6 +3018,7 @@ RUN apt-get install -y curl
 -	Virtual Size: 1.7 MB (1688797 bytes)
 -	v2 Blob: `sha256:8d4449fce8631e04fcb90a5946c9fa21ca1fa936ba42cbc9167432fa42d46e8a`
 -	v2 Content-Length: 473.3 KB (473341 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:04:04 GMT
 
 #### `786d1c623bbd858324207ba2e5bc35abf0fc7cf3ce96c3998b0e03507eacd1a5`
 
@@ -2888,6 +3036,7 @@ RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${
 -	Virtual Size: 65.5 KB (65481 bytes)
 -	v2 Blob: `sha256:3df38ff1dc855cde80afd94ed8927e52a37f5dbac7347b034f7281063859a393`
 -	v2 Content-Length: 15.6 KB (15594 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:04:01 GMT
 
 #### `b2298769e300c577e88a0e01c8e2bb2e38987bb8abe13b90245bf5edb5e47a9f`
 
@@ -2901,6 +3050,7 @@ WORKDIR /usr/local/zs-init
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9598c9742c82b3856c3edbd9af933a1d93e79ae64b29f222619052109a0358a`
 
@@ -2914,6 +3064,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581791 bytes)
 -	v2 Blob: `sha256:7b4fd3af022812f8ed4fe79d25f467739aeed88a74343291eb5bc08bd9c4a794`
 -	v2 Content-Length: 426.5 KB (426462 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:57 GMT
 
 #### `957666f5a716bcaa0ccf796d7b566f33208a7e198aa1230c6374e279be8fc99a`
 
@@ -2941,6 +3092,7 @@ COPY dir:26e66ef8f923a58e38cb459694c48e6ba5757efd48d643136f3d67c7e489711e in /us
 -	Virtual Size: 32.2 KB (32211 bytes)
 -	v2 Blob: `sha256:9bfe580c1274c2e069b457719a3cf16a221b24c53f83f7f475d88131b4c17de4`
 -	v2 Content-Length: 12.7 KB (12683 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:47 GMT
 
 #### `498e4247d99b493adf8fa3d1e1e3a65e6e43347803fef19b9fb8381381f316e4`
 
@@ -2954,6 +3106,7 @@ COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /us
 -	Virtual Size: 2.9 KB (2934 bytes)
 -	v2 Blob: `sha256:a16d458d5f4783f526fc1fb600ded07c580743db72f92dbfcca7489dc9443912`
 -	v2 Content-Length: 2.5 KB (2513 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:45 GMT
 
 #### `33d8867ed2571cf70de13edb5ac02418aa9955a7717b3aa5a16bb0e374c68d5e`
 
@@ -2995,6 +3148,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3fbecf78718798ec37813bdd9a5295d930a929c970bd943b1ba630f51252962f`
 
@@ -3008,6 +3162,7 @@ EXPOSE 443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c76eee7a55dbe726da99063da60770e6b34fdd85fd94d6ec3ae668613cc3ebc`
 
@@ -3021,6 +3176,7 @@ EXPOSE 10081/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e24540113bfaf67abcbd66661fe1959236b9d9b27abf88adb38a200d2c0a450`
 
@@ -3034,6 +3190,7 @@ EXPOSE 10082/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b055485ea4b7ed29c96e87cfc8367ba866cf43b3da0128b93062a05174138cde`
 
@@ -3047,6 +3204,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dba12996627e0c699ac50a025e004edfd33eedc7b1c2642b1ad05fb47627ec9d`
 
@@ -3060,3 +3218,4 @@ CMD ["/usr/local/bin/run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
