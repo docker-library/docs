@@ -6666,7 +6666,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 -	Virtual Size: 9.8 MB (9774725 bytes)
 -	v2 Blob: `sha256:ad4f8fcb62aa67c0719a5a9a4bdcc9819a3a34afee98416f4ae0aac0044d495d`
 -	v2 Content-Length: 3.4 MB (3365234 bytes)
--	v2 Last-Modified: Tue, 22 Mar 2016 21:41:41 GMT
 
 #### `6d1c12d5f990ebf5b82d69e9c6a9d691ce11dc3ab0d196488e2fb16745d74ee8`
 
@@ -7133,7 +7132,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 -	Virtual Size: 9.8 MB (9774725 bytes)
 -	v2 Blob: `sha256:ad4f8fcb62aa67c0719a5a9a4bdcc9819a3a34afee98416f4ae0aac0044d495d`
 -	v2 Content-Length: 3.4 MB (3365234 bytes)
--	v2 Last-Modified: Tue, 22 Mar 2016 21:41:41 GMT
 
 #### `6d1c12d5f990ebf5b82d69e9c6a9d691ce11dc3ab0d196488e2fb16745d74ee8`
 
@@ -7600,7 +7598,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 -	Virtual Size: 9.8 MB (9774725 bytes)
 -	v2 Blob: `sha256:ad4f8fcb62aa67c0719a5a9a4bdcc9819a3a34afee98416f4ae0aac0044d495d`
 -	v2 Content-Length: 3.4 MB (3365234 bytes)
--	v2 Last-Modified: Tue, 22 Mar 2016 21:41:41 GMT
 
 #### `6d1c12d5f990ebf5b82d69e9c6a9d691ce11dc3ab0d196488e2fb16745d74ee8`
 
@@ -8067,7 +8064,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 -	Virtual Size: 9.8 MB (9774725 bytes)
 -	v2 Blob: `sha256:ad4f8fcb62aa67c0719a5a9a4bdcc9819a3a34afee98416f4ae0aac0044d495d`
 -	v2 Content-Length: 3.4 MB (3365234 bytes)
--	v2 Last-Modified: Tue, 22 Mar 2016 21:41:41 GMT
 
 #### `6d1c12d5f990ebf5b82d69e9c6a9d691ce11dc3ab0d196488e2fb16745d74ee8`
 
