@@ -7094,7 +7094,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:5f0003810ce9bad7c785635448a70d71080d5e1a80c02f5560f0d109d1d12403`
 -	v2 Content-Length: 271.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:29:47 GMT
 
 #### `6a24767eb34eb7df8dd7271cf00623caf7cba277d8344c10dbbcf4600d9ea4b5`
 
@@ -7292,7 +7291,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:5f0003810ce9bad7c785635448a70d71080d5e1a80c02f5560f0d109d1d12403`
 -	v2 Content-Length: 271.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:29:47 GMT
 
 #### `6a24767eb34eb7df8dd7271cf00623caf7cba277d8344c10dbbcf4600d9ea4b5`
 

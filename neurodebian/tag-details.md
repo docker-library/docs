@@ -875,7 +875,6 @@ RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list
 -	Virtual Size: 90.0 B
 -	v2 Blob: `sha256:81753333565c55275bc0718bc22218a4f7c35934501404ec9083716ea9ee5208`
 -	v2 Content-Length: 221.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:57:59 GMT
 
 #### `782d30c5be4d01220b9a6b18ef0aa8444b6c4d6cfeb8a31d49ecf504e393853e`
 
@@ -1002,7 +1001,6 @@ RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list
 -	Virtual Size: 90.0 B
 -	v2 Blob: `sha256:81753333565c55275bc0718bc22218a4f7c35934501404ec9083716ea9ee5208`
 -	v2 Content-Length: 221.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:57:59 GMT
 
 #### `782d30c5be4d01220b9a6b18ef0aa8444b6c4d6cfeb8a31d49ecf504e393853e`
 
