@@ -1,21 +1,21 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.3`, `8`, `jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d431f09a3730996c0f759eb446bff454f715a321/jessie/Dockerfile)
--	[`jessie-backports` (*jessie/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d431f09a3730996c0f759eb446bff454f715a321/jessie/backports/Dockerfile)
--	[`oldstable` (*oldstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d431f09a3730996c0f759eb446bff454f715a321/oldstable/Dockerfile)
--	[`oldstable-backports` (*oldstable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d431f09a3730996c0f759eb446bff454f715a321/oldstable/backports/Dockerfile)
--	[`sid` (*sid/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/ac656be13c552d02afcb261e8cdbd1a63e971143/sid/Dockerfile)
--	[`stable` (*stable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d431f09a3730996c0f759eb446bff454f715a321/stable/Dockerfile)
--	[`stable-backports` (*stable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d431f09a3730996c0f759eb446bff454f715a321/stable/backports/Dockerfile)
--	[`stretch` (*stretch/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/ac656be13c552d02afcb261e8cdbd1a63e971143/stretch/Dockerfile)
--	[`testing` (*testing/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/ac656be13c552d02afcb261e8cdbd1a63e971143/testing/Dockerfile)
--	[`unstable` (*unstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/ac656be13c552d02afcb261e8cdbd1a63e971143/unstable/Dockerfile)
--	[`7.9`, `7`, `wheezy` (*wheezy/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d431f09a3730996c0f759eb446bff454f715a321/wheezy/Dockerfile)
--	[`wheezy-backports` (*wheezy/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d431f09a3730996c0f759eb446bff454f715a321/wheezy/backports/Dockerfile)
+-	[`8.4`, `8`, `jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/04fb8b48a6fcf3d1831a3fc684adb648c8b4d876/jessie/Dockerfile)
+-	[`jessie-backports` (*jessie/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/04fb8b48a6fcf3d1831a3fc684adb648c8b4d876/jessie/backports/Dockerfile)
+-	[`oldstable` (*oldstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/04fb8b48a6fcf3d1831a3fc684adb648c8b4d876/oldstable/Dockerfile)
+-	[`oldstable-backports` (*oldstable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/04fb8b48a6fcf3d1831a3fc684adb648c8b4d876/oldstable/backports/Dockerfile)
+-	[`sid` (*sid/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e119819585a29ce6d8ebcf9ac269dea6ada36c9e/sid/Dockerfile)
+-	[`stable` (*stable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/04fb8b48a6fcf3d1831a3fc684adb648c8b4d876/stable/Dockerfile)
+-	[`stable-backports` (*stable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/04fb8b48a6fcf3d1831a3fc684adb648c8b4d876/stable/backports/Dockerfile)
+-	[`stretch` (*stretch/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e119819585a29ce6d8ebcf9ac269dea6ada36c9e/stretch/Dockerfile)
+-	[`testing` (*testing/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e119819585a29ce6d8ebcf9ac269dea6ada36c9e/testing/Dockerfile)
+-	[`unstable` (*unstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e119819585a29ce6d8ebcf9ac269dea6ada36c9e/unstable/Dockerfile)
+-	[`7.10`, `7`, `wheezy` (*wheezy/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/04fb8b48a6fcf3d1831a3fc684adb648c8b4d876/wheezy/Dockerfile)
+-	[`wheezy-backports` (*wheezy/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/04fb8b48a6fcf3d1831a3fc684adb648c8b4d876/wheezy/backports/Dockerfile)
 -	[`rc-buggy` (*debian/rc-buggy/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/22a998f815d55217afa0075411b810b8889ceac1/debian/rc-buggy/Dockerfile)
 -	[`experimental` (*debian/experimental/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/22a998f815d55217afa0075411b810b8889ceac1/debian/experimental/Dockerfile)
 
-[![](https://badge.imagelayers.io/debian:latest.svg)](https://imagelayers.io/?images=debian:8.3,debian:jessie-backports,debian:oldstable,debian:oldstable-backports,debian:sid,debian:stable,debian:stable-backports,debian:stretch,debian:testing,debian:unstable,debian:7.9,debian:wheezy-backports,debian:rc-buggy,debian:experimental)
+[![](https://badge.imagelayers.io/debian:latest.svg)](https://imagelayers.io/?images=debian:8.4,debian:jessie-backports,debian:oldstable,debian:oldstable-backports,debian:sid,debian:stable,debian:stable-backports,debian:stretch,debian:testing,debian:unstable,debian:7.10,debian:wheezy-backports,debian:rc-buggy,debian:experimental)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/debian`)](https://github.com/docker-library/official-images/blob/master/library/debian). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdebian).
 
