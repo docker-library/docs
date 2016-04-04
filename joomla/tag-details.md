@@ -495,6 +495,7 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 -	Virtual Size: 32.2 MB (32153487 bytes)
 -	v2 Blob: `sha256:4752d8026cd582b1de784d3886ffac99f57624c17e7546e371cab1941dbe829c`
 -	v2 Content-Length: 8.4 MB (8375862 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:36:36 GMT
 
 #### `56f2ac69228146dc26e8117196625a40dd4d68bdf43f30028009a4d1c0a0c4f7`
 
@@ -1020,6 +1021,7 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 -	Virtual Size: 32.2 MB (32153487 bytes)
 -	v2 Blob: `sha256:4752d8026cd582b1de784d3886ffac99f57624c17e7546e371cab1941dbe829c`
 -	v2 Content-Length: 8.4 MB (8375862 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:36:36 GMT
 
 #### `56f2ac69228146dc26e8117196625a40dd4d68bdf43f30028009a4d1c0a0c4f7`
 
@@ -1545,6 +1547,7 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 -	Virtual Size: 32.2 MB (32153487 bytes)
 -	v2 Blob: `sha256:4752d8026cd582b1de784d3886ffac99f57624c17e7546e371cab1941dbe829c`
 -	v2 Content-Length: 8.4 MB (8375862 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:36:36 GMT
 
 #### `56f2ac69228146dc26e8117196625a40dd4d68bdf43f30028009a4d1c0a0c4f7`
 
@@ -2070,6 +2073,7 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 -	Virtual Size: 32.2 MB (32153487 bytes)
 -	v2 Blob: `sha256:4752d8026cd582b1de784d3886ffac99f57624c17e7546e371cab1941dbe829c`
 -	v2 Content-Length: 8.4 MB (8375862 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:36:36 GMT
 
 #### `56f2ac69228146dc26e8117196625a40dd4d68bdf43f30028009a4d1c0a0c4f7`
 
@@ -2595,6 +2599,7 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 -	Virtual Size: 32.2 MB (32153487 bytes)
 -	v2 Blob: `sha256:4752d8026cd582b1de784d3886ffac99f57624c17e7546e371cab1941dbe829c`
 -	v2 Content-Length: 8.4 MB (8375862 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:36:36 GMT
 
 #### `56f2ac69228146dc26e8117196625a40dd4d68bdf43f30028009a4d1c0a0c4f7`
 
@@ -3120,6 +3125,7 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 -	Virtual Size: 32.2 MB (32153487 bytes)
 -	v2 Blob: `sha256:4752d8026cd582b1de784d3886ffac99f57624c17e7546e371cab1941dbe829c`
 -	v2 Content-Length: 8.4 MB (8375862 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:36:36 GMT
 
 #### `56f2ac69228146dc26e8117196625a40dd4d68bdf43f30028009a4d1c0a0c4f7`
 
@@ -3645,6 +3651,7 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 -	Virtual Size: 32.2 MB (32153487 bytes)
 -	v2 Blob: `sha256:4752d8026cd582b1de784d3886ffac99f57624c17e7546e371cab1941dbe829c`
 -	v2 Content-Length: 8.4 MB (8375862 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:36:36 GMT
 
 #### `56f2ac69228146dc26e8117196625a40dd4d68bdf43f30028009a4d1c0a0c4f7`
 
@@ -4170,6 +4177,7 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 -	Virtual Size: 32.2 MB (32153487 bytes)
 -	v2 Blob: `sha256:4752d8026cd582b1de784d3886ffac99f57624c17e7546e371cab1941dbe829c`
 -	v2 Content-Length: 8.4 MB (8375862 bytes)
+-	v2 Last-Modified: Tue, 22 Mar 2016 21:36:36 GMT
 
 #### `56f2ac69228146dc26e8117196625a40dd4d68bdf43f30028009a4d1c0a0c4f7`
 
