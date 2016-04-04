@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.642.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/c0a8acd97f3e63a02f4a5aa58b2a273d53a56488/Dockerfile)
+-	[`latest`, `1.642.4` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/67f1189b45ba454acc72eb6117107c6f08c2663a/Dockerfile)
 -	[`2.0-beta-1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/d014524ce333b9e8c2f647756f52c4a31329e3a4/Dockerfile)
 
 [![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:2.0-beta-1)
