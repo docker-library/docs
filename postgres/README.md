@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.1.20`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f8e9784438c8fe54f831c301a45f4d55f6fa453/9.1/Dockerfile)
--	[`9.2.15`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f8e9784438c8fe54f831c301a45f4d55f6fa453/9.2/Dockerfile)
--	[`9.3.11`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f8e9784438c8fe54f831c301a45f4d55f6fa453/9.3/Dockerfile)
--	[`9.4.6`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f8e9784438c8fe54f831c301a45f4d55f6fa453/9.4/Dockerfile)
--	[`9.5.1`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f8e9784438c8fe54f831c301a45f4d55f6fa453/9.5/Dockerfile)
+-	[`9.1.21`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/8e867c8ba0fc8fd347e43ae53ddeba8e67242a53/9.1/Dockerfile)
+-	[`9.2.16`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/8e867c8ba0fc8fd347e43ae53ddeba8e67242a53/9.2/Dockerfile)
+-	[`9.3.12`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/8e867c8ba0fc8fd347e43ae53ddeba8e67242a53/9.3/Dockerfile)
+-	[`9.4.7`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/8e867c8ba0fc8fd347e43ae53ddeba8e67242a53/9.4/Dockerfile)
+-	[`9.5.2`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/8e867c8ba0fc8fd347e43ae53ddeba8e67242a53/9.5/Dockerfile)
 
-[![](https://badge.imagelayers.io/postgres:latest.svg)](https://imagelayers.io/?images=postgres:9.1.20,postgres:9.2.15,postgres:9.3.11,postgres:9.4.6,postgres:9.5.1)
+[![](https://badge.imagelayers.io/postgres:latest.svg)](https://imagelayers.io/?images=postgres:9.1.21,postgres:9.2.16,postgres:9.3.12,postgres:9.4.7,postgres:9.5.2)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostgres).
 

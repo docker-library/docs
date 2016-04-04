@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`10.1.12`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/c64262339972ac2a8dadaf8141e012aa8ddb8c23/10.1/Dockerfile)
+-	[`10.1.13`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/6bd1bf6e03aab298bf842800059f8620a3414a81/10.1/Dockerfile)
 -	[`10.0.24`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/027cff3bc7e39065a98ca001175ba7dbdb32be32/10.0/Dockerfile)
 -	[`5.5.48`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/027cff3bc7e39065a98ca001175ba7dbdb32be32/5.5/Dockerfile)
 
-[![](https://badge.imagelayers.io/mariadb:latest.svg)](https://imagelayers.io/?images=mariadb:10.1.12,mariadb:10.0.24,mariadb:5.5.48)
+[![](https://badge.imagelayers.io/mariadb:latest.svg)](https://imagelayers.io/?images=mariadb:10.1.13,mariadb:10.0.24,mariadb:5.5.48)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmariadb).
 
