@@ -55,7 +55,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -534,7 +533,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -1013,7 +1011,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -1492,7 +1489,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
