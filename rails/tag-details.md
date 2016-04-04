@@ -30,6 +30,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -128,6 +129,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `afd4d4d7b944daf70b5f4b290f02ce062378d87b5c54e60d83b78df8d2edbc71`
 
@@ -232,6 +234,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117623438 bytes)
 -	v2 Blob: `sha256:39dbe29ef3fd36791be680920085b7f37351010c1e9ff75103459de27389026f`
 -	v2 Content-Length: 34.5 MB (34546061 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:49:14 GMT
 
 #### `89ec89615ce962a193b6ac6a68cd12d4dc415a2deb4ff02ac0c5b4afbea4e020`
 
@@ -350,6 +353,7 @@ RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 
 -	Virtual Size: 45.4 MB (45380673 bytes)
 -	v2 Blob: `sha256:2c7716d3faa3fb421831143670a44ee427481d2ec48ec7e19b067871610898a2`
 -	v2 Content-Length: 13.8 MB (13760218 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:48:36 GMT
 
 #### `c29884560db59211f84993bcbab41b466b0f829a0ff11b27f6e96c5dd4db8c39`
 
@@ -376,6 +380,7 @@ RUN gem install rails --version "$RAILS_VERSION"
 -	Virtual Size: 54.3 MB (54292062 bytes)
 -	v2 Blob: `sha256:0ecf9dc0f76a0658a8fa0a45d394283ab5fc839988dac8f0f446ac0499540c2e`
 -	v2 Content-Length: 24.6 MB (24646501 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:48:25 GMT
 
 ## `rails:4.2`
 
@@ -399,6 +404,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -497,6 +503,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `afd4d4d7b944daf70b5f4b290f02ce062378d87b5c54e60d83b78df8d2edbc71`
 
@@ -601,6 +608,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117623438 bytes)
 -	v2 Blob: `sha256:39dbe29ef3fd36791be680920085b7f37351010c1e9ff75103459de27389026f`
 -	v2 Content-Length: 34.5 MB (34546061 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:49:14 GMT
 
 #### `89ec89615ce962a193b6ac6a68cd12d4dc415a2deb4ff02ac0c5b4afbea4e020`
 
@@ -719,6 +727,7 @@ RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 
 -	Virtual Size: 45.4 MB (45380673 bytes)
 -	v2 Blob: `sha256:2c7716d3faa3fb421831143670a44ee427481d2ec48ec7e19b067871610898a2`
 -	v2 Content-Length: 13.8 MB (13760218 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:48:36 GMT
 
 #### `c29884560db59211f84993bcbab41b466b0f829a0ff11b27f6e96c5dd4db8c39`
 
@@ -745,6 +754,7 @@ RUN gem install rails --version "$RAILS_VERSION"
 -	Virtual Size: 54.3 MB (54292062 bytes)
 -	v2 Blob: `sha256:0ecf9dc0f76a0658a8fa0a45d394283ab5fc839988dac8f0f446ac0499540c2e`
 -	v2 Content-Length: 24.6 MB (24646501 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:48:25 GMT
 
 ## `rails:4`
 
@@ -768,6 +778,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -866,6 +877,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `afd4d4d7b944daf70b5f4b290f02ce062378d87b5c54e60d83b78df8d2edbc71`
 
@@ -970,6 +982,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117623438 bytes)
 -	v2 Blob: `sha256:39dbe29ef3fd36791be680920085b7f37351010c1e9ff75103459de27389026f`
 -	v2 Content-Length: 34.5 MB (34546061 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:49:14 GMT
 
 #### `89ec89615ce962a193b6ac6a68cd12d4dc415a2deb4ff02ac0c5b4afbea4e020`
 
@@ -1088,6 +1101,7 @@ RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 
 -	Virtual Size: 45.4 MB (45380673 bytes)
 -	v2 Blob: `sha256:2c7716d3faa3fb421831143670a44ee427481d2ec48ec7e19b067871610898a2`
 -	v2 Content-Length: 13.8 MB (13760218 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:48:36 GMT
 
 #### `c29884560db59211f84993bcbab41b466b0f829a0ff11b27f6e96c5dd4db8c39`
 
@@ -1114,6 +1128,7 @@ RUN gem install rails --version "$RAILS_VERSION"
 -	Virtual Size: 54.3 MB (54292062 bytes)
 -	v2 Blob: `sha256:0ecf9dc0f76a0658a8fa0a45d394283ab5fc839988dac8f0f446ac0499540c2e`
 -	v2 Content-Length: 24.6 MB (24646501 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:48:25 GMT
 
 ## `rails:latest`
 
@@ -1137,6 +1152,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1235,6 +1251,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `afd4d4d7b944daf70b5f4b290f02ce062378d87b5c54e60d83b78df8d2edbc71`
 
@@ -1339,6 +1356,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117623438 bytes)
 -	v2 Blob: `sha256:39dbe29ef3fd36791be680920085b7f37351010c1e9ff75103459de27389026f`
 -	v2 Content-Length: 34.5 MB (34546061 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:49:14 GMT
 
 #### `89ec89615ce962a193b6ac6a68cd12d4dc415a2deb4ff02ac0c5b4afbea4e020`
 
@@ -1457,6 +1475,7 @@ RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 
 -	Virtual Size: 45.4 MB (45380673 bytes)
 -	v2 Blob: `sha256:2c7716d3faa3fb421831143670a44ee427481d2ec48ec7e19b067871610898a2`
 -	v2 Content-Length: 13.8 MB (13760218 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:48:36 GMT
 
 #### `c29884560db59211f84993bcbab41b466b0f829a0ff11b27f6e96c5dd4db8c39`
 
@@ -1483,6 +1502,7 @@ RUN gem install rails --version "$RAILS_VERSION"
 -	Virtual Size: 54.3 MB (54292062 bytes)
 -	v2 Blob: `sha256:0ecf9dc0f76a0658a8fa0a45d394283ab5fc839988dac8f0f446ac0499540c2e`
 -	v2 Content-Length: 24.6 MB (24646501 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:48:25 GMT
 
 ## `rails:onbuild`
 
@@ -1506,6 +1526,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1604,6 +1625,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `afd4d4d7b944daf70b5f4b290f02ce062378d87b5c54e60d83b78df8d2edbc71`
 
@@ -1708,6 +1730,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117623438 bytes)
 -	v2 Blob: `sha256:39dbe29ef3fd36791be680920085b7f37351010c1e9ff75103459de27389026f`
 -	v2 Content-Length: 34.5 MB (34546061 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:49:14 GMT
 
 #### `89ec89615ce962a193b6ac6a68cd12d4dc415a2deb4ff02ac0c5b4afbea4e020`
 
@@ -1826,6 +1849,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:66bb0eb6ebf7995d492f151308650d3d1167fde8ac84e510e090dbfcb85e71b6`
 -	v2 Content-Length: 125.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:13 GMT
 
 #### `42f20359050b6f2d8d5163da46b6fb50c7536d3a01fa800232113a1cdd46a34e`
 
@@ -1904,6 +1928,7 @@ RUN apt-get update && apt-get install -y nodejs --no-install-recommends && rm -r
 -	Virtual Size: 8.5 MB (8450091 bytes)
 -	v2 Blob: `sha256:6d2df81138d4cfd250fbdb8cd5c03703071911e96d056a72739f5eaf93d7ff0d`
 -	v2 Content-Length: 2.9 MB (2877727 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:50:59 GMT
 
 #### `a2182c8d60d6261583809f1b79d79950f3f74ac669221f0ffcd4908fd5ae93d6`
 
@@ -1917,6 +1942,7 @@ RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 
 -	Virtual Size: 45.4 MB (45380673 bytes)
 -	v2 Blob: `sha256:f6538486366a5553900b5af9133f2eefdb60dcec30b8bed77dedfa9b61e805df`
 -	v2 Content-Length: 13.8 MB (13760228 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:50:54 GMT
 
 #### `4bbbdb90b1b821dff6caf8345554bb657758c0052b64290ae763dd38b2af83f4`
 

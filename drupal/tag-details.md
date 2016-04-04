@@ -339,6 +339,7 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:146ad57e056b2e4cd3b61f92443cfbb1adf99339b2515c31891958e61cfff14e`
 -	v2 Content-Length: 1.5 KB (1545 bytes)
+-	v2 Last-Modified: Sat, 19 Mar 2016 02:08:57 GMT
 
 #### `db130634a7cc54b70f2d75ddd1d2dc4ae1339af3a5bf414d9048569fee3c148f`
 
@@ -420,6 +421,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 -	Virtual Size: 36.8 MB (36798758 bytes)
 -	v2 Blob: `sha256:a036ee40b5bba6babaf3df43cb5187db2f2846402f50e8a8a4cf91bc2743c503`
 -	v2 Content-Length: 11.5 MB (11455062 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:32:40 GMT
 
 #### `016731be4d37f7286bffc5527b88ad27f982d8c89a6cf973eee1c43fd3cc74da`
 
@@ -786,6 +788,7 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:146ad57e056b2e4cd3b61f92443cfbb1adf99339b2515c31891958e61cfff14e`
 -	v2 Content-Length: 1.5 KB (1545 bytes)
+-	v2 Last-Modified: Sat, 19 Mar 2016 02:08:57 GMT
 
 #### `db130634a7cc54b70f2d75ddd1d2dc4ae1339af3a5bf414d9048569fee3c148f`
 
@@ -867,6 +870,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 -	Virtual Size: 36.8 MB (36798758 bytes)
 -	v2 Blob: `sha256:a036ee40b5bba6babaf3df43cb5187db2f2846402f50e8a8a4cf91bc2743c503`
 -	v2 Content-Length: 11.5 MB (11455062 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:32:40 GMT
 
 #### `016731be4d37f7286bffc5527b88ad27f982d8c89a6cf973eee1c43fd3cc74da`
 
@@ -1233,6 +1237,7 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:146ad57e056b2e4cd3b61f92443cfbb1adf99339b2515c31891958e61cfff14e`
 -	v2 Content-Length: 1.5 KB (1545 bytes)
+-	v2 Last-Modified: Sat, 19 Mar 2016 02:08:57 GMT
 
 #### `db130634a7cc54b70f2d75ddd1d2dc4ae1339af3a5bf414d9048569fee3c148f`
 
@@ -1314,6 +1319,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 -	Virtual Size: 36.8 MB (36798758 bytes)
 -	v2 Blob: `sha256:a036ee40b5bba6babaf3df43cb5187db2f2846402f50e8a8a4cf91bc2743c503`
 -	v2 Content-Length: 11.5 MB (11455062 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:32:40 GMT
 
 #### `016731be4d37f7286bffc5527b88ad27f982d8c89a6cf973eee1c43fd3cc74da`
 
@@ -1680,6 +1686,7 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:146ad57e056b2e4cd3b61f92443cfbb1adf99339b2515c31891958e61cfff14e`
 -	v2 Content-Length: 1.5 KB (1545 bytes)
+-	v2 Last-Modified: Sat, 19 Mar 2016 02:08:57 GMT
 
 #### `db130634a7cc54b70f2d75ddd1d2dc4ae1339af3a5bf414d9048569fee3c148f`
 
@@ -1761,6 +1768,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 -	Virtual Size: 36.8 MB (36798758 bytes)
 -	v2 Blob: `sha256:a036ee40b5bba6babaf3df43cb5187db2f2846402f50e8a8a4cf91bc2743c503`
 -	v2 Content-Length: 11.5 MB (11455062 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:32:40 GMT
 
 #### `016731be4d37f7286bffc5527b88ad27f982d8c89a6cf973eee1c43fd3cc74da`
 
@@ -8428,6 +8436,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 53.2 MB (53202166 bytes)
 -	v2 Blob: `sha256:8d86584a6802d0e5397fddfc68c0c626b1127aef4fd505cfa5fa34ae899e9c83`
 -	v2 Content-Length: 12.4 MB (12367953 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:39:16 GMT
 
 ## `drupal:8.1.0-beta2`
 
@@ -8895,6 +8904,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 53.2 MB (53202166 bytes)
 -	v2 Blob: `sha256:8d86584a6802d0e5397fddfc68c0c626b1127aef4fd505cfa5fa34ae899e9c83`
 -	v2 Content-Length: 12.4 MB (12367953 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:39:16 GMT
 
 ## `drupal:8.1.0-apache`
 
@@ -9362,6 +9372,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 53.2 MB (53202166 bytes)
 -	v2 Blob: `sha256:8d86584a6802d0e5397fddfc68c0c626b1127aef4fd505cfa5fa34ae899e9c83`
 -	v2 Content-Length: 12.4 MB (12367953 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:39:16 GMT
 
 ## `drupal:8.1.0`
 
@@ -9829,6 +9840,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 53.2 MB (53202166 bytes)
 -	v2 Blob: `sha256:8d86584a6802d0e5397fddfc68c0c626b1127aef4fd505cfa5fa34ae899e9c83`
 -	v2 Content-Length: 12.4 MB (12367953 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:39:16 GMT
 
 ## `drupal:8.1-apache`
 
@@ -10296,6 +10308,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 53.2 MB (53202166 bytes)
 -	v2 Blob: `sha256:8d86584a6802d0e5397fddfc68c0c626b1127aef4fd505cfa5fa34ae899e9c83`
 -	v2 Content-Length: 12.4 MB (12367953 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:39:16 GMT
 
 ## `drupal:8.1`
 
@@ -10763,6 +10776,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 53.2 MB (53202166 bytes)
 -	v2 Blob: `sha256:8d86584a6802d0e5397fddfc68c0c626b1127aef4fd505cfa5fa34ae899e9c83`
 -	v2 Content-Length: 12.4 MB (12367953 bytes)
+-	v2 Last-Modified: Wed, 30 Mar 2016 21:39:16 GMT
 
 ## `drupal:8.1.0-beta2-fpm`
 

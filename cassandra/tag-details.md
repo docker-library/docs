@@ -1447,6 +1447,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 70.6 KB (70587 bytes)
 -	v2 Blob: `sha256:c646a53b63a48fda7b3a8922c5b3fc3370523d9a61b414abc89b6fdbde5c034b`
 -	v2 Content-Length: 23.4 KB (23412 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:22:52 GMT
 
 #### `6be94a6ce40c1c8a3e0f3f700e5690b8b6d002e68fb18c6d3c7ad7ad7ee9f36a`
 
@@ -1692,6 +1693,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 70.6 KB (70587 bytes)
 -	v2 Blob: `sha256:c646a53b63a48fda7b3a8922c5b3fc3370523d9a61b414abc89b6fdbde5c034b`
 -	v2 Content-Length: 23.4 KB (23412 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:22:52 GMT
 
 #### `6be94a6ce40c1c8a3e0f3f700e5690b8b6d002e68fb18c6d3c7ad7ad7ee9f36a`
 
@@ -2345,6 +2347,7 @@ RUN echo 'deb http://www.apache.org/dist/cassandra/debian 32x main' >> /etc/apt/
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:948e10d8c23b8d8c0ab2bf0c341a712249927646d789e829ecdb4e6950332e6a`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:57:30 GMT
 
 #### `b0f3e8703ea47cccd296f94a8647d9026c0f971184386af6056a9387d58973b2`
 
@@ -2427,6 +2430,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 73.2 KB (73151 bytes)
 -	v2 Blob: `sha256:2724ff6aac5f3d8612e538cf583ec595ec5af2cc722165cd33e8fbf2f5608055`
 -	v2 Content-Length: 24.3 KB (24327 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:55:55 GMT
 
 #### `2b69c62a4bd6dde6d78c28f9cb847aa2de80c30e367dd45ff28812bfe353e76e`
 
@@ -2590,6 +2594,7 @@ RUN echo 'deb http://www.apache.org/dist/cassandra/debian 32x main' >> /etc/apt/
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:948e10d8c23b8d8c0ab2bf0c341a712249927646d789e829ecdb4e6950332e6a`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:57:30 GMT
 
 #### `b0f3e8703ea47cccd296f94a8647d9026c0f971184386af6056a9387d58973b2`
 
@@ -2672,6 +2677,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 73.2 KB (73151 bytes)
 -	v2 Blob: `sha256:2724ff6aac5f3d8612e538cf583ec595ec5af2cc722165cd33e8fbf2f5608055`
 -	v2 Content-Length: 24.3 KB (24327 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:55:55 GMT
 
 #### `2b69c62a4bd6dde6d78c28f9cb847aa2de80c30e367dd45ff28812bfe353e76e`
 
@@ -2835,6 +2841,7 @@ RUN echo 'deb http://www.apache.org/dist/cassandra/debian 33x main' >> /etc/apt/
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:3a748a23db645a119be5998fbbecf41f3fee8041c40e9a94e4ccf9eca9dab4ec`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:53:42 GMT
 
 #### `0dba6327e63d78a0964aaeeffbcdbe9ed6c3976727feb0ad600d863c577960c8`
 
@@ -2889,6 +2896,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:d14c6c712be42cd1c0d7d1b4c8334abe8b4f65b44878093997ee71447ec9ec1c`
 -	v2 Content-Length: 730.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:57:15 GMT
 
 #### `353640cdd7d58011f378a71f6baeb8b2ef538a28e1e4501e990bee7eb5e4cfa4`
 
@@ -3080,6 +3088,7 @@ RUN echo 'deb http://www.apache.org/dist/cassandra/debian 33x main' >> /etc/apt/
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:3a748a23db645a119be5998fbbecf41f3fee8041c40e9a94e4ccf9eca9dab4ec`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:53:42 GMT
 
 #### `0dba6327e63d78a0964aaeeffbcdbe9ed6c3976727feb0ad600d863c577960c8`
 
@@ -3134,6 +3143,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:d14c6c712be42cd1c0d7d1b4c8334abe8b4f65b44878093997ee71447ec9ec1c`
 -	v2 Content-Length: 730.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:57:15 GMT
 
 #### `353640cdd7d58011f378a71f6baeb8b2ef538a28e1e4501e990bee7eb5e4cfa4`
 
@@ -3325,6 +3335,7 @@ RUN echo 'deb http://www.apache.org/dist/cassandra/debian 33x main' >> /etc/apt/
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:3a748a23db645a119be5998fbbecf41f3fee8041c40e9a94e4ccf9eca9dab4ec`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:53:42 GMT
 
 #### `0dba6327e63d78a0964aaeeffbcdbe9ed6c3976727feb0ad600d863c577960c8`
 
@@ -3379,6 +3390,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:d14c6c712be42cd1c0d7d1b4c8334abe8b4f65b44878093997ee71447ec9ec1c`
 -	v2 Content-Length: 730.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:57:15 GMT
 
 #### `353640cdd7d58011f378a71f6baeb8b2ef538a28e1e4501e990bee7eb5e4cfa4`
 

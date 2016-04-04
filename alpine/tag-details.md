@@ -30,6 +30,7 @@ ADD file:565780895060f27a6a1b89c77d11a2a0ce05d432ee864a0816a8bfaad3276017 in /
 -	Virtual Size: 5.0 MB (5043973 bytes)
 -	v2 Blob: `sha256:2adb67ce5cbbd5ff721a8297b9c5505fbfd5e4a60493ffc13ad9587b1b9eae79`
 -	v2 Content-Length: 2.2 MB (2242091 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 20:55:30 GMT
 
 ## `alpine:3.2`
 

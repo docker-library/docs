@@ -1037,6 +1037,7 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:b7d7efbb3b61bc5fe5403ef824980be86461c605c89397aefed39bdc828a21ef`
 -	v2 Content-Length: 1.7 KB (1695 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:29:31 GMT
 
 #### `9152050e9e3488e600ddb70391d1eceb80793b889936b3b7987869b878ca387b`
 
@@ -1259,6 +1260,7 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:b7d7efbb3b61bc5fe5403ef824980be86461c605c89397aefed39bdc828a21ef`
 -	v2 Content-Length: 1.7 KB (1695 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:29:31 GMT
 
 #### `9152050e9e3488e600ddb70391d1eceb80793b889936b3b7987869b878ca387b`
 
@@ -1940,6 +1942,7 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 645.1 MB (645098525 bytes)
 -	v2 Blob: `sha256:dcf6c3fb2b962a184ddf4c59362a2dfef57794aa39bda2832694c345dda40b37`
 -	v2 Content-Length: 213.1 MB (213115870 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:32:27 GMT
 
 #### `8fc42d31789c3c32de36889eb225de35bf82be012afac748b3eae59d67331a1e`
 
@@ -2162,6 +2165,7 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 645.1 MB (645098525 bytes)
 -	v2 Blob: `sha256:dcf6c3fb2b962a184ddf4c59362a2dfef57794aa39bda2832694c345dda40b37`
 -	v2 Content-Length: 213.1 MB (213115870 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:32:27 GMT
 
 #### `8fc42d31789c3c32de36889eb225de35bf82be012afac748b3eae59d67331a1e`
 
@@ -3285,6 +3289,7 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:69d50929f60e965abd9f65f1d51b2b4420e874216e2502448003914069d32c6c`
 -	v2 Content-Length: 337.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:37:19 GMT
 
 #### `56846f095fa5dfb9f39e9719503409efbcaf97270a29f5a3349c58ddf826f419`
 
@@ -3479,6 +3484,7 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:75b58a3bc89a2260e5f4af9337b5d2a64e43237e0e5c928fa005d8a42526cde4`
 -	v2 Content-Length: 1.7 KB (1691 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:40:07 GMT
 
 #### `a0746ceb68f0e73bc20715571e85bc0e46b5f78c457b1444d098335255671cac`
 
@@ -3701,6 +3707,7 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:75b58a3bc89a2260e5f4af9337b5d2a64e43237e0e5c928fa005d8a42526cde4`
 -	v2 Content-Length: 1.7 KB (1691 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:40:07 GMT
 
 #### `a0746ceb68f0e73bc20715571e85bc0e46b5f78c457b1444d098335255671cac`
 
@@ -3938,6 +3945,7 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 413.3 MB (413297116 bytes)
 -	v2 Blob: `sha256:3cdf7d367a596769ece681b2ad09a1ae2e804e3198e7df5ec76c783bf83aaf5f`
 -	v2 Content-Length: 138.0 MB (138016617 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:41:29 GMT
 
 #### `156c95728d909d45095fa1c817a08613283a9665afed29663f9aefbbfb249133`
 
@@ -3951,6 +3959,7 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:688d5b3604f13ab8dbf68d5c60624100a7ca610c38a4dcc40bdc662c00baec27`
 -	v2 Content-Length: 337.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:40:42 GMT
 
 #### `0c7891350daa19b6540017e2ddaa3920ceb3ee97fe29eba14272d3af579a4be3`
 

@@ -31,6 +31,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -84,6 +85,7 @@ RUN mkdir -p "$HTTPD_PREFIX" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6dda107bf71b460bbfb6dfaa2531a9cbe4800e4412f35aa4bedc820a8315d21c`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:28:30 GMT
 
 #### `2e56fcbe3fadebe1a48ed2afe93ce9d3e8bc635e133e4e007322512963d825c4`
 
@@ -202,6 +204,7 @@ COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /u
 -	Virtual Size: 135.0 B
 -	v2 Blob: `sha256:75a543e481311c1fcf237e6cc4eb52434570b0bc83e9f5994a236cbd920a851e`
 -	v2 Content-Length: 292.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:03 GMT
 
 #### `ba747c74d6a86985432a5e2d3f1d75df1ac3c50f67d7f3a097f0014962ec7ba1`
 
@@ -251,6 +254,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -304,6 +308,7 @@ RUN mkdir -p "$HTTPD_PREFIX" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6dda107bf71b460bbfb6dfaa2531a9cbe4800e4412f35aa4bedc820a8315d21c`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:28:30 GMT
 
 #### `2e56fcbe3fadebe1a48ed2afe93ce9d3e8bc635e133e4e007322512963d825c4`
 
@@ -422,6 +427,7 @@ COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /u
 -	Virtual Size: 135.0 B
 -	v2 Blob: `sha256:75a543e481311c1fcf237e6cc4eb52434570b0bc83e9f5994a236cbd920a851e`
 -	v2 Content-Length: 292.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:03 GMT
 
 #### `ba747c74d6a86985432a5e2d3f1d75df1ac3c50f67d7f3a097f0014962ec7ba1`
 
@@ -471,6 +477,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -524,6 +531,7 @@ RUN mkdir -p "$HTTPD_PREFIX" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6dda107bf71b460bbfb6dfaa2531a9cbe4800e4412f35aa4bedc820a8315d21c`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:28:30 GMT
 
 #### `2e56fcbe3fadebe1a48ed2afe93ce9d3e8bc635e133e4e007322512963d825c4`
 
@@ -691,6 +699,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -744,6 +753,7 @@ RUN mkdir -p "$HTTPD_PREFIX" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6dda107bf71b460bbfb6dfaa2531a9cbe4800e4412f35aa4bedc820a8315d21c`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:28:30 GMT
 
 #### `2e56fcbe3fadebe1a48ed2afe93ce9d3e8bc635e133e4e007322512963d825c4`
 
@@ -911,6 +921,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -964,6 +975,7 @@ RUN mkdir -p "$HTTPD_PREFIX" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6dda107bf71b460bbfb6dfaa2531a9cbe4800e4412f35aa4bedc820a8315d21c`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:28:30 GMT
 
 #### `2e56fcbe3fadebe1a48ed2afe93ce9d3e8bc635e133e4e007322512963d825c4`
 
@@ -1131,6 +1143,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1184,6 +1197,7 @@ RUN mkdir -p "$HTTPD_PREFIX" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6dda107bf71b460bbfb6dfaa2531a9cbe4800e4412f35aa4bedc820a8315d21c`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:28:30 GMT
 
 #### `2e56fcbe3fadebe1a48ed2afe93ce9d3e8bc635e133e4e007322512963d825c4`
 

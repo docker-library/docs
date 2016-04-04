@@ -2238,6 +2238,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `39f01439b0e1ea26b2194a3deabe265916f562c69498eec311cd3ccb4b2c2393`
 
@@ -2417,6 +2418,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `39f01439b0e1ea26b2194a3deabe265916f562c69498eec311cd3ccb4b2c2393`
 
@@ -2596,6 +2598,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `39f01439b0e1ea26b2194a3deabe265916f562c69498eec311cd3ccb4b2c2393`
 
@@ -2775,6 +2778,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `39f01439b0e1ea26b2194a3deabe265916f562c69498eec311cd3ccb4b2c2393`
 
@@ -2954,6 +2958,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `39f01439b0e1ea26b2194a3deabe265916f562c69498eec311cd3ccb4b2c2393`
 
@@ -3133,6 +3138,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `39f01439b0e1ea26b2194a3deabe265916f562c69498eec311cd3ccb4b2c2393`
 
@@ -3312,6 +3318,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `39f01439b0e1ea26b2194a3deabe265916f562c69498eec311cd3ccb4b2c2393`
 
@@ -3491,6 +3498,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `39f01439b0e1ea26b2194a3deabe265916f562c69498eec311cd3ccb4b2c2393`
 
@@ -3603,6 +3611,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -3726,6 +3735,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -3849,6 +3859,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -3972,6 +3983,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -4095,6 +4107,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -4218,6 +4231,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -4341,6 +4355,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -4464,6 +4479,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -4666,6 +4682,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:83d275c7c0eb4d6aaa4420d80e7e19d946520aee76ba32975edf2f2a28814e44`
 -	v2 Content-Length: 239.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:05:38 GMT
 
 #### `a3e77152603cdd2e4da87bf06ed3b91c70a4302838367fafeb201b8dd2eb6271`
 
@@ -4723,6 +4740,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:10397f12c44d56d12981313847e55f159277ac64575f1491d2905585a846791f`
 -	v2 Content-Length: 84.0 MB (84009240 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:05:26 GMT
 
 ## `java:openjdk-7-jre`
 
@@ -4825,6 +4843,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:83d275c7c0eb4d6aaa4420d80e7e19d946520aee76ba32975edf2f2a28814e44`
 -	v2 Content-Length: 239.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:05:38 GMT
 
 #### `a3e77152603cdd2e4da87bf06ed3b91c70a4302838367fafeb201b8dd2eb6271`
 
@@ -4882,6 +4901,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:10397f12c44d56d12981313847e55f159277ac64575f1491d2905585a846791f`
 -	v2 Content-Length: 84.0 MB (84009240 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:05:26 GMT
 
 ## `java:7u95-jre`
 
@@ -4984,6 +5004,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:83d275c7c0eb4d6aaa4420d80e7e19d946520aee76ba32975edf2f2a28814e44`
 -	v2 Content-Length: 239.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:05:38 GMT
 
 #### `a3e77152603cdd2e4da87bf06ed3b91c70a4302838367fafeb201b8dd2eb6271`
 
@@ -5041,6 +5062,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:10397f12c44d56d12981313847e55f159277ac64575f1491d2905585a846791f`
 -	v2 Content-Length: 84.0 MB (84009240 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:05:26 GMT
 
 ## `java:7-jre`
 
@@ -5143,6 +5165,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:83d275c7c0eb4d6aaa4420d80e7e19d946520aee76ba32975edf2f2a28814e44`
 -	v2 Content-Length: 239.0 B
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:05:38 GMT
 
 #### `a3e77152603cdd2e4da87bf06ed3b91c70a4302838367fafeb201b8dd2eb6271`
 
@@ -5200,6 +5223,7 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:10397f12c44d56d12981313847e55f159277ac64575f1491d2905585a846791f`
 -	v2 Content-Length: 84.0 MB (84009240 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:05:26 GMT
 
 ## `java:openjdk-7u95-jre-alpine`
 
@@ -5223,6 +5247,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -5346,6 +5371,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -5469,6 +5495,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -5592,6 +5619,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -5782,6 +5810,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `c25523425b08e85af3ea1c8e4d582421db76b7a9b21df5e5bde1846b3d86c397`
 
@@ -6001,6 +6030,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `c25523425b08e85af3ea1c8e4d582421db76b7a9b21df5e5bde1846b3d86c397`
 
@@ -6220,6 +6250,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `c25523425b08e85af3ea1c8e4d582421db76b7a9b21df5e5bde1846b3d86c397`
 
@@ -6439,6 +6470,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `c25523425b08e85af3ea1c8e4d582421db76b7a9b21df5e5bde1846b3d86c397`
 
@@ -6658,6 +6690,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `c25523425b08e85af3ea1c8e4d582421db76b7a9b21df5e5bde1846b3d86c397`
 
@@ -6877,6 +6910,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `c25523425b08e85af3ea1c8e4d582421db76b7a9b21df5e5bde1846b3d86c397`
 
@@ -7096,6 +7130,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `c25523425b08e85af3ea1c8e4d582421db76b7a9b21df5e5bde1846b3d86c397`
 
@@ -7315,6 +7350,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `c25523425b08e85af3ea1c8e4d582421db76b7a9b21df5e5bde1846b3d86c397`
 
@@ -7534,6 +7570,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `c25523425b08e85af3ea1c8e4d582421db76b7a9b21df5e5bde1846b3d86c397`
 
@@ -7753,6 +7790,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:95109706d468e9ae8cc712446dd5d6b5c44f8e720dee3218a2c670dd1bb303cb`
 -	v2 Content-Length: 593.3 KB (593263 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 17:15:02 GMT
 
 #### `c25523425b08e85af3ea1c8e4d582421db76b7a9b21df5e5bde1846b3d86c397`
 
@@ -7905,6 +7943,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -8005,6 +8044,7 @@ RUN set -x \
 -	Virtual Size: 140.7 MB (140670337 bytes)
 -	v2 Blob: `sha256:e7a6fe95a1695a1af0d025fe37fc37efac5eea946c7fafcfa11d3bcf4e1c37fb`
 -	v2 Content-Length: 49.6 MB (49583141 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:02 GMT
 
 ## `java:openjdk-8u72-alpine`
 
@@ -8028,6 +8068,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -8128,6 +8169,7 @@ RUN set -x \
 -	Virtual Size: 140.7 MB (140670337 bytes)
 -	v2 Blob: `sha256:e7a6fe95a1695a1af0d025fe37fc37efac5eea946c7fafcfa11d3bcf4e1c37fb`
 -	v2 Content-Length: 49.6 MB (49583141 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:02 GMT
 
 ## `java:openjdk-8-jdk-alpine`
 
@@ -8151,6 +8193,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -8251,6 +8294,7 @@ RUN set -x \
 -	Virtual Size: 140.7 MB (140670337 bytes)
 -	v2 Blob: `sha256:e7a6fe95a1695a1af0d025fe37fc37efac5eea946c7fafcfa11d3bcf4e1c37fb`
 -	v2 Content-Length: 49.6 MB (49583141 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:02 GMT
 
 ## `java:openjdk-8-alpine`
 
@@ -8274,6 +8318,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -8374,6 +8419,7 @@ RUN set -x \
 -	Virtual Size: 140.7 MB (140670337 bytes)
 -	v2 Blob: `sha256:e7a6fe95a1695a1af0d025fe37fc37efac5eea946c7fafcfa11d3bcf4e1c37fb`
 -	v2 Content-Length: 49.6 MB (49583141 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:02 GMT
 
 ## `java:8u72-jdk-alpine`
 
@@ -8397,6 +8443,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -8497,6 +8544,7 @@ RUN set -x \
 -	Virtual Size: 140.7 MB (140670337 bytes)
 -	v2 Blob: `sha256:e7a6fe95a1695a1af0d025fe37fc37efac5eea946c7fafcfa11d3bcf4e1c37fb`
 -	v2 Content-Length: 49.6 MB (49583141 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:02 GMT
 
 ## `java:8u72-alpine`
 
@@ -8520,6 +8568,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -8620,6 +8669,7 @@ RUN set -x \
 -	Virtual Size: 140.7 MB (140670337 bytes)
 -	v2 Blob: `sha256:e7a6fe95a1695a1af0d025fe37fc37efac5eea946c7fafcfa11d3bcf4e1c37fb`
 -	v2 Content-Length: 49.6 MB (49583141 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:02 GMT
 
 ## `java:8-jdk-alpine`
 
@@ -8643,6 +8693,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -8743,6 +8794,7 @@ RUN set -x \
 -	Virtual Size: 140.7 MB (140670337 bytes)
 -	v2 Blob: `sha256:e7a6fe95a1695a1af0d025fe37fc37efac5eea946c7fafcfa11d3bcf4e1c37fb`
 -	v2 Content-Length: 49.6 MB (49583141 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:02 GMT
 
 ## `java:8-alpine`
 
@@ -8766,6 +8818,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -8866,6 +8919,7 @@ RUN set -x \
 -	Virtual Size: 140.7 MB (140670337 bytes)
 -	v2 Blob: `sha256:e7a6fe95a1695a1af0d025fe37fc37efac5eea946c7fafcfa11d3bcf4e1c37fb`
 -	v2 Content-Length: 49.6 MB (49583141 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:02 GMT
 
 ## `java:jdk-alpine`
 
@@ -8889,6 +8943,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -8989,6 +9044,7 @@ RUN set -x \
 -	Virtual Size: 140.7 MB (140670337 bytes)
 -	v2 Blob: `sha256:e7a6fe95a1695a1af0d025fe37fc37efac5eea946c7fafcfa11d3bcf4e1c37fb`
 -	v2 Content-Length: 49.6 MB (49583141 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:02 GMT
 
 ## `java:alpine`
 
@@ -9012,6 +9068,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -9112,6 +9169,7 @@ RUN set -x \
 -	Virtual Size: 140.7 MB (140670337 bytes)
 -	v2 Blob: `sha256:e7a6fe95a1695a1af0d025fe37fc37efac5eea946c7fafcfa11d3bcf4e1c37fb`
 -	v2 Content-Length: 49.6 MB (49583141 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:02 GMT
 
 ## `java:openjdk-8u72-jre`
 
@@ -9227,6 +9285,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -9311,6 +9370,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 ## `java:openjdk-8-jre`
 
@@ -9426,6 +9486,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -9510,6 +9571,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 ## `java:8u72-jre`
 
@@ -9625,6 +9687,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -9709,6 +9772,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 ## `java:8-jre`
 
@@ -9824,6 +9888,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -9908,6 +9973,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 ## `java:jre`
 
@@ -10023,6 +10089,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -10107,6 +10174,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 ## `java:openjdk-8u72-jre-alpine`
 
@@ -10130,6 +10198,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -10253,6 +10322,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -10376,6 +10446,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -10499,6 +10570,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -10622,6 +10694,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `7bfd01ec5628ef04465d0498b131237a7c739011fe55348a3cf37938908b4265`
 
@@ -10829,6 +10902,7 @@ RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/s
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:e491967432786d588f4d95cfac245a67146d3d10f4d346107b96b49cef4bb145`
 -	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 18:04:21 GMT
 
 #### `af66044e888a351b043ba155dcc6ec45938118b37897b069804a2903f11a691a`
 
@@ -11044,6 +11118,7 @@ RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/s
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:e491967432786d588f4d95cfac245a67146d3d10f4d346107b96b49cef4bb145`
 -	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 18:04:21 GMT
 
 #### `af66044e888a351b043ba155dcc6ec45938118b37897b069804a2903f11a691a`
 
@@ -11267,6 +11342,7 @@ RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/s
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:e491967432786d588f4d95cfac245a67146d3d10f4d346107b96b49cef4bb145`
 -	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 18:04:21 GMT
 
 #### `af66044e888a351b043ba155dcc6ec45938118b37897b069804a2903f11a691a`
 
@@ -11482,6 +11558,7 @@ RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/s
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:e491967432786d588f4d95cfac245a67146d3d10f4d346107b96b49cef4bb145`
 -	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Wed, 24 Feb 2016 18:04:21 GMT
 
 #### `af66044e888a351b043ba155dcc6ec45938118b37897b069804a2903f11a691a`
 

@@ -367,6 +367,7 @@ ADD file:f59d84691d1caec0e6bcb48c23967ff52d2687e2e7cb6257c0c01af7a0e46d4c in /
 -	Virtual Size: 284.7 MB (284675206 bytes)
 -	v2 Blob: `sha256:f3ac5154871461d96ece9c2a72bbc01aad7aca0f25d18c6b131ca96e2a6cca7f`
 -	v2 Content-Length: 87.3 MB (87342977 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 21:33:51 GMT
 
 #### `e66661802a55c74784f3c367a8242462216ee690d6c6cad8468ac7e34ef7b334`
 
@@ -429,6 +430,7 @@ ADD file:f59d84691d1caec0e6bcb48c23967ff52d2687e2e7cb6257c0c01af7a0e46d4c in /
 -	Virtual Size: 284.7 MB (284675206 bytes)
 -	v2 Blob: `sha256:f3ac5154871461d96ece9c2a72bbc01aad7aca0f25d18c6b131ca96e2a6cca7f`
 -	v2 Content-Length: 87.3 MB (87342977 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 21:33:51 GMT
 
 #### `e66661802a55c74784f3c367a8242462216ee690d6c6cad8468ac7e34ef7b334`
 
@@ -837,6 +839,7 @@ ADD file:63df1fe23f2f72b7663b5f66bba74923e4baa195a5c878485b44ac86ec3ff62b in /
 -	Virtual Size: 190.6 MB (190593087 bytes)
 -	v2 Blob: `sha256:3b231ed5aa2f1631b3189f15f215fad43e35ec4aa56ee7bb92b9dd1b73ca94cb`
 -	v2 Content-Length: 66.4 MB (66390854 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 19:13:06 GMT
 
 #### `8e6730e0eaef34246dd562b1ecc41ab72012a1bab74996edd4b5783bbfe71b82`
 
@@ -912,6 +915,7 @@ ADD file:63df1fe23f2f72b7663b5f66bba74923e4baa195a5c878485b44ac86ec3ff62b in /
 -	Virtual Size: 190.6 MB (190593087 bytes)
 -	v2 Blob: `sha256:3b231ed5aa2f1631b3189f15f215fad43e35ec4aa56ee7bb92b9dd1b73ca94cb`
 -	v2 Content-Length: 66.4 MB (66390854 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 19:13:06 GMT
 
 #### `8e6730e0eaef34246dd562b1ecc41ab72012a1bab74996edd4b5783bbfe71b82`
 
@@ -987,6 +991,7 @@ ADD file:9ff85de7a936502e83fadeed82d6f11231ce7e842eea23d73f6f5fb7182f1111 in /
 -	Virtual Size: 202.6 MB (202609003 bytes)
 -	v2 Blob: `sha256:35d9d5d11536c0c6843ecd106dc710b5c54b8198aa28710e73dba2cbe555847f`
 -	v2 Content-Length: 72.0 MB (72038766 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:34:59 GMT
 
 ## `centos:6.6`
 
@@ -1023,6 +1028,7 @@ ADD file:9ff85de7a936502e83fadeed82d6f11231ce7e842eea23d73f6f5fb7182f1111 in /
 -	Virtual Size: 202.6 MB (202609003 bytes)
 -	v2 Blob: `sha256:35d9d5d11536c0c6843ecd106dc710b5c54b8198aa28710e73dba2cbe555847f`
 -	v2 Content-Length: 72.0 MB (72038766 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:34:59 GMT
 
 ## `centos:centos5.11`
 

@@ -78,6 +78,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `9457f7eb9a112df6748b1dc87dd6875ee1d7fa0df49d568c399b0904ad28e485`
 
@@ -237,6 +238,7 @@ RUN apt-get update && apt-get install -y wget git curl zip && rm -rf /var/lib/ap
 -	Virtual Size: 1.4 MB (1435583 bytes)
 -	v2 Blob: `sha256:a3ffe5ac3319974da75424b9d06503a05c963fdb683d50e4bea33f8c896e7079`
 -	v2 Content-Length: 523.1 KB (523055 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:10:07 GMT
 
 #### `b9eb3c31bfbebe253d8b2c912f625ce5c06ab3ee460d5308eb2c9e195ef3ea94`
 
@@ -363,6 +365,7 @@ RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:bb368b39cc3a31dfa70aa3c03d404348a7e28e3dd399bd2d6518edbad355587c`
 -	v2 Content-Length: 178.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:58:47 GMT
 
 #### `b0949e50f9ab4d485041e37fe0bedf22881cf7ab129ee8a94c2fef33092d2939`
 
@@ -669,6 +672,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `9457f7eb9a112df6748b1dc87dd6875ee1d7fa0df49d568c399b0904ad28e485`
 
@@ -828,6 +832,7 @@ RUN apt-get update && apt-get install -y wget git curl zip && rm -rf /var/lib/ap
 -	Virtual Size: 1.4 MB (1435583 bytes)
 -	v2 Blob: `sha256:a3ffe5ac3319974da75424b9d06503a05c963fdb683d50e4bea33f8c896e7079`
 -	v2 Content-Length: 523.1 KB (523055 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:10:07 GMT
 
 #### `b9eb3c31bfbebe253d8b2c912f625ce5c06ab3ee460d5308eb2c9e195ef3ea94`
 
@@ -946,6 +951,7 @@ RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:bb368b39cc3a31dfa70aa3c03d404348a7e28e3dd399bd2d6518edbad355587c`
 -	v2 Content-Length: 178.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:58:47 GMT
 
 #### `b0949e50f9ab4d485041e37fe0bedf22881cf7ab129ee8a94c2fef33092d2939`
 
@@ -1240,6 +1246,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `9457f7eb9a112df6748b1dc87dd6875ee1d7fa0df49d568c399b0904ad28e485`
 
@@ -1399,6 +1406,7 @@ RUN apt-get update && apt-get install -y wget git curl zip && rm -rf /var/lib/ap
 -	Virtual Size: 1.4 MB (1435583 bytes)
 -	v2 Blob: `sha256:a3ffe5ac3319974da75424b9d06503a05c963fdb683d50e4bea33f8c896e7079`
 -	v2 Content-Length: 523.1 KB (523055 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:10:07 GMT
 
 #### `b9eb3c31bfbebe253d8b2c912f625ce5c06ab3ee460d5308eb2c9e195ef3ea94`
 
@@ -1517,6 +1525,7 @@ RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:bb368b39cc3a31dfa70aa3c03d404348a7e28e3dd399bd2d6518edbad355587c`
 -	v2 Content-Length: 178.0 B
+-	v2 Last-Modified: Wed, 30 Mar 2016 22:58:47 GMT
 
 #### `b0949e50f9ab4d485041e37fe0bedf22881cf7ab129ee8a94c2fef33092d2939`
 

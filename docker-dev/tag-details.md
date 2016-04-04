@@ -65,6 +65,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -104,6 +105,7 @@ RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys E87
 -	Virtual Size: 25.0 KB (25043 bytes)
 -	v2 Blob: `sha256:b5527133791bf5e6e668074993e4fb4d6b8264a34483b9dda31002f7d62bf671`
 -	v2 Content-Length: 12.3 KB (12279 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:31:02 GMT
 
 #### `8e67e3fcbdbc138ed67694f8cc202bf6e1cae903a13825dfce88c4d40c09c467`
 
@@ -117,6 +119,7 @@ RUN echo deb http://ppa.launchpad.net/zfs-native/stable/ubuntu trusty main > /et
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:d7e93a9e180521e59bd863e47b71629f7bd457385276adefa823eaeda87e11c9`
 -	v2 Content-Length: 229.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:30:59 GMT
 
 #### `6e690218c2f8015e9630eba4a63ab074ffab7afd5719c4f2d32c34dfaeda6a0b`
 
@@ -173,6 +176,7 @@ RUN git clone -b v2_02_103 https://git.fedorahosted.org/git/lvm2.git /usr/local/
 -	Virtual Size: 24.5 MB (24491215 bytes)
 -	v2 Blob: `sha256:c1346c179e08ea7dc54703b809822bf0b5f346851fddfa70b78c979bdc2b5aef`
 -	v2 Content-Length: 19.3 MB (19282332 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:29:16 GMT
 
 #### `34e7005ea03910e285e160b459f4e1850faf485056d5875b27806da875f5b7a5`
 
@@ -446,6 +450,7 @@ RUN set -x \
 -	Virtual Size: 15.5 MB (15531232 bytes)
 -	v2 Blob: `sha256:5378491dc9d64ad7d8aabc58938b293adf5e700d3c144150c4763cd7b4718575`
 -	v2 Content-Length: 4.0 MB (4034385 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:55 GMT
 
 #### `75b536f0f2adeec40c7c54950a91fa97b62eb51d0a2bab4b60558de44ed9127d`
 
@@ -628,6 +633,7 @@ RUN ln -sv $PWD/contrib/completion/bash/docker /etc/bash_completion.d/docker
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:befefe51f707dc0a374d5c387e0a88c010833c177977755dbf7bcd92db4a3eaf`
 -	v2 Content-Length: 183.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:02 GMT
 
 #### `07c57adc00471d61e4cc07ec5a4295f3c3e08e035a92426c341b967e1b979d2e`
 
@@ -823,6 +829,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -862,6 +869,7 @@ RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys E87
 -	Virtual Size: 25.0 KB (25043 bytes)
 -	v2 Blob: `sha256:b5527133791bf5e6e668074993e4fb4d6b8264a34483b9dda31002f7d62bf671`
 -	v2 Content-Length: 12.3 KB (12279 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:31:02 GMT
 
 #### `8e67e3fcbdbc138ed67694f8cc202bf6e1cae903a13825dfce88c4d40c09c467`
 
@@ -875,6 +883,7 @@ RUN echo deb http://ppa.launchpad.net/zfs-native/stable/ubuntu trusty main > /et
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:d7e93a9e180521e59bd863e47b71629f7bd457385276adefa823eaeda87e11c9`
 -	v2 Content-Length: 229.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:30:59 GMT
 
 #### `6e690218c2f8015e9630eba4a63ab074ffab7afd5719c4f2d32c34dfaeda6a0b`
 
@@ -931,6 +940,7 @@ RUN git clone -b v2_02_103 https://git.fedorahosted.org/git/lvm2.git /usr/local/
 -	Virtual Size: 24.5 MB (24491215 bytes)
 -	v2 Blob: `sha256:c1346c179e08ea7dc54703b809822bf0b5f346851fddfa70b78c979bdc2b5aef`
 -	v2 Content-Length: 19.3 MB (19282332 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:29:16 GMT
 
 #### `34e7005ea03910e285e160b459f4e1850faf485056d5875b27806da875f5b7a5`
 
@@ -1204,6 +1214,7 @@ RUN set -x \
 -	Virtual Size: 15.5 MB (15531232 bytes)
 -	v2 Blob: `sha256:5378491dc9d64ad7d8aabc58938b293adf5e700d3c144150c4763cd7b4718575`
 -	v2 Content-Length: 4.0 MB (4034385 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:55 GMT
 
 #### `75b536f0f2adeec40c7c54950a91fa97b62eb51d0a2bab4b60558de44ed9127d`
 
@@ -1386,6 +1397,7 @@ RUN ln -sv $PWD/contrib/completion/bash/docker /etc/bash_completion.d/docker
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:befefe51f707dc0a374d5c387e0a88c010833c177977755dbf7bcd92db4a3eaf`
 -	v2 Content-Length: 183.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:02 GMT
 
 #### `07c57adc00471d61e4cc07ec5a4295f3c3e08e035a92426c341b967e1b979d2e`
 
@@ -1581,6 +1593,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -1620,6 +1633,7 @@ RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys E87
 -	Virtual Size: 25.0 KB (25043 bytes)
 -	v2 Blob: `sha256:b5527133791bf5e6e668074993e4fb4d6b8264a34483b9dda31002f7d62bf671`
 -	v2 Content-Length: 12.3 KB (12279 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:31:02 GMT
 
 #### `8e67e3fcbdbc138ed67694f8cc202bf6e1cae903a13825dfce88c4d40c09c467`
 
@@ -1633,6 +1647,7 @@ RUN echo deb http://ppa.launchpad.net/zfs-native/stable/ubuntu trusty main > /et
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:d7e93a9e180521e59bd863e47b71629f7bd457385276adefa823eaeda87e11c9`
 -	v2 Content-Length: 229.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:30:59 GMT
 
 #### `6e690218c2f8015e9630eba4a63ab074ffab7afd5719c4f2d32c34dfaeda6a0b`
 
@@ -1689,6 +1704,7 @@ RUN git clone -b v2_02_103 https://git.fedorahosted.org/git/lvm2.git /usr/local/
 -	Virtual Size: 24.5 MB (24491215 bytes)
 -	v2 Blob: `sha256:c1346c179e08ea7dc54703b809822bf0b5f346851fddfa70b78c979bdc2b5aef`
 -	v2 Content-Length: 19.3 MB (19282332 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:29:16 GMT
 
 #### `34e7005ea03910e285e160b459f4e1850faf485056d5875b27806da875f5b7a5`
 
@@ -1962,6 +1978,7 @@ RUN set -x \
 -	Virtual Size: 15.5 MB (15531232 bytes)
 -	v2 Blob: `sha256:5378491dc9d64ad7d8aabc58938b293adf5e700d3c144150c4763cd7b4718575`
 -	v2 Content-Length: 4.0 MB (4034385 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:55 GMT
 
 #### `75b536f0f2adeec40c7c54950a91fa97b62eb51d0a2bab4b60558de44ed9127d`
 
@@ -2144,6 +2161,7 @@ RUN ln -sv $PWD/contrib/completion/bash/docker /etc/bash_completion.d/docker
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:befefe51f707dc0a374d5c387e0a88c010833c177977755dbf7bcd92db4a3eaf`
 -	v2 Content-Length: 183.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:02 GMT
 
 #### `07c57adc00471d61e4cc07ec5a4295f3c3e08e035a92426c341b967e1b979d2e`
 
@@ -2279,3 +2297,4 @@ COPY dir:8731a10dcf687cbf7520a3f6780003ca36aadbf15b2039725020b86a193d69a2 in /go
 -	Virtual Size: 114.9 MB (114939724 bytes)
 -	v2 Blob: `sha256:20ce215905447124c1af6fb8172d6c7fd4c38adca149e664bde77bfccebc5191`
 -	v2 Content-Length: 97.0 MB (96955795 bytes)
+-	v2 Last-Modified: Wed, 17 Feb 2016 19:19:43 GMT

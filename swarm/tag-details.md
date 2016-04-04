@@ -9,6 +9,7 @@
 -	[`swarm:1.1.2`](#swarm112)
 -	[`swarm:1.1.3`](#swarm113)
 -	[`swarm:1.2.0-rc1`](#swarm120-rc1)
+-	[`swarm:1.2.0-rc2`](#swarm120-rc2)
 -	[`swarm:latest`](#swarmlatest)
 
 ## `swarm:1.0.0`
@@ -33,6 +34,7 @@ COPY file:66d7b7237b5c380651026eed6940ea05fe3038621e987d2e28db0b3fb9e051ad in /s
 -	Virtual Size: 15.3 MB (15328394 bytes)
 -	v2 Blob: `sha256:7e7b2af55efc4135608dbe07c932630311b15506067eff14ef601d73e8971aa7`
 -	v2 Content-Length: 3.9 MB (3893462 bytes)
+-	v2 Last-Modified: Tue, 03 Nov 2015 20:18:58 GMT
 
 #### `42c4e5c90ee9d69c2536f672fae1dc377d25c9536b24ecee0a482c0d6860303c`
 
@@ -46,6 +48,7 @@ COPY file:bd5264daff0b6a6c28a120bd54d918f7b7a303870be25fdad88ea669c51a3550 in /e
 -	Virtual Size: 273.8 KB (273790 bytes)
 -	v2 Blob: `sha256:056632e86a18791cb8b47403cee7550b82c8e37365ea7248f5abffd9a70bcb8b`
 -	v2 Content-Length: 152.6 KB (152602 bytes)
+-	v2 Last-Modified: Tue, 03 Nov 2015 20:18:51 GMT
 
 #### `898b2fc9a9b3c4e1f5686c644d863233fbc2acc82a882c7063b0bfb585ecfec5`
 
@@ -59,6 +62,7 @@ COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tm
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:f805d18a5c3220056add08787d71ba90e7a54801f8b006d86d68d45528ce2d1b`
 -	v2 Content-Length: 131.0 B
+-	v2 Last-Modified: Wed, 03 Feb 2016 06:54:43 GMT
 
 #### `9e775088eb7bbbaafa97e8d8c51af1f94b85ca60c6e3af8630159a54ba284b43`
 
@@ -173,6 +177,7 @@ COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tm
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:fa34e1c94103c5e9b9c4d9685b23a3df772400387a304b6fb39846e8c4a294ba`
 -	v2 Content-Length: 132.0 B
+-	v2 Last-Modified: Wed, 03 Feb 2016 06:55:02 GMT
 
 #### `e006ebc1de3ae57fe9c76510685b0e42f9e4e248aaec3af7e0376099b232ff5c`
 
@@ -261,6 +266,7 @@ COPY file:299691791ba677406e2174b5ddda52d593682864e36c8082506805859a8d36b2 in /s
 -	Virtual Size: 17.8 MB (17830273 bytes)
 -	v2 Blob: `sha256:844fab328d6aa344a6f841631ee67ca73bdf70614cca51448e6361a36afb31cc`
 -	v2 Content-Length: 4.4 MB (4414885 bytes)
+-	v2 Last-Modified: Thu, 04 Feb 2016 20:20:35 GMT
 
 #### `f0836b079be7792a13501460a58ca36e73e7d7187c8ecc4ed821535b24775073`
 
@@ -287,6 +293,7 @@ COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tm
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3445c6fe19bed2225963590692fac374e9c174329f96f0cb7fe374f714c546d8`
 -	v2 Content-Length: 131.0 B
+-	v2 Last-Modified: Thu, 04 Feb 2016 20:20:27 GMT
 
 #### `6c967ea8ac5140f0be11cdd07a24fd4d9c0d40447992c3f3e238517790684d9e`
 
@@ -502,6 +509,7 @@ COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /e
 -	Virtual Size: 277.2 KB (277194 bytes)
 -	v2 Blob: `sha256:d62cc2befb1b210c82806e8b1be2f6262655db392643c66a4350977226336fea`
 -	v2 Content-Length: 155.4 KB (155426 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 19:40:43 GMT
 
 #### `cc0eda4471590de4caf2a85d5526c13c1e7c7130f0bee9243bcddc46bce39c15`
 
@@ -515,6 +523,7 @@ COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tm
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:418fe09e10134a128adcdc798250e8726a4a95b866c765eb7655ae835568e0c2`
 -	v2 Content-Length: 131.0 B
+-	v2 Last-Modified: Thu, 18 Feb 2016 19:40:40 GMT
 
 #### `3d756a8cfd0f88f975b3f9266986e5b0b2ac8844a7f0782d515618b114f7afe7`
 
@@ -603,6 +612,7 @@ COPY file:88569a8af1b496ce71a8daa8a57960d121394015bd0b08f53a7fefb9d865b9e7 in /s
 -	Virtual Size: 17.8 MB (17829435 bytes)
 -	v2 Blob: `sha256:25da0aa87182c330388cd9a62c27afa20f81548c3d62b33547eedb592879013c`
 -	v2 Content-Length: 4.4 MB (4415771 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:24 GMT
 
 #### `4ae5ea69ee5916c84bd972281c53ee8ee73c00e19a98be12e3e719cb23babece`
 
@@ -616,6 +626,7 @@ COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /e
 -	Virtual Size: 277.2 KB (277194 bytes)
 -	v2 Blob: `sha256:45707a9f4c2b1fb69479713ddd7acf60deb3a3d2ac3f4a2de181279de9b8a26a`
 -	v2 Content-Length: 155.4 KB (155426 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:18 GMT
 
 #### `da44cf7b75e214514e48982a5000a60c78f06aa8048758ca476767c94ee17314`
 
@@ -629,6 +640,7 @@ COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tm
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7f0c09406c8fea79ee44417995b5f9cfb51ae7677a91b30dd075083cb4992e1b`
 -	v2 Content-Length: 132.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:14 GMT
 
 #### `26846c542e9da730c1f13ec4d02c08e948dde7eb1411f47b6c1a95f9370f14ee`
 
@@ -717,6 +729,7 @@ COPY file:7d222b2bc8d545c08529f51d9755e28714cdd02c5ba7a7051d0f8042880ce226 in /s
 -	Virtual Size: 18.4 MB (18402469 bytes)
 -	v2 Blob: `sha256:0b8ef2c3d3b7cb73e2ef38506cba3de924a0a664a1dda827eb14fa4d0162a48c`
 -	v2 Content-Length: 4.6 MB (4556731 bytes)
+-	v2 Last-Modified: Wed, 23 Mar 2016 20:01:18 GMT
 
 #### `f12835adc2b20f912452f5a10cbb4dffb62a4c045d75cb5a0a22c70ea9ec2de3`
 
@@ -743,6 +756,7 @@ COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tm
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3062dce943fbeadb8495d7c0a00372b3c49bcfe1dd7283d512b6e590661e93e0`
 -	v2 Content-Length: 132.0 B
+-	v2 Last-Modified: Wed, 23 Mar 2016 20:01:08 GMT
 
 #### `8b9d1ce98777508711489fa73225427327c9fc65bb2035b6131ef7e94218d6e5`
 
@@ -809,6 +823,123 @@ CMD ["--help"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
+## `swarm:1.2.0-rc2`
+
+```console
+$ docker pull library/swarm@sha256:7b986b810ced984ec2e2e019b2696bbd39af90289d96e24b29bd0e73b90f6734
+```
+
+-	Total Virtual Size: 18.7 MB (18691805 bytes)
+-	Total v2 Content-Length: 4.7 MB (4712881 bytes)
+
+### Layers (8)
+
+#### `807001c54257a3d3375bb6e1b4b22e7f13074c895fb152951265261af8b8373c`
+
+```dockerfile
+COPY file:c98459c8cd20aa16f01915d5941a50fc22542917f68a878d7d8649bf6c075ce3 in /swarm
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:28 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 18.4 MB (18414611 bytes)
+-	v2 Blob: `sha256:523da679b3150af5c01a2e2ea0a27e62e488954692bfd0f2e45f2e8b76684ae6`
+-	v2 Content-Length: 4.6 MB (4557163 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 16:35:37 GMT
+
+#### `2d74f344c04bfbf4110c1479ceeb03177360b14e37c4eae510d4076e403186f3`
+
+```dockerfile
+COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:29 GMT
+-	Parent Layer: `807001c54257a3d3375bb6e1b4b22e7f13074c895fb152951265261af8b8373c`
+-	Docker Version: 1.9.1
+-	Virtual Size: 277.2 KB (277194 bytes)
+-	v2 Blob: `sha256:af2c75fe763b41d598316926b00d85ebfeb8a48d370e1518a2b4b06afe00f72c`
+-	v2 Content-Length: 155.4 KB (155426 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 16:35:33 GMT
+
+#### `11530fa2ab2e8d2ef18c63ba7586206d0a339f514ad6348ad4cbb5f1051fefac`
+
+```dockerfile
+COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:30 GMT
+-	Parent Layer: `2d74f344c04bfbf4110c1479ceeb03177360b14e37c4eae510d4076e403186f3`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:9089ed8ea8f9b226ed919c5c84fc3327d32fa83bcaba0832f01f1b981b9c0c44`
+-	v2 Content-Length: 132.0 B
+-	v2 Last-Modified: Mon, 04 Apr 2016 16:35:30 GMT
+
+#### `f4fcce07f5ec7570e0ea625d28387e3b94cd4d17b4ec508b18a8540a38df1c0c`
+
+```dockerfile
+ENV SWARM_HOST=:2375
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:30 GMT
+-	Parent Layer: `11530fa2ab2e8d2ef18c63ba7586206d0a339f514ad6348ad4cbb5f1051fefac`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `a3a3c1b5e5fe09d721c6af948f8280eee68b0a744bb9c0d968584a17bdac3451`
+
+```dockerfile
+EXPOSE 2375/tcp
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:31 GMT
+-	Parent Layer: `f4fcce07f5ec7570e0ea625d28387e3b94cd4d17b4ec508b18a8540a38df1c0c`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `2dddeee97259e70df20387b41cc0a842a1df35278fae4f030a5367e887a1180d`
+
+```dockerfile
+VOLUME [/.swarm]
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:31 GMT
+-	Parent Layer: `a3a3c1b5e5fe09d721c6af948f8280eee68b0a744bb9c0d968584a17bdac3451`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `32d5e252b73def54f8dc78070270ce5e37babfdf78d2d56fd7b41cf6fce6d43d`
+
+```dockerfile
+ENTRYPOINT &{["/swarm"]}
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:32 GMT
+-	Parent Layer: `2dddeee97259e70df20387b41cc0a842a1df35278fae4f030a5367e887a1180d`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `553f502e9264a22d11cd9d93f2a23f4214f7b18a7a59d7905b0d08e788f9b0f7`
+
+```dockerfile
+CMD ["--help"]
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:32 GMT
+-	Parent Layer: `32d5e252b73def54f8dc78070270ce5e37babfdf78d2d56fd7b41cf6fce6d43d`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
 ## `swarm:latest`
 
 ```console
@@ -831,6 +962,7 @@ COPY file:88569a8af1b496ce71a8daa8a57960d121394015bd0b08f53a7fefb9d865b9e7 in /s
 -	Virtual Size: 17.8 MB (17829435 bytes)
 -	v2 Blob: `sha256:25da0aa87182c330388cd9a62c27afa20f81548c3d62b33547eedb592879013c`
 -	v2 Content-Length: 4.4 MB (4415771 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:24 GMT
 
 #### `4ae5ea69ee5916c84bd972281c53ee8ee73c00e19a98be12e3e719cb23babece`
 
@@ -844,6 +976,7 @@ COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /e
 -	Virtual Size: 277.2 KB (277194 bytes)
 -	v2 Blob: `sha256:45707a9f4c2b1fb69479713ddd7acf60deb3a3d2ac3f4a2de181279de9b8a26a`
 -	v2 Content-Length: 155.4 KB (155426 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:18 GMT
 
 #### `da44cf7b75e214514e48982a5000a60c78f06aa8048758ca476767c94ee17314`
 
@@ -857,6 +990,7 @@ COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tm
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7f0c09406c8fea79ee44417995b5f9cfb51ae7677a91b30dd075083cb4992e1b`
 -	v2 Content-Length: 132.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:14 GMT
 
 #### `26846c542e9da730c1f13ec4d02c08e948dde7eb1411f47b6c1a95f9370f14ee`
 

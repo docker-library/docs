@@ -29,6 +29,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -59,6 +60,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -127,6 +129,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -180,6 +183,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 22.8 MB (22832566 bytes)
 -	v2 Blob: `sha256:3f09b27c007a43d83daa560d741ad464d364e57edfec9d2931e0f862c47fb6ac`
 -	v2 Content-Length: 7.0 MB (7019562 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 15:22:48 GMT
 
 #### `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 
@@ -219,6 +223,7 @@ RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 -	Virtual Size: 330.4 KB (330441 bytes)
 -	v2 Blob: `sha256:c2ff0cd2fccad562e22b9f3d595aa94a42c31a38175ae0d67e3a40b69c6662b4`
 -	v2 Content-Length: 2.1 KB (2056 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:10:07 GMT
 
 #### `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 
@@ -245,6 +250,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EB
 -	Virtual Size: 52.2 KB (52235 bytes)
 -	v2 Blob: `sha256:b1d33984f532db1d50655905d98145a5dbeadcd61ffa22077fee52e9b9e22def`
 -	v2 Content-Length: 26.6 KB (26620 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:10:02 GMT
 
 #### `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 
@@ -372,6 +378,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -402,6 +409,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -470,6 +478,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -523,6 +532,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 22.8 MB (22832566 bytes)
 -	v2 Blob: `sha256:3f09b27c007a43d83daa560d741ad464d364e57edfec9d2931e0f862c47fb6ac`
 -	v2 Content-Length: 7.0 MB (7019562 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 15:22:48 GMT
 
 #### `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 
@@ -562,6 +572,7 @@ RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 -	Virtual Size: 330.4 KB (330441 bytes)
 -	v2 Blob: `sha256:c2ff0cd2fccad562e22b9f3d595aa94a42c31a38175ae0d67e3a40b69c6662b4`
 -	v2 Content-Length: 2.1 KB (2056 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:10:07 GMT
 
 #### `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 
@@ -588,6 +599,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EB
 -	Virtual Size: 52.2 KB (52235 bytes)
 -	v2 Blob: `sha256:b1d33984f532db1d50655905d98145a5dbeadcd61ffa22077fee52e9b9e22def`
 -	v2 Content-Length: 26.6 KB (26620 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:10:02 GMT
 
 #### `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 
@@ -715,6 +727,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -745,6 +758,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -813,6 +827,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -866,6 +881,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 22.8 MB (22832566 bytes)
 -	v2 Blob: `sha256:3f09b27c007a43d83daa560d741ad464d364e57edfec9d2931e0f862c47fb6ac`
 -	v2 Content-Length: 7.0 MB (7019562 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 15:22:48 GMT
 
 #### `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 
@@ -905,6 +921,7 @@ RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 -	Virtual Size: 330.4 KB (330441 bytes)
 -	v2 Blob: `sha256:c2ff0cd2fccad562e22b9f3d595aa94a42c31a38175ae0d67e3a40b69c6662b4`
 -	v2 Content-Length: 2.1 KB (2056 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:10:07 GMT
 
 #### `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 
@@ -931,6 +948,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EB
 -	Virtual Size: 52.2 KB (52235 bytes)
 -	v2 Blob: `sha256:b1d33984f532db1d50655905d98145a5dbeadcd61ffa22077fee52e9b9e22def`
 -	v2 Content-Length: 26.6 KB (26620 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:10:02 GMT
 
 #### `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 
@@ -1058,6 +1076,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1088,6 +1107,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -1156,6 +1176,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314699642 bytes)
 -	v2 Blob: `sha256:ce5207842c4c68105560901894842e206e6009db281fe41654d36b5ed1d6ced9`
 -	v2 Content-Length: 128.6 MB (128602091 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:48 GMT
 
 #### `f543704611ec1d3023da3021b95d941e6e2ac2724ddbe5c0c8cef5c50f376ed7`
 
@@ -1209,6 +1230,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 22.8 MB (22832566 bytes)
 -	v2 Blob: `sha256:3f09b27c007a43d83daa560d741ad464d364e57edfec9d2931e0f862c47fb6ac`
 -	v2 Content-Length: 7.0 MB (7019562 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 15:22:48 GMT
 
 #### `699893f455b49ef6e3bc1513bd7ff4fe6b20e24104c3b64a914f15be06ae910f`
 
@@ -1248,6 +1270,7 @@ RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 -	Virtual Size: 330.4 KB (330441 bytes)
 -	v2 Blob: `sha256:c2ff0cd2fccad562e22b9f3d595aa94a42c31a38175ae0d67e3a40b69c6662b4`
 -	v2 Content-Length: 2.1 KB (2056 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:10:07 GMT
 
 #### `6b863655456af79c7179c615e12f5c2fd8cf956d546004a285c03ae6838c21be`
 
@@ -1274,6 +1297,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EB
 -	Virtual Size: 52.2 KB (52235 bytes)
 -	v2 Blob: `sha256:b1d33984f532db1d50655905d98145a5dbeadcd61ffa22077fee52e9b9e22def`
 -	v2 Content-Length: 26.6 KB (26620 bytes)
+-	v2 Last-Modified: Fri, 01 Apr 2016 18:10:02 GMT
 
 #### `65bdbe8ec707f9d42fe6cdc649b2b0c76db3ff50b5f817d4adfe44a557793e4d`
 

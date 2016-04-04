@@ -37,6 +37,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -50,6 +51,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -63,6 +65,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -76,6 +79,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -89,6 +93,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -102,6 +107,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -128,6 +134,7 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -141,6 +148,7 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -167,6 +175,7 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -180,6 +189,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1b017519df2b8b91a92d03eb4f4b7786b4bdbe1771b90249df16088b1085560`
 
@@ -193,6 +203,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `94bf05895c23c8f4c0e7894e1072cae086b3078abc4415191fe33ec73088e47a`
 
@@ -206,6 +217,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ef7eb6829d79c81275fd38ec74ddec8d94d7a387fd4f98a7632284e832db0c65`
 
@@ -222,6 +234,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -235,6 +248,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0bcb4315b109d6010870d2959de5fa223a909f69d18d99d9cea5bed799cb8913`
 
@@ -248,6 +262,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f33de4034ce48976d84476691eb6c383665218ac8e8cf588b5155cc996d6e0f`
 
@@ -261,6 +276,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56cafc444b5fe1b005987d6bfa91211b7ecb816e0b388b1836fae580d7807179`
 
@@ -309,6 +325,7 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -335,6 +352,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -348,6 +366,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e3a92ab0ae65ad09085bb8c31c8fc6745c3adf34cc8ca11cd14ee6fa58c0600`
 
@@ -361,6 +380,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44ec32c6d6f3c707a64eb9c86b3373b8e39adbd45c922c482dac807305c812bb`
 
@@ -374,6 +394,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4d56c6e1287f521e662bc1f3508993de108a8ca2a1c5bc4e65a28a14b324a03`
 
@@ -387,6 +408,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -402,6 +424,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -422,6 +445,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -435,6 +459,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a919225b712f8cdf01335b72f4f049f2312d4ccf4f25c74f1d80d376bd2a098`
 
@@ -448,6 +473,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3f6d0b12f5ad82843c4423c13f4e0768793cc0343932d8e4edd706cb7e38dad5`
 
@@ -461,6 +487,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caa7f258cb4fccf7ace72f887c9d420a3514c902a97564a5b71521f76b2b8658`
 
@@ -478,6 +505,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -491,6 +519,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -504,6 +533,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a930f9a5fa9cff5c74da5155037c410ba9d6b95b598af4c77c6af3d628d25ff`
 
@@ -517,6 +547,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `wordpress:4.4.2`
 
@@ -540,6 +571,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -553,6 +585,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -566,6 +599,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -579,6 +613,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -592,6 +627,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -605,6 +641,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -631,6 +668,7 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -644,6 +682,7 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -670,6 +709,7 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -683,6 +723,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1b017519df2b8b91a92d03eb4f4b7786b4bdbe1771b90249df16088b1085560`
 
@@ -696,6 +737,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `94bf05895c23c8f4c0e7894e1072cae086b3078abc4415191fe33ec73088e47a`
 
@@ -709,6 +751,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ef7eb6829d79c81275fd38ec74ddec8d94d7a387fd4f98a7632284e832db0c65`
 
@@ -725,6 +768,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -738,6 +782,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0bcb4315b109d6010870d2959de5fa223a909f69d18d99d9cea5bed799cb8913`
 
@@ -751,6 +796,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f33de4034ce48976d84476691eb6c383665218ac8e8cf588b5155cc996d6e0f`
 
@@ -764,6 +810,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56cafc444b5fe1b005987d6bfa91211b7ecb816e0b388b1836fae580d7807179`
 
@@ -812,6 +859,7 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -838,6 +886,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -851,6 +900,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e3a92ab0ae65ad09085bb8c31c8fc6745c3adf34cc8ca11cd14ee6fa58c0600`
 
@@ -864,6 +914,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44ec32c6d6f3c707a64eb9c86b3373b8e39adbd45c922c482dac807305c812bb`
 
@@ -877,6 +928,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4d56c6e1287f521e662bc1f3508993de108a8ca2a1c5bc4e65a28a14b324a03`
 
@@ -890,6 +942,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -905,6 +958,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -925,6 +979,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -938,6 +993,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a919225b712f8cdf01335b72f4f049f2312d4ccf4f25c74f1d80d376bd2a098`
 
@@ -951,6 +1007,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3f6d0b12f5ad82843c4423c13f4e0768793cc0343932d8e4edd706cb7e38dad5`
 
@@ -964,6 +1021,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caa7f258cb4fccf7ace72f887c9d420a3514c902a97564a5b71521f76b2b8658`
 
@@ -981,6 +1039,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -994,6 +1053,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -1007,6 +1067,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a930f9a5fa9cff5c74da5155037c410ba9d6b95b598af4c77c6af3d628d25ff`
 
@@ -1020,6 +1081,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `wordpress:4.4-apache`
 
@@ -1043,6 +1105,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1056,6 +1119,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -1069,6 +1133,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -1082,6 +1147,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -1095,6 +1161,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -1108,6 +1175,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -1134,6 +1202,7 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -1147,6 +1216,7 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -1173,6 +1243,7 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -1186,6 +1257,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1b017519df2b8b91a92d03eb4f4b7786b4bdbe1771b90249df16088b1085560`
 
@@ -1199,6 +1271,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `94bf05895c23c8f4c0e7894e1072cae086b3078abc4415191fe33ec73088e47a`
 
@@ -1212,6 +1285,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ef7eb6829d79c81275fd38ec74ddec8d94d7a387fd4f98a7632284e832db0c65`
 
@@ -1228,6 +1302,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -1241,6 +1316,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0bcb4315b109d6010870d2959de5fa223a909f69d18d99d9cea5bed799cb8913`
 
@@ -1254,6 +1330,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f33de4034ce48976d84476691eb6c383665218ac8e8cf588b5155cc996d6e0f`
 
@@ -1267,6 +1344,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56cafc444b5fe1b005987d6bfa91211b7ecb816e0b388b1836fae580d7807179`
 
@@ -1315,6 +1393,7 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -1341,6 +1420,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -1354,6 +1434,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e3a92ab0ae65ad09085bb8c31c8fc6745c3adf34cc8ca11cd14ee6fa58c0600`
 
@@ -1367,6 +1448,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44ec32c6d6f3c707a64eb9c86b3373b8e39adbd45c922c482dac807305c812bb`
 
@@ -1380,6 +1462,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4d56c6e1287f521e662bc1f3508993de108a8ca2a1c5bc4e65a28a14b324a03`
 
@@ -1393,6 +1476,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -1408,6 +1492,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -1428,6 +1513,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -1441,6 +1527,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a919225b712f8cdf01335b72f4f049f2312d4ccf4f25c74f1d80d376bd2a098`
 
@@ -1454,6 +1541,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3f6d0b12f5ad82843c4423c13f4e0768793cc0343932d8e4edd706cb7e38dad5`
 
@@ -1467,6 +1555,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caa7f258cb4fccf7ace72f887c9d420a3514c902a97564a5b71521f76b2b8658`
 
@@ -1484,6 +1573,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -1497,6 +1587,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -1510,6 +1601,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a930f9a5fa9cff5c74da5155037c410ba9d6b95b598af4c77c6af3d628d25ff`
 
@@ -1523,6 +1615,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `wordpress:4.4`
 
@@ -1546,6 +1639,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1559,6 +1653,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -1572,6 +1667,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -1585,6 +1681,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -1598,6 +1695,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -1611,6 +1709,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -1637,6 +1736,7 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -1650,6 +1750,7 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -1676,6 +1777,7 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -1689,6 +1791,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1b017519df2b8b91a92d03eb4f4b7786b4bdbe1771b90249df16088b1085560`
 
@@ -1702,6 +1805,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `94bf05895c23c8f4c0e7894e1072cae086b3078abc4415191fe33ec73088e47a`
 
@@ -1715,6 +1819,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ef7eb6829d79c81275fd38ec74ddec8d94d7a387fd4f98a7632284e832db0c65`
 
@@ -1731,6 +1836,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -1744,6 +1850,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0bcb4315b109d6010870d2959de5fa223a909f69d18d99d9cea5bed799cb8913`
 
@@ -1757,6 +1864,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f33de4034ce48976d84476691eb6c383665218ac8e8cf588b5155cc996d6e0f`
 
@@ -1770,6 +1878,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56cafc444b5fe1b005987d6bfa91211b7ecb816e0b388b1836fae580d7807179`
 
@@ -1818,6 +1927,7 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -1844,6 +1954,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -1857,6 +1968,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e3a92ab0ae65ad09085bb8c31c8fc6745c3adf34cc8ca11cd14ee6fa58c0600`
 
@@ -1870,6 +1982,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44ec32c6d6f3c707a64eb9c86b3373b8e39adbd45c922c482dac807305c812bb`
 
@@ -1883,6 +1996,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4d56c6e1287f521e662bc1f3508993de108a8ca2a1c5bc4e65a28a14b324a03`
 
@@ -1896,6 +2010,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -1911,6 +2026,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -1931,6 +2047,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -1944,6 +2061,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a919225b712f8cdf01335b72f4f049f2312d4ccf4f25c74f1d80d376bd2a098`
 
@@ -1957,6 +2075,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3f6d0b12f5ad82843c4423c13f4e0768793cc0343932d8e4edd706cb7e38dad5`
 
@@ -1970,6 +2089,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caa7f258cb4fccf7ace72f887c9d420a3514c902a97564a5b71521f76b2b8658`
 
@@ -1987,6 +2107,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -2000,6 +2121,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -2013,6 +2135,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a930f9a5fa9cff5c74da5155037c410ba9d6b95b598af4c77c6af3d628d25ff`
 
@@ -2026,6 +2149,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `wordpress:4-apache`
 
@@ -2049,6 +2173,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2062,6 +2187,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -2075,6 +2201,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -2088,6 +2215,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -2101,6 +2229,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -2114,6 +2243,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -2140,6 +2270,7 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -2153,6 +2284,7 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -2179,6 +2311,7 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -2192,6 +2325,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1b017519df2b8b91a92d03eb4f4b7786b4bdbe1771b90249df16088b1085560`
 
@@ -2205,6 +2339,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `94bf05895c23c8f4c0e7894e1072cae086b3078abc4415191fe33ec73088e47a`
 
@@ -2218,6 +2353,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ef7eb6829d79c81275fd38ec74ddec8d94d7a387fd4f98a7632284e832db0c65`
 
@@ -2234,6 +2370,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -2247,6 +2384,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0bcb4315b109d6010870d2959de5fa223a909f69d18d99d9cea5bed799cb8913`
 
@@ -2260,6 +2398,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f33de4034ce48976d84476691eb6c383665218ac8e8cf588b5155cc996d6e0f`
 
@@ -2273,6 +2412,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56cafc444b5fe1b005987d6bfa91211b7ecb816e0b388b1836fae580d7807179`
 
@@ -2321,6 +2461,7 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -2347,6 +2488,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -2360,6 +2502,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e3a92ab0ae65ad09085bb8c31c8fc6745c3adf34cc8ca11cd14ee6fa58c0600`
 
@@ -2373,6 +2516,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44ec32c6d6f3c707a64eb9c86b3373b8e39adbd45c922c482dac807305c812bb`
 
@@ -2386,6 +2530,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4d56c6e1287f521e662bc1f3508993de108a8ca2a1c5bc4e65a28a14b324a03`
 
@@ -2399,6 +2544,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -2414,6 +2560,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -2434,6 +2581,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -2447,6 +2595,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a919225b712f8cdf01335b72f4f049f2312d4ccf4f25c74f1d80d376bd2a098`
 
@@ -2460,6 +2609,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3f6d0b12f5ad82843c4423c13f4e0768793cc0343932d8e4edd706cb7e38dad5`
 
@@ -2473,6 +2623,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caa7f258cb4fccf7ace72f887c9d420a3514c902a97564a5b71521f76b2b8658`
 
@@ -2490,6 +2641,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -2503,6 +2655,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -2516,6 +2669,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a930f9a5fa9cff5c74da5155037c410ba9d6b95b598af4c77c6af3d628d25ff`
 
@@ -2529,6 +2683,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `wordpress:apache`
 
@@ -2552,6 +2707,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2565,6 +2721,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -2578,6 +2735,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -2591,6 +2749,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -2604,6 +2763,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -2617,6 +2777,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -2643,6 +2804,7 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -2656,6 +2818,7 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -2682,6 +2845,7 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -2695,6 +2859,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1b017519df2b8b91a92d03eb4f4b7786b4bdbe1771b90249df16088b1085560`
 
@@ -2708,6 +2873,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `94bf05895c23c8f4c0e7894e1072cae086b3078abc4415191fe33ec73088e47a`
 
@@ -2721,6 +2887,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ef7eb6829d79c81275fd38ec74ddec8d94d7a387fd4f98a7632284e832db0c65`
 
@@ -2737,6 +2904,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -2750,6 +2918,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0bcb4315b109d6010870d2959de5fa223a909f69d18d99d9cea5bed799cb8913`
 
@@ -2763,6 +2932,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f33de4034ce48976d84476691eb6c383665218ac8e8cf588b5155cc996d6e0f`
 
@@ -2776,6 +2946,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56cafc444b5fe1b005987d6bfa91211b7ecb816e0b388b1836fae580d7807179`
 
@@ -2824,6 +2995,7 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -2850,6 +3022,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -2863,6 +3036,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e3a92ab0ae65ad09085bb8c31c8fc6745c3adf34cc8ca11cd14ee6fa58c0600`
 
@@ -2876,6 +3050,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44ec32c6d6f3c707a64eb9c86b3373b8e39adbd45c922c482dac807305c812bb`
 
@@ -2889,6 +3064,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4d56c6e1287f521e662bc1f3508993de108a8ca2a1c5bc4e65a28a14b324a03`
 
@@ -2902,6 +3078,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -2917,6 +3094,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -2937,6 +3115,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -2950,6 +3129,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a919225b712f8cdf01335b72f4f049f2312d4ccf4f25c74f1d80d376bd2a098`
 
@@ -2963,6 +3143,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3f6d0b12f5ad82843c4423c13f4e0768793cc0343932d8e4edd706cb7e38dad5`
 
@@ -2976,6 +3157,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caa7f258cb4fccf7ace72f887c9d420a3514c902a97564a5b71521f76b2b8658`
 
@@ -2993,6 +3175,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -3006,6 +3189,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -3019,6 +3203,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a930f9a5fa9cff5c74da5155037c410ba9d6b95b598af4c77c6af3d628d25ff`
 
@@ -3032,6 +3217,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `wordpress:4`
 
@@ -3055,6 +3241,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3068,6 +3255,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -3081,6 +3269,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -3094,6 +3283,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -3107,6 +3297,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -3120,6 +3311,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -3146,6 +3338,7 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -3159,6 +3352,7 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -3185,6 +3379,7 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -3198,6 +3393,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1b017519df2b8b91a92d03eb4f4b7786b4bdbe1771b90249df16088b1085560`
 
@@ -3211,6 +3407,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `94bf05895c23c8f4c0e7894e1072cae086b3078abc4415191fe33ec73088e47a`
 
@@ -3224,6 +3421,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ef7eb6829d79c81275fd38ec74ddec8d94d7a387fd4f98a7632284e832db0c65`
 
@@ -3240,6 +3438,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -3253,6 +3452,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0bcb4315b109d6010870d2959de5fa223a909f69d18d99d9cea5bed799cb8913`
 
@@ -3266,6 +3466,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f33de4034ce48976d84476691eb6c383665218ac8e8cf588b5155cc996d6e0f`
 
@@ -3279,6 +3480,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56cafc444b5fe1b005987d6bfa91211b7ecb816e0b388b1836fae580d7807179`
 
@@ -3327,6 +3529,7 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -3353,6 +3556,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -3366,6 +3570,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e3a92ab0ae65ad09085bb8c31c8fc6745c3adf34cc8ca11cd14ee6fa58c0600`
 
@@ -3379,6 +3584,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44ec32c6d6f3c707a64eb9c86b3373b8e39adbd45c922c482dac807305c812bb`
 
@@ -3392,6 +3598,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4d56c6e1287f521e662bc1f3508993de108a8ca2a1c5bc4e65a28a14b324a03`
 
@@ -3405,6 +3612,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -3420,6 +3628,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -3440,6 +3649,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -3453,6 +3663,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a919225b712f8cdf01335b72f4f049f2312d4ccf4f25c74f1d80d376bd2a098`
 
@@ -3466,6 +3677,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3f6d0b12f5ad82843c4423c13f4e0768793cc0343932d8e4edd706cb7e38dad5`
 
@@ -3479,6 +3691,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caa7f258cb4fccf7ace72f887c9d420a3514c902a97564a5b71521f76b2b8658`
 
@@ -3496,6 +3709,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -3509,6 +3723,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -3522,6 +3737,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a930f9a5fa9cff5c74da5155037c410ba9d6b95b598af4c77c6af3d628d25ff`
 
@@ -3535,6 +3751,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `wordpress:latest`
 
@@ -3558,6 +3775,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3571,6 +3789,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -3584,6 +3803,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -3597,6 +3817,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -3610,6 +3831,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -3623,6 +3845,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -3649,6 +3872,7 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -3662,6 +3886,7 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -3688,6 +3913,7 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -3701,6 +3927,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1b017519df2b8b91a92d03eb4f4b7786b4bdbe1771b90249df16088b1085560`
 
@@ -3714,6 +3941,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `94bf05895c23c8f4c0e7894e1072cae086b3078abc4415191fe33ec73088e47a`
 
@@ -3727,6 +3955,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ef7eb6829d79c81275fd38ec74ddec8d94d7a387fd4f98a7632284e832db0c65`
 
@@ -3743,6 +3972,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -3756,6 +3986,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0bcb4315b109d6010870d2959de5fa223a909f69d18d99d9cea5bed799cb8913`
 
@@ -3769,6 +4000,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2f33de4034ce48976d84476691eb6c383665218ac8e8cf588b5155cc996d6e0f`
 
@@ -3782,6 +4014,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56cafc444b5fe1b005987d6bfa91211b7ecb816e0b388b1836fae580d7807179`
 
@@ -3830,6 +4063,7 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -3856,6 +4090,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -3869,6 +4104,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e3a92ab0ae65ad09085bb8c31c8fc6745c3adf34cc8ca11cd14ee6fa58c0600`
 
@@ -3882,6 +4118,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44ec32c6d6f3c707a64eb9c86b3373b8e39adbd45c922c482dac807305c812bb`
 
@@ -3895,6 +4132,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4d56c6e1287f521e662bc1f3508993de108a8ca2a1c5bc4e65a28a14b324a03`
 
@@ -3908,6 +4146,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -3923,6 +4162,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -3943,6 +4183,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -3956,6 +4197,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a919225b712f8cdf01335b72f4f049f2312d4ccf4f25c74f1d80d376bd2a098`
 
@@ -3969,6 +4211,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3f6d0b12f5ad82843c4423c13f4e0768793cc0343932d8e4edd706cb7e38dad5`
 
@@ -3982,6 +4225,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caa7f258cb4fccf7ace72f887c9d420a3514c902a97564a5b71521f76b2b8658`
 
@@ -3999,6 +4243,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -4012,6 +4257,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -4025,6 +4271,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1a930f9a5fa9cff5c74da5155037c410ba9d6b95b598af4c77c6af3d628d25ff`
 
@@ -4038,6 +4285,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `wordpress:4.4.2-fpm`
 
@@ -4061,6 +4309,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4074,6 +4323,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -4087,6 +4337,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -4100,6 +4351,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -4113,6 +4365,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -4126,6 +4379,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `a4ad35049e4920760c9fb81d1a7907b7c0d48fd122d42ae2736ed9eddda11ccb`
 
@@ -4139,6 +4393,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5e6a613931fdf187a228c0a42af510b7ead7ed014dd71d245dcbb6ef139b7e51`
 
@@ -4152,6 +4407,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42874c34aea8d86cbddd5a1edc702b5cc0f22c7ea53450dbe9ac471a3a2fc071`
 
@@ -4168,6 +4424,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -4181,6 +4438,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3910333837dbccfb767407863b985bf66bd9c19c07f033a56a6cd303b9966c8c`
 
@@ -4194,6 +4452,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `76c3162f205138cd8b11cecddb5f1a391c090c49a4e000c951740ffae1589fc2`
 
@@ -4207,6 +4466,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0106a9cc2253dceef3915b01b893a95dded1829cf5984435250d913c3a15eb48`
 
@@ -4255,6 +4515,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -4281,6 +4542,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b8a6b14e11b21a5863dc02c936a880af520afbd4e5719d690311bc9bbef11bb`
 
@@ -4326,6 +4588,7 @@ RUN set -ex \
 -	Virtual Size: 23.1 KB (23094 bytes)
 -	v2 Blob: `sha256:a6773adbce5c4b6533260ebc24f7eed9c5adf94d362dff09d209c671b26b217f`
 -	v2 Content-Length: 7.7 KB (7687 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:31:59 GMT
 
 #### `25e4f88670c02e9b5e5eb26c618659a6dd8512be186459c7535ca1dd7341166c`
 
@@ -4339,6 +4602,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e34b2cce37a8559b09283c55c30ba08f30cca976d79e3545b4b5f93f9da0daff`
 
@@ -4352,6 +4616,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c35809413a92eaaae0ffb5fdeb6e81c3e1d290d0c6609479f83678b54ee6d7d`
 
@@ -4367,6 +4632,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.7 MB (14687982 bytes)
 -	v2 Blob: `sha256:2a193135c4ecfd8050b486c00d6493fe344d08c2f420becdbadf5c27ddf8cf05`
 -	v2 Content-Length: 4.4 MB (4420908 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:47 GMT
 
 #### `dc8f271eeb5cc07eef415fcfd27f5dceff874221bda1eec17e817c1bd403a901`
 
@@ -4387,6 +4653,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1e4e07ca0eb0602f0979ff4626734eab591554f3d0b142e6fd79f21b394585cf`
 -	v2 Content-Length: 333.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:43 GMT
 
 #### `56b5e4eded48886811961ae431e50f5dd1bc909e189f70a8d3d8be8afb9c9bf2`
 
@@ -4400,6 +4667,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3753352e26659ae3eab57a4e43959266c86b1b1fc9e7ae43a73ff0afdb3de065`
 
@@ -4413,6 +4681,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6273b43f77e2872fd9439cd6704910faab6bf223a6845b7ca58310f916ef07e2`
 
@@ -4426,6 +4695,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3eddb93adca2ed76415b65c7ecd49d57b1d7bc679f6eb891b399e49942b6b6b`
 
@@ -4443,6 +4713,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:f923f7bd83597d51a50cf451fbd23e03ad81cabd7951c5586a8749a3891dd058`
 -	v2 Content-Length: 6.9 MB (6939502 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:34 GMT
 
 #### `c2c02b810b9edf550fb4988aa7ec6cc4c2372a6049b89c272af426873de78810`
 
@@ -4456,6 +4727,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `fe008b7ee00744734b2fb17adeff3cc6d6abd457221bf325431112ce66dd998e`
 
@@ -4469,6 +4741,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f93115cb227d1d84aa0ad22e34ff98ad7f0765ac4eb38b17750efa48482ff199`
 
@@ -4482,6 +4755,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `wordpress:4.4-fpm`
 
@@ -4505,6 +4779,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4518,6 +4793,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -4531,6 +4807,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -4544,6 +4821,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -4557,6 +4835,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -4570,6 +4849,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `a4ad35049e4920760c9fb81d1a7907b7c0d48fd122d42ae2736ed9eddda11ccb`
 
@@ -4583,6 +4863,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5e6a613931fdf187a228c0a42af510b7ead7ed014dd71d245dcbb6ef139b7e51`
 
@@ -4596,6 +4877,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42874c34aea8d86cbddd5a1edc702b5cc0f22c7ea53450dbe9ac471a3a2fc071`
 
@@ -4612,6 +4894,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -4625,6 +4908,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3910333837dbccfb767407863b985bf66bd9c19c07f033a56a6cd303b9966c8c`
 
@@ -4638,6 +4922,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `76c3162f205138cd8b11cecddb5f1a391c090c49a4e000c951740ffae1589fc2`
 
@@ -4651,6 +4936,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0106a9cc2253dceef3915b01b893a95dded1829cf5984435250d913c3a15eb48`
 
@@ -4699,6 +4985,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -4725,6 +5012,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b8a6b14e11b21a5863dc02c936a880af520afbd4e5719d690311bc9bbef11bb`
 
@@ -4770,6 +5058,7 @@ RUN set -ex \
 -	Virtual Size: 23.1 KB (23094 bytes)
 -	v2 Blob: `sha256:a6773adbce5c4b6533260ebc24f7eed9c5adf94d362dff09d209c671b26b217f`
 -	v2 Content-Length: 7.7 KB (7687 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:31:59 GMT
 
 #### `25e4f88670c02e9b5e5eb26c618659a6dd8512be186459c7535ca1dd7341166c`
 
@@ -4783,6 +5072,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e34b2cce37a8559b09283c55c30ba08f30cca976d79e3545b4b5f93f9da0daff`
 
@@ -4796,6 +5086,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c35809413a92eaaae0ffb5fdeb6e81c3e1d290d0c6609479f83678b54ee6d7d`
 
@@ -4811,6 +5102,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.7 MB (14687982 bytes)
 -	v2 Blob: `sha256:2a193135c4ecfd8050b486c00d6493fe344d08c2f420becdbadf5c27ddf8cf05`
 -	v2 Content-Length: 4.4 MB (4420908 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:47 GMT
 
 #### `dc8f271eeb5cc07eef415fcfd27f5dceff874221bda1eec17e817c1bd403a901`
 
@@ -4831,6 +5123,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1e4e07ca0eb0602f0979ff4626734eab591554f3d0b142e6fd79f21b394585cf`
 -	v2 Content-Length: 333.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:43 GMT
 
 #### `56b5e4eded48886811961ae431e50f5dd1bc909e189f70a8d3d8be8afb9c9bf2`
 
@@ -4844,6 +5137,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3753352e26659ae3eab57a4e43959266c86b1b1fc9e7ae43a73ff0afdb3de065`
 
@@ -4857,6 +5151,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6273b43f77e2872fd9439cd6704910faab6bf223a6845b7ca58310f916ef07e2`
 
@@ -4870,6 +5165,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3eddb93adca2ed76415b65c7ecd49d57b1d7bc679f6eb891b399e49942b6b6b`
 
@@ -4887,6 +5183,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:f923f7bd83597d51a50cf451fbd23e03ad81cabd7951c5586a8749a3891dd058`
 -	v2 Content-Length: 6.9 MB (6939502 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:34 GMT
 
 #### `c2c02b810b9edf550fb4988aa7ec6cc4c2372a6049b89c272af426873de78810`
 
@@ -4900,6 +5197,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `fe008b7ee00744734b2fb17adeff3cc6d6abd457221bf325431112ce66dd998e`
 
@@ -4913,6 +5211,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f93115cb227d1d84aa0ad22e34ff98ad7f0765ac4eb38b17750efa48482ff199`
 
@@ -4926,6 +5225,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `wordpress:4-fpm`
 
@@ -4949,6 +5249,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4962,6 +5263,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -4975,6 +5277,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -4988,6 +5291,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -5001,6 +5305,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -5014,6 +5319,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `a4ad35049e4920760c9fb81d1a7907b7c0d48fd122d42ae2736ed9eddda11ccb`
 
@@ -5027,6 +5333,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5e6a613931fdf187a228c0a42af510b7ead7ed014dd71d245dcbb6ef139b7e51`
 
@@ -5040,6 +5347,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42874c34aea8d86cbddd5a1edc702b5cc0f22c7ea53450dbe9ac471a3a2fc071`
 
@@ -5056,6 +5364,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -5069,6 +5378,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3910333837dbccfb767407863b985bf66bd9c19c07f033a56a6cd303b9966c8c`
 
@@ -5082,6 +5392,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `76c3162f205138cd8b11cecddb5f1a391c090c49a4e000c951740ffae1589fc2`
 
@@ -5095,6 +5406,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0106a9cc2253dceef3915b01b893a95dded1829cf5984435250d913c3a15eb48`
 
@@ -5143,6 +5455,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -5169,6 +5482,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b8a6b14e11b21a5863dc02c936a880af520afbd4e5719d690311bc9bbef11bb`
 
@@ -5214,6 +5528,7 @@ RUN set -ex \
 -	Virtual Size: 23.1 KB (23094 bytes)
 -	v2 Blob: `sha256:a6773adbce5c4b6533260ebc24f7eed9c5adf94d362dff09d209c671b26b217f`
 -	v2 Content-Length: 7.7 KB (7687 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:31:59 GMT
 
 #### `25e4f88670c02e9b5e5eb26c618659a6dd8512be186459c7535ca1dd7341166c`
 
@@ -5227,6 +5542,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e34b2cce37a8559b09283c55c30ba08f30cca976d79e3545b4b5f93f9da0daff`
 
@@ -5240,6 +5556,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c35809413a92eaaae0ffb5fdeb6e81c3e1d290d0c6609479f83678b54ee6d7d`
 
@@ -5255,6 +5572,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.7 MB (14687982 bytes)
 -	v2 Blob: `sha256:2a193135c4ecfd8050b486c00d6493fe344d08c2f420becdbadf5c27ddf8cf05`
 -	v2 Content-Length: 4.4 MB (4420908 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:47 GMT
 
 #### `dc8f271eeb5cc07eef415fcfd27f5dceff874221bda1eec17e817c1bd403a901`
 
@@ -5275,6 +5593,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1e4e07ca0eb0602f0979ff4626734eab591554f3d0b142e6fd79f21b394585cf`
 -	v2 Content-Length: 333.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:43 GMT
 
 #### `56b5e4eded48886811961ae431e50f5dd1bc909e189f70a8d3d8be8afb9c9bf2`
 
@@ -5288,6 +5607,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3753352e26659ae3eab57a4e43959266c86b1b1fc9e7ae43a73ff0afdb3de065`
 
@@ -5301,6 +5621,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6273b43f77e2872fd9439cd6704910faab6bf223a6845b7ca58310f916ef07e2`
 
@@ -5314,6 +5635,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3eddb93adca2ed76415b65c7ecd49d57b1d7bc679f6eb891b399e49942b6b6b`
 
@@ -5331,6 +5653,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:f923f7bd83597d51a50cf451fbd23e03ad81cabd7951c5586a8749a3891dd058`
 -	v2 Content-Length: 6.9 MB (6939502 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:34 GMT
 
 #### `c2c02b810b9edf550fb4988aa7ec6cc4c2372a6049b89c272af426873de78810`
 
@@ -5344,6 +5667,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `fe008b7ee00744734b2fb17adeff3cc6d6abd457221bf325431112ce66dd998e`
 
@@ -5357,6 +5681,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f93115cb227d1d84aa0ad22e34ff98ad7f0765ac4eb38b17750efa48482ff199`
 
@@ -5370,6 +5695,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `wordpress:fpm`
 
@@ -5393,6 +5719,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5406,6 +5733,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `528f28a57c478a4645eabf0209173a508f4962384b5a3a0de53e669c2b2185cb`
 
@@ -5419,6 +5747,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -5432,6 +5761,7 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -5445,6 +5775,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56ab7d748363761dd3c586d20ae0856cd8e318dc4ef80b545e9a964d9435f44f`
 
@@ -5458,6 +5789,7 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `a4ad35049e4920760c9fb81d1a7907b7c0d48fd122d42ae2736ed9eddda11ccb`
 
@@ -5471,6 +5803,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5e6a613931fdf187a228c0a42af510b7ead7ed014dd71d245dcbb6ef139b7e51`
 
@@ -5484,6 +5817,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42874c34aea8d86cbddd5a1edc702b5cc0f22c7ea53450dbe9ac471a3a2fc071`
 
@@ -5500,6 +5834,7 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -5513,6 +5848,7 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3910333837dbccfb767407863b985bf66bd9c19c07f033a56a6cd303b9966c8c`
 
@@ -5526,6 +5862,7 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `76c3162f205138cd8b11cecddb5f1a391c090c49a4e000c951740ffae1589fc2`
 
@@ -5539,6 +5876,7 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0106a9cc2253dceef3915b01b893a95dded1829cf5984435250d913c3a15eb48`
 
@@ -5587,6 +5925,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -5613,6 +5952,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b8a6b14e11b21a5863dc02c936a880af520afbd4e5719d690311bc9bbef11bb`
 
@@ -5658,6 +5998,7 @@ RUN set -ex \
 -	Virtual Size: 23.1 KB (23094 bytes)
 -	v2 Blob: `sha256:a6773adbce5c4b6533260ebc24f7eed9c5adf94d362dff09d209c671b26b217f`
 -	v2 Content-Length: 7.7 KB (7687 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:31:59 GMT
 
 #### `25e4f88670c02e9b5e5eb26c618659a6dd8512be186459c7535ca1dd7341166c`
 
@@ -5671,6 +6012,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e34b2cce37a8559b09283c55c30ba08f30cca976d79e3545b4b5f93f9da0daff`
 
@@ -5684,6 +6026,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c35809413a92eaaae0ffb5fdeb6e81c3e1d290d0c6609479f83678b54ee6d7d`
 
@@ -5699,6 +6042,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.7 MB (14687982 bytes)
 -	v2 Blob: `sha256:2a193135c4ecfd8050b486c00d6493fe344d08c2f420becdbadf5c27ddf8cf05`
 -	v2 Content-Length: 4.4 MB (4420908 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:47 GMT
 
 #### `dc8f271eeb5cc07eef415fcfd27f5dceff874221bda1eec17e817c1bd403a901`
 
@@ -5719,6 +6063,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1e4e07ca0eb0602f0979ff4626734eab591554f3d0b142e6fd79f21b394585cf`
 -	v2 Content-Length: 333.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:43 GMT
 
 #### `56b5e4eded48886811961ae431e50f5dd1bc909e189f70a8d3d8be8afb9c9bf2`
 
@@ -5732,6 +6077,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3753352e26659ae3eab57a4e43959266c86b1b1fc9e7ae43a73ff0afdb3de065`
 
@@ -5745,6 +6091,7 @@ ENV WORDPRESS_VERSION=4.4.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6273b43f77e2872fd9439cd6704910faab6bf223a6845b7ca58310f916ef07e2`
 
@@ -5758,6 +6105,7 @@ ENV WORDPRESS_SHA1=7444099fec298b599eb026e83227462bcdf312a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3eddb93adca2ed76415b65c7ecd49d57b1d7bc679f6eb891b399e49942b6b6b`
 
@@ -5775,6 +6123,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:f923f7bd83597d51a50cf451fbd23e03ad81cabd7951c5586a8749a3891dd058`
 -	v2 Content-Length: 6.9 MB (6939502 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:35:34 GMT
 
 #### `c2c02b810b9edf550fb4988aa7ec6cc4c2372a6049b89c272af426873de78810`
 
@@ -5788,6 +6137,7 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `fe008b7ee00744734b2fb17adeff3cc6d6abd457221bf325431112ce66dd998e`
 
@@ -5801,6 +6151,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f93115cb227d1d84aa0ad22e34ff98ad7f0765ac4eb38b17750efa48482ff199`
 
@@ -5814,3 +6165,4 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

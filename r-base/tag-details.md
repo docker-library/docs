@@ -27,6 +27,7 @@ ADD file:2f7807269f3de81bca8f1d3768f898cefb2fdcfab8dd6edf3c4ce1c715ce03f3 in /
 -	Virtual Size: 118.8 MB (118843679 bytes)
 -	v2 Blob: `sha256:9ddccb5c972e5aee052f54415436ac7318d8773ada72a7b6b44b6e19734ee48d`
 -	v2 Content-Length: 52.4 MB (52440532 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:50:36 GMT
 
 #### `9a6555a7622068c3e838cfedba129fe93ef5c2545cd4b47b534929a38e115473`
 
@@ -40,6 +41,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `365aa2300d4a0f9ac11afb342bb9f82c043864fedb14c2b017a07b9acd6ecfe5`
 
@@ -53,6 +55,7 @@ MAINTAINER "Carl Boettiger and Dirk Eddelbuettel" rocker-maintainers@eddelbuette
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dcfa7e498f476f40d422f9c5584d4a12b39c0a70c3423e13421e93b9b5f7fd35`
 
@@ -90,6 +93,7 @@ RUN apt-get update \
 -	Virtual Size: 77.1 MB (77122079 bytes)
 -	v2 Blob: `sha256:4ea9e60f0398d6fe3efb095b06e184df6bc3bff5d06d7f4307dcfa85765dea71`
 -	v2 Content-Length: 31.8 MB (31760077 bytes)
+-	v2 Last-Modified: Thu, 31 Mar 2016 22:31:18 GMT
 
 #### `aadc1b19481be9fcc487c7c7f75768738eb19c392eda1d46c03d3b9b71d8804e`
 
@@ -118,6 +122,7 @@ ENV LC_ALL=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `82b1a2fe72652642c01393a0fdb9bc675ea9b0ad02fe4af7b784bf2b1bff28c1`
 
@@ -131,6 +136,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c171133a0918374d9a9b3224493cfeab8199c7961cb8225b5f7537694d313a3f`
 
@@ -158,6 +164,7 @@ ENV R_BASE_VERSION=3.2.4-revised
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9407fc5e6eda274a9540d3d844a056b9a28dd031c9565be5242ef5c6bc4a6245`
 
@@ -199,6 +206,7 @@ CMD ["R"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `r-base:latest`
 
@@ -222,6 +230,7 @@ ADD file:2f7807269f3de81bca8f1d3768f898cefb2fdcfab8dd6edf3c4ce1c715ce03f3 in /
 -	Virtual Size: 118.8 MB (118843679 bytes)
 -	v2 Blob: `sha256:9ddccb5c972e5aee052f54415436ac7318d8773ada72a7b6b44b6e19734ee48d`
 -	v2 Content-Length: 52.4 MB (52440532 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:50:36 GMT
 
 #### `9a6555a7622068c3e838cfedba129fe93ef5c2545cd4b47b534929a38e115473`
 
@@ -235,6 +244,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `365aa2300d4a0f9ac11afb342bb9f82c043864fedb14c2b017a07b9acd6ecfe5`
 
@@ -248,6 +258,7 @@ MAINTAINER "Carl Boettiger and Dirk Eddelbuettel" rocker-maintainers@eddelbuette
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dcfa7e498f476f40d422f9c5584d4a12b39c0a70c3423e13421e93b9b5f7fd35`
 
@@ -285,6 +296,7 @@ RUN apt-get update \
 -	Virtual Size: 77.1 MB (77122079 bytes)
 -	v2 Blob: `sha256:4ea9e60f0398d6fe3efb095b06e184df6bc3bff5d06d7f4307dcfa85765dea71`
 -	v2 Content-Length: 31.8 MB (31760077 bytes)
+-	v2 Last-Modified: Thu, 31 Mar 2016 22:31:18 GMT
 
 #### `aadc1b19481be9fcc487c7c7f75768738eb19c392eda1d46c03d3b9b71d8804e`
 
@@ -313,6 +325,7 @@ ENV LC_ALL=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `82b1a2fe72652642c01393a0fdb9bc675ea9b0ad02fe4af7b784bf2b1bff28c1`
 
@@ -326,6 +339,7 @@ ENV LANG=en_US.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c171133a0918374d9a9b3224493cfeab8199c7961cb8225b5f7537694d313a3f`
 
@@ -353,6 +367,7 @@ ENV R_BASE_VERSION=3.2.4-revised
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9407fc5e6eda274a9540d3d844a056b9a28dd031c9565be5242ef5c6bc4a6245`
 
@@ -394,3 +409,4 @@ CMD ["R"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

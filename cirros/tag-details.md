@@ -191,6 +191,7 @@ ADD file:31b7d60ecb46a910225aabb36376a1df2376dd86433a28b24df3f67bb2d4d618 in /
 -	Virtual Size: 7.7 MB (7696146 bytes)
 -	v2 Blob: `sha256:78f3e58e2da9224cc693e476556047a957225ec4ef911a38f6cb05adea713035`
 -	v2 Content-Length: 3.5 MB (3527868 bytes)
+-	v2 Last-Modified: Fri, 17 Apr 2015 01:21:45 GMT
 
 #### `ac86fdec5230216c8b6d7541506887c2daf8c2998092f2773f5d44323daf6a99`
 

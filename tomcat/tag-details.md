@@ -230,6 +230,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -332,6 +333,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -556,6 +558,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -658,6 +661,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -882,6 +886,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -984,6 +989,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -1208,6 +1214,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -1310,6 +1317,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -1534,6 +1542,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -1636,6 +1645,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -1860,6 +1870,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -1962,6 +1973,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:2b8341e7297448e9bd25674b1e708c270ffd3a47163cb8f85ee46b7baacbdeab`
 -	v2 Content-Length: 7.1 MB (7073023 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:36:53 GMT
 
 #### `63a7a6fa4f8d20887b7ca2983a43cafd1d3e1e3e129c552dab9dcf959230140c`
 
@@ -2174,6 +2186,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2187,6 +2200,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -2270,6 +2284,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:e8cb1bbb01da7d6d5ae77675268b97aadbb6eadd318b431228499154661a4bc7`
 -	v2 Content-Length: 261.8 KB (261844 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:26 GMT
 
 #### `ca5ad7924b88f052bebf98473b61aacc627e2dfe0dab2e4100305276ca3985f9`
 
@@ -2328,6 +2343,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:852218bd14e15acd508f1b0619fd6dd7ca76e03ab8d63f01ed2051934da6a68b`
 -	v2 Content-Length: 7.1 MB (7073009 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:13 GMT
 
 #### `712cb6e376916655178acdb8e9658fab5435b42026d2a3d193bb1d3f8c8d567e`
 
@@ -2540,6 +2556,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2553,6 +2570,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -2636,6 +2654,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:e8cb1bbb01da7d6d5ae77675268b97aadbb6eadd318b431228499154661a4bc7`
 -	v2 Content-Length: 261.8 KB (261844 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:26 GMT
 
 #### `ca5ad7924b88f052bebf98473b61aacc627e2dfe0dab2e4100305276ca3985f9`
 
@@ -2694,6 +2713,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:852218bd14e15acd508f1b0619fd6dd7ca76e03ab8d63f01ed2051934da6a68b`
 -	v2 Content-Length: 7.1 MB (7073009 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:13 GMT
 
 #### `712cb6e376916655178acdb8e9658fab5435b42026d2a3d193bb1d3f8c8d567e`
 
@@ -2906,6 +2926,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2919,6 +2940,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -3002,6 +3024,7 @@ RUN set -ex \
 -	Virtual Size: 359.6 KB (359624 bytes)
 -	v2 Blob: `sha256:e8cb1bbb01da7d6d5ae77675268b97aadbb6eadd318b431228499154661a4bc7`
 -	v2 Content-Length: 261.8 KB (261844 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:26 GMT
 
 #### `ca5ad7924b88f052bebf98473b61aacc627e2dfe0dab2e4100305276ca3985f9`
 
@@ -3060,6 +3083,7 @@ RUN set -x \
 -	Virtual Size: 10.7 MB (10744539 bytes)
 -	v2 Blob: `sha256:852218bd14e15acd508f1b0619fd6dd7ca76e03ab8d63f01ed2051934da6a68b`
 -	v2 Content-Length: 7.1 MB (7073009 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:39:13 GMT
 
 #### `712cb6e376916655178acdb8e9658fab5435b42026d2a3d193bb1d3f8c8d567e`
 
@@ -3284,6 +3308,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -3327,6 +3352,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -3609,6 +3635,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -3652,6 +3679,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -3934,6 +3962,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -3977,6 +4006,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -4259,6 +4289,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -4302,6 +4333,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -4584,6 +4616,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -4627,6 +4660,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -4909,6 +4943,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -4952,6 +4987,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:7e7ffd905a178c5e87d2e45a27c98d8da3d9270ac269fa30559fdf329f91be96`
 -	v2 Content-Length: 106.1 KB (106135 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:00 GMT
 
 #### `816265af609c477bd36835710b2b6722151dc134700be904c6b2a2dede9b7795`
 
@@ -5222,6 +5258,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5235,6 +5272,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -5317,6 +5355,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:fa13522aad358e640b7b93895d6d1dab2337b1cf107f035d8ff3c0e94c267dc6`
 -	v2 Content-Length: 106.1 KB (106134 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:05 GMT
 
 #### `23d09e462c4ceef172630a4d8cf5506104af1a52c7c4a8dc0c31c61b4eac7e6c`
 
@@ -5375,6 +5414,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:c71292183fb2909865d0b9c106bda66df5604cee74d560a542121e5a82241516`
 -	v2 Content-Length: 8.9 MB (8896245 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:53 GMT
 
 #### `e2d769dccc4a6b0ba79a49ab3104dd9e8331383e4b8b7fb48b326de6875989a1`
 
@@ -5587,6 +5627,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5600,6 +5641,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -5682,6 +5724,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:fa13522aad358e640b7b93895d6d1dab2337b1cf107f035d8ff3c0e94c267dc6`
 -	v2 Content-Length: 106.1 KB (106134 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:05 GMT
 
 #### `23d09e462c4ceef172630a4d8cf5506104af1a52c7c4a8dc0c31c61b4eac7e6c`
 
@@ -5740,6 +5783,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:c71292183fb2909865d0b9c106bda66df5604cee74d560a542121e5a82241516`
 -	v2 Content-Length: 8.9 MB (8896245 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:53 GMT
 
 #### `e2d769dccc4a6b0ba79a49ab3104dd9e8331383e4b8b7fb48b326de6875989a1`
 
@@ -5952,6 +5996,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5965,6 +6010,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -6047,6 +6093,7 @@ RUN set -ex \
 -	Virtual Size: 119.9 KB (119926 bytes)
 -	v2 Blob: `sha256:fa13522aad358e640b7b93895d6d1dab2337b1cf107f035d8ff3c0e94c267dc6`
 -	v2 Content-Length: 106.1 KB (106134 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:05 GMT
 
 #### `23d09e462c4ceef172630a4d8cf5506104af1a52c7c4a8dc0c31c61b4eac7e6c`
 
@@ -6105,6 +6152,7 @@ RUN set -x \
 -	Virtual Size: 13.5 MB (13494837 bytes)
 -	v2 Blob: `sha256:c71292183fb2909865d0b9c106bda66df5604cee74d560a542121e5a82241516`
 -	v2 Content-Length: 8.9 MB (8896245 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:41:53 GMT
 
 #### `e2d769dccc4a6b0ba79a49ab3104dd9e8331383e4b8b7fb48b326de6875989a1`
 
@@ -6329,6 +6377,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -6371,6 +6420,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -6429,6 +6479,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -6653,6 +6704,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -6695,6 +6747,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -6753,6 +6806,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -6977,6 +7031,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -7019,6 +7074,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -7077,6 +7133,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -7301,6 +7358,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -7343,6 +7401,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -7401,6 +7460,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -7625,6 +7685,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -7667,6 +7728,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -7725,6 +7787,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -7949,6 +8012,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -7991,6 +8055,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -8049,6 +8114,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -8273,6 +8339,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -8315,6 +8382,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -8373,6 +8441,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -8597,6 +8666,7 @@ RUN mkdir -p "$CATALINA_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:23a1f1e4942cef16411cb06561025a8c54ea939cd4af38c3f7c4e878a97ac2d2`
 -	v2 Content-Length: 145.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:37:09 GMT
 
 #### `4cb795317b5a23ff2aa962158d758c365c9f50b3c4ed55a88ea1d55fa97bd0c8`
 
@@ -8639,6 +8709,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:1c6c221bebc17adfa4cedace087dbae363f661e3c1189875c0477e542fbe07f2`
 -	v2 Content-Length: 100.7 KB (100714 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:41 GMT
 
 #### `cf77a0aa7e7c87d1789d5b69ff5588ac6a4752251fad581d7656dd2260dd1498`
 
@@ -8697,6 +8768,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:35e7900817420abdbe5c746ea4b08ef712be1b16818e4336d540a5dff8995a7b`
 -	v2 Content-Length: 9.2 MB (9164730 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:42:30 GMT
 
 #### `590bb23a39383b32ecc096819529f379b02e46e2f0344930d864efcc0fa2c03d`
 
@@ -8909,6 +8981,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -8922,6 +8995,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -9003,6 +9077,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:484556345911d7b3e685745d5bf8d2e4b9c914bd82704fa628a156dd730aebed`
 -	v2 Content-Length: 100.7 KB (100713 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:41 GMT
 
 #### `9c7c15b5844e9ffdb59d2fee6e40fad09decdf69a608d53a8d0a53caf332b990`
 
@@ -9061,6 +9136,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:1353741524b3b0883db41a306ca0c9735fc4a0c1f04254de95258205675aeeb4`
 -	v2 Content-Length: 9.2 MB (9164748 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:29 GMT
 
 #### `2ea870ca35863cf084463155640295cadd70a956ec8ec1c0d97a630fe16c66af`
 
@@ -9273,6 +9349,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -9286,6 +9363,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -9367,6 +9445,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:484556345911d7b3e685745d5bf8d2e4b9c914bd82704fa628a156dd730aebed`
 -	v2 Content-Length: 100.7 KB (100713 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:41 GMT
 
 #### `9c7c15b5844e9ffdb59d2fee6e40fad09decdf69a608d53a8d0a53caf332b990`
 
@@ -9425,6 +9504,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:1353741524b3b0883db41a306ca0c9735fc4a0c1f04254de95258205675aeeb4`
 -	v2 Content-Length: 9.2 MB (9164748 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:29 GMT
 
 #### `2ea870ca35863cf084463155640295cadd70a956ec8ec1c0d97a630fe16c66af`
 
@@ -9637,6 +9717,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -9650,6 +9731,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -9731,6 +9813,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:484556345911d7b3e685745d5bf8d2e4b9c914bd82704fa628a156dd730aebed`
 -	v2 Content-Length: 100.7 KB (100713 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:41 GMT
 
 #### `9c7c15b5844e9ffdb59d2fee6e40fad09decdf69a608d53a8d0a53caf332b990`
 
@@ -9789,6 +9872,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:1353741524b3b0883db41a306ca0c9735fc4a0c1f04254de95258205675aeeb4`
 -	v2 Content-Length: 9.2 MB (9164748 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:29 GMT
 
 #### `2ea870ca35863cf084463155640295cadd70a956ec8ec1c0d97a630fe16c66af`
 
@@ -10001,6 +10085,7 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -10014,6 +10099,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `b30c33e6d93881282f49fc23755a40164cd98eadc8bd1a6c62bbc99181bc23f1`
 
@@ -10095,6 +10181,7 @@ RUN set -ex \
 -	Virtual Size: 114.3 KB (114330 bytes)
 -	v2 Blob: `sha256:484556345911d7b3e685745d5bf8d2e4b9c914bd82704fa628a156dd730aebed`
 -	v2 Content-Length: 100.7 KB (100713 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:41 GMT
 
 #### `9c7c15b5844e9ffdb59d2fee6e40fad09decdf69a608d53a8d0a53caf332b990`
 
@@ -10153,6 +10240,7 @@ RUN set -x \
 -	Virtual Size: 13.0 MB (12996898 bytes)
 -	v2 Blob: `sha256:1353741524b3b0883db41a306ca0c9735fc4a0c1f04254de95258205675aeeb4`
 -	v2 Content-Length: 9.2 MB (9164748 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:43:29 GMT
 
 #### `2ea870ca35863cf084463155640295cadd70a956ec8ec1c0d97a630fe16c66af`
 

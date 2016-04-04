@@ -365,6 +365,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -474,6 +475,7 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -535,6 +537,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `47158fb263e9ffb14cd7b5ce116ce825da1966f7ef77c1932ca67bd5f1da246c`
 
@@ -882,6 +885,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -991,6 +995,7 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -1052,6 +1057,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `47158fb263e9ffb14cd7b5ce116ce825da1966f7ef77c1932ca67bd5f1da246c`
 
@@ -1399,6 +1405,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -1508,6 +1515,7 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -1569,6 +1577,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `47158fb263e9ffb14cd7b5ce116ce825da1966f7ef77c1932ca67bd5f1da246c`
 
@@ -1916,6 +1925,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -2025,6 +2035,7 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -2086,6 +2097,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `47158fb263e9ffb14cd7b5ce116ce825da1966f7ef77c1932ca67bd5f1da246c`
 
@@ -2433,6 +2445,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -2542,6 +2555,7 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -2603,6 +2617,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `47158fb263e9ffb14cd7b5ce116ce825da1966f7ef77c1932ca67bd5f1da246c`
 
@@ -2950,6 +2965,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -3059,6 +3075,7 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -3120,6 +3137,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `47158fb263e9ffb14cd7b5ce116ce825da1966f7ef77c1932ca67bd5f1da246c`
 
@@ -3363,6 +3381,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -3578,6 +3597,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `eb3d9cb847ba44456a101bbbf82c457d61076a4b2abef00076e4447692f116fd`
 
@@ -3821,6 +3841,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -4036,6 +4057,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `eb3d9cb847ba44456a101bbbf82c457d61076a4b2abef00076e4447692f116fd`
 
@@ -4279,6 +4301,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -4494,6 +4517,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `eb3d9cb847ba44456a101bbbf82c457d61076a4b2abef00076e4447692f116fd`
 
@@ -4841,6 +4865,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -4951,6 +4976,7 @@ RUN pecl install APCu-4.0.10 \
 -	Virtual Size: 985.6 KB (985603 bytes)
 -	v2 Blob: `sha256:71dcfbf5eac0029119c807a13adb1cef126de56107c47ccfc2079b8348aef5ff`
 -	v2 Content-Length: 363.6 KB (363568 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:46:40 GMT
 
 #### `0c99057d2c27439ca5a6f2d8e41eb0f43605783de8e8fe6314dd27b2a1cc0ecb`
 
@@ -5012,6 +5038,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 72.1 MB (72083562 bytes)
 -	v2 Blob: `sha256:e9c78c35ad530bf05f2a5a51dc6cd55b4533a38aa8acfc93f124cc4883c60b30`
 -	v2 Content-Length: 27.0 MB (27025002 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:46:27 GMT
 
 #### `b152bbd7996793a78ee11db0b431553353f219a0808c7ba56c8b5d85b2407e27`
 
@@ -5025,6 +5052,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `c8179ec6c1052e1ae2ecc0a119371989d32b5ce239d5cc0621b4b47e7072c482`
 
@@ -5372,6 +5400,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -5482,6 +5511,7 @@ RUN pecl install APCu-4.0.10 \
 -	Virtual Size: 985.6 KB (985603 bytes)
 -	v2 Blob: `sha256:71dcfbf5eac0029119c807a13adb1cef126de56107c47ccfc2079b8348aef5ff`
 -	v2 Content-Length: 363.6 KB (363568 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:46:40 GMT
 
 #### `0c99057d2c27439ca5a6f2d8e41eb0f43605783de8e8fe6314dd27b2a1cc0ecb`
 
@@ -5543,6 +5573,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 72.1 MB (72083562 bytes)
 -	v2 Blob: `sha256:e9c78c35ad530bf05f2a5a51dc6cd55b4533a38aa8acfc93f124cc4883c60b30`
 -	v2 Content-Length: 27.0 MB (27025002 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:46:27 GMT
 
 #### `b152bbd7996793a78ee11db0b431553353f219a0808c7ba56c8b5d85b2407e27`
 
@@ -5556,6 +5587,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `c8179ec6c1052e1ae2ecc0a119371989d32b5ce239d5cc0621b4b47e7072c482`
 
@@ -5903,6 +5935,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -6013,6 +6046,7 @@ RUN pecl install APCu-4.0.10 \
 -	Virtual Size: 985.6 KB (985603 bytes)
 -	v2 Blob: `sha256:71dcfbf5eac0029119c807a13adb1cef126de56107c47ccfc2079b8348aef5ff`
 -	v2 Content-Length: 363.6 KB (363568 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:46:40 GMT
 
 #### `0c99057d2c27439ca5a6f2d8e41eb0f43605783de8e8fe6314dd27b2a1cc0ecb`
 
@@ -6074,6 +6108,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 72.1 MB (72083562 bytes)
 -	v2 Blob: `sha256:e9c78c35ad530bf05f2a5a51dc6cd55b4533a38aa8acfc93f124cc4883c60b30`
 -	v2 Content-Length: 27.0 MB (27025002 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:46:27 GMT
 
 #### `b152bbd7996793a78ee11db0b431553353f219a0808c7ba56c8b5d85b2407e27`
 
@@ -6087,6 +6122,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `c8179ec6c1052e1ae2ecc0a119371989d32b5ce239d5cc0621b4b47e7072c482`
 
@@ -6434,6 +6470,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -6544,6 +6581,7 @@ RUN pecl install APCu-4.0.10 \
 -	Virtual Size: 985.6 KB (985603 bytes)
 -	v2 Blob: `sha256:71dcfbf5eac0029119c807a13adb1cef126de56107c47ccfc2079b8348aef5ff`
 -	v2 Content-Length: 363.6 KB (363568 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:46:40 GMT
 
 #### `0c99057d2c27439ca5a6f2d8e41eb0f43605783de8e8fe6314dd27b2a1cc0ecb`
 
@@ -6605,6 +6643,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 72.1 MB (72083562 bytes)
 -	v2 Blob: `sha256:e9c78c35ad530bf05f2a5a51dc6cd55b4533a38aa8acfc93f124cc4883c60b30`
 -	v2 Content-Length: 27.0 MB (27025002 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:46:27 GMT
 
 #### `b152bbd7996793a78ee11db0b431553353f219a0808c7ba56c8b5d85b2407e27`
 
@@ -6618,6 +6657,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `c8179ec6c1052e1ae2ecc0a119371989d32b5ce239d5cc0621b4b47e7072c482`
 
@@ -6861,6 +6901,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -7077,6 +7118,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 72.1 MB (72083562 bytes)
 -	v2 Blob: `sha256:46c12ffefef6bfbafc52c8e443115e9e3f8e04bc44ac6fb9c49df6cf79e26e33`
 -	v2 Content-Length: 27.0 MB (27025048 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:47:43 GMT
 
 #### `ea68ba0ecb6c2804fd6b010ecf0e43894981d15150446bc0d48cca18a9bc04d9`
 
@@ -7090,6 +7132,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `27452d1be6dee6b8fbd0a054cb1c901835676e63d2be84a67c87005f9136251a`
 
@@ -7333,6 +7376,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -7549,6 +7593,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 72.1 MB (72083562 bytes)
 -	v2 Blob: `sha256:46c12ffefef6bfbafc52c8e443115e9e3f8e04bc44ac6fb9c49df6cf79e26e33`
 -	v2 Content-Length: 27.0 MB (27025048 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:47:43 GMT
 
 #### `ea68ba0ecb6c2804fd6b010ecf0e43894981d15150446bc0d48cca18a9bc04d9`
 
@@ -7562,6 +7607,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `27452d1be6dee6b8fbd0a054cb1c901835676e63d2be84a67c87005f9136251a`
 
@@ -7909,6 +7955,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -8094,6 +8141,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `20fb5a724bb9ffb1a75f063ac3cae4df840d7d49e6e128a05c1aed75a4232a7b`
 
@@ -8441,6 +8489,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -8626,6 +8675,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `20fb5a724bb9ffb1a75f063ac3cae4df840d7d49e6e128a05c1aed75a4232a7b`
 
@@ -8973,6 +9023,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -9158,6 +9209,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `20fb5a724bb9ffb1a75f063ac3cae4df840d7d49e6e128a05c1aed75a4232a7b`
 
@@ -9505,6 +9557,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -9690,6 +9743,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `20fb5a724bb9ffb1a75f063ac3cae4df840d7d49e6e128a05c1aed75a4232a7b`
 
@@ -9933,6 +9987,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -10054,6 +10109,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -10102,6 +10158,7 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:568f504e27f871b81fc3435156fff6e03aa1d3364b6625691440aa68d674f039`
 -	v2 Content-Length: 1.1 MB (1075383 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:31 GMT
 
 #### `31f4562ffd4744d9e8a68c2fb8a00aac1da77217590d1226bc628962f3f61947`
 
@@ -10163,6 +10220,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `a93d044891579bb222e2759c80da7067531572e3cd6f216fd8bbc9b0d2b247a3`
 
@@ -10406,6 +10464,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -10527,6 +10586,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -10575,6 +10635,7 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:568f504e27f871b81fc3435156fff6e03aa1d3364b6625691440aa68d674f039`
 -	v2 Content-Length: 1.1 MB (1075383 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:31 GMT
 
 #### `31f4562ffd4744d9e8a68c2fb8a00aac1da77217590d1226bc628962f3f61947`
 
@@ -10636,6 +10697,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:309ae959d875433c89001e8e3a86ce993d96edc0b6347f5e3ccb0af93cacd792`
 -	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 22:21:24 GMT
 
 #### `a93d044891579bb222e2759c80da7067531572e3cd6f216fd8bbc9b0d2b247a3`
 
@@ -10983,6 +11045,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -11168,6 +11231,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2804563ef8960ce4d800631effa7486ae6c88c382c1647495f1cac31158112f8`
 -	v2 Content-Length: 246.0 B
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:57:13 GMT
 
 #### `237d7a833e0312e3abda045e1aae0aef9758c0c406f435a42574b1aed0be2a08`
 
@@ -11515,6 +11579,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -11700,6 +11765,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2804563ef8960ce4d800631effa7486ae6c88c382c1647495f1cac31158112f8`
 -	v2 Content-Length: 246.0 B
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:57:13 GMT
 
 #### `237d7a833e0312e3abda045e1aae0aef9758c0c406f435a42574b1aed0be2a08`
 
@@ -12047,6 +12113,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -12232,6 +12299,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2804563ef8960ce4d800631effa7486ae6c88c382c1647495f1cac31158112f8`
 -	v2 Content-Length: 246.0 B
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:57:13 GMT
 
 #### `237d7a833e0312e3abda045e1aae0aef9758c0c406f435a42574b1aed0be2a08`
 
@@ -12579,6 +12647,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -12764,6 +12833,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2804563ef8960ce4d800631effa7486ae6c88c382c1647495f1cac31158112f8`
 -	v2 Content-Length: 246.0 B
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:57:13 GMT
 
 #### `237d7a833e0312e3abda045e1aae0aef9758c0c406f435a42574b1aed0be2a08`
 
@@ -13111,6 +13181,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -13296,6 +13367,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2804563ef8960ce4d800631effa7486ae6c88c382c1647495f1cac31158112f8`
 -	v2 Content-Length: 246.0 B
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:57:13 GMT
 
 #### `237d7a833e0312e3abda045e1aae0aef9758c0c406f435a42574b1aed0be2a08`
 
@@ -13643,6 +13715,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -13828,6 +13901,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2804563ef8960ce4d800631effa7486ae6c88c382c1647495f1cac31158112f8`
 -	v2 Content-Length: 246.0 B
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:57:13 GMT
 
 #### `237d7a833e0312e3abda045e1aae0aef9758c0c406f435a42574b1aed0be2a08`
 
@@ -14071,6 +14145,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -14192,6 +14267,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -14240,6 +14316,7 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:568f504e27f871b81fc3435156fff6e03aa1d3364b6625691440aa68d674f039`
 -	v2 Content-Length: 1.1 MB (1075383 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:31 GMT
 
 #### `8587c6c6cf77912016b54a6a91f60ebc14fc8141d04048d7ebdc969353c4bc3b`
 
@@ -14288,6 +14365,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 78.3 MB (78329878 bytes)
 -	v2 Blob: `sha256:10cf063e1eb18fe393399e5b1e077c98a9e2669072213fe4762145f53a43f41f`
 -	v2 Content-Length: 27.8 MB (27839513 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:52:58 GMT
 
 #### `45bacdef8ea2c09e7feccba18a20f1768882112b21cbb97f6045ce24cf7117ed`
 
@@ -14301,6 +14379,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2804563ef8960ce4d800631effa7486ae6c88c382c1647495f1cac31158112f8`
 -	v2 Content-Length: 246.0 B
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:57:13 GMT
 
 #### `1ee3fa810f07f576e7ce61def2f42fea0f462fa8468d2e3ae91680c2c602dedd`
 
@@ -14544,6 +14623,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -14665,6 +14745,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -14713,6 +14794,7 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:568f504e27f871b81fc3435156fff6e03aa1d3364b6625691440aa68d674f039`
 -	v2 Content-Length: 1.1 MB (1075383 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:31 GMT
 
 #### `8587c6c6cf77912016b54a6a91f60ebc14fc8141d04048d7ebdc969353c4bc3b`
 
@@ -14761,6 +14843,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 78.3 MB (78329878 bytes)
 -	v2 Blob: `sha256:10cf063e1eb18fe393399e5b1e077c98a9e2669072213fe4762145f53a43f41f`
 -	v2 Content-Length: 27.8 MB (27839513 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:52:58 GMT
 
 #### `45bacdef8ea2c09e7feccba18a20f1768882112b21cbb97f6045ce24cf7117ed`
 
@@ -14774,6 +14857,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2804563ef8960ce4d800631effa7486ae6c88c382c1647495f1cac31158112f8`
 -	v2 Content-Length: 246.0 B
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:57:13 GMT
 
 #### `1ee3fa810f07f576e7ce61def2f42fea0f462fa8468d2e3ae91680c2c602dedd`
 
@@ -15017,6 +15101,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -15138,6 +15223,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -15186,6 +15272,7 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:568f504e27f871b81fc3435156fff6e03aa1d3364b6625691440aa68d674f039`
 -	v2 Content-Length: 1.1 MB (1075383 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:31 GMT
 
 #### `8587c6c6cf77912016b54a6a91f60ebc14fc8141d04048d7ebdc969353c4bc3b`
 
@@ -15234,6 +15321,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 78.3 MB (78329878 bytes)
 -	v2 Blob: `sha256:10cf063e1eb18fe393399e5b1e077c98a9e2669072213fe4762145f53a43f41f`
 -	v2 Content-Length: 27.8 MB (27839513 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:52:58 GMT
 
 #### `45bacdef8ea2c09e7feccba18a20f1768882112b21cbb97f6045ce24cf7117ed`
 
@@ -15247,6 +15335,7 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2804563ef8960ce4d800631effa7486ae6c88c382c1647495f1cac31158112f8`
 -	v2 Content-Length: 246.0 B
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:57:13 GMT
 
 #### `1ee3fa810f07f576e7ce61def2f42fea0f462fa8468d2e3ae91680c2c602dedd`
 
@@ -15594,6 +15683,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -16126,6 +16216,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -16658,6 +16749,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -17190,6 +17282,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -17722,6 +17815,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -18254,6 +18348,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -18786,6 +18881,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -19318,6 +19414,7 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:6bf8bdf2e550628790f182a6ffade113a68983243e536facb66d0713649759ba`
 -	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:30:26 GMT
 
 #### `ceac16e1b353ba8193b7be2b2db736d8dd97d8c96645dca30ba9bda2d0dd7570`
 
@@ -19746,6 +19843,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -19867,6 +19965,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -19915,6 +20014,7 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:568f504e27f871b81fc3435156fff6e03aa1d3364b6625691440aa68d674f039`
 -	v2 Content-Length: 1.1 MB (1075383 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:31 GMT
 
 #### `be0bac2ac39953af5551271dd3e720138c0cc936e4f5e1a95a18542ba0c9d22a`
 
@@ -20219,6 +20319,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -20340,6 +20441,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -20388,6 +20490,7 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:568f504e27f871b81fc3435156fff6e03aa1d3364b6625691440aa68d674f039`
 -	v2 Content-Length: 1.1 MB (1075383 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:31 GMT
 
 #### `be0bac2ac39953af5551271dd3e720138c0cc936e4f5e1a95a18542ba0c9d22a`
 
@@ -20692,6 +20795,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -20813,6 +20917,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -20861,6 +20966,7 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:568f504e27f871b81fc3435156fff6e03aa1d3364b6625691440aa68d674f039`
 -	v2 Content-Length: 1.1 MB (1075383 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:31 GMT
 
 #### `be0bac2ac39953af5551271dd3e720138c0cc936e4f5e1a95a18542ba0c9d22a`
 
@@ -21165,6 +21271,7 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -21286,6 +21393,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -21334,6 +21442,7 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:568f504e27f871b81fc3435156fff6e03aa1d3364b6625691440aa68d674f039`
 -	v2 Content-Length: 1.1 MB (1075383 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:50:31 GMT
 
 #### `be0bac2ac39953af5551271dd3e720138c0cc936e4f5e1a95a18542ba0c9d22a`
 

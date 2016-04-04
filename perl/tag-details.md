@@ -50,6 +50,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -148,6 +149,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -202,6 +204,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc459023d06a920741f0b1bd9098b7d90029ccea848a6a2e5f4a70736e85654`
 
@@ -241,6 +244,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c44983cb020a1d32959330bfed336d854259740344764eb5fa19ece791b5e761`
 
@@ -254,6 +258,7 @@ CMD ["perl5.22.1" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `perl:5`
 
@@ -290,6 +295,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -388,6 +394,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -442,6 +449,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc459023d06a920741f0b1bd9098b7d90029ccea848a6a2e5f4a70736e85654`
 
@@ -481,6 +489,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c44983cb020a1d32959330bfed336d854259740344764eb5fa19ece791b5e761`
 
@@ -494,6 +503,7 @@ CMD ["perl5.22.1" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `perl:5.22`
 
@@ -530,6 +540,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -628,6 +639,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -682,6 +694,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc459023d06a920741f0b1bd9098b7d90029ccea848a6a2e5f4a70736e85654`
 
@@ -721,6 +734,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c44983cb020a1d32959330bfed336d854259740344764eb5fa19ece791b5e761`
 
@@ -734,6 +748,7 @@ CMD ["perl5.22.1" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `perl:5.22.1`
 
@@ -770,6 +785,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -868,6 +884,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -922,6 +939,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc459023d06a920741f0b1bd9098b7d90029ccea848a6a2e5f4a70736e85654`
 
@@ -961,6 +979,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c44983cb020a1d32959330bfed336d854259740344764eb5fa19ece791b5e761`
 
@@ -974,6 +993,7 @@ CMD ["perl5.22.1" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `perl:5.20`
 
@@ -1010,6 +1030,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1108,6 +1129,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -1149,6 +1171,7 @@ COPY file:75bfd850fa1c703e23e65e3ab4b5f29d167e32f90a110a7626acff955d6148f2 in /u
 -	Virtual Size: 1.6 KB (1575 bytes)
 -	v2 Blob: `sha256:420276c5e85030e368881763f86c7dc165862ab90026c133a0caab852ff293bc`
 -	v2 Content-Length: 1.0 KB (1008 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:33:38 GMT
 
 #### `fb0c3396b8f870cf3a3d7c6fc381f5d8baaba3de235899b28a3677c535ab9c7d`
 
@@ -1162,6 +1185,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7dd53eaf66bdbf68080a03a2a7499ca61328755b453e300fd79c8425d9e4de2`
 
@@ -1201,6 +1225,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26366d95e61d013cdf3be42f2fba88a8a78894f963a8ccb15ee47ae0dad5d52b`
 
@@ -1214,6 +1239,7 @@ CMD ["perl5.20.3" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `perl:5.20.3`
 
@@ -1250,6 +1276,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1348,6 +1375,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -1389,6 +1417,7 @@ COPY file:75bfd850fa1c703e23e65e3ab4b5f29d167e32f90a110a7626acff955d6148f2 in /u
 -	Virtual Size: 1.6 KB (1575 bytes)
 -	v2 Blob: `sha256:420276c5e85030e368881763f86c7dc165862ab90026c133a0caab852ff293bc`
 -	v2 Content-Length: 1.0 KB (1008 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:33:38 GMT
 
 #### `fb0c3396b8f870cf3a3d7c6fc381f5d8baaba3de235899b28a3677c535ab9c7d`
 
@@ -1402,6 +1431,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7dd53eaf66bdbf68080a03a2a7499ca61328755b453e300fd79c8425d9e4de2`
 
@@ -1441,6 +1471,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26366d95e61d013cdf3be42f2fba88a8a78894f963a8ccb15ee47ae0dad5d52b`
 
@@ -1454,6 +1485,7 @@ CMD ["perl5.20.3" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `perl:threaded`
 
@@ -1490,6 +1522,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1588,6 +1621,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -1642,6 +1676,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `20b467c75cbf54b1530c47e0fd80d3478a75fc3d840a20ed1462aa028832855f`
 
@@ -1668,6 +1703,7 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.1.tar.bz2 
 -	Virtual Size: 49.8 MB (49785852 bytes)
 -	v2 Blob: `sha256:8d96d5436ab7deff7e1bfc39b533d022ebd646300191c7d06126c53e42f41621`
 -	v2 Content-Length: 13.4 MB (13423189 bytes)
+-	v2 Last-Modified: Fri, 25 Mar 2016 22:52:17 GMT
 
 #### `f2ae29cd933278b0f425c18e6381bdf8df3752f8d963c91386dce216f888f4bd`
 
@@ -1681,6 +1717,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49aa0e9acfea119813ba56ac56b60b788b533f04609160e710d0a0b3bf88bfd1`
 
@@ -1694,6 +1731,7 @@ CMD ["perl5.22.1" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `perl:5-threaded`
 
@@ -1730,6 +1768,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1828,6 +1867,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -1882,6 +1922,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `20b467c75cbf54b1530c47e0fd80d3478a75fc3d840a20ed1462aa028832855f`
 
@@ -1908,6 +1949,7 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.1.tar.bz2 
 -	Virtual Size: 49.8 MB (49785852 bytes)
 -	v2 Blob: `sha256:8d96d5436ab7deff7e1bfc39b533d022ebd646300191c7d06126c53e42f41621`
 -	v2 Content-Length: 13.4 MB (13423189 bytes)
+-	v2 Last-Modified: Fri, 25 Mar 2016 22:52:17 GMT
 
 #### `f2ae29cd933278b0f425c18e6381bdf8df3752f8d963c91386dce216f888f4bd`
 
@@ -1921,6 +1963,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49aa0e9acfea119813ba56ac56b60b788b533f04609160e710d0a0b3bf88bfd1`
 
@@ -1934,6 +1977,7 @@ CMD ["perl5.22.1" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `perl:5.22-threaded`
 
@@ -1970,6 +2014,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2068,6 +2113,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -2122,6 +2168,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `20b467c75cbf54b1530c47e0fd80d3478a75fc3d840a20ed1462aa028832855f`
 
@@ -2148,6 +2195,7 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.1.tar.bz2 
 -	Virtual Size: 49.8 MB (49785852 bytes)
 -	v2 Blob: `sha256:8d96d5436ab7deff7e1bfc39b533d022ebd646300191c7d06126c53e42f41621`
 -	v2 Content-Length: 13.4 MB (13423189 bytes)
+-	v2 Last-Modified: Fri, 25 Mar 2016 22:52:17 GMT
 
 #### `f2ae29cd933278b0f425c18e6381bdf8df3752f8d963c91386dce216f888f4bd`
 
@@ -2161,6 +2209,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49aa0e9acfea119813ba56ac56b60b788b533f04609160e710d0a0b3bf88bfd1`
 
@@ -2174,6 +2223,7 @@ CMD ["perl5.22.1" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `perl:5.22.1-threaded`
 
@@ -2210,6 +2260,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2308,6 +2359,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -2362,6 +2414,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `20b467c75cbf54b1530c47e0fd80d3478a75fc3d840a20ed1462aa028832855f`
 
@@ -2388,6 +2441,7 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.1.tar.bz2 
 -	Virtual Size: 49.8 MB (49785852 bytes)
 -	v2 Blob: `sha256:8d96d5436ab7deff7e1bfc39b533d022ebd646300191c7d06126c53e42f41621`
 -	v2 Content-Length: 13.4 MB (13423189 bytes)
+-	v2 Last-Modified: Fri, 25 Mar 2016 22:52:17 GMT
 
 #### `f2ae29cd933278b0f425c18e6381bdf8df3752f8d963c91386dce216f888f4bd`
 
@@ -2401,6 +2455,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49aa0e9acfea119813ba56ac56b60b788b533f04609160e710d0a0b3bf88bfd1`
 
@@ -2414,6 +2469,7 @@ CMD ["perl5.22.1" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `perl:5.20-threaded`
 
@@ -2450,6 +2506,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2548,6 +2605,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -2589,6 +2647,7 @@ COPY file:75bfd850fa1c703e23e65e3ab4b5f29d167e32f90a110a7626acff955d6148f2 in /u
 -	Virtual Size: 1.6 KB (1575 bytes)
 -	v2 Blob: `sha256:420276c5e85030e368881763f86c7dc165862ab90026c133a0caab852ff293bc`
 -	v2 Content-Length: 1.0 KB (1008 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:33:38 GMT
 
 #### `fb0c3396b8f870cf3a3d7c6fc381f5d8baaba3de235899b28a3677c535ab9c7d`
 
@@ -2602,6 +2661,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e0d3ec6e8f713fac73b961fe921b0fa1ee40268d0a2dba9337621ce8753c8286`
 
@@ -2641,6 +2701,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `29b13ae9cc2fb0caf210bc527eb6f85ff54a7af35186af1dc27d43397f22b041`
 
@@ -2654,6 +2715,7 @@ CMD ["perl5.20.3" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `perl:5.20.3-threaded`
 
@@ -2690,6 +2752,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2788,6 +2851,7 @@ MAINTAINER Peter Martini <PeterCMartini@GMail.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9fb5ac208d2e147286c30769b1530c20f912c82df715ae5cab52fe58830f962`
 
@@ -2829,6 +2893,7 @@ COPY file:75bfd850fa1c703e23e65e3ab4b5f29d167e32f90a110a7626acff955d6148f2 in /u
 -	Virtual Size: 1.6 KB (1575 bytes)
 -	v2 Blob: `sha256:420276c5e85030e368881763f86c7dc165862ab90026c133a0caab852ff293bc`
 -	v2 Content-Length: 1.0 KB (1008 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:33:38 GMT
 
 #### `fb0c3396b8f870cf3a3d7c6fc381f5d8baaba3de235899b28a3677c535ab9c7d`
 
@@ -2842,6 +2907,7 @@ WORKDIR /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e0d3ec6e8f713fac73b961fe921b0fa1ee40268d0a2dba9337621ce8753c8286`
 
@@ -2881,6 +2947,7 @@ WORKDIR /root
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `29b13ae9cc2fb0caf210bc527eb6f85ff54a7af35186af1dc27d43397f22b041`
 
@@ -2894,3 +2961,4 @@ CMD ["perl5.20.3" "-de0"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

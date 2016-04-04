@@ -27,6 +27,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -57,6 +58,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -103,6 +105,7 @@ RUN groupadd -r perl6 && useradd -r -g perl6 perl6
 -	Virtual Size: 330.4 KB (330406 bytes)
 -	v2 Blob: `sha256:9dcc87bfcd1a8abf3969954738ca7f83a29789f5684b4f7ef0faf85fc84bd1f2`
 -	v2 Content-Length: 2.1 KB (2057 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:38 GMT
 
 #### `f1bd7a9fad52b25d90b8a54de80851e98963bc12b6137ed15b10d7c8c79d5756`
 
@@ -197,6 +200,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -227,6 +231,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -273,6 +278,7 @@ RUN groupadd -r perl6 && useradd -r -g perl6 perl6
 -	Virtual Size: 330.4 KB (330406 bytes)
 -	v2 Blob: `sha256:9dcc87bfcd1a8abf3969954738ca7f83a29789f5684b4f7ef0faf85fc84bd1f2`
 -	v2 Content-Length: 2.1 KB (2057 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:38 GMT
 
 #### `f1bd7a9fad52b25d90b8a54de80851e98963bc12b6137ed15b10d7c8c79d5756`
 

@@ -153,6 +153,7 @@ ADD file:2b6b4dd824f8839345cb42c8adca14984638f822f64086114818e930f1cb7f0a in /
 -	Virtual Size: 241.3 MB (241325806 bytes)
 -	v2 Blob: `sha256:93410896e1b1a4fba752ebccf23cfd8540c898479e75523a938a5f36f2d7cd1a`
 -	v2 Content-Length: 92.5 MB (92463444 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 23:26:30 GMT
 
 ## `fedora:rawhide`
 
@@ -225,6 +226,7 @@ ADD file:768d95e3ff49ba14458f448dd9c246eb4408e2b488c9174c729320d0a793b723 in /
 -	Virtual Size: 290.6 MB (290633327 bytes)
 -	v2 Blob: `sha256:54d02f21d98a12b408680de2b70be3e51c286d3fecb89dbc354c3640bdfafbc9`
 -	v2 Content-Length: 94.0 MB (93950063 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 23:30:42 GMT
 
 ## `fedora:heisenbug`
 
@@ -261,3 +263,4 @@ ADD file:768d95e3ff49ba14458f448dd9c246eb4408e2b488c9174c729320d0a793b723 in /
 -	Virtual Size: 290.6 MB (290633327 bytes)
 -	v2 Blob: `sha256:54d02f21d98a12b408680de2b70be3e51c286d3fecb89dbc354c3640bdfafbc9`
 -	v2 Content-Length: 94.0 MB (93950063 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 23:30:42 GMT
