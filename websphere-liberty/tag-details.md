@@ -2674,6 +2674,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 48.4 MB (48361029 bytes)
 -	v2 Blob: `sha256:c32a1bb035ebf4394571fb45d351b7fd2c6d75230270dd18a412586625660ffd`
 -	v2 Content-Length: 42.2 MB (42172775 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:13 GMT
 
 ## `websphere-liberty:8.5.5.9-javaee7`
 
@@ -3008,6 +3009,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 48.4 MB (48361029 bytes)
 -	v2 Blob: `sha256:c32a1bb035ebf4394571fb45d351b7fd2c6d75230270dd18a412586625660ffd`
 -	v2 Content-Length: 42.2 MB (42172775 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:13 GMT
 
 ## `websphere-liberty:8.5.5.9`
 
@@ -3342,6 +3344,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 48.4 MB (48361029 bytes)
 -	v2 Blob: `sha256:c32a1bb035ebf4394571fb45d351b7fd2c6d75230270dd18a412586625660ffd`
 -	v2 Content-Length: 42.2 MB (42172775 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:13 GMT
 
 ## `websphere-liberty:8.5.5`
 
@@ -3676,6 +3679,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 48.4 MB (48361029 bytes)
 -	v2 Blob: `sha256:c32a1bb035ebf4394571fb45d351b7fd2c6d75230270dd18a412586625660ffd`
 -	v2 Content-Length: 42.2 MB (42172775 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:13 GMT
 
 ## `websphere-liberty:latest`
 
@@ -4010,6 +4014,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 48.4 MB (48361029 bytes)
 -	v2 Blob: `sha256:c32a1bb035ebf4394571fb45d351b7fd2c6d75230270dd18a412586625660ffd`
 -	v2 Content-Length: 42.2 MB (42172775 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:13 GMT
 
 ## `websphere-liberty:beta`
 

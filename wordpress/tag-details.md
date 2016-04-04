@@ -115,7 +115,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -619,7 +618,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -1123,7 +1121,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -1627,7 +1624,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -2131,7 +2127,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -2635,7 +2630,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -3139,7 +3133,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -3643,7 +3636,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
