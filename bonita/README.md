@@ -1,11 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.0` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/45ef6c873f474c34edf585f26a1dc017ce11eefb/7.0/Dockerfile)
--	[`7.0.1` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/728da95418508c0959764d6bfd687dd466f0ca2d/7.0/Dockerfile)
--	[`7.0.2` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/c5df61351f71d8691e7746a171b8294f58555338/7.0/Dockerfile)
--	[`7.0.3`, `latest` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/cdbbd1c8fce49255116b63799fa939afd3ee7641/7.0/Dockerfile)
+-	[`7.0.3` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/cdbbd1c8fce49255116b63799fa939afd3ee7641/7.0/Dockerfile)
+-	[`7.2.2`, `latest` (*7.2/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/863476b2fb5822f9a51126994e6d0505630be7b1/7.2/Dockerfile)
 
-[![](https://badge.imagelayers.io/bonita:latest.svg)](https://imagelayers.io/?images=bonita:7.0.0,bonita:7.0.1,bonita:7.0.2,bonita:7.0.3)
+[![](https://badge.imagelayers.io/bonita:latest.svg)](https://imagelayers.io/?images=bonita:7.0.3,bonita:7.2.2)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/bonita`)](https://github.com/docker-library/official-images/blob/master/library/bonita). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbonita).
 
