@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1`, `1.9`, `1.9.12` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/f48d943038eaafd1f69cb14d86db95b3044bd4d8/mainline/jessie/Dockerfile)
--	[`stable`, `1.8`, `1.8.1` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/14c1b938737cf4399a6bb039bc506957dce562ae/stable/jessie/Dockerfile)
--	[`stable-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/14c1b938737cf4399a6bb039bc506957dce562ae/stable/alpine/Dockerfile)
--	[`mainline-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/14c1b938737cf4399a6bb039bc506957dce562ae/mainline/alpine/Dockerfile)
+-	[`latest`, `1`, `1.9`, `1.9.14` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/mainline/jessie/Dockerfile)
+-	[`stable`, `1.8`, `1.8.1` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/stable/jessie/Dockerfile)
+-	[`mainline-alpine`, `alpine`, `1-alpine`, `1.9-alpine`, `1.9.14-alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/mainline/alpine/Dockerfile)
+-	[`stable-alpine`, `1.8-alpine`, `1.8.1-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/stable/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/nginx:latest.svg)](https://imagelayers.io/?images=nginx:latest,nginx:stable,nginx:stable-alpine,nginx:mainline-alpine)
+[![](https://badge.imagelayers.io/nginx:latest.svg)](https://imagelayers.io/?images=nginx:latest,nginx:stable,nginx:mainline-alpine,nginx:stable-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnginx).
 
