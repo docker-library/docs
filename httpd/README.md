@@ -1,9 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.31`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/01b9f786daeace767c57c82d7289f4a8490d1035/2.2/Dockerfile)
--	[`2.4.18`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/1f1f7d39d5fe5aebeedea6872786b4e3ce0ebcc9/2.4/Dockerfile)
+-	[`2.2.31`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/bc72e42914f671e725d85a01ff037ce87c827f46/2.2/Dockerfile)
+-	[`2.4.18`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/bc72e42914f671e725d85a01ff037ce87c827f46/2.4/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/httpd`)](https://github.com/docker-library/official-images/blob/master/library/httpd). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/httpd:latest.svg)](https://imagelayers.io/?images=httpd:2.2.31,httpd:2.4.18)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/httpd`)](https://github.com/docker-library/official-images/blob/master/library/httpd). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhttpd).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `httpd/tag-details.md` file](https://github.com/docker-library/docs/blob/master/httpd/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -62,7 +64,7 @@ View [license information](https://www.apache.org/licenses/) for the software co
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -76,7 +78,7 @@ Documentation for this image is stored in the [`httpd/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/httpd/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/httpd/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

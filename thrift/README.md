@@ -1,8 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9`, `0.9.2`, `latest` (*0.9/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/61c3478ab828d3e610f192b442ac2a7221749c47/0.9/Dockerfile)
+-	[`0.9`, `0.9.3`, `latest` (*0.9/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/d322572f7dd6ea468a14a4d832fbec26f152c71e/0.9/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/thrift`)](https://github.com/docker-library/official-images/blob/master/library/thrift). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/thrift:latest.svg)](https://imagelayers.io/?images=thrift:0.9)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/thrift`)](https://github.com/docker-library/official-images/blob/master/library/thrift). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fthrift).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `thrift/tag-details.md` file](https://github.com/docker-library/docs/blob/master/thrift/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -28,7 +30,7 @@ View [license information](http://www.apache.org/licenses/) for the software con
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -42,7 +44,7 @@ Documentation for this image is stored in the [`thrift/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/ahawkins/docker-thrift/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/ahawkins/docker-thrift/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

@@ -1,13 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.2/Dockerfile)
--	[`2.4.14`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.4/Dockerfile)
--	[`2.6.11`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.6/Dockerfile)
--	[`3.0.8`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/d9b96ad7dfac1bb5203b549a676535351ee48d4d/3.0/Dockerfile)
--	[`3.1.9`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/5216cf8aedcf7634172e607b0c9718cc332e0d71/3.1/Dockerfile)
--	[`3.2.1`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/358d9eb62895be2c9fd4290595573c93b79d47d4/3.2/Dockerfile)
+-	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/4507e9767e0810ebfba7c19438613f37d7843278/2.2/Dockerfile)
+-	[`2.4.14`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/4507e9767e0810ebfba7c19438613f37d7843278/2.4/Dockerfile)
+-	[`2.6.12`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/fc91d681fa5808c30c3118ce7fe3f993beccc82d/2.6/Dockerfile)
+-	[`3.0.11`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/07cae8da9490ec2933464cd8d58a0fe0a0525e81/3.0/Dockerfile)
+-	[`3.1.9`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/4507e9767e0810ebfba7c19438613f37d7843278/3.1/Dockerfile)
+-	[`3.2.4`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/191cc63288fb44c2fd147eac27ade07ae4b6b0b5/3.2/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/mongo:latest.svg)](https://imagelayers.io/?images=mongo:2.2.7,mongo:2.4.14,mongo:2.6.12,mongo:3.0.11,mongo:3.1.9,mongo:3.2.4)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mongo/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mongo/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -53,6 +55,41 @@ Just add the `--storageEngine` argument if you want to use the WiredTiger storag
 $ docker run --name some-mongo -d mongo --storageEngine wiredTiger
 ```
 
+### Authentication and Authorization
+
+MongoDB does not require authentication by default, but it can be configured to do so. For more details about the functionality described here, please see the sections in the official documentation which describe [authentication](https://docs.mongodb.org/manual/core/authentication/) and [authorization](https://docs.mongodb.org/manual/core/authorization/) in more detail.
+
+#### Start the Database
+
+```console
+$ docker run --name some-mongo -d mongo --auth
+```
+
+#### Add the Initial Admin User
+
+```console
+$ docker exec -it some-mongo mongo admin
+connecting to: admin
+> db.createUser({ user: 'jsmith', pwd: 'some-initial-password', roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
+Successfully added user: {
+	"user" : "jsmith",
+	"roles" : [
+		{
+			"role" : "userAdminAnyDatabase",
+			"db" : "admin"
+		}
+	]
+}
+```
+
+#### Connect Externally
+
+```console
+$ docker run -it --rm --link some-mongo:mongo mongo mongo -u jsmith -p some-initial-password --authenticationDatabase admin some-mongo/some-db
+> db.getName();
+some-db
+```
+
 ## Where to Store Data
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `mongo` images to familiarize themselves with the options available, including:
@@ -60,7 +97,7 @@ Important note: There are several ways to store data used by applications that r
 -	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
 -	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
-**WARNING**: because MongoDB uses memory mapped files it is not possible to use it through vboxsf to your host ([vbox bug](https://www.virtualbox.org/ticket/819)).
+**WARNING (Windows & OS X)**: The default Docker setup on Windows and OS X uses a VirtualBox VM to host the Docker daemon. Unfortunately, the mechanism VirtualBox uses to share folders between the host system and the Docker container is not compatible with the memory mapped files used by MongoDB (see [vbox bug](https://www.virtualbox.org/ticket/819), [docs.mongodb.org](https://docs.mongodb.org/manual/administration/production-notes/#fsync-on-directories) and related [jira.mongodb.org](https://jira.mongodb.org/browse/SERVER-8600) bug). This means that it is not possible to run a MongoDB container with the data directory mapped to the host.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -85,7 +122,7 @@ View [license information](https://github.com/mongodb/mongo/blob/7c3cfac300cfcca
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -99,7 +136,7 @@ Documentation for this image is stored in the [`mongo/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/mongo/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/mongo/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

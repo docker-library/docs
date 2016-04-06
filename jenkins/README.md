@@ -1,8 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.625.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/83ce6f6070f1670563a00d0f61d04edd62b78f4f/Dockerfile)
+-	[`latest`, `1.642.4` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/67f1189b45ba454acc72eb6117107c6f08c2663a/Dockerfile)
+-	[`2.0-beta-1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/d014524ce333b9e8c2f647756f52c4a31329e3a4/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:2.0-beta-1)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jenkins/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jenkins/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -92,7 +95,9 @@ docker run --name myjenkins -p 8080:8080 -p 50000:50000 --env JAVA_OPTS="-Djava.
 
 Argument you pass to docker running the jenkins image are passed to jenkins launcher, so you can run for sample :
 
-	docker run jenkins --version
+```console
+$ docker run jenkins --version
+```
 
 This will dump Jenkins version, just like when you run jenkins as an executable war.
 
@@ -116,7 +121,9 @@ ENV JENKINS_SLAVE_AGENT_PORT 50001
 
 or as a parameter to docker,
 
-	docker run --name myjenkins -p 8080:8080 -p 50001:50001 --env JENKINS_SLAVE_AGENT_PORT=50001 jenkins
+```console
+$ docker run --name myjenkins -p 8080:8080 -p 50001:50001 --env JENKINS_SLAVE_AGENT_PORT=50001 jenkins
+```
 
 # Installing more tools
 
@@ -168,7 +175,7 @@ As always - please ensure that you know how to drive docker - especially volume 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -182,7 +189,7 @@ Documentation for this image is stored in the [`jenkins/` directory](https://git
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/cloudbees/jenkins-ci.org-docker/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/cloudbees/jenkins-ci.org-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

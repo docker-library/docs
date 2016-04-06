@@ -1,11 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9.1-python2`, `1.9-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/72cb89ce2a563a495619de41b2b5bb0cb52b28dc/2.7/Dockerfile)
+-	[`1.9.5-python2`, `1.9-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/3f371374a15ae919258c6b708298622484cae6dd/2.7/Dockerfile)
 -	[`python2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/2.7/onbuild/Dockerfile)
--	[`1.9.1-python3`, `1.9.1`, `1.9-python3`, `1.9`, `1-python3`, `1`, `python3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/72cb89ce2a563a495619de41b2b5bb0cb52b28dc/3.4/Dockerfile)
+-	[`1.9.5-python3`, `1.9.5`, `1.9-python3`, `1.9`, `1-python3`, `1`, `python3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/3f371374a15ae919258c6b708298622484cae6dd/3.4/Dockerfile)
 -	[`python3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/3.4/onbuild/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/django`)](https://github.com/docker-library/official-images/blob/master/library/django). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/django:latest.svg)](https://imagelayers.io/?images=django:1.9.5-python2,django:python2-onbuild,django:1.9.5-python3,django:python3-onbuild)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/django`)](https://github.com/docker-library/official-images/blob/master/library/django). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdjango).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `django/tag-details.md` file](https://github.com/docker-library/docs/blob/master/django/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -82,7 +84,7 @@ View [license information](https://github.com/django/django/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -96,7 +98,7 @@ Documentation for this image is stored in the [`django/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/django/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/django/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

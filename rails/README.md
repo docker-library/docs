@@ -1,9 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.5`, `4.2`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/1d9e5d95eaff6030dd28be4de0b415cc415e0497/Dockerfile)
--	[`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/9fb5d2b7e0f2e7029855028e07e86ab7ec54abaa/onbuild/Dockerfile)
+-	[`4.2.6`, `4.2`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/04006011344175c10b6864193eee74d626b84b11/Dockerfile)
+-	[`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/9df9b5e6b1519faf22e1565c2caaebf7cc1c665b/onbuild/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rails`)](https://github.com/docker-library/official-images/blob/master/library/rails). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/rails:latest.svg)](https://imagelayers.io/?images=rails:4.2.6,rails:onbuild)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/rails`)](https://github.com/docker-library/official-images/blob/master/library/rails). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frails).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rails/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rails/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -83,7 +85,7 @@ View [license information](https://github.com/rails/rails#license) for the softw
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -97,7 +99,7 @@ Documentation for this image is stored in the [`rails/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/rails/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/rails/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

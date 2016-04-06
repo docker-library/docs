@@ -1,8 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.12.1`, `0.12`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/72ee51eb8543be869f38f2669581ccddbf25b329/Dockerfile)
+-	[`0.25.0`, `0.25`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/fedfc2e2ad9f862443cd2fcef8d693121e6c7951/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rocket.chat`)](https://github.com/docker-library/official-images/blob/master/library/rocket.chat). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/rocket.chat:latest.svg)](https://imagelayers.io/?images=rocket.chat:0.25.0)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/rocket.chat`)](https://github.com/docker-library/official-images/blob/master/library/rocket.chat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frocket.chat).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rocket.chat/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rocket.chat/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -18,23 +20,31 @@ It is a great solution for communities and companies wanting to privately host t
 
 First, start an instance of mongo:
 
-	docker run --name db -d mongo --smallfiles
+```console
+$ docker run --name db -d mongo --smallfiles
+```
 
 Then start Rocket.Chat linked to this mongo instance:
 
-	docker run --name rocketchat --link db -d rocket.chat
+```console
+$ docker run --name rocketchat --link db -d rocket.chat
+```
 
 This will start a Rocket.Chat instance listening on the default Meteor port of 3000 on the container.
 
 If you'd like to be able to access the instance directly at standard port on the host machine:
 
-	docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --link db -d rocket.chat
+```console
+$ docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --link db -d rocket.chat
+```
 
 Then, access it via `http://localhost` in a browser. Replace `localhost` in `ROOT_URL` with your own domain name if you are hosting at your own domain.
 
 If you're using a third party Mongo provider, or working with Kubernetes, you need to override the `MONGO_URL` environment variable:
 
-	docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --env MONGO_URL=mongodb://mymongourl/mydb -d rocket.chat
+```console
+$ docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --env MONGO_URL=mongodb://mymongourl/mydb -d rocket.chat
+```
 
 # License
 
@@ -42,7 +52,7 @@ View [license information](https://github.com/RocketChat/Rocket.Chat/blob/master
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -56,7 +66,7 @@ Documentation for this image is stored in the [`rocket.chat/` directory](https:/
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/RocketChat/Docker.Official.Image/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/RocketChat/Docker.Official.Image/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

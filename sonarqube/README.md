@@ -1,9 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.3` (*5.3/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f13192265920c40f8a50ec55f7c2af7a412c4c88/5.3/Dockerfile)
--	[`lts`, `4.5.6` (*4.5.6/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/2f7cc2f6ef7f0206b697c37df09fe2e0fd36c8f4/4.5.6/Dockerfile)
+-	[`latest`, `5.4` (*5.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/442f950dae232fca8e1e919e017270971cee46f6/5.4/Dockerfile)
+-	[`lts`, `4.5.6` (*4.5.6/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/442f950dae232fca8e1e919e017270971cee46f6/4.5.6/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:lts)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsonarqube).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `sonarqube/tag-details.md` file](https://github.com/docker-library/docs/blob/master/sonarqube/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -62,7 +64,7 @@ View [license information](http://www.gnu.org/licenses/lgpl.txt) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -76,7 +78,7 @@ Documentation for this image is stored in the [`sonarqube/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/SonarSource/docker-sonarqube/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/SonarSource/docker-sonarqube/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

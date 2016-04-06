@@ -1,13 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.22`, `9.0` (*9.0/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.0/Dockerfile)
--	[`9.1.19`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.1/Dockerfile)
--	[`9.2.14`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.2/Dockerfile)
--	[`9.3.10`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.3/Dockerfile)
--	[`9.4.5`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.4/Dockerfile)
--	[`9.5.0`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.5/Dockerfile)
+-	[`9.1.21`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/8e867c8ba0fc8fd347e43ae53ddeba8e67242a53/9.1/Dockerfile)
+-	[`9.2.16`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/8e867c8ba0fc8fd347e43ae53ddeba8e67242a53/9.2/Dockerfile)
+-	[`9.3.12`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/8e867c8ba0fc8fd347e43ae53ddeba8e67242a53/9.3/Dockerfile)
+-	[`9.4.7`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/8e867c8ba0fc8fd347e43ae53ddeba8e67242a53/9.4/Dockerfile)
+-	[`9.5.2`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/8e867c8ba0fc8fd347e43ae53ddeba8e67242a53/9.5/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/postgres:latest.svg)](https://imagelayers.io/?images=postgres:9.1.21,postgres:9.2.16,postgres:9.3.12,postgres:9.4.7,postgres:9.5.2)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostgres).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `postgres/tag-details.md` file](https://github.com/docker-library/docs/blob/master/postgres/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -64,11 +65,28 @@ This optional environment variable can be used to define another location - like
 
 ### `POSTGRES_DB`
 
-This optional environment variable can be used to define a different name for the default database that is created when the image is first started. If it is not specified, than the value of `POSTGRES_USER` will be used.
+This optional environment variable can be used to define a different name for the default database that is created when the image is first started. If it is not specified, then the value of `POSTGRES_USER` will be used.
+
+### `POSTGRES_INITDB_ARGS`
+
+This optional environment variable can be used to send arguments to `postgres initdb`. The value is a space separated string of arguments as `postgres initdb` would expect them. This is useful for adding functionality like data page checksums: `-e POSTGRES_INITDB_ARGS="--data-checksums"`.
 
 # How to extend this image
 
 If you would like to do additional initialization in an image derived from this one, add one or more `*.sql` or `*.sh` scripts under `/docker-entrypoint-initdb.d` (creating the directory if necessary). After the entrypoint calls `initdb` to create the default `postgres` user and database, it will run any `*.sql` files and source any `*.sh` scripts found in that directory to do further initialization before starting the service.
+
+For example, to add an additional user and database, add the following to `/docker-entrypoint-initdb.d/init-user-db.sh`:
+
+```bash
+#!/bin/bash
+set -e
+
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" <<-EOSQL
+	CREATE USER docker;
+	CREATE DATABASE docker;
+	GRANT ALL PRIVILEGES ON DATABASE docker TO docker;
+EOSQL
+```
 
 These initialization files will be executed in sorted name order as defined by the current locale, which defaults to `en_US.utf8`. Any `*.sql` files will be executed by `POSTGRES_USER`, which defaults to the `postgres` superuser. It is recommended that any `psql` commands that are run inside of a `*.sh` script be executed as `POSTGRES_USER` by using the `--username "$POSTGRES_USER"` flag. This user will be able to connect without a password due to the presence of `trust` authentication for Unix socket connections made inside the container.
 
@@ -88,7 +106,7 @@ If there is no database when `postgres` starts in a container, then `postgres` w
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -102,7 +120,7 @@ Documentation for this image is stored in the [`postgres/` directory](https://gi
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or through a [GitHub issue](https://github.com/docker-library/postgres/issues).
+If you have any problems with or questions about this image, please contact us on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or through a [GitHub issue](https://github.com/docker-library/postgres/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

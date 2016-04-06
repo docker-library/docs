@@ -1,8 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.25`, `1.4`, `1`, `latest` (*Dockerfile*)](https://github.com/docker-library/memcached/blob/1944b045661a2fabcf2b9677f7edaa07e04f8d8d/Dockerfile)
+-	[`1.4.25`, `1.4`, `1`, `latest` (*Dockerfile*)](https://github.com/docker-library/memcached/blob/a8c4206768821aa47579c6413be85be914875caa/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/memcached`)](https://github.com/docker-library/official-images/blob/master/library/memcached). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/memcached:latest.svg)](https://imagelayers.io/?images=memcached:1.4.25)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/memcached`)](https://github.com/docker-library/official-images/blob/master/library/memcached). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmemcached).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `memcached/tag-details.md` file](https://github.com/docker-library/docs/blob/master/memcached/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -44,7 +46,7 @@ View [license information](https://github.com/memcached/memcached/blob/master/LI
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -58,7 +60,7 @@ Documentation for this image is stored in the [`memcached/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/memcached/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/memcached/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

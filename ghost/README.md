@@ -1,8 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.7.5`, `0.7`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/6b6ffbf7830d24bd5fa144e9c835a1f2f09df3c9/Dockerfile)
+-	[`0.7.8`, `0.7`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/8c0d010d4f6c0aa91b16ad1b9dcc09ee2a287549/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/ghost:latest.svg)](https://imagelayers.io/?images=ghost:0.7.8)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fghost).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ghost/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ghost/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -44,7 +46,7 @@ $ docker run --name some-ghost --volumes-from some-ghost-data ghost
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -58,7 +60,7 @@ Documentation for this image is stored in the [`ghost/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/ghost/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/ghost/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

@@ -1,11 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.5-1-a2bacae`, `1.4.5-1`, `1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/33bd21c3d91a54456606ebc950028af554c82aa7/1.4/Dockerfile)
--	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/1005054d7dbda0a68dffd55540dabd03649d7d9e/1.5/Dockerfile)
--	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/33bd21c3d91a54456606ebc950028af554c82aa7/2.0/Dockerfile)
--	[`2.1.1-1`, `2.1.1`, `2.1`, `2`, `latest` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/1005054d7dbda0a68dffd55540dabd03649d7d9e/2.1/Dockerfile)
+-	[`1.4.5-1-a2bacae`, `1.4.5-1`, `1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/4f3a81ff0f152003653eecd60d0c4e1f05ce99f0/1.4/Dockerfile)
+-	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/4f3a81ff0f152003653eecd60d0c4e1f05ce99f0/1.5/Dockerfile)
+-	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/4f3a81ff0f152003653eecd60d0c4e1f05ce99f0/2.0/Dockerfile)
+-	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/4f3a81ff0f152003653eecd60d0c4e1f05ce99f0/2.1/Dockerfile)
+-	[`2.2.3-1`, `2.2.3`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/a4b4fccbe65bc485d20508e524133fd1058dd28e/2.2/Dockerfile)
+-	[`2.3.0-1`, `2.3.0`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/a4b4fccbe65bc485d20508e524133fd1058dd28e/2.3/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/logstash:latest.svg)](https://imagelayers.io/?images=logstash:1.4.5-1-a2bacae,logstash:1.5.6-1,logstash:2.0.0-1,logstash:2.1.3-1,logstash:2.2.3-1,logstash:2.3.0-1)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `logstash/tag-details.md` file](https://github.com/docker-library/docs/blob/master/logstash/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -41,7 +45,7 @@ View [license information](https://github.com/elastic/logstash/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -55,7 +59,7 @@ Documentation for this image is stored in the [`logstash/` directory](https://gi
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/logstash/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/logstash/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

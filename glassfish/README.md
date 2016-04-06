@@ -3,7 +3,9 @@
 -	[`4.0-jdk7`, `4.0` (*4.0-jdk7/Dockerfile*)](https://github.com/aws/aws-eb-glassfish/blob/aafcfc5e812dfb9b998105d3ca9da1b7f10664e1/4.0-jdk7/Dockerfile)
 -	[`4.1-jdk8`, `4.1`, `latest` (*4.1-jdk8/Dockerfile*)](https://github.com/aws/aws-eb-glassfish/blob/aafcfc5e812dfb9b998105d3ca9da1b7f10664e1/4.1-jdk8/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/glassfish`)](https://github.com/docker-library/official-images/blob/master/library/glassfish). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/glassfish:latest.svg)](https://imagelayers.io/?images=glassfish:4.0-jdk7,glassfish:4.1-jdk8)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/glassfish`)](https://github.com/docker-library/official-images/blob/master/library/glassfish). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fglassfish).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `glassfish/tag-details.md` file](https://github.com/docker-library/docs/blob/master/glassfish/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -17,7 +19,7 @@ GlassFish is the reference implementation of Java EE and as such supports Enterp
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -31,7 +33,7 @@ Documentation for this image is stored in the [`glassfish/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/aws/aws-eb-glassfish/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/aws/aws-eb-glassfish/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

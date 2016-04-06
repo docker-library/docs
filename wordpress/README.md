@@ -1,9 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.4.1-apache`, `4.4.1`, `4.4-apache`, `4.4`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/2877506644eec86186d32e5aac19d6737f113efa/apache/Dockerfile)
--	[`4.4.1-fpm`, `4.4-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/2877506644eec86186d32e5aac19d6737f113efa/fpm/Dockerfile)
+-	[`4.4.2-apache`, `4.4.2`, `4.4-apache`, `4.4`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/df190dc9c5752fd09317d836bd2bdcd09ee379a5/apache/Dockerfile)
+-	[`4.4.2-fpm`, `4.4-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/df190dc9c5752fd09317d836bd2bdcd09ee379a5/fpm/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/wordpress:latest.svg)](https://imagelayers.io/?images=wordpress:4.4.2-apache,wordpress:4.4.2-fpm)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `wordpress/tag-details.md` file](https://github.com/docker-library/docs/blob/master/wordpress/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -80,7 +82,7 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -94,7 +96,7 @@ Documentation for this image is stored in the [`wordpress/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/wordpress/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/wordpress/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

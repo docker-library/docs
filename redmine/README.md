@@ -1,11 +1,17 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.9`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/redmine/blob/0b1bd12df7afc21ec18dd2abfc263f28a0eded4a/2.6/Dockerfile)
--	[`2.6.9-passenger`, `2.6-passenger`, `2-passenger` (*2.6/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/5baaf21e90656d3db14574577de99a87527a1d58/2.6/passenger/Dockerfile)
--	[`3.0.7`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/0b1bd12df7afc21ec18dd2abfc263f28a0eded4a/3.0/Dockerfile)
--	[`3.0.7-passenger`, `3.0-passenger`, `3-passenger`, `passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/5baaf21e90656d3db14574577de99a87527a1d58/3.0/passenger/Dockerfile)
+-	[`2.6.10`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/redmine/blob/59319e8ad8ddd777d88b76de6bb10cc7e54d01b3/2.6/Dockerfile)
+-	[`2.6.10-passenger`, `2.6-passenger`, `2-passenger` (*2.6/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/4bc61432ba8c03b6f3044ac73947c2d425ebf662/2.6/passenger/Dockerfile)
+-	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/99752f3d9bc5ccd9f69d16e2105d287df17f5ac2/3.0/Dockerfile)
+-	[`3.0.7-passenger`, `3.0-passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/4bc61432ba8c03b6f3044ac73947c2d425ebf662/3.0/passenger/Dockerfile)
+-	[`3.1.4`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/59319e8ad8ddd777d88b76de6bb10cc7e54d01b3/3.1/Dockerfile)
+-	[`3.1.4-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/4bc61432ba8c03b6f3044ac73947c2d425ebf662/3.1/passenger/Dockerfile)
+-	[`3.2.1`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/59319e8ad8ddd777d88b76de6bb10cc7e54d01b3/3.2/Dockerfile)
+-	[`3.2.1-passenger`, `3.2-passenger`, `3-passenger`, `passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/4bc61432ba8c03b6f3044ac73947c2d425ebf662/3.2/passenger/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/redmine:latest.svg)](https://imagelayers.io/?images=redmine:2.6.10,redmine:2.6.10-passenger,redmine:3.0.7,redmine:3.0.7-passenger,redmine:3.1.4,redmine:3.1.4-passenger,redmine:3.2.1,redmine:3.2.1-passenger)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredmine).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `redmine/tag-details.md` file](https://github.com/docker-library/docs/blob/master/redmine/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -109,7 +115,7 @@ This variable is used to create an initial `config/secrets.yml` and set the `sec
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -123,7 +129,7 @@ Documentation for this image is stored in the [`redmine/` directory](https://git
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/redmine/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/redmine/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

@@ -1,9 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.52`, `0.52.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/cce8f796ba8936250eb380235cde47be494d1e95/Dockerfile)
--	[`0.51`, `0.51.7` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/5d66f67b05395e9b7b4f55c2b3d682d43c7f59d9/Dockerfile)
+-	[`latest`, `0.54`, `0.54.7` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/7bd969a518bdd8265342cb891821b338a32661a1/Dockerfile)
+-	[`0.52`, `0.52.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/cce8f796ba8936250eb380235cde47be494d1e95/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/crate:latest.svg)](https://imagelayers.io/?images=crate:latest,crate:0.52)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrate).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `crate/tag-details.md` file](https://github.com/docker-library/docs/blob/master/crate/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -13,9 +15,15 @@ Crate allows to query and compute data with SQL in real time by providing a dist
 
 [Crate](https://crate.io/)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/de809758bd3f9724caa5377695f161795f3eb8a1/crate/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/2517900006ae5f4c03c1d43235930c59f4614394/crate/logo.png)
+
+## Crate on Docker
+
+Learn more about Crate and Docker and visit our [Docker page](https://crate.io/c/docker) at [crate.io](https://crate.io). You can also contact us on [Slack](https://crate.io/docs/support/slackin/).
 
 ## How to use this image
+
+Simply run the latest Crate version in a Docker container with the following command. Crate ships with an [Admin UI](https://crate.io/docs/connect/admin_ui/) that provides an overview of your cluster, nodes, tables and much more. With the above command it is accessible via port `4200`.
 
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 crate:latest
@@ -23,11 +31,15 @@ $ docker run -d -p 4200:4200 -p 4300:4300 crate:latest
 
 ### Attach persistent data directory
 
+If you want to attach a persistent data directory, add the following parameter.
+
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 -v <data-dir>:/data crate
 ```
 
 ### Use custom Crate configuration
+
+Use the following parameter to provide your custom [Crate configuration file](https://crate.io/docs/reference/configuration.html).
 
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 crate -Des.config=/path/to/crate.yml
@@ -38,8 +50,6 @@ Any configuration settings may be specified upon startup using the `-D` option p
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 crate crate -Des.cluster.name=cluster
 ```
-
-For further configuration options please refer to the [Configuration](https://crate.io/docs/stable/configuration.html) section of the online documentation.
 
 ### Environment
 
@@ -96,7 +106,7 @@ View [license information](https://github.com/crate/crate/blob/master/LICENSE.tx
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -108,11 +118,13 @@ Please see [the Docker installation documentation](https://docs.docker.com/insta
 
 Documentation for this image is stored in the [`crate/` directory](https://github.com/docker-library/docs/tree/master/crate) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
+Visit [Crate on Docker](https://crate.io/docs/install/containers/docker/) and get further documentation about how to get started with Crate.
+
 ## Issues
 
 If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/crate/docker-crate/issues).
 
-If you have any questions or suggestions we would be very happy to help you. So, feel free to join our public room on [HipChat](https://www.hipchat.com/g7Pc2CYwi).
+If you have any questions or suggestions we would be very happy to help you. So, feel free to join our public room on [Slack](https://crate.io/docs/support/slackin/).
 
 For further information and official contact please visit [https://crate.io](https://crate.io).
 

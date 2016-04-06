@@ -1,8 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.1`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/2d1c4ef7525f751a7bb9f342f7609e298ef8dd1c/Dockerfile)
+-	[`3.7.5.1`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/86ce8288c9309d59c649d13cfe8ddf3b71adf12a/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/aerospike`)](https://github.com/docker-library/official-images/blob/master/library/aerospike). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/aerospike:latest.svg)](https://imagelayers.io/?images=aerospike:3.7.5.1)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/aerospike`)](https://github.com/docker-library/official-images/blob/master/library/aerospike). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Faerospike).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `aerospike/tag-details.md` file](https://github.com/docker-library/docs/blob/master/aerospike/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -93,7 +95,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -107,7 +109,7 @@ Documentation for this image is stored in the [`aerospike/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us on the [Aerospike Forums](https://discuss.aerospike.com) or through a [GitHub issue](https://github.com/aerospike/aerospike-server.docker/issues).
+If you have any problems with or questions about this image, please contact us on the [Aerospike Forums](https://discuss.aerospike.com) or through a [GitHub issue](https://github.com/aerospike/aerospike-server.docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

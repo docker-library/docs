@@ -1,9 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5.47`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/f4735d6bded2f34cbcac18341d7fde8fa8757b2d/5.5/Dockerfile)
--	[`5.6.28`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/f4735d6bded2f34cbcac18341d7fde8fa8757b2d/5.6/Dockerfile)
+-	[`5.5.48`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/c6fe35f7393ff0dcad2acb5be63bd36f48b21050/5.5/Dockerfile)
+-	[`5.6.29`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/c6fe35f7393ff0dcad2acb5be63bd36f48b21050/5.6/Dockerfile)
+-	[`5.7.11`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/3a950e1b2d4c707869df820e13c3fa61306d2f7a/5.7/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/percona:latest.svg)](https://imagelayers.io/?images=percona:5.5.48,percona:5.6.29,percona:5.7.11)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpercona).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `percona/tag-details.md` file](https://github.com/docker-library/docs/blob/master/percona/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -81,6 +84,20 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 $ chcon -Rt svirt_sandbox_file_t /my/custom
 ```
 
+### Configuration without a `cnf` file
+
+Many configuration options can be passed as flags to `mysqld`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to change the default encoding and collation for all tables to use UTF-8 (`utf8mb4`) just run the following:
+
+```console
+$ docker run --name some-percona -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+```
+
+If you would like to see a complete list of available options, just run:
+
+```console
+$ docker run -it --rm percona:tag --verbose --help
+```
+
 ## Environment Variables
 
 When you start the `percona` image, you can adjust the configuration of the Percona instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
@@ -143,7 +160,7 @@ If you start your `percona` container instance with a data directory that alread
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -157,7 +174,7 @@ Documentation for this image is stored in the [`percona/` directory](https://git
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/percona/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/percona/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

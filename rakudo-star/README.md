@@ -1,8 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2015.11`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/1b836bce1461a6aac6cad32d3d33c12d9187f68f/Dockerfile)
+-	[`2016.01`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/68589fca92aaad50e7beb3da100e399ad41df17e/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/rakudo-star:latest.svg)](https://imagelayers.io/?images=rakudo-star:2016.01)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frakudo-star).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rakudo-star/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rakudo-star/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -50,7 +52,7 @@ View [license information](https://github.com/rakudo/star/blob/master/LICENSE) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -64,7 +66,7 @@ Documentation for this image is stored in the [`rakudo-star/` directory](https:/
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/rakudo-star/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/rakudo-star/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

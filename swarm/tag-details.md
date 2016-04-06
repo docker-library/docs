@@ -4,16 +4,22 @@
 
 -	[`swarm:1.0.0`](#swarm100)
 -	[`swarm:1.0.1`](#swarm101)
+-	[`swarm:1.1.0`](#swarm110)
+-	[`swarm:1.1.1`](#swarm111)
+-	[`swarm:1.1.2`](#swarm112)
+-	[`swarm:1.1.3`](#swarm113)
+-	[`swarm:1.2.0-rc1`](#swarm120-rc1)
+-	[`swarm:1.2.0-rc2`](#swarm120-rc2)
 -	[`swarm:latest`](#swarmlatest)
 
 ## `swarm:1.0.0`
 
 ```console
-$ docker pull library/swarm@sha256:6a4445e8af980058ebf1a79d4f2efaea8588cb78c6656b31b821472f0cf843e0
+$ docker pull library/swarm@sha256:75c08d2deb1e75bb5cd984b2eb31983eabaf9c1d3fcb6334238fba763a1c5ad7
 ```
 
 -	Total Virtual Size: 15.6 MB (15602184 bytes)
--	Total v2 Content-Length: 4.0 MB (4046357 bytes)
+-	Total v2 Content-Length: 4.0 MB (4046355 bytes)
 
 ### Layers (8)
 
@@ -44,85 +50,85 @@ COPY file:bd5264daff0b6a6c28a120bd54d918f7b7a303870be25fdad88ea669c51a3550 in /e
 -	v2 Content-Length: 152.6 KB (152602 bytes)
 -	v2 Last-Modified: Tue, 03 Nov 2015 20:18:51 GMT
 
-#### `22cf18566d05eed122c020ecc6124778664bef26c6d4b07170c858c484ee66ca`
+#### `898b2fc9a9b3c4e1f5686c644d863233fbc2acc82a882c7063b0bfb585ecfec5`
 
 ```dockerfile
-COPY dir:7e7211c836054b584db3564b6812113fd46963441eadcd097ac581459198f137 in /tmp
+COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
 ```
 
--	Created: Tue, 03 Nov 2015 20:07:29 GMT
+-	Created: Wed, 03 Feb 2016 06:53:28 GMT
 -	Parent Layer: `42c4e5c90ee9d69c2536f672fae1dc377d25c9536b24ecee0a482c0d6860303c`
--	Docker Version: 1.8.2
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:2dfc1fa598d608e8dfe1d05491b2fbf0839317df1321e4ceb99893962781c36b`
--	v2 Content-Length: 133.0 B
--	v2 Last-Modified: Tue, 03 Nov 2015 20:18:48 GMT
+-	v2 Blob: `sha256:f805d18a5c3220056add08787d71ba90e7a54801f8b006d86d68d45528ce2d1b`
+-	v2 Content-Length: 131.0 B
+-	v2 Last-Modified: Wed, 03 Feb 2016 06:54:43 GMT
 
-#### `048068586dc549aa154590b21410e9eeb020b59b1ba9cf89462d7508fe8fd0ba`
+#### `9e775088eb7bbbaafa97e8d8c51af1f94b85ca60c6e3af8630159a54ba284b43`
 
 ```dockerfile
 ENV SWARM_HOST=:2375
 ```
 
--	Created: Tue, 03 Nov 2015 20:07:30 GMT
--	Parent Layer: `22cf18566d05eed122c020ecc6124778664bef26c6d4b07170c858c484ee66ca`
--	Docker Version: 1.8.2
+-	Created: Wed, 03 Feb 2016 06:53:29 GMT
+-	Parent Layer: `898b2fc9a9b3c4e1f5686c644d863233fbc2acc82a882c7063b0bfb585ecfec5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2ea96b3590d84d1359e9767f210dbd11465d6888c3376eae81166109f903e44b`
+#### `7b88baaa1b9767d41cec164f4860ad748d0de67218d8f00163820825ea89b071`
 
 ```dockerfile
 EXPOSE 2375/tcp
 ```
 
--	Created: Tue, 03 Nov 2015 20:07:30 GMT
--	Parent Layer: `048068586dc549aa154590b21410e9eeb020b59b1ba9cf89462d7508fe8fd0ba`
--	Docker Version: 1.8.2
+-	Created: Wed, 03 Feb 2016 06:53:29 GMT
+-	Parent Layer: `9e775088eb7bbbaafa97e8d8c51af1f94b85ca60c6e3af8630159a54ba284b43`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `12a239a7cb01a3098045aed89edd06724b5a80670f201dbc70ffaa2ff77aae01`
+#### `9c6ca2d3f9208417200ba74983d1846ce152e5f9b5881d45b97d7202ed2a984c`
 
 ```dockerfile
 VOLUME [/.swarm]
 ```
 
--	Created: Tue, 03 Nov 2015 20:07:31 GMT
--	Parent Layer: `2ea96b3590d84d1359e9767f210dbd11465d6888c3376eae81166109f903e44b`
--	Docker Version: 1.8.2
+-	Created: Wed, 03 Feb 2016 06:53:30 GMT
+-	Parent Layer: `7b88baaa1b9767d41cec164f4860ad748d0de67218d8f00163820825ea89b071`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `26b910067c5f19b5ec691e85b486cf508739ad60158d61f295c12e29d062dbaa`
+#### `70babd54b4e38a323523c733603786db0a6cd634d4d78a02b328b141177a3347`
 
 ```dockerfile
 ENTRYPOINT &{["/swarm"]}
 ```
 
--	Created: Tue, 03 Nov 2015 20:07:31 GMT
--	Parent Layer: `12a239a7cb01a3098045aed89edd06724b5a80670f201dbc70ffaa2ff77aae01`
--	Docker Version: 1.8.2
+-	Created: Wed, 03 Feb 2016 06:53:30 GMT
+-	Parent Layer: `9c6ca2d3f9208417200ba74983d1846ce152e5f9b5881d45b97d7202ed2a984c`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e12f8c5e4c3be1726390e991e8b203df7cdbf4bb61fb307c9d48023e366eebb6`
+#### `0d2b862213c857ae8e163e282c9084ff5c9016108d07adb27ab27abe15399e79`
 
 ```dockerfile
 CMD ["--help"]
 ```
 
--	Created: Tue, 03 Nov 2015 20:07:32 GMT
--	Parent Layer: `26b910067c5f19b5ec691e85b486cf508739ad60158d61f295c12e29d062dbaa`
--	Docker Version: 1.8.2
+-	Created: Wed, 03 Feb 2016 06:53:31 GMT
+-	Parent Layer: `70babd54b4e38a323523c733603786db0a6cd634d4d78a02b328b141177a3347`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -131,11 +137,11 @@ CMD ["--help"]
 ## `swarm:1.0.1`
 
 ```console
-$ docker pull library/swarm@sha256:81043dbfa61770d2cffd6e91ed10463b0679d77f37fca7a1e2a763d9135d85c6
+$ docker pull library/swarm@sha256:a248a07ef7d9efc4dce173b59f0dc308ed65a926f3e3584f9887aa6b25fbe499
 ```
 
 -	Total Virtual Size: 17.1 MB (17146714 bytes)
--	Total v2 Content-Length: 4.4 MB (4373441 bytes)
+-	Total v2 Content-Length: 4.4 MB (4373440 bytes)
 
 ### Layers (8)
 
@@ -166,85 +172,817 @@ COPY file:bd5264daff0b6a6c28a120bd54d918f7b7a303870be25fdad88ea669c51a3550 in /e
 -	v2 Content-Length: 152.6 KB (152601 bytes)
 -	v2 Last-Modified: Thu, 10 Dec 2015 01:03:57 GMT
 
-#### `2cdc13bce47da6bedfafeb302ab415085f7fcc02de32ca4eff1a2d3b84f94ee5`
+#### `8d00f520df22adc4abfc4f5785f0de5699db1986a2917251703c8bdc84d856ea`
 
 ```dockerfile
-COPY dir:7e7211c836054b584db3564b6812113fd46963441eadcd097ac581459198f137 in /tmp
+COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
 ```
 
--	Created: Thu, 10 Dec 2015 01:02:59 GMT
+-	Created: Wed, 03 Feb 2016 06:53:39 GMT
 -	Parent Layer: `d820e8bd65b2291deb0a36d7975c56b1c57bfa931cf48a0a78893f6c9eced1ce`
--	Docker Version: 1.8.3
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:d801e2fbe79669f9b1daf8c68add2dcfabd59f07146ca57d5f69fd5acd686a0a`
--	v2 Content-Length: 133.0 B
--	v2 Last-Modified: Thu, 10 Dec 2015 01:03:53 GMT
+-	v2 Blob: `sha256:fa34e1c94103c5e9b9c4d9685b23a3df772400387a304b6fb39846e8c4a294ba`
+-	v2 Content-Length: 132.0 B
+-	v2 Last-Modified: Wed, 03 Feb 2016 06:55:02 GMT
 
-#### `9ffeeb93a95b3d7464c8afc73f7d809eeb9c1fd95a17bed88098e56b425db796`
+#### `e006ebc1de3ae57fe9c76510685b0e42f9e4e248aaec3af7e0376099b232ff5c`
 
 ```dockerfile
 ENV SWARM_HOST=:2375
 ```
 
--	Created: Thu, 10 Dec 2015 01:02:59 GMT
--	Parent Layer: `2cdc13bce47da6bedfafeb302ab415085f7fcc02de32ca4eff1a2d3b84f94ee5`
--	Docker Version: 1.8.3
+-	Created: Wed, 03 Feb 2016 06:53:40 GMT
+-	Parent Layer: `8d00f520df22adc4abfc4f5785f0de5699db1986a2917251703c8bdc84d856ea`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fe877fe8bc0b8383f5c1d136c8553bfe396bf583b3f3d3939753b8ccd78e1bc0`
+#### `7390274120a74bb43753523bf33979284cf4d5d3db576fcab71041ad78c75bc3`
 
 ```dockerfile
 EXPOSE 2375/tcp
 ```
 
--	Created: Thu, 10 Dec 2015 01:03:00 GMT
--	Parent Layer: `9ffeeb93a95b3d7464c8afc73f7d809eeb9c1fd95a17bed88098e56b425db796`
--	Docker Version: 1.8.3
+-	Created: Wed, 03 Feb 2016 06:53:40 GMT
+-	Parent Layer: `e006ebc1de3ae57fe9c76510685b0e42f9e4e248aaec3af7e0376099b232ff5c`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `79509bf8b8cd16420d2d3810bf8323d068d290eb0d8eb6706cd846c05927675e`
+#### `0036abe904ed2b4f640033e0d5618c266148a1604d57f416e1573dd3e2863ae0`
 
 ```dockerfile
 VOLUME [/.swarm]
 ```
 
--	Created: Thu, 10 Dec 2015 01:03:00 GMT
--	Parent Layer: `fe877fe8bc0b8383f5c1d136c8553bfe396bf583b3f3d3939753b8ccd78e1bc0`
--	Docker Version: 1.8.3
+-	Created: Wed, 03 Feb 2016 06:53:41 GMT
+-	Parent Layer: `7390274120a74bb43753523bf33979284cf4d5d3db576fcab71041ad78c75bc3`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `22218d75fdd7dfba85feb60f8165eecb5ba13b9364b07ec2b8cd76e887bd6d78`
+#### `bd420ed092aa62b6f9bd5e866f3b3d542170de3dc34b3f114a31c5214ab2e7ea`
 
 ```dockerfile
 ENTRYPOINT &{["/swarm"]}
 ```
 
--	Created: Thu, 10 Dec 2015 01:03:01 GMT
--	Parent Layer: `79509bf8b8cd16420d2d3810bf8323d068d290eb0d8eb6706cd846c05927675e`
--	Docker Version: 1.8.3
+-	Created: Wed, 03 Feb 2016 06:53:41 GMT
+-	Parent Layer: `0036abe904ed2b4f640033e0d5618c266148a1604d57f416e1573dd3e2863ae0`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e9ff33e7e5b9a683ab735bbe99450c50bd0b64c4e414d12c94ff93b345d3bb18`
+#### `8db3c7d272677746d1514ad63000068226a45602a4801b2e7345154af9462118`
 
 ```dockerfile
 CMD ["--help"]
 ```
 
--	Created: Thu, 10 Dec 2015 01:03:01 GMT
--	Parent Layer: `22218d75fdd7dfba85feb60f8165eecb5ba13b9364b07ec2b8cd76e887bd6d78`
--	Docker Version: 1.8.3
+-	Created: Wed, 03 Feb 2016 06:53:42 GMT
+-	Parent Layer: `bd420ed092aa62b6f9bd5e866f3b3d542170de3dc34b3f114a31c5214ab2e7ea`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `swarm:1.1.0`
+
+```console
+$ docker pull library/swarm@sha256:95b80d703e3911ee89ef9a8485f146311b9dccdafd9346bb56cdf8f7dfe2d5d5
+```
+
+-	Total Virtual Size: 18.1 MB (18107467 bytes)
+-	Total v2 Content-Length: 4.6 MB (4570604 bytes)
+
+### Layers (8)
+
+#### `7d3b6d9c4de81bd0f8a9091a3bc00f6bb8bd926a5ac4595b731bad5695d1c55c`
+
+```dockerfile
+COPY file:299691791ba677406e2174b5ddda52d593682864e36c8082506805859a8d36b2 in /swarm
+```
+
+-	Created: Thu, 04 Feb 2016 20:19:45 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 17.8 MB (17830273 bytes)
+-	v2 Blob: `sha256:844fab328d6aa344a6f841631ee67ca73bdf70614cca51448e6361a36afb31cc`
+-	v2 Content-Length: 4.4 MB (4414885 bytes)
+-	v2 Last-Modified: Thu, 04 Feb 2016 20:20:35 GMT
+
+#### `f0836b079be7792a13501460a58ca36e73e7d7187c8ecc4ed821535b24775073`
+
+```dockerfile
+COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
+```
+
+-	Created: Thu, 04 Feb 2016 20:19:46 GMT
+-	Parent Layer: `7d3b6d9c4de81bd0f8a9091a3bc00f6bb8bd926a5ac4595b731bad5695d1c55c`
+-	Docker Version: 1.9.1
+-	Virtual Size: 277.2 KB (277194 bytes)
+-	v2 Blob: `sha256:d5394175923291f3dc27a558885ee94abad5ba3cd83d4e3de1b923671f911d53`
+-	v2 Content-Length: 155.4 KB (155428 bytes)
+-	v2 Last-Modified: Thu, 04 Feb 2016 20:20:30 GMT
+
+#### `666654e7f0af731e5d00adbfd1a7ecd992421e32ad1f6dd1457b706be4ce79ac`
+
+```dockerfile
+COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
+```
+
+-	Created: Thu, 04 Feb 2016 20:19:46 GMT
+-	Parent Layer: `f0836b079be7792a13501460a58ca36e73e7d7187c8ecc4ed821535b24775073`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:3445c6fe19bed2225963590692fac374e9c174329f96f0cb7fe374f714c546d8`
+-	v2 Content-Length: 131.0 B
+-	v2 Last-Modified: Thu, 04 Feb 2016 20:20:27 GMT
+
+#### `6c967ea8ac5140f0be11cdd07a24fd4d9c0d40447992c3f3e238517790684d9e`
+
+```dockerfile
+ENV SWARM_HOST=:2375
+```
+
+-	Created: Thu, 04 Feb 2016 20:19:46 GMT
+-	Parent Layer: `666654e7f0af731e5d00adbfd1a7ecd992421e32ad1f6dd1457b706be4ce79ac`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `d8a02c9628390b4568acc215fc9e6074a72e9eeb4006f8c39d70265f96753db6`
+
+```dockerfile
+EXPOSE 2375/tcp
+```
+
+-	Created: Thu, 04 Feb 2016 20:19:47 GMT
+-	Parent Layer: `6c967ea8ac5140f0be11cdd07a24fd4d9c0d40447992c3f3e238517790684d9e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a1c9b3525d62b866d2fe87f970a6e38b762cf5cbc7b5c323c1a5092f7c9721bd`
+
+```dockerfile
+VOLUME [/.swarm]
+```
+
+-	Created: Thu, 04 Feb 2016 20:19:47 GMT
+-	Parent Layer: `d8a02c9628390b4568acc215fc9e6074a72e9eeb4006f8c39d70265f96753db6`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `5561980f7b6eb63dd28bf75c37bb6c8ef2bc221ec80875b0bc340885ad53cd79`
+
+```dockerfile
+ENTRYPOINT &{["/swarm"]}
+```
+
+-	Created: Thu, 04 Feb 2016 20:19:48 GMT
+-	Parent Layer: `a1c9b3525d62b866d2fe87f970a6e38b762cf5cbc7b5c323c1a5092f7c9721bd`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `0b41d5b61cbd2327d7a55e4472294191c2b83c2898bd3dda51ea18db0ac92f86`
+
+```dockerfile
+CMD ["--help"]
+```
+
+-	Created: Thu, 04 Feb 2016 20:19:48 GMT
+-	Parent Layer: `5561980f7b6eb63dd28bf75c37bb6c8ef2bc221ec80875b0bc340885ad53cd79`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `swarm:1.1.1`
+
+```console
+$ docker pull library/swarm@sha256:c02d86ac0c94ced87debff67c3fcd528c989c9c3b12f2a5cf36148aeddaa1674
+```
+
+-	Total Virtual Size: 18.1 MB (18111411 bytes)
+-	Total v2 Content-Length: 4.6 MB (4571694 bytes)
+
+### Layers (8)
+
+#### `509de24dbbff422335545e38eb60861ce98bbafe2ff6b17fb90e70cda0e0760b`
+
+```dockerfile
+COPY file:c5da989df6ce4b8f6b770e13ab0e4aaf188fbdd11e4e0f08a52e3c202368ae1a in /swarm
+```
+
+-	Created: Wed, 17 Feb 2016 22:58:03 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 17.8 MB (17834217 bytes)
+-	v2 Blob: `sha256:d103637c81bc9d03e9cb362bbf5b315e1b653c334e9c2fa8f64f1548d3daed3f`
+-	v2 Content-Length: 4.4 MB (4415977 bytes)
+-	v2 Last-Modified: Wed, 17 Feb 2016 22:59:35 GMT
+
+#### `9f528be2821f3f415e4e771cba4908654940ada1e9e1a484389884cf85aa5391`
+
+```dockerfile
+COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
+```
+
+-	Created: Wed, 17 Feb 2016 22:58:04 GMT
+-	Parent Layer: `509de24dbbff422335545e38eb60861ce98bbafe2ff6b17fb90e70cda0e0760b`
+-	Docker Version: 1.9.1
+-	Virtual Size: 277.2 KB (277194 bytes)
+-	v2 Blob: `sha256:83682bbd6437ae7b84045d1014adfdd0f68c7b4952890fa2afce5944e7fafc42`
+-	v2 Content-Length: 155.4 KB (155426 bytes)
+-	v2 Last-Modified: Wed, 17 Feb 2016 22:59:29 GMT
+
+#### `f6151bfe906c3ee9b201531d75b819d5425b7911e72d507dee5e0e511507a8e3`
+
+```dockerfile
+COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
+```
+
+-	Created: Wed, 17 Feb 2016 22:58:05 GMT
+-	Parent Layer: `9f528be2821f3f415e4e771cba4908654940ada1e9e1a484389884cf85aa5391`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:d86e0d80f5ab7c68d533e755f06e310fa467556d966aa115b8332d060cce3c70`
+-	v2 Content-Length: 131.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 22:59:25 GMT
+
+#### `bd5af42b7f1eef9a8a41dc4f83af00492b2be82cc16f467ac8746f2ab6ba4b01`
+
+```dockerfile
+ENV SWARM_HOST=:2375
+```
+
+-	Created: Wed, 17 Feb 2016 22:58:06 GMT
+-	Parent Layer: `f6151bfe906c3ee9b201531d75b819d5425b7911e72d507dee5e0e511507a8e3`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `dff27a961642f3f08325d5bfceb92a2f8b73716c87bd5cc72a1cb778676efc4d`
+
+```dockerfile
+EXPOSE 2375/tcp
+```
+
+-	Created: Wed, 17 Feb 2016 22:58:06 GMT
+-	Parent Layer: `bd5af42b7f1eef9a8a41dc4f83af00492b2be82cc16f467ac8746f2ab6ba4b01`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `2ffd3cd61e916be70d0b8b1a57b43bfa667fd8cc68e7ce6c54733d136c79c456`
+
+```dockerfile
+VOLUME [/.swarm]
+```
+
+-	Created: Wed, 17 Feb 2016 22:58:07 GMT
+-	Parent Layer: `dff27a961642f3f08325d5bfceb92a2f8b73716c87bd5cc72a1cb778676efc4d`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `d363e1dcfbeb7cfdcadab00935c8204b1a96c55c2c28b4f67bd13877c2cafceb`
+
+```dockerfile
+ENTRYPOINT &{["/swarm"]}
+```
+
+-	Created: Wed, 17 Feb 2016 22:58:08 GMT
+-	Parent Layer: `2ffd3cd61e916be70d0b8b1a57b43bfa667fd8cc68e7ce6c54733d136c79c456`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a9733e1e5f7ab3f1b0b91d3dd7c58b900e8f202af21d265c393c9aa177056fe3`
+
+```dockerfile
+CMD ["--help"]
+```
+
+-	Created: Wed, 17 Feb 2016 22:58:09 GMT
+-	Parent Layer: `d363e1dcfbeb7cfdcadab00935c8204b1a96c55c2c28b4f67bd13877c2cafceb`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `swarm:1.1.2`
+
+```console
+$ docker pull library/swarm@sha256:85ef76ba6909b13093960b44d81b946c420b88a2b92b0be61c0e6d1d16037407
+```
+
+-	Total Virtual Size: 18.1 MB (18107315 bytes)
+-	Total v2 Content-Length: 4.6 MB (4571460 bytes)
+
+### Layers (8)
+
+#### `0f1af5de79223c88decf10a0ce635a05688ca9dfbc034a62240d0096ce21219b`
+
+```dockerfile
+COPY file:513b8c9f56b4041a6416ffddee013606620874958309f261c84d3453dde1a661 in /swarm
+```
+
+-	Created: Thu, 18 Feb 2016 19:39:50 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 17.8 MB (17830121 bytes)
+-	v2 Blob: `sha256:01987f9f15e92534758a058e9a866902e8480e09651130d8bf3c0cca79652cfa`
+-	v2 Content-Length: 4.4 MB (4415743 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 19:40:47 GMT
+
+#### `c8115d2d26515c96e262ce5dbac0f87794b7ca7a5aaefc60d02036e624ea4858`
+
+```dockerfile
+COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
+```
+
+-	Created: Thu, 18 Feb 2016 19:39:51 GMT
+-	Parent Layer: `0f1af5de79223c88decf10a0ce635a05688ca9dfbc034a62240d0096ce21219b`
+-	Docker Version: 1.9.1
+-	Virtual Size: 277.2 KB (277194 bytes)
+-	v2 Blob: `sha256:d62cc2befb1b210c82806e8b1be2f6262655db392643c66a4350977226336fea`
+-	v2 Content-Length: 155.4 KB (155426 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 19:40:43 GMT
+
+#### `cc0eda4471590de4caf2a85d5526c13c1e7c7130f0bee9243bcddc46bce39c15`
+
+```dockerfile
+COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
+```
+
+-	Created: Thu, 18 Feb 2016 19:39:52 GMT
+-	Parent Layer: `c8115d2d26515c96e262ce5dbac0f87794b7ca7a5aaefc60d02036e624ea4858`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:418fe09e10134a128adcdc798250e8726a4a95b866c765eb7655ae835568e0c2`
+-	v2 Content-Length: 131.0 B
+-	v2 Last-Modified: Thu, 18 Feb 2016 19:40:40 GMT
+
+#### `3d756a8cfd0f88f975b3f9266986e5b0b2ac8844a7f0782d515618b114f7afe7`
+
+```dockerfile
+ENV SWARM_HOST=:2375
+```
+
+-	Created: Thu, 18 Feb 2016 19:39:52 GMT
+-	Parent Layer: `cc0eda4471590de4caf2a85d5526c13c1e7c7130f0bee9243bcddc46bce39c15`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `b8f1ea892ca91665b16828438a7f42328224dc835df36aa15a7c993c39ae70ee`
+
+```dockerfile
+EXPOSE 2375/tcp
+```
+
+-	Created: Thu, 18 Feb 2016 19:39:53 GMT
+-	Parent Layer: `3d756a8cfd0f88f975b3f9266986e5b0b2ac8844a7f0782d515618b114f7afe7`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `af16a2f3b533f174438046e2a91149a189822766aab880f7f6ca5e14470e43e8`
+
+```dockerfile
+VOLUME [/.swarm]
+```
+
+-	Created: Thu, 18 Feb 2016 19:39:53 GMT
+-	Parent Layer: `b8f1ea892ca91665b16828438a7f42328224dc835df36aa15a7c993c39ae70ee`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `5b00d6d257b0be4975354b95bffc8d48165f305333145701a3581ae0d33d8d9b`
+
+```dockerfile
+ENTRYPOINT &{["/swarm"]}
+```
+
+-	Created: Thu, 18 Feb 2016 19:39:54 GMT
+-	Parent Layer: `af16a2f3b533f174438046e2a91149a189822766aab880f7f6ca5e14470e43e8`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `f7dab1f3a199a9dcdd63353740ad5361ae5c2df9c67b14934bd641d145e1ec94`
+
+```dockerfile
+CMD ["--help"]
+```
+
+-	Created: Thu, 18 Feb 2016 19:39:54 GMT
+-	Parent Layer: `5b00d6d257b0be4975354b95bffc8d48165f305333145701a3581ae0d33d8d9b`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `swarm:1.1.3`
+
+```console
+$ docker pull library/swarm@sha256:473a98867f512c26e1a84741c15f2a4ffcb3021677f26cafeded5f05a9911435
+```
+
+-	Total Virtual Size: 18.1 MB (18106629 bytes)
+-	Total v2 Content-Length: 4.6 MB (4571489 bytes)
+
+### Layers (8)
+
+#### `6b020a24be130b35e7c563c909fca4b7805dac683c11f3bad0bb5ec1cb910f64`
+
+```dockerfile
+COPY file:88569a8af1b496ce71a8daa8a57960d121394015bd0b08f53a7fefb9d865b9e7 in /swarm
+```
+
+-	Created: Wed, 02 Mar 2016 05:23:01 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 17.8 MB (17829435 bytes)
+-	v2 Blob: `sha256:25da0aa87182c330388cd9a62c27afa20f81548c3d62b33547eedb592879013c`
+-	v2 Content-Length: 4.4 MB (4415771 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:24 GMT
+
+#### `4ae5ea69ee5916c84bd972281c53ee8ee73c00e19a98be12e3e719cb23babece`
+
+```dockerfile
+COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
+```
+
+-	Created: Wed, 02 Mar 2016 05:23:01 GMT
+-	Parent Layer: `6b020a24be130b35e7c563c909fca4b7805dac683c11f3bad0bb5ec1cb910f64`
+-	Docker Version: 1.9.1
+-	Virtual Size: 277.2 KB (277194 bytes)
+-	v2 Blob: `sha256:45707a9f4c2b1fb69479713ddd7acf60deb3a3d2ac3f4a2de181279de9b8a26a`
+-	v2 Content-Length: 155.4 KB (155426 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:18 GMT
+
+#### `da44cf7b75e214514e48982a5000a60c78f06aa8048758ca476767c94ee17314`
+
+```dockerfile
+COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
+```
+
+-	Created: Wed, 02 Mar 2016 05:23:02 GMT
+-	Parent Layer: `4ae5ea69ee5916c84bd972281c53ee8ee73c00e19a98be12e3e719cb23babece`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:7f0c09406c8fea79ee44417995b5f9cfb51ae7677a91b30dd075083cb4992e1b`
+-	v2 Content-Length: 132.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:14 GMT
+
+#### `26846c542e9da730c1f13ec4d02c08e948dde7eb1411f47b6c1a95f9370f14ee`
+
+```dockerfile
+ENV SWARM_HOST=:2375
+```
+
+-	Created: Wed, 02 Mar 2016 05:23:03 GMT
+-	Parent Layer: `da44cf7b75e214514e48982a5000a60c78f06aa8048758ca476767c94ee17314`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `dc1bc88e29baaa86c40cdad75db35f011994f94bbeaf8bc2eb56cfbf25510e99`
+
+```dockerfile
+EXPOSE 2375/tcp
+```
+
+-	Created: Wed, 02 Mar 2016 05:23:04 GMT
+-	Parent Layer: `26846c542e9da730c1f13ec4d02c08e948dde7eb1411f47b6c1a95f9370f14ee`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `9e2fe1a1bcded93c7eec795a8162f56bc4516acf14f307e118f55616a48ace2c`
+
+```dockerfile
+VOLUME [/.swarm]
+```
+
+-	Created: Wed, 02 Mar 2016 05:23:04 GMT
+-	Parent Layer: `dc1bc88e29baaa86c40cdad75db35f011994f94bbeaf8bc2eb56cfbf25510e99`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `e4ec6045d936f03bfdf9abf9dc5179e42b94102f395dc6f277704318d5de3e1d`
+
+```dockerfile
+ENTRYPOINT &{["/swarm"]}
+```
+
+-	Created: Wed, 02 Mar 2016 05:23:05 GMT
+-	Parent Layer: `9e2fe1a1bcded93c7eec795a8162f56bc4516acf14f307e118f55616a48ace2c`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `fd056ae2da2415a6bdfd92d1f221f27fa40dc763f22c742bf02d3d2b7624da26`
+
+```dockerfile
+CMD ["--help"]
+```
+
+-	Created: Wed, 02 Mar 2016 05:23:06 GMT
+-	Parent Layer: `e4ec6045d936f03bfdf9abf9dc5179e42b94102f395dc6f277704318d5de3e1d`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `swarm:1.2.0-rc1`
+
+```console
+$ docker pull library/swarm@sha256:2438b7fb7d7e53fe2251587da61ae5009b0a963ec9000c16311a71b2cfd45dcd
+```
+
+-	Total Virtual Size: 18.7 MB (18679663 bytes)
+-	Total v2 Content-Length: 4.7 MB (4712450 bytes)
+
+### Layers (8)
+
+#### `b1c4c3827a06552d57a502d620183d869f76aa65dceb996758083058190c5ed2`
+
+```dockerfile
+COPY file:7d222b2bc8d545c08529f51d9755e28714cdd02c5ba7a7051d0f8042880ce226 in /swarm
+```
+
+-	Created: Wed, 23 Mar 2016 20:00:10 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 18.4 MB (18402469 bytes)
+-	v2 Blob: `sha256:0b8ef2c3d3b7cb73e2ef38506cba3de924a0a664a1dda827eb14fa4d0162a48c`
+-	v2 Content-Length: 4.6 MB (4556731 bytes)
+-	v2 Last-Modified: Wed, 23 Mar 2016 20:01:18 GMT
+
+#### `f12835adc2b20f912452f5a10cbb4dffb62a4c045d75cb5a0a22c70ea9ec2de3`
+
+```dockerfile
+COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
+```
+
+-	Created: Wed, 23 Mar 2016 20:00:10 GMT
+-	Parent Layer: `b1c4c3827a06552d57a502d620183d869f76aa65dceb996758083058190c5ed2`
+-	Docker Version: 1.9.1
+-	Virtual Size: 277.2 KB (277194 bytes)
+-	v2 Blob: `sha256:4616e29e2476b75e0d0a27a2791cd84cb27d2c878b4136441cdb449fd18354fe`
+-	v2 Content-Length: 155.4 KB (155427 bytes)
+-	v2 Last-Modified: Wed, 23 Mar 2016 20:01:14 GMT
+
+#### `118c5ad836daa1245cee2c195b9d912661072487890aca03bc28cc975edd2403`
+
+```dockerfile
+COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
+```
+
+-	Created: Wed, 23 Mar 2016 20:00:11 GMT
+-	Parent Layer: `f12835adc2b20f912452f5a10cbb4dffb62a4c045d75cb5a0a22c70ea9ec2de3`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:3062dce943fbeadb8495d7c0a00372b3c49bcfe1dd7283d512b6e590661e93e0`
+-	v2 Content-Length: 132.0 B
+-	v2 Last-Modified: Wed, 23 Mar 2016 20:01:08 GMT
+
+#### `8b9d1ce98777508711489fa73225427327c9fc65bb2035b6131ef7e94218d6e5`
+
+```dockerfile
+ENV SWARM_HOST=:2375
+```
+
+-	Created: Wed, 23 Mar 2016 20:00:11 GMT
+-	Parent Layer: `118c5ad836daa1245cee2c195b9d912661072487890aca03bc28cc975edd2403`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `36b42cc1f097a2242c79857968fd7e74efa43c4af1b1b0b159fe02b922b3c067`
+
+```dockerfile
+EXPOSE 2375/tcp
+```
+
+-	Created: Wed, 23 Mar 2016 20:00:12 GMT
+-	Parent Layer: `8b9d1ce98777508711489fa73225427327c9fc65bb2035b6131ef7e94218d6e5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a20b380fd802fbca93a483840fefbc2c95da2378ade7be80016a95ef6a2d9ae8`
+
+```dockerfile
+VOLUME [/.swarm]
+```
+
+-	Created: Wed, 23 Mar 2016 20:00:12 GMT
+-	Parent Layer: `36b42cc1f097a2242c79857968fd7e74efa43c4af1b1b0b159fe02b922b3c067`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `de42b99c41df0dc870fb2489937797d14196220a289d936a70fc99e7c4cedd63`
+
+```dockerfile
+ENTRYPOINT &{["/swarm"]}
+```
+
+-	Created: Wed, 23 Mar 2016 20:00:13 GMT
+-	Parent Layer: `a20b380fd802fbca93a483840fefbc2c95da2378ade7be80016a95ef6a2d9ae8`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `e5e19dd3d46852c70630a8533f252572900aa591422be5ae8caaeb3e03cdae41`
+
+```dockerfile
+CMD ["--help"]
+```
+
+-	Created: Wed, 23 Mar 2016 20:00:13 GMT
+-	Parent Layer: `de42b99c41df0dc870fb2489937797d14196220a289d936a70fc99e7c4cedd63`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `swarm:1.2.0-rc2`
+
+```console
+$ docker pull library/swarm@sha256:7b986b810ced984ec2e2e019b2696bbd39af90289d96e24b29bd0e73b90f6734
+```
+
+-	Total Virtual Size: 18.7 MB (18691805 bytes)
+-	Total v2 Content-Length: 4.7 MB (4712881 bytes)
+
+### Layers (8)
+
+#### `807001c54257a3d3375bb6e1b4b22e7f13074c895fb152951265261af8b8373c`
+
+```dockerfile
+COPY file:c98459c8cd20aa16f01915d5941a50fc22542917f68a878d7d8649bf6c075ce3 in /swarm
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:28 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 18.4 MB (18414611 bytes)
+-	v2 Blob: `sha256:523da679b3150af5c01a2e2ea0a27e62e488954692bfd0f2e45f2e8b76684ae6`
+-	v2 Content-Length: 4.6 MB (4557163 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 16:35:37 GMT
+
+#### `2d74f344c04bfbf4110c1479ceeb03177360b14e37c4eae510d4076e403186f3`
+
+```dockerfile
+COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:29 GMT
+-	Parent Layer: `807001c54257a3d3375bb6e1b4b22e7f13074c895fb152951265261af8b8373c`
+-	Docker Version: 1.9.1
+-	Virtual Size: 277.2 KB (277194 bytes)
+-	v2 Blob: `sha256:af2c75fe763b41d598316926b00d85ebfeb8a48d370e1518a2b4b06afe00f72c`
+-	v2 Content-Length: 155.4 KB (155426 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 16:35:33 GMT
+
+#### `11530fa2ab2e8d2ef18c63ba7586206d0a339f514ad6348ad4cbb5f1051fefac`
+
+```dockerfile
+COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:30 GMT
+-	Parent Layer: `2d74f344c04bfbf4110c1479ceeb03177360b14e37c4eae510d4076e403186f3`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:9089ed8ea8f9b226ed919c5c84fc3327d32fa83bcaba0832f01f1b981b9c0c44`
+-	v2 Content-Length: 132.0 B
+-	v2 Last-Modified: Mon, 04 Apr 2016 16:35:30 GMT
+
+#### `f4fcce07f5ec7570e0ea625d28387e3b94cd4d17b4ec508b18a8540a38df1c0c`
+
+```dockerfile
+ENV SWARM_HOST=:2375
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:30 GMT
+-	Parent Layer: `11530fa2ab2e8d2ef18c63ba7586206d0a339f514ad6348ad4cbb5f1051fefac`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a3a3c1b5e5fe09d721c6af948f8280eee68b0a744bb9c0d968584a17bdac3451`
+
+```dockerfile
+EXPOSE 2375/tcp
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:31 GMT
+-	Parent Layer: `f4fcce07f5ec7570e0ea625d28387e3b94cd4d17b4ec508b18a8540a38df1c0c`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `2dddeee97259e70df20387b41cc0a842a1df35278fae4f030a5367e887a1180d`
+
+```dockerfile
+VOLUME [/.swarm]
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:31 GMT
+-	Parent Layer: `a3a3c1b5e5fe09d721c6af948f8280eee68b0a744bb9c0d968584a17bdac3451`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `32d5e252b73def54f8dc78070270ce5e37babfdf78d2d56fd7b41cf6fce6d43d`
+
+```dockerfile
+ENTRYPOINT &{["/swarm"]}
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:32 GMT
+-	Parent Layer: `2dddeee97259e70df20387b41cc0a842a1df35278fae4f030a5367e887a1180d`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `553f502e9264a22d11cd9d93f2a23f4214f7b18a7a59d7905b0d08e788f9b0f7`
+
+```dockerfile
+CMD ["--help"]
+```
+
+-	Created: Mon, 04 Apr 2016 16:34:32 GMT
+-	Parent Layer: `32d5e252b73def54f8dc78070270ce5e37babfdf78d2d56fd7b41cf6fce6d43d`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -253,120 +991,120 @@ CMD ["--help"]
 ## `swarm:latest`
 
 ```console
-$ docker pull library/swarm@sha256:c21fd414b0488637b1f05f13a59b032a3f9da5d818d31da1a4ca98a84c0c781b
+$ docker pull library/swarm@sha256:5f2b4066b2f7e97a326a8bfcfa623be26ce45c26ffa18ea63f01de045d2238f3
 ```
 
--	Total Virtual Size: 17.1 MB (17146714 bytes)
--	Total v2 Content-Length: 4.4 MB (4373441 bytes)
+-	Total Virtual Size: 18.1 MB (18106629 bytes)
+-	Total v2 Content-Length: 4.6 MB (4571489 bytes)
 
 ### Layers (8)
 
-#### `ff560331264c373ab5c1e156b0d3d088ccccc5e3d6ed07187e27c570eb5df50e`
+#### `6b020a24be130b35e7c563c909fca4b7805dac683c11f3bad0bb5ec1cb910f64`
 
 ```dockerfile
-COPY file:f3942a5ce09256ce246b663eef6c56813d9a20cb7aeeff997f819f203c9e86bb in /swarm
+COPY file:88569a8af1b496ce71a8daa8a57960d121394015bd0b08f53a7fefb9d865b9e7 in /swarm
 ```
 
--	Created: Thu, 10 Dec 2015 01:02:58 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 16.9 MB (16872924 bytes)
--	v2 Blob: `sha256:b1a301e5400c2a26464bef9342494ff03b260dd6370055a94d8870ec6980f367`
--	v2 Content-Length: 4.2 MB (4220547 bytes)
--	v2 Last-Modified: Thu, 10 Dec 2015 01:04:03 GMT
+-	Created: Wed, 02 Mar 2016 05:23:01 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 17.8 MB (17829435 bytes)
+-	v2 Blob: `sha256:25da0aa87182c330388cd9a62c27afa20f81548c3d62b33547eedb592879013c`
+-	v2 Content-Length: 4.4 MB (4415771 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:24 GMT
 
-#### `d820e8bd65b2291deb0a36d7975c56b1c57bfa931cf48a0a78893f6c9eced1ce`
+#### `4ae5ea69ee5916c84bd972281c53ee8ee73c00e19a98be12e3e719cb23babece`
 
 ```dockerfile
-COPY file:bd5264daff0b6a6c28a120bd54d918f7b7a303870be25fdad88ea669c51a3550 in /etc/ssl/certs/ca-certificates.crt
+COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
 ```
 
--	Created: Thu, 10 Dec 2015 01:02:58 GMT
--	Parent Layer: `ff560331264c373ab5c1e156b0d3d088ccccc5e3d6ed07187e27c570eb5df50e`
--	Docker Version: 1.8.3
--	Virtual Size: 273.8 KB (273790 bytes)
--	v2 Blob: `sha256:c152b6e6082a443ca9d2263eb5d9339c786a3a083b9fbdd2c0be2c3993b235c4`
--	v2 Content-Length: 152.6 KB (152601 bytes)
--	v2 Last-Modified: Thu, 10 Dec 2015 01:03:57 GMT
+-	Created: Wed, 02 Mar 2016 05:23:01 GMT
+-	Parent Layer: `6b020a24be130b35e7c563c909fca4b7805dac683c11f3bad0bb5ec1cb910f64`
+-	Docker Version: 1.9.1
+-	Virtual Size: 277.2 KB (277194 bytes)
+-	v2 Blob: `sha256:45707a9f4c2b1fb69479713ddd7acf60deb3a3d2ac3f4a2de181279de9b8a26a`
+-	v2 Content-Length: 155.4 KB (155426 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:18 GMT
 
-#### `2cdc13bce47da6bedfafeb302ab415085f7fcc02de32ca4eff1a2d3b84f94ee5`
+#### `da44cf7b75e214514e48982a5000a60c78f06aa8048758ca476767c94ee17314`
 
 ```dockerfile
-COPY dir:7e7211c836054b584db3564b6812113fd46963441eadcd097ac581459198f137 in /tmp
+COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
 ```
 
--	Created: Thu, 10 Dec 2015 01:02:59 GMT
--	Parent Layer: `d820e8bd65b2291deb0a36d7975c56b1c57bfa931cf48a0a78893f6c9eced1ce`
--	Docker Version: 1.8.3
+-	Created: Wed, 02 Mar 2016 05:23:02 GMT
+-	Parent Layer: `4ae5ea69ee5916c84bd972281c53ee8ee73c00e19a98be12e3e719cb23babece`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:d801e2fbe79669f9b1daf8c68add2dcfabd59f07146ca57d5f69fd5acd686a0a`
--	v2 Content-Length: 133.0 B
--	v2 Last-Modified: Thu, 10 Dec 2015 01:03:53 GMT
+-	v2 Blob: `sha256:7f0c09406c8fea79ee44417995b5f9cfb51ae7677a91b30dd075083cb4992e1b`
+-	v2 Content-Length: 132.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 05:27:14 GMT
 
-#### `9ffeeb93a95b3d7464c8afc73f7d809eeb9c1fd95a17bed88098e56b425db796`
+#### `26846c542e9da730c1f13ec4d02c08e948dde7eb1411f47b6c1a95f9370f14ee`
 
 ```dockerfile
 ENV SWARM_HOST=:2375
 ```
 
--	Created: Thu, 10 Dec 2015 01:02:59 GMT
--	Parent Layer: `2cdc13bce47da6bedfafeb302ab415085f7fcc02de32ca4eff1a2d3b84f94ee5`
--	Docker Version: 1.8.3
+-	Created: Wed, 02 Mar 2016 05:23:03 GMT
+-	Parent Layer: `da44cf7b75e214514e48982a5000a60c78f06aa8048758ca476767c94ee17314`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fe877fe8bc0b8383f5c1d136c8553bfe396bf583b3f3d3939753b8ccd78e1bc0`
+#### `dc1bc88e29baaa86c40cdad75db35f011994f94bbeaf8bc2eb56cfbf25510e99`
 
 ```dockerfile
 EXPOSE 2375/tcp
 ```
 
--	Created: Thu, 10 Dec 2015 01:03:00 GMT
--	Parent Layer: `9ffeeb93a95b3d7464c8afc73f7d809eeb9c1fd95a17bed88098e56b425db796`
--	Docker Version: 1.8.3
+-	Created: Wed, 02 Mar 2016 05:23:04 GMT
+-	Parent Layer: `26846c542e9da730c1f13ec4d02c08e948dde7eb1411f47b6c1a95f9370f14ee`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `79509bf8b8cd16420d2d3810bf8323d068d290eb0d8eb6706cd846c05927675e`
+#### `9e2fe1a1bcded93c7eec795a8162f56bc4516acf14f307e118f55616a48ace2c`
 
 ```dockerfile
 VOLUME [/.swarm]
 ```
 
--	Created: Thu, 10 Dec 2015 01:03:00 GMT
--	Parent Layer: `fe877fe8bc0b8383f5c1d136c8553bfe396bf583b3f3d3939753b8ccd78e1bc0`
--	Docker Version: 1.8.3
+-	Created: Wed, 02 Mar 2016 05:23:04 GMT
+-	Parent Layer: `dc1bc88e29baaa86c40cdad75db35f011994f94bbeaf8bc2eb56cfbf25510e99`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `22218d75fdd7dfba85feb60f8165eecb5ba13b9364b07ec2b8cd76e887bd6d78`
+#### `e4ec6045d936f03bfdf9abf9dc5179e42b94102f395dc6f277704318d5de3e1d`
 
 ```dockerfile
 ENTRYPOINT &{["/swarm"]}
 ```
 
--	Created: Thu, 10 Dec 2015 01:03:01 GMT
--	Parent Layer: `79509bf8b8cd16420d2d3810bf8323d068d290eb0d8eb6706cd846c05927675e`
--	Docker Version: 1.8.3
+-	Created: Wed, 02 Mar 2016 05:23:05 GMT
+-	Parent Layer: `9e2fe1a1bcded93c7eec795a8162f56bc4516acf14f307e118f55616a48ace2c`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e9ff33e7e5b9a683ab735bbe99450c50bd0b64c4e414d12c94ff93b345d3bb18`
+#### `fd056ae2da2415a6bdfd92d1f221f27fa40dc763f22c742bf02d3d2b7624da26`
 
 ```dockerfile
 CMD ["--help"]
 ```
 
--	Created: Thu, 10 Dec 2015 01:03:01 GMT
--	Parent Layer: `22218d75fdd7dfba85feb60f8165eecb5ba13b9364b07ec2b8cd76e887bd6d78`
--	Docker Version: 1.8.3
+-	Created: Wed, 02 Mar 2016 05:23:06 GMT
+-	Parent Layer: `e4ec6045d936f03bfdf9abf9dc5179e42b94102f395dc6f277704318d5de3e1d`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B

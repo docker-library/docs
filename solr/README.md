@@ -1,9 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.3.1`, `5.3` (*5.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d722c55dd320a812e278a23c60a5d5616515df0b/5.3/Dockerfile)
--	[`5.4.0`, `5.4`, `5`, `latest` (*5.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/3e61ef877ca9d04e7f005cd40ba726abd1f74259/5.4/Dockerfile)
+-	[`5.3.2`, `5.3` (*5.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/5d6039fb7019b08d420b7bb90f76e8958dc32548/5.3/Dockerfile)
+-	[`5.4.1`, `5.4` (*5.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/da35a589a6218f8fd0e83d61f8c14b201234c1ae/5.4/Dockerfile)
+-	[`5.5.0`, `5.5`, `5`, `latest` (*5.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/2e1ccd64970c65e7dacfe33203963b315f665cc3/5.5/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/solr`)](https://github.com/docker-library/official-images/blob/master/library/solr). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/solr:latest.svg)](https://imagelayers.io/?images=solr:5.3.2,solr:5.4.1,solr:5.5.0)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/solr`)](https://github.com/docker-library/official-images/blob/master/library/solr). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsolr).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `solr/tag-details.md` file](https://github.com/docker-library/docs/blob/master/solr/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -98,7 +101,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

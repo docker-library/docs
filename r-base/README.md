@@ -1,8 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.3`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/eeb9c8a5f416f7cfe982734440e39fa72abbcb33/r-base/Dockerfile)
+-	[`3.2.4`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/0cc8fb084f2b78a00f6741e1080d9b23f32424c8/r-base/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/r-base`)](https://github.com/docker-library/official-images/blob/master/library/r-base). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+[![](https://badge.imagelayers.io/r-base:latest.svg)](https://imagelayers.io/?images=r-base:3.2.4)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/r-base`)](https://github.com/docker-library/official-images/blob/master/library/r-base). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fr-base).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `r-base/tag-details.md` file](https://github.com/docker-library/docs/blob/master/r-base/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -78,7 +80,7 @@ View [R-project license information](http://www.r-project.org/Licenses/) for the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
