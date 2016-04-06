@@ -24,6 +24,7 @@ declare -A otherRepos=(
 	[aerospike]='https://github.com/aerospike/aerospike-server.docker'
 	[alpine]='https://github.com/gliderlabs/docker-alpine'
 	[arangodb]='https://github.com/arangodb/arangodb-docker'
+	[backdrop]='https://github.com/backdrop-ops/backdrop-docker'
 	[bonita]='https://github.com/Bonitasoft-Community/docker_bonita'
 	[centos]='https://github.com/CentOS/sig-cloud-instance-images'
 	[cirros]='https://github.com/ewindisch/docker-cirros'
