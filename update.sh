@@ -50,6 +50,7 @@ declare -A otherRepos=(
 	[lightstreamer]='https://github.com/Lightstreamer/Docker'
 	[mageia]='https://github.com/juanluisbaptiste/docker-brew-mageia'
 	[maven]='https://github.com/carlossg/docker-maven'
+	[mongo-express]='https://github.com/mongo-express/mongo-express-docker'
 	[mono]='https://github.com/mono/docker'
 	[neo4j]='https://github.com/neo4j/docker-neo4j'
 	[neurodebian]='https://github.com/neurodebian/dockerfiles'
