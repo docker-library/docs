@@ -1,4 +1,3 @@
-
 # What is Backdrop CMS?
 
 Backdrop CMS is a comprehensive Content Management System for small to medium sized businesses and non-profits. It is a fork of the Drupal project.
@@ -17,12 +16,12 @@ $ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%REPO%%
 
 The following environment variables are also honored for configuring your Backdrop CMS instance:
 
-- `-e BACKDROP_DB_HOST=...` (defaults to the IP and port of the linked `mysql` container)
-- `-e BACKDROP_DB_USER=...` (defaults to "root")
-- `-e BACKDROP_DB_PASSWORD=...` (defaults to the value of the `MYSQL_ROOT_PASSWORD` environment variable from the linked `mysql` container)
-- `-e BACKDROP_DB_NAME=...` (defaults to "backdrop")
-- `-e BACKDROP_DB_PORT=...` (defaults to 3306)
-- `-e BACKDROP_DB_DRIVER=...` (defaults to "mysql")
+-	`-e BACKDROP_DB_HOST=...` (defaults to the IP and port of the linked `mysql` container)
+-	`-e BACKDROP_DB_USER=...` (defaults to "root")
+-	`-e BACKDROP_DB_PASSWORD=...` (defaults to the value of the `MYSQL_ROOT_PASSWORD` environment variable from the linked `mysql` container)
+-	`-e BACKDROP_DB_NAME=...` (defaults to "backdrop")
+-	`-e BACKDROP_DB_PORT=...` (defaults to 3306)
+-	`-e BACKDROP_DB_DRIVER=...` (defaults to "mysql")
 
 The `BACKDROP_DB_NAME` **must already exist** on the given MySQL server. Check out the [official mysql image](https://hub.docker.com/_/mysql/) for more info on spinning up a DB.
 
@@ -77,8 +76,8 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
-- [Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
-- [Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `backdrop` is updated.
+-	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
+-	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `backdrop` is updated.
 
 # License
 
@@ -96,12 +95,12 @@ Please see [the Docker installation documentation](https://docs.docker.com/insta
 
 ## Documentation
 
- > https://github.com/backdrop-ops/backdrop-docker/wiki
+> https://github.com/backdrop-ops/backdrop-docker/wiki
 
 ## Issues
 
- > https://github.com/backdrop-ops/backdrop-docker/issues
+> https://github.com/backdrop-ops/backdrop-docker/issues
 
 ## Contributing
 
- >  https://github.com/backdrop-ops/backdrop-docker
+> https://github.com/backdrop-ops/backdrop-docker
