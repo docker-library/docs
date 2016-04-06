@@ -2,11 +2,9 @@
 
 Lightstreamer is a real-time messaging server optimized for the Internet. Blending WebSockets, HTTP, and push notifications, it streams data to/from mobile, tablet, browser-based, desktop, and IoT applications.
 
-For more information and related downloads for Lightstreamer Server and other Lightstreaner products, please visit
-[www.lightstreamer.com](http://www.lightstreamer.com).
+For more information and related downloads for Lightstreamer Server and other Lightstreaner products, please visit [www.lightstreamer.com](http://www.lightstreamer.com).
 
 %%LOGO%%
-
 
 # How to use this image
 
@@ -17,6 +15,7 @@ Launch the container with the default configuration:
 ```console
 $ docker run --name ls-server -d -p 80:8080 lightstreamer
 ```
+
 This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page showing real time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](http://demos.lightstreamer.com).
 
 ## Custom settings
