@@ -1,6 +1,8 @@
-# What is the Lightstreamer Server?
+# What is Lightstreamer Server?
 
 Lightstreamer is a real-time messaging server optimized for the Internet. Blending WebSockets, HTTP, and push notifications, it streams data to/from mobile, tablet, browser-based, desktop, and IoT applications.
+
+For more information and related downloads for Lightstreamer Server and other Lightstreaner products, please visit [www.lightstreamer.com](http://www.lightstreamer.com).
 
 %%LOGO%%
 
@@ -14,7 +16,7 @@ Launch the container with the default configuration:
 $ docker run --name ls-server -d -p 80:8080 lightstreamer
 ```
 
-Point your browser to `http://localhost` and watch the Welcome page showing real time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](http://demos.lightstreamer.com).
+This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page showing real time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](http://demos.lightstreamer.com).
 
 ## Custom settings
 
@@ -46,7 +48,7 @@ COPY my-lightstreamer_conf.xml /lightstreamer/conf/lightstreamer_conf.xml
 COPY my-lightstreamer_log.xml /lightstreamer/conf/lightstreamer_log_conf.xml
 ```
 
-where `my-lightstreamer_conf.xml` and `my-lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory as the Dockerfile. By simplying running the command:
+where `my-lightstreamer_conf.xml` and `my-lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory as the Dockerfile. By simply running the command:
 
 ```console
 $ docker build -t my-lightstreamer
