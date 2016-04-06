@@ -1,7 +1,9 @@
 
-# What is Backdrop?
+# What is Backdrop CMS?
 
-The comprehensive CMS for small to medium sized businesses and non-profits.
+Backdrop CMS is a comprehensive Content Management System for small to medium sized businesses and non-profits. It is a fork of the Drupal project. 
+
+Backdrop CMS enables people to build highly customized websites, affordably, through collaboration and open source software. For more on the Backdrop's philosophy see https://backdropcms.org/philosophy.
 
 %%LOGO%%
 
@@ -94,13 +96,12 @@ Please see [the Docker installation documentation](https://docs.docker.com/insta
 
 ## Documentation
 
- > @todo: link to %%REPO%% site?
+ > https://github.com/backdrop-ops/backdrop-docker/wiki
 
 ## Issues
 
- > @todo: link to %%REPO%% site?
+ > https://github.com/backdrop-ops/backdrop-docker/issues
 
 ## Contributing
 
- >  @todo: link to %%REPO%% site?
-
+ >  https://github.com/backdrop-ops/backdrop-docker
