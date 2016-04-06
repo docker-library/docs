@@ -62,4 +62,4 @@ The web UI [http://localhost:8080](http://localhost:8080) will give you an overv
 
 # Documentation
 
-You can find the complete documentation [here](https://github.com/containous/traefik/blob/master/docs/index.md).
+You can find the complete documentation [here](https://docs.traefik.io).
