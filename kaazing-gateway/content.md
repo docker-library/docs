@@ -31,14 +31,14 @@ For information on the syntax of the Kaazing Gateway configuration files, see [t
 If you wish to adapt the default Gateway configuration file, you can use a command such as the following to copy the file from a running Kaazing Gateway container:
 
 ```console
-$ docker cp some-kaazing:/conf/gateway-config-minimal.xml /some/gateway-config.xml
+$ docker cp some-kaazing:/kaazing-gateway/conf/gateway-config-minimal.xml /some/gateway-config.xml
 ```
 
 As above, this can also be accomplished more cleanly using a simple `Dockerfile`:
 
 ```dockerfile
 FROM kaazing-gateway
-COPY gateway-config.xml /conf/gateway-config.xml
+COPY gateway-config.xml conf/gateway-config.xml
 ```
 
 Then, build with `docker build -t some-custom-kaazing-gateway .` and run:
