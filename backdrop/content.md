@@ -90,17 +90,3 @@ This image is officially supported on Docker version 1.10.3.
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Documentation
-
-> https://github.com/backdrop-ops/backdrop-docker/wiki
-
-## Issues
-
-> https://github.com/backdrop-ops/backdrop-docker/issues
-
-## Contributing
-
-> https://github.com/backdrop-ops/backdrop-docker
