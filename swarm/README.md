@@ -6,10 +6,9 @@
 -	[`1.1.1` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/9346bd71c2a9b1433a663b8c2fe20b2636585f54/Dockerfile)
 -	[`1.1.2` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/5f284e33ef90b7bc30684ad09a5261c037fc9d5e/Dockerfile)
 -	[`1.1.3`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/4d298d3113a4ecefa83a3f9e18f4aaf4f95f007e/Dockerfile)
--	[`1.2.0-rc1` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/703192c7907b3d30e20d68a8353b25110a2a290c/Dockerfile)
--	[`1.2.0-rc2` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/1b528de8de78dc6a3e8159c204c12b84dad43710/Dockerfile)
+-	[`1.2.0-rc3` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/35990439a798c584be36e6f0a09d18bc2c6e0409/Dockerfile)
 
-[![](https://badge.imagelayers.io/swarm:latest.svg)](https://imagelayers.io/?images=swarm:1.0.0,swarm:1.0.1,swarm:1.1.0,swarm:1.1.1,swarm:1.1.2,swarm:1.1.3,swarm:1.2.0-rc1,swarm:1.2.0-rc2)
+[![](https://badge.imagelayers.io/swarm:latest.svg)](https://imagelayers.io/?images=swarm:1.0.0,swarm:1.0.1,swarm:1.1.0,swarm:1.1.1,swarm:1.1.2,swarm:1.1.3,swarm:1.2.0-rc3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fswarm).
 

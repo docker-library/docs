@@ -8,7 +8,7 @@ For more information about this image and its history, please see [the relevant 
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `traefik/tag-details.md` file](https://github.com/docker-library/docs/blob/master/traefik/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/952be1ef919ea855ce57b6ed2107c04e3ff553a8/traefik/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/a6cc2c5f4bc6658168f2a0abbb0307acaefff80e/traefik/logo.png)
 
 [Træfɪk](https://github.com/containous/traefik) is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease. It supports several backends ([Docker :whale:](https://www.docker.com/), [Swarm :whale::whale:](https://github.com/docker/swarm), [Mesos/Marathon](https://mesosphere.github.io/marathon/), [Consul](https://www.consul.io/), [Etcd](https://coreos.com/etcd/), [Zookeeper](https://zookeeper.apache.org), [BoltDB](https://github.com/boltdb/bolt), Rest API, file...) to manage its configuration automatically and dynamically.
 

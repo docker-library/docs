@@ -5,7 +5,7 @@
 -	[`webProfile6`, `8.5.5.9-webProfile6` (*websphere-liberty/8.5.5/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/dcd83cc7fed1612949d63b4f40ee8cfffa7cfdb4/websphere-liberty/8.5.5/developer/webProfile6/Dockerfile)
 -	[`webProfile7`, `8.5.5.9-webProfile7` (*websphere-liberty/8.5.5/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/dcd83cc7fed1612949d63b4f40ee8cfffa7cfdb4/websphere-liberty/8.5.5/developer/webProfile7/Dockerfile)
 -	[`javaee7`, `8.5.5.9-javaee7`, `8.5.5.9`, `8.5.5`, `latest` (*websphere-liberty/8.5.5/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/dcd83cc7fed1612949d63b4f40ee8cfffa7cfdb4/websphere-liberty/8.5.5/developer/javaee7/Dockerfile)
--	[`beta` (*websphere-liberty/beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/ffaebdf53266a1795f2a4f46faa699d3d8195716/websphere-liberty/beta/Dockerfile)
+-	[`beta` (*websphere-liberty/beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/a1b189b7ab85ba4f4270fc34fe7fcd5a6b82c763/websphere-liberty/beta/Dockerfile)
 
 [![](https://badge.imagelayers.io/websphere-liberty:latest.svg)](https://imagelayers.io/?images=websphere-liberty:kernel,websphere-liberty:common,websphere-liberty:webProfile6,websphere-liberty:webProfile7,websphere-liberty:javaee7,websphere-liberty:beta)
 
