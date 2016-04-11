@@ -51,7 +51,7 @@ COPY my-lightstreamer_log.xml /lightstreamer/conf/lightstreamer_log_conf.xml
 where `my-lightstreamer_conf.xml` and `my-lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory as the Dockerfile. By simply running the command:
 
 ```console
-$ docker build -t my-lightstreamer
+$ docker build -t my-lightstreamer .
 ```
 
 the new image will be built along with the provided files. After that, launch the container:
