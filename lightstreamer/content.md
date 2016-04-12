@@ -87,11 +87,11 @@ $ docker run --name ls-server -v /path/to/my-adapters:/lightstreamer/adapters -d
 In this case, the `/path/to/my-adapters` folder has to be structured with the required layout for an adapters folder:
 
 ```console
-/path/to/my-adapaters+
-                     +my_adapter_set_1
-                     +my_adapter_set_2
-                     ...
-                     +my_adapter_set_N
+/path/to/my-adapters+
+                    +my_adapter_set_1
+                    +my_adapter_set_2
+                    ...
+                    +my_adapter_set_N
                      
 ```
 
