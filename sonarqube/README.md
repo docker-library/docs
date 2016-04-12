@@ -24,7 +24,7 @@ SonarQube is an open source platform for continuous inspection of code quality.
 The server is started this way:
 
 ```console
-$ docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube:5.1
+$ docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube:[desired version]
 ```
 
 To analyse a project:
