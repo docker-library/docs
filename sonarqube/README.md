@@ -49,7 +49,7 @@ $ docker run -d --name sonarqube \
 	-e SONARQUBE_JDBC_USERNAME=sonar \
 	-e SONARQUBE_JDBC_PASSWORD=sonar \
 	-e SONARQUBE_JDBC_URL=jdbc:postgresql://localhost/sonar \
-	sonarqube:5.1
+	sonarqube:[desired version]
 ```
 
 More recipes can be found [here](https://github.com/SonarSource/docker-sonarqube/blob/master/recipes.md).
