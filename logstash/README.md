@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.5-1-a2bacae`, `1.4.5-1`, `1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/4f3a81ff0f152003653eecd60d0c4e1f05ce99f0/1.4/Dockerfile)
--	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/4f3a81ff0f152003653eecd60d0c4e1f05ce99f0/1.5/Dockerfile)
--	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/4f3a81ff0f152003653eecd60d0c4e1f05ce99f0/2.0/Dockerfile)
--	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/4f3a81ff0f152003653eecd60d0c4e1f05ce99f0/2.1/Dockerfile)
--	[`2.2.3-1`, `2.2.3`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/a4b4fccbe65bc485d20508e524133fd1058dd28e/2.2/Dockerfile)
--	[`2.3.0-1`, `2.3.0`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/a4b4fccbe65bc485d20508e524133fd1058dd28e/2.3/Dockerfile)
+-	[`1.4.5-1-a2bacae`, `1.4.5-1`, `1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/fde2012d6c14d14fa52c359eaca8b2429e9ec98a/1.4/Dockerfile)
+-	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/fde2012d6c14d14fa52c359eaca8b2429e9ec98a/1.5/Dockerfile)
+-	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/fde2012d6c14d14fa52c359eaca8b2429e9ec98a/2.0/Dockerfile)
+-	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/fde2012d6c14d14fa52c359eaca8b2429e9ec98a/2.1/Dockerfile)
+-	[`2.2.4-1`, `2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/fde2012d6c14d14fa52c359eaca8b2429e9ec98a/2.2/Dockerfile)
+-	[`2.3.1-1`, `2.3.1`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/bfe9885a1f498aa529385da0eb13f21d8c15eeb3/2.3/Dockerfile)
 
-[![](https://badge.imagelayers.io/logstash:latest.svg)](https://imagelayers.io/?images=logstash:1.4.5-1-a2bacae,logstash:1.5.6-1,logstash:2.0.0-1,logstash:2.1.3-1,logstash:2.2.3-1,logstash:2.3.0-1)
+[![](https://badge.imagelayers.io/logstash:latest.svg)](https://imagelayers.io/?images=logstash:1.4.5-1-a2bacae,logstash:1.5.6-1,logstash:2.0.0-1,logstash:2.1.3-1,logstash:2.2.4-1,logstash:2.3.1-1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash).
 

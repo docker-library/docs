@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `5.4` (*5.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/442f950dae232fca8e1e919e017270971cee46f6/5.4/Dockerfile)
--	[`lts`, `4.5.6` (*4.5.6/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/442f950dae232fca8e1e919e017270971cee46f6/4.5.6/Dockerfile)
+-	[`lts`, `4.5.7` (*4.5.7/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f8baccb64f41ca126781db6a700d738d004fd0b0/4.5.7/Dockerfile)
 
 [![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:lts)
 
