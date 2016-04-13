@@ -11,7 +11,7 @@
 
 ## Usage
 
-### Start a Plone instance
+### Start a single Plone instance
 
 This will download and start the latest Plone 5 container, based on [Debian](https://www.debian.org/).
 
@@ -21,19 +21,19 @@ $ docker run -p 8080:8080 plone
 
 This image includes `EXPOSE 8080` (the Plone port), so standard container linking will make it automatically available to the linked containers. Now you can add a Plone Site at http://localhost:8080 - default Zope user and password are `admin/admin`.
 
-### Start Plone as a ZEO client
+### Start Plone within a ZEO cluster
 
-Considering ZEO server is running at `192.168.1.1` on default port `8100` you can do:
+Start ZEO server
 
 ```console
-$ docker run -e ZEO_ADDRESS=192.168.1.1:8100 -p 8080:8080 plone
+$ docker run --name=zeo plone zeoserver
 ```
 
-or, using the ZEO Docker Image:
+Start 2 Plone clients
 
 ```console
-$ docker run --name=zeo plone/zeoserver
-$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8100 -p 8080:8080 plone
+$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8100 -p 8081:8080 plone
+$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8100 -p 8082:8080 plone
 ```
 
 ### Start Plone in debug mode
