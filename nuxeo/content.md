@@ -100,9 +100,11 @@ If set to "true", this will enable the [automation trace mode](https://doc.nuxeo
 If set to "true", this will enable the development mode that will allow [hot reload](https://doc.nuxeo.com/display/CORG/Supporting+Hot+Reload) when developing with [Nuxeo Studio](http://www.nuxeo.com/products/studio/).
 
 ### `NUXEO_BINARY_STORE`
+
 Tells the location of the binary store which configure the [binary storage](https://doc.nuxeo.com/x/fYYZAQ)
 
 ### `NUXEO_TRANSIENT_STORE`
+
 Tells the location of [the transient storage](http://doc.nuxeo.com/display/NXDOC/Transient+Store)
 
 # How to extend this image
