@@ -8,7 +8,7 @@
 -	[`ubuntu:precise`](#ubuntuprecise)
 -	[`ubuntu:14.04.4`](#ubuntu14044)
 -	[`ubuntu:14.04`](#ubuntu1404)
--	[`ubuntu:trusty-20160405`](#ubuntutrusty-20160405)
+-	[`ubuntu:trusty-20160412`](#ubuntutrusty-20160412)
 -	[`ubuntu:trusty`](#ubuntutrusty)
 -	[`ubuntu:latest`](#ubuntulatest)
 -	[`ubuntu:15.10`](#ubuntu1510)
@@ -486,83 +486,9 @@ CMD ["/bin/bash"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `ubuntu:trusty-20160405`
+## `ubuntu:trusty-20160412`
 
-```console
-$ docker pull library/ubuntu@sha256:6383ecdde4cc903f921b57a881d8e507aad17a92934bf8ae416cb78647c29470
-```
-
--	Total Virtual Size: 188.0 MB (187960551 bytes)
--	Total v2 Content-Length: 65.8 MB (65764910 bytes)
-
-### Layers (4)
-
-#### `9e92c41a7ed806720ab8ca0cb6467b488d501f6b2bc5cc3abf072ae748079f06`
-
-```dockerfile
-ADD file:d4d28c3e762167a2c942e70c0ae77c9e52f78917bc37c350508c8d422fcffadb in /
-```
-
--	Created: Wed, 06 Apr 2016 17:40:45 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 187.8 MB (187764123 bytes)
--	v2 Blob: `sha256:87192bdbe00f8f2a62527f36bb4c7c7f4eaf9307e4b87e8334fb6abec1765bcb`
--	v2 Content-Length: 65.7 MB (65692721 bytes)
--	v2 Last-Modified: Wed, 06 Apr 2016 16:46:47 GMT
-
-#### `8973f6e7693fb167f6bf3e8916a2878b37050e02d46d7f1371744e7ec7701830`
-
-```dockerfile
-RUN set -xe \
-		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
-	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
-	&& chmod +x /usr/sbin/policy-rc.d \
-		&& dpkg-divert --local --rename --add /sbin/initctl \
-	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \
-	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \
-		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \
-		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean \
-	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean \
-	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean \
-		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages \
-		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-```
-
--	Created: Wed, 06 Apr 2016 17:41:15 GMT
--	Parent Layer: `9e92c41a7ed806720ab8ca0cb6467b488d501f6b2bc5cc3abf072ae748079f06`
--	Docker Version: 1.9.1
--	Virtual Size: 194.5 KB (194533 bytes)
--	v2 Blob: `sha256:28e09fddaacbfc8a13f82871d9d66141a6ed9ca526cb9ed295ef545ab4559b81`
--	v2 Content-Length: 71.5 KB (71477 bytes)
--	v2 Last-Modified: Wed, 06 Apr 2016 17:45:41 GMT
-
-#### `2f2796dbe78d687c0d857e9344815f809cc72f46ed4f069835473c3844a14a54`
-
-```dockerfile
-RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-```
-
--	Created: Wed, 06 Apr 2016 17:41:18 GMT
--	Parent Layer: `8973f6e7693fb167f6bf3e8916a2878b37050e02d46d7f1371744e7ec7701830`
--	Docker Version: 1.9.1
--	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:7e15ce58ccb2181a8fced7709e9893206f0937cc9543bc0c8178ea1cf4d7e7b5`
--	v2 Content-Length: 680.0 B
--	v2 Last-Modified: Wed, 06 Apr 2016 17:45:37 GMT
-
-#### `41cc538fb83a158ab1f8f799142d3a37bed1ed6ea36ebf48c9b74aea7e97a741`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Wed, 06 Apr 2016 17:41:19 GMT
--	Parent Layer: `2f2796dbe78d687c0d857e9344815f809cc72f46ed4f069835473c3844a14a54`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+**does not exist** (yet?)
 
 ## `ubuntu:trusty`
 
