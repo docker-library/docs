@@ -2,12 +2,12 @@
 
 -	[`1.4.27`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.4/Dockerfile)
 -	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.4/alpine/Dockerfile)
--	[`1.5.16`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.5/Dockerfile)
--	[`1.5.16-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.5/alpine/Dockerfile)
+-	[`1.5.17`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/174f054dbde26993cf1bd90b1e4ba4e9165a43b6/1.5/Dockerfile)
+-	[`1.5.17-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/174f054dbde26993cf1bd90b1e4ba4e9165a43b6/1.5/alpine/Dockerfile)
 -	[`1.6.4`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.6/Dockerfile)
 -	[`1.6.4-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.6/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/haproxy:latest.svg)](https://imagelayers.io/?images=haproxy:1.4.27,haproxy:1.4.27-alpine,haproxy:1.5.16,haproxy:1.5.16-alpine,haproxy:1.6.4,haproxy:1.6.4-alpine)
+[![](https://badge.imagelayers.io/haproxy:latest.svg)](https://imagelayers.io/?images=haproxy:1.4.27,haproxy:1.4.27-alpine,haproxy:1.5.17,haproxy:1.5.17-alpine,haproxy:1.6.4,haproxy:1.6.4-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaproxy).
 
