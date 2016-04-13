@@ -8,42 +8,42 @@
 ## `rakudo-star:2016.01`
 
 ```console
-$ docker pull library/rakudo-star@sha256:1a80d9cdeac0d3e97b8f467a8249a16fe34a913a7d19bd5c6bd7c6861f0a9e3c
+$ docker pull library/rakudo-star@sha256:4a99ddd5c522d80e986ab0ccf69e530e4c7dcccd1ed61ca78c915ea9a05ea6ac
 ```
 
--	Total Virtual Size: 333.6 MB (333591963 bytes)
--	Total v2 Content-Length: 123.5 MB (123450115 bytes)
+-	Total Virtual Size: 333.7 MB (333667815 bytes)
+-	Total v2 Content-Length: 123.5 MB (123478097 bytes)
 
-### Layers (9)
+### Layers (10)
 
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
+#### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -53,15 +53,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
+-	Created: Tue, 01 Mar 2016 18:56:33 GMT
+-	Parent Layer: `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44315342 bytes)
+-	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
+-	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
+#### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -74,57 +74,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
+-	Created: Thu, 24 Mar 2016 01:58:54 GMT
+-	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122587140 bytes)
+-	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
+-	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
-#### `257a644e4fcbca20cfd47bea3062cdd2fd0dcf2c587e091263b98a2285a61806`
+#### `7df69ddd15eee79faf98598c984fb2631565a9db8626aa1d314d34db88c9d25f`
 
 ```dockerfile
 MAINTAINER Rob Hoelz
 ```
 
--	Created: Tue, 26 Jan 2016 21:01:28 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `c4a35a063492d9b7e1a2e836092b0be4faf5ea167762014556a0d9dee1bb2e01`
-
-```dockerfile
-RUN groupadd -r perl6 && useradd -r -g perl6 perl6
-```
-
--	Created: Tue, 26 Jan 2016 21:01:31 GMT
--	Parent Layer: `257a644e4fcbca20cfd47bea3062cdd2fd0dcf2c587e091263b98a2285a61806`
--	Docker Version: 1.8.3
--	Virtual Size: 330.4 KB (330406 bytes)
--	v2 Blob: `sha256:47600ac7486804fddb3f3974a0f44dbb45b6564f3bdeba482990f8f44a3599e2`
--	v2 Content-Length: 2.1 KB (2055 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 17:37:26 GMT
-
-#### `77f7e6abe3e4c71260d3bdd1c334a8468e383c350d3ee42041e9613cc4d6817e`
-
-```dockerfile
-ENV rakudo_version=2016.01
-```
-
--	Created: Thu, 04 Feb 2016 18:16:10 GMT
--	Parent Layer: `c4a35a063492d9b7e1a2e836092b0be4faf5ea167762014556a0d9dee1bb2e01`
+-	Created: Thu, 24 Mar 2016 10:15:28 GMT
+-	Parent Layer: `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `86a0fc5a377de0bdbee85d9ebb3632220f46b3f244bb0cd8fad3d504ae88db5e`
+#### `c471bbb2247265d53eba224d295684caf8575f713d9196c914089233f4f2b2d0`
+
+```dockerfile
+RUN groupadd -r perl6 && useradd -r -g perl6 perl6
+```
+
+-	Created: Thu, 24 Mar 2016 10:15:30 GMT
+-	Parent Layer: `7df69ddd15eee79faf98598c984fb2631565a9db8626aa1d314d34db88c9d25f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 330.4 KB (330406 bytes)
+-	v2 Blob: `sha256:9dcc87bfcd1a8abf3969954738ca7f83a29789f5684b4f7ef0faf85fc84bd1f2`
+-	v2 Content-Length: 2.1 KB (2057 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:38 GMT
+
+#### `f1bd7a9fad52b25d90b8a54de80851e98963bc12b6137ed15b10d7c8c79d5756`
+
+```dockerfile
+ENV rakudo_version=2016.01
+```
+
+-	Created: Thu, 24 Mar 2016 10:15:30 GMT
+-	Parent Layer: `c471bbb2247265d53eba224d295684caf8575f713d9196c914089233f4f2b2d0`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `757d08baf94776aeed165181ec1f7f7e8b23d32110e56e926e3346785a70d77f`
 
 ```dockerfile
 RUN buildDeps='\
@@ -149,22 +149,36 @@ RUN buildDeps='\
      && apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Thu, 04 Feb 2016 18:31:18 GMT
--	Parent Layer: `77f7e6abe3e4c71260d3bdd1c334a8468e383c350d3ee42041e9613cc4d6817e`
+-	Created: Thu, 24 Mar 2016 10:29:49 GMT
+-	Parent Layer: `f1bd7a9fad52b25d90b8a54de80851e98963bc12b6137ed15b10d7c8c79d5756`
 -	Docker Version: 1.9.1
--	Virtual Size: 41.3 MB (41301781 bytes)
--	v2 Blob: `sha256:b21d63efc9022cd51f205bf383d485d4851aaef6fd3dc8201a4cceca55107ff8`
--	v2 Content-Length: 11.1 MB (11068469 bytes)
--	v2 Last-Modified: Thu, 04 Feb 2016 18:31:41 GMT
+-	Virtual Size: 41.3 MB (41324124 bytes)
+-	v2 Blob: `sha256:57637398f1916aa191e844ad75f2300aa3c98fdf974be1fcb7bce7f6e8731433`
+-	v2 Content-Length: 11.1 MB (11078358 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:33 GMT
 
-#### `df7f50610423590fd97a72864a86184e8e49809fb281f7d360e3dee1b1f6cf0e`
+#### `5325ad99166cb3168abe83c7e4ce6040c6f10e53118c3885a7fc22207ac4995e`
+
+```dockerfile
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin
+```
+
+-	Created: Thu, 24 Mar 2016 10:29:50 GMT
+-	Parent Layer: `757d08baf94776aeed165181ec1f7f7e8b23d32110e56e926e3346785a70d77f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `175ba12eb398383794311a12f60833c4b69e1f52e4a6f92844fd6d197d2ef9b5`
 
 ```dockerfile
 CMD ["rlwrap" "perl6"]
 ```
 
--	Created: Thu, 04 Feb 2016 18:31:19 GMT
--	Parent Layer: `86a0fc5a377de0bdbee85d9ebb3632220f46b3f244bb0cd8fad3d504ae88db5e`
+-	Created: Thu, 24 Mar 2016 10:29:50 GMT
+-	Parent Layer: `5325ad99166cb3168abe83c7e4ce6040c6f10e53118c3885a7fc22207ac4995e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -174,42 +188,42 @@ CMD ["rlwrap" "perl6"]
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull library/rakudo-star@sha256:607198e26f9dad3a20f9d106517c7e98d7f9e04eaa38647f938fef125c1d3bf9
+$ docker pull library/rakudo-star@sha256:97556f04ee699e80e692286a8c1925e4cf556449fe47df584169ecc2f07664fe
 ```
 
--	Total Virtual Size: 333.6 MB (333591963 bytes)
--	Total v2 Content-Length: 123.5 MB (123450115 bytes)
+-	Total Virtual Size: 333.7 MB (333667815 bytes)
+-	Total v2 Content-Length: 123.5 MB (123478097 bytes)
 
-### Layers (9)
+### Layers (10)
 
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
+#### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -219,15 +233,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
+-	Created: Tue, 01 Mar 2016 18:56:33 GMT
+-	Parent Layer: `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44315342 bytes)
+-	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
+-	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
+#### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -240,57 +254,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
+-	Created: Thu, 24 Mar 2016 01:58:54 GMT
+-	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122587140 bytes)
+-	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
+-	v2 Content-Length: 42.5 MB (42495709 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
-#### `257a644e4fcbca20cfd47bea3062cdd2fd0dcf2c587e091263b98a2285a61806`
+#### `7df69ddd15eee79faf98598c984fb2631565a9db8626aa1d314d34db88c9d25f`
 
 ```dockerfile
 MAINTAINER Rob Hoelz
 ```
 
--	Created: Tue, 26 Jan 2016 21:01:28 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `c4a35a063492d9b7e1a2e836092b0be4faf5ea167762014556a0d9dee1bb2e01`
-
-```dockerfile
-RUN groupadd -r perl6 && useradd -r -g perl6 perl6
-```
-
--	Created: Tue, 26 Jan 2016 21:01:31 GMT
--	Parent Layer: `257a644e4fcbca20cfd47bea3062cdd2fd0dcf2c587e091263b98a2285a61806`
--	Docker Version: 1.8.3
--	Virtual Size: 330.4 KB (330406 bytes)
--	v2 Blob: `sha256:47600ac7486804fddb3f3974a0f44dbb45b6564f3bdeba482990f8f44a3599e2`
--	v2 Content-Length: 2.1 KB (2055 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 17:37:26 GMT
-
-#### `77f7e6abe3e4c71260d3bdd1c334a8468e383c350d3ee42041e9613cc4d6817e`
-
-```dockerfile
-ENV rakudo_version=2016.01
-```
-
--	Created: Thu, 04 Feb 2016 18:16:10 GMT
--	Parent Layer: `c4a35a063492d9b7e1a2e836092b0be4faf5ea167762014556a0d9dee1bb2e01`
+-	Created: Thu, 24 Mar 2016 10:15:28 GMT
+-	Parent Layer: `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `86a0fc5a377de0bdbee85d9ebb3632220f46b3f244bb0cd8fad3d504ae88db5e`
+#### `c471bbb2247265d53eba224d295684caf8575f713d9196c914089233f4f2b2d0`
+
+```dockerfile
+RUN groupadd -r perl6 && useradd -r -g perl6 perl6
+```
+
+-	Created: Thu, 24 Mar 2016 10:15:30 GMT
+-	Parent Layer: `7df69ddd15eee79faf98598c984fb2631565a9db8626aa1d314d34db88c9d25f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 330.4 KB (330406 bytes)
+-	v2 Blob: `sha256:9dcc87bfcd1a8abf3969954738ca7f83a29789f5684b4f7ef0faf85fc84bd1f2`
+-	v2 Content-Length: 2.1 KB (2057 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:38 GMT
+
+#### `f1bd7a9fad52b25d90b8a54de80851e98963bc12b6137ed15b10d7c8c79d5756`
+
+```dockerfile
+ENV rakudo_version=2016.01
+```
+
+-	Created: Thu, 24 Mar 2016 10:15:30 GMT
+-	Parent Layer: `c471bbb2247265d53eba224d295684caf8575f713d9196c914089233f4f2b2d0`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `757d08baf94776aeed165181ec1f7f7e8b23d32110e56e926e3346785a70d77f`
 
 ```dockerfile
 RUN buildDeps='\
@@ -315,22 +329,36 @@ RUN buildDeps='\
      && apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Thu, 04 Feb 2016 18:31:18 GMT
--	Parent Layer: `77f7e6abe3e4c71260d3bdd1c334a8468e383c350d3ee42041e9613cc4d6817e`
+-	Created: Thu, 24 Mar 2016 10:29:49 GMT
+-	Parent Layer: `f1bd7a9fad52b25d90b8a54de80851e98963bc12b6137ed15b10d7c8c79d5756`
 -	Docker Version: 1.9.1
--	Virtual Size: 41.3 MB (41301781 bytes)
--	v2 Blob: `sha256:b21d63efc9022cd51f205bf383d485d4851aaef6fd3dc8201a4cceca55107ff8`
--	v2 Content-Length: 11.1 MB (11068469 bytes)
--	v2 Last-Modified: Thu, 04 Feb 2016 18:31:41 GMT
+-	Virtual Size: 41.3 MB (41324124 bytes)
+-	v2 Blob: `sha256:57637398f1916aa191e844ad75f2300aa3c98fdf974be1fcb7bce7f6e8731433`
+-	v2 Content-Length: 11.1 MB (11078358 bytes)
+-	v2 Last-Modified: Thu, 24 Mar 2016 18:51:33 GMT
 
-#### `df7f50610423590fd97a72864a86184e8e49809fb281f7d360e3dee1b1f6cf0e`
+#### `5325ad99166cb3168abe83c7e4ce6040c6f10e53118c3885a7fc22207ac4995e`
+
+```dockerfile
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin
+```
+
+-	Created: Thu, 24 Mar 2016 10:29:50 GMT
+-	Parent Layer: `757d08baf94776aeed165181ec1f7f7e8b23d32110e56e926e3346785a70d77f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `175ba12eb398383794311a12f60833c4b69e1f52e4a6f92844fd6d197d2ef9b5`
 
 ```dockerfile
 CMD ["rlwrap" "perl6"]
 ```
 
--	Created: Thu, 04 Feb 2016 18:31:19 GMT
--	Parent Layer: `86a0fc5a377de0bdbee85d9ebb3632220f46b3f244bb0cd8fad3d504ae88db5e`
+-	Created: Thu, 24 Mar 2016 10:29:50 GMT
+-	Parent Layer: `5325ad99166cb3168abe83c7e4ce6040c6f10e53118c3885a7fc22207ac4995e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`

@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `FT`, `8`, `8.1` (*8.1/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b20a7c5cdafa3b999b83f21dd26b98bf4082d13d/8.1/Dockerfile)
--	[`LTS-2015`, `LTS`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/7.10/Dockerfile)
--	[`7.4` (*7.4/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/7.4/Dockerfile)
--	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/6.0/Dockerfile)
+-	[`latest`, `FT`, `8`, `8.1` (*8.1/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/09c50e490336f28caf1278c6bffaa02e79c0f4b4/8.1/Dockerfile)
+-	[`LTS-2015`, `LTS`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/09c50e490336f28caf1278c6bffaa02e79c0f4b4/7.10/Dockerfile)
+-	[`7.4` (*7.4/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/09c50e490336f28caf1278c6bffaa02e79c0f4b4/7.4/Dockerfile)
+-	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/09c50e490336f28caf1278c6bffaa02e79c0f4b4/6.0/Dockerfile)
 
 [![](https://badge.imagelayers.io/nuxeo:latest.svg)](https://imagelayers.io/?images=nuxeo:latest,nuxeo:LTS-2015,nuxeo:7.4,nuxeo:LTS-2014)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/nuxeo`)](https://github.com/docker-library/official-images/blob/master/library/nuxeo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/nuxeo`)](https://github.com/docker-library/official-images/blob/master/library/nuxeo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnuxeo).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `nuxeo/tag-details.md` file](https://github.com/docker-library/docs/blob/master/nuxeo/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -172,7 +172,7 @@ View [license information](http://doc.nuxeo.com/x/gIK7) for the software contain
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -186,7 +186,7 @@ Documentation for this image is stored in the [`nuxeo/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/nuxeo/docker-nuxeor/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/nuxeo/docker-nuxeor/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

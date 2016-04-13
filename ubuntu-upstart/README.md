@@ -10,7 +10,7 @@ This image is officially deprecated (especially now that Upstart is no longer th
 
 [![](https://badge.imagelayers.io/ubuntu-upstart:latest.svg)](https://imagelayers.io/?images=ubuntu-upstart:12.04,ubuntu-upstart:14.04,ubuntu-upstart:14.10)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu-upstart`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu-upstart). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu-upstart`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu-upstart). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fubuntu-upstart).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ubuntu-upstart/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ubuntu-upstart/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -24,7 +24,7 @@ Upstart is an event-based replacement for the traditional init daemon – the me
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

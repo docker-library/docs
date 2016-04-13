@@ -5,7 +5,7 @@
 
 [![](https://badge.imagelayers.io/photon:latest.svg)](https://imagelayers.io/?images=photon:1.0RC,photon:1.0TP2)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/photon`)](https://github.com/docker-library/official-images/blob/master/library/photon). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/photon`)](https://github.com/docker-library/official-images/blob/master/library/photon). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphoton).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `photon/tag-details.md` file](https://github.com/docker-library/docs/blob/master/photon/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -39,7 +39,7 @@ View [license information](https://github.com/vmware/photon/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -53,7 +53,7 @@ Documentation for this image is stored in the [`photon/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/frapposelli/photon-docker-image/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/frapposelli/photon-docker-image/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

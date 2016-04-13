@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2-4.0.1`, `2-4.0`, `2-4`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/3826e2d8095e0dda578aca3fa7fb72c3e7aaa47e/2/Dockerfile)
--	[`2-4.0.1-onbuild`, `2-4.0-onbuild`, `2-4-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
--	[`2-4.0.1-slim`, `2-4.0-slim`, `2-4-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/3826e2d8095e0dda578aca3fa7fb72c3e7aaa47e/2/slim/Dockerfile)
--	[`3-2.4.0`, `3-2.4`, `3-2`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/528795c882a9cb55e713586aeb3eb71707438c69/3/Dockerfile)
+-	[`2-5.0.1`, `2-5.0`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/95f69aef340eeb9ded9730f8b10bf8bb03da770c/2/Dockerfile)
+-	[`2-5.0.1-onbuild`, `2-5.0-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
+-	[`2-5.0.1-slim`, `2-5.0-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/95f69aef340eeb9ded9730f8b10bf8bb03da770c/2/slim/Dockerfile)
+-	[`3-2.4.0`, `3-2.4`, `3-2`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/88f8504681b844c441225a65d851c17037bcac37/3/Dockerfile)
 -	[`3-2.4.0-onbuild`, `3-2.4-onbuild`, `3-2-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
--	[`3-2.4.0-slim`, `3-2.4-slim`, `3-2-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/528795c882a9cb55e713586aeb3eb71707438c69/3/slim/Dockerfile)
+-	[`3-2.4.0-slim`, `3-2.4-slim`, `3-2-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/88f8504681b844c441225a65d851c17037bcac37/3/slim/Dockerfile)
 
-[![](https://badge.imagelayers.io/pypy:latest.svg)](https://imagelayers.io/?images=pypy:2-4.0.1,pypy:2-4.0.1-onbuild,pypy:2-4.0.1-slim,pypy:3-2.4.0,pypy:3-2.4.0-onbuild,pypy:3-2.4.0-slim)
+[![](https://badge.imagelayers.io/pypy:latest.svg)](https://imagelayers.io/?images=pypy:2-5.0.1,pypy:2-5.0.1-onbuild,pypy:2-5.0.1-slim,pypy:3-2.4.0,pypy:3-2.4.0-onbuild,pypy:3-2.4.0-slim)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/pypy`)](https://github.com/docker-library/official-images/blob/master/library/pypy). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/pypy`)](https://github.com/docker-library/official-images/blob/master/library/pypy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpypy).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `pypy/tag-details.md` file](https://github.com/docker-library/docs/blob/master/pypy/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -88,7 +88,7 @@ View [license information](https://bitbucket.org/pypy/pypy/src/c3ff0dd6252b6ba0d
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -102,7 +102,7 @@ Documentation for this image is stored in the [`pypy/` directory](https://github
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/pypy/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/pypy/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `7`, `7.2` (*OracleLinux/7.2/Dockerfile*)](https://github.com/oracle/docker-images/blob/051054d1c799a07ca9999f7232d357f97d50ce24/OracleLinux/7.2/Dockerfile)
--	[`7.1` (*OracleLinux/7.1/Dockerfile*)](https://github.com/oracle/docker-images/blob/051054d1c799a07ca9999f7232d357f97d50ce24/OracleLinux/7.1/Dockerfile)
--	[`7.0` (*OracleLinux/7.0/Dockerfile*)](https://github.com/oracle/docker-images/blob/051054d1c799a07ca9999f7232d357f97d50ce24/OracleLinux/7.0/Dockerfile)
--	[`6`, `6.7` (*OracleLinux/6.7/Dockerfile*)](https://github.com/oracle/docker-images/blob/051054d1c799a07ca9999f7232d357f97d50ce24/OracleLinux/6.7/Dockerfile)
--	[`6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker-images/blob/051054d1c799a07ca9999f7232d357f97d50ce24/OracleLinux/6.6/Dockerfile)
--	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker-images/blob/051054d1c799a07ca9999f7232d357f97d50ce24/OracleLinux/5.11/Dockerfile)
+-	[`latest`, `7`, `7.2` (*OracleLinux/7.2/Dockerfile*)](https://github.com/oracle/docker-images/blob/a6ad30edbf914f8b14714b005a1afb2083e6a345/OracleLinux/7.2/Dockerfile)
+-	[`7.1` (*OracleLinux/7.1/Dockerfile*)](https://github.com/oracle/docker-images/blob/a6ad30edbf914f8b14714b005a1afb2083e6a345/OracleLinux/7.1/Dockerfile)
+-	[`7.0` (*OracleLinux/7.0/Dockerfile*)](https://github.com/oracle/docker-images/blob/a6ad30edbf914f8b14714b005a1afb2083e6a345/OracleLinux/7.0/Dockerfile)
+-	[`6`, `6.7` (*OracleLinux/6.7/Dockerfile*)](https://github.com/oracle/docker-images/blob/a6ad30edbf914f8b14714b005a1afb2083e6a345/OracleLinux/6.7/Dockerfile)
+-	[`6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker-images/blob/a6ad30edbf914f8b14714b005a1afb2083e6a345/OracleLinux/6.6/Dockerfile)
+-	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker-images/blob/a6ad30edbf914f8b14714b005a1afb2083e6a345/OracleLinux/5.11/Dockerfile)
 
 [![](https://badge.imagelayers.io/oraclelinux:latest.svg)](https://imagelayers.io/?images=oraclelinux:latest,oraclelinux:7.1,oraclelinux:7.0,oraclelinux:6,oraclelinux:6.6,oraclelinux:5)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/oraclelinux`)](https://github.com/docker-library/official-images/blob/master/library/oraclelinux). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/oraclelinux`)](https://github.com/docker-library/official-images/blob/master/library/oraclelinux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Foraclelinux).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `oraclelinux/tag-details.md` file](https://github.com/docker-library/docs/blob/master/oraclelinux/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -25,9 +25,9 @@ The Oracle Linux images are intended for use in the **FROM** field of an applica
 
 ## Official Resources
 
--	[Learn more about Oracle Linux](http://oracle.com/linux)
+-	[Learn more about Oracle Linux](https://oracle.com/linux)
 -	[Unbreakable Linux Network](https://linux.oracle.com)
--	[Oracle Public Yum](http://public-yum.oracle.com)
+-	[Oracle Linux Yum Server](http://yum.oracle.com)
 
 ## Social media resources
 

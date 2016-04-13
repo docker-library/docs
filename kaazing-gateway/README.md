@@ -4,7 +4,7 @@
 
 [![](https://badge.imagelayers.io/kaazing-gateway:latest.svg)](https://imagelayers.io/?images=kaazing-gateway:latest)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/kaazing-gateway`)](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/kaazing-gateway`)](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkaazing-gateway).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `kaazing-gateway/tag-details.md` file](https://github.com/docker-library/docs/blob/master/kaazing-gateway/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -41,14 +41,14 @@ For information on the syntax of the Kaazing Gateway configuration files, see [t
 If you wish to adapt the default Gateway configuration file, you can use a command such as the following to copy the file from a running Kaazing Gateway container:
 
 ```console
-$ docker cp some-kaazing:/conf/gateway-config-minimal.xml /some/gateway-config.xml
+$ docker cp some-kaazing:/kaazing-gateway/conf/gateway-config-minimal.xml /some/gateway-config.xml
 ```
 
 As above, this can also be accomplished more cleanly using a simple `Dockerfile`:
 
 ```dockerfile
 FROM kaazing-gateway
-COPY gateway-config.xml /conf/gateway-config.xml
+COPY gateway-config.xml conf/gateway-config.xml
 ```
 
 Then, build with `docker build -t some-custom-kaazing-gateway .` and run:
@@ -63,7 +63,7 @@ View [license information](https://github.com/kaazing/gateway/blob/master/LICENS
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -77,7 +77,7 @@ Documentation for this image is stored in the [`kaazing-gateway/` directory](htt
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/kaazing/gateway.docker/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/kaazing/gateway.docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

@@ -1,11 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.42`, `7` (*7/Dockerfile*)](https://github.com/docker-library/drupal/blob/e1b4c2b894645c6919849de16d82a2a0da2ea5c3/7/Dockerfile)
--	[`8.0.3`, `8.0`, `8`, `latest` (*8/Dockerfile*)](https://github.com/docker-library/drupal/blob/3b7218a46cdd867a93b6ab7dde514555c05a8018/8/Dockerfile)
+-	[`7.43-apache`, `7.43`, `7-apache`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/865f61938fe7f37359d8feeb13bb03bff8f11387/7/apache/Dockerfile)
+-	[`7.43-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/865f61938fe7f37359d8feeb13bb03bff8f11387/7/fpm/Dockerfile)
+-	[`8.0.6-apache`, `8.0.6`, `8.0-apache`, `8.0`, `8-apache`, `8`, `apache`, `latest` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/54f9aa4a327fd221cacf2f59b71682ca4004d231/8.0/apache/Dockerfile)
+-	[`8.0.6-fpm`, `8.0-fpm`, `8-fpm`, `fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/280071cdbb819aae47263463a32bf217741f2a0f/8.0/fpm/Dockerfile)
+-	[`8.1.0-rc1-apache`, `8.1.0-rc1`, `8.1.0-apache`, `8.1.0`, `8.1-apache`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/7f85fe228664142ed30f1e6244e2ff9022ab02eb/8.1/apache/Dockerfile)
+-	[`8.1.0-rc1-fpm`, `8.1.0-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/7f85fe228664142ed30f1e6244e2ff9022ab02eb/8.1/fpm/Dockerfile)
 
-[![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.42,drupal:8.0.3)
+[![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.43-apache,drupal:7.43-fpm,drupal:8.0.6-apache,drupal:8.0.6-fpm,drupal:8.1.0-rc1-apache,drupal:8.1.0-rc1-fpm)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdrupal).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `drupal/tag-details.md` file](https://github.com/docker-library/docs/blob/master/drupal/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -74,7 +78,7 @@ View [license information](https://www.drupal.org/licensing/faq) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -88,7 +92,7 @@ Documentation for this image is stored in the [`drupal/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/drupal/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/drupal/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

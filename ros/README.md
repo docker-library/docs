@@ -11,7 +11,7 @@
 
 [![](https://badge.imagelayers.io/ros:latest.svg)](https://imagelayers.io/?images=ros:indigo-ros-core,ros:indigo-ros-base,ros:indigo-robot,ros:indigo-perception,ros:jade-ros-core,ros:jade-ros-base,ros:jade-robot,ros:jade-perception)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fros).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ros/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ros/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -263,7 +263,7 @@ While the core parts of ROS are licensed under the BSD license, other licenses a
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -277,7 +277,7 @@ Documentation for this image is stored in the [`ros/` directory](https://github.
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/osrf/docker_images/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/osrf/docker_images/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

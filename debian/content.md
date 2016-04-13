@@ -15,6 +15,8 @@ http://httpredir.debian.org/debian testing main`).
 
 The mirror of choice for these images is [the httpredir.debian.org redirecting mirror](http://httpredir.debian.org) so that it's as close to optimal as possible, regardless of location or connection. See the [httpredir homepage](http://httpredir.debian.org) for more information.
 
+If you find yourself needing a Debian release which is EOL (and thus only available from [archive.debian.org](http://archive.debian.org)), you should check out [the `debian/eol` image](https://hub.docker.com/r/debian/eol/), which includes tags for Debian releases as far back as Potato (Debian 2.2), the first release to fully utilize APT.
+
 ## How It's Made
 
 If you are curious about what goes into creating this image, please see [`contrib/mkimage.sh` in `github.com/docker/docker`](https://github.com/docker/docker/blob/master/contrib/mkimage.sh) (and [`contrib/mkimage/debootstrap` in the same repo](https://github.com/docker/docker/blob/master/contrib/mkimage/debootstrap)).

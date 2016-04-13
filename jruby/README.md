@@ -9,7 +9,7 @@
 
 [![](https://badge.imagelayers.io/jruby:latest.svg)](https://imagelayers.io/?images=jruby:latest,jruby:9.0-jdk,jruby:9-onbuild,jruby:1.7,jruby:1.7-jdk,jruby:1.7-onbuild)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjruby).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jruby/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jruby/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -67,7 +67,7 @@ View [license information](https://github.com/jruby/jruby/blob/master/COPYING) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -81,7 +81,7 @@ Documentation for this image is stored in the [`jruby/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/cpuguy83/docker-jruby/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/cpuguy83/docker-jruby/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

@@ -2,19 +2,19 @@
 
 # Tags of `ghost`
 
--	[`ghost:0.7.6`](#ghost076)
+-	[`ghost:0.7.8`](#ghost078)
 -	[`ghost:0.7`](#ghost07)
 -	[`ghost:0`](#ghost0)
 -	[`ghost:latest`](#ghostlatest)
 
-## `ghost:0.7.6`
+## `ghost:0.7.8`
 
 ```console
-$ docker pull library/ghost@sha256:b730c1adaf4b0e3e961d616a2701407e83354d7d81030949ca4de46f4d4d819d
+$ docker pull library/ghost@sha256:e517fdd05345353dd8a5eb31148452f772886c4ef1d1fbcd6f7b146a7f120f08
 ```
 
--	Total Virtual Size: 352.2 MB (352166018 bytes)
--	Total v2 Content-Length: 105.8 MB (105780810 bytes)
+-	Total Virtual Size: 353.9 MB (353894622 bytes)
+-	Total v2 Content-Length: 106.1 MB (106069589 bytes)
 
 ### Layers (23)
 
@@ -156,100 +156,102 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	v2 Content-Length: 4.3 KB (4343 bytes)
 -	v2 Last-Modified: Mon, 01 Feb 2016 21:09:36 GMT
 
-#### `ee3e0e48087041f9595424bef91c2ba03fac261ec65a9b8f044f0d7b24cbd9c2`
+#### `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 
 ```dockerfile
-RUN set -x \
-	&& apt-get update \
-	&& apt-get install -y --no-install-recommends curl ca-certificates \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+		ca-certificates \
+		wget \
+	--no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 27 Jan 2016 00:47:32 GMT
+-	Created: Wed, 02 Mar 2016 17:09:30 GMT
 -	Parent Layer: `10ecd54f2163ee8f8cbf61c37541672aa13a3cc52a26344b85a42887773ad916`
--	Docker Version: 1.8.3
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:064304e48acd041a5ed353afd666833b863937855ac1c3510dddb986e15a4d71`
--	v2 Content-Length: 168.0 B
--	v2 Last-Modified: Mon, 01 Feb 2016 21:09:33 GMT
+-	v2 Blob: `sha256:18a2909c4b728bf681e5dce1e567abce3b174b60e206f95632ead4d3498e9bc8`
+-	v2 Content-Length: 167.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:58 GMT
 
-#### `4cf40c84c4038217a93d675d0d47b486e0dea3c59e34ff1aca21ee5a3dfc6ded`
-
-```dockerfile
-RUN gpg --keyserver pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
-```
-
--	Created: Wed, 27 Jan 2016 00:47:35 GMT
--	Parent Layer: `ee3e0e48087041f9595424bef91c2ba03fac261ec65a9b8f044f0d7b24cbd9c2`
--	Docker Version: 1.8.3
--	Virtual Size: 161.9 KB (161924 bytes)
--	v2 Blob: `sha256:5ef3dfcb5b8e0735e556f1ade25508eb4913ad810dd170a67e35c6829c558164`
--	v2 Content-Length: 153.8 KB (153843 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:09:30 GMT
-
-#### `28d20494dda616b8149e07dcd5c97ded232c54ba8e45e7d82df00ded16ae0ff2`
+#### `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
 
 ```dockerfile
-RUN arch="$(dpkg --print-architecture)" \
-	&& set -x \
-	&& curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$arch" \
-	&& curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$arch.asc" \
-	&& gpg --verify /usr/local/bin/gosu.asc \
-	&& rm /usr/local/bin/gosu.asc \
-	&& chmod +x /usr/local/bin/gosu
+ENV GOSU_VERSION=1.7
 ```
 
--	Created: Wed, 27 Jan 2016 00:47:39 GMT
--	Parent Layer: `4cf40c84c4038217a93d675d0d47b486e0dea3c59e34ff1aca21ee5a3dfc6ded`
--	Docker Version: 1.8.3
--	Virtual Size: 2.7 MB (2698808 bytes)
--	v2 Blob: `sha256:1ca96bf8e973a6c8593aebca90e9bfcd1ba4d40eae59631efe8e7de6a496efc2`
--	v2 Content-Length: 807.9 KB (807946 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:08:45 GMT
-
-#### `f05eef4c5cacb7244bbce9c1d153e38ec96da7f10ce48feaca075fef1cc16195`
-
-```dockerfile
-ENV GHOST_SOURCE=/usr/src/ghost
-```
-
--	Created: Wed, 27 Jan 2016 00:47:40 GMT
--	Parent Layer: `28d20494dda616b8149e07dcd5c97ded232c54ba8e45e7d82df00ded16ae0ff2`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `dc54ca04f8da8a75b6fb24e2b0f81e7527fbc2367fad94201649fc0db43d613f`
-
-```dockerfile
-WORKDIR /usr/src/ghost
-```
-
--	Created: Wed, 27 Jan 2016 00:47:40 GMT
--	Parent Layer: `f05eef4c5cacb7244bbce9c1d153e38ec96da7f10ce48feaca075fef1cc16195`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f3d1416965e400412cfcd5f0e67b2761f0b144aff84422e0b146acb96b777cfe`
-
-```dockerfile
-ENV GHOST_VERSION=0.7.6
-```
-
--	Created: Wed, 03 Feb 2016 19:11:03 GMT
--	Parent Layer: `dc54ca04f8da8a75b6fb24e2b0f81e7527fbc2367fad94201649fc0db43d613f`
+-	Created: Wed, 02 Mar 2016 17:09:31 GMT
+-	Parent Layer: `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ecd41fcd6ac2f0216e92f1c56cb7cabd062114eae097346c92cb2cd0a2c8ec9f`
+#### `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
+
+```dockerfile
+RUN set -x \
+	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" \
+	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" \
+	&& export GNUPGHOME="$(mktemp -d)" \
+	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \
+	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu \
+	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc \
+	&& chmod +x /usr/local/bin/gosu \
+	&& gosu nobody true
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:37 GMT
+-	Parent Layer: `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.7 MB (2698808 bytes)
+-	v2 Blob: `sha256:f4c1dbadb4eb248a39747802bf2162b215a0000280d29584ae3a7ace424a03e0`
+-	v2 Content-Length: 807.9 KB (807938 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:53 GMT
+
+#### `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
+
+```dockerfile
+ENV GHOST_SOURCE=/usr/src/ghost
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:38 GMT
+-	Parent Layer: `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
+
+```dockerfile
+WORKDIR /usr/src/ghost
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:39 GMT
+-	Parent Layer: `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
+
+```dockerfile
+ENV GHOST_VERSION=0.7.8
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:39 GMT
+-	Parent Layer: `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -260,7 +262,7 @@ RUN buildDeps=' \
 	' \
 	&& set -x \
 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
-	&& curl -sSL "https://ghost.org/archives/ghost-${GHOST_VERSION}.zip" -o ghost.zip \
+	&& wget -O ghost.zip "https://ghost.org/archives/ghost-${GHOST_VERSION}.zip" \
 	&& unzip ghost.zip \
 	&& npm install --production \
 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps \
@@ -269,106 +271,106 @@ RUN buildDeps=' \
 	&& rm -rf /tmp/npm*
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:09 GMT
--	Parent Layer: `f3d1416965e400412cfcd5f0e67b2761f0b144aff84422e0b146acb96b777cfe`
+-	Created: Wed, 02 Mar 2016 17:11:12 GMT
+-	Parent Layer: `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
 -	Docker Version: 1.9.1
--	Virtual Size: 143.5 MB (143538237 bytes)
--	v2 Blob: `sha256:4a1a76c002820e5d06b377cc0d7b7a6c598bcd29123d7c09880ba3a6950cda72`
--	v2 Content-Length: 23.0 MB (23028031 bytes)
--	v2 Last-Modified: Wed, 03 Feb 2016 19:44:09 GMT
+-	Virtual Size: 145.4 MB (145428726 bytes)
+-	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
+-	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
-#### `acd81abddf1d9dcff3897a643e6b82bc21ed3d5e94171cd6d31078e13a355b27`
+#### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
 ```dockerfile
 ENV GHOST_CONTENT=/var/lib/ghost
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:12 GMT
--	Parent Layer: `ecd41fcd6ac2f0216e92f1c56cb7cabd062114eae097346c92cb2cd0a2c8ec9f`
+-	Created: Wed, 02 Mar 2016 17:11:17 GMT
+-	Parent Layer: `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b10a1f2f3871fdb7a3f3dbfe16f9f920a23ce7191e7371aba111ffd0df6ef76f`
+#### `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 
 ```dockerfile
 RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:14 GMT
--	Parent Layer: `acd81abddf1d9dcff3897a643e6b82bc21ed3d5e94171cd6d31078e13a355b27`
+-	Created: Wed, 02 Mar 2016 17:11:18 GMT
+-	Parent Layer: `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:f9963e3fa904940d4c9db38718c37060fd90e0c5e586c650c5ec84044a421c3e`
--	v2 Content-Length: 138.0 B
--	v2 Last-Modified: Wed, 03 Feb 2016 19:43:53 GMT
+-	v2 Blob: `sha256:564b28ac945e012f2989f7b0a694354d34beee5170e81dba819799764fdfae5f`
+-	v2 Content-Length: 137.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:17 GMT
 
-#### `79b7cc0feeadf01f5a09514f99728cc443d30c58e4d1696535f28c8558dcac0c`
+#### `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 
 ```dockerfile
 VOLUME [/var/lib/ghost]
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:14 GMT
--	Parent Layer: `b10a1f2f3871fdb7a3f3dbfe16f9f920a23ce7191e7371aba111ffd0df6ef76f`
+-	Created: Wed, 02 Mar 2016 17:11:19 GMT
+-	Parent Layer: `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6ee437fbfb675e856be5b6d94394f8ae5a873a2c9a5011f03edd08d61367bd07`
+#### `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 
 ```dockerfile
-COPY file:0f74adbded832aab834ad580f6cd1b5bb1e590b8e74beb16ee810e7b358eef5a in /entrypoint.sh
+COPY file:b41fe7c683843b65a8ed24dad23de5e0d8320d0944dc2d48ad5905cfd0ef7959 in /entrypoint.sh
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:15 GMT
--	Parent Layer: `79b7cc0feeadf01f5a09514f99728cc443d30c58e4d1696535f28c8558dcac0c`
+-	Created: Wed, 02 Mar 2016 17:11:19 GMT
+-	Parent Layer: `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 -	Docker Version: 1.9.1
--	Virtual Size: 657.0 B
--	v2 Blob: `sha256:2915e121ee5d487dd3045eaad9309815cd6b262f6c3412e8e8e4f75917116ccc`
--	v2 Content-Length: 456.0 B
--	v2 Last-Modified: Fri, 17 Apr 2015 03:15:47 GMT
+-	Virtual Size: 696.0 B
+-	v2 Blob: `sha256:500d2054b4fc9ee6b81cc48f4312353a62ab287312b79de82914ef7bd81e98d9`
+-	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:13 GMT
 
-#### `e98434167a2668de62660cf72bceb931cc92c618f4d11d85181dbf5c467012ce`
+#### `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:16 GMT
--	Parent Layer: `6ee437fbfb675e856be5b6d94394f8ae5a873a2c9a5011f03edd08d61367bd07`
+-	Created: Wed, 02 Mar 2016 17:11:20 GMT
+-	Parent Layer: `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `eb4f96c19d2dfd7b735ebf1ac61a486bbe8b24077067724301f513fc8e0dd7ac`
+#### `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 
 ```dockerfile
 EXPOSE 2368/tcp
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:16 GMT
--	Parent Layer: `e98434167a2668de62660cf72bceb931cc92c618f4d11d85181dbf5c467012ce`
+-	Created: Wed, 02 Mar 2016 17:11:21 GMT
+-	Parent Layer: `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3818a7feafe63b8ac8f4c5766fbb89c6d08fcb0fa861fe1f96dbef04d92e3740`
+#### `7e07760ac7a10a3a5fa832400ba3c992cd2f2a2a6a2143fc56994ac433ffa574`
 
 ```dockerfile
 CMD ["npm" "start"]
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:17 GMT
--	Parent Layer: `eb4f96c19d2dfd7b735ebf1ac61a486bbe8b24077067724301f513fc8e0dd7ac`
+-	Created: Wed, 02 Mar 2016 17:11:21 GMT
+-	Parent Layer: `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -378,11 +380,11 @@ CMD ["npm" "start"]
 ## `ghost:0.7`
 
 ```console
-$ docker pull library/ghost@sha256:18a231711664ddb7c6b5946f7af39764407c546fe85e89c8ae593d17a0c63d2d
+$ docker pull library/ghost@sha256:5f0625fb6af07ddbc27ed820e047e307a37fc8d5c6eda97f4ec7cc26993e9acd
 ```
 
--	Total Virtual Size: 352.2 MB (352166018 bytes)
--	Total v2 Content-Length: 105.8 MB (105780810 bytes)
+-	Total Virtual Size: 353.9 MB (353894622 bytes)
+-	Total v2 Content-Length: 106.1 MB (106069589 bytes)
 
 ### Layers (23)
 
@@ -524,100 +526,102 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	v2 Content-Length: 4.3 KB (4343 bytes)
 -	v2 Last-Modified: Mon, 01 Feb 2016 21:09:36 GMT
 
-#### `ee3e0e48087041f9595424bef91c2ba03fac261ec65a9b8f044f0d7b24cbd9c2`
+#### `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 
 ```dockerfile
-RUN set -x \
-	&& apt-get update \
-	&& apt-get install -y --no-install-recommends curl ca-certificates \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+		ca-certificates \
+		wget \
+	--no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 27 Jan 2016 00:47:32 GMT
+-	Created: Wed, 02 Mar 2016 17:09:30 GMT
 -	Parent Layer: `10ecd54f2163ee8f8cbf61c37541672aa13a3cc52a26344b85a42887773ad916`
--	Docker Version: 1.8.3
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:064304e48acd041a5ed353afd666833b863937855ac1c3510dddb986e15a4d71`
--	v2 Content-Length: 168.0 B
--	v2 Last-Modified: Mon, 01 Feb 2016 21:09:33 GMT
+-	v2 Blob: `sha256:18a2909c4b728bf681e5dce1e567abce3b174b60e206f95632ead4d3498e9bc8`
+-	v2 Content-Length: 167.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:58 GMT
 
-#### `4cf40c84c4038217a93d675d0d47b486e0dea3c59e34ff1aca21ee5a3dfc6ded`
-
-```dockerfile
-RUN gpg --keyserver pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
-```
-
--	Created: Wed, 27 Jan 2016 00:47:35 GMT
--	Parent Layer: `ee3e0e48087041f9595424bef91c2ba03fac261ec65a9b8f044f0d7b24cbd9c2`
--	Docker Version: 1.8.3
--	Virtual Size: 161.9 KB (161924 bytes)
--	v2 Blob: `sha256:5ef3dfcb5b8e0735e556f1ade25508eb4913ad810dd170a67e35c6829c558164`
--	v2 Content-Length: 153.8 KB (153843 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:09:30 GMT
-
-#### `28d20494dda616b8149e07dcd5c97ded232c54ba8e45e7d82df00ded16ae0ff2`
+#### `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
 
 ```dockerfile
-RUN arch="$(dpkg --print-architecture)" \
-	&& set -x \
-	&& curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$arch" \
-	&& curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$arch.asc" \
-	&& gpg --verify /usr/local/bin/gosu.asc \
-	&& rm /usr/local/bin/gosu.asc \
-	&& chmod +x /usr/local/bin/gosu
+ENV GOSU_VERSION=1.7
 ```
 
--	Created: Wed, 27 Jan 2016 00:47:39 GMT
--	Parent Layer: `4cf40c84c4038217a93d675d0d47b486e0dea3c59e34ff1aca21ee5a3dfc6ded`
--	Docker Version: 1.8.3
--	Virtual Size: 2.7 MB (2698808 bytes)
--	v2 Blob: `sha256:1ca96bf8e973a6c8593aebca90e9bfcd1ba4d40eae59631efe8e7de6a496efc2`
--	v2 Content-Length: 807.9 KB (807946 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:08:45 GMT
-
-#### `f05eef4c5cacb7244bbce9c1d153e38ec96da7f10ce48feaca075fef1cc16195`
-
-```dockerfile
-ENV GHOST_SOURCE=/usr/src/ghost
-```
-
--	Created: Wed, 27 Jan 2016 00:47:40 GMT
--	Parent Layer: `28d20494dda616b8149e07dcd5c97ded232c54ba8e45e7d82df00ded16ae0ff2`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `dc54ca04f8da8a75b6fb24e2b0f81e7527fbc2367fad94201649fc0db43d613f`
-
-```dockerfile
-WORKDIR /usr/src/ghost
-```
-
--	Created: Wed, 27 Jan 2016 00:47:40 GMT
--	Parent Layer: `f05eef4c5cacb7244bbce9c1d153e38ec96da7f10ce48feaca075fef1cc16195`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f3d1416965e400412cfcd5f0e67b2761f0b144aff84422e0b146acb96b777cfe`
-
-```dockerfile
-ENV GHOST_VERSION=0.7.6
-```
-
--	Created: Wed, 03 Feb 2016 19:11:03 GMT
--	Parent Layer: `dc54ca04f8da8a75b6fb24e2b0f81e7527fbc2367fad94201649fc0db43d613f`
+-	Created: Wed, 02 Mar 2016 17:09:31 GMT
+-	Parent Layer: `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ecd41fcd6ac2f0216e92f1c56cb7cabd062114eae097346c92cb2cd0a2c8ec9f`
+#### `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
+
+```dockerfile
+RUN set -x \
+	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" \
+	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" \
+	&& export GNUPGHOME="$(mktemp -d)" \
+	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \
+	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu \
+	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc \
+	&& chmod +x /usr/local/bin/gosu \
+	&& gosu nobody true
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:37 GMT
+-	Parent Layer: `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.7 MB (2698808 bytes)
+-	v2 Blob: `sha256:f4c1dbadb4eb248a39747802bf2162b215a0000280d29584ae3a7ace424a03e0`
+-	v2 Content-Length: 807.9 KB (807938 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:53 GMT
+
+#### `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
+
+```dockerfile
+ENV GHOST_SOURCE=/usr/src/ghost
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:38 GMT
+-	Parent Layer: `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
+
+```dockerfile
+WORKDIR /usr/src/ghost
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:39 GMT
+-	Parent Layer: `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
+
+```dockerfile
+ENV GHOST_VERSION=0.7.8
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:39 GMT
+-	Parent Layer: `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -628,7 +632,7 @@ RUN buildDeps=' \
 	' \
 	&& set -x \
 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
-	&& curl -sSL "https://ghost.org/archives/ghost-${GHOST_VERSION}.zip" -o ghost.zip \
+	&& wget -O ghost.zip "https://ghost.org/archives/ghost-${GHOST_VERSION}.zip" \
 	&& unzip ghost.zip \
 	&& npm install --production \
 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps \
@@ -637,106 +641,106 @@ RUN buildDeps=' \
 	&& rm -rf /tmp/npm*
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:09 GMT
--	Parent Layer: `f3d1416965e400412cfcd5f0e67b2761f0b144aff84422e0b146acb96b777cfe`
+-	Created: Wed, 02 Mar 2016 17:11:12 GMT
+-	Parent Layer: `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
 -	Docker Version: 1.9.1
--	Virtual Size: 143.5 MB (143538237 bytes)
--	v2 Blob: `sha256:4a1a76c002820e5d06b377cc0d7b7a6c598bcd29123d7c09880ba3a6950cda72`
--	v2 Content-Length: 23.0 MB (23028031 bytes)
--	v2 Last-Modified: Wed, 03 Feb 2016 19:44:09 GMT
+-	Virtual Size: 145.4 MB (145428726 bytes)
+-	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
+-	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
-#### `acd81abddf1d9dcff3897a643e6b82bc21ed3d5e94171cd6d31078e13a355b27`
+#### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
 ```dockerfile
 ENV GHOST_CONTENT=/var/lib/ghost
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:12 GMT
--	Parent Layer: `ecd41fcd6ac2f0216e92f1c56cb7cabd062114eae097346c92cb2cd0a2c8ec9f`
+-	Created: Wed, 02 Mar 2016 17:11:17 GMT
+-	Parent Layer: `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b10a1f2f3871fdb7a3f3dbfe16f9f920a23ce7191e7371aba111ffd0df6ef76f`
+#### `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 
 ```dockerfile
 RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:14 GMT
--	Parent Layer: `acd81abddf1d9dcff3897a643e6b82bc21ed3d5e94171cd6d31078e13a355b27`
+-	Created: Wed, 02 Mar 2016 17:11:18 GMT
+-	Parent Layer: `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:f9963e3fa904940d4c9db38718c37060fd90e0c5e586c650c5ec84044a421c3e`
--	v2 Content-Length: 138.0 B
--	v2 Last-Modified: Wed, 03 Feb 2016 19:43:53 GMT
+-	v2 Blob: `sha256:564b28ac945e012f2989f7b0a694354d34beee5170e81dba819799764fdfae5f`
+-	v2 Content-Length: 137.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:17 GMT
 
-#### `79b7cc0feeadf01f5a09514f99728cc443d30c58e4d1696535f28c8558dcac0c`
+#### `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 
 ```dockerfile
 VOLUME [/var/lib/ghost]
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:14 GMT
--	Parent Layer: `b10a1f2f3871fdb7a3f3dbfe16f9f920a23ce7191e7371aba111ffd0df6ef76f`
+-	Created: Wed, 02 Mar 2016 17:11:19 GMT
+-	Parent Layer: `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6ee437fbfb675e856be5b6d94394f8ae5a873a2c9a5011f03edd08d61367bd07`
+#### `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 
 ```dockerfile
-COPY file:0f74adbded832aab834ad580f6cd1b5bb1e590b8e74beb16ee810e7b358eef5a in /entrypoint.sh
+COPY file:b41fe7c683843b65a8ed24dad23de5e0d8320d0944dc2d48ad5905cfd0ef7959 in /entrypoint.sh
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:15 GMT
--	Parent Layer: `79b7cc0feeadf01f5a09514f99728cc443d30c58e4d1696535f28c8558dcac0c`
+-	Created: Wed, 02 Mar 2016 17:11:19 GMT
+-	Parent Layer: `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 -	Docker Version: 1.9.1
--	Virtual Size: 657.0 B
--	v2 Blob: `sha256:2915e121ee5d487dd3045eaad9309815cd6b262f6c3412e8e8e4f75917116ccc`
--	v2 Content-Length: 456.0 B
--	v2 Last-Modified: Fri, 17 Apr 2015 03:15:47 GMT
+-	Virtual Size: 696.0 B
+-	v2 Blob: `sha256:500d2054b4fc9ee6b81cc48f4312353a62ab287312b79de82914ef7bd81e98d9`
+-	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:13 GMT
 
-#### `e98434167a2668de62660cf72bceb931cc92c618f4d11d85181dbf5c467012ce`
+#### `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:16 GMT
--	Parent Layer: `6ee437fbfb675e856be5b6d94394f8ae5a873a2c9a5011f03edd08d61367bd07`
+-	Created: Wed, 02 Mar 2016 17:11:20 GMT
+-	Parent Layer: `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `eb4f96c19d2dfd7b735ebf1ac61a486bbe8b24077067724301f513fc8e0dd7ac`
+#### `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 
 ```dockerfile
 EXPOSE 2368/tcp
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:16 GMT
--	Parent Layer: `e98434167a2668de62660cf72bceb931cc92c618f4d11d85181dbf5c467012ce`
+-	Created: Wed, 02 Mar 2016 17:11:21 GMT
+-	Parent Layer: `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3818a7feafe63b8ac8f4c5766fbb89c6d08fcb0fa861fe1f96dbef04d92e3740`
+#### `7e07760ac7a10a3a5fa832400ba3c992cd2f2a2a6a2143fc56994ac433ffa574`
 
 ```dockerfile
 CMD ["npm" "start"]
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:17 GMT
--	Parent Layer: `eb4f96c19d2dfd7b735ebf1ac61a486bbe8b24077067724301f513fc8e0dd7ac`
+-	Created: Wed, 02 Mar 2016 17:11:21 GMT
+-	Parent Layer: `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -746,11 +750,11 @@ CMD ["npm" "start"]
 ## `ghost:0`
 
 ```console
-$ docker pull library/ghost@sha256:5c7c2994d6a58df6dff25d3b6ed33d0fe6bc98d4a6c2fd24fad414f0ed84189d
+$ docker pull library/ghost@sha256:d428b6496793ef6911180987a9ac4a95b43ab1895c33b42df20484298205dfa1
 ```
 
--	Total Virtual Size: 352.2 MB (352166018 bytes)
--	Total v2 Content-Length: 105.8 MB (105780810 bytes)
+-	Total Virtual Size: 353.9 MB (353894622 bytes)
+-	Total v2 Content-Length: 106.1 MB (106069589 bytes)
 
 ### Layers (23)
 
@@ -892,100 +896,102 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	v2 Content-Length: 4.3 KB (4343 bytes)
 -	v2 Last-Modified: Mon, 01 Feb 2016 21:09:36 GMT
 
-#### `ee3e0e48087041f9595424bef91c2ba03fac261ec65a9b8f044f0d7b24cbd9c2`
+#### `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 
 ```dockerfile
-RUN set -x \
-	&& apt-get update \
-	&& apt-get install -y --no-install-recommends curl ca-certificates \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+		ca-certificates \
+		wget \
+	--no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 27 Jan 2016 00:47:32 GMT
+-	Created: Wed, 02 Mar 2016 17:09:30 GMT
 -	Parent Layer: `10ecd54f2163ee8f8cbf61c37541672aa13a3cc52a26344b85a42887773ad916`
--	Docker Version: 1.8.3
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:064304e48acd041a5ed353afd666833b863937855ac1c3510dddb986e15a4d71`
--	v2 Content-Length: 168.0 B
--	v2 Last-Modified: Mon, 01 Feb 2016 21:09:33 GMT
+-	v2 Blob: `sha256:18a2909c4b728bf681e5dce1e567abce3b174b60e206f95632ead4d3498e9bc8`
+-	v2 Content-Length: 167.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:58 GMT
 
-#### `4cf40c84c4038217a93d675d0d47b486e0dea3c59e34ff1aca21ee5a3dfc6ded`
-
-```dockerfile
-RUN gpg --keyserver pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
-```
-
--	Created: Wed, 27 Jan 2016 00:47:35 GMT
--	Parent Layer: `ee3e0e48087041f9595424bef91c2ba03fac261ec65a9b8f044f0d7b24cbd9c2`
--	Docker Version: 1.8.3
--	Virtual Size: 161.9 KB (161924 bytes)
--	v2 Blob: `sha256:5ef3dfcb5b8e0735e556f1ade25508eb4913ad810dd170a67e35c6829c558164`
--	v2 Content-Length: 153.8 KB (153843 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:09:30 GMT
-
-#### `28d20494dda616b8149e07dcd5c97ded232c54ba8e45e7d82df00ded16ae0ff2`
+#### `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
 
 ```dockerfile
-RUN arch="$(dpkg --print-architecture)" \
-	&& set -x \
-	&& curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$arch" \
-	&& curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$arch.asc" \
-	&& gpg --verify /usr/local/bin/gosu.asc \
-	&& rm /usr/local/bin/gosu.asc \
-	&& chmod +x /usr/local/bin/gosu
+ENV GOSU_VERSION=1.7
 ```
 
--	Created: Wed, 27 Jan 2016 00:47:39 GMT
--	Parent Layer: `4cf40c84c4038217a93d675d0d47b486e0dea3c59e34ff1aca21ee5a3dfc6ded`
--	Docker Version: 1.8.3
--	Virtual Size: 2.7 MB (2698808 bytes)
--	v2 Blob: `sha256:1ca96bf8e973a6c8593aebca90e9bfcd1ba4d40eae59631efe8e7de6a496efc2`
--	v2 Content-Length: 807.9 KB (807946 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:08:45 GMT
-
-#### `f05eef4c5cacb7244bbce9c1d153e38ec96da7f10ce48feaca075fef1cc16195`
-
-```dockerfile
-ENV GHOST_SOURCE=/usr/src/ghost
-```
-
--	Created: Wed, 27 Jan 2016 00:47:40 GMT
--	Parent Layer: `28d20494dda616b8149e07dcd5c97ded232c54ba8e45e7d82df00ded16ae0ff2`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `dc54ca04f8da8a75b6fb24e2b0f81e7527fbc2367fad94201649fc0db43d613f`
-
-```dockerfile
-WORKDIR /usr/src/ghost
-```
-
--	Created: Wed, 27 Jan 2016 00:47:40 GMT
--	Parent Layer: `f05eef4c5cacb7244bbce9c1d153e38ec96da7f10ce48feaca075fef1cc16195`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f3d1416965e400412cfcd5f0e67b2761f0b144aff84422e0b146acb96b777cfe`
-
-```dockerfile
-ENV GHOST_VERSION=0.7.6
-```
-
--	Created: Wed, 03 Feb 2016 19:11:03 GMT
--	Parent Layer: `dc54ca04f8da8a75b6fb24e2b0f81e7527fbc2367fad94201649fc0db43d613f`
+-	Created: Wed, 02 Mar 2016 17:09:31 GMT
+-	Parent Layer: `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ecd41fcd6ac2f0216e92f1c56cb7cabd062114eae097346c92cb2cd0a2c8ec9f`
+#### `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
+
+```dockerfile
+RUN set -x \
+	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" \
+	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" \
+	&& export GNUPGHOME="$(mktemp -d)" \
+	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \
+	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu \
+	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc \
+	&& chmod +x /usr/local/bin/gosu \
+	&& gosu nobody true
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:37 GMT
+-	Parent Layer: `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.7 MB (2698808 bytes)
+-	v2 Blob: `sha256:f4c1dbadb4eb248a39747802bf2162b215a0000280d29584ae3a7ace424a03e0`
+-	v2 Content-Length: 807.9 KB (807938 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:53 GMT
+
+#### `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
+
+```dockerfile
+ENV GHOST_SOURCE=/usr/src/ghost
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:38 GMT
+-	Parent Layer: `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
+
+```dockerfile
+WORKDIR /usr/src/ghost
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:39 GMT
+-	Parent Layer: `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
+
+```dockerfile
+ENV GHOST_VERSION=0.7.8
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:39 GMT
+-	Parent Layer: `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -996,7 +1002,7 @@ RUN buildDeps=' \
 	' \
 	&& set -x \
 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
-	&& curl -sSL "https://ghost.org/archives/ghost-${GHOST_VERSION}.zip" -o ghost.zip \
+	&& wget -O ghost.zip "https://ghost.org/archives/ghost-${GHOST_VERSION}.zip" \
 	&& unzip ghost.zip \
 	&& npm install --production \
 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps \
@@ -1005,106 +1011,106 @@ RUN buildDeps=' \
 	&& rm -rf /tmp/npm*
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:09 GMT
--	Parent Layer: `f3d1416965e400412cfcd5f0e67b2761f0b144aff84422e0b146acb96b777cfe`
+-	Created: Wed, 02 Mar 2016 17:11:12 GMT
+-	Parent Layer: `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
 -	Docker Version: 1.9.1
--	Virtual Size: 143.5 MB (143538237 bytes)
--	v2 Blob: `sha256:4a1a76c002820e5d06b377cc0d7b7a6c598bcd29123d7c09880ba3a6950cda72`
--	v2 Content-Length: 23.0 MB (23028031 bytes)
--	v2 Last-Modified: Wed, 03 Feb 2016 19:44:09 GMT
+-	Virtual Size: 145.4 MB (145428726 bytes)
+-	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
+-	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
-#### `acd81abddf1d9dcff3897a643e6b82bc21ed3d5e94171cd6d31078e13a355b27`
+#### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
 ```dockerfile
 ENV GHOST_CONTENT=/var/lib/ghost
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:12 GMT
--	Parent Layer: `ecd41fcd6ac2f0216e92f1c56cb7cabd062114eae097346c92cb2cd0a2c8ec9f`
+-	Created: Wed, 02 Mar 2016 17:11:17 GMT
+-	Parent Layer: `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b10a1f2f3871fdb7a3f3dbfe16f9f920a23ce7191e7371aba111ffd0df6ef76f`
+#### `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 
 ```dockerfile
 RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:14 GMT
--	Parent Layer: `acd81abddf1d9dcff3897a643e6b82bc21ed3d5e94171cd6d31078e13a355b27`
+-	Created: Wed, 02 Mar 2016 17:11:18 GMT
+-	Parent Layer: `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:f9963e3fa904940d4c9db38718c37060fd90e0c5e586c650c5ec84044a421c3e`
--	v2 Content-Length: 138.0 B
--	v2 Last-Modified: Wed, 03 Feb 2016 19:43:53 GMT
+-	v2 Blob: `sha256:564b28ac945e012f2989f7b0a694354d34beee5170e81dba819799764fdfae5f`
+-	v2 Content-Length: 137.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:17 GMT
 
-#### `79b7cc0feeadf01f5a09514f99728cc443d30c58e4d1696535f28c8558dcac0c`
+#### `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 
 ```dockerfile
 VOLUME [/var/lib/ghost]
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:14 GMT
--	Parent Layer: `b10a1f2f3871fdb7a3f3dbfe16f9f920a23ce7191e7371aba111ffd0df6ef76f`
+-	Created: Wed, 02 Mar 2016 17:11:19 GMT
+-	Parent Layer: `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6ee437fbfb675e856be5b6d94394f8ae5a873a2c9a5011f03edd08d61367bd07`
+#### `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 
 ```dockerfile
-COPY file:0f74adbded832aab834ad580f6cd1b5bb1e590b8e74beb16ee810e7b358eef5a in /entrypoint.sh
+COPY file:b41fe7c683843b65a8ed24dad23de5e0d8320d0944dc2d48ad5905cfd0ef7959 in /entrypoint.sh
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:15 GMT
--	Parent Layer: `79b7cc0feeadf01f5a09514f99728cc443d30c58e4d1696535f28c8558dcac0c`
+-	Created: Wed, 02 Mar 2016 17:11:19 GMT
+-	Parent Layer: `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 -	Docker Version: 1.9.1
--	Virtual Size: 657.0 B
--	v2 Blob: `sha256:2915e121ee5d487dd3045eaad9309815cd6b262f6c3412e8e8e4f75917116ccc`
--	v2 Content-Length: 456.0 B
--	v2 Last-Modified: Fri, 17 Apr 2015 03:15:47 GMT
+-	Virtual Size: 696.0 B
+-	v2 Blob: `sha256:500d2054b4fc9ee6b81cc48f4312353a62ab287312b79de82914ef7bd81e98d9`
+-	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:13 GMT
 
-#### `e98434167a2668de62660cf72bceb931cc92c618f4d11d85181dbf5c467012ce`
+#### `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:16 GMT
--	Parent Layer: `6ee437fbfb675e856be5b6d94394f8ae5a873a2c9a5011f03edd08d61367bd07`
+-	Created: Wed, 02 Mar 2016 17:11:20 GMT
+-	Parent Layer: `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `eb4f96c19d2dfd7b735ebf1ac61a486bbe8b24077067724301f513fc8e0dd7ac`
+#### `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 
 ```dockerfile
 EXPOSE 2368/tcp
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:16 GMT
--	Parent Layer: `e98434167a2668de62660cf72bceb931cc92c618f4d11d85181dbf5c467012ce`
+-	Created: Wed, 02 Mar 2016 17:11:21 GMT
+-	Parent Layer: `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3818a7feafe63b8ac8f4c5766fbb89c6d08fcb0fa861fe1f96dbef04d92e3740`
+#### `7e07760ac7a10a3a5fa832400ba3c992cd2f2a2a6a2143fc56994ac433ffa574`
 
 ```dockerfile
 CMD ["npm" "start"]
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:17 GMT
--	Parent Layer: `eb4f96c19d2dfd7b735ebf1ac61a486bbe8b24077067724301f513fc8e0dd7ac`
+-	Created: Wed, 02 Mar 2016 17:11:21 GMT
+-	Parent Layer: `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1114,11 +1120,11 @@ CMD ["npm" "start"]
 ## `ghost:latest`
 
 ```console
-$ docker pull library/ghost@sha256:8400587e2a6f2f769118978780c49461a301cc07328ed317376a2749bcddbcb6
+$ docker pull library/ghost@sha256:83024e44d138c36b4e23fe41e6463a35cba05b273054570c8231f808e1ad2a99
 ```
 
--	Total Virtual Size: 352.2 MB (352166018 bytes)
--	Total v2 Content-Length: 105.8 MB (105780810 bytes)
+-	Total Virtual Size: 353.9 MB (353894622 bytes)
+-	Total v2 Content-Length: 106.1 MB (106069589 bytes)
 
 ### Layers (23)
 
@@ -1260,100 +1266,102 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	v2 Content-Length: 4.3 KB (4343 bytes)
 -	v2 Last-Modified: Mon, 01 Feb 2016 21:09:36 GMT
 
-#### `ee3e0e48087041f9595424bef91c2ba03fac261ec65a9b8f044f0d7b24cbd9c2`
+#### `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 
 ```dockerfile
-RUN set -x \
-	&& apt-get update \
-	&& apt-get install -y --no-install-recommends curl ca-certificates \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+		ca-certificates \
+		wget \
+	--no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 27 Jan 2016 00:47:32 GMT
+-	Created: Wed, 02 Mar 2016 17:09:30 GMT
 -	Parent Layer: `10ecd54f2163ee8f8cbf61c37541672aa13a3cc52a26344b85a42887773ad916`
--	Docker Version: 1.8.3
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:064304e48acd041a5ed353afd666833b863937855ac1c3510dddb986e15a4d71`
--	v2 Content-Length: 168.0 B
--	v2 Last-Modified: Mon, 01 Feb 2016 21:09:33 GMT
+-	v2 Blob: `sha256:18a2909c4b728bf681e5dce1e567abce3b174b60e206f95632ead4d3498e9bc8`
+-	v2 Content-Length: 167.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:58 GMT
 
-#### `4cf40c84c4038217a93d675d0d47b486e0dea3c59e34ff1aca21ee5a3dfc6ded`
-
-```dockerfile
-RUN gpg --keyserver pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
-```
-
--	Created: Wed, 27 Jan 2016 00:47:35 GMT
--	Parent Layer: `ee3e0e48087041f9595424bef91c2ba03fac261ec65a9b8f044f0d7b24cbd9c2`
--	Docker Version: 1.8.3
--	Virtual Size: 161.9 KB (161924 bytes)
--	v2 Blob: `sha256:5ef3dfcb5b8e0735e556f1ade25508eb4913ad810dd170a67e35c6829c558164`
--	v2 Content-Length: 153.8 KB (153843 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:09:30 GMT
-
-#### `28d20494dda616b8149e07dcd5c97ded232c54ba8e45e7d82df00ded16ae0ff2`
+#### `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
 
 ```dockerfile
-RUN arch="$(dpkg --print-architecture)" \
-	&& set -x \
-	&& curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$arch" \
-	&& curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$arch.asc" \
-	&& gpg --verify /usr/local/bin/gosu.asc \
-	&& rm /usr/local/bin/gosu.asc \
-	&& chmod +x /usr/local/bin/gosu
+ENV GOSU_VERSION=1.7
 ```
 
--	Created: Wed, 27 Jan 2016 00:47:39 GMT
--	Parent Layer: `4cf40c84c4038217a93d675d0d47b486e0dea3c59e34ff1aca21ee5a3dfc6ded`
--	Docker Version: 1.8.3
--	Virtual Size: 2.7 MB (2698808 bytes)
--	v2 Blob: `sha256:1ca96bf8e973a6c8593aebca90e9bfcd1ba4d40eae59631efe8e7de6a496efc2`
--	v2 Content-Length: 807.9 KB (807946 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:08:45 GMT
-
-#### `f05eef4c5cacb7244bbce9c1d153e38ec96da7f10ce48feaca075fef1cc16195`
-
-```dockerfile
-ENV GHOST_SOURCE=/usr/src/ghost
-```
-
--	Created: Wed, 27 Jan 2016 00:47:40 GMT
--	Parent Layer: `28d20494dda616b8149e07dcd5c97ded232c54ba8e45e7d82df00ded16ae0ff2`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `dc54ca04f8da8a75b6fb24e2b0f81e7527fbc2367fad94201649fc0db43d613f`
-
-```dockerfile
-WORKDIR /usr/src/ghost
-```
-
--	Created: Wed, 27 Jan 2016 00:47:40 GMT
--	Parent Layer: `f05eef4c5cacb7244bbce9c1d153e38ec96da7f10ce48feaca075fef1cc16195`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f3d1416965e400412cfcd5f0e67b2761f0b144aff84422e0b146acb96b777cfe`
-
-```dockerfile
-ENV GHOST_VERSION=0.7.6
-```
-
--	Created: Wed, 03 Feb 2016 19:11:03 GMT
--	Parent Layer: `dc54ca04f8da8a75b6fb24e2b0f81e7527fbc2367fad94201649fc0db43d613f`
+-	Created: Wed, 02 Mar 2016 17:09:31 GMT
+-	Parent Layer: `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ecd41fcd6ac2f0216e92f1c56cb7cabd062114eae097346c92cb2cd0a2c8ec9f`
+#### `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
+
+```dockerfile
+RUN set -x \
+	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" \
+	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" \
+	&& export GNUPGHOME="$(mktemp -d)" \
+	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \
+	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu \
+	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc \
+	&& chmod +x /usr/local/bin/gosu \
+	&& gosu nobody true
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:37 GMT
+-	Parent Layer: `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.7 MB (2698808 bytes)
+-	v2 Blob: `sha256:f4c1dbadb4eb248a39747802bf2162b215a0000280d29584ae3a7ace424a03e0`
+-	v2 Content-Length: 807.9 KB (807938 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:53 GMT
+
+#### `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
+
+```dockerfile
+ENV GHOST_SOURCE=/usr/src/ghost
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:38 GMT
+-	Parent Layer: `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
+
+```dockerfile
+WORKDIR /usr/src/ghost
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:39 GMT
+-	Parent Layer: `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
+
+```dockerfile
+ENV GHOST_VERSION=0.7.8
+```
+
+-	Created: Wed, 02 Mar 2016 17:09:39 GMT
+-	Parent Layer: `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -1364,7 +1372,7 @@ RUN buildDeps=' \
 	' \
 	&& set -x \
 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
-	&& curl -sSL "https://ghost.org/archives/ghost-${GHOST_VERSION}.zip" -o ghost.zip \
+	&& wget -O ghost.zip "https://ghost.org/archives/ghost-${GHOST_VERSION}.zip" \
 	&& unzip ghost.zip \
 	&& npm install --production \
 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps \
@@ -1373,106 +1381,106 @@ RUN buildDeps=' \
 	&& rm -rf /tmp/npm*
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:09 GMT
--	Parent Layer: `f3d1416965e400412cfcd5f0e67b2761f0b144aff84422e0b146acb96b777cfe`
+-	Created: Wed, 02 Mar 2016 17:11:12 GMT
+-	Parent Layer: `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
 -	Docker Version: 1.9.1
--	Virtual Size: 143.5 MB (143538237 bytes)
--	v2 Blob: `sha256:4a1a76c002820e5d06b377cc0d7b7a6c598bcd29123d7c09880ba3a6950cda72`
--	v2 Content-Length: 23.0 MB (23028031 bytes)
--	v2 Last-Modified: Wed, 03 Feb 2016 19:44:09 GMT
+-	Virtual Size: 145.4 MB (145428726 bytes)
+-	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
+-	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
-#### `acd81abddf1d9dcff3897a643e6b82bc21ed3d5e94171cd6d31078e13a355b27`
+#### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
 ```dockerfile
 ENV GHOST_CONTENT=/var/lib/ghost
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:12 GMT
--	Parent Layer: `ecd41fcd6ac2f0216e92f1c56cb7cabd062114eae097346c92cb2cd0a2c8ec9f`
+-	Created: Wed, 02 Mar 2016 17:11:17 GMT
+-	Parent Layer: `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b10a1f2f3871fdb7a3f3dbfe16f9f920a23ce7191e7371aba111ffd0df6ef76f`
+#### `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 
 ```dockerfile
 RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:14 GMT
--	Parent Layer: `acd81abddf1d9dcff3897a643e6b82bc21ed3d5e94171cd6d31078e13a355b27`
+-	Created: Wed, 02 Mar 2016 17:11:18 GMT
+-	Parent Layer: `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:f9963e3fa904940d4c9db38718c37060fd90e0c5e586c650c5ec84044a421c3e`
--	v2 Content-Length: 138.0 B
--	v2 Last-Modified: Wed, 03 Feb 2016 19:43:53 GMT
+-	v2 Blob: `sha256:564b28ac945e012f2989f7b0a694354d34beee5170e81dba819799764fdfae5f`
+-	v2 Content-Length: 137.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:17 GMT
 
-#### `79b7cc0feeadf01f5a09514f99728cc443d30c58e4d1696535f28c8558dcac0c`
+#### `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 
 ```dockerfile
 VOLUME [/var/lib/ghost]
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:14 GMT
--	Parent Layer: `b10a1f2f3871fdb7a3f3dbfe16f9f920a23ce7191e7371aba111ffd0df6ef76f`
+-	Created: Wed, 02 Mar 2016 17:11:19 GMT
+-	Parent Layer: `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6ee437fbfb675e856be5b6d94394f8ae5a873a2c9a5011f03edd08d61367bd07`
+#### `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 
 ```dockerfile
-COPY file:0f74adbded832aab834ad580f6cd1b5bb1e590b8e74beb16ee810e7b358eef5a in /entrypoint.sh
+COPY file:b41fe7c683843b65a8ed24dad23de5e0d8320d0944dc2d48ad5905cfd0ef7959 in /entrypoint.sh
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:15 GMT
--	Parent Layer: `79b7cc0feeadf01f5a09514f99728cc443d30c58e4d1696535f28c8558dcac0c`
+-	Created: Wed, 02 Mar 2016 17:11:19 GMT
+-	Parent Layer: `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 -	Docker Version: 1.9.1
--	Virtual Size: 657.0 B
--	v2 Blob: `sha256:2915e121ee5d487dd3045eaad9309815cd6b262f6c3412e8e8e4f75917116ccc`
--	v2 Content-Length: 456.0 B
--	v2 Last-Modified: Fri, 17 Apr 2015 03:15:47 GMT
+-	Virtual Size: 696.0 B
+-	v2 Blob: `sha256:500d2054b4fc9ee6b81cc48f4312353a62ab287312b79de82914ef7bd81e98d9`
+-	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:13 GMT
 
-#### `e98434167a2668de62660cf72bceb931cc92c618f4d11d85181dbf5c467012ce`
+#### `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:16 GMT
--	Parent Layer: `6ee437fbfb675e856be5b6d94394f8ae5a873a2c9a5011f03edd08d61367bd07`
+-	Created: Wed, 02 Mar 2016 17:11:20 GMT
+-	Parent Layer: `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `eb4f96c19d2dfd7b735ebf1ac61a486bbe8b24077067724301f513fc8e0dd7ac`
+#### `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 
 ```dockerfile
 EXPOSE 2368/tcp
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:16 GMT
--	Parent Layer: `e98434167a2668de62660cf72bceb931cc92c618f4d11d85181dbf5c467012ce`
+-	Created: Wed, 02 Mar 2016 17:11:21 GMT
+-	Parent Layer: `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3818a7feafe63b8ac8f4c5766fbb89c6d08fcb0fa861fe1f96dbef04d92e3740`
+#### `7e07760ac7a10a3a5fa832400ba3c992cd2f2a2a6a2143fc56994ac433ffa574`
 
 ```dockerfile
 CMD ["npm" "start"]
 ```
 
--	Created: Wed, 03 Feb 2016 19:13:17 GMT
--	Parent Layer: `eb4f96c19d2dfd7b735ebf1ac61a486bbe8b24077067724301f513fc8e0dd7ac`
+-	Created: Wed, 02 Mar 2016 17:11:21 GMT
+-	Parent Layer: `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`

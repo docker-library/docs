@@ -1,1 +1,1 @@
-Official IBM WebSphere Application Server for Developers Liberty Profile image.
+Official IBM WebSphere Application Server for Developers Liberty image.

@@ -1,10 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1`, `1.9`, `1.9.10` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/aecb18605af6a33c1968c51df44e01e5f5a821e6/Dockerfile)
+-	[`latest`, `1`, `1.9`, `1.9.14` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/mainline/jessie/Dockerfile)
+-	[`stable`, `1.8`, `1.8.1` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/stable/jessie/Dockerfile)
+-	[`mainline-alpine`, `alpine`, `1-alpine`, `1.9-alpine`, `1.9.14-alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/mainline/alpine/Dockerfile)
+-	[`stable-alpine`, `1.8-alpine`, `1.8.1-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/stable/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/nginx:latest.svg)](https://imagelayers.io/?images=nginx:latest)
+[![](https://badge.imagelayers.io/nginx:latest.svg)](https://imagelayers.io/?images=nginx:latest,nginx:stable,nginx:mainline-alpine,nginx:stable-alpine)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnginx).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `nginx/tag-details.md` file](https://github.com/docker-library/docs/blob/master/nginx/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -97,9 +100,25 @@ The `mysite.template` file may then contain variable references like this :
 `listen       ${NGINX_PORT};
 `
 
+# Image Variants
+
+The `nginx` images come in many flavors, each designed for a specific use case.
+
+## `nginx:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `nginx:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -113,7 +132,7 @@ Documentation for this image is stored in the [`nginx/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/nginxinc/docker-nginx/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/nginxinc/docker-nginx/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

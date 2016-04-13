@@ -2,11 +2,15 @@
 
 -	[`1.0.0` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/84c0d7d2d98d5f4f4178e517523925c1d5ebe7cc/Dockerfile)
 -	[`1.0.1` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/8fc43f5ab8f0a25872bb7ed6237f68dd673c1e79/Dockerfile)
--	[`1.1.0`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/d33db37e1b31d202ac7c05104bf7b5e3faa70fc9/Dockerfile)
+-	[`1.1.0` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/d33db37e1b31d202ac7c05104bf7b5e3faa70fc9/Dockerfile)
+-	[`1.1.1` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/9346bd71c2a9b1433a663b8c2fe20b2636585f54/Dockerfile)
+-	[`1.1.2` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/5f284e33ef90b7bc30684ad09a5261c037fc9d5e/Dockerfile)
+-	[`1.1.3`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/4d298d3113a4ecefa83a3f9e18f4aaf4f95f007e/Dockerfile)
+-	[`1.2.0-rc3` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/35990439a798c584be36e6f0a09d18bc2c6e0409/Dockerfile)
 
-[![](https://badge.imagelayers.io/swarm:latest.svg)](https://imagelayers.io/?images=swarm:1.0.0,swarm:1.0.1,swarm:1.1.0)
+[![](https://badge.imagelayers.io/swarm:latest.svg)](https://imagelayers.io/?images=swarm:1.0.0,swarm:1.0.1,swarm:1.1.0,swarm:1.1.1,swarm:1.1.2,swarm:1.1.3,swarm:1.2.0-rc3)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fswarm).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `swarm/tag-details.md` file](https://github.com/docker-library/docs/blob/master/swarm/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -71,7 +75,7 @@ View [license information](https://github.com/docker/swarm/blob/master/LICENSE) 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -85,7 +89,7 @@ Documentation for this image is stored in the [`swarm/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker/swarm-library-image/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker/swarm-library-image/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
