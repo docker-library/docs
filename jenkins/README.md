@@ -1,9 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `1.642.4` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/67f1189b45ba454acc72eb6117107c6f08c2663a/Dockerfile)
--	[`2.0-beta-1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/d014524ce333b9e8c2f647756f52c4a31329e3a4/Dockerfile)
+-	[`2.0-beta-2` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/fe85c05446a482e9908d735a27c803e81610820c/Dockerfile)
+-	[`alpine`, `1.642.4-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/210f6d0745dc4c69dc6f723962a0f395a4778152/Dockerfile)
 
-[![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:2.0-beta-1)
+[![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:2.0-beta-2,jenkins:alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
@@ -172,6 +173,22 @@ RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 All the data needed is in the /var/jenkins_home directory - so depending on how you manage that - depends on how you upgrade. Generally - you can copy it out - and then "docker pull" the image again - and you will have the latest LTS - you can then start up with -v pointing to that data (/var/jenkins_home) and everything will be as you left it.
 
 As always - please ensure that you know how to drive docker - especially volume handling!
+
+# Image Variants
+
+The `jenkins` images come in many flavors, each designed for a specific use case.
+
+## `jenkins:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `jenkins:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # Supported Docker versions
 

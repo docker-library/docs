@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.4.2-apache`, `4.4.2`, `4.4-apache`, `4.4`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/df190dc9c5752fd09317d836bd2bdcd09ee379a5/apache/Dockerfile)
--	[`4.4.2-fpm`, `4.4-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/df190dc9c5752fd09317d836bd2bdcd09ee379a5/fpm/Dockerfile)
+-	[`4.5.0-apache`, `4.5.0`, `4.5-apache`, `4.5`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/6e26fd19eb1f04bc3f939098c986e44c7acb9a61/apache/Dockerfile)
+-	[`4.5.0-fpm`, `4.5-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/6e26fd19eb1f04bc3f939098c986e44c7acb9a61/fpm/Dockerfile)
 
-[![](https://badge.imagelayers.io/wordpress:latest.svg)](https://imagelayers.io/?images=wordpress:4.4.2-apache,wordpress:4.4.2-fpm)
+[![](https://badge.imagelayers.io/wordpress:latest.svg)](https://imagelayers.io/?images=wordpress:4.5.0-apache,wordpress:4.5.0-fpm)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress).
 
