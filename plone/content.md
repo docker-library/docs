@@ -49,7 +49,7 @@ $ docker run -p 8080:8080 plone fg
 You can enable Plone add-ons via the `BUILDOUT_EGGS` environment variable
 
 ```console
-$ docker run -p 8080:8080 -e BUILDOUT_EGGS="plone.theme.winter plone.content.publication" plone
+$ docker run -p 8080:8080 -e BUILDOUT_EGGS="eea.facetednavigation Products.PloneFormGen" plone
 ```
 
 For more information on how to extend this image with your own custom settings, adding more add-ons, building it or mounting volumes, please refer to our [documentation](https://github.com/plone/plone.docker/blob/master/docs/usage.rst).
