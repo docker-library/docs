@@ -24,7 +24,7 @@ SonarQube is an open source platform for continuous inspection of code quality.
 The server is started this way:
 
 ```console
-$ docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube:5.1
+$ docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
 ```
 
 To analyse a project:
@@ -49,7 +49,7 @@ $ docker run -d --name sonarqube \
 	-e SONARQUBE_JDBC_USERNAME=sonar \
 	-e SONARQUBE_JDBC_PASSWORD=sonar \
 	-e SONARQUBE_JDBC_URL=jdbc:postgresql://localhost/sonar \
-	sonarqube:5.1
+	sonarqube
 ```
 
 More recipes can be found [here](https://github.com/SonarSource/docker-sonarqube/blob/master/recipes.md).

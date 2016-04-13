@@ -49,7 +49,7 @@ $ docker run --name some-app --link some-redis:redis -d application-that-uses-re
 ## ... or via `redis-cli`
 
 ```console
-$ docker run -it --link some-redis:redis --rm redis sh -c 'exec redis-cli -h "$REDIS_PORT_6379_TCP_ADDR" -p "$REDIS_PORT_6379_TCP_PORT"'
+$ docker run -it --link some-redis:redis --rm redis redis-cli -h redis -p 6379
 ```
 
 ## Additionally, If you want to use your own redis.conf ...
