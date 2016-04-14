@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.8.19`, `0.8`, `0`, `latest`, `0.8.19-debian`, `0.8-debian`, `0-debian`, `debian` (*debian/Dockerfile*)](https://github.com/jfrazelle/irssi/blob/2065fe5f6c9656d34b301bbfd0643dcdbc17bd4b/debian/Dockerfile)
--	[`0.8.19-alpine`, `0.8-alpine`, `0-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jfrazelle/irssi/blob/7194b9bc0429d26d097f7486f61ac874a0920365/alpine/Dockerfile)
+-	[`0.8.19`, `0.8`, `0`, `latest`, `0.8.19-debian`, `0.8-debian`, `0-debian`, `debian` (*debian/Dockerfile*)](https://github.com/jfrazelle/irssi/blob/1377885afb36b08ec0984e8563f945895776caa8/debian/Dockerfile)
+-	[`0.8.19-alpine`, `0.8-alpine`, `0-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jfrazelle/irssi/blob/1377885afb36b08ec0984e8563f945895776caa8/alpine/Dockerfile)
 
 [![](https://badge.imagelayers.io/irssi:latest.svg)](https://imagelayers.io/?images=irssi:0.8.19,irssi:0.8.19-alpine)
 

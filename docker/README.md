@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.11.0`, `1.11` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/Dockerfile)
--	[`1.11.0-dind`, `1.11-dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/dind/Dockerfile)
--	[`1.11.0-git`, `1.11-git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
--	[`1.10.3`, `1.10`, `1`, `latest` (*1.10/Dockerfile*)](https://github.com/docker-library/docker/blob/744110cf7268354ae30928e76f392c7864d1afea/1.10/Dockerfile)
--	[`1.10.3-dind`, `1.10-dind`, `1-dind`, `dind` (*1.10/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/83b2eab8bdb5d35bf343313154ab55938fca3807/1.10/dind/Dockerfile)
--	[`1.10.3-git`, `1.10-git`, `1-git`, `git` (*1.10/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/git/Dockerfile)
+-	[`1.11.0`, `1.11`, `1`, `latest` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/Dockerfile)
+-	[`1.11.0-dind`, `1.11-dind`, `1-dind`, `dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/dind/Dockerfile)
+-	[`1.11.0-git`, `1.11-git`, `1-git`, `git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
+-	[`1.10.3`, `1.10` (*1.10/Dockerfile*)](https://github.com/docker-library/docker/blob/744110cf7268354ae30928e76f392c7864d1afea/1.10/Dockerfile)
+-	[`1.10.3-dind`, `1.10-dind` (*1.10/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/83b2eab8bdb5d35bf343313154ab55938fca3807/1.10/dind/Dockerfile)
+-	[`1.10.3-git`, `1.10-git` (*1.10/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/git/Dockerfile)
 
 [![](https://badge.imagelayers.io/docker:latest.svg)](https://imagelayers.io/?images=docker:1.11.0,docker:1.11.0-dind,docker:1.11.0-git,docker:1.10.3,docker:1.10.3-dind,docker:1.10.3-git)
 
