@@ -10,20 +10,20 @@ Apache Storm is a distributed computation framework written predominantly in the
 
 ## Setting up a Storm Cluster
 
-1. Start Zookeeper
+1.	Start Zookeeper
 
-        $ docker run -d --name zookeeper jplock/zookeeper:3.4.8
+		$ docker run -d --name zookeeper jplock/zookeeper:3.4.8
 
-2. Start Nimbus
+2.	Start Nimbus
 
-        $ docker run -d --name nimbus --net container:zookeeper 31z4/storm:1.0.0 nimbus
+		$ docker run -d --name nimbus --net container:zookeeper 31z4/storm:1.0.0 nimbus
 
-3. Start Supervisor
+3.	Start Supervisor
 
-        $ docker run -d --name supervisor --net container:nimbus 31z4/storm:1.0.0 supervisor
+		$ docker run -d --name supervisor --net container:nimbus 31z4/storm:1.0.0 supervisor
 
 ## Running Topologies
 
 Assuming you set up a Storm cluster as written above and have `storm-starter-topologies-1.0.0.jar` in your current directory.
 
-    $ docker run -it --net container:nimbus -v $(pwd)/storm-starter-topologies-1.0.0.jar:/topology.jar storm:1.0.0 jar /topology.jar org.apache.storm.starter.WordCountTopology topology
+	$ docker run -it --net container:nimbus -v $(pwd)/storm-starter-topologies-1.0.0.jar:/topology.jar storm:1.0.0 jar /topology.jar org.apache.storm.starter.WordCountTopology topology
