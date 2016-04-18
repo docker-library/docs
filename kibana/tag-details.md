@@ -16,6 +16,10 @@
 -	[`kibana:4.5`](#kibana45)
 -	[`kibana:4`](#kibana4)
 -	[`kibana:latest`](#kibanalatest)
+-	[`kibana:5.0.0-alpha1`](#kibana500-alpha1)
+-	[`kibana:5.0.0`](#kibana500)
+-	[`kibana:5.0`](#kibana50)
+-	[`kibana:5`](#kibana5)
 
 ## `kibana:4.0.3`
 
@@ -3798,3 +3802,19 @@ CMD ["kibana"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `kibana:5.0.0-alpha1`
+
+**does not exist** (yet?)
+
+## `kibana:5.0.0`
+
+**does not exist** (yet?)
+
+## `kibana:5.0`
+
+**does not exist** (yet?)
+
+## `kibana:5`
+
+**does not exist** (yet?)

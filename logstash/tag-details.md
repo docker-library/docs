@@ -24,6 +24,11 @@
 -	[`logstash:2.3`](#logstash23)
 -	[`logstash:2`](#logstash2)
 -	[`logstash:latest`](#logstashlatest)
+-	[`logstash:5.0.0-alpha1-1`](#logstash500-alpha1-1)
+-	[`logstash:5.0.0-alpha1`](#logstash500-alpha1)
+-	[`logstash:5.0.0`](#logstash500)
+-	[`logstash:5.0`](#logstash50)
+-	[`logstash:5`](#logstash5)
 
 ## `logstash:1.4.5-1-a2bacae`
 
@@ -9000,3 +9005,23 @@ CMD ["logstash" "agent"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `logstash:5.0.0-alpha1-1`
+
+**does not exist** (yet?)
+
+## `logstash:5.0.0-alpha1`
+
+**does not exist** (yet?)
+
+## `logstash:5.0.0`
+
+**does not exist** (yet?)
+
+## `logstash:5.0`
+
+**does not exist** (yet?)
+
+## `logstash:5`
+
+**does not exist** (yet?)
