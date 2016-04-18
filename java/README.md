@@ -10,10 +10,10 @@
 -	[`openjdk-8u77-jdk-alpine`, `openjdk-8u77-alpine`, `openjdk-8-jdk-alpine`, `openjdk-8-alpine`, `8u77-jdk-alpine`, `8u77-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b734af2a8ee4697604035d14064fb7f3b1d5f050/8-jdk/alpine/Dockerfile)
 -	[`openjdk-8u72-jre`, `openjdk-8-jre`, `8u72-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/8-jre/Dockerfile)
 -	[`openjdk-8u77-jre-alpine`, `openjdk-8-jre-alpine`, `8u77-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b734af2a8ee4697604035d14064fb7f3b1d5f050/8-jre/alpine/Dockerfile)
--	[`openjdk-9-b112-jdk`, `openjdk-9-b112`, `openjdk-9-jdk`, `openjdk-9`, `9-b112-jdk`, `9-b112`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/3110fbc370293c071cc995c4a89e4b1814553ad5/9-jdk/Dockerfile)
--	[`openjdk-9-b112-jre`, `openjdk-9-jre`, `9-b112-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/d22a4675dad30274c9ed6cfd9b98bfa0fec9d4a9/9-jre/Dockerfile)
+-	[`openjdk-9-b113-jdk`, `openjdk-9-b113`, `openjdk-9-jdk`, `openjdk-9`, `9-b113-jdk`, `9-b113`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/11f3ec7d9cb5def04b7936cdf1eaa41da56341ab/9-jdk/Dockerfile)
+-	[`openjdk-9-b113-jre`, `openjdk-9-jre`, `9-b113-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/11f3ec7d9cb5def04b7936cdf1eaa41da56341ab/9-jre/Dockerfile)
 
-[![](https://badge.imagelayers.io/java:latest.svg)](https://imagelayers.io/?images=java:openjdk-6b38-jdk,java:openjdk-6b38-jre,java:openjdk-7u95-jdk,java:openjdk-7u91-jdk-alpine,java:openjdk-7u95-jre,java:openjdk-7u91-jre-alpine,java:openjdk-8u72-jdk,java:openjdk-8u77-jdk-alpine,java:openjdk-8u72-jre,java:openjdk-8u77-jre-alpine,java:openjdk-9-b112-jdk,java:openjdk-9-b112-jre)
+[![](https://badge.imagelayers.io/java:latest.svg)](https://imagelayers.io/?images=java:openjdk-6b38-jdk,java:openjdk-6b38-jre,java:openjdk-7u95-jdk,java:openjdk-7u91-jdk-alpine,java:openjdk-7u95-jre,java:openjdk-7u91-jre-alpine,java:openjdk-8u72-jdk,java:openjdk-8u77-jdk-alpine,java:openjdk-8u72-jre,java:openjdk-8u77-jre-alpine,java:openjdk-9-b113-jdk,java:openjdk-9-b113-jre)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjava).
 
