@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.54`, `0.54.7` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/7bd969a518bdd8265342cb891821b338a32661a1/Dockerfile)
+-	[`latest`, `0.54`, `0.54.8` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/c9cbce8e2bbde68cdb06f3fa4feccaaf8ec4c542/Dockerfile)
 -	[`0.52`, `0.52.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/cce8f796ba8936250eb380235cde47be494d1e95/Dockerfile)
 
 [![](https://badge.imagelayers.io/crate:latest.svg)](https://imagelayers.io/?images=crate:latest,crate:0.52)
@@ -106,7 +106,7 @@ View [license information](https://github.com/crate/crate/blob/master/LICENSE.tx
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

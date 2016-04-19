@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.30.43`, `0.30`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/3290958fd1ff8218baad0ed85cf3e66123baab84/Dockerfile)
+-	[`0.30.47`, `0.30`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/d1bc77a1802818a7c5141bc6a52c2f42170fdf62/Dockerfile)
 
-[![](https://badge.imagelayers.io/mongo-express:latest.svg)](https://imagelayers.io/?images=mongo-express:0.30.43)
+[![](https://badge.imagelayers.io/mongo-express:latest.svg)](https://imagelayers.io/?images=mongo-express:0.30.47)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo-express`)](https://github.com/docker-library/official-images/blob/master/library/mongo-express). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express).
 
@@ -69,13 +69,13 @@ The following are only needed if `ME_CONFIG_MONGODB_ENABLE_ADMIN` is **"false"**
 	    -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
 	    -e ME_CONFIG_BASICAUTH_USERNAME="user" \
 	    -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
-	    knickers/mongo-express
+	    mongo-express
 
 This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

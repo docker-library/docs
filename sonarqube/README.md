@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `5.4` (*5.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/442f950dae232fca8e1e919e017270971cee46f6/5.4/Dockerfile)
--	[`lts`, `4.5.6` (*4.5.6/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/442f950dae232fca8e1e919e017270971cee46f6/4.5.6/Dockerfile)
+-	[`lts`, `4.5.7` (*4.5.7/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f8baccb64f41ca126781db6a700d738d004fd0b0/4.5.7/Dockerfile)
 
 [![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:lts)
 
@@ -24,7 +24,7 @@ SonarQube is an open source platform for continuous inspection of code quality.
 The server is started this way:
 
 ```console
-$ docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube:5.1
+$ docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
 ```
 
 To analyse a project:
@@ -49,7 +49,7 @@ $ docker run -d --name sonarqube \
 	-e SONARQUBE_JDBC_USERNAME=sonar \
 	-e SONARQUBE_JDBC_PASSWORD=sonar \
 	-e SONARQUBE_JDBC_URL=jdbc:postgresql://localhost/sonar \
-	sonarqube:5.1
+	sonarqube
 ```
 
 More recipes can be found [here](https://github.com/SonarSource/docker-sonarqube/blob/master/recipes.md).
@@ -64,7 +64,7 @@ View [license information](http://www.gnu.org/licenses/lgpl.txt) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

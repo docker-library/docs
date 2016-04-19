@@ -89,7 +89,7 @@ View [license information](http://www.gnu.org/licenses/agpl-3.0.html) for the so
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
