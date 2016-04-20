@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.4`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/0cc8fb084f2b78a00f6741e1080d9b23f32424c8/r-base/Dockerfile)
+-	[`3.2.5`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/13a345ad18c19e467a6c70cda6687128921292ff/r-base/Dockerfile)
 
-[![](https://badge.imagelayers.io/r-base:latest.svg)](https://imagelayers.io/?images=r-base:3.2.4)
+[![](https://badge.imagelayers.io/r-base:latest.svg)](https://imagelayers.io/?images=r-base:3.2.5)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/r-base`)](https://github.com/docker-library/official-images/blob/master/library/r-base). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fr-base).
 
