@@ -1,14 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.7.4`, `7.7`, `7` (*7.7/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/e60211c46e9fd4b4f9ee679946bc9915ae2bf0c0/7.7/Dockerfile)
--	[`8.0.6`, `8.0` (*8.0/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/2b4e8b3b6eafe9c0b44e5c21eee2918e45ebb84e/8.0/Dockerfile)
--	[`8.0.6-onbuild`, `8.0-onbuild` (*8.0/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/e60211c46e9fd4b4f9ee679946bc9915ae2bf0c0/8.0/onbuild/Dockerfile)
--	[`8.1.2`, `8.1`, `8`, `latest` (*8.1/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/1e5786a158efb11c826410a9533ad7819e647a75/8.1/Dockerfile)
--	[`8.1.2-onbuild`, `8.1-onbuild`, `8-onbuild`, `onbuild` (*8.1/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/07e387f3a5644638ca3e2f8235a1f8f647b3f03c/8.1/onbuild/Dockerfile)
+-	[`8.2.4`, `8.2` (*8.2/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/3ec1dafe76069627d9a1f2fe2bca149026ce9576/8.2/Dockerfile)
+-	[`8.2.4-onbuild`, `8.2-onbuild` (*8.2/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/1ef759405e541ac9552fb92f2f293c8496e10d07/8.2/onbuild/Dockerfile)
+-	[`8.3.2`, `8.3`, `8`, `latest` (*8.3/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/77bf86e359f312ed8925a6cafdddb6a33f4d8758/8.3/Dockerfile)
+-	[`8.3.2-onbuild`, `8.3-onbuild`, `8-onbuild`, `onbuild` (*8.3/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c05ef824c01a4f2b010c2acd24031b4d22f88944/8.3/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:7.7.4,sentry:8.0.6,sentry:8.0.6-onbuild,sentry:8.1.2,sentry:8.1.2-onbuild)
+[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.2.4,sentry:8.2.4-onbuild,sentry:8.3.2,sentry:8.3.2-onbuild)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `sentry/tag-details.md` file](https://github.com/docker-library/docs/blob/master/sentry/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -32,20 +31,20 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 
 2.	Start a Postgres container
 
-		```console
-		$ docker run -d --name sentry-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=sentry postgres
-		```
+	```console
+	$ docker run -d --name sentry-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=sentry postgres
+	```
 
 3.	Generate a new secret key to be shared by all `sentry` containers. This value will then be used as the `SENTRY_SECRET_KEY` environment variable.
 
-		```console
-		$ docker run --rm sentry generate-secret-key
-		```
+	```console
+	$ docker run --rm sentry generate-secret-key
+	```
 
 4.	If this is a new database, you'll need to run `upgrade`
 
 	```console
-	$ docker run -it --rm -e SENTRY_SECRET_KEY <secret-key> --link sentry-postgres:postgres --link sentry-redis:redis sentry upgrade
+	$ docker run -it --rm -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry upgrade
 	```
 
 	**Note: the `-it` is important as the initial upgrade will prompt to create an initial user and will fail without it**
@@ -53,14 +52,14 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 5.	Now start up Sentry server
 
 	```console
-	$ docker run -d --name my-sentry -e SENTRY_SECRET_KEY <secret-key> --link sentry-redis:redis --link sentry-postgres:postgres sentry
+	$ docker run -d --name my-sentry -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres sentry
 	```
 
 6.	The default config needs a celery beat and celery workers, start as many workers as you need (each with a unique name)
 
 	```console
-	$ docker run -d --name sentry-celery-beat -e SENTRY_SECRET_KEY <secret-key> --link sentry-postgres:postgres --link sentry-redis:redis sentry celery beat
-	$ docker run -d --name sentry-celery1 -e SENTRY_SECRET_KEY <secret-key> --link sentry-postgres:postgres --link sentry-redis:redis sentry celery worker
+	$ docker run -d --name sentry-celery-beat -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry celery beat
+	$ docker run -d --name sentry-celery1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry celery worker
 	```
 
 ### Port mapping
@@ -72,7 +71,7 @@ If you'd like to be able to access the instance from the host without the contai
 If you did not create a superuser during `upgrade`, use the following to create one:
 
 ```console
-$ docker run -it --rm -e SENTRY_SECRET_KEY <secret-key> --link sentry-redis:redis --link sentry-postgres:postgres sentry createuser
+$ docker run -it --rm -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres sentry createuser
 ```
 
 ## Environment variables
@@ -137,7 +136,7 @@ View [license information](https://github.com/getsentry/sentry/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -151,7 +150,7 @@ Documentation for this image is stored in the [`sentry/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

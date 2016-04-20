@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.13`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d0a316423d957077b59f5d37ace76b5f4cc84a4c/2.1/Dockerfile)
--	[`2.2.5`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d0a316423d957077b59f5d37ace76b5f4cc84a4c/2.2/Dockerfile)
--	[`3.0.3`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d0a316423d957077b59f5d37ace76b5f4cc84a4c/3.0/Dockerfile)
--	[`3.1.1`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/e57caf5f7dc58160846753096016f81224bc0a80/3.1/Dockerfile)
--	[`3.2.1`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/59ea86ef4380e2ad76f0b7a3c46019046b445ada/3.2/Dockerfile)
--	[`3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/docker-library/cassandra/blob/13a08c6fb1f02a68060d632ac75b2caed92500e7/3.3/Dockerfile)
+-	[`2.1.13`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/90ba62c6d8859abc5f38a6d47c9da0661be04171/2.1/Dockerfile)
+-	[`2.2.5`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/90ba62c6d8859abc5f38a6d47c9da0661be04171/2.2/Dockerfile)
+-	[`3.0.5`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/a7fb4a13b7ed26cd7f2e704f07e4fad994d0bf39/3.0/Dockerfile)
+-	[`3.1.1`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/90ba62c6d8859abc5f38a6d47c9da0661be04171/3.1/Dockerfile)
+-	[`3.2.1`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/90ba62c6d8859abc5f38a6d47c9da0661be04171/3.2/Dockerfile)
+-	[`3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/docker-library/cassandra/blob/90ba62c6d8859abc5f38a6d47c9da0661be04171/3.3/Dockerfile)
 
-[![](https://badge.imagelayers.io/cassandra:latest.svg)](https://imagelayers.io/?images=cassandra:2.1.13,cassandra:2.2.5,cassandra:3.0.3,cassandra:3.1.1,cassandra:3.2.1,cassandra:3.3)
+[![](https://badge.imagelayers.io/cassandra:latest.svg)](https://imagelayers.io/?images=cassandra:2.1.13,cassandra:2.2.5,cassandra:3.0.5,cassandra:3.1.1,cassandra:3.2.1,cassandra:3.3)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcassandra).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `cassandra/tag-details.md` file](https://github.com/docker-library/docs/blob/master/cassandra/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -179,7 +179,7 @@ If there is no database initialized when the container starts, then a default da
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -193,7 +193,7 @@ Documentation for this image is stored in the [`cassandra/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/cassandra/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/cassandra/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

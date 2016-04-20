@@ -2,17 +2,17 @@
 
 # Tags of `pypy`
 
--	[`pypy:2-4.0.1`](#pypy2-401)
--	[`pypy:2-4.0`](#pypy2-40)
--	[`pypy:2-4`](#pypy2-4)
+-	[`pypy:2-5.0.1`](#pypy2-501)
+-	[`pypy:2-5.0`](#pypy2-50)
+-	[`pypy:2-5`](#pypy2-5)
 -	[`pypy:2`](#pypy2)
--	[`pypy:2-4.0.1-onbuild`](#pypy2-401-onbuild)
--	[`pypy:2-4.0-onbuild`](#pypy2-40-onbuild)
--	[`pypy:2-4-onbuild`](#pypy2-4-onbuild)
+-	[`pypy:2-5.0.1-onbuild`](#pypy2-501-onbuild)
+-	[`pypy:2-5.0-onbuild`](#pypy2-50-onbuild)
+-	[`pypy:2-5-onbuild`](#pypy2-5-onbuild)
 -	[`pypy:2-onbuild`](#pypy2-onbuild)
--	[`pypy:2-4.0.1-slim`](#pypy2-401-slim)
--	[`pypy:2-4.0-slim`](#pypy2-40-slim)
--	[`pypy:2-4-slim`](#pypy2-4-slim)
+-	[`pypy:2-5.0.1-slim`](#pypy2-501-slim)
+-	[`pypy:2-5.0-slim`](#pypy2-50-slim)
+-	[`pypy:2-5-slim`](#pypy2-5-slim)
 -	[`pypy:2-slim`](#pypy2-slim)
 -	[`pypy:3-2.4.0`](#pypy3-240)
 -	[`pypy:3-2.4`](#pypy3-24)
@@ -30,43 +30,45 @@
 -	[`pypy:3-slim`](#pypy3-slim)
 -	[`pypy:slim`](#pypyslim)
 
-## `pypy:2-4.0.1`
+## `pypy:2-5.0.1`
 
 ```console
-$ docker pull library/pypy@sha256:4f0b6dd08959b5fe4dd706aa3350b56f0e1898b9c30542cdfffd284a2cc6421f
+$ docker pull library/pypy@sha256:0ae58de3f4a13ea685bf6885bed1add7cfa0ce35153902f0157c2dacef16f90a
 ```
 
--	Total Virtual Size: 722.2 MB (722209509 bytes)
--	Total v2 Content-Length: 271.5 MB (271526264 bytes)
+-	Total Virtual Size: 724.6 MB (724616776 bytes)
+-	Total v2 Content-Length: 271.3 MB (271250976 bytes)
 
 ### Layers (12)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -76,14 +78,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -96,14 +99,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -144,53 +148,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+#### `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:03 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+#### `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 
 ```dockerfile
 RUN set -x \
@@ -198,90 +206,96 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:11 GMT
--	Parent Layer: `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+-	Created: Tue, 05 Apr 2016 03:17:52 GMT
+-	Parent Layer: `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 -	Docker Version: 1.9.1
--	Virtual Size: 102.0 MB (102038733 bytes)
--	v2 Blob: `sha256:b6a4c3e137689b9b1524dd9c736fd4e3279a40b0d200ac5fc322c9ef0ea3c5e9`
--	v2 Content-Length: 24.1 MB (24118813 bytes)
+-	Virtual Size: 104.8 MB (104756805 bytes)
+-	v2 Blob: `sha256:0ba226cc29677940cd17e539c9437c2ce7a6662a6d1183d3da7935d5b078fb7b`
+-	v2 Content-Length: 24.7 MB (24657643 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:37:21 GMT
 
-#### `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+#### `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:13 GMT
--	Parent Layer: `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+-	Created: Tue, 05 Apr 2016 03:18:05 GMT
+-	Parent Layer: `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+#### `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:24 GMT
--	Parent Layer: `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+-	Created: Tue, 05 Apr 2016 03:18:16 GMT
+-	Parent Layer: `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 -	Docker Version: 1.9.1
--	Virtual Size: 12.5 MB (12486152 bytes)
--	v2 Blob: `sha256:95766356ad28977e83b57b994a38168c51bb4542733afcff4f58807c0015ccbe`
--	v2 Content-Length: 6.2 MB (6191448 bytes)
+-	Virtual Size: 12.2 MB (12239691 bytes)
+-	v2 Blob: `sha256:855984daac9c41839d302d484d1f883c7e87a00847405fb4f5578bfae2a3e3ca`
+-	v2 Content-Length: 5.4 MB (5382672 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:36:58 GMT
 
-#### `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+#### `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:25 GMT
--	Parent Layer: `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+-	Created: Tue, 05 Apr 2016 03:18:22 GMT
+-	Parent Layer: `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `pypy:2-4.0`
+## `pypy:2-5.0`
 
 ```console
-$ docker pull library/pypy@sha256:3cc6e66c827b60a3c7672e9e5570ea862cbbd0c83ca5203ea6b46c8c349d2638
+$ docker pull library/pypy@sha256:bc9119728b9b61975b6e563568aec774c3854b2d2e3982ef3e08f9e60320c217
 ```
 
--	Total Virtual Size: 722.2 MB (722209509 bytes)
--	Total v2 Content-Length: 271.5 MB (271526264 bytes)
+-	Total Virtual Size: 724.6 MB (724616776 bytes)
+-	Total v2 Content-Length: 271.3 MB (271250976 bytes)
 
 ### Layers (12)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -291,14 +305,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -311,14 +326,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -359,53 +375,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+#### `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:03 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+#### `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 
 ```dockerfile
 RUN set -x \
@@ -413,90 +433,96 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:11 GMT
--	Parent Layer: `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+-	Created: Tue, 05 Apr 2016 03:17:52 GMT
+-	Parent Layer: `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 -	Docker Version: 1.9.1
--	Virtual Size: 102.0 MB (102038733 bytes)
--	v2 Blob: `sha256:b6a4c3e137689b9b1524dd9c736fd4e3279a40b0d200ac5fc322c9ef0ea3c5e9`
--	v2 Content-Length: 24.1 MB (24118813 bytes)
+-	Virtual Size: 104.8 MB (104756805 bytes)
+-	v2 Blob: `sha256:0ba226cc29677940cd17e539c9437c2ce7a6662a6d1183d3da7935d5b078fb7b`
+-	v2 Content-Length: 24.7 MB (24657643 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:37:21 GMT
 
-#### `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+#### `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:13 GMT
--	Parent Layer: `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+-	Created: Tue, 05 Apr 2016 03:18:05 GMT
+-	Parent Layer: `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+#### `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:24 GMT
--	Parent Layer: `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+-	Created: Tue, 05 Apr 2016 03:18:16 GMT
+-	Parent Layer: `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 -	Docker Version: 1.9.1
--	Virtual Size: 12.5 MB (12486152 bytes)
--	v2 Blob: `sha256:95766356ad28977e83b57b994a38168c51bb4542733afcff4f58807c0015ccbe`
--	v2 Content-Length: 6.2 MB (6191448 bytes)
+-	Virtual Size: 12.2 MB (12239691 bytes)
+-	v2 Blob: `sha256:855984daac9c41839d302d484d1f883c7e87a00847405fb4f5578bfae2a3e3ca`
+-	v2 Content-Length: 5.4 MB (5382672 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:36:58 GMT
 
-#### `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+#### `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:25 GMT
--	Parent Layer: `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+-	Created: Tue, 05 Apr 2016 03:18:22 GMT
+-	Parent Layer: `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `pypy:2-4`
+## `pypy:2-5`
 
 ```console
-$ docker pull library/pypy@sha256:6a257dbe69c49b32d3bc3d4894d9585ed77c5a5a5d45f89bd5968a6e7cec5697
+$ docker pull library/pypy@sha256:8a7f42d658b96a8ba95aa66c8d136bc2fe77fe366a1dc3f82f8db02481e98c1a
 ```
 
--	Total Virtual Size: 722.2 MB (722209509 bytes)
--	Total v2 Content-Length: 271.5 MB (271526264 bytes)
+-	Total Virtual Size: 724.6 MB (724616776 bytes)
+-	Total v2 Content-Length: 271.3 MB (271250976 bytes)
 
 ### Layers (12)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -506,14 +532,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -526,14 +553,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -574,53 +602,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+#### `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:03 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+#### `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 
 ```dockerfile
 RUN set -x \
@@ -628,90 +660,96 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:11 GMT
--	Parent Layer: `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+-	Created: Tue, 05 Apr 2016 03:17:52 GMT
+-	Parent Layer: `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 -	Docker Version: 1.9.1
--	Virtual Size: 102.0 MB (102038733 bytes)
--	v2 Blob: `sha256:b6a4c3e137689b9b1524dd9c736fd4e3279a40b0d200ac5fc322c9ef0ea3c5e9`
--	v2 Content-Length: 24.1 MB (24118813 bytes)
+-	Virtual Size: 104.8 MB (104756805 bytes)
+-	v2 Blob: `sha256:0ba226cc29677940cd17e539c9437c2ce7a6662a6d1183d3da7935d5b078fb7b`
+-	v2 Content-Length: 24.7 MB (24657643 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:37:21 GMT
 
-#### `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+#### `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:13 GMT
--	Parent Layer: `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+-	Created: Tue, 05 Apr 2016 03:18:05 GMT
+-	Parent Layer: `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+#### `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:24 GMT
--	Parent Layer: `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+-	Created: Tue, 05 Apr 2016 03:18:16 GMT
+-	Parent Layer: `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 -	Docker Version: 1.9.1
--	Virtual Size: 12.5 MB (12486152 bytes)
--	v2 Blob: `sha256:95766356ad28977e83b57b994a38168c51bb4542733afcff4f58807c0015ccbe`
--	v2 Content-Length: 6.2 MB (6191448 bytes)
+-	Virtual Size: 12.2 MB (12239691 bytes)
+-	v2 Blob: `sha256:855984daac9c41839d302d484d1f883c7e87a00847405fb4f5578bfae2a3e3ca`
+-	v2 Content-Length: 5.4 MB (5382672 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:36:58 GMT
 
-#### `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+#### `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:25 GMT
--	Parent Layer: `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+-	Created: Tue, 05 Apr 2016 03:18:22 GMT
+-	Parent Layer: `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2`
 
 ```console
-$ docker pull library/pypy@sha256:084426f55a5afd2ca1c585e1a3fd6785e20ef8e70dd9ccc26e69c6b7b7a742e6
+$ docker pull library/pypy@sha256:68b273fd5693e775a9ae73e7d87fd260c7c970fc9e203465b1744b79fee016b6
 ```
 
--	Total Virtual Size: 722.2 MB (722209509 bytes)
--	Total v2 Content-Length: 271.5 MB (271526264 bytes)
+-	Total Virtual Size: 724.6 MB (724616776 bytes)
+-	Total v2 Content-Length: 271.3 MB (271250976 bytes)
 
 ### Layers (12)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -721,14 +759,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -741,14 +780,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -789,53 +829,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+#### `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:03 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+#### `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 
 ```dockerfile
 RUN set -x \
@@ -843,90 +887,96 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:11 GMT
--	Parent Layer: `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+-	Created: Tue, 05 Apr 2016 03:17:52 GMT
+-	Parent Layer: `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 -	Docker Version: 1.9.1
--	Virtual Size: 102.0 MB (102038733 bytes)
--	v2 Blob: `sha256:b6a4c3e137689b9b1524dd9c736fd4e3279a40b0d200ac5fc322c9ef0ea3c5e9`
--	v2 Content-Length: 24.1 MB (24118813 bytes)
+-	Virtual Size: 104.8 MB (104756805 bytes)
+-	v2 Blob: `sha256:0ba226cc29677940cd17e539c9437c2ce7a6662a6d1183d3da7935d5b078fb7b`
+-	v2 Content-Length: 24.7 MB (24657643 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:37:21 GMT
 
-#### `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+#### `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:13 GMT
--	Parent Layer: `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+-	Created: Tue, 05 Apr 2016 03:18:05 GMT
+-	Parent Layer: `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+#### `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:24 GMT
--	Parent Layer: `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+-	Created: Tue, 05 Apr 2016 03:18:16 GMT
+-	Parent Layer: `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 -	Docker Version: 1.9.1
--	Virtual Size: 12.5 MB (12486152 bytes)
--	v2 Blob: `sha256:95766356ad28977e83b57b994a38168c51bb4542733afcff4f58807c0015ccbe`
--	v2 Content-Length: 6.2 MB (6191448 bytes)
+-	Virtual Size: 12.2 MB (12239691 bytes)
+-	v2 Blob: `sha256:855984daac9c41839d302d484d1f883c7e87a00847405fb4f5578bfae2a3e3ca`
+-	v2 Content-Length: 5.4 MB (5382672 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:36:58 GMT
 
-#### `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+#### `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:25 GMT
--	Parent Layer: `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+-	Created: Tue, 05 Apr 2016 03:18:22 GMT
+-	Parent Layer: `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `pypy:2-4.0.1-onbuild`
+## `pypy:2-5.0.1-onbuild`
 
 ```console
-$ docker pull library/pypy@sha256:11db44e481d384d466fb5f28c3a89f1a2cc4e052f45e5e7015ad044557469dbf
+$ docker pull library/pypy@sha256:9c0fed4e14b6d302e93aa507aec1f742648d714aa017416efb4172d265a61070
 ```
 
--	Total Virtual Size: 722.2 MB (722209509 bytes)
--	Total v2 Content-Length: 271.5 MB (271526515 bytes)
+-	Total Virtual Size: 724.6 MB (724616776 bytes)
+-	Total v2 Content-Length: 271.3 MB (271251231 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -936,14 +986,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -956,14 +1007,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1004,53 +1056,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+#### `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:03 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+#### `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 
 ```dockerfile
 RUN set -x \
@@ -1058,155 +1114,166 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:11 GMT
--	Parent Layer: `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+-	Created: Tue, 05 Apr 2016 03:17:52 GMT
+-	Parent Layer: `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 -	Docker Version: 1.9.1
--	Virtual Size: 102.0 MB (102038733 bytes)
--	v2 Blob: `sha256:b6a4c3e137689b9b1524dd9c736fd4e3279a40b0d200ac5fc322c9ef0ea3c5e9`
--	v2 Content-Length: 24.1 MB (24118813 bytes)
+-	Virtual Size: 104.8 MB (104756805 bytes)
+-	v2 Blob: `sha256:0ba226cc29677940cd17e539c9437c2ce7a6662a6d1183d3da7935d5b078fb7b`
+-	v2 Content-Length: 24.7 MB (24657643 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:37:21 GMT
 
-#### `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+#### `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:13 GMT
--	Parent Layer: `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+-	Created: Tue, 05 Apr 2016 03:18:05 GMT
+-	Parent Layer: `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+#### `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:24 GMT
--	Parent Layer: `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+-	Created: Tue, 05 Apr 2016 03:18:16 GMT
+-	Parent Layer: `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 -	Docker Version: 1.9.1
--	Virtual Size: 12.5 MB (12486152 bytes)
--	v2 Blob: `sha256:95766356ad28977e83b57b994a38168c51bb4542733afcff4f58807c0015ccbe`
--	v2 Content-Length: 6.2 MB (6191448 bytes)
+-	Virtual Size: 12.2 MB (12239691 bytes)
+-	v2 Blob: `sha256:855984daac9c41839d302d484d1f883c7e87a00847405fb4f5578bfae2a3e3ca`
+-	v2 Content-Length: 5.4 MB (5382672 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:36:58 GMT
 
-#### `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+#### `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:25 GMT
--	Parent Layer: `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+-	Created: Tue, 05 Apr 2016 03:18:22 GMT
+-	Parent Layer: `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9199a43cfe934b3ed59010fa4a599f4eb4b97db89f523cd227b908822c4c76df`
+#### `5694c9de4b4ad80d996b8c2853a4b97129b3f9cd129b9f67592a1df65b583a46`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:21 GMT
--	Parent Layer: `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+-	Created: Tue, 05 Apr 2016 03:20:15 GMT
+-	Parent Layer: `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:323e0b90295930d23973b31e13e10817f4626c18a33218180dc1d5f3ce6b90f2`
--	v2 Content-Length: 123.0 B
+-	v2 Blob: `sha256:cb4fa41f4eb6447084a752b8cfa1074db45c18d7988c6a34942a30095f749928`
+-	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:40:20 GMT
 
-#### `395487a1aeef0a23350498180a966678d2544b008ed931bd2eb2a40e18d9c411`
+#### `58f3accea603f4cd893ad511f98563a7ec44d53caaf87fd4468d82549fc09963`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:22 GMT
--	Parent Layer: `9199a43cfe934b3ed59010fa4a599f4eb4b97db89f523cd227b908822c4c76df`
+-	Created: Tue, 05 Apr 2016 03:20:15 GMT
+-	Parent Layer: `5694c9de4b4ad80d996b8c2853a4b97129b3f9cd129b9f67592a1df65b583a46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7092a1adee9f9c0321a9763fc7f67124e4372136b46acac45c02398a76c4c5d9`
+#### `ce5cf193a8a1d75ac2150cf3cadabc5862c8309e3b588dc657d6083effbf5732`
 
 ```dockerfile
 ONBUILD COPY requirements.txt /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:22 GMT
--	Parent Layer: `395487a1aeef0a23350498180a966678d2544b008ed931bd2eb2a40e18d9c411`
+-	Created: Tue, 05 Apr 2016 03:20:16 GMT
+-	Parent Layer: `58f3accea603f4cd893ad511f98563a7ec44d53caaf87fd4468d82549fc09963`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e2c94a11a6fa3e1771c46e90c496e2e8e5ae00017fcdbba189bdd54570e9afd4`
+#### `4a64f75a748ec7a70899a24d9c41446792d67b187cd51ff98a733e9e5081adaf`
 
 ```dockerfile
 ONBUILD RUN pip install -r requirements.txt
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:23 GMT
--	Parent Layer: `7092a1adee9f9c0321a9763fc7f67124e4372136b46acac45c02398a76c4c5d9`
+-	Created: Tue, 05 Apr 2016 03:20:17 GMT
+-	Parent Layer: `ce5cf193a8a1d75ac2150cf3cadabc5862c8309e3b588dc657d6083effbf5732`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `910bfa488d695b307a24fa2a3e10c3562cc045825e421612e76b8b313a7c6ddf`
+#### `ef22d691f4624eeedce7b91f05917afacd012c81fe4580bc7a6362262e7d35d1`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:23 GMT
--	Parent Layer: `e2c94a11a6fa3e1771c46e90c496e2e8e5ae00017fcdbba189bdd54570e9afd4`
+-	Created: Tue, 05 Apr 2016 03:20:17 GMT
+-	Parent Layer: `4a64f75a748ec7a70899a24d9c41446792d67b187cd51ff98a733e9e5081adaf`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `pypy:2-4.0-onbuild`
+## `pypy:2-5.0-onbuild`
 
 ```console
-$ docker pull library/pypy@sha256:f8b00c7bbd9fd35c7d2c1048f8aa03b038bd4847f071369ce365cd46d0785f15
+$ docker pull library/pypy@sha256:25d586b74f2c5b3f740443469bb7d3ba1c58976bcc7e8ba619d55b68c937c08b
 ```
 
--	Total Virtual Size: 722.2 MB (722209509 bytes)
--	Total v2 Content-Length: 271.5 MB (271526515 bytes)
+-	Total Virtual Size: 724.6 MB (724616776 bytes)
+-	Total v2 Content-Length: 271.3 MB (271251231 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1216,14 +1283,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1236,14 +1304,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1284,53 +1353,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+#### `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:03 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+#### `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 
 ```dockerfile
 RUN set -x \
@@ -1338,155 +1411,166 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:11 GMT
--	Parent Layer: `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+-	Created: Tue, 05 Apr 2016 03:17:52 GMT
+-	Parent Layer: `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 -	Docker Version: 1.9.1
--	Virtual Size: 102.0 MB (102038733 bytes)
--	v2 Blob: `sha256:b6a4c3e137689b9b1524dd9c736fd4e3279a40b0d200ac5fc322c9ef0ea3c5e9`
--	v2 Content-Length: 24.1 MB (24118813 bytes)
+-	Virtual Size: 104.8 MB (104756805 bytes)
+-	v2 Blob: `sha256:0ba226cc29677940cd17e539c9437c2ce7a6662a6d1183d3da7935d5b078fb7b`
+-	v2 Content-Length: 24.7 MB (24657643 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:37:21 GMT
 
-#### `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+#### `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:13 GMT
--	Parent Layer: `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+-	Created: Tue, 05 Apr 2016 03:18:05 GMT
+-	Parent Layer: `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+#### `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:24 GMT
--	Parent Layer: `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+-	Created: Tue, 05 Apr 2016 03:18:16 GMT
+-	Parent Layer: `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 -	Docker Version: 1.9.1
--	Virtual Size: 12.5 MB (12486152 bytes)
--	v2 Blob: `sha256:95766356ad28977e83b57b994a38168c51bb4542733afcff4f58807c0015ccbe`
--	v2 Content-Length: 6.2 MB (6191448 bytes)
+-	Virtual Size: 12.2 MB (12239691 bytes)
+-	v2 Blob: `sha256:855984daac9c41839d302d484d1f883c7e87a00847405fb4f5578bfae2a3e3ca`
+-	v2 Content-Length: 5.4 MB (5382672 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:36:58 GMT
 
-#### `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+#### `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:25 GMT
--	Parent Layer: `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+-	Created: Tue, 05 Apr 2016 03:18:22 GMT
+-	Parent Layer: `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9199a43cfe934b3ed59010fa4a599f4eb4b97db89f523cd227b908822c4c76df`
+#### `5694c9de4b4ad80d996b8c2853a4b97129b3f9cd129b9f67592a1df65b583a46`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:21 GMT
--	Parent Layer: `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+-	Created: Tue, 05 Apr 2016 03:20:15 GMT
+-	Parent Layer: `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:323e0b90295930d23973b31e13e10817f4626c18a33218180dc1d5f3ce6b90f2`
--	v2 Content-Length: 123.0 B
+-	v2 Blob: `sha256:cb4fa41f4eb6447084a752b8cfa1074db45c18d7988c6a34942a30095f749928`
+-	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:40:20 GMT
 
-#### `395487a1aeef0a23350498180a966678d2544b008ed931bd2eb2a40e18d9c411`
+#### `58f3accea603f4cd893ad511f98563a7ec44d53caaf87fd4468d82549fc09963`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:22 GMT
--	Parent Layer: `9199a43cfe934b3ed59010fa4a599f4eb4b97db89f523cd227b908822c4c76df`
+-	Created: Tue, 05 Apr 2016 03:20:15 GMT
+-	Parent Layer: `5694c9de4b4ad80d996b8c2853a4b97129b3f9cd129b9f67592a1df65b583a46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7092a1adee9f9c0321a9763fc7f67124e4372136b46acac45c02398a76c4c5d9`
+#### `ce5cf193a8a1d75ac2150cf3cadabc5862c8309e3b588dc657d6083effbf5732`
 
 ```dockerfile
 ONBUILD COPY requirements.txt /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:22 GMT
--	Parent Layer: `395487a1aeef0a23350498180a966678d2544b008ed931bd2eb2a40e18d9c411`
+-	Created: Tue, 05 Apr 2016 03:20:16 GMT
+-	Parent Layer: `58f3accea603f4cd893ad511f98563a7ec44d53caaf87fd4468d82549fc09963`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e2c94a11a6fa3e1771c46e90c496e2e8e5ae00017fcdbba189bdd54570e9afd4`
+#### `4a64f75a748ec7a70899a24d9c41446792d67b187cd51ff98a733e9e5081adaf`
 
 ```dockerfile
 ONBUILD RUN pip install -r requirements.txt
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:23 GMT
--	Parent Layer: `7092a1adee9f9c0321a9763fc7f67124e4372136b46acac45c02398a76c4c5d9`
+-	Created: Tue, 05 Apr 2016 03:20:17 GMT
+-	Parent Layer: `ce5cf193a8a1d75ac2150cf3cadabc5862c8309e3b588dc657d6083effbf5732`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `910bfa488d695b307a24fa2a3e10c3562cc045825e421612e76b8b313a7c6ddf`
+#### `ef22d691f4624eeedce7b91f05917afacd012c81fe4580bc7a6362262e7d35d1`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:23 GMT
--	Parent Layer: `e2c94a11a6fa3e1771c46e90c496e2e8e5ae00017fcdbba189bdd54570e9afd4`
+-	Created: Tue, 05 Apr 2016 03:20:17 GMT
+-	Parent Layer: `4a64f75a748ec7a70899a24d9c41446792d67b187cd51ff98a733e9e5081adaf`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `pypy:2-4-onbuild`
+## `pypy:2-5-onbuild`
 
 ```console
-$ docker pull library/pypy@sha256:c7a541abd6f785b601bd4b9f0dbf75ce705cf4db528060a5ab08cf4406bdd79c
+$ docker pull library/pypy@sha256:a4a6b636b1036bea506865bbf0d0716ac563fedadd7ba665d3b86283d30a180f
 ```
 
--	Total Virtual Size: 722.2 MB (722209509 bytes)
--	Total v2 Content-Length: 271.5 MB (271526515 bytes)
+-	Total Virtual Size: 724.6 MB (724616776 bytes)
+-	Total v2 Content-Length: 271.3 MB (271251231 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1496,14 +1580,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1516,14 +1601,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1564,53 +1650,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+#### `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:03 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+#### `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 
 ```dockerfile
 RUN set -x \
@@ -1618,155 +1708,166 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:11 GMT
--	Parent Layer: `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+-	Created: Tue, 05 Apr 2016 03:17:52 GMT
+-	Parent Layer: `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 -	Docker Version: 1.9.1
--	Virtual Size: 102.0 MB (102038733 bytes)
--	v2 Blob: `sha256:b6a4c3e137689b9b1524dd9c736fd4e3279a40b0d200ac5fc322c9ef0ea3c5e9`
--	v2 Content-Length: 24.1 MB (24118813 bytes)
+-	Virtual Size: 104.8 MB (104756805 bytes)
+-	v2 Blob: `sha256:0ba226cc29677940cd17e539c9437c2ce7a6662a6d1183d3da7935d5b078fb7b`
+-	v2 Content-Length: 24.7 MB (24657643 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:37:21 GMT
 
-#### `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+#### `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:13 GMT
--	Parent Layer: `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+-	Created: Tue, 05 Apr 2016 03:18:05 GMT
+-	Parent Layer: `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+#### `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:24 GMT
--	Parent Layer: `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+-	Created: Tue, 05 Apr 2016 03:18:16 GMT
+-	Parent Layer: `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 -	Docker Version: 1.9.1
--	Virtual Size: 12.5 MB (12486152 bytes)
--	v2 Blob: `sha256:95766356ad28977e83b57b994a38168c51bb4542733afcff4f58807c0015ccbe`
--	v2 Content-Length: 6.2 MB (6191448 bytes)
+-	Virtual Size: 12.2 MB (12239691 bytes)
+-	v2 Blob: `sha256:855984daac9c41839d302d484d1f883c7e87a00847405fb4f5578bfae2a3e3ca`
+-	v2 Content-Length: 5.4 MB (5382672 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:36:58 GMT
 
-#### `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+#### `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:25 GMT
--	Parent Layer: `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+-	Created: Tue, 05 Apr 2016 03:18:22 GMT
+-	Parent Layer: `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9199a43cfe934b3ed59010fa4a599f4eb4b97db89f523cd227b908822c4c76df`
+#### `5694c9de4b4ad80d996b8c2853a4b97129b3f9cd129b9f67592a1df65b583a46`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:21 GMT
--	Parent Layer: `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+-	Created: Tue, 05 Apr 2016 03:20:15 GMT
+-	Parent Layer: `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:323e0b90295930d23973b31e13e10817f4626c18a33218180dc1d5f3ce6b90f2`
--	v2 Content-Length: 123.0 B
+-	v2 Blob: `sha256:cb4fa41f4eb6447084a752b8cfa1074db45c18d7988c6a34942a30095f749928`
+-	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:40:20 GMT
 
-#### `395487a1aeef0a23350498180a966678d2544b008ed931bd2eb2a40e18d9c411`
+#### `58f3accea603f4cd893ad511f98563a7ec44d53caaf87fd4468d82549fc09963`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:22 GMT
--	Parent Layer: `9199a43cfe934b3ed59010fa4a599f4eb4b97db89f523cd227b908822c4c76df`
+-	Created: Tue, 05 Apr 2016 03:20:15 GMT
+-	Parent Layer: `5694c9de4b4ad80d996b8c2853a4b97129b3f9cd129b9f67592a1df65b583a46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7092a1adee9f9c0321a9763fc7f67124e4372136b46acac45c02398a76c4c5d9`
+#### `ce5cf193a8a1d75ac2150cf3cadabc5862c8309e3b588dc657d6083effbf5732`
 
 ```dockerfile
 ONBUILD COPY requirements.txt /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:22 GMT
--	Parent Layer: `395487a1aeef0a23350498180a966678d2544b008ed931bd2eb2a40e18d9c411`
+-	Created: Tue, 05 Apr 2016 03:20:16 GMT
+-	Parent Layer: `58f3accea603f4cd893ad511f98563a7ec44d53caaf87fd4468d82549fc09963`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e2c94a11a6fa3e1771c46e90c496e2e8e5ae00017fcdbba189bdd54570e9afd4`
+#### `4a64f75a748ec7a70899a24d9c41446792d67b187cd51ff98a733e9e5081adaf`
 
 ```dockerfile
 ONBUILD RUN pip install -r requirements.txt
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:23 GMT
--	Parent Layer: `7092a1adee9f9c0321a9763fc7f67124e4372136b46acac45c02398a76c4c5d9`
+-	Created: Tue, 05 Apr 2016 03:20:17 GMT
+-	Parent Layer: `ce5cf193a8a1d75ac2150cf3cadabc5862c8309e3b588dc657d6083effbf5732`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `910bfa488d695b307a24fa2a3e10c3562cc045825e421612e76b8b313a7c6ddf`
+#### `ef22d691f4624eeedce7b91f05917afacd012c81fe4580bc7a6362262e7d35d1`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:23 GMT
--	Parent Layer: `e2c94a11a6fa3e1771c46e90c496e2e8e5ae00017fcdbba189bdd54570e9afd4`
+-	Created: Tue, 05 Apr 2016 03:20:17 GMT
+-	Parent Layer: `4a64f75a748ec7a70899a24d9c41446792d67b187cd51ff98a733e9e5081adaf`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-onbuild`
 
 ```console
-$ docker pull library/pypy@sha256:8f0e219c0db20e71e1e823d04105cc393d31374ab3a93cf59bdf525a627a3b2b
+$ docker pull library/pypy@sha256:2c1b716389fe3cd941cdacab60135f7ffc5cbe6cd24a3891eae1448210dc1222
 ```
 
--	Total Virtual Size: 722.2 MB (722209509 bytes)
--	Total v2 Content-Length: 271.5 MB (271526515 bytes)
+-	Total Virtual Size: 724.6 MB (724616776 bytes)
+-	Total v2 Content-Length: 271.3 MB (271251231 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1776,14 +1877,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1796,14 +1898,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1844,53 +1947,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+#### `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:03 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+#### `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 
 ```dockerfile
 RUN set -x \
@@ -1898,181 +2005,194 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:11 GMT
--	Parent Layer: `84a34a643c050101c41b38e7acc7f14f6f324f5dde7daf148015db16e7dd3ed4`
+-	Created: Tue, 05 Apr 2016 03:17:52 GMT
+-	Parent Layer: `e540272e8493ec6d1abca4504b5ab343991ab47a5a9ccbdb6fd1286b417bc171`
 -	Docker Version: 1.9.1
--	Virtual Size: 102.0 MB (102038733 bytes)
--	v2 Blob: `sha256:b6a4c3e137689b9b1524dd9c736fd4e3279a40b0d200ac5fc322c9ef0ea3c5e9`
--	v2 Content-Length: 24.1 MB (24118813 bytes)
+-	Virtual Size: 104.8 MB (104756805 bytes)
+-	v2 Blob: `sha256:0ba226cc29677940cd17e539c9437c2ce7a6662a6d1183d3da7935d5b078fb7b`
+-	v2 Content-Length: 24.7 MB (24657643 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:37:21 GMT
 
-#### `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+#### `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:13 GMT
--	Parent Layer: `5fb229df59e16dd973b77d93f01bb32b8f0bdf057f7cefed55e9ddbc53a5a24d`
+-	Created: Tue, 05 Apr 2016 03:18:05 GMT
+-	Parent Layer: `f26376bb1d43dd14cb02f68bfa99ff938a9aeb55cc872205c069e611c40444e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+#### `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:24 GMT
--	Parent Layer: `e594d66c6185f742f9b9b235f1f98a5d75217ade3498522db4337f2895a3774e`
+-	Created: Tue, 05 Apr 2016 03:18:16 GMT
+-	Parent Layer: `820c7b767c5fd38a268c8675485541191290ce09aec654559b8b3e52a09e83ae`
 -	Docker Version: 1.9.1
--	Virtual Size: 12.5 MB (12486152 bytes)
--	v2 Blob: `sha256:95766356ad28977e83b57b994a38168c51bb4542733afcff4f58807c0015ccbe`
--	v2 Content-Length: 6.2 MB (6191448 bytes)
+-	Virtual Size: 12.2 MB (12239691 bytes)
+-	v2 Blob: `sha256:855984daac9c41839d302d484d1f883c7e87a00847405fb4f5578bfae2a3e3ca`
+-	v2 Content-Length: 5.4 MB (5382672 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:36:58 GMT
 
-#### `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+#### `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:25 GMT
--	Parent Layer: `1e84c9fdbafb70aecbdca90540dfc682a50c1887518e492d7cc50725fdf54704`
+-	Created: Tue, 05 Apr 2016 03:18:22 GMT
+-	Parent Layer: `721a8ab4962b37eb23ea2541af2d154d69eaef5138c154fe64b593c70b5a65d9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9199a43cfe934b3ed59010fa4a599f4eb4b97db89f523cd227b908822c4c76df`
+#### `5694c9de4b4ad80d996b8c2853a4b97129b3f9cd129b9f67592a1df65b583a46`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:21 GMT
--	Parent Layer: `295a5d519054e736105d56c2c07d2f5e88c330584f56025d7652875116c6f1ab`
+-	Created: Tue, 05 Apr 2016 03:20:15 GMT
+-	Parent Layer: `f12e62b0bd1e3446c53f8cb8596077d0aa54a6f421892851869251b51054597d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:323e0b90295930d23973b31e13e10817f4626c18a33218180dc1d5f3ce6b90f2`
--	v2 Content-Length: 123.0 B
+-	v2 Blob: `sha256:cb4fa41f4eb6447084a752b8cfa1074db45c18d7988c6a34942a30095f749928`
+-	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:40:20 GMT
 
-#### `395487a1aeef0a23350498180a966678d2544b008ed931bd2eb2a40e18d9c411`
+#### `58f3accea603f4cd893ad511f98563a7ec44d53caaf87fd4468d82549fc09963`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:22 GMT
--	Parent Layer: `9199a43cfe934b3ed59010fa4a599f4eb4b97db89f523cd227b908822c4c76df`
+-	Created: Tue, 05 Apr 2016 03:20:15 GMT
+-	Parent Layer: `5694c9de4b4ad80d996b8c2853a4b97129b3f9cd129b9f67592a1df65b583a46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7092a1adee9f9c0321a9763fc7f67124e4372136b46acac45c02398a76c4c5d9`
+#### `ce5cf193a8a1d75ac2150cf3cadabc5862c8309e3b588dc657d6083effbf5732`
 
 ```dockerfile
 ONBUILD COPY requirements.txt /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:22 GMT
--	Parent Layer: `395487a1aeef0a23350498180a966678d2544b008ed931bd2eb2a40e18d9c411`
+-	Created: Tue, 05 Apr 2016 03:20:16 GMT
+-	Parent Layer: `58f3accea603f4cd893ad511f98563a7ec44d53caaf87fd4468d82549fc09963`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e2c94a11a6fa3e1771c46e90c496e2e8e5ae00017fcdbba189bdd54570e9afd4`
+#### `4a64f75a748ec7a70899a24d9c41446792d67b187cd51ff98a733e9e5081adaf`
 
 ```dockerfile
 ONBUILD RUN pip install -r requirements.txt
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:23 GMT
--	Parent Layer: `7092a1adee9f9c0321a9763fc7f67124e4372136b46acac45c02398a76c4c5d9`
+-	Created: Tue, 05 Apr 2016 03:20:17 GMT
+-	Parent Layer: `ce5cf193a8a1d75ac2150cf3cadabc5862c8309e3b588dc657d6083effbf5732`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `910bfa488d695b307a24fa2a3e10c3562cc045825e421612e76b8b313a7c6ddf`
+#### `ef22d691f4624eeedce7b91f05917afacd012c81fe4580bc7a6362262e7d35d1`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:31:23 GMT
--	Parent Layer: `e2c94a11a6fa3e1771c46e90c496e2e8e5ae00017fcdbba189bdd54570e9afd4`
+-	Created: Tue, 05 Apr 2016 03:20:17 GMT
+-	Parent Layer: `4a64f75a748ec7a70899a24d9c41446792d67b187cd51ff98a733e9e5081adaf`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `pypy:2-4.0.1-slim`
+## `pypy:2-5.0.1-slim`
 
 ```console
-$ docker pull library/pypy@sha256:1e770d887b66c1febe3388f9d327475bd07a15a5674f3cebc734d8731962ae4f
+$ docker pull library/pypy@sha256:76139623fc6faf41345f7d279788095edd5abc64ec49eb468f0b7122da9f53bb
 ```
 
--	Total Virtual Size: 251.8 MB (251834659 bytes)
--	Total v2 Content-Length: 87.2 MB (87193343 bytes)
+-	Total Virtual Size: 254.2 MB (254215565 bytes)
+-	Total v2 Content-Length: 86.9 MB (86894866 bytes)
 
 ### Layers (9)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+#### `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+#### `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+#### `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2082,40 +2202,43 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 -	Docker Version: 1.9.1
--	Virtual Size: 7.7 MB (7745523 bytes)
--	v2 Blob: `sha256:3cc8e9b5207a729443f273b82bf9e3d25cba532dc28c872227f684c8e6868720`
--	v2 Content-Length: 3.4 MB (3448363 bytes)
+-	Virtual Size: 7.7 MB (7717522 bytes)
+-	v2 Blob: `sha256:be6ef9f894a0f0f72aec1cad1f9731fca51baae09915e29be043633804909fb0`
+-	v2 Content-Length: 3.4 MB (3443135 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:36 GMT
 
-#### `efe8c489a423a08181da012d0640c57dd3d88669f6252aa2e6ec2fff9ed3d7e1`
+#### `8a0369636119f0d111214b4cb16610d77637d51e333950f357a77fbc1d1a6d3d`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a927f2b0bce54a7766ea2332e4f7589d4aaf177aa86528e2c0b9a5d9f3d82561`
+#### `d91820bcb94799799e4c4adf3ed0ad23cd1ec3e8f9b4556e4cb0f5ee31c06f0c`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:33 GMT
--	Parent Layer: `efe8c489a423a08181da012d0640c57dd3d88669f6252aa2e6ec2fff9ed3d7e1`
+-	Created: Tue, 05 Apr 2016 03:21:51 GMT
+-	Parent Layer: `8a0369636119f0d111214b4cb16610d77637d51e333950f357a77fbc1d1a6d3d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9a3fbd1c33535938f78e7d6d77ed8013b36eb53e6bd265b0ae78a5c14645400c`
+#### `7810c62539306783d6cac0c24729d8835a17494845c74066a502bb7aaf2d4e6b`
 
 ```dockerfile
 RUN set -x \
@@ -2127,89 +2250,95 @@ RUN set -x \
 	&& apt-get purge -y --auto-remove bzip2 curl
 ```
 
--	Created: Wed, 17 Feb 2016 02:35:36 GMT
--	Parent Layer: `a927f2b0bce54a7766ea2332e4f7589d4aaf177aa86528e2c0b9a5d9f3d82561`
+-	Created: Tue, 05 Apr 2016 03:22:52 GMT
+-	Parent Layer: `d91820bcb94799799e4c4adf3ed0ad23cd1ec3e8f9b4556e4cb0f5ee31c06f0c`
 -	Docker Version: 1.9.1
--	Virtual Size: 119.0 MB (118979365 bytes)
--	v2 Blob: `sha256:65b9e7ec3156e4d33d67586eb178ce9658dfa67ee6f03dfd4f508c4f1da7d19c`
--	v2 Content-Length: 32.4 MB (32378129 bytes)
+-	Virtual Size: 121.4 MB (121446978 bytes)
+-	v2 Blob: `sha256:c1dcd22bef18869d0f2ccfc5cf7d8364e4ad82978ea1d622e7e8cfe0e7ef4295`
+-	v2 Content-Length: 32.1 MB (32108711 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:23 GMT
 
-#### `cad241afb3bc2958ad3d92a85037b7756106aa197e53814550747f973fdfb3bc`
+#### `1a50eae1c868f0cd30237f3b2e7a9e4275d299ec16bb5fbb0f80d7d83703131a`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 02:35:38 GMT
--	Parent Layer: `9a3fbd1c33535938f78e7d6d77ed8013b36eb53e6bd265b0ae78a5c14645400c`
+-	Created: Tue, 05 Apr 2016 03:22:54 GMT
+-	Parent Layer: `7810c62539306783d6cac0c24729d8835a17494845c74066a502bb7aaf2d4e6b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `pypy:2-4.0-slim`
+## `pypy:2-5.0-slim`
 
 ```console
-$ docker pull library/pypy@sha256:c9415ece627122744279302061880afce80a886561d637f820382ef419fd3539
+$ docker pull library/pypy@sha256:f89db23235f7e8264c15093fdb7bb8d63c1603da735b21dc98e617eeb1d73235
 ```
 
--	Total Virtual Size: 251.8 MB (251834659 bytes)
--	Total v2 Content-Length: 87.2 MB (87193343 bytes)
+-	Total Virtual Size: 254.2 MB (254215565 bytes)
+-	Total v2 Content-Length: 86.9 MB (86894866 bytes)
 
 ### Layers (9)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+#### `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+#### `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+#### `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2219,40 +2348,43 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 -	Docker Version: 1.9.1
--	Virtual Size: 7.7 MB (7745523 bytes)
--	v2 Blob: `sha256:3cc8e9b5207a729443f273b82bf9e3d25cba532dc28c872227f684c8e6868720`
--	v2 Content-Length: 3.4 MB (3448363 bytes)
+-	Virtual Size: 7.7 MB (7717522 bytes)
+-	v2 Blob: `sha256:be6ef9f894a0f0f72aec1cad1f9731fca51baae09915e29be043633804909fb0`
+-	v2 Content-Length: 3.4 MB (3443135 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:36 GMT
 
-#### `efe8c489a423a08181da012d0640c57dd3d88669f6252aa2e6ec2fff9ed3d7e1`
+#### `8a0369636119f0d111214b4cb16610d77637d51e333950f357a77fbc1d1a6d3d`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a927f2b0bce54a7766ea2332e4f7589d4aaf177aa86528e2c0b9a5d9f3d82561`
+#### `d91820bcb94799799e4c4adf3ed0ad23cd1ec3e8f9b4556e4cb0f5ee31c06f0c`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:33 GMT
--	Parent Layer: `efe8c489a423a08181da012d0640c57dd3d88669f6252aa2e6ec2fff9ed3d7e1`
+-	Created: Tue, 05 Apr 2016 03:21:51 GMT
+-	Parent Layer: `8a0369636119f0d111214b4cb16610d77637d51e333950f357a77fbc1d1a6d3d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9a3fbd1c33535938f78e7d6d77ed8013b36eb53e6bd265b0ae78a5c14645400c`
+#### `7810c62539306783d6cac0c24729d8835a17494845c74066a502bb7aaf2d4e6b`
 
 ```dockerfile
 RUN set -x \
@@ -2264,89 +2396,95 @@ RUN set -x \
 	&& apt-get purge -y --auto-remove bzip2 curl
 ```
 
--	Created: Wed, 17 Feb 2016 02:35:36 GMT
--	Parent Layer: `a927f2b0bce54a7766ea2332e4f7589d4aaf177aa86528e2c0b9a5d9f3d82561`
+-	Created: Tue, 05 Apr 2016 03:22:52 GMT
+-	Parent Layer: `d91820bcb94799799e4c4adf3ed0ad23cd1ec3e8f9b4556e4cb0f5ee31c06f0c`
 -	Docker Version: 1.9.1
--	Virtual Size: 119.0 MB (118979365 bytes)
--	v2 Blob: `sha256:65b9e7ec3156e4d33d67586eb178ce9658dfa67ee6f03dfd4f508c4f1da7d19c`
--	v2 Content-Length: 32.4 MB (32378129 bytes)
+-	Virtual Size: 121.4 MB (121446978 bytes)
+-	v2 Blob: `sha256:c1dcd22bef18869d0f2ccfc5cf7d8364e4ad82978ea1d622e7e8cfe0e7ef4295`
+-	v2 Content-Length: 32.1 MB (32108711 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:23 GMT
 
-#### `cad241afb3bc2958ad3d92a85037b7756106aa197e53814550747f973fdfb3bc`
+#### `1a50eae1c868f0cd30237f3b2e7a9e4275d299ec16bb5fbb0f80d7d83703131a`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 02:35:38 GMT
--	Parent Layer: `9a3fbd1c33535938f78e7d6d77ed8013b36eb53e6bd265b0ae78a5c14645400c`
+-	Created: Tue, 05 Apr 2016 03:22:54 GMT
+-	Parent Layer: `7810c62539306783d6cac0c24729d8835a17494845c74066a502bb7aaf2d4e6b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `pypy:2-4-slim`
+## `pypy:2-5-slim`
 
 ```console
-$ docker pull library/pypy@sha256:420efa8aa423743db8089dae008086ef75da86f226bbd35c515265548af813b2
+$ docker pull library/pypy@sha256:aeba59af348b2e6f2b53cc9c4f3a237db3c24843cd284e5e8200523617a0540c
 ```
 
--	Total Virtual Size: 251.8 MB (251834659 bytes)
--	Total v2 Content-Length: 87.2 MB (87193343 bytes)
+-	Total Virtual Size: 254.2 MB (254215565 bytes)
+-	Total v2 Content-Length: 86.9 MB (86894866 bytes)
 
 ### Layers (9)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+#### `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+#### `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+#### `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2356,40 +2494,43 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 -	Docker Version: 1.9.1
--	Virtual Size: 7.7 MB (7745523 bytes)
--	v2 Blob: `sha256:3cc8e9b5207a729443f273b82bf9e3d25cba532dc28c872227f684c8e6868720`
--	v2 Content-Length: 3.4 MB (3448363 bytes)
+-	Virtual Size: 7.7 MB (7717522 bytes)
+-	v2 Blob: `sha256:be6ef9f894a0f0f72aec1cad1f9731fca51baae09915e29be043633804909fb0`
+-	v2 Content-Length: 3.4 MB (3443135 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:36 GMT
 
-#### `efe8c489a423a08181da012d0640c57dd3d88669f6252aa2e6ec2fff9ed3d7e1`
+#### `8a0369636119f0d111214b4cb16610d77637d51e333950f357a77fbc1d1a6d3d`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a927f2b0bce54a7766ea2332e4f7589d4aaf177aa86528e2c0b9a5d9f3d82561`
+#### `d91820bcb94799799e4c4adf3ed0ad23cd1ec3e8f9b4556e4cb0f5ee31c06f0c`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:33 GMT
--	Parent Layer: `efe8c489a423a08181da012d0640c57dd3d88669f6252aa2e6ec2fff9ed3d7e1`
+-	Created: Tue, 05 Apr 2016 03:21:51 GMT
+-	Parent Layer: `8a0369636119f0d111214b4cb16610d77637d51e333950f357a77fbc1d1a6d3d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9a3fbd1c33535938f78e7d6d77ed8013b36eb53e6bd265b0ae78a5c14645400c`
+#### `7810c62539306783d6cac0c24729d8835a17494845c74066a502bb7aaf2d4e6b`
 
 ```dockerfile
 RUN set -x \
@@ -2401,89 +2542,95 @@ RUN set -x \
 	&& apt-get purge -y --auto-remove bzip2 curl
 ```
 
--	Created: Wed, 17 Feb 2016 02:35:36 GMT
--	Parent Layer: `a927f2b0bce54a7766ea2332e4f7589d4aaf177aa86528e2c0b9a5d9f3d82561`
+-	Created: Tue, 05 Apr 2016 03:22:52 GMT
+-	Parent Layer: `d91820bcb94799799e4c4adf3ed0ad23cd1ec3e8f9b4556e4cb0f5ee31c06f0c`
 -	Docker Version: 1.9.1
--	Virtual Size: 119.0 MB (118979365 bytes)
--	v2 Blob: `sha256:65b9e7ec3156e4d33d67586eb178ce9658dfa67ee6f03dfd4f508c4f1da7d19c`
--	v2 Content-Length: 32.4 MB (32378129 bytes)
+-	Virtual Size: 121.4 MB (121446978 bytes)
+-	v2 Blob: `sha256:c1dcd22bef18869d0f2ccfc5cf7d8364e4ad82978ea1d622e7e8cfe0e7ef4295`
+-	v2 Content-Length: 32.1 MB (32108711 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:23 GMT
 
-#### `cad241afb3bc2958ad3d92a85037b7756106aa197e53814550747f973fdfb3bc`
+#### `1a50eae1c868f0cd30237f3b2e7a9e4275d299ec16bb5fbb0f80d7d83703131a`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 02:35:38 GMT
--	Parent Layer: `9a3fbd1c33535938f78e7d6d77ed8013b36eb53e6bd265b0ae78a5c14645400c`
+-	Created: Tue, 05 Apr 2016 03:22:54 GMT
+-	Parent Layer: `7810c62539306783d6cac0c24729d8835a17494845c74066a502bb7aaf2d4e6b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-slim`
 
 ```console
-$ docker pull library/pypy@sha256:be1da3faf7862ac17a2e3bc1d71b22ef2ff35fac1283fc0e6f04c38a2c5b4df6
+$ docker pull library/pypy@sha256:366c8806a7a4b00f19bda20cc3652bf1aeb6f82b399046ef96d5330f13817626
 ```
 
--	Total Virtual Size: 251.8 MB (251834659 bytes)
--	Total v2 Content-Length: 87.2 MB (87193343 bytes)
+-	Total Virtual Size: 254.2 MB (254215565 bytes)
+-	Total v2 Content-Length: 86.9 MB (86894866 bytes)
 
 ### Layers (9)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+#### `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+#### `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+#### `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2493,40 +2640,43 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 -	Docker Version: 1.9.1
--	Virtual Size: 7.7 MB (7745523 bytes)
--	v2 Blob: `sha256:3cc8e9b5207a729443f273b82bf9e3d25cba532dc28c872227f684c8e6868720`
--	v2 Content-Length: 3.4 MB (3448363 bytes)
+-	Virtual Size: 7.7 MB (7717522 bytes)
+-	v2 Blob: `sha256:be6ef9f894a0f0f72aec1cad1f9731fca51baae09915e29be043633804909fb0`
+-	v2 Content-Length: 3.4 MB (3443135 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:36 GMT
 
-#### `efe8c489a423a08181da012d0640c57dd3d88669f6252aa2e6ec2fff9ed3d7e1`
+#### `8a0369636119f0d111214b4cb16610d77637d51e333950f357a77fbc1d1a6d3d`
 
 ```dockerfile
-ENV PYPY_VERSION=4.0.1
+ENV PYPY_VERSION=5.0.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a927f2b0bce54a7766ea2332e4f7589d4aaf177aa86528e2c0b9a5d9f3d82561`
+#### `d91820bcb94799799e4c4adf3ed0ad23cd1ec3e8f9b4556e4cb0f5ee31c06f0c`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:33 GMT
--	Parent Layer: `efe8c489a423a08181da012d0640c57dd3d88669f6252aa2e6ec2fff9ed3d7e1`
+-	Created: Tue, 05 Apr 2016 03:21:51 GMT
+-	Parent Layer: `8a0369636119f0d111214b4cb16610d77637d51e333950f357a77fbc1d1a6d3d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9a3fbd1c33535938f78e7d6d77ed8013b36eb53e6bd265b0ae78a5c14645400c`
+#### `7810c62539306783d6cac0c24729d8835a17494845c74066a502bb7aaf2d4e6b`
 
 ```dockerfile
 RUN set -x \
@@ -2538,63 +2688,67 @@ RUN set -x \
 	&& apt-get purge -y --auto-remove bzip2 curl
 ```
 
--	Created: Wed, 17 Feb 2016 02:35:36 GMT
--	Parent Layer: `a927f2b0bce54a7766ea2332e4f7589d4aaf177aa86528e2c0b9a5d9f3d82561`
+-	Created: Tue, 05 Apr 2016 03:22:52 GMT
+-	Parent Layer: `d91820bcb94799799e4c4adf3ed0ad23cd1ec3e8f9b4556e4cb0f5ee31c06f0c`
 -	Docker Version: 1.9.1
--	Virtual Size: 119.0 MB (118979365 bytes)
--	v2 Blob: `sha256:65b9e7ec3156e4d33d67586eb178ce9658dfa67ee6f03dfd4f508c4f1da7d19c`
--	v2 Content-Length: 32.4 MB (32378129 bytes)
+-	Virtual Size: 121.4 MB (121446978 bytes)
+-	v2 Blob: `sha256:c1dcd22bef18869d0f2ccfc5cf7d8364e4ad82978ea1d622e7e8cfe0e7ef4295`
+-	v2 Content-Length: 32.1 MB (32108711 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:23 GMT
 
-#### `cad241afb3bc2958ad3d92a85037b7756106aa197e53814550747f973fdfb3bc`
+#### `1a50eae1c868f0cd30237f3b2e7a9e4275d299ec16bb5fbb0f80d7d83703131a`
 
 ```dockerfile
 CMD ["pypy"]
 ```
 
--	Created: Wed, 17 Feb 2016 02:35:38 GMT
--	Parent Layer: `9a3fbd1c33535938f78e7d6d77ed8013b36eb53e6bd265b0ae78a5c14645400c`
+-	Created: Tue, 05 Apr 2016 03:22:54 GMT
+-	Parent Layer: `7810c62539306783d6cac0c24729d8835a17494845c74066a502bb7aaf2d4e6b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4.0`
 
 ```console
-$ docker pull library/pypy@sha256:6774ffa236e43770c9d5bade48ad2e713a4c1c480b3f33f31f18c57fd374d2ff
+$ docker pull library/pypy@sha256:fa71500263855b935082cedb2b9d6d345de9d0074034f55b614906a33f90a407
 ```
 
--	Total Virtual Size: 685.2 MB (685200643 bytes)
--	Total v2 Content-Length: 261.9 MB (261890388 bytes)
+-	Total Virtual Size: 685.0 MB (685023504 bytes)
+-	Total v2 Content-Length: 261.1 MB (261084821 bytes)
 
 ### Layers (12)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2604,14 +2758,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2624,14 +2779,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2672,53 +2828,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+#### `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:11 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:24:00 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+#### `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 
 ```dockerfile
 RUN set -x \
@@ -2726,90 +2886,96 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:18 GMT
--	Parent Layer: `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+-	Created: Tue, 05 Apr 2016 03:24:06 GMT
+-	Parent Layer: `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 63.8 MB (63784665 bytes)
--	v2 Blob: `sha256:5546331290f22f77f4811f95c09fdfd2a7e008fb98d48d1e9d5a63e05945ea4a`
--	v2 Content-Length: 14.4 MB (14397303 bytes)
+-	v2 Blob: `sha256:515a080f29d6763d8eaa937ddd3151e18ef6be05c3f36ffb515aea8401ca4bc4`
+-	v2 Content-Length: 14.4 MB (14397299 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:08 GMT
 
-#### `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+#### `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:20 GMT
--	Parent Layer: `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+-	Created: Tue, 05 Apr 2016 03:24:08 GMT
+-	Parent Layer: `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+#### `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:35 GMT
--	Parent Layer: `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+-	Created: Tue, 05 Apr 2016 03:24:21 GMT
+-	Parent Layer: `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 -	Docker Version: 1.9.1
--	Virtual Size: 13.7 MB (13731354 bytes)
--	v2 Blob: `sha256:7314fa71e3111c2f80307d79aeb772c6a2277e2f5c7d0330435def92a0ff9775`
--	v2 Content-Length: 6.3 MB (6277082 bytes)
+-	Virtual Size: 13.6 MB (13618559 bytes)
+-	v2 Blob: `sha256:1e4015314392b3d86a90c0c4ab8c9344add15369ecd5697da4ea2fcd0aebc90b`
+-	v2 Content-Length: 5.5 MB (5476861 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:55 GMT
 
-#### `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+#### `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:36 GMT
--	Parent Layer: `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+-	Created: Tue, 05 Apr 2016 03:24:22 GMT
+-	Parent Layer: `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4`
 
 ```console
-$ docker pull library/pypy@sha256:ee7be0a2e4ca20ba0069a236e490bc90a5279b1ceb452d40a8e78cb6fcb1bf21
+$ docker pull library/pypy@sha256:f83916979e92ad1d579c2c9e900fd242b54668c16c699d1a13dd1f157c999768
 ```
 
--	Total Virtual Size: 685.2 MB (685200643 bytes)
--	Total v2 Content-Length: 261.9 MB (261890388 bytes)
+-	Total Virtual Size: 685.0 MB (685023504 bytes)
+-	Total v2 Content-Length: 261.1 MB (261084821 bytes)
 
 ### Layers (12)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2819,14 +2985,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2839,14 +3006,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2887,53 +3055,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+#### `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:11 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:24:00 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+#### `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 
 ```dockerfile
 RUN set -x \
@@ -2941,90 +3113,96 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:18 GMT
--	Parent Layer: `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+-	Created: Tue, 05 Apr 2016 03:24:06 GMT
+-	Parent Layer: `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 63.8 MB (63784665 bytes)
--	v2 Blob: `sha256:5546331290f22f77f4811f95c09fdfd2a7e008fb98d48d1e9d5a63e05945ea4a`
--	v2 Content-Length: 14.4 MB (14397303 bytes)
+-	v2 Blob: `sha256:515a080f29d6763d8eaa937ddd3151e18ef6be05c3f36ffb515aea8401ca4bc4`
+-	v2 Content-Length: 14.4 MB (14397299 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:08 GMT
 
-#### `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+#### `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:20 GMT
--	Parent Layer: `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+-	Created: Tue, 05 Apr 2016 03:24:08 GMT
+-	Parent Layer: `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+#### `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:35 GMT
--	Parent Layer: `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+-	Created: Tue, 05 Apr 2016 03:24:21 GMT
+-	Parent Layer: `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 -	Docker Version: 1.9.1
--	Virtual Size: 13.7 MB (13731354 bytes)
--	v2 Blob: `sha256:7314fa71e3111c2f80307d79aeb772c6a2277e2f5c7d0330435def92a0ff9775`
--	v2 Content-Length: 6.3 MB (6277082 bytes)
+-	Virtual Size: 13.6 MB (13618559 bytes)
+-	v2 Blob: `sha256:1e4015314392b3d86a90c0c4ab8c9344add15369ecd5697da4ea2fcd0aebc90b`
+-	v2 Content-Length: 5.5 MB (5476861 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:55 GMT
 
-#### `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+#### `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:36 GMT
--	Parent Layer: `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+-	Created: Tue, 05 Apr 2016 03:24:22 GMT
+-	Parent Layer: `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2`
 
 ```console
-$ docker pull library/pypy@sha256:cda8d894f66900460ee84f96f0eaa504eb917ac1a8f872caf7843ae68d4b2ae6
+$ docker pull library/pypy@sha256:dff49ec3c310ff6cd41d0c59b3558cdf3e4e4f7d84f3cf33ab5a56268cf3a28f
 ```
 
--	Total Virtual Size: 685.2 MB (685200643 bytes)
--	Total v2 Content-Length: 261.9 MB (261890388 bytes)
+-	Total Virtual Size: 685.0 MB (685023504 bytes)
+-	Total v2 Content-Length: 261.1 MB (261084821 bytes)
 
 ### Layers (12)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3034,14 +3212,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3054,14 +3233,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3102,53 +3282,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+#### `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:11 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:24:00 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+#### `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 
 ```dockerfile
 RUN set -x \
@@ -3156,90 +3340,96 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:18 GMT
--	Parent Layer: `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+-	Created: Tue, 05 Apr 2016 03:24:06 GMT
+-	Parent Layer: `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 63.8 MB (63784665 bytes)
--	v2 Blob: `sha256:5546331290f22f77f4811f95c09fdfd2a7e008fb98d48d1e9d5a63e05945ea4a`
--	v2 Content-Length: 14.4 MB (14397303 bytes)
+-	v2 Blob: `sha256:515a080f29d6763d8eaa937ddd3151e18ef6be05c3f36ffb515aea8401ca4bc4`
+-	v2 Content-Length: 14.4 MB (14397299 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:08 GMT
 
-#### `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+#### `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:20 GMT
--	Parent Layer: `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+-	Created: Tue, 05 Apr 2016 03:24:08 GMT
+-	Parent Layer: `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+#### `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:35 GMT
--	Parent Layer: `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+-	Created: Tue, 05 Apr 2016 03:24:21 GMT
+-	Parent Layer: `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 -	Docker Version: 1.9.1
--	Virtual Size: 13.7 MB (13731354 bytes)
--	v2 Blob: `sha256:7314fa71e3111c2f80307d79aeb772c6a2277e2f5c7d0330435def92a0ff9775`
--	v2 Content-Length: 6.3 MB (6277082 bytes)
+-	Virtual Size: 13.6 MB (13618559 bytes)
+-	v2 Blob: `sha256:1e4015314392b3d86a90c0c4ab8c9344add15369ecd5697da4ea2fcd0aebc90b`
+-	v2 Content-Length: 5.5 MB (5476861 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:55 GMT
 
-#### `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+#### `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:36 GMT
--	Parent Layer: `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+-	Created: Tue, 05 Apr 2016 03:24:22 GMT
+-	Parent Layer: `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3`
 
 ```console
-$ docker pull library/pypy@sha256:7e18efaabd298d73823e7bce4383436d721bdfd1b6a6d7613ed0d98e14d7632d
+$ docker pull library/pypy@sha256:5b9737c1ad3942518ed9329b4df070198d792bb113e8715409c537edee69e7a9
 ```
 
--	Total Virtual Size: 685.2 MB (685200643 bytes)
--	Total v2 Content-Length: 261.9 MB (261890388 bytes)
+-	Total Virtual Size: 685.0 MB (685023504 bytes)
+-	Total v2 Content-Length: 261.1 MB (261084821 bytes)
 
 ### Layers (12)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3249,14 +3439,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3269,14 +3460,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3317,53 +3509,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+#### `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:11 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:24:00 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+#### `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 
 ```dockerfile
 RUN set -x \
@@ -3371,90 +3567,96 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:18 GMT
--	Parent Layer: `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+-	Created: Tue, 05 Apr 2016 03:24:06 GMT
+-	Parent Layer: `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 63.8 MB (63784665 bytes)
--	v2 Blob: `sha256:5546331290f22f77f4811f95c09fdfd2a7e008fb98d48d1e9d5a63e05945ea4a`
--	v2 Content-Length: 14.4 MB (14397303 bytes)
+-	v2 Blob: `sha256:515a080f29d6763d8eaa937ddd3151e18ef6be05c3f36ffb515aea8401ca4bc4`
+-	v2 Content-Length: 14.4 MB (14397299 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:08 GMT
 
-#### `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+#### `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:20 GMT
--	Parent Layer: `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+-	Created: Tue, 05 Apr 2016 03:24:08 GMT
+-	Parent Layer: `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+#### `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:35 GMT
--	Parent Layer: `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+-	Created: Tue, 05 Apr 2016 03:24:21 GMT
+-	Parent Layer: `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 -	Docker Version: 1.9.1
--	Virtual Size: 13.7 MB (13731354 bytes)
--	v2 Blob: `sha256:7314fa71e3111c2f80307d79aeb772c6a2277e2f5c7d0330435def92a0ff9775`
--	v2 Content-Length: 6.3 MB (6277082 bytes)
+-	Virtual Size: 13.6 MB (13618559 bytes)
+-	v2 Blob: `sha256:1e4015314392b3d86a90c0c4ab8c9344add15369ecd5697da4ea2fcd0aebc90b`
+-	v2 Content-Length: 5.5 MB (5476861 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:55 GMT
 
-#### `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+#### `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:36 GMT
--	Parent Layer: `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+-	Created: Tue, 05 Apr 2016 03:24:22 GMT
+-	Parent Layer: `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:latest`
 
 ```console
-$ docker pull library/pypy@sha256:5642c414f56a8e526f8faf940ba3df13f5d46d6fff93dd52a14503d856b8d740
+$ docker pull library/pypy@sha256:2265fa0da243e5d8c1c2878e571f6835f6d0cb4e2a7b5d7504966b80a2e411b5
 ```
 
--	Total Virtual Size: 685.2 MB (685200643 bytes)
--	Total v2 Content-Length: 261.9 MB (261890388 bytes)
+-	Total Virtual Size: 685.0 MB (685023504 bytes)
+-	Total v2 Content-Length: 261.1 MB (261084821 bytes)
 
 ### Layers (12)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3464,14 +3666,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3484,14 +3687,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3532,53 +3736,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+#### `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:11 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:24:00 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+#### `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 
 ```dockerfile
 RUN set -x \
@@ -3586,90 +3794,96 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:18 GMT
--	Parent Layer: `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+-	Created: Tue, 05 Apr 2016 03:24:06 GMT
+-	Parent Layer: `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 63.8 MB (63784665 bytes)
--	v2 Blob: `sha256:5546331290f22f77f4811f95c09fdfd2a7e008fb98d48d1e9d5a63e05945ea4a`
--	v2 Content-Length: 14.4 MB (14397303 bytes)
+-	v2 Blob: `sha256:515a080f29d6763d8eaa937ddd3151e18ef6be05c3f36ffb515aea8401ca4bc4`
+-	v2 Content-Length: 14.4 MB (14397299 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:08 GMT
 
-#### `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+#### `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:20 GMT
--	Parent Layer: `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+-	Created: Tue, 05 Apr 2016 03:24:08 GMT
+-	Parent Layer: `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+#### `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:35 GMT
--	Parent Layer: `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+-	Created: Tue, 05 Apr 2016 03:24:21 GMT
+-	Parent Layer: `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 -	Docker Version: 1.9.1
--	Virtual Size: 13.7 MB (13731354 bytes)
--	v2 Blob: `sha256:7314fa71e3111c2f80307d79aeb772c6a2277e2f5c7d0330435def92a0ff9775`
--	v2 Content-Length: 6.3 MB (6277082 bytes)
+-	Virtual Size: 13.6 MB (13618559 bytes)
+-	v2 Blob: `sha256:1e4015314392b3d86a90c0c4ab8c9344add15369ecd5697da4ea2fcd0aebc90b`
+-	v2 Content-Length: 5.5 MB (5476861 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:55 GMT
 
-#### `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+#### `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:36 GMT
--	Parent Layer: `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+-	Created: Tue, 05 Apr 2016 03:24:22 GMT
+-	Parent Layer: `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4.0-onbuild`
 
 ```console
-$ docker pull library/pypy@sha256:66b9b49dc3bfff4e729a1adc98f29e8990967c617255580c03bfd4090e782db2
+$ docker pull library/pypy@sha256:4471f411ecfead526f48d763c725cd3c29584867bb812f5bdae8057238088b8c
 ```
 
--	Total Virtual Size: 685.2 MB (685200643 bytes)
--	Total v2 Content-Length: 261.9 MB (261890642 bytes)
+-	Total Virtual Size: 685.0 MB (685023504 bytes)
+-	Total v2 Content-Length: 261.1 MB (261085074 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3679,14 +3893,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3699,14 +3914,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3747,53 +3963,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+#### `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:11 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:24:00 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+#### `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 
 ```dockerfile
 RUN set -x \
@@ -3801,155 +4021,166 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:18 GMT
--	Parent Layer: `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+-	Created: Tue, 05 Apr 2016 03:24:06 GMT
+-	Parent Layer: `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 63.8 MB (63784665 bytes)
--	v2 Blob: `sha256:5546331290f22f77f4811f95c09fdfd2a7e008fb98d48d1e9d5a63e05945ea4a`
--	v2 Content-Length: 14.4 MB (14397303 bytes)
+-	v2 Blob: `sha256:515a080f29d6763d8eaa937ddd3151e18ef6be05c3f36ffb515aea8401ca4bc4`
+-	v2 Content-Length: 14.4 MB (14397299 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:08 GMT
 
-#### `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+#### `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:20 GMT
--	Parent Layer: `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+-	Created: Tue, 05 Apr 2016 03:24:08 GMT
+-	Parent Layer: `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+#### `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:35 GMT
--	Parent Layer: `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+-	Created: Tue, 05 Apr 2016 03:24:21 GMT
+-	Parent Layer: `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 -	Docker Version: 1.9.1
--	Virtual Size: 13.7 MB (13731354 bytes)
--	v2 Blob: `sha256:7314fa71e3111c2f80307d79aeb772c6a2277e2f5c7d0330435def92a0ff9775`
--	v2 Content-Length: 6.3 MB (6277082 bytes)
+-	Virtual Size: 13.6 MB (13618559 bytes)
+-	v2 Blob: `sha256:1e4015314392b3d86a90c0c4ab8c9344add15369ecd5697da4ea2fcd0aebc90b`
+-	v2 Content-Length: 5.5 MB (5476861 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:55 GMT
 
-#### `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+#### `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:36 GMT
--	Parent Layer: `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+-	Created: Tue, 05 Apr 2016 03:24:22 GMT
+-	Parent Layer: `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6f6169abf07c9bcff81a0dba7a4d4d4d61ce611d3a31f83aee702a0f3d4afae7`
+#### `0bec7440d95fdd67ac768fc56a4ee06c9b6e5c05396962c4bec7db0b7cfea951`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:51 GMT
--	Parent Layer: `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+-	Created: Tue, 05 Apr 2016 03:25:41 GMT
+-	Parent Layer: `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:20c0f1991ce5df3825b8ef20ac0dd79589ecb15ac07280d50366318e1a76daf7`
--	v2 Content-Length: 126.0 B
+-	v2 Blob: `sha256:cd2d3eceac133b44a8da585b1b8c4cb2169eee8eab5ae8733fc6e570b77f9de7`
+-	v2 Content-Length: 125.0 B
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:43 GMT
 
-#### `1531c8f516b387afef9077f35d75c628994dcf749d5e801563845dc5af5a1f57`
+#### `d961f561e26042f6fce49ef2a00e5133dfb3bfe07977da351a3ae8fafec96199`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:52 GMT
--	Parent Layer: `6f6169abf07c9bcff81a0dba7a4d4d4d61ce611d3a31f83aee702a0f3d4afae7`
+-	Created: Tue, 05 Apr 2016 03:25:41 GMT
+-	Parent Layer: `0bec7440d95fdd67ac768fc56a4ee06c9b6e5c05396962c4bec7db0b7cfea951`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7e1219cbae5809888c42cc34559cbb8e1b45b523cf2368b9be613fa9cf28ce41`
+#### `faef60ec0261fdb6e323172959edc21ebac971009c102bf6deca99fd12428e32`
 
 ```dockerfile
 ONBUILD COPY requirements.txt /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:52 GMT
--	Parent Layer: `1531c8f516b387afef9077f35d75c628994dcf749d5e801563845dc5af5a1f57`
+-	Created: Tue, 05 Apr 2016 03:25:42 GMT
+-	Parent Layer: `d961f561e26042f6fce49ef2a00e5133dfb3bfe07977da351a3ae8fafec96199`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c65595e20e375d5da80c55a3e746beea2fd8b103794f4cb6567144a796966fc6`
+#### `9be0b771168080b7235c7ec09e8bd0c479023b75a091160fd792267a384b89b7`
 
 ```dockerfile
 ONBUILD RUN pip install -r requirements.txt
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:53 GMT
--	Parent Layer: `7e1219cbae5809888c42cc34559cbb8e1b45b523cf2368b9be613fa9cf28ce41`
+-	Created: Tue, 05 Apr 2016 03:25:42 GMT
+-	Parent Layer: `faef60ec0261fdb6e323172959edc21ebac971009c102bf6deca99fd12428e32`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8090f0b4b2ce6906783ab5b9bc0ba64398a01929a9469a20b6468d35ff4f4107`
+#### `7d28926c148a423fa7a8c54d40f706e3f78f748244215d71144a6331cb16047f`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:53 GMT
--	Parent Layer: `c65595e20e375d5da80c55a3e746beea2fd8b103794f4cb6567144a796966fc6`
+-	Created: Tue, 05 Apr 2016 03:25:43 GMT
+-	Parent Layer: `9be0b771168080b7235c7ec09e8bd0c479023b75a091160fd792267a384b89b7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4-onbuild`
 
 ```console
-$ docker pull library/pypy@sha256:217f505f2d3fa9f5229ed5c080b59fa5894cc77de3b5bd1cc1ea9e83e145f7d0
+$ docker pull library/pypy@sha256:4f69d0686846cfcd937209c1cc180e54e7dcf471e01a31b999bc31bdccba40cd
 ```
 
--	Total Virtual Size: 685.2 MB (685200643 bytes)
--	Total v2 Content-Length: 261.9 MB (261890642 bytes)
+-	Total Virtual Size: 685.0 MB (685023504 bytes)
+-	Total v2 Content-Length: 261.1 MB (261085074 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3959,14 +4190,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3979,14 +4211,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4027,53 +4260,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+#### `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:11 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:24:00 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+#### `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 
 ```dockerfile
 RUN set -x \
@@ -4081,155 +4318,166 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:18 GMT
--	Parent Layer: `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+-	Created: Tue, 05 Apr 2016 03:24:06 GMT
+-	Parent Layer: `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 63.8 MB (63784665 bytes)
--	v2 Blob: `sha256:5546331290f22f77f4811f95c09fdfd2a7e008fb98d48d1e9d5a63e05945ea4a`
--	v2 Content-Length: 14.4 MB (14397303 bytes)
+-	v2 Blob: `sha256:515a080f29d6763d8eaa937ddd3151e18ef6be05c3f36ffb515aea8401ca4bc4`
+-	v2 Content-Length: 14.4 MB (14397299 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:08 GMT
 
-#### `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+#### `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:20 GMT
--	Parent Layer: `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+-	Created: Tue, 05 Apr 2016 03:24:08 GMT
+-	Parent Layer: `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+#### `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:35 GMT
--	Parent Layer: `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+-	Created: Tue, 05 Apr 2016 03:24:21 GMT
+-	Parent Layer: `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 -	Docker Version: 1.9.1
--	Virtual Size: 13.7 MB (13731354 bytes)
--	v2 Blob: `sha256:7314fa71e3111c2f80307d79aeb772c6a2277e2f5c7d0330435def92a0ff9775`
--	v2 Content-Length: 6.3 MB (6277082 bytes)
+-	Virtual Size: 13.6 MB (13618559 bytes)
+-	v2 Blob: `sha256:1e4015314392b3d86a90c0c4ab8c9344add15369ecd5697da4ea2fcd0aebc90b`
+-	v2 Content-Length: 5.5 MB (5476861 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:55 GMT
 
-#### `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+#### `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:36 GMT
--	Parent Layer: `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+-	Created: Tue, 05 Apr 2016 03:24:22 GMT
+-	Parent Layer: `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6f6169abf07c9bcff81a0dba7a4d4d4d61ce611d3a31f83aee702a0f3d4afae7`
+#### `0bec7440d95fdd67ac768fc56a4ee06c9b6e5c05396962c4bec7db0b7cfea951`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:51 GMT
--	Parent Layer: `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+-	Created: Tue, 05 Apr 2016 03:25:41 GMT
+-	Parent Layer: `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:20c0f1991ce5df3825b8ef20ac0dd79589ecb15ac07280d50366318e1a76daf7`
--	v2 Content-Length: 126.0 B
+-	v2 Blob: `sha256:cd2d3eceac133b44a8da585b1b8c4cb2169eee8eab5ae8733fc6e570b77f9de7`
+-	v2 Content-Length: 125.0 B
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:43 GMT
 
-#### `1531c8f516b387afef9077f35d75c628994dcf749d5e801563845dc5af5a1f57`
+#### `d961f561e26042f6fce49ef2a00e5133dfb3bfe07977da351a3ae8fafec96199`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:52 GMT
--	Parent Layer: `6f6169abf07c9bcff81a0dba7a4d4d4d61ce611d3a31f83aee702a0f3d4afae7`
+-	Created: Tue, 05 Apr 2016 03:25:41 GMT
+-	Parent Layer: `0bec7440d95fdd67ac768fc56a4ee06c9b6e5c05396962c4bec7db0b7cfea951`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7e1219cbae5809888c42cc34559cbb8e1b45b523cf2368b9be613fa9cf28ce41`
+#### `faef60ec0261fdb6e323172959edc21ebac971009c102bf6deca99fd12428e32`
 
 ```dockerfile
 ONBUILD COPY requirements.txt /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:52 GMT
--	Parent Layer: `1531c8f516b387afef9077f35d75c628994dcf749d5e801563845dc5af5a1f57`
+-	Created: Tue, 05 Apr 2016 03:25:42 GMT
+-	Parent Layer: `d961f561e26042f6fce49ef2a00e5133dfb3bfe07977da351a3ae8fafec96199`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c65595e20e375d5da80c55a3e746beea2fd8b103794f4cb6567144a796966fc6`
+#### `9be0b771168080b7235c7ec09e8bd0c479023b75a091160fd792267a384b89b7`
 
 ```dockerfile
 ONBUILD RUN pip install -r requirements.txt
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:53 GMT
--	Parent Layer: `7e1219cbae5809888c42cc34559cbb8e1b45b523cf2368b9be613fa9cf28ce41`
+-	Created: Tue, 05 Apr 2016 03:25:42 GMT
+-	Parent Layer: `faef60ec0261fdb6e323172959edc21ebac971009c102bf6deca99fd12428e32`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8090f0b4b2ce6906783ab5b9bc0ba64398a01929a9469a20b6468d35ff4f4107`
+#### `7d28926c148a423fa7a8c54d40f706e3f78f748244215d71144a6331cb16047f`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:53 GMT
--	Parent Layer: `c65595e20e375d5da80c55a3e746beea2fd8b103794f4cb6567144a796966fc6`
+-	Created: Tue, 05 Apr 2016 03:25:43 GMT
+-	Parent Layer: `9be0b771168080b7235c7ec09e8bd0c479023b75a091160fd792267a384b89b7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2-onbuild`
 
 ```console
-$ docker pull library/pypy@sha256:46d4100602be9e6733141ba30788f0a41e4bccb0a7f0e5f3021d41d3cecf2794
+$ docker pull library/pypy@sha256:29155c526eb1f515ecb25cba5c5f80e4b21b1233acbaed905d5929876e794f3f
 ```
 
--	Total Virtual Size: 685.2 MB (685200643 bytes)
--	Total v2 Content-Length: 261.9 MB (261890642 bytes)
+-	Total Virtual Size: 685.0 MB (685023504 bytes)
+-	Total v2 Content-Length: 261.1 MB (261085074 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4239,14 +4487,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4259,14 +4508,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4307,53 +4557,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+#### `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:11 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:24:00 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+#### `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 
 ```dockerfile
 RUN set -x \
@@ -4361,155 +4615,166 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:18 GMT
--	Parent Layer: `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+-	Created: Tue, 05 Apr 2016 03:24:06 GMT
+-	Parent Layer: `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 63.8 MB (63784665 bytes)
--	v2 Blob: `sha256:5546331290f22f77f4811f95c09fdfd2a7e008fb98d48d1e9d5a63e05945ea4a`
--	v2 Content-Length: 14.4 MB (14397303 bytes)
+-	v2 Blob: `sha256:515a080f29d6763d8eaa937ddd3151e18ef6be05c3f36ffb515aea8401ca4bc4`
+-	v2 Content-Length: 14.4 MB (14397299 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:08 GMT
 
-#### `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+#### `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:20 GMT
--	Parent Layer: `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+-	Created: Tue, 05 Apr 2016 03:24:08 GMT
+-	Parent Layer: `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+#### `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:35 GMT
--	Parent Layer: `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+-	Created: Tue, 05 Apr 2016 03:24:21 GMT
+-	Parent Layer: `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 -	Docker Version: 1.9.1
--	Virtual Size: 13.7 MB (13731354 bytes)
--	v2 Blob: `sha256:7314fa71e3111c2f80307d79aeb772c6a2277e2f5c7d0330435def92a0ff9775`
--	v2 Content-Length: 6.3 MB (6277082 bytes)
+-	Virtual Size: 13.6 MB (13618559 bytes)
+-	v2 Blob: `sha256:1e4015314392b3d86a90c0c4ab8c9344add15369ecd5697da4ea2fcd0aebc90b`
+-	v2 Content-Length: 5.5 MB (5476861 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:55 GMT
 
-#### `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+#### `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:36 GMT
--	Parent Layer: `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+-	Created: Tue, 05 Apr 2016 03:24:22 GMT
+-	Parent Layer: `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6f6169abf07c9bcff81a0dba7a4d4d4d61ce611d3a31f83aee702a0f3d4afae7`
+#### `0bec7440d95fdd67ac768fc56a4ee06c9b6e5c05396962c4bec7db0b7cfea951`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:51 GMT
--	Parent Layer: `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+-	Created: Tue, 05 Apr 2016 03:25:41 GMT
+-	Parent Layer: `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:20c0f1991ce5df3825b8ef20ac0dd79589ecb15ac07280d50366318e1a76daf7`
--	v2 Content-Length: 126.0 B
+-	v2 Blob: `sha256:cd2d3eceac133b44a8da585b1b8c4cb2169eee8eab5ae8733fc6e570b77f9de7`
+-	v2 Content-Length: 125.0 B
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:43 GMT
 
-#### `1531c8f516b387afef9077f35d75c628994dcf749d5e801563845dc5af5a1f57`
+#### `d961f561e26042f6fce49ef2a00e5133dfb3bfe07977da351a3ae8fafec96199`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:52 GMT
--	Parent Layer: `6f6169abf07c9bcff81a0dba7a4d4d4d61ce611d3a31f83aee702a0f3d4afae7`
+-	Created: Tue, 05 Apr 2016 03:25:41 GMT
+-	Parent Layer: `0bec7440d95fdd67ac768fc56a4ee06c9b6e5c05396962c4bec7db0b7cfea951`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7e1219cbae5809888c42cc34559cbb8e1b45b523cf2368b9be613fa9cf28ce41`
+#### `faef60ec0261fdb6e323172959edc21ebac971009c102bf6deca99fd12428e32`
 
 ```dockerfile
 ONBUILD COPY requirements.txt /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:52 GMT
--	Parent Layer: `1531c8f516b387afef9077f35d75c628994dcf749d5e801563845dc5af5a1f57`
+-	Created: Tue, 05 Apr 2016 03:25:42 GMT
+-	Parent Layer: `d961f561e26042f6fce49ef2a00e5133dfb3bfe07977da351a3ae8fafec96199`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c65595e20e375d5da80c55a3e746beea2fd8b103794f4cb6567144a796966fc6`
+#### `9be0b771168080b7235c7ec09e8bd0c479023b75a091160fd792267a384b89b7`
 
 ```dockerfile
 ONBUILD RUN pip install -r requirements.txt
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:53 GMT
--	Parent Layer: `7e1219cbae5809888c42cc34559cbb8e1b45b523cf2368b9be613fa9cf28ce41`
+-	Created: Tue, 05 Apr 2016 03:25:42 GMT
+-	Parent Layer: `faef60ec0261fdb6e323172959edc21ebac971009c102bf6deca99fd12428e32`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8090f0b4b2ce6906783ab5b9bc0ba64398a01929a9469a20b6468d35ff4f4107`
+#### `7d28926c148a423fa7a8c54d40f706e3f78f748244215d71144a6331cb16047f`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:53 GMT
--	Parent Layer: `c65595e20e375d5da80c55a3e746beea2fd8b103794f4cb6567144a796966fc6`
+-	Created: Tue, 05 Apr 2016 03:25:43 GMT
+-	Parent Layer: `9be0b771168080b7235c7ec09e8bd0c479023b75a091160fd792267a384b89b7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-onbuild`
 
 ```console
-$ docker pull library/pypy@sha256:98594b87de19128755ffe9c3424e72dc35e4264a3a053bc3494dabce005c1112
+$ docker pull library/pypy@sha256:cae4b9a5c43ce287173d2883cb64b1629a77c41f8e592bf4ee8f21d4718e0f04
 ```
 
--	Total Virtual Size: 685.2 MB (685200643 bytes)
--	Total v2 Content-Length: 261.9 MB (261890642 bytes)
+-	Total Virtual Size: 685.0 MB (685023504 bytes)
+-	Total v2 Content-Length: 261.1 MB (261085074 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4519,14 +4784,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4539,14 +4805,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4587,53 +4854,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+#### `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:11 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:24:00 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+#### `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 
 ```dockerfile
 RUN set -x \
@@ -4641,155 +4912,166 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:18 GMT
--	Parent Layer: `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+-	Created: Tue, 05 Apr 2016 03:24:06 GMT
+-	Parent Layer: `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 63.8 MB (63784665 bytes)
--	v2 Blob: `sha256:5546331290f22f77f4811f95c09fdfd2a7e008fb98d48d1e9d5a63e05945ea4a`
--	v2 Content-Length: 14.4 MB (14397303 bytes)
+-	v2 Blob: `sha256:515a080f29d6763d8eaa937ddd3151e18ef6be05c3f36ffb515aea8401ca4bc4`
+-	v2 Content-Length: 14.4 MB (14397299 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:08 GMT
 
-#### `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+#### `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:20 GMT
--	Parent Layer: `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+-	Created: Tue, 05 Apr 2016 03:24:08 GMT
+-	Parent Layer: `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+#### `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:35 GMT
--	Parent Layer: `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+-	Created: Tue, 05 Apr 2016 03:24:21 GMT
+-	Parent Layer: `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 -	Docker Version: 1.9.1
--	Virtual Size: 13.7 MB (13731354 bytes)
--	v2 Blob: `sha256:7314fa71e3111c2f80307d79aeb772c6a2277e2f5c7d0330435def92a0ff9775`
--	v2 Content-Length: 6.3 MB (6277082 bytes)
+-	Virtual Size: 13.6 MB (13618559 bytes)
+-	v2 Blob: `sha256:1e4015314392b3d86a90c0c4ab8c9344add15369ecd5697da4ea2fcd0aebc90b`
+-	v2 Content-Length: 5.5 MB (5476861 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:55 GMT
 
-#### `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+#### `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:36 GMT
--	Parent Layer: `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+-	Created: Tue, 05 Apr 2016 03:24:22 GMT
+-	Parent Layer: `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6f6169abf07c9bcff81a0dba7a4d4d4d61ce611d3a31f83aee702a0f3d4afae7`
+#### `0bec7440d95fdd67ac768fc56a4ee06c9b6e5c05396962c4bec7db0b7cfea951`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:51 GMT
--	Parent Layer: `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+-	Created: Tue, 05 Apr 2016 03:25:41 GMT
+-	Parent Layer: `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:20c0f1991ce5df3825b8ef20ac0dd79589ecb15ac07280d50366318e1a76daf7`
--	v2 Content-Length: 126.0 B
+-	v2 Blob: `sha256:cd2d3eceac133b44a8da585b1b8c4cb2169eee8eab5ae8733fc6e570b77f9de7`
+-	v2 Content-Length: 125.0 B
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:43 GMT
 
-#### `1531c8f516b387afef9077f35d75c628994dcf749d5e801563845dc5af5a1f57`
+#### `d961f561e26042f6fce49ef2a00e5133dfb3bfe07977da351a3ae8fafec96199`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:52 GMT
--	Parent Layer: `6f6169abf07c9bcff81a0dba7a4d4d4d61ce611d3a31f83aee702a0f3d4afae7`
+-	Created: Tue, 05 Apr 2016 03:25:41 GMT
+-	Parent Layer: `0bec7440d95fdd67ac768fc56a4ee06c9b6e5c05396962c4bec7db0b7cfea951`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7e1219cbae5809888c42cc34559cbb8e1b45b523cf2368b9be613fa9cf28ce41`
+#### `faef60ec0261fdb6e323172959edc21ebac971009c102bf6deca99fd12428e32`
 
 ```dockerfile
 ONBUILD COPY requirements.txt /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:52 GMT
--	Parent Layer: `1531c8f516b387afef9077f35d75c628994dcf749d5e801563845dc5af5a1f57`
+-	Created: Tue, 05 Apr 2016 03:25:42 GMT
+-	Parent Layer: `d961f561e26042f6fce49ef2a00e5133dfb3bfe07977da351a3ae8fafec96199`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c65595e20e375d5da80c55a3e746beea2fd8b103794f4cb6567144a796966fc6`
+#### `9be0b771168080b7235c7ec09e8bd0c479023b75a091160fd792267a384b89b7`
 
 ```dockerfile
 ONBUILD RUN pip install -r requirements.txt
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:53 GMT
--	Parent Layer: `7e1219cbae5809888c42cc34559cbb8e1b45b523cf2368b9be613fa9cf28ce41`
+-	Created: Tue, 05 Apr 2016 03:25:42 GMT
+-	Parent Layer: `faef60ec0261fdb6e323172959edc21ebac971009c102bf6deca99fd12428e32`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8090f0b4b2ce6906783ab5b9bc0ba64398a01929a9469a20b6468d35ff4f4107`
+#### `7d28926c148a423fa7a8c54d40f706e3f78f748244215d71144a6331cb16047f`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:53 GMT
--	Parent Layer: `c65595e20e375d5da80c55a3e746beea2fd8b103794f4cb6567144a796966fc6`
+-	Created: Tue, 05 Apr 2016 03:25:43 GMT
+-	Parent Layer: `9be0b771168080b7235c7ec09e8bd0c479023b75a091160fd792267a384b89b7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:onbuild`
 
 ```console
-$ docker pull library/pypy@sha256:a18e1db7d07abc58c2943453f07a84867a1534d0eef2383a8bb0b0f420db0044
+$ docker pull library/pypy@sha256:9a06786f40d98ac8c37f0da6ec3ef149a2909aa8624e8145739d9c02a70cad9c
 ```
 
--	Total Virtual Size: 685.2 MB (685200643 bytes)
--	Total v2 Content-Length: 261.9 MB (261890642 bytes)
+-	Total Virtual Size: 685.0 MB (685023504 bytes)
+-	Total v2 Content-Length: 261.1 MB (261085074 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4799,14 +5081,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:38:42 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Mon, 04 Apr 2016 22:08:25 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44310889 bytes)
--	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
--	v2 Content-Length: 18.5 MB (18532668 bytes)
+-	Virtual Size: 44.3 MB (44283322 bytes)
+-	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
+-	v2 Content-Length: 18.5 MB (18527192 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
 
-#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+#### `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4819,14 +5102,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:39:39 GMT
--	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Created: Mon, 04 Apr 2016 22:09:25 GMT
+-	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.6 MB (122585576 bytes)
--	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
--	v2 Content-Length: 42.5 MB (42494759 bytes)
+-	Virtual Size: 122.6 MB (122555196 bytes)
+-	v2 Blob: `sha256:72e581645fc3d3bad49efe7673ada6dfa701dcf777185a4f9ef91ef592e5aa09`
+-	v2 Content-Length: 42.5 MB (42489209 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4867,53 +5151,57 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 16 Feb 2016 21:41:19 GMT
--	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314694412 bytes)
--	v2 Blob: `sha256:47bed597ecf48d23e35328be6d5b803cacaa561d23760cdaa6cc26100e0af0c7`
--	v2 Content-Length: 128.6 MB (128600963 bytes)
+-	Virtual Size: 314.7 MB (314747952 bytes)
+-	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
+-	v2 Content-Length: 128.6 MB (128630590 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
 
-#### `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+#### `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `04a07bc8f1851628e59ef97d5acb751ba0aa3ef17b05a8773d8f613e0e47a426`
+-	Created: Tue, 05 Apr 2016 03:17:43 GMT
+-	Parent Layer: `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
 -	Docker Version: 1.9.1
--	Virtual Size: 984.0 KB (983976 bytes)
--	v2 Blob: `sha256:061df887fe0c7d1ddce243a023694cadc41015f9d2c2e5dc23fe78ae8159c69b`
--	v2 Content-Length: 220.8 KB (220794 bytes)
+-	Virtual Size: 982.7 KB (982745 bytes)
+-	v2 Blob: `sha256:2d600f0ec2350b49ffd2d42a53188e1a2d46a6deee84fce43090d2e6fc807238`
+-	v2 Content-Length: 220.7 KB (220682 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 15:56:14 GMT
 
-#### `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+#### `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 15:30:02 GMT
--	Parent Layer: `5dd0a23b6783a8494b0db38fdc06221f640cf01c59a6cc7b92940efecefcb170`
+-	Created: Tue, 05 Apr 2016 03:17:44 GMT
+-	Parent Layer: `3f96f0f4a3f6a8a8f014513763eda5e74b494dc96e88f42ff369a6d724e720ac`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+#### `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:11 GMT
--	Parent Layer: `78c12ffe08fa84582ae13a4304240b8b9491a805cbb71aadcc610d477bcaeb9a`
+-	Created: Tue, 05 Apr 2016 03:24:00 GMT
+-	Parent Layer: `795af676eb34d7143a55cc6cfb7e9735873a1365f8305bb472a77fb14bea635b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+#### `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 
 ```dockerfile
 RUN set -x \
@@ -4921,181 +5209,194 @@ RUN set -x \
 		| tar -xjC /usr/local --strip-components=1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:18 GMT
--	Parent Layer: `c239edf71b0b0aef8e969829bbd2998964d4366f2cbe90000ea68d7a2d36542d`
+-	Created: Tue, 05 Apr 2016 03:24:06 GMT
+-	Parent Layer: `8fbae9291d577a2985a81eac99dc6e1120af47fa8cc401a579cb5cd957e8560b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 63.8 MB (63784665 bytes)
--	v2 Blob: `sha256:5546331290f22f77f4811f95c09fdfd2a7e008fb98d48d1e9d5a63e05945ea4a`
--	v2 Content-Length: 14.4 MB (14397303 bytes)
+-	v2 Blob: `sha256:515a080f29d6763d8eaa937ddd3151e18ef6be05c3f36ffb515aea8401ca4bc4`
+-	v2 Content-Length: 14.4 MB (14397299 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:08 GMT
 
-#### `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+#### `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:20 GMT
--	Parent Layer: `7779be82880b3a947ed8bcc60e466fcf30a4cd98d394acb612509a405310e0c0`
+-	Created: Tue, 05 Apr 2016 03:24:08 GMT
+-	Parent Layer: `b3837123d61ed6ba6f0760f15dbb79ab2bbfced72a472a05ed43c7a7078d0210`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+#### `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 
 ```dockerfile
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:35 GMT
--	Parent Layer: `9d8bb17b7f2cd3084d0e212b3ac33c93ce9e072aec013c41041e3c83ff774f5d`
+-	Created: Tue, 05 Apr 2016 03:24:21 GMT
+-	Parent Layer: `c29dce94427a265ae92ffd409749ea6357a24a9262607d7ab4998c456c081ad9`
 -	Docker Version: 1.9.1
--	Virtual Size: 13.7 MB (13731354 bytes)
--	v2 Blob: `sha256:7314fa71e3111c2f80307d79aeb772c6a2277e2f5c7d0330435def92a0ff9775`
--	v2 Content-Length: 6.3 MB (6277082 bytes)
+-	Virtual Size: 13.6 MB (13618559 bytes)
+-	v2 Blob: `sha256:1e4015314392b3d86a90c0c4ab8c9344add15369ecd5697da4ea2fcd0aebc90b`
+-	v2 Content-Length: 5.5 MB (5476861 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:55 GMT
 
-#### `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+#### `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 15:32:36 GMT
--	Parent Layer: `b946d26fe9abf4448feedad3dda637378692f5f71b1308576e3142a1564a6672`
+-	Created: Tue, 05 Apr 2016 03:24:22 GMT
+-	Parent Layer: `546aec1f4d5a5a5bf511f3ef320b40ef585474a38926d07d13d737e22c6dc905`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6f6169abf07c9bcff81a0dba7a4d4d4d61ce611d3a31f83aee702a0f3d4afae7`
+#### `0bec7440d95fdd67ac768fc56a4ee06c9b6e5c05396962c4bec7db0b7cfea951`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:51 GMT
--	Parent Layer: `cf23fa41c4163e35abf7049202e375d85c8c681dd50664107263dd584ed5ca12`
+-	Created: Tue, 05 Apr 2016 03:25:41 GMT
+-	Parent Layer: `c8462ad947e47fc23a6dd5416cbe48d705a947fda3490bac5432b9ce70e71fcd`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:20c0f1991ce5df3825b8ef20ac0dd79589ecb15ac07280d50366318e1a76daf7`
--	v2 Content-Length: 126.0 B
+-	v2 Blob: `sha256:cd2d3eceac133b44a8da585b1b8c4cb2169eee8eab5ae8733fc6e570b77f9de7`
+-	v2 Content-Length: 125.0 B
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:42:43 GMT
 
-#### `1531c8f516b387afef9077f35d75c628994dcf749d5e801563845dc5af5a1f57`
+#### `d961f561e26042f6fce49ef2a00e5133dfb3bfe07977da351a3ae8fafec96199`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:52 GMT
--	Parent Layer: `6f6169abf07c9bcff81a0dba7a4d4d4d61ce611d3a31f83aee702a0f3d4afae7`
+-	Created: Tue, 05 Apr 2016 03:25:41 GMT
+-	Parent Layer: `0bec7440d95fdd67ac768fc56a4ee06c9b6e5c05396962c4bec7db0b7cfea951`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7e1219cbae5809888c42cc34559cbb8e1b45b523cf2368b9be613fa9cf28ce41`
+#### `faef60ec0261fdb6e323172959edc21ebac971009c102bf6deca99fd12428e32`
 
 ```dockerfile
 ONBUILD COPY requirements.txt /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:52 GMT
--	Parent Layer: `1531c8f516b387afef9077f35d75c628994dcf749d5e801563845dc5af5a1f57`
+-	Created: Tue, 05 Apr 2016 03:25:42 GMT
+-	Parent Layer: `d961f561e26042f6fce49ef2a00e5133dfb3bfe07977da351a3ae8fafec96199`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c65595e20e375d5da80c55a3e746beea2fd8b103794f4cb6567144a796966fc6`
+#### `9be0b771168080b7235c7ec09e8bd0c479023b75a091160fd792267a384b89b7`
 
 ```dockerfile
 ONBUILD RUN pip install -r requirements.txt
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:53 GMT
--	Parent Layer: `7e1219cbae5809888c42cc34559cbb8e1b45b523cf2368b9be613fa9cf28ce41`
+-	Created: Tue, 05 Apr 2016 03:25:42 GMT
+-	Parent Layer: `faef60ec0261fdb6e323172959edc21ebac971009c102bf6deca99fd12428e32`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8090f0b4b2ce6906783ab5b9bc0ba64398a01929a9469a20b6468d35ff4f4107`
+#### `7d28926c148a423fa7a8c54d40f706e3f78f748244215d71144a6331cb16047f`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 15:33:53 GMT
--	Parent Layer: `c65595e20e375d5da80c55a3e746beea2fd8b103794f4cb6567144a796966fc6`
+-	Created: Tue, 05 Apr 2016 03:25:43 GMT
+-	Parent Layer: `9be0b771168080b7235c7ec09e8bd0c479023b75a091160fd792267a384b89b7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4.0-slim`
 
 ```console
-$ docker pull library/pypy@sha256:2b6368d8db016736c5ae9a85e755fb9a8db051c0d50630b2051164de0371e854
+$ docker pull library/pypy@sha256:4571f1017304cf08971ea4d004daa279f51730176b8b4300f255ae94f67f6760
 ```
 
--	Total Virtual Size: 214.8 MB (214825808 bytes)
--	Total v2 Content-Length: 77.6 MB (77617807 bytes)
+-	Total Virtual Size: 214.6 MB (214622312 bytes)
+-	Total v2 Content-Length: 76.8 MB (76794401 bytes)
 
 ### Layers (9)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+#### `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+#### `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+#### `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -5105,40 +5406,43 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 -	Docker Version: 1.9.1
--	Virtual Size: 7.7 MB (7745523 bytes)
--	v2 Blob: `sha256:3cc8e9b5207a729443f273b82bf9e3d25cba532dc28c872227f684c8e6868720`
--	v2 Content-Length: 3.4 MB (3448363 bytes)
+-	Virtual Size: 7.7 MB (7717522 bytes)
+-	v2 Blob: `sha256:be6ef9f894a0f0f72aec1cad1f9731fca51baae09915e29be043633804909fb0`
+-	v2 Content-Length: 3.4 MB (3443135 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:36 GMT
 
-#### `986eb3cbf63e96fb13932738e87e6ba71d7473358d045c3a3cb5f5c8f065e098`
+#### `67897d129a5a4e415411d33724b027f4dc5177ff4ad02187d2f661a3b580cc97`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 02:36:40 GMT
--	Parent Layer: `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+-	Created: Tue, 05 Apr 2016 03:26:50 GMT
+-	Parent Layer: `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5c85382098fe043271ab1f3e3ae00f11bcee7b2791817a2cebf5798781df2376`
+#### `abdb362add18e35517b333c6d1f4450419256bc57db81b2f62571e27656ec100`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:36:40 GMT
--	Parent Layer: `986eb3cbf63e96fb13932738e87e6ba71d7473358d045c3a3cb5f5c8f065e098`
+-	Created: Tue, 05 Apr 2016 03:26:50 GMT
+-	Parent Layer: `67897d129a5a4e415411d33724b027f4dc5177ff4ad02187d2f661a3b580cc97`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8e711ca825033e42cb589458bdff2e0b8b208aca7283714749ebbf138071009`
+#### `a045add471c670decb187c9dbb8ed7f14b87a8aa25ffb24f8feceb2f26a3496a`
 
 ```dockerfile
 RUN set -x \
@@ -5150,89 +5454,95 @@ RUN set -x \
 	&& apt-get purge -y --auto-remove bzip2 curl
 ```
 
--	Created: Wed, 17 Feb 2016 02:37:48 GMT
--	Parent Layer: `5c85382098fe043271ab1f3e3ae00f11bcee7b2791817a2cebf5798781df2376`
+-	Created: Tue, 05 Apr 2016 03:27:55 GMT
+-	Parent Layer: `abdb362add18e35517b333c6d1f4450419256bc57db81b2f62571e27656ec100`
 -	Docker Version: 1.9.1
--	Virtual Size: 82.0 MB (81970514 bytes)
--	v2 Blob: `sha256:658a69e87be703614c39c7810e8225bf08a8a6372e9fc78438e5785e7820cdfb`
--	v2 Content-Length: 22.8 MB (22802593 bytes)
+-	Virtual Size: 81.9 MB (81853725 bytes)
+-	v2 Blob: `sha256:d4b89cdccaff5891bb7cd9c3f94fa53f478a8cb097e110654fc6dbb627ef9d43`
+-	v2 Content-Length: 22.0 MB (22008246 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:43:23 GMT
 
-#### `3aec4ea4bf4f3a88df5889fe6ca60b747116d9d8bb38936066a032801d1a48d0`
+#### `df9e15d013b8d1cca7503d0a9e984ef974b8a4176084249c4f43b5551ea00aef`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 02:37:50 GMT
--	Parent Layer: `d8e711ca825033e42cb589458bdff2e0b8b208aca7283714749ebbf138071009`
+-	Created: Tue, 05 Apr 2016 03:27:57 GMT
+-	Parent Layer: `a045add471c670decb187c9dbb8ed7f14b87a8aa25ffb24f8feceb2f26a3496a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4-slim`
 
 ```console
-$ docker pull library/pypy@sha256:eec7191698424c48394dc6b643fe6497246ea942d0988e80bfcc6a3cf254458d
+$ docker pull library/pypy@sha256:6ed44da4a54111c1b1a1d4b3d526de167b5e5848d75baddbf22f4a1cbcdcba94
 ```
 
--	Total Virtual Size: 214.8 MB (214825808 bytes)
--	Total v2 Content-Length: 77.6 MB (77617807 bytes)
+-	Total Virtual Size: 214.6 MB (214622312 bytes)
+-	Total v2 Content-Length: 76.8 MB (76794401 bytes)
 
 ### Layers (9)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+#### `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+#### `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+#### `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -5242,40 +5552,43 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 -	Docker Version: 1.9.1
--	Virtual Size: 7.7 MB (7745523 bytes)
--	v2 Blob: `sha256:3cc8e9b5207a729443f273b82bf9e3d25cba532dc28c872227f684c8e6868720`
--	v2 Content-Length: 3.4 MB (3448363 bytes)
+-	Virtual Size: 7.7 MB (7717522 bytes)
+-	v2 Blob: `sha256:be6ef9f894a0f0f72aec1cad1f9731fca51baae09915e29be043633804909fb0`
+-	v2 Content-Length: 3.4 MB (3443135 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:36 GMT
 
-#### `986eb3cbf63e96fb13932738e87e6ba71d7473358d045c3a3cb5f5c8f065e098`
+#### `67897d129a5a4e415411d33724b027f4dc5177ff4ad02187d2f661a3b580cc97`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 02:36:40 GMT
--	Parent Layer: `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+-	Created: Tue, 05 Apr 2016 03:26:50 GMT
+-	Parent Layer: `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5c85382098fe043271ab1f3e3ae00f11bcee7b2791817a2cebf5798781df2376`
+#### `abdb362add18e35517b333c6d1f4450419256bc57db81b2f62571e27656ec100`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:36:40 GMT
--	Parent Layer: `986eb3cbf63e96fb13932738e87e6ba71d7473358d045c3a3cb5f5c8f065e098`
+-	Created: Tue, 05 Apr 2016 03:26:50 GMT
+-	Parent Layer: `67897d129a5a4e415411d33724b027f4dc5177ff4ad02187d2f661a3b580cc97`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8e711ca825033e42cb589458bdff2e0b8b208aca7283714749ebbf138071009`
+#### `a045add471c670decb187c9dbb8ed7f14b87a8aa25ffb24f8feceb2f26a3496a`
 
 ```dockerfile
 RUN set -x \
@@ -5287,89 +5600,95 @@ RUN set -x \
 	&& apt-get purge -y --auto-remove bzip2 curl
 ```
 
--	Created: Wed, 17 Feb 2016 02:37:48 GMT
--	Parent Layer: `5c85382098fe043271ab1f3e3ae00f11bcee7b2791817a2cebf5798781df2376`
+-	Created: Tue, 05 Apr 2016 03:27:55 GMT
+-	Parent Layer: `abdb362add18e35517b333c6d1f4450419256bc57db81b2f62571e27656ec100`
 -	Docker Version: 1.9.1
--	Virtual Size: 82.0 MB (81970514 bytes)
--	v2 Blob: `sha256:658a69e87be703614c39c7810e8225bf08a8a6372e9fc78438e5785e7820cdfb`
--	v2 Content-Length: 22.8 MB (22802593 bytes)
+-	Virtual Size: 81.9 MB (81853725 bytes)
+-	v2 Blob: `sha256:d4b89cdccaff5891bb7cd9c3f94fa53f478a8cb097e110654fc6dbb627ef9d43`
+-	v2 Content-Length: 22.0 MB (22008246 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:43:23 GMT
 
-#### `3aec4ea4bf4f3a88df5889fe6ca60b747116d9d8bb38936066a032801d1a48d0`
+#### `df9e15d013b8d1cca7503d0a9e984ef974b8a4176084249c4f43b5551ea00aef`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 02:37:50 GMT
--	Parent Layer: `d8e711ca825033e42cb589458bdff2e0b8b208aca7283714749ebbf138071009`
+-	Created: Tue, 05 Apr 2016 03:27:57 GMT
+-	Parent Layer: `a045add471c670decb187c9dbb8ed7f14b87a8aa25ffb24f8feceb2f26a3496a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2-slim`
 
 ```console
-$ docker pull library/pypy@sha256:1fbdf02398e4692838ce70426f799dfe303679dc59644e1e0b65df16afe1db7b
+$ docker pull library/pypy@sha256:6b0ef7f8fe799ea3a96ec86edc812f24e44a1a55987e4c16fc7e840513de14a6
 ```
 
--	Total Virtual Size: 214.8 MB (214825808 bytes)
--	Total v2 Content-Length: 77.6 MB (77617807 bytes)
+-	Total Virtual Size: 214.6 MB (214622312 bytes)
+-	Total v2 Content-Length: 76.8 MB (76794401 bytes)
 
 ### Layers (9)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+#### `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+#### `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+#### `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -5379,40 +5698,43 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 -	Docker Version: 1.9.1
--	Virtual Size: 7.7 MB (7745523 bytes)
--	v2 Blob: `sha256:3cc8e9b5207a729443f273b82bf9e3d25cba532dc28c872227f684c8e6868720`
--	v2 Content-Length: 3.4 MB (3448363 bytes)
+-	Virtual Size: 7.7 MB (7717522 bytes)
+-	v2 Blob: `sha256:be6ef9f894a0f0f72aec1cad1f9731fca51baae09915e29be043633804909fb0`
+-	v2 Content-Length: 3.4 MB (3443135 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:36 GMT
 
-#### `986eb3cbf63e96fb13932738e87e6ba71d7473358d045c3a3cb5f5c8f065e098`
+#### `67897d129a5a4e415411d33724b027f4dc5177ff4ad02187d2f661a3b580cc97`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 02:36:40 GMT
--	Parent Layer: `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+-	Created: Tue, 05 Apr 2016 03:26:50 GMT
+-	Parent Layer: `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5c85382098fe043271ab1f3e3ae00f11bcee7b2791817a2cebf5798781df2376`
+#### `abdb362add18e35517b333c6d1f4450419256bc57db81b2f62571e27656ec100`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:36:40 GMT
--	Parent Layer: `986eb3cbf63e96fb13932738e87e6ba71d7473358d045c3a3cb5f5c8f065e098`
+-	Created: Tue, 05 Apr 2016 03:26:50 GMT
+-	Parent Layer: `67897d129a5a4e415411d33724b027f4dc5177ff4ad02187d2f661a3b580cc97`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8e711ca825033e42cb589458bdff2e0b8b208aca7283714749ebbf138071009`
+#### `a045add471c670decb187c9dbb8ed7f14b87a8aa25ffb24f8feceb2f26a3496a`
 
 ```dockerfile
 RUN set -x \
@@ -5424,89 +5746,95 @@ RUN set -x \
 	&& apt-get purge -y --auto-remove bzip2 curl
 ```
 
--	Created: Wed, 17 Feb 2016 02:37:48 GMT
--	Parent Layer: `5c85382098fe043271ab1f3e3ae00f11bcee7b2791817a2cebf5798781df2376`
+-	Created: Tue, 05 Apr 2016 03:27:55 GMT
+-	Parent Layer: `abdb362add18e35517b333c6d1f4450419256bc57db81b2f62571e27656ec100`
 -	Docker Version: 1.9.1
--	Virtual Size: 82.0 MB (81970514 bytes)
--	v2 Blob: `sha256:658a69e87be703614c39c7810e8225bf08a8a6372e9fc78438e5785e7820cdfb`
--	v2 Content-Length: 22.8 MB (22802593 bytes)
+-	Virtual Size: 81.9 MB (81853725 bytes)
+-	v2 Blob: `sha256:d4b89cdccaff5891bb7cd9c3f94fa53f478a8cb097e110654fc6dbb627ef9d43`
+-	v2 Content-Length: 22.0 MB (22008246 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:43:23 GMT
 
-#### `3aec4ea4bf4f3a88df5889fe6ca60b747116d9d8bb38936066a032801d1a48d0`
+#### `df9e15d013b8d1cca7503d0a9e984ef974b8a4176084249c4f43b5551ea00aef`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 02:37:50 GMT
--	Parent Layer: `d8e711ca825033e42cb589458bdff2e0b8b208aca7283714749ebbf138071009`
+-	Created: Tue, 05 Apr 2016 03:27:57 GMT
+-	Parent Layer: `a045add471c670decb187c9dbb8ed7f14b87a8aa25ffb24f8feceb2f26a3496a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-slim`
 
 ```console
-$ docker pull library/pypy@sha256:8adc1ffd039353782ad51fda7c301b7f96fea342d1019fd11b01809af25e5488
+$ docker pull library/pypy@sha256:3ec6144bbfb221c69912c29c33287125ad6a03297dfcae020dcfd98fd0e8329c
 ```
 
--	Total Virtual Size: 214.8 MB (214825808 bytes)
--	Total v2 Content-Length: 77.6 MB (77617807 bytes)
+-	Total Virtual Size: 214.6 MB (214622312 bytes)
+-	Total v2 Content-Length: 76.8 MB (76794401 bytes)
 
 ### Layers (9)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+#### `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+#### `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+#### `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -5516,40 +5844,43 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 -	Docker Version: 1.9.1
--	Virtual Size: 7.7 MB (7745523 bytes)
--	v2 Blob: `sha256:3cc8e9b5207a729443f273b82bf9e3d25cba532dc28c872227f684c8e6868720`
--	v2 Content-Length: 3.4 MB (3448363 bytes)
+-	Virtual Size: 7.7 MB (7717522 bytes)
+-	v2 Blob: `sha256:be6ef9f894a0f0f72aec1cad1f9731fca51baae09915e29be043633804909fb0`
+-	v2 Content-Length: 3.4 MB (3443135 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:36 GMT
 
-#### `986eb3cbf63e96fb13932738e87e6ba71d7473358d045c3a3cb5f5c8f065e098`
+#### `67897d129a5a4e415411d33724b027f4dc5177ff4ad02187d2f661a3b580cc97`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 02:36:40 GMT
--	Parent Layer: `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+-	Created: Tue, 05 Apr 2016 03:26:50 GMT
+-	Parent Layer: `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5c85382098fe043271ab1f3e3ae00f11bcee7b2791817a2cebf5798781df2376`
+#### `abdb362add18e35517b333c6d1f4450419256bc57db81b2f62571e27656ec100`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:36:40 GMT
--	Parent Layer: `986eb3cbf63e96fb13932738e87e6ba71d7473358d045c3a3cb5f5c8f065e098`
+-	Created: Tue, 05 Apr 2016 03:26:50 GMT
+-	Parent Layer: `67897d129a5a4e415411d33724b027f4dc5177ff4ad02187d2f661a3b580cc97`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8e711ca825033e42cb589458bdff2e0b8b208aca7283714749ebbf138071009`
+#### `a045add471c670decb187c9dbb8ed7f14b87a8aa25ffb24f8feceb2f26a3496a`
 
 ```dockerfile
 RUN set -x \
@@ -5561,89 +5892,95 @@ RUN set -x \
 	&& apt-get purge -y --auto-remove bzip2 curl
 ```
 
--	Created: Wed, 17 Feb 2016 02:37:48 GMT
--	Parent Layer: `5c85382098fe043271ab1f3e3ae00f11bcee7b2791817a2cebf5798781df2376`
+-	Created: Tue, 05 Apr 2016 03:27:55 GMT
+-	Parent Layer: `abdb362add18e35517b333c6d1f4450419256bc57db81b2f62571e27656ec100`
 -	Docker Version: 1.9.1
--	Virtual Size: 82.0 MB (81970514 bytes)
--	v2 Blob: `sha256:658a69e87be703614c39c7810e8225bf08a8a6372e9fc78438e5785e7820cdfb`
--	v2 Content-Length: 22.8 MB (22802593 bytes)
+-	Virtual Size: 81.9 MB (81853725 bytes)
+-	v2 Blob: `sha256:d4b89cdccaff5891bb7cd9c3f94fa53f478a8cb097e110654fc6dbb627ef9d43`
+-	v2 Content-Length: 22.0 MB (22008246 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:43:23 GMT
 
-#### `3aec4ea4bf4f3a88df5889fe6ca60b747116d9d8bb38936066a032801d1a48d0`
+#### `df9e15d013b8d1cca7503d0a9e984ef974b8a4176084249c4f43b5551ea00aef`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 02:37:50 GMT
--	Parent Layer: `d8e711ca825033e42cb589458bdff2e0b8b208aca7283714749ebbf138071009`
+-	Created: Tue, 05 Apr 2016 03:27:57 GMT
+-	Parent Layer: `a045add471c670decb187c9dbb8ed7f14b87a8aa25ffb24f8feceb2f26a3496a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:slim`
 
 ```console
-$ docker pull library/pypy@sha256:7fc6786deb79f4dcdcd17116a27c9c6bac3da9554b206ebf2f44ec52e0dbe0ea
+$ docker pull library/pypy@sha256:0167e979bc9914d249451d886c7f2dd491dd28fe3f5594353a0a6f86ae52fa49
 ```
 
--	Total Virtual Size: 214.8 MB (214825808 bytes)
--	Total v2 Content-Length: 77.6 MB (77617807 bytes)
+-	Total Virtual Size: 214.6 MB (214622312 bytes)
+-	Total v2 Content-Length: 76.8 MB (76794401 bytes)
 
 ### Layers (9)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Mon, 04 Apr 2016 22:02:00 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125051065 bytes)
+-	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
+-	v2 Content-Length: 51.3 MB (51342828 bytes)
+-	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Mon, 04 Apr 2016 22:02:03 GMT
+-	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+#### `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 
 ```dockerfile
 RUN apt-get purge -y python.*
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+#### `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 17 Feb 2016 02:33:49 GMT
--	Parent Layer: `3e7c46443c2eccb91012e5fabf25bbded9984a9f7738aa2a44327c1aea2f7345`
+-	Created: Tue, 05 Apr 2016 03:21:07 GMT
+-	Parent Layer: `cd07fc016d493309a37bd0a6082526ec1b0a6f56e5a69dc05d72993ecd1d79fe`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+#### `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -5653,40 +5990,43 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 17 Feb 2016 02:34:32 GMT
--	Parent Layer: `e834f1e458f5cd995bb2b581bb59fd779482fa20ef0ed684425a3cfeffab5e04`
+-	Created: Tue, 05 Apr 2016 03:21:50 GMT
+-	Parent Layer: `90c06e7cb9f170f372ccc48e43797eaa46cd3696f6aa329ea4eebccc471b5390`
 -	Docker Version: 1.9.1
--	Virtual Size: 7.7 MB (7745523 bytes)
--	v2 Blob: `sha256:3cc8e9b5207a729443f273b82bf9e3d25cba532dc28c872227f684c8e6868720`
--	v2 Content-Length: 3.4 MB (3448363 bytes)
+-	Virtual Size: 7.7 MB (7717522 bytes)
+-	v2 Blob: `sha256:be6ef9f894a0f0f72aec1cad1f9731fca51baae09915e29be043633804909fb0`
+-	v2 Content-Length: 3.4 MB (3443135 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:41:36 GMT
 
-#### `986eb3cbf63e96fb13932738e87e6ba71d7473358d045c3a3cb5f5c8f065e098`
+#### `67897d129a5a4e415411d33724b027f4dc5177ff4ad02187d2f661a3b580cc97`
 
 ```dockerfile
 ENV PYPY_VERSION=2.4.0
 ```
 
--	Created: Wed, 17 Feb 2016 02:36:40 GMT
--	Parent Layer: `a5ed790fa435a2af3efe847dd44ed996376d01c3a6c9259cb1716bd8f69b7a4e`
+-	Created: Tue, 05 Apr 2016 03:26:50 GMT
+-	Parent Layer: `0deea70fef583fefedbfdce0ceb3221c76e7da553a8aed3218b156b0b30e2227`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5c85382098fe043271ab1f3e3ae00f11bcee7b2791817a2cebf5798781df2376`
+#### `abdb362add18e35517b333c6d1f4450419256bc57db81b2f62571e27656ec100`
 
 ```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
+ENV PYTHON_PIP_VERSION=8.1.1
 ```
 
--	Created: Wed, 17 Feb 2016 02:36:40 GMT
--	Parent Layer: `986eb3cbf63e96fb13932738e87e6ba71d7473358d045c3a3cb5f5c8f065e098`
+-	Created: Tue, 05 Apr 2016 03:26:50 GMT
+-	Parent Layer: `67897d129a5a4e415411d33724b027f4dc5177ff4ad02187d2f661a3b580cc97`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8e711ca825033e42cb589458bdff2e0b8b208aca7283714749ebbf138071009`
+#### `a045add471c670decb187c9dbb8ed7f14b87a8aa25ffb24f8feceb2f26a3496a`
 
 ```dockerfile
 RUN set -x \
@@ -5698,22 +6038,24 @@ RUN set -x \
 	&& apt-get purge -y --auto-remove bzip2 curl
 ```
 
--	Created: Wed, 17 Feb 2016 02:37:48 GMT
--	Parent Layer: `5c85382098fe043271ab1f3e3ae00f11bcee7b2791817a2cebf5798781df2376`
+-	Created: Tue, 05 Apr 2016 03:27:55 GMT
+-	Parent Layer: `abdb362add18e35517b333c6d1f4450419256bc57db81b2f62571e27656ec100`
 -	Docker Version: 1.9.1
--	Virtual Size: 82.0 MB (81970514 bytes)
--	v2 Blob: `sha256:658a69e87be703614c39c7810e8225bf08a8a6372e9fc78438e5785e7820cdfb`
--	v2 Content-Length: 22.8 MB (22802593 bytes)
+-	Virtual Size: 81.9 MB (81853725 bytes)
+-	v2 Blob: `sha256:d4b89cdccaff5891bb7cd9c3f94fa53f478a8cb097e110654fc6dbb627ef9d43`
+-	v2 Content-Length: 22.0 MB (22008246 bytes)
+-	v2 Last-Modified: Tue, 05 Apr 2016 18:43:23 GMT
 
-#### `3aec4ea4bf4f3a88df5889fe6ca60b747116d9d8bb38936066a032801d1a48d0`
+#### `df9e15d013b8d1cca7503d0a9e984ef974b8a4176084249c4f43b5551ea00aef`
 
 ```dockerfile
 CMD ["pypy3"]
 ```
 
--	Created: Wed, 17 Feb 2016 02:37:50 GMT
--	Parent Layer: `d8e711ca825033e42cb589458bdff2e0b8b208aca7283714749ebbf138071009`
+-	Created: Tue, 05 Apr 2016 03:27:57 GMT
+-	Parent Layer: `a045add471c670decb187c9dbb8ed7f14b87a8aa25ffb24f8feceb2f26a3496a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

@@ -1,14 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8.23`, `2.8`, `2` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/b9756ce368687678d48613989c7bbac93830ca1f/2.8/Dockerfile)
--	[`2.8.23-32bit`, `2.8-32bit`, `2-32bit` (*2.8/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/b9756ce368687678d48613989c7bbac93830ca1f/2.8/32bit/Dockerfile)
--	[`3.0.7`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/b9756ce368687678d48613989c7bbac93830ca1f/3.0/Dockerfile)
--	[`3.0.7-32bit`, `3.0-32bit`, `3-32bit`, `32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/b9756ce368687678d48613989c7bbac93830ca1f/3.0/32bit/Dockerfile)
--	[`3.0.7-alpine`, `3.0-alpine`, `3-alpine`, `alpine` (*3.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/b9756ce368687678d48613989c7bbac93830ca1f/3.0/alpine/Dockerfile)
+-	[`2.8.23`, `2.8`, `2` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/7dec62fe6de187165dce3f771efa57ce4e5d7a32/2.8/Dockerfile)
+-	[`2.8.23-32bit`, `2.8-32bit`, `2-32bit` (*2.8/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/7dec62fe6de187165dce3f771efa57ce4e5d7a32/2.8/32bit/Dockerfile)
+-	[`3.0.7`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/7dec62fe6de187165dce3f771efa57ce4e5d7a32/3.0/Dockerfile)
+-	[`3.0.7-32bit`, `3.0-32bit`, `3-32bit`, `32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/7dec62fe6de187165dce3f771efa57ce4e5d7a32/3.0/32bit/Dockerfile)
+-	[`3.0.7-alpine`, `3.0-alpine`, `3-alpine`, `alpine` (*3.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/7dec62fe6de187165dce3f771efa57ce4e5d7a32/3.0/alpine/Dockerfile)
 
 [![](https://badge.imagelayers.io/redis:latest.svg)](https://imagelayers.io/?images=redis:2.8.23,redis:2.8.23-32bit,redis:3.0.7,redis:3.0.7-32bit,redis:3.0.7-alpine)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/redis`)](https://github.com/docker-library/official-images/blob/master/library/redis). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/redis`)](https://github.com/docker-library/official-images/blob/master/library/redis). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredis).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `redis/tag-details.md` file](https://github.com/docker-library/docs/blob/master/redis/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -49,7 +49,7 @@ $ docker run --name some-app --link some-redis:redis -d application-that-uses-re
 ## ... or via `redis-cli`
 
 ```console
-$ docker run -it --link some-redis:redis --rm redis sh -c 'exec redis-cli -h "$REDIS_PORT_6379_TCP_ADDR" -p "$REDIS_PORT_6379_TCP_PORT"'
+$ docker run -it --link some-redis:redis --rm redis redis-cli -h redis -p 6379
 ```
 
 ## Additionally, If you want to use your own redis.conf ...
@@ -96,7 +96,7 @@ View [license information](http://redis.io/topics/license) for the software cont
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -110,7 +110,7 @@ Documentation for this image is stored in the [`redis/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/redis/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/redis/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

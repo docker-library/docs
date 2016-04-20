@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1.20`, `3.1`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/celery/blob/22c9fed4bb5d41ba5ec7a52294c85a44c6b4dc34/Dockerfile)
+-	[`3.1.23`, `3.1`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/celery/blob/0652407560f353e749cbe001e8bdbb5db86c2291/Dockerfile)
 
-[![](https://badge.imagelayers.io/celery:latest.svg)](https://imagelayers.io/?images=celery:3.1.20)
+[![](https://badge.imagelayers.io/celery:latest.svg)](https://imagelayers.io/?images=celery:3.1.23)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/celery`)](https://github.com/docker-library/official-images/blob/master/library/celery). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/celery`)](https://github.com/docker-library/official-images/blob/master/library/celery). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcelery).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `celery/tag-details.md` file](https://github.com/docker-library/docs/blob/master/celery/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -42,7 +42,7 @@ $ docker run --link some-redis:redis -e CELERY_BROKER_URL=redis://redis --rm cel
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -56,7 +56,7 @@ Documentation for this image is stored in the [`celery/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/celery/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/celery/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

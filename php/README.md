@@ -1,21 +1,30 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5.32-cli`, `5.5-cli`, `5.5.32`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/5.5/Dockerfile)
--	[`5.5.32-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/5.5/apache/Dockerfile)
--	[`5.5.32-fpm`, `5.5-fpm` (*5.5/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/5.5/fpm/Dockerfile)
--	[`5.5.32-zts`, `5.5-zts` (*5.5/zts/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/5.5/zts/Dockerfile)
--	[`5.6.18-cli`, `5.6-cli`, `5-cli`, `5.6.18`, `5.6`, `5` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/5.6/Dockerfile)
--	[`5.6.18-apache`, `5.6-apache`, `5-apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/5.6/apache/Dockerfile)
--	[`5.6.18-fpm`, `5.6-fpm`, `5-fpm` (*5.6/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/5.6/fpm/Dockerfile)
--	[`5.6.18-zts`, `5.6-zts`, `5-zts` (*5.6/zts/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/5.6/zts/Dockerfile)
--	[`7.0.3-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.3`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/7.0/Dockerfile)
--	[`7.0.3-apache`, `7.0-apache`, `7-apache`, `apache` (*7.0/apache/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/7.0/apache/Dockerfile)
--	[`7.0.3-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/7.0/fpm/Dockerfile)
--	[`7.0.3-zts`, `7.0-zts`, `7-zts`, `zts` (*7.0/zts/Dockerfile*)](https://github.com/docker-library/php/blob/7bd5c38db974ee629a815896add1ec568a1cc88c/7.0/zts/Dockerfile)
+-	[`5.5.34-cli`, `5.5-cli`, `5.5.34`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.5/Dockerfile)
+-	[`5.5.34-alpine`, `5.5-alpine` (*5.5/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.5/alpine/Dockerfile)
+-	[`5.5.34-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.5/apache/Dockerfile)
+-	[`5.5.34-fpm`, `5.5-fpm` (*5.5/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.5/fpm/Dockerfile)
+-	[`5.5.34-fpm-alpine`, `5.5-fpm-alpine` (*5.5/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.5/fpm/alpine/Dockerfile)
+-	[`5.5.34-zts`, `5.5-zts` (*5.5/zts/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.5/zts/Dockerfile)
+-	[`5.5.34-zts-alpine`, `5.5-zts-alpine` (*5.5/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.5/zts/alpine/Dockerfile)
+-	[`5.6.20-cli`, `5.6-cli`, `5-cli`, `5.6.20`, `5.6`, `5` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.6/Dockerfile)
+-	[`5.6.20-alpine`, `5.6-alpine`, `5-alpine` (*5.6/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.6/alpine/Dockerfile)
+-	[`5.6.20-apache`, `5.6-apache`, `5-apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.6/apache/Dockerfile)
+-	[`5.6.20-fpm`, `5.6-fpm`, `5-fpm` (*5.6/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.6/fpm/Dockerfile)
+-	[`5.6.20-fpm-alpine`, `5.6-fpm-alpine`, `5-fpm-alpine` (*5.6/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.6/fpm/alpine/Dockerfile)
+-	[`5.6.20-zts`, `5.6-zts`, `5-zts` (*5.6/zts/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.6/zts/Dockerfile)
+-	[`5.6.20-zts-alpine`, `5.6-zts-alpine`, `5-zts-alpine` (*5.6/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/5.6/zts/alpine/Dockerfile)
+-	[`7.0.5-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.5`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/7.0/Dockerfile)
+-	[`7.0.5-alpine`, `7.0-alpine`, `7-alpine`, `alpine` (*7.0/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/7.0/alpine/Dockerfile)
+-	[`7.0.5-apache`, `7.0-apache`, `7-apache`, `apache` (*7.0/apache/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/7.0/apache/Dockerfile)
+-	[`7.0.5-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/7.0/fpm/Dockerfile)
+-	[`7.0.5-fpm-alpine`, `7.0-fpm-alpine`, `7-fpm-alpine`, `fpm-alpine` (*7.0/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/7.0/fpm/alpine/Dockerfile)
+-	[`7.0.5-zts`, `7.0-zts`, `7-zts`, `zts` (*7.0/zts/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/7.0/zts/Dockerfile)
+-	[`7.0.5-zts-alpine`, `7.0-zts-alpine`, `7-zts-alpine`, `zts-alpine` (*7.0/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4677ca134fe48d20c820a19becb99198824d78e3/7.0/zts/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/php:latest.svg)](https://imagelayers.io/?images=php:5.5.32-cli,php:5.5.32-apache,php:5.5.32-fpm,php:5.5.32-zts,php:5.6.18-cli,php:5.6.18-apache,php:5.6.18-fpm,php:5.6.18-zts,php:7.0.3-cli,php:7.0.3-apache,php:7.0.3-fpm,php:7.0.3-zts)
+[![](https://badge.imagelayers.io/php:latest.svg)](https://imagelayers.io/?images=php:5.5.34-cli,php:5.5.34-alpine,php:5.5.34-apache,php:5.5.34-fpm,php:5.5.34-fpm-alpine,php:5.5.34-zts,php:5.5.34-zts-alpine,php:5.6.20-cli,php:5.6.20-alpine,php:5.6.20-apache,php:5.6.20-fpm,php:5.6.20-fpm-alpine,php:5.6.20-zts,php:5.6.20-zts-alpine,php:7.0.5-cli,php:7.0.5-alpine,php:7.0.5-apache,php:7.0.5-fpm,php:7.0.5-fpm-alpine,php:7.0.5-zts,php:7.0.5-zts-alpine)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `php/tag-details.md` file](https://github.com/docker-library/docs/blob/master/php/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -147,13 +156,29 @@ If you don't want to include a `Dockerfile` in your project, it is sufficient to
 $ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:5.6-apache
 ```
 
+# Image Variants
+
+The `php` images come in many flavors, each designed for a specific use case.
+
+## `php:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `php:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # License
 
 View [license information](http://php.net/license/) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -167,7 +192,7 @@ Documentation for this image is stored in the [`php/` directory](https://github.
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/php/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/php/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

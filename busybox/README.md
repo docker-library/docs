@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.24.1-glibc`, `1.24-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/1cf3ff5b2bdf332e6ecff8c4aaaa94172f693332/glibc/Dockerfile)
--	[`1.24.1-musl`, `1.24-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/1cf3ff5b2bdf332e6ecff8c4aaaa94172f693332/musl/Dockerfile)
--	[`1.24.1-uclibc`, `1.24.1`, `1.24-uclibc`, `1.24`, `1-uclibc`, `1`, `uclibc`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/1cf3ff5b2bdf332e6ecff8c4aaaa94172f693332/uclibc/Dockerfile)
+-	[`1.24.2-glibc`, `1.24-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/de53df881f8a7cad77fe9e2042ee0a8d38402ce3/glibc/Dockerfile)
+-	[`1.24.2-musl`, `1.24-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/de53df881f8a7cad77fe9e2042ee0a8d38402ce3/musl/Dockerfile)
+-	[`1.24.2-uclibc`, `1.24.2`, `1.24-uclibc`, `1.24`, `1-uclibc`, `1`, `uclibc`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/de53df881f8a7cad77fe9e2042ee0a8d38402ce3/uclibc/Dockerfile)
 
-[![](https://badge.imagelayers.io/busybox:latest.svg)](https://imagelayers.io/?images=busybox:1.24.1-glibc,busybox:1.24.1-musl,busybox:1.24.1-uclibc)
+[![](https://badge.imagelayers.io/busybox:latest.svg)](https://imagelayers.io/?images=busybox:1.24.2-glibc,busybox:1.24.2-musl,busybox:1.24.2-uclibc)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/busybox`)](https://github.com/docker-library/official-images/blob/master/library/busybox). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/busybox`)](https://github.com/docker-library/official-images/blob/master/library/busybox). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbusybox).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `busybox/tag-details.md` file](https://github.com/docker-library/docs/blob/master/busybox/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -18,7 +18,7 @@ BusyBox combines tiny versions of many common UNIX utilities into a single small
 
 > [wikipedia.org/wiki/BusyBox](https://en.wikipedia.org/wiki/BusyBox)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/8b984f7fe2aadc3e42ed2bbb89f0a72fff36d819/busybox/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/cc5d5e47fd7e0c57c9b8de4c1bfb6258e0dac85d/busybox/logo.png)
 
 # How to use this image
 
@@ -56,7 +56,7 @@ View [license information](http://www.busybox.net/license.html) for the software
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -70,7 +70,7 @@ Documentation for this image is stored in the [`busybox/` directory](https://git
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/busybox/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/busybox/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

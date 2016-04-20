@@ -1,15 +1,17 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.45-jre7`, `6.0-jre7`, `6-jre7`, `6.0.45`, `6.0`, `6` (*6-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/31289c61ce9a5ad829ca9ad8adabf0e3160f16e8/6-jre7/Dockerfile)
--	[`6.0.45-jre8`, `6.0-jre8`, `6-jre8` (*6-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/31289c61ce9a5ad829ca9ad8adabf0e3160f16e8/6-jre8/Dockerfile)
--	[`7.0.68-jre7`, `7.0-jre7`, `7-jre7`, `7.0.68`, `7.0`, `7` (*7-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/a55c4f55b74edcf25c7a7cb8feb2b934d4724e8d/7-jre7/Dockerfile)
--	[`7.0.68-jre8`, `7.0-jre8`, `7-jre8` (*7-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/a55c4f55b74edcf25c7a7cb8feb2b934d4724e8d/7-jre8/Dockerfile)
--	[`8.0.32-jre7`, `8.0-jre7`, `8-jre7`, `jre7`, `8.0.32`, `8.0`, `8`, `latest` (*8-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/7da0fe6d6ba425faf5706ad13f1b6970a5192dd5/8-jre7/Dockerfile)
--	[`8.0.32-jre8`, `8.0-jre8`, `8-jre8`, `jre8` (*8-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/7da0fe6d6ba425faf5706ad13f1b6970a5192dd5/8-jre8/Dockerfile)
+-	[`6.0.45-jre7`, `6.0-jre7`, `6-jre7`, `6.0.45`, `6.0`, `6` (*6/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/6/jre7/Dockerfile)
+-	[`6.0.45-jre8`, `6.0-jre8`, `6-jre8` (*6/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/6/jre8/Dockerfile)
+-	[`7.0.69-jre7`, `7.0-jre7`, `7-jre7`, `7.0.69`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/984d958106aebab3f124f616277a2512da4d4a9f/7/jre7/Dockerfile)
+-	[`7.0.69-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/984d958106aebab3f124f616277a2512da4d4a9f/7/jre8/Dockerfile)
+-	[`8.0.33-jre7`, `8.0-jre7`, `8-jre7`, `8.0.33`, `8.0`, `8`, `latest` (*8.0/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/8.0/jre7/Dockerfile)
+-	[`8.0.33-jre8`, `8.0-jre8`, `8-jre8` (*8.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/8.0/jre8/Dockerfile)
+-	[`8.5.0-jre8`, `8.5-jre8`, `8.5.0`, `8.5` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/82551c9d60c48d35a68b8eb2cc069913be9078ae/8.5/jre8/Dockerfile)
+-	[`9.0.0.M4-jre8`, `9.0.0-jre8`, `9.0-jre8`, `9-jre8`, `9.0.0.M4`, `9.0.0`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/92b97a945a2241f868a91d2919e0e7e3f5c84216/9.0/jre8/Dockerfile)
 
-[![](https://badge.imagelayers.io/tomcat:latest.svg)](https://imagelayers.io/?images=tomcat:6.0.45-jre7,tomcat:6.0.45-jre8,tomcat:7.0.68-jre7,tomcat:7.0.68-jre8,tomcat:8.0.32-jre7,tomcat:8.0.32-jre8)
+[![](https://badge.imagelayers.io/tomcat:latest.svg)](https://imagelayers.io/?images=tomcat:6.0.45-jre7,tomcat:6.0.45-jre8,tomcat:7.0.69-jre7,tomcat:7.0.69-jre8,tomcat:8.0.33-jre7,tomcat:8.0.33-jre8,tomcat:8.5.0-jre8,tomcat:9.0.0.M4-jre8)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomcat).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `tomcat/tag-details.md` file](https://github.com/docker-library/docs/blob/master/tomcat/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -61,7 +63,7 @@ View [license information](https://www.apache.org/licenses/LICENSE-2.0) for the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -75,7 +77,7 @@ Documentation for this image is stored in the [`tomcat/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/tomcat/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/tomcat/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

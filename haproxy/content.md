@@ -46,3 +46,13 @@ $ docker run -d --name my-running-haproxy my-haproxy
 ```console
 $ docker run -d --name my-running-haproxy -v /path/to/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro haproxy:1.5
 ```
+
+### Reloading config
+
+If you used a bind mount for the config and have edited your `haproxy.cfg` file, you can use haproxy's graceful reload feature by sending a `SIGHUP` to the container:
+
+```console
+$ docker kill -s HUP my-running-haproxy
+```
+
+The entrypoint script in the image checks for running the command `haproxy` and replaces it with `haproxy-systemd-wrapper` from haproxy upstream which takes care of signal handling to do the graceful reload. Under the hood this uses the `-sf` option of haproxy so "there are two small windows of a few milliseconds each where it is possible that a few connection failures will be noticed during high loads" (see [Stopping and restarting HAProxy](http://www.haproxy.org/download/1.6/doc/management.txt)).

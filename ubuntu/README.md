@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20160225`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/143625e7827e51ac1894c5677006c4461feff5ad/precise/Dockerfile)
--	[`14.04.4`, `14.04`, `trusty-20160226`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/143625e7827e51ac1894c5677006c4461feff5ad/trusty/Dockerfile)
--	[`15.10`, `wily-20160217`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/143625e7827e51ac1894c5677006c4461feff5ad/wily/Dockerfile)
--	[`16.04`, `xenial-20160226`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/143625e7827e51ac1894c5677006c4461feff5ad/xenial/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise-20160330`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/028503f527c77921a3eff88216f57025cc611869/precise/Dockerfile)
+-	[`14.04.4`, `14.04`, `trusty-20160412`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/028503f527c77921a3eff88216f57025cc611869/trusty/Dockerfile)
+-	[`15.10`, `wily-20160329`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/028503f527c77921a3eff88216f57025cc611869/wily/Dockerfile)
+-	[`16.04`, `xenial-20160331.1`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/028503f527c77921a3eff88216f57025cc611869/xenial/Dockerfile)
 
 [![](https://badge.imagelayers.io/ubuntu:latest.svg)](https://imagelayers.io/?images=ubuntu:12.04.5,ubuntu:14.04.4,ubuntu:15.10,ubuntu:16.04)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fubuntu).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ubuntu/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ubuntu/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -73,7 +73,7 @@ deb-src http://archive.ubuntu.com/ubuntu/ precise-security universe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -87,7 +87,7 @@ Documentation for this image is stored in the [`ubuntu/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/tianon/docker-brew-ubuntu-core/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/tianon/docker-brew-ubuntu-core/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

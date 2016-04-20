@@ -5,7 +5,7 @@
 
 [![](https://badge.imagelayers.io/couchdb:latest.svg)](https://imagelayers.io/?images=couchdb:latest,couchdb:1.6.1-couchperuser)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/couchdb`)](https://github.com/docker-library/official-images/blob/master/library/couchdb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/couchdb`)](https://github.com/docker-library/official-images/blob/master/library/couchdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchdb).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `couchdb/tag-details.md` file](https://github.com/docker-library/docs/blob/master/couchdb/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -80,9 +80,11 @@ You can also use `couchdb` as the base image for your own couchdb instance and p
 
 Example Dockerfile:
 
-	FROM couchdb:latest
-	
-	COPY local.ini /usr/local/etc/couchdb/
+```dockerfile
+FROM couchdb:latest
+
+COPY local.ini /usr/local/etc/couchdb/
+```
 
 and then build and run
 
@@ -108,7 +110,7 @@ Apache CouchDB is licensed under the [Apache License](https://github.com/apache/
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -122,7 +124,7 @@ Documentation for this image is stored in the [`couchdb/` directory](https://git
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/couchdb/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/couchdb/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

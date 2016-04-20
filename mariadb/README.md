@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`10.1.12`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/9430efcac9f75793dd2e368bc9517c21a96c07ef/10.1/Dockerfile)
--	[`10.0.24`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/a3da203091c235a827467d5bcb10bc4b06903295/10.0/Dockerfile)
--	[`5.5.48`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/a3da203091c235a827467d5bcb10bc4b06903295/5.5/Dockerfile)
+-	[`10.1.13`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/6bd1bf6e03aab298bf842800059f8620a3414a81/10.1/Dockerfile)
+-	[`10.0.24`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/027cff3bc7e39065a98ca001175ba7dbdb32be32/10.0/Dockerfile)
+-	[`5.5.48`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/027cff3bc7e39065a98ca001175ba7dbdb32be32/5.5/Dockerfile)
 
-[![](https://badge.imagelayers.io/mariadb:latest.svg)](https://imagelayers.io/?images=mariadb:10.1.12,mariadb:10.0.24,mariadb:5.5.48)
+[![](https://badge.imagelayers.io/mariadb:latest.svg)](https://imagelayers.io/?images=mariadb:10.1.13,mariadb:10.0.24,mariadb:5.5.48)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmariadb).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mariadb/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mariadb/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -84,6 +84,20 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 $ chcon -Rt svirt_sandbox_file_t /my/custom
 ```
 
+### Configuration without a `cnf` file
+
+Many configuration options can be passed as flags to `mysqld`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to change the default encoding and collation for all tables to use UTF-8 (`utf8mb4`) just run the following:
+
+```console
+$ docker run --name some-mariadb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:tag --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+```
+
+If you would like to see a complete list of available options, just run:
+
+```console
+$ docker run -it --rm mariadb:tag --verbose --help
+```
+
 ## Environment Variables
 
 When you start the `mariadb` image, you can adjust the configuration of the MariaDB instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
@@ -146,7 +160,7 @@ If you start your `mariadb` container instance with a data directory that alread
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -160,7 +174,7 @@ Documentation for this image is stored in the [`mariadb/` directory](https://git
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/mariadb/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/mariadb/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

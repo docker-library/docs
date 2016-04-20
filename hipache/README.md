@@ -4,7 +4,7 @@
 
 [![](https://badge.imagelayers.io/hipache:latest.svg)](https://imagelayers.io/?images=hipache:latest)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/hipache`)](https://github.com/docker-library/official-images/blob/master/library/hipache). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/hipache`)](https://github.com/docker-library/official-images/blob/master/library/hipache). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhipache).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `hipache/tag-details.md` file](https://github.com/docker-library/docs/blob/master/hipache/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -16,7 +16,7 @@ Hipache was originally developed at [dotCloud](http://www.dotcloud.com), a popul
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -30,7 +30,7 @@ Documentation for this image is stored in the [`hipache/` directory](https://git
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/dotcloud/hipache/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/dotcloud/hipache/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
