@@ -1,11 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `FT`, `8`, `8.1` (*8.1/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/09c50e490336f28caf1278c6bffaa02e79c0f4b4/8.1/Dockerfile)
+-	[`latest`, `FT`, `8`, `8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/c8f5d5bd4fedda1ee72eb29eac5fbb0b0a490155/8.2/Dockerfile)
 -	[`LTS-2015`, `LTS`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/09c50e490336f28caf1278c6bffaa02e79c0f4b4/7.10/Dockerfile)
--	[`7.4` (*7.4/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/09c50e490336f28caf1278c6bffaa02e79c0f4b4/7.4/Dockerfile)
 -	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/09c50e490336f28caf1278c6bffaa02e79c0f4b4/6.0/Dockerfile)
 
-[![](https://badge.imagelayers.io/nuxeo:latest.svg)](https://imagelayers.io/?images=nuxeo:latest,nuxeo:LTS-2015,nuxeo:7.4,nuxeo:LTS-2014)
+[![](https://badge.imagelayers.io/nuxeo:latest.svg)](https://imagelayers.io/?images=nuxeo:latest,nuxeo:LTS-2015,nuxeo:LTS-2014)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nuxeo`)](https://github.com/docker-library/official-images/blob/master/library/nuxeo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnuxeo).
 
