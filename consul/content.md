@@ -38,7 +38,7 @@ The entry point also includes a small utility to look up a client or bind addres
 ## Running Consul for Development
 
 ```console
-$ docker run consul
+$ docker run -d --name=dev-consul consul
 ```
 
 This runs a completely in-memory Consul server agent with default bridge networking and no services exposed on the host, which is useful for development but should not be used in production. For example, if that server is running at internal address 172.17.0.2, you can run a three node cluster for development by starting up two more instances and telling them to join the first node.
@@ -50,10 +50,10 @@ $ docker run -d consul agent -dev -join=172.17.0.2
 ... server 3 starts
 ```
 
-Then, choosing any one of the container IDs, we can query for all the members in the cluster by running a Consul CLI command:
+Then we can query for all the members in the cluster by running a Consul CLI command in the first container:
 
 ```console
-$ docker exec -t c9caabfd4c2a consul members
+$ docker exec -t dev-consul consul members
 Node          Address          Status  Type    Build  Protocol  DC
 579db72c1ae1  172.17.0.3:8301  alive   server  0.6.3  2         dc1
 7e185aebe4e6  172.17.0.3:8301  left    server  0.6.3  2         dc1
@@ -68,7 +68,7 @@ Development mode also starts a version of Consul's web UI on port 8500. This can
 ## Running Consul Agent in Client Mode
 
 ```console
-$  docker run -e 'CONSUL_LOCAL_CONFIG={"leave_on_terminate": true}' -d --net=host consul agent -bind=<external ip> -retry-join=<root agent ip>
+$  docker run -d --net=host -e 'CONSUL_LOCAL_CONFIG={"leave_on_terminate": true}' consul agent -bind=<external ip> -retry-join=<root agent ip>
 ==> Starting Consul agent...
 ==> Starting Consul agent RPC...
 ==> Consul agent running!
@@ -86,7 +86,7 @@ This runs a Consul client agent sharing the host's network and advertising the e
 
 The `-retry-join` parameter specifies the external IP of one other agent in the cluster to use to join at startup. There are several ways to control how an agent joins the cluster, see the [agent configuration](https://www.consul.io/docs/agent/options.html) guide for more details on the `-join`, `-retry-join`, and `-atlas-join` options.
 
-Note also we've set [`leave_on_terminate`](https://www.consul.io/docs/agent/options.html#leave_on_terminate) using the `CONSUL_LOCAL_CONFIG` environment variable. This is recommended for clients since they should usually be removed from the cluster when the Consul agent terminates.
+Note also we've set [`leave_on_terminate`](https://www.consul.io/docs/agent/options.html#leave_on_terminate) using the `CONSUL_LOCAL_CONFIG` environment variable. This is recommended for clients to and will be defaulted to `true` in Consul 0.7 and later, so this will no longer be necessary.
 
 At startup, the agent will read config JSON files from `/consul/config`. Data will be persisted in the `/consul/data` volume.
 
@@ -142,14 +142,14 @@ With this configuration, Consul's client interfaces will be bound to the bridge 
 ## Running Consul Agent in Server Mode
 
 ```console
-$ docker run -e 'CONSUL_LOCAL_CONFIG={"skip_leave_on_interrupt": true}' -d --net=host consul agent -server -bind=<external ip> -retry-join=<root agent ip> -bootstrap-expect=<number of server agents>
+$ docker run -d --net=host -e 'CONSUL_LOCAL_CONFIG={"skip_leave_on_interrupt": true}' consul agent -server -bind=<external ip> -retry-join=<root agent ip> -bootstrap-expect=<number of server agents>
 ```
 
 This runs a Consul server agent sharing the host's network. All of the network considerations and behavior we covered above for the client agent also apply to the server agent. A single server on its own won't be able to form a quorum and will be waiting for other servers to join.
 
 Just like the client agent, the `-retry-join` parameter specifies the external IP of one other agent in the cluster to use to join at startup. There are several ways to control how an agent joins the cluster, see the [agent configuration](https://www.consul.io/docs/agent/options.html) guide for more details on the `-join`, `-retry-join`, and `-atlas-join` options. The server agent also consumes a `-bootstrap-expect` option that specifies how many server agents to watch for before bootstrapping the cluster for the first time. This provides an easy way to get an orderly startup with a new cluster. See the [agent configuration](https://www.consul.io/docs/agent/options.html) guide for more details on the `-bootstrap` and `-bootstrap-expect` options.
 
-Note also we've set [`skip_leave_on_interrupt`](https://www.consul.io/docs/agent/options.html#skip_leave_on_interrupt) using the `CONSUL_LOCAL_CONFIG` environment variable. This is recommended for servers to and will be defaulted to `true` in Consul 0.7 and later.
+Note also we've set [`skip_leave_on_interrupt`](https://www.consul.io/docs/agent/options.html#skip_leave_on_interrupt) using the `CONSUL_LOCAL_CONFIG` environment variable. This is recommended for servers to and will be defaulted to `true` in Consul 0.7 and later, so this will no longer be necessary.
 
 At startup, the agent will read config JSON files from `/consul/config`. Data will be persisted in the `/consul/data` volume.
 
@@ -160,7 +160,7 @@ Once the cluster is bootstrapped and quorum is achieved, you must use care to tr
 By default the dev, client, and server modes started by the endpoint will expose Consul's DNS server on port 8600. Because this is cumbersome to configure with facilities like `resolv.conf`, you may want to expose DNS on port 53 using port arguments on your run command:
 
 ```console
-$ docker run --net=host -p 53:8600/tcp -p 53:8600/udp consul
+$ docker run -d --net=host -p 53:8600/tcp -p 53:8600/udp consul
 ```
 
 If you are binding Consul's client interfaces to the host's loopback address, then you should be able to configure your host's `resolv.conf` to route DNS requests to Consul by including "127.0.0.1" as the primary DNS server. This would expose Consul's DNS to all applications running on the host, but due to Docker's built-in DNS server, you can't point to this directly from inside your containers; Docker will issue an error message if you attempt to do this. You must configure Consul to listen on a non-localhost address that is reachable from within other containers.
@@ -174,7 +174,7 @@ $ docker run -d --net=host -p 53:8600/tcp -p 53:8600/udp consul agent -bind=<bri
 Now start another container and point it at Consul's DNS, using the bridge address of the host:
 
 ```console
-$ docker run -i --dns=<bridge ip> -t ubuntu sh -c "apt-get install -y dnsutils && dig consul.service.consul"
+$ docker run -i --dns=<bridge ip> -t ubuntu sh -c "apt-get update && apt-get install -y dnsutils && dig consul.service.consul"
 ...
 ;; ANSWER SECTION:
 consul.service.consul.  0       IN      A       66.175.220.234
