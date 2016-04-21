@@ -25,16 +25,11 @@ We chose Alpine as a lightweight base with a reasonably small surface area for s
 
 Consul always runs under [dumb-init](https://github.com/Yelp/dumb-init), which handles reaping zombie processes and forwards signals on to all processes running in the container. We also use [gosu](https://github.com/tianon/gosu) to run Consul as a non-root "consul" user for better security. These binaries are all built by HashiCorp and signed with our [GPG key](https://www.hashicorp.com/security.html), so you can verify the signed package used to build a given base image.
 
-An entry point script is provided that provides several common configurations:
+Running the Consul container with no arguments will give you a Consul server in [development mode](https://www.consul.io/docs/agent/options.html#_dev). The provided entry point script will also look for Consul subcommands and run `consul` as the correct user and that subcommand. For example, you can excecute `docker run consul members` and it will run the `consul members` using the container. The adds some special configration options as detailed in the sections below when running the `agent` subcommand. Any other command gets `exec`-ed inside the container under `dumb-init`.
 
--	`dev` yields a fully in-memory Consul server agent suitable for development (this is the default if you run the container with no arguments)
--	`client` yields a Consul agent in client mode
--	`server` yields a Consul agent in server mode
--	any other command gets `exec`-ed inside the container under `dumb-init`
+The container exposes `VOLUME /consul/data`, which is a path were Consul will place its persisted state. This isn't used in any way when running in development mode. For client agents, this stores some information about the cluster and the client's health checks, in case the container is restarted. For server agents, this stores the client information plus snapshots and data related to the consensus algorithm and Consul's catalog of services. For servers it is highly desirable to keep this volume's data around when restarting the containers to recover from outage scenarios.
 
-The container exposes `VOLUME /consul/data`, which is a path were Consul will place its persisted state. This isn't used in any way when running in the `dev` configuration. For client agents, this stores some information about the cluster and the client's health checks, in case the container is restarted. For server agents, this stores the client information plus snapshots and data related to the consensus algorithm and Consul's catalog of services. For servers it is highly desirable to keep this volume's data around when restarting the containers to recover from outage scenarios.
-
-Additionally, these entry points run consul with two [configuration directories](https://www.consul.io/docs/agent/options.html#_config_dir). There's a common directory `/consul/config/local` as well as one specific to client or server mode (`/consul/config/client` and `/consul/config/server`). The mode-specific directories contain files that are shipped with the container and provide good default options suggested by HashiCorp. You can override any of these settings by composing a new container or binding a volume to `/consul/config/local`, which is loaded last when starting up. Alternatively, when binding a volume is not an option, e.g. when runnning Consul as a Nomad job, configuration can be added by passing the configuration JSON via environment variable `CONSUL_LOCAL_CONFIG`.
+The container has a Consul configuration directory set up at `/consul/config` and the agent will load any configuration files placed here by binding a volume or by composing a new image and adding files. Alternatively, configuration can be added by passing the configuration JSON via environment variable `CONSUL_LOCAL_CONFIG`.
 
 Since Consul is almost always run with `--net=host` in Docker, some care is required when configuring Consul's IP addresses. Consul has the concept of its cluster address as well as its client address. The cluster address is the address at which other Consul agents may contact a given agent. The client address is the address where other processes on the host contact Consul in order to make HTTP or DNS requests. You will typically need to tell Consul what its cluster address is when starting so that it binds to the correct interface and advertises a workable interface to the rest of the Consul agents. You'll see this in the examples below as the `-bind=<external ip>` argument to Consul.
 
@@ -43,15 +38,15 @@ The entry point also includes a small utility to look up a client or bind addres
 ## Running Consul for Development
 
 ```console
-$ docker run hashicorp/consul
+$ docker run consul
 ```
 
 This runs a completely in-memory Consul server agent with default bridge networking and no services exposed on the host, which is useful for development but should not be used in production. For example, if that server is running at internal address 172.17.0.2, you can run a three node cluster for development by starting up two more instances and telling them to join the first node.
 
 ```console
-$ docker run -d hashicorp/consul dev -join=172.17.0.2
+$ docker run -d consul agent -dev -join=172.17.0.2
 ... server 2 starts
-$ docker run -d hashicorp/consul dev -join=172.17.0.2
+$ docker run -d consul agent -dev -join=172.17.0.2
 ... server 3 starts
 ```
 
@@ -68,12 +63,12 @@ c9caabfd4c2a  172.17.0.2:8301  alive   server  0.6.3  2         dc1
 
 Remember that Consul doesn't use the data volume in this mode - once the container stops all of your state will be wiped out, so please don't use this mode for production. Running completely on the bridge network with the development server is useful for testing multiple instances of Consul on a single machine, which is normally difficult to do because of port conflicts.
 
-The dev entry point also starts a version of Consul's web UI on port 8500. This can be added to the other Consul configurations by supplying the `-ui` option to Consul on the command line. The web assets are bundled inside the Consul binary in the container.
+Development mode also starts a version of Consul's web UI on port 8500. This can be added to the other Consul configurations by supplying the `-ui` option to Consul on the command line. The web assets are bundled inside the Consul binary in the container.
 
 ## Running Consul Agent in Client Mode
 
 ```console
-$  docker run -d --net=host consul client -bind=<external ip> -retry-join=<root agent ip>
+$  docker run -e 'CONSUL_LOCAL_CONFIG={"leave_on_terminate": true}' -d --net=host consul agent -bind=<external ip> -retry-join=<root agent ip>
 ==> Starting Consul agent...
 ==> Starting Consul agent RPC...
 ==> Consul agent running!
@@ -91,7 +86,9 @@ This runs a Consul client agent sharing the host's network and advertising the e
 
 The `-retry-join` parameter specifies the external IP of one other agent in the cluster to use to join at startup. There are several ways to control how an agent joins the cluster, see the [agent configuration](https://www.consul.io/docs/agent/options.html) guide for more details on the `-join`, `-retry-join`, and `-atlas-join` options.
 
-At startup, the agent will read config JSON files from `/consul/config/client` then `/consul/config/local`. Data will be persisted in the `/consul/data` volume.
+Note also we've set [`leave_on_terminate`](https://www.consul.io/docs/agent/options.html#leave_on_terminate) using the `CONSUL_LOCAL_CONFIG` environment variable. This is recommended for clients since they should usually be removed from the cluster when the Consul agent terminates.
+
+At startup, the agent will read config JSON files from `/consul/config`. Data will be persisted in the `/consul/data` volume.
 
 Here are some example queries on a host with an external IP of 66.175.220.234:
 
@@ -126,7 +123,7 @@ consul.service.consul.  0       IN      A       66.175.220.234
 If you want to expose the Consul interfaces to other containers via a different network, such as the bridge network, use the `-client` option for Consul:
 
 ```console
-docker run -d --net=host consul client -bind=<external ip> -client=<bridge ip> -retry-join=<root agent ip>
+docker run -d --net=host consul agent -bind=<external ip> -client=<bridge ip> -retry-join=<root agent ip>
 ==> Starting Consul agent...
 ==> Starting Consul agent RPC...
 ==> Consul agent running!
@@ -145,14 +142,16 @@ With this configuration, Consul's client interfaces will be bound to the bridge 
 ## Running Consul Agent in Server Mode
 
 ```console
-$ docker run -d --net=host consul server -bind=<external ip> -retry-join=<root agent ip> -bootstrap-expect=<number of server agents>
+$ docker run -e 'CONSUL_LOCAL_CONFIG={"skip_leave_on_interrupt": true}' -d --net=host consul agent -server -bind=<external ip> -retry-join=<root agent ip> -bootstrap-expect=<number of server agents>
 ```
 
 This runs a Consul server agent sharing the host's network. All of the network considerations and behavior we covered above for the client agent also apply to the server agent. A single server on its own won't be able to form a quorum and will be waiting for other servers to join.
 
 Just like the client agent, the `-retry-join` parameter specifies the external IP of one other agent in the cluster to use to join at startup. There are several ways to control how an agent joins the cluster, see the [agent configuration](https://www.consul.io/docs/agent/options.html) guide for more details on the `-join`, `-retry-join`, and `-atlas-join` options. The server agent also consumes a `-bootstrap-expect` option that specifies how many server agents to watch for before bootstrapping the cluster for the first time. This provides an easy way to get an orderly startup with a new cluster. See the [agent configuration](https://www.consul.io/docs/agent/options.html) guide for more details on the `-bootstrap` and `-bootstrap-expect` options.
 
-At startup, the agent will read config JSON files from `/consul/config/server` then `/consul/config/local`. Data will be persisted in the `/consul/data` volume.
+Note also we've set [`skip_leave_on_interrupt`](https://www.consul.io/docs/agent/options.html#skip_leave_on_interrupt) using the `CONSUL_LOCAL_CONFIG` environment variable. This is recommended for servers to and will be defaulted to `true` in Consul 0.7 and later.
+
+At startup, the agent will read config JSON files from `/consul/config`. Data will be persisted in the `/consul/data` volume.
 
 Once the cluster is bootstrapped and quorum is achieved, you must use care to try to keep the minimum number of servers operating in order to avoid an outage state for the cluster. The deployment table in the [consensus](https://www.consul.io/docs/internals/consensus.html) guide outlines the number of servers required for different configurations. There's also an [adding/removing servers](https://www.consul.io/docs/guides/servers.html) guide that describes that process, which is relevant to Docker configurations as well. The [outage recovery](https://www.consul.io/docs/guides/outage.html) guide has steps to perform if servers are permanently lost. In general it's best to restart or replace servers one at a time, making sure servers are healthy before proceeding to the next server.
 
@@ -161,7 +160,7 @@ Once the cluster is bootstrapped and quorum is achieved, you must use care to tr
 By default the dev, client, and server modes started by the endpoint will expose Consul's DNS server on port 8600. Because this is cumbersome to configure with facilities like `resolv.conf`, you may want to expose DNS on port 53 using port arguments on your run command:
 
 ```console
-$ docker run --net=host -p 53:8600/tcp -p 53:8600/udp hashicorp/consul
+$ docker run --net=host -p 53:8600/tcp -p 53:8600/udp consul
 ```
 
 If you are binding Consul's client interfaces to the host's loopback address, then you should be able to configure your host's `resolv.conf` to route DNS requests to Consul by including "127.0.0.1" as the primary DNS server. This would expose Consul's DNS to all applications running on the host, but due to Docker's built-in DNS server, you can't point to this directly from inside your containers; Docker will issue an error message if you attempt to do this. You must configure Consul to listen on a non-localhost address that is reachable from within other containers.
@@ -169,7 +168,7 @@ If you are binding Consul's client interfaces to the host's loopback address, th
 Once you bind Consul's client interfaces to the bridge or other network, you can use the `--dns` option in your *other containers* in order for them to use Consul's DNS server, mapped to port 53. Here's an example:
 
 ```console
-$ docker run -d --net=host -p 53:8600/tcp -p 53:8600/udp consul client -bind=<bridge ip>
+$ docker run -d --net=host -p 53:8600/tcp -p 53:8600/udp consul agent -bind=<bridge ip>
 ```
 
 Now start another container and point it at Consul's DNS, using the bridge address of the host:
@@ -195,7 +194,7 @@ Another option is the open source [Registrator](http://gliderlabs.com/registrato
 Run a development Consul server:
 
 ```console
-$ docker run -d --net=host hashicorp/consul dev -bind=66.175.220.234 # <- use your own external IP
+$ docker run -d --net=host consul agent -dev -bind=66.175.220.234 # <- use your own external IP
 ```
 
 Now start a companion Registrator instance:
