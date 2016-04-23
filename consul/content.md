@@ -189,73 +189,7 @@ There are several approaches you can use to register services running in contain
 
 If you run your containers under [HashiCorp's Nomad](https://www.nomadproject.io/) scheduler, it has [first class support for Consul](https://www.nomadproject.io/docs/jobspec/servicediscovery.html). The Nomad agent runs on each host alongside the Consul agent. When jobs are scheduled on a given host, the Nomad agent automatically takes care of syncing the Consul agent with the service information. This is very easy to manage, and even services on hosts running outside of Docker containers can be managed by Nomad and registered with Consul. You can find out more about running Docker under Nomad in the [Docker Driver](https://www.nomadproject.io/docs/drivers/docker.html) guide.
 
-Another option is the open source [Registrator](http://gliderlabs.com/registrator/latest/) project from Glider Labs. Registrator works by running a Registrator instance on each host, alongside the Consul agent. Registrator monitors the Docker daemon for container stop and start events, and handles service registration with Consul using the container names and exposed ports as the service information. Here's a complete example.
-
-Run a development Consul server:
-
-```console
-$ docker run -d --net=host consul agent -dev -bind=66.175.220.234 # <- use your own external IP
-```
-
-Now start a companion Registrator instance:
-
-```console
-$ docker run -d --net=host --volume=/var/run/docker.sock:/tmp/docker.sock gliderlabs/registrator:latest consul://localhost:8500
-```
-
-Now run some services:
-
-```console
-$ docker run -d -P redis
-$ docker run -d -P redis
-$ docker run -d -P redis
-```
-
-And query for them using Consul's API:
-
-```console
-$ curl http://localhost:8500/v1/catalog/service/redis?pretty
-[
-    {
-        "Node": "linode",
-        "Address": "66.175.220.234",
-        "ServiceID": "linode:boring_noyce:6379",
-        "ServiceName": "redis",
-        "ServiceTags": [],
-        "ServiceAddress": "66.175.220.234",
-        "ServicePort": 32775,
-        "ServiceEnableTagOverride": false,
-        "CreateIndex": 8,
-        "ModifyIndex": 8
-    },
-    {
-        "Node": "linode",
-        "Address": "66.175.220.234",
-        "ServiceID": "linode:kickass_swartz:6379",
-        "ServiceName": "redis",
-        "ServiceTags": [],
-        "ServiceAddress": "66.175.220.234",
-        "ServicePort": 32776,
-        "ServiceEnableTagOverride": false,
-        "CreateIndex": 7,
-        "ModifyIndex": 7
-    },
-    {
-        "Node": "linode",
-        "Address": "66.175.220.234",
-        "ServiceID": "linode:sick_euclid:6379",
-        "ServiceName": "redis",
-        "ServiceTags": [],
-        "ServiceAddress": "66.175.220.234",
-        "ServicePort": 32777,
-        "ServiceEnableTagOverride": false,
-        "CreateIndex": 6,
-        "ModifyIndex": 6
-    }
-]
-```
-
-Note that in the example above that the service address is the same as the external address of the host, and that the service ports are the mapped ports exposed on the host (32775, 32776, 32777). There are configuration options that control which IP and port Registrator gives to Consul, which may need to be adjusted depending on your network configuration. See Registrator's [Run Reference](http://gliderlabs.com/registrator/latest/user/run/) for more details.
+Other open source options include [Registrator](http://gliderlabs.com/registrator/latest/) from Glider Labs and [ContainerPilot](https://www.joyent.com/containerpilot) from Joyent. Registrator works by running a Registrator instance on each host, alongside the Consul agent. Registrator monitors the Docker daemon for container stop and start events, and handles service registration with Consul using the container names and exposed ports as the service information. ContainerPilot manages service registration using tooling running inside the container to register services with Consul on start, manage a Consul TTL health check while running, and deregister services when the container stops.
 
 ## Running Health Checks in Docker Containers
 
