@@ -143,3 +143,11 @@ If there is no database initialized when the container starts, then a default da
 ## Usage against an existing database
 
 If you start your `%%REPO%%` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), the `$MYSQL_ROOT_PASSWORD` variable should be omitted from the run command line; it will in any case be ignored, and the pre-existing database will not be changed in any way.
+
+## Creating database dumps
+
+Most of the normal tools will work, although their usage might be a little convoluted in some cases to ensure they have access to the `mysqld` server. A simple way to ensure this is to use `docker exec` and run the tool from the same container, similar to the following:
+
+```console
+$ docker exec some-%%REPO%% sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
+```
