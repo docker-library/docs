@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20160330`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/028503f527c77921a3eff88216f57025cc611869/precise/Dockerfile)
--	[`14.04.4`, `14.04`, `trusty-20160412`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/028503f527c77921a3eff88216f57025cc611869/trusty/Dockerfile)
--	[`15.10`, `wily-20160329`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/028503f527c77921a3eff88216f57025cc611869/wily/Dockerfile)
--	[`16.04`, `xenial-20160331.1`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/028503f527c77921a3eff88216f57025cc611869/xenial/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise-20160425`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/0aeadd4fc54b3624e147e8e11896bf66ddba79ce/precise/Dockerfile)
+-	[`14.04.4`, `14.04`, `trusty-20160424`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/0aeadd4fc54b3624e147e8e11896bf66ddba79ce/trusty/Dockerfile)
+-	[`15.10`, `wily-20160424`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/0aeadd4fc54b3624e147e8e11896bf66ddba79ce/wily/Dockerfile)
+-	[`16.04`, `xenial-20160422`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/0aeadd4fc54b3624e147e8e11896bf66ddba79ce/xenial/Dockerfile)
 
 [![](https://badge.imagelayers.io/ubuntu:latest.svg)](https://imagelayers.io/?images=ubuntu:12.04.5,ubuntu:14.04.4,ubuntu:15.10,ubuntu:16.04)
 
