@@ -27,7 +27,7 @@ cat <<EOREADME
 
 This is the Git repo of the Docker [official image](https://docs.docker.com/docker-hub/official_repos/) for [$repo]($hubPage). See [the Docker Hub page]($hubPage) for the full readme on how to use this Docker image and for information regarding contributing and issues.
 
-The full readme is generated over in [docker-library/docs]($gitRepo), specificially in [docker-library/docs/$repo]($gitRepo/tree/master/$repo).
+The full readme is generated over in [docker-library/docs]($gitRepo), specifically in [docker-library/docs/$repo]($gitRepo/tree/master/$repo).
 
 See a change merged here that doesn't show up on the Docker Hub yet? Check [the "library/$repo" manifest file in the docker-library/official-images repo](https://github.com/docker-library/official-images/blob/master/library/$repo), especially [PRs with the "library/$repo" label on that repo](https://github.com/docker-library/official-images/labels/library%2F$repo). For more information about the official images process, see the [docker-library/official-images readme](https://github.com/docker-library/official-images/blob/master/README.md).
 
