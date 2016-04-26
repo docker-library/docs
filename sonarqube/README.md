@@ -1,9 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.4` (*5.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/442f950dae232fca8e1e919e017270971cee46f6/5.4/Dockerfile)
--	[`lts`, `4.5.7` (*4.5.7/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f8baccb64f41ca126781db6a700d738d004fd0b0/4.5.7/Dockerfile)
+-	[`latest`, `5.4` (*5.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/0de6481da3d5e8cf41ee7aa67738ef07a5b6f6b0/5.4/Dockerfile)
+-	[`5.4-alpine` (*5.4-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/0de6481da3d5e8cf41ee7aa67738ef07a5b6f6b0/5.4-alpine/Dockerfile)
+-	[`lts`, `4.5.7` (*4.5.7/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/0de6481da3d5e8cf41ee7aa67738ef07a5b6f6b0/4.5.7/Dockerfile)
+-	[`4.5.7-alpine` (*4.5.7-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/0de6481da3d5e8cf41ee7aa67738ef07a5b6f6b0/4.5.7-alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:lts)
+[![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:5.4-alpine,sonarqube:lts,sonarqube:4.5.7-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsonarqube).
 
