@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.30.48`, `0.30`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/85c54b48ae936d6780668334a677b4872b88b1b7/Dockerfile)
+-	[`0.30.52`, `0.30`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/29af701d8819388a68ded20c3f750287536826ca/Dockerfile)
 
-[![](https://badge.imagelayers.io/mongo-express:latest.svg)](https://imagelayers.io/?images=mongo-express:0.30.48)
+[![](https://badge.imagelayers.io/mongo-express:latest.svg)](https://imagelayers.io/?images=mongo-express:0.30.52)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo-express`)](https://github.com/docker-library/official-images/blob/master/library/mongo-express). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express).
 
