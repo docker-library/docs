@@ -1,23 +1,27 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.10.44`, `0.10` (*0.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.10/Dockerfile)
+-	[`0.10.44`, `0.10` (*0.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/0.10/Dockerfile)
 -	[`0.10.44-onbuild`, `0.10-onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f8deeccd5355c2c275b856ab1d3eb9b85caa7d4c/0.10/onbuild/Dockerfile)
--	[`0.10.44-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.10/slim/Dockerfile)
--	[`0.10.44-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.10/wheezy/Dockerfile)
--	[`0.12.13`, `0.12`, `0` (*0.12/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.12/Dockerfile)
+-	[`0.10.44-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/0.10/slim/Dockerfile)
+-	[`0.10.44-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/0.10/wheezy/Dockerfile)
+-	[`0.12.13`, `0.12`, `0` (*0.12/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/0.12/Dockerfile)
 -	[`0.12.13-onbuild`, `0.12-onbuild`, `0-onbuild` (*0.12/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/c02fde07144b8dffb00b4897a1923cf1b685b7a7/0.12/onbuild/Dockerfile)
--	[`0.12.13-slim`, `0.12-slim`, `0-slim` (*0.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.12/slim/Dockerfile)
--	[`0.12.13-wheezy`, `0.12-wheezy`, `0-wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/0.12/wheezy/Dockerfile)
--	[`4.4.3`, `4.4`, `4`, `argon` (*4.4/Dockerfile*)](https://github.com/nodejs/docker-node/blob/41b505ae714328f28a3457df9098d1e8db88a81a/4.4/Dockerfile)
+-	[`0.12.13-slim`, `0.12-slim`, `0-slim` (*0.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/0.12/slim/Dockerfile)
+-	[`0.12.13-wheezy`, `0.12-wheezy`, `0-wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/0.12/wheezy/Dockerfile)
+-	[`4.4.3`, `4.4`, `4`, `argon` (*4.4/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/4.4/Dockerfile)
 -	[`4.4.3-onbuild`, `4.4-onbuild`, `4-onbuild`, `argon-onbuild` (*4.4/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/41b505ae714328f28a3457df9098d1e8db88a81a/4.4/onbuild/Dockerfile)
--	[`4.4.3-slim`, `4.4-slim`, `4-slim`, `argon-slim` (*4.4/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/41b505ae714328f28a3457df9098d1e8db88a81a/4.4/slim/Dockerfile)
--	[`4.4.3-wheezy`, `4.4-wheezy`, `4-wheezy`, `argon-wheezy` (*4.4/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/41b505ae714328f28a3457df9098d1e8db88a81a/4.4/wheezy/Dockerfile)
--	[`5.11.0`, `5.11` (*5.11/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/5.11/Dockerfile)
+-	[`4.4.3-slim`, `4.4-slim`, `4-slim`, `argon-slim` (*4.4/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/4.4/slim/Dockerfile)
+-	[`4.4.3-wheezy`, `4.4-wheezy`, `4-wheezy`, `argon-wheezy` (*4.4/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/4.4/wheezy/Dockerfile)
+-	[`5.11.0`, `5.11` (*5.11/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/5.11/Dockerfile)
 -	[`5.11.0-onbuild`, `5.11-onbuild` (*5.11/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/5.11/onbuild/Dockerfile)
--	[`5.11.0-slim`, `5.11-slim` (*5.11/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/5.11/slim/Dockerfile)
--	[`5.11.0-wheezy`, `5.11-wheezy` (*5.11/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5e6d1e950a50f59c74ba7e53357d97e2ff5449d5/5.11/wheezy/Dockerfile)
+-	[`5.11.0-slim`, `5.11-slim` (*5.11/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/5.11/slim/Dockerfile)
+-	[`5.11.0-wheezy`, `5.11-wheezy` (*5.11/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b3367b8845a0a059af00d75d401ecf83d8e57d57/5.11/wheezy/Dockerfile)
+-	[`6.0.0`, `6.0`, `6`, `latest` (*6.0/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5367524ce658e9a9d4ba6191801e86d6e942a16a/6.0/Dockerfile)
+-	[`6.0.0-onbuild`, `6.0-onbuild`, `6-onbuild`, `onbuild` (*6.0/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5367524ce658e9a9d4ba6191801e86d6e942a16a/6.0/onbuild/Dockerfile)
+-	[`6.0.0-slim`, `6.0-slim`, `6-slim`, `slim` (*6.0/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5367524ce658e9a9d4ba6191801e86d6e942a16a/6.0/slim/Dockerfile)
+-	[`6.0.0-wheezy`, `6.0-wheezy`, `6-wheezy`, `wheezy` (*6.0/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5367524ce658e9a9d4ba6191801e86d6e942a16a/6.0/wheezy/Dockerfile)
 
-[![](https://badge.imagelayers.io/node:0.10.44.svg)](https://imagelayers.io/?images=node:0.10.44,node:0.10.44-onbuild,node:0.10.44-slim,node:0.10.44-wheezy,node:0.12.13,node:0.12.13-onbuild,node:0.12.13-slim,node:0.12.13-wheezy,node:4.4.3,node:4.4.3-onbuild,node:4.4.3-slim,node:4.4.3-wheezy,node:5.11.0,node:5.11.0-onbuild,node:5.11.0-slim,node:5.11.0-wheezy)
+[![](https://badge.imagelayers.io/node:latest.svg)](https://imagelayers.io/?images=node:0.10.44,node:0.10.44-onbuild,node:0.10.44-slim,node:0.10.44-wheezy,node:0.12.13,node:0.12.13-onbuild,node:0.12.13-slim,node:0.12.13-wheezy,node:4.4.3,node:4.4.3-onbuild,node:4.4.3-slim,node:4.4.3-wheezy,node:5.11.0,node:5.11.0-onbuild,node:5.11.0-slim,node:5.11.0-wheezy,node:6.0.0,node:6.0.0-onbuild,node:6.0.0-slim,node:6.0.0-wheezy)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
 
@@ -63,6 +67,26 @@ For many simple, single file projects, you may find it inconvenient to write a c
 ```console
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/app -w /usr/src/app node:4 node your-daemon-or-script.js
 ```
+
+# Image Variants
+
+The `node` images come in many flavors, each designed for a specific use case.
+
+## `node:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `node:onbuild`
+
+This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM node:onbuild` will be enough to create a stand-alone image for your project.
+
+While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
+
+Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
+
+## `node:slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the node image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
