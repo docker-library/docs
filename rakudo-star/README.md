@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2016.01`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/68589fca92aaad50e7beb3da100e399ad41df17e/Dockerfile)
+-	[`2016.04`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/6a58fb273b193a2d497db8e4108e7e95603dde68/Dockerfile)
 
-[![](https://badge.imagelayers.io/rakudo-star:latest.svg)](https://imagelayers.io/?images=rakudo-star:2016.01)
+[![](https://badge.imagelayers.io/rakudo-star:latest.svg)](https://imagelayers.io/?images=rakudo-star:2016.04)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frakudo-star).
 
