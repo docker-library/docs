@@ -2,6 +2,7 @@
 
 # Tags of `erlang`
 
+-	[`erlang:18.3.2`](#erlang1832)
 -	[`erlang:18.3`](#erlang183)
 -	[`erlang:18`](#erlang18)
 -	[`erlang:latest`](#erlanglatest)
@@ -16,6 +17,10 @@
 -	[`erlang:17`](#erlang17)
 -	[`erlang:17.5-slim`](#erlang175-slim)
 -	[`erlang:17-slim`](#erlang17-slim)
+
+## `erlang:18.3.2`
+
+**does not exist** (yet?)
 
 ## `erlang:18.3`
 
