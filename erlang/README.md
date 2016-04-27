@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`18.3`, `18`, `latest` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/51abbae231cf3f666d0c4d2a41568a57153443cc/18/Dockerfile)
--	[`18.3-slim`, `18-slim`, `slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/51abbae231cf3f666d0c4d2a41568a57153443cc/18/slim/Dockerfile)
--	[`18.3-onbuild`, `18-onbuild`, `onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/51abbae231cf3f666d0c4d2a41568a57153443cc/18/onbuild/Dockerfile)
+-	[`18.3.2`, `18.3`, `18`, `latest` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a9f5121f34deb30cc61e21f0370aa8f16723aa14/18/Dockerfile)
+-	[`18.3-slim`, `18-slim`, `slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a9f5121f34deb30cc61e21f0370aa8f16723aa14/18/slim/Dockerfile)
+-	[`18.3-onbuild`, `18-onbuild`, `onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a9f5121f34deb30cc61e21f0370aa8f16723aa14/18/onbuild/Dockerfile)
 -	[`17.5.6.8`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/Dockerfile)
 -	[`17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/slim/Dockerfile)
 
-[![](https://badge.imagelayers.io/erlang:latest.svg)](https://imagelayers.io/?images=erlang:18.3,erlang:18.3-slim,erlang:18.3-onbuild,erlang:17.5.6.8,erlang:17.5-slim)
+[![](https://badge.imagelayers.io/erlang:latest.svg)](https://imagelayers.io/?images=erlang:18.3.2,erlang:18.3-slim,erlang:18.3-onbuild,erlang:17.5.6.8,erlang:17.5-slim)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/erlang`)](https://github.com/docker-library/official-images/blob/master/library/erlang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ferlang).
 
