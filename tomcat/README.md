@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.45-jre7`, `6.0-jre7`, `6-jre7`, `6.0.45`, `6.0`, `6` (*6/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/6/jre7/Dockerfile)
--	[`6.0.45-jre8`, `6.0-jre8`, `6-jre8` (*6/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/6/jre8/Dockerfile)
--	[`7.0.69-jre7`, `7.0-jre7`, `7-jre7`, `7.0.69`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/984d958106aebab3f124f616277a2512da4d4a9f/7/jre7/Dockerfile)
--	[`7.0.69-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/984d958106aebab3f124f616277a2512da4d4a9f/7/jre8/Dockerfile)
--	[`8.0.33-jre7`, `8.0-jre7`, `8-jre7`, `8.0.33`, `8.0`, `8`, `latest` (*8.0/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/8.0/jre7/Dockerfile)
--	[`8.0.33-jre8`, `8.0-jre8`, `8-jre8` (*8.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/8.0/jre8/Dockerfile)
--	[`8.5.0-jre8`, `8.5-jre8`, `8.5.0`, `8.5` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/82551c9d60c48d35a68b8eb2cc069913be9078ae/8.5/jre8/Dockerfile)
--	[`9.0.0.M4-jre8`, `9.0.0-jre8`, `9.0-jre8`, `9-jre8`, `9.0.0.M4`, `9.0.0`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/92b97a945a2241f868a91d2919e0e7e3f5c84216/9.0/jre8/Dockerfile)
+-	[`6.0.45-jre7`, `6.0-jre7`, `6-jre7`, `6.0.45`, `6.0`, `6` (*6/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ec75141e3cb6276b07d66c16042152e2d4de119c/6/jre7/Dockerfile)
+-	[`6.0.45-jre8`, `6.0-jre8`, `6-jre8` (*6/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ec75141e3cb6276b07d66c16042152e2d4de119c/6/jre8/Dockerfile)
+-	[`7.0.69-jre7`, `7.0-jre7`, `7-jre7`, `7.0.69`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ec75141e3cb6276b07d66c16042152e2d4de119c/7/jre7/Dockerfile)
+-	[`7.0.69-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ec75141e3cb6276b07d66c16042152e2d4de119c/7/jre8/Dockerfile)
+-	[`8.0.33-jre7`, `8.0-jre7`, `8-jre7`, `8.0.33`, `8.0`, `8`, `latest` (*8.0/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ec75141e3cb6276b07d66c16042152e2d4de119c/8.0/jre7/Dockerfile)
+-	[`8.0.33-jre8`, `8.0-jre8`, `8-jre8` (*8.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ec75141e3cb6276b07d66c16042152e2d4de119c/8.0/jre8/Dockerfile)
+-	[`8.5.0-jre8`, `8.5-jre8`, `8.5.0`, `8.5` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ec75141e3cb6276b07d66c16042152e2d4de119c/8.5/jre8/Dockerfile)
+-	[`9.0.0.M4-jre8`, `9.0.0-jre8`, `9.0-jre8`, `9-jre8`, `9.0.0.M4`, `9.0.0`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ec75141e3cb6276b07d66c16042152e2d4de119c/9.0/jre8/Dockerfile)
 
 [![](https://badge.imagelayers.io/tomcat:latest.svg)](https://imagelayers.io/?images=tomcat:6.0.45-jre7,tomcat:6.0.45-jre8,tomcat:7.0.69-jre7,tomcat:7.0.69-jre8,tomcat:8.0.33-jre7,tomcat:8.0.33-jre8,tomcat:8.5.0-jre8,tomcat:9.0.0.M4-jre8)
 
