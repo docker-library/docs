@@ -52,7 +52,7 @@ View [license information](https://github.com/rakudo/star/blob/master/LICENSE) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
