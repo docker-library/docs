@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1`, `1.9`, `1.9.14` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/mainline/jessie/Dockerfile)
--	[`stable`, `1.8`, `1.8.1` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/stable/jessie/Dockerfile)
--	[`mainline-alpine`, `alpine`, `1-alpine`, `1.9-alpine`, `1.9.14-alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/mainline/alpine/Dockerfile)
--	[`stable-alpine`, `1.8-alpine`, `1.8.1-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/19799fa644461ed6c5ea07c0bc0ea0cc277c2d77/stable/alpine/Dockerfile)
+-	[`latest`, `1`, `1.9`, `1.9.15` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/41aa13f7d2c24407e483c40fb1e8b33e73462ff1/mainline/jessie/Dockerfile)
+-	[`stable`, `1.10`, `1.10.0` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/41aa13f7d2c24407e483c40fb1e8b33e73462ff1/stable/jessie/Dockerfile)
+-	[`mainline-alpine`, `alpine`, `1-alpine`, `1.9-alpine`, `1.9.15-alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/41aa13f7d2c24407e483c40fb1e8b33e73462ff1/mainline/alpine/Dockerfile)
+-	[`stable-alpine`, `1.10-alpine`, `1.10.0-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/41aa13f7d2c24407e483c40fb1e8b33e73462ff1/stable/alpine/Dockerfile)
 
 [![](https://badge.imagelayers.io/nginx:latest.svg)](https://imagelayers.io/?images=nginx:latest,nginx:stable,nginx:mainline-alpine,nginx:stable-alpine)
 
