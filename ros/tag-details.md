@@ -1532,7 +1532,7 @@ RUN apt-get update && apt-get install -y\
 ## `ros:latest`
 
 ```console
-$ docker pull library/ros@sha256:04fde295904aed0f971f491e96b77a6623d829ff16cbff527b4a5c075d4dd744
+$ docker pull library/ros@sha256:e1c7c1bc0bd624fdc21a6c9faa080d23f7c9a5d12aeffc2813321c9a6689c2b1
 ```
 
 -	Total Virtual Size: 0.0 B
@@ -1773,7 +1773,7 @@ RUN ["\/bin\/sh -c #(nop) MAINTAINER Dirk Thomas dthomas+buildfarm@osrfoundation
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2281903b43b5b2c1b24bb18e4d9da69fad906cc48c3fa62fb97d2b22698cb0e5`
+#### `df2119d3cfdf509af46acb0f03e3dfe9b8bdb99501df4ea167ec335faaca9208`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y\

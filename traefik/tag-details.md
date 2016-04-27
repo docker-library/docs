@@ -141,63 +141,60 @@ ENTRYPOINT &{["/traefik"]}
 ## `traefik:latest`
 
 ```console
-$ docker pull library/traefik@sha256:bc3a025c8c4a292bcf642dcd24579083072d247a652ddce8fb87bec8fb2a7beb
+$ docker pull library/traefik@sha256:e3e467f0011dcc1a4ee637c2d40b013e6a3969574ce99c11311a9d10ab2dbf16
 ```
 
--	Total Virtual Size: 23.4 MB (23405164 bytes)
+-	Total Virtual Size: 0.0 B
 -	Total v2 Content-Length: 7.4 MB (7415626 bytes)
 
 ### Layers (4)
 
-#### `280d755803e74a1b55b1fe8be9cca392d8266d95d3c659efda19b755cf4453ac`
+#### `1022a12787a5f3bab8da86380e6a94bce85fb24d3cb468e53f24e8de62e9d170`
 
 ```dockerfile
-COPY file:23e6fe341373e984b92263e000192b43c7817984ad428583aaedc3fa2cf3c0ef in /etc/ssl/certs/
+RUN ["\/bin\/sh -c #(nop) COPY file:23e6fe341373e984b92263e000192b43c7817984ad428583aaedc3fa2cf3c0ef in \/etc\/ssl\/certs\/"]
 ```
 
 -	Created: Wed, 06 Apr 2016 18:19:37 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 274.3 KB (274340 bytes)
+-	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e8a19fd62f0353c24857e223498bd5ab2d4c7a3388453374a60d955960e2c373`
 -	v2 Content-Length: 153.8 KB (153805 bytes)
 -	v2 Last-Modified: Wed, 06 Apr 2016 18:20:11 GMT
 
-#### `33978871bf6b2fcea77b3f33f0c69125c4e0fdafae573a44e5c97528a2f0de0a`
+#### `3dacaa591d1e9278320058f5e4eddc334c3107fe17b50998f96b6e5f093a6fe6`
 
 ```dockerfile
-COPY file:872c15b203c8843e1cca18bde8e3d69e83cb14d40d0935ad776b341ba76daf3e in /
+RUN ["\/bin\/sh -c #(nop) COPY file:872c15b203c8843e1cca18bde8e3d69e83cb14d40d0935ad776b341ba76daf3e in \/"]
 ```
 
 -	Created: Tue, 12 Apr 2016 22:26:09 GMT
--	Parent Layer: `280d755803e74a1b55b1fe8be9cca392d8266d95d3c659efda19b755cf4453ac`
--	Docker Version: 1.9.1
--	Virtual Size: 23.1 MB (23130824 bytes)
+-	Parent Layer: `1022a12787a5f3bab8da86380e6a94bce85fb24d3cb468e53f24e8de62e9d170`
+-	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:86e06894695b71bbde309a1ff36a184e67fed2ee0a95f4352a5585e6db816999`
 -	v2 Content-Length: 7.3 MB (7261757 bytes)
 -	v2 Last-Modified: Tue, 12 Apr 2016 22:27:41 GMT
 
-#### `1717c89aa30d25803224c54353434308cc6a7b9b1c20abc8c7a365450600d150`
+#### `8b3de70e4d861321240a5bf7c55c9b6f629a431c047a255a83bbf65b7d482184`
 
 ```dockerfile
-EXPOSE 80/tcp
+RUN ["\/bin\/sh -c #(nop) EXPOSE 80\/tcp"]
 ```
 
 -	Created: Tue, 12 Apr 2016 22:26:10 GMT
--	Parent Layer: `33978871bf6b2fcea77b3f33f0c69125c4e0fdafae573a44e5c97528a2f0de0a`
--	Docker Version: 1.9.1
+-	Parent Layer: `3dacaa591d1e9278320058f5e4eddc334c3107fe17b50998f96b6e5f093a6fe6`
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `afc5820c2390d8124351b8ae227e628e48eba239e2945aa7d4e5acbc394a8c3b`
+#### `5a317f8356c518e2e1299ec38a83d3d24581752a14b6328b5e25a77d55645479`
 
 ```dockerfile
 ENTRYPOINT &{["/traefik"]}
 ```
 
 -	Created: Tue, 12 Apr 2016 22:26:10 GMT
--	Parent Layer: `1717c89aa30d25803224c54353434308cc6a7b9b1c20abc8c7a365450600d150`
+-	Parent Layer: `8b3de70e4d861321240a5bf7c55c9b6f629a431c047a255a83bbf65b7d482184`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
