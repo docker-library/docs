@@ -21,12 +21,12 @@ Share images, automate workflows, and more with a free Docker Hub account:
  https://hub.docker.com
 
 For more examples and ideas, visit:
- https://docs.docker.com/userguide/
+ https://docs.docker.com/engine/userguide/
 
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  690ed74de00f  960 B
+hello-world  latest  94df4f0ce8a4  967 B
 ```
 
 %%LOGO%%
