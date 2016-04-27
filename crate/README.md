@@ -106,7 +106,7 @@ View [license information](https://github.com/crate/crate/blob/master/LICENSE.tx
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

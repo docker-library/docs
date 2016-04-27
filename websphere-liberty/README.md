@@ -139,7 +139,7 @@ Note: These licenses do not permit further distribution and that the terms for W
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.11.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
