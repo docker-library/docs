@@ -2,11 +2,11 @@
 
 -	[`4.8.5`, `4.8` (*4.8/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/4.8/Dockerfile)
 -	[`4.9.3`, `4.9`, `4` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/4.9/Dockerfile)
--	[`5.1.0`, `5.1` (*5.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/5.1/Dockerfile)
 -	[`5.2.0`, `5.2` (*5.2/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/5.2/Dockerfile)
--	[`5.3.0`, `5.3`, `5`, `latest` (*5.3/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/5.3/Dockerfile)
+-	[`5.3.0`, `5.3`, `5` (*5.3/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/5.3/Dockerfile)
+-	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/2f180f02a73a9a68a6a6e62d96c11acd65a01b7d/6.1/Dockerfile)
 
-[![](https://badge.imagelayers.io/gcc:latest.svg)](https://imagelayers.io/?images=gcc:4.8.5,gcc:4.9.3,gcc:5.1.0,gcc:5.2.0,gcc:5.3.0)
+[![](https://badge.imagelayers.io/gcc:latest.svg)](https://imagelayers.io/?images=gcc:4.8.5,gcc:4.9.3,gcc:5.2.0,gcc:5.3.0,gcc:6.1.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgcc).
 
