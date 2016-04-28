@@ -299,11 +299,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:jessie`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:bbf58af795c57a7daa524d0c47a1698c07daaa542ee72b483db58005ceace26c
+$ docker pull library/buildpack-deps@sha256:75cd35dcc83071fb11b963fe76de642e614533fe9ec5d717f22244cde576a25d
 ```
 
--	Total Virtual Size: 606.6 MB (606637535 bytes)
--	Total v2 Content-Length: 241.0 MB (240989851 bytes)
+-	Total Virtual Size: 609.7 MB (609729296 bytes)
+-	Total v2 Content-Length: 242.0 MB (242011841 bytes)
 
 ### Layers (5)
 
@@ -373,7 +373,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 42.5 MB (42489209 bytes)
 -	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
+#### `a1370c2260371519d664d9082a70c8a5379021eba68cc3e9bf909d79865e3f40`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -387,6 +387,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libbz2-dev \
 		libc6-dev \
 		libcurl4-openssl-dev \
+		libdb-dev \
 		libevent-dev \
 		libffi-dev \
 		libgeoip-dev \
@@ -414,22 +415,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Created: Wed, 27 Apr 2016 20:59:03 GMT
 -	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314747952 bytes)
--	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
--	v2 Content-Length: 128.6 MB (128630590 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
+-	Virtual Size: 317.8 MB (317839713 bytes)
+-	v2 Blob: `sha256:3e126ae08dbf83987e60b1beea6497654cc8ee79ed194a87688654a0f38df3ae`
+-	v2 Content-Length: 129.7 MB (129652580 bytes)
+-	v2 Last-Modified: Thu, 28 Apr 2016 03:36:23 GMT
 
 ## `buildpack-deps:latest`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:f5f474492c903fb086a503d51dc5f77683410159ba5d13c9aee4c3e151f9066d
+$ docker pull library/buildpack-deps@sha256:ecf37316e9b0930d92d01b150b227683d8cd76cb2c7ae9bc4541e83bb688cacf
 ```
 
--	Total Virtual Size: 606.6 MB (606637535 bytes)
--	Total v2 Content-Length: 241.0 MB (240989851 bytes)
+-	Total Virtual Size: 609.7 MB (609729296 bytes)
+-	Total v2 Content-Length: 242.0 MB (242011841 bytes)
 
 ### Layers (5)
 
@@ -499,7 +500,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 42.5 MB (42489209 bytes)
 -	v2 Last-Modified: Mon, 04 Apr 2016 22:19:37 GMT
 
-#### `fc94bd166fc4cd2bd0c53576bb60fb23e77d1f14aa71d752206647f4ee8fd546`
+#### `a1370c2260371519d664d9082a70c8a5379021eba68cc3e9bf909d79865e3f40`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -513,6 +514,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libbz2-dev \
 		libc6-dev \
 		libcurl4-openssl-dev \
+		libdb-dev \
 		libevent-dev \
 		libffi-dev \
 		libgeoip-dev \
@@ -540,13 +542,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 04 Apr 2016 22:11:25 GMT
+-	Created: Wed, 27 Apr 2016 20:59:03 GMT
 -	Parent Layer: `0c1214787a4a5139042e2552b6ba8fb9fe4552592c04ede39e594b9c641a7071`
 -	Docker Version: 1.9.1
--	Virtual Size: 314.7 MB (314747952 bytes)
--	v2 Blob: `sha256:9709ddcc4d246e16d2d02754c0fdffd29213d5e65926aeeb5900879b72aefa81`
--	v2 Content-Length: 128.6 MB (128630590 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:20:19 GMT
+-	Virtual Size: 317.8 MB (317839713 bytes)
+-	v2 Blob: `sha256:3e126ae08dbf83987e60b1beea6497654cc8ee79ed194a87688654a0f38df3ae`
+-	v2 Content-Length: 129.7 MB (129652580 bytes)
+-	v2 Last-Modified: Thu, 28 Apr 2016 03:36:23 GMT
 
 ## `buildpack-deps:precise-curl`
 
@@ -792,11 +794,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:precise`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:b72b4a013753f5621398f21de8f9b234bb59ef95a9e99a40b0c32688ad5c4228
+$ docker pull library/buildpack-deps@sha256:8d9a058705340d78d0fa15853074e432a4728e185ffb59cffd5e42bee9a48746
 ```
 
--	Total Virtual Size: 492.6 MB (492630231 bytes)
--	Total v2 Content-Length: 161.6 MB (161568724 bytes)
+-	Total Virtual Size: 495.3 MB (495304709 bytes)
+-	Total v2 Content-Length: 162.5 MB (162455977 bytes)
 
 ### Layers (8)
 
@@ -920,7 +922,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 30.8 MB (30846001 bytes)
 -	v2 Last-Modified: Mon, 25 Apr 2016 18:13:31 GMT
 
-#### `96b12b5bd43220155947be4ff6cd2dfb296718371bda845c61d83645c04cfbd5`
+#### `f1e1e409e60b8f06cf651b3fdeb2cfd7c9a9b16cba1a118fc7aeb9eee4c23735`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -934,6 +936,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libbz2-dev \
 		libc6-dev \
 		libcurl4-openssl-dev \
+		libdb-dev \
 		libevent-dev \
 		libffi-dev \
 		libgeoip-dev \
@@ -961,13 +964,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Apr 2016 18:06:55 GMT
+-	Created: Wed, 27 Apr 2016 21:00:13 GMT
 -	Parent Layer: `07642a40d34ac55f004b7f7bddeb90d4e26eb0dc09614d4f2e9b2a7a4084a46d`
 -	Docker Version: 1.9.1
--	Virtual Size: 248.2 MB (248224445 bytes)
--	v2 Blob: `sha256:7b1ab9f0b61db3f11d1239b99d1368bc37d582da183a4384fa5c5e097119d171`
--	v2 Content-Length: 81.3 MB (81269434 bytes)
--	v2 Last-Modified: Mon, 25 Apr 2016 18:15:10 GMT
+-	Virtual Size: 250.9 MB (250898923 bytes)
+-	v2 Blob: `sha256:5f78cf250ee3fc4cdaa0fcc835fb2a7ba3655b23c85c718f403ec861230b2937`
+-	v2 Content-Length: 82.2 MB (82156687 bytes)
+-	v2 Last-Modified: Thu, 28 Apr 2016 03:37:16 GMT
 
 ## `buildpack-deps:sid-curl`
 
@@ -1105,11 +1108,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:sid`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:9824a47813be80904fc90911dae83cc8c3113a46d348f795cb53a6974eece894
+$ docker pull library/buildpack-deps@sha256:9eb07b4f8f9177ade41abbaf30e027edbe8ef6c12d9001e221a1599a9a3e9fdc
 ```
 
--	Total Virtual Size: 1.0 GB (1043238577 bytes)
--	Total v2 Content-Length: 404.0 MB (403996721 bytes)
+-	Total Virtual Size: 982.1 MB (982074877 bytes)
+-	Total v2 Content-Length: 381.8 MB (381806180 bytes)
 
 ### Layers (5)
 
@@ -1179,7 +1182,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 47.0 MB (47042182 bytes)
 -	v2 Last-Modified: Mon, 04 Apr 2016 22:21:41 GMT
 
-#### `8d2cd300e13df0daa73e82dcf50c7d43faef4ce186da3ce61770d9a2e5027f66`
+#### `7bf3f1321dbed1516925e8bdab8e5a0a408e1ed5dbd42db13748b706b05c878a`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1193,6 +1196,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libbz2-dev \
 		libc6-dev \
 		libcurl4-openssl-dev \
+		libdb-dev \
 		libevent-dev \
 		libffi-dev \
 		libgeoip-dev \
@@ -1220,13 +1224,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 04 Apr 2016 22:13:51 GMT
+-	Created: Wed, 27 Apr 2016 21:03:03 GMT
 -	Parent Layer: `e145f39757cc949348717f585bd7f714ebe39c163a30650c5cc6c8c194add4c6`
 -	Docker Version: 1.9.1
--	Virtual Size: 739.6 MB (739642352 bytes)
--	v2 Blob: `sha256:dc268f4b81719aa7571b2b9e26581a09d1f9c31768c75fdf847daf076a6d587f`
--	v2 Content-Length: 283.8 MB (283790788 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:23:36 GMT
+-	Virtual Size: 678.5 MB (678478652 bytes)
+-	v2 Blob: `sha256:e08b591dba5cdcb2f85fe0d9ef25b263327cea9227874df7c56bcd39f9474a8c`
+-	v2 Content-Length: 261.6 MB (261600247 bytes)
+-	v2 Last-Modified: Thu, 28 Apr 2016 03:38:53 GMT
 
 ## `buildpack-deps:stretch-curl`
 
@@ -1364,11 +1368,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:stretch`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:9319a11afbe8be9e25ced2ff15eb494fa5f243465476aca3224abeda14c2fe8a
+$ docker pull library/buildpack-deps@sha256:27015d73e2edfca55c6fe7bc754091898d06e4afdf1a1269a479e181c48136e0
 ```
 
--	Total Virtual Size: 1.0 GB (1042382934 bytes)
--	Total v2 Content-Length: 403.7 MB (403701330 bytes)
+-	Total Virtual Size: 1.1 GB (1087919542 bytes)
+-	Total v2 Content-Length: 421.2 MB (421201917 bytes)
 
 ### Layers (5)
 
@@ -1438,7 +1442,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 46.8 MB (46803821 bytes)
 -	v2 Last-Modified: Mon, 04 Apr 2016 22:25:02 GMT
 
-#### `b9b6cb11121ea1bf50663ae6849ad3ab27c5f1ad132b6c246324bb29bb0d0a21`
+#### `de243a8870f1532c35c468840a8ca07b0b2644f1a30492b69d748f25368147a8`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1452,6 +1456,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libbz2-dev \
 		libc6-dev \
 		libcurl4-openssl-dev \
+		libdb-dev \
 		libevent-dev \
 		libffi-dev \
 		libgeoip-dev \
@@ -1479,13 +1484,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 04 Apr 2016 22:15:53 GMT
+-	Created: Wed, 27 Apr 2016 21:04:36 GMT
 -	Parent Layer: `33dc0e90ad775c600fd047050f13e0deafe5a5f27fe0f90088d780521af7b7ce`
 -	Docker Version: 1.9.1
--	Virtual Size: 739.6 MB (739579054 bytes)
--	v2 Blob: `sha256:a51c006981ff3bda4a5799f3f7692443ff5529bdf80a8972080d2678246bbc0e`
--	v2 Content-Length: 283.8 MB (283760510 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:29:07 GMT
+-	Virtual Size: 785.1 MB (785115662 bytes)
+-	v2 Blob: `sha256:355c96c8628ece5fd2a92d570991711dec1d1c1ef2d42cb3c5ad79d5b9b431c3`
+-	v2 Content-Length: 301.3 MB (301261097 bytes)
+-	v2 Last-Modified: Thu, 28 Apr 2016 03:40:55 GMT
 
 ## `buildpack-deps:trusty-curl`
 
@@ -1731,11 +1736,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:trusty`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:cd4442f1a4140dc1791ec9911664fee0871ad4ce7832f08de66ec4851f5dd714
+$ docker pull library/buildpack-deps@sha256:fc782bcb72bf37a02453649814b9c6365874e239c4f6f0d576785e95001c9bf7
 ```
 
--	Total Virtual Size: 535.3 MB (535336078 bytes)
--	Total v2 Content-Length: 198.2 MB (198170037 bytes)
+-	Total Virtual Size: 538.3 MB (538312542 bytes)
+-	Total v2 Content-Length: 199.2 MB (199160733 bytes)
 
 ### Layers (8)
 
@@ -1859,7 +1864,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 29.0 MB (29004783 bytes)
 -	v2 Last-Modified: Mon, 25 Apr 2016 18:13:48 GMT
 
-#### `4a6d9c9f522815679d68210fd7de2ed1131a640fbf8d8b990e0371f9d49e3fd9`
+#### `99c9d74b1054f9ac6e84561fc80d361ad3ca9146e86bef04b1838e53a06ae597`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1873,6 +1878,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libbz2-dev \
 		libc6-dev \
 		libcurl4-openssl-dev \
+		libdb-dev \
 		libevent-dev \
 		libffi-dev \
 		libgeoip-dev \
@@ -1900,13 +1906,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Apr 2016 18:08:21 GMT
+-	Created: Wed, 27 Apr 2016 21:06:49 GMT
 -	Parent Layer: `1ed413a2b139799f449db68dc27378e46efb52c629dd84070955b8a67b16752c`
 -	Docker Version: 1.9.1
--	Virtual Size: 255.7 MB (255711732 bytes)
--	v2 Blob: `sha256:997bc539b2dde1b72c12162ee30f9a2d63df32454ed48b79c532ad1da79a7479`
--	v2 Content-Length: 98.8 MB (98799634 bytes)
--	v2 Last-Modified: Mon, 25 Apr 2016 18:15:56 GMT
+-	Virtual Size: 258.7 MB (258688196 bytes)
+-	v2 Blob: `sha256:6e185df21de3bc91d2657e6cfb7d47e59f04a8541a90381c5720348c40e225a6`
+-	v2 Content-Length: 99.8 MB (99790330 bytes)
+-	v2 Last-Modified: Thu, 28 Apr 2016 03:41:56 GMT
 
 ## `buildpack-deps:wheezy-curl`
 
@@ -2044,11 +2050,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:wheezy`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:02076792a5835311ba2a6b25fd8ed54f115af4867cd3df4d7fcec67a12a0c5f8
+$ docker pull library/buildpack-deps@sha256:20a6dd3749140ead351985283bc952e0503b183c4ecc663fc918931db599f7d0
 ```
 
--	Total Virtual Size: 459.7 MB (459654942 bytes)
--	Total v2 Content-Length: 175.6 MB (175589921 bytes)
+-	Total Virtual Size: 462.3 MB (462333462 bytes)
+-	Total v2 Content-Length: 176.5 MB (176487183 bytes)
 
 ### Layers (5)
 
@@ -2118,7 +2124,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 37.4 MB (37361148 bytes)
 -	v2 Last-Modified: Mon, 04 Apr 2016 22:30:45 GMT
 
-#### `6f6350b547093aedac608c61b28dbc0ac1c38a05a62879e3bc2e10c931fde9c8`
+#### `1900185d0ba55552a0f8141057d3a21e0039895c3ff488784d92064d0ceb8eca`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2132,6 +2138,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libbz2-dev \
 		libc6-dev \
 		libcurl4-openssl-dev \
+		libdb-dev \
 		libevent-dev \
 		libffi-dev \
 		libgeoip-dev \
@@ -2159,13 +2166,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 04 Apr 2016 22:18:21 GMT
+-	Created: Wed, 27 Apr 2016 21:08:12 GMT
 -	Parent Layer: `07a3a0dbcac35f80935311f4f2f7327650068ae984576de49293e97698aefca9`
 -	Docker Version: 1.9.1
--	Virtual Size: 250.6 MB (250584674 bytes)
--	v2 Blob: `sha256:0ca8506d771021cd18a22e7c4e20022c444d9d7fd174fb6e223d3f1b19ad88cb`
--	v2 Content-Length: 94.3 MB (94311444 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:31:34 GMT
+-	Virtual Size: 253.3 MB (253263194 bytes)
+-	v2 Blob: `sha256:c796d99d100d8db0fee8dd0d7d9f2e7d6e105a98d81816523f3a5647d4d35d64`
+-	v2 Content-Length: 95.2 MB (95208706 bytes)
+-	v2 Last-Modified: Thu, 28 Apr 2016 03:42:45 GMT
 
 ## `buildpack-deps:wily-curl`
 
@@ -2411,11 +2418,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:wily`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:175eede63ae4948cdf29d3a6efab78b65c93f0932c8de37db23ab2f741e90409
+$ docker pull library/buildpack-deps@sha256:2cd1609b58f9f644b47cd3e2299c7298e04624064dac08021728cb4533a8a8db
 ```
 
--	Total Virtual Size: 637.0 MB (636979292 bytes)
--	Total v2 Content-Length: 229.8 MB (229849673 bytes)
+-	Total Virtual Size: 640.0 MB (640031697 bytes)
+-	Total v2 Content-Length: 230.9 MB (230859860 bytes)
 
 ### Layers (8)
 
@@ -2539,7 +2546,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 38.2 MB (38228634 bytes)
 -	v2 Last-Modified: Mon, 25 Apr 2016 18:14:08 GMT
 
-#### `f351acb2bedea9912b8a26489115cab1631689c3bfef9c909dd7d1950edb0675`
+#### `431a4283563cc90cfc064c55457f33ba12d69cea93931c728e4ec74cfd851395`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2553,6 +2560,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libbz2-dev \
 		libc6-dev \
 		libcurl4-openssl-dev \
+		libdb-dev \
 		libevent-dev \
 		libffi-dev \
 		libgeoip-dev \
@@ -2580,13 +2588,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Apr 2016 18:09:57 GMT
+-	Created: Wed, 27 Apr 2016 21:10:03 GMT
 -	Parent Layer: `ed3ab6af8f5cd80dc65a349d74f3938465af707ffbccec5e5abe56646ffc4acd`
 -	Docker Version: 1.9.1
--	Virtual Size: 369.8 MB (369790115 bytes)
--	v2 Blob: `sha256:453e5b78c79310b18bb9e49c73f00a9f7ef058c5146f1f2a3e1d0dfecaa691f6`
--	v2 Content-Length: 133.5 MB (133501119 bytes)
--	v2 Last-Modified: Mon, 25 Apr 2016 18:16:52 GMT
+-	Virtual Size: 372.8 MB (372842520 bytes)
+-	v2 Blob: `sha256:aebab54f2ccff8ace4f89b00c246b514b09481df54e50ab134270069872ef29a`
+-	v2 Content-Length: 134.5 MB (134511306 bytes)
+-	v2 Last-Modified: Thu, 28 Apr 2016 03:43:46 GMT
 
 ## `buildpack-deps:xenial-curl`
 
@@ -2832,11 +2840,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:xenial`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:8066559157c79eeb55d68d5ba09189ecc77243f6599b098f340f08cab0ae8c47
+$ docker pull library/buildpack-deps@sha256:174f4c3878d8b2333b289c90776d178d1076c2f40e82d74b7276de89bd900009
 ```
 
--	Total Virtual Size: 630.3 MB (630266152 bytes)
--	Total v2 Content-Length: 228.8 MB (228761257 bytes)
+-	Total Virtual Size: 633.3 MB (633318569 bytes)
+-	Total v2 Content-Length: 229.8 MB (229776735 bytes)
 
 ### Layers (8)
 
@@ -2960,7 +2968,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 41.2 MB (41170243 bytes)
 -	v2 Last-Modified: Mon, 25 Apr 2016 18:14:31 GMT
 
-#### `6d5907ce89f44aadac2d8f5e377e56100c18afd083dbbe57b5f5bf52fb4ea25d`
+#### `bf7bca628c7ed93b764d143bb54e699fad1215c13788d2ff8ae544cd1d102ebd`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2974,6 +2982,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libbz2-dev \
 		libc6-dev \
 		libcurl4-openssl-dev \
+		libdb-dev \
 		libevent-dev \
 		libffi-dev \
 		libgeoip-dev \
@@ -3001,10 +3010,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Apr 2016 18:10:58 GMT
+-	Created: Wed, 27 Apr 2016 21:11:15 GMT
 -	Parent Layer: `7605424d692c2f5e316e12bc0b5dbd1c1eee376f7463ddcac938b39d1ab743f6`
 -	Docker Version: 1.9.1
--	Virtual Size: 369.9 MB (369889307 bytes)
--	v2 Blob: `sha256:0443441f2f3c9585b1a20d32202edc0c5fdbf833feb328f99afa6356ae833fd7`
--	v2 Content-Length: 132.1 MB (132129975 bytes)
--	v2 Last-Modified: Mon, 25 Apr 2016 18:17:59 GMT
+-	Virtual Size: 372.9 MB (372941724 bytes)
+-	v2 Blob: `sha256:0296e1cd25135c0cb076d808af97c282fee34e515f3cee64806c2f23ebaddaa9`
+-	v2 Content-Length: 133.1 MB (133145453 bytes)
+-	v2 Last-Modified: Thu, 28 Apr 2016 03:44:50 GMT
