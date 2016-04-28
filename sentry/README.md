@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.4`, `8.2` (*8.2/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/3ec1dafe76069627d9a1f2fe2bca149026ce9576/8.2/Dockerfile)
--	[`8.2.4-onbuild`, `8.2-onbuild` (*8.2/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/1ef759405e541ac9552fb92f2f293c8496e10d07/8.2/onbuild/Dockerfile)
--	[`8.3.2`, `8.3`, `8`, `latest` (*8.3/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/77bf86e359f312ed8925a6cafdddb6a33f4d8758/8.3/Dockerfile)
--	[`8.3.2-onbuild`, `8.3-onbuild`, `8-onbuild`, `onbuild` (*8.3/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c05ef824c01a4f2b010c2acd24031b4d22f88944/8.3/onbuild/Dockerfile)
+-	[`8.2.5`, `8.2` (*8.2/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/2dc5abbda0e68da3519637941f796f56e886ca88/8.2/Dockerfile)
+-	[`8.2.5-onbuild`, `8.2-onbuild` (*8.2/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/1ef759405e541ac9552fb92f2f293c8496e10d07/8.2/onbuild/Dockerfile)
+-	[`8.3.3`, `8.3`, `8`, `latest` (*8.3/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/2dc5abbda0e68da3519637941f796f56e886ca88/8.3/Dockerfile)
+-	[`8.3.3-onbuild`, `8.3-onbuild`, `8-onbuild`, `onbuild` (*8.3/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c05ef824c01a4f2b010c2acd24031b4d22f88944/8.3/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.2.4,sentry:8.2.4-onbuild,sentry:8.3.2,sentry:8.3.2-onbuild)
+[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.2.5,sentry:8.2.5-onbuild,sentry:8.3.3,sentry:8.3.3-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
