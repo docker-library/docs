@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.3` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/cdbbd1c8fce49255116b63799fa939afd3ee7641/7.0/Dockerfile)
--	[`7.2.2`, `latest` (*7.2/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/863476b2fb5822f9a51126994e6d0505630be7b1/7.2/Dockerfile)
+-	[`7.0.3` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/a4da793e2e8db73532ceb9a7cbbc9b82ab90ca1a/7.0/Dockerfile)
+-	[`7.2.2`, `latest` (*7.2/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/a4da793e2e8db73532ceb9a7cbbc9b82ab90ca1a/7.2/Dockerfile)
 
 [![](https://badge.imagelayers.io/bonita:latest.svg)](https://imagelayers.io/?images=bonita:7.0.3,bonita:7.2.2)
 
