@@ -6,11 +6,11 @@ Visit [Crate on Docker](https://crate.io/docs/install/containers/docker/) and ge
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us %%MAILING-LIST%% through a [GitHub issue](%%GITHUB-REPO%%/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/crate/docker-crate/issues).
 
-If you have any questions or suggestions we would be very happy to help you. So, feel free to join our public room on [Slack](https://crate.io/docs/support/slackin/).
+If you have any questions or suggestions, we are happy to help! Feel free to join our [public Crate community on Slack](https://crate.io/docs/support/slackin/).
 
-For further information and official contact please visit [https://crate.io](https://crate.io).
+For further information and official contact visit [https://crate.io](https://crate.io).
 
 ## Contributing
 
