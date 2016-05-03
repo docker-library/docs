@@ -1,0 +1,21 @@
+version: '2'
+services:
+    zookeeper:
+        image: jplock/zookeeper:3.4.8
+        restart: always
+
+    nimbus:
+        image: 31z4/storm:1.0.0
+        command: nimbus -c storm.zookeeper.servers="[\"zookeeper\"]" -c nimbus.host="nimbus"
+        depends_on:
+            - zookeeper
+        restart: always
+        ports:
+            - 6627:6627
+
+    supervisor:
+        image: 31z4/storm:1.0.0
+        command: supervisor -c storm.zookeeper.servers="[\"zookeeper\"]" -c nimbus.host="nimbus"
+        depends_on:
+            - nimbus
+        restart: always
