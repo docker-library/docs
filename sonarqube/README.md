@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.4` (*5.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/0de6481da3d5e8cf41ee7aa67738ef07a5b6f6b0/5.4/Dockerfile)
--	[`5.4-alpine` (*5.4-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/0de6481da3d5e8cf41ee7aa67738ef07a5b6f6b0/5.4-alpine/Dockerfile)
--	[`lts`, `4.5.7` (*4.5.7/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/0de6481da3d5e8cf41ee7aa67738ef07a5b6f6b0/4.5.7/Dockerfile)
--	[`4.5.7-alpine` (*4.5.7-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/0de6481da3d5e8cf41ee7aa67738ef07a5b6f6b0/4.5.7-alpine/Dockerfile)
+-	[`latest`, `5.5` (*5.5/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/445337a0bbe87afd8ba745ba4bcabf75d3bf002e/5.5/Dockerfile)
+-	[`5.5-alpine` (*5.5-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/445337a0bbe87afd8ba745ba4bcabf75d3bf002e/5.5-alpine/Dockerfile)
+-	[`lts`, `4.5.7` (*4.5.7/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/445337a0bbe87afd8ba745ba4bcabf75d3bf002e/4.5.7/Dockerfile)
+-	[`4.5.7-alpine` (*4.5.7-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/445337a0bbe87afd8ba745ba4bcabf75d3bf002e/4.5.7-alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:5.4-alpine,sonarqube:lts,sonarqube:4.5.7-alpine)
+[![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:5.5-alpine,sonarqube:lts,sonarqube:4.5.7-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsonarqube).
 
