@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0RC`, `latest` (*1.0RC/Dockerfile*)](https://github.com/frapposelli/photon-docker-image/blob/a866d7cf35ab97be2f1acd21f708fd40cd7ebfc7/1.0RC/Dockerfile)
--	[`1.0TP2` (*1.0TP2/Dockerfile*)](https://github.com/frapposelli/photon-docker-image/blob/a866d7cf35ab97be2f1acd21f708fd40cd7ebfc7/1.0TP2/Dockerfile)
+-	[`1.0RC`, `latest` (*1.0RC/Dockerfile*)](https://github.com/frapposelli/photon-docker-image/blob/a90d370fc94c08d096f0b9ee07c1c04405f5d6dd/1.0RC/Dockerfile)
+-	[`1.0TP2` (*1.0TP2/Dockerfile*)](https://github.com/frapposelli/photon-docker-image/blob/a90d370fc94c08d096f0b9ee07c1c04405f5d6dd/1.0TP2/Dockerfile)
 
 [![](https://badge.imagelayers.io/photon:latest.svg)](https://imagelayers.io/?images=photon:1.0RC,photon:1.0TP2)
 

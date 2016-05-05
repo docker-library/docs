@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.0` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/5a51d0a519cb6605280adb8719f0e050ea69bac6/Dockerfile)
--	[`1.651.1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/b8ad2f606001fb3fa57fa5051d655e894c15c149/Dockerfile)
--	[`alpine`, `2.0-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/62229b12c22e6eff4e5960cde4bb86cc61ba14db/Dockerfile)
--	[`1.651.1-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/bf76339b2a65acb309bcdc472cfcc9306eeb45f3/Dockerfile)
+-	[`latest`, `1.651.1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/b8ad2f606001fb3fa57fa5051d655e894c15c149/Dockerfile)
+-	[`2.0` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/5a51d0a519cb6605280adb8719f0e050ea69bac6/Dockerfile)
+-	[`alpine`, `1.651.1-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/bf76339b2a65acb309bcdc472cfcc9306eeb45f3/Dockerfile)
+-	[`2.0-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/62229b12c22e6eff4e5960cde4bb86cc61ba14db/Dockerfile)
 
-[![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:1.651.1,jenkins:alpine,jenkins:1.651.1-alpine)
+[![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:2.0,jenkins:alpine,jenkins:2.0-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
