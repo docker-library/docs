@@ -1,9 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0RC`, `latest` (*1.0RC/Dockerfile*)](https://github.com/frapposelli/photon-docker-image/blob/a90d370fc94c08d096f0b9ee07c1c04405f5d6dd/1.0RC/Dockerfile)
--	[`1.0TP2` (*1.0TP2/Dockerfile*)](https://github.com/frapposelli/photon-docker-image/blob/a90d370fc94c08d096f0b9ee07c1c04405f5d6dd/1.0TP2/Dockerfile)
+-	[`1.0RC`, `latest` (*1.0RC/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/312dda8b87d8a7083cf1e9fcab184a7612032859/1.0RC/Dockerfile)
 
-[![](https://badge.imagelayers.io/photon:latest.svg)](https://imagelayers.io/?images=photon:1.0RC,photon:1.0TP2)
+[![](https://badge.imagelayers.io/photon:latest.svg)](https://imagelayers.io/?images=photon:1.0RC)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/photon`)](https://github.com/docker-library/official-images/blob/master/library/photon). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphoton).
 
@@ -11,7 +10,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # VMware Photon OS
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/201d521fc5f94009950a919679a1cb33d3ffcefe/photon/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/de9a58372c9e1e58ccb08186ab6ebed278b86521/photon/logo.png)
 
 Photon OS is a technology preview of a minimal Linux container host. It is designed to have a small footprint and boot extremely quickly on VMware platforms. Photon OS is intended to invite collaboration around running containerized applications in a virtualized environment.
 

@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2016.04`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/6a58fb273b193a2d497db8e4108e7e95603dde68/Dockerfile)
+-	[`2016.04`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/f9c2b6026b8c875ad97cddacfc0158bfdc25d21c/Dockerfile)
 
 [![](https://badge.imagelayers.io/rakudo-star:latest.svg)](https://imagelayers.io/?images=rakudo-star:2016.04)
 
