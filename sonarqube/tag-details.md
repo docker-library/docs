@@ -3,8 +3,8 @@
 # Tags of `sonarqube`
 
 -	[`sonarqube:latest`](#sonarqubelatest)
--	[`sonarqube:5.4`](#sonarqube54)
--	[`sonarqube:5.4-alpine`](#sonarqube54-alpine)
+-	[`sonarqube:5.5`](#sonarqube55)
+-	[`sonarqube:5.5-alpine`](#sonarqube55-alpine)
 -	[`sonarqube:lts`](#sonarqubelts)
 -	[`sonarqube:4.5.7`](#sonarqube457)
 -	[`sonarqube:4.5.7-alpine`](#sonarqube457-alpine)
@@ -12,11 +12,11 @@
 ## `sonarqube:latest`
 
 ```console
-$ docker pull library/sonarqube@sha256:bfe2f9d4dc67aa3961d5fe9db34b7e021c1a0e953d6032c151bbbde6cf33fa7e
+$ docker pull library/sonarqube@sha256:7263e6004799bb319c177952fd515412def7c3704bb5380649ab4feb1140d7f2
 ```
 
--	Total Virtual Size: 952.2 MB (952185100 bytes)
--	Total v2 Content-Length: 430.0 MB (429982270 bytes)
+-	Total Virtual Size: 950.4 MB (950393668 bytes)
+-	Total v2 Content-Length: 428.3 MB (428332751 bytes)
 
 ### Layers (20)
 
@@ -216,13 +216,13 @@ MAINTAINER David Gageot <david.gageot@sonarsource.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fd60d4d405e6ac26af67199a689ee9937df14623f7ece8d60c04cd623b23908c`
+#### `ec4341acb48f9261bff42034bba72f5558cf9fbc3d2b248331f7574e3a3c3528`
 
 ```dockerfile
-ENV SONAR_VERSION=5.4 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=jdbc:h2:tcp://localhost:9092/sonar
+ENV SONAR_VERSION=5.5 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=jdbc:h2:tcp://localhost:9092/sonar
 ```
 
--	Created: Tue, 26 Apr 2016 19:54:27 GMT
+-	Created: Thu, 05 May 2016 17:22:13 GMT
 -	Parent Layer: `cce91f304f15763568d31e840ea606ff1caad8b1498568c89a9943ddf4647971`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
@@ -230,21 +230,21 @@ ENV SONAR_VERSION=5.4 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sona
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `88fbe530a49cb7d6276ee1362b02bccbda33eac830c1e4d3ec5acfe2f75db41c`
+#### `d337fee657acfcdeed85216aa4e9f45eccabf7752734a321003ed39b934baf50`
 
 ```dockerfile
 EXPOSE 9000/tcp
 ```
 
--	Created: Tue, 26 Apr 2016 19:54:27 GMT
--	Parent Layer: `fd60d4d405e6ac26af67199a689ee9937df14623f7ece8d60c04cd623b23908c`
+-	Created: Thu, 05 May 2016 17:22:14 GMT
+-	Parent Layer: `ec4341acb48f9261bff42034bba72f5558cf9fbc3d2b248331f7574e3a3c3528`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `522f9c51391646b4fd5664e9261bc13e60dd168c95ce79fd541f63e5a3f87218`
+#### `a89ce27160b3beaeac1a805ab26a0b1e04190427f4adf07f0dfcb28312d50724`
 
 ```dockerfile
 RUN set -x\
@@ -259,78 +259,78 @@ RUN set -x\
      && rm -rf $SONARQUBE_HOME/bin/*
 ```
 
--	Created: Tue, 26 Apr 2016 19:55:22 GMT
--	Parent Layer: `88fbe530a49cb7d6276ee1362b02bccbda33eac830c1e4d3ec5acfe2f75db41c`
+-	Created: Thu, 05 May 2016 17:22:24 GMT
+-	Parent Layer: `d337fee657acfcdeed85216aa4e9f45eccabf7752734a321003ed39b934baf50`
 -	Docker Version: 1.9.1
--	Virtual Size: 135.8 MB (135754260 bytes)
--	v2 Blob: `sha256:8db7813b9dc1205e6f0110eb954ccc2ef913742e499016a33ec20de8020bc39a`
--	v2 Content-Length: 118.0 MB (118000106 bytes)
--	v2 Last-Modified: Tue, 26 Apr 2016 20:05:51 GMT
+-	Virtual Size: 134.0 MB (133962801 bytes)
+-	v2 Blob: `sha256:f79e15ba74ecedf8ca75ac90181b9c114d4f5043e51ea0b3279b071f471946f3`
+-	v2 Content-Length: 116.4 MB (116350577 bytes)
+-	v2 Last-Modified: Thu, 05 May 2016 17:29:18 GMT
 
-#### `e914bcab010b8479f8b7a133bedef114347ea05207010628c2a784d0e1ccdcdc`
+#### `e7dc8b44be7d2c25216ce844d84ce8602246420c7181e81246683a96543d65c2`
 
 ```dockerfile
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
 ```
 
--	Created: Tue, 26 Apr 2016 19:55:24 GMT
--	Parent Layer: `522f9c51391646b4fd5664e9261bc13e60dd168c95ce79fd541f63e5a3f87218`
+-	Created: Thu, 05 May 2016 17:22:32 GMT
+-	Parent Layer: `a89ce27160b3beaeac1a805ab26a0b1e04190427f4adf07f0dfcb28312d50724`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `764cd4363b63690c649ad4ac515662301e4045c92a93e36cfc791b8137d2897b`
+#### `f5a1f0109332f6b9d0f8aa833e3d3db36ceec748208afd6264810662be1c45ae`
 
 ```dockerfile
 WORKDIR /opt/sonarqube
 ```
 
--	Created: Tue, 26 Apr 2016 19:55:25 GMT
--	Parent Layer: `e914bcab010b8479f8b7a133bedef114347ea05207010628c2a784d0e1ccdcdc`
+-	Created: Thu, 05 May 2016 17:22:33 GMT
+-	Parent Layer: `e7dc8b44be7d2c25216ce844d84ce8602246420c7181e81246683a96543d65c2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d11999b793e81d15123bbc189b084f715437886e0c76b42ba84e10fccd7b2496`
+#### `664bd0aaf53ead54e214742378626265741d12b6445e6ef4215ab8cd9db851db`
 
 ```dockerfile
-COPY file:75a1e489e832cdb87849d864b21177f35accc66edd48824452bc6f5e8e7d67ac in /opt/sonarqube/bin/
+COPY file:330f77bff6fc3e447c0b56894f0b8a51ebb2164b4eb1f914fba8d5854569e637 in /opt/sonarqube/bin/
 ```
 
--	Created: Tue, 26 Apr 2016 19:55:26 GMT
--	Parent Layer: `764cd4363b63690c649ad4ac515662301e4045c92a93e36cfc791b8137d2897b`
+-	Created: Thu, 05 May 2016 17:22:35 GMT
+-	Parent Layer: `f5a1f0109332f6b9d0f8aa833e3d3db36ceec748208afd6264810662be1c45ae`
 -	Docker Version: 1.9.1
--	Virtual Size: 385.0 B
--	v2 Blob: `sha256:1ccf3a264c56a850fc0ea3ffe257893ed6205431cdc4ba81a2d03db89bc20af6`
--	v2 Content-Length: 425.0 B
--	v2 Last-Modified: Tue, 26 Apr 2016 20:05:32 GMT
+-	Virtual Size: 412.0 B
+-	v2 Blob: `sha256:e8302c9d76371716f9ecd8ba04f307cef8524ef8d64b54369e5df48906d02213`
+-	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Thu, 05 May 2016 17:28:51 GMT
 
-#### `c89ad4f9310d77601f5e8614872ddfeb6fcf935f034c04eeca06c6c587a0e001`
+#### `89585e19d362b15416b531ad116076a868c9be9d200e807e2f8aa03784bc0452`
 
 ```dockerfile
 ENTRYPOINT &{["./bin/run.sh"]}
 ```
 
--	Created: Tue, 26 Apr 2016 19:55:27 GMT
--	Parent Layer: `d11999b793e81d15123bbc189b084f715437886e0c76b42ba84e10fccd7b2496`
+-	Created: Thu, 05 May 2016 17:22:36 GMT
+-	Parent Layer: `664bd0aaf53ead54e214742378626265741d12b6445e6ef4215ab8cd9db851db`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `sonarqube:5.4`
+## `sonarqube:5.5`
 
 ```console
-$ docker pull library/sonarqube@sha256:6b7ffd050105366f457ad159bad07a10662bca4e3e36abe626ff835816082ea3
+$ docker pull library/sonarqube@sha256:ce288dbd882ed82769f76a9bae7266c7248ad50328f384ed63893fe6d1427d88
 ```
 
--	Total Virtual Size: 952.2 MB (952185100 bytes)
--	Total v2 Content-Length: 430.0 MB (429982270 bytes)
+-	Total Virtual Size: 950.4 MB (950393668 bytes)
+-	Total v2 Content-Length: 428.3 MB (428332751 bytes)
 
 ### Layers (20)
 
@@ -530,13 +530,13 @@ MAINTAINER David Gageot <david.gageot@sonarsource.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fd60d4d405e6ac26af67199a689ee9937df14623f7ece8d60c04cd623b23908c`
+#### `ec4341acb48f9261bff42034bba72f5558cf9fbc3d2b248331f7574e3a3c3528`
 
 ```dockerfile
-ENV SONAR_VERSION=5.4 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=jdbc:h2:tcp://localhost:9092/sonar
+ENV SONAR_VERSION=5.5 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=jdbc:h2:tcp://localhost:9092/sonar
 ```
 
--	Created: Tue, 26 Apr 2016 19:54:27 GMT
+-	Created: Thu, 05 May 2016 17:22:13 GMT
 -	Parent Layer: `cce91f304f15763568d31e840ea606ff1caad8b1498568c89a9943ddf4647971`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
@@ -544,21 +544,21 @@ ENV SONAR_VERSION=5.4 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sona
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `88fbe530a49cb7d6276ee1362b02bccbda33eac830c1e4d3ec5acfe2f75db41c`
+#### `d337fee657acfcdeed85216aa4e9f45eccabf7752734a321003ed39b934baf50`
 
 ```dockerfile
 EXPOSE 9000/tcp
 ```
 
--	Created: Tue, 26 Apr 2016 19:54:27 GMT
--	Parent Layer: `fd60d4d405e6ac26af67199a689ee9937df14623f7ece8d60c04cd623b23908c`
+-	Created: Thu, 05 May 2016 17:22:14 GMT
+-	Parent Layer: `ec4341acb48f9261bff42034bba72f5558cf9fbc3d2b248331f7574e3a3c3528`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `522f9c51391646b4fd5664e9261bc13e60dd168c95ce79fd541f63e5a3f87218`
+#### `a89ce27160b3beaeac1a805ab26a0b1e04190427f4adf07f0dfcb28312d50724`
 
 ```dockerfile
 RUN set -x\
@@ -573,78 +573,78 @@ RUN set -x\
      && rm -rf $SONARQUBE_HOME/bin/*
 ```
 
--	Created: Tue, 26 Apr 2016 19:55:22 GMT
--	Parent Layer: `88fbe530a49cb7d6276ee1362b02bccbda33eac830c1e4d3ec5acfe2f75db41c`
+-	Created: Thu, 05 May 2016 17:22:24 GMT
+-	Parent Layer: `d337fee657acfcdeed85216aa4e9f45eccabf7752734a321003ed39b934baf50`
 -	Docker Version: 1.9.1
--	Virtual Size: 135.8 MB (135754260 bytes)
--	v2 Blob: `sha256:8db7813b9dc1205e6f0110eb954ccc2ef913742e499016a33ec20de8020bc39a`
--	v2 Content-Length: 118.0 MB (118000106 bytes)
--	v2 Last-Modified: Tue, 26 Apr 2016 20:05:51 GMT
+-	Virtual Size: 134.0 MB (133962801 bytes)
+-	v2 Blob: `sha256:f79e15ba74ecedf8ca75ac90181b9c114d4f5043e51ea0b3279b071f471946f3`
+-	v2 Content-Length: 116.4 MB (116350577 bytes)
+-	v2 Last-Modified: Thu, 05 May 2016 17:29:18 GMT
 
-#### `e914bcab010b8479f8b7a133bedef114347ea05207010628c2a784d0e1ccdcdc`
+#### `e7dc8b44be7d2c25216ce844d84ce8602246420c7181e81246683a96543d65c2`
 
 ```dockerfile
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
 ```
 
--	Created: Tue, 26 Apr 2016 19:55:24 GMT
--	Parent Layer: `522f9c51391646b4fd5664e9261bc13e60dd168c95ce79fd541f63e5a3f87218`
+-	Created: Thu, 05 May 2016 17:22:32 GMT
+-	Parent Layer: `a89ce27160b3beaeac1a805ab26a0b1e04190427f4adf07f0dfcb28312d50724`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `764cd4363b63690c649ad4ac515662301e4045c92a93e36cfc791b8137d2897b`
+#### `f5a1f0109332f6b9d0f8aa833e3d3db36ceec748208afd6264810662be1c45ae`
 
 ```dockerfile
 WORKDIR /opt/sonarqube
 ```
 
--	Created: Tue, 26 Apr 2016 19:55:25 GMT
--	Parent Layer: `e914bcab010b8479f8b7a133bedef114347ea05207010628c2a784d0e1ccdcdc`
+-	Created: Thu, 05 May 2016 17:22:33 GMT
+-	Parent Layer: `e7dc8b44be7d2c25216ce844d84ce8602246420c7181e81246683a96543d65c2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d11999b793e81d15123bbc189b084f715437886e0c76b42ba84e10fccd7b2496`
+#### `664bd0aaf53ead54e214742378626265741d12b6445e6ef4215ab8cd9db851db`
 
 ```dockerfile
-COPY file:75a1e489e832cdb87849d864b21177f35accc66edd48824452bc6f5e8e7d67ac in /opt/sonarqube/bin/
+COPY file:330f77bff6fc3e447c0b56894f0b8a51ebb2164b4eb1f914fba8d5854569e637 in /opt/sonarqube/bin/
 ```
 
--	Created: Tue, 26 Apr 2016 19:55:26 GMT
--	Parent Layer: `764cd4363b63690c649ad4ac515662301e4045c92a93e36cfc791b8137d2897b`
+-	Created: Thu, 05 May 2016 17:22:35 GMT
+-	Parent Layer: `f5a1f0109332f6b9d0f8aa833e3d3db36ceec748208afd6264810662be1c45ae`
 -	Docker Version: 1.9.1
--	Virtual Size: 385.0 B
--	v2 Blob: `sha256:1ccf3a264c56a850fc0ea3ffe257893ed6205431cdc4ba81a2d03db89bc20af6`
--	v2 Content-Length: 425.0 B
--	v2 Last-Modified: Tue, 26 Apr 2016 20:05:32 GMT
+-	Virtual Size: 412.0 B
+-	v2 Blob: `sha256:e8302c9d76371716f9ecd8ba04f307cef8524ef8d64b54369e5df48906d02213`
+-	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Thu, 05 May 2016 17:28:51 GMT
 
-#### `c89ad4f9310d77601f5e8614872ddfeb6fcf935f034c04eeca06c6c587a0e001`
+#### `89585e19d362b15416b531ad116076a868c9be9d200e807e2f8aa03784bc0452`
 
 ```dockerfile
 ENTRYPOINT &{["./bin/run.sh"]}
 ```
 
--	Created: Tue, 26 Apr 2016 19:55:27 GMT
--	Parent Layer: `d11999b793e81d15123bbc189b084f715437886e0c76b42ba84e10fccd7b2496`
+-	Created: Thu, 05 May 2016 17:22:36 GMT
+-	Parent Layer: `664bd0aaf53ead54e214742378626265741d12b6445e6ef4215ab8cd9db851db`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `sonarqube:5.4-alpine`
+## `sonarqube:5.5-alpine`
 
 ```console
-$ docker pull library/sonarqube@sha256:e1278e1e1434fda45ba35bbc95d6cc1c2fa89db9a0897d3ae0b2b834f6c99941
+$ docker pull library/sonarqube@sha256:a34210eac97be4cc3481818850f240148dd9887785db2fd81aedbc6c55bfdbbc
 ```
 
--	Total Virtual Size: 292.1 MB (292125016 bytes)
--	Total v2 Content-Length: 174.3 MB (174332436 bytes)
+-	Total Virtual Size: 290.3 MB (290333584 bytes)
+-	Total v2 Content-Length: 172.7 MB (172685384 bytes)
 
 ### Layers (16)
 
@@ -782,13 +782,13 @@ MAINTAINER David Gageot <david.gageot@sonarsource.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8b7c869668674eadf9074fcfb3b19b117cdd3e60ba8427e32544bb7221024b4e`
+#### `4cb35a3d4f6a24d8ba08f02c71b15308ed24d62d02939d42467e8a6c37d3d170`
 
 ```dockerfile
-ENV SONAR_VERSION=5.4 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=jdbc:h2:tcp://localhost:9092/sonar
+ENV SONAR_VERSION=5.5 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=jdbc:h2:tcp://localhost:9092/sonar
 ```
 
--	Created: Tue, 26 Apr 2016 19:55:59 GMT
+-	Created: Thu, 05 May 2016 17:23:50 GMT
 -	Parent Layer: `966745b6c379ede67202ffed814189cec8ef482db7a6f75ffc6db32558b79cd2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
@@ -796,21 +796,21 @@ ENV SONAR_VERSION=5.4 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sona
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `76ebb45e02853e800d5d6df82ea8f01040de13734a90108efe7de864d81a610e`
+#### `66bde485ef26cc560d77a6b2bf57de3797e1845c16a2844667258a14a9927181`
 
 ```dockerfile
 EXPOSE 9000/tcp
 ```
 
--	Created: Tue, 26 Apr 2016 19:56:00 GMT
--	Parent Layer: `8b7c869668674eadf9074fcfb3b19b117cdd3e60ba8427e32544bb7221024b4e`
+-	Created: Thu, 05 May 2016 17:23:51 GMT
+-	Parent Layer: `4cb35a3d4f6a24d8ba08f02c71b15308ed24d62d02939d42467e8a6c37d3d170`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0ad52f12823f2c44ff7f5ba288e585dca2fb54d1507efb2fc672285778966c98`
+#### `7befc9e6c0a17697dc3ea48186e2e65ad4b23a1fb8977285dc09dcba83943894`
 
 ```dockerfile
 RUN set -x\
@@ -827,64 +827,64 @@ RUN set -x\
      && rm -rf $SONARQUBE_HOME/bin/*
 ```
 
--	Created: Tue, 26 Apr 2016 19:56:14 GMT
--	Parent Layer: `76ebb45e02853e800d5d6df82ea8f01040de13734a90108efe7de864d81a610e`
+-	Created: Thu, 05 May 2016 17:24:08 GMT
+-	Parent Layer: `66bde485ef26cc560d77a6b2bf57de3797e1845c16a2844667258a14a9927181`
 -	Docker Version: 1.9.1
--	Virtual Size: 146.7 MB (146654490 bytes)
--	v2 Blob: `sha256:8c0d54aa574cf1a3b519aa6a54896fac415e3ec7341c2f0f514658fd609a58c7`
--	v2 Content-Length: 122.4 MB (122427645 bytes)
--	v2 Last-Modified: Tue, 26 Apr 2016 20:06:34 GMT
+-	Virtual Size: 144.9 MB (144863031 bytes)
+-	v2 Blob: `sha256:0216f65aabf4db32fff7ce14d030665c5f92ab97f997472d8864414734e44980`
+-	v2 Content-Length: 120.8 MB (120780580 bytes)
+-	v2 Last-Modified: Thu, 05 May 2016 17:30:34 GMT
 
-#### `7fb81bf8f0f64b4edd36120e8bda1edb0c55f42f4e0a877e9062b78131862678`
+#### `0d1b641c036d015fc094e48823e90d810b0058827e9ac41f9a2729a6b330e58c`
 
 ```dockerfile
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
 ```
 
--	Created: Tue, 26 Apr 2016 19:56:17 GMT
--	Parent Layer: `0ad52f12823f2c44ff7f5ba288e585dca2fb54d1507efb2fc672285778966c98`
+-	Created: Thu, 05 May 2016 17:24:13 GMT
+-	Parent Layer: `7befc9e6c0a17697dc3ea48186e2e65ad4b23a1fb8977285dc09dcba83943894`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b5da10dfcd64c1da30cfbff86c42c79c1b91dc95e1186959d150f4bde9fa9600`
+#### `f4881484707238e92cc7f6d98ce88dc76c82d3c7b512a8098a1d25e54ad70ebf`
 
 ```dockerfile
 WORKDIR /opt/sonarqube
 ```
 
--	Created: Tue, 26 Apr 2016 19:56:18 GMT
--	Parent Layer: `7fb81bf8f0f64b4edd36120e8bda1edb0c55f42f4e0a877e9062b78131862678`
+-	Created: Thu, 05 May 2016 17:24:31 GMT
+-	Parent Layer: `0d1b641c036d015fc094e48823e90d810b0058827e9ac41f9a2729a6b330e58c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `17f1a2407e30e65b702764b358abd6c86a4e47df3b52f273357a750fc4b79b8d`
+#### `a38cb62946f20747afb148ac740d7f616c96e212f7ebe697da9d11f6a8332d69`
 
 ```dockerfile
-COPY file:ec07f1dd4d6e9905308c931fef46eb5679a0340b53a6eff97ffc6bbb883a0729 in /opt/sonarqube/bin/
+COPY file:449a7770a3f1a1e41f67c99ca9b384291cf721cf18b99f5359527c88cd6a4126 in /opt/sonarqube/bin/
 ```
 
--	Created: Tue, 26 Apr 2016 19:56:19 GMT
--	Parent Layer: `b5da10dfcd64c1da30cfbff86c42c79c1b91dc95e1186959d150f4bde9fa9600`
+-	Created: Thu, 05 May 2016 17:24:36 GMT
+-	Parent Layer: `f4881484707238e92cc7f6d98ce88dc76c82d3c7b512a8098a1d25e54ad70ebf`
 -	Docker Version: 1.9.1
--	Virtual Size: 383.0 B
--	v2 Blob: `sha256:854b6c17b5fe28c54f68845b739f65dd5f19f8ef93febb7487ba145d67d395e1`
--	v2 Content-Length: 421.0 B
--	v2 Last-Modified: Tue, 26 Apr 2016 20:06:13 GMT
+-	Virtual Size: 410.0 B
+-	v2 Blob: `sha256:d6a7c30ab96a51dd7534937c8b349624a00699e6a49f07cb0ec83320b4ac1aef`
+-	v2 Content-Length: 434.0 B
+-	v2 Last-Modified: Thu, 05 May 2016 17:29:54 GMT
 
-#### `09a1287cbe3578a637ed35d89653aed1dfc852de08842c62562d85a206a495e2`
+#### `9df1561d666d0db07e8fa0be2c91558c8292a9b573bec608d34cb10ae0b6b606`
 
 ```dockerfile
 ENTRYPOINT &{["./bin/run.sh"]}
 ```
 
--	Created: Tue, 26 Apr 2016 19:56:20 GMT
--	Parent Layer: `17f1a2407e30e65b702764b358abd6c86a4e47df3b52f273357a750fc4b79b8d`
+-	Created: Thu, 05 May 2016 17:24:39 GMT
+-	Parent Layer: `a38cb62946f20747afb148ac740d7f616c96e212f7ebe697da9d11f6a8332d69`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -894,11 +894,11 @@ ENTRYPOINT &{["./bin/run.sh"]}
 ## `sonarqube:lts`
 
 ```console
-$ docker pull library/sonarqube@sha256:43af663b8d8ff2a35eb92f5de42fac6dfcc26cd1ccf53b098c05af2ac4d89dc9
+$ docker pull library/sonarqube@sha256:e299b6301ddbfea4b791f6b6e043767c09684c6bd21f730d7e60639484e693df
 ```
 
--	Total Virtual Size: 924.3 MB (924342002 bytes)
--	Total v2 Content-Length: 400.7 MB (400717473 bytes)
+-	Total Virtual Size: 924.3 MB (924342029 bytes)
+-	Total v2 Content-Length: 400.7 MB (400717485 bytes)
 
 ### Layers (21)
 
@@ -1191,28 +1191,28 @@ WORKDIR /opt/sonarqube
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9e6c4cf6a6b2fdae038854fedd4acde63b8a63b19d43324b1350e6afec3eb988`
+#### `126f240bd6631de1339dd8629bce64dd2c9ca99135d5493bdbb6ef439332a710`
 
 ```dockerfile
-COPY file:75a1e489e832cdb87849d864b21177f35accc66edd48824452bc6f5e8e7d67ac in /opt/sonarqube/bin/
+COPY file:330f77bff6fc3e447c0b56894f0b8a51ebb2164b4eb1f914fba8d5854569e637 in /opt/sonarqube/bin/
 ```
 
--	Created: Tue, 26 Apr 2016 20:01:26 GMT
+-	Created: Thu, 05 May 2016 17:26:14 GMT
 -	Parent Layer: `4ebef52676bae44d67c04d4ebe77b9589067f710992111b08acbf24e10ad49bc`
 -	Docker Version: 1.9.1
--	Virtual Size: 385.0 B
--	v2 Blob: `sha256:5fb3b2053cd63b8e470805d57a16bdc3f80a467612d0a7fc1894dfe709669318`
--	v2 Content-Length: 423.0 B
--	v2 Last-Modified: Tue, 26 Apr 2016 20:07:20 GMT
+-	Virtual Size: 412.0 B
+-	v2 Blob: `sha256:c5007ac037cc1987c3ae7caaa787e5da1a64599dce71f1943b22f28b9632bb28`
+-	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Thu, 05 May 2016 17:31:05 GMT
 
-#### `c6359c35aa2b7e28525f4a9bd7b0c1b3bc926a9cf0b0c39464ec9294986a2eb3`
+#### `32e9cd5b1597119bc14b8704a5aeac8826bbe41de4a8b65f8cd010a648a6af34`
 
 ```dockerfile
 ENTRYPOINT &{["./bin/run.sh"]}
 ```
 
--	Created: Tue, 26 Apr 2016 20:01:27 GMT
--	Parent Layer: `9e6c4cf6a6b2fdae038854fedd4acde63b8a63b19d43324b1350e6afec3eb988`
+-	Created: Thu, 05 May 2016 17:26:16 GMT
+-	Parent Layer: `126f240bd6631de1339dd8629bce64dd2c9ca99135d5493bdbb6ef439332a710`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1222,11 +1222,11 @@ ENTRYPOINT &{["./bin/run.sh"]}
 ## `sonarqube:4.5.7`
 
 ```console
-$ docker pull library/sonarqube@sha256:b0fd2f2725ba1762b3d5f3fab30dd428ce77d0ffc3e92e3fc41f9143fd77847f
+$ docker pull library/sonarqube@sha256:f3987e07b88a905adfaf68595251ef4cf5c18c0946f934f0cfc4d54e22c11949
 ```
 
--	Total Virtual Size: 924.3 MB (924342002 bytes)
--	Total v2 Content-Length: 400.7 MB (400717473 bytes)
+-	Total Virtual Size: 924.3 MB (924342029 bytes)
+-	Total v2 Content-Length: 400.7 MB (400717485 bytes)
 
 ### Layers (21)
 
@@ -1519,28 +1519,28 @@ WORKDIR /opt/sonarqube
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9e6c4cf6a6b2fdae038854fedd4acde63b8a63b19d43324b1350e6afec3eb988`
+#### `126f240bd6631de1339dd8629bce64dd2c9ca99135d5493bdbb6ef439332a710`
 
 ```dockerfile
-COPY file:75a1e489e832cdb87849d864b21177f35accc66edd48824452bc6f5e8e7d67ac in /opt/sonarqube/bin/
+COPY file:330f77bff6fc3e447c0b56894f0b8a51ebb2164b4eb1f914fba8d5854569e637 in /opt/sonarqube/bin/
 ```
 
--	Created: Tue, 26 Apr 2016 20:01:26 GMT
+-	Created: Thu, 05 May 2016 17:26:14 GMT
 -	Parent Layer: `4ebef52676bae44d67c04d4ebe77b9589067f710992111b08acbf24e10ad49bc`
 -	Docker Version: 1.9.1
--	Virtual Size: 385.0 B
--	v2 Blob: `sha256:5fb3b2053cd63b8e470805d57a16bdc3f80a467612d0a7fc1894dfe709669318`
--	v2 Content-Length: 423.0 B
--	v2 Last-Modified: Tue, 26 Apr 2016 20:07:20 GMT
+-	Virtual Size: 412.0 B
+-	v2 Blob: `sha256:c5007ac037cc1987c3ae7caaa787e5da1a64599dce71f1943b22f28b9632bb28`
+-	v2 Content-Length: 435.0 B
+-	v2 Last-Modified: Thu, 05 May 2016 17:31:05 GMT
 
-#### `c6359c35aa2b7e28525f4a9bd7b0c1b3bc926a9cf0b0c39464ec9294986a2eb3`
+#### `32e9cd5b1597119bc14b8704a5aeac8826bbe41de4a8b65f8cd010a648a6af34`
 
 ```dockerfile
 ENTRYPOINT &{["./bin/run.sh"]}
 ```
 
--	Created: Tue, 26 Apr 2016 20:01:27 GMT
--	Parent Layer: `9e6c4cf6a6b2fdae038854fedd4acde63b8a63b19d43324b1350e6afec3eb988`
+-	Created: Thu, 05 May 2016 17:26:16 GMT
+-	Parent Layer: `126f240bd6631de1339dd8629bce64dd2c9ca99135d5493bdbb6ef439332a710`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1550,11 +1550,11 @@ ENTRYPOINT &{["./bin/run.sh"]}
 ## `sonarqube:4.5.7-alpine`
 
 ```console
-$ docker pull library/sonarqube@sha256:d21fb8dcbfb4f2774fd6921d8b7d1caaa1368eaf84000c15d582cbf402da5d52
+$ docker pull library/sonarqube@sha256:fb6f561f35bf7bd54264bb7051c0876c0e07f94536d44549d54fe9e011b4c8c3
 ```
 
--	Total Virtual Size: 264.3 MB (264281918 bytes)
--	Total v2 Content-Length: 145.1 MB (145069110 bytes)
+-	Total Virtual Size: 264.3 MB (264281945 bytes)
+-	Total v2 Content-Length: 145.1 MB (145069123 bytes)
 
 ### Layers (17)
 
@@ -1787,28 +1787,28 @@ WORKDIR /opt/sonarqube
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c81a9ac5d5a5550b8c9894914e033adb966c5f15459ec8fd7197615b51119bc5`
+#### `86af7a0f5af461adf6275a3062e19a9cd39ae12f8d73652ead974ce40a270798`
 
 ```dockerfile
-COPY file:ec07f1dd4d6e9905308c931fef46eb5679a0340b53a6eff97ffc6bbb883a0729 in /opt/sonarqube/bin/
+COPY file:449a7770a3f1a1e41f67c99ca9b384291cf721cf18b99f5359527c88cd6a4126 in /opt/sonarqube/bin/
 ```
 
--	Created: Tue, 26 Apr 2016 20:05:25 GMT
+-	Created: Thu, 05 May 2016 17:28:40 GMT
 -	Parent Layer: `d6093cdbd29407dafbb946f41b4154520377308c7e6d7f3f56e0875d251501f4`
 -	Docker Version: 1.9.1
--	Virtual Size: 383.0 B
--	v2 Blob: `sha256:5d4905e10ee3d63a1c9a5d7a3cf69a2b294efedb709923e94be13bb2ce3e6271`
--	v2 Content-Length: 420.0 B
--	v2 Last-Modified: Tue, 26 Apr 2016 20:08:02 GMT
+-	Virtual Size: 410.0 B
+-	v2 Blob: `sha256:1883262164c9d3099f803e8b5aea75b05716424b38e8c34f73104d090d259c1c`
+-	v2 Content-Length: 433.0 B
+-	v2 Last-Modified: Thu, 05 May 2016 17:31:51 GMT
 
-#### `9a380a4945d7b61f39c7e0e01328463bb3354b3961a56217ff5e6daa81bf2feb`
+#### `0a36e18ef15930a987d99ead0dc0ce84dc7b7d0ef452e58c06ddeaea37c8e731`
 
 ```dockerfile
 ENTRYPOINT &{["./bin/run.sh"]}
 ```
 
--	Created: Tue, 26 Apr 2016 20:05:26 GMT
--	Parent Layer: `c81a9ac5d5a5550b8c9894914e033adb966c5f15459ec8fd7197615b51119bc5`
+-	Created: Thu, 05 May 2016 17:28:42 GMT
+-	Parent Layer: `86af7a0f5af461adf6275a3062e19a9cd39ae12f8d73652ead974ce40a270798`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
