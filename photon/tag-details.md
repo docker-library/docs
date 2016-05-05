@@ -9,11 +9,11 @@
 ## `photon:1.0RC`
 
 ```console
-$ docker pull library/photon@sha256:bcb91f899f48a2f92cb16c624515f1f5eafa62aa55408ea49fdb09c489af127a
+$ docker pull library/photon@sha256:23a0bce395793d74718dabfa48f6e80886ce778ae55aea8ece83f64ddddfde71
 ```
 
--	Total Virtual Size: 122.9 MB (122869449 bytes)
--	Total v2 Content-Length: 45.3 MB (45333142 bytes)
+-	Total Virtual Size: 122.9 MB (122870571 bytes)
+-	Total v2 Content-Length: 45.3 MB (45330912 bytes)
 
 ### Layers (3)
 
@@ -30,28 +30,28 @@ MAINTAINER Fabio Rapposelli <fabio@vmware.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2d3139ecfb3659d3ca18b4d5e9665c6f92418616fce378b956325da08e787d22`
+#### `09f855b6bcb7462451fa36e77b880f21f76e232c789b5e8f3c872a07d086811a`
 
 ```dockerfile
-ADD file:70b04325b8b27cd096e2a9c024eb0066cd0027c36efe38569bbf007690f3ba08 in /
+ADD file:1f914ab5f8d6605b991328737b2cd91e24d28fb6d4731ab365ff33df8b03a84c in /
 ```
 
--	Created: Mon, 02 May 2016 18:31:33 GMT
+-	Created: Thu, 05 May 2016 00:33:48 GMT
 -	Parent Layer: `2b04b19ccb4f7da5abb5ee546b39af6788803d7fdc1de63ef8641ee1ec3fe24e`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.9 MB (122869449 bytes)
--	v2 Blob: `sha256:b66682c16e731c0a4ab5d2d88c48b5512b74ea265be3e3ecf6b293c47e0d83f7`
--	v2 Content-Length: 45.3 MB (45333078 bytes)
--	v2 Last-Modified: Mon, 02 May 2016 18:33:52 GMT
+-	Virtual Size: 122.9 MB (122870571 bytes)
+-	v2 Blob: `sha256:ff00e24881ccc7633577b090f22daf7ade19053d21fff8a42f9cf00ba17c59a2`
+-	v2 Content-Length: 45.3 MB (45330848 bytes)
+-	v2 Last-Modified: Thu, 05 May 2016 00:36:54 GMT
 
-#### `e330736931def4eed8d78e17670a9ff17c3e09813aaa06c480a77a82349c103f`
+#### `65044c3e6dabbcfcd2ea44cc79df4bc22df6d2c62b59b4f1418b21febaca273b`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 02 May 2016 18:31:50 GMT
--	Parent Layer: `2d3139ecfb3659d3ca18b4d5e9665c6f92418616fce378b956325da08e787d22`
+-	Created: Thu, 05 May 2016 00:33:59 GMT
+-	Parent Layer: `09f855b6bcb7462451fa36e77b880f21f76e232c789b5e8f3c872a07d086811a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -61,11 +61,11 @@ CMD ["/bin/bash"]
 ## `photon:latest`
 
 ```console
-$ docker pull library/photon@sha256:f3ccbd4a5a6f1c42d916b000b73a8fd2880fa770789c3f5f92435e7eb9a2bead
+$ docker pull library/photon@sha256:da6987646316af219748de5528dda0fffb232cab9ce30e6a16bf7cd68bd0b8d0
 ```
 
--	Total Virtual Size: 122.9 MB (122869449 bytes)
--	Total v2 Content-Length: 45.3 MB (45333142 bytes)
+-	Total Virtual Size: 122.9 MB (122870571 bytes)
+-	Total v2 Content-Length: 45.3 MB (45330912 bytes)
 
 ### Layers (3)
 
@@ -82,28 +82,28 @@ MAINTAINER Fabio Rapposelli <fabio@vmware.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2d3139ecfb3659d3ca18b4d5e9665c6f92418616fce378b956325da08e787d22`
+#### `09f855b6bcb7462451fa36e77b880f21f76e232c789b5e8f3c872a07d086811a`
 
 ```dockerfile
-ADD file:70b04325b8b27cd096e2a9c024eb0066cd0027c36efe38569bbf007690f3ba08 in /
+ADD file:1f914ab5f8d6605b991328737b2cd91e24d28fb6d4731ab365ff33df8b03a84c in /
 ```
 
--	Created: Mon, 02 May 2016 18:31:33 GMT
+-	Created: Thu, 05 May 2016 00:33:48 GMT
 -	Parent Layer: `2b04b19ccb4f7da5abb5ee546b39af6788803d7fdc1de63ef8641ee1ec3fe24e`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.9 MB (122869449 bytes)
--	v2 Blob: `sha256:b66682c16e731c0a4ab5d2d88c48b5512b74ea265be3e3ecf6b293c47e0d83f7`
--	v2 Content-Length: 45.3 MB (45333078 bytes)
--	v2 Last-Modified: Mon, 02 May 2016 18:33:52 GMT
+-	Virtual Size: 122.9 MB (122870571 bytes)
+-	v2 Blob: `sha256:ff00e24881ccc7633577b090f22daf7ade19053d21fff8a42f9cf00ba17c59a2`
+-	v2 Content-Length: 45.3 MB (45330848 bytes)
+-	v2 Last-Modified: Thu, 05 May 2016 00:36:54 GMT
 
-#### `e330736931def4eed8d78e17670a9ff17c3e09813aaa06c480a77a82349c103f`
+#### `65044c3e6dabbcfcd2ea44cc79df4bc22df6d2c62b59b4f1418b21febaca273b`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 02 May 2016 18:31:50 GMT
--	Parent Layer: `2d3139ecfb3659d3ca18b4d5e9665c6f92418616fce378b956325da08e787d22`
+-	Created: Thu, 05 May 2016 00:33:59 GMT
+-	Parent Layer: `09f855b6bcb7462451fa36e77b880f21f76e232c789b5e8f3c872a07d086811a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
