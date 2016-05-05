@@ -52,13 +52,15 @@ The following are only needed if `ME_CONFIG_MONGODB_ENABLE_ADMIN` is **"false"**
 
 ## Example
 
-	docker run -it --rm \
-	    --name mongo-express \
-	    --link web_db_1:mongo \
-	    -p 8081:8081 \
-	    -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
-	    -e ME_CONFIG_BASICAUTH_USERNAME="user" \
-	    -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
-	    mongo-express
+```console
+$ docker run -it --rm \
+    --name mongo-express \
+    --link web_db_1:mongo \
+    -p 8081:8081 \
+    -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
+    -e ME_CONFIG_BASICAUTH_USERNAME="user" \
+    -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
+    mongo-express
+```
 
 This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.
