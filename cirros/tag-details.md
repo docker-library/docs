@@ -169,7 +169,7 @@ CMD ["/sbin/init"]
 ## `cirros:0.3.3`
 
 ```console
-$ docker pull library/cirros@sha256:2b8f44be7f60fbb304db5049544d1aed3d5aa8497f31628aa55accd166b0795d
+$ docker pull library/cirros@sha256:8cb367af4099c2616e435c5042073f1e979d3fa09b21bde5aba2a46d9aa4af2f
 ```
 
 -	Total Virtual Size: 7.7 MB (7698435 bytes)
