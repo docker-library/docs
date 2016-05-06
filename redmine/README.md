@@ -4,12 +4,12 @@
 -	[`2.6.10-passenger`, `2.6-passenger`, `2-passenger` (*2.6/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/9fdf8a16772d46ce8b9596c1edf887b96700f71c/2.6/passenger/Dockerfile)
 -	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/99752f3d9bc5ccd9f69d16e2105d287df17f5ac2/3.0/Dockerfile)
 -	[`3.0.7-passenger`, `3.0-passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/9fdf8a16772d46ce8b9596c1edf887b96700f71c/3.0/passenger/Dockerfile)
--	[`3.1.4`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/59319e8ad8ddd777d88b76de6bb10cc7e54d01b3/3.1/Dockerfile)
--	[`3.1.4-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/9fdf8a16772d46ce8b9596c1edf887b96700f71c/3.1/passenger/Dockerfile)
--	[`3.2.1`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/59319e8ad8ddd777d88b76de6bb10cc7e54d01b3/3.2/Dockerfile)
--	[`3.2.1-passenger`, `3.2-passenger`, `3-passenger`, `passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/9fdf8a16772d46ce8b9596c1edf887b96700f71c/3.2/passenger/Dockerfile)
+-	[`3.1.5`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/a96891cab13e6e0fac72fc94761a65a5e953c811/3.1/Dockerfile)
+-	[`3.1.5-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/9fdf8a16772d46ce8b9596c1edf887b96700f71c/3.1/passenger/Dockerfile)
+-	[`3.2.2`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/a96891cab13e6e0fac72fc94761a65a5e953c811/3.2/Dockerfile)
+-	[`3.2.2-passenger`, `3.2-passenger`, `3-passenger`, `passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/9fdf8a16772d46ce8b9596c1edf887b96700f71c/3.2/passenger/Dockerfile)
 
-[![](https://badge.imagelayers.io/redmine:latest.svg)](https://imagelayers.io/?images=redmine:2.6.10,redmine:2.6.10-passenger,redmine:3.0.7,redmine:3.0.7-passenger,redmine:3.1.4,redmine:3.1.4-passenger,redmine:3.2.1,redmine:3.2.1-passenger)
+[![](https://badge.imagelayers.io/redmine:latest.svg)](https://imagelayers.io/?images=redmine:2.6.10,redmine:2.6.10-passenger,redmine:3.0.7,redmine:3.0.7-passenger,redmine:3.1.5,redmine:3.1.5-passenger,redmine:3.2.2,redmine:3.2.2-passenger)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredmine).
 

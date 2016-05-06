@@ -4,10 +4,10 @@
 -	[`7.43-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/865f61938fe7f37359d8feeb13bb03bff8f11387/7/fpm/Dockerfile)
 -	[`8.0.6-apache`, `8.0.6`, `8.0-apache`, `8.0` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/54f9aa4a327fd221cacf2f59b71682ca4004d231/8.0/apache/Dockerfile)
 -	[`8.0.6-fpm`, `8.0-fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/280071cdbb819aae47263463a32bf217741f2a0f/8.0/fpm/Dockerfile)
--	[`8.1.0-apache`, `8.1.0`, `8.1-apache`, `8.1`, `8-apache`, `8`, `apache`, `latest` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/a1a4c0913741dbe3c1e87fa860c36b0987999f9f/8.1/apache/Dockerfile)
--	[`8.1.0-fpm`, `8.1-fpm`, `8-fpm`, `fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/a1a4c0913741dbe3c1e87fa860c36b0987999f9f/8.1/fpm/Dockerfile)
+-	[`8.1.1-apache`, `8.1.1`, `8.1-apache`, `8.1`, `8-apache`, `8`, `apache`, `latest` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/ad579f7702b32722dd11af054e2f8e11ef269fd9/8.1/apache/Dockerfile)
+-	[`8.1.1-fpm`, `8.1-fpm`, `8-fpm`, `fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/ad579f7702b32722dd11af054e2f8e11ef269fd9/8.1/fpm/Dockerfile)
 
-[![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.43-apache,drupal:7.43-fpm,drupal:8.0.6-apache,drupal:8.0.6-fpm,drupal:8.1.0-apache,drupal:8.1.0-fpm)
+[![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.43-apache,drupal:7.43-fpm,drupal:8.0.6-apache,drupal:8.0.6-fpm,drupal:8.1.1-apache,drupal:8.1.1-fpm)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdrupal).
 
