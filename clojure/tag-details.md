@@ -786,42 +786,42 @@ CMD ["lein" "run"]
 ## `clojure:alpine`
 
 ```console
-$ docker pull library/clojure@sha256:ca45005a9a542aa2fc8cbf43e7c3cd56d66ee93bf98a8b597bcbe329d98deaf6
+$ docker pull library/clojure@sha256:4904927dee00ced705effd25a271b54a3815e6446a688a56001211bac08d175d
 ```
 
--	Total Virtual Size: 172.1 MB (172137732 bytes)
--	Total v2 Content-Length: 70.3 MB (70288866 bytes)
+-	Total Virtual Size: 172.1 MB (172136452 bytes)
+-	Total v2 Content-Length: 70.3 MB (70289334 bytes)
 
 ### Layers (17)
 
-#### `f58d61a874bedb7cdcb5a409ebb0c53b0656b880695c14e78a69902873358d5f`
+#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
 
 ```dockerfile
-ADD file:033ab063740d9ff4dcfb1c69eccf25f91d88729f57cd5a73050e014e3e094aa0 in /
+ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 ```
 
--	Created: Fri, 01 Apr 2016 20:53:00 GMT
+-	Created: Fri, 06 May 2016 14:56:49 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4798063 bytes)
--	v2 Blob: `sha256:420890c9e918b6668faaedd9000e220190f2493b0693ee563ebd7b4cc754a57d`
--	v2 Content-Length: 2.3 MB (2319870 bytes)
--	v2 Last-Modified: Fri, 01 Apr 2016 20:55:41 GMT
+-	Virtual Size: 4.8 MB (4796783 bytes)
+-	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
+-	v2 Content-Length: 2.3 MB (2320212 bytes)
+-	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `7d9e798ad509a93c6124aa2ac03ed67052b86b5cd351bf199f8afe98e38f7dfe`
+#### `871f1c4367d8ba0c9b87a1c21c5d5ee5736c89e31f2f07e43b54cdb1985e5b21`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Mon, 04 Apr 2016 23:03:44 GMT
--	Parent Layer: `f58d61a874bedb7cdcb5a409ebb0c53b0656b880695c14e78a69902873358d5f`
+-	Created: Fri, 06 May 2016 15:17:47 GMT
+-	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `974799d24faa9a236e647327d69cb918c2def18849f8cbf576a1908b1d859290`
+#### `c8ea4b1847c408e1927de77838673b034143c6df255f0100613605198ab2c292`
 
 ```dockerfile
 RUN { \
@@ -833,71 +833,71 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Mon, 04 Apr 2016 23:03:46 GMT
--	Parent Layer: `7d9e798ad509a93c6124aa2ac03ed67052b86b5cd351bf199f8afe98e38f7dfe`
+-	Created: Fri, 06 May 2016 15:17:49 GMT
+-	Parent Layer: `871f1c4367d8ba0c9b87a1c21c5d5ee5736c89e31f2f07e43b54cdb1985e5b21`
 -	Docker Version: 1.9.1
 -	Virtual Size: 87.0 B
--	v2 Blob: `sha256:4a5cf8bc29315a058ea869df9f4cb4a5dd9369d8d61476df2602c290458e8b96`
--	v2 Content-Length: 230.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:41:03 GMT
+-	v2 Blob: `sha256:05bee9feaa04864e2dc7b182701bd903771384cc92c40bff299401e037c3d4c9`
+-	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Fri, 06 May 2016 17:53:38 GMT
 
-#### `459863e9105e09c49a56364f2feec3bfb5b3f6fea98b2c7f7025a28af7dff3a4`
+#### `da4344b6a29eac2950d8ac44cb49656cc4db877f7f5a779acb2c95d4fd56cf9a`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
 ```
 
--	Created: Mon, 04 Apr 2016 23:16:25 GMT
--	Parent Layer: `974799d24faa9a236e647327d69cb918c2def18849f8cbf576a1908b1d859290`
+-	Created: Fri, 06 May 2016 15:20:50 GMT
+-	Parent Layer: `c8ea4b1847c408e1927de77838673b034143c6df255f0100613605198ab2c292`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b869af3f64d229792236ea7fe09ec22a2d0c819ee959590aa5127eb9ae497efc`
+#### `29c69859a59bd6bfdadf743d03df5d908ee3c725d9046a35f02858508eabdb6a`
 
 ```dockerfile
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin
 ```
 
--	Created: Mon, 04 Apr 2016 23:16:26 GMT
--	Parent Layer: `459863e9105e09c49a56364f2feec3bfb5b3f6fea98b2c7f7025a28af7dff3a4`
+-	Created: Fri, 06 May 2016 15:20:52 GMT
+-	Parent Layer: `da4344b6a29eac2950d8ac44cb49656cc4db877f7f5a779acb2c95d4fd56cf9a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c374c22a92ba3f26642ce8f197b0116e1b1b8cf11a4d18737ab20025e92a0626`
+#### `27b29a2c94448d720c61334f1d8747710abebd8ad48949b261dcf40e9630ddd6`
 
 ```dockerfile
 ENV JAVA_VERSION=8u77
 ```
 
--	Created: Mon, 04 Apr 2016 23:16:26 GMT
--	Parent Layer: `b869af3f64d229792236ea7fe09ec22a2d0c819ee959590aa5127eb9ae497efc`
+-	Created: Fri, 06 May 2016 15:20:53 GMT
+-	Parent Layer: `29c69859a59bd6bfdadf743d03df5d908ee3c725d9046a35f02858508eabdb6a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b15b95f25b250ab2c6ea78ac1af9a57952baf3ac8523222372e689ab7077b902`
+#### `9df81c1f2a021128eb9ce4822cdc9c44c4c4cd03d867c35b3bcacd6424e55c87`
 
 ```dockerfile
 ENV JAVA_ALPINE_VERSION=8.77.03-r0
 ```
 
--	Created: Mon, 04 Apr 2016 23:16:27 GMT
--	Parent Layer: `c374c22a92ba3f26642ce8f197b0116e1b1b8cf11a4d18737ab20025e92a0626`
+-	Created: Fri, 06 May 2016 15:20:55 GMT
+-	Parent Layer: `27b29a2c94448d720c61334f1d8747710abebd8ad48949b261dcf40e9630ddd6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `850b6fe6c4193b5aa51e2bbf636c3d3eaa68866acce5ddedfabe4d1bfde5db18`
+#### `06c0580833e1d78501d560bb7ce149782677b98931ad519e97160a5842c89ab2`
 
 ```dockerfile
 RUN set -x \
@@ -906,139 +906,139 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Mon, 04 Apr 2016 23:16:33 GMT
--	Parent Layer: `b15b95f25b250ab2c6ea78ac1af9a57952baf3ac8523222372e689ab7077b902`
+-	Created: Fri, 06 May 2016 15:21:02 GMT
+-	Parent Layer: `9df81c1f2a021128eb9ce4822cdc9c44c4c4cd03d867c35b3bcacd6424e55c87`
 -	Docker Version: 1.9.1
 -	Virtual Size: 140.7 MB (140671993 bytes)
--	v2 Blob: `sha256:7252eea026b82c4ccf9e68d936242c28caecc0afc6cb27c979bab5f27e57670c`
--	v2 Content-Length: 49.6 MB (49583918 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:48:08 GMT
+-	v2 Blob: `sha256:293ce90f776231cc9bf751e8c4e08e076cbf13d61de5391c75402cb277171ba2`
+-	v2 Content-Length: 49.6 MB (49583990 bytes)
+-	v2 Last-Modified: Fri, 06 May 2016 17:58:16 GMT
 
-#### `14faf53f12cb06670040cdbd482aaa727826cd5b6c1c0090c0e056beb71b5156`
+#### `dabbbb7dc5ff55222c4d6d37290faf73c8cba17119192c254dc4e3d7ef1fb132`
 
 ```dockerfile
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
 ```
 
--	Created: Tue, 05 Apr 2016 17:20:57 GMT
--	Parent Layer: `850b6fe6c4193b5aa51e2bbf636c3d3eaa68866acce5ddedfabe4d1bfde5db18`
+-	Created: Fri, 06 May 2016 17:38:41 GMT
+-	Parent Layer: `06c0580833e1d78501d560bb7ce149782677b98931ad519e97160a5842c89ab2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e75615f68e988cae41b807b27faad5b85172846a17967cf791b3a2447828295`
+#### `abee5a894c84bfab6785d09a7eec1195fd95b1972013dd1d793a5142cc1f0cf4`
 
 ```dockerfile
 ENV LEIN_VERSION=2.6.1
 ```
 
--	Created: Tue, 05 Apr 2016 17:20:58 GMT
--	Parent Layer: `14faf53f12cb06670040cdbd482aaa727826cd5b6c1c0090c0e056beb71b5156`
+-	Created: Fri, 06 May 2016 17:38:43 GMT
+-	Parent Layer: `dabbbb7dc5ff55222c4d6d37290faf73c8cba17119192c254dc4e3d7ef1fb132`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `82f8ae5c8ddea9e1d01633f57f50632b918b40d387c3b28d6abb87a958acb71f`
+#### `144862a6656f23954d1cfb0f924a0b66a17880ed4e2bdfb6330bc68093d8fa2f`
 
 ```dockerfile
 ENV LEIN_INSTALL=/usr/local/bin/
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:00 GMT
--	Parent Layer: `0e75615f68e988cae41b807b27faad5b85172846a17967cf791b3a2447828295`
+-	Created: Fri, 06 May 2016 17:38:44 GMT
+-	Parent Layer: `abee5a894c84bfab6785d09a7eec1195fd95b1972013dd1d793a5142cc1f0cf4`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `15a8dfd40aeb8b15a6fa87b977370d1349bfc916652066d63fc302d3c333a9e5`
+#### `c936f0edb2795fccbfd1846b164e904f2eeb5b52379f026de8cbbd397f90b94c`
 
 ```dockerfile
 WORKDIR /tmp
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:01 GMT
--	Parent Layer: `82f8ae5c8ddea9e1d01633f57f50632b918b40d387c3b28d6abb87a958acb71f`
+-	Created: Fri, 06 May 2016 17:38:45 GMT
+-	Parent Layer: `144862a6656f23954d1cfb0f924a0b66a17880ed4e2bdfb6330bc68093d8fa2f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `df17099da78bb5d95679367e97f85a0ccb3f3cab5793f91f8b216e65fe2bfd5b`
+#### `be50827cfbbc26ec161f2920af6da2b6924aedb9332ff2cfc6457793a927603d`
 
 ```dockerfile
 RUN apk add --update tar gnupg bash && rm -rf /var/cache/apk/*
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:07 GMT
--	Parent Layer: `15a8dfd40aeb8b15a6fa87b977370d1349bfc916652066d63fc302d3c333a9e5`
+-	Created: Fri, 06 May 2016 17:38:52 GMT
+-	Parent Layer: `c936f0edb2795fccbfd1846b164e904f2eeb5b52379f026de8cbbd397f90b94c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.3 MB (11307714 bytes)
--	v2 Blob: `sha256:4991cf6a4a6a1bbfac95ea36dfdbc3880f06a205e2befd790caa55ee185a12f0`
--	v2 Content-Length: 4.6 MB (4603293 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 17:31:38 GMT
+-	v2 Blob: `sha256:31fe9de0c04c8379f2462fede0e98d22e9011fc290a45d8779245422eace3bf5`
+-	v2 Content-Length: 4.6 MB (4603342 bytes)
+-	v2 Last-Modified: Fri, 06 May 2016 18:27:03 GMT
 
-#### `eef8e8ae9388e94bbf86ee2f02e430e97752ae29e35f578f9af3dc9ed4a0d3fb`
+#### `5e8760c0e33da4989666bddfadb5c8631b761c661f5f677c28521843d706eb7e`
 
 ```dockerfile
 RUN mkdir -p $LEIN_INSTALL   && wget -q https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f7643a14fd8a4d5c19eeb416db8ea549d8d2c18a *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mkdir -p /usr/share/java   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:42 GMT
--	Parent Layer: `df17099da78bb5d95679367e97f85a0ccb3f3cab5793f91f8b216e65fe2bfd5b`
+-	Created: Fri, 06 May 2016 17:39:20 GMT
+-	Parent Layer: `be50827cfbbc26ec161f2920af6da2b6924aedb9332ff2cfc6457793a927603d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 15.4 MB (15359875 bytes)
--	v2 Blob: `sha256:168c27b30ec64a80cc167050286e38fda0b637a473d0cf1a613b8829d90bb90c`
--	v2 Content-Length: 13.8 MB (13781036 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 17:31:24 GMT
+-	v2 Blob: `sha256:641a817a3ce221e4031b11a4eebe7b7ec8be49f4e9640ef8320bbf7b4d770dad`
+-	v2 Content-Length: 13.8 MB (13781041 bytes)
+-	v2 Last-Modified: Fri, 06 May 2016 18:26:56 GMT
 
-#### `72aec78353b6dd4d02611a11caedfec11739c44135c5ea7d289f422b4844ed29`
+#### `3a25d16aaabc30784b04067489ed81ad8caf95b99fcdd5aed7c85ca0afd8ae1a`
 
 ```dockerfile
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:46 GMT
--	Parent Layer: `eef8e8ae9388e94bbf86ee2f02e430e97752ae29e35f578f9af3dc9ed4a0d3fb`
+-	Created: Fri, 06 May 2016 17:39:20 GMT
+-	Parent Layer: `5e8760c0e33da4989666bddfadb5c8631b761c661f5f677c28521843d706eb7e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `be1d45b21025e4d63239c0f8d763d56f3d81ebe746e71ca60349660e5594d0e2`
+#### `498c9a10146ebfadd2b0d15f8d205fd343e0b2f875d40e81b203c8a2a0c9095f`
 
 ```dockerfile
 ENV LEIN_ROOT=1
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:49 GMT
--	Parent Layer: `72aec78353b6dd4d02611a11caedfec11739c44135c5ea7d289f422b4844ed29`
+-	Created: Fri, 06 May 2016 17:39:21 GMT
+-	Parent Layer: `3a25d16aaabc30784b04067489ed81ad8caf95b99fcdd5aed7c85ca0afd8ae1a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `10d744a678af7f47456cf9209d6c4882fd47c6e198cc92f295bfe84f38f7dfcd`
+#### `283971a361db9cf1779f5fcce61762ff825648eb25ef663c98c7490aa189be8b`
 
 ```dockerfile
 RUN lein
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:59 GMT
--	Parent Layer: `be1d45b21025e4d63239c0f8d763d56f3d81ebe746e71ca60349660e5594d0e2`
+-	Created: Fri, 06 May 2016 17:39:26 GMT
+-	Parent Layer: `498c9a10146ebfadd2b0d15f8d205fd343e0b2f875d40e81b203c8a2a0c9095f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:5ed685b9fa58b362967d70d9eb2177220afc827ae03c7530bcfda3126b2d9ea7`
--	v2 Content-Length: 167.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 17:31:06 GMT
+-	v2 Blob: `sha256:d52a0ad201fc2c5d7d61012df38e785a57ad05bbae513fdbf75c1f126aae663d`
+-	v2 Content-Length: 166.0 B
+-	v2 Last-Modified: Fri, 06 May 2016 18:26:47 GMT
 
 ## `clojure:lein-2.6.1`
 
@@ -1817,42 +1817,42 @@ CMD ["lein" "run"]
 ## `clojure:lein-2.6.1-alpine`
 
 ```console
-$ docker pull library/clojure@sha256:8d8ce9557fb9e2d0136c85f4ffdca57b414f5f552e3107071122cb4be1abf06b
+$ docker pull library/clojure@sha256:1f015f8a83aaaa7853afddf4b477c9e0ff5d8013170235b4075344a88b8cc6d2
 ```
 
--	Total Virtual Size: 172.1 MB (172137732 bytes)
--	Total v2 Content-Length: 70.3 MB (70288866 bytes)
+-	Total Virtual Size: 172.1 MB (172136452 bytes)
+-	Total v2 Content-Length: 70.3 MB (70289334 bytes)
 
 ### Layers (17)
 
-#### `f58d61a874bedb7cdcb5a409ebb0c53b0656b880695c14e78a69902873358d5f`
+#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
 
 ```dockerfile
-ADD file:033ab063740d9ff4dcfb1c69eccf25f91d88729f57cd5a73050e014e3e094aa0 in /
+ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 ```
 
--	Created: Fri, 01 Apr 2016 20:53:00 GMT
+-	Created: Fri, 06 May 2016 14:56:49 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4798063 bytes)
--	v2 Blob: `sha256:420890c9e918b6668faaedd9000e220190f2493b0693ee563ebd7b4cc754a57d`
--	v2 Content-Length: 2.3 MB (2319870 bytes)
--	v2 Last-Modified: Fri, 01 Apr 2016 20:55:41 GMT
+-	Virtual Size: 4.8 MB (4796783 bytes)
+-	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
+-	v2 Content-Length: 2.3 MB (2320212 bytes)
+-	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `7d9e798ad509a93c6124aa2ac03ed67052b86b5cd351bf199f8afe98e38f7dfe`
+#### `871f1c4367d8ba0c9b87a1c21c5d5ee5736c89e31f2f07e43b54cdb1985e5b21`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Mon, 04 Apr 2016 23:03:44 GMT
--	Parent Layer: `f58d61a874bedb7cdcb5a409ebb0c53b0656b880695c14e78a69902873358d5f`
+-	Created: Fri, 06 May 2016 15:17:47 GMT
+-	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `974799d24faa9a236e647327d69cb918c2def18849f8cbf576a1908b1d859290`
+#### `c8ea4b1847c408e1927de77838673b034143c6df255f0100613605198ab2c292`
 
 ```dockerfile
 RUN { \
@@ -1864,71 +1864,71 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Mon, 04 Apr 2016 23:03:46 GMT
--	Parent Layer: `7d9e798ad509a93c6124aa2ac03ed67052b86b5cd351bf199f8afe98e38f7dfe`
+-	Created: Fri, 06 May 2016 15:17:49 GMT
+-	Parent Layer: `871f1c4367d8ba0c9b87a1c21c5d5ee5736c89e31f2f07e43b54cdb1985e5b21`
 -	Docker Version: 1.9.1
 -	Virtual Size: 87.0 B
--	v2 Blob: `sha256:4a5cf8bc29315a058ea869df9f4cb4a5dd9369d8d61476df2602c290458e8b96`
--	v2 Content-Length: 230.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:41:03 GMT
+-	v2 Blob: `sha256:05bee9feaa04864e2dc7b182701bd903771384cc92c40bff299401e037c3d4c9`
+-	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Fri, 06 May 2016 17:53:38 GMT
 
-#### `459863e9105e09c49a56364f2feec3bfb5b3f6fea98b2c7f7025a28af7dff3a4`
+#### `da4344b6a29eac2950d8ac44cb49656cc4db877f7f5a779acb2c95d4fd56cf9a`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
 ```
 
--	Created: Mon, 04 Apr 2016 23:16:25 GMT
--	Parent Layer: `974799d24faa9a236e647327d69cb918c2def18849f8cbf576a1908b1d859290`
+-	Created: Fri, 06 May 2016 15:20:50 GMT
+-	Parent Layer: `c8ea4b1847c408e1927de77838673b034143c6df255f0100613605198ab2c292`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b869af3f64d229792236ea7fe09ec22a2d0c819ee959590aa5127eb9ae497efc`
+#### `29c69859a59bd6bfdadf743d03df5d908ee3c725d9046a35f02858508eabdb6a`
 
 ```dockerfile
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin
 ```
 
--	Created: Mon, 04 Apr 2016 23:16:26 GMT
--	Parent Layer: `459863e9105e09c49a56364f2feec3bfb5b3f6fea98b2c7f7025a28af7dff3a4`
+-	Created: Fri, 06 May 2016 15:20:52 GMT
+-	Parent Layer: `da4344b6a29eac2950d8ac44cb49656cc4db877f7f5a779acb2c95d4fd56cf9a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c374c22a92ba3f26642ce8f197b0116e1b1b8cf11a4d18737ab20025e92a0626`
+#### `27b29a2c94448d720c61334f1d8747710abebd8ad48949b261dcf40e9630ddd6`
 
 ```dockerfile
 ENV JAVA_VERSION=8u77
 ```
 
--	Created: Mon, 04 Apr 2016 23:16:26 GMT
--	Parent Layer: `b869af3f64d229792236ea7fe09ec22a2d0c819ee959590aa5127eb9ae497efc`
+-	Created: Fri, 06 May 2016 15:20:53 GMT
+-	Parent Layer: `29c69859a59bd6bfdadf743d03df5d908ee3c725d9046a35f02858508eabdb6a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b15b95f25b250ab2c6ea78ac1af9a57952baf3ac8523222372e689ab7077b902`
+#### `9df81c1f2a021128eb9ce4822cdc9c44c4c4cd03d867c35b3bcacd6424e55c87`
 
 ```dockerfile
 ENV JAVA_ALPINE_VERSION=8.77.03-r0
 ```
 
--	Created: Mon, 04 Apr 2016 23:16:27 GMT
--	Parent Layer: `c374c22a92ba3f26642ce8f197b0116e1b1b8cf11a4d18737ab20025e92a0626`
+-	Created: Fri, 06 May 2016 15:20:55 GMT
+-	Parent Layer: `27b29a2c94448d720c61334f1d8747710abebd8ad48949b261dcf40e9630ddd6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `850b6fe6c4193b5aa51e2bbf636c3d3eaa68866acce5ddedfabe4d1bfde5db18`
+#### `06c0580833e1d78501d560bb7ce149782677b98931ad519e97160a5842c89ab2`
 
 ```dockerfile
 RUN set -x \
@@ -1937,136 +1937,136 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Mon, 04 Apr 2016 23:16:33 GMT
--	Parent Layer: `b15b95f25b250ab2c6ea78ac1af9a57952baf3ac8523222372e689ab7077b902`
+-	Created: Fri, 06 May 2016 15:21:02 GMT
+-	Parent Layer: `9df81c1f2a021128eb9ce4822cdc9c44c4c4cd03d867c35b3bcacd6424e55c87`
 -	Docker Version: 1.9.1
 -	Virtual Size: 140.7 MB (140671993 bytes)
--	v2 Blob: `sha256:7252eea026b82c4ccf9e68d936242c28caecc0afc6cb27c979bab5f27e57670c`
--	v2 Content-Length: 49.6 MB (49583918 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:48:08 GMT
+-	v2 Blob: `sha256:293ce90f776231cc9bf751e8c4e08e076cbf13d61de5391c75402cb277171ba2`
+-	v2 Content-Length: 49.6 MB (49583990 bytes)
+-	v2 Last-Modified: Fri, 06 May 2016 17:58:16 GMT
 
-#### `14faf53f12cb06670040cdbd482aaa727826cd5b6c1c0090c0e056beb71b5156`
+#### `dabbbb7dc5ff55222c4d6d37290faf73c8cba17119192c254dc4e3d7ef1fb132`
 
 ```dockerfile
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
 ```
 
--	Created: Tue, 05 Apr 2016 17:20:57 GMT
--	Parent Layer: `850b6fe6c4193b5aa51e2bbf636c3d3eaa68866acce5ddedfabe4d1bfde5db18`
+-	Created: Fri, 06 May 2016 17:38:41 GMT
+-	Parent Layer: `06c0580833e1d78501d560bb7ce149782677b98931ad519e97160a5842c89ab2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e75615f68e988cae41b807b27faad5b85172846a17967cf791b3a2447828295`
+#### `abee5a894c84bfab6785d09a7eec1195fd95b1972013dd1d793a5142cc1f0cf4`
 
 ```dockerfile
 ENV LEIN_VERSION=2.6.1
 ```
 
--	Created: Tue, 05 Apr 2016 17:20:58 GMT
--	Parent Layer: `14faf53f12cb06670040cdbd482aaa727826cd5b6c1c0090c0e056beb71b5156`
+-	Created: Fri, 06 May 2016 17:38:43 GMT
+-	Parent Layer: `dabbbb7dc5ff55222c4d6d37290faf73c8cba17119192c254dc4e3d7ef1fb132`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `82f8ae5c8ddea9e1d01633f57f50632b918b40d387c3b28d6abb87a958acb71f`
+#### `144862a6656f23954d1cfb0f924a0b66a17880ed4e2bdfb6330bc68093d8fa2f`
 
 ```dockerfile
 ENV LEIN_INSTALL=/usr/local/bin/
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:00 GMT
--	Parent Layer: `0e75615f68e988cae41b807b27faad5b85172846a17967cf791b3a2447828295`
+-	Created: Fri, 06 May 2016 17:38:44 GMT
+-	Parent Layer: `abee5a894c84bfab6785d09a7eec1195fd95b1972013dd1d793a5142cc1f0cf4`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `15a8dfd40aeb8b15a6fa87b977370d1349bfc916652066d63fc302d3c333a9e5`
+#### `c936f0edb2795fccbfd1846b164e904f2eeb5b52379f026de8cbbd397f90b94c`
 
 ```dockerfile
 WORKDIR /tmp
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:01 GMT
--	Parent Layer: `82f8ae5c8ddea9e1d01633f57f50632b918b40d387c3b28d6abb87a958acb71f`
+-	Created: Fri, 06 May 2016 17:38:45 GMT
+-	Parent Layer: `144862a6656f23954d1cfb0f924a0b66a17880ed4e2bdfb6330bc68093d8fa2f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `df17099da78bb5d95679367e97f85a0ccb3f3cab5793f91f8b216e65fe2bfd5b`
+#### `be50827cfbbc26ec161f2920af6da2b6924aedb9332ff2cfc6457793a927603d`
 
 ```dockerfile
 RUN apk add --update tar gnupg bash && rm -rf /var/cache/apk/*
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:07 GMT
--	Parent Layer: `15a8dfd40aeb8b15a6fa87b977370d1349bfc916652066d63fc302d3c333a9e5`
+-	Created: Fri, 06 May 2016 17:38:52 GMT
+-	Parent Layer: `c936f0edb2795fccbfd1846b164e904f2eeb5b52379f026de8cbbd397f90b94c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.3 MB (11307714 bytes)
--	v2 Blob: `sha256:4991cf6a4a6a1bbfac95ea36dfdbc3880f06a205e2befd790caa55ee185a12f0`
--	v2 Content-Length: 4.6 MB (4603293 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 17:31:38 GMT
+-	v2 Blob: `sha256:31fe9de0c04c8379f2462fede0e98d22e9011fc290a45d8779245422eace3bf5`
+-	v2 Content-Length: 4.6 MB (4603342 bytes)
+-	v2 Last-Modified: Fri, 06 May 2016 18:27:03 GMT
 
-#### `eef8e8ae9388e94bbf86ee2f02e430e97752ae29e35f578f9af3dc9ed4a0d3fb`
+#### `5e8760c0e33da4989666bddfadb5c8631b761c661f5f677c28521843d706eb7e`
 
 ```dockerfile
 RUN mkdir -p $LEIN_INSTALL   && wget -q https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f7643a14fd8a4d5c19eeb416db8ea549d8d2c18a *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mkdir -p /usr/share/java   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:42 GMT
--	Parent Layer: `df17099da78bb5d95679367e97f85a0ccb3f3cab5793f91f8b216e65fe2bfd5b`
+-	Created: Fri, 06 May 2016 17:39:20 GMT
+-	Parent Layer: `be50827cfbbc26ec161f2920af6da2b6924aedb9332ff2cfc6457793a927603d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 15.4 MB (15359875 bytes)
--	v2 Blob: `sha256:168c27b30ec64a80cc167050286e38fda0b637a473d0cf1a613b8829d90bb90c`
--	v2 Content-Length: 13.8 MB (13781036 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 17:31:24 GMT
+-	v2 Blob: `sha256:641a817a3ce221e4031b11a4eebe7b7ec8be49f4e9640ef8320bbf7b4d770dad`
+-	v2 Content-Length: 13.8 MB (13781041 bytes)
+-	v2 Last-Modified: Fri, 06 May 2016 18:26:56 GMT
 
-#### `72aec78353b6dd4d02611a11caedfec11739c44135c5ea7d289f422b4844ed29`
+#### `3a25d16aaabc30784b04067489ed81ad8caf95b99fcdd5aed7c85ca0afd8ae1a`
 
 ```dockerfile
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:46 GMT
--	Parent Layer: `eef8e8ae9388e94bbf86ee2f02e430e97752ae29e35f578f9af3dc9ed4a0d3fb`
+-	Created: Fri, 06 May 2016 17:39:20 GMT
+-	Parent Layer: `5e8760c0e33da4989666bddfadb5c8631b761c661f5f677c28521843d706eb7e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `be1d45b21025e4d63239c0f8d763d56f3d81ebe746e71ca60349660e5594d0e2`
+#### `498c9a10146ebfadd2b0d15f8d205fd343e0b2f875d40e81b203c8a2a0c9095f`
 
 ```dockerfile
 ENV LEIN_ROOT=1
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:49 GMT
--	Parent Layer: `72aec78353b6dd4d02611a11caedfec11739c44135c5ea7d289f422b4844ed29`
+-	Created: Fri, 06 May 2016 17:39:21 GMT
+-	Parent Layer: `3a25d16aaabc30784b04067489ed81ad8caf95b99fcdd5aed7c85ca0afd8ae1a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `10d744a678af7f47456cf9209d6c4882fd47c6e198cc92f295bfe84f38f7dfcd`
+#### `283971a361db9cf1779f5fcce61762ff825648eb25ef663c98c7490aa189be8b`
 
 ```dockerfile
 RUN lein
 ```
 
--	Created: Tue, 05 Apr 2016 17:21:59 GMT
--	Parent Layer: `be1d45b21025e4d63239c0f8d763d56f3d81ebe746e71ca60349660e5594d0e2`
+-	Created: Fri, 06 May 2016 17:39:26 GMT
+-	Parent Layer: `498c9a10146ebfadd2b0d15f8d205fd343e0b2f875d40e81b203c8a2a0c9095f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:5ed685b9fa58b362967d70d9eb2177220afc827ae03c7530bcfda3126b2d9ea7`
--	v2 Content-Length: 167.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 17:31:06 GMT
+-	v2 Blob: `sha256:d52a0ad201fc2c5d7d61012df38e785a57ad05bbae513fdbf75c1f126aae663d`
+-	v2 Content-Length: 166.0 B
+-	v2 Last-Modified: Fri, 06 May 2016 18:26:47 GMT
