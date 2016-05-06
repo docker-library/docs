@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/15b474abe9efb3140468010c8c264e8ad20757f6/versions/library-3.1/Dockerfile)
--	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/8d8e867fa7a829d898224a60041412060236a104/versions/library-3.2/Dockerfile)
--	[`3.3`, `latest` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/d59b1d8ffd48d19c574bdd88c25b031bc83dfaad/versions/library-3.3/Dockerfile)
--	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/f523d0089492f0ef38b96fc9a4062b1882748819/versions/library-edge/Dockerfile)
+-	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/2a6a39490230f96f8345bc0d9a01c38cae2697d7/versions/library-3.1/Dockerfile)
+-	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/33960bef67f71465c6b6887db2c15ea9df8bb80f/versions/library-3.2/Dockerfile)
+-	[`3.3`, `latest` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/71d4df1ae9256fd95144026b3894c18b1f670875/versions/library-3.3/Dockerfile)
+-	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/95c76010e843183c89ceab070a86007a22dc907d/versions/library-edge/Dockerfile)
 
 [![](https://badge.imagelayers.io/alpine:latest.svg)](https://imagelayers.io/?images=alpine:3.1,alpine:3.2,alpine:3.3,alpine:edge)
 
