@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.6.1`, `1.6`, `1` (*1.6.1/Dockerfile*)](https://github.com/klaemo/docker-couchdb/blob/fe82d8781f99cefb4b5efbaa319b30fd4f80a73f/1.6.1/Dockerfile)
--	[`1.6.1-couchperuser`, `1.6-couchperuser`, `1-couchperuser` (*1.6.1-couchperuser/Dockerfile*)](https://github.com/klaemo/docker-couchdb/blob/fe82d8781f99cefb4b5efbaa319b30fd4f80a73f/1.6.1-couchperuser/Dockerfile)
+-	[`latest`, `1.6.1`, `1.6`, `1` (*1.6.1/Dockerfile*)](https://github.com/klaemo/docker-couchdb/blob/29ed69965ed616a9d0df9a6ffa081773d86c78bc/1.6.1/Dockerfile)
+-	[`1.6.1-couchperuser`, `1.6-couchperuser`, `1-couchperuser` (*1.6.1-couchperuser/Dockerfile*)](https://github.com/klaemo/docker-couchdb/blob/29ed69965ed616a9d0df9a6ffa081773d86c78bc/1.6.1-couchperuser/Dockerfile)
 
 [![](https://badge.imagelayers.io/couchdb:latest.svg)](https://imagelayers.io/?images=couchdb:latest,couchdb:1.6.1-couchperuser)
 
