@@ -66,6 +66,14 @@ You can map the container's volumes to a directory on the host, so that the data
 $ docker run -d -v $(pwd):/usr/local/var/lib/couchdb --name my-couchdb couchdb
 ```
 
+## Specifying the admin user in the environment
+
+You can use the two environment variables `COUCHDB_USER` and `COUCHDB_PASSWORD` to set up the admin user.
+
+```console
+$ docker run -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password -d couchdb
+```
+
 ## Using your own CouchDB configuration file
 
 The CouchDB configuration is specified in `.ini` files in `/usr/local/etc/couchdb`. Take a look at the [CouchDB configuration documentation](http://docs.couchdb.org/en/1.6.1/config/index.html) to learn more about CouchDBs configuration structure.
@@ -103,6 +111,10 @@ For example in `local.ini`:
 [log]
 file = /usr/local/var/log/couchdb/couch.log
 ```
+
+## Erlang Version
+
+This image uses Erlang `17.3` from Debian Jessie's repository. Debian's version patches a critical bug in Erlang `17.3` and is good to use with CouchDB ([confirmed by Jan Lehnardt](https://github.com/klaemo/docker-couchdb/issues/50#issuecomment-190832786)).
 
 # License
 
