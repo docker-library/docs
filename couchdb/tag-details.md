@@ -13,13 +13,13 @@
 ## `couchdb:latest`
 
 ```console
-$ docker pull library/couchdb@sha256:b91506e9f44d103b050a13da6a9c321db990e2b2f98d697464866e1e8e58e8f3
+$ docker pull library/couchdb@sha256:e3cc9c44a2220468971d3698580213a9671166f85bc51eeaec4b579450b01877
 ```
 
--	Total Virtual Size: 226.5 MB (226507070 bytes)
--	Total v2 Content-Length: 103.8 MB (103780980 bytes)
+-	Total Virtual Size: 226.5 MB (226510129 bytes)
+-	Total v2 Content-Length: 103.8 MB (103782456 bytes)
 
-### Layers (16)
+### Layers (17)
 
 #### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
 
@@ -180,84 +180,98 @@ RUN buildDeps='\
 -	v2 Content-Length: 8.2 MB (8177890 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 15:35:25 GMT
 
-#### `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+#### `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
 
 ```dockerfile
-COPY file:90b2e346443f4b17c2a45b6510797a52536d31a75b9fad64e33eb8b255ae8daf in /
+COPY file:0809d72868554fa1f4fc67c030089fab630f43e10e460163becb2852f9cdce27 in /
 ```
 
--	Created: Thu, 05 May 2016 07:08:35 GMT
+-	Created: Mon, 09 May 2016 20:00:45 GMT
 -	Parent Layer: `123ccf2a37ffe16e62950c8c25f57d76e722ebe213bfb535bab40b4eda7eea19`
 -	Docker Version: 1.9.1
--	Virtual Size: 1.1 KB (1091 bytes)
--	v2 Blob: `sha256:60f30c49e5a117592c3fba207fa1011691359600bf175894f0a05c834b9da7b4`
--	v2 Content-Length: 636.0 B
--	v2 Last-Modified: Thu, 25 Feb 2016 01:07:56 GMT
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
 
-#### `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+#### `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
+
+```dockerfile
+RUN chmod +x /docker-entrypoint.sh
+```
+
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
+
+#### `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 
 ```dockerfile
 VOLUME [/usr/local/var/lib/couchdb]
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+#### `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 
 ```dockerfile
 EXPOSE 5984/tcp
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+#### `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 
 ```dockerfile
 WORKDIR /var/lib/couchdb
 ```
 
--	Created: Thu, 05 May 2016 07:08:37 GMT
--	Parent Layer: `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+#### `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 
 ```dockerfile
 ENTRYPOINT &{["tini" "--" "/docker-entrypoint.sh"]}
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+-	Created: Mon, 09 May 2016 20:00:49 GMT
+-	Parent Layer: `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1b5ec4b4e10940654fc9f74976f0d6202402c7bfb30f79bc0aa86f368ce58697`
+#### `14d401c35216a97043d33019d981bb05cfa61a76f9490076c45ab787086d2d6b`
 
 ```dockerfile
 CMD ["couchdb"]
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+-	Created: Mon, 09 May 2016 20:00:50 GMT
+-	Parent Layer: `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -267,13 +281,13 @@ CMD ["couchdb"]
 ## `couchdb:1.6.1`
 
 ```console
-$ docker pull library/couchdb@sha256:19b8f49d7628247b4ccc3fea72fbc07dd1ac518d412eb7eeb286f9724c1b0305
+$ docker pull library/couchdb@sha256:91186b4fea38a4e9e3b2f3cced97a416436fdfa121a6659ad50dda41e2e25809
 ```
 
--	Total Virtual Size: 226.5 MB (226507070 bytes)
--	Total v2 Content-Length: 103.8 MB (103780980 bytes)
+-	Total Virtual Size: 226.5 MB (226510129 bytes)
+-	Total v2 Content-Length: 103.8 MB (103782456 bytes)
 
-### Layers (16)
+### Layers (17)
 
 #### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
 
@@ -434,84 +448,98 @@ RUN buildDeps='\
 -	v2 Content-Length: 8.2 MB (8177890 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 15:35:25 GMT
 
-#### `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+#### `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
 
 ```dockerfile
-COPY file:90b2e346443f4b17c2a45b6510797a52536d31a75b9fad64e33eb8b255ae8daf in /
+COPY file:0809d72868554fa1f4fc67c030089fab630f43e10e460163becb2852f9cdce27 in /
 ```
 
--	Created: Thu, 05 May 2016 07:08:35 GMT
+-	Created: Mon, 09 May 2016 20:00:45 GMT
 -	Parent Layer: `123ccf2a37ffe16e62950c8c25f57d76e722ebe213bfb535bab40b4eda7eea19`
 -	Docker Version: 1.9.1
--	Virtual Size: 1.1 KB (1091 bytes)
--	v2 Blob: `sha256:60f30c49e5a117592c3fba207fa1011691359600bf175894f0a05c834b9da7b4`
--	v2 Content-Length: 636.0 B
--	v2 Last-Modified: Thu, 25 Feb 2016 01:07:56 GMT
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
 
-#### `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+#### `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
+
+```dockerfile
+RUN chmod +x /docker-entrypoint.sh
+```
+
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
+
+#### `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 
 ```dockerfile
 VOLUME [/usr/local/var/lib/couchdb]
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+#### `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 
 ```dockerfile
 EXPOSE 5984/tcp
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+#### `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 
 ```dockerfile
 WORKDIR /var/lib/couchdb
 ```
 
--	Created: Thu, 05 May 2016 07:08:37 GMT
--	Parent Layer: `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+#### `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 
 ```dockerfile
 ENTRYPOINT &{["tini" "--" "/docker-entrypoint.sh"]}
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+-	Created: Mon, 09 May 2016 20:00:49 GMT
+-	Parent Layer: `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1b5ec4b4e10940654fc9f74976f0d6202402c7bfb30f79bc0aa86f368ce58697`
+#### `14d401c35216a97043d33019d981bb05cfa61a76f9490076c45ab787086d2d6b`
 
 ```dockerfile
 CMD ["couchdb"]
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+-	Created: Mon, 09 May 2016 20:00:50 GMT
+-	Parent Layer: `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -521,13 +549,13 @@ CMD ["couchdb"]
 ## `couchdb:1.6`
 
 ```console
-$ docker pull library/couchdb@sha256:f9cc8a32a1556e2151ef4c3b39b8eb25c97e752012ab5910c318138e8550d626
+$ docker pull library/couchdb@sha256:c72a3da269afdcac0a6a7cc3e56d6cefb17a3389e735606aa9ea16089bd4e7b3
 ```
 
--	Total Virtual Size: 226.5 MB (226507070 bytes)
--	Total v2 Content-Length: 103.8 MB (103780980 bytes)
+-	Total Virtual Size: 226.5 MB (226510129 bytes)
+-	Total v2 Content-Length: 103.8 MB (103782456 bytes)
 
-### Layers (16)
+### Layers (17)
 
 #### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
 
@@ -688,84 +716,98 @@ RUN buildDeps='\
 -	v2 Content-Length: 8.2 MB (8177890 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 15:35:25 GMT
 
-#### `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+#### `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
 
 ```dockerfile
-COPY file:90b2e346443f4b17c2a45b6510797a52536d31a75b9fad64e33eb8b255ae8daf in /
+COPY file:0809d72868554fa1f4fc67c030089fab630f43e10e460163becb2852f9cdce27 in /
 ```
 
--	Created: Thu, 05 May 2016 07:08:35 GMT
+-	Created: Mon, 09 May 2016 20:00:45 GMT
 -	Parent Layer: `123ccf2a37ffe16e62950c8c25f57d76e722ebe213bfb535bab40b4eda7eea19`
 -	Docker Version: 1.9.1
--	Virtual Size: 1.1 KB (1091 bytes)
--	v2 Blob: `sha256:60f30c49e5a117592c3fba207fa1011691359600bf175894f0a05c834b9da7b4`
--	v2 Content-Length: 636.0 B
--	v2 Last-Modified: Thu, 25 Feb 2016 01:07:56 GMT
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
 
-#### `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+#### `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
+
+```dockerfile
+RUN chmod +x /docker-entrypoint.sh
+```
+
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
+
+#### `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 
 ```dockerfile
 VOLUME [/usr/local/var/lib/couchdb]
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+#### `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 
 ```dockerfile
 EXPOSE 5984/tcp
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+#### `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 
 ```dockerfile
 WORKDIR /var/lib/couchdb
 ```
 
--	Created: Thu, 05 May 2016 07:08:37 GMT
--	Parent Layer: `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+#### `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 
 ```dockerfile
 ENTRYPOINT &{["tini" "--" "/docker-entrypoint.sh"]}
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+-	Created: Mon, 09 May 2016 20:00:49 GMT
+-	Parent Layer: `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1b5ec4b4e10940654fc9f74976f0d6202402c7bfb30f79bc0aa86f368ce58697`
+#### `14d401c35216a97043d33019d981bb05cfa61a76f9490076c45ab787086d2d6b`
 
 ```dockerfile
 CMD ["couchdb"]
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+-	Created: Mon, 09 May 2016 20:00:50 GMT
+-	Parent Layer: `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -775,13 +817,13 @@ CMD ["couchdb"]
 ## `couchdb:1`
 
 ```console
-$ docker pull library/couchdb@sha256:e7383de76f271bddaf3d985cff908d33689d4c8a160f03aaee73df7a41071c48
+$ docker pull library/couchdb@sha256:e7066fe8dcf12b09a8ae13de7afd3c7ed47346f4ae5135b6d950cb9ca3de5f42
 ```
 
--	Total Virtual Size: 226.5 MB (226507070 bytes)
--	Total v2 Content-Length: 103.8 MB (103780980 bytes)
+-	Total Virtual Size: 226.5 MB (226510129 bytes)
+-	Total v2 Content-Length: 103.8 MB (103782456 bytes)
 
-### Layers (16)
+### Layers (17)
 
 #### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
 
@@ -942,84 +984,98 @@ RUN buildDeps='\
 -	v2 Content-Length: 8.2 MB (8177890 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 15:35:25 GMT
 
-#### `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+#### `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
 
 ```dockerfile
-COPY file:90b2e346443f4b17c2a45b6510797a52536d31a75b9fad64e33eb8b255ae8daf in /
+COPY file:0809d72868554fa1f4fc67c030089fab630f43e10e460163becb2852f9cdce27 in /
 ```
 
--	Created: Thu, 05 May 2016 07:08:35 GMT
+-	Created: Mon, 09 May 2016 20:00:45 GMT
 -	Parent Layer: `123ccf2a37ffe16e62950c8c25f57d76e722ebe213bfb535bab40b4eda7eea19`
 -	Docker Version: 1.9.1
--	Virtual Size: 1.1 KB (1091 bytes)
--	v2 Blob: `sha256:60f30c49e5a117592c3fba207fa1011691359600bf175894f0a05c834b9da7b4`
--	v2 Content-Length: 636.0 B
--	v2 Last-Modified: Thu, 25 Feb 2016 01:07:56 GMT
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
 
-#### `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+#### `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
+
+```dockerfile
+RUN chmod +x /docker-entrypoint.sh
+```
+
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
+
+#### `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 
 ```dockerfile
 VOLUME [/usr/local/var/lib/couchdb]
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+#### `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 
 ```dockerfile
 EXPOSE 5984/tcp
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+#### `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 
 ```dockerfile
 WORKDIR /var/lib/couchdb
 ```
 
--	Created: Thu, 05 May 2016 07:08:37 GMT
--	Parent Layer: `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+#### `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 
 ```dockerfile
 ENTRYPOINT &{["tini" "--" "/docker-entrypoint.sh"]}
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+-	Created: Mon, 09 May 2016 20:00:49 GMT
+-	Parent Layer: `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1b5ec4b4e10940654fc9f74976f0d6202402c7bfb30f79bc0aa86f368ce58697`
+#### `14d401c35216a97043d33019d981bb05cfa61a76f9490076c45ab787086d2d6b`
 
 ```dockerfile
 CMD ["couchdb"]
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+-	Created: Mon, 09 May 2016 20:00:50 GMT
+-	Parent Layer: `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1029,13 +1085,13 @@ CMD ["couchdb"]
 ## `couchdb:1.6.1-couchperuser`
 
 ```console
-$ docker pull library/couchdb@sha256:bf13102beacf2d69f59c95e38e41c6466b91cad2636c5fd3c708a1c622cbc3f8
+$ docker pull library/couchdb@sha256:7914eebe97a6d86f2a69c8d600a6bd403eb277602dedd9d43e5ea2ec16b85d85
 ```
 
--	Total Virtual Size: 238.2 MB (238242770 bytes)
--	Total v2 Content-Length: 113.7 MB (113729601 bytes)
+-	Total Virtual Size: 238.2 MB (238246661 bytes)
+-	Total v2 Content-Length: 113.7 MB (113732085 bytes)
 
-### Layers (19)
+### Layers (20)
 
 #### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
 
@@ -1196,142 +1252,156 @@ RUN buildDeps='\
 -	v2 Content-Length: 8.2 MB (8177890 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 15:35:25 GMT
 
-#### `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+#### `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
 
 ```dockerfile
-COPY file:90b2e346443f4b17c2a45b6510797a52536d31a75b9fad64e33eb8b255ae8daf in /
+COPY file:0809d72868554fa1f4fc67c030089fab630f43e10e460163becb2852f9cdce27 in /
 ```
 
--	Created: Thu, 05 May 2016 07:08:35 GMT
+-	Created: Mon, 09 May 2016 20:00:45 GMT
 -	Parent Layer: `123ccf2a37ffe16e62950c8c25f57d76e722ebe213bfb535bab40b4eda7eea19`
 -	Docker Version: 1.9.1
--	Virtual Size: 1.1 KB (1091 bytes)
--	v2 Blob: `sha256:60f30c49e5a117592c3fba207fa1011691359600bf175894f0a05c834b9da7b4`
--	v2 Content-Length: 636.0 B
--	v2 Last-Modified: Thu, 25 Feb 2016 01:07:56 GMT
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
 
-#### `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+#### `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
+
+```dockerfile
+RUN chmod +x /docker-entrypoint.sh
+```
+
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
+
+#### `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 
 ```dockerfile
 VOLUME [/usr/local/var/lib/couchdb]
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+#### `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 
 ```dockerfile
 EXPOSE 5984/tcp
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+#### `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 
 ```dockerfile
 WORKDIR /var/lib/couchdb
 ```
 
--	Created: Thu, 05 May 2016 07:08:37 GMT
--	Parent Layer: `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+#### `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 
 ```dockerfile
 ENTRYPOINT &{["tini" "--" "/docker-entrypoint.sh"]}
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+-	Created: Mon, 09 May 2016 20:00:49 GMT
+-	Parent Layer: `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1b5ec4b4e10940654fc9f74976f0d6202402c7bfb30f79bc0aa86f368ce58697`
+#### `14d401c35216a97043d33019d981bb05cfa61a76f9490076c45ab787086d2d6b`
 
 ```dockerfile
 CMD ["couchdb"]
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+-	Created: Mon, 09 May 2016 20:00:50 GMT
+-	Parent Layer: `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e92071742328b39908f391122551c43fe8ab2270f85468f61fdd4498c9ef58a8`
+#### `441c2310baf1bd9520198541537bacf7cc5219b0a95c7d1c0a716353689ef812`
 
 ```dockerfile
 MAINTAINER Clemens Stolle klaemo@apache.org
 ```
 
--	Created: Thu, 05 May 2016 07:10:44 GMT
--	Parent Layer: `1b5ec4b4e10940654fc9f74976f0d6202402c7bfb30f79bc0aa86f368ce58697`
+-	Created: Mon, 09 May 2016 20:04:07 GMT
+-	Parent Layer: `14d401c35216a97043d33019d981bb05cfa61a76f9490076c45ab787086d2d6b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8a1e851658f7dce78c6c75c2276130b8a3b7627fac678e03ad14b536dc07902c`
+#### `8a670b81766bdb2c1f9f3f0cd045de483d29d5a54275cce7926181a893ef4445`
 
 ```dockerfile
 ENV COUCHPERUSER_SHA=5d28db3272eea9619d4391b33aae6030f0319ecc54aa2a2f2b6c6a8d448f03f2
 ```
 
--	Created: Thu, 05 May 2016 07:10:45 GMT
--	Parent Layer: `e92071742328b39908f391122551c43fe8ab2270f85468f61fdd4498c9ef58a8`
+-	Created: Mon, 09 May 2016 20:04:08 GMT
+-	Parent Layer: `441c2310baf1bd9520198541537bacf7cc5219b0a95c7d1c0a716353689ef812`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f87b1a89e93e9f34d01a03d94391cc0c9053e389db5436af93b45936a9971822`
+#### `e8410063e50b5bbbef6003b803fefbad7212017c87ea7f0a777669deb1b40030`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y rebar make  && mkdir -p /usr/local/lib/couchdb/plugins/couchperuser  && cd /usr/local/lib/couchdb/plugins  && curl -L -o couchperuser.tar.gz https://github.com/etrepum/couchperuser/archive/1.1.0.tar.gz  && echo "$COUCHPERUSER_SHA *couchperuser.tar.gz" | sha256sum -c -  && tar -xzf couchperuser.tar.gz -C couchperuser --strip-components=1  && rm couchperuser.tar.gz  && cd couchperuser  && make  && apt-get purge -y --auto-remove rebar make
 ```
 
--	Created: Thu, 05 May 2016 07:12:03 GMT
--	Parent Layer: `8a1e851658f7dce78c6c75c2276130b8a3b7627fac678e03ad14b536dc07902c`
+-	Created: Mon, 09 May 2016 20:05:28 GMT
+-	Parent Layer: `8a670b81766bdb2c1f9f3f0cd045de483d29d5a54275cce7926181a893ef4445`
 -	Docker Version: 1.9.1
--	Virtual Size: 11.7 MB (11735700 bytes)
--	v2 Blob: `sha256:1aaed046f69c5a79307c94b696825a1ca726eedbff4b94caec41b917518783a0`
--	v2 Content-Length: 9.9 MB (9948557 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 15:36:56 GMT
+-	Virtual Size: 11.7 MB (11736532 bytes)
+-	v2 Blob: `sha256:8184a3894d920b2ed8a8898ff0e65d727fd12c72c564358535e1828544b8852c`
+-	v2 Content-Length: 9.9 MB (9949565 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:07:11 GMT
 
 ## `couchdb:1.6-couchperuser`
 
 ```console
-$ docker pull library/couchdb@sha256:93066a56d771871e8089e0d0002194d8cccf80a6d31e4b18387ab500e0ac41f9
+$ docker pull library/couchdb@sha256:482b115b684804e8206a5832abe8a77618551e8f091adfc89b881d115f537738
 ```
 
--	Total Virtual Size: 238.2 MB (238242770 bytes)
--	Total v2 Content-Length: 113.7 MB (113729601 bytes)
+-	Total Virtual Size: 238.2 MB (238246661 bytes)
+-	Total v2 Content-Length: 113.7 MB (113732085 bytes)
 
-### Layers (19)
+### Layers (20)
 
 #### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
 
@@ -1492,142 +1562,156 @@ RUN buildDeps='\
 -	v2 Content-Length: 8.2 MB (8177890 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 15:35:25 GMT
 
-#### `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+#### `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
 
 ```dockerfile
-COPY file:90b2e346443f4b17c2a45b6510797a52536d31a75b9fad64e33eb8b255ae8daf in /
+COPY file:0809d72868554fa1f4fc67c030089fab630f43e10e460163becb2852f9cdce27 in /
 ```
 
--	Created: Thu, 05 May 2016 07:08:35 GMT
+-	Created: Mon, 09 May 2016 20:00:45 GMT
 -	Parent Layer: `123ccf2a37ffe16e62950c8c25f57d76e722ebe213bfb535bab40b4eda7eea19`
 -	Docker Version: 1.9.1
--	Virtual Size: 1.1 KB (1091 bytes)
--	v2 Blob: `sha256:60f30c49e5a117592c3fba207fa1011691359600bf175894f0a05c834b9da7b4`
--	v2 Content-Length: 636.0 B
--	v2 Last-Modified: Thu, 25 Feb 2016 01:07:56 GMT
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
 
-#### `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+#### `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
+
+```dockerfile
+RUN chmod +x /docker-entrypoint.sh
+```
+
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
+
+#### `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 
 ```dockerfile
 VOLUME [/usr/local/var/lib/couchdb]
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+#### `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 
 ```dockerfile
 EXPOSE 5984/tcp
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+#### `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 
 ```dockerfile
 WORKDIR /var/lib/couchdb
 ```
 
--	Created: Thu, 05 May 2016 07:08:37 GMT
--	Parent Layer: `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+#### `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 
 ```dockerfile
 ENTRYPOINT &{["tini" "--" "/docker-entrypoint.sh"]}
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+-	Created: Mon, 09 May 2016 20:00:49 GMT
+-	Parent Layer: `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1b5ec4b4e10940654fc9f74976f0d6202402c7bfb30f79bc0aa86f368ce58697`
+#### `14d401c35216a97043d33019d981bb05cfa61a76f9490076c45ab787086d2d6b`
 
 ```dockerfile
 CMD ["couchdb"]
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+-	Created: Mon, 09 May 2016 20:00:50 GMT
+-	Parent Layer: `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e92071742328b39908f391122551c43fe8ab2270f85468f61fdd4498c9ef58a8`
+#### `441c2310baf1bd9520198541537bacf7cc5219b0a95c7d1c0a716353689ef812`
 
 ```dockerfile
 MAINTAINER Clemens Stolle klaemo@apache.org
 ```
 
--	Created: Thu, 05 May 2016 07:10:44 GMT
--	Parent Layer: `1b5ec4b4e10940654fc9f74976f0d6202402c7bfb30f79bc0aa86f368ce58697`
+-	Created: Mon, 09 May 2016 20:04:07 GMT
+-	Parent Layer: `14d401c35216a97043d33019d981bb05cfa61a76f9490076c45ab787086d2d6b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8a1e851658f7dce78c6c75c2276130b8a3b7627fac678e03ad14b536dc07902c`
+#### `8a670b81766bdb2c1f9f3f0cd045de483d29d5a54275cce7926181a893ef4445`
 
 ```dockerfile
 ENV COUCHPERUSER_SHA=5d28db3272eea9619d4391b33aae6030f0319ecc54aa2a2f2b6c6a8d448f03f2
 ```
 
--	Created: Thu, 05 May 2016 07:10:45 GMT
--	Parent Layer: `e92071742328b39908f391122551c43fe8ab2270f85468f61fdd4498c9ef58a8`
+-	Created: Mon, 09 May 2016 20:04:08 GMT
+-	Parent Layer: `441c2310baf1bd9520198541537bacf7cc5219b0a95c7d1c0a716353689ef812`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f87b1a89e93e9f34d01a03d94391cc0c9053e389db5436af93b45936a9971822`
+#### `e8410063e50b5bbbef6003b803fefbad7212017c87ea7f0a777669deb1b40030`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y rebar make  && mkdir -p /usr/local/lib/couchdb/plugins/couchperuser  && cd /usr/local/lib/couchdb/plugins  && curl -L -o couchperuser.tar.gz https://github.com/etrepum/couchperuser/archive/1.1.0.tar.gz  && echo "$COUCHPERUSER_SHA *couchperuser.tar.gz" | sha256sum -c -  && tar -xzf couchperuser.tar.gz -C couchperuser --strip-components=1  && rm couchperuser.tar.gz  && cd couchperuser  && make  && apt-get purge -y --auto-remove rebar make
 ```
 
--	Created: Thu, 05 May 2016 07:12:03 GMT
--	Parent Layer: `8a1e851658f7dce78c6c75c2276130b8a3b7627fac678e03ad14b536dc07902c`
+-	Created: Mon, 09 May 2016 20:05:28 GMT
+-	Parent Layer: `8a670b81766bdb2c1f9f3f0cd045de483d29d5a54275cce7926181a893ef4445`
 -	Docker Version: 1.9.1
--	Virtual Size: 11.7 MB (11735700 bytes)
--	v2 Blob: `sha256:1aaed046f69c5a79307c94b696825a1ca726eedbff4b94caec41b917518783a0`
--	v2 Content-Length: 9.9 MB (9948557 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 15:36:56 GMT
+-	Virtual Size: 11.7 MB (11736532 bytes)
+-	v2 Blob: `sha256:8184a3894d920b2ed8a8898ff0e65d727fd12c72c564358535e1828544b8852c`
+-	v2 Content-Length: 9.9 MB (9949565 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:07:11 GMT
 
 ## `couchdb:1-couchperuser`
 
 ```console
-$ docker pull library/couchdb@sha256:44a2916d09e3c6b5252053b05e3548fc9bc4a24467e8fb79ee9c8845200c97f8
+$ docker pull library/couchdb@sha256:fa848a5faf404182049f91e4a2e275369d694fc7457c9f0cc95bbdf66f14f4d3
 ```
 
--	Total Virtual Size: 238.2 MB (238242770 bytes)
--	Total v2 Content-Length: 113.7 MB (113729601 bytes)
+-	Total Virtual Size: 238.2 MB (238246661 bytes)
+-	Total v2 Content-Length: 113.7 MB (113732085 bytes)
 
-### Layers (19)
+### Layers (20)
 
 #### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
 
@@ -1788,128 +1872,142 @@ RUN buildDeps='\
 -	v2 Content-Length: 8.2 MB (8177890 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 15:35:25 GMT
 
-#### `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+#### `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
 
 ```dockerfile
-COPY file:90b2e346443f4b17c2a45b6510797a52536d31a75b9fad64e33eb8b255ae8daf in /
+COPY file:0809d72868554fa1f4fc67c030089fab630f43e10e460163becb2852f9cdce27 in /
 ```
 
--	Created: Thu, 05 May 2016 07:08:35 GMT
+-	Created: Mon, 09 May 2016 20:00:45 GMT
 -	Parent Layer: `123ccf2a37ffe16e62950c8c25f57d76e722ebe213bfb535bab40b4eda7eea19`
 -	Docker Version: 1.9.1
--	Virtual Size: 1.1 KB (1091 bytes)
--	v2 Blob: `sha256:60f30c49e5a117592c3fba207fa1011691359600bf175894f0a05c834b9da7b4`
--	v2 Content-Length: 636.0 B
--	v2 Last-Modified: Thu, 25 Feb 2016 01:07:56 GMT
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
 
-#### `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+#### `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
+
+```dockerfile
+RUN chmod +x /docker-entrypoint.sh
+```
+
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `29573564ac063303b5760b6c90fa62a0bd478adf1ad111d511dda2668c6860cd`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.1 KB (2075 bytes)
+-	v2 Blob: `sha256:7e555346ea344d7edcd9288f3667bb695402c2c6ea18199c0a447833011aa706`
+-	v2 Content-Length: 1.1 KB (1056 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:06:27 GMT
+
+#### `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 
 ```dockerfile
 VOLUME [/usr/local/var/lib/couchdb]
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `496ac64a31862172421daa74d781b1e1c99fc778202b0f3316c389e4ac589fad`
+-	Created: Mon, 09 May 2016 20:00:47 GMT
+-	Parent Layer: `a1a03a0c02b2652b33627527607552a8a4c1c05c15345ce864a95eeef59c700f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+#### `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 
 ```dockerfile
 EXPOSE 5984/tcp
 ```
 
--	Created: Thu, 05 May 2016 07:08:36 GMT
--	Parent Layer: `ead92170276fd449219e1dc2d45e9a33b9349357738b0194e2faf2acb97e9666`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `c6765ff1dd1cb7d3eaded1038490f3fa0aec4c86c3ff53ca21012068c28028e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+#### `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 
 ```dockerfile
 WORKDIR /var/lib/couchdb
 ```
 
--	Created: Thu, 05 May 2016 07:08:37 GMT
--	Parent Layer: `55c8d94eb2302b103441bdd8046049bc91f5abda09b4bd0a51b7a6bd7c64db6d`
+-	Created: Mon, 09 May 2016 20:00:48 GMT
+-	Parent Layer: `556c14b89d79e75347c06ff9cb9436159aeafeab234ba1c6798f9f885edb946e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+#### `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 
 ```dockerfile
 ENTRYPOINT &{["tini" "--" "/docker-entrypoint.sh"]}
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c7d543d4169d3fb4ca298eb6a7dad36623cac96d591890529e9217e5f0e9d65a`
+-	Created: Mon, 09 May 2016 20:00:49 GMT
+-	Parent Layer: `5dfc75b99ed22f5bc3ce9f3d9fb39c492188f52576f485efb3656c328a6b3406`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1b5ec4b4e10940654fc9f74976f0d6202402c7bfb30f79bc0aa86f368ce58697`
+#### `14d401c35216a97043d33019d981bb05cfa61a76f9490076c45ab787086d2d6b`
 
 ```dockerfile
 CMD ["couchdb"]
 ```
 
--	Created: Thu, 05 May 2016 07:08:38 GMT
--	Parent Layer: `c3c99fcdcfe10d1c5bc8341ec040f200970ca47609ac001b37d78cffb440bb3b`
+-	Created: Mon, 09 May 2016 20:00:50 GMT
+-	Parent Layer: `f309f1a7bca0340100df29f3550fe1a2360d75d94b210d285b9e62243844dd55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e92071742328b39908f391122551c43fe8ab2270f85468f61fdd4498c9ef58a8`
+#### `441c2310baf1bd9520198541537bacf7cc5219b0a95c7d1c0a716353689ef812`
 
 ```dockerfile
 MAINTAINER Clemens Stolle klaemo@apache.org
 ```
 
--	Created: Thu, 05 May 2016 07:10:44 GMT
--	Parent Layer: `1b5ec4b4e10940654fc9f74976f0d6202402c7bfb30f79bc0aa86f368ce58697`
+-	Created: Mon, 09 May 2016 20:04:07 GMT
+-	Parent Layer: `14d401c35216a97043d33019d981bb05cfa61a76f9490076c45ab787086d2d6b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8a1e851658f7dce78c6c75c2276130b8a3b7627fac678e03ad14b536dc07902c`
+#### `8a670b81766bdb2c1f9f3f0cd045de483d29d5a54275cce7926181a893ef4445`
 
 ```dockerfile
 ENV COUCHPERUSER_SHA=5d28db3272eea9619d4391b33aae6030f0319ecc54aa2a2f2b6c6a8d448f03f2
 ```
 
--	Created: Thu, 05 May 2016 07:10:45 GMT
--	Parent Layer: `e92071742328b39908f391122551c43fe8ab2270f85468f61fdd4498c9ef58a8`
+-	Created: Mon, 09 May 2016 20:04:08 GMT
+-	Parent Layer: `441c2310baf1bd9520198541537bacf7cc5219b0a95c7d1c0a716353689ef812`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f87b1a89e93e9f34d01a03d94391cc0c9053e389db5436af93b45936a9971822`
+#### `e8410063e50b5bbbef6003b803fefbad7212017c87ea7f0a777669deb1b40030`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y rebar make  && mkdir -p /usr/local/lib/couchdb/plugins/couchperuser  && cd /usr/local/lib/couchdb/plugins  && curl -L -o couchperuser.tar.gz https://github.com/etrepum/couchperuser/archive/1.1.0.tar.gz  && echo "$COUCHPERUSER_SHA *couchperuser.tar.gz" | sha256sum -c -  && tar -xzf couchperuser.tar.gz -C couchperuser --strip-components=1  && rm couchperuser.tar.gz  && cd couchperuser  && make  && apt-get purge -y --auto-remove rebar make
 ```
 
--	Created: Thu, 05 May 2016 07:12:03 GMT
--	Parent Layer: `8a1e851658f7dce78c6c75c2276130b8a3b7627fac678e03ad14b536dc07902c`
+-	Created: Mon, 09 May 2016 20:05:28 GMT
+-	Parent Layer: `8a670b81766bdb2c1f9f3f0cd045de483d29d5a54275cce7926181a893ef4445`
 -	Docker Version: 1.9.1
--	Virtual Size: 11.7 MB (11735700 bytes)
--	v2 Blob: `sha256:1aaed046f69c5a79307c94b696825a1ca726eedbff4b94caec41b917518783a0`
--	v2 Content-Length: 9.9 MB (9948557 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 15:36:56 GMT
+-	Virtual Size: 11.7 MB (11736532 bytes)
+-	v2 Blob: `sha256:8184a3894d920b2ed8a8898ff0e65d727fd12c72c564358535e1828544b8852c`
+-	v2 Content-Length: 9.9 MB (9949565 bytes)
+-	v2 Last-Modified: Mon, 09 May 2016 20:07:11 GMT
