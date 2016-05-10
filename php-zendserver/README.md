@@ -55,11 +55,9 @@ To start a single Zend Server instance, execute:
 
 #### Availible versions:
 
--	5.5
--	5.6 (5.6 is the default)
 -	Zend Server 7
 -	Zend Server 8
--	Zend Server 9 Preview Release (With PHP 7 GA)
+-	Zend Server 9 (With PHP 7 GA)(Default version)
 
 ##### Cluster
 
