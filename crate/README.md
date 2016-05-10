@@ -9,95 +9,122 @@ For more information about this image and its history, please see [the relevant 
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `crate/tag-details.md` file](https://github.com/docker-library/docs/blob/master/crate/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
-# What is Crate?
+# What Is Crate?
 
-Crate allows to query and compute data with SQL in real time by providing a distributed aggregation engine, native search and super simple scalability. It offers auto-sharding and replication, super-fast multi index queries, distributed aggregations and sort, superfast full-text search, and super simple cluster management.
+Crate is an open source fast, scalable, easy to use SQL database that plays nicely with containers like Docker. It feels like the SQL databases you know, but makes scaling and operating your database ridiculously easy - regardless of the volume, complexity, or type of data. It ingests millions of records per second for time series setups and delivers analytics results in sub-second real time.
+
+Crate comes with a distributed sort and aggregation engine, fast multi index queries, native full-text search and super simple scalability with sharding and partitioning builtin. Preconfigured replication takes care of data resiliency. The cluster management can be supervised with a built-in admin UI. Crate's masterless architecture and simplicity make the data part of Docker environments easy and elegant.
+
+Crate provides several installation packages, including a supported Docker image. It fits perfectly into an orchestrated microservices environment. It acts like an ephemeral, omnipresent, persistent layer for data. Application containers access their data regardless of which host the data nodes run.
 
 [Crate](https://crate.io/)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/2517900006ae5f4c03c1d43235930c59f4614394/crate/logo.png)
 
-## Crate on Docker
+# Quick Start Example: Multihost Production Setup
 
-Learn more about Crate and Docker and visit our [Docker page](https://crate.io/c/docker) at [crate.io](https://crate.io). You can also contact us on [Slack](https://crate.io/docs/support/slackin/).
+This is an example configuration to run in a multi-host production environment. The configuration includes the required minimum settings:
 
-## How to use this image
+-	Volume mapping
+-	Port mapping to localhost (run only one container per machine)
+-	Unicast host discovery
 
-Simply run the latest Crate version in a Docker container with the following command. Crate ships with an [Admin UI](https://crate.io/docs/connect/admin_ui/) that provides an overview of your cluster, nodes, tables and much more. With the above command it is accessible via port `4200`.
-
-```console
-$ docker run -d -p 4200:4200 -p 4300:4300 crate:latest
-```
-
-### Attach persistent data directory
-
-If you want to attach a persistent data directory, add the following parameter.
+To start the Crate cluster in containers distributed to three hosts without multicast enabled, run this command on the first node and adapt the container and node names on the two other nodes:
 
 ```console
-$ docker run -d -p 4200:4200 -p 4300:4300 -v <data-dir>:/data crate
+# HOSTS="crate1.example.com:4300,crate2.example.com:4300,crate3.example.com:4300"
+# HOST="crate1.example.com"
+# docker run -d -p 4200:4200 -p 4300:4300 \
+    --name crate1-container \
+    --volume /mnt/data:/data \
+    --ulimit nofile=65535 \
+    --ulimit memlock=9223372036854775807 \
+        crate:latest \
+        crate \
+          -Des.cluster.name=crate-cluster \
+          -Des.node.name=crate1 \
+          -Des.transport.publish_port=4300 \
+          -Des.network.publish_host="$HOST" \
+          -Des.multicast.enabled=false \
+          -Des.discovery.zen.ping.unicast.hosts="$HOSTS" \
+          -Des.discovery.zen.minimum_master_nodes=2
 ```
 
-### Use custom Crate configuration
+# The crate/crate Docker Image
 
-Use the following parameter to provide your custom [Crate configuration file](https://crate.io/docs/reference/configuration.html).
+To form a cluster from scratch, start a few instances of the Crate container as a background daemon:
 
 ```console
-$ docker run -d -p 4200:4200 -p 4300:4300 crate -Des.config=/path/to/crate.yml
+# docker run -d crate crate
 ```
 
-Any configuration settings may be specified upon startup using the `-D` option prefix. For example, configuring the cluster name by using system properties will work this way:
+To access the admin UI, map port 4200 and point your browser to port tcp/4200 of a node of your choice while you start it or look up its IP later:
 
 ```console
-$ docker run -d -p 4200:4200 -p 4300:4300 crate crate -Des.cluster.name=cluster
+# firefox "http://$(docker inspect --format='{{.NetworkSettings.IPAddress}}' $(docker run -d crate crate)):4200/admin"
 ```
 
-### Environment
-
-To set environment variables for Crate Data you need to use the `--env` option when starting the docker image.
-
-For example, setting the heap size:
+For production use it's strongly recommended to use only one container per machine. This will give the best possible performance and by mapping the ports from the Docker container to the host it acts like a native installation. Crate's default ports 4200 (HTTP) and 4300 (Transport protocol).
 
 ```console
-$ docker run -d -p 4200:4200 -p 4300:4300 --env CRATE_HEAP_SIZE=32g crate
+# docker run -d -p 4200:4200 -p 4300:4300 crate crate
 ```
+
+## Attach Persistent Data Directory
+
+Crate stores all important data in */data*. It's advised to mount this directory to avoid writing within the docker image:
+
+```console
+# docker run -d -v <data-dir>:/data crate crate
+```
+
+## Use Custom Crate Configuration
+
+Crate is controlled by a single configuration file which has sensible defaults already. If you derive your container from the Crate container, make sure to place your file inside it and let Crate know where to find it:
+
+```console
+# docker run -d crate crate -Des.config=</path/to>/crate.yml
+```
+
+Other configuration settings may be specified upon startup using the `-D` option prefix. For example, configuring the cluster name by using system properties works like this:
+
+```console
+# docker run -d crate crate -Des.cluster.name=<my-cluster-name>
+```
+
+For further configuration options refer to the [Configuration](https://crate.io/docs/stable/configuration.html) section of our documentation.
+
+## Environment
+
+Crate recognizes environment variables like `CRATE_HEAP_SIZE` that need to be set with the `--env` option before the actual Crate core starts. As a rule of thumb you may want to [assign about half of your memory ](https://crate.io/docs/reference/en/latest/configuration.html#crate-heap-size) to Crate:
+
+```console
+# docker run -d --env CRATE_HEAP_SIZE=32g crate crate
+```
+
+## Open Files
+
+Depending on the size of your installation, Crate can open a lot of files. You can check the number of open files with `ulimit -n`, but it can depend on your host operating system. To increase the number, start containers with the option`--ulimit nofile=65535`. Furthermore it is recommended to set the `memlock` limit (the maximum locked-in-memory address space) to unlimited by setting it to a very high number (Docker requires a 64 bit integer) `--ulimit memlock=9223372036854775807`.
 
 ## Multicast
 
-Crate uses multicast for node discovery by default. However, Docker does only support multicast on the same host. This means that nodes that are started on the same host will discover each other automatically, but nodes that are started on different hosts need unicast enabled.
+By Default, Crate uses multicast for node discovery. This means nodes started in the same multicast zone will discover each other automatically. Docker multicast support between containers on different hosts depends on an overlay network driver. If that does not support multicast, you have to [enable unicast in a custom*crate.yml*](https://crate.io/docs/reference/best_practice/multi_node_setup.html) file.
 
-You can enable unicast in your custom `crate.yml`. See also: [Crate Multi Node Setup](https://crate.io/docs/en/latest/best_practice/multi_node_setup.html).
-
-Due to its architecture, Crate publishes the host it runs on for discovery within the cluster. Since the address of the host inside the docker container differs from the actual host the docker image is running on, you need to tell Crate to publish the address of the docker host for discovery.
+Crate publishes the hostname it runs on for discovery within the cluster. If the address of the docker container differs from the actual host the docker image is running on, this is the case if you do port mapping to the host via the `-p` option, you need to tell Crate to publish the address of the docker host instead:
 
 ```console
-$ docker run -d -p 4200:4200 -p 4300:4300 crate crate -Des.network.publish_host=host1.example.com:
+# docker run -d -p 4200:4200 -p 4300:4300 \
+    crate crate -Des.network.publish_host=host1.example.com
 ```
 
-If you change the transport port from the default `4300` to something else, you also need to pass the publish port to Crate.
+If you change the transport port from the default `4300` to something else, you need to pass the publish port to Crate by adding `-Des.transport.publish_port=4321` to your command.
+
+## Crate Shell
+
+The Crate Shell `crash` is bundled with the Docker image. Since the `crash` executable is already in the `$PATH` environment variable, simply run:
 
 ```console
-$ docker run -d -p 4200:4200 -p 4321:4300 crate crate -Des.transport.publish_port=4321
-```
-
-### Example Usage in a Multinode Setup
-
-```console
-$ HOSTS='crate1.example.com:4300,crate2.example.com:4300,crate3.example.com:4300'
-$ HOST=crate1.example.com
-$ docker run -d \
-	-p 4200:4200 \
-	-p 4300:4300 \
-	--name node1 \
-	--volume /mnt/data:/data \
-	--env CRATE_HEAP_SIZE=8g \
-	crate:latest \
-	crate -Des.cluster.name=cratecluster \
-		  -Des.node.name=crate1 \
-		  -Des.transport.publish_port=4300 \
-		  -Des.network.publish_host=$HOST \
-		  -Des.multicast.enabled=false \
-		  -Des.discovery.zen.ping.unicast.hosts=$HOSTS \
-		  -Des.discovery.zen.minimum_master_nodes=2
+# docker run --rm -ti crate crash --hosts [host1, host2, ...]
 ```
 
 # License
@@ -124,9 +151,9 @@ Visit [Crate on Docker](https://crate.io/docs/install/containers/docker/) and ge
 
 If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/crate/docker-crate/issues).
 
-If you have any questions or suggestions we would be very happy to help you. So, feel free to join our public room on [Slack](https://crate.io/docs/support/slackin/).
+If you have any questions or suggestions, we are happy to help! Feel free to join our [public Crate community on Slack](https://crate.io/docs/support/slackin/).
 
-For further information and official contact please visit [https://crate.io](https://crate.io).
+For further information and official contact visit [https://crate.io](https://crate.io).
 
 ## Contributing
 
