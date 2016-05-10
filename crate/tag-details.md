@@ -11,11 +11,11 @@
 ## `crate:latest`
 
 ```console
-$ docker pull library/crate@sha256:767a82db3c7f6e8719baf4ccaa001fec95a455e595daf267eafbcfc5f120ec42
+$ docker pull library/crate@sha256:7009185dd075aca21a6d9d50729f5ae1ab7838e0afb2dc3a808defa0bd368e1c
 ```
 
--	Total Virtual Size: 255.6 MB (255633869 bytes)
--	Total v2 Content-Length: 148.1 MB (148053491 bytes)
+-	Total Virtual Size: 255.7 MB (255666418 bytes)
+-	Total v2 Content-Length: 148.1 MB (148060608 bytes)
 
 ### Layers (16)
 
@@ -32,13 +32,13 @@ ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 -	v2 Content-Length: 2.3 MB (2320212 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `9a29ecb8ff930bf8a81d9899ec926c1575907582b0f445b54969e6ed6946565f`
+#### `5fd47bbf5635659e66a845e8aa58450e29dff897248b7385de6c91410b10d7f2`
 
 ```dockerfile
 MAINTAINER Crate.IO GmbH office@crate.io
 ```
 
--	Created: Fri, 06 May 2016 18:55:44 GMT
+-	Created: Tue, 10 May 2016 16:26:27 GMT
 -	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
@@ -46,63 +46,63 @@ MAINTAINER Crate.IO GmbH office@crate.io
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0b78bd4549fe7134c414647b848ae15541a9510058ad5b60ae4cbb0a290da24a`
+#### `a01de83407a13bfc7b48266c4226a1379a7521e0ff850c1dadbdf3960f4b4b4f`
 
 ```dockerfile
 ENV ANT_VERSION=1.9.7
 ```
 
--	Created: Fri, 06 May 2016 18:55:45 GMT
--	Parent Layer: `9a29ecb8ff930bf8a81d9899ec926c1575907582b0f445b54969e6ed6946565f`
+-	Created: Tue, 10 May 2016 16:26:28 GMT
+-	Parent Layer: `5fd47bbf5635659e66a845e8aa58450e29dff897248b7385de6c91410b10d7f2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `52e2107956152241d29cdada45c8ce056a577eb716afba25de81d15ee3ff8243`
+#### `f50e7eaf76aaf07ac6d311ec7b039a7da35b808bc60841ccc0eacbea52cf3ded`
 
 ```dockerfile
 ENV SIGAR_VERSION=1.6.4
 ```
 
--	Created: Fri, 06 May 2016 18:55:46 GMT
--	Parent Layer: `0b78bd4549fe7134c414647b848ae15541a9510058ad5b60ae4cbb0a290da24a`
+-	Created: Tue, 10 May 2016 16:26:28 GMT
+-	Parent Layer: `a01de83407a13bfc7b48266c4226a1379a7521e0ff850c1dadbdf3960f4b4b4f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9e0803ec1abb017a36f61313f24586ac29340293ef41c5ec0d0af90e52d10563`
+#### `dbe4e39924edfde18d00e6b9edce2e3652a75e6cd7a65780d774e62d7a884b51`
 
 ```dockerfile
 RUN addgroup crate && adduser -G crate -H crate -D
 ```
 
--	Created: Fri, 06 May 2016 18:55:49 GMT
--	Parent Layer: `52e2107956152241d29cdada45c8ce056a577eb716afba25de81d15ee3ff8243`
+-	Created: Tue, 10 May 2016 16:26:30 GMT
+-	Parent Layer: `f50e7eaf76aaf07ac6d311ec7b039a7da35b808bc60841ccc0eacbea52cf3ded`
 -	Docker Version: 1.9.1
 -	Virtual Size: 4.9 KB (4917 bytes)
--	v2 Blob: `sha256:88915d8d5b7e629c3cf49535c0957cc50a348aa9c3080b0ac3be4a5f441c68c5`
+-	v2 Blob: `sha256:5d7b9d54e17f297827faaa27fbcb9e225466382dedaaf47ae96b7d069f395b3a`
 -	v2 Content-Length: 1.2 KB (1206 bytes)
--	v2 Last-Modified: Mon, 09 May 2016 20:10:35 GMT
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:38 GMT
 
-#### `7baa0d09463f6fb136eb664edc55d2fae1d2190741c1123aee06da1c33414c61`
+#### `f4486c7245507cb647288eab84531089dd41462f1344f1030ab9540398f11b0b`
 
 ```dockerfile
 ADD file:881148c76c8b87c5d36a0f7c02bcf966f819a23b28d5fb9e0b052c9585b37b20 in /var/tmp/
 ```
 
--	Created: Fri, 06 May 2016 18:55:50 GMT
--	Parent Layer: `9e0803ec1abb017a36f61313f24586ac29340293ef41c5ec0d0af90e52d10563`
+-	Created: Tue, 10 May 2016 16:26:31 GMT
+-	Parent Layer: `dbe4e39924edfde18d00e6b9edce2e3652a75e6cd7a65780d774e62d7a884b51`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.7 KB (1676 bytes)
--	v2 Blob: `sha256:701d5b824924d2710086ea1af93bcf3246e010a046e75d00d7662f298b0f6225`
+-	v2 Blob: `sha256:380abdb7ce3cac071f0a46f42769393f30bdff55912344a37d9ee5010d2be6d3`
 -	v2 Content-Length: 824.0 B
--	v2 Last-Modified: Mon, 09 May 2016 20:10:30 GMT
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:35 GMT
 
-#### `e09ae529771291a6fb059ecb064e252462628dd9402bfb80ced5ddee3628c77c`
+#### `a0c7ebc4bcb76c3d66674bd3c145d3f2530d8f7999042df6af56ac5de59b9730`
 
 ```dockerfile
 RUN set -ex\
@@ -145,29 +145,29 @@ RUN set -ex\
      && rm -rf $BUILD_DIR
 ```
 
--	Created: Mon, 09 May 2016 20:02:12 GMT
--	Parent Layer: `7baa0d09463f6fb136eb664edc55d2fae1d2190741c1123aee06da1c33414c61`
+-	Created: Tue, 10 May 2016 16:27:05 GMT
+-	Parent Layer: `f4486c7245507cb647288eab84531089dd41462f1344f1030ab9540398f11b0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.5 MB (2511290 bytes)
--	v2 Blob: `sha256:2d9aae79d70c7e3d0585ce44e528278626a18fd1a43687e95aedcc39861ce0d4`
--	v2 Content-Length: 1.1 MB (1071744 bytes)
--	v2 Last-Modified: Mon, 09 May 2016 20:10:27 GMT
+-	v2 Blob: `sha256:3957838330e945d195bf871d832cb8aa8318af8f8880f13ae6ee5fc503c47b0c`
+-	v2 Content-Length: 1.1 MB (1071927 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:32 GMT
 
-#### `5ead51fb82df89bbefc53ff31fe672cc7d4ec3842dd33b0fd357a33bd33d7c96`
+#### `4e2883d0af34d9ac9acd901da3afc544dd66efb240fc9b58076b0de533287fdf`
 
 ```dockerfile
 ENV CRATE_VERSION=0.54.8
 ```
 
--	Created: Mon, 09 May 2016 20:02:14 GMT
--	Parent Layer: `e09ae529771291a6fb059ecb064e252462628dd9402bfb80ced5ddee3628c77c`
+-	Created: Tue, 10 May 2016 16:27:05 GMT
+-	Parent Layer: `a0c7ebc4bcb76c3d66674bd3c145d3f2530d8f7999042df6af56ac5de59b9730`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `57011dcbb5d13c91d70f05a5474f821bee8e9bdae1a1e99f89ae591d1c6d9bd5`
+#### `f055b6830bf9edc6b151b8b522968f676c2bc3610eb934b22f1b6f168efcf938`
 
 ```dockerfile
 RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openssl\
@@ -186,106 +186,106 @@ RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openss
      && apk del .build-deps
 ```
 
--	Created: Mon, 09 May 2016 20:06:27 GMT
--	Parent Layer: `5ead51fb82df89bbefc53ff31fe672cc7d4ec3842dd33b0fd357a33bd33d7c96`
+-	Created: Tue, 10 May 2016 16:27:24 GMT
+-	Parent Layer: `4e2883d0af34d9ac9acd901da3afc544dd66efb240fc9b58076b0de533287fdf`
 -	Docker Version: 1.9.1
--	Virtual Size: 248.3 MB (248318574 bytes)
--	v2 Blob: `sha256:18548b2018f77223537413b22b790e8a59c2a8568b14e11431134ad29c6889d0`
--	v2 Content-Length: 144.7 MB (144658574 bytes)
--	v2 Last-Modified: Mon, 09 May 2016 20:10:15 GMT
+-	Virtual Size: 248.4 MB (248351123 bytes)
+-	v2 Blob: `sha256:3339983321b0d06fc05c81278e5750e7389a71671b609fe8a9eef6712c5593d8`
+-	v2 Content-Length: 144.7 MB (144665507 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:23 GMT
 
-#### `9ff0a23b3091e2c97a6b5b6943c402c83b799367d731da957c5748e1e691336f`
+#### `2cb0cc8b51940af7afa9ba7c5920eba6efc43bbda1dcffc5b5e675eee1977793`
 
 ```dockerfile
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 09 May 2016 20:06:31 GMT
--	Parent Layer: `57011dcbb5d13c91d70f05a5474f821bee8e9bdae1a1e99f89ae591d1c6d9bd5`
+-	Created: Tue, 10 May 2016 16:27:27 GMT
+-	Parent Layer: `f055b6830bf9edc6b151b8b522968f676c2bc3610eb934b22f1b6f168efcf938`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0540a6b476f26a035c306c4219e38c4c8db249606ab7518318d6ee80f57bd9cc`
+#### `3971fc4e386ffae231443341b2548676924c45a0266c470a7c46cca28d7b5113`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Mon, 09 May 2016 20:06:31 GMT
--	Parent Layer: `9ff0a23b3091e2c97a6b5b6943c402c83b799367d731da957c5748e1e691336f`
+-	Created: Tue, 10 May 2016 16:27:28 GMT
+-	Parent Layer: `2cb0cc8b51940af7afa9ba7c5920eba6efc43bbda1dcffc5b5e675eee1977793`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d313e7b4054c1885e90765cc76fcdfe266c8e2d9a0ba99be2a18775c95b80690`
+#### `0af3cf41df67a750f5f4802e67cb3f5cb31fd9b3bfafa35a471b3ce44a0693d8`
 
 ```dockerfile
 ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
 ```
 
--	Created: Mon, 09 May 2016 20:06:32 GMT
--	Parent Layer: `0540a6b476f26a035c306c4219e38c4c8db249606ab7518318d6ee80f57bd9cc`
+-	Created: Tue, 10 May 2016 16:27:29 GMT
+-	Parent Layer: `3971fc4e386ffae231443341b2548676924c45a0266c470a7c46cca28d7b5113`
 -	Docker Version: 1.9.1
 -	Virtual Size: 100.0 B
--	v2 Blob: `sha256:05c0112cdbaf58f1bfcc4662b9e65b9c635ea9a13cf4e9897720f836bbff3222`
--	v2 Content-Length: 238.0 B
--	v2 Last-Modified: Mon, 09 May 2016 20:09:45 GMT
+-	v2 Blob: `sha256:4bf4bd91449adf5391184fc000dd743885a380c02b9649dd0b8a4d868b4dc3df`
+-	v2 Content-Length: 239.0 B
+-	v2 Last-Modified: Tue, 10 May 2016 16:30:52 GMT
 
-#### `e8ecbdacff720733cf89a5071013a48de971c4fb994baf42114edc5db9ffe253`
+#### `8c098df13c2acb76c1b5e7a3a9c9483a2bbaf79d6a789fc320ee21208948be69`
 
 ```dockerfile
 ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
 ```
 
--	Created: Mon, 09 May 2016 20:06:33 GMT
--	Parent Layer: `d313e7b4054c1885e90765cc76fcdfe266c8e2d9a0ba99be2a18775c95b80690`
+-	Created: Tue, 10 May 2016 16:27:29 GMT
+-	Parent Layer: `0af3cf41df67a750f5f4802e67cb3f5cb31fd9b3bfafa35a471b3ce44a0693d8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 529.0 B
--	v2 Blob: `sha256:b43ae676b82aa05981c159a624bb5aa24193654d4795798fc884840275e3224c`
+-	v2 Blob: `sha256:e9a2170d9e8a84693d043710bda11c7f5e1e738d8b31a3820cf87ed9e4c52fd1`
 -	v2 Content-Length: 405.0 B
--	v2 Last-Modified: Mon, 09 May 2016 20:09:41 GMT
+-	v2 Last-Modified: Tue, 10 May 2016 16:30:49 GMT
 
-#### `f15cfb3f82bd57f28c19dc12e4ca79bd2205afcb067243e2b66b8ce6b483bd9b`
+#### `c26969f0e241a3e04de3c13055c871da19d706ef0c011cfd6ad6f12d5db85e00`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Mon, 09 May 2016 20:06:34 GMT
--	Parent Layer: `e8ecbdacff720733cf89a5071013a48de971c4fb994baf42114edc5db9ffe253`
+-	Created: Tue, 10 May 2016 16:27:30 GMT
+-	Parent Layer: `8c098df13c2acb76c1b5e7a3a9c9483a2bbaf79d6a789fc320ee21208948be69`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `dfe88e87686149abe58282ff536ab3f93486adca078411fddd1a8e552e556b29`
+#### `1508dd1d8e87d0f69a17e3b715c341061327a5d34b7f7998258dfebef3163cd0`
 
 ```dockerfile
 EXPOSE 4200/tcp 4300/tcp
 ```
 
--	Created: Mon, 09 May 2016 20:06:35 GMT
--	Parent Layer: `f15cfb3f82bd57f28c19dc12e4ca79bd2205afcb067243e2b66b8ce6b483bd9b`
+-	Created: Tue, 10 May 2016 16:27:31 GMT
+-	Parent Layer: `c26969f0e241a3e04de3c13055c871da19d706ef0c011cfd6ad6f12d5db85e00`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b88053470bcab2ff68e70743aaec9906933bd0560ef171b4983feb4c6d9ae6d5`
+#### `4e67de8db82b7436bcd8b4cec1a1aed5c9a9f74bd60c2daf6848a9ae0a8b45ee`
 
 ```dockerfile
 CMD ["crate"]
 ```
 
--	Created: Mon, 09 May 2016 20:06:36 GMT
--	Parent Layer: `dfe88e87686149abe58282ff536ab3f93486adca078411fddd1a8e552e556b29`
+-	Created: Tue, 10 May 2016 16:27:31 GMT
+-	Parent Layer: `1508dd1d8e87d0f69a17e3b715c341061327a5d34b7f7998258dfebef3163cd0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -295,11 +295,11 @@ CMD ["crate"]
 ## `crate:0.52`
 
 ```console
-$ docker pull library/crate@sha256:fc07b82e4bcae4966bdba263726e6517cd16a500b1175edcdc040730171b4ce6
+$ docker pull library/crate@sha256:3870732920568f3950d494a03768917f5429cbec1a7ac905bd34ca21fca2a518
 ```
 
 -	Total Virtual Size: 402.3 MB (402290538 bytes)
--	Total v2 Content-Length: 180.9 MB (180895504 bytes)
+-	Total v2 Content-Length: 180.9 MB (180895253 bytes)
 
 ### Layers (24)
 
@@ -504,13 +504,13 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	v2 Content-Length: 284.3 KB (284344 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 15:38:48 GMT
 
-#### `86017125c4de1864cda5d9d5c22dde46cd2d736e42154fb349c8f67d87b3a3e1`
+#### `3c08f84131e69b210f50afd8368d498059295ec22a69d339eabf4aa31c9cd9a4`
 
 ```dockerfile
 MAINTAINER Crate Technology GmbH <office@crate.io>
 ```
 
--	Created: Thu, 05 May 2016 14:22:18 GMT
+-	Created: Tue, 10 May 2016 16:27:36 GMT
 -	Parent Layer: `734e9880ca0f915eea9b7f11c5e617632de27644dd16bac73be5d9712cf454f2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
@@ -518,7 +518,7 @@ MAINTAINER Crate Technology GmbH <office@crate.io>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `574a5b0ca88ca89813de4a705f45e914321cf4ea489444c84f319b15e7ba47e1`
+#### `0137a60e3bdb355b3ae702766bc3c0fd3df20232e7f58807aee685ed4773eb71`
 
 ```dockerfile
 RUN apt-get update &&\
@@ -527,134 +527,134 @@ RUN apt-get update &&\
      ln -s /usr/bin/python3 /usr/bin/python
 ```
 
--	Created: Thu, 05 May 2016 14:23:28 GMT
--	Parent Layer: `86017125c4de1864cda5d9d5c22dde46cd2d736e42154fb349c8f67d87b3a3e1`
+-	Created: Tue, 10 May 2016 16:28:17 GMT
+-	Parent Layer: `3c08f84131e69b210f50afd8368d498059295ec22a69d339eabf4aa31c9cd9a4`
 -	Docker Version: 1.9.1
 -	Virtual Size: 30.4 MB (30441502 bytes)
--	v2 Blob: `sha256:2499198cc9d4438115c7cb1ea366c131fe1220c9240df71a2c8f4d12c4c02e90`
--	v2 Content-Length: 9.5 MB (9505418 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 15:38:39 GMT
+-	v2 Blob: `sha256:3e905180c409c8ee985b142e0b3603bb799ea652c680d484e4098c7f255c09aa`
+-	v2 Content-Length: 9.5 MB (9505171 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 16:32:27 GMT
 
-#### `2ba43ad57dd4e934db59c4f89bf07f166ccda22f9df0b968760b4a002bca4fb6`
+#### `91db636be2599971d2be380c8d1afd4034bd4dee5fbe80dfca7ec3b79d211b9a`
 
 ```dockerfile
 ENV CRATE_VERSION=0.52.4
 ```
 
--	Created: Thu, 05 May 2016 14:23:31 GMT
--	Parent Layer: `574a5b0ca88ca89813de4a705f45e914321cf4ea489444c84f319b15e7ba47e1`
+-	Created: Tue, 10 May 2016 16:28:18 GMT
+-	Parent Layer: `0137a60e3bdb355b3ae702766bc3c0fd3df20232e7f58807aee685ed4773eb71`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f5f514e00936026a2156b2df6ccd8dbec4861003950cf904a8a2c28c285cb279`
+#### `b58e472466785cc338e293c1f93278c2679ccef10d9211dba23e17abd617ad15`
 
 ```dockerfile
 RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
 ```
 
--	Created: Thu, 05 May 2016 14:23:40 GMT
--	Parent Layer: `2ba43ad57dd4e934db59c4f89bf07f166ccda22f9df0b968760b4a002bca4fb6`
+-	Created: Tue, 10 May 2016 16:28:27 GMT
+-	Parent Layer: `91db636be2599971d2be380c8d1afd4034bd4dee5fbe80dfca7ec3b79d211b9a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 60.9 MB (60863478 bytes)
--	v2 Blob: `sha256:6e592f55e9f43c1d557190001fdd9bedc666eae58698b01b893ab9e9ccbd8c18`
--	v2 Content-Length: 47.3 MB (47311850 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 15:38:23 GMT
+-	v2 Blob: `sha256:45d2e08433527b305235685022596b1b514354d2f709abd09d5798a31af195d4`
+-	v2 Content-Length: 47.3 MB (47311846 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 16:32:15 GMT
 
-#### `435d4dc753d5f512a614d3348a054cc9c9e590bd90bbca06d3188448b0fb9833`
+#### `7028c8854f0c1f044f842d026cc831fcac7da8252b00322665d0881c9e923965`
 
 ```dockerfile
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 05 May 2016 14:23:43 GMT
--	Parent Layer: `f5f514e00936026a2156b2df6ccd8dbec4861003950cf904a8a2c28c285cb279`
+-	Created: Tue, 10 May 2016 16:28:28 GMT
+-	Parent Layer: `b58e472466785cc338e293c1f93278c2679ccef10d9211dba23e17abd617ad15`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4eacf406fae9ee61e4732cb2784a9f3295d6397cd23c38b13f1127a8fe87657f`
+#### `572de55bd5cf43bf9f37af9fd263b32a5d6f7f0a815d316738ce4c8b92084164`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 05 May 2016 14:23:44 GMT
--	Parent Layer: `435d4dc753d5f512a614d3348a054cc9c9e590bd90bbca06d3188448b0fb9833`
+-	Created: Tue, 10 May 2016 16:28:29 GMT
+-	Parent Layer: `7028c8854f0c1f044f842d026cc831fcac7da8252b00322665d0881c9e923965`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `69f910ca94e7c17aa96d3b4690679e855e28e4fa7c1576b1b0f8cf01651deece`
+#### `5df6ecbdccc17f249b3cd42df1ce181139d2e2d4cf56edb9622be4e9898715ed`
 
 ```dockerfile
 ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
 ```
 
--	Created: Thu, 05 May 2016 14:23:45 GMT
--	Parent Layer: `4eacf406fae9ee61e4732cb2784a9f3295d6397cd23c38b13f1127a8fe87657f`
+-	Created: Tue, 10 May 2016 16:28:30 GMT
+-	Parent Layer: `572de55bd5cf43bf9f37af9fd263b32a5d6f7f0a815d316738ce4c8b92084164`
 -	Docker Version: 1.9.1
 -	Virtual Size: 100.0 B
--	v2 Blob: `sha256:a5aee5d863aa2909c8fe9bcc7f229e11130bb0bf3cc171c75e7d5dc376495280`
--	v2 Content-Length: 231.0 B
--	v2 Last-Modified: Fri, 06 May 2016 15:38:03 GMT
+-	v2 Blob: `sha256:9bea2fbb1eeea66617fe757db54f6531a2cf97860a6b7a83ca855106540fc0a6`
+-	v2 Content-Length: 229.0 B
+-	v2 Last-Modified: Tue, 10 May 2016 16:32:00 GMT
 
-#### `d1771a2dafb67c6bca5e05fd815bc054eaab0620fb107255395b45177385c3a5`
+#### `2a482b1a6928bb12300f69f50a9c4ec94b26bbb88ef3bc5a13167771ac4184e1`
 
 ```dockerfile
 ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
 ```
 
--	Created: Thu, 05 May 2016 14:23:46 GMT
--	Parent Layer: `69f910ca94e7c17aa96d3b4690679e855e28e4fa7c1576b1b0f8cf01651deece`
+-	Created: Tue, 10 May 2016 16:28:31 GMT
+-	Parent Layer: `5df6ecbdccc17f249b3cd42df1ce181139d2e2d4cf56edb9622be4e9898715ed`
 -	Docker Version: 1.9.1
 -	Virtual Size: 529.0 B
--	v2 Blob: `sha256:71b663f41c7dabaf2733f6b9e1394ed2e26f37fe74e004975f86420d81c89eed`
--	v2 Content-Length: 395.0 B
--	v2 Last-Modified: Fri, 06 May 2016 15:37:59 GMT
+-	v2 Blob: `sha256:991aef7137635197b28c4b7109b1d6a53a8bcc7c96a369b5867b51a19804c6a1`
+-	v2 Content-Length: 397.0 B
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:57 GMT
 
-#### `d7809cccbd756219c95e13bd01735a02d75480d73c5af4ef85276575e030a8e9`
+#### `b7a307d78cec94ba9533a8943468160d82a14dd0c0c7263e41c8de5e3eca5936`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 05 May 2016 14:23:47 GMT
--	Parent Layer: `d1771a2dafb67c6bca5e05fd815bc054eaab0620fb107255395b45177385c3a5`
+-	Created: Tue, 10 May 2016 16:28:31 GMT
+-	Parent Layer: `2a482b1a6928bb12300f69f50a9c4ec94b26bbb88ef3bc5a13167771ac4184e1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a6ed7e58cacbd917765216157e5cc76e724fbc8d8c8aa4da7c703462795c1fac`
+#### `eb9d5d95fb12b3d6545e26eae918f0c9558336a8f8e502c3b8a70072a2c1e2e3`
 
 ```dockerfile
 EXPOSE 4200/tcp 4300/tcp
 ```
 
--	Created: Thu, 05 May 2016 14:23:48 GMT
--	Parent Layer: `d7809cccbd756219c95e13bd01735a02d75480d73c5af4ef85276575e030a8e9`
+-	Created: Tue, 10 May 2016 16:28:32 GMT
+-	Parent Layer: `b7a307d78cec94ba9533a8943468160d82a14dd0c0c7263e41c8de5e3eca5936`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e7458aa4edbd8cbf320ad1c48eacc7447ee4f28ac212958aea560a225a4ddd9`
+#### `3dffc26a831e870b724dd990dd8d22d48cbcbd7860912c52d9e0ffb1805fa9fb`
 
 ```dockerfile
 CMD ["crate"]
 ```
 
--	Created: Thu, 05 May 2016 14:23:49 GMT
--	Parent Layer: `a6ed7e58cacbd917765216157e5cc76e724fbc8d8c8aa4da7c703462795c1fac`
+-	Created: Tue, 10 May 2016 16:28:33 GMT
+-	Parent Layer: `eb9d5d95fb12b3d6545e26eae918f0c9558336a8f8e502c3b8a70072a2c1e2e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -664,11 +664,11 @@ CMD ["crate"]
 ## `crate:0.52.4`
 
 ```console
-$ docker pull library/crate@sha256:109eda0198f5ee1723e4430c1ec92296258c44646610f2497f8f5bfd978b678a
+$ docker pull library/crate@sha256:0dac00775fe65c0c0d036bd667a31dd1b49a9fd15f67a81ef2b304e76ba04bab
 ```
 
 -	Total Virtual Size: 402.3 MB (402290538 bytes)
--	Total v2 Content-Length: 180.9 MB (180895504 bytes)
+-	Total v2 Content-Length: 180.9 MB (180895253 bytes)
 
 ### Layers (24)
 
@@ -873,13 +873,13 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	v2 Content-Length: 284.3 KB (284344 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 15:38:48 GMT
 
-#### `86017125c4de1864cda5d9d5c22dde46cd2d736e42154fb349c8f67d87b3a3e1`
+#### `3c08f84131e69b210f50afd8368d498059295ec22a69d339eabf4aa31c9cd9a4`
 
 ```dockerfile
 MAINTAINER Crate Technology GmbH <office@crate.io>
 ```
 
--	Created: Thu, 05 May 2016 14:22:18 GMT
+-	Created: Tue, 10 May 2016 16:27:36 GMT
 -	Parent Layer: `734e9880ca0f915eea9b7f11c5e617632de27644dd16bac73be5d9712cf454f2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
@@ -887,7 +887,7 @@ MAINTAINER Crate Technology GmbH <office@crate.io>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `574a5b0ca88ca89813de4a705f45e914321cf4ea489444c84f319b15e7ba47e1`
+#### `0137a60e3bdb355b3ae702766bc3c0fd3df20232e7f58807aee685ed4773eb71`
 
 ```dockerfile
 RUN apt-get update &&\
@@ -896,134 +896,134 @@ RUN apt-get update &&\
      ln -s /usr/bin/python3 /usr/bin/python
 ```
 
--	Created: Thu, 05 May 2016 14:23:28 GMT
--	Parent Layer: `86017125c4de1864cda5d9d5c22dde46cd2d736e42154fb349c8f67d87b3a3e1`
+-	Created: Tue, 10 May 2016 16:28:17 GMT
+-	Parent Layer: `3c08f84131e69b210f50afd8368d498059295ec22a69d339eabf4aa31c9cd9a4`
 -	Docker Version: 1.9.1
 -	Virtual Size: 30.4 MB (30441502 bytes)
--	v2 Blob: `sha256:2499198cc9d4438115c7cb1ea366c131fe1220c9240df71a2c8f4d12c4c02e90`
--	v2 Content-Length: 9.5 MB (9505418 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 15:38:39 GMT
+-	v2 Blob: `sha256:3e905180c409c8ee985b142e0b3603bb799ea652c680d484e4098c7f255c09aa`
+-	v2 Content-Length: 9.5 MB (9505171 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 16:32:27 GMT
 
-#### `2ba43ad57dd4e934db59c4f89bf07f166ccda22f9df0b968760b4a002bca4fb6`
+#### `91db636be2599971d2be380c8d1afd4034bd4dee5fbe80dfca7ec3b79d211b9a`
 
 ```dockerfile
 ENV CRATE_VERSION=0.52.4
 ```
 
--	Created: Thu, 05 May 2016 14:23:31 GMT
--	Parent Layer: `574a5b0ca88ca89813de4a705f45e914321cf4ea489444c84f319b15e7ba47e1`
+-	Created: Tue, 10 May 2016 16:28:18 GMT
+-	Parent Layer: `0137a60e3bdb355b3ae702766bc3c0fd3df20232e7f58807aee685ed4773eb71`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f5f514e00936026a2156b2df6ccd8dbec4861003950cf904a8a2c28c285cb279`
+#### `b58e472466785cc338e293c1f93278c2679ccef10d9211dba23e17abd617ad15`
 
 ```dockerfile
 RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
 ```
 
--	Created: Thu, 05 May 2016 14:23:40 GMT
--	Parent Layer: `2ba43ad57dd4e934db59c4f89bf07f166ccda22f9df0b968760b4a002bca4fb6`
+-	Created: Tue, 10 May 2016 16:28:27 GMT
+-	Parent Layer: `91db636be2599971d2be380c8d1afd4034bd4dee5fbe80dfca7ec3b79d211b9a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 60.9 MB (60863478 bytes)
--	v2 Blob: `sha256:6e592f55e9f43c1d557190001fdd9bedc666eae58698b01b893ab9e9ccbd8c18`
--	v2 Content-Length: 47.3 MB (47311850 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 15:38:23 GMT
+-	v2 Blob: `sha256:45d2e08433527b305235685022596b1b514354d2f709abd09d5798a31af195d4`
+-	v2 Content-Length: 47.3 MB (47311846 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 16:32:15 GMT
 
-#### `435d4dc753d5f512a614d3348a054cc9c9e590bd90bbca06d3188448b0fb9833`
+#### `7028c8854f0c1f044f842d026cc831fcac7da8252b00322665d0881c9e923965`
 
 ```dockerfile
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 05 May 2016 14:23:43 GMT
--	Parent Layer: `f5f514e00936026a2156b2df6ccd8dbec4861003950cf904a8a2c28c285cb279`
+-	Created: Tue, 10 May 2016 16:28:28 GMT
+-	Parent Layer: `b58e472466785cc338e293c1f93278c2679ccef10d9211dba23e17abd617ad15`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4eacf406fae9ee61e4732cb2784a9f3295d6397cd23c38b13f1127a8fe87657f`
+#### `572de55bd5cf43bf9f37af9fd263b32a5d6f7f0a815d316738ce4c8b92084164`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 05 May 2016 14:23:44 GMT
--	Parent Layer: `435d4dc753d5f512a614d3348a054cc9c9e590bd90bbca06d3188448b0fb9833`
+-	Created: Tue, 10 May 2016 16:28:29 GMT
+-	Parent Layer: `7028c8854f0c1f044f842d026cc831fcac7da8252b00322665d0881c9e923965`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `69f910ca94e7c17aa96d3b4690679e855e28e4fa7c1576b1b0f8cf01651deece`
+#### `5df6ecbdccc17f249b3cd42df1ce181139d2e2d4cf56edb9622be4e9898715ed`
 
 ```dockerfile
 ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
 ```
 
--	Created: Thu, 05 May 2016 14:23:45 GMT
--	Parent Layer: `4eacf406fae9ee61e4732cb2784a9f3295d6397cd23c38b13f1127a8fe87657f`
+-	Created: Tue, 10 May 2016 16:28:30 GMT
+-	Parent Layer: `572de55bd5cf43bf9f37af9fd263b32a5d6f7f0a815d316738ce4c8b92084164`
 -	Docker Version: 1.9.1
 -	Virtual Size: 100.0 B
--	v2 Blob: `sha256:a5aee5d863aa2909c8fe9bcc7f229e11130bb0bf3cc171c75e7d5dc376495280`
--	v2 Content-Length: 231.0 B
--	v2 Last-Modified: Fri, 06 May 2016 15:38:03 GMT
+-	v2 Blob: `sha256:9bea2fbb1eeea66617fe757db54f6531a2cf97860a6b7a83ca855106540fc0a6`
+-	v2 Content-Length: 229.0 B
+-	v2 Last-Modified: Tue, 10 May 2016 16:32:00 GMT
 
-#### `d1771a2dafb67c6bca5e05fd815bc054eaab0620fb107255395b45177385c3a5`
+#### `2a482b1a6928bb12300f69f50a9c4ec94b26bbb88ef3bc5a13167771ac4184e1`
 
 ```dockerfile
 ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
 ```
 
--	Created: Thu, 05 May 2016 14:23:46 GMT
--	Parent Layer: `69f910ca94e7c17aa96d3b4690679e855e28e4fa7c1576b1b0f8cf01651deece`
+-	Created: Tue, 10 May 2016 16:28:31 GMT
+-	Parent Layer: `5df6ecbdccc17f249b3cd42df1ce181139d2e2d4cf56edb9622be4e9898715ed`
 -	Docker Version: 1.9.1
 -	Virtual Size: 529.0 B
--	v2 Blob: `sha256:71b663f41c7dabaf2733f6b9e1394ed2e26f37fe74e004975f86420d81c89eed`
--	v2 Content-Length: 395.0 B
--	v2 Last-Modified: Fri, 06 May 2016 15:37:59 GMT
+-	v2 Blob: `sha256:991aef7137635197b28c4b7109b1d6a53a8bcc7c96a369b5867b51a19804c6a1`
+-	v2 Content-Length: 397.0 B
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:57 GMT
 
-#### `d7809cccbd756219c95e13bd01735a02d75480d73c5af4ef85276575e030a8e9`
+#### `b7a307d78cec94ba9533a8943468160d82a14dd0c0c7263e41c8de5e3eca5936`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 05 May 2016 14:23:47 GMT
--	Parent Layer: `d1771a2dafb67c6bca5e05fd815bc054eaab0620fb107255395b45177385c3a5`
+-	Created: Tue, 10 May 2016 16:28:31 GMT
+-	Parent Layer: `2a482b1a6928bb12300f69f50a9c4ec94b26bbb88ef3bc5a13167771ac4184e1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a6ed7e58cacbd917765216157e5cc76e724fbc8d8c8aa4da7c703462795c1fac`
+#### `eb9d5d95fb12b3d6545e26eae918f0c9558336a8f8e502c3b8a70072a2c1e2e3`
 
 ```dockerfile
 EXPOSE 4200/tcp 4300/tcp
 ```
 
--	Created: Thu, 05 May 2016 14:23:48 GMT
--	Parent Layer: `d7809cccbd756219c95e13bd01735a02d75480d73c5af4ef85276575e030a8e9`
+-	Created: Tue, 10 May 2016 16:28:32 GMT
+-	Parent Layer: `b7a307d78cec94ba9533a8943468160d82a14dd0c0c7263e41c8de5e3eca5936`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e7458aa4edbd8cbf320ad1c48eacc7447ee4f28ac212958aea560a225a4ddd9`
+#### `3dffc26a831e870b724dd990dd8d22d48cbcbd7860912c52d9e0ffb1805fa9fb`
 
 ```dockerfile
 CMD ["crate"]
 ```
 
--	Created: Thu, 05 May 2016 14:23:49 GMT
--	Parent Layer: `a6ed7e58cacbd917765216157e5cc76e724fbc8d8c8aa4da7c703462795c1fac`
+-	Created: Tue, 10 May 2016 16:28:33 GMT
+-	Parent Layer: `eb9d5d95fb12b3d6545e26eae918f0c9558336a8f8e502c3b8a70072a2c1e2e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1033,11 +1033,11 @@ CMD ["crate"]
 ## `crate:0.54`
 
 ```console
-$ docker pull library/crate@sha256:89a41688ced528162f5b3c69e353d151621a515ae105d497ebf76d99c0a3b819
+$ docker pull library/crate@sha256:26cd5740b2b354aa742a37a8e63b48aa60183abe9649130deca8371723955233
 ```
 
--	Total Virtual Size: 255.6 MB (255633869 bytes)
--	Total v2 Content-Length: 148.1 MB (148053491 bytes)
+-	Total Virtual Size: 255.7 MB (255666418 bytes)
+-	Total v2 Content-Length: 148.1 MB (148060608 bytes)
 
 ### Layers (16)
 
@@ -1054,13 +1054,13 @@ ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 -	v2 Content-Length: 2.3 MB (2320212 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `9a29ecb8ff930bf8a81d9899ec926c1575907582b0f445b54969e6ed6946565f`
+#### `5fd47bbf5635659e66a845e8aa58450e29dff897248b7385de6c91410b10d7f2`
 
 ```dockerfile
 MAINTAINER Crate.IO GmbH office@crate.io
 ```
 
--	Created: Fri, 06 May 2016 18:55:44 GMT
+-	Created: Tue, 10 May 2016 16:26:27 GMT
 -	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
@@ -1068,63 +1068,63 @@ MAINTAINER Crate.IO GmbH office@crate.io
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0b78bd4549fe7134c414647b848ae15541a9510058ad5b60ae4cbb0a290da24a`
+#### `a01de83407a13bfc7b48266c4226a1379a7521e0ff850c1dadbdf3960f4b4b4f`
 
 ```dockerfile
 ENV ANT_VERSION=1.9.7
 ```
 
--	Created: Fri, 06 May 2016 18:55:45 GMT
--	Parent Layer: `9a29ecb8ff930bf8a81d9899ec926c1575907582b0f445b54969e6ed6946565f`
+-	Created: Tue, 10 May 2016 16:26:28 GMT
+-	Parent Layer: `5fd47bbf5635659e66a845e8aa58450e29dff897248b7385de6c91410b10d7f2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `52e2107956152241d29cdada45c8ce056a577eb716afba25de81d15ee3ff8243`
+#### `f50e7eaf76aaf07ac6d311ec7b039a7da35b808bc60841ccc0eacbea52cf3ded`
 
 ```dockerfile
 ENV SIGAR_VERSION=1.6.4
 ```
 
--	Created: Fri, 06 May 2016 18:55:46 GMT
--	Parent Layer: `0b78bd4549fe7134c414647b848ae15541a9510058ad5b60ae4cbb0a290da24a`
+-	Created: Tue, 10 May 2016 16:26:28 GMT
+-	Parent Layer: `a01de83407a13bfc7b48266c4226a1379a7521e0ff850c1dadbdf3960f4b4b4f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9e0803ec1abb017a36f61313f24586ac29340293ef41c5ec0d0af90e52d10563`
+#### `dbe4e39924edfde18d00e6b9edce2e3652a75e6cd7a65780d774e62d7a884b51`
 
 ```dockerfile
 RUN addgroup crate && adduser -G crate -H crate -D
 ```
 
--	Created: Fri, 06 May 2016 18:55:49 GMT
--	Parent Layer: `52e2107956152241d29cdada45c8ce056a577eb716afba25de81d15ee3ff8243`
+-	Created: Tue, 10 May 2016 16:26:30 GMT
+-	Parent Layer: `f50e7eaf76aaf07ac6d311ec7b039a7da35b808bc60841ccc0eacbea52cf3ded`
 -	Docker Version: 1.9.1
 -	Virtual Size: 4.9 KB (4917 bytes)
--	v2 Blob: `sha256:88915d8d5b7e629c3cf49535c0957cc50a348aa9c3080b0ac3be4a5f441c68c5`
+-	v2 Blob: `sha256:5d7b9d54e17f297827faaa27fbcb9e225466382dedaaf47ae96b7d069f395b3a`
 -	v2 Content-Length: 1.2 KB (1206 bytes)
--	v2 Last-Modified: Mon, 09 May 2016 20:10:35 GMT
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:38 GMT
 
-#### `7baa0d09463f6fb136eb664edc55d2fae1d2190741c1123aee06da1c33414c61`
+#### `f4486c7245507cb647288eab84531089dd41462f1344f1030ab9540398f11b0b`
 
 ```dockerfile
 ADD file:881148c76c8b87c5d36a0f7c02bcf966f819a23b28d5fb9e0b052c9585b37b20 in /var/tmp/
 ```
 
--	Created: Fri, 06 May 2016 18:55:50 GMT
--	Parent Layer: `9e0803ec1abb017a36f61313f24586ac29340293ef41c5ec0d0af90e52d10563`
+-	Created: Tue, 10 May 2016 16:26:31 GMT
+-	Parent Layer: `dbe4e39924edfde18d00e6b9edce2e3652a75e6cd7a65780d774e62d7a884b51`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.7 KB (1676 bytes)
--	v2 Blob: `sha256:701d5b824924d2710086ea1af93bcf3246e010a046e75d00d7662f298b0f6225`
+-	v2 Blob: `sha256:380abdb7ce3cac071f0a46f42769393f30bdff55912344a37d9ee5010d2be6d3`
 -	v2 Content-Length: 824.0 B
--	v2 Last-Modified: Mon, 09 May 2016 20:10:30 GMT
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:35 GMT
 
-#### `e09ae529771291a6fb059ecb064e252462628dd9402bfb80ced5ddee3628c77c`
+#### `a0c7ebc4bcb76c3d66674bd3c145d3f2530d8f7999042df6af56ac5de59b9730`
 
 ```dockerfile
 RUN set -ex\
@@ -1167,29 +1167,29 @@ RUN set -ex\
      && rm -rf $BUILD_DIR
 ```
 
--	Created: Mon, 09 May 2016 20:02:12 GMT
--	Parent Layer: `7baa0d09463f6fb136eb664edc55d2fae1d2190741c1123aee06da1c33414c61`
+-	Created: Tue, 10 May 2016 16:27:05 GMT
+-	Parent Layer: `f4486c7245507cb647288eab84531089dd41462f1344f1030ab9540398f11b0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.5 MB (2511290 bytes)
--	v2 Blob: `sha256:2d9aae79d70c7e3d0585ce44e528278626a18fd1a43687e95aedcc39861ce0d4`
--	v2 Content-Length: 1.1 MB (1071744 bytes)
--	v2 Last-Modified: Mon, 09 May 2016 20:10:27 GMT
+-	v2 Blob: `sha256:3957838330e945d195bf871d832cb8aa8318af8f8880f13ae6ee5fc503c47b0c`
+-	v2 Content-Length: 1.1 MB (1071927 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:32 GMT
 
-#### `5ead51fb82df89bbefc53ff31fe672cc7d4ec3842dd33b0fd357a33bd33d7c96`
+#### `4e2883d0af34d9ac9acd901da3afc544dd66efb240fc9b58076b0de533287fdf`
 
 ```dockerfile
 ENV CRATE_VERSION=0.54.8
 ```
 
--	Created: Mon, 09 May 2016 20:02:14 GMT
--	Parent Layer: `e09ae529771291a6fb059ecb064e252462628dd9402bfb80ced5ddee3628c77c`
+-	Created: Tue, 10 May 2016 16:27:05 GMT
+-	Parent Layer: `a0c7ebc4bcb76c3d66674bd3c145d3f2530d8f7999042df6af56ac5de59b9730`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `57011dcbb5d13c91d70f05a5474f821bee8e9bdae1a1e99f89ae591d1c6d9bd5`
+#### `f055b6830bf9edc6b151b8b522968f676c2bc3610eb934b22f1b6f168efcf938`
 
 ```dockerfile
 RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openssl\
@@ -1208,106 +1208,106 @@ RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openss
      && apk del .build-deps
 ```
 
--	Created: Mon, 09 May 2016 20:06:27 GMT
--	Parent Layer: `5ead51fb82df89bbefc53ff31fe672cc7d4ec3842dd33b0fd357a33bd33d7c96`
+-	Created: Tue, 10 May 2016 16:27:24 GMT
+-	Parent Layer: `4e2883d0af34d9ac9acd901da3afc544dd66efb240fc9b58076b0de533287fdf`
 -	Docker Version: 1.9.1
--	Virtual Size: 248.3 MB (248318574 bytes)
--	v2 Blob: `sha256:18548b2018f77223537413b22b790e8a59c2a8568b14e11431134ad29c6889d0`
--	v2 Content-Length: 144.7 MB (144658574 bytes)
--	v2 Last-Modified: Mon, 09 May 2016 20:10:15 GMT
+-	Virtual Size: 248.4 MB (248351123 bytes)
+-	v2 Blob: `sha256:3339983321b0d06fc05c81278e5750e7389a71671b609fe8a9eef6712c5593d8`
+-	v2 Content-Length: 144.7 MB (144665507 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:23 GMT
 
-#### `9ff0a23b3091e2c97a6b5b6943c402c83b799367d731da957c5748e1e691336f`
+#### `2cb0cc8b51940af7afa9ba7c5920eba6efc43bbda1dcffc5b5e675eee1977793`
 
 ```dockerfile
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 09 May 2016 20:06:31 GMT
--	Parent Layer: `57011dcbb5d13c91d70f05a5474f821bee8e9bdae1a1e99f89ae591d1c6d9bd5`
+-	Created: Tue, 10 May 2016 16:27:27 GMT
+-	Parent Layer: `f055b6830bf9edc6b151b8b522968f676c2bc3610eb934b22f1b6f168efcf938`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0540a6b476f26a035c306c4219e38c4c8db249606ab7518318d6ee80f57bd9cc`
+#### `3971fc4e386ffae231443341b2548676924c45a0266c470a7c46cca28d7b5113`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Mon, 09 May 2016 20:06:31 GMT
--	Parent Layer: `9ff0a23b3091e2c97a6b5b6943c402c83b799367d731da957c5748e1e691336f`
+-	Created: Tue, 10 May 2016 16:27:28 GMT
+-	Parent Layer: `2cb0cc8b51940af7afa9ba7c5920eba6efc43bbda1dcffc5b5e675eee1977793`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d313e7b4054c1885e90765cc76fcdfe266c8e2d9a0ba99be2a18775c95b80690`
+#### `0af3cf41df67a750f5f4802e67cb3f5cb31fd9b3bfafa35a471b3ce44a0693d8`
 
 ```dockerfile
 ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
 ```
 
--	Created: Mon, 09 May 2016 20:06:32 GMT
--	Parent Layer: `0540a6b476f26a035c306c4219e38c4c8db249606ab7518318d6ee80f57bd9cc`
+-	Created: Tue, 10 May 2016 16:27:29 GMT
+-	Parent Layer: `3971fc4e386ffae231443341b2548676924c45a0266c470a7c46cca28d7b5113`
 -	Docker Version: 1.9.1
 -	Virtual Size: 100.0 B
--	v2 Blob: `sha256:05c0112cdbaf58f1bfcc4662b9e65b9c635ea9a13cf4e9897720f836bbff3222`
--	v2 Content-Length: 238.0 B
--	v2 Last-Modified: Mon, 09 May 2016 20:09:45 GMT
+-	v2 Blob: `sha256:4bf4bd91449adf5391184fc000dd743885a380c02b9649dd0b8a4d868b4dc3df`
+-	v2 Content-Length: 239.0 B
+-	v2 Last-Modified: Tue, 10 May 2016 16:30:52 GMT
 
-#### `e8ecbdacff720733cf89a5071013a48de971c4fb994baf42114edc5db9ffe253`
+#### `8c098df13c2acb76c1b5e7a3a9c9483a2bbaf79d6a789fc320ee21208948be69`
 
 ```dockerfile
 ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
 ```
 
--	Created: Mon, 09 May 2016 20:06:33 GMT
--	Parent Layer: `d313e7b4054c1885e90765cc76fcdfe266c8e2d9a0ba99be2a18775c95b80690`
+-	Created: Tue, 10 May 2016 16:27:29 GMT
+-	Parent Layer: `0af3cf41df67a750f5f4802e67cb3f5cb31fd9b3bfafa35a471b3ce44a0693d8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 529.0 B
--	v2 Blob: `sha256:b43ae676b82aa05981c159a624bb5aa24193654d4795798fc884840275e3224c`
+-	v2 Blob: `sha256:e9a2170d9e8a84693d043710bda11c7f5e1e738d8b31a3820cf87ed9e4c52fd1`
 -	v2 Content-Length: 405.0 B
--	v2 Last-Modified: Mon, 09 May 2016 20:09:41 GMT
+-	v2 Last-Modified: Tue, 10 May 2016 16:30:49 GMT
 
-#### `f15cfb3f82bd57f28c19dc12e4ca79bd2205afcb067243e2b66b8ce6b483bd9b`
+#### `c26969f0e241a3e04de3c13055c871da19d706ef0c011cfd6ad6f12d5db85e00`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Mon, 09 May 2016 20:06:34 GMT
--	Parent Layer: `e8ecbdacff720733cf89a5071013a48de971c4fb994baf42114edc5db9ffe253`
+-	Created: Tue, 10 May 2016 16:27:30 GMT
+-	Parent Layer: `8c098df13c2acb76c1b5e7a3a9c9483a2bbaf79d6a789fc320ee21208948be69`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `dfe88e87686149abe58282ff536ab3f93486adca078411fddd1a8e552e556b29`
+#### `1508dd1d8e87d0f69a17e3b715c341061327a5d34b7f7998258dfebef3163cd0`
 
 ```dockerfile
 EXPOSE 4200/tcp 4300/tcp
 ```
 
--	Created: Mon, 09 May 2016 20:06:35 GMT
--	Parent Layer: `f15cfb3f82bd57f28c19dc12e4ca79bd2205afcb067243e2b66b8ce6b483bd9b`
+-	Created: Tue, 10 May 2016 16:27:31 GMT
+-	Parent Layer: `c26969f0e241a3e04de3c13055c871da19d706ef0c011cfd6ad6f12d5db85e00`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b88053470bcab2ff68e70743aaec9906933bd0560ef171b4983feb4c6d9ae6d5`
+#### `4e67de8db82b7436bcd8b4cec1a1aed5c9a9f74bd60c2daf6848a9ae0a8b45ee`
 
 ```dockerfile
 CMD ["crate"]
 ```
 
--	Created: Mon, 09 May 2016 20:06:36 GMT
--	Parent Layer: `dfe88e87686149abe58282ff536ab3f93486adca078411fddd1a8e552e556b29`
+-	Created: Tue, 10 May 2016 16:27:31 GMT
+-	Parent Layer: `1508dd1d8e87d0f69a17e3b715c341061327a5d34b7f7998258dfebef3163cd0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1317,11 +1317,11 @@ CMD ["crate"]
 ## `crate:0.54.8`
 
 ```console
-$ docker pull library/crate@sha256:4d24d71f97d7b02b5c13221de7a8dff3e0247a67ed73877a8c81496188678e00
+$ docker pull library/crate@sha256:18f2e2b34f79e462fdaeedf765b4a4400c6834ea39a26d56d1ff4315300a1b8e
 ```
 
--	Total Virtual Size: 255.6 MB (255633869 bytes)
--	Total v2 Content-Length: 148.1 MB (148053491 bytes)
+-	Total Virtual Size: 255.7 MB (255666418 bytes)
+-	Total v2 Content-Length: 148.1 MB (148060608 bytes)
 
 ### Layers (16)
 
@@ -1338,13 +1338,13 @@ ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 -	v2 Content-Length: 2.3 MB (2320212 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `9a29ecb8ff930bf8a81d9899ec926c1575907582b0f445b54969e6ed6946565f`
+#### `5fd47bbf5635659e66a845e8aa58450e29dff897248b7385de6c91410b10d7f2`
 
 ```dockerfile
 MAINTAINER Crate.IO GmbH office@crate.io
 ```
 
--	Created: Fri, 06 May 2016 18:55:44 GMT
+-	Created: Tue, 10 May 2016 16:26:27 GMT
 -	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
@@ -1352,63 +1352,63 @@ MAINTAINER Crate.IO GmbH office@crate.io
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0b78bd4549fe7134c414647b848ae15541a9510058ad5b60ae4cbb0a290da24a`
+#### `a01de83407a13bfc7b48266c4226a1379a7521e0ff850c1dadbdf3960f4b4b4f`
 
 ```dockerfile
 ENV ANT_VERSION=1.9.7
 ```
 
--	Created: Fri, 06 May 2016 18:55:45 GMT
--	Parent Layer: `9a29ecb8ff930bf8a81d9899ec926c1575907582b0f445b54969e6ed6946565f`
+-	Created: Tue, 10 May 2016 16:26:28 GMT
+-	Parent Layer: `5fd47bbf5635659e66a845e8aa58450e29dff897248b7385de6c91410b10d7f2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `52e2107956152241d29cdada45c8ce056a577eb716afba25de81d15ee3ff8243`
+#### `f50e7eaf76aaf07ac6d311ec7b039a7da35b808bc60841ccc0eacbea52cf3ded`
 
 ```dockerfile
 ENV SIGAR_VERSION=1.6.4
 ```
 
--	Created: Fri, 06 May 2016 18:55:46 GMT
--	Parent Layer: `0b78bd4549fe7134c414647b848ae15541a9510058ad5b60ae4cbb0a290da24a`
+-	Created: Tue, 10 May 2016 16:26:28 GMT
+-	Parent Layer: `a01de83407a13bfc7b48266c4226a1379a7521e0ff850c1dadbdf3960f4b4b4f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9e0803ec1abb017a36f61313f24586ac29340293ef41c5ec0d0af90e52d10563`
+#### `dbe4e39924edfde18d00e6b9edce2e3652a75e6cd7a65780d774e62d7a884b51`
 
 ```dockerfile
 RUN addgroup crate && adduser -G crate -H crate -D
 ```
 
--	Created: Fri, 06 May 2016 18:55:49 GMT
--	Parent Layer: `52e2107956152241d29cdada45c8ce056a577eb716afba25de81d15ee3ff8243`
+-	Created: Tue, 10 May 2016 16:26:30 GMT
+-	Parent Layer: `f50e7eaf76aaf07ac6d311ec7b039a7da35b808bc60841ccc0eacbea52cf3ded`
 -	Docker Version: 1.9.1
 -	Virtual Size: 4.9 KB (4917 bytes)
--	v2 Blob: `sha256:88915d8d5b7e629c3cf49535c0957cc50a348aa9c3080b0ac3be4a5f441c68c5`
+-	v2 Blob: `sha256:5d7b9d54e17f297827faaa27fbcb9e225466382dedaaf47ae96b7d069f395b3a`
 -	v2 Content-Length: 1.2 KB (1206 bytes)
--	v2 Last-Modified: Mon, 09 May 2016 20:10:35 GMT
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:38 GMT
 
-#### `7baa0d09463f6fb136eb664edc55d2fae1d2190741c1123aee06da1c33414c61`
+#### `f4486c7245507cb647288eab84531089dd41462f1344f1030ab9540398f11b0b`
 
 ```dockerfile
 ADD file:881148c76c8b87c5d36a0f7c02bcf966f819a23b28d5fb9e0b052c9585b37b20 in /var/tmp/
 ```
 
--	Created: Fri, 06 May 2016 18:55:50 GMT
--	Parent Layer: `9e0803ec1abb017a36f61313f24586ac29340293ef41c5ec0d0af90e52d10563`
+-	Created: Tue, 10 May 2016 16:26:31 GMT
+-	Parent Layer: `dbe4e39924edfde18d00e6b9edce2e3652a75e6cd7a65780d774e62d7a884b51`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.7 KB (1676 bytes)
--	v2 Blob: `sha256:701d5b824924d2710086ea1af93bcf3246e010a046e75d00d7662f298b0f6225`
+-	v2 Blob: `sha256:380abdb7ce3cac071f0a46f42769393f30bdff55912344a37d9ee5010d2be6d3`
 -	v2 Content-Length: 824.0 B
--	v2 Last-Modified: Mon, 09 May 2016 20:10:30 GMT
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:35 GMT
 
-#### `e09ae529771291a6fb059ecb064e252462628dd9402bfb80ced5ddee3628c77c`
+#### `a0c7ebc4bcb76c3d66674bd3c145d3f2530d8f7999042df6af56ac5de59b9730`
 
 ```dockerfile
 RUN set -ex\
@@ -1451,29 +1451,29 @@ RUN set -ex\
      && rm -rf $BUILD_DIR
 ```
 
--	Created: Mon, 09 May 2016 20:02:12 GMT
--	Parent Layer: `7baa0d09463f6fb136eb664edc55d2fae1d2190741c1123aee06da1c33414c61`
+-	Created: Tue, 10 May 2016 16:27:05 GMT
+-	Parent Layer: `f4486c7245507cb647288eab84531089dd41462f1344f1030ab9540398f11b0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.5 MB (2511290 bytes)
--	v2 Blob: `sha256:2d9aae79d70c7e3d0585ce44e528278626a18fd1a43687e95aedcc39861ce0d4`
--	v2 Content-Length: 1.1 MB (1071744 bytes)
--	v2 Last-Modified: Mon, 09 May 2016 20:10:27 GMT
+-	v2 Blob: `sha256:3957838330e945d195bf871d832cb8aa8318af8f8880f13ae6ee5fc503c47b0c`
+-	v2 Content-Length: 1.1 MB (1071927 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:32 GMT
 
-#### `5ead51fb82df89bbefc53ff31fe672cc7d4ec3842dd33b0fd357a33bd33d7c96`
+#### `4e2883d0af34d9ac9acd901da3afc544dd66efb240fc9b58076b0de533287fdf`
 
 ```dockerfile
 ENV CRATE_VERSION=0.54.8
 ```
 
--	Created: Mon, 09 May 2016 20:02:14 GMT
--	Parent Layer: `e09ae529771291a6fb059ecb064e252462628dd9402bfb80ced5ddee3628c77c`
+-	Created: Tue, 10 May 2016 16:27:05 GMT
+-	Parent Layer: `a0c7ebc4bcb76c3d66674bd3c145d3f2530d8f7999042df6af56ac5de59b9730`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `57011dcbb5d13c91d70f05a5474f821bee8e9bdae1a1e99f89ae591d1c6d9bd5`
+#### `f055b6830bf9edc6b151b8b522968f676c2bc3610eb934b22f1b6f168efcf938`
 
 ```dockerfile
 RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openssl\
@@ -1492,106 +1492,106 @@ RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openss
      && apk del .build-deps
 ```
 
--	Created: Mon, 09 May 2016 20:06:27 GMT
--	Parent Layer: `5ead51fb82df89bbefc53ff31fe672cc7d4ec3842dd33b0fd357a33bd33d7c96`
+-	Created: Tue, 10 May 2016 16:27:24 GMT
+-	Parent Layer: `4e2883d0af34d9ac9acd901da3afc544dd66efb240fc9b58076b0de533287fdf`
 -	Docker Version: 1.9.1
--	Virtual Size: 248.3 MB (248318574 bytes)
--	v2 Blob: `sha256:18548b2018f77223537413b22b790e8a59c2a8568b14e11431134ad29c6889d0`
--	v2 Content-Length: 144.7 MB (144658574 bytes)
--	v2 Last-Modified: Mon, 09 May 2016 20:10:15 GMT
+-	Virtual Size: 248.4 MB (248351123 bytes)
+-	v2 Blob: `sha256:3339983321b0d06fc05c81278e5750e7389a71671b609fe8a9eef6712c5593d8`
+-	v2 Content-Length: 144.7 MB (144665507 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 16:31:23 GMT
 
-#### `9ff0a23b3091e2c97a6b5b6943c402c83b799367d731da957c5748e1e691336f`
+#### `2cb0cc8b51940af7afa9ba7c5920eba6efc43bbda1dcffc5b5e675eee1977793`
 
 ```dockerfile
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 09 May 2016 20:06:31 GMT
--	Parent Layer: `57011dcbb5d13c91d70f05a5474f821bee8e9bdae1a1e99f89ae591d1c6d9bd5`
+-	Created: Tue, 10 May 2016 16:27:27 GMT
+-	Parent Layer: `f055b6830bf9edc6b151b8b522968f676c2bc3610eb934b22f1b6f168efcf938`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0540a6b476f26a035c306c4219e38c4c8db249606ab7518318d6ee80f57bd9cc`
+#### `3971fc4e386ffae231443341b2548676924c45a0266c470a7c46cca28d7b5113`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Mon, 09 May 2016 20:06:31 GMT
--	Parent Layer: `9ff0a23b3091e2c97a6b5b6943c402c83b799367d731da957c5748e1e691336f`
+-	Created: Tue, 10 May 2016 16:27:28 GMT
+-	Parent Layer: `2cb0cc8b51940af7afa9ba7c5920eba6efc43bbda1dcffc5b5e675eee1977793`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d313e7b4054c1885e90765cc76fcdfe266c8e2d9a0ba99be2a18775c95b80690`
+#### `0af3cf41df67a750f5f4802e67cb3f5cb31fd9b3bfafa35a471b3ce44a0693d8`
 
 ```dockerfile
 ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
 ```
 
--	Created: Mon, 09 May 2016 20:06:32 GMT
--	Parent Layer: `0540a6b476f26a035c306c4219e38c4c8db249606ab7518318d6ee80f57bd9cc`
+-	Created: Tue, 10 May 2016 16:27:29 GMT
+-	Parent Layer: `3971fc4e386ffae231443341b2548676924c45a0266c470a7c46cca28d7b5113`
 -	Docker Version: 1.9.1
 -	Virtual Size: 100.0 B
--	v2 Blob: `sha256:05c0112cdbaf58f1bfcc4662b9e65b9c635ea9a13cf4e9897720f836bbff3222`
--	v2 Content-Length: 238.0 B
--	v2 Last-Modified: Mon, 09 May 2016 20:09:45 GMT
+-	v2 Blob: `sha256:4bf4bd91449adf5391184fc000dd743885a380c02b9649dd0b8a4d868b4dc3df`
+-	v2 Content-Length: 239.0 B
+-	v2 Last-Modified: Tue, 10 May 2016 16:30:52 GMT
 
-#### `e8ecbdacff720733cf89a5071013a48de971c4fb994baf42114edc5db9ffe253`
+#### `8c098df13c2acb76c1b5e7a3a9c9483a2bbaf79d6a789fc320ee21208948be69`
 
 ```dockerfile
 ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
 ```
 
--	Created: Mon, 09 May 2016 20:06:33 GMT
--	Parent Layer: `d313e7b4054c1885e90765cc76fcdfe266c8e2d9a0ba99be2a18775c95b80690`
+-	Created: Tue, 10 May 2016 16:27:29 GMT
+-	Parent Layer: `0af3cf41df67a750f5f4802e67cb3f5cb31fd9b3bfafa35a471b3ce44a0693d8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 529.0 B
--	v2 Blob: `sha256:b43ae676b82aa05981c159a624bb5aa24193654d4795798fc884840275e3224c`
+-	v2 Blob: `sha256:e9a2170d9e8a84693d043710bda11c7f5e1e738d8b31a3820cf87ed9e4c52fd1`
 -	v2 Content-Length: 405.0 B
--	v2 Last-Modified: Mon, 09 May 2016 20:09:41 GMT
+-	v2 Last-Modified: Tue, 10 May 2016 16:30:49 GMT
 
-#### `f15cfb3f82bd57f28c19dc12e4ca79bd2205afcb067243e2b66b8ce6b483bd9b`
+#### `c26969f0e241a3e04de3c13055c871da19d706ef0c011cfd6ad6f12d5db85e00`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Mon, 09 May 2016 20:06:34 GMT
--	Parent Layer: `e8ecbdacff720733cf89a5071013a48de971c4fb994baf42114edc5db9ffe253`
+-	Created: Tue, 10 May 2016 16:27:30 GMT
+-	Parent Layer: `8c098df13c2acb76c1b5e7a3a9c9483a2bbaf79d6a789fc320ee21208948be69`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `dfe88e87686149abe58282ff536ab3f93486adca078411fddd1a8e552e556b29`
+#### `1508dd1d8e87d0f69a17e3b715c341061327a5d34b7f7998258dfebef3163cd0`
 
 ```dockerfile
 EXPOSE 4200/tcp 4300/tcp
 ```
 
--	Created: Mon, 09 May 2016 20:06:35 GMT
--	Parent Layer: `f15cfb3f82bd57f28c19dc12e4ca79bd2205afcb067243e2b66b8ce6b483bd9b`
+-	Created: Tue, 10 May 2016 16:27:31 GMT
+-	Parent Layer: `c26969f0e241a3e04de3c13055c871da19d706ef0c011cfd6ad6f12d5db85e00`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b88053470bcab2ff68e70743aaec9906933bd0560ef171b4983feb4c6d9ae6d5`
+#### `4e67de8db82b7436bcd8b4cec1a1aed5c9a9f74bd60c2daf6848a9ae0a8b45ee`
 
 ```dockerfile
 CMD ["crate"]
 ```
 
--	Created: Mon, 09 May 2016 20:06:36 GMT
--	Parent Layer: `dfe88e87686149abe58282ff536ab3f93486adca078411fddd1a8e552e556b29`
+-	Created: Tue, 10 May 2016 16:27:31 GMT
+-	Parent Layer: `1508dd1d8e87d0f69a17e3b715c341061327a5d34b7f7998258dfebef3163cd0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
