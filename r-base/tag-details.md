@@ -2,17 +2,17 @@
 
 # Tags of `r-base`
 
--	[`r-base:3.2.5`](#r-base325)
+-	[`r-base:3.3.0`](#r-base330)
 -	[`r-base:latest`](#r-baselatest)
 
-## `r-base:3.2.5`
+## `r-base:3.3.0`
 
 ```console
-$ docker pull library/r-base@sha256:687a5c71378bdf6f83d99799b29aa4daef08772a96b113f4c958c380b2df61f5
+$ docker pull library/r-base@sha256:edc4308e6cee6ec94baf46acba1b2cb4c9423e2daace73d9ab74270bfe116ad5
 ```
 
--	Total Virtual Size: 1.1 GB (1052673260 bytes)
--	Total v2 Content-Length: 427.2 MB (427169676 bytes)
+-	Total Virtual Size: 944.4 MB (944422373 bytes)
+-	Total v2 Content-Length: 386.9 MB (386910558 bytes)
 
 ### Layers (12)
 
@@ -155,13 +155,13 @@ RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/
 -	v2 Content-Length: 291.0 B
 -	v2 Last-Modified: Wed, 20 Apr 2016 20:30:02 GMT
 
-#### `4a06f90d33df4cfbe14b190cb173e5ec1ee963720fcd757ca8d2c016de011165`
+#### `e116075469da54059024e88e3c959eaccddedbbb53ce46fdb81e29eb93c24768`
 
 ```dockerfile
-ENV R_BASE_VERSION=3.2.5
+ENV R_BASE_VERSION=3.3.0
 ```
 
--	Created: Wed, 20 Apr 2016 20:22:21 GMT
+-	Created: Tue, 10 May 2016 21:06:28 GMT
 -	Parent Layer: `65cf28efcaf12c85cb050fef8a7ac165a71e7637528663d02daa5375bf0c438c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
@@ -169,7 +169,7 @@ ENV R_BASE_VERSION=3.2.5
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `dd5df8f906893ef83607a440e19ed8cee3d6b440585d51cfa8f17120897805e9`
+#### `4a09b8f015e342b27405e51f7306d019a7a598d598973b3eca3eb916ff521e5c`
 
 ```dockerfile
 RUN apt-get update \
@@ -190,22 +190,22 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 20 Apr 2016 20:27:15 GMT
--	Parent Layer: `4a06f90d33df4cfbe14b190cb173e5ec1ee963720fcd757ca8d2c016de011165`
+-	Created: Tue, 10 May 2016 21:11:12 GMT
+-	Parent Layer: `e116075469da54059024e88e3c959eaccddedbbb53ce46fdb81e29eb93c24768`
 -	Docker Version: 1.9.1
--	Virtual Size: 868.4 MB (868434453 bytes)
--	v2 Blob: `sha256:6476418f4cd9734d808571fddab3e17003007a8fde7d5515cf374ff5a90063d2`
--	v2 Content-Length: 348.5 MB (348463789 bytes)
--	v2 Last-Modified: Wed, 20 Apr 2016 20:29:43 GMT
+-	Virtual Size: 760.2 MB (760183566 bytes)
+-	v2 Blob: `sha256:a08e7b670ccabe82b1c4477a84fce8c0a5a266890dd8fb6a66571c878694b54e`
+-	v2 Content-Length: 308.2 MB (308204671 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 21:13:24 GMT
 
-#### `51fd411247b1a4fbef195eaa6a831d82ad6bd474031076d995e1757bb11333ed`
+#### `20992a4605a4b3caf95db36578d0d0fa47add073b8b3fe459ebd27231ba356d6`
 
 ```dockerfile
 CMD ["R"]
 ```
 
--	Created: Wed, 20 Apr 2016 20:27:23 GMT
--	Parent Layer: `dd5df8f906893ef83607a440e19ed8cee3d6b440585d51cfa8f17120897805e9`
+-	Created: Tue, 10 May 2016 21:11:20 GMT
+-	Parent Layer: `4a09b8f015e342b27405e51f7306d019a7a598d598973b3eca3eb916ff521e5c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -215,11 +215,11 @@ CMD ["R"]
 ## `r-base:latest`
 
 ```console
-$ docker pull library/r-base@sha256:4d2175710d46de791463e500ec01e907968f7a11c8a5350115cf28a1fc432d44
+$ docker pull library/r-base@sha256:e7fe272e60c38a016c5c4f5949c901cee7a2d9039eb421b1478f8af087d2268b
 ```
 
--	Total Virtual Size: 1.1 GB (1052673260 bytes)
--	Total v2 Content-Length: 427.2 MB (427169676 bytes)
+-	Total Virtual Size: 944.4 MB (944422373 bytes)
+-	Total v2 Content-Length: 386.9 MB (386910558 bytes)
 
 ### Layers (12)
 
@@ -362,13 +362,13 @@ RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/
 -	v2 Content-Length: 291.0 B
 -	v2 Last-Modified: Wed, 20 Apr 2016 20:30:02 GMT
 
-#### `4a06f90d33df4cfbe14b190cb173e5ec1ee963720fcd757ca8d2c016de011165`
+#### `e116075469da54059024e88e3c959eaccddedbbb53ce46fdb81e29eb93c24768`
 
 ```dockerfile
-ENV R_BASE_VERSION=3.2.5
+ENV R_BASE_VERSION=3.3.0
 ```
 
--	Created: Wed, 20 Apr 2016 20:22:21 GMT
+-	Created: Tue, 10 May 2016 21:06:28 GMT
 -	Parent Layer: `65cf28efcaf12c85cb050fef8a7ac165a71e7637528663d02daa5375bf0c438c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
@@ -376,7 +376,7 @@ ENV R_BASE_VERSION=3.2.5
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `dd5df8f906893ef83607a440e19ed8cee3d6b440585d51cfa8f17120897805e9`
+#### `4a09b8f015e342b27405e51f7306d019a7a598d598973b3eca3eb916ff521e5c`
 
 ```dockerfile
 RUN apt-get update \
@@ -397,22 +397,22 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 20 Apr 2016 20:27:15 GMT
--	Parent Layer: `4a06f90d33df4cfbe14b190cb173e5ec1ee963720fcd757ca8d2c016de011165`
+-	Created: Tue, 10 May 2016 21:11:12 GMT
+-	Parent Layer: `e116075469da54059024e88e3c959eaccddedbbb53ce46fdb81e29eb93c24768`
 -	Docker Version: 1.9.1
--	Virtual Size: 868.4 MB (868434453 bytes)
--	v2 Blob: `sha256:6476418f4cd9734d808571fddab3e17003007a8fde7d5515cf374ff5a90063d2`
--	v2 Content-Length: 348.5 MB (348463789 bytes)
--	v2 Last-Modified: Wed, 20 Apr 2016 20:29:43 GMT
+-	Virtual Size: 760.2 MB (760183566 bytes)
+-	v2 Blob: `sha256:a08e7b670ccabe82b1c4477a84fce8c0a5a266890dd8fb6a66571c878694b54e`
+-	v2 Content-Length: 308.2 MB (308204671 bytes)
+-	v2 Last-Modified: Tue, 10 May 2016 21:13:24 GMT
 
-#### `51fd411247b1a4fbef195eaa6a831d82ad6bd474031076d995e1757bb11333ed`
+#### `20992a4605a4b3caf95db36578d0d0fa47add073b8b3fe459ebd27231ba356d6`
 
 ```dockerfile
 CMD ["R"]
 ```
 
--	Created: Wed, 20 Apr 2016 20:27:23 GMT
--	Parent Layer: `dd5df8f906893ef83607a440e19ed8cee3d6b440585d51cfa8f17120897805e9`
+-	Created: Tue, 10 May 2016 21:11:20 GMT
+-	Parent Layer: `4a09b8f015e342b27405e51f7306d019a7a598d598973b3eca3eb916ff521e5c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
