@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8.23`, `2.8`, `2` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/bc3ca850f4a2a2e9e5d4b3b8272e5536b4d21d24/2.8/Dockerfile)
--	[`2.8.23-32bit`, `2.8-32bit`, `2-32bit` (*2.8/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/bc3ca850f4a2a2e9e5d4b3b8272e5536b4d21d24/2.8/32bit/Dockerfile)
--	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/bc3ca850f4a2a2e9e5d4b3b8272e5536b4d21d24/3.0/Dockerfile)
--	[`3.0.7-32bit`, `3.0-32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/bc3ca850f4a2a2e9e5d4b3b8272e5536b4d21d24/3.0/32bit/Dockerfile)
--	[`3.0.7-alpine`, `3.0-alpine` (*3.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/bc3ca850f4a2a2e9e5d4b3b8272e5536b4d21d24/3.0/alpine/Dockerfile)
--	[`3.2.0`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/23b10607ef1810379d16664bcdb43723aa007266/3.2/Dockerfile)
--	[`3.2.0-32bit`, `3.2-32bit`, `3-32bit`, `32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/23b10607ef1810379d16664bcdb43723aa007266/3.2/32bit/Dockerfile)
--	[`3.2.0-alpine`, `3.2-alpine`, `3-alpine`, `alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/23b10607ef1810379d16664bcdb43723aa007266/3.2/alpine/Dockerfile)
+-	[`2.8.23`, `2.8`, `2` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/41278185d321eb90ee6f898ff63c9b1db6a61a47/2.8/Dockerfile)
+-	[`2.8.23-32bit`, `2.8-32bit`, `2-32bit` (*2.8/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/41278185d321eb90ee6f898ff63c9b1db6a61a47/2.8/32bit/Dockerfile)
+-	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/41278185d321eb90ee6f898ff63c9b1db6a61a47/3.0/Dockerfile)
+-	[`3.0.7-32bit`, `3.0-32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/41278185d321eb90ee6f898ff63c9b1db6a61a47/3.0/32bit/Dockerfile)
+-	[`3.0.7-alpine`, `3.0-alpine` (*3.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/41278185d321eb90ee6f898ff63c9b1db6a61a47/3.0/alpine/Dockerfile)
+-	[`3.2.0`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/41278185d321eb90ee6f898ff63c9b1db6a61a47/3.2/Dockerfile)
+-	[`3.2.0-32bit`, `3.2-32bit`, `3-32bit`, `32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/41278185d321eb90ee6f898ff63c9b1db6a61a47/3.2/32bit/Dockerfile)
+-	[`3.2.0-alpine`, `3.2-alpine`, `3-alpine`, `alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/41278185d321eb90ee6f898ff63c9b1db6a61a47/3.2/alpine/Dockerfile)
 
 [![](https://badge.imagelayers.io/redis:latest.svg)](https://imagelayers.io/?images=redis:2.8.23,redis:2.8.23-32bit,redis:3.0.7,redis:3.0.7-32bit,redis:3.0.7-alpine,redis:3.2.0,redis:3.2.0-32bit,redis:3.2.0-alpine)
 
