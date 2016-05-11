@@ -15,7 +15,9 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 The Jenkins Continuous Integration and Delivery server.
 
-This is a fully functional Jenkins server, based on the Long Term Support release [http://jenkins-ci.org/](http://jenkins-ci.org/).
+This is a fully functional Jenkins server, based on the Long Term Support release [http://jenkins.io/](http://jenkins.io/).
+
+For weekly releases check out [`jenkinsci/jenkins`](https://hub.docker.com/r/jenkinsci/jenkins/)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/3ab4dafb41dd0e959ff9322b3c50af2519af6d85/jenkins/logo.png)
 
