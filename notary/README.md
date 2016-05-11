@@ -1,9 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`server`, `server-0.2.0` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/3ea5b74928929415f2faaa5df574c4745bf6d286/notary-server/Dockerfile)
--	[`signer`, `signer-0.2.0` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/3ea5b74928929415f2faaa5df574c4745bf6d286/notary-signer/Dockerfile)
+-	[`server`, `server-0.3.0` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/5fbf22ada9e5167fe4e9340ac947e8b3110aceba/notary-server/Dockerfile)
+-	[`signer`, `signer-0.3.0` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/5fbf22ada9e5167fe4e9340ac947e8b3110aceba/notary-signer/Dockerfile)
+-	[`server-0.2.0` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/3ea5b74928929415f2faaa5df574c4745bf6d286/notary-server/Dockerfile)
+-	[`signer-0.2.0` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/3ea5b74928929415f2faaa5df574c4745bf6d286/notary-signer/Dockerfile)
 
-[![](https://badge.imagelayers.io/notary:server.svg)](https://imagelayers.io/?images=notary:server,notary:signer)
+[![](https://badge.imagelayers.io/notary:server.svg)](https://imagelayers.io/?images=notary:server,notary:signer,notary:server-0.2.0,notary:signer-0.2.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/notary`)](https://github.com/docker-library/official-images/blob/master/library/notary). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnotary).
 
