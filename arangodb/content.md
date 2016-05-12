@@ -138,3 +138,7 @@ If want to save a few bytes you can alternatively use [busybox](https://registry
 ```console
 unix> docker run -d --name arangodb-persist -v /var/lib/arangodb busybox true
 ```
+
+### Using as a base image
+
+If you are using the image as a base image please make sure to wrap any CMD in the [exec](https://docs.docker.com/engine/reference/builder/#cmd) form. Otherwise the default entrypoint will not do its bootstrapping work.
