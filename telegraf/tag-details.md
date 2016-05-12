@@ -4,6 +4,8 @@
 
 -	[`telegraf:0.12`](#telegraf012)
 -	[`telegraf:0.12.0`](#telegraf0120)
+-	[`telegraf:0.13`](#telegraf013)
+-	[`telegraf:0.13.0`](#telegraf0130)
 -	[`telegraf:latest`](#telegraflatest)
 
 ## `telegraf:0.12`
@@ -433,6 +435,14 @@ CMD ["telegraf"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `telegraf:0.13`
+
+**does not exist** (yet?)
+
+## `telegraf:0.13.0`
+
+**does not exist** (yet?)
 
 ## `telegraf:latest`
 

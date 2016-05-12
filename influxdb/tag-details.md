@@ -4,6 +4,8 @@
 
 -	[`influxdb:0.12`](#influxdb012)
 -	[`influxdb:0.12.2`](#influxdb0122)
+-	[`influxdb:0.13`](#influxdb013)
+-	[`influxdb:0.13.0`](#influxdb0130)
 -	[`influxdb:latest`](#influxdblatest)
 
 ## `influxdb:0.12`
@@ -381,6 +383,14 @@ CMD ["influxd"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `influxdb:0.13`
+
+**does not exist** (yet?)
+
+## `influxdb:0.13.0`
+
+**does not exist** (yet?)
 
 ## `influxdb:latest`
 

@@ -4,6 +4,8 @@
 
 -	[`kapacitor:0.12`](#kapacitor012)
 -	[`kapacitor:0.12.0`](#kapacitor0120)
+-	[`kapacitor:0.13`](#kapacitor013)
+-	[`kapacitor:0.13.0`](#kapacitor0130)
 -	[`kapacitor:latest`](#kapacitorlatest)
 
 ## `kapacitor:0.12`
@@ -353,6 +355,14 @@ CMD ["kapacitord"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `kapacitor:0.13`
+
+**does not exist** (yet?)
+
+## `kapacitor:0.13.0`
+
+**does not exist** (yet?)
 
 ## `kapacitor:latest`
 

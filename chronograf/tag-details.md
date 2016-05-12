@@ -4,6 +4,8 @@
 
 -	[`chronograf:0.12`](#chronograf012)
 -	[`chronograf:0.12.0`](#chronograf0120)
+-	[`chronograf:0.13`](#chronograf013)
+-	[`chronograf:0.13.0`](#chronograf0130)
 -	[`chronograf:latest`](#chronograflatest)
 
 ## `chronograf:0.12`
@@ -409,6 +411,14 @@ CMD ["chronograf"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `chronograf:0.13`
+
+**does not exist** (yet?)
+
+## `chronograf:0.13.0`
+
+**does not exist** (yet?)
 
 ## `chronograf:latest`
 
