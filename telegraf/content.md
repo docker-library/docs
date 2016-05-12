@@ -41,8 +41,10 @@ $ docker run --rm telegraf -sample-config > telegraf.conf
 Once you've customized `telegraf.conf`, you can run the Telegraf container with it mounted in the expected location:
 
 ```console
-$ docker run -v /path/to/telegraf.conf:/etc/telegraf/telegraf.conf:ro telegraf
+$ docker run -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro telegraf
 ```
+
+Modify `$PWD` to the directory where you want to store the configuration file.
 
 Read more about the Telegraf configuration [here](https://docs.influxdata.com/telegraf/latest/introduction/configuration/).
 
@@ -51,15 +53,14 @@ Read more about the Telegraf configuration [here](https://docs.influxdata.com/te
 These examples assume you are using a custom configuration file that takes advantage of Docker's built-in service discovery capability. In order to do so, we'll first create a new network:
 
 ```console
-$ docker network create telegraf_nw
+$ docker network create influxdb
 ```
 
 Next, we'll start our InfluxDB container named `influxdb`:
 
 ```console
-$ docker run -d --name influxdb \
-      --net=telegraf_nw \
-      -p 8083:8083 -p 8086:8086 \
+$ docker run -d --name=influxdb \
+      --net=influxdb \
       influxdb
 ```
 
@@ -73,11 +74,10 @@ The `telegraf.conf` configuration can now resolve the `influxdb` container by na
 Finally, we start our Telegraf container and verify functionality:
 
 ```console
-$ docker run -d --name telegraf \
-      --net=telegraf_nw \
-      -v /path/to/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
+$ docker run -d --name=telegraf \
+      --net=influxdb \
+      -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
       telegraf
-...
 $ docker logs -f telegraf
 ```
 
@@ -87,7 +87,7 @@ Start an instance of aerospike:
 
 ```console
 $ docker run -d --name aerospike \
-      --net=telegraf_nw \
+      --net=influxdb \
       -p 3000-3003:3000-3003 \
       aerospike
 ```
@@ -123,9 +123,9 @@ Start an Nginx container utilizing it:
 
 ```console
 $ docker run -d --name=nginx \
-      --net=telegraf_nw \
+      --net=influxdb \
       -p 8090:8090 -p 8080:80 \
-      -v /path/to/nginx_status.conf:/etc/nginx/conf.d/nginx_status.conf:ro \
+      -v $PWD/nginx_status.conf:/etc/nginx/conf.d/nginx_status.conf:ro \
       nginx
 ```
 
@@ -151,10 +151,10 @@ Telegraf has a StatsD plugin, allowing Telegraf to run as a StatsD server that m
 Run Telegraf with the UDP port 8125 exposed:
 
 ```console
-$ docker run -d --name telegraf \
-      --net=telegraf_nw \
+$ docker run -d --name=telegraf \
+      --net=influxdb \
       -p 8125:8125/udp \
-      -v /path/to/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
+      -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
       telegraf
 ```
 
