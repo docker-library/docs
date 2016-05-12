@@ -1,8 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.12`, `0.12.2`, `latest` (*0.12/Dockerfile*)](https://github.com/influxdata/influxdb-docker/blob/2db51e1d86672d2eb76636b17adbea441e767745/0.12/Dockerfile)
+-	[`0.12`, `0.12.2` (*0.12/Dockerfile*)](https://github.com/influxdata/influxdb-docker/blob/d59001dbf8ea00655efcdea7c848d36a7c469454/0.12/Dockerfile)
+-	[`0.13`, `0.13.0`, `latest` (*0.13/Dockerfile*)](https://github.com/influxdata/influxdb-docker/blob/d59001dbf8ea00655efcdea7c848d36a7c469454/0.13/Dockerfile)
 
-[![](https://badge.imagelayers.io/influxdb:latest.svg)](https://imagelayers.io/?images=influxdb:0.12)
+[![](https://badge.imagelayers.io/influxdb:latest.svg)](https://imagelayers.io/?images=influxdb:0.12,influxdb:0.13)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
 
