@@ -113,9 +113,6 @@ for repo in "${repos[@]}"; do
 		echo '  USER-FEEDBACK => '"$repo"'/user-feedback.md'
 		replace_field "$repo" 'USER-FEEDBACK' "$userFeedback"
 		
-		echo '  MAILING-LIST => '"$repo"'/mailing-list.md'
-		replace_field "$repo" 'MAILING-LIST' "$mailingList" '\s*'
-		
 		echo '  REPO => "'"$repo"'"'
 		replace_field "$repo" 'REPO' "$repo"
 		

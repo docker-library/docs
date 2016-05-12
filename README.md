@@ -101,14 +101,6 @@ https://github.com/docker-library/golang
 
 This file is an optional override of the default `user-feedback.md` for those repositories with different issue and contributing policies.
 
-## `<image name>/mailing-list.md`
-
-This file is snippet that gets inserted into the user feedback section to provide and extra way to get help, like a mailing list. Here is an example from the Postgres image:
-
-```markdown
-on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or
-```
-
 # Issues and Contributing
 
 If you would like to make a new Official Image, be sure to follow the [guidelines](https://docs.docker.com/docker-hub/official_repos/) and optionally talk to officialrepos@docker.com.
