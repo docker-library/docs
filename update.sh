@@ -79,6 +79,7 @@ declare -A otherRepos=(
 	[solr]='https://github.com/docker-solr/solr'
 	[sonarqube]='https://github.com/SonarSource/docker-sonarqube'
 	[sourcemage]='https://github.com/vaygr/docker-sourcemage'
+	[spiped]='https://github.com/TimWolla/docker-spiped'
 	[swarm]='https://github.com/docker/swarm-library-image'
 	[telegraf]='https://github.com/influxdata/telegraf-docker'
 	[thrift]='https://github.com/ahawkins/docker-thrift'
