@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `FT`, `8`, `8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/c8f5d5bd4fedda1ee72eb29eac5fbb0b0a490155/8.2/Dockerfile)
--	[`LTS-2015`, `LTS`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/09c50e490336f28caf1278c6bffaa02e79c0f4b4/7.10/Dockerfile)
--	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/09c50e490336f28caf1278c6bffaa02e79c0f4b4/6.0/Dockerfile)
+-	[`latest`, `FT`, `8`, `8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b37540c919e58c027f7a2f5211ad12f667f1bb76/8.2/Dockerfile)
+-	[`LTS-2015`, `LTS`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b37540c919e58c027f7a2f5211ad12f667f1bb76/7.10/Dockerfile)
+-	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b37540c919e58c027f7a2f5211ad12f667f1bb76/6.0/Dockerfile)
 
 [![](https://badge.imagelayers.io/nuxeo:latest.svg)](https://imagelayers.io/?images=nuxeo:latest,nuxeo:LTS-2015,nuxeo:LTS-2014)
 
