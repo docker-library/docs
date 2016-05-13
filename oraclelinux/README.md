@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `7`, `7.2` (*OracleLinux/7.2/Dockerfile*)](https://github.com/oracle/docker-images/blob/8fd54bc7b77cbfec58a56411206dd2fc3c4c91b4/OracleLinux/7.2/Dockerfile)
--	[`7.1` (*OracleLinux/7.1/Dockerfile*)](https://github.com/oracle/docker-images/blob/8fd54bc7b77cbfec58a56411206dd2fc3c4c91b4/OracleLinux/7.1/Dockerfile)
--	[`7.0` (*OracleLinux/7.0/Dockerfile*)](https://github.com/oracle/docker-images/blob/8fd54bc7b77cbfec58a56411206dd2fc3c4c91b4/OracleLinux/7.0/Dockerfile)
--	[`6`, `6.7` (*OracleLinux/6.7/Dockerfile*)](https://github.com/oracle/docker-images/blob/8fd54bc7b77cbfec58a56411206dd2fc3c4c91b4/OracleLinux/6.7/Dockerfile)
--	[`6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker-images/blob/8fd54bc7b77cbfec58a56411206dd2fc3c4c91b4/OracleLinux/6.6/Dockerfile)
--	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker-images/blob/8fd54bc7b77cbfec58a56411206dd2fc3c4c91b4/OracleLinux/5.11/Dockerfile)
+-	[`latest`, `7`, `7.2` (*OracleLinux/7.2/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/7.2/Dockerfile)
+-	[`7.1` (*OracleLinux/7.1/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/7.1/Dockerfile)
+-	[`7.0` (*OracleLinux/7.0/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/7.0/Dockerfile)
+-	[`6`, `6.7` (*OracleLinux/6.7/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/6.7/Dockerfile)
+-	[`6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/6.6/Dockerfile)
+-	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/5.11/Dockerfile)
 
 [![](https://badge.imagelayers.io/oraclelinux:latest.svg)](https://imagelayers.io/?images=oraclelinux:latest,oraclelinux:7.1,oraclelinux:7.0,oraclelinux:6,oraclelinux:6.6,oraclelinux:5)
 
