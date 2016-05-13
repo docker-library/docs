@@ -50,7 +50,7 @@ To start the Crate cluster in containers distributed to three hosts without mult
           -Des.discovery.zen.minimum_master_nodes=2
 ```
 
-# The crate/crate Docker Image
+# The crate Docker Image
 
 To form a cluster from scratch, start a few instances of the Crate container as a background daemon:
 
