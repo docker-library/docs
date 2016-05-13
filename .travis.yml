@@ -39,6 +39,16 @@ script:
       echo >&2 "Too long (or too many lines):$failed";
       exit 1;
     fi
+  - failed='';
+    for repo in */; do
+      if [ ! -e "$repo/github-repo" ]; then
+        failed+=" $repo";
+      fi
+    done;
+    if [ "$failed" ]; then
+    echo >&2 "Missing github-repo for:$failed";
+      exit 1;
+    fi
   - if [ "$TRAVIS_PULL_REQUEST" != 'false' ]; then
       if [ "$(git diff --numstat "$TRAVIS_COMMIT_RANGE" -- '*/README.md')" ]; then
         echo >&2 'Error:'' at least one repo README.md has changed';
