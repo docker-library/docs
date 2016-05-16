@@ -13,9 +13,9 @@ InfluxDB is a time series database built from the ground up to handle high write
 The InfluxDB image exposes a shared volume under `/var/lib/influxdb`, so you can mount a host directory to that point to access persisted container data. A typical invocation of the container might be:
 
 ```console
-docker run -p 8083:8083 -p 8086:8086 \
-    -v $PWD:/var/lib/influxdb \
-    influxdb
+$ docker run -p 8083:8083 -p 8086:8086 \
+      -v $PWD:/var/lib/influxdb \
+      influxdb
 ```
 
 Modify `$PWD` to the directory where you want to store data associated with the InfluxDB container.
@@ -23,9 +23,9 @@ Modify `$PWD` to the directory where you want to store data associated with the 
 You can also have Docker control the volume mountpoint by using a named volume.
 
 ```console
-docker run -p 8083:8083 -p 8086:8086 \
-    -v influxdb:/var/lib/influxdb \
-    influxdb
+$ docker run -p 8083:8083 -p 8086:8086 \
+      -v influxdb:/var/lib/influxdb \
+      influxdb
 ```
 
 ### Exposed Ports
@@ -38,7 +38,6 @@ The following ports are important and will be automatically exposed when using `
 Other important ports that aren't exposed by default:
 
 -	8091 Meta service port
--	8088 Clustering (raft) port
 
 These two ports do not need to be exposed in a single server configuration.
 
@@ -58,7 +57,7 @@ Modify the default configuration, which will now be available under `$PWD`. Then
 
 ```console
 $ docker run -p 8083:8083 -p 8086:8086 \
-      -v $PWD:/etc/influxdb:ro \
+      -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
       influxdb -config /etc/influxdb/influxdb.conf
 ```
 
@@ -78,7 +77,15 @@ Find more about configuring InfluxDB [here](https://docs.influxdata.com/influxdb
 
 ### Graphite
 
-InfluxDB supports the Graphite line protocol, but the service and ports are not exposed by default. To run InfluxDB with Graphite support enabled, you can either use a configuration file or set the appropriate environment variables.
+InfluxDB supports the Graphite line protocol, but the service and ports are not exposed by default. To run InfluxDB with Graphite support enabled, you can either use a configuration file or set the appropriate environment variables. Run InfluxDB with the default Graphite configuration:
+
+```console
+docker run -p 8083:8083 -p 8086:8086 \
+    -e INFLUXDB_GRAPHITE_ENABLED=true \
+    influxdb
+```
+
+See the [README on GitHub](https://github.com/influxdata/influxdb/blob/master/services/graphite/README.md) for more detailed documentation to set up the Graphite service. In order to take advantage of graphite templates, you should use a configuration file by outputting a default configuration file using the steps above and modifying the `[[graphite]]` section.
 
 ### HTTP API
 

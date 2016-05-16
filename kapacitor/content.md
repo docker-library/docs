@@ -29,7 +29,7 @@ Modify `$PWD` to the directory where you want to store data associated with the 
 You can also have Docker control the volume mountpoint by using a named volume.
 
 ```console
-# docker run -p 9092:9092 \
+$ docker run -p 9092:9092 \
       -v kapacitor:/var/lib/kapacitor \
       kapacitor
 ```
@@ -48,8 +48,8 @@ Modify the default configuration, which will now be available under `$PWD`. Then
 
 ```console
 $ docker run -p 9092:9092 \
-      -v $PWD:/etc/kapacitor:ro \
-      kapacitord -config /etc/kapacitor/kapacitor.conf
+      -v $PWD/kapacitor.conf:/etc/kapacitor/kapacitor.conf:ro \
+      kapacitord
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.
