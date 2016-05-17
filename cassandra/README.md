@@ -2,10 +2,10 @@
 
 -	[`2.1.14`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/b1edfd288bc54c5eccbc19f8fd492b0bf518ed1b/2.1/Dockerfile)
 -	[`2.2.6`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/b1edfd288bc54c5eccbc19f8fd492b0bf518ed1b/2.2/Dockerfile)
--	[`3.0.5`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/b1edfd288bc54c5eccbc19f8fd492b0bf518ed1b/3.0/Dockerfile)
+-	[`3.0.6`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/782f9e33512363dfcb39b32841669210badf32fb/3.0/Dockerfile)
 -	[`3.5`, `3`, `latest` (*3.5/Dockerfile*)](https://github.com/docker-library/cassandra/blob/b1edfd288bc54c5eccbc19f8fd492b0bf518ed1b/3.5/Dockerfile)
 
-[![](https://badge.imagelayers.io/cassandra:latest.svg)](https://imagelayers.io/?images=cassandra:2.1.14,cassandra:2.2.6,cassandra:3.0.5,cassandra:3.5)
+[![](https://badge.imagelayers.io/cassandra:latest.svg)](https://imagelayers.io/?images=cassandra:2.1.14,cassandra:2.2.6,cassandra:3.0.6,cassandra:3.5)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcassandra).
 
