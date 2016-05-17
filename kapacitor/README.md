@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.12`, `0.12.0` (*0.12/Dockerfile*)](https://github.com/influxdata/kapacitor-docker/blob/36f7a7e8054650e60bc4b86d7820b7d7446a7ba0/0.12/Dockerfile)
--	[`0.13`, `0.13.0`, `latest` (*0.13/Dockerfile*)](https://github.com/influxdata/kapacitor-docker/blob/36f7a7e8054650e60bc4b86d7820b7d7446a7ba0/0.13/Dockerfile)
+-	[`0.12`, `0.12.0` (*0.12/Dockerfile*)](https://github.com/influxdata/kapacitor-docker/blob/49774a46dbba47b678d4bf0ff894f7dccd530486/0.12/Dockerfile)
+-	[`0.13`, `0.13.1`, `latest` (*0.13/Dockerfile*)](https://github.com/influxdata/kapacitor-docker/blob/49774a46dbba47b678d4bf0ff894f7dccd530486/0.13/Dockerfile)
 
 [![](https://badge.imagelayers.io/kapacitor:latest.svg)](https://imagelayers.io/?images=kapacitor:0.12,kapacitor:0.13)
 
