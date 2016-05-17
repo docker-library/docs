@@ -16,12 +16,12 @@
 -	[`5.11.1-onbuild`, `5.11-onbuild`, `5-onbuild` (*5.11/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/cbdacad677bafa044140610f851bed00254de1ca/5.11/onbuild/Dockerfile)
 -	[`5.11.1-slim`, `5.11-slim`, `5-slim` (*5.11/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/cbdacad677bafa044140610f851bed00254de1ca/5.11/slim/Dockerfile)
 -	[`5.11.1-wheezy`, `5.11-wheezy`, `5-wheezy` (*5.11/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/cbdacad677bafa044140610f851bed00254de1ca/5.11/wheezy/Dockerfile)
--	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/nodejs/docker-node/blob/10940306b6ae14f9d2fb0d9a7327e768eadc039a/6.1/Dockerfile)
--	[`6.1.0-onbuild`, `6.1-onbuild`, `6-onbuild`, `onbuild` (*6.1/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/10940306b6ae14f9d2fb0d9a7327e768eadc039a/6.1/onbuild/Dockerfile)
--	[`6.1.0-slim`, `6.1-slim`, `6-slim`, `slim` (*6.1/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/10940306b6ae14f9d2fb0d9a7327e768eadc039a/6.1/slim/Dockerfile)
--	[`6.1.0-wheezy`, `6.1-wheezy`, `6-wheezy`, `wheezy` (*6.1/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/10940306b6ae14f9d2fb0d9a7327e768eadc039a/6.1/wheezy/Dockerfile)
+-	[`6.2.0`, `6.2`, `6`, `latest` (*6.2/Dockerfile*)](https://github.com/nodejs/docker-node/blob/9a4e5a31df1e7d1df8b3a2d74f23f340d5210ada/6.2/Dockerfile)
+-	[`6.2.0-onbuild`, `6.2-onbuild`, `6-onbuild`, `onbuild` (*6.2/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/9a4e5a31df1e7d1df8b3a2d74f23f340d5210ada/6.2/onbuild/Dockerfile)
+-	[`6.2.0-slim`, `6.2-slim`, `6-slim`, `slim` (*6.2/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/9a4e5a31df1e7d1df8b3a2d74f23f340d5210ada/6.2/slim/Dockerfile)
+-	[`6.2.0-wheezy`, `6.2-wheezy`, `6-wheezy`, `wheezy` (*6.2/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/9a4e5a31df1e7d1df8b3a2d74f23f340d5210ada/6.2/wheezy/Dockerfile)
 
-[![](https://badge.imagelayers.io/node:latest.svg)](https://imagelayers.io/?images=node:0.10.45,node:0.10.45-onbuild,node:0.10.45-slim,node:0.10.45-wheezy,node:0.12.14,node:0.12.14-onbuild,node:0.12.14-slim,node:0.12.14-wheezy,node:4.4.4,node:4.4.4-onbuild,node:4.4.4-slim,node:4.4.4-wheezy,node:5.11.1,node:5.11.1-onbuild,node:5.11.1-slim,node:5.11.1-wheezy,node:6.1.0,node:6.1.0-onbuild,node:6.1.0-slim,node:6.1.0-wheezy)
+[![](https://badge.imagelayers.io/node:latest.svg)](https://imagelayers.io/?images=node:0.10.45,node:0.10.45-onbuild,node:0.10.45-slim,node:0.10.45-wheezy,node:0.12.14,node:0.12.14-onbuild,node:0.12.14-slim,node:0.12.14-wheezy,node:4.4.4,node:4.4.4-onbuild,node:4.4.4-slim,node:4.4.4-wheezy,node:5.11.1,node:5.11.1-onbuild,node:5.11.1-slim,node:5.11.1-wheezy,node:6.2.0,node:6.2.0-onbuild,node:6.2.0-slim,node:6.2.0-wheezy)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
 
