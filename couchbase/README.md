@@ -1,19 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `4.1.1`, `enterprise-4.1.1` (*enterprise/couchbase-server/4.1.1/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/enterprise/couchbase-server/4.1.1/Dockerfile)
--	[`4.1.0`, `enterprise-4.1.0` (*enterprise/couchbase-server/4.1.0/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/enterprise/couchbase-server/4.1.0/Dockerfile)
--	[`4.0.0`, `enterprise-4.0.0` (*enterprise/couchbase-server/4.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/enterprise/couchbase-server/4.0.0/Dockerfile)
--	[`community-4.0.0`, `community` (*community/couchbase-server/4.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/community/couchbase-server/4.0.0/Dockerfile)
--	[`3.1.5`, `enterprise-3.1.5` (*enterprise/couchbase-server/3.1.5/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/enterprise/couchbase-server/3.1.5/Dockerfile)
--	[`3.1.3`, `enterprise-3.1.3` (*enterprise/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/enterprise/couchbase-server/3.1.3/Dockerfile)
--	[`3.1.0`, `enterprise-3.1.0` (*enterprise/couchbase-server/3.1.0/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/enterprise/couchbase-server/3.1.0/Dockerfile)
--	[`3.0.3`, `enterprise-3.0.3` (*enterprise/couchbase-server/3.0.3/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/enterprise/couchbase-server/3.0.3/Dockerfile)
--	[`3.0.2`, `enterprise-3.0.2` (*enterprise/couchbase-server/3.0.2/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/enterprise/couchbase-server/3.0.2/Dockerfile)
--	[`community-3.0.1` (*community/couchbase-server/3.0.1/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/community/couchbase-server/3.0.1/Dockerfile)
--	[`2.5.2`, `enterprise-2.5.2` (*enterprise/couchbase-server/2.5.2/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/enterprise/couchbase-server/2.5.2/Dockerfile)
--	[`community-2.2.0` (*community/couchbase-server/2.2.0/Dockerfile*)](https://github.com/couchbase/docker/blob/0a0f0de1dbeb557f696784cc368e3cd89229b7bc/community/couchbase-server/2.2.0/Dockerfile)
+-	[`latest`, `enterprise`, `4.1.1`, `enterprise-4.1.1` (*enterprise/couchbase-server/4.1.1/Dockerfile*)](https://github.com/couchbase/docker/blob/7e380468176f83a06edf98bdf8af635d55d939dd/enterprise/couchbase-server/4.1.1/Dockerfile)
+-	[`community`, `community-4.0.0` (*community/couchbase-server/4.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/7e380468176f83a06edf98bdf8af635d55d939dd/community/couchbase-server/4.0.0/Dockerfile)
+-	[`3.1.5`, `enterprise-3.1.5` (*enterprise/couchbase-server/3.1.5/Dockerfile*)](https://github.com/couchbase/docker/blob/7e380468176f83a06edf98bdf8af635d55d939dd/enterprise/couchbase-server/3.1.5/Dockerfile)
+-	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/7e380468176f83a06edf98bdf8af635d55d939dd/community/couchbase-server/3.1.3/Dockerfile)
 
-[![](https://badge.imagelayers.io/couchbase:latest.svg)](https://imagelayers.io/?images=couchbase:latest,couchbase:4.1.0,couchbase:4.0.0,couchbase:community-4.0.0,couchbase:3.1.5,couchbase:3.1.3,couchbase:3.1.0,couchbase:3.0.3,couchbase:3.0.2,couchbase:community-3.0.1,couchbase:2.5.2,couchbase:community-2.2.0)
+[![](https://badge.imagelayers.io/couchbase:latest.svg)](https://imagelayers.io/?images=couchbase:latest,couchbase:community,couchbase:3.1.5,couchbase:community-3.1.3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/couchbase`)](https://github.com/docker-library/official-images/blob/master/library/couchbase). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchbase).
 
