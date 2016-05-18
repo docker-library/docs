@@ -16,7 +16,7 @@ The Small Footprint JRE ([SFJ](http://download.boulder.ibm.com/ibmdl/pub/softwar
 
 Consider using [Alpine Linux](http://alpinelinux.org/) if you are concerned about the size of the overall image. Alpine Linux is a stripped down version of Linux that is based on [musl glibc](http://wiki.musl-libc.org/wiki/Functional_differences_from_glibc) and Busybox, resulting in a [Docker image](https://hub.docker.com/_/alpine/) size of approximately 5 MB. Due to its extremely small size and reduced number of installed packages, it has a much smaller attack surface which improves security. However, because the IBM SDK has a dependency on gnu glibc, installing this library adds an extra 8 MB to the image size. The following table compares Docker Image sizes based on the latest JRE `8.0-3.0`.
 
-|   JRE  |   JRE  |   SFJ  |   SFJ  |
+| JRE    | JRE    | SFJ    | SFJ    |
 |:------:|:------:|:------:|:------:|
 | Ubuntu | Alpine | Ubuntu | Alpine |
 | 300 MB | 186 MB | 218 MB | 104 MB |
