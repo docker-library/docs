@@ -124,6 +124,34 @@ sub get_layer_data {
 
 sub cmd_to_dockerfile {
 	my ($cmd) = @_;
+
+	if (@$cmd == 1) {
+		# likely 1.10+ squashed string :(
+		# https://github.com/docker/docker/issues/22436
+		# let's strip and "parse" to get as close to readable as we can
+
+		my $shC = '/bin/sh -c ';
+		my $nop = '#(nop) ';
+
+		my $str = $cmd->[0];
+		my @prefix = ();
+		if ($str =~ s!^[|]\d+ (.*?) (\Q$shC\E)!$2!) {
+			push @prefix, '# ARGS: ' . $1;
+		}
+		if (substr($str, 0, 1) eq '|' && !@prefix) {
+			# must be something like:
+			#   |6 a=1 b=2 c=3 d=4 e=a b c f=a b " c echo $a
+			# (and thus impossible to parse as-is)
+			return '# unable to parse image command string further:' . "\n" . $str;
+		}
+		$str =~ s!^\Q$shC\E!!;
+		unless ($str =~ s!^\Q$nop\E!!) {
+			# if we don't have "#(nop)", RUN is implied
+			$str = 'RUN ' . $str;
+		}
+		return join "\n", @prefix, $str;
+	}
+
 	my @buildArgs;
 	if (substr($cmd->[0], 0, 1) eq '|') {
 		# must have some build args for this RUN line
@@ -208,7 +236,7 @@ while (my $image = shift) {
 		$totals{$_} += $data->{$_} for keys %totals;
 	}
 	print "\n";
-	say "-\t" . 'Total Virtual Size: ' . size($totals{virtual_size});
+	say "-\t" . 'Total Virtual Size: ' . size($totals{virtual_size}) if $totals{virtual_size};
 	say "-\t" . 'Total v2 Content-Length: ' . size($totals{blob_content_length});
 	print "\n";
 	say '### Layers (' . scalar(keys %parentChild) . ')';
@@ -227,7 +255,7 @@ while (my $image = shift) {
 		say "-\t" . 'Created: ' . date($data->{created}) if $data->{created};
 		say "-\t" . 'Parent Layer: `' . $data->{parent} . '`' if $data->{parent};
 		say "-\t" . 'Docker Version: ' . $data->{docker_version} if $data->{docker_version};
-		say "-\t" . 'Virtual Size: ' . size($data->{virtual_size});
+		say "-\t" . 'Virtual Size: ' . size($data->{virtual_size}) if $totals{virtual_size};
 		say "-\t" . 'v2 Blob: `' . $data->{blob} . '`';
 		say "-\t" . 'v2 Content-Length: ' . size($data->{blob_content_length});
 		say "-\t" . 'v2 Last-Modified: ' . date($data->{blob_last_modified}) if $data->{blob_last_modified};
