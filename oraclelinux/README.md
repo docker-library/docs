@@ -1,13 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `7`, `7.2` (*OracleLinux/7.2/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/7.2/Dockerfile)
--	[`7.1` (*OracleLinux/7.1/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/7.1/Dockerfile)
--	[`7.0` (*OracleLinux/7.0/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/7.0/Dockerfile)
--	[`6`, `6.7` (*OracleLinux/6.7/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/6.7/Dockerfile)
--	[`6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/6.6/Dockerfile)
--	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker-images/blob/1904d5ffe361cb166559c5d8cf7b0d463fdb716b/OracleLinux/5.11/Dockerfile)
+-	[`latest`, `7`, `7.2` (*OracleLinux/7.2/Dockerfile*)](https://github.com/oracle/docker-images/blob/80e7e4936c22ca02cbb03b016d1ef9b9f9cea6d5/OracleLinux/7.2/Dockerfile)
+-	[`7.1` (*OracleLinux/7.1/Dockerfile*)](https://github.com/oracle/docker-images/blob/80e7e4936c22ca02cbb03b016d1ef9b9f9cea6d5/OracleLinux/7.1/Dockerfile)
+-	[`7.0` (*OracleLinux/7.0/Dockerfile*)](https://github.com/oracle/docker-images/blob/80e7e4936c22ca02cbb03b016d1ef9b9f9cea6d5/OracleLinux/7.0/Dockerfile)
+-	[`6`, `6.8` (*OracleLinux/6.8/Dockerfile*)](https://github.com/oracle/docker-images/blob/80e7e4936c22ca02cbb03b016d1ef9b9f9cea6d5/OracleLinux/6.8/Dockerfile)
+-	[`6.7` (*OracleLinux/6.7/Dockerfile*)](https://github.com/oracle/docker-images/blob/80e7e4936c22ca02cbb03b016d1ef9b9f9cea6d5/OracleLinux/6.7/Dockerfile)
+-	[`6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker-images/blob/80e7e4936c22ca02cbb03b016d1ef9b9f9cea6d5/OracleLinux/6.6/Dockerfile)
+-	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker-images/blob/80e7e4936c22ca02cbb03b016d1ef9b9f9cea6d5/OracleLinux/5.11/Dockerfile)
 
-[![](https://badge.imagelayers.io/oraclelinux:latest.svg)](https://imagelayers.io/?images=oraclelinux:latest,oraclelinux:7.1,oraclelinux:7.0,oraclelinux:6,oraclelinux:6.6,oraclelinux:5)
+[![](https://badge.imagelayers.io/oraclelinux:latest.svg)](https://imagelayers.io/?images=oraclelinux:latest,oraclelinux:7.1,oraclelinux:7.0,oraclelinux:6,oraclelinux:6.7,oraclelinux:6.6,oraclelinux:5)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/oraclelinux`)](https://github.com/docker-library/official-images/blob/master/library/oraclelinux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Foraclelinux).
 
