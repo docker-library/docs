@@ -7,15 +7,18 @@
 -	[`influxdb:0.13`](#influxdb013)
 -	[`influxdb:0.13.0`](#influxdb0130)
 -	[`influxdb:latest`](#influxdblatest)
+-	[`influxdb:0.13-alpine`](#influxdb013-alpine)
+-	[`influxdb:0.13.0-alpine`](#influxdb0130-alpine)
+-	[`influxdb:alpine`](#influxdbalpine)
 
 ## `influxdb:0.12`
 
 ```console
-$ docker pull library/influxdb@sha256:c71082a85a3f604ce44bcc2e38f9d0ef5865da57c588f27594c79dc8c9f592c1
+$ docker pull library/influxdb@sha256:9de76e542a73152a5bfe4c4bb54219dd4cc26faf88132091899ae8290e32d70e
 ```
 
--	Total Virtual Size: 224.6 MB (224629798 bytes)
--	Total v2 Content-Length: 84.6 MB (84567065 bytes)
+-	Total Virtual Size: 224.6 MB (224629824 bytes)
+-	Total v2 Content-Length: 84.6 MB (84567080 bytes)
 
 ### Layers (12)
 
@@ -112,84 +115,84 @@ RUN wget -q https://s3.amazonaws.com/influxdb/influxdb_$INFLUXDB_VERSION-1_amd64
 -	v2 Content-Length: 14.7 MB (14671864 bytes)
 -	v2 Last-Modified: Thu, 12 May 2016 16:48:11 GMT
 
-#### `28cd8aeb43533c1c11d3afcc50f25483d763d8966bcbe0491362f7fee52f5eea`
+#### `cd02cde2c9c2ec6dabd4eb9a06ed54c57bcfa97414bd61e5df84d9b9c0e25730`
 
 ```dockerfile
-COPY file:1655813528a29d10690a98aaecea9913e27d12470ee669d3dc99b8965bfaafd7 in /etc/influxdb/influxdb.conf
+COPY file:4516071c66c4dd4b99ee2a412814c2f6b8c7fd353a08ff840bf57bb91281c00f in /etc/influxdb/influxdb.conf
 ```
 
--	Created: Thu, 12 May 2016 16:43:42 GMT
+-	Created: Mon, 23 May 2016 21:37:36 GMT
 -	Parent Layer: `6eb50f59ccc457431c0c3d9601c54985ee49aef75de8edf18132a95796e83b7a`
 -	Docker Version: 1.9.1
--	Virtual Size: 135.0 B
--	v2 Blob: `sha256:9f00eaa7bb9b14d19bb8a9b3641c0f098bf9faa98d57f27304bebd19a8ed7ee4`
--	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Thu, 12 May 2016 16:48:02 GMT
+-	Virtual Size: 161.0 B
+-	v2 Blob: `sha256:3eadbd4a51cd11c4d8640d9275c947a1cc97bbf285a25e1cb7862351dfcc2119`
+-	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Mon, 23 May 2016 21:49:32 GMT
 
-#### `1b4c3ad865f2d6f1f077bfb00d06e37ff9ed16e2218ad0d060d98a4a9750f34b`
+#### `a7f544b5c696f598499ea83cb611e828a72f9ee156e82a0bad31757d7c11e455`
 
 ```dockerfile
 EXPOSE 8083/tcp 8086/tcp
 ```
 
--	Created: Thu, 12 May 2016 16:43:42 GMT
--	Parent Layer: `28cd8aeb43533c1c11d3afcc50f25483d763d8966bcbe0491362f7fee52f5eea`
+-	Created: Mon, 23 May 2016 21:37:37 GMT
+-	Parent Layer: `cd02cde2c9c2ec6dabd4eb9a06ed54c57bcfa97414bd61e5df84d9b9c0e25730`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4eda2fc19f2ea6d3b61c989785cd29d0f94d38f217d3b2661be4ae2f2b83a442`
+#### `99875fd11552d071f82b173f1dc4298aef72a6d5f1321a78d67ad6b49c97f4ec`
 
 ```dockerfile
 VOLUME [/var/lib/influxdb]
 ```
 
--	Created: Thu, 12 May 2016 16:43:43 GMT
--	Parent Layer: `1b4c3ad865f2d6f1f077bfb00d06e37ff9ed16e2218ad0d060d98a4a9750f34b`
+-	Created: Mon, 23 May 2016 21:37:38 GMT
+-	Parent Layer: `a7f544b5c696f598499ea83cb611e828a72f9ee156e82a0bad31757d7c11e455`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `39fe3e410bb90f98d2aff13c1e0c68c8cf58eb58f01d0b8838f38383865c27e0`
+#### `b5bbba0adb44dd6db2469a9b8cfe4cee8a18d2dcaccba1ca1861cdd2b129840e`
 
 ```dockerfile
 COPY file:82449ae856d497d84d9e31e0121129e8a64f72490c69b5e8cbf8fce8b4e3b453 in /entrypoint.sh
 ```
 
--	Created: Thu, 12 May 2016 16:43:44 GMT
--	Parent Layer: `4eda2fc19f2ea6d3b61c989785cd29d0f94d38f217d3b2661be4ae2f2b83a442`
+-	Created: Mon, 23 May 2016 21:37:38 GMT
+-	Parent Layer: `99875fd11552d071f82b173f1dc4298aef72a6d5f1321a78d67ad6b49c97f4ec`
 -	Docker Version: 1.9.1
 -	Virtual Size: 696.0 B
 -	v2 Blob: `sha256:2b67e403e04883417d316111afddaa2a7c9129fe25c4e07198268dbfe849fc0c`
 -	v2 Content-Length: 321.0 B
 -	v2 Last-Modified: Thu, 12 May 2016 16:47:55 GMT
 
-#### `91e6ec9f9e5adedeb2848b389bb947cad32d01c2ea4c68fdef48fabc1ec1ab8c`
+#### `090ca2c6a1e97dbffb2cd61f99274c5a9e241caee5d463d5ae26279825ead26f`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Thu, 12 May 2016 16:43:45 GMT
--	Parent Layer: `39fe3e410bb90f98d2aff13c1e0c68c8cf58eb58f01d0b8838f38383865c27e0`
+-	Created: Mon, 23 May 2016 21:37:39 GMT
+-	Parent Layer: `b5bbba0adb44dd6db2469a9b8cfe4cee8a18d2dcaccba1ca1861cdd2b129840e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1c93f511e9904633380106fb14ecfb2eacb6a00542b151833616078d8652f195`
+#### `204861b3daacf7dc808c0217b1e9c552fde2bcf2ed5fe79e826d967b2dd80456`
 
 ```dockerfile
 CMD ["influxd"]
 ```
 
--	Created: Thu, 12 May 2016 16:43:45 GMT
--	Parent Layer: `91e6ec9f9e5adedeb2848b389bb947cad32d01c2ea4c68fdef48fabc1ec1ab8c`
+-	Created: Mon, 23 May 2016 21:37:40 GMT
+-	Parent Layer: `090ca2c6a1e97dbffb2cd61f99274c5a9e241caee5d463d5ae26279825ead26f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -199,11 +202,11 @@ CMD ["influxd"]
 ## `influxdb:0.12.2`
 
 ```console
-$ docker pull library/influxdb@sha256:e2bd6df4b7d9bf984d7ca845c35925b618cd8527349f1432576518845bb85e1d
+$ docker pull library/influxdb@sha256:a13011785365b5994ce722c8130e0d8f0ab4ec58a2c85cd286c32b4a63aef781
 ```
 
--	Total Virtual Size: 224.6 MB (224629798 bytes)
--	Total v2 Content-Length: 84.6 MB (84567065 bytes)
+-	Total Virtual Size: 224.6 MB (224629824 bytes)
+-	Total v2 Content-Length: 84.6 MB (84567080 bytes)
 
 ### Layers (12)
 
@@ -300,84 +303,84 @@ RUN wget -q https://s3.amazonaws.com/influxdb/influxdb_$INFLUXDB_VERSION-1_amd64
 -	v2 Content-Length: 14.7 MB (14671864 bytes)
 -	v2 Last-Modified: Thu, 12 May 2016 16:48:11 GMT
 
-#### `28cd8aeb43533c1c11d3afcc50f25483d763d8966bcbe0491362f7fee52f5eea`
+#### `cd02cde2c9c2ec6dabd4eb9a06ed54c57bcfa97414bd61e5df84d9b9c0e25730`
 
 ```dockerfile
-COPY file:1655813528a29d10690a98aaecea9913e27d12470ee669d3dc99b8965bfaafd7 in /etc/influxdb/influxdb.conf
+COPY file:4516071c66c4dd4b99ee2a412814c2f6b8c7fd353a08ff840bf57bb91281c00f in /etc/influxdb/influxdb.conf
 ```
 
--	Created: Thu, 12 May 2016 16:43:42 GMT
+-	Created: Mon, 23 May 2016 21:37:36 GMT
 -	Parent Layer: `6eb50f59ccc457431c0c3d9601c54985ee49aef75de8edf18132a95796e83b7a`
 -	Docker Version: 1.9.1
--	Virtual Size: 135.0 B
--	v2 Blob: `sha256:9f00eaa7bb9b14d19bb8a9b3641c0f098bf9faa98d57f27304bebd19a8ed7ee4`
--	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Thu, 12 May 2016 16:48:02 GMT
+-	Virtual Size: 161.0 B
+-	v2 Blob: `sha256:3eadbd4a51cd11c4d8640d9275c947a1cc97bbf285a25e1cb7862351dfcc2119`
+-	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Mon, 23 May 2016 21:49:32 GMT
 
-#### `1b4c3ad865f2d6f1f077bfb00d06e37ff9ed16e2218ad0d060d98a4a9750f34b`
+#### `a7f544b5c696f598499ea83cb611e828a72f9ee156e82a0bad31757d7c11e455`
 
 ```dockerfile
 EXPOSE 8083/tcp 8086/tcp
 ```
 
--	Created: Thu, 12 May 2016 16:43:42 GMT
--	Parent Layer: `28cd8aeb43533c1c11d3afcc50f25483d763d8966bcbe0491362f7fee52f5eea`
+-	Created: Mon, 23 May 2016 21:37:37 GMT
+-	Parent Layer: `cd02cde2c9c2ec6dabd4eb9a06ed54c57bcfa97414bd61e5df84d9b9c0e25730`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4eda2fc19f2ea6d3b61c989785cd29d0f94d38f217d3b2661be4ae2f2b83a442`
+#### `99875fd11552d071f82b173f1dc4298aef72a6d5f1321a78d67ad6b49c97f4ec`
 
 ```dockerfile
 VOLUME [/var/lib/influxdb]
 ```
 
--	Created: Thu, 12 May 2016 16:43:43 GMT
--	Parent Layer: `1b4c3ad865f2d6f1f077bfb00d06e37ff9ed16e2218ad0d060d98a4a9750f34b`
+-	Created: Mon, 23 May 2016 21:37:38 GMT
+-	Parent Layer: `a7f544b5c696f598499ea83cb611e828a72f9ee156e82a0bad31757d7c11e455`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `39fe3e410bb90f98d2aff13c1e0c68c8cf58eb58f01d0b8838f38383865c27e0`
+#### `b5bbba0adb44dd6db2469a9b8cfe4cee8a18d2dcaccba1ca1861cdd2b129840e`
 
 ```dockerfile
 COPY file:82449ae856d497d84d9e31e0121129e8a64f72490c69b5e8cbf8fce8b4e3b453 in /entrypoint.sh
 ```
 
--	Created: Thu, 12 May 2016 16:43:44 GMT
--	Parent Layer: `4eda2fc19f2ea6d3b61c989785cd29d0f94d38f217d3b2661be4ae2f2b83a442`
+-	Created: Mon, 23 May 2016 21:37:38 GMT
+-	Parent Layer: `99875fd11552d071f82b173f1dc4298aef72a6d5f1321a78d67ad6b49c97f4ec`
 -	Docker Version: 1.9.1
 -	Virtual Size: 696.0 B
 -	v2 Blob: `sha256:2b67e403e04883417d316111afddaa2a7c9129fe25c4e07198268dbfe849fc0c`
 -	v2 Content-Length: 321.0 B
 -	v2 Last-Modified: Thu, 12 May 2016 16:47:55 GMT
 
-#### `91e6ec9f9e5adedeb2848b389bb947cad32d01c2ea4c68fdef48fabc1ec1ab8c`
+#### `090ca2c6a1e97dbffb2cd61f99274c5a9e241caee5d463d5ae26279825ead26f`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Thu, 12 May 2016 16:43:45 GMT
--	Parent Layer: `39fe3e410bb90f98d2aff13c1e0c68c8cf58eb58f01d0b8838f38383865c27e0`
+-	Created: Mon, 23 May 2016 21:37:39 GMT
+-	Parent Layer: `b5bbba0adb44dd6db2469a9b8cfe4cee8a18d2dcaccba1ca1861cdd2b129840e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1c93f511e9904633380106fb14ecfb2eacb6a00542b151833616078d8652f195`
+#### `204861b3daacf7dc808c0217b1e9c552fde2bcf2ed5fe79e826d967b2dd80456`
 
 ```dockerfile
 CMD ["influxd"]
 ```
 
--	Created: Thu, 12 May 2016 16:43:45 GMT
--	Parent Layer: `91e6ec9f9e5adedeb2848b389bb947cad32d01c2ea4c68fdef48fabc1ec1ab8c`
+-	Created: Mon, 23 May 2016 21:37:40 GMT
+-	Parent Layer: `090ca2c6a1e97dbffb2cd61f99274c5a9e241caee5d463d5ae26279825ead26f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -387,11 +390,11 @@ CMD ["influxd"]
 ## `influxdb:0.13`
 
 ```console
-$ docker pull library/influxdb@sha256:d15c9adb45c70730b1beb2f787ca30ee80087e0c992986c1e08f07f9f5a59e9f
+$ docker pull library/influxdb@sha256:7bfd9e5c0f43911dfd82d8a9334ca5be99d0e4625979ff1753c534e616f2c271
 ```
 
--	Total Virtual Size: 234.7 MB (234666850 bytes)
--	Total v2 Content-Length: 88.0 MB (88043587 bytes)
+-	Total Virtual Size: 234.7 MB (234666876 bytes)
+-	Total v2 Content-Length: 88.0 MB (88043603 bytes)
 
 ### Layers (12)
 
@@ -488,84 +491,84 @@ RUN wget -q https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERS
 -	v2 Content-Length: 18.1 MB (18148525 bytes)
 -	v2 Last-Modified: Thu, 12 May 2016 23:52:58 GMT
 
-#### `53a5caed683d10fb13cc944ad94f659ae40c65a41a8647090da809c0de5db80f`
+#### `ca18198f89246ca227a16c88a79cf458a3944b6c6e4367a1b5eec2992c35434d`
 
 ```dockerfile
-COPY file:1655813528a29d10690a98aaecea9913e27d12470ee669d3dc99b8965bfaafd7 in /etc/influxdb/influxdb.conf
+COPY file:4516071c66c4dd4b99ee2a412814c2f6b8c7fd353a08ff840bf57bb91281c00f in /etc/influxdb/influxdb.conf
 ```
 
--	Created: Thu, 12 May 2016 23:47:12 GMT
+-	Created: Mon, 23 May 2016 21:38:40 GMT
 -	Parent Layer: `89c28468bff76004369c15db86b7d4fad2b8e2c95ce464ca19b3a58256cff3f4`
 -	Docker Version: 1.9.1
--	Virtual Size: 135.0 B
--	v2 Blob: `sha256:2eb454dd7c2ec15fafbb799d0ac3333541e85887793d7c526def5d8fd2954cf2`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Thu, 12 May 2016 23:52:48 GMT
+-	Virtual Size: 161.0 B
+-	v2 Blob: `sha256:2a3f2faff07f7300f41d942a415298ea303fd6e11a332bd349467def00a87bad`
+-	v2 Content-Length: 240.0 B
+-	v2 Last-Modified: Mon, 23 May 2016 21:49:55 GMT
 
-#### `98177bf75e4f8ee90cd4fc998a67608d4b673553a0f608b60221c4b665acf70a`
+#### `841f6d2c2d535795761dcd87074cfd058ccf11e8e64d521cabf232ee8e711895`
 
 ```dockerfile
 EXPOSE 8083/tcp 8086/tcp
 ```
 
--	Created: Thu, 12 May 2016 23:47:13 GMT
--	Parent Layer: `53a5caed683d10fb13cc944ad94f659ae40c65a41a8647090da809c0de5db80f`
+-	Created: Mon, 23 May 2016 21:38:42 GMT
+-	Parent Layer: `ca18198f89246ca227a16c88a79cf458a3944b6c6e4367a1b5eec2992c35434d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fc68d30859cd3e0f7ee92915cd1642991f00484e377ba3dc7e1df9b3180fb627`
+#### `019bdf1644d3215f395741fddbc571586c7c9990a415826b4d2726c0cc73737e`
 
 ```dockerfile
 VOLUME [/var/lib/influxdb]
 ```
 
--	Created: Thu, 12 May 2016 23:47:14 GMT
--	Parent Layer: `98177bf75e4f8ee90cd4fc998a67608d4b673553a0f608b60221c4b665acf70a`
+-	Created: Mon, 23 May 2016 21:38:42 GMT
+-	Parent Layer: `841f6d2c2d535795761dcd87074cfd058ccf11e8e64d521cabf232ee8e711895`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7883c0abd6f9faaa71eb72452f6349a4dd86847da10f79ddefc82bddeedf9547`
+#### `451b3457debdaf5b6cb0d8f6803ce1fe35102c75ed49bb47192988d6f11be140`
 
 ```dockerfile
 COPY file:d8dbf8da1290d1f149c490689882daad6f54fbecc54fde2fc4101d9d900a9c88 in /entrypoint.sh
 ```
 
--	Created: Thu, 12 May 2016 23:47:14 GMT
--	Parent Layer: `fc68d30859cd3e0f7ee92915cd1642991f00484e377ba3dc7e1df9b3180fb627`
+-	Created: Mon, 23 May 2016 21:38:43 GMT
+-	Parent Layer: `019bdf1644d3215f395741fddbc571586c7c9990a415826b4d2726c0cc73737e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 88.0 B
 -	v2 Blob: `sha256:c87fa437dbf2bcbfb269c3c8853395a3bc750166f9cd2f3b900d68c541845be3`
 -	v2 Content-Length: 184.0 B
 -	v2 Last-Modified: Thu, 12 May 2016 23:52:40 GMT
 
-#### `80f7d406f0826b9748f25c97d0cbd3021e05ea58b688bc884da3d1d487c77155`
+#### `c4f7ce74263020aade6f616061d94692a50638ead52d5f4b59af39027e1c7434`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Thu, 12 May 2016 23:47:15 GMT
--	Parent Layer: `7883c0abd6f9faaa71eb72452f6349a4dd86847da10f79ddefc82bddeedf9547`
+-	Created: Mon, 23 May 2016 21:38:44 GMT
+-	Parent Layer: `451b3457debdaf5b6cb0d8f6803ce1fe35102c75ed49bb47192988d6f11be140`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `df79624c236c8bec37f55afc39bfbeb7e2086af4a306212f26e6c8e4f1733a76`
+#### `af53159aab1c487be621201e13e07594a575f9dab4a63b33a922a2021cdf8bbe`
 
 ```dockerfile
 CMD ["influxd"]
 ```
 
--	Created: Thu, 12 May 2016 23:47:15 GMT
--	Parent Layer: `80f7d406f0826b9748f25c97d0cbd3021e05ea58b688bc884da3d1d487c77155`
+-	Created: Mon, 23 May 2016 21:38:45 GMT
+-	Parent Layer: `c4f7ce74263020aade6f616061d94692a50638ead52d5f4b59af39027e1c7434`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -575,11 +578,11 @@ CMD ["influxd"]
 ## `influxdb:0.13.0`
 
 ```console
-$ docker pull library/influxdb@sha256:e761a390e59341d88c4552828e96c27dcb02132bc32eeb54be533f788c23cb54
+$ docker pull library/influxdb@sha256:3c7c194c0c8d25b6b063fbf7b2d246599cb59a60030417b477535189f2b4bef0
 ```
 
--	Total Virtual Size: 234.7 MB (234666850 bytes)
--	Total v2 Content-Length: 88.0 MB (88043587 bytes)
+-	Total Virtual Size: 234.7 MB (234666876 bytes)
+-	Total v2 Content-Length: 88.0 MB (88043603 bytes)
 
 ### Layers (12)
 
@@ -676,84 +679,84 @@ RUN wget -q https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERS
 -	v2 Content-Length: 18.1 MB (18148525 bytes)
 -	v2 Last-Modified: Thu, 12 May 2016 23:52:58 GMT
 
-#### `53a5caed683d10fb13cc944ad94f659ae40c65a41a8647090da809c0de5db80f`
+#### `ca18198f89246ca227a16c88a79cf458a3944b6c6e4367a1b5eec2992c35434d`
 
 ```dockerfile
-COPY file:1655813528a29d10690a98aaecea9913e27d12470ee669d3dc99b8965bfaafd7 in /etc/influxdb/influxdb.conf
+COPY file:4516071c66c4dd4b99ee2a412814c2f6b8c7fd353a08ff840bf57bb91281c00f in /etc/influxdb/influxdb.conf
 ```
 
--	Created: Thu, 12 May 2016 23:47:12 GMT
+-	Created: Mon, 23 May 2016 21:38:40 GMT
 -	Parent Layer: `89c28468bff76004369c15db86b7d4fad2b8e2c95ce464ca19b3a58256cff3f4`
 -	Docker Version: 1.9.1
--	Virtual Size: 135.0 B
--	v2 Blob: `sha256:2eb454dd7c2ec15fafbb799d0ac3333541e85887793d7c526def5d8fd2954cf2`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Thu, 12 May 2016 23:52:48 GMT
+-	Virtual Size: 161.0 B
+-	v2 Blob: `sha256:2a3f2faff07f7300f41d942a415298ea303fd6e11a332bd349467def00a87bad`
+-	v2 Content-Length: 240.0 B
+-	v2 Last-Modified: Mon, 23 May 2016 21:49:55 GMT
 
-#### `98177bf75e4f8ee90cd4fc998a67608d4b673553a0f608b60221c4b665acf70a`
+#### `841f6d2c2d535795761dcd87074cfd058ccf11e8e64d521cabf232ee8e711895`
 
 ```dockerfile
 EXPOSE 8083/tcp 8086/tcp
 ```
 
--	Created: Thu, 12 May 2016 23:47:13 GMT
--	Parent Layer: `53a5caed683d10fb13cc944ad94f659ae40c65a41a8647090da809c0de5db80f`
+-	Created: Mon, 23 May 2016 21:38:42 GMT
+-	Parent Layer: `ca18198f89246ca227a16c88a79cf458a3944b6c6e4367a1b5eec2992c35434d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fc68d30859cd3e0f7ee92915cd1642991f00484e377ba3dc7e1df9b3180fb627`
+#### `019bdf1644d3215f395741fddbc571586c7c9990a415826b4d2726c0cc73737e`
 
 ```dockerfile
 VOLUME [/var/lib/influxdb]
 ```
 
--	Created: Thu, 12 May 2016 23:47:14 GMT
--	Parent Layer: `98177bf75e4f8ee90cd4fc998a67608d4b673553a0f608b60221c4b665acf70a`
+-	Created: Mon, 23 May 2016 21:38:42 GMT
+-	Parent Layer: `841f6d2c2d535795761dcd87074cfd058ccf11e8e64d521cabf232ee8e711895`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7883c0abd6f9faaa71eb72452f6349a4dd86847da10f79ddefc82bddeedf9547`
+#### `451b3457debdaf5b6cb0d8f6803ce1fe35102c75ed49bb47192988d6f11be140`
 
 ```dockerfile
 COPY file:d8dbf8da1290d1f149c490689882daad6f54fbecc54fde2fc4101d9d900a9c88 in /entrypoint.sh
 ```
 
--	Created: Thu, 12 May 2016 23:47:14 GMT
--	Parent Layer: `fc68d30859cd3e0f7ee92915cd1642991f00484e377ba3dc7e1df9b3180fb627`
+-	Created: Mon, 23 May 2016 21:38:43 GMT
+-	Parent Layer: `019bdf1644d3215f395741fddbc571586c7c9990a415826b4d2726c0cc73737e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 88.0 B
 -	v2 Blob: `sha256:c87fa437dbf2bcbfb269c3c8853395a3bc750166f9cd2f3b900d68c541845be3`
 -	v2 Content-Length: 184.0 B
 -	v2 Last-Modified: Thu, 12 May 2016 23:52:40 GMT
 
-#### `80f7d406f0826b9748f25c97d0cbd3021e05ea58b688bc884da3d1d487c77155`
+#### `c4f7ce74263020aade6f616061d94692a50638ead52d5f4b59af39027e1c7434`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Thu, 12 May 2016 23:47:15 GMT
--	Parent Layer: `7883c0abd6f9faaa71eb72452f6349a4dd86847da10f79ddefc82bddeedf9547`
+-	Created: Mon, 23 May 2016 21:38:44 GMT
+-	Parent Layer: `451b3457debdaf5b6cb0d8f6803ce1fe35102c75ed49bb47192988d6f11be140`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `df79624c236c8bec37f55afc39bfbeb7e2086af4a306212f26e6c8e4f1733a76`
+#### `af53159aab1c487be621201e13e07594a575f9dab4a63b33a922a2021cdf8bbe`
 
 ```dockerfile
 CMD ["influxd"]
 ```
 
--	Created: Thu, 12 May 2016 23:47:15 GMT
--	Parent Layer: `80f7d406f0826b9748f25c97d0cbd3021e05ea58b688bc884da3d1d487c77155`
+-	Created: Mon, 23 May 2016 21:38:45 GMT
+-	Parent Layer: `c4f7ce74263020aade6f616061d94692a50638ead52d5f4b59af39027e1c7434`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -763,11 +766,11 @@ CMD ["influxd"]
 ## `influxdb:latest`
 
 ```console
-$ docker pull library/influxdb@sha256:aaa21c334b0bd3f73d9324701a6cb8957ddd4014ad7532ca76da3447077f8438
+$ docker pull library/influxdb@sha256:25b8d9a11100e6502bf16a8a51cb175dcffdc5fe79e350f5a7c5ac505bbd5101
 ```
 
--	Total Virtual Size: 234.7 MB (234666850 bytes)
--	Total v2 Content-Length: 88.0 MB (88043587 bytes)
+-	Total Virtual Size: 234.7 MB (234666876 bytes)
+-	Total v2 Content-Length: 88.0 MB (88043603 bytes)
 
 ### Layers (12)
 
@@ -864,84 +867,531 @@ RUN wget -q https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERS
 -	v2 Content-Length: 18.1 MB (18148525 bytes)
 -	v2 Last-Modified: Thu, 12 May 2016 23:52:58 GMT
 
-#### `53a5caed683d10fb13cc944ad94f659ae40c65a41a8647090da809c0de5db80f`
+#### `ca18198f89246ca227a16c88a79cf458a3944b6c6e4367a1b5eec2992c35434d`
 
 ```dockerfile
-COPY file:1655813528a29d10690a98aaecea9913e27d12470ee669d3dc99b8965bfaafd7 in /etc/influxdb/influxdb.conf
+COPY file:4516071c66c4dd4b99ee2a412814c2f6b8c7fd353a08ff840bf57bb91281c00f in /etc/influxdb/influxdb.conf
 ```
 
--	Created: Thu, 12 May 2016 23:47:12 GMT
+-	Created: Mon, 23 May 2016 21:38:40 GMT
 -	Parent Layer: `89c28468bff76004369c15db86b7d4fad2b8e2c95ce464ca19b3a58256cff3f4`
 -	Docker Version: 1.9.1
--	Virtual Size: 135.0 B
--	v2 Blob: `sha256:2eb454dd7c2ec15fafbb799d0ac3333541e85887793d7c526def5d8fd2954cf2`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Thu, 12 May 2016 23:52:48 GMT
+-	Virtual Size: 161.0 B
+-	v2 Blob: `sha256:2a3f2faff07f7300f41d942a415298ea303fd6e11a332bd349467def00a87bad`
+-	v2 Content-Length: 240.0 B
+-	v2 Last-Modified: Mon, 23 May 2016 21:49:55 GMT
 
-#### `98177bf75e4f8ee90cd4fc998a67608d4b673553a0f608b60221c4b665acf70a`
+#### `841f6d2c2d535795761dcd87074cfd058ccf11e8e64d521cabf232ee8e711895`
 
 ```dockerfile
 EXPOSE 8083/tcp 8086/tcp
 ```
 
--	Created: Thu, 12 May 2016 23:47:13 GMT
--	Parent Layer: `53a5caed683d10fb13cc944ad94f659ae40c65a41a8647090da809c0de5db80f`
+-	Created: Mon, 23 May 2016 21:38:42 GMT
+-	Parent Layer: `ca18198f89246ca227a16c88a79cf458a3944b6c6e4367a1b5eec2992c35434d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fc68d30859cd3e0f7ee92915cd1642991f00484e377ba3dc7e1df9b3180fb627`
+#### `019bdf1644d3215f395741fddbc571586c7c9990a415826b4d2726c0cc73737e`
 
 ```dockerfile
 VOLUME [/var/lib/influxdb]
 ```
 
--	Created: Thu, 12 May 2016 23:47:14 GMT
--	Parent Layer: `98177bf75e4f8ee90cd4fc998a67608d4b673553a0f608b60221c4b665acf70a`
+-	Created: Mon, 23 May 2016 21:38:42 GMT
+-	Parent Layer: `841f6d2c2d535795761dcd87074cfd058ccf11e8e64d521cabf232ee8e711895`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7883c0abd6f9faaa71eb72452f6349a4dd86847da10f79ddefc82bddeedf9547`
+#### `451b3457debdaf5b6cb0d8f6803ce1fe35102c75ed49bb47192988d6f11be140`
 
 ```dockerfile
 COPY file:d8dbf8da1290d1f149c490689882daad6f54fbecc54fde2fc4101d9d900a9c88 in /entrypoint.sh
 ```
 
--	Created: Thu, 12 May 2016 23:47:14 GMT
--	Parent Layer: `fc68d30859cd3e0f7ee92915cd1642991f00484e377ba3dc7e1df9b3180fb627`
+-	Created: Mon, 23 May 2016 21:38:43 GMT
+-	Parent Layer: `019bdf1644d3215f395741fddbc571586c7c9990a415826b4d2726c0cc73737e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 88.0 B
 -	v2 Blob: `sha256:c87fa437dbf2bcbfb269c3c8853395a3bc750166f9cd2f3b900d68c541845be3`
 -	v2 Content-Length: 184.0 B
 -	v2 Last-Modified: Thu, 12 May 2016 23:52:40 GMT
 
-#### `80f7d406f0826b9748f25c97d0cbd3021e05ea58b688bc884da3d1d487c77155`
+#### `c4f7ce74263020aade6f616061d94692a50638ead52d5f4b59af39027e1c7434`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Thu, 12 May 2016 23:47:15 GMT
--	Parent Layer: `7883c0abd6f9faaa71eb72452f6349a4dd86847da10f79ddefc82bddeedf9547`
+-	Created: Mon, 23 May 2016 21:38:44 GMT
+-	Parent Layer: `451b3457debdaf5b6cb0d8f6803ce1fe35102c75ed49bb47192988d6f11be140`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `df79624c236c8bec37f55afc39bfbeb7e2086af4a306212f26e6c8e4f1733a76`
+#### `af53159aab1c487be621201e13e07594a575f9dab4a63b33a922a2021cdf8bbe`
 
 ```dockerfile
 CMD ["influxd"]
 ```
 
--	Created: Thu, 12 May 2016 23:47:15 GMT
--	Parent Layer: `80f7d406f0826b9748f25c97d0cbd3021e05ea58b688bc884da3d1d487c77155`
+-	Created: Mon, 23 May 2016 21:38:45 GMT
+-	Parent Layer: `c4f7ce74263020aade6f616061d94692a50638ead52d5f4b59af39027e1c7434`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `influxdb:0.13-alpine`
+
+```console
+$ docker pull library/influxdb@sha256:5aa2fe58d0c56fde850cdb61f141a2d21ff057f87174a0761083b540900ab82f
+```
+
+-	Total Virtual Size: 49.7 MB (49729754 bytes)
+-	Total v2 Content-Length: 16.0 MB (16012916 bytes)
+
+### Layers (9)
+
+#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+
+```dockerfile
+ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
+```
+
+-	Created: Fri, 06 May 2016 14:56:49 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 4.8 MB (4796783 bytes)
+-	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
+-	v2 Content-Length: 2.3 MB (2320212 bytes)
+-	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
+
+#### `3c1511f49e7c11704817993530fbb4836701211bf46a26101c6f637a9e9fbec3`
+
+```dockerfile
+ENV INFLUXDB_VERSION=0.13.0
+```
+
+-	Created: Mon, 23 May 2016 21:40:52 GMT
+-	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `1601af45b671a7c67762d8dd65d02c8016af5c10c716851f6b4047397d346f7e`
+
+```dockerfile
+RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&\
+     update-ca-certificates &&\
+     gpg --keyserver hkp://ha.pool.sks-keyservers.net\
+         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&\
+     wget -q https://dl.influxdata.com/influxdb/releases/influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz.asc &&\
+     wget -q https://dl.influxdata.com/influxdb/releases/influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz &&\
+     gpg --batch --verify influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz.asc influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz &&\
+     mkdir -p /usr/src &&\
+     tar -C /usr/src -xzf influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz &&\
+     rm -f /usr/src/influxdb-*/influxdb.conf &&\
+     chmod +x /usr/src/influxdb-*/* &&\
+     cp -a /usr/src/influxdb-*/* /usr/bin/ &&\
+     rm -rf *.tar.gz* /usr/src /root/.gnupg &&\
+     apk del .build-deps
+```
+
+-	Created: Mon, 23 May 2016 21:41:09 GMT
+-	Parent Layer: `3c1511f49e7c11704817993530fbb4836701211bf46a26101c6f637a9e9fbec3`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.9 MB (44932724 bytes)
+-	v2 Blob: `sha256:10d9af913f60874b5ba2db9909ec8fe49347c3c654f1403acf9f0c4f0b423398`
+-	v2 Content-Length: 13.7 MB (13692118 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 21:50:34 GMT
+
+#### `167b5487f0630abdcf9a81adc5471bcae703172aefb8e08bbf92a9645780a143`
+
+```dockerfile
+COPY file:4516071c66c4dd4b99ee2a412814c2f6b8c7fd353a08ff840bf57bb91281c00f in /etc/influxdb/influxdb.conf
+```
+
+-	Created: Mon, 23 May 2016 21:41:11 GMT
+-	Parent Layer: `1601af45b671a7c67762d8dd65d02c8016af5c10c716851f6b4047397d346f7e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 161.0 B
+-	v2 Blob: `sha256:a35d4fd6d1f743b1f2c1195e32964c77fb86a0acf8a92630d7102c2e7837f28d`
+-	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Mon, 23 May 2016 21:50:26 GMT
+
+#### `9485b9fa94ffdc9c360ded6d6ec4f928623e80c2d84a90a27246d05bb41b9512`
+
+```dockerfile
+EXPOSE 8083/tcp 8086/tcp
+```
+
+-	Created: Mon, 23 May 2016 21:41:12 GMT
+-	Parent Layer: `167b5487f0630abdcf9a81adc5471bcae703172aefb8e08bbf92a9645780a143`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a70e9a1f391a76839af449da390872e756e74fa8f41c46d35b9b1f6e8b88edc9`
+
+```dockerfile
+VOLUME [/var/lib/influxdb]
+```
+
+-	Created: Mon, 23 May 2016 21:41:13 GMT
+-	Parent Layer: `9485b9fa94ffdc9c360ded6d6ec4f928623e80c2d84a90a27246d05bb41b9512`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `0b85f3aec9ab9b4e48cb66437d573cb70e0b271e4c03feb894d55adf2a76b9f6`
+
+```dockerfile
+COPY file:1c16f9a4bbc720e4798c8795c4afe0e767aa7dfac19832acde0d0e592c5c854c in /entrypoint.sh
+```
+
+-	Created: Mon, 23 May 2016 21:41:14 GMT
+-	Parent Layer: `a70e9a1f391a76839af449da390872e756e74fa8f41c46d35b9b1f6e8b88edc9`
+-	Docker Version: 1.9.1
+-	Virtual Size: 86.0 B
+-	v2 Blob: `sha256:47ffb22cbb17e74d5c796ec1a6edfb61adbb0540d87b9c61aea1149c1d42edd9`
+-	v2 Content-Length: 182.0 B
+-	v2 Last-Modified: Mon, 23 May 2016 21:50:15 GMT
+
+#### `95195fbc027ead428c70d87598a67928538985f5c0d390ff906695029e1e201a`
+
+```dockerfile
+ENTRYPOINT &{["/entrypoint.sh"]}
+```
+
+-	Created: Mon, 23 May 2016 21:41:15 GMT
+-	Parent Layer: `0b85f3aec9ab9b4e48cb66437d573cb70e0b271e4c03feb894d55adf2a76b9f6`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `862910dfb42c2c814000205272ddc4fa83bba84afad8db03d750900d6847492c`
+
+```dockerfile
+CMD ["influxd"]
+```
+
+-	Created: Mon, 23 May 2016 21:41:16 GMT
+-	Parent Layer: `95195fbc027ead428c70d87598a67928538985f5c0d390ff906695029e1e201a`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `influxdb:0.13.0-alpine`
+
+```console
+$ docker pull library/influxdb@sha256:11b29bfb7fdee3f2e8033bb9c51b2be783701b22ed188af73a9dbfc5969baa2a
+```
+
+-	Total Virtual Size: 49.7 MB (49729754 bytes)
+-	Total v2 Content-Length: 16.0 MB (16012916 bytes)
+
+### Layers (9)
+
+#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+
+```dockerfile
+ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
+```
+
+-	Created: Fri, 06 May 2016 14:56:49 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 4.8 MB (4796783 bytes)
+-	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
+-	v2 Content-Length: 2.3 MB (2320212 bytes)
+-	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
+
+#### `3c1511f49e7c11704817993530fbb4836701211bf46a26101c6f637a9e9fbec3`
+
+```dockerfile
+ENV INFLUXDB_VERSION=0.13.0
+```
+
+-	Created: Mon, 23 May 2016 21:40:52 GMT
+-	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `1601af45b671a7c67762d8dd65d02c8016af5c10c716851f6b4047397d346f7e`
+
+```dockerfile
+RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&\
+     update-ca-certificates &&\
+     gpg --keyserver hkp://ha.pool.sks-keyservers.net\
+         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&\
+     wget -q https://dl.influxdata.com/influxdb/releases/influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz.asc &&\
+     wget -q https://dl.influxdata.com/influxdb/releases/influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz &&\
+     gpg --batch --verify influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz.asc influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz &&\
+     mkdir -p /usr/src &&\
+     tar -C /usr/src -xzf influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz &&\
+     rm -f /usr/src/influxdb-*/influxdb.conf &&\
+     chmod +x /usr/src/influxdb-*/* &&\
+     cp -a /usr/src/influxdb-*/* /usr/bin/ &&\
+     rm -rf *.tar.gz* /usr/src /root/.gnupg &&\
+     apk del .build-deps
+```
+
+-	Created: Mon, 23 May 2016 21:41:09 GMT
+-	Parent Layer: `3c1511f49e7c11704817993530fbb4836701211bf46a26101c6f637a9e9fbec3`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.9 MB (44932724 bytes)
+-	v2 Blob: `sha256:10d9af913f60874b5ba2db9909ec8fe49347c3c654f1403acf9f0c4f0b423398`
+-	v2 Content-Length: 13.7 MB (13692118 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 21:50:34 GMT
+
+#### `167b5487f0630abdcf9a81adc5471bcae703172aefb8e08bbf92a9645780a143`
+
+```dockerfile
+COPY file:4516071c66c4dd4b99ee2a412814c2f6b8c7fd353a08ff840bf57bb91281c00f in /etc/influxdb/influxdb.conf
+```
+
+-	Created: Mon, 23 May 2016 21:41:11 GMT
+-	Parent Layer: `1601af45b671a7c67762d8dd65d02c8016af5c10c716851f6b4047397d346f7e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 161.0 B
+-	v2 Blob: `sha256:a35d4fd6d1f743b1f2c1195e32964c77fb86a0acf8a92630d7102c2e7837f28d`
+-	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Mon, 23 May 2016 21:50:26 GMT
+
+#### `9485b9fa94ffdc9c360ded6d6ec4f928623e80c2d84a90a27246d05bb41b9512`
+
+```dockerfile
+EXPOSE 8083/tcp 8086/tcp
+```
+
+-	Created: Mon, 23 May 2016 21:41:12 GMT
+-	Parent Layer: `167b5487f0630abdcf9a81adc5471bcae703172aefb8e08bbf92a9645780a143`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a70e9a1f391a76839af449da390872e756e74fa8f41c46d35b9b1f6e8b88edc9`
+
+```dockerfile
+VOLUME [/var/lib/influxdb]
+```
+
+-	Created: Mon, 23 May 2016 21:41:13 GMT
+-	Parent Layer: `9485b9fa94ffdc9c360ded6d6ec4f928623e80c2d84a90a27246d05bb41b9512`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `0b85f3aec9ab9b4e48cb66437d573cb70e0b271e4c03feb894d55adf2a76b9f6`
+
+```dockerfile
+COPY file:1c16f9a4bbc720e4798c8795c4afe0e767aa7dfac19832acde0d0e592c5c854c in /entrypoint.sh
+```
+
+-	Created: Mon, 23 May 2016 21:41:14 GMT
+-	Parent Layer: `a70e9a1f391a76839af449da390872e756e74fa8f41c46d35b9b1f6e8b88edc9`
+-	Docker Version: 1.9.1
+-	Virtual Size: 86.0 B
+-	v2 Blob: `sha256:47ffb22cbb17e74d5c796ec1a6edfb61adbb0540d87b9c61aea1149c1d42edd9`
+-	v2 Content-Length: 182.0 B
+-	v2 Last-Modified: Mon, 23 May 2016 21:50:15 GMT
+
+#### `95195fbc027ead428c70d87598a67928538985f5c0d390ff906695029e1e201a`
+
+```dockerfile
+ENTRYPOINT &{["/entrypoint.sh"]}
+```
+
+-	Created: Mon, 23 May 2016 21:41:15 GMT
+-	Parent Layer: `0b85f3aec9ab9b4e48cb66437d573cb70e0b271e4c03feb894d55adf2a76b9f6`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `862910dfb42c2c814000205272ddc4fa83bba84afad8db03d750900d6847492c`
+
+```dockerfile
+CMD ["influxd"]
+```
+
+-	Created: Mon, 23 May 2016 21:41:16 GMT
+-	Parent Layer: `95195fbc027ead428c70d87598a67928538985f5c0d390ff906695029e1e201a`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `influxdb:alpine`
+
+```console
+$ docker pull library/influxdb@sha256:738eae2ff0cad081259f79f34fa1c673b3c40d89206979ab81597ca0a92deb67
+```
+
+-	Total Virtual Size: 49.7 MB (49729754 bytes)
+-	Total v2 Content-Length: 16.0 MB (16012916 bytes)
+
+### Layers (9)
+
+#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+
+```dockerfile
+ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
+```
+
+-	Created: Fri, 06 May 2016 14:56:49 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 4.8 MB (4796783 bytes)
+-	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
+-	v2 Content-Length: 2.3 MB (2320212 bytes)
+-	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
+
+#### `3c1511f49e7c11704817993530fbb4836701211bf46a26101c6f637a9e9fbec3`
+
+```dockerfile
+ENV INFLUXDB_VERSION=0.13.0
+```
+
+-	Created: Mon, 23 May 2016 21:40:52 GMT
+-	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `1601af45b671a7c67762d8dd65d02c8016af5c10c716851f6b4047397d346f7e`
+
+```dockerfile
+RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&\
+     update-ca-certificates &&\
+     gpg --keyserver hkp://ha.pool.sks-keyservers.net\
+         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&\
+     wget -q https://dl.influxdata.com/influxdb/releases/influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz.asc &&\
+     wget -q https://dl.influxdata.com/influxdb/releases/influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz &&\
+     gpg --batch --verify influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz.asc influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz &&\
+     mkdir -p /usr/src &&\
+     tar -C /usr/src -xzf influxdb-${INFLUXDB_VERSION}-static_linux_amd64.tar.gz &&\
+     rm -f /usr/src/influxdb-*/influxdb.conf &&\
+     chmod +x /usr/src/influxdb-*/* &&\
+     cp -a /usr/src/influxdb-*/* /usr/bin/ &&\
+     rm -rf *.tar.gz* /usr/src /root/.gnupg &&\
+     apk del .build-deps
+```
+
+-	Created: Mon, 23 May 2016 21:41:09 GMT
+-	Parent Layer: `3c1511f49e7c11704817993530fbb4836701211bf46a26101c6f637a9e9fbec3`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.9 MB (44932724 bytes)
+-	v2 Blob: `sha256:10d9af913f60874b5ba2db9909ec8fe49347c3c654f1403acf9f0c4f0b423398`
+-	v2 Content-Length: 13.7 MB (13692118 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 21:50:34 GMT
+
+#### `167b5487f0630abdcf9a81adc5471bcae703172aefb8e08bbf92a9645780a143`
+
+```dockerfile
+COPY file:4516071c66c4dd4b99ee2a412814c2f6b8c7fd353a08ff840bf57bb91281c00f in /etc/influxdb/influxdb.conf
+```
+
+-	Created: Mon, 23 May 2016 21:41:11 GMT
+-	Parent Layer: `1601af45b671a7c67762d8dd65d02c8016af5c10c716851f6b4047397d346f7e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 161.0 B
+-	v2 Blob: `sha256:a35d4fd6d1f743b1f2c1195e32964c77fb86a0acf8a92630d7102c2e7837f28d`
+-	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Mon, 23 May 2016 21:50:26 GMT
+
+#### `9485b9fa94ffdc9c360ded6d6ec4f928623e80c2d84a90a27246d05bb41b9512`
+
+```dockerfile
+EXPOSE 8083/tcp 8086/tcp
+```
+
+-	Created: Mon, 23 May 2016 21:41:12 GMT
+-	Parent Layer: `167b5487f0630abdcf9a81adc5471bcae703172aefb8e08bbf92a9645780a143`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a70e9a1f391a76839af449da390872e756e74fa8f41c46d35b9b1f6e8b88edc9`
+
+```dockerfile
+VOLUME [/var/lib/influxdb]
+```
+
+-	Created: Mon, 23 May 2016 21:41:13 GMT
+-	Parent Layer: `9485b9fa94ffdc9c360ded6d6ec4f928623e80c2d84a90a27246d05bb41b9512`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `0b85f3aec9ab9b4e48cb66437d573cb70e0b271e4c03feb894d55adf2a76b9f6`
+
+```dockerfile
+COPY file:1c16f9a4bbc720e4798c8795c4afe0e767aa7dfac19832acde0d0e592c5c854c in /entrypoint.sh
+```
+
+-	Created: Mon, 23 May 2016 21:41:14 GMT
+-	Parent Layer: `a70e9a1f391a76839af449da390872e756e74fa8f41c46d35b9b1f6e8b88edc9`
+-	Docker Version: 1.9.1
+-	Virtual Size: 86.0 B
+-	v2 Blob: `sha256:47ffb22cbb17e74d5c796ec1a6edfb61adbb0540d87b9c61aea1149c1d42edd9`
+-	v2 Content-Length: 182.0 B
+-	v2 Last-Modified: Mon, 23 May 2016 21:50:15 GMT
+
+#### `95195fbc027ead428c70d87598a67928538985f5c0d390ff906695029e1e201a`
+
+```dockerfile
+ENTRYPOINT &{["/entrypoint.sh"]}
+```
+
+-	Created: Mon, 23 May 2016 21:41:15 GMT
+-	Parent Layer: `0b85f3aec9ab9b4e48cb66437d573cb70e0b271e4c03feb894d55adf2a76b9f6`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `862910dfb42c2c814000205272ddc4fa83bba84afad8db03d750900d6847492c`
+
+```dockerfile
+CMD ["influxd"]
+```
+
+-	Created: Mon, 23 May 2016 21:41:16 GMT
+-	Parent Layer: `95195fbc027ead428c70d87598a67928538985f5c0d390ff906695029e1e201a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
