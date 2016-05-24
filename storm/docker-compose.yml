@@ -1,7 +1,7 @@
 version: '2'
 services:
     zookeeper:
-        image: jplock/zookeeper:3.4.8
+        image: 31z4/zookeeper:3.4.8
         restart: always
 
     nimbus:
