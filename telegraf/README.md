@@ -180,7 +180,7 @@ Check that the measurement `foo` is added in the DB.
 
 ### Supported Plugins Reference
 
--	[Input Plugins](https://docs.influxdata.com/telegraf/latest/outputs/)
+-	[Input Plugins](https://docs.influxdata.com/telegraf/latest/inputs/)
 
 -	[Output Plugins](https://docs.influxdata.com/telegraf/latest/outputs/)
 
