@@ -1,10 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.0.0-beta.704`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/0b0c26da8cb7abc1190d95acbfc5c5e1f986f685/Dockerfile)
+-	[`v1.0.0-rc1`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/7eaf03d205ba9bbd6dbcad2675516c33043f79ff/Dockerfile)
+-	[`v1.0.0-beta.704` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/0b0c26da8cb7abc1190d95acbfc5c5e1f986f685/Dockerfile)
 -	[`v1.0.0-beta.404` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/04d09c3cf006f360611fcb178d8537c318100d85/Dockerfile)
 -	[`v1.0.0-beta.392` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/7f7b1e2c7d8ca00ae07e37e64a0e305f7422f6aa/Dockerfile)
 
-[![](https://badge.imagelayers.io/traefik:latest.svg)](https://imagelayers.io/?images=traefik:v1.0.0-beta.704,traefik:v1.0.0-beta.404,traefik:v1.0.0-beta.392)
+[![](https://badge.imagelayers.io/traefik:latest.svg)](https://imagelayers.io/?images=traefik:v1.0.0-rc1,traefik:v1.0.0-beta.704,traefik:v1.0.0-beta.404,traefik:v1.0.0-beta.392)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/traefik`)](https://github.com/docker-library/official-images/blob/master/library/traefik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik).
 
