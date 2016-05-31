@@ -18,221 +18,153 @@
 ## `irssi:0.8.19`
 
 ```console
-$ docker pull library/irssi@sha256:59785f7dee9f5c8e975edf94a182b5ddf658a05a22f8973ce78dfd1f356734b4
+$ docker pull library/irssi@sha256:0f0579fdbcd49e2c536bbfb1a63d4a07f51a1d3091b03117d90bd1dd233893cf
 ```
 
--	Total Virtual Size: 257.6 MB (257572176 bytes)
--	Total v2 Content-Length: 95.7 MB (95677145 bytes)
+-	Total v2 Content-Length: 95.7 MB (95678974 bytes)
 
 ### Layers (12)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
+#### `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		libdatetime-perl \
-		libglib2.0-0 \
-		libwww-perl \
-		perl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libglib2.0-0 		libwww-perl 		perl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 00:55:20 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 96.1 MB (96073445 bytes)
--	v2 Blob: `sha256:0205dd42b62122c47b9f1b615c52963ce1286c49a5098a3925f82a1b904ea4e9`
--	v2 Content-Length: 32.3 MB (32257026 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:55 GMT
+-	Created: Tue, 24 May 2016 01:38:01 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`
+-	v2 Content-Length: 32.3 MB (32258275 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:57 GMT
 
-#### `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
+#### `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
 
 ```dockerfile
 ENV HOME=/home/user
 ```
 
--	Created: Wed, 04 May 2016 00:55:22 GMT
--	Parent Layer: `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:10 GMT
+-	Parent Layer: `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
+#### `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 
 ```dockerfile
-RUN useradd --create-home --home-dir $HOME user \
-	&& mkdir -p $HOME/.irssi \
-	&& chown -R user:user $HOME
+RUN useradd --create-home --home-dir $HOME user 	&& mkdir -p $HOME/.irssi 	&& chown -R user:user $HOME
 ```
 
--	Created: Wed, 04 May 2016 00:55:24 GMT
--	Parent Layer: `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
--	Docker Version: 1.9.1
--	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:b8e7badb81b63aadd9b54dee6b460844cf9ee33004ee5563ed35cfeee143d8be`
--	v2 Content-Length: 4.4 KB (4363 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:30 GMT
+-	Created: Tue, 24 May 2016 01:38:13 GMT
+-	Parent Layer: `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
+-	v2 Blob: `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`
+-	v2 Content-Length: 4.4 KB (4360 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:40 GMT
 
-#### `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
+#### `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
+#### `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
 
 ```dockerfile
 ENV IRSSI_VERSION=0.8.19
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
+#### `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 
 ```dockerfile
-RUN buildDeps=' \
-		autoconf \
-		automake \
-		bzip2 \
-		libglib2.0-dev \
-		libncurses-dev \
-		libperl-dev \
-		libssl-dev \
-		libtool \
-		lynx \
-		make \
-		pkg-config \
-		xz-utils \
-	' \
-	&& set -x \
-	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc \
-	&& export GNUPGHOME="$(mktemp -d)" \
-	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 \
-	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz \
-	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc \
-	&& mkdir -p /usr/src/irssi \
-	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 \
-	&& rm /tmp/irssi.tar.xz \
-	&& cd /usr/src/irssi \
-	&& ./configure \
-		--enable-true-color \
-		--with-bot \
-		--with-proxy \
-		--with-socks \
-	&& make -j$(nproc) \
-	&& make install \
-	&& rm -rf /usr/src/irssi \
-	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		autoconf 		automake 		bzip2 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		make 		pkg-config 		xz-utils 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz 	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc 	&& mkdir -p /usr/src/irssi 	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 	&& rm /tmp/irssi.tar.xz 	&& cd /usr/src/irssi 	&& ./configure 		--enable-true-color 		--with-bot 		--with-proxy 		--with-socks 	&& make -j$(nproc) 	&& make install 	&& rm -rf /usr/src/irssi 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 04 May 2016 00:57:15 GMT
--	Parent Layer: `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
--	Docker Version: 1.9.1
--	Virtual Size: 36.1 MB (36070227 bytes)
--	v2 Blob: `sha256:9563a4b0a1d0c3f9ee9c0fb9bcf32206ae07901a94e6242f5a5e839944acc176`
--	v2 Content-Length: 12.1 MB (12059645 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:16 GMT
+-	Created: Tue, 24 May 2016 01:40:15 GMT
+-	Parent Layer: `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
+-	v2 Blob: `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`
+-	v2 Content-Length: 12.1 MB (12059749 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:29 GMT
 
-#### `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
+#### `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Wed, 04 May 2016 00:57:16 GMT
--	Parent Layer: `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:18 GMT
+-	Parent Layer: `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
+#### `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 
 ```dockerfile
 VOLUME [/home/user/.irssi]
 ```
 
--	Created: Wed, 04 May 2016 00:57:17 GMT
--	Parent Layer: `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:19 GMT
+-	Parent Layer: `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+#### `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Wed, 04 May 2016 00:57:18 GMT
--	Parent Layer: `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:20 GMT
+-	Parent Layer: `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25e2433f709ff5298f4865d7ee86004d6a8e02ddbffc0a412dd565d23ef1eba1`
+#### `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
 
 ```dockerfile
 CMD ["irssi"]
 ```
 
--	Created: Wed, 04 May 2016 00:57:19 GMT
--	Parent Layer: `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+-	Created: Tue, 24 May 2016 01:40:21 GMT
+-	Parent Layer: `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -240,221 +172,153 @@ CMD ["irssi"]
 ## `irssi:0.8`
 
 ```console
-$ docker pull library/irssi@sha256:dd50bce9bcb659d7c5601a8d523752455cdea59bce5a8a890f596ff6074ad8f9
+$ docker pull library/irssi@sha256:687a6cb29fced7de80b9dbf785792024ecce59e3fc81178e2641483a98819c23
 ```
 
--	Total Virtual Size: 257.6 MB (257572176 bytes)
--	Total v2 Content-Length: 95.7 MB (95677145 bytes)
+-	Total v2 Content-Length: 95.7 MB (95678974 bytes)
 
 ### Layers (12)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
+#### `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		libdatetime-perl \
-		libglib2.0-0 \
-		libwww-perl \
-		perl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libglib2.0-0 		libwww-perl 		perl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 00:55:20 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 96.1 MB (96073445 bytes)
--	v2 Blob: `sha256:0205dd42b62122c47b9f1b615c52963ce1286c49a5098a3925f82a1b904ea4e9`
--	v2 Content-Length: 32.3 MB (32257026 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:55 GMT
+-	Created: Tue, 24 May 2016 01:38:01 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`
+-	v2 Content-Length: 32.3 MB (32258275 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:57 GMT
 
-#### `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
+#### `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
 
 ```dockerfile
 ENV HOME=/home/user
 ```
 
--	Created: Wed, 04 May 2016 00:55:22 GMT
--	Parent Layer: `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:10 GMT
+-	Parent Layer: `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
+#### `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 
 ```dockerfile
-RUN useradd --create-home --home-dir $HOME user \
-	&& mkdir -p $HOME/.irssi \
-	&& chown -R user:user $HOME
+RUN useradd --create-home --home-dir $HOME user 	&& mkdir -p $HOME/.irssi 	&& chown -R user:user $HOME
 ```
 
--	Created: Wed, 04 May 2016 00:55:24 GMT
--	Parent Layer: `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
--	Docker Version: 1.9.1
--	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:b8e7badb81b63aadd9b54dee6b460844cf9ee33004ee5563ed35cfeee143d8be`
--	v2 Content-Length: 4.4 KB (4363 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:30 GMT
+-	Created: Tue, 24 May 2016 01:38:13 GMT
+-	Parent Layer: `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
+-	v2 Blob: `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`
+-	v2 Content-Length: 4.4 KB (4360 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:40 GMT
 
-#### `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
+#### `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
+#### `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
 
 ```dockerfile
 ENV IRSSI_VERSION=0.8.19
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
+#### `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 
 ```dockerfile
-RUN buildDeps=' \
-		autoconf \
-		automake \
-		bzip2 \
-		libglib2.0-dev \
-		libncurses-dev \
-		libperl-dev \
-		libssl-dev \
-		libtool \
-		lynx \
-		make \
-		pkg-config \
-		xz-utils \
-	' \
-	&& set -x \
-	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc \
-	&& export GNUPGHOME="$(mktemp -d)" \
-	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 \
-	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz \
-	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc \
-	&& mkdir -p /usr/src/irssi \
-	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 \
-	&& rm /tmp/irssi.tar.xz \
-	&& cd /usr/src/irssi \
-	&& ./configure \
-		--enable-true-color \
-		--with-bot \
-		--with-proxy \
-		--with-socks \
-	&& make -j$(nproc) \
-	&& make install \
-	&& rm -rf /usr/src/irssi \
-	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		autoconf 		automake 		bzip2 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		make 		pkg-config 		xz-utils 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz 	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc 	&& mkdir -p /usr/src/irssi 	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 	&& rm /tmp/irssi.tar.xz 	&& cd /usr/src/irssi 	&& ./configure 		--enable-true-color 		--with-bot 		--with-proxy 		--with-socks 	&& make -j$(nproc) 	&& make install 	&& rm -rf /usr/src/irssi 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 04 May 2016 00:57:15 GMT
--	Parent Layer: `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
--	Docker Version: 1.9.1
--	Virtual Size: 36.1 MB (36070227 bytes)
--	v2 Blob: `sha256:9563a4b0a1d0c3f9ee9c0fb9bcf32206ae07901a94e6242f5a5e839944acc176`
--	v2 Content-Length: 12.1 MB (12059645 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:16 GMT
+-	Created: Tue, 24 May 2016 01:40:15 GMT
+-	Parent Layer: `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
+-	v2 Blob: `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`
+-	v2 Content-Length: 12.1 MB (12059749 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:29 GMT
 
-#### `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
+#### `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Wed, 04 May 2016 00:57:16 GMT
--	Parent Layer: `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:18 GMT
+-	Parent Layer: `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
+#### `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 
 ```dockerfile
 VOLUME [/home/user/.irssi]
 ```
 
--	Created: Wed, 04 May 2016 00:57:17 GMT
--	Parent Layer: `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:19 GMT
+-	Parent Layer: `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+#### `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Wed, 04 May 2016 00:57:18 GMT
--	Parent Layer: `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:20 GMT
+-	Parent Layer: `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25e2433f709ff5298f4865d7ee86004d6a8e02ddbffc0a412dd565d23ef1eba1`
+#### `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
 
 ```dockerfile
 CMD ["irssi"]
 ```
 
--	Created: Wed, 04 May 2016 00:57:19 GMT
--	Parent Layer: `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+-	Created: Tue, 24 May 2016 01:40:21 GMT
+-	Parent Layer: `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -462,221 +326,153 @@ CMD ["irssi"]
 ## `irssi:0`
 
 ```console
-$ docker pull library/irssi@sha256:d0cb2d261e385c33555cd38ff5d586d9ab8e96f3ec667dcaaabe0f6ca9f8bcf3
+$ docker pull library/irssi@sha256:5a97f914147a9b1d76c0af28945f8a4479a7ce5501eef7634f5ea5a94ab80022
 ```
 
--	Total Virtual Size: 257.6 MB (257572176 bytes)
--	Total v2 Content-Length: 95.7 MB (95677145 bytes)
+-	Total v2 Content-Length: 95.7 MB (95678974 bytes)
 
 ### Layers (12)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
+#### `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		libdatetime-perl \
-		libglib2.0-0 \
-		libwww-perl \
-		perl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libglib2.0-0 		libwww-perl 		perl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 00:55:20 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 96.1 MB (96073445 bytes)
--	v2 Blob: `sha256:0205dd42b62122c47b9f1b615c52963ce1286c49a5098a3925f82a1b904ea4e9`
--	v2 Content-Length: 32.3 MB (32257026 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:55 GMT
+-	Created: Tue, 24 May 2016 01:38:01 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`
+-	v2 Content-Length: 32.3 MB (32258275 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:57 GMT
 
-#### `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
+#### `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
 
 ```dockerfile
 ENV HOME=/home/user
 ```
 
--	Created: Wed, 04 May 2016 00:55:22 GMT
--	Parent Layer: `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:10 GMT
+-	Parent Layer: `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
+#### `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 
 ```dockerfile
-RUN useradd --create-home --home-dir $HOME user \
-	&& mkdir -p $HOME/.irssi \
-	&& chown -R user:user $HOME
+RUN useradd --create-home --home-dir $HOME user 	&& mkdir -p $HOME/.irssi 	&& chown -R user:user $HOME
 ```
 
--	Created: Wed, 04 May 2016 00:55:24 GMT
--	Parent Layer: `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
--	Docker Version: 1.9.1
--	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:b8e7badb81b63aadd9b54dee6b460844cf9ee33004ee5563ed35cfeee143d8be`
--	v2 Content-Length: 4.4 KB (4363 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:30 GMT
+-	Created: Tue, 24 May 2016 01:38:13 GMT
+-	Parent Layer: `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
+-	v2 Blob: `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`
+-	v2 Content-Length: 4.4 KB (4360 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:40 GMT
 
-#### `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
+#### `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
+#### `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
 
 ```dockerfile
 ENV IRSSI_VERSION=0.8.19
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
+#### `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 
 ```dockerfile
-RUN buildDeps=' \
-		autoconf \
-		automake \
-		bzip2 \
-		libglib2.0-dev \
-		libncurses-dev \
-		libperl-dev \
-		libssl-dev \
-		libtool \
-		lynx \
-		make \
-		pkg-config \
-		xz-utils \
-	' \
-	&& set -x \
-	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc \
-	&& export GNUPGHOME="$(mktemp -d)" \
-	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 \
-	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz \
-	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc \
-	&& mkdir -p /usr/src/irssi \
-	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 \
-	&& rm /tmp/irssi.tar.xz \
-	&& cd /usr/src/irssi \
-	&& ./configure \
-		--enable-true-color \
-		--with-bot \
-		--with-proxy \
-		--with-socks \
-	&& make -j$(nproc) \
-	&& make install \
-	&& rm -rf /usr/src/irssi \
-	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		autoconf 		automake 		bzip2 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		make 		pkg-config 		xz-utils 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz 	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc 	&& mkdir -p /usr/src/irssi 	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 	&& rm /tmp/irssi.tar.xz 	&& cd /usr/src/irssi 	&& ./configure 		--enable-true-color 		--with-bot 		--with-proxy 		--with-socks 	&& make -j$(nproc) 	&& make install 	&& rm -rf /usr/src/irssi 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 04 May 2016 00:57:15 GMT
--	Parent Layer: `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
--	Docker Version: 1.9.1
--	Virtual Size: 36.1 MB (36070227 bytes)
--	v2 Blob: `sha256:9563a4b0a1d0c3f9ee9c0fb9bcf32206ae07901a94e6242f5a5e839944acc176`
--	v2 Content-Length: 12.1 MB (12059645 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:16 GMT
+-	Created: Tue, 24 May 2016 01:40:15 GMT
+-	Parent Layer: `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
+-	v2 Blob: `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`
+-	v2 Content-Length: 12.1 MB (12059749 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:29 GMT
 
-#### `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
+#### `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Wed, 04 May 2016 00:57:16 GMT
--	Parent Layer: `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:18 GMT
+-	Parent Layer: `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
+#### `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 
 ```dockerfile
 VOLUME [/home/user/.irssi]
 ```
 
--	Created: Wed, 04 May 2016 00:57:17 GMT
--	Parent Layer: `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:19 GMT
+-	Parent Layer: `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+#### `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Wed, 04 May 2016 00:57:18 GMT
--	Parent Layer: `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:20 GMT
+-	Parent Layer: `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25e2433f709ff5298f4865d7ee86004d6a8e02ddbffc0a412dd565d23ef1eba1`
+#### `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
 
 ```dockerfile
 CMD ["irssi"]
 ```
 
--	Created: Wed, 04 May 2016 00:57:19 GMT
--	Parent Layer: `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+-	Created: Tue, 24 May 2016 01:40:21 GMT
+-	Parent Layer: `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -684,221 +480,153 @@ CMD ["irssi"]
 ## `irssi:latest`
 
 ```console
-$ docker pull library/irssi@sha256:3055c27b1e632c403a2d1822b1f8728de48812e17545a54659b3abf250bc9eea
+$ docker pull library/irssi@sha256:ff8f7dd368c6fec1400de375331073fe4963e1a265a835713cc8f3beabfdccb3
 ```
 
--	Total Virtual Size: 257.6 MB (257572176 bytes)
--	Total v2 Content-Length: 95.7 MB (95677145 bytes)
+-	Total v2 Content-Length: 95.7 MB (95678974 bytes)
 
 ### Layers (12)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
+#### `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		libdatetime-perl \
-		libglib2.0-0 \
-		libwww-perl \
-		perl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libglib2.0-0 		libwww-perl 		perl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 00:55:20 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 96.1 MB (96073445 bytes)
--	v2 Blob: `sha256:0205dd42b62122c47b9f1b615c52963ce1286c49a5098a3925f82a1b904ea4e9`
--	v2 Content-Length: 32.3 MB (32257026 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:55 GMT
+-	Created: Tue, 24 May 2016 01:38:01 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`
+-	v2 Content-Length: 32.3 MB (32258275 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:57 GMT
 
-#### `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
+#### `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
 
 ```dockerfile
 ENV HOME=/home/user
 ```
 
--	Created: Wed, 04 May 2016 00:55:22 GMT
--	Parent Layer: `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:10 GMT
+-	Parent Layer: `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
+#### `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 
 ```dockerfile
-RUN useradd --create-home --home-dir $HOME user \
-	&& mkdir -p $HOME/.irssi \
-	&& chown -R user:user $HOME
+RUN useradd --create-home --home-dir $HOME user 	&& mkdir -p $HOME/.irssi 	&& chown -R user:user $HOME
 ```
 
--	Created: Wed, 04 May 2016 00:55:24 GMT
--	Parent Layer: `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
--	Docker Version: 1.9.1
--	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:b8e7badb81b63aadd9b54dee6b460844cf9ee33004ee5563ed35cfeee143d8be`
--	v2 Content-Length: 4.4 KB (4363 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:30 GMT
+-	Created: Tue, 24 May 2016 01:38:13 GMT
+-	Parent Layer: `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
+-	v2 Blob: `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`
+-	v2 Content-Length: 4.4 KB (4360 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:40 GMT
 
-#### `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
+#### `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
+#### `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
 
 ```dockerfile
 ENV IRSSI_VERSION=0.8.19
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
+#### `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 
 ```dockerfile
-RUN buildDeps=' \
-		autoconf \
-		automake \
-		bzip2 \
-		libglib2.0-dev \
-		libncurses-dev \
-		libperl-dev \
-		libssl-dev \
-		libtool \
-		lynx \
-		make \
-		pkg-config \
-		xz-utils \
-	' \
-	&& set -x \
-	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc \
-	&& export GNUPGHOME="$(mktemp -d)" \
-	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 \
-	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz \
-	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc \
-	&& mkdir -p /usr/src/irssi \
-	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 \
-	&& rm /tmp/irssi.tar.xz \
-	&& cd /usr/src/irssi \
-	&& ./configure \
-		--enable-true-color \
-		--with-bot \
-		--with-proxy \
-		--with-socks \
-	&& make -j$(nproc) \
-	&& make install \
-	&& rm -rf /usr/src/irssi \
-	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		autoconf 		automake 		bzip2 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		make 		pkg-config 		xz-utils 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz 	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc 	&& mkdir -p /usr/src/irssi 	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 	&& rm /tmp/irssi.tar.xz 	&& cd /usr/src/irssi 	&& ./configure 		--enable-true-color 		--with-bot 		--with-proxy 		--with-socks 	&& make -j$(nproc) 	&& make install 	&& rm -rf /usr/src/irssi 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 04 May 2016 00:57:15 GMT
--	Parent Layer: `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
--	Docker Version: 1.9.1
--	Virtual Size: 36.1 MB (36070227 bytes)
--	v2 Blob: `sha256:9563a4b0a1d0c3f9ee9c0fb9bcf32206ae07901a94e6242f5a5e839944acc176`
--	v2 Content-Length: 12.1 MB (12059645 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:16 GMT
+-	Created: Tue, 24 May 2016 01:40:15 GMT
+-	Parent Layer: `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
+-	v2 Blob: `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`
+-	v2 Content-Length: 12.1 MB (12059749 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:29 GMT
 
-#### `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
+#### `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Wed, 04 May 2016 00:57:16 GMT
--	Parent Layer: `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:18 GMT
+-	Parent Layer: `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
+#### `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 
 ```dockerfile
 VOLUME [/home/user/.irssi]
 ```
 
--	Created: Wed, 04 May 2016 00:57:17 GMT
--	Parent Layer: `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:19 GMT
+-	Parent Layer: `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+#### `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Wed, 04 May 2016 00:57:18 GMT
--	Parent Layer: `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:20 GMT
+-	Parent Layer: `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25e2433f709ff5298f4865d7ee86004d6a8e02ddbffc0a412dd565d23ef1eba1`
+#### `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
 
 ```dockerfile
 CMD ["irssi"]
 ```
 
--	Created: Wed, 04 May 2016 00:57:19 GMT
--	Parent Layer: `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+-	Created: Tue, 24 May 2016 01:40:21 GMT
+-	Parent Layer: `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -906,221 +634,153 @@ CMD ["irssi"]
 ## `irssi:0.8.19-debian`
 
 ```console
-$ docker pull library/irssi@sha256:4838a614afab4f8370411f108c98dbdfc6ace5408c6d66fcdf30b5bc0c7a4ea9
+$ docker pull library/irssi@sha256:00eb4684818c86135ac4fea1a39703554b83ed3ef1f0e71e71cf2a4ce5aa1ff2
 ```
 
--	Total Virtual Size: 257.6 MB (257572176 bytes)
--	Total v2 Content-Length: 95.7 MB (95677145 bytes)
+-	Total v2 Content-Length: 95.7 MB (95678974 bytes)
 
 ### Layers (12)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
+#### `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		libdatetime-perl \
-		libglib2.0-0 \
-		libwww-perl \
-		perl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libglib2.0-0 		libwww-perl 		perl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 00:55:20 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 96.1 MB (96073445 bytes)
--	v2 Blob: `sha256:0205dd42b62122c47b9f1b615c52963ce1286c49a5098a3925f82a1b904ea4e9`
--	v2 Content-Length: 32.3 MB (32257026 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:55 GMT
+-	Created: Tue, 24 May 2016 01:38:01 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`
+-	v2 Content-Length: 32.3 MB (32258275 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:57 GMT
 
-#### `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
+#### `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
 
 ```dockerfile
 ENV HOME=/home/user
 ```
 
--	Created: Wed, 04 May 2016 00:55:22 GMT
--	Parent Layer: `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:10 GMT
+-	Parent Layer: `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
+#### `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 
 ```dockerfile
-RUN useradd --create-home --home-dir $HOME user \
-	&& mkdir -p $HOME/.irssi \
-	&& chown -R user:user $HOME
+RUN useradd --create-home --home-dir $HOME user 	&& mkdir -p $HOME/.irssi 	&& chown -R user:user $HOME
 ```
 
--	Created: Wed, 04 May 2016 00:55:24 GMT
--	Parent Layer: `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
--	Docker Version: 1.9.1
--	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:b8e7badb81b63aadd9b54dee6b460844cf9ee33004ee5563ed35cfeee143d8be`
--	v2 Content-Length: 4.4 KB (4363 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:30 GMT
+-	Created: Tue, 24 May 2016 01:38:13 GMT
+-	Parent Layer: `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
+-	v2 Blob: `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`
+-	v2 Content-Length: 4.4 KB (4360 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:40 GMT
 
-#### `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
+#### `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
+#### `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
 
 ```dockerfile
 ENV IRSSI_VERSION=0.8.19
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
+#### `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 
 ```dockerfile
-RUN buildDeps=' \
-		autoconf \
-		automake \
-		bzip2 \
-		libglib2.0-dev \
-		libncurses-dev \
-		libperl-dev \
-		libssl-dev \
-		libtool \
-		lynx \
-		make \
-		pkg-config \
-		xz-utils \
-	' \
-	&& set -x \
-	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc \
-	&& export GNUPGHOME="$(mktemp -d)" \
-	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 \
-	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz \
-	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc \
-	&& mkdir -p /usr/src/irssi \
-	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 \
-	&& rm /tmp/irssi.tar.xz \
-	&& cd /usr/src/irssi \
-	&& ./configure \
-		--enable-true-color \
-		--with-bot \
-		--with-proxy \
-		--with-socks \
-	&& make -j$(nproc) \
-	&& make install \
-	&& rm -rf /usr/src/irssi \
-	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		autoconf 		automake 		bzip2 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		make 		pkg-config 		xz-utils 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz 	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc 	&& mkdir -p /usr/src/irssi 	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 	&& rm /tmp/irssi.tar.xz 	&& cd /usr/src/irssi 	&& ./configure 		--enable-true-color 		--with-bot 		--with-proxy 		--with-socks 	&& make -j$(nproc) 	&& make install 	&& rm -rf /usr/src/irssi 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 04 May 2016 00:57:15 GMT
--	Parent Layer: `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
--	Docker Version: 1.9.1
--	Virtual Size: 36.1 MB (36070227 bytes)
--	v2 Blob: `sha256:9563a4b0a1d0c3f9ee9c0fb9bcf32206ae07901a94e6242f5a5e839944acc176`
--	v2 Content-Length: 12.1 MB (12059645 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:16 GMT
+-	Created: Tue, 24 May 2016 01:40:15 GMT
+-	Parent Layer: `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
+-	v2 Blob: `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`
+-	v2 Content-Length: 12.1 MB (12059749 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:29 GMT
 
-#### `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
+#### `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Wed, 04 May 2016 00:57:16 GMT
--	Parent Layer: `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:18 GMT
+-	Parent Layer: `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
+#### `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 
 ```dockerfile
 VOLUME [/home/user/.irssi]
 ```
 
--	Created: Wed, 04 May 2016 00:57:17 GMT
--	Parent Layer: `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:19 GMT
+-	Parent Layer: `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+#### `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Wed, 04 May 2016 00:57:18 GMT
--	Parent Layer: `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:20 GMT
+-	Parent Layer: `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25e2433f709ff5298f4865d7ee86004d6a8e02ddbffc0a412dd565d23ef1eba1`
+#### `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
 
 ```dockerfile
 CMD ["irssi"]
 ```
 
--	Created: Wed, 04 May 2016 00:57:19 GMT
--	Parent Layer: `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+-	Created: Tue, 24 May 2016 01:40:21 GMT
+-	Parent Layer: `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1128,221 +788,153 @@ CMD ["irssi"]
 ## `irssi:0.8-debian`
 
 ```console
-$ docker pull library/irssi@sha256:1c13db07f33c038708f35851e6b70633eb5c8c10b5fdcaaa536a01f22298f6b4
+$ docker pull library/irssi@sha256:b46498c7babcf055382ada058c688e1d104ab5215ad6224d5f68a4296f429aa4
 ```
 
--	Total Virtual Size: 257.6 MB (257572176 bytes)
--	Total v2 Content-Length: 95.7 MB (95677145 bytes)
+-	Total v2 Content-Length: 95.7 MB (95678974 bytes)
 
 ### Layers (12)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
+#### `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		libdatetime-perl \
-		libglib2.0-0 \
-		libwww-perl \
-		perl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libglib2.0-0 		libwww-perl 		perl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 00:55:20 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 96.1 MB (96073445 bytes)
--	v2 Blob: `sha256:0205dd42b62122c47b9f1b615c52963ce1286c49a5098a3925f82a1b904ea4e9`
--	v2 Content-Length: 32.3 MB (32257026 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:55 GMT
+-	Created: Tue, 24 May 2016 01:38:01 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`
+-	v2 Content-Length: 32.3 MB (32258275 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:57 GMT
 
-#### `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
+#### `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
 
 ```dockerfile
 ENV HOME=/home/user
 ```
 
--	Created: Wed, 04 May 2016 00:55:22 GMT
--	Parent Layer: `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:10 GMT
+-	Parent Layer: `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
+#### `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 
 ```dockerfile
-RUN useradd --create-home --home-dir $HOME user \
-	&& mkdir -p $HOME/.irssi \
-	&& chown -R user:user $HOME
+RUN useradd --create-home --home-dir $HOME user 	&& mkdir -p $HOME/.irssi 	&& chown -R user:user $HOME
 ```
 
--	Created: Wed, 04 May 2016 00:55:24 GMT
--	Parent Layer: `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
--	Docker Version: 1.9.1
--	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:b8e7badb81b63aadd9b54dee6b460844cf9ee33004ee5563ed35cfeee143d8be`
--	v2 Content-Length: 4.4 KB (4363 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:30 GMT
+-	Created: Tue, 24 May 2016 01:38:13 GMT
+-	Parent Layer: `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
+-	v2 Blob: `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`
+-	v2 Content-Length: 4.4 KB (4360 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:40 GMT
 
-#### `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
+#### `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
+#### `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
 
 ```dockerfile
 ENV IRSSI_VERSION=0.8.19
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
+#### `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 
 ```dockerfile
-RUN buildDeps=' \
-		autoconf \
-		automake \
-		bzip2 \
-		libglib2.0-dev \
-		libncurses-dev \
-		libperl-dev \
-		libssl-dev \
-		libtool \
-		lynx \
-		make \
-		pkg-config \
-		xz-utils \
-	' \
-	&& set -x \
-	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc \
-	&& export GNUPGHOME="$(mktemp -d)" \
-	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 \
-	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz \
-	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc \
-	&& mkdir -p /usr/src/irssi \
-	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 \
-	&& rm /tmp/irssi.tar.xz \
-	&& cd /usr/src/irssi \
-	&& ./configure \
-		--enable-true-color \
-		--with-bot \
-		--with-proxy \
-		--with-socks \
-	&& make -j$(nproc) \
-	&& make install \
-	&& rm -rf /usr/src/irssi \
-	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		autoconf 		automake 		bzip2 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		make 		pkg-config 		xz-utils 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz 	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc 	&& mkdir -p /usr/src/irssi 	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 	&& rm /tmp/irssi.tar.xz 	&& cd /usr/src/irssi 	&& ./configure 		--enable-true-color 		--with-bot 		--with-proxy 		--with-socks 	&& make -j$(nproc) 	&& make install 	&& rm -rf /usr/src/irssi 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 04 May 2016 00:57:15 GMT
--	Parent Layer: `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
--	Docker Version: 1.9.1
--	Virtual Size: 36.1 MB (36070227 bytes)
--	v2 Blob: `sha256:9563a4b0a1d0c3f9ee9c0fb9bcf32206ae07901a94e6242f5a5e839944acc176`
--	v2 Content-Length: 12.1 MB (12059645 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:16 GMT
+-	Created: Tue, 24 May 2016 01:40:15 GMT
+-	Parent Layer: `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
+-	v2 Blob: `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`
+-	v2 Content-Length: 12.1 MB (12059749 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:29 GMT
 
-#### `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
+#### `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Wed, 04 May 2016 00:57:16 GMT
--	Parent Layer: `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:18 GMT
+-	Parent Layer: `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
+#### `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 
 ```dockerfile
 VOLUME [/home/user/.irssi]
 ```
 
--	Created: Wed, 04 May 2016 00:57:17 GMT
--	Parent Layer: `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:19 GMT
+-	Parent Layer: `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+#### `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Wed, 04 May 2016 00:57:18 GMT
--	Parent Layer: `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:20 GMT
+-	Parent Layer: `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25e2433f709ff5298f4865d7ee86004d6a8e02ddbffc0a412dd565d23ef1eba1`
+#### `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
 
 ```dockerfile
 CMD ["irssi"]
 ```
 
--	Created: Wed, 04 May 2016 00:57:19 GMT
--	Parent Layer: `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+-	Created: Tue, 24 May 2016 01:40:21 GMT
+-	Parent Layer: `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1350,221 +942,153 @@ CMD ["irssi"]
 ## `irssi:0-debian`
 
 ```console
-$ docker pull library/irssi@sha256:46f0fd0ae090682d3fa72f15dccb8d448edb711be0f6ac3cb34c204a9c2151fe
+$ docker pull library/irssi@sha256:513f9d1fa3c94abac406d556a1c7ecf8523fc00c5884a6473e44a3aece3fe588
 ```
 
--	Total Virtual Size: 257.6 MB (257572176 bytes)
--	Total v2 Content-Length: 95.7 MB (95677145 bytes)
+-	Total v2 Content-Length: 95.7 MB (95678974 bytes)
 
 ### Layers (12)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
+#### `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		libdatetime-perl \
-		libglib2.0-0 \
-		libwww-perl \
-		perl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libglib2.0-0 		libwww-perl 		perl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 00:55:20 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 96.1 MB (96073445 bytes)
--	v2 Blob: `sha256:0205dd42b62122c47b9f1b615c52963ce1286c49a5098a3925f82a1b904ea4e9`
--	v2 Content-Length: 32.3 MB (32257026 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:55 GMT
+-	Created: Tue, 24 May 2016 01:38:01 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`
+-	v2 Content-Length: 32.3 MB (32258275 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:57 GMT
 
-#### `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
+#### `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
 
 ```dockerfile
 ENV HOME=/home/user
 ```
 
--	Created: Wed, 04 May 2016 00:55:22 GMT
--	Parent Layer: `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:10 GMT
+-	Parent Layer: `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
+#### `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 
 ```dockerfile
-RUN useradd --create-home --home-dir $HOME user \
-	&& mkdir -p $HOME/.irssi \
-	&& chown -R user:user $HOME
+RUN useradd --create-home --home-dir $HOME user 	&& mkdir -p $HOME/.irssi 	&& chown -R user:user $HOME
 ```
 
--	Created: Wed, 04 May 2016 00:55:24 GMT
--	Parent Layer: `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
--	Docker Version: 1.9.1
--	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:b8e7badb81b63aadd9b54dee6b460844cf9ee33004ee5563ed35cfeee143d8be`
--	v2 Content-Length: 4.4 KB (4363 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:30 GMT
+-	Created: Tue, 24 May 2016 01:38:13 GMT
+-	Parent Layer: `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
+-	v2 Blob: `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`
+-	v2 Content-Length: 4.4 KB (4360 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:40 GMT
 
-#### `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
+#### `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
+#### `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
 
 ```dockerfile
 ENV IRSSI_VERSION=0.8.19
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
+#### `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 
 ```dockerfile
-RUN buildDeps=' \
-		autoconf \
-		automake \
-		bzip2 \
-		libglib2.0-dev \
-		libncurses-dev \
-		libperl-dev \
-		libssl-dev \
-		libtool \
-		lynx \
-		make \
-		pkg-config \
-		xz-utils \
-	' \
-	&& set -x \
-	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc \
-	&& export GNUPGHOME="$(mktemp -d)" \
-	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 \
-	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz \
-	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc \
-	&& mkdir -p /usr/src/irssi \
-	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 \
-	&& rm /tmp/irssi.tar.xz \
-	&& cd /usr/src/irssi \
-	&& ./configure \
-		--enable-true-color \
-		--with-bot \
-		--with-proxy \
-		--with-socks \
-	&& make -j$(nproc) \
-	&& make install \
-	&& rm -rf /usr/src/irssi \
-	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		autoconf 		automake 		bzip2 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		make 		pkg-config 		xz-utils 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz 	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc 	&& mkdir -p /usr/src/irssi 	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 	&& rm /tmp/irssi.tar.xz 	&& cd /usr/src/irssi 	&& ./configure 		--enable-true-color 		--with-bot 		--with-proxy 		--with-socks 	&& make -j$(nproc) 	&& make install 	&& rm -rf /usr/src/irssi 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 04 May 2016 00:57:15 GMT
--	Parent Layer: `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
--	Docker Version: 1.9.1
--	Virtual Size: 36.1 MB (36070227 bytes)
--	v2 Blob: `sha256:9563a4b0a1d0c3f9ee9c0fb9bcf32206ae07901a94e6242f5a5e839944acc176`
--	v2 Content-Length: 12.1 MB (12059645 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:16 GMT
+-	Created: Tue, 24 May 2016 01:40:15 GMT
+-	Parent Layer: `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
+-	v2 Blob: `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`
+-	v2 Content-Length: 12.1 MB (12059749 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:29 GMT
 
-#### `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
+#### `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Wed, 04 May 2016 00:57:16 GMT
--	Parent Layer: `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:18 GMT
+-	Parent Layer: `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
+#### `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 
 ```dockerfile
 VOLUME [/home/user/.irssi]
 ```
 
--	Created: Wed, 04 May 2016 00:57:17 GMT
--	Parent Layer: `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:19 GMT
+-	Parent Layer: `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+#### `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Wed, 04 May 2016 00:57:18 GMT
--	Parent Layer: `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:20 GMT
+-	Parent Layer: `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25e2433f709ff5298f4865d7ee86004d6a8e02ddbffc0a412dd565d23ef1eba1`
+#### `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
 
 ```dockerfile
 CMD ["irssi"]
 ```
 
--	Created: Wed, 04 May 2016 00:57:19 GMT
--	Parent Layer: `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+-	Created: Tue, 24 May 2016 01:40:21 GMT
+-	Parent Layer: `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1572,221 +1096,153 @@ CMD ["irssi"]
 ## `irssi:debian`
 
 ```console
-$ docker pull library/irssi@sha256:a60826549bfc51f27fe2f8cd919f6e630535740794115bbcf674ecf32c7af679
+$ docker pull library/irssi@sha256:f3b8df6ba2c492389d9706dc61b2f38e0b220908d4234f74013baba8103e0baf
 ```
 
--	Total Virtual Size: 257.6 MB (257572176 bytes)
--	Total v2 Content-Length: 95.7 MB (95677145 bytes)
+-	Total v2 Content-Length: 95.7 MB (95678974 bytes)
 
 ### Layers (12)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
+#### `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		libdatetime-perl \
-		libglib2.0-0 \
-		libwww-perl \
-		perl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libglib2.0-0 		libwww-perl 		perl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 00:55:20 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 96.1 MB (96073445 bytes)
--	v2 Blob: `sha256:0205dd42b62122c47b9f1b615c52963ce1286c49a5098a3925f82a1b904ea4e9`
--	v2 Content-Length: 32.3 MB (32257026 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:55 GMT
+-	Created: Tue, 24 May 2016 01:38:01 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`
+-	v2 Content-Length: 32.3 MB (32258275 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:57 GMT
 
-#### `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
+#### `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
 
 ```dockerfile
 ENV HOME=/home/user
 ```
 
--	Created: Wed, 04 May 2016 00:55:22 GMT
--	Parent Layer: `fbe928137ff4ed7211abe2449fb28541f5c425cd9d9bb27441e1961b7e852e32`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:10 GMT
+-	Parent Layer: `a3d32575a4b671eeb208b759332db277cd96ecf2e4dd555454b318e4afd28a65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
+#### `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 
 ```dockerfile
-RUN useradd --create-home --home-dir $HOME user \
-	&& mkdir -p $HOME/.irssi \
-	&& chown -R user:user $HOME
+RUN useradd --create-home --home-dir $HOME user 	&& mkdir -p $HOME/.irssi 	&& chown -R user:user $HOME
 ```
 
--	Created: Wed, 04 May 2016 00:55:24 GMT
--	Parent Layer: `7efbbe5019c4f7503153f6df8885c74669a858a09df67199b80cf4ff11bb3be0`
--	Docker Version: 1.9.1
--	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:b8e7badb81b63aadd9b54dee6b460844cf9ee33004ee5563ed35cfeee143d8be`
--	v2 Content-Length: 4.4 KB (4363 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:30 GMT
+-	Created: Tue, 24 May 2016 01:38:13 GMT
+-	Parent Layer: `026b7d4e737e28a7d9c8e081940bb73766c0ec79a9fba606353cef11ed6879e7`
+-	v2 Blob: `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`
+-	v2 Content-Length: 4.4 KB (4360 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:40 GMT
 
-#### `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
+#### `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `a2c20c70bc5e659b2dce7a667a34fb58eb584689ad71864a724b570f6b4d7e16`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `d37c643dd7e20c600811d1493e80b9937470c9f3836780b0a5179e18388a9272`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
+#### `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
 
 ```dockerfile
 ENV IRSSI_VERSION=0.8.19
 ```
 
--	Created: Wed, 04 May 2016 00:55:25 GMT
--	Parent Layer: `f1a5e4bf9acfcc878f906e4ad986a834563d6048eaceac69fd38b5e9bacdcddf`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:38:14 GMT
+-	Parent Layer: `74a0f471606859c1e485cab16093586ed76f3ad028ca1ee1f9a779d9e7608f24`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
+#### `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 
 ```dockerfile
-RUN buildDeps=' \
-		autoconf \
-		automake \
-		bzip2 \
-		libglib2.0-dev \
-		libncurses-dev \
-		libperl-dev \
-		libssl-dev \
-		libtool \
-		lynx \
-		make \
-		pkg-config \
-		xz-utils \
-	' \
-	&& set -x \
-	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz \
-	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc \
-	&& export GNUPGHOME="$(mktemp -d)" \
-	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 \
-	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz \
-	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc \
-	&& mkdir -p /usr/src/irssi \
-	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 \
-	&& rm /tmp/irssi.tar.xz \
-	&& cd /usr/src/irssi \
-	&& ./configure \
-		--enable-true-color \
-		--with-bot \
-		--with-proxy \
-		--with-socks \
-	&& make -j$(nproc) \
-	&& make install \
-	&& rm -rf /usr/src/irssi \
-	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		autoconf 		automake 		bzip2 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		make 		pkg-config 		xz-utils 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz 	&& rm -r "$GNUPGHOME" /tmp/irssi.tar.xz.asc 	&& mkdir -p /usr/src/irssi 	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 	&& rm /tmp/irssi.tar.xz 	&& cd /usr/src/irssi 	&& ./configure 		--enable-true-color 		--with-bot 		--with-proxy 		--with-socks 	&& make -j$(nproc) 	&& make install 	&& rm -rf /usr/src/irssi 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 04 May 2016 00:57:15 GMT
--	Parent Layer: `a3778abc062619ca239031d489444716189a6207145ecd4293a8dccce87e4648`
--	Docker Version: 1.9.1
--	Virtual Size: 36.1 MB (36070227 bytes)
--	v2 Blob: `sha256:9563a4b0a1d0c3f9ee9c0fb9bcf32206ae07901a94e6242f5a5e839944acc176`
--	v2 Content-Length: 12.1 MB (12059645 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 17:46:16 GMT
+-	Created: Tue, 24 May 2016 01:40:15 GMT
+-	Parent Layer: `929a8b0754cfb8ad81ea8150d53bfd6b2dcf191d15e30baf80b134458c4471a3`
+-	v2 Blob: `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`
+-	v2 Content-Length: 12.1 MB (12059749 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:14:29 GMT
 
-#### `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
+#### `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Wed, 04 May 2016 00:57:16 GMT
--	Parent Layer: `447a35d1476491a0a0740c91e5f52d6a86b57c5711f25eb31909a81151b93d4e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:18 GMT
+-	Parent Layer: `b7fedf7f603e36f3838167530ae7d4aa0293ac19cbc2bffc0834ff94ee56be40`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
+#### `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 
 ```dockerfile
 VOLUME [/home/user/.irssi]
 ```
 
--	Created: Wed, 04 May 2016 00:57:17 GMT
--	Parent Layer: `2690a921427a4ab369090bba3ad7ff310353e8692d79693902c3067063910d30`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:19 GMT
+-	Parent Layer: `4eb7863d91765fcc3816e9cb970229fc6ce586b7b3fd2d009f9b0037281c909f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+#### `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Wed, 04 May 2016 00:57:18 GMT
--	Parent Layer: `f3ae017e69e41a7c4ffea07caee8f7fbfd221f8a6f446136d332645990d40178`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 01:40:20 GMT
+-	Parent Layer: `84ab95a8da2a4ab82f6076f880c8bc17de6381f2a0efb0606d6167f087af3ffb`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25e2433f709ff5298f4865d7ee86004d6a8e02ddbffc0a412dd565d23ef1eba1`
+#### `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
 
 ```dockerfile
 CMD ["irssi"]
 ```
 
--	Created: Wed, 04 May 2016 00:57:19 GMT
--	Parent Layer: `cdc54e9f27861191c0be7a58e12abacca6bc961ae270ccf16dcb99e0129e5a92`
+-	Created: Tue, 24 May 2016 01:40:21 GMT
+-	Parent Layer: `9db78249bc8194750697fcc3a337fe2324783931056783966f887c31640ad9f6`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

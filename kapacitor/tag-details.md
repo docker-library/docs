@@ -14,173 +14,141 @@
 ## `kapacitor:0.12`
 
 ```console
-$ docker pull library/kapacitor@sha256:ff8492152750fa108b846081a30e723f491527c083aed3a5d54d55da2e1245fc
+$ docker pull library/kapacitor@sha256:ade025cb63d348e9578e465e37e3bbd97e01cba9f5339ffe41dfbd527a0665a2
 ```
 
--	Total Virtual Size: 203.8 MB (203750417 bytes)
--	Total v2 Content-Length: 78.9 MB (78934332 bytes)
+-	Total v2 Content-Length: 78.9 MB (78935078 bytes)
 
 ### Layers (11)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
+#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 03 May 2016 21:02:53 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44302495 bytes)
--	v2 Blob: `sha256:1bb8eaf3d64393da40eac5f12a0032c8a0cf16fba6a6dd10695bde7dd8fdcf1a`
--	v2 Content-Length: 18.5 MB (18531853 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:08:31 GMT
+-	Created: Mon, 23 May 2016 23:00:26 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
+-	v2 Content-Length: 18.5 MB (18532084 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
 
-#### `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
+#### `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
 
 ```dockerfile
-RUN gpg\
-     --keyserver hkp://ha.pool.sks-keyservers.net\
-     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
+RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
 ```
 
--	Created: Thu, 12 May 2016 16:42:19 GMT
--	Parent Layer: `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
--	Docker Version: 1.9.1
--	Virtual Size: 12.6 KB (12619 bytes)
--	v2 Blob: `sha256:69034318b0f132b2d463975b65fd0e6d7f3968a28fa9a598a5e0b95e691c742a`
--	v2 Content-Length: 6.8 KB (6754 bytes)
--	v2 Last-Modified: Thu, 12 May 2016 16:47:11 GMT
+-	Created: Tue, 24 May 2016 09:51:36 GMT
+-	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+-	v2 Blob: `sha256:dde9ceb750cdfb584872e4ff32572dd4b377419bec4946bfbcbb54345a9f901e`
+-	v2 Content-Length: 6.8 KB (6753 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 16:56:36 GMT
 
-#### `35ee39236e7832c6507992948baff18afff29a805385a1c596e7d2f444bbea75`
+#### `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
 
 ```dockerfile
 ENV KAPACITOR_VERSION=0.12.0
 ```
 
--	Created: Thu, 12 May 2016 16:44:47 GMT
--	Parent Layer: `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:33:14 GMT
+-	Parent Layer: `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e7a8e55ccd454e6f15e5129c7da064e45a1f0b10d9e7084547621dd5de94206b`
+#### `ee44cd4a609f5e0b3c0c75b47d7b5a49ca241ba3715417170c7c2f45ef0a2dfd`
 
 ```dockerfile
-RUN wget -q https://s3.amazonaws.com/kapacitor/kapacitor_$KAPACITOR_VERSION-1_amd64.deb.asc &&\
-     wget -q https://s3.amazonaws.com/kapacitor/kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&\
-     gpg --batch --verify kapacitor_$KAPACITOR_VERSION-1_amd64.deb.asc kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&\
-     dpkg -i kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&\
-     rm -f kapacitor_$KAPACITOR_VERSION-1_amd64.deb*
+RUN wget -q https://s3.amazonaws.com/kapacitor/kapacitor_$KAPACITOR_VERSION-1_amd64.deb.asc &&     wget -q https://s3.amazonaws.com/kapacitor/kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&     gpg --batch --verify kapacitor_$KAPACITOR_VERSION-1_amd64.deb.asc kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&     dpkg -i kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&     rm -f kapacitor_$KAPACITOR_VERSION-1_amd64.deb*
 ```
 
--	Created: Thu, 12 May 2016 16:44:53 GMT
--	Parent Layer: `35ee39236e7832c6507992948baff18afff29a805385a1c596e7d2f444bbea75`
--	Docker Version: 1.9.1
--	Virtual Size: 34.3 MB (34341011 bytes)
--	v2 Blob: `sha256:0202a2fd797e7fa245dd67a3d39b446bb2741f384513d81112f10f0bf66bb68a`
--	v2 Content-Length: 9.0 MB (9039278 bytes)
--	v2 Last-Modified: Thu, 12 May 2016 16:49:10 GMT
+-	Created: Tue, 24 May 2016 17:33:19 GMT
+-	Parent Layer: `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
+-	v2 Blob: `sha256:451cd7457b44d61711f0e3f1d5e928267751b9866314aa4ed445243107a287df`
+-	v2 Content-Length: 9.0 MB (9039315 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:58:29 GMT
 
-#### `519041f3046bc440a0e20988024386b89082e26932b49ae2bf4760d61b740670`
+#### `4f65fd4a5dd30badb1bb46dab9ab49407ccf442df9f7a7986ec22a99e823b93e`
 
 ```dockerfile
 EXPOSE 9092/tcp
 ```
 
--	Created: Thu, 12 May 2016 16:44:53 GMT
--	Parent Layer: `e7a8e55ccd454e6f15e5129c7da064e45a1f0b10d9e7084547621dd5de94206b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:33:20 GMT
+-	Parent Layer: `ee44cd4a609f5e0b3c0c75b47d7b5a49ca241ba3715417170c7c2f45ef0a2dfd`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `af1d808b6db2765b8a7ea3a5c5fc0efa822b6cb16ee53aac50d9f6b2ebeb92d4`
+#### `0a66308a48b25159048cea7d725a86313c99e10f5fcb338085281583b5c7424c`
 
 ```dockerfile
 VOLUME [/var/lib/kapacitor]
 ```
 
--	Created: Thu, 12 May 2016 16:44:54 GMT
--	Parent Layer: `519041f3046bc440a0e20988024386b89082e26932b49ae2bf4760d61b740670`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:33:21 GMT
+-	Parent Layer: `4f65fd4a5dd30badb1bb46dab9ab49407ccf442df9f7a7986ec22a99e823b93e`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `940b7acac21c1196d268ad12a718826e6d52d2b254cd49184f21615ce3ae1d57`
+#### `6d85fd40428d42668549b94b128e24670af625a58f5b33b016e861b8f36c8dd1`
 
 ```dockerfile
 COPY file:2c382b694a52e2812bd1d1255bf853025e7a78e2bc064c6e6b97c05ca42ca9eb in /entrypoint.sh
 ```
 
--	Created: Thu, 12 May 2016 16:44:55 GMT
--	Parent Layer: `af1d808b6db2765b8a7ea3a5c5fc0efa822b6cb16ee53aac50d9f6b2ebeb92d4`
--	Docker Version: 1.9.1
--	Virtual Size: 893.0 B
+-	Created: Tue, 24 May 2016 17:33:21 GMT
+-	Parent Layer: `0a66308a48b25159048cea7d725a86313c99e10f5fcb338085281583b5c7424c`
 -	v2 Blob: `sha256:fb0de86e9d621c59b57c3658f2f01775f005fad750d8aaa7e68c7c04b929be67`
 -	v2 Content-Length: 400.0 B
 -	v2 Last-Modified: Thu, 12 May 2016 16:48:57 GMT
 
-#### `d5764646e8a6db7168e1503aae97a014da67468c1759eb93b1dafd1aa34581a9`
+#### `70725c42038eaea41e60b0c4889b5ede51278ca4740d4bef8746616fa5b04030`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Thu, 12 May 2016 16:44:55 GMT
--	Parent Layer: `940b7acac21c1196d268ad12a718826e6d52d2b254cd49184f21615ce3ae1d57`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:33:22 GMT
+-	Parent Layer: `6d85fd40428d42668549b94b128e24670af625a58f5b33b016e861b8f36c8dd1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b5df2084890672b22055ebdf8da2a64557098a88c4f0f5c2f3682b980310131e`
+#### `03bdc30da10324ccf3b54c63605b8ccfb07aa0e74eaf52cd980b1fa1e14123e4`
 
 ```dockerfile
 CMD ["kapacitord"]
 ```
 
--	Created: Thu, 12 May 2016 16:44:56 GMT
--	Parent Layer: `d5764646e8a6db7168e1503aae97a014da67468c1759eb93b1dafd1aa34581a9`
+-	Created: Tue, 24 May 2016 17:33:23 GMT
+-	Parent Layer: `70725c42038eaea41e60b0c4889b5ede51278ca4740d4bef8746616fa5b04030`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -188,173 +156,141 @@ CMD ["kapacitord"]
 ## `kapacitor:0.12.0`
 
 ```console
-$ docker pull library/kapacitor@sha256:7febbf38065d358ff3904bc39eb583f1bee35e21c135a8c565549e66af51601e
+$ docker pull library/kapacitor@sha256:5bcbe7bc995020a82bf6e08777ee50d50c48f086a868b15111a6312e8cfad3e8
 ```
 
--	Total Virtual Size: 203.8 MB (203750417 bytes)
--	Total v2 Content-Length: 78.9 MB (78934332 bytes)
+-	Total v2 Content-Length: 78.9 MB (78935078 bytes)
 
 ### Layers (11)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
+#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 03 May 2016 21:02:53 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44302495 bytes)
--	v2 Blob: `sha256:1bb8eaf3d64393da40eac5f12a0032c8a0cf16fba6a6dd10695bde7dd8fdcf1a`
--	v2 Content-Length: 18.5 MB (18531853 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:08:31 GMT
+-	Created: Mon, 23 May 2016 23:00:26 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
+-	v2 Content-Length: 18.5 MB (18532084 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
 
-#### `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
+#### `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
 
 ```dockerfile
-RUN gpg\
-     --keyserver hkp://ha.pool.sks-keyservers.net\
-     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
+RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
 ```
 
--	Created: Thu, 12 May 2016 16:42:19 GMT
--	Parent Layer: `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
--	Docker Version: 1.9.1
--	Virtual Size: 12.6 KB (12619 bytes)
--	v2 Blob: `sha256:69034318b0f132b2d463975b65fd0e6d7f3968a28fa9a598a5e0b95e691c742a`
--	v2 Content-Length: 6.8 KB (6754 bytes)
--	v2 Last-Modified: Thu, 12 May 2016 16:47:11 GMT
+-	Created: Tue, 24 May 2016 09:51:36 GMT
+-	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+-	v2 Blob: `sha256:dde9ceb750cdfb584872e4ff32572dd4b377419bec4946bfbcbb54345a9f901e`
+-	v2 Content-Length: 6.8 KB (6753 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 16:56:36 GMT
 
-#### `35ee39236e7832c6507992948baff18afff29a805385a1c596e7d2f444bbea75`
+#### `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
 
 ```dockerfile
 ENV KAPACITOR_VERSION=0.12.0
 ```
 
--	Created: Thu, 12 May 2016 16:44:47 GMT
--	Parent Layer: `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:33:14 GMT
+-	Parent Layer: `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e7a8e55ccd454e6f15e5129c7da064e45a1f0b10d9e7084547621dd5de94206b`
+#### `ee44cd4a609f5e0b3c0c75b47d7b5a49ca241ba3715417170c7c2f45ef0a2dfd`
 
 ```dockerfile
-RUN wget -q https://s3.amazonaws.com/kapacitor/kapacitor_$KAPACITOR_VERSION-1_amd64.deb.asc &&\
-     wget -q https://s3.amazonaws.com/kapacitor/kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&\
-     gpg --batch --verify kapacitor_$KAPACITOR_VERSION-1_amd64.deb.asc kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&\
-     dpkg -i kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&\
-     rm -f kapacitor_$KAPACITOR_VERSION-1_amd64.deb*
+RUN wget -q https://s3.amazonaws.com/kapacitor/kapacitor_$KAPACITOR_VERSION-1_amd64.deb.asc &&     wget -q https://s3.amazonaws.com/kapacitor/kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&     gpg --batch --verify kapacitor_$KAPACITOR_VERSION-1_amd64.deb.asc kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&     dpkg -i kapacitor_$KAPACITOR_VERSION-1_amd64.deb &&     rm -f kapacitor_$KAPACITOR_VERSION-1_amd64.deb*
 ```
 
--	Created: Thu, 12 May 2016 16:44:53 GMT
--	Parent Layer: `35ee39236e7832c6507992948baff18afff29a805385a1c596e7d2f444bbea75`
--	Docker Version: 1.9.1
--	Virtual Size: 34.3 MB (34341011 bytes)
--	v2 Blob: `sha256:0202a2fd797e7fa245dd67a3d39b446bb2741f384513d81112f10f0bf66bb68a`
--	v2 Content-Length: 9.0 MB (9039278 bytes)
--	v2 Last-Modified: Thu, 12 May 2016 16:49:10 GMT
+-	Created: Tue, 24 May 2016 17:33:19 GMT
+-	Parent Layer: `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
+-	v2 Blob: `sha256:451cd7457b44d61711f0e3f1d5e928267751b9866314aa4ed445243107a287df`
+-	v2 Content-Length: 9.0 MB (9039315 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:58:29 GMT
 
-#### `519041f3046bc440a0e20988024386b89082e26932b49ae2bf4760d61b740670`
+#### `4f65fd4a5dd30badb1bb46dab9ab49407ccf442df9f7a7986ec22a99e823b93e`
 
 ```dockerfile
 EXPOSE 9092/tcp
 ```
 
--	Created: Thu, 12 May 2016 16:44:53 GMT
--	Parent Layer: `e7a8e55ccd454e6f15e5129c7da064e45a1f0b10d9e7084547621dd5de94206b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:33:20 GMT
+-	Parent Layer: `ee44cd4a609f5e0b3c0c75b47d7b5a49ca241ba3715417170c7c2f45ef0a2dfd`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `af1d808b6db2765b8a7ea3a5c5fc0efa822b6cb16ee53aac50d9f6b2ebeb92d4`
+#### `0a66308a48b25159048cea7d725a86313c99e10f5fcb338085281583b5c7424c`
 
 ```dockerfile
 VOLUME [/var/lib/kapacitor]
 ```
 
--	Created: Thu, 12 May 2016 16:44:54 GMT
--	Parent Layer: `519041f3046bc440a0e20988024386b89082e26932b49ae2bf4760d61b740670`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:33:21 GMT
+-	Parent Layer: `4f65fd4a5dd30badb1bb46dab9ab49407ccf442df9f7a7986ec22a99e823b93e`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `940b7acac21c1196d268ad12a718826e6d52d2b254cd49184f21615ce3ae1d57`
+#### `6d85fd40428d42668549b94b128e24670af625a58f5b33b016e861b8f36c8dd1`
 
 ```dockerfile
 COPY file:2c382b694a52e2812bd1d1255bf853025e7a78e2bc064c6e6b97c05ca42ca9eb in /entrypoint.sh
 ```
 
--	Created: Thu, 12 May 2016 16:44:55 GMT
--	Parent Layer: `af1d808b6db2765b8a7ea3a5c5fc0efa822b6cb16ee53aac50d9f6b2ebeb92d4`
--	Docker Version: 1.9.1
--	Virtual Size: 893.0 B
+-	Created: Tue, 24 May 2016 17:33:21 GMT
+-	Parent Layer: `0a66308a48b25159048cea7d725a86313c99e10f5fcb338085281583b5c7424c`
 -	v2 Blob: `sha256:fb0de86e9d621c59b57c3658f2f01775f005fad750d8aaa7e68c7c04b929be67`
 -	v2 Content-Length: 400.0 B
 -	v2 Last-Modified: Thu, 12 May 2016 16:48:57 GMT
 
-#### `d5764646e8a6db7168e1503aae97a014da67468c1759eb93b1dafd1aa34581a9`
+#### `70725c42038eaea41e60b0c4889b5ede51278ca4740d4bef8746616fa5b04030`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Thu, 12 May 2016 16:44:55 GMT
--	Parent Layer: `940b7acac21c1196d268ad12a718826e6d52d2b254cd49184f21615ce3ae1d57`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:33:22 GMT
+-	Parent Layer: `6d85fd40428d42668549b94b128e24670af625a58f5b33b016e861b8f36c8dd1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b5df2084890672b22055ebdf8da2a64557098a88c4f0f5c2f3682b980310131e`
+#### `03bdc30da10324ccf3b54c63605b8ccfb07aa0e74eaf52cd980b1fa1e14123e4`
 
 ```dockerfile
 CMD ["kapacitord"]
 ```
 
--	Created: Thu, 12 May 2016 16:44:56 GMT
--	Parent Layer: `d5764646e8a6db7168e1503aae97a014da67468c1759eb93b1dafd1aa34581a9`
+-	Created: Tue, 24 May 2016 17:33:23 GMT
+-	Parent Layer: `70725c42038eaea41e60b0c4889b5ede51278ca4740d4bef8746616fa5b04030`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -362,173 +298,141 @@ CMD ["kapacitord"]
 ## `kapacitor:0.13`
 
 ```console
-$ docker pull library/kapacitor@sha256:180a79c0d2653043e49f842f6709ba2bb223772dbc1f1ef7f9da6fb7846fe069
+$ docker pull library/kapacitor@sha256:047221d877a3808efa6db4044c948cb282d0866c1a3b4f34da4be8e182e1f5f4
 ```
 
--	Total Virtual Size: 213.6 MB (213557296 bytes)
--	Total v2 Content-Length: 81.4 MB (81433402 bytes)
+-	Total v2 Content-Length: 81.4 MB (81434122 bytes)
 
 ### Layers (11)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
+#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 03 May 2016 21:02:53 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44302495 bytes)
--	v2 Blob: `sha256:1bb8eaf3d64393da40eac5f12a0032c8a0cf16fba6a6dd10695bde7dd8fdcf1a`
--	v2 Content-Length: 18.5 MB (18531853 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:08:31 GMT
+-	Created: Mon, 23 May 2016 23:00:26 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
+-	v2 Content-Length: 18.5 MB (18532084 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
 
-#### `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
+#### `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
 
 ```dockerfile
-RUN gpg\
-     --keyserver hkp://ha.pool.sks-keyservers.net\
-     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
+RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
 ```
 
--	Created: Thu, 12 May 2016 16:42:19 GMT
--	Parent Layer: `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
--	Docker Version: 1.9.1
--	Virtual Size: 12.6 KB (12619 bytes)
--	v2 Blob: `sha256:69034318b0f132b2d463975b65fd0e6d7f3968a28fa9a598a5e0b95e691c742a`
--	v2 Content-Length: 6.8 KB (6754 bytes)
--	v2 Last-Modified: Thu, 12 May 2016 16:47:11 GMT
+-	Created: Tue, 24 May 2016 09:51:36 GMT
+-	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+-	v2 Blob: `sha256:dde9ceb750cdfb584872e4ff32572dd4b377419bec4946bfbcbb54345a9f901e`
+-	v2 Content-Length: 6.8 KB (6753 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 16:56:36 GMT
 
-#### `b429f4225c48398bd8e96a539f582a2a61bdd8aabe7a0838bfd5954e6b1abaf0`
+#### `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
 
 ```dockerfile
-ENV KAPACITOR_VERSION=0.13.1
+ENV KAPACITOR_VERSION=0.12.0
 ```
 
--	Created: Mon, 16 May 2016 23:58:15 GMT
--	Parent Layer: `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:33:14 GMT
+-	Parent Layer: `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `198417a21caf5776af39e6eef709b3c49f657c8be3a752c346e15997271b9858`
+#### `e9cb2e5b5c445de3b34943664c2b217b10f856429f3f45a965894239e0699df8`
 
 ```dockerfile
-RUN wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc &&\
-     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb &&\
-     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc kapacitor_${KAPACITOR_VERSION}_amd64.deb &&\
-     dpkg -i kapacitor_${KAPACITOR_VERSION}_amd64.deb &&\
-     rm -f kapacitor_${KAPACITOR_VERSION}_amd64.deb*
+RUN wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     dpkg -i kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     rm -f kapacitor_${KAPACITOR_VERSION}_amd64.deb*
 ```
 
--	Created: Mon, 16 May 2016 23:58:18 GMT
--	Parent Layer: `b429f4225c48398bd8e96a539f582a2a61bdd8aabe7a0838bfd5954e6b1abaf0`
--	Docker Version: 1.9.1
--	Virtual Size: 44.1 MB (44148613 bytes)
--	v2 Blob: `sha256:64f88667d4ce8aded4893ddc276fa2be5a1704e2782ec8e8cb6dffe95d74b9ae`
--	v2 Content-Length: 11.5 MB (11538519 bytes)
--	v2 Last-Modified: Mon, 16 May 2016 23:59:40 GMT
+-	Created: Tue, 24 May 2016 17:34:00 GMT
+-	Parent Layer: `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
+-	v2 Blob: `sha256:af44637a61638cd5c26f5effa6a497f766443ad631670dde470d6e2006cb5340`
+-	v2 Content-Length: 11.5 MB (11538530 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:59:30 GMT
 
-#### `f43eeed0b3821fb4a6d54aae7f5dd08a0e6d3fb907187a7244a33865f3056a41`
+#### `896555ac07a670f06562b1b494deae891c66740b13672fb6899daff538b6d560`
 
 ```dockerfile
 EXPOSE 9092/tcp
 ```
 
--	Created: Mon, 16 May 2016 23:58:19 GMT
--	Parent Layer: `198417a21caf5776af39e6eef709b3c49f657c8be3a752c346e15997271b9858`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:34:01 GMT
+-	Parent Layer: `e9cb2e5b5c445de3b34943664c2b217b10f856429f3f45a965894239e0699df8`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f6a77c1af9d5e874562a4e09e27d46355386fe9cb64edcca4bd3a0ac7254ad91`
+#### `fd603c5e638315bcb760d51c9b1019ecbf6aa97390e8ece9fcc9f5b625ea264d`
 
 ```dockerfile
 VOLUME [/var/lib/kapacitor]
 ```
 
--	Created: Mon, 16 May 2016 23:58:20 GMT
--	Parent Layer: `f43eeed0b3821fb4a6d54aae7f5dd08a0e6d3fb907187a7244a33865f3056a41`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:34:01 GMT
+-	Parent Layer: `896555ac07a670f06562b1b494deae891c66740b13672fb6899daff538b6d560`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4a5cb2d3cb726b0d61fc2109a5bd4f1da7823e90d6599830e813a548a7cb395b`
+#### `2540c7b61a19e4203da81e84737b9a611e54e846982cc1860299f7821205f9c7`
 
 ```dockerfile
 COPY file:9c5bfacaa6bbb5f255b6b44350a68f9a0a12c82fcab2a739906496c6e7b4395f in /entrypoint.sh
 ```
 
--	Created: Mon, 16 May 2016 23:58:20 GMT
--	Parent Layer: `f6a77c1af9d5e874562a4e09e27d46355386fe9cb64edcca4bd3a0ac7254ad91`
--	Docker Version: 1.9.1
--	Virtual Size: 170.0 B
+-	Created: Tue, 24 May 2016 17:34:02 GMT
+-	Parent Layer: `fd603c5e638315bcb760d51c9b1019ecbf6aa97390e8ece9fcc9f5b625ea264d`
 -	v2 Blob: `sha256:24cec42d16f4cdb2093560b3cdc1d3a91499ca492df38c897a7e273617f15dd6`
 -	v2 Content-Length: 229.0 B
 -	v2 Last-Modified: Thu, 12 May 2016 23:53:26 GMT
 
-#### `b419a1b92db8e877653efc429d7677bff0f630386cd768f8dfd325b18c362337`
+#### `e9afddc265626b1d29dbd78be7e36d09b735a4dd4cce1949a48c392f8d2a9924`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 16 May 2016 23:58:21 GMT
--	Parent Layer: `4a5cb2d3cb726b0d61fc2109a5bd4f1da7823e90d6599830e813a548a7cb395b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:34:03 GMT
+-	Parent Layer: `2540c7b61a19e4203da81e84737b9a611e54e846982cc1860299f7821205f9c7`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `42892e1a6755821e409bdf4fe2649b8a6a9ddbdfa1a5b34b68b0cb670b13a073`
+#### `ed6ceda3c16045b7f5ad876297aaa1bd0a9ca601014df088fc0d62a0fa017b3d`
 
 ```dockerfile
 CMD ["kapacitord"]
 ```
 
--	Created: Mon, 16 May 2016 23:58:22 GMT
--	Parent Layer: `b419a1b92db8e877653efc429d7677bff0f630386cd768f8dfd325b18c362337`
+-	Created: Tue, 24 May 2016 17:34:04 GMT
+-	Parent Layer: `e9afddc265626b1d29dbd78be7e36d09b735a4dd4cce1949a48c392f8d2a9924`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -536,173 +440,141 @@ CMD ["kapacitord"]
 ## `kapacitor:0.13.1`
 
 ```console
-$ docker pull library/kapacitor@sha256:1aea735fdb0973120fcc9b4a59fe05f5ad895ed04abce668d45332631a365fbf
+$ docker pull library/kapacitor@sha256:9bb078ce278a8683bb47ca5e00d85343213985fdc65eb12a27175e4110255477
 ```
 
--	Total Virtual Size: 213.6 MB (213557296 bytes)
--	Total v2 Content-Length: 81.4 MB (81433402 bytes)
+-	Total v2 Content-Length: 81.4 MB (81434122 bytes)
 
 ### Layers (11)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
+#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 03 May 2016 21:02:53 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44302495 bytes)
--	v2 Blob: `sha256:1bb8eaf3d64393da40eac5f12a0032c8a0cf16fba6a6dd10695bde7dd8fdcf1a`
--	v2 Content-Length: 18.5 MB (18531853 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:08:31 GMT
+-	Created: Mon, 23 May 2016 23:00:26 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
+-	v2 Content-Length: 18.5 MB (18532084 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
 
-#### `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
+#### `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
 
 ```dockerfile
-RUN gpg\
-     --keyserver hkp://ha.pool.sks-keyservers.net\
-     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
+RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
 ```
 
--	Created: Thu, 12 May 2016 16:42:19 GMT
--	Parent Layer: `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
--	Docker Version: 1.9.1
--	Virtual Size: 12.6 KB (12619 bytes)
--	v2 Blob: `sha256:69034318b0f132b2d463975b65fd0e6d7f3968a28fa9a598a5e0b95e691c742a`
--	v2 Content-Length: 6.8 KB (6754 bytes)
--	v2 Last-Modified: Thu, 12 May 2016 16:47:11 GMT
+-	Created: Tue, 24 May 2016 09:51:36 GMT
+-	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+-	v2 Blob: `sha256:dde9ceb750cdfb584872e4ff32572dd4b377419bec4946bfbcbb54345a9f901e`
+-	v2 Content-Length: 6.8 KB (6753 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 16:56:36 GMT
 
-#### `b429f4225c48398bd8e96a539f582a2a61bdd8aabe7a0838bfd5954e6b1abaf0`
+#### `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
 
 ```dockerfile
-ENV KAPACITOR_VERSION=0.13.1
+ENV KAPACITOR_VERSION=0.12.0
 ```
 
--	Created: Mon, 16 May 2016 23:58:15 GMT
--	Parent Layer: `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:33:14 GMT
+-	Parent Layer: `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `198417a21caf5776af39e6eef709b3c49f657c8be3a752c346e15997271b9858`
+#### `e9cb2e5b5c445de3b34943664c2b217b10f856429f3f45a965894239e0699df8`
 
 ```dockerfile
-RUN wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc &&\
-     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb &&\
-     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc kapacitor_${KAPACITOR_VERSION}_amd64.deb &&\
-     dpkg -i kapacitor_${KAPACITOR_VERSION}_amd64.deb &&\
-     rm -f kapacitor_${KAPACITOR_VERSION}_amd64.deb*
+RUN wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     dpkg -i kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     rm -f kapacitor_${KAPACITOR_VERSION}_amd64.deb*
 ```
 
--	Created: Mon, 16 May 2016 23:58:18 GMT
--	Parent Layer: `b429f4225c48398bd8e96a539f582a2a61bdd8aabe7a0838bfd5954e6b1abaf0`
--	Docker Version: 1.9.1
--	Virtual Size: 44.1 MB (44148613 bytes)
--	v2 Blob: `sha256:64f88667d4ce8aded4893ddc276fa2be5a1704e2782ec8e8cb6dffe95d74b9ae`
--	v2 Content-Length: 11.5 MB (11538519 bytes)
--	v2 Last-Modified: Mon, 16 May 2016 23:59:40 GMT
+-	Created: Tue, 24 May 2016 17:34:00 GMT
+-	Parent Layer: `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
+-	v2 Blob: `sha256:af44637a61638cd5c26f5effa6a497f766443ad631670dde470d6e2006cb5340`
+-	v2 Content-Length: 11.5 MB (11538530 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:59:30 GMT
 
-#### `f43eeed0b3821fb4a6d54aae7f5dd08a0e6d3fb907187a7244a33865f3056a41`
+#### `896555ac07a670f06562b1b494deae891c66740b13672fb6899daff538b6d560`
 
 ```dockerfile
 EXPOSE 9092/tcp
 ```
 
--	Created: Mon, 16 May 2016 23:58:19 GMT
--	Parent Layer: `198417a21caf5776af39e6eef709b3c49f657c8be3a752c346e15997271b9858`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:34:01 GMT
+-	Parent Layer: `e9cb2e5b5c445de3b34943664c2b217b10f856429f3f45a965894239e0699df8`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f6a77c1af9d5e874562a4e09e27d46355386fe9cb64edcca4bd3a0ac7254ad91`
+#### `fd603c5e638315bcb760d51c9b1019ecbf6aa97390e8ece9fcc9f5b625ea264d`
 
 ```dockerfile
 VOLUME [/var/lib/kapacitor]
 ```
 
--	Created: Mon, 16 May 2016 23:58:20 GMT
--	Parent Layer: `f43eeed0b3821fb4a6d54aae7f5dd08a0e6d3fb907187a7244a33865f3056a41`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:34:01 GMT
+-	Parent Layer: `896555ac07a670f06562b1b494deae891c66740b13672fb6899daff538b6d560`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4a5cb2d3cb726b0d61fc2109a5bd4f1da7823e90d6599830e813a548a7cb395b`
+#### `2540c7b61a19e4203da81e84737b9a611e54e846982cc1860299f7821205f9c7`
 
 ```dockerfile
 COPY file:9c5bfacaa6bbb5f255b6b44350a68f9a0a12c82fcab2a739906496c6e7b4395f in /entrypoint.sh
 ```
 
--	Created: Mon, 16 May 2016 23:58:20 GMT
--	Parent Layer: `f6a77c1af9d5e874562a4e09e27d46355386fe9cb64edcca4bd3a0ac7254ad91`
--	Docker Version: 1.9.1
--	Virtual Size: 170.0 B
+-	Created: Tue, 24 May 2016 17:34:02 GMT
+-	Parent Layer: `fd603c5e638315bcb760d51c9b1019ecbf6aa97390e8ece9fcc9f5b625ea264d`
 -	v2 Blob: `sha256:24cec42d16f4cdb2093560b3cdc1d3a91499ca492df38c897a7e273617f15dd6`
 -	v2 Content-Length: 229.0 B
 -	v2 Last-Modified: Thu, 12 May 2016 23:53:26 GMT
 
-#### `b419a1b92db8e877653efc429d7677bff0f630386cd768f8dfd325b18c362337`
+#### `e9afddc265626b1d29dbd78be7e36d09b735a4dd4cce1949a48c392f8d2a9924`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 16 May 2016 23:58:21 GMT
--	Parent Layer: `4a5cb2d3cb726b0d61fc2109a5bd4f1da7823e90d6599830e813a548a7cb395b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:34:03 GMT
+-	Parent Layer: `2540c7b61a19e4203da81e84737b9a611e54e846982cc1860299f7821205f9c7`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `42892e1a6755821e409bdf4fe2649b8a6a9ddbdfa1a5b34b68b0cb670b13a073`
+#### `ed6ceda3c16045b7f5ad876297aaa1bd0a9ca601014df088fc0d62a0fa017b3d`
 
 ```dockerfile
 CMD ["kapacitord"]
 ```
 
--	Created: Mon, 16 May 2016 23:58:22 GMT
--	Parent Layer: `b419a1b92db8e877653efc429d7677bff0f630386cd768f8dfd325b18c362337`
+-	Created: Tue, 24 May 2016 17:34:04 GMT
+-	Parent Layer: `e9afddc265626b1d29dbd78be7e36d09b735a4dd4cce1949a48c392f8d2a9924`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -710,173 +582,141 @@ CMD ["kapacitord"]
 ## `kapacitor:latest`
 
 ```console
-$ docker pull library/kapacitor@sha256:f6541024dc272d2a7157bf6ecdf078e36fbe1e31c14a7f8be16f343787cb76a7
+$ docker pull library/kapacitor@sha256:69ada94816bce7d6a55f7fcaf9a9dac53e321f7285028c6435c94f0363fa53af
 ```
 
--	Total Virtual Size: 213.6 MB (213557296 bytes)
--	Total v2 Content-Length: 81.4 MB (81433402 bytes)
+-	Total v2 Content-Length: 81.4 MB (81434122 bytes)
 
 ### Layers (11)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
+#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 03 May 2016 21:02:53 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44302495 bytes)
--	v2 Blob: `sha256:1bb8eaf3d64393da40eac5f12a0032c8a0cf16fba6a6dd10695bde7dd8fdcf1a`
--	v2 Content-Length: 18.5 MB (18531853 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:08:31 GMT
+-	Created: Mon, 23 May 2016 23:00:26 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
+-	v2 Content-Length: 18.5 MB (18532084 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
 
-#### `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
+#### `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
 
 ```dockerfile
-RUN gpg\
-     --keyserver hkp://ha.pool.sks-keyservers.net\
-     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
+RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
 ```
 
--	Created: Thu, 12 May 2016 16:42:19 GMT
--	Parent Layer: `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
--	Docker Version: 1.9.1
--	Virtual Size: 12.6 KB (12619 bytes)
--	v2 Blob: `sha256:69034318b0f132b2d463975b65fd0e6d7f3968a28fa9a598a5e0b95e691c742a`
--	v2 Content-Length: 6.8 KB (6754 bytes)
--	v2 Last-Modified: Thu, 12 May 2016 16:47:11 GMT
+-	Created: Tue, 24 May 2016 09:51:36 GMT
+-	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+-	v2 Blob: `sha256:dde9ceb750cdfb584872e4ff32572dd4b377419bec4946bfbcbb54345a9f901e`
+-	v2 Content-Length: 6.8 KB (6753 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 16:56:36 GMT
 
-#### `b429f4225c48398bd8e96a539f582a2a61bdd8aabe7a0838bfd5954e6b1abaf0`
+#### `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
 
 ```dockerfile
-ENV KAPACITOR_VERSION=0.13.1
+ENV KAPACITOR_VERSION=0.12.0
 ```
 
--	Created: Mon, 16 May 2016 23:58:15 GMT
--	Parent Layer: `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:33:14 GMT
+-	Parent Layer: `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `198417a21caf5776af39e6eef709b3c49f657c8be3a752c346e15997271b9858`
+#### `e9cb2e5b5c445de3b34943664c2b217b10f856429f3f45a965894239e0699df8`
 
 ```dockerfile
-RUN wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc &&\
-     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb &&\
-     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc kapacitor_${KAPACITOR_VERSION}_amd64.deb &&\
-     dpkg -i kapacitor_${KAPACITOR_VERSION}_amd64.deb &&\
-     rm -f kapacitor_${KAPACITOR_VERSION}_amd64.deb*
+RUN wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     dpkg -i kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     rm -f kapacitor_${KAPACITOR_VERSION}_amd64.deb*
 ```
 
--	Created: Mon, 16 May 2016 23:58:18 GMT
--	Parent Layer: `b429f4225c48398bd8e96a539f582a2a61bdd8aabe7a0838bfd5954e6b1abaf0`
--	Docker Version: 1.9.1
--	Virtual Size: 44.1 MB (44148613 bytes)
--	v2 Blob: `sha256:64f88667d4ce8aded4893ddc276fa2be5a1704e2782ec8e8cb6dffe95d74b9ae`
--	v2 Content-Length: 11.5 MB (11538519 bytes)
--	v2 Last-Modified: Mon, 16 May 2016 23:59:40 GMT
+-	Created: Tue, 24 May 2016 17:34:00 GMT
+-	Parent Layer: `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
+-	v2 Blob: `sha256:af44637a61638cd5c26f5effa6a497f766443ad631670dde470d6e2006cb5340`
+-	v2 Content-Length: 11.5 MB (11538530 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 19:59:30 GMT
 
-#### `f43eeed0b3821fb4a6d54aae7f5dd08a0e6d3fb907187a7244a33865f3056a41`
+#### `896555ac07a670f06562b1b494deae891c66740b13672fb6899daff538b6d560`
 
 ```dockerfile
 EXPOSE 9092/tcp
 ```
 
--	Created: Mon, 16 May 2016 23:58:19 GMT
--	Parent Layer: `198417a21caf5776af39e6eef709b3c49f657c8be3a752c346e15997271b9858`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:34:01 GMT
+-	Parent Layer: `e9cb2e5b5c445de3b34943664c2b217b10f856429f3f45a965894239e0699df8`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f6a77c1af9d5e874562a4e09e27d46355386fe9cb64edcca4bd3a0ac7254ad91`
+#### `fd603c5e638315bcb760d51c9b1019ecbf6aa97390e8ece9fcc9f5b625ea264d`
 
 ```dockerfile
 VOLUME [/var/lib/kapacitor]
 ```
 
--	Created: Mon, 16 May 2016 23:58:20 GMT
--	Parent Layer: `f43eeed0b3821fb4a6d54aae7f5dd08a0e6d3fb907187a7244a33865f3056a41`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:34:01 GMT
+-	Parent Layer: `896555ac07a670f06562b1b494deae891c66740b13672fb6899daff538b6d560`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4a5cb2d3cb726b0d61fc2109a5bd4f1da7823e90d6599830e813a548a7cb395b`
+#### `2540c7b61a19e4203da81e84737b9a611e54e846982cc1860299f7821205f9c7`
 
 ```dockerfile
 COPY file:9c5bfacaa6bbb5f255b6b44350a68f9a0a12c82fcab2a739906496c6e7b4395f in /entrypoint.sh
 ```
 
--	Created: Mon, 16 May 2016 23:58:20 GMT
--	Parent Layer: `f6a77c1af9d5e874562a4e09e27d46355386fe9cb64edcca4bd3a0ac7254ad91`
--	Docker Version: 1.9.1
--	Virtual Size: 170.0 B
+-	Created: Tue, 24 May 2016 17:34:02 GMT
+-	Parent Layer: `fd603c5e638315bcb760d51c9b1019ecbf6aa97390e8ece9fcc9f5b625ea264d`
 -	v2 Blob: `sha256:24cec42d16f4cdb2093560b3cdc1d3a91499ca492df38c897a7e273617f15dd6`
 -	v2 Content-Length: 229.0 B
 -	v2 Last-Modified: Thu, 12 May 2016 23:53:26 GMT
 
-#### `b419a1b92db8e877653efc429d7677bff0f630386cd768f8dfd325b18c362337`
+#### `e9afddc265626b1d29dbd78be7e36d09b735a4dd4cce1949a48c392f8d2a9924`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 16 May 2016 23:58:21 GMT
--	Parent Layer: `4a5cb2d3cb726b0d61fc2109a5bd4f1da7823e90d6599830e813a548a7cb395b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 17:34:03 GMT
+-	Parent Layer: `2540c7b61a19e4203da81e84737b9a611e54e846982cc1860299f7821205f9c7`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `42892e1a6755821e409bdf4fe2649b8a6a9ddbdfa1a5b34b68b0cb670b13a073`
+#### `ed6ceda3c16045b7f5ad876297aaa1bd0a9ca601014df088fc0d62a0fa017b3d`
 
 ```dockerfile
 CMD ["kapacitord"]
 ```
 
--	Created: Mon, 16 May 2016 23:58:22 GMT
--	Parent Layer: `b419a1b92db8e877653efc429d7677bff0f630386cd768f8dfd325b18c362337`
+-	Created: Tue, 24 May 2016 17:34:04 GMT
+-	Parent Layer: `e9afddc265626b1d29dbd78be7e36d09b735a4dd4cce1949a48c392f8d2a9924`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -884,134 +724,105 @@ CMD ["kapacitord"]
 ## `kapacitor:0.13-alpine`
 
 ```console
-$ docker pull library/kapacitor@sha256:7c678ef7839d390b2bc674e6fd321057f8911c9044fcc5fdd73efffee155fbcc
+$ docker pull library/kapacitor@sha256:25552bb780b88d25c87311b9b74e8bf0db3e5fec17ec05d403d6cd5579c34878
 ```
 
--	Total Virtual Size: 34.1 MB (34089099 bytes)
 -	Total v2 Content-Length: 10.9 MB (10945141 bytes)
 
 ### Layers (8)
 
-#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+#### `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 
 ```dockerfile
 ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 ```
 
 -	Created: Fri, 06 May 2016 14:56:49 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4796783 bytes)
 -	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
 -	v2 Content-Length: 2.3 MB (2320212 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `1361d9be8d8d29d624410d20666cf6a8c178fbde5ef72e0aae202fdacc6477ed`
+#### `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 
 ```dockerfile
 ENV KAPACITOR_VERSION=0.13.1
 ```
 
 -	Created: Mon, 23 May 2016 21:45:10 GMT
--	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d3855f880b2405c39420ffbae9caabf5393cb76065d89ea89c6bd7789de62ab0`
+#### `76f827d88d89e6ceb2b639737dc5eb939749125ab19f407b181f63b7f3e5c56b`
 
 ```dockerfile
-RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&\
-     update-ca-certificates &&\
-     gpg --keyserver hkp://ha.pool.sks-keyservers.net\
-         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&\
-     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc &&\
-     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&\
-     gpg --batch --verify kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&\
-     mkdir -p /usr/src &&\
-     tar -C /usr/src -xzf kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&\
-     rm -f /usr/src/kapacitor-*/kapacitor.conf &&\
-     chmod +x /usr/src/kapacitor-*/* &&\
-     cp -a /usr/src/kapacitor-*/* /usr/bin/ &&\
-     rm -rf *.tar.gz* /usr/src /root/.gnupg &&\
-     apk del .build-deps
+RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&     update-ca-certificates &&     gpg --keyserver hkp://ha.pool.sks-keyservers.net         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     gpg --batch --verify kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     mkdir -p /usr/src &&     tar -C /usr/src -xzf kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     rm -f /usr/src/kapacitor-*/kapacitor.conf &&     chmod +x /usr/src/kapacitor-*/* &&     cp -a /usr/src/kapacitor-*/* /usr/bin/ &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps
 ```
 
 -	Created: Mon, 23 May 2016 21:45:27 GMT
--	Parent Layer: `1361d9be8d8d29d624410d20666cf6a8c178fbde5ef72e0aae202fdacc6477ed`
--	Docker Version: 1.9.1
--	Virtual Size: 29.3 MB (29292148 bytes)
+-	Parent Layer: `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 -	v2 Blob: `sha256:35bc25c3e2f15c163b578b343df8db37897b858f246257ca38d9f362aac190c2`
 -	v2 Content-Length: 8.6 MB (8624542 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 21:51:26 GMT
 
-#### `7b8fe145f92ac1c55642b5afa9419219de098af7ad01d07d9f027a702ee20648`
+#### `4c9bd041b1bba50fe355d2000ea35261dff955cded725f785a90cb0eb697d310`
 
 ```dockerfile
 EXPOSE 9092/tcp
 ```
 
 -	Created: Mon, 23 May 2016 21:45:27 GMT
--	Parent Layer: `d3855f880b2405c39420ffbae9caabf5393cb76065d89ea89c6bd7789de62ab0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `76f827d88d89e6ceb2b639737dc5eb939749125ab19f407b181f63b7f3e5c56b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f1241da16ee4c23c6e6fd42bdf242d256dba3b08eb0b1774760d91c8fd429ca8`
+#### `9f17ae93ecbd3b1b50a7d1a98b6f094aa4184efe6f55555030254c62a44731e4`
 
 ```dockerfile
 VOLUME [/var/lib/kapacitor]
 ```
 
 -	Created: Mon, 23 May 2016 21:45:28 GMT
--	Parent Layer: `7b8fe145f92ac1c55642b5afa9419219de098af7ad01d07d9f027a702ee20648`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `4c9bd041b1bba50fe355d2000ea35261dff955cded725f785a90cb0eb697d310`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e721ef062f283abcafa6a229fb805a4af4a3f7508b96ea1c1e7d011aca333305`
+#### `1ecd0b8ccc2414961411207c9e9408e2880a41184b13f32402f96c59d3c9a437`
 
 ```dockerfile
 COPY file:dd18e3954da72b37cf327a82f44f937c6c5df3763d59b099723efade6e8c9032 in /entrypoint.sh
 ```
 
 -	Created: Mon, 23 May 2016 21:45:29 GMT
--	Parent Layer: `f1241da16ee4c23c6e6fd42bdf242d256dba3b08eb0b1774760d91c8fd429ca8`
--	Docker Version: 1.9.1
--	Virtual Size: 168.0 B
+-	Parent Layer: `9f17ae93ecbd3b1b50a7d1a98b6f094aa4184efe6f55555030254c62a44731e4`
 -	v2 Blob: `sha256:097eb3d76c74ed0cb1c0e74f99f44c903f86048765f66874b476f26ac36b6f75`
 -	v2 Content-Length: 227.0 B
 -	v2 Last-Modified: Mon, 23 May 2016 21:51:15 GMT
 
-#### `a6fff60fa3258a83422149a87ccbc135e342bdd87f54a7e9ec965af8da9205c0`
+#### `1b722e1bf1e2bc3b218a31d019d924310da1ef55887a66ac289280c68cc9e681`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
 -	Created: Mon, 23 May 2016 21:45:30 GMT
--	Parent Layer: `e721ef062f283abcafa6a229fb805a4af4a3f7508b96ea1c1e7d011aca333305`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `1ecd0b8ccc2414961411207c9e9408e2880a41184b13f32402f96c59d3c9a437`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `632ca026355f6f733a4063a7bd1dd6fc005d2b55d95bccb53739319ad4fa3fbe`
+#### `56389ece133d552c92fe669cda93d5903dee6ceb12de753251b216263ded5e8a`
 
 ```dockerfile
 CMD ["kapacitord"]
 ```
 
 -	Created: Mon, 23 May 2016 21:45:31 GMT
--	Parent Layer: `a6fff60fa3258a83422149a87ccbc135e342bdd87f54a7e9ec965af8da9205c0`
+-	Parent Layer: `1b722e1bf1e2bc3b218a31d019d924310da1ef55887a66ac289280c68cc9e681`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1019,134 +830,105 @@ CMD ["kapacitord"]
 ## `kapacitor:0.13.0-alpine`
 
 ```console
-$ docker pull library/kapacitor@sha256:b89cc4878bef2558819c7a8c210ad4073ccb9e15e1274242aab2932bc3671245
+$ docker pull library/kapacitor@sha256:532e31d1c04f02d8e415d7398df0c4c956a31240cebf548e47fe499ec28068de
 ```
 
--	Total Virtual Size: 34.1 MB (34089099 bytes)
 -	Total v2 Content-Length: 10.9 MB (10945141 bytes)
 
 ### Layers (8)
 
-#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+#### `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 
 ```dockerfile
 ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 ```
 
 -	Created: Fri, 06 May 2016 14:56:49 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4796783 bytes)
 -	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
 -	v2 Content-Length: 2.3 MB (2320212 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `1361d9be8d8d29d624410d20666cf6a8c178fbde5ef72e0aae202fdacc6477ed`
+#### `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 
 ```dockerfile
 ENV KAPACITOR_VERSION=0.13.1
 ```
 
 -	Created: Mon, 23 May 2016 21:45:10 GMT
--	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d3855f880b2405c39420ffbae9caabf5393cb76065d89ea89c6bd7789de62ab0`
+#### `76f827d88d89e6ceb2b639737dc5eb939749125ab19f407b181f63b7f3e5c56b`
 
 ```dockerfile
-RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&\
-     update-ca-certificates &&\
-     gpg --keyserver hkp://ha.pool.sks-keyservers.net\
-         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&\
-     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc &&\
-     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&\
-     gpg --batch --verify kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&\
-     mkdir -p /usr/src &&\
-     tar -C /usr/src -xzf kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&\
-     rm -f /usr/src/kapacitor-*/kapacitor.conf &&\
-     chmod +x /usr/src/kapacitor-*/* &&\
-     cp -a /usr/src/kapacitor-*/* /usr/bin/ &&\
-     rm -rf *.tar.gz* /usr/src /root/.gnupg &&\
-     apk del .build-deps
+RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&     update-ca-certificates &&     gpg --keyserver hkp://ha.pool.sks-keyservers.net         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     gpg --batch --verify kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     mkdir -p /usr/src &&     tar -C /usr/src -xzf kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     rm -f /usr/src/kapacitor-*/kapacitor.conf &&     chmod +x /usr/src/kapacitor-*/* &&     cp -a /usr/src/kapacitor-*/* /usr/bin/ &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps
 ```
 
 -	Created: Mon, 23 May 2016 21:45:27 GMT
--	Parent Layer: `1361d9be8d8d29d624410d20666cf6a8c178fbde5ef72e0aae202fdacc6477ed`
--	Docker Version: 1.9.1
--	Virtual Size: 29.3 MB (29292148 bytes)
+-	Parent Layer: `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 -	v2 Blob: `sha256:35bc25c3e2f15c163b578b343df8db37897b858f246257ca38d9f362aac190c2`
 -	v2 Content-Length: 8.6 MB (8624542 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 21:51:26 GMT
 
-#### `7b8fe145f92ac1c55642b5afa9419219de098af7ad01d07d9f027a702ee20648`
+#### `4c9bd041b1bba50fe355d2000ea35261dff955cded725f785a90cb0eb697d310`
 
 ```dockerfile
 EXPOSE 9092/tcp
 ```
 
 -	Created: Mon, 23 May 2016 21:45:27 GMT
--	Parent Layer: `d3855f880b2405c39420ffbae9caabf5393cb76065d89ea89c6bd7789de62ab0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `76f827d88d89e6ceb2b639737dc5eb939749125ab19f407b181f63b7f3e5c56b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f1241da16ee4c23c6e6fd42bdf242d256dba3b08eb0b1774760d91c8fd429ca8`
+#### `9f17ae93ecbd3b1b50a7d1a98b6f094aa4184efe6f55555030254c62a44731e4`
 
 ```dockerfile
 VOLUME [/var/lib/kapacitor]
 ```
 
 -	Created: Mon, 23 May 2016 21:45:28 GMT
--	Parent Layer: `7b8fe145f92ac1c55642b5afa9419219de098af7ad01d07d9f027a702ee20648`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `4c9bd041b1bba50fe355d2000ea35261dff955cded725f785a90cb0eb697d310`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e721ef062f283abcafa6a229fb805a4af4a3f7508b96ea1c1e7d011aca333305`
+#### `1ecd0b8ccc2414961411207c9e9408e2880a41184b13f32402f96c59d3c9a437`
 
 ```dockerfile
 COPY file:dd18e3954da72b37cf327a82f44f937c6c5df3763d59b099723efade6e8c9032 in /entrypoint.sh
 ```
 
 -	Created: Mon, 23 May 2016 21:45:29 GMT
--	Parent Layer: `f1241da16ee4c23c6e6fd42bdf242d256dba3b08eb0b1774760d91c8fd429ca8`
--	Docker Version: 1.9.1
--	Virtual Size: 168.0 B
+-	Parent Layer: `9f17ae93ecbd3b1b50a7d1a98b6f094aa4184efe6f55555030254c62a44731e4`
 -	v2 Blob: `sha256:097eb3d76c74ed0cb1c0e74f99f44c903f86048765f66874b476f26ac36b6f75`
 -	v2 Content-Length: 227.0 B
 -	v2 Last-Modified: Mon, 23 May 2016 21:51:15 GMT
 
-#### `a6fff60fa3258a83422149a87ccbc135e342bdd87f54a7e9ec965af8da9205c0`
+#### `1b722e1bf1e2bc3b218a31d019d924310da1ef55887a66ac289280c68cc9e681`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
 -	Created: Mon, 23 May 2016 21:45:30 GMT
--	Parent Layer: `e721ef062f283abcafa6a229fb805a4af4a3f7508b96ea1c1e7d011aca333305`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `1ecd0b8ccc2414961411207c9e9408e2880a41184b13f32402f96c59d3c9a437`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `632ca026355f6f733a4063a7bd1dd6fc005d2b55d95bccb53739319ad4fa3fbe`
+#### `56389ece133d552c92fe669cda93d5903dee6ceb12de753251b216263ded5e8a`
 
 ```dockerfile
 CMD ["kapacitord"]
 ```
 
 -	Created: Mon, 23 May 2016 21:45:31 GMT
--	Parent Layer: `a6fff60fa3258a83422149a87ccbc135e342bdd87f54a7e9ec965af8da9205c0`
+-	Parent Layer: `1b722e1bf1e2bc3b218a31d019d924310da1ef55887a66ac289280c68cc9e681`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1154,134 +936,105 @@ CMD ["kapacitord"]
 ## `kapacitor:alpine`
 
 ```console
-$ docker pull library/kapacitor@sha256:0338e27b0212f3a1d31e6c9fd28d69cf23c2c12ddf578708000f020b396b7bf6
+$ docker pull library/kapacitor@sha256:d9432f9363284f056d27058aafd44f8a0643c3f10efff140239d8e20a50f2f5a
 ```
 
--	Total Virtual Size: 34.1 MB (34089099 bytes)
 -	Total v2 Content-Length: 10.9 MB (10945141 bytes)
 
 ### Layers (8)
 
-#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+#### `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 
 ```dockerfile
 ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 ```
 
 -	Created: Fri, 06 May 2016 14:56:49 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4796783 bytes)
 -	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
 -	v2 Content-Length: 2.3 MB (2320212 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `1361d9be8d8d29d624410d20666cf6a8c178fbde5ef72e0aae202fdacc6477ed`
+#### `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 
 ```dockerfile
 ENV KAPACITOR_VERSION=0.13.1
 ```
 
 -	Created: Mon, 23 May 2016 21:45:10 GMT
--	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d3855f880b2405c39420ffbae9caabf5393cb76065d89ea89c6bd7789de62ab0`
+#### `76f827d88d89e6ceb2b639737dc5eb939749125ab19f407b181f63b7f3e5c56b`
 
 ```dockerfile
-RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&\
-     update-ca-certificates &&\
-     gpg --keyserver hkp://ha.pool.sks-keyservers.net\
-         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&\
-     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc &&\
-     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&\
-     gpg --batch --verify kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&\
-     mkdir -p /usr/src &&\
-     tar -C /usr/src -xzf kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&\
-     rm -f /usr/src/kapacitor-*/kapacitor.conf &&\
-     chmod +x /usr/src/kapacitor-*/* &&\
-     cp -a /usr/src/kapacitor-*/* /usr/bin/ &&\
-     rm -rf *.tar.gz* /usr/src /root/.gnupg &&\
-     apk del .build-deps
+RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&     update-ca-certificates &&     gpg --keyserver hkp://ha.pool.sks-keyservers.net         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     gpg --batch --verify kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     mkdir -p /usr/src &&     tar -C /usr/src -xzf kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     rm -f /usr/src/kapacitor-*/kapacitor.conf &&     chmod +x /usr/src/kapacitor-*/* &&     cp -a /usr/src/kapacitor-*/* /usr/bin/ &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps
 ```
 
 -	Created: Mon, 23 May 2016 21:45:27 GMT
--	Parent Layer: `1361d9be8d8d29d624410d20666cf6a8c178fbde5ef72e0aae202fdacc6477ed`
--	Docker Version: 1.9.1
--	Virtual Size: 29.3 MB (29292148 bytes)
+-	Parent Layer: `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 -	v2 Blob: `sha256:35bc25c3e2f15c163b578b343df8db37897b858f246257ca38d9f362aac190c2`
 -	v2 Content-Length: 8.6 MB (8624542 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 21:51:26 GMT
 
-#### `7b8fe145f92ac1c55642b5afa9419219de098af7ad01d07d9f027a702ee20648`
+#### `4c9bd041b1bba50fe355d2000ea35261dff955cded725f785a90cb0eb697d310`
 
 ```dockerfile
 EXPOSE 9092/tcp
 ```
 
 -	Created: Mon, 23 May 2016 21:45:27 GMT
--	Parent Layer: `d3855f880b2405c39420ffbae9caabf5393cb76065d89ea89c6bd7789de62ab0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `76f827d88d89e6ceb2b639737dc5eb939749125ab19f407b181f63b7f3e5c56b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f1241da16ee4c23c6e6fd42bdf242d256dba3b08eb0b1774760d91c8fd429ca8`
+#### `9f17ae93ecbd3b1b50a7d1a98b6f094aa4184efe6f55555030254c62a44731e4`
 
 ```dockerfile
 VOLUME [/var/lib/kapacitor]
 ```
 
 -	Created: Mon, 23 May 2016 21:45:28 GMT
--	Parent Layer: `7b8fe145f92ac1c55642b5afa9419219de098af7ad01d07d9f027a702ee20648`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `4c9bd041b1bba50fe355d2000ea35261dff955cded725f785a90cb0eb697d310`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e721ef062f283abcafa6a229fb805a4af4a3f7508b96ea1c1e7d011aca333305`
+#### `1ecd0b8ccc2414961411207c9e9408e2880a41184b13f32402f96c59d3c9a437`
 
 ```dockerfile
 COPY file:dd18e3954da72b37cf327a82f44f937c6c5df3763d59b099723efade6e8c9032 in /entrypoint.sh
 ```
 
 -	Created: Mon, 23 May 2016 21:45:29 GMT
--	Parent Layer: `f1241da16ee4c23c6e6fd42bdf242d256dba3b08eb0b1774760d91c8fd429ca8`
--	Docker Version: 1.9.1
--	Virtual Size: 168.0 B
+-	Parent Layer: `9f17ae93ecbd3b1b50a7d1a98b6f094aa4184efe6f55555030254c62a44731e4`
 -	v2 Blob: `sha256:097eb3d76c74ed0cb1c0e74f99f44c903f86048765f66874b476f26ac36b6f75`
 -	v2 Content-Length: 227.0 B
 -	v2 Last-Modified: Mon, 23 May 2016 21:51:15 GMT
 
-#### `a6fff60fa3258a83422149a87ccbc135e342bdd87f54a7e9ec965af8da9205c0`
+#### `1b722e1bf1e2bc3b218a31d019d924310da1ef55887a66ac289280c68cc9e681`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
 -	Created: Mon, 23 May 2016 21:45:30 GMT
--	Parent Layer: `e721ef062f283abcafa6a229fb805a4af4a3f7508b96ea1c1e7d011aca333305`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `1ecd0b8ccc2414961411207c9e9408e2880a41184b13f32402f96c59d3c9a437`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `632ca026355f6f733a4063a7bd1dd6fc005d2b55d95bccb53739319ad4fa3fbe`
+#### `56389ece133d552c92fe669cda93d5903dee6ceb12de753251b216263ded5e8a`
 
 ```dockerfile
 CMD ["kapacitord"]
 ```
 
 -	Created: Mon, 23 May 2016 21:45:31 GMT
--	Parent Layer: `a6fff60fa3258a83422149a87ccbc135e342bdd87f54a7e9ec965af8da9205c0`
+-	Parent Layer: `1b722e1bf1e2bc3b218a31d019d924310da1ef55887a66ac289280c68cc9e681`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
