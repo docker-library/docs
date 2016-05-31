@@ -46,439 +46,365 @@
 ## `mono:3.10.0`
 
 ```console
-$ docker pull library/mono@sha256:bdbe1f32d341b31c05a87ed675582569e9f7144b54f519c31b55d8d37dbfa3e9
+$ docker pull library/mono@sha256:5c2815fdaf8ed6c8ff0ae76c03833b78e5ce4d9316ba4b87b30663494464855d
 ```
 
--	Total Virtual Size: 333.9 MB (333918698 bytes)
--	Total v2 Content-Length: 124.4 MB (124351630 bytes)
+-	Total v2 Content-Length: 124.4 MB (124350806 bytes)
 
 ### Layers (7)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `d516a816d724961f576c5ce5b6811734696ffb4fe4b053e76299b6c48c3f7650`
+#### `4924a5cb902a37dcdec895ea8e6bbc7a6df532fda0dd9234daa991f588b057df`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 310-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 310-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:03:00 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 234.7 MB (234719172 bytes)
--	v2 Blob: `sha256:61f84866eef52dd6719353dd2bebe7020c34171afb12455bd32a4e8593162d6d`
--	v2 Content-Length: 79.5 MB (79471302 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:48 GMT
+-	Created: Tue, 24 May 2016 03:22:58 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:a9ddd05a2da4a8c6e9165dc56b303d007df4d73028d90e11c1f0761a50d5be2f`
+-	v2 Content-Length: 79.5 MB (79470145 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 20:59:54 GMT
 
-#### `5a4b01be5d9e79c3e33eaa27499f99380caed60a4573170f3b7302dfa99c6c8c`
+#### `9f19080b729f0cc7744fbdbae5f6dea0ba5393752652a411fa7eb2c97e1a5b5d`
 
 ```dockerfile
 RUN mozroots --machine --import --sync --quiet
 ```
 
--	Created: Wed, 04 May 2016 02:03:04 GMT
--	Parent Layer: `d516a816d724961f576c5ce5b6811734696ffb4fe4b053e76299b6c48c3f7650`
+-	Created: Tue, 24 May 2016 03:23:10 GMT
+-	Parent Layer: `4924a5cb902a37dcdec895ea8e6bbc7a6df532fda0dd9234daa991f588b057df`
 -	Docker Version: 1.9.1
--	Virtual Size: 153.2 KB (153179 bytes)
--	v2 Blob: `sha256:1bb7362a96b5cac15297362eb02146367e0dfeb88a367d5ef1850f917a0da444`
--	v2 Content-Length: 101.1 KB (101055 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:03 GMT
+-	v2 Blob: `sha256:d1b628b5284ecac61aa79ea6e52611597a64f702de37b611cf583eb512587c0a`
+-	v2 Content-Length: 101.1 KB (101052 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 20:59:02 GMT
 
 ## `mono:3.10`
 
 ```console
-$ docker pull library/mono@sha256:96f0f7d4494c6257d4712f2d2d36c8d6cd70e48b2766c86ebdaef5c0657e2fa4
+$ docker pull library/mono@sha256:9101cc9d45d6b5b41578ce310d9e7d5f699d013f76ba342cfc2e3286e948abf4
 ```
 
--	Total Virtual Size: 333.9 MB (333918698 bytes)
--	Total v2 Content-Length: 124.4 MB (124351630 bytes)
+-	Total v2 Content-Length: 124.4 MB (124350806 bytes)
 
 ### Layers (7)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `d516a816d724961f576c5ce5b6811734696ffb4fe4b053e76299b6c48c3f7650`
+#### `4924a5cb902a37dcdec895ea8e6bbc7a6df532fda0dd9234daa991f588b057df`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 310-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 310-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:03:00 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 234.7 MB (234719172 bytes)
--	v2 Blob: `sha256:61f84866eef52dd6719353dd2bebe7020c34171afb12455bd32a4e8593162d6d`
--	v2 Content-Length: 79.5 MB (79471302 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:48 GMT
+-	Created: Tue, 24 May 2016 03:22:58 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:a9ddd05a2da4a8c6e9165dc56b303d007df4d73028d90e11c1f0761a50d5be2f`
+-	v2 Content-Length: 79.5 MB (79470145 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 20:59:54 GMT
 
-#### `5a4b01be5d9e79c3e33eaa27499f99380caed60a4573170f3b7302dfa99c6c8c`
+#### `9f19080b729f0cc7744fbdbae5f6dea0ba5393752652a411fa7eb2c97e1a5b5d`
 
 ```dockerfile
 RUN mozroots --machine --import --sync --quiet
 ```
 
--	Created: Wed, 04 May 2016 02:03:04 GMT
--	Parent Layer: `d516a816d724961f576c5ce5b6811734696ffb4fe4b053e76299b6c48c3f7650`
+-	Created: Tue, 24 May 2016 03:23:10 GMT
+-	Parent Layer: `4924a5cb902a37dcdec895ea8e6bbc7a6df532fda0dd9234daa991f588b057df`
 -	Docker Version: 1.9.1
--	Virtual Size: 153.2 KB (153179 bytes)
--	v2 Blob: `sha256:1bb7362a96b5cac15297362eb02146367e0dfeb88a367d5ef1850f917a0da444`
--	v2 Content-Length: 101.1 KB (101055 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:03 GMT
+-	v2 Blob: `sha256:d1b628b5284ecac61aa79ea6e52611597a64f702de37b611cf583eb512587c0a`
+-	v2 Content-Length: 101.1 KB (101052 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 20:59:02 GMT
 
 ## `mono:3.10.0-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:d722291042856ead888d8b16696133bce12450a929185702b7a44c4f8fb0d8f9
+$ docker pull library/mono@sha256:c3c63f3634824cff159aa62976e005a1c1417b55c9816e8155729b0fdaa4a60f
 ```
 
--	Total Virtual Size: 333.9 MB (333918698 bytes)
--	Total v2 Content-Length: 124.4 MB (124351986 bytes)
+-	Total v2 Content-Length: 124.4 MB (124351162 bytes)
 
 ### Layers (14)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `d516a816d724961f576c5ce5b6811734696ffb4fe4b053e76299b6c48c3f7650`
+#### `4924a5cb902a37dcdec895ea8e6bbc7a6df532fda0dd9234daa991f588b057df`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 310-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 310-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:03:00 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 234.7 MB (234719172 bytes)
--	v2 Blob: `sha256:61f84866eef52dd6719353dd2bebe7020c34171afb12455bd32a4e8593162d6d`
--	v2 Content-Length: 79.5 MB (79471302 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:48 GMT
+-	Created: Tue, 24 May 2016 03:22:58 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:a9ddd05a2da4a8c6e9165dc56b303d007df4d73028d90e11c1f0761a50d5be2f`
+-	v2 Content-Length: 79.5 MB (79470145 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 20:59:54 GMT
 
-#### `5a4b01be5d9e79c3e33eaa27499f99380caed60a4573170f3b7302dfa99c6c8c`
+#### `90642bb78eacb97a94c0d986075a0778c6e08043cd1f45d24159e92a162782e2`
 
 ```dockerfile
 RUN mozroots --machine --import --sync --quiet
 ```
 
--	Created: Wed, 04 May 2016 02:03:04 GMT
--	Parent Layer: `d516a816d724961f576c5ce5b6811734696ffb4fe4b053e76299b6c48c3f7650`
--	Docker Version: 1.9.1
--	Virtual Size: 153.2 KB (153179 bytes)
--	v2 Blob: `sha256:1bb7362a96b5cac15297362eb02146367e0dfeb88a367d5ef1850f917a0da444`
--	v2 Content-Length: 101.1 KB (101055 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:03 GMT
+-	Created: Tue, 24 May 2016 03:23:10 GMT
+-	Parent Layer: `4924a5cb902a37dcdec895ea8e6bbc7a6df532fda0dd9234daa991f588b057df`
+-	v2 Blob: `sha256:d1b628b5284ecac61aa79ea6e52611597a64f702de37b611cf583eb512587c0a`
+-	v2 Content-Length: 101.1 KB (101052 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 20:59:02 GMT
 
-#### `5f46ceb14fc74142b05a1e1169beaa053ab065a2b414bfcbca7451a87bc07657`
+#### `bc2782bad405616d60f4fbd9f11d18367341be50665f9687b844d275e6342298`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:03:22 GMT
--	Parent Layer: `5a4b01be5d9e79c3e33eaa27499f99380caed60a4573170f3b7302dfa99c6c8c`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:23:46 GMT
+-	Parent Layer: `90642bb78eacb97a94c0d986075a0778c6e08043cd1f45d24159e92a162782e2`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cdd22a8390fb3a700ce951ef0a34455713411cf63cd33f340f2e69ed8b6fd79d`
+#### `6d4b4fe83d3be8e4a8db2119d6a7f29b35079c59d6619f7ca2e68857ffcaa037`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:03:23 GMT
--	Parent Layer: `5f46ceb14fc74142b05a1e1169beaa053ab065a2b414bfcbca7451a87bc07657`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:db39674e18f3f7282ec56fa6c9252d9f0161099db293be4363084628d7079ba8`
+-	Created: Tue, 24 May 2016 03:23:48 GMT
+-	Parent Layer: `bc2782bad405616d60f4fbd9f11d18367341be50665f9687b844d275e6342298`
+-	v2 Blob: `sha256:cf84839ffa9965fa6833e3be9737478733bb43b4f93a4fcc2f46a30bf608950c`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:16:37 GMT
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:52 GMT
 
-#### `cfafc4fcc6181c0d546a2aa6bd4609a9f87429999a8c2876a9b3bc51bcd39683`
+#### `43313df33c3487a3408461bae3a3ab0a5a8e40a36c990bbeae12f798bf6fddcd`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:03:24 GMT
--	Parent Layer: `cdd22a8390fb3a700ce951ef0a34455713411cf63cd33f340f2e69ed8b6fd79d`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:23:49 GMT
+-	Parent Layer: `6d4b4fe83d3be8e4a8db2119d6a7f29b35079c59d6619f7ca2e68857ffcaa037`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fc126ac6032a3ded3ecc6e649243659588232123bbfa1a700b4bb8850a704b8b`
+#### `bf25e237b9769d32235b12570569e13500e8c86f22e2d2ca9db12249fd106d8d`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:03:25 GMT
--	Parent Layer: `cfafc4fcc6181c0d546a2aa6bd4609a9f87429999a8c2876a9b3bc51bcd39683`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:23:50 GMT
+-	Parent Layer: `43313df33c3487a3408461bae3a3ab0a5a8e40a36c990bbeae12f798bf6fddcd`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `711b52a3676416f7c2313d116d340b856c5036afdf009b54074c562675d3a9cc`
+#### `e67cf89aa615a1a4c7bcefc365215ac23fbac4b6ef5698a441fc833a608f1a3b`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:03:25 GMT
--	Parent Layer: `fc126ac6032a3ded3ecc6e649243659588232123bbfa1a700b4bb8850a704b8b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:23:51 GMT
+-	Parent Layer: `bf25e237b9769d32235b12570569e13500e8c86f22e2d2ca9db12249fd106d8d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3cab7fe976e2d9442be1bf5eee5ff6ad5d89b4de79dec4b503a2b3f81186f206`
+#### `1d2cb77cf1f9a3dffe9c848a97254e8a3581d403c3a83ffe9e5587301ce55fed`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:03:26 GMT
--	Parent Layer: `711b52a3676416f7c2313d116d340b856c5036afdf009b54074c562675d3a9cc`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:23:52 GMT
+-	Parent Layer: `e67cf89aa615a1a4c7bcefc365215ac23fbac4b6ef5698a441fc833a608f1a3b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b5b14d89cffee9ddd6996b1922966bb35263da899c13d29d17a9845ec50717c9`
+#### `a6f3248cc2958b45c469d3d44014ca81788e7ab411ad8f0fdc75248e62bfd101`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:03:27 GMT
--	Parent Layer: `3cab7fe976e2d9442be1bf5eee5ff6ad5d89b4de79dec4b503a2b3f81186f206`
+-	Created: Tue, 24 May 2016 03:23:52 GMT
+-	Parent Layer: `1d2cb77cf1f9a3dffe9c848a97254e8a3581d403c3a83ffe9e5587301ce55fed`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -486,211 +412,177 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:3.10-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:de71fa09beaa00cc4371908aa1e7b141d24df74e4379e3e5258da9d7b7c3aef9
+$ docker pull library/mono@sha256:f80c6ed335b0355897dd4212830ff517bb9122aba189e5aca1fdd51e02e7e402
 ```
 
--	Total Virtual Size: 333.9 MB (333918698 bytes)
--	Total v2 Content-Length: 124.4 MB (124351986 bytes)
+-	Total v2 Content-Length: 124.4 MB (124351162 bytes)
 
 ### Layers (14)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `d516a816d724961f576c5ce5b6811734696ffb4fe4b053e76299b6c48c3f7650`
+#### `4924a5cb902a37dcdec895ea8e6bbc7a6df532fda0dd9234daa991f588b057df`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 310-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 310-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:03:00 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 234.7 MB (234719172 bytes)
--	v2 Blob: `sha256:61f84866eef52dd6719353dd2bebe7020c34171afb12455bd32a4e8593162d6d`
--	v2 Content-Length: 79.5 MB (79471302 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:48 GMT
+-	Created: Tue, 24 May 2016 03:22:58 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:a9ddd05a2da4a8c6e9165dc56b303d007df4d73028d90e11c1f0761a50d5be2f`
+-	v2 Content-Length: 79.5 MB (79470145 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 20:59:54 GMT
 
-#### `5a4b01be5d9e79c3e33eaa27499f99380caed60a4573170f3b7302dfa99c6c8c`
+#### `90642bb78eacb97a94c0d986075a0778c6e08043cd1f45d24159e92a162782e2`
 
 ```dockerfile
 RUN mozroots --machine --import --sync --quiet
 ```
 
--	Created: Wed, 04 May 2016 02:03:04 GMT
--	Parent Layer: `d516a816d724961f576c5ce5b6811734696ffb4fe4b053e76299b6c48c3f7650`
--	Docker Version: 1.9.1
--	Virtual Size: 153.2 KB (153179 bytes)
--	v2 Blob: `sha256:1bb7362a96b5cac15297362eb02146367e0dfeb88a367d5ef1850f917a0da444`
--	v2 Content-Length: 101.1 KB (101055 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:03 GMT
+-	Created: Tue, 24 May 2016 03:23:10 GMT
+-	Parent Layer: `4924a5cb902a37dcdec895ea8e6bbc7a6df532fda0dd9234daa991f588b057df`
+-	v2 Blob: `sha256:d1b628b5284ecac61aa79ea6e52611597a64f702de37b611cf583eb512587c0a`
+-	v2 Content-Length: 101.1 KB (101052 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 20:59:02 GMT
 
-#### `5f46ceb14fc74142b05a1e1169beaa053ab065a2b414bfcbca7451a87bc07657`
+#### `bc2782bad405616d60f4fbd9f11d18367341be50665f9687b844d275e6342298`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:03:22 GMT
--	Parent Layer: `5a4b01be5d9e79c3e33eaa27499f99380caed60a4573170f3b7302dfa99c6c8c`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:23:46 GMT
+-	Parent Layer: `90642bb78eacb97a94c0d986075a0778c6e08043cd1f45d24159e92a162782e2`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cdd22a8390fb3a700ce951ef0a34455713411cf63cd33f340f2e69ed8b6fd79d`
+#### `6d4b4fe83d3be8e4a8db2119d6a7f29b35079c59d6619f7ca2e68857ffcaa037`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:03:23 GMT
--	Parent Layer: `5f46ceb14fc74142b05a1e1169beaa053ab065a2b414bfcbca7451a87bc07657`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:db39674e18f3f7282ec56fa6c9252d9f0161099db293be4363084628d7079ba8`
+-	Created: Tue, 24 May 2016 03:23:48 GMT
+-	Parent Layer: `bc2782bad405616d60f4fbd9f11d18367341be50665f9687b844d275e6342298`
+-	v2 Blob: `sha256:cf84839ffa9965fa6833e3be9737478733bb43b4f93a4fcc2f46a30bf608950c`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:16:37 GMT
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:52 GMT
 
-#### `cfafc4fcc6181c0d546a2aa6bd4609a9f87429999a8c2876a9b3bc51bcd39683`
+#### `43313df33c3487a3408461bae3a3ab0a5a8e40a36c990bbeae12f798bf6fddcd`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:03:24 GMT
--	Parent Layer: `cdd22a8390fb3a700ce951ef0a34455713411cf63cd33f340f2e69ed8b6fd79d`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:23:49 GMT
+-	Parent Layer: `6d4b4fe83d3be8e4a8db2119d6a7f29b35079c59d6619f7ca2e68857ffcaa037`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fc126ac6032a3ded3ecc6e649243659588232123bbfa1a700b4bb8850a704b8b`
+#### `bf25e237b9769d32235b12570569e13500e8c86f22e2d2ca9db12249fd106d8d`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:03:25 GMT
--	Parent Layer: `cfafc4fcc6181c0d546a2aa6bd4609a9f87429999a8c2876a9b3bc51bcd39683`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:23:50 GMT
+-	Parent Layer: `43313df33c3487a3408461bae3a3ab0a5a8e40a36c990bbeae12f798bf6fddcd`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `711b52a3676416f7c2313d116d340b856c5036afdf009b54074c562675d3a9cc`
+#### `e67cf89aa615a1a4c7bcefc365215ac23fbac4b6ef5698a441fc833a608f1a3b`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:03:25 GMT
--	Parent Layer: `fc126ac6032a3ded3ecc6e649243659588232123bbfa1a700b4bb8850a704b8b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:23:51 GMT
+-	Parent Layer: `bf25e237b9769d32235b12570569e13500e8c86f22e2d2ca9db12249fd106d8d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3cab7fe976e2d9442be1bf5eee5ff6ad5d89b4de79dec4b503a2b3f81186f206`
+#### `1d2cb77cf1f9a3dffe9c848a97254e8a3581d403c3a83ffe9e5587301ce55fed`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:03:26 GMT
--	Parent Layer: `711b52a3676416f7c2313d116d340b856c5036afdf009b54074c562675d3a9cc`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:23:52 GMT
+-	Parent Layer: `e67cf89aa615a1a4c7bcefc365215ac23fbac4b6ef5698a441fc833a608f1a3b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b5b14d89cffee9ddd6996b1922966bb35263da899c13d29d17a9845ec50717c9`
+#### `a6f3248cc2958b45c469d3d44014ca81788e7ab411ad8f0fdc75248e62bfd101`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:03:27 GMT
--	Parent Layer: `3cab7fe976e2d9442be1bf5eee5ff6ad5d89b4de79dec4b503a2b3f81186f206`
+-	Created: Tue, 24 May 2016 03:23:52 GMT
+-	Parent Layer: `1d2cb77cf1f9a3dffe9c848a97254e8a3581d403c3a83ffe9e5587301ce55fed`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -698,86 +590,73 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:3.12.1`
 
 ```console
-$ docker pull library/mono@sha256:55c02838e0fcf35fae6495680322c9b02f35f93d01ba7d1766a977b1af542afa
+$ docker pull library/mono@sha256:d0d72bb11814732e5c3a52778408ee1e86876fd3542cffe53cb76c497b1329d9
 ```
 
--	Total Virtual Size: 348.5 MB (348489915 bytes)
--	Total v2 Content-Length: 125.6 MB (125578117 bytes)
+-	Total v2 Content-Length: 125.6 MB (125579733 bytes)
 
 ### Layers (6)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
+#### `e9bc0b6047612edc222bfbc60fca062d3bec6a937924806a48b89fe68044f568`
 
 ```dockerfile
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
@@ -787,97 +666,83 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:05:26 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+-	Created: Tue, 24 May 2016 03:26:18 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 -	Docker Version: 1.9.1
--	Virtual Size: 249.4 MB (249443568 bytes)
--	v2 Blob: `sha256:d4db21f975ac76bcc9796f12402246b3f74ed637947f3977a3d0747d73c8c984`
--	v2 Content-Length: 80.8 MB (80798844 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:17:20 GMT
+-	v2 Blob: `sha256:515ece32e523a02b039c29508fb3ca6ec7ded90ac74fa30a1f1b5bf5ad599149`
+-	v2 Content-Length: 80.8 MB (80800124 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:01:41 GMT
 
 ## `mono:3.12.0`
 
 ```console
-$ docker pull library/mono@sha256:9af9fb47c0239a6aa6927e78645ac3a9917796b12f98975d34c2e1a82724dd77
+$ docker pull library/mono@sha256:6e33e9d36bcda759d035d7d60c8fc418a022589202324d1381cb2f50386b39d7
 ```
 
--	Total Virtual Size: 348.5 MB (348489915 bytes)
--	Total v2 Content-Length: 125.6 MB (125578117 bytes)
+-	Total v2 Content-Length: 125.6 MB (125579733 bytes)
 
 ### Layers (6)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
+#### `e9bc0b6047612edc222bfbc60fca062d3bec6a937924806a48b89fe68044f568`
 
 ```dockerfile
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
@@ -887,97 +752,83 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:05:26 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+-	Created: Tue, 24 May 2016 03:26:18 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 -	Docker Version: 1.9.1
--	Virtual Size: 249.4 MB (249443568 bytes)
--	v2 Blob: `sha256:d4db21f975ac76bcc9796f12402246b3f74ed637947f3977a3d0747d73c8c984`
--	v2 Content-Length: 80.8 MB (80798844 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:17:20 GMT
+-	v2 Blob: `sha256:515ece32e523a02b039c29508fb3ca6ec7ded90ac74fa30a1f1b5bf5ad599149`
+-	v2 Content-Length: 80.8 MB (80800124 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:01:41 GMT
 
 ## `mono:3.12`
 
 ```console
-$ docker pull library/mono@sha256:ccaedc3917ea800ef65dff3f7ff57e64e167156c7834e38eeb8b509410645ab4
+$ docker pull library/mono@sha256:6bac0893e2a1c0fea99a9669109400f12461c0385c80666497eef19d181389a6
 ```
 
--	Total Virtual Size: 348.5 MB (348489915 bytes)
--	Total v2 Content-Length: 125.6 MB (125578117 bytes)
+-	Total v2 Content-Length: 125.6 MB (125579733 bytes)
 
 ### Layers (6)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
+#### `e9bc0b6047612edc222bfbc60fca062d3bec6a937924806a48b89fe68044f568`
 
 ```dockerfile
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
@@ -987,97 +838,83 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:05:26 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+-	Created: Tue, 24 May 2016 03:26:18 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 -	Docker Version: 1.9.1
--	Virtual Size: 249.4 MB (249443568 bytes)
--	v2 Blob: `sha256:d4db21f975ac76bcc9796f12402246b3f74ed637947f3977a3d0747d73c8c984`
--	v2 Content-Length: 80.8 MB (80798844 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:17:20 GMT
+-	v2 Blob: `sha256:515ece32e523a02b039c29508fb3ca6ec7ded90ac74fa30a1f1b5bf5ad599149`
+-	v2 Content-Length: 80.8 MB (80800124 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:01:41 GMT
 
 ## `mono:3`
 
 ```console
-$ docker pull library/mono@sha256:0cb33b308944457985c8924263da4369c948e59b02b4a7c5af251aa6baed95c7
+$ docker pull library/mono@sha256:65c09b18433514fc9b85a9b35883b6c30a254d8801522b63dd911ec08d49e49d
 ```
 
--	Total Virtual Size: 348.5 MB (348489915 bytes)
--	Total v2 Content-Length: 125.6 MB (125578117 bytes)
+-	Total v2 Content-Length: 125.6 MB (125579733 bytes)
 
 ### Layers (6)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
+#### `e9bc0b6047612edc222bfbc60fca062d3bec6a937924806a48b89fe68044f568`
 
 ```dockerfile
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
@@ -1087,208 +924,175 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:05:26 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+-	Created: Tue, 24 May 2016 03:26:18 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 -	Docker Version: 1.9.1
--	Virtual Size: 249.4 MB (249443568 bytes)
--	v2 Blob: `sha256:d4db21f975ac76bcc9796f12402246b3f74ed637947f3977a3d0747d73c8c984`
--	v2 Content-Length: 80.8 MB (80798844 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:17:20 GMT
+-	v2 Blob: `sha256:515ece32e523a02b039c29508fb3ca6ec7ded90ac74fa30a1f1b5bf5ad599149`
+-	v2 Content-Length: 80.8 MB (80800124 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:01:41 GMT
 
 ## `mono:3.12.1-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:4767998dbbfa4243a7346a66d2acf832197407a31a5046f63830b821a1c5e666
+$ docker pull library/mono@sha256:26b464d24413fa4e4f82915d97233f28e4de0506ae02380b63d5f3c2fe8a75bf
 ```
 
--	Total Virtual Size: 348.5 MB (348489915 bytes)
--	Total v2 Content-Length: 125.6 MB (125578473 bytes)
+-	Total v2 Content-Length: 125.6 MB (125580089 bytes)
 
 ### Layers (13)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
+#### `cee4bad1b8f248936d2fc70a0fa22393af05c70e08f4982acf75613d96a68d74`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 312-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 312-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:05:26 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 249.4 MB (249443568 bytes)
--	v2 Blob: `sha256:d4db21f975ac76bcc9796f12402246b3f74ed637947f3977a3d0747d73c8c984`
--	v2 Content-Length: 80.8 MB (80798844 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:17:20 GMT
+-	Created: Tue, 24 May 2016 03:26:18 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:515ece32e523a02b039c29508fb3ca6ec7ded90ac74fa30a1f1b5bf5ad599149`
+-	v2 Content-Length: 80.8 MB (80800124 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:01:41 GMT
 
-#### `e48ea60e57a4c7736e1b167b31877b22474505c20a214ca32eff4d37143eb844`
+#### `a62d6bb63b8233772c1d4b8925de3f3065ca0fee9f60d3241b8a4a07ceb39c51`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:06:09 GMT
--	Parent Layer: `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:34 GMT
+-	Parent Layer: `cee4bad1b8f248936d2fc70a0fa22393af05c70e08f4982acf75613d96a68d74`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `97e90a35c0f78080e8811e73e2771c0163adf086f116183672aa0710bf3f00d3`
+#### `d822775d7463cd11a25ef4d0d5c81cd20686d32bbdad9952084845f80765403b`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:06:10 GMT
--	Parent Layer: `e48ea60e57a4c7736e1b167b31877b22474505c20a214ca32eff4d37143eb844`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:af34e914b56787b08e6d61130bef5985fdfd500e179194855dafad46efae09c9`
+-	Created: Tue, 24 May 2016 03:27:36 GMT
+-	Parent Layer: `a62d6bb63b8233772c1d4b8925de3f3065ca0fee9f60d3241b8a4a07ceb39c51`
+-	v2 Blob: `sha256:7dc9d2c4d431654e7baecc9794a67488ca11b3b11228e97fa3e45764c05b3b4e`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:17:50 GMT
+-	v2 Last-Modified: Tue, 31 May 2016 21:02:32 GMT
 
-#### `67c9bc58b22c458bab39da62f307d2d91c2546dfed91bb011de2ef85229a9c77`
+#### `682e63e8d5260cca07b495ffadb82d841ee3182d67af35e199cf309551c0f265`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:06:11 GMT
--	Parent Layer: `97e90a35c0f78080e8811e73e2771c0163adf086f116183672aa0710bf3f00d3`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:37 GMT
+-	Parent Layer: `d822775d7463cd11a25ef4d0d5c81cd20686d32bbdad9952084845f80765403b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3c110dd78b693c6d8602c8f44a8b1749d5098e5bbc524df66d2943d0bdaa845`
+#### `f09e202c1c76f183721d4093bf1fb560eed31aec7b18095a178f1a4fcd328146`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:06:11 GMT
--	Parent Layer: `67c9bc58b22c458bab39da62f307d2d91c2546dfed91bb011de2ef85229a9c77`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:39 GMT
+-	Parent Layer: `682e63e8d5260cca07b495ffadb82d841ee3182d67af35e199cf309551c0f265`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8bdd0cc0aa38a180ff37215e24ffb495e5cc2659c19fbe1e02178023386be9a0`
+#### `8cd2f7f98cb0eb14efbd6e444de9bc07ab64631966877a1e7d9d1aa8d1d53e48`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:06:12 GMT
--	Parent Layer: `f3c110dd78b693c6d8602c8f44a8b1749d5098e5bbc524df66d2943d0bdaa845`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:40 GMT
+-	Parent Layer: `f09e202c1c76f183721d4093bf1fb560eed31aec7b18095a178f1a4fcd328146`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `42a55b4cea080009fd13fd3fd7d18c6e9e085d111ab2845a257c0de6c8dee5f4`
+#### `17fe6a19094900300e7a88133238bfed2a6252c20645f2d6968f52381dfdb3ff`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:06:13 GMT
--	Parent Layer: `8bdd0cc0aa38a180ff37215e24ffb495e5cc2659c19fbe1e02178023386be9a0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:41 GMT
+-	Parent Layer: `8cd2f7f98cb0eb14efbd6e444de9bc07ab64631966877a1e7d9d1aa8d1d53e48`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c721209db352b9fd622a327830c96814c10a2cc665849d8e0d39248e689e4d3a`
+#### `fa1c52a57f6b70487b86b27abfb288b5fb835cba6f5be197f9266ca8543273e7`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:06:14 GMT
--	Parent Layer: `42a55b4cea080009fd13fd3fd7d18c6e9e085d111ab2845a257c0de6c8dee5f4`
+-	Created: Tue, 24 May 2016 03:27:42 GMT
+-	Parent Layer: `17fe6a19094900300e7a88133238bfed2a6252c20645f2d6968f52381dfdb3ff`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1296,197 +1100,165 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:3.12.0-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:5618dd6777439ae788d77bd864c188bb8d13b41fe380bf13d39c9efedc943fe3
+$ docker pull library/mono@sha256:01fe370d0a0eba13258e15ec06006741132687d1c51cb87c6f639dda702b46f0
 ```
 
--	Total Virtual Size: 348.5 MB (348489915 bytes)
--	Total v2 Content-Length: 125.6 MB (125578473 bytes)
+-	Total v2 Content-Length: 125.6 MB (125580089 bytes)
 
 ### Layers (13)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
+#### `cee4bad1b8f248936d2fc70a0fa22393af05c70e08f4982acf75613d96a68d74`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 312-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 312-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:05:26 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 249.4 MB (249443568 bytes)
--	v2 Blob: `sha256:d4db21f975ac76bcc9796f12402246b3f74ed637947f3977a3d0747d73c8c984`
--	v2 Content-Length: 80.8 MB (80798844 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:17:20 GMT
+-	Created: Tue, 24 May 2016 03:26:18 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:515ece32e523a02b039c29508fb3ca6ec7ded90ac74fa30a1f1b5bf5ad599149`
+-	v2 Content-Length: 80.8 MB (80800124 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:01:41 GMT
 
-#### `e48ea60e57a4c7736e1b167b31877b22474505c20a214ca32eff4d37143eb844`
+#### `a62d6bb63b8233772c1d4b8925de3f3065ca0fee9f60d3241b8a4a07ceb39c51`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:06:09 GMT
--	Parent Layer: `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:34 GMT
+-	Parent Layer: `cee4bad1b8f248936d2fc70a0fa22393af05c70e08f4982acf75613d96a68d74`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `97e90a35c0f78080e8811e73e2771c0163adf086f116183672aa0710bf3f00d3`
+#### `d822775d7463cd11a25ef4d0d5c81cd20686d32bbdad9952084845f80765403b`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:06:10 GMT
--	Parent Layer: `e48ea60e57a4c7736e1b167b31877b22474505c20a214ca32eff4d37143eb844`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:af34e914b56787b08e6d61130bef5985fdfd500e179194855dafad46efae09c9`
+-	Created: Tue, 24 May 2016 03:27:36 GMT
+-	Parent Layer: `a62d6bb63b8233772c1d4b8925de3f3065ca0fee9f60d3241b8a4a07ceb39c51`
+-	v2 Blob: `sha256:7dc9d2c4d431654e7baecc9794a67488ca11b3b11228e97fa3e45764c05b3b4e`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:17:50 GMT
+-	v2 Last-Modified: Tue, 31 May 2016 21:02:32 GMT
 
-#### `67c9bc58b22c458bab39da62f307d2d91c2546dfed91bb011de2ef85229a9c77`
+#### `682e63e8d5260cca07b495ffadb82d841ee3182d67af35e199cf309551c0f265`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:06:11 GMT
--	Parent Layer: `97e90a35c0f78080e8811e73e2771c0163adf086f116183672aa0710bf3f00d3`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:37 GMT
+-	Parent Layer: `d822775d7463cd11a25ef4d0d5c81cd20686d32bbdad9952084845f80765403b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3c110dd78b693c6d8602c8f44a8b1749d5098e5bbc524df66d2943d0bdaa845`
+#### `f09e202c1c76f183721d4093bf1fb560eed31aec7b18095a178f1a4fcd328146`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:06:11 GMT
--	Parent Layer: `67c9bc58b22c458bab39da62f307d2d91c2546dfed91bb011de2ef85229a9c77`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:39 GMT
+-	Parent Layer: `682e63e8d5260cca07b495ffadb82d841ee3182d67af35e199cf309551c0f265`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8bdd0cc0aa38a180ff37215e24ffb495e5cc2659c19fbe1e02178023386be9a0`
+#### `8cd2f7f98cb0eb14efbd6e444de9bc07ab64631966877a1e7d9d1aa8d1d53e48`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:06:12 GMT
--	Parent Layer: `f3c110dd78b693c6d8602c8f44a8b1749d5098e5bbc524df66d2943d0bdaa845`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:40 GMT
+-	Parent Layer: `f09e202c1c76f183721d4093bf1fb560eed31aec7b18095a178f1a4fcd328146`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `42a55b4cea080009fd13fd3fd7d18c6e9e085d111ab2845a257c0de6c8dee5f4`
+#### `17fe6a19094900300e7a88133238bfed2a6252c20645f2d6968f52381dfdb3ff`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:06:13 GMT
--	Parent Layer: `8bdd0cc0aa38a180ff37215e24ffb495e5cc2659c19fbe1e02178023386be9a0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:41 GMT
+-	Parent Layer: `8cd2f7f98cb0eb14efbd6e444de9bc07ab64631966877a1e7d9d1aa8d1d53e48`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c721209db352b9fd622a327830c96814c10a2cc665849d8e0d39248e689e4d3a`
+#### `fa1c52a57f6b70487b86b27abfb288b5fb835cba6f5be197f9266ca8543273e7`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:06:14 GMT
--	Parent Layer: `42a55b4cea080009fd13fd3fd7d18c6e9e085d111ab2845a257c0de6c8dee5f4`
+-	Created: Tue, 24 May 2016 03:27:42 GMT
+-	Parent Layer: `17fe6a19094900300e7a88133238bfed2a6252c20645f2d6968f52381dfdb3ff`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1494,197 +1266,165 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:3.12-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:a021da7cc79e1b428e54537b21666804201423bf067070e933d4f69c82f277ea
+$ docker pull library/mono@sha256:694eb9c1ddd12af6d0f05cc67ffe3d0b47012c3c618ddfecb0d89a6df70d5d90
 ```
 
--	Total Virtual Size: 348.5 MB (348489915 bytes)
--	Total v2 Content-Length: 125.6 MB (125578473 bytes)
+-	Total v2 Content-Length: 125.6 MB (125580089 bytes)
 
 ### Layers (13)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
+#### `cee4bad1b8f248936d2fc70a0fa22393af05c70e08f4982acf75613d96a68d74`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 312-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 312-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:05:26 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 249.4 MB (249443568 bytes)
--	v2 Blob: `sha256:d4db21f975ac76bcc9796f12402246b3f74ed637947f3977a3d0747d73c8c984`
--	v2 Content-Length: 80.8 MB (80798844 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:17:20 GMT
+-	Created: Tue, 24 May 2016 03:26:18 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:515ece32e523a02b039c29508fb3ca6ec7ded90ac74fa30a1f1b5bf5ad599149`
+-	v2 Content-Length: 80.8 MB (80800124 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:01:41 GMT
 
-#### `e48ea60e57a4c7736e1b167b31877b22474505c20a214ca32eff4d37143eb844`
+#### `a62d6bb63b8233772c1d4b8925de3f3065ca0fee9f60d3241b8a4a07ceb39c51`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:06:09 GMT
--	Parent Layer: `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:34 GMT
+-	Parent Layer: `cee4bad1b8f248936d2fc70a0fa22393af05c70e08f4982acf75613d96a68d74`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `97e90a35c0f78080e8811e73e2771c0163adf086f116183672aa0710bf3f00d3`
+#### `d822775d7463cd11a25ef4d0d5c81cd20686d32bbdad9952084845f80765403b`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:06:10 GMT
--	Parent Layer: `e48ea60e57a4c7736e1b167b31877b22474505c20a214ca32eff4d37143eb844`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:af34e914b56787b08e6d61130bef5985fdfd500e179194855dafad46efae09c9`
+-	Created: Tue, 24 May 2016 03:27:36 GMT
+-	Parent Layer: `a62d6bb63b8233772c1d4b8925de3f3065ca0fee9f60d3241b8a4a07ceb39c51`
+-	v2 Blob: `sha256:7dc9d2c4d431654e7baecc9794a67488ca11b3b11228e97fa3e45764c05b3b4e`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:17:50 GMT
+-	v2 Last-Modified: Tue, 31 May 2016 21:02:32 GMT
 
-#### `67c9bc58b22c458bab39da62f307d2d91c2546dfed91bb011de2ef85229a9c77`
+#### `682e63e8d5260cca07b495ffadb82d841ee3182d67af35e199cf309551c0f265`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:06:11 GMT
--	Parent Layer: `97e90a35c0f78080e8811e73e2771c0163adf086f116183672aa0710bf3f00d3`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:37 GMT
+-	Parent Layer: `d822775d7463cd11a25ef4d0d5c81cd20686d32bbdad9952084845f80765403b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3c110dd78b693c6d8602c8f44a8b1749d5098e5bbc524df66d2943d0bdaa845`
+#### `f09e202c1c76f183721d4093bf1fb560eed31aec7b18095a178f1a4fcd328146`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:06:11 GMT
--	Parent Layer: `67c9bc58b22c458bab39da62f307d2d91c2546dfed91bb011de2ef85229a9c77`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:39 GMT
+-	Parent Layer: `682e63e8d5260cca07b495ffadb82d841ee3182d67af35e199cf309551c0f265`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8bdd0cc0aa38a180ff37215e24ffb495e5cc2659c19fbe1e02178023386be9a0`
+#### `8cd2f7f98cb0eb14efbd6e444de9bc07ab64631966877a1e7d9d1aa8d1d53e48`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:06:12 GMT
--	Parent Layer: `f3c110dd78b693c6d8602c8f44a8b1749d5098e5bbc524df66d2943d0bdaa845`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:40 GMT
+-	Parent Layer: `f09e202c1c76f183721d4093bf1fb560eed31aec7b18095a178f1a4fcd328146`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `42a55b4cea080009fd13fd3fd7d18c6e9e085d111ab2845a257c0de6c8dee5f4`
+#### `17fe6a19094900300e7a88133238bfed2a6252c20645f2d6968f52381dfdb3ff`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:06:13 GMT
--	Parent Layer: `8bdd0cc0aa38a180ff37215e24ffb495e5cc2659c19fbe1e02178023386be9a0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:41 GMT
+-	Parent Layer: `8cd2f7f98cb0eb14efbd6e444de9bc07ab64631966877a1e7d9d1aa8d1d53e48`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c721209db352b9fd622a327830c96814c10a2cc665849d8e0d39248e689e4d3a`
+#### `fa1c52a57f6b70487b86b27abfb288b5fb835cba6f5be197f9266ca8543273e7`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:06:14 GMT
--	Parent Layer: `42a55b4cea080009fd13fd3fd7d18c6e9e085d111ab2845a257c0de6c8dee5f4`
+-	Created: Tue, 24 May 2016 03:27:42 GMT
+-	Parent Layer: `17fe6a19094900300e7a88133238bfed2a6252c20645f2d6968f52381dfdb3ff`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1692,197 +1432,165 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:3-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:4a5154d3a6ee3b88bdb283afbe282e73b0e25df569dfd21e21a7da2aca0d2dc3
+$ docker pull library/mono@sha256:5f1a09e243309f35f6bbf69e08f096d79cb8ca41ebb0e9743666556ca77c8950
 ```
 
--	Total Virtual Size: 348.5 MB (348489915 bytes)
--	Total v2 Content-Length: 125.6 MB (125578473 bytes)
+-	Total v2 Content-Length: 125.6 MB (125580089 bytes)
 
 ### Layers (13)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
+#### `cee4bad1b8f248936d2fc70a0fa22393af05c70e08f4982acf75613d96a68d74`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 312-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 312-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:05:26 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 249.4 MB (249443568 bytes)
--	v2 Blob: `sha256:d4db21f975ac76bcc9796f12402246b3f74ed637947f3977a3d0747d73c8c984`
--	v2 Content-Length: 80.8 MB (80798844 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:17:20 GMT
+-	Created: Tue, 24 May 2016 03:26:18 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:515ece32e523a02b039c29508fb3ca6ec7ded90ac74fa30a1f1b5bf5ad599149`
+-	v2 Content-Length: 80.8 MB (80800124 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:01:41 GMT
 
-#### `e48ea60e57a4c7736e1b167b31877b22474505c20a214ca32eff4d37143eb844`
+#### `a62d6bb63b8233772c1d4b8925de3f3065ca0fee9f60d3241b8a4a07ceb39c51`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:06:09 GMT
--	Parent Layer: `496fb4e38fc865142d3216e93758f815ced69b37c9ec71fb970b21ff84d97b66`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:34 GMT
+-	Parent Layer: `cee4bad1b8f248936d2fc70a0fa22393af05c70e08f4982acf75613d96a68d74`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `97e90a35c0f78080e8811e73e2771c0163adf086f116183672aa0710bf3f00d3`
+#### `d822775d7463cd11a25ef4d0d5c81cd20686d32bbdad9952084845f80765403b`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:06:10 GMT
--	Parent Layer: `e48ea60e57a4c7736e1b167b31877b22474505c20a214ca32eff4d37143eb844`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:af34e914b56787b08e6d61130bef5985fdfd500e179194855dafad46efae09c9`
+-	Created: Tue, 24 May 2016 03:27:36 GMT
+-	Parent Layer: `a62d6bb63b8233772c1d4b8925de3f3065ca0fee9f60d3241b8a4a07ceb39c51`
+-	v2 Blob: `sha256:7dc9d2c4d431654e7baecc9794a67488ca11b3b11228e97fa3e45764c05b3b4e`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:17:50 GMT
+-	v2 Last-Modified: Tue, 31 May 2016 21:02:32 GMT
 
-#### `67c9bc58b22c458bab39da62f307d2d91c2546dfed91bb011de2ef85229a9c77`
+#### `682e63e8d5260cca07b495ffadb82d841ee3182d67af35e199cf309551c0f265`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:06:11 GMT
--	Parent Layer: `97e90a35c0f78080e8811e73e2771c0163adf086f116183672aa0710bf3f00d3`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:37 GMT
+-	Parent Layer: `d822775d7463cd11a25ef4d0d5c81cd20686d32bbdad9952084845f80765403b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f3c110dd78b693c6d8602c8f44a8b1749d5098e5bbc524df66d2943d0bdaa845`
+#### `f09e202c1c76f183721d4093bf1fb560eed31aec7b18095a178f1a4fcd328146`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:06:11 GMT
--	Parent Layer: `67c9bc58b22c458bab39da62f307d2d91c2546dfed91bb011de2ef85229a9c77`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:39 GMT
+-	Parent Layer: `682e63e8d5260cca07b495ffadb82d841ee3182d67af35e199cf309551c0f265`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8bdd0cc0aa38a180ff37215e24ffb495e5cc2659c19fbe1e02178023386be9a0`
+#### `8cd2f7f98cb0eb14efbd6e444de9bc07ab64631966877a1e7d9d1aa8d1d53e48`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:06:12 GMT
--	Parent Layer: `f3c110dd78b693c6d8602c8f44a8b1749d5098e5bbc524df66d2943d0bdaa845`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:40 GMT
+-	Parent Layer: `f09e202c1c76f183721d4093bf1fb560eed31aec7b18095a178f1a4fcd328146`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `42a55b4cea080009fd13fd3fd7d18c6e9e085d111ab2845a257c0de6c8dee5f4`
+#### `17fe6a19094900300e7a88133238bfed2a6252c20645f2d6968f52381dfdb3ff`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:06:13 GMT
--	Parent Layer: `8bdd0cc0aa38a180ff37215e24ffb495e5cc2659c19fbe1e02178023386be9a0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:27:41 GMT
+-	Parent Layer: `8cd2f7f98cb0eb14efbd6e444de9bc07ab64631966877a1e7d9d1aa8d1d53e48`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c721209db352b9fd622a327830c96814c10a2cc665849d8e0d39248e689e4d3a`
+#### `fa1c52a57f6b70487b86b27abfb288b5fb835cba6f5be197f9266ca8543273e7`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:06:14 GMT
--	Parent Layer: `42a55b4cea080009fd13fd3fd7d18c6e9e085d111ab2845a257c0de6c8dee5f4`
+-	Created: Tue, 24 May 2016 03:27:42 GMT
+-	Parent Layer: `17fe6a19094900300e7a88133238bfed2a6252c20645f2d6968f52381dfdb3ff`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1890,439 +1598,365 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:3.8.0`
 
 ```console
-$ docker pull library/mono@sha256:1a6c3cd1a318cda56be629b9bc3c8b332c189dcb5d890466f7d90e0c7003fb65
+$ docker pull library/mono@sha256:3d9065ee5bae98d9baa5beb9784c068ab85aff18fd198e4dbf31f432e052773c
 ```
 
--	Total Virtual Size: 327.9 MB (327924291 bytes)
--	Total v2 Content-Length: 122.6 MB (122563528 bytes)
+-	Total v2 Content-Length: 122.6 MB (122563667 bytes)
 
 ### Layers (7)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `aaabd2b487ecd3e650d440ccaa46ed24c2139d956d33914e82c715a5a859f9a3`
+#### `b712ddff4782466471999437c19a8d667a43c40fec2b2d48daa76f0baa7fc48f`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 38-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 38-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:08:51 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 228.7 MB (228724765 bytes)
--	v2 Blob: `sha256:fc499e852f79bf884b6cf6fdf6579ddbc4e34fe788a6fddd2d052ec2ce6b887f`
--	v2 Content-Length: 77.7 MB (77683205 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:18:41 GMT
+-	Created: Tue, 24 May 2016 03:31:24 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:d33e054576abe61134ad95e9a0886558ff612eb21a5f04b0a75935635f791246`
+-	v2 Content-Length: 77.7 MB (77682955 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:03:46 GMT
 
-#### `589d46b7239655ab85acacfb21264c36e9911392ce5a7500b088554bd2741b89`
+#### `96ede30c8d39ee83b15d1213f23f59c6c5fe6a365d7f3ee35dbf7a3ae62ca87b`
 
 ```dockerfile
 RUN mozroots --machine --import --sync --quiet
 ```
 
--	Created: Wed, 04 May 2016 02:08:55 GMT
--	Parent Layer: `aaabd2b487ecd3e650d440ccaa46ed24c2139d956d33914e82c715a5a859f9a3`
+-	Created: Tue, 24 May 2016 03:31:41 GMT
+-	Parent Layer: `b712ddff4782466471999437c19a8d667a43c40fec2b2d48daa76f0baa7fc48f`
 -	Docker Version: 1.9.1
--	Virtual Size: 153.2 KB (153179 bytes)
--	v2 Blob: `sha256:d405539a7849ee3f84348304c3b033795d0c6e0d973a898ee1a05b5e5dd98dec`
--	v2 Content-Length: 101.0 KB (101050 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:18:08 GMT
+-	v2 Blob: `sha256:07b92dc073ba7912166046e03d6b7021ee82d11d5590f3d1a139f6e13b018714`
+-	v2 Content-Length: 101.1 KB (101103 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:03:07 GMT
 
 ## `mono:3.8`
 
 ```console
-$ docker pull library/mono@sha256:99b9706f26a8e2063ba4a74f694b78c6848c87b2f4dafae562fc10ca13ec881f
+$ docker pull library/mono@sha256:5367cabc569d1a9190182072067c98b342794e759728cf13edf132d8105f9292
 ```
 
--	Total Virtual Size: 327.9 MB (327924291 bytes)
--	Total v2 Content-Length: 122.6 MB (122563528 bytes)
+-	Total v2 Content-Length: 122.6 MB (122563667 bytes)
 
 ### Layers (7)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `aaabd2b487ecd3e650d440ccaa46ed24c2139d956d33914e82c715a5a859f9a3`
+#### `b712ddff4782466471999437c19a8d667a43c40fec2b2d48daa76f0baa7fc48f`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 38-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 38-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:08:51 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 228.7 MB (228724765 bytes)
--	v2 Blob: `sha256:fc499e852f79bf884b6cf6fdf6579ddbc4e34fe788a6fddd2d052ec2ce6b887f`
--	v2 Content-Length: 77.7 MB (77683205 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:18:41 GMT
+-	Created: Tue, 24 May 2016 03:31:24 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:d33e054576abe61134ad95e9a0886558ff612eb21a5f04b0a75935635f791246`
+-	v2 Content-Length: 77.7 MB (77682955 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:03:46 GMT
 
-#### `589d46b7239655ab85acacfb21264c36e9911392ce5a7500b088554bd2741b89`
+#### `96ede30c8d39ee83b15d1213f23f59c6c5fe6a365d7f3ee35dbf7a3ae62ca87b`
 
 ```dockerfile
 RUN mozroots --machine --import --sync --quiet
 ```
 
--	Created: Wed, 04 May 2016 02:08:55 GMT
--	Parent Layer: `aaabd2b487ecd3e650d440ccaa46ed24c2139d956d33914e82c715a5a859f9a3`
+-	Created: Tue, 24 May 2016 03:31:41 GMT
+-	Parent Layer: `b712ddff4782466471999437c19a8d667a43c40fec2b2d48daa76f0baa7fc48f`
 -	Docker Version: 1.9.1
--	Virtual Size: 153.2 KB (153179 bytes)
--	v2 Blob: `sha256:d405539a7849ee3f84348304c3b033795d0c6e0d973a898ee1a05b5e5dd98dec`
--	v2 Content-Length: 101.0 KB (101050 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:18:08 GMT
+-	v2 Blob: `sha256:07b92dc073ba7912166046e03d6b7021ee82d11d5590f3d1a139f6e13b018714`
+-	v2 Content-Length: 101.1 KB (101103 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:03:07 GMT
 
 ## `mono:3.8.0-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:b6d6c8015697225312e8d5c98b007565b48ed9757d3081dd796534abeba985f5
+$ docker pull library/mono@sha256:914a58cc56f52945735782af12b2ad15f9a9630c417033ceecc1280e249216d0
 ```
 
--	Total Virtual Size: 327.9 MB (327924291 bytes)
--	Total v2 Content-Length: 122.6 MB (122563884 bytes)
+-	Total v2 Content-Length: 122.6 MB (122564023 bytes)
 
 ### Layers (14)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `aaabd2b487ecd3e650d440ccaa46ed24c2139d956d33914e82c715a5a859f9a3`
+#### `b712ddff4782466471999437c19a8d667a43c40fec2b2d48daa76f0baa7fc48f`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 38-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 38-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:08:51 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 228.7 MB (228724765 bytes)
--	v2 Blob: `sha256:fc499e852f79bf884b6cf6fdf6579ddbc4e34fe788a6fddd2d052ec2ce6b887f`
--	v2 Content-Length: 77.7 MB (77683205 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:18:41 GMT
+-	Created: Tue, 24 May 2016 03:31:24 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:d33e054576abe61134ad95e9a0886558ff612eb21a5f04b0a75935635f791246`
+-	v2 Content-Length: 77.7 MB (77682955 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:03:46 GMT
 
-#### `589d46b7239655ab85acacfb21264c36e9911392ce5a7500b088554bd2741b89`
+#### `8335316ca2d477c707600eefcf847e30e75622009c006692b3977dcdb7a072e1`
 
 ```dockerfile
 RUN mozroots --machine --import --sync --quiet
 ```
 
--	Created: Wed, 04 May 2016 02:08:55 GMT
--	Parent Layer: `aaabd2b487ecd3e650d440ccaa46ed24c2139d956d33914e82c715a5a859f9a3`
--	Docker Version: 1.9.1
--	Virtual Size: 153.2 KB (153179 bytes)
--	v2 Blob: `sha256:d405539a7849ee3f84348304c3b033795d0c6e0d973a898ee1a05b5e5dd98dec`
--	v2 Content-Length: 101.0 KB (101050 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:18:08 GMT
+-	Created: Tue, 24 May 2016 03:31:41 GMT
+-	Parent Layer: `b712ddff4782466471999437c19a8d667a43c40fec2b2d48daa76f0baa7fc48f`
+-	v2 Blob: `sha256:07b92dc073ba7912166046e03d6b7021ee82d11d5590f3d1a139f6e13b018714`
+-	v2 Content-Length: 101.1 KB (101103 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:03:07 GMT
 
-#### `43a544bcee294a1fd53ea5051b9ff64556aab48863293622fe71f50b54c41727`
+#### `6ee1f61edc8e8b0240a44805505f7098ebe6d061b3ed20df37aa3b4ba2704fbd`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:09:13 GMT
--	Parent Layer: `589d46b7239655ab85acacfb21264c36e9911392ce5a7500b088554bd2741b89`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:32:15 GMT
+-	Parent Layer: `8335316ca2d477c707600eefcf847e30e75622009c006692b3977dcdb7a072e1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e6750f39a4b5d39b82cc107f29ca851f187981088f05b059d93e1f7664276412`
+#### `d58e7455cada7e02fcc4fe28f415a12d275db60817840a94dbf15bc896fdf222`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:09:14 GMT
--	Parent Layer: `43a544bcee294a1fd53ea5051b9ff64556aab48863293622fe71f50b54c41727`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:4610e891cf74dcd4a07390a0d57461b9a872b4f389cc8f7097253e95f29b54ec`
+-	Created: Tue, 24 May 2016 03:32:17 GMT
+-	Parent Layer: `6ee1f61edc8e8b0240a44805505f7098ebe6d061b3ed20df37aa3b4ba2704fbd`
+-	v2 Blob: `sha256:fadfb93aebea67965b645ec9e993c7ae28ab5f0c0e2fe24c9549fa93a85ada98`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:19:06 GMT
+-	v2 Last-Modified: Tue, 31 May 2016 21:04:15 GMT
 
-#### `dbe1dc4416a607bc84e03b857817ff3f790b50b3d93bade9ea5267c6c298b1b6`
+#### `a24ac67c1a6ab053b6697a948cfa01c3eee52085e7fb1015698231277fa2f0a6`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:09:15 GMT
--	Parent Layer: `e6750f39a4b5d39b82cc107f29ca851f187981088f05b059d93e1f7664276412`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:32:18 GMT
+-	Parent Layer: `d58e7455cada7e02fcc4fe28f415a12d275db60817840a94dbf15bc896fdf222`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7c71c09108764404cc186a374bcf07a0690b7241c7d7e40d4964925d2b540cac`
+#### `dfa49c2c04a85be292db212d77487ec443367dd335967aa9c97c96e35a22a049`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:09:16 GMT
--	Parent Layer: `dbe1dc4416a607bc84e03b857817ff3f790b50b3d93bade9ea5267c6c298b1b6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:32:19 GMT
+-	Parent Layer: `a24ac67c1a6ab053b6697a948cfa01c3eee52085e7fb1015698231277fa2f0a6`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c376b6919c2874fde622f0e28a2a85615c3b57d06da80eb774f3b9a4f9eb0d0a`
+#### `7214273ea913a0f55f61e353832b78e2c5064c1a1d56872825ed34f5e36a9c3b`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:09:17 GMT
--	Parent Layer: `7c71c09108764404cc186a374bcf07a0690b7241c7d7e40d4964925d2b540cac`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:32:20 GMT
+-	Parent Layer: `dfa49c2c04a85be292db212d77487ec443367dd335967aa9c97c96e35a22a049`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `55c4f0846e0f20ce2d9252d54873d3227d9140a88f76734e4ddba138155eec74`
+#### `a856283bfdf626e7b21589a3cd21bfe305f7735d6b0d845019fc90b9ead8d810`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:09:17 GMT
--	Parent Layer: `c376b6919c2874fde622f0e28a2a85615c3b57d06da80eb774f3b9a4f9eb0d0a`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:32:21 GMT
+-	Parent Layer: `7214273ea913a0f55f61e353832b78e2c5064c1a1d56872825ed34f5e36a9c3b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `590c72dd92db5ea2ecf0cc5826c47a372ed22396bf79ff0ca585b85e68516a07`
+#### `3e8ea4e4d5d56516878c85ac8c87836cbe1e3f0c3b1010f811f53a73913cf1f2`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:09:18 GMT
--	Parent Layer: `55c4f0846e0f20ce2d9252d54873d3227d9140a88f76734e4ddba138155eec74`
+-	Created: Tue, 24 May 2016 03:32:22 GMT
+-	Parent Layer: `a856283bfdf626e7b21589a3cd21bfe305f7735d6b0d845019fc90b9ead8d810`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -2330,211 +1964,177 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:3.8-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:98c171d880d5890e4d1b8ad50f4538f7b24a1710f4a7061ea067c2d742fcc137
+$ docker pull library/mono@sha256:491668412053e30c73bc9bf351fc9ef180d699401d4842869d1edc393a0c0a0f
 ```
 
--	Total Virtual Size: 327.9 MB (327924291 bytes)
--	Total v2 Content-Length: 122.6 MB (122563884 bytes)
+-	Total v2 Content-Length: 122.6 MB (122564023 bytes)
 
 ### Layers (14)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `aaabd2b487ecd3e650d440ccaa46ed24c2139d956d33914e82c715a5a859f9a3`
+#### `b712ddff4782466471999437c19a8d667a43c40fec2b2d48daa76f0baa7fc48f`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.0 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 38-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.0 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 38-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:08:51 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 228.7 MB (228724765 bytes)
--	v2 Blob: `sha256:fc499e852f79bf884b6cf6fdf6579ddbc4e34fe788a6fddd2d052ec2ce6b887f`
--	v2 Content-Length: 77.7 MB (77683205 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:18:41 GMT
+-	Created: Tue, 24 May 2016 03:31:24 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:d33e054576abe61134ad95e9a0886558ff612eb21a5f04b0a75935635f791246`
+-	v2 Content-Length: 77.7 MB (77682955 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:03:46 GMT
 
-#### `589d46b7239655ab85acacfb21264c36e9911392ce5a7500b088554bd2741b89`
+#### `8335316ca2d477c707600eefcf847e30e75622009c006692b3977dcdb7a072e1`
 
 ```dockerfile
 RUN mozroots --machine --import --sync --quiet
 ```
 
--	Created: Wed, 04 May 2016 02:08:55 GMT
--	Parent Layer: `aaabd2b487ecd3e650d440ccaa46ed24c2139d956d33914e82c715a5a859f9a3`
--	Docker Version: 1.9.1
--	Virtual Size: 153.2 KB (153179 bytes)
--	v2 Blob: `sha256:d405539a7849ee3f84348304c3b033795d0c6e0d973a898ee1a05b5e5dd98dec`
--	v2 Content-Length: 101.0 KB (101050 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:18:08 GMT
+-	Created: Tue, 24 May 2016 03:31:41 GMT
+-	Parent Layer: `b712ddff4782466471999437c19a8d667a43c40fec2b2d48daa76f0baa7fc48f`
+-	v2 Blob: `sha256:07b92dc073ba7912166046e03d6b7021ee82d11d5590f3d1a139f6e13b018714`
+-	v2 Content-Length: 101.1 KB (101103 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:03:07 GMT
 
-#### `43a544bcee294a1fd53ea5051b9ff64556aab48863293622fe71f50b54c41727`
+#### `6ee1f61edc8e8b0240a44805505f7098ebe6d061b3ed20df37aa3b4ba2704fbd`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:09:13 GMT
--	Parent Layer: `589d46b7239655ab85acacfb21264c36e9911392ce5a7500b088554bd2741b89`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:32:15 GMT
+-	Parent Layer: `8335316ca2d477c707600eefcf847e30e75622009c006692b3977dcdb7a072e1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e6750f39a4b5d39b82cc107f29ca851f187981088f05b059d93e1f7664276412`
+#### `d58e7455cada7e02fcc4fe28f415a12d275db60817840a94dbf15bc896fdf222`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:09:14 GMT
--	Parent Layer: `43a544bcee294a1fd53ea5051b9ff64556aab48863293622fe71f50b54c41727`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:4610e891cf74dcd4a07390a0d57461b9a872b4f389cc8f7097253e95f29b54ec`
+-	Created: Tue, 24 May 2016 03:32:17 GMT
+-	Parent Layer: `6ee1f61edc8e8b0240a44805505f7098ebe6d061b3ed20df37aa3b4ba2704fbd`
+-	v2 Blob: `sha256:fadfb93aebea67965b645ec9e993c7ae28ab5f0c0e2fe24c9549fa93a85ada98`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:19:06 GMT
+-	v2 Last-Modified: Tue, 31 May 2016 21:04:15 GMT
 
-#### `dbe1dc4416a607bc84e03b857817ff3f790b50b3d93bade9ea5267c6c298b1b6`
+#### `a24ac67c1a6ab053b6697a948cfa01c3eee52085e7fb1015698231277fa2f0a6`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:09:15 GMT
--	Parent Layer: `e6750f39a4b5d39b82cc107f29ca851f187981088f05b059d93e1f7664276412`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:32:18 GMT
+-	Parent Layer: `d58e7455cada7e02fcc4fe28f415a12d275db60817840a94dbf15bc896fdf222`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7c71c09108764404cc186a374bcf07a0690b7241c7d7e40d4964925d2b540cac`
+#### `dfa49c2c04a85be292db212d77487ec443367dd335967aa9c97c96e35a22a049`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:09:16 GMT
--	Parent Layer: `dbe1dc4416a607bc84e03b857817ff3f790b50b3d93bade9ea5267c6c298b1b6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:32:19 GMT
+-	Parent Layer: `a24ac67c1a6ab053b6697a948cfa01c3eee52085e7fb1015698231277fa2f0a6`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c376b6919c2874fde622f0e28a2a85615c3b57d06da80eb774f3b9a4f9eb0d0a`
+#### `7214273ea913a0f55f61e353832b78e2c5064c1a1d56872825ed34f5e36a9c3b`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:09:17 GMT
--	Parent Layer: `7c71c09108764404cc186a374bcf07a0690b7241c7d7e40d4964925d2b540cac`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:32:20 GMT
+-	Parent Layer: `dfa49c2c04a85be292db212d77487ec443367dd335967aa9c97c96e35a22a049`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `55c4f0846e0f20ce2d9252d54873d3227d9140a88f76734e4ddba138155eec74`
+#### `a856283bfdf626e7b21589a3cd21bfe305f7735d6b0d845019fc90b9ead8d810`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:09:17 GMT
--	Parent Layer: `c376b6919c2874fde622f0e28a2a85615c3b57d06da80eb774f3b9a4f9eb0d0a`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:32:21 GMT
+-	Parent Layer: `7214273ea913a0f55f61e353832b78e2c5064c1a1d56872825ed34f5e36a9c3b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `590c72dd92db5ea2ecf0cc5826c47a372ed22396bf79ff0ca585b85e68516a07`
+#### `3e8ea4e4d5d56516878c85ac8c87836cbe1e3f0c3b1010f811f53a73913cf1f2`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:09:18 GMT
--	Parent Layer: `55c4f0846e0f20ce2d9252d54873d3227d9140a88f76734e4ddba138155eec74`
+-	Created: Tue, 24 May 2016 03:32:22 GMT
+-	Parent Layer: `a856283bfdf626e7b21589a3cd21bfe305f7735d6b0d845019fc90b9ead8d810`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -2542,86 +2142,73 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.0.5.1`
 
 ```console
-$ docker pull library/mono@sha256:9598b8add39e9df7fbd5243b06280a166d35dc1182c2a7e97c798e755f785e25
+$ docker pull library/mono@sha256:bf41df253df815af20024cfb8f3768d4d73e7c714fa5bc5f664674a637a3066a
 ```
 
--	Total Virtual Size: 622.5 MB (622531953 bytes)
--	Total v2 Content-Length: 227.5 MB (227545849 bytes)
+-	Total v2 Content-Length: 227.5 MB (227543077 bytes)
 
 ### Layers (6)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `5cdb3442421dc3535208c21b9d9a6fe91280c1c7a973183caac2648cca03c39e`
+#### `8f1702718b5d90dfb33148202fceb1be1c5ce304d2f82e29d0b7939f556140a5`
 
 ```dockerfile
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.5.1 main" > /etc/apt/sources.list.d/mono-xamarin.list\
@@ -2631,97 +2218,83 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:11:43 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+-	Created: Tue, 24 May 2016 03:35:23 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 -	Docker Version: 1.9.1
--	Virtual Size: 523.5 MB (523485606 bytes)
--	v2 Blob: `sha256:9594222e4c3ed3657ad9e466f6703a1727e65dac1bff39d29070940e36cd4a05`
--	v2 Content-Length: 182.8 MB (182766576 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:20:33 GMT
+-	v2 Blob: `sha256:da8f1943c12a1673098d136ba3b7c821c233fe6027a521e016d1c48328b985f8`
+-	v2 Content-Length: 182.8 MB (182763468 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:06:14 GMT
 
 ## `mono:4.0.5`
 
 ```console
-$ docker pull library/mono@sha256:59a2f9f98052e31eb79467231ffdec62bb2866feb0719aea3121581c9cf8000c
+$ docker pull library/mono@sha256:5631209562defc300f2c02067808182cf0597f7636e85075c26d777d201e733a
 ```
 
--	Total Virtual Size: 622.5 MB (622531953 bytes)
--	Total v2 Content-Length: 227.5 MB (227545849 bytes)
+-	Total v2 Content-Length: 227.5 MB (227543077 bytes)
 
 ### Layers (6)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `5cdb3442421dc3535208c21b9d9a6fe91280c1c7a973183caac2648cca03c39e`
+#### `8f1702718b5d90dfb33148202fceb1be1c5ce304d2f82e29d0b7939f556140a5`
 
 ```dockerfile
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.5.1 main" > /etc/apt/sources.list.d/mono-xamarin.list\
@@ -2731,97 +2304,83 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:11:43 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+-	Created: Tue, 24 May 2016 03:35:23 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 -	Docker Version: 1.9.1
--	Virtual Size: 523.5 MB (523485606 bytes)
--	v2 Blob: `sha256:9594222e4c3ed3657ad9e466f6703a1727e65dac1bff39d29070940e36cd4a05`
--	v2 Content-Length: 182.8 MB (182766576 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:20:33 GMT
+-	v2 Blob: `sha256:da8f1943c12a1673098d136ba3b7c821c233fe6027a521e016d1c48328b985f8`
+-	v2 Content-Length: 182.8 MB (182763468 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:06:14 GMT
 
 ## `mono:4.0`
 
 ```console
-$ docker pull library/mono@sha256:6e73f4b1b6be366fd3b7111247dc1fc547e1fbcfbfa44d7746036169729667ba
+$ docker pull library/mono@sha256:8bc2ca235bbac31a02a22b873e304c165d2b3d6213a36a9372da33e56a7a9214
 ```
 
--	Total Virtual Size: 622.5 MB (622531953 bytes)
--	Total v2 Content-Length: 227.5 MB (227545849 bytes)
+-	Total v2 Content-Length: 227.5 MB (227543077 bytes)
 
 ### Layers (6)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `5cdb3442421dc3535208c21b9d9a6fe91280c1c7a973183caac2648cca03c39e`
+#### `8f1702718b5d90dfb33148202fceb1be1c5ce304d2f82e29d0b7939f556140a5`
 
 ```dockerfile
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.5.1 main" > /etc/apt/sources.list.d/mono-xamarin.list\
@@ -2831,208 +2390,175 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:11:43 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+-	Created: Tue, 24 May 2016 03:35:23 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 -	Docker Version: 1.9.1
--	Virtual Size: 523.5 MB (523485606 bytes)
--	v2 Blob: `sha256:9594222e4c3ed3657ad9e466f6703a1727e65dac1bff39d29070940e36cd4a05`
--	v2 Content-Length: 182.8 MB (182766576 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:20:33 GMT
+-	v2 Blob: `sha256:da8f1943c12a1673098d136ba3b7c821c233fe6027a521e016d1c48328b985f8`
+-	v2 Content-Length: 182.8 MB (182763468 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:06:14 GMT
 
 ## `mono:4.0.5.1-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:42fbc289899c4c31ab921ecd961e492a4a77ed34846b6f1943411e4ce50213b1
+$ docker pull library/mono@sha256:2546025aa23864f990143befd57590905da973e670b8453e224949049fd9256d
 ```
 
--	Total Virtual Size: 622.5 MB (622531953 bytes)
--	Total v2 Content-Length: 227.5 MB (227546204 bytes)
+-	Total v2 Content-Length: 227.5 MB (227543433 bytes)
 
 ### Layers (13)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `5cdb3442421dc3535208c21b9d9a6fe91280c1c7a973183caac2648cca03c39e`
+#### `a27266e55c9580183fb756b1d8b3c1643ff73f66e6ae03e294a14dc8628bcda3`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.5.1 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 40-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.5.1 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 40-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:11:43 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 523.5 MB (523485606 bytes)
--	v2 Blob: `sha256:9594222e4c3ed3657ad9e466f6703a1727e65dac1bff39d29070940e36cd4a05`
--	v2 Content-Length: 182.8 MB (182766576 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:20:33 GMT
+-	Created: Tue, 24 May 2016 03:35:23 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:da8f1943c12a1673098d136ba3b7c821c233fe6027a521e016d1c48328b985f8`
+-	v2 Content-Length: 182.8 MB (182763468 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:06:14 GMT
 
-#### `9fc87209b7a8607251873670ddb8d876c02aae74641d2313adfaf27e634eb0cd`
+#### `1c25a74289d3dc0a85c33900a1c7218770b16b4e3b70db041a4c0b93a328af24`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:12:17 GMT
--	Parent Layer: `5cdb3442421dc3535208c21b9d9a6fe91280c1c7a973183caac2648cca03c39e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:46 GMT
+-	Parent Layer: `a27266e55c9580183fb756b1d8b3c1643ff73f66e6ae03e294a14dc8628bcda3`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fa01035e5a9ca5ed4057e6a2ef7b8e4c2149b0bc75b2f66a99aee16aa21671f7`
+#### `212591b9835ff180acf83fc1dd71c198dcf4af79bfff220937768b495a7f21e9`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:12:18 GMT
--	Parent Layer: `9fc87209b7a8607251873670ddb8d876c02aae74641d2313adfaf27e634eb0cd`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:2fa4edbda73ddbcc09fb474f0e0e388ac6fcb3a6edc8f9a8e4935d65fbf75cc0`
--	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:21:03 GMT
+-	Created: Tue, 24 May 2016 03:36:48 GMT
+-	Parent Layer: `1c25a74289d3dc0a85c33900a1c7218770b16b4e3b70db041a4c0b93a328af24`
+-	v2 Blob: `sha256:80bc06cb37a85aee6e2371cb737ec27636ec1a243e0622015ac0c8fa168c5e2e`
+-	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Tue, 31 May 2016 21:06:45 GMT
 
-#### `896dbad965af72425915d5d20cdd59e55ce634acd573d0b29c2a2ab739208dfe`
+#### `46705053ed9f5525b70037801ac75766d57b5021732564977850a55eac3a314a`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:12:19 GMT
--	Parent Layer: `fa01035e5a9ca5ed4057e6a2ef7b8e4c2149b0bc75b2f66a99aee16aa21671f7`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:49 GMT
+-	Parent Layer: `212591b9835ff180acf83fc1dd71c198dcf4af79bfff220937768b495a7f21e9`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e49d5a09fa804e1c2dbb31eb8dc6f6f619ce46bfd4523506eed9b249353cf0ed`
+#### `be90e3fd560841ed8e25261fe12a5536e178c678b222409ec28c57179a0dabf7`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:12:20 GMT
--	Parent Layer: `896dbad965af72425915d5d20cdd59e55ce634acd573d0b29c2a2ab739208dfe`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:50 GMT
+-	Parent Layer: `46705053ed9f5525b70037801ac75766d57b5021732564977850a55eac3a314a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8f49d71bb8b36ba2999d986bf6789a58dec27549b1bb7d81bec98ed78b9af926`
+#### `499c9285b180f094657bfd69aad1104d6b73b5c8ed940aef89052d62cd47ff0c`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:12:21 GMT
--	Parent Layer: `e49d5a09fa804e1c2dbb31eb8dc6f6f619ce46bfd4523506eed9b249353cf0ed`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:51 GMT
+-	Parent Layer: `be90e3fd560841ed8e25261fe12a5536e178c678b222409ec28c57179a0dabf7`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f98328dfe24582e888cdfa3a355ac43c196b33f83807ad79b602f3be9d4c54e9`
+#### `736f79b6c98e6ea96ac12d119974ae98ac495bea795e7f9ae261354dcefbad05`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:12:21 GMT
--	Parent Layer: `8f49d71bb8b36ba2999d986bf6789a58dec27549b1bb7d81bec98ed78b9af926`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:52 GMT
+-	Parent Layer: `499c9285b180f094657bfd69aad1104d6b73b5c8ed940aef89052d62cd47ff0c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4b1acb05f650a7777b25eb636125562869af00a152c9e992da1dec774f22d104`
+#### `b9afe6100c40e38eb42efd4fe54f33d53ec9eec9cee8c64040defbe7d2c5933a`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:12:22 GMT
--	Parent Layer: `f98328dfe24582e888cdfa3a355ac43c196b33f83807ad79b602f3be9d4c54e9`
+-	Created: Tue, 24 May 2016 03:36:53 GMT
+-	Parent Layer: `736f79b6c98e6ea96ac12d119974ae98ac495bea795e7f9ae261354dcefbad05`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -3040,197 +2566,165 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.0.5-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:fd14cde35e81d0b73964e6dd18e4155b6c3540a1f512f3835e183a4ec38db253
+$ docker pull library/mono@sha256:236d53d3d68abf90605a85f2cadc2ed69a96c821d1150c974c13affa86940d1a
 ```
 
--	Total Virtual Size: 622.5 MB (622531953 bytes)
--	Total v2 Content-Length: 227.5 MB (227546204 bytes)
+-	Total v2 Content-Length: 227.5 MB (227543433 bytes)
 
 ### Layers (13)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `5cdb3442421dc3535208c21b9d9a6fe91280c1c7a973183caac2648cca03c39e`
+#### `a27266e55c9580183fb756b1d8b3c1643ff73f66e6ae03e294a14dc8628bcda3`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.5.1 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 40-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.5.1 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 40-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:11:43 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 523.5 MB (523485606 bytes)
--	v2 Blob: `sha256:9594222e4c3ed3657ad9e466f6703a1727e65dac1bff39d29070940e36cd4a05`
--	v2 Content-Length: 182.8 MB (182766576 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:20:33 GMT
+-	Created: Tue, 24 May 2016 03:35:23 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:da8f1943c12a1673098d136ba3b7c821c233fe6027a521e016d1c48328b985f8`
+-	v2 Content-Length: 182.8 MB (182763468 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:06:14 GMT
 
-#### `9fc87209b7a8607251873670ddb8d876c02aae74641d2313adfaf27e634eb0cd`
+#### `1c25a74289d3dc0a85c33900a1c7218770b16b4e3b70db041a4c0b93a328af24`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:12:17 GMT
--	Parent Layer: `5cdb3442421dc3535208c21b9d9a6fe91280c1c7a973183caac2648cca03c39e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:46 GMT
+-	Parent Layer: `a27266e55c9580183fb756b1d8b3c1643ff73f66e6ae03e294a14dc8628bcda3`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fa01035e5a9ca5ed4057e6a2ef7b8e4c2149b0bc75b2f66a99aee16aa21671f7`
+#### `212591b9835ff180acf83fc1dd71c198dcf4af79bfff220937768b495a7f21e9`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:12:18 GMT
--	Parent Layer: `9fc87209b7a8607251873670ddb8d876c02aae74641d2313adfaf27e634eb0cd`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:2fa4edbda73ddbcc09fb474f0e0e388ac6fcb3a6edc8f9a8e4935d65fbf75cc0`
--	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:21:03 GMT
+-	Created: Tue, 24 May 2016 03:36:48 GMT
+-	Parent Layer: `1c25a74289d3dc0a85c33900a1c7218770b16b4e3b70db041a4c0b93a328af24`
+-	v2 Blob: `sha256:80bc06cb37a85aee6e2371cb737ec27636ec1a243e0622015ac0c8fa168c5e2e`
+-	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Tue, 31 May 2016 21:06:45 GMT
 
-#### `896dbad965af72425915d5d20cdd59e55ce634acd573d0b29c2a2ab739208dfe`
+#### `46705053ed9f5525b70037801ac75766d57b5021732564977850a55eac3a314a`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:12:19 GMT
--	Parent Layer: `fa01035e5a9ca5ed4057e6a2ef7b8e4c2149b0bc75b2f66a99aee16aa21671f7`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:49 GMT
+-	Parent Layer: `212591b9835ff180acf83fc1dd71c198dcf4af79bfff220937768b495a7f21e9`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e49d5a09fa804e1c2dbb31eb8dc6f6f619ce46bfd4523506eed9b249353cf0ed`
+#### `be90e3fd560841ed8e25261fe12a5536e178c678b222409ec28c57179a0dabf7`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:12:20 GMT
--	Parent Layer: `896dbad965af72425915d5d20cdd59e55ce634acd573d0b29c2a2ab739208dfe`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:50 GMT
+-	Parent Layer: `46705053ed9f5525b70037801ac75766d57b5021732564977850a55eac3a314a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8f49d71bb8b36ba2999d986bf6789a58dec27549b1bb7d81bec98ed78b9af926`
+#### `499c9285b180f094657bfd69aad1104d6b73b5c8ed940aef89052d62cd47ff0c`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:12:21 GMT
--	Parent Layer: `e49d5a09fa804e1c2dbb31eb8dc6f6f619ce46bfd4523506eed9b249353cf0ed`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:51 GMT
+-	Parent Layer: `be90e3fd560841ed8e25261fe12a5536e178c678b222409ec28c57179a0dabf7`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f98328dfe24582e888cdfa3a355ac43c196b33f83807ad79b602f3be9d4c54e9`
+#### `736f79b6c98e6ea96ac12d119974ae98ac495bea795e7f9ae261354dcefbad05`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:12:21 GMT
--	Parent Layer: `8f49d71bb8b36ba2999d986bf6789a58dec27549b1bb7d81bec98ed78b9af926`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:52 GMT
+-	Parent Layer: `499c9285b180f094657bfd69aad1104d6b73b5c8ed940aef89052d62cd47ff0c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4b1acb05f650a7777b25eb636125562869af00a152c9e992da1dec774f22d104`
+#### `b9afe6100c40e38eb42efd4fe54f33d53ec9eec9cee8c64040defbe7d2c5933a`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:12:22 GMT
--	Parent Layer: `f98328dfe24582e888cdfa3a355ac43c196b33f83807ad79b602f3be9d4c54e9`
+-	Created: Tue, 24 May 2016 03:36:53 GMT
+-	Parent Layer: `736f79b6c98e6ea96ac12d119974ae98ac495bea795e7f9ae261354dcefbad05`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -3238,197 +2732,165 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.0-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:fddedb613ce97e65bd6b116eaed37bd48c06e3bbdacb76c8fdef8cf7d4264d7f
+$ docker pull library/mono@sha256:e9b8bca0b937257528718ac25cc3fe98dc7cfd160b7e46407e1eafea40ebfd38
 ```
 
--	Total Virtual Size: 622.5 MB (622531953 bytes)
--	Total v2 Content-Length: 227.5 MB (227546204 bytes)
+-	Total v2 Content-Length: 227.5 MB (227543433 bytes)
 
 ### Layers (13)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `5cdb3442421dc3535208c21b9d9a6fe91280c1c7a973183caac2648cca03c39e`
+#### `a27266e55c9580183fb756b1d8b3c1643ff73f66e6ae03e294a14dc8628bcda3`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.5.1 main" > /etc/apt/sources.list.d/mono-xamarin.list\
-         && echo "deb http://download.mono-project.com/repo/debian 40-security main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.5.1 main" > /etc/apt/sources.list.d/mono-xamarin.list         && echo "deb http://download.mono-project.com/repo/debian 40-security main" >> /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:11:43 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 523.5 MB (523485606 bytes)
--	v2 Blob: `sha256:9594222e4c3ed3657ad9e466f6703a1727e65dac1bff39d29070940e36cd4a05`
--	v2 Content-Length: 182.8 MB (182766576 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:20:33 GMT
+-	Created: Tue, 24 May 2016 03:35:23 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:da8f1943c12a1673098d136ba3b7c821c233fe6027a521e016d1c48328b985f8`
+-	v2 Content-Length: 182.8 MB (182763468 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:06:14 GMT
 
-#### `9fc87209b7a8607251873670ddb8d876c02aae74641d2313adfaf27e634eb0cd`
+#### `1c25a74289d3dc0a85c33900a1c7218770b16b4e3b70db041a4c0b93a328af24`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:12:17 GMT
--	Parent Layer: `5cdb3442421dc3535208c21b9d9a6fe91280c1c7a973183caac2648cca03c39e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:46 GMT
+-	Parent Layer: `a27266e55c9580183fb756b1d8b3c1643ff73f66e6ae03e294a14dc8628bcda3`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fa01035e5a9ca5ed4057e6a2ef7b8e4c2149b0bc75b2f66a99aee16aa21671f7`
+#### `212591b9835ff180acf83fc1dd71c198dcf4af79bfff220937768b495a7f21e9`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:12:18 GMT
--	Parent Layer: `9fc87209b7a8607251873670ddb8d876c02aae74641d2313adfaf27e634eb0cd`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:2fa4edbda73ddbcc09fb474f0e0e388ac6fcb3a6edc8f9a8e4935d65fbf75cc0`
--	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:21:03 GMT
+-	Created: Tue, 24 May 2016 03:36:48 GMT
+-	Parent Layer: `1c25a74289d3dc0a85c33900a1c7218770b16b4e3b70db041a4c0b93a328af24`
+-	v2 Blob: `sha256:80bc06cb37a85aee6e2371cb737ec27636ec1a243e0622015ac0c8fa168c5e2e`
+-	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Tue, 31 May 2016 21:06:45 GMT
 
-#### `896dbad965af72425915d5d20cdd59e55ce634acd573d0b29c2a2ab739208dfe`
+#### `46705053ed9f5525b70037801ac75766d57b5021732564977850a55eac3a314a`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:12:19 GMT
--	Parent Layer: `fa01035e5a9ca5ed4057e6a2ef7b8e4c2149b0bc75b2f66a99aee16aa21671f7`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:49 GMT
+-	Parent Layer: `212591b9835ff180acf83fc1dd71c198dcf4af79bfff220937768b495a7f21e9`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e49d5a09fa804e1c2dbb31eb8dc6f6f619ce46bfd4523506eed9b249353cf0ed`
+#### `be90e3fd560841ed8e25261fe12a5536e178c678b222409ec28c57179a0dabf7`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:12:20 GMT
--	Parent Layer: `896dbad965af72425915d5d20cdd59e55ce634acd573d0b29c2a2ab739208dfe`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:50 GMT
+-	Parent Layer: `46705053ed9f5525b70037801ac75766d57b5021732564977850a55eac3a314a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8f49d71bb8b36ba2999d986bf6789a58dec27549b1bb7d81bec98ed78b9af926`
+#### `499c9285b180f094657bfd69aad1104d6b73b5c8ed940aef89052d62cd47ff0c`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:12:21 GMT
--	Parent Layer: `e49d5a09fa804e1c2dbb31eb8dc6f6f619ce46bfd4523506eed9b249353cf0ed`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:51 GMT
+-	Parent Layer: `be90e3fd560841ed8e25261fe12a5536e178c678b222409ec28c57179a0dabf7`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f98328dfe24582e888cdfa3a355ac43c196b33f83807ad79b602f3be9d4c54e9`
+#### `736f79b6c98e6ea96ac12d119974ae98ac495bea795e7f9ae261354dcefbad05`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:12:21 GMT
--	Parent Layer: `8f49d71bb8b36ba2999d986bf6789a58dec27549b1bb7d81bec98ed78b9af926`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:36:52 GMT
+-	Parent Layer: `499c9285b180f094657bfd69aad1104d6b73b5c8ed940aef89052d62cd47ff0c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4b1acb05f650a7777b25eb636125562869af00a152c9e992da1dec774f22d104`
+#### `b9afe6100c40e38eb42efd4fe54f33d53ec9eec9cee8c64040defbe7d2c5933a`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:12:22 GMT
--	Parent Layer: `f98328dfe24582e888cdfa3a355ac43c196b33f83807ad79b602f3be9d4c54e9`
+-	Created: Tue, 24 May 2016 03:36:53 GMT
+-	Parent Layer: `736f79b6c98e6ea96ac12d119974ae98ac495bea795e7f9ae261354dcefbad05`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -3436,86 +2898,73 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.2.1.102`
 
 ```console
-$ docker pull library/mono@sha256:ec0ee0ff7e7505021bfb03e3f774c8d4a3a66c2514cc41dbbc5cd21fc34fd290
+$ docker pull library/mono@sha256:8e306b4d8033eedbb42dcd7c9e69b1777e8ebf911083e8c0a150132c6666520f
 ```
 
--	Total Virtual Size: 628.8 MB (628825591 bytes)
--	Total v2 Content-Length: 229.4 MB (229434737 bytes)
+-	Total v2 Content-Length: 229.4 MB (229436924 bytes)
 
 ### Layers (6)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `4c9c69abb377cd755c4d9765dc1b701f5b477b11106246ef68d9dc5a44d9cde4`
+#### `23043d32bfee36d610fa621d598d1c6a2742dcf31ce9755e2fe4d4094ef95de0`
 
 ```dockerfile
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.1.102 main" > /etc/apt/sources.list.d/mono-xamarin.list \
@@ -3524,97 +2973,83 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:15:06 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+-	Created: Tue, 24 May 2016 03:41:03 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 -	Docker Version: 1.9.1
--	Virtual Size: 529.8 MB (529779244 bytes)
--	v2 Blob: `sha256:3b0dcbe1a13cfc34cd6f9fd59b7dd3376fd1b207bd9afd8586ecc134c1042a83`
--	v2 Content-Length: 184.7 MB (184655464 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:22:25 GMT
+-	v2 Blob: `sha256:a7751687ae4957ff22f236d0a4d2c166a47a3cdf1ce22b0c5b90eb2604c4cc5c`
+-	v2 Content-Length: 184.7 MB (184657315 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:08:41 GMT
 
 ## `mono:4.2.1`
 
 ```console
-$ docker pull library/mono@sha256:95edefa880d466f7f30ce400c04056c99d21210b9fa2527c0d22a8b72597993d
+$ docker pull library/mono@sha256:8701646c1dca5eb12d98ac798c6b822424b459c95e6a80c67ebe4f6175501f49
 ```
 
--	Total Virtual Size: 628.8 MB (628825591 bytes)
--	Total v2 Content-Length: 229.4 MB (229434737 bytes)
+-	Total v2 Content-Length: 229.4 MB (229436924 bytes)
 
 ### Layers (6)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `4c9c69abb377cd755c4d9765dc1b701f5b477b11106246ef68d9dc5a44d9cde4`
+#### `23043d32bfee36d610fa621d598d1c6a2742dcf31ce9755e2fe4d4094ef95de0`
 
 ```dockerfile
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.1.102 main" > /etc/apt/sources.list.d/mono-xamarin.list \
@@ -3623,207 +3058,175 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:15:06 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+-	Created: Tue, 24 May 2016 03:41:03 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 -	Docker Version: 1.9.1
--	Virtual Size: 529.8 MB (529779244 bytes)
--	v2 Blob: `sha256:3b0dcbe1a13cfc34cd6f9fd59b7dd3376fd1b207bd9afd8586ecc134c1042a83`
--	v2 Content-Length: 184.7 MB (184655464 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:22:25 GMT
+-	v2 Blob: `sha256:a7751687ae4957ff22f236d0a4d2c166a47a3cdf1ce22b0c5b90eb2604c4cc5c`
+-	v2 Content-Length: 184.7 MB (184657315 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:08:41 GMT
 
 ## `mono:4.2.1.102-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:51dcfb7bff9d614598139f7b27546ec9d034fbb7693d2a825d6fa9a31ded7584
+$ docker pull library/mono@sha256:cca6dc13b74c2b0459bf4a043fae7a3902f3b636b8b4aeed952e55639dbd7780
 ```
 
--	Total Virtual Size: 628.8 MB (628825591 bytes)
--	Total v2 Content-Length: 229.4 MB (229435094 bytes)
+-	Total v2 Content-Length: 229.4 MB (229437279 bytes)
 
 ### Layers (13)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `4c9c69abb377cd755c4d9765dc1b701f5b477b11106246ef68d9dc5a44d9cde4`
+#### `d9dbd0e20c61d6cf924c380bf2090994c013353edaeb660d8b0bb13925bbbc7d`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.1.102 main" > /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.1.102 main" > /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:15:06 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 529.8 MB (529779244 bytes)
--	v2 Blob: `sha256:3b0dcbe1a13cfc34cd6f9fd59b7dd3376fd1b207bd9afd8586ecc134c1042a83`
--	v2 Content-Length: 184.7 MB (184655464 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:22:25 GMT
+-	Created: Tue, 24 May 2016 03:41:03 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:a7751687ae4957ff22f236d0a4d2c166a47a3cdf1ce22b0c5b90eb2604c4cc5c`
+-	v2 Content-Length: 184.7 MB (184657315 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:08:41 GMT
 
-#### `8e1b018d7ac7597b01a3772e10a0bab51c6206626feaf13eb682d48440b83c93`
+#### `3dde0412f1c00037bdfdce2b7676d2eebc614a75a58ac9d182fc6d9e63e38dcd`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:15:33 GMT
--	Parent Layer: `4c9c69abb377cd755c4d9765dc1b701f5b477b11106246ef68d9dc5a44d9cde4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:41:46 GMT
+-	Parent Layer: `d9dbd0e20c61d6cf924c380bf2090994c013353edaeb660d8b0bb13925bbbc7d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c66b8088d15cc590cc7a468cdaeebbf350c818c183d7ed5b58c48b6a773ccacf`
+#### `23529f5a67717c161503bc31d7ab50392f42bfbe210fa937dd0df581997d20a9`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:15:35 GMT
--	Parent Layer: `8e1b018d7ac7597b01a3772e10a0bab51c6206626feaf13eb682d48440b83c93`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:41dffe7965160f8891fe2748ae718d9ecf8858390db0f8abb387e1be087a8b89`
--	v2 Content-Length: 165.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:23:04 GMT
+-	Created: Tue, 24 May 2016 03:41:48 GMT
+-	Parent Layer: `3dde0412f1c00037bdfdce2b7676d2eebc614a75a58ac9d182fc6d9e63e38dcd`
+-	v2 Blob: `sha256:4c86c264c28d1c042394344e9b0f85843d691a7467e6296124704404fb93ec88`
+-	v2 Content-Length: 163.0 B
+-	v2 Last-Modified: Tue, 31 May 2016 21:09:22 GMT
 
-#### `21cf56acc634b37e8b99deb58e8de552b00e2c5dfae269bc37bd856f3fa0422c`
+#### `d316a6a7ef547dbf7b0e79ad84443b4cdce057184d74a7b1e0b1406d87f8993f`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:15:36 GMT
--	Parent Layer: `c66b8088d15cc590cc7a468cdaeebbf350c818c183d7ed5b58c48b6a773ccacf`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:41:50 GMT
+-	Parent Layer: `23529f5a67717c161503bc31d7ab50392f42bfbe210fa937dd0df581997d20a9`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d49f5ab3cdce2fd24ab94fc9d3ebd1870fd30db5607217c42688d68ba35267f1`
+#### `086fe52efb40fcada1c04b67cf25a587d0f02b14c74bd26934f9c5a0c7420e2f`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:15:36 GMT
--	Parent Layer: `21cf56acc634b37e8b99deb58e8de552b00e2c5dfae269bc37bd856f3fa0422c`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:41:51 GMT
+-	Parent Layer: `d316a6a7ef547dbf7b0e79ad84443b4cdce057184d74a7b1e0b1406d87f8993f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3edc2467ba17a0abd093c904a41ac797de7861c7d860c9d2984e2a454baa7547`
+#### `1336f7e922d3160cd47d4ba5f31d03fe675efbbb9aad66fd92b488dc2facc9a8`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:15:37 GMT
--	Parent Layer: `d49f5ab3cdce2fd24ab94fc9d3ebd1870fd30db5607217c42688d68ba35267f1`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:41:52 GMT
+-	Parent Layer: `086fe52efb40fcada1c04b67cf25a587d0f02b14c74bd26934f9c5a0c7420e2f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `aee3e73bfcb409e93a75e40efe9b8d74ec48de0da4322a08ce882e77489231f0`
+#### `81c4f4e7cee4d00af4afc602f9546498e907ac2258fbfd8d1880b6e6a2feb029`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:15:38 GMT
--	Parent Layer: `3edc2467ba17a0abd093c904a41ac797de7861c7d860c9d2984e2a454baa7547`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:41:54 GMT
+-	Parent Layer: `1336f7e922d3160cd47d4ba5f31d03fe675efbbb9aad66fd92b488dc2facc9a8`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `20f80c99cc749001dacecb439a55aafe64751661ea22447d3c6a5a2f663cf5c2`
+#### `f0604d69f41368ef947e39a012b63784d5ccc32c7afa5c6165cabbefa829a049`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:15:39 GMT
--	Parent Layer: `aee3e73bfcb409e93a75e40efe9b8d74ec48de0da4322a08ce882e77489231f0`
+-	Created: Tue, 24 May 2016 03:41:55 GMT
+-	Parent Layer: `81c4f4e7cee4d00af4afc602f9546498e907ac2258fbfd8d1880b6e6a2feb029`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -3831,196 +3234,165 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.2.1-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:e5cdeaf25186eb6ddd500c97a7ea116927eb3fae60dbd1f57f637cd2614c0d49
+$ docker pull library/mono@sha256:d7f7a1d1bea80616676f89953d3e6a9a6e3f9664704a8223c4d6da2ca19d5744
 ```
 
--	Total Virtual Size: 628.8 MB (628825591 bytes)
--	Total v2 Content-Length: 229.4 MB (229435094 bytes)
+-	Total v2 Content-Length: 229.4 MB (229437279 bytes)
 
 ### Layers (13)
 
-#### `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
+#### `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 
 ```dockerfile
-ADD file:7073e275b1e1e02725f7b99289a1c7b3bb5038e5f758bf761713a86a657ffdbc in /
+ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
 ```
 
--	Created: Tue, 03 May 2016 20:59:07 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84915344 bytes)
--	v2 Blob: `sha256:6474ebfb7a3e64f5ada980b935f45da831435cfaa72c867fbfcfd4ec62ed10a6`
--	v2 Content-Length: 37.2 MB (37196389 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:01:24 GMT
+-	Created: Mon, 23 May 2016 22:59:05 GMT
+-	v2 Blob: `sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`
+-	v2 Content-Length: 37.2 MB (37196464 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:13:33 GMT
 
-#### `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
+#### `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:59:10 GMT
--	Parent Layer: `048f0abd8cfbc239fd83a25472a9e5ba8780c41c7622d66c5a4462a447a39bd0`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Mon, 23 May 2016 22:59:08 GMT
+-	Parent Layer: `684e21bc4c585d380cdb3db4e4ca0662cc3f3a1c9d0525e3c62510ee6c6d87ab`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
+#### `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 01:59:58 GMT
--	Parent Layer: `fbe34672ed6a7713686af2b6c867a832513bfefa14982e65dde412d9f0537f09`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:21:15 GMT
+-	Parent Layer: `83c8ea4d65057c3f3ea5c4b506d30ff0b14b00cc24f852ee81b3b379b7b9d58a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
+#### `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
 
 ```dockerfile
-RUN apt-get update \
-	&& apt-get install -y curl \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:00:15 GMT
--	Parent Layer: `71628d8eaa2b7f5ee1557b33fa0d7926318656a8529e13f6dea01a8e483c94ce`
--	Docker Version: 1.9.1
--	Virtual Size: 14.1 MB (14073531 bytes)
--	v2 Blob: `sha256:c8415fce800368d9da77fa6c630cb5fc8fcc2b7517ba92b9ad3a3bd1da2de478`
--	v2 Content-Length: 7.6 MB (7553490 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:59 GMT
+-	Created: Tue, 24 May 2016 03:21:36 GMT
+-	Parent Layer: `d7520ee940e2704d194023c5ebf0b1acbe2ef23ca2b041379802dc56166f3ae4`
+-	v2 Blob: `sha256:abdaac4f958cdb8688c0636cf17ba1b190e42d3fc119cfb648cf79aece2dc0b4`
+-	v2 Content-Length: 7.6 MB (7553748 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:13 GMT
 
-#### `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
+#### `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 ```
 
--	Created: Wed, 04 May 2016 02:00:18 GMT
--	Parent Layer: `0e8245007bd492a64f1975e1f7483778b86c087ef755de1932c8c0ce3ab10947`
--	Docker Version: 1.9.1
--	Virtual Size: 57.5 KB (57472 bytes)
--	v2 Blob: `sha256:8ce62c05aaa88f97cb05933a6c35ee9672f22174e2c82500ea3132733fa36079`
--	v2 Content-Length: 29.3 KB (29330 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:15:53 GMT
+-	Created: Tue, 24 May 2016 03:21:42 GMT
+-	Parent Layer: `f3c13e75e35b4ed333a92bedeb1e1b391e0ad394041056d6ef1ae8d9b50da65c`
+-	v2 Blob: `sha256:88b188ef589db5d1c7066d9d6984de92108540176f20ada4680edffaf7b884c0`
+-	v2 Content-Length: 29.3 KB (29333 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:00:07 GMT
 
-#### `4c9c69abb377cd755c4d9765dc1b701f5b477b11106246ef68d9dc5a44d9cde4`
+#### `d9dbd0e20c61d6cf924c380bf2090994c013353edaeb660d8b0bb13925bbbc7d`
 
 ```dockerfile
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.1.102 main" > /etc/apt/sources.list.d/mono-xamarin.list \
-	&& apt-get update \
-	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.1.102 main" > /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 04 May 2016 02:15:06 GMT
--	Parent Layer: `64fe6a7f89738c56e4ba315f79fe751ad7a628c2f387e2dac5a2b1ffa337604a`
--	Docker Version: 1.9.1
--	Virtual Size: 529.8 MB (529779244 bytes)
--	v2 Blob: `sha256:3b0dcbe1a13cfc34cd6f9fd59b7dd3376fd1b207bd9afd8586ecc134c1042a83`
--	v2 Content-Length: 184.7 MB (184655464 bytes)
--	v2 Last-Modified: Fri, 06 May 2016 19:22:25 GMT
+-	Created: Tue, 24 May 2016 03:41:03 GMT
+-	Parent Layer: `f1210c1dfc5ba0be9b8e6e97e01389fa5ecc748a8ae7dc05285d95a332364e46`
+-	v2 Blob: `sha256:a7751687ae4957ff22f236d0a4d2c166a47a3cdf1ce22b0c5b90eb2604c4cc5c`
+-	v2 Content-Length: 184.7 MB (184657315 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 21:08:41 GMT
 
-#### `8e1b018d7ac7597b01a3772e10a0bab51c6206626feaf13eb682d48440b83c93`
+#### `3dde0412f1c00037bdfdce2b7676d2eebc614a75a58ac9d182fc6d9e63e38dcd`
 
 ```dockerfile
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 ```
 
--	Created: Wed, 04 May 2016 02:15:33 GMT
--	Parent Layer: `4c9c69abb377cd755c4d9765dc1b701f5b477b11106246ef68d9dc5a44d9cde4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:41:46 GMT
+-	Parent Layer: `d9dbd0e20c61d6cf924c380bf2090994c013353edaeb660d8b0bb13925bbbc7d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c66b8088d15cc590cc7a468cdaeebbf350c818c183d7ed5b58c48b6a773ccacf`
+#### `23529f5a67717c161503bc31d7ab50392f42bfbe210fa937dd0df581997d20a9`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:15:35 GMT
--	Parent Layer: `8e1b018d7ac7597b01a3772e10a0bab51c6206626feaf13eb682d48440b83c93`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:41dffe7965160f8891fe2748ae718d9ecf8858390db0f8abb387e1be087a8b89`
--	v2 Content-Length: 165.0 B
--	v2 Last-Modified: Fri, 06 May 2016 19:23:04 GMT
+-	Created: Tue, 24 May 2016 03:41:48 GMT
+-	Parent Layer: `3dde0412f1c00037bdfdce2b7676d2eebc614a75a58ac9d182fc6d9e63e38dcd`
+-	v2 Blob: `sha256:4c86c264c28d1c042394344e9b0f85843d691a7467e6296124704404fb93ec88`
+-	v2 Content-Length: 163.0 B
+-	v2 Last-Modified: Tue, 31 May 2016 21:09:22 GMT
 
-#### `21cf56acc634b37e8b99deb58e8de552b00e2c5dfae269bc37bd856f3fa0422c`
+#### `d316a6a7ef547dbf7b0e79ad84443b4cdce057184d74a7b1e0b1406d87f8993f`
 
 ```dockerfile
 WORKDIR /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:15:36 GMT
--	Parent Layer: `c66b8088d15cc590cc7a468cdaeebbf350c818c183d7ed5b58c48b6a773ccacf`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:41:50 GMT
+-	Parent Layer: `23529f5a67717c161503bc31d7ab50392f42bfbe210fa937dd0df581997d20a9`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d49f5ab3cdce2fd24ab94fc9d3ebd1870fd30db5607217c42688d68ba35267f1`
+#### `086fe52efb40fcada1c04b67cf25a587d0f02b14c74bd26934f9c5a0c7420e2f`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app/source
 ```
 
--	Created: Wed, 04 May 2016 02:15:36 GMT
--	Parent Layer: `21cf56acc634b37e8b99deb58e8de552b00e2c5dfae269bc37bd856f3fa0422c`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:41:51 GMT
+-	Parent Layer: `d316a6a7ef547dbf7b0e79ad84443b4cdce057184d74a7b1e0b1406d87f8993f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3edc2467ba17a0abd093c904a41ac797de7861c7d860c9d2984e2a454baa7547`
+#### `1336f7e922d3160cd47d4ba5f31d03fe675efbbb9aad66fd92b488dc2facc9a8`
 
 ```dockerfile
 ONBUILD RUN nuget restore -NonInteractive
 ```
 
--	Created: Wed, 04 May 2016 02:15:37 GMT
--	Parent Layer: `d49f5ab3cdce2fd24ab94fc9d3ebd1870fd30db5607217c42688d68ba35267f1`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:41:52 GMT
+-	Parent Layer: `086fe52efb40fcada1c04b67cf25a587d0f02b14c74bd26934f9c5a0c7420e2f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `aee3e73bfcb409e93a75e40efe9b8d74ec48de0da4322a08ce882e77489231f0`
+#### `81c4f4e7cee4d00af4afc602f9546498e907ac2258fbfd8d1880b6e6a2feb029`
 
 ```dockerfile
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
 ```
 
--	Created: Wed, 04 May 2016 02:15:38 GMT
--	Parent Layer: `3edc2467ba17a0abd093c904a41ac797de7861c7d860c9d2984e2a454baa7547`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Tue, 24 May 2016 03:41:54 GMT
+-	Parent Layer: `1336f7e922d3160cd47d4ba5f31d03fe675efbbb9aad66fd92b488dc2facc9a8`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `20f80c99cc749001dacecb439a55aafe64751661ea22447d3c6a5a2f663cf5c2`
+#### `f0604d69f41368ef947e39a012b63784d5ccc32c7afa5c6165cabbefa829a049`
 
 ```dockerfile
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
--	Created: Wed, 04 May 2016 02:15:39 GMT
--	Parent Layer: `aee3e73bfcb409e93a75e40efe9b8d74ec48de0da4322a08ce882e77489231f0`
+-	Created: Tue, 24 May 2016 03:41:55 GMT
+-	Parent Layer: `81c4f4e7cee4d00af4afc602f9546498e907ac2258fbfd8d1880b6e6a2feb029`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
