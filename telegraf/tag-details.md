@@ -1084,120 +1084,93 @@ CMD ["telegraf"]
 ## `telegraf:0.13-alpine`
 
 ```console
-$ docker pull library/telegraf@sha256:db758470ca5d0a1909709dbfb5a840d3bd2571bc598dc87f74d1f309c4ec89ac
+$ docker pull library/telegraf@sha256:21f8294b87a792e4813572f11d1a8338c0b5b60267a4af8bc9ef4e527b7cfc75
 ```
 
--	Total Virtual Size: 27.5 MB (27472922 bytes)
 -	Total v2 Content-Length: 9.1 MB (9068148 bytes)
 
 ### Layers (7)
 
-#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+#### `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 
 ```dockerfile
 ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 ```
 
 -	Created: Fri, 06 May 2016 14:56:49 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4796783 bytes)
 -	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
 -	v2 Content-Length: 2.3 MB (2320212 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `75e6d20ad7fd2282788f4cb9002a15c01ab3b4820752bd2f3394a4a984635ed8`
+#### `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 
 ```dockerfile
 ENV TELEGRAF_VERSION=0.13.0
 ```
 
 -	Created: Mon, 23 May 2016 21:48:15 GMT
--	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3aed9b6e5aa64035f6e4159e2e62ce246a7f05436479b26a60ab113550514ba6`
+#### `9546deb704bb9696f15082ff0238e61b0b6026361a2a42f22dd8d60470182c7d`
 
 ```dockerfile
-RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&\
-     update-ca-certificates &&\
-     gpg --keyserver hkp://ha.pool.sks-keyservers.net\
-         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&\
-     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc &&\
-     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&\
-     gpg --batch --verify telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&\
-     mkdir -p /usr/src &&\
-     tar -C /usr/src -xzf telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&\
-     rm -f /usr/src/telegraf-*/telegraf.conf &&\
-     chmod +x /usr/src/telegraf-*/* &&\
-     cp -a /usr/src/telegraf-*/* /usr/bin/ &&\
-     rm -rf *.tar.gz* /usr/src /root/.gnupg &&\
-     apk del .build-deps
+RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&     update-ca-certificates &&     gpg --keyserver hkp://ha.pool.sks-keyservers.net         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     gpg --batch --verify telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     mkdir -p /usr/src &&     tar -C /usr/src -xzf telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     rm -f /usr/src/telegraf-*/telegraf.conf &&     chmod +x /usr/src/telegraf-*/* &&     cp -a /usr/src/telegraf-*/* /usr/bin/ &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps
 ```
 
 -	Created: Mon, 23 May 2016 21:48:31 GMT
--	Parent Layer: `75e6d20ad7fd2282788f4cb9002a15c01ab3b4820752bd2f3394a4a984635ed8`
--	Docker Version: 1.9.1
--	Virtual Size: 22.7 MB (22676052 bytes)
+-	Parent Layer: `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 -	v2 Blob: `sha256:a71ec14d938fc3abeb07fe2c53107602a488b13cd327aada631415017fe3c236`
 -	v2 Content-Length: 6.7 MB (6747626 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 21:52:22 GMT
 
-#### `f80a1f68f1dbc72084d97df9526e13241b10fbcbc221c7988b40588d705a832e`
+#### `c09e436e662fcae74c5d6f94223746df91e1ceb4afec8821df55ec4486812e62`
 
 ```dockerfile
 EXPOSE 8092/udp 8094/tcp 8125/udp
 ```
 
 -	Created: Mon, 23 May 2016 21:48:31 GMT
--	Parent Layer: `3aed9b6e5aa64035f6e4159e2e62ce246a7f05436479b26a60ab113550514ba6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `9546deb704bb9696f15082ff0238e61b0b6026361a2a42f22dd8d60470182c7d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `eedf5fba4554c25e393d10b28daf4eaafd07739e8773ff19e02eaa1075fd4573`
+#### `c8c2b0614f628270028ce96ec8edcf828b0f973afa263646f77e2ea0d13ab8b0`
 
 ```dockerfile
 COPY file:86dbae508307843c78ebc51c18274a59b1509cec0b111eaf165d59b3a5057455 in /entrypoint.sh
 ```
 
 -	Created: Mon, 23 May 2016 21:48:32 GMT
--	Parent Layer: `f80a1f68f1dbc72084d97df9526e13241b10fbcbc221c7988b40588d705a832e`
--	Docker Version: 1.9.1
--	Virtual Size: 87.0 B
+-	Parent Layer: `c09e436e662fcae74c5d6f94223746df91e1ceb4afec8821df55ec4486812e62`
 -	v2 Blob: `sha256:84261055c5e29879d2ca4bf0f7237a15065a60fa0a717883923a89d137483618`
 -	v2 Content-Length: 182.0 B
 -	v2 Last-Modified: Mon, 23 May 2016 21:52:13 GMT
 
-#### `ab32d78fe9f721163ebe69f681ff38c09cff042d623ac38bca7b1f86b83af6f8`
+#### `52daa0e8b266190e0c0a46fad4c76fedc8ab26eb7c75156fa1cca7a474020580`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
 -	Created: Mon, 23 May 2016 21:48:33 GMT
--	Parent Layer: `eedf5fba4554c25e393d10b28daf4eaafd07739e8773ff19e02eaa1075fd4573`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `c8c2b0614f628270028ce96ec8edcf828b0f973afa263646f77e2ea0d13ab8b0`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `360e650387f7f49f71f96a2fbe6013e1f730403b7deed1f5f0fede938a296257`
+#### `ef4be1a9d161533b9cd1286400ad5ca17370e7dd5df091aaf13e6e5d5641e648`
 
 ```dockerfile
 CMD ["telegraf"]
 ```
 
 -	Created: Mon, 23 May 2016 21:48:34 GMT
--	Parent Layer: `ab32d78fe9f721163ebe69f681ff38c09cff042d623ac38bca7b1f86b83af6f8`
+-	Parent Layer: `52daa0e8b266190e0c0a46fad4c76fedc8ab26eb7c75156fa1cca7a474020580`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1205,120 +1178,93 @@ CMD ["telegraf"]
 ## `telegraf:0.13.0-alpine`
 
 ```console
-$ docker pull library/telegraf@sha256:e7390280a44879a1dd368ac7c93c2b036083fbb4049bb473c4f266f42f4aade8
+$ docker pull library/telegraf@sha256:7efeb7ce6c3148ffcaf91701bb9c54e3bdf9de4a6e708483d6396da7a37073aa
 ```
 
--	Total Virtual Size: 27.5 MB (27472922 bytes)
 -	Total v2 Content-Length: 9.1 MB (9068148 bytes)
 
 ### Layers (7)
 
-#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+#### `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 
 ```dockerfile
 ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 ```
 
 -	Created: Fri, 06 May 2016 14:56:49 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4796783 bytes)
 -	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
 -	v2 Content-Length: 2.3 MB (2320212 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `75e6d20ad7fd2282788f4cb9002a15c01ab3b4820752bd2f3394a4a984635ed8`
+#### `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 
 ```dockerfile
 ENV TELEGRAF_VERSION=0.13.0
 ```
 
 -	Created: Mon, 23 May 2016 21:48:15 GMT
--	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3aed9b6e5aa64035f6e4159e2e62ce246a7f05436479b26a60ab113550514ba6`
+#### `9546deb704bb9696f15082ff0238e61b0b6026361a2a42f22dd8d60470182c7d`
 
 ```dockerfile
-RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&\
-     update-ca-certificates &&\
-     gpg --keyserver hkp://ha.pool.sks-keyservers.net\
-         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&\
-     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc &&\
-     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&\
-     gpg --batch --verify telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&\
-     mkdir -p /usr/src &&\
-     tar -C /usr/src -xzf telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&\
-     rm -f /usr/src/telegraf-*/telegraf.conf &&\
-     chmod +x /usr/src/telegraf-*/* &&\
-     cp -a /usr/src/telegraf-*/* /usr/bin/ &&\
-     rm -rf *.tar.gz* /usr/src /root/.gnupg &&\
-     apk del .build-deps
+RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&     update-ca-certificates &&     gpg --keyserver hkp://ha.pool.sks-keyservers.net         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     gpg --batch --verify telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     mkdir -p /usr/src &&     tar -C /usr/src -xzf telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     rm -f /usr/src/telegraf-*/telegraf.conf &&     chmod +x /usr/src/telegraf-*/* &&     cp -a /usr/src/telegraf-*/* /usr/bin/ &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps
 ```
 
 -	Created: Mon, 23 May 2016 21:48:31 GMT
--	Parent Layer: `75e6d20ad7fd2282788f4cb9002a15c01ab3b4820752bd2f3394a4a984635ed8`
--	Docker Version: 1.9.1
--	Virtual Size: 22.7 MB (22676052 bytes)
+-	Parent Layer: `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 -	v2 Blob: `sha256:a71ec14d938fc3abeb07fe2c53107602a488b13cd327aada631415017fe3c236`
 -	v2 Content-Length: 6.7 MB (6747626 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 21:52:22 GMT
 
-#### `f80a1f68f1dbc72084d97df9526e13241b10fbcbc221c7988b40588d705a832e`
+#### `c09e436e662fcae74c5d6f94223746df91e1ceb4afec8821df55ec4486812e62`
 
 ```dockerfile
 EXPOSE 8092/udp 8094/tcp 8125/udp
 ```
 
 -	Created: Mon, 23 May 2016 21:48:31 GMT
--	Parent Layer: `3aed9b6e5aa64035f6e4159e2e62ce246a7f05436479b26a60ab113550514ba6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `9546deb704bb9696f15082ff0238e61b0b6026361a2a42f22dd8d60470182c7d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `eedf5fba4554c25e393d10b28daf4eaafd07739e8773ff19e02eaa1075fd4573`
+#### `c8c2b0614f628270028ce96ec8edcf828b0f973afa263646f77e2ea0d13ab8b0`
 
 ```dockerfile
 COPY file:86dbae508307843c78ebc51c18274a59b1509cec0b111eaf165d59b3a5057455 in /entrypoint.sh
 ```
 
 -	Created: Mon, 23 May 2016 21:48:32 GMT
--	Parent Layer: `f80a1f68f1dbc72084d97df9526e13241b10fbcbc221c7988b40588d705a832e`
--	Docker Version: 1.9.1
--	Virtual Size: 87.0 B
+-	Parent Layer: `c09e436e662fcae74c5d6f94223746df91e1ceb4afec8821df55ec4486812e62`
 -	v2 Blob: `sha256:84261055c5e29879d2ca4bf0f7237a15065a60fa0a717883923a89d137483618`
 -	v2 Content-Length: 182.0 B
 -	v2 Last-Modified: Mon, 23 May 2016 21:52:13 GMT
 
-#### `ab32d78fe9f721163ebe69f681ff38c09cff042d623ac38bca7b1f86b83af6f8`
+#### `52daa0e8b266190e0c0a46fad4c76fedc8ab26eb7c75156fa1cca7a474020580`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
 -	Created: Mon, 23 May 2016 21:48:33 GMT
--	Parent Layer: `eedf5fba4554c25e393d10b28daf4eaafd07739e8773ff19e02eaa1075fd4573`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `c8c2b0614f628270028ce96ec8edcf828b0f973afa263646f77e2ea0d13ab8b0`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `360e650387f7f49f71f96a2fbe6013e1f730403b7deed1f5f0fede938a296257`
+#### `ef4be1a9d161533b9cd1286400ad5ca17370e7dd5df091aaf13e6e5d5641e648`
 
 ```dockerfile
 CMD ["telegraf"]
 ```
 
 -	Created: Mon, 23 May 2016 21:48:34 GMT
--	Parent Layer: `ab32d78fe9f721163ebe69f681ff38c09cff042d623ac38bca7b1f86b83af6f8`
+-	Parent Layer: `52daa0e8b266190e0c0a46fad4c76fedc8ab26eb7c75156fa1cca7a474020580`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1326,120 +1272,93 @@ CMD ["telegraf"]
 ## `telegraf:alpine`
 
 ```console
-$ docker pull library/telegraf@sha256:3cd834bdb9faaa5bdc297c35189dc0ffe137a0ed09b6f670426ea1e6bf1d6cd2
+$ docker pull library/telegraf@sha256:f08a74b02a18382e4765634efed7cd868a77343cde980260d5a58b3a6f36555e
 ```
 
--	Total Virtual Size: 27.5 MB (27472922 bytes)
 -	Total v2 Content-Length: 9.1 MB (9068148 bytes)
 
 ### Layers (7)
 
-#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+#### `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 
 ```dockerfile
 ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 ```
 
 -	Created: Fri, 06 May 2016 14:56:49 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4796783 bytes)
 -	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
 -	v2 Content-Length: 2.3 MB (2320212 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `75e6d20ad7fd2282788f4cb9002a15c01ab3b4820752bd2f3394a4a984635ed8`
+#### `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 
 ```dockerfile
 ENV TELEGRAF_VERSION=0.13.0
 ```
 
 -	Created: Mon, 23 May 2016 21:48:15 GMT
--	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3aed9b6e5aa64035f6e4159e2e62ce246a7f05436479b26a60ab113550514ba6`
+#### `9546deb704bb9696f15082ff0238e61b0b6026361a2a42f22dd8d60470182c7d`
 
 ```dockerfile
-RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&\
-     update-ca-certificates &&\
-     gpg --keyserver hkp://ha.pool.sks-keyservers.net\
-         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&\
-     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc &&\
-     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&\
-     gpg --batch --verify telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&\
-     mkdir -p /usr/src &&\
-     tar -C /usr/src -xzf telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&\
-     rm -f /usr/src/telegraf-*/telegraf.conf &&\
-     chmod +x /usr/src/telegraf-*/* &&\
-     cp -a /usr/src/telegraf-*/* /usr/bin/ &&\
-     rm -rf *.tar.gz* /usr/src /root/.gnupg &&\
-     apk del .build-deps
+RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&     update-ca-certificates &&     gpg --keyserver hkp://ha.pool.sks-keyservers.net         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     gpg --batch --verify telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     mkdir -p /usr/src &&     tar -C /usr/src -xzf telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     rm -f /usr/src/telegraf-*/telegraf.conf &&     chmod +x /usr/src/telegraf-*/* &&     cp -a /usr/src/telegraf-*/* /usr/bin/ &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps
 ```
 
 -	Created: Mon, 23 May 2016 21:48:31 GMT
--	Parent Layer: `75e6d20ad7fd2282788f4cb9002a15c01ab3b4820752bd2f3394a4a984635ed8`
--	Docker Version: 1.9.1
--	Virtual Size: 22.7 MB (22676052 bytes)
+-	Parent Layer: `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 -	v2 Blob: `sha256:a71ec14d938fc3abeb07fe2c53107602a488b13cd327aada631415017fe3c236`
 -	v2 Content-Length: 6.7 MB (6747626 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 21:52:22 GMT
 
-#### `f80a1f68f1dbc72084d97df9526e13241b10fbcbc221c7988b40588d705a832e`
+#### `c09e436e662fcae74c5d6f94223746df91e1ceb4afec8821df55ec4486812e62`
 
 ```dockerfile
 EXPOSE 8092/udp 8094/tcp 8125/udp
 ```
 
 -	Created: Mon, 23 May 2016 21:48:31 GMT
--	Parent Layer: `3aed9b6e5aa64035f6e4159e2e62ce246a7f05436479b26a60ab113550514ba6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `9546deb704bb9696f15082ff0238e61b0b6026361a2a42f22dd8d60470182c7d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `eedf5fba4554c25e393d10b28daf4eaafd07739e8773ff19e02eaa1075fd4573`
+#### `c8c2b0614f628270028ce96ec8edcf828b0f973afa263646f77e2ea0d13ab8b0`
 
 ```dockerfile
 COPY file:86dbae508307843c78ebc51c18274a59b1509cec0b111eaf165d59b3a5057455 in /entrypoint.sh
 ```
 
 -	Created: Mon, 23 May 2016 21:48:32 GMT
--	Parent Layer: `f80a1f68f1dbc72084d97df9526e13241b10fbcbc221c7988b40588d705a832e`
--	Docker Version: 1.9.1
--	Virtual Size: 87.0 B
+-	Parent Layer: `c09e436e662fcae74c5d6f94223746df91e1ceb4afec8821df55ec4486812e62`
 -	v2 Blob: `sha256:84261055c5e29879d2ca4bf0f7237a15065a60fa0a717883923a89d137483618`
 -	v2 Content-Length: 182.0 B
 -	v2 Last-Modified: Mon, 23 May 2016 21:52:13 GMT
 
-#### `ab32d78fe9f721163ebe69f681ff38c09cff042d623ac38bca7b1f86b83af6f8`
+#### `52daa0e8b266190e0c0a46fad4c76fedc8ab26eb7c75156fa1cca7a474020580`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
 -	Created: Mon, 23 May 2016 21:48:33 GMT
--	Parent Layer: `eedf5fba4554c25e393d10b28daf4eaafd07739e8773ff19e02eaa1075fd4573`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `c8c2b0614f628270028ce96ec8edcf828b0f973afa263646f77e2ea0d13ab8b0`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `360e650387f7f49f71f96a2fbe6013e1f730403b7deed1f5f0fede938a296257`
+#### `ef4be1a9d161533b9cd1286400ad5ca17370e7dd5df091aaf13e6e5d5641e648`
 
 ```dockerfile
 CMD ["telegraf"]
 ```
 
 -	Created: Mon, 23 May 2016 21:48:34 GMT
--	Parent Layer: `ab32d78fe9f721163ebe69f681ff38c09cff042d623ac38bca7b1f86b83af6f8`
+-	Parent Layer: `52daa0e8b266190e0c0a46fad4c76fedc8ab26eb7c75156fa1cca7a474020580`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
