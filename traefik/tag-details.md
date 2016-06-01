@@ -185,7 +185,7 @@ ENTRYPOINT &{["/traefik"]}
 ## `traefik:v1.0.0-beta.392`
 
 ```console
-$ docker pull library/traefik@sha256:74b032e963d18c35dd9d19e89c43e3a0525392ff479d2ed5590ecdce9266121a
+$ docker pull library/traefik@sha256:50d4d6b7e7591f9265fc27f02071fa9514f3be0826aebc811a758f349c0ace8f
 ```
 
 -	Total v2 Content-Length: 7.4 MB (7414339 bytes)
@@ -227,7 +227,7 @@ EXPOSE 80/tcp
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2ec4d0e756e6001f62e9d60677e6b92ab13e676655dc1157ae1b2482795733ff`
+#### `92b1b599d911f6434195dd9861e5d1b791dfcc5d14277637044b326f81d860e0`
 
 ```dockerfile
 ENTRYPOINT &{["/traefik"]}
