@@ -154,163 +154,141 @@ CMD ["notary-server" "--help"]
 ## `notary:server-0.3.0`
 
 ```console
-$ docker pull library/notary@sha256:e18d43fc90bb0ccfac8de0b788f2de2ddeeb62ddffa7b56143a8833ec023cf8c
+$ docker pull library/notary@sha256:fa20696578b2fc37d17abc402da06d4816149cf89b378345e61e5ccde92aa5a7
 ```
 
--	Total Virtual Size: 21.1 MB (21081935 bytes)
 -	Total v2 Content-Length: 7.1 MB (7127532 bytes)
 
 ### Layers (11)
 
-#### `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
+#### `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 
 ```dockerfile
 ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
 ```
 
 -	Created: Fri, 06 May 2016 14:56:49 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 4.8 MB (4796783 bytes)
 -	v2 Blob: `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`
 -	v2 Content-Length: 2.3 MB (2320212 bytes)
 -	v2 Last-Modified: Fri, 06 May 2016 14:57:17 GMT
 
-#### `9c0283a425462e8241210ae4c6a7a5bf72a14350ec3a6641ee25ed75e71085fc`
+#### `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 
 ```dockerfile
 EXPOSE 4443/tcp
 ```
 
 -	Created: Fri, 06 May 2016 15:39:22 GMT
--	Parent Layer: `0a3b5ba3277d35fc1f2d7ecbd007f1f53ca289f7674854ac7a5405e5ee3e495d`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `2a39cddede3d258ea8cb7becb4fcd8dffe00a7d5a5340dcc9fff695ab0432882`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fe426ddc701d10ba21ccfffd4f09bccdd6ad79087be3da7dc5b673418cea62b5`
+#### `8921f722c5fe34625a26ef2924a3b0858b1d9f2bb511f30d52dfb516478ed329`
 
 ```dockerfile
 COPY file:1e07c889ee6e8eecd33e897f16f7f19404b723eb554a197c98740de927eb0a9a in /notary/server/
 ```
 
 -	Created: Fri, 06 May 2016 15:39:22 GMT
--	Parent Layer: `9c0283a425462e8241210ae4c6a7a5bf72a14350ec3a6641ee25ed75e71085fc`
--	Docker Version: 1.9.1
--	Virtual Size: 539.0 B
+-	Parent Layer: `c9e5d549ca9c919fd5b55d0cbf73cbf91a9b3bec1a2fa5014e55189504c94837`
 -	v2 Blob: `sha256:237809cc8e665693e7c3e80c36771256590cb46dc65c205c6ec97462e89cc0ed`
 -	v2 Content-Length: 430.0 B
 -	v2 Last-Modified: Fri, 06 May 2016 18:07:54 GMT
 
-#### `caff79a9a834b7fc9f10257ad24b9a21d99aac4c507e197cf14e709a38a72bcd`
+#### `866e724f81ded67508d73251df6238433628bae5ea155a86c1c84de67cff1ad9`
 
 ```dockerfile
 COPY file:d93103320501c0604c868611a6b25c3975a0fd5e0a9a3ed1a4876629426cc6ae in /notary/server/
 ```
 
 -	Created: Wed, 11 May 2016 21:30:10 GMT
--	Parent Layer: `fe426ddc701d10ba21ccfffd4f09bccdd6ad79087be3da7dc5b673418cea62b5`
--	Docker Version: 1.9.1
--	Virtual Size: 16.3 MB (16279408 bytes)
+-	Parent Layer: `8921f722c5fe34625a26ef2924a3b0858b1d9f2bb511f30d52dfb516478ed329`
 -	v2 Blob: `sha256:d8e2f04419fc2082d8b376b7528c9f984f39a018ab0c6a148e98b1cd1a934373`
 -	v2 Content-Length: 4.8 MB (4805125 bytes)
 -	v2 Last-Modified: Wed, 11 May 2016 21:33:05 GMT
 
-#### `39fdd72db62a6c48df962fd4a56fef721c78fe5e344ed8c1cda2ed1f5ec476d4`
+#### `0167f79815d1476d7915bc77e15f508a5b6b475ecf2f6e567910ea33dbd36315`
 
 ```dockerfile
 COPY file:2129c12f1c9cfe5143a9519521fcc680f97f3d82a20b2c5fe2fdd6e09babd2af in /notary/server/
 ```
 
 -	Created: Wed, 11 May 2016 21:30:11 GMT
--	Parent Layer: `caff79a9a834b7fc9f10257ad24b9a21d99aac4c507e197cf14e709a38a72bcd`
--	Docker Version: 1.9.1
--	Virtual Size: 316.0 B
+-	Parent Layer: `866e724f81ded67508d73251df6238433628bae5ea155a86c1c84de67cff1ad9`
 -	v2 Blob: `sha256:9e6ff153f27a35d5da93ae0fbfa9279e35c6396c15598192452bcf32e13fb16f`
 -	v2 Content-Length: 380.0 B
 -	v2 Last-Modified: Wed, 11 May 2016 21:33:00 GMT
 
-#### `3f3b36e62979e85b0607bbfd55e7d4af60f8b165bd244e651becccb8a91f305d`
+#### `60a4198a2e85d792d22a26a10c2fb6471083786ea6441a1371d50b8b21e3477d`
 
 ```dockerfile
 WORKDIR /notary/server
 ```
 
 -	Created: Wed, 11 May 2016 21:30:12 GMT
--	Parent Layer: `39fdd72db62a6c48df962fd4a56fef721c78fe5e344ed8c1cda2ed1f5ec476d4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `0167f79815d1476d7915bc77e15f508a5b6b475ecf2f6e567910ea33dbd36315`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3205a41a5418d3191c59e7426f9a007b458021de815ea6d41981cd4452b4290`
+#### `2b65cdbb3b0c4dfc41114e79483f2b894811607f420c657bab37807e447d9516`
 
 ```dockerfile
 RUN adduser -D -H -g "" notary
 ```
 
 -	Created: Wed, 11 May 2016 21:30:13 GMT
--	Parent Layer: `3f3b36e62979e85b0607bbfd55e7d4af60f8b165bd244e651becccb8a91f305d`
--	Docker Version: 1.9.1
--	Virtual Size: 4.9 KB (4889 bytes)
+-	Parent Layer: `60a4198a2e85d792d22a26a10c2fb6471083786ea6441a1371d50b8b21e3477d`
 -	v2 Blob: `sha256:40f3b040b0ce0ffdb0c12364b0191070df122d2b7fdd8353735ba45794b989ca`
 -	v2 Content-Length: 1.2 KB (1193 bytes)
 -	v2 Last-Modified: Wed, 11 May 2016 21:32:54 GMT
 
-#### `04950d466032fa0f686feb09d87d000ef73d756d916b721b96586ca1e19ab9d4`
+#### `c9e1e321ded4102cf8f3a83c75c906959fa7ebf3456f786313e2d1c3d0a5493a`
 
 ```dockerfile
 USER [notary]
 ```
 
 -	Created: Wed, 11 May 2016 21:30:14 GMT
--	Parent Layer: `c3205a41a5418d3191c59e7426f9a007b458021de815ea6d41981cd4452b4290`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `2b65cdbb3b0c4dfc41114e79483f2b894811607f420c657bab37807e447d9516`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8ef28f96ca3cb1c27543afd865e38751d56936d43df98a4b2751368db5136d36`
+#### `1fb0aa6bde8545139164f35d37a65272ab4e100296248939c60dbd6be36df736`
 
 ```dockerfile
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/server
 ```
 
 -	Created: Wed, 11 May 2016 21:30:14 GMT
--	Parent Layer: `04950d466032fa0f686feb09d87d000ef73d756d916b721b96586ca1e19ab9d4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `c9e1e321ded4102cf8f3a83c75c906959fa7ebf3456f786313e2d1c3d0a5493a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ea0f1c40b226e8ffd8af18f1c049ef62265469c39d8a837954a883ecf3f3993`
+#### `00cde100d68384d01e7ad0321285fba1d01feafc9892b86a949195c553dfa697`
 
 ```dockerfile
 ENTRYPOINT &{["entrypoint.sh"]}
 ```
 
 -	Created: Wed, 11 May 2016 21:30:15 GMT
--	Parent Layer: `8ef28f96ca3cb1c27543afd865e38751d56936d43df98a4b2751368db5136d36`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Parent Layer: `1fb0aa6bde8545139164f35d37a65272ab4e100296248939c60dbd6be36df736`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8a58ae03c4fc62b51f396c7674b70fa8db8201cb6359c896bf7c2b96dbbd4eda`
+#### `bdd7fac1ec3d86e9c965f137ffe7aaf9f80a88889192237531472c4fde7fa3da`
 
 ```dockerfile
 CMD ["notary-server" "--help"]
 ```
 
 -	Created: Wed, 11 May 2016 21:30:16 GMT
--	Parent Layer: `5ea0f1c40b226e8ffd8af18f1c049ef62265469c39d8a837954a883ecf3f3993`
+-	Parent Layer: `00cde100d68384d01e7ad0321285fba1d01feafc9892b86a949195c553dfa697`
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
