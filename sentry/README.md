@@ -136,7 +136,7 @@ View [license information](https://github.com/getsentry/sentry/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
