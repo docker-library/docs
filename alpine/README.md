@@ -1,11 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/2a6a39490230f96f8345bc0d9a01c38cae2697d7/versions/library-3.1/Dockerfile)
--	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/33960bef67f71465c6b6887db2c15ea9df8bb80f/versions/library-3.2/Dockerfile)
--	[`3.3`, `latest` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/71d4df1ae9256fd95144026b3894c18b1f670875/versions/library-3.3/Dockerfile)
--	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/95c76010e843183c89ceab070a86007a22dc907d/versions/library-edge/Dockerfile)
+-	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/0be4cca6460d632725b731783a26cf600028a008/versions/library-3.1/Dockerfile)
+-	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/201c4d54e4c6894b1e0f7dff155e1c620c634c67/versions/library-3.2/Dockerfile)
+-	[`3.3` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/a454037ec0c082616d3e5c0c012f268ac298448c/versions/library-3.3/Dockerfile)
+-	[`3.4`, `latest` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/451a9331cec1494823359ad411d557d4db4611d9/versions/library-3.4/Dockerfile)
+-	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/0af9199656130fc6fe132d0a48b27ff6adc9276f/versions/library-edge/Dockerfile)
 
-[![](https://badge.imagelayers.io/alpine:latest.svg)](https://imagelayers.io/?images=alpine:3.1,alpine:3.2,alpine:3.3,alpine:edge)
+[![](https://badge.imagelayers.io/alpine:latest.svg)](https://imagelayers.io/?images=alpine:3.1,alpine:3.2,alpine:3.3,alpine:3.4,alpine:edge)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/alpine`)](https://github.com/docker-library/official-images/blob/master/library/alpine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Falpine).
 
