@@ -3,7 +3,7 @@
 # Tags of `orientdb`
 
 -	[`orientdb:2.0.18`](#orientdb2018)
--	[`orientdb:2.1.18`](#orientdb2118)
+-	[`orientdb:2.1.19`](#orientdb2119)
 -	[`orientdb:2.2.0`](#orientdb220)
 -	[`orientdb:latest`](#orientdblatest)
 
@@ -317,13 +317,13 @@ CMD ["server.sh"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `orientdb:2.1.18`
+## `orientdb:2.1.19`
 
 ```console
-$ docker pull library/orientdb@sha256:0e2f3eae20956710d3946d66bf37c08dc88e936ee27b33502805a2db9ce30fd3
+$ docker pull library/orientdb@sha256:3c9ad32f31aa81e1b0f4bc14f17a16e6de9c090e0b569eced81fc26d8b160676
 ```
 
--	Total v2 Content-Length: 83.2 MB (83220344 bytes)
+-	Total v2 Content-Length: 83.2 MB (83225774 bytes)
 
 ### Layers (20)
 
@@ -437,10 +437,10 @@ MAINTAINER OrientDB LTD (info@orientdb.com)
 #### `7bd49329bbcddb484b36846610229e7950343ae0daff22b689dc9bef1009e3d5`
 
 ```dockerfile
-ENV ORIENTDB_VERSION=2.1.18
+ENV ORIENTDB_VERSION=2.1.19
 ```
 
--	Created: Wed, 25 May 2016 16:45:12 GMT
+-	Created: Thu, 02 Jun 2016 18:45:01 GMT
 -	Parent Layer: `00f0236feae2ff0a6e1aaab619127204f42904c4ec6fc9c922e68c1b70b31248`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -449,10 +449,10 @@ ENV ORIENTDB_VERSION=2.1.18
 #### `236167089cd56c6ab44366784d6b46a53575ef94315f3ccfb0ff815f76fcce11`
 
 ```dockerfile
-ENV ORIENTDB_DOWNLOAD_MD5=35a4411e638d3d285ad828da0fdf55dc
+ENV ORIENTDB_DOWNLOAD_MD5=11942093675c32b9341658bd56f191f0
 ```
 
--	Created: Wed, 25 May 2016 16:45:13 GMT
+-	Created: Thu, 02 Jun 2016 18:45:02 GMT
 -	Parent Layer: `7bd49329bbcddb484b36846610229e7950343ae0daff22b689dc9bef1009e3d5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -461,107 +461,107 @@ ENV ORIENTDB_DOWNLOAD_MD5=35a4411e638d3d285ad828da0fdf55dc
 #### `a2b67b49f72af67d34c3b83cf1dd6da8072d5ceb1dffca769c206703e812ce42`
 
 ```dockerfile
-ENV ORIENTDB_DOWNLOAD_SHA1=f6cf3dd726e59ff2ac8abd5e7b1fde8344b62534
+ENV ORIENTDB_DOWNLOAD_SHA1=289b5d0950254e90531e65a3f4ef530bb4193f32
 ```
 
--	Created: Wed, 25 May 2016 16:45:13 GMT
+-	Created: Thu, 02 Jun 2016 18:45:02 GMT
 -	Parent Layer: `236167089cd56c6ab44366784d6b46a53575ef94315f3ccfb0ff815f76fcce11`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `11fdfe836cf5f3376c82c942361b066c469295e7d43aaf7ff50ab577963769f7`
+#### `9b35a831fe6141fa1caf049c50421b25ad29ae83e94e30bccad76ad4bac3e118`
 
 ```dockerfile
 RUN apk add --update         tar     && rm -rf /var/cache/apk/*
 ```
 
--	Created: Wed, 25 May 2016 16:45:24 GMT
+-	Created: Thu, 02 Jun 2016 18:45:08 GMT
 -	Parent Layer: `a2b67b49f72af67d34c3b83cf1dd6da8072d5ceb1dffca769c206703e812ce42`
--	v2 Blob: `sha256:0ac4b835ecd73d75617a37a3b0f45b321e4c1549638e20b1c20f17d1860bb04e`
--	v2 Content-Length: 260.1 KB (260083 bytes)
--	v2 Last-Modified: Wed, 25 May 2016 16:49:48 GMT
+-	v2 Blob: `sha256:ee067e63c36bf8fbd4932a9153501ce8f2b7a570c3a72dfe3a313e3149b1a0df`
+-	v2 Content-Length: 260.1 KB (260080 bytes)
+-	v2 Last-Modified: Thu, 02 Jun 2016 18:49:11 GMT
 
-#### `c324d1edf671a75adefcb731a2807a317a3bb23636dc12537dc61c9fa7bea8a6`
+#### `fbb428ccbcc9e97fe632146f5ac34ba66d8d84cc9e671325c4e77e929d0b9170`
 
 ```dockerfile
 RUN mkdir /orientdb &&   wget  "http://central.maven.org/maven2/com/orientechnologies/orientdb-community/$ORIENTDB_VERSION/orientdb-community-$ORIENTDB_VERSION.tar.gz"   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1  && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/*
 ```
 
--	Created: Wed, 25 May 2016 16:45:28 GMT
--	Parent Layer: `11fdfe836cf5f3376c82c942361b066c469295e7d43aaf7ff50ab577963769f7`
--	v2 Blob: `sha256:337d8cf2ec88abc88d226d0a7682ab2fb5095b19bfe7ef37d8cadded1c67852f`
--	v2 Content-Length: 31.0 MB (31036845 bytes)
--	v2 Last-Modified: Wed, 25 May 2016 16:49:42 GMT
+-	Created: Thu, 02 Jun 2016 18:45:13 GMT
+-	Parent Layer: `9b35a831fe6141fa1caf049c50421b25ad29ae83e94e30bccad76ad4bac3e118`
+-	v2 Blob: `sha256:0d00158f30698a33a5e471b3fd7e03f61be29f2e7933f059075fda0220aa07c0`
+-	v2 Content-Length: 31.0 MB (31042278 bytes)
+-	v2 Last-Modified: Thu, 02 Jun 2016 18:49:05 GMT
 
-#### `c1d8d81b2cc54c8c59dbccc7847f8309ced2430c85c3b240e257db1b04709732`
+#### `ca10ad6ec0b4996df5c5852e90978e02bdcf1cb7afe2dcd291a6d13ef6eb901a`
 
 ```dockerfile
 ENV PATH=/orientdb/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin
 ```
 
--	Created: Wed, 25 May 2016 16:45:29 GMT
--	Parent Layer: `c324d1edf671a75adefcb731a2807a317a3bb23636dc12537dc61c9fa7bea8a6`
+-	Created: Thu, 02 Jun 2016 18:45:15 GMT
+-	Parent Layer: `fbb428ccbcc9e97fe632146f5ac34ba66d8d84cc9e671325c4e77e929d0b9170`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a54dc29bd5a3d50f0f6dc6dc450c3312378245e7be6571cab29b88bee12efda9`
+#### `0985eff741ff7526f4507ec4769697e685272901abc344dfddfab6f8520279b9`
 
 ```dockerfile
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
 ```
 
--	Created: Wed, 25 May 2016 16:45:30 GMT
--	Parent Layer: `c1d8d81b2cc54c8c59dbccc7847f8309ced2430c85c3b240e257db1b04709732`
+-	Created: Thu, 02 Jun 2016 18:45:16 GMT
+-	Parent Layer: `ca10ad6ec0b4996df5c5852e90978e02bdcf1cb7afe2dcd291a6d13ef6eb901a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c35883457918a318560d66e29d35bcf1b09f9602f08a24271b3613faec05d9d0`
+#### `3d6dea8875c3fbbd4078c12e3a3f263c92497e4bbac8f8fa1ffd443a0bf5216f`
 
 ```dockerfile
 WORKDIR /orientdb
 ```
 
--	Created: Wed, 25 May 2016 16:45:31 GMT
--	Parent Layer: `a54dc29bd5a3d50f0f6dc6dc450c3312378245e7be6571cab29b88bee12efda9`
+-	Created: Thu, 02 Jun 2016 18:45:17 GMT
+-	Parent Layer: `0985eff741ff7526f4507ec4769697e685272901abc344dfddfab6f8520279b9`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `57d93eaf0c8d19336a020ca92e8eca528ac2b91fd87dfc3a876af94641e634fb`
+#### `f0ade043aa7db48c8ed471831d0b535bbbd2f6664dbbc0b6607163425bacc12a`
 
 ```dockerfile
 EXPOSE 2424/tcp
 ```
 
--	Created: Wed, 25 May 2016 16:45:32 GMT
--	Parent Layer: `c35883457918a318560d66e29d35bcf1b09f9602f08a24271b3613faec05d9d0`
+-	Created: Thu, 02 Jun 2016 18:45:18 GMT
+-	Parent Layer: `3d6dea8875c3fbbd4078c12e3a3f263c92497e4bbac8f8fa1ffd443a0bf5216f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1d597d0edffb84b5f630bc1c7893c18456c5e958d0602b1a827110fbdea6dcc2`
+#### `8a02b851600c58b708818b0d3b77c5ba9e3b9786de133c876356fd402ab13f35`
 
 ```dockerfile
 EXPOSE 2480/tcp
 ```
 
--	Created: Wed, 25 May 2016 16:45:33 GMT
--	Parent Layer: `57d93eaf0c8d19336a020ca92e8eca528ac2b91fd87dfc3a876af94641e634fb`
+-	Created: Thu, 02 Jun 2016 18:45:20 GMT
+-	Parent Layer: `f0ade043aa7db48c8ed471831d0b535bbbd2f6664dbbc0b6607163425bacc12a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `05eef1d857bb719802940031a1d1be41599b1844e99ef7ed48be6c2295fca823`
+#### `070ea44b39b0f9f9e72dfbf3f373ca0acb6b33562b6b02d1c4e557886f39b618`
 
 ```dockerfile
 CMD ["server.sh"]
 ```
 
--	Created: Wed, 25 May 2016 16:45:33 GMT
--	Parent Layer: `1d597d0edffb84b5f630bc1c7893c18456c5e958d0602b1a827110fbdea6dcc2`
+-	Created: Thu, 02 Jun 2016 18:45:21 GMT
+-	Parent Layer: `8a02b851600c58b708818b0d3b77c5ba9e3b9786de133c876356fd402ab13f35`
 -	Docker Version: 1.9.1
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -687,10 +687,10 @@ MAINTAINER OrientDB LTD (info@orientdb.com)
 #### `7bd49329bbcddb484b36846610229e7950343ae0daff22b689dc9bef1009e3d5`
 
 ```dockerfile
-ENV ORIENTDB_VERSION=2.1.18
+ENV ORIENTDB_VERSION=2.1.19
 ```
 
--	Created: Wed, 25 May 2016 16:45:12 GMT
+-	Created: Thu, 02 Jun 2016 18:45:01 GMT
 -	Parent Layer: `00f0236feae2ff0a6e1aaab619127204f42904c4ec6fc9c922e68c1b70b31248`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -699,10 +699,10 @@ ENV ORIENTDB_VERSION=2.1.18
 #### `236167089cd56c6ab44366784d6b46a53575ef94315f3ccfb0ff815f76fcce11`
 
 ```dockerfile
-ENV ORIENTDB_DOWNLOAD_MD5=35a4411e638d3d285ad828da0fdf55dc
+ENV ORIENTDB_DOWNLOAD_MD5=11942093675c32b9341658bd56f191f0
 ```
 
--	Created: Wed, 25 May 2016 16:45:13 GMT
+-	Created: Thu, 02 Jun 2016 18:45:02 GMT
 -	Parent Layer: `7bd49329bbcddb484b36846610229e7950343ae0daff22b689dc9bef1009e3d5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -711,10 +711,10 @@ ENV ORIENTDB_DOWNLOAD_MD5=35a4411e638d3d285ad828da0fdf55dc
 #### `a2b67b49f72af67d34c3b83cf1dd6da8072d5ceb1dffca769c206703e812ce42`
 
 ```dockerfile
-ENV ORIENTDB_DOWNLOAD_SHA1=f6cf3dd726e59ff2ac8abd5e7b1fde8344b62534
+ENV ORIENTDB_DOWNLOAD_SHA1=289b5d0950254e90531e65a3f4ef530bb4193f32
 ```
 
--	Created: Wed, 25 May 2016 16:45:13 GMT
+-	Created: Thu, 02 Jun 2016 18:45:02 GMT
 -	Parent Layer: `236167089cd56c6ab44366784d6b46a53575ef94315f3ccfb0ff815f76fcce11`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -961,10 +961,10 @@ MAINTAINER OrientDB LTD (info@orientdb.com)
 #### `7bd49329bbcddb484b36846610229e7950343ae0daff22b689dc9bef1009e3d5`
 
 ```dockerfile
-ENV ORIENTDB_VERSION=2.1.18
+ENV ORIENTDB_VERSION=2.1.19
 ```
 
--	Created: Wed, 25 May 2016 16:45:12 GMT
+-	Created: Thu, 02 Jun 2016 18:45:01 GMT
 -	Parent Layer: `00f0236feae2ff0a6e1aaab619127204f42904c4ec6fc9c922e68c1b70b31248`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -973,10 +973,10 @@ ENV ORIENTDB_VERSION=2.1.18
 #### `236167089cd56c6ab44366784d6b46a53575ef94315f3ccfb0ff815f76fcce11`
 
 ```dockerfile
-ENV ORIENTDB_DOWNLOAD_MD5=35a4411e638d3d285ad828da0fdf55dc
+ENV ORIENTDB_DOWNLOAD_MD5=11942093675c32b9341658bd56f191f0
 ```
 
--	Created: Wed, 25 May 2016 16:45:13 GMT
+-	Created: Thu, 02 Jun 2016 18:45:02 GMT
 -	Parent Layer: `7bd49329bbcddb484b36846610229e7950343ae0daff22b689dc9bef1009e3d5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -985,10 +985,10 @@ ENV ORIENTDB_DOWNLOAD_MD5=35a4411e638d3d285ad828da0fdf55dc
 #### `a2b67b49f72af67d34c3b83cf1dd6da8072d5ceb1dffca769c206703e812ce42`
 
 ```dockerfile
-ENV ORIENTDB_DOWNLOAD_SHA1=f6cf3dd726e59ff2ac8abd5e7b1fde8344b62534
+ENV ORIENTDB_DOWNLOAD_SHA1=289b5d0950254e90531e65a3f4ef530bb4193f32
 ```
 
--	Created: Wed, 25 May 2016 16:45:13 GMT
+-	Created: Thu, 02 Jun 2016 18:45:02 GMT
 -	Parent Layer: `236167089cd56c6ab44366784d6b46a53575ef94315f3ccfb0ff815f76fcce11`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
