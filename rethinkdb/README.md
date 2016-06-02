@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.4`, `2.0` (*jessie/2.0.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/cfcec8d1a2c3c2b5713f540a4e540f0ba4b9790b/jessie/2.0.4/Dockerfile)
--	[`2.1.6`, `2.1` (*jessie/2.1.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/cfcec8d1a2c3c2b5713f540a4e540f0ba4b9790b/jessie/2.1.6/Dockerfile)
--	[`2.2.6`, `2.2` (*jessie/2.2.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/cfcec8d1a2c3c2b5713f540a4e540f0ba4b9790b/jessie/2.2.6/Dockerfile)
--	[`2.3.2`, `2.3`, `2`, `latest` (*jessie/2.3.2/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/cfcec8d1a2c3c2b5713f540a4e540f0ba4b9790b/jessie/2.3.2/Dockerfile)
+-	[`2.0.4`, `2.0` (*jessie/2.0.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/a001c7ab3cbc2bad891f95e8dc426484edd35587/jessie/2.0.4/Dockerfile)
+-	[`2.1.6`, `2.1` (*jessie/2.1.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/a001c7ab3cbc2bad891f95e8dc426484edd35587/jessie/2.1.6/Dockerfile)
+-	[`2.2.6`, `2.2` (*jessie/2.2.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/a001c7ab3cbc2bad891f95e8dc426484edd35587/jessie/2.2.6/Dockerfile)
+-	[`2.3.3`, `2.3`, `2`, `latest` (*jessie/2.3.3/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/a001c7ab3cbc2bad891f95e8dc426484edd35587/jessie/2.3.3/Dockerfile)
 
-[![](https://badge.imagelayers.io/rethinkdb:latest.svg)](https://imagelayers.io/?images=rethinkdb:2.0.4,rethinkdb:2.1.6,rethinkdb:2.2.6,rethinkdb:2.3.2)
+[![](https://badge.imagelayers.io/rethinkdb:latest.svg)](https://imagelayers.io/?images=rethinkdb:2.0.4,rethinkdb:2.1.6,rethinkdb:2.2.6,rethinkdb:2.3.3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rethinkdb`)](https://github.com/docker-library/official-images/blob/master/library/rethinkdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frethinkdb).
 
