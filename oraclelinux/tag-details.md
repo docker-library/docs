@@ -431,10 +431,10 @@ CMD ["/bin/bash"]
 ## `oraclelinux:5`
 
 ```console
-$ docker pull library/oraclelinux@sha256:813d760b06ed0a87b2a714ac3ff76e61233d9ea0478cc54293dedf737d541da7
+$ docker pull library/oraclelinux@sha256:e6b206bd4f0705d326d991777ecdce81fdd58233ba60bb0f962988dced4d5fd6
 ```
 
--	Total v2 Content-Length: 48.2 MB (48187864 bytes)
+-	Total v2 Content-Length: 82.3 MB (82308338 bytes)
 
 ### Layers (3)
 
@@ -449,26 +449,26 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6eb44f196afef7acb3c2747e8114aaab20af085cf28b60b57d5c9a3a1f5ae9f9`
+#### `b20d04c7d92b363a6a3a665324b19f83201ae27610ee4333a961c517d4b1d86f`
 
 ```dockerfile
-ADD file:ae2de3899590822a68287d58762fad83ee7389bad90d2a35a8f8cc046355a440 in /
+ADD file:f55cdab0d29a01c49835f6d8c878cb2b2349658422a61cfb79f3667462760445 in /
 ```
 
--	Created: Thu, 03 Mar 2016 17:52:42 GMT
+-	Created: Fri, 03 Jun 2016 17:21:52 GMT
 -	Parent Layer: `3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880`
--	v2 Blob: `sha256:e8fd8f8e6f3764979e50ba520de8123737a1b37dbd90bb94e2316c8927b37ecf`
--	v2 Content-Length: 48.2 MB (48187800 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 06:28:59 GMT
+-	v2 Blob: `sha256:5c00a9da7ad43c2141339ebf8c556dc4dd60fd74063632cbc6a04f65b5d2ed68`
+-	v2 Content-Length: 82.3 MB (82308274 bytes)
+-	v2 Last-Modified: Fri, 03 Jun 2016 17:25:33 GMT
 
-#### `3fbc427650f581c1a4e7ffdb1d9e792a8aa18fcd003a3b135039a4a98631fc42`
+#### `82259d97fff2389c99dc4803790e3e0696fcbab61a01f73893da79bad0473fab`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 17:53:18 GMT
--	Parent Layer: `6eb44f196afef7acb3c2747e8114aaab20af085cf28b60b57d5c9a3a1f5ae9f9`
+-	Created: Fri, 03 Jun 2016 17:22:06 GMT
+-	Parent Layer: `b20d04c7d92b363a6a3a665324b19f83201ae27610ee4333a961c517d4b1d86f`
 -	Docker Version: 1.9.1
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -477,10 +477,10 @@ CMD ["/bin/bash"]
 ## `oraclelinux:5.11`
 
 ```console
-$ docker pull library/oraclelinux@sha256:81653adb65581210983698195ee10d037c87a6cbafbbea00528648bbeffbfae6
+$ docker pull library/oraclelinux@sha256:8503887936e7bfdbfe90755daa8b3becdbfb6b977a7f9d574f886f06f7800cea
 ```
 
--	Total v2 Content-Length: 48.2 MB (48187864 bytes)
+-	Total v2 Content-Length: 82.3 MB (82308338 bytes)
 
 ### Layers (3)
 
@@ -495,26 +495,26 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6eb44f196afef7acb3c2747e8114aaab20af085cf28b60b57d5c9a3a1f5ae9f9`
+#### `b20d04c7d92b363a6a3a665324b19f83201ae27610ee4333a961c517d4b1d86f`
 
 ```dockerfile
-ADD file:ae2de3899590822a68287d58762fad83ee7389bad90d2a35a8f8cc046355a440 in /
+ADD file:f55cdab0d29a01c49835f6d8c878cb2b2349658422a61cfb79f3667462760445 in /
 ```
 
--	Created: Thu, 03 Mar 2016 17:52:42 GMT
+-	Created: Fri, 03 Jun 2016 17:21:52 GMT
 -	Parent Layer: `3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880`
--	v2 Blob: `sha256:e8fd8f8e6f3764979e50ba520de8123737a1b37dbd90bb94e2316c8927b37ecf`
--	v2 Content-Length: 48.2 MB (48187800 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 06:28:59 GMT
+-	v2 Blob: `sha256:5c00a9da7ad43c2141339ebf8c556dc4dd60fd74063632cbc6a04f65b5d2ed68`
+-	v2 Content-Length: 82.3 MB (82308274 bytes)
+-	v2 Last-Modified: Fri, 03 Jun 2016 17:25:33 GMT
 
-#### `3fbc427650f581c1a4e7ffdb1d9e792a8aa18fcd003a3b135039a4a98631fc42`
+#### `82259d97fff2389c99dc4803790e3e0696fcbab61a01f73893da79bad0473fab`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 17:53:18 GMT
--	Parent Layer: `6eb44f196afef7acb3c2747e8114aaab20af085cf28b60b57d5c9a3a1f5ae9f9`
+-	Created: Fri, 03 Jun 2016 17:22:06 GMT
+-	Parent Layer: `b20d04c7d92b363a6a3a665324b19f83201ae27610ee4333a961c517d4b1d86f`
 -	Docker Version: 1.9.1
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
