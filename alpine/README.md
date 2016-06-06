@@ -25,8 +25,8 @@ For detailed information about the virtual/transfer sizes and individual layers 
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.1
-RUN apk add --update mysql-client && rm -rf /var/cache/apk/*
+FROM alpine:3.3
+RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
 
