@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.3.1` (*Dockerfile*)](https://github.com/dotcloud/hipache/blob/0.3.1/Dockerfile)
+-	[`latest`, `0.3.1` (*Dockerfile*)](https://github.com/dotcloud/hipache/blob/c2d4864a663d976ff2560493fe8e0dd424b792b3/Dockerfile)
 
 [![](https://badge.imagelayers.io/hipache:latest.svg)](https://imagelayers.io/?images=hipache:latest)
 

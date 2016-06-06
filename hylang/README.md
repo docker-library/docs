@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0`, `0.11`, `0.11.1` (*Dockerfile*)](https://github.com/hylang/hy/blob/0.11.1/Dockerfile)
+-	[`latest`, `0`, `0.11`, `0.11.1` (*Dockerfile*)](https://github.com/hylang/hy/blob/54b13955d1f98f8a7d835a4ed8f452bb9f1135bc/Dockerfile)
 
 [![](https://badge.imagelayers.io/hylang:latest.svg)](https://imagelayers.io/?images=hylang:latest)
 

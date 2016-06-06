@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `23` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/39d5e72640cefb5e6923afd255dd51a2eb06e146/Dockerfile)
+-	[`latest`, `23` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/3677613e2c32eea7f6dc4d5e9a297b7e7f73dc6e/Dockerfile)
 -	[`22` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/bccd42bf4e9102ef10eff372488167948fdd0430/Dockerfile)
 -	[`21` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/e32493b9601c3535cd6e0d0a8ff61d8fa95afb83/Dockerfile)
--	[`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/d5c60b14647267a280a56cc71c6630d8df61644b/Dockerfile)
+-	[`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/d28b4d3e1c4d613a12701557b0d686c28490af69/Dockerfile)
 -	[`20`, `heisenbug` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/10ada29063147fde9e39190f4c2344b6e6e659e6/Dockerfile)
 
 [![](https://badge.imagelayers.io/fedora:latest.svg)](https://imagelayers.io/?images=fedora:latest,fedora:22,fedora:21,fedora:rawhide,fedora:20)
