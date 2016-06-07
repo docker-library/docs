@@ -13,7 +13,7 @@ This image requires a running PostgreSQL server.
 ## Start a PostgreSQL server
 
 ```console
-$ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres
+$ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres:9.4
 ```
 
 ## Start an Odoo instance
