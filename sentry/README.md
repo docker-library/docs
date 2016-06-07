@@ -2,10 +2,10 @@
 
 -	[`8.4.1`, `8.4` (*8.4/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/04470f5f81423762ffe376e2ee3657cb1c5b6b1a/8.4/Dockerfile)
 -	[`8.4.1-onbuild`, `8.4-onbuild` (*8.4/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/80218c227b188fad17575040421d600303c5f7bf/8.4/onbuild/Dockerfile)
--	[`8.5.0`, `8.5`, `8`, `latest` (*8.5/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/93b8783dc5ad0c452bf657b29e8d96a2800f9746/8.5/Dockerfile)
--	[`8.5.0-onbuild`, `8.5-onbuild`, `8-onbuild`, `onbuild` (*8.5/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/ce5121a71f55c2fb0659f552e361b1174c85bccf/8.5/onbuild/Dockerfile)
+-	[`8.5.1`, `8.5`, `8`, `latest` (*8.5/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/902ac5c7e65aa0bfe891b6273b8693af704ccfde/8.5/Dockerfile)
+-	[`8.5.1-onbuild`, `8.5-onbuild`, `8-onbuild`, `onbuild` (*8.5/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/ce5121a71f55c2fb0659f552e361b1174c85bccf/8.5/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.4.1,sentry:8.4.1-onbuild,sentry:8.5.0,sentry:8.5.0-onbuild)
+[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.4.1,sentry:8.4.1-onbuild,sentry:8.5.1,sentry:8.5.1-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
