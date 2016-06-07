@@ -53,7 +53,7 @@ The components you *must* provide are the certificates and keys, and the links f
 
 If you require a different configuration, you should wrap this image with your own Dockerfile.
 
-For more details on how to configure your Notary server, please read the[docs](https://github.com/docker/notary/blob/master/docs/notary-server-config.md).
+For more details on how to configure your Notary server, please read the [docs](https://github.com/docker/notary/blob/master/docs/reference/server-config.md).
 
 # Notary Signer
 
@@ -84,7 +84,7 @@ The components you *must* provide are the certificates and keys, and the link fo
 
 If you require a different configuration, you should wrap this image with your own Dockerfile.
 
-For more details on how to configure your Notary signer, please read the [docs](https://github.com/docker/notary/blob/master/docs/notary-signer-config.md).
+For more details on how to configure your Notary signer, please read the [docs](https://github.com/docker/notary/blob/master/docs/reference/signer-config.md).
 
 ## Database Migrations
 
