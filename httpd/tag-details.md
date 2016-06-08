@@ -12,10 +12,10 @@
 ## `httpd:2.2.31`
 
 ```console
-$ docker pull library/httpd@sha256:f5ea1f77aa53518b3592f7b7631af3a37c2a68959e5d03ee21ded83b98718954
+$ docker pull library/httpd@sha256:68c59a356b2a3b8b19424a555a20d51d8135dfa3fbd5575727ed5575bfc3e355
 ```
 
--	Total v2 Content-Length: 67.4 MB (67445136 bytes)
+-	Total v2 Content-Length: 69.0 MB (68978919 bytes)
 
 ### Layers (13)
 
@@ -126,51 +126,51 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.2.31.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0d06a0991394bd8b38ae93b067703fa21296bcbb2beae510e9d80a267e959aad`
+#### `3d312973c74bb07023e3999906b98749300f326fd33e7a0d9646dbdc36e222c8`
 
 ```dockerfile
-RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B1B96F45DFBDCCF974019235193F180AB55D9977 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 	&& mkdir -p src/httpd 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src/httpd 	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most 	&& make -j"$(nproc)" 	&& make install 	&& cd ../../ 	&& rm -r src/httpd 	&& sed -ri ' 		s!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g; 		s!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g; 		' /usr/local/apache2/conf/httpd.conf 	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 		&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B1B96F45DFBDCCF974019235193F180AB55D9977 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 		&& mkdir -p src 	&& tar -xvf httpd.tar.bz2 -C src --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src 		&& ./configure 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared='all ssl ldap cache proxy authn_alias mem_cache file_cache authnz_ldap charset_lite dav_lock disk_cache' 	&& make -j"$(nproc)" 	&& make install 		&& cd .. 	&& rm -r src 		&& sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 01:27:06 GMT
+-	Created: Tue, 07 Jun 2016 17:53:55 GMT
 -	Parent Layer: `b464453ce033f565062deaf150e4011f3f2e6538f76e930b45f2e27b641313f3`
--	v2 Blob: `sha256:ac70b69e1821f1bf4645a032b1fffe68f8498938f5fdc78e7bcb3b0555621c67`
--	v2 Content-Length: 4.4 MB (4365823 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 19:03:04 GMT
+-	v2 Blob: `sha256:942845d65908066ce34cfbd7187b9bd866ee6d5bce0c3f12de2c7ec9256ede6f`
+-	v2 Content-Length: 5.9 MB (5899606 bytes)
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:19 GMT
 
-#### `2c903bf27b20e315a524321203d22418c01f9de986e65e853e61477f03fb2b5f`
+#### `1ccbe138d0c0a07fed8daa54d180906c5ee76960dd467780ebe56b1a075dbc0a`
 
 ```dockerfile
-COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
+COPY file:13dfb9d570a3d651eb22e29b4d6b853be966d83b41885bf3a40ca64840fd3db2 in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 01:27:08 GMT
--	Parent Layer: `0d06a0991394bd8b38ae93b067703fa21296bcbb2beae510e9d80a267e959aad`
--	v2 Blob: `sha256:2af62b47e43d76e5d33e9ba7fbc2ef161a45ccc97aac9df71ed76beebea21279`
+-	Created: Tue, 07 Jun 2016 17:53:55 GMT
+-	Parent Layer: `3d312973c74bb07023e3999906b98749300f326fd33e7a0d9646dbdc36e222c8`
+-	v2 Blob: `sha256:df85e03cbc1de9bc8661134830b61a5dffd3e7ceea1453613089dfe3704ce07e`
 -	v2 Content-Length: 293.0 B
--	v2 Last-Modified: Tue, 31 May 2016 19:02:59 GMT
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:16 GMT
 
-#### `9b515ac8da0a5ae34f0f08ee4b2d2ed97ef6ff086114f3c8ab08918bbfd73059`
+#### `e64b4ecec1c559eac2de288a4c1590a54270f6cfcbda8fe9321f57f145a35e9d`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Tue, 24 May 2016 01:27:09 GMT
--	Parent Layer: `2c903bf27b20e315a524321203d22418c01f9de986e65e853e61477f03fb2b5f`
+-	Created: Tue, 07 Jun 2016 17:53:56 GMT
+-	Parent Layer: `1ccbe138d0c0a07fed8daa54d180906c5ee76960dd467780ebe56b1a075dbc0a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cf8318355c0451f4325e0d56af60935febf259b3f6be7f79ef669dac30102a71`
+#### `be005ef43f5e78fca816908df1e6004e382408210f92d4d7546446dfb54e5a6f`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Tue, 24 May 2016 01:27:09 GMT
--	Parent Layer: `9b515ac8da0a5ae34f0f08ee4b2d2ed97ef6ff086114f3c8ab08918bbfd73059`
--	Docker Version: 1.9.1
+-	Created: Tue, 07 Jun 2016 17:53:56 GMT
+-	Parent Layer: `e64b4ecec1c559eac2de288a4c1590a54270f6cfcbda8fe9321f57f145a35e9d`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -178,10 +178,10 @@ CMD ["httpd-foreground"]
 ## `httpd:2.2`
 
 ```console
-$ docker pull library/httpd@sha256:3070299f0ead378893195357106083627a58d6b1d630eec4d2c7f67a38c7d786
+$ docker pull library/httpd@sha256:a4799f94aea13a698c56bc3c5877a8c54e9bdc0ac9f4a2337da5630da593e0d5
 ```
 
--	Total v2 Content-Length: 67.4 MB (67445136 bytes)
+-	Total v2 Content-Length: 69.0 MB (68978919 bytes)
 
 ### Layers (13)
 
@@ -292,51 +292,51 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.2.31.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0d06a0991394bd8b38ae93b067703fa21296bcbb2beae510e9d80a267e959aad`
+#### `3d312973c74bb07023e3999906b98749300f326fd33e7a0d9646dbdc36e222c8`
 
 ```dockerfile
-RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B1B96F45DFBDCCF974019235193F180AB55D9977 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 	&& mkdir -p src/httpd 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src/httpd 	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most 	&& make -j"$(nproc)" 	&& make install 	&& cd ../../ 	&& rm -r src/httpd 	&& sed -ri ' 		s!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g; 		s!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g; 		' /usr/local/apache2/conf/httpd.conf 	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 		&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B1B96F45DFBDCCF974019235193F180AB55D9977 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 		&& mkdir -p src 	&& tar -xvf httpd.tar.bz2 -C src --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src 		&& ./configure 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared='all ssl ldap cache proxy authn_alias mem_cache file_cache authnz_ldap charset_lite dav_lock disk_cache' 	&& make -j"$(nproc)" 	&& make install 		&& cd .. 	&& rm -r src 		&& sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 01:27:06 GMT
+-	Created: Tue, 07 Jun 2016 17:53:55 GMT
 -	Parent Layer: `b464453ce033f565062deaf150e4011f3f2e6538f76e930b45f2e27b641313f3`
--	v2 Blob: `sha256:ac70b69e1821f1bf4645a032b1fffe68f8498938f5fdc78e7bcb3b0555621c67`
--	v2 Content-Length: 4.4 MB (4365823 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 19:03:04 GMT
+-	v2 Blob: `sha256:942845d65908066ce34cfbd7187b9bd866ee6d5bce0c3f12de2c7ec9256ede6f`
+-	v2 Content-Length: 5.9 MB (5899606 bytes)
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:19 GMT
 
-#### `2c903bf27b20e315a524321203d22418c01f9de986e65e853e61477f03fb2b5f`
+#### `1ccbe138d0c0a07fed8daa54d180906c5ee76960dd467780ebe56b1a075dbc0a`
 
 ```dockerfile
-COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
+COPY file:13dfb9d570a3d651eb22e29b4d6b853be966d83b41885bf3a40ca64840fd3db2 in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 01:27:08 GMT
--	Parent Layer: `0d06a0991394bd8b38ae93b067703fa21296bcbb2beae510e9d80a267e959aad`
--	v2 Blob: `sha256:2af62b47e43d76e5d33e9ba7fbc2ef161a45ccc97aac9df71ed76beebea21279`
+-	Created: Tue, 07 Jun 2016 17:53:55 GMT
+-	Parent Layer: `3d312973c74bb07023e3999906b98749300f326fd33e7a0d9646dbdc36e222c8`
+-	v2 Blob: `sha256:df85e03cbc1de9bc8661134830b61a5dffd3e7ceea1453613089dfe3704ce07e`
 -	v2 Content-Length: 293.0 B
--	v2 Last-Modified: Tue, 31 May 2016 19:02:59 GMT
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:16 GMT
 
-#### `9b515ac8da0a5ae34f0f08ee4b2d2ed97ef6ff086114f3c8ab08918bbfd73059`
+#### `e64b4ecec1c559eac2de288a4c1590a54270f6cfcbda8fe9321f57f145a35e9d`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Tue, 24 May 2016 01:27:09 GMT
--	Parent Layer: `2c903bf27b20e315a524321203d22418c01f9de986e65e853e61477f03fb2b5f`
+-	Created: Tue, 07 Jun 2016 17:53:56 GMT
+-	Parent Layer: `1ccbe138d0c0a07fed8daa54d180906c5ee76960dd467780ebe56b1a075dbc0a`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cf8318355c0451f4325e0d56af60935febf259b3f6be7f79ef669dac30102a71`
+#### `be005ef43f5e78fca816908df1e6004e382408210f92d4d7546446dfb54e5a6f`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Tue, 24 May 2016 01:27:09 GMT
--	Parent Layer: `9b515ac8da0a5ae34f0f08ee4b2d2ed97ef6ff086114f3c8ab08918bbfd73059`
--	Docker Version: 1.9.1
+-	Created: Tue, 07 Jun 2016 17:53:56 GMT
+-	Parent Layer: `e64b4ecec1c559eac2de288a4c1590a54270f6cfcbda8fe9321f57f145a35e9d`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -344,10 +344,10 @@ CMD ["httpd-foreground"]
 ## `httpd:2.4.20`
 
 ```console
-$ docker pull library/httpd@sha256:69c54b399ad9019462c6bb6200c71747f4ed329983ea39008407199d35f14328
+$ docker pull library/httpd@sha256:3ccef95d8838325869f1b3f9ce327edc15382e3c9ad1ab08aab5073401715f1d
 ```
 
--	Total v2 Content-Length: 70.4 MB (70412041 bytes)
+-	Total v2 Content-Length: 71.9 MB (71874865 bytes)
 
 ### Layers (13)
 
@@ -458,51 +458,51 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.2.31.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `44f446eb380d9466cbe2d11fe94ec5946a5285de9cca698f1f9ea77d6bd41a4b`
+#### `3c9deef1700cb5c1612877d065c7f169f46420f50b76d137823f686fb79e6f4d`
 
 ```dockerfile
-RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 	&& mkdir -p src/httpd 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src/httpd 	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most 	&& make -j"$(nproc)" 	&& make install 	&& cd ../../ 	&& rm -r src/httpd 	&& sed -ri ' 		s!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g; 		s!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g; 		' /usr/local/apache2/conf/httpd.conf 	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 		&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 		&& mkdir -p src 	&& tar -xvf httpd.tar.bz2 -C src --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src 		&& ./configure 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 	&& make -j"$(nproc)" 	&& make install 		&& cd .. 	&& rm -r src 		&& sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 01:31:55 GMT
+-	Created: Tue, 07 Jun 2016 17:56:42 GMT
 -	Parent Layer: `b464453ce033f565062deaf150e4011f3f2e6538f76e930b45f2e27b641313f3`
--	v2 Blob: `sha256:58b0f5cbca1420d2df7a8f05ddfe96c8b556d713b6907ca191e9f7331d344e90`
--	v2 Content-Length: 7.3 MB (7332729 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 19:04:06 GMT
+-	v2 Blob: `sha256:823f21c19a75ee37c7e925ac443d9aaf718339eb98e9c6f09aa53ac2ea4a921e`
+-	v2 Content-Length: 8.8 MB (8795552 bytes)
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:48 GMT
 
-#### `ddc5c5a0cc0ad2fd9e06192a14f5810af558af5c8eccaa90e84284605dd0f395`
+#### `d5be3d8dcd96b73c53c7885dcd871818f1ab2e53283f3833748d345e95528aed`
 
 ```dockerfile
-COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
+COPY file:13dfb9d570a3d651eb22e29b4d6b853be966d83b41885bf3a40ca64840fd3db2 in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 01:31:57 GMT
--	Parent Layer: `44f446eb380d9466cbe2d11fe94ec5946a5285de9cca698f1f9ea77d6bd41a4b`
--	v2 Blob: `sha256:ea21d42aac6bddd71aa228fb117552a5383ddc6264815c5c51784a63d4bfe385`
--	v2 Content-Length: 292.0 B
--	v2 Last-Modified: Tue, 31 May 2016 19:04:00 GMT
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `3c9deef1700cb5c1612877d065c7f169f46420f50b76d137823f686fb79e6f4d`
+-	v2 Blob: `sha256:8e286d5abf354c05b414480c8e10592fe1f999578fbbb0a2e633b453a33c77f4`
+-	v2 Content-Length: 293.0 B
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:45 GMT
 
-#### `59ff4d9cb120dafb0d398df06edd0e3c3183304cdf3a2cab6f80ecd6215cfd96`
+#### `3cdb59bb3d8b93d297370fab0822bc4c71473de73319521c135c0eeed334ebaf`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Tue, 24 May 2016 01:31:58 GMT
--	Parent Layer: `ddc5c5a0cc0ad2fd9e06192a14f5810af558af5c8eccaa90e84284605dd0f395`
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `d5be3d8dcd96b73c53c7885dcd871818f1ab2e53283f3833748d345e95528aed`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3513f3864d112f95726b58471e8234109326623ea0aa992b7aeba69fe1259b1`
+#### `dd26fd481a76a451ee524f8ef2845f4b8d7c9e629b1d1b1a630d5a74a3bcec9a`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Tue, 24 May 2016 01:31:59 GMT
--	Parent Layer: `59ff4d9cb120dafb0d398df06edd0e3c3183304cdf3a2cab6f80ecd6215cfd96`
--	Docker Version: 1.9.1
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `3cdb59bb3d8b93d297370fab0822bc4c71473de73319521c135c0eeed334ebaf`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -510,10 +510,10 @@ CMD ["httpd-foreground"]
 ## `httpd:2.4`
 
 ```console
-$ docker pull library/httpd@sha256:13973b13d0567d52355e57022f29b52daa8fce9217924cc07fe31bb03c939c8e
+$ docker pull library/httpd@sha256:bef5c268faf3e15fe846567eb6a5b5b2561455d48a43a462ff20d24a26d54d15
 ```
 
--	Total v2 Content-Length: 70.4 MB (70412041 bytes)
+-	Total v2 Content-Length: 71.9 MB (71874865 bytes)
 
 ### Layers (13)
 
@@ -624,51 +624,51 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.2.31.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `44f446eb380d9466cbe2d11fe94ec5946a5285de9cca698f1f9ea77d6bd41a4b`
+#### `3c9deef1700cb5c1612877d065c7f169f46420f50b76d137823f686fb79e6f4d`
 
 ```dockerfile
-RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 	&& mkdir -p src/httpd 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src/httpd 	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most 	&& make -j"$(nproc)" 	&& make install 	&& cd ../../ 	&& rm -r src/httpd 	&& sed -ri ' 		s!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g; 		s!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g; 		' /usr/local/apache2/conf/httpd.conf 	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 		&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 		&& mkdir -p src 	&& tar -xvf httpd.tar.bz2 -C src --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src 		&& ./configure 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 	&& make -j"$(nproc)" 	&& make install 		&& cd .. 	&& rm -r src 		&& sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 01:31:55 GMT
+-	Created: Tue, 07 Jun 2016 17:56:42 GMT
 -	Parent Layer: `b464453ce033f565062deaf150e4011f3f2e6538f76e930b45f2e27b641313f3`
--	v2 Blob: `sha256:58b0f5cbca1420d2df7a8f05ddfe96c8b556d713b6907ca191e9f7331d344e90`
--	v2 Content-Length: 7.3 MB (7332729 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 19:04:06 GMT
+-	v2 Blob: `sha256:823f21c19a75ee37c7e925ac443d9aaf718339eb98e9c6f09aa53ac2ea4a921e`
+-	v2 Content-Length: 8.8 MB (8795552 bytes)
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:48 GMT
 
-#### `ddc5c5a0cc0ad2fd9e06192a14f5810af558af5c8eccaa90e84284605dd0f395`
+#### `d5be3d8dcd96b73c53c7885dcd871818f1ab2e53283f3833748d345e95528aed`
 
 ```dockerfile
-COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
+COPY file:13dfb9d570a3d651eb22e29b4d6b853be966d83b41885bf3a40ca64840fd3db2 in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 01:31:57 GMT
--	Parent Layer: `44f446eb380d9466cbe2d11fe94ec5946a5285de9cca698f1f9ea77d6bd41a4b`
--	v2 Blob: `sha256:ea21d42aac6bddd71aa228fb117552a5383ddc6264815c5c51784a63d4bfe385`
--	v2 Content-Length: 292.0 B
--	v2 Last-Modified: Tue, 31 May 2016 19:04:00 GMT
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `3c9deef1700cb5c1612877d065c7f169f46420f50b76d137823f686fb79e6f4d`
+-	v2 Blob: `sha256:8e286d5abf354c05b414480c8e10592fe1f999578fbbb0a2e633b453a33c77f4`
+-	v2 Content-Length: 293.0 B
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:45 GMT
 
-#### `59ff4d9cb120dafb0d398df06edd0e3c3183304cdf3a2cab6f80ecd6215cfd96`
+#### `3cdb59bb3d8b93d297370fab0822bc4c71473de73319521c135c0eeed334ebaf`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Tue, 24 May 2016 01:31:58 GMT
--	Parent Layer: `ddc5c5a0cc0ad2fd9e06192a14f5810af558af5c8eccaa90e84284605dd0f395`
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `d5be3d8dcd96b73c53c7885dcd871818f1ab2e53283f3833748d345e95528aed`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3513f3864d112f95726b58471e8234109326623ea0aa992b7aeba69fe1259b1`
+#### `dd26fd481a76a451ee524f8ef2845f4b8d7c9e629b1d1b1a630d5a74a3bcec9a`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Tue, 24 May 2016 01:31:59 GMT
--	Parent Layer: `59ff4d9cb120dafb0d398df06edd0e3c3183304cdf3a2cab6f80ecd6215cfd96`
--	Docker Version: 1.9.1
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `3cdb59bb3d8b93d297370fab0822bc4c71473de73319521c135c0eeed334ebaf`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -676,10 +676,10 @@ CMD ["httpd-foreground"]
 ## `httpd:2`
 
 ```console
-$ docker pull library/httpd@sha256:7f36156e53561a1e857ee834e7dd7496106badbb1efddf01029a3bbff5c3a80a
+$ docker pull library/httpd@sha256:95d97d8deb70f9a73251e617e91cfbde082635c651d47e72c40b66d55950c303
 ```
 
--	Total v2 Content-Length: 70.4 MB (70412041 bytes)
+-	Total v2 Content-Length: 71.9 MB (71874865 bytes)
 
 ### Layers (13)
 
@@ -790,51 +790,51 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.2.31.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `44f446eb380d9466cbe2d11fe94ec5946a5285de9cca698f1f9ea77d6bd41a4b`
+#### `3c9deef1700cb5c1612877d065c7f169f46420f50b76d137823f686fb79e6f4d`
 
 ```dockerfile
-RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 	&& mkdir -p src/httpd 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src/httpd 	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most 	&& make -j"$(nproc)" 	&& make install 	&& cd ../../ 	&& rm -r src/httpd 	&& sed -ri ' 		s!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g; 		s!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g; 		' /usr/local/apache2/conf/httpd.conf 	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 		&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 		&& mkdir -p src 	&& tar -xvf httpd.tar.bz2 -C src --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src 		&& ./configure 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 	&& make -j"$(nproc)" 	&& make install 		&& cd .. 	&& rm -r src 		&& sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 01:31:55 GMT
+-	Created: Tue, 07 Jun 2016 17:56:42 GMT
 -	Parent Layer: `b464453ce033f565062deaf150e4011f3f2e6538f76e930b45f2e27b641313f3`
--	v2 Blob: `sha256:58b0f5cbca1420d2df7a8f05ddfe96c8b556d713b6907ca191e9f7331d344e90`
--	v2 Content-Length: 7.3 MB (7332729 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 19:04:06 GMT
+-	v2 Blob: `sha256:823f21c19a75ee37c7e925ac443d9aaf718339eb98e9c6f09aa53ac2ea4a921e`
+-	v2 Content-Length: 8.8 MB (8795552 bytes)
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:48 GMT
 
-#### `ddc5c5a0cc0ad2fd9e06192a14f5810af558af5c8eccaa90e84284605dd0f395`
+#### `d5be3d8dcd96b73c53c7885dcd871818f1ab2e53283f3833748d345e95528aed`
 
 ```dockerfile
-COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
+COPY file:13dfb9d570a3d651eb22e29b4d6b853be966d83b41885bf3a40ca64840fd3db2 in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 01:31:57 GMT
--	Parent Layer: `44f446eb380d9466cbe2d11fe94ec5946a5285de9cca698f1f9ea77d6bd41a4b`
--	v2 Blob: `sha256:ea21d42aac6bddd71aa228fb117552a5383ddc6264815c5c51784a63d4bfe385`
--	v2 Content-Length: 292.0 B
--	v2 Last-Modified: Tue, 31 May 2016 19:04:00 GMT
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `3c9deef1700cb5c1612877d065c7f169f46420f50b76d137823f686fb79e6f4d`
+-	v2 Blob: `sha256:8e286d5abf354c05b414480c8e10592fe1f999578fbbb0a2e633b453a33c77f4`
+-	v2 Content-Length: 293.0 B
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:45 GMT
 
-#### `59ff4d9cb120dafb0d398df06edd0e3c3183304cdf3a2cab6f80ecd6215cfd96`
+#### `3cdb59bb3d8b93d297370fab0822bc4c71473de73319521c135c0eeed334ebaf`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Tue, 24 May 2016 01:31:58 GMT
--	Parent Layer: `ddc5c5a0cc0ad2fd9e06192a14f5810af558af5c8eccaa90e84284605dd0f395`
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `d5be3d8dcd96b73c53c7885dcd871818f1ab2e53283f3833748d345e95528aed`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3513f3864d112f95726b58471e8234109326623ea0aa992b7aeba69fe1259b1`
+#### `dd26fd481a76a451ee524f8ef2845f4b8d7c9e629b1d1b1a630d5a74a3bcec9a`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Tue, 24 May 2016 01:31:59 GMT
--	Parent Layer: `59ff4d9cb120dafb0d398df06edd0e3c3183304cdf3a2cab6f80ecd6215cfd96`
--	Docker Version: 1.9.1
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `3cdb59bb3d8b93d297370fab0822bc4c71473de73319521c135c0eeed334ebaf`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -842,10 +842,10 @@ CMD ["httpd-foreground"]
 ## `httpd:latest`
 
 ```console
-$ docker pull library/httpd@sha256:45b7b92e410f50851e003027ce2c6103d178d126ef6815b7631f03bebabd1b19
+$ docker pull library/httpd@sha256:c89a26acb0edf2f5ef196db39837f3fc2a323ba149f966f7dbb0f0ad659cb4e1
 ```
 
--	Total v2 Content-Length: 70.4 MB (70412041 bytes)
+-	Total v2 Content-Length: 71.9 MB (71874865 bytes)
 
 ### Layers (13)
 
@@ -956,51 +956,51 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.2.31.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `44f446eb380d9466cbe2d11fe94ec5946a5285de9cca698f1f9ea77d6bd41a4b`
+#### `3c9deef1700cb5c1612877d065c7f169f46420f50b76d137823f686fb79e6f4d`
 
 ```dockerfile
-RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 	&& mkdir -p src/httpd 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src/httpd 	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most 	&& make -j"$(nproc)" 	&& make install 	&& cd ../../ 	&& rm -r src/httpd 	&& sed -ri ' 		s!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g; 		s!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g; 		' /usr/local/apache2/conf/httpd.conf 	&& apt-get purge -y --auto-remove $buildDeps
+RUN buildDeps=' 		ca-certificates 		curl 		bzip2 		gcc 		libpcre++-dev 		libssl-dev 		make 	' 	set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -r /var/lib/apt/lists/* 		&& curl -fSL "$HTTPD_BZ2_URL" -o httpd.tar.bz2 	&& curl -fSL "$HTTPD_BZ2_URL.asc" -o httpd.tar.bz2.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8 	&& gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2 	&& rm -r "$GNUPGHOME" httpd.tar.bz2.asc 		&& mkdir -p src 	&& tar -xvf httpd.tar.bz2 -C src --strip-components=1 	&& rm httpd.tar.bz2 	&& cd src 		&& ./configure 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 	&& make -j"$(nproc)" 	&& make install 		&& cd .. 	&& rm -r src 		&& sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 01:31:55 GMT
+-	Created: Tue, 07 Jun 2016 17:56:42 GMT
 -	Parent Layer: `b464453ce033f565062deaf150e4011f3f2e6538f76e930b45f2e27b641313f3`
--	v2 Blob: `sha256:58b0f5cbca1420d2df7a8f05ddfe96c8b556d713b6907ca191e9f7331d344e90`
--	v2 Content-Length: 7.3 MB (7332729 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 19:04:06 GMT
+-	v2 Blob: `sha256:823f21c19a75ee37c7e925ac443d9aaf718339eb98e9c6f09aa53ac2ea4a921e`
+-	v2 Content-Length: 8.8 MB (8795552 bytes)
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:48 GMT
 
-#### `ddc5c5a0cc0ad2fd9e06192a14f5810af558af5c8eccaa90e84284605dd0f395`
+#### `d5be3d8dcd96b73c53c7885dcd871818f1ab2e53283f3833748d345e95528aed`
 
 ```dockerfile
-COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
+COPY file:13dfb9d570a3d651eb22e29b4d6b853be966d83b41885bf3a40ca64840fd3db2 in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 01:31:57 GMT
--	Parent Layer: `44f446eb380d9466cbe2d11fe94ec5946a5285de9cca698f1f9ea77d6bd41a4b`
--	v2 Blob: `sha256:ea21d42aac6bddd71aa228fb117552a5383ddc6264815c5c51784a63d4bfe385`
--	v2 Content-Length: 292.0 B
--	v2 Last-Modified: Tue, 31 May 2016 19:04:00 GMT
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `3c9deef1700cb5c1612877d065c7f169f46420f50b76d137823f686fb79e6f4d`
+-	v2 Blob: `sha256:8e286d5abf354c05b414480c8e10592fe1f999578fbbb0a2e633b453a33c77f4`
+-	v2 Content-Length: 293.0 B
+-	v2 Last-Modified: Tue, 07 Jun 2016 20:36:45 GMT
 
-#### `59ff4d9cb120dafb0d398df06edd0e3c3183304cdf3a2cab6f80ecd6215cfd96`
+#### `3cdb59bb3d8b93d297370fab0822bc4c71473de73319521c135c0eeed334ebaf`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Tue, 24 May 2016 01:31:58 GMT
--	Parent Layer: `ddc5c5a0cc0ad2fd9e06192a14f5810af558af5c8eccaa90e84284605dd0f395`
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `d5be3d8dcd96b73c53c7885dcd871818f1ab2e53283f3833748d345e95528aed`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c3513f3864d112f95726b58471e8234109326623ea0aa992b7aeba69fe1259b1`
+#### `dd26fd481a76a451ee524f8ef2845f4b8d7c9e629b1d1b1a630d5a74a3bcec9a`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Tue, 24 May 2016 01:31:59 GMT
--	Parent Layer: `59ff4d9cb120dafb0d398df06edd0e3c3183304cdf3a2cab6f80ecd6215cfd96`
--	Docker Version: 1.9.1
+-	Created: Tue, 07 Jun 2016 17:56:43 GMT
+-	Parent Layer: `3cdb59bb3d8b93d297370fab0822bc4c71473de73319521c135c0eeed334ebaf`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
