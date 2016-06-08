@@ -30,20 +30,20 @@
 ## `redis:2.8.23`
 
 ```console
-$ docker pull library/redis@sha256:f3fb8132754c97ff7a127c723c30debe5f36d312bd812c2732ac89c4fa362592
+$ docker pull library/redis@sha256:6a5a6e63b728130db9ad2a32be62fd6543a194c9329af0461f694960f491c8ef
 ```
 
--	Total v2 Content-Length: 71.7 MB (71655629 bytes)
+-	Total v2 Content-Length: 71.7 MB (71699648 bytes)
 
 ### Layers (18)
 
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -54,201 +54,201 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
+#### `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
 
 ```dockerfile
 RUN groupadd -r redis && useradd -r -g redis redis
 ```
 
--	Created: Tue, 24 May 2016 07:13:09 GMT
+-	Created: Wed, 08 Jun 2016 20:01:26 GMT
 -	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:647d1f6838b59bca027c7bb93da09ed499c5d085a300b4cddf82c8c3372578d6`
--	v2 Content-Length: 2.0 KB (2034 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:00 GMT
+-	v2 Blob: `sha256:6c8ccd839b1db85aa4669156d14d3c09cb691d62e76d48b31b591403bdd43822`
+-	v2 Content-Length: 2.0 KB (2035 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:31 GMT
 
-#### `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+#### `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 07:13:52 GMT
--	Parent Layer: `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
--	v2 Blob: `sha256:8152112cb8fbc3a56a6f6dfe4ae17c50112494ef1b1c3db12abeae2a99083304`
--	v2 Content-Length: 16.6 MB (16615910 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:56 GMT
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
+-	v2 Blob: `sha256:0fded1c9651dac642c75ff5a09425f88832584cca23cdf3ff54cca655e6a9337`
+-	v2 Content-Length: 16.6 MB (16629376 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:37 GMT
 
-#### `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
+#### `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:54 GMT
--	Parent Layer: `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+#### `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
--	v2 Blob: `sha256:eba38d612e23ffe3e6e8fedfad525cca3c1795a9f6548bc3f2cc45b68fe23d82`
--	v2 Content-Length: 807.9 KB (807929 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:44 GMT
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
+-	v2 Blob: `sha256:7f1aa6a73799308fbfc23049863ce6902092714c6ae07debc014c07f440f3661`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+#### `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 
 ```dockerfile
 ENV REDIS_VERSION=2.8.23
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+#### `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
--	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
+#### `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
--	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d889f91cb67685d7547f50ec2a6cf7cc8a69f9aeae0d1f72311265aa63848747`
+#### `9df8ea57b9b37bfc3e648a8ff6a9aca91f309d3df2577391ce9313b00a01004e`
 
 ```dockerfile
 RUN buildDeps='gcc libc6-dev make' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL" 	&& echo "$REDIS_DOWNLOAD_SHA1 *redis.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/redis 	&& tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1 	&& rm redis.tar.gz 	&& make -C /usr/src/redis 	&& make -C /usr/src/redis install 	&& rm -r /usr/src/redis 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 07:15:32 GMT
--	Parent Layer: `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
--	v2 Blob: `sha256:ac746fe8d1588e24ad2e6a0304c6195211ce085739561614977ee611da9271a7`
--	v2 Content-Length: 2.9 MB (2872491 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:32 GMT
+-	Created: Wed, 08 Jun 2016 20:04:28 GMT
+-	Parent Layer: `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
+-	v2 Blob: `sha256:fbe8a4f1aa876020ae4aae0ff1bd9704d981714361cf85f773a8877e70de597c`
+-	v2 Content-Length: 2.9 MB (2903046 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:30 GMT
 
-#### `5802730bc975d57571cbafaebd4d9a96c08c9ee9ea6077383007d0a2d8232b87`
+#### `d2b3067bd0d92c7626814a81baa6c11bad0791d1b54c77162b26bd636be45b3b`
 
 ```dockerfile
 RUN mkdir /data && chown redis:redis /data
 ```
 
--	Created: Tue, 24 May 2016 07:15:34 GMT
--	Parent Layer: `d889f91cb67685d7547f50ec2a6cf7cc8a69f9aeae0d1f72311265aa63848747`
--	v2 Blob: `sha256:30a74ab0adc903ddb5ec51b3f8220904e34801c5bb2214900d3b78f561a4f420`
+-	Created: Wed, 08 Jun 2016 20:04:29 GMT
+-	Parent Layer: `9df8ea57b9b37bfc3e648a8ff6a9aca91f309d3df2577391ce9313b00a01004e`
+-	v2 Blob: `sha256:1a9852d2edd343460e89ebe0c4fa790063fe3c3e85c6618b45ddf127ef764372`
 -	v2 Content-Length: 96.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:28 GMT
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `f979f8cc2836fde1f2dcc2d651923a458dd082d028ddc6196f92681bbb458a1f`
+#### `56af857b421629fadaa0c48064a6fbefe729328e736b5a76300c0986933ad30b`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Tue, 24 May 2016 07:15:35 GMT
--	Parent Layer: `5802730bc975d57571cbafaebd4d9a96c08c9ee9ea6077383007d0a2d8232b87`
+-	Created: Wed, 08 Jun 2016 20:04:30 GMT
+-	Parent Layer: `d2b3067bd0d92c7626814a81baa6c11bad0791d1b54c77162b26bd636be45b3b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fe22e18b89fea041f23fad2f24d8fc28cc649091bfe4524d21b3498d9ac2fcd8`
+#### `79f9208f8aef0692920ec12ad5961fb42705301c6e2120457b98d19257490205`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Tue, 24 May 2016 07:15:35 GMT
--	Parent Layer: `f979f8cc2836fde1f2dcc2d651923a458dd082d028ddc6196f92681bbb458a1f`
+-	Created: Wed, 08 Jun 2016 20:04:30 GMT
+-	Parent Layer: `56af857b421629fadaa0c48064a6fbefe729328e736b5a76300c0986933ad30b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8e5c196cd7aae25cfdbb0ce03b7d9cf0ec6b124150239e2d95c5214824d4bd1a`
+#### `920067b8ad87eed20479953caf8eefe7806b0e3a0b0713be3946cf7b652857a7`
 
 ```dockerfile
-COPY file:50858b00e8f751d73821ff2fa1eff511ce96673dd5dbe5b5e0ef0d230894307e in /usr/local/bin/
+COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 07:15:36 GMT
--	Parent Layer: `fe22e18b89fea041f23fad2f24d8fc28cc649091bfe4524d21b3498d9ac2fcd8`
--	v2 Blob: `sha256:b277dd50eaa92d163caa775a551f85ca52a4bd0b03eeac4eaeef5cb9d08ee65a`
--	v2 Content-Length: 398.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:19 GMT
+-	Created: Wed, 08 Jun 2016 20:04:30 GMT
+-	Parent Layer: `79f9208f8aef0692920ec12ad5961fb42705301c6e2120457b98d19257490205`
+-	v2 Blob: `sha256:128182e1e85d1b381458ef6f98a78ab640080e72f5500a2a6fa25d8a6c766ef9`
+-	v2 Content-Length: 395.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `758459041108845d7f9cd424a12f22d5a09dc815a19ff09ccd2ca2e0788d069c`
+#### `93309b0ff60e99638f642536c198669c94fc621f8f5b10cc38c0141a59d1860e`
 
 ```dockerfile
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 ```
 
--	Created: Tue, 24 May 2016 07:15:38 GMT
--	Parent Layer: `8e5c196cd7aae25cfdbb0ce03b7d9cf0ec6b124150239e2d95c5214824d4bd1a`
--	v2 Blob: `sha256:67b05ed625744020289bc832ccbf2d10d3ab446828d283d03e86eb68c66d4509`
--	v2 Content-Length: 117.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:15 GMT
+-	Created: Wed, 08 Jun 2016 20:04:31 GMT
+-	Parent Layer: `920067b8ad87eed20479953caf8eefe7806b0e3a0b0713be3946cf7b652857a7`
+-	v2 Blob: `sha256:b94de088b6d8ec958cd8ce3deb690e5c2a6f8c5b0f1368674234b5a44d709cbd`
+-	v2 Content-Length: 119.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:28 GMT
 
-#### `4d68df68d640b3bc04191b902f9006707d77ef191c9ed235c207278f87a7ae3f`
+#### `4bd3951254294cefa511812d3f5d24ce79674885967ed19c19d353b2b74961e5`
 
 ```dockerfile
 ENTRYPOINT &{["docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 07:15:38 GMT
--	Parent Layer: `758459041108845d7f9cd424a12f22d5a09dc815a19ff09ccd2ca2e0788d069c`
+-	Created: Wed, 08 Jun 2016 20:04:31 GMT
+-	Parent Layer: `93309b0ff60e99638f642536c198669c94fc621f8f5b10cc38c0141a59d1860e`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ec5460925822480d9fff752748853043c22c827c52d51c784bd392667feb67b8`
+#### `feb620fa7d094ea9b63758dd0a640a7b6faa48c087fe426160f3fd62d9beaa3c`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Tue, 24 May 2016 07:15:39 GMT
--	Parent Layer: `4d68df68d640b3bc04191b902f9006707d77ef191c9ed235c207278f87a7ae3f`
+-	Created: Wed, 08 Jun 2016 20:04:31 GMT
+-	Parent Layer: `4bd3951254294cefa511812d3f5d24ce79674885967ed19c19d353b2b74961e5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `65640b2a5c6c265c7bafddb1d86ae470be53229ffb39657aa12a14e0e1ea85d6`
+#### `acda123b07298b1b172282d24e1360f9d653cae1dd65c8c0a29875eedac1c31d`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Tue, 24 May 2016 07:15:40 GMT
--	Parent Layer: `ec5460925822480d9fff752748853043c22c827c52d51c784bd392667feb67b8`
--	Docker Version: 1.9.1
+-	Created: Wed, 08 Jun 2016 20:04:32 GMT
+-	Parent Layer: `feb620fa7d094ea9b63758dd0a640a7b6faa48c087fe426160f3fd62d9beaa3c`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -256,20 +256,20 @@ CMD ["redis-server"]
 ## `redis:2.8`
 
 ```console
-$ docker pull library/redis@sha256:16c57ae533978e59d4db8bdaedd38491fb376e0813745e5dfe5d207c50a5854b
+$ docker pull library/redis@sha256:fe38fdf76ed2a547550bc3702f33e5d65cb0d474d80b58182f53864ec24d012b
 ```
 
--	Total v2 Content-Length: 71.7 MB (71655629 bytes)
+-	Total v2 Content-Length: 71.7 MB (71699648 bytes)
 
 ### Layers (18)
 
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -280,201 +280,201 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
+#### `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
 
 ```dockerfile
 RUN groupadd -r redis && useradd -r -g redis redis
 ```
 
--	Created: Tue, 24 May 2016 07:13:09 GMT
+-	Created: Wed, 08 Jun 2016 20:01:26 GMT
 -	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:647d1f6838b59bca027c7bb93da09ed499c5d085a300b4cddf82c8c3372578d6`
--	v2 Content-Length: 2.0 KB (2034 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:00 GMT
+-	v2 Blob: `sha256:6c8ccd839b1db85aa4669156d14d3c09cb691d62e76d48b31b591403bdd43822`
+-	v2 Content-Length: 2.0 KB (2035 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:31 GMT
 
-#### `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+#### `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 07:13:52 GMT
--	Parent Layer: `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
--	v2 Blob: `sha256:8152112cb8fbc3a56a6f6dfe4ae17c50112494ef1b1c3db12abeae2a99083304`
--	v2 Content-Length: 16.6 MB (16615910 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:56 GMT
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
+-	v2 Blob: `sha256:0fded1c9651dac642c75ff5a09425f88832584cca23cdf3ff54cca655e6a9337`
+-	v2 Content-Length: 16.6 MB (16629376 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:37 GMT
 
-#### `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
+#### `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:54 GMT
--	Parent Layer: `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+#### `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
--	v2 Blob: `sha256:eba38d612e23ffe3e6e8fedfad525cca3c1795a9f6548bc3f2cc45b68fe23d82`
--	v2 Content-Length: 807.9 KB (807929 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:44 GMT
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
+-	v2 Blob: `sha256:7f1aa6a73799308fbfc23049863ce6902092714c6ae07debc014c07f440f3661`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+#### `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 
 ```dockerfile
 ENV REDIS_VERSION=2.8.23
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+#### `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
--	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
+#### `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
--	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d889f91cb67685d7547f50ec2a6cf7cc8a69f9aeae0d1f72311265aa63848747`
+#### `9df8ea57b9b37bfc3e648a8ff6a9aca91f309d3df2577391ce9313b00a01004e`
 
 ```dockerfile
 RUN buildDeps='gcc libc6-dev make' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL" 	&& echo "$REDIS_DOWNLOAD_SHA1 *redis.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/redis 	&& tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1 	&& rm redis.tar.gz 	&& make -C /usr/src/redis 	&& make -C /usr/src/redis install 	&& rm -r /usr/src/redis 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 07:15:32 GMT
--	Parent Layer: `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
--	v2 Blob: `sha256:ac746fe8d1588e24ad2e6a0304c6195211ce085739561614977ee611da9271a7`
--	v2 Content-Length: 2.9 MB (2872491 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:32 GMT
+-	Created: Wed, 08 Jun 2016 20:04:28 GMT
+-	Parent Layer: `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
+-	v2 Blob: `sha256:fbe8a4f1aa876020ae4aae0ff1bd9704d981714361cf85f773a8877e70de597c`
+-	v2 Content-Length: 2.9 MB (2903046 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:30 GMT
 
-#### `5802730bc975d57571cbafaebd4d9a96c08c9ee9ea6077383007d0a2d8232b87`
+#### `d2b3067bd0d92c7626814a81baa6c11bad0791d1b54c77162b26bd636be45b3b`
 
 ```dockerfile
 RUN mkdir /data && chown redis:redis /data
 ```
 
--	Created: Tue, 24 May 2016 07:15:34 GMT
--	Parent Layer: `d889f91cb67685d7547f50ec2a6cf7cc8a69f9aeae0d1f72311265aa63848747`
--	v2 Blob: `sha256:30a74ab0adc903ddb5ec51b3f8220904e34801c5bb2214900d3b78f561a4f420`
+-	Created: Wed, 08 Jun 2016 20:04:29 GMT
+-	Parent Layer: `9df8ea57b9b37bfc3e648a8ff6a9aca91f309d3df2577391ce9313b00a01004e`
+-	v2 Blob: `sha256:1a9852d2edd343460e89ebe0c4fa790063fe3c3e85c6618b45ddf127ef764372`
 -	v2 Content-Length: 96.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:28 GMT
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `f979f8cc2836fde1f2dcc2d651923a458dd082d028ddc6196f92681bbb458a1f`
+#### `56af857b421629fadaa0c48064a6fbefe729328e736b5a76300c0986933ad30b`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Tue, 24 May 2016 07:15:35 GMT
--	Parent Layer: `5802730bc975d57571cbafaebd4d9a96c08c9ee9ea6077383007d0a2d8232b87`
+-	Created: Wed, 08 Jun 2016 20:04:30 GMT
+-	Parent Layer: `d2b3067bd0d92c7626814a81baa6c11bad0791d1b54c77162b26bd636be45b3b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fe22e18b89fea041f23fad2f24d8fc28cc649091bfe4524d21b3498d9ac2fcd8`
+#### `79f9208f8aef0692920ec12ad5961fb42705301c6e2120457b98d19257490205`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Tue, 24 May 2016 07:15:35 GMT
--	Parent Layer: `f979f8cc2836fde1f2dcc2d651923a458dd082d028ddc6196f92681bbb458a1f`
+-	Created: Wed, 08 Jun 2016 20:04:30 GMT
+-	Parent Layer: `56af857b421629fadaa0c48064a6fbefe729328e736b5a76300c0986933ad30b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8e5c196cd7aae25cfdbb0ce03b7d9cf0ec6b124150239e2d95c5214824d4bd1a`
+#### `920067b8ad87eed20479953caf8eefe7806b0e3a0b0713be3946cf7b652857a7`
 
 ```dockerfile
-COPY file:50858b00e8f751d73821ff2fa1eff511ce96673dd5dbe5b5e0ef0d230894307e in /usr/local/bin/
+COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 07:15:36 GMT
--	Parent Layer: `fe22e18b89fea041f23fad2f24d8fc28cc649091bfe4524d21b3498d9ac2fcd8`
--	v2 Blob: `sha256:b277dd50eaa92d163caa775a551f85ca52a4bd0b03eeac4eaeef5cb9d08ee65a`
--	v2 Content-Length: 398.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:19 GMT
+-	Created: Wed, 08 Jun 2016 20:04:30 GMT
+-	Parent Layer: `79f9208f8aef0692920ec12ad5961fb42705301c6e2120457b98d19257490205`
+-	v2 Blob: `sha256:128182e1e85d1b381458ef6f98a78ab640080e72f5500a2a6fa25d8a6c766ef9`
+-	v2 Content-Length: 395.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `758459041108845d7f9cd424a12f22d5a09dc815a19ff09ccd2ca2e0788d069c`
+#### `93309b0ff60e99638f642536c198669c94fc621f8f5b10cc38c0141a59d1860e`
 
 ```dockerfile
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 ```
 
--	Created: Tue, 24 May 2016 07:15:38 GMT
--	Parent Layer: `8e5c196cd7aae25cfdbb0ce03b7d9cf0ec6b124150239e2d95c5214824d4bd1a`
--	v2 Blob: `sha256:67b05ed625744020289bc832ccbf2d10d3ab446828d283d03e86eb68c66d4509`
--	v2 Content-Length: 117.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:15 GMT
+-	Created: Wed, 08 Jun 2016 20:04:31 GMT
+-	Parent Layer: `920067b8ad87eed20479953caf8eefe7806b0e3a0b0713be3946cf7b652857a7`
+-	v2 Blob: `sha256:b94de088b6d8ec958cd8ce3deb690e5c2a6f8c5b0f1368674234b5a44d709cbd`
+-	v2 Content-Length: 119.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:28 GMT
 
-#### `4d68df68d640b3bc04191b902f9006707d77ef191c9ed235c207278f87a7ae3f`
+#### `4bd3951254294cefa511812d3f5d24ce79674885967ed19c19d353b2b74961e5`
 
 ```dockerfile
 ENTRYPOINT &{["docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 07:15:38 GMT
--	Parent Layer: `758459041108845d7f9cd424a12f22d5a09dc815a19ff09ccd2ca2e0788d069c`
+-	Created: Wed, 08 Jun 2016 20:04:31 GMT
+-	Parent Layer: `93309b0ff60e99638f642536c198669c94fc621f8f5b10cc38c0141a59d1860e`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ec5460925822480d9fff752748853043c22c827c52d51c784bd392667feb67b8`
+#### `feb620fa7d094ea9b63758dd0a640a7b6faa48c087fe426160f3fd62d9beaa3c`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Tue, 24 May 2016 07:15:39 GMT
--	Parent Layer: `4d68df68d640b3bc04191b902f9006707d77ef191c9ed235c207278f87a7ae3f`
+-	Created: Wed, 08 Jun 2016 20:04:31 GMT
+-	Parent Layer: `4bd3951254294cefa511812d3f5d24ce79674885967ed19c19d353b2b74961e5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `65640b2a5c6c265c7bafddb1d86ae470be53229ffb39657aa12a14e0e1ea85d6`
+#### `acda123b07298b1b172282d24e1360f9d653cae1dd65c8c0a29875eedac1c31d`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Tue, 24 May 2016 07:15:40 GMT
--	Parent Layer: `ec5460925822480d9fff752748853043c22c827c52d51c784bd392667feb67b8`
--	Docker Version: 1.9.1
+-	Created: Wed, 08 Jun 2016 20:04:32 GMT
+-	Parent Layer: `feb620fa7d094ea9b63758dd0a640a7b6faa48c087fe426160f3fd62d9beaa3c`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -482,20 +482,20 @@ CMD ["redis-server"]
 ## `redis:2`
 
 ```console
-$ docker pull library/redis@sha256:ff2e570fa0fd42a3f43def3aa79da71a803046122532f2c83e244fe99d665b1c
+$ docker pull library/redis@sha256:f6a06ef0305514a3abc6a49d471c0c9c61990a31162a81b7861f2730e96dbc1a
 ```
 
--	Total v2 Content-Length: 71.7 MB (71655629 bytes)
+-	Total v2 Content-Length: 71.7 MB (71699648 bytes)
 
 ### Layers (18)
 
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -506,201 +506,201 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
+#### `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
 
 ```dockerfile
 RUN groupadd -r redis && useradd -r -g redis redis
 ```
 
--	Created: Tue, 24 May 2016 07:13:09 GMT
+-	Created: Wed, 08 Jun 2016 20:01:26 GMT
 -	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:647d1f6838b59bca027c7bb93da09ed499c5d085a300b4cddf82c8c3372578d6`
--	v2 Content-Length: 2.0 KB (2034 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:00 GMT
+-	v2 Blob: `sha256:6c8ccd839b1db85aa4669156d14d3c09cb691d62e76d48b31b591403bdd43822`
+-	v2 Content-Length: 2.0 KB (2035 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:31 GMT
 
-#### `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+#### `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 07:13:52 GMT
--	Parent Layer: `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
--	v2 Blob: `sha256:8152112cb8fbc3a56a6f6dfe4ae17c50112494ef1b1c3db12abeae2a99083304`
--	v2 Content-Length: 16.6 MB (16615910 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:56 GMT
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
+-	v2 Blob: `sha256:0fded1c9651dac642c75ff5a09425f88832584cca23cdf3ff54cca655e6a9337`
+-	v2 Content-Length: 16.6 MB (16629376 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:37 GMT
 
-#### `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
+#### `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:54 GMT
--	Parent Layer: `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+#### `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
--	v2 Blob: `sha256:eba38d612e23ffe3e6e8fedfad525cca3c1795a9f6548bc3f2cc45b68fe23d82`
--	v2 Content-Length: 807.9 KB (807929 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:44 GMT
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
+-	v2 Blob: `sha256:7f1aa6a73799308fbfc23049863ce6902092714c6ae07debc014c07f440f3661`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+#### `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 
 ```dockerfile
 ENV REDIS_VERSION=2.8.23
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+#### `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
--	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
+#### `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
--	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d889f91cb67685d7547f50ec2a6cf7cc8a69f9aeae0d1f72311265aa63848747`
+#### `9df8ea57b9b37bfc3e648a8ff6a9aca91f309d3df2577391ce9313b00a01004e`
 
 ```dockerfile
 RUN buildDeps='gcc libc6-dev make' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL" 	&& echo "$REDIS_DOWNLOAD_SHA1 *redis.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/redis 	&& tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1 	&& rm redis.tar.gz 	&& make -C /usr/src/redis 	&& make -C /usr/src/redis install 	&& rm -r /usr/src/redis 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 07:15:32 GMT
--	Parent Layer: `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
--	v2 Blob: `sha256:ac746fe8d1588e24ad2e6a0304c6195211ce085739561614977ee611da9271a7`
--	v2 Content-Length: 2.9 MB (2872491 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:32 GMT
+-	Created: Wed, 08 Jun 2016 20:04:28 GMT
+-	Parent Layer: `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
+-	v2 Blob: `sha256:fbe8a4f1aa876020ae4aae0ff1bd9704d981714361cf85f773a8877e70de597c`
+-	v2 Content-Length: 2.9 MB (2903046 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:30 GMT
 
-#### `5802730bc975d57571cbafaebd4d9a96c08c9ee9ea6077383007d0a2d8232b87`
+#### `d2b3067bd0d92c7626814a81baa6c11bad0791d1b54c77162b26bd636be45b3b`
 
 ```dockerfile
 RUN mkdir /data && chown redis:redis /data
 ```
 
--	Created: Tue, 24 May 2016 07:15:34 GMT
--	Parent Layer: `d889f91cb67685d7547f50ec2a6cf7cc8a69f9aeae0d1f72311265aa63848747`
--	v2 Blob: `sha256:30a74ab0adc903ddb5ec51b3f8220904e34801c5bb2214900d3b78f561a4f420`
+-	Created: Wed, 08 Jun 2016 20:04:29 GMT
+-	Parent Layer: `9df8ea57b9b37bfc3e648a8ff6a9aca91f309d3df2577391ce9313b00a01004e`
+-	v2 Blob: `sha256:1a9852d2edd343460e89ebe0c4fa790063fe3c3e85c6618b45ddf127ef764372`
 -	v2 Content-Length: 96.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:28 GMT
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `f979f8cc2836fde1f2dcc2d651923a458dd082d028ddc6196f92681bbb458a1f`
+#### `56af857b421629fadaa0c48064a6fbefe729328e736b5a76300c0986933ad30b`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Tue, 24 May 2016 07:15:35 GMT
--	Parent Layer: `5802730bc975d57571cbafaebd4d9a96c08c9ee9ea6077383007d0a2d8232b87`
+-	Created: Wed, 08 Jun 2016 20:04:30 GMT
+-	Parent Layer: `d2b3067bd0d92c7626814a81baa6c11bad0791d1b54c77162b26bd636be45b3b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fe22e18b89fea041f23fad2f24d8fc28cc649091bfe4524d21b3498d9ac2fcd8`
+#### `79f9208f8aef0692920ec12ad5961fb42705301c6e2120457b98d19257490205`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Tue, 24 May 2016 07:15:35 GMT
--	Parent Layer: `f979f8cc2836fde1f2dcc2d651923a458dd082d028ddc6196f92681bbb458a1f`
+-	Created: Wed, 08 Jun 2016 20:04:30 GMT
+-	Parent Layer: `56af857b421629fadaa0c48064a6fbefe729328e736b5a76300c0986933ad30b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8e5c196cd7aae25cfdbb0ce03b7d9cf0ec6b124150239e2d95c5214824d4bd1a`
+#### `920067b8ad87eed20479953caf8eefe7806b0e3a0b0713be3946cf7b652857a7`
 
 ```dockerfile
-COPY file:50858b00e8f751d73821ff2fa1eff511ce96673dd5dbe5b5e0ef0d230894307e in /usr/local/bin/
+COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 07:15:36 GMT
--	Parent Layer: `fe22e18b89fea041f23fad2f24d8fc28cc649091bfe4524d21b3498d9ac2fcd8`
--	v2 Blob: `sha256:b277dd50eaa92d163caa775a551f85ca52a4bd0b03eeac4eaeef5cb9d08ee65a`
--	v2 Content-Length: 398.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:19 GMT
+-	Created: Wed, 08 Jun 2016 20:04:30 GMT
+-	Parent Layer: `79f9208f8aef0692920ec12ad5961fb42705301c6e2120457b98d19257490205`
+-	v2 Blob: `sha256:128182e1e85d1b381458ef6f98a78ab640080e72f5500a2a6fa25d8a6c766ef9`
+-	v2 Content-Length: 395.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `758459041108845d7f9cd424a12f22d5a09dc815a19ff09ccd2ca2e0788d069c`
+#### `93309b0ff60e99638f642536c198669c94fc621f8f5b10cc38c0141a59d1860e`
 
 ```dockerfile
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 ```
 
--	Created: Tue, 24 May 2016 07:15:38 GMT
--	Parent Layer: `8e5c196cd7aae25cfdbb0ce03b7d9cf0ec6b124150239e2d95c5214824d4bd1a`
--	v2 Blob: `sha256:67b05ed625744020289bc832ccbf2d10d3ab446828d283d03e86eb68c66d4509`
--	v2 Content-Length: 117.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:15 GMT
+-	Created: Wed, 08 Jun 2016 20:04:31 GMT
+-	Parent Layer: `920067b8ad87eed20479953caf8eefe7806b0e3a0b0713be3946cf7b652857a7`
+-	v2 Blob: `sha256:b94de088b6d8ec958cd8ce3deb690e5c2a6f8c5b0f1368674234b5a44d709cbd`
+-	v2 Content-Length: 119.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:28 GMT
 
-#### `4d68df68d640b3bc04191b902f9006707d77ef191c9ed235c207278f87a7ae3f`
+#### `4bd3951254294cefa511812d3f5d24ce79674885967ed19c19d353b2b74961e5`
 
 ```dockerfile
 ENTRYPOINT &{["docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 07:15:38 GMT
--	Parent Layer: `758459041108845d7f9cd424a12f22d5a09dc815a19ff09ccd2ca2e0788d069c`
+-	Created: Wed, 08 Jun 2016 20:04:31 GMT
+-	Parent Layer: `93309b0ff60e99638f642536c198669c94fc621f8f5b10cc38c0141a59d1860e`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ec5460925822480d9fff752748853043c22c827c52d51c784bd392667feb67b8`
+#### `feb620fa7d094ea9b63758dd0a640a7b6faa48c087fe426160f3fd62d9beaa3c`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Tue, 24 May 2016 07:15:39 GMT
--	Parent Layer: `4d68df68d640b3bc04191b902f9006707d77ef191c9ed235c207278f87a7ae3f`
+-	Created: Wed, 08 Jun 2016 20:04:31 GMT
+-	Parent Layer: `4bd3951254294cefa511812d3f5d24ce79674885967ed19c19d353b2b74961e5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `65640b2a5c6c265c7bafddb1d86ae470be53229ffb39657aa12a14e0e1ea85d6`
+#### `acda123b07298b1b172282d24e1360f9d653cae1dd65c8c0a29875eedac1c31d`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Tue, 24 May 2016 07:15:40 GMT
--	Parent Layer: `ec5460925822480d9fff752748853043c22c827c52d51c784bd392667feb67b8`
--	Docker Version: 1.9.1
+-	Created: Wed, 08 Jun 2016 20:04:32 GMT
+-	Parent Layer: `feb620fa7d094ea9b63758dd0a640a7b6faa48c087fe426160f3fd62d9beaa3c`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -708,20 +708,20 @@ CMD ["redis-server"]
 ## `redis:2.8.23-32bit`
 
 ```console
-$ docker pull library/redis@sha256:3ab5d1a5554cb86826267ae3ae68d7e87b5272ee3728de9a103ccde11990d8de
+$ docker pull library/redis@sha256:6f80094f4bab05acc044f15b387f3ba8ff86367e24e89b2ccf3cbf77578339cc
 ```
 
--	Total v2 Content-Length: 75.6 MB (75577052 bytes)
+-	Total v2 Content-Length: 75.7 MB (75650384 bytes)
 
 ### Layers (19)
 
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -732,213 +732,213 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
+#### `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
 
 ```dockerfile
 RUN groupadd -r redis && useradd -r -g redis redis
 ```
 
--	Created: Tue, 24 May 2016 07:13:09 GMT
+-	Created: Wed, 08 Jun 2016 20:01:26 GMT
 -	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:647d1f6838b59bca027c7bb93da09ed499c5d085a300b4cddf82c8c3372578d6`
--	v2 Content-Length: 2.0 KB (2034 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:00 GMT
+-	v2 Blob: `sha256:6c8ccd839b1db85aa4669156d14d3c09cb691d62e76d48b31b591403bdd43822`
+-	v2 Content-Length: 2.0 KB (2035 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:31 GMT
 
-#### `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+#### `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 07:13:52 GMT
--	Parent Layer: `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
--	v2 Blob: `sha256:8152112cb8fbc3a56a6f6dfe4ae17c50112494ef1b1c3db12abeae2a99083304`
--	v2 Content-Length: 16.6 MB (16615910 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:56 GMT
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
+-	v2 Blob: `sha256:0fded1c9651dac642c75ff5a09425f88832584cca23cdf3ff54cca655e6a9337`
+-	v2 Content-Length: 16.6 MB (16629376 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:37 GMT
 
-#### `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
+#### `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:54 GMT
--	Parent Layer: `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+#### `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
--	v2 Blob: `sha256:eba38d612e23ffe3e6e8fedfad525cca3c1795a9f6548bc3f2cc45b68fe23d82`
--	v2 Content-Length: 807.9 KB (807929 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:44 GMT
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
+-	v2 Blob: `sha256:7f1aa6a73799308fbfc23049863ce6902092714c6ae07debc014c07f440f3661`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+#### `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 
 ```dockerfile
 ENV REDIS_VERSION=2.8.23
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+#### `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
--	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
+#### `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
--	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `339c8357a000e10d9bf52ea414a32a82723e1532de3a84b93cceb2f44ff5cad4`
+#### `c21c275dfb575d422aa6c243236de7e9147f37269ddfa66061c53a76ade0e782`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 07:18:20 GMT
--	Parent Layer: `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
--	v2 Blob: `sha256:c3697cfa087a12d64cc68872bdadafb192aa174f983cedcb5fd0be64712870cc`
--	v2 Content-Length: 4.2 MB (4224046 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:07:01 GMT
+-	Created: Wed, 08 Jun 2016 20:05:27 GMT
+-	Parent Layer: `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
+-	v2 Blob: `sha256:61bd41cc96da5ba8c0b66aab39fed3c60a7308932decbdc1eba10cb2be82513b`
+-	v2 Content-Length: 4.3 MB (4254289 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:54 GMT
 
-#### `e3e9e8789762d6cb865005a7d56a0d5ebe53ce4081bc51a101e4398b083b2b31`
+#### `ab1a7c61623717d897f69d2b0b8caa20b720590cfb9021eb1007dca6cf695134`
 
 ```dockerfile
 RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL" 	&& echo "$REDIS_DOWNLOAD_SHA1 *redis.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/redis 	&& tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1 	&& rm redis.tar.gz 	&& make -C /usr/src/redis 32bit 	&& make -C /usr/src/redis install 	&& rm -r /usr/src/redis 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 07:20:02 GMT
--	Parent Layer: `339c8357a000e10d9bf52ea414a32a82723e1532de3a84b93cceb2f44ff5cad4`
--	v2 Blob: `sha256:cdcd8dc0cbdf5ef93b83502be2f3c7b924589189cddcdefdf3ba759bd5e1ef19`
--	v2 Content-Length: 2.6 MB (2569869 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:56 GMT
+-	Created: Wed, 08 Jun 2016 20:07:30 GMT
+-	Parent Layer: `c21c275dfb575d422aa6c243236de7e9147f37269ddfa66061c53a76ade0e782`
+-	v2 Blob: `sha256:087610a7f646823188e5771048cd405d77ae7c0107faa4e5c04c9f6d0eff9008`
+-	v2 Content-Length: 2.6 MB (2599492 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:53 GMT
 
-#### `cf131ef96e612f24b8367f842aa7e51af295061be9fb9f1bdceeb9c675f82392`
+#### `21799090f93cceb120e85b8d8418822733394de6bb88779227d97c208b98f3dd`
 
 ```dockerfile
 RUN mkdir /data && chown redis:redis /data
 ```
 
--	Created: Tue, 24 May 2016 07:20:04 GMT
--	Parent Layer: `e3e9e8789762d6cb865005a7d56a0d5ebe53ce4081bc51a101e4398b083b2b31`
--	v2 Blob: `sha256:d287f33b19ba456751058158d08bc0422ecc16e5ec70310af268c6ed3f412cb7`
--	v2 Content-Length: 96.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:52 GMT
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `ab1a7c61623717d897f69d2b0b8caa20b720590cfb9021eb1007dca6cf695134`
+-	v2 Blob: `sha256:4747742746f7860aecaf527a31501f30f8fc9d3efac40cd046d1fd5dd7d39bd9`
+-	v2 Content-Length: 97.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:51 GMT
 
-#### `f6e982bb0a8bf8ca675da161e92a89b602c0b12344f127b2092bbe02ccd04a62`
+#### `d653567719babb79fb945120c41462862487a3e7d333bab3983ec69776a2b43d`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Tue, 24 May 2016 07:20:05 GMT
--	Parent Layer: `cf131ef96e612f24b8367f842aa7e51af295061be9fb9f1bdceeb9c675f82392`
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `21799090f93cceb120e85b8d8418822733394de6bb88779227d97c208b98f3dd`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c40a81dcb9fc110d007283d0e6da25e5ee12c4d51a5c6605da60f38dcd6dcd33`
+#### `55faa77252d1ad0ee5b85580f8036e28d1882ca6d17bf1501e42bd92b4c19ccc`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Tue, 24 May 2016 07:20:05 GMT
--	Parent Layer: `f6e982bb0a8bf8ca675da161e92a89b602c0b12344f127b2092bbe02ccd04a62`
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `d653567719babb79fb945120c41462862487a3e7d333bab3983ec69776a2b43d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e16740b76950a490446e4f0eb2de87e46e121ad50de502f07f3790b85c89784f`
+#### `8210f60bdd90cf26069fb7a5343be74c62cf93c9603c08e3cb55038ccef0400a`
 
 ```dockerfile
-COPY file:50858b00e8f751d73821ff2fa1eff511ce96673dd5dbe5b5e0ef0d230894307e in /usr/local/bin/
+COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 07:20:06 GMT
--	Parent Layer: `c40a81dcb9fc110d007283d0e6da25e5ee12c4d51a5c6605da60f38dcd6dcd33`
--	v2 Blob: `sha256:f5a04df0c57460b48548d2b3b7659f48332261ae6e68ecbf61ace8c959f42eff`
--	v2 Content-Length: 396.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:45 GMT
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `55faa77252d1ad0ee5b85580f8036e28d1882ca6d17bf1501e42bd92b4c19ccc`
+-	v2 Blob: `sha256:574d663436a1ecd13e37cf1ce6bd39461c1dbde053c0e95c6dc9469b888a62a8`
+-	v2 Content-Length: 394.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:51 GMT
 
-#### `07f35dde3925c9e6182b7c0dc01362c6ead3182b57ca6cb053723ea246e344f8`
+#### `fbeaea75789c0b7414c436cb01fe128ab6fe7b87e6dacbde7c0f22b89e607b9e`
 
 ```dockerfile
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 ```
 
--	Created: Tue, 24 May 2016 07:20:08 GMT
--	Parent Layer: `e16740b76950a490446e4f0eb2de87e46e121ad50de502f07f3790b85c89784f`
--	v2 Blob: `sha256:6475c542f34dc34c9f13d3e0a7d02d7bc5b4416a2d76662d2cf769f034dd17f6`
--	v2 Content-Length: 118.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:41 GMT
+-	Created: Wed, 08 Jun 2016 20:07:33 GMT
+-	Parent Layer: `8210f60bdd90cf26069fb7a5343be74c62cf93c9603c08e3cb55038ccef0400a`
+-	v2 Blob: `sha256:d90e8a92b5481a8a5a250712ba18d634c49ad9b29fceb2a93fe135fe9764888f`
+-	v2 Content-Length: 120.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:51 GMT
 
-#### `e03a46e4d7efc0a071cc2e31e1f9c08cec3c90a554602a35d557417914d9816a`
+#### `b4a5013fcc6608a3bc6bc812550517341b0b334220ffc9acd4fb728ec3c1e63f`
 
 ```dockerfile
 ENTRYPOINT &{["docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 07:20:08 GMT
--	Parent Layer: `07f35dde3925c9e6182b7c0dc01362c6ead3182b57ca6cb053723ea246e344f8`
+-	Created: Wed, 08 Jun 2016 20:07:34 GMT
+-	Parent Layer: `fbeaea75789c0b7414c436cb01fe128ab6fe7b87e6dacbde7c0f22b89e607b9e`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `26bec11b2aad0662ea8b8e8d6489e06bf0e9b37219a39f8c13c0042f347b086e`
+#### `45b4fe83a5fa86ff0a7f2837e2316ed401b000fc0c09e334ad3035dfabf29949`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Tue, 24 May 2016 07:20:09 GMT
--	Parent Layer: `e03a46e4d7efc0a071cc2e31e1f9c08cec3c90a554602a35d557417914d9816a`
+-	Created: Wed, 08 Jun 2016 20:07:34 GMT
+-	Parent Layer: `b4a5013fcc6608a3bc6bc812550517341b0b334220ffc9acd4fb728ec3c1e63f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a115f5eb70d7e10018b6918b63d0f14f6eae2a54e555ec13e4ffc3d9d5957aaa`
+#### `cec79eb74c59393769b2c9e97bb1c95ad4070c332ef72a21330fab0cb8b0771a`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Tue, 24 May 2016 07:20:10 GMT
--	Parent Layer: `26bec11b2aad0662ea8b8e8d6489e06bf0e9b37219a39f8c13c0042f347b086e`
--	Docker Version: 1.9.1
+-	Created: Wed, 08 Jun 2016 20:07:34 GMT
+-	Parent Layer: `45b4fe83a5fa86ff0a7f2837e2316ed401b000fc0c09e334ad3035dfabf29949`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -946,20 +946,20 @@ CMD ["redis-server"]
 ## `redis:2.8-32bit`
 
 ```console
-$ docker pull library/redis@sha256:eef59937f9b08e207362e83e860cc646a81dfbefbeb91b40ae3bb90185ec8f8f
+$ docker pull library/redis@sha256:84f8d43195b1e34aa4a5f20dff0bb55a8371f1d182fdbea9c13a47999b22fc52
 ```
 
--	Total v2 Content-Length: 75.6 MB (75577052 bytes)
+-	Total v2 Content-Length: 75.7 MB (75650384 bytes)
 
 ### Layers (19)
 
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -970,213 +970,213 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
+#### `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
 
 ```dockerfile
 RUN groupadd -r redis && useradd -r -g redis redis
 ```
 
--	Created: Tue, 24 May 2016 07:13:09 GMT
+-	Created: Wed, 08 Jun 2016 20:01:26 GMT
 -	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:647d1f6838b59bca027c7bb93da09ed499c5d085a300b4cddf82c8c3372578d6`
--	v2 Content-Length: 2.0 KB (2034 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:00 GMT
+-	v2 Blob: `sha256:6c8ccd839b1db85aa4669156d14d3c09cb691d62e76d48b31b591403bdd43822`
+-	v2 Content-Length: 2.0 KB (2035 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:31 GMT
 
-#### `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+#### `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 07:13:52 GMT
--	Parent Layer: `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
--	v2 Blob: `sha256:8152112cb8fbc3a56a6f6dfe4ae17c50112494ef1b1c3db12abeae2a99083304`
--	v2 Content-Length: 16.6 MB (16615910 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:56 GMT
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
+-	v2 Blob: `sha256:0fded1c9651dac642c75ff5a09425f88832584cca23cdf3ff54cca655e6a9337`
+-	v2 Content-Length: 16.6 MB (16629376 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:37 GMT
 
-#### `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
+#### `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:54 GMT
--	Parent Layer: `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+#### `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
--	v2 Blob: `sha256:eba38d612e23ffe3e6e8fedfad525cca3c1795a9f6548bc3f2cc45b68fe23d82`
--	v2 Content-Length: 807.9 KB (807929 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:44 GMT
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
+-	v2 Blob: `sha256:7f1aa6a73799308fbfc23049863ce6902092714c6ae07debc014c07f440f3661`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+#### `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 
 ```dockerfile
 ENV REDIS_VERSION=2.8.23
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+#### `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
--	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
+#### `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
--	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `339c8357a000e10d9bf52ea414a32a82723e1532de3a84b93cceb2f44ff5cad4`
+#### `c21c275dfb575d422aa6c243236de7e9147f37269ddfa66061c53a76ade0e782`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 07:18:20 GMT
--	Parent Layer: `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
--	v2 Blob: `sha256:c3697cfa087a12d64cc68872bdadafb192aa174f983cedcb5fd0be64712870cc`
--	v2 Content-Length: 4.2 MB (4224046 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:07:01 GMT
+-	Created: Wed, 08 Jun 2016 20:05:27 GMT
+-	Parent Layer: `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
+-	v2 Blob: `sha256:61bd41cc96da5ba8c0b66aab39fed3c60a7308932decbdc1eba10cb2be82513b`
+-	v2 Content-Length: 4.3 MB (4254289 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:54 GMT
 
-#### `e3e9e8789762d6cb865005a7d56a0d5ebe53ce4081bc51a101e4398b083b2b31`
+#### `ab1a7c61623717d897f69d2b0b8caa20b720590cfb9021eb1007dca6cf695134`
 
 ```dockerfile
 RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL" 	&& echo "$REDIS_DOWNLOAD_SHA1 *redis.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/redis 	&& tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1 	&& rm redis.tar.gz 	&& make -C /usr/src/redis 32bit 	&& make -C /usr/src/redis install 	&& rm -r /usr/src/redis 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 07:20:02 GMT
--	Parent Layer: `339c8357a000e10d9bf52ea414a32a82723e1532de3a84b93cceb2f44ff5cad4`
--	v2 Blob: `sha256:cdcd8dc0cbdf5ef93b83502be2f3c7b924589189cddcdefdf3ba759bd5e1ef19`
--	v2 Content-Length: 2.6 MB (2569869 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:56 GMT
+-	Created: Wed, 08 Jun 2016 20:07:30 GMT
+-	Parent Layer: `c21c275dfb575d422aa6c243236de7e9147f37269ddfa66061c53a76ade0e782`
+-	v2 Blob: `sha256:087610a7f646823188e5771048cd405d77ae7c0107faa4e5c04c9f6d0eff9008`
+-	v2 Content-Length: 2.6 MB (2599492 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:53 GMT
 
-#### `cf131ef96e612f24b8367f842aa7e51af295061be9fb9f1bdceeb9c675f82392`
+#### `21799090f93cceb120e85b8d8418822733394de6bb88779227d97c208b98f3dd`
 
 ```dockerfile
 RUN mkdir /data && chown redis:redis /data
 ```
 
--	Created: Tue, 24 May 2016 07:20:04 GMT
--	Parent Layer: `e3e9e8789762d6cb865005a7d56a0d5ebe53ce4081bc51a101e4398b083b2b31`
--	v2 Blob: `sha256:d287f33b19ba456751058158d08bc0422ecc16e5ec70310af268c6ed3f412cb7`
--	v2 Content-Length: 96.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:52 GMT
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `ab1a7c61623717d897f69d2b0b8caa20b720590cfb9021eb1007dca6cf695134`
+-	v2 Blob: `sha256:4747742746f7860aecaf527a31501f30f8fc9d3efac40cd046d1fd5dd7d39bd9`
+-	v2 Content-Length: 97.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:51 GMT
 
-#### `f6e982bb0a8bf8ca675da161e92a89b602c0b12344f127b2092bbe02ccd04a62`
+#### `d653567719babb79fb945120c41462862487a3e7d333bab3983ec69776a2b43d`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Tue, 24 May 2016 07:20:05 GMT
--	Parent Layer: `cf131ef96e612f24b8367f842aa7e51af295061be9fb9f1bdceeb9c675f82392`
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `21799090f93cceb120e85b8d8418822733394de6bb88779227d97c208b98f3dd`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c40a81dcb9fc110d007283d0e6da25e5ee12c4d51a5c6605da60f38dcd6dcd33`
+#### `55faa77252d1ad0ee5b85580f8036e28d1882ca6d17bf1501e42bd92b4c19ccc`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Tue, 24 May 2016 07:20:05 GMT
--	Parent Layer: `f6e982bb0a8bf8ca675da161e92a89b602c0b12344f127b2092bbe02ccd04a62`
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `d653567719babb79fb945120c41462862487a3e7d333bab3983ec69776a2b43d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e16740b76950a490446e4f0eb2de87e46e121ad50de502f07f3790b85c89784f`
+#### `8210f60bdd90cf26069fb7a5343be74c62cf93c9603c08e3cb55038ccef0400a`
 
 ```dockerfile
-COPY file:50858b00e8f751d73821ff2fa1eff511ce96673dd5dbe5b5e0ef0d230894307e in /usr/local/bin/
+COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 07:20:06 GMT
--	Parent Layer: `c40a81dcb9fc110d007283d0e6da25e5ee12c4d51a5c6605da60f38dcd6dcd33`
--	v2 Blob: `sha256:f5a04df0c57460b48548d2b3b7659f48332261ae6e68ecbf61ace8c959f42eff`
--	v2 Content-Length: 396.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:45 GMT
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `55faa77252d1ad0ee5b85580f8036e28d1882ca6d17bf1501e42bd92b4c19ccc`
+-	v2 Blob: `sha256:574d663436a1ecd13e37cf1ce6bd39461c1dbde053c0e95c6dc9469b888a62a8`
+-	v2 Content-Length: 394.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:51 GMT
 
-#### `07f35dde3925c9e6182b7c0dc01362c6ead3182b57ca6cb053723ea246e344f8`
+#### `fbeaea75789c0b7414c436cb01fe128ab6fe7b87e6dacbde7c0f22b89e607b9e`
 
 ```dockerfile
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 ```
 
--	Created: Tue, 24 May 2016 07:20:08 GMT
--	Parent Layer: `e16740b76950a490446e4f0eb2de87e46e121ad50de502f07f3790b85c89784f`
--	v2 Blob: `sha256:6475c542f34dc34c9f13d3e0a7d02d7bc5b4416a2d76662d2cf769f034dd17f6`
--	v2 Content-Length: 118.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:41 GMT
+-	Created: Wed, 08 Jun 2016 20:07:33 GMT
+-	Parent Layer: `8210f60bdd90cf26069fb7a5343be74c62cf93c9603c08e3cb55038ccef0400a`
+-	v2 Blob: `sha256:d90e8a92b5481a8a5a250712ba18d634c49ad9b29fceb2a93fe135fe9764888f`
+-	v2 Content-Length: 120.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:51 GMT
 
-#### `e03a46e4d7efc0a071cc2e31e1f9c08cec3c90a554602a35d557417914d9816a`
+#### `b4a5013fcc6608a3bc6bc812550517341b0b334220ffc9acd4fb728ec3c1e63f`
 
 ```dockerfile
 ENTRYPOINT &{["docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 07:20:08 GMT
--	Parent Layer: `07f35dde3925c9e6182b7c0dc01362c6ead3182b57ca6cb053723ea246e344f8`
+-	Created: Wed, 08 Jun 2016 20:07:34 GMT
+-	Parent Layer: `fbeaea75789c0b7414c436cb01fe128ab6fe7b87e6dacbde7c0f22b89e607b9e`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `26bec11b2aad0662ea8b8e8d6489e06bf0e9b37219a39f8c13c0042f347b086e`
+#### `45b4fe83a5fa86ff0a7f2837e2316ed401b000fc0c09e334ad3035dfabf29949`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Tue, 24 May 2016 07:20:09 GMT
--	Parent Layer: `e03a46e4d7efc0a071cc2e31e1f9c08cec3c90a554602a35d557417914d9816a`
+-	Created: Wed, 08 Jun 2016 20:07:34 GMT
+-	Parent Layer: `b4a5013fcc6608a3bc6bc812550517341b0b334220ffc9acd4fb728ec3c1e63f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a115f5eb70d7e10018b6918b63d0f14f6eae2a54e555ec13e4ffc3d9d5957aaa`
+#### `cec79eb74c59393769b2c9e97bb1c95ad4070c332ef72a21330fab0cb8b0771a`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Tue, 24 May 2016 07:20:10 GMT
--	Parent Layer: `26bec11b2aad0662ea8b8e8d6489e06bf0e9b37219a39f8c13c0042f347b086e`
--	Docker Version: 1.9.1
+-	Created: Wed, 08 Jun 2016 20:07:34 GMT
+-	Parent Layer: `45b4fe83a5fa86ff0a7f2837e2316ed401b000fc0c09e334ad3035dfabf29949`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1184,20 +1184,20 @@ CMD ["redis-server"]
 ## `redis:2-32bit`
 
 ```console
-$ docker pull library/redis@sha256:9153de7a0f23942a26765773fc477900911f2d9f2ac276f98d7d81735157aea2
+$ docker pull library/redis@sha256:8f6501177e84b74d83f858b4d42e1ab85442a541b645e1603710ecafa1efd66c
 ```
 
--	Total v2 Content-Length: 75.6 MB (75577052 bytes)
+-	Total v2 Content-Length: 75.7 MB (75650384 bytes)
 
 ### Layers (19)
 
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -1208,213 +1208,213 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
+#### `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
 
 ```dockerfile
 RUN groupadd -r redis && useradd -r -g redis redis
 ```
 
--	Created: Tue, 24 May 2016 07:13:09 GMT
+-	Created: Wed, 08 Jun 2016 20:01:26 GMT
 -	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:647d1f6838b59bca027c7bb93da09ed499c5d085a300b4cddf82c8c3372578d6`
--	v2 Content-Length: 2.0 KB (2034 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:00 GMT
+-	v2 Blob: `sha256:6c8ccd839b1db85aa4669156d14d3c09cb691d62e76d48b31b591403bdd43822`
+-	v2 Content-Length: 2.0 KB (2035 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:31 GMT
 
-#### `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+#### `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 07:13:52 GMT
--	Parent Layer: `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
--	v2 Blob: `sha256:8152112cb8fbc3a56a6f6dfe4ae17c50112494ef1b1c3db12abeae2a99083304`
--	v2 Content-Length: 16.6 MB (16615910 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:56 GMT
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
+-	v2 Blob: `sha256:0fded1c9651dac642c75ff5a09425f88832584cca23cdf3ff54cca655e6a9337`
+-	v2 Content-Length: 16.6 MB (16629376 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:37 GMT
 
-#### `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
+#### `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:54 GMT
--	Parent Layer: `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+#### `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
--	v2 Blob: `sha256:eba38d612e23ffe3e6e8fedfad525cca3c1795a9f6548bc3f2cc45b68fe23d82`
--	v2 Content-Length: 807.9 KB (807929 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:44 GMT
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
+-	v2 Blob: `sha256:7f1aa6a73799308fbfc23049863ce6902092714c6ae07debc014c07f440f3661`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+#### `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 
 ```dockerfile
 ENV REDIS_VERSION=2.8.23
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+#### `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
--	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
+#### `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
--	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `339c8357a000e10d9bf52ea414a32a82723e1532de3a84b93cceb2f44ff5cad4`
+#### `c21c275dfb575d422aa6c243236de7e9147f37269ddfa66061c53a76ade0e782`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 07:18:20 GMT
--	Parent Layer: `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
--	v2 Blob: `sha256:c3697cfa087a12d64cc68872bdadafb192aa174f983cedcb5fd0be64712870cc`
--	v2 Content-Length: 4.2 MB (4224046 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:07:01 GMT
+-	Created: Wed, 08 Jun 2016 20:05:27 GMT
+-	Parent Layer: `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
+-	v2 Blob: `sha256:61bd41cc96da5ba8c0b66aab39fed3c60a7308932decbdc1eba10cb2be82513b`
+-	v2 Content-Length: 4.3 MB (4254289 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:54 GMT
 
-#### `e3e9e8789762d6cb865005a7d56a0d5ebe53ce4081bc51a101e4398b083b2b31`
+#### `ab1a7c61623717d897f69d2b0b8caa20b720590cfb9021eb1007dca6cf695134`
 
 ```dockerfile
 RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL" 	&& echo "$REDIS_DOWNLOAD_SHA1 *redis.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/redis 	&& tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1 	&& rm redis.tar.gz 	&& make -C /usr/src/redis 32bit 	&& make -C /usr/src/redis install 	&& rm -r /usr/src/redis 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 07:20:02 GMT
--	Parent Layer: `339c8357a000e10d9bf52ea414a32a82723e1532de3a84b93cceb2f44ff5cad4`
--	v2 Blob: `sha256:cdcd8dc0cbdf5ef93b83502be2f3c7b924589189cddcdefdf3ba759bd5e1ef19`
--	v2 Content-Length: 2.6 MB (2569869 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:56 GMT
+-	Created: Wed, 08 Jun 2016 20:07:30 GMT
+-	Parent Layer: `c21c275dfb575d422aa6c243236de7e9147f37269ddfa66061c53a76ade0e782`
+-	v2 Blob: `sha256:087610a7f646823188e5771048cd405d77ae7c0107faa4e5c04c9f6d0eff9008`
+-	v2 Content-Length: 2.6 MB (2599492 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:53 GMT
 
-#### `cf131ef96e612f24b8367f842aa7e51af295061be9fb9f1bdceeb9c675f82392`
+#### `21799090f93cceb120e85b8d8418822733394de6bb88779227d97c208b98f3dd`
 
 ```dockerfile
 RUN mkdir /data && chown redis:redis /data
 ```
 
--	Created: Tue, 24 May 2016 07:20:04 GMT
--	Parent Layer: `e3e9e8789762d6cb865005a7d56a0d5ebe53ce4081bc51a101e4398b083b2b31`
--	v2 Blob: `sha256:d287f33b19ba456751058158d08bc0422ecc16e5ec70310af268c6ed3f412cb7`
--	v2 Content-Length: 96.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:52 GMT
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `ab1a7c61623717d897f69d2b0b8caa20b720590cfb9021eb1007dca6cf695134`
+-	v2 Blob: `sha256:4747742746f7860aecaf527a31501f30f8fc9d3efac40cd046d1fd5dd7d39bd9`
+-	v2 Content-Length: 97.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:51 GMT
 
-#### `f6e982bb0a8bf8ca675da161e92a89b602c0b12344f127b2092bbe02ccd04a62`
+#### `d653567719babb79fb945120c41462862487a3e7d333bab3983ec69776a2b43d`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Tue, 24 May 2016 07:20:05 GMT
--	Parent Layer: `cf131ef96e612f24b8367f842aa7e51af295061be9fb9f1bdceeb9c675f82392`
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `21799090f93cceb120e85b8d8418822733394de6bb88779227d97c208b98f3dd`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c40a81dcb9fc110d007283d0e6da25e5ee12c4d51a5c6605da60f38dcd6dcd33`
+#### `55faa77252d1ad0ee5b85580f8036e28d1882ca6d17bf1501e42bd92b4c19ccc`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Tue, 24 May 2016 07:20:05 GMT
--	Parent Layer: `f6e982bb0a8bf8ca675da161e92a89b602c0b12344f127b2092bbe02ccd04a62`
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `d653567719babb79fb945120c41462862487a3e7d333bab3983ec69776a2b43d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e16740b76950a490446e4f0eb2de87e46e121ad50de502f07f3790b85c89784f`
+#### `8210f60bdd90cf26069fb7a5343be74c62cf93c9603c08e3cb55038ccef0400a`
 
 ```dockerfile
-COPY file:50858b00e8f751d73821ff2fa1eff511ce96673dd5dbe5b5e0ef0d230894307e in /usr/local/bin/
+COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 07:20:06 GMT
--	Parent Layer: `c40a81dcb9fc110d007283d0e6da25e5ee12c4d51a5c6605da60f38dcd6dcd33`
--	v2 Blob: `sha256:f5a04df0c57460b48548d2b3b7659f48332261ae6e68ecbf61ace8c959f42eff`
--	v2 Content-Length: 396.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:45 GMT
+-	Created: Wed, 08 Jun 2016 20:07:32 GMT
+-	Parent Layer: `55faa77252d1ad0ee5b85580f8036e28d1882ca6d17bf1501e42bd92b4c19ccc`
+-	v2 Blob: `sha256:574d663436a1ecd13e37cf1ce6bd39461c1dbde053c0e95c6dc9469b888a62a8`
+-	v2 Content-Length: 394.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:51 GMT
 
-#### `07f35dde3925c9e6182b7c0dc01362c6ead3182b57ca6cb053723ea246e344f8`
+#### `fbeaea75789c0b7414c436cb01fe128ab6fe7b87e6dacbde7c0f22b89e607b9e`
 
 ```dockerfile
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 ```
 
--	Created: Tue, 24 May 2016 07:20:08 GMT
--	Parent Layer: `e16740b76950a490446e4f0eb2de87e46e121ad50de502f07f3790b85c89784f`
--	v2 Blob: `sha256:6475c542f34dc34c9f13d3e0a7d02d7bc5b4416a2d76662d2cf769f034dd17f6`
--	v2 Content-Length: 118.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:41 GMT
+-	Created: Wed, 08 Jun 2016 20:07:33 GMT
+-	Parent Layer: `8210f60bdd90cf26069fb7a5343be74c62cf93c9603c08e3cb55038ccef0400a`
+-	v2 Blob: `sha256:d90e8a92b5481a8a5a250712ba18d634c49ad9b29fceb2a93fe135fe9764888f`
+-	v2 Content-Length: 120.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:51 GMT
 
-#### `e03a46e4d7efc0a071cc2e31e1f9c08cec3c90a554602a35d557417914d9816a`
+#### `b4a5013fcc6608a3bc6bc812550517341b0b334220ffc9acd4fb728ec3c1e63f`
 
 ```dockerfile
 ENTRYPOINT &{["docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 07:20:08 GMT
--	Parent Layer: `07f35dde3925c9e6182b7c0dc01362c6ead3182b57ca6cb053723ea246e344f8`
+-	Created: Wed, 08 Jun 2016 20:07:34 GMT
+-	Parent Layer: `fbeaea75789c0b7414c436cb01fe128ab6fe7b87e6dacbde7c0f22b89e607b9e`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `26bec11b2aad0662ea8b8e8d6489e06bf0e9b37219a39f8c13c0042f347b086e`
+#### `45b4fe83a5fa86ff0a7f2837e2316ed401b000fc0c09e334ad3035dfabf29949`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Tue, 24 May 2016 07:20:09 GMT
--	Parent Layer: `e03a46e4d7efc0a071cc2e31e1f9c08cec3c90a554602a35d557417914d9816a`
+-	Created: Wed, 08 Jun 2016 20:07:34 GMT
+-	Parent Layer: `b4a5013fcc6608a3bc6bc812550517341b0b334220ffc9acd4fb728ec3c1e63f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a115f5eb70d7e10018b6918b63d0f14f6eae2a54e555ec13e4ffc3d9d5957aaa`
+#### `cec79eb74c59393769b2c9e97bb1c95ad4070c332ef72a21330fab0cb8b0771a`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Tue, 24 May 2016 07:20:10 GMT
--	Parent Layer: `26bec11b2aad0662ea8b8e8d6489e06bf0e9b37219a39f8c13c0042f347b086e`
--	Docker Version: 1.9.1
+-	Created: Wed, 08 Jun 2016 20:07:34 GMT
+-	Parent Layer: `45b4fe83a5fa86ff0a7f2837e2316ed401b000fc0c09e334ad3035dfabf29949`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1422,20 +1422,20 @@ CMD ["redis-server"]
 ## `redis:3.0.7`
 
 ```console
-$ docker pull library/redis@sha256:3c86cb9e6f01b9f9ec179573d2286bc080dc160cc3dd2f4c58f8e1de332b463d
+$ docker pull library/redis@sha256:6a475f267740e90cd2ee4da31b29f7e2d876fa9014abfc15aa4775ea42820c4f
 ```
 
--	Total v2 Content-Length: 71.8 MB (71764453 bytes)
+-	Total v2 Content-Length: 71.8 MB (71807642 bytes)
 
 ### Layers (18)
 
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -1446,201 +1446,201 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
+#### `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
 
 ```dockerfile
 RUN groupadd -r redis && useradd -r -g redis redis
 ```
 
--	Created: Tue, 24 May 2016 07:13:09 GMT
+-	Created: Wed, 08 Jun 2016 20:01:26 GMT
 -	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:647d1f6838b59bca027c7bb93da09ed499c5d085a300b4cddf82c8c3372578d6`
--	v2 Content-Length: 2.0 KB (2034 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:00 GMT
+-	v2 Blob: `sha256:6c8ccd839b1db85aa4669156d14d3c09cb691d62e76d48b31b591403bdd43822`
+-	v2 Content-Length: 2.0 KB (2035 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:31 GMT
 
-#### `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+#### `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 07:13:52 GMT
--	Parent Layer: `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
--	v2 Blob: `sha256:8152112cb8fbc3a56a6f6dfe4ae17c50112494ef1b1c3db12abeae2a99083304`
--	v2 Content-Length: 16.6 MB (16615910 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:56 GMT
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
+-	v2 Blob: `sha256:0fded1c9651dac642c75ff5a09425f88832584cca23cdf3ff54cca655e6a9337`
+-	v2 Content-Length: 16.6 MB (16629376 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:37 GMT
 
-#### `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
+#### `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:54 GMT
--	Parent Layer: `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+#### `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
--	v2 Blob: `sha256:eba38d612e23ffe3e6e8fedfad525cca3c1795a9f6548bc3f2cc45b68fe23d82`
--	v2 Content-Length: 807.9 KB (807929 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:44 GMT
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
+-	v2 Blob: `sha256:7f1aa6a73799308fbfc23049863ce6902092714c6ae07debc014c07f440f3661`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+#### `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 
 ```dockerfile
 ENV REDIS_VERSION=2.8.23
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+#### `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
--	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
+#### `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
--	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `340a0758d524f9ef51712c2b5d17a3e326612d9fd3d883a7eda29161449bd0fe`
+#### `f9109411381b95556e01168be89e80351279f5c921a59e6b9488342ecb68419a`
 
 ```dockerfile
 RUN buildDeps='gcc libc6-dev make' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL" 	&& echo "$REDIS_DOWNLOAD_SHA1 *redis.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/redis 	&& tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1 	&& rm redis.tar.gz 	&& make -C /usr/src/redis 	&& make -C /usr/src/redis install 	&& rm -r /usr/src/redis 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 07:23:49 GMT
--	Parent Layer: `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
--	v2 Blob: `sha256:edb16350e227f13048b124f82341fbb9574181a360d595876b2cea0458003592`
--	v2 Content-Length: 3.0 MB (2981314 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:07:42 GMT
+-	Created: Wed, 08 Jun 2016 20:09:29 GMT
+-	Parent Layer: `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
+-	v2 Blob: `sha256:f1203b177fa9e704a186b436396c5c9a082b5afd51819820227eb99f163fce00`
+-	v2 Content-Length: 3.0 MB (3011040 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:11:09 GMT
 
-#### `475fe734db2bc163ee130e326f1c34bf6d518ee7bbd58300f8f6575d4742e3f4`
+#### `ba619fbb197844f0f927c78210f4ffc4c482e2274172f8b8f6ca17da046696ef`
 
 ```dockerfile
 RUN mkdir /data && chown redis:redis /data
 ```
 
--	Created: Tue, 24 May 2016 07:23:51 GMT
--	Parent Layer: `340a0758d524f9ef51712c2b5d17a3e326612d9fd3d883a7eda29161449bd0fe`
--	v2 Blob: `sha256:f6ac97e0cb45725cb9276a3036d6407cbcc1fdaa0b86ef5aa2e8371f725050b2`
+-	Created: Wed, 08 Jun 2016 20:09:30 GMT
+-	Parent Layer: `f9109411381b95556e01168be89e80351279f5c921a59e6b9488342ecb68419a`
+-	v2 Blob: `sha256:91bc183eeadfd51cf1ab5583f823182ae15f4321fad381446603901e50ca583f`
 -	v2 Content-Length: 96.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:07:38 GMT
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:11:07 GMT
 
-#### `5f798543da5dede6824d0cac7e7f4033b36db20d80106b4709942a459ee5e8d6`
+#### `dd41f88ca2c59c8851d1fe141f8201e8ac4b663dcdc058dfbb20270d3cfe1e1b`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Tue, 24 May 2016 07:23:51 GMT
--	Parent Layer: `475fe734db2bc163ee130e326f1c34bf6d518ee7bbd58300f8f6575d4742e3f4`
+-	Created: Wed, 08 Jun 2016 20:09:30 GMT
+-	Parent Layer: `ba619fbb197844f0f927c78210f4ffc4c482e2274172f8b8f6ca17da046696ef`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `907abf5045a7a2a2c50c07cedcbae5fb0a732c15e02d9a28fde40a75486dec75`
+#### `95e0438b24f1563bf6644ee64b131d125dac778f7ae5c33ea933731f3452b120`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Tue, 24 May 2016 07:23:52 GMT
--	Parent Layer: `5f798543da5dede6824d0cac7e7f4033b36db20d80106b4709942a459ee5e8d6`
+-	Created: Wed, 08 Jun 2016 20:09:30 GMT
+-	Parent Layer: `dd41f88ca2c59c8851d1fe141f8201e8ac4b663dcdc058dfbb20270d3cfe1e1b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `feac941d51c27439a1df8cea72532583c1f42fe8b59f540a183ce8ba2f8ca03b`
+#### `71779a300289f553e1d9e8e8d21a4a5f881f629ac2f352cd7b88dda7ab398b5f`
 
 ```dockerfile
-COPY file:50858b00e8f751d73821ff2fa1eff511ce96673dd5dbe5b5e0ef0d230894307e in /usr/local/bin/
+COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 07:23:53 GMT
--	Parent Layer: `907abf5045a7a2a2c50c07cedcbae5fb0a732c15e02d9a28fde40a75486dec75`
--	v2 Blob: `sha256:799c13d91d0a25129ae7d9a128b517a2951a61fd3cb02a1650715806942a5e58`
--	v2 Content-Length: 397.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:07:27 GMT
+-	Created: Wed, 08 Jun 2016 20:09:30 GMT
+-	Parent Layer: `95e0438b24f1563bf6644ee64b131d125dac778f7ae5c33ea933731f3452b120`
+-	v2 Blob: `sha256:f898d831fda9c6e4640e4d8029bd7eba12ceb9ad607af4e456de4d0b8ce2532b`
+-	v2 Content-Length: 394.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:11:07 GMT
 
-#### `67cf067dd6f0a47d456cbb9c4b42ebfb572ba1cfe72e6df162191cd52a7ff0be`
+#### `359f6ed85062b039977cf469d58e98494c48b6e6b11db1a7d4adb08b730d05cb`
 
 ```dockerfile
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 ```
 
--	Created: Tue, 24 May 2016 07:23:54 GMT
--	Parent Layer: `feac941d51c27439a1df8cea72532583c1f42fe8b59f540a183ce8ba2f8ca03b`
--	v2 Blob: `sha256:a39761cc1725b3c1f3402b5e70834b9af4af09970e78c4c9ebbdb3183adbc580`
--	v2 Content-Length: 119.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:07:24 GMT
+-	Created: Wed, 08 Jun 2016 20:09:31 GMT
+-	Parent Layer: `71779a300289f553e1d9e8e8d21a4a5f881f629ac2f352cd7b88dda7ab398b5f`
+-	v2 Blob: `sha256:77d43218f1e742a327f3a1b274bf47e2b59acf320b8a91699e2835bd16950008`
+-	v2 Content-Length: 120.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:11:09 GMT
 
-#### `566f6ee99c2b6fea064a68aafac6f0fe3e1260e0703534ab0c13b45d5331272d`
+#### `e09930fc4ffb6c57c5599f870470173a5fbc204a8996c3e19063608b18ef6dfd`
 
 ```dockerfile
 ENTRYPOINT &{["docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 07:23:55 GMT
--	Parent Layer: `67cf067dd6f0a47d456cbb9c4b42ebfb572ba1cfe72e6df162191cd52a7ff0be`
+-	Created: Wed, 08 Jun 2016 20:09:32 GMT
+-	Parent Layer: `359f6ed85062b039977cf469d58e98494c48b6e6b11db1a7d4adb08b730d05cb`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1da012143e69f6b57dc05e7a4670c3830b989a02ad47696319879ce5f67cfcc2`
+#### `366bb63022239205d3ac520ec25eb66da007e53d466b6f73097cfa74d1e53cea`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Tue, 24 May 2016 07:23:56 GMT
--	Parent Layer: `566f6ee99c2b6fea064a68aafac6f0fe3e1260e0703534ab0c13b45d5331272d`
+-	Created: Wed, 08 Jun 2016 20:09:32 GMT
+-	Parent Layer: `e09930fc4ffb6c57c5599f870470173a5fbc204a8996c3e19063608b18ef6dfd`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f8202a1fa5e51f63abac04e976fa95c383f2bccc2397f602786e5be9430f0fc7`
+#### `d974b1abd9614fb910b55d1f536af4724fc434cd21304b7a7b64843533a518e2`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Tue, 24 May 2016 07:23:57 GMT
--	Parent Layer: `1da012143e69f6b57dc05e7a4670c3830b989a02ad47696319879ce5f67cfcc2`
--	Docker Version: 1.9.1
+-	Created: Wed, 08 Jun 2016 20:09:32 GMT
+-	Parent Layer: `366bb63022239205d3ac520ec25eb66da007e53d466b6f73097cfa74d1e53cea`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1648,20 +1648,20 @@ CMD ["redis-server"]
 ## `redis:3.0`
 
 ```console
-$ docker pull library/redis@sha256:31bddeb12c4a912db3b8747be973f7510376f33787c7b047422ef55b172a5b83
+$ docker pull library/redis@sha256:43ea993efec455eaf064e015f2b35898a0381ebf2d383a0ded82d3ead8afd820
 ```
 
--	Total v2 Content-Length: 71.8 MB (71764453 bytes)
+-	Total v2 Content-Length: 71.8 MB (71807642 bytes)
 
 ### Layers (18)
 
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -1672,201 +1672,201 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
+#### `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
 
 ```dockerfile
 RUN groupadd -r redis && useradd -r -g redis redis
 ```
 
--	Created: Tue, 24 May 2016 07:13:09 GMT
+-	Created: Wed, 08 Jun 2016 20:01:26 GMT
 -	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:647d1f6838b59bca027c7bb93da09ed499c5d085a300b4cddf82c8c3372578d6`
--	v2 Content-Length: 2.0 KB (2034 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:06:00 GMT
+-	v2 Blob: `sha256:6c8ccd839b1db85aa4669156d14d3c09cb691d62e76d48b31b591403bdd43822`
+-	v2 Content-Length: 2.0 KB (2035 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:31 GMT
 
-#### `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+#### `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 07:13:52 GMT
--	Parent Layer: `54062c8d9c642cd9ebd6c22782778f8eee514a6b9f918272b58be7a6fb9f34ba`
--	v2 Blob: `sha256:8152112cb8fbc3a56a6f6dfe4ae17c50112494ef1b1c3db12abeae2a99083304`
--	v2 Content-Length: 16.6 MB (16615910 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:56 GMT
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `787c82e95406b1ee4393f84053267b37f0640000e123093ddfbc447165468895`
+-	v2 Blob: `sha256:0fded1c9651dac642c75ff5a09425f88832584cca23cdf3ff54cca655e6a9337`
+-	v2 Content-Length: 16.6 MB (16629376 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:37 GMT
 
-#### `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
+#### `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:54 GMT
--	Parent Layer: `15ba8bcb9bb4e7a874135f8e9c24a5379ccabae59611d80433c6ae0ec837319d`
+-	Created: Wed, 08 Jun 2016 20:02:27 GMT
+-	Parent Layer: `fbfcab724acaf70860ce1f412220acf9945ba41e28c3beb6e513dfcc0b43477c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+#### `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `bbbf1c70e0f610c596e85d25cab7bd0d045606c8c06e64168224260b9df298ca`
--	v2 Blob: `sha256:eba38d612e23ffe3e6e8fedfad525cca3c1795a9f6548bc3f2cc45b68fe23d82`
--	v2 Content-Length: 807.9 KB (807929 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:05:44 GMT
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `4c528085cda62022db33bfa81385bcdcd40dafcd8872b6ca52b7ef407c237875`
+-	v2 Blob: `sha256:7f1aa6a73799308fbfc23049863ce6902092714c6ae07debc014c07f440f3661`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:10:29 GMT
 
-#### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+#### `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 
 ```dockerfile
 ENV REDIS_VERSION=2.8.23
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
--	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `8e48c4f4b366480e45e308966428be77807c7842bd70d016665edc1a07f22df5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+#### `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
--	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `06cc08741e0eb09d440963f56cd49cba531a51e6956b995795e675978f3a4d27`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
+#### `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
 
 ```dockerfile
 ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
--	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
+-	Created: Wed, 08 Jun 2016 20:02:32 GMT
+-	Parent Layer: `502a3c3763f5acd66cfd91804e5fc67830b9fa785d85e42820bdd885822277e1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `340a0758d524f9ef51712c2b5d17a3e326612d9fd3d883a7eda29161449bd0fe`
+#### `f9109411381b95556e01168be89e80351279f5c921a59e6b9488342ecb68419a`
 
 ```dockerfile
 RUN buildDeps='gcc libc6-dev make' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL" 	&& echo "$REDIS_DOWNLOAD_SHA1 *redis.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/redis 	&& tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1 	&& rm redis.tar.gz 	&& make -C /usr/src/redis 	&& make -C /usr/src/redis install 	&& rm -r /usr/src/redis 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 24 May 2016 07:23:49 GMT
--	Parent Layer: `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
--	v2 Blob: `sha256:edb16350e227f13048b124f82341fbb9574181a360d595876b2cea0458003592`
--	v2 Content-Length: 3.0 MB (2981314 bytes)
--	v2 Last-Modified: Wed, 01 Jun 2016 00:07:42 GMT
+-	Created: Wed, 08 Jun 2016 20:09:29 GMT
+-	Parent Layer: `e9912829b1610346a6aced85092609633af61d38bc189b636525bc23da95ef79`
+-	v2 Blob: `sha256:f1203b177fa9e704a186b436396c5c9a082b5afd51819820227eb99f163fce00`
+-	v2 Content-Length: 3.0 MB (3011040 bytes)
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:11:09 GMT
 
-#### `475fe734db2bc163ee130e326f1c34bf6d518ee7bbd58300f8f6575d4742e3f4`
+#### `ba619fbb197844f0f927c78210f4ffc4c482e2274172f8b8f6ca17da046696ef`
 
 ```dockerfile
 RUN mkdir /data && chown redis:redis /data
 ```
 
--	Created: Tue, 24 May 2016 07:23:51 GMT
--	Parent Layer: `340a0758d524f9ef51712c2b5d17a3e326612d9fd3d883a7eda29161449bd0fe`
--	v2 Blob: `sha256:f6ac97e0cb45725cb9276a3036d6407cbcc1fdaa0b86ef5aa2e8371f725050b2`
+-	Created: Wed, 08 Jun 2016 20:09:30 GMT
+-	Parent Layer: `f9109411381b95556e01168be89e80351279f5c921a59e6b9488342ecb68419a`
+-	v2 Blob: `sha256:91bc183eeadfd51cf1ab5583f823182ae15f4321fad381446603901e50ca583f`
 -	v2 Content-Length: 96.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:07:38 GMT
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:11:07 GMT
 
-#### `5f798543da5dede6824d0cac7e7f4033b36db20d80106b4709942a459ee5e8d6`
+#### `dd41f88ca2c59c8851d1fe141f8201e8ac4b663dcdc058dfbb20270d3cfe1e1b`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Tue, 24 May 2016 07:23:51 GMT
--	Parent Layer: `475fe734db2bc163ee130e326f1c34bf6d518ee7bbd58300f8f6575d4742e3f4`
+-	Created: Wed, 08 Jun 2016 20:09:30 GMT
+-	Parent Layer: `ba619fbb197844f0f927c78210f4ffc4c482e2274172f8b8f6ca17da046696ef`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `907abf5045a7a2a2c50c07cedcbae5fb0a732c15e02d9a28fde40a75486dec75`
+#### `95e0438b24f1563bf6644ee64b131d125dac778f7ae5c33ea933731f3452b120`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Tue, 24 May 2016 07:23:52 GMT
--	Parent Layer: `5f798543da5dede6824d0cac7e7f4033b36db20d80106b4709942a459ee5e8d6`
+-	Created: Wed, 08 Jun 2016 20:09:30 GMT
+-	Parent Layer: `dd41f88ca2c59c8851d1fe141f8201e8ac4b663dcdc058dfbb20270d3cfe1e1b`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `feac941d51c27439a1df8cea72532583c1f42fe8b59f540a183ce8ba2f8ca03b`
+#### `71779a300289f553e1d9e8e8d21a4a5f881f629ac2f352cd7b88dda7ab398b5f`
 
 ```dockerfile
-COPY file:50858b00e8f751d73821ff2fa1eff511ce96673dd5dbe5b5e0ef0d230894307e in /usr/local/bin/
+COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/
 ```
 
--	Created: Tue, 24 May 2016 07:23:53 GMT
--	Parent Layer: `907abf5045a7a2a2c50c07cedcbae5fb0a732c15e02d9a28fde40a75486dec75`
--	v2 Blob: `sha256:799c13d91d0a25129ae7d9a128b517a2951a61fd3cb02a1650715806942a5e58`
--	v2 Content-Length: 397.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:07:27 GMT
+-	Created: Wed, 08 Jun 2016 20:09:30 GMT
+-	Parent Layer: `95e0438b24f1563bf6644ee64b131d125dac778f7ae5c33ea933731f3452b120`
+-	v2 Blob: `sha256:f898d831fda9c6e4640e4d8029bd7eba12ceb9ad607af4e456de4d0b8ce2532b`
+-	v2 Content-Length: 394.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:11:07 GMT
 
-#### `67cf067dd6f0a47d456cbb9c4b42ebfb572ba1cfe72e6df162191cd52a7ff0be`
+#### `359f6ed85062b039977cf469d58e98494c48b6e6b11db1a7d4adb08b730d05cb`
 
 ```dockerfile
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 ```
 
--	Created: Tue, 24 May 2016 07:23:54 GMT
--	Parent Layer: `feac941d51c27439a1df8cea72532583c1f42fe8b59f540a183ce8ba2f8ca03b`
--	v2 Blob: `sha256:a39761cc1725b3c1f3402b5e70834b9af4af09970e78c4c9ebbdb3183adbc580`
--	v2 Content-Length: 119.0 B
--	v2 Last-Modified: Wed, 01 Jun 2016 00:07:24 GMT
+-	Created: Wed, 08 Jun 2016 20:09:31 GMT
+-	Parent Layer: `71779a300289f553e1d9e8e8d21a4a5f881f629ac2f352cd7b88dda7ab398b5f`
+-	v2 Blob: `sha256:77d43218f1e742a327f3a1b274bf47e2b59acf320b8a91699e2835bd16950008`
+-	v2 Content-Length: 120.0 B
+-	v2 Last-Modified: Wed, 08 Jun 2016 22:11:09 GMT
 
-#### `566f6ee99c2b6fea064a68aafac6f0fe3e1260e0703534ab0c13b45d5331272d`
+#### `e09930fc4ffb6c57c5599f870470173a5fbc204a8996c3e19063608b18ef6dfd`
 
 ```dockerfile
 ENTRYPOINT &{["docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 07:23:55 GMT
--	Parent Layer: `67cf067dd6f0a47d456cbb9c4b42ebfb572ba1cfe72e6df162191cd52a7ff0be`
+-	Created: Wed, 08 Jun 2016 20:09:32 GMT
+-	Parent Layer: `359f6ed85062b039977cf469d58e98494c48b6e6b11db1a7d4adb08b730d05cb`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1da012143e69f6b57dc05e7a4670c3830b989a02ad47696319879ce5f67cfcc2`
+#### `366bb63022239205d3ac520ec25eb66da007e53d466b6f73097cfa74d1e53cea`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Tue, 24 May 2016 07:23:56 GMT
--	Parent Layer: `566f6ee99c2b6fea064a68aafac6f0fe3e1260e0703534ab0c13b45d5331272d`
+-	Created: Wed, 08 Jun 2016 20:09:32 GMT
+-	Parent Layer: `e09930fc4ffb6c57c5599f870470173a5fbc204a8996c3e19063608b18ef6dfd`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f8202a1fa5e51f63abac04e976fa95c383f2bccc2397f602786e5be9430f0fc7`
+#### `d974b1abd9614fb910b55d1f536af4724fc434cd21304b7a7b64843533a518e2`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Tue, 24 May 2016 07:23:57 GMT
--	Parent Layer: `1da012143e69f6b57dc05e7a4670c3830b989a02ad47696319879ce5f67cfcc2`
--	Docker Version: 1.9.1
+-	Created: Wed, 08 Jun 2016 20:09:32 GMT
+-	Parent Layer: `366bb63022239205d3ac520ec25eb66da007e53d466b6f73097cfa74d1e53cea`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1884,10 +1884,10 @@ $ docker pull library/redis@sha256:fba510d66ca8232f11f75aaf862480f0b686af8c1f283
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -1898,7 +1898,7 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1955,10 +1955,10 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 #### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 
 ```dockerfile
-ENV REDIS_VERSION=2.8.23
+ENV REDIS_VERSION=3.0.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
+-	Created: Tue, 24 May 2016 07:22:15 GMT
 -	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1967,10 +1967,10 @@ ENV REDIS_VERSION=2.8.23
 #### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
+-	Created: Tue, 24 May 2016 07:22:16 GMT
 -	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1979,10 +1979,10 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 #### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
+ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
+-	Created: Tue, 24 May 2016 07:22:17 GMT
 -	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2122,10 +2122,10 @@ $ docker pull library/redis@sha256:d544ee6a09f86b75c932f86f80aa399da54c2ac463ccc
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -2136,7 +2136,7 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2193,10 +2193,10 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 #### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 
 ```dockerfile
-ENV REDIS_VERSION=2.8.23
+ENV REDIS_VERSION=3.0.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
+-	Created: Tue, 24 May 2016 07:22:15 GMT
 -	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2205,10 +2205,10 @@ ENV REDIS_VERSION=2.8.23
 #### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
+-	Created: Tue, 24 May 2016 07:22:16 GMT
 -	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2217,10 +2217,10 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 #### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
+ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
+-	Created: Tue, 24 May 2016 07:22:17 GMT
 -	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2740,10 +2740,10 @@ $ docker pull library/redis@sha256:9fdee46dc3ff53ca898f2c9a04632f24e9a8b58b2b772
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -2754,7 +2754,7 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2811,10 +2811,10 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 #### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 
 ```dockerfile
-ENV REDIS_VERSION=2.8.23
+ENV REDIS_VERSION=3.0.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
+-	Created: Tue, 24 May 2016 07:22:15 GMT
 -	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2823,10 +2823,10 @@ ENV REDIS_VERSION=2.8.23
 #### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
+-	Created: Tue, 24 May 2016 07:22:16 GMT
 -	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2835,10 +2835,10 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 #### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
+ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
+-	Created: Tue, 24 May 2016 07:22:17 GMT
 -	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2954,10 +2954,10 @@ $ docker pull library/redis@sha256:69ce82b2ed29f117c2dadf537ef7bed741e851705239a
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -2968,7 +2968,7 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3025,10 +3025,10 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 #### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 
 ```dockerfile
-ENV REDIS_VERSION=2.8.23
+ENV REDIS_VERSION=3.0.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
+-	Created: Tue, 24 May 2016 07:22:15 GMT
 -	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3037,10 +3037,10 @@ ENV REDIS_VERSION=2.8.23
 #### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
+-	Created: Tue, 24 May 2016 07:22:16 GMT
 -	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3049,10 +3049,10 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 #### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
+ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
+-	Created: Tue, 24 May 2016 07:22:17 GMT
 -	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3168,10 +3168,10 @@ $ docker pull library/redis@sha256:93664c87e14b1bbf5db50759b64791ab15eee75882293
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -3182,7 +3182,7 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3239,10 +3239,10 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 #### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 
 ```dockerfile
-ENV REDIS_VERSION=2.8.23
+ENV REDIS_VERSION=3.0.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
+-	Created: Tue, 24 May 2016 07:22:15 GMT
 -	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3251,10 +3251,10 @@ ENV REDIS_VERSION=2.8.23
 #### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
+-	Created: Tue, 24 May 2016 07:22:16 GMT
 -	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3263,10 +3263,10 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 #### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
+ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
+-	Created: Tue, 24 May 2016 07:22:17 GMT
 -	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3382,10 +3382,10 @@ $ docker pull library/redis@sha256:54f2667d0acfc237e16957d3475d769baddceb79fd2a5
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -3396,7 +3396,7 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3453,10 +3453,10 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 #### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 
 ```dockerfile
-ENV REDIS_VERSION=2.8.23
+ENV REDIS_VERSION=3.0.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
+-	Created: Tue, 24 May 2016 07:22:15 GMT
 -	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3465,10 +3465,10 @@ ENV REDIS_VERSION=2.8.23
 #### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
+-	Created: Tue, 24 May 2016 07:22:16 GMT
 -	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3477,10 +3477,10 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 #### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
+ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
+-	Created: Tue, 24 May 2016 07:22:17 GMT
 -	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3596,10 +3596,10 @@ $ docker pull library/redis@sha256:abda54799a7639e5e2c05f31daa91d0a39780b13a20b3
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -3610,7 +3610,7 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3667,10 +3667,10 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 #### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 
 ```dockerfile
-ENV REDIS_VERSION=2.8.23
+ENV REDIS_VERSION=3.0.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
+-	Created: Tue, 24 May 2016 07:22:15 GMT
 -	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3679,10 +3679,10 @@ ENV REDIS_VERSION=2.8.23
 #### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
+-	Created: Tue, 24 May 2016 07:22:16 GMT
 -	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3691,10 +3691,10 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 #### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
+ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
+-	Created: Tue, 24 May 2016 07:22:17 GMT
 -	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3822,10 +3822,10 @@ $ docker pull library/redis@sha256:fbaac2a8b70034b917d3a2feef1c0b8cc1a1009f8a4dc
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -3836,7 +3836,7 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3893,10 +3893,10 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 #### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 
 ```dockerfile
-ENV REDIS_VERSION=2.8.23
+ENV REDIS_VERSION=3.0.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
+-	Created: Tue, 24 May 2016 07:22:15 GMT
 -	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3905,10 +3905,10 @@ ENV REDIS_VERSION=2.8.23
 #### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
+-	Created: Tue, 24 May 2016 07:22:16 GMT
 -	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3917,10 +3917,10 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 #### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
+ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
+-	Created: Tue, 24 May 2016 07:22:17 GMT
 -	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -4048,10 +4048,10 @@ $ docker pull library/redis@sha256:85cf778ff324abed4afc93c8d8197f2a46a3dcb259bb5
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -4062,7 +4062,7 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -4119,10 +4119,10 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 #### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 
 ```dockerfile
-ENV REDIS_VERSION=2.8.23
+ENV REDIS_VERSION=3.0.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
+-	Created: Tue, 24 May 2016 07:22:15 GMT
 -	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -4131,10 +4131,10 @@ ENV REDIS_VERSION=2.8.23
 #### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
+-	Created: Tue, 24 May 2016 07:22:16 GMT
 -	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -4143,10 +4143,10 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 #### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
+ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
+-	Created: Tue, 24 May 2016 07:22:17 GMT
 -	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -4274,10 +4274,10 @@ $ docker pull library/redis@sha256:b5f2adb0c10d2ca7b9824006bf021c372661d5f24c59f
 #### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
 -	v2 Content-Length: 51.4 MB (51356334 bytes)
 -	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
@@ -4288,7 +4288,7 @@ ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Created: Wed, 08 Jun 2016 00:51:04 GMT
 -	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -4345,10 +4345,10 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 #### `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 
 ```dockerfile
-ENV REDIS_VERSION=2.8.23
+ENV REDIS_VERSION=3.0.7
 ```
 
--	Created: Tue, 24 May 2016 07:13:59 GMT
+-	Created: Tue, 24 May 2016 07:22:15 GMT
 -	Parent Layer: `f4677a5fbd61dba6a9bb991d2a91fbd49e154cc7579f9ca9ccdf1a12b65f6500`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -4357,10 +4357,10 @@ ENV REDIS_VERSION=2.8.23
 #### `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.7.tar.gz
 ```
 
--	Created: Tue, 24 May 2016 07:14:00 GMT
+-	Created: Tue, 24 May 2016 07:22:16 GMT
 -	Parent Layer: `25703e5d4fe7529f95ee39cbb4f25c0b53138c98ecbc96523910de3c01366d65`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -4369,10 +4369,10 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 #### `c6264fbb802cd3547d7ef6d64b3a908272a65cb95263670b76311f0f1341e2f9`
 
 ```dockerfile
-ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
+ENV REDIS_DOWNLOAD_SHA1=e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 ```
 
--	Created: Tue, 24 May 2016 07:14:01 GMT
+-	Created: Tue, 24 May 2016 07:22:17 GMT
 -	Parent Layer: `03702a3434240bef7e4b4fa1ef197280fe515ffc387f687d50ebee40f7e0e948`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
