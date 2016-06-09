@@ -114,17 +114,15 @@ $ docker run --name=influxdb -d -p 8083:8083 -p 8086:8086 influxdb
 Run the influx client in another container:
 
 ```console
-$ docker run --rm --link=influxdb -it influxdb influx -host influxdb
+$ docker run --rm --net=container:influxdb -it influxdb influx -host influxdb
 ```
 
-Alternatively, jump directly into the container:
-
-```console
-$ docker exec -it influxdb influx
-```
+At the moment, you cannot use `docker exec` to run the influx client since `docker exec` will not properly allocate a TTY. This is due to a current bug in Docker that is detailed in [docker/docker#8755](https://github.com/docker/docker/issues/8755).
 
 ### Web Administrator Interface
 
 Navigate to [localhost:8083](http://localhost:8083) with your browser while running the container.
 
 See more about using the web admin [here](https://docs.influxdata.com/influxdb/latest/tools/web_admin/).
+
+The web administrator interface requires that the web browser have access to InfluxDB. You must expose the InfluxDB HTTP port as the same port when using the admin interface.
