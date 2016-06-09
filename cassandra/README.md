@@ -3,7 +3,7 @@
 -	[`2.1.14`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/5e291bb8fad37f2f29b8aadcc718f9a155152e92/2.1/Dockerfile)
 -	[`2.2.6`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/5e291bb8fad37f2f29b8aadcc718f9a155152e92/2.2/Dockerfile)
 -	[`3.0.6`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/5e291bb8fad37f2f29b8aadcc718f9a155152e92/3.0/Dockerfile)
--	[`3.5`, `3`, `latest` (*3.5/Dockerfile*)](https://github.com/docker-library/cassandra/blob/b1edfd288bc54c5eccbc19f8fd492b0bf518ed1b/3.5/Dockerfile)
+-	[`3.5`, `3`, `latest` (*3.5/Dockerfile*)](https://github.com/docker-library/cassandra/blob/0144b0ca0e2899f2628bfd0cb66f9dc68fb13ad5/3.5/Dockerfile)
 
 [![](https://badge.imagelayers.io/cassandra:latest.svg)](https://imagelayers.io/?images=cassandra:2.1.14,cassandra:2.2.6,cassandra:3.0.6,cassandra:3.5)
 
