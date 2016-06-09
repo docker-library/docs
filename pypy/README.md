@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2-5.1.1`, `2-5.1`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/d0f1f8cf3dd4a4feefa0f6d101e40583429f647f/2/Dockerfile)
--	[`2-5.1.1-onbuild`, `2-5.1-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
 -	[`2-5.1.1-slim`, `2-5.1-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/d0f1f8cf3dd4a4feefa0f6d101e40583429f647f/2/slim/Dockerfile)
+-	[`2-5.1.1-onbuild`, `2-5.1-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
 -	[`3-2.4.0`, `3-2.4`, `3-2`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/d0f1f8cf3dd4a4feefa0f6d101e40583429f647f/3/Dockerfile)
--	[`3-2.4.0-onbuild`, `3-2.4-onbuild`, `3-2-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
 -	[`3-2.4.0-slim`, `3-2.4-slim`, `3-2-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/d0f1f8cf3dd4a4feefa0f6d101e40583429f647f/3/slim/Dockerfile)
+-	[`3-2.4.0-onbuild`, `3-2.4-onbuild`, `3-2-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/pypy:latest.svg)](https://imagelayers.io/?images=pypy:2-5.1.1,pypy:2-5.1.1-onbuild,pypy:2-5.1.1-slim,pypy:3-2.4.0,pypy:3-2.4.0-onbuild,pypy:3-2.4.0-slim)
+[![](https://badge.imagelayers.io/pypy:latest.svg)](https://imagelayers.io/?images=pypy:2-5.1.1,pypy:2-5.1.1-slim,pypy:2-5.1.1-onbuild,pypy:3-2.4.0,pypy:3-2.4.0-slim,pypy:3-2.4.0-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/pypy`)](https://github.com/docker-library/official-images/blob/master/library/pypy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpypy).
 
@@ -61,26 +61,6 @@ or (again, if you need to use Python 2):
 ```console
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp pypy:2 pypy your-daemon-or-script.py
 ```
-
-# Image Variants
-
-The `pypy` images come in many flavors, each designed for a specific use case.
-
-## `pypy:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
-
-## `pypy:onbuild`
-
-This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM pypy:onbuild` will be enough to create a stand-alone image for your project.
-
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
-
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
-
-## `pypy:slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `pypy`. Unless you are working in an environment where *only* the pypy image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

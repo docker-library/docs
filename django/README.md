@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
+-	[`1.9.7-python3`, `1.9-python3`, `1-python3`, `python3`, `1.9.7`, `1.9`, `1`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/819c332058c3638ab8f4fa5b9f70518e9aaf6325/3.4/Dockerfile)
+-	[`python3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/3.4/onbuild/Dockerfile)
 -	[`1.9.7-python2`, `1.9-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/819c332058c3638ab8f4fa5b9f70518e9aaf6325/2.7/Dockerfile)
 -	[`python2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/2.7/onbuild/Dockerfile)
--	[`1.9.7-python3`, `1.9.7`, `1.9-python3`, `1.9`, `1-python3`, `1`, `python3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/819c332058c3638ab8f4fa5b9f70518e9aaf6325/3.4/Dockerfile)
--	[`python3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/3.4/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/django:latest.svg)](https://imagelayers.io/?images=django:1.9.7-python2,django:python2-onbuild,django:1.9.7-python3,django:python3-onbuild)
+[![](https://badge.imagelayers.io/django:latest.svg)](https://imagelayers.io/?images=django:1.9.7-python3,django:python3-onbuild,django:1.9.7-python2,django:python2-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/django`)](https://github.com/docker-library/official-images/blob/master/library/django). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdjango).
 
@@ -61,22 +61,6 @@ $ docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/
 ```
 
 This will create a sub-directory named `mysite` inside your current directory.
-
-# Image Variants
-
-The `django` images come in many flavors, each designed for a specific use case.
-
-## `django:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `django:onbuild`
-
-This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM django:onbuild` will be enough to create a stand-alone image for your project.
-
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
-
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
 
 # License
 

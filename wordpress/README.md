@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.5.2-apache`, `4.5.2`, `4.5-apache`, `4.5`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/61dd78ce4fa9ccd592ead1edb379f209533b850c/apache/Dockerfile)
+-	[`4.5.2-apache`, `4.5-apache`, `4-apache`, `apache`, `4.5.2`, `4.5`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/61dd78ce4fa9ccd592ead1edb379f209533b850c/apache/Dockerfile)
 -	[`4.5.2-fpm`, `4.5-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/61dd78ce4fa9ccd592ead1edb379f209533b850c/fpm/Dockerfile)
 
 [![](https://badge.imagelayers.io/wordpress:latest.svg)](https://imagelayers.io/?images=wordpress:4.5.2-apache,wordpress:4.5.2-fpm)

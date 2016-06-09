@@ -1,19 +1,19 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.1.9`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6202f065bc6d5562703eed454e3479359234750/2.1/Dockerfile)
--	[`2.1.9-onbuild`, `2.1-onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.1/onbuild/Dockerfile)
 -	[`2.1.9-slim`, `2.1-slim` (*2.1/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6202f065bc6d5562703eed454e3479359234750/2.1/slim/Dockerfile)
 -	[`2.1.9-alpine`, `2.1-alpine` (*2.1/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/972ed547de34b8644de4819001906cfc79907be2/2.1/alpine/Dockerfile)
+-	[`2.1.9-onbuild`, `2.1-onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.1/onbuild/Dockerfile)
 -	[`2.2.5`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6202f065bc6d5562703eed454e3479359234750/2.2/Dockerfile)
--	[`2.2.5-onbuild`, `2.2-onbuild` (*2.2/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.2/onbuild/Dockerfile)
 -	[`2.2.5-slim`, `2.2-slim` (*2.2/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6202f065bc6d5562703eed454e3479359234750/2.2/slim/Dockerfile)
 -	[`2.2.5-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/972ed547de34b8644de4819001906cfc79907be2/2.2/alpine/Dockerfile)
+-	[`2.2.5-onbuild`, `2.2-onbuild` (*2.2/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.2/onbuild/Dockerfile)
 -	[`2.3.1`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6202f065bc6d5562703eed454e3479359234750/2.3/Dockerfile)
--	[`2.3.1-onbuild`, `2.3-onbuild`, `2-onbuild`, `onbuild` (*2.3/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/1b08f346713a1293c2a9238e470e086126e2e28f/2.3/onbuild/Dockerfile)
 -	[`2.3.1-slim`, `2.3-slim`, `2-slim`, `slim` (*2.3/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6202f065bc6d5562703eed454e3479359234750/2.3/slim/Dockerfile)
 -	[`2.3.1-alpine`, `2.3-alpine`, `2-alpine`, `alpine` (*2.3/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/972ed547de34b8644de4819001906cfc79907be2/2.3/alpine/Dockerfile)
+-	[`2.3.1-onbuild`, `2.3-onbuild`, `2-onbuild`, `onbuild` (*2.3/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/1b08f346713a1293c2a9238e470e086126e2e28f/2.3/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/ruby:latest.svg)](https://imagelayers.io/?images=ruby:2.1.9,ruby:2.1.9-onbuild,ruby:2.1.9-slim,ruby:2.1.9-alpine,ruby:2.2.5,ruby:2.2.5-onbuild,ruby:2.2.5-slim,ruby:2.2.5-alpine,ruby:2.3.1,ruby:2.3.1-onbuild,ruby:2.3.1-slim,ruby:2.3.1-alpine)
+[![](https://badge.imagelayers.io/ruby:latest.svg)](https://imagelayers.io/?images=ruby:2.1.9,ruby:2.1.9-slim,ruby:2.1.9-alpine,ruby:2.1.9-onbuild,ruby:2.2.5,ruby:2.2.5-slim,ruby:2.2.5-alpine,ruby:2.2.5-onbuild,ruby:2.3.1,ruby:2.3.1-slim,ruby:2.3.1-alpine,ruby:2.3.1-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fruby).
 
@@ -63,34 +63,6 @@ For many simple, single file projects, you may find it inconvenient to write a c
 ```console
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp ruby:2.1 ruby your-daemon-or-script.rb
 ```
-
-# Image Variants
-
-The `ruby` images come in many flavors, each designed for a specific use case.
-
-## `ruby:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
-
-## `ruby:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `ruby:onbuild`
-
-This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM ruby:onbuild` will be enough to create a stand-alone image for your project.
-
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
-
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
-
-## `ruby:slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `ruby`. Unless you are working in an environment where *only* the ruby image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

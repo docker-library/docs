@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.4.5`, `0.4`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/2bb511d3378dec17ebbf417d5865ede353ba8e57/Dockerfile)
+-	[`0.4.5`, `0.4`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/2bb511d3378dec17ebbf417d5865ede353ba8e57/Dockerfile)
 
 [![](https://badge.imagelayers.io/julia:latest.svg)](https://imagelayers.io/?images=julia:0.4.5)
 
