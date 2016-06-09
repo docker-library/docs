@@ -4,6 +4,7 @@
 
 -	[`julia:0.4.5`](#julia045)
 -	[`julia:0.4`](#julia04)
+-	[`julia:0`](#julia0)
 -	[`julia:latest`](#julialatest)
 
 ## `julia:0.4.5`
@@ -217,6 +218,10 @@ CMD ["julia"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `julia:0`
+
+**does not exist** (yet?)
 
 ## `julia:latest`
 

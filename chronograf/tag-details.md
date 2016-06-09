@@ -11,165 +11,165 @@
 ## `chronograf:0.12`
 
 ```console
-$ docker pull library/chronograf@sha256:10b654f6c312d2acb08a358fe8393f6a24d7c00ba3a68e3273476928d33e09e0
+$ docker pull library/chronograf@sha256:2667748b5bea628c7d28e199c378b73ba740d2de50bd9786923ef2a8acc0ddb0
 ```
 
--	Total v2 Content-Length: 73.9 MB (73894374 bytes)
+-	Total v2 Content-Length: 73.9 MB (73926483 bytes)
 
 ### Layers (13)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
+#### `74ef57b9a50b7b8af411497d668a891d31b8df8afdab7ca35501ae4d336ab622`
 
 ```dockerfile
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
 ```
 
--	Created: Tue, 24 May 2016 09:51:36 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:dde9ceb750cdfb584872e4ff32572dd4b377419bec4946bfbcbb54345a9f901e`
--	v2 Content-Length: 6.8 KB (6753 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 16:56:36 GMT
+-	Created: Thu, 09 Jun 2016 22:54:46 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`
+-	v2 Content-Length: 6.8 KB (6755 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:03 GMT
 
-#### `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
+#### `8eacb5be70e87c74d46cf6cddd3e245e47e395ca6f33b458ce8ea051d96ffb89`
 
 ```dockerfile
 ENV CHRONOGRAF_VERSION=0.12.0
 ```
 
--	Created: Tue, 24 May 2016 09:51:37 GMT
--	Parent Layer: `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
+-	Created: Thu, 09 Jun 2016 22:54:46 GMT
+-	Parent Layer: `74ef57b9a50b7b8af411497d668a891d31b8df8afdab7ca35501ae4d336ab622`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fa9d7317c321619e2a36e5bef1fc5bbabce15dde42db9429e9226f5d5a7c4bd8`
+#### `396b21acd742aa93176109737ddbefa98ab147bafda3c412cbe620f6b492f9a7`
 
 ```dockerfile
 RUN wget -q https://s3.amazonaws.com/get.influxdb.org/chronograf/chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc &&     wget -q https://s3.amazonaws.com/get.influxdb.org/chronograf/chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_amd64.deb*
 ```
 
--	Created: Tue, 24 May 2016 09:51:41 GMT
--	Parent Layer: `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
--	v2 Blob: `sha256:32ea2806407f48765a3daf527e7505856df347f9e6e52cf893630df8ff61dbc9`
--	v2 Content-Length: 4.0 MB (3998527 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 16:56:30 GMT
+-	Created: Thu, 09 Jun 2016 22:54:50 GMT
+-	Parent Layer: `8eacb5be70e87c74d46cf6cddd3e245e47e395ca6f33b458ce8ea051d96ffb89`
+-	v2 Blob: `sha256:55cfb462777bf27532de9f7b94096d7083ebc6ddd6619938260d6bb0acf1de16`
+-	v2 Content-Length: 4.0 MB (4019301 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:05 GMT
 
-#### `88e6fdc3f947c41625e155fe09d02c260b4e63a320f25539575318ef41c8c54c`
+#### `78a7ecf57cea3b46a0ad94f3e3130a36d78e66f86b311deb820619aca18ae12d`
 
 ```dockerfile
-COPY file:ce03bf7822ea5d28d724b6f1389dd8cae771586c368d0d4b9f5ed0c1e6b1fee0 in /etc/chronograf/chronograf.conf
+COPY file:6bd8f62167b75e75bb429d6dda670ec917256913ff3370f929e2c8d9e14b475e in /etc/chronograf/chronograf.conf
 ```
 
--	Created: Tue, 24 May 2016 09:51:42 GMT
--	Parent Layer: `fa9d7317c321619e2a36e5bef1fc5bbabce15dde42db9429e9226f5d5a7c4bd8`
--	v2 Blob: `sha256:46fe69b312065158e9b32f42a886dd2df163522754cd56457385f654b877e880`
--	v2 Content-Length: 210.0 B
--	v2 Last-Modified: Tue, 31 May 2016 16:56:26 GMT
+-	Created: Thu, 09 Jun 2016 22:54:50 GMT
+-	Parent Layer: `396b21acd742aa93176109737ddbefa98ab147bafda3c412cbe620f6b492f9a7`
+-	v2 Blob: `sha256:8ec9bb0a18515ce58ab6f4b2550f0e18ab3c1d5a65e0b0e519f5c859bf3aad54`
+-	v2 Content-Length: 205.0 B
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:04 GMT
 
-#### `04f87b8a50e8b30f2ea362b2c33bb429642ace8711beaa80a24e47083b60f3a6`
+#### `46b9f12c5049ba6071b4e7099357e62c8d557bd5d5730fc6cd0ffef44a76ef48`
 
 ```dockerfile
 EXPOSE 10000/tcp
 ```
 
--	Created: Tue, 24 May 2016 09:51:43 GMT
--	Parent Layer: `88e6fdc3f947c41625e155fe09d02c260b4e63a320f25539575318ef41c8c54c`
+-	Created: Thu, 09 Jun 2016 22:54:50 GMT
+-	Parent Layer: `78a7ecf57cea3b46a0ad94f3e3130a36d78e66f86b311deb820619aca18ae12d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0a39680ec8073820a096a4b708feb86cbeb6ad829652b53f36a618aa5c9bb935`
+#### `ee42bdeefb3d5f27e1b212e7a82d0b04a9d8ec092fa89b1d6b5d942fd578ced4`
 
 ```dockerfile
 ENV PATH=/opt/chronograf:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 09:51:44 GMT
--	Parent Layer: `04f87b8a50e8b30f2ea362b2c33bb429642ace8711beaa80a24e47083b60f3a6`
+-	Created: Thu, 09 Jun 2016 22:54:51 GMT
+-	Parent Layer: `46b9f12c5049ba6071b4e7099357e62c8d557bd5d5730fc6cd0ffef44a76ef48`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `42ca2dcb2a0edc6cf043993d65284f2bde5f14b327f8b07d4e03f10e253e2ccf`
+#### `3286c3c360f0f495601817fd14f700e6c56a210a2d9b6febbaeaf1136ead7e5f`
 
 ```dockerfile
 VOLUME [/var/lib/chronograf]
 ```
 
--	Created: Tue, 24 May 2016 09:51:44 GMT
--	Parent Layer: `0a39680ec8073820a096a4b708feb86cbeb6ad829652b53f36a618aa5c9bb935`
+-	Created: Thu, 09 Jun 2016 22:54:51 GMT
+-	Parent Layer: `ee42bdeefb3d5f27e1b212e7a82d0b04a9d8ec092fa89b1d6b5d942fd578ced4`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5927285b92fe2f33a7d95e8fc6e0f3fa6f0861337e37594f39c6c436e593c3d4`
+#### `93c592a6807e4da7444ae0c303878b1b88b95fde1703f9826167e3ecd8f33469`
 
 ```dockerfile
-COPY file:76359108cd666b36fc36e57f62898033573d4cbe3ce4359490cad624ccd40eb5 in /entrypoint.sh
+COPY file:52e80689a6559bcd429d0da2d2a991bcc0e31bcf066ca062d33be82a9ec6a48d in /entrypoint.sh
 ```
 
--	Created: Tue, 24 May 2016 09:51:45 GMT
--	Parent Layer: `42ca2dcb2a0edc6cf043993d65284f2bde5f14b327f8b07d4e03f10e253e2ccf`
--	v2 Blob: `sha256:c3e950e957537dfb6d2ae117e25a6d6f2724ce81e23653252245f57e2543f204`
--	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Thu, 12 May 2016 16:46:51 GMT
+-	Created: Thu, 09 Jun 2016 22:54:51 GMT
+-	Parent Layer: `3286c3c360f0f495601817fd14f700e6c56a210a2d9b6febbaeaf1136ead7e5f`
+-	v2 Blob: `sha256:71a0bcda973e8cde941fe6a61a6144e9912334e906489ccd876d7102ffce7c06`
+-	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:04 GMT
 
-#### `d43cc9a776caec9038b35c78f34653f0e046e6a6ea247ef510151b68dc17253f`
+#### `375f72873dd5454a2b324a034ea87316799b176710e793b077322aa424bdc6d8`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 09:51:46 GMT
--	Parent Layer: `5927285b92fe2f33a7d95e8fc6e0f3fa6f0861337e37594f39c6c436e593c3d4`
+-	Created: Thu, 09 Jun 2016 22:54:51 GMT
+-	Parent Layer: `93c592a6807e4da7444ae0c303878b1b88b95fde1703f9826167e3ecd8f33469`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4cd536eaad39d56fd92c6a6d0658878e18ff6d7a91b51e5322b800b765484fcf`
+#### `92b233e09a65a9cf2ee863d97212c77f4a7666e7a7c42e3dac9c8c26c2d05b44`
 
 ```dockerfile
 CMD ["chronograf"]
 ```
 
--	Created: Tue, 24 May 2016 09:51:47 GMT
--	Parent Layer: `d43cc9a776caec9038b35c78f34653f0e046e6a6ea247ef510151b68dc17253f`
--	Docker Version: 1.9.1
+-	Created: Thu, 09 Jun 2016 22:54:52 GMT
+-	Parent Layer: `375f72873dd5454a2b324a034ea87316799b176710e793b077322aa424bdc6d8`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -177,165 +177,165 @@ CMD ["chronograf"]
 ## `chronograf:0.12.0`
 
 ```console
-$ docker pull library/chronograf@sha256:00095046c1d3be1664fa7ed41347c56d38f27ff4b0906ce714417c6969672aee
+$ docker pull library/chronograf@sha256:edfe08835f83bf6abedf87a188b30416047c20c50253198151baeff09a7e8f7d
 ```
 
--	Total v2 Content-Length: 73.9 MB (73894374 bytes)
+-	Total v2 Content-Length: 73.9 MB (73926483 bytes)
 
 ### Layers (13)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
+#### `74ef57b9a50b7b8af411497d668a891d31b8df8afdab7ca35501ae4d336ab622`
 
 ```dockerfile
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
 ```
 
--	Created: Tue, 24 May 2016 09:51:36 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:dde9ceb750cdfb584872e4ff32572dd4b377419bec4946bfbcbb54345a9f901e`
--	v2 Content-Length: 6.8 KB (6753 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 16:56:36 GMT
+-	Created: Thu, 09 Jun 2016 22:54:46 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`
+-	v2 Content-Length: 6.8 KB (6755 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:03 GMT
 
-#### `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
+#### `8eacb5be70e87c74d46cf6cddd3e245e47e395ca6f33b458ce8ea051d96ffb89`
 
 ```dockerfile
 ENV CHRONOGRAF_VERSION=0.12.0
 ```
 
--	Created: Tue, 24 May 2016 09:51:37 GMT
--	Parent Layer: `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
+-	Created: Thu, 09 Jun 2016 22:54:46 GMT
+-	Parent Layer: `74ef57b9a50b7b8af411497d668a891d31b8df8afdab7ca35501ae4d336ab622`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fa9d7317c321619e2a36e5bef1fc5bbabce15dde42db9429e9226f5d5a7c4bd8`
+#### `396b21acd742aa93176109737ddbefa98ab147bafda3c412cbe620f6b492f9a7`
 
 ```dockerfile
 RUN wget -q https://s3.amazonaws.com/get.influxdb.org/chronograf/chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc &&     wget -q https://s3.amazonaws.com/get.influxdb.org/chronograf/chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_amd64.deb*
 ```
 
--	Created: Tue, 24 May 2016 09:51:41 GMT
--	Parent Layer: `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
--	v2 Blob: `sha256:32ea2806407f48765a3daf527e7505856df347f9e6e52cf893630df8ff61dbc9`
--	v2 Content-Length: 4.0 MB (3998527 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 16:56:30 GMT
+-	Created: Thu, 09 Jun 2016 22:54:50 GMT
+-	Parent Layer: `8eacb5be70e87c74d46cf6cddd3e245e47e395ca6f33b458ce8ea051d96ffb89`
+-	v2 Blob: `sha256:55cfb462777bf27532de9f7b94096d7083ebc6ddd6619938260d6bb0acf1de16`
+-	v2 Content-Length: 4.0 MB (4019301 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:05 GMT
 
-#### `88e6fdc3f947c41625e155fe09d02c260b4e63a320f25539575318ef41c8c54c`
+#### `78a7ecf57cea3b46a0ad94f3e3130a36d78e66f86b311deb820619aca18ae12d`
 
 ```dockerfile
-COPY file:ce03bf7822ea5d28d724b6f1389dd8cae771586c368d0d4b9f5ed0c1e6b1fee0 in /etc/chronograf/chronograf.conf
+COPY file:6bd8f62167b75e75bb429d6dda670ec917256913ff3370f929e2c8d9e14b475e in /etc/chronograf/chronograf.conf
 ```
 
--	Created: Tue, 24 May 2016 09:51:42 GMT
--	Parent Layer: `fa9d7317c321619e2a36e5bef1fc5bbabce15dde42db9429e9226f5d5a7c4bd8`
--	v2 Blob: `sha256:46fe69b312065158e9b32f42a886dd2df163522754cd56457385f654b877e880`
--	v2 Content-Length: 210.0 B
--	v2 Last-Modified: Tue, 31 May 2016 16:56:26 GMT
+-	Created: Thu, 09 Jun 2016 22:54:50 GMT
+-	Parent Layer: `396b21acd742aa93176109737ddbefa98ab147bafda3c412cbe620f6b492f9a7`
+-	v2 Blob: `sha256:8ec9bb0a18515ce58ab6f4b2550f0e18ab3c1d5a65e0b0e519f5c859bf3aad54`
+-	v2 Content-Length: 205.0 B
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:04 GMT
 
-#### `04f87b8a50e8b30f2ea362b2c33bb429642ace8711beaa80a24e47083b60f3a6`
+#### `46b9f12c5049ba6071b4e7099357e62c8d557bd5d5730fc6cd0ffef44a76ef48`
 
 ```dockerfile
 EXPOSE 10000/tcp
 ```
 
--	Created: Tue, 24 May 2016 09:51:43 GMT
--	Parent Layer: `88e6fdc3f947c41625e155fe09d02c260b4e63a320f25539575318ef41c8c54c`
+-	Created: Thu, 09 Jun 2016 22:54:50 GMT
+-	Parent Layer: `78a7ecf57cea3b46a0ad94f3e3130a36d78e66f86b311deb820619aca18ae12d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0a39680ec8073820a096a4b708feb86cbeb6ad829652b53f36a618aa5c9bb935`
+#### `ee42bdeefb3d5f27e1b212e7a82d0b04a9d8ec092fa89b1d6b5d942fd578ced4`
 
 ```dockerfile
 ENV PATH=/opt/chronograf:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 09:51:44 GMT
--	Parent Layer: `04f87b8a50e8b30f2ea362b2c33bb429642ace8711beaa80a24e47083b60f3a6`
+-	Created: Thu, 09 Jun 2016 22:54:51 GMT
+-	Parent Layer: `46b9f12c5049ba6071b4e7099357e62c8d557bd5d5730fc6cd0ffef44a76ef48`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `42ca2dcb2a0edc6cf043993d65284f2bde5f14b327f8b07d4e03f10e253e2ccf`
+#### `3286c3c360f0f495601817fd14f700e6c56a210a2d9b6febbaeaf1136ead7e5f`
 
 ```dockerfile
 VOLUME [/var/lib/chronograf]
 ```
 
--	Created: Tue, 24 May 2016 09:51:44 GMT
--	Parent Layer: `0a39680ec8073820a096a4b708feb86cbeb6ad829652b53f36a618aa5c9bb935`
+-	Created: Thu, 09 Jun 2016 22:54:51 GMT
+-	Parent Layer: `ee42bdeefb3d5f27e1b212e7a82d0b04a9d8ec092fa89b1d6b5d942fd578ced4`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5927285b92fe2f33a7d95e8fc6e0f3fa6f0861337e37594f39c6c436e593c3d4`
+#### `93c592a6807e4da7444ae0c303878b1b88b95fde1703f9826167e3ecd8f33469`
 
 ```dockerfile
-COPY file:76359108cd666b36fc36e57f62898033573d4cbe3ce4359490cad624ccd40eb5 in /entrypoint.sh
+COPY file:52e80689a6559bcd429d0da2d2a991bcc0e31bcf066ca062d33be82a9ec6a48d in /entrypoint.sh
 ```
 
--	Created: Tue, 24 May 2016 09:51:45 GMT
--	Parent Layer: `42ca2dcb2a0edc6cf043993d65284f2bde5f14b327f8b07d4e03f10e253e2ccf`
--	v2 Blob: `sha256:c3e950e957537dfb6d2ae117e25a6d6f2724ce81e23653252245f57e2543f204`
--	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Thu, 12 May 2016 16:46:51 GMT
+-	Created: Thu, 09 Jun 2016 22:54:51 GMT
+-	Parent Layer: `3286c3c360f0f495601817fd14f700e6c56a210a2d9b6febbaeaf1136ead7e5f`
+-	v2 Blob: `sha256:71a0bcda973e8cde941fe6a61a6144e9912334e906489ccd876d7102ffce7c06`
+-	v2 Content-Length: 244.0 B
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:04 GMT
 
-#### `d43cc9a776caec9038b35c78f34653f0e046e6a6ea247ef510151b68dc17253f`
+#### `375f72873dd5454a2b324a034ea87316799b176710e793b077322aa424bdc6d8`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 09:51:46 GMT
--	Parent Layer: `5927285b92fe2f33a7d95e8fc6e0f3fa6f0861337e37594f39c6c436e593c3d4`
+-	Created: Thu, 09 Jun 2016 22:54:51 GMT
+-	Parent Layer: `93c592a6807e4da7444ae0c303878b1b88b95fde1703f9826167e3ecd8f33469`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4cd536eaad39d56fd92c6a6d0658878e18ff6d7a91b51e5322b800b765484fcf`
+#### `92b233e09a65a9cf2ee863d97212c77f4a7666e7a7c42e3dac9c8c26c2d05b44`
 
 ```dockerfile
 CMD ["chronograf"]
 ```
 
--	Created: Tue, 24 May 2016 09:51:47 GMT
--	Parent Layer: `d43cc9a776caec9038b35c78f34653f0e046e6a6ea247ef510151b68dc17253f`
--	Docker Version: 1.9.1
+-	Created: Thu, 09 Jun 2016 22:54:52 GMT
+-	Parent Layer: `375f72873dd5454a2b324a034ea87316799b176710e793b077322aa424bdc6d8`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -343,165 +343,165 @@ CMD ["chronograf"]
 ## `chronograf:0.13`
 
 ```console
-$ docker pull library/chronograf@sha256:7c7e5dbad474f2b5823943203a3de585d0fbf186ebaeb7c5201f24243e3e5356
+$ docker pull library/chronograf@sha256:bbd01346b772586e683e5d04beaf7eb196c465b8ba62f49998b1c6b32a4f67a0
 ```
 
--	Total v2 Content-Length: 73.9 MB (73896694 bytes)
+-	Total v2 Content-Length: 73.9 MB (73938646 bytes)
 
 ### Layers (13)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
+#### `74ef57b9a50b7b8af411497d668a891d31b8df8afdab7ca35501ae4d336ab622`
 
 ```dockerfile
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
 ```
 
--	Created: Tue, 24 May 2016 09:51:36 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:dde9ceb750cdfb584872e4ff32572dd4b377419bec4946bfbcbb54345a9f901e`
--	v2 Content-Length: 6.8 KB (6753 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 16:56:36 GMT
+-	Created: Thu, 09 Jun 2016 22:54:46 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`
+-	v2 Content-Length: 6.8 KB (6755 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:03 GMT
 
-#### `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
+#### `8eacb5be70e87c74d46cf6cddd3e245e47e395ca6f33b458ce8ea051d96ffb89`
 
 ```dockerfile
 ENV CHRONOGRAF_VERSION=0.12.0
 ```
 
--	Created: Tue, 24 May 2016 09:51:37 GMT
--	Parent Layer: `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
+-	Created: Thu, 09 Jun 2016 22:54:46 GMT
+-	Parent Layer: `74ef57b9a50b7b8af411497d668a891d31b8df8afdab7ca35501ae4d336ab622`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5f6b6c4c13a673c628935ecb9a2ab749d8b2f0d7f8f129bbbb24f3532b1a1f51`
+#### `1f1c6cc8766a2a284e45693e997705d00b35851b509806e0f9baf28d67ce9fda`
 
 ```dockerfile
 RUN wget -q https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_amd64.deb*
 ```
 
--	Created: Tue, 24 May 2016 09:52:32 GMT
--	Parent Layer: `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
--	v2 Blob: `sha256:ef79fdfc1870c83d59b2d10b82ffc13e8191865857a4453074cce4b49938102f`
--	v2 Content-Length: 4.0 MB (4000905 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 16:57:29 GMT
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `8eacb5be70e87c74d46cf6cddd3e245e47e395ca6f33b458ce8ea051d96ffb89`
+-	v2 Blob: `sha256:1a3d860cf444d4534497e05e3241e2b0a43095b8b8ec4a9454dbdf7fb5575da4`
+-	v2 Content-Length: 4.0 MB (4031521 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:20 GMT
 
-#### `23a199197ac913d1fdfdd215fc25e18579fec3213c7f9f909911581407cecbd2`
+#### `0ef214098a6fb12e56e49be1ca0af0a6af259e08a3e3860d643a19843800472d`
 
 ```dockerfile
-COPY file:ce03bf7822ea5d28d724b6f1389dd8cae771586c368d0d4b9f5ed0c1e6b1fee0 in /etc/chronograf/chronograf.conf
+COPY file:6bd8f62167b75e75bb429d6dda670ec917256913ff3370f929e2c8d9e14b475e in /etc/chronograf/chronograf.conf
 ```
 
--	Created: Tue, 24 May 2016 09:52:33 GMT
--	Parent Layer: `5f6b6c4c13a673c628935ecb9a2ab749d8b2f0d7f8f129bbbb24f3532b1a1f51`
--	v2 Blob: `sha256:7ca75ea43a9ab50aa16785d82bc4cbbccc2a57a7fa649458ca32f3ff82d8c23c`
--	v2 Content-Length: 208.0 B
--	v2 Last-Modified: Tue, 31 May 2016 16:57:25 GMT
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `1f1c6cc8766a2a284e45693e997705d00b35851b509806e0f9baf28d67ce9fda`
+-	v2 Blob: `sha256:27e24ae20dac8820e24200e6007c61c3db8e24efa7fbc675b7a4f0eb2ef531d2`
+-	v2 Content-Length: 206.0 B
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:19 GMT
 
-#### `102f51ca84f5d1ef67bb0797553ca7f4dbb4ea198b9f7bc29fd960b71d4b6788`
+#### `6942d18268f6a859d89ae1962b6246d0e612de151b195868124af47c37766955`
 
 ```dockerfile
 EXPOSE 10000/tcp
 ```
 
--	Created: Tue, 24 May 2016 09:52:34 GMT
--	Parent Layer: `23a199197ac913d1fdfdd215fc25e18579fec3213c7f9f909911581407cecbd2`
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `0ef214098a6fb12e56e49be1ca0af0a6af259e08a3e3860d643a19843800472d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `91bc6110768942a2b700565ebc3c985e89747f6886cd29e7b31879863313a294`
+#### `97027c8cfb8ad345f3495b59ae381932d42a200ed72d8bd00465c12578465809`
 
 ```dockerfile
 ENV PATH=/opt/chronograf:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 09:52:35 GMT
--	Parent Layer: `102f51ca84f5d1ef67bb0797553ca7f4dbb4ea198b9f7bc29fd960b71d4b6788`
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `6942d18268f6a859d89ae1962b6246d0e612de151b195868124af47c37766955`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0fc6b9adfedb746bfb03009fcccfdb8c40de12f0ef1072d47661925e1b0a5811`
+#### `e8bd53d65d02ff8336855e2207d7edee86d3f03ca2e1deb667ecfe4c40bfab33`
 
 ```dockerfile
 VOLUME [/var/lib/chronograf]
 ```
 
--	Created: Tue, 24 May 2016 09:52:35 GMT
--	Parent Layer: `91bc6110768942a2b700565ebc3c985e89747f6886cd29e7b31879863313a294`
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `97027c8cfb8ad345f3495b59ae381932d42a200ed72d8bd00465c12578465809`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fc6cbe55169dcec712fbd4449511e337b3665a45881d96d0f123ad9f9ff69651`
+#### `4f9e874fa4cffe4415d64ec213bb2f5c204b04f8eb4abba9ae7a0ad0b2c1b75c`
 
 ```dockerfile
-COPY file:58135f006bac4b3f94cfb1a6a450a812d679f698e31cac2812ae9cb1471dc033 in /entrypoint.sh
+COPY file:fc95049005144e726efe031fc5e003a8eedf95c50f0041c41c3161e64cf9dbbe in /entrypoint.sh
 ```
 
--	Created: Tue, 24 May 2016 09:52:36 GMT
--	Parent Layer: `0fc6b9adfedb746bfb03009fcccfdb8c40de12f0ef1072d47661925e1b0a5811`
--	v2 Blob: `sha256:487cf0833e448547ad8e50dbf881b2f306cbd3b922353e7ee7d9860dccc12bb7`
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `e8bd53d65d02ff8336855e2207d7edee86d3f03ca2e1deb667ecfe4c40bfab33`
+-	v2 Blob: `sha256:1cbcfb8e2e52f10cefd909d23644f0e7432108e84f9138da9b94d960f14b03b8`
 -	v2 Content-Length: 186.0 B
--	v2 Last-Modified: Thu, 12 May 2016 23:51:58 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:18 GMT
 
-#### `f8ee2a0c07cec702efbeacd9d0ececd89ac49a664e43d8fc2cf4bb881e553a8d`
+#### `909d78edf6ab79cf6fe756c86c9192ff515865da1cc88e4746ce2267936e9d34`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 09:52:37 GMT
--	Parent Layer: `fc6cbe55169dcec712fbd4449511e337b3665a45881d96d0f123ad9f9ff69651`
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `4f9e874fa4cffe4415d64ec213bb2f5c204b04f8eb4abba9ae7a0ad0b2c1b75c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fa078ece0b1cceddfdb845bb41481737b7aa6f246d0422cc75a1a7e5d35fb56`
+#### `d9c1a4b1150250df3b9360de48836f1711ecc085c7d50261b3500dfb3f01b64f`
 
 ```dockerfile
 CMD ["chronograf"]
 ```
 
--	Created: Tue, 24 May 2016 09:52:38 GMT
--	Parent Layer: `f8ee2a0c07cec702efbeacd9d0ececd89ac49a664e43d8fc2cf4bb881e553a8d`
--	Docker Version: 1.9.1
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `909d78edf6ab79cf6fe756c86c9192ff515865da1cc88e4746ce2267936e9d34`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -509,201 +509,165 @@ CMD ["chronograf"]
 ## `chronograf:0.13.0`
 
 ```console
-$ docker pull library/chronograf@sha256:e59afe3e2d4ecfb79d79b4246e05aed33b8aa2303630ac1d7d68752d3b12c532
+$ docker pull library/chronograf@sha256:c01b618e9c881ae956bfb177b8844afd9a9a87ec3a943d75a9111fc71969e1c0
 ```
 
--	Total Virtual Size: 183.4 MB (183376635 bytes)
--	Total v2 Content-Length: 73.9 MB (73895984 bytes)
+-	Total v2 Content-Length: 73.9 MB (73938646 bytes)
 
 ### Layers (13)
 
-#### `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:dc2eddd5d35b9d66e4db747f5939b2be7f863dcee64c934b0da690f55a23aee8 in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Tue, 03 May 2016 20:57:39 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125093399 bytes)
--	v2 Blob: `sha256:8b87079b7a06f9b72e3cca2c984c60e118229c60f0bff855d822f758c112b485`
--	v2 Content-Length: 51.4 MB (51355855 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 20:59:55 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 03 May 2016 20:57:42 GMT
--	Parent Layer: `e9fa146e2b2b375fd4c6b096b63eff61065f6cbe15b8606932f838bfb708b8cb`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 03 May 2016 21:02:53 GMT
--	Parent Layer: `ebdf1cd8a5745e8a97e9806392cdd69469620bff2e3ee5a7bd51a5a1f4300904`
--	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44302495 bytes)
--	v2 Blob: `sha256:1bb8eaf3d64393da40eac5f12a0032c8a0cf16fba6a6dd10695bde7dd8fdcf1a`
--	v2 Content-Length: 18.5 MB (18531853 bytes)
--	v2 Last-Modified: Tue, 03 May 2016 21:08:31 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
+#### `74ef57b9a50b7b8af411497d668a891d31b8df8afdab7ca35501ae4d336ab622`
 
 ```dockerfile
-RUN gpg\
-     --keyserver hkp://ha.pool.sks-keyservers.net\
-     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
+RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
 ```
 
--	Created: Thu, 12 May 2016 16:42:19 GMT
--	Parent Layer: `0c0ddb153603260afb60b5c6add16a1e783abc1432959d8856055a40d2cfdded`
--	Docker Version: 1.9.1
--	Virtual Size: 12.6 KB (12619 bytes)
--	v2 Blob: `sha256:69034318b0f132b2d463975b65fd0e6d7f3968a28fa9a598a5e0b95e691c742a`
--	v2 Content-Length: 6.8 KB (6754 bytes)
--	v2 Last-Modified: Thu, 12 May 2016 16:47:11 GMT
+-	Created: Thu, 09 Jun 2016 22:54:46 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`
+-	v2 Content-Length: 6.8 KB (6755 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:03 GMT
 
-#### `3208a0550f7513d186d65a62a04860b38dcd683ef58304b394b0bd72e822d3f7`
+#### `8eacb5be70e87c74d46cf6cddd3e245e47e395ca6f33b458ce8ea051d96ffb89`
 
 ```dockerfile
-ENV CHRONOGRAF_VERSION=0.13.0
+ENV CHRONOGRAF_VERSION=0.12.0
 ```
 
--	Created: Thu, 12 May 2016 23:44:55 GMT
--	Parent Layer: `ac1206b3075147e432fa75b0756e0571f24f7c6724df2f78c2ed6e6f125da1bc`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Thu, 09 Jun 2016 22:54:46 GMT
+-	Parent Layer: `74ef57b9a50b7b8af411497d668a891d31b8df8afdab7ca35501ae4d336ab622`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6728f621c83752f79aab13109023fb84b3158024894056c447be086f4a796de2`
+#### `1f1c6cc8766a2a284e45693e997705d00b35851b509806e0f9baf28d67ce9fda`
 
 ```dockerfile
-RUN wget -q https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc &&\
-     wget -q https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&\
-     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&\
-     dpkg -i chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&\
-     rm -f chronograf_${CHRONOGRAF_VERSION}_amd64.deb*
+RUN wget -q https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_amd64.deb*
 ```
 
--	Created: Thu, 12 May 2016 23:45:00 GMT
--	Parent Layer: `3208a0550f7513d186d65a62a04860b38dcd683ef58304b394b0bd72e822d3f7`
--	Docker Version: 1.9.1
--	Virtual Size: 14.0 MB (13967960 bytes)
--	v2 Blob: `sha256:b24a166c7841bb64c6bc70333a9473243daa5bc04a2b6fbaf87959b9acd6acc8`
--	v2 Content-Length: 4.0 MB (4000903 bytes)
--	v2 Last-Modified: Thu, 12 May 2016 23:52:12 GMT
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `8eacb5be70e87c74d46cf6cddd3e245e47e395ca6f33b458ce8ea051d96ffb89`
+-	v2 Blob: `sha256:1a3d860cf444d4534497e05e3241e2b0a43095b8b8ec4a9454dbdf7fb5575da4`
+-	v2 Content-Length: 4.0 MB (4031521 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:20 GMT
 
-#### `1236f06688c4566ff119943d16902b7341186930a6141063d06932e1535fd2e8`
+#### `0ef214098a6fb12e56e49be1ca0af0a6af259e08a3e3860d643a19843800472d`
 
 ```dockerfile
-COPY file:ce03bf7822ea5d28d724b6f1389dd8cae771586c368d0d4b9f5ed0c1e6b1fee0 in /etc/chronograf/chronograf.conf
+COPY file:6bd8f62167b75e75bb429d6dda670ec917256913ff3370f929e2c8d9e14b475e in /etc/chronograf/chronograf.conf
 ```
 
--	Created: Thu, 12 May 2016 23:45:01 GMT
--	Parent Layer: `6728f621c83752f79aab13109023fb84b3158024894056c447be086f4a796de2`
--	Docker Version: 1.9.1
--	Virtual Size: 71.0 B
--	v2 Blob: `sha256:9285f1af9963a829a52044c7c77fa6713933c753cfef9b261e6990254c19417e`
--	v2 Content-Length: 209.0 B
--	v2 Last-Modified: Thu, 12 May 2016 23:52:08 GMT
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `1f1c6cc8766a2a284e45693e997705d00b35851b509806e0f9baf28d67ce9fda`
+-	v2 Blob: `sha256:27e24ae20dac8820e24200e6007c61c3db8e24efa7fbc675b7a4f0eb2ef531d2`
+-	v2 Content-Length: 206.0 B
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:19 GMT
 
-#### `a20bcb6a8cd8fdce06c27969c0feccf59c1101887f82730b999a1a81e296673e`
+#### `6942d18268f6a859d89ae1962b6246d0e612de151b195868124af47c37766955`
 
 ```dockerfile
 EXPOSE 10000/tcp
 ```
 
--	Created: Thu, 12 May 2016 23:45:01 GMT
--	Parent Layer: `1236f06688c4566ff119943d16902b7341186930a6141063d06932e1535fd2e8`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `0ef214098a6fb12e56e49be1ca0af0a6af259e08a3e3860d643a19843800472d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a6a2994554f5683f819ca3b663a010dce2d9b302ab71583f14d16bcc102eef17`
+#### `97027c8cfb8ad345f3495b59ae381932d42a200ed72d8bd00465c12578465809`
 
 ```dockerfile
 ENV PATH=/opt/chronograf:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 12 May 2016 23:45:02 GMT
--	Parent Layer: `a20bcb6a8cd8fdce06c27969c0feccf59c1101887f82730b999a1a81e296673e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `6942d18268f6a859d89ae1962b6246d0e612de151b195868124af47c37766955`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `889f2c1174081276323aa37c8cc6adcfb5c7ca3e94e32cab48b3f6519fd01428`
+#### `e8bd53d65d02ff8336855e2207d7edee86d3f03ca2e1deb667ecfe4c40bfab33`
 
 ```dockerfile
 VOLUME [/var/lib/chronograf]
 ```
 
--	Created: Thu, 12 May 2016 23:45:03 GMT
--	Parent Layer: `a6a2994554f5683f819ca3b663a010dce2d9b302ab71583f14d16bcc102eef17`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `97027c8cfb8ad345f3495b59ae381932d42a200ed72d8bd00465c12578465809`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `743c9f34b8301a9910d49db0534acff01dc5e8cf5f1f733141dc902238135f3e`
+#### `4f9e874fa4cffe4415d64ec213bb2f5c204b04f8eb4abba9ae7a0ad0b2c1b75c`
 
 ```dockerfile
-COPY file:58135f006bac4b3f94cfb1a6a450a812d679f698e31cac2812ae9cb1471dc033 in /entrypoint.sh
+COPY file:fc95049005144e726efe031fc5e003a8eedf95c50f0041c41c3161e64cf9dbbe in /entrypoint.sh
 ```
 
--	Created: Thu, 12 May 2016 23:45:03 GMT
--	Parent Layer: `889f2c1174081276323aa37c8cc6adcfb5c7ca3e94e32cab48b3f6519fd01428`
--	Docker Version: 1.9.1
--	Virtual Size: 91.0 B
--	v2 Blob: `sha256:487cf0833e448547ad8e50dbf881b2f306cbd3b922353e7ee7d9860dccc12bb7`
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `e8bd53d65d02ff8336855e2207d7edee86d3f03ca2e1deb667ecfe4c40bfab33`
+-	v2 Blob: `sha256:1cbcfb8e2e52f10cefd909d23644f0e7432108e84f9138da9b94d960f14b03b8`
 -	v2 Content-Length: 186.0 B
--	v2 Last-Modified: Thu, 12 May 2016 23:51:58 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:18 GMT
 
-#### `5ca0cd3f478fffaa685921118610549cfe1847b8cee42487c2c9244c0cce016e`
+#### `909d78edf6ab79cf6fe756c86c9192ff515865da1cc88e4746ce2267936e9d34`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Thu, 12 May 2016 23:45:04 GMT
--	Parent Layer: `743c9f34b8301a9910d49db0534acff01dc5e8cf5f1f733141dc902238135f3e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `4f9e874fa4cffe4415d64ec213bb2f5c204b04f8eb4abba9ae7a0ad0b2c1b75c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8ee8d584b5f35b797b7524f9d756dcdb4012a8793334293a3eceeb2e48277e6`
+#### `d9c1a4b1150250df3b9360de48836f1711ecc085c7d50261b3500dfb3f01b64f`
 
 ```dockerfile
 CMD ["chronograf"]
 ```
 
--	Created: Thu, 12 May 2016 23:45:05 GMT
--	Parent Layer: `5ca0cd3f478fffaa685921118610549cfe1847b8cee42487c2c9244c0cce016e`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `909d78edf6ab79cf6fe756c86c9192ff515865da1cc88e4746ce2267936e9d34`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -711,165 +675,165 @@ CMD ["chronograf"]
 ## `chronograf:latest`
 
 ```console
-$ docker pull library/chronograf@sha256:2529a198cf4269fa59dd1aba6c215d3f515f426ad9451e43b8132e06f1da8be7
+$ docker pull library/chronograf@sha256:c3741e0cadd8166d6059734724668c0454f8173bf3be19c22be627ca3c753be6
 ```
 
--	Total v2 Content-Length: 73.9 MB (73896694 bytes)
+-	Total v2 Content-Length: 73.9 MB (73938646 bytes)
 
 ### Layers (13)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
+#### `74ef57b9a50b7b8af411497d668a891d31b8df8afdab7ca35501ae4d336ab622`
 
 ```dockerfile
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
 ```
 
--	Created: Tue, 24 May 2016 09:51:36 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:dde9ceb750cdfb584872e4ff32572dd4b377419bec4946bfbcbb54345a9f901e`
--	v2 Content-Length: 6.8 KB (6753 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 16:56:36 GMT
+-	Created: Thu, 09 Jun 2016 22:54:46 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`
+-	v2 Content-Length: 6.8 KB (6755 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:03 GMT
 
-#### `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
+#### `8eacb5be70e87c74d46cf6cddd3e245e47e395ca6f33b458ce8ea051d96ffb89`
 
 ```dockerfile
 ENV CHRONOGRAF_VERSION=0.12.0
 ```
 
--	Created: Tue, 24 May 2016 09:51:37 GMT
--	Parent Layer: `bf6dd66ecb7081beddbf4d8c60f3782c4c8bceee38d3095d63cb76f38e3a8a56`
+-	Created: Thu, 09 Jun 2016 22:54:46 GMT
+-	Parent Layer: `74ef57b9a50b7b8af411497d668a891d31b8df8afdab7ca35501ae4d336ab622`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5f6b6c4c13a673c628935ecb9a2ab749d8b2f0d7f8f129bbbb24f3532b1a1f51`
+#### `1f1c6cc8766a2a284e45693e997705d00b35851b509806e0f9baf28d67ce9fda`
 
 ```dockerfile
 RUN wget -q https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_amd64.deb*
 ```
 
--	Created: Tue, 24 May 2016 09:52:32 GMT
--	Parent Layer: `74d666a6fd0dc78211d0ec404be4049a2cb1701bc1dd544408814df67cd245e1`
--	v2 Blob: `sha256:ef79fdfc1870c83d59b2d10b82ffc13e8191865857a4453074cce4b49938102f`
--	v2 Content-Length: 4.0 MB (4000905 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 16:57:29 GMT
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `8eacb5be70e87c74d46cf6cddd3e245e47e395ca6f33b458ce8ea051d96ffb89`
+-	v2 Blob: `sha256:1a3d860cf444d4534497e05e3241e2b0a43095b8b8ec4a9454dbdf7fb5575da4`
+-	v2 Content-Length: 4.0 MB (4031521 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:20 GMT
 
-#### `23a199197ac913d1fdfdd215fc25e18579fec3213c7f9f909911581407cecbd2`
+#### `0ef214098a6fb12e56e49be1ca0af0a6af259e08a3e3860d643a19843800472d`
 
 ```dockerfile
-COPY file:ce03bf7822ea5d28d724b6f1389dd8cae771586c368d0d4b9f5ed0c1e6b1fee0 in /etc/chronograf/chronograf.conf
+COPY file:6bd8f62167b75e75bb429d6dda670ec917256913ff3370f929e2c8d9e14b475e in /etc/chronograf/chronograf.conf
 ```
 
--	Created: Tue, 24 May 2016 09:52:33 GMT
--	Parent Layer: `5f6b6c4c13a673c628935ecb9a2ab749d8b2f0d7f8f129bbbb24f3532b1a1f51`
--	v2 Blob: `sha256:7ca75ea43a9ab50aa16785d82bc4cbbccc2a57a7fa649458ca32f3ff82d8c23c`
--	v2 Content-Length: 208.0 B
--	v2 Last-Modified: Tue, 31 May 2016 16:57:25 GMT
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `1f1c6cc8766a2a284e45693e997705d00b35851b509806e0f9baf28d67ce9fda`
+-	v2 Blob: `sha256:27e24ae20dac8820e24200e6007c61c3db8e24efa7fbc675b7a4f0eb2ef531d2`
+-	v2 Content-Length: 206.0 B
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:19 GMT
 
-#### `102f51ca84f5d1ef67bb0797553ca7f4dbb4ea198b9f7bc29fd960b71d4b6788`
+#### `6942d18268f6a859d89ae1962b6246d0e612de151b195868124af47c37766955`
 
 ```dockerfile
 EXPOSE 10000/tcp
 ```
 
--	Created: Tue, 24 May 2016 09:52:34 GMT
--	Parent Layer: `23a199197ac913d1fdfdd215fc25e18579fec3213c7f9f909911581407cecbd2`
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `0ef214098a6fb12e56e49be1ca0af0a6af259e08a3e3860d643a19843800472d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `91bc6110768942a2b700565ebc3c985e89747f6886cd29e7b31879863313a294`
+#### `97027c8cfb8ad345f3495b59ae381932d42a200ed72d8bd00465c12578465809`
 
 ```dockerfile
 ENV PATH=/opt/chronograf:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 09:52:35 GMT
--	Parent Layer: `102f51ca84f5d1ef67bb0797553ca7f4dbb4ea198b9f7bc29fd960b71d4b6788`
+-	Created: Thu, 09 Jun 2016 22:54:57 GMT
+-	Parent Layer: `6942d18268f6a859d89ae1962b6246d0e612de151b195868124af47c37766955`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0fc6b9adfedb746bfb03009fcccfdb8c40de12f0ef1072d47661925e1b0a5811`
+#### `e8bd53d65d02ff8336855e2207d7edee86d3f03ca2e1deb667ecfe4c40bfab33`
 
 ```dockerfile
 VOLUME [/var/lib/chronograf]
 ```
 
--	Created: Tue, 24 May 2016 09:52:35 GMT
--	Parent Layer: `91bc6110768942a2b700565ebc3c985e89747f6886cd29e7b31879863313a294`
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `97027c8cfb8ad345f3495b59ae381932d42a200ed72d8bd00465c12578465809`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fc6cbe55169dcec712fbd4449511e337b3665a45881d96d0f123ad9f9ff69651`
+#### `4f9e874fa4cffe4415d64ec213bb2f5c204b04f8eb4abba9ae7a0ad0b2c1b75c`
 
 ```dockerfile
-COPY file:58135f006bac4b3f94cfb1a6a450a812d679f698e31cac2812ae9cb1471dc033 in /entrypoint.sh
+COPY file:fc95049005144e726efe031fc5e003a8eedf95c50f0041c41c3161e64cf9dbbe in /entrypoint.sh
 ```
 
--	Created: Tue, 24 May 2016 09:52:36 GMT
--	Parent Layer: `0fc6b9adfedb746bfb03009fcccfdb8c40de12f0ef1072d47661925e1b0a5811`
--	v2 Blob: `sha256:487cf0833e448547ad8e50dbf881b2f306cbd3b922353e7ee7d9860dccc12bb7`
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `e8bd53d65d02ff8336855e2207d7edee86d3f03ca2e1deb667ecfe4c40bfab33`
+-	v2 Blob: `sha256:1cbcfb8e2e52f10cefd909d23644f0e7432108e84f9138da9b94d960f14b03b8`
 -	v2 Content-Length: 186.0 B
--	v2 Last-Modified: Thu, 12 May 2016 23:51:58 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:55:18 GMT
 
-#### `f8ee2a0c07cec702efbeacd9d0ececd89ac49a664e43d8fc2cf4bb881e553a8d`
+#### `909d78edf6ab79cf6fe756c86c9192ff515865da1cc88e4746ce2267936e9d34`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 09:52:37 GMT
--	Parent Layer: `fc6cbe55169dcec712fbd4449511e337b3665a45881d96d0f123ad9f9ff69651`
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `4f9e874fa4cffe4415d64ec213bb2f5c204b04f8eb4abba9ae7a0ad0b2c1b75c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fa078ece0b1cceddfdb845bb41481737b7aa6f246d0422cc75a1a7e5d35fb56`
+#### `d9c1a4b1150250df3b9360de48836f1711ecc085c7d50261b3500dfb3f01b64f`
 
 ```dockerfile
 CMD ["chronograf"]
 ```
 
--	Created: Tue, 24 May 2016 09:52:38 GMT
--	Parent Layer: `f8ee2a0c07cec702efbeacd9d0ececd89ac49a664e43d8fc2cf4bb881e553a8d`
--	Docker Version: 1.9.1
+-	Created: Thu, 09 Jun 2016 22:54:58 GMT
+-	Parent Layer: `909d78edf6ab79cf6fe756c86c9192ff515865da1cc88e4746ce2267936e9d34`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

@@ -6,29 +6,29 @@
 -	[`pypy:2-5.1`](#pypy2-51)
 -	[`pypy:2-5`](#pypy2-5)
 -	[`pypy:2`](#pypy2)
--	[`pypy:2-5.1.1-onbuild`](#pypy2-511-onbuild)
--	[`pypy:2-5.1-onbuild`](#pypy2-51-onbuild)
--	[`pypy:2-5-onbuild`](#pypy2-5-onbuild)
--	[`pypy:2-onbuild`](#pypy2-onbuild)
 -	[`pypy:2-5.1.1-slim`](#pypy2-511-slim)
 -	[`pypy:2-5.1-slim`](#pypy2-51-slim)
 -	[`pypy:2-5-slim`](#pypy2-5-slim)
 -	[`pypy:2-slim`](#pypy2-slim)
+-	[`pypy:2-5.1.1-onbuild`](#pypy2-511-onbuild)
+-	[`pypy:2-5.1-onbuild`](#pypy2-51-onbuild)
+-	[`pypy:2-5-onbuild`](#pypy2-5-onbuild)
+-	[`pypy:2-onbuild`](#pypy2-onbuild)
 -	[`pypy:3-2.4.0`](#pypy3-240)
 -	[`pypy:3-2.4`](#pypy3-24)
 -	[`pypy:3-2`](#pypy3-2)
 -	[`pypy:3`](#pypy3)
 -	[`pypy:latest`](#pypylatest)
--	[`pypy:3-2.4.0-onbuild`](#pypy3-240-onbuild)
--	[`pypy:3-2.4-onbuild`](#pypy3-24-onbuild)
--	[`pypy:3-2-onbuild`](#pypy3-2-onbuild)
--	[`pypy:3-onbuild`](#pypy3-onbuild)
--	[`pypy:onbuild`](#pypyonbuild)
 -	[`pypy:3-2.4.0-slim`](#pypy3-240-slim)
 -	[`pypy:3-2.4-slim`](#pypy3-24-slim)
 -	[`pypy:3-2-slim`](#pypy3-2-slim)
 -	[`pypy:3-slim`](#pypy3-slim)
 -	[`pypy:slim`](#pypyslim)
+-	[`pypy:3-2.4.0-onbuild`](#pypy3-240-onbuild)
+-	[`pypy:3-2.4-onbuild`](#pypy3-24-onbuild)
+-	[`pypy:3-2-onbuild`](#pypy3-2-onbuild)
+-	[`pypy:3-onbuild`](#pypy3-onbuild)
+-	[`pypy:onbuild`](#pypyonbuild)
 
 ## `pypy:2-5.1.1`
 
@@ -641,6 +641,478 @@ CMD ["pypy"]
 
 -	Created: Tue, 24 May 2016 20:23:56 GMT
 -	Parent Layer: `08b5ade67b3f2678cbd1dae09146d435e63f15e2daa3a6234af4c3bddccb10cf`
+-	Docker Version: 1.9.1
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `pypy:2-5.1.1-slim`
+
+```console
+$ docker pull library/pypy@sha256:d7fca0f03532a2f229c3993ddff9ebab7abb7a3c8604cb5ad506ab7acc1f5973
+```
+
+-	Total v2 Content-Length: 87.0 MB (87034756 bytes)
+
+### Layers (9)
+
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+
+```dockerfile
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+```
+
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+
+```dockerfile
+RUN apt-get purge -y python.*
+```
+
+-	Created: Tue, 24 May 2016 06:30:25 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+
+```dockerfile
+ENV LANG=C.UTF-8
+```
+
+-	Created: Tue, 24 May 2016 06:30:26 GMT
+-	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 24 May 2016 06:31:25 GMT
+-	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+-	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
+-	v2 Content-Length: 3.4 MB (3447790 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
+
+#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+
+```dockerfile
+ENV PYPY_VERSION=5.1.1
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+
+```dockerfile
+ENV PYTHON_PIP_VERSION=8.1.2
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
+
+```dockerfile
+RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
+```
+
+-	Created: Tue, 24 May 2016 06:33:13 GMT
+-	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+-	v2 Blob: `sha256:ce3cd72e206b073fb5529bd65aa4426450e588c4d51de3f92585f23bcfeb2264`
+-	v2 Content-Length: 32.2 MB (32230440 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:47 GMT
+
+#### `7740840c517390b7590a1f334596f28015e18c12b500851d172982b164c01e7d`
+
+```dockerfile
+CMD ["pypy"]
+```
+
+-	Created: Tue, 24 May 2016 06:33:15 GMT
+-	Parent Layer: `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
+-	Docker Version: 1.9.1
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `pypy:2-5.1-slim`
+
+```console
+$ docker pull library/pypy@sha256:ab73948ef6d3606ba58e56dd68139ec5fc30a8123c36bc36a418f5a3bfa89a53
+```
+
+-	Total v2 Content-Length: 87.0 MB (87034756 bytes)
+
+### Layers (9)
+
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+
+```dockerfile
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+```
+
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+
+```dockerfile
+RUN apt-get purge -y python.*
+```
+
+-	Created: Tue, 24 May 2016 06:30:25 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+
+```dockerfile
+ENV LANG=C.UTF-8
+```
+
+-	Created: Tue, 24 May 2016 06:30:26 GMT
+-	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 24 May 2016 06:31:25 GMT
+-	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+-	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
+-	v2 Content-Length: 3.4 MB (3447790 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
+
+#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+
+```dockerfile
+ENV PYPY_VERSION=5.1.1
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+
+```dockerfile
+ENV PYTHON_PIP_VERSION=8.1.2
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
+
+```dockerfile
+RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
+```
+
+-	Created: Tue, 24 May 2016 06:33:13 GMT
+-	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+-	v2 Blob: `sha256:ce3cd72e206b073fb5529bd65aa4426450e588c4d51de3f92585f23bcfeb2264`
+-	v2 Content-Length: 32.2 MB (32230440 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:47 GMT
+
+#### `7740840c517390b7590a1f334596f28015e18c12b500851d172982b164c01e7d`
+
+```dockerfile
+CMD ["pypy"]
+```
+
+-	Created: Tue, 24 May 2016 06:33:15 GMT
+-	Parent Layer: `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
+-	Docker Version: 1.9.1
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `pypy:2-5-slim`
+
+```console
+$ docker pull library/pypy@sha256:ae4c63629f505df0a65fa7fe1c2b7110d08fff040468e1f07035a9992e52a2b7
+```
+
+-	Total v2 Content-Length: 87.0 MB (87034756 bytes)
+
+### Layers (9)
+
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+
+```dockerfile
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+```
+
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+
+```dockerfile
+RUN apt-get purge -y python.*
+```
+
+-	Created: Tue, 24 May 2016 06:30:25 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+
+```dockerfile
+ENV LANG=C.UTF-8
+```
+
+-	Created: Tue, 24 May 2016 06:30:26 GMT
+-	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 24 May 2016 06:31:25 GMT
+-	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+-	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
+-	v2 Content-Length: 3.4 MB (3447790 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
+
+#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+
+```dockerfile
+ENV PYPY_VERSION=5.1.1
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+
+```dockerfile
+ENV PYTHON_PIP_VERSION=8.1.2
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
+
+```dockerfile
+RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
+```
+
+-	Created: Tue, 24 May 2016 06:33:13 GMT
+-	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+-	v2 Blob: `sha256:ce3cd72e206b073fb5529bd65aa4426450e588c4d51de3f92585f23bcfeb2264`
+-	v2 Content-Length: 32.2 MB (32230440 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:47 GMT
+
+#### `7740840c517390b7590a1f334596f28015e18c12b500851d172982b164c01e7d`
+
+```dockerfile
+CMD ["pypy"]
+```
+
+-	Created: Tue, 24 May 2016 06:33:15 GMT
+-	Parent Layer: `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
+-	Docker Version: 1.9.1
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `pypy:2-slim`
+
+```console
+$ docker pull library/pypy@sha256:cc2af48e47fcb95145025b4e5fa3115d91ebc55e9bc470f16c8aae843fd93406
+```
+
+-	Total v2 Content-Length: 87.0 MB (87034756 bytes)
+
+### Layers (9)
+
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+
+```dockerfile
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+```
+
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+
+```dockerfile
+RUN apt-get purge -y python.*
+```
+
+-	Created: Tue, 24 May 2016 06:30:25 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+
+```dockerfile
+ENV LANG=C.UTF-8
+```
+
+-	Created: Tue, 24 May 2016 06:30:26 GMT
+-	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 24 May 2016 06:31:25 GMT
+-	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+-	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
+-	v2 Content-Length: 3.4 MB (3447790 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
+
+#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+
+```dockerfile
+ENV PYPY_VERSION=5.1.1
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+
+```dockerfile
+ENV PYTHON_PIP_VERSION=8.1.2
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
+
+```dockerfile
+RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
+```
+
+-	Created: Tue, 24 May 2016 06:33:13 GMT
+-	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+-	v2 Blob: `sha256:ce3cd72e206b073fb5529bd65aa4426450e588c4d51de3f92585f23bcfeb2264`
+-	v2 Content-Length: 32.2 MB (32230440 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:47 GMT
+
+#### `7740840c517390b7590a1f334596f28015e18c12b500851d172982b164c01e7d`
+
+```dockerfile
+CMD ["pypy"]
+```
+
+-	Created: Tue, 24 May 2016 06:33:15 GMT
+-	Parent Layer: `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
 -	Docker Version: 1.9.1
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1502,478 +1974,6 @@ ONBUILD COPY . /usr/src/app
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `pypy:2-5.1.1-slim`
-
-```console
-$ docker pull library/pypy@sha256:d7fca0f03532a2f229c3993ddff9ebab7abb7a3c8604cb5ad506ab7acc1f5973
-```
-
--	Total v2 Content-Length: 87.0 MB (87034756 bytes)
-
-### Layers (9)
-
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
-
-```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-```
-
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
-
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Tue, 24 May 2016 06:30:25 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Tue, 24 May 2016 06:30:26 GMT
--	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 24 May 2016 06:31:25 GMT
--	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
--	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
--	v2 Content-Length: 3.4 MB (3447790 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
-
-#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
-
-```dockerfile
-ENV PYPY_VERSION=5.1.1
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=8.1.2
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
-
-```dockerfile
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-```
-
--	Created: Tue, 24 May 2016 06:33:13 GMT
--	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
--	v2 Blob: `sha256:ce3cd72e206b073fb5529bd65aa4426450e588c4d51de3f92585f23bcfeb2264`
--	v2 Content-Length: 32.2 MB (32230440 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:47 GMT
-
-#### `7740840c517390b7590a1f334596f28015e18c12b500851d172982b164c01e7d`
-
-```dockerfile
-CMD ["pypy"]
-```
-
--	Created: Tue, 24 May 2016 06:33:15 GMT
--	Parent Layer: `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
--	Docker Version: 1.9.1
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `pypy:2-5.1-slim`
-
-```console
-$ docker pull library/pypy@sha256:ab73948ef6d3606ba58e56dd68139ec5fc30a8123c36bc36a418f5a3bfa89a53
-```
-
--	Total v2 Content-Length: 87.0 MB (87034756 bytes)
-
-### Layers (9)
-
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
-
-```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-```
-
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
-
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Tue, 24 May 2016 06:30:25 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Tue, 24 May 2016 06:30:26 GMT
--	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 24 May 2016 06:31:25 GMT
--	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
--	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
--	v2 Content-Length: 3.4 MB (3447790 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
-
-#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
-
-```dockerfile
-ENV PYPY_VERSION=5.1.1
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=8.1.2
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
-
-```dockerfile
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-```
-
--	Created: Tue, 24 May 2016 06:33:13 GMT
--	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
--	v2 Blob: `sha256:ce3cd72e206b073fb5529bd65aa4426450e588c4d51de3f92585f23bcfeb2264`
--	v2 Content-Length: 32.2 MB (32230440 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:47 GMT
-
-#### `7740840c517390b7590a1f334596f28015e18c12b500851d172982b164c01e7d`
-
-```dockerfile
-CMD ["pypy"]
-```
-
--	Created: Tue, 24 May 2016 06:33:15 GMT
--	Parent Layer: `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
--	Docker Version: 1.9.1
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `pypy:2-5-slim`
-
-```console
-$ docker pull library/pypy@sha256:ae4c63629f505df0a65fa7fe1c2b7110d08fff040468e1f07035a9992e52a2b7
-```
-
--	Total v2 Content-Length: 87.0 MB (87034756 bytes)
-
-### Layers (9)
-
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
-
-```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-```
-
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
-
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Tue, 24 May 2016 06:30:25 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Tue, 24 May 2016 06:30:26 GMT
--	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 24 May 2016 06:31:25 GMT
--	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
--	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
--	v2 Content-Length: 3.4 MB (3447790 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
-
-#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
-
-```dockerfile
-ENV PYPY_VERSION=5.1.1
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=8.1.2
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
-
-```dockerfile
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-```
-
--	Created: Tue, 24 May 2016 06:33:13 GMT
--	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
--	v2 Blob: `sha256:ce3cd72e206b073fb5529bd65aa4426450e588c4d51de3f92585f23bcfeb2264`
--	v2 Content-Length: 32.2 MB (32230440 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:47 GMT
-
-#### `7740840c517390b7590a1f334596f28015e18c12b500851d172982b164c01e7d`
-
-```dockerfile
-CMD ["pypy"]
-```
-
--	Created: Tue, 24 May 2016 06:33:15 GMT
--	Parent Layer: `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
--	Docker Version: 1.9.1
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `pypy:2-slim`
-
-```console
-$ docker pull library/pypy@sha256:cc2af48e47fcb95145025b4e5fa3115d91ebc55e9bc470f16c8aae843fd93406
-```
-
--	Total v2 Content-Length: 87.0 MB (87034756 bytes)
-
-### Layers (9)
-
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
-
-```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-```
-
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
-
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Tue, 24 May 2016 06:30:25 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Tue, 24 May 2016 06:30:26 GMT
--	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 24 May 2016 06:31:25 GMT
--	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
--	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
--	v2 Content-Length: 3.4 MB (3447790 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
-
-#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
-
-```dockerfile
-ENV PYPY_VERSION=5.1.1
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=8.1.2
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
-
-```dockerfile
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-```
-
--	Created: Tue, 24 May 2016 06:33:13 GMT
--	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
--	v2 Blob: `sha256:ce3cd72e206b073fb5529bd65aa4426450e588c4d51de3f92585f23bcfeb2264`
--	v2 Content-Length: 32.2 MB (32230440 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:47 GMT
-
-#### `7740840c517390b7590a1f334596f28015e18c12b500851d172982b164c01e7d`
-
-```dockerfile
-CMD ["pypy"]
-```
-
--	Created: Tue, 24 May 2016 06:33:15 GMT
--	Parent Layer: `c12e6a0b90bcb35e4be9ed98e88acf31aa0e3b4733911c570754cf5a1bb1912b`
--	Docker Version: 1.9.1
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
 ## `pypy:3-2.4.0`
 
 ```console
@@ -2739,6 +2739,596 @@ CMD ["pypy3"]
 
 -	Created: Tue, 24 May 2016 20:26:37 GMT
 -	Parent Layer: `b9b4f3f94031d3e00769af127025d565a62945c3c47b59d448d8161898e58fe3`
+-	Docker Version: 1.9.1
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `pypy:3-2.4.0-slim`
+
+```console
+$ docker pull library/pypy@sha256:757b96bb611c0749c13bea6c1c28aa4a64326606bcee4a12e9bc1fab28c08345
+```
+
+-	Total v2 Content-Length: 76.9 MB (76873296 bytes)
+
+### Layers (9)
+
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+
+```dockerfile
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+```
+
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+
+```dockerfile
+RUN apt-get purge -y python.*
+```
+
+-	Created: Tue, 24 May 2016 06:30:25 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+
+```dockerfile
+ENV LANG=C.UTF-8
+```
+
+-	Created: Tue, 24 May 2016 06:30:26 GMT
+-	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 24 May 2016 06:31:25 GMT
+-	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+-	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
+-	v2 Content-Length: 3.4 MB (3447790 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
+
+#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+
+```dockerfile
+ENV PYPY_VERSION=5.1.1
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+
+```dockerfile
+ENV PYTHON_PIP_VERSION=8.1.2
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
+
+```dockerfile
+RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
+```
+
+-	Created: Tue, 24 May 2016 06:35:43 GMT
+-	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+-	v2 Blob: `sha256:c7a106795eda75ddff7cd41e55dbb78fe3c0bbcc42a313abceadb0987364e104`
+-	v2 Content-Length: 22.1 MB (22068980 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:43:46 GMT
+
+#### `f684533cc1be21b9b59a4ac2314c798e172894f8b00750c94b99b5d72dbad29f`
+
+```dockerfile
+CMD ["pypy3"]
+```
+
+-	Created: Tue, 24 May 2016 06:35:45 GMT
+-	Parent Layer: `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
+-	Docker Version: 1.9.1
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `pypy:3-2.4-slim`
+
+```console
+$ docker pull library/pypy@sha256:d40ab3ccaf54544ba7107ac44b9f50039e14ecd054334b1f1fc650a81e08cce0
+```
+
+-	Total v2 Content-Length: 76.9 MB (76873296 bytes)
+
+### Layers (9)
+
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+
+```dockerfile
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+```
+
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+
+```dockerfile
+RUN apt-get purge -y python.*
+```
+
+-	Created: Tue, 24 May 2016 06:30:25 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+
+```dockerfile
+ENV LANG=C.UTF-8
+```
+
+-	Created: Tue, 24 May 2016 06:30:26 GMT
+-	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 24 May 2016 06:31:25 GMT
+-	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+-	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
+-	v2 Content-Length: 3.4 MB (3447790 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
+
+#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+
+```dockerfile
+ENV PYPY_VERSION=5.1.1
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+
+```dockerfile
+ENV PYTHON_PIP_VERSION=8.1.2
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
+
+```dockerfile
+RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
+```
+
+-	Created: Tue, 24 May 2016 06:35:43 GMT
+-	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+-	v2 Blob: `sha256:c7a106795eda75ddff7cd41e55dbb78fe3c0bbcc42a313abceadb0987364e104`
+-	v2 Content-Length: 22.1 MB (22068980 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:43:46 GMT
+
+#### `f684533cc1be21b9b59a4ac2314c798e172894f8b00750c94b99b5d72dbad29f`
+
+```dockerfile
+CMD ["pypy3"]
+```
+
+-	Created: Tue, 24 May 2016 06:35:45 GMT
+-	Parent Layer: `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
+-	Docker Version: 1.9.1
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `pypy:3-2-slim`
+
+```console
+$ docker pull library/pypy@sha256:89b1a5027551562ad6ee4be5e2799607b60026689dbf90026f6c4a1450bb05a6
+```
+
+-	Total v2 Content-Length: 76.9 MB (76873296 bytes)
+
+### Layers (9)
+
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+
+```dockerfile
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+```
+
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+
+```dockerfile
+RUN apt-get purge -y python.*
+```
+
+-	Created: Tue, 24 May 2016 06:30:25 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+
+```dockerfile
+ENV LANG=C.UTF-8
+```
+
+-	Created: Tue, 24 May 2016 06:30:26 GMT
+-	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 24 May 2016 06:31:25 GMT
+-	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+-	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
+-	v2 Content-Length: 3.4 MB (3447790 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
+
+#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+
+```dockerfile
+ENV PYPY_VERSION=5.1.1
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+
+```dockerfile
+ENV PYTHON_PIP_VERSION=8.1.2
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
+
+```dockerfile
+RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
+```
+
+-	Created: Tue, 24 May 2016 06:35:43 GMT
+-	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+-	v2 Blob: `sha256:c7a106795eda75ddff7cd41e55dbb78fe3c0bbcc42a313abceadb0987364e104`
+-	v2 Content-Length: 22.1 MB (22068980 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:43:46 GMT
+
+#### `f684533cc1be21b9b59a4ac2314c798e172894f8b00750c94b99b5d72dbad29f`
+
+```dockerfile
+CMD ["pypy3"]
+```
+
+-	Created: Tue, 24 May 2016 06:35:45 GMT
+-	Parent Layer: `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
+-	Docker Version: 1.9.1
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `pypy:3-slim`
+
+```console
+$ docker pull library/pypy@sha256:e94f0baf6a5298d3318aa2b826c02d33ed520c46cce667b8c4c4e46337d22e2d
+```
+
+-	Total v2 Content-Length: 76.9 MB (76873296 bytes)
+
+### Layers (9)
+
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+
+```dockerfile
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+```
+
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+
+```dockerfile
+RUN apt-get purge -y python.*
+```
+
+-	Created: Tue, 24 May 2016 06:30:25 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+
+```dockerfile
+ENV LANG=C.UTF-8
+```
+
+-	Created: Tue, 24 May 2016 06:30:26 GMT
+-	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 24 May 2016 06:31:25 GMT
+-	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+-	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
+-	v2 Content-Length: 3.4 MB (3447790 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
+
+#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+
+```dockerfile
+ENV PYPY_VERSION=5.1.1
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+
+```dockerfile
+ENV PYTHON_PIP_VERSION=8.1.2
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
+
+```dockerfile
+RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
+```
+
+-	Created: Tue, 24 May 2016 06:35:43 GMT
+-	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+-	v2 Blob: `sha256:c7a106795eda75ddff7cd41e55dbb78fe3c0bbcc42a313abceadb0987364e104`
+-	v2 Content-Length: 22.1 MB (22068980 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:43:46 GMT
+
+#### `f684533cc1be21b9b59a4ac2314c798e172894f8b00750c94b99b5d72dbad29f`
+
+```dockerfile
+CMD ["pypy3"]
+```
+
+-	Created: Tue, 24 May 2016 06:35:45 GMT
+-	Parent Layer: `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
+-	Docker Version: 1.9.1
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `pypy:slim`
+
+```console
+$ docker pull library/pypy@sha256:d8e52555c51955f6795831cd19b9da22b8848b2cfc732a81a55e2e17f8fe5ffb
+```
+
+-	Total v2 Content-Length: 76.9 MB (76873296 bytes)
+
+### Layers (9)
+
+#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+
+```dockerfile
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+```
+
+-	Created: Mon, 23 May 2016 22:57:20 GMT
+-	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
+-	v2 Content-Length: 51.4 MB (51356334 bytes)
+-	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+
+#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 23 May 2016 22:57:23 GMT
+-	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+
+```dockerfile
+RUN apt-get purge -y python.*
+```
+
+-	Created: Tue, 24 May 2016 06:30:25 GMT
+-	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+
+```dockerfile
+ENV LANG=C.UTF-8
+```
+
+-	Created: Tue, 24 May 2016 06:30:26 GMT
+-	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 24 May 2016 06:31:25 GMT
+-	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
+-	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
+-	v2 Content-Length: 3.4 MB (3447790 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
+
+#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+
+```dockerfile
+ENV PYPY_VERSION=5.1.1
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+
+```dockerfile
+ENV PYTHON_PIP_VERSION=8.1.2
+```
+
+-	Created: Tue, 24 May 2016 06:31:26 GMT
+-	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
+
+```dockerfile
+RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
+```
+
+-	Created: Tue, 24 May 2016 06:35:43 GMT
+-	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
+-	v2 Blob: `sha256:c7a106795eda75ddff7cd41e55dbb78fe3c0bbcc42a313abceadb0987364e104`
+-	v2 Content-Length: 22.1 MB (22068980 bytes)
+-	v2 Last-Modified: Tue, 31 May 2016 23:43:46 GMT
+
+#### `f684533cc1be21b9b59a4ac2314c798e172894f8b00750c94b99b5d72dbad29f`
+
+```dockerfile
+CMD ["pypy3"]
+```
+
+-	Created: Tue, 24 May 2016 06:35:45 GMT
+-	Parent Layer: `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
 -	Docker Version: 1.9.1
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3809,596 +4399,6 @@ ONBUILD COPY . /usr/src/app
 
 -	Created: Tue, 24 May 2016 20:28:16 GMT
 -	Parent Layer: `661549816400d860c2be0fef3d462d4fc17a3a74231e7ffde5bf10255d8f48a6`
--	Docker Version: 1.9.1
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `pypy:3-2.4.0-slim`
-
-```console
-$ docker pull library/pypy@sha256:757b96bb611c0749c13bea6c1c28aa4a64326606bcee4a12e9bc1fab28c08345
-```
-
--	Total v2 Content-Length: 76.9 MB (76873296 bytes)
-
-### Layers (9)
-
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
-
-```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-```
-
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
-
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Tue, 24 May 2016 06:30:25 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Tue, 24 May 2016 06:30:26 GMT
--	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 24 May 2016 06:31:25 GMT
--	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
--	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
--	v2 Content-Length: 3.4 MB (3447790 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
-
-#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
-
-```dockerfile
-ENV PYPY_VERSION=5.1.1
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=8.1.2
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
-
-```dockerfile
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-```
-
--	Created: Tue, 24 May 2016 06:35:43 GMT
--	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
--	v2 Blob: `sha256:c7a106795eda75ddff7cd41e55dbb78fe3c0bbcc42a313abceadb0987364e104`
--	v2 Content-Length: 22.1 MB (22068980 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:43:46 GMT
-
-#### `f684533cc1be21b9b59a4ac2314c798e172894f8b00750c94b99b5d72dbad29f`
-
-```dockerfile
-CMD ["pypy3"]
-```
-
--	Created: Tue, 24 May 2016 06:35:45 GMT
--	Parent Layer: `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
--	Docker Version: 1.9.1
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `pypy:3-2.4-slim`
-
-```console
-$ docker pull library/pypy@sha256:d40ab3ccaf54544ba7107ac44b9f50039e14ecd054334b1f1fc650a81e08cce0
-```
-
--	Total v2 Content-Length: 76.9 MB (76873296 bytes)
-
-### Layers (9)
-
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
-
-```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-```
-
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
-
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Tue, 24 May 2016 06:30:25 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Tue, 24 May 2016 06:30:26 GMT
--	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 24 May 2016 06:31:25 GMT
--	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
--	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
--	v2 Content-Length: 3.4 MB (3447790 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
-
-#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
-
-```dockerfile
-ENV PYPY_VERSION=5.1.1
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=8.1.2
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
-
-```dockerfile
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-```
-
--	Created: Tue, 24 May 2016 06:35:43 GMT
--	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
--	v2 Blob: `sha256:c7a106795eda75ddff7cd41e55dbb78fe3c0bbcc42a313abceadb0987364e104`
--	v2 Content-Length: 22.1 MB (22068980 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:43:46 GMT
-
-#### `f684533cc1be21b9b59a4ac2314c798e172894f8b00750c94b99b5d72dbad29f`
-
-```dockerfile
-CMD ["pypy3"]
-```
-
--	Created: Tue, 24 May 2016 06:35:45 GMT
--	Parent Layer: `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
--	Docker Version: 1.9.1
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `pypy:3-2-slim`
-
-```console
-$ docker pull library/pypy@sha256:89b1a5027551562ad6ee4be5e2799607b60026689dbf90026f6c4a1450bb05a6
-```
-
--	Total v2 Content-Length: 76.9 MB (76873296 bytes)
-
-### Layers (9)
-
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
-
-```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-```
-
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
-
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Tue, 24 May 2016 06:30:25 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Tue, 24 May 2016 06:30:26 GMT
--	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 24 May 2016 06:31:25 GMT
--	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
--	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
--	v2 Content-Length: 3.4 MB (3447790 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
-
-#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
-
-```dockerfile
-ENV PYPY_VERSION=5.1.1
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=8.1.2
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
-
-```dockerfile
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-```
-
--	Created: Tue, 24 May 2016 06:35:43 GMT
--	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
--	v2 Blob: `sha256:c7a106795eda75ddff7cd41e55dbb78fe3c0bbcc42a313abceadb0987364e104`
--	v2 Content-Length: 22.1 MB (22068980 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:43:46 GMT
-
-#### `f684533cc1be21b9b59a4ac2314c798e172894f8b00750c94b99b5d72dbad29f`
-
-```dockerfile
-CMD ["pypy3"]
-```
-
--	Created: Tue, 24 May 2016 06:35:45 GMT
--	Parent Layer: `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
--	Docker Version: 1.9.1
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `pypy:3-slim`
-
-```console
-$ docker pull library/pypy@sha256:e94f0baf6a5298d3318aa2b826c02d33ed520c46cce667b8c4c4e46337d22e2d
-```
-
--	Total v2 Content-Length: 76.9 MB (76873296 bytes)
-
-### Layers (9)
-
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
-
-```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-```
-
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
-
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Tue, 24 May 2016 06:30:25 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Tue, 24 May 2016 06:30:26 GMT
--	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 24 May 2016 06:31:25 GMT
--	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
--	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
--	v2 Content-Length: 3.4 MB (3447790 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
-
-#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
-
-```dockerfile
-ENV PYPY_VERSION=5.1.1
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=8.1.2
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
-
-```dockerfile
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-```
-
--	Created: Tue, 24 May 2016 06:35:43 GMT
--	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
--	v2 Blob: `sha256:c7a106795eda75ddff7cd41e55dbb78fe3c0bbcc42a313abceadb0987364e104`
--	v2 Content-Length: 22.1 MB (22068980 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:43:46 GMT
-
-#### `f684533cc1be21b9b59a4ac2314c798e172894f8b00750c94b99b5d72dbad29f`
-
-```dockerfile
-CMD ["pypy3"]
-```
-
--	Created: Tue, 24 May 2016 06:35:45 GMT
--	Parent Layer: `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
--	Docker Version: 1.9.1
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `pypy:slim`
-
-```console
-$ docker pull library/pypy@sha256:d8e52555c51955f6795831cd19b9da22b8848b2cfc732a81a55e2e17f8fe5ffb
-```
-
--	Total v2 Content-Length: 76.9 MB (76873296 bytes)
-
-### Layers (9)
-
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
-
-```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-```
-
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
-
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Tue, 24 May 2016 06:30:25 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Tue, 24 May 2016 06:30:26 GMT
--	Parent Layer: `968c69f186734255a864498d3e55e0babe7f0c1fd443a81d32303022e1058ab2`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 24 May 2016 06:31:25 GMT
--	Parent Layer: `963493e54e682e698aee7ff1dc6ac9eb4234484bf58caccbebd4058619fd7d8d`
--	v2 Blob: `sha256:ab18df9a1105ab755ad2771cebb03beb4a82f9b0c6a5f519a25a16647c1c0cbe`
--	v2 Content-Length: 3.4 MB (3447790 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:41:58 GMT
-
-#### `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
-
-```dockerfile
-ENV PYPY_VERSION=5.1.1
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `a8771d898514303388e52276cac6cc9b88f74b50ecff2d5cf87e698e22b558fd`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=8.1.2
-```
-
--	Created: Tue, 24 May 2016 06:31:26 GMT
--	Parent Layer: `678e101945861425f820b78c84873bdf4dbf96e2ae12dcd13766d2502d42b4df`
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
-
-```dockerfile
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3-${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-```
-
--	Created: Tue, 24 May 2016 06:35:43 GMT
--	Parent Layer: `ff8523584b86aab0c5d70b970e354ba5aae365c705c62c2f118fc937b8a1e84b`
--	v2 Blob: `sha256:c7a106795eda75ddff7cd41e55dbb78fe3c0bbcc42a313abceadb0987364e104`
--	v2 Content-Length: 22.1 MB (22068980 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 23:43:46 GMT
-
-#### `f684533cc1be21b9b59a4ac2314c798e172894f8b00750c94b99b5d72dbad29f`
-
-```dockerfile
-CMD ["pypy3"]
-```
-
--	Created: Tue, 24 May 2016 06:35:45 GMT
--	Parent Layer: `37d518560ba3988f5b416573f128fa7340a749e03f5214bdbf2b59f3dce3e2ca`
 -	Docker Version: 1.9.1
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
