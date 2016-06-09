@@ -1,10 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.12`, `0.12.0` (*0.12/Dockerfile*)](https://github.com/influxdata/kapacitor-docker/blob/bbfea78a0a43bd4c6d67e139afb518bac3aa424b/0.12/Dockerfile)
--	[`0.13`, `0.13.1`, `latest` (*0.13/Dockerfile*)](https://github.com/influxdata/kapacitor-docker/blob/bbfea78a0a43bd4c6d67e139afb518bac3aa424b/0.13/Dockerfile)
--	[`0.13-alpine`, `0.13.0-alpine`, `alpine` (*0.13/alpine/Dockerfile*)](https://github.com/influxdata/kapacitor-docker/blob/bbfea78a0a43bd4c6d67e139afb518bac3aa424b/0.13/alpine/Dockerfile)
+-	[`0.13`, `0.13.1`, `latest` (*kapacitor/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/kapacitor/0.13/Dockerfile)
+-	[`0.13-alpine`, `0.13.1-alpine`, `alpine` (*kapacitor/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/kapacitor/0.13/alpine/Dockerfile)
+-	[`1.0.0-beta1` (*kapacitor/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/kapacitor/1.0/Dockerfile)
+-	[`1.0.0-beta1-alpine` (*kapacitor/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/kapacitor/1.0/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/kapacitor:latest.svg)](https://imagelayers.io/?images=kapacitor:0.12,kapacitor:0.13,kapacitor:0.13-alpine)
+[![](https://badge.imagelayers.io/kapacitor:latest.svg)](https://imagelayers.io/?images=kapacitor:0.12,kapacitor:0.13,kapacitor:0.13-alpine,kapacitor:1.0.0-beta1,kapacitor:1.0.0-beta1-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kapacitor`)](https://github.com/docker-library/official-images/blob/master/library/kapacitor). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor).
 
@@ -179,7 +181,7 @@ Documentation for this image is stored in the [`kapacitor/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/influxdata/kapacitor-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -187,4 +189,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/influxdata/kapacitor-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

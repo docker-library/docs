@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.12`, `0.12.0` (*0.12/Dockerfile*)](https://github.com/influxdata/chronograf-docker/blob/82b30f8a10b7dde9b13953400288768f109bf749/0.12/Dockerfile)
--	[`0.13`, `0.13.0`, `latest` (*0.13/Dockerfile*)](https://github.com/influxdata/chronograf-docker/blob/82b30f8a10b7dde9b13953400288768f109bf749/0.13/Dockerfile)
+-	[`0.13`, `0.13.0`, `latest` (*chronograf/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/chronograf/0.13/Dockerfile)
 
 [![](https://badge.imagelayers.io/chronograf:latest.svg)](https://imagelayers.io/?images=chronograf:0.12,chronograf:0.13)
 
@@ -76,7 +76,7 @@ Documentation for this image is stored in the [`chronograf/` directory](https://
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/influxdata/chronograf-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -84,4 +84,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/influxdata/chronograf-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
