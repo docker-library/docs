@@ -33,321 +33,321 @@
 ## `logstash:1.4.5-1-a2bacae`
 
 ```console
-$ docker pull library/logstash@sha256:119d2660f1c819483f93cf318464f06d81e02a72e4a836dd4b0eb2d57e5ff0e8
+$ docker pull library/logstash@sha256:038483ec02297777706f546802c4afcdef7e0459abce157c099cc620723c711a
 ```
 
--	Total v2 Content-Length: 200.0 MB (199961559 bytes)
+-	Total v2 Content-Length: 200.1 MB (200066471 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2c4027a996f50dfb1ab6dd30fc7329c5c77c3edaf113c220ce2383c950133cef`
+#### `b7ebb54d3ac720dc631fabf5002dffe430340e7030ed25ac21fe5dce5adf513e`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:38:03 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:ebd48f2f56fe6ba74d55419b857ce7d2a407d7a35339af601b1b3caae0ddc4c2`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:14 GMT
+-	Created: Fri, 10 Jun 2016 16:41:36 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:d78502dbe5f2e7436b0c351f868afab7660a04d6edbca6f055255004cfebf384`
+-	v2 Content-Length: 225.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:36 GMT
 
-#### `6d24b6b68a59fc97bcc0b63d638b825dc082f5710d0c84e2d542eb4aeb7ccef5`
+#### `247f8df1d40ee7817039cd39f6fde557e1bd3228721058feae44e70c418c367f`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:38:44 GMT
--	Parent Layer: `2c4027a996f50dfb1ab6dd30fc7329c5c77c3edaf113c220ce2383c950133cef`
--	v2 Blob: `sha256:5f4a7af656c2da3f97b5865be854254709023e746d4fd1a1b04cf64435c61f4e`
--	v2 Content-Length: 74.1 MB (74127544 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:07 GMT
+-	Created: Fri, 10 Jun 2016 16:43:01 GMT
+-	Parent Layer: `b7ebb54d3ac720dc631fabf5002dffe430340e7030ed25ac21fe5dce5adf513e`
+-	v2 Blob: `sha256:e2c757c428360faf658adfb8fa6855af86c3179371dffc3e6ddb09fd0a2332bb`
+-	v2 Content-Length: 74.2 MB (74157827 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:51 GMT
 
-#### `8d8a143b8c074c4a2795de13562a85e90b7a4d0d489e6ca494b6af251da53009`
+#### `423fcda9c03fa62fdf48efb74c75b7383814349e831c7ba8e45688ff4eeb5beb`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:38:47 GMT
--	Parent Layer: `6d24b6b68a59fc97bcc0b63d638b825dc082f5710d0c84e2d542eb4aeb7ccef5`
+-	Created: Fri, 10 Jun 2016 16:43:02 GMT
+-	Parent Layer: `247f8df1d40ee7817039cd39f6fde557e1bd3228721058feae44e70c418c367f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ecdf5522294095570eb4a3c3ca2413eb01c7e0ef8556519e68753df6345d95bc`
+#### `2146d97035113033834e18fbeadeb84f82d29e4d0b210f55df4fee4811a31cb4`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:38:47 GMT
--	Parent Layer: `8d8a143b8c074c4a2795de13562a85e90b7a4d0d489e6ca494b6af251da53009`
--	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
+-	Created: Fri, 10 Jun 2016 16:43:02 GMT
+-	Parent Layer: `423fcda9c03fa62fdf48efb74c75b7383814349e831c7ba8e45688ff4eeb5beb`
+-	v2 Blob: `sha256:2941b96fe5b8be7447467415c5e30d8a705aa24fa1a3124095d5f3cb600a3290`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `55ff18d10fb8f1f4a842ee92081010672f0adb325d9c668c71eaffb584e69617`
+#### `c528d317da5a25f10877cbd64e6f58df12e980109afaf0a2b8627af24d2f09f8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:38:48 GMT
--	Parent Layer: `ecdf5522294095570eb4a3c3ca2413eb01c7e0ef8556519e68753df6345d95bc`
+-	Created: Fri, 10 Jun 2016 16:43:03 GMT
+-	Parent Layer: `2146d97035113033834e18fbeadeb84f82d29e4d0b210f55df4fee4811a31cb4`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `dc387b28507e1b57cd94cab71837f1f10b294a177c1d0d242b04069f6e9330d9`
+#### `06c091b579febb1f8473c9152b512c57560f1ab2b1b6eafe2c004a9cad3ae491`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:38:49 GMT
--	Parent Layer: `55ff18d10fb8f1f4a842ee92081010672f0adb325d9c668c71eaffb584e69617`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:43:03 GMT
+-	Parent Layer: `c528d317da5a25f10877cbd64e6f58df12e980109afaf0a2b8627af24d2f09f8`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -355,321 +355,321 @@ CMD ["logstash" "agent"]
 ## `logstash:1.4.5-1`
 
 ```console
-$ docker pull library/logstash@sha256:0eff3280753ff4693a63a8a240d411c3bf58816e8beb0fc547d37da5e74e0d32
+$ docker pull library/logstash@sha256:3868af96ff4b46ce925ac952fde3053404d8c01e5e32bc2f3784e1b1e2bdcf0b
 ```
 
--	Total v2 Content-Length: 200.0 MB (199961559 bytes)
+-	Total v2 Content-Length: 200.1 MB (200066471 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2c4027a996f50dfb1ab6dd30fc7329c5c77c3edaf113c220ce2383c950133cef`
+#### `b7ebb54d3ac720dc631fabf5002dffe430340e7030ed25ac21fe5dce5adf513e`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:38:03 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:ebd48f2f56fe6ba74d55419b857ce7d2a407d7a35339af601b1b3caae0ddc4c2`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:14 GMT
+-	Created: Fri, 10 Jun 2016 16:41:36 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:d78502dbe5f2e7436b0c351f868afab7660a04d6edbca6f055255004cfebf384`
+-	v2 Content-Length: 225.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:36 GMT
 
-#### `6d24b6b68a59fc97bcc0b63d638b825dc082f5710d0c84e2d542eb4aeb7ccef5`
+#### `247f8df1d40ee7817039cd39f6fde557e1bd3228721058feae44e70c418c367f`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:38:44 GMT
--	Parent Layer: `2c4027a996f50dfb1ab6dd30fc7329c5c77c3edaf113c220ce2383c950133cef`
--	v2 Blob: `sha256:5f4a7af656c2da3f97b5865be854254709023e746d4fd1a1b04cf64435c61f4e`
--	v2 Content-Length: 74.1 MB (74127544 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:07 GMT
+-	Created: Fri, 10 Jun 2016 16:43:01 GMT
+-	Parent Layer: `b7ebb54d3ac720dc631fabf5002dffe430340e7030ed25ac21fe5dce5adf513e`
+-	v2 Blob: `sha256:e2c757c428360faf658adfb8fa6855af86c3179371dffc3e6ddb09fd0a2332bb`
+-	v2 Content-Length: 74.2 MB (74157827 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:51 GMT
 
-#### `8d8a143b8c074c4a2795de13562a85e90b7a4d0d489e6ca494b6af251da53009`
+#### `423fcda9c03fa62fdf48efb74c75b7383814349e831c7ba8e45688ff4eeb5beb`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:38:47 GMT
--	Parent Layer: `6d24b6b68a59fc97bcc0b63d638b825dc082f5710d0c84e2d542eb4aeb7ccef5`
+-	Created: Fri, 10 Jun 2016 16:43:02 GMT
+-	Parent Layer: `247f8df1d40ee7817039cd39f6fde557e1bd3228721058feae44e70c418c367f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ecdf5522294095570eb4a3c3ca2413eb01c7e0ef8556519e68753df6345d95bc`
+#### `2146d97035113033834e18fbeadeb84f82d29e4d0b210f55df4fee4811a31cb4`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:38:47 GMT
--	Parent Layer: `8d8a143b8c074c4a2795de13562a85e90b7a4d0d489e6ca494b6af251da53009`
--	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
+-	Created: Fri, 10 Jun 2016 16:43:02 GMT
+-	Parent Layer: `423fcda9c03fa62fdf48efb74c75b7383814349e831c7ba8e45688ff4eeb5beb`
+-	v2 Blob: `sha256:2941b96fe5b8be7447467415c5e30d8a705aa24fa1a3124095d5f3cb600a3290`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `55ff18d10fb8f1f4a842ee92081010672f0adb325d9c668c71eaffb584e69617`
+#### `c528d317da5a25f10877cbd64e6f58df12e980109afaf0a2b8627af24d2f09f8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:38:48 GMT
--	Parent Layer: `ecdf5522294095570eb4a3c3ca2413eb01c7e0ef8556519e68753df6345d95bc`
+-	Created: Fri, 10 Jun 2016 16:43:03 GMT
+-	Parent Layer: `2146d97035113033834e18fbeadeb84f82d29e4d0b210f55df4fee4811a31cb4`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `dc387b28507e1b57cd94cab71837f1f10b294a177c1d0d242b04069f6e9330d9`
+#### `06c091b579febb1f8473c9152b512c57560f1ab2b1b6eafe2c004a9cad3ae491`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:38:49 GMT
--	Parent Layer: `55ff18d10fb8f1f4a842ee92081010672f0adb325d9c668c71eaffb584e69617`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:43:03 GMT
+-	Parent Layer: `c528d317da5a25f10877cbd64e6f58df12e980109afaf0a2b8627af24d2f09f8`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -677,321 +677,321 @@ CMD ["logstash" "agent"]
 ## `logstash:1.4.5`
 
 ```console
-$ docker pull library/logstash@sha256:f072a8a7c188069bac9ca183e5b5619504761b8fffcaa5d455ce7e97f9dd19a3
+$ docker pull library/logstash@sha256:ec8dc53f3030e4ea3a9eef4cfe7e5837dd3ba284769491008405814dc9d17716
 ```
 
--	Total v2 Content-Length: 200.0 MB (199961559 bytes)
+-	Total v2 Content-Length: 200.1 MB (200066471 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2c4027a996f50dfb1ab6dd30fc7329c5c77c3edaf113c220ce2383c950133cef`
+#### `b7ebb54d3ac720dc631fabf5002dffe430340e7030ed25ac21fe5dce5adf513e`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:38:03 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:ebd48f2f56fe6ba74d55419b857ce7d2a407d7a35339af601b1b3caae0ddc4c2`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:14 GMT
+-	Created: Fri, 10 Jun 2016 16:41:36 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:d78502dbe5f2e7436b0c351f868afab7660a04d6edbca6f055255004cfebf384`
+-	v2 Content-Length: 225.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:36 GMT
 
-#### `6d24b6b68a59fc97bcc0b63d638b825dc082f5710d0c84e2d542eb4aeb7ccef5`
+#### `247f8df1d40ee7817039cd39f6fde557e1bd3228721058feae44e70c418c367f`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:38:44 GMT
--	Parent Layer: `2c4027a996f50dfb1ab6dd30fc7329c5c77c3edaf113c220ce2383c950133cef`
--	v2 Blob: `sha256:5f4a7af656c2da3f97b5865be854254709023e746d4fd1a1b04cf64435c61f4e`
--	v2 Content-Length: 74.1 MB (74127544 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:07 GMT
+-	Created: Fri, 10 Jun 2016 16:43:01 GMT
+-	Parent Layer: `b7ebb54d3ac720dc631fabf5002dffe430340e7030ed25ac21fe5dce5adf513e`
+-	v2 Blob: `sha256:e2c757c428360faf658adfb8fa6855af86c3179371dffc3e6ddb09fd0a2332bb`
+-	v2 Content-Length: 74.2 MB (74157827 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:51 GMT
 
-#### `8d8a143b8c074c4a2795de13562a85e90b7a4d0d489e6ca494b6af251da53009`
+#### `423fcda9c03fa62fdf48efb74c75b7383814349e831c7ba8e45688ff4eeb5beb`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:38:47 GMT
--	Parent Layer: `6d24b6b68a59fc97bcc0b63d638b825dc082f5710d0c84e2d542eb4aeb7ccef5`
+-	Created: Fri, 10 Jun 2016 16:43:02 GMT
+-	Parent Layer: `247f8df1d40ee7817039cd39f6fde557e1bd3228721058feae44e70c418c367f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ecdf5522294095570eb4a3c3ca2413eb01c7e0ef8556519e68753df6345d95bc`
+#### `2146d97035113033834e18fbeadeb84f82d29e4d0b210f55df4fee4811a31cb4`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:38:47 GMT
--	Parent Layer: `8d8a143b8c074c4a2795de13562a85e90b7a4d0d489e6ca494b6af251da53009`
--	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
+-	Created: Fri, 10 Jun 2016 16:43:02 GMT
+-	Parent Layer: `423fcda9c03fa62fdf48efb74c75b7383814349e831c7ba8e45688ff4eeb5beb`
+-	v2 Blob: `sha256:2941b96fe5b8be7447467415c5e30d8a705aa24fa1a3124095d5f3cb600a3290`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `55ff18d10fb8f1f4a842ee92081010672f0adb325d9c668c71eaffb584e69617`
+#### `c528d317da5a25f10877cbd64e6f58df12e980109afaf0a2b8627af24d2f09f8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:38:48 GMT
--	Parent Layer: `ecdf5522294095570eb4a3c3ca2413eb01c7e0ef8556519e68753df6345d95bc`
+-	Created: Fri, 10 Jun 2016 16:43:03 GMT
+-	Parent Layer: `2146d97035113033834e18fbeadeb84f82d29e4d0b210f55df4fee4811a31cb4`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `dc387b28507e1b57cd94cab71837f1f10b294a177c1d0d242b04069f6e9330d9`
+#### `06c091b579febb1f8473c9152b512c57560f1ab2b1b6eafe2c004a9cad3ae491`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:38:49 GMT
--	Parent Layer: `55ff18d10fb8f1f4a842ee92081010672f0adb325d9c668c71eaffb584e69617`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:43:03 GMT
+-	Parent Layer: `c528d317da5a25f10877cbd64e6f58df12e980109afaf0a2b8627af24d2f09f8`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -999,321 +999,321 @@ CMD ["logstash" "agent"]
 ## `logstash:1.4`
 
 ```console
-$ docker pull library/logstash@sha256:c550070ecec168fa6890bbeafe6d8e83c67964c5a9ba32cecaaeb2145d5efe65
+$ docker pull library/logstash@sha256:4963aced01803902a34c84ce356d538127671de27d311e6d2eb30d8fed855eb4
 ```
 
--	Total v2 Content-Length: 200.0 MB (199961559 bytes)
+-	Total v2 Content-Length: 200.1 MB (200066471 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2c4027a996f50dfb1ab6dd30fc7329c5c77c3edaf113c220ce2383c950133cef`
+#### `b7ebb54d3ac720dc631fabf5002dffe430340e7030ed25ac21fe5dce5adf513e`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:38:03 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:ebd48f2f56fe6ba74d55419b857ce7d2a407d7a35339af601b1b3caae0ddc4c2`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:14 GMT
+-	Created: Fri, 10 Jun 2016 16:41:36 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:d78502dbe5f2e7436b0c351f868afab7660a04d6edbca6f055255004cfebf384`
+-	v2 Content-Length: 225.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:36 GMT
 
-#### `6d24b6b68a59fc97bcc0b63d638b825dc082f5710d0c84e2d542eb4aeb7ccef5`
+#### `247f8df1d40ee7817039cd39f6fde557e1bd3228721058feae44e70c418c367f`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:38:44 GMT
--	Parent Layer: `2c4027a996f50dfb1ab6dd30fc7329c5c77c3edaf113c220ce2383c950133cef`
--	v2 Blob: `sha256:5f4a7af656c2da3f97b5865be854254709023e746d4fd1a1b04cf64435c61f4e`
--	v2 Content-Length: 74.1 MB (74127544 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:07 GMT
+-	Created: Fri, 10 Jun 2016 16:43:01 GMT
+-	Parent Layer: `b7ebb54d3ac720dc631fabf5002dffe430340e7030ed25ac21fe5dce5adf513e`
+-	v2 Blob: `sha256:e2c757c428360faf658adfb8fa6855af86c3179371dffc3e6ddb09fd0a2332bb`
+-	v2 Content-Length: 74.2 MB (74157827 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:51 GMT
 
-#### `8d8a143b8c074c4a2795de13562a85e90b7a4d0d489e6ca494b6af251da53009`
+#### `423fcda9c03fa62fdf48efb74c75b7383814349e831c7ba8e45688ff4eeb5beb`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:38:47 GMT
--	Parent Layer: `6d24b6b68a59fc97bcc0b63d638b825dc082f5710d0c84e2d542eb4aeb7ccef5`
+-	Created: Fri, 10 Jun 2016 16:43:02 GMT
+-	Parent Layer: `247f8df1d40ee7817039cd39f6fde557e1bd3228721058feae44e70c418c367f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ecdf5522294095570eb4a3c3ca2413eb01c7e0ef8556519e68753df6345d95bc`
+#### `2146d97035113033834e18fbeadeb84f82d29e4d0b210f55df4fee4811a31cb4`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:38:47 GMT
--	Parent Layer: `8d8a143b8c074c4a2795de13562a85e90b7a4d0d489e6ca494b6af251da53009`
--	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
+-	Created: Fri, 10 Jun 2016 16:43:02 GMT
+-	Parent Layer: `423fcda9c03fa62fdf48efb74c75b7383814349e831c7ba8e45688ff4eeb5beb`
+-	v2 Blob: `sha256:2941b96fe5b8be7447467415c5e30d8a705aa24fa1a3124095d5f3cb600a3290`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `55ff18d10fb8f1f4a842ee92081010672f0adb325d9c668c71eaffb584e69617`
+#### `c528d317da5a25f10877cbd64e6f58df12e980109afaf0a2b8627af24d2f09f8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:38:48 GMT
--	Parent Layer: `ecdf5522294095570eb4a3c3ca2413eb01c7e0ef8556519e68753df6345d95bc`
+-	Created: Fri, 10 Jun 2016 16:43:03 GMT
+-	Parent Layer: `2146d97035113033834e18fbeadeb84f82d29e4d0b210f55df4fee4811a31cb4`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `dc387b28507e1b57cd94cab71837f1f10b294a177c1d0d242b04069f6e9330d9`
+#### `06c091b579febb1f8473c9152b512c57560f1ab2b1b6eafe2c004a9cad3ae491`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:38:49 GMT
--	Parent Layer: `55ff18d10fb8f1f4a842ee92081010672f0adb325d9c668c71eaffb584e69617`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:43:03 GMT
+-	Parent Layer: `c528d317da5a25f10877cbd64e6f58df12e980109afaf0a2b8627af24d2f09f8`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1321,321 +1321,321 @@ CMD ["logstash" "agent"]
 ## `logstash:1.5.6-1`
 
 ```console
-$ docker pull library/logstash@sha256:fc8846c5bb297ca4dca966613b81ed311386c502d6cfcdbc3b8ed359ae1704ad
+$ docker pull library/logstash@sha256:6d4b1311ac2166b04dd396e826431bb96ecbf999afafd0bf9395ce04ca8e87b7
 ```
 
--	Total v2 Content-Length: 216.6 MB (216586022 bytes)
+-	Total v2 Content-Length: 216.7 MB (216684108 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8618dac697540bb50adc752041d63cc91b770f86265c5265dbe7e4b2eeadef89`
+#### `b2952ab1297784082d02fbc8ef2437227aee1e213ddc40ceb39a201363adffc7`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:41:19 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:c9c0b6a2eb840998cc8bdeeaffdcfd64229f155c6858e72a3660cf58d13dc3d1`
--	v2 Content-Length: 223.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:16:56 GMT
+-	Created: Fri, 10 Jun 2016 16:43:07 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:fdde51bc6024fcbf1c139cb8c55c1ee0ebbea73dd44f8067cbf14d6fbbb68a86`
+-	v2 Content-Length: 224.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:20 GMT
 
-#### `b0590ac3ae39c5010759f44731787f2617379f0c6e2f27da53b5edc4447e1f92`
+#### `9a41e4f99b5111cc1e664274d8a5580ff9cda604412320603b0138eaca75a531`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:42:04 GMT
--	Parent Layer: `8618dac697540bb50adc752041d63cc91b770f86265c5265dbe7e4b2eeadef89`
--	v2 Blob: `sha256:06e3d2bb1a4b21483ccbd5822741077c590ba2a11a99d5f5b4edad761c9493b9`
--	v2 Content-Length: 90.8 MB (90752008 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:16:42 GMT
+-	Created: Fri, 10 Jun 2016 16:44:44 GMT
+-	Parent Layer: `b2952ab1297784082d02fbc8ef2437227aee1e213ddc40ceb39a201363adffc7`
+-	v2 Blob: `sha256:cae2db5136d46be9c23f3150b5d8ac1c9713e4c0dceba11f39feb2980e51ca9a`
+-	v2 Content-Length: 90.8 MB (90775465 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:38 GMT
 
-#### `79d5646ee7079ceb2d4ae2431fce5cd0b38515d476144f85d7e1c19d891ddc82`
+#### `c8dabaf68e4d433f4760b098302a4741b2e167e78854e2c46f38c7b4503e1755`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:42:08 GMT
--	Parent Layer: `b0590ac3ae39c5010759f44731787f2617379f0c6e2f27da53b5edc4447e1f92`
+-	Created: Fri, 10 Jun 2016 16:44:45 GMT
+-	Parent Layer: `9a41e4f99b5111cc1e664274d8a5580ff9cda604412320603b0138eaca75a531`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bc294e93de145741ff1d6487988c9b2aca08526f92b0510d57494ce4cabbbe48`
+#### `4dadb218502792da8fd5be451e14f79bf46bdad7c56a5c91ffbcb686cdd68472`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:42:09 GMT
--	Parent Layer: `79d5646ee7079ceb2d4ae2431fce5cd0b38515d476144f85d7e1c19d891ddc82`
--	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
+-	Created: Fri, 10 Jun 2016 16:44:46 GMT
+-	Parent Layer: `c8dabaf68e4d433f4760b098302a4741b2e167e78854e2c46f38c7b4503e1755`
+-	v2 Blob: `sha256:f27e9de791dbe4faa477bd749250d27f4b8b9a048da24fb247681bac0af1b2a5`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:20 GMT
 
-#### `137d1a57f9a9494be3342fb0824376d5bef63637469984f0514c827ce478c4e8`
+#### `f2cd0c56e32e6e04487a172f6c400de0c32459ba164fed17404b05c638e4c671`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:42:10 GMT
--	Parent Layer: `bc294e93de145741ff1d6487988c9b2aca08526f92b0510d57494ce4cabbbe48`
+-	Created: Fri, 10 Jun 2016 16:44:46 GMT
+-	Parent Layer: `4dadb218502792da8fd5be451e14f79bf46bdad7c56a5c91ffbcb686cdd68472`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7b808c4659ebdeafac62b0aaf04a354d03f0968cb42bc9ee511737263c8f1a40`
+#### `50b3c8ec16bafca636bba9e9e6f33997b80364ca867dcb8360b46f8a94e0e4bc`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:42:10 GMT
--	Parent Layer: `137d1a57f9a9494be3342fb0824376d5bef63637469984f0514c827ce478c4e8`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:44:47 GMT
+-	Parent Layer: `f2cd0c56e32e6e04487a172f6c400de0c32459ba164fed17404b05c638e4c671`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1643,321 +1643,321 @@ CMD ["logstash" "agent"]
 ## `logstash:1.5.6`
 
 ```console
-$ docker pull library/logstash@sha256:da414940d8c296f0c6406f6ee708d5b2d65504b44efcc7f08deae56da09f168e
+$ docker pull library/logstash@sha256:36f4e31464abe045cd565f0969a7de902e43a0664a15f15e05c3f86983a4238e
 ```
 
--	Total v2 Content-Length: 216.6 MB (216586022 bytes)
+-	Total v2 Content-Length: 216.7 MB (216684108 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8618dac697540bb50adc752041d63cc91b770f86265c5265dbe7e4b2eeadef89`
+#### `b2952ab1297784082d02fbc8ef2437227aee1e213ddc40ceb39a201363adffc7`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:41:19 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:c9c0b6a2eb840998cc8bdeeaffdcfd64229f155c6858e72a3660cf58d13dc3d1`
--	v2 Content-Length: 223.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:16:56 GMT
+-	Created: Fri, 10 Jun 2016 16:43:07 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:fdde51bc6024fcbf1c139cb8c55c1ee0ebbea73dd44f8067cbf14d6fbbb68a86`
+-	v2 Content-Length: 224.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:20 GMT
 
-#### `b0590ac3ae39c5010759f44731787f2617379f0c6e2f27da53b5edc4447e1f92`
+#### `9a41e4f99b5111cc1e664274d8a5580ff9cda604412320603b0138eaca75a531`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:42:04 GMT
--	Parent Layer: `8618dac697540bb50adc752041d63cc91b770f86265c5265dbe7e4b2eeadef89`
--	v2 Blob: `sha256:06e3d2bb1a4b21483ccbd5822741077c590ba2a11a99d5f5b4edad761c9493b9`
--	v2 Content-Length: 90.8 MB (90752008 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:16:42 GMT
+-	Created: Fri, 10 Jun 2016 16:44:44 GMT
+-	Parent Layer: `b2952ab1297784082d02fbc8ef2437227aee1e213ddc40ceb39a201363adffc7`
+-	v2 Blob: `sha256:cae2db5136d46be9c23f3150b5d8ac1c9713e4c0dceba11f39feb2980e51ca9a`
+-	v2 Content-Length: 90.8 MB (90775465 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:38 GMT
 
-#### `79d5646ee7079ceb2d4ae2431fce5cd0b38515d476144f85d7e1c19d891ddc82`
+#### `c8dabaf68e4d433f4760b098302a4741b2e167e78854e2c46f38c7b4503e1755`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:42:08 GMT
--	Parent Layer: `b0590ac3ae39c5010759f44731787f2617379f0c6e2f27da53b5edc4447e1f92`
+-	Created: Fri, 10 Jun 2016 16:44:45 GMT
+-	Parent Layer: `9a41e4f99b5111cc1e664274d8a5580ff9cda604412320603b0138eaca75a531`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bc294e93de145741ff1d6487988c9b2aca08526f92b0510d57494ce4cabbbe48`
+#### `4dadb218502792da8fd5be451e14f79bf46bdad7c56a5c91ffbcb686cdd68472`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:42:09 GMT
--	Parent Layer: `79d5646ee7079ceb2d4ae2431fce5cd0b38515d476144f85d7e1c19d891ddc82`
--	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
+-	Created: Fri, 10 Jun 2016 16:44:46 GMT
+-	Parent Layer: `c8dabaf68e4d433f4760b098302a4741b2e167e78854e2c46f38c7b4503e1755`
+-	v2 Blob: `sha256:f27e9de791dbe4faa477bd749250d27f4b8b9a048da24fb247681bac0af1b2a5`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:20 GMT
 
-#### `137d1a57f9a9494be3342fb0824376d5bef63637469984f0514c827ce478c4e8`
+#### `f2cd0c56e32e6e04487a172f6c400de0c32459ba164fed17404b05c638e4c671`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:42:10 GMT
--	Parent Layer: `bc294e93de145741ff1d6487988c9b2aca08526f92b0510d57494ce4cabbbe48`
+-	Created: Fri, 10 Jun 2016 16:44:46 GMT
+-	Parent Layer: `4dadb218502792da8fd5be451e14f79bf46bdad7c56a5c91ffbcb686cdd68472`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7b808c4659ebdeafac62b0aaf04a354d03f0968cb42bc9ee511737263c8f1a40`
+#### `50b3c8ec16bafca636bba9e9e6f33997b80364ca867dcb8360b46f8a94e0e4bc`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:42:10 GMT
--	Parent Layer: `137d1a57f9a9494be3342fb0824376d5bef63637469984f0514c827ce478c4e8`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:44:47 GMT
+-	Parent Layer: `f2cd0c56e32e6e04487a172f6c400de0c32459ba164fed17404b05c638e4c671`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -1965,321 +1965,321 @@ CMD ["logstash" "agent"]
 ## `logstash:1.5`
 
 ```console
-$ docker pull library/logstash@sha256:684d921d85c4105deaffea6d00b846d5822b96d9d6579242668d2e46e11ee392
+$ docker pull library/logstash@sha256:297345f2b4f7f9419d23293715a0bf231c2a754d53ce43d3c95f01fa98cfab3b
 ```
 
--	Total v2 Content-Length: 216.6 MB (216586022 bytes)
+-	Total v2 Content-Length: 216.7 MB (216684108 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8618dac697540bb50adc752041d63cc91b770f86265c5265dbe7e4b2eeadef89`
+#### `b2952ab1297784082d02fbc8ef2437227aee1e213ddc40ceb39a201363adffc7`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:41:19 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:c9c0b6a2eb840998cc8bdeeaffdcfd64229f155c6858e72a3660cf58d13dc3d1`
--	v2 Content-Length: 223.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:16:56 GMT
+-	Created: Fri, 10 Jun 2016 16:43:07 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:fdde51bc6024fcbf1c139cb8c55c1ee0ebbea73dd44f8067cbf14d6fbbb68a86`
+-	v2 Content-Length: 224.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:20 GMT
 
-#### `b0590ac3ae39c5010759f44731787f2617379f0c6e2f27da53b5edc4447e1f92`
+#### `9a41e4f99b5111cc1e664274d8a5580ff9cda604412320603b0138eaca75a531`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:42:04 GMT
--	Parent Layer: `8618dac697540bb50adc752041d63cc91b770f86265c5265dbe7e4b2eeadef89`
--	v2 Blob: `sha256:06e3d2bb1a4b21483ccbd5822741077c590ba2a11a99d5f5b4edad761c9493b9`
--	v2 Content-Length: 90.8 MB (90752008 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:16:42 GMT
+-	Created: Fri, 10 Jun 2016 16:44:44 GMT
+-	Parent Layer: `b2952ab1297784082d02fbc8ef2437227aee1e213ddc40ceb39a201363adffc7`
+-	v2 Blob: `sha256:cae2db5136d46be9c23f3150b5d8ac1c9713e4c0dceba11f39feb2980e51ca9a`
+-	v2 Content-Length: 90.8 MB (90775465 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:38 GMT
 
-#### `79d5646ee7079ceb2d4ae2431fce5cd0b38515d476144f85d7e1c19d891ddc82`
+#### `c8dabaf68e4d433f4760b098302a4741b2e167e78854e2c46f38c7b4503e1755`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:42:08 GMT
--	Parent Layer: `b0590ac3ae39c5010759f44731787f2617379f0c6e2f27da53b5edc4447e1f92`
+-	Created: Fri, 10 Jun 2016 16:44:45 GMT
+-	Parent Layer: `9a41e4f99b5111cc1e664274d8a5580ff9cda604412320603b0138eaca75a531`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bc294e93de145741ff1d6487988c9b2aca08526f92b0510d57494ce4cabbbe48`
+#### `4dadb218502792da8fd5be451e14f79bf46bdad7c56a5c91ffbcb686cdd68472`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:42:09 GMT
--	Parent Layer: `79d5646ee7079ceb2d4ae2431fce5cd0b38515d476144f85d7e1c19d891ddc82`
--	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
+-	Created: Fri, 10 Jun 2016 16:44:46 GMT
+-	Parent Layer: `c8dabaf68e4d433f4760b098302a4741b2e167e78854e2c46f38c7b4503e1755`
+-	v2 Blob: `sha256:f27e9de791dbe4faa477bd749250d27f4b8b9a048da24fb247681bac0af1b2a5`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:20 GMT
 
-#### `137d1a57f9a9494be3342fb0824376d5bef63637469984f0514c827ce478c4e8`
+#### `f2cd0c56e32e6e04487a172f6c400de0c32459ba164fed17404b05c638e4c671`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:42:10 GMT
--	Parent Layer: `bc294e93de145741ff1d6487988c9b2aca08526f92b0510d57494ce4cabbbe48`
+-	Created: Fri, 10 Jun 2016 16:44:46 GMT
+-	Parent Layer: `4dadb218502792da8fd5be451e14f79bf46bdad7c56a5c91ffbcb686cdd68472`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7b808c4659ebdeafac62b0aaf04a354d03f0968cb42bc9ee511737263c8f1a40`
+#### `50b3c8ec16bafca636bba9e9e6f33997b80364ca867dcb8360b46f8a94e0e4bc`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:42:10 GMT
--	Parent Layer: `137d1a57f9a9494be3342fb0824376d5bef63637469984f0514c827ce478c4e8`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:44:47 GMT
+-	Parent Layer: `f2cd0c56e32e6e04487a172f6c400de0c32459ba164fed17404b05c638e4c671`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -2287,321 +2287,321 @@ CMD ["logstash" "agent"]
 ## `logstash:1`
 
 ```console
-$ docker pull library/logstash@sha256:4864a904450724c25089464a64eeec61775d439679ca4b706e012fdad3824492
+$ docker pull library/logstash@sha256:fad7327dd802541a521d961015165662a93942e54f1e5d60f58b81aa6330a8bd
 ```
 
--	Total v2 Content-Length: 216.6 MB (216586022 bytes)
+-	Total v2 Content-Length: 216.7 MB (216684108 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8618dac697540bb50adc752041d63cc91b770f86265c5265dbe7e4b2eeadef89`
+#### `b2952ab1297784082d02fbc8ef2437227aee1e213ddc40ceb39a201363adffc7`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:41:19 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:c9c0b6a2eb840998cc8bdeeaffdcfd64229f155c6858e72a3660cf58d13dc3d1`
--	v2 Content-Length: 223.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:16:56 GMT
+-	Created: Fri, 10 Jun 2016 16:43:07 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:fdde51bc6024fcbf1c139cb8c55c1ee0ebbea73dd44f8067cbf14d6fbbb68a86`
+-	v2 Content-Length: 224.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:20 GMT
 
-#### `b0590ac3ae39c5010759f44731787f2617379f0c6e2f27da53b5edc4447e1f92`
+#### `9a41e4f99b5111cc1e664274d8a5580ff9cda604412320603b0138eaca75a531`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:42:04 GMT
--	Parent Layer: `8618dac697540bb50adc752041d63cc91b770f86265c5265dbe7e4b2eeadef89`
--	v2 Blob: `sha256:06e3d2bb1a4b21483ccbd5822741077c590ba2a11a99d5f5b4edad761c9493b9`
--	v2 Content-Length: 90.8 MB (90752008 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:16:42 GMT
+-	Created: Fri, 10 Jun 2016 16:44:44 GMT
+-	Parent Layer: `b2952ab1297784082d02fbc8ef2437227aee1e213ddc40ceb39a201363adffc7`
+-	v2 Blob: `sha256:cae2db5136d46be9c23f3150b5d8ac1c9713e4c0dceba11f39feb2980e51ca9a`
+-	v2 Content-Length: 90.8 MB (90775465 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:38 GMT
 
-#### `79d5646ee7079ceb2d4ae2431fce5cd0b38515d476144f85d7e1c19d891ddc82`
+#### `c8dabaf68e4d433f4760b098302a4741b2e167e78854e2c46f38c7b4503e1755`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:42:08 GMT
--	Parent Layer: `b0590ac3ae39c5010759f44731787f2617379f0c6e2f27da53b5edc4447e1f92`
+-	Created: Fri, 10 Jun 2016 16:44:45 GMT
+-	Parent Layer: `9a41e4f99b5111cc1e664274d8a5580ff9cda604412320603b0138eaca75a531`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bc294e93de145741ff1d6487988c9b2aca08526f92b0510d57494ce4cabbbe48`
+#### `4dadb218502792da8fd5be451e14f79bf46bdad7c56a5c91ffbcb686cdd68472`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:42:09 GMT
--	Parent Layer: `79d5646ee7079ceb2d4ae2431fce5cd0b38515d476144f85d7e1c19d891ddc82`
--	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
+-	Created: Fri, 10 Jun 2016 16:44:46 GMT
+-	Parent Layer: `c8dabaf68e4d433f4760b098302a4741b2e167e78854e2c46f38c7b4503e1755`
+-	v2 Blob: `sha256:f27e9de791dbe4faa477bd749250d27f4b8b9a048da24fb247681bac0af1b2a5`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:54:20 GMT
 
-#### `137d1a57f9a9494be3342fb0824376d5bef63637469984f0514c827ce478c4e8`
+#### `f2cd0c56e32e6e04487a172f6c400de0c32459ba164fed17404b05c638e4c671`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:42:10 GMT
--	Parent Layer: `bc294e93de145741ff1d6487988c9b2aca08526f92b0510d57494ce4cabbbe48`
+-	Created: Fri, 10 Jun 2016 16:44:46 GMT
+-	Parent Layer: `4dadb218502792da8fd5be451e14f79bf46bdad7c56a5c91ffbcb686cdd68472`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7b808c4659ebdeafac62b0aaf04a354d03f0968cb42bc9ee511737263c8f1a40`
+#### `50b3c8ec16bafca636bba9e9e6f33997b80364ca867dcb8360b46f8a94e0e4bc`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:42:10 GMT
--	Parent Layer: `137d1a57f9a9494be3342fb0824376d5bef63637469984f0514c827ce478c4e8`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:44:47 GMT
+-	Parent Layer: `f2cd0c56e32e6e04487a172f6c400de0c32459ba164fed17404b05c638e4c671`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -2609,321 +2609,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.0.0-1`
 
 ```console
-$ docker pull library/logstash@sha256:51ef301cfd7dd0d9d10d597a1e272b498784c4f65f198175fb5a542a6448c255
+$ docker pull library/logstash@sha256:a9fad96aa0348e1ea8eecf33d8663f59f421398450e7c70395eaa2749e2edb03
 ```
 
--	Total v2 Content-Length: 207.4 MB (207366826 bytes)
+-	Total v2 Content-Length: 207.5 MB (207463388 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ab24315573d94151ad04d10e5cad911c77f4bcda6eebd3649688026101d8552a`
+#### `1e43e54243373c2368d4138c756938ed15eb2fc3ddf501fee018261a63e07d5c`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:44:40 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:45d3cd7a3b1516c089bc91fcf9376397bcbf05cdada4f04f53ead3ddddc458b5`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:19:04 GMT
+-	Created: Fri, 10 Jun 2016 16:44:50 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:7017131a8d7c3ddbfd1b6834c25bfe0ce121bc191cb972664e2d4e20b149cd5f`
+-	v2 Content-Length: 224.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:08 GMT
 
-#### `e928fb040059aa545acc61a8c4ffdaebbc02a47c48ef62b7a6589f4fa274407a`
+#### `dc5e8cc0b29aa8d45d7eea4287127f1c8720a30d31a92c918fff0605cefdf793`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:45:25 GMT
--	Parent Layer: `ab24315573d94151ad04d10e5cad911c77f4bcda6eebd3649688026101d8552a`
--	v2 Blob: `sha256:198061a8fa6a83e210b697a1dc276d3d25e137a50979f95d69c6b7deda98053a`
--	v2 Content-Length: 81.5 MB (81532812 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:18:56 GMT
+-	Created: Fri, 10 Jun 2016 16:46:31 GMT
+-	Parent Layer: `1e43e54243373c2368d4138c756938ed15eb2fc3ddf501fee018261a63e07d5c`
+-	v2 Blob: `sha256:3c6922fcd43f3fee0cdb717138d1c0965ba54d503a84a27f046cbbb0eebd19bc`
+-	v2 Content-Length: 81.6 MB (81554745 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:27 GMT
 
-#### `cdc7e144f8258c2185d47ef12f5734ad58221911cd9d751cf6f99965032b3f9b`
+#### `20ceacdcb5f6208df1cc290b292dacbbdfbe462ac9c65eb1c71bc49871154c32`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:45:29 GMT
--	Parent Layer: `e928fb040059aa545acc61a8c4ffdaebbc02a47c48ef62b7a6589f4fa274407a`
+-	Created: Fri, 10 Jun 2016 16:46:32 GMT
+-	Parent Layer: `dc5e8cc0b29aa8d45d7eea4287127f1c8720a30d31a92c918fff0605cefdf793`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2a104c59ab8e2c17532b15a40216ecc5aed22608f900e310b818d55c114a0a59`
+#### `3e909de072137d349fe3d1da1376116b54f155c12902ab0a912348f57da9e373`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:45:30 GMT
--	Parent Layer: `cdc7e144f8258c2185d47ef12f5734ad58221911cd9d751cf6f99965032b3f9b`
--	v2 Blob: `sha256:020fb47f74bbacad292355664d83f687f5f16239215cdbe1e23af7b7c397b7ee`
--	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Fri, 02 Oct 2015 22:39:46 GMT
+-	Created: Fri, 10 Jun 2016 16:46:33 GMT
+-	Parent Layer: `20ceacdcb5f6208df1cc290b292dacbbdfbe462ac9c65eb1c71bc49871154c32`
+-	v2 Blob: `sha256:7a34e87fcab895cb01144906da1e2efa44201cd3bb538a3777c77507a7ca2afe`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:07 GMT
 
-#### `79d55975f210cefa29efd24a8201b39b7f001737276951e49b46f96cfcdb986d`
+#### `2bffe14f30e3d3123688e9968fa0adbeb0707e2fd1a863fcbd023d4c79f710e8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:45:31 GMT
--	Parent Layer: `2a104c59ab8e2c17532b15a40216ecc5aed22608f900e310b818d55c114a0a59`
+-	Created: Fri, 10 Jun 2016 16:46:34 GMT
+-	Parent Layer: `3e909de072137d349fe3d1da1376116b54f155c12902ab0a912348f57da9e373`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2498bd461a1e9193306bc5b978c242fc73ac7bbd07279afb3437a5fc81f38fb2`
+#### `f18b5bb2a9e0f266f220969f4da0a3697804e4c03593988631c5c2fcd206c58f`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:45:31 GMT
--	Parent Layer: `79d55975f210cefa29efd24a8201b39b7f001737276951e49b46f96cfcdb986d`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:46:34 GMT
+-	Parent Layer: `2bffe14f30e3d3123688e9968fa0adbeb0707e2fd1a863fcbd023d4c79f710e8`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -2931,321 +2931,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.0.0`
 
 ```console
-$ docker pull library/logstash@sha256:d33d0c016f492df11f5b6c706833662acf7ea2a6a9f05e32fd04c6d8337aca3e
+$ docker pull library/logstash@sha256:f01fa778b3e9b712e0363d1129488926bc385289cf6ca97556d66e034a647a96
 ```
 
--	Total v2 Content-Length: 207.4 MB (207366826 bytes)
+-	Total v2 Content-Length: 207.5 MB (207463388 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ab24315573d94151ad04d10e5cad911c77f4bcda6eebd3649688026101d8552a`
+#### `1e43e54243373c2368d4138c756938ed15eb2fc3ddf501fee018261a63e07d5c`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:44:40 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:45d3cd7a3b1516c089bc91fcf9376397bcbf05cdada4f04f53ead3ddddc458b5`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:19:04 GMT
+-	Created: Fri, 10 Jun 2016 16:44:50 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:7017131a8d7c3ddbfd1b6834c25bfe0ce121bc191cb972664e2d4e20b149cd5f`
+-	v2 Content-Length: 224.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:08 GMT
 
-#### `e928fb040059aa545acc61a8c4ffdaebbc02a47c48ef62b7a6589f4fa274407a`
+#### `dc5e8cc0b29aa8d45d7eea4287127f1c8720a30d31a92c918fff0605cefdf793`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:45:25 GMT
--	Parent Layer: `ab24315573d94151ad04d10e5cad911c77f4bcda6eebd3649688026101d8552a`
--	v2 Blob: `sha256:198061a8fa6a83e210b697a1dc276d3d25e137a50979f95d69c6b7deda98053a`
--	v2 Content-Length: 81.5 MB (81532812 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:18:56 GMT
+-	Created: Fri, 10 Jun 2016 16:46:31 GMT
+-	Parent Layer: `1e43e54243373c2368d4138c756938ed15eb2fc3ddf501fee018261a63e07d5c`
+-	v2 Blob: `sha256:3c6922fcd43f3fee0cdb717138d1c0965ba54d503a84a27f046cbbb0eebd19bc`
+-	v2 Content-Length: 81.6 MB (81554745 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:27 GMT
 
-#### `cdc7e144f8258c2185d47ef12f5734ad58221911cd9d751cf6f99965032b3f9b`
+#### `20ceacdcb5f6208df1cc290b292dacbbdfbe462ac9c65eb1c71bc49871154c32`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:45:29 GMT
--	Parent Layer: `e928fb040059aa545acc61a8c4ffdaebbc02a47c48ef62b7a6589f4fa274407a`
+-	Created: Fri, 10 Jun 2016 16:46:32 GMT
+-	Parent Layer: `dc5e8cc0b29aa8d45d7eea4287127f1c8720a30d31a92c918fff0605cefdf793`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2a104c59ab8e2c17532b15a40216ecc5aed22608f900e310b818d55c114a0a59`
+#### `3e909de072137d349fe3d1da1376116b54f155c12902ab0a912348f57da9e373`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:45:30 GMT
--	Parent Layer: `cdc7e144f8258c2185d47ef12f5734ad58221911cd9d751cf6f99965032b3f9b`
--	v2 Blob: `sha256:020fb47f74bbacad292355664d83f687f5f16239215cdbe1e23af7b7c397b7ee`
--	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Fri, 02 Oct 2015 22:39:46 GMT
+-	Created: Fri, 10 Jun 2016 16:46:33 GMT
+-	Parent Layer: `20ceacdcb5f6208df1cc290b292dacbbdfbe462ac9c65eb1c71bc49871154c32`
+-	v2 Blob: `sha256:7a34e87fcab895cb01144906da1e2efa44201cd3bb538a3777c77507a7ca2afe`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:07 GMT
 
-#### `79d55975f210cefa29efd24a8201b39b7f001737276951e49b46f96cfcdb986d`
+#### `2bffe14f30e3d3123688e9968fa0adbeb0707e2fd1a863fcbd023d4c79f710e8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:45:31 GMT
--	Parent Layer: `2a104c59ab8e2c17532b15a40216ecc5aed22608f900e310b818d55c114a0a59`
+-	Created: Fri, 10 Jun 2016 16:46:34 GMT
+-	Parent Layer: `3e909de072137d349fe3d1da1376116b54f155c12902ab0a912348f57da9e373`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2498bd461a1e9193306bc5b978c242fc73ac7bbd07279afb3437a5fc81f38fb2`
+#### `f18b5bb2a9e0f266f220969f4da0a3697804e4c03593988631c5c2fcd206c58f`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:45:31 GMT
--	Parent Layer: `79d55975f210cefa29efd24a8201b39b7f001737276951e49b46f96cfcdb986d`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:46:34 GMT
+-	Parent Layer: `2bffe14f30e3d3123688e9968fa0adbeb0707e2fd1a863fcbd023d4c79f710e8`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -3253,321 +3253,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.0`
 
 ```console
-$ docker pull library/logstash@sha256:12713b692551994e9f8bec69862585bbc2ee604a60306e23cc5f8c0c7eb43f3e
+$ docker pull library/logstash@sha256:cc0427b59a12aff6c77190fc2c4aacf81617052c5157bbe7a5384f3d39eb7aa9
 ```
 
--	Total v2 Content-Length: 207.4 MB (207366826 bytes)
+-	Total v2 Content-Length: 207.5 MB (207463388 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ab24315573d94151ad04d10e5cad911c77f4bcda6eebd3649688026101d8552a`
+#### `1e43e54243373c2368d4138c756938ed15eb2fc3ddf501fee018261a63e07d5c`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:44:40 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:45d3cd7a3b1516c089bc91fcf9376397bcbf05cdada4f04f53ead3ddddc458b5`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:19:04 GMT
+-	Created: Fri, 10 Jun 2016 16:44:50 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:7017131a8d7c3ddbfd1b6834c25bfe0ce121bc191cb972664e2d4e20b149cd5f`
+-	v2 Content-Length: 224.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:08 GMT
 
-#### `e928fb040059aa545acc61a8c4ffdaebbc02a47c48ef62b7a6589f4fa274407a`
+#### `dc5e8cc0b29aa8d45d7eea4287127f1c8720a30d31a92c918fff0605cefdf793`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:45:25 GMT
--	Parent Layer: `ab24315573d94151ad04d10e5cad911c77f4bcda6eebd3649688026101d8552a`
--	v2 Blob: `sha256:198061a8fa6a83e210b697a1dc276d3d25e137a50979f95d69c6b7deda98053a`
--	v2 Content-Length: 81.5 MB (81532812 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:18:56 GMT
+-	Created: Fri, 10 Jun 2016 16:46:31 GMT
+-	Parent Layer: `1e43e54243373c2368d4138c756938ed15eb2fc3ddf501fee018261a63e07d5c`
+-	v2 Blob: `sha256:3c6922fcd43f3fee0cdb717138d1c0965ba54d503a84a27f046cbbb0eebd19bc`
+-	v2 Content-Length: 81.6 MB (81554745 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:27 GMT
 
-#### `cdc7e144f8258c2185d47ef12f5734ad58221911cd9d751cf6f99965032b3f9b`
+#### `20ceacdcb5f6208df1cc290b292dacbbdfbe462ac9c65eb1c71bc49871154c32`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:45:29 GMT
--	Parent Layer: `e928fb040059aa545acc61a8c4ffdaebbc02a47c48ef62b7a6589f4fa274407a`
+-	Created: Fri, 10 Jun 2016 16:46:32 GMT
+-	Parent Layer: `dc5e8cc0b29aa8d45d7eea4287127f1c8720a30d31a92c918fff0605cefdf793`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2a104c59ab8e2c17532b15a40216ecc5aed22608f900e310b818d55c114a0a59`
+#### `3e909de072137d349fe3d1da1376116b54f155c12902ab0a912348f57da9e373`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:45:30 GMT
--	Parent Layer: `cdc7e144f8258c2185d47ef12f5734ad58221911cd9d751cf6f99965032b3f9b`
--	v2 Blob: `sha256:020fb47f74bbacad292355664d83f687f5f16239215cdbe1e23af7b7c397b7ee`
--	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Fri, 02 Oct 2015 22:39:46 GMT
+-	Created: Fri, 10 Jun 2016 16:46:33 GMT
+-	Parent Layer: `20ceacdcb5f6208df1cc290b292dacbbdfbe462ac9c65eb1c71bc49871154c32`
+-	v2 Blob: `sha256:7a34e87fcab895cb01144906da1e2efa44201cd3bb538a3777c77507a7ca2afe`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:07 GMT
 
-#### `79d55975f210cefa29efd24a8201b39b7f001737276951e49b46f96cfcdb986d`
+#### `2bffe14f30e3d3123688e9968fa0adbeb0707e2fd1a863fcbd023d4c79f710e8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:45:31 GMT
--	Parent Layer: `2a104c59ab8e2c17532b15a40216ecc5aed22608f900e310b818d55c114a0a59`
+-	Created: Fri, 10 Jun 2016 16:46:34 GMT
+-	Parent Layer: `3e909de072137d349fe3d1da1376116b54f155c12902ab0a912348f57da9e373`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2498bd461a1e9193306bc5b978c242fc73ac7bbd07279afb3437a5fc81f38fb2`
+#### `f18b5bb2a9e0f266f220969f4da0a3697804e4c03593988631c5c2fcd206c58f`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:45:31 GMT
--	Parent Layer: `79d55975f210cefa29efd24a8201b39b7f001737276951e49b46f96cfcdb986d`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:46:34 GMT
+-	Parent Layer: `2bffe14f30e3d3123688e9968fa0adbeb0707e2fd1a863fcbd023d4c79f710e8`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -3575,321 +3575,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.1.3-1`
 
 ```console
-$ docker pull library/logstash@sha256:2e34dc4126a9554a347f444621635f629fa8de5c3057826a0a4d69c46cf451a1
+$ docker pull library/logstash@sha256:e5862a412c4fb310561ef8732b9411f86737ca9f7aec37f516b5b200ab04fb47
 ```
 
--	Total v2 Content-Length: 201.2 MB (201170694 bytes)
+-	Total v2 Content-Length: 201.3 MB (201267390 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a0fd652a49ab9a6461e540f2fa4451828b7ed6e9810db11cd7beff58836f3b7d`
+#### `a245f33c3f5140945fc0d14f99a70cb90484994c638c994a0869690e697b4a56`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:47:19 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:0f0ec53916bfe5c0c1963b3946309cc127acb8a41415ce21735f75dffd1602cd`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:20:52 GMT
+-	Created: Fri, 10 Jun 2016 16:46:37 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:56991c2f4f5b1d749ec33aee4b714fe1d97f84bb8fd023f2a103f7a5f46d59c6`
+-	v2 Content-Length: 221.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:51 GMT
 
-#### `890a9a5dcac4c6183570b452569448784d395ab5294ad5572444d16903f6b621`
+#### `8aa722638cd980d8d5f8b8fecedf57f608d7618843edce8fad2a3bd4841c52aa`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:48:03 GMT
--	Parent Layer: `a0fd652a49ab9a6461e540f2fa4451828b7ed6e9810db11cd7beff58836f3b7d`
--	v2 Blob: `sha256:e509847d4cde0988620f0e532f52a3766fcc2aaf810b2cb4e7e0e38db7094085`
--	v2 Content-Length: 75.3 MB (75336680 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:20:46 GMT
+-	Created: Fri, 10 Jun 2016 16:48:14 GMT
+-	Parent Layer: `a245f33c3f5140945fc0d14f99a70cb90484994c638c994a0869690e697b4a56`
+-	v2 Blob: `sha256:03e1065625a4d1bc60e55596d7da6febdd583a5fe317033b8508b96f8ae0a8aa`
+-	v2 Content-Length: 75.4 MB (75358750 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:12 GMT
 
-#### `2539295d4cfc959edd0348e37184c2a857a4cb8e84ae4f3e4b060b59bad6279a`
+#### `85e301afc046a55a68cf6a094d6165e4e8c52897d062f8616f99419285760f29`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:48:07 GMT
--	Parent Layer: `890a9a5dcac4c6183570b452569448784d395ab5294ad5572444d16903f6b621`
+-	Created: Fri, 10 Jun 2016 16:48:15 GMT
+-	Parent Layer: `8aa722638cd980d8d5f8b8fecedf57f608d7618843edce8fad2a3bd4841c52aa`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `888e9452ada2d676965069226bfbaf18c0a0614e898574bad19c48d91cbb2847`
+#### `81125474f5a15f7e8b8446530f8dfdcbfb5b90ecb33a5400bcef9b6f6808a958`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:48:08 GMT
--	Parent Layer: `2539295d4cfc959edd0348e37184c2a857a4cb8e84ae4f3e4b060b59bad6279a`
--	v2 Blob: `sha256:03b8b7dc7d814a38e3c05a08bdb812a928dd71f8ed0cf689714c42364e9e94fa`
--	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Tue, 24 Nov 2015 18:53:06 GMT
+-	Created: Fri, 10 Jun 2016 16:48:16 GMT
+-	Parent Layer: `85e301afc046a55a68cf6a094d6165e4e8c52897d062f8616f99419285760f29`
+-	v2 Blob: `sha256:dffa56081f4e84c34fe33cef8680444f9bab48b3958c93054a129092bf75ccad`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:51 GMT
 
-#### `bb12679e5001765460c6f1d1a2cbf2d19f0ade4479883a8f294c2643887f7ea3`
+#### `40ef765f7e93eba1678b61a1cf1418148509e8af65ee4fb57cc1fc272c2f3897`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:48:09 GMT
--	Parent Layer: `888e9452ada2d676965069226bfbaf18c0a0614e898574bad19c48d91cbb2847`
+-	Created: Fri, 10 Jun 2016 16:48:16 GMT
+-	Parent Layer: `81125474f5a15f7e8b8446530f8dfdcbfb5b90ecb33a5400bcef9b6f6808a958`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `018843dc03b83194d463c9bf52028084ebeb1d666c2ffd56521d8fc2074de62d`
+#### `ed366f568e5163905cdfc259965d7b1008fa103ef6a673533e8be96fbe00e545`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:48:10 GMT
--	Parent Layer: `bb12679e5001765460c6f1d1a2cbf2d19f0ade4479883a8f294c2643887f7ea3`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:48:17 GMT
+-	Parent Layer: `40ef765f7e93eba1678b61a1cf1418148509e8af65ee4fb57cc1fc272c2f3897`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -3897,321 +3897,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.1.3`
 
 ```console
-$ docker pull library/logstash@sha256:470dacbe5e518bb2c05f308c9ec36ed7c8d3fb679ce6556cc2c83ef2bc543018
+$ docker pull library/logstash@sha256:3b9bf26a3c1437d4bb393e7cdcdc7fa8961debbae97717435b6b098906d69b63
 ```
 
--	Total v2 Content-Length: 201.2 MB (201170694 bytes)
+-	Total v2 Content-Length: 201.3 MB (201267390 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a0fd652a49ab9a6461e540f2fa4451828b7ed6e9810db11cd7beff58836f3b7d`
+#### `a245f33c3f5140945fc0d14f99a70cb90484994c638c994a0869690e697b4a56`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:47:19 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:0f0ec53916bfe5c0c1963b3946309cc127acb8a41415ce21735f75dffd1602cd`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:20:52 GMT
+-	Created: Fri, 10 Jun 2016 16:46:37 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:56991c2f4f5b1d749ec33aee4b714fe1d97f84bb8fd023f2a103f7a5f46d59c6`
+-	v2 Content-Length: 221.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:51 GMT
 
-#### `890a9a5dcac4c6183570b452569448784d395ab5294ad5572444d16903f6b621`
+#### `8aa722638cd980d8d5f8b8fecedf57f608d7618843edce8fad2a3bd4841c52aa`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:48:03 GMT
--	Parent Layer: `a0fd652a49ab9a6461e540f2fa4451828b7ed6e9810db11cd7beff58836f3b7d`
--	v2 Blob: `sha256:e509847d4cde0988620f0e532f52a3766fcc2aaf810b2cb4e7e0e38db7094085`
--	v2 Content-Length: 75.3 MB (75336680 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:20:46 GMT
+-	Created: Fri, 10 Jun 2016 16:48:14 GMT
+-	Parent Layer: `a245f33c3f5140945fc0d14f99a70cb90484994c638c994a0869690e697b4a56`
+-	v2 Blob: `sha256:03e1065625a4d1bc60e55596d7da6febdd583a5fe317033b8508b96f8ae0a8aa`
+-	v2 Content-Length: 75.4 MB (75358750 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:12 GMT
 
-#### `2539295d4cfc959edd0348e37184c2a857a4cb8e84ae4f3e4b060b59bad6279a`
+#### `85e301afc046a55a68cf6a094d6165e4e8c52897d062f8616f99419285760f29`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:48:07 GMT
--	Parent Layer: `890a9a5dcac4c6183570b452569448784d395ab5294ad5572444d16903f6b621`
+-	Created: Fri, 10 Jun 2016 16:48:15 GMT
+-	Parent Layer: `8aa722638cd980d8d5f8b8fecedf57f608d7618843edce8fad2a3bd4841c52aa`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `888e9452ada2d676965069226bfbaf18c0a0614e898574bad19c48d91cbb2847`
+#### `81125474f5a15f7e8b8446530f8dfdcbfb5b90ecb33a5400bcef9b6f6808a958`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:48:08 GMT
--	Parent Layer: `2539295d4cfc959edd0348e37184c2a857a4cb8e84ae4f3e4b060b59bad6279a`
--	v2 Blob: `sha256:03b8b7dc7d814a38e3c05a08bdb812a928dd71f8ed0cf689714c42364e9e94fa`
--	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Tue, 24 Nov 2015 18:53:06 GMT
+-	Created: Fri, 10 Jun 2016 16:48:16 GMT
+-	Parent Layer: `85e301afc046a55a68cf6a094d6165e4e8c52897d062f8616f99419285760f29`
+-	v2 Blob: `sha256:dffa56081f4e84c34fe33cef8680444f9bab48b3958c93054a129092bf75ccad`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:51 GMT
 
-#### `bb12679e5001765460c6f1d1a2cbf2d19f0ade4479883a8f294c2643887f7ea3`
+#### `40ef765f7e93eba1678b61a1cf1418148509e8af65ee4fb57cc1fc272c2f3897`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:48:09 GMT
--	Parent Layer: `888e9452ada2d676965069226bfbaf18c0a0614e898574bad19c48d91cbb2847`
+-	Created: Fri, 10 Jun 2016 16:48:16 GMT
+-	Parent Layer: `81125474f5a15f7e8b8446530f8dfdcbfb5b90ecb33a5400bcef9b6f6808a958`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `018843dc03b83194d463c9bf52028084ebeb1d666c2ffd56521d8fc2074de62d`
+#### `ed366f568e5163905cdfc259965d7b1008fa103ef6a673533e8be96fbe00e545`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:48:10 GMT
--	Parent Layer: `bb12679e5001765460c6f1d1a2cbf2d19f0ade4479883a8f294c2643887f7ea3`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:48:17 GMT
+-	Parent Layer: `40ef765f7e93eba1678b61a1cf1418148509e8af65ee4fb57cc1fc272c2f3897`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -4219,321 +4219,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.1`
 
 ```console
-$ docker pull library/logstash@sha256:5e6d6324ed3dc55683fc85f1a69c87439072e7372e3cc87adaa5d8c4389fac58
+$ docker pull library/logstash@sha256:a6a56ae841c308484fc2f8a98f86ff43942bdd7f7d0e0924c118f2b14cf52d4a
 ```
 
--	Total v2 Content-Length: 201.2 MB (201170694 bytes)
+-	Total v2 Content-Length: 201.3 MB (201267390 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a0fd652a49ab9a6461e540f2fa4451828b7ed6e9810db11cd7beff58836f3b7d`
+#### `a245f33c3f5140945fc0d14f99a70cb90484994c638c994a0869690e697b4a56`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:47:19 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:0f0ec53916bfe5c0c1963b3946309cc127acb8a41415ce21735f75dffd1602cd`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:20:52 GMT
+-	Created: Fri, 10 Jun 2016 16:46:37 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:56991c2f4f5b1d749ec33aee4b714fe1d97f84bb8fd023f2a103f7a5f46d59c6`
+-	v2 Content-Length: 221.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:51 GMT
 
-#### `890a9a5dcac4c6183570b452569448784d395ab5294ad5572444d16903f6b621`
+#### `8aa722638cd980d8d5f8b8fecedf57f608d7618843edce8fad2a3bd4841c52aa`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:48:03 GMT
--	Parent Layer: `a0fd652a49ab9a6461e540f2fa4451828b7ed6e9810db11cd7beff58836f3b7d`
--	v2 Blob: `sha256:e509847d4cde0988620f0e532f52a3766fcc2aaf810b2cb4e7e0e38db7094085`
--	v2 Content-Length: 75.3 MB (75336680 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:20:46 GMT
+-	Created: Fri, 10 Jun 2016 16:48:14 GMT
+-	Parent Layer: `a245f33c3f5140945fc0d14f99a70cb90484994c638c994a0869690e697b4a56`
+-	v2 Blob: `sha256:03e1065625a4d1bc60e55596d7da6febdd583a5fe317033b8508b96f8ae0a8aa`
+-	v2 Content-Length: 75.4 MB (75358750 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:12 GMT
 
-#### `2539295d4cfc959edd0348e37184c2a857a4cb8e84ae4f3e4b060b59bad6279a`
+#### `85e301afc046a55a68cf6a094d6165e4e8c52897d062f8616f99419285760f29`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:48:07 GMT
--	Parent Layer: `890a9a5dcac4c6183570b452569448784d395ab5294ad5572444d16903f6b621`
+-	Created: Fri, 10 Jun 2016 16:48:15 GMT
+-	Parent Layer: `8aa722638cd980d8d5f8b8fecedf57f608d7618843edce8fad2a3bd4841c52aa`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `888e9452ada2d676965069226bfbaf18c0a0614e898574bad19c48d91cbb2847`
+#### `81125474f5a15f7e8b8446530f8dfdcbfb5b90ecb33a5400bcef9b6f6808a958`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:48:08 GMT
--	Parent Layer: `2539295d4cfc959edd0348e37184c2a857a4cb8e84ae4f3e4b060b59bad6279a`
--	v2 Blob: `sha256:03b8b7dc7d814a38e3c05a08bdb812a928dd71f8ed0cf689714c42364e9e94fa`
--	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Tue, 24 Nov 2015 18:53:06 GMT
+-	Created: Fri, 10 Jun 2016 16:48:16 GMT
+-	Parent Layer: `85e301afc046a55a68cf6a094d6165e4e8c52897d062f8616f99419285760f29`
+-	v2 Blob: `sha256:dffa56081f4e84c34fe33cef8680444f9bab48b3958c93054a129092bf75ccad`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:55:51 GMT
 
-#### `bb12679e5001765460c6f1d1a2cbf2d19f0ade4479883a8f294c2643887f7ea3`
+#### `40ef765f7e93eba1678b61a1cf1418148509e8af65ee4fb57cc1fc272c2f3897`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:48:09 GMT
--	Parent Layer: `888e9452ada2d676965069226bfbaf18c0a0614e898574bad19c48d91cbb2847`
+-	Created: Fri, 10 Jun 2016 16:48:16 GMT
+-	Parent Layer: `81125474f5a15f7e8b8446530f8dfdcbfb5b90ecb33a5400bcef9b6f6808a958`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `018843dc03b83194d463c9bf52028084ebeb1d666c2ffd56521d8fc2074de62d`
+#### `ed366f568e5163905cdfc259965d7b1008fa103ef6a673533e8be96fbe00e545`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:48:10 GMT
--	Parent Layer: `bb12679e5001765460c6f1d1a2cbf2d19f0ade4479883a8f294c2643887f7ea3`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:48:17 GMT
+-	Parent Layer: `40ef765f7e93eba1678b61a1cf1418148509e8af65ee4fb57cc1fc272c2f3897`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -4541,321 +4541,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.2.4-1`
 
 ```console
-$ docker pull library/logstash@sha256:164833f6151624d0b70307cbc77963a2cccef1da34ebb8afbdfd431267559255
+$ docker pull library/logstash@sha256:4857ddd76d4fe5855ac8bd1a619963043dec276a73d334357ed2220d3ccaca43
 ```
 
--	Total v2 Content-Length: 202.0 MB (201971387 bytes)
+-	Total v2 Content-Length: 202.1 MB (202066591 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ac7a4e2f0cb97cc15a8ad6aee146fc4b3de2c7f17c992ba17cd53e337f2b339c`
+#### `c61e7d08161f03452789c618473d6375d4857b065a15a23977d720aa212b5e1b`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:49:57 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:9b0248836f71690727cbb755de8fc9dae5888f68b552de64da5f50af8a209b20`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:22:43 GMT
+-	Created: Fri, 10 Jun 2016 16:48:20 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:f4050a4ce535c53a155acb42392bb21301bd11c438b6754a00931ee47c30c015`
+-	v2 Content-Length: 221.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:36 GMT
 
-#### `5ea01a35998e60f259b29a312c2e919fa752b7d4de5db2a3c1b589d71a3b9569`
+#### `019c819049ed64804f28de8d871ab7ef5f55d2c0f61e84e469df3ddd628f85f1`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:50:41 GMT
--	Parent Layer: `ac7a4e2f0cb97cc15a8ad6aee146fc4b3de2c7f17c992ba17cd53e337f2b339c`
--	v2 Blob: `sha256:c225001798775825acd0cf5e2b26fd928038366d423e5e1f90b834cc1908ec94`
--	v2 Content-Length: 76.1 MB (76137371 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:22:35 GMT
+-	Created: Fri, 10 Jun 2016 16:49:56 GMT
+-	Parent Layer: `c61e7d08161f03452789c618473d6375d4857b065a15a23977d720aa212b5e1b`
+-	v2 Blob: `sha256:f6404940d5b12949934e86b24244ada90ec23c099b5cfc401726fa3d1b1b17b8`
+-	v2 Content-Length: 76.2 MB (76157951 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:54 GMT
 
-#### `0febd99e299e15a46db45de002be898beadfff7e3360d330669faf5b365e33fa`
+#### `e193e38fd3398ade3dffb92692208a05c83b3bfc2adb2cc772b7ce097a7c2cf6`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:50:45 GMT
--	Parent Layer: `5ea01a35998e60f259b29a312c2e919fa752b7d4de5db2a3c1b589d71a3b9569`
+-	Created: Fri, 10 Jun 2016 16:49:58 GMT
+-	Parent Layer: `019c819049ed64804f28de8d871ab7ef5f55d2c0f61e84e469df3ddd628f85f1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `118b7fc1ad0b0502270de6429faaae760c3e65ae716e5289e023f70e8cf1ac8f`
+#### `cd5c5a131c2615376b3ba48e4028548940a8c5d8578df0bf1debfd81e6f44c6d`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:50:46 GMT
--	Parent Layer: `0febd99e299e15a46db45de002be898beadfff7e3360d330669faf5b365e33fa`
--	v2 Blob: `sha256:a27e11167e686b20f54fe7d2854cde954b18b68fc84b8453a4fd01ace1510a2b`
--	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 23:42:32 GMT
+-	Created: Fri, 10 Jun 2016 16:49:58 GMT
+-	Parent Layer: `e193e38fd3398ade3dffb92692208a05c83b3bfc2adb2cc772b7ce097a7c2cf6`
+-	v2 Blob: `sha256:81467a5be455085bd3cdfff7cea826249ff6d3a19902fec695b579accd9f26b3`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:36 GMT
 
-#### `3f64ed7cdde74f4c889acead13082b6fe1885ed74e85a22561ef51d407183a11`
+#### `4f6bf5786869405eecf2d6d74bb76b877e4a48cf66452757163e3f673a581bda`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:50:47 GMT
--	Parent Layer: `118b7fc1ad0b0502270de6429faaae760c3e65ae716e5289e023f70e8cf1ac8f`
+-	Created: Fri, 10 Jun 2016 16:49:58 GMT
+-	Parent Layer: `cd5c5a131c2615376b3ba48e4028548940a8c5d8578df0bf1debfd81e6f44c6d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cbf1a4d96f919aafaa8d3c34881457524fd88b3db40585c2f0a7cb8492cb443a`
+#### `e3654678f4edaf944c195e30db9f11945f32009d62ef252365eee77bbe565dd6`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:50:48 GMT
--	Parent Layer: `3f64ed7cdde74f4c889acead13082b6fe1885ed74e85a22561ef51d407183a11`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:49:59 GMT
+-	Parent Layer: `4f6bf5786869405eecf2d6d74bb76b877e4a48cf66452757163e3f673a581bda`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -4863,321 +4863,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.2.4`
 
 ```console
-$ docker pull library/logstash@sha256:8d63d68a34b8227afbba48d74f43076dc67c51be83dc8e9b9622a39b88f985b8
+$ docker pull library/logstash@sha256:3f85871974c17b1e46df417929ac0fdc1787b4c460201e40c7c3d330bd9ca8cc
 ```
 
--	Total v2 Content-Length: 202.0 MB (201971387 bytes)
+-	Total v2 Content-Length: 202.1 MB (202066591 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ac7a4e2f0cb97cc15a8ad6aee146fc4b3de2c7f17c992ba17cd53e337f2b339c`
+#### `c61e7d08161f03452789c618473d6375d4857b065a15a23977d720aa212b5e1b`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:49:57 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:9b0248836f71690727cbb755de8fc9dae5888f68b552de64da5f50af8a209b20`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:22:43 GMT
+-	Created: Fri, 10 Jun 2016 16:48:20 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:f4050a4ce535c53a155acb42392bb21301bd11c438b6754a00931ee47c30c015`
+-	v2 Content-Length: 221.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:36 GMT
 
-#### `5ea01a35998e60f259b29a312c2e919fa752b7d4de5db2a3c1b589d71a3b9569`
+#### `019c819049ed64804f28de8d871ab7ef5f55d2c0f61e84e469df3ddd628f85f1`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:50:41 GMT
--	Parent Layer: `ac7a4e2f0cb97cc15a8ad6aee146fc4b3de2c7f17c992ba17cd53e337f2b339c`
--	v2 Blob: `sha256:c225001798775825acd0cf5e2b26fd928038366d423e5e1f90b834cc1908ec94`
--	v2 Content-Length: 76.1 MB (76137371 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:22:35 GMT
+-	Created: Fri, 10 Jun 2016 16:49:56 GMT
+-	Parent Layer: `c61e7d08161f03452789c618473d6375d4857b065a15a23977d720aa212b5e1b`
+-	v2 Blob: `sha256:f6404940d5b12949934e86b24244ada90ec23c099b5cfc401726fa3d1b1b17b8`
+-	v2 Content-Length: 76.2 MB (76157951 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:54 GMT
 
-#### `0febd99e299e15a46db45de002be898beadfff7e3360d330669faf5b365e33fa`
+#### `e193e38fd3398ade3dffb92692208a05c83b3bfc2adb2cc772b7ce097a7c2cf6`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:50:45 GMT
--	Parent Layer: `5ea01a35998e60f259b29a312c2e919fa752b7d4de5db2a3c1b589d71a3b9569`
+-	Created: Fri, 10 Jun 2016 16:49:58 GMT
+-	Parent Layer: `019c819049ed64804f28de8d871ab7ef5f55d2c0f61e84e469df3ddd628f85f1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `118b7fc1ad0b0502270de6429faaae760c3e65ae716e5289e023f70e8cf1ac8f`
+#### `cd5c5a131c2615376b3ba48e4028548940a8c5d8578df0bf1debfd81e6f44c6d`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:50:46 GMT
--	Parent Layer: `0febd99e299e15a46db45de002be898beadfff7e3360d330669faf5b365e33fa`
--	v2 Blob: `sha256:a27e11167e686b20f54fe7d2854cde954b18b68fc84b8453a4fd01ace1510a2b`
--	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 23:42:32 GMT
+-	Created: Fri, 10 Jun 2016 16:49:58 GMT
+-	Parent Layer: `e193e38fd3398ade3dffb92692208a05c83b3bfc2adb2cc772b7ce097a7c2cf6`
+-	v2 Blob: `sha256:81467a5be455085bd3cdfff7cea826249ff6d3a19902fec695b579accd9f26b3`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:36 GMT
 
-#### `3f64ed7cdde74f4c889acead13082b6fe1885ed74e85a22561ef51d407183a11`
+#### `4f6bf5786869405eecf2d6d74bb76b877e4a48cf66452757163e3f673a581bda`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:50:47 GMT
--	Parent Layer: `118b7fc1ad0b0502270de6429faaae760c3e65ae716e5289e023f70e8cf1ac8f`
+-	Created: Fri, 10 Jun 2016 16:49:58 GMT
+-	Parent Layer: `cd5c5a131c2615376b3ba48e4028548940a8c5d8578df0bf1debfd81e6f44c6d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cbf1a4d96f919aafaa8d3c34881457524fd88b3db40585c2f0a7cb8492cb443a`
+#### `e3654678f4edaf944c195e30db9f11945f32009d62ef252365eee77bbe565dd6`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:50:48 GMT
--	Parent Layer: `3f64ed7cdde74f4c889acead13082b6fe1885ed74e85a22561ef51d407183a11`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:49:59 GMT
+-	Parent Layer: `4f6bf5786869405eecf2d6d74bb76b877e4a48cf66452757163e3f673a581bda`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -5185,321 +5185,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.2`
 
 ```console
-$ docker pull library/logstash@sha256:0ff9f2140d82f3a747f4d44a517c3d3606b550e851002a8311b571ee261e9b2f
+$ docker pull library/logstash@sha256:7196d148174b340646f9e81bdacfbaf430d1fe0052b8965a33431aa14d2b6502
 ```
 
--	Total v2 Content-Length: 202.0 MB (201971387 bytes)
+-	Total v2 Content-Length: 202.1 MB (202066591 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ac7a4e2f0cb97cc15a8ad6aee146fc4b3de2c7f17c992ba17cd53e337f2b339c`
+#### `c61e7d08161f03452789c618473d6375d4857b065a15a23977d720aa212b5e1b`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:49:57 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:9b0248836f71690727cbb755de8fc9dae5888f68b552de64da5f50af8a209b20`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:22:43 GMT
+-	Created: Fri, 10 Jun 2016 16:48:20 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:f4050a4ce535c53a155acb42392bb21301bd11c438b6754a00931ee47c30c015`
+-	v2 Content-Length: 221.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:36 GMT
 
-#### `5ea01a35998e60f259b29a312c2e919fa752b7d4de5db2a3c1b589d71a3b9569`
+#### `019c819049ed64804f28de8d871ab7ef5f55d2c0f61e84e469df3ddd628f85f1`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:50:41 GMT
--	Parent Layer: `ac7a4e2f0cb97cc15a8ad6aee146fc4b3de2c7f17c992ba17cd53e337f2b339c`
--	v2 Blob: `sha256:c225001798775825acd0cf5e2b26fd928038366d423e5e1f90b834cc1908ec94`
--	v2 Content-Length: 76.1 MB (76137371 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:22:35 GMT
+-	Created: Fri, 10 Jun 2016 16:49:56 GMT
+-	Parent Layer: `c61e7d08161f03452789c618473d6375d4857b065a15a23977d720aa212b5e1b`
+-	v2 Blob: `sha256:f6404940d5b12949934e86b24244ada90ec23c099b5cfc401726fa3d1b1b17b8`
+-	v2 Content-Length: 76.2 MB (76157951 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:54 GMT
 
-#### `0febd99e299e15a46db45de002be898beadfff7e3360d330669faf5b365e33fa`
+#### `e193e38fd3398ade3dffb92692208a05c83b3bfc2adb2cc772b7ce097a7c2cf6`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:50:45 GMT
--	Parent Layer: `5ea01a35998e60f259b29a312c2e919fa752b7d4de5db2a3c1b589d71a3b9569`
+-	Created: Fri, 10 Jun 2016 16:49:58 GMT
+-	Parent Layer: `019c819049ed64804f28de8d871ab7ef5f55d2c0f61e84e469df3ddd628f85f1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `118b7fc1ad0b0502270de6429faaae760c3e65ae716e5289e023f70e8cf1ac8f`
+#### `cd5c5a131c2615376b3ba48e4028548940a8c5d8578df0bf1debfd81e6f44c6d`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:50:46 GMT
--	Parent Layer: `0febd99e299e15a46db45de002be898beadfff7e3360d330669faf5b365e33fa`
--	v2 Blob: `sha256:a27e11167e686b20f54fe7d2854cde954b18b68fc84b8453a4fd01ace1510a2b`
--	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 23:42:32 GMT
+-	Created: Fri, 10 Jun 2016 16:49:58 GMT
+-	Parent Layer: `e193e38fd3398ade3dffb92692208a05c83b3bfc2adb2cc772b7ce097a7c2cf6`
+-	v2 Blob: `sha256:81467a5be455085bd3cdfff7cea826249ff6d3a19902fec695b579accd9f26b3`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:56:36 GMT
 
-#### `3f64ed7cdde74f4c889acead13082b6fe1885ed74e85a22561ef51d407183a11`
+#### `4f6bf5786869405eecf2d6d74bb76b877e4a48cf66452757163e3f673a581bda`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:50:47 GMT
--	Parent Layer: `118b7fc1ad0b0502270de6429faaae760c3e65ae716e5289e023f70e8cf1ac8f`
+-	Created: Fri, 10 Jun 2016 16:49:58 GMT
+-	Parent Layer: `cd5c5a131c2615376b3ba48e4028548940a8c5d8578df0bf1debfd81e6f44c6d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cbf1a4d96f919aafaa8d3c34881457524fd88b3db40585c2f0a7cb8492cb443a`
+#### `e3654678f4edaf944c195e30db9f11945f32009d62ef252365eee77bbe565dd6`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:50:48 GMT
--	Parent Layer: `3f64ed7cdde74f4c889acead13082b6fe1885ed74e85a22561ef51d407183a11`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:49:59 GMT
+-	Parent Layer: `4f6bf5786869405eecf2d6d74bb76b877e4a48cf66452757163e3f673a581bda`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -5507,321 +5507,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.3.2-1`
 
 ```console
-$ docker pull library/logstash@sha256:176db1578a8d380bb66d8948085be9acb458a1d11b4b727beb4d1dad328a2394
+$ docker pull library/logstash@sha256:28b924e3e0bb650e62ff379f923721d059ea9ee1616b13d8de65ab8412c1d39f
 ```
 
--	Total v2 Content-Length: 201.6 MB (201645671 bytes)
+-	Total v2 Content-Length: 201.7 MB (201742709 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9cddd4ab9e3ddf65af23cd855f5033a872926fcc445cb31a8ba8075ec47e369c`
+#### `c57aa57aafcf5374ff2c549ba680e7c36deda2d60c020ac3d088183edebd060d`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:52:35 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:0b6f2bdd89cd9f50abb688c64b27cef3e55d00dda27d9f8ffa69111ef1f6e502`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:24:35 GMT
+-	Created: Fri, 10 Jun 2016 16:50:02 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:c48bc45ec8ef163c8442ee9a9ebec868a971d0575d2b74cdddf7965642beb91a`
+-	v2 Content-Length: 222.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:16 GMT
 
-#### `17be7f056e19a192d71aaac995b6d4b5f94916f864b3ef86f7653dbefd75eef4`
+#### `514ec52cc5e5713f6c196240471f514f0fcbe2d3df5701b7fb1ab1f6a9f1fbf7`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:53:20 GMT
--	Parent Layer: `9cddd4ab9e3ddf65af23cd855f5033a872926fcc445cb31a8ba8075ec47e369c`
--	v2 Blob: `sha256:c9ffa029d830a0b19d49be4d3ae4ed35134588f6d29afab858d3eb1e227dd76e`
--	v2 Content-Length: 75.8 MB (75811657 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:24:29 GMT
+-	Created: Fri, 10 Jun 2016 16:51:37 GMT
+-	Parent Layer: `c57aa57aafcf5374ff2c549ba680e7c36deda2d60c020ac3d088183edebd060d`
+-	v2 Blob: `sha256:94032fc3961bc48ad7bcec31c9c1f6d1ee5a26f6830df776f16ab1855657ff9b`
+-	v2 Content-Length: 75.8 MB (75834068 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:33 GMT
 
-#### `da477e98716bdc0c73fcc1b04a8b9eb4e79176f553ae3db6cb28b1cd6e7ac722`
+#### `b9d6dffa16dab5816f204c99701ebfb06860ea1268df3dd10739a2ad8ba9de85`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:53:24 GMT
--	Parent Layer: `17be7f056e19a192d71aaac995b6d4b5f94916f864b3ef86f7653dbefd75eef4`
+-	Created: Fri, 10 Jun 2016 16:51:38 GMT
+-	Parent Layer: `514ec52cc5e5713f6c196240471f514f0fcbe2d3df5701b7fb1ab1f6a9f1fbf7`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `70eadf5f03a89244993ba53c51a10e4f4a2568354ce3c57ba3c618c4716ca73a`
+#### `94bad5e456f74f14c5c52adf85e8e6f8489b5250830c790439c359b0871f3da8`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:53:25 GMT
--	Parent Layer: `da477e98716bdc0c73fcc1b04a8b9eb4e79176f553ae3db6cb28b1cd6e7ac722`
--	v2 Blob: `sha256:b3e1f2f8f97aa0f73ba07c7f09dfd9b07979c8f63603c39574ff6deb462e2c34`
--	v2 Content-Length: 250.0 B
--	v2 Last-Modified: Wed, 30 Mar 2016 22:44:38 GMT
+-	Created: Fri, 10 Jun 2016 16:51:39 GMT
+-	Parent Layer: `b9d6dffa16dab5816f204c99701ebfb06860ea1268df3dd10739a2ad8ba9de85`
+-	v2 Blob: `sha256:2d353b3bb076b8311427324111969deb7a932b603e8c91e64de9ff5c05fcecbb`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:16 GMT
 
-#### `8a151fb8e7701a76985ed6ddca878c4b3a7236c67fab7f9c4c289326445ccf7c`
+#### `d40c41f21ee90e91dc3067a6d731751d3f143538a2f9be5189733a9a2c4e6ff6`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:53:26 GMT
--	Parent Layer: `70eadf5f03a89244993ba53c51a10e4f4a2568354ce3c57ba3c618c4716ca73a`
+-	Created: Fri, 10 Jun 2016 16:51:39 GMT
+-	Parent Layer: `94bad5e456f74f14c5c52adf85e8e6f8489b5250830c790439c359b0871f3da8`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `626de8fe2e9f841a39efc81f4c3cb4a8658fe2cfceff6454ac9d5c1963a5fdb0`
+#### `8cc2656cba58b496073f997f3d007331ebacb2d0c99290cbe270e769d5684d34`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:53:27 GMT
--	Parent Layer: `8a151fb8e7701a76985ed6ddca878c4b3a7236c67fab7f9c4c289326445ccf7c`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:51:40 GMT
+-	Parent Layer: `d40c41f21ee90e91dc3067a6d731751d3f143538a2f9be5189733a9a2c4e6ff6`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -5829,321 +5829,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.3.2`
 
 ```console
-$ docker pull library/logstash@sha256:2b698e6ab61e0e3d2e244332473e7a1302853b24c66421a834281cddae0a3b6e
+$ docker pull library/logstash@sha256:17c39788709221594560a176a24775928c525b6cdd610857025fb702f1f8400e
 ```
 
--	Total v2 Content-Length: 201.6 MB (201645671 bytes)
+-	Total v2 Content-Length: 201.7 MB (201742709 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9cddd4ab9e3ddf65af23cd855f5033a872926fcc445cb31a8ba8075ec47e369c`
+#### `c57aa57aafcf5374ff2c549ba680e7c36deda2d60c020ac3d088183edebd060d`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:52:35 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:0b6f2bdd89cd9f50abb688c64b27cef3e55d00dda27d9f8ffa69111ef1f6e502`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:24:35 GMT
+-	Created: Fri, 10 Jun 2016 16:50:02 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:c48bc45ec8ef163c8442ee9a9ebec868a971d0575d2b74cdddf7965642beb91a`
+-	v2 Content-Length: 222.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:16 GMT
 
-#### `17be7f056e19a192d71aaac995b6d4b5f94916f864b3ef86f7653dbefd75eef4`
+#### `514ec52cc5e5713f6c196240471f514f0fcbe2d3df5701b7fb1ab1f6a9f1fbf7`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:53:20 GMT
--	Parent Layer: `9cddd4ab9e3ddf65af23cd855f5033a872926fcc445cb31a8ba8075ec47e369c`
--	v2 Blob: `sha256:c9ffa029d830a0b19d49be4d3ae4ed35134588f6d29afab858d3eb1e227dd76e`
--	v2 Content-Length: 75.8 MB (75811657 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:24:29 GMT
+-	Created: Fri, 10 Jun 2016 16:51:37 GMT
+-	Parent Layer: `c57aa57aafcf5374ff2c549ba680e7c36deda2d60c020ac3d088183edebd060d`
+-	v2 Blob: `sha256:94032fc3961bc48ad7bcec31c9c1f6d1ee5a26f6830df776f16ab1855657ff9b`
+-	v2 Content-Length: 75.8 MB (75834068 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:33 GMT
 
-#### `da477e98716bdc0c73fcc1b04a8b9eb4e79176f553ae3db6cb28b1cd6e7ac722`
+#### `b9d6dffa16dab5816f204c99701ebfb06860ea1268df3dd10739a2ad8ba9de85`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:53:24 GMT
--	Parent Layer: `17be7f056e19a192d71aaac995b6d4b5f94916f864b3ef86f7653dbefd75eef4`
+-	Created: Fri, 10 Jun 2016 16:51:38 GMT
+-	Parent Layer: `514ec52cc5e5713f6c196240471f514f0fcbe2d3df5701b7fb1ab1f6a9f1fbf7`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `70eadf5f03a89244993ba53c51a10e4f4a2568354ce3c57ba3c618c4716ca73a`
+#### `94bad5e456f74f14c5c52adf85e8e6f8489b5250830c790439c359b0871f3da8`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:53:25 GMT
--	Parent Layer: `da477e98716bdc0c73fcc1b04a8b9eb4e79176f553ae3db6cb28b1cd6e7ac722`
--	v2 Blob: `sha256:b3e1f2f8f97aa0f73ba07c7f09dfd9b07979c8f63603c39574ff6deb462e2c34`
--	v2 Content-Length: 250.0 B
--	v2 Last-Modified: Wed, 30 Mar 2016 22:44:38 GMT
+-	Created: Fri, 10 Jun 2016 16:51:39 GMT
+-	Parent Layer: `b9d6dffa16dab5816f204c99701ebfb06860ea1268df3dd10739a2ad8ba9de85`
+-	v2 Blob: `sha256:2d353b3bb076b8311427324111969deb7a932b603e8c91e64de9ff5c05fcecbb`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:16 GMT
 
-#### `8a151fb8e7701a76985ed6ddca878c4b3a7236c67fab7f9c4c289326445ccf7c`
+#### `d40c41f21ee90e91dc3067a6d731751d3f143538a2f9be5189733a9a2c4e6ff6`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:53:26 GMT
--	Parent Layer: `70eadf5f03a89244993ba53c51a10e4f4a2568354ce3c57ba3c618c4716ca73a`
+-	Created: Fri, 10 Jun 2016 16:51:39 GMT
+-	Parent Layer: `94bad5e456f74f14c5c52adf85e8e6f8489b5250830c790439c359b0871f3da8`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `626de8fe2e9f841a39efc81f4c3cb4a8658fe2cfceff6454ac9d5c1963a5fdb0`
+#### `8cc2656cba58b496073f997f3d007331ebacb2d0c99290cbe270e769d5684d34`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:53:27 GMT
--	Parent Layer: `8a151fb8e7701a76985ed6ddca878c4b3a7236c67fab7f9c4c289326445ccf7c`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:51:40 GMT
+-	Parent Layer: `d40c41f21ee90e91dc3067a6d731751d3f143538a2f9be5189733a9a2c4e6ff6`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -6151,321 +6151,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2.3`
 
 ```console
-$ docker pull library/logstash@sha256:87ddaf376579178878a40314cf818f2051228e148e0860bce67c775fe9176284
+$ docker pull library/logstash@sha256:01bd56a9a838f851216b7293030c2b80d971f97ba9316f6581ad3a1dfa94c044
 ```
 
--	Total v2 Content-Length: 201.6 MB (201645671 bytes)
+-	Total v2 Content-Length: 201.7 MB (201742709 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9cddd4ab9e3ddf65af23cd855f5033a872926fcc445cb31a8ba8075ec47e369c`
+#### `c57aa57aafcf5374ff2c549ba680e7c36deda2d60c020ac3d088183edebd060d`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:52:35 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:0b6f2bdd89cd9f50abb688c64b27cef3e55d00dda27d9f8ffa69111ef1f6e502`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:24:35 GMT
+-	Created: Fri, 10 Jun 2016 16:50:02 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:c48bc45ec8ef163c8442ee9a9ebec868a971d0575d2b74cdddf7965642beb91a`
+-	v2 Content-Length: 222.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:16 GMT
 
-#### `17be7f056e19a192d71aaac995b6d4b5f94916f864b3ef86f7653dbefd75eef4`
+#### `514ec52cc5e5713f6c196240471f514f0fcbe2d3df5701b7fb1ab1f6a9f1fbf7`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:53:20 GMT
--	Parent Layer: `9cddd4ab9e3ddf65af23cd855f5033a872926fcc445cb31a8ba8075ec47e369c`
--	v2 Blob: `sha256:c9ffa029d830a0b19d49be4d3ae4ed35134588f6d29afab858d3eb1e227dd76e`
--	v2 Content-Length: 75.8 MB (75811657 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:24:29 GMT
+-	Created: Fri, 10 Jun 2016 16:51:37 GMT
+-	Parent Layer: `c57aa57aafcf5374ff2c549ba680e7c36deda2d60c020ac3d088183edebd060d`
+-	v2 Blob: `sha256:94032fc3961bc48ad7bcec31c9c1f6d1ee5a26f6830df776f16ab1855657ff9b`
+-	v2 Content-Length: 75.8 MB (75834068 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:33 GMT
 
-#### `da477e98716bdc0c73fcc1b04a8b9eb4e79176f553ae3db6cb28b1cd6e7ac722`
+#### `b9d6dffa16dab5816f204c99701ebfb06860ea1268df3dd10739a2ad8ba9de85`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:53:24 GMT
--	Parent Layer: `17be7f056e19a192d71aaac995b6d4b5f94916f864b3ef86f7653dbefd75eef4`
+-	Created: Fri, 10 Jun 2016 16:51:38 GMT
+-	Parent Layer: `514ec52cc5e5713f6c196240471f514f0fcbe2d3df5701b7fb1ab1f6a9f1fbf7`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `70eadf5f03a89244993ba53c51a10e4f4a2568354ce3c57ba3c618c4716ca73a`
+#### `94bad5e456f74f14c5c52adf85e8e6f8489b5250830c790439c359b0871f3da8`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:53:25 GMT
--	Parent Layer: `da477e98716bdc0c73fcc1b04a8b9eb4e79176f553ae3db6cb28b1cd6e7ac722`
--	v2 Blob: `sha256:b3e1f2f8f97aa0f73ba07c7f09dfd9b07979c8f63603c39574ff6deb462e2c34`
--	v2 Content-Length: 250.0 B
--	v2 Last-Modified: Wed, 30 Mar 2016 22:44:38 GMT
+-	Created: Fri, 10 Jun 2016 16:51:39 GMT
+-	Parent Layer: `b9d6dffa16dab5816f204c99701ebfb06860ea1268df3dd10739a2ad8ba9de85`
+-	v2 Blob: `sha256:2d353b3bb076b8311427324111969deb7a932b603e8c91e64de9ff5c05fcecbb`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:16 GMT
 
-#### `8a151fb8e7701a76985ed6ddca878c4b3a7236c67fab7f9c4c289326445ccf7c`
+#### `d40c41f21ee90e91dc3067a6d731751d3f143538a2f9be5189733a9a2c4e6ff6`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:53:26 GMT
--	Parent Layer: `70eadf5f03a89244993ba53c51a10e4f4a2568354ce3c57ba3c618c4716ca73a`
+-	Created: Fri, 10 Jun 2016 16:51:39 GMT
+-	Parent Layer: `94bad5e456f74f14c5c52adf85e8e6f8489b5250830c790439c359b0871f3da8`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `626de8fe2e9f841a39efc81f4c3cb4a8658fe2cfceff6454ac9d5c1963a5fdb0`
+#### `8cc2656cba58b496073f997f3d007331ebacb2d0c99290cbe270e769d5684d34`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:53:27 GMT
--	Parent Layer: `8a151fb8e7701a76985ed6ddca878c4b3a7236c67fab7f9c4c289326445ccf7c`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:51:40 GMT
+-	Parent Layer: `d40c41f21ee90e91dc3067a6d731751d3f143538a2f9be5189733a9a2c4e6ff6`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -6473,321 +6473,321 @@ CMD ["logstash" "agent"]
 ## `logstash:2`
 
 ```console
-$ docker pull library/logstash@sha256:0e6f0057f2079c79dacffef8d2348d319634a2c2305d72b4c07cceddb1fcb225
+$ docker pull library/logstash@sha256:b847843f3ccc250c459c0890cad9f0ed3a1afd5a8eaa562f3d46c8c3ec8681d4
 ```
 
--	Total v2 Content-Length: 201.6 MB (201645671 bytes)
+-	Total v2 Content-Length: 201.7 MB (201742709 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9cddd4ab9e3ddf65af23cd855f5033a872926fcc445cb31a8ba8075ec47e369c`
+#### `c57aa57aafcf5374ff2c549ba680e7c36deda2d60c020ac3d088183edebd060d`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:52:35 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:0b6f2bdd89cd9f50abb688c64b27cef3e55d00dda27d9f8ffa69111ef1f6e502`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:24:35 GMT
+-	Created: Fri, 10 Jun 2016 16:50:02 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:c48bc45ec8ef163c8442ee9a9ebec868a971d0575d2b74cdddf7965642beb91a`
+-	v2 Content-Length: 222.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:16 GMT
 
-#### `17be7f056e19a192d71aaac995b6d4b5f94916f864b3ef86f7653dbefd75eef4`
+#### `514ec52cc5e5713f6c196240471f514f0fcbe2d3df5701b7fb1ab1f6a9f1fbf7`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:53:20 GMT
--	Parent Layer: `9cddd4ab9e3ddf65af23cd855f5033a872926fcc445cb31a8ba8075ec47e369c`
--	v2 Blob: `sha256:c9ffa029d830a0b19d49be4d3ae4ed35134588f6d29afab858d3eb1e227dd76e`
--	v2 Content-Length: 75.8 MB (75811657 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:24:29 GMT
+-	Created: Fri, 10 Jun 2016 16:51:37 GMT
+-	Parent Layer: `c57aa57aafcf5374ff2c549ba680e7c36deda2d60c020ac3d088183edebd060d`
+-	v2 Blob: `sha256:94032fc3961bc48ad7bcec31c9c1f6d1ee5a26f6830df776f16ab1855657ff9b`
+-	v2 Content-Length: 75.8 MB (75834068 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:33 GMT
 
-#### `da477e98716bdc0c73fcc1b04a8b9eb4e79176f553ae3db6cb28b1cd6e7ac722`
+#### `b9d6dffa16dab5816f204c99701ebfb06860ea1268df3dd10739a2ad8ba9de85`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:53:24 GMT
--	Parent Layer: `17be7f056e19a192d71aaac995b6d4b5f94916f864b3ef86f7653dbefd75eef4`
+-	Created: Fri, 10 Jun 2016 16:51:38 GMT
+-	Parent Layer: `514ec52cc5e5713f6c196240471f514f0fcbe2d3df5701b7fb1ab1f6a9f1fbf7`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `70eadf5f03a89244993ba53c51a10e4f4a2568354ce3c57ba3c618c4716ca73a`
+#### `94bad5e456f74f14c5c52adf85e8e6f8489b5250830c790439c359b0871f3da8`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:53:25 GMT
--	Parent Layer: `da477e98716bdc0c73fcc1b04a8b9eb4e79176f553ae3db6cb28b1cd6e7ac722`
--	v2 Blob: `sha256:b3e1f2f8f97aa0f73ba07c7f09dfd9b07979c8f63603c39574ff6deb462e2c34`
--	v2 Content-Length: 250.0 B
--	v2 Last-Modified: Wed, 30 Mar 2016 22:44:38 GMT
+-	Created: Fri, 10 Jun 2016 16:51:39 GMT
+-	Parent Layer: `b9d6dffa16dab5816f204c99701ebfb06860ea1268df3dd10739a2ad8ba9de85`
+-	v2 Blob: `sha256:2d353b3bb076b8311427324111969deb7a932b603e8c91e64de9ff5c05fcecbb`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:16 GMT
 
-#### `8a151fb8e7701a76985ed6ddca878c4b3a7236c67fab7f9c4c289326445ccf7c`
+#### `d40c41f21ee90e91dc3067a6d731751d3f143538a2f9be5189733a9a2c4e6ff6`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:53:26 GMT
--	Parent Layer: `70eadf5f03a89244993ba53c51a10e4f4a2568354ce3c57ba3c618c4716ca73a`
+-	Created: Fri, 10 Jun 2016 16:51:39 GMT
+-	Parent Layer: `94bad5e456f74f14c5c52adf85e8e6f8489b5250830c790439c359b0871f3da8`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `626de8fe2e9f841a39efc81f4c3cb4a8658fe2cfceff6454ac9d5c1963a5fdb0`
+#### `8cc2656cba58b496073f997f3d007331ebacb2d0c99290cbe270e769d5684d34`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:53:27 GMT
--	Parent Layer: `8a151fb8e7701a76985ed6ddca878c4b3a7236c67fab7f9c4c289326445ccf7c`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:51:40 GMT
+-	Parent Layer: `d40c41f21ee90e91dc3067a6d731751d3f143538a2f9be5189733a9a2c4e6ff6`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -6795,651 +6795,1287 @@ CMD ["logstash" "agent"]
 ## `logstash:latest`
 
 ```console
-$ docker pull library/logstash@sha256:4fb876819f20c58375aef436e19ad4d1b627364a6e5b3f12a405091de27d6233
+$ docker pull library/logstash@sha256:ef71c0ccdfe1ca6724188c564ec28eb59e4d90d7af366a1bf66d45143b903b25
 ```
 
--	Total v2 Content-Length: 201.6 MB (201645671 bytes)
+-	Total v2 Content-Length: 201.7 MB (201742709 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9cddd4ab9e3ddf65af23cd855f5033a872926fcc445cb31a8ba8075ec47e369c`
+#### `c57aa57aafcf5374ff2c549ba680e7c36deda2d60c020ac3d088183edebd060d`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:52:35 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:0b6f2bdd89cd9f50abb688c64b27cef3e55d00dda27d9f8ffa69111ef1f6e502`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:24:35 GMT
+-	Created: Fri, 10 Jun 2016 16:50:02 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:c48bc45ec8ef163c8442ee9a9ebec868a971d0575d2b74cdddf7965642beb91a`
+-	v2 Content-Length: 222.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:16 GMT
 
-#### `17be7f056e19a192d71aaac995b6d4b5f94916f864b3ef86f7653dbefd75eef4`
+#### `514ec52cc5e5713f6c196240471f514f0fcbe2d3df5701b7fb1ab1f6a9f1fbf7`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:53:20 GMT
--	Parent Layer: `9cddd4ab9e3ddf65af23cd855f5033a872926fcc445cb31a8ba8075ec47e369c`
--	v2 Blob: `sha256:c9ffa029d830a0b19d49be4d3ae4ed35134588f6d29afab858d3eb1e227dd76e`
--	v2 Content-Length: 75.8 MB (75811657 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:24:29 GMT
+-	Created: Fri, 10 Jun 2016 16:51:37 GMT
+-	Parent Layer: `c57aa57aafcf5374ff2c549ba680e7c36deda2d60c020ac3d088183edebd060d`
+-	v2 Blob: `sha256:94032fc3961bc48ad7bcec31c9c1f6d1ee5a26f6830df776f16ab1855657ff9b`
+-	v2 Content-Length: 75.8 MB (75834068 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:33 GMT
 
-#### `da477e98716bdc0c73fcc1b04a8b9eb4e79176f553ae3db6cb28b1cd6e7ac722`
+#### `b9d6dffa16dab5816f204c99701ebfb06860ea1268df3dd10739a2ad8ba9de85`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:53:24 GMT
--	Parent Layer: `17be7f056e19a192d71aaac995b6d4b5f94916f864b3ef86f7653dbefd75eef4`
+-	Created: Fri, 10 Jun 2016 16:51:38 GMT
+-	Parent Layer: `514ec52cc5e5713f6c196240471f514f0fcbe2d3df5701b7fb1ab1f6a9f1fbf7`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `70eadf5f03a89244993ba53c51a10e4f4a2568354ce3c57ba3c618c4716ca73a`
+#### `94bad5e456f74f14c5c52adf85e8e6f8489b5250830c790439c359b0871f3da8`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:53:25 GMT
--	Parent Layer: `da477e98716bdc0c73fcc1b04a8b9eb4e79176f553ae3db6cb28b1cd6e7ac722`
--	v2 Blob: `sha256:b3e1f2f8f97aa0f73ba07c7f09dfd9b07979c8f63603c39574ff6deb462e2c34`
--	v2 Content-Length: 250.0 B
--	v2 Last-Modified: Wed, 30 Mar 2016 22:44:38 GMT
+-	Created: Fri, 10 Jun 2016 16:51:39 GMT
+-	Parent Layer: `b9d6dffa16dab5816f204c99701ebfb06860ea1268df3dd10739a2ad8ba9de85`
+-	v2 Blob: `sha256:2d353b3bb076b8311427324111969deb7a932b603e8c91e64de9ff5c05fcecbb`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:57:16 GMT
 
-#### `8a151fb8e7701a76985ed6ddca878c4b3a7236c67fab7f9c4c289326445ccf7c`
+#### `d40c41f21ee90e91dc3067a6d731751d3f143538a2f9be5189733a9a2c4e6ff6`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:53:26 GMT
--	Parent Layer: `70eadf5f03a89244993ba53c51a10e4f4a2568354ce3c57ba3c618c4716ca73a`
+-	Created: Fri, 10 Jun 2016 16:51:39 GMT
+-	Parent Layer: `94bad5e456f74f14c5c52adf85e8e6f8489b5250830c790439c359b0871f3da8`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `626de8fe2e9f841a39efc81f4c3cb4a8658fe2cfceff6454ac9d5c1963a5fdb0`
+#### `8cc2656cba58b496073f997f3d007331ebacb2d0c99290cbe270e769d5684d34`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:53:27 GMT
--	Parent Layer: `8a151fb8e7701a76985ed6ddca878c4b3a7236c67fab7f9c4c289326445ccf7c`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:51:40 GMT
+-	Parent Layer: `d40c41f21ee90e91dc3067a6d731751d3f143538a2f9be5189733a9a2c4e6ff6`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `logstash:5.0.0-alpha3-1`
 
-**does not exist** (yet?)
-
-## `logstash:5.0.0-alpha3`
-
-**does not exist** (yet?)
-
-## `logstash:5.0.0`
-
 ```console
-$ docker pull library/logstash@sha256:ba94382565b8d8fd18e7fa01e8d135170051fc22e8b70138ae5cf0bc2cba7d7c
+$ docker pull library/logstash@sha256:d096a6406195aabf7ed265c2924961eca646608103dac91f8747f0818ddb0ea8
 ```
 
--	Total v2 Content-Length: 200.0 MB (199991522 bytes)
+-	Total v2 Content-Length: 212.1 MB (212063371 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f9b669e7c1db0f9f34ecbec07271cb8eb0993db5ab3eb4e6349ac2dc6baede8b`
+#### `9563e445d1a6329178bbf20217a3e2077816d9afa9b5b6bd9321e5c4f10ab7fc`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:56:38 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:cdf8bf61acfc6e748636e3c15626be1d016291b476fb546eb43aca280a7ead40`
+-	Created: Fri, 10 Jun 2016 16:51:43 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:99055733340ae2eed924c5b744018624a76d627f86bfc2d8c06c4017c7d8d2c6`
 -	v2 Content-Length: 223.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:27:01 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:06 GMT
 
-#### `ff9e900f3bb06cd4d1ed8002de9c8a2ebacdf1432bcd163532d4caa1a1138694`
+#### `eb36df51f7306bd5419d7f1245aaaa9e2a7749869899a09da4cc34fafd5232d5`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:57:23 GMT
--	Parent Layer: `f9b669e7c1db0f9f34ecbec07271cb8eb0993db5ab3eb4e6349ac2dc6baede8b`
--	v2 Blob: `sha256:fd1dfd3a7e42ee6507cc152a8a5324de3165d48965a9b7a9d8a7c6bf779f2d80`
--	v2 Content-Length: 74.2 MB (74157508 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:26:52 GMT
+-	Created: Fri, 10 Jun 2016 16:53:25 GMT
+-	Parent Layer: `9563e445d1a6329178bbf20217a3e2077816d9afa9b5b6bd9321e5c4f10ab7fc`
+-	v2 Blob: `sha256:56c612e760351c23dea84976d693435e0769dcac4ef6f05111899500a4902660`
+-	v2 Content-Length: 86.2 MB (86154729 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:31 GMT
 
-#### `95f3d042e8ebaa3fb32b1194536ec252ab29224ca8be9e0d78fc183d5c855a77`
+#### `8ce43775ae9b5a33c65c76d52180a5c6e7e29cf71e6eefa0dc1a4ff5703481a8`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:57:28 GMT
--	Parent Layer: `ff9e900f3bb06cd4d1ed8002de9c8a2ebacdf1432bcd163532d4caa1a1138694`
+-	Created: Fri, 10 Jun 2016 16:53:26 GMT
+-	Parent Layer: `eb36df51f7306bd5419d7f1245aaaa9e2a7749869899a09da4cc34fafd5232d5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1597867876760cbf219d3db64b65f2e039aa0f244641fdc0c1d0725581555ebc`
+#### `3775894f3ab4834cf3ea8bb07f5e73ea497c8241d23ed6bf21acee506904090f`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:57:28 GMT
--	Parent Layer: `95f3d042e8ebaa3fb32b1194536ec252ab29224ca8be9e0d78fc183d5c855a77`
--	v2 Blob: `sha256:073a5fc58871cca7bc2350fdec790e2828317c705936f3a92906d99591611ba5`
+-	Created: Fri, 10 Jun 2016 16:53:27 GMT
+-	Parent Layer: `8ce43775ae9b5a33c65c76d52180a5c6e7e29cf71e6eefa0dc1a4ff5703481a8`
+-	v2 Blob: `sha256:f06444cee3c2c7b6569fc86bb17e95c3ff417aa3ab467abbadb70c57cf04c72c`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 18 Apr 2016 21:09:02 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:05 GMT
 
-#### `32b04261332184393c8f137a4c30d722840a9e99594e3c82283c66b4a797b7fb`
+#### `bb584dcd0f6a3ce1bfabfdc2aa5474eb789124df3d34e6ac9ee13a920f64b80e`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:57:29 GMT
--	Parent Layer: `1597867876760cbf219d3db64b65f2e039aa0f244641fdc0c1d0725581555ebc`
+-	Created: Fri, 10 Jun 2016 16:53:27 GMT
+-	Parent Layer: `3775894f3ab4834cf3ea8bb07f5e73ea497c8241d23ed6bf21acee506904090f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9a7344281e5eb0f61ac63c2df3ca77936d7315fc3c0ca37dd881d5ae29bc09c0`
+#### `a4105187998bc7bf40c3bda359d38c1ead75a267b233588dc80f9fb0736dbff6`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:57:30 GMT
--	Parent Layer: `32b04261332184393c8f137a4c30d722840a9e99594e3c82283c66b4a797b7fb`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:53:28 GMT
+-	Parent Layer: `bb584dcd0f6a3ce1bfabfdc2aa5474eb789124df3d34e6ac9ee13a920f64b80e`
+-	Docker Version: 1.10.3
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `logstash:5.0.0-alpha3`
+
+```console
+$ docker pull library/logstash@sha256:0219ff8a4e7bdf34c31acfe3ad240ded569f28a4f18f0475d77aabf5dda67a85
+```
+
+-	Total v2 Content-Length: 212.1 MB (212063371 bytes)
+
+### Layers (26)
+
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
+
+```dockerfile
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+```
+
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
+
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
+
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
+
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
+
+```dockerfile
+RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
+
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+
+```dockerfile
+ENV LANG=C.UTF-8
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
+
+```dockerfile
+RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
+-	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
+
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
+
+```dockerfile
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
+
+```dockerfile
+ENV JAVA_VERSION=8u91
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
+
+```dockerfile
+ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+
+```dockerfile
+ENV CA_CERTIFICATES_JAVA_VERSION=20140324
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+
+```dockerfile
+RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+```
+
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
+
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+
+```dockerfile
+RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
+```
+
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
+
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
+
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
+
+```dockerfile
+RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
+
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+
+```dockerfile
+ENV GOSU_VERSION=1.7
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+
+```dockerfile
+RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
+
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
+
+```dockerfile
+RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
+
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
+
+```dockerfile
+ENV LOGSTASH_MAJOR=1.4
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+
+```dockerfile
+ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `9563e445d1a6329178bbf20217a3e2077816d9afa9b5b6bd9321e5c4f10ab7fc`
+
+```dockerfile
+RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
+```
+
+-	Created: Fri, 10 Jun 2016 16:51:43 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:99055733340ae2eed924c5b744018624a76d627f86bfc2d8c06c4017c7d8d2c6`
+-	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:06 GMT
+
+#### `eb36df51f7306bd5419d7f1245aaaa9e2a7749869899a09da4cc34fafd5232d5`
+
+```dockerfile
+RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Fri, 10 Jun 2016 16:53:25 GMT
+-	Parent Layer: `9563e445d1a6329178bbf20217a3e2077816d9afa9b5b6bd9321e5c4f10ab7fc`
+-	v2 Blob: `sha256:56c612e760351c23dea84976d693435e0769dcac4ef6f05111899500a4902660`
+-	v2 Content-Length: 86.2 MB (86154729 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:31 GMT
+
+#### `8ce43775ae9b5a33c65c76d52180a5c6e7e29cf71e6eefa0dc1a4ff5703481a8`
+
+```dockerfile
+ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+-	Created: Fri, 10 Jun 2016 16:53:26 GMT
+-	Parent Layer: `eb36df51f7306bd5419d7f1245aaaa9e2a7749869899a09da4cc34fafd5232d5`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `3775894f3ab4834cf3ea8bb07f5e73ea497c8241d23ed6bf21acee506904090f`
+
+```dockerfile
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
+```
+
+-	Created: Fri, 10 Jun 2016 16:53:27 GMT
+-	Parent Layer: `8ce43775ae9b5a33c65c76d52180a5c6e7e29cf71e6eefa0dc1a4ff5703481a8`
+-	v2 Blob: `sha256:f06444cee3c2c7b6569fc86bb17e95c3ff417aa3ab467abbadb70c57cf04c72c`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:05 GMT
+
+#### `bb584dcd0f6a3ce1bfabfdc2aa5474eb789124df3d34e6ac9ee13a920f64b80e`
+
+```dockerfile
+ENTRYPOINT &{["/docker-entrypoint.sh"]}
+```
+
+-	Created: Fri, 10 Jun 2016 16:53:27 GMT
+-	Parent Layer: `3775894f3ab4834cf3ea8bb07f5e73ea497c8241d23ed6bf21acee506904090f`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a4105187998bc7bf40c3bda359d38c1ead75a267b233588dc80f9fb0736dbff6`
+
+```dockerfile
+CMD ["logstash" "agent"]
+```
+
+-	Created: Fri, 10 Jun 2016 16:53:28 GMT
+-	Parent Layer: `bb584dcd0f6a3ce1bfabfdc2aa5474eb789124df3d34e6ac9ee13a920f64b80e`
+-	Docker Version: 1.10.3
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `logstash:5.0.0`
+
+```console
+$ docker pull library/logstash@sha256:650f1546b5f51f549cdf5a16c8a6af3a2659bfd021ad20139263d9482543129f
+```
+
+-	Total v2 Content-Length: 212.1 MB (212063371 bytes)
+
+### Layers (26)
+
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
+
+```dockerfile
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+```
+
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
+
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
+
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
+
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
+
+```dockerfile
+RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
+
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+
+```dockerfile
+ENV LANG=C.UTF-8
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
+
+```dockerfile
+RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
+-	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
+
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
+
+```dockerfile
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
+
+```dockerfile
+ENV JAVA_VERSION=8u91
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
+
+```dockerfile
+ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+
+```dockerfile
+ENV CA_CERTIFICATES_JAVA_VERSION=20140324
+```
+
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+
+```dockerfile
+RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+```
+
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
+
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+
+```dockerfile
+RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
+```
+
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
+
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
+
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
+
+```dockerfile
+RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
+
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+
+```dockerfile
+ENV GOSU_VERSION=1.7
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+
+```dockerfile
+RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
+
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
+
+```dockerfile
+RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
+
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
+
+```dockerfile
+ENV LOGSTASH_MAJOR=1.4
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+
+```dockerfile
+ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
+```
+
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `9563e445d1a6329178bbf20217a3e2077816d9afa9b5b6bd9321e5c4f10ab7fc`
+
+```dockerfile
+RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
+```
+
+-	Created: Fri, 10 Jun 2016 16:51:43 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:99055733340ae2eed924c5b744018624a76d627f86bfc2d8c06c4017c7d8d2c6`
+-	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:06 GMT
+
+#### `eb36df51f7306bd5419d7f1245aaaa9e2a7749869899a09da4cc34fafd5232d5`
+
+```dockerfile
+RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Fri, 10 Jun 2016 16:53:25 GMT
+-	Parent Layer: `9563e445d1a6329178bbf20217a3e2077816d9afa9b5b6bd9321e5c4f10ab7fc`
+-	v2 Blob: `sha256:56c612e760351c23dea84976d693435e0769dcac4ef6f05111899500a4902660`
+-	v2 Content-Length: 86.2 MB (86154729 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:31 GMT
+
+#### `8ce43775ae9b5a33c65c76d52180a5c6e7e29cf71e6eefa0dc1a4ff5703481a8`
+
+```dockerfile
+ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+-	Created: Fri, 10 Jun 2016 16:53:26 GMT
+-	Parent Layer: `eb36df51f7306bd5419d7f1245aaaa9e2a7749869899a09da4cc34fafd5232d5`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `3775894f3ab4834cf3ea8bb07f5e73ea497c8241d23ed6bf21acee506904090f`
+
+```dockerfile
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
+```
+
+-	Created: Fri, 10 Jun 2016 16:53:27 GMT
+-	Parent Layer: `8ce43775ae9b5a33c65c76d52180a5c6e7e29cf71e6eefa0dc1a4ff5703481a8`
+-	v2 Blob: `sha256:f06444cee3c2c7b6569fc86bb17e95c3ff417aa3ab467abbadb70c57cf04c72c`
+-	v2 Content-Length: 251.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:05 GMT
+
+#### `bb584dcd0f6a3ce1bfabfdc2aa5474eb789124df3d34e6ac9ee13a920f64b80e`
+
+```dockerfile
+ENTRYPOINT &{["/docker-entrypoint.sh"]}
+```
+
+-	Created: Fri, 10 Jun 2016 16:53:27 GMT
+-	Parent Layer: `3775894f3ab4834cf3ea8bb07f5e73ea497c8241d23ed6bf21acee506904090f`
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a4105187998bc7bf40c3bda359d38c1ead75a267b233588dc80f9fb0736dbff6`
+
+```dockerfile
+CMD ["logstash" "agent"]
+```
+
+-	Created: Fri, 10 Jun 2016 16:53:28 GMT
+-	Parent Layer: `bb584dcd0f6a3ce1bfabfdc2aa5474eb789124df3d34e6ac9ee13a920f64b80e`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -7447,321 +8083,321 @@ CMD ["logstash" "agent"]
 ## `logstash:5.0`
 
 ```console
-$ docker pull library/logstash@sha256:395bb4bbf8bb40f204814fd0a25402b7ce766e81cc9c9d48b7b00c99ff70496f
+$ docker pull library/logstash@sha256:8fa60b62221fd7e973da57569a8850ca2f3e4a559a11f0d596ceec8f1a5d5d37
 ```
 
--	Total v2 Content-Length: 200.0 MB (199991522 bytes)
+-	Total v2 Content-Length: 212.1 MB (212063371 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f9b669e7c1db0f9f34ecbec07271cb8eb0993db5ab3eb4e6349ac2dc6baede8b`
+#### `9563e445d1a6329178bbf20217a3e2077816d9afa9b5b6bd9321e5c4f10ab7fc`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:56:38 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:cdf8bf61acfc6e748636e3c15626be1d016291b476fb546eb43aca280a7ead40`
+-	Created: Fri, 10 Jun 2016 16:51:43 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:99055733340ae2eed924c5b744018624a76d627f86bfc2d8c06c4017c7d8d2c6`
 -	v2 Content-Length: 223.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:27:01 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:06 GMT
 
-#### `ff9e900f3bb06cd4d1ed8002de9c8a2ebacdf1432bcd163532d4caa1a1138694`
+#### `eb36df51f7306bd5419d7f1245aaaa9e2a7749869899a09da4cc34fafd5232d5`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:57:23 GMT
--	Parent Layer: `f9b669e7c1db0f9f34ecbec07271cb8eb0993db5ab3eb4e6349ac2dc6baede8b`
--	v2 Blob: `sha256:fd1dfd3a7e42ee6507cc152a8a5324de3165d48965a9b7a9d8a7c6bf779f2d80`
--	v2 Content-Length: 74.2 MB (74157508 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:26:52 GMT
+-	Created: Fri, 10 Jun 2016 16:53:25 GMT
+-	Parent Layer: `9563e445d1a6329178bbf20217a3e2077816d9afa9b5b6bd9321e5c4f10ab7fc`
+-	v2 Blob: `sha256:56c612e760351c23dea84976d693435e0769dcac4ef6f05111899500a4902660`
+-	v2 Content-Length: 86.2 MB (86154729 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:31 GMT
 
-#### `95f3d042e8ebaa3fb32b1194536ec252ab29224ca8be9e0d78fc183d5c855a77`
+#### `8ce43775ae9b5a33c65c76d52180a5c6e7e29cf71e6eefa0dc1a4ff5703481a8`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:57:28 GMT
--	Parent Layer: `ff9e900f3bb06cd4d1ed8002de9c8a2ebacdf1432bcd163532d4caa1a1138694`
+-	Created: Fri, 10 Jun 2016 16:53:26 GMT
+-	Parent Layer: `eb36df51f7306bd5419d7f1245aaaa9e2a7749869899a09da4cc34fafd5232d5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1597867876760cbf219d3db64b65f2e039aa0f244641fdc0c1d0725581555ebc`
+#### `3775894f3ab4834cf3ea8bb07f5e73ea497c8241d23ed6bf21acee506904090f`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:57:28 GMT
--	Parent Layer: `95f3d042e8ebaa3fb32b1194536ec252ab29224ca8be9e0d78fc183d5c855a77`
--	v2 Blob: `sha256:073a5fc58871cca7bc2350fdec790e2828317c705936f3a92906d99591611ba5`
+-	Created: Fri, 10 Jun 2016 16:53:27 GMT
+-	Parent Layer: `8ce43775ae9b5a33c65c76d52180a5c6e7e29cf71e6eefa0dc1a4ff5703481a8`
+-	v2 Blob: `sha256:f06444cee3c2c7b6569fc86bb17e95c3ff417aa3ab467abbadb70c57cf04c72c`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 18 Apr 2016 21:09:02 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:05 GMT
 
-#### `32b04261332184393c8f137a4c30d722840a9e99594e3c82283c66b4a797b7fb`
+#### `bb584dcd0f6a3ce1bfabfdc2aa5474eb789124df3d34e6ac9ee13a920f64b80e`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:57:29 GMT
--	Parent Layer: `1597867876760cbf219d3db64b65f2e039aa0f244641fdc0c1d0725581555ebc`
+-	Created: Fri, 10 Jun 2016 16:53:27 GMT
+-	Parent Layer: `3775894f3ab4834cf3ea8bb07f5e73ea497c8241d23ed6bf21acee506904090f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9a7344281e5eb0f61ac63c2df3ca77936d7315fc3c0ca37dd881d5ae29bc09c0`
+#### `a4105187998bc7bf40c3bda359d38c1ead75a267b233588dc80f9fb0736dbff6`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:57:30 GMT
--	Parent Layer: `32b04261332184393c8f137a4c30d722840a9e99594e3c82283c66b4a797b7fb`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:53:28 GMT
+-	Parent Layer: `bb584dcd0f6a3ce1bfabfdc2aa5474eb789124df3d34e6ac9ee13a920f64b80e`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -7769,321 +8405,321 @@ CMD ["logstash" "agent"]
 ## `logstash:5`
 
 ```console
-$ docker pull library/logstash@sha256:5e1ff131c2424ab7d16f8f9b8546deb77e5c016ba9da9024640fe9502273b364
+$ docker pull library/logstash@sha256:63e1472043e59b6ecd0011ceed938c7e48c8759929cb86f5057e3eb149ec3e97
 ```
 
--	Total v2 Content-Length: 200.0 MB (199991522 bytes)
+-	Total v2 Content-Length: 212.1 MB (212063371 bytes)
 
 ### Layers (26)
 
-#### `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+#### `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 
 ```dockerfile
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 ```
 
--	Created: Mon, 23 May 2016 22:57:20 GMT
--	v2 Blob: `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`
--	v2 Content-Length: 51.4 MB (51356334 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:09:48 GMT
+-	Created: Thu, 09 Jun 2016 21:28:42 GMT
+-	v2 Blob: `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`
+-	v2 Content-Length: 51.4 MB (51352535 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:30:47 GMT
 
-#### `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
+#### `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 23 May 2016 22:57:23 GMT
--	Parent Layer: `a2295636c7aa7aeaaf8aba834ed7a9863a2a8f3e87464c8ab9bd659d4d668687`
+-	Created: Thu, 09 Jun 2016 21:28:43 GMT
+-	Parent Layer: `7d78525320442999cccbd4b15232adf41588ddca6ecb281f1d3a8bbf45862997`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
+#### `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 23 May 2016 23:00:26 GMT
--	Parent Layer: `3035387b9e834c466cd957662b14b5548c7b2bed1fc8057a2e80793bddd04d92`
--	v2 Blob: `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`
--	v2 Content-Length: 18.5 MB (18532084 bytes)
--	v2 Last-Modified: Mon, 23 May 2016 23:14:09 GMT
+-	Created: Thu, 09 Jun 2016 21:35:50 GMT
+-	Parent Layer: `435cb21051b6acf1c846fa0550c9a8de3dd529ead7064958ab4278a1f2bd3a36`
+-	v2 Blob: `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`
+-	v2 Content-Length: 18.5 MB (18547219 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 21:46:24 GMT
 
-#### `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
+#### `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 00:08:31 GMT
--	Parent Layer: `c394bf6e2527f2cb86cfd35e172347f70ceb84fbf2bed3583f6b5522fd343793`
--	v2 Blob: `sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`
--	v2 Content-Length: 566.6 KB (566606 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:44:49 GMT
+-	Created: Thu, 09 Jun 2016 22:08:24 GMT
+-	Parent Layer: `4c76b3c135637de0018f575020919b06ce846cd8e77295eb6b5f10c378ca1332`
+-	v2 Blob: `sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`
+-	v2 Content-Length: 587.3 KB (587338 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:19:23 GMT
 
-#### `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+#### `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Tue, 24 May 2016 00:37:59 GMT
--	Parent Layer: `3aad54942b740be6863a2039d60cb2a7967c45c987465e6cde6820604ed94562`
--	v2 Blob: `sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `35e170305690c5326ede2fb0d16695a3de51f978d93c1dba22be08ad75b036a2`
+-	v2 Blob: `sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:48 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
+#### `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Tue, 24 May 2016 00:38:01 GMT
--	Parent Layer: `59130393227f649893bae221d893951749fd0f87e018f40f10a70f099dd4ab85`
+-	Created: Thu, 09 Jun 2016 22:12:26 GMT
+-	Parent Layer: `2ba8849e075b4d1acf0ff8aacb0286af1e4d5e8243a7eb8caa452c4261fe4ded`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+#### `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 
 ```dockerfile
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Tue, 24 May 2016 00:38:03 GMT
--	Parent Layer: `e463a1438fb0419b697c55c925fd0555a29d34bbf4834455419379af0d52c444`
--	v2 Blob: `sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `3a564934fba08eec8dd13898aa28255cd8a20ac03996932bc2e275bd7af907b7`
+-	v2 Blob: `sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 24 May 2016 15:48:42 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+#### `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Tue, 24 May 2016 00:38:04 GMT
--	Parent Layer: `5ec592e66165445d8fd1c5bf702c3d4d65e7642849d82ebd9ab401da2bdb39fc`
+-	Created: Thu, 09 Jun 2016 22:12:27 GMT
+-	Parent Layer: `684667c40b3ad7530ca7aa3468e61b332d111a4f83eceb56123baf981c154e8c`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+#### `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 
 ```dockerfile
 ENV JAVA_VERSION=8u91
 ```
 
--	Created: Tue, 24 May 2016 00:38:05 GMT
--	Parent Layer: `c2118a4707bff854b6cb80a16aa0d113e69b09f6a56d0f8543a839d674a83a05`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `ca62de1a9a9d8cc3e6dc552cdeb24754c4e93ff8438eecc26fb81622ca72feee`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+#### `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
 ```
 
--	Created: Tue, 24 May 2016 00:38:06 GMT
--	Parent Layer: `ae7902e840da07d46e4f56fda42e26b31d9a52d7139f6f45503a5b8b62b8e853`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `37c7ce9465532d9ce6844ca7f67d42cf1ca11bcbe35161da5162eafe378341c1`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
+#### `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Tue, 24 May 2016 00:38:07 GMT
--	Parent Layer: `8fa347b03be709171321c248d0a8ab770a053bbfde91f3a762012ec29d318509`
+-	Created: Thu, 09 Jun 2016 22:12:28 GMT
+-	Parent Layer: `e10dbef9456c0b0704089d37a805c6edfadf23a1dd1871d648938f9f1af19210`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
+#### `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Tue, 24 May 2016 00:39:24 GMT
--	Parent Layer: `195b33611df43e8a4f468e75034b06aff3a1ebc219ea7f25a423e9737f9d63a4`
--	v2 Blob: `sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`
--	v2 Content-Length: 53.4 MB (53350023 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:28 GMT
+-	Created: Thu, 09 Jun 2016 22:13:51 GMT
+-	Parent Layer: `98b5a9a7d66952cb61c9c9f8d91a9a40032b46ddcb883d477be74efdcff5621f`
+-	v2 Blob: `sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`
+-	v2 Content-Length: 53.4 MB (53371555 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:47 GMT
 
-#### `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
+#### `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Tue, 24 May 2016 00:39:36 GMT
--	Parent Layer: `994fc0ed2c2091d4fad7a23a9d07cec520f0a3ff00c0b454f0084082abddcb30`
--	v2 Blob: `sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`
--	v2 Content-Length: 284.4 KB (284392 bytes)
--	v2 Last-Modified: Tue, 24 May 2016 15:48:09 GMT
+-	Created: Thu, 09 Jun 2016 22:13:54 GMT
+-	Parent Layer: `d6c508d97d2dfac218776ab25618b84bc60b58fb5808a3d63efceaf57e85232d`
+-	v2 Blob: `sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`
+-	v2 Content-Length: 284.4 KB (284380 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 22:22:35 GMT
 
-#### `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
+#### `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:37:42 GMT
--	Parent Layer: `d7a00763e1de9f2d9217fb15c194ef4b62562f8e46b090d1bd915a7f37c2fc48`
--	v2 Blob: `sha256:7b8b60c0bbb3aedc291e24652f05b75a49098e5798c68ab2a75a4d32bedff8ef`
--	v2 Content-Length: 933.7 KB (933690 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:44 GMT
+-	Created: Fri, 10 Jun 2016 16:41:04 GMT
+-	Parent Layer: `ee1e094cb015295bfa011b3da1641b53a664c16c065e60d61f10c714e6117e13`
+-	v2 Blob: `sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`
+-	v2 Content-Length: 954.7 KB (954722 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:40 GMT
 
-#### `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+#### `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 
 ```dockerfile
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
 ```
 
--	Created: Tue, 24 May 2016 17:37:43 GMT
--	Parent Layer: `810953691a8ea5ac8a5c611c11c83153cba96f8d9a7239c4abbe08695a1b0c0e`
--	v2 Blob: `sha256:7589798b2e04278a323525e63fc827907fd624052df46bb6a515349482a4436c`
--	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:13:39 GMT
+-	Created: Fri, 10 Jun 2016 16:41:05 GMT
+-	Parent Layer: `309be2300cca379c7549b28f2dd2cd964b7cd1ce61774d647bfa76579de050ea`
+-	v2 Blob: `sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`
+-	v2 Content-Length: 194.0 B
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:39 GMT
 
-#### `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
+#### `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
 
 ```dockerfile
 ENV GOSU_VERSION=1.7
 ```
 
--	Created: Tue, 24 May 2016 17:37:44 GMT
--	Parent Layer: `9adac80f7bd1619fae1f2cfef4f9bd983bfb7ed10e206246fe4c74a766c4550a`
+-	Created: Fri, 10 Jun 2016 16:41:06 GMT
+-	Parent Layer: `6b6d4bba0327ffab45ab71cba6da6091557b6b92aaa0db9d8724726839958128`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
+#### `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
 
 ```dockerfile
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 ```
 
--	Created: Tue, 24 May 2016 17:37:49 GMT
--	Parent Layer: `d7ede0112239b3637e7d485689b1f73fc05090ecae6ebda652508e84f777bf01`
--	v2 Blob: `sha256:28fbf7f67f23a70a21def0caba06bd0a3f626cf263684aaccdfe4c75961423f1`
--	v2 Content-Length: 807.9 KB (807926 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:32 GMT
+-	Created: Fri, 10 Jun 2016 16:41:11 GMT
+-	Parent Layer: `a2b83fdf0f7593710ba73e5020d8284f1db932144e3be997bc5965b7c2038c83`
+-	v2 Blob: `sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`
+-	v2 Content-Length: 807.9 KB (807927 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+#### `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 ```
 
--	Created: Tue, 24 May 2016 17:38:00 GMT
--	Parent Layer: `7643ea7548346e1fba15e1041a9d414052e5f011a44d08e1dfd8dd92cfbd36a4`
--	v2 Blob: `sha256:4ceea341c7df77fb21c9bd202c5fdfd6fb2999ae0e2d8c950570c8f947f2fb81`
--	v2 Content-Length: 1.4 KB (1448 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:13:26 GMT
+-	Created: Fri, 10 Jun 2016 16:41:33 GMT
+-	Parent Layer: `6909f3a12bc0ee418838eec1e11aadd2c528b3ba3a22d1a6e4998de552336d21`
+-	v2 Blob: `sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`
+-	v2 Content-Length: 1.5 KB (1452 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:53:37 GMT
 
-#### `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+#### `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 
 ```dockerfile
 ENV LOGSTASH_MAJOR=1.4
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `47722a8cd76630f2f5204b331750d50a3122e268d4788578413989d16ddcfe9f`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `d3e414ac9f8726088c1ba0d453798bb5fa5679884864c829cfdf1d4ef0ba9a49`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
+#### `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
 
 ```dockerfile
 ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
 ```
 
--	Created: Tue, 24 May 2016 17:38:01 GMT
--	Parent Layer: `4f7a6f4213cc8500004dd59888b98a1a58bcf3ce4218a5de8a659d8e0b296675`
+-	Created: Fri, 10 Jun 2016 16:41:34 GMT
+-	Parent Layer: `6197d09575c391a0caa6afa42e21dbfa891657083f5d5d8cbe6a2f70acf47385`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f9b669e7c1db0f9f34ecbec07271cb8eb0993db5ab3eb4e6349ac2dc6baede8b`
+#### `9563e445d1a6329178bbf20217a3e2077816d9afa9b5b6bd9321e5c4f10ab7fc`
 
 ```dockerfile
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 24 May 2016 17:56:38 GMT
--	Parent Layer: `f56497d337449e6b78efb5654eb4b9bf70dcd1a1bbaf96dd4a037c131991bc10`
--	v2 Blob: `sha256:cdf8bf61acfc6e748636e3c15626be1d016291b476fb546eb43aca280a7ead40`
+-	Created: Fri, 10 Jun 2016 16:51:43 GMT
+-	Parent Layer: `0c6b2c070661d60b18c01d183a3d4d60f9954cd6f68725c4eb352cb203a36e82`
+-	v2 Blob: `sha256:99055733340ae2eed924c5b744018624a76d627f86bfc2d8c06c4017c7d8d2c6`
 -	v2 Content-Length: 223.0 B
--	v2 Last-Modified: Tue, 31 May 2016 20:27:01 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:06 GMT
 
-#### `ff9e900f3bb06cd4d1ed8002de9c8a2ebacdf1432bcd163532d4caa1a1138694`
+#### `eb36df51f7306bd5419d7f1245aaaa9e2a7749869899a09da4cc34fafd5232d5`
 
 ```dockerfile
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 24 May 2016 17:57:23 GMT
--	Parent Layer: `f9b669e7c1db0f9f34ecbec07271cb8eb0993db5ab3eb4e6349ac2dc6baede8b`
--	v2 Blob: `sha256:fd1dfd3a7e42ee6507cc152a8a5324de3165d48965a9b7a9d8a7c6bf779f2d80`
--	v2 Content-Length: 74.2 MB (74157508 bytes)
--	v2 Last-Modified: Tue, 31 May 2016 20:26:52 GMT
+-	Created: Fri, 10 Jun 2016 16:53:25 GMT
+-	Parent Layer: `9563e445d1a6329178bbf20217a3e2077816d9afa9b5b6bd9321e5c4f10ab7fc`
+-	v2 Blob: `sha256:56c612e760351c23dea84976d693435e0769dcac4ef6f05111899500a4902660`
+-	v2 Content-Length: 86.2 MB (86154729 bytes)
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:31 GMT
 
-#### `95f3d042e8ebaa3fb32b1194536ec252ab29224ca8be9e0d78fc183d5c855a77`
+#### `8ce43775ae9b5a33c65c76d52180a5c6e7e29cf71e6eefa0dc1a4ff5703481a8`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 24 May 2016 17:57:28 GMT
--	Parent Layer: `ff9e900f3bb06cd4d1ed8002de9c8a2ebacdf1432bcd163532d4caa1a1138694`
+-	Created: Fri, 10 Jun 2016 16:53:26 GMT
+-	Parent Layer: `eb36df51f7306bd5419d7f1245aaaa9e2a7749869899a09da4cc34fafd5232d5`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1597867876760cbf219d3db64b65f2e039aa0f244641fdc0c1d0725581555ebc`
+#### `3775894f3ab4834cf3ea8bb07f5e73ea497c8241d23ed6bf21acee506904090f`
 
 ```dockerfile
-COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
+COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
 ```
 
--	Created: Tue, 24 May 2016 17:57:28 GMT
--	Parent Layer: `95f3d042e8ebaa3fb32b1194536ec252ab29224ca8be9e0d78fc183d5c855a77`
--	v2 Blob: `sha256:073a5fc58871cca7bc2350fdec790e2828317c705936f3a92906d99591611ba5`
+-	Created: Fri, 10 Jun 2016 16:53:27 GMT
+-	Parent Layer: `8ce43775ae9b5a33c65c76d52180a5c6e7e29cf71e6eefa0dc1a4ff5703481a8`
+-	v2 Blob: `sha256:f06444cee3c2c7b6569fc86bb17e95c3ff417aa3ab467abbadb70c57cf04c72c`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 18 Apr 2016 21:09:02 GMT
+-	v2 Last-Modified: Fri, 10 Jun 2016 16:58:05 GMT
 
-#### `32b04261332184393c8f137a4c30d722840a9e99594e3c82283c66b4a797b7fb`
+#### `bb584dcd0f6a3ce1bfabfdc2aa5474eb789124df3d34e6ac9ee13a920f64b80e`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 24 May 2016 17:57:29 GMT
--	Parent Layer: `1597867876760cbf219d3db64b65f2e039aa0f244641fdc0c1d0725581555ebc`
+-	Created: Fri, 10 Jun 2016 16:53:27 GMT
+-	Parent Layer: `3775894f3ab4834cf3ea8bb07f5e73ea497c8241d23ed6bf21acee506904090f`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9a7344281e5eb0f61ac63c2df3ca77936d7315fc3c0ca37dd881d5ae29bc09c0`
+#### `a4105187998bc7bf40c3bda359d38c1ead75a267b233588dc80f9fb0736dbff6`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 24 May 2016 17:57:30 GMT
--	Parent Layer: `32b04261332184393c8f137a4c30d722840a9e99594e3c82283c66b4a797b7fb`
--	Docker Version: 1.9.1
+-	Created: Fri, 10 Jun 2016 16:53:28 GMT
+-	Parent Layer: `bb584dcd0f6a3ce1bfabfdc2aa5474eb789124df3d34e6ac9ee13a920f64b80e`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
