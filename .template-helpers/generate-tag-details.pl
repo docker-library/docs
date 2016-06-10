@@ -19,7 +19,7 @@ sub ua_req {
 	do {
 		--$tries;
 		$tx = $ua->$method(@_);
-		return $tx if $tx->success;
+		return $tx if $tx->success or $tx->res->code == 401 or $tx->res->code == 404;
 	} while ($tries > 0);
 	return $tx;
 }
@@ -43,45 +43,67 @@ sub split_image_name {
 	die "unrecognized image name format in: $image";
 }
 
-sub get_token {
+sub registry_req {
+	my $method = shift;
 	my $repo = shift;
+	my $url = shift;
+	my %extHeaders = @_;
+
 	state %tokens;
-	return $tokens{$repo} if $tokens{$repo};
-	my $realmTx = $ua->get("https://registry-1.docker.io/v2/$repo/tags/list");
-	my $auth = $realmTx->res->headers->www_authenticate;
-	die "unexpected WWW-Authenticate header: $auth" unless $auth =~ m{ ^ Bearer \s+ (\S.*) $ }x;
-	my $realm = $1;
-	my $url = Mojo::URL->new;
-	while ($realm =~ m{
-		# key="val",
-		([^=]+)
-		=
-		"([^"]+)"
-		,?
-	}xg) {
-		my ($key, $val) = ($1, $2);
-		if ($key eq 'realm') {
-			$url->base(Mojo::URL->new($val));
-		} else {
-			$url->query->append($key => $val);
+
+	$url = "https://registry-1.docker.io/v2/$repo/$url";
+
+	for (;;) {
+		my %headers = (
+			%extHeaders,
+		);
+
+		if (my $token = $tokens{$repo}) {
+			$headers{Authorization} = "Bearer $token";
 		}
+
+		my $tx = ua_req($method => $url => \%headers);
+
+		if ($tx->res->code == 401) {
+			my $auth = $tx->res->headers->www_authenticate;
+			die "unexpected WWW-Authenticate header: $auth" unless $auth =~ m{ ^ Bearer \s+ (\S.*) $ }x;
+			my $realm = $1;
+			my $authUrl = Mojo::URL->new;
+			while ($realm =~ m{
+				# key="val",
+				([^=]+)
+				=
+				"([^"]+)"
+				,?
+			}xg) {
+				my ($key, $val) = ($1, $2);
+				if ($key eq 'realm') {
+					$authUrl->base(Mojo::URL->new($val));
+				} else {
+					$authUrl->query->append($key => $val);
+				}
+			}
+			$authUrl = $authUrl->to_abs;
+			my $tokenTx = ua_req(get => $authUrl);
+			die "failed to fetch token for $repo" unless $tokenTx->success;
+			$tokens{$repo} = $tokenTx->res->json->{token};
+			next;
+		}
+
+		return $tx;
 	}
-	$url = $url->to_abs;
-	my $tokenTx = ua_req(get => $url);
-	die "failed to fetch token for $repo" unless $tokenTx->success;
-	return $tokens{$repo} = $tokenTx->res->json->{token};
 }
 
 sub get_manifest {
 	my ($repo, $tag) = @_;
+
 	my $image = "$repo:$tag";
 	state %manifests;
 	return $manifests{$image} if $manifests{$image};
 
-	my $token = get_token($repo);
-	my $authorizationHeader = { Authorization => "Bearer $token" };
-
-	my $manifestTx = ua_req(get => "https://registry-1.docker.io/v2/$repo/manifests/$tag" => $authorizationHeader);
+	my $manifestTx = registry_req(get => $repo => "manifests/$tag" => (
+			#Accept => 'application/vnd.docker.distribution.manifest.v2+json',
+		));
 	return () if $manifestTx->res->code == 404; # tag doesn't exist
 	die "failed to get manifest for $image" unless $manifestTx->success;
 	return (
@@ -92,14 +114,12 @@ sub get_manifest {
 
 sub get_blob_headers {
 	my ($repo, $blob) = @_;
+
 	my $key = $repo . '@' . $blob;
 	state %headers;
 	return $headers{$key} if $headers{$key};
 
-	my $token = get_token($repo);
-	my $authorizationHeader = { Authorization => "Bearer $token" };
-
-	my $headersTx = ua_req(head => "https://registry-1.docker.io/v2/$repo/blobs/$blob" => $authorizationHeader);
+	my $headersTx = registry_req(head => $repo => "blobs/$blob" => ());
 	die "failed to get headers for $key" unless $headersTx->success;
 	return $headers{$key} = $headersTx->res->headers;
 }
