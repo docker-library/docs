@@ -2,75 +2,75 @@
 
 # Tags of `nats`
 
--	[`nats:0.8.0`](#nats080)
+-	[`nats:0.8.1`](#nats081)
 -	[`nats:latest`](#natslatest)
 
-## `nats:0.8.0`
+## `nats:0.8.1`
 
 ```console
-$ docker pull library/nats@sha256:0287d7f9c9c3718115b99267e6501abd5221de7171407198448148a0cb022a1d
+$ docker pull library/nats@sha256:6f495888280e3018a200254d4f8c78bae5abcda9e1f7d44a1d3f5fe9b0ce1ee3
 ```
 
--	Total v2 Content-Length: 2.3 MB (2325225 bytes)
+-	Total v2 Content-Length: 2.3 MB (2331552 bytes)
 
 ### Layers (5)
 
-#### `fded26ff197ae1142489e1144625c4106f0726215a5aa4f66e6d5b0fe12033c6`
+#### `bd72219a711c26ff7221ddeb7d3410e803d379db48a936abd02588aafeaca267`
 
 ```dockerfile
-COPY file:838b7cb1190322702c70076e696a98984a2e4f20c4b62d9927208e8e94a3d31f in /gnatsd
+COPY file:e2895eeea45b66dd22e3904b4141d74119a446291838f9c843e11c8cdfa486fa in /gnatsd
 ```
 
--	Created: Mon, 09 May 2016 21:31:13 GMT
--	v2 Blob: `sha256:87fc22a9ffb502240045413c171e99d24cb1723c1230d7a9456a65a8d0726f25`
--	v2 Content-Length: 2.3 MB (2324648 bytes)
--	v2 Last-Modified: Mon, 09 May 2016 21:31:49 GMT
+-	Created: Thu, 09 Jun 2016 23:39:53 GMT
+-	v2 Blob: `sha256:d38d231498c64bd98f65236fec5c3fe5c0971fcc0a3dc0b147f2148cfae32f15`
+-	v2 Content-Length: 2.3 MB (2330975 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 23:40:01 GMT
 
-#### `a7a7913f7bd829c2fd617956ba674dde5da93e850e4ee8d2c26955fa3f21525b`
+#### `fb4cca6582a36cd13c63dc976dbc63f5d3c6ba647c399c13403937317c208566`
 
 ```dockerfile
-COPY file:a586f0fa1b2fa9c70904f96358b9af32c26dff007f4484fe7aa5ecf06d7befd9 in /gnatsd.conf
+COPY file:8fad70d15db71db30b9945fba2b3d29035a631ee4fe410e797aef6981c2a1879 in /gnatsd.conf
 ```
 
--	Created: Mon, 09 May 2016 21:31:13 GMT
--	Parent Layer: `fded26ff197ae1142489e1144625c4106f0726215a5aa4f66e6d5b0fe12033c6`
--	v2 Blob: `sha256:0e987ad24f1253bd48693a5531d7ee8183bcedda99af9ba4dbefee47c441b89d`
+-	Created: Thu, 09 Jun 2016 23:39:54 GMT
+-	Parent Layer: `bd72219a711c26ff7221ddeb7d3410e803d379db48a936abd02588aafeaca267`
+-	v2 Blob: `sha256:cd47d5b9b1598c97337f529a800e8c2f4c88c349b51f3d1245bad0793590aeaf`
 -	v2 Content-Length: 481.0 B
--	v2 Last-Modified: Mon, 09 May 2016 21:31:43 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 23:39:59 GMT
 
-#### `25bcc12c66c91e8c486e1ba2ad2bf49d0e66d2d6062aa6b2ae0dee7466b352c2`
+#### `e6e023dc2ec85471b0be4f6137ff4cee5f2abebca6558b2ac6a3e522254e327d`
 
 ```dockerfile
 EXPOSE 4222/tcp 6222/tcp 8222/tcp
 ```
 
--	Created: Mon, 09 May 2016 21:31:14 GMT
--	Parent Layer: `a7a7913f7bd829c2fd617956ba674dde5da93e850e4ee8d2c26955fa3f21525b`
+-	Created: Thu, 09 Jun 2016 23:39:54 GMT
+-	Parent Layer: `fb4cca6582a36cd13c63dc976dbc63f5d3c6ba647c399c13403937317c208566`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9fe77a20434d150e35676842e4986a3325af7905bfea74484e4894a1ceeb0d4a`
+#### `41c31d7421a5a538601c89a87547162f138dd4205bebdb9b06fbfbd214dd6dc9`
 
 ```dockerfile
 ENTRYPOINT &{["/gnatsd" "-c" "/gnatsd.conf"]}
 ```
 
--	Created: Mon, 09 May 2016 21:31:14 GMT
--	Parent Layer: `25bcc12c66c91e8c486e1ba2ad2bf49d0e66d2d6062aa6b2ae0dee7466b352c2`
+-	Created: Thu, 09 Jun 2016 23:39:54 GMT
+-	Parent Layer: `e6e023dc2ec85471b0be4f6137ff4cee5f2abebca6558b2ac6a3e522254e327d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec939400850f6b7f5f83ce3626ab90b97bf0f2278379a7cd229e557d34384f1`
+#### `bace16bc6f7c16bdbd3e551442eadac36d34cf3e77ef2b32943255f3a46d0e3e`
 
 ```dockerfile
 CMD []
 ```
 
--	Created: Mon, 09 May 2016 21:31:15 GMT
--	Parent Layer: `9fe77a20434d150e35676842e4986a3325af7905bfea74484e4894a1ceeb0d4a`
--	Docker Version: 1.9.1
+-	Created: Thu, 09 Jun 2016 23:39:54 GMT
+-	Parent Layer: `41c31d7421a5a538601c89a87547162f138dd4205bebdb9b06fbfbd214dd6dc9`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
@@ -78,69 +78,69 @@ CMD []
 ## `nats:latest`
 
 ```console
-$ docker pull library/nats@sha256:5202f09610b8d2358b8c090b6aa2c026a6aa2388618290129cd2906e396a560d
+$ docker pull library/nats@sha256:9673d034330e6a6a30132e4a8cb40fae5d40fe08af606ef6f068e85c15e064a4
 ```
 
--	Total v2 Content-Length: 2.3 MB (2325225 bytes)
+-	Total v2 Content-Length: 2.3 MB (2331552 bytes)
 
 ### Layers (5)
 
-#### `fded26ff197ae1142489e1144625c4106f0726215a5aa4f66e6d5b0fe12033c6`
+#### `bd72219a711c26ff7221ddeb7d3410e803d379db48a936abd02588aafeaca267`
 
 ```dockerfile
-COPY file:838b7cb1190322702c70076e696a98984a2e4f20c4b62d9927208e8e94a3d31f in /gnatsd
+COPY file:e2895eeea45b66dd22e3904b4141d74119a446291838f9c843e11c8cdfa486fa in /gnatsd
 ```
 
--	Created: Mon, 09 May 2016 21:31:13 GMT
--	v2 Blob: `sha256:87fc22a9ffb502240045413c171e99d24cb1723c1230d7a9456a65a8d0726f25`
--	v2 Content-Length: 2.3 MB (2324648 bytes)
--	v2 Last-Modified: Mon, 09 May 2016 21:31:49 GMT
+-	Created: Thu, 09 Jun 2016 23:39:53 GMT
+-	v2 Blob: `sha256:d38d231498c64bd98f65236fec5c3fe5c0971fcc0a3dc0b147f2148cfae32f15`
+-	v2 Content-Length: 2.3 MB (2330975 bytes)
+-	v2 Last-Modified: Thu, 09 Jun 2016 23:40:01 GMT
 
-#### `a7a7913f7bd829c2fd617956ba674dde5da93e850e4ee8d2c26955fa3f21525b`
+#### `fb4cca6582a36cd13c63dc976dbc63f5d3c6ba647c399c13403937317c208566`
 
 ```dockerfile
-COPY file:a586f0fa1b2fa9c70904f96358b9af32c26dff007f4484fe7aa5ecf06d7befd9 in /gnatsd.conf
+COPY file:8fad70d15db71db30b9945fba2b3d29035a631ee4fe410e797aef6981c2a1879 in /gnatsd.conf
 ```
 
--	Created: Mon, 09 May 2016 21:31:13 GMT
--	Parent Layer: `fded26ff197ae1142489e1144625c4106f0726215a5aa4f66e6d5b0fe12033c6`
--	v2 Blob: `sha256:0e987ad24f1253bd48693a5531d7ee8183bcedda99af9ba4dbefee47c441b89d`
+-	Created: Thu, 09 Jun 2016 23:39:54 GMT
+-	Parent Layer: `bd72219a711c26ff7221ddeb7d3410e803d379db48a936abd02588aafeaca267`
+-	v2 Blob: `sha256:cd47d5b9b1598c97337f529a800e8c2f4c88c349b51f3d1245bad0793590aeaf`
 -	v2 Content-Length: 481.0 B
--	v2 Last-Modified: Mon, 09 May 2016 21:31:43 GMT
+-	v2 Last-Modified: Thu, 09 Jun 2016 23:39:59 GMT
 
-#### `25bcc12c66c91e8c486e1ba2ad2bf49d0e66d2d6062aa6b2ae0dee7466b352c2`
+#### `e6e023dc2ec85471b0be4f6137ff4cee5f2abebca6558b2ac6a3e522254e327d`
 
 ```dockerfile
 EXPOSE 4222/tcp 6222/tcp 8222/tcp
 ```
 
--	Created: Mon, 09 May 2016 21:31:14 GMT
--	Parent Layer: `a7a7913f7bd829c2fd617956ba674dde5da93e850e4ee8d2c26955fa3f21525b`
+-	Created: Thu, 09 Jun 2016 23:39:54 GMT
+-	Parent Layer: `fb4cca6582a36cd13c63dc976dbc63f5d3c6ba647c399c13403937317c208566`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9fe77a20434d150e35676842e4986a3325af7905bfea74484e4894a1ceeb0d4a`
+#### `41c31d7421a5a538601c89a87547162f138dd4205bebdb9b06fbfbd214dd6dc9`
 
 ```dockerfile
 ENTRYPOINT &{["/gnatsd" "-c" "/gnatsd.conf"]}
 ```
 
--	Created: Mon, 09 May 2016 21:31:14 GMT
--	Parent Layer: `25bcc12c66c91e8c486e1ba2ad2bf49d0e66d2d6062aa6b2ae0dee7466b352c2`
+-	Created: Thu, 09 Jun 2016 23:39:54 GMT
+-	Parent Layer: `e6e023dc2ec85471b0be4f6137ff4cee5f2abebca6558b2ac6a3e522254e327d`
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ec939400850f6b7f5f83ce3626ab90b97bf0f2278379a7cd229e557d34384f1`
+#### `bace16bc6f7c16bdbd3e551442eadac36d34cf3e77ef2b32943255f3a46d0e3e`
 
 ```dockerfile
 CMD []
 ```
 
--	Created: Mon, 09 May 2016 21:31:15 GMT
--	Parent Layer: `9fe77a20434d150e35676842e4986a3325af7905bfea74484e4894a1ceeb0d4a`
--	Docker Version: 1.9.1
+-	Created: Thu, 09 Jun 2016 23:39:54 GMT
+-	Parent Layer: `41c31d7421a5a538601c89a87547162f138dd4205bebdb9b06fbfbd214dd6dc9`
+-	Docker Version: 1.10.3
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
