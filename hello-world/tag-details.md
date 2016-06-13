@@ -7,33 +7,29 @@
 ## `hello-world:latest`
 
 ```console
-$ docker pull library/hello-world@sha256:ff215bfe287b986dba232bc82892d636b0e1b1c1ae42f779202caced61f6376b
+$ docker pull hello-world@sha256:e52be8ffeeb1f374f440893189cd32f44cb166650e7ab185fa7735b7dc48d619
 ```
 
--	Total v2 Content-Length: 637.0 B
+- Platforms:
+  - linux; amd64
 
-### Layers (2)
+### `hello-world:latest` - linux; amd64
 
-#### `f9d83caeda74eebe4decad1c028f9a1ed687bb41ad358436efbef054ccdb923c`
+- Docker Version: 1.10.3
+- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+- Total Size: **605.0 B**  
+  (compressed transfer size, not on-disk size)
+- Image ID: `sha256:693bce72514984f01f217e878d143162b5f4c1b83b018e7e6dc7394f055e7cd5`
+- Default Command: `["\/hello"]`
 
 ```dockerfile
+# Wed, 08 Jun 2016 01:04:08 GMT
 COPY file:5b991cab355ee2f81ad3ac443c7b66111b0cb4468522e719e726411075919a65 in /
-```
-
--	Created: Wed, 08 Jun 2016 01:04:08 GMT
--	v2 Blob: `sha256:a9d36faac0fe2a855f798346f33bd48917bf3af9b6e4b77870ef8862fee8a8a3`
--	v2 Content-Length: 605.0 B
--	v2 Last-Modified: Wed, 08 Jun 2016 20:54:32 GMT
-
-#### `2cc48731dfffcdcb266501fb3b8eaf330a026827753f3b51a38cb5cdea5b536f`
-
-```dockerfile
+# Wed, 08 Jun 2016 01:04:08 GMT
 CMD ["/hello"]
 ```
 
--	Created: Wed, 08 Jun 2016 01:04:08 GMT
--	Parent Layer: `f9d83caeda74eebe4decad1c028f9a1ed687bb41ad358436efbef054ccdb923c`
--	Docker Version: 1.10.3
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+- Layers:
+  - `sha256:a9d36faac0fe2a855f798346f33bd48917bf3af9b6e4b77870ef8862fee8a8a3`  
+    Last Modified: Wed, 08 Jun 2016 20:54:32 GMT  
+    Size: 605.0 B
