@@ -8,8 +8,21 @@ use Mojo::UserAgent;
 
 die 'no images specified' unless @ARGV;
 
+my $mediaManifestList = 'application/vnd.docker.distribution.manifest.list.v2+json';
+my $mediaManifestV2 = 'application/vnd.docker.distribution.manifest.v2+json';
+my $mediaManifestV1 = 'application/vnd.docker.distribution.manifest.v1+json';
+
 my $ua = Mojo::UserAgent->new->max_redirects(10);
-$ua->transactor->name('Docker');
+$ua->transactor->name(join ' ',
+	# https://github.com/docker/docker/blob/v1.11.2/dockerversion/useragent.go#L13-L34
+	'docker/1.11.2',
+	'go/1.6.2',
+	'git-commit/v1.11.2',
+	'kernel/4.4.11',
+	'os/linux',
+	'arch/amd64',
+	# BOGUS USER AGENTS FOR THE BOGUS USER AGENT THRONE
+);
 
 my $maxRetries = 3;
 sub ua_req {
@@ -102,7 +115,13 @@ sub get_manifest {
 	return $manifests{$image} if $manifests{$image};
 
 	my $manifestTx = registry_req(get => $repo => "manifests/$tag" => (
-			#Accept => 'application/vnd.docker.distribution.manifest.v2+json',
+			# prefer a "version 2" manifest
+			# https://docs.docker.com/registry/spec/manifest-v2-2/
+			Accept => [
+				$mediaManifestList,
+				$mediaManifestV2,
+				$mediaManifestV1,
+			],
 		));
 	return () if $manifestTx->res->code == 404; # tag doesn't exist
 	die "failed to get manifest for $image" unless $manifestTx->success;
@@ -112,6 +131,26 @@ sub get_manifest {
 	);
 }
 
+sub blob_req {
+	my $method = shift;
+	my $repo = shift;
+	my $blob = shift;
+	my %extHeaders = @_;
+	return registry_req($method => $repo => "blobs/$blob" => %extHeaders);
+}
+
+sub get_blob_json {
+	my ($repo, $blob) = @_;
+
+	my $key = $repo . '@' . $blob;
+	state %blobs;
+	return $blobs{$key} if $blobs{$key};
+
+	my $tx = blob_req(get => ($repo, $blob) => ());
+	die "failed to get blob data for $key" unless $tx->success;
+	return $blobs{$key} = $tx->res->json;
+}
+
 sub get_blob_headers {
 	my ($repo, $blob) = @_;
 
@@ -119,7 +158,7 @@ sub get_blob_headers {
 	state %headers;
 	return $headers{$key} if $headers{$key};
 
-	my $headersTx = registry_req(head => $repo => "blobs/$blob" => ());
+	my $headersTx = blob_req(head => ($repo, $blob) => ());
 	die "failed to get headers for $key" unless $headersTx->success;
 	return $headers{$key} = $headersTx->res->headers;
 }
@@ -140,6 +179,181 @@ sub get_layer_data {
 	$data->{blob_content_length} = $blobHeaders->content_length;
 	$data->{blob_last_modified} = $blobHeaders->last_modified;
 	return $layers{$id} = $data;
+}
+
+sub parse_manifest_v1_data {
+	my ($repo, $manifest) = @_;
+
+	my $data = {
+		manifestVersion => $mediaManifestV1,
+		manifest => $manifest,
+		imageId => undef,
+		platform => {},
+		dockerVersion => undef,
+		entrypoint => undef,
+		defaultCommand => undef,
+		layers => [],
+		commands => [],
+	};
+
+	my %seenBlob;
+	for my $fsLayer (@{ $manifest->{fsLayers} // [] }) {
+		my $blob = $fsLayer->{blobSum};
+		next unless $blob;
+
+		next if $seenBlob{$blob};
+		$seenBlob{$blob} = 1;
+
+		push @{ $data->{layers} }, {
+			digest => $blob,
+		};
+	}
+
+	for my $history (@{ $manifest->{history} // [] }) {
+		next unless $history->{v1Compatibility};
+
+		my $v1 = Mojo::Util::encode('UTF-8', $history->{v1Compatibility});
+
+		my $json = Mojo::JSON::decode_json($v1);
+
+		$data->{dockerVersion} //= $json->{docker_version};
+		$data->{platform}{os} //= $json->{os};
+		$data->{platform}{architecture} //= $json->{architecture};
+		$data->{entrypoint} //= $json->{config}{Entrypoint};
+		$data->{defaultCommand} //= $json->{config}{Cmd};
+		$data->{imageId} //= $json->{id};
+
+		# "history" in v1 is in reverse order (hence "unshift" instead of "push")
+		unshift @{ $data->{commands} }, {
+			created => $json->{created},
+			command => $json->{container_config}{Cmd},
+		};
+	}
+
+	return $data;
+}
+
+sub parse_manifest_v2_data {
+	my ($repo, $manifest) = @_;
+
+	my $configDigest = $manifest->{config}{digest};
+	my $config = get_blob_json($repo, $configDigest);
+
+	return {
+		manifestVersion => $mediaManifestV2,
+		manifest => $manifest,
+		imageId => $configDigest,
+		config => $config,
+		platform => {
+			os => $config->{os},
+			architecture => $config->{architecture},
+		},
+		dockerVersion => $config->{docker_version},
+		entrypoint => $config->{config}{Entrypoint},
+		defaultCommand => $config->{config}{Cmd},
+		layers => $manifest->{layers} // [],
+		commands => $config->{history} // [],
+	};
+}
+
+sub get_image_data {
+	my ($image) = @_;
+
+	my ($repo, $tag) = split_image_name($image);
+
+	my ($digest, $manifest) = get_manifest($repo, $tag);
+
+	unless (defined $digest && defined $manifest) {
+		# tag must not exist!
+		return;
+	}
+
+	my $data = {
+		repo => $repo,
+		tag => $tag,
+		digest => $digest,
+		images => [],
+	};
+
+	if ($manifest->{schemaVersion} eq '1') {
+		# https://docs.docker.com/registry/spec/manifest-v2-1/
+		push @{$data->{images}}, parse_manifest_v1_data($repo, $manifest);
+	}
+	elsif ($manifest->{schemaVersion} eq '2') {
+		# https://docs.docker.com/registry/spec/manifest-v2-2/
+		if ($manifest->{mediaType} eq $mediaManifestV2) {
+			push @{$data->{images}}, parse_manifest_v2_data($repo, $manifest);
+		}
+		elsif ($manifest->{mediaType} eq $mediaManifestList) {
+			$data->{manifest} = $manifest;
+			$data->{manifestVersion} = $manifest->{mediaType};
+
+			for my $sub (@{ $manifest->{manifests} // [] }) {
+				my $digest = $sub->{digest};
+				die "sub-manifest missing digest!" unless $digest;
+
+				my $subManifest = get_manifest($repo, $digest);
+				die "manifest $digest does not exist!" unless defined $subManifest;
+
+				my $subData;
+				if ($sub->{mediaType} eq $mediaManifestV1) {
+					$subData = parse_manifest_v1_data($repo, $subManifest);
+				}
+				elsif ($sub->{mediaType} eq $mediaManifestV2) {
+					$subData = parse_manifest_v2_data($repo, $subManifest);
+				}
+				else {
+					die "unknown mediaType $manifest->{mediaType} for $digest";
+				}
+
+				$subData->{digest} = $digest;
+				$subData->{platform} = $sub->{platform};
+
+				push @{$data->{images}}, $subData;
+			}
+		}
+		else {
+			die "unknown mediaType $manifest->{mediaType} for schemaVersion 2";
+		}
+	}
+	else {
+		die "unknown schemaVersion: $manifest->{schemaVersion}";
+	}
+
+	for my $image (@{ $data->{images} }) {
+		$image->{platform} //= {};
+
+		$image->{layers} //= [];
+		$image->{size} = 0;
+		for my $layer (@{ $image->{layers} }) {
+			my $headers = get_blob_headers($repo, $layer->{digest});
+			$layer->{size} //= $headers->content_length;
+			$layer->{mediaType} //= $headers->content_type;
+			$layer->{lastModified} //= $headers->last_modified;
+			$image->{size} += $layer->{size};
+		}
+
+		$image->{commands} //= [];
+		for my $command (@{ $image->{commands} }) {
+			$command->{command} //= [ $command->{created_by} ];
+			$command->{dockerfile} //= cmd_to_dockerfile($command->{command});
+		}
+	}
+
+	return $data;
+}
+
+sub platform_string {
+	my $platform = shift;
+	return (
+		($platform->{os} // 'linux')
+		. (defined $platform->{'os.version'} ? ' version ' . $platform->{'os.version'} : '')
+		. (defined $platform->{'os.features'} ? ' ft. ' . join(', ', @{ $platform->{'os.features'} }) : '')
+		. '; '
+		. ($platform->{architecture} // 'amd64')
+		. (defined $platform->{variant} ? ' variant ' . $platform->{variant} : '')
+		. (defined $platform->{features} ? ' ft. ' . join(', ', @{ $platform->{features} }) : '')
+	);
 }
 
 sub cmd_to_dockerfile {
@@ -224,61 +438,66 @@ sub date {
 
 while (my $image = shift) {
 	print "\n";
+
 	say '## `' . $image . '`';
-	my ($repo, $tag) = split_image_name($image);
 
-	my ($digest, $manifest) = get_manifest($repo, $tag);
+	my $data = get_image_data($image);
 
-	unless (defined $digest && defined $manifest) {
+	unless ($data) {
 		# tag must not exist yet!
 		say "\n", '**does not exist** (yet?)';
 		next;
 	}
 
+	my $repo = $data->{repo};
+	$repo =~ s!^library/!!;
+
 	print "\n";
 	say '```console';
-	say '$ docker pull ' . $repo . '@' . $digest;
+	say '$ docker pull ' . $repo . '@' . $data->{digest};
 	say '```';
 
-	my %parentChild;
-	my %totals = (
-		virtual_size => 0,
-		blob_content_length => 0,
-	);
-	for my $i (0 .. $#{ $manifest->{fsLayers} }) {
-		my $v1 = Mojo::Util::encode 'UTF-8', $manifest->{history}[$i]{v1Compatibility};
-		my $data = get_layer_data(
-			$repo, undef,
-			$manifest->{fsLayers}[$i]{blobSum},
-			Mojo::JSON::decode_json($v1),
-		);
-		$parentChild{$data->{parent} // ''} = $data->{id};
-		$totals{$_} += $data->{$_} for keys %totals;
+	print "\n";
+	say '- Manifest MIME: `' . $data->{manifestVersion} . '`' if $data->{manifestVersion};
+	say '- Platforms:';
+	for my $imageData (@{ $data->{images} }) {
+		say '  - ' . platform_string($imageData->{platform});
 	}
-	print "\n";
-	say "-\t" . 'Total Virtual Size: ' . size($totals{virtual_size}) if $totals{virtual_size};
-	say "-\t" . 'Total v2 Content-Length: ' . size($totals{blob_content_length});
-	print "\n";
-	say '### Layers (' . scalar(keys %parentChild) . ')';
-	my $cur = $parentChild{''};
-	while ($cur) {
+
+	for my $imageData (@{ $data->{images} }) {
 		print "\n";
-		say '#### `' . $cur . '`';
-		my $data = get_layer_data($repo, $cur);
-		if ($data->{container_command}) {
+		say '### `' . $image . '` - ' . platform_string($imageData->{platform});
+
+		if ($imageData->{digest}) {
 			print "\n";
-			say '```dockerfile';
-			say cmd_to_dockerfile($data->{container_command});
+			say '```console';
+			say '$ docker pull ' . $repo . '@' . $imageData->{digest};
 			say '```';
 		}
+
 		print "\n";
-		say "-\t" . 'Created: ' . date($data->{created}) if $data->{created};
-		say "-\t" . 'Parent Layer: `' . $data->{parent} . '`' if $data->{parent};
-		say "-\t" . 'Docker Version: ' . $data->{docker_version} if $data->{docker_version};
-		say "-\t" . 'Virtual Size: ' . size($data->{virtual_size}) if $totals{virtual_size};
-		say "-\t" . 'v2 Blob: `' . $data->{blob} . '`';
-		say "-\t" . 'v2 Content-Length: ' . size($data->{blob_content_length});
-		say "-\t" . 'v2 Last-Modified: ' . date($data->{blob_last_modified}) if $data->{blob_last_modified};
-		$cur = $parentChild{$cur};
+		say '- Docker Version: ' . $imageData->{dockerVersion} if $imageData->{dockerVersion};
+		say '- Manifest MIME: `' . $imageData->{manifestVersion} . '`' if $imageData->{manifestVersion};
+		say '- Total Size: **' . size($imageData->{size}) . '**  ';
+		say '  (compressed transfer size, not on-disk size)';
+		say '- Image ID: `' . $imageData->{imageId} . '`' if $imageData->{imageId};
+		say '- Entrypoint: `' . Mojo::JSON::encode_json($imageData->{entrypoint}) . '`' if $imageData->{entrypoint} && @{ $imageData->{entrypoint} };
+		say '- Default Command: `' . Mojo::JSON::encode_json($imageData->{defaultCommand}) . '`' if $imageData->{defaultCommand};
+
+		print "\n";
+		say '```dockerfile';
+		for my $command (@{ $imageData->{commands} }) {
+			say '# ' . date($command->{created});
+			say $command->{dockerfile};
+		}
+		say '```';
+
+		print "\n";
+		say '- Layers:';
+		for my $layer (@{ $imageData->{layers} }) {
+			say '  - `' . $layer->{digest} . '`  ';
+			say '    Last Modified: ' . date($layer->{lastModified}) . '  ';
+			say '    Size: ' . size($layer->{size});
+		}
 	}
 }
