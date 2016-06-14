@@ -2,429 +2,321 @@
 
 # Tags of `joomla`
 
--	[`joomla:3.5.0-apache`](#joomla350-apache)
--	[`joomla:3.5.0`](#joomla350)
+-	[`joomla:3.5.1-apache`](#joomla351-apache)
+-	[`joomla:3.5.1`](#joomla351)
 -	[`joomla:3.5-apache`](#joomla35-apache)
 -	[`joomla:3.5`](#joomla35)
 -	[`joomla:3-apache`](#joomla3-apache)
 -	[`joomla:apache`](#joomlaapache)
 -	[`joomla:3`](#joomla3)
 -	[`joomla:latest`](#joomlalatest)
--	[`joomla:3.5.0-apache-php7`](#joomla350-apache-php7)
+-	[`joomla:3.5.1-apache-php7`](#joomla351-apache-php7)
 -	[`joomla:3.5-apache-php7`](#joomla35-apache-php7)
 -	[`joomla:3-apache-php7`](#joomla3-apache-php7)
 -	[`joomla:apache-php7`](#joomlaapache-php7)
--	[`joomla:3.5.0-fpm`](#joomla350-fpm)
+-	[`joomla:3.5.1-fpm`](#joomla351-fpm)
 -	[`joomla:3.5-fpm`](#joomla35-fpm)
 -	[`joomla:3-fpm`](#joomla3-fpm)
 -	[`joomla:fpm`](#joomlafpm)
--	[`joomla:3.5.0-fpm-php7`](#joomla350-fpm-php7)
+-	[`joomla:3.5.1-fpm-php7`](#joomla351-fpm-php7)
 -	[`joomla:3.5-fpm-php7`](#joomla35-fpm-php7)
 -	[`joomla:3-fpm-php7`](#joomla3-fpm-php7)
 -	[`joomla:fpm-php7`](#joomlafpm-php7)
 
-## `joomla:3.5.0-apache`
+## `joomla:3.5.1-apache`
 
 ```console
-$ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d750a381b981823
+$ docker pull joomla@sha256:2a06c77fbbb85d5e5c6bbe5cb8aba91f977f7db431ddeb76f76116ae6ea2a562
 ```
 
 - Platforms:
   - linux; amd64
 
-### `joomla:3.5.0-apache` - linux; amd64
+### `joomla:3.5.1-apache` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **177.6 MB (177563770 bytes)**  
+- Total Size: **177.7 MB (177668049 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:14e4d9e66ca1396c9c87394897a17a2db62ffa85b4583dc4bc1bd89e35b84d13`
+- Image ID: `sha256:dc474186e9739d2fd620a4f93810383a447598087d081fbd9035706919b6af43`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 02:32:04 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:32:05 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:32:06 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:32:07 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:37:45 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:14:28 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:38:16 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:38:17 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 02:38:18 GMT
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:38:20 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 02:38:21 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:03:35 GMT
+# Fri, 10 Jun 2016 21:41:08 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:03:36 GMT
+# Fri, 10 Jun 2016 21:41:09 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:04:34 GMT
+# Fri, 10 Jun 2016 21:42:31 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:04:45 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:04:46 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:04:53 GMT
+# Tue, 14 Jun 2016 21:43:11 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:12 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:19 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:04:55 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:04:56 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:19 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:20 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:20 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:20 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:6c79ca56896739da0b0cfe79727905473491cca991456aa511dbf5f4b221d310`  
-    Last Modified: Tue, 24 May 2016 16:12:25 GMT  
-    Size: 33.5 MB (33457075 bytes)
-  - `sha256:91b402b132dc1186b1e14d8d474529b5496a0cb0081f73aaa492ddb367573cbf`  
-    Last Modified: Tue, 24 May 2016 16:11:35 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:d59386f2c4bea146253835a42bda61dbe85d069a2f7215b3b3c7bba3fb10ff63`  
-    Last Modified: Tue, 24 May 2016 16:11:31 GMT  
-    Size: 291.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e5b4feb885941da373dee839221dcbad1e5327102d873bd05c7b9f98eb632f17`  
-    Last Modified: Tue, 31 May 2016 19:39:38 GMT  
-    Size: 294.0 B
-  - `sha256:436bb55a63952c32fa7dbaa4b07c1d30fc99c8ac8cb962c02ca537cb3c9e473b`  
-    Last Modified: Tue, 31 May 2016 19:39:35 GMT  
-    Size: 3.4 MB (3388006 bytes)
-  - `sha256:f9c11cee6556c3094b917408c61132eddba804c1a6f9c8f108e54e1fe0c87451`  
-    Last Modified: Tue, 31 May 2016 19:39:29 GMT  
-    Size: 801.0 KB (800952 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:8dcd40ae51fcbdae6a2c74f7184cd608f472680362fbd1ec0c9c7e062bd789aa`  
-    Last Modified: Tue, 31 May 2016 19:39:19 GMT  
-    Size: 8.4 MB (8375849 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:e6088e923666bd67f46ac865a532fd4afad16a1f7d643bd656a266cb312c89e4`  
+    Last Modified: Tue, 14 Jun 2016 21:44:33 GMT  
+    Size: 33.5 MB (33489412 bytes)
+  - `sha256:19daa38d06afad426cd7e7682688b44d98d4f9b06343ee511481266399e3233e`  
+    Last Modified: Tue, 14 Jun 2016 21:44:09 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:e523792edfac6c34c5280b4d48791dc4aeba9ced2e3c09e737e39e263b1712e0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 292.0 B
+  - `sha256:dcd196d29e2e71a4aec71981f9dd890a695e4ad1a7d4322aa85ecd82555682b0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 296.0 B
+  - `sha256:797240a02dfd3ffd3bdb3f420bb2af29df408ae6f26beafe7438ad3cb23ffb99`  
+    Last Modified: Tue, 14 Jun 2016 21:44:06 GMT  
+    Size: 3.4 MB (3418318 bytes)
+  - `sha256:0edbd7c8c54a069676396046694e4abaffc03710f4a043c1137d6611b128bfdd`  
+    Last Modified: Tue, 14 Jun 2016 21:44:05 GMT  
+    Size: 800.9 KB (800855 bytes)
+  - `sha256:3050f7fbb377fe47f34542f9f2fa5c5152414c2b0526a4bf85312a23bd5b5693`  
+    Last Modified: Tue, 14 Jun 2016 21:44:08 GMT  
+    Size: 8.4 MB (8380274 bytes)
+  - `sha256:7d798a62eb3eb06a1f1b6c96f2504679c5e34be62720e25e83325137d2d7af95`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:9e1c0a4d3955715c245f5dec2f4f0d4de95d3abb00e5d91923e5281186d757c7`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
-## `joomla:3.5.0`
+## `joomla:3.5.1`
 
 ```console
-$ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d750a381b981823
+$ docker pull joomla@sha256:2a06c77fbbb85d5e5c6bbe5cb8aba91f977f7db431ddeb76f76116ae6ea2a562
 ```
 
 - Platforms:
   - linux; amd64
 
-### `joomla:3.5.0` - linux; amd64
+### `joomla:3.5.1` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **177.6 MB (177563770 bytes)**  
+- Total Size: **177.7 MB (177668049 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:14e4d9e66ca1396c9c87394897a17a2db62ffa85b4583dc4bc1bd89e35b84d13`
+- Image ID: `sha256:dc474186e9739d2fd620a4f93810383a447598087d081fbd9035706919b6af43`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 02:32:04 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:32:05 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:32:06 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:32:07 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:37:45 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:14:28 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:38:16 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:38:17 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 02:38:18 GMT
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:38:20 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 02:38:21 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:03:35 GMT
+# Fri, 10 Jun 2016 21:41:08 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:03:36 GMT
+# Fri, 10 Jun 2016 21:41:09 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:04:34 GMT
+# Fri, 10 Jun 2016 21:42:31 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:04:45 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:04:46 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:04:53 GMT
+# Tue, 14 Jun 2016 21:43:11 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:12 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:19 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:04:55 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:04:56 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:19 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:20 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:20 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:20 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:6c79ca56896739da0b0cfe79727905473491cca991456aa511dbf5f4b221d310`  
-    Last Modified: Tue, 24 May 2016 16:12:25 GMT  
-    Size: 33.5 MB (33457075 bytes)
-  - `sha256:91b402b132dc1186b1e14d8d474529b5496a0cb0081f73aaa492ddb367573cbf`  
-    Last Modified: Tue, 24 May 2016 16:11:35 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:d59386f2c4bea146253835a42bda61dbe85d069a2f7215b3b3c7bba3fb10ff63`  
-    Last Modified: Tue, 24 May 2016 16:11:31 GMT  
-    Size: 291.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e5b4feb885941da373dee839221dcbad1e5327102d873bd05c7b9f98eb632f17`  
-    Last Modified: Tue, 31 May 2016 19:39:38 GMT  
-    Size: 294.0 B
-  - `sha256:436bb55a63952c32fa7dbaa4b07c1d30fc99c8ac8cb962c02ca537cb3c9e473b`  
-    Last Modified: Tue, 31 May 2016 19:39:35 GMT  
-    Size: 3.4 MB (3388006 bytes)
-  - `sha256:f9c11cee6556c3094b917408c61132eddba804c1a6f9c8f108e54e1fe0c87451`  
-    Last Modified: Tue, 31 May 2016 19:39:29 GMT  
-    Size: 801.0 KB (800952 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:8dcd40ae51fcbdae6a2c74f7184cd608f472680362fbd1ec0c9c7e062bd789aa`  
-    Last Modified: Tue, 31 May 2016 19:39:19 GMT  
-    Size: 8.4 MB (8375849 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:e6088e923666bd67f46ac865a532fd4afad16a1f7d643bd656a266cb312c89e4`  
+    Last Modified: Tue, 14 Jun 2016 21:44:33 GMT  
+    Size: 33.5 MB (33489412 bytes)
+  - `sha256:19daa38d06afad426cd7e7682688b44d98d4f9b06343ee511481266399e3233e`  
+    Last Modified: Tue, 14 Jun 2016 21:44:09 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:e523792edfac6c34c5280b4d48791dc4aeba9ced2e3c09e737e39e263b1712e0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 292.0 B
+  - `sha256:dcd196d29e2e71a4aec71981f9dd890a695e4ad1a7d4322aa85ecd82555682b0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 296.0 B
+  - `sha256:797240a02dfd3ffd3bdb3f420bb2af29df408ae6f26beafe7438ad3cb23ffb99`  
+    Last Modified: Tue, 14 Jun 2016 21:44:06 GMT  
+    Size: 3.4 MB (3418318 bytes)
+  - `sha256:0edbd7c8c54a069676396046694e4abaffc03710f4a043c1137d6611b128bfdd`  
+    Last Modified: Tue, 14 Jun 2016 21:44:05 GMT  
+    Size: 800.9 KB (800855 bytes)
+  - `sha256:3050f7fbb377fe47f34542f9f2fa5c5152414c2b0526a4bf85312a23bd5b5693`  
+    Last Modified: Tue, 14 Jun 2016 21:44:08 GMT  
+    Size: 8.4 MB (8380274 bytes)
+  - `sha256:7d798a62eb3eb06a1f1b6c96f2504679c5e34be62720e25e83325137d2d7af95`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:9e1c0a4d3955715c245f5dec2f4f0d4de95d3abb00e5d91923e5281186d757c7`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:3.5-apache`
 
 ```console
-$ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d750a381b981823
+$ docker pull joomla@sha256:2a06c77fbbb85d5e5c6bbe5cb8aba91f977f7db431ddeb76f76116ae6ea2a562
 ```
 
 - Platforms:
@@ -432,198 +324,144 @@ $ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d75
 
 ### `joomla:3.5-apache` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **177.6 MB (177563770 bytes)**  
+- Total Size: **177.7 MB (177668049 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:14e4d9e66ca1396c9c87394897a17a2db62ffa85b4583dc4bc1bd89e35b84d13`
+- Image ID: `sha256:dc474186e9739d2fd620a4f93810383a447598087d081fbd9035706919b6af43`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 02:32:04 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:32:05 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:32:06 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:32:07 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:37:45 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:14:28 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:38:16 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:38:17 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 02:38:18 GMT
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:38:20 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 02:38:21 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:03:35 GMT
+# Fri, 10 Jun 2016 21:41:08 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:03:36 GMT
+# Fri, 10 Jun 2016 21:41:09 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:04:34 GMT
+# Fri, 10 Jun 2016 21:42:31 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:04:45 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:04:46 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:04:53 GMT
+# Tue, 14 Jun 2016 21:43:11 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:12 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:19 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:04:55 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:04:56 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:19 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:20 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:20 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:20 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:6c79ca56896739da0b0cfe79727905473491cca991456aa511dbf5f4b221d310`  
-    Last Modified: Tue, 24 May 2016 16:12:25 GMT  
-    Size: 33.5 MB (33457075 bytes)
-  - `sha256:91b402b132dc1186b1e14d8d474529b5496a0cb0081f73aaa492ddb367573cbf`  
-    Last Modified: Tue, 24 May 2016 16:11:35 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:d59386f2c4bea146253835a42bda61dbe85d069a2f7215b3b3c7bba3fb10ff63`  
-    Last Modified: Tue, 24 May 2016 16:11:31 GMT  
-    Size: 291.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e5b4feb885941da373dee839221dcbad1e5327102d873bd05c7b9f98eb632f17`  
-    Last Modified: Tue, 31 May 2016 19:39:38 GMT  
-    Size: 294.0 B
-  - `sha256:436bb55a63952c32fa7dbaa4b07c1d30fc99c8ac8cb962c02ca537cb3c9e473b`  
-    Last Modified: Tue, 31 May 2016 19:39:35 GMT  
-    Size: 3.4 MB (3388006 bytes)
-  - `sha256:f9c11cee6556c3094b917408c61132eddba804c1a6f9c8f108e54e1fe0c87451`  
-    Last Modified: Tue, 31 May 2016 19:39:29 GMT  
-    Size: 801.0 KB (800952 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:8dcd40ae51fcbdae6a2c74f7184cd608f472680362fbd1ec0c9c7e062bd789aa`  
-    Last Modified: Tue, 31 May 2016 19:39:19 GMT  
-    Size: 8.4 MB (8375849 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:e6088e923666bd67f46ac865a532fd4afad16a1f7d643bd656a266cb312c89e4`  
+    Last Modified: Tue, 14 Jun 2016 21:44:33 GMT  
+    Size: 33.5 MB (33489412 bytes)
+  - `sha256:19daa38d06afad426cd7e7682688b44d98d4f9b06343ee511481266399e3233e`  
+    Last Modified: Tue, 14 Jun 2016 21:44:09 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:e523792edfac6c34c5280b4d48791dc4aeba9ced2e3c09e737e39e263b1712e0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 292.0 B
+  - `sha256:dcd196d29e2e71a4aec71981f9dd890a695e4ad1a7d4322aa85ecd82555682b0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 296.0 B
+  - `sha256:797240a02dfd3ffd3bdb3f420bb2af29df408ae6f26beafe7438ad3cb23ffb99`  
+    Last Modified: Tue, 14 Jun 2016 21:44:06 GMT  
+    Size: 3.4 MB (3418318 bytes)
+  - `sha256:0edbd7c8c54a069676396046694e4abaffc03710f4a043c1137d6611b128bfdd`  
+    Last Modified: Tue, 14 Jun 2016 21:44:05 GMT  
+    Size: 800.9 KB (800855 bytes)
+  - `sha256:3050f7fbb377fe47f34542f9f2fa5c5152414c2b0526a4bf85312a23bd5b5693`  
+    Last Modified: Tue, 14 Jun 2016 21:44:08 GMT  
+    Size: 8.4 MB (8380274 bytes)
+  - `sha256:7d798a62eb3eb06a1f1b6c96f2504679c5e34be62720e25e83325137d2d7af95`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:9e1c0a4d3955715c245f5dec2f4f0d4de95d3abb00e5d91923e5281186d757c7`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:3.5`
 
 ```console
-$ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d750a381b981823
+$ docker pull joomla@sha256:2a06c77fbbb85d5e5c6bbe5cb8aba91f977f7db431ddeb76f76116ae6ea2a562
 ```
 
 - Platforms:
@@ -631,198 +469,144 @@ $ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d75
 
 ### `joomla:3.5` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **177.6 MB (177563770 bytes)**  
+- Total Size: **177.7 MB (177668049 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:14e4d9e66ca1396c9c87394897a17a2db62ffa85b4583dc4bc1bd89e35b84d13`
+- Image ID: `sha256:dc474186e9739d2fd620a4f93810383a447598087d081fbd9035706919b6af43`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 02:32:04 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:32:05 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:32:06 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:32:07 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:37:45 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:14:28 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:38:16 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:38:17 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 02:38:18 GMT
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:38:20 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 02:38:21 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:03:35 GMT
+# Fri, 10 Jun 2016 21:41:08 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:03:36 GMT
+# Fri, 10 Jun 2016 21:41:09 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:04:34 GMT
+# Fri, 10 Jun 2016 21:42:31 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:04:45 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:04:46 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:04:53 GMT
+# Tue, 14 Jun 2016 21:43:11 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:12 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:19 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:04:55 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:04:56 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:19 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:20 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:20 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:20 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:6c79ca56896739da0b0cfe79727905473491cca991456aa511dbf5f4b221d310`  
-    Last Modified: Tue, 24 May 2016 16:12:25 GMT  
-    Size: 33.5 MB (33457075 bytes)
-  - `sha256:91b402b132dc1186b1e14d8d474529b5496a0cb0081f73aaa492ddb367573cbf`  
-    Last Modified: Tue, 24 May 2016 16:11:35 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:d59386f2c4bea146253835a42bda61dbe85d069a2f7215b3b3c7bba3fb10ff63`  
-    Last Modified: Tue, 24 May 2016 16:11:31 GMT  
-    Size: 291.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e5b4feb885941da373dee839221dcbad1e5327102d873bd05c7b9f98eb632f17`  
-    Last Modified: Tue, 31 May 2016 19:39:38 GMT  
-    Size: 294.0 B
-  - `sha256:436bb55a63952c32fa7dbaa4b07c1d30fc99c8ac8cb962c02ca537cb3c9e473b`  
-    Last Modified: Tue, 31 May 2016 19:39:35 GMT  
-    Size: 3.4 MB (3388006 bytes)
-  - `sha256:f9c11cee6556c3094b917408c61132eddba804c1a6f9c8f108e54e1fe0c87451`  
-    Last Modified: Tue, 31 May 2016 19:39:29 GMT  
-    Size: 801.0 KB (800952 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:8dcd40ae51fcbdae6a2c74f7184cd608f472680362fbd1ec0c9c7e062bd789aa`  
-    Last Modified: Tue, 31 May 2016 19:39:19 GMT  
-    Size: 8.4 MB (8375849 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:e6088e923666bd67f46ac865a532fd4afad16a1f7d643bd656a266cb312c89e4`  
+    Last Modified: Tue, 14 Jun 2016 21:44:33 GMT  
+    Size: 33.5 MB (33489412 bytes)
+  - `sha256:19daa38d06afad426cd7e7682688b44d98d4f9b06343ee511481266399e3233e`  
+    Last Modified: Tue, 14 Jun 2016 21:44:09 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:e523792edfac6c34c5280b4d48791dc4aeba9ced2e3c09e737e39e263b1712e0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 292.0 B
+  - `sha256:dcd196d29e2e71a4aec71981f9dd890a695e4ad1a7d4322aa85ecd82555682b0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 296.0 B
+  - `sha256:797240a02dfd3ffd3bdb3f420bb2af29df408ae6f26beafe7438ad3cb23ffb99`  
+    Last Modified: Tue, 14 Jun 2016 21:44:06 GMT  
+    Size: 3.4 MB (3418318 bytes)
+  - `sha256:0edbd7c8c54a069676396046694e4abaffc03710f4a043c1137d6611b128bfdd`  
+    Last Modified: Tue, 14 Jun 2016 21:44:05 GMT  
+    Size: 800.9 KB (800855 bytes)
+  - `sha256:3050f7fbb377fe47f34542f9f2fa5c5152414c2b0526a4bf85312a23bd5b5693`  
+    Last Modified: Tue, 14 Jun 2016 21:44:08 GMT  
+    Size: 8.4 MB (8380274 bytes)
+  - `sha256:7d798a62eb3eb06a1f1b6c96f2504679c5e34be62720e25e83325137d2d7af95`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:9e1c0a4d3955715c245f5dec2f4f0d4de95d3abb00e5d91923e5281186d757c7`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:3-apache`
 
 ```console
-$ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d750a381b981823
+$ docker pull joomla@sha256:2a06c77fbbb85d5e5c6bbe5cb8aba91f977f7db431ddeb76f76116ae6ea2a562
 ```
 
 - Platforms:
@@ -830,198 +614,144 @@ $ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d75
 
 ### `joomla:3-apache` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **177.6 MB (177563770 bytes)**  
+- Total Size: **177.7 MB (177668049 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:14e4d9e66ca1396c9c87394897a17a2db62ffa85b4583dc4bc1bd89e35b84d13`
+- Image ID: `sha256:dc474186e9739d2fd620a4f93810383a447598087d081fbd9035706919b6af43`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 02:32:04 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:32:05 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:32:06 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:32:07 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:37:45 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:14:28 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:38:16 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:38:17 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 02:38:18 GMT
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:38:20 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 02:38:21 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:03:35 GMT
+# Fri, 10 Jun 2016 21:41:08 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:03:36 GMT
+# Fri, 10 Jun 2016 21:41:09 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:04:34 GMT
+# Fri, 10 Jun 2016 21:42:31 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:04:45 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:04:46 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:04:53 GMT
+# Tue, 14 Jun 2016 21:43:11 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:12 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:19 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:04:55 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:04:56 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:19 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:20 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:20 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:20 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:6c79ca56896739da0b0cfe79727905473491cca991456aa511dbf5f4b221d310`  
-    Last Modified: Tue, 24 May 2016 16:12:25 GMT  
-    Size: 33.5 MB (33457075 bytes)
-  - `sha256:91b402b132dc1186b1e14d8d474529b5496a0cb0081f73aaa492ddb367573cbf`  
-    Last Modified: Tue, 24 May 2016 16:11:35 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:d59386f2c4bea146253835a42bda61dbe85d069a2f7215b3b3c7bba3fb10ff63`  
-    Last Modified: Tue, 24 May 2016 16:11:31 GMT  
-    Size: 291.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e5b4feb885941da373dee839221dcbad1e5327102d873bd05c7b9f98eb632f17`  
-    Last Modified: Tue, 31 May 2016 19:39:38 GMT  
-    Size: 294.0 B
-  - `sha256:436bb55a63952c32fa7dbaa4b07c1d30fc99c8ac8cb962c02ca537cb3c9e473b`  
-    Last Modified: Tue, 31 May 2016 19:39:35 GMT  
-    Size: 3.4 MB (3388006 bytes)
-  - `sha256:f9c11cee6556c3094b917408c61132eddba804c1a6f9c8f108e54e1fe0c87451`  
-    Last Modified: Tue, 31 May 2016 19:39:29 GMT  
-    Size: 801.0 KB (800952 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:8dcd40ae51fcbdae6a2c74f7184cd608f472680362fbd1ec0c9c7e062bd789aa`  
-    Last Modified: Tue, 31 May 2016 19:39:19 GMT  
-    Size: 8.4 MB (8375849 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:e6088e923666bd67f46ac865a532fd4afad16a1f7d643bd656a266cb312c89e4`  
+    Last Modified: Tue, 14 Jun 2016 21:44:33 GMT  
+    Size: 33.5 MB (33489412 bytes)
+  - `sha256:19daa38d06afad426cd7e7682688b44d98d4f9b06343ee511481266399e3233e`  
+    Last Modified: Tue, 14 Jun 2016 21:44:09 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:e523792edfac6c34c5280b4d48791dc4aeba9ced2e3c09e737e39e263b1712e0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 292.0 B
+  - `sha256:dcd196d29e2e71a4aec71981f9dd890a695e4ad1a7d4322aa85ecd82555682b0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 296.0 B
+  - `sha256:797240a02dfd3ffd3bdb3f420bb2af29df408ae6f26beafe7438ad3cb23ffb99`  
+    Last Modified: Tue, 14 Jun 2016 21:44:06 GMT  
+    Size: 3.4 MB (3418318 bytes)
+  - `sha256:0edbd7c8c54a069676396046694e4abaffc03710f4a043c1137d6611b128bfdd`  
+    Last Modified: Tue, 14 Jun 2016 21:44:05 GMT  
+    Size: 800.9 KB (800855 bytes)
+  - `sha256:3050f7fbb377fe47f34542f9f2fa5c5152414c2b0526a4bf85312a23bd5b5693`  
+    Last Modified: Tue, 14 Jun 2016 21:44:08 GMT  
+    Size: 8.4 MB (8380274 bytes)
+  - `sha256:7d798a62eb3eb06a1f1b6c96f2504679c5e34be62720e25e83325137d2d7af95`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:9e1c0a4d3955715c245f5dec2f4f0d4de95d3abb00e5d91923e5281186d757c7`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:apache`
 
 ```console
-$ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d750a381b981823
+$ docker pull joomla@sha256:2a06c77fbbb85d5e5c6bbe5cb8aba91f977f7db431ddeb76f76116ae6ea2a562
 ```
 
 - Platforms:
@@ -1029,198 +759,144 @@ $ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d75
 
 ### `joomla:apache` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **177.6 MB (177563770 bytes)**  
+- Total Size: **177.7 MB (177668049 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:14e4d9e66ca1396c9c87394897a17a2db62ffa85b4583dc4bc1bd89e35b84d13`
+- Image ID: `sha256:dc474186e9739d2fd620a4f93810383a447598087d081fbd9035706919b6af43`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 02:32:04 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:32:05 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:32:06 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:32:07 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:37:45 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:14:28 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:38:16 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:38:17 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 02:38:18 GMT
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:38:20 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 02:38:21 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:03:35 GMT
+# Fri, 10 Jun 2016 21:41:08 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:03:36 GMT
+# Fri, 10 Jun 2016 21:41:09 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:04:34 GMT
+# Fri, 10 Jun 2016 21:42:31 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:04:45 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:04:46 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:04:53 GMT
+# Tue, 14 Jun 2016 21:43:11 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:12 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:19 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:04:55 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:04:56 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:19 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:20 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:20 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:20 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:6c79ca56896739da0b0cfe79727905473491cca991456aa511dbf5f4b221d310`  
-    Last Modified: Tue, 24 May 2016 16:12:25 GMT  
-    Size: 33.5 MB (33457075 bytes)
-  - `sha256:91b402b132dc1186b1e14d8d474529b5496a0cb0081f73aaa492ddb367573cbf`  
-    Last Modified: Tue, 24 May 2016 16:11:35 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:d59386f2c4bea146253835a42bda61dbe85d069a2f7215b3b3c7bba3fb10ff63`  
-    Last Modified: Tue, 24 May 2016 16:11:31 GMT  
-    Size: 291.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e5b4feb885941da373dee839221dcbad1e5327102d873bd05c7b9f98eb632f17`  
-    Last Modified: Tue, 31 May 2016 19:39:38 GMT  
-    Size: 294.0 B
-  - `sha256:436bb55a63952c32fa7dbaa4b07c1d30fc99c8ac8cb962c02ca537cb3c9e473b`  
-    Last Modified: Tue, 31 May 2016 19:39:35 GMT  
-    Size: 3.4 MB (3388006 bytes)
-  - `sha256:f9c11cee6556c3094b917408c61132eddba804c1a6f9c8f108e54e1fe0c87451`  
-    Last Modified: Tue, 31 May 2016 19:39:29 GMT  
-    Size: 801.0 KB (800952 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:8dcd40ae51fcbdae6a2c74f7184cd608f472680362fbd1ec0c9c7e062bd789aa`  
-    Last Modified: Tue, 31 May 2016 19:39:19 GMT  
-    Size: 8.4 MB (8375849 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:e6088e923666bd67f46ac865a532fd4afad16a1f7d643bd656a266cb312c89e4`  
+    Last Modified: Tue, 14 Jun 2016 21:44:33 GMT  
+    Size: 33.5 MB (33489412 bytes)
+  - `sha256:19daa38d06afad426cd7e7682688b44d98d4f9b06343ee511481266399e3233e`  
+    Last Modified: Tue, 14 Jun 2016 21:44:09 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:e523792edfac6c34c5280b4d48791dc4aeba9ced2e3c09e737e39e263b1712e0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 292.0 B
+  - `sha256:dcd196d29e2e71a4aec71981f9dd890a695e4ad1a7d4322aa85ecd82555682b0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 296.0 B
+  - `sha256:797240a02dfd3ffd3bdb3f420bb2af29df408ae6f26beafe7438ad3cb23ffb99`  
+    Last Modified: Tue, 14 Jun 2016 21:44:06 GMT  
+    Size: 3.4 MB (3418318 bytes)
+  - `sha256:0edbd7c8c54a069676396046694e4abaffc03710f4a043c1137d6611b128bfdd`  
+    Last Modified: Tue, 14 Jun 2016 21:44:05 GMT  
+    Size: 800.9 KB (800855 bytes)
+  - `sha256:3050f7fbb377fe47f34542f9f2fa5c5152414c2b0526a4bf85312a23bd5b5693`  
+    Last Modified: Tue, 14 Jun 2016 21:44:08 GMT  
+    Size: 8.4 MB (8380274 bytes)
+  - `sha256:7d798a62eb3eb06a1f1b6c96f2504679c5e34be62720e25e83325137d2d7af95`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:9e1c0a4d3955715c245f5dec2f4f0d4de95d3abb00e5d91923e5281186d757c7`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:3`
 
 ```console
-$ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d750a381b981823
+$ docker pull joomla@sha256:2a06c77fbbb85d5e5c6bbe5cb8aba91f977f7db431ddeb76f76116ae6ea2a562
 ```
 
 - Platforms:
@@ -1228,198 +904,144 @@ $ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d75
 
 ### `joomla:3` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **177.6 MB (177563770 bytes)**  
+- Total Size: **177.7 MB (177668049 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:14e4d9e66ca1396c9c87394897a17a2db62ffa85b4583dc4bc1bd89e35b84d13`
+- Image ID: `sha256:dc474186e9739d2fd620a4f93810383a447598087d081fbd9035706919b6af43`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 02:32:04 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:32:05 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:32:06 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:32:07 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:37:45 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:14:28 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:38:16 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:38:17 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 02:38:18 GMT
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:38:20 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 02:38:21 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:03:35 GMT
+# Fri, 10 Jun 2016 21:41:08 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:03:36 GMT
+# Fri, 10 Jun 2016 21:41:09 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:04:34 GMT
+# Fri, 10 Jun 2016 21:42:31 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:04:45 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:04:46 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:04:53 GMT
+# Tue, 14 Jun 2016 21:43:11 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:12 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:19 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:04:55 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:04:56 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:19 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:20 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:20 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:20 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:6c79ca56896739da0b0cfe79727905473491cca991456aa511dbf5f4b221d310`  
-    Last Modified: Tue, 24 May 2016 16:12:25 GMT  
-    Size: 33.5 MB (33457075 bytes)
-  - `sha256:91b402b132dc1186b1e14d8d474529b5496a0cb0081f73aaa492ddb367573cbf`  
-    Last Modified: Tue, 24 May 2016 16:11:35 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:d59386f2c4bea146253835a42bda61dbe85d069a2f7215b3b3c7bba3fb10ff63`  
-    Last Modified: Tue, 24 May 2016 16:11:31 GMT  
-    Size: 291.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e5b4feb885941da373dee839221dcbad1e5327102d873bd05c7b9f98eb632f17`  
-    Last Modified: Tue, 31 May 2016 19:39:38 GMT  
-    Size: 294.0 B
-  - `sha256:436bb55a63952c32fa7dbaa4b07c1d30fc99c8ac8cb962c02ca537cb3c9e473b`  
-    Last Modified: Tue, 31 May 2016 19:39:35 GMT  
-    Size: 3.4 MB (3388006 bytes)
-  - `sha256:f9c11cee6556c3094b917408c61132eddba804c1a6f9c8f108e54e1fe0c87451`  
-    Last Modified: Tue, 31 May 2016 19:39:29 GMT  
-    Size: 801.0 KB (800952 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:8dcd40ae51fcbdae6a2c74f7184cd608f472680362fbd1ec0c9c7e062bd789aa`  
-    Last Modified: Tue, 31 May 2016 19:39:19 GMT  
-    Size: 8.4 MB (8375849 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:e6088e923666bd67f46ac865a532fd4afad16a1f7d643bd656a266cb312c89e4`  
+    Last Modified: Tue, 14 Jun 2016 21:44:33 GMT  
+    Size: 33.5 MB (33489412 bytes)
+  - `sha256:19daa38d06afad426cd7e7682688b44d98d4f9b06343ee511481266399e3233e`  
+    Last Modified: Tue, 14 Jun 2016 21:44:09 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:e523792edfac6c34c5280b4d48791dc4aeba9ced2e3c09e737e39e263b1712e0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 292.0 B
+  - `sha256:dcd196d29e2e71a4aec71981f9dd890a695e4ad1a7d4322aa85ecd82555682b0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 296.0 B
+  - `sha256:797240a02dfd3ffd3bdb3f420bb2af29df408ae6f26beafe7438ad3cb23ffb99`  
+    Last Modified: Tue, 14 Jun 2016 21:44:06 GMT  
+    Size: 3.4 MB (3418318 bytes)
+  - `sha256:0edbd7c8c54a069676396046694e4abaffc03710f4a043c1137d6611b128bfdd`  
+    Last Modified: Tue, 14 Jun 2016 21:44:05 GMT  
+    Size: 800.9 KB (800855 bytes)
+  - `sha256:3050f7fbb377fe47f34542f9f2fa5c5152414c2b0526a4bf85312a23bd5b5693`  
+    Last Modified: Tue, 14 Jun 2016 21:44:08 GMT  
+    Size: 8.4 MB (8380274 bytes)
+  - `sha256:7d798a62eb3eb06a1f1b6c96f2504679c5e34be62720e25e83325137d2d7af95`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:9e1c0a4d3955715c245f5dec2f4f0d4de95d3abb00e5d91923e5281186d757c7`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:latest`
 
 ```console
-$ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d750a381b981823
+$ docker pull joomla@sha256:2a06c77fbbb85d5e5c6bbe5cb8aba91f977f7db431ddeb76f76116ae6ea2a562
 ```
 
 - Platforms:
@@ -1427,397 +1049,289 @@ $ docker pull joomla@sha256:95afa90deb29b929e09de2a270ac081262c31bb53f11ca203d75
 
 ### `joomla:latest` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **177.6 MB (177563770 bytes)**  
+- Total Size: **177.7 MB (177668049 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:14e4d9e66ca1396c9c87394897a17a2db62ffa85b4583dc4bc1bd89e35b84d13`
+- Image ID: `sha256:dc474186e9739d2fd620a4f93810383a447598087d081fbd9035706919b6af43`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 02:32:04 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:32:05 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:32:06 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:32:07 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:37:45 GMT
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:09:18 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:14:28 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:38:16 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:38:17 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 02:38:18 GMT
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 03:14:29 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:38:20 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 02:38:21 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:03:35 GMT
+# Fri, 10 Jun 2016 21:41:08 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:03:36 GMT
+# Fri, 10 Jun 2016 21:41:09 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:04:34 GMT
+# Fri, 10 Jun 2016 21:42:31 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:04:45 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:04:46 GMT
+# Fri, 10 Jun 2016 21:42:43 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:04:47 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:04:53 GMT
+# Tue, 14 Jun 2016 21:43:11 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:12 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:19 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:04:55 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:04:56 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:19 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:20 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:20 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:04:57 GMT
+# Tue, 14 Jun 2016 21:43:20 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:6c79ca56896739da0b0cfe79727905473491cca991456aa511dbf5f4b221d310`  
-    Last Modified: Tue, 24 May 2016 16:12:25 GMT  
-    Size: 33.5 MB (33457075 bytes)
-  - `sha256:91b402b132dc1186b1e14d8d474529b5496a0cb0081f73aaa492ddb367573cbf`  
-    Last Modified: Tue, 24 May 2016 16:11:35 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:d59386f2c4bea146253835a42bda61dbe85d069a2f7215b3b3c7bba3fb10ff63`  
-    Last Modified: Tue, 24 May 2016 16:11:31 GMT  
-    Size: 291.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e5b4feb885941da373dee839221dcbad1e5327102d873bd05c7b9f98eb632f17`  
-    Last Modified: Tue, 31 May 2016 19:39:38 GMT  
-    Size: 294.0 B
-  - `sha256:436bb55a63952c32fa7dbaa4b07c1d30fc99c8ac8cb962c02ca537cb3c9e473b`  
-    Last Modified: Tue, 31 May 2016 19:39:35 GMT  
-    Size: 3.4 MB (3388006 bytes)
-  - `sha256:f9c11cee6556c3094b917408c61132eddba804c1a6f9c8f108e54e1fe0c87451`  
-    Last Modified: Tue, 31 May 2016 19:39:29 GMT  
-    Size: 801.0 KB (800952 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:8dcd40ae51fcbdae6a2c74f7184cd608f472680362fbd1ec0c9c7e062bd789aa`  
-    Last Modified: Tue, 31 May 2016 19:39:19 GMT  
-    Size: 8.4 MB (8375849 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:e6088e923666bd67f46ac865a532fd4afad16a1f7d643bd656a266cb312c89e4`  
+    Last Modified: Tue, 14 Jun 2016 21:44:33 GMT  
+    Size: 33.5 MB (33489412 bytes)
+  - `sha256:19daa38d06afad426cd7e7682688b44d98d4f9b06343ee511481266399e3233e`  
+    Last Modified: Tue, 14 Jun 2016 21:44:09 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:e523792edfac6c34c5280b4d48791dc4aeba9ced2e3c09e737e39e263b1712e0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 292.0 B
+  - `sha256:dcd196d29e2e71a4aec71981f9dd890a695e4ad1a7d4322aa85ecd82555682b0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:07 GMT  
+    Size: 296.0 B
+  - `sha256:797240a02dfd3ffd3bdb3f420bb2af29df408ae6f26beafe7438ad3cb23ffb99`  
+    Last Modified: Tue, 14 Jun 2016 21:44:06 GMT  
+    Size: 3.4 MB (3418318 bytes)
+  - `sha256:0edbd7c8c54a069676396046694e4abaffc03710f4a043c1137d6611b128bfdd`  
+    Last Modified: Tue, 14 Jun 2016 21:44:05 GMT  
+    Size: 800.9 KB (800855 bytes)
+  - `sha256:3050f7fbb377fe47f34542f9f2fa5c5152414c2b0526a4bf85312a23bd5b5693`  
+    Last Modified: Tue, 14 Jun 2016 21:44:08 GMT  
+    Size: 8.4 MB (8380274 bytes)
+  - `sha256:7d798a62eb3eb06a1f1b6c96f2504679c5e34be62720e25e83325137d2d7af95`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:9e1c0a4d3955715c245f5dec2f4f0d4de95d3abb00e5d91923e5281186d757c7`  
+    Last Modified: Tue, 14 Jun 2016 21:44:04 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
-## `joomla:3.5.0-apache-php7`
+## `joomla:3.5.1-apache-php7`
 
 ```console
-$ docker pull joomla@sha256:8f09ad6faa8856a2cae2f93db20d110968521a78a901688cd7977c35e457979e
+$ docker pull joomla@sha256:b19a9710a10a1d610c6ef6801c7e7386bf5b7178710436664099152b2f41265c
 ```
 
 - Platforms:
   - linux; amd64
 
-### `joomla:3.5.0-apache-php7` - linux; amd64
+### `joomla:3.5.1-apache-php7` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **191.8 MB (191843277 bytes)**  
+- Total Size: **191.9 MB (191948784 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:89cf132061bfb5d250b9fde18182b420ff775264e8eb30d97cdd33bc49c7b012`
+- Image ID: `sha256:4f7253aa91ebbd6e9937ad0064e90d822f33c3839b4c74b552d92a23c3132094`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 03:49:46 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
-# Tue, 24 May 2016 03:49:47 GMT
-ENV PHP_VERSION=7.0.6
-# Tue, 24 May 2016 03:49:48 GMT
-ENV PHP_FILENAME=php-7.0.6.tar.xz
-# Tue, 24 May 2016 03:49:49 GMT
-ENV PHP_SHA256=1b237a9455e5476a425dbb9d99966bad68107747c601958cb9558a7fb49ab419
-# Tue, 24 May 2016 03:55:42 GMT
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_VERSION=7.0.7
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_FILENAME=php-7.0.7.tar.xz
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_SHA256=9cc64a7459242c79c10e79d74feaf5bae3541f604966ceb600c3d2e8f5fe4794
+# Fri, 10 Jun 2016 02:49:02 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 03:55:51 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 03:55:51 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 03:55:52 GMT
+# Fri, 10 Jun 2016 02:49:03 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 02:49:03 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 02:49:03 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 03:55:53 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 03:55:54 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:09:30 GMT
+# Fri, 10 Jun 2016 21:44:39 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:09:32 GMT
+# Fri, 10 Jun 2016 21:44:41 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:10:28 GMT
+# Fri, 10 Jun 2016 21:46:04 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:10:40 GMT
+# Fri, 10 Jun 2016 21:46:15 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:10:41 GMT
+# Fri, 10 Jun 2016 21:46:16 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:10:42 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:10:42 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:10:48 GMT
+# Tue, 14 Jun 2016 21:43:21 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:21 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:31 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:10:50 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:10:51 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:10:52 GMT
+# Tue, 14 Jun 2016 21:43:32 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:32 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:32 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:10:53 GMT
+# Tue, 14 Jun 2016 21:43:33 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ffde0c2a5d20e05322ce26ea8ce7e0b467a0b3ea5cf00bab8f7fee59641fdac0`  
-    Last Modified: Tue, 24 May 2016 16:25:34 GMT  
-    Size: 47.8 MB (47763505 bytes)
-  - `sha256:590d09f0bd55f876481d4b2d62ec8f05249e7f51fe0d2d92ac8d03befd216190`  
-    Last Modified: Tue, 24 May 2016 16:24:36 GMT  
-    Size: 1.6 KB (1632 bytes)
-  - `sha256:9d3632653fe751cd7208493bcb881849be1008ae36a822c0dbac4ece95a79164`  
-    Last Modified: Tue, 24 May 2016 16:24:32 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:f126ded007047371919cad80ee6c4d931e00549e94c540cef0919236c89d51bf`  
+    Last Modified: Tue, 14 Jun 2016 21:46:00 GMT  
+    Size: 47.8 MB (47805918 bytes)
+  - `sha256:a98618ab9bb41fafd5231e769bee5db1d5af7fce877a60883f91e26a0c19dcb1`  
+    Last Modified: Tue, 14 Jun 2016 21:45:31 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:c350d7c8ba1b7dbf9686a092ead266fea97b215ca1041cf92098f830893cd42d`  
+    Last Modified: Tue, 14 Jun 2016 21:45:30 GMT  
     Size: 290.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4d9ba451da3e6b116fd377f719fb5bdc467a7cf97067b287c7a2ba0db45b9880`  
-    Last Modified: Tue, 31 May 2016 19:42:57 GMT  
-    Size: 293.0 B
-  - `sha256:1f285ea66dba7b50d2c260efd3007a3b818d384de8e37ce27d4baf9dbdebe1e5`  
-    Last Modified: Tue, 31 May 2016 19:42:54 GMT  
-    Size: 3.4 MB (3367345 bytes)
-  - `sha256:12e3a23af6289e297e110c2e00b94f6008c39399ceaaf98fbd83573af435aa5a`  
-    Last Modified: Tue, 31 May 2016 19:42:49 GMT  
-    Size: 794.7 KB (794681 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:26e8c4b48ca707996ab8fe7cbf8f8c6daffa93e12a5ddba80783054302f32a18`  
-    Last Modified: Tue, 31 May 2016 19:42:39 GMT  
-    Size: 8.4 MB (8375854 bytes)
-  - `sha256:a5da9023210b97d4ecfa0cd13d9d8330b6f3ba6350f077d4e4b55c946d0515b6`  
-    Last Modified: Tue, 22 Mar 2016 21:39:37 GMT  
-    Size: 1.2 KB (1165 bytes)
-  - `sha256:ea823463a32834061584440469756329cc154fc62aec4544d487b5bb41635237`  
-    Last Modified: Tue, 22 Mar 2016 21:39:35 GMT  
+  - `sha256:8f5db3e76345314cc8afaa08cc4a16bf03216f9ac9663c455ddf633b6f8413f1`  
+    Last Modified: Tue, 14 Jun 2016 21:45:29 GMT  
+    Size: 295.0 B
+  - `sha256:082d8ac318c4307c04590bbb5cb9883fc1af0135a4636c57cc49be207a05abb0`  
+    Last Modified: Tue, 14 Jun 2016 21:45:28 GMT  
+    Size: 3.4 MB (3388746 bytes)
+  - `sha256:35d482bb7b4582f7fd93a0e68326c3bdd5540a882d7a1e31d4d205a33dd4c470`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
+    Size: 794.7 KB (794654 bytes)
+  - `sha256:2e84f81ce785b01654c048f0cb2bb8b53691dde6f10025bbb11c48226335a428`  
+    Last Modified: Tue, 14 Jun 2016 21:45:32 GMT  
+    Size: 8.4 MB (8380281 bytes)
+  - `sha256:e1a317dab357b73055b58cb5c1bf542967a991d6fb88fae361f0dc4300cad02c`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
+    Size: 1.2 KB (1162 bytes)
+  - `sha256:dc87d0296dbfc25f5866e276b8942ecee7f44b8652723916a20a111aa7231eb9`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
     Size: 604.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:3.5-apache-php7`
 
 ```console
-$ docker pull joomla@sha256:8f09ad6faa8856a2cae2f93db20d110968521a78a901688cd7977c35e457979e
+$ docker pull joomla@sha256:b19a9710a10a1d610c6ef6801c7e7386bf5b7178710436664099152b2f41265c
 ```
 
 - Platforms:
@@ -1825,198 +1339,144 @@ $ docker pull joomla@sha256:8f09ad6faa8856a2cae2f93db20d110968521a78a901688cd797
 
 ### `joomla:3.5-apache-php7` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **191.8 MB (191843277 bytes)**  
+- Total Size: **191.9 MB (191948784 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:89cf132061bfb5d250b9fde18182b420ff775264e8eb30d97cdd33bc49c7b012`
+- Image ID: `sha256:4f7253aa91ebbd6e9937ad0064e90d822f33c3839b4c74b552d92a23c3132094`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 03:49:46 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
-# Tue, 24 May 2016 03:49:47 GMT
-ENV PHP_VERSION=7.0.6
-# Tue, 24 May 2016 03:49:48 GMT
-ENV PHP_FILENAME=php-7.0.6.tar.xz
-# Tue, 24 May 2016 03:49:49 GMT
-ENV PHP_SHA256=1b237a9455e5476a425dbb9d99966bad68107747c601958cb9558a7fb49ab419
-# Tue, 24 May 2016 03:55:42 GMT
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_VERSION=7.0.7
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_FILENAME=php-7.0.7.tar.xz
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_SHA256=9cc64a7459242c79c10e79d74feaf5bae3541f604966ceb600c3d2e8f5fe4794
+# Fri, 10 Jun 2016 02:49:02 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 03:55:51 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 03:55:51 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 03:55:52 GMT
+# Fri, 10 Jun 2016 02:49:03 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 02:49:03 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 02:49:03 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 03:55:53 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 03:55:54 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:09:30 GMT
+# Fri, 10 Jun 2016 21:44:39 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:09:32 GMT
+# Fri, 10 Jun 2016 21:44:41 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:10:28 GMT
+# Fri, 10 Jun 2016 21:46:04 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:10:40 GMT
+# Fri, 10 Jun 2016 21:46:15 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:10:41 GMT
+# Fri, 10 Jun 2016 21:46:16 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:10:42 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:10:42 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:10:48 GMT
+# Tue, 14 Jun 2016 21:43:21 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:21 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:31 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:10:50 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:10:51 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:10:52 GMT
+# Tue, 14 Jun 2016 21:43:32 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:32 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:32 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:10:53 GMT
+# Tue, 14 Jun 2016 21:43:33 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ffde0c2a5d20e05322ce26ea8ce7e0b467a0b3ea5cf00bab8f7fee59641fdac0`  
-    Last Modified: Tue, 24 May 2016 16:25:34 GMT  
-    Size: 47.8 MB (47763505 bytes)
-  - `sha256:590d09f0bd55f876481d4b2d62ec8f05249e7f51fe0d2d92ac8d03befd216190`  
-    Last Modified: Tue, 24 May 2016 16:24:36 GMT  
-    Size: 1.6 KB (1632 bytes)
-  - `sha256:9d3632653fe751cd7208493bcb881849be1008ae36a822c0dbac4ece95a79164`  
-    Last Modified: Tue, 24 May 2016 16:24:32 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:f126ded007047371919cad80ee6c4d931e00549e94c540cef0919236c89d51bf`  
+    Last Modified: Tue, 14 Jun 2016 21:46:00 GMT  
+    Size: 47.8 MB (47805918 bytes)
+  - `sha256:a98618ab9bb41fafd5231e769bee5db1d5af7fce877a60883f91e26a0c19dcb1`  
+    Last Modified: Tue, 14 Jun 2016 21:45:31 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:c350d7c8ba1b7dbf9686a092ead266fea97b215ca1041cf92098f830893cd42d`  
+    Last Modified: Tue, 14 Jun 2016 21:45:30 GMT  
     Size: 290.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4d9ba451da3e6b116fd377f719fb5bdc467a7cf97067b287c7a2ba0db45b9880`  
-    Last Modified: Tue, 31 May 2016 19:42:57 GMT  
-    Size: 293.0 B
-  - `sha256:1f285ea66dba7b50d2c260efd3007a3b818d384de8e37ce27d4baf9dbdebe1e5`  
-    Last Modified: Tue, 31 May 2016 19:42:54 GMT  
-    Size: 3.4 MB (3367345 bytes)
-  - `sha256:12e3a23af6289e297e110c2e00b94f6008c39399ceaaf98fbd83573af435aa5a`  
-    Last Modified: Tue, 31 May 2016 19:42:49 GMT  
-    Size: 794.7 KB (794681 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:26e8c4b48ca707996ab8fe7cbf8f8c6daffa93e12a5ddba80783054302f32a18`  
-    Last Modified: Tue, 31 May 2016 19:42:39 GMT  
-    Size: 8.4 MB (8375854 bytes)
-  - `sha256:a5da9023210b97d4ecfa0cd13d9d8330b6f3ba6350f077d4e4b55c946d0515b6`  
-    Last Modified: Tue, 22 Mar 2016 21:39:37 GMT  
-    Size: 1.2 KB (1165 bytes)
-  - `sha256:ea823463a32834061584440469756329cc154fc62aec4544d487b5bb41635237`  
-    Last Modified: Tue, 22 Mar 2016 21:39:35 GMT  
+  - `sha256:8f5db3e76345314cc8afaa08cc4a16bf03216f9ac9663c455ddf633b6f8413f1`  
+    Last Modified: Tue, 14 Jun 2016 21:45:29 GMT  
+    Size: 295.0 B
+  - `sha256:082d8ac318c4307c04590bbb5cb9883fc1af0135a4636c57cc49be207a05abb0`  
+    Last Modified: Tue, 14 Jun 2016 21:45:28 GMT  
+    Size: 3.4 MB (3388746 bytes)
+  - `sha256:35d482bb7b4582f7fd93a0e68326c3bdd5540a882d7a1e31d4d205a33dd4c470`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
+    Size: 794.7 KB (794654 bytes)
+  - `sha256:2e84f81ce785b01654c048f0cb2bb8b53691dde6f10025bbb11c48226335a428`  
+    Last Modified: Tue, 14 Jun 2016 21:45:32 GMT  
+    Size: 8.4 MB (8380281 bytes)
+  - `sha256:e1a317dab357b73055b58cb5c1bf542967a991d6fb88fae361f0dc4300cad02c`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
+    Size: 1.2 KB (1162 bytes)
+  - `sha256:dc87d0296dbfc25f5866e276b8942ecee7f44b8652723916a20a111aa7231eb9`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
     Size: 604.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:3-apache-php7`
 
 ```console
-$ docker pull joomla@sha256:8f09ad6faa8856a2cae2f93db20d110968521a78a901688cd7977c35e457979e
+$ docker pull joomla@sha256:b19a9710a10a1d610c6ef6801c7e7386bf5b7178710436664099152b2f41265c
 ```
 
 - Platforms:
@@ -2024,198 +1484,144 @@ $ docker pull joomla@sha256:8f09ad6faa8856a2cae2f93db20d110968521a78a901688cd797
 
 ### `joomla:3-apache-php7` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **191.8 MB (191843277 bytes)**  
+- Total Size: **191.9 MB (191948784 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:89cf132061bfb5d250b9fde18182b420ff775264e8eb30d97cdd33bc49c7b012`
+- Image ID: `sha256:4f7253aa91ebbd6e9937ad0064e90d822f33c3839b4c74b552d92a23c3132094`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 03:49:46 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
-# Tue, 24 May 2016 03:49:47 GMT
-ENV PHP_VERSION=7.0.6
-# Tue, 24 May 2016 03:49:48 GMT
-ENV PHP_FILENAME=php-7.0.6.tar.xz
-# Tue, 24 May 2016 03:49:49 GMT
-ENV PHP_SHA256=1b237a9455e5476a425dbb9d99966bad68107747c601958cb9558a7fb49ab419
-# Tue, 24 May 2016 03:55:42 GMT
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_VERSION=7.0.7
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_FILENAME=php-7.0.7.tar.xz
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_SHA256=9cc64a7459242c79c10e79d74feaf5bae3541f604966ceb600c3d2e8f5fe4794
+# Fri, 10 Jun 2016 02:49:02 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 03:55:51 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 03:55:51 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 03:55:52 GMT
+# Fri, 10 Jun 2016 02:49:03 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 02:49:03 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 02:49:03 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 03:55:53 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 03:55:54 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:09:30 GMT
+# Fri, 10 Jun 2016 21:44:39 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:09:32 GMT
+# Fri, 10 Jun 2016 21:44:41 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:10:28 GMT
+# Fri, 10 Jun 2016 21:46:04 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:10:40 GMT
+# Fri, 10 Jun 2016 21:46:15 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:10:41 GMT
+# Fri, 10 Jun 2016 21:46:16 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:10:42 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:10:42 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:10:48 GMT
+# Tue, 14 Jun 2016 21:43:21 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:21 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:31 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:10:50 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:10:51 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:10:52 GMT
+# Tue, 14 Jun 2016 21:43:32 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:32 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:32 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:10:53 GMT
+# Tue, 14 Jun 2016 21:43:33 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ffde0c2a5d20e05322ce26ea8ce7e0b467a0b3ea5cf00bab8f7fee59641fdac0`  
-    Last Modified: Tue, 24 May 2016 16:25:34 GMT  
-    Size: 47.8 MB (47763505 bytes)
-  - `sha256:590d09f0bd55f876481d4b2d62ec8f05249e7f51fe0d2d92ac8d03befd216190`  
-    Last Modified: Tue, 24 May 2016 16:24:36 GMT  
-    Size: 1.6 KB (1632 bytes)
-  - `sha256:9d3632653fe751cd7208493bcb881849be1008ae36a822c0dbac4ece95a79164`  
-    Last Modified: Tue, 24 May 2016 16:24:32 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:f126ded007047371919cad80ee6c4d931e00549e94c540cef0919236c89d51bf`  
+    Last Modified: Tue, 14 Jun 2016 21:46:00 GMT  
+    Size: 47.8 MB (47805918 bytes)
+  - `sha256:a98618ab9bb41fafd5231e769bee5db1d5af7fce877a60883f91e26a0c19dcb1`  
+    Last Modified: Tue, 14 Jun 2016 21:45:31 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:c350d7c8ba1b7dbf9686a092ead266fea97b215ca1041cf92098f830893cd42d`  
+    Last Modified: Tue, 14 Jun 2016 21:45:30 GMT  
     Size: 290.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4d9ba451da3e6b116fd377f719fb5bdc467a7cf97067b287c7a2ba0db45b9880`  
-    Last Modified: Tue, 31 May 2016 19:42:57 GMT  
-    Size: 293.0 B
-  - `sha256:1f285ea66dba7b50d2c260efd3007a3b818d384de8e37ce27d4baf9dbdebe1e5`  
-    Last Modified: Tue, 31 May 2016 19:42:54 GMT  
-    Size: 3.4 MB (3367345 bytes)
-  - `sha256:12e3a23af6289e297e110c2e00b94f6008c39399ceaaf98fbd83573af435aa5a`  
-    Last Modified: Tue, 31 May 2016 19:42:49 GMT  
-    Size: 794.7 KB (794681 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:26e8c4b48ca707996ab8fe7cbf8f8c6daffa93e12a5ddba80783054302f32a18`  
-    Last Modified: Tue, 31 May 2016 19:42:39 GMT  
-    Size: 8.4 MB (8375854 bytes)
-  - `sha256:a5da9023210b97d4ecfa0cd13d9d8330b6f3ba6350f077d4e4b55c946d0515b6`  
-    Last Modified: Tue, 22 Mar 2016 21:39:37 GMT  
-    Size: 1.2 KB (1165 bytes)
-  - `sha256:ea823463a32834061584440469756329cc154fc62aec4544d487b5bb41635237`  
-    Last Modified: Tue, 22 Mar 2016 21:39:35 GMT  
+  - `sha256:8f5db3e76345314cc8afaa08cc4a16bf03216f9ac9663c455ddf633b6f8413f1`  
+    Last Modified: Tue, 14 Jun 2016 21:45:29 GMT  
+    Size: 295.0 B
+  - `sha256:082d8ac318c4307c04590bbb5cb9883fc1af0135a4636c57cc49be207a05abb0`  
+    Last Modified: Tue, 14 Jun 2016 21:45:28 GMT  
+    Size: 3.4 MB (3388746 bytes)
+  - `sha256:35d482bb7b4582f7fd93a0e68326c3bdd5540a882d7a1e31d4d205a33dd4c470`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
+    Size: 794.7 KB (794654 bytes)
+  - `sha256:2e84f81ce785b01654c048f0cb2bb8b53691dde6f10025bbb11c48226335a428`  
+    Last Modified: Tue, 14 Jun 2016 21:45:32 GMT  
+    Size: 8.4 MB (8380281 bytes)
+  - `sha256:e1a317dab357b73055b58cb5c1bf542967a991d6fb88fae361f0dc4300cad02c`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
+    Size: 1.2 KB (1162 bytes)
+  - `sha256:dc87d0296dbfc25f5866e276b8942ecee7f44b8652723916a20a111aa7231eb9`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
     Size: 604.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:apache-php7`
 
 ```console
-$ docker pull joomla@sha256:8f09ad6faa8856a2cae2f93db20d110968521a78a901688cd7977c35e457979e
+$ docker pull joomla@sha256:b19a9710a10a1d610c6ef6801c7e7386bf5b7178710436664099152b2f41265c
 ```
 
 - Platforms:
@@ -2223,362 +1629,260 @@ $ docker pull joomla@sha256:8f09ad6faa8856a2cae2f93db20d110968521a78a901688cd797
 
 ### `joomla:apache-php7` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **191.8 MB (191843277 bytes)**  
+- Total Size: **191.9 MB (191948784 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:89cf132061bfb5d250b9fde18182b420ff775264e8eb30d97cdd33bc49c7b012`
+- Image ID: `sha256:4f7253aa91ebbd6e9937ad0064e90d822f33c3839b4c74b552d92a23c3132094`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:21:36 GMT
+# Fri, 10 Jun 2016 02:43:42 GMT
 RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:21:40 GMT
+# Fri, 10 Jun 2016 02:43:43 GMT
 RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html && chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
-# Tue, 24 May 2016 01:21:42 GMT
+# Fri, 10 Jun 2016 02:43:44 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Tue, 24 May 2016 01:21:45 GMT
+# Fri, 10 Jun 2016 02:43:45 GMT
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
-# Tue, 24 May 2016 01:21:46 GMT
-COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
-# Tue, 24 May 2016 01:21:47 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
+COPY file:83126aa7167396d9538d8cd3860fed68ccce351540fad4964ee1930c2ab74a9b in /etc/apache2/apache2.conf
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Tue, 24 May 2016 01:21:48 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Tue, 24 May 2016 03:49:46 GMT
+# Fri, 10 Jun 2016 02:43:46 GMT
 ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
-# Tue, 24 May 2016 03:49:47 GMT
-ENV PHP_VERSION=7.0.6
-# Tue, 24 May 2016 03:49:48 GMT
-ENV PHP_FILENAME=php-7.0.6.tar.xz
-# Tue, 24 May 2016 03:49:49 GMT
-ENV PHP_SHA256=1b237a9455e5476a425dbb9d99966bad68107747c601958cb9558a7fb49ab419
-# Tue, 24 May 2016 03:55:42 GMT
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_VERSION=7.0.7
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_FILENAME=php-7.0.7.tar.xz
+# Fri, 10 Jun 2016 02:43:47 GMT
+ENV PHP_SHA256=9cc64a7459242c79c10e79d74feaf5bae3541f604966ceb600c3d2e8f5fe4794
+# Fri, 10 Jun 2016 02:49:02 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 03:55:51 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 03:55:51 GMT
-COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
-# Tue, 24 May 2016 03:55:52 GMT
+# Fri, 10 Jun 2016 02:49:03 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 02:49:03 GMT
+COPY file:9af336f9cce358b296eebfb8895bbae6ac19492469a03e1b7c2f5c574807721d in /usr/local/bin/
+# Fri, 10 Jun 2016 02:49:03 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 03:55:53 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 EXPOSE 80/tcp
-# Tue, 24 May 2016 03:55:54 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 May 2016 17:09:30 GMT
+# Fri, 10 Jun 2016 21:44:39 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:09:32 GMT
+# Fri, 10 Jun 2016 21:44:41 GMT
 RUN a2enmod rewrite
-# Tue, 24 May 2016 17:10:28 GMT
+# Fri, 10 Jun 2016 21:46:04 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:10:40 GMT
+# Fri, 10 Jun 2016 21:46:15 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:10:41 GMT
+# Fri, 10 Jun 2016 21:46:16 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:10:42 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:10:42 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:10:48 GMT
+# Tue, 14 Jun 2016 21:43:21 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:21 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:31 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:10:50 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:10:51 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:10:52 GMT
+# Tue, 14 Jun 2016 21:43:32 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:32 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:32 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:10:53 GMT
+# Tue, 14 Jun 2016 21:43:33 GMT
 CMD ["apache2-foreground"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ffde0c2a5d20e05322ce26ea8ce7e0b467a0b3ea5cf00bab8f7fee59641fdac0`  
-    Last Modified: Tue, 24 May 2016 16:25:34 GMT  
-    Size: 47.8 MB (47763505 bytes)
-  - `sha256:590d09f0bd55f876481d4b2d62ec8f05249e7f51fe0d2d92ac8d03befd216190`  
-    Last Modified: Tue, 24 May 2016 16:24:36 GMT  
-    Size: 1.6 KB (1632 bytes)
-  - `sha256:9d3632653fe751cd7208493bcb881849be1008ae36a822c0dbac4ece95a79164`  
-    Last Modified: Tue, 24 May 2016 16:24:32 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:a3a94d3df9be4137d53c70f13e1bf0e40d300e41c9773a3b5b26d68d75f31797`  
+    Last Modified: Tue, 14 Jun 2016 21:44:14 GMT  
+    Size: 2.9 MB (2874106 bytes)
+  - `sha256:8d889f91ade23b56b99c85fc7dcf3196d91380bb21b461793cceea4c179055d0`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 324.0 B
+  - `sha256:6aa1b9bbdc5d5bcfae5f9b5659678b98f043b322968a432012ca470396bc5195`  
+    Last Modified: Tue, 14 Jun 2016 21:44:11 GMT  
+    Size: 434.0 B
+  - `sha256:777536a87cede6c7cfb17ee9cb2c94f935f08527cc2df874d95978ce88233166`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 3.4 KB (3365 bytes)
+  - `sha256:c9ba89109223f6a7c223588aec1ca33024360af02e68ab9e9e6430ef429f94a2`  
+    Last Modified: Tue, 14 Jun 2016 21:44:10 GMT  
+    Size: 862.0 B
+  - `sha256:f126ded007047371919cad80ee6c4d931e00549e94c540cef0919236c89d51bf`  
+    Last Modified: Tue, 14 Jun 2016 21:46:00 GMT  
+    Size: 47.8 MB (47805918 bytes)
+  - `sha256:a98618ab9bb41fafd5231e769bee5db1d5af7fce877a60883f91e26a0c19dcb1`  
+    Last Modified: Tue, 14 Jun 2016 21:45:31 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:c350d7c8ba1b7dbf9686a092ead266fea97b215ca1041cf92098f830893cd42d`  
+    Last Modified: Tue, 14 Jun 2016 21:45:30 GMT  
     Size: 290.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4d9ba451da3e6b116fd377f719fb5bdc467a7cf97067b287c7a2ba0db45b9880`  
-    Last Modified: Tue, 31 May 2016 19:42:57 GMT  
-    Size: 293.0 B
-  - `sha256:1f285ea66dba7b50d2c260efd3007a3b818d384de8e37ce27d4baf9dbdebe1e5`  
-    Last Modified: Tue, 31 May 2016 19:42:54 GMT  
-    Size: 3.4 MB (3367345 bytes)
-  - `sha256:12e3a23af6289e297e110c2e00b94f6008c39399ceaaf98fbd83573af435aa5a`  
-    Last Modified: Tue, 31 May 2016 19:42:49 GMT  
-    Size: 794.7 KB (794681 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:26e8c4b48ca707996ab8fe7cbf8f8c6daffa93e12a5ddba80783054302f32a18`  
-    Last Modified: Tue, 31 May 2016 19:42:39 GMT  
-    Size: 8.4 MB (8375854 bytes)
-  - `sha256:a5da9023210b97d4ecfa0cd13d9d8330b6f3ba6350f077d4e4b55c946d0515b6`  
-    Last Modified: Tue, 22 Mar 2016 21:39:37 GMT  
-    Size: 1.2 KB (1165 bytes)
-  - `sha256:ea823463a32834061584440469756329cc154fc62aec4544d487b5bb41635237`  
-    Last Modified: Tue, 22 Mar 2016 21:39:35 GMT  
+  - `sha256:8f5db3e76345314cc8afaa08cc4a16bf03216f9ac9663c455ddf633b6f8413f1`  
+    Last Modified: Tue, 14 Jun 2016 21:45:29 GMT  
+    Size: 295.0 B
+  - `sha256:082d8ac318c4307c04590bbb5cb9883fc1af0135a4636c57cc49be207a05abb0`  
+    Last Modified: Tue, 14 Jun 2016 21:45:28 GMT  
+    Size: 3.4 MB (3388746 bytes)
+  - `sha256:35d482bb7b4582f7fd93a0e68326c3bdd5540a882d7a1e31d4d205a33dd4c470`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
+    Size: 794.7 KB (794654 bytes)
+  - `sha256:2e84f81ce785b01654c048f0cb2bb8b53691dde6f10025bbb11c48226335a428`  
+    Last Modified: Tue, 14 Jun 2016 21:45:32 GMT  
+    Size: 8.4 MB (8380281 bytes)
+  - `sha256:e1a317dab357b73055b58cb5c1bf542967a991d6fb88fae361f0dc4300cad02c`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
+    Size: 1.2 KB (1162 bytes)
+  - `sha256:dc87d0296dbfc25f5866e276b8942ecee7f44b8652723916a20a111aa7231eb9`  
+    Last Modified: Tue, 14 Jun 2016 21:45:27 GMT  
     Size: 604.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
-## `joomla:3.5.0-fpm`
+## `joomla:3.5.1-fpm`
 
 ```console
-$ docker pull joomla@sha256:b7f196d5bc35de62873768b7a120a2521dc0e449ae4ebee5117bad499788944b
+$ docker pull joomla@sha256:d8394942cf7f4584092403ac4f7a811545c67bf3d385fdb92220d260dc1b2a38
 ```
 
 - Platforms:
   - linux; amd64
 
-### `joomla:3.5.0-fpm` - linux; amd64
+### `joomla:3.5.1-fpm` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.7 MB (167715509 bytes)**  
+- Total Size: **167.8 MB (167769952 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0255236c9c57454b6bb7ee2e9d2f2f623586bfdece063e32564bd54349a9d15b`
+- Image ID: `sha256:10c54bbf206e63d3bcac684b54f6d35a49d56e427a71766e5a131ef479fc1aed`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:29:52 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Tue, 24 May 2016 02:42:38 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:42:39 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:42:40 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:42:41 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:50:05 GMT
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:21:00 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:50:34 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:50:35 GMT
+# Fri, 10 Jun 2016 03:21:01 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:21:01 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:50:37 GMT
+# Fri, 10 Jun 2016 03:21:02 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 24 May 2016 02:50:38 GMT
+# Fri, 10 Jun 2016 03:21:03 GMT
 EXPOSE 9000/tcp
-# Tue, 24 May 2016 02:50:39 GMT
+# Fri, 10 Jun 2016 03:21:03 GMT
 CMD ["php-fpm"]
-# Tue, 24 May 2016 17:12:52 GMT
+# Fri, 10 Jun 2016 21:46:26 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:13:49 GMT
+# Fri, 10 Jun 2016 21:47:47 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:14:00 GMT
+# Fri, 10 Jun 2016 21:47:58 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:14:01 GMT
+# Fri, 10 Jun 2016 21:47:58 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:14:01 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:14:02 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:14:07 GMT
+# Tue, 14 Jun 2016 21:43:33 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:34 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:41 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:14:10 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:14:11 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:14:11 GMT
+# Tue, 14 Jun 2016 21:43:41 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:42 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:42 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:14:12 GMT
+# Tue, 14 Jun 2016 21:43:42 GMT
 CMD ["php-fpm"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f89a675cb8196996622eea9b871b54d98d9f64139960df381811c29f34daee6d`  
-    Last Modified: Tue, 24 May 2016 16:14:26 GMT  
-    Size: 26.5 MB (26473649 bytes)
-  - `sha256:66d406a526e9c60d9e4ac7d728ffe799f3841cea815bc0851fa3ecf23c94614d`  
-    Last Modified: Tue, 24 May 2016 16:13:32 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:c4433c803ae5461f9c956ea815603aa62b545648b36b5bd663f2a5d02edbf7f3`  
-    Last Modified: Tue, 24 May 2016 16:13:25 GMT  
-    Size: 7.7 KB (7685 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:928527b6d9a4cb8ab71f1852b9daebb83b1adcb6311a4da78e7b4ffc5b2b9811`  
-    Last Modified: Tue, 31 May 2016 19:44:41 GMT  
-    Size: 3.4 MB (3364999 bytes)
-  - `sha256:149eb0b10b70c25dc3d967295542e4b2ee2180266281268b659e797490370d82`  
-    Last Modified: Tue, 31 May 2016 19:44:37 GMT  
-    Size: 801.0 KB (800970 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:73477b11500e6b41b29af00de47c920921ca690b2babb3722d2df78a5e7457d6`  
-    Last Modified: Tue, 31 May 2016 19:44:26 GMT  
-    Size: 8.4 MB (8375856 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
-    Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:be0f63860f5659d3f471dfae045f218e352752632f9d64ba06aae0bcca5e69f7`  
+    Last Modified: Tue, 14 Jun 2016 21:46:51 GMT  
+    Size: 26.5 MB (26495100 bytes)
+  - `sha256:f2948f496975773aa7dbb4aff63c23515f1b44f3d1641d77abedd1ab23492b78`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:82bf1f7df25f095ad9499b17b889890946f583cdf5895b14b40d8c511222ea74`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 127.0 B
+  - `sha256:dcbb6907944b71ca86910ed3dae305ed7b0575bc0e70057b79fdcacdef2ebe02`  
+    Last Modified: Tue, 14 Jun 2016 21:46:30 GMT  
+    Size: 7.6 KB (7630 bytes)
+  - `sha256:71abfda552c87551c5034c96b2475ad73503fb71c2a2ff8b577ab82735751932`  
+    Last Modified: Tue, 14 Jun 2016 21:46:30 GMT  
+    Size: 3.4 MB (3386454 bytes)
+  - `sha256:778ef90531867d424f5ba3af4bac0d3305dfd1014692a329d7e5ff66f888052c`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
+    Size: 800.8 KB (800847 bytes)
+  - `sha256:1b41455f769882970488e0f995416787d4767e0d96d50d5257deb0d84c2a72b3`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 8.4 MB (8380284 bytes)
+  - `sha256:788873617308cf8fdbb02126a760296747cb871f948e232a7d467e45ae9dca42`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
+    Size: 1.2 KB (1162 bytes)
+  - `sha256:4b1cfc355f30a0c3ea51c0803754ec6125ef506781f05aae9df7e2d2254a5110`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:3.5-fpm`
 
 ```console
-$ docker pull joomla@sha256:b7f196d5bc35de62873768b7a120a2521dc0e449ae4ebee5117bad499788944b
+$ docker pull joomla@sha256:d8394942cf7f4584092403ac4f7a811545c67bf3d385fdb92220d260dc1b2a38
 ```
 
 - Platforms:
@@ -2586,163 +1890,115 @@ $ docker pull joomla@sha256:b7f196d5bc35de62873768b7a120a2521dc0e449ae4ebee5117b
 
 ### `joomla:3.5-fpm` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.7 MB (167715509 bytes)**  
+- Total Size: **167.8 MB (167769952 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0255236c9c57454b6bb7ee2e9d2f2f623586bfdece063e32564bd54349a9d15b`
+- Image ID: `sha256:10c54bbf206e63d3bcac684b54f6d35a49d56e427a71766e5a131ef479fc1aed`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:29:52 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Tue, 24 May 2016 02:42:38 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:42:39 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:42:40 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:42:41 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:50:05 GMT
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:21:00 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:50:34 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:50:35 GMT
+# Fri, 10 Jun 2016 03:21:01 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:21:01 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:50:37 GMT
+# Fri, 10 Jun 2016 03:21:02 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 24 May 2016 02:50:38 GMT
+# Fri, 10 Jun 2016 03:21:03 GMT
 EXPOSE 9000/tcp
-# Tue, 24 May 2016 02:50:39 GMT
+# Fri, 10 Jun 2016 03:21:03 GMT
 CMD ["php-fpm"]
-# Tue, 24 May 2016 17:12:52 GMT
+# Fri, 10 Jun 2016 21:46:26 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:13:49 GMT
+# Fri, 10 Jun 2016 21:47:47 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:14:00 GMT
+# Fri, 10 Jun 2016 21:47:58 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:14:01 GMT
+# Fri, 10 Jun 2016 21:47:58 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:14:01 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:14:02 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:14:07 GMT
+# Tue, 14 Jun 2016 21:43:33 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:34 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:41 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:14:10 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:14:11 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:14:11 GMT
+# Tue, 14 Jun 2016 21:43:41 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:42 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:42 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:14:12 GMT
+# Tue, 14 Jun 2016 21:43:42 GMT
 CMD ["php-fpm"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f89a675cb8196996622eea9b871b54d98d9f64139960df381811c29f34daee6d`  
-    Last Modified: Tue, 24 May 2016 16:14:26 GMT  
-    Size: 26.5 MB (26473649 bytes)
-  - `sha256:66d406a526e9c60d9e4ac7d728ffe799f3841cea815bc0851fa3ecf23c94614d`  
-    Last Modified: Tue, 24 May 2016 16:13:32 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:c4433c803ae5461f9c956ea815603aa62b545648b36b5bd663f2a5d02edbf7f3`  
-    Last Modified: Tue, 24 May 2016 16:13:25 GMT  
-    Size: 7.7 KB (7685 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:928527b6d9a4cb8ab71f1852b9daebb83b1adcb6311a4da78e7b4ffc5b2b9811`  
-    Last Modified: Tue, 31 May 2016 19:44:41 GMT  
-    Size: 3.4 MB (3364999 bytes)
-  - `sha256:149eb0b10b70c25dc3d967295542e4b2ee2180266281268b659e797490370d82`  
-    Last Modified: Tue, 31 May 2016 19:44:37 GMT  
-    Size: 801.0 KB (800970 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:73477b11500e6b41b29af00de47c920921ca690b2babb3722d2df78a5e7457d6`  
-    Last Modified: Tue, 31 May 2016 19:44:26 GMT  
-    Size: 8.4 MB (8375856 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
-    Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:be0f63860f5659d3f471dfae045f218e352752632f9d64ba06aae0bcca5e69f7`  
+    Last Modified: Tue, 14 Jun 2016 21:46:51 GMT  
+    Size: 26.5 MB (26495100 bytes)
+  - `sha256:f2948f496975773aa7dbb4aff63c23515f1b44f3d1641d77abedd1ab23492b78`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:82bf1f7df25f095ad9499b17b889890946f583cdf5895b14b40d8c511222ea74`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 127.0 B
+  - `sha256:dcbb6907944b71ca86910ed3dae305ed7b0575bc0e70057b79fdcacdef2ebe02`  
+    Last Modified: Tue, 14 Jun 2016 21:46:30 GMT  
+    Size: 7.6 KB (7630 bytes)
+  - `sha256:71abfda552c87551c5034c96b2475ad73503fb71c2a2ff8b577ab82735751932`  
+    Last Modified: Tue, 14 Jun 2016 21:46:30 GMT  
+    Size: 3.4 MB (3386454 bytes)
+  - `sha256:778ef90531867d424f5ba3af4bac0d3305dfd1014692a329d7e5ff66f888052c`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
+    Size: 800.8 KB (800847 bytes)
+  - `sha256:1b41455f769882970488e0f995416787d4767e0d96d50d5257deb0d84c2a72b3`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 8.4 MB (8380284 bytes)
+  - `sha256:788873617308cf8fdbb02126a760296747cb871f948e232a7d467e45ae9dca42`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
+    Size: 1.2 KB (1162 bytes)
+  - `sha256:4b1cfc355f30a0c3ea51c0803754ec6125ef506781f05aae9df7e2d2254a5110`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:3-fpm`
 
 ```console
-$ docker pull joomla@sha256:b7f196d5bc35de62873768b7a120a2521dc0e449ae4ebee5117bad499788944b
+$ docker pull joomla@sha256:d8394942cf7f4584092403ac4f7a811545c67bf3d385fdb92220d260dc1b2a38
 ```
 
 - Platforms:
@@ -2750,163 +2006,115 @@ $ docker pull joomla@sha256:b7f196d5bc35de62873768b7a120a2521dc0e449ae4ebee5117b
 
 ### `joomla:3-fpm` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.7 MB (167715509 bytes)**  
+- Total Size: **167.8 MB (167769952 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0255236c9c57454b6bb7ee2e9d2f2f623586bfdece063e32564bd54349a9d15b`
+- Image ID: `sha256:10c54bbf206e63d3bcac684b54f6d35a49d56e427a71766e5a131ef479fc1aed`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:29:52 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Tue, 24 May 2016 02:42:38 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:42:39 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:42:40 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:42:41 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:50:05 GMT
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:21:00 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:50:34 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:50:35 GMT
+# Fri, 10 Jun 2016 03:21:01 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:21:01 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:50:37 GMT
+# Fri, 10 Jun 2016 03:21:02 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 24 May 2016 02:50:38 GMT
+# Fri, 10 Jun 2016 03:21:03 GMT
 EXPOSE 9000/tcp
-# Tue, 24 May 2016 02:50:39 GMT
+# Fri, 10 Jun 2016 03:21:03 GMT
 CMD ["php-fpm"]
-# Tue, 24 May 2016 17:12:52 GMT
+# Fri, 10 Jun 2016 21:46:26 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:13:49 GMT
+# Fri, 10 Jun 2016 21:47:47 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:14:00 GMT
+# Fri, 10 Jun 2016 21:47:58 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:14:01 GMT
+# Fri, 10 Jun 2016 21:47:58 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:14:01 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:14:02 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:14:07 GMT
+# Tue, 14 Jun 2016 21:43:33 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:34 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:41 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:14:10 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:14:11 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:14:11 GMT
+# Tue, 14 Jun 2016 21:43:41 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:42 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:42 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:14:12 GMT
+# Tue, 14 Jun 2016 21:43:42 GMT
 CMD ["php-fpm"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f89a675cb8196996622eea9b871b54d98d9f64139960df381811c29f34daee6d`  
-    Last Modified: Tue, 24 May 2016 16:14:26 GMT  
-    Size: 26.5 MB (26473649 bytes)
-  - `sha256:66d406a526e9c60d9e4ac7d728ffe799f3841cea815bc0851fa3ecf23c94614d`  
-    Last Modified: Tue, 24 May 2016 16:13:32 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:c4433c803ae5461f9c956ea815603aa62b545648b36b5bd663f2a5d02edbf7f3`  
-    Last Modified: Tue, 24 May 2016 16:13:25 GMT  
-    Size: 7.7 KB (7685 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:928527b6d9a4cb8ab71f1852b9daebb83b1adcb6311a4da78e7b4ffc5b2b9811`  
-    Last Modified: Tue, 31 May 2016 19:44:41 GMT  
-    Size: 3.4 MB (3364999 bytes)
-  - `sha256:149eb0b10b70c25dc3d967295542e4b2ee2180266281268b659e797490370d82`  
-    Last Modified: Tue, 31 May 2016 19:44:37 GMT  
-    Size: 801.0 KB (800970 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:73477b11500e6b41b29af00de47c920921ca690b2babb3722d2df78a5e7457d6`  
-    Last Modified: Tue, 31 May 2016 19:44:26 GMT  
-    Size: 8.4 MB (8375856 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
-    Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:be0f63860f5659d3f471dfae045f218e352752632f9d64ba06aae0bcca5e69f7`  
+    Last Modified: Tue, 14 Jun 2016 21:46:51 GMT  
+    Size: 26.5 MB (26495100 bytes)
+  - `sha256:f2948f496975773aa7dbb4aff63c23515f1b44f3d1641d77abedd1ab23492b78`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:82bf1f7df25f095ad9499b17b889890946f583cdf5895b14b40d8c511222ea74`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 127.0 B
+  - `sha256:dcbb6907944b71ca86910ed3dae305ed7b0575bc0e70057b79fdcacdef2ebe02`  
+    Last Modified: Tue, 14 Jun 2016 21:46:30 GMT  
+    Size: 7.6 KB (7630 bytes)
+  - `sha256:71abfda552c87551c5034c96b2475ad73503fb71c2a2ff8b577ab82735751932`  
+    Last Modified: Tue, 14 Jun 2016 21:46:30 GMT  
+    Size: 3.4 MB (3386454 bytes)
+  - `sha256:778ef90531867d424f5ba3af4bac0d3305dfd1014692a329d7e5ff66f888052c`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
+    Size: 800.8 KB (800847 bytes)
+  - `sha256:1b41455f769882970488e0f995416787d4767e0d96d50d5257deb0d84c2a72b3`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 8.4 MB (8380284 bytes)
+  - `sha256:788873617308cf8fdbb02126a760296747cb871f948e232a7d467e45ae9dca42`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
+    Size: 1.2 KB (1162 bytes)
+  - `sha256:4b1cfc355f30a0c3ea51c0803754ec6125ef506781f05aae9df7e2d2254a5110`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
 ## `joomla:fpm`
 
 ```console
-$ docker pull joomla@sha256:b7f196d5bc35de62873768b7a120a2521dc0e449ae4ebee5117bad499788944b
+$ docker pull joomla@sha256:d8394942cf7f4584092403ac4f7a811545c67bf3d385fdb92220d260dc1b2a38
 ```
 
 - Platforms:
@@ -2914,327 +2122,231 @@ $ docker pull joomla@sha256:b7f196d5bc35de62873768b7a120a2521dc0e449ae4ebee5117b
 
 ### `joomla:fpm` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.7 MB (167715509 bytes)**  
+- Total Size: **167.8 MB (167769952 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0255236c9c57454b6bb7ee2e9d2f2f623586bfdece063e32564bd54349a9d15b`
+- Image ID: `sha256:10c54bbf206e63d3bcac684b54f6d35a49d56e427a71766e5a131ef479fc1aed`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:29:52 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Tue, 24 May 2016 02:42:38 GMT
+# Fri, 10 Jun 2016 03:14:30 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Tue, 24 May 2016 02:42:39 GMT
-ENV PHP_VERSION=5.6.21
-# Tue, 24 May 2016 02:42:40 GMT
-ENV PHP_FILENAME=php-5.6.21.tar.xz
-# Tue, 24 May 2016 02:42:41 GMT
-ENV PHP_SHA256=566ff1a486cb0485ed477a91ea292423f77a58671270ff73b74e67e3ce7084f9
-# Tue, 24 May 2016 02:50:05 GMT
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_VERSION=5.6.22
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_FILENAME=php-5.6.22.tar.xz
+# Fri, 10 Jun 2016 03:14:31 GMT
+ENV PHP_SHA256=c96980d7de1d66c821a4ee5809df0076f925b2fe0b8c362d234d92f2f0a178e2
+# Fri, 10 Jun 2016 03:21:00 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 02:50:34 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 02:50:35 GMT
+# Fri, 10 Jun 2016 03:21:01 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 03:21:01 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 02:50:37 GMT
+# Fri, 10 Jun 2016 03:21:02 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 24 May 2016 02:50:38 GMT
+# Fri, 10 Jun 2016 03:21:03 GMT
 EXPOSE 9000/tcp
-# Tue, 24 May 2016 02:50:39 GMT
+# Fri, 10 Jun 2016 03:21:03 GMT
 CMD ["php-fpm"]
-# Tue, 24 May 2016 17:12:52 GMT
+# Fri, 10 Jun 2016 21:46:26 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:13:49 GMT
+# Fri, 10 Jun 2016 21:47:47 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:14:00 GMT
+# Fri, 10 Jun 2016 21:47:58 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:14:01 GMT
+# Fri, 10 Jun 2016 21:47:58 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:14:01 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:14:02 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:14:07 GMT
+# Tue, 14 Jun 2016 21:43:33 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:34 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:41 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:14:10 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:14:11 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:14:11 GMT
+# Tue, 14 Jun 2016 21:43:41 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:42 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:42 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:14:12 GMT
+# Tue, 14 Jun 2016 21:43:42 GMT
 CMD ["php-fpm"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f89a675cb8196996622eea9b871b54d98d9f64139960df381811c29f34daee6d`  
-    Last Modified: Tue, 24 May 2016 16:14:26 GMT  
-    Size: 26.5 MB (26473649 bytes)
-  - `sha256:66d406a526e9c60d9e4ac7d728ffe799f3841cea815bc0851fa3ecf23c94614d`  
-    Last Modified: Tue, 24 May 2016 16:13:32 GMT  
-    Size: 1.6 KB (1627 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:c4433c803ae5461f9c956ea815603aa62b545648b36b5bd663f2a5d02edbf7f3`  
-    Last Modified: Tue, 24 May 2016 16:13:25 GMT  
-    Size: 7.7 KB (7685 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:928527b6d9a4cb8ab71f1852b9daebb83b1adcb6311a4da78e7b4ffc5b2b9811`  
-    Last Modified: Tue, 31 May 2016 19:44:41 GMT  
-    Size: 3.4 MB (3364999 bytes)
-  - `sha256:149eb0b10b70c25dc3d967295542e4b2ee2180266281268b659e797490370d82`  
-    Last Modified: Tue, 31 May 2016 19:44:37 GMT  
-    Size: 801.0 KB (800970 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:73477b11500e6b41b29af00de47c920921ca690b2babb3722d2df78a5e7457d6`  
-    Last Modified: Tue, 31 May 2016 19:44:26 GMT  
-    Size: 8.4 MB (8375856 bytes)
-  - `sha256:32660a451e43dd3995cb7b1a3f82c1650b7528bd1ad295521984918761470652`  
-    Last Modified: Tue, 22 Mar 2016 21:36:29 GMT  
-    Size: 1.2 KB (1163 bytes)
-  - `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`  
-    Last Modified: Tue, 04 Aug 2015 18:36:39 GMT  
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:be0f63860f5659d3f471dfae045f218e352752632f9d64ba06aae0bcca5e69f7`  
+    Last Modified: Tue, 14 Jun 2016 21:46:51 GMT  
+    Size: 26.5 MB (26495100 bytes)
+  - `sha256:f2948f496975773aa7dbb4aff63c23515f1b44f3d1641d77abedd1ab23492b78`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:82bf1f7df25f095ad9499b17b889890946f583cdf5895b14b40d8c511222ea74`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 127.0 B
+  - `sha256:dcbb6907944b71ca86910ed3dae305ed7b0575bc0e70057b79fdcacdef2ebe02`  
+    Last Modified: Tue, 14 Jun 2016 21:46:30 GMT  
+    Size: 7.6 KB (7630 bytes)
+  - `sha256:71abfda552c87551c5034c96b2475ad73503fb71c2a2ff8b577ab82735751932`  
+    Last Modified: Tue, 14 Jun 2016 21:46:30 GMT  
+    Size: 3.4 MB (3386454 bytes)
+  - `sha256:778ef90531867d424f5ba3af4bac0d3305dfd1014692a329d7e5ff66f888052c`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
+    Size: 800.8 KB (800847 bytes)
+  - `sha256:1b41455f769882970488e0f995416787d4767e0d96d50d5257deb0d84c2a72b3`  
+    Last Modified: Tue, 14 Jun 2016 21:46:31 GMT  
+    Size: 8.4 MB (8380284 bytes)
+  - `sha256:788873617308cf8fdbb02126a760296747cb871f948e232a7d467e45ae9dca42`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
+    Size: 1.2 KB (1162 bytes)
+  - `sha256:4b1cfc355f30a0c3ea51c0803754ec6125ef506781f05aae9df7e2d2254a5110`  
+    Last Modified: Tue, 14 Jun 2016 21:46:28 GMT  
     Size: 605.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
 
-## `joomla:3.5.0-fpm-php7`
+## `joomla:3.5.1-fpm-php7`
 
 ```console
-$ docker pull joomla@sha256:2f7a25ab2cc34f083b6dacb0fca70768c1e2b543117ab9e3334e6b3b0105c28b
+$ docker pull joomla@sha256:157844941f6800c29248eb681ddf4857e77821e6580dceac7a5276fcbfe8a478
 ```
 
 - Platforms:
   - linux; amd64
 
-### `joomla:3.5.0-fpm-php7` - linux; amd64
+### `joomla:3.5.1-fpm-php7` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **182.0 MB (182042610 bytes)**  
+- Total Size: **182.1 MB (182133466 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:e8fd3630734278994f49f8999e47bf105de434fc72dfe3ff1eb8e1f0ca933871`
+- Image ID: `sha256:1c95807b7954ae56ffd349d9dd081f06f5c988e150189d829488ce0fcc07f8e9`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:29:52 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Tue, 24 May 2016 04:01:21 GMT
+# Fri, 10 Jun 2016 02:49:05 GMT
 ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
-# Tue, 24 May 2016 04:01:21 GMT
-ENV PHP_VERSION=7.0.6
-# Tue, 24 May 2016 04:01:22 GMT
-ENV PHP_FILENAME=php-7.0.6.tar.xz
-# Tue, 24 May 2016 04:01:23 GMT
-ENV PHP_SHA256=1b237a9455e5476a425dbb9d99966bad68107747c601958cb9558a7fb49ab419
-# Tue, 24 May 2016 04:09:19 GMT
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_VERSION=7.0.7
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_FILENAME=php-7.0.7.tar.xz
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_SHA256=9cc64a7459242c79c10e79d74feaf5bae3541f604966ceb600c3d2e8f5fe4794
+# Fri, 10 Jun 2016 02:55:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 04:09:51 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 04:09:51 GMT
+# Fri, 10 Jun 2016 02:55:55 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 02:55:55 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 04:09:54 GMT
+# Fri, 10 Jun 2016 02:55:56 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 24 May 2016 04:09:55 GMT
+# Fri, 10 Jun 2016 02:55:57 GMT
 EXPOSE 9000/tcp
-# Tue, 24 May 2016 04:09:56 GMT
+# Fri, 10 Jun 2016 02:55:57 GMT
 CMD ["php-fpm"]
-# Tue, 24 May 2016 17:16:02 GMT
+# Fri, 10 Jun 2016 21:42:54 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:16:59 GMT
+# Fri, 10 Jun 2016 21:44:18 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:17:11 GMT
+# Fri, 10 Jun 2016 21:44:29 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:17:12 GMT
+# Fri, 10 Jun 2016 21:44:29 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:17:13 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:17:13 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:17:19 GMT
+# Tue, 14 Jun 2016 21:43:43 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:43 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:51 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:17:21 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:17:22 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:17:23 GMT
+# Tue, 14 Jun 2016 21:43:52 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:52 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:52 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:17:24 GMT
+# Tue, 14 Jun 2016 21:43:53 GMT
 CMD ["php-fpm"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:0de17142f2f64378d735367b0ef872d38af5933ced52b32781441e0edef3330c`  
-    Last Modified: Tue, 24 May 2016 16:27:53 GMT  
-    Size: 40.8 MB (40827529 bytes)
-  - `sha256:e8ad81f49e87e81e8019e52d8fb227da14de70ac399f6f66c3faca4136434bf7`  
-    Last Modified: Tue, 24 May 2016 16:26:57 GMT  
-    Size: 1.6 KB (1632 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a7b73d1321a127dcdd3b5bb90390ee76f4543a92b1581ee9f8d174e7d114bd1c`  
-    Last Modified: Tue, 24 May 2016 16:26:50 GMT  
-    Size: 7.7 KB (7739 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4bc178a11a2fa072895bfc1aed476558887a7a4c358626a6c8bab7c8ecafe9d5`  
-    Last Modified: Tue, 31 May 2016 19:46:08 GMT  
-    Size: 3.3 MB (3344437 bytes)
-  - `sha256:e20650f6e7af5993d0bdbe56f982e01d4582526ab655e3d45215a676386cdf40`  
-    Last Modified: Tue, 31 May 2016 19:46:04 GMT  
-    Size: 794.7 KB (794686 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:af08ed3c5f4030773b66f0f32c93791cfd5d84b7a504871d109eee61e2106bd9`  
-    Last Modified: Tue, 31 May 2016 19:45:53 GMT  
-    Size: 8.4 MB (8375863 bytes)
-  - `sha256:a5da9023210b97d4ecfa0cd13d9d8330b6f3ba6350f077d4e4b55c946d0515b6`  
-    Last Modified: Tue, 22 Mar 2016 21:39:37 GMT  
-    Size: 1.2 KB (1165 bytes)
-  - `sha256:ea823463a32834061584440469756329cc154fc62aec4544d487b5bb41635237`  
-    Last Modified: Tue, 22 Mar 2016 21:39:35 GMT  
-    Size: 604.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:6120681ee5f7c089835f29f8b6541e7e4448ffae87936452260226edb1b31772`  
+    Last Modified: Tue, 14 Jun 2016 21:47:46 GMT  
+    Size: 40.9 MB (40876892 bytes)
+  - `sha256:b03c32e1137127bfe0ada8f9386cb9f20f415e11e80ea071d3ab64401c19c51e`  
+    Last Modified: Tue, 14 Jun 2016 21:47:22 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:26db936539e93cb5e9db938d47408e276480f718bec632cfab6d214b5f9a3f50`  
+    Last Modified: Tue, 14 Jun 2016 21:47:21 GMT  
+    Size: 129.0 B
+  - `sha256:205a3f3322fccffe76edcd9e60e0cec2a1a1dda27a29c9fca09d00ebf1324ea3`  
+    Last Modified: Tue, 14 Jun 2016 21:47:22 GMT  
+    Size: 7.7 KB (7691 bytes)
+  - `sha256:bd236352565198b7fe9ade23d2f0af93aebbe853386ea9c18fc1b2f7344ef722`  
+    Last Modified: Tue, 14 Jun 2016 21:47:19 GMT  
+    Size: 3.4 MB (3374315 bytes)
+  - `sha256:1bcfba85479771eec172e61696a9e587a85e05ade7b2e37cc9fc89439e579021`  
+    Last Modified: Tue, 14 Jun 2016 21:47:20 GMT  
+    Size: 794.6 KB (794645 bytes)
+  - `sha256:0124e251c7f52981986deda0875f5448acc5a9d4498ff26c862d1ed300f96e43`  
+    Last Modified: Tue, 14 Jun 2016 21:47:21 GMT  
+    Size: 8.4 MB (8380282 bytes)
+  - `sha256:c2c4083669f7fd25c05d32ccdf5277c37e3bfa5058c5ca8834b26bc10d04d8be`  
+    Last Modified: Tue, 14 Jun 2016 21:47:18 GMT  
+    Size: 1.2 KB (1163 bytes)
+  - `sha256:726c6a965d08e366b7858c02f8c09b2de7ae2b482848e4ce8e296bffc2720faf`  
+    Last Modified: Tue, 14 Jun 2016 21:47:18 GMT  
+    Size: 606.0 B
 
 ## `joomla:3.5-fpm-php7`
 
 ```console
-$ docker pull joomla@sha256:2f7a25ab2cc34f083b6dacb0fca70768c1e2b543117ab9e3334e6b3b0105c28b
+$ docker pull joomla@sha256:157844941f6800c29248eb681ddf4857e77821e6580dceac7a5276fcbfe8a478
 ```
 
 - Platforms:
@@ -3242,163 +2354,115 @@ $ docker pull joomla@sha256:2f7a25ab2cc34f083b6dacb0fca70768c1e2b543117ab9e3334e
 
 ### `joomla:3.5-fpm-php7` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **182.0 MB (182042610 bytes)**  
+- Total Size: **182.1 MB (182133466 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:e8fd3630734278994f49f8999e47bf105de434fc72dfe3ff1eb8e1f0ca933871`
+- Image ID: `sha256:1c95807b7954ae56ffd349d9dd081f06f5c988e150189d829488ce0fcc07f8e9`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:29:52 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Tue, 24 May 2016 04:01:21 GMT
+# Fri, 10 Jun 2016 02:49:05 GMT
 ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
-# Tue, 24 May 2016 04:01:21 GMT
-ENV PHP_VERSION=7.0.6
-# Tue, 24 May 2016 04:01:22 GMT
-ENV PHP_FILENAME=php-7.0.6.tar.xz
-# Tue, 24 May 2016 04:01:23 GMT
-ENV PHP_SHA256=1b237a9455e5476a425dbb9d99966bad68107747c601958cb9558a7fb49ab419
-# Tue, 24 May 2016 04:09:19 GMT
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_VERSION=7.0.7
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_FILENAME=php-7.0.7.tar.xz
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_SHA256=9cc64a7459242c79c10e79d74feaf5bae3541f604966ceb600c3d2e8f5fe4794
+# Fri, 10 Jun 2016 02:55:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 04:09:51 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 04:09:51 GMT
+# Fri, 10 Jun 2016 02:55:55 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 02:55:55 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 04:09:54 GMT
+# Fri, 10 Jun 2016 02:55:56 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 24 May 2016 04:09:55 GMT
+# Fri, 10 Jun 2016 02:55:57 GMT
 EXPOSE 9000/tcp
-# Tue, 24 May 2016 04:09:56 GMT
+# Fri, 10 Jun 2016 02:55:57 GMT
 CMD ["php-fpm"]
-# Tue, 24 May 2016 17:16:02 GMT
+# Fri, 10 Jun 2016 21:42:54 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:16:59 GMT
+# Fri, 10 Jun 2016 21:44:18 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:17:11 GMT
+# Fri, 10 Jun 2016 21:44:29 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:17:12 GMT
+# Fri, 10 Jun 2016 21:44:29 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:17:13 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:17:13 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:17:19 GMT
+# Tue, 14 Jun 2016 21:43:43 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:43 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:51 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:17:21 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:17:22 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:17:23 GMT
+# Tue, 14 Jun 2016 21:43:52 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:52 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:52 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:17:24 GMT
+# Tue, 14 Jun 2016 21:43:53 GMT
 CMD ["php-fpm"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:0de17142f2f64378d735367b0ef872d38af5933ced52b32781441e0edef3330c`  
-    Last Modified: Tue, 24 May 2016 16:27:53 GMT  
-    Size: 40.8 MB (40827529 bytes)
-  - `sha256:e8ad81f49e87e81e8019e52d8fb227da14de70ac399f6f66c3faca4136434bf7`  
-    Last Modified: Tue, 24 May 2016 16:26:57 GMT  
-    Size: 1.6 KB (1632 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a7b73d1321a127dcdd3b5bb90390ee76f4543a92b1581ee9f8d174e7d114bd1c`  
-    Last Modified: Tue, 24 May 2016 16:26:50 GMT  
-    Size: 7.7 KB (7739 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4bc178a11a2fa072895bfc1aed476558887a7a4c358626a6c8bab7c8ecafe9d5`  
-    Last Modified: Tue, 31 May 2016 19:46:08 GMT  
-    Size: 3.3 MB (3344437 bytes)
-  - `sha256:e20650f6e7af5993d0bdbe56f982e01d4582526ab655e3d45215a676386cdf40`  
-    Last Modified: Tue, 31 May 2016 19:46:04 GMT  
-    Size: 794.7 KB (794686 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:af08ed3c5f4030773b66f0f32c93791cfd5d84b7a504871d109eee61e2106bd9`  
-    Last Modified: Tue, 31 May 2016 19:45:53 GMT  
-    Size: 8.4 MB (8375863 bytes)
-  - `sha256:a5da9023210b97d4ecfa0cd13d9d8330b6f3ba6350f077d4e4b55c946d0515b6`  
-    Last Modified: Tue, 22 Mar 2016 21:39:37 GMT  
-    Size: 1.2 KB (1165 bytes)
-  - `sha256:ea823463a32834061584440469756329cc154fc62aec4544d487b5bb41635237`  
-    Last Modified: Tue, 22 Mar 2016 21:39:35 GMT  
-    Size: 604.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:6120681ee5f7c089835f29f8b6541e7e4448ffae87936452260226edb1b31772`  
+    Last Modified: Tue, 14 Jun 2016 21:47:46 GMT  
+    Size: 40.9 MB (40876892 bytes)
+  - `sha256:b03c32e1137127bfe0ada8f9386cb9f20f415e11e80ea071d3ab64401c19c51e`  
+    Last Modified: Tue, 14 Jun 2016 21:47:22 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:26db936539e93cb5e9db938d47408e276480f718bec632cfab6d214b5f9a3f50`  
+    Last Modified: Tue, 14 Jun 2016 21:47:21 GMT  
+    Size: 129.0 B
+  - `sha256:205a3f3322fccffe76edcd9e60e0cec2a1a1dda27a29c9fca09d00ebf1324ea3`  
+    Last Modified: Tue, 14 Jun 2016 21:47:22 GMT  
+    Size: 7.7 KB (7691 bytes)
+  - `sha256:bd236352565198b7fe9ade23d2f0af93aebbe853386ea9c18fc1b2f7344ef722`  
+    Last Modified: Tue, 14 Jun 2016 21:47:19 GMT  
+    Size: 3.4 MB (3374315 bytes)
+  - `sha256:1bcfba85479771eec172e61696a9e587a85e05ade7b2e37cc9fc89439e579021`  
+    Last Modified: Tue, 14 Jun 2016 21:47:20 GMT  
+    Size: 794.6 KB (794645 bytes)
+  - `sha256:0124e251c7f52981986deda0875f5448acc5a9d4498ff26c862d1ed300f96e43`  
+    Last Modified: Tue, 14 Jun 2016 21:47:21 GMT  
+    Size: 8.4 MB (8380282 bytes)
+  - `sha256:c2c4083669f7fd25c05d32ccdf5277c37e3bfa5058c5ca8834b26bc10d04d8be`  
+    Last Modified: Tue, 14 Jun 2016 21:47:18 GMT  
+    Size: 1.2 KB (1163 bytes)
+  - `sha256:726c6a965d08e366b7858c02f8c09b2de7ae2b482848e4ce8e296bffc2720faf`  
+    Last Modified: Tue, 14 Jun 2016 21:47:18 GMT  
+    Size: 606.0 B
 
 ## `joomla:3-fpm-php7`
 
 ```console
-$ docker pull joomla@sha256:2f7a25ab2cc34f083b6dacb0fca70768c1e2b543117ab9e3334e6b3b0105c28b
+$ docker pull joomla@sha256:157844941f6800c29248eb681ddf4857e77821e6580dceac7a5276fcbfe8a478
 ```
 
 - Platforms:
@@ -3406,163 +2470,115 @@ $ docker pull joomla@sha256:2f7a25ab2cc34f083b6dacb0fca70768c1e2b543117ab9e3334e
 
 ### `joomla:3-fpm-php7` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **182.0 MB (182042610 bytes)**  
+- Total Size: **182.1 MB (182133466 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:e8fd3630734278994f49f8999e47bf105de434fc72dfe3ff1eb8e1f0ca933871`
+- Image ID: `sha256:1c95807b7954ae56ffd349d9dd081f06f5c988e150189d829488ce0fcc07f8e9`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:29:52 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Tue, 24 May 2016 04:01:21 GMT
+# Fri, 10 Jun 2016 02:49:05 GMT
 ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
-# Tue, 24 May 2016 04:01:21 GMT
-ENV PHP_VERSION=7.0.6
-# Tue, 24 May 2016 04:01:22 GMT
-ENV PHP_FILENAME=php-7.0.6.tar.xz
-# Tue, 24 May 2016 04:01:23 GMT
-ENV PHP_SHA256=1b237a9455e5476a425dbb9d99966bad68107747c601958cb9558a7fb49ab419
-# Tue, 24 May 2016 04:09:19 GMT
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_VERSION=7.0.7
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_FILENAME=php-7.0.7.tar.xz
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_SHA256=9cc64a7459242c79c10e79d74feaf5bae3541f604966ceb600c3d2e8f5fe4794
+# Fri, 10 Jun 2016 02:55:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 04:09:51 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 04:09:51 GMT
+# Fri, 10 Jun 2016 02:55:55 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 02:55:55 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 04:09:54 GMT
+# Fri, 10 Jun 2016 02:55:56 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 24 May 2016 04:09:55 GMT
+# Fri, 10 Jun 2016 02:55:57 GMT
 EXPOSE 9000/tcp
-# Tue, 24 May 2016 04:09:56 GMT
+# Fri, 10 Jun 2016 02:55:57 GMT
 CMD ["php-fpm"]
-# Tue, 24 May 2016 17:16:02 GMT
+# Fri, 10 Jun 2016 21:42:54 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:16:59 GMT
+# Fri, 10 Jun 2016 21:44:18 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:17:11 GMT
+# Fri, 10 Jun 2016 21:44:29 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:17:12 GMT
+# Fri, 10 Jun 2016 21:44:29 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:17:13 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:17:13 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:17:19 GMT
+# Tue, 14 Jun 2016 21:43:43 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:43 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:51 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:17:21 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:17:22 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:17:23 GMT
+# Tue, 14 Jun 2016 21:43:52 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:52 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:52 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:17:24 GMT
+# Tue, 14 Jun 2016 21:43:53 GMT
 CMD ["php-fpm"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:0de17142f2f64378d735367b0ef872d38af5933ced52b32781441e0edef3330c`  
-    Last Modified: Tue, 24 May 2016 16:27:53 GMT  
-    Size: 40.8 MB (40827529 bytes)
-  - `sha256:e8ad81f49e87e81e8019e52d8fb227da14de70ac399f6f66c3faca4136434bf7`  
-    Last Modified: Tue, 24 May 2016 16:26:57 GMT  
-    Size: 1.6 KB (1632 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a7b73d1321a127dcdd3b5bb90390ee76f4543a92b1581ee9f8d174e7d114bd1c`  
-    Last Modified: Tue, 24 May 2016 16:26:50 GMT  
-    Size: 7.7 KB (7739 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4bc178a11a2fa072895bfc1aed476558887a7a4c358626a6c8bab7c8ecafe9d5`  
-    Last Modified: Tue, 31 May 2016 19:46:08 GMT  
-    Size: 3.3 MB (3344437 bytes)
-  - `sha256:e20650f6e7af5993d0bdbe56f982e01d4582526ab655e3d45215a676386cdf40`  
-    Last Modified: Tue, 31 May 2016 19:46:04 GMT  
-    Size: 794.7 KB (794686 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:af08ed3c5f4030773b66f0f32c93791cfd5d84b7a504871d109eee61e2106bd9`  
-    Last Modified: Tue, 31 May 2016 19:45:53 GMT  
-    Size: 8.4 MB (8375863 bytes)
-  - `sha256:a5da9023210b97d4ecfa0cd13d9d8330b6f3ba6350f077d4e4b55c946d0515b6`  
-    Last Modified: Tue, 22 Mar 2016 21:39:37 GMT  
-    Size: 1.2 KB (1165 bytes)
-  - `sha256:ea823463a32834061584440469756329cc154fc62aec4544d487b5bb41635237`  
-    Last Modified: Tue, 22 Mar 2016 21:39:35 GMT  
-    Size: 604.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:6120681ee5f7c089835f29f8b6541e7e4448ffae87936452260226edb1b31772`  
+    Last Modified: Tue, 14 Jun 2016 21:47:46 GMT  
+    Size: 40.9 MB (40876892 bytes)
+  - `sha256:b03c32e1137127bfe0ada8f9386cb9f20f415e11e80ea071d3ab64401c19c51e`  
+    Last Modified: Tue, 14 Jun 2016 21:47:22 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:26db936539e93cb5e9db938d47408e276480f718bec632cfab6d214b5f9a3f50`  
+    Last Modified: Tue, 14 Jun 2016 21:47:21 GMT  
+    Size: 129.0 B
+  - `sha256:205a3f3322fccffe76edcd9e60e0cec2a1a1dda27a29c9fca09d00ebf1324ea3`  
+    Last Modified: Tue, 14 Jun 2016 21:47:22 GMT  
+    Size: 7.7 KB (7691 bytes)
+  - `sha256:bd236352565198b7fe9ade23d2f0af93aebbe853386ea9c18fc1b2f7344ef722`  
+    Last Modified: Tue, 14 Jun 2016 21:47:19 GMT  
+    Size: 3.4 MB (3374315 bytes)
+  - `sha256:1bcfba85479771eec172e61696a9e587a85e05ade7b2e37cc9fc89439e579021`  
+    Last Modified: Tue, 14 Jun 2016 21:47:20 GMT  
+    Size: 794.6 KB (794645 bytes)
+  - `sha256:0124e251c7f52981986deda0875f5448acc5a9d4498ff26c862d1ed300f96e43`  
+    Last Modified: Tue, 14 Jun 2016 21:47:21 GMT  
+    Size: 8.4 MB (8380282 bytes)
+  - `sha256:c2c4083669f7fd25c05d32ccdf5277c37e3bfa5058c5ca8834b26bc10d04d8be`  
+    Last Modified: Tue, 14 Jun 2016 21:47:18 GMT  
+    Size: 1.2 KB (1163 bytes)
+  - `sha256:726c6a965d08e366b7858c02f8c09b2de7ae2b482848e4ce8e296bffc2720faf`  
+    Last Modified: Tue, 14 Jun 2016 21:47:18 GMT  
+    Size: 606.0 B
 
 ## `joomla:fpm-php7`
 
 ```console
-$ docker pull joomla@sha256:2f7a25ab2cc34f083b6dacb0fca70768c1e2b543117ab9e3334e6b3b0105c28b
+$ docker pull joomla@sha256:157844941f6800c29248eb681ddf4857e77821e6580dceac7a5276fcbfe8a478
 ```
 
 - Platforms:
@@ -3570,155 +2586,107 @@ $ docker pull joomla@sha256:2f7a25ab2cc34f083b6dacb0fca70768c1e2b543117ab9e3334e
 
 ### `joomla:fpm-php7` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **182.0 MB (182042610 bytes)**  
+- Total Size: **182.1 MB (182133466 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:e8fd3630734278994f49f8999e47bf105de434fc72dfe3ff1eb8e1f0ca933871`
+- Image ID: `sha256:1c95807b7954ae56ffd349d9dd081f06f5c988e150189d829488ce0fcc07f8e9`
 - Entrypoint: `["\/entrypoint.sh"]`
 - Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 01:00:46 GMT
+# Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 24 May 2016 01:01:50 GMT
+# Fri, 10 Jun 2016 02:35:57 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 24 May 2016 01:02:02 GMT
+# Fri, 10 Jun 2016 02:35:58 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 24 May 2016 01:02:04 GMT
+# Fri, 10 Jun 2016 02:35:59 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Tue, 24 May 2016 01:29:52 GMT
+# Fri, 10 Jun 2016 02:49:04 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Tue, 24 May 2016 04:01:21 GMT
+# Fri, 10 Jun 2016 02:49:05 GMT
 ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
-# Tue, 24 May 2016 04:01:21 GMT
-ENV PHP_VERSION=7.0.6
-# Tue, 24 May 2016 04:01:22 GMT
-ENV PHP_FILENAME=php-7.0.6.tar.xz
-# Tue, 24 May 2016 04:01:23 GMT
-ENV PHP_SHA256=1b237a9455e5476a425dbb9d99966bad68107747c601958cb9558a7fb49ab419
-# Tue, 24 May 2016 04:09:19 GMT
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_VERSION=7.0.7
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_FILENAME=php-7.0.7.tar.xz
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV PHP_SHA256=9cc64a7459242c79c10e79d74feaf5bae3541f604966ceb600c3d2e8f5fe4794
+# Fri, 10 Jun 2016 02:55:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Tue, 24 May 2016 04:09:51 GMT
-COPY multi:870ab3b3adc2c0557bfb7641ba536d53f2658757986f0ba2ae1ccbfb1b0577cb in /usr/local/bin/
-# Tue, 24 May 2016 04:09:51 GMT
+# Fri, 10 Jun 2016 02:55:55 GMT
+COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /usr/local/bin/
+# Fri, 10 Jun 2016 02:55:55 GMT
 WORKDIR /var/www/html
-# Tue, 24 May 2016 04:09:54 GMT
+# Fri, 10 Jun 2016 02:55:56 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 24 May 2016 04:09:55 GMT
+# Fri, 10 Jun 2016 02:55:57 GMT
 EXPOSE 9000/tcp
-# Tue, 24 May 2016 04:09:56 GMT
+# Fri, 10 Jun 2016 02:55:57 GMT
 CMD ["php-fpm"]
-# Tue, 24 May 2016 17:16:02 GMT
+# Fri, 10 Jun 2016 21:42:54 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 24 May 2016 17:16:59 GMT
+# Fri, 10 Jun 2016 21:44:18 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 24 May 2016 17:17:11 GMT
+# Fri, 10 Jun 2016 21:44:29 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 24 May 2016 17:17:12 GMT
+# Fri, 10 Jun 2016 21:44:29 GMT
 VOLUME [/var/www/html]
-# Tue, 24 May 2016 17:17:13 GMT
-ENV JOOMLA_VERSION=3.5.0
-# Tue, 24 May 2016 17:17:13 GMT
-ENV JOOMLA_SHA1=8c88f079f31774adc9d2682067beabc057c541aa
-# Tue, 24 May 2016 17:17:19 GMT
+# Tue, 14 Jun 2016 21:43:43 GMT
+ENV JOOMLA_VERSION=3.5.1
+# Tue, 14 Jun 2016 21:43:43 GMT
+ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
+# Tue, 14 Jun 2016 21:43:51 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 24 May 2016 17:17:21 GMT
-COPY file:f0ea19b03f3c4bb76ac5eb45232ada72e907c0186ddaffbfb745fbf73bea8841 in /entrypoint.sh
-# Tue, 24 May 2016 17:17:22 GMT
-COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
-# Tue, 24 May 2016 17:17:23 GMT
+# Tue, 14 Jun 2016 21:43:52 GMT
+COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
+# Tue, 14 Jun 2016 21:43:52 GMT
+COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
+# Tue, 14 Jun 2016 21:43:52 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 24 May 2016 17:17:24 GMT
+# Tue, 14 Jun 2016 21:43:53 GMT
 CMD ["php-fpm"]
 ```
 
 - Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:0de17142f2f64378d735367b0ef872d38af5933ced52b32781441e0edef3330c`  
-    Last Modified: Tue, 24 May 2016 16:27:53 GMT  
-    Size: 40.8 MB (40827529 bytes)
-  - `sha256:e8ad81f49e87e81e8019e52d8fb227da14de70ac399f6f66c3faca4136434bf7`  
-    Last Modified: Tue, 24 May 2016 16:26:57 GMT  
-    Size: 1.6 KB (1632 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a7b73d1321a127dcdd3b5bb90390ee76f4543a92b1581ee9f8d174e7d114bd1c`  
-    Last Modified: Tue, 24 May 2016 16:26:50 GMT  
-    Size: 7.7 KB (7739 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4bc178a11a2fa072895bfc1aed476558887a7a4c358626a6c8bab7c8ecafe9d5`  
-    Last Modified: Tue, 31 May 2016 19:46:08 GMT  
-    Size: 3.3 MB (3344437 bytes)
-  - `sha256:e20650f6e7af5993d0bdbe56f982e01d4582526ab655e3d45215a676386cdf40`  
-    Last Modified: Tue, 31 May 2016 19:46:04 GMT  
-    Size: 794.7 KB (794686 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:af08ed3c5f4030773b66f0f32c93791cfd5d84b7a504871d109eee61e2106bd9`  
-    Last Modified: Tue, 31 May 2016 19:45:53 GMT  
-    Size: 8.4 MB (8375863 bytes)
-  - `sha256:a5da9023210b97d4ecfa0cd13d9d8330b6f3ba6350f077d4e4b55c946d0515b6`  
-    Last Modified: Tue, 22 Mar 2016 21:39:37 GMT  
-    Size: 1.2 KB (1165 bytes)
-  - `sha256:ea823463a32834061584440469756329cc154fc62aec4544d487b5bb41635237`  
-    Last Modified: Tue, 22 Mar 2016 21:39:35 GMT  
-    Size: 604.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+    Size: 51.4 MB (51352535 bytes)
+  - `sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+    Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+    Size: 77.3 MB (77343405 bytes)
+  - `sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+    Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+    Size: 180.0 B
+  - `sha256:6120681ee5f7c089835f29f8b6541e7e4448ffae87936452260226edb1b31772`  
+    Last Modified: Tue, 14 Jun 2016 21:47:46 GMT  
+    Size: 40.9 MB (40876892 bytes)
+  - `sha256:b03c32e1137127bfe0ada8f9386cb9f20f415e11e80ea071d3ab64401c19c51e`  
+    Last Modified: Tue, 14 Jun 2016 21:47:22 GMT  
+    Size: 1.6 KB (1623 bytes)
+  - `sha256:26db936539e93cb5e9db938d47408e276480f718bec632cfab6d214b5f9a3f50`  
+    Last Modified: Tue, 14 Jun 2016 21:47:21 GMT  
+    Size: 129.0 B
+  - `sha256:205a3f3322fccffe76edcd9e60e0cec2a1a1dda27a29c9fca09d00ebf1324ea3`  
+    Last Modified: Tue, 14 Jun 2016 21:47:22 GMT  
+    Size: 7.7 KB (7691 bytes)
+  - `sha256:bd236352565198b7fe9ade23d2f0af93aebbe853386ea9c18fc1b2f7344ef722`  
+    Last Modified: Tue, 14 Jun 2016 21:47:19 GMT  
+    Size: 3.4 MB (3374315 bytes)
+  - `sha256:1bcfba85479771eec172e61696a9e587a85e05ade7b2e37cc9fc89439e579021`  
+    Last Modified: Tue, 14 Jun 2016 21:47:20 GMT  
+    Size: 794.6 KB (794645 bytes)
+  - `sha256:0124e251c7f52981986deda0875f5448acc5a9d4498ff26c862d1ed300f96e43`  
+    Last Modified: Tue, 14 Jun 2016 21:47:21 GMT  
+    Size: 8.4 MB (8380282 bytes)
+  - `sha256:c2c4083669f7fd25c05d32ccdf5277c37e3bfa5058c5ca8834b26bc10d04d8be`  
+    Last Modified: Tue, 14 Jun 2016 21:47:18 GMT  
+    Size: 1.2 KB (1163 bytes)
+  - `sha256:726c6a965d08e366b7858c02f8c09b2de7ae2b482848e4ce8e296bffc2720faf`  
+    Last Modified: Tue, 14 Jun 2016 21:47:18 GMT  
+    Size: 606.0 B
