@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `4.1.1`, `enterprise-4.1.1` (*enterprise/couchbase-server/4.1.1/Dockerfile*)](https://github.com/couchbase/docker/blob/3bd2525140309d7342d437c5691c729b35bd4cbb/enterprise/couchbase-server/4.1.1/Dockerfile)
--	[`community`, `community-4.0.0` (*community/couchbase-server/4.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/3bd2525140309d7342d437c5691c729b35bd4cbb/community/couchbase-server/4.0.0/Dockerfile)
--	[`3.1.5`, `enterprise-3.1.5` (*enterprise/couchbase-server/3.1.5/Dockerfile*)](https://github.com/couchbase/docker/blob/3bd2525140309d7342d437c5691c729b35bd4cbb/enterprise/couchbase-server/3.1.5/Dockerfile)
--	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/3bd2525140309d7342d437c5691c729b35bd4cbb/community/couchbase-server/3.1.3/Dockerfile)
+-	[`latest`, `enterprise`, `4.5.0`, `enterprise-4.5.0` (*enterprise/couchbase-server/4.5.0/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/enterprise/couchbase-server/4.5.0/Dockerfile)
+-	[`community`, `community-4.0.0` (*community/couchbase-server/4.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/community/couchbase-server/4.0.0/Dockerfile)
+-	[`3.1.5`, `enterprise-3.1.5` (*enterprise/couchbase-server/3.1.5/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/enterprise/couchbase-server/3.1.5/Dockerfile)
+-	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/community/couchbase-server/3.1.3/Dockerfile)
 
 [![](https://badge.imagelayers.io/couchbase:latest.svg)](https://imagelayers.io/?images=couchbase:latest,couchbase:community,couchbase:3.1.5,couchbase:community-3.1.3)
 
