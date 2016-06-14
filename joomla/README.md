@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.5.0-apache`, `3.5.0`, `3.5-apache`, `3.5`, `3-apache`, `apache`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/ff7a9228837917b42b8dcbf3fbb602701dcf48c7/apache/Dockerfile)
--	[`3.5.0-apache-php7`, `3.5-apache-php7`, `3-apache-php7`, `apache-php7` (*apache-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/9525cc2871b97f02041c109f1d2bf3fc2be2f419/apache-php7/Dockerfile)
--	[`3.5.0-fpm`, `3.5-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/ff7a9228837917b42b8dcbf3fbb602701dcf48c7/fpm/Dockerfile)
--	[`3.5.0-fpm-php7`, `3.5-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/9525cc2871b97f02041c109f1d2bf3fc2be2f419/fpm-php7/Dockerfile)
+-	[`3.5.1-apache`, `3.5.1`, `3.5-apache`, `3.5`, `3-apache`, `apache`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/4350b74a6cf46da40a390c721c9bdc37612a6cba/apache/Dockerfile)
+-	[`3.5.1-apache-php7`, `3.5-apache-php7`, `3-apache-php7`, `apache-php7` (*apache-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/4350b74a6cf46da40a390c721c9bdc37612a6cba/apache-php7/Dockerfile)
+-	[`3.5.1-fpm`, `3.5-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/4350b74a6cf46da40a390c721c9bdc37612a6cba/fpm/Dockerfile)
+-	[`3.5.1-fpm-php7`, `3.5-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/4350b74a6cf46da40a390c721c9bdc37612a6cba/fpm-php7/Dockerfile)
 
-[![](https://badge.imagelayers.io/joomla:latest.svg)](https://imagelayers.io/?images=joomla:3.5.0-apache,joomla:3.5.0-apache-php7,joomla:3.5.0-fpm,joomla:3.5.0-fpm-php7)
+[![](https://badge.imagelayers.io/joomla:latest.svg)](https://imagelayers.io/?images=joomla:3.5.1-apache,joomla:3.5.1-apache-php7,joomla:3.5.1-fpm,joomla:3.5.1-fpm-php7)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjoomla).
 

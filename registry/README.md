@@ -1,8 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2`, `2.4`, `2.4.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/5cbbc8d1e6046cef5938e3380fd2a5fbd854f921/Dockerfile)
+-	[`2.5.0-rc.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/98cf3dfbb2b811d5516f5409d5d5b804a72b478d/Dockerfile)
 
-[![](https://badge.imagelayers.io/registry:2.svg)](https://imagelayers.io/?images=registry:2)
+[![](https://badge.imagelayers.io/registry:2.svg)](https://imagelayers.io/?images=registry:2,registry:2.5.0-rc.1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fregistry).
 
