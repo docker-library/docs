@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2-5.1.1`, `2-5.1`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/d0f1f8cf3dd4a4feefa0f6d101e40583429f647f/2/Dockerfile)
--	[`2-5.1.1-slim`, `2-5.1-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/d0f1f8cf3dd4a4feefa0f6d101e40583429f647f/2/slim/Dockerfile)
--	[`2-5.1.1-onbuild`, `2-5.1-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
--	[`3-2.4.0`, `3-2.4`, `3-2`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/d0f1f8cf3dd4a4feefa0f6d101e40583429f647f/3/Dockerfile)
--	[`3-2.4.0-slim`, `3-2.4-slim`, `3-2-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/d0f1f8cf3dd4a4feefa0f6d101e40583429f647f/3/slim/Dockerfile)
--	[`3-2.4.0-onbuild`, `3-2.4-onbuild`, `3-2-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
+-	[`2-5.3.0`, `2-5.3`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/cdf5a7cd566bc418aff8eb383b431abb3ea88e50/2/Dockerfile)
+-	[`2-5.3.0-slim`, `2-5.3-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/cdf5a7cd566bc418aff8eb383b431abb3ea88e50/2/slim/Dockerfile)
+-	[`2-5.3.0-onbuild`, `2-5.3-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
+-	[`3-5.2.0-alpha1`, `3-5.2.0`, `3-5.2`, `3-5`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/cdf5a7cd566bc418aff8eb383b431abb3ea88e50/3/Dockerfile)
+-	[`3-5.2.0-alpha1-slim`, `3-5.2.0-slim`, `3-5.2-slim`, `3-5-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/cdf5a7cd566bc418aff8eb383b431abb3ea88e50/3/slim/Dockerfile)
+-	[`3-5.2.0-alpha1-onbuild`, `3-5.2.0-onbuild`, `3-5.2-onbuild`, `3-5-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/pypy:latest.svg)](https://imagelayers.io/?images=pypy:2-5.1.1,pypy:2-5.1.1-slim,pypy:2-5.1.1-onbuild,pypy:3-2.4.0,pypy:3-2.4.0-slim,pypy:3-2.4.0-onbuild)
+[![](https://badge.imagelayers.io/pypy:latest.svg)](https://imagelayers.io/?images=pypy:2-5.3.0,pypy:2-5.3.0-slim,pypy:2-5.3.0-onbuild,pypy:3-5.2.0-alpha1,pypy:3-5.2.0-alpha1-slim,pypy:3-5.2.0-alpha1-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/pypy`)](https://github.com/docker-library/official-images/blob/master/library/pypy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpypy).
 
