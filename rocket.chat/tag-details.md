@@ -13,17 +13,17 @@
 $ docker pull rocket.chat@sha256:3d3211aedccbaca97f7c8c341bbe762cad9eff165c30f5795888064bfa869575
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `rocket.chat:0.33.0` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **121.1 MB (121083286 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:5dfe5ecb180842045bd585af226d775ff697fac389c9660ad51087748ed20cd0`
-- Default Command: `["node","main.js"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **121.1 MB (121083286 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5dfe5ecb180842045bd585af226d775ff697fac389c9660ad51087748ed20cd0`
+-	Default Command: `["node","main.js"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -66,28 +66,28 @@ EXPOSE 3000/tcp
 CMD ["node" "main.js"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-    Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-    Size: 18.5 MB (18547316 bytes)
-  - `sha256:29fae488db6092cf3bfa5c6c87743c4ee932f90c610c01044bb500f8b3d81eee`  
-    Last Modified: Thu, 09 Jun 2016 14:38:04 GMT  
-    Size: 71.8 KB (71849 bytes)
-  - `sha256:e1a70a2f0120462fc7b35b3d30b0802c9317fbc6d14ac3737cfba6a525865844`  
-    Last Modified: Thu, 09 Jun 2016 14:38:08 GMT  
-    Size: 7.1 MB (7129915 bytes)
-  - `sha256:bc79faa1568c07b17bb231c65c7b83fe215dc36cef3cdcb0f73ba57eb83f21e3`  
-    Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
-    Size: 2.0 KB (2046 bytes)
-  - `sha256:9ae0be1e41887b84569568255cdc47b8a800872dc34262616d0e00803620ac40`  
-    Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
-    Size: 69.3 KB (69293 bytes)
-  - `sha256:4d58e244cd35e787f236ce03a15dcf9a736c8999a7aa28084d3348b08d895d1b`  
-    Last Modified: Thu, 09 Jun 2016 14:39:32 GMT  
-    Size: 43.9 MB (43906533 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
+		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
+		Size: 18.5 MB (18547316 bytes)
+	-	`sha256:29fae488db6092cf3bfa5c6c87743c4ee932f90c610c01044bb500f8b3d81eee`  
+		Last Modified: Thu, 09 Jun 2016 14:38:04 GMT  
+		Size: 71.8 KB (71849 bytes)
+	-	`sha256:e1a70a2f0120462fc7b35b3d30b0802c9317fbc6d14ac3737cfba6a525865844`  
+		Last Modified: Thu, 09 Jun 2016 14:38:08 GMT  
+		Size: 7.1 MB (7129915 bytes)
+	-	`sha256:bc79faa1568c07b17bb231c65c7b83fe215dc36cef3cdcb0f73ba57eb83f21e3`  
+		Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
+		Size: 2.0 KB (2046 bytes)
+	-	`sha256:9ae0be1e41887b84569568255cdc47b8a800872dc34262616d0e00803620ac40`  
+		Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
+		Size: 69.3 KB (69293 bytes)
+	-	`sha256:4d58e244cd35e787f236ce03a15dcf9a736c8999a7aa28084d3348b08d895d1b`  
+		Last Modified: Thu, 09 Jun 2016 14:39:32 GMT  
+		Size: 43.9 MB (43906533 bytes)
 
 ## `rocket.chat:0.33`
 
@@ -95,17 +95,17 @@ CMD ["node" "main.js"]
 $ docker pull rocket.chat@sha256:3d3211aedccbaca97f7c8c341bbe762cad9eff165c30f5795888064bfa869575
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `rocket.chat:0.33` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **121.1 MB (121083286 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:5dfe5ecb180842045bd585af226d775ff697fac389c9660ad51087748ed20cd0`
-- Default Command: `["node","main.js"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **121.1 MB (121083286 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5dfe5ecb180842045bd585af226d775ff697fac389c9660ad51087748ed20cd0`
+-	Default Command: `["node","main.js"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -148,28 +148,28 @@ EXPOSE 3000/tcp
 CMD ["node" "main.js"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-    Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-    Size: 18.5 MB (18547316 bytes)
-  - `sha256:29fae488db6092cf3bfa5c6c87743c4ee932f90c610c01044bb500f8b3d81eee`  
-    Last Modified: Thu, 09 Jun 2016 14:38:04 GMT  
-    Size: 71.8 KB (71849 bytes)
-  - `sha256:e1a70a2f0120462fc7b35b3d30b0802c9317fbc6d14ac3737cfba6a525865844`  
-    Last Modified: Thu, 09 Jun 2016 14:38:08 GMT  
-    Size: 7.1 MB (7129915 bytes)
-  - `sha256:bc79faa1568c07b17bb231c65c7b83fe215dc36cef3cdcb0f73ba57eb83f21e3`  
-    Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
-    Size: 2.0 KB (2046 bytes)
-  - `sha256:9ae0be1e41887b84569568255cdc47b8a800872dc34262616d0e00803620ac40`  
-    Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
-    Size: 69.3 KB (69293 bytes)
-  - `sha256:4d58e244cd35e787f236ce03a15dcf9a736c8999a7aa28084d3348b08d895d1b`  
-    Last Modified: Thu, 09 Jun 2016 14:39:32 GMT  
-    Size: 43.9 MB (43906533 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
+		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
+		Size: 18.5 MB (18547316 bytes)
+	-	`sha256:29fae488db6092cf3bfa5c6c87743c4ee932f90c610c01044bb500f8b3d81eee`  
+		Last Modified: Thu, 09 Jun 2016 14:38:04 GMT  
+		Size: 71.8 KB (71849 bytes)
+	-	`sha256:e1a70a2f0120462fc7b35b3d30b0802c9317fbc6d14ac3737cfba6a525865844`  
+		Last Modified: Thu, 09 Jun 2016 14:38:08 GMT  
+		Size: 7.1 MB (7129915 bytes)
+	-	`sha256:bc79faa1568c07b17bb231c65c7b83fe215dc36cef3cdcb0f73ba57eb83f21e3`  
+		Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
+		Size: 2.0 KB (2046 bytes)
+	-	`sha256:9ae0be1e41887b84569568255cdc47b8a800872dc34262616d0e00803620ac40`  
+		Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
+		Size: 69.3 KB (69293 bytes)
+	-	`sha256:4d58e244cd35e787f236ce03a15dcf9a736c8999a7aa28084d3348b08d895d1b`  
+		Last Modified: Thu, 09 Jun 2016 14:39:32 GMT  
+		Size: 43.9 MB (43906533 bytes)
 
 ## `rocket.chat:0`
 
@@ -177,17 +177,17 @@ CMD ["node" "main.js"]
 $ docker pull rocket.chat@sha256:3d3211aedccbaca97f7c8c341bbe762cad9eff165c30f5795888064bfa869575
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `rocket.chat:0` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **121.1 MB (121083286 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:5dfe5ecb180842045bd585af226d775ff697fac389c9660ad51087748ed20cd0`
-- Default Command: `["node","main.js"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **121.1 MB (121083286 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5dfe5ecb180842045bd585af226d775ff697fac389c9660ad51087748ed20cd0`
+-	Default Command: `["node","main.js"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -230,28 +230,28 @@ EXPOSE 3000/tcp
 CMD ["node" "main.js"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-    Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-    Size: 18.5 MB (18547316 bytes)
-  - `sha256:29fae488db6092cf3bfa5c6c87743c4ee932f90c610c01044bb500f8b3d81eee`  
-    Last Modified: Thu, 09 Jun 2016 14:38:04 GMT  
-    Size: 71.8 KB (71849 bytes)
-  - `sha256:e1a70a2f0120462fc7b35b3d30b0802c9317fbc6d14ac3737cfba6a525865844`  
-    Last Modified: Thu, 09 Jun 2016 14:38:08 GMT  
-    Size: 7.1 MB (7129915 bytes)
-  - `sha256:bc79faa1568c07b17bb231c65c7b83fe215dc36cef3cdcb0f73ba57eb83f21e3`  
-    Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
-    Size: 2.0 KB (2046 bytes)
-  - `sha256:9ae0be1e41887b84569568255cdc47b8a800872dc34262616d0e00803620ac40`  
-    Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
-    Size: 69.3 KB (69293 bytes)
-  - `sha256:4d58e244cd35e787f236ce03a15dcf9a736c8999a7aa28084d3348b08d895d1b`  
-    Last Modified: Thu, 09 Jun 2016 14:39:32 GMT  
-    Size: 43.9 MB (43906533 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
+		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
+		Size: 18.5 MB (18547316 bytes)
+	-	`sha256:29fae488db6092cf3bfa5c6c87743c4ee932f90c610c01044bb500f8b3d81eee`  
+		Last Modified: Thu, 09 Jun 2016 14:38:04 GMT  
+		Size: 71.8 KB (71849 bytes)
+	-	`sha256:e1a70a2f0120462fc7b35b3d30b0802c9317fbc6d14ac3737cfba6a525865844`  
+		Last Modified: Thu, 09 Jun 2016 14:38:08 GMT  
+		Size: 7.1 MB (7129915 bytes)
+	-	`sha256:bc79faa1568c07b17bb231c65c7b83fe215dc36cef3cdcb0f73ba57eb83f21e3`  
+		Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
+		Size: 2.0 KB (2046 bytes)
+	-	`sha256:9ae0be1e41887b84569568255cdc47b8a800872dc34262616d0e00803620ac40`  
+		Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
+		Size: 69.3 KB (69293 bytes)
+	-	`sha256:4d58e244cd35e787f236ce03a15dcf9a736c8999a7aa28084d3348b08d895d1b`  
+		Last Modified: Thu, 09 Jun 2016 14:39:32 GMT  
+		Size: 43.9 MB (43906533 bytes)
 
 ## `rocket.chat:latest`
 
@@ -259,17 +259,17 @@ CMD ["node" "main.js"]
 $ docker pull rocket.chat@sha256:3d3211aedccbaca97f7c8c341bbe762cad9eff165c30f5795888064bfa869575
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `rocket.chat:latest` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **121.1 MB (121083286 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:5dfe5ecb180842045bd585af226d775ff697fac389c9660ad51087748ed20cd0`
-- Default Command: `["node","main.js"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **121.1 MB (121083286 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5dfe5ecb180842045bd585af226d775ff697fac389c9660ad51087748ed20cd0`
+-	Default Command: `["node","main.js"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -312,25 +312,25 @@ EXPOSE 3000/tcp
 CMD ["node" "main.js"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-    Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-    Size: 18.5 MB (18547316 bytes)
-  - `sha256:29fae488db6092cf3bfa5c6c87743c4ee932f90c610c01044bb500f8b3d81eee`  
-    Last Modified: Thu, 09 Jun 2016 14:38:04 GMT  
-    Size: 71.8 KB (71849 bytes)
-  - `sha256:e1a70a2f0120462fc7b35b3d30b0802c9317fbc6d14ac3737cfba6a525865844`  
-    Last Modified: Thu, 09 Jun 2016 14:38:08 GMT  
-    Size: 7.1 MB (7129915 bytes)
-  - `sha256:bc79faa1568c07b17bb231c65c7b83fe215dc36cef3cdcb0f73ba57eb83f21e3`  
-    Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
-    Size: 2.0 KB (2046 bytes)
-  - `sha256:9ae0be1e41887b84569568255cdc47b8a800872dc34262616d0e00803620ac40`  
-    Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
-    Size: 69.3 KB (69293 bytes)
-  - `sha256:4d58e244cd35e787f236ce03a15dcf9a736c8999a7aa28084d3348b08d895d1b`  
-    Last Modified: Thu, 09 Jun 2016 14:39:32 GMT  
-    Size: 43.9 MB (43906533 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
+		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
+		Size: 18.5 MB (18547316 bytes)
+	-	`sha256:29fae488db6092cf3bfa5c6c87743c4ee932f90c610c01044bb500f8b3d81eee`  
+		Last Modified: Thu, 09 Jun 2016 14:38:04 GMT  
+		Size: 71.8 KB (71849 bytes)
+	-	`sha256:e1a70a2f0120462fc7b35b3d30b0802c9317fbc6d14ac3737cfba6a525865844`  
+		Last Modified: Thu, 09 Jun 2016 14:38:08 GMT  
+		Size: 7.1 MB (7129915 bytes)
+	-	`sha256:bc79faa1568c07b17bb231c65c7b83fe215dc36cef3cdcb0f73ba57eb83f21e3`  
+		Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
+		Size: 2.0 KB (2046 bytes)
+	-	`sha256:9ae0be1e41887b84569568255cdc47b8a800872dc34262616d0e00803620ac40`  
+		Last Modified: Thu, 09 Jun 2016 14:39:11 GMT  
+		Size: 69.3 KB (69293 bytes)
+	-	`sha256:4d58e244cd35e787f236ce03a15dcf9a736c8999a7aa28084d3348b08d895d1b`  
+		Last Modified: Thu, 09 Jun 2016 14:39:32 GMT  
+		Size: 43.9 MB (43906533 bytes)

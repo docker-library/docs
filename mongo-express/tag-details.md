@@ -12,17 +12,17 @@
 $ docker pull mongo-express@sha256:02d6a1d4eff6c43eb8a0d8f59522c2a7a2899819f34b0a82e6711a260ec71be3
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `mongo-express:0.30.59` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **96.8 MB (96837826 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `befe594536cc9c96d6495ebcf2bcd349b3a7a36baa2b81e0384e549ef07762c4`
-- Default Command: `["tini","--","node","app"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **96.8 MB (96837826 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `befe594536cc9c96d6495ebcf2bcd349b3a7a36baa2b81e0384e549ef07762c4`
+-	Default Command: `["tini","--","node","app"]`
 
 ```dockerfile
 # Tue, 16 Feb 2016 21:24:34 GMT
@@ -61,31 +61,31 @@ RUN cp config.default.js config.js
 CMD ["tini" "--" "node" "app"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:0b38c634118a17e9ecb2dbb52e73fa0d83f7a9b6b7b97edc2a3b5ebaae0fc98e`  
-    Last Modified: Tue, 24 May 2016 16:54:55 GMT  
-    Size: 2.5 KB (2517 bytes)
-  - `sha256:04782e83c97645f237d0336e3e35676b29d09d05aef647610c710f5db582ef9b`  
-    Last Modified: Tue, 24 May 2016 16:55:19 GMT  
-    Size: 14.1 MB (14126254 bytes)
-  - `sha256:e78b914879d47b32ef90b2453db4527aaacd39cb45a78f0fd96766fb9a94d3ee`  
-    Last Modified: Wed, 06 Apr 2016 17:43:28 GMT  
-    Size: 460.8 KB (460789 bytes)
-  - `sha256:caa77f3d5373b7c77a7440298a30cd189830cd8c8d12b0e6ad8473ac1002a082`  
-    Last Modified: Wed, 17 Feb 2016 16:36:03 GMT  
-    Size: 12.3 MB (12321973 bytes)
-  - `sha256:02659b31036ccf27590ac88d22f0a781b66e07751682ab121ebd2399a5bb8363`  
-    Last Modified: Wed, 17 Feb 2016 16:33:50 GMT  
-    Size: 26.9 KB (26934 bytes)
-  - `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`  
-    Last Modified: Tue, 16 Feb 2016 21:55:50 GMT  
-    Size: 18.5 MB (18532668 bytes)
-  - `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`  
-    Last Modified: Tue, 16 Feb 2016 21:14:01 GMT  
-    Size: 51.4 MB (51366659 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:0b38c634118a17e9ecb2dbb52e73fa0d83f7a9b6b7b97edc2a3b5ebaae0fc98e`  
+		Last Modified: Tue, 24 May 2016 16:54:55 GMT  
+		Size: 2.5 KB (2517 bytes)
+	-	`sha256:04782e83c97645f237d0336e3e35676b29d09d05aef647610c710f5db582ef9b`  
+		Last Modified: Tue, 24 May 2016 16:55:19 GMT  
+		Size: 14.1 MB (14126254 bytes)
+	-	`sha256:e78b914879d47b32ef90b2453db4527aaacd39cb45a78f0fd96766fb9a94d3ee`  
+		Last Modified: Wed, 06 Apr 2016 17:43:28 GMT  
+		Size: 460.8 KB (460789 bytes)
+	-	`sha256:caa77f3d5373b7c77a7440298a30cd189830cd8c8d12b0e6ad8473ac1002a082`  
+		Last Modified: Wed, 17 Feb 2016 16:36:03 GMT  
+		Size: 12.3 MB (12321973 bytes)
+	-	`sha256:02659b31036ccf27590ac88d22f0a781b66e07751682ab121ebd2399a5bb8363`  
+		Last Modified: Wed, 17 Feb 2016 16:33:50 GMT  
+		Size: 26.9 KB (26934 bytes)
+	-	`sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`  
+		Last Modified: Tue, 16 Feb 2016 21:55:50 GMT  
+		Size: 18.5 MB (18532668 bytes)
+	-	`sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`  
+		Last Modified: Tue, 16 Feb 2016 21:14:01 GMT  
+		Size: 51.4 MB (51366659 bytes)
 
 ## `mongo-express:0.30`
 
@@ -93,17 +93,17 @@ CMD ["tini" "--" "node" "app"]
 $ docker pull mongo-express@sha256:b3c65db8af058be0d26e6564fff923b7447b59fb8040fb65edc78dae8cccaa04
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `mongo-express:0.30` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **96.8 MB (96837826 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `befe594536cc9c96d6495ebcf2bcd349b3a7a36baa2b81e0384e549ef07762c4`
-- Default Command: `["tini","--","node","app"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **96.8 MB (96837826 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `befe594536cc9c96d6495ebcf2bcd349b3a7a36baa2b81e0384e549ef07762c4`
+-	Default Command: `["tini","--","node","app"]`
 
 ```dockerfile
 # Tue, 16 Feb 2016 21:24:34 GMT
@@ -142,31 +142,31 @@ RUN cp config.default.js config.js
 CMD ["tini" "--" "node" "app"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:0b38c634118a17e9ecb2dbb52e73fa0d83f7a9b6b7b97edc2a3b5ebaae0fc98e`  
-    Last Modified: Tue, 24 May 2016 16:54:55 GMT  
-    Size: 2.5 KB (2517 bytes)
-  - `sha256:04782e83c97645f237d0336e3e35676b29d09d05aef647610c710f5db582ef9b`  
-    Last Modified: Tue, 24 May 2016 16:55:19 GMT  
-    Size: 14.1 MB (14126254 bytes)
-  - `sha256:e78b914879d47b32ef90b2453db4527aaacd39cb45a78f0fd96766fb9a94d3ee`  
-    Last Modified: Wed, 06 Apr 2016 17:43:28 GMT  
-    Size: 460.8 KB (460789 bytes)
-  - `sha256:caa77f3d5373b7c77a7440298a30cd189830cd8c8d12b0e6ad8473ac1002a082`  
-    Last Modified: Wed, 17 Feb 2016 16:36:03 GMT  
-    Size: 12.3 MB (12321973 bytes)
-  - `sha256:02659b31036ccf27590ac88d22f0a781b66e07751682ab121ebd2399a5bb8363`  
-    Last Modified: Wed, 17 Feb 2016 16:33:50 GMT  
-    Size: 26.9 KB (26934 bytes)
-  - `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`  
-    Last Modified: Tue, 16 Feb 2016 21:55:50 GMT  
-    Size: 18.5 MB (18532668 bytes)
-  - `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`  
-    Last Modified: Tue, 16 Feb 2016 21:14:01 GMT  
-    Size: 51.4 MB (51366659 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:0b38c634118a17e9ecb2dbb52e73fa0d83f7a9b6b7b97edc2a3b5ebaae0fc98e`  
+		Last Modified: Tue, 24 May 2016 16:54:55 GMT  
+		Size: 2.5 KB (2517 bytes)
+	-	`sha256:04782e83c97645f237d0336e3e35676b29d09d05aef647610c710f5db582ef9b`  
+		Last Modified: Tue, 24 May 2016 16:55:19 GMT  
+		Size: 14.1 MB (14126254 bytes)
+	-	`sha256:e78b914879d47b32ef90b2453db4527aaacd39cb45a78f0fd96766fb9a94d3ee`  
+		Last Modified: Wed, 06 Apr 2016 17:43:28 GMT  
+		Size: 460.8 KB (460789 bytes)
+	-	`sha256:caa77f3d5373b7c77a7440298a30cd189830cd8c8d12b0e6ad8473ac1002a082`  
+		Last Modified: Wed, 17 Feb 2016 16:36:03 GMT  
+		Size: 12.3 MB (12321973 bytes)
+	-	`sha256:02659b31036ccf27590ac88d22f0a781b66e07751682ab121ebd2399a5bb8363`  
+		Last Modified: Wed, 17 Feb 2016 16:33:50 GMT  
+		Size: 26.9 KB (26934 bytes)
+	-	`sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`  
+		Last Modified: Tue, 16 Feb 2016 21:55:50 GMT  
+		Size: 18.5 MB (18532668 bytes)
+	-	`sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`  
+		Last Modified: Tue, 16 Feb 2016 21:14:01 GMT  
+		Size: 51.4 MB (51366659 bytes)
 
 ## `mongo-express:latest`
 
@@ -174,17 +174,17 @@ CMD ["tini" "--" "node" "app"]
 $ docker pull mongo-express@sha256:2020ce97b268852190317746b95fbc78bed54cb228aa0777b74acc7832013822
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `mongo-express:latest` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **96.8 MB (96837826 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `befe594536cc9c96d6495ebcf2bcd349b3a7a36baa2b81e0384e549ef07762c4`
-- Default Command: `["tini","--","node","app"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **96.8 MB (96837826 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `befe594536cc9c96d6495ebcf2bcd349b3a7a36baa2b81e0384e549ef07762c4`
+-	Default Command: `["tini","--","node","app"]`
 
 ```dockerfile
 # Tue, 16 Feb 2016 21:24:34 GMT
@@ -223,28 +223,28 @@ RUN cp config.default.js config.js
 CMD ["tini" "--" "node" "app"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:0b38c634118a17e9ecb2dbb52e73fa0d83f7a9b6b7b97edc2a3b5ebaae0fc98e`  
-    Last Modified: Tue, 24 May 2016 16:54:55 GMT  
-    Size: 2.5 KB (2517 bytes)
-  - `sha256:04782e83c97645f237d0336e3e35676b29d09d05aef647610c710f5db582ef9b`  
-    Last Modified: Tue, 24 May 2016 16:55:19 GMT  
-    Size: 14.1 MB (14126254 bytes)
-  - `sha256:e78b914879d47b32ef90b2453db4527aaacd39cb45a78f0fd96766fb9a94d3ee`  
-    Last Modified: Wed, 06 Apr 2016 17:43:28 GMT  
-    Size: 460.8 KB (460789 bytes)
-  - `sha256:caa77f3d5373b7c77a7440298a30cd189830cd8c8d12b0e6ad8473ac1002a082`  
-    Last Modified: Wed, 17 Feb 2016 16:36:03 GMT  
-    Size: 12.3 MB (12321973 bytes)
-  - `sha256:02659b31036ccf27590ac88d22f0a781b66e07751682ab121ebd2399a5bb8363`  
-    Last Modified: Wed, 17 Feb 2016 16:33:50 GMT  
-    Size: 26.9 KB (26934 bytes)
-  - `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`  
-    Last Modified: Tue, 16 Feb 2016 21:55:50 GMT  
-    Size: 18.5 MB (18532668 bytes)
-  - `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`  
-    Last Modified: Tue, 16 Feb 2016 21:14:01 GMT  
-    Size: 51.4 MB (51366659 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:0b38c634118a17e9ecb2dbb52e73fa0d83f7a9b6b7b97edc2a3b5ebaae0fc98e`  
+		Last Modified: Tue, 24 May 2016 16:54:55 GMT  
+		Size: 2.5 KB (2517 bytes)
+	-	`sha256:04782e83c97645f237d0336e3e35676b29d09d05aef647610c710f5db582ef9b`  
+		Last Modified: Tue, 24 May 2016 16:55:19 GMT  
+		Size: 14.1 MB (14126254 bytes)
+	-	`sha256:e78b914879d47b32ef90b2453db4527aaacd39cb45a78f0fd96766fb9a94d3ee`  
+		Last Modified: Wed, 06 Apr 2016 17:43:28 GMT  
+		Size: 460.8 KB (460789 bytes)
+	-	`sha256:caa77f3d5373b7c77a7440298a30cd189830cd8c8d12b0e6ad8473ac1002a082`  
+		Last Modified: Wed, 17 Feb 2016 16:36:03 GMT  
+		Size: 12.3 MB (12321973 bytes)
+	-	`sha256:02659b31036ccf27590ac88d22f0a781b66e07751682ab121ebd2399a5bb8363`  
+		Last Modified: Wed, 17 Feb 2016 16:33:50 GMT  
+		Size: 26.9 KB (26934 bytes)
+	-	`sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`  
+		Last Modified: Tue, 16 Feb 2016 21:55:50 GMT  
+		Size: 18.5 MB (18532668 bytes)
+	-	`sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`  
+		Last Modified: Tue, 16 Feb 2016 21:14:01 GMT  
+		Size: 51.4 MB (51366659 bytes)

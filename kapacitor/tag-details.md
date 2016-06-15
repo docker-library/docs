@@ -19,18 +19,18 @@
 $ docker pull kapacitor@sha256:8cc0c76a7c269220a4759f8cba5de78cb544f37322c47ac6ec63c5acdf269841
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `kapacitor:0.12` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **79.0 MB (78975468 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:fccbe43a3e8dc72d31418809e232d3b0fa2d3192405970112da5779f9c0d2412`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["kapacitord"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **79.0 MB (78975468 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fccbe43a3e8dc72d31418809e232d3b0fa2d3192405970112da5779f9c0d2412`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["kapacitord"]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -57,22 +57,22 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["kapacitord"]
 ```
 
-- Layers:
-  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-    Size: 51.4 MB (51352535 bytes)
-  - `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-    Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-    Size: 18.5 MB (18547219 bytes)
-  - `sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
-    Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
-    Size: 6.8 KB (6755 bytes)
-  - `sha256:8c4f1191e16b4c42faa6292bb86eb7b41470dfb0c09d964e67cdc006981c80ba`  
-    Last Modified: Thu, 09 Jun 2016 23:05:20 GMT  
-    Size: 9.1 MB (9068562 bytes)
-  - `sha256:aac40904dbe4825c7e4e47883214ab794a3355a21fa05d1292cd65bbd9bc15f0`  
-    Last Modified: Thu, 09 Jun 2016 23:05:15 GMT  
-    Size: 397.0 B
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
+		Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
+		Size: 6.8 KB (6755 bytes)
+	-	`sha256:8c4f1191e16b4c42faa6292bb86eb7b41470dfb0c09d964e67cdc006981c80ba`  
+		Last Modified: Thu, 09 Jun 2016 23:05:20 GMT  
+		Size: 9.1 MB (9068562 bytes)
+	-	`sha256:aac40904dbe4825c7e4e47883214ab794a3355a21fa05d1292cd65bbd9bc15f0`  
+		Last Modified: Thu, 09 Jun 2016 23:05:15 GMT  
+		Size: 397.0 B
 
 ## `kapacitor:0.12.0`
 
@@ -80,18 +80,18 @@ CMD ["kapacitord"]
 $ docker pull kapacitor@sha256:8cc0c76a7c269220a4759f8cba5de78cb544f37322c47ac6ec63c5acdf269841
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `kapacitor:0.12.0` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **79.0 MB (78975468 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:fccbe43a3e8dc72d31418809e232d3b0fa2d3192405970112da5779f9c0d2412`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["kapacitord"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **79.0 MB (78975468 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fccbe43a3e8dc72d31418809e232d3b0fa2d3192405970112da5779f9c0d2412`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["kapacitord"]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -118,22 +118,22 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["kapacitord"]
 ```
 
-- Layers:
-  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-    Size: 51.4 MB (51352535 bytes)
-  - `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-    Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-    Size: 18.5 MB (18547219 bytes)
-  - `sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
-    Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
-    Size: 6.8 KB (6755 bytes)
-  - `sha256:8c4f1191e16b4c42faa6292bb86eb7b41470dfb0c09d964e67cdc006981c80ba`  
-    Last Modified: Thu, 09 Jun 2016 23:05:20 GMT  
-    Size: 9.1 MB (9068562 bytes)
-  - `sha256:aac40904dbe4825c7e4e47883214ab794a3355a21fa05d1292cd65bbd9bc15f0`  
-    Last Modified: Thu, 09 Jun 2016 23:05:15 GMT  
-    Size: 397.0 B
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
+		Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
+		Size: 6.8 KB (6755 bytes)
+	-	`sha256:8c4f1191e16b4c42faa6292bb86eb7b41470dfb0c09d964e67cdc006981c80ba`  
+		Last Modified: Thu, 09 Jun 2016 23:05:20 GMT  
+		Size: 9.1 MB (9068562 bytes)
+	-	`sha256:aac40904dbe4825c7e4e47883214ab794a3355a21fa05d1292cd65bbd9bc15f0`  
+		Last Modified: Thu, 09 Jun 2016 23:05:15 GMT  
+		Size: 397.0 B
 
 ## `kapacitor:0.13`
 
@@ -141,18 +141,18 @@ CMD ["kapacitord"]
 $ docker pull kapacitor@sha256:694e6d75db244678acaaa45c7d02ae882fe85ddc761dc210c810c10727447fba
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `kapacitor:0.13` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **81.5 MB (81466019 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:d1811c9bcb6edaffb2796a0cd7638817279d3c1a48a57eb52b4beccb2329f77f`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["kapacitord"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **81.5 MB (81466019 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d1811c9bcb6edaffb2796a0cd7638817279d3c1a48a57eb52b4beccb2329f77f`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["kapacitord"]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -179,22 +179,22 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["kapacitord"]
 ```
 
-- Layers:
-  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-    Size: 51.4 MB (51352535 bytes)
-  - `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-    Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-    Size: 18.5 MB (18547219 bytes)
-  - `sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
-    Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
-    Size: 6.8 KB (6755 bytes)
-  - `sha256:133a7f2450589e1534cb2243a5dbc71336f3d9ffc24f2c08f66e055f5877c944`  
-    Last Modified: Thu, 09 Jun 2016 23:05:37 GMT  
-    Size: 11.6 MB (11559281 bytes)
-  - `sha256:3a4ada19b80ee7d61528cb7d38f66d205d16b358b3b9451604a327f30de711f3`  
-    Last Modified: Thu, 09 Jun 2016 23:05:32 GMT  
-    Size: 229.0 B
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
+		Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
+		Size: 6.8 KB (6755 bytes)
+	-	`sha256:133a7f2450589e1534cb2243a5dbc71336f3d9ffc24f2c08f66e055f5877c944`  
+		Last Modified: Thu, 09 Jun 2016 23:05:37 GMT  
+		Size: 11.6 MB (11559281 bytes)
+	-	`sha256:3a4ada19b80ee7d61528cb7d38f66d205d16b358b3b9451604a327f30de711f3`  
+		Last Modified: Thu, 09 Jun 2016 23:05:32 GMT  
+		Size: 229.0 B
 
 ## `kapacitor:0.13.1`
 
@@ -202,18 +202,18 @@ CMD ["kapacitord"]
 $ docker pull kapacitor@sha256:694e6d75db244678acaaa45c7d02ae882fe85ddc761dc210c810c10727447fba
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `kapacitor:0.13.1` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **81.5 MB (81466019 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:d1811c9bcb6edaffb2796a0cd7638817279d3c1a48a57eb52b4beccb2329f77f`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["kapacitord"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **81.5 MB (81466019 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d1811c9bcb6edaffb2796a0cd7638817279d3c1a48a57eb52b4beccb2329f77f`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["kapacitord"]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -240,22 +240,22 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["kapacitord"]
 ```
 
-- Layers:
-  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-    Size: 51.4 MB (51352535 bytes)
-  - `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-    Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-    Size: 18.5 MB (18547219 bytes)
-  - `sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
-    Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
-    Size: 6.8 KB (6755 bytes)
-  - `sha256:133a7f2450589e1534cb2243a5dbc71336f3d9ffc24f2c08f66e055f5877c944`  
-    Last Modified: Thu, 09 Jun 2016 23:05:37 GMT  
-    Size: 11.6 MB (11559281 bytes)
-  - `sha256:3a4ada19b80ee7d61528cb7d38f66d205d16b358b3b9451604a327f30de711f3`  
-    Last Modified: Thu, 09 Jun 2016 23:05:32 GMT  
-    Size: 229.0 B
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
+		Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
+		Size: 6.8 KB (6755 bytes)
+	-	`sha256:133a7f2450589e1534cb2243a5dbc71336f3d9ffc24f2c08f66e055f5877c944`  
+		Last Modified: Thu, 09 Jun 2016 23:05:37 GMT  
+		Size: 11.6 MB (11559281 bytes)
+	-	`sha256:3a4ada19b80ee7d61528cb7d38f66d205d16b358b3b9451604a327f30de711f3`  
+		Last Modified: Thu, 09 Jun 2016 23:05:32 GMT  
+		Size: 229.0 B
 
 ## `kapacitor:latest`
 
@@ -263,18 +263,18 @@ CMD ["kapacitord"]
 $ docker pull kapacitor@sha256:694e6d75db244678acaaa45c7d02ae882fe85ddc761dc210c810c10727447fba
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `kapacitor:latest` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **81.5 MB (81466019 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:d1811c9bcb6edaffb2796a0cd7638817279d3c1a48a57eb52b4beccb2329f77f`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["kapacitord"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **81.5 MB (81466019 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d1811c9bcb6edaffb2796a0cd7638817279d3c1a48a57eb52b4beccb2329f77f`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["kapacitord"]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -301,22 +301,22 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["kapacitord"]
 ```
 
-- Layers:
-  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-    Size: 51.4 MB (51352535 bytes)
-  - `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-    Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-    Size: 18.5 MB (18547219 bytes)
-  - `sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
-    Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
-    Size: 6.8 KB (6755 bytes)
-  - `sha256:133a7f2450589e1534cb2243a5dbc71336f3d9ffc24f2c08f66e055f5877c944`  
-    Last Modified: Thu, 09 Jun 2016 23:05:37 GMT  
-    Size: 11.6 MB (11559281 bytes)
-  - `sha256:3a4ada19b80ee7d61528cb7d38f66d205d16b358b3b9451604a327f30de711f3`  
-    Last Modified: Thu, 09 Jun 2016 23:05:32 GMT  
-    Size: 229.0 B
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
+		Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
+		Size: 6.8 KB (6755 bytes)
+	-	`sha256:133a7f2450589e1534cb2243a5dbc71336f3d9ffc24f2c08f66e055f5877c944`  
+		Last Modified: Thu, 09 Jun 2016 23:05:37 GMT  
+		Size: 11.6 MB (11559281 bytes)
+	-	`sha256:3a4ada19b80ee7d61528cb7d38f66d205d16b358b3b9451604a327f30de711f3`  
+		Last Modified: Thu, 09 Jun 2016 23:05:32 GMT  
+		Size: 229.0 B
 
 ## `kapacitor:0.13-alpine`
 
@@ -324,18 +324,18 @@ CMD ["kapacitord"]
 $ docker pull kapacitor@sha256:016ce7ff7650624eec471d85374f023fab2c7180bbf7695c3edd6e79c351ec74
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `kapacitor:0.13-alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **10.9 MB (10945141 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:543fc5dec991a90c2d052a0da9c1aa5cd966bbf26730cc5fdd15a97f789ceaa9`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["kapacitord"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **10.9 MB (10945141 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:543fc5dec991a90c2d052a0da9c1aa5cd966bbf26730cc5fdd15a97f789ceaa9`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["kapacitord"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -356,31 +356,31 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["kapacitord"]
 ```
 
-- Layers:
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:35bc25c3e2f15c163b578b343df8db37897b858f246257ca38d9f362aac190c2`  
-    Last Modified: Mon, 23 May 2016 21:51:26 GMT  
-    Size: 8.6 MB (8624542 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:097eb3d76c74ed0cb1c0e74f99f44c903f86048765f66874b476f26ac36b6f75`  
-    Last Modified: Mon, 23 May 2016 21:51:15 GMT  
-    Size: 227.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:35bc25c3e2f15c163b578b343df8db37897b858f246257ca38d9f362aac190c2`  
+		Last Modified: Mon, 23 May 2016 21:51:26 GMT  
+		Size: 8.6 MB (8624542 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:097eb3d76c74ed0cb1c0e74f99f44c903f86048765f66874b476f26ac36b6f75`  
+		Last Modified: Mon, 23 May 2016 21:51:15 GMT  
+		Size: 227.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `kapacitor:0.13.1-alpine`
 
@@ -388,18 +388,18 @@ CMD ["kapacitord"]
 $ docker pull kapacitor@sha256:e610ed2712c3b01eddbbb38a326cb514b256773b3026be1fb9d880a1c46c313d
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `kapacitor:0.13.1-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **10.8 MB (10770549 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:f669f104d0990d5745dd137bad5c76fd5de4a3e49ec0194e6c7ca6f5c0b74552`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["kapacitord"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **10.8 MB (10770549 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f669f104d0990d5745dd137bad5c76fd5de4a3e49ec0194e6c7ca6f5c0b74552`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["kapacitord"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -420,16 +420,16 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["kapacitord"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:a61f84233988e7426c0aa7e1f6b077349f1a964be47bdf770372ec0944fd4eda`  
-    Last Modified: Thu, 09 Jun 2016 23:05:56 GMT  
-    Size: 8.5 MB (8460052 bytes)
-  - `sha256:f6b8c301bca7cea8c2fd229c65c5a852a0c7ad0cd1baadc0ffba11d933f30791`  
-    Last Modified: Thu, 09 Jun 2016 23:05:53 GMT  
-    Size: 225.0 B
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:a61f84233988e7426c0aa7e1f6b077349f1a964be47bdf770372ec0944fd4eda`  
+		Last Modified: Thu, 09 Jun 2016 23:05:56 GMT  
+		Size: 8.5 MB (8460052 bytes)
+	-	`sha256:f6b8c301bca7cea8c2fd229c65c5a852a0c7ad0cd1baadc0ffba11d933f30791`  
+		Last Modified: Thu, 09 Jun 2016 23:05:53 GMT  
+		Size: 225.0 B
 
 ## `kapacitor:alpine`
 
@@ -437,18 +437,18 @@ CMD ["kapacitord"]
 $ docker pull kapacitor@sha256:e610ed2712c3b01eddbbb38a326cb514b256773b3026be1fb9d880a1c46c313d
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `kapacitor:alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **10.8 MB (10770549 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:f669f104d0990d5745dd137bad5c76fd5de4a3e49ec0194e6c7ca6f5c0b74552`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["kapacitord"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **10.8 MB (10770549 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f669f104d0990d5745dd137bad5c76fd5de4a3e49ec0194e6c7ca6f5c0b74552`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["kapacitord"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -469,16 +469,16 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["kapacitord"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:a61f84233988e7426c0aa7e1f6b077349f1a964be47bdf770372ec0944fd4eda`  
-    Last Modified: Thu, 09 Jun 2016 23:05:56 GMT  
-    Size: 8.5 MB (8460052 bytes)
-  - `sha256:f6b8c301bca7cea8c2fd229c65c5a852a0c7ad0cd1baadc0ffba11d933f30791`  
-    Last Modified: Thu, 09 Jun 2016 23:05:53 GMT  
-    Size: 225.0 B
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:a61f84233988e7426c0aa7e1f6b077349f1a964be47bdf770372ec0944fd4eda`  
+		Last Modified: Thu, 09 Jun 2016 23:05:56 GMT  
+		Size: 8.5 MB (8460052 bytes)
+	-	`sha256:f6b8c301bca7cea8c2fd229c65c5a852a0c7ad0cd1baadc0ffba11d933f30791`  
+		Last Modified: Thu, 09 Jun 2016 23:05:53 GMT  
+		Size: 225.0 B
 
 ## `kapacitor:1.0.0-beta1`
 
@@ -486,18 +486,18 @@ CMD ["kapacitord"]
 $ docker pull kapacitor@sha256:2d0588294649d8a6cc160fbccb30af75ea7b1e0858a8c769e39dd0aede3f1936
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `kapacitor:1.0.0-beta1` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **81.8 MB (81764479 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:46eb007cefe1104f88b5365711c7c2fde939da50e88b9e6c9f376ed67ec7a8c4`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["kapacitord"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **81.8 MB (81764479 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:46eb007cefe1104f88b5365711c7c2fde939da50e88b9e6c9f376ed67ec7a8c4`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["kapacitord"]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -524,22 +524,22 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["kapacitord"]
 ```
 
-- Layers:
-  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-    Size: 51.4 MB (51352535 bytes)
-  - `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-    Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-    Size: 18.5 MB (18547219 bytes)
-  - `sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
-    Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
-    Size: 6.8 KB (6755 bytes)
-  - `sha256:b8aa7fcea007c2762e99002273e9cbc85d4c8d15be3aa87ea8f671b15372ee68`  
-    Last Modified: Thu, 09 Jun 2016 23:06:16 GMT  
-    Size: 11.9 MB (11857741 bytes)
-  - `sha256:2c99e9ad12ed378ab454c5b5bb7a4689863454ec993d91b0428eb52abf2da7aa`  
-    Last Modified: Thu, 09 Jun 2016 23:06:11 GMT  
-    Size: 229.0 B
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:62a96cb5d4e863956fddb512db1b13b66e74fc050a6fcb6e97970a3a76d97b0d`  
+		Last Modified: Thu, 09 Jun 2016 22:55:03 GMT  
+		Size: 6.8 KB (6755 bytes)
+	-	`sha256:b8aa7fcea007c2762e99002273e9cbc85d4c8d15be3aa87ea8f671b15372ee68`  
+		Last Modified: Thu, 09 Jun 2016 23:06:16 GMT  
+		Size: 11.9 MB (11857741 bytes)
+	-	`sha256:2c99e9ad12ed378ab454c5b5bb7a4689863454ec993d91b0428eb52abf2da7aa`  
+		Last Modified: Thu, 09 Jun 2016 23:06:11 GMT  
+		Size: 229.0 B
 
 ## `kapacitor:1.0.0-beta1-alpine`
 
@@ -547,18 +547,18 @@ CMD ["kapacitord"]
 $ docker pull kapacitor@sha256:47894a30b3feb21d2eaabe3a16d5d20053c8dd99692799710558f1c0bb97896c
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `kapacitor:1.0.0-beta1-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **11.0 MB (10986503 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:8ef025da8993b026d823035dbc0a04e3d1008be85ff136b04d1cb8ca77686dd4`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["kapacitord"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **11.0 MB (10986503 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8ef025da8993b026d823035dbc0a04e3d1008be85ff136b04d1cb8ca77686dd4`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["kapacitord"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -579,13 +579,13 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["kapacitord"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:a0c95d60ad896455e108d8b751470058785dff8dfd000f240ce62f4466341613`  
-    Last Modified: Thu, 09 Jun 2016 23:06:29 GMT  
-    Size: 8.7 MB (8676006 bytes)
-  - `sha256:e497ecc2e588668b04bbfb60ec9791e887815799306f9acfdf9ea7a36e420263`  
-    Last Modified: Thu, 09 Jun 2016 23:06:25 GMT  
-    Size: 225.0 B
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:a0c95d60ad896455e108d8b751470058785dff8dfd000f240ce62f4466341613`  
+		Last Modified: Thu, 09 Jun 2016 23:06:29 GMT  
+		Size: 8.7 MB (8676006 bytes)
+	-	`sha256:e497ecc2e588668b04bbfb60ec9791e887815799306f9acfdf9ea7a36e420263`  
+		Last Modified: Thu, 09 Jun 2016 23:06:25 GMT  
+		Size: 225.0 B

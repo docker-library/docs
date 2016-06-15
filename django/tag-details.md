@@ -28,17 +28,17 @@
 $ docker pull django@sha256:6449ae64dae2a04d33d5be43ba6e21cbe05300643ab94d89bf40a9ffaf13d437
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:1.9-python3` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **156.5 MB (156450725 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
-- Default Command: `["python3"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.5 MB (156450725 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
+-	Default Command: `["python3"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -71,49 +71,49 @@ ENV DJANGO_VERSION=1.9.6
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
-    Last Modified: Wed, 25 May 2016 16:16:21 GMT  
-    Size: 3.3 MB (3312899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
-    Last Modified: Tue, 31 May 2016 16:49:35 GMT  
-    Size: 20.8 MB (20759581 bytes)
-  - `sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
-    Last Modified: Tue, 31 May 2016 16:49:24 GMT  
-    Size: 266.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
-    Last Modified: Tue, 31 May 2016 17:22:29 GMT  
-    Size: 66.2 MB (66166751 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
-    Last Modified: Tue, 31 May 2016 17:22:00 GMT  
-    Size: 14.9 MB (14854638 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
+		Last Modified: Wed, 25 May 2016 16:16:21 GMT  
+		Size: 3.3 MB (3312899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
+		Last Modified: Tue, 31 May 2016 16:49:35 GMT  
+		Size: 20.8 MB (20759581 bytes)
+	-	`sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
+		Last Modified: Tue, 31 May 2016 16:49:24 GMT  
+		Size: 266.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
+		Last Modified: Tue, 31 May 2016 17:22:29 GMT  
+		Size: 66.2 MB (66166751 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
+		Last Modified: Tue, 31 May 2016 17:22:00 GMT  
+		Size: 14.9 MB (14854638 bytes)
 
 ## `django:1-python3`
 
@@ -121,17 +121,17 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 $ docker pull django@sha256:6449ae64dae2a04d33d5be43ba6e21cbe05300643ab94d89bf40a9ffaf13d437
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:1-python3` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **156.5 MB (156450725 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
-- Default Command: `["python3"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.5 MB (156450725 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
+-	Default Command: `["python3"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -164,49 +164,49 @@ ENV DJANGO_VERSION=1.9.6
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
-    Last Modified: Wed, 25 May 2016 16:16:21 GMT  
-    Size: 3.3 MB (3312899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
-    Last Modified: Tue, 31 May 2016 16:49:35 GMT  
-    Size: 20.8 MB (20759581 bytes)
-  - `sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
-    Last Modified: Tue, 31 May 2016 16:49:24 GMT  
-    Size: 266.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
-    Last Modified: Tue, 31 May 2016 17:22:29 GMT  
-    Size: 66.2 MB (66166751 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
-    Last Modified: Tue, 31 May 2016 17:22:00 GMT  
-    Size: 14.9 MB (14854638 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
+		Last Modified: Wed, 25 May 2016 16:16:21 GMT  
+		Size: 3.3 MB (3312899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
+		Last Modified: Tue, 31 May 2016 16:49:35 GMT  
+		Size: 20.8 MB (20759581 bytes)
+	-	`sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
+		Last Modified: Tue, 31 May 2016 16:49:24 GMT  
+		Size: 266.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
+		Last Modified: Tue, 31 May 2016 17:22:29 GMT  
+		Size: 66.2 MB (66166751 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
+		Last Modified: Tue, 31 May 2016 17:22:00 GMT  
+		Size: 14.9 MB (14854638 bytes)
 
 ## `django:python3`
 
@@ -214,17 +214,17 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 $ docker pull django@sha256:6449ae64dae2a04d33d5be43ba6e21cbe05300643ab94d89bf40a9ffaf13d437
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:python3` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **156.5 MB (156450725 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
-- Default Command: `["python3"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.5 MB (156450725 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
+-	Default Command: `["python3"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -257,49 +257,49 @@ ENV DJANGO_VERSION=1.9.6
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
-    Last Modified: Wed, 25 May 2016 16:16:21 GMT  
-    Size: 3.3 MB (3312899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
-    Last Modified: Tue, 31 May 2016 16:49:35 GMT  
-    Size: 20.8 MB (20759581 bytes)
-  - `sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
-    Last Modified: Tue, 31 May 2016 16:49:24 GMT  
-    Size: 266.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
-    Last Modified: Tue, 31 May 2016 17:22:29 GMT  
-    Size: 66.2 MB (66166751 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
-    Last Modified: Tue, 31 May 2016 17:22:00 GMT  
-    Size: 14.9 MB (14854638 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
+		Last Modified: Wed, 25 May 2016 16:16:21 GMT  
+		Size: 3.3 MB (3312899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
+		Last Modified: Tue, 31 May 2016 16:49:35 GMT  
+		Size: 20.8 MB (20759581 bytes)
+	-	`sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
+		Last Modified: Tue, 31 May 2016 16:49:24 GMT  
+		Size: 266.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
+		Last Modified: Tue, 31 May 2016 17:22:29 GMT  
+		Size: 66.2 MB (66166751 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
+		Last Modified: Tue, 31 May 2016 17:22:00 GMT  
+		Size: 14.9 MB (14854638 bytes)
 
 ## `django:1.9.7`
 
@@ -311,17 +311,17 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 $ docker pull django@sha256:6449ae64dae2a04d33d5be43ba6e21cbe05300643ab94d89bf40a9ffaf13d437
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:1.9` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **156.5 MB (156450725 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
-- Default Command: `["python3"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.5 MB (156450725 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
+-	Default Command: `["python3"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -354,49 +354,49 @@ ENV DJANGO_VERSION=1.9.6
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
-    Last Modified: Wed, 25 May 2016 16:16:21 GMT  
-    Size: 3.3 MB (3312899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
-    Last Modified: Tue, 31 May 2016 16:49:35 GMT  
-    Size: 20.8 MB (20759581 bytes)
-  - `sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
-    Last Modified: Tue, 31 May 2016 16:49:24 GMT  
-    Size: 266.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
-    Last Modified: Tue, 31 May 2016 17:22:29 GMT  
-    Size: 66.2 MB (66166751 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
-    Last Modified: Tue, 31 May 2016 17:22:00 GMT  
-    Size: 14.9 MB (14854638 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
+		Last Modified: Wed, 25 May 2016 16:16:21 GMT  
+		Size: 3.3 MB (3312899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
+		Last Modified: Tue, 31 May 2016 16:49:35 GMT  
+		Size: 20.8 MB (20759581 bytes)
+	-	`sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
+		Last Modified: Tue, 31 May 2016 16:49:24 GMT  
+		Size: 266.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
+		Last Modified: Tue, 31 May 2016 17:22:29 GMT  
+		Size: 66.2 MB (66166751 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
+		Last Modified: Tue, 31 May 2016 17:22:00 GMT  
+		Size: 14.9 MB (14854638 bytes)
 
 ## `django:1`
 
@@ -404,17 +404,17 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 $ docker pull django@sha256:6449ae64dae2a04d33d5be43ba6e21cbe05300643ab94d89bf40a9ffaf13d437
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:1` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **156.5 MB (156450725 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
-- Default Command: `["python3"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.5 MB (156450725 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
+-	Default Command: `["python3"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -447,49 +447,49 @@ ENV DJANGO_VERSION=1.9.6
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
-    Last Modified: Wed, 25 May 2016 16:16:21 GMT  
-    Size: 3.3 MB (3312899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
-    Last Modified: Tue, 31 May 2016 16:49:35 GMT  
-    Size: 20.8 MB (20759581 bytes)
-  - `sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
-    Last Modified: Tue, 31 May 2016 16:49:24 GMT  
-    Size: 266.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
-    Last Modified: Tue, 31 May 2016 17:22:29 GMT  
-    Size: 66.2 MB (66166751 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
-    Last Modified: Tue, 31 May 2016 17:22:00 GMT  
-    Size: 14.9 MB (14854638 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
+		Last Modified: Wed, 25 May 2016 16:16:21 GMT  
+		Size: 3.3 MB (3312899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
+		Last Modified: Tue, 31 May 2016 16:49:35 GMT  
+		Size: 20.8 MB (20759581 bytes)
+	-	`sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
+		Last Modified: Tue, 31 May 2016 16:49:24 GMT  
+		Size: 266.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
+		Last Modified: Tue, 31 May 2016 17:22:29 GMT  
+		Size: 66.2 MB (66166751 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
+		Last Modified: Tue, 31 May 2016 17:22:00 GMT  
+		Size: 14.9 MB (14854638 bytes)
 
 ## `django:latest`
 
@@ -497,17 +497,17 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 $ docker pull django@sha256:6449ae64dae2a04d33d5be43ba6e21cbe05300643ab94d89bf40a9ffaf13d437
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:latest` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **156.5 MB (156450725 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
-- Default Command: `["python3"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.5 MB (156450725 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
+-	Default Command: `["python3"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -540,49 +540,49 @@ ENV DJANGO_VERSION=1.9.6
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
-    Last Modified: Wed, 25 May 2016 16:16:21 GMT  
-    Size: 3.3 MB (3312899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
-    Last Modified: Tue, 31 May 2016 16:49:35 GMT  
-    Size: 20.8 MB (20759581 bytes)
-  - `sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
-    Last Modified: Tue, 31 May 2016 16:49:24 GMT  
-    Size: 266.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
-    Last Modified: Tue, 31 May 2016 17:22:29 GMT  
-    Size: 66.2 MB (66166751 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
-    Last Modified: Tue, 31 May 2016 17:22:00 GMT  
-    Size: 14.9 MB (14854638 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
+		Last Modified: Wed, 25 May 2016 16:16:21 GMT  
+		Size: 3.3 MB (3312899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
+		Last Modified: Tue, 31 May 2016 16:49:35 GMT  
+		Size: 20.8 MB (20759581 bytes)
+	-	`sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
+		Last Modified: Tue, 31 May 2016 16:49:24 GMT  
+		Size: 266.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
+		Last Modified: Tue, 31 May 2016 17:22:29 GMT  
+		Size: 66.2 MB (66166751 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
+		Last Modified: Tue, 31 May 2016 17:22:00 GMT  
+		Size: 14.9 MB (14854638 bytes)
 
 ## `django:python3-onbuild`
 
@@ -590,17 +590,17 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 $ docker pull django@sha256:e7554ea5b774c6650192c6427418936dc445c64bdf57be3570001715e592237e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:python3-onbuild` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **277.3 MB (277296058 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:65eba89b5c5437070a7cb94e1a688a29b4053eeb23e1a701dd09c6c10889c224`
-- Default Command: `["python","manage.py","runserver","0.0.0.0:8000"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **277.3 MB (277296058 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:65eba89b5c5437070a7cb94e1a688a29b4053eeb23e1a701dd09c6c10889c224`
+-	Default Command: `["python","manage.py","runserver","0.0.0.0:8000"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -647,70 +647,70 @@ EXPOSE 8000/tcp
 CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-    Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-    Size: 18.5 MB (18532084 bytes)
-  - `sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-    Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-    Size: 42.5 MB (42492777 bytes)
-  - `sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-    Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-    Size: 129.7 MB (129663323 bytes)
-  - `sha256:22c0978ecede29075ac9989aa4d2b1f8c43b491a1578d5aa53ba2e34f48d045c`  
-    Last Modified: Tue, 31 May 2016 17:20:41 GMT  
-    Size: 221.6 KB (221646 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:68858d60982274613e4583fd465bff81933168a1cbf7fede20b925a3f0774987`  
-    Last Modified: Tue, 31 May 2016 17:23:59 GMT  
-    Size: 18.7 MB (18662555 bytes)
-  - `sha256:0488370bf75e481665ffd1852756ec04caad17390a8f9437800db502e33e3deb`  
-    Last Modified: Tue, 31 May 2016 17:23:48 GMT  
-    Size: 267.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:663ac7f92f514bd9cd3acdcba1dd8af6bf505c5233f828b3a4369aec6726f5f4`  
-    Last Modified: Tue, 31 May 2016 17:23:43 GMT  
-    Size: 126.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b1d992dd1b2fbb630675f91e4461e053fce6ec957400c015f4bceedd83da3029`  
-    Last Modified: Tue, 31 May 2016 17:23:29 GMT  
-    Size: 16.4 MB (16366562 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
+		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
+		Size: 18.5 MB (18532084 bytes)
+	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
+		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
+		Size: 42.5 MB (42492777 bytes)
+	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
+		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
+		Size: 129.7 MB (129663323 bytes)
+	-	`sha256:22c0978ecede29075ac9989aa4d2b1f8c43b491a1578d5aa53ba2e34f48d045c`  
+		Last Modified: Tue, 31 May 2016 17:20:41 GMT  
+		Size: 221.6 KB (221646 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:68858d60982274613e4583fd465bff81933168a1cbf7fede20b925a3f0774987`  
+		Last Modified: Tue, 31 May 2016 17:23:59 GMT  
+		Size: 18.7 MB (18662555 bytes)
+	-	`sha256:0488370bf75e481665ffd1852756ec04caad17390a8f9437800db502e33e3deb`  
+		Last Modified: Tue, 31 May 2016 17:23:48 GMT  
+		Size: 267.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:663ac7f92f514bd9cd3acdcba1dd8af6bf505c5233f828b3a4369aec6726f5f4`  
+		Last Modified: Tue, 31 May 2016 17:23:43 GMT  
+		Size: 126.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b1d992dd1b2fbb630675f91e4461e053fce6ec957400c015f4bceedd83da3029`  
+		Last Modified: Tue, 31 May 2016 17:23:29 GMT  
+		Size: 16.4 MB (16366562 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `django:onbuild`
 
@@ -718,17 +718,17 @@ CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 $ docker pull django@sha256:e7554ea5b774c6650192c6427418936dc445c64bdf57be3570001715e592237e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:onbuild` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **277.3 MB (277296058 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:65eba89b5c5437070a7cb94e1a688a29b4053eeb23e1a701dd09c6c10889c224`
-- Default Command: `["python","manage.py","runserver","0.0.0.0:8000"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **277.3 MB (277296058 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:65eba89b5c5437070a7cb94e1a688a29b4053eeb23e1a701dd09c6c10889c224`
+-	Default Command: `["python","manage.py","runserver","0.0.0.0:8000"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -775,70 +775,70 @@ EXPOSE 8000/tcp
 CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-    Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-    Size: 18.5 MB (18532084 bytes)
-  - `sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-    Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-    Size: 42.5 MB (42492777 bytes)
-  - `sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-    Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-    Size: 129.7 MB (129663323 bytes)
-  - `sha256:22c0978ecede29075ac9989aa4d2b1f8c43b491a1578d5aa53ba2e34f48d045c`  
-    Last Modified: Tue, 31 May 2016 17:20:41 GMT  
-    Size: 221.6 KB (221646 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:68858d60982274613e4583fd465bff81933168a1cbf7fede20b925a3f0774987`  
-    Last Modified: Tue, 31 May 2016 17:23:59 GMT  
-    Size: 18.7 MB (18662555 bytes)
-  - `sha256:0488370bf75e481665ffd1852756ec04caad17390a8f9437800db502e33e3deb`  
-    Last Modified: Tue, 31 May 2016 17:23:48 GMT  
-    Size: 267.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:663ac7f92f514bd9cd3acdcba1dd8af6bf505c5233f828b3a4369aec6726f5f4`  
-    Last Modified: Tue, 31 May 2016 17:23:43 GMT  
-    Size: 126.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b1d992dd1b2fbb630675f91e4461e053fce6ec957400c015f4bceedd83da3029`  
-    Last Modified: Tue, 31 May 2016 17:23:29 GMT  
-    Size: 16.4 MB (16366562 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
+		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
+		Size: 18.5 MB (18532084 bytes)
+	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
+		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
+		Size: 42.5 MB (42492777 bytes)
+	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
+		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
+		Size: 129.7 MB (129663323 bytes)
+	-	`sha256:22c0978ecede29075ac9989aa4d2b1f8c43b491a1578d5aa53ba2e34f48d045c`  
+		Last Modified: Tue, 31 May 2016 17:20:41 GMT  
+		Size: 221.6 KB (221646 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:68858d60982274613e4583fd465bff81933168a1cbf7fede20b925a3f0774987`  
+		Last Modified: Tue, 31 May 2016 17:23:59 GMT  
+		Size: 18.7 MB (18662555 bytes)
+	-	`sha256:0488370bf75e481665ffd1852756ec04caad17390a8f9437800db502e33e3deb`  
+		Last Modified: Tue, 31 May 2016 17:23:48 GMT  
+		Size: 267.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:663ac7f92f514bd9cd3acdcba1dd8af6bf505c5233f828b3a4369aec6726f5f4`  
+		Last Modified: Tue, 31 May 2016 17:23:43 GMT  
+		Size: 126.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b1d992dd1b2fbb630675f91e4461e053fce6ec957400c015f4bceedd83da3029`  
+		Last Modified: Tue, 31 May 2016 17:23:29 GMT  
+		Size: 16.4 MB (16366562 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `django:1.9.7-python2`
 
@@ -850,17 +850,17 @@ CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 $ docker pull django@sha256:eba74c2cb85176d7426bfd0b8cdb72cc81e9ae91266f336351df14d13e797a10
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:1.9-python2` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.0 MB (153030434 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c3b39c35de1026421637bc2c0eb95ba3926e6ef2a6530d95e40553c0bb5938f9`
-- Default Command: `["python2"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.0 MB (153030434 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c3b39c35de1026421637bc2c0eb95ba3926e6ef2a6530d95e40553c0bb5938f9`
+-	Default Command: `["python2"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -891,46 +891,46 @@ ENV DJANGO_VERSION=1.9.6
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
-    Last Modified: Wed, 25 May 2016 16:16:21 GMT  
-    Size: 3.3 MB (3312899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b7b11445a5a42408bc9aa704e94b68666944f65969b214444cec8ecd5ae8d6a4`  
-    Last Modified: Wed, 25 May 2016 16:16:03 GMT  
-    Size: 17.3 MB (17326024 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:66dc88cb5db6330734e43f3d6c454c32510e067d0fc2a9e07955f74f1ff81692`  
-    Last Modified: Tue, 31 May 2016 17:18:54 GMT  
-    Size: 66.2 MB (66166410 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a46e810dcd92f29f13faf0ae896a98e7faa2a4d3154e9834c5d45ec3feb10e2f`  
-    Last Modified: Tue, 31 May 2016 17:18:26 GMT  
-    Size: 14.9 MB (14868511 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
+		Last Modified: Wed, 25 May 2016 16:16:21 GMT  
+		Size: 3.3 MB (3312899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b7b11445a5a42408bc9aa704e94b68666944f65969b214444cec8ecd5ae8d6a4`  
+		Last Modified: Wed, 25 May 2016 16:16:03 GMT  
+		Size: 17.3 MB (17326024 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:66dc88cb5db6330734e43f3d6c454c32510e067d0fc2a9e07955f74f1ff81692`  
+		Last Modified: Tue, 31 May 2016 17:18:54 GMT  
+		Size: 66.2 MB (66166410 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a46e810dcd92f29f13faf0ae896a98e7faa2a4d3154e9834c5d45ec3feb10e2f`  
+		Last Modified: Tue, 31 May 2016 17:18:26 GMT  
+		Size: 14.9 MB (14868511 bytes)
 
 ## `django:1-python2`
 
@@ -938,17 +938,17 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 $ docker pull django@sha256:eba74c2cb85176d7426bfd0b8cdb72cc81e9ae91266f336351df14d13e797a10
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:1-python2` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.0 MB (153030434 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c3b39c35de1026421637bc2c0eb95ba3926e6ef2a6530d95e40553c0bb5938f9`
-- Default Command: `["python2"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.0 MB (153030434 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c3b39c35de1026421637bc2c0eb95ba3926e6ef2a6530d95e40553c0bb5938f9`
+-	Default Command: `["python2"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -979,46 +979,46 @@ ENV DJANGO_VERSION=1.9.6
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
-    Last Modified: Wed, 25 May 2016 16:16:21 GMT  
-    Size: 3.3 MB (3312899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b7b11445a5a42408bc9aa704e94b68666944f65969b214444cec8ecd5ae8d6a4`  
-    Last Modified: Wed, 25 May 2016 16:16:03 GMT  
-    Size: 17.3 MB (17326024 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:66dc88cb5db6330734e43f3d6c454c32510e067d0fc2a9e07955f74f1ff81692`  
-    Last Modified: Tue, 31 May 2016 17:18:54 GMT  
-    Size: 66.2 MB (66166410 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a46e810dcd92f29f13faf0ae896a98e7faa2a4d3154e9834c5d45ec3feb10e2f`  
-    Last Modified: Tue, 31 May 2016 17:18:26 GMT  
-    Size: 14.9 MB (14868511 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
+		Last Modified: Wed, 25 May 2016 16:16:21 GMT  
+		Size: 3.3 MB (3312899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b7b11445a5a42408bc9aa704e94b68666944f65969b214444cec8ecd5ae8d6a4`  
+		Last Modified: Wed, 25 May 2016 16:16:03 GMT  
+		Size: 17.3 MB (17326024 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:66dc88cb5db6330734e43f3d6c454c32510e067d0fc2a9e07955f74f1ff81692`  
+		Last Modified: Tue, 31 May 2016 17:18:54 GMT  
+		Size: 66.2 MB (66166410 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a46e810dcd92f29f13faf0ae896a98e7faa2a4d3154e9834c5d45ec3feb10e2f`  
+		Last Modified: Tue, 31 May 2016 17:18:26 GMT  
+		Size: 14.9 MB (14868511 bytes)
 
 ## `django:python2`
 
@@ -1026,17 +1026,17 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 $ docker pull django@sha256:eba74c2cb85176d7426bfd0b8cdb72cc81e9ae91266f336351df14d13e797a10
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:python2` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.0 MB (153030434 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c3b39c35de1026421637bc2c0eb95ba3926e6ef2a6530d95e40553c0bb5938f9`
-- Default Command: `["python2"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.0 MB (153030434 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c3b39c35de1026421637bc2c0eb95ba3926e6ef2a6530d95e40553c0bb5938f9`
+-	Default Command: `["python2"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -1067,46 +1067,46 @@ ENV DJANGO_VERSION=1.9.6
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
-    Last Modified: Wed, 25 May 2016 16:16:21 GMT  
-    Size: 3.3 MB (3312899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b7b11445a5a42408bc9aa704e94b68666944f65969b214444cec8ecd5ae8d6a4`  
-    Last Modified: Wed, 25 May 2016 16:16:03 GMT  
-    Size: 17.3 MB (17326024 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:66dc88cb5db6330734e43f3d6c454c32510e067d0fc2a9e07955f74f1ff81692`  
-    Last Modified: Tue, 31 May 2016 17:18:54 GMT  
-    Size: 66.2 MB (66166410 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a46e810dcd92f29f13faf0ae896a98e7faa2a4d3154e9834c5d45ec3feb10e2f`  
-    Last Modified: Tue, 31 May 2016 17:18:26 GMT  
-    Size: 14.9 MB (14868511 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
+		Last Modified: Wed, 25 May 2016 16:16:21 GMT  
+		Size: 3.3 MB (3312899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b7b11445a5a42408bc9aa704e94b68666944f65969b214444cec8ecd5ae8d6a4`  
+		Last Modified: Wed, 25 May 2016 16:16:03 GMT  
+		Size: 17.3 MB (17326024 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:66dc88cb5db6330734e43f3d6c454c32510e067d0fc2a9e07955f74f1ff81692`  
+		Last Modified: Tue, 31 May 2016 17:18:54 GMT  
+		Size: 66.2 MB (66166410 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a46e810dcd92f29f13faf0ae896a98e7faa2a4d3154e9834c5d45ec3feb10e2f`  
+		Last Modified: Tue, 31 May 2016 17:18:26 GMT  
+		Size: 14.9 MB (14868511 bytes)
 
 ## `django:python2-onbuild`
 
@@ -1114,17 +1114,17 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 $ docker pull django@sha256:431619421d1c33d1e0f221ce0a4e2b84997ecd384f64ed8727f77f2eab6528ad
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `django:python2-onbuild` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **277.3 MB (277347209 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0ef6d2515e7d6aff9f7ff397a274bbf7b7a0c4eb0657653192af9fa96293eff5`
-- Default Command: `["python","manage.py","runserver","0.0.0.0:8000"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **277.3 MB (277347209 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0ef6d2515e7d6aff9f7ff397a274bbf7b7a0c4eb0657653192af9fa96293eff5`
+-	Default Command: `["python","manage.py","runserver","0.0.0.0:8000"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -1171,67 +1171,67 @@ EXPOSE 8000/tcp
 CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-    Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-    Size: 18.5 MB (18532084 bytes)
-  - `sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-    Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-    Size: 42.5 MB (42492777 bytes)
-  - `sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-    Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-    Size: 129.7 MB (129663323 bytes)
-  - `sha256:22c0978ecede29075ac9989aa4d2b1f8c43b491a1578d5aa53ba2e34f48d045c`  
-    Last Modified: Tue, 31 May 2016 17:20:41 GMT  
-    Size: 221.6 KB (221646 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b1d402426f390ea2dacbbcdd643bbb39548d1b691dfafca6545876f0e9332c20`  
-    Last Modified: Tue, 31 May 2016 17:20:26 GMT  
-    Size: 15.5 MB (15461976 bytes)
-  - `sha256:e7d853e7d62dea1d6cef26f825a20bd94bc86ea35e45a432999ff6ad1bdd0a32`  
-    Last Modified: Tue, 31 May 2016 17:20:17 GMT  
-    Size: 3.3 MB (3252093 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:633b09a8c9243c45017e23b0845eda64704ef2682149c2778f9b908649b81a9d`  
-    Last Modified: Tue, 31 May 2016 17:20:11 GMT  
-    Size: 127.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:6edb25619f69d4a2be8fef05fe28aec1b46c9da25be23b69419e11a3c6901335`  
-    Last Modified: Tue, 31 May 2016 17:19:53 GMT  
-    Size: 16.4 MB (16366465 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
+		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
+		Size: 18.5 MB (18532084 bytes)
+	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
+		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
+		Size: 42.5 MB (42492777 bytes)
+	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
+		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
+		Size: 129.7 MB (129663323 bytes)
+	-	`sha256:22c0978ecede29075ac9989aa4d2b1f8c43b491a1578d5aa53ba2e34f48d045c`  
+		Last Modified: Tue, 31 May 2016 17:20:41 GMT  
+		Size: 221.6 KB (221646 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b1d402426f390ea2dacbbcdd643bbb39548d1b691dfafca6545876f0e9332c20`  
+		Last Modified: Tue, 31 May 2016 17:20:26 GMT  
+		Size: 15.5 MB (15461976 bytes)
+	-	`sha256:e7d853e7d62dea1d6cef26f825a20bd94bc86ea35e45a432999ff6ad1bdd0a32`  
+		Last Modified: Tue, 31 May 2016 17:20:17 GMT  
+		Size: 3.3 MB (3252093 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:633b09a8c9243c45017e23b0845eda64704ef2682149c2778f9b908649b81a9d`  
+		Last Modified: Tue, 31 May 2016 17:20:11 GMT  
+		Size: 127.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:6edb25619f69d4a2be8fef05fe28aec1b46c9da25be23b69419e11a3c6901335`  
+		Last Modified: Tue, 31 May 2016 17:19:53 GMT  
+		Size: 16.4 MB (16366465 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B

@@ -24,17 +24,17 @@
 $ docker pull nginx@sha256:0fe6413f3e30fcc5920bc8fa769280975b10b1c26721de956e1428b9e2f29d04
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:latest` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **71.2 MB (71184586 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0d409d33b27e47423b049f7f863faa08655a8c901749c2b25b93ca67d01a470d`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.2 MB (71184586 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0d409d33b27e47423b049f7f863faa08655a8c901749c2b25b93ca67d01a470d`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -55,31 +55,31 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:51d229e136d0acdb3db7fae7e02d07bcb9b6ffb9bcaac88cc26aaf0be8bea045`  
-    Last Modified: Wed, 01 Jun 2016 18:12:02 GMT  
-    Size: 19.8 MB (19827898 bytes)
-  - `sha256:bcd41daec8cc835577e660ddef75e655f6ff3742bad92c9c498d8eba097b512a`  
-    Last Modified: Wed, 01 Jun 2016 18:11:52 GMT  
-    Size: 194.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:51d229e136d0acdb3db7fae7e02d07bcb9b6ffb9bcaac88cc26aaf0be8bea045`  
+		Last Modified: Wed, 01 Jun 2016 18:12:02 GMT  
+		Size: 19.8 MB (19827898 bytes)
+	-	`sha256:bcd41daec8cc835577e660ddef75e655f6ff3742bad92c9c498d8eba097b512a`  
+		Last Modified: Wed, 01 Jun 2016 18:11:52 GMT  
+		Size: 194.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:1`
 
@@ -87,17 +87,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:0fe6413f3e30fcc5920bc8fa769280975b10b1c26721de956e1428b9e2f29d04
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:1` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **71.2 MB (71184586 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0d409d33b27e47423b049f7f863faa08655a8c901749c2b25b93ca67d01a470d`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.2 MB (71184586 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0d409d33b27e47423b049f7f863faa08655a8c901749c2b25b93ca67d01a470d`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -118,31 +118,31 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:51d229e136d0acdb3db7fae7e02d07bcb9b6ffb9bcaac88cc26aaf0be8bea045`  
-    Last Modified: Wed, 01 Jun 2016 18:12:02 GMT  
-    Size: 19.8 MB (19827898 bytes)
-  - `sha256:bcd41daec8cc835577e660ddef75e655f6ff3742bad92c9c498d8eba097b512a`  
-    Last Modified: Wed, 01 Jun 2016 18:11:52 GMT  
-    Size: 194.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:51d229e136d0acdb3db7fae7e02d07bcb9b6ffb9bcaac88cc26aaf0be8bea045`  
+		Last Modified: Wed, 01 Jun 2016 18:12:02 GMT  
+		Size: 19.8 MB (19827898 bytes)
+	-	`sha256:bcd41daec8cc835577e660ddef75e655f6ff3742bad92c9c498d8eba097b512a`  
+		Last Modified: Wed, 01 Jun 2016 18:11:52 GMT  
+		Size: 194.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:1.11`
 
@@ -150,17 +150,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:0fe6413f3e30fcc5920bc8fa769280975b10b1c26721de956e1428b9e2f29d04
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:1.11` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **71.2 MB (71184586 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0d409d33b27e47423b049f7f863faa08655a8c901749c2b25b93ca67d01a470d`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.2 MB (71184586 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0d409d33b27e47423b049f7f863faa08655a8c901749c2b25b93ca67d01a470d`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -181,31 +181,31 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:51d229e136d0acdb3db7fae7e02d07bcb9b6ffb9bcaac88cc26aaf0be8bea045`  
-    Last Modified: Wed, 01 Jun 2016 18:12:02 GMT  
-    Size: 19.8 MB (19827898 bytes)
-  - `sha256:bcd41daec8cc835577e660ddef75e655f6ff3742bad92c9c498d8eba097b512a`  
-    Last Modified: Wed, 01 Jun 2016 18:11:52 GMT  
-    Size: 194.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:51d229e136d0acdb3db7fae7e02d07bcb9b6ffb9bcaac88cc26aaf0be8bea045`  
+		Last Modified: Wed, 01 Jun 2016 18:12:02 GMT  
+		Size: 19.8 MB (19827898 bytes)
+	-	`sha256:bcd41daec8cc835577e660ddef75e655f6ff3742bad92c9c498d8eba097b512a`  
+		Last Modified: Wed, 01 Jun 2016 18:11:52 GMT  
+		Size: 194.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:1.11.1`
 
@@ -213,17 +213,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:0fe6413f3e30fcc5920bc8fa769280975b10b1c26721de956e1428b9e2f29d04
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:1.11.1` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **71.2 MB (71184586 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0d409d33b27e47423b049f7f863faa08655a8c901749c2b25b93ca67d01a470d`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.2 MB (71184586 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0d409d33b27e47423b049f7f863faa08655a8c901749c2b25b93ca67d01a470d`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -244,31 +244,31 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:51d229e136d0acdb3db7fae7e02d07bcb9b6ffb9bcaac88cc26aaf0be8bea045`  
-    Last Modified: Wed, 01 Jun 2016 18:12:02 GMT  
-    Size: 19.8 MB (19827898 bytes)
-  - `sha256:bcd41daec8cc835577e660ddef75e655f6ff3742bad92c9c498d8eba097b512a`  
-    Last Modified: Wed, 01 Jun 2016 18:11:52 GMT  
-    Size: 194.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:51d229e136d0acdb3db7fae7e02d07bcb9b6ffb9bcaac88cc26aaf0be8bea045`  
+		Last Modified: Wed, 01 Jun 2016 18:12:02 GMT  
+		Size: 19.8 MB (19827898 bytes)
+	-	`sha256:bcd41daec8cc835577e660ddef75e655f6ff3742bad92c9c498d8eba097b512a`  
+		Last Modified: Wed, 01 Jun 2016 18:11:52 GMT  
+		Size: 194.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:stable`
 
@@ -276,17 +276,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:6f4cfdf28dc8d366e25cac4cc76aa863d9d26b039a9784a73671695d7671c2c0
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:stable` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **71.2 MB (71178486 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:82e97a2b0390a20107ab1310dea17f539ff6034438099384998fd91fc540b128`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.2 MB (71178486 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:82e97a2b0390a20107ab1310dea17f539ff6034438099384998fd91fc540b128`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -307,31 +307,31 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ecf425baf0b2838e649bd410643b51b3d2e5b699367145661a17f407ea28301e`  
-    Last Modified: Wed, 01 Jun 2016 18:12:33 GMT  
-    Size: 19.8 MB (19821797 bytes)
-  - `sha256:eccc8564dada32734281bb7e8032897df3c40ae6272d50e9f167d390d73660d5`  
-    Last Modified: Wed, 01 Jun 2016 18:12:24 GMT  
-    Size: 195.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:ecf425baf0b2838e649bd410643b51b3d2e5b699367145661a17f407ea28301e`  
+		Last Modified: Wed, 01 Jun 2016 18:12:33 GMT  
+		Size: 19.8 MB (19821797 bytes)
+	-	`sha256:eccc8564dada32734281bb7e8032897df3c40ae6272d50e9f167d390d73660d5`  
+		Last Modified: Wed, 01 Jun 2016 18:12:24 GMT  
+		Size: 195.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:1.10`
 
@@ -339,17 +339,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:6f4cfdf28dc8d366e25cac4cc76aa863d9d26b039a9784a73671695d7671c2c0
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:1.10` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **71.2 MB (71178486 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:82e97a2b0390a20107ab1310dea17f539ff6034438099384998fd91fc540b128`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.2 MB (71178486 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:82e97a2b0390a20107ab1310dea17f539ff6034438099384998fd91fc540b128`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -370,31 +370,31 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ecf425baf0b2838e649bd410643b51b3d2e5b699367145661a17f407ea28301e`  
-    Last Modified: Wed, 01 Jun 2016 18:12:33 GMT  
-    Size: 19.8 MB (19821797 bytes)
-  - `sha256:eccc8564dada32734281bb7e8032897df3c40ae6272d50e9f167d390d73660d5`  
-    Last Modified: Wed, 01 Jun 2016 18:12:24 GMT  
-    Size: 195.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:ecf425baf0b2838e649bd410643b51b3d2e5b699367145661a17f407ea28301e`  
+		Last Modified: Wed, 01 Jun 2016 18:12:33 GMT  
+		Size: 19.8 MB (19821797 bytes)
+	-	`sha256:eccc8564dada32734281bb7e8032897df3c40ae6272d50e9f167d390d73660d5`  
+		Last Modified: Wed, 01 Jun 2016 18:12:24 GMT  
+		Size: 195.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:1.10.1`
 
@@ -402,17 +402,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:6f4cfdf28dc8d366e25cac4cc76aa863d9d26b039a9784a73671695d7671c2c0
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:1.10.1` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **71.2 MB (71178486 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:82e97a2b0390a20107ab1310dea17f539ff6034438099384998fd91fc540b128`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.2 MB (71178486 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:82e97a2b0390a20107ab1310dea17f539ff6034438099384998fd91fc540b128`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -433,31 +433,31 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ecf425baf0b2838e649bd410643b51b3d2e5b699367145661a17f407ea28301e`  
-    Last Modified: Wed, 01 Jun 2016 18:12:33 GMT  
-    Size: 19.8 MB (19821797 bytes)
-  - `sha256:eccc8564dada32734281bb7e8032897df3c40ae6272d50e9f167d390d73660d5`  
-    Last Modified: Wed, 01 Jun 2016 18:12:24 GMT  
-    Size: 195.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:ecf425baf0b2838e649bd410643b51b3d2e5b699367145661a17f407ea28301e`  
+		Last Modified: Wed, 01 Jun 2016 18:12:33 GMT  
+		Size: 19.8 MB (19821797 bytes)
+	-	`sha256:eccc8564dada32734281bb7e8032897df3c40ae6272d50e9f167d390d73660d5`  
+		Last Modified: Wed, 01 Jun 2016 18:12:24 GMT  
+		Size: 195.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:mainline-alpine`
 
@@ -465,17 +465,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec06520285d420924
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:mainline-alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **19.1 MB (19095162 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **19.1 MB (19095162 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -500,37 +500,37 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
-    Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
-    Size: 16.8 MB (16773633 bytes)
-  - `sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
-    Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
-    Size: 493.0 B
-  - `sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
-    Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
-    Size: 632.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
+		Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
+		Size: 16.8 MB (16773633 bytes)
+	-	`sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
+		Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
+		Size: 493.0 B
+	-	`sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
+		Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
+		Size: 632.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:alpine`
 
@@ -538,17 +538,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec06520285d420924
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **19.1 MB (19095162 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **19.1 MB (19095162 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -573,37 +573,37 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
-    Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
-    Size: 16.8 MB (16773633 bytes)
-  - `sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
-    Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
-    Size: 493.0 B
-  - `sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
-    Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
-    Size: 632.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
+		Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
+		Size: 16.8 MB (16773633 bytes)
+	-	`sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
+		Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
+		Size: 493.0 B
+	-	`sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
+		Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
+		Size: 632.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:1-alpine`
 
@@ -611,17 +611,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec06520285d420924
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:1-alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **19.1 MB (19095162 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **19.1 MB (19095162 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -646,37 +646,37 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
-    Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
-    Size: 16.8 MB (16773633 bytes)
-  - `sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
-    Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
-    Size: 493.0 B
-  - `sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
-    Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
-    Size: 632.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
+		Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
+		Size: 16.8 MB (16773633 bytes)
+	-	`sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
+		Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
+		Size: 493.0 B
+	-	`sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
+		Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
+		Size: 632.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:1.11-alpine`
 
@@ -684,17 +684,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec06520285d420924
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:1.11-alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **19.1 MB (19095162 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **19.1 MB (19095162 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -719,37 +719,37 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
-    Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
-    Size: 16.8 MB (16773633 bytes)
-  - `sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
-    Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
-    Size: 493.0 B
-  - `sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
-    Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
-    Size: 632.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
+		Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
+		Size: 16.8 MB (16773633 bytes)
+	-	`sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
+		Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
+		Size: 493.0 B
+	-	`sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
+		Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
+		Size: 632.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:1.11.1-alpine`
 
@@ -757,17 +757,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec06520285d420924
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:1.11.1-alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **19.1 MB (19095162 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **19.1 MB (19095162 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -792,37 +792,37 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
-    Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
-    Size: 16.8 MB (16773633 bytes)
-  - `sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
-    Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
-    Size: 493.0 B
-  - `sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
-    Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
-    Size: 632.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
+		Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
+		Size: 16.8 MB (16773633 bytes)
+	-	`sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
+		Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
+		Size: 493.0 B
+	-	`sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
+		Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
+		Size: 632.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:stable-alpine`
 
@@ -830,17 +830,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:f760ef54999add48e9db998e325917fbcf59a165e4b13582fc00290ab135977d
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:stable-alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **19.1 MB (19090972 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:e4bf8efd6e42b7dfab500e56ca0450c9b57c806f66e118658ae58a0aa994eaec`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **19.1 MB (19090972 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e4bf8efd6e42b7dfab500e56ca0450c9b57c806f66e118658ae58a0aa994eaec`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -865,37 +865,37 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:145ce744b6fce9980771253ad9001c3c5d5c6110cbf897eaa513f1d92fdf59ef`  
-    Last Modified: Wed, 01 Jun 2016 18:13:53 GMT  
-    Size: 16.8 MB (16769443 bytes)
-  - `sha256:b5eebe7f4c984fadd80bb3871b16cab1beeaee3202643e9fea652a86bc78a9cd`  
-    Last Modified: Wed, 01 Jun 2016 18:13:44 GMT  
-    Size: 493.0 B
-  - `sha256:4fea5259073ff65af70f6ca098a6cb570e7d049eda8f19db72be6c9c63050a1b`  
-    Last Modified: Wed, 01 Jun 2016 18:13:41 GMT  
-    Size: 632.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:145ce744b6fce9980771253ad9001c3c5d5c6110cbf897eaa513f1d92fdf59ef`  
+		Last Modified: Wed, 01 Jun 2016 18:13:53 GMT  
+		Size: 16.8 MB (16769443 bytes)
+	-	`sha256:b5eebe7f4c984fadd80bb3871b16cab1beeaee3202643e9fea652a86bc78a9cd`  
+		Last Modified: Wed, 01 Jun 2016 18:13:44 GMT  
+		Size: 493.0 B
+	-	`sha256:4fea5259073ff65af70f6ca098a6cb570e7d049eda8f19db72be6c9c63050a1b`  
+		Last Modified: Wed, 01 Jun 2016 18:13:41 GMT  
+		Size: 632.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:1.10-alpine`
 
@@ -903,17 +903,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:f760ef54999add48e9db998e325917fbcf59a165e4b13582fc00290ab135977d
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:1.10-alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **19.1 MB (19090972 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:e4bf8efd6e42b7dfab500e56ca0450c9b57c806f66e118658ae58a0aa994eaec`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **19.1 MB (19090972 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e4bf8efd6e42b7dfab500e56ca0450c9b57c806f66e118658ae58a0aa994eaec`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -938,37 +938,37 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:145ce744b6fce9980771253ad9001c3c5d5c6110cbf897eaa513f1d92fdf59ef`  
-    Last Modified: Wed, 01 Jun 2016 18:13:53 GMT  
-    Size: 16.8 MB (16769443 bytes)
-  - `sha256:b5eebe7f4c984fadd80bb3871b16cab1beeaee3202643e9fea652a86bc78a9cd`  
-    Last Modified: Wed, 01 Jun 2016 18:13:44 GMT  
-    Size: 493.0 B
-  - `sha256:4fea5259073ff65af70f6ca098a6cb570e7d049eda8f19db72be6c9c63050a1b`  
-    Last Modified: Wed, 01 Jun 2016 18:13:41 GMT  
-    Size: 632.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:145ce744b6fce9980771253ad9001c3c5d5c6110cbf897eaa513f1d92fdf59ef`  
+		Last Modified: Wed, 01 Jun 2016 18:13:53 GMT  
+		Size: 16.8 MB (16769443 bytes)
+	-	`sha256:b5eebe7f4c984fadd80bb3871b16cab1beeaee3202643e9fea652a86bc78a9cd`  
+		Last Modified: Wed, 01 Jun 2016 18:13:44 GMT  
+		Size: 493.0 B
+	-	`sha256:4fea5259073ff65af70f6ca098a6cb570e7d049eda8f19db72be6c9c63050a1b`  
+		Last Modified: Wed, 01 Jun 2016 18:13:41 GMT  
+		Size: 632.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
 
 ## `nginx:1.10.1-alpine`
 
@@ -976,17 +976,17 @@ CMD ["nginx" "-g" "daemon off;"]
 $ docker pull nginx@sha256:f760ef54999add48e9db998e325917fbcf59a165e4b13582fc00290ab135977d
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nginx:1.10.1-alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **19.1 MB (19090972 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:e4bf8efd6e42b7dfab500e56ca0450c9b57c806f66e118658ae58a0aa994eaec`
-- Default Command: `["nginx","-g","daemon off;"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **19.1 MB (19090972 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e4bf8efd6e42b7dfab500e56ca0450c9b57c806f66e118658ae58a0aa994eaec`
+-	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -1011,34 +1011,34 @@ EXPOSE 443/tcp 80/tcp
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
-- Layers:
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:145ce744b6fce9980771253ad9001c3c5d5c6110cbf897eaa513f1d92fdf59ef`  
-    Last Modified: Wed, 01 Jun 2016 18:13:53 GMT  
-    Size: 16.8 MB (16769443 bytes)
-  - `sha256:b5eebe7f4c984fadd80bb3871b16cab1beeaee3202643e9fea652a86bc78a9cd`  
-    Last Modified: Wed, 01 Jun 2016 18:13:44 GMT  
-    Size: 493.0 B
-  - `sha256:4fea5259073ff65af70f6ca098a6cb570e7d049eda8f19db72be6c9c63050a1b`  
-    Last Modified: Wed, 01 Jun 2016 18:13:41 GMT  
-    Size: 632.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	Layers:
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:145ce744b6fce9980771253ad9001c3c5d5c6110cbf897eaa513f1d92fdf59ef`  
+		Last Modified: Wed, 01 Jun 2016 18:13:53 GMT  
+		Size: 16.8 MB (16769443 bytes)
+	-	`sha256:b5eebe7f4c984fadd80bb3871b16cab1beeaee3202643e9fea652a86bc78a9cd`  
+		Last Modified: Wed, 01 Jun 2016 18:13:44 GMT  
+		Size: 493.0 B
+	-	`sha256:4fea5259073ff65af70f6ca098a6cb570e7d049eda8f19db72be6c9c63050a1b`  
+		Last Modified: Wed, 01 Jun 2016 18:13:41 GMT  
+		Size: 632.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B

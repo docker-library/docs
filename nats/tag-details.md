@@ -11,18 +11,18 @@
 $ docker pull nats@sha256:3329c27c3e434febd0de986b5685e5fdcf1290e728b9a6c212cdf983ba3a4e41
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nats:0.8.1` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **2.3 MB (2331456 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:2cf296f80485ad17deda79f2ca2e3ec8ea8ade9f1d66187c4cd441ada78b75f8`
-- Entrypoint: `["\/gnatsd","-c","\/gnatsd.conf"]`
-- Default Command: `[]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2331456 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2cf296f80485ad17deda79f2ca2e3ec8ea8ade9f1d66187c4cd441ada78b75f8`
+-	Entrypoint: `["\/gnatsd","-c","\/gnatsd.conf"]`
+-	Default Command: `[]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 23:39:53 GMT
@@ -37,13 +37,13 @@ ENTRYPOINT &{["/gnatsd" "-c" "/gnatsd.conf"]}
 CMD []
 ```
 
-- Layers:
-  - `sha256:d38d231498c64bd98f65236fec5c3fe5c0971fcc0a3dc0b147f2148cfae32f15`  
-    Last Modified: Thu, 09 Jun 2016 23:40:01 GMT  
-    Size: 2.3 MB (2330975 bytes)
-  - `sha256:cd47d5b9b1598c97337f529a800e8c2f4c88c349b51f3d1245bad0793590aeaf`  
-    Last Modified: Thu, 09 Jun 2016 23:39:59 GMT  
-    Size: 481.0 B
+-	Layers:
+	-	`sha256:d38d231498c64bd98f65236fec5c3fe5c0971fcc0a3dc0b147f2148cfae32f15`  
+		Last Modified: Thu, 09 Jun 2016 23:40:01 GMT  
+		Size: 2.3 MB (2330975 bytes)
+	-	`sha256:cd47d5b9b1598c97337f529a800e8c2f4c88c349b51f3d1245bad0793590aeaf`  
+		Last Modified: Thu, 09 Jun 2016 23:39:59 GMT  
+		Size: 481.0 B
 
 ## `nats:latest`
 
@@ -51,18 +51,18 @@ CMD []
 $ docker pull nats@sha256:3329c27c3e434febd0de986b5685e5fdcf1290e728b9a6c212cdf983ba3a4e41
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `nats:latest` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **2.3 MB (2331456 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:2cf296f80485ad17deda79f2ca2e3ec8ea8ade9f1d66187c4cd441ada78b75f8`
-- Entrypoint: `["\/gnatsd","-c","\/gnatsd.conf"]`
-- Default Command: `[]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2331456 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2cf296f80485ad17deda79f2ca2e3ec8ea8ade9f1d66187c4cd441ada78b75f8`
+-	Entrypoint: `["\/gnatsd","-c","\/gnatsd.conf"]`
+-	Default Command: `[]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 23:39:53 GMT
@@ -77,10 +77,10 @@ ENTRYPOINT &{["/gnatsd" "-c" "/gnatsd.conf"]}
 CMD []
 ```
 
-- Layers:
-  - `sha256:d38d231498c64bd98f65236fec5c3fe5c0971fcc0a3dc0b147f2148cfae32f15`  
-    Last Modified: Thu, 09 Jun 2016 23:40:01 GMT  
-    Size: 2.3 MB (2330975 bytes)
-  - `sha256:cd47d5b9b1598c97337f529a800e8c2f4c88c349b51f3d1245bad0793590aeaf`  
-    Last Modified: Thu, 09 Jun 2016 23:39:59 GMT  
-    Size: 481.0 B
+-	Layers:
+	-	`sha256:d38d231498c64bd98f65236fec5c3fe5c0971fcc0a3dc0b147f2148cfae32f15`  
+		Last Modified: Thu, 09 Jun 2016 23:40:01 GMT  
+		Size: 2.3 MB (2330975 bytes)
+	-	`sha256:cd47d5b9b1598c97337f529a800e8c2f4c88c349b51f3d1245bad0793590aeaf`  
+		Last Modified: Thu, 09 Jun 2016 23:39:59 GMT  
+		Size: 481.0 B

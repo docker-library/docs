@@ -21,17 +21,17 @@
 $ docker pull irssi@sha256:0f0579fdbcd49e2c536bbfb1a63d4a07f51a1d3091b03117d90bd1dd233893cf
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:0.8.19` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **95.7 MB (95678750 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **95.7 MB (95678750 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -60,22 +60,22 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
-    Last Modified: Tue, 31 May 2016 19:14:29 GMT  
-    Size: 12.1 MB (12059749 bytes)
-  - `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
-    Last Modified: Tue, 31 May 2016 19:14:40 GMT  
-    Size: 4.4 KB (4360 bytes)
-  - `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
-    Last Modified: Tue, 31 May 2016 19:14:57 GMT  
-    Size: 32.3 MB (32258275 bytes)
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
+		Last Modified: Tue, 31 May 2016 19:14:29 GMT  
+		Size: 12.1 MB (12059749 bytes)
+	-	`sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
+		Last Modified: Tue, 31 May 2016 19:14:40 GMT  
+		Size: 4.4 KB (4360 bytes)
+	-	`sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
+		Last Modified: Tue, 31 May 2016 19:14:57 GMT  
+		Size: 32.3 MB (32258275 bytes)
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
 
 ## `irssi:0.8`
 
@@ -83,17 +83,17 @@ CMD ["irssi"]
 $ docker pull irssi@sha256:687a6cb29fced7de80b9dbf785792024ecce59e3fc81178e2641483a98819c23
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:0.8` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **95.7 MB (95678750 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **95.7 MB (95678750 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -122,22 +122,22 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
-    Last Modified: Tue, 31 May 2016 19:14:29 GMT  
-    Size: 12.1 MB (12059749 bytes)
-  - `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
-    Last Modified: Tue, 31 May 2016 19:14:40 GMT  
-    Size: 4.4 KB (4360 bytes)
-  - `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
-    Last Modified: Tue, 31 May 2016 19:14:57 GMT  
-    Size: 32.3 MB (32258275 bytes)
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
+		Last Modified: Tue, 31 May 2016 19:14:29 GMT  
+		Size: 12.1 MB (12059749 bytes)
+	-	`sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
+		Last Modified: Tue, 31 May 2016 19:14:40 GMT  
+		Size: 4.4 KB (4360 bytes)
+	-	`sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
+		Last Modified: Tue, 31 May 2016 19:14:57 GMT  
+		Size: 32.3 MB (32258275 bytes)
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
 
 ## `irssi:0`
 
@@ -145,17 +145,17 @@ CMD ["irssi"]
 $ docker pull irssi@sha256:5a97f914147a9b1d76c0af28945f8a4479a7ce5501eef7634f5ea5a94ab80022
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:0` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **95.7 MB (95678750 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **95.7 MB (95678750 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -184,22 +184,22 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
-    Last Modified: Tue, 31 May 2016 19:14:29 GMT  
-    Size: 12.1 MB (12059749 bytes)
-  - `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
-    Last Modified: Tue, 31 May 2016 19:14:40 GMT  
-    Size: 4.4 KB (4360 bytes)
-  - `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
-    Last Modified: Tue, 31 May 2016 19:14:57 GMT  
-    Size: 32.3 MB (32258275 bytes)
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
+		Last Modified: Tue, 31 May 2016 19:14:29 GMT  
+		Size: 12.1 MB (12059749 bytes)
+	-	`sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
+		Last Modified: Tue, 31 May 2016 19:14:40 GMT  
+		Size: 4.4 KB (4360 bytes)
+	-	`sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
+		Last Modified: Tue, 31 May 2016 19:14:57 GMT  
+		Size: 32.3 MB (32258275 bytes)
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
 
 ## `irssi:latest`
 
@@ -207,17 +207,17 @@ CMD ["irssi"]
 $ docker pull irssi@sha256:ff8f7dd368c6fec1400de375331073fe4963e1a265a835713cc8f3beabfdccb3
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:latest` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **95.7 MB (95678750 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **95.7 MB (95678750 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -246,22 +246,22 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
-    Last Modified: Tue, 31 May 2016 19:14:29 GMT  
-    Size: 12.1 MB (12059749 bytes)
-  - `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
-    Last Modified: Tue, 31 May 2016 19:14:40 GMT  
-    Size: 4.4 KB (4360 bytes)
-  - `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
-    Last Modified: Tue, 31 May 2016 19:14:57 GMT  
-    Size: 32.3 MB (32258275 bytes)
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
+		Last Modified: Tue, 31 May 2016 19:14:29 GMT  
+		Size: 12.1 MB (12059749 bytes)
+	-	`sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
+		Last Modified: Tue, 31 May 2016 19:14:40 GMT  
+		Size: 4.4 KB (4360 bytes)
+	-	`sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
+		Last Modified: Tue, 31 May 2016 19:14:57 GMT  
+		Size: 32.3 MB (32258275 bytes)
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
 
 ## `irssi:0.8.19-debian`
 
@@ -269,17 +269,17 @@ CMD ["irssi"]
 $ docker pull irssi@sha256:00eb4684818c86135ac4fea1a39703554b83ed3ef1f0e71e71cf2a4ce5aa1ff2
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:0.8.19-debian` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **95.7 MB (95678750 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **95.7 MB (95678750 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -308,22 +308,22 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
-    Last Modified: Tue, 31 May 2016 19:14:29 GMT  
-    Size: 12.1 MB (12059749 bytes)
-  - `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
-    Last Modified: Tue, 31 May 2016 19:14:40 GMT  
-    Size: 4.4 KB (4360 bytes)
-  - `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
-    Last Modified: Tue, 31 May 2016 19:14:57 GMT  
-    Size: 32.3 MB (32258275 bytes)
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
+		Last Modified: Tue, 31 May 2016 19:14:29 GMT  
+		Size: 12.1 MB (12059749 bytes)
+	-	`sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
+		Last Modified: Tue, 31 May 2016 19:14:40 GMT  
+		Size: 4.4 KB (4360 bytes)
+	-	`sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
+		Last Modified: Tue, 31 May 2016 19:14:57 GMT  
+		Size: 32.3 MB (32258275 bytes)
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
 
 ## `irssi:0.8-debian`
 
@@ -331,17 +331,17 @@ CMD ["irssi"]
 $ docker pull irssi@sha256:b46498c7babcf055382ada058c688e1d104ab5215ad6224d5f68a4296f429aa4
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:0.8-debian` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **95.7 MB (95678750 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **95.7 MB (95678750 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -370,22 +370,22 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
-    Last Modified: Tue, 31 May 2016 19:14:29 GMT  
-    Size: 12.1 MB (12059749 bytes)
-  - `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
-    Last Modified: Tue, 31 May 2016 19:14:40 GMT  
-    Size: 4.4 KB (4360 bytes)
-  - `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
-    Last Modified: Tue, 31 May 2016 19:14:57 GMT  
-    Size: 32.3 MB (32258275 bytes)
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
+		Last Modified: Tue, 31 May 2016 19:14:29 GMT  
+		Size: 12.1 MB (12059749 bytes)
+	-	`sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
+		Last Modified: Tue, 31 May 2016 19:14:40 GMT  
+		Size: 4.4 KB (4360 bytes)
+	-	`sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
+		Last Modified: Tue, 31 May 2016 19:14:57 GMT  
+		Size: 32.3 MB (32258275 bytes)
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
 
 ## `irssi:0-debian`
 
@@ -393,17 +393,17 @@ CMD ["irssi"]
 $ docker pull irssi@sha256:513f9d1fa3c94abac406d556a1c7ecf8523fc00c5884a6473e44a3aece3fe588
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:0-debian` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **95.7 MB (95678750 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **95.7 MB (95678750 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -432,22 +432,22 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
-    Last Modified: Tue, 31 May 2016 19:14:29 GMT  
-    Size: 12.1 MB (12059749 bytes)
-  - `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
-    Last Modified: Tue, 31 May 2016 19:14:40 GMT  
-    Size: 4.4 KB (4360 bytes)
-  - `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
-    Last Modified: Tue, 31 May 2016 19:14:57 GMT  
-    Size: 32.3 MB (32258275 bytes)
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
+		Last Modified: Tue, 31 May 2016 19:14:29 GMT  
+		Size: 12.1 MB (12059749 bytes)
+	-	`sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
+		Last Modified: Tue, 31 May 2016 19:14:40 GMT  
+		Size: 4.4 KB (4360 bytes)
+	-	`sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
+		Last Modified: Tue, 31 May 2016 19:14:57 GMT  
+		Size: 32.3 MB (32258275 bytes)
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
 
 ## `irssi:debian`
 
@@ -455,17 +455,17 @@ CMD ["irssi"]
 $ docker pull irssi@sha256:f3b8df6ba2c492389d9706dc61b2f38e0b220908d4234f74013baba8103e0baf
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:debian` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **95.7 MB (95678750 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **95.7 MB (95678750 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `18a0b1d52a84032b917988502cfcca0c90f314e92f1f00ce4929bbf017245e2a`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -494,22 +494,22 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
-    Last Modified: Tue, 31 May 2016 19:14:29 GMT  
-    Size: 12.1 MB (12059749 bytes)
-  - `sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
-    Last Modified: Tue, 31 May 2016 19:14:40 GMT  
-    Size: 4.4 KB (4360 bytes)
-  - `sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
-    Last Modified: Tue, 31 May 2016 19:14:57 GMT  
-    Size: 32.3 MB (32258275 bytes)
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:338750943b7dc10052667d49d6cc923d4a7b411bbba28724435e0739d4e04bb1`  
+		Last Modified: Tue, 31 May 2016 19:14:29 GMT  
+		Size: 12.1 MB (12059749 bytes)
+	-	`sha256:a9b904850a729be0295f8f740c2259db4fe5f6d171e589462a0768d86c683073`  
+		Last Modified: Tue, 31 May 2016 19:14:40 GMT  
+		Size: 4.4 KB (4360 bytes)
+	-	`sha256:3a37db7e1d8d482738300954bfadaebc8fe5cb54d1be94babb99938261c6b163`  
+		Last Modified: Tue, 31 May 2016 19:14:57 GMT  
+		Size: 32.3 MB (32258275 bytes)
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
 
 ## `irssi:0.8.19-alpine`
 
@@ -517,17 +517,17 @@ CMD ["irssi"]
 $ docker pull irssi@sha256:f5cc79c826b734ecf9c292ab50bdd45b9e348c2ceb3bf494fb9a08640033acc8
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:0.8.19-alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **19.5 MB (19486857 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `8b9b301f3b6344bbce8cd33ccf6551e9e08536b35072c861c2700b1c3ca1b487`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **19.5 MB (19486857 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `8b9b301f3b6344bbce8cd33ccf6551e9e08536b35072c861c2700b1c3ca1b487`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -554,22 +554,22 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:05b4b09f5a1b59ea2f4555bde929e10bd9ce913142bb15272be02d1dc3419661`  
-    Last Modified: Fri, 06 May 2016 17:48:11 GMT  
-    Size: 16.6 MB (16599020 bytes)
-  - `sha256:40f9c179f2ff00e0ea7af83f2fb692b7368aa3249b50ff7445fc19c719755750`  
-    Last Modified: Fri, 06 May 2016 17:48:19 GMT  
-    Size: 1.3 KB (1268 bytes)
-  - `sha256:aef5fb842578865aff7bbe6b331998c11a67f0e799c024026e7060790f25f88e`  
-    Last Modified: Fri, 06 May 2016 17:48:25 GMT  
-    Size: 566.3 KB (566325 bytes)
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:05b4b09f5a1b59ea2f4555bde929e10bd9ce913142bb15272be02d1dc3419661`  
+		Last Modified: Fri, 06 May 2016 17:48:11 GMT  
+		Size: 16.6 MB (16599020 bytes)
+	-	`sha256:40f9c179f2ff00e0ea7af83f2fb692b7368aa3249b50ff7445fc19c719755750`  
+		Last Modified: Fri, 06 May 2016 17:48:19 GMT  
+		Size: 1.3 KB (1268 bytes)
+	-	`sha256:aef5fb842578865aff7bbe6b331998c11a67f0e799c024026e7060790f25f88e`  
+		Last Modified: Fri, 06 May 2016 17:48:25 GMT  
+		Size: 566.3 KB (566325 bytes)
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
 
 ## `irssi:0.8-alpine`
 
@@ -577,17 +577,17 @@ CMD ["irssi"]
 $ docker pull irssi@sha256:7d00e586dd0c6e442918209aa1c0ab43a483a0f00fa3c3de21d30357eb74f6dd
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:0.8-alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **19.5 MB (19486857 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `8b9b301f3b6344bbce8cd33ccf6551e9e08536b35072c861c2700b1c3ca1b487`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **19.5 MB (19486857 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `8b9b301f3b6344bbce8cd33ccf6551e9e08536b35072c861c2700b1c3ca1b487`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -614,22 +614,22 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:05b4b09f5a1b59ea2f4555bde929e10bd9ce913142bb15272be02d1dc3419661`  
-    Last Modified: Fri, 06 May 2016 17:48:11 GMT  
-    Size: 16.6 MB (16599020 bytes)
-  - `sha256:40f9c179f2ff00e0ea7af83f2fb692b7368aa3249b50ff7445fc19c719755750`  
-    Last Modified: Fri, 06 May 2016 17:48:19 GMT  
-    Size: 1.3 KB (1268 bytes)
-  - `sha256:aef5fb842578865aff7bbe6b331998c11a67f0e799c024026e7060790f25f88e`  
-    Last Modified: Fri, 06 May 2016 17:48:25 GMT  
-    Size: 566.3 KB (566325 bytes)
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:05b4b09f5a1b59ea2f4555bde929e10bd9ce913142bb15272be02d1dc3419661`  
+		Last Modified: Fri, 06 May 2016 17:48:11 GMT  
+		Size: 16.6 MB (16599020 bytes)
+	-	`sha256:40f9c179f2ff00e0ea7af83f2fb692b7368aa3249b50ff7445fc19c719755750`  
+		Last Modified: Fri, 06 May 2016 17:48:19 GMT  
+		Size: 1.3 KB (1268 bytes)
+	-	`sha256:aef5fb842578865aff7bbe6b331998c11a67f0e799c024026e7060790f25f88e`  
+		Last Modified: Fri, 06 May 2016 17:48:25 GMT  
+		Size: 566.3 KB (566325 bytes)
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
 
 ## `irssi:0-alpine`
 
@@ -637,17 +637,17 @@ CMD ["irssi"]
 $ docker pull irssi@sha256:f44e66b19de03dd8b8aaddf547adbe260b5c0ea507e5f3620efa056ef53218fc
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:0-alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **19.5 MB (19486857 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `8b9b301f3b6344bbce8cd33ccf6551e9e08536b35072c861c2700b1c3ca1b487`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **19.5 MB (19486857 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `8b9b301f3b6344bbce8cd33ccf6551e9e08536b35072c861c2700b1c3ca1b487`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -674,22 +674,22 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:05b4b09f5a1b59ea2f4555bde929e10bd9ce913142bb15272be02d1dc3419661`  
-    Last Modified: Fri, 06 May 2016 17:48:11 GMT  
-    Size: 16.6 MB (16599020 bytes)
-  - `sha256:40f9c179f2ff00e0ea7af83f2fb692b7368aa3249b50ff7445fc19c719755750`  
-    Last Modified: Fri, 06 May 2016 17:48:19 GMT  
-    Size: 1.3 KB (1268 bytes)
-  - `sha256:aef5fb842578865aff7bbe6b331998c11a67f0e799c024026e7060790f25f88e`  
-    Last Modified: Fri, 06 May 2016 17:48:25 GMT  
-    Size: 566.3 KB (566325 bytes)
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:05b4b09f5a1b59ea2f4555bde929e10bd9ce913142bb15272be02d1dc3419661`  
+		Last Modified: Fri, 06 May 2016 17:48:11 GMT  
+		Size: 16.6 MB (16599020 bytes)
+	-	`sha256:40f9c179f2ff00e0ea7af83f2fb692b7368aa3249b50ff7445fc19c719755750`  
+		Last Modified: Fri, 06 May 2016 17:48:19 GMT  
+		Size: 1.3 KB (1268 bytes)
+	-	`sha256:aef5fb842578865aff7bbe6b331998c11a67f0e799c024026e7060790f25f88e`  
+		Last Modified: Fri, 06 May 2016 17:48:25 GMT  
+		Size: 566.3 KB (566325 bytes)
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)
 
 ## `irssi:alpine`
 
@@ -697,17 +697,17 @@ CMD ["irssi"]
 $ docker pull irssi@sha256:d8e725168e94c9efd0ab076539c9050a1da85201a4c45d07cb22f85ca73b0b85
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `irssi:alpine` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **19.5 MB (19486857 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `8b9b301f3b6344bbce8cd33ccf6551e9e08536b35072c861c2700b1c3ca1b487`
-- Default Command: `["irssi"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **19.5 MB (19486857 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `8b9b301f3b6344bbce8cd33ccf6551e9e08536b35072c861c2700b1c3ca1b487`
+-	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 06 May 2016 14:56:49 GMT
@@ -734,19 +734,19 @@ USER [user]
 CMD ["irssi"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:05b4b09f5a1b59ea2f4555bde929e10bd9ce913142bb15272be02d1dc3419661`  
-    Last Modified: Fri, 06 May 2016 17:48:11 GMT  
-    Size: 16.6 MB (16599020 bytes)
-  - `sha256:40f9c179f2ff00e0ea7af83f2fb692b7368aa3249b50ff7445fc19c719755750`  
-    Last Modified: Fri, 06 May 2016 17:48:19 GMT  
-    Size: 1.3 KB (1268 bytes)
-  - `sha256:aef5fb842578865aff7bbe6b331998c11a67f0e799c024026e7060790f25f88e`  
-    Last Modified: Fri, 06 May 2016 17:48:25 GMT  
-    Size: 566.3 KB (566325 bytes)
-  - `sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-    Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-    Size: 2.3 MB (2320212 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:05b4b09f5a1b59ea2f4555bde929e10bd9ce913142bb15272be02d1dc3419661`  
+		Last Modified: Fri, 06 May 2016 17:48:11 GMT  
+		Size: 16.6 MB (16599020 bytes)
+	-	`sha256:40f9c179f2ff00e0ea7af83f2fb692b7368aa3249b50ff7445fc19c719755750`  
+		Last Modified: Fri, 06 May 2016 17:48:19 GMT  
+		Size: 1.3 KB (1268 bytes)
+	-	`sha256:aef5fb842578865aff7bbe6b331998c11a67f0e799c024026e7060790f25f88e`  
+		Last Modified: Fri, 06 May 2016 17:48:25 GMT  
+		Size: 566.3 KB (566325 bytes)
+	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
+		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
+		Size: 2.3 MB (2320212 bytes)

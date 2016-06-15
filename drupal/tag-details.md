@@ -33,17 +33,17 @@
 $ docker pull drupal@sha256:a0b423533b4c3e4b20006f92b7a1cdbafe0c810d118bfd217c8b3fe61f3fc594
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:7.43-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **181.4 MB (181448956 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:3ec45c77be653a068b0a976e23d4958cfdd40d63c295bc7b616a6086edc595f8`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **181.4 MB (181448956 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3ec45c77be653a068b0a976e23d4958cfdd40d63c295bc7b616a6086edc595f8`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -106,85 +106,85 @@ ENV DRUPAL_MD5=c6fb49bc88a6408a985afddac76b9f8b
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:74d9564645c1f9c58c969e62a5063bb31d23afa4d9b213f4554c398ca1a00933`  
-    Last Modified: Sat, 28 May 2016 01:38:36 GMT  
-    Size: 33.5 MB (33457602 bytes)
-  - `sha256:a91eb3cafe342a1defeb9f5b42e1a667c1cdfd9aa4610f833dddde2adad96c8d`  
-    Last Modified: Sat, 28 May 2016 01:38:09 GMT  
-    Size: 1.6 KB (1635 bytes)
-  - `sha256:7f6b3e7bb07f9669531a10b7e61ec89938f78b109c3f427c8fabba9398f73396`  
-    Last Modified: Sat, 28 May 2016 01:38:07 GMT  
-    Size: 290.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:d02943e6bd2e3bc819e6f417b2ca05415da953a22b306cc1c03f3386347e2079`  
-    Last Modified: Tue, 07 Jun 2016 20:24:15 GMT  
-    Size: 293.0 B
-  - `sha256:d6fcc7f8a92ff72273de5bad93af16239e46f51d0a7389212bdcb7ba75ce3588`  
-    Last Modified: Tue, 07 Jun 2016 20:24:19 GMT  
-    Size: 13.2 MB (13188183 bytes)
-  - `sha256:106882227a36a01b2ae7d1c5988a405524e3a080527748c84e03cd7fb270ba47`  
-    Last Modified: Tue, 07 Jun 2016 20:24:16 GMT  
-    Size: 3.3 MB (3263237 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:74d9564645c1f9c58c969e62a5063bb31d23afa4d9b213f4554c398ca1a00933`  
+		Last Modified: Sat, 28 May 2016 01:38:36 GMT  
+		Size: 33.5 MB (33457602 bytes)
+	-	`sha256:a91eb3cafe342a1defeb9f5b42e1a667c1cdfd9aa4610f833dddde2adad96c8d`  
+		Last Modified: Sat, 28 May 2016 01:38:09 GMT  
+		Size: 1.6 KB (1635 bytes)
+	-	`sha256:7f6b3e7bb07f9669531a10b7e61ec89938f78b109c3f427c8fabba9398f73396`  
+		Last Modified: Sat, 28 May 2016 01:38:07 GMT  
+		Size: 290.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:d02943e6bd2e3bc819e6f417b2ca05415da953a22b306cc1c03f3386347e2079`  
+		Last Modified: Tue, 07 Jun 2016 20:24:15 GMT  
+		Size: 293.0 B
+	-	`sha256:d6fcc7f8a92ff72273de5bad93af16239e46f51d0a7389212bdcb7ba75ce3588`  
+		Last Modified: Tue, 07 Jun 2016 20:24:19 GMT  
+		Size: 13.2 MB (13188183 bytes)
+	-	`sha256:106882227a36a01b2ae7d1c5988a405524e3a080527748c84e03cd7fb270ba47`  
+		Last Modified: Tue, 07 Jun 2016 20:24:16 GMT  
+		Size: 3.3 MB (3263237 bytes)
 
 ## `drupal:7-apache`
 
@@ -192,17 +192,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:a0b423533b4c3e4b20006f92b7a1cdbafe0c810d118bfd217c8b3fe61f3fc594
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:7-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **181.4 MB (181448956 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:3ec45c77be653a068b0a976e23d4958cfdd40d63c295bc7b616a6086edc595f8`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **181.4 MB (181448956 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3ec45c77be653a068b0a976e23d4958cfdd40d63c295bc7b616a6086edc595f8`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -265,85 +265,85 @@ ENV DRUPAL_MD5=c6fb49bc88a6408a985afddac76b9f8b
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:74d9564645c1f9c58c969e62a5063bb31d23afa4d9b213f4554c398ca1a00933`  
-    Last Modified: Sat, 28 May 2016 01:38:36 GMT  
-    Size: 33.5 MB (33457602 bytes)
-  - `sha256:a91eb3cafe342a1defeb9f5b42e1a667c1cdfd9aa4610f833dddde2adad96c8d`  
-    Last Modified: Sat, 28 May 2016 01:38:09 GMT  
-    Size: 1.6 KB (1635 bytes)
-  - `sha256:7f6b3e7bb07f9669531a10b7e61ec89938f78b109c3f427c8fabba9398f73396`  
-    Last Modified: Sat, 28 May 2016 01:38:07 GMT  
-    Size: 290.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:d02943e6bd2e3bc819e6f417b2ca05415da953a22b306cc1c03f3386347e2079`  
-    Last Modified: Tue, 07 Jun 2016 20:24:15 GMT  
-    Size: 293.0 B
-  - `sha256:d6fcc7f8a92ff72273de5bad93af16239e46f51d0a7389212bdcb7ba75ce3588`  
-    Last Modified: Tue, 07 Jun 2016 20:24:19 GMT  
-    Size: 13.2 MB (13188183 bytes)
-  - `sha256:106882227a36a01b2ae7d1c5988a405524e3a080527748c84e03cd7fb270ba47`  
-    Last Modified: Tue, 07 Jun 2016 20:24:16 GMT  
-    Size: 3.3 MB (3263237 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:74d9564645c1f9c58c969e62a5063bb31d23afa4d9b213f4554c398ca1a00933`  
+		Last Modified: Sat, 28 May 2016 01:38:36 GMT  
+		Size: 33.5 MB (33457602 bytes)
+	-	`sha256:a91eb3cafe342a1defeb9f5b42e1a667c1cdfd9aa4610f833dddde2adad96c8d`  
+		Last Modified: Sat, 28 May 2016 01:38:09 GMT  
+		Size: 1.6 KB (1635 bytes)
+	-	`sha256:7f6b3e7bb07f9669531a10b7e61ec89938f78b109c3f427c8fabba9398f73396`  
+		Last Modified: Sat, 28 May 2016 01:38:07 GMT  
+		Size: 290.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:d02943e6bd2e3bc819e6f417b2ca05415da953a22b306cc1c03f3386347e2079`  
+		Last Modified: Tue, 07 Jun 2016 20:24:15 GMT  
+		Size: 293.0 B
+	-	`sha256:d6fcc7f8a92ff72273de5bad93af16239e46f51d0a7389212bdcb7ba75ce3588`  
+		Last Modified: Tue, 07 Jun 2016 20:24:19 GMT  
+		Size: 13.2 MB (13188183 bytes)
+	-	`sha256:106882227a36a01b2ae7d1c5988a405524e3a080527748c84e03cd7fb270ba47`  
+		Last Modified: Tue, 07 Jun 2016 20:24:16 GMT  
+		Size: 3.3 MB (3263237 bytes)
 
 ## `drupal:7.43`
 
@@ -351,17 +351,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:a0b423533b4c3e4b20006f92b7a1cdbafe0c810d118bfd217c8b3fe61f3fc594
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:7.43` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **181.4 MB (181448956 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:3ec45c77be653a068b0a976e23d4958cfdd40d63c295bc7b616a6086edc595f8`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **181.4 MB (181448956 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3ec45c77be653a068b0a976e23d4958cfdd40d63c295bc7b616a6086edc595f8`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -424,85 +424,85 @@ ENV DRUPAL_MD5=c6fb49bc88a6408a985afddac76b9f8b
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:74d9564645c1f9c58c969e62a5063bb31d23afa4d9b213f4554c398ca1a00933`  
-    Last Modified: Sat, 28 May 2016 01:38:36 GMT  
-    Size: 33.5 MB (33457602 bytes)
-  - `sha256:a91eb3cafe342a1defeb9f5b42e1a667c1cdfd9aa4610f833dddde2adad96c8d`  
-    Last Modified: Sat, 28 May 2016 01:38:09 GMT  
-    Size: 1.6 KB (1635 bytes)
-  - `sha256:7f6b3e7bb07f9669531a10b7e61ec89938f78b109c3f427c8fabba9398f73396`  
-    Last Modified: Sat, 28 May 2016 01:38:07 GMT  
-    Size: 290.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:d02943e6bd2e3bc819e6f417b2ca05415da953a22b306cc1c03f3386347e2079`  
-    Last Modified: Tue, 07 Jun 2016 20:24:15 GMT  
-    Size: 293.0 B
-  - `sha256:d6fcc7f8a92ff72273de5bad93af16239e46f51d0a7389212bdcb7ba75ce3588`  
-    Last Modified: Tue, 07 Jun 2016 20:24:19 GMT  
-    Size: 13.2 MB (13188183 bytes)
-  - `sha256:106882227a36a01b2ae7d1c5988a405524e3a080527748c84e03cd7fb270ba47`  
-    Last Modified: Tue, 07 Jun 2016 20:24:16 GMT  
-    Size: 3.3 MB (3263237 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:74d9564645c1f9c58c969e62a5063bb31d23afa4d9b213f4554c398ca1a00933`  
+		Last Modified: Sat, 28 May 2016 01:38:36 GMT  
+		Size: 33.5 MB (33457602 bytes)
+	-	`sha256:a91eb3cafe342a1defeb9f5b42e1a667c1cdfd9aa4610f833dddde2adad96c8d`  
+		Last Modified: Sat, 28 May 2016 01:38:09 GMT  
+		Size: 1.6 KB (1635 bytes)
+	-	`sha256:7f6b3e7bb07f9669531a10b7e61ec89938f78b109c3f427c8fabba9398f73396`  
+		Last Modified: Sat, 28 May 2016 01:38:07 GMT  
+		Size: 290.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:d02943e6bd2e3bc819e6f417b2ca05415da953a22b306cc1c03f3386347e2079`  
+		Last Modified: Tue, 07 Jun 2016 20:24:15 GMT  
+		Size: 293.0 B
+	-	`sha256:d6fcc7f8a92ff72273de5bad93af16239e46f51d0a7389212bdcb7ba75ce3588`  
+		Last Modified: Tue, 07 Jun 2016 20:24:19 GMT  
+		Size: 13.2 MB (13188183 bytes)
+	-	`sha256:106882227a36a01b2ae7d1c5988a405524e3a080527748c84e03cd7fb270ba47`  
+		Last Modified: Tue, 07 Jun 2016 20:24:16 GMT  
+		Size: 3.3 MB (3263237 bytes)
 
 ## `drupal:7`
 
@@ -510,17 +510,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:a0b423533b4c3e4b20006f92b7a1cdbafe0c810d118bfd217c8b3fe61f3fc594
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:7` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **181.4 MB (181448956 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:3ec45c77be653a068b0a976e23d4958cfdd40d63c295bc7b616a6086edc595f8`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **181.4 MB (181448956 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3ec45c77be653a068b0a976e23d4958cfdd40d63c295bc7b616a6086edc595f8`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -583,85 +583,85 @@ ENV DRUPAL_MD5=c6fb49bc88a6408a985afddac76b9f8b
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:74d9564645c1f9c58c969e62a5063bb31d23afa4d9b213f4554c398ca1a00933`  
-    Last Modified: Sat, 28 May 2016 01:38:36 GMT  
-    Size: 33.5 MB (33457602 bytes)
-  - `sha256:a91eb3cafe342a1defeb9f5b42e1a667c1cdfd9aa4610f833dddde2adad96c8d`  
-    Last Modified: Sat, 28 May 2016 01:38:09 GMT  
-    Size: 1.6 KB (1635 bytes)
-  - `sha256:7f6b3e7bb07f9669531a10b7e61ec89938f78b109c3f427c8fabba9398f73396`  
-    Last Modified: Sat, 28 May 2016 01:38:07 GMT  
-    Size: 290.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:d02943e6bd2e3bc819e6f417b2ca05415da953a22b306cc1c03f3386347e2079`  
-    Last Modified: Tue, 07 Jun 2016 20:24:15 GMT  
-    Size: 293.0 B
-  - `sha256:d6fcc7f8a92ff72273de5bad93af16239e46f51d0a7389212bdcb7ba75ce3588`  
-    Last Modified: Tue, 07 Jun 2016 20:24:19 GMT  
-    Size: 13.2 MB (13188183 bytes)
-  - `sha256:106882227a36a01b2ae7d1c5988a405524e3a080527748c84e03cd7fb270ba47`  
-    Last Modified: Tue, 07 Jun 2016 20:24:16 GMT  
-    Size: 3.3 MB (3263237 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:74d9564645c1f9c58c969e62a5063bb31d23afa4d9b213f4554c398ca1a00933`  
+		Last Modified: Sat, 28 May 2016 01:38:36 GMT  
+		Size: 33.5 MB (33457602 bytes)
+	-	`sha256:a91eb3cafe342a1defeb9f5b42e1a667c1cdfd9aa4610f833dddde2adad96c8d`  
+		Last Modified: Sat, 28 May 2016 01:38:09 GMT  
+		Size: 1.6 KB (1635 bytes)
+	-	`sha256:7f6b3e7bb07f9669531a10b7e61ec89938f78b109c3f427c8fabba9398f73396`  
+		Last Modified: Sat, 28 May 2016 01:38:07 GMT  
+		Size: 290.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:d02943e6bd2e3bc819e6f417b2ca05415da953a22b306cc1c03f3386347e2079`  
+		Last Modified: Tue, 07 Jun 2016 20:24:15 GMT  
+		Size: 293.0 B
+	-	`sha256:d6fcc7f8a92ff72273de5bad93af16239e46f51d0a7389212bdcb7ba75ce3588`  
+		Last Modified: Tue, 07 Jun 2016 20:24:19 GMT  
+		Size: 13.2 MB (13188183 bytes)
+	-	`sha256:106882227a36a01b2ae7d1c5988a405524e3a080527748c84e03cd7fb270ba47`  
+		Last Modified: Tue, 07 Jun 2016 20:24:16 GMT  
+		Size: 3.3 MB (3263237 bytes)
 
 ## `drupal:7.43-fpm`
 
@@ -669,17 +669,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:020a5434613ab8199d51f1c81bc0e7e3ee7734bae30948177c8cdd735522d321
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:7.43-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **171.6 MB (171601161 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:91b7cea3f9ccc0bdfad7ca2d8e3e09eb222a30d3457752ad948ba0cef0d11687`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **171.6 MB (171601161 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:91b7cea3f9ccc0bdfad7ca2d8e3e09eb222a30d3457752ad948ba0cef0d11687`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -728,64 +728,64 @@ ENV DRUPAL_MD5=c6fb49bc88a6408a985afddac76b9f8b
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:3b08dcc08fd8cf0488fd8f7d0dba79b41a3c8dc841d968fe27eacccbef52b484`  
-    Last Modified: Sat, 28 May 2016 01:39:41 GMT  
-    Size: 26.5 MB (26473689 bytes)
-  - `sha256:b7d41de696f6547759528c03089d1d9349e1e734d65f5837415304308d14b5a3`  
-    Last Modified: Sat, 28 May 2016 01:39:13 GMT  
-    Size: 1.6 KB (1626 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:8d81313af4219685f1cd451f6c01dc146cb3a89be56c30956dfddd2d0a6d64af`  
-    Last Modified: Sat, 28 May 2016 01:39:08 GMT  
-    Size: 7.7 KB (7683 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:cd26cc17eb1829a333b50f88e2e7a051a061b4eb58ca5f3ed55bb4f5d1f26fde`  
-    Last Modified: Tue, 07 Jun 2016 20:25:35 GMT  
-    Size: 13.2 MB (13166164 bytes)
-  - `sha256:0d4ec230710e494f67863a6bee7a2a5a1342e5550fe917a76f390bc80416c67e`  
-    Last Modified: Tue, 07 Jun 2016 20:25:31 GMT  
-    Size: 3.3 MB (3263236 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:3b08dcc08fd8cf0488fd8f7d0dba79b41a3c8dc841d968fe27eacccbef52b484`  
+		Last Modified: Sat, 28 May 2016 01:39:41 GMT  
+		Size: 26.5 MB (26473689 bytes)
+	-	`sha256:b7d41de696f6547759528c03089d1d9349e1e734d65f5837415304308d14b5a3`  
+		Last Modified: Sat, 28 May 2016 01:39:13 GMT  
+		Size: 1.6 KB (1626 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:8d81313af4219685f1cd451f6c01dc146cb3a89be56c30956dfddd2d0a6d64af`  
+		Last Modified: Sat, 28 May 2016 01:39:08 GMT  
+		Size: 7.7 KB (7683 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:cd26cc17eb1829a333b50f88e2e7a051a061b4eb58ca5f3ed55bb4f5d1f26fde`  
+		Last Modified: Tue, 07 Jun 2016 20:25:35 GMT  
+		Size: 13.2 MB (13166164 bytes)
+	-	`sha256:0d4ec230710e494f67863a6bee7a2a5a1342e5550fe917a76f390bc80416c67e`  
+		Last Modified: Tue, 07 Jun 2016 20:25:31 GMT  
+		Size: 3.3 MB (3263236 bytes)
 
 ## `drupal:7-fpm`
 
@@ -793,17 +793,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:020a5434613ab8199d51f1c81bc0e7e3ee7734bae30948177c8cdd735522d321
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:7-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **171.6 MB (171601161 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:91b7cea3f9ccc0bdfad7ca2d8e3e09eb222a30d3457752ad948ba0cef0d11687`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **171.6 MB (171601161 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:91b7cea3f9ccc0bdfad7ca2d8e3e09eb222a30d3457752ad948ba0cef0d11687`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -852,64 +852,64 @@ ENV DRUPAL_MD5=c6fb49bc88a6408a985afddac76b9f8b
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:3b08dcc08fd8cf0488fd8f7d0dba79b41a3c8dc841d968fe27eacccbef52b484`  
-    Last Modified: Sat, 28 May 2016 01:39:41 GMT  
-    Size: 26.5 MB (26473689 bytes)
-  - `sha256:b7d41de696f6547759528c03089d1d9349e1e734d65f5837415304308d14b5a3`  
-    Last Modified: Sat, 28 May 2016 01:39:13 GMT  
-    Size: 1.6 KB (1626 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:8d81313af4219685f1cd451f6c01dc146cb3a89be56c30956dfddd2d0a6d64af`  
-    Last Modified: Sat, 28 May 2016 01:39:08 GMT  
-    Size: 7.7 KB (7683 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:cd26cc17eb1829a333b50f88e2e7a051a061b4eb58ca5f3ed55bb4f5d1f26fde`  
-    Last Modified: Tue, 07 Jun 2016 20:25:35 GMT  
-    Size: 13.2 MB (13166164 bytes)
-  - `sha256:0d4ec230710e494f67863a6bee7a2a5a1342e5550fe917a76f390bc80416c67e`  
-    Last Modified: Tue, 07 Jun 2016 20:25:31 GMT  
-    Size: 3.3 MB (3263236 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:3b08dcc08fd8cf0488fd8f7d0dba79b41a3c8dc841d968fe27eacccbef52b484`  
+		Last Modified: Sat, 28 May 2016 01:39:41 GMT  
+		Size: 26.5 MB (26473689 bytes)
+	-	`sha256:b7d41de696f6547759528c03089d1d9349e1e734d65f5837415304308d14b5a3`  
+		Last Modified: Sat, 28 May 2016 01:39:13 GMT  
+		Size: 1.6 KB (1626 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:8d81313af4219685f1cd451f6c01dc146cb3a89be56c30956dfddd2d0a6d64af`  
+		Last Modified: Sat, 28 May 2016 01:39:08 GMT  
+		Size: 7.7 KB (7683 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:cd26cc17eb1829a333b50f88e2e7a051a061b4eb58ca5f3ed55bb4f5d1f26fde`  
+		Last Modified: Tue, 07 Jun 2016 20:25:35 GMT  
+		Size: 13.2 MB (13166164 bytes)
+	-	`sha256:0d4ec230710e494f67863a6bee7a2a5a1342e5550fe917a76f390bc80416c67e`  
+		Last Modified: Tue, 07 Jun 2016 20:25:31 GMT  
+		Size: 3.3 MB (3263236 bytes)
 
 ## `drupal:8.0.6-apache`
 
@@ -917,17 +917,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:723e34675a9c64ebf7cbb033909dfad34df383dc08d23d6f099f29998fd9ed60
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.0.6-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.0 MB (205005571 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:1e9e570e7462d1b3e70f8aaf66d981dbe3a48e1a467f84537bf194e82f51a430`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.0 MB (205005571 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1e9e570e7462d1b3e70f8aaf66d981dbe3a48e1a467f84537bf194e82f51a430`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -992,88 +992,88 @@ ENV DRUPAL_MD5=952c14d46f0b02bcb29de5c3349c19ee
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:7848ad324ad66e681f337b45c562816cd92fa1deb08048f6c9e4e7c69e151799`  
-    Last Modified: Tue, 07 Jun 2016 20:26:27 GMT  
-    Size: 11.8 MB (11762707 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:7848ad324ad66e681f337b45c562816cd92fa1deb08048f6c9e4e7c69e151799`  
+		Last Modified: Tue, 07 Jun 2016 20:26:27 GMT  
+		Size: 11.8 MB (11762707 bytes)
 
 ## `drupal:8.0-apache`
 
@@ -1081,17 +1081,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:723e34675a9c64ebf7cbb033909dfad34df383dc08d23d6f099f29998fd9ed60
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.0-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.0 MB (205005571 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:1e9e570e7462d1b3e70f8aaf66d981dbe3a48e1a467f84537bf194e82f51a430`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.0 MB (205005571 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1e9e570e7462d1b3e70f8aaf66d981dbe3a48e1a467f84537bf194e82f51a430`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -1156,88 +1156,88 @@ ENV DRUPAL_MD5=952c14d46f0b02bcb29de5c3349c19ee
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:7848ad324ad66e681f337b45c562816cd92fa1deb08048f6c9e4e7c69e151799`  
-    Last Modified: Tue, 07 Jun 2016 20:26:27 GMT  
-    Size: 11.8 MB (11762707 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:7848ad324ad66e681f337b45c562816cd92fa1deb08048f6c9e4e7c69e151799`  
+		Last Modified: Tue, 07 Jun 2016 20:26:27 GMT  
+		Size: 11.8 MB (11762707 bytes)
 
 ## `drupal:8.0.6`
 
@@ -1245,17 +1245,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:723e34675a9c64ebf7cbb033909dfad34df383dc08d23d6f099f29998fd9ed60
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.0.6` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.0 MB (205005571 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:1e9e570e7462d1b3e70f8aaf66d981dbe3a48e1a467f84537bf194e82f51a430`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.0 MB (205005571 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1e9e570e7462d1b3e70f8aaf66d981dbe3a48e1a467f84537bf194e82f51a430`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -1320,88 +1320,88 @@ ENV DRUPAL_MD5=952c14d46f0b02bcb29de5c3349c19ee
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:7848ad324ad66e681f337b45c562816cd92fa1deb08048f6c9e4e7c69e151799`  
-    Last Modified: Tue, 07 Jun 2016 20:26:27 GMT  
-    Size: 11.8 MB (11762707 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:7848ad324ad66e681f337b45c562816cd92fa1deb08048f6c9e4e7c69e151799`  
+		Last Modified: Tue, 07 Jun 2016 20:26:27 GMT  
+		Size: 11.8 MB (11762707 bytes)
 
 ## `drupal:8.0`
 
@@ -1409,17 +1409,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:723e34675a9c64ebf7cbb033909dfad34df383dc08d23d6f099f29998fd9ed60
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.0` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.0 MB (205005571 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:1e9e570e7462d1b3e70f8aaf66d981dbe3a48e1a467f84537bf194e82f51a430`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.0 MB (205005571 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1e9e570e7462d1b3e70f8aaf66d981dbe3a48e1a467f84537bf194e82f51a430`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -1484,88 +1484,88 @@ ENV DRUPAL_MD5=952c14d46f0b02bcb29de5c3349c19ee
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:7848ad324ad66e681f337b45c562816cd92fa1deb08048f6c9e4e7c69e151799`  
-    Last Modified: Tue, 07 Jun 2016 20:26:27 GMT  
-    Size: 11.8 MB (11762707 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:7848ad324ad66e681f337b45c562816cd92fa1deb08048f6c9e4e7c69e151799`  
+		Last Modified: Tue, 07 Jun 2016 20:26:27 GMT  
+		Size: 11.8 MB (11762707 bytes)
 
 ## `drupal:8.0.6-fpm`
 
@@ -1573,17 +1573,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:6697bb7a997db8fddd597ad96e31f23c17eafc69478015f7bc03f390cb23aa5f
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.0.6-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **195.2 MB (195194964 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:11e27de4e7444a94d65512f4624b64f2df96e23176af66879feb6cf0c9fa1cb9`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **195.2 MB (195194964 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:11e27de4e7444a94d65512f4624b64f2df96e23176af66879feb6cf0c9fa1cb9`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -1634,67 +1634,67 @@ ENV DRUPAL_MD5=952c14d46f0b02bcb29de5c3349c19ee
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
-    Last Modified: Sat, 28 May 2016 01:47:10 GMT  
-    Size: 40.8 MB (40846260 bytes)
-  - `sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
-    Last Modified: Sat, 28 May 2016 01:46:41 GMT  
-    Size: 1.6 KB (1629 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
-    Last Modified: Sat, 28 May 2016 01:46:36 GMT  
-    Size: 7.7 KB (7741 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
-    Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
-    Size: 13.9 MB (13887544 bytes)
-  - `sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
-    Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
-    Size: 333.0 B
-  - `sha256:dce7e97b850fc8fd24f7cd59f70757d857a7067cbbdd0e0f3eeaa9d3a28d2da8`  
-    Last Modified: Tue, 07 Jun 2016 20:27:47 GMT  
-    Size: 11.8 MB (11762694 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
+		Last Modified: Sat, 28 May 2016 01:47:10 GMT  
+		Size: 40.8 MB (40846260 bytes)
+	-	`sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
+		Last Modified: Sat, 28 May 2016 01:46:41 GMT  
+		Size: 1.6 KB (1629 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
+		Last Modified: Sat, 28 May 2016 01:46:36 GMT  
+		Size: 7.7 KB (7741 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
+		Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
+		Size: 13.9 MB (13887544 bytes)
+	-	`sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
+		Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
+		Size: 333.0 B
+	-	`sha256:dce7e97b850fc8fd24f7cd59f70757d857a7067cbbdd0e0f3eeaa9d3a28d2da8`  
+		Last Modified: Tue, 07 Jun 2016 20:27:47 GMT  
+		Size: 11.8 MB (11762694 bytes)
 
 ## `drupal:8.0-fpm`
 
@@ -1702,17 +1702,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:6697bb7a997db8fddd597ad96e31f23c17eafc69478015f7bc03f390cb23aa5f
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.0-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **195.2 MB (195194964 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:11e27de4e7444a94d65512f4624b64f2df96e23176af66879feb6cf0c9fa1cb9`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **195.2 MB (195194964 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:11e27de4e7444a94d65512f4624b64f2df96e23176af66879feb6cf0c9fa1cb9`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -1763,67 +1763,67 @@ ENV DRUPAL_MD5=952c14d46f0b02bcb29de5c3349c19ee
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
-    Last Modified: Sat, 28 May 2016 01:47:10 GMT  
-    Size: 40.8 MB (40846260 bytes)
-  - `sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
-    Last Modified: Sat, 28 May 2016 01:46:41 GMT  
-    Size: 1.6 KB (1629 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
-    Last Modified: Sat, 28 May 2016 01:46:36 GMT  
-    Size: 7.7 KB (7741 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
-    Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
-    Size: 13.9 MB (13887544 bytes)
-  - `sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
-    Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
-    Size: 333.0 B
-  - `sha256:dce7e97b850fc8fd24f7cd59f70757d857a7067cbbdd0e0f3eeaa9d3a28d2da8`  
-    Last Modified: Tue, 07 Jun 2016 20:27:47 GMT  
-    Size: 11.8 MB (11762694 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
+		Last Modified: Sat, 28 May 2016 01:47:10 GMT  
+		Size: 40.8 MB (40846260 bytes)
+	-	`sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
+		Last Modified: Sat, 28 May 2016 01:46:41 GMT  
+		Size: 1.6 KB (1629 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
+		Last Modified: Sat, 28 May 2016 01:46:36 GMT  
+		Size: 7.7 KB (7741 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
+		Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
+		Size: 13.9 MB (13887544 bytes)
+	-	`sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
+		Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
+		Size: 333.0 B
+	-	`sha256:dce7e97b850fc8fd24f7cd59f70757d857a7067cbbdd0e0f3eeaa9d3a28d2da8`  
+		Last Modified: Tue, 07 Jun 2016 20:27:47 GMT  
+		Size: 11.8 MB (11762694 bytes)
 
 ## `drupal:8.1.2-apache`
 
@@ -1831,17 +1831,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:adb1a7698e04aaf60522d5971282b7e48fc64af1a3f37041ca33d024f5c013ff
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.1.2-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.8 MB (205764008 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.8 MB (205764008 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -1906,88 +1906,88 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
-    Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
-    Size: 12.5 MB (12521144 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
+		Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
+		Size: 12.5 MB (12521144 bytes)
 
 ## `drupal:8.1-apache`
 
@@ -1995,17 +1995,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:adb1a7698e04aaf60522d5971282b7e48fc64af1a3f37041ca33d024f5c013ff
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.1-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.8 MB (205764008 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.8 MB (205764008 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -2070,88 +2070,88 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
-    Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
-    Size: 12.5 MB (12521144 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
+		Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
+		Size: 12.5 MB (12521144 bytes)
 
 ## `drupal:8-apache`
 
@@ -2159,17 +2159,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:adb1a7698e04aaf60522d5971282b7e48fc64af1a3f37041ca33d024f5c013ff
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.8 MB (205764008 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.8 MB (205764008 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -2234,88 +2234,88 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
-    Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
-    Size: 12.5 MB (12521144 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
+		Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
+		Size: 12.5 MB (12521144 bytes)
 
 ## `drupal:apache`
 
@@ -2323,17 +2323,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:adb1a7698e04aaf60522d5971282b7e48fc64af1a3f37041ca33d024f5c013ff
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.8 MB (205764008 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.8 MB (205764008 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -2398,88 +2398,88 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
-    Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
-    Size: 12.5 MB (12521144 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
+		Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
+		Size: 12.5 MB (12521144 bytes)
 
 ## `drupal:8.1.2`
 
@@ -2487,17 +2487,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:adb1a7698e04aaf60522d5971282b7e48fc64af1a3f37041ca33d024f5c013ff
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.1.2` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.8 MB (205764008 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.8 MB (205764008 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -2562,88 +2562,88 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
-    Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
-    Size: 12.5 MB (12521144 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
+		Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
+		Size: 12.5 MB (12521144 bytes)
 
 ## `drupal:8.1`
 
@@ -2651,17 +2651,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:adb1a7698e04aaf60522d5971282b7e48fc64af1a3f37041ca33d024f5c013ff
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.1` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.8 MB (205764008 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.8 MB (205764008 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -2726,88 +2726,88 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
-    Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
-    Size: 12.5 MB (12521144 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
+		Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
+		Size: 12.5 MB (12521144 bytes)
 
 ## `drupal:8`
 
@@ -2815,17 +2815,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:adb1a7698e04aaf60522d5971282b7e48fc64af1a3f37041ca33d024f5c013ff
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.8 MB (205764008 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.8 MB (205764008 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -2890,88 +2890,88 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
-    Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
-    Size: 12.5 MB (12521144 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
+		Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
+		Size: 12.5 MB (12521144 bytes)
 
 ## `drupal:latest`
 
@@ -2979,17 +2979,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:adb1a7698e04aaf60522d5971282b7e48fc64af1a3f37041ca33d024f5c013ff
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:latest` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **205.8 MB (205764008 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **205.8 MB (205764008 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:be93352ccefdbc10cbb711d9645b7d5cd3fa6e889d5264c5b8ca612fb1cb00fb`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -3054,88 +3054,88 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
-    Last Modified: Tue, 24 May 2016 16:01:29 GMT  
-    Size: 2.8 MB (2843938 bytes)
-  - `sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
-    Last Modified: Tue, 24 May 2016 16:01:23 GMT  
-    Size: 323.0 B
-  - `sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
-    Last Modified: Tue, 24 May 2016 16:01:19 GMT  
-    Size: 430.0 B
-  - `sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
-    Last Modified: Tue, 24 May 2016 16:01:15 GMT  
-    Size: 3.4 KB (3364 bytes)
-  - `sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
-    Last Modified: Tue, 24 May 2016 16:01:11 GMT  
-    Size: 866.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
-    Last Modified: Sat, 28 May 2016 01:45:54 GMT  
-    Size: 47.8 MB (47782966 bytes)
-  - `sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
-    Last Modified: Sat, 28 May 2016 01:45:23 GMT  
-    Size: 1.6 KB (1631 bytes)
-  - `sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
-    Last Modified: Sat, 28 May 2016 01:45:19 GMT  
-    Size: 292.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 293.0 B
-  - `sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
-    Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
-    Size: 13.9 MB (13919634 bytes)
-  - `sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
-    Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
-    Size: 332.0 B
-  - `sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
-    Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
-    Size: 12.5 MB (12521144 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:13bed24ee6981c4c043bbe75ad736483c63659b0bb49786d3540b5148963b8c4`  
+		Last Modified: Tue, 24 May 2016 16:01:29 GMT  
+		Size: 2.8 MB (2843938 bytes)
+	-	`sha256:47a69be46fceceef7b5e80d70fd9dace7ed4498e7cbef7d22994ac5ffb2f8e06`  
+		Last Modified: Tue, 24 May 2016 16:01:23 GMT  
+		Size: 323.0 B
+	-	`sha256:ad0fd419fcb4dcf7fe477ec7b8ada45dec293ba5f78171dc5149182b00e66ffe`  
+		Last Modified: Tue, 24 May 2016 16:01:19 GMT  
+		Size: 430.0 B
+	-	`sha256:99643f9a28ad571784f59d0cbccb2b10098b00b5ebb6ca0557eedc36f69580df`  
+		Last Modified: Tue, 24 May 2016 16:01:15 GMT  
+		Size: 3.4 KB (3364 bytes)
+	-	`sha256:18bffcea6a17f3dc142167060eaf3b918c3a3c147070c20ccdd08ab7df418e45`  
+		Last Modified: Tue, 24 May 2016 16:01:11 GMT  
+		Size: 866.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f3090ce77bfe9cf893b74a6a43102e8045f7c49b7230f773bb8432b75734504a`  
+		Last Modified: Sat, 28 May 2016 01:45:54 GMT  
+		Size: 47.8 MB (47782966 bytes)
+	-	`sha256:1a78229981cd3c250774fb50635a2c6368aee999682fa915ae2b9d6153c1b9b6`  
+		Last Modified: Sat, 28 May 2016 01:45:23 GMT  
+		Size: 1.6 KB (1631 bytes)
+	-	`sha256:fd63e8fbfe66793312e072bb9bfbadb78fe1e14013c9e28eae6b7542c6df794b`  
+		Last Modified: Sat, 28 May 2016 01:45:19 GMT  
+		Size: 292.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:45ae644498128f6dd74c2982c70abf91def7eab8a2c069b7ed03826ffc28c76e`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 293.0 B
+	-	`sha256:4857c3dea1586845a0b34048df88edecdad145594dfb1da83148890d2beca3ab`  
+		Last Modified: Tue, 07 Jun 2016 20:26:20 GMT  
+		Size: 13.9 MB (13919634 bytes)
+	-	`sha256:9acb4faf6246eaf355736bca36805cd479c7f1e4653c5e3fbc080a93bb9f7681`  
+		Last Modified: Tue, 07 Jun 2016 20:26:15 GMT  
+		Size: 332.0 B
+	-	`sha256:c7cfad949e7949dff2b01e75b03e822af82f4884bbffcacea975ad28b47e09ab`  
+		Last Modified: Tue, 07 Jun 2016 20:28:38 GMT  
+		Size: 12.5 MB (12521144 bytes)
 
 ## `drupal:8.1.2-fpm`
 
@@ -3143,17 +3143,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:77d68caf9ad13e61284b2415e535a633e6becc828ea85e85fe402d0eb7a47aaa
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.1.2-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **196.0 MB (195953408 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:f68b44e3dec787b831fd8fe816bc5a3291afcc4f8bbb90fea8739c8264aa74cd`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **196.0 MB (195953408 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f68b44e3dec787b831fd8fe816bc5a3291afcc4f8bbb90fea8739c8264aa74cd`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -3204,67 +3204,67 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
-    Last Modified: Sat, 28 May 2016 01:47:10 GMT  
-    Size: 40.8 MB (40846260 bytes)
-  - `sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
-    Last Modified: Sat, 28 May 2016 01:46:41 GMT  
-    Size: 1.6 KB (1629 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
-    Last Modified: Sat, 28 May 2016 01:46:36 GMT  
-    Size: 7.7 KB (7741 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
-    Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
-    Size: 13.9 MB (13887544 bytes)
-  - `sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
-    Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
-    Size: 333.0 B
-  - `sha256:0266882ed6fb7a4f64df1cad3d4a4acce9d280c68d78c32dd897a3ed52be6c9a`  
-    Last Modified: Tue, 07 Jun 2016 20:30:26 GMT  
-    Size: 12.5 MB (12521138 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
+		Last Modified: Sat, 28 May 2016 01:47:10 GMT  
+		Size: 40.8 MB (40846260 bytes)
+	-	`sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
+		Last Modified: Sat, 28 May 2016 01:46:41 GMT  
+		Size: 1.6 KB (1629 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
+		Last Modified: Sat, 28 May 2016 01:46:36 GMT  
+		Size: 7.7 KB (7741 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
+		Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
+		Size: 13.9 MB (13887544 bytes)
+	-	`sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
+		Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
+		Size: 333.0 B
+	-	`sha256:0266882ed6fb7a4f64df1cad3d4a4acce9d280c68d78c32dd897a3ed52be6c9a`  
+		Last Modified: Tue, 07 Jun 2016 20:30:26 GMT  
+		Size: 12.5 MB (12521138 bytes)
 
 ## `drupal:8.1-fpm`
 
@@ -3272,17 +3272,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:77d68caf9ad13e61284b2415e535a633e6becc828ea85e85fe402d0eb7a47aaa
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8.1-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **196.0 MB (195953408 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:f68b44e3dec787b831fd8fe816bc5a3291afcc4f8bbb90fea8739c8264aa74cd`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **196.0 MB (195953408 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f68b44e3dec787b831fd8fe816bc5a3291afcc4f8bbb90fea8739c8264aa74cd`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -3333,67 +3333,67 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
-    Last Modified: Sat, 28 May 2016 01:47:10 GMT  
-    Size: 40.8 MB (40846260 bytes)
-  - `sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
-    Last Modified: Sat, 28 May 2016 01:46:41 GMT  
-    Size: 1.6 KB (1629 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
-    Last Modified: Sat, 28 May 2016 01:46:36 GMT  
-    Size: 7.7 KB (7741 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
-    Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
-    Size: 13.9 MB (13887544 bytes)
-  - `sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
-    Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
-    Size: 333.0 B
-  - `sha256:0266882ed6fb7a4f64df1cad3d4a4acce9d280c68d78c32dd897a3ed52be6c9a`  
-    Last Modified: Tue, 07 Jun 2016 20:30:26 GMT  
-    Size: 12.5 MB (12521138 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
+		Last Modified: Sat, 28 May 2016 01:47:10 GMT  
+		Size: 40.8 MB (40846260 bytes)
+	-	`sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
+		Last Modified: Sat, 28 May 2016 01:46:41 GMT  
+		Size: 1.6 KB (1629 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
+		Last Modified: Sat, 28 May 2016 01:46:36 GMT  
+		Size: 7.7 KB (7741 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
+		Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
+		Size: 13.9 MB (13887544 bytes)
+	-	`sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
+		Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
+		Size: 333.0 B
+	-	`sha256:0266882ed6fb7a4f64df1cad3d4a4acce9d280c68d78c32dd897a3ed52be6c9a`  
+		Last Modified: Tue, 07 Jun 2016 20:30:26 GMT  
+		Size: 12.5 MB (12521138 bytes)
 
 ## `drupal:8-fpm`
 
@@ -3401,17 +3401,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:77d68caf9ad13e61284b2415e535a633e6becc828ea85e85fe402d0eb7a47aaa
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:8-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **196.0 MB (195953408 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:f68b44e3dec787b831fd8fe816bc5a3291afcc4f8bbb90fea8739c8264aa74cd`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **196.0 MB (195953408 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f68b44e3dec787b831fd8fe816bc5a3291afcc4f8bbb90fea8739c8264aa74cd`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -3462,67 +3462,67 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
-    Last Modified: Sat, 28 May 2016 01:47:10 GMT  
-    Size: 40.8 MB (40846260 bytes)
-  - `sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
-    Last Modified: Sat, 28 May 2016 01:46:41 GMT  
-    Size: 1.6 KB (1629 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
-    Last Modified: Sat, 28 May 2016 01:46:36 GMT  
-    Size: 7.7 KB (7741 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
-    Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
-    Size: 13.9 MB (13887544 bytes)
-  - `sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
-    Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
-    Size: 333.0 B
-  - `sha256:0266882ed6fb7a4f64df1cad3d4a4acce9d280c68d78c32dd897a3ed52be6c9a`  
-    Last Modified: Tue, 07 Jun 2016 20:30:26 GMT  
-    Size: 12.5 MB (12521138 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
+		Last Modified: Sat, 28 May 2016 01:47:10 GMT  
+		Size: 40.8 MB (40846260 bytes)
+	-	`sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
+		Last Modified: Sat, 28 May 2016 01:46:41 GMT  
+		Size: 1.6 KB (1629 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
+		Last Modified: Sat, 28 May 2016 01:46:36 GMT  
+		Size: 7.7 KB (7741 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
+		Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
+		Size: 13.9 MB (13887544 bytes)
+	-	`sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
+		Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
+		Size: 333.0 B
+	-	`sha256:0266882ed6fb7a4f64df1cad3d4a4acce9d280c68d78c32dd897a3ed52be6c9a`  
+		Last Modified: Tue, 07 Jun 2016 20:30:26 GMT  
+		Size: 12.5 MB (12521138 bytes)
 
 ## `drupal:fpm`
 
@@ -3530,17 +3530,17 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 $ docker pull drupal@sha256:77d68caf9ad13e61284b2415e535a633e6becc828ea85e85fe402d0eb7a47aaa
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `drupal:fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **196.0 MB (195953408 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:f68b44e3dec787b831fd8fe816bc5a3291afcc4f8bbb90fea8739c8264aa74cd`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **196.0 MB (195953408 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f68b44e3dec787b831fd8fe816bc5a3291afcc4f8bbb90fea8739c8264aa74cd`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -3591,64 +3591,64 @@ ENV DRUPAL_MD5=91fdfbd1c28512e41f2a61bf69214900
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
-    Last Modified: Tue, 24 May 2016 15:56:58 GMT  
-    Size: 77.3 MB (77331899 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
-    Last Modified: Tue, 24 May 2016 15:56:18 GMT  
-    Size: 178.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
-    Last Modified: Sat, 28 May 2016 01:47:10 GMT  
-    Size: 40.8 MB (40846260 bytes)
-  - `sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
-    Last Modified: Sat, 28 May 2016 01:46:41 GMT  
-    Size: 1.6 KB (1629 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
-    Last Modified: Sat, 28 May 2016 01:46:36 GMT  
-    Size: 7.7 KB (7741 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
-    Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
-    Size: 13.9 MB (13887544 bytes)
-  - `sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
-    Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
-    Size: 333.0 B
-  - `sha256:0266882ed6fb7a4f64df1cad3d4a4acce9d280c68d78c32dd897a3ed52be6c9a`  
-    Last Modified: Tue, 07 Jun 2016 20:30:26 GMT  
-    Size: 12.5 MB (12521138 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a28c68f3894c4b223847a9be5c4dc006c0e102fddc7853881e49d5e0a94f58e0`  
+		Last Modified: Tue, 24 May 2016 15:56:58 GMT  
+		Size: 77.3 MB (77331899 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:1818204ff7011501ac47023801082893162918ffb3fc8799bc91baa6238d0fc8`  
+		Last Modified: Tue, 24 May 2016 15:56:18 GMT  
+		Size: 178.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:4cea9bf5d067d77e74c1c912aa116eacb7c278cc2045db5c65709897e5ff48e9`  
+		Last Modified: Sat, 28 May 2016 01:47:10 GMT  
+		Size: 40.8 MB (40846260 bytes)
+	-	`sha256:733550adfc5cf8c05593fa1c3c2b443994539e53906e2b9b32b52fc316b11c61`  
+		Last Modified: Sat, 28 May 2016 01:46:41 GMT  
+		Size: 1.6 KB (1629 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:99b1c7d2a3b6c4cd8334b2464a17cdc521636f6d21550de5c953c03e0af3ea6b`  
+		Last Modified: Sat, 28 May 2016 01:46:36 GMT  
+		Size: 7.7 KB (7741 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:ae74ef4f0ef70af8a18778429edf061e62ccc83c9372fd117c04249f9ead2d34`  
+		Last Modified: Tue, 07 Jun 2016 20:27:40 GMT  
+		Size: 13.9 MB (13887544 bytes)
+	-	`sha256:3e7a6b359b44dd3acbc3ac9ab4be75963fe21b7157f7705dfb9a30215dfd1aea`  
+		Last Modified: Tue, 07 Jun 2016 20:27:34 GMT  
+		Size: 333.0 B
+	-	`sha256:0266882ed6fb7a4f64df1cad3d4a4acce9d280c68d78c32dd897a3ed52be6c9a`  
+		Last Modified: Tue, 07 Jun 2016 20:30:26 GMT  
+		Size: 12.5 MB (12521138 bytes)

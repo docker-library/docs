@@ -14,17 +14,17 @@
 $ docker pull rails@sha256:13acadca663b01ae38e76fbb4ab6910753e5127a50e3ebb3a903a1f5e6c65543
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `rails:4.2.6` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **318.5 MB (318525865 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:299e53ed9d2a9d07391855b2f49a823af145c1cf66bd711968b3b2ccc29d49d8`
-- Default Command: `["irb"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **318.5 MB (318525865 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:299e53ed9d2a9d07391855b2f49a823af145c1cf66bd711968b3b2ccc29d49d8`
+-	Default Command: `["irb"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -73,73 +73,73 @@ ENV RAILS_VERSION=4.2.6
 RUN gem install rails --version "$RAILS_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-    Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-    Size: 18.5 MB (18532084 bytes)
-  - `sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-    Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-    Size: 42.5 MB (42492777 bytes)
-  - `sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-    Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-    Size: 129.7 MB (129663323 bytes)
-  - `sha256:4ea23a99281b3f003d3afe242eec72f128c81d23e6c54a057d2c103a29f82a78`  
-    Last Modified: Wed, 01 Jun 2016 00:01:04 GMT  
-    Size: 203.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:19d7d9a1939738d238a06a7253e923450558e941abe332ff2a87f6b565d3e54d`  
-    Last Modified: Wed, 01 Jun 2016 00:00:46 GMT  
-    Size: 34.7 MB (34655242 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b63605252a7170cda69eec6f3edc69a0839c6c330706b99fdeab4346f529e0a6`  
-    Last Modified: Wed, 01 Jun 2016 00:00:27 GMT  
-    Size: 557.1 KB (557112 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f08c166cb151e0a74a5595864c8a3ea111aed545feb1000041be2767e43c2b5b`  
-    Last Modified: Wed, 01 Jun 2016 00:00:17 GMT  
-    Size: 161.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:843c5db20820568ac7fee1aaa5a6be7a75ff1c47ab1e4b4bacf8cbee1b67cc43`  
-    Last Modified: Wed, 01 Jun 2016 00:00:11 GMT  
-    Size: 2.9 MB (2878577 bytes)
-  - `sha256:fca42cf26a87bc6116a9067ebae3cd2b997ad73114e6841659e72922c51c0769`  
-    Last Modified: Wed, 01 Jun 2016 00:00:04 GMT  
-    Size: 13.7 MB (13744303 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:619d072d0ba1e4360c50ed0c09b272fb6c788851ad3b5e90ea1d03d7ed908bd3`  
-    Last Modified: Tue, 31 May 2016 23:59:53 GMT  
-    Size: 24.6 MB (24645397 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
+		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
+		Size: 18.5 MB (18532084 bytes)
+	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
+		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
+		Size: 42.5 MB (42492777 bytes)
+	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
+		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
+		Size: 129.7 MB (129663323 bytes)
+	-	`sha256:4ea23a99281b3f003d3afe242eec72f128c81d23e6c54a057d2c103a29f82a78`  
+		Last Modified: Wed, 01 Jun 2016 00:01:04 GMT  
+		Size: 203.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:19d7d9a1939738d238a06a7253e923450558e941abe332ff2a87f6b565d3e54d`  
+		Last Modified: Wed, 01 Jun 2016 00:00:46 GMT  
+		Size: 34.7 MB (34655242 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b63605252a7170cda69eec6f3edc69a0839c6c330706b99fdeab4346f529e0a6`  
+		Last Modified: Wed, 01 Jun 2016 00:00:27 GMT  
+		Size: 557.1 KB (557112 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f08c166cb151e0a74a5595864c8a3ea111aed545feb1000041be2767e43c2b5b`  
+		Last Modified: Wed, 01 Jun 2016 00:00:17 GMT  
+		Size: 161.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:843c5db20820568ac7fee1aaa5a6be7a75ff1c47ab1e4b4bacf8cbee1b67cc43`  
+		Last Modified: Wed, 01 Jun 2016 00:00:11 GMT  
+		Size: 2.9 MB (2878577 bytes)
+	-	`sha256:fca42cf26a87bc6116a9067ebae3cd2b997ad73114e6841659e72922c51c0769`  
+		Last Modified: Wed, 01 Jun 2016 00:00:04 GMT  
+		Size: 13.7 MB (13744303 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:619d072d0ba1e4360c50ed0c09b272fb6c788851ad3b5e90ea1d03d7ed908bd3`  
+		Last Modified: Tue, 31 May 2016 23:59:53 GMT  
+		Size: 24.6 MB (24645397 bytes)
 
 ## `rails:4.2`
 
@@ -147,17 +147,17 @@ RUN gem install rails --version "$RAILS_VERSION"
 $ docker pull rails@sha256:13acadca663b01ae38e76fbb4ab6910753e5127a50e3ebb3a903a1f5e6c65543
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `rails:4.2` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **318.5 MB (318525865 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:299e53ed9d2a9d07391855b2f49a823af145c1cf66bd711968b3b2ccc29d49d8`
-- Default Command: `["irb"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **318.5 MB (318525865 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:299e53ed9d2a9d07391855b2f49a823af145c1cf66bd711968b3b2ccc29d49d8`
+-	Default Command: `["irb"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -206,73 +206,73 @@ ENV RAILS_VERSION=4.2.6
 RUN gem install rails --version "$RAILS_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-    Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-    Size: 18.5 MB (18532084 bytes)
-  - `sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-    Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-    Size: 42.5 MB (42492777 bytes)
-  - `sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-    Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-    Size: 129.7 MB (129663323 bytes)
-  - `sha256:4ea23a99281b3f003d3afe242eec72f128c81d23e6c54a057d2c103a29f82a78`  
-    Last Modified: Wed, 01 Jun 2016 00:01:04 GMT  
-    Size: 203.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:19d7d9a1939738d238a06a7253e923450558e941abe332ff2a87f6b565d3e54d`  
-    Last Modified: Wed, 01 Jun 2016 00:00:46 GMT  
-    Size: 34.7 MB (34655242 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b63605252a7170cda69eec6f3edc69a0839c6c330706b99fdeab4346f529e0a6`  
-    Last Modified: Wed, 01 Jun 2016 00:00:27 GMT  
-    Size: 557.1 KB (557112 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f08c166cb151e0a74a5595864c8a3ea111aed545feb1000041be2767e43c2b5b`  
-    Last Modified: Wed, 01 Jun 2016 00:00:17 GMT  
-    Size: 161.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:843c5db20820568ac7fee1aaa5a6be7a75ff1c47ab1e4b4bacf8cbee1b67cc43`  
-    Last Modified: Wed, 01 Jun 2016 00:00:11 GMT  
-    Size: 2.9 MB (2878577 bytes)
-  - `sha256:fca42cf26a87bc6116a9067ebae3cd2b997ad73114e6841659e72922c51c0769`  
-    Last Modified: Wed, 01 Jun 2016 00:00:04 GMT  
-    Size: 13.7 MB (13744303 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:619d072d0ba1e4360c50ed0c09b272fb6c788851ad3b5e90ea1d03d7ed908bd3`  
-    Last Modified: Tue, 31 May 2016 23:59:53 GMT  
-    Size: 24.6 MB (24645397 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
+		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
+		Size: 18.5 MB (18532084 bytes)
+	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
+		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
+		Size: 42.5 MB (42492777 bytes)
+	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
+		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
+		Size: 129.7 MB (129663323 bytes)
+	-	`sha256:4ea23a99281b3f003d3afe242eec72f128c81d23e6c54a057d2c103a29f82a78`  
+		Last Modified: Wed, 01 Jun 2016 00:01:04 GMT  
+		Size: 203.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:19d7d9a1939738d238a06a7253e923450558e941abe332ff2a87f6b565d3e54d`  
+		Last Modified: Wed, 01 Jun 2016 00:00:46 GMT  
+		Size: 34.7 MB (34655242 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b63605252a7170cda69eec6f3edc69a0839c6c330706b99fdeab4346f529e0a6`  
+		Last Modified: Wed, 01 Jun 2016 00:00:27 GMT  
+		Size: 557.1 KB (557112 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f08c166cb151e0a74a5595864c8a3ea111aed545feb1000041be2767e43c2b5b`  
+		Last Modified: Wed, 01 Jun 2016 00:00:17 GMT  
+		Size: 161.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:843c5db20820568ac7fee1aaa5a6be7a75ff1c47ab1e4b4bacf8cbee1b67cc43`  
+		Last Modified: Wed, 01 Jun 2016 00:00:11 GMT  
+		Size: 2.9 MB (2878577 bytes)
+	-	`sha256:fca42cf26a87bc6116a9067ebae3cd2b997ad73114e6841659e72922c51c0769`  
+		Last Modified: Wed, 01 Jun 2016 00:00:04 GMT  
+		Size: 13.7 MB (13744303 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:619d072d0ba1e4360c50ed0c09b272fb6c788851ad3b5e90ea1d03d7ed908bd3`  
+		Last Modified: Tue, 31 May 2016 23:59:53 GMT  
+		Size: 24.6 MB (24645397 bytes)
 
 ## `rails:4`
 
@@ -280,17 +280,17 @@ RUN gem install rails --version "$RAILS_VERSION"
 $ docker pull rails@sha256:516f24a2b6ded835433792ab92540c950636773db9683f64ee0c0ab22af7841a
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `rails:4` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **318.5 MB (318525545 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `430dc6cc9abdc4d389ea912c603f9783a23e5c244798c596619e2c56e399be56`
-- Default Command: `["irb"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **318.5 MB (318525545 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `430dc6cc9abdc4d389ea912c603f9783a23e5c244798c596619e2c56e399be56`
+-	Default Command: `["irb"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -339,43 +339,43 @@ ENV RAILS_VERSION=4.2.6
 RUN gem install rails --version "$RAILS_VERSION"
 ```
 
-- Layers:
-  - `sha256:619d072d0ba1e4360c50ed0c09b272fb6c788851ad3b5e90ea1d03d7ed908bd3`  
-    Last Modified: Tue, 31 May 2016 23:59:53 GMT  
-    Size: 24.6 MB (24645397 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:fca42cf26a87bc6116a9067ebae3cd2b997ad73114e6841659e72922c51c0769`  
-    Last Modified: Wed, 01 Jun 2016 00:00:04 GMT  
-    Size: 13.7 MB (13744303 bytes)
-  - `sha256:843c5db20820568ac7fee1aaa5a6be7a75ff1c47ab1e4b4bacf8cbee1b67cc43`  
-    Last Modified: Wed, 01 Jun 2016 00:00:11 GMT  
-    Size: 2.9 MB (2878577 bytes)
-  - `sha256:f08c166cb151e0a74a5595864c8a3ea111aed545feb1000041be2767e43c2b5b`  
-    Last Modified: Wed, 01 Jun 2016 00:00:17 GMT  
-    Size: 161.0 B
-  - `sha256:b63605252a7170cda69eec6f3edc69a0839c6c330706b99fdeab4346f529e0a6`  
-    Last Modified: Wed, 01 Jun 2016 00:00:27 GMT  
-    Size: 557.1 KB (557112 bytes)
-  - `sha256:19d7d9a1939738d238a06a7253e923450558e941abe332ff2a87f6b565d3e54d`  
-    Last Modified: Wed, 01 Jun 2016 00:00:46 GMT  
-    Size: 34.7 MB (34655242 bytes)
-  - `sha256:4ea23a99281b3f003d3afe242eec72f128c81d23e6c54a057d2c103a29f82a78`  
-    Last Modified: Wed, 01 Jun 2016 00:01:04 GMT  
-    Size: 203.0 B
-  - `sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-    Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-    Size: 129.7 MB (129663323 bytes)
-  - `sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-    Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-    Size: 42.5 MB (42492777 bytes)
-  - `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-    Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-    Size: 18.5 MB (18532084 bytes)
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
+-	Layers:
+	-	`sha256:619d072d0ba1e4360c50ed0c09b272fb6c788851ad3b5e90ea1d03d7ed908bd3`  
+		Last Modified: Tue, 31 May 2016 23:59:53 GMT  
+		Size: 24.6 MB (24645397 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:fca42cf26a87bc6116a9067ebae3cd2b997ad73114e6841659e72922c51c0769`  
+		Last Modified: Wed, 01 Jun 2016 00:00:04 GMT  
+		Size: 13.7 MB (13744303 bytes)
+	-	`sha256:843c5db20820568ac7fee1aaa5a6be7a75ff1c47ab1e4b4bacf8cbee1b67cc43`  
+		Last Modified: Wed, 01 Jun 2016 00:00:11 GMT  
+		Size: 2.9 MB (2878577 bytes)
+	-	`sha256:f08c166cb151e0a74a5595864c8a3ea111aed545feb1000041be2767e43c2b5b`  
+		Last Modified: Wed, 01 Jun 2016 00:00:17 GMT  
+		Size: 161.0 B
+	-	`sha256:b63605252a7170cda69eec6f3edc69a0839c6c330706b99fdeab4346f529e0a6`  
+		Last Modified: Wed, 01 Jun 2016 00:00:27 GMT  
+		Size: 557.1 KB (557112 bytes)
+	-	`sha256:19d7d9a1939738d238a06a7253e923450558e941abe332ff2a87f6b565d3e54d`  
+		Last Modified: Wed, 01 Jun 2016 00:00:46 GMT  
+		Size: 34.7 MB (34655242 bytes)
+	-	`sha256:4ea23a99281b3f003d3afe242eec72f128c81d23e6c54a057d2c103a29f82a78`  
+		Last Modified: Wed, 01 Jun 2016 00:01:04 GMT  
+		Size: 203.0 B
+	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
+		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
+		Size: 129.7 MB (129663323 bytes)
+	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
+		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
+		Size: 42.5 MB (42492777 bytes)
+	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
+		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
+		Size: 18.5 MB (18532084 bytes)
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
 
 ## `rails:latest`
 
@@ -383,17 +383,17 @@ RUN gem install rails --version "$RAILS_VERSION"
 $ docker pull rails@sha256:13acadca663b01ae38e76fbb4ab6910753e5127a50e3ebb3a903a1f5e6c65543
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `rails:latest` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **318.5 MB (318525865 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:299e53ed9d2a9d07391855b2f49a823af145c1cf66bd711968b3b2ccc29d49d8`
-- Default Command: `["irb"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **318.5 MB (318525865 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:299e53ed9d2a9d07391855b2f49a823af145c1cf66bd711968b3b2ccc29d49d8`
+-	Default Command: `["irb"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -442,73 +442,73 @@ ENV RAILS_VERSION=4.2.6
 RUN gem install rails --version "$RAILS_VERSION"
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-    Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-    Size: 18.5 MB (18532084 bytes)
-  - `sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-    Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-    Size: 42.5 MB (42492777 bytes)
-  - `sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-    Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-    Size: 129.7 MB (129663323 bytes)
-  - `sha256:4ea23a99281b3f003d3afe242eec72f128c81d23e6c54a057d2c103a29f82a78`  
-    Last Modified: Wed, 01 Jun 2016 00:01:04 GMT  
-    Size: 203.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:19d7d9a1939738d238a06a7253e923450558e941abe332ff2a87f6b565d3e54d`  
-    Last Modified: Wed, 01 Jun 2016 00:00:46 GMT  
-    Size: 34.7 MB (34655242 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:b63605252a7170cda69eec6f3edc69a0839c6c330706b99fdeab4346f529e0a6`  
-    Last Modified: Wed, 01 Jun 2016 00:00:27 GMT  
-    Size: 557.1 KB (557112 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:f08c166cb151e0a74a5595864c8a3ea111aed545feb1000041be2767e43c2b5b`  
-    Last Modified: Wed, 01 Jun 2016 00:00:17 GMT  
-    Size: 161.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:843c5db20820568ac7fee1aaa5a6be7a75ff1c47ab1e4b4bacf8cbee1b67cc43`  
-    Last Modified: Wed, 01 Jun 2016 00:00:11 GMT  
-    Size: 2.9 MB (2878577 bytes)
-  - `sha256:fca42cf26a87bc6116a9067ebae3cd2b997ad73114e6841659e72922c51c0769`  
-    Last Modified: Wed, 01 Jun 2016 00:00:04 GMT  
-    Size: 13.7 MB (13744303 bytes)
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:619d072d0ba1e4360c50ed0c09b272fb6c788851ad3b5e90ea1d03d7ed908bd3`  
-    Last Modified: Tue, 31 May 2016 23:59:53 GMT  
-    Size: 24.6 MB (24645397 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
+		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
+		Size: 18.5 MB (18532084 bytes)
+	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
+		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
+		Size: 42.5 MB (42492777 bytes)
+	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
+		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
+		Size: 129.7 MB (129663323 bytes)
+	-	`sha256:4ea23a99281b3f003d3afe242eec72f128c81d23e6c54a057d2c103a29f82a78`  
+		Last Modified: Wed, 01 Jun 2016 00:01:04 GMT  
+		Size: 203.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:19d7d9a1939738d238a06a7253e923450558e941abe332ff2a87f6b565d3e54d`  
+		Last Modified: Wed, 01 Jun 2016 00:00:46 GMT  
+		Size: 34.7 MB (34655242 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:b63605252a7170cda69eec6f3edc69a0839c6c330706b99fdeab4346f529e0a6`  
+		Last Modified: Wed, 01 Jun 2016 00:00:27 GMT  
+		Size: 557.1 KB (557112 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:f08c166cb151e0a74a5595864c8a3ea111aed545feb1000041be2767e43c2b5b`  
+		Last Modified: Wed, 01 Jun 2016 00:00:17 GMT  
+		Size: 161.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:843c5db20820568ac7fee1aaa5a6be7a75ff1c47ab1e4b4bacf8cbee1b67cc43`  
+		Last Modified: Wed, 01 Jun 2016 00:00:11 GMT  
+		Size: 2.9 MB (2878577 bytes)
+	-	`sha256:fca42cf26a87bc6116a9067ebae3cd2b997ad73114e6841659e72922c51c0769`  
+		Last Modified: Wed, 01 Jun 2016 00:00:04 GMT  
+		Size: 13.7 MB (13744303 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:619d072d0ba1e4360c50ed0c09b272fb6c788851ad3b5e90ea1d03d7ed908bd3`  
+		Last Modified: Tue, 31 May 2016 23:59:53 GMT  
+		Size: 24.6 MB (24645397 bytes)
 
 ## `rails:onbuild`
 
@@ -516,17 +516,17 @@ RUN gem install rails --version "$RAILS_VERSION"
 $ docker pull rails@sha256:ff0cfe9bec3b22b72dd122d6e5516e45044960c234ee2ad4c248e97f51563db7
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `rails:onbuild` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **293.9 MB (293880527 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `016e0b1398e9a66e5b54ac3d2917c6488eb122db80288d64476815cb4673c157`
-- Default Command: `["rails","server","-b","0.0.0.0"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **293.9 MB (293880527 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `016e0b1398e9a66e5b54ac3d2917c6488eb122db80288d64476815cb4673c157`
+-	Default Command: `["rails","server","-b","0.0.0.0"]`
 
 ```dockerfile
 # Mon, 23 May 2016 22:57:20 GMT
@@ -589,43 +589,43 @@ EXPOSE 3000/tcp
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:33a4ad0966cb9d6975f14da49869e5f0fa1e9dcf135d82b54be00afa2f54011f`  
-    Last Modified: Wed, 01 Jun 2016 00:03:29 GMT  
-    Size: 13.7 MB (13744380 bytes)
-  - `sha256:5e78a34ba17c6fd397dff361458ae5990dd406dbb78e26694a03b6a292786c95`  
-    Last Modified: Wed, 01 Jun 2016 00:03:34 GMT  
-    Size: 2.9 MB (2878567 bytes)
-  - `sha256:d1a31844fb0ea2ab0e0c0d46dd905595acbe8a3f7460c3fb91ad4f3032e1d14d`  
-    Last Modified: Wed, 01 Jun 2016 00:03:49 GMT  
-    Size: 126.0 B
-  - `sha256:4169e2cc6f0bc50b7a0dd3d35eb9c26fb997c035e3ae1a3c3e830059ce658d00`  
-    Last Modified: Wed, 01 Jun 2016 00:03:51 GMT  
-    Size: 186.0 B
-  - `sha256:f08c166cb151e0a74a5595864c8a3ea111aed545feb1000041be2767e43c2b5b`  
-    Last Modified: Wed, 01 Jun 2016 00:00:17 GMT  
-    Size: 161.0 B
-  - `sha256:b63605252a7170cda69eec6f3edc69a0839c6c330706b99fdeab4346f529e0a6`  
-    Last Modified: Wed, 01 Jun 2016 00:00:27 GMT  
-    Size: 557.1 KB (557112 bytes)
-  - `sha256:19d7d9a1939738d238a06a7253e923450558e941abe332ff2a87f6b565d3e54d`  
-    Last Modified: Wed, 01 Jun 2016 00:00:46 GMT  
-    Size: 34.7 MB (34655242 bytes)
-  - `sha256:4ea23a99281b3f003d3afe242eec72f128c81d23e6c54a057d2c103a29f82a78`  
-    Last Modified: Wed, 01 Jun 2016 00:01:04 GMT  
-    Size: 203.0 B
-  - `sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-    Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-    Size: 129.7 MB (129663323 bytes)
-  - `sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-    Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-    Size: 42.5 MB (42492777 bytes)
-  - `sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-    Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-    Size: 18.5 MB (18532084 bytes)
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:33a4ad0966cb9d6975f14da49869e5f0fa1e9dcf135d82b54be00afa2f54011f`  
+		Last Modified: Wed, 01 Jun 2016 00:03:29 GMT  
+		Size: 13.7 MB (13744380 bytes)
+	-	`sha256:5e78a34ba17c6fd397dff361458ae5990dd406dbb78e26694a03b6a292786c95`  
+		Last Modified: Wed, 01 Jun 2016 00:03:34 GMT  
+		Size: 2.9 MB (2878567 bytes)
+	-	`sha256:d1a31844fb0ea2ab0e0c0d46dd905595acbe8a3f7460c3fb91ad4f3032e1d14d`  
+		Last Modified: Wed, 01 Jun 2016 00:03:49 GMT  
+		Size: 126.0 B
+	-	`sha256:4169e2cc6f0bc50b7a0dd3d35eb9c26fb997c035e3ae1a3c3e830059ce658d00`  
+		Last Modified: Wed, 01 Jun 2016 00:03:51 GMT  
+		Size: 186.0 B
+	-	`sha256:f08c166cb151e0a74a5595864c8a3ea111aed545feb1000041be2767e43c2b5b`  
+		Last Modified: Wed, 01 Jun 2016 00:00:17 GMT  
+		Size: 161.0 B
+	-	`sha256:b63605252a7170cda69eec6f3edc69a0839c6c330706b99fdeab4346f529e0a6`  
+		Last Modified: Wed, 01 Jun 2016 00:00:27 GMT  
+		Size: 557.1 KB (557112 bytes)
+	-	`sha256:19d7d9a1939738d238a06a7253e923450558e941abe332ff2a87f6b565d3e54d`  
+		Last Modified: Wed, 01 Jun 2016 00:00:46 GMT  
+		Size: 34.7 MB (34655242 bytes)
+	-	`sha256:4ea23a99281b3f003d3afe242eec72f128c81d23e6c54a057d2c103a29f82a78`  
+		Last Modified: Wed, 01 Jun 2016 00:01:04 GMT  
+		Size: 203.0 B
+	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
+		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
+		Size: 129.7 MB (129663323 bytes)
+	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
+		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
+		Size: 42.5 MB (42492777 bytes)
+	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
+		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
+		Size: 18.5 MB (18532084 bytes)
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)

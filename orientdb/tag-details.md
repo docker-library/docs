@@ -13,17 +13,17 @@
 $ docker pull orientdb@sha256:d1168f6e58d6b9a2009f6fa975f7076ca3c9d108807d6930e4ce1c3c889921a7
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `orientdb:2.0.18` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **289.9 MB (289897161 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:965e88db60bcaee0cf04983f1a3f434f6a3fb8c5c3c75eb30050421a3847637e`
-- Default Command: `["server.sh"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **289.9 MB (289897161 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:965e88db60bcaee0cf04983f1a3f434f6a3fb8c5c3c75eb30050421a3847637e`
+-	Default Command: `["server.sh"]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -78,34 +78,34 @@ EXPOSE 2480/tcp
 CMD ["server.sh"]
 ```
 
-- Layers:
-  - `sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-    Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-    Size: 51.4 MB (51352535 bytes)
-  - `sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-    Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-    Size: 18.5 MB (18547219 bytes)
-  - `sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-    Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-    Size: 42.5 MB (42525371 bytes)
-  - `sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-    Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-    Size: 622.3 KB (622260 bytes)
-  - `sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-    Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-    Size: 219.0 B
-  - `sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-    Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-    Size: 241.0 B
-  - `sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-    Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-    Size: 130.0 MB (130020091 bytes)
-  - `sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-    Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-    Size: 284.4 KB (284370 bytes)
-  - `sha256:889c466800a29eb4c4be9fcbdd0432ee96e297f1ad4023988876258a5b043a62`  
-    Last Modified: Tue, 14 Jun 2016 21:48:42 GMT  
-    Size: 46.5 MB (46544855 bytes)
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 241.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:889c466800a29eb4c4be9fcbdd0432ee96e297f1ad4023988876258a5b043a62`  
+		Last Modified: Tue, 14 Jun 2016 21:48:42 GMT  
+		Size: 46.5 MB (46544855 bytes)
 
 ## `orientdb:2.1.19`
 
@@ -113,17 +113,17 @@ CMD ["server.sh"]
 $ docker pull orientdb@sha256:c61addc3fc37d49a99f9fabc8f7d0bba339ed7a2e4e4fae1ecdb3622df9914a9
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `orientdb:2.1.19` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **82.9 MB (82939759 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:2929605d4d71cd23e375af76c188f0b7c705ea4bc18153c2e1a25b1598258cc6`
-- Default Command: `["server.sh"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **82.9 MB (82939759 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2929605d4d71cd23e375af76c188f0b7c705ea4bc18153c2e1a25b1598258cc6`
+-	Default Command: `["server.sh"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -168,22 +168,22 @@ EXPOSE 2480/tcp
 CMD ["server.sh"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:17b535817befd4b8207f3724d4f426723908a8b3f46f5162e2ee43bb4d440300`  
-    Last Modified: Thu, 09 Jun 2016 22:18:40 GMT  
-    Size: 231.0 B
-  - `sha256:7af0a4e1fa801ddec36e6a0ea010db5d68db559131a65ddefaf692921392d814`  
-    Last Modified: Thu, 09 Jun 2016 22:21:57 GMT  
-    Size: 49.3 MB (49325162 bytes)
-  - `sha256:bb5b72b75db71c895a42189555be195af77abf3ec31b4ddef8051627192c7eb7`  
-    Last Modified: Tue, 14 Jun 2016 21:48:54 GMT  
-    Size: 261.8 KB (261804 bytes)
-  - `sha256:23a57f158ee9b63953917d878f110561dd1a540d1811ea1338932872bce192ab`  
-    Last Modified: Tue, 14 Jun 2016 21:48:58 GMT  
-    Size: 31.0 MB (31042290 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:17b535817befd4b8207f3724d4f426723908a8b3f46f5162e2ee43bb4d440300`  
+		Last Modified: Thu, 09 Jun 2016 22:18:40 GMT  
+		Size: 231.0 B
+	-	`sha256:7af0a4e1fa801ddec36e6a0ea010db5d68db559131a65ddefaf692921392d814`  
+		Last Modified: Thu, 09 Jun 2016 22:21:57 GMT  
+		Size: 49.3 MB (49325162 bytes)
+	-	`sha256:bb5b72b75db71c895a42189555be195af77abf3ec31b4ddef8051627192c7eb7`  
+		Last Modified: Tue, 14 Jun 2016 21:48:54 GMT  
+		Size: 261.8 KB (261804 bytes)
+	-	`sha256:23a57f158ee9b63953917d878f110561dd1a540d1811ea1338932872bce192ab`  
+		Last Modified: Tue, 14 Jun 2016 21:48:58 GMT  
+		Size: 31.0 MB (31042290 bytes)
 
 ## `orientdb:2.2.2`
 
@@ -191,17 +191,17 @@ CMD ["server.sh"]
 $ docker pull orientdb@sha256:69b50930d8b48035119f682216efa8f25ec8a33c38f22cff567e36d55d3a11dd
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `orientdb:2.2.2` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **86.3 MB (86337711 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:b622fed4c0128c1371a7c97d39d0d18abbe67db8d0bc781d831cf2178cbba83c`
-- Default Command: `["server.sh"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **86.3 MB (86337711 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b622fed4c0128c1371a7c97d39d0d18abbe67db8d0bc781d831cf2178cbba83c`
+-	Default Command: `["server.sh"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -250,22 +250,22 @@ EXPOSE 2480/tcp
 CMD ["server.sh"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:17b535817befd4b8207f3724d4f426723908a8b3f46f5162e2ee43bb4d440300`  
-    Last Modified: Thu, 09 Jun 2016 22:18:40 GMT  
-    Size: 231.0 B
-  - `sha256:7af0a4e1fa801ddec36e6a0ea010db5d68db559131a65ddefaf692921392d814`  
-    Last Modified: Thu, 09 Jun 2016 22:21:57 GMT  
-    Size: 49.3 MB (49325162 bytes)
-  - `sha256:a055cd0523bc5289018b41817167f6752f38cd73ba29d596e146072804db4f1d`  
-    Last Modified: Tue, 14 Jun 2016 21:49:11 GMT  
-    Size: 261.8 KB (261814 bytes)
-  - `sha256:5e53a02487b58d761d937219e7cd550128f3f65d5cdf06d96e0ff0f829f13f35`  
-    Last Modified: Tue, 14 Jun 2016 21:49:14 GMT  
-    Size: 34.4 MB (34440232 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:17b535817befd4b8207f3724d4f426723908a8b3f46f5162e2ee43bb4d440300`  
+		Last Modified: Thu, 09 Jun 2016 22:18:40 GMT  
+		Size: 231.0 B
+	-	`sha256:7af0a4e1fa801ddec36e6a0ea010db5d68db559131a65ddefaf692921392d814`  
+		Last Modified: Thu, 09 Jun 2016 22:21:57 GMT  
+		Size: 49.3 MB (49325162 bytes)
+	-	`sha256:a055cd0523bc5289018b41817167f6752f38cd73ba29d596e146072804db4f1d`  
+		Last Modified: Tue, 14 Jun 2016 21:49:11 GMT  
+		Size: 261.8 KB (261814 bytes)
+	-	`sha256:5e53a02487b58d761d937219e7cd550128f3f65d5cdf06d96e0ff0f829f13f35`  
+		Last Modified: Tue, 14 Jun 2016 21:49:14 GMT  
+		Size: 34.4 MB (34440232 bytes)
 
 ## `orientdb:latest`
 
@@ -273,17 +273,17 @@ CMD ["server.sh"]
 $ docker pull orientdb@sha256:69b50930d8b48035119f682216efa8f25ec8a33c38f22cff567e36d55d3a11dd
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `orientdb:latest` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **86.3 MB (86337711 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:b622fed4c0128c1371a7c97d39d0d18abbe67db8d0bc781d831cf2178cbba83c`
-- Default Command: `["server.sh"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **86.3 MB (86337711 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b622fed4c0128c1371a7c97d39d0d18abbe67db8d0bc781d831cf2178cbba83c`
+-	Default Command: `["server.sh"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -332,19 +332,19 @@ EXPOSE 2480/tcp
 CMD ["server.sh"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:17b535817befd4b8207f3724d4f426723908a8b3f46f5162e2ee43bb4d440300`  
-    Last Modified: Thu, 09 Jun 2016 22:18:40 GMT  
-    Size: 231.0 B
-  - `sha256:7af0a4e1fa801ddec36e6a0ea010db5d68db559131a65ddefaf692921392d814`  
-    Last Modified: Thu, 09 Jun 2016 22:21:57 GMT  
-    Size: 49.3 MB (49325162 bytes)
-  - `sha256:a055cd0523bc5289018b41817167f6752f38cd73ba29d596e146072804db4f1d`  
-    Last Modified: Tue, 14 Jun 2016 21:49:11 GMT  
-    Size: 261.8 KB (261814 bytes)
-  - `sha256:5e53a02487b58d761d937219e7cd550128f3f65d5cdf06d96e0ff0f829f13f35`  
-    Last Modified: Tue, 14 Jun 2016 21:49:14 GMT  
-    Size: 34.4 MB (34440232 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:17b535817befd4b8207f3724d4f426723908a8b3f46f5162e2ee43bb4d440300`  
+		Last Modified: Thu, 09 Jun 2016 22:18:40 GMT  
+		Size: 231.0 B
+	-	`sha256:7af0a4e1fa801ddec36e6a0ea010db5d68db559131a65ddefaf692921392d814`  
+		Last Modified: Thu, 09 Jun 2016 22:21:57 GMT  
+		Size: 49.3 MB (49325162 bytes)
+	-	`sha256:a055cd0523bc5289018b41817167f6752f38cd73ba29d596e146072804db4f1d`  
+		Last Modified: Tue, 14 Jun 2016 21:49:11 GMT  
+		Size: 261.8 KB (261814 bytes)
+	-	`sha256:5e53a02487b58d761d937219e7cd550128f3f65d5cdf06d96e0ff0f829f13f35`  
+		Last Modified: Tue, 14 Jun 2016 21:49:14 GMT  
+		Size: 34.4 MB (34440232 bytes)

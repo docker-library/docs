@@ -81,17 +81,17 @@
 $ docker pull php@sha256:bff2d5e448b6060d1d4d4b584b421ef5ab743485a411a06925eee185463b894e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0.7-cli` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167814105 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167814105 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -122,22 +122,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
-    Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
-    Size: 37.4 MB (37414326 bytes)
-  - `sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
-    Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
+		Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
+		Size: 37.4 MB (37414326 bytes)
+	-	`sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
+		Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:7.0-cli`
 
@@ -145,17 +145,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:bff2d5e448b6060d1d4d4b584b421ef5ab743485a411a06925eee185463b894e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0-cli` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167814105 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167814105 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -186,22 +186,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
-    Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
-    Size: 37.4 MB (37414326 bytes)
-  - `sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
-    Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
+		Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
+		Size: 37.4 MB (37414326 bytes)
+	-	`sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
+		Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:7-cli`
 
@@ -209,17 +209,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:bff2d5e448b6060d1d4d4b584b421ef5ab743485a411a06925eee185463b894e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7-cli` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167814105 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167814105 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -250,22 +250,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
-    Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
-    Size: 37.4 MB (37414326 bytes)
-  - `sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
-    Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
+		Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
+		Size: 37.4 MB (37414326 bytes)
+	-	`sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
+		Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:cli`
 
@@ -273,17 +273,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:bff2d5e448b6060d1d4d4b584b421ef5ab743485a411a06925eee185463b894e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:cli` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167814105 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167814105 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -314,22 +314,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
-    Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
-    Size: 37.4 MB (37414326 bytes)
-  - `sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
-    Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
+		Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
+		Size: 37.4 MB (37414326 bytes)
+	-	`sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
+		Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:7.0.7`
 
@@ -337,17 +337,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:bff2d5e448b6060d1d4d4b584b421ef5ab743485a411a06925eee185463b894e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0.7` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167814105 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167814105 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -378,22 +378,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
-    Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
-    Size: 37.4 MB (37414326 bytes)
-  - `sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
-    Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
+		Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
+		Size: 37.4 MB (37414326 bytes)
+	-	`sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
+		Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:7.0`
 
@@ -401,17 +401,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:bff2d5e448b6060d1d4d4b584b421ef5ab743485a411a06925eee185463b894e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167814105 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167814105 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -442,22 +442,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
-    Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
-    Size: 37.4 MB (37414326 bytes)
-  - `sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
-    Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
+		Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
+		Size: 37.4 MB (37414326 bytes)
+	-	`sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
+		Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:7`
 
@@ -465,17 +465,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:bff2d5e448b6060d1d4d4b584b421ef5ab743485a411a06925eee185463b894e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167814105 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167814105 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -506,22 +506,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
-    Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
-    Size: 37.4 MB (37414326 bytes)
-  - `sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
-    Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
+		Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
+		Size: 37.4 MB (37414326 bytes)
+	-	`sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
+		Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:latest`
 
@@ -529,17 +529,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:bff2d5e448b6060d1d4d4b584b421ef5ab743485a411a06925eee185463b894e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:latest` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167814105 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167814105 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7575cf239a2d327beb75dd985ae2c5f5bbf73155910d9717a3ac49e52375736a`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -570,22 +570,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
-    Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
-    Size: 37.4 MB (37414326 bytes)
-  - `sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
-    Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:a42226649bd8a1ed2118f0cb59a35b3676cd912f7c8be6260bee93e1e6cd927c`  
+		Last Modified: Wed, 08 Jun 2016 22:05:05 GMT  
+		Size: 37.4 MB (37414326 bytes)
+	-	`sha256:d949d6fac6b42578d868d2e403bfb747e29d30960f034607eba88c0dc785ce3a`  
+		Last Modified: Wed, 08 Jun 2016 22:04:36 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:7.0.7-alpine`
 
@@ -593,17 +593,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:7df33f8ad156c411f1ecf4c2674634c5b38d91b81faf112d7a94718a2d167732
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0.7-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **42.9 MB (42893013 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c5f395a3800e49fa7e1f4e72c656e242d3068477d3cd8d218d270ecc2a121677`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.9 MB (42893013 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c5f395a3800e49fa7e1f4e72c656e242d3068477d3cd8d218d270ecc2a121677`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -634,25 +634,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:dd1c08dc0b3544afaf20beb3f29694c86bf116a4e7122202c67235f15ad9bb1b`  
-    Last Modified: Wed, 08 Jun 2016 22:06:07 GMT  
-    Size: 39.9 MB (39856867 bytes)
-  - `sha256:c290e92d0010e6e2f3adc6a09539d5582efd775a045ca27113e592850a1ae22d`  
-    Last Modified: Wed, 08 Jun 2016 22:05:33 GMT  
-    Size: 1.6 KB (1615 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:dd1c08dc0b3544afaf20beb3f29694c86bf116a4e7122202c67235f15ad9bb1b`  
+		Last Modified: Wed, 08 Jun 2016 22:06:07 GMT  
+		Size: 39.9 MB (39856867 bytes)
+	-	`sha256:c290e92d0010e6e2f3adc6a09539d5582efd775a045ca27113e592850a1ae22d`  
+		Last Modified: Wed, 08 Jun 2016 22:05:33 GMT  
+		Size: 1.6 KB (1615 bytes)
 
 ## `php:7.0-alpine`
 
@@ -660,17 +660,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:7df33f8ad156c411f1ecf4c2674634c5b38d91b81faf112d7a94718a2d167732
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **42.9 MB (42893013 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c5f395a3800e49fa7e1f4e72c656e242d3068477d3cd8d218d270ecc2a121677`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.9 MB (42893013 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c5f395a3800e49fa7e1f4e72c656e242d3068477d3cd8d218d270ecc2a121677`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -701,25 +701,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:dd1c08dc0b3544afaf20beb3f29694c86bf116a4e7122202c67235f15ad9bb1b`  
-    Last Modified: Wed, 08 Jun 2016 22:06:07 GMT  
-    Size: 39.9 MB (39856867 bytes)
-  - `sha256:c290e92d0010e6e2f3adc6a09539d5582efd775a045ca27113e592850a1ae22d`  
-    Last Modified: Wed, 08 Jun 2016 22:05:33 GMT  
-    Size: 1.6 KB (1615 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:dd1c08dc0b3544afaf20beb3f29694c86bf116a4e7122202c67235f15ad9bb1b`  
+		Last Modified: Wed, 08 Jun 2016 22:06:07 GMT  
+		Size: 39.9 MB (39856867 bytes)
+	-	`sha256:c290e92d0010e6e2f3adc6a09539d5582efd775a045ca27113e592850a1ae22d`  
+		Last Modified: Wed, 08 Jun 2016 22:05:33 GMT  
+		Size: 1.6 KB (1615 bytes)
 
 ## `php:7-alpine`
 
@@ -727,17 +727,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:7df33f8ad156c411f1ecf4c2674634c5b38d91b81faf112d7a94718a2d167732
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **42.9 MB (42893013 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c5f395a3800e49fa7e1f4e72c656e242d3068477d3cd8d218d270ecc2a121677`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.9 MB (42893013 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c5f395a3800e49fa7e1f4e72c656e242d3068477d3cd8d218d270ecc2a121677`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -768,25 +768,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:dd1c08dc0b3544afaf20beb3f29694c86bf116a4e7122202c67235f15ad9bb1b`  
-    Last Modified: Wed, 08 Jun 2016 22:06:07 GMT  
-    Size: 39.9 MB (39856867 bytes)
-  - `sha256:c290e92d0010e6e2f3adc6a09539d5582efd775a045ca27113e592850a1ae22d`  
-    Last Modified: Wed, 08 Jun 2016 22:05:33 GMT  
-    Size: 1.6 KB (1615 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:dd1c08dc0b3544afaf20beb3f29694c86bf116a4e7122202c67235f15ad9bb1b`  
+		Last Modified: Wed, 08 Jun 2016 22:06:07 GMT  
+		Size: 39.9 MB (39856867 bytes)
+	-	`sha256:c290e92d0010e6e2f3adc6a09539d5582efd775a045ca27113e592850a1ae22d`  
+		Last Modified: Wed, 08 Jun 2016 22:05:33 GMT  
+		Size: 1.6 KB (1615 bytes)
 
 ## `php:alpine`
 
@@ -794,17 +794,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:7df33f8ad156c411f1ecf4c2674634c5b38d91b81faf112d7a94718a2d167732
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **42.9 MB (42893013 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c5f395a3800e49fa7e1f4e72c656e242d3068477d3cd8d218d270ecc2a121677`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.9 MB (42893013 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c5f395a3800e49fa7e1f4e72c656e242d3068477d3cd8d218d270ecc2a121677`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -835,25 +835,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:dd1c08dc0b3544afaf20beb3f29694c86bf116a4e7122202c67235f15ad9bb1b`  
-    Last Modified: Wed, 08 Jun 2016 22:06:07 GMT  
-    Size: 39.9 MB (39856867 bytes)
-  - `sha256:c290e92d0010e6e2f3adc6a09539d5582efd775a045ca27113e592850a1ae22d`  
-    Last Modified: Wed, 08 Jun 2016 22:05:33 GMT  
-    Size: 1.6 KB (1615 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:dd1c08dc0b3544afaf20beb3f29694c86bf116a4e7122202c67235f15ad9bb1b`  
+		Last Modified: Wed, 08 Jun 2016 22:06:07 GMT  
+		Size: 39.9 MB (39856867 bytes)
+	-	`sha256:c290e92d0010e6e2f3adc6a09539d5582efd775a045ca27113e592850a1ae22d`  
+		Last Modified: Wed, 08 Jun 2016 22:05:33 GMT  
+		Size: 1.6 KB (1615 bytes)
 
 ## `php:7.0.7-apache`
 
@@ -861,17 +861,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:f05fa24563be62cd63a0a034d20318fa0822764495578bc305c328c024627fa1
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0.7-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **181.1 MB (181075294 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:32dca05b21b4723a7c07025a9b2e3aeac4f75cf6bb4a0d62a3a5683219551a5d`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **181.1 MB (181075294 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:32dca05b21b4723a7c07025a9b2e3aeac4f75cf6bb4a0d62a3a5683219551a5d`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -922,40 +922,40 @@ EXPOSE 80/tcp
 CMD ["apache2-foreground"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
-    Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
-    Size: 2.9 MB (2864924 bytes)
-  - `sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 321.0 B
-  - `sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 426.0 B
-  - `sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
-    Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
-    Size: 3.4 KB (3365 bytes)
-  - `sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
-    Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
-    Size: 862.0 B
-  - `sha256:8e74b972bb26669fe5c4b0d87cea1a6b51fdafbd99d82e7512d6dab109ddeb98`  
-    Last Modified: Wed, 08 Jun 2016 22:07:01 GMT  
-    Size: 47.8 MB (47805327 bytes)
-  - `sha256:206d078f47355ed145edce8e3926ad7918b7c944b3285fb18f6be5e323596eaf`  
-    Last Modified: Wed, 08 Jun 2016 22:06:26 GMT  
-    Size: 1.6 KB (1621 bytes)
-  - `sha256:e5c9000e30ca26d828bdb6d86a6628b95d5a748333b2e4d57f997fe073cf82ca`  
-    Last Modified: Wed, 08 Jun 2016 22:06:27 GMT  
-    Size: 290.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
+		Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
+		Size: 2.9 MB (2864924 bytes)
+	-	`sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 321.0 B
+	-	`sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 426.0 B
+	-	`sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
+		Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
+		Size: 3.4 KB (3365 bytes)
+	-	`sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
+		Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
+		Size: 862.0 B
+	-	`sha256:8e74b972bb26669fe5c4b0d87cea1a6b51fdafbd99d82e7512d6dab109ddeb98`  
+		Last Modified: Wed, 08 Jun 2016 22:07:01 GMT  
+		Size: 47.8 MB (47805327 bytes)
+	-	`sha256:206d078f47355ed145edce8e3926ad7918b7c944b3285fb18f6be5e323596eaf`  
+		Last Modified: Wed, 08 Jun 2016 22:06:26 GMT  
+		Size: 1.6 KB (1621 bytes)
+	-	`sha256:e5c9000e30ca26d828bdb6d86a6628b95d5a748333b2e4d57f997fe073cf82ca`  
+		Last Modified: Wed, 08 Jun 2016 22:06:27 GMT  
+		Size: 290.0 B
 
 ## `php:7.0-apache`
 
@@ -963,17 +963,17 @@ CMD ["apache2-foreground"]
 $ docker pull php@sha256:f05fa24563be62cd63a0a034d20318fa0822764495578bc305c328c024627fa1
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **181.1 MB (181075294 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:32dca05b21b4723a7c07025a9b2e3aeac4f75cf6bb4a0d62a3a5683219551a5d`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **181.1 MB (181075294 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:32dca05b21b4723a7c07025a9b2e3aeac4f75cf6bb4a0d62a3a5683219551a5d`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -1024,40 +1024,40 @@ EXPOSE 80/tcp
 CMD ["apache2-foreground"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
-    Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
-    Size: 2.9 MB (2864924 bytes)
-  - `sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 321.0 B
-  - `sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 426.0 B
-  - `sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
-    Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
-    Size: 3.4 KB (3365 bytes)
-  - `sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
-    Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
-    Size: 862.0 B
-  - `sha256:8e74b972bb26669fe5c4b0d87cea1a6b51fdafbd99d82e7512d6dab109ddeb98`  
-    Last Modified: Wed, 08 Jun 2016 22:07:01 GMT  
-    Size: 47.8 MB (47805327 bytes)
-  - `sha256:206d078f47355ed145edce8e3926ad7918b7c944b3285fb18f6be5e323596eaf`  
-    Last Modified: Wed, 08 Jun 2016 22:06:26 GMT  
-    Size: 1.6 KB (1621 bytes)
-  - `sha256:e5c9000e30ca26d828bdb6d86a6628b95d5a748333b2e4d57f997fe073cf82ca`  
-    Last Modified: Wed, 08 Jun 2016 22:06:27 GMT  
-    Size: 290.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
+		Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
+		Size: 2.9 MB (2864924 bytes)
+	-	`sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 321.0 B
+	-	`sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 426.0 B
+	-	`sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
+		Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
+		Size: 3.4 KB (3365 bytes)
+	-	`sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
+		Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
+		Size: 862.0 B
+	-	`sha256:8e74b972bb26669fe5c4b0d87cea1a6b51fdafbd99d82e7512d6dab109ddeb98`  
+		Last Modified: Wed, 08 Jun 2016 22:07:01 GMT  
+		Size: 47.8 MB (47805327 bytes)
+	-	`sha256:206d078f47355ed145edce8e3926ad7918b7c944b3285fb18f6be5e323596eaf`  
+		Last Modified: Wed, 08 Jun 2016 22:06:26 GMT  
+		Size: 1.6 KB (1621 bytes)
+	-	`sha256:e5c9000e30ca26d828bdb6d86a6628b95d5a748333b2e4d57f997fe073cf82ca`  
+		Last Modified: Wed, 08 Jun 2016 22:06:27 GMT  
+		Size: 290.0 B
 
 ## `php:7-apache`
 
@@ -1065,17 +1065,17 @@ CMD ["apache2-foreground"]
 $ docker pull php@sha256:f05fa24563be62cd63a0a034d20318fa0822764495578bc305c328c024627fa1
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **181.1 MB (181075294 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:32dca05b21b4723a7c07025a9b2e3aeac4f75cf6bb4a0d62a3a5683219551a5d`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **181.1 MB (181075294 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:32dca05b21b4723a7c07025a9b2e3aeac4f75cf6bb4a0d62a3a5683219551a5d`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -1126,40 +1126,40 @@ EXPOSE 80/tcp
 CMD ["apache2-foreground"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
-    Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
-    Size: 2.9 MB (2864924 bytes)
-  - `sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 321.0 B
-  - `sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 426.0 B
-  - `sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
-    Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
-    Size: 3.4 KB (3365 bytes)
-  - `sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
-    Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
-    Size: 862.0 B
-  - `sha256:8e74b972bb26669fe5c4b0d87cea1a6b51fdafbd99d82e7512d6dab109ddeb98`  
-    Last Modified: Wed, 08 Jun 2016 22:07:01 GMT  
-    Size: 47.8 MB (47805327 bytes)
-  - `sha256:206d078f47355ed145edce8e3926ad7918b7c944b3285fb18f6be5e323596eaf`  
-    Last Modified: Wed, 08 Jun 2016 22:06:26 GMT  
-    Size: 1.6 KB (1621 bytes)
-  - `sha256:e5c9000e30ca26d828bdb6d86a6628b95d5a748333b2e4d57f997fe073cf82ca`  
-    Last Modified: Wed, 08 Jun 2016 22:06:27 GMT  
-    Size: 290.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
+		Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
+		Size: 2.9 MB (2864924 bytes)
+	-	`sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 321.0 B
+	-	`sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 426.0 B
+	-	`sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
+		Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
+		Size: 3.4 KB (3365 bytes)
+	-	`sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
+		Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
+		Size: 862.0 B
+	-	`sha256:8e74b972bb26669fe5c4b0d87cea1a6b51fdafbd99d82e7512d6dab109ddeb98`  
+		Last Modified: Wed, 08 Jun 2016 22:07:01 GMT  
+		Size: 47.8 MB (47805327 bytes)
+	-	`sha256:206d078f47355ed145edce8e3926ad7918b7c944b3285fb18f6be5e323596eaf`  
+		Last Modified: Wed, 08 Jun 2016 22:06:26 GMT  
+		Size: 1.6 KB (1621 bytes)
+	-	`sha256:e5c9000e30ca26d828bdb6d86a6628b95d5a748333b2e4d57f997fe073cf82ca`  
+		Last Modified: Wed, 08 Jun 2016 22:06:27 GMT  
+		Size: 290.0 B
 
 ## `php:apache`
 
@@ -1167,17 +1167,17 @@ CMD ["apache2-foreground"]
 $ docker pull php@sha256:f05fa24563be62cd63a0a034d20318fa0822764495578bc305c328c024627fa1
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **181.1 MB (181075294 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:32dca05b21b4723a7c07025a9b2e3aeac4f75cf6bb4a0d62a3a5683219551a5d`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **181.1 MB (181075294 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:32dca05b21b4723a7c07025a9b2e3aeac4f75cf6bb4a0d62a3a5683219551a5d`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -1228,40 +1228,40 @@ EXPOSE 80/tcp
 CMD ["apache2-foreground"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
-    Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
-    Size: 2.9 MB (2864924 bytes)
-  - `sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 321.0 B
-  - `sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 426.0 B
-  - `sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
-    Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
-    Size: 3.4 KB (3365 bytes)
-  - `sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
-    Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
-    Size: 862.0 B
-  - `sha256:8e74b972bb26669fe5c4b0d87cea1a6b51fdafbd99d82e7512d6dab109ddeb98`  
-    Last Modified: Wed, 08 Jun 2016 22:07:01 GMT  
-    Size: 47.8 MB (47805327 bytes)
-  - `sha256:206d078f47355ed145edce8e3926ad7918b7c944b3285fb18f6be5e323596eaf`  
-    Last Modified: Wed, 08 Jun 2016 22:06:26 GMT  
-    Size: 1.6 KB (1621 bytes)
-  - `sha256:e5c9000e30ca26d828bdb6d86a6628b95d5a748333b2e4d57f997fe073cf82ca`  
-    Last Modified: Wed, 08 Jun 2016 22:06:27 GMT  
-    Size: 290.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
+		Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
+		Size: 2.9 MB (2864924 bytes)
+	-	`sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 321.0 B
+	-	`sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 426.0 B
+	-	`sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
+		Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
+		Size: 3.4 KB (3365 bytes)
+	-	`sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
+		Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
+		Size: 862.0 B
+	-	`sha256:8e74b972bb26669fe5c4b0d87cea1a6b51fdafbd99d82e7512d6dab109ddeb98`  
+		Last Modified: Wed, 08 Jun 2016 22:07:01 GMT  
+		Size: 47.8 MB (47805327 bytes)
+	-	`sha256:206d078f47355ed145edce8e3926ad7918b7c944b3285fb18f6be5e323596eaf`  
+		Last Modified: Wed, 08 Jun 2016 22:06:26 GMT  
+		Size: 1.6 KB (1621 bytes)
+	-	`sha256:e5c9000e30ca26d828bdb6d86a6628b95d5a748333b2e4d57f997fe073cf82ca`  
+		Last Modified: Wed, 08 Jun 2016 22:06:27 GMT  
+		Size: 290.0 B
 
 ## `php:7.0.7-fpm`
 
@@ -1269,17 +1269,17 @@ CMD ["apache2-foreground"]
 $ docker pull php@sha256:1753ac75ceb3dbfa5e97bd78e59a1fba18d428eaab364d735cab14afba97c661
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0.7-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **171.3 MB (171275088 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:cb4faea803585cf0cea9beae41f2a510eb48cc5155d63afb60e54c59a674e6c7`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **171.3 MB (171275088 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cb4faea803585cf0cea9beae41f2a510eb48cc5155d63afb60e54c59a674e6c7`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -1318,28 +1318,28 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:26a2bf640108781ff34d9e8d0cc7523064df6ed126817409ba0863f4d925c2d8`  
-    Last Modified: Wed, 08 Jun 2016 22:07:52 GMT  
-    Size: 40.9 MB (40867491 bytes)
-  - `sha256:2da1c0b1740e20b76962249e26d910af1c308c72a36f42c67f6cd2d5cb88a087`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 1.6 KB (1621 bytes)
-  - `sha256:0cad5d366b465b714284d760f074c025406a0eba8aa4f03fc27688a0e1ef6901`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 128.0 B
-  - `sha256:3a0a6b032cddb9563704546ce7dbac6ba1ff84793c6ee08bbb54355310ee4ee6`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 7.7 KB (7690 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:26a2bf640108781ff34d9e8d0cc7523064df6ed126817409ba0863f4d925c2d8`  
+		Last Modified: Wed, 08 Jun 2016 22:07:52 GMT  
+		Size: 40.9 MB (40867491 bytes)
+	-	`sha256:2da1c0b1740e20b76962249e26d910af1c308c72a36f42c67f6cd2d5cb88a087`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 1.6 KB (1621 bytes)
+	-	`sha256:0cad5d366b465b714284d760f074c025406a0eba8aa4f03fc27688a0e1ef6901`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 128.0 B
+	-	`sha256:3a0a6b032cddb9563704546ce7dbac6ba1ff84793c6ee08bbb54355310ee4ee6`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 7.7 KB (7690 bytes)
 
 ## `php:7.0-fpm`
 
@@ -1347,17 +1347,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:1753ac75ceb3dbfa5e97bd78e59a1fba18d428eaab364d735cab14afba97c661
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **171.3 MB (171275088 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:cb4faea803585cf0cea9beae41f2a510eb48cc5155d63afb60e54c59a674e6c7`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **171.3 MB (171275088 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cb4faea803585cf0cea9beae41f2a510eb48cc5155d63afb60e54c59a674e6c7`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -1396,28 +1396,28 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:26a2bf640108781ff34d9e8d0cc7523064df6ed126817409ba0863f4d925c2d8`  
-    Last Modified: Wed, 08 Jun 2016 22:07:52 GMT  
-    Size: 40.9 MB (40867491 bytes)
-  - `sha256:2da1c0b1740e20b76962249e26d910af1c308c72a36f42c67f6cd2d5cb88a087`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 1.6 KB (1621 bytes)
-  - `sha256:0cad5d366b465b714284d760f074c025406a0eba8aa4f03fc27688a0e1ef6901`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 128.0 B
-  - `sha256:3a0a6b032cddb9563704546ce7dbac6ba1ff84793c6ee08bbb54355310ee4ee6`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 7.7 KB (7690 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:26a2bf640108781ff34d9e8d0cc7523064df6ed126817409ba0863f4d925c2d8`  
+		Last Modified: Wed, 08 Jun 2016 22:07:52 GMT  
+		Size: 40.9 MB (40867491 bytes)
+	-	`sha256:2da1c0b1740e20b76962249e26d910af1c308c72a36f42c67f6cd2d5cb88a087`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 1.6 KB (1621 bytes)
+	-	`sha256:0cad5d366b465b714284d760f074c025406a0eba8aa4f03fc27688a0e1ef6901`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 128.0 B
+	-	`sha256:3a0a6b032cddb9563704546ce7dbac6ba1ff84793c6ee08bbb54355310ee4ee6`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 7.7 KB (7690 bytes)
 
 ## `php:7-fpm`
 
@@ -1425,17 +1425,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:1753ac75ceb3dbfa5e97bd78e59a1fba18d428eaab364d735cab14afba97c661
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **171.3 MB (171275088 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:cb4faea803585cf0cea9beae41f2a510eb48cc5155d63afb60e54c59a674e6c7`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **171.3 MB (171275088 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cb4faea803585cf0cea9beae41f2a510eb48cc5155d63afb60e54c59a674e6c7`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -1474,28 +1474,28 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:26a2bf640108781ff34d9e8d0cc7523064df6ed126817409ba0863f4d925c2d8`  
-    Last Modified: Wed, 08 Jun 2016 22:07:52 GMT  
-    Size: 40.9 MB (40867491 bytes)
-  - `sha256:2da1c0b1740e20b76962249e26d910af1c308c72a36f42c67f6cd2d5cb88a087`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 1.6 KB (1621 bytes)
-  - `sha256:0cad5d366b465b714284d760f074c025406a0eba8aa4f03fc27688a0e1ef6901`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 128.0 B
-  - `sha256:3a0a6b032cddb9563704546ce7dbac6ba1ff84793c6ee08bbb54355310ee4ee6`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 7.7 KB (7690 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:26a2bf640108781ff34d9e8d0cc7523064df6ed126817409ba0863f4d925c2d8`  
+		Last Modified: Wed, 08 Jun 2016 22:07:52 GMT  
+		Size: 40.9 MB (40867491 bytes)
+	-	`sha256:2da1c0b1740e20b76962249e26d910af1c308c72a36f42c67f6cd2d5cb88a087`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 1.6 KB (1621 bytes)
+	-	`sha256:0cad5d366b465b714284d760f074c025406a0eba8aa4f03fc27688a0e1ef6901`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 128.0 B
+	-	`sha256:3a0a6b032cddb9563704546ce7dbac6ba1ff84793c6ee08bbb54355310ee4ee6`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 7.7 KB (7690 bytes)
 
 ## `php:fpm`
 
@@ -1503,17 +1503,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:1753ac75ceb3dbfa5e97bd78e59a1fba18d428eaab364d735cab14afba97c661
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **171.3 MB (171275088 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:cb4faea803585cf0cea9beae41f2a510eb48cc5155d63afb60e54c59a674e6c7`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **171.3 MB (171275088 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cb4faea803585cf0cea9beae41f2a510eb48cc5155d63afb60e54c59a674e6c7`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -1552,28 +1552,28 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:26a2bf640108781ff34d9e8d0cc7523064df6ed126817409ba0863f4d925c2d8`  
-    Last Modified: Wed, 08 Jun 2016 22:07:52 GMT  
-    Size: 40.9 MB (40867491 bytes)
-  - `sha256:2da1c0b1740e20b76962249e26d910af1c308c72a36f42c67f6cd2d5cb88a087`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 1.6 KB (1621 bytes)
-  - `sha256:0cad5d366b465b714284d760f074c025406a0eba8aa4f03fc27688a0e1ef6901`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 128.0 B
-  - `sha256:3a0a6b032cddb9563704546ce7dbac6ba1ff84793c6ee08bbb54355310ee4ee6`  
-    Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
-    Size: 7.7 KB (7690 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:26a2bf640108781ff34d9e8d0cc7523064df6ed126817409ba0863f4d925c2d8`  
+		Last Modified: Wed, 08 Jun 2016 22:07:52 GMT  
+		Size: 40.9 MB (40867491 bytes)
+	-	`sha256:2da1c0b1740e20b76962249e26d910af1c308c72a36f42c67f6cd2d5cb88a087`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 1.6 KB (1621 bytes)
+	-	`sha256:0cad5d366b465b714284d760f074c025406a0eba8aa4f03fc27688a0e1ef6901`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 128.0 B
+	-	`sha256:3a0a6b032cddb9563704546ce7dbac6ba1ff84793c6ee08bbb54355310ee4ee6`  
+		Last Modified: Wed, 08 Jun 2016 22:07:21 GMT  
+		Size: 7.7 KB (7690 bytes)
 
 ## `php:7.0.7-fpm-alpine`
 
@@ -1581,17 +1581,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:4749dd86e1257d440cdb2decbd2b60fddba8ea5a0e86b6b1b2d04361652fddeb
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0.7-fpm-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **46.5 MB (46527921 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:5ec764ef6cc11d9440029d721d1bc8c5d115b276206ef439afbfc9fca3297fbb`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **46.5 MB (46527921 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5ec764ef6cc11d9440029d721d1bc8c5d115b276206ef439afbfc9fca3297fbb`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -1630,31 +1630,31 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:4bbb183642cccd8c96745470fd747676ba842ffdbfcb266ea7f0ad27df209dc8`  
-    Last Modified: Wed, 08 Jun 2016 22:08:45 GMT  
-    Size: 43.5 MB (43483972 bytes)
-  - `sha256:b4f8e0811ff08ca7db38a4346b257902837776b210a1bdb60df7c40f19999f7a`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 1.6 KB (1615 bytes)
-  - `sha256:9fa76b5a93c737725f0a807b67c8f3578f4b1c853b59f365509b8ba1da77015c`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 127.0 B
-  - `sha256:c54ef9f55aa3b9a25363ff1c880cbc1401f77d012de4a7b4d1d3496b63ed2c05`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 7.7 KB (7676 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:4bbb183642cccd8c96745470fd747676ba842ffdbfcb266ea7f0ad27df209dc8`  
+		Last Modified: Wed, 08 Jun 2016 22:08:45 GMT  
+		Size: 43.5 MB (43483972 bytes)
+	-	`sha256:b4f8e0811ff08ca7db38a4346b257902837776b210a1bdb60df7c40f19999f7a`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 1.6 KB (1615 bytes)
+	-	`sha256:9fa76b5a93c737725f0a807b67c8f3578f4b1c853b59f365509b8ba1da77015c`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 127.0 B
+	-	`sha256:c54ef9f55aa3b9a25363ff1c880cbc1401f77d012de4a7b4d1d3496b63ed2c05`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 7.7 KB (7676 bytes)
 
 ## `php:7.0-fpm-alpine`
 
@@ -1662,17 +1662,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:4749dd86e1257d440cdb2decbd2b60fddba8ea5a0e86b6b1b2d04361652fddeb
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0-fpm-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **46.5 MB (46527921 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:5ec764ef6cc11d9440029d721d1bc8c5d115b276206ef439afbfc9fca3297fbb`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **46.5 MB (46527921 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5ec764ef6cc11d9440029d721d1bc8c5d115b276206ef439afbfc9fca3297fbb`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -1711,31 +1711,31 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:4bbb183642cccd8c96745470fd747676ba842ffdbfcb266ea7f0ad27df209dc8`  
-    Last Modified: Wed, 08 Jun 2016 22:08:45 GMT  
-    Size: 43.5 MB (43483972 bytes)
-  - `sha256:b4f8e0811ff08ca7db38a4346b257902837776b210a1bdb60df7c40f19999f7a`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 1.6 KB (1615 bytes)
-  - `sha256:9fa76b5a93c737725f0a807b67c8f3578f4b1c853b59f365509b8ba1da77015c`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 127.0 B
-  - `sha256:c54ef9f55aa3b9a25363ff1c880cbc1401f77d012de4a7b4d1d3496b63ed2c05`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 7.7 KB (7676 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:4bbb183642cccd8c96745470fd747676ba842ffdbfcb266ea7f0ad27df209dc8`  
+		Last Modified: Wed, 08 Jun 2016 22:08:45 GMT  
+		Size: 43.5 MB (43483972 bytes)
+	-	`sha256:b4f8e0811ff08ca7db38a4346b257902837776b210a1bdb60df7c40f19999f7a`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 1.6 KB (1615 bytes)
+	-	`sha256:9fa76b5a93c737725f0a807b67c8f3578f4b1c853b59f365509b8ba1da77015c`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 127.0 B
+	-	`sha256:c54ef9f55aa3b9a25363ff1c880cbc1401f77d012de4a7b4d1d3496b63ed2c05`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 7.7 KB (7676 bytes)
 
 ## `php:7-fpm-alpine`
 
@@ -1743,17 +1743,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:4749dd86e1257d440cdb2decbd2b60fddba8ea5a0e86b6b1b2d04361652fddeb
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7-fpm-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **46.5 MB (46527921 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:5ec764ef6cc11d9440029d721d1bc8c5d115b276206ef439afbfc9fca3297fbb`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **46.5 MB (46527921 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5ec764ef6cc11d9440029d721d1bc8c5d115b276206ef439afbfc9fca3297fbb`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -1792,31 +1792,31 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:4bbb183642cccd8c96745470fd747676ba842ffdbfcb266ea7f0ad27df209dc8`  
-    Last Modified: Wed, 08 Jun 2016 22:08:45 GMT  
-    Size: 43.5 MB (43483972 bytes)
-  - `sha256:b4f8e0811ff08ca7db38a4346b257902837776b210a1bdb60df7c40f19999f7a`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 1.6 KB (1615 bytes)
-  - `sha256:9fa76b5a93c737725f0a807b67c8f3578f4b1c853b59f365509b8ba1da77015c`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 127.0 B
-  - `sha256:c54ef9f55aa3b9a25363ff1c880cbc1401f77d012de4a7b4d1d3496b63ed2c05`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 7.7 KB (7676 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:4bbb183642cccd8c96745470fd747676ba842ffdbfcb266ea7f0ad27df209dc8`  
+		Last Modified: Wed, 08 Jun 2016 22:08:45 GMT  
+		Size: 43.5 MB (43483972 bytes)
+	-	`sha256:b4f8e0811ff08ca7db38a4346b257902837776b210a1bdb60df7c40f19999f7a`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 1.6 KB (1615 bytes)
+	-	`sha256:9fa76b5a93c737725f0a807b67c8f3578f4b1c853b59f365509b8ba1da77015c`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 127.0 B
+	-	`sha256:c54ef9f55aa3b9a25363ff1c880cbc1401f77d012de4a7b4d1d3496b63ed2c05`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 7.7 KB (7676 bytes)
 
 ## `php:fpm-alpine`
 
@@ -1824,17 +1824,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:4749dd86e1257d440cdb2decbd2b60fddba8ea5a0e86b6b1b2d04361652fddeb
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:fpm-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **46.5 MB (46527921 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:5ec764ef6cc11d9440029d721d1bc8c5d115b276206ef439afbfc9fca3297fbb`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **46.5 MB (46527921 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5ec764ef6cc11d9440029d721d1bc8c5d115b276206ef439afbfc9fca3297fbb`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -1873,31 +1873,31 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:4bbb183642cccd8c96745470fd747676ba842ffdbfcb266ea7f0ad27df209dc8`  
-    Last Modified: Wed, 08 Jun 2016 22:08:45 GMT  
-    Size: 43.5 MB (43483972 bytes)
-  - `sha256:b4f8e0811ff08ca7db38a4346b257902837776b210a1bdb60df7c40f19999f7a`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 1.6 KB (1615 bytes)
-  - `sha256:9fa76b5a93c737725f0a807b67c8f3578f4b1c853b59f365509b8ba1da77015c`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 127.0 B
-  - `sha256:c54ef9f55aa3b9a25363ff1c880cbc1401f77d012de4a7b4d1d3496b63ed2c05`  
-    Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
-    Size: 7.7 KB (7676 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:4bbb183642cccd8c96745470fd747676ba842ffdbfcb266ea7f0ad27df209dc8`  
+		Last Modified: Wed, 08 Jun 2016 22:08:45 GMT  
+		Size: 43.5 MB (43483972 bytes)
+	-	`sha256:b4f8e0811ff08ca7db38a4346b257902837776b210a1bdb60df7c40f19999f7a`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 1.6 KB (1615 bytes)
+	-	`sha256:9fa76b5a93c737725f0a807b67c8f3578f4b1c853b59f365509b8ba1da77015c`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 127.0 B
+	-	`sha256:c54ef9f55aa3b9a25363ff1c880cbc1401f77d012de4a7b4d1d3496b63ed2c05`  
+		Last Modified: Wed, 08 Jun 2016 22:08:14 GMT  
+		Size: 7.7 KB (7676 bytes)
 
 ## `php:7.0.7-zts`
 
@@ -1905,17 +1905,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:0153561836d2402dc275d2e0934581813594e82857c97f3f96dc8d0a0ac2b8e1
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0.7-zts` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167849217 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:73c945a1a6355440796820885f445cd9018bf56a181c2ce0ea82589fd83037e6`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167849217 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:73c945a1a6355440796820885f445cd9018bf56a181c2ce0ea82589fd83037e6`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -1948,22 +1948,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:b0fd3856723032c4dac27193fb1fec34a140ada60d388f46e98b988ced3d3d29`  
-    Last Modified: Wed, 08 Jun 2016 22:09:29 GMT  
-    Size: 37.4 MB (37449438 bytes)
-  - `sha256:9eb136441042532fcc3c0ccae69085d41747fb2b5ecb88fe343b374229a7e1d2`  
-    Last Modified: Wed, 08 Jun 2016 22:09:03 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:b0fd3856723032c4dac27193fb1fec34a140ada60d388f46e98b988ced3d3d29`  
+		Last Modified: Wed, 08 Jun 2016 22:09:29 GMT  
+		Size: 37.4 MB (37449438 bytes)
+	-	`sha256:9eb136441042532fcc3c0ccae69085d41747fb2b5ecb88fe343b374229a7e1d2`  
+		Last Modified: Wed, 08 Jun 2016 22:09:03 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:7.0-zts`
 
@@ -1971,17 +1971,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:0153561836d2402dc275d2e0934581813594e82857c97f3f96dc8d0a0ac2b8e1
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0-zts` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167849217 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:73c945a1a6355440796820885f445cd9018bf56a181c2ce0ea82589fd83037e6`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167849217 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:73c945a1a6355440796820885f445cd9018bf56a181c2ce0ea82589fd83037e6`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -2014,22 +2014,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:b0fd3856723032c4dac27193fb1fec34a140ada60d388f46e98b988ced3d3d29`  
-    Last Modified: Wed, 08 Jun 2016 22:09:29 GMT  
-    Size: 37.4 MB (37449438 bytes)
-  - `sha256:9eb136441042532fcc3c0ccae69085d41747fb2b5ecb88fe343b374229a7e1d2`  
-    Last Modified: Wed, 08 Jun 2016 22:09:03 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:b0fd3856723032c4dac27193fb1fec34a140ada60d388f46e98b988ced3d3d29`  
+		Last Modified: Wed, 08 Jun 2016 22:09:29 GMT  
+		Size: 37.4 MB (37449438 bytes)
+	-	`sha256:9eb136441042532fcc3c0ccae69085d41747fb2b5ecb88fe343b374229a7e1d2`  
+		Last Modified: Wed, 08 Jun 2016 22:09:03 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:7-zts`
 
@@ -2037,17 +2037,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:0153561836d2402dc275d2e0934581813594e82857c97f3f96dc8d0a0ac2b8e1
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7-zts` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167849217 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:73c945a1a6355440796820885f445cd9018bf56a181c2ce0ea82589fd83037e6`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167849217 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:73c945a1a6355440796820885f445cd9018bf56a181c2ce0ea82589fd83037e6`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -2080,22 +2080,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:b0fd3856723032c4dac27193fb1fec34a140ada60d388f46e98b988ced3d3d29`  
-    Last Modified: Wed, 08 Jun 2016 22:09:29 GMT  
-    Size: 37.4 MB (37449438 bytes)
-  - `sha256:9eb136441042532fcc3c0ccae69085d41747fb2b5ecb88fe343b374229a7e1d2`  
-    Last Modified: Wed, 08 Jun 2016 22:09:03 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:b0fd3856723032c4dac27193fb1fec34a140ada60d388f46e98b988ced3d3d29`  
+		Last Modified: Wed, 08 Jun 2016 22:09:29 GMT  
+		Size: 37.4 MB (37449438 bytes)
+	-	`sha256:9eb136441042532fcc3c0ccae69085d41747fb2b5ecb88fe343b374229a7e1d2`  
+		Last Modified: Wed, 08 Jun 2016 22:09:03 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:zts`
 
@@ -2103,17 +2103,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:0153561836d2402dc275d2e0934581813594e82857c97f3f96dc8d0a0ac2b8e1
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:zts` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **167.8 MB (167849217 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:73c945a1a6355440796820885f445cd9018bf56a181c2ce0ea82589fd83037e6`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **167.8 MB (167849217 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:73c945a1a6355440796820885f445cd9018bf56a181c2ce0ea82589fd83037e6`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -2146,22 +2146,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:b0fd3856723032c4dac27193fb1fec34a140ada60d388f46e98b988ced3d3d29`  
-    Last Modified: Wed, 08 Jun 2016 22:09:29 GMT  
-    Size: 37.4 MB (37449438 bytes)
-  - `sha256:9eb136441042532fcc3c0ccae69085d41747fb2b5ecb88fe343b374229a7e1d2`  
-    Last Modified: Wed, 08 Jun 2016 22:09:03 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:b0fd3856723032c4dac27193fb1fec34a140ada60d388f46e98b988ced3d3d29`  
+		Last Modified: Wed, 08 Jun 2016 22:09:29 GMT  
+		Size: 37.4 MB (37449438 bytes)
+	-	`sha256:9eb136441042532fcc3c0ccae69085d41747fb2b5ecb88fe343b374229a7e1d2`  
+		Last Modified: Wed, 08 Jun 2016 22:09:03 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:7.0.7-zts-alpine`
 
@@ -2169,17 +2169,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:aad1c72f997bea6b189e2e8749c35f840544e03d3bef86e7869545e514ef7e3e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0.7-zts-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **42.9 MB (42919190 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c23617809d90f607059728e29be6c7d2bb243d59c5024623b98bdd7128e556b6`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.9 MB (42919190 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c23617809d90f607059728e29be6c7d2bb243d59c5024623b98bdd7128e556b6`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -2212,25 +2212,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:cd7cb6aeb9b7cb7b277edc1b845c7777a099df2b515efdfe10fac18e0340b288`  
-    Last Modified: Wed, 08 Jun 2016 22:10:11 GMT  
-    Size: 39.9 MB (39883042 bytes)
-  - `sha256:9bf476e83dd90aabc1063850c8f26ab7480ceba9a600e5f759c2c2298b54ae66`  
-    Last Modified: Wed, 08 Jun 2016 22:09:45 GMT  
-    Size: 1.6 KB (1617 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:cd7cb6aeb9b7cb7b277edc1b845c7777a099df2b515efdfe10fac18e0340b288`  
+		Last Modified: Wed, 08 Jun 2016 22:10:11 GMT  
+		Size: 39.9 MB (39883042 bytes)
+	-	`sha256:9bf476e83dd90aabc1063850c8f26ab7480ceba9a600e5f759c2c2298b54ae66`  
+		Last Modified: Wed, 08 Jun 2016 22:09:45 GMT  
+		Size: 1.6 KB (1617 bytes)
 
 ## `php:7.0-zts-alpine`
 
@@ -2238,17 +2238,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:aad1c72f997bea6b189e2e8749c35f840544e03d3bef86e7869545e514ef7e3e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7.0-zts-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **42.9 MB (42919190 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c23617809d90f607059728e29be6c7d2bb243d59c5024623b98bdd7128e556b6`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.9 MB (42919190 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c23617809d90f607059728e29be6c7d2bb243d59c5024623b98bdd7128e556b6`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -2281,25 +2281,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:cd7cb6aeb9b7cb7b277edc1b845c7777a099df2b515efdfe10fac18e0340b288`  
-    Last Modified: Wed, 08 Jun 2016 22:10:11 GMT  
-    Size: 39.9 MB (39883042 bytes)
-  - `sha256:9bf476e83dd90aabc1063850c8f26ab7480ceba9a600e5f759c2c2298b54ae66`  
-    Last Modified: Wed, 08 Jun 2016 22:09:45 GMT  
-    Size: 1.6 KB (1617 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:cd7cb6aeb9b7cb7b277edc1b845c7777a099df2b515efdfe10fac18e0340b288`  
+		Last Modified: Wed, 08 Jun 2016 22:10:11 GMT  
+		Size: 39.9 MB (39883042 bytes)
+	-	`sha256:9bf476e83dd90aabc1063850c8f26ab7480ceba9a600e5f759c2c2298b54ae66`  
+		Last Modified: Wed, 08 Jun 2016 22:09:45 GMT  
+		Size: 1.6 KB (1617 bytes)
 
 ## `php:7-zts-alpine`
 
@@ -2307,17 +2307,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:aad1c72f997bea6b189e2e8749c35f840544e03d3bef86e7869545e514ef7e3e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:7-zts-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **42.9 MB (42919190 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c23617809d90f607059728e29be6c7d2bb243d59c5024623b98bdd7128e556b6`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.9 MB (42919190 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c23617809d90f607059728e29be6c7d2bb243d59c5024623b98bdd7128e556b6`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -2350,25 +2350,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:cd7cb6aeb9b7cb7b277edc1b845c7777a099df2b515efdfe10fac18e0340b288`  
-    Last Modified: Wed, 08 Jun 2016 22:10:11 GMT  
-    Size: 39.9 MB (39883042 bytes)
-  - `sha256:9bf476e83dd90aabc1063850c8f26ab7480ceba9a600e5f759c2c2298b54ae66`  
-    Last Modified: Wed, 08 Jun 2016 22:09:45 GMT  
-    Size: 1.6 KB (1617 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:cd7cb6aeb9b7cb7b277edc1b845c7777a099df2b515efdfe10fac18e0340b288`  
+		Last Modified: Wed, 08 Jun 2016 22:10:11 GMT  
+		Size: 39.9 MB (39883042 bytes)
+	-	`sha256:9bf476e83dd90aabc1063850c8f26ab7480ceba9a600e5f759c2c2298b54ae66`  
+		Last Modified: Wed, 08 Jun 2016 22:09:45 GMT  
+		Size: 1.6 KB (1617 bytes)
 
 ## `php:zts-alpine`
 
@@ -2376,17 +2376,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:aad1c72f997bea6b189e2e8749c35f840544e03d3bef86e7869545e514ef7e3e
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:zts-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **42.9 MB (42919190 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c23617809d90f607059728e29be6c7d2bb243d59c5024623b98bdd7128e556b6`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.9 MB (42919190 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c23617809d90f607059728e29be6c7d2bb243d59c5024623b98bdd7128e556b6`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -2419,25 +2419,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:cd7cb6aeb9b7cb7b277edc1b845c7777a099df2b515efdfe10fac18e0340b288`  
-    Last Modified: Wed, 08 Jun 2016 22:10:11 GMT  
-    Size: 39.9 MB (39883042 bytes)
-  - `sha256:9bf476e83dd90aabc1063850c8f26ab7480ceba9a600e5f759c2c2298b54ae66`  
-    Last Modified: Wed, 08 Jun 2016 22:09:45 GMT  
-    Size: 1.6 KB (1617 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:cd7cb6aeb9b7cb7b277edc1b845c7777a099df2b515efdfe10fac18e0340b288`  
+		Last Modified: Wed, 08 Jun 2016 22:10:11 GMT  
+		Size: 39.9 MB (39883042 bytes)
+	-	`sha256:9bf476e83dd90aabc1063850c8f26ab7480ceba9a600e5f759c2c2298b54ae66`  
+		Last Modified: Wed, 08 Jun 2016 22:09:45 GMT  
+		Size: 1.6 KB (1617 bytes)
 
 ## `php:5.6.22-cli`
 
@@ -2445,17 +2445,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:73317c9fbeeea1bb314f6a1da0dfeb3efc1339aacb0029abaa2a58835083ba54
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6.22-cli` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.4 MB (153439714 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.4 MB (153439714 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -2486,22 +2486,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
-    Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
-    Size: 23.0 MB (23039928 bytes)
-  - `sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
-    Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
-    Size: 1.6 KB (1628 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
+		Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
+		Size: 23.0 MB (23039928 bytes)
+	-	`sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
+		Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
+		Size: 1.6 KB (1628 bytes)
 
 ## `php:5.6-cli`
 
@@ -2509,17 +2509,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:73317c9fbeeea1bb314f6a1da0dfeb3efc1339aacb0029abaa2a58835083ba54
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6-cli` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.4 MB (153439714 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.4 MB (153439714 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -2550,22 +2550,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
-    Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
-    Size: 23.0 MB (23039928 bytes)
-  - `sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
-    Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
-    Size: 1.6 KB (1628 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
+		Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
+		Size: 23.0 MB (23039928 bytes)
+	-	`sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
+		Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
+		Size: 1.6 KB (1628 bytes)
 
 ## `php:5-cli`
 
@@ -2573,17 +2573,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:73317c9fbeeea1bb314f6a1da0dfeb3efc1339aacb0029abaa2a58835083ba54
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5-cli` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.4 MB (153439714 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.4 MB (153439714 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -2614,22 +2614,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
-    Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
-    Size: 23.0 MB (23039928 bytes)
-  - `sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
-    Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
-    Size: 1.6 KB (1628 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
+		Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
+		Size: 23.0 MB (23039928 bytes)
+	-	`sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
+		Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
+		Size: 1.6 KB (1628 bytes)
 
 ## `php:5.6.22`
 
@@ -2637,17 +2637,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:73317c9fbeeea1bb314f6a1da0dfeb3efc1339aacb0029abaa2a58835083ba54
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6.22` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.4 MB (153439714 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.4 MB (153439714 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -2678,22 +2678,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
-    Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
-    Size: 23.0 MB (23039928 bytes)
-  - `sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
-    Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
-    Size: 1.6 KB (1628 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
+		Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
+		Size: 23.0 MB (23039928 bytes)
+	-	`sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
+		Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
+		Size: 1.6 KB (1628 bytes)
 
 ## `php:5.6`
 
@@ -2701,17 +2701,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:73317c9fbeeea1bb314f6a1da0dfeb3efc1339aacb0029abaa2a58835083ba54
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.4 MB (153439714 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.4 MB (153439714 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -2742,22 +2742,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
-    Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
-    Size: 23.0 MB (23039928 bytes)
-  - `sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
-    Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
-    Size: 1.6 KB (1628 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
+		Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
+		Size: 23.0 MB (23039928 bytes)
+	-	`sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
+		Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
+		Size: 1.6 KB (1628 bytes)
 
 ## `php:5`
 
@@ -2765,17 +2765,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:73317c9fbeeea1bb314f6a1da0dfeb3efc1339aacb0029abaa2a58835083ba54
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.4 MB (153439714 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.4 MB (153439714 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1934c741c054b527c994aeae91d3daeb9d614699898bd55f1f5c9970cd7d1a3d`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -2806,22 +2806,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
-    Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
-    Size: 23.0 MB (23039928 bytes)
-  - `sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
-    Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
-    Size: 1.6 KB (1628 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:f494a5034922e14c37ddfeec9aa95fb53a9808206fbf8a94e5a0d3016ee9c573`  
+		Last Modified: Wed, 08 Jun 2016 22:00:06 GMT  
+		Size: 23.0 MB (23039928 bytes)
+	-	`sha256:9ca2cf9d271beb50ae7cbe2b7f60dc9e2ed376830768ea642a1ab2334aa143b2`  
+		Last Modified: Wed, 08 Jun 2016 21:59:45 GMT  
+		Size: 1.6 KB (1628 bytes)
 
 ## `php:5.6.22-alpine`
 
@@ -2829,17 +2829,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:ba5e7f4e0d31f57bb73d699fb832797bf80c662454f4f5950980a5421d7a0588
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6.22-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **27.8 MB (27788061 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7d75179da8ce6dc5bab5f614c29009aceb61b78bf59d4b878b54afae1f97f952`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.8 MB (27788061 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7d75179da8ce6dc5bab5f614c29009aceb61b78bf59d4b878b54afae1f97f952`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -2870,25 +2870,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:8ac28c8115df742165a2e0e3938f9ed1ae79b1a87b47b4d8bf9776638a1c7a6f`  
-    Last Modified: Wed, 08 Jun 2016 22:00:51 GMT  
-    Size: 24.8 MB (24751916 bytes)
-  - `sha256:00ea782bf5db1fc577b8490a6d82f0da6617d642ab8ffbe8ba46120bd0c30d2b`  
-    Last Modified: Wed, 08 Jun 2016 22:00:27 GMT  
-    Size: 1.6 KB (1614 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:8ac28c8115df742165a2e0e3938f9ed1ae79b1a87b47b4d8bf9776638a1c7a6f`  
+		Last Modified: Wed, 08 Jun 2016 22:00:51 GMT  
+		Size: 24.8 MB (24751916 bytes)
+	-	`sha256:00ea782bf5db1fc577b8490a6d82f0da6617d642ab8ffbe8ba46120bd0c30d2b`  
+		Last Modified: Wed, 08 Jun 2016 22:00:27 GMT  
+		Size: 1.6 KB (1614 bytes)
 
 ## `php:5.6-alpine`
 
@@ -2896,17 +2896,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:ba5e7f4e0d31f57bb73d699fb832797bf80c662454f4f5950980a5421d7a0588
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **27.8 MB (27788061 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7d75179da8ce6dc5bab5f614c29009aceb61b78bf59d4b878b54afae1f97f952`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.8 MB (27788061 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7d75179da8ce6dc5bab5f614c29009aceb61b78bf59d4b878b54afae1f97f952`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -2937,25 +2937,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:8ac28c8115df742165a2e0e3938f9ed1ae79b1a87b47b4d8bf9776638a1c7a6f`  
-    Last Modified: Wed, 08 Jun 2016 22:00:51 GMT  
-    Size: 24.8 MB (24751916 bytes)
-  - `sha256:00ea782bf5db1fc577b8490a6d82f0da6617d642ab8ffbe8ba46120bd0c30d2b`  
-    Last Modified: Wed, 08 Jun 2016 22:00:27 GMT  
-    Size: 1.6 KB (1614 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:8ac28c8115df742165a2e0e3938f9ed1ae79b1a87b47b4d8bf9776638a1c7a6f`  
+		Last Modified: Wed, 08 Jun 2016 22:00:51 GMT  
+		Size: 24.8 MB (24751916 bytes)
+	-	`sha256:00ea782bf5db1fc577b8490a6d82f0da6617d642ab8ffbe8ba46120bd0c30d2b`  
+		Last Modified: Wed, 08 Jun 2016 22:00:27 GMT  
+		Size: 1.6 KB (1614 bytes)
 
 ## `php:5-alpine`
 
@@ -2963,17 +2963,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:ba5e7f4e0d31f57bb73d699fb832797bf80c662454f4f5950980a5421d7a0588
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **27.8 MB (27788061 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7d75179da8ce6dc5bab5f614c29009aceb61b78bf59d4b878b54afae1f97f952`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.8 MB (27788061 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7d75179da8ce6dc5bab5f614c29009aceb61b78bf59d4b878b54afae1f97f952`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -3004,25 +3004,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:8ac28c8115df742165a2e0e3938f9ed1ae79b1a87b47b4d8bf9776638a1c7a6f`  
-    Last Modified: Wed, 08 Jun 2016 22:00:51 GMT  
-    Size: 24.8 MB (24751916 bytes)
-  - `sha256:00ea782bf5db1fc577b8490a6d82f0da6617d642ab8ffbe8ba46120bd0c30d2b`  
-    Last Modified: Wed, 08 Jun 2016 22:00:27 GMT  
-    Size: 1.6 KB (1614 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:8ac28c8115df742165a2e0e3938f9ed1ae79b1a87b47b4d8bf9776638a1c7a6f`  
+		Last Modified: Wed, 08 Jun 2016 22:00:51 GMT  
+		Size: 24.8 MB (24751916 bytes)
+	-	`sha256:00ea782bf5db1fc577b8490a6d82f0da6617d642ab8ffbe8ba46120bd0c30d2b`  
+		Last Modified: Wed, 08 Jun 2016 22:00:27 GMT  
+		Size: 1.6 KB (1614 bytes)
 
 ## `php:5.6.22-apache`
 
@@ -3030,17 +3030,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:79fdc844f033de5d6aab441062c213e0bdc88559006fee13f3862b4f292dba82
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6.22-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **166.8 MB (166759478 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:25cd5d9bdc4c1d51556f990499ca6e0205a91e36f4dd6dfbbf6960649eeaed08`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **166.8 MB (166759478 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:25cd5d9bdc4c1d51556f990499ca6e0205a91e36f4dd6dfbbf6960649eeaed08`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -3091,40 +3091,40 @@ EXPOSE 80/tcp
 CMD ["apache2-foreground"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
-    Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
-    Size: 2.9 MB (2864924 bytes)
-  - `sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 321.0 B
-  - `sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 426.0 B
-  - `sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
-    Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
-    Size: 3.4 KB (3365 bytes)
-  - `sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
-    Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
-    Size: 862.0 B
-  - `sha256:852018671a30e1b3940a77a717cfd0b5cc5f72147c75a436e453ef1cd28f1ef0`  
-    Last Modified: Wed, 08 Jun 2016 22:01:35 GMT  
-    Size: 33.5 MB (33489509 bytes)
-  - `sha256:a0b5e0b371998c44aff745276278c7ff657239847c048af22ab2168ec9a82336`  
-    Last Modified: Wed, 08 Jun 2016 22:01:07 GMT  
-    Size: 1.6 KB (1623 bytes)
-  - `sha256:0abc2a7ce1ea68c5ed73127cecba5c080cc5d648fea215b69deee6e70e2d24fa`  
-    Last Modified: Wed, 08 Jun 2016 22:01:06 GMT  
-    Size: 290.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
+		Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
+		Size: 2.9 MB (2864924 bytes)
+	-	`sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 321.0 B
+	-	`sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 426.0 B
+	-	`sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
+		Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
+		Size: 3.4 KB (3365 bytes)
+	-	`sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
+		Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
+		Size: 862.0 B
+	-	`sha256:852018671a30e1b3940a77a717cfd0b5cc5f72147c75a436e453ef1cd28f1ef0`  
+		Last Modified: Wed, 08 Jun 2016 22:01:35 GMT  
+		Size: 33.5 MB (33489509 bytes)
+	-	`sha256:a0b5e0b371998c44aff745276278c7ff657239847c048af22ab2168ec9a82336`  
+		Last Modified: Wed, 08 Jun 2016 22:01:07 GMT  
+		Size: 1.6 KB (1623 bytes)
+	-	`sha256:0abc2a7ce1ea68c5ed73127cecba5c080cc5d648fea215b69deee6e70e2d24fa`  
+		Last Modified: Wed, 08 Jun 2016 22:01:06 GMT  
+		Size: 290.0 B
 
 ## `php:5.6-apache`
 
@@ -3132,17 +3132,17 @@ CMD ["apache2-foreground"]
 $ docker pull php@sha256:79fdc844f033de5d6aab441062c213e0bdc88559006fee13f3862b4f292dba82
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **166.8 MB (166759478 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:25cd5d9bdc4c1d51556f990499ca6e0205a91e36f4dd6dfbbf6960649eeaed08`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **166.8 MB (166759478 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:25cd5d9bdc4c1d51556f990499ca6e0205a91e36f4dd6dfbbf6960649eeaed08`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -3193,40 +3193,40 @@ EXPOSE 80/tcp
 CMD ["apache2-foreground"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
-    Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
-    Size: 2.9 MB (2864924 bytes)
-  - `sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 321.0 B
-  - `sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 426.0 B
-  - `sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
-    Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
-    Size: 3.4 KB (3365 bytes)
-  - `sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
-    Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
-    Size: 862.0 B
-  - `sha256:852018671a30e1b3940a77a717cfd0b5cc5f72147c75a436e453ef1cd28f1ef0`  
-    Last Modified: Wed, 08 Jun 2016 22:01:35 GMT  
-    Size: 33.5 MB (33489509 bytes)
-  - `sha256:a0b5e0b371998c44aff745276278c7ff657239847c048af22ab2168ec9a82336`  
-    Last Modified: Wed, 08 Jun 2016 22:01:07 GMT  
-    Size: 1.6 KB (1623 bytes)
-  - `sha256:0abc2a7ce1ea68c5ed73127cecba5c080cc5d648fea215b69deee6e70e2d24fa`  
-    Last Modified: Wed, 08 Jun 2016 22:01:06 GMT  
-    Size: 290.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
+		Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
+		Size: 2.9 MB (2864924 bytes)
+	-	`sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 321.0 B
+	-	`sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 426.0 B
+	-	`sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
+		Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
+		Size: 3.4 KB (3365 bytes)
+	-	`sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
+		Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
+		Size: 862.0 B
+	-	`sha256:852018671a30e1b3940a77a717cfd0b5cc5f72147c75a436e453ef1cd28f1ef0`  
+		Last Modified: Wed, 08 Jun 2016 22:01:35 GMT  
+		Size: 33.5 MB (33489509 bytes)
+	-	`sha256:a0b5e0b371998c44aff745276278c7ff657239847c048af22ab2168ec9a82336`  
+		Last Modified: Wed, 08 Jun 2016 22:01:07 GMT  
+		Size: 1.6 KB (1623 bytes)
+	-	`sha256:0abc2a7ce1ea68c5ed73127cecba5c080cc5d648fea215b69deee6e70e2d24fa`  
+		Last Modified: Wed, 08 Jun 2016 22:01:06 GMT  
+		Size: 290.0 B
 
 ## `php:5-apache`
 
@@ -3234,17 +3234,17 @@ CMD ["apache2-foreground"]
 $ docker pull php@sha256:79fdc844f033de5d6aab441062c213e0bdc88559006fee13f3862b4f292dba82
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **166.8 MB (166759478 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:25cd5d9bdc4c1d51556f990499ca6e0205a91e36f4dd6dfbbf6960649eeaed08`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **166.8 MB (166759478 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:25cd5d9bdc4c1d51556f990499ca6e0205a91e36f4dd6dfbbf6960649eeaed08`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -3295,40 +3295,40 @@ EXPOSE 80/tcp
 CMD ["apache2-foreground"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
-    Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
-    Size: 2.9 MB (2864924 bytes)
-  - `sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 321.0 B
-  - `sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 426.0 B
-  - `sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
-    Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
-    Size: 3.4 KB (3365 bytes)
-  - `sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
-    Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
-    Size: 862.0 B
-  - `sha256:852018671a30e1b3940a77a717cfd0b5cc5f72147c75a436e453ef1cd28f1ef0`  
-    Last Modified: Wed, 08 Jun 2016 22:01:35 GMT  
-    Size: 33.5 MB (33489509 bytes)
-  - `sha256:a0b5e0b371998c44aff745276278c7ff657239847c048af22ab2168ec9a82336`  
-    Last Modified: Wed, 08 Jun 2016 22:01:07 GMT  
-    Size: 1.6 KB (1623 bytes)
-  - `sha256:0abc2a7ce1ea68c5ed73127cecba5c080cc5d648fea215b69deee6e70e2d24fa`  
-    Last Modified: Wed, 08 Jun 2016 22:01:06 GMT  
-    Size: 290.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
+		Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
+		Size: 2.9 MB (2864924 bytes)
+	-	`sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 321.0 B
+	-	`sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 426.0 B
+	-	`sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
+		Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
+		Size: 3.4 KB (3365 bytes)
+	-	`sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
+		Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
+		Size: 862.0 B
+	-	`sha256:852018671a30e1b3940a77a717cfd0b5cc5f72147c75a436e453ef1cd28f1ef0`  
+		Last Modified: Wed, 08 Jun 2016 22:01:35 GMT  
+		Size: 33.5 MB (33489509 bytes)
+	-	`sha256:a0b5e0b371998c44aff745276278c7ff657239847c048af22ab2168ec9a82336`  
+		Last Modified: Wed, 08 Jun 2016 22:01:07 GMT  
+		Size: 1.6 KB (1623 bytes)
+	-	`sha256:0abc2a7ce1ea68c5ed73127cecba5c080cc5d648fea215b69deee6e70e2d24fa`  
+		Last Modified: Wed, 08 Jun 2016 22:01:06 GMT  
+		Size: 290.0 B
 
 ## `php:5.6.22-fpm`
 
@@ -3336,17 +3336,17 @@ CMD ["apache2-foreground"]
 $ docker pull php@sha256:bbd26e9ea98ae90d84d576d3460fcad0f1e168426686a77ba219ef23a41855bb
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6.22-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **156.9 MB (156902827 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0ae73018d23182d2dc847f42dc5734e8b5c6b15b0988a99b6227fe8140e18465`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.9 MB (156902827 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0ae73018d23182d2dc847f42dc5734e8b5c6b15b0988a99b6227fe8140e18465`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -3385,28 +3385,28 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:7aa757f29acc25356081a24395e80f9b11a232712372341f7dcfeb457d91389c`  
-    Last Modified: Wed, 08 Jun 2016 22:02:18 GMT  
-    Size: 26.5 MB (26495290 bytes)
-  - `sha256:98d0e34d17b404fc5a14333bb64590f9748f264d44cf53b3dc5942568b1be614`  
-    Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
-    Size: 1.6 KB (1622 bytes)
-  - `sha256:6add312565f1e438e2a5dfc88b6d8f07d51e0e541c49bb72bde6542761294e52`  
-    Last Modified: Wed, 08 Jun 2016 22:01:52 GMT  
-    Size: 128.0 B
-  - `sha256:5e378d384404b048997ce511326958d01dc0f0664a42ddd550e551b72aeed0ab`  
-    Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
-    Size: 7.6 KB (7629 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:7aa757f29acc25356081a24395e80f9b11a232712372341f7dcfeb457d91389c`  
+		Last Modified: Wed, 08 Jun 2016 22:02:18 GMT  
+		Size: 26.5 MB (26495290 bytes)
+	-	`sha256:98d0e34d17b404fc5a14333bb64590f9748f264d44cf53b3dc5942568b1be614`  
+		Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
+		Size: 1.6 KB (1622 bytes)
+	-	`sha256:6add312565f1e438e2a5dfc88b6d8f07d51e0e541c49bb72bde6542761294e52`  
+		Last Modified: Wed, 08 Jun 2016 22:01:52 GMT  
+		Size: 128.0 B
+	-	`sha256:5e378d384404b048997ce511326958d01dc0f0664a42ddd550e551b72aeed0ab`  
+		Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
+		Size: 7.6 KB (7629 bytes)
 
 ## `php:5.6-fpm`
 
@@ -3414,17 +3414,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:bbd26e9ea98ae90d84d576d3460fcad0f1e168426686a77ba219ef23a41855bb
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **156.9 MB (156902827 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0ae73018d23182d2dc847f42dc5734e8b5c6b15b0988a99b6227fe8140e18465`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.9 MB (156902827 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0ae73018d23182d2dc847f42dc5734e8b5c6b15b0988a99b6227fe8140e18465`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -3463,28 +3463,28 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:7aa757f29acc25356081a24395e80f9b11a232712372341f7dcfeb457d91389c`  
-    Last Modified: Wed, 08 Jun 2016 22:02:18 GMT  
-    Size: 26.5 MB (26495290 bytes)
-  - `sha256:98d0e34d17b404fc5a14333bb64590f9748f264d44cf53b3dc5942568b1be614`  
-    Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
-    Size: 1.6 KB (1622 bytes)
-  - `sha256:6add312565f1e438e2a5dfc88b6d8f07d51e0e541c49bb72bde6542761294e52`  
-    Last Modified: Wed, 08 Jun 2016 22:01:52 GMT  
-    Size: 128.0 B
-  - `sha256:5e378d384404b048997ce511326958d01dc0f0664a42ddd550e551b72aeed0ab`  
-    Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
-    Size: 7.6 KB (7629 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:7aa757f29acc25356081a24395e80f9b11a232712372341f7dcfeb457d91389c`  
+		Last Modified: Wed, 08 Jun 2016 22:02:18 GMT  
+		Size: 26.5 MB (26495290 bytes)
+	-	`sha256:98d0e34d17b404fc5a14333bb64590f9748f264d44cf53b3dc5942568b1be614`  
+		Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
+		Size: 1.6 KB (1622 bytes)
+	-	`sha256:6add312565f1e438e2a5dfc88b6d8f07d51e0e541c49bb72bde6542761294e52`  
+		Last Modified: Wed, 08 Jun 2016 22:01:52 GMT  
+		Size: 128.0 B
+	-	`sha256:5e378d384404b048997ce511326958d01dc0f0664a42ddd550e551b72aeed0ab`  
+		Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
+		Size: 7.6 KB (7629 bytes)
 
 ## `php:5-fpm`
 
@@ -3492,17 +3492,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:bbd26e9ea98ae90d84d576d3460fcad0f1e168426686a77ba219ef23a41855bb
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **156.9 MB (156902827 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0ae73018d23182d2dc847f42dc5734e8b5c6b15b0988a99b6227fe8140e18465`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.9 MB (156902827 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0ae73018d23182d2dc847f42dc5734e8b5c6b15b0988a99b6227fe8140e18465`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -3541,28 +3541,28 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:7aa757f29acc25356081a24395e80f9b11a232712372341f7dcfeb457d91389c`  
-    Last Modified: Wed, 08 Jun 2016 22:02:18 GMT  
-    Size: 26.5 MB (26495290 bytes)
-  - `sha256:98d0e34d17b404fc5a14333bb64590f9748f264d44cf53b3dc5942568b1be614`  
-    Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
-    Size: 1.6 KB (1622 bytes)
-  - `sha256:6add312565f1e438e2a5dfc88b6d8f07d51e0e541c49bb72bde6542761294e52`  
-    Last Modified: Wed, 08 Jun 2016 22:01:52 GMT  
-    Size: 128.0 B
-  - `sha256:5e378d384404b048997ce511326958d01dc0f0664a42ddd550e551b72aeed0ab`  
-    Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
-    Size: 7.6 KB (7629 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:7aa757f29acc25356081a24395e80f9b11a232712372341f7dcfeb457d91389c`  
+		Last Modified: Wed, 08 Jun 2016 22:02:18 GMT  
+		Size: 26.5 MB (26495290 bytes)
+	-	`sha256:98d0e34d17b404fc5a14333bb64590f9748f264d44cf53b3dc5942568b1be614`  
+		Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
+		Size: 1.6 KB (1622 bytes)
+	-	`sha256:6add312565f1e438e2a5dfc88b6d8f07d51e0e541c49bb72bde6542761294e52`  
+		Last Modified: Wed, 08 Jun 2016 22:01:52 GMT  
+		Size: 128.0 B
+	-	`sha256:5e378d384404b048997ce511326958d01dc0f0664a42ddd550e551b72aeed0ab`  
+		Last Modified: Wed, 08 Jun 2016 22:01:51 GMT  
+		Size: 7.6 KB (7629 bytes)
 
 ## `php:5.6.22-fpm-alpine`
 
@@ -3570,17 +3570,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:4b2c5ebccd5852e3638304356dcefa66ad7c64b1aa3b1657a4c96727aed5459b
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6.22-fpm-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **31.4 MB (31418669 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:880b9f3c2c394bfab4311028172a4658e8401f9c3177658a2d38ec64663885db`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **31.4 MB (31418669 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:880b9f3c2c394bfab4311028172a4658e8401f9c3177658a2d38ec64663885db`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -3619,31 +3619,31 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:58bc50067db416ca69ca011bfce0429b8f5a3cba9b67ac992794b6910d813d91`  
-    Last Modified: Wed, 08 Jun 2016 22:03:01 GMT  
-    Size: 28.4 MB (28374777 bytes)
-  - `sha256:396f951182c29de295b48ae7bed7ed6b5c1121b70786b8cc7f0b6c6a338cce2d`  
-    Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
-    Size: 1.6 KB (1615 bytes)
-  - `sha256:699cfcdab94c98f8da9ea0136f73e91658443286f27c892b3b8cae303d7b4c9b`  
-    Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
-    Size: 128.0 B
-  - `sha256:1c8524ec1f4e5c2083c2fd08f8d0e8876f85ceddb363f1c36ad10bac5675cc5f`  
-    Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
-    Size: 7.6 KB (7618 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:58bc50067db416ca69ca011bfce0429b8f5a3cba9b67ac992794b6910d813d91`  
+		Last Modified: Wed, 08 Jun 2016 22:03:01 GMT  
+		Size: 28.4 MB (28374777 bytes)
+	-	`sha256:396f951182c29de295b48ae7bed7ed6b5c1121b70786b8cc7f0b6c6a338cce2d`  
+		Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
+		Size: 1.6 KB (1615 bytes)
+	-	`sha256:699cfcdab94c98f8da9ea0136f73e91658443286f27c892b3b8cae303d7b4c9b`  
+		Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
+		Size: 128.0 B
+	-	`sha256:1c8524ec1f4e5c2083c2fd08f8d0e8876f85ceddb363f1c36ad10bac5675cc5f`  
+		Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
+		Size: 7.6 KB (7618 bytes)
 
 ## `php:5.6-fpm-alpine`
 
@@ -3651,17 +3651,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:4b2c5ebccd5852e3638304356dcefa66ad7c64b1aa3b1657a4c96727aed5459b
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6-fpm-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **31.4 MB (31418669 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:880b9f3c2c394bfab4311028172a4658e8401f9c3177658a2d38ec64663885db`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **31.4 MB (31418669 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:880b9f3c2c394bfab4311028172a4658e8401f9c3177658a2d38ec64663885db`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -3700,31 +3700,31 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:58bc50067db416ca69ca011bfce0429b8f5a3cba9b67ac992794b6910d813d91`  
-    Last Modified: Wed, 08 Jun 2016 22:03:01 GMT  
-    Size: 28.4 MB (28374777 bytes)
-  - `sha256:396f951182c29de295b48ae7bed7ed6b5c1121b70786b8cc7f0b6c6a338cce2d`  
-    Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
-    Size: 1.6 KB (1615 bytes)
-  - `sha256:699cfcdab94c98f8da9ea0136f73e91658443286f27c892b3b8cae303d7b4c9b`  
-    Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
-    Size: 128.0 B
-  - `sha256:1c8524ec1f4e5c2083c2fd08f8d0e8876f85ceddb363f1c36ad10bac5675cc5f`  
-    Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
-    Size: 7.6 KB (7618 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:58bc50067db416ca69ca011bfce0429b8f5a3cba9b67ac992794b6910d813d91`  
+		Last Modified: Wed, 08 Jun 2016 22:03:01 GMT  
+		Size: 28.4 MB (28374777 bytes)
+	-	`sha256:396f951182c29de295b48ae7bed7ed6b5c1121b70786b8cc7f0b6c6a338cce2d`  
+		Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
+		Size: 1.6 KB (1615 bytes)
+	-	`sha256:699cfcdab94c98f8da9ea0136f73e91658443286f27c892b3b8cae303d7b4c9b`  
+		Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
+		Size: 128.0 B
+	-	`sha256:1c8524ec1f4e5c2083c2fd08f8d0e8876f85ceddb363f1c36ad10bac5675cc5f`  
+		Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
+		Size: 7.6 KB (7618 bytes)
 
 ## `php:5-fpm-alpine`
 
@@ -3732,17 +3732,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:4b2c5ebccd5852e3638304356dcefa66ad7c64b1aa3b1657a4c96727aed5459b
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5-fpm-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **31.4 MB (31418669 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:880b9f3c2c394bfab4311028172a4658e8401f9c3177658a2d38ec64663885db`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **31.4 MB (31418669 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:880b9f3c2c394bfab4311028172a4658e8401f9c3177658a2d38ec64663885db`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -3781,31 +3781,31 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:58bc50067db416ca69ca011bfce0429b8f5a3cba9b67ac992794b6910d813d91`  
-    Last Modified: Wed, 08 Jun 2016 22:03:01 GMT  
-    Size: 28.4 MB (28374777 bytes)
-  - `sha256:396f951182c29de295b48ae7bed7ed6b5c1121b70786b8cc7f0b6c6a338cce2d`  
-    Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
-    Size: 1.6 KB (1615 bytes)
-  - `sha256:699cfcdab94c98f8da9ea0136f73e91658443286f27c892b3b8cae303d7b4c9b`  
-    Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
-    Size: 128.0 B
-  - `sha256:1c8524ec1f4e5c2083c2fd08f8d0e8876f85ceddb363f1c36ad10bac5675cc5f`  
-    Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
-    Size: 7.6 KB (7618 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:58bc50067db416ca69ca011bfce0429b8f5a3cba9b67ac992794b6910d813d91`  
+		Last Modified: Wed, 08 Jun 2016 22:03:01 GMT  
+		Size: 28.4 MB (28374777 bytes)
+	-	`sha256:396f951182c29de295b48ae7bed7ed6b5c1121b70786b8cc7f0b6c6a338cce2d`  
+		Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
+		Size: 1.6 KB (1615 bytes)
+	-	`sha256:699cfcdab94c98f8da9ea0136f73e91658443286f27c892b3b8cae303d7b4c9b`  
+		Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
+		Size: 128.0 B
+	-	`sha256:1c8524ec1f4e5c2083c2fd08f8d0e8876f85ceddb363f1c36ad10bac5675cc5f`  
+		Last Modified: Wed, 08 Jun 2016 22:02:33 GMT  
+		Size: 7.6 KB (7618 bytes)
 
 ## `php:5.6.22-zts`
 
@@ -3813,17 +3813,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:ff3de80e4e60ec5356bded38a75e817808e28565807a627781612f107ef6ac63
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6.22-zts` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.5 MB (153490533 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:a1ddacb5666c7346cd9fffb2e6cde0c9a6031a61dbfc0a5ac76c5416a44d115b`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.5 MB (153490533 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a1ddacb5666c7346cd9fffb2e6cde0c9a6031a61dbfc0a5ac76c5416a44d115b`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -3856,22 +3856,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:f0dce0720ab443d8b432da6a4a66054d54df4ca0d866e7e791d19c53fcd79593`  
-    Last Modified: Wed, 08 Jun 2016 22:03:40 GMT  
-    Size: 23.1 MB (23090754 bytes)
-  - `sha256:c2639311ba8c04849f529142355fd45ff284f4998f5b4af0d3e6bc1bc645b871`  
-    Last Modified: Wed, 08 Jun 2016 22:03:18 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:f0dce0720ab443d8b432da6a4a66054d54df4ca0d866e7e791d19c53fcd79593`  
+		Last Modified: Wed, 08 Jun 2016 22:03:40 GMT  
+		Size: 23.1 MB (23090754 bytes)
+	-	`sha256:c2639311ba8c04849f529142355fd45ff284f4998f5b4af0d3e6bc1bc645b871`  
+		Last Modified: Wed, 08 Jun 2016 22:03:18 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:5.6-zts`
 
@@ -3879,17 +3879,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:ff3de80e4e60ec5356bded38a75e817808e28565807a627781612f107ef6ac63
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6-zts` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.5 MB (153490533 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:a1ddacb5666c7346cd9fffb2e6cde0c9a6031a61dbfc0a5ac76c5416a44d115b`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.5 MB (153490533 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a1ddacb5666c7346cd9fffb2e6cde0c9a6031a61dbfc0a5ac76c5416a44d115b`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -3922,22 +3922,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:f0dce0720ab443d8b432da6a4a66054d54df4ca0d866e7e791d19c53fcd79593`  
-    Last Modified: Wed, 08 Jun 2016 22:03:40 GMT  
-    Size: 23.1 MB (23090754 bytes)
-  - `sha256:c2639311ba8c04849f529142355fd45ff284f4998f5b4af0d3e6bc1bc645b871`  
-    Last Modified: Wed, 08 Jun 2016 22:03:18 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:f0dce0720ab443d8b432da6a4a66054d54df4ca0d866e7e791d19c53fcd79593`  
+		Last Modified: Wed, 08 Jun 2016 22:03:40 GMT  
+		Size: 23.1 MB (23090754 bytes)
+	-	`sha256:c2639311ba8c04849f529142355fd45ff284f4998f5b4af0d3e6bc1bc645b871`  
+		Last Modified: Wed, 08 Jun 2016 22:03:18 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:5-zts`
 
@@ -3945,17 +3945,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:ff3de80e4e60ec5356bded38a75e817808e28565807a627781612f107ef6ac63
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5-zts` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **153.5 MB (153490533 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:a1ddacb5666c7346cd9fffb2e6cde0c9a6031a61dbfc0a5ac76c5416a44d115b`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **153.5 MB (153490533 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a1ddacb5666c7346cd9fffb2e6cde0c9a6031a61dbfc0a5ac76c5416a44d115b`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -3988,22 +3988,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:f0dce0720ab443d8b432da6a4a66054d54df4ca0d866e7e791d19c53fcd79593`  
-    Last Modified: Wed, 08 Jun 2016 22:03:40 GMT  
-    Size: 23.1 MB (23090754 bytes)
-  - `sha256:c2639311ba8c04849f529142355fd45ff284f4998f5b4af0d3e6bc1bc645b871`  
-    Last Modified: Wed, 08 Jun 2016 22:03:18 GMT  
-    Size: 1.6 KB (1621 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:f0dce0720ab443d8b432da6a4a66054d54df4ca0d866e7e791d19c53fcd79593`  
+		Last Modified: Wed, 08 Jun 2016 22:03:40 GMT  
+		Size: 23.1 MB (23090754 bytes)
+	-	`sha256:c2639311ba8c04849f529142355fd45ff284f4998f5b4af0d3e6bc1bc645b871`  
+		Last Modified: Wed, 08 Jun 2016 22:03:18 GMT  
+		Size: 1.6 KB (1621 bytes)
 
 ## `php:5.6.22-zts-alpine`
 
@@ -4011,17 +4011,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:5700f304044ee746763b1022efc0ea120c50f2c7ec8ea6c7e61b9514955a20d4
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6.22-zts-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **27.8 MB (27838838 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:ac3a7e9de431494d8ce8461dad720538bf839408676518b8b128ce22189198d8`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.8 MB (27838838 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ac3a7e9de431494d8ce8461dad720538bf839408676518b8b128ce22189198d8`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -4054,25 +4054,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:7f80e2be507d4691b57dcfb198070d014596c12715d15bc13f5cce8ecf4a6f37`  
-    Last Modified: Wed, 08 Jun 2016 22:04:21 GMT  
-    Size: 24.8 MB (24802689 bytes)
-  - `sha256:93972190cc5d29a31370b926546165ae63e3ab8f6ed707918900accd86234749`  
-    Last Modified: Wed, 08 Jun 2016 22:03:54 GMT  
-    Size: 1.6 KB (1618 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:7f80e2be507d4691b57dcfb198070d014596c12715d15bc13f5cce8ecf4a6f37`  
+		Last Modified: Wed, 08 Jun 2016 22:04:21 GMT  
+		Size: 24.8 MB (24802689 bytes)
+	-	`sha256:93972190cc5d29a31370b926546165ae63e3ab8f6ed707918900accd86234749`  
+		Last Modified: Wed, 08 Jun 2016 22:03:54 GMT  
+		Size: 1.6 KB (1618 bytes)
 
 ## `php:5.6-zts-alpine`
 
@@ -4080,17 +4080,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:5700f304044ee746763b1022efc0ea120c50f2c7ec8ea6c7e61b9514955a20d4
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.6-zts-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **27.8 MB (27838838 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:ac3a7e9de431494d8ce8461dad720538bf839408676518b8b128ce22189198d8`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.8 MB (27838838 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ac3a7e9de431494d8ce8461dad720538bf839408676518b8b128ce22189198d8`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -4123,25 +4123,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:7f80e2be507d4691b57dcfb198070d014596c12715d15bc13f5cce8ecf4a6f37`  
-    Last Modified: Wed, 08 Jun 2016 22:04:21 GMT  
-    Size: 24.8 MB (24802689 bytes)
-  - `sha256:93972190cc5d29a31370b926546165ae63e3ab8f6ed707918900accd86234749`  
-    Last Modified: Wed, 08 Jun 2016 22:03:54 GMT  
-    Size: 1.6 KB (1618 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:7f80e2be507d4691b57dcfb198070d014596c12715d15bc13f5cce8ecf4a6f37`  
+		Last Modified: Wed, 08 Jun 2016 22:04:21 GMT  
+		Size: 24.8 MB (24802689 bytes)
+	-	`sha256:93972190cc5d29a31370b926546165ae63e3ab8f6ed707918900accd86234749`  
+		Last Modified: Wed, 08 Jun 2016 22:03:54 GMT  
+		Size: 1.6 KB (1618 bytes)
 
 ## `php:5-zts-alpine`
 
@@ -4149,17 +4149,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:5700f304044ee746763b1022efc0ea120c50f2c7ec8ea6c7e61b9514955a20d4
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5-zts-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **27.8 MB (27838838 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:ac3a7e9de431494d8ce8461dad720538bf839408676518b8b128ce22189198d8`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.8 MB (27838838 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ac3a7e9de431494d8ce8461dad720538bf839408676518b8b128ce22189198d8`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -4192,25 +4192,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:7f80e2be507d4691b57dcfb198070d014596c12715d15bc13f5cce8ecf4a6f37`  
-    Last Modified: Wed, 08 Jun 2016 22:04:21 GMT  
-    Size: 24.8 MB (24802689 bytes)
-  - `sha256:93972190cc5d29a31370b926546165ae63e3ab8f6ed707918900accd86234749`  
-    Last Modified: Wed, 08 Jun 2016 22:03:54 GMT  
-    Size: 1.6 KB (1618 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:7f80e2be507d4691b57dcfb198070d014596c12715d15bc13f5cce8ecf4a6f37`  
+		Last Modified: Wed, 08 Jun 2016 22:04:21 GMT  
+		Size: 24.8 MB (24802689 bytes)
+	-	`sha256:93972190cc5d29a31370b926546165ae63e3ab8f6ed707918900accd86234749`  
+		Last Modified: Wed, 08 Jun 2016 22:03:54 GMT  
+		Size: 1.6 KB (1618 bytes)
 
 ## `php:5.5.36-cli`
 
@@ -4218,17 +4218,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:664bb8224e0f32a9a36395fbd99ba20df85b97a2a9fdc2db532a82d1f8bee360
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5.36-cli` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **152.7 MB (152740948 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:6bbb6f8c13c94f30f88afefb621842204197b5011c7ea9effe4b955bfdb0d81d`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **152.7 MB (152740948 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6bbb6f8c13c94f30f88afefb621842204197b5011c7ea9effe4b955bfdb0d81d`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -4259,22 +4259,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:54cafcb1664afa27bb666bc42689067330026a4195facfec9338a078f922fcd8`  
-    Last Modified: Wed, 08 Jun 2016 21:56:07 GMT  
-    Size: 22.3 MB (22341168 bytes)
-  - `sha256:dcd758cf80b1ba4e9dc8eed441f210346598e81b7183cc0cccd1b8793dc24453`  
-    Last Modified: Wed, 08 Jun 2016 21:55:46 GMT  
-    Size: 1.6 KB (1622 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:54cafcb1664afa27bb666bc42689067330026a4195facfec9338a078f922fcd8`  
+		Last Modified: Wed, 08 Jun 2016 21:56:07 GMT  
+		Size: 22.3 MB (22341168 bytes)
+	-	`sha256:dcd758cf80b1ba4e9dc8eed441f210346598e81b7183cc0cccd1b8793dc24453`  
+		Last Modified: Wed, 08 Jun 2016 21:55:46 GMT  
+		Size: 1.6 KB (1622 bytes)
 
 ## `php:5.5-cli`
 
@@ -4282,17 +4282,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:664bb8224e0f32a9a36395fbd99ba20df85b97a2a9fdc2db532a82d1f8bee360
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5-cli` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **152.7 MB (152740948 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:6bbb6f8c13c94f30f88afefb621842204197b5011c7ea9effe4b955bfdb0d81d`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **152.7 MB (152740948 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6bbb6f8c13c94f30f88afefb621842204197b5011c7ea9effe4b955bfdb0d81d`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -4323,22 +4323,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:54cafcb1664afa27bb666bc42689067330026a4195facfec9338a078f922fcd8`  
-    Last Modified: Wed, 08 Jun 2016 21:56:07 GMT  
-    Size: 22.3 MB (22341168 bytes)
-  - `sha256:dcd758cf80b1ba4e9dc8eed441f210346598e81b7183cc0cccd1b8793dc24453`  
-    Last Modified: Wed, 08 Jun 2016 21:55:46 GMT  
-    Size: 1.6 KB (1622 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:54cafcb1664afa27bb666bc42689067330026a4195facfec9338a078f922fcd8`  
+		Last Modified: Wed, 08 Jun 2016 21:56:07 GMT  
+		Size: 22.3 MB (22341168 bytes)
+	-	`sha256:dcd758cf80b1ba4e9dc8eed441f210346598e81b7183cc0cccd1b8793dc24453`  
+		Last Modified: Wed, 08 Jun 2016 21:55:46 GMT  
+		Size: 1.6 KB (1622 bytes)
 
 ## `php:5.5.36`
 
@@ -4346,17 +4346,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:664bb8224e0f32a9a36395fbd99ba20df85b97a2a9fdc2db532a82d1f8bee360
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5.36` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **152.7 MB (152740948 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:6bbb6f8c13c94f30f88afefb621842204197b5011c7ea9effe4b955bfdb0d81d`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **152.7 MB (152740948 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6bbb6f8c13c94f30f88afefb621842204197b5011c7ea9effe4b955bfdb0d81d`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -4387,22 +4387,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:54cafcb1664afa27bb666bc42689067330026a4195facfec9338a078f922fcd8`  
-    Last Modified: Wed, 08 Jun 2016 21:56:07 GMT  
-    Size: 22.3 MB (22341168 bytes)
-  - `sha256:dcd758cf80b1ba4e9dc8eed441f210346598e81b7183cc0cccd1b8793dc24453`  
-    Last Modified: Wed, 08 Jun 2016 21:55:46 GMT  
-    Size: 1.6 KB (1622 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:54cafcb1664afa27bb666bc42689067330026a4195facfec9338a078f922fcd8`  
+		Last Modified: Wed, 08 Jun 2016 21:56:07 GMT  
+		Size: 22.3 MB (22341168 bytes)
+	-	`sha256:dcd758cf80b1ba4e9dc8eed441f210346598e81b7183cc0cccd1b8793dc24453`  
+		Last Modified: Wed, 08 Jun 2016 21:55:46 GMT  
+		Size: 1.6 KB (1622 bytes)
 
 ## `php:5.5`
 
@@ -4410,17 +4410,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:664bb8224e0f32a9a36395fbd99ba20df85b97a2a9fdc2db532a82d1f8bee360
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **152.7 MB (152740948 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:6bbb6f8c13c94f30f88afefb621842204197b5011c7ea9effe4b955bfdb0d81d`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **152.7 MB (152740948 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6bbb6f8c13c94f30f88afefb621842204197b5011c7ea9effe4b955bfdb0d81d`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -4451,22 +4451,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:54cafcb1664afa27bb666bc42689067330026a4195facfec9338a078f922fcd8`  
-    Last Modified: Wed, 08 Jun 2016 21:56:07 GMT  
-    Size: 22.3 MB (22341168 bytes)
-  - `sha256:dcd758cf80b1ba4e9dc8eed441f210346598e81b7183cc0cccd1b8793dc24453`  
-    Last Modified: Wed, 08 Jun 2016 21:55:46 GMT  
-    Size: 1.6 KB (1622 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:54cafcb1664afa27bb666bc42689067330026a4195facfec9338a078f922fcd8`  
+		Last Modified: Wed, 08 Jun 2016 21:56:07 GMT  
+		Size: 22.3 MB (22341168 bytes)
+	-	`sha256:dcd758cf80b1ba4e9dc8eed441f210346598e81b7183cc0cccd1b8793dc24453`  
+		Last Modified: Wed, 08 Jun 2016 21:55:46 GMT  
+		Size: 1.6 KB (1622 bytes)
 
 ## `php:5.5.36-alpine`
 
@@ -4474,17 +4474,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:09bf68d1baa32f617223699ae62b82b8938a858b2f9672c816fa5a96443b03ee
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5.36-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **27.1 MB (27081195 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:5c06790313f52b7a9279bb44a6f33375430e48a1eb20cf0f8cc000b69eb828b1`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.1 MB (27081195 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5c06790313f52b7a9279bb44a6f33375430e48a1eb20cf0f8cc000b69eb828b1`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -4515,25 +4515,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:1deecf649ab473af51e61e9d92bcba19739bb301d1f7935de1d4613c4a7ec4a6`  
-    Last Modified: Wed, 08 Jun 2016 21:56:51 GMT  
-    Size: 24.0 MB (24045051 bytes)
-  - `sha256:5dda17ed9b2bc6d6dc0df6c59de5d643806156be528ee8a0dcf27e2b9f1bca07`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 1.6 KB (1613 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:1deecf649ab473af51e61e9d92bcba19739bb301d1f7935de1d4613c4a7ec4a6`  
+		Last Modified: Wed, 08 Jun 2016 21:56:51 GMT  
+		Size: 24.0 MB (24045051 bytes)
+	-	`sha256:5dda17ed9b2bc6d6dc0df6c59de5d643806156be528ee8a0dcf27e2b9f1bca07`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 1.6 KB (1613 bytes)
 
 ## `php:5.5-alpine`
 
@@ -4541,17 +4541,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:09bf68d1baa32f617223699ae62b82b8938a858b2f9672c816fa5a96443b03ee
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **27.1 MB (27081195 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:5c06790313f52b7a9279bb44a6f33375430e48a1eb20cf0f8cc000b69eb828b1`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.1 MB (27081195 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5c06790313f52b7a9279bb44a6f33375430e48a1eb20cf0f8cc000b69eb828b1`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -4582,25 +4582,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:1deecf649ab473af51e61e9d92bcba19739bb301d1f7935de1d4613c4a7ec4a6`  
-    Last Modified: Wed, 08 Jun 2016 21:56:51 GMT  
-    Size: 24.0 MB (24045051 bytes)
-  - `sha256:5dda17ed9b2bc6d6dc0df6c59de5d643806156be528ee8a0dcf27e2b9f1bca07`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 1.6 KB (1613 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:1deecf649ab473af51e61e9d92bcba19739bb301d1f7935de1d4613c4a7ec4a6`  
+		Last Modified: Wed, 08 Jun 2016 21:56:51 GMT  
+		Size: 24.0 MB (24045051 bytes)
+	-	`sha256:5dda17ed9b2bc6d6dc0df6c59de5d643806156be528ee8a0dcf27e2b9f1bca07`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 1.6 KB (1613 bytes)
 
 ## `php:5.5.36-apache`
 
@@ -4608,17 +4608,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:35ce80ac54df870ca049a0600b4ad1235cd1cab3ae639b5605cec0514c6a6a39
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5.36-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **166.0 MB (165973562 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:54362250028d033ee1f5a9df909a071107523c79e7e92d1fe2636ce9b3e8ad92`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **166.0 MB (165973562 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:54362250028d033ee1f5a9df909a071107523c79e7e92d1fe2636ce9b3e8ad92`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -4669,40 +4669,40 @@ EXPOSE 80/tcp
 CMD ["apache2-foreground"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
-    Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
-    Size: 2.9 MB (2864924 bytes)
-  - `sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 321.0 B
-  - `sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 426.0 B
-  - `sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
-    Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
-    Size: 3.4 KB (3365 bytes)
-  - `sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
-    Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
-    Size: 862.0 B
-  - `sha256:822e5132d50db2d48ed51f3f0eb23b730807893d3a2e153b22dbe078272359d3`  
-    Last Modified: Wed, 08 Jun 2016 21:57:26 GMT  
-    Size: 32.7 MB (32703599 bytes)
-  - `sha256:faeaa5ce2306d276df318130ecc2a4e69e520dab7ee2ac18604b09b72554c5de`  
-    Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
-    Size: 1.6 KB (1618 bytes)
-  - `sha256:cf070eedb47fee4a7433dec42247dff90b5c44e36a795128d23d4c1fedc38716`  
-    Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
-    Size: 289.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
+		Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
+		Size: 2.9 MB (2864924 bytes)
+	-	`sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 321.0 B
+	-	`sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 426.0 B
+	-	`sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
+		Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
+		Size: 3.4 KB (3365 bytes)
+	-	`sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
+		Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
+		Size: 862.0 B
+	-	`sha256:822e5132d50db2d48ed51f3f0eb23b730807893d3a2e153b22dbe078272359d3`  
+		Last Modified: Wed, 08 Jun 2016 21:57:26 GMT  
+		Size: 32.7 MB (32703599 bytes)
+	-	`sha256:faeaa5ce2306d276df318130ecc2a4e69e520dab7ee2ac18604b09b72554c5de`  
+		Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
+		Size: 1.6 KB (1618 bytes)
+	-	`sha256:cf070eedb47fee4a7433dec42247dff90b5c44e36a795128d23d4c1fedc38716`  
+		Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
+		Size: 289.0 B
 
 ## `php:5.5-apache`
 
@@ -4710,17 +4710,17 @@ CMD ["apache2-foreground"]
 $ docker pull php@sha256:35ce80ac54df870ca049a0600b4ad1235cd1cab3ae639b5605cec0514c6a6a39
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5-apache` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **166.0 MB (165973562 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:54362250028d033ee1f5a9df909a071107523c79e7e92d1fe2636ce9b3e8ad92`
-- Default Command: `["apache2-foreground"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **166.0 MB (165973562 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:54362250028d033ee1f5a9df909a071107523c79e7e92d1fe2636ce9b3e8ad92`
+-	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -4771,40 +4771,40 @@ EXPOSE 80/tcp
 CMD ["apache2-foreground"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
-    Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
-    Size: 2.9 MB (2864924 bytes)
-  - `sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 321.0 B
-  - `sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
-    Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
-    Size: 426.0 B
-  - `sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
-    Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
-    Size: 3.4 KB (3365 bytes)
-  - `sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
-    Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
-    Size: 862.0 B
-  - `sha256:822e5132d50db2d48ed51f3f0eb23b730807893d3a2e153b22dbe078272359d3`  
-    Last Modified: Wed, 08 Jun 2016 21:57:26 GMT  
-    Size: 32.7 MB (32703599 bytes)
-  - `sha256:faeaa5ce2306d276df318130ecc2a4e69e520dab7ee2ac18604b09b72554c5de`  
-    Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
-    Size: 1.6 KB (1618 bytes)
-  - `sha256:cf070eedb47fee4a7433dec42247dff90b5c44e36a795128d23d4c1fedc38716`  
-    Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
-    Size: 289.0 B
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:d4baa9f714286497cd2eb48cd82b40584b1cdbc708a7e9a3734957f2c27c121f`  
+		Last Modified: Wed, 08 Jun 2016 21:57:08 GMT  
+		Size: 2.9 MB (2864924 bytes)
+	-	`sha256:3b6e0eedc5e81ec5692cd9f99b5113cdcf5dcfb6608505b2cb1db5e8d1261fa4`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 321.0 B
+	-	`sha256:7466b90b9686cdf6342c411c73302bc142b342012c99fcb20a60771bb2309637`  
+		Last Modified: Wed, 08 Jun 2016 21:57:05 GMT  
+		Size: 426.0 B
+	-	`sha256:409f3b910039ffc9e65515d7bd5dc92d2673003e7b8e1530829ddf4a33ed4f84`  
+		Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
+		Size: 3.4 KB (3365 bytes)
+	-	`sha256:5bdd8b17ab607b267d2092f393093ac1e3724753937476119b946cb1d5514cfc`  
+		Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
+		Size: 862.0 B
+	-	`sha256:822e5132d50db2d48ed51f3f0eb23b730807893d3a2e153b22dbe078272359d3`  
+		Last Modified: Wed, 08 Jun 2016 21:57:26 GMT  
+		Size: 32.7 MB (32703599 bytes)
+	-	`sha256:faeaa5ce2306d276df318130ecc2a4e69e520dab7ee2ac18604b09b72554c5de`  
+		Last Modified: Wed, 08 Jun 2016 21:57:03 GMT  
+		Size: 1.6 KB (1618 bytes)
+	-	`sha256:cf070eedb47fee4a7433dec42247dff90b5c44e36a795128d23d4c1fedc38716`  
+		Last Modified: Wed, 08 Jun 2016 21:57:04 GMT  
+		Size: 289.0 B
 
 ## `php:5.5.36-fpm`
 
@@ -4812,17 +4812,17 @@ CMD ["apache2-foreground"]
 $ docker pull php@sha256:98b55c37e2230354e107349a5bd25cda8f677729d989f5a4c7d427dc2807bd3d
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5.36-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **156.2 MB (156195378 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:00cfe602f354070431abe9b7d1a99aa7b6aa9d81cc44bd7b3ef700b0fe92c3f4`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.2 MB (156195378 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:00cfe602f354070431abe9b7d1a99aa7b6aa9d81cc44bd7b3ef700b0fe92c3f4`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -4861,28 +4861,28 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:ca4d0a1b36a362d7b5e7ef9571344a0c48efb298caf700d6df903cf3039dcf33`  
-    Last Modified: Wed, 08 Jun 2016 21:57:56 GMT  
-    Size: 25.8 MB (25787928 bytes)
-  - `sha256:e452a44773f3c6269de4b80a91ffc5f4be063b2866cdbfa6c12349f645097e62`  
-    Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
-    Size: 1.6 KB (1624 bytes)
-  - `sha256:2c800bac4753f385e4582805c2eba63ca9ba71864a573e9675fca78d70e31cf9`  
-    Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
-    Size: 129.0 B
-  - `sha256:4a5f4e4836148d9b94378bf5a8618e59456d094f8eb540aa148113def2a9d756`  
-    Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
-    Size: 7.5 KB (7539 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:ca4d0a1b36a362d7b5e7ef9571344a0c48efb298caf700d6df903cf3039dcf33`  
+		Last Modified: Wed, 08 Jun 2016 21:57:56 GMT  
+		Size: 25.8 MB (25787928 bytes)
+	-	`sha256:e452a44773f3c6269de4b80a91ffc5f4be063b2866cdbfa6c12349f645097e62`  
+		Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
+		Size: 1.6 KB (1624 bytes)
+	-	`sha256:2c800bac4753f385e4582805c2eba63ca9ba71864a573e9675fca78d70e31cf9`  
+		Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
+		Size: 129.0 B
+	-	`sha256:4a5f4e4836148d9b94378bf5a8618e59456d094f8eb540aa148113def2a9d756`  
+		Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
+		Size: 7.5 KB (7539 bytes)
 
 ## `php:5.5-fpm`
 
@@ -4890,17 +4890,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:98b55c37e2230354e107349a5bd25cda8f677729d989f5a4c7d427dc2807bd3d
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5-fpm` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **156.2 MB (156195378 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:00cfe602f354070431abe9b7d1a99aa7b6aa9d81cc44bd7b3ef700b0fe92c3f4`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.2 MB (156195378 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:00cfe602f354070431abe9b7d1a99aa7b6aa9d81cc44bd7b3ef700b0fe92c3f4`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -4939,28 +4939,28 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:ca4d0a1b36a362d7b5e7ef9571344a0c48efb298caf700d6df903cf3039dcf33`  
-    Last Modified: Wed, 08 Jun 2016 21:57:56 GMT  
-    Size: 25.8 MB (25787928 bytes)
-  - `sha256:e452a44773f3c6269de4b80a91ffc5f4be063b2866cdbfa6c12349f645097e62`  
-    Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
-    Size: 1.6 KB (1624 bytes)
-  - `sha256:2c800bac4753f385e4582805c2eba63ca9ba71864a573e9675fca78d70e31cf9`  
-    Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
-    Size: 129.0 B
-  - `sha256:4a5f4e4836148d9b94378bf5a8618e59456d094f8eb540aa148113def2a9d756`  
-    Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
-    Size: 7.5 KB (7539 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:ca4d0a1b36a362d7b5e7ef9571344a0c48efb298caf700d6df903cf3039dcf33`  
+		Last Modified: Wed, 08 Jun 2016 21:57:56 GMT  
+		Size: 25.8 MB (25787928 bytes)
+	-	`sha256:e452a44773f3c6269de4b80a91ffc5f4be063b2866cdbfa6c12349f645097e62`  
+		Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
+		Size: 1.6 KB (1624 bytes)
+	-	`sha256:2c800bac4753f385e4582805c2eba63ca9ba71864a573e9675fca78d70e31cf9`  
+		Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
+		Size: 129.0 B
+	-	`sha256:4a5f4e4836148d9b94378bf5a8618e59456d094f8eb540aa148113def2a9d756`  
+		Last Modified: Wed, 08 Jun 2016 21:57:37 GMT  
+		Size: 7.5 KB (7539 bytes)
 
 ## `php:5.5.36-fpm-alpine`
 
@@ -4968,17 +4968,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:ddd184274e1de884c3827555d689d8986c51ec7f26a13ac7a07e16bd8d6002be
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5.36-fpm-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **30.7 MB (30693945 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:8d051e023d0cda794924cdedcf053553950c47f30432e965c2700fe21d14da2d`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.7 MB (30693945 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8d051e023d0cda794924cdedcf053553950c47f30432e965c2700fe21d14da2d`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -5017,31 +5017,31 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:c957c930f391b445e58cb5a79f9569f7448339e54d99ff57ee24f52a50cd6774`  
-    Last Modified: Wed, 08 Jun 2016 21:58:30 GMT  
-    Size: 27.7 MB (27650141 bytes)
-  - `sha256:ae7e65741776767319bdbf9e9679f4c0f45fa274fe4b7150f8e09e02ce6e6825`  
-    Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
-    Size: 1.6 KB (1616 bytes)
-  - `sha256:43daa0517a6b88d841f75e1c80c8a13d186d49b73d4ab9277918c22e1dcfd6c7`  
-    Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
-    Size: 128.0 B
-  - `sha256:6c238fddff703ad939285861aa96c782bb98ca401545863ea8c96f5b37abce2b`  
-    Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
-    Size: 7.5 KB (7529 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:c957c930f391b445e58cb5a79f9569f7448339e54d99ff57ee24f52a50cd6774`  
+		Last Modified: Wed, 08 Jun 2016 21:58:30 GMT  
+		Size: 27.7 MB (27650141 bytes)
+	-	`sha256:ae7e65741776767319bdbf9e9679f4c0f45fa274fe4b7150f8e09e02ce6e6825`  
+		Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
+		Size: 1.6 KB (1616 bytes)
+	-	`sha256:43daa0517a6b88d841f75e1c80c8a13d186d49b73d4ab9277918c22e1dcfd6c7`  
+		Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
+		Size: 128.0 B
+	-	`sha256:6c238fddff703ad939285861aa96c782bb98ca401545863ea8c96f5b37abce2b`  
+		Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
+		Size: 7.5 KB (7529 bytes)
 
 ## `php:5.5-fpm-alpine`
 
@@ -5049,17 +5049,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:ddd184274e1de884c3827555d689d8986c51ec7f26a13ac7a07e16bd8d6002be
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5-fpm-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **30.7 MB (30693945 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:8d051e023d0cda794924cdedcf053553950c47f30432e965c2700fe21d14da2d`
-- Default Command: `["php-fpm"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.7 MB (30693945 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8d051e023d0cda794924cdedcf053553950c47f30432e965c2700fe21d14da2d`
+-	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -5098,31 +5098,31 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:c957c930f391b445e58cb5a79f9569f7448339e54d99ff57ee24f52a50cd6774`  
-    Last Modified: Wed, 08 Jun 2016 21:58:30 GMT  
-    Size: 27.7 MB (27650141 bytes)
-  - `sha256:ae7e65741776767319bdbf9e9679f4c0f45fa274fe4b7150f8e09e02ce6e6825`  
-    Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
-    Size: 1.6 KB (1616 bytes)
-  - `sha256:43daa0517a6b88d841f75e1c80c8a13d186d49b73d4ab9277918c22e1dcfd6c7`  
-    Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
-    Size: 128.0 B
-  - `sha256:6c238fddff703ad939285861aa96c782bb98ca401545863ea8c96f5b37abce2b`  
-    Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
-    Size: 7.5 KB (7529 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:c957c930f391b445e58cb5a79f9569f7448339e54d99ff57ee24f52a50cd6774`  
+		Last Modified: Wed, 08 Jun 2016 21:58:30 GMT  
+		Size: 27.7 MB (27650141 bytes)
+	-	`sha256:ae7e65741776767319bdbf9e9679f4c0f45fa274fe4b7150f8e09e02ce6e6825`  
+		Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
+		Size: 1.6 KB (1616 bytes)
+	-	`sha256:43daa0517a6b88d841f75e1c80c8a13d186d49b73d4ab9277918c22e1dcfd6c7`  
+		Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
+		Size: 128.0 B
+	-	`sha256:6c238fddff703ad939285861aa96c782bb98ca401545863ea8c96f5b37abce2b`  
+		Last Modified: Wed, 08 Jun 2016 21:58:09 GMT  
+		Size: 7.5 KB (7529 bytes)
 
 ## `php:5.5.36-zts`
 
@@ -5130,17 +5130,17 @@ CMD ["php-fpm"]
 $ docker pull php@sha256:2dcb8ccded6accb1093b5f048fe989df9a936267aec72a42bf677de0b4c71a8d
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5.36-zts` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **152.8 MB (152800874 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c72a7149d3f4d83e61b8caf8a73d2d55f5ac1b1e43cd22a12c69ea9efea38a63`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **152.8 MB (152800874 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c72a7149d3f4d83e61b8caf8a73d2d55f5ac1b1e43cd22a12c69ea9efea38a63`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -5173,22 +5173,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:811b1b01a8d2eee67446789e966ad21fb6a0c5241eaecc0d63fe6eaf9ae3ceae`  
-    Last Modified: Wed, 08 Jun 2016 21:59:00 GMT  
-    Size: 22.4 MB (22401096 bytes)
-  - `sha256:087fde202b134d5e7c42b73a329e6656291f720f4255411417a9013037999afe`  
-    Last Modified: Wed, 08 Jun 2016 21:58:42 GMT  
-    Size: 1.6 KB (1620 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:811b1b01a8d2eee67446789e966ad21fb6a0c5241eaecc0d63fe6eaf9ae3ceae`  
+		Last Modified: Wed, 08 Jun 2016 21:59:00 GMT  
+		Size: 22.4 MB (22401096 bytes)
+	-	`sha256:087fde202b134d5e7c42b73a329e6656291f720f4255411417a9013037999afe`  
+		Last Modified: Wed, 08 Jun 2016 21:58:42 GMT  
+		Size: 1.6 KB (1620 bytes)
 
 ## `php:5.5-zts`
 
@@ -5196,17 +5196,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:2dcb8ccded6accb1093b5f048fe989df9a936267aec72a42bf677de0b4c71a8d
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5-zts` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **152.8 MB (152800874 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c72a7149d3f4d83e61b8caf8a73d2d55f5ac1b1e43cd22a12c69ea9efea38a63`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **152.8 MB (152800874 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c72a7149d3f4d83e61b8caf8a73d2d55f5ac1b1e43cd22a12c69ea9efea38a63`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:51:04 GMT
@@ -5239,22 +5239,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-    Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-    Size: 51.4 MB (51356334 bytes)
-  - `sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
-    Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
-    Size: 79.0 MB (79041645 bytes)
-  - `sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
-    Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
-    Size: 179.0 B
-  - `sha256:811b1b01a8d2eee67446789e966ad21fb6a0c5241eaecc0d63fe6eaf9ae3ceae`  
-    Last Modified: Wed, 08 Jun 2016 21:59:00 GMT  
-    Size: 22.4 MB (22401096 bytes)
-  - `sha256:087fde202b134d5e7c42b73a329e6656291f720f4255411417a9013037999afe`  
-    Last Modified: Wed, 08 Jun 2016 21:58:42 GMT  
-    Size: 1.6 KB (1620 bytes)
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:3234e782e15b4986a2dec74fcc6ed3a0bd3ce3e63b05e80e876d0d8275312417`  
+		Last Modified: Wed, 08 Jun 2016 21:56:11 GMT  
+		Size: 79.0 MB (79041645 bytes)
+	-	`sha256:6450a2e3df137b3b8ac871260324c4d9ca1446198d887dd25ad845760dc97254`  
+		Last Modified: Wed, 08 Jun 2016 21:55:45 GMT  
+		Size: 179.0 B
+	-	`sha256:811b1b01a8d2eee67446789e966ad21fb6a0c5241eaecc0d63fe6eaf9ae3ceae`  
+		Last Modified: Wed, 08 Jun 2016 21:59:00 GMT  
+		Size: 22.4 MB (22401096 bytes)
+	-	`sha256:087fde202b134d5e7c42b73a329e6656291f720f4255411417a9013037999afe`  
+		Last Modified: Wed, 08 Jun 2016 21:58:42 GMT  
+		Size: 1.6 KB (1620 bytes)
 
 ## `php:5.5.36-zts-alpine`
 
@@ -5262,17 +5262,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:162238f6b57c4c1e87359912c0a8b9c94b3388a481361b71ffbb52cee525659c
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5.36-zts-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **27.1 MB (27137934 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:e4cb9e4377c3e556f8cde4385c0903f2a568feb6e07a11e845ad748e906883e2`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.1 MB (27137934 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e4cb9e4377c3e556f8cde4385c0903f2a568feb6e07a11e845ad748e906883e2`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -5305,25 +5305,25 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:1e76c9edbdb766c7428be9b722dccd9deb199fd85e8b7ba7f8bdb7615d471ade`  
-    Last Modified: Wed, 08 Jun 2016 21:59:33 GMT  
-    Size: 24.1 MB (24101791 bytes)
-  - `sha256:59e680c52b57b249e988a7591513bbcaaf2583ce080ef1cbd45b94dbfc36eb26`  
-    Last Modified: Wed, 08 Jun 2016 21:59:11 GMT  
-    Size: 1.6 KB (1612 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:1e76c9edbdb766c7428be9b722dccd9deb199fd85e8b7ba7f8bdb7615d471ade`  
+		Last Modified: Wed, 08 Jun 2016 21:59:33 GMT  
+		Size: 24.1 MB (24101791 bytes)
+	-	`sha256:59e680c52b57b249e988a7591513bbcaaf2583ce080ef1cbd45b94dbfc36eb26`  
+		Last Modified: Wed, 08 Jun 2016 21:59:11 GMT  
+		Size: 1.6 KB (1612 bytes)
 
 ## `php:5.5-zts-alpine`
 
@@ -5331,17 +5331,17 @@ CMD ["php" "-a"]
 $ docker pull php@sha256:162238f6b57c4c1e87359912c0a8b9c94b3388a481361b71ffbb52cee525659c
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `php:5.5-zts-alpine` - linux; amd64
 
-- Docker Version: 1.10.3
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **27.1 MB (27137934 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:e4cb9e4377c3e556f8cde4385c0903f2a568feb6e07a11e845ad748e906883e2`
-- Default Command: `["php","-a"]`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.1 MB (27137934 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e4cb9e4377c3e556f8cde4385c0903f2a568feb6e07a11e845ad748e906883e2`
+-	Default Command: `["php","-a"]`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
@@ -5374,22 +5374,22 @@ COPY multi:84a482b811b51f87e44ec386bb5e222a9696ec75c9b930ea13a4a4e05660c5bd in /
 CMD ["php" "-a"]
 ```
 
-- Layers:
-  - `sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-    Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-    Size: 2.3 MB (2310272 bytes)
-  - `sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
-    Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
-    Size: 701.9 KB (701861 bytes)
-  - `sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
-    Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
-    Size: 22.2 KB (22230 bytes)
-  - `sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
-    Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
-    Size: 168.0 B
-  - `sha256:1e76c9edbdb766c7428be9b722dccd9deb199fd85e8b7ba7f8bdb7615d471ade`  
-    Last Modified: Wed, 08 Jun 2016 21:59:33 GMT  
-    Size: 24.1 MB (24101791 bytes)
-  - `sha256:59e680c52b57b249e988a7591513bbcaaf2583ce080ef1cbd45b94dbfc36eb26`  
-    Last Modified: Wed, 08 Jun 2016 21:59:11 GMT  
-    Size: 1.6 KB (1612 bytes)
+-	Layers:
+	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
+		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
+		Size: 2.3 MB (2310272 bytes)
+	-	`sha256:abe5017ce7f3268fc438c66603e2ef5a88c2c9ae8fdbda12c17ef574f1241170`  
+		Last Modified: Wed, 08 Jun 2016 21:56:30 GMT  
+		Size: 701.9 KB (701861 bytes)
+	-	`sha256:d45f978624457119d329668d25bbcf21d3e6e749ccd9a1d28fffc91b308ea5e7`  
+		Last Modified: Wed, 08 Jun 2016 21:56:31 GMT  
+		Size: 22.2 KB (22230 bytes)
+	-	`sha256:e07af867184ff33cba0749797b60b96f234d6513e623f967fdd09002a80c86c1`  
+		Last Modified: Wed, 08 Jun 2016 21:56:29 GMT  
+		Size: 168.0 B
+	-	`sha256:1e76c9edbdb766c7428be9b722dccd9deb199fd85e8b7ba7f8bdb7615d471ade`  
+		Last Modified: Wed, 08 Jun 2016 21:59:33 GMT  
+		Size: 24.1 MB (24101791 bytes)
+	-	`sha256:59e680c52b57b249e988a7591513bbcaaf2583ce080ef1cbd45b94dbfc36eb26`  
+		Last Modified: Wed, 08 Jun 2016 21:59:11 GMT  
+		Size: 1.6 KB (1612 bytes)

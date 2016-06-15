@@ -11,18 +11,18 @@
 $ docker pull aerospike@sha256:3c0d45ed96931c9945faf16b03dbc8c56c3ab513cd5890b7dbdbed975b26c556
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `aerospike:3.8.2.3` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **58.7 MB (58698407 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `c2cb076516c3563fda364c176e9bde280da792635d8fa3d73abcc049b2e3b1f3`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["asd"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **58.7 MB (58698407 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `c2cb076516c3563fda364c176e9bde280da792635d8fa3d73abcc049b2e3b1f3`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["asd"]`
 
 ```dockerfile
 # Fri, 27 May 2016 14:14:54 GMT
@@ -55,31 +55,31 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["asd"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:aa3fc7a39f4251be32e13108e532a22b0cd9cc1fa90448d3798a2ca17a8e69d7`  
-    Last Modified: Thu, 17 Dec 2015 00:52:48 GMT  
-    Size: 310.0 B
-  - `sha256:ff05f48c93ac27c3071802cc39c249b833392f20043961aa232ea4fd738e3125`  
-    Last Modified: Thu, 02 Jun 2016 22:04:22 GMT  
-    Size: 971.0 B
-  - `sha256:2559c0db37bef4d651c070b4e58c88148c0e025206d62fbcdbf4ad425f9f2876`  
-    Last Modified: Thu, 02 Jun 2016 22:04:34 GMT  
-    Size: 10.0 MB (10047442 bytes)
-  - `sha256:e7491a747824095463fa464d4d5f7941ff65277012f8102464e9531eb59db7a5`  
-    Last Modified: Fri, 27 May 2016 14:28:53 GMT  
-    Size: 681.0 B
-  - `sha256:ac6ad7efd0f97fbaa04d98cbfa6deb994382723ba32b23e46c0ef5b0afcc543e`  
-    Last Modified: Fri, 27 May 2016 14:28:56 GMT  
-    Size: 517.0 B
-  - `sha256:9d7d19c9dc56f51e04f598d8bb8dba1f5cde61434935959ef827ced31f1eb80c`  
-    Last Modified: Fri, 27 May 2016 14:28:59 GMT  
-    Size: 761.0 B
-  - `sha256:5ba4f30e5bea63dcc2e7054b8b4f41ab1e5fcc7db0a88fc79359b890bcfe2258`  
-    Last Modified: Fri, 27 May 2016 14:29:17 GMT  
-    Size: 48.6 MB (48647693 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:aa3fc7a39f4251be32e13108e532a22b0cd9cc1fa90448d3798a2ca17a8e69d7`  
+		Last Modified: Thu, 17 Dec 2015 00:52:48 GMT  
+		Size: 310.0 B
+	-	`sha256:ff05f48c93ac27c3071802cc39c249b833392f20043961aa232ea4fd738e3125`  
+		Last Modified: Thu, 02 Jun 2016 22:04:22 GMT  
+		Size: 971.0 B
+	-	`sha256:2559c0db37bef4d651c070b4e58c88148c0e025206d62fbcdbf4ad425f9f2876`  
+		Last Modified: Thu, 02 Jun 2016 22:04:34 GMT  
+		Size: 10.0 MB (10047442 bytes)
+	-	`sha256:e7491a747824095463fa464d4d5f7941ff65277012f8102464e9531eb59db7a5`  
+		Last Modified: Fri, 27 May 2016 14:28:53 GMT  
+		Size: 681.0 B
+	-	`sha256:ac6ad7efd0f97fbaa04d98cbfa6deb994382723ba32b23e46c0ef5b0afcc543e`  
+		Last Modified: Fri, 27 May 2016 14:28:56 GMT  
+		Size: 517.0 B
+	-	`sha256:9d7d19c9dc56f51e04f598d8bb8dba1f5cde61434935959ef827ced31f1eb80c`  
+		Last Modified: Fri, 27 May 2016 14:28:59 GMT  
+		Size: 761.0 B
+	-	`sha256:5ba4f30e5bea63dcc2e7054b8b4f41ab1e5fcc7db0a88fc79359b890bcfe2258`  
+		Last Modified: Fri, 27 May 2016 14:29:17 GMT  
+		Size: 48.6 MB (48647693 bytes)
 
 ## `aerospike:latest`
 
@@ -87,18 +87,18 @@ CMD ["asd"]
 $ docker pull aerospike@sha256:81ffd54de0eb5bebff89afb67ca8beef7f780ee0161d984ac33682b0c4a32850
 ```
 
-- Platforms:
-  - linux; amd64
+-	Platforms:
+	-	linux; amd64
 
 ### `aerospike:latest` - linux; amd64
 
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
-- Total Size: **58.7 MB (58698407 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `c2cb076516c3563fda364c176e9bde280da792635d8fa3d73abcc049b2e3b1f3`
-- Entrypoint: `["\/entrypoint.sh"]`
-- Default Command: `["asd"]`
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **58.7 MB (58698407 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `c2cb076516c3563fda364c176e9bde280da792635d8fa3d73abcc049b2e3b1f3`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["asd"]`
 
 ```dockerfile
 # Fri, 27 May 2016 14:14:54 GMT
@@ -131,28 +131,28 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 CMD ["asd"]
 ```
 
-- Layers:
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:aa3fc7a39f4251be32e13108e532a22b0cd9cc1fa90448d3798a2ca17a8e69d7`  
-    Last Modified: Thu, 17 Dec 2015 00:52:48 GMT  
-    Size: 310.0 B
-  - `sha256:ff05f48c93ac27c3071802cc39c249b833392f20043961aa232ea4fd738e3125`  
-    Last Modified: Thu, 02 Jun 2016 22:04:22 GMT  
-    Size: 971.0 B
-  - `sha256:2559c0db37bef4d651c070b4e58c88148c0e025206d62fbcdbf4ad425f9f2876`  
-    Last Modified: Thu, 02 Jun 2016 22:04:34 GMT  
-    Size: 10.0 MB (10047442 bytes)
-  - `sha256:e7491a747824095463fa464d4d5f7941ff65277012f8102464e9531eb59db7a5`  
-    Last Modified: Fri, 27 May 2016 14:28:53 GMT  
-    Size: 681.0 B
-  - `sha256:ac6ad7efd0f97fbaa04d98cbfa6deb994382723ba32b23e46c0ef5b0afcc543e`  
-    Last Modified: Fri, 27 May 2016 14:28:56 GMT  
-    Size: 517.0 B
-  - `sha256:9d7d19c9dc56f51e04f598d8bb8dba1f5cde61434935959ef827ced31f1eb80c`  
-    Last Modified: Fri, 27 May 2016 14:28:59 GMT  
-    Size: 761.0 B
-  - `sha256:5ba4f30e5bea63dcc2e7054b8b4f41ab1e5fcc7db0a88fc79359b890bcfe2258`  
-    Last Modified: Fri, 27 May 2016 14:29:17 GMT  
-    Size: 48.6 MB (48647693 bytes)
+-	Layers:
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:aa3fc7a39f4251be32e13108e532a22b0cd9cc1fa90448d3798a2ca17a8e69d7`  
+		Last Modified: Thu, 17 Dec 2015 00:52:48 GMT  
+		Size: 310.0 B
+	-	`sha256:ff05f48c93ac27c3071802cc39c249b833392f20043961aa232ea4fd738e3125`  
+		Last Modified: Thu, 02 Jun 2016 22:04:22 GMT  
+		Size: 971.0 B
+	-	`sha256:2559c0db37bef4d651c070b4e58c88148c0e025206d62fbcdbf4ad425f9f2876`  
+		Last Modified: Thu, 02 Jun 2016 22:04:34 GMT  
+		Size: 10.0 MB (10047442 bytes)
+	-	`sha256:e7491a747824095463fa464d4d5f7941ff65277012f8102464e9531eb59db7a5`  
+		Last Modified: Fri, 27 May 2016 14:28:53 GMT  
+		Size: 681.0 B
+	-	`sha256:ac6ad7efd0f97fbaa04d98cbfa6deb994382723ba32b23e46c0ef5b0afcc543e`  
+		Last Modified: Fri, 27 May 2016 14:28:56 GMT  
+		Size: 517.0 B
+	-	`sha256:9d7d19c9dc56f51e04f598d8bb8dba1f5cde61434935959ef827ced31f1eb80c`  
+		Last Modified: Fri, 27 May 2016 14:28:59 GMT  
+		Size: 761.0 B
+	-	`sha256:5ba4f30e5bea63dcc2e7054b8b4f41ab1e5fcc7db0a88fc79359b890bcfe2258`  
+		Last Modified: Fri, 27 May 2016 14:29:17 GMT  
+		Size: 48.6 MB (48647693 bytes)
