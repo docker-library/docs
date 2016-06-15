@@ -2,8 +2,6 @@
 
 # Tags of `swarm`
 
--	[`swarm:1.0.0`](#swarm100)
--	[`swarm:1.0.1`](#swarm101)
 -	[`swarm:1.1.0`](#swarm110)
 -	[`swarm:1.1.1`](#swarm111)
 -	[`swarm:1.1.2`](#swarm112)
@@ -13,139 +11,12 @@
 -	[`swarm:1.2.2`](#swarm122)
 -	[`swarm:1.2.3`](#swarm123)
 -	[`swarm:latest`](#swarmlatest)
-
-## `swarm:1.0.0`
-
-```console
-$ docker pull swarm@sha256:ae7ad499bbfd5892f359ebb11d232ff64874f0c58cba1b2c9986148d575d53ab
-```
-
-- Platforms:
-  - linux; amd64
-
-### `swarm:1.0.0` - linux; amd64
-
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **4.0 MB (4046355 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:05511d25e817d189e882be92c06fe18a1d33ff35b4a9c35d94de228a26310e1e`
-- Entrypoint: `["\/swarm"]`
-- Default Command: `["--help"]`
-
-```dockerfile
-# Tue, 03 Nov 2015 20:07:28 GMT
-COPY file:66d7b7237b5c380651026eed6940ea05fe3038621e987d2e28db0b3fb9e051ad in /swarm
-# Tue, 03 Nov 2015 20:07:29 GMT
-COPY file:bd5264daff0b6a6c28a120bd54d918f7b7a303870be25fdad88ea669c51a3550 in /etc/ssl/certs/ca-certificates.crt
-# Wed, 03 Feb 2016 06:53:28 GMT
-COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
-# Wed, 03 Feb 2016 06:53:29 GMT
-ENV SWARM_HOST=:2375
-# Wed, 03 Feb 2016 06:53:29 GMT
-EXPOSE 2375/tcp
-# Wed, 03 Feb 2016 06:53:30 GMT
-VOLUME [/.swarm]
-# Wed, 03 Feb 2016 06:53:30 GMT
-ENTRYPOINT &{["/swarm"]}
-# Wed, 03 Feb 2016 06:53:31 GMT
-CMD ["--help"]
-```
-
-- Layers:
-  - `sha256:7e7b2af55efc4135608dbe07c932630311b15506067eff14ef601d73e8971aa7`  
-    Last Modified: Tue, 03 Nov 2015 20:18:58 GMT  
-    Size: 3.9 MB (3893462 bytes)
-  - `sha256:056632e86a18791cb8b47403cee7550b82c8e37365ea7248f5abffd9a70bcb8b`  
-    Last Modified: Tue, 03 Nov 2015 20:18:51 GMT  
-    Size: 152.6 KB (152602 bytes)
-  - `sha256:f805d18a5c3220056add08787d71ba90e7a54801f8b006d86d68d45528ce2d1b`  
-    Last Modified: Wed, 03 Feb 2016 06:54:43 GMT  
-    Size: 131.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-
-## `swarm:1.0.1`
-
-```console
-$ docker pull swarm@sha256:a04e1262e7c55ce7fad71dacd197c9296fe80b82cfb0ebea58cfd486d40f1c02
-```
-
-- Platforms:
-  - linux; amd64
-
-### `swarm:1.0.1` - linux; amd64
-
-- Docker Version: 1.9.1
-- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **4.4 MB (4373440 bytes)**  
-  (compressed transfer size, not on-disk size)
-- Image ID: `sha256:7e6ce8f78b683ada37b200003221895f28dde6febda665118b006f351b801126`
-- Entrypoint: `["\/swarm"]`
-- Default Command: `["--help"]`
-
-```dockerfile
-# Thu, 10 Dec 2015 01:02:58 GMT
-COPY file:f3942a5ce09256ce246b663eef6c56813d9a20cb7aeeff997f819f203c9e86bb in /swarm
-# Thu, 10 Dec 2015 01:02:58 GMT
-COPY file:bd5264daff0b6a6c28a120bd54d918f7b7a303870be25fdad88ea669c51a3550 in /etc/ssl/certs/ca-certificates.crt
-# Wed, 03 Feb 2016 06:53:39 GMT
-COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
-# Wed, 03 Feb 2016 06:53:40 GMT
-ENV SWARM_HOST=:2375
-# Wed, 03 Feb 2016 06:53:40 GMT
-EXPOSE 2375/tcp
-# Wed, 03 Feb 2016 06:53:41 GMT
-VOLUME [/.swarm]
-# Wed, 03 Feb 2016 06:53:41 GMT
-ENTRYPOINT &{["/swarm"]}
-# Wed, 03 Feb 2016 06:53:42 GMT
-CMD ["--help"]
-```
-
-- Layers:
-  - `sha256:b1a301e5400c2a26464bef9342494ff03b260dd6370055a94d8870ec6980f367`  
-    Last Modified: Thu, 10 Dec 2015 01:04:03 GMT  
-    Size: 4.2 MB (4220547 bytes)
-  - `sha256:c152b6e6082a443ca9d2263eb5d9339c786a3a083b9fbdd2c0be2c3993b235c4`  
-    Last Modified: Thu, 10 Dec 2015 01:03:57 GMT  
-    Size: 152.6 KB (152601 bytes)
-  - `sha256:fa34e1c94103c5e9b9c4d9685b23a3df772400387a304b6fb39846e8c4a294ba`  
-    Last Modified: Wed, 03 Feb 2016 06:55:02 GMT  
-    Size: 132.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+-	[`swarm:1.2.4-rc1`](#swarm124-rc1)
 
 ## `swarm:1.1.0`
 
 ```console
-$ docker pull swarm@sha256:17818a6d85d7c068e181b8f6f537f904c7d8db1cc78cae1ebe75337f4a638f94
+$ docker pull swarm@sha256:cba04d5b7c1afcde1ac79ba6bf6313f96395f5e708c5c8223e3fc33356102536
 ```
 
 - Platforms:
@@ -153,63 +24,48 @@ $ docker pull swarm@sha256:17818a6d85d7c068e181b8f6f537f904c7d8db1cc78cae1ebe753
 
 ### `swarm:1.1.0` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **4.6 MB (4570604 bytes)**  
+- Total Size: **4.6 MB (4570426 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:4b5b33ba4e4ff534fa8b2023bf54553c63aee6bfca2faa194247baae3e488c46`
+- Image ID: `sha256:a54696da10a7e005adfb50d6e35d26110d2495674bdc752037e26665af8a041f`
 - Entrypoint: `["\/swarm"]`
 - Default Command: `["--help"]`
 
 ```dockerfile
-# Thu, 04 Feb 2016 20:19:45 GMT
-COPY file:299691791ba677406e2174b5ddda52d593682864e36c8082506805859a8d36b2 in /swarm
-# Thu, 04 Feb 2016 20:19:46 GMT
-COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
-# Thu, 04 Feb 2016 20:19:46 GMT
-COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
-# Thu, 04 Feb 2016 20:19:46 GMT
+# Wed, 08 Jun 2016 20:26:42 GMT
+COPY file:c65264760cba9c042d8b3ce25ff4df37f4a6e6cea28c7f8f2b047d1932e16128 in /swarm
+# Wed, 08 Jun 2016 20:26:43 GMT
+COPY file:4ac98efa752a9c4de2a2f0048e77f1978d6d4ad2ce7f4f147da339c35c380e81 in /etc/ssl/certs/ca-certificates.crt
+# Wed, 08 Jun 2016 20:26:43 GMT
+COPY dir:d556676b4fb31ddaa271490e57c3a85e3c4bcc1e809b22d64b2f570c05149a22 in /tmp
+# Wed, 08 Jun 2016 20:26:43 GMT
 ENV SWARM_HOST=:2375
-# Thu, 04 Feb 2016 20:19:47 GMT
+# Wed, 08 Jun 2016 20:26:43 GMT
 EXPOSE 2375/tcp
-# Thu, 04 Feb 2016 20:19:47 GMT
+# Wed, 08 Jun 2016 20:26:44 GMT
 VOLUME [/.swarm]
-# Thu, 04 Feb 2016 20:19:48 GMT
+# Wed, 08 Jun 2016 20:26:44 GMT
 ENTRYPOINT &{["/swarm"]}
-# Thu, 04 Feb 2016 20:19:48 GMT
+# Wed, 08 Jun 2016 20:26:44 GMT
 CMD ["--help"]
 ```
 
 - Layers:
-  - `sha256:844fab328d6aa344a6f841631ee67ca73bdf70614cca51448e6361a36afb31cc`  
-    Last Modified: Thu, 04 Feb 2016 20:20:35 GMT  
-    Size: 4.4 MB (4414885 bytes)
-  - `sha256:d5394175923291f3dc27a558885ee94abad5ba3cd83d4e3de1b923671f911d53`  
-    Last Modified: Thu, 04 Feb 2016 20:20:30 GMT  
-    Size: 155.4 KB (155428 bytes)
-  - `sha256:3445c6fe19bed2225963590692fac374e9c174329f96f0cb7fe374f714c546d8`  
-    Last Modified: Thu, 04 Feb 2016 20:20:27 GMT  
-    Size: 131.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:fd1c4542fa8a4fda0b2b12d58d60746a2b62acfb8c15f7a037818097eec08910`  
+    Last Modified: Wed, 15 Jun 2016 01:36:40 GMT  
+    Size: 4.4 MB (4414881 bytes)
+  - `sha256:b13892e85da74f113afa5c0a59d74a5d90efe46c795fbe78b222fcb6eda78970`  
+    Last Modified: Wed, 15 Jun 2016 01:36:39 GMT  
+    Size: 155.4 KB (155422 bytes)
+  - `sha256:f2ef53a77fa48317177878812dd391cb278aad856fd198419e0d3ef51796aea4`  
+    Last Modified: Wed, 15 Jun 2016 01:36:38 GMT  
+    Size: 123.0 B
 
 ## `swarm:1.1.1`
 
 ```console
-$ docker pull swarm@sha256:607577cb1489cc314f7a4ae7a2cdb352b0225af53a2f256f6a4137cdf1d71503
+$ docker pull swarm@sha256:8975df731a8c9d6413958a66ad09a54f9f5f5df79036e16cc1da168ea3f66f30
 ```
 
 - Platforms:
@@ -217,63 +73,48 @@ $ docker pull swarm@sha256:607577cb1489cc314f7a4ae7a2cdb352b0225af53a2f256f6a413
 
 ### `swarm:1.1.1` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **4.6 MB (4571694 bytes)**  
+- Total Size: **4.6 MB (4571515 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c803935984452559b3c2bf92f5aa3d657a107f0a277825b66d1c74379cb5644a`
+- Image ID: `sha256:a30e3adb7318ed24825985d0472bd7f97b8aaf4b5cb54e0b7aa86089dcdbc01d`
 - Entrypoint: `["\/swarm"]`
 - Default Command: `["--help"]`
 
 ```dockerfile
-# Wed, 17 Feb 2016 22:58:03 GMT
-COPY file:c5da989df6ce4b8f6b770e13ab0e4aaf188fbdd11e4e0f08a52e3c202368ae1a in /swarm
-# Wed, 17 Feb 2016 22:58:04 GMT
-COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
-# Wed, 17 Feb 2016 22:58:05 GMT
-COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
-# Wed, 17 Feb 2016 22:58:06 GMT
+# Wed, 08 Jun 2016 20:26:45 GMT
+COPY file:8d4dbcddbf13d03b6a9939e2cf1e264d6c903ba469c586fc0ab52f92bfa98b9d in /swarm
+# Wed, 08 Jun 2016 20:26:46 GMT
+COPY file:4ac98efa752a9c4de2a2f0048e77f1978d6d4ad2ce7f4f147da339c35c380e81 in /etc/ssl/certs/ca-certificates.crt
+# Wed, 08 Jun 2016 20:26:46 GMT
+COPY dir:d556676b4fb31ddaa271490e57c3a85e3c4bcc1e809b22d64b2f570c05149a22 in /tmp
+# Wed, 08 Jun 2016 20:26:46 GMT
 ENV SWARM_HOST=:2375
-# Wed, 17 Feb 2016 22:58:06 GMT
+# Wed, 08 Jun 2016 20:26:47 GMT
 EXPOSE 2375/tcp
-# Wed, 17 Feb 2016 22:58:07 GMT
+# Wed, 08 Jun 2016 20:26:47 GMT
 VOLUME [/.swarm]
-# Wed, 17 Feb 2016 22:58:08 GMT
+# Wed, 08 Jun 2016 20:26:47 GMT
 ENTRYPOINT &{["/swarm"]}
-# Wed, 17 Feb 2016 22:58:09 GMT
+# Wed, 08 Jun 2016 20:26:47 GMT
 CMD ["--help"]
 ```
 
 - Layers:
-  - `sha256:d103637c81bc9d03e9cb362bbf5b315e1b653c334e9c2fa8f64f1548d3daed3f`  
-    Last Modified: Wed, 17 Feb 2016 22:59:35 GMT  
-    Size: 4.4 MB (4415977 bytes)
-  - `sha256:83682bbd6437ae7b84045d1014adfdd0f68c7b4952890fa2afce5944e7fafc42`  
-    Last Modified: Wed, 17 Feb 2016 22:59:29 GMT  
-    Size: 155.4 KB (155426 bytes)
-  - `sha256:d86e0d80f5ab7c68d533e755f06e310fa467556d966aa115b8332d060cce3c70`  
-    Last Modified: Wed, 17 Feb 2016 22:59:25 GMT  
-    Size: 131.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:07d7a1f06cfc866275e3478de1123508fc7f97e537ebcedd171fc8a5430e8864`  
+    Last Modified: Wed, 15 Jun 2016 01:36:51 GMT  
+    Size: 4.4 MB (4415972 bytes)
+  - `sha256:759fef79b5d017fb6a4a5e37c2703ea4177bd3a29e081dac615128a8658f3a7e`  
+    Last Modified: Wed, 15 Jun 2016 01:36:50 GMT  
+    Size: 155.4 KB (155420 bytes)
+  - `sha256:8ce793db63441683098be55a91038e49145ed1872811210bde0464992a6f6159`  
+    Last Modified: Wed, 15 Jun 2016 01:36:50 GMT  
+    Size: 123.0 B
 
 ## `swarm:1.1.2`
 
 ```console
-$ docker pull swarm@sha256:582021c6ce26ca786d1b60d98189d47215e16607c6935751a2fa83ef12b3d6dd
+$ docker pull swarm@sha256:d92970068991ba8af05804c1b2eca5bc5814a8ac9088b0710b711ce06eeb5efd
 ```
 
 - Platforms:
@@ -281,63 +122,48 @@ $ docker pull swarm@sha256:582021c6ce26ca786d1b60d98189d47215e16607c6935751a2fa8
 
 ### `swarm:1.1.2` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **4.6 MB (4571460 bytes)**  
+- Total Size: **4.6 MB (4571288 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:d1c2b663d66adbc7c547f0452fe29b940696cf066334cd5f33f794a7108357cb`
+- Image ID: `sha256:cbcbafe2e6282f373c6081ba8da598732a353b2cbbfb944e5b4eaab2f7065b33`
 - Entrypoint: `["\/swarm"]`
 - Default Command: `["--help"]`
 
 ```dockerfile
-# Thu, 18 Feb 2016 19:39:50 GMT
-COPY file:513b8c9f56b4041a6416ffddee013606620874958309f261c84d3453dde1a661 in /swarm
-# Thu, 18 Feb 2016 19:39:51 GMT
-COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
-# Thu, 18 Feb 2016 19:39:52 GMT
-COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
-# Thu, 18 Feb 2016 19:39:52 GMT
+# Wed, 08 Jun 2016 20:26:49 GMT
+COPY file:88c1f7a162e32aeacf2d4bf713b7b82e9d0789ff244efb0e7f87c6b3a74f715a in /swarm
+# Wed, 08 Jun 2016 20:26:49 GMT
+COPY file:4ac98efa752a9c4de2a2f0048e77f1978d6d4ad2ce7f4f147da339c35c380e81 in /etc/ssl/certs/ca-certificates.crt
+# Wed, 08 Jun 2016 20:26:49 GMT
+COPY dir:d556676b4fb31ddaa271490e57c3a85e3c4bcc1e809b22d64b2f570c05149a22 in /tmp
+# Wed, 08 Jun 2016 20:26:50 GMT
 ENV SWARM_HOST=:2375
-# Thu, 18 Feb 2016 19:39:53 GMT
+# Wed, 08 Jun 2016 20:26:50 GMT
 EXPOSE 2375/tcp
-# Thu, 18 Feb 2016 19:39:53 GMT
+# Wed, 08 Jun 2016 20:26:50 GMT
 VOLUME [/.swarm]
-# Thu, 18 Feb 2016 19:39:54 GMT
+# Wed, 08 Jun 2016 20:26:50 GMT
 ENTRYPOINT &{["/swarm"]}
-# Thu, 18 Feb 2016 19:39:54 GMT
+# Wed, 08 Jun 2016 20:26:51 GMT
 CMD ["--help"]
 ```
 
 - Layers:
-  - `sha256:01987f9f15e92534758a058e9a866902e8480e09651130d8bf3c0cca79652cfa`  
-    Last Modified: Thu, 18 Feb 2016 19:40:47 GMT  
-    Size: 4.4 MB (4415743 bytes)
-  - `sha256:d62cc2befb1b210c82806e8b1be2f6262655db392643c66a4350977226336fea`  
-    Last Modified: Thu, 18 Feb 2016 19:40:43 GMT  
-    Size: 155.4 KB (155426 bytes)
-  - `sha256:418fe09e10134a128adcdc798250e8726a4a95b866c765eb7655ae835568e0c2`  
-    Last Modified: Thu, 18 Feb 2016 19:40:40 GMT  
-    Size: 131.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:b1af2ec6ff5a02f9ad6d2919072e15d9d67db99631b20151f86885de57ef257c`  
+    Last Modified: Wed, 15 Jun 2016 01:37:03 GMT  
+    Size: 4.4 MB (4415742 bytes)
+  - `sha256:2da6a38a785674fea99111643930171b32649b6d484034045dd76376e0dfd3a5`  
+    Last Modified: Wed, 15 Jun 2016 01:37:02 GMT  
+    Size: 155.4 KB (155422 bytes)
+  - `sha256:da541e890d203bb174030950a6621d9dbcbf668a21eb3ebf37f5bf794610752e`  
+    Last Modified: Wed, 15 Jun 2016 01:37:01 GMT  
+    Size: 124.0 B
 
 ## `swarm:1.1.3`
 
 ```console
-$ docker pull swarm@sha256:29b296dfbf2b6d14026e4ca3182c5bef4bc73de1c143d963ca5b4c505120ef1c
+$ docker pull swarm@sha256:8008f015ba392bb830219c4c7dfdb3062100a2524760e7fcc0fb958705ac8284
 ```
 
 - Platforms:
@@ -345,63 +171,48 @@ $ docker pull swarm@sha256:29b296dfbf2b6d14026e4ca3182c5bef4bc73de1c143d963ca5b4
 
 ### `swarm:1.1.3` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **4.6 MB (4571489 bytes)**  
+- Total Size: **4.6 MB (4571313 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:291cbe419fe661bfff00d4b2ed7c599f348c7001c17042b2b9b369c495819715`
+- Image ID: `sha256:bf2fca117a03c0a624c3fbc661111176b674a16f1eb581bc10be437220415880`
 - Entrypoint: `["\/swarm"]`
 - Default Command: `["--help"]`
 
 ```dockerfile
-# Wed, 02 Mar 2016 05:23:01 GMT
-COPY file:88569a8af1b496ce71a8daa8a57960d121394015bd0b08f53a7fefb9d865b9e7 in /swarm
-# Wed, 02 Mar 2016 05:23:01 GMT
-COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
-# Wed, 02 Mar 2016 05:23:02 GMT
-COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
-# Wed, 02 Mar 2016 05:23:03 GMT
+# Wed, 08 Jun 2016 20:26:52 GMT
+COPY file:cf9de06a32f0e5d9b7f52835351440f3ecc768c233d52f9b14d18f68114fdd3e in /swarm
+# Wed, 08 Jun 2016 20:26:52 GMT
+COPY file:4ac98efa752a9c4de2a2f0048e77f1978d6d4ad2ce7f4f147da339c35c380e81 in /etc/ssl/certs/ca-certificates.crt
+# Wed, 08 Jun 2016 20:26:53 GMT
+COPY dir:d556676b4fb31ddaa271490e57c3a85e3c4bcc1e809b22d64b2f570c05149a22 in /tmp
+# Wed, 08 Jun 2016 20:26:53 GMT
 ENV SWARM_HOST=:2375
-# Wed, 02 Mar 2016 05:23:04 GMT
+# Wed, 08 Jun 2016 20:26:53 GMT
 EXPOSE 2375/tcp
-# Wed, 02 Mar 2016 05:23:04 GMT
+# Wed, 08 Jun 2016 20:26:54 GMT
 VOLUME [/.swarm]
-# Wed, 02 Mar 2016 05:23:05 GMT
+# Wed, 08 Jun 2016 20:26:54 GMT
 ENTRYPOINT &{["/swarm"]}
-# Wed, 02 Mar 2016 05:23:06 GMT
+# Wed, 08 Jun 2016 20:26:54 GMT
 CMD ["--help"]
 ```
 
 - Layers:
-  - `sha256:25da0aa87182c330388cd9a62c27afa20f81548c3d62b33547eedb592879013c`  
-    Last Modified: Wed, 02 Mar 2016 05:27:24 GMT  
-    Size: 4.4 MB (4415771 bytes)
-  - `sha256:45707a9f4c2b1fb69479713ddd7acf60deb3a3d2ac3f4a2de181279de9b8a26a`  
-    Last Modified: Wed, 02 Mar 2016 05:27:18 GMT  
-    Size: 155.4 KB (155426 bytes)
-  - `sha256:7f0c09406c8fea79ee44417995b5f9cfb51ae7677a91b30dd075083cb4992e1b`  
-    Last Modified: Wed, 02 Mar 2016 05:27:14 GMT  
-    Size: 132.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:203345bb86a3dbd79d7c8342b9442d6a0828afb75250b57c68e44b7e66eb1d47`  
+    Last Modified: Wed, 15 Jun 2016 01:37:15 GMT  
+    Size: 4.4 MB (4415768 bytes)
+  - `sha256:a6d1c28257d000fb9b8b793439243e0c7a5ddd5089b36a8de75ed47d23c99436`  
+    Last Modified: Wed, 15 Jun 2016 01:37:13 GMT  
+    Size: 155.4 KB (155421 bytes)
+  - `sha256:6b6fd910e6d4e8eb20a05635fb19caec44813644efa1c893ea2308ff306f1a1d`  
+    Last Modified: Wed, 15 Jun 2016 01:37:13 GMT  
+    Size: 124.0 B
 
 ## `swarm:1.2.0`
 
 ```console
-$ docker pull swarm@sha256:cb5513f92b0b0e41e46d2d6b7c5ee399096ba0fccfd1235b7e396ae5270379e5
+$ docker pull swarm@sha256:63c0c9930068b35b9abbe5d44c91a0e65449b58f79fcc613d8af87f9c06dc7a8
 ```
 
 - Platforms:
@@ -409,63 +220,48 @@ $ docker pull swarm@sha256:cb5513f92b0b0e41e46d2d6b7c5ee399096ba0fccfd1235b7e396
 
 ### `swarm:1.2.0` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **4.7 MB (4716300 bytes)**  
+- Total Size: **4.7 MB (4716121 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:0f1a3829719c3d6630722ca82e256ca59899c10ba7c4f4677362138bd78780af`
+- Image ID: `sha256:021d335278a5eb27d7dfacc2dde6003221809198313bafd4c407bcc96718d095`
 - Entrypoint: `["\/swarm"]`
 - Default Command: `["--help"]`
 
 ```dockerfile
-# Wed, 13 Apr 2016 17:24:58 GMT
-COPY file:3e8be0280cd9fbe9bbe35504612dae807b85c349b284c50bcee4f5a52c077610 in /swarm
-# Wed, 13 Apr 2016 17:24:59 GMT
-COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
-# Wed, 13 Apr 2016 17:25:00 GMT
-COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
-# Wed, 13 Apr 2016 17:25:00 GMT
+# Wed, 08 Jun 2016 20:26:56 GMT
+COPY file:95c4fe4fc42454b26dd2531f33d2ae3604f9a147c595eb767df7a45e058e9e1c in /swarm
+# Wed, 08 Jun 2016 20:26:56 GMT
+COPY file:4ac98efa752a9c4de2a2f0048e77f1978d6d4ad2ce7f4f147da339c35c380e81 in /etc/ssl/certs/ca-certificates.crt
+# Wed, 08 Jun 2016 20:26:56 GMT
+COPY dir:d556676b4fb31ddaa271490e57c3a85e3c4bcc1e809b22d64b2f570c05149a22 in /tmp
+# Wed, 08 Jun 2016 20:26:57 GMT
 ENV SWARM_HOST=:2375
-# Wed, 13 Apr 2016 17:25:01 GMT
+# Wed, 08 Jun 2016 20:26:57 GMT
 EXPOSE 2375/tcp
-# Wed, 13 Apr 2016 17:25:01 GMT
+# Wed, 08 Jun 2016 20:26:57 GMT
 VOLUME [/.swarm]
-# Wed, 13 Apr 2016 17:25:02 GMT
+# Wed, 08 Jun 2016 20:26:57 GMT
 ENTRYPOINT &{["/swarm"]}
-# Wed, 13 Apr 2016 17:25:03 GMT
+# Wed, 08 Jun 2016 20:26:58 GMT
 CMD ["--help"]
 ```
 
 - Layers:
-  - `sha256:8c01723048ed1d8def9b6f23696a0fb334bf852042341917abddb039b2391cc8`  
-    Last Modified: Wed, 13 Apr 2016 17:26:17 GMT  
-    Size: 4.6 MB (4560584 bytes)
-  - `sha256:28ef38ffcca55497125903f4eeabd91eb98031b52b762ab1fef63ca5f2db7141`  
-    Last Modified: Wed, 13 Apr 2016 17:26:11 GMT  
-    Size: 155.4 KB (155426 bytes)
-  - `sha256:f1f933319091d35ba2d117ac600d336390f5e6e8a65a41d3e72d86c124da3b5c`  
-    Last Modified: Wed, 13 Apr 2016 17:26:06 GMT  
-    Size: 130.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:97a6bf02ca04e83555717989ed2d5220beb1939d411c27d88dab86c0cbe7f171`  
+    Last Modified: Wed, 15 Jun 2016 01:37:27 GMT  
+    Size: 4.6 MB (4560576 bytes)
+  - `sha256:6d43d7ad77d75ee557aa02fb69118602e3f3bef36b88702eb8a6a30e512b2bbd`  
+    Last Modified: Wed, 15 Jun 2016 01:37:25 GMT  
+    Size: 155.4 KB (155421 bytes)
+  - `sha256:82cc3a2903707810b02f8640e1921338169122283b38ca1a9a899b9a212e090c`  
+    Last Modified: Wed, 15 Jun 2016 01:37:25 GMT  
+    Size: 124.0 B
 
 ## `swarm:1.2.1`
 
 ```console
-$ docker pull swarm@sha256:5aa3520404a3663883b05d808d4c20875491e5440024a94c2548a8a5c88c3e8f
+$ docker pull swarm@sha256:12800b8643d846181200c20c68c83e77594300cd2dddb1ceaf5134ef7801f266
 ```
 
 - Platforms:
@@ -473,63 +269,48 @@ $ docker pull swarm@sha256:5aa3520404a3663883b05d808d4c20875491e5440024a94c2548a
 
 ### `swarm:1.2.1` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **4.8 MB (4754635 bytes)**  
+- Total Size: **4.8 MB (4754463 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:47dc182ea74bed4c096eaf12a603ec0d67da120c9241c8dd015ae2a7de9f6bf2`
+- Image ID: `sha256:16d44301f2ee94fb7e978d02651ba921f6dac3bf2b8e06309f90badeb2eb5553`
 - Entrypoint: `["\/swarm"]`
 - Default Command: `["--help"]`
 
 ```dockerfile
-# Thu, 05 May 2016 01:06:24 GMT
-COPY file:bda3b46ecbf072dd5873bddb9c6038f60325d51a516144d75f77e7a99031c1e3 in /swarm
-# Thu, 05 May 2016 01:06:27 GMT
-COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
-# Thu, 05 May 2016 01:06:30 GMT
-COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
-# Thu, 05 May 2016 01:06:32 GMT
+# Wed, 08 Jun 2016 20:26:59 GMT
+COPY file:5fb28fe2a686c8fc6838f2ca0032449c71d4b0d659ef35eb5e8d9af6d0615e19 in /swarm
+# Wed, 08 Jun 2016 20:27:00 GMT
+COPY file:4ac98efa752a9c4de2a2f0048e77f1978d6d4ad2ce7f4f147da339c35c380e81 in /etc/ssl/certs/ca-certificates.crt
+# Wed, 08 Jun 2016 20:27:00 GMT
+COPY dir:d556676b4fb31ddaa271490e57c3a85e3c4bcc1e809b22d64b2f570c05149a22 in /tmp
+# Wed, 08 Jun 2016 20:27:00 GMT
 ENV SWARM_HOST=:2375
-# Thu, 05 May 2016 01:06:33 GMT
+# Wed, 08 Jun 2016 20:27:01 GMT
 EXPOSE 2375/tcp
-# Thu, 05 May 2016 01:06:35 GMT
+# Wed, 08 Jun 2016 20:27:01 GMT
 VOLUME [/.swarm]
-# Thu, 05 May 2016 01:06:37 GMT
+# Wed, 08 Jun 2016 20:27:01 GMT
 ENTRYPOINT &{["/swarm"]}
-# Thu, 05 May 2016 01:06:39 GMT
+# Wed, 08 Jun 2016 20:27:01 GMT
 CMD ["--help"]
 ```
 
 - Layers:
-  - `sha256:dd2ca02feeefd96e01ef93f71510f03f1e60bcbe3cae0bb5de1e92f866f3250a`  
-    Last Modified: Thu, 05 May 2016 01:10:38 GMT  
-    Size: 4.6 MB (4598916 bytes)
-  - `sha256:8e8ea52d4475417b62b98d804ff5d0caf307f41c2e2648d64812a3056bf4e223`  
-    Last Modified: Thu, 05 May 2016 01:10:28 GMT  
-    Size: 155.4 KB (155426 bytes)
-  - `sha256:397cd9ffad598262e7ae06952c35e5d613e15778f204df7697dd792952572349`  
-    Last Modified: Thu, 05 May 2016 01:10:22 GMT  
-    Size: 133.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:831f23abb2f86bac0f99d2b4edbd81e95f3cc92ae6df117c838b19702fe066d0`  
+    Last Modified: Wed, 15 Jun 2016 01:37:38 GMT  
+    Size: 4.6 MB (4598914 bytes)
+  - `sha256:f9338372e45c301839043d6add8f43af56905886830a064765a1283ecebf1803`  
+    Last Modified: Wed, 15 Jun 2016 01:37:36 GMT  
+    Size: 155.4 KB (155424 bytes)
+  - `sha256:8b37824a7842c9e73747a9d6c6cd30a76bf44367ac9b075890185b43d266675f`  
+    Last Modified: Wed, 15 Jun 2016 01:37:35 GMT  
+    Size: 125.0 B
 
 ## `swarm:1.2.2`
 
 ```console
-$ docker pull swarm@sha256:a00f81e1e7a60759efe6999cbfa2300e8378336083f31e15d1df293134086284
+$ docker pull swarm@sha256:55f2e793b22692ccb9e89d33f824fc96b7380c3ba3b6aa4fa18a0cca801a95b0
 ```
 
 - Platforms:
@@ -537,63 +318,48 @@ $ docker pull swarm@sha256:a00f81e1e7a60759efe6999cbfa2300e8378336083f31e15d1df2
 
 ### `swarm:1.2.2` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **4.8 MB (4754545 bytes)**  
+- Total Size: **4.8 MB (4754371 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:aec2d1acf489e2d4bb42232234068d51e58695aa5cfa0fecd3438c2a8266d300`
+- Image ID: `sha256:8a210b086f01699a704afae32c6126864c25bafbafee4049429b1a2f83b1d7b8`
 - Entrypoint: `["\/swarm"]`
 - Default Command: `["--help"]`
 
 ```dockerfile
-# Mon, 09 May 2016 18:29:16 GMT
-COPY file:b6afc6326c78aca9b5c0e293504ee4018d46c97dcb042562e031dc13b1da4254 in /swarm
-# Mon, 09 May 2016 18:29:18 GMT
-COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
-# Mon, 09 May 2016 18:29:18 GMT
-COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
-# Mon, 09 May 2016 18:29:20 GMT
+# Wed, 08 Jun 2016 20:27:03 GMT
+COPY file:4a2131804612014448fd577cef02315b40cb10e6033f7a9bc19d3c11f2bd2aa6 in /swarm
+# Wed, 08 Jun 2016 20:27:03 GMT
+COPY file:4ac98efa752a9c4de2a2f0048e77f1978d6d4ad2ce7f4f147da339c35c380e81 in /etc/ssl/certs/ca-certificates.crt
+# Wed, 08 Jun 2016 20:27:04 GMT
+COPY dir:d556676b4fb31ddaa271490e57c3a85e3c4bcc1e809b22d64b2f570c05149a22 in /tmp
+# Wed, 08 Jun 2016 20:27:04 GMT
 ENV SWARM_HOST=:2375
-# Mon, 09 May 2016 18:29:21 GMT
+# Wed, 08 Jun 2016 20:27:04 GMT
 EXPOSE 2375/tcp
-# Mon, 09 May 2016 18:29:21 GMT
+# Wed, 08 Jun 2016 20:27:05 GMT
 VOLUME [/.swarm]
-# Mon, 09 May 2016 18:29:22 GMT
+# Wed, 08 Jun 2016 20:27:05 GMT
 ENTRYPOINT &{["/swarm"]}
-# Mon, 09 May 2016 18:29:23 GMT
+# Wed, 08 Jun 2016 20:27:05 GMT
 CMD ["--help"]
 ```
 
 - Layers:
-  - `sha256:eada7ab697d2b9439c010c2c79d76e7ad9ad83597a589ec0d44c50610142e738`  
-    Last Modified: Mon, 09 May 2016 18:31:51 GMT  
-    Size: 4.6 MB (4598827 bytes)
-  - `sha256:afaf40cb2366036c17101af848349e7f94c70f354ec5a249dc461d705a21e6d3`  
-    Last Modified: Mon, 09 May 2016 18:31:44 GMT  
-    Size: 155.4 KB (155426 bytes)
-  - `sha256:7495da2669079868ddaa5473da3ece8bf8906a6cf28606eb0da0cd592dafd9a2`  
-    Last Modified: Mon, 09 May 2016 18:31:38 GMT  
-    Size: 132.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:aa31dd717aaf278c5ddc9d530d7da5945a19077e1d3c80882db1006a6ee3c7e4`  
+    Last Modified: Wed, 15 Jun 2016 01:37:49 GMT  
+    Size: 4.6 MB (4598826 bytes)
+  - `sha256:7da3687b5f870877f09f7069e5e012cb407fe0c9c89625a6541c50d279152d9f`  
+    Last Modified: Wed, 15 Jun 2016 01:37:48 GMT  
+    Size: 155.4 KB (155421 bytes)
+  - `sha256:bc0371d5558f2c6972a64f687868c5e5daf3e85fd6f11f992b219aa4c6644e61`  
+    Last Modified: Wed, 15 Jun 2016 01:37:47 GMT  
+    Size: 124.0 B
 
 ## `swarm:1.2.3`
 
 ```console
-$ docker pull swarm@sha256:02fdbfa3740ac923dc0c9a579ba04efaa0d39b0c05eb933358fe7421fdaf17b7
+$ docker pull swarm@sha256:661f2e4c9470e7f6238cebf603bcf5700c8b948894ac9e35f2cf6f63dcda723a
 ```
 
 - Platforms:
@@ -601,63 +367,48 @@ $ docker pull swarm@sha256:02fdbfa3740ac923dc0c9a579ba04efaa0d39b0c05eb933358fe7
 
 ### `swarm:1.2.3` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **4.8 MB (4761777 bytes)**  
+- Total Size: **4.8 MB (4761600 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c54bba0461581bfb6dd9ed47d49f8e9f2af1d841546524ea4a02f31e410eb20c`
+- Image ID: `sha256:a180b24e38eddf9e2133d07e9dc4c2ce7e74cb5adfe5bd34968a2b38f9685856`
 - Entrypoint: `["\/swarm"]`
 - Default Command: `["--help"]`
 
 ```dockerfile
-# Fri, 27 May 2016 18:08:48 GMT
-COPY file:a2157cec2320f541adc38616f3dae29c816b9cd1ed489f1c9ad623bfd3711a0a in /swarm
-# Fri, 27 May 2016 18:08:49 GMT
-COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
-# Fri, 27 May 2016 18:08:50 GMT
-COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
-# Fri, 27 May 2016 18:08:50 GMT
+# Wed, 08 Jun 2016 20:27:07 GMT
+COPY file:e883251ad707c51896a9634b5f634549c2d42a25f070996b6f94aeaf19a2e954 in /swarm
+# Wed, 08 Jun 2016 20:27:07 GMT
+COPY file:4ac98efa752a9c4de2a2f0048e77f1978d6d4ad2ce7f4f147da339c35c380e81 in /etc/ssl/certs/ca-certificates.crt
+# Wed, 08 Jun 2016 20:27:08 GMT
+COPY dir:d556676b4fb31ddaa271490e57c3a85e3c4bcc1e809b22d64b2f570c05149a22 in /tmp
+# Wed, 08 Jun 2016 20:27:08 GMT
 ENV SWARM_HOST=:2375
-# Fri, 27 May 2016 18:08:51 GMT
+# Wed, 08 Jun 2016 20:27:08 GMT
 EXPOSE 2375/tcp
-# Fri, 27 May 2016 18:08:52 GMT
+# Wed, 08 Jun 2016 20:27:08 GMT
 VOLUME [/.swarm]
-# Fri, 27 May 2016 18:08:52 GMT
+# Wed, 08 Jun 2016 20:27:09 GMT
 ENTRYPOINT &{["/swarm"]}
-# Fri, 27 May 2016 18:08:53 GMT
+# Wed, 08 Jun 2016 20:27:09 GMT
 CMD ["--help"]
 ```
 
 - Layers:
-  - `sha256:51436fd4bb0d38814af26a0477307d5a827d7cdcf7184ba6f120ba70ecbe3b7b`  
-    Last Modified: Fri, 27 May 2016 18:10:44 GMT  
-    Size: 4.6 MB (4606058 bytes)
-  - `sha256:c31a5390266f06e091213a6f51819ca18c910dccfad952e856bf0d6c204ceea3`  
-    Last Modified: Fri, 27 May 2016 18:10:37 GMT  
-    Size: 155.4 KB (155426 bytes)
-  - `sha256:e40019be13eaef9c40767d09ae571887851034c5ed893595f636f412f6e90973`  
-    Last Modified: Fri, 27 May 2016 18:10:32 GMT  
-    Size: 133.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:1e61bbec5d24dd5554433d74986724e34f1346a7702ff7b996bac193774c7058`  
+    Last Modified: Wed, 15 Jun 2016 01:38:00 GMT  
+    Size: 4.6 MB (4606056 bytes)
+  - `sha256:8c7b2f6b74da49fefbd6b2af532114d5c1248cb4eccf9b13662c767bb367d9f4`  
+    Last Modified: Wed, 15 Jun 2016 01:37:59 GMT  
+    Size: 155.4 KB (155420 bytes)
+  - `sha256:245a8db4f1e19ae84a9d00cd4fd9939acb1241c895f5519c4d66e4821aaf4da2`  
+    Last Modified: Wed, 15 Jun 2016 01:37:58 GMT  
+    Size: 124.0 B
 
 ## `swarm:latest`
 
 ```console
-$ docker pull swarm@sha256:02fdbfa3740ac923dc0c9a579ba04efaa0d39b0c05eb933358fe7421fdaf17b7
+$ docker pull swarm@sha256:661f2e4c9470e7f6238cebf603bcf5700c8b948894ac9e35f2cf6f63dcda723a
 ```
 
 - Platforms:
@@ -665,55 +416,89 @@ $ docker pull swarm@sha256:02fdbfa3740ac923dc0c9a579ba04efaa0d39b0c05eb933358fe7
 
 ### `swarm:latest` - linux; amd64
 
-- Docker Version: 1.9.1
+- Docker Version: 1.10.3
 - Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
-- Total Size: **4.8 MB (4761777 bytes)**  
+- Total Size: **4.8 MB (4761600 bytes)**  
   (compressed transfer size, not on-disk size)
-- Image ID: `sha256:c54bba0461581bfb6dd9ed47d49f8e9f2af1d841546524ea4a02f31e410eb20c`
+- Image ID: `sha256:a180b24e38eddf9e2133d07e9dc4c2ce7e74cb5adfe5bd34968a2b38f9685856`
 - Entrypoint: `["\/swarm"]`
 - Default Command: `["--help"]`
 
 ```dockerfile
-# Fri, 27 May 2016 18:08:48 GMT
-COPY file:a2157cec2320f541adc38616f3dae29c816b9cd1ed489f1c9ad623bfd3711a0a in /swarm
-# Fri, 27 May 2016 18:08:49 GMT
-COPY file:5acf949e76228329dcaf122cd7796be57ffffec8b7c06f59c1ff23e1b3166614 in /etc/ssl/certs/ca-certificates.crt
-# Fri, 27 May 2016 18:08:50 GMT
-COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tmp
-# Fri, 27 May 2016 18:08:50 GMT
+# Wed, 08 Jun 2016 20:27:07 GMT
+COPY file:e883251ad707c51896a9634b5f634549c2d42a25f070996b6f94aeaf19a2e954 in /swarm
+# Wed, 08 Jun 2016 20:27:07 GMT
+COPY file:4ac98efa752a9c4de2a2f0048e77f1978d6d4ad2ce7f4f147da339c35c380e81 in /etc/ssl/certs/ca-certificates.crt
+# Wed, 08 Jun 2016 20:27:08 GMT
+COPY dir:d556676b4fb31ddaa271490e57c3a85e3c4bcc1e809b22d64b2f570c05149a22 in /tmp
+# Wed, 08 Jun 2016 20:27:08 GMT
 ENV SWARM_HOST=:2375
-# Fri, 27 May 2016 18:08:51 GMT
+# Wed, 08 Jun 2016 20:27:08 GMT
 EXPOSE 2375/tcp
-# Fri, 27 May 2016 18:08:52 GMT
+# Wed, 08 Jun 2016 20:27:08 GMT
 VOLUME [/.swarm]
-# Fri, 27 May 2016 18:08:52 GMT
+# Wed, 08 Jun 2016 20:27:09 GMT
 ENTRYPOINT &{["/swarm"]}
-# Fri, 27 May 2016 18:08:53 GMT
+# Wed, 08 Jun 2016 20:27:09 GMT
 CMD ["--help"]
 ```
 
 - Layers:
-  - `sha256:51436fd4bb0d38814af26a0477307d5a827d7cdcf7184ba6f120ba70ecbe3b7b`  
-    Last Modified: Fri, 27 May 2016 18:10:44 GMT  
-    Size: 4.6 MB (4606058 bytes)
-  - `sha256:c31a5390266f06e091213a6f51819ca18c910dccfad952e856bf0d6c204ceea3`  
-    Last Modified: Fri, 27 May 2016 18:10:37 GMT  
-    Size: 155.4 KB (155426 bytes)
-  - `sha256:e40019be13eaef9c40767d09ae571887851034c5ed893595f636f412f6e90973`  
-    Last Modified: Fri, 27 May 2016 18:10:32 GMT  
-    Size: 133.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
-  - `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-    Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-    Size: 32.0 B
+  - `sha256:1e61bbec5d24dd5554433d74986724e34f1346a7702ff7b996bac193774c7058`  
+    Last Modified: Wed, 15 Jun 2016 01:38:00 GMT  
+    Size: 4.6 MB (4606056 bytes)
+  - `sha256:8c7b2f6b74da49fefbd6b2af532114d5c1248cb4eccf9b13662c767bb367d9f4`  
+    Last Modified: Wed, 15 Jun 2016 01:37:59 GMT  
+    Size: 155.4 KB (155420 bytes)
+  - `sha256:245a8db4f1e19ae84a9d00cd4fd9939acb1241c895f5519c4d66e4821aaf4da2`  
+    Last Modified: Wed, 15 Jun 2016 01:37:58 GMT  
+    Size: 124.0 B
+
+## `swarm:1.2.4-rc1`
+
+```console
+$ docker pull swarm@sha256:d03c4a819b1e27fc347547931a93f1f3da7c0397050f47c52f78c6f4e584b8ab
+```
+
+- Platforms:
+  - linux; amd64
+
+### `swarm:1.2.4-rc1` - linux; amd64
+
+- Docker Version: 1.10.3
+- Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+- Total Size: **4.8 MB (4760608 bytes)**  
+  (compressed transfer size, not on-disk size)
+- Image ID: `sha256:63fc09419609e455b371c021d7635355d3b6edb45cc6b273ac082552d0d79b97`
+- Entrypoint: `["\/swarm"]`
+- Default Command: `["--help"]`
+
+```dockerfile
+# Wed, 15 Jun 2016 01:36:29 GMT
+COPY file:eb4f16c17c10d46f39ddb63b138f5ac9497b3ec0fdc939f37e81b29f9bdcc771 in /swarm
+# Wed, 15 Jun 2016 01:36:30 GMT
+COPY file:4ac98efa752a9c4de2a2f0048e77f1978d6d4ad2ce7f4f147da339c35c380e81 in /etc/ssl/certs/ca-certificates.crt
+# Wed, 15 Jun 2016 01:36:30 GMT
+COPY dir:d556676b4fb31ddaa271490e57c3a85e3c4bcc1e809b22d64b2f570c05149a22 in /tmp
+# Wed, 15 Jun 2016 01:36:31 GMT
+ENV SWARM_HOST=:2375
+# Wed, 15 Jun 2016 01:36:31 GMT
+EXPOSE 2375/tcp
+# Wed, 15 Jun 2016 01:36:32 GMT
+VOLUME [/.swarm]
+# Wed, 15 Jun 2016 01:36:32 GMT
+ENTRYPOINT &{["/swarm"]}
+# Wed, 15 Jun 2016 01:36:32 GMT
+CMD ["--help"]
+```
+
+- Layers:
+  - `sha256:43c88822600f2eae6ac334a341cf6195198a9a90acb9acaf6d8a1596638ed63c`  
+    Last Modified: Wed, 15 Jun 2016 01:38:16 GMT  
+    Size: 4.6 MB (4605065 bytes)
+  - `sha256:97f1190302a32121d4c22dc25db8573bfe11fd60eed8f5245bf9e82fcb2ba7d2`  
+    Last Modified: Wed, 15 Jun 2016 01:38:14 GMT  
+    Size: 155.4 KB (155419 bytes)
+  - `sha256:7cdc3f134fe958c5b8fed508f7c07dcbe15f1b3bd182b6b5cbbe1cee755288cd`  
+    Last Modified: Wed, 15 Jun 2016 01:38:14 GMT  
+    Size: 124.0 B
