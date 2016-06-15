@@ -41,7 +41,7 @@ For a MySQL database you can link an database container, e.g. `--link my-mysql:m
 
 ## Persistent data
 
-All data is stored within the default volume `/var/www/html`. With this volume, ownCloud will only be updated when the file `version.php` is not present.
+All data beyond what lives in the database (file uploads, etc) is stored within the default volume `/var/www/html`. With this volume, ownCloud will only be updated when the file `version.php` is not present.
 
 -	`-v /<mydatalocation>:/var/www/html`
 
@@ -54,6 +54,27 @@ For fine grained data persistence, you can use 3 volumes, as shown below.
 ### Caveat
 
 When using the 6.0 image, you need to map the host port to the container port that apache listens on when going through the installation wizard. By default, this is port 80.
+
+## ... via [`docker-compose`](https://github.com/docker/compose)
+
+Example `docker-compose.yml` for `owncloud`:
+
+```yaml
+# access via "http://localhost:8080" (or "http://$(docker-machine ip):8080" if using docker-machine)
+# during initial setup, use "mysql" as the MySQL hostname
+
+owncloud:
+  image: owncloud
+  links:
+    - db:mysql
+  ports:
+    - 8080:80
+
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: example
+```
 
 # License
 
