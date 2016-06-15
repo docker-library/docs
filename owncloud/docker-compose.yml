@@ -1,0 +1,14 @@
+# access via "http://localhost:8080" (or "http://$(docker-machine ip):8080" if using docker-machine)
+# during initial setup, use "mysql" as the MySQL hostname
+
+owncloud:
+  image: owncloud
+  links:
+    - db:mysql
+  ports:
+    - 8080:80
+
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: example
