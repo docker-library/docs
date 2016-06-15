@@ -458,10 +458,10 @@ while (my $image = shift) {
 	say '```';
 
 	print "\n";
-	say '- Manifest MIME: `' . $data->{manifestVersion} . '`' if $data->{manifestVersion};
-	say '- Platforms:';
+	say "-\t" . 'Manifest MIME: `' . $data->{manifestVersion} . '`' if $data->{manifestVersion};
+	say "-\t" . 'Platforms:';
 	for my $imageData (@{ $data->{images} }) {
-		say '  - ' . platform_string($imageData->{platform});
+		say "\t-\t" . platform_string($imageData->{platform});
 	}
 
 	for my $imageData (@{ $data->{images} }) {
@@ -476,13 +476,13 @@ while (my $image = shift) {
 		}
 
 		print "\n";
-		say '- Docker Version: ' . $imageData->{dockerVersion} if $imageData->{dockerVersion};
-		say '- Manifest MIME: `' . $imageData->{manifestVersion} . '`' if $imageData->{manifestVersion};
-		say '- Total Size: **' . size($imageData->{size}) . '**  ';
-		say '  (compressed transfer size, not on-disk size)';
-		say '- Image ID: `' . $imageData->{imageId} . '`' if $imageData->{imageId};
-		say '- Entrypoint: `' . Mojo::JSON::encode_json($imageData->{entrypoint}) . '`' if $imageData->{entrypoint} && @{ $imageData->{entrypoint} };
-		say '- Default Command: `' . Mojo::JSON::encode_json($imageData->{defaultCommand}) . '`' if $imageData->{defaultCommand};
+		say "-\t" . 'Docker Version: ' . $imageData->{dockerVersion} if $imageData->{dockerVersion};
+		say "-\t" . 'Manifest MIME: `' . $imageData->{manifestVersion} . '`' if $imageData->{manifestVersion};
+		say "-\t" . 'Total Size: **' . size($imageData->{size}) . '**  ';
+		say "\t" . '(compressed transfer size, not on-disk size)';
+		say "-\t" . 'Image ID: `' . $imageData->{imageId} . '`' if $imageData->{imageId};
+		say "-\t" . 'Entrypoint: `' . Mojo::JSON::encode_json($imageData->{entrypoint}) . '`' if $imageData->{entrypoint} && @{ $imageData->{entrypoint} };
+		say "-\t" . 'Default Command: `' . Mojo::JSON::encode_json($imageData->{defaultCommand}) . '`' if $imageData->{defaultCommand};
 
 		print "\n";
 		say '```dockerfile';
@@ -493,11 +493,11 @@ while (my $image = shift) {
 		say '```';
 
 		print "\n";
-		say '- Layers:';
+		say "-\t" . 'Layers:';
 		for my $layer (@{ $imageData->{layers} }) {
-			say '  - `' . $layer->{digest} . '`  ';
-			say '    Last Modified: ' . date($layer->{lastModified}) . '  ';
-			say '    Size: ' . size($layer->{size});
+			say "\t-\t" . '`' . $layer->{digest} . '`  ';
+			say "\t\t" . 'Last Modified: ' . date($layer->{lastModified}) . '  ';
+			say "\t\t" . 'Size: ' . size($layer->{size});
 		}
 	}
 }
