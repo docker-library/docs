@@ -1,13 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.43-apache`, `7-apache`, `7.43`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/865f61938fe7f37359d8feeb13bb03bff8f11387/7/apache/Dockerfile)
--	[`7.43-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/865f61938fe7f37359d8feeb13bb03bff8f11387/7/fpm/Dockerfile)
--	[`8.0.6-apache`, `8.0-apache`, `8.0.6`, `8.0` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/54f9aa4a327fd221cacf2f59b71682ca4004d231/8.0/apache/Dockerfile)
--	[`8.0.6-fpm`, `8.0-fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/280071cdbb819aae47263463a32bf217741f2a0f/8.0/fpm/Dockerfile)
--	[`8.1.2-apache`, `8.1-apache`, `8-apache`, `apache`, `8.1.2`, `8.1`, `8`, `latest` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/2186f092b0f2547063cfee95e7e0f54565a2cd76/8.1/apache/Dockerfile)
--	[`8.1.2-fpm`, `8.1-fpm`, `8-fpm`, `fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/2186f092b0f2547063cfee95e7e0f54565a2cd76/8.1/fpm/Dockerfile)
+-	[`7.44-apache`, `7-apache`, `7.44`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/09ecd6173dee9401924cbe350eced0ec7c477e43/7/apache/Dockerfile)
+-	[`7.44-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/09ecd6173dee9401924cbe350eced0ec7c477e43/7/fpm/Dockerfile)
+-	[`8.1.3-apache`, `8.1-apache`, `8-apache`, `apache`, `8.1.3`, `8.1`, `8`, `latest` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/09ecd6173dee9401924cbe350eced0ec7c477e43/8.1/apache/Dockerfile)
+-	[`8.1.3-fpm`, `8.1-fpm`, `8-fpm`, `fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/09ecd6173dee9401924cbe350eced0ec7c477e43/8.1/fpm/Dockerfile)
 
-[![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.43-apache,drupal:7.43-fpm,drupal:8.0.6-apache,drupal:8.0.6-fpm,drupal:8.1.2-apache,drupal:8.1.2-fpm)
+[![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.44-apache,drupal:7.44-fpm,drupal:8.1.3-apache,drupal:8.1.3-fpm)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdrupal).
 
