@@ -2,10 +2,6 @@
 
 # Tags of `logstash`
 
--	[`logstash:1.4.5-1-a2bacae`](#logstash145-1-a2bacae)
--	[`logstash:1.4.5-1`](#logstash145-1)
--	[`logstash:1.4.5`](#logstash145)
--	[`logstash:1.4`](#logstash14)
 -	[`logstash:1.5.6-1`](#logstash156-1)
 -	[`logstash:1.5.6`](#logstash156)
 -	[`logstash:1.5`](#logstash15)
@@ -19,8 +15,8 @@
 -	[`logstash:2.2.4-1`](#logstash224-1)
 -	[`logstash:2.2.4`](#logstash224)
 -	[`logstash:2.2`](#logstash22)
--	[`logstash:2.3.2-1`](#logstash232-1)
--	[`logstash:2.3.2`](#logstash232)
+-	[`logstash:2.3.3-1`](#logstash233-1)
+-	[`logstash:2.3.3`](#logstash233)
 -	[`logstash:2.3`](#logstash23)
 -	[`logstash:2`](#logstash2)
 -	[`logstash:latest`](#logstashlatest)
@@ -29,478 +25,6 @@
 -	[`logstash:5.0.0`](#logstash500)
 -	[`logstash:5.0`](#logstash50)
 -	[`logstash:5`](#logstash5)
-
-## `logstash:1.4.5-1-a2bacae`
-
-```console
-$ docker pull logstash@sha256:0eb3c5f4183a8c1bb068d40380dfbd243324dad628c155a289cab7e047422904
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `logstash:1.4.5-1-a2bacae` - linux; amd64
-
--	Docker Version: 1.10.3
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.1 MB (200066087 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dd10e2f6a850e84f4dd054b99020ede49769e45aee7ff29b0d003a814d3e3c7`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
-
-```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
-CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
-ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
-RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
-RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
-RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
-ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
-RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:41:34 GMT
-ENV LOGSTASH_MAJOR=1.4
-# Fri, 10 Jun 2016 16:41:34 GMT
-ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
-# Fri, 10 Jun 2016 16:41:36 GMT
-RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:43:01 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:43:02 GMT
-ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:43:02 GMT
-COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:43:03 GMT
-ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:43:03 GMT
-CMD ["logstash" "agent"]
-```
-
--	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:d78502dbe5f2e7436b0c351f868afab7660a04d6edbca6f055255004cfebf384`  
-		Last Modified: Fri, 10 Jun 2016 16:53:36 GMT  
-		Size: 225.0 B
-	-	`sha256:e2c757c428360faf658adfb8fa6855af86c3179371dffc3e6ddb09fd0a2332bb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:51 GMT  
-		Size: 74.2 MB (74157827 bytes)
-	-	`sha256:2941b96fe5b8be7447467415c5e30d8a705aa24fa1a3124095d5f3cb600a3290`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 251.0 B
-
-## `logstash:1.4.5-1`
-
-```console
-$ docker pull logstash@sha256:0eb3c5f4183a8c1bb068d40380dfbd243324dad628c155a289cab7e047422904
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `logstash:1.4.5-1` - linux; amd64
-
--	Docker Version: 1.10.3
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.1 MB (200066087 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dd10e2f6a850e84f4dd054b99020ede49769e45aee7ff29b0d003a814d3e3c7`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
-
-```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
-CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
-ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
-RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
-RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
-RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
-ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
-RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:41:34 GMT
-ENV LOGSTASH_MAJOR=1.4
-# Fri, 10 Jun 2016 16:41:34 GMT
-ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
-# Fri, 10 Jun 2016 16:41:36 GMT
-RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:43:01 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:43:02 GMT
-ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:43:02 GMT
-COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:43:03 GMT
-ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:43:03 GMT
-CMD ["logstash" "agent"]
-```
-
--	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:d78502dbe5f2e7436b0c351f868afab7660a04d6edbca6f055255004cfebf384`  
-		Last Modified: Fri, 10 Jun 2016 16:53:36 GMT  
-		Size: 225.0 B
-	-	`sha256:e2c757c428360faf658adfb8fa6855af86c3179371dffc3e6ddb09fd0a2332bb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:51 GMT  
-		Size: 74.2 MB (74157827 bytes)
-	-	`sha256:2941b96fe5b8be7447467415c5e30d8a705aa24fa1a3124095d5f3cb600a3290`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 251.0 B
-
-## `logstash:1.4.5`
-
-```console
-$ docker pull logstash@sha256:0eb3c5f4183a8c1bb068d40380dfbd243324dad628c155a289cab7e047422904
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `logstash:1.4.5` - linux; amd64
-
--	Docker Version: 1.10.3
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.1 MB (200066087 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dd10e2f6a850e84f4dd054b99020ede49769e45aee7ff29b0d003a814d3e3c7`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
-
-```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
-CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
-ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
-RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
-RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
-RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
-ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
-RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:41:34 GMT
-ENV LOGSTASH_MAJOR=1.4
-# Fri, 10 Jun 2016 16:41:34 GMT
-ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
-# Fri, 10 Jun 2016 16:41:36 GMT
-RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:43:01 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:43:02 GMT
-ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:43:02 GMT
-COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:43:03 GMT
-ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:43:03 GMT
-CMD ["logstash" "agent"]
-```
-
--	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:d78502dbe5f2e7436b0c351f868afab7660a04d6edbca6f055255004cfebf384`  
-		Last Modified: Fri, 10 Jun 2016 16:53:36 GMT  
-		Size: 225.0 B
-	-	`sha256:e2c757c428360faf658adfb8fa6855af86c3179371dffc3e6ddb09fd0a2332bb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:51 GMT  
-		Size: 74.2 MB (74157827 bytes)
-	-	`sha256:2941b96fe5b8be7447467415c5e30d8a705aa24fa1a3124095d5f3cb600a3290`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 251.0 B
-
-## `logstash:1.4`
-
-```console
-$ docker pull logstash@sha256:0eb3c5f4183a8c1bb068d40380dfbd243324dad628c155a289cab7e047422904
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `logstash:1.4` - linux; amd64
-
--	Docker Version: 1.10.3
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.1 MB (200066087 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dd10e2f6a850e84f4dd054b99020ede49769e45aee7ff29b0d003a814d3e3c7`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
-
-```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
-CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
-ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
-RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
-ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
-RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
-RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
-ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
-RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:41:34 GMT
-ENV LOGSTASH_MAJOR=1.4
-# Fri, 10 Jun 2016 16:41:34 GMT
-ENV LOGSTASH_VERSION=1.4.5-1-a2bacae
-# Fri, 10 Jun 2016 16:41:36 GMT
-RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:43:01 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:43:02 GMT
-ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:43:02 GMT
-COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:43:03 GMT
-ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:43:03 GMT
-CMD ["logstash" "agent"]
-```
-
--	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:d78502dbe5f2e7436b0c351f868afab7660a04d6edbca6f055255004cfebf384`  
-		Last Modified: Fri, 10 Jun 2016 16:53:36 GMT  
-		Size: 225.0 B
-	-	`sha256:e2c757c428360faf658adfb8fa6855af86c3179371dffc3e6ddb09fd0a2332bb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:51 GMT  
-		Size: 74.2 MB (74157827 bytes)
-	-	`sha256:2941b96fe5b8be7447467415c5e30d8a705aa24fa1a3124095d5f3cb600a3290`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 251.0 B
 
 ## `logstash:1.5.6-1`
 
@@ -2036,22 +1560,22 @@ CMD ["logstash" "agent"]
 		Last Modified: Fri, 10 Jun 2016 16:56:36 GMT  
 		Size: 251.0 B
 
-## `logstash:2.3.2-1`
+## `logstash:2.3.3-1`
 
 ```console
-$ docker pull logstash@sha256:2dc8bddd1bb4a5a34e8ebaf73749f6413c101b2edef6617f2f7713926d2141fe
+$ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652cddeb270cef77d6
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `logstash:2.3.2-1` - linux; amd64
+### `logstash:2.3.3-1` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.7 MB (201742325 bytes)**  
+-	Total Size: **205.7 MB (205736721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f81ab5ae206eb40a64c4ec4121bfa6e3dbd805ede21df88fe7048dbb06af890e`
+-	Image ID: `sha256:95bf32408208162191d7a420ac3a266789c1c535f9794c6e3bb70088cba3c5aa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["logstash","agent"]`
 
@@ -2094,19 +1618,19 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 # Fri, 10 Jun 2016 16:50:00 GMT
 ENV LOGSTASH_MAJOR=2.3
-# Fri, 10 Jun 2016 16:50:00 GMT
-ENV LOGSTASH_VERSION=1:2.3.2-1
-# Fri, 10 Jun 2016 16:50:02 GMT
+# Thu, 16 Jun 2016 19:35:02 GMT
+ENV LOGSTASH_VERSION=1:2.3.3-1
+# Thu, 16 Jun 2016 19:35:04 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:51:37 GMT
+# Thu, 16 Jun 2016 19:36:18 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:51:38 GMT
+# Thu, 16 Jun 2016 19:36:19 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:51:39 GMT
+# Thu, 16 Jun 2016 19:36:19 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:51:39 GMT
+# Thu, 16 Jun 2016 19:36:20 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:51:40 GMT
+# Thu, 16 Jun 2016 19:36:20 GMT
 CMD ["logstash" "agent"]
 ```
 
@@ -2144,32 +1668,32 @@ CMD ["logstash" "agent"]
 	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
 		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
 		Size: 1.5 KB (1452 bytes)
-	-	`sha256:c48bc45ec8ef163c8442ee9a9ebec868a971d0575d2b74cdddf7965642beb91a`  
-		Last Modified: Fri, 10 Jun 2016 16:57:16 GMT  
-		Size: 222.0 B
-	-	`sha256:94032fc3961bc48ad7bcec31c9c1f6d1ee5a26f6830df776f16ab1855657ff9b`  
-		Last Modified: Fri, 10 Jun 2016 16:57:33 GMT  
-		Size: 75.8 MB (75834068 bytes)
-	-	`sha256:2d353b3bb076b8311427324111969deb7a932b603e8c91e64de9ff5c05fcecbb`  
-		Last Modified: Fri, 10 Jun 2016 16:57:16 GMT  
+	-	`sha256:6b9bdb6cbbee2232ce6e8cb7149643729a25ef8db19127b982bc247703eff534`  
+		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
+		Size: 225.0 B
+	-	`sha256:0e62294ff5b84f49fcb3f10d74685cdea3b9a7ac366cdd3b822fde47b1b5db3b`  
+		Last Modified: Thu, 16 Jun 2016 19:38:07 GMT  
+		Size: 79.8 MB (79828461 bytes)
+	-	`sha256:1863edc13686665cc5b826045315e160dcb505ca5d19ad6c4711b4bc363223a0`  
+		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
 		Size: 251.0 B
 
-## `logstash:2.3.2`
+## `logstash:2.3.3`
 
 ```console
-$ docker pull logstash@sha256:2dc8bddd1bb4a5a34e8ebaf73749f6413c101b2edef6617f2f7713926d2141fe
+$ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652cddeb270cef77d6
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `logstash:2.3.2` - linux; amd64
+### `logstash:2.3.3` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.7 MB (201742325 bytes)**  
+-	Total Size: **205.7 MB (205736721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f81ab5ae206eb40a64c4ec4121bfa6e3dbd805ede21df88fe7048dbb06af890e`
+-	Image ID: `sha256:95bf32408208162191d7a420ac3a266789c1c535f9794c6e3bb70088cba3c5aa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["logstash","agent"]`
 
@@ -2212,19 +1736,19 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 # Fri, 10 Jun 2016 16:50:00 GMT
 ENV LOGSTASH_MAJOR=2.3
-# Fri, 10 Jun 2016 16:50:00 GMT
-ENV LOGSTASH_VERSION=1:2.3.2-1
-# Fri, 10 Jun 2016 16:50:02 GMT
+# Thu, 16 Jun 2016 19:35:02 GMT
+ENV LOGSTASH_VERSION=1:2.3.3-1
+# Thu, 16 Jun 2016 19:35:04 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:51:37 GMT
+# Thu, 16 Jun 2016 19:36:18 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:51:38 GMT
+# Thu, 16 Jun 2016 19:36:19 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:51:39 GMT
+# Thu, 16 Jun 2016 19:36:19 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:51:39 GMT
+# Thu, 16 Jun 2016 19:36:20 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:51:40 GMT
+# Thu, 16 Jun 2016 19:36:20 GMT
 CMD ["logstash" "agent"]
 ```
 
@@ -2262,20 +1786,20 @@ CMD ["logstash" "agent"]
 	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
 		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
 		Size: 1.5 KB (1452 bytes)
-	-	`sha256:c48bc45ec8ef163c8442ee9a9ebec868a971d0575d2b74cdddf7965642beb91a`  
-		Last Modified: Fri, 10 Jun 2016 16:57:16 GMT  
-		Size: 222.0 B
-	-	`sha256:94032fc3961bc48ad7bcec31c9c1f6d1ee5a26f6830df776f16ab1855657ff9b`  
-		Last Modified: Fri, 10 Jun 2016 16:57:33 GMT  
-		Size: 75.8 MB (75834068 bytes)
-	-	`sha256:2d353b3bb076b8311427324111969deb7a932b603e8c91e64de9ff5c05fcecbb`  
-		Last Modified: Fri, 10 Jun 2016 16:57:16 GMT  
+	-	`sha256:6b9bdb6cbbee2232ce6e8cb7149643729a25ef8db19127b982bc247703eff534`  
+		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
+		Size: 225.0 B
+	-	`sha256:0e62294ff5b84f49fcb3f10d74685cdea3b9a7ac366cdd3b822fde47b1b5db3b`  
+		Last Modified: Thu, 16 Jun 2016 19:38:07 GMT  
+		Size: 79.8 MB (79828461 bytes)
+	-	`sha256:1863edc13686665cc5b826045315e160dcb505ca5d19ad6c4711b4bc363223a0`  
+		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.3`
 
 ```console
-$ docker pull logstash@sha256:2dc8bddd1bb4a5a34e8ebaf73749f6413c101b2edef6617f2f7713926d2141fe
+$ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652cddeb270cef77d6
 ```
 
 -	Platforms:
@@ -2285,9 +1809,9 @@ $ docker pull logstash@sha256:2dc8bddd1bb4a5a34e8ebaf73749f6413c101b2edef6617f2f
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.7 MB (201742325 bytes)**  
+-	Total Size: **205.7 MB (205736721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f81ab5ae206eb40a64c4ec4121bfa6e3dbd805ede21df88fe7048dbb06af890e`
+-	Image ID: `sha256:95bf32408208162191d7a420ac3a266789c1c535f9794c6e3bb70088cba3c5aa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["logstash","agent"]`
 
@@ -2330,19 +1854,19 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 # Fri, 10 Jun 2016 16:50:00 GMT
 ENV LOGSTASH_MAJOR=2.3
-# Fri, 10 Jun 2016 16:50:00 GMT
-ENV LOGSTASH_VERSION=1:2.3.2-1
-# Fri, 10 Jun 2016 16:50:02 GMT
+# Thu, 16 Jun 2016 19:35:02 GMT
+ENV LOGSTASH_VERSION=1:2.3.3-1
+# Thu, 16 Jun 2016 19:35:04 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:51:37 GMT
+# Thu, 16 Jun 2016 19:36:18 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:51:38 GMT
+# Thu, 16 Jun 2016 19:36:19 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:51:39 GMT
+# Thu, 16 Jun 2016 19:36:19 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:51:39 GMT
+# Thu, 16 Jun 2016 19:36:20 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:51:40 GMT
+# Thu, 16 Jun 2016 19:36:20 GMT
 CMD ["logstash" "agent"]
 ```
 
@@ -2380,20 +1904,20 @@ CMD ["logstash" "agent"]
 	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
 		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
 		Size: 1.5 KB (1452 bytes)
-	-	`sha256:c48bc45ec8ef163c8442ee9a9ebec868a971d0575d2b74cdddf7965642beb91a`  
-		Last Modified: Fri, 10 Jun 2016 16:57:16 GMT  
-		Size: 222.0 B
-	-	`sha256:94032fc3961bc48ad7bcec31c9c1f6d1ee5a26f6830df776f16ab1855657ff9b`  
-		Last Modified: Fri, 10 Jun 2016 16:57:33 GMT  
-		Size: 75.8 MB (75834068 bytes)
-	-	`sha256:2d353b3bb076b8311427324111969deb7a932b603e8c91e64de9ff5c05fcecbb`  
-		Last Modified: Fri, 10 Jun 2016 16:57:16 GMT  
+	-	`sha256:6b9bdb6cbbee2232ce6e8cb7149643729a25ef8db19127b982bc247703eff534`  
+		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
+		Size: 225.0 B
+	-	`sha256:0e62294ff5b84f49fcb3f10d74685cdea3b9a7ac366cdd3b822fde47b1b5db3b`  
+		Last Modified: Thu, 16 Jun 2016 19:38:07 GMT  
+		Size: 79.8 MB (79828461 bytes)
+	-	`sha256:1863edc13686665cc5b826045315e160dcb505ca5d19ad6c4711b4bc363223a0`  
+		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
 		Size: 251.0 B
 
 ## `logstash:2`
 
 ```console
-$ docker pull logstash@sha256:2dc8bddd1bb4a5a34e8ebaf73749f6413c101b2edef6617f2f7713926d2141fe
+$ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652cddeb270cef77d6
 ```
 
 -	Platforms:
@@ -2403,9 +1927,9 @@ $ docker pull logstash@sha256:2dc8bddd1bb4a5a34e8ebaf73749f6413c101b2edef6617f2f
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.7 MB (201742325 bytes)**  
+-	Total Size: **205.7 MB (205736721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f81ab5ae206eb40a64c4ec4121bfa6e3dbd805ede21df88fe7048dbb06af890e`
+-	Image ID: `sha256:95bf32408208162191d7a420ac3a266789c1c535f9794c6e3bb70088cba3c5aa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["logstash","agent"]`
 
@@ -2448,19 +1972,19 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 # Fri, 10 Jun 2016 16:50:00 GMT
 ENV LOGSTASH_MAJOR=2.3
-# Fri, 10 Jun 2016 16:50:00 GMT
-ENV LOGSTASH_VERSION=1:2.3.2-1
-# Fri, 10 Jun 2016 16:50:02 GMT
+# Thu, 16 Jun 2016 19:35:02 GMT
+ENV LOGSTASH_VERSION=1:2.3.3-1
+# Thu, 16 Jun 2016 19:35:04 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:51:37 GMT
+# Thu, 16 Jun 2016 19:36:18 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:51:38 GMT
+# Thu, 16 Jun 2016 19:36:19 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:51:39 GMT
+# Thu, 16 Jun 2016 19:36:19 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:51:39 GMT
+# Thu, 16 Jun 2016 19:36:20 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:51:40 GMT
+# Thu, 16 Jun 2016 19:36:20 GMT
 CMD ["logstash" "agent"]
 ```
 
@@ -2498,20 +2022,20 @@ CMD ["logstash" "agent"]
 	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
 		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
 		Size: 1.5 KB (1452 bytes)
-	-	`sha256:c48bc45ec8ef163c8442ee9a9ebec868a971d0575d2b74cdddf7965642beb91a`  
-		Last Modified: Fri, 10 Jun 2016 16:57:16 GMT  
-		Size: 222.0 B
-	-	`sha256:94032fc3961bc48ad7bcec31c9c1f6d1ee5a26f6830df776f16ab1855657ff9b`  
-		Last Modified: Fri, 10 Jun 2016 16:57:33 GMT  
-		Size: 75.8 MB (75834068 bytes)
-	-	`sha256:2d353b3bb076b8311427324111969deb7a932b603e8c91e64de9ff5c05fcecbb`  
-		Last Modified: Fri, 10 Jun 2016 16:57:16 GMT  
+	-	`sha256:6b9bdb6cbbee2232ce6e8cb7149643729a25ef8db19127b982bc247703eff534`  
+		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
+		Size: 225.0 B
+	-	`sha256:0e62294ff5b84f49fcb3f10d74685cdea3b9a7ac366cdd3b822fde47b1b5db3b`  
+		Last Modified: Thu, 16 Jun 2016 19:38:07 GMT  
+		Size: 79.8 MB (79828461 bytes)
+	-	`sha256:1863edc13686665cc5b826045315e160dcb505ca5d19ad6c4711b4bc363223a0`  
+		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
 		Size: 251.0 B
 
 ## `logstash:latest`
 
 ```console
-$ docker pull logstash@sha256:2dc8bddd1bb4a5a34e8ebaf73749f6413c101b2edef6617f2f7713926d2141fe
+$ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652cddeb270cef77d6
 ```
 
 -	Platforms:
@@ -2521,9 +2045,9 @@ $ docker pull logstash@sha256:2dc8bddd1bb4a5a34e8ebaf73749f6413c101b2edef6617f2f
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.7 MB (201742325 bytes)**  
+-	Total Size: **205.7 MB (205736721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f81ab5ae206eb40a64c4ec4121bfa6e3dbd805ede21df88fe7048dbb06af890e`
+-	Image ID: `sha256:95bf32408208162191d7a420ac3a266789c1c535f9794c6e3bb70088cba3c5aa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["logstash","agent"]`
 
@@ -2566,19 +2090,19 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 # Fri, 10 Jun 2016 16:50:00 GMT
 ENV LOGSTASH_MAJOR=2.3
-# Fri, 10 Jun 2016 16:50:00 GMT
-ENV LOGSTASH_VERSION=1:2.3.2-1
-# Fri, 10 Jun 2016 16:50:02 GMT
+# Thu, 16 Jun 2016 19:35:02 GMT
+ENV LOGSTASH_VERSION=1:2.3.3-1
+# Thu, 16 Jun 2016 19:35:04 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:51:37 GMT
+# Thu, 16 Jun 2016 19:36:18 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:51:38 GMT
+# Thu, 16 Jun 2016 19:36:19 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:51:39 GMT
+# Thu, 16 Jun 2016 19:36:19 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:51:39 GMT
+# Thu, 16 Jun 2016 19:36:20 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:51:40 GMT
+# Thu, 16 Jun 2016 19:36:20 GMT
 CMD ["logstash" "agent"]
 ```
 
@@ -2616,14 +2140,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
 		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
 		Size: 1.5 KB (1452 bytes)
-	-	`sha256:c48bc45ec8ef163c8442ee9a9ebec868a971d0575d2b74cdddf7965642beb91a`  
-		Last Modified: Fri, 10 Jun 2016 16:57:16 GMT  
-		Size: 222.0 B
-	-	`sha256:94032fc3961bc48ad7bcec31c9c1f6d1ee5a26f6830df776f16ab1855657ff9b`  
-		Last Modified: Fri, 10 Jun 2016 16:57:33 GMT  
-		Size: 75.8 MB (75834068 bytes)
-	-	`sha256:2d353b3bb076b8311427324111969deb7a932b603e8c91e64de9ff5c05fcecbb`  
-		Last Modified: Fri, 10 Jun 2016 16:57:16 GMT  
+	-	`sha256:6b9bdb6cbbee2232ce6e8cb7149643729a25ef8db19127b982bc247703eff534`  
+		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
+		Size: 225.0 B
+	-	`sha256:0e62294ff5b84f49fcb3f10d74685cdea3b9a7ac366cdd3b822fde47b1b5db3b`  
+		Last Modified: Thu, 16 Jun 2016 19:38:07 GMT  
+		Size: 79.8 MB (79828461 bytes)
+	-	`sha256:1863edc13686665cc5b826045315e160dcb505ca5d19ad6c4711b4bc363223a0`  
+		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
 		Size: 251.0 B
 
 ## `logstash:5.0.0-alpha3-1`
