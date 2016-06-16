@@ -29,7 +29,7 @@
 ## `logstash:1.5.6-1`
 
 ```console
-$ docker pull logstash@sha256:5785f05ef3ecf6eb4ad9c05615ea7e642f8aaa8f13c99ceeb72050b8a8e9ec15
+$ docker pull logstash@sha256:44d9fb83432ace07d6dd2b336b61b4123c9847a5e5d28660016703bb9268baf0
 ```
 
 -	Platforms:
@@ -41,9 +41,9 @@ $ docker pull logstash@sha256:5785f05ef3ecf6eb4ad9c05615ea7e642f8aaa8f13c99ceeb7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **216.7 MB (216683724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04c608a9c6a0c78b62d4f3b77e814fcd4421ac5c2a59b05205cf446914781210`
+-	Image ID: `sha256:c8b30ca89b2bb95efc21a33cb6bd290e392413571173415364f755e97dab2761`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -92,12 +92,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:44:45 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:44:46 GMT
+# Thu, 16 Jun 2016 20:57:16 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:17 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:17 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:44:46 GMT
+# Thu, 16 Jun 2016 20:57:17 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:44:47 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:18 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -140,14 +144,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:cae2db5136d46be9c23f3150b5d8ac1c9713e4c0dceba11f39feb2980e51ca9a`  
 		Last Modified: Fri, 10 Jun 2016 16:54:38 GMT  
 		Size: 90.8 MB (90775465 bytes)
-	-	`sha256:f27e9de791dbe4faa477bd749250d27f4b8b9a048da24fb247681bac0af1b2a5`  
-		Last Modified: Fri, 10 Jun 2016 16:54:20 GMT  
+	-	`sha256:1c01cdd07d5fe0edc089e2e49e9f32d4005d246e062b76b572947b92549e352f`  
+		Last Modified: Thu, 16 Jun 2016 20:57:38 GMT  
 		Size: 251.0 B
 
 ## `logstash:1.5.6`
 
 ```console
-$ docker pull logstash@sha256:5785f05ef3ecf6eb4ad9c05615ea7e642f8aaa8f13c99ceeb72050b8a8e9ec15
+$ docker pull logstash@sha256:44d9fb83432ace07d6dd2b336b61b4123c9847a5e5d28660016703bb9268baf0
 ```
 
 -	Platforms:
@@ -159,9 +163,9 @@ $ docker pull logstash@sha256:5785f05ef3ecf6eb4ad9c05615ea7e642f8aaa8f13c99ceeb7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **216.7 MB (216683724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04c608a9c6a0c78b62d4f3b77e814fcd4421ac5c2a59b05205cf446914781210`
+-	Image ID: `sha256:c8b30ca89b2bb95efc21a33cb6bd290e392413571173415364f755e97dab2761`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -210,12 +214,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:44:45 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:44:46 GMT
+# Thu, 16 Jun 2016 20:57:16 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:17 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:17 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:44:46 GMT
+# Thu, 16 Jun 2016 20:57:17 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:44:47 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:18 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -258,14 +266,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:cae2db5136d46be9c23f3150b5d8ac1c9713e4c0dceba11f39feb2980e51ca9a`  
 		Last Modified: Fri, 10 Jun 2016 16:54:38 GMT  
 		Size: 90.8 MB (90775465 bytes)
-	-	`sha256:f27e9de791dbe4faa477bd749250d27f4b8b9a048da24fb247681bac0af1b2a5`  
-		Last Modified: Fri, 10 Jun 2016 16:54:20 GMT  
+	-	`sha256:1c01cdd07d5fe0edc089e2e49e9f32d4005d246e062b76b572947b92549e352f`  
+		Last Modified: Thu, 16 Jun 2016 20:57:38 GMT  
 		Size: 251.0 B
 
 ## `logstash:1.5`
 
 ```console
-$ docker pull logstash@sha256:5785f05ef3ecf6eb4ad9c05615ea7e642f8aaa8f13c99ceeb72050b8a8e9ec15
+$ docker pull logstash@sha256:44d9fb83432ace07d6dd2b336b61b4123c9847a5e5d28660016703bb9268baf0
 ```
 
 -	Platforms:
@@ -277,9 +285,9 @@ $ docker pull logstash@sha256:5785f05ef3ecf6eb4ad9c05615ea7e642f8aaa8f13c99ceeb7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **216.7 MB (216683724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04c608a9c6a0c78b62d4f3b77e814fcd4421ac5c2a59b05205cf446914781210`
+-	Image ID: `sha256:c8b30ca89b2bb95efc21a33cb6bd290e392413571173415364f755e97dab2761`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -328,12 +336,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:44:45 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:44:46 GMT
+# Thu, 16 Jun 2016 20:57:16 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:17 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:17 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:44:46 GMT
+# Thu, 16 Jun 2016 20:57:17 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:44:47 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:18 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -376,14 +388,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:cae2db5136d46be9c23f3150b5d8ac1c9713e4c0dceba11f39feb2980e51ca9a`  
 		Last Modified: Fri, 10 Jun 2016 16:54:38 GMT  
 		Size: 90.8 MB (90775465 bytes)
-	-	`sha256:f27e9de791dbe4faa477bd749250d27f4b8b9a048da24fb247681bac0af1b2a5`  
-		Last Modified: Fri, 10 Jun 2016 16:54:20 GMT  
+	-	`sha256:1c01cdd07d5fe0edc089e2e49e9f32d4005d246e062b76b572947b92549e352f`  
+		Last Modified: Thu, 16 Jun 2016 20:57:38 GMT  
 		Size: 251.0 B
 
 ## `logstash:1`
 
 ```console
-$ docker pull logstash@sha256:5785f05ef3ecf6eb4ad9c05615ea7e642f8aaa8f13c99ceeb72050b8a8e9ec15
+$ docker pull logstash@sha256:44d9fb83432ace07d6dd2b336b61b4123c9847a5e5d28660016703bb9268baf0
 ```
 
 -	Platforms:
@@ -395,9 +407,9 @@ $ docker pull logstash@sha256:5785f05ef3ecf6eb4ad9c05615ea7e642f8aaa8f13c99ceeb7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **216.7 MB (216683724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04c608a9c6a0c78b62d4f3b77e814fcd4421ac5c2a59b05205cf446914781210`
+-	Image ID: `sha256:c8b30ca89b2bb95efc21a33cb6bd290e392413571173415364f755e97dab2761`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -446,12 +458,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:44:45 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:44:46 GMT
+# Thu, 16 Jun 2016 20:57:16 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:17 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:17 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:44:46 GMT
+# Thu, 16 Jun 2016 20:57:17 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:44:47 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:18 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -494,14 +510,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:cae2db5136d46be9c23f3150b5d8ac1c9713e4c0dceba11f39feb2980e51ca9a`  
 		Last Modified: Fri, 10 Jun 2016 16:54:38 GMT  
 		Size: 90.8 MB (90775465 bytes)
-	-	`sha256:f27e9de791dbe4faa477bd749250d27f4b8b9a048da24fb247681bac0af1b2a5`  
-		Last Modified: Fri, 10 Jun 2016 16:54:20 GMT  
+	-	`sha256:1c01cdd07d5fe0edc089e2e49e9f32d4005d246e062b76b572947b92549e352f`  
+		Last Modified: Thu, 16 Jun 2016 20:57:38 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.0.0-1`
 
 ```console
-$ docker pull logstash@sha256:b39170a8ebabdf2ba74e71278cff91279fef024e346ae9a444478ba04dd310be
+$ docker pull logstash@sha256:c04c488b1e92e62f807f6261f290bbc5f29b5503064dc2e8bc4262f27584af4f
 ```
 
 -	Platforms:
@@ -513,9 +529,9 @@ $ docker pull logstash@sha256:b39170a8ebabdf2ba74e71278cff91279fef024e346ae9a444
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **207.5 MB (207463004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:072614289fc940145b89add46dde0fad46fcaafb666d251a4e3f44f500324220`
+-	Image ID: `sha256:db21214a1ea27afa2738a6a4386a401980d1a940904aab3bbdea24fb782b8391`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -564,12 +580,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:46:32 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:46:33 GMT
+# Thu, 16 Jun 2016 20:57:18 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:19 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:20 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:46:34 GMT
+# Thu, 16 Jun 2016 20:57:20 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:46:34 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:20 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -612,14 +632,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:3c6922fcd43f3fee0cdb717138d1c0965ba54d503a84a27f046cbbb0eebd19bc`  
 		Last Modified: Fri, 10 Jun 2016 16:55:27 GMT  
 		Size: 81.6 MB (81554745 bytes)
-	-	`sha256:7a34e87fcab895cb01144906da1e2efa44201cd3bb538a3777c77507a7ca2afe`  
-		Last Modified: Fri, 10 Jun 2016 16:55:07 GMT  
+	-	`sha256:061596f6cef301cf607e2222c3640eb3aa632bfc0a1f6c399ab5a045edacbdc2`  
+		Last Modified: Thu, 16 Jun 2016 20:58:02 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.0.0`
 
 ```console
-$ docker pull logstash@sha256:b39170a8ebabdf2ba74e71278cff91279fef024e346ae9a444478ba04dd310be
+$ docker pull logstash@sha256:c04c488b1e92e62f807f6261f290bbc5f29b5503064dc2e8bc4262f27584af4f
 ```
 
 -	Platforms:
@@ -631,9 +651,9 @@ $ docker pull logstash@sha256:b39170a8ebabdf2ba74e71278cff91279fef024e346ae9a444
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **207.5 MB (207463004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:072614289fc940145b89add46dde0fad46fcaafb666d251a4e3f44f500324220`
+-	Image ID: `sha256:db21214a1ea27afa2738a6a4386a401980d1a940904aab3bbdea24fb782b8391`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -682,12 +702,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:46:32 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:46:33 GMT
+# Thu, 16 Jun 2016 20:57:18 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:19 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:20 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:46:34 GMT
+# Thu, 16 Jun 2016 20:57:20 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:46:34 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:20 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -730,14 +754,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:3c6922fcd43f3fee0cdb717138d1c0965ba54d503a84a27f046cbbb0eebd19bc`  
 		Last Modified: Fri, 10 Jun 2016 16:55:27 GMT  
 		Size: 81.6 MB (81554745 bytes)
-	-	`sha256:7a34e87fcab895cb01144906da1e2efa44201cd3bb538a3777c77507a7ca2afe`  
-		Last Modified: Fri, 10 Jun 2016 16:55:07 GMT  
+	-	`sha256:061596f6cef301cf607e2222c3640eb3aa632bfc0a1f6c399ab5a045edacbdc2`  
+		Last Modified: Thu, 16 Jun 2016 20:58:02 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.0`
 
 ```console
-$ docker pull logstash@sha256:b39170a8ebabdf2ba74e71278cff91279fef024e346ae9a444478ba04dd310be
+$ docker pull logstash@sha256:c04c488b1e92e62f807f6261f290bbc5f29b5503064dc2e8bc4262f27584af4f
 ```
 
 -	Platforms:
@@ -749,9 +773,9 @@ $ docker pull logstash@sha256:b39170a8ebabdf2ba74e71278cff91279fef024e346ae9a444
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **207.5 MB (207463004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:072614289fc940145b89add46dde0fad46fcaafb666d251a4e3f44f500324220`
+-	Image ID: `sha256:db21214a1ea27afa2738a6a4386a401980d1a940904aab3bbdea24fb782b8391`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -800,12 +824,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:46:32 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:46:33 GMT
+# Thu, 16 Jun 2016 20:57:18 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:19 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:20 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:46:34 GMT
+# Thu, 16 Jun 2016 20:57:20 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:46:34 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:20 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -848,14 +876,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:3c6922fcd43f3fee0cdb717138d1c0965ba54d503a84a27f046cbbb0eebd19bc`  
 		Last Modified: Fri, 10 Jun 2016 16:55:27 GMT  
 		Size: 81.6 MB (81554745 bytes)
-	-	`sha256:7a34e87fcab895cb01144906da1e2efa44201cd3bb538a3777c77507a7ca2afe`  
-		Last Modified: Fri, 10 Jun 2016 16:55:07 GMT  
+	-	`sha256:061596f6cef301cf607e2222c3640eb3aa632bfc0a1f6c399ab5a045edacbdc2`  
+		Last Modified: Thu, 16 Jun 2016 20:58:02 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.1.3-1`
 
 ```console
-$ docker pull logstash@sha256:cdcf2dfdfa0241cca533e3243de014d5db5fbad25b3f2ca1005adb6e0ae6bfce
+$ docker pull logstash@sha256:74752e9aa75cedd7997073e29c801d56e6828042bb60cb6712f024935970edd6
 ```
 
 -	Platforms:
@@ -867,9 +895,9 @@ $ docker pull logstash@sha256:cdcf2dfdfa0241cca533e3243de014d5db5fbad25b3f2ca100
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **201.3 MB (201267006 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0961e5d8f6ceaeb46bcd48e4e033ae2885fb6218adf57d80019a1b9b8227830f`
+-	Image ID: `sha256:5a13bb1393b9e601c5e042b8880eb2d9a71683fec5e1ca6fc3f52426675a8da2`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -918,12 +946,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:48:15 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:48:16 GMT
+# Thu, 16 Jun 2016 20:57:21 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:22 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:22 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:48:16 GMT
+# Thu, 16 Jun 2016 20:57:23 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:48:17 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:23 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -966,14 +998,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:03e1065625a4d1bc60e55596d7da6febdd583a5fe317033b8508b96f8ae0a8aa`  
 		Last Modified: Fri, 10 Jun 2016 16:56:12 GMT  
 		Size: 75.4 MB (75358750 bytes)
-	-	`sha256:dffa56081f4e84c34fe33cef8680444f9bab48b3958c93054a129092bf75ccad`  
-		Last Modified: Fri, 10 Jun 2016 16:55:51 GMT  
+	-	`sha256:be5ef7bb2ad9f0fc09852cb900dfcecacdd02dc060c872f62fd0017c5f5eef16`  
+		Last Modified: Thu, 16 Jun 2016 20:58:23 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.1.3`
 
 ```console
-$ docker pull logstash@sha256:cdcf2dfdfa0241cca533e3243de014d5db5fbad25b3f2ca1005adb6e0ae6bfce
+$ docker pull logstash@sha256:74752e9aa75cedd7997073e29c801d56e6828042bb60cb6712f024935970edd6
 ```
 
 -	Platforms:
@@ -985,9 +1017,9 @@ $ docker pull logstash@sha256:cdcf2dfdfa0241cca533e3243de014d5db5fbad25b3f2ca100
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **201.3 MB (201267006 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0961e5d8f6ceaeb46bcd48e4e033ae2885fb6218adf57d80019a1b9b8227830f`
+-	Image ID: `sha256:5a13bb1393b9e601c5e042b8880eb2d9a71683fec5e1ca6fc3f52426675a8da2`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -1036,12 +1068,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:48:15 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:48:16 GMT
+# Thu, 16 Jun 2016 20:57:21 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:22 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:22 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:48:16 GMT
+# Thu, 16 Jun 2016 20:57:23 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:48:17 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:23 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -1084,14 +1120,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:03e1065625a4d1bc60e55596d7da6febdd583a5fe317033b8508b96f8ae0a8aa`  
 		Last Modified: Fri, 10 Jun 2016 16:56:12 GMT  
 		Size: 75.4 MB (75358750 bytes)
-	-	`sha256:dffa56081f4e84c34fe33cef8680444f9bab48b3958c93054a129092bf75ccad`  
-		Last Modified: Fri, 10 Jun 2016 16:55:51 GMT  
+	-	`sha256:be5ef7bb2ad9f0fc09852cb900dfcecacdd02dc060c872f62fd0017c5f5eef16`  
+		Last Modified: Thu, 16 Jun 2016 20:58:23 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.1`
 
 ```console
-$ docker pull logstash@sha256:cdcf2dfdfa0241cca533e3243de014d5db5fbad25b3f2ca1005adb6e0ae6bfce
+$ docker pull logstash@sha256:74752e9aa75cedd7997073e29c801d56e6828042bb60cb6712f024935970edd6
 ```
 
 -	Platforms:
@@ -1103,9 +1139,9 @@ $ docker pull logstash@sha256:cdcf2dfdfa0241cca533e3243de014d5db5fbad25b3f2ca100
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **201.3 MB (201267006 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0961e5d8f6ceaeb46bcd48e4e033ae2885fb6218adf57d80019a1b9b8227830f`
+-	Image ID: `sha256:5a13bb1393b9e601c5e042b8880eb2d9a71683fec5e1ca6fc3f52426675a8da2`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -1154,12 +1190,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:48:15 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:48:16 GMT
+# Thu, 16 Jun 2016 20:57:21 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:22 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:22 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:48:16 GMT
+# Thu, 16 Jun 2016 20:57:23 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:48:17 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:23 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -1202,14 +1242,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:03e1065625a4d1bc60e55596d7da6febdd583a5fe317033b8508b96f8ae0a8aa`  
 		Last Modified: Fri, 10 Jun 2016 16:56:12 GMT  
 		Size: 75.4 MB (75358750 bytes)
-	-	`sha256:dffa56081f4e84c34fe33cef8680444f9bab48b3958c93054a129092bf75ccad`  
-		Last Modified: Fri, 10 Jun 2016 16:55:51 GMT  
+	-	`sha256:be5ef7bb2ad9f0fc09852cb900dfcecacdd02dc060c872f62fd0017c5f5eef16`  
+		Last Modified: Thu, 16 Jun 2016 20:58:23 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.2.4-1`
 
 ```console
-$ docker pull logstash@sha256:4f104f61ffe6f994aebe23aaf2617881539a353a85dc2779227dd80258db8001
+$ docker pull logstash@sha256:66c53be0cc6e041f2e5afa24e224a303ec4fe656a59b2ecf88b5d8909c71b1ef
 ```
 
 -	Platforms:
@@ -1219,11 +1259,11 @@ $ docker pull logstash@sha256:4f104f61ffe6f994aebe23aaf2617881539a353a85dc277922
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.1 MB (202066207 bytes)**  
+-	Total Size: **202.1 MB (202066208 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75d7367845a36dea5599e4012af4fde715d939aacc21efb5704ef6fdd3036a51`
+-	Image ID: `sha256:e3fec10b49d4bed28ada6f2483ade34f51e80fdb9619c721e0fd0df0af964ddf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -1272,12 +1312,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:49:58 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:49:58 GMT
+# Thu, 16 Jun 2016 20:57:23 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:25 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:25 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:49:58 GMT
+# Thu, 16 Jun 2016 20:57:25 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:49:59 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:26 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -1320,14 +1364,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:f6404940d5b12949934e86b24244ada90ec23c099b5cfc401726fa3d1b1b17b8`  
 		Last Modified: Fri, 10 Jun 2016 16:56:54 GMT  
 		Size: 76.2 MB (76157951 bytes)
-	-	`sha256:81467a5be455085bd3cdfff7cea826249ff6d3a19902fec695b579accd9f26b3`  
-		Last Modified: Fri, 10 Jun 2016 16:56:36 GMT  
-		Size: 251.0 B
+	-	`sha256:f708c1d9323becc5cd2ae5f6b2afeb7f5aba758a1edc4625495ce0661f74cd00`  
+		Last Modified: Thu, 16 Jun 2016 20:58:47 GMT  
+		Size: 252.0 B
 
 ## `logstash:2.2.4`
 
 ```console
-$ docker pull logstash@sha256:4f104f61ffe6f994aebe23aaf2617881539a353a85dc2779227dd80258db8001
+$ docker pull logstash@sha256:66c53be0cc6e041f2e5afa24e224a303ec4fe656a59b2ecf88b5d8909c71b1ef
 ```
 
 -	Platforms:
@@ -1337,11 +1381,11 @@ $ docker pull logstash@sha256:4f104f61ffe6f994aebe23aaf2617881539a353a85dc277922
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.1 MB (202066207 bytes)**  
+-	Total Size: **202.1 MB (202066208 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75d7367845a36dea5599e4012af4fde715d939aacc21efb5704ef6fdd3036a51`
+-	Image ID: `sha256:e3fec10b49d4bed28ada6f2483ade34f51e80fdb9619c721e0fd0df0af964ddf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -1390,12 +1434,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:49:58 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:49:58 GMT
+# Thu, 16 Jun 2016 20:57:23 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:25 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:25 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:49:58 GMT
+# Thu, 16 Jun 2016 20:57:25 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:49:59 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:26 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -1438,14 +1486,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:f6404940d5b12949934e86b24244ada90ec23c099b5cfc401726fa3d1b1b17b8`  
 		Last Modified: Fri, 10 Jun 2016 16:56:54 GMT  
 		Size: 76.2 MB (76157951 bytes)
-	-	`sha256:81467a5be455085bd3cdfff7cea826249ff6d3a19902fec695b579accd9f26b3`  
-		Last Modified: Fri, 10 Jun 2016 16:56:36 GMT  
-		Size: 251.0 B
+	-	`sha256:f708c1d9323becc5cd2ae5f6b2afeb7f5aba758a1edc4625495ce0661f74cd00`  
+		Last Modified: Thu, 16 Jun 2016 20:58:47 GMT  
+		Size: 252.0 B
 
 ## `logstash:2.2`
 
 ```console
-$ docker pull logstash@sha256:4f104f61ffe6f994aebe23aaf2617881539a353a85dc2779227dd80258db8001
+$ docker pull logstash@sha256:66c53be0cc6e041f2e5afa24e224a303ec4fe656a59b2ecf88b5d8909c71b1ef
 ```
 
 -	Platforms:
@@ -1455,11 +1503,11 @@ $ docker pull logstash@sha256:4f104f61ffe6f994aebe23aaf2617881539a353a85dc277922
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.1 MB (202066207 bytes)**  
+-	Total Size: **202.1 MB (202066208 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75d7367845a36dea5599e4012af4fde715d939aacc21efb5704ef6fdd3036a51`
+-	Image ID: `sha256:e3fec10b49d4bed28ada6f2483ade34f51e80fdb9619c721e0fd0df0af964ddf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -1508,12 +1556,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 10 Jun 2016 16:49:58 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 16:49:58 GMT
+# Thu, 16 Jun 2016 20:57:23 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:25 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:25 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 10 Jun 2016 16:49:58 GMT
+# Thu, 16 Jun 2016 20:57:25 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 16:49:59 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:26 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -1556,14 +1608,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:f6404940d5b12949934e86b24244ada90ec23c099b5cfc401726fa3d1b1b17b8`  
 		Last Modified: Fri, 10 Jun 2016 16:56:54 GMT  
 		Size: 76.2 MB (76157951 bytes)
-	-	`sha256:81467a5be455085bd3cdfff7cea826249ff6d3a19902fec695b579accd9f26b3`  
-		Last Modified: Fri, 10 Jun 2016 16:56:36 GMT  
-		Size: 251.0 B
+	-	`sha256:f708c1d9323becc5cd2ae5f6b2afeb7f5aba758a1edc4625495ce0661f74cd00`  
+		Last Modified: Thu, 16 Jun 2016 20:58:47 GMT  
+		Size: 252.0 B
 
 ## `logstash:2.3.3-1`
 
 ```console
-$ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652cddeb270cef77d6
+$ docker pull logstash@sha256:ba241f924ee5084550e08f5f808629c85adc1254d66ce602f6fbb9f741d5526f
 ```
 
 -	Platforms:
@@ -1575,9 +1627,9 @@ $ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652c
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **205.7 MB (205736721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95bf32408208162191d7a420ac3a266789c1c535f9794c6e3bb70088cba3c5aa`
+-	Image ID: `sha256:9fa78903b1bdc6105b02dadca5fed177607d4a00db9d8cc88377ca93d04b5dea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -1626,12 +1678,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 16 Jun 2016 19:36:19 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jun 2016 19:36:19 GMT
+# Thu, 16 Jun 2016 20:57:26 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:27 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:28 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Thu, 16 Jun 2016 19:36:20 GMT
+# Thu, 16 Jun 2016 20:57:28 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 16 Jun 2016 19:36:20 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:28 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -1674,14 +1730,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:0e62294ff5b84f49fcb3f10d74685cdea3b9a7ac366cdd3b822fde47b1b5db3b`  
 		Last Modified: Thu, 16 Jun 2016 19:38:07 GMT  
 		Size: 79.8 MB (79828461 bytes)
-	-	`sha256:1863edc13686665cc5b826045315e160dcb505ca5d19ad6c4711b4bc363223a0`  
-		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
+	-	`sha256:bfeab2b35322ed14e6a91b3d485f9bc28872a798a46f69a81c235a7daa7b74ba`  
+		Last Modified: Thu, 16 Jun 2016 20:59:07 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.3.3`
 
 ```console
-$ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652cddeb270cef77d6
+$ docker pull logstash@sha256:ba241f924ee5084550e08f5f808629c85adc1254d66ce602f6fbb9f741d5526f
 ```
 
 -	Platforms:
@@ -1693,9 +1749,9 @@ $ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652c
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **205.7 MB (205736721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95bf32408208162191d7a420ac3a266789c1c535f9794c6e3bb70088cba3c5aa`
+-	Image ID: `sha256:9fa78903b1bdc6105b02dadca5fed177607d4a00db9d8cc88377ca93d04b5dea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -1744,12 +1800,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 16 Jun 2016 19:36:19 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jun 2016 19:36:19 GMT
+# Thu, 16 Jun 2016 20:57:26 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:27 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:28 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Thu, 16 Jun 2016 19:36:20 GMT
+# Thu, 16 Jun 2016 20:57:28 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 16 Jun 2016 19:36:20 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:28 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -1792,14 +1852,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:0e62294ff5b84f49fcb3f10d74685cdea3b9a7ac366cdd3b822fde47b1b5db3b`  
 		Last Modified: Thu, 16 Jun 2016 19:38:07 GMT  
 		Size: 79.8 MB (79828461 bytes)
-	-	`sha256:1863edc13686665cc5b826045315e160dcb505ca5d19ad6c4711b4bc363223a0`  
-		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
+	-	`sha256:bfeab2b35322ed14e6a91b3d485f9bc28872a798a46f69a81c235a7daa7b74ba`  
+		Last Modified: Thu, 16 Jun 2016 20:59:07 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.3`
 
 ```console
-$ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652cddeb270cef77d6
+$ docker pull logstash@sha256:ba241f924ee5084550e08f5f808629c85adc1254d66ce602f6fbb9f741d5526f
 ```
 
 -	Platforms:
@@ -1811,9 +1871,9 @@ $ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652c
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **205.7 MB (205736721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95bf32408208162191d7a420ac3a266789c1c535f9794c6e3bb70088cba3c5aa`
+-	Image ID: `sha256:9fa78903b1bdc6105b02dadca5fed177607d4a00db9d8cc88377ca93d04b5dea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -1862,12 +1922,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 16 Jun 2016 19:36:19 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jun 2016 19:36:19 GMT
+# Thu, 16 Jun 2016 20:57:26 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:27 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:28 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Thu, 16 Jun 2016 19:36:20 GMT
+# Thu, 16 Jun 2016 20:57:28 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 16 Jun 2016 19:36:20 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:28 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -1910,14 +1974,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:0e62294ff5b84f49fcb3f10d74685cdea3b9a7ac366cdd3b822fde47b1b5db3b`  
 		Last Modified: Thu, 16 Jun 2016 19:38:07 GMT  
 		Size: 79.8 MB (79828461 bytes)
-	-	`sha256:1863edc13686665cc5b826045315e160dcb505ca5d19ad6c4711b4bc363223a0`  
-		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
+	-	`sha256:bfeab2b35322ed14e6a91b3d485f9bc28872a798a46f69a81c235a7daa7b74ba`  
+		Last Modified: Thu, 16 Jun 2016 20:59:07 GMT  
 		Size: 251.0 B
 
 ## `logstash:2`
 
 ```console
-$ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652cddeb270cef77d6
+$ docker pull logstash@sha256:ba241f924ee5084550e08f5f808629c85adc1254d66ce602f6fbb9f741d5526f
 ```
 
 -	Platforms:
@@ -1929,9 +1993,9 @@ $ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652c
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **205.7 MB (205736721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95bf32408208162191d7a420ac3a266789c1c535f9794c6e3bb70088cba3c5aa`
+-	Image ID: `sha256:9fa78903b1bdc6105b02dadca5fed177607d4a00db9d8cc88377ca93d04b5dea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -1980,12 +2044,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 16 Jun 2016 19:36:19 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jun 2016 19:36:19 GMT
+# Thu, 16 Jun 2016 20:57:26 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:27 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:28 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Thu, 16 Jun 2016 19:36:20 GMT
+# Thu, 16 Jun 2016 20:57:28 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 16 Jun 2016 19:36:20 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:28 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -2028,14 +2096,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:0e62294ff5b84f49fcb3f10d74685cdea3b9a7ac366cdd3b822fde47b1b5db3b`  
 		Last Modified: Thu, 16 Jun 2016 19:38:07 GMT  
 		Size: 79.8 MB (79828461 bytes)
-	-	`sha256:1863edc13686665cc5b826045315e160dcb505ca5d19ad6c4711b4bc363223a0`  
-		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
+	-	`sha256:bfeab2b35322ed14e6a91b3d485f9bc28872a798a46f69a81c235a7daa7b74ba`  
+		Last Modified: Thu, 16 Jun 2016 20:59:07 GMT  
 		Size: 251.0 B
 
 ## `logstash:latest`
 
 ```console
-$ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652cddeb270cef77d6
+$ docker pull logstash@sha256:ba241f924ee5084550e08f5f808629c85adc1254d66ce602f6fbb9f741d5526f
 ```
 
 -	Platforms:
@@ -2047,9 +2115,9 @@ $ docker pull logstash@sha256:5fb2e5d3a1b0a766411f70d6fef0bbfe3aabe8cefc7714652c
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **205.7 MB (205736721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95bf32408208162191d7a420ac3a266789c1c535f9794c6e3bb70088cba3c5aa`
+-	Image ID: `sha256:9fa78903b1bdc6105b02dadca5fed177607d4a00db9d8cc88377ca93d04b5dea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -2098,12 +2166,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 16 Jun 2016 19:36:19 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jun 2016 19:36:19 GMT
+# Thu, 16 Jun 2016 20:57:26 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:27 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:28 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Thu, 16 Jun 2016 19:36:20 GMT
+# Thu, 16 Jun 2016 20:57:28 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 16 Jun 2016 19:36:20 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:28 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -2146,14 +2218,14 @@ CMD ["logstash" "agent"]
 	-	`sha256:0e62294ff5b84f49fcb3f10d74685cdea3b9a7ac366cdd3b822fde47b1b5db3b`  
 		Last Modified: Thu, 16 Jun 2016 19:38:07 GMT  
 		Size: 79.8 MB (79828461 bytes)
-	-	`sha256:1863edc13686665cc5b826045315e160dcb505ca5d19ad6c4711b4bc363223a0`  
-		Last Modified: Thu, 16 Jun 2016 19:37:56 GMT  
+	-	`sha256:bfeab2b35322ed14e6a91b3d485f9bc28872a798a46f69a81c235a7daa7b74ba`  
+		Last Modified: Thu, 16 Jun 2016 20:59:07 GMT  
 		Size: 251.0 B
 
 ## `logstash:5.0.0-alpha3-1`
 
 ```console
-$ docker pull logstash@sha256:8dbc6e090e1a89ab944210995fa6a421a06db4180058e8cf64fcff61938b6f78
+$ docker pull logstash@sha256:aefb539911ce780696f4a480e0b36d5f2e9d75e068af870f1a0685a4d63533b4
 ```
 
 -	Platforms:
@@ -2163,11 +2235,11 @@ $ docker pull logstash@sha256:8dbc6e090e1a89ab944210995fa6a421a06db4180058e8cf64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.1 MB (212062987 bytes)**  
+-	Total Size: **212.1 MB (212064219 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91bded3bd158b9aa66b770ef8fedad1d9f0d7900360665c19c41c720935202eb`
+-	Image ID: `sha256:eeddb7476da80ec8e21c04f0e84b8aea8a235f537d7fe203e10e5d21af707483`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -2216,12 +2288,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Wed, 15 Jun 2016 20:57:37 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Jun 2016 20:57:37 GMT
+# Thu, 16 Jun 2016 20:57:29 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:30 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:30 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Wed, 15 Jun 2016 20:57:38 GMT
+# Thu, 16 Jun 2016 20:57:31 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Wed, 15 Jun 2016 20:57:38 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:31 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -2264,14 +2340,17 @@ CMD ["logstash" "agent"]
 	-	`sha256:56c612e760351c23dea84976d693435e0769dcac4ef6f05111899500a4902660`  
 		Last Modified: Fri, 10 Jun 2016 16:58:31 GMT  
 		Size: 86.2 MB (86154729 bytes)
-	-	`sha256:2d6bb3cf3b0430ccae5cbb056caf052f45ae63f893a06ee4ab4cac9df7faeae1`  
-		Last Modified: Wed, 15 Jun 2016 20:59:33 GMT  
-		Size: 251.0 B
+	-	`sha256:1dcb700e8d5c2dc68e97f73151786a733feaec55af3a22abc2b789910049c1ec`  
+		Last Modified: Thu, 16 Jun 2016 20:59:37 GMT  
+		Size: 1.2 KB (1234 bytes)
+	-	`sha256:e4a0b72d567b0708697e0a39cdc0e1625c3430631366b774ef98dc02448e5e6f`  
+		Last Modified: Thu, 16 Jun 2016 20:59:37 GMT  
+		Size: 249.0 B
 
 ## `logstash:5.0.0-alpha3`
 
 ```console
-$ docker pull logstash@sha256:8dbc6e090e1a89ab944210995fa6a421a06db4180058e8cf64fcff61938b6f78
+$ docker pull logstash@sha256:aefb539911ce780696f4a480e0b36d5f2e9d75e068af870f1a0685a4d63533b4
 ```
 
 -	Platforms:
@@ -2281,11 +2360,11 @@ $ docker pull logstash@sha256:8dbc6e090e1a89ab944210995fa6a421a06db4180058e8cf64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.1 MB (212062987 bytes)**  
+-	Total Size: **212.1 MB (212064219 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91bded3bd158b9aa66b770ef8fedad1d9f0d7900360665c19c41c720935202eb`
+-	Image ID: `sha256:eeddb7476da80ec8e21c04f0e84b8aea8a235f537d7fe203e10e5d21af707483`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -2334,12 +2413,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Wed, 15 Jun 2016 20:57:37 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Jun 2016 20:57:37 GMT
+# Thu, 16 Jun 2016 20:57:29 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:30 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:30 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Wed, 15 Jun 2016 20:57:38 GMT
+# Thu, 16 Jun 2016 20:57:31 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Wed, 15 Jun 2016 20:57:38 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:31 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -2382,14 +2465,17 @@ CMD ["logstash" "agent"]
 	-	`sha256:56c612e760351c23dea84976d693435e0769dcac4ef6f05111899500a4902660`  
 		Last Modified: Fri, 10 Jun 2016 16:58:31 GMT  
 		Size: 86.2 MB (86154729 bytes)
-	-	`sha256:2d6bb3cf3b0430ccae5cbb056caf052f45ae63f893a06ee4ab4cac9df7faeae1`  
-		Last Modified: Wed, 15 Jun 2016 20:59:33 GMT  
-		Size: 251.0 B
+	-	`sha256:1dcb700e8d5c2dc68e97f73151786a733feaec55af3a22abc2b789910049c1ec`  
+		Last Modified: Thu, 16 Jun 2016 20:59:37 GMT  
+		Size: 1.2 KB (1234 bytes)
+	-	`sha256:e4a0b72d567b0708697e0a39cdc0e1625c3430631366b774ef98dc02448e5e6f`  
+		Last Modified: Thu, 16 Jun 2016 20:59:37 GMT  
+		Size: 249.0 B
 
 ## `logstash:5.0.0`
 
 ```console
-$ docker pull logstash@sha256:8dbc6e090e1a89ab944210995fa6a421a06db4180058e8cf64fcff61938b6f78
+$ docker pull logstash@sha256:aefb539911ce780696f4a480e0b36d5f2e9d75e068af870f1a0685a4d63533b4
 ```
 
 -	Platforms:
@@ -2399,11 +2485,11 @@ $ docker pull logstash@sha256:8dbc6e090e1a89ab944210995fa6a421a06db4180058e8cf64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.1 MB (212062987 bytes)**  
+-	Total Size: **212.1 MB (212064219 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91bded3bd158b9aa66b770ef8fedad1d9f0d7900360665c19c41c720935202eb`
+-	Image ID: `sha256:eeddb7476da80ec8e21c04f0e84b8aea8a235f537d7fe203e10e5d21af707483`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -2452,12 +2538,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Wed, 15 Jun 2016 20:57:37 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Jun 2016 20:57:37 GMT
+# Thu, 16 Jun 2016 20:57:29 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:30 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:30 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Wed, 15 Jun 2016 20:57:38 GMT
+# Thu, 16 Jun 2016 20:57:31 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Wed, 15 Jun 2016 20:57:38 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:31 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -2500,14 +2590,17 @@ CMD ["logstash" "agent"]
 	-	`sha256:56c612e760351c23dea84976d693435e0769dcac4ef6f05111899500a4902660`  
 		Last Modified: Fri, 10 Jun 2016 16:58:31 GMT  
 		Size: 86.2 MB (86154729 bytes)
-	-	`sha256:2d6bb3cf3b0430ccae5cbb056caf052f45ae63f893a06ee4ab4cac9df7faeae1`  
-		Last Modified: Wed, 15 Jun 2016 20:59:33 GMT  
-		Size: 251.0 B
+	-	`sha256:1dcb700e8d5c2dc68e97f73151786a733feaec55af3a22abc2b789910049c1ec`  
+		Last Modified: Thu, 16 Jun 2016 20:59:37 GMT  
+		Size: 1.2 KB (1234 bytes)
+	-	`sha256:e4a0b72d567b0708697e0a39cdc0e1625c3430631366b774ef98dc02448e5e6f`  
+		Last Modified: Thu, 16 Jun 2016 20:59:37 GMT  
+		Size: 249.0 B
 
 ## `logstash:5.0`
 
 ```console
-$ docker pull logstash@sha256:8dbc6e090e1a89ab944210995fa6a421a06db4180058e8cf64fcff61938b6f78
+$ docker pull logstash@sha256:aefb539911ce780696f4a480e0b36d5f2e9d75e068af870f1a0685a4d63533b4
 ```
 
 -	Platforms:
@@ -2517,11 +2610,11 @@ $ docker pull logstash@sha256:8dbc6e090e1a89ab944210995fa6a421a06db4180058e8cf64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.1 MB (212062987 bytes)**  
+-	Total Size: **212.1 MB (212064219 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91bded3bd158b9aa66b770ef8fedad1d9f0d7900360665c19c41c720935202eb`
+-	Image ID: `sha256:eeddb7476da80ec8e21c04f0e84b8aea8a235f537d7fe203e10e5d21af707483`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -2570,12 +2663,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Wed, 15 Jun 2016 20:57:37 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Jun 2016 20:57:37 GMT
+# Thu, 16 Jun 2016 20:57:29 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:30 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:30 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Wed, 15 Jun 2016 20:57:38 GMT
+# Thu, 16 Jun 2016 20:57:31 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Wed, 15 Jun 2016 20:57:38 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:31 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -2618,14 +2715,17 @@ CMD ["logstash" "agent"]
 	-	`sha256:56c612e760351c23dea84976d693435e0769dcac4ef6f05111899500a4902660`  
 		Last Modified: Fri, 10 Jun 2016 16:58:31 GMT  
 		Size: 86.2 MB (86154729 bytes)
-	-	`sha256:2d6bb3cf3b0430ccae5cbb056caf052f45ae63f893a06ee4ab4cac9df7faeae1`  
-		Last Modified: Wed, 15 Jun 2016 20:59:33 GMT  
-		Size: 251.0 B
+	-	`sha256:1dcb700e8d5c2dc68e97f73151786a733feaec55af3a22abc2b789910049c1ec`  
+		Last Modified: Thu, 16 Jun 2016 20:59:37 GMT  
+		Size: 1.2 KB (1234 bytes)
+	-	`sha256:e4a0b72d567b0708697e0a39cdc0e1625c3430631366b774ef98dc02448e5e6f`  
+		Last Modified: Thu, 16 Jun 2016 20:59:37 GMT  
+		Size: 249.0 B
 
 ## `logstash:5`
 
 ```console
-$ docker pull logstash@sha256:8dbc6e090e1a89ab944210995fa6a421a06db4180058e8cf64fcff61938b6f78
+$ docker pull logstash@sha256:aefb539911ce780696f4a480e0b36d5f2e9d75e068af870f1a0685a4d63533b4
 ```
 
 -	Platforms:
@@ -2635,11 +2735,11 @@ $ docker pull logstash@sha256:8dbc6e090e1a89ab944210995fa6a421a06db4180058e8cf64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.1 MB (212062987 bytes)**  
+-	Total Size: **212.1 MB (212064219 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91bded3bd158b9aa66b770ef8fedad1d9f0d7900360665c19c41c720935202eb`
+-	Image ID: `sha256:eeddb7476da80ec8e21c04f0e84b8aea8a235f537d7fe203e10e5d21af707483`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["logstash","agent"]`
+-	Default Command: `["-e",""]`
 
 ```dockerfile
 # Thu, 09 Jun 2016 21:28:42 GMT
@@ -2688,12 +2788,16 @@ RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stabl
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
 # Wed, 15 Jun 2016 20:57:37 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Jun 2016 20:57:37 GMT
+# Thu, 16 Jun 2016 20:57:29 GMT
+ENV LS_SETTINGS_DIR=/etc/logstash
+# Thu, 16 Jun 2016 20:57:30 GMT
+RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
+# Thu, 16 Jun 2016 20:57:30 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Wed, 15 Jun 2016 20:57:38 GMT
+# Thu, 16 Jun 2016 20:57:31 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Wed, 15 Jun 2016 20:57:38 GMT
-CMD ["logstash" "agent"]
+# Thu, 16 Jun 2016 20:57:31 GMT
+CMD ["-e" ""]
 ```
 
 -	Layers:
@@ -2736,6 +2840,9 @@ CMD ["logstash" "agent"]
 	-	`sha256:56c612e760351c23dea84976d693435e0769dcac4ef6f05111899500a4902660`  
 		Last Modified: Fri, 10 Jun 2016 16:58:31 GMT  
 		Size: 86.2 MB (86154729 bytes)
-	-	`sha256:2d6bb3cf3b0430ccae5cbb056caf052f45ae63f893a06ee4ab4cac9df7faeae1`  
-		Last Modified: Wed, 15 Jun 2016 20:59:33 GMT  
-		Size: 251.0 B
+	-	`sha256:1dcb700e8d5c2dc68e97f73151786a733feaec55af3a22abc2b789910049c1ec`  
+		Last Modified: Thu, 16 Jun 2016 20:59:37 GMT  
+		Size: 1.2 KB (1234 bytes)
+	-	`sha256:e4a0b72d567b0708697e0a39cdc0e1625c3430631366b774ef98dc02448e5e6f`  
+		Last Modified: Thu, 16 Jun 2016 20:59:37 GMT  
+		Size: 249.0 B
