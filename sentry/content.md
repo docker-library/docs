@@ -45,8 +45,8 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 6.	The default config needs a celery beat and celery workers, start as many workers as you need (each with a unique name)
 
 	```console
-	$ docker run -d --name sentry-celery-beat -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry celery beat
-	$ docker run -d --name sentry-celery1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry celery worker
+	$ docker run -d --name sentry-cron -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run cron
+	$ docker run -d --name sentry-worker-1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run worker
 	```
 
 ### Port mapping
