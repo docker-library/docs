@@ -33,7 +33,7 @@ Walk through the Setup wizard and accept the default values.
 
 N1QL is the SQL based query language for Couchbase Server. Simply switch to the Query tab on the Web Console at `http://localhost:8091` and run the following N1QL Query in the query window:
 
-```SELECT name FROM `beer-sample` WHERE brewery_id ="mishawaka_brewing";```
+	SELECT name FROM `beer-sample` WHERE brewery_id ="mishawaka_brewing";
 
 You can also execute N1QL queries from the commandline. To run a query from command line query tool, run the interactive shell on the container:
 
@@ -43,7 +43,7 @@ Then, navigate to the `bin` directory under Couchbase Server installation and ru
 
 `/opt/couchbase/bin/cbq`
 
-```cbq> SELECT name FROM `beer-sample` WHERE brewery_id ="mishawaka_brewing";```
+	cbq> SELECT name FROM `beer-sample` WHERE brewery_id ="mishawaka_brewing";
 
 For more query samples, refer to the [Running your first N1QL query](http://developer.couchbase.com/documentation/server/4.5/getting-started/first-n1ql-query.html) guide.
 
