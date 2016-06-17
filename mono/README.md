@@ -12,10 +12,14 @@
 -	[`4.2.1.102-onbuild`, `4.2.1-onbuild` (*4.2.1.102/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/39c80bc024a4797c119c895fda70024fbc14d5b9/4.2.1.102/onbuild/Dockerfile)
 -	[`4.2.2.30`, `4.2.2` (*4.2.2.30/Dockerfile*)](https://github.com/mono/docker/blob/d1aafcdae56ae9ceaf013294d3c74c4183a80281/4.2.2.30/Dockerfile)
 -	[`4.2.2.30-onbuild`, `4.2.2-onbuild` (*4.2.2.30/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/d1aafcdae56ae9ceaf013294d3c74c4183a80281/4.2.2.30/onbuild/Dockerfile)
--	[`4.2.3.4`, `4.2.3`, `4.2`, `4`, `latest` (*4.2.3.4/Dockerfile*)](https://github.com/mono/docker/blob/38858eb4bcdfc45e448ce8aae8b38148578f0f94/4.2.3.4/Dockerfile)
--	[`4.2.3.4-onbuild`, `4.2.3-onbuild`, `4.2-onbuild`, `4-onbuild`, `onbuild` (*4.2.3.4/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/38858eb4bcdfc45e448ce8aae8b38148578f0f94/4.2.3.4/onbuild/Dockerfile)
+-	[`4.2.3.4`, `4.2.3` (*4.2.3.4/Dockerfile*)](https://github.com/mono/docker/blob/38858eb4bcdfc45e448ce8aae8b38148578f0f94/4.2.3.4/Dockerfile)
+-	[`4.2.3.4-onbuild`, `4.2.3-onbuild` (*4.2.3.4/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/38858eb4bcdfc45e448ce8aae8b38148578f0f94/4.2.3.4/onbuild/Dockerfile)
+-	[`4.2.4.4`, `4.2.4`, `4.2` (*4.2.4.4/Dockerfile*)](https://github.com/mono/docker/blob/763e13adbe21d4f82aae1caa066a035bd8c6d888/4.2.4.4/Dockerfile)
+-	[`4.2.4.4-onbuild`, `4.2.4-onbuild`, `4.2-onbuild` (*4.2.4.4/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/763e13adbe21d4f82aae1caa066a035bd8c6d888/4.2.4.4/onbuild/Dockerfile)
+-	[`4.4.0.182`, `4.4.0`, `4.4`, `4`, `latest` (*4.4.0.182/Dockerfile*)](https://github.com/mono/docker/blob/e92989ade1408fd977b3a15eec3c3b7a5611bcee/4.4.0.182/Dockerfile)
+-	[`4.4.0.182-onbuild`, `4.4.0-onbuild`, `4.4-onbuild`, `4-onbuild`, `onbuild` (*4.4.0.182/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/09ae976880cd497a7dc9e8c89e8f26a8fcbd3879/4.4.0.182/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/mono:latest.svg)](https://imagelayers.io/?images=mono:3.10.0,mono:3.10.0-onbuild,mono:3.12.1,mono:3.12.1-onbuild,mono:3.8.0,mono:3.8.0-onbuild,mono:4.0.5.1,mono:4.0.5.1-onbuild,mono:4.2.1.102,mono:4.2.1.102-onbuild,mono:4.2.2.30,mono:4.2.2.30-onbuild,mono:4.2.3.4,mono:4.2.3.4-onbuild)
+[![](https://badge.imagelayers.io/mono:latest.svg)](https://imagelayers.io/?images=mono:3.10.0,mono:3.10.0-onbuild,mono:3.12.1,mono:3.12.1-onbuild,mono:3.8.0,mono:3.8.0-onbuild,mono:4.0.5.1,mono:4.0.5.1-onbuild,mono:4.2.1.102,mono:4.2.1.102-onbuild,mono:4.2.2.30,mono:4.2.2.30-onbuild,mono:4.2.3.4,mono:4.2.3.4-onbuild,mono:4.2.4.4,mono:4.2.4.4-onbuild,mono:4.4.0.182,mono:4.4.0.182-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono).
 
