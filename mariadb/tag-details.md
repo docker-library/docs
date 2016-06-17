@@ -8,14 +8,14 @@
 -	[`mariadb:latest`](#mariadblatest)
 -	[`mariadb:10.0.25`](#mariadb10025)
 -	[`mariadb:10.0`](#mariadb100)
--	[`mariadb:5.5.49`](#mariadb5549)
+-	[`mariadb:5.5.50`](#mariadb5550)
 -	[`mariadb:5.5`](#mariadb55)
 -	[`mariadb:5`](#mariadb5)
 
 ## `mariadb:10.1.14`
 
 ```console
-$ docker pull mariadb@sha256:4ba05f5d84328374f938895eb7a0d64ad340d245b44983d7cfb22f3274cf655f
+$ docker pull mariadb@sha256:358f6b50afd9c25707e97869f0c57de802c53973a90a2ff49e283501fccce1b2
 ```
 
 -	Platforms:
@@ -23,123 +23,99 @@ $ docker pull mariadb@sha256:4ba05f5d84328374f938895eb7a0d64ad340d245b44983d7cfb
 
 ### `mariadb:10.1.14` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.6 MB (132609731 bytes)**  
+-	Total Size: **132.7 MB (132663820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ada4b967325fed90963cba780c121319cfb1f73c6d87566663b52f151f8494a`
+-	Image ID: `sha256:0112f2662974381530a64e21b19684141de025cdd2c80b57e8f8f3c4162b7799`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:41:25 GMT
+# Fri, 10 Jun 2016 01:48:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:41:26 GMT
+# Fri, 10 Jun 2016 01:48:40 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:42:30 GMT
+# Fri, 10 Jun 2016 01:50:09 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:42:32 GMT
+# Fri, 10 Jun 2016 01:50:10 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 02:43:08 GMT
+# Fri, 10 Jun 2016 01:51:04 GMT
 RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 02:43:31 GMT
+# Fri, 10 Jun 2016 01:51:37 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	&& apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
-# Tue, 24 May 2016 02:43:33 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 RUN echo "deb http://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 24 May 2016 02:43:34 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 ENV MARIADB_MAJOR=10.1
-# Tue, 24 May 2016 02:43:35 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 ENV MARIADB_VERSION=10.1.14+maria-1~jessie
-# Tue, 24 May 2016 02:43:36 GMT
+# Fri, 10 Jun 2016 01:51:39 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 24 May 2016 02:45:32 GMT
+# Fri, 10 Jun 2016 01:53:45 GMT
 RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password 'unused'; 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mariadb-server=$MARIADB_VERSION 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 02:45:38 GMT
+# Fri, 10 Jun 2016 01:53:46 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 02:45:39 GMT
+# Fri, 10 Jun 2016 01:53:46 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 02:45:41 GMT
-COPY file:d8a3d3ef3fa55abe4af70da6a325237f9b5f4e4efd2c632d4bb0ef3c99aae1e8 in /usr/local/bin/
-# Tue, 24 May 2016 02:45:43 GMT
+# Fri, 10 Jun 2016 01:53:47 GMT
+COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
+# Fri, 10 Jun 2016 01:53:48 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 24 May 2016 02:45:44 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 02:45:46 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 02:45:47 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:260d7505d8f946e326a8c267560b07513be001da009113b6acaa3995b2f8d34c`  
-		Last Modified: Wed, 25 May 2016 21:51:12 GMT  
-		Size: 2.0 KB (2038 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a65f47c75fe37fae466f54ed7c640ca7ead74a42a63a3130f7468e8951c5f701`  
-		Last Modified: Wed, 25 May 2016 21:51:07 GMT  
-		Size: 1.2 MB (1215972 bytes)
-	-	`sha256:729d0217f8dbf240a446f8667fa265f51e81c561a1a10f3bed108294a1e5c49a`  
-		Last Modified: Wed, 25 May 2016 21:51:03 GMT  
-		Size: 112.0 B
-	-	`sha256:88ba273218e9aed082f83515211061c798a8abbaecb1a906bfbfa3aa0a36849f`  
-		Last Modified: Wed, 25 May 2016 21:51:01 GMT  
-		Size: 82.7 KB (82657 bytes)
-	-	`sha256:b65592ea5731ef61a51c581dc0720eec42c7166be00ea0a07eb3738af6691f6b`  
-		Last Modified: Tue, 31 May 2016 20:30:40 GMT  
-		Size: 17.2 KB (17229 bytes)
-	-	`sha256:1e3301de8d0c1e855fee0e3686ef90bd698c3beeb5511aa97fd7e554cffbdde8`  
-		Last Modified: Tue, 31 May 2016 20:30:36 GMT  
-		Size: 313.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:80e9e5c4c5552d31da89e36d05989e27ae5f3d964ffdf3fe0fbbd4f966340b2f`  
-		Last Modified: Tue, 31 May 2016 20:30:25 GMT  
-		Size: 319.0 B
-	-	`sha256:f9d4a0394e76791f354e76fec7f143e97ddc9f4424cdae2b967ae64f033d2dbc`  
-		Last Modified: Tue, 31 May 2016 20:30:16 GMT  
-		Size: 79.9 MB (79930069 bytes)
-	-	`sha256:99b80cf8b72a482bc81dd8977eea40d766006e8477fa7b5b6dbb34e07847eca7`  
-		Last Modified: Tue, 31 May 2016 20:29:38 GMT  
-		Size: 2.6 KB (2644 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e73b5719a70c2353de76cee77b6b1218e32a5011bb83bf72b3d4d8568385d0c5`  
-		Last Modified: Tue, 31 May 2016 20:29:31 GMT  
-		Size: 1.7 KB (1670 bytes)
-	-	`sha256:cf75b85cc04dcbef95d40786371fce5143f9b890afc275a744c1a107f6c96576`  
-		Last Modified: Tue, 31 May 2016 20:29:27 GMT  
-		Size: 118.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:23e145a854622fcf4b308aadcdf7a7ca855200c8bca2a6dce01566ac586df326`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 103.5 KB (103482 bytes)
+	-	`sha256:ad4f74b37b828814045877a2ed2b13d1ac699277ad1756278229e8069eeab2f7`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 17.2 KB (17220 bytes)
+	-	`sha256:ed3e1c3a25964b17e757b3fda9660a36239d90b1beb1ac8e2726e91ee776dc39`  
+		Last Modified: Fri, 17 Jun 2016 22:47:40 GMT  
+		Size: 312.0 B
+	-	`sha256:34c67c4a9ce5a26de477163c5938c962fe10751d570658f0665d63c31f5b89d5`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 320.0 B
+	-	`sha256:a87a3e369167659da7e8be8e68e625cdff121f36d61917f88bc068c9a62b5338`  
+		Last Modified: Fri, 17 Jun 2016 22:48:03 GMT  
+		Size: 79.9 MB (79946538 bytes)
+	-	`sha256:692642483619644490fe9d0f62d5f39a04b606cc55e8470eaae41947d080c962`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 2.6 KB (2645 bytes)
+	-	`sha256:1b4e355d86bb9b9b31073901b42858e0f1ef40cb2921c0a716612809f0b97776`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 1.7 KB (1666 bytes)
+	-	`sha256:cd32d1285550c46b5107fba0a6da613950be0a6d0e512b9bd641ee4335f5f41d`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 120.0 B
 
 ## `mariadb:10.1`
 
 ```console
-$ docker pull mariadb@sha256:4ba05f5d84328374f938895eb7a0d64ad340d245b44983d7cfb22f3274cf655f
+$ docker pull mariadb@sha256:358f6b50afd9c25707e97869f0c57de802c53973a90a2ff49e283501fccce1b2
 ```
 
 -	Platforms:
@@ -147,123 +123,99 @@ $ docker pull mariadb@sha256:4ba05f5d84328374f938895eb7a0d64ad340d245b44983d7cfb
 
 ### `mariadb:10.1` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.6 MB (132609731 bytes)**  
+-	Total Size: **132.7 MB (132663820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ada4b967325fed90963cba780c121319cfb1f73c6d87566663b52f151f8494a`
+-	Image ID: `sha256:0112f2662974381530a64e21b19684141de025cdd2c80b57e8f8f3c4162b7799`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:41:25 GMT
+# Fri, 10 Jun 2016 01:48:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:41:26 GMT
+# Fri, 10 Jun 2016 01:48:40 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:42:30 GMT
+# Fri, 10 Jun 2016 01:50:09 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:42:32 GMT
+# Fri, 10 Jun 2016 01:50:10 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 02:43:08 GMT
+# Fri, 10 Jun 2016 01:51:04 GMT
 RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 02:43:31 GMT
+# Fri, 10 Jun 2016 01:51:37 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	&& apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
-# Tue, 24 May 2016 02:43:33 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 RUN echo "deb http://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 24 May 2016 02:43:34 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 ENV MARIADB_MAJOR=10.1
-# Tue, 24 May 2016 02:43:35 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 ENV MARIADB_VERSION=10.1.14+maria-1~jessie
-# Tue, 24 May 2016 02:43:36 GMT
+# Fri, 10 Jun 2016 01:51:39 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 24 May 2016 02:45:32 GMT
+# Fri, 10 Jun 2016 01:53:45 GMT
 RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password 'unused'; 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mariadb-server=$MARIADB_VERSION 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 02:45:38 GMT
+# Fri, 10 Jun 2016 01:53:46 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 02:45:39 GMT
+# Fri, 10 Jun 2016 01:53:46 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 02:45:41 GMT
-COPY file:d8a3d3ef3fa55abe4af70da6a325237f9b5f4e4efd2c632d4bb0ef3c99aae1e8 in /usr/local/bin/
-# Tue, 24 May 2016 02:45:43 GMT
+# Fri, 10 Jun 2016 01:53:47 GMT
+COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
+# Fri, 10 Jun 2016 01:53:48 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 24 May 2016 02:45:44 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 02:45:46 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 02:45:47 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:260d7505d8f946e326a8c267560b07513be001da009113b6acaa3995b2f8d34c`  
-		Last Modified: Wed, 25 May 2016 21:51:12 GMT  
-		Size: 2.0 KB (2038 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a65f47c75fe37fae466f54ed7c640ca7ead74a42a63a3130f7468e8951c5f701`  
-		Last Modified: Wed, 25 May 2016 21:51:07 GMT  
-		Size: 1.2 MB (1215972 bytes)
-	-	`sha256:729d0217f8dbf240a446f8667fa265f51e81c561a1a10f3bed108294a1e5c49a`  
-		Last Modified: Wed, 25 May 2016 21:51:03 GMT  
-		Size: 112.0 B
-	-	`sha256:88ba273218e9aed082f83515211061c798a8abbaecb1a906bfbfa3aa0a36849f`  
-		Last Modified: Wed, 25 May 2016 21:51:01 GMT  
-		Size: 82.7 KB (82657 bytes)
-	-	`sha256:b65592ea5731ef61a51c581dc0720eec42c7166be00ea0a07eb3738af6691f6b`  
-		Last Modified: Tue, 31 May 2016 20:30:40 GMT  
-		Size: 17.2 KB (17229 bytes)
-	-	`sha256:1e3301de8d0c1e855fee0e3686ef90bd698c3beeb5511aa97fd7e554cffbdde8`  
-		Last Modified: Tue, 31 May 2016 20:30:36 GMT  
-		Size: 313.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:80e9e5c4c5552d31da89e36d05989e27ae5f3d964ffdf3fe0fbbd4f966340b2f`  
-		Last Modified: Tue, 31 May 2016 20:30:25 GMT  
-		Size: 319.0 B
-	-	`sha256:f9d4a0394e76791f354e76fec7f143e97ddc9f4424cdae2b967ae64f033d2dbc`  
-		Last Modified: Tue, 31 May 2016 20:30:16 GMT  
-		Size: 79.9 MB (79930069 bytes)
-	-	`sha256:99b80cf8b72a482bc81dd8977eea40d766006e8477fa7b5b6dbb34e07847eca7`  
-		Last Modified: Tue, 31 May 2016 20:29:38 GMT  
-		Size: 2.6 KB (2644 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e73b5719a70c2353de76cee77b6b1218e32a5011bb83bf72b3d4d8568385d0c5`  
-		Last Modified: Tue, 31 May 2016 20:29:31 GMT  
-		Size: 1.7 KB (1670 bytes)
-	-	`sha256:cf75b85cc04dcbef95d40786371fce5143f9b890afc275a744c1a107f6c96576`  
-		Last Modified: Tue, 31 May 2016 20:29:27 GMT  
-		Size: 118.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:23e145a854622fcf4b308aadcdf7a7ca855200c8bca2a6dce01566ac586df326`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 103.5 KB (103482 bytes)
+	-	`sha256:ad4f74b37b828814045877a2ed2b13d1ac699277ad1756278229e8069eeab2f7`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 17.2 KB (17220 bytes)
+	-	`sha256:ed3e1c3a25964b17e757b3fda9660a36239d90b1beb1ac8e2726e91ee776dc39`  
+		Last Modified: Fri, 17 Jun 2016 22:47:40 GMT  
+		Size: 312.0 B
+	-	`sha256:34c67c4a9ce5a26de477163c5938c962fe10751d570658f0665d63c31f5b89d5`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 320.0 B
+	-	`sha256:a87a3e369167659da7e8be8e68e625cdff121f36d61917f88bc068c9a62b5338`  
+		Last Modified: Fri, 17 Jun 2016 22:48:03 GMT  
+		Size: 79.9 MB (79946538 bytes)
+	-	`sha256:692642483619644490fe9d0f62d5f39a04b606cc55e8470eaae41947d080c962`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 2.6 KB (2645 bytes)
+	-	`sha256:1b4e355d86bb9b9b31073901b42858e0f1ef40cb2921c0a716612809f0b97776`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 1.7 KB (1666 bytes)
+	-	`sha256:cd32d1285550c46b5107fba0a6da613950be0a6d0e512b9bd641ee4335f5f41d`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 120.0 B
 
 ## `mariadb:10`
 
 ```console
-$ docker pull mariadb@sha256:4ba05f5d84328374f938895eb7a0d64ad340d245b44983d7cfb22f3274cf655f
+$ docker pull mariadb@sha256:358f6b50afd9c25707e97869f0c57de802c53973a90a2ff49e283501fccce1b2
 ```
 
 -	Platforms:
@@ -271,123 +223,99 @@ $ docker pull mariadb@sha256:4ba05f5d84328374f938895eb7a0d64ad340d245b44983d7cfb
 
 ### `mariadb:10` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.6 MB (132609731 bytes)**  
+-	Total Size: **132.7 MB (132663820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ada4b967325fed90963cba780c121319cfb1f73c6d87566663b52f151f8494a`
+-	Image ID: `sha256:0112f2662974381530a64e21b19684141de025cdd2c80b57e8f8f3c4162b7799`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:41:25 GMT
+# Fri, 10 Jun 2016 01:48:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:41:26 GMT
+# Fri, 10 Jun 2016 01:48:40 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:42:30 GMT
+# Fri, 10 Jun 2016 01:50:09 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:42:32 GMT
+# Fri, 10 Jun 2016 01:50:10 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 02:43:08 GMT
+# Fri, 10 Jun 2016 01:51:04 GMT
 RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 02:43:31 GMT
+# Fri, 10 Jun 2016 01:51:37 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	&& apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
-# Tue, 24 May 2016 02:43:33 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 RUN echo "deb http://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 24 May 2016 02:43:34 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 ENV MARIADB_MAJOR=10.1
-# Tue, 24 May 2016 02:43:35 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 ENV MARIADB_VERSION=10.1.14+maria-1~jessie
-# Tue, 24 May 2016 02:43:36 GMT
+# Fri, 10 Jun 2016 01:51:39 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 24 May 2016 02:45:32 GMT
+# Fri, 10 Jun 2016 01:53:45 GMT
 RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password 'unused'; 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mariadb-server=$MARIADB_VERSION 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 02:45:38 GMT
+# Fri, 10 Jun 2016 01:53:46 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 02:45:39 GMT
+# Fri, 10 Jun 2016 01:53:46 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 02:45:41 GMT
-COPY file:d8a3d3ef3fa55abe4af70da6a325237f9b5f4e4efd2c632d4bb0ef3c99aae1e8 in /usr/local/bin/
-# Tue, 24 May 2016 02:45:43 GMT
+# Fri, 10 Jun 2016 01:53:47 GMT
+COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
+# Fri, 10 Jun 2016 01:53:48 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 24 May 2016 02:45:44 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 02:45:46 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 02:45:47 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:260d7505d8f946e326a8c267560b07513be001da009113b6acaa3995b2f8d34c`  
-		Last Modified: Wed, 25 May 2016 21:51:12 GMT  
-		Size: 2.0 KB (2038 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a65f47c75fe37fae466f54ed7c640ca7ead74a42a63a3130f7468e8951c5f701`  
-		Last Modified: Wed, 25 May 2016 21:51:07 GMT  
-		Size: 1.2 MB (1215972 bytes)
-	-	`sha256:729d0217f8dbf240a446f8667fa265f51e81c561a1a10f3bed108294a1e5c49a`  
-		Last Modified: Wed, 25 May 2016 21:51:03 GMT  
-		Size: 112.0 B
-	-	`sha256:88ba273218e9aed082f83515211061c798a8abbaecb1a906bfbfa3aa0a36849f`  
-		Last Modified: Wed, 25 May 2016 21:51:01 GMT  
-		Size: 82.7 KB (82657 bytes)
-	-	`sha256:b65592ea5731ef61a51c581dc0720eec42c7166be00ea0a07eb3738af6691f6b`  
-		Last Modified: Tue, 31 May 2016 20:30:40 GMT  
-		Size: 17.2 KB (17229 bytes)
-	-	`sha256:1e3301de8d0c1e855fee0e3686ef90bd698c3beeb5511aa97fd7e554cffbdde8`  
-		Last Modified: Tue, 31 May 2016 20:30:36 GMT  
-		Size: 313.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:80e9e5c4c5552d31da89e36d05989e27ae5f3d964ffdf3fe0fbbd4f966340b2f`  
-		Last Modified: Tue, 31 May 2016 20:30:25 GMT  
-		Size: 319.0 B
-	-	`sha256:f9d4a0394e76791f354e76fec7f143e97ddc9f4424cdae2b967ae64f033d2dbc`  
-		Last Modified: Tue, 31 May 2016 20:30:16 GMT  
-		Size: 79.9 MB (79930069 bytes)
-	-	`sha256:99b80cf8b72a482bc81dd8977eea40d766006e8477fa7b5b6dbb34e07847eca7`  
-		Last Modified: Tue, 31 May 2016 20:29:38 GMT  
-		Size: 2.6 KB (2644 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e73b5719a70c2353de76cee77b6b1218e32a5011bb83bf72b3d4d8568385d0c5`  
-		Last Modified: Tue, 31 May 2016 20:29:31 GMT  
-		Size: 1.7 KB (1670 bytes)
-	-	`sha256:cf75b85cc04dcbef95d40786371fce5143f9b890afc275a744c1a107f6c96576`  
-		Last Modified: Tue, 31 May 2016 20:29:27 GMT  
-		Size: 118.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:23e145a854622fcf4b308aadcdf7a7ca855200c8bca2a6dce01566ac586df326`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 103.5 KB (103482 bytes)
+	-	`sha256:ad4f74b37b828814045877a2ed2b13d1ac699277ad1756278229e8069eeab2f7`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 17.2 KB (17220 bytes)
+	-	`sha256:ed3e1c3a25964b17e757b3fda9660a36239d90b1beb1ac8e2726e91ee776dc39`  
+		Last Modified: Fri, 17 Jun 2016 22:47:40 GMT  
+		Size: 312.0 B
+	-	`sha256:34c67c4a9ce5a26de477163c5938c962fe10751d570658f0665d63c31f5b89d5`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 320.0 B
+	-	`sha256:a87a3e369167659da7e8be8e68e625cdff121f36d61917f88bc068c9a62b5338`  
+		Last Modified: Fri, 17 Jun 2016 22:48:03 GMT  
+		Size: 79.9 MB (79946538 bytes)
+	-	`sha256:692642483619644490fe9d0f62d5f39a04b606cc55e8470eaae41947d080c962`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 2.6 KB (2645 bytes)
+	-	`sha256:1b4e355d86bb9b9b31073901b42858e0f1ef40cb2921c0a716612809f0b97776`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 1.7 KB (1666 bytes)
+	-	`sha256:cd32d1285550c46b5107fba0a6da613950be0a6d0e512b9bd641ee4335f5f41d`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 120.0 B
 
 ## `mariadb:latest`
 
 ```console
-$ docker pull mariadb@sha256:4ba05f5d84328374f938895eb7a0d64ad340d245b44983d7cfb22f3274cf655f
+$ docker pull mariadb@sha256:358f6b50afd9c25707e97869f0c57de802c53973a90a2ff49e283501fccce1b2
 ```
 
 -	Platforms:
@@ -395,123 +323,99 @@ $ docker pull mariadb@sha256:4ba05f5d84328374f938895eb7a0d64ad340d245b44983d7cfb
 
 ### `mariadb:latest` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.6 MB (132609731 bytes)**  
+-	Total Size: **132.7 MB (132663820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ada4b967325fed90963cba780c121319cfb1f73c6d87566663b52f151f8494a`
+-	Image ID: `sha256:0112f2662974381530a64e21b19684141de025cdd2c80b57e8f8f3c4162b7799`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:41:25 GMT
+# Fri, 10 Jun 2016 01:48:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:41:26 GMT
+# Fri, 10 Jun 2016 01:48:40 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:42:30 GMT
+# Fri, 10 Jun 2016 01:50:09 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:42:32 GMT
+# Fri, 10 Jun 2016 01:50:10 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 02:43:08 GMT
+# Fri, 10 Jun 2016 01:51:04 GMT
 RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 02:43:31 GMT
+# Fri, 10 Jun 2016 01:51:37 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	&& apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
-# Tue, 24 May 2016 02:43:33 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 RUN echo "deb http://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 24 May 2016 02:43:34 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 ENV MARIADB_MAJOR=10.1
-# Tue, 24 May 2016 02:43:35 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 ENV MARIADB_VERSION=10.1.14+maria-1~jessie
-# Tue, 24 May 2016 02:43:36 GMT
+# Fri, 10 Jun 2016 01:51:39 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 24 May 2016 02:45:32 GMT
+# Fri, 10 Jun 2016 01:53:45 GMT
 RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password 'unused'; 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mariadb-server=$MARIADB_VERSION 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 02:45:38 GMT
+# Fri, 10 Jun 2016 01:53:46 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 02:45:39 GMT
+# Fri, 10 Jun 2016 01:53:46 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 02:45:41 GMT
-COPY file:d8a3d3ef3fa55abe4af70da6a325237f9b5f4e4efd2c632d4bb0ef3c99aae1e8 in /usr/local/bin/
-# Tue, 24 May 2016 02:45:43 GMT
+# Fri, 10 Jun 2016 01:53:47 GMT
+COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
+# Fri, 10 Jun 2016 01:53:48 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 24 May 2016 02:45:44 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 02:45:46 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 02:45:47 GMT
+# Fri, 10 Jun 2016 01:53:48 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:260d7505d8f946e326a8c267560b07513be001da009113b6acaa3995b2f8d34c`  
-		Last Modified: Wed, 25 May 2016 21:51:12 GMT  
-		Size: 2.0 KB (2038 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a65f47c75fe37fae466f54ed7c640ca7ead74a42a63a3130f7468e8951c5f701`  
-		Last Modified: Wed, 25 May 2016 21:51:07 GMT  
-		Size: 1.2 MB (1215972 bytes)
-	-	`sha256:729d0217f8dbf240a446f8667fa265f51e81c561a1a10f3bed108294a1e5c49a`  
-		Last Modified: Wed, 25 May 2016 21:51:03 GMT  
-		Size: 112.0 B
-	-	`sha256:88ba273218e9aed082f83515211061c798a8abbaecb1a906bfbfa3aa0a36849f`  
-		Last Modified: Wed, 25 May 2016 21:51:01 GMT  
-		Size: 82.7 KB (82657 bytes)
-	-	`sha256:b65592ea5731ef61a51c581dc0720eec42c7166be00ea0a07eb3738af6691f6b`  
-		Last Modified: Tue, 31 May 2016 20:30:40 GMT  
-		Size: 17.2 KB (17229 bytes)
-	-	`sha256:1e3301de8d0c1e855fee0e3686ef90bd698c3beeb5511aa97fd7e554cffbdde8`  
-		Last Modified: Tue, 31 May 2016 20:30:36 GMT  
-		Size: 313.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:80e9e5c4c5552d31da89e36d05989e27ae5f3d964ffdf3fe0fbbd4f966340b2f`  
-		Last Modified: Tue, 31 May 2016 20:30:25 GMT  
-		Size: 319.0 B
-	-	`sha256:f9d4a0394e76791f354e76fec7f143e97ddc9f4424cdae2b967ae64f033d2dbc`  
-		Last Modified: Tue, 31 May 2016 20:30:16 GMT  
-		Size: 79.9 MB (79930069 bytes)
-	-	`sha256:99b80cf8b72a482bc81dd8977eea40d766006e8477fa7b5b6dbb34e07847eca7`  
-		Last Modified: Tue, 31 May 2016 20:29:38 GMT  
-		Size: 2.6 KB (2644 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e73b5719a70c2353de76cee77b6b1218e32a5011bb83bf72b3d4d8568385d0c5`  
-		Last Modified: Tue, 31 May 2016 20:29:31 GMT  
-		Size: 1.7 KB (1670 bytes)
-	-	`sha256:cf75b85cc04dcbef95d40786371fce5143f9b890afc275a744c1a107f6c96576`  
-		Last Modified: Tue, 31 May 2016 20:29:27 GMT  
-		Size: 118.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:23e145a854622fcf4b308aadcdf7a7ca855200c8bca2a6dce01566ac586df326`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 103.5 KB (103482 bytes)
+	-	`sha256:ad4f74b37b828814045877a2ed2b13d1ac699277ad1756278229e8069eeab2f7`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 17.2 KB (17220 bytes)
+	-	`sha256:ed3e1c3a25964b17e757b3fda9660a36239d90b1beb1ac8e2726e91ee776dc39`  
+		Last Modified: Fri, 17 Jun 2016 22:47:40 GMT  
+		Size: 312.0 B
+	-	`sha256:34c67c4a9ce5a26de477163c5938c962fe10751d570658f0665d63c31f5b89d5`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 320.0 B
+	-	`sha256:a87a3e369167659da7e8be8e68e625cdff121f36d61917f88bc068c9a62b5338`  
+		Last Modified: Fri, 17 Jun 2016 22:48:03 GMT  
+		Size: 79.9 MB (79946538 bytes)
+	-	`sha256:692642483619644490fe9d0f62d5f39a04b606cc55e8470eaae41947d080c962`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 2.6 KB (2645 bytes)
+	-	`sha256:1b4e355d86bb9b9b31073901b42858e0f1ef40cb2921c0a716612809f0b97776`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 1.7 KB (1666 bytes)
+	-	`sha256:cd32d1285550c46b5107fba0a6da613950be0a6d0e512b9bd641ee4335f5f41d`  
+		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
+		Size: 120.0 B
 
 ## `mariadb:10.0.25`
 
 ```console
-$ docker pull mariadb@sha256:c5b25e41237e360c6554bff170ab7f7768cb2703f7cbc76966b249cdb57ebdd7
+$ docker pull mariadb@sha256:fe20d6039872a63cdf9a33ff06bd18ecc408d78060556c82dfd3f5f0bd3355dd
 ```
 
 -	Platforms:
@@ -519,123 +423,99 @@ $ docker pull mariadb@sha256:c5b25e41237e360c6554bff170ab7f7768cb2703f7cbc76966b
 
 ### `mariadb:10.0.25` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.8 MB (119761158 bytes)**  
+-	Total Size: **119.8 MB (119804696 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:709a6a94ac8afaac1870ce083d3b07d83eacdf13f51684470a27c09369340041`
+-	Image ID: `sha256:bb3fc12095a70be54f3eb873e6770e9b396e3149a91af863cfaa669c851ca171`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:41:25 GMT
+# Fri, 10 Jun 2016 01:48:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:41:26 GMT
+# Fri, 10 Jun 2016 01:48:40 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:42:30 GMT
+# Fri, 10 Jun 2016 01:50:09 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:42:32 GMT
+# Fri, 10 Jun 2016 01:50:10 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 02:43:08 GMT
+# Fri, 10 Jun 2016 01:51:04 GMT
 RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 02:43:31 GMT
+# Fri, 10 Jun 2016 01:51:37 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	&& apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
-# Tue, 24 May 2016 02:43:33 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 RUN echo "deb http://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 24 May 2016 02:50:53 GMT
+# Fri, 10 Jun 2016 01:53:49 GMT
 ENV MARIADB_MAJOR=10.0
-# Tue, 24 May 2016 02:50:54 GMT
+# Fri, 10 Jun 2016 01:53:49 GMT
 ENV MARIADB_VERSION=10.0.25+maria-1~jessie
-# Tue, 24 May 2016 02:50:56 GMT
+# Fri, 10 Jun 2016 01:53:50 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 24 May 2016 02:52:32 GMT
+# Fri, 10 Jun 2016 01:55:51 GMT
 RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password 'unused'; 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mariadb-server=$MARIADB_VERSION 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 02:52:42 GMT
+# Fri, 10 Jun 2016 01:55:52 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 02:52:43 GMT
+# Fri, 10 Jun 2016 01:55:53 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 02:52:44 GMT
-COPY file:d8a3d3ef3fa55abe4af70da6a325237f9b5f4e4efd2c632d4bb0ef3c99aae1e8 in /usr/local/bin/
-# Tue, 24 May 2016 02:52:47 GMT
+# Fri, 10 Jun 2016 01:55:53 GMT
+COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
+# Fri, 10 Jun 2016 01:55:54 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 24 May 2016 02:52:48 GMT
+# Fri, 10 Jun 2016 01:55:54 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 02:52:49 GMT
+# Fri, 10 Jun 2016 01:55:54 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 02:52:49 GMT
+# Fri, 10 Jun 2016 01:55:55 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:260d7505d8f946e326a8c267560b07513be001da009113b6acaa3995b2f8d34c`  
-		Last Modified: Wed, 25 May 2016 21:51:12 GMT  
-		Size: 2.0 KB (2038 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a65f47c75fe37fae466f54ed7c640ca7ead74a42a63a3130f7468e8951c5f701`  
-		Last Modified: Wed, 25 May 2016 21:51:07 GMT  
-		Size: 1.2 MB (1215972 bytes)
-	-	`sha256:729d0217f8dbf240a446f8667fa265f51e81c561a1a10f3bed108294a1e5c49a`  
-		Last Modified: Wed, 25 May 2016 21:51:03 GMT  
-		Size: 112.0 B
-	-	`sha256:88ba273218e9aed082f83515211061c798a8abbaecb1a906bfbfa3aa0a36849f`  
-		Last Modified: Wed, 25 May 2016 21:51:01 GMT  
-		Size: 82.7 KB (82657 bytes)
-	-	`sha256:b65592ea5731ef61a51c581dc0720eec42c7166be00ea0a07eb3738af6691f6b`  
-		Last Modified: Tue, 31 May 2016 20:30:40 GMT  
-		Size: 17.2 KB (17229 bytes)
-	-	`sha256:1e3301de8d0c1e855fee0e3686ef90bd698c3beeb5511aa97fd7e554cffbdde8`  
-		Last Modified: Tue, 31 May 2016 20:30:36 GMT  
-		Size: 313.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:9c8712e9e64f9125b099e2067f91f8741a8649cf27c861ab0cac1a2f65457539`  
-		Last Modified: Tue, 31 May 2016 20:33:22 GMT  
-		Size: 319.0 B
-	-	`sha256:d16e128c0dfd42e121b47c07b92e4d90daec96679c7c6a5bafa59cfe2702f143`  
-		Last Modified: Tue, 31 May 2016 20:33:16 GMT  
-		Size: 67.1 MB (67081650 bytes)
-	-	`sha256:f792e79afec17f677c6e140596ee6a819c123e6e864a33df89ef4e4bfde27f76`  
-		Last Modified: Tue, 31 May 2016 20:32:40 GMT  
-		Size: 2.5 KB (2490 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:d03e8c18589e3570cc513af9d64bf16bcb31c77c46828ecd290be2f1daae0f71`  
-		Last Modified: Tue, 31 May 2016 20:32:33 GMT  
-		Size: 1.7 KB (1670 bytes)
-	-	`sha256:34570137ab6bc8c080a4148baeb12cd8bcbe73f33954791f8556f8b07dd86869`  
-		Last Modified: Tue, 31 May 2016 20:32:28 GMT  
-		Size: 118.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:23e145a854622fcf4b308aadcdf7a7ca855200c8bca2a6dce01566ac586df326`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 103.5 KB (103482 bytes)
+	-	`sha256:ad4f74b37b828814045877a2ed2b13d1ac699277ad1756278229e8069eeab2f7`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 17.2 KB (17220 bytes)
+	-	`sha256:ed3e1c3a25964b17e757b3fda9660a36239d90b1beb1ac8e2726e91ee776dc39`  
+		Last Modified: Fri, 17 Jun 2016 22:47:40 GMT  
+		Size: 312.0 B
+	-	`sha256:29874ef197b0d4bdc583541e5d2875f7d05318cbc2d20896760478aa33709ca3`  
+		Last Modified: Fri, 17 Jun 2016 22:48:30 GMT  
+		Size: 318.0 B
+	-	`sha256:6ff993445630b323d5d60eb3880cfa9ff1c38553a700ec368b43b0174e41f2b0`  
+		Last Modified: Fri, 17 Jun 2016 22:48:50 GMT  
+		Size: 67.1 MB (67087567 bytes)
+	-	`sha256:91f85199539ed9b73c91a3292918b7d5c3533074b01179437c39fae75b531ee4`  
+		Last Modified: Fri, 17 Jun 2016 22:48:32 GMT  
+		Size: 2.5 KB (2491 bytes)
+	-	`sha256:eebd181ef6d48e9a17248b99a6119fc4b3bf0fb7212d9bee045dbb4756854ed4`  
+		Last Modified: Fri, 17 Jun 2016 22:48:34 GMT  
+		Size: 1.7 KB (1669 bytes)
+	-	`sha256:87e0c87d0ef1531bce04835a47418a657ee1692e1ab163cb7a49027fa6806734`  
+		Last Modified: Fri, 17 Jun 2016 22:48:30 GMT  
+		Size: 120.0 B
 
 ## `mariadb:10.0`
 
 ```console
-$ docker pull mariadb@sha256:c5b25e41237e360c6554bff170ab7f7768cb2703f7cbc76966b249cdb57ebdd7
+$ docker pull mariadb@sha256:fe20d6039872a63cdf9a33ff06bd18ecc408d78060556c82dfd3f5f0bd3355dd
 ```
 
 -	Platforms:
@@ -643,247 +523,199 @@ $ docker pull mariadb@sha256:c5b25e41237e360c6554bff170ab7f7768cb2703f7cbc76966b
 
 ### `mariadb:10.0` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.8 MB (119761158 bytes)**  
+-	Total Size: **119.8 MB (119804696 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:709a6a94ac8afaac1870ce083d3b07d83eacdf13f51684470a27c09369340041`
+-	Image ID: `sha256:bb3fc12095a70be54f3eb873e6770e9b396e3149a91af863cfaa669c851ca171`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:41:25 GMT
+# Fri, 10 Jun 2016 01:48:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:41:26 GMT
+# Fri, 10 Jun 2016 01:48:40 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:42:30 GMT
+# Fri, 10 Jun 2016 01:50:09 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:42:32 GMT
+# Fri, 10 Jun 2016 01:50:10 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 02:43:08 GMT
+# Fri, 10 Jun 2016 01:51:04 GMT
 RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 02:43:31 GMT
+# Fri, 10 Jun 2016 01:51:37 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	&& apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
-# Tue, 24 May 2016 02:43:33 GMT
+# Fri, 10 Jun 2016 01:51:38 GMT
 RUN echo "deb http://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 24 May 2016 02:50:53 GMT
+# Fri, 10 Jun 2016 01:53:49 GMT
 ENV MARIADB_MAJOR=10.0
-# Tue, 24 May 2016 02:50:54 GMT
+# Fri, 10 Jun 2016 01:53:49 GMT
 ENV MARIADB_VERSION=10.0.25+maria-1~jessie
-# Tue, 24 May 2016 02:50:56 GMT
+# Fri, 10 Jun 2016 01:53:50 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 24 May 2016 02:52:32 GMT
+# Fri, 10 Jun 2016 01:55:51 GMT
 RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password 'unused'; 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mariadb-server=$MARIADB_VERSION 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 02:52:42 GMT
+# Fri, 10 Jun 2016 01:55:52 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 02:52:43 GMT
+# Fri, 10 Jun 2016 01:55:53 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 02:52:44 GMT
-COPY file:d8a3d3ef3fa55abe4af70da6a325237f9b5f4e4efd2c632d4bb0ef3c99aae1e8 in /usr/local/bin/
-# Tue, 24 May 2016 02:52:47 GMT
+# Fri, 10 Jun 2016 01:55:53 GMT
+COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
+# Fri, 10 Jun 2016 01:55:54 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 24 May 2016 02:52:48 GMT
+# Fri, 10 Jun 2016 01:55:54 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 02:52:49 GMT
+# Fri, 10 Jun 2016 01:55:54 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 02:52:49 GMT
+# Fri, 10 Jun 2016 01:55:55 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:260d7505d8f946e326a8c267560b07513be001da009113b6acaa3995b2f8d34c`  
-		Last Modified: Wed, 25 May 2016 21:51:12 GMT  
-		Size: 2.0 KB (2038 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a65f47c75fe37fae466f54ed7c640ca7ead74a42a63a3130f7468e8951c5f701`  
-		Last Modified: Wed, 25 May 2016 21:51:07 GMT  
-		Size: 1.2 MB (1215972 bytes)
-	-	`sha256:729d0217f8dbf240a446f8667fa265f51e81c561a1a10f3bed108294a1e5c49a`  
-		Last Modified: Wed, 25 May 2016 21:51:03 GMT  
-		Size: 112.0 B
-	-	`sha256:88ba273218e9aed082f83515211061c798a8abbaecb1a906bfbfa3aa0a36849f`  
-		Last Modified: Wed, 25 May 2016 21:51:01 GMT  
-		Size: 82.7 KB (82657 bytes)
-	-	`sha256:b65592ea5731ef61a51c581dc0720eec42c7166be00ea0a07eb3738af6691f6b`  
-		Last Modified: Tue, 31 May 2016 20:30:40 GMT  
-		Size: 17.2 KB (17229 bytes)
-	-	`sha256:1e3301de8d0c1e855fee0e3686ef90bd698c3beeb5511aa97fd7e554cffbdde8`  
-		Last Modified: Tue, 31 May 2016 20:30:36 GMT  
-		Size: 313.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:9c8712e9e64f9125b099e2067f91f8741a8649cf27c861ab0cac1a2f65457539`  
-		Last Modified: Tue, 31 May 2016 20:33:22 GMT  
-		Size: 319.0 B
-	-	`sha256:d16e128c0dfd42e121b47c07b92e4d90daec96679c7c6a5bafa59cfe2702f143`  
-		Last Modified: Tue, 31 May 2016 20:33:16 GMT  
-		Size: 67.1 MB (67081650 bytes)
-	-	`sha256:f792e79afec17f677c6e140596ee6a819c123e6e864a33df89ef4e4bfde27f76`  
-		Last Modified: Tue, 31 May 2016 20:32:40 GMT  
-		Size: 2.5 KB (2490 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:d03e8c18589e3570cc513af9d64bf16bcb31c77c46828ecd290be2f1daae0f71`  
-		Last Modified: Tue, 31 May 2016 20:32:33 GMT  
-		Size: 1.7 KB (1670 bytes)
-	-	`sha256:34570137ab6bc8c080a4148baeb12cd8bcbe73f33954791f8556f8b07dd86869`  
-		Last Modified: Tue, 31 May 2016 20:32:28 GMT  
-		Size: 118.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:23e145a854622fcf4b308aadcdf7a7ca855200c8bca2a6dce01566ac586df326`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 103.5 KB (103482 bytes)
+	-	`sha256:ad4f74b37b828814045877a2ed2b13d1ac699277ad1756278229e8069eeab2f7`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 17.2 KB (17220 bytes)
+	-	`sha256:ed3e1c3a25964b17e757b3fda9660a36239d90b1beb1ac8e2726e91ee776dc39`  
+		Last Modified: Fri, 17 Jun 2016 22:47:40 GMT  
+		Size: 312.0 B
+	-	`sha256:29874ef197b0d4bdc583541e5d2875f7d05318cbc2d20896760478aa33709ca3`  
+		Last Modified: Fri, 17 Jun 2016 22:48:30 GMT  
+		Size: 318.0 B
+	-	`sha256:6ff993445630b323d5d60eb3880cfa9ff1c38553a700ec368b43b0174e41f2b0`  
+		Last Modified: Fri, 17 Jun 2016 22:48:50 GMT  
+		Size: 67.1 MB (67087567 bytes)
+	-	`sha256:91f85199539ed9b73c91a3292918b7d5c3533074b01179437c39fae75b531ee4`  
+		Last Modified: Fri, 17 Jun 2016 22:48:32 GMT  
+		Size: 2.5 KB (2491 bytes)
+	-	`sha256:eebd181ef6d48e9a17248b99a6119fc4b3bf0fb7212d9bee045dbb4756854ed4`  
+		Last Modified: Fri, 17 Jun 2016 22:48:34 GMT  
+		Size: 1.7 KB (1669 bytes)
+	-	`sha256:87e0c87d0ef1531bce04835a47418a657ee1692e1ab163cb7a49027fa6806734`  
+		Last Modified: Fri, 17 Jun 2016 22:48:30 GMT  
+		Size: 120.0 B
 
-## `mariadb:5.5.49`
+## `mariadb:5.5.50`
 
 ```console
-$ docker pull mariadb@sha256:4fc3e03299896eea1125d3503dedb75f55edb64b42aeaed409405b2f9a6a4fba
+$ docker pull mariadb@sha256:12cca3358256e78ddd59737bc95c2f2dcc98200bd1fd21a2a2721e0711514fd9
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `mariadb:5.5.49` - linux; amd64
+### `mariadb:5.5.50` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.7 MB (96710287 bytes)**  
+-	Total Size: **96.8 MB (96806509 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33d0349f3e01e5860e65655e1aeece038a889dc9febf6f7e2662960a97fdd8a6`
+-	Image ID: `sha256:747749025aca7acbc930c4dc55e44fc9794d2467f1da4ae69a4753c9becb8eb4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:59:05 GMT
-ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
-# Mon, 23 May 2016 22:59:08 GMT
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:54:33 GMT
+# Fri, 10 Jun 2016 01:55:56 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:54:34 GMT
+# Fri, 10 Jun 2016 01:55:56 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:55:11 GMT
+# Fri, 10 Jun 2016 01:56:15 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:55:13 GMT
+# Fri, 10 Jun 2016 01:56:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 02:55:22 GMT
+# Fri, 10 Jun 2016 01:56:21 GMT
 RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 02:55:26 GMT
+# Fri, 10 Jun 2016 01:56:24 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	&& apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
-# Tue, 24 May 2016 02:55:28 GMT
+# Fri, 10 Jun 2016 01:56:25 GMT
 RUN echo "deb http://repo.percona.com/apt wheezy main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 24 May 2016 02:55:29 GMT
+# Fri, 10 Jun 2016 01:56:25 GMT
 ENV MARIADB_MAJOR=5.5
-# Tue, 24 May 2016 02:55:30 GMT
-ENV MARIADB_VERSION=5.5.49+maria-1~wheezy
-# Tue, 24 May 2016 02:55:32 GMT
+# Fri, 17 Jun 2016 22:47:01 GMT
+ENV MARIADB_VERSION=5.5.50+maria-1~wheezy
+# Fri, 17 Jun 2016 22:47:02 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian wheezy main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 24 May 2016 02:56:19 GMT
+# Fri, 17 Jun 2016 22:47:27 GMT
 RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password 'unused'; 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mariadb-server=$MARIADB_VERSION 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 02:56:24 GMT
+# Fri, 17 Jun 2016 22:47:29 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 02:56:25 GMT
+# Fri, 17 Jun 2016 22:47:29 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 02:56:26 GMT
-COPY file:d8a3d3ef3fa55abe4af70da6a325237f9b5f4e4efd2c632d4bb0ef3c99aae1e8 in /usr/local/bin/
-# Tue, 24 May 2016 02:56:28 GMT
+# Fri, 17 Jun 2016 22:47:30 GMT
+COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
+# Fri, 17 Jun 2016 22:47:31 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 24 May 2016 02:56:30 GMT
+# Fri, 17 Jun 2016 22:47:31 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 02:56:31 GMT
+# Fri, 17 Jun 2016 22:47:31 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 02:56:32 GMT
+# Fri, 17 Jun 2016 22:47:32 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`  
-		Last Modified: Mon, 23 May 2016 23:13:33 GMT  
-		Size: 37.2 MB (37196464 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:4697e32cc6f38ef7e375b6fa7cb0d75a779f730d95d4235692410b526b83a19a`  
-		Last Modified: Tue, 31 May 2016 20:35:29 GMT  
-		Size: 1.7 KB (1699 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1968978cfd99f9dc9c160cc930b0c454f327af92798eee5d0c2ee2184c0a1252`  
-		Last Modified: Tue, 31 May 2016 20:35:21 GMT  
-		Size: 1.2 MB (1171893 bytes)
-	-	`sha256:7958442c94b777086fb4d220f085f5e935d0e03c1fc581b0f1754c066d817db6`  
-		Last Modified: Tue, 31 May 2016 20:35:17 GMT  
-		Size: 114.0 B
-	-	`sha256:fd1c9804b35639d862e096d0f70c5ef64d35c2ba9d5cd1c97372262181ac30d8`  
-		Last Modified: Tue, 31 May 2016 20:35:12 GMT  
-		Size: 114.9 KB (114867 bytes)
-	-	`sha256:40fefd05eacbd4ee19ce483e191e752806cb364031e6e06dbe7b3e0516d258c9`  
-		Last Modified: Tue, 31 May 2016 20:35:08 GMT  
-		Size: 58.8 KB (58815 bytes)
-	-	`sha256:9305ac78907c3f6808d0b4383852ba3b6b324b90667bda20e86649448bfff915`  
-		Last Modified: Tue, 31 May 2016 20:35:04 GMT  
-		Size: 316.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:0d51d7670605e484131af1c3a932a04910eced7a0ca18afa1ce7e75b3fe2c8ad`  
-		Last Modified: Tue, 31 May 2016 20:34:53 GMT  
-		Size: 321.0 B
-	-	`sha256:3f2ba075e218d2a18fe5647043b0609706f636237f63f9bc8941d90c08d9917f`  
-		Last Modified: Tue, 31 May 2016 20:34:47 GMT  
-		Size: 58.2 MB (58161261 bytes)
-	-	`sha256:1fabd1d067af120221790580d576341a4485a5a320d0f4ccb97a1f0ebd1cf59b`  
-		Last Modified: Tue, 31 May 2016 20:34:18 GMT  
-		Size: 2.5 KB (2490 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:509064471867bbaaf419fd22e26ba279cedb0c9fe1067f4e175b4aa0aaaaf12e`  
-		Last Modified: Tue, 31 May 2016 20:34:10 GMT  
-		Size: 1.7 KB (1672 bytes)
-	-	`sha256:910c969bc91fbf123f780b5d7949ad0c03adc5ff9c5cef2c190ddbeff1e0d60b`  
-		Last Modified: Tue, 31 May 2016 20:34:06 GMT  
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:7dab6610a1114446d7370ebcf5645c3eb8cdfaa6317f5a2b1d08331fda169960`  
+		Last Modified: Fri, 17 Jun 2016 22:49:36 GMT  
+		Size: 1.7 KB (1693 bytes)
+	-	`sha256:85339db1340628a0316e0ae5d0049db44e4a9bbd05398105c8a6434dba363a33`  
+		Last Modified: Fri, 17 Jun 2016 22:49:36 GMT  
+		Size: 1.2 MB (1192573 bytes)
+	-	`sha256:e2ef454e083ced5fd4d8f39e39a421a170f77e75d78c284e4936365f603a64df`  
+		Last Modified: Fri, 17 Jun 2016 22:49:34 GMT  
+		Size: 112.0 B
+	-	`sha256:d97855283eaef54ada7a2619e7e138571c145096c0513593f1099a579a640476`  
+		Last Modified: Fri, 17 Jun 2016 22:49:33 GMT  
+		Size: 144.6 KB (144636 bytes)
+	-	`sha256:460f4db43538928d54ceedf9c75f35f6e21542b2d86198334b6371a13ab98795`  
+		Last Modified: Fri, 17 Jun 2016 22:49:33 GMT  
+		Size: 58.8 KB (58810 bytes)
+	-	`sha256:425c5eebf8102414932eff74dc55405824327ca3cf098aed62ba66c64805d619`  
+		Last Modified: Fri, 17 Jun 2016 22:49:33 GMT  
+		Size: 313.0 B
+	-	`sha256:fe39714e2ff0344d4dcd8010ef2773fdc5205535b13af99e33e623a10fcaa4e3`  
+		Last Modified: Fri, 17 Jun 2016 22:49:31 GMT  
+		Size: 324.0 B
+	-	`sha256:f95d12eb35849fc4ce994901b3fb948bbde8ff6a581b49e13a648e701bedae7e`  
+		Last Modified: Fri, 17 Jun 2016 22:49:48 GMT  
+		Size: 58.2 MB (58194221 bytes)
+	-	`sha256:6fa08abda128ee68959dd4ded4b6971b70fca917238363fefbe88880882646ca`  
+		Last Modified: Fri, 17 Jun 2016 22:49:30 GMT  
+		Size: 2.5 KB (2489 bytes)
+	-	`sha256:889bb9f9ed52202df229b296cdee8effcde5026c61295f72d4766b1ab05c5602`  
+		Last Modified: Fri, 17 Jun 2016 22:49:30 GMT  
+		Size: 1.7 KB (1670 bytes)
+	-	`sha256:eb7fff18a52da33b31dc1c1eecdfc3908e4544f64aea252f472051d1edc972eb`  
+		Last Modified: Fri, 17 Jun 2016 22:49:30 GMT  
 		Size: 119.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
 
 ## `mariadb:5.5`
 
 ```console
-$ docker pull mariadb@sha256:4fc3e03299896eea1125d3503dedb75f55edb64b42aeaed409405b2f9a6a4fba
+$ docker pull mariadb@sha256:12cca3358256e78ddd59737bc95c2f2dcc98200bd1fd21a2a2721e0711514fd9
 ```
 
 -	Platforms:
@@ -891,123 +723,99 @@ $ docker pull mariadb@sha256:4fc3e03299896eea1125d3503dedb75f55edb64b42aeaed4094
 
 ### `mariadb:5.5` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.7 MB (96710287 bytes)**  
+-	Total Size: **96.8 MB (96806509 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33d0349f3e01e5860e65655e1aeece038a889dc9febf6f7e2662960a97fdd8a6`
+-	Image ID: `sha256:747749025aca7acbc930c4dc55e44fc9794d2467f1da4ae69a4753c9becb8eb4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:59:05 GMT
-ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
-# Mon, 23 May 2016 22:59:08 GMT
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:54:33 GMT
+# Fri, 10 Jun 2016 01:55:56 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:54:34 GMT
+# Fri, 10 Jun 2016 01:55:56 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:55:11 GMT
+# Fri, 10 Jun 2016 01:56:15 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:55:13 GMT
+# Fri, 10 Jun 2016 01:56:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 02:55:22 GMT
+# Fri, 10 Jun 2016 01:56:21 GMT
 RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 02:55:26 GMT
+# Fri, 10 Jun 2016 01:56:24 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	&& apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
-# Tue, 24 May 2016 02:55:28 GMT
+# Fri, 10 Jun 2016 01:56:25 GMT
 RUN echo "deb http://repo.percona.com/apt wheezy main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 24 May 2016 02:55:29 GMT
+# Fri, 10 Jun 2016 01:56:25 GMT
 ENV MARIADB_MAJOR=5.5
-# Tue, 24 May 2016 02:55:30 GMT
-ENV MARIADB_VERSION=5.5.49+maria-1~wheezy
-# Tue, 24 May 2016 02:55:32 GMT
+# Fri, 17 Jun 2016 22:47:01 GMT
+ENV MARIADB_VERSION=5.5.50+maria-1~wheezy
+# Fri, 17 Jun 2016 22:47:02 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian wheezy main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 24 May 2016 02:56:19 GMT
+# Fri, 17 Jun 2016 22:47:27 GMT
 RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password 'unused'; 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mariadb-server=$MARIADB_VERSION 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 02:56:24 GMT
+# Fri, 17 Jun 2016 22:47:29 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 02:56:25 GMT
+# Fri, 17 Jun 2016 22:47:29 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 02:56:26 GMT
-COPY file:d8a3d3ef3fa55abe4af70da6a325237f9b5f4e4efd2c632d4bb0ef3c99aae1e8 in /usr/local/bin/
-# Tue, 24 May 2016 02:56:28 GMT
+# Fri, 17 Jun 2016 22:47:30 GMT
+COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
+# Fri, 17 Jun 2016 22:47:31 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 24 May 2016 02:56:30 GMT
+# Fri, 17 Jun 2016 22:47:31 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 02:56:31 GMT
+# Fri, 17 Jun 2016 22:47:31 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 02:56:32 GMT
+# Fri, 17 Jun 2016 22:47:32 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`  
-		Last Modified: Mon, 23 May 2016 23:13:33 GMT  
-		Size: 37.2 MB (37196464 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:4697e32cc6f38ef7e375b6fa7cb0d75a779f730d95d4235692410b526b83a19a`  
-		Last Modified: Tue, 31 May 2016 20:35:29 GMT  
-		Size: 1.7 KB (1699 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1968978cfd99f9dc9c160cc930b0c454f327af92798eee5d0c2ee2184c0a1252`  
-		Last Modified: Tue, 31 May 2016 20:35:21 GMT  
-		Size: 1.2 MB (1171893 bytes)
-	-	`sha256:7958442c94b777086fb4d220f085f5e935d0e03c1fc581b0f1754c066d817db6`  
-		Last Modified: Tue, 31 May 2016 20:35:17 GMT  
-		Size: 114.0 B
-	-	`sha256:fd1c9804b35639d862e096d0f70c5ef64d35c2ba9d5cd1c97372262181ac30d8`  
-		Last Modified: Tue, 31 May 2016 20:35:12 GMT  
-		Size: 114.9 KB (114867 bytes)
-	-	`sha256:40fefd05eacbd4ee19ce483e191e752806cb364031e6e06dbe7b3e0516d258c9`  
-		Last Modified: Tue, 31 May 2016 20:35:08 GMT  
-		Size: 58.8 KB (58815 bytes)
-	-	`sha256:9305ac78907c3f6808d0b4383852ba3b6b324b90667bda20e86649448bfff915`  
-		Last Modified: Tue, 31 May 2016 20:35:04 GMT  
-		Size: 316.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:0d51d7670605e484131af1c3a932a04910eced7a0ca18afa1ce7e75b3fe2c8ad`  
-		Last Modified: Tue, 31 May 2016 20:34:53 GMT  
-		Size: 321.0 B
-	-	`sha256:3f2ba075e218d2a18fe5647043b0609706f636237f63f9bc8941d90c08d9917f`  
-		Last Modified: Tue, 31 May 2016 20:34:47 GMT  
-		Size: 58.2 MB (58161261 bytes)
-	-	`sha256:1fabd1d067af120221790580d576341a4485a5a320d0f4ccb97a1f0ebd1cf59b`  
-		Last Modified: Tue, 31 May 2016 20:34:18 GMT  
-		Size: 2.5 KB (2490 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:509064471867bbaaf419fd22e26ba279cedb0c9fe1067f4e175b4aa0aaaaf12e`  
-		Last Modified: Tue, 31 May 2016 20:34:10 GMT  
-		Size: 1.7 KB (1672 bytes)
-	-	`sha256:910c969bc91fbf123f780b5d7949ad0c03adc5ff9c5cef2c190ddbeff1e0d60b`  
-		Last Modified: Tue, 31 May 2016 20:34:06 GMT  
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:7dab6610a1114446d7370ebcf5645c3eb8cdfaa6317f5a2b1d08331fda169960`  
+		Last Modified: Fri, 17 Jun 2016 22:49:36 GMT  
+		Size: 1.7 KB (1693 bytes)
+	-	`sha256:85339db1340628a0316e0ae5d0049db44e4a9bbd05398105c8a6434dba363a33`  
+		Last Modified: Fri, 17 Jun 2016 22:49:36 GMT  
+		Size: 1.2 MB (1192573 bytes)
+	-	`sha256:e2ef454e083ced5fd4d8f39e39a421a170f77e75d78c284e4936365f603a64df`  
+		Last Modified: Fri, 17 Jun 2016 22:49:34 GMT  
+		Size: 112.0 B
+	-	`sha256:d97855283eaef54ada7a2619e7e138571c145096c0513593f1099a579a640476`  
+		Last Modified: Fri, 17 Jun 2016 22:49:33 GMT  
+		Size: 144.6 KB (144636 bytes)
+	-	`sha256:460f4db43538928d54ceedf9c75f35f6e21542b2d86198334b6371a13ab98795`  
+		Last Modified: Fri, 17 Jun 2016 22:49:33 GMT  
+		Size: 58.8 KB (58810 bytes)
+	-	`sha256:425c5eebf8102414932eff74dc55405824327ca3cf098aed62ba66c64805d619`  
+		Last Modified: Fri, 17 Jun 2016 22:49:33 GMT  
+		Size: 313.0 B
+	-	`sha256:fe39714e2ff0344d4dcd8010ef2773fdc5205535b13af99e33e623a10fcaa4e3`  
+		Last Modified: Fri, 17 Jun 2016 22:49:31 GMT  
+		Size: 324.0 B
+	-	`sha256:f95d12eb35849fc4ce994901b3fb948bbde8ff6a581b49e13a648e701bedae7e`  
+		Last Modified: Fri, 17 Jun 2016 22:49:48 GMT  
+		Size: 58.2 MB (58194221 bytes)
+	-	`sha256:6fa08abda128ee68959dd4ded4b6971b70fca917238363fefbe88880882646ca`  
+		Last Modified: Fri, 17 Jun 2016 22:49:30 GMT  
+		Size: 2.5 KB (2489 bytes)
+	-	`sha256:889bb9f9ed52202df229b296cdee8effcde5026c61295f72d4766b1ab05c5602`  
+		Last Modified: Fri, 17 Jun 2016 22:49:30 GMT  
+		Size: 1.7 KB (1670 bytes)
+	-	`sha256:eb7fff18a52da33b31dc1c1eecdfc3908e4544f64aea252f472051d1edc972eb`  
+		Last Modified: Fri, 17 Jun 2016 22:49:30 GMT  
 		Size: 119.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
 
 ## `mariadb:5`
 
 ```console
-$ docker pull mariadb@sha256:4fc3e03299896eea1125d3503dedb75f55edb64b42aeaed409405b2f9a6a4fba
+$ docker pull mariadb@sha256:12cca3358256e78ddd59737bc95c2f2dcc98200bd1fd21a2a2721e0711514fd9
 ```
 
 -	Platforms:
@@ -1015,115 +823,91 @@ $ docker pull mariadb@sha256:4fc3e03299896eea1125d3503dedb75f55edb64b42aeaed4094
 
 ### `mariadb:5` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.7 MB (96710287 bytes)**  
+-	Total Size: **96.8 MB (96806509 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33d0349f3e01e5860e65655e1aeece038a889dc9febf6f7e2662960a97fdd8a6`
+-	Image ID: `sha256:747749025aca7acbc930c4dc55e44fc9794d2467f1da4ae69a4753c9becb8eb4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:59:05 GMT
-ADD file:3824d71f52db3031521c744e8cf55498f40520668758c7574cf55cb86574a339 in /
-# Mon, 23 May 2016 22:59:08 GMT
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:54:33 GMT
+# Fri, 10 Jun 2016 01:55:56 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:54:34 GMT
+# Fri, 10 Jun 2016 01:55:56 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:55:11 GMT
+# Fri, 10 Jun 2016 01:56:15 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:55:13 GMT
+# Fri, 10 Jun 2016 01:56:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 02:55:22 GMT
+# Fri, 10 Jun 2016 01:56:21 GMT
 RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 02:55:26 GMT
+# Fri, 10 Jun 2016 01:56:24 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	&& apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
-# Tue, 24 May 2016 02:55:28 GMT
+# Fri, 10 Jun 2016 01:56:25 GMT
 RUN echo "deb http://repo.percona.com/apt wheezy main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 24 May 2016 02:55:29 GMT
+# Fri, 10 Jun 2016 01:56:25 GMT
 ENV MARIADB_MAJOR=5.5
-# Tue, 24 May 2016 02:55:30 GMT
-ENV MARIADB_VERSION=5.5.49+maria-1~wheezy
-# Tue, 24 May 2016 02:55:32 GMT
+# Fri, 17 Jun 2016 22:47:01 GMT
+ENV MARIADB_VERSION=5.5.50+maria-1~wheezy
+# Fri, 17 Jun 2016 22:47:02 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian wheezy main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 24 May 2016 02:56:19 GMT
+# Fri, 17 Jun 2016 22:47:27 GMT
 RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password 'unused'; 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mariadb-server=$MARIADB_VERSION 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 02:56:24 GMT
+# Fri, 17 Jun 2016 22:47:29 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 02:56:25 GMT
+# Fri, 17 Jun 2016 22:47:29 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 02:56:26 GMT
-COPY file:d8a3d3ef3fa55abe4af70da6a325237f9b5f4e4efd2c632d4bb0ef3c99aae1e8 in /usr/local/bin/
-# Tue, 24 May 2016 02:56:28 GMT
+# Fri, 17 Jun 2016 22:47:30 GMT
+COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
+# Fri, 17 Jun 2016 22:47:31 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 24 May 2016 02:56:30 GMT
+# Fri, 17 Jun 2016 22:47:31 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 02:56:31 GMT
+# Fri, 17 Jun 2016 22:47:31 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 02:56:32 GMT
+# Fri, 17 Jun 2016 22:47:32 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`  
-		Last Modified: Mon, 23 May 2016 23:13:33 GMT  
-		Size: 37.2 MB (37196464 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:4697e32cc6f38ef7e375b6fa7cb0d75a779f730d95d4235692410b526b83a19a`  
-		Last Modified: Tue, 31 May 2016 20:35:29 GMT  
-		Size: 1.7 KB (1699 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1968978cfd99f9dc9c160cc930b0c454f327af92798eee5d0c2ee2184c0a1252`  
-		Last Modified: Tue, 31 May 2016 20:35:21 GMT  
-		Size: 1.2 MB (1171893 bytes)
-	-	`sha256:7958442c94b777086fb4d220f085f5e935d0e03c1fc581b0f1754c066d817db6`  
-		Last Modified: Tue, 31 May 2016 20:35:17 GMT  
-		Size: 114.0 B
-	-	`sha256:fd1c9804b35639d862e096d0f70c5ef64d35c2ba9d5cd1c97372262181ac30d8`  
-		Last Modified: Tue, 31 May 2016 20:35:12 GMT  
-		Size: 114.9 KB (114867 bytes)
-	-	`sha256:40fefd05eacbd4ee19ce483e191e752806cb364031e6e06dbe7b3e0516d258c9`  
-		Last Modified: Tue, 31 May 2016 20:35:08 GMT  
-		Size: 58.8 KB (58815 bytes)
-	-	`sha256:9305ac78907c3f6808d0b4383852ba3b6b324b90667bda20e86649448bfff915`  
-		Last Modified: Tue, 31 May 2016 20:35:04 GMT  
-		Size: 316.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:0d51d7670605e484131af1c3a932a04910eced7a0ca18afa1ce7e75b3fe2c8ad`  
-		Last Modified: Tue, 31 May 2016 20:34:53 GMT  
-		Size: 321.0 B
-	-	`sha256:3f2ba075e218d2a18fe5647043b0609706f636237f63f9bc8941d90c08d9917f`  
-		Last Modified: Tue, 31 May 2016 20:34:47 GMT  
-		Size: 58.2 MB (58161261 bytes)
-	-	`sha256:1fabd1d067af120221790580d576341a4485a5a320d0f4ccb97a1f0ebd1cf59b`  
-		Last Modified: Tue, 31 May 2016 20:34:18 GMT  
-		Size: 2.5 KB (2490 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:509064471867bbaaf419fd22e26ba279cedb0c9fe1067f4e175b4aa0aaaaf12e`  
-		Last Modified: Tue, 31 May 2016 20:34:10 GMT  
-		Size: 1.7 KB (1672 bytes)
-	-	`sha256:910c969bc91fbf123f780b5d7949ad0c03adc5ff9c5cef2c190ddbeff1e0d60b`  
-		Last Modified: Tue, 31 May 2016 20:34:06 GMT  
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:7dab6610a1114446d7370ebcf5645c3eb8cdfaa6317f5a2b1d08331fda169960`  
+		Last Modified: Fri, 17 Jun 2016 22:49:36 GMT  
+		Size: 1.7 KB (1693 bytes)
+	-	`sha256:85339db1340628a0316e0ae5d0049db44e4a9bbd05398105c8a6434dba363a33`  
+		Last Modified: Fri, 17 Jun 2016 22:49:36 GMT  
+		Size: 1.2 MB (1192573 bytes)
+	-	`sha256:e2ef454e083ced5fd4d8f39e39a421a170f77e75d78c284e4936365f603a64df`  
+		Last Modified: Fri, 17 Jun 2016 22:49:34 GMT  
+		Size: 112.0 B
+	-	`sha256:d97855283eaef54ada7a2619e7e138571c145096c0513593f1099a579a640476`  
+		Last Modified: Fri, 17 Jun 2016 22:49:33 GMT  
+		Size: 144.6 KB (144636 bytes)
+	-	`sha256:460f4db43538928d54ceedf9c75f35f6e21542b2d86198334b6371a13ab98795`  
+		Last Modified: Fri, 17 Jun 2016 22:49:33 GMT  
+		Size: 58.8 KB (58810 bytes)
+	-	`sha256:425c5eebf8102414932eff74dc55405824327ca3cf098aed62ba66c64805d619`  
+		Last Modified: Fri, 17 Jun 2016 22:49:33 GMT  
+		Size: 313.0 B
+	-	`sha256:fe39714e2ff0344d4dcd8010ef2773fdc5205535b13af99e33e623a10fcaa4e3`  
+		Last Modified: Fri, 17 Jun 2016 22:49:31 GMT  
+		Size: 324.0 B
+	-	`sha256:f95d12eb35849fc4ce994901b3fb948bbde8ff6a581b49e13a648e701bedae7e`  
+		Last Modified: Fri, 17 Jun 2016 22:49:48 GMT  
+		Size: 58.2 MB (58194221 bytes)
+	-	`sha256:6fa08abda128ee68959dd4ded4b6971b70fca917238363fefbe88880882646ca`  
+		Last Modified: Fri, 17 Jun 2016 22:49:30 GMT  
+		Size: 2.5 KB (2489 bytes)
+	-	`sha256:889bb9f9ed52202df229b296cdee8effcde5026c61295f72d4766b1ab05c5602`  
+		Last Modified: Fri, 17 Jun 2016 22:49:30 GMT  
+		Size: 1.7 KB (1670 bytes)
+	-	`sha256:eb7fff18a52da33b31dc1c1eecdfc3908e4544f64aea252f472051d1edc972eb`  
+		Last Modified: Fri, 17 Jun 2016 22:49:30 GMT  
 		Size: 119.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
