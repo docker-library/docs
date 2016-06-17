@@ -201,39 +201,41 @@ Now that you have an appreciation for bootstrapping a distributed ROS example ma
 > Start by making a folder named `rostutorials` and moving the Dockerfile we used earlier inside this directory. Then create a yaml file named `docker-compose.yml` in the same directory and paste the following inside:
 
 ```yaml
-master:
-  build: .
-  container_name: master
-  command:
-    - roscore
-
-talker:
-  build: .
-  container_name: talker
-  environment:
-    - "ROS_HOSTNAME=talker"
-    - "ROS_MASTER_URI=http://master:11311"
-  command: rosrun roscpp_tutorials talker
-
-listener:
-  build: .
-  container_name: listener
-  environment:
-    - "ROS_HOSTNAME=listener"
-    - "ROS_MASTER_URI=http://master:11311"
-  command: rosrun roscpp_tutorials listener
+version: '2'
+services:
+  master:
+    build: .
+    container_name: master
+    command:
+      - roscore
+  
+  talker:
+    build: .
+    container_name: talker
+    environment:
+      - "ROS_HOSTNAME=talker"
+      - "ROS_MASTER_URI=http://master:11311"
+    command: rosrun roscpp_tutorials talker
+  
+  listener:
+    build: .
+    container_name: listener
+    environment:
+      - "ROS_HOSTNAME=listener"
+      - "ROS_MASTER_URI=http://master:11311"
+    command: rosrun roscpp_tutorials listener
 ```
 
 > Now from inside the same folder, use docker-copose to launch our ROS nodes and specify that they coexist on their own network:
 
 ```console
-$ docker-compose --x-networking up -d
+$ docker-compose up -d
 ```
 
-> Notice that a new network named `rostutorials` has now been created, you can inspect it further with:
+> Notice that a new network named `rostutorials_default` has now been created, you can inspect it further with:
 
 ```console
-$ docker network inspect rostutorials
+$ docker network inspect rostutorials_default
 ```
 
 > We can monitor the logged output of each service, such as the listener node like so:
@@ -249,7 +251,7 @@ $ docker-compose stop
 $ docker-compose rm
 ```
 
-> Note: the auto-generated network, `rostutorials`, will persist over the life of the docker engine or until you explicitly remove it using [`docker network rm`](https://docs.docker.com/engine/reference/commandline/network_rm/)\.
+> Note: the auto-generated network, `rostutorials_default`, will persist over the life of the docker engine or until you explicitly remove it using [`docker network rm`](https://docs.docker.com/engine/reference/commandline/network_rm/)\.
 
 # More Resources
 
