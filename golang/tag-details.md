@@ -26,19 +26,19 @@
 -	[`golang:1.6-alpine`](#golang16-alpine)
 -	[`golang:1-alpine`](#golang1-alpine)
 -	[`golang:alpine`](#golangalpine)
--	[`golang:1.7beta1`](#golang17beta1)
+-	[`golang:1.7beta2`](#golang17beta2)
 -	[`golang:1.7`](#golang17)
--	[`golang:1.7beta1-onbuild`](#golang17beta1-onbuild)
+-	[`golang:1.7beta2-onbuild`](#golang17beta2-onbuild)
 -	[`golang:1.7-onbuild`](#golang17-onbuild)
--	[`golang:1.7beta1-wheezy`](#golang17beta1-wheezy)
+-	[`golang:1.7beta2-wheezy`](#golang17beta2-wheezy)
 -	[`golang:1.7-wheezy`](#golang17-wheezy)
--	[`golang:1.7beta1-alpine`](#golang17beta1-alpine)
+-	[`golang:1.7beta2-alpine`](#golang17beta2-alpine)
 -	[`golang:1.7-alpine`](#golang17-alpine)
 
 ## `golang:1.5.4`
 
 ```console
-$ docker pull golang@sha256:910dc2a1e7a4abbbba059783163bb4c4b175f159976e09ffac12a425effab62c
+$ docker pull golang@sha256:3757aaa54a6f1685ce4a76e4fe9e7906b8042477d6bd7c9c437cbac0395ccbaf
 ```
 
 -	Platforms:
@@ -48,69 +48,69 @@ $ docker pull golang@sha256:910dc2a1e7a4abbbba059783163bb4c4b175f159976e09ffac12
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.3 MB (251252800 bytes)**  
+-	Total Size: **249.5 MB (249533351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7b16ece01508a3ff6f15653906e72bac688aeae52cf831fbc310ea01c6c35c3`
+-	Image ID: `sha256:a05266d2988ec1e2fec705308e7216a86363ccc83e2d8c142e8d8d874cd37f5d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 ENV GOLANG_VERSION=1.5.4
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:12 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.4.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:12 GMT
 ENV GOLANG_DOWNLOAD_SHA256=a3358721210787dc1e06f5ea1460ae0564f22a0fbd91be9dcd947fb1d19b9560
-# Thu, 09 Jun 2016 13:40:39 GMT
+# Fri, 10 Jun 2016 21:36:23 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:40:42 GMT
+# Fri, 10 Jun 2016 21:36:23 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:40:43 GMT
+# Fri, 10 Jun 2016 21:36:24 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:40:45 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:40:45 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:40:46 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:b85f3e1f8499c52baee60f49e99798600f363565b7e522ed8291a3fd88820fe5`  
-		Last Modified: Thu, 09 Jun 2016 14:11:25 GMT  
-		Size: 80.2 MB (80184792 bytes)
-	-	`sha256:535aa97a2c17f1bc9ab51a2fadf563951b8c8f578ea89eb33ef2e27e10138cd0`  
-		Last Modified: Thu, 09 Jun 2016 14:10:34 GMT  
-		Size: 123.0 B
-	-	`sha256:19db7d4c1b07c9be9056dd06c783dbcb0d0ea51a5be807da29a2960f896e4e05`  
-		Last Modified: Thu, 09 Jun 2016 14:10:34 GMT  
-		Size: 1.4 KB (1350 bytes)
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:3f69a6fde99ea8c3c23ac09ed064374364c23c393c1953207d25782a30168d20`  
+		Last Modified: Fri, 17 Jun 2016 16:50:41 GMT  
+		Size: 80.2 MB (80184820 bytes)
+	-	`sha256:109455198000841897e869f8a4a576d7ba9f84a614e8684657ba919767b4b540`  
+		Last Modified: Fri, 17 Jun 2016 16:50:10 GMT  
+		Size: 122.0 B
+	-	`sha256:2e3c7ac7faab384589566cb9fcb037d657222f71d098c4a32abf2aac9ad05bfc`  
+		Last Modified: Fri, 17 Jun 2016 16:50:09 GMT  
+		Size: 1.4 KB (1352 bytes)
 
 ## `golang:1.5`
 
 ```console
-$ docker pull golang@sha256:910dc2a1e7a4abbbba059783163bb4c4b175f159976e09ffac12a425effab62c
+$ docker pull golang@sha256:3757aaa54a6f1685ce4a76e4fe9e7906b8042477d6bd7c9c437cbac0395ccbaf
 ```
 
 -	Platforms:
@@ -120,69 +120,69 @@ $ docker pull golang@sha256:910dc2a1e7a4abbbba059783163bb4c4b175f159976e09ffac12
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.3 MB (251252800 bytes)**  
+-	Total Size: **249.5 MB (249533351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7b16ece01508a3ff6f15653906e72bac688aeae52cf831fbc310ea01c6c35c3`
+-	Image ID: `sha256:a05266d2988ec1e2fec705308e7216a86363ccc83e2d8c142e8d8d874cd37f5d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 ENV GOLANG_VERSION=1.5.4
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:12 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.4.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:12 GMT
 ENV GOLANG_DOWNLOAD_SHA256=a3358721210787dc1e06f5ea1460ae0564f22a0fbd91be9dcd947fb1d19b9560
-# Thu, 09 Jun 2016 13:40:39 GMT
+# Fri, 10 Jun 2016 21:36:23 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:40:42 GMT
+# Fri, 10 Jun 2016 21:36:23 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:40:43 GMT
+# Fri, 10 Jun 2016 21:36:24 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:40:45 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:40:45 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:40:46 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:b85f3e1f8499c52baee60f49e99798600f363565b7e522ed8291a3fd88820fe5`  
-		Last Modified: Thu, 09 Jun 2016 14:11:25 GMT  
-		Size: 80.2 MB (80184792 bytes)
-	-	`sha256:535aa97a2c17f1bc9ab51a2fadf563951b8c8f578ea89eb33ef2e27e10138cd0`  
-		Last Modified: Thu, 09 Jun 2016 14:10:34 GMT  
-		Size: 123.0 B
-	-	`sha256:19db7d4c1b07c9be9056dd06c783dbcb0d0ea51a5be807da29a2960f896e4e05`  
-		Last Modified: Thu, 09 Jun 2016 14:10:34 GMT  
-		Size: 1.4 KB (1350 bytes)
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:3f69a6fde99ea8c3c23ac09ed064374364c23c393c1953207d25782a30168d20`  
+		Last Modified: Fri, 17 Jun 2016 16:50:41 GMT  
+		Size: 80.2 MB (80184820 bytes)
+	-	`sha256:109455198000841897e869f8a4a576d7ba9f84a614e8684657ba919767b4b540`  
+		Last Modified: Fri, 17 Jun 2016 16:50:10 GMT  
+		Size: 122.0 B
+	-	`sha256:2e3c7ac7faab384589566cb9fcb037d657222f71d098c4a32abf2aac9ad05bfc`  
+		Last Modified: Fri, 17 Jun 2016 16:50:09 GMT  
+		Size: 1.4 KB (1352 bytes)
 
 ## `golang:1.5.4-onbuild`
 
 ```console
-$ docker pull golang@sha256:87a69f7ee2a714482895f80ab55ad10693be599c0f94203a95be2863b4b4c02c
+$ docker pull golang@sha256:34fc15176192917639e4a2923426e2171ecf217e82985352d7ced5b3682f7135
 ```
 
 -	Platforms:
@@ -192,84 +192,84 @@ $ docker pull golang@sha256:87a69f7ee2a714482895f80ab55ad10693be599c0f94203a95be
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.3 MB (251252932 bytes)**  
+-	Total Size: **249.5 MB (249533484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64b4e78fe10b827bb7a02633c6cb51caaad3b3345a3f6343087fad3962230eea`
+-	Image ID: `sha256:3ca98595a98d1467d8a1e01153fb4c172281e7d986ceb0ca1bfc9e8cfea31ad5`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 ENV GOLANG_VERSION=1.5.4
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:12 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.4.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:12 GMT
 ENV GOLANG_DOWNLOAD_SHA256=a3358721210787dc1e06f5ea1460ae0564f22a0fbd91be9dcd947fb1d19b9560
-# Thu, 09 Jun 2016 13:40:39 GMT
+# Fri, 10 Jun 2016 21:36:23 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:40:42 GMT
+# Fri, 10 Jun 2016 21:36:23 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:40:43 GMT
+# Fri, 10 Jun 2016 21:36:24 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:40:45 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:40:45 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:40:46 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
-# Thu, 09 Jun 2016 13:40:47 GMT
+# Fri, 10 Jun 2016 21:36:27 GMT
 RUN mkdir -p /go/src/app
-# Thu, 09 Jun 2016 13:40:47 GMT
+# Fri, 10 Jun 2016 21:36:27 GMT
 WORKDIR /go/src/app
-# Thu, 09 Jun 2016 13:40:47 GMT
+# Fri, 10 Jun 2016 21:36:28 GMT
 CMD ["go-wrapper" "run"]
-# Thu, 09 Jun 2016 13:40:48 GMT
+# Fri, 10 Jun 2016 21:36:29 GMT
 ONBUILD COPY . /go/src/app
-# Thu, 09 Jun 2016 13:40:48 GMT
+# Fri, 10 Jun 2016 21:36:30 GMT
 ONBUILD RUN go-wrapper download
-# Thu, 09 Jun 2016 13:40:48 GMT
+# Fri, 10 Jun 2016 21:36:30 GMT
 ONBUILD RUN go-wrapper install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:b85f3e1f8499c52baee60f49e99798600f363565b7e522ed8291a3fd88820fe5`  
-		Last Modified: Thu, 09 Jun 2016 14:11:25 GMT  
-		Size: 80.2 MB (80184792 bytes)
-	-	`sha256:535aa97a2c17f1bc9ab51a2fadf563951b8c8f578ea89eb33ef2e27e10138cd0`  
-		Last Modified: Thu, 09 Jun 2016 14:10:34 GMT  
-		Size: 123.0 B
-	-	`sha256:19db7d4c1b07c9be9056dd06c783dbcb0d0ea51a5be807da29a2960f896e4e05`  
-		Last Modified: Thu, 09 Jun 2016 14:10:34 GMT  
-		Size: 1.4 KB (1350 bytes)
-	-	`sha256:c0375fdc563de14080ae948f86a2a711c581399d69efc639a1d0acf759d98bbc`  
-		Last Modified: Thu, 09 Jun 2016 14:11:40 GMT  
-		Size: 132.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:3f69a6fde99ea8c3c23ac09ed064374364c23c393c1953207d25782a30168d20`  
+		Last Modified: Fri, 17 Jun 2016 16:50:41 GMT  
+		Size: 80.2 MB (80184820 bytes)
+	-	`sha256:109455198000841897e869f8a4a576d7ba9f84a614e8684657ba919767b4b540`  
+		Last Modified: Fri, 17 Jun 2016 16:50:10 GMT  
+		Size: 122.0 B
+	-	`sha256:2e3c7ac7faab384589566cb9fcb037d657222f71d098c4a32abf2aac9ad05bfc`  
+		Last Modified: Fri, 17 Jun 2016 16:50:09 GMT  
+		Size: 1.4 KB (1352 bytes)
+	-	`sha256:93e02571be75577e1ff03e0b73dc3aa2512087585f97bbe16369d7bd14f58d7f`  
+		Last Modified: Fri, 17 Jun 2016 16:50:57 GMT  
+		Size: 133.0 B
 
 ## `golang:1.5-onbuild`
 
 ```console
-$ docker pull golang@sha256:87a69f7ee2a714482895f80ab55ad10693be599c0f94203a95be2863b4b4c02c
+$ docker pull golang@sha256:34fc15176192917639e4a2923426e2171ecf217e82985352d7ced5b3682f7135
 ```
 
 -	Platforms:
@@ -279,84 +279,84 @@ $ docker pull golang@sha256:87a69f7ee2a714482895f80ab55ad10693be599c0f94203a95be
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.3 MB (251252932 bytes)**  
+-	Total Size: **249.5 MB (249533484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64b4e78fe10b827bb7a02633c6cb51caaad3b3345a3f6343087fad3962230eea`
+-	Image ID: `sha256:3ca98595a98d1467d8a1e01153fb4c172281e7d986ceb0ca1bfc9e8cfea31ad5`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 ENV GOLANG_VERSION=1.5.4
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:12 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.4.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:12 GMT
 ENV GOLANG_DOWNLOAD_SHA256=a3358721210787dc1e06f5ea1460ae0564f22a0fbd91be9dcd947fb1d19b9560
-# Thu, 09 Jun 2016 13:40:39 GMT
+# Fri, 10 Jun 2016 21:36:23 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:40:42 GMT
+# Fri, 10 Jun 2016 21:36:23 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:40:43 GMT
+# Fri, 10 Jun 2016 21:36:24 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:40:45 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:40:45 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:40:46 GMT
+# Fri, 10 Jun 2016 21:36:25 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
-# Thu, 09 Jun 2016 13:40:47 GMT
+# Fri, 10 Jun 2016 21:36:27 GMT
 RUN mkdir -p /go/src/app
-# Thu, 09 Jun 2016 13:40:47 GMT
+# Fri, 10 Jun 2016 21:36:27 GMT
 WORKDIR /go/src/app
-# Thu, 09 Jun 2016 13:40:47 GMT
+# Fri, 10 Jun 2016 21:36:28 GMT
 CMD ["go-wrapper" "run"]
-# Thu, 09 Jun 2016 13:40:48 GMT
+# Fri, 10 Jun 2016 21:36:29 GMT
 ONBUILD COPY . /go/src/app
-# Thu, 09 Jun 2016 13:40:48 GMT
+# Fri, 10 Jun 2016 21:36:30 GMT
 ONBUILD RUN go-wrapper download
-# Thu, 09 Jun 2016 13:40:48 GMT
+# Fri, 10 Jun 2016 21:36:30 GMT
 ONBUILD RUN go-wrapper install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:b85f3e1f8499c52baee60f49e99798600f363565b7e522ed8291a3fd88820fe5`  
-		Last Modified: Thu, 09 Jun 2016 14:11:25 GMT  
-		Size: 80.2 MB (80184792 bytes)
-	-	`sha256:535aa97a2c17f1bc9ab51a2fadf563951b8c8f578ea89eb33ef2e27e10138cd0`  
-		Last Modified: Thu, 09 Jun 2016 14:10:34 GMT  
-		Size: 123.0 B
-	-	`sha256:19db7d4c1b07c9be9056dd06c783dbcb0d0ea51a5be807da29a2960f896e4e05`  
-		Last Modified: Thu, 09 Jun 2016 14:10:34 GMT  
-		Size: 1.4 KB (1350 bytes)
-	-	`sha256:c0375fdc563de14080ae948f86a2a711c581399d69efc639a1d0acf759d98bbc`  
-		Last Modified: Thu, 09 Jun 2016 14:11:40 GMT  
-		Size: 132.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:3f69a6fde99ea8c3c23ac09ed064374364c23c393c1953207d25782a30168d20`  
+		Last Modified: Fri, 17 Jun 2016 16:50:41 GMT  
+		Size: 80.2 MB (80184820 bytes)
+	-	`sha256:109455198000841897e869f8a4a576d7ba9f84a614e8684657ba919767b4b540`  
+		Last Modified: Fri, 17 Jun 2016 16:50:10 GMT  
+		Size: 122.0 B
+	-	`sha256:2e3c7ac7faab384589566cb9fcb037d657222f71d098c4a32abf2aac9ad05bfc`  
+		Last Modified: Fri, 17 Jun 2016 16:50:09 GMT  
+		Size: 1.4 KB (1352 bytes)
+	-	`sha256:93e02571be75577e1ff03e0b73dc3aa2512087585f97bbe16369d7bd14f58d7f`  
+		Last Modified: Fri, 17 Jun 2016 16:50:57 GMT  
+		Size: 133.0 B
 
 ## `golang:1.5.4-wheezy`
 
 ```console
-$ docker pull golang@sha256:d56a2e8bc6d5ca7e9c3a03c897808c15cbddae500cf0f153f6ca7d82dc7a5770
+$ docker pull golang@sha256:a60a80e426ce1b1bdce0ddc0f95a79e2ea5ac327d08c9312d1bfb7459628bee4
 ```
 
 -	Platforms:
@@ -366,69 +366,69 @@ $ docker pull golang@sha256:d56a2e8bc6d5ca7e9c3a03c897808c15cbddae500cf0f153f6ca
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.4 MB (201361137 bytes)**  
+-	Total Size: **195.5 MB (195507447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48d62d28f9af0f628c0a0fe52130d7e9a531f2b45aee0e03f97f40471fdb6aa4`
+-	Image ID: `sha256:2a669c7f94fdfdbe03601ae34d5b71d38582903bc7919fa6ed9087c681292c47`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:58 GMT
-ADD file:2c2a857d67ef6989f65a8a4141daba40186ce39e0b7394643cd88054a0a5a9ef in /
-# Wed, 08 Jun 2016 00:51:59 GMT
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 21:10:41 GMT
+# Thu, 09 Jun 2016 21:43:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 21:11:12 GMT
+# Thu, 09 Jun 2016 21:44:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:41:07 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:41:07 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 ENV GOLANG_VERSION=1.5.4
-# Thu, 09 Jun 2016 13:41:08 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.4.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:41:08 GMT
+# Fri, 10 Jun 2016 21:36:44 GMT
 ENV GOLANG_DOWNLOAD_SHA256=a3358721210787dc1e06f5ea1460ae0564f22a0fbd91be9dcd947fb1d19b9560
-# Thu, 09 Jun 2016 13:41:21 GMT
+# Fri, 10 Jun 2016 21:36:54 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:41:25 GMT
+# Fri, 10 Jun 2016 21:36:54 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:41:25 GMT
+# Fri, 10 Jun 2016 21:36:54 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:41:26 GMT
+# Fri, 10 Jun 2016 21:36:55 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:41:26 GMT
+# Fri, 10 Jun 2016 21:36:56 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:41:26 GMT
+# Fri, 10 Jun 2016 21:36:56 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`  
-		Last Modified: Mon, 23 May 2016 23:13:33 GMT  
-		Size: 37.2 MB (37196464 bytes)
-	-	`sha256:51d05f23de0fe5d15ae0485a481110c1f85d72b8de0e12af347c57968748fbb3`  
-		Last Modified: Thu, 09 Jun 2016 14:12:00 GMT  
-		Size: 6.8 MB (6761577 bytes)
-	-	`sha256:638003bf95f3c953efae720dc69238df82e8601ebcdc29ae76f63c1cb1089891`  
-		Last Modified: Thu, 09 Jun 2016 14:12:24 GMT  
-		Size: 37.4 MB (37389699 bytes)
-	-	`sha256:b9caf8416efdc49d4b98c129d5e9afcd611d74dd55aadddb669fc51649524622`  
-		Last Modified: Thu, 09 Jun 2016 14:12:21 GMT  
-		Size: 39.8 MB (39827111 bytes)
-	-	`sha256:2033773c0886b3ad884f8955f84a809cfb9639c58bd2e4706bd395b79fc04638`  
-		Last Modified: Thu, 09 Jun 2016 14:12:46 GMT  
-		Size: 80.2 MB (80184814 bytes)
-	-	`sha256:771310808052ca7951e0c415099398781c729e4df58694f7b2a0e5c42454ce7d`  
-		Last Modified: Thu, 09 Jun 2016 14:11:51 GMT  
-		Size: 123.0 B
-	-	`sha256:1f815d7cccfed0381db435644856d033cc72f45b8db8f769184b56c1245a756d`  
-		Last Modified: Thu, 09 Jun 2016 14:11:52 GMT  
-		Size: 1.3 KB (1349 bytes)
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
+		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
+		Size: 6.8 MB (6751390 bytes)
+	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
+		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
+		Size: 37.4 MB (37389872 bytes)
+	-	`sha256:bc6935f49a7a41d9d0a9e861e1ef40879eecc95cc5559e40e45c478ddf97bb8a`  
+		Last Modified: Fri, 17 Jun 2016 16:51:24 GMT  
+		Size: 34.0 MB (33970375 bytes)
+	-	`sha256:6097098a0d1d67e2df33a6002ca50c4bb8690eb38287f9cb5ec6f92d07464262`  
+		Last Modified: Fri, 17 Jun 2016 16:51:41 GMT  
+		Size: 80.2 MB (80184792 bytes)
+	-	`sha256:dcbab28a351e7afca9df76bab17b4be30e7dfc42b3100703c36160ca657d8a10`  
+		Last Modified: Fri, 17 Jun 2016 16:51:11 GMT  
+		Size: 122.0 B
+	-	`sha256:47b6d20e68e3c6db08b47b682fc3e2ee672685789750b3af4094e9763ae81ecd`  
+		Last Modified: Fri, 17 Jun 2016 16:51:11 GMT  
+		Size: 1.3 KB (1347 bytes)
 
 ## `golang:1.5-wheezy`
 
 ```console
-$ docker pull golang@sha256:d56a2e8bc6d5ca7e9c3a03c897808c15cbddae500cf0f153f6ca7d82dc7a5770
+$ docker pull golang@sha256:a60a80e426ce1b1bdce0ddc0f95a79e2ea5ac327d08c9312d1bfb7459628bee4
 ```
 
 -	Platforms:
@@ -438,64 +438,64 @@ $ docker pull golang@sha256:d56a2e8bc6d5ca7e9c3a03c897808c15cbddae500cf0f153f6ca
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.4 MB (201361137 bytes)**  
+-	Total Size: **195.5 MB (195507447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48d62d28f9af0f628c0a0fe52130d7e9a531f2b45aee0e03f97f40471fdb6aa4`
+-	Image ID: `sha256:2a669c7f94fdfdbe03601ae34d5b71d38582903bc7919fa6ed9087c681292c47`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:58 GMT
-ADD file:2c2a857d67ef6989f65a8a4141daba40186ce39e0b7394643cd88054a0a5a9ef in /
-# Wed, 08 Jun 2016 00:51:59 GMT
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 21:10:41 GMT
+# Thu, 09 Jun 2016 21:43:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 21:11:12 GMT
+# Thu, 09 Jun 2016 21:44:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:41:07 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:41:07 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 ENV GOLANG_VERSION=1.5.4
-# Thu, 09 Jun 2016 13:41:08 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.4.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:41:08 GMT
+# Fri, 10 Jun 2016 21:36:44 GMT
 ENV GOLANG_DOWNLOAD_SHA256=a3358721210787dc1e06f5ea1460ae0564f22a0fbd91be9dcd947fb1d19b9560
-# Thu, 09 Jun 2016 13:41:21 GMT
+# Fri, 10 Jun 2016 21:36:54 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:41:25 GMT
+# Fri, 10 Jun 2016 21:36:54 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:41:25 GMT
+# Fri, 10 Jun 2016 21:36:54 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:41:26 GMT
+# Fri, 10 Jun 2016 21:36:55 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:41:26 GMT
+# Fri, 10 Jun 2016 21:36:56 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:41:26 GMT
+# Fri, 10 Jun 2016 21:36:56 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`  
-		Last Modified: Mon, 23 May 2016 23:13:33 GMT  
-		Size: 37.2 MB (37196464 bytes)
-	-	`sha256:51d05f23de0fe5d15ae0485a481110c1f85d72b8de0e12af347c57968748fbb3`  
-		Last Modified: Thu, 09 Jun 2016 14:12:00 GMT  
-		Size: 6.8 MB (6761577 bytes)
-	-	`sha256:638003bf95f3c953efae720dc69238df82e8601ebcdc29ae76f63c1cb1089891`  
-		Last Modified: Thu, 09 Jun 2016 14:12:24 GMT  
-		Size: 37.4 MB (37389699 bytes)
-	-	`sha256:b9caf8416efdc49d4b98c129d5e9afcd611d74dd55aadddb669fc51649524622`  
-		Last Modified: Thu, 09 Jun 2016 14:12:21 GMT  
-		Size: 39.8 MB (39827111 bytes)
-	-	`sha256:2033773c0886b3ad884f8955f84a809cfb9639c58bd2e4706bd395b79fc04638`  
-		Last Modified: Thu, 09 Jun 2016 14:12:46 GMT  
-		Size: 80.2 MB (80184814 bytes)
-	-	`sha256:771310808052ca7951e0c415099398781c729e4df58694f7b2a0e5c42454ce7d`  
-		Last Modified: Thu, 09 Jun 2016 14:11:51 GMT  
-		Size: 123.0 B
-	-	`sha256:1f815d7cccfed0381db435644856d033cc72f45b8db8f769184b56c1245a756d`  
-		Last Modified: Thu, 09 Jun 2016 14:11:52 GMT  
-		Size: 1.3 KB (1349 bytes)
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
+		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
+		Size: 6.8 MB (6751390 bytes)
+	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
+		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
+		Size: 37.4 MB (37389872 bytes)
+	-	`sha256:bc6935f49a7a41d9d0a9e861e1ef40879eecc95cc5559e40e45c478ddf97bb8a`  
+		Last Modified: Fri, 17 Jun 2016 16:51:24 GMT  
+		Size: 34.0 MB (33970375 bytes)
+	-	`sha256:6097098a0d1d67e2df33a6002ca50c4bb8690eb38287f9cb5ec6f92d07464262`  
+		Last Modified: Fri, 17 Jun 2016 16:51:41 GMT  
+		Size: 80.2 MB (80184792 bytes)
+	-	`sha256:dcbab28a351e7afca9df76bab17b4be30e7dfc42b3100703c36160ca657d8a10`  
+		Last Modified: Fri, 17 Jun 2016 16:51:11 GMT  
+		Size: 122.0 B
+	-	`sha256:47b6d20e68e3c6db08b47b682fc3e2ee672685789750b3af4094e9763ae81ecd`  
+		Last Modified: Fri, 17 Jun 2016 16:51:11 GMT  
+		Size: 1.3 KB (1347 bytes)
 
 ## `golang:1.5.4-alpine`
 
@@ -598,7 +598,7 @@ WORKDIR /go
 ## `golang:1.6.2`
 
 ```console
-$ docker pull golang@sha256:2a2a130a6f15e729a7368d1e79afba49479e97c38596ceb6d4da6d90d286df1d
+$ docker pull golang@sha256:31ed76d53c9b7f91b0966ea26fd67a985643a09b683f0a24818dcb93ced29e56
 ```
 
 -	Platforms:
@@ -608,69 +608,69 @@ $ docker pull golang@sha256:2a2a130a6f15e729a7368d1e79afba49479e97c38596ceb6d4da
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255922815 bytes)**  
+-	Total Size: **254.2 MB (254203323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5850add7ecc237644abafce0c6985a528fe3977b6dd692b33a895f555062a319`
+-	Image ID: `sha256:78e3813eb6dd08608df8033bc230d929e789dcb66ae51b9ea985a8c6d9944bc0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:30 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:43:45 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:43:47 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:8534b4ecb14e8c644a57d3357f13856c21b87909fbaabee60bd32ec89aa2fad1`  
-		Last Modified: Thu, 09 Jun 2016 14:14:52 GMT  
-		Size: 84.9 MB (84854806 bytes)
-	-	`sha256:ac37d9d8babe4d1987d3762378fd381ee200aef8dc220d9f0fde45aebe41f161`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 123.0 B
-	-	`sha256:87c8bfcf9844207a9c48aef43999cb926aba010e08d83545080e65ee9680afff`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 1.4 KB (1351 bytes)
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:d8a921df8ce9d2b00d139bc78f0a2036f1960204281570d5794ad0e0c9f32ceb`  
+		Last Modified: Fri, 17 Jun 2016 16:52:39 GMT  
+		Size: 84.9 MB (84854795 bytes)
+	-	`sha256:d34bc98c277053d749016539968fbde53f0e095713988ccc780505b9c3d37187`  
+		Last Modified: Fri, 17 Jun 2016 16:52:09 GMT  
+		Size: 122.0 B
+	-	`sha256:d9285d9b79de038db8b1b79c8badaacdbc2521b1acad62f82b08f704f47870ba`  
+		Last Modified: Fri, 17 Jun 2016 16:52:08 GMT  
+		Size: 1.3 KB (1349 bytes)
 
 ## `golang:1.6`
 
 ```console
-$ docker pull golang@sha256:2a2a130a6f15e729a7368d1e79afba49479e97c38596ceb6d4da6d90d286df1d
+$ docker pull golang@sha256:31ed76d53c9b7f91b0966ea26fd67a985643a09b683f0a24818dcb93ced29e56
 ```
 
 -	Platforms:
@@ -680,69 +680,69 @@ $ docker pull golang@sha256:2a2a130a6f15e729a7368d1e79afba49479e97c38596ceb6d4da
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255922815 bytes)**  
+-	Total Size: **254.2 MB (254203323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5850add7ecc237644abafce0c6985a528fe3977b6dd692b33a895f555062a319`
+-	Image ID: `sha256:78e3813eb6dd08608df8033bc230d929e789dcb66ae51b9ea985a8c6d9944bc0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:30 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:43:45 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:43:47 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:8534b4ecb14e8c644a57d3357f13856c21b87909fbaabee60bd32ec89aa2fad1`  
-		Last Modified: Thu, 09 Jun 2016 14:14:52 GMT  
-		Size: 84.9 MB (84854806 bytes)
-	-	`sha256:ac37d9d8babe4d1987d3762378fd381ee200aef8dc220d9f0fde45aebe41f161`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 123.0 B
-	-	`sha256:87c8bfcf9844207a9c48aef43999cb926aba010e08d83545080e65ee9680afff`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 1.4 KB (1351 bytes)
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:d8a921df8ce9d2b00d139bc78f0a2036f1960204281570d5794ad0e0c9f32ceb`  
+		Last Modified: Fri, 17 Jun 2016 16:52:39 GMT  
+		Size: 84.9 MB (84854795 bytes)
+	-	`sha256:d34bc98c277053d749016539968fbde53f0e095713988ccc780505b9c3d37187`  
+		Last Modified: Fri, 17 Jun 2016 16:52:09 GMT  
+		Size: 122.0 B
+	-	`sha256:d9285d9b79de038db8b1b79c8badaacdbc2521b1acad62f82b08f704f47870ba`  
+		Last Modified: Fri, 17 Jun 2016 16:52:08 GMT  
+		Size: 1.3 KB (1349 bytes)
 
 ## `golang:1`
 
 ```console
-$ docker pull golang@sha256:2a2a130a6f15e729a7368d1e79afba49479e97c38596ceb6d4da6d90d286df1d
+$ docker pull golang@sha256:31ed76d53c9b7f91b0966ea26fd67a985643a09b683f0a24818dcb93ced29e56
 ```
 
 -	Platforms:
@@ -752,69 +752,69 @@ $ docker pull golang@sha256:2a2a130a6f15e729a7368d1e79afba49479e97c38596ceb6d4da
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255922815 bytes)**  
+-	Total Size: **254.2 MB (254203323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5850add7ecc237644abafce0c6985a528fe3977b6dd692b33a895f555062a319`
+-	Image ID: `sha256:78e3813eb6dd08608df8033bc230d929e789dcb66ae51b9ea985a8c6d9944bc0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:30 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:43:45 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:43:47 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:8534b4ecb14e8c644a57d3357f13856c21b87909fbaabee60bd32ec89aa2fad1`  
-		Last Modified: Thu, 09 Jun 2016 14:14:52 GMT  
-		Size: 84.9 MB (84854806 bytes)
-	-	`sha256:ac37d9d8babe4d1987d3762378fd381ee200aef8dc220d9f0fde45aebe41f161`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 123.0 B
-	-	`sha256:87c8bfcf9844207a9c48aef43999cb926aba010e08d83545080e65ee9680afff`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 1.4 KB (1351 bytes)
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:d8a921df8ce9d2b00d139bc78f0a2036f1960204281570d5794ad0e0c9f32ceb`  
+		Last Modified: Fri, 17 Jun 2016 16:52:39 GMT  
+		Size: 84.9 MB (84854795 bytes)
+	-	`sha256:d34bc98c277053d749016539968fbde53f0e095713988ccc780505b9c3d37187`  
+		Last Modified: Fri, 17 Jun 2016 16:52:09 GMT  
+		Size: 122.0 B
+	-	`sha256:d9285d9b79de038db8b1b79c8badaacdbc2521b1acad62f82b08f704f47870ba`  
+		Last Modified: Fri, 17 Jun 2016 16:52:08 GMT  
+		Size: 1.3 KB (1349 bytes)
 
 ## `golang:latest`
 
 ```console
-$ docker pull golang@sha256:2a2a130a6f15e729a7368d1e79afba49479e97c38596ceb6d4da6d90d286df1d
+$ docker pull golang@sha256:31ed76d53c9b7f91b0966ea26fd67a985643a09b683f0a24818dcb93ced29e56
 ```
 
 -	Platforms:
@@ -824,69 +824,69 @@ $ docker pull golang@sha256:2a2a130a6f15e729a7368d1e79afba49479e97c38596ceb6d4da
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255922815 bytes)**  
+-	Total Size: **254.2 MB (254203323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5850add7ecc237644abafce0c6985a528fe3977b6dd692b33a895f555062a319`
+-	Image ID: `sha256:78e3813eb6dd08608df8033bc230d929e789dcb66ae51b9ea985a8c6d9944bc0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:30 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:43:45 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:43:47 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:8534b4ecb14e8c644a57d3357f13856c21b87909fbaabee60bd32ec89aa2fad1`  
-		Last Modified: Thu, 09 Jun 2016 14:14:52 GMT  
-		Size: 84.9 MB (84854806 bytes)
-	-	`sha256:ac37d9d8babe4d1987d3762378fd381ee200aef8dc220d9f0fde45aebe41f161`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 123.0 B
-	-	`sha256:87c8bfcf9844207a9c48aef43999cb926aba010e08d83545080e65ee9680afff`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 1.4 KB (1351 bytes)
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:d8a921df8ce9d2b00d139bc78f0a2036f1960204281570d5794ad0e0c9f32ceb`  
+		Last Modified: Fri, 17 Jun 2016 16:52:39 GMT  
+		Size: 84.9 MB (84854795 bytes)
+	-	`sha256:d34bc98c277053d749016539968fbde53f0e095713988ccc780505b9c3d37187`  
+		Last Modified: Fri, 17 Jun 2016 16:52:09 GMT  
+		Size: 122.0 B
+	-	`sha256:d9285d9b79de038db8b1b79c8badaacdbc2521b1acad62f82b08f704f47870ba`  
+		Last Modified: Fri, 17 Jun 2016 16:52:08 GMT  
+		Size: 1.3 KB (1349 bytes)
 
 ## `golang:1.6.2-onbuild`
 
 ```console
-$ docker pull golang@sha256:32caaa4629a3093ea7c6013e5e224a35e92948f1e6de87f2693eadaab7952abd
+$ docker pull golang@sha256:cf583853d7a987f64c5eedaed14f929146c59b9c047ca82d25f5c21223bfdab4
 ```
 
 -	Platforms:
@@ -896,84 +896,84 @@ $ docker pull golang@sha256:32caaa4629a3093ea7c6013e5e224a35e92948f1e6de87f2693e
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255922947 bytes)**  
+-	Total Size: **254.2 MB (254203456 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03c15185d2d4536d3ada3065bc7d27f6e55407bd178602c1c016165d98a9a456`
+-	Image ID: `sha256:5b56d7c15fdc77444652519ee1c5181f18a9243dab50fd56d92a2eda9635cde3`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:30 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:43:45 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:43:47 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:15 GMT
 RUN mkdir -p /go/src/app
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:15 GMT
 WORKDIR /go/src/app
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 CMD ["go-wrapper" "run"]
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD COPY . /go/src/app
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD RUN go-wrapper download
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD RUN go-wrapper install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:8534b4ecb14e8c644a57d3357f13856c21b87909fbaabee60bd32ec89aa2fad1`  
-		Last Modified: Thu, 09 Jun 2016 14:14:52 GMT  
-		Size: 84.9 MB (84854806 bytes)
-	-	`sha256:ac37d9d8babe4d1987d3762378fd381ee200aef8dc220d9f0fde45aebe41f161`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 123.0 B
-	-	`sha256:87c8bfcf9844207a9c48aef43999cb926aba010e08d83545080e65ee9680afff`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 1.4 KB (1351 bytes)
-	-	`sha256:06c7052c11dfe6dc2962a9a919254716a775cc07cf9a2c210483494c7c11091e`  
-		Last Modified: Thu, 09 Jun 2016 14:15:16 GMT  
-		Size: 132.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:d8a921df8ce9d2b00d139bc78f0a2036f1960204281570d5794ad0e0c9f32ceb`  
+		Last Modified: Fri, 17 Jun 2016 16:52:39 GMT  
+		Size: 84.9 MB (84854795 bytes)
+	-	`sha256:d34bc98c277053d749016539968fbde53f0e095713988ccc780505b9c3d37187`  
+		Last Modified: Fri, 17 Jun 2016 16:52:09 GMT  
+		Size: 122.0 B
+	-	`sha256:d9285d9b79de038db8b1b79c8badaacdbc2521b1acad62f82b08f704f47870ba`  
+		Last Modified: Fri, 17 Jun 2016 16:52:08 GMT  
+		Size: 1.3 KB (1349 bytes)
+	-	`sha256:684334184033bea1790b1f23199e8296b38452a50cd7d40730e4d48e5889322e`  
+		Last Modified: Fri, 17 Jun 2016 16:53:04 GMT  
+		Size: 133.0 B
 
 ## `golang:1.6-onbuild`
 
 ```console
-$ docker pull golang@sha256:32caaa4629a3093ea7c6013e5e224a35e92948f1e6de87f2693eadaab7952abd
+$ docker pull golang@sha256:cf583853d7a987f64c5eedaed14f929146c59b9c047ca82d25f5c21223bfdab4
 ```
 
 -	Platforms:
@@ -983,84 +983,84 @@ $ docker pull golang@sha256:32caaa4629a3093ea7c6013e5e224a35e92948f1e6de87f2693e
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255922947 bytes)**  
+-	Total Size: **254.2 MB (254203456 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03c15185d2d4536d3ada3065bc7d27f6e55407bd178602c1c016165d98a9a456`
+-	Image ID: `sha256:5b56d7c15fdc77444652519ee1c5181f18a9243dab50fd56d92a2eda9635cde3`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:30 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:43:45 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:43:47 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:15 GMT
 RUN mkdir -p /go/src/app
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:15 GMT
 WORKDIR /go/src/app
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 CMD ["go-wrapper" "run"]
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD COPY . /go/src/app
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD RUN go-wrapper download
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD RUN go-wrapper install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:8534b4ecb14e8c644a57d3357f13856c21b87909fbaabee60bd32ec89aa2fad1`  
-		Last Modified: Thu, 09 Jun 2016 14:14:52 GMT  
-		Size: 84.9 MB (84854806 bytes)
-	-	`sha256:ac37d9d8babe4d1987d3762378fd381ee200aef8dc220d9f0fde45aebe41f161`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 123.0 B
-	-	`sha256:87c8bfcf9844207a9c48aef43999cb926aba010e08d83545080e65ee9680afff`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 1.4 KB (1351 bytes)
-	-	`sha256:06c7052c11dfe6dc2962a9a919254716a775cc07cf9a2c210483494c7c11091e`  
-		Last Modified: Thu, 09 Jun 2016 14:15:16 GMT  
-		Size: 132.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:d8a921df8ce9d2b00d139bc78f0a2036f1960204281570d5794ad0e0c9f32ceb`  
+		Last Modified: Fri, 17 Jun 2016 16:52:39 GMT  
+		Size: 84.9 MB (84854795 bytes)
+	-	`sha256:d34bc98c277053d749016539968fbde53f0e095713988ccc780505b9c3d37187`  
+		Last Modified: Fri, 17 Jun 2016 16:52:09 GMT  
+		Size: 122.0 B
+	-	`sha256:d9285d9b79de038db8b1b79c8badaacdbc2521b1acad62f82b08f704f47870ba`  
+		Last Modified: Fri, 17 Jun 2016 16:52:08 GMT  
+		Size: 1.3 KB (1349 bytes)
+	-	`sha256:684334184033bea1790b1f23199e8296b38452a50cd7d40730e4d48e5889322e`  
+		Last Modified: Fri, 17 Jun 2016 16:53:04 GMT  
+		Size: 133.0 B
 
 ## `golang:1-onbuild`
 
 ```console
-$ docker pull golang@sha256:32caaa4629a3093ea7c6013e5e224a35e92948f1e6de87f2693eadaab7952abd
+$ docker pull golang@sha256:cf583853d7a987f64c5eedaed14f929146c59b9c047ca82d25f5c21223bfdab4
 ```
 
 -	Platforms:
@@ -1070,84 +1070,84 @@ $ docker pull golang@sha256:32caaa4629a3093ea7c6013e5e224a35e92948f1e6de87f2693e
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255922947 bytes)**  
+-	Total Size: **254.2 MB (254203456 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03c15185d2d4536d3ada3065bc7d27f6e55407bd178602c1c016165d98a9a456`
+-	Image ID: `sha256:5b56d7c15fdc77444652519ee1c5181f18a9243dab50fd56d92a2eda9635cde3`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:30 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:43:45 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:43:47 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:15 GMT
 RUN mkdir -p /go/src/app
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:15 GMT
 WORKDIR /go/src/app
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 CMD ["go-wrapper" "run"]
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD COPY . /go/src/app
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD RUN go-wrapper download
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD RUN go-wrapper install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:8534b4ecb14e8c644a57d3357f13856c21b87909fbaabee60bd32ec89aa2fad1`  
-		Last Modified: Thu, 09 Jun 2016 14:14:52 GMT  
-		Size: 84.9 MB (84854806 bytes)
-	-	`sha256:ac37d9d8babe4d1987d3762378fd381ee200aef8dc220d9f0fde45aebe41f161`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 123.0 B
-	-	`sha256:87c8bfcf9844207a9c48aef43999cb926aba010e08d83545080e65ee9680afff`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 1.4 KB (1351 bytes)
-	-	`sha256:06c7052c11dfe6dc2962a9a919254716a775cc07cf9a2c210483494c7c11091e`  
-		Last Modified: Thu, 09 Jun 2016 14:15:16 GMT  
-		Size: 132.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:d8a921df8ce9d2b00d139bc78f0a2036f1960204281570d5794ad0e0c9f32ceb`  
+		Last Modified: Fri, 17 Jun 2016 16:52:39 GMT  
+		Size: 84.9 MB (84854795 bytes)
+	-	`sha256:d34bc98c277053d749016539968fbde53f0e095713988ccc780505b9c3d37187`  
+		Last Modified: Fri, 17 Jun 2016 16:52:09 GMT  
+		Size: 122.0 B
+	-	`sha256:d9285d9b79de038db8b1b79c8badaacdbc2521b1acad62f82b08f704f47870ba`  
+		Last Modified: Fri, 17 Jun 2016 16:52:08 GMT  
+		Size: 1.3 KB (1349 bytes)
+	-	`sha256:684334184033bea1790b1f23199e8296b38452a50cd7d40730e4d48e5889322e`  
+		Last Modified: Fri, 17 Jun 2016 16:53:04 GMT  
+		Size: 133.0 B
 
 ## `golang:onbuild`
 
 ```console
-$ docker pull golang@sha256:32caaa4629a3093ea7c6013e5e224a35e92948f1e6de87f2693eadaab7952abd
+$ docker pull golang@sha256:cf583853d7a987f64c5eedaed14f929146c59b9c047ca82d25f5c21223bfdab4
 ```
 
 -	Platforms:
@@ -1157,84 +1157,84 @@ $ docker pull golang@sha256:32caaa4629a3093ea7c6013e5e224a35e92948f1e6de87f2693e
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255922947 bytes)**  
+-	Total Size: **254.2 MB (254203456 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03c15185d2d4536d3ada3065bc7d27f6e55407bd178602c1c016165d98a9a456`
+-	Image ID: `sha256:5b56d7c15fdc77444652519ee1c5181f18a9243dab50fd56d92a2eda9635cde3`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:30 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:31 GMT
+# Fri, 10 Jun 2016 21:36:58 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:43:45 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:10 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:43:46 GMT
+# Fri, 10 Jun 2016 21:37:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:43:47 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:43:48 GMT
+# Fri, 10 Jun 2016 21:37:12 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:15 GMT
 RUN mkdir -p /go/src/app
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:15 GMT
 WORKDIR /go/src/app
-# Thu, 09 Jun 2016 13:43:50 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 CMD ["go-wrapper" "run"]
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD COPY . /go/src/app
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD RUN go-wrapper download
-# Thu, 09 Jun 2016 13:43:51 GMT
+# Fri, 10 Jun 2016 21:37:16 GMT
 ONBUILD RUN go-wrapper install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:8534b4ecb14e8c644a57d3357f13856c21b87909fbaabee60bd32ec89aa2fad1`  
-		Last Modified: Thu, 09 Jun 2016 14:14:52 GMT  
-		Size: 84.9 MB (84854806 bytes)
-	-	`sha256:ac37d9d8babe4d1987d3762378fd381ee200aef8dc220d9f0fde45aebe41f161`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 123.0 B
-	-	`sha256:87c8bfcf9844207a9c48aef43999cb926aba010e08d83545080e65ee9680afff`  
-		Last Modified: Thu, 09 Jun 2016 14:13:59 GMT  
-		Size: 1.4 KB (1351 bytes)
-	-	`sha256:06c7052c11dfe6dc2962a9a919254716a775cc07cf9a2c210483494c7c11091e`  
-		Last Modified: Thu, 09 Jun 2016 14:15:16 GMT  
-		Size: 132.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:d8a921df8ce9d2b00d139bc78f0a2036f1960204281570d5794ad0e0c9f32ceb`  
+		Last Modified: Fri, 17 Jun 2016 16:52:39 GMT  
+		Size: 84.9 MB (84854795 bytes)
+	-	`sha256:d34bc98c277053d749016539968fbde53f0e095713988ccc780505b9c3d37187`  
+		Last Modified: Fri, 17 Jun 2016 16:52:09 GMT  
+		Size: 122.0 B
+	-	`sha256:d9285d9b79de038db8b1b79c8badaacdbc2521b1acad62f82b08f704f47870ba`  
+		Last Modified: Fri, 17 Jun 2016 16:52:08 GMT  
+		Size: 1.3 KB (1349 bytes)
+	-	`sha256:684334184033bea1790b1f23199e8296b38452a50cd7d40730e4d48e5889322e`  
+		Last Modified: Fri, 17 Jun 2016 16:53:04 GMT  
+		Size: 133.0 B
 
 ## `golang:1.6.2-wheezy`
 
 ```console
-$ docker pull golang@sha256:c7ff753e477e62703afa02e4c7573e0d52ea315d260c18a41021fae87810276f
+$ docker pull golang@sha256:27046e10bd9762f07c2120239d62cde96fe567cca1d693a9bd1e6646910176aa
 ```
 
 -	Platforms:
@@ -1244,69 +1244,69 @@ $ docker pull golang@sha256:c7ff753e477e62703afa02e4c7573e0d52ea315d260c18a41021
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.0 MB (206031134 bytes)**  
+-	Total Size: **200.2 MB (200177471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1a9529b13ce4c71d4e388a9ac90b8e1fa45c3823b90fc4ebb4ee3ec1f256f88`
+-	Image ID: `sha256:ef1eb071c174bb00c5abbe29fa85704aad292943a2b376802166b78de582dfab`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:58 GMT
-ADD file:2c2a857d67ef6989f65a8a4141daba40186ce39e0b7394643cd88054a0a5a9ef in /
-# Wed, 08 Jun 2016 00:51:59 GMT
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 21:10:41 GMT
+# Thu, 09 Jun 2016 21:43:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 21:11:12 GMT
+# Thu, 09 Jun 2016 21:44:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:41:07 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:52 GMT
+# Fri, 10 Jun 2016 21:37:17 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:52 GMT
+# Fri, 10 Jun 2016 21:37:17 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:53 GMT
+# Fri, 10 Jun 2016 21:37:18 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:44:06 GMT
+# Fri, 10 Jun 2016 21:37:28 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:44:07 GMT
+# Fri, 10 Jun 2016 21:37:29 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:44:07 GMT
+# Fri, 10 Jun 2016 21:37:29 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:44:08 GMT
+# Fri, 10 Jun 2016 21:37:30 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:44:09 GMT
+# Fri, 10 Jun 2016 21:37:31 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:44:09 GMT
+# Fri, 10 Jun 2016 21:37:31 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`  
-		Last Modified: Mon, 23 May 2016 23:13:33 GMT  
-		Size: 37.2 MB (37196464 bytes)
-	-	`sha256:51d05f23de0fe5d15ae0485a481110c1f85d72b8de0e12af347c57968748fbb3`  
-		Last Modified: Thu, 09 Jun 2016 14:12:00 GMT  
-		Size: 6.8 MB (6761577 bytes)
-	-	`sha256:638003bf95f3c953efae720dc69238df82e8601ebcdc29ae76f63c1cb1089891`  
-		Last Modified: Thu, 09 Jun 2016 14:12:24 GMT  
-		Size: 37.4 MB (37389699 bytes)
-	-	`sha256:b9caf8416efdc49d4b98c129d5e9afcd611d74dd55aadddb669fc51649524622`  
-		Last Modified: Thu, 09 Jun 2016 14:12:21 GMT  
-		Size: 39.8 MB (39827111 bytes)
-	-	`sha256:b9b398c8603eaae5431956281845fd730fba876fbf950361ef345b69f9f5d2b9`  
-		Last Modified: Thu, 09 Jun 2016 14:16:24 GMT  
-		Size: 84.9 MB (84854812 bytes)
-	-	`sha256:890d405f9c92a8c23fad7f0f3b04da998a8cd3b21ccce059d107381f08790126`  
-		Last Modified: Thu, 09 Jun 2016 14:15:34 GMT  
-		Size: 122.0 B
-	-	`sha256:91540e83e0d530dbbd35ae55228b7533c16a6a5ad57237a73dcf968805130fa1`  
-		Last Modified: Thu, 09 Jun 2016 14:15:33 GMT  
-		Size: 1.3 KB (1349 bytes)
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
+		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
+		Size: 6.8 MB (6751390 bytes)
+	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
+		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
+		Size: 37.4 MB (37389872 bytes)
+	-	`sha256:bc6935f49a7a41d9d0a9e861e1ef40879eecc95cc5559e40e45c478ddf97bb8a`  
+		Last Modified: Fri, 17 Jun 2016 16:51:24 GMT  
+		Size: 34.0 MB (33970375 bytes)
+	-	`sha256:1859e5accd3dd03af7436f57d0694b0860a9f2d414489b6753ce22153632a74c`  
+		Last Modified: Fri, 17 Jun 2016 16:53:57 GMT  
+		Size: 84.9 MB (84854811 bytes)
+	-	`sha256:34c74410aa37f28e3a88e2f6f8615ab86b9ce9e77b79db81114874f31c6c2ca1`  
+		Last Modified: Fri, 17 Jun 2016 16:53:27 GMT  
+		Size: 123.0 B
+	-	`sha256:ab2827a56aa21abaebc6a6f1f7d90f75d99ca0532c7cee5cea90d8c4e79a97e3`  
+		Last Modified: Fri, 17 Jun 2016 16:53:27 GMT  
+		Size: 1.4 KB (1351 bytes)
 
 ## `golang:1.6-wheezy`
 
 ```console
-$ docker pull golang@sha256:c7ff753e477e62703afa02e4c7573e0d52ea315d260c18a41021fae87810276f
+$ docker pull golang@sha256:27046e10bd9762f07c2120239d62cde96fe567cca1d693a9bd1e6646910176aa
 ```
 
 -	Platforms:
@@ -1316,69 +1316,69 @@ $ docker pull golang@sha256:c7ff753e477e62703afa02e4c7573e0d52ea315d260c18a41021
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.0 MB (206031134 bytes)**  
+-	Total Size: **200.2 MB (200177471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1a9529b13ce4c71d4e388a9ac90b8e1fa45c3823b90fc4ebb4ee3ec1f256f88`
+-	Image ID: `sha256:ef1eb071c174bb00c5abbe29fa85704aad292943a2b376802166b78de582dfab`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:58 GMT
-ADD file:2c2a857d67ef6989f65a8a4141daba40186ce39e0b7394643cd88054a0a5a9ef in /
-# Wed, 08 Jun 2016 00:51:59 GMT
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 21:10:41 GMT
+# Thu, 09 Jun 2016 21:43:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 21:11:12 GMT
+# Thu, 09 Jun 2016 21:44:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:41:07 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:52 GMT
+# Fri, 10 Jun 2016 21:37:17 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:52 GMT
+# Fri, 10 Jun 2016 21:37:17 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:53 GMT
+# Fri, 10 Jun 2016 21:37:18 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:44:06 GMT
+# Fri, 10 Jun 2016 21:37:28 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:44:07 GMT
+# Fri, 10 Jun 2016 21:37:29 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:44:07 GMT
+# Fri, 10 Jun 2016 21:37:29 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:44:08 GMT
+# Fri, 10 Jun 2016 21:37:30 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:44:09 GMT
+# Fri, 10 Jun 2016 21:37:31 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:44:09 GMT
+# Fri, 10 Jun 2016 21:37:31 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`  
-		Last Modified: Mon, 23 May 2016 23:13:33 GMT  
-		Size: 37.2 MB (37196464 bytes)
-	-	`sha256:51d05f23de0fe5d15ae0485a481110c1f85d72b8de0e12af347c57968748fbb3`  
-		Last Modified: Thu, 09 Jun 2016 14:12:00 GMT  
-		Size: 6.8 MB (6761577 bytes)
-	-	`sha256:638003bf95f3c953efae720dc69238df82e8601ebcdc29ae76f63c1cb1089891`  
-		Last Modified: Thu, 09 Jun 2016 14:12:24 GMT  
-		Size: 37.4 MB (37389699 bytes)
-	-	`sha256:b9caf8416efdc49d4b98c129d5e9afcd611d74dd55aadddb669fc51649524622`  
-		Last Modified: Thu, 09 Jun 2016 14:12:21 GMT  
-		Size: 39.8 MB (39827111 bytes)
-	-	`sha256:b9b398c8603eaae5431956281845fd730fba876fbf950361ef345b69f9f5d2b9`  
-		Last Modified: Thu, 09 Jun 2016 14:16:24 GMT  
-		Size: 84.9 MB (84854812 bytes)
-	-	`sha256:890d405f9c92a8c23fad7f0f3b04da998a8cd3b21ccce059d107381f08790126`  
-		Last Modified: Thu, 09 Jun 2016 14:15:34 GMT  
-		Size: 122.0 B
-	-	`sha256:91540e83e0d530dbbd35ae55228b7533c16a6a5ad57237a73dcf968805130fa1`  
-		Last Modified: Thu, 09 Jun 2016 14:15:33 GMT  
-		Size: 1.3 KB (1349 bytes)
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
+		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
+		Size: 6.8 MB (6751390 bytes)
+	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
+		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
+		Size: 37.4 MB (37389872 bytes)
+	-	`sha256:bc6935f49a7a41d9d0a9e861e1ef40879eecc95cc5559e40e45c478ddf97bb8a`  
+		Last Modified: Fri, 17 Jun 2016 16:51:24 GMT  
+		Size: 34.0 MB (33970375 bytes)
+	-	`sha256:1859e5accd3dd03af7436f57d0694b0860a9f2d414489b6753ce22153632a74c`  
+		Last Modified: Fri, 17 Jun 2016 16:53:57 GMT  
+		Size: 84.9 MB (84854811 bytes)
+	-	`sha256:34c74410aa37f28e3a88e2f6f8615ab86b9ce9e77b79db81114874f31c6c2ca1`  
+		Last Modified: Fri, 17 Jun 2016 16:53:27 GMT  
+		Size: 123.0 B
+	-	`sha256:ab2827a56aa21abaebc6a6f1f7d90f75d99ca0532c7cee5cea90d8c4e79a97e3`  
+		Last Modified: Fri, 17 Jun 2016 16:53:27 GMT  
+		Size: 1.4 KB (1351 bytes)
 
 ## `golang:1-wheezy`
 
 ```console
-$ docker pull golang@sha256:c7ff753e477e62703afa02e4c7573e0d52ea315d260c18a41021fae87810276f
+$ docker pull golang@sha256:27046e10bd9762f07c2120239d62cde96fe567cca1d693a9bd1e6646910176aa
 ```
 
 -	Platforms:
@@ -1388,69 +1388,69 @@ $ docker pull golang@sha256:c7ff753e477e62703afa02e4c7573e0d52ea315d260c18a41021
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.0 MB (206031134 bytes)**  
+-	Total Size: **200.2 MB (200177471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1a9529b13ce4c71d4e388a9ac90b8e1fa45c3823b90fc4ebb4ee3ec1f256f88`
+-	Image ID: `sha256:ef1eb071c174bb00c5abbe29fa85704aad292943a2b376802166b78de582dfab`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:58 GMT
-ADD file:2c2a857d67ef6989f65a8a4141daba40186ce39e0b7394643cd88054a0a5a9ef in /
-# Wed, 08 Jun 2016 00:51:59 GMT
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 21:10:41 GMT
+# Thu, 09 Jun 2016 21:43:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 21:11:12 GMT
+# Thu, 09 Jun 2016 21:44:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:41:07 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:52 GMT
+# Fri, 10 Jun 2016 21:37:17 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:52 GMT
+# Fri, 10 Jun 2016 21:37:17 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:53 GMT
+# Fri, 10 Jun 2016 21:37:18 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:44:06 GMT
+# Fri, 10 Jun 2016 21:37:28 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:44:07 GMT
+# Fri, 10 Jun 2016 21:37:29 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:44:07 GMT
+# Fri, 10 Jun 2016 21:37:29 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:44:08 GMT
+# Fri, 10 Jun 2016 21:37:30 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:44:09 GMT
+# Fri, 10 Jun 2016 21:37:31 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:44:09 GMT
+# Fri, 10 Jun 2016 21:37:31 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`  
-		Last Modified: Mon, 23 May 2016 23:13:33 GMT  
-		Size: 37.2 MB (37196464 bytes)
-	-	`sha256:51d05f23de0fe5d15ae0485a481110c1f85d72b8de0e12af347c57968748fbb3`  
-		Last Modified: Thu, 09 Jun 2016 14:12:00 GMT  
-		Size: 6.8 MB (6761577 bytes)
-	-	`sha256:638003bf95f3c953efae720dc69238df82e8601ebcdc29ae76f63c1cb1089891`  
-		Last Modified: Thu, 09 Jun 2016 14:12:24 GMT  
-		Size: 37.4 MB (37389699 bytes)
-	-	`sha256:b9caf8416efdc49d4b98c129d5e9afcd611d74dd55aadddb669fc51649524622`  
-		Last Modified: Thu, 09 Jun 2016 14:12:21 GMT  
-		Size: 39.8 MB (39827111 bytes)
-	-	`sha256:b9b398c8603eaae5431956281845fd730fba876fbf950361ef345b69f9f5d2b9`  
-		Last Modified: Thu, 09 Jun 2016 14:16:24 GMT  
-		Size: 84.9 MB (84854812 bytes)
-	-	`sha256:890d405f9c92a8c23fad7f0f3b04da998a8cd3b21ccce059d107381f08790126`  
-		Last Modified: Thu, 09 Jun 2016 14:15:34 GMT  
-		Size: 122.0 B
-	-	`sha256:91540e83e0d530dbbd35ae55228b7533c16a6a5ad57237a73dcf968805130fa1`  
-		Last Modified: Thu, 09 Jun 2016 14:15:33 GMT  
-		Size: 1.3 KB (1349 bytes)
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
+		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
+		Size: 6.8 MB (6751390 bytes)
+	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
+		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
+		Size: 37.4 MB (37389872 bytes)
+	-	`sha256:bc6935f49a7a41d9d0a9e861e1ef40879eecc95cc5559e40e45c478ddf97bb8a`  
+		Last Modified: Fri, 17 Jun 2016 16:51:24 GMT  
+		Size: 34.0 MB (33970375 bytes)
+	-	`sha256:1859e5accd3dd03af7436f57d0694b0860a9f2d414489b6753ce22153632a74c`  
+		Last Modified: Fri, 17 Jun 2016 16:53:57 GMT  
+		Size: 84.9 MB (84854811 bytes)
+	-	`sha256:34c74410aa37f28e3a88e2f6f8615ab86b9ce9e77b79db81114874f31c6c2ca1`  
+		Last Modified: Fri, 17 Jun 2016 16:53:27 GMT  
+		Size: 123.0 B
+	-	`sha256:ab2827a56aa21abaebc6a6f1f7d90f75d99ca0532c7cee5cea90d8c4e79a97e3`  
+		Last Modified: Fri, 17 Jun 2016 16:53:27 GMT  
+		Size: 1.4 KB (1351 bytes)
 
 ## `golang:wheezy`
 
 ```console
-$ docker pull golang@sha256:c7ff753e477e62703afa02e4c7573e0d52ea315d260c18a41021fae87810276f
+$ docker pull golang@sha256:27046e10bd9762f07c2120239d62cde96fe567cca1d693a9bd1e6646910176aa
 ```
 
 -	Platforms:
@@ -1460,64 +1460,64 @@ $ docker pull golang@sha256:c7ff753e477e62703afa02e4c7573e0d52ea315d260c18a41021
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.0 MB (206031134 bytes)**  
+-	Total Size: **200.2 MB (200177471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1a9529b13ce4c71d4e388a9ac90b8e1fa45c3823b90fc4ebb4ee3ec1f256f88`
+-	Image ID: `sha256:ef1eb071c174bb00c5abbe29fa85704aad292943a2b376802166b78de582dfab`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:58 GMT
-ADD file:2c2a857d67ef6989f65a8a4141daba40186ce39e0b7394643cd88054a0a5a9ef in /
-# Wed, 08 Jun 2016 00:51:59 GMT
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 21:10:41 GMT
+# Thu, 09 Jun 2016 21:43:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 21:11:12 GMT
+# Thu, 09 Jun 2016 21:44:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:41:07 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:43:52 GMT
+# Fri, 10 Jun 2016 21:37:17 GMT
 ENV GOLANG_VERSION=1.6.2
-# Thu, 09 Jun 2016 13:43:52 GMT
+# Fri, 10 Jun 2016 21:37:17 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.2.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:43:53 GMT
+# Fri, 10 Jun 2016 21:37:18 GMT
 ENV GOLANG_DOWNLOAD_SHA256=e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
-# Thu, 09 Jun 2016 13:44:06 GMT
+# Fri, 10 Jun 2016 21:37:28 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:44:07 GMT
+# Fri, 10 Jun 2016 21:37:29 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:44:07 GMT
+# Fri, 10 Jun 2016 21:37:29 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:44:08 GMT
+# Fri, 10 Jun 2016 21:37:30 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:44:09 GMT
+# Fri, 10 Jun 2016 21:37:31 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:44:09 GMT
+# Fri, 10 Jun 2016 21:37:31 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`  
-		Last Modified: Mon, 23 May 2016 23:13:33 GMT  
-		Size: 37.2 MB (37196464 bytes)
-	-	`sha256:51d05f23de0fe5d15ae0485a481110c1f85d72b8de0e12af347c57968748fbb3`  
-		Last Modified: Thu, 09 Jun 2016 14:12:00 GMT  
-		Size: 6.8 MB (6761577 bytes)
-	-	`sha256:638003bf95f3c953efae720dc69238df82e8601ebcdc29ae76f63c1cb1089891`  
-		Last Modified: Thu, 09 Jun 2016 14:12:24 GMT  
-		Size: 37.4 MB (37389699 bytes)
-	-	`sha256:b9caf8416efdc49d4b98c129d5e9afcd611d74dd55aadddb669fc51649524622`  
-		Last Modified: Thu, 09 Jun 2016 14:12:21 GMT  
-		Size: 39.8 MB (39827111 bytes)
-	-	`sha256:b9b398c8603eaae5431956281845fd730fba876fbf950361ef345b69f9f5d2b9`  
-		Last Modified: Thu, 09 Jun 2016 14:16:24 GMT  
-		Size: 84.9 MB (84854812 bytes)
-	-	`sha256:890d405f9c92a8c23fad7f0f3b04da998a8cd3b21ccce059d107381f08790126`  
-		Last Modified: Thu, 09 Jun 2016 14:15:34 GMT  
-		Size: 122.0 B
-	-	`sha256:91540e83e0d530dbbd35ae55228b7533c16a6a5ad57237a73dcf968805130fa1`  
-		Last Modified: Thu, 09 Jun 2016 14:15:33 GMT  
-		Size: 1.3 KB (1349 bytes)
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
+		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
+		Size: 6.8 MB (6751390 bytes)
+	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
+		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
+		Size: 37.4 MB (37389872 bytes)
+	-	`sha256:bc6935f49a7a41d9d0a9e861e1ef40879eecc95cc5559e40e45c478ddf97bb8a`  
+		Last Modified: Fri, 17 Jun 2016 16:51:24 GMT  
+		Size: 34.0 MB (33970375 bytes)
+	-	`sha256:1859e5accd3dd03af7436f57d0694b0860a9f2d414489b6753ce22153632a74c`  
+		Last Modified: Fri, 17 Jun 2016 16:53:57 GMT  
+		Size: 84.9 MB (84854811 bytes)
+	-	`sha256:34c74410aa37f28e3a88e2f6f8615ab86b9ce9e77b79db81114874f31c6c2ca1`  
+		Last Modified: Fri, 17 Jun 2016 16:53:27 GMT  
+		Size: 123.0 B
+	-	`sha256:ab2827a56aa21abaebc6a6f1f7d90f75d99ca0532c7cee5cea90d8c4e79a97e3`  
+		Last Modified: Fri, 17 Jun 2016 16:53:27 GMT  
+		Size: 1.4 KB (1351 bytes)
 
 ## `golang:1.6.2-alpine`
 
@@ -1735,82 +1735,82 @@ WORKDIR /go
 		Last Modified: Thu, 09 Jun 2016 14:16:46 GMT  
 		Size: 123.0 B
 
-## `golang:1.7beta1`
+## `golang:1.7beta2`
 
 ```console
-$ docker pull golang@sha256:b8dbf46ccf0afe3cdbfe83136d5d4fd2fa006d9095859717eb6bc3222db7c81a
+$ docker pull golang@sha256:2794304b5a3d6729addba3ce7fff61d265f3f057702df62c6732ad2dea59192c
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `golang:1.7beta1` - linux; amd64
+### `golang:1.7beta2` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.5 MB (250549996 bytes)**  
+-	Total Size: **250.6 MB (250577089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3bcef712db4749248a2e0147fa104bfce9bda3039e666ab949e3f87dacbba66d`
+-	Image ID: `sha256:334d40c8a45aecbd124ba26e8682880c7247ce2c6e9922c330528ee6ecfb5196`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:46:10 GMT
-ENV GOLANG_VERSION=1.7beta1
-# Thu, 09 Jun 2016 13:46:11 GMT
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta1.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:46:11 GMT
-ENV GOLANG_DOWNLOAD_SHA256=a55e718935e2be1d5b920ed262fd06885d2d7fc4eab7722aa02c205d80532e3b
-# Thu, 09 Jun 2016 13:46:22 GMT
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_VERSION=1.7beta2
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta2.linux-amd64.tar.gz
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_DOWNLOAD_SHA256=688f895b51def9e065fb2610ff91afcb2b0d9637233b74130c8ca331d35d5ca5
+# Fri, 17 Jun 2016 16:48:24 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:46:23 GMT
+# Fri, 17 Jun 2016 16:48:24 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:46:23 GMT
+# Fri, 17 Jun 2016 16:48:24 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:46:24 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:46:24 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:46:25 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:d73a7c3d3a2b996ccac6c5feac20706319adcddd0a7cb2757332375b3266757f`  
-		Last Modified: Thu, 09 Jun 2016 14:18:36 GMT  
-		Size: 79.5 MB (79481989 bytes)
-	-	`sha256:dc35a8ab789ea047c5ec3d207b950eee4fe5c8dc76f034e10e000f9babcc2b49`  
-		Last Modified: Thu, 09 Jun 2016 14:17:52 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:5ba67bcc22ba0817d6d9f99c39189c5fc8e2af13d7b05b05c1431c52415da7b0`  
+		Last Modified: Fri, 17 Jun 2016 16:55:06 GMT  
+		Size: 81.2 MB (81228559 bytes)
+	-	`sha256:2928640c28f47281435655e4f02fb63b945aa9b5e41cc6d8d3ee11aa29c5fb16`  
+		Last Modified: Fri, 17 Jun 2016 16:54:42 GMT  
 		Size: 122.0 B
-	-	`sha256:10e555c5823d736b8599085c706c6cfcc5de07e8495d1e0782a0fa7ce873b0c7`  
-		Last Modified: Thu, 09 Jun 2016 14:17:52 GMT  
-		Size: 1.4 KB (1350 bytes)
+	-	`sha256:f5c1ec6799907193c4454cd6567deb2e0199959b9e45c4534da377ca0d16fa81`  
+		Last Modified: Fri, 17 Jun 2016 16:54:42 GMT  
+		Size: 1.4 KB (1351 bytes)
 
 ## `golang:1.7`
 
 ```console
-$ docker pull golang@sha256:b8dbf46ccf0afe3cdbfe83136d5d4fd2fa006d9095859717eb6bc3222db7c81a
+$ docker pull golang@sha256:2794304b5a3d6729addba3ce7fff61d265f3f057702df62c6732ad2dea59192c
 ```
 
 -	Platforms:
@@ -1820,156 +1820,156 @@ $ docker pull golang@sha256:b8dbf46ccf0afe3cdbfe83136d5d4fd2fa006d9095859717eb6b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.5 MB (250549996 bytes)**  
+-	Total Size: **250.6 MB (250577089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3bcef712db4749248a2e0147fa104bfce9bda3039e666ab949e3f87dacbba66d`
+-	Image ID: `sha256:334d40c8a45aecbd124ba26e8682880c7247ce2c6e9922c330528ee6ecfb5196`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:46:10 GMT
-ENV GOLANG_VERSION=1.7beta1
-# Thu, 09 Jun 2016 13:46:11 GMT
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta1.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:46:11 GMT
-ENV GOLANG_DOWNLOAD_SHA256=a55e718935e2be1d5b920ed262fd06885d2d7fc4eab7722aa02c205d80532e3b
-# Thu, 09 Jun 2016 13:46:22 GMT
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_VERSION=1.7beta2
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta2.linux-amd64.tar.gz
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_DOWNLOAD_SHA256=688f895b51def9e065fb2610ff91afcb2b0d9637233b74130c8ca331d35d5ca5
+# Fri, 17 Jun 2016 16:48:24 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:46:23 GMT
+# Fri, 17 Jun 2016 16:48:24 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:46:23 GMT
+# Fri, 17 Jun 2016 16:48:24 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:46:24 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:46:24 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:46:25 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:d73a7c3d3a2b996ccac6c5feac20706319adcddd0a7cb2757332375b3266757f`  
-		Last Modified: Thu, 09 Jun 2016 14:18:36 GMT  
-		Size: 79.5 MB (79481989 bytes)
-	-	`sha256:dc35a8ab789ea047c5ec3d207b950eee4fe5c8dc76f034e10e000f9babcc2b49`  
-		Last Modified: Thu, 09 Jun 2016 14:17:52 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:5ba67bcc22ba0817d6d9f99c39189c5fc8e2af13d7b05b05c1431c52415da7b0`  
+		Last Modified: Fri, 17 Jun 2016 16:55:06 GMT  
+		Size: 81.2 MB (81228559 bytes)
+	-	`sha256:2928640c28f47281435655e4f02fb63b945aa9b5e41cc6d8d3ee11aa29c5fb16`  
+		Last Modified: Fri, 17 Jun 2016 16:54:42 GMT  
 		Size: 122.0 B
-	-	`sha256:10e555c5823d736b8599085c706c6cfcc5de07e8495d1e0782a0fa7ce873b0c7`  
-		Last Modified: Thu, 09 Jun 2016 14:17:52 GMT  
-		Size: 1.4 KB (1350 bytes)
+	-	`sha256:f5c1ec6799907193c4454cd6567deb2e0199959b9e45c4534da377ca0d16fa81`  
+		Last Modified: Fri, 17 Jun 2016 16:54:42 GMT  
+		Size: 1.4 KB (1351 bytes)
 
-## `golang:1.7beta1-onbuild`
+## `golang:1.7beta2-onbuild`
 
 ```console
-$ docker pull golang@sha256:334b8cd325caa93cac57668afdeb7ad9a287a2fb08954dfea94b8318433badaa
+$ docker pull golang@sha256:0c856e2967b27bfdf13c5df3eb5bc3a1e17eb8f7fa6f7b23b59269feca976ed8
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `golang:1.7beta1-onbuild` - linux; amd64
+### `golang:1.7beta2-onbuild` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.6 MB (250550129 bytes)**  
+-	Total Size: **250.6 MB (250577222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ae2c6daee23e089ba203256072ac4160b337dec23234850432bebb8630aac80`
+-	Image ID: `sha256:8d9353da304c00c233714ba3507075f5eda2ff3ddc612bb8c4b864c0bde4c9bc`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:46:10 GMT
-ENV GOLANG_VERSION=1.7beta1
-# Thu, 09 Jun 2016 13:46:11 GMT
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta1.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:46:11 GMT
-ENV GOLANG_DOWNLOAD_SHA256=a55e718935e2be1d5b920ed262fd06885d2d7fc4eab7722aa02c205d80532e3b
-# Thu, 09 Jun 2016 13:46:22 GMT
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_VERSION=1.7beta2
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta2.linux-amd64.tar.gz
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_DOWNLOAD_SHA256=688f895b51def9e065fb2610ff91afcb2b0d9637233b74130c8ca331d35d5ca5
+# Fri, 17 Jun 2016 16:48:24 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:46:23 GMT
+# Fri, 17 Jun 2016 16:48:24 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:46:23 GMT
+# Fri, 17 Jun 2016 16:48:24 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:46:24 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:46:24 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:46:25 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
-# Thu, 09 Jun 2016 13:46:26 GMT
+# Fri, 17 Jun 2016 16:48:28 GMT
 RUN mkdir -p /go/src/app
-# Thu, 09 Jun 2016 13:46:27 GMT
+# Fri, 17 Jun 2016 16:48:28 GMT
 WORKDIR /go/src/app
-# Thu, 09 Jun 2016 13:46:27 GMT
+# Fri, 17 Jun 2016 16:48:28 GMT
 CMD ["go-wrapper" "run"]
-# Thu, 09 Jun 2016 13:46:27 GMT
+# Fri, 17 Jun 2016 16:48:29 GMT
 ONBUILD COPY . /go/src/app
-# Thu, 09 Jun 2016 13:46:27 GMT
+# Fri, 17 Jun 2016 16:48:29 GMT
 ONBUILD RUN go-wrapper download
-# Thu, 09 Jun 2016 13:46:28 GMT
+# Fri, 17 Jun 2016 16:48:29 GMT
 ONBUILD RUN go-wrapper install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:d73a7c3d3a2b996ccac6c5feac20706319adcddd0a7cb2757332375b3266757f`  
-		Last Modified: Thu, 09 Jun 2016 14:18:36 GMT  
-		Size: 79.5 MB (79481989 bytes)
-	-	`sha256:dc35a8ab789ea047c5ec3d207b950eee4fe5c8dc76f034e10e000f9babcc2b49`  
-		Last Modified: Thu, 09 Jun 2016 14:17:52 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:5ba67bcc22ba0817d6d9f99c39189c5fc8e2af13d7b05b05c1431c52415da7b0`  
+		Last Modified: Fri, 17 Jun 2016 16:55:06 GMT  
+		Size: 81.2 MB (81228559 bytes)
+	-	`sha256:2928640c28f47281435655e4f02fb63b945aa9b5e41cc6d8d3ee11aa29c5fb16`  
+		Last Modified: Fri, 17 Jun 2016 16:54:42 GMT  
 		Size: 122.0 B
-	-	`sha256:10e555c5823d736b8599085c706c6cfcc5de07e8495d1e0782a0fa7ce873b0c7`  
-		Last Modified: Thu, 09 Jun 2016 14:17:52 GMT  
-		Size: 1.4 KB (1350 bytes)
-	-	`sha256:c823603f027444a38e255d392a92740ce2dd69b34d0519c532b7ab6cdd7fa7da`  
-		Last Modified: Thu, 09 Jun 2016 14:18:51 GMT  
+	-	`sha256:f5c1ec6799907193c4454cd6567deb2e0199959b9e45c4534da377ca0d16fa81`  
+		Last Modified: Fri, 17 Jun 2016 16:54:42 GMT  
+		Size: 1.4 KB (1351 bytes)
+	-	`sha256:eaa685f658f6bc7d064842ab256e18609f62fae2cfedced990902fc365d2f140`  
+		Last Modified: Fri, 17 Jun 2016 16:55:23 GMT  
 		Size: 133.0 B
 
 ## `golang:1.7-onbuild`
 
 ```console
-$ docker pull golang@sha256:334b8cd325caa93cac57668afdeb7ad9a287a2fb08954dfea94b8318433badaa
+$ docker pull golang@sha256:0c856e2967b27bfdf13c5df3eb5bc3a1e17eb8f7fa6f7b23b59269feca976ed8
 ```
 
 -	Platforms:
@@ -1979,156 +1979,156 @@ $ docker pull golang@sha256:334b8cd325caa93cac57668afdeb7ad9a287a2fb08954dfea94b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.6 MB (250550129 bytes)**  
+-	Total Size: **250.6 MB (250577222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ae2c6daee23e089ba203256072ac4160b337dec23234850432bebb8630aac80`
+-	Image ID: `sha256:8d9353da304c00c233714ba3507075f5eda2ff3ddc612bb8c4b864c0bde4c9bc`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:04 GMT
-ADD file:cc5eb12aff54544ae7435eb4571f5a5d89e3ff14e5751decb9c4961c3e3b87a2 in /
-# Wed, 08 Jun 2016 00:51:04 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 20:56:43 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:58:03 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:40:28 GMT
+# Fri, 10 Jun 2016 21:36:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:46:10 GMT
-ENV GOLANG_VERSION=1.7beta1
-# Thu, 09 Jun 2016 13:46:11 GMT
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta1.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:46:11 GMT
-ENV GOLANG_DOWNLOAD_SHA256=a55e718935e2be1d5b920ed262fd06885d2d7fc4eab7722aa02c205d80532e3b
-# Thu, 09 Jun 2016 13:46:22 GMT
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_VERSION=1.7beta2
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta2.linux-amd64.tar.gz
+# Fri, 17 Jun 2016 16:48:13 GMT
+ENV GOLANG_DOWNLOAD_SHA256=688f895b51def9e065fb2610ff91afcb2b0d9637233b74130c8ca331d35d5ca5
+# Fri, 17 Jun 2016 16:48:24 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:46:23 GMT
+# Fri, 17 Jun 2016 16:48:24 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:46:23 GMT
+# Fri, 17 Jun 2016 16:48:24 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:46:24 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:46:24 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:46:25 GMT
+# Fri, 17 Jun 2016 16:48:26 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
-# Thu, 09 Jun 2016 13:46:26 GMT
+# Fri, 17 Jun 2016 16:48:28 GMT
 RUN mkdir -p /go/src/app
-# Thu, 09 Jun 2016 13:46:27 GMT
+# Fri, 17 Jun 2016 16:48:28 GMT
 WORKDIR /go/src/app
-# Thu, 09 Jun 2016 13:46:27 GMT
+# Fri, 17 Jun 2016 16:48:28 GMT
 CMD ["go-wrapper" "run"]
-# Thu, 09 Jun 2016 13:46:27 GMT
+# Fri, 17 Jun 2016 16:48:29 GMT
 ONBUILD COPY . /go/src/app
-# Thu, 09 Jun 2016 13:46:27 GMT
+# Fri, 17 Jun 2016 16:48:29 GMT
 ONBUILD RUN go-wrapper download
-# Thu, 09 Jun 2016 13:46:28 GMT
+# Fri, 17 Jun 2016 16:48:29 GMT
 ONBUILD RUN go-wrapper install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:65e9ddd8bd7a786afaa4bc7b10bece4f714e2822c59f718dbdbfa26b6ab9c773`  
-		Last Modified: Thu, 09 Jun 2016 13:53:01 GMT  
-		Size: 18.5 MB (18547316 bytes)
-	-	`sha256:c41545ebedf5bb26eb1616964fda6e8f14332daad077a210dfd174b412122740`  
-		Last Modified: Thu, 09 Jun 2016 14:11:08 GMT  
-		Size: 44.2 MB (44231688 bytes)
-	-	`sha256:2bf007350a170dee07f1c9e7f5cbe20b5c3ae07140be828e90397a9f0e3cb55a`  
-		Last Modified: Thu, 09 Jun 2016 14:11:04 GMT  
-		Size: 56.9 MB (56931197 bytes)
-	-	`sha256:d73a7c3d3a2b996ccac6c5feac20706319adcddd0a7cb2757332375b3266757f`  
-		Last Modified: Thu, 09 Jun 2016 14:18:36 GMT  
-		Size: 79.5 MB (79481989 bytes)
-	-	`sha256:dc35a8ab789ea047c5ec3d207b950eee4fe5c8dc76f034e10e000f9babcc2b49`  
-		Last Modified: Thu, 09 Jun 2016 14:17:52 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:0ffc1204e0abead91aa6678abffa44739455c7b95b96b108eefc2f29d6001fdf`  
+		Last Modified: Fri, 17 Jun 2016 16:50:25 GMT  
+		Size: 56.9 MB (56921932 bytes)
+	-	`sha256:5ba67bcc22ba0817d6d9f99c39189c5fc8e2af13d7b05b05c1431c52415da7b0`  
+		Last Modified: Fri, 17 Jun 2016 16:55:06 GMT  
+		Size: 81.2 MB (81228559 bytes)
+	-	`sha256:2928640c28f47281435655e4f02fb63b945aa9b5e41cc6d8d3ee11aa29c5fb16`  
+		Last Modified: Fri, 17 Jun 2016 16:54:42 GMT  
 		Size: 122.0 B
-	-	`sha256:10e555c5823d736b8599085c706c6cfcc5de07e8495d1e0782a0fa7ce873b0c7`  
-		Last Modified: Thu, 09 Jun 2016 14:17:52 GMT  
-		Size: 1.4 KB (1350 bytes)
-	-	`sha256:c823603f027444a38e255d392a92740ce2dd69b34d0519c532b7ab6cdd7fa7da`  
-		Last Modified: Thu, 09 Jun 2016 14:18:51 GMT  
+	-	`sha256:f5c1ec6799907193c4454cd6567deb2e0199959b9e45c4534da377ca0d16fa81`  
+		Last Modified: Fri, 17 Jun 2016 16:54:42 GMT  
+		Size: 1.4 KB (1351 bytes)
+	-	`sha256:eaa685f658f6bc7d064842ab256e18609f62fae2cfedced990902fc365d2f140`  
+		Last Modified: Fri, 17 Jun 2016 16:55:23 GMT  
 		Size: 133.0 B
 
-## `golang:1.7beta1-wheezy`
+## `golang:1.7beta2-wheezy`
 
 ```console
-$ docker pull golang@sha256:29198fe53f52876386ec1f31cbbff9ca92d404498d5fd4c792faed76476feb43
+$ docker pull golang@sha256:dae85d4c97c3990abbf14d6cd749e98a6b460e120fc09bcfc8a06d4cdfe7e1a5
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `golang:1.7beta1-wheezy` - linux; amd64
+### `golang:1.7beta2-wheezy` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.7 MB (200658315 bytes)**  
+-	Total Size: **196.6 MB (196551222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85de3d876aaff67689a6c61de42c161a8c3b8e802c54932565d3c697650e71a1`
+-	Image ID: `sha256:140cd7fadb5338f50ac011acbd804e77e7266873f829ef4cf2744c99bedfeadd`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:58 GMT
-ADD file:2c2a857d67ef6989f65a8a4141daba40186ce39e0b7394643cd88054a0a5a9ef in /
-# Wed, 08 Jun 2016 00:51:59 GMT
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 21:10:41 GMT
+# Thu, 09 Jun 2016 21:43:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 21:11:12 GMT
+# Thu, 09 Jun 2016 21:44:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:41:07 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:46:28 GMT
-ENV GOLANG_VERSION=1.7beta1
-# Thu, 09 Jun 2016 13:46:29 GMT
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta1.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:46:29 GMT
-ENV GOLANG_DOWNLOAD_SHA256=a55e718935e2be1d5b920ed262fd06885d2d7fc4eab7722aa02c205d80532e3b
-# Thu, 09 Jun 2016 13:46:41 GMT
+# Fri, 17 Jun 2016 16:48:30 GMT
+ENV GOLANG_VERSION=1.7beta2
+# Fri, 17 Jun 2016 16:48:30 GMT
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta2.linux-amd64.tar.gz
+# Fri, 17 Jun 2016 16:48:30 GMT
+ENV GOLANG_DOWNLOAD_SHA256=688f895b51def9e065fb2610ff91afcb2b0d9637233b74130c8ca331d35d5ca5
+# Fri, 17 Jun 2016 16:48:40 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:46:42 GMT
+# Fri, 17 Jun 2016 16:48:41 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:46:42 GMT
+# Fri, 17 Jun 2016 16:48:41 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:46:43 GMT
+# Fri, 17 Jun 2016 16:48:42 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:46:44 GMT
+# Fri, 17 Jun 2016 16:48:43 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:46:45 GMT
+# Fri, 17 Jun 2016 16:48:43 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`  
-		Last Modified: Mon, 23 May 2016 23:13:33 GMT  
-		Size: 37.2 MB (37196464 bytes)
-	-	`sha256:51d05f23de0fe5d15ae0485a481110c1f85d72b8de0e12af347c57968748fbb3`  
-		Last Modified: Thu, 09 Jun 2016 14:12:00 GMT  
-		Size: 6.8 MB (6761577 bytes)
-	-	`sha256:638003bf95f3c953efae720dc69238df82e8601ebcdc29ae76f63c1cb1089891`  
-		Last Modified: Thu, 09 Jun 2016 14:12:24 GMT  
-		Size: 37.4 MB (37389699 bytes)
-	-	`sha256:b9caf8416efdc49d4b98c129d5e9afcd611d74dd55aadddb669fc51649524622`  
-		Last Modified: Thu, 09 Jun 2016 14:12:21 GMT  
-		Size: 39.8 MB (39827111 bytes)
-	-	`sha256:cc8b26fba554a208f854b3cddb9ba030ee4535b573f82026cbe9043901713f2e`  
-		Last Modified: Thu, 09 Jun 2016 14:19:49 GMT  
-		Size: 79.5 MB (79481993 bytes)
-	-	`sha256:6791022926fdfbe7f621e39f26bc0643436588443cc37f595b30a69d922feb31`  
-		Last Modified: Thu, 09 Jun 2016 14:19:02 GMT  
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
+		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
+		Size: 6.8 MB (6751390 bytes)
+	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
+		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
+		Size: 37.4 MB (37389872 bytes)
+	-	`sha256:bc6935f49a7a41d9d0a9e861e1ef40879eecc95cc5559e40e45c478ddf97bb8a`  
+		Last Modified: Fri, 17 Jun 2016 16:51:24 GMT  
+		Size: 34.0 MB (33970375 bytes)
+	-	`sha256:5dd7fa3e6beb475dafb398b7d9d828a36f705deda286346d968f9c2d30067932`  
+		Last Modified: Fri, 17 Jun 2016 16:56:03 GMT  
+		Size: 81.2 MB (81228561 bytes)
+	-	`sha256:e4ff8c3bb9234c67769eb1741399b499e4d3fe1a8d4510e0974156c025df9cb1`  
+		Last Modified: Fri, 17 Jun 2016 16:55:37 GMT  
 		Size: 123.0 B
-	-	`sha256:c771a378bd84b7dfdf78faa53be745fc7daaba158ca83a7199e49d723e7c53cc`  
-		Last Modified: Thu, 09 Jun 2016 14:19:02 GMT  
-		Size: 1.3 KB (1348 bytes)
+	-	`sha256:956ec8643b71530cb4283f065842951dc73604206abee03b24c14eb8d2228a7b`  
+		Last Modified: Fri, 17 Jun 2016 16:55:37 GMT  
+		Size: 1.4 KB (1352 bytes)
 
 ## `golang:1.7-wheezy`
 
 ```console
-$ docker pull golang@sha256:29198fe53f52876386ec1f31cbbff9ca92d404498d5fd4c792faed76476feb43
+$ docker pull golang@sha256:dae85d4c97c3990abbf14d6cd749e98a6b460e120fc09bcfc8a06d4cdfe7e1a5
 ```
 
 -	Platforms:
@@ -2138,102 +2138,102 @@ $ docker pull golang@sha256:29198fe53f52876386ec1f31cbbff9ca92d404498d5fd4c792fa
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.7 MB (200658315 bytes)**  
+-	Total Size: **196.6 MB (196551222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85de3d876aaff67689a6c61de42c161a8c3b8e802c54932565d3c697650e71a1`
+-	Image ID: `sha256:140cd7fadb5338f50ac011acbd804e77e7266873f829ef4cf2744c99bedfeadd`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:51:58 GMT
-ADD file:2c2a857d67ef6989f65a8a4141daba40186ce39e0b7394643cd88054a0a5a9ef in /
-# Wed, 08 Jun 2016 00:51:59 GMT
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 21:10:41 GMT
+# Thu, 09 Jun 2016 21:43:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 21:11:12 GMT
+# Thu, 09 Jun 2016 21:44:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:41:07 GMT
+# Fri, 10 Jun 2016 21:36:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 13:46:28 GMT
-ENV GOLANG_VERSION=1.7beta1
-# Thu, 09 Jun 2016 13:46:29 GMT
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta1.linux-amd64.tar.gz
-# Thu, 09 Jun 2016 13:46:29 GMT
-ENV GOLANG_DOWNLOAD_SHA256=a55e718935e2be1d5b920ed262fd06885d2d7fc4eab7722aa02c205d80532e3b
-# Thu, 09 Jun 2016 13:46:41 GMT
+# Fri, 17 Jun 2016 16:48:30 GMT
+ENV GOLANG_VERSION=1.7beta2
+# Fri, 17 Jun 2016 16:48:30 GMT
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7beta2.linux-amd64.tar.gz
+# Fri, 17 Jun 2016 16:48:30 GMT
+ENV GOLANG_DOWNLOAD_SHA256=688f895b51def9e065fb2610ff91afcb2b0d9637233b74130c8ca331d35d5ca5
+# Fri, 17 Jun 2016 16:48:40 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Thu, 09 Jun 2016 13:46:42 GMT
+# Fri, 17 Jun 2016 16:48:41 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:46:42 GMT
+# Fri, 17 Jun 2016 16:48:41 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:46:43 GMT
+# Fri, 17 Jun 2016 16:48:42 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:46:44 GMT
+# Fri, 17 Jun 2016 16:48:43 GMT
 WORKDIR /go
-# Thu, 09 Jun 2016 13:46:45 GMT
+# Fri, 17 Jun 2016 16:48:43 GMT
 COPY file:422e6a6f5edebb93eb10d3fbc34b5dbd5de073c0e680f27e824f474690edd0e5 in /usr/local/bin/
 ```
 
 -	Layers:
-	-	`sha256:47994b92ab73c2e189664beec0969461d790205d969cce06c445fafb777b8267`  
-		Last Modified: Mon, 23 May 2016 23:13:33 GMT  
-		Size: 37.2 MB (37196464 bytes)
-	-	`sha256:51d05f23de0fe5d15ae0485a481110c1f85d72b8de0e12af347c57968748fbb3`  
-		Last Modified: Thu, 09 Jun 2016 14:12:00 GMT  
-		Size: 6.8 MB (6761577 bytes)
-	-	`sha256:638003bf95f3c953efae720dc69238df82e8601ebcdc29ae76f63c1cb1089891`  
-		Last Modified: Thu, 09 Jun 2016 14:12:24 GMT  
-		Size: 37.4 MB (37389699 bytes)
-	-	`sha256:b9caf8416efdc49d4b98c129d5e9afcd611d74dd55aadddb669fc51649524622`  
-		Last Modified: Thu, 09 Jun 2016 14:12:21 GMT  
-		Size: 39.8 MB (39827111 bytes)
-	-	`sha256:cc8b26fba554a208f854b3cddb9ba030ee4535b573f82026cbe9043901713f2e`  
-		Last Modified: Thu, 09 Jun 2016 14:19:49 GMT  
-		Size: 79.5 MB (79481993 bytes)
-	-	`sha256:6791022926fdfbe7f621e39f26bc0643436588443cc37f595b30a69d922feb31`  
-		Last Modified: Thu, 09 Jun 2016 14:19:02 GMT  
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
+		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
+		Size: 6.8 MB (6751390 bytes)
+	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
+		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
+		Size: 37.4 MB (37389872 bytes)
+	-	`sha256:bc6935f49a7a41d9d0a9e861e1ef40879eecc95cc5559e40e45c478ddf97bb8a`  
+		Last Modified: Fri, 17 Jun 2016 16:51:24 GMT  
+		Size: 34.0 MB (33970375 bytes)
+	-	`sha256:5dd7fa3e6beb475dafb398b7d9d828a36f705deda286346d968f9c2d30067932`  
+		Last Modified: Fri, 17 Jun 2016 16:56:03 GMT  
+		Size: 81.2 MB (81228561 bytes)
+	-	`sha256:e4ff8c3bb9234c67769eb1741399b499e4d3fe1a8d4510e0974156c025df9cb1`  
+		Last Modified: Fri, 17 Jun 2016 16:55:37 GMT  
 		Size: 123.0 B
-	-	`sha256:c771a378bd84b7dfdf78faa53be745fc7daaba158ca83a7199e49d723e7c53cc`  
-		Last Modified: Thu, 09 Jun 2016 14:19:02 GMT  
-		Size: 1.3 KB (1348 bytes)
+	-	`sha256:956ec8643b71530cb4283f065842951dc73604206abee03b24c14eb8d2228a7b`  
+		Last Modified: Fri, 17 Jun 2016 16:55:37 GMT  
+		Size: 1.4 KB (1352 bytes)
 
-## `golang:1.7beta1-alpine`
+## `golang:1.7beta2-alpine`
 
 ```console
-$ docker pull golang@sha256:cd70beb1c537ea0ea9352636f3e5e2e385745583a69ca7ddc07a96ff0a4a403e
+$ docker pull golang@sha256:8694e9794d692e83ad222a622783bdfece957bf9cb55846d76f4e07f8470626d
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `golang:1.7beta1-alpine` - linux; amd64
+### `golang:1.7beta2-alpine` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.9 MB (71865051 bytes)**  
+-	Total Size: **72.1 MB (72066218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:896d98292256621016b0190c651b3b2cec79cfacbfe8b3cde4a551382b512a37`
+-	Image ID: `sha256:719a791791860db7e67126710621765c9fa0e39ec90b95369332bb8f43a4f385`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
 ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Thu, 09 Jun 2016 13:46:46 GMT
-ENV GOLANG_VERSION=1.7beta1
-# Thu, 09 Jun 2016 13:46:46 GMT
-ENV GOLANG_SRC_URL=https://golang.org/dl/go1.7beta1.src.tar.gz
-# Thu, 09 Jun 2016 13:46:47 GMT
-ENV GOLANG_SRC_SHA256=a04e99ffd4139e514b91d9acec7ce11f85429a59e8552897e39fb52bcf5e1094
-# Thu, 09 Jun 2016 13:46:47 GMT
+# Fri, 17 Jun 2016 16:48:44 GMT
+ENV GOLANG_VERSION=1.7beta2
+# Fri, 17 Jun 2016 16:48:44 GMT
+ENV GOLANG_SRC_URL=https://golang.org/dl/go1.7beta2.src.tar.gz
+# Fri, 17 Jun 2016 16:48:44 GMT
+ENV GOLANG_SRC_SHA256=88840e78905bdff7c8e408385182b4f77e8bdd062cac5c0c6382630588d426c7
+# Fri, 17 Jun 2016 16:48:45 GMT
 COPY file:b54d7d4313a41e3729d6f4b7aa6e6f33a1e99759cb2a04149fae89f8211c3a65 in /
-# Thu, 09 Jun 2016 13:49:42 GMT
+# Fri, 17 Jun 2016 16:49:59 GMT
 RUN set -ex 	&& apk add --no-cache --virtual .build-deps 		bash 		ca-certificates 		gcc 		musl-dev 		openssl 		go 		&& export GOROOT_BOOTSTRAP="$(go env GOROOT)" 		&& wget -q "$GOLANG_SRC_URL" -O golang.tar.gz 	&& echo "$GOLANG_SRC_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz 	&& cd /usr/local/go/src 	&& patch -p2 -i /no-pic.patch 	&& ./make.bash 		&& rm -rf /*.patch 	&& apk del .build-deps
-# Thu, 09 Jun 2016 13:49:43 GMT
+# Fri, 17 Jun 2016 16:50:00 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:49:43 GMT
+# Fri, 17 Jun 2016 16:50:00 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:49:45 GMT
+# Fri, 17 Jun 2016 16:50:01 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:49:45 GMT
+# Fri, 17 Jun 2016 16:50:02 GMT
 WORKDIR /go
 ```
 
@@ -2241,20 +2241,20 @@ WORKDIR /go
 	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
 		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
 		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:5775b72afe1f2e27f6f2def7427885de2163ec172c0994bac904c9121f9edd09`  
-		Last Modified: Thu, 09 Jun 2016 14:20:04 GMT  
-		Size: 435.0 B
-	-	`sha256:798a1545eed464b615a6dc0ee91461cf2da2c3df4ce5d979f62d032e5f600909`  
-		Last Modified: Thu, 09 Jun 2016 14:20:53 GMT  
-		Size: 69.6 MB (69554222 bytes)
-	-	`sha256:8121fb2da8f976d22369368b89996e5eb864b2d4a997bd0b023d78b8720919a0`  
-		Last Modified: Thu, 09 Jun 2016 14:20:05 GMT  
-		Size: 122.0 B
+	-	`sha256:0ee7ded00733441e7284de71f9fd5cabf8b7ae4697234d5d439bf951a635c75d`  
+		Last Modified: Fri, 17 Jun 2016 16:56:22 GMT  
+		Size: 438.0 B
+	-	`sha256:ae7dd5b80b8a414caa5c084a215fc55d25fce6c502faedbc4f8e7e3f0e9f5818`  
+		Last Modified: Fri, 17 Jun 2016 16:56:45 GMT  
+		Size: 69.8 MB (69755385 bytes)
+	-	`sha256:f1fbbaa9c11d941fb34c3e7c61d4857e749897aff90221cd2e00b5491a2f058d`  
+		Last Modified: Fri, 17 Jun 2016 16:56:22 GMT  
+		Size: 123.0 B
 
 ## `golang:1.7-alpine`
 
 ```console
-$ docker pull golang@sha256:cd70beb1c537ea0ea9352636f3e5e2e385745583a69ca7ddc07a96ff0a4a403e
+$ docker pull golang@sha256:8694e9794d692e83ad222a622783bdfece957bf9cb55846d76f4e07f8470626d
 ```
 
 -	Platforms:
@@ -2264,30 +2264,30 @@ $ docker pull golang@sha256:cd70beb1c537ea0ea9352636f3e5e2e385745583a69ca7ddc07a
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.9 MB (71865051 bytes)**  
+-	Total Size: **72.1 MB (72066218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:896d98292256621016b0190c651b3b2cec79cfacbfe8b3cde4a551382b512a37`
+-	Image ID: `sha256:719a791791860db7e67126710621765c9fa0e39ec90b95369332bb8f43a4f385`
 
 ```dockerfile
 # Wed, 08 Jun 2016 00:48:01 GMT
 ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Thu, 09 Jun 2016 13:46:46 GMT
-ENV GOLANG_VERSION=1.7beta1
-# Thu, 09 Jun 2016 13:46:46 GMT
-ENV GOLANG_SRC_URL=https://golang.org/dl/go1.7beta1.src.tar.gz
-# Thu, 09 Jun 2016 13:46:47 GMT
-ENV GOLANG_SRC_SHA256=a04e99ffd4139e514b91d9acec7ce11f85429a59e8552897e39fb52bcf5e1094
-# Thu, 09 Jun 2016 13:46:47 GMT
+# Fri, 17 Jun 2016 16:48:44 GMT
+ENV GOLANG_VERSION=1.7beta2
+# Fri, 17 Jun 2016 16:48:44 GMT
+ENV GOLANG_SRC_URL=https://golang.org/dl/go1.7beta2.src.tar.gz
+# Fri, 17 Jun 2016 16:48:44 GMT
+ENV GOLANG_SRC_SHA256=88840e78905bdff7c8e408385182b4f77e8bdd062cac5c0c6382630588d426c7
+# Fri, 17 Jun 2016 16:48:45 GMT
 COPY file:b54d7d4313a41e3729d6f4b7aa6e6f33a1e99759cb2a04149fae89f8211c3a65 in /
-# Thu, 09 Jun 2016 13:49:42 GMT
+# Fri, 17 Jun 2016 16:49:59 GMT
 RUN set -ex 	&& apk add --no-cache --virtual .build-deps 		bash 		ca-certificates 		gcc 		musl-dev 		openssl 		go 		&& export GOROOT_BOOTSTRAP="$(go env GOROOT)" 		&& wget -q "$GOLANG_SRC_URL" -O golang.tar.gz 	&& echo "$GOLANG_SRC_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz 	&& cd /usr/local/go/src 	&& patch -p2 -i /no-pic.patch 	&& ./make.bash 		&& rm -rf /*.patch 	&& apk del .build-deps
-# Thu, 09 Jun 2016 13:49:43 GMT
+# Fri, 17 Jun 2016 16:50:00 GMT
 ENV GOPATH=/go
-# Thu, 09 Jun 2016 13:49:43 GMT
+# Fri, 17 Jun 2016 16:50:00 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jun 2016 13:49:45 GMT
+# Fri, 17 Jun 2016 16:50:01 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 09 Jun 2016 13:49:45 GMT
+# Fri, 17 Jun 2016 16:50:02 GMT
 WORKDIR /go
 ```
 
@@ -2295,12 +2295,12 @@ WORKDIR /go
 	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
 		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
 		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:5775b72afe1f2e27f6f2def7427885de2163ec172c0994bac904c9121f9edd09`  
-		Last Modified: Thu, 09 Jun 2016 14:20:04 GMT  
-		Size: 435.0 B
-	-	`sha256:798a1545eed464b615a6dc0ee91461cf2da2c3df4ce5d979f62d032e5f600909`  
-		Last Modified: Thu, 09 Jun 2016 14:20:53 GMT  
-		Size: 69.6 MB (69554222 bytes)
-	-	`sha256:8121fb2da8f976d22369368b89996e5eb864b2d4a997bd0b023d78b8720919a0`  
-		Last Modified: Thu, 09 Jun 2016 14:20:05 GMT  
-		Size: 122.0 B
+	-	`sha256:0ee7ded00733441e7284de71f9fd5cabf8b7ae4697234d5d439bf951a635c75d`  
+		Last Modified: Fri, 17 Jun 2016 16:56:22 GMT  
+		Size: 438.0 B
+	-	`sha256:ae7dd5b80b8a414caa5c084a215fc55d25fce6c502faedbc4f8e7e3f0e9f5818`  
+		Last Modified: Fri, 17 Jun 2016 16:56:45 GMT  
+		Size: 69.8 MB (69755385 bytes)
+	-	`sha256:f1fbbaa9c11d941fb34c3e7c61d4857e749897aff90221cd2e00b5491a2f058d`  
+		Last Modified: Fri, 17 Jun 2016 16:56:22 GMT  
+		Size: 123.0 B
