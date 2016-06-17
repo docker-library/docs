@@ -3,12 +3,12 @@
 # Tags of `kaazing-gateway`
 
 -	[`kaazing-gateway:latest`](#kaazing-gatewaylatest)
--	[`kaazing-gateway:5.0.1.38`](#kaazing-gateway50138)
+-	[`kaazing-gateway:5.1.0`](#kaazing-gateway510)
 
 ## `kaazing-gateway:latest`
 
 ```console
-$ docker pull kaazing-gateway@sha256:fec3d382a31a6dd2037cc002e1db687480bf7d3662c6c900b100245da8a0eb91
+$ docker pull kaazing-gateway@sha256:a3794ad4d72b5763d036186e4845aaa5c41f03091779f6d105628f816c3d700b
 ```
 
 -	Platforms:
@@ -16,277 +16,189 @@ $ docker pull kaazing-gateway@sha256:fec3d382a31a6dd2037cc002e1db687480bf7d3662c
 
 ### `kaazing-gateway:latest` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.7 MB (257690290 bytes)**  
+-	Total Size: **138.2 MB (138193384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:230961bf76848adebc8b7dcf663f970f4a15d43bc1ab96b79120337c9efec424`
+-	Image ID: `sha256:049cb86806cf5ac6eea04ff1d22b45492e5a83012aa84d00a1393c2907fa6c7c`
 -	Default Command: `["gateway.start"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:08:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:12:26 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:12:26 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:12:27 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:12:27 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+# Thu, 09 Jun 2016 22:12:28 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:12:28 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:12:28 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:13:51 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+# Thu, 09 Jun 2016 22:13:54 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 17:32:18 GMT
+# Thu, 16 Jun 2016 23:24:12 GMT
 MAINTAINER Kaazing Docker Maintainers, contact via github issues: https://github.com/kaazing/gateway.docker/issues
-# Tue, 24 May 2016 17:32:21 GMT
+# Thu, 16 Jun 2016 23:24:14 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F8F4B66E022A4668E532DAC03AA0B82C385B4D59
-# Tue, 24 May 2016 17:32:22 GMT
-ENV KAAZING_GATEWAY_VERSION=5.0.1.38
-# Tue, 24 May 2016 17:32:22 GMT
-ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.0.1.38/gateway.distribution-5.0.1.38.tar.gz
-# Tue, 24 May 2016 17:32:23 GMT
+# Thu, 16 Jun 2016 23:24:14 GMT
+ENV KAAZING_GATEWAY_VERSION=5.1.0
+# Thu, 16 Jun 2016 23:24:14 GMT
+ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.1.0/gateway.distribution-5.1.0.tar.gz
+# Thu, 16 Jun 2016 23:24:14 GMT
 WORKDIR /kaazing-gateway
-# Tue, 24 May 2016 17:32:30 GMT
+# Thu, 16 Jun 2016 23:24:21 GMT
 RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL 	&& curl -fSL -o gateway.tar.gz.asc ${KAAZING_GATEWAY_URL}.asc 	&& gpg --verify gateway.tar.gz.asc 	&& tar -xvf gateway.tar.gz --strip-components=1 	&& rm gateway.tar.gz*
-# Tue, 24 May 2016 17:32:31 GMT
+# Thu, 16 Jun 2016 23:24:21 GMT
 ENV GATEWAY_OPTS=-Xmx512m -Djava.security.egd=file:/dev/urandom
-# Tue, 24 May 2016 17:32:32 GMT
+# Thu, 16 Jun 2016 23:24:21 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/kaazing-gateway/bin
-# Tue, 24 May 2016 17:32:33 GMT
+# Thu, 16 Jun 2016 23:24:22 GMT
 EXPOSE 8000/tcp
-# Tue, 24 May 2016 17:32:34 GMT
+# Thu, 16 Jun 2016 23:24:22 GMT
 CMD ["gateway.start"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
+		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
+		Size: 587.3 KB (587338 bytes)
+	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
+		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
 		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:48c7e306e9c60503dd24f7a049d39cebeb093a0c2e02a0c584c9bd7701db36aa`  
-		Last Modified: Tue, 31 May 2016 19:56:29 GMT  
+	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
+		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
+		Size: 242.0 B
+	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
+		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
+		Size: 53.4 MB (53371555 bytes)
+	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
+		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
+		Size: 284.4 KB (284380 bytes)
+	-	`sha256:8cd7ab39d2846ea0223056ed514b08f9c8f6cf71cd3f68a51e2f19122163dd2b`  
+		Last Modified: Thu, 16 Jun 2016 23:24:28 GMT  
 		Size: 5.9 KB (5930 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b6869578afbaaf829d5e204282979e41bf29d70e59c310394c96086e9b177a32`  
-		Last Modified: Tue, 31 May 2016 19:56:17 GMT  
-		Size: 14.4 MB (14436706 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:6c5bb29f71e4f815f41ef504ce717bfda371a514843f4b4a4228b97acfc88125`  
+		Last Modified: Thu, 16 Jun 2016 23:24:28 GMT  
+		Size: 103.0 B
+	-	`sha256:99a7440a43c610c81f6e027f1efabbf963e33cd585e9726fca8b200cd13efcc1`  
+		Last Modified: Thu, 16 Jun 2016 23:24:30 GMT  
+		Size: 14.0 MB (14043862 bytes)
 
-## `kaazing-gateway:5.0.1.38`
+## `kaazing-gateway:5.1.0`
 
 ```console
-$ docker pull kaazing-gateway@sha256:fec3d382a31a6dd2037cc002e1db687480bf7d3662c6c900b100245da8a0eb91
+$ docker pull kaazing-gateway@sha256:a3794ad4d72b5763d036186e4845aaa5c41f03091779f6d105628f816c3d700b
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `kaazing-gateway:5.0.1.38` - linux; amd64
+### `kaazing-gateway:5.1.0` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.7 MB (257690290 bytes)**  
+-	Total Size: **138.2 MB (138193384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:230961bf76848adebc8b7dcf663f970f4a15d43bc1ab96b79120337c9efec424`
+-	Image ID: `sha256:049cb86806cf5ac6eea04ff1d22b45492e5a83012aa84d00a1393c2907fa6c7c`
 -	Default Command: `["gateway.start"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:08:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:12:26 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:12:26 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:12:27 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:12:27 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+# Thu, 09 Jun 2016 22:12:28 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:12:28 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:12:28 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:13:51 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+# Thu, 09 Jun 2016 22:13:54 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 17:32:18 GMT
+# Thu, 16 Jun 2016 23:24:12 GMT
 MAINTAINER Kaazing Docker Maintainers, contact via github issues: https://github.com/kaazing/gateway.docker/issues
-# Tue, 24 May 2016 17:32:21 GMT
+# Thu, 16 Jun 2016 23:24:14 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F8F4B66E022A4668E532DAC03AA0B82C385B4D59
-# Tue, 24 May 2016 17:32:22 GMT
-ENV KAAZING_GATEWAY_VERSION=5.0.1.38
-# Tue, 24 May 2016 17:32:22 GMT
-ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.0.1.38/gateway.distribution-5.0.1.38.tar.gz
-# Tue, 24 May 2016 17:32:23 GMT
+# Thu, 16 Jun 2016 23:24:14 GMT
+ENV KAAZING_GATEWAY_VERSION=5.1.0
+# Thu, 16 Jun 2016 23:24:14 GMT
+ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.1.0/gateway.distribution-5.1.0.tar.gz
+# Thu, 16 Jun 2016 23:24:14 GMT
 WORKDIR /kaazing-gateway
-# Tue, 24 May 2016 17:32:30 GMT
+# Thu, 16 Jun 2016 23:24:21 GMT
 RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL 	&& curl -fSL -o gateway.tar.gz.asc ${KAAZING_GATEWAY_URL}.asc 	&& gpg --verify gateway.tar.gz.asc 	&& tar -xvf gateway.tar.gz --strip-components=1 	&& rm gateway.tar.gz*
-# Tue, 24 May 2016 17:32:31 GMT
+# Thu, 16 Jun 2016 23:24:21 GMT
 ENV GATEWAY_OPTS=-Xmx512m -Djava.security.egd=file:/dev/urandom
-# Tue, 24 May 2016 17:32:32 GMT
+# Thu, 16 Jun 2016 23:24:21 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/kaazing-gateway/bin
-# Tue, 24 May 2016 17:32:33 GMT
+# Thu, 16 Jun 2016 23:24:22 GMT
 EXPOSE 8000/tcp
-# Tue, 24 May 2016 17:32:34 GMT
+# Thu, 16 Jun 2016 23:24:22 GMT
 CMD ["gateway.start"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
+		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
+		Size: 587.3 KB (587338 bytes)
+	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
+		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
 		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:48c7e306e9c60503dd24f7a049d39cebeb093a0c2e02a0c584c9bd7701db36aa`  
-		Last Modified: Tue, 31 May 2016 19:56:29 GMT  
+	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
+		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
+		Size: 242.0 B
+	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
+		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
+		Size: 53.4 MB (53371555 bytes)
+	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
+		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
+		Size: 284.4 KB (284380 bytes)
+	-	`sha256:8cd7ab39d2846ea0223056ed514b08f9c8f6cf71cd3f68a51e2f19122163dd2b`  
+		Last Modified: Thu, 16 Jun 2016 23:24:28 GMT  
 		Size: 5.9 KB (5930 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b6869578afbaaf829d5e204282979e41bf29d70e59c310394c96086e9b177a32`  
-		Last Modified: Tue, 31 May 2016 19:56:17 GMT  
-		Size: 14.4 MB (14436706 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:6c5bb29f71e4f815f41ef504ce717bfda371a514843f4b4a4228b97acfc88125`  
+		Last Modified: Thu, 16 Jun 2016 23:24:28 GMT  
+		Size: 103.0 B
+	-	`sha256:99a7440a43c610c81f6e027f1efabbf963e33cd585e9726fca8b200cd13efcc1`  
+		Last Modified: Thu, 16 Jun 2016 23:24:30 GMT  
+		Size: 14.0 MB (14043862 bytes)
