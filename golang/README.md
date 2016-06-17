@@ -8,12 +8,12 @@
 -	[`1.6.2-onbuild`, `1.6-onbuild`, `1-onbuild`, `onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/onbuild/Dockerfile)
 -	[`1.6.2-wheezy`, `1.6-wheezy`, `1-wheezy`, `wheezy` (*1.6/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/0ce80411b9f41e9c3a21fc0a1bffba6ae761825a/1.6/wheezy/Dockerfile)
 -	[`1.6.2-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/f3768925fd0ebeb966c30bc64206b0e6020de66e/1.6/alpine/Dockerfile)
--	[`1.7beta1`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/golang/blob/2372c8cafe9cc958bade33ad0b8b54de8869c21f/1.7/Dockerfile)
--	[`1.7beta1-onbuild`, `1.7-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/2372c8cafe9cc958bade33ad0b8b54de8869c21f/1.7/onbuild/Dockerfile)
--	[`1.7beta1-wheezy`, `1.7-wheezy` (*1.7/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/2372c8cafe9cc958bade33ad0b8b54de8869c21f/1.7/wheezy/Dockerfile)
--	[`1.7beta1-alpine`, `1.7-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/f3768925fd0ebeb966c30bc64206b0e6020de66e/1.7/alpine/Dockerfile)
+-	[`1.7beta2`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/golang/blob/13b4447729b4367396148cc18745c9901e5fe4a8/1.7/Dockerfile)
+-	[`1.7beta2-onbuild`, `1.7-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/2372c8cafe9cc958bade33ad0b8b54de8869c21f/1.7/onbuild/Dockerfile)
+-	[`1.7beta2-wheezy`, `1.7-wheezy` (*1.7/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/13b4447729b4367396148cc18745c9901e5fe4a8/1.7/wheezy/Dockerfile)
+-	[`1.7beta2-alpine`, `1.7-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/13b4447729b4367396148cc18745c9901e5fe4a8/1.7/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/golang:latest.svg)](https://imagelayers.io/?images=golang:1.5.4,golang:1.5.4-onbuild,golang:1.5.4-wheezy,golang:1.5.4-alpine,golang:1.6.2,golang:1.6.2-onbuild,golang:1.6.2-wheezy,golang:1.6.2-alpine,golang:1.7beta1,golang:1.7beta1-onbuild,golang:1.7beta1-wheezy,golang:1.7beta1-alpine)
+[![](https://badge.imagelayers.io/golang:latest.svg)](https://imagelayers.io/?images=golang:1.5.4,golang:1.5.4-onbuild,golang:1.5.4-wheezy,golang:1.5.4-alpine,golang:1.6.2,golang:1.6.2-onbuild,golang:1.6.2-wheezy,golang:1.6.2-alpine,golang:1.7beta2,golang:1.7beta2-onbuild,golang:1.7beta2-wheezy,golang:1.7beta2-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgolang).
 
