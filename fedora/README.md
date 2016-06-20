@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `24` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/3a14c0a840dceb7865d814dfb4150ef33a982d63/Dockerfile)
--	[`23` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/3677613e2c32eea7f6dc4d5e9a297b7e7f73dc6e/Dockerfile)
+-	[`23` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/ec63b8db44c2d8c97e29faeb55955ca25bd9076e/Dockerfile)
 -	[`22` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/bccd42bf4e9102ef10eff372488167948fdd0430/Dockerfile)
 -	[`21` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/e32493b9601c3535cd6e0d0a8ff61d8fa95afb83/Dockerfile)
 -	[`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/d28b4d3e1c4d613a12701557b0d686c28490af69/Dockerfile)
