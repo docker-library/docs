@@ -173,7 +173,7 @@ $ docker run -d --net=host -p 53:8600/tcp -p 53:8600/udp consul agent -bind=<bri
 Now start another container and point it at Consul's DNS, using the bridge address of the host:
 
 ```console
-$ docker run -i --dns=<bridge ip> -t ubuntu sh -c "apt-get update && apt-get install -y dnsutils && dig consul.service.consul"
+$ docker run -i --dns=<bridge ip> --dns=8.8.8.8 -t ubuntu sh -c "apt-get update && apt-get install -y dnsutils && dig consul.service.consul"
 ...
 ;; ANSWER SECTION:
 consul.service.consul.  0       IN      A       66.175.220.234
