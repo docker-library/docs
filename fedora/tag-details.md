@@ -3,6 +3,7 @@
 # Tags of `fedora`
 
 -	[`fedora:latest`](#fedoralatest)
+-	[`fedora:24`](#fedora24)
 -	[`fedora:23`](#fedora23)
 -	[`fedora:22`](#fedora22)
 -	[`fedora:21`](#fedora21)
@@ -13,7 +14,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:fdf695e9003ee97fcec524f3f6c5aa70a32b256eab051a6f1cb621b7cf77352a
+$ docker pull fedora@sha256:a97914edb6ba15deb5c5acf87bd6bd5b6b0408c96f48a5cbd450b5b04509bb7d
 ```
 
 -	Platforms:
@@ -23,21 +24,50 @@ $ docker pull fedora@sha256:fdf695e9003ee97fcec524f3f6c5aa70a32b256eab051a6f1cb6
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.7 MB (76655139 bytes)**  
+-	Total Size: **72.9 MB (72873635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a20665eb1fe2912accb3d5dadaed360430df0d1aa46874875886947d61d3d4ee`
+-	Image ID: `sha256:f9873d530588316311ac1d3d15e95487b947f5d8b560e72bdd6eb73a7831b2c4`
 
 ```dockerfile
-# Fri, 10 Jun 2016 18:44:03 GMT
-MAINTAINER Patrick Uiterwijk <patrick@puiterwijk.org>
-# Fri, 10 Jun 2016 18:44:31 GMT
-ADD file:293a6e463aa402bb8f80eb5cfc937f375cedc6843abaeb9eccfe3923bb3fc80b in /
+# Fri, 10 Jun 2016 18:44:36 GMT
+MAINTAINER Adam Miller <maxamillion@fedoraproject.org>
+# Mon, 20 Jun 2016 19:33:43 GMT
+ADD file:eca70e370936ac969828ca2923984000e0d0188655feb231c3df313a35fef2f6 in /
 ```
 
 -	Layers:
-	-	`sha256:8b53fe19c255ee721e5b2441b8469fc01a6324e8564de89bf8485387b34f95e6`  
-		Last Modified: Mon, 13 Jun 2016 16:33:59 GMT  
-		Size: 76.7 MB (76655139 bytes)
+	-	`sha256:7c91a140e7a1025c3bc3aace4c80c0d9933ac4ee24b8630a6b0b5d8b9ce6b9d4`  
+		Last Modified: Mon, 20 Jun 2016 19:34:10 GMT  
+		Size: 72.9 MB (72873635 bytes)
+
+## `fedora:24`
+
+```console
+$ docker pull fedora@sha256:a97914edb6ba15deb5c5acf87bd6bd5b6b0408c96f48a5cbd450b5b04509bb7d
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `fedora:24` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **72.9 MB (72873635 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f9873d530588316311ac1d3d15e95487b947f5d8b560e72bdd6eb73a7831b2c4`
+
+```dockerfile
+# Fri, 10 Jun 2016 18:44:36 GMT
+MAINTAINER Adam Miller <maxamillion@fedoraproject.org>
+# Mon, 20 Jun 2016 19:33:43 GMT
+ADD file:eca70e370936ac969828ca2923984000e0d0188655feb231c3df313a35fef2f6 in /
+```
+
+-	Layers:
+	-	`sha256:7c91a140e7a1025c3bc3aace4c80c0d9933ac4ee24b8630a6b0b5d8b9ce6b9d4`  
+		Last Modified: Mon, 20 Jun 2016 19:34:10 GMT  
+		Size: 72.9 MB (72873635 bytes)
 
 ## `fedora:23`
 
