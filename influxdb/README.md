@@ -44,16 +44,14 @@ $ docker run -p 8083:8083 -p 8086:8086 \
 
 ### Exposed Ports
 
-The following ports are important and will be automatically exposed when using `docker run -P`.
+The following ports are important and are used by InfluxDB.
 
--	8083 Admin interface port
--	8086 HTTP API PORT
+-	8086 HTTP API port
+-	8083 Administrator interface port
 
-Other important ports that aren't exposed by default:
+The HTTP API port will be automatically exposed when using `docker run -P`.
 
--	8091 Meta service port
-
-These two ports do not need to be exposed in a single server configuration.
+The administrator interface is not automatically exposed when using `docker run -P`. While the administrator interface is run by default, the adminstrator interface requires that the web browser have access to InfluxDB on the same port in the container as from the web browser. Since `-P` exposes the HTTP port to the host on a random port, the administrator interface is not compatible with this setting.
 
 Find more about API Endpoints & Ports [here](https://docs.influxdata.com/influxdb/latest/concepts/api/).
 
@@ -137,9 +135,7 @@ At the moment, you cannot use `docker exec` to run the influx client since `dock
 
 Navigate to [localhost:8083](http://localhost:8083) with your browser while running the container.
 
-See more about using the web admin [here](https://docs.influxdata.com/influxdb/latest/tools/web_admin/).
-
-The web administrator interface requires that the web browser have access to InfluxDB. You must expose the InfluxDB HTTP port as the same port when using the admin interface.
+See more about using the web administrator interface [here](https://docs.influxdata.com/influxdb/latest/tools/web_admin/).
 
 # License
 
