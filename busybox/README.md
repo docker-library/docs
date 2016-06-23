@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.24.2-glibc`, `1.24-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/729aa3010c3ee9088e74647d9f04a4c338fa86c4/glibc/Dockerfile)
--	[`1.24.2-musl`, `1.24-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/729aa3010c3ee9088e74647d9f04a4c338fa86c4/musl/Dockerfile)
--	[`1.24.2-uclibc`, `1.24-uclibc`, `1-uclibc`, `uclibc`, `1.24.2`, `1.24`, `1`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/729aa3010c3ee9088e74647d9f04a4c338fa86c4/uclibc/Dockerfile)
+-	[`1.25.0-glibc`, `1.25-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/a0558a9006ce0dd6f6ec5d56cfd3f32ebeeb815f/glibc/Dockerfile)
+-	[`1.25.0-musl`, `1.25-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/a0558a9006ce0dd6f6ec5d56cfd3f32ebeeb815f/musl/Dockerfile)
+-	[`1.25.0-uclibc`, `1.25-uclibc`, `1-uclibc`, `uclibc`, `1.25.0`, `1.25`, `1`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/a0558a9006ce0dd6f6ec5d56cfd3f32ebeeb815f/uclibc/Dockerfile)
 
-[![](https://badge.imagelayers.io/busybox:latest.svg)](https://imagelayers.io/?images=busybox:1.24.2-glibc,busybox:1.24.2-musl,busybox:1.24.2-uclibc)
+[![](https://badge.imagelayers.io/busybox:latest.svg)](https://imagelayers.io/?images=busybox:1.25.0-glibc,busybox:1.25.0-musl,busybox:1.25.0-uclibc)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/busybox`)](https://github.com/docker-library/official-images/blob/master/library/busybox). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbusybox).
 
