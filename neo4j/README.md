@@ -2,10 +2,10 @@
 
 -	[`2.3.3`, `2.3` (*2.3.3/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/89955a10604656aa8def4e3d658cc870818d7535/2.3.3/Dockerfile)
 -	[`2.3.3-enterprise`, `2.3-enterprise` (*2.3.3-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/89955a10604656aa8def4e3d658cc870818d7535/2.3.3-enterprise/Dockerfile)
--	[`3.0.2`, `3.0`, `latest` (*3.0.2/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/34173c9954c660a67042fbf617aeedae397e0445/3.0.2/Dockerfile)
--	[`3.0.2-enterprise`, `3.0-enterprise`, `enterprise` (*3.0.2-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/34173c9954c660a67042fbf617aeedae397e0445/3.0.2-enterprise/Dockerfile)
+-	[`3.0.3`, `3.0`, `latest` (*3.0.3-community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/860588baa6a9e97c7d10bdbc0084e4c59f3886a6/3.0.3-community/Dockerfile)
+-	[`3.0.3-enterprise`, `3.0-enterprise`, `enterprise` (*3.0.3-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/860588baa6a9e97c7d10bdbc0084e4c59f3886a6/3.0.3-enterprise/Dockerfile)
 
-[![](https://badge.imagelayers.io/neo4j:latest.svg)](https://imagelayers.io/?images=neo4j:2.3.3,neo4j:2.3.3-enterprise,neo4j:3.0.2,neo4j:3.0.2-enterprise)
+[![](https://badge.imagelayers.io/neo4j:latest.svg)](https://imagelayers.io/?images=neo4j:2.3.3,neo4j:2.3.3-enterprise,neo4j:3.0.3,neo4j:3.0.3-enterprise)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/neo4j`)](https://github.com/docker-library/official-images/blob/master/library/neo4j). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneo4j).
 
