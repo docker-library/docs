@@ -462,7 +462,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:mainline-alpine`
 
 ```console
-$ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec06520285d420924
+$ docker pull nginx@sha256:23f809e7fd5952e7d5be065b4d3643fbbceccd349d537b62a123ef2201bc886f
 ```
 
 -	Platforms:
@@ -470,72 +470,54 @@ $ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec0652
 
 ### `nginx:mainline-alpine` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19095162 bytes)**  
+-	Total Size: **19.1 MB (19125261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
+-	Image ID: `sha256:5ad9802b809e076526eb457c3a5794022e321a9a6e7e0a349ae5720056ab871b`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:31:14 GMT
+# Thu, 23 Jun 2016 19:55:12 GMT
+ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
+# Thu, 23 Jun 2016 20:10:03 GMT
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
-# Wed, 01 Jun 2016 18:04:02 GMT
+# Thu, 23 Jun 2016 20:10:03 GMT
 ENV NGINX_VERSION=1.11.1
-# Wed, 01 Jun 2016 18:04:03 GMT
+# Thu, 23 Jun 2016 20:10:04 GMT
 ENV GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8
-# Wed, 01 Jun 2016 18:04:04 GMT
+# Thu, 23 Jun 2016 20:10:04 GMT
 ENV CONFIG=	--prefix=/etc/nginx 	--sbin-path=/usr/sbin/nginx 	--modules-path=/usr/lib/nginx/modules 	--conf-path=/etc/nginx/nginx.conf 	--error-log-path=/var/log/nginx/error.log 	--http-log-path=/var/log/nginx/access.log 	--pid-path=/var/run/nginx.pid 	--lock-path=/var/run/nginx.lock 	--http-client-body-temp-path=/var/cache/nginx/client_temp 	--http-proxy-temp-path=/var/cache/nginx/proxy_temp 	--http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp 	--http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp 	--http-scgi-temp-path=/var/cache/nginx/scgi_temp 	--user=nginx 	--group=nginx 	--with-http_ssl_module 	--with-http_realip_module 	--with-http_addition_module 	--with-http_sub_module 	--with-http_dav_module 	--with-http_flv_module 	--with-http_mp4_module 	--with-http_gunzip_module 	--with-http_gzip_static_module 	--with-http_random_index_module 	--with-http_secure_link_module 	--with-http_stub_status_module 	--with-http_auth_request_module 	--with-http_xslt_module=dynamic 	--with-http_image_filter_module=dynamic 	--with-http_geoip_module=dynamic 	--with-http_perl_module=dynamic 	--with-threads 	--with-stream 	--with-stream_ssl_module 	--with-http_slice_module 	--with-mail 	--with-mail_ssl_module 	--with-file-aio 	--with-http_v2_module 	--with-ipv6 	
-# Wed, 01 Jun 2016 18:06:16 GMT
+# Thu, 23 Jun 2016 20:12:41 GMT
 RUN addgroup -S nginx 	&& adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx 	&& apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		make 		openssl-dev 		pcre-dev 		zlib-dev 		linux-headers 		curl 		gnupg 		libxslt-dev 		gd-dev 		geoip-dev 		perl-dev 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz -o nginx.tar.gz 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz.asc  -o nginx.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEYS" 	&& gpg --batch --verify nginx.tar.gz.asc nginx.tar.gz 	&& rm -r "$GNUPGHOME" nginx.tar.gz.asc 	&& mkdir -p /usr/src 	&& tar -zxC /usr/src -f nginx.tar.gz 	&& rm nginx.tar.gz 	&& cd /usr/src/nginx-$NGINX_VERSION 	&& ./configure $CONFIG --with-debug 	&& make 	&& mv objs/nginx objs/nginx-debug 	&& mv objs/ngx_http_xslt_filter_module.so objs/ngx_http_xslt_filter_module-debug.so 	&& mv objs/ngx_http_image_filter_module.so objs/ngx_http_image_filter_module-debug.so 	&& mv objs/ngx_http_geoip_module.so objs/ngx_http_geoip_module-debug.so 	&& mv objs/ngx_http_perl_module.so objs/ngx_http_perl_module-debug.so 	&& ./configure $CONFIG 	&& make 	&& make install 	&& rm -rf /etc/nginx/html/ 	&& mkdir /etc/nginx/conf.d/ 	&& mkdir -p /usr/share/nginx/html/ 	&& install -m644 html/index.html /usr/share/nginx/html/ 	&& install -m644 html/50x.html /usr/share/nginx/html/ 	&& install -m755 objs/nginx-debug /usr/sbin/nginx-debug 	&& install -m755 objs/ngx_http_xslt_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_xslt_filter_module-debug.so 	&& install -m755 objs/ngx_http_image_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_image_filter_module-debug.so 	&& install -m755 objs/ngx_http_geoip_module-debug.so /usr/lib/nginx/modules/ngx_http_geoip_module-debug.so 	&& install -m755 objs/ngx_http_perl_module-debug.so /usr/lib/nginx/modules/ngx_http_perl_module-debug.so 	&& ln -s ../../usr/lib/nginx/modules /etc/nginx/modules 	&& strip /usr/sbin/nginx* 	&& strip /usr/lib/nginx/modules/*.so 	&& runDeps="$( 		scanelf --needed --nobanner /usr/sbin/nginx /usr/lib/nginx/modules/*.so 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .nginx-rundeps $runDeps 	&& apk del .build-deps 	&& rm -rf /usr/src/nginx-$NGINX_VERSION 	&& apk add --no-cache gettext 		&& ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Wed, 01 Jun 2016 18:06:18 GMT
-COPY file:93c4b3c3de478d88b5e6fb3638f12c5a1e1552f3b647577d6379f12822c45034 in /etc/nginx/nginx.conf
-# Wed, 01 Jun 2016 18:06:19 GMT
-COPY file:6df18cb2c6b42e50f260d86a9d6c1e35ff154ce99f88b071f0fb6984ca47321c in /etc/nginx/conf.d/default.conf
-# Wed, 01 Jun 2016 18:06:20 GMT
+# Thu, 23 Jun 2016 20:12:42 GMT
+COPY file:af94db45bb7e4b8ff4e699f1ff6f41c348f9876073ad91d6e803070415f8d9ce in /etc/nginx/nginx.conf
+# Thu, 23 Jun 2016 20:12:43 GMT
+COPY file:d15ceb73c6ea776c299822265ed38cd2fd8a78804f4f4889094d1dd1e292984b in /etc/nginx/conf.d/default.conf
+# Thu, 23 Jun 2016 20:12:43 GMT
 EXPOSE 443/tcp 80/tcp
-# Wed, 01 Jun 2016 18:06:21 GMT
+# Thu, 23 Jun 2016 20:12:44 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
-		Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
-		Size: 16.8 MB (16773633 bytes)
-	-	`sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
-		Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
-		Size: 493.0 B
-	-	`sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
-		Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
-		Size: 632.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
+		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
+		Size: 2.3 MB (2320188 bytes)
+	-	`sha256:8380043c1909a841f90a5d44404d88c2b37e68f6febd84f8cba2a554de5216bc`  
+		Last Modified: Thu, 23 Jun 2016 20:12:57 GMT  
+		Size: 16.8 MB (16803957 bytes)
+	-	`sha256:bc193245541a40d26789ae0cef75182d60ab285d239c27ae3b91c6aac86858e6`  
+		Last Modified: Thu, 23 Jun 2016 20:12:50 GMT  
+		Size: 490.0 B
+	-	`sha256:f6058f41c33ea26b406ceb7c5c5c1b2e3c32fc0a57da3978977a91ef2895eedc`  
+		Last Modified: Thu, 23 Jun 2016 20:12:51 GMT  
+		Size: 626.0 B
 
 ## `nginx:alpine`
 
 ```console
-$ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec06520285d420924
+$ docker pull nginx@sha256:23f809e7fd5952e7d5be065b4d3643fbbceccd349d537b62a123ef2201bc886f
 ```
 
 -	Platforms:
@@ -543,72 +525,54 @@ $ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec0652
 
 ### `nginx:alpine` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19095162 bytes)**  
+-	Total Size: **19.1 MB (19125261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
+-	Image ID: `sha256:5ad9802b809e076526eb457c3a5794022e321a9a6e7e0a349ae5720056ab871b`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:31:14 GMT
+# Thu, 23 Jun 2016 19:55:12 GMT
+ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
+# Thu, 23 Jun 2016 20:10:03 GMT
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
-# Wed, 01 Jun 2016 18:04:02 GMT
+# Thu, 23 Jun 2016 20:10:03 GMT
 ENV NGINX_VERSION=1.11.1
-# Wed, 01 Jun 2016 18:04:03 GMT
+# Thu, 23 Jun 2016 20:10:04 GMT
 ENV GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8
-# Wed, 01 Jun 2016 18:04:04 GMT
+# Thu, 23 Jun 2016 20:10:04 GMT
 ENV CONFIG=	--prefix=/etc/nginx 	--sbin-path=/usr/sbin/nginx 	--modules-path=/usr/lib/nginx/modules 	--conf-path=/etc/nginx/nginx.conf 	--error-log-path=/var/log/nginx/error.log 	--http-log-path=/var/log/nginx/access.log 	--pid-path=/var/run/nginx.pid 	--lock-path=/var/run/nginx.lock 	--http-client-body-temp-path=/var/cache/nginx/client_temp 	--http-proxy-temp-path=/var/cache/nginx/proxy_temp 	--http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp 	--http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp 	--http-scgi-temp-path=/var/cache/nginx/scgi_temp 	--user=nginx 	--group=nginx 	--with-http_ssl_module 	--with-http_realip_module 	--with-http_addition_module 	--with-http_sub_module 	--with-http_dav_module 	--with-http_flv_module 	--with-http_mp4_module 	--with-http_gunzip_module 	--with-http_gzip_static_module 	--with-http_random_index_module 	--with-http_secure_link_module 	--with-http_stub_status_module 	--with-http_auth_request_module 	--with-http_xslt_module=dynamic 	--with-http_image_filter_module=dynamic 	--with-http_geoip_module=dynamic 	--with-http_perl_module=dynamic 	--with-threads 	--with-stream 	--with-stream_ssl_module 	--with-http_slice_module 	--with-mail 	--with-mail_ssl_module 	--with-file-aio 	--with-http_v2_module 	--with-ipv6 	
-# Wed, 01 Jun 2016 18:06:16 GMT
+# Thu, 23 Jun 2016 20:12:41 GMT
 RUN addgroup -S nginx 	&& adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx 	&& apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		make 		openssl-dev 		pcre-dev 		zlib-dev 		linux-headers 		curl 		gnupg 		libxslt-dev 		gd-dev 		geoip-dev 		perl-dev 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz -o nginx.tar.gz 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz.asc  -o nginx.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEYS" 	&& gpg --batch --verify nginx.tar.gz.asc nginx.tar.gz 	&& rm -r "$GNUPGHOME" nginx.tar.gz.asc 	&& mkdir -p /usr/src 	&& tar -zxC /usr/src -f nginx.tar.gz 	&& rm nginx.tar.gz 	&& cd /usr/src/nginx-$NGINX_VERSION 	&& ./configure $CONFIG --with-debug 	&& make 	&& mv objs/nginx objs/nginx-debug 	&& mv objs/ngx_http_xslt_filter_module.so objs/ngx_http_xslt_filter_module-debug.so 	&& mv objs/ngx_http_image_filter_module.so objs/ngx_http_image_filter_module-debug.so 	&& mv objs/ngx_http_geoip_module.so objs/ngx_http_geoip_module-debug.so 	&& mv objs/ngx_http_perl_module.so objs/ngx_http_perl_module-debug.so 	&& ./configure $CONFIG 	&& make 	&& make install 	&& rm -rf /etc/nginx/html/ 	&& mkdir /etc/nginx/conf.d/ 	&& mkdir -p /usr/share/nginx/html/ 	&& install -m644 html/index.html /usr/share/nginx/html/ 	&& install -m644 html/50x.html /usr/share/nginx/html/ 	&& install -m755 objs/nginx-debug /usr/sbin/nginx-debug 	&& install -m755 objs/ngx_http_xslt_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_xslt_filter_module-debug.so 	&& install -m755 objs/ngx_http_image_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_image_filter_module-debug.so 	&& install -m755 objs/ngx_http_geoip_module-debug.so /usr/lib/nginx/modules/ngx_http_geoip_module-debug.so 	&& install -m755 objs/ngx_http_perl_module-debug.so /usr/lib/nginx/modules/ngx_http_perl_module-debug.so 	&& ln -s ../../usr/lib/nginx/modules /etc/nginx/modules 	&& strip /usr/sbin/nginx* 	&& strip /usr/lib/nginx/modules/*.so 	&& runDeps="$( 		scanelf --needed --nobanner /usr/sbin/nginx /usr/lib/nginx/modules/*.so 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .nginx-rundeps $runDeps 	&& apk del .build-deps 	&& rm -rf /usr/src/nginx-$NGINX_VERSION 	&& apk add --no-cache gettext 		&& ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Wed, 01 Jun 2016 18:06:18 GMT
-COPY file:93c4b3c3de478d88b5e6fb3638f12c5a1e1552f3b647577d6379f12822c45034 in /etc/nginx/nginx.conf
-# Wed, 01 Jun 2016 18:06:19 GMT
-COPY file:6df18cb2c6b42e50f260d86a9d6c1e35ff154ce99f88b071f0fb6984ca47321c in /etc/nginx/conf.d/default.conf
-# Wed, 01 Jun 2016 18:06:20 GMT
+# Thu, 23 Jun 2016 20:12:42 GMT
+COPY file:af94db45bb7e4b8ff4e699f1ff6f41c348f9876073ad91d6e803070415f8d9ce in /etc/nginx/nginx.conf
+# Thu, 23 Jun 2016 20:12:43 GMT
+COPY file:d15ceb73c6ea776c299822265ed38cd2fd8a78804f4f4889094d1dd1e292984b in /etc/nginx/conf.d/default.conf
+# Thu, 23 Jun 2016 20:12:43 GMT
 EXPOSE 443/tcp 80/tcp
-# Wed, 01 Jun 2016 18:06:21 GMT
+# Thu, 23 Jun 2016 20:12:44 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
-		Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
-		Size: 16.8 MB (16773633 bytes)
-	-	`sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
-		Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
-		Size: 493.0 B
-	-	`sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
-		Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
-		Size: 632.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
+		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
+		Size: 2.3 MB (2320188 bytes)
+	-	`sha256:8380043c1909a841f90a5d44404d88c2b37e68f6febd84f8cba2a554de5216bc`  
+		Last Modified: Thu, 23 Jun 2016 20:12:57 GMT  
+		Size: 16.8 MB (16803957 bytes)
+	-	`sha256:bc193245541a40d26789ae0cef75182d60ab285d239c27ae3b91c6aac86858e6`  
+		Last Modified: Thu, 23 Jun 2016 20:12:50 GMT  
+		Size: 490.0 B
+	-	`sha256:f6058f41c33ea26b406ceb7c5c5c1b2e3c32fc0a57da3978977a91ef2895eedc`  
+		Last Modified: Thu, 23 Jun 2016 20:12:51 GMT  
+		Size: 626.0 B
 
 ## `nginx:1-alpine`
 
 ```console
-$ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec06520285d420924
+$ docker pull nginx@sha256:23f809e7fd5952e7d5be065b4d3643fbbceccd349d537b62a123ef2201bc886f
 ```
 
 -	Platforms:
@@ -616,72 +580,54 @@ $ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec0652
 
 ### `nginx:1-alpine` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19095162 bytes)**  
+-	Total Size: **19.1 MB (19125261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
+-	Image ID: `sha256:5ad9802b809e076526eb457c3a5794022e321a9a6e7e0a349ae5720056ab871b`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:31:14 GMT
+# Thu, 23 Jun 2016 19:55:12 GMT
+ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
+# Thu, 23 Jun 2016 20:10:03 GMT
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
-# Wed, 01 Jun 2016 18:04:02 GMT
+# Thu, 23 Jun 2016 20:10:03 GMT
 ENV NGINX_VERSION=1.11.1
-# Wed, 01 Jun 2016 18:04:03 GMT
+# Thu, 23 Jun 2016 20:10:04 GMT
 ENV GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8
-# Wed, 01 Jun 2016 18:04:04 GMT
+# Thu, 23 Jun 2016 20:10:04 GMT
 ENV CONFIG=	--prefix=/etc/nginx 	--sbin-path=/usr/sbin/nginx 	--modules-path=/usr/lib/nginx/modules 	--conf-path=/etc/nginx/nginx.conf 	--error-log-path=/var/log/nginx/error.log 	--http-log-path=/var/log/nginx/access.log 	--pid-path=/var/run/nginx.pid 	--lock-path=/var/run/nginx.lock 	--http-client-body-temp-path=/var/cache/nginx/client_temp 	--http-proxy-temp-path=/var/cache/nginx/proxy_temp 	--http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp 	--http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp 	--http-scgi-temp-path=/var/cache/nginx/scgi_temp 	--user=nginx 	--group=nginx 	--with-http_ssl_module 	--with-http_realip_module 	--with-http_addition_module 	--with-http_sub_module 	--with-http_dav_module 	--with-http_flv_module 	--with-http_mp4_module 	--with-http_gunzip_module 	--with-http_gzip_static_module 	--with-http_random_index_module 	--with-http_secure_link_module 	--with-http_stub_status_module 	--with-http_auth_request_module 	--with-http_xslt_module=dynamic 	--with-http_image_filter_module=dynamic 	--with-http_geoip_module=dynamic 	--with-http_perl_module=dynamic 	--with-threads 	--with-stream 	--with-stream_ssl_module 	--with-http_slice_module 	--with-mail 	--with-mail_ssl_module 	--with-file-aio 	--with-http_v2_module 	--with-ipv6 	
-# Wed, 01 Jun 2016 18:06:16 GMT
+# Thu, 23 Jun 2016 20:12:41 GMT
 RUN addgroup -S nginx 	&& adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx 	&& apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		make 		openssl-dev 		pcre-dev 		zlib-dev 		linux-headers 		curl 		gnupg 		libxslt-dev 		gd-dev 		geoip-dev 		perl-dev 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz -o nginx.tar.gz 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz.asc  -o nginx.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEYS" 	&& gpg --batch --verify nginx.tar.gz.asc nginx.tar.gz 	&& rm -r "$GNUPGHOME" nginx.tar.gz.asc 	&& mkdir -p /usr/src 	&& tar -zxC /usr/src -f nginx.tar.gz 	&& rm nginx.tar.gz 	&& cd /usr/src/nginx-$NGINX_VERSION 	&& ./configure $CONFIG --with-debug 	&& make 	&& mv objs/nginx objs/nginx-debug 	&& mv objs/ngx_http_xslt_filter_module.so objs/ngx_http_xslt_filter_module-debug.so 	&& mv objs/ngx_http_image_filter_module.so objs/ngx_http_image_filter_module-debug.so 	&& mv objs/ngx_http_geoip_module.so objs/ngx_http_geoip_module-debug.so 	&& mv objs/ngx_http_perl_module.so objs/ngx_http_perl_module-debug.so 	&& ./configure $CONFIG 	&& make 	&& make install 	&& rm -rf /etc/nginx/html/ 	&& mkdir /etc/nginx/conf.d/ 	&& mkdir -p /usr/share/nginx/html/ 	&& install -m644 html/index.html /usr/share/nginx/html/ 	&& install -m644 html/50x.html /usr/share/nginx/html/ 	&& install -m755 objs/nginx-debug /usr/sbin/nginx-debug 	&& install -m755 objs/ngx_http_xslt_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_xslt_filter_module-debug.so 	&& install -m755 objs/ngx_http_image_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_image_filter_module-debug.so 	&& install -m755 objs/ngx_http_geoip_module-debug.so /usr/lib/nginx/modules/ngx_http_geoip_module-debug.so 	&& install -m755 objs/ngx_http_perl_module-debug.so /usr/lib/nginx/modules/ngx_http_perl_module-debug.so 	&& ln -s ../../usr/lib/nginx/modules /etc/nginx/modules 	&& strip /usr/sbin/nginx* 	&& strip /usr/lib/nginx/modules/*.so 	&& runDeps="$( 		scanelf --needed --nobanner /usr/sbin/nginx /usr/lib/nginx/modules/*.so 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .nginx-rundeps $runDeps 	&& apk del .build-deps 	&& rm -rf /usr/src/nginx-$NGINX_VERSION 	&& apk add --no-cache gettext 		&& ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Wed, 01 Jun 2016 18:06:18 GMT
-COPY file:93c4b3c3de478d88b5e6fb3638f12c5a1e1552f3b647577d6379f12822c45034 in /etc/nginx/nginx.conf
-# Wed, 01 Jun 2016 18:06:19 GMT
-COPY file:6df18cb2c6b42e50f260d86a9d6c1e35ff154ce99f88b071f0fb6984ca47321c in /etc/nginx/conf.d/default.conf
-# Wed, 01 Jun 2016 18:06:20 GMT
+# Thu, 23 Jun 2016 20:12:42 GMT
+COPY file:af94db45bb7e4b8ff4e699f1ff6f41c348f9876073ad91d6e803070415f8d9ce in /etc/nginx/nginx.conf
+# Thu, 23 Jun 2016 20:12:43 GMT
+COPY file:d15ceb73c6ea776c299822265ed38cd2fd8a78804f4f4889094d1dd1e292984b in /etc/nginx/conf.d/default.conf
+# Thu, 23 Jun 2016 20:12:43 GMT
 EXPOSE 443/tcp 80/tcp
-# Wed, 01 Jun 2016 18:06:21 GMT
+# Thu, 23 Jun 2016 20:12:44 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
-		Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
-		Size: 16.8 MB (16773633 bytes)
-	-	`sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
-		Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
-		Size: 493.0 B
-	-	`sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
-		Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
-		Size: 632.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
+		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
+		Size: 2.3 MB (2320188 bytes)
+	-	`sha256:8380043c1909a841f90a5d44404d88c2b37e68f6febd84f8cba2a554de5216bc`  
+		Last Modified: Thu, 23 Jun 2016 20:12:57 GMT  
+		Size: 16.8 MB (16803957 bytes)
+	-	`sha256:bc193245541a40d26789ae0cef75182d60ab285d239c27ae3b91c6aac86858e6`  
+		Last Modified: Thu, 23 Jun 2016 20:12:50 GMT  
+		Size: 490.0 B
+	-	`sha256:f6058f41c33ea26b406ceb7c5c5c1b2e3c32fc0a57da3978977a91ef2895eedc`  
+		Last Modified: Thu, 23 Jun 2016 20:12:51 GMT  
+		Size: 626.0 B
 
 ## `nginx:1.11-alpine`
 
 ```console
-$ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec06520285d420924
+$ docker pull nginx@sha256:23f809e7fd5952e7d5be065b4d3643fbbceccd349d537b62a123ef2201bc886f
 ```
 
 -	Platforms:
@@ -689,72 +635,54 @@ $ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec0652
 
 ### `nginx:1.11-alpine` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19095162 bytes)**  
+-	Total Size: **19.1 MB (19125261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
+-	Image ID: `sha256:5ad9802b809e076526eb457c3a5794022e321a9a6e7e0a349ae5720056ab871b`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:31:14 GMT
+# Thu, 23 Jun 2016 19:55:12 GMT
+ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
+# Thu, 23 Jun 2016 20:10:03 GMT
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
-# Wed, 01 Jun 2016 18:04:02 GMT
+# Thu, 23 Jun 2016 20:10:03 GMT
 ENV NGINX_VERSION=1.11.1
-# Wed, 01 Jun 2016 18:04:03 GMT
+# Thu, 23 Jun 2016 20:10:04 GMT
 ENV GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8
-# Wed, 01 Jun 2016 18:04:04 GMT
+# Thu, 23 Jun 2016 20:10:04 GMT
 ENV CONFIG=	--prefix=/etc/nginx 	--sbin-path=/usr/sbin/nginx 	--modules-path=/usr/lib/nginx/modules 	--conf-path=/etc/nginx/nginx.conf 	--error-log-path=/var/log/nginx/error.log 	--http-log-path=/var/log/nginx/access.log 	--pid-path=/var/run/nginx.pid 	--lock-path=/var/run/nginx.lock 	--http-client-body-temp-path=/var/cache/nginx/client_temp 	--http-proxy-temp-path=/var/cache/nginx/proxy_temp 	--http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp 	--http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp 	--http-scgi-temp-path=/var/cache/nginx/scgi_temp 	--user=nginx 	--group=nginx 	--with-http_ssl_module 	--with-http_realip_module 	--with-http_addition_module 	--with-http_sub_module 	--with-http_dav_module 	--with-http_flv_module 	--with-http_mp4_module 	--with-http_gunzip_module 	--with-http_gzip_static_module 	--with-http_random_index_module 	--with-http_secure_link_module 	--with-http_stub_status_module 	--with-http_auth_request_module 	--with-http_xslt_module=dynamic 	--with-http_image_filter_module=dynamic 	--with-http_geoip_module=dynamic 	--with-http_perl_module=dynamic 	--with-threads 	--with-stream 	--with-stream_ssl_module 	--with-http_slice_module 	--with-mail 	--with-mail_ssl_module 	--with-file-aio 	--with-http_v2_module 	--with-ipv6 	
-# Wed, 01 Jun 2016 18:06:16 GMT
+# Thu, 23 Jun 2016 20:12:41 GMT
 RUN addgroup -S nginx 	&& adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx 	&& apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		make 		openssl-dev 		pcre-dev 		zlib-dev 		linux-headers 		curl 		gnupg 		libxslt-dev 		gd-dev 		geoip-dev 		perl-dev 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz -o nginx.tar.gz 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz.asc  -o nginx.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEYS" 	&& gpg --batch --verify nginx.tar.gz.asc nginx.tar.gz 	&& rm -r "$GNUPGHOME" nginx.tar.gz.asc 	&& mkdir -p /usr/src 	&& tar -zxC /usr/src -f nginx.tar.gz 	&& rm nginx.tar.gz 	&& cd /usr/src/nginx-$NGINX_VERSION 	&& ./configure $CONFIG --with-debug 	&& make 	&& mv objs/nginx objs/nginx-debug 	&& mv objs/ngx_http_xslt_filter_module.so objs/ngx_http_xslt_filter_module-debug.so 	&& mv objs/ngx_http_image_filter_module.so objs/ngx_http_image_filter_module-debug.so 	&& mv objs/ngx_http_geoip_module.so objs/ngx_http_geoip_module-debug.so 	&& mv objs/ngx_http_perl_module.so objs/ngx_http_perl_module-debug.so 	&& ./configure $CONFIG 	&& make 	&& make install 	&& rm -rf /etc/nginx/html/ 	&& mkdir /etc/nginx/conf.d/ 	&& mkdir -p /usr/share/nginx/html/ 	&& install -m644 html/index.html /usr/share/nginx/html/ 	&& install -m644 html/50x.html /usr/share/nginx/html/ 	&& install -m755 objs/nginx-debug /usr/sbin/nginx-debug 	&& install -m755 objs/ngx_http_xslt_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_xslt_filter_module-debug.so 	&& install -m755 objs/ngx_http_image_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_image_filter_module-debug.so 	&& install -m755 objs/ngx_http_geoip_module-debug.so /usr/lib/nginx/modules/ngx_http_geoip_module-debug.so 	&& install -m755 objs/ngx_http_perl_module-debug.so /usr/lib/nginx/modules/ngx_http_perl_module-debug.so 	&& ln -s ../../usr/lib/nginx/modules /etc/nginx/modules 	&& strip /usr/sbin/nginx* 	&& strip /usr/lib/nginx/modules/*.so 	&& runDeps="$( 		scanelf --needed --nobanner /usr/sbin/nginx /usr/lib/nginx/modules/*.so 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .nginx-rundeps $runDeps 	&& apk del .build-deps 	&& rm -rf /usr/src/nginx-$NGINX_VERSION 	&& apk add --no-cache gettext 		&& ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Wed, 01 Jun 2016 18:06:18 GMT
-COPY file:93c4b3c3de478d88b5e6fb3638f12c5a1e1552f3b647577d6379f12822c45034 in /etc/nginx/nginx.conf
-# Wed, 01 Jun 2016 18:06:19 GMT
-COPY file:6df18cb2c6b42e50f260d86a9d6c1e35ff154ce99f88b071f0fb6984ca47321c in /etc/nginx/conf.d/default.conf
-# Wed, 01 Jun 2016 18:06:20 GMT
+# Thu, 23 Jun 2016 20:12:42 GMT
+COPY file:af94db45bb7e4b8ff4e699f1ff6f41c348f9876073ad91d6e803070415f8d9ce in /etc/nginx/nginx.conf
+# Thu, 23 Jun 2016 20:12:43 GMT
+COPY file:d15ceb73c6ea776c299822265ed38cd2fd8a78804f4f4889094d1dd1e292984b in /etc/nginx/conf.d/default.conf
+# Thu, 23 Jun 2016 20:12:43 GMT
 EXPOSE 443/tcp 80/tcp
-# Wed, 01 Jun 2016 18:06:21 GMT
+# Thu, 23 Jun 2016 20:12:44 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
-		Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
-		Size: 16.8 MB (16773633 bytes)
-	-	`sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
-		Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
-		Size: 493.0 B
-	-	`sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
-		Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
-		Size: 632.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
+		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
+		Size: 2.3 MB (2320188 bytes)
+	-	`sha256:8380043c1909a841f90a5d44404d88c2b37e68f6febd84f8cba2a554de5216bc`  
+		Last Modified: Thu, 23 Jun 2016 20:12:57 GMT  
+		Size: 16.8 MB (16803957 bytes)
+	-	`sha256:bc193245541a40d26789ae0cef75182d60ab285d239c27ae3b91c6aac86858e6`  
+		Last Modified: Thu, 23 Jun 2016 20:12:50 GMT  
+		Size: 490.0 B
+	-	`sha256:f6058f41c33ea26b406ceb7c5c5c1b2e3c32fc0a57da3978977a91ef2895eedc`  
+		Last Modified: Thu, 23 Jun 2016 20:12:51 GMT  
+		Size: 626.0 B
 
 ## `nginx:1.11.1-alpine`
 
 ```console
-$ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec06520285d420924
+$ docker pull nginx@sha256:23f809e7fd5952e7d5be065b4d3643fbbceccd349d537b62a123ef2201bc886f
 ```
 
 -	Platforms:
@@ -762,72 +690,54 @@ $ docker pull nginx@sha256:e2d7332b6da6dba653c81c1596a0aa1142e5a28fc99a153ec0652
 
 ### `nginx:1.11.1-alpine` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19095162 bytes)**  
+-	Total Size: **19.1 MB (19125261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a32fd277704c3f2cabc56624200a32fdc2b18bfa9f3523a5f00c3feb416bf79a`
+-	Image ID: `sha256:5ad9802b809e076526eb457c3a5794022e321a9a6e7e0a349ae5720056ab871b`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:31:14 GMT
+# Thu, 23 Jun 2016 19:55:12 GMT
+ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
+# Thu, 23 Jun 2016 20:10:03 GMT
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
-# Wed, 01 Jun 2016 18:04:02 GMT
+# Thu, 23 Jun 2016 20:10:03 GMT
 ENV NGINX_VERSION=1.11.1
-# Wed, 01 Jun 2016 18:04:03 GMT
+# Thu, 23 Jun 2016 20:10:04 GMT
 ENV GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8
-# Wed, 01 Jun 2016 18:04:04 GMT
+# Thu, 23 Jun 2016 20:10:04 GMT
 ENV CONFIG=	--prefix=/etc/nginx 	--sbin-path=/usr/sbin/nginx 	--modules-path=/usr/lib/nginx/modules 	--conf-path=/etc/nginx/nginx.conf 	--error-log-path=/var/log/nginx/error.log 	--http-log-path=/var/log/nginx/access.log 	--pid-path=/var/run/nginx.pid 	--lock-path=/var/run/nginx.lock 	--http-client-body-temp-path=/var/cache/nginx/client_temp 	--http-proxy-temp-path=/var/cache/nginx/proxy_temp 	--http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp 	--http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp 	--http-scgi-temp-path=/var/cache/nginx/scgi_temp 	--user=nginx 	--group=nginx 	--with-http_ssl_module 	--with-http_realip_module 	--with-http_addition_module 	--with-http_sub_module 	--with-http_dav_module 	--with-http_flv_module 	--with-http_mp4_module 	--with-http_gunzip_module 	--with-http_gzip_static_module 	--with-http_random_index_module 	--with-http_secure_link_module 	--with-http_stub_status_module 	--with-http_auth_request_module 	--with-http_xslt_module=dynamic 	--with-http_image_filter_module=dynamic 	--with-http_geoip_module=dynamic 	--with-http_perl_module=dynamic 	--with-threads 	--with-stream 	--with-stream_ssl_module 	--with-http_slice_module 	--with-mail 	--with-mail_ssl_module 	--with-file-aio 	--with-http_v2_module 	--with-ipv6 	
-# Wed, 01 Jun 2016 18:06:16 GMT
+# Thu, 23 Jun 2016 20:12:41 GMT
 RUN addgroup -S nginx 	&& adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx 	&& apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		make 		openssl-dev 		pcre-dev 		zlib-dev 		linux-headers 		curl 		gnupg 		libxslt-dev 		gd-dev 		geoip-dev 		perl-dev 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz -o nginx.tar.gz 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz.asc  -o nginx.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEYS" 	&& gpg --batch --verify nginx.tar.gz.asc nginx.tar.gz 	&& rm -r "$GNUPGHOME" nginx.tar.gz.asc 	&& mkdir -p /usr/src 	&& tar -zxC /usr/src -f nginx.tar.gz 	&& rm nginx.tar.gz 	&& cd /usr/src/nginx-$NGINX_VERSION 	&& ./configure $CONFIG --with-debug 	&& make 	&& mv objs/nginx objs/nginx-debug 	&& mv objs/ngx_http_xslt_filter_module.so objs/ngx_http_xslt_filter_module-debug.so 	&& mv objs/ngx_http_image_filter_module.so objs/ngx_http_image_filter_module-debug.so 	&& mv objs/ngx_http_geoip_module.so objs/ngx_http_geoip_module-debug.so 	&& mv objs/ngx_http_perl_module.so objs/ngx_http_perl_module-debug.so 	&& ./configure $CONFIG 	&& make 	&& make install 	&& rm -rf /etc/nginx/html/ 	&& mkdir /etc/nginx/conf.d/ 	&& mkdir -p /usr/share/nginx/html/ 	&& install -m644 html/index.html /usr/share/nginx/html/ 	&& install -m644 html/50x.html /usr/share/nginx/html/ 	&& install -m755 objs/nginx-debug /usr/sbin/nginx-debug 	&& install -m755 objs/ngx_http_xslt_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_xslt_filter_module-debug.so 	&& install -m755 objs/ngx_http_image_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_image_filter_module-debug.so 	&& install -m755 objs/ngx_http_geoip_module-debug.so /usr/lib/nginx/modules/ngx_http_geoip_module-debug.so 	&& install -m755 objs/ngx_http_perl_module-debug.so /usr/lib/nginx/modules/ngx_http_perl_module-debug.so 	&& ln -s ../../usr/lib/nginx/modules /etc/nginx/modules 	&& strip /usr/sbin/nginx* 	&& strip /usr/lib/nginx/modules/*.so 	&& runDeps="$( 		scanelf --needed --nobanner /usr/sbin/nginx /usr/lib/nginx/modules/*.so 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .nginx-rundeps $runDeps 	&& apk del .build-deps 	&& rm -rf /usr/src/nginx-$NGINX_VERSION 	&& apk add --no-cache gettext 		&& ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Wed, 01 Jun 2016 18:06:18 GMT
-COPY file:93c4b3c3de478d88b5e6fb3638f12c5a1e1552f3b647577d6379f12822c45034 in /etc/nginx/nginx.conf
-# Wed, 01 Jun 2016 18:06:19 GMT
-COPY file:6df18cb2c6b42e50f260d86a9d6c1e35ff154ce99f88b071f0fb6984ca47321c in /etc/nginx/conf.d/default.conf
-# Wed, 01 Jun 2016 18:06:20 GMT
+# Thu, 23 Jun 2016 20:12:42 GMT
+COPY file:af94db45bb7e4b8ff4e699f1ff6f41c348f9876073ad91d6e803070415f8d9ce in /etc/nginx/nginx.conf
+# Thu, 23 Jun 2016 20:12:43 GMT
+COPY file:d15ceb73c6ea776c299822265ed38cd2fd8a78804f4f4889094d1dd1e292984b in /etc/nginx/conf.d/default.conf
+# Thu, 23 Jun 2016 20:12:43 GMT
 EXPOSE 443/tcp 80/tcp
-# Wed, 01 Jun 2016 18:06:21 GMT
+# Thu, 23 Jun 2016 20:12:44 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e8514e64aa40d34e195aecf47ffbd9696b10d5a6993d56d36f3424d654fe4a8e`  
-		Last Modified: Wed, 01 Jun 2016 18:13:08 GMT  
-		Size: 16.8 MB (16773633 bytes)
-	-	`sha256:1913fe8f0af9bc5377600515ecfc0f571b7f890a1bea8a9812806fe61dee97f5`  
-		Last Modified: Wed, 01 Jun 2016 18:12:58 GMT  
-		Size: 493.0 B
-	-	`sha256:0a07e46b6020e3b808bbfc94de55dad498e74eafe4f217dfafbb007644fa3f4e`  
-		Last Modified: Wed, 01 Jun 2016 18:12:55 GMT  
-		Size: 632.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
+		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
+		Size: 2.3 MB (2320188 bytes)
+	-	`sha256:8380043c1909a841f90a5d44404d88c2b37e68f6febd84f8cba2a554de5216bc`  
+		Last Modified: Thu, 23 Jun 2016 20:12:57 GMT  
+		Size: 16.8 MB (16803957 bytes)
+	-	`sha256:bc193245541a40d26789ae0cef75182d60ab285d239c27ae3b91c6aac86858e6`  
+		Last Modified: Thu, 23 Jun 2016 20:12:50 GMT  
+		Size: 490.0 B
+	-	`sha256:f6058f41c33ea26b406ceb7c5c5c1b2e3c32fc0a57da3978977a91ef2895eedc`  
+		Last Modified: Thu, 23 Jun 2016 20:12:51 GMT  
+		Size: 626.0 B
 
 ## `nginx:stable-alpine`
 
 ```console
-$ docker pull nginx@sha256:f760ef54999add48e9db998e325917fbcf59a165e4b13582fc00290ab135977d
+$ docker pull nginx@sha256:445b52c57051764595da2b01a0f71b719c503d7f4b5e4d68741df417023da0b5
 ```
 
 -	Platforms:
@@ -835,72 +745,54 @@ $ docker pull nginx@sha256:f760ef54999add48e9db998e325917fbcf59a165e4b13582fc002
 
 ### `nginx:stable-alpine` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19090972 bytes)**  
+-	Total Size: **19.1 MB (19111262 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4bf8efd6e42b7dfab500e56ca0450c9b57c806f66e118658ae58a0aa994eaec`
+-	Image ID: `sha256:c6b7a3ab1800bff472aa423be858058f0dfc5a13227e18a9b878cb1e043812d2`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:31:14 GMT
+# Thu, 23 Jun 2016 19:55:12 GMT
+ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
+# Thu, 23 Jun 2016 20:10:03 GMT
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
-# Wed, 01 Jun 2016 18:08:29 GMT
+# Thu, 23 Jun 2016 20:13:31 GMT
 ENV NGINX_VERSION=1.10.1
-# Wed, 01 Jun 2016 18:08:29 GMT
+# Thu, 23 Jun 2016 20:13:31 GMT
 ENV GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8
-# Wed, 01 Jun 2016 18:08:30 GMT
+# Thu, 23 Jun 2016 20:13:32 GMT
 ENV CONFIG=	--prefix=/etc/nginx 	--sbin-path=/usr/sbin/nginx 	--modules-path=/usr/lib/nginx/modules 	--conf-path=/etc/nginx/nginx.conf 	--error-log-path=/var/log/nginx/error.log 	--http-log-path=/var/log/nginx/access.log 	--pid-path=/var/run/nginx.pid 	--lock-path=/var/run/nginx.lock 	--http-client-body-temp-path=/var/cache/nginx/client_temp 	--http-proxy-temp-path=/var/cache/nginx/proxy_temp 	--http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp 	--http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp 	--http-scgi-temp-path=/var/cache/nginx/scgi_temp 	--user=nginx 	--group=nginx 	--with-http_ssl_module 	--with-http_realip_module 	--with-http_addition_module 	--with-http_sub_module 	--with-http_dav_module 	--with-http_flv_module 	--with-http_mp4_module 	--with-http_gunzip_module 	--with-http_gzip_static_module 	--with-http_random_index_module 	--with-http_secure_link_module 	--with-http_stub_status_module 	--with-http_auth_request_module 	--with-http_xslt_module=dynamic 	--with-http_image_filter_module=dynamic 	--with-http_geoip_module=dynamic 	--with-http_perl_module=dynamic 	--with-threads 	--with-stream 	--with-stream_ssl_module 	--with-http_slice_module 	--with-mail 	--with-mail_ssl_module 	--with-file-aio 	--with-http_v2_module 	--with-ipv6 	
-# Wed, 01 Jun 2016 18:10:37 GMT
+# Thu, 23 Jun 2016 20:16:23 GMT
 RUN addgroup -S nginx 	&& adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx 	&& apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		make 		openssl-dev 		pcre-dev 		zlib-dev 		linux-headers 		curl 		gnupg 		libxslt-dev 		gd-dev 		geoip-dev 		perl-dev 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz -o nginx.tar.gz 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz.asc  -o nginx.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEYS" 	&& gpg --batch --verify nginx.tar.gz.asc nginx.tar.gz 	&& rm -r "$GNUPGHOME" nginx.tar.gz.asc 	&& mkdir -p /usr/src 	&& tar -zxC /usr/src -f nginx.tar.gz 	&& rm nginx.tar.gz 	&& cd /usr/src/nginx-$NGINX_VERSION 	&& ./configure $CONFIG --with-debug 	&& make 	&& mv objs/nginx objs/nginx-debug 	&& mv objs/ngx_http_xslt_filter_module.so objs/ngx_http_xslt_filter_module-debug.so 	&& mv objs/ngx_http_image_filter_module.so objs/ngx_http_image_filter_module-debug.so 	&& mv objs/ngx_http_geoip_module.so objs/ngx_http_geoip_module-debug.so 	&& mv objs/ngx_http_perl_module.so objs/ngx_http_perl_module-debug.so 	&& ./configure $CONFIG 	&& make 	&& make install 	&& rm -rf /etc/nginx/html/ 	&& mkdir /etc/nginx/conf.d/ 	&& mkdir -p /usr/share/nginx/html/ 	&& install -m644 html/index.html /usr/share/nginx/html/ 	&& install -m644 html/50x.html /usr/share/nginx/html/ 	&& install -m755 objs/nginx-debug /usr/sbin/nginx-debug 	&& install -m755 objs/ngx_http_xslt_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_xslt_filter_module-debug.so 	&& install -m755 objs/ngx_http_image_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_image_filter_module-debug.so 	&& install -m755 objs/ngx_http_geoip_module-debug.so /usr/lib/nginx/modules/ngx_http_geoip_module-debug.so 	&& install -m755 objs/ngx_http_perl_module-debug.so /usr/lib/nginx/modules/ngx_http_perl_module-debug.so 	&& ln -s ../../usr/lib/nginx/modules /etc/nginx/modules 	&& strip /usr/sbin/nginx* 	&& strip /usr/lib/nginx/modules/*.so 	&& runDeps="$( 		scanelf --needed --nobanner /usr/sbin/nginx /usr/lib/nginx/modules/*.so 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .nginx-rundeps $runDeps 	&& apk del .build-deps 	&& rm -rf /usr/src/nginx-$NGINX_VERSION 	&& apk add --no-cache gettext 		&& ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Wed, 01 Jun 2016 18:10:39 GMT
-COPY file:93c4b3c3de478d88b5e6fb3638f12c5a1e1552f3b647577d6379f12822c45034 in /etc/nginx/nginx.conf
-# Wed, 01 Jun 2016 18:10:39 GMT
-COPY file:6df18cb2c6b42e50f260d86a9d6c1e35ff154ce99f88b071f0fb6984ca47321c in /etc/nginx/conf.d/default.conf
-# Wed, 01 Jun 2016 18:10:40 GMT
+# Thu, 23 Jun 2016 20:16:24 GMT
+COPY file:af94db45bb7e4b8ff4e699f1ff6f41c348f9876073ad91d6e803070415f8d9ce in /etc/nginx/nginx.conf
+# Thu, 23 Jun 2016 20:16:25 GMT
+COPY file:d15ceb73c6ea776c299822265ed38cd2fd8a78804f4f4889094d1dd1e292984b in /etc/nginx/conf.d/default.conf
+# Thu, 23 Jun 2016 20:16:25 GMT
 EXPOSE 443/tcp 80/tcp
-# Wed, 01 Jun 2016 18:10:41 GMT
+# Thu, 23 Jun 2016 20:16:26 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:145ce744b6fce9980771253ad9001c3c5d5c6110cbf897eaa513f1d92fdf59ef`  
-		Last Modified: Wed, 01 Jun 2016 18:13:53 GMT  
-		Size: 16.8 MB (16769443 bytes)
-	-	`sha256:b5eebe7f4c984fadd80bb3871b16cab1beeaee3202643e9fea652a86bc78a9cd`  
-		Last Modified: Wed, 01 Jun 2016 18:13:44 GMT  
-		Size: 493.0 B
-	-	`sha256:4fea5259073ff65af70f6ca098a6cb570e7d049eda8f19db72be6c9c63050a1b`  
-		Last Modified: Wed, 01 Jun 2016 18:13:41 GMT  
-		Size: 632.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
+		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
+		Size: 2.3 MB (2320188 bytes)
+	-	`sha256:3fd1140f42a1cf0377973bb14b45b6ec9d88b522b5d2adbfabebf24c1eea5f0d`  
+		Last Modified: Thu, 23 Jun 2016 20:16:42 GMT  
+		Size: 16.8 MB (16789959 bytes)
+	-	`sha256:b540866b870c8513d055eb3a388a9b3ac8dd8fc61ae32ca2c6194657c89ede76`  
+		Last Modified: Thu, 23 Jun 2016 20:16:33 GMT  
+		Size: 489.0 B
+	-	`sha256:2461e99c314162539f7de4c892785407ed04457a393b7e211021c2cb9ad668e6`  
+		Last Modified: Thu, 23 Jun 2016 20:16:33 GMT  
+		Size: 626.0 B
 
 ## `nginx:1.10-alpine`
 
 ```console
-$ docker pull nginx@sha256:f760ef54999add48e9db998e325917fbcf59a165e4b13582fc00290ab135977d
+$ docker pull nginx@sha256:445b52c57051764595da2b01a0f71b719c503d7f4b5e4d68741df417023da0b5
 ```
 
 -	Platforms:
@@ -908,72 +800,54 @@ $ docker pull nginx@sha256:f760ef54999add48e9db998e325917fbcf59a165e4b13582fc002
 
 ### `nginx:1.10-alpine` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19090972 bytes)**  
+-	Total Size: **19.1 MB (19111262 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4bf8efd6e42b7dfab500e56ca0450c9b57c806f66e118658ae58a0aa994eaec`
+-	Image ID: `sha256:c6b7a3ab1800bff472aa423be858058f0dfc5a13227e18a9b878cb1e043812d2`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:31:14 GMT
+# Thu, 23 Jun 2016 19:55:12 GMT
+ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
+# Thu, 23 Jun 2016 20:10:03 GMT
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
-# Wed, 01 Jun 2016 18:08:29 GMT
+# Thu, 23 Jun 2016 20:13:31 GMT
 ENV NGINX_VERSION=1.10.1
-# Wed, 01 Jun 2016 18:08:29 GMT
+# Thu, 23 Jun 2016 20:13:31 GMT
 ENV GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8
-# Wed, 01 Jun 2016 18:08:30 GMT
+# Thu, 23 Jun 2016 20:13:32 GMT
 ENV CONFIG=	--prefix=/etc/nginx 	--sbin-path=/usr/sbin/nginx 	--modules-path=/usr/lib/nginx/modules 	--conf-path=/etc/nginx/nginx.conf 	--error-log-path=/var/log/nginx/error.log 	--http-log-path=/var/log/nginx/access.log 	--pid-path=/var/run/nginx.pid 	--lock-path=/var/run/nginx.lock 	--http-client-body-temp-path=/var/cache/nginx/client_temp 	--http-proxy-temp-path=/var/cache/nginx/proxy_temp 	--http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp 	--http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp 	--http-scgi-temp-path=/var/cache/nginx/scgi_temp 	--user=nginx 	--group=nginx 	--with-http_ssl_module 	--with-http_realip_module 	--with-http_addition_module 	--with-http_sub_module 	--with-http_dav_module 	--with-http_flv_module 	--with-http_mp4_module 	--with-http_gunzip_module 	--with-http_gzip_static_module 	--with-http_random_index_module 	--with-http_secure_link_module 	--with-http_stub_status_module 	--with-http_auth_request_module 	--with-http_xslt_module=dynamic 	--with-http_image_filter_module=dynamic 	--with-http_geoip_module=dynamic 	--with-http_perl_module=dynamic 	--with-threads 	--with-stream 	--with-stream_ssl_module 	--with-http_slice_module 	--with-mail 	--with-mail_ssl_module 	--with-file-aio 	--with-http_v2_module 	--with-ipv6 	
-# Wed, 01 Jun 2016 18:10:37 GMT
+# Thu, 23 Jun 2016 20:16:23 GMT
 RUN addgroup -S nginx 	&& adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx 	&& apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		make 		openssl-dev 		pcre-dev 		zlib-dev 		linux-headers 		curl 		gnupg 		libxslt-dev 		gd-dev 		geoip-dev 		perl-dev 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz -o nginx.tar.gz 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz.asc  -o nginx.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEYS" 	&& gpg --batch --verify nginx.tar.gz.asc nginx.tar.gz 	&& rm -r "$GNUPGHOME" nginx.tar.gz.asc 	&& mkdir -p /usr/src 	&& tar -zxC /usr/src -f nginx.tar.gz 	&& rm nginx.tar.gz 	&& cd /usr/src/nginx-$NGINX_VERSION 	&& ./configure $CONFIG --with-debug 	&& make 	&& mv objs/nginx objs/nginx-debug 	&& mv objs/ngx_http_xslt_filter_module.so objs/ngx_http_xslt_filter_module-debug.so 	&& mv objs/ngx_http_image_filter_module.so objs/ngx_http_image_filter_module-debug.so 	&& mv objs/ngx_http_geoip_module.so objs/ngx_http_geoip_module-debug.so 	&& mv objs/ngx_http_perl_module.so objs/ngx_http_perl_module-debug.so 	&& ./configure $CONFIG 	&& make 	&& make install 	&& rm -rf /etc/nginx/html/ 	&& mkdir /etc/nginx/conf.d/ 	&& mkdir -p /usr/share/nginx/html/ 	&& install -m644 html/index.html /usr/share/nginx/html/ 	&& install -m644 html/50x.html /usr/share/nginx/html/ 	&& install -m755 objs/nginx-debug /usr/sbin/nginx-debug 	&& install -m755 objs/ngx_http_xslt_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_xslt_filter_module-debug.so 	&& install -m755 objs/ngx_http_image_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_image_filter_module-debug.so 	&& install -m755 objs/ngx_http_geoip_module-debug.so /usr/lib/nginx/modules/ngx_http_geoip_module-debug.so 	&& install -m755 objs/ngx_http_perl_module-debug.so /usr/lib/nginx/modules/ngx_http_perl_module-debug.so 	&& ln -s ../../usr/lib/nginx/modules /etc/nginx/modules 	&& strip /usr/sbin/nginx* 	&& strip /usr/lib/nginx/modules/*.so 	&& runDeps="$( 		scanelf --needed --nobanner /usr/sbin/nginx /usr/lib/nginx/modules/*.so 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .nginx-rundeps $runDeps 	&& apk del .build-deps 	&& rm -rf /usr/src/nginx-$NGINX_VERSION 	&& apk add --no-cache gettext 		&& ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Wed, 01 Jun 2016 18:10:39 GMT
-COPY file:93c4b3c3de478d88b5e6fb3638f12c5a1e1552f3b647577d6379f12822c45034 in /etc/nginx/nginx.conf
-# Wed, 01 Jun 2016 18:10:39 GMT
-COPY file:6df18cb2c6b42e50f260d86a9d6c1e35ff154ce99f88b071f0fb6984ca47321c in /etc/nginx/conf.d/default.conf
-# Wed, 01 Jun 2016 18:10:40 GMT
+# Thu, 23 Jun 2016 20:16:24 GMT
+COPY file:af94db45bb7e4b8ff4e699f1ff6f41c348f9876073ad91d6e803070415f8d9ce in /etc/nginx/nginx.conf
+# Thu, 23 Jun 2016 20:16:25 GMT
+COPY file:d15ceb73c6ea776c299822265ed38cd2fd8a78804f4f4889094d1dd1e292984b in /etc/nginx/conf.d/default.conf
+# Thu, 23 Jun 2016 20:16:25 GMT
 EXPOSE 443/tcp 80/tcp
-# Wed, 01 Jun 2016 18:10:41 GMT
+# Thu, 23 Jun 2016 20:16:26 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:145ce744b6fce9980771253ad9001c3c5d5c6110cbf897eaa513f1d92fdf59ef`  
-		Last Modified: Wed, 01 Jun 2016 18:13:53 GMT  
-		Size: 16.8 MB (16769443 bytes)
-	-	`sha256:b5eebe7f4c984fadd80bb3871b16cab1beeaee3202643e9fea652a86bc78a9cd`  
-		Last Modified: Wed, 01 Jun 2016 18:13:44 GMT  
-		Size: 493.0 B
-	-	`sha256:4fea5259073ff65af70f6ca098a6cb570e7d049eda8f19db72be6c9c63050a1b`  
-		Last Modified: Wed, 01 Jun 2016 18:13:41 GMT  
-		Size: 632.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
+		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
+		Size: 2.3 MB (2320188 bytes)
+	-	`sha256:3fd1140f42a1cf0377973bb14b45b6ec9d88b522b5d2adbfabebf24c1eea5f0d`  
+		Last Modified: Thu, 23 Jun 2016 20:16:42 GMT  
+		Size: 16.8 MB (16789959 bytes)
+	-	`sha256:b540866b870c8513d055eb3a388a9b3ac8dd8fc61ae32ca2c6194657c89ede76`  
+		Last Modified: Thu, 23 Jun 2016 20:16:33 GMT  
+		Size: 489.0 B
+	-	`sha256:2461e99c314162539f7de4c892785407ed04457a393b7e211021c2cb9ad668e6`  
+		Last Modified: Thu, 23 Jun 2016 20:16:33 GMT  
+		Size: 626.0 B
 
 ## `nginx:1.10.1-alpine`
 
 ```console
-$ docker pull nginx@sha256:f760ef54999add48e9db998e325917fbcf59a165e4b13582fc00290ab135977d
+$ docker pull nginx@sha256:445b52c57051764595da2b01a0f71b719c503d7f4b5e4d68741df417023da0b5
 ```
 
 -	Platforms:
@@ -981,64 +855,46 @@ $ docker pull nginx@sha256:f760ef54999add48e9db998e325917fbcf59a165e4b13582fc002
 
 ### `nginx:1.10.1-alpine` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19090972 bytes)**  
+-	Total Size: **19.1 MB (19111262 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4bf8efd6e42b7dfab500e56ca0450c9b57c806f66e118658ae58a0aa994eaec`
+-	Image ID: `sha256:c6b7a3ab1800bff472aa423be858058f0dfc5a13227e18a9b878cb1e043812d2`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:31:14 GMT
+# Thu, 23 Jun 2016 19:55:12 GMT
+ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
+# Thu, 23 Jun 2016 20:10:03 GMT
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
-# Wed, 01 Jun 2016 18:08:29 GMT
+# Thu, 23 Jun 2016 20:13:31 GMT
 ENV NGINX_VERSION=1.10.1
-# Wed, 01 Jun 2016 18:08:29 GMT
+# Thu, 23 Jun 2016 20:13:31 GMT
 ENV GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8
-# Wed, 01 Jun 2016 18:08:30 GMT
+# Thu, 23 Jun 2016 20:13:32 GMT
 ENV CONFIG=	--prefix=/etc/nginx 	--sbin-path=/usr/sbin/nginx 	--modules-path=/usr/lib/nginx/modules 	--conf-path=/etc/nginx/nginx.conf 	--error-log-path=/var/log/nginx/error.log 	--http-log-path=/var/log/nginx/access.log 	--pid-path=/var/run/nginx.pid 	--lock-path=/var/run/nginx.lock 	--http-client-body-temp-path=/var/cache/nginx/client_temp 	--http-proxy-temp-path=/var/cache/nginx/proxy_temp 	--http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp 	--http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp 	--http-scgi-temp-path=/var/cache/nginx/scgi_temp 	--user=nginx 	--group=nginx 	--with-http_ssl_module 	--with-http_realip_module 	--with-http_addition_module 	--with-http_sub_module 	--with-http_dav_module 	--with-http_flv_module 	--with-http_mp4_module 	--with-http_gunzip_module 	--with-http_gzip_static_module 	--with-http_random_index_module 	--with-http_secure_link_module 	--with-http_stub_status_module 	--with-http_auth_request_module 	--with-http_xslt_module=dynamic 	--with-http_image_filter_module=dynamic 	--with-http_geoip_module=dynamic 	--with-http_perl_module=dynamic 	--with-threads 	--with-stream 	--with-stream_ssl_module 	--with-http_slice_module 	--with-mail 	--with-mail_ssl_module 	--with-file-aio 	--with-http_v2_module 	--with-ipv6 	
-# Wed, 01 Jun 2016 18:10:37 GMT
+# Thu, 23 Jun 2016 20:16:23 GMT
 RUN addgroup -S nginx 	&& adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx 	&& apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		make 		openssl-dev 		pcre-dev 		zlib-dev 		linux-headers 		curl 		gnupg 		libxslt-dev 		gd-dev 		geoip-dev 		perl-dev 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz -o nginx.tar.gz 	&& curl -fSL http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz.asc  -o nginx.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEYS" 	&& gpg --batch --verify nginx.tar.gz.asc nginx.tar.gz 	&& rm -r "$GNUPGHOME" nginx.tar.gz.asc 	&& mkdir -p /usr/src 	&& tar -zxC /usr/src -f nginx.tar.gz 	&& rm nginx.tar.gz 	&& cd /usr/src/nginx-$NGINX_VERSION 	&& ./configure $CONFIG --with-debug 	&& make 	&& mv objs/nginx objs/nginx-debug 	&& mv objs/ngx_http_xslt_filter_module.so objs/ngx_http_xslt_filter_module-debug.so 	&& mv objs/ngx_http_image_filter_module.so objs/ngx_http_image_filter_module-debug.so 	&& mv objs/ngx_http_geoip_module.so objs/ngx_http_geoip_module-debug.so 	&& mv objs/ngx_http_perl_module.so objs/ngx_http_perl_module-debug.so 	&& ./configure $CONFIG 	&& make 	&& make install 	&& rm -rf /etc/nginx/html/ 	&& mkdir /etc/nginx/conf.d/ 	&& mkdir -p /usr/share/nginx/html/ 	&& install -m644 html/index.html /usr/share/nginx/html/ 	&& install -m644 html/50x.html /usr/share/nginx/html/ 	&& install -m755 objs/nginx-debug /usr/sbin/nginx-debug 	&& install -m755 objs/ngx_http_xslt_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_xslt_filter_module-debug.so 	&& install -m755 objs/ngx_http_image_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_image_filter_module-debug.so 	&& install -m755 objs/ngx_http_geoip_module-debug.so /usr/lib/nginx/modules/ngx_http_geoip_module-debug.so 	&& install -m755 objs/ngx_http_perl_module-debug.so /usr/lib/nginx/modules/ngx_http_perl_module-debug.so 	&& ln -s ../../usr/lib/nginx/modules /etc/nginx/modules 	&& strip /usr/sbin/nginx* 	&& strip /usr/lib/nginx/modules/*.so 	&& runDeps="$( 		scanelf --needed --nobanner /usr/sbin/nginx /usr/lib/nginx/modules/*.so 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .nginx-rundeps $runDeps 	&& apk del .build-deps 	&& rm -rf /usr/src/nginx-$NGINX_VERSION 	&& apk add --no-cache gettext 		&& ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Wed, 01 Jun 2016 18:10:39 GMT
-COPY file:93c4b3c3de478d88b5e6fb3638f12c5a1e1552f3b647577d6379f12822c45034 in /etc/nginx/nginx.conf
-# Wed, 01 Jun 2016 18:10:39 GMT
-COPY file:6df18cb2c6b42e50f260d86a9d6c1e35ff154ce99f88b071f0fb6984ca47321c in /etc/nginx/conf.d/default.conf
-# Wed, 01 Jun 2016 18:10:40 GMT
+# Thu, 23 Jun 2016 20:16:24 GMT
+COPY file:af94db45bb7e4b8ff4e699f1ff6f41c348f9876073ad91d6e803070415f8d9ce in /etc/nginx/nginx.conf
+# Thu, 23 Jun 2016 20:16:25 GMT
+COPY file:d15ceb73c6ea776c299822265ed38cd2fd8a78804f4f4889094d1dd1e292984b in /etc/nginx/conf.d/default.conf
+# Thu, 23 Jun 2016 20:16:25 GMT
 EXPOSE 443/tcp 80/tcp
-# Wed, 01 Jun 2016 18:10:41 GMT
+# Thu, 23 Jun 2016 20:16:26 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:145ce744b6fce9980771253ad9001c3c5d5c6110cbf897eaa513f1d92fdf59ef`  
-		Last Modified: Wed, 01 Jun 2016 18:13:53 GMT  
-		Size: 16.8 MB (16769443 bytes)
-	-	`sha256:b5eebe7f4c984fadd80bb3871b16cab1beeaee3202643e9fea652a86bc78a9cd`  
-		Last Modified: Wed, 01 Jun 2016 18:13:44 GMT  
-		Size: 493.0 B
-	-	`sha256:4fea5259073ff65af70f6ca098a6cb570e7d049eda8f19db72be6c9c63050a1b`  
-		Last Modified: Wed, 01 Jun 2016 18:13:41 GMT  
-		Size: 632.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
+		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
+		Size: 2.3 MB (2320188 bytes)
+	-	`sha256:3fd1140f42a1cf0377973bb14b45b6ec9d88b522b5d2adbfabebf24c1eea5f0d`  
+		Last Modified: Thu, 23 Jun 2016 20:16:42 GMT  
+		Size: 16.8 MB (16789959 bytes)
+	-	`sha256:b540866b870c8513d055eb3a388a9b3ac8dd8fc61ae32ca2c6194657c89ede76`  
+		Last Modified: Thu, 23 Jun 2016 20:16:33 GMT  
+		Size: 489.0 B
+	-	`sha256:2461e99c314162539f7de4c892785407ed04457a393b7e211021c2cb9ad668e6`  
+		Last Modified: Thu, 23 Jun 2016 20:16:33 GMT  
+		Size: 626.0 B
