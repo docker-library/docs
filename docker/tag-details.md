@@ -195,7 +195,7 @@ CMD ["sh"]
 ## `docker:1.12.0-rc2-dind`
 
 ```console
-$ docker pull docker@sha256:6c2b2a2363c412617320a61f3c362ac7fd9191f563cb745a1941bc7ea39482f4
+$ docker pull docker@sha256:43efe3e2d756faad992304e03be9e8e08f31ca17e0088148fddee289e72bb6b5
 ```
 
 -	Platforms:
@@ -205,76 +205,76 @@ $ docker pull docker@sha256:6c2b2a2363c412617320a61f3c362ac7fd9191f563cb745a1941
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.9 MB (32936296 bytes)**  
+-	Total Size: **32.9 MB (32936288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b163a8a13176f280ae9d417ea5ea78c091c5ae30c03987fab8dc3f9b388dac6a`
+-	Image ID: `sha256:a423a78676a17f189c923646b2be4a171b59bbbc67a109856f495653cb730af2`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Thu, 16 Jun 2016 19:29:29 GMT
+# Thu, 23 Jun 2016 20:17:12 GMT
 ENV DOCKER_BUCKET=test.docker.com
-# Fri, 17 Jun 2016 23:05:02 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_VERSION=1.12.0-rc2
-# Fri, 17 Jun 2016 23:05:03 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_SHA256=6df54c3360f713370aa59b758c45185b9a62889899f1f6185a08497ffd57a39b
-# Fri, 17 Jun 2016 23:05:08 GMT
+# Thu, 23 Jun 2016 20:17:19 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Fri, 17 Jun 2016 23:05:09 GMT
+# Thu, 23 Jun 2016 20:17:20 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 CMD ["sh"]
-# Fri, 17 Jun 2016 23:05:15 GMT
+# Thu, 23 Jun 2016 22:15:44 GMT
 RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
-# Fri, 17 Jun 2016 23:05:16 GMT
+# Thu, 23 Jun 2016 22:15:44 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Fri, 17 Jun 2016 23:05:18 GMT
+# Thu, 23 Jun 2016 22:15:46 GMT
 RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind" -O /usr/local/bin/dind 	&& chmod +x /usr/local/bin/dind
-# Fri, 17 Jun 2016 23:05:18 GMT
+# Thu, 23 Jun 2016 22:15:47 GMT
 COPY file:a00ae81495fdf69e63bb25e3b665aa29cb53cfe5788e6134adfc0f35caff6295 in /usr/local/bin/
-# Fri, 17 Jun 2016 23:05:19 GMT
+# Thu, 23 Jun 2016 22:15:47 GMT
 VOLUME [/var/lib/docker]
-# Fri, 17 Jun 2016 23:05:20 GMT
+# Thu, 23 Jun 2016 22:15:48 GMT
 EXPOSE 2375/tcp
-# Fri, 17 Jun 2016 23:05:21 GMT
+# Thu, 23 Jun 2016 22:15:48 GMT
 ENTRYPOINT &{["dockerd-entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:05:22 GMT
+# Thu, 23 Jun 2016 22:15:49 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:7b891fbaf7dd9b2c57639c8e72f2d3498cd56015816eb2f48814ff2916dc812a`  
-		Last Modified: Fri, 17 Jun 2016 23:05:48 GMT  
-		Size: 27.6 MB (27645232 bytes)
-	-	`sha256:56999c4e4d37e4ea01271be87b1743022660e1986231b5b781203c06c5eb3a5d`  
-		Last Modified: Fri, 17 Jun 2016 23:05:37 GMT  
-		Size: 464.0 B
-	-	`sha256:cece443769bfde5ea116638840e761b2fb3a8c5c32e39d826e5d7cd11d1cf242`  
-		Last Modified: Fri, 17 Jun 2016 23:06:18 GMT  
-		Size: 2.1 MB (2065052 bytes)
-	-	`sha256:2f6eeba48ac9915fb892df74c8bc67c57b9806dad57e5b930ce95ed9561c42fb`  
-		Last Modified: Fri, 17 Jun 2016 23:06:16 GMT  
-		Size: 1.8 KB (1817 bytes)
-	-	`sha256:b15c9ef5f40098c3bcff1485ce65d3176d5e1f34a3d0201a48dc75105543426f`  
-		Last Modified: Fri, 17 Jun 2016 23:06:16 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:60763d44f4f320891d29c4867c6d6c1bafa24065a7a84264e4cdd1d03c9178d0`  
+		Last Modified: Thu, 23 Jun 2016 20:17:44 GMT  
+		Size: 27.6 MB (27645233 bytes)
+	-	`sha256:303d2c0adfbd7324eeb59e0c79cedec6a3aa769fbf3e41f17046a98792850aed`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 466.0 B
+	-	`sha256:79b90148f12c36b5efc00d284803eb29d800e2ecf6877089ed11c380a1877044`  
+		Last Modified: Thu, 23 Jun 2016 22:15:56 GMT  
+		Size: 2.1 MB (2065037 bytes)
+	-	`sha256:f343dde1a0be7da1a49216b17dbc6bd8eb331ffc539b897e5bad7be8f183f1a3`  
+		Last Modified: Thu, 23 Jun 2016 22:15:55 GMT  
+		Size: 1.8 KB (1821 bytes)
+	-	`sha256:c089d967fe4aeec6a62598a09385a04e1d6ce889c4b9f14076a83b95a333ddbd`  
+		Last Modified: Thu, 23 Jun 2016 22:15:55 GMT  
 		Size: 437.0 B
 
 ## `docker:1.12-rc-dind`
 
 ```console
-$ docker pull docker@sha256:6c2b2a2363c412617320a61f3c362ac7fd9191f563cb745a1941bc7ea39482f4
+$ docker pull docker@sha256:43efe3e2d756faad992304e03be9e8e08f31ca17e0088148fddee289e72bb6b5
 ```
 
 -	Platforms:
@@ -284,76 +284,76 @@ $ docker pull docker@sha256:6c2b2a2363c412617320a61f3c362ac7fd9191f563cb745a1941
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.9 MB (32936296 bytes)**  
+-	Total Size: **32.9 MB (32936288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b163a8a13176f280ae9d417ea5ea78c091c5ae30c03987fab8dc3f9b388dac6a`
+-	Image ID: `sha256:a423a78676a17f189c923646b2be4a171b59bbbc67a109856f495653cb730af2`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Thu, 16 Jun 2016 19:29:29 GMT
+# Thu, 23 Jun 2016 20:17:12 GMT
 ENV DOCKER_BUCKET=test.docker.com
-# Fri, 17 Jun 2016 23:05:02 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_VERSION=1.12.0-rc2
-# Fri, 17 Jun 2016 23:05:03 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_SHA256=6df54c3360f713370aa59b758c45185b9a62889899f1f6185a08497ffd57a39b
-# Fri, 17 Jun 2016 23:05:08 GMT
+# Thu, 23 Jun 2016 20:17:19 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Fri, 17 Jun 2016 23:05:09 GMT
+# Thu, 23 Jun 2016 20:17:20 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 CMD ["sh"]
-# Fri, 17 Jun 2016 23:05:15 GMT
+# Thu, 23 Jun 2016 22:15:44 GMT
 RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
-# Fri, 17 Jun 2016 23:05:16 GMT
+# Thu, 23 Jun 2016 22:15:44 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Fri, 17 Jun 2016 23:05:18 GMT
+# Thu, 23 Jun 2016 22:15:46 GMT
 RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind" -O /usr/local/bin/dind 	&& chmod +x /usr/local/bin/dind
-# Fri, 17 Jun 2016 23:05:18 GMT
+# Thu, 23 Jun 2016 22:15:47 GMT
 COPY file:a00ae81495fdf69e63bb25e3b665aa29cb53cfe5788e6134adfc0f35caff6295 in /usr/local/bin/
-# Fri, 17 Jun 2016 23:05:19 GMT
+# Thu, 23 Jun 2016 22:15:47 GMT
 VOLUME [/var/lib/docker]
-# Fri, 17 Jun 2016 23:05:20 GMT
+# Thu, 23 Jun 2016 22:15:48 GMT
 EXPOSE 2375/tcp
-# Fri, 17 Jun 2016 23:05:21 GMT
+# Thu, 23 Jun 2016 22:15:48 GMT
 ENTRYPOINT &{["dockerd-entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:05:22 GMT
+# Thu, 23 Jun 2016 22:15:49 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:7b891fbaf7dd9b2c57639c8e72f2d3498cd56015816eb2f48814ff2916dc812a`  
-		Last Modified: Fri, 17 Jun 2016 23:05:48 GMT  
-		Size: 27.6 MB (27645232 bytes)
-	-	`sha256:56999c4e4d37e4ea01271be87b1743022660e1986231b5b781203c06c5eb3a5d`  
-		Last Modified: Fri, 17 Jun 2016 23:05:37 GMT  
-		Size: 464.0 B
-	-	`sha256:cece443769bfde5ea116638840e761b2fb3a8c5c32e39d826e5d7cd11d1cf242`  
-		Last Modified: Fri, 17 Jun 2016 23:06:18 GMT  
-		Size: 2.1 MB (2065052 bytes)
-	-	`sha256:2f6eeba48ac9915fb892df74c8bc67c57b9806dad57e5b930ce95ed9561c42fb`  
-		Last Modified: Fri, 17 Jun 2016 23:06:16 GMT  
-		Size: 1.8 KB (1817 bytes)
-	-	`sha256:b15c9ef5f40098c3bcff1485ce65d3176d5e1f34a3d0201a48dc75105543426f`  
-		Last Modified: Fri, 17 Jun 2016 23:06:16 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:60763d44f4f320891d29c4867c6d6c1bafa24065a7a84264e4cdd1d03c9178d0`  
+		Last Modified: Thu, 23 Jun 2016 20:17:44 GMT  
+		Size: 27.6 MB (27645233 bytes)
+	-	`sha256:303d2c0adfbd7324eeb59e0c79cedec6a3aa769fbf3e41f17046a98792850aed`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 466.0 B
+	-	`sha256:79b90148f12c36b5efc00d284803eb29d800e2ecf6877089ed11c380a1877044`  
+		Last Modified: Thu, 23 Jun 2016 22:15:56 GMT  
+		Size: 2.1 MB (2065037 bytes)
+	-	`sha256:f343dde1a0be7da1a49216b17dbc6bd8eb331ffc539b897e5bad7be8f183f1a3`  
+		Last Modified: Thu, 23 Jun 2016 22:15:55 GMT  
+		Size: 1.8 KB (1821 bytes)
+	-	`sha256:c089d967fe4aeec6a62598a09385a04e1d6ce889c4b9f14076a83b95a333ddbd`  
+		Last Modified: Thu, 23 Jun 2016 22:15:55 GMT  
 		Size: 437.0 B
 
 ## `docker:rc-dind`
 
 ```console
-$ docker pull docker@sha256:6c2b2a2363c412617320a61f3c362ac7fd9191f563cb745a1941bc7ea39482f4
+$ docker pull docker@sha256:43efe3e2d756faad992304e03be9e8e08f31ca17e0088148fddee289e72bb6b5
 ```
 
 -	Platforms:
@@ -363,76 +363,76 @@ $ docker pull docker@sha256:6c2b2a2363c412617320a61f3c362ac7fd9191f563cb745a1941
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.9 MB (32936296 bytes)**  
+-	Total Size: **32.9 MB (32936288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b163a8a13176f280ae9d417ea5ea78c091c5ae30c03987fab8dc3f9b388dac6a`
+-	Image ID: `sha256:a423a78676a17f189c923646b2be4a171b59bbbc67a109856f495653cb730af2`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Thu, 16 Jun 2016 19:29:29 GMT
+# Thu, 23 Jun 2016 20:17:12 GMT
 ENV DOCKER_BUCKET=test.docker.com
-# Fri, 17 Jun 2016 23:05:02 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_VERSION=1.12.0-rc2
-# Fri, 17 Jun 2016 23:05:03 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_SHA256=6df54c3360f713370aa59b758c45185b9a62889899f1f6185a08497ffd57a39b
-# Fri, 17 Jun 2016 23:05:08 GMT
+# Thu, 23 Jun 2016 20:17:19 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Fri, 17 Jun 2016 23:05:09 GMT
+# Thu, 23 Jun 2016 20:17:20 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 CMD ["sh"]
-# Fri, 17 Jun 2016 23:05:15 GMT
+# Thu, 23 Jun 2016 22:15:44 GMT
 RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
-# Fri, 17 Jun 2016 23:05:16 GMT
+# Thu, 23 Jun 2016 22:15:44 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Fri, 17 Jun 2016 23:05:18 GMT
+# Thu, 23 Jun 2016 22:15:46 GMT
 RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind" -O /usr/local/bin/dind 	&& chmod +x /usr/local/bin/dind
-# Fri, 17 Jun 2016 23:05:18 GMT
+# Thu, 23 Jun 2016 22:15:47 GMT
 COPY file:a00ae81495fdf69e63bb25e3b665aa29cb53cfe5788e6134adfc0f35caff6295 in /usr/local/bin/
-# Fri, 17 Jun 2016 23:05:19 GMT
+# Thu, 23 Jun 2016 22:15:47 GMT
 VOLUME [/var/lib/docker]
-# Fri, 17 Jun 2016 23:05:20 GMT
+# Thu, 23 Jun 2016 22:15:48 GMT
 EXPOSE 2375/tcp
-# Fri, 17 Jun 2016 23:05:21 GMT
+# Thu, 23 Jun 2016 22:15:48 GMT
 ENTRYPOINT &{["dockerd-entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:05:22 GMT
+# Thu, 23 Jun 2016 22:15:49 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:7b891fbaf7dd9b2c57639c8e72f2d3498cd56015816eb2f48814ff2916dc812a`  
-		Last Modified: Fri, 17 Jun 2016 23:05:48 GMT  
-		Size: 27.6 MB (27645232 bytes)
-	-	`sha256:56999c4e4d37e4ea01271be87b1743022660e1986231b5b781203c06c5eb3a5d`  
-		Last Modified: Fri, 17 Jun 2016 23:05:37 GMT  
-		Size: 464.0 B
-	-	`sha256:cece443769bfde5ea116638840e761b2fb3a8c5c32e39d826e5d7cd11d1cf242`  
-		Last Modified: Fri, 17 Jun 2016 23:06:18 GMT  
-		Size: 2.1 MB (2065052 bytes)
-	-	`sha256:2f6eeba48ac9915fb892df74c8bc67c57b9806dad57e5b930ce95ed9561c42fb`  
-		Last Modified: Fri, 17 Jun 2016 23:06:16 GMT  
-		Size: 1.8 KB (1817 bytes)
-	-	`sha256:b15c9ef5f40098c3bcff1485ce65d3176d5e1f34a3d0201a48dc75105543426f`  
-		Last Modified: Fri, 17 Jun 2016 23:06:16 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:60763d44f4f320891d29c4867c6d6c1bafa24065a7a84264e4cdd1d03c9178d0`  
+		Last Modified: Thu, 23 Jun 2016 20:17:44 GMT  
+		Size: 27.6 MB (27645233 bytes)
+	-	`sha256:303d2c0adfbd7324eeb59e0c79cedec6a3aa769fbf3e41f17046a98792850aed`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 466.0 B
+	-	`sha256:79b90148f12c36b5efc00d284803eb29d800e2ecf6877089ed11c380a1877044`  
+		Last Modified: Thu, 23 Jun 2016 22:15:56 GMT  
+		Size: 2.1 MB (2065037 bytes)
+	-	`sha256:f343dde1a0be7da1a49216b17dbc6bd8eb331ffc539b897e5bad7be8f183f1a3`  
+		Last Modified: Thu, 23 Jun 2016 22:15:55 GMT  
+		Size: 1.8 KB (1821 bytes)
+	-	`sha256:c089d967fe4aeec6a62598a09385a04e1d6ce889c4b9f14076a83b95a333ddbd`  
+		Last Modified: Thu, 23 Jun 2016 22:15:55 GMT  
 		Size: 437.0 B
 
 ## `docker:1.12.0-rc2-git`
 
 ```console
-$ docker pull docker@sha256:f0bb828b2d6fa9a018a3b4980f29ca32251f9fb3301a010f53c1f08170e4a73c
+$ docker pull docker@sha256:803617129dc9a64493644e82f416565a2209d63434ba5410d9577a870a76498b
 ```
 
 -	Platforms:
@@ -442,56 +442,56 @@ $ docker pull docker@sha256:f0bb828b2d6fa9a018a3b4980f29ca32251f9fb3301a010f53c1
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.0 MB (40008410 bytes)**  
+-	Total Size: **40.0 MB (40007425 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85c10790d8918eea5c28e0b0296889114cb25f5c18fef4462533b73295a82b2f`
+-	Image ID: `sha256:3dff9734cc04013d69cec50b4c002f26fe10f15bb0d308dc6adaaa2451b7fd98`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Thu, 16 Jun 2016 19:29:29 GMT
+# Thu, 23 Jun 2016 20:17:12 GMT
 ENV DOCKER_BUCKET=test.docker.com
-# Fri, 17 Jun 2016 23:05:02 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_VERSION=1.12.0-rc2
-# Fri, 17 Jun 2016 23:05:03 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_SHA256=6df54c3360f713370aa59b758c45185b9a62889899f1f6185a08497ffd57a39b
-# Fri, 17 Jun 2016 23:05:08 GMT
+# Thu, 23 Jun 2016 20:17:19 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Fri, 17 Jun 2016 23:05:09 GMT
+# Thu, 23 Jun 2016 20:17:20 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 CMD ["sh"]
-# Fri, 17 Jun 2016 23:05:28 GMT
+# Thu, 23 Jun 2016 22:16:20 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:7b891fbaf7dd9b2c57639c8e72f2d3498cd56015816eb2f48814ff2916dc812a`  
-		Last Modified: Fri, 17 Jun 2016 23:05:48 GMT  
-		Size: 27.6 MB (27645232 bytes)
-	-	`sha256:56999c4e4d37e4ea01271be87b1743022660e1986231b5b781203c06c5eb3a5d`  
-		Last Modified: Fri, 17 Jun 2016 23:05:37 GMT  
-		Size: 464.0 B
-	-	`sha256:3d05c4f273ef139904148455c91d2abd56ac20406a778453f9426b9ea15deb18`  
-		Last Modified: Fri, 17 Jun 2016 23:06:46 GMT  
-		Size: 9.1 MB (9139420 bytes)
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:60763d44f4f320891d29c4867c6d6c1bafa24065a7a84264e4cdd1d03c9178d0`  
+		Last Modified: Thu, 23 Jun 2016 20:17:44 GMT  
+		Size: 27.6 MB (27645233 bytes)
+	-	`sha256:303d2c0adfbd7324eeb59e0c79cedec6a3aa769fbf3e41f17046a98792850aed`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 466.0 B
+	-	`sha256:f332be2a5c799ba46e47b8af939e6b048b00c54a9a1506785b0763fda093620e`  
+		Last Modified: Thu, 23 Jun 2016 22:16:29 GMT  
+		Size: 9.1 MB (9138432 bytes)
 
 ## `docker:1.12-rc-git`
 
 ```console
-$ docker pull docker@sha256:f0bb828b2d6fa9a018a3b4980f29ca32251f9fb3301a010f53c1f08170e4a73c
+$ docker pull docker@sha256:803617129dc9a64493644e82f416565a2209d63434ba5410d9577a870a76498b
 ```
 
 -	Platforms:
@@ -501,56 +501,56 @@ $ docker pull docker@sha256:f0bb828b2d6fa9a018a3b4980f29ca32251f9fb3301a010f53c1
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.0 MB (40008410 bytes)**  
+-	Total Size: **40.0 MB (40007425 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85c10790d8918eea5c28e0b0296889114cb25f5c18fef4462533b73295a82b2f`
+-	Image ID: `sha256:3dff9734cc04013d69cec50b4c002f26fe10f15bb0d308dc6adaaa2451b7fd98`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Thu, 16 Jun 2016 19:29:29 GMT
+# Thu, 23 Jun 2016 20:17:12 GMT
 ENV DOCKER_BUCKET=test.docker.com
-# Fri, 17 Jun 2016 23:05:02 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_VERSION=1.12.0-rc2
-# Fri, 17 Jun 2016 23:05:03 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_SHA256=6df54c3360f713370aa59b758c45185b9a62889899f1f6185a08497ffd57a39b
-# Fri, 17 Jun 2016 23:05:08 GMT
+# Thu, 23 Jun 2016 20:17:19 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Fri, 17 Jun 2016 23:05:09 GMT
+# Thu, 23 Jun 2016 20:17:20 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 CMD ["sh"]
-# Fri, 17 Jun 2016 23:05:28 GMT
+# Thu, 23 Jun 2016 22:16:20 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:7b891fbaf7dd9b2c57639c8e72f2d3498cd56015816eb2f48814ff2916dc812a`  
-		Last Modified: Fri, 17 Jun 2016 23:05:48 GMT  
-		Size: 27.6 MB (27645232 bytes)
-	-	`sha256:56999c4e4d37e4ea01271be87b1743022660e1986231b5b781203c06c5eb3a5d`  
-		Last Modified: Fri, 17 Jun 2016 23:05:37 GMT  
-		Size: 464.0 B
-	-	`sha256:3d05c4f273ef139904148455c91d2abd56ac20406a778453f9426b9ea15deb18`  
-		Last Modified: Fri, 17 Jun 2016 23:06:46 GMT  
-		Size: 9.1 MB (9139420 bytes)
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:60763d44f4f320891d29c4867c6d6c1bafa24065a7a84264e4cdd1d03c9178d0`  
+		Last Modified: Thu, 23 Jun 2016 20:17:44 GMT  
+		Size: 27.6 MB (27645233 bytes)
+	-	`sha256:303d2c0adfbd7324eeb59e0c79cedec6a3aa769fbf3e41f17046a98792850aed`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 466.0 B
+	-	`sha256:f332be2a5c799ba46e47b8af939e6b048b00c54a9a1506785b0763fda093620e`  
+		Last Modified: Thu, 23 Jun 2016 22:16:29 GMT  
+		Size: 9.1 MB (9138432 bytes)
 
 ## `docker:rc-git`
 
 ```console
-$ docker pull docker@sha256:f0bb828b2d6fa9a018a3b4980f29ca32251f9fb3301a010f53c1f08170e4a73c
+$ docker pull docker@sha256:803617129dc9a64493644e82f416565a2209d63434ba5410d9577a870a76498b
 ```
 
 -	Platforms:
@@ -560,51 +560,51 @@ $ docker pull docker@sha256:f0bb828b2d6fa9a018a3b4980f29ca32251f9fb3301a010f53c1
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.0 MB (40008410 bytes)**  
+-	Total Size: **40.0 MB (40007425 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85c10790d8918eea5c28e0b0296889114cb25f5c18fef4462533b73295a82b2f`
+-	Image ID: `sha256:3dff9734cc04013d69cec50b4c002f26fe10f15bb0d308dc6adaaa2451b7fd98`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Thu, 16 Jun 2016 19:29:29 GMT
+# Thu, 23 Jun 2016 20:17:12 GMT
 ENV DOCKER_BUCKET=test.docker.com
-# Fri, 17 Jun 2016 23:05:02 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_VERSION=1.12.0-rc2
-# Fri, 17 Jun 2016 23:05:03 GMT
+# Thu, 23 Jun 2016 20:17:13 GMT
 ENV DOCKER_SHA256=6df54c3360f713370aa59b758c45185b9a62889899f1f6185a08497ffd57a39b
-# Fri, 17 Jun 2016 23:05:08 GMT
+# Thu, 23 Jun 2016 20:17:19 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Fri, 17 Jun 2016 23:05:09 GMT
+# Thu, 23 Jun 2016 20:17:20 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:05:10 GMT
+# Thu, 23 Jun 2016 20:17:21 GMT
 CMD ["sh"]
-# Fri, 17 Jun 2016 23:05:28 GMT
+# Thu, 23 Jun 2016 22:16:20 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:7b891fbaf7dd9b2c57639c8e72f2d3498cd56015816eb2f48814ff2916dc812a`  
-		Last Modified: Fri, 17 Jun 2016 23:05:48 GMT  
-		Size: 27.6 MB (27645232 bytes)
-	-	`sha256:56999c4e4d37e4ea01271be87b1743022660e1986231b5b781203c06c5eb3a5d`  
-		Last Modified: Fri, 17 Jun 2016 23:05:37 GMT  
-		Size: 464.0 B
-	-	`sha256:3d05c4f273ef139904148455c91d2abd56ac20406a778453f9426b9ea15deb18`  
-		Last Modified: Fri, 17 Jun 2016 23:06:46 GMT  
-		Size: 9.1 MB (9139420 bytes)
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:60763d44f4f320891d29c4867c6d6c1bafa24065a7a84264e4cdd1d03c9178d0`  
+		Last Modified: Thu, 23 Jun 2016 20:17:44 GMT  
+		Size: 27.6 MB (27645233 bytes)
+	-	`sha256:303d2c0adfbd7324eeb59e0c79cedec6a3aa769fbf3e41f17046a98792850aed`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 466.0 B
+	-	`sha256:f332be2a5c799ba46e47b8af939e6b048b00c54a9a1506785b0763fda093620e`  
+		Last Modified: Thu, 23 Jun 2016 22:16:29 GMT  
+		Size: 9.1 MB (9138432 bytes)
 
 ## `docker:1.11.2`
 
@@ -825,7 +825,7 @@ CMD ["sh"]
 ## `docker:1.11.2-dind`
 
 ```console
-$ docker pull docker@sha256:3a621f830cb5c8114a08d5cd2255ead368ce496cbc5d5bcfd2a5672cb056611f
+$ docker pull docker@sha256:e3957f7d90368ebae2b1f05ee64f3fc51ddd0986762dbcb65062b3553394b91d
 ```
 
 -	Platforms:
@@ -835,76 +835,76 @@ $ docker pull docker@sha256:3a621f830cb5c8114a08d5cd2255ead368ce496cbc5d5bcfd2a5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.7 MB (25740493 bytes)**  
+-	Total Size: **25.7 MB (25740760 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d7c1ea3f50d3c987cbed5bf067f56c6490524dcbbdff2ef5a6a8b77799ac4f7`
+-	Image ID: `sha256:446184254acb5ccdd09505bfc80164ad3b0b8a08241bda6b2450ce3388bc450a`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_BUCKET=get.docker.com
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_VERSION=1.11.2
-# Wed, 08 Jun 2016 00:52:11 GMT
+# Thu, 23 Jun 2016 20:18:27 GMT
 ENV DOCKER_SHA256=8c2e0c35e3cda11706f54b2d46c2521a6e9026a7b13c7d4b8ae1f3a706fc55e1
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:31 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:32 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 CMD ["sh"]
-# Wed, 08 Jun 2016 00:52:19 GMT
+# Thu, 23 Jun 2016 22:16:53 GMT
 RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
-# Wed, 08 Jun 2016 00:52:19 GMT
+# Thu, 23 Jun 2016 22:16:54 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:55 GMT
 RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind" -O /usr/local/bin/dind 	&& chmod +x /usr/local/bin/dind
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:56 GMT
 COPY file:a00ae81495fdf69e63bb25e3b665aa29cb53cfe5788e6134adfc0f35caff6295 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:56 GMT
 VOLUME [/var/lib/docker]
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:57 GMT
 EXPOSE 2375/tcp
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:57 GMT
 ENTRYPOINT &{["dockerd-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:58 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:665fdfaa830d2cd41ceb0861309d238ab7fdf9981f38e43915e367d2a0967e5c`  
-		Last Modified: Wed, 08 Jun 2016 21:52:23 GMT  
-		Size: 20.4 MB (20449705 bytes)
-	-	`sha256:2e4dc0a13d3ce0ed0f26b04e216c5d1c2d1d04e3456f3004170d4326dcdc44b7`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:10fb2f450fdc80d99e84f607c24917360bdbf360fe7329867de8322425c22624`  
+		Last Modified: Thu, 23 Jun 2016 20:18:53 GMT  
+		Size: 20.4 MB (20449706 bytes)
+	-	`sha256:81ca7ec69872bf4ff8a3ffb899d32ff46a9e5eec6fc69aed7ad580552d3ffa02`  
+		Last Modified: Thu, 23 Jun 2016 20:18:41 GMT  
 		Size: 466.0 B
-	-	`sha256:ccdb3721dea8ae98e7366ee9017d94fd61759252b4096d965ddc5697820b4bdc`  
-		Last Modified: Wed, 08 Jun 2016 21:52:40 GMT  
-		Size: 2.1 MB (2064770 bytes)
-	-	`sha256:daac5d5d9dd9cd796a35f648ce187a87deb4b99b81501790744f59287bb1ad20`  
-		Last Modified: Wed, 08 Jun 2016 21:52:41 GMT  
-		Size: 1.8 KB (1821 bytes)
-	-	`sha256:cdae6dbeb951edfd71e1f50e8fc0746184223c56591f73c23fe886fae9189a6d`  
-		Last Modified: Wed, 08 Jun 2016 21:52:39 GMT  
-		Size: 437.0 B
+	-	`sha256:35a39bc3386b3b69bcd12abc45f6243603645b67ebd20e9cd40b2cfc70c67ef2`  
+		Last Modified: Thu, 23 Jun 2016 22:17:06 GMT  
+		Size: 2.1 MB (2065036 bytes)
+	-	`sha256:168b10f1b028ce18285b34f559fdd3e6b2731b68aba2d15a90b8c507a5de7079`  
+		Last Modified: Thu, 23 Jun 2016 22:17:04 GMT  
+		Size: 1.8 KB (1820 bytes)
+	-	`sha256:4a331bbf814996378cd60fd00fe690a2b33da0b90b7a8654552ee42460f91f75`  
+		Last Modified: Thu, 23 Jun 2016 22:17:05 GMT  
+		Size: 438.0 B
 
 ## `docker:1.11-dind`
 
 ```console
-$ docker pull docker@sha256:3a621f830cb5c8114a08d5cd2255ead368ce496cbc5d5bcfd2a5672cb056611f
+$ docker pull docker@sha256:e3957f7d90368ebae2b1f05ee64f3fc51ddd0986762dbcb65062b3553394b91d
 ```
 
 -	Platforms:
@@ -914,76 +914,76 @@ $ docker pull docker@sha256:3a621f830cb5c8114a08d5cd2255ead368ce496cbc5d5bcfd2a5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.7 MB (25740493 bytes)**  
+-	Total Size: **25.7 MB (25740760 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d7c1ea3f50d3c987cbed5bf067f56c6490524dcbbdff2ef5a6a8b77799ac4f7`
+-	Image ID: `sha256:446184254acb5ccdd09505bfc80164ad3b0b8a08241bda6b2450ce3388bc450a`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_BUCKET=get.docker.com
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_VERSION=1.11.2
-# Wed, 08 Jun 2016 00:52:11 GMT
+# Thu, 23 Jun 2016 20:18:27 GMT
 ENV DOCKER_SHA256=8c2e0c35e3cda11706f54b2d46c2521a6e9026a7b13c7d4b8ae1f3a706fc55e1
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:31 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:32 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 CMD ["sh"]
-# Wed, 08 Jun 2016 00:52:19 GMT
+# Thu, 23 Jun 2016 22:16:53 GMT
 RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
-# Wed, 08 Jun 2016 00:52:19 GMT
+# Thu, 23 Jun 2016 22:16:54 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:55 GMT
 RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind" -O /usr/local/bin/dind 	&& chmod +x /usr/local/bin/dind
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:56 GMT
 COPY file:a00ae81495fdf69e63bb25e3b665aa29cb53cfe5788e6134adfc0f35caff6295 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:56 GMT
 VOLUME [/var/lib/docker]
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:57 GMT
 EXPOSE 2375/tcp
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:57 GMT
 ENTRYPOINT &{["dockerd-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:58 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:665fdfaa830d2cd41ceb0861309d238ab7fdf9981f38e43915e367d2a0967e5c`  
-		Last Modified: Wed, 08 Jun 2016 21:52:23 GMT  
-		Size: 20.4 MB (20449705 bytes)
-	-	`sha256:2e4dc0a13d3ce0ed0f26b04e216c5d1c2d1d04e3456f3004170d4326dcdc44b7`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:10fb2f450fdc80d99e84f607c24917360bdbf360fe7329867de8322425c22624`  
+		Last Modified: Thu, 23 Jun 2016 20:18:53 GMT  
+		Size: 20.4 MB (20449706 bytes)
+	-	`sha256:81ca7ec69872bf4ff8a3ffb899d32ff46a9e5eec6fc69aed7ad580552d3ffa02`  
+		Last Modified: Thu, 23 Jun 2016 20:18:41 GMT  
 		Size: 466.0 B
-	-	`sha256:ccdb3721dea8ae98e7366ee9017d94fd61759252b4096d965ddc5697820b4bdc`  
-		Last Modified: Wed, 08 Jun 2016 21:52:40 GMT  
-		Size: 2.1 MB (2064770 bytes)
-	-	`sha256:daac5d5d9dd9cd796a35f648ce187a87deb4b99b81501790744f59287bb1ad20`  
-		Last Modified: Wed, 08 Jun 2016 21:52:41 GMT  
-		Size: 1.8 KB (1821 bytes)
-	-	`sha256:cdae6dbeb951edfd71e1f50e8fc0746184223c56591f73c23fe886fae9189a6d`  
-		Last Modified: Wed, 08 Jun 2016 21:52:39 GMT  
-		Size: 437.0 B
+	-	`sha256:35a39bc3386b3b69bcd12abc45f6243603645b67ebd20e9cd40b2cfc70c67ef2`  
+		Last Modified: Thu, 23 Jun 2016 22:17:06 GMT  
+		Size: 2.1 MB (2065036 bytes)
+	-	`sha256:168b10f1b028ce18285b34f559fdd3e6b2731b68aba2d15a90b8c507a5de7079`  
+		Last Modified: Thu, 23 Jun 2016 22:17:04 GMT  
+		Size: 1.8 KB (1820 bytes)
+	-	`sha256:4a331bbf814996378cd60fd00fe690a2b33da0b90b7a8654552ee42460f91f75`  
+		Last Modified: Thu, 23 Jun 2016 22:17:05 GMT  
+		Size: 438.0 B
 
 ## `docker:1-dind`
 
 ```console
-$ docker pull docker@sha256:3a621f830cb5c8114a08d5cd2255ead368ce496cbc5d5bcfd2a5672cb056611f
+$ docker pull docker@sha256:e3957f7d90368ebae2b1f05ee64f3fc51ddd0986762dbcb65062b3553394b91d
 ```
 
 -	Platforms:
@@ -993,76 +993,76 @@ $ docker pull docker@sha256:3a621f830cb5c8114a08d5cd2255ead368ce496cbc5d5bcfd2a5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.7 MB (25740493 bytes)**  
+-	Total Size: **25.7 MB (25740760 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d7c1ea3f50d3c987cbed5bf067f56c6490524dcbbdff2ef5a6a8b77799ac4f7`
+-	Image ID: `sha256:446184254acb5ccdd09505bfc80164ad3b0b8a08241bda6b2450ce3388bc450a`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_BUCKET=get.docker.com
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_VERSION=1.11.2
-# Wed, 08 Jun 2016 00:52:11 GMT
+# Thu, 23 Jun 2016 20:18:27 GMT
 ENV DOCKER_SHA256=8c2e0c35e3cda11706f54b2d46c2521a6e9026a7b13c7d4b8ae1f3a706fc55e1
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:31 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:32 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 CMD ["sh"]
-# Wed, 08 Jun 2016 00:52:19 GMT
+# Thu, 23 Jun 2016 22:16:53 GMT
 RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
-# Wed, 08 Jun 2016 00:52:19 GMT
+# Thu, 23 Jun 2016 22:16:54 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:55 GMT
 RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind" -O /usr/local/bin/dind 	&& chmod +x /usr/local/bin/dind
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:56 GMT
 COPY file:a00ae81495fdf69e63bb25e3b665aa29cb53cfe5788e6134adfc0f35caff6295 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:56 GMT
 VOLUME [/var/lib/docker]
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:57 GMT
 EXPOSE 2375/tcp
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:57 GMT
 ENTRYPOINT &{["dockerd-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:58 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:665fdfaa830d2cd41ceb0861309d238ab7fdf9981f38e43915e367d2a0967e5c`  
-		Last Modified: Wed, 08 Jun 2016 21:52:23 GMT  
-		Size: 20.4 MB (20449705 bytes)
-	-	`sha256:2e4dc0a13d3ce0ed0f26b04e216c5d1c2d1d04e3456f3004170d4326dcdc44b7`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:10fb2f450fdc80d99e84f607c24917360bdbf360fe7329867de8322425c22624`  
+		Last Modified: Thu, 23 Jun 2016 20:18:53 GMT  
+		Size: 20.4 MB (20449706 bytes)
+	-	`sha256:81ca7ec69872bf4ff8a3ffb899d32ff46a9e5eec6fc69aed7ad580552d3ffa02`  
+		Last Modified: Thu, 23 Jun 2016 20:18:41 GMT  
 		Size: 466.0 B
-	-	`sha256:ccdb3721dea8ae98e7366ee9017d94fd61759252b4096d965ddc5697820b4bdc`  
-		Last Modified: Wed, 08 Jun 2016 21:52:40 GMT  
-		Size: 2.1 MB (2064770 bytes)
-	-	`sha256:daac5d5d9dd9cd796a35f648ce187a87deb4b99b81501790744f59287bb1ad20`  
-		Last Modified: Wed, 08 Jun 2016 21:52:41 GMT  
-		Size: 1.8 KB (1821 bytes)
-	-	`sha256:cdae6dbeb951edfd71e1f50e8fc0746184223c56591f73c23fe886fae9189a6d`  
-		Last Modified: Wed, 08 Jun 2016 21:52:39 GMT  
-		Size: 437.0 B
+	-	`sha256:35a39bc3386b3b69bcd12abc45f6243603645b67ebd20e9cd40b2cfc70c67ef2`  
+		Last Modified: Thu, 23 Jun 2016 22:17:06 GMT  
+		Size: 2.1 MB (2065036 bytes)
+	-	`sha256:168b10f1b028ce18285b34f559fdd3e6b2731b68aba2d15a90b8c507a5de7079`  
+		Last Modified: Thu, 23 Jun 2016 22:17:04 GMT  
+		Size: 1.8 KB (1820 bytes)
+	-	`sha256:4a331bbf814996378cd60fd00fe690a2b33da0b90b7a8654552ee42460f91f75`  
+		Last Modified: Thu, 23 Jun 2016 22:17:05 GMT  
+		Size: 438.0 B
 
 ## `docker:dind`
 
 ```console
-$ docker pull docker@sha256:3a621f830cb5c8114a08d5cd2255ead368ce496cbc5d5bcfd2a5672cb056611f
+$ docker pull docker@sha256:e3957f7d90368ebae2b1f05ee64f3fc51ddd0986762dbcb65062b3553394b91d
 ```
 
 -	Platforms:
@@ -1072,76 +1072,76 @@ $ docker pull docker@sha256:3a621f830cb5c8114a08d5cd2255ead368ce496cbc5d5bcfd2a5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.7 MB (25740493 bytes)**  
+-	Total Size: **25.7 MB (25740760 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d7c1ea3f50d3c987cbed5bf067f56c6490524dcbbdff2ef5a6a8b77799ac4f7`
+-	Image ID: `sha256:446184254acb5ccdd09505bfc80164ad3b0b8a08241bda6b2450ce3388bc450a`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_BUCKET=get.docker.com
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_VERSION=1.11.2
-# Wed, 08 Jun 2016 00:52:11 GMT
+# Thu, 23 Jun 2016 20:18:27 GMT
 ENV DOCKER_SHA256=8c2e0c35e3cda11706f54b2d46c2521a6e9026a7b13c7d4b8ae1f3a706fc55e1
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:31 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:32 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 CMD ["sh"]
-# Wed, 08 Jun 2016 00:52:19 GMT
+# Thu, 23 Jun 2016 22:16:53 GMT
 RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
-# Wed, 08 Jun 2016 00:52:19 GMT
+# Thu, 23 Jun 2016 22:16:54 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:55 GMT
 RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind" -O /usr/local/bin/dind 	&& chmod +x /usr/local/bin/dind
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:56 GMT
 COPY file:a00ae81495fdf69e63bb25e3b665aa29cb53cfe5788e6134adfc0f35caff6295 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:20 GMT
+# Thu, 23 Jun 2016 22:16:56 GMT
 VOLUME [/var/lib/docker]
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:57 GMT
 EXPOSE 2375/tcp
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:57 GMT
 ENTRYPOINT &{["dockerd-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:21 GMT
+# Thu, 23 Jun 2016 22:16:58 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:665fdfaa830d2cd41ceb0861309d238ab7fdf9981f38e43915e367d2a0967e5c`  
-		Last Modified: Wed, 08 Jun 2016 21:52:23 GMT  
-		Size: 20.4 MB (20449705 bytes)
-	-	`sha256:2e4dc0a13d3ce0ed0f26b04e216c5d1c2d1d04e3456f3004170d4326dcdc44b7`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:10fb2f450fdc80d99e84f607c24917360bdbf360fe7329867de8322425c22624`  
+		Last Modified: Thu, 23 Jun 2016 20:18:53 GMT  
+		Size: 20.4 MB (20449706 bytes)
+	-	`sha256:81ca7ec69872bf4ff8a3ffb899d32ff46a9e5eec6fc69aed7ad580552d3ffa02`  
+		Last Modified: Thu, 23 Jun 2016 20:18:41 GMT  
 		Size: 466.0 B
-	-	`sha256:ccdb3721dea8ae98e7366ee9017d94fd61759252b4096d965ddc5697820b4bdc`  
-		Last Modified: Wed, 08 Jun 2016 21:52:40 GMT  
-		Size: 2.1 MB (2064770 bytes)
-	-	`sha256:daac5d5d9dd9cd796a35f648ce187a87deb4b99b81501790744f59287bb1ad20`  
-		Last Modified: Wed, 08 Jun 2016 21:52:41 GMT  
-		Size: 1.8 KB (1821 bytes)
-	-	`sha256:cdae6dbeb951edfd71e1f50e8fc0746184223c56591f73c23fe886fae9189a6d`  
-		Last Modified: Wed, 08 Jun 2016 21:52:39 GMT  
-		Size: 437.0 B
+	-	`sha256:35a39bc3386b3b69bcd12abc45f6243603645b67ebd20e9cd40b2cfc70c67ef2`  
+		Last Modified: Thu, 23 Jun 2016 22:17:06 GMT  
+		Size: 2.1 MB (2065036 bytes)
+	-	`sha256:168b10f1b028ce18285b34f559fdd3e6b2731b68aba2d15a90b8c507a5de7079`  
+		Last Modified: Thu, 23 Jun 2016 22:17:04 GMT  
+		Size: 1.8 KB (1820 bytes)
+	-	`sha256:4a331bbf814996378cd60fd00fe690a2b33da0b90b7a8654552ee42460f91f75`  
+		Last Modified: Thu, 23 Jun 2016 22:17:05 GMT  
+		Size: 438.0 B
 
 ## `docker:1.11.2-git`
 
 ```console
-$ docker pull docker@sha256:772620e63754b2f189483c30abdf561848554924b7623eaa704b54da81a4d0d6
+$ docker pull docker@sha256:99168dd6df6c84811ad3e449552757c0679f6ba6887841ae8db2e5f64855bd8b
 ```
 
 -	Platforms:
@@ -1151,56 +1151,56 @@ $ docker pull docker@sha256:772620e63754b2f189483c30abdf561848554924b7623eaa704b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.8 MB (32812857 bytes)**  
+-	Total Size: **32.8 MB (32811887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe0b8a2d473761646ffc6ec7ff84a587a811cdd2368e46f8bef7bfb2589cc00c`
+-	Image ID: `sha256:87db9acc91f713cb49c1a5b90063ef94421e0c3eb878922552c0dbcb5f233536`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_BUCKET=get.docker.com
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_VERSION=1.11.2
-# Wed, 08 Jun 2016 00:52:11 GMT
+# Thu, 23 Jun 2016 20:18:27 GMT
 ENV DOCKER_SHA256=8c2e0c35e3cda11706f54b2d46c2521a6e9026a7b13c7d4b8ae1f3a706fc55e1
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:31 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:32 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 CMD ["sh"]
-# Wed, 08 Jun 2016 00:52:25 GMT
+# Thu, 23 Jun 2016 22:17:38 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:665fdfaa830d2cd41ceb0861309d238ab7fdf9981f38e43915e367d2a0967e5c`  
-		Last Modified: Wed, 08 Jun 2016 21:52:23 GMT  
-		Size: 20.4 MB (20449705 bytes)
-	-	`sha256:2e4dc0a13d3ce0ed0f26b04e216c5d1c2d1d04e3456f3004170d4326dcdc44b7`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:10fb2f450fdc80d99e84f607c24917360bdbf360fe7329867de8322425c22624`  
+		Last Modified: Thu, 23 Jun 2016 20:18:53 GMT  
+		Size: 20.4 MB (20449706 bytes)
+	-	`sha256:81ca7ec69872bf4ff8a3ffb899d32ff46a9e5eec6fc69aed7ad580552d3ffa02`  
+		Last Modified: Thu, 23 Jun 2016 20:18:41 GMT  
 		Size: 466.0 B
-	-	`sha256:80b525bc582112d65060b7953af31c366caee76ea73b6a9b3c44bd342e5856f2`  
-		Last Modified: Wed, 08 Jun 2016 21:53:02 GMT  
-		Size: 9.1 MB (9139392 bytes)
+	-	`sha256:1d7e81cdc08bf6db6ce70280f4a26fd660b07f70e97802ee414af0155f46a3ea`  
+		Last Modified: Thu, 23 Jun 2016 22:17:47 GMT  
+		Size: 9.1 MB (9138421 bytes)
 
 ## `docker:1.11-git`
 
 ```console
-$ docker pull docker@sha256:772620e63754b2f189483c30abdf561848554924b7623eaa704b54da81a4d0d6
+$ docker pull docker@sha256:99168dd6df6c84811ad3e449552757c0679f6ba6887841ae8db2e5f64855bd8b
 ```
 
 -	Platforms:
@@ -1210,56 +1210,56 @@ $ docker pull docker@sha256:772620e63754b2f189483c30abdf561848554924b7623eaa704b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.8 MB (32812857 bytes)**  
+-	Total Size: **32.8 MB (32811887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe0b8a2d473761646ffc6ec7ff84a587a811cdd2368e46f8bef7bfb2589cc00c`
+-	Image ID: `sha256:87db9acc91f713cb49c1a5b90063ef94421e0c3eb878922552c0dbcb5f233536`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_BUCKET=get.docker.com
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_VERSION=1.11.2
-# Wed, 08 Jun 2016 00:52:11 GMT
+# Thu, 23 Jun 2016 20:18:27 GMT
 ENV DOCKER_SHA256=8c2e0c35e3cda11706f54b2d46c2521a6e9026a7b13c7d4b8ae1f3a706fc55e1
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:31 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:32 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 CMD ["sh"]
-# Wed, 08 Jun 2016 00:52:25 GMT
+# Thu, 23 Jun 2016 22:17:38 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:665fdfaa830d2cd41ceb0861309d238ab7fdf9981f38e43915e367d2a0967e5c`  
-		Last Modified: Wed, 08 Jun 2016 21:52:23 GMT  
-		Size: 20.4 MB (20449705 bytes)
-	-	`sha256:2e4dc0a13d3ce0ed0f26b04e216c5d1c2d1d04e3456f3004170d4326dcdc44b7`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:10fb2f450fdc80d99e84f607c24917360bdbf360fe7329867de8322425c22624`  
+		Last Modified: Thu, 23 Jun 2016 20:18:53 GMT  
+		Size: 20.4 MB (20449706 bytes)
+	-	`sha256:81ca7ec69872bf4ff8a3ffb899d32ff46a9e5eec6fc69aed7ad580552d3ffa02`  
+		Last Modified: Thu, 23 Jun 2016 20:18:41 GMT  
 		Size: 466.0 B
-	-	`sha256:80b525bc582112d65060b7953af31c366caee76ea73b6a9b3c44bd342e5856f2`  
-		Last Modified: Wed, 08 Jun 2016 21:53:02 GMT  
-		Size: 9.1 MB (9139392 bytes)
+	-	`sha256:1d7e81cdc08bf6db6ce70280f4a26fd660b07f70e97802ee414af0155f46a3ea`  
+		Last Modified: Thu, 23 Jun 2016 22:17:47 GMT  
+		Size: 9.1 MB (9138421 bytes)
 
 ## `docker:1-git`
 
 ```console
-$ docker pull docker@sha256:772620e63754b2f189483c30abdf561848554924b7623eaa704b54da81a4d0d6
+$ docker pull docker@sha256:99168dd6df6c84811ad3e449552757c0679f6ba6887841ae8db2e5f64855bd8b
 ```
 
 -	Platforms:
@@ -1269,56 +1269,56 @@ $ docker pull docker@sha256:772620e63754b2f189483c30abdf561848554924b7623eaa704b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.8 MB (32812857 bytes)**  
+-	Total Size: **32.8 MB (32811887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe0b8a2d473761646ffc6ec7ff84a587a811cdd2368e46f8bef7bfb2589cc00c`
+-	Image ID: `sha256:87db9acc91f713cb49c1a5b90063ef94421e0c3eb878922552c0dbcb5f233536`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_BUCKET=get.docker.com
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_VERSION=1.11.2
-# Wed, 08 Jun 2016 00:52:11 GMT
+# Thu, 23 Jun 2016 20:18:27 GMT
 ENV DOCKER_SHA256=8c2e0c35e3cda11706f54b2d46c2521a6e9026a7b13c7d4b8ae1f3a706fc55e1
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:31 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:32 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 CMD ["sh"]
-# Wed, 08 Jun 2016 00:52:25 GMT
+# Thu, 23 Jun 2016 22:17:38 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:665fdfaa830d2cd41ceb0861309d238ab7fdf9981f38e43915e367d2a0967e5c`  
-		Last Modified: Wed, 08 Jun 2016 21:52:23 GMT  
-		Size: 20.4 MB (20449705 bytes)
-	-	`sha256:2e4dc0a13d3ce0ed0f26b04e216c5d1c2d1d04e3456f3004170d4326dcdc44b7`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:10fb2f450fdc80d99e84f607c24917360bdbf360fe7329867de8322425c22624`  
+		Last Modified: Thu, 23 Jun 2016 20:18:53 GMT  
+		Size: 20.4 MB (20449706 bytes)
+	-	`sha256:81ca7ec69872bf4ff8a3ffb899d32ff46a9e5eec6fc69aed7ad580552d3ffa02`  
+		Last Modified: Thu, 23 Jun 2016 20:18:41 GMT  
 		Size: 466.0 B
-	-	`sha256:80b525bc582112d65060b7953af31c366caee76ea73b6a9b3c44bd342e5856f2`  
-		Last Modified: Wed, 08 Jun 2016 21:53:02 GMT  
-		Size: 9.1 MB (9139392 bytes)
+	-	`sha256:1d7e81cdc08bf6db6ce70280f4a26fd660b07f70e97802ee414af0155f46a3ea`  
+		Last Modified: Thu, 23 Jun 2016 22:17:47 GMT  
+		Size: 9.1 MB (9138421 bytes)
 
 ## `docker:git`
 
 ```console
-$ docker pull docker@sha256:772620e63754b2f189483c30abdf561848554924b7623eaa704b54da81a4d0d6
+$ docker pull docker@sha256:99168dd6df6c84811ad3e449552757c0679f6ba6887841ae8db2e5f64855bd8b
 ```
 
 -	Platforms:
@@ -1328,51 +1328,51 @@ $ docker pull docker@sha256:772620e63754b2f189483c30abdf561848554924b7623eaa704b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.8 MB (32812857 bytes)**  
+-	Total Size: **32.8 MB (32811887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe0b8a2d473761646ffc6ec7ff84a587a811cdd2368e46f8bef7bfb2589cc00c`
+-	Image ID: `sha256:87db9acc91f713cb49c1a5b90063ef94421e0c3eb878922552c0dbcb5f233536`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_BUCKET=get.docker.com
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_VERSION=1.11.2
-# Wed, 08 Jun 2016 00:52:11 GMT
+# Thu, 23 Jun 2016 20:18:27 GMT
 ENV DOCKER_SHA256=8c2e0c35e3cda11706f54b2d46c2521a6e9026a7b13c7d4b8ae1f3a706fc55e1
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:31 GMT
 RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:32 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:14 GMT
+# Thu, 23 Jun 2016 20:18:33 GMT
 CMD ["sh"]
-# Wed, 08 Jun 2016 00:52:25 GMT
+# Thu, 23 Jun 2016 22:17:38 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:665fdfaa830d2cd41ceb0861309d238ab7fdf9981f38e43915e367d2a0967e5c`  
-		Last Modified: Wed, 08 Jun 2016 21:52:23 GMT  
-		Size: 20.4 MB (20449705 bytes)
-	-	`sha256:2e4dc0a13d3ce0ed0f26b04e216c5d1c2d1d04e3456f3004170d4326dcdc44b7`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:10fb2f450fdc80d99e84f607c24917360bdbf360fe7329867de8322425c22624`  
+		Last Modified: Thu, 23 Jun 2016 20:18:53 GMT  
+		Size: 20.4 MB (20449706 bytes)
+	-	`sha256:81ca7ec69872bf4ff8a3ffb899d32ff46a9e5eec6fc69aed7ad580552d3ffa02`  
+		Last Modified: Thu, 23 Jun 2016 20:18:41 GMT  
 		Size: 466.0 B
-	-	`sha256:80b525bc582112d65060b7953af31c366caee76ea73b6a9b3c44bd342e5856f2`  
-		Last Modified: Wed, 08 Jun 2016 21:53:02 GMT  
-		Size: 9.1 MB (9139392 bytes)
+	-	`sha256:1d7e81cdc08bf6db6ce70280f4a26fd660b07f70e97802ee414af0155f46a3ea`  
+		Last Modified: Thu, 23 Jun 2016 22:17:47 GMT  
+		Size: 9.1 MB (9138421 bytes)
 
 ## `docker:1.10.3`
 
@@ -1485,7 +1485,7 @@ CMD ["sh"]
 ## `docker:1.10.3-dind`
 
 ```console
-$ docker pull docker@sha256:d54178ecb7c5889921ac38bfae465cc7920fed0837181234d772552d6cf3657c
+$ docker pull docker@sha256:359fa0a723a98587c99dcbd6a0a0ca59bb869ff07b31488160ad2d2d1994029a
 ```
 
 -	Platforms:
@@ -1495,76 +1495,76 @@ $ docker pull docker@sha256:d54178ecb7c5889921ac38bfae465cc7920fed0837181234d772
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.2 MB (15152445 bytes)**  
+-	Total Size: **15.2 MB (15152698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6ad4d453a8babd43e6d30c5f14af571d7f67a09392f7930a63a2b153df82bed`
+-	Image ID: `sha256:f9f979532e0098064d77d5899d11b8c74c72ecbeb3a3ef5ace04bc36a941e2d9`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_BUCKET=get.docker.com
-# Wed, 08 Jun 2016 00:52:25 GMT
+# Thu, 23 Jun 2016 20:19:26 GMT
 ENV DOCKER_VERSION=1.10.3
-# Wed, 08 Jun 2016 00:52:25 GMT
+# Thu, 23 Jun 2016 20:19:26 GMT
 ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d86d
-# Wed, 08 Jun 2016 00:52:28 GMT
+# Thu, 23 Jun 2016 20:19:30 GMT
 RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION" -o /usr/local/bin/docker 	&& echo "${DOCKER_SHA256}  /usr/local/bin/docker" | sha256sum -c - 	&& chmod +x /usr/local/bin/docker
-# Wed, 08 Jun 2016 00:52:28 GMT
+# Thu, 23 Jun 2016 20:19:31 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:29 GMT
+# Thu, 23 Jun 2016 20:19:32 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:29 GMT
+# Thu, 23 Jun 2016 20:19:32 GMT
 CMD ["sh"]
-# Wed, 08 Jun 2016 00:52:33 GMT
+# Thu, 23 Jun 2016 22:18:18 GMT
 RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
-# Wed, 08 Jun 2016 00:52:34 GMT
+# Thu, 23 Jun 2016 22:18:18 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Wed, 08 Jun 2016 00:52:35 GMT
+# Thu, 23 Jun 2016 22:18:20 GMT
 RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind" -O /usr/local/bin/dind 	&& chmod +x /usr/local/bin/dind
-# Wed, 08 Jun 2016 00:52:35 GMT
+# Thu, 23 Jun 2016 22:18:21 GMT
 COPY file:a00ae81495fdf69e63bb25e3b665aa29cb53cfe5788e6134adfc0f35caff6295 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:35 GMT
+# Thu, 23 Jun 2016 22:18:21 GMT
 VOLUME [/var/lib/docker]
-# Wed, 08 Jun 2016 00:52:36 GMT
+# Thu, 23 Jun 2016 22:18:22 GMT
 EXPOSE 2375/tcp
-# Wed, 08 Jun 2016 00:52:36 GMT
+# Thu, 23 Jun 2016 22:18:22 GMT
 ENTRYPOINT &{["dockerd-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:36 GMT
+# Thu, 23 Jun 2016 22:18:22 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:ed0d2dd5e1a0e5e650a330a864c8a122e9aa91fa6ba9ac6f0bd1882e59df55e7`  
-		Last Modified: Wed, 08 Jun 2016 21:53:25 GMT  
-		Size: 9.9 MB (9861668 bytes)
-	-	`sha256:ec4d00b58417c45f7ddcfde7bcad8c9d62a7d6d5d17cdc1f7d79bcb2e22c1491`  
-		Last Modified: Wed, 08 Jun 2016 21:53:19 GMT  
-		Size: 465.0 B
-	-	`sha256:e0306f3fca4f425910fb19a62cc44cb4df4941c821c0688a5d0fad45cbf49b60`  
-		Last Modified: Wed, 08 Jun 2016 21:53:38 GMT  
-		Size: 2.1 MB (2064759 bytes)
-	-	`sha256:dd5deb9518cb85d0a3ef406bb66b8719bd15da4552149057847d113f867531b1`  
-		Last Modified: Wed, 08 Jun 2016 21:53:37 GMT  
-		Size: 1.8 KB (1821 bytes)
-	-	`sha256:dc0ec9e1f1b6637b551f70040a1752231e290d7bfa08a8350f05dcb1ae6030d5`  
-		Last Modified: Wed, 08 Jun 2016 21:53:37 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:26e60b21b458c4944093a6f68c74a2b2337feba2c08f43a35cb7dcc1a4328e95`  
+		Last Modified: Thu, 23 Jun 2016 20:19:46 GMT  
+		Size: 9.9 MB (9861648 bytes)
+	-	`sha256:ec51c463b77409ebba95c9468b16bbd827179ab223311226feb2219be06dcda4`  
+		Last Modified: Thu, 23 Jun 2016 20:19:40 GMT  
+		Size: 464.0 B
+	-	`sha256:7b47b276b6797dce30f9140d5e08e578583d7bd172fba57a8221594bb24a62b2`  
+		Last Modified: Thu, 23 Jun 2016 22:18:30 GMT  
+		Size: 2.1 MB (2065035 bytes)
+	-	`sha256:6cba7b730cecf3569230c3e091a23e9aaa96336bb5572020f0c678d73c5c921c`  
+		Last Modified: Thu, 23 Jun 2016 22:18:29 GMT  
+		Size: 1.8 KB (1819 bytes)
+	-	`sha256:f30e9131d5aa04cc2c38b9b031089fdb06946f9883462af67e2115d3c8599106`  
+		Last Modified: Thu, 23 Jun 2016 22:18:29 GMT  
 		Size: 438.0 B
 
 ## `docker:1.10-dind`
 
 ```console
-$ docker pull docker@sha256:d54178ecb7c5889921ac38bfae465cc7920fed0837181234d772552d6cf3657c
+$ docker pull docker@sha256:359fa0a723a98587c99dcbd6a0a0ca59bb869ff07b31488160ad2d2d1994029a
 ```
 
 -	Platforms:
@@ -1574,70 +1574,70 @@ $ docker pull docker@sha256:d54178ecb7c5889921ac38bfae465cc7920fed0837181234d772
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.2 MB (15152445 bytes)**  
+-	Total Size: **15.2 MB (15152698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6ad4d453a8babd43e6d30c5f14af571d7f67a09392f7930a63a2b153df82bed`
+-	Image ID: `sha256:f9f979532e0098064d77d5899d11b8c74c72ecbeb3a3ef5ace04bc36a941e2d9`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 00:48:01 GMT
-ADD file:bca92e550bd2ce926584aef2032464b6ebf543ce69133b6602c781866165d703 in /
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl
-# Wed, 08 Jun 2016 00:52:10 GMT
+# Thu, 23 Jun 2016 20:18:26 GMT
 ENV DOCKER_BUCKET=get.docker.com
-# Wed, 08 Jun 2016 00:52:25 GMT
+# Thu, 23 Jun 2016 20:19:26 GMT
 ENV DOCKER_VERSION=1.10.3
-# Wed, 08 Jun 2016 00:52:25 GMT
+# Thu, 23 Jun 2016 20:19:26 GMT
 ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d86d
-# Wed, 08 Jun 2016 00:52:28 GMT
+# Thu, 23 Jun 2016 20:19:30 GMT
 RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION" -o /usr/local/bin/docker 	&& echo "${DOCKER_SHA256}  /usr/local/bin/docker" | sha256sum -c - 	&& chmod +x /usr/local/bin/docker
-# Wed, 08 Jun 2016 00:52:28 GMT
+# Thu, 23 Jun 2016 20:19:31 GMT
 COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:29 GMT
+# Thu, 23 Jun 2016 20:19:32 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:29 GMT
+# Thu, 23 Jun 2016 20:19:32 GMT
 CMD ["sh"]
-# Wed, 08 Jun 2016 00:52:33 GMT
+# Thu, 23 Jun 2016 22:18:18 GMT
 RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
-# Wed, 08 Jun 2016 00:52:34 GMT
+# Thu, 23 Jun 2016 22:18:18 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Wed, 08 Jun 2016 00:52:35 GMT
+# Thu, 23 Jun 2016 22:18:20 GMT
 RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind" -O /usr/local/bin/dind 	&& chmod +x /usr/local/bin/dind
-# Wed, 08 Jun 2016 00:52:35 GMT
+# Thu, 23 Jun 2016 22:18:21 GMT
 COPY file:a00ae81495fdf69e63bb25e3b665aa29cb53cfe5788e6134adfc0f35caff6295 in /usr/local/bin/
-# Wed, 08 Jun 2016 00:52:35 GMT
+# Thu, 23 Jun 2016 22:18:21 GMT
 VOLUME [/var/lib/docker]
-# Wed, 08 Jun 2016 00:52:36 GMT
+# Thu, 23 Jun 2016 22:18:22 GMT
 EXPOSE 2375/tcp
-# Wed, 08 Jun 2016 00:52:36 GMT
+# Thu, 23 Jun 2016 22:18:22 GMT
 ENTRYPOINT &{["dockerd-entrypoint.sh"]}
-# Wed, 08 Jun 2016 00:52:36 GMT
+# Thu, 23 Jun 2016 22:18:22 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:fae91920dcd4542f97c9350b3157139a5d901362c2abec284de5ebd1b45b4957`  
-		Last Modified: Thu, 02 Jun 2016 21:44:01 GMT  
-		Size: 2.3 MB (2310272 bytes)
-	-	`sha256:f384f6ab36adad485192f09379c0b58dc612a3cde82c551e082a7c29a87c95da`  
-		Last Modified: Wed, 08 Jun 2016 21:52:11 GMT  
-		Size: 913.0 KB (913022 bytes)
-	-	`sha256:ed0d2dd5e1a0e5e650a330a864c8a122e9aa91fa6ba9ac6f0bd1882e59df55e7`  
-		Last Modified: Wed, 08 Jun 2016 21:53:25 GMT  
-		Size: 9.9 MB (9861668 bytes)
-	-	`sha256:ec4d00b58417c45f7ddcfde7bcad8c9d62a7d6d5d17cdc1f7d79bcb2e22c1491`  
-		Last Modified: Wed, 08 Jun 2016 21:53:19 GMT  
-		Size: 465.0 B
-	-	`sha256:e0306f3fca4f425910fb19a62cc44cb4df4941c821c0688a5d0fad45cbf49b60`  
-		Last Modified: Wed, 08 Jun 2016 21:53:38 GMT  
-		Size: 2.1 MB (2064759 bytes)
-	-	`sha256:dd5deb9518cb85d0a3ef406bb66b8719bd15da4552149057847d113f867531b1`  
-		Last Modified: Wed, 08 Jun 2016 21:53:37 GMT  
-		Size: 1.8 KB (1821 bytes)
-	-	`sha256:dc0ec9e1f1b6637b551f70040a1752231e290d7bfa08a8350f05dcb1ae6030d5`  
-		Last Modified: Wed, 08 Jun 2016 21:53:37 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:26e60b21b458c4944093a6f68c74a2b2337feba2c08f43a35cb7dcc1a4328e95`  
+		Last Modified: Thu, 23 Jun 2016 20:19:46 GMT  
+		Size: 9.9 MB (9861648 bytes)
+	-	`sha256:ec51c463b77409ebba95c9468b16bbd827179ab223311226feb2219be06dcda4`  
+		Last Modified: Thu, 23 Jun 2016 20:19:40 GMT  
+		Size: 464.0 B
+	-	`sha256:7b47b276b6797dce30f9140d5e08e578583d7bd172fba57a8221594bb24a62b2`  
+		Last Modified: Thu, 23 Jun 2016 22:18:30 GMT  
+		Size: 2.1 MB (2065035 bytes)
+	-	`sha256:6cba7b730cecf3569230c3e091a23e9aaa96336bb5572020f0c678d73c5c921c`  
+		Last Modified: Thu, 23 Jun 2016 22:18:29 GMT  
+		Size: 1.8 KB (1819 bytes)
+	-	`sha256:f30e9131d5aa04cc2c38b9b031089fdb06946f9883462af67e2115d3c8599106`  
+		Last Modified: Thu, 23 Jun 2016 22:18:29 GMT  
 		Size: 438.0 B
 
 ## `docker:1.10.3-git`

@@ -12,7 +12,7 @@
 ## `notary:server`
 
 ```console
-$ docker pull notary@sha256:a5e1a0582435059a721ce17e3c8cc7f30aa691aa24898c8565c4dcd3fbc933e2
+$ docker pull notary@sha256:683215b26cdb6efa7905717ad9019c80d30eba61df29b6672912b1a3f710411f
 ```
 
 -	Platforms:
@@ -20,63 +20,60 @@ $ docker pull notary@sha256:a5e1a0582435059a721ce17e3c8cc7f30aa691aa24898c8565c4
 
 ### `notary:server` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **7.1 MB (7127372 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **7.1 MB (7138497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `bdd7fac1ec3d86e9c965f137ffe7aaf9f80a88889192237531472c4fde7fa3da`
+-	Image ID: `sha256:2bab0da843a102ffe3467a4757cb0a811a314554baff6b721809336f8498ba94`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-server","--help"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:39:22 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 22:31:08 GMT
 EXPOSE 4443/tcp
-# Fri, 06 May 2016 15:39:22 GMT
-COPY file:1e07c889ee6e8eecd33e897f16f7f19404b723eb554a197c98740de927eb0a9a in /notary/server/
-# Wed, 11 May 2016 21:30:10 GMT
-COPY file:d93103320501c0604c868611a6b25c3975a0fd5e0a9a3ed1a4876629426cc6ae in /notary/server/
-# Wed, 11 May 2016 21:30:11 GMT
-COPY file:2129c12f1c9cfe5143a9519521fcc680f97f3d82a20b2c5fe2fdd6e09babd2af in /notary/server/
-# Wed, 11 May 2016 21:30:12 GMT
+# Thu, 23 Jun 2016 22:31:09 GMT
+COPY file:a391e5f2c14d06d975ea8318684174bd0343e8f70df4fe7df6c5f843b4577f75 in /notary/server/
+# Thu, 23 Jun 2016 22:31:10 GMT
+COPY file:00e9bd0f62e819db5a0c6b40aec0a81210342bc19af26ec3af91f9432ac13587 in /notary/server/
+# Thu, 23 Jun 2016 22:31:11 GMT
+COPY file:ac552ea00574aaf9d5de8e5a1abcf10c8f09012df960328db4f963f404e2d409 in /notary/server/
+# Thu, 23 Jun 2016 22:31:11 GMT
 WORKDIR /notary/server
-# Wed, 11 May 2016 21:30:13 GMT
+# Thu, 23 Jun 2016 22:31:13 GMT
 RUN adduser -D -H -g "" notary
-# Wed, 11 May 2016 21:30:14 GMT
+# Thu, 23 Jun 2016 22:31:13 GMT
 USER [notary]
-# Wed, 11 May 2016 21:30:14 GMT
+# Thu, 23 Jun 2016 22:31:14 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/server
-# Wed, 11 May 2016 21:30:15 GMT
+# Thu, 23 Jun 2016 22:31:14 GMT
 ENTRYPOINT &{["entrypoint.sh"]}
-# Wed, 11 May 2016 21:30:16 GMT
+# Thu, 23 Jun 2016 22:31:15 GMT
 CMD ["notary-server" "--help"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:40f3b040b0ce0ffdb0c12364b0191070df122d2b7fdd8353735ba45794b989ca`  
-		Last Modified: Wed, 11 May 2016 21:32:54 GMT  
-		Size: 1.2 KB (1193 bytes)
-	-	`sha256:9e6ff153f27a35d5da93ae0fbfa9279e35c6396c15598192452bcf32e13fb16f`  
-		Last Modified: Wed, 11 May 2016 21:33:00 GMT  
-		Size: 380.0 B
-	-	`sha256:d8e2f04419fc2082d8b376b7528c9f984f39a018ab0c6a148e98b1cd1a934373`  
-		Last Modified: Wed, 11 May 2016 21:33:05 GMT  
-		Size: 4.8 MB (4805125 bytes)
-	-	`sha256:237809cc8e665693e7c3e80c36771256590cb46dc65c205c6ec97462e89cc0ed`  
-		Last Modified: Fri, 06 May 2016 18:07:54 GMT  
-		Size: 430.0 B
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:b8348a1fea261cbcf707a9a2f3dcb6adf29f2e09ecad7bf65b013aa70ff78615`  
+		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
+		Size: 418.0 B
+	-	`sha256:0fc940aaefff4c28fc98eccb5d7df89e3b063cba90f85efeb46bfdacf7e3dbd5`  
+		Last Modified: Thu, 23 Jun 2016 22:31:23 GMT  
+		Size: 4.8 MB (4805120 bytes)
+	-	`sha256:650a2de6a8a454cc7f719652dade5d5a4304acfe4c20f9df9ffba5bf290fe5bc`  
+		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
+		Size: 377.0 B
+	-	`sha256:04975f42ee96980f63b77843fb618e43416e498dd93e1f22e8015eea9e8354d3`  
+		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
+		Size: 22.3 KB (22296 bytes)
 
 ## `notary:server-0.3.0`
 
 ```console
-$ docker pull notary@sha256:1da905dfa3fce453fe9c9ce12f1ad3b09b664b2b8a787b6072dfa71eb87a50dd
+$ docker pull notary@sha256:683215b26cdb6efa7905717ad9019c80d30eba61df29b6672912b1a3f710411f
 ```
 
 -	Platforms:
@@ -84,78 +81,60 @@ $ docker pull notary@sha256:1da905dfa3fce453fe9c9ce12f1ad3b09b664b2b8a787b6072df
 
 ### `notary:server-0.3.0` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 MB (7127532 bytes)**  
+-	Total Size: **7.1 MB (7138497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f643c91f9a8cb89534c6dd4a09f0c74e931a2aa5717f898a820ef7cc3f06a56f`
+-	Image ID: `sha256:2bab0da843a102ffe3467a4757cb0a811a314554baff6b721809336f8498ba94`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-server","--help"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:39:22 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 22:31:08 GMT
 EXPOSE 4443/tcp
-# Fri, 06 May 2016 15:39:22 GMT
-COPY file:1e07c889ee6e8eecd33e897f16f7f19404b723eb554a197c98740de927eb0a9a in /notary/server/
-# Wed, 11 May 2016 21:30:10 GMT
-COPY file:d93103320501c0604c868611a6b25c3975a0fd5e0a9a3ed1a4876629426cc6ae in /notary/server/
-# Wed, 11 May 2016 21:30:11 GMT
-COPY file:2129c12f1c9cfe5143a9519521fcc680f97f3d82a20b2c5fe2fdd6e09babd2af in /notary/server/
-# Wed, 11 May 2016 21:30:12 GMT
+# Thu, 23 Jun 2016 22:31:09 GMT
+COPY file:a391e5f2c14d06d975ea8318684174bd0343e8f70df4fe7df6c5f843b4577f75 in /notary/server/
+# Thu, 23 Jun 2016 22:31:10 GMT
+COPY file:00e9bd0f62e819db5a0c6b40aec0a81210342bc19af26ec3af91f9432ac13587 in /notary/server/
+# Thu, 23 Jun 2016 22:31:11 GMT
+COPY file:ac552ea00574aaf9d5de8e5a1abcf10c8f09012df960328db4f963f404e2d409 in /notary/server/
+# Thu, 23 Jun 2016 22:31:11 GMT
 WORKDIR /notary/server
-# Wed, 11 May 2016 21:30:13 GMT
+# Thu, 23 Jun 2016 22:31:13 GMT
 RUN adduser -D -H -g "" notary
-# Wed, 11 May 2016 21:30:14 GMT
+# Thu, 23 Jun 2016 22:31:13 GMT
 USER [notary]
-# Wed, 11 May 2016 21:30:14 GMT
+# Thu, 23 Jun 2016 22:31:14 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/server
-# Wed, 11 May 2016 21:30:15 GMT
+# Thu, 23 Jun 2016 22:31:14 GMT
 ENTRYPOINT &{["entrypoint.sh"]}
-# Wed, 11 May 2016 21:30:16 GMT
+# Thu, 23 Jun 2016 22:31:15 GMT
 CMD ["notary-server" "--help"]
 ```
 
 -	Layers:
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:237809cc8e665693e7c3e80c36771256590cb46dc65c205c6ec97462e89cc0ed`  
-		Last Modified: Fri, 06 May 2016 18:07:54 GMT  
-		Size: 430.0 B
-	-	`sha256:d8e2f04419fc2082d8b376b7528c9f984f39a018ab0c6a148e98b1cd1a934373`  
-		Last Modified: Wed, 11 May 2016 21:33:05 GMT  
-		Size: 4.8 MB (4805125 bytes)
-	-	`sha256:9e6ff153f27a35d5da93ae0fbfa9279e35c6396c15598192452bcf32e13fb16f`  
-		Last Modified: Wed, 11 May 2016 21:33:00 GMT  
-		Size: 380.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:40f3b040b0ce0ffdb0c12364b0191070df122d2b7fdd8353735ba45794b989ca`  
-		Last Modified: Wed, 11 May 2016 21:32:54 GMT  
-		Size: 1.2 KB (1193 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:b8348a1fea261cbcf707a9a2f3dcb6adf29f2e09ecad7bf65b013aa70ff78615`  
+		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
+		Size: 418.0 B
+	-	`sha256:0fc940aaefff4c28fc98eccb5d7df89e3b063cba90f85efeb46bfdacf7e3dbd5`  
+		Last Modified: Thu, 23 Jun 2016 22:31:23 GMT  
+		Size: 4.8 MB (4805120 bytes)
+	-	`sha256:650a2de6a8a454cc7f719652dade5d5a4304acfe4c20f9df9ffba5bf290fe5bc`  
+		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
+		Size: 377.0 B
+	-	`sha256:04975f42ee96980f63b77843fb618e43416e498dd93e1f22e8015eea9e8354d3`  
+		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
+		Size: 22.3 KB (22296 bytes)
 
 ## `notary:signer`
 
 ```console
-$ docker pull notary@sha256:9fcb3f2ffa835974f067943226c3e2afe072d217ca9b68715e3fb715ab4012e5
+$ docker pull notary@sha256:4a8bdd90805aa5ca24c6925c6a35f6c3903ef85ffb96b1b5318957404b139263
 ```
 
 -	Platforms:
@@ -163,65 +142,62 @@ $ docker pull notary@sha256:9fcb3f2ffa835974f067943226c3e2afe072d217ca9b68715e3f
 
 ### `notary:signer` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **6.8 MB (6842917 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.9 MB (6854069 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `744f1f3d2c7b2865303732a0478f65e7a200d1a668ce571677d16631f08dd4d6`
+-	Image ID: `sha256:1d80bb3ab10f8d7859bc05d5bf2386f68cbd2b14bb47b93a870be8b737a51fb2`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-signer","--help"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:40:26 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 22:31:36 GMT
 EXPOSE 4444/tcp
-# Fri, 06 May 2016 15:40:27 GMT
+# Thu, 23 Jun 2016 22:31:36 GMT
 EXPOSE 7899/tcp
-# Fri, 06 May 2016 15:40:27 GMT
-COPY file:5108e98f2aaf1679e799236335417b35951b7f4faf31a432e9600835f1a3ddb9 in /notary/signer/
-# Wed, 11 May 2016 21:30:59 GMT
-COPY file:546af02e66c4451d785b569492e95ea7334c6f1226bd4cc4b847355a49bc076c in /notary/signer/
-# Wed, 11 May 2016 21:31:00 GMT
-COPY file:e4541a5b8f85ef71346cf16505b75031478b0cd44e2ccfd68fc9c22c31543c8a in /notary/signer/
-# Wed, 11 May 2016 21:31:01 GMT
+# Thu, 23 Jun 2016 22:31:37 GMT
+COPY file:cfc28ba1c6b9fd3e055210e061c2ad2c9b41eb542b23eb7d3c9adca0a0dd775d in /notary/signer/
+# Thu, 23 Jun 2016 22:31:58 GMT
+COPY file:82acc68c6a248c805a4db0f9d4a1765d55586bee3eb5d63feb0f3f677a8bf902 in /notary/signer/
+# Thu, 23 Jun 2016 22:31:59 GMT
+COPY file:659a7bf8bfc297520f9f4ea7e10ccff4b6686bd694f08c0471bc2da01551deb8 in /notary/signer/
+# Thu, 23 Jun 2016 22:31:59 GMT
 WORKDIR /notary/signer
-# Wed, 11 May 2016 21:31:02 GMT
+# Thu, 23 Jun 2016 22:32:01 GMT
 RUN adduser -D -H -g "" notary
-# Wed, 11 May 2016 21:31:03 GMT
+# Thu, 23 Jun 2016 22:32:01 GMT
 USER [notary]
-# Wed, 11 May 2016 21:31:04 GMT
+# Thu, 23 Jun 2016 22:32:02 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/signer
-# Wed, 11 May 2016 21:31:04 GMT
+# Thu, 23 Jun 2016 22:32:02 GMT
 ENTRYPOINT &{["entrypoint.sh"]}
-# Wed, 11 May 2016 21:31:05 GMT
+# Thu, 23 Jun 2016 22:32:03 GMT
 CMD ["notary-signer" "--help"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:aae0e138a1a2da0c1773191663c9959888e9c4f0a7cc6702b15edbbe1f307615`  
-		Last Modified: Wed, 11 May 2016 21:33:25 GMT  
-		Size: 1.2 KB (1192 bytes)
-	-	`sha256:9c06e543df299c4c4ccf9119794b519efe77c915d994c2abdb73b9e828fdc88a`  
-		Last Modified: Wed, 11 May 2016 21:33:30 GMT  
-		Size: 380.0 B
-	-	`sha256:422651110a6634bb0ec14a6ca0f164c89839c14dd995616e0136db6b4cfab73a`  
-		Last Modified: Wed, 11 May 2016 21:33:34 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:77efbd90365f7b1193b0c4fdda6df37bd6c2d71a41cb15de6dbe3f4a3359cd2c`  
+		Last Modified: Thu, 23 Jun 2016 22:31:49 GMT  
+		Size: 348.0 B
+	-	`sha256:83acc7703368ac5b5df060c1e2e90b1c053f44fdd20210cf5b7c94b2e2c07715`  
+		Last Modified: Thu, 23 Jun 2016 22:32:11 GMT  
 		Size: 4.5 MB (4520743 bytes)
-	-	`sha256:28fa50665d0ecc6eeac69772053022e2313110b6e40c5b6c84f139a4216d07f1`  
-		Last Modified: Fri, 06 May 2016 18:08:30 GMT  
-		Size: 358.0 B
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:9e6359c5abf8a5268f81ca7976fe401820662b07a4ad1b774c43b0bddb646e8c`  
+		Last Modified: Thu, 23 Jun 2016 22:32:09 GMT  
+		Size: 379.0 B
+	-	`sha256:5a66db56d051f712c2d6bfcefadab4266d6001566e077f0ab793ec744ad86a3e`  
+		Last Modified: Thu, 23 Jun 2016 22:32:09 GMT  
+		Size: 22.3 KB (22313 bytes)
 
 ## `notary:signer-0.3.0`
 
 ```console
-$ docker pull notary@sha256:05bc61ae17b80e3ed0aefb396b125a8add95b43082ba1307838a5f308358f2be
+$ docker pull notary@sha256:4a8bdd90805aa5ca24c6925c6a35f6c3903ef85ffb96b1b5318957404b139263
 ```
 
 -	Platforms:
@@ -229,65 +205,62 @@ $ docker pull notary@sha256:05bc61ae17b80e3ed0aefb396b125a8add95b43082ba1307838a
 
 ### `notary:signer-0.3.0` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **6.8 MB (6842917 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.9 MB (6854069 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `744f1f3d2c7b2865303732a0478f65e7a200d1a668ce571677d16631f08dd4d6`
+-	Image ID: `sha256:1d80bb3ab10f8d7859bc05d5bf2386f68cbd2b14bb47b93a870be8b737a51fb2`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-signer","--help"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:40:26 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 22:31:36 GMT
 EXPOSE 4444/tcp
-# Fri, 06 May 2016 15:40:27 GMT
+# Thu, 23 Jun 2016 22:31:36 GMT
 EXPOSE 7899/tcp
-# Fri, 06 May 2016 15:40:27 GMT
-COPY file:5108e98f2aaf1679e799236335417b35951b7f4faf31a432e9600835f1a3ddb9 in /notary/signer/
-# Wed, 11 May 2016 21:30:59 GMT
-COPY file:546af02e66c4451d785b569492e95ea7334c6f1226bd4cc4b847355a49bc076c in /notary/signer/
-# Wed, 11 May 2016 21:31:00 GMT
-COPY file:e4541a5b8f85ef71346cf16505b75031478b0cd44e2ccfd68fc9c22c31543c8a in /notary/signer/
-# Wed, 11 May 2016 21:31:01 GMT
+# Thu, 23 Jun 2016 22:31:37 GMT
+COPY file:cfc28ba1c6b9fd3e055210e061c2ad2c9b41eb542b23eb7d3c9adca0a0dd775d in /notary/signer/
+# Thu, 23 Jun 2016 22:31:58 GMT
+COPY file:82acc68c6a248c805a4db0f9d4a1765d55586bee3eb5d63feb0f3f677a8bf902 in /notary/signer/
+# Thu, 23 Jun 2016 22:31:59 GMT
+COPY file:659a7bf8bfc297520f9f4ea7e10ccff4b6686bd694f08c0471bc2da01551deb8 in /notary/signer/
+# Thu, 23 Jun 2016 22:31:59 GMT
 WORKDIR /notary/signer
-# Wed, 11 May 2016 21:31:02 GMT
+# Thu, 23 Jun 2016 22:32:01 GMT
 RUN adduser -D -H -g "" notary
-# Wed, 11 May 2016 21:31:03 GMT
+# Thu, 23 Jun 2016 22:32:01 GMT
 USER [notary]
-# Wed, 11 May 2016 21:31:04 GMT
+# Thu, 23 Jun 2016 22:32:02 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/signer
-# Wed, 11 May 2016 21:31:04 GMT
+# Thu, 23 Jun 2016 22:32:02 GMT
 ENTRYPOINT &{["entrypoint.sh"]}
-# Wed, 11 May 2016 21:31:05 GMT
+# Thu, 23 Jun 2016 22:32:03 GMT
 CMD ["notary-signer" "--help"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:aae0e138a1a2da0c1773191663c9959888e9c4f0a7cc6702b15edbbe1f307615`  
-		Last Modified: Wed, 11 May 2016 21:33:25 GMT  
-		Size: 1.2 KB (1192 bytes)
-	-	`sha256:9c06e543df299c4c4ccf9119794b519efe77c915d994c2abdb73b9e828fdc88a`  
-		Last Modified: Wed, 11 May 2016 21:33:30 GMT  
-		Size: 380.0 B
-	-	`sha256:422651110a6634bb0ec14a6ca0f164c89839c14dd995616e0136db6b4cfab73a`  
-		Last Modified: Wed, 11 May 2016 21:33:34 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:77efbd90365f7b1193b0c4fdda6df37bd6c2d71a41cb15de6dbe3f4a3359cd2c`  
+		Last Modified: Thu, 23 Jun 2016 22:31:49 GMT  
+		Size: 348.0 B
+	-	`sha256:83acc7703368ac5b5df060c1e2e90b1c053f44fdd20210cf5b7c94b2e2c07715`  
+		Last Modified: Thu, 23 Jun 2016 22:32:11 GMT  
 		Size: 4.5 MB (4520743 bytes)
-	-	`sha256:28fa50665d0ecc6eeac69772053022e2313110b6e40c5b6c84f139a4216d07f1`  
-		Last Modified: Fri, 06 May 2016 18:08:30 GMT  
-		Size: 358.0 B
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:9e6359c5abf8a5268f81ca7976fe401820662b07a4ad1b774c43b0bddb646e8c`  
+		Last Modified: Thu, 23 Jun 2016 22:32:09 GMT  
+		Size: 379.0 B
+	-	`sha256:5a66db56d051f712c2d6bfcefadab4266d6001566e077f0ab793ec744ad86a3e`  
+		Last Modified: Thu, 23 Jun 2016 22:32:09 GMT  
+		Size: 22.3 KB (22313 bytes)
 
 ## `notary:server-0.2.0`
 
 ```console
-$ docker pull notary@sha256:0206aa982c86ea356323552cc71800a55ea47db9c97f2c9c93f919673ecd1b6f
+$ docker pull notary@sha256:7881e1e1ee0377678ab75295dd011fb32a131dc7d7a4cee287ffb4639c21053d
 ```
 
 -	Platforms:
@@ -295,63 +268,60 @@ $ docker pull notary@sha256:0206aa982c86ea356323552cc71800a55ea47db9c97f2c9c93f9
 
 ### `notary:server-0.2.0` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **8.0 MB (8020562 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **8.0 MB (8031737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `2a0ef0801f6552d2022c3f046bb52ff6008c364de6732e1fd3cc447d96ab0db6`
+-	Image ID: `sha256:14da5f83b1d05df9e46a602b8da3aa5f1d81e61625f27eae1b8bd476c9fc3ba7`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-server","--help"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:39:22 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 22:31:08 GMT
 EXPOSE 4443/tcp
-# Fri, 06 May 2016 15:39:22 GMT
-COPY file:1e07c889ee6e8eecd33e897f16f7f19404b723eb554a197c98740de927eb0a9a in /notary/server/
-# Fri, 06 May 2016 15:39:23 GMT
-COPY file:f2a632e605d35f52f2a17370b3768993f6e3c5df3304c247176391e7f5288fd4 in /notary/server/
-# Fri, 06 May 2016 15:39:24 GMT
-COPY file:2129c12f1c9cfe5143a9519521fcc680f97f3d82a20b2c5fe2fdd6e09babd2af in /notary/server/
-# Fri, 06 May 2016 15:39:24 GMT
+# Thu, 23 Jun 2016 22:31:09 GMT
+COPY file:a391e5f2c14d06d975ea8318684174bd0343e8f70df4fe7df6c5f843b4577f75 in /notary/server/
+# Thu, 23 Jun 2016 22:32:26 GMT
+COPY file:bd5efe2bcf5edc978d29f7becee5c6fd4d6c3b6d5e2e97eeba683a996926ebe6 in /notary/server/
+# Thu, 23 Jun 2016 22:32:26 GMT
+COPY file:ac552ea00574aaf9d5de8e5a1abcf10c8f09012df960328db4f963f404e2d409 in /notary/server/
+# Thu, 23 Jun 2016 22:32:27 GMT
 WORKDIR /notary/server
-# Fri, 06 May 2016 15:39:26 GMT
+# Thu, 23 Jun 2016 22:32:28 GMT
 RUN adduser -D -H -g "" notary
-# Fri, 06 May 2016 15:39:27 GMT
+# Thu, 23 Jun 2016 22:32:29 GMT
 USER [notary]
-# Fri, 06 May 2016 15:39:27 GMT
+# Thu, 23 Jun 2016 22:32:29 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/server
-# Fri, 06 May 2016 15:39:28 GMT
+# Thu, 23 Jun 2016 22:32:30 GMT
 ENTRYPOINT &{["entrypoint.sh"]}
-# Fri, 06 May 2016 15:39:29 GMT
+# Thu, 23 Jun 2016 22:32:30 GMT
 CMD ["notary-server" "--help"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:777eea6f64c3d684d2730d376e5880ddd92c9ce7dbeee8c70f0d9a9fcb3916c1`  
-		Last Modified: Fri, 06 May 2016 18:07:40 GMT  
-		Size: 1.2 KB (1194 bytes)
-	-	`sha256:1ba25d469a5d9d1d4b94ccc41e29fa2d47e3427a4f2f9864060eaee1e91a62d9`  
-		Last Modified: Fri, 06 May 2016 18:07:45 GMT  
-		Size: 380.0 B
-	-	`sha256:06761ff1b7990348b16cb35338143d627c9d32bc54e59682eaa78280bce2d6fd`  
-		Last Modified: Fri, 06 May 2016 18:07:50 GMT  
-		Size: 5.7 MB (5698314 bytes)
-	-	`sha256:237809cc8e665693e7c3e80c36771256590cb46dc65c205c6ec97462e89cc0ed`  
-		Last Modified: Fri, 06 May 2016 18:07:54 GMT  
-		Size: 430.0 B
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:b8348a1fea261cbcf707a9a2f3dcb6adf29f2e09ecad7bf65b013aa70ff78615`  
+		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
+		Size: 418.0 B
+	-	`sha256:b5ff28a2c000ca792e81aa49fbc02d274fdff04232fd8c663160e9b9c32b8bb6`  
+		Last Modified: Thu, 23 Jun 2016 22:32:39 GMT  
+		Size: 5.7 MB (5698317 bytes)
+	-	`sha256:dda55bccbaeb9edb457ab1e8910ed00b6881e320dd44b8fc80fb53b5a83631e5`  
+		Last Modified: Thu, 23 Jun 2016 22:32:37 GMT  
+		Size: 376.0 B
+	-	`sha256:b04f4e59c386d86960c53512f1654b966309d7c1a71bb2fe34705056f6b026de`  
+		Last Modified: Thu, 23 Jun 2016 22:32:37 GMT  
+		Size: 22.3 KB (22340 bytes)
 
 ## `notary:signer-0.2.0`
 
 ```console
-$ docker pull notary@sha256:5900402ba0e724edc5c557758a24d204723d261bea2e8cab72d5a146d3808f82
+$ docker pull notary@sha256:5c1df7733596f71a7058b2b17ad5d2a1b052ee92d34482b60435f854e472d195
 ```
 
 -	Platforms:
@@ -359,57 +329,54 @@ $ docker pull notary@sha256:5900402ba0e724edc5c557758a24d204723d261bea2e8cab72d5
 
 ### `notary:signer-0.2.0` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **7.8 MB (7787282 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **7.8 MB (7798456 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `1ca25d26cbfdd62c50ba51889245f15ad73d032c668dc6b56dda371ffdcb7ac5`
+-	Image ID: `sha256:cba60860a51eb3779a71fc4cd346faec0ee0296eba2a6b60274dbac86ac7a761`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-signer","--help"]`
 
 ```dockerfile
-# Fri, 06 May 2016 14:56:49 GMT
-ADD file:614a9122187935fccfa72039b9efa3ddbf371f6b029bb01e2073325f00c80b9f in /
-# Fri, 06 May 2016 15:40:26 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 22:31:36 GMT
 EXPOSE 4444/tcp
-# Fri, 06 May 2016 15:40:27 GMT
+# Thu, 23 Jun 2016 22:31:36 GMT
 EXPOSE 7899/tcp
-# Fri, 06 May 2016 15:40:27 GMT
-COPY file:5108e98f2aaf1679e799236335417b35951b7f4faf31a432e9600835f1a3ddb9 in /notary/signer/
-# Fri, 06 May 2016 15:40:28 GMT
-COPY file:f4ee0d62d289884272c136685d9f2f952e266377bd475c47ff844d6fdec9d163 in /notary/signer/
-# Fri, 06 May 2016 15:40:29 GMT
-COPY file:e4541a5b8f85ef71346cf16505b75031478b0cd44e2ccfd68fc9c22c31543c8a in /notary/signer/
-# Fri, 06 May 2016 15:40:29 GMT
+# Thu, 23 Jun 2016 22:31:37 GMT
+COPY file:cfc28ba1c6b9fd3e055210e061c2ad2c9b41eb542b23eb7d3c9adca0a0dd775d in /notary/signer/
+# Thu, 23 Jun 2016 22:31:38 GMT
+COPY file:6806f4a48e8f380fa47dbf76a9f4ad0e8e3210043b8fa73dc9e088434743cd79 in /notary/signer/
+# Thu, 23 Jun 2016 22:31:39 GMT
+COPY file:659a7bf8bfc297520f9f4ea7e10ccff4b6686bd694f08c0471bc2da01551deb8 in /notary/signer/
+# Thu, 23 Jun 2016 22:31:39 GMT
 WORKDIR /notary/signer
-# Fri, 06 May 2016 15:40:31 GMT
+# Thu, 23 Jun 2016 22:31:41 GMT
 RUN adduser -D -H -g "" notary
-# Fri, 06 May 2016 15:40:32 GMT
+# Thu, 23 Jun 2016 22:31:41 GMT
 USER [notary]
-# Fri, 06 May 2016 15:40:32 GMT
+# Thu, 23 Jun 2016 22:31:42 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/signer
-# Fri, 06 May 2016 15:40:33 GMT
+# Thu, 23 Jun 2016 22:31:42 GMT
 ENTRYPOINT &{["entrypoint.sh"]}
-# Fri, 06 May 2016 15:40:34 GMT
+# Thu, 23 Jun 2016 22:31:43 GMT
 CMD ["notary-signer" "--help"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:d93ff2811db37f6557b42c9bfdc2772001eda932b3131f4c11e2c74bb6a5bc28`  
-		Last Modified: Fri, 06 May 2016 18:08:16 GMT  
-		Size: 1.2 KB (1194 bytes)
-	-	`sha256:f286ac5238e4850c46c6c7e0460592465c23cc35e506fb2966893ae4c80d925d`  
-		Last Modified: Fri, 06 May 2016 18:08:21 GMT  
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:77efbd90365f7b1193b0c4fdda6df37bd6c2d71a41cb15de6dbe3f4a3359cd2c`  
+		Last Modified: Thu, 23 Jun 2016 22:31:49 GMT  
+		Size: 348.0 B
+	-	`sha256:fc06a849bf63eeb7520cfc432907796c01e43a0397495b38b339da740542d98a`  
+		Last Modified: Thu, 23 Jun 2016 22:31:51 GMT  
+		Size: 5.5 MB (5465104 bytes)
+	-	`sha256:98a4f8e724c4229cfbb5a790c8da7762cf2f5d09ff9f0925237ff103fad40a06`  
+		Last Modified: Thu, 23 Jun 2016 22:31:49 GMT  
 		Size: 380.0 B
-	-	`sha256:d1da700efd47542213b134c9049b2888c4bbee639cbd80be169ac09d46977766`  
-		Last Modified: Fri, 06 May 2016 18:08:26 GMT  
-		Size: 5.5 MB (5465106 bytes)
-	-	`sha256:28fa50665d0ecc6eeac69772053022e2313110b6e40c5b6c84f139a4216d07f1`  
-		Last Modified: Fri, 06 May 2016 18:08:30 GMT  
-		Size: 358.0 B
-	-	`sha256:d0ca440e86378344053c79282fe959c9f288ef2ab031411295d87ef1250cfec3`  
-		Last Modified: Fri, 06 May 2016 14:57:17 GMT  
-		Size: 2.3 MB (2320212 bytes)
+	-	`sha256:86b3d2e572e4e5950b0a7446d4cdece2e7f9d83b500446f39c5e094e27b4706f`  
+		Last Modified: Thu, 23 Jun 2016 22:31:49 GMT  
+		Size: 22.3 KB (22338 bytes)
