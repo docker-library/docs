@@ -6,7 +6,7 @@
 -	[`mariadb:10.1`](#mariadb101)
 -	[`mariadb:10`](#mariadb10)
 -	[`mariadb:latest`](#mariadblatest)
--	[`mariadb:10.0.25`](#mariadb10025)
+-	[`mariadb:10.0.26`](#mariadb10026)
 -	[`mariadb:10.0`](#mariadb100)
 -	[`mariadb:5.5.50`](#mariadb5550)
 -	[`mariadb:5.5`](#mariadb55)
@@ -412,22 +412,22 @@ CMD ["mysqld"]
 		Last Modified: Fri, 17 Jun 2016 22:47:38 GMT  
 		Size: 120.0 B
 
-## `mariadb:10.0.25`
+## `mariadb:10.0.26`
 
 ```console
-$ docker pull mariadb@sha256:fe20d6039872a63cdf9a33ff06bd18ecc408d78060556c82dfd3f5f0bd3355dd
+$ docker pull mariadb@sha256:f089069cef288710276930a26bbdad8737988e9e3a66154677a357930a41993a
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `mariadb:10.0.25` - linux; amd64
+### `mariadb:10.0.26` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.8 MB (119804696 bytes)**  
+-	Total Size: **119.8 MB (119837252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb3fc12095a70be54f3eb873e6770e9b396e3149a91af863cfaa669c851ca171`
+-	Image ID: `sha256:0cffaaf790f618c9904efc5780ed05a8e95261e2c79ab87d8444c3f57b158492`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -452,25 +452,25 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD
 RUN echo "deb http://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
 # Fri, 10 Jun 2016 01:53:49 GMT
 ENV MARIADB_MAJOR=10.0
-# Fri, 10 Jun 2016 01:53:49 GMT
-ENV MARIADB_VERSION=10.0.25+maria-1~jessie
-# Fri, 10 Jun 2016 01:53:50 GMT
+# Fri, 24 Jun 2016 21:00:00 GMT
+ENV MARIADB_VERSION=10.0.26+maria-1~jessie
+# Fri, 24 Jun 2016 21:00:01 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Fri, 10 Jun 2016 01:55:51 GMT
+# Fri, 24 Jun 2016 21:03:21 GMT
 RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password 'unused'; 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mariadb-server=$MARIADB_VERSION 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Fri, 10 Jun 2016 01:55:52 GMT
+# Fri, 24 Jun 2016 21:03:22 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Fri, 10 Jun 2016 01:55:53 GMT
+# Fri, 24 Jun 2016 21:03:22 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 10 Jun 2016 01:55:53 GMT
+# Fri, 24 Jun 2016 21:03:23 GMT
 COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
-# Fri, 10 Jun 2016 01:55:54 GMT
+# Fri, 24 Jun 2016 21:03:24 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 10 Jun 2016 01:55:54 GMT
+# Fri, 24 Jun 2016 21:03:24 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 01:55:54 GMT
+# Fri, 24 Jun 2016 21:03:25 GMT
 EXPOSE 3306/tcp
-# Fri, 10 Jun 2016 01:55:55 GMT
+# Fri, 24 Jun 2016 21:03:25 GMT
 CMD ["mysqld"]
 ```
 
@@ -496,26 +496,26 @@ CMD ["mysqld"]
 	-	`sha256:ed3e1c3a25964b17e757b3fda9660a36239d90b1beb1ac8e2726e91ee776dc39`  
 		Last Modified: Fri, 17 Jun 2016 22:47:40 GMT  
 		Size: 312.0 B
-	-	`sha256:29874ef197b0d4bdc583541e5d2875f7d05318cbc2d20896760478aa33709ca3`  
-		Last Modified: Fri, 17 Jun 2016 22:48:30 GMT  
+	-	`sha256:795ff82983a0629a8d0166f5c0ddfa13dd02e648254f222d5f1fe44d7deea271`  
+		Last Modified: Fri, 24 Jun 2016 21:04:06 GMT  
 		Size: 318.0 B
-	-	`sha256:6ff993445630b323d5d60eb3880cfa9ff1c38553a700ec368b43b0174e41f2b0`  
-		Last Modified: Fri, 17 Jun 2016 22:48:50 GMT  
-		Size: 67.1 MB (67087567 bytes)
-	-	`sha256:91f85199539ed9b73c91a3292918b7d5c3533074b01179437c39fae75b531ee4`  
-		Last Modified: Fri, 17 Jun 2016 22:48:32 GMT  
+	-	`sha256:a8f4dd73cc657f5cf79d8d707c3b3c9ff8525399ab02ee3a1cf0c5f7655c8673`  
+		Last Modified: Fri, 24 Jun 2016 21:04:23 GMT  
+		Size: 67.1 MB (67120124 bytes)
+	-	`sha256:bd65ee4457bce0dfd0cf9db8dc7e0a2acc3098143f2201612429b1bbce9d4e48`  
+		Last Modified: Fri, 24 Jun 2016 21:04:06 GMT  
 		Size: 2.5 KB (2491 bytes)
-	-	`sha256:eebd181ef6d48e9a17248b99a6119fc4b3bf0fb7212d9bee045dbb4756854ed4`  
-		Last Modified: Fri, 17 Jun 2016 22:48:34 GMT  
-		Size: 1.7 KB (1669 bytes)
-	-	`sha256:87e0c87d0ef1531bce04835a47418a657ee1692e1ab163cb7a49027fa6806734`  
-		Last Modified: Fri, 17 Jun 2016 22:48:30 GMT  
+	-	`sha256:22e6a159d1bd8ffa3c0039377d011971fd255b35134bded3f7ddbb4967e97cbf`  
+		Last Modified: Fri, 24 Jun 2016 21:04:06 GMT  
+		Size: 1.7 KB (1668 bytes)
+	-	`sha256:5aef40b6aebb874892c1a2898aefd36f1146a193516fbae3589b3a415600b241`  
+		Last Modified: Fri, 24 Jun 2016 21:04:05 GMT  
 		Size: 120.0 B
 
 ## `mariadb:10.0`
 
 ```console
-$ docker pull mariadb@sha256:fe20d6039872a63cdf9a33ff06bd18ecc408d78060556c82dfd3f5f0bd3355dd
+$ docker pull mariadb@sha256:f089069cef288710276930a26bbdad8737988e9e3a66154677a357930a41993a
 ```
 
 -	Platforms:
@@ -525,9 +525,9 @@ $ docker pull mariadb@sha256:fe20d6039872a63cdf9a33ff06bd18ecc408d78060556c82dfd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.8 MB (119804696 bytes)**  
+-	Total Size: **119.8 MB (119837252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb3fc12095a70be54f3eb873e6770e9b396e3149a91af863cfaa669c851ca171`
+-	Image ID: `sha256:0cffaaf790f618c9904efc5780ed05a8e95261e2c79ab87d8444c3f57b158492`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -552,25 +552,25 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD
 RUN echo "deb http://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
 # Fri, 10 Jun 2016 01:53:49 GMT
 ENV MARIADB_MAJOR=10.0
-# Fri, 10 Jun 2016 01:53:49 GMT
-ENV MARIADB_VERSION=10.0.25+maria-1~jessie
-# Fri, 10 Jun 2016 01:53:50 GMT
+# Fri, 24 Jun 2016 21:00:00 GMT
+ENV MARIADB_VERSION=10.0.26+maria-1~jessie
+# Fri, 24 Jun 2016 21:00:01 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Fri, 10 Jun 2016 01:55:51 GMT
+# Fri, 24 Jun 2016 21:03:21 GMT
 RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password 'unused'; 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mariadb-server=$MARIADB_VERSION 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Fri, 10 Jun 2016 01:55:52 GMT
+# Fri, 24 Jun 2016 21:03:22 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Fri, 10 Jun 2016 01:55:53 GMT
+# Fri, 24 Jun 2016 21:03:22 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 10 Jun 2016 01:55:53 GMT
+# Fri, 24 Jun 2016 21:03:23 GMT
 COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
-# Fri, 10 Jun 2016 01:55:54 GMT
+# Fri, 24 Jun 2016 21:03:24 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 10 Jun 2016 01:55:54 GMT
+# Fri, 24 Jun 2016 21:03:24 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 01:55:54 GMT
+# Fri, 24 Jun 2016 21:03:25 GMT
 EXPOSE 3306/tcp
-# Fri, 10 Jun 2016 01:55:55 GMT
+# Fri, 24 Jun 2016 21:03:25 GMT
 CMD ["mysqld"]
 ```
 
@@ -596,20 +596,20 @@ CMD ["mysqld"]
 	-	`sha256:ed3e1c3a25964b17e757b3fda9660a36239d90b1beb1ac8e2726e91ee776dc39`  
 		Last Modified: Fri, 17 Jun 2016 22:47:40 GMT  
 		Size: 312.0 B
-	-	`sha256:29874ef197b0d4bdc583541e5d2875f7d05318cbc2d20896760478aa33709ca3`  
-		Last Modified: Fri, 17 Jun 2016 22:48:30 GMT  
+	-	`sha256:795ff82983a0629a8d0166f5c0ddfa13dd02e648254f222d5f1fe44d7deea271`  
+		Last Modified: Fri, 24 Jun 2016 21:04:06 GMT  
 		Size: 318.0 B
-	-	`sha256:6ff993445630b323d5d60eb3880cfa9ff1c38553a700ec368b43b0174e41f2b0`  
-		Last Modified: Fri, 17 Jun 2016 22:48:50 GMT  
-		Size: 67.1 MB (67087567 bytes)
-	-	`sha256:91f85199539ed9b73c91a3292918b7d5c3533074b01179437c39fae75b531ee4`  
-		Last Modified: Fri, 17 Jun 2016 22:48:32 GMT  
+	-	`sha256:a8f4dd73cc657f5cf79d8d707c3b3c9ff8525399ab02ee3a1cf0c5f7655c8673`  
+		Last Modified: Fri, 24 Jun 2016 21:04:23 GMT  
+		Size: 67.1 MB (67120124 bytes)
+	-	`sha256:bd65ee4457bce0dfd0cf9db8dc7e0a2acc3098143f2201612429b1bbce9d4e48`  
+		Last Modified: Fri, 24 Jun 2016 21:04:06 GMT  
 		Size: 2.5 KB (2491 bytes)
-	-	`sha256:eebd181ef6d48e9a17248b99a6119fc4b3bf0fb7212d9bee045dbb4756854ed4`  
-		Last Modified: Fri, 17 Jun 2016 22:48:34 GMT  
-		Size: 1.7 KB (1669 bytes)
-	-	`sha256:87e0c87d0ef1531bce04835a47418a657ee1692e1ab163cb7a49027fa6806734`  
-		Last Modified: Fri, 17 Jun 2016 22:48:30 GMT  
+	-	`sha256:22e6a159d1bd8ffa3c0039377d011971fd255b35134bded3f7ddbb4967e97cbf`  
+		Last Modified: Fri, 24 Jun 2016 21:04:06 GMT  
+		Size: 1.7 KB (1668 bytes)
+	-	`sha256:5aef40b6aebb874892c1a2898aefd36f1146a193516fbae3589b3a415600b241`  
+		Last Modified: Fri, 24 Jun 2016 21:04:05 GMT  
 		Size: 120.0 B
 
 ## `mariadb:5.5.50`
