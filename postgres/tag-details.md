@@ -626,7 +626,7 @@ CMD ["postgres"]
 ## `postgres:9.4.8`
 
 ```console
-$ docker pull postgres@sha256:0eca1ab84f8ed61916c4672bdb523a9e9ef99303a292d76a07169ea6ee5d0b4f
+$ docker pull postgres@sha256:a5860b17c974aa431bce1e62f72d49088d1e192adbea1ce675e6375c448c30c4
 ```
 
 -	Platforms:
@@ -634,103 +634,100 @@ $ docker pull postgres@sha256:0eca1ab84f8ed61916c4672bdb523a9e9ef99303a292d76a07
 
 ### `postgres:9.4.8` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **100.9 MB (100867554 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **100.9 MB (100927939 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `2286a549e2a7dd97c6d5f322055776813b92ae9e905bbb0d93357c711687d7a6`
+-	Image ID: `sha256:6af1d04a2f99ad8d9b9089aa86acc760309c66c8f0050e744810cfa375114fbf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 06:06:05 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 24 May 2016 06:06:06 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 06:07:14 GMT
+# Fri, 10 Jun 2016 03:57:30 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 06:07:50 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 24 May 2016 06:07:51 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 ENV LANG=en_US.utf8
-# Tue, 24 May 2016 06:07:53 GMT
+# Fri, 10 Jun 2016 03:58:28 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 06:08:04 GMT
+# Fri, 10 Jun 2016 03:58:45 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
-# Tue, 24 May 2016 06:18:21 GMT
+# Fri, 10 Jun 2016 04:04:19 GMT
 ENV PG_MAJOR=9.4
-# Tue, 24 May 2016 06:18:22 GMT
+# Fri, 10 Jun 2016 04:04:20 GMT
 ENV PG_VERSION=9.4.8-1.pgdg80+1
-# Tue, 24 May 2016 06:18:24 GMT
+# Fri, 10 Jun 2016 04:04:21 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 24 May 2016 06:20:03 GMT
+# Fri, 10 Jun 2016 04:06:59 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 06:20:07 GMT
+# Fri, 10 Jun 2016 04:07:00 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 24 May 2016 06:20:08 GMT
+# Fri, 10 Jun 2016 04:07:01 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
-# Tue, 24 May 2016 06:20:09 GMT
+# Fri, 10 Jun 2016 04:07:02 GMT
 ENV PATH=/usr/lib/postgresql/9.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 May 2016 06:20:10 GMT
+# Fri, 10 Jun 2016 04:07:02 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 24 May 2016 06:20:10 GMT
+# Fri, 10 Jun 2016 04:07:02 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 24 May 2016 06:20:11 GMT
-COPY file:49d80c3c7c75e29237bc4b49ea8e6ffe687aaf1a52e6774ab9fb1dfbd60a36bb in /
-# Tue, 24 May 2016 06:20:12 GMT
+# Fri, 10 Jun 2016 04:07:02 GMT
+COPY file:aefa30113260f63949e77cbc9a66aa22f27b1f79479507fd0d32f9b6a6994d69 in /
+# Fri, 10 Jun 2016 04:07:03 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Tue, 24 May 2016 06:20:13 GMT
+# Fri, 10 Jun 2016 04:07:03 GMT
 EXPOSE 5432/tcp
-# Tue, 24 May 2016 06:20:13 GMT
+# Fri, 10 Jun 2016 04:07:03 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:055e85b433f4a9223dd3ab4d7728db555bf0c82873d580397d4f207c5feeda34`  
-		Last Modified: Tue, 05 Apr 2016 18:28:27 GMT  
-		Size: 1.2 KB (1250 bytes)
-	-	`sha256:d5db09d384ece0322dff76ee7c1546ce0e82a9f78707f5ee97a0b4a0d4c1c7fb`  
-		Last Modified: Tue, 24 May 2016 22:16:54 GMT  
-		Size: 134.0 B
-	-	`sha256:5016d23c63aba73cd50c9b8175f1f499497e0b4204883555e7b467da8045d131`  
-		Last Modified: Tue, 24 May 2016 22:16:57 GMT  
-		Size: 6.8 KB (6841 bytes)
-	-	`sha256:d1f8420bd4aaa3a75fa6ea69cc7487bb99795c9f6dd4e55c0d9197336a407ec0`  
-		Last Modified: Tue, 24 May 2016 22:17:19 GMT  
-		Size: 41.4 MB (41417848 bytes)
-	-	`sha256:ff64a4df1891559e2877c49f92c7f942453a31c9dd246ab8d3b93c91ed4058e7`  
-		Last Modified: Tue, 24 May 2016 22:17:24 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:22337bfd13a96ad3a76a4b90fe5448da602dade5fed79e2dd701214da6529a0e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:c3961b297accc4847d720bf7eddc00b45624143333d3d38347d5cb9084735811`  
+		Last Modified: Fri, 24 Jun 2016 01:10:46 GMT  
+		Size: 1.2 MB (1236801 bytes)
+	-	`sha256:5a17453338b40f35e6547963ee271172baa2fc199a9cfc2684f68c10d90883fe`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 6.9 MB (6891956 bytes)
+	-	`sha256:6364e0d7a283ea31e03a06e6270b97864aa33c6c8495a6cd25eb828fe2adc22a`  
+		Last Modified: Fri, 24 Jun 2016 01:10:44 GMT  
+		Size: 114.0 B
+	-	`sha256:58c25f5c0dad12a35bb506fcbd38280bef4644c7fed407bee73a2dc0002a1b1e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:45 GMT  
+		Size: 3.4 KB (3413 bytes)
+	-	`sha256:42542a3af500463d42c0e79827d0c3ce1b090f8f8365fa6a327722868ee77df0`  
+		Last Modified: Fri, 24 Jun 2016 01:12:10 GMT  
 		Size: 226.0 B
-	-	`sha256:4b0c5c71fa5deb24d5d3a9686bf91c0c1fd00037257a8607b424f34779b1674f`  
-		Last Modified: Tue, 24 May 2016 22:12:57 GMT  
-		Size: 3.4 KB (3411 bytes)
-	-	`sha256:6d6ccf3c012cfd6ed87bf29f178ec2b5722fcd3dde116ea7ca3a9c0b856ac409`  
-		Last Modified: Tue, 24 May 2016 22:13:01 GMT  
-		Size: 111.0 B
-	-	`sha256:f2a70e1bea0a0a1e4d8b6e23c66b5e87e4df5ce3f7ffd9ce0cb25b0aaf229fc0`  
-		Last Modified: Tue, 24 May 2016 22:13:13 GMT  
-		Size: 6.9 MB (6863344 bytes)
-	-	`sha256:7e8f4bc7ac43728c0184780d3d8f24fd2dc1d004199f0b33d315a7e849e37c8f`  
-		Last Modified: Tue, 24 May 2016 22:13:19 GMT  
-		Size: 1.2 MB (1215982 bytes)
-	-	`sha256:4a40f149a63873565397eea77b8dfadf5c8f67b7a3ca09beb78cd923ab17c286`  
-		Last Modified: Tue, 24 May 2016 22:13:28 GMT  
-		Size: 2.0 KB (2041 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:8b6e154608eef6910be54600da34f893f33e8e0b41e00a9e473296de63a55ee1`  
+		Last Modified: Fri, 24 Jun 2016 01:12:23 GMT  
+		Size: 41.4 MB (41432621 bytes)
+	-	`sha256:9de9189095e486b9fed5801e1a8df6d339aef096acbe3006acab2a96b56b088f`  
+		Last Modified: Fri, 24 Jun 2016 01:12:10 GMT  
+		Size: 6.8 KB (6845 bytes)
+	-	`sha256:e71ed2e5eae797256c6682c3ef141729558cf90facb9afe50b258cd1df2d8bc7`  
+		Last Modified: Fri, 24 Jun 2016 01:12:10 GMT  
+		Size: 134.0 B
+	-	`sha256:e02501872558979421bdfd9e9c7f1fbd2608c9dd6e4a514a6e862c6dabb5dcc6`  
+		Last Modified: Fri, 24 Jun 2016 01:12:10 GMT  
+		Size: 1.3 KB (1254 bytes)
 
 ## `postgres:9.4`
 
 ```console
-$ docker pull postgres@sha256:f76245b04ddbcebab5bb6c28e76947f49222c99fec4aadb0bb1c24821a9e83ef
+$ docker pull postgres@sha256:a5860b17c974aa431bce1e62f72d49088d1e192adbea1ce675e6375c448c30c4
 ```
 
 -	Platforms:
@@ -738,103 +735,100 @@ $ docker pull postgres@sha256:f76245b04ddbcebab5bb6c28e76947f49222c99fec4aadb0bb
 
 ### `postgres:9.4` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **100.9 MB (100867554 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **100.9 MB (100927939 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `2286a549e2a7dd97c6d5f322055776813b92ae9e905bbb0d93357c711687d7a6`
+-	Image ID: `sha256:6af1d04a2f99ad8d9b9089aa86acc760309c66c8f0050e744810cfa375114fbf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 06:06:05 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 24 May 2016 06:06:06 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 06:07:14 GMT
+# Fri, 10 Jun 2016 03:57:30 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 06:07:50 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 24 May 2016 06:07:51 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 ENV LANG=en_US.utf8
-# Tue, 24 May 2016 06:07:53 GMT
+# Fri, 10 Jun 2016 03:58:28 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 06:08:04 GMT
+# Fri, 10 Jun 2016 03:58:45 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
-# Tue, 24 May 2016 06:18:21 GMT
+# Fri, 10 Jun 2016 04:04:19 GMT
 ENV PG_MAJOR=9.4
-# Tue, 24 May 2016 06:18:22 GMT
+# Fri, 10 Jun 2016 04:04:20 GMT
 ENV PG_VERSION=9.4.8-1.pgdg80+1
-# Tue, 24 May 2016 06:18:24 GMT
+# Fri, 10 Jun 2016 04:04:21 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 24 May 2016 06:20:03 GMT
+# Fri, 10 Jun 2016 04:06:59 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 06:20:07 GMT
+# Fri, 10 Jun 2016 04:07:00 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 24 May 2016 06:20:08 GMT
+# Fri, 10 Jun 2016 04:07:01 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
-# Tue, 24 May 2016 06:20:09 GMT
+# Fri, 10 Jun 2016 04:07:02 GMT
 ENV PATH=/usr/lib/postgresql/9.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 May 2016 06:20:10 GMT
+# Fri, 10 Jun 2016 04:07:02 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 24 May 2016 06:20:10 GMT
+# Fri, 10 Jun 2016 04:07:02 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 24 May 2016 06:20:11 GMT
-COPY file:49d80c3c7c75e29237bc4b49ea8e6ffe687aaf1a52e6774ab9fb1dfbd60a36bb in /
-# Tue, 24 May 2016 06:20:12 GMT
+# Fri, 10 Jun 2016 04:07:02 GMT
+COPY file:aefa30113260f63949e77cbc9a66aa22f27b1f79479507fd0d32f9b6a6994d69 in /
+# Fri, 10 Jun 2016 04:07:03 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Tue, 24 May 2016 06:20:13 GMT
+# Fri, 10 Jun 2016 04:07:03 GMT
 EXPOSE 5432/tcp
-# Tue, 24 May 2016 06:20:13 GMT
+# Fri, 10 Jun 2016 04:07:03 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:055e85b433f4a9223dd3ab4d7728db555bf0c82873d580397d4f207c5feeda34`  
-		Last Modified: Tue, 05 Apr 2016 18:28:27 GMT  
-		Size: 1.2 KB (1250 bytes)
-	-	`sha256:d5db09d384ece0322dff76ee7c1546ce0e82a9f78707f5ee97a0b4a0d4c1c7fb`  
-		Last Modified: Tue, 24 May 2016 22:16:54 GMT  
-		Size: 134.0 B
-	-	`sha256:5016d23c63aba73cd50c9b8175f1f499497e0b4204883555e7b467da8045d131`  
-		Last Modified: Tue, 24 May 2016 22:16:57 GMT  
-		Size: 6.8 KB (6841 bytes)
-	-	`sha256:d1f8420bd4aaa3a75fa6ea69cc7487bb99795c9f6dd4e55c0d9197336a407ec0`  
-		Last Modified: Tue, 24 May 2016 22:17:19 GMT  
-		Size: 41.4 MB (41417848 bytes)
-	-	`sha256:ff64a4df1891559e2877c49f92c7f942453a31c9dd246ab8d3b93c91ed4058e7`  
-		Last Modified: Tue, 24 May 2016 22:17:24 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:22337bfd13a96ad3a76a4b90fe5448da602dade5fed79e2dd701214da6529a0e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:c3961b297accc4847d720bf7eddc00b45624143333d3d38347d5cb9084735811`  
+		Last Modified: Fri, 24 Jun 2016 01:10:46 GMT  
+		Size: 1.2 MB (1236801 bytes)
+	-	`sha256:5a17453338b40f35e6547963ee271172baa2fc199a9cfc2684f68c10d90883fe`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 6.9 MB (6891956 bytes)
+	-	`sha256:6364e0d7a283ea31e03a06e6270b97864aa33c6c8495a6cd25eb828fe2adc22a`  
+		Last Modified: Fri, 24 Jun 2016 01:10:44 GMT  
+		Size: 114.0 B
+	-	`sha256:58c25f5c0dad12a35bb506fcbd38280bef4644c7fed407bee73a2dc0002a1b1e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:45 GMT  
+		Size: 3.4 KB (3413 bytes)
+	-	`sha256:42542a3af500463d42c0e79827d0c3ce1b090f8f8365fa6a327722868ee77df0`  
+		Last Modified: Fri, 24 Jun 2016 01:12:10 GMT  
 		Size: 226.0 B
-	-	`sha256:4b0c5c71fa5deb24d5d3a9686bf91c0c1fd00037257a8607b424f34779b1674f`  
-		Last Modified: Tue, 24 May 2016 22:12:57 GMT  
-		Size: 3.4 KB (3411 bytes)
-	-	`sha256:6d6ccf3c012cfd6ed87bf29f178ec2b5722fcd3dde116ea7ca3a9c0b856ac409`  
-		Last Modified: Tue, 24 May 2016 22:13:01 GMT  
-		Size: 111.0 B
-	-	`sha256:f2a70e1bea0a0a1e4d8b6e23c66b5e87e4df5ce3f7ffd9ce0cb25b0aaf229fc0`  
-		Last Modified: Tue, 24 May 2016 22:13:13 GMT  
-		Size: 6.9 MB (6863344 bytes)
-	-	`sha256:7e8f4bc7ac43728c0184780d3d8f24fd2dc1d004199f0b33d315a7e849e37c8f`  
-		Last Modified: Tue, 24 May 2016 22:13:19 GMT  
-		Size: 1.2 MB (1215982 bytes)
-	-	`sha256:4a40f149a63873565397eea77b8dfadf5c8f67b7a3ca09beb78cd923ab17c286`  
-		Last Modified: Tue, 24 May 2016 22:13:28 GMT  
-		Size: 2.0 KB (2041 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:8b6e154608eef6910be54600da34f893f33e8e0b41e00a9e473296de63a55ee1`  
+		Last Modified: Fri, 24 Jun 2016 01:12:23 GMT  
+		Size: 41.4 MB (41432621 bytes)
+	-	`sha256:9de9189095e486b9fed5801e1a8df6d339aef096acbe3006acab2a96b56b088f`  
+		Last Modified: Fri, 24 Jun 2016 01:12:10 GMT  
+		Size: 6.8 KB (6845 bytes)
+	-	`sha256:e71ed2e5eae797256c6682c3ef141729558cf90facb9afe50b258cd1df2d8bc7`  
+		Last Modified: Fri, 24 Jun 2016 01:12:10 GMT  
+		Size: 134.0 B
+	-	`sha256:e02501872558979421bdfd9e9c7f1fbd2608c9dd6e4a514a6e862c6dabb5dcc6`  
+		Last Modified: Fri, 24 Jun 2016 01:12:10 GMT  
+		Size: 1.3 KB (1254 bytes)
 
 ## `postgres:9.3.13`
 
 ```console
-$ docker pull postgres@sha256:a30b7a2c19687deb5e1505892ec319231689c1227b0079a9d0ce7432a3f3234e
+$ docker pull postgres@sha256:5f9de2c1bcf6aff1f9d10eceb30c3b72057eacd14d3fd25a3bbf732e62e3be12
 ```
 
 -	Platforms:
@@ -842,103 +836,100 @@ $ docker pull postgres@sha256:a30b7a2c19687deb5e1505892ec319231689c1227b0079a9d0
 
 ### `postgres:9.3.13` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **100.5 MB (100512139 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **100.6 MB (100581643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `5b023a9096e4352c7a914578a58b617e029e2611f92a1ec4c816ef695b6f000f`
+-	Image ID: `sha256:874f0ffcc5f8467aa0af94495de3522c4fcc0b057a1501bff36da26b9df7a465`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 06:06:05 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 24 May 2016 06:06:06 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 06:07:14 GMT
+# Fri, 10 Jun 2016 03:57:30 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 06:07:50 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 24 May 2016 06:07:51 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 ENV LANG=en_US.utf8
-# Tue, 24 May 2016 06:07:53 GMT
+# Fri, 10 Jun 2016 03:58:28 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 06:08:04 GMT
+# Fri, 10 Jun 2016 03:58:45 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
-# Tue, 24 May 2016 06:14:55 GMT
+# Fri, 10 Jun 2016 04:07:04 GMT
 ENV PG_MAJOR=9.3
-# Tue, 24 May 2016 06:14:56 GMT
+# Fri, 10 Jun 2016 04:07:04 GMT
 ENV PG_VERSION=9.3.13-1.pgdg80+1
-# Tue, 24 May 2016 06:14:58 GMT
+# Fri, 10 Jun 2016 04:07:05 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 24 May 2016 06:16:41 GMT
+# Fri, 10 Jun 2016 04:09:42 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 06:16:44 GMT
+# Fri, 10 Jun 2016 04:09:43 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 24 May 2016 06:16:46 GMT
+# Fri, 10 Jun 2016 04:09:44 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
-# Tue, 24 May 2016 06:16:47 GMT
+# Fri, 10 Jun 2016 04:09:44 GMT
 ENV PATH=/usr/lib/postgresql/9.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 May 2016 06:16:47 GMT
+# Fri, 10 Jun 2016 04:09:45 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 24 May 2016 06:16:48 GMT
+# Fri, 10 Jun 2016 04:09:45 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 24 May 2016 06:16:49 GMT
-COPY file:49d80c3c7c75e29237bc4b49ea8e6ffe687aaf1a52e6774ab9fb1dfbd60a36bb in /
-# Tue, 24 May 2016 06:16:50 GMT
+# Fri, 10 Jun 2016 04:09:45 GMT
+COPY file:aefa30113260f63949e77cbc9a66aa22f27b1f79479507fd0d32f9b6a6994d69 in /
+# Fri, 10 Jun 2016 04:09:45 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Tue, 24 May 2016 06:16:51 GMT
+# Fri, 10 Jun 2016 04:09:46 GMT
 EXPOSE 5432/tcp
-# Tue, 24 May 2016 06:16:51 GMT
+# Fri, 10 Jun 2016 04:09:46 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:055e85b433f4a9223dd3ab4d7728db555bf0c82873d580397d4f207c5feeda34`  
-		Last Modified: Tue, 05 Apr 2016 18:28:27 GMT  
-		Size: 1.2 KB (1250 bytes)
-	-	`sha256:182f57e17b786037bd5474eaf3452102c1e6c58a55b0427e41c2349fd7b6190a`  
-		Last Modified: Tue, 24 May 2016 22:15:41 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:22337bfd13a96ad3a76a4b90fe5448da602dade5fed79e2dd701214da6529a0e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:c3961b297accc4847d720bf7eddc00b45624143333d3d38347d5cb9084735811`  
+		Last Modified: Fri, 24 Jun 2016 01:10:46 GMT  
+		Size: 1.2 MB (1236801 bytes)
+	-	`sha256:5a17453338b40f35e6547963ee271172baa2fc199a9cfc2684f68c10d90883fe`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 6.9 MB (6891956 bytes)
+	-	`sha256:6364e0d7a283ea31e03a06e6270b97864aa33c6c8495a6cd25eb828fe2adc22a`  
+		Last Modified: Fri, 24 Jun 2016 01:10:44 GMT  
+		Size: 114.0 B
+	-	`sha256:58c25f5c0dad12a35bb506fcbd38280bef4644c7fed407bee73a2dc0002a1b1e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:45 GMT  
+		Size: 3.4 KB (3413 bytes)
+	-	`sha256:a1948a69a987dfd4f7307898f7964e50b7952a4f2836efa63b6cc43046dbd799`  
+		Last Modified: Fri, 24 Jun 2016 01:12:45 GMT  
+		Size: 226.0 B
+	-	`sha256:1378869cfbfc0a96da40b4616cf057fa5ada873dc08e84d79e00b0bcd0891e90`  
+		Last Modified: Fri, 24 Jun 2016 01:12:59 GMT  
+		Size: 41.1 MB (41086507 bytes)
+	-	`sha256:9307e03be27831f6ac79a989c92650eed4c7098dc08c7c3c1f3bcbccaf9ded8e`  
+		Last Modified: Fri, 24 Jun 2016 01:12:45 GMT  
+		Size: 6.7 KB (6665 bytes)
+	-	`sha256:04109708f523c1f4e0290071ebbc1d405a1945a173c179c5bc941a2c88e0c265`  
+		Last Modified: Fri, 24 Jun 2016 01:12:45 GMT  
 		Size: 133.0 B
-	-	`sha256:be61d2c962b94d146ba4890e23459c40ecf7f54903fbce2fd58e7aea15457c54`  
-		Last Modified: Tue, 24 May 2016 22:15:44 GMT  
-		Size: 6.7 KB (6667 bytes)
-	-	`sha256:25305c3eca3f219ddb2e0493a8a29d6e36c88be586b836999e4c5c0b3190ced2`  
-		Last Modified: Tue, 24 May 2016 22:16:10 GMT  
-		Size: 41.1 MB (41062610 bytes)
-	-	`sha256:0bb1528fc64125ca2fd5b9b4db8b453a40798d2662ad239ead6465bbfd883467`  
-		Last Modified: Tue, 24 May 2016 22:16:17 GMT  
-		Size: 224.0 B
-	-	`sha256:4b0c5c71fa5deb24d5d3a9686bf91c0c1fd00037257a8607b424f34779b1674f`  
-		Last Modified: Tue, 24 May 2016 22:12:57 GMT  
-		Size: 3.4 KB (3411 bytes)
-	-	`sha256:6d6ccf3c012cfd6ed87bf29f178ec2b5722fcd3dde116ea7ca3a9c0b856ac409`  
-		Last Modified: Tue, 24 May 2016 22:13:01 GMT  
-		Size: 111.0 B
-	-	`sha256:f2a70e1bea0a0a1e4d8b6e23c66b5e87e4df5ce3f7ffd9ce0cb25b0aaf229fc0`  
-		Last Modified: Tue, 24 May 2016 22:13:13 GMT  
-		Size: 6.9 MB (6863344 bytes)
-	-	`sha256:7e8f4bc7ac43728c0184780d3d8f24fd2dc1d004199f0b33d315a7e849e37c8f`  
-		Last Modified: Tue, 24 May 2016 22:13:19 GMT  
-		Size: 1.2 MB (1215982 bytes)
-	-	`sha256:4a40f149a63873565397eea77b8dfadf5c8f67b7a3ca09beb78cd923ab17c286`  
-		Last Modified: Tue, 24 May 2016 22:13:28 GMT  
-		Size: 2.0 KB (2041 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:121c78c122a49aaf6f89f35008b577cb53e0a77e4f79874f8281c185014118f9`  
+		Last Modified: Fri, 24 Jun 2016 01:12:45 GMT  
+		Size: 1.3 KB (1253 bytes)
 
 ## `postgres:9.3`
 
 ```console
-$ docker pull postgres@sha256:55f3a501b2edb85ca77d084663c3d41d69556ea8ec49d1d8d6125e1f3074bc72
+$ docker pull postgres@sha256:5f9de2c1bcf6aff1f9d10eceb30c3b72057eacd14d3fd25a3bbf732e62e3be12
 ```
 
 -	Platforms:
@@ -946,103 +937,100 @@ $ docker pull postgres@sha256:55f3a501b2edb85ca77d084663c3d41d69556ea8ec49d1d8d6
 
 ### `postgres:9.3` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **100.5 MB (100512139 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **100.6 MB (100581643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `5b023a9096e4352c7a914578a58b617e029e2611f92a1ec4c816ef695b6f000f`
+-	Image ID: `sha256:874f0ffcc5f8467aa0af94495de3522c4fcc0b057a1501bff36da26b9df7a465`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 06:06:05 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 24 May 2016 06:06:06 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 06:07:14 GMT
+# Fri, 10 Jun 2016 03:57:30 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 06:07:50 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 24 May 2016 06:07:51 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 ENV LANG=en_US.utf8
-# Tue, 24 May 2016 06:07:53 GMT
+# Fri, 10 Jun 2016 03:58:28 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 06:08:04 GMT
+# Fri, 10 Jun 2016 03:58:45 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
-# Tue, 24 May 2016 06:14:55 GMT
+# Fri, 10 Jun 2016 04:07:04 GMT
 ENV PG_MAJOR=9.3
-# Tue, 24 May 2016 06:14:56 GMT
+# Fri, 10 Jun 2016 04:07:04 GMT
 ENV PG_VERSION=9.3.13-1.pgdg80+1
-# Tue, 24 May 2016 06:14:58 GMT
+# Fri, 10 Jun 2016 04:07:05 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 24 May 2016 06:16:41 GMT
+# Fri, 10 Jun 2016 04:09:42 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 06:16:44 GMT
+# Fri, 10 Jun 2016 04:09:43 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 24 May 2016 06:16:46 GMT
+# Fri, 10 Jun 2016 04:09:44 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
-# Tue, 24 May 2016 06:16:47 GMT
+# Fri, 10 Jun 2016 04:09:44 GMT
 ENV PATH=/usr/lib/postgresql/9.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 May 2016 06:16:47 GMT
+# Fri, 10 Jun 2016 04:09:45 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 24 May 2016 06:16:48 GMT
+# Fri, 10 Jun 2016 04:09:45 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 24 May 2016 06:16:49 GMT
-COPY file:49d80c3c7c75e29237bc4b49ea8e6ffe687aaf1a52e6774ab9fb1dfbd60a36bb in /
-# Tue, 24 May 2016 06:16:50 GMT
+# Fri, 10 Jun 2016 04:09:45 GMT
+COPY file:aefa30113260f63949e77cbc9a66aa22f27b1f79479507fd0d32f9b6a6994d69 in /
+# Fri, 10 Jun 2016 04:09:45 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Tue, 24 May 2016 06:16:51 GMT
+# Fri, 10 Jun 2016 04:09:46 GMT
 EXPOSE 5432/tcp
-# Tue, 24 May 2016 06:16:51 GMT
+# Fri, 10 Jun 2016 04:09:46 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:055e85b433f4a9223dd3ab4d7728db555bf0c82873d580397d4f207c5feeda34`  
-		Last Modified: Tue, 05 Apr 2016 18:28:27 GMT  
-		Size: 1.2 KB (1250 bytes)
-	-	`sha256:182f57e17b786037bd5474eaf3452102c1e6c58a55b0427e41c2349fd7b6190a`  
-		Last Modified: Tue, 24 May 2016 22:15:41 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:22337bfd13a96ad3a76a4b90fe5448da602dade5fed79e2dd701214da6529a0e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:c3961b297accc4847d720bf7eddc00b45624143333d3d38347d5cb9084735811`  
+		Last Modified: Fri, 24 Jun 2016 01:10:46 GMT  
+		Size: 1.2 MB (1236801 bytes)
+	-	`sha256:5a17453338b40f35e6547963ee271172baa2fc199a9cfc2684f68c10d90883fe`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 6.9 MB (6891956 bytes)
+	-	`sha256:6364e0d7a283ea31e03a06e6270b97864aa33c6c8495a6cd25eb828fe2adc22a`  
+		Last Modified: Fri, 24 Jun 2016 01:10:44 GMT  
+		Size: 114.0 B
+	-	`sha256:58c25f5c0dad12a35bb506fcbd38280bef4644c7fed407bee73a2dc0002a1b1e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:45 GMT  
+		Size: 3.4 KB (3413 bytes)
+	-	`sha256:a1948a69a987dfd4f7307898f7964e50b7952a4f2836efa63b6cc43046dbd799`  
+		Last Modified: Fri, 24 Jun 2016 01:12:45 GMT  
+		Size: 226.0 B
+	-	`sha256:1378869cfbfc0a96da40b4616cf057fa5ada873dc08e84d79e00b0bcd0891e90`  
+		Last Modified: Fri, 24 Jun 2016 01:12:59 GMT  
+		Size: 41.1 MB (41086507 bytes)
+	-	`sha256:9307e03be27831f6ac79a989c92650eed4c7098dc08c7c3c1f3bcbccaf9ded8e`  
+		Last Modified: Fri, 24 Jun 2016 01:12:45 GMT  
+		Size: 6.7 KB (6665 bytes)
+	-	`sha256:04109708f523c1f4e0290071ebbc1d405a1945a173c179c5bc941a2c88e0c265`  
+		Last Modified: Fri, 24 Jun 2016 01:12:45 GMT  
 		Size: 133.0 B
-	-	`sha256:be61d2c962b94d146ba4890e23459c40ecf7f54903fbce2fd58e7aea15457c54`  
-		Last Modified: Tue, 24 May 2016 22:15:44 GMT  
-		Size: 6.7 KB (6667 bytes)
-	-	`sha256:25305c3eca3f219ddb2e0493a8a29d6e36c88be586b836999e4c5c0b3190ced2`  
-		Last Modified: Tue, 24 May 2016 22:16:10 GMT  
-		Size: 41.1 MB (41062610 bytes)
-	-	`sha256:0bb1528fc64125ca2fd5b9b4db8b453a40798d2662ad239ead6465bbfd883467`  
-		Last Modified: Tue, 24 May 2016 22:16:17 GMT  
-		Size: 224.0 B
-	-	`sha256:4b0c5c71fa5deb24d5d3a9686bf91c0c1fd00037257a8607b424f34779b1674f`  
-		Last Modified: Tue, 24 May 2016 22:12:57 GMT  
-		Size: 3.4 KB (3411 bytes)
-	-	`sha256:6d6ccf3c012cfd6ed87bf29f178ec2b5722fcd3dde116ea7ca3a9c0b856ac409`  
-		Last Modified: Tue, 24 May 2016 22:13:01 GMT  
-		Size: 111.0 B
-	-	`sha256:f2a70e1bea0a0a1e4d8b6e23c66b5e87e4df5ce3f7ffd9ce0cb25b0aaf229fc0`  
-		Last Modified: Tue, 24 May 2016 22:13:13 GMT  
-		Size: 6.9 MB (6863344 bytes)
-	-	`sha256:7e8f4bc7ac43728c0184780d3d8f24fd2dc1d004199f0b33d315a7e849e37c8f`  
-		Last Modified: Tue, 24 May 2016 22:13:19 GMT  
-		Size: 1.2 MB (1215982 bytes)
-	-	`sha256:4a40f149a63873565397eea77b8dfadf5c8f67b7a3ca09beb78cd923ab17c286`  
-		Last Modified: Tue, 24 May 2016 22:13:28 GMT  
-		Size: 2.0 KB (2041 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:121c78c122a49aaf6f89f35008b577cb53e0a77e4f79874f8281c185014118f9`  
+		Last Modified: Fri, 24 Jun 2016 01:12:45 GMT  
+		Size: 1.3 KB (1253 bytes)
 
 ## `postgres:9.2.17`
 
 ```console
-$ docker pull postgres@sha256:a8f2e34a15acb0f304551a97279d04dd1cab81b61e81baeb68f278f5a6d11c25
+$ docker pull postgres@sha256:a580523eb0742774e64a99086d927b36da50cb2168b31e4b2f60be5fbf5d5744
 ```
 
 -	Platforms:
@@ -1050,133 +1038,100 @@ $ docker pull postgres@sha256:a8f2e34a15acb0f304551a97279d04dd1cab81b61e81baeb68
 
 ### `postgres:9.2.17` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.3 MB (100341799 bytes)**  
+-	Total Size: **100.4 MB (100417487 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:39273af07bb9c0533ee477f43c3548db13503e67529dd9a12c724b9a665f2b73`
+-	Image ID: `sha256:dee207e667e48f7fc87c275bea0e396fef0f250891ec9469f1a0945060eddfe3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 06:06:05 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 24 May 2016 06:06:06 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 06:07:14 GMT
+# Fri, 10 Jun 2016 03:57:30 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 06:07:50 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 24 May 2016 06:07:51 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 ENV LANG=en_US.utf8
-# Tue, 24 May 2016 06:07:53 GMT
+# Fri, 10 Jun 2016 03:58:28 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 06:08:04 GMT
+# Fri, 10 Jun 2016 03:58:45 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
-# Tue, 24 May 2016 06:11:31 GMT
+# Fri, 10 Jun 2016 04:09:46 GMT
 ENV PG_MAJOR=9.2
-# Tue, 24 May 2016 06:11:32 GMT
+# Fri, 10 Jun 2016 04:09:47 GMT
 ENV PG_VERSION=9.2.17-1.pgdg80+1
-# Tue, 24 May 2016 06:11:34 GMT
+# Fri, 10 Jun 2016 04:09:48 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 24 May 2016 06:13:15 GMT
+# Fri, 10 Jun 2016 04:12:27 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 06:13:18 GMT
+# Fri, 10 Jun 2016 04:12:28 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 24 May 2016 06:13:20 GMT
+# Fri, 10 Jun 2016 04:12:29 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
-# Tue, 24 May 2016 06:13:21 GMT
+# Fri, 10 Jun 2016 04:12:29 GMT
 ENV PATH=/usr/lib/postgresql/9.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 May 2016 06:13:22 GMT
+# Fri, 10 Jun 2016 04:12:30 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 24 May 2016 06:13:22 GMT
+# Fri, 10 Jun 2016 04:12:30 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 24 May 2016 06:13:23 GMT
-COPY file:49d80c3c7c75e29237bc4b49ea8e6ffe687aaf1a52e6774ab9fb1dfbd60a36bb in /
-# Tue, 24 May 2016 06:13:24 GMT
+# Fri, 10 Jun 2016 04:12:30 GMT
+COPY file:aefa30113260f63949e77cbc9a66aa22f27b1f79479507fd0d32f9b6a6994d69 in /
+# Fri, 10 Jun 2016 04:12:31 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Tue, 24 May 2016 06:13:25 GMT
+# Fri, 10 Jun 2016 04:12:31 GMT
 EXPOSE 5432/tcp
-# Tue, 24 May 2016 06:13:25 GMT
+# Fri, 10 Jun 2016 04:12:31 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:4a40f149a63873565397eea77b8dfadf5c8f67b7a3ca09beb78cd923ab17c286`  
-		Last Modified: Tue, 24 May 2016 22:13:28 GMT  
-		Size: 2.0 KB (2041 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7e8f4bc7ac43728c0184780d3d8f24fd2dc1d004199f0b33d315a7e849e37c8f`  
-		Last Modified: Tue, 24 May 2016 22:13:19 GMT  
-		Size: 1.2 MB (1215982 bytes)
-	-	`sha256:f2a70e1bea0a0a1e4d8b6e23c66b5e87e4df5ce3f7ffd9ce0cb25b0aaf229fc0`  
-		Last Modified: Tue, 24 May 2016 22:13:13 GMT  
-		Size: 6.9 MB (6863344 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:6d6ccf3c012cfd6ed87bf29f178ec2b5722fcd3dde116ea7ca3a9c0b856ac409`  
-		Last Modified: Tue, 24 May 2016 22:13:01 GMT  
-		Size: 111.0 B
-	-	`sha256:4b0c5c71fa5deb24d5d3a9686bf91c0c1fd00037257a8607b424f34779b1674f`  
-		Last Modified: Tue, 24 May 2016 22:12:57 GMT  
-		Size: 3.4 KB (3411 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:46920b55c003d12f462b1e58e04e79b75f1d87cf771672e0975689c2f8cb80b3`  
-		Last Modified: Tue, 24 May 2016 22:15:05 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:22337bfd13a96ad3a76a4b90fe5448da602dade5fed79e2dd701214da6529a0e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:c3961b297accc4847d720bf7eddc00b45624143333d3d38347d5cb9084735811`  
+		Last Modified: Fri, 24 Jun 2016 01:10:46 GMT  
+		Size: 1.2 MB (1236801 bytes)
+	-	`sha256:5a17453338b40f35e6547963ee271172baa2fc199a9cfc2684f68c10d90883fe`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 6.9 MB (6891956 bytes)
+	-	`sha256:6364e0d7a283ea31e03a06e6270b97864aa33c6c8495a6cd25eb828fe2adc22a`  
+		Last Modified: Fri, 24 Jun 2016 01:10:44 GMT  
+		Size: 114.0 B
+	-	`sha256:58c25f5c0dad12a35bb506fcbd38280bef4644c7fed407bee73a2dc0002a1b1e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:45 GMT  
+		Size: 3.4 KB (3413 bytes)
+	-	`sha256:3f4185c8d657a3fde55f2f120e0d2bb41212c028f4290d148874fadcb69ff93f`  
+		Last Modified: Fri, 24 Jun 2016 01:13:19 GMT  
 		Size: 226.0 B
-	-	`sha256:8a12aad253c3cc60ee67b25c19554a3327edc930a147d5194db4f637f547f019`  
-		Last Modified: Tue, 24 May 2016 22:15:01 GMT  
-		Size: 40.9 MB (40892143 bytes)
-	-	`sha256:84cd6a4f7a7d67a5fc7733129ff70f51f7558e42cc410915e2ddde7cc60500b3`  
-		Last Modified: Tue, 24 May 2016 22:14:41 GMT  
-		Size: 6.5 KB (6473 bytes)
-	-	`sha256:eba551d866b49dbe7f3559e358475286128cccb419307e2fc94e0631c37f8422`  
-		Last Modified: Tue, 24 May 2016 22:14:38 GMT  
+	-	`sha256:fd8201747fcbc898a4440dfb19286ece9588f56c522522d1013e50f0592c948c`  
+		Last Modified: Fri, 24 Jun 2016 01:13:33 GMT  
+		Size: 40.9 MB (40922543 bytes)
+	-	`sha256:23fd37acc6eaa75cf1e9f981058db09eec680d15eeeb8fd03a0ed49702a6f639`  
+		Last Modified: Fri, 24 Jun 2016 01:13:20 GMT  
+		Size: 6.5 KB (6474 bytes)
+	-	`sha256:6e4776caa00fcc2a8af322d76ac3281deb9cc356ba66fee78b51a3bf2817a21d`  
+		Last Modified: Fri, 24 Jun 2016 01:13:20 GMT  
 		Size: 132.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:055e85b433f4a9223dd3ab4d7728db555bf0c82873d580397d4f207c5feeda34`  
-		Last Modified: Tue, 05 Apr 2016 18:28:27 GMT  
-		Size: 1.2 KB (1250 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:f87ba53ee3e10ee1b76274db9dc42e0e7824b27ccecb29a85997bdaa1c905ce7`  
+		Last Modified: Fri, 24 Jun 2016 01:13:20 GMT  
+		Size: 1.3 KB (1253 bytes)
 
 ## `postgres:9.2`
 
 ```console
-$ docker pull postgres@sha256:724c570102fed2eb671b4ed69f84c232c66da94570f83a5933021433412f4dac
+$ docker pull postgres@sha256:a580523eb0742774e64a99086d927b36da50cb2168b31e4b2f60be5fbf5d5744
 ```
 
 -	Platforms:
@@ -1184,103 +1139,100 @@ $ docker pull postgres@sha256:724c570102fed2eb671b4ed69f84c232c66da94570f83a5933
 
 ### `postgres:9.2` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **100.3 MB (100341479 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **100.4 MB (100417487 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `b1a088fa8ebb2042f814091170e6204d856b3588dd3e340aa84c7b60493cd2be`
+-	Image ID: `sha256:dee207e667e48f7fc87c275bea0e396fef0f250891ec9469f1a0945060eddfe3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 06:06:05 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 24 May 2016 06:06:06 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 06:07:14 GMT
+# Fri, 10 Jun 2016 03:57:30 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 06:07:50 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 24 May 2016 06:07:51 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 ENV LANG=en_US.utf8
-# Tue, 24 May 2016 06:07:53 GMT
+# Fri, 10 Jun 2016 03:58:28 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 06:08:04 GMT
+# Fri, 10 Jun 2016 03:58:45 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
-# Tue, 24 May 2016 06:11:31 GMT
+# Fri, 10 Jun 2016 04:09:46 GMT
 ENV PG_MAJOR=9.2
-# Tue, 24 May 2016 06:11:32 GMT
+# Fri, 10 Jun 2016 04:09:47 GMT
 ENV PG_VERSION=9.2.17-1.pgdg80+1
-# Tue, 24 May 2016 06:11:34 GMT
+# Fri, 10 Jun 2016 04:09:48 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 24 May 2016 06:13:15 GMT
+# Fri, 10 Jun 2016 04:12:27 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 06:13:18 GMT
+# Fri, 10 Jun 2016 04:12:28 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 24 May 2016 06:13:20 GMT
+# Fri, 10 Jun 2016 04:12:29 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
-# Tue, 24 May 2016 06:13:21 GMT
+# Fri, 10 Jun 2016 04:12:29 GMT
 ENV PATH=/usr/lib/postgresql/9.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 May 2016 06:13:22 GMT
+# Fri, 10 Jun 2016 04:12:30 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 24 May 2016 06:13:22 GMT
+# Fri, 10 Jun 2016 04:12:30 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 24 May 2016 06:13:23 GMT
-COPY file:49d80c3c7c75e29237bc4b49ea8e6ffe687aaf1a52e6774ab9fb1dfbd60a36bb in /
-# Tue, 24 May 2016 06:13:24 GMT
+# Fri, 10 Jun 2016 04:12:30 GMT
+COPY file:aefa30113260f63949e77cbc9a66aa22f27b1f79479507fd0d32f9b6a6994d69 in /
+# Fri, 10 Jun 2016 04:12:31 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Tue, 24 May 2016 06:13:25 GMT
+# Fri, 10 Jun 2016 04:12:31 GMT
 EXPOSE 5432/tcp
-# Tue, 24 May 2016 06:13:25 GMT
+# Fri, 10 Jun 2016 04:12:31 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:055e85b433f4a9223dd3ab4d7728db555bf0c82873d580397d4f207c5feeda34`  
-		Last Modified: Tue, 05 Apr 2016 18:28:27 GMT  
-		Size: 1.2 KB (1250 bytes)
-	-	`sha256:eba551d866b49dbe7f3559e358475286128cccb419307e2fc94e0631c37f8422`  
-		Last Modified: Tue, 24 May 2016 22:14:38 GMT  
-		Size: 132.0 B
-	-	`sha256:84cd6a4f7a7d67a5fc7733129ff70f51f7558e42cc410915e2ddde7cc60500b3`  
-		Last Modified: Tue, 24 May 2016 22:14:41 GMT  
-		Size: 6.5 KB (6473 bytes)
-	-	`sha256:8a12aad253c3cc60ee67b25c19554a3327edc930a147d5194db4f637f547f019`  
-		Last Modified: Tue, 24 May 2016 22:15:01 GMT  
-		Size: 40.9 MB (40892143 bytes)
-	-	`sha256:46920b55c003d12f462b1e58e04e79b75f1d87cf771672e0975689c2f8cb80b3`  
-		Last Modified: Tue, 24 May 2016 22:15:05 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:22337bfd13a96ad3a76a4b90fe5448da602dade5fed79e2dd701214da6529a0e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:c3961b297accc4847d720bf7eddc00b45624143333d3d38347d5cb9084735811`  
+		Last Modified: Fri, 24 Jun 2016 01:10:46 GMT  
+		Size: 1.2 MB (1236801 bytes)
+	-	`sha256:5a17453338b40f35e6547963ee271172baa2fc199a9cfc2684f68c10d90883fe`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 6.9 MB (6891956 bytes)
+	-	`sha256:6364e0d7a283ea31e03a06e6270b97864aa33c6c8495a6cd25eb828fe2adc22a`  
+		Last Modified: Fri, 24 Jun 2016 01:10:44 GMT  
+		Size: 114.0 B
+	-	`sha256:58c25f5c0dad12a35bb506fcbd38280bef4644c7fed407bee73a2dc0002a1b1e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:45 GMT  
+		Size: 3.4 KB (3413 bytes)
+	-	`sha256:3f4185c8d657a3fde55f2f120e0d2bb41212c028f4290d148874fadcb69ff93f`  
+		Last Modified: Fri, 24 Jun 2016 01:13:19 GMT  
 		Size: 226.0 B
-	-	`sha256:4b0c5c71fa5deb24d5d3a9686bf91c0c1fd00037257a8607b424f34779b1674f`  
-		Last Modified: Tue, 24 May 2016 22:12:57 GMT  
-		Size: 3.4 KB (3411 bytes)
-	-	`sha256:6d6ccf3c012cfd6ed87bf29f178ec2b5722fcd3dde116ea7ca3a9c0b856ac409`  
-		Last Modified: Tue, 24 May 2016 22:13:01 GMT  
-		Size: 111.0 B
-	-	`sha256:f2a70e1bea0a0a1e4d8b6e23c66b5e87e4df5ce3f7ffd9ce0cb25b0aaf229fc0`  
-		Last Modified: Tue, 24 May 2016 22:13:13 GMT  
-		Size: 6.9 MB (6863344 bytes)
-	-	`sha256:7e8f4bc7ac43728c0184780d3d8f24fd2dc1d004199f0b33d315a7e849e37c8f`  
-		Last Modified: Tue, 24 May 2016 22:13:19 GMT  
-		Size: 1.2 MB (1215982 bytes)
-	-	`sha256:4a40f149a63873565397eea77b8dfadf5c8f67b7a3ca09beb78cd923ab17c286`  
-		Last Modified: Tue, 24 May 2016 22:13:28 GMT  
-		Size: 2.0 KB (2041 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:fd8201747fcbc898a4440dfb19286ece9588f56c522522d1013e50f0592c948c`  
+		Last Modified: Fri, 24 Jun 2016 01:13:33 GMT  
+		Size: 40.9 MB (40922543 bytes)
+	-	`sha256:23fd37acc6eaa75cf1e9f981058db09eec680d15eeeb8fd03a0ed49702a6f639`  
+		Last Modified: Fri, 24 Jun 2016 01:13:20 GMT  
+		Size: 6.5 KB (6474 bytes)
+	-	`sha256:6e4776caa00fcc2a8af322d76ac3281deb9cc356ba66fee78b51a3bf2817a21d`  
+		Last Modified: Fri, 24 Jun 2016 01:13:20 GMT  
+		Size: 132.0 B
+	-	`sha256:f87ba53ee3e10ee1b76274db9dc42e0e7824b27ccecb29a85997bdaa1c905ce7`  
+		Last Modified: Fri, 24 Jun 2016 01:13:20 GMT  
+		Size: 1.3 KB (1253 bytes)
 
 ## `postgres:9.1.22`
 
 ```console
-$ docker pull postgres@sha256:e931a035a2016501f764a232f667532a2c0a63e9d925aa9bf9158c9f745dbfda
+$ docker pull postgres@sha256:498ba3879321a0880916492124807eccef53df86b6e6ebe26c4e7f35934703e9
 ```
 
 -	Platforms:
@@ -1288,103 +1240,100 @@ $ docker pull postgres@sha256:e931a035a2016501f764a232f667532a2c0a63e9d925aa9bf9
 
 ### `postgres:9.1.22` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **100.2 MB (100157957 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **100.2 MB (100216034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `a9d8d2dd5a47d64f3537f3e5ba67ef884888195336868d53ad60986b16cff906`
+-	Image ID: `sha256:6d8af8f02dad86273966ca4de3d56f50f1e594c716c9a03f013ea46621c02609`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 06:06:05 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 24 May 2016 06:06:06 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 06:07:14 GMT
+# Fri, 10 Jun 2016 03:57:30 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 06:07:50 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 24 May 2016 06:07:51 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 ENV LANG=en_US.utf8
-# Tue, 24 May 2016 06:07:53 GMT
+# Fri, 10 Jun 2016 03:58:28 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 06:08:04 GMT
+# Fri, 10 Jun 2016 03:58:45 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
-# Tue, 24 May 2016 06:08:04 GMT
+# Fri, 10 Jun 2016 04:12:32 GMT
 ENV PG_MAJOR=9.1
-# Tue, 24 May 2016 06:08:05 GMT
+# Fri, 10 Jun 2016 04:12:32 GMT
 ENV PG_VERSION=9.1.22-1.pgdg80+1
-# Tue, 24 May 2016 06:08:07 GMT
+# Fri, 10 Jun 2016 04:12:33 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 24 May 2016 06:09:51 GMT
+# Fri, 10 Jun 2016 04:15:14 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 06:09:55 GMT
+# Fri, 10 Jun 2016 04:15:16 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 24 May 2016 06:09:57 GMT
+# Fri, 10 Jun 2016 04:15:17 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
-# Tue, 24 May 2016 06:09:57 GMT
+# Fri, 10 Jun 2016 04:15:17 GMT
 ENV PATH=/usr/lib/postgresql/9.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 May 2016 06:09:58 GMT
+# Fri, 10 Jun 2016 04:15:17 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 24 May 2016 06:09:59 GMT
+# Fri, 10 Jun 2016 04:15:17 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 24 May 2016 06:09:59 GMT
-COPY file:49d80c3c7c75e29237bc4b49ea8e6ffe687aaf1a52e6774ab9fb1dfbd60a36bb in /
-# Tue, 24 May 2016 06:10:00 GMT
+# Fri, 10 Jun 2016 04:15:18 GMT
+COPY file:aefa30113260f63949e77cbc9a66aa22f27b1f79479507fd0d32f9b6a6994d69 in /
+# Fri, 10 Jun 2016 04:15:18 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Tue, 24 May 2016 06:10:01 GMT
+# Fri, 10 Jun 2016 04:15:18 GMT
 EXPOSE 5432/tcp
-# Tue, 24 May 2016 06:10:02 GMT
+# Fri, 10 Jun 2016 04:15:18 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:055e85b433f4a9223dd3ab4d7728db555bf0c82873d580397d4f207c5feeda34`  
-		Last Modified: Tue, 05 Apr 2016 18:28:27 GMT  
-		Size: 1.2 KB (1250 bytes)
-	-	`sha256:6bc5696d4a8dff8dbbc0d453adec5c1f8d32e4ccb47c827c396ccc1c1e38e571`  
-		Last Modified: Tue, 24 May 2016 22:12:08 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:22337bfd13a96ad3a76a4b90fe5448da602dade5fed79e2dd701214da6529a0e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:c3961b297accc4847d720bf7eddc00b45624143333d3d38347d5cb9084735811`  
+		Last Modified: Fri, 24 Jun 2016 01:10:46 GMT  
+		Size: 1.2 MB (1236801 bytes)
+	-	`sha256:5a17453338b40f35e6547963ee271172baa2fc199a9cfc2684f68c10d90883fe`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 6.9 MB (6891956 bytes)
+	-	`sha256:6364e0d7a283ea31e03a06e6270b97864aa33c6c8495a6cd25eb828fe2adc22a`  
+		Last Modified: Fri, 24 Jun 2016 01:10:44 GMT  
+		Size: 114.0 B
+	-	`sha256:58c25f5c0dad12a35bb506fcbd38280bef4644c7fed407bee73a2dc0002a1b1e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:45 GMT  
+		Size: 3.4 KB (3413 bytes)
+	-	`sha256:03db41099a5f65f1ca93dc819979384a3186b500c4dee31f153931410f4ee0d8`  
+		Last Modified: Fri, 24 Jun 2016 01:13:56 GMT  
+		Size: 225.0 B
+	-	`sha256:9ff9398a98befd21ae416667c4cd74427f25c2facbe145f35f7ae6d2ad05e27a`  
+		Last Modified: Fri, 24 Jun 2016 01:14:08 GMT  
+		Size: 40.7 MB (40721265 bytes)
+	-	`sha256:4fe1f612c7a480897b034ca567b1b220e1d3fab9c5be70d338fd66d16bbd2fc6`  
+		Last Modified: Fri, 24 Jun 2016 01:13:55 GMT  
+		Size: 6.3 KB (6298 bytes)
+	-	`sha256:fccb6d46e5bb8fa5f3b044378f9273270a5af31628e7d91250f2b845a1655950`  
+		Last Modified: Fri, 24 Jun 2016 01:13:55 GMT  
 		Size: 133.0 B
-	-	`sha256:a080b48dc9978ae4303c57797803bcba81ea9d6f158d97b4040328389293c878`  
-		Last Modified: Tue, 24 May 2016 22:12:12 GMT  
-		Size: 6.3 KB (6293 bytes)
-	-	`sha256:6b74065080300a210d1e81b155edd7c6d3d483e127dede41524898414445f81d`  
-		Last Modified: Tue, 24 May 2016 22:12:38 GMT  
-		Size: 40.7 MB (40708800 bytes)
-	-	`sha256:ead927dc9e8d1e032bfe369b3de329183243a4f0be69e15422071887a6b1b02f`  
-		Last Modified: Tue, 24 May 2016 22:12:43 GMT  
-		Size: 226.0 B
-	-	`sha256:4b0c5c71fa5deb24d5d3a9686bf91c0c1fd00037257a8607b424f34779b1674f`  
-		Last Modified: Tue, 24 May 2016 22:12:57 GMT  
-		Size: 3.4 KB (3411 bytes)
-	-	`sha256:6d6ccf3c012cfd6ed87bf29f178ec2b5722fcd3dde116ea7ca3a9c0b856ac409`  
-		Last Modified: Tue, 24 May 2016 22:13:01 GMT  
-		Size: 111.0 B
-	-	`sha256:f2a70e1bea0a0a1e4d8b6e23c66b5e87e4df5ce3f7ffd9ce0cb25b0aaf229fc0`  
-		Last Modified: Tue, 24 May 2016 22:13:13 GMT  
-		Size: 6.9 MB (6863344 bytes)
-	-	`sha256:7e8f4bc7ac43728c0184780d3d8f24fd2dc1d004199f0b33d315a7e849e37c8f`  
-		Last Modified: Tue, 24 May 2016 22:13:19 GMT  
-		Size: 1.2 MB (1215982 bytes)
-	-	`sha256:4a40f149a63873565397eea77b8dfadf5c8f67b7a3ca09beb78cd923ab17c286`  
-		Last Modified: Tue, 24 May 2016 22:13:28 GMT  
-		Size: 2.0 KB (2041 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:5b3f9eae4ffddc5fc1bdff6ebcd0f548635ef42a04b102f61c07743dea4448cc`  
+		Last Modified: Fri, 24 Jun 2016 01:13:55 GMT  
+		Size: 1.3 KB (1254 bytes)
 
 ## `postgres:9.1`
 
 ```console
-$ docker pull postgres@sha256:2c027453e9cf7a5a31b48d8cebae4d9a6da8001ddb02b286baa838461ee34bf6
+$ docker pull postgres@sha256:498ba3879321a0880916492124807eccef53df86b6e6ebe26c4e7f35934703e9
 ```
 
 -	Platforms:
@@ -1392,95 +1341,92 @@ $ docker pull postgres@sha256:2c027453e9cf7a5a31b48d8cebae4d9a6da8001ddb02b286ba
 
 ### `postgres:9.1` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **100.2 MB (100157957 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **100.2 MB (100216034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `a9d8d2dd5a47d64f3537f3e5ba67ef884888195336868d53ad60986b16cff906`
+-	Image ID: `sha256:6d8af8f02dad86273966ca4de3d56f50f1e594c716c9a03f013ea46621c02609`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 06:06:05 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 24 May 2016 06:06:06 GMT
+# Fri, 10 Jun 2016 03:56:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 06:07:14 GMT
+# Fri, 10 Jun 2016 03:57:30 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 06:07:50 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 24 May 2016 06:07:51 GMT
+# Fri, 10 Jun 2016 03:58:27 GMT
 ENV LANG=en_US.utf8
-# Tue, 24 May 2016 06:07:53 GMT
+# Fri, 10 Jun 2016 03:58:28 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 06:08:04 GMT
+# Fri, 10 Jun 2016 03:58:45 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
-# Tue, 24 May 2016 06:08:04 GMT
+# Fri, 10 Jun 2016 04:12:32 GMT
 ENV PG_MAJOR=9.1
-# Tue, 24 May 2016 06:08:05 GMT
+# Fri, 10 Jun 2016 04:12:32 GMT
 ENV PG_VERSION=9.1.22-1.pgdg80+1
-# Tue, 24 May 2016 06:08:07 GMT
+# Fri, 10 Jun 2016 04:12:33 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 24 May 2016 06:09:51 GMT
+# Fri, 10 Jun 2016 04:15:14 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 06:09:55 GMT
+# Fri, 10 Jun 2016 04:15:16 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 24 May 2016 06:09:57 GMT
+# Fri, 10 Jun 2016 04:15:17 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
-# Tue, 24 May 2016 06:09:57 GMT
+# Fri, 10 Jun 2016 04:15:17 GMT
 ENV PATH=/usr/lib/postgresql/9.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 May 2016 06:09:58 GMT
+# Fri, 10 Jun 2016 04:15:17 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 24 May 2016 06:09:59 GMT
+# Fri, 10 Jun 2016 04:15:17 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 24 May 2016 06:09:59 GMT
-COPY file:49d80c3c7c75e29237bc4b49ea8e6ffe687aaf1a52e6774ab9fb1dfbd60a36bb in /
-# Tue, 24 May 2016 06:10:00 GMT
+# Fri, 10 Jun 2016 04:15:18 GMT
+COPY file:aefa30113260f63949e77cbc9a66aa22f27b1f79479507fd0d32f9b6a6994d69 in /
+# Fri, 10 Jun 2016 04:15:18 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Tue, 24 May 2016 06:10:01 GMT
+# Fri, 10 Jun 2016 04:15:18 GMT
 EXPOSE 5432/tcp
-# Tue, 24 May 2016 06:10:02 GMT
+# Fri, 10 Jun 2016 04:15:18 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:055e85b433f4a9223dd3ab4d7728db555bf0c82873d580397d4f207c5feeda34`  
-		Last Modified: Tue, 05 Apr 2016 18:28:27 GMT  
-		Size: 1.2 KB (1250 bytes)
-	-	`sha256:6bc5696d4a8dff8dbbc0d453adec5c1f8d32e4ccb47c827c396ccc1c1e38e571`  
-		Last Modified: Tue, 24 May 2016 22:12:08 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:22337bfd13a96ad3a76a4b90fe5448da602dade5fed79e2dd701214da6529a0e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:c3961b297accc4847d720bf7eddc00b45624143333d3d38347d5cb9084735811`  
+		Last Modified: Fri, 24 Jun 2016 01:10:46 GMT  
+		Size: 1.2 MB (1236801 bytes)
+	-	`sha256:5a17453338b40f35e6547963ee271172baa2fc199a9cfc2684f68c10d90883fe`  
+		Last Modified: Fri, 24 Jun 2016 01:10:47 GMT  
+		Size: 6.9 MB (6891956 bytes)
+	-	`sha256:6364e0d7a283ea31e03a06e6270b97864aa33c6c8495a6cd25eb828fe2adc22a`  
+		Last Modified: Fri, 24 Jun 2016 01:10:44 GMT  
+		Size: 114.0 B
+	-	`sha256:58c25f5c0dad12a35bb506fcbd38280bef4644c7fed407bee73a2dc0002a1b1e`  
+		Last Modified: Fri, 24 Jun 2016 01:10:45 GMT  
+		Size: 3.4 KB (3413 bytes)
+	-	`sha256:03db41099a5f65f1ca93dc819979384a3186b500c4dee31f153931410f4ee0d8`  
+		Last Modified: Fri, 24 Jun 2016 01:13:56 GMT  
+		Size: 225.0 B
+	-	`sha256:9ff9398a98befd21ae416667c4cd74427f25c2facbe145f35f7ae6d2ad05e27a`  
+		Last Modified: Fri, 24 Jun 2016 01:14:08 GMT  
+		Size: 40.7 MB (40721265 bytes)
+	-	`sha256:4fe1f612c7a480897b034ca567b1b220e1d3fab9c5be70d338fd66d16bbd2fc6`  
+		Last Modified: Fri, 24 Jun 2016 01:13:55 GMT  
+		Size: 6.3 KB (6298 bytes)
+	-	`sha256:fccb6d46e5bb8fa5f3b044378f9273270a5af31628e7d91250f2b845a1655950`  
+		Last Modified: Fri, 24 Jun 2016 01:13:55 GMT  
 		Size: 133.0 B
-	-	`sha256:a080b48dc9978ae4303c57797803bcba81ea9d6f158d97b4040328389293c878`  
-		Last Modified: Tue, 24 May 2016 22:12:12 GMT  
-		Size: 6.3 KB (6293 bytes)
-	-	`sha256:6b74065080300a210d1e81b155edd7c6d3d483e127dede41524898414445f81d`  
-		Last Modified: Tue, 24 May 2016 22:12:38 GMT  
-		Size: 40.7 MB (40708800 bytes)
-	-	`sha256:ead927dc9e8d1e032bfe369b3de329183243a4f0be69e15422071887a6b1b02f`  
-		Last Modified: Tue, 24 May 2016 22:12:43 GMT  
-		Size: 226.0 B
-	-	`sha256:4b0c5c71fa5deb24d5d3a9686bf91c0c1fd00037257a8607b424f34779b1674f`  
-		Last Modified: Tue, 24 May 2016 22:12:57 GMT  
-		Size: 3.4 KB (3411 bytes)
-	-	`sha256:6d6ccf3c012cfd6ed87bf29f178ec2b5722fcd3dde116ea7ca3a9c0b856ac409`  
-		Last Modified: Tue, 24 May 2016 22:13:01 GMT  
-		Size: 111.0 B
-	-	`sha256:f2a70e1bea0a0a1e4d8b6e23c66b5e87e4df5ce3f7ffd9ce0cb25b0aaf229fc0`  
-		Last Modified: Tue, 24 May 2016 22:13:13 GMT  
-		Size: 6.9 MB (6863344 bytes)
-	-	`sha256:7e8f4bc7ac43728c0184780d3d8f24fd2dc1d004199f0b33d315a7e849e37c8f`  
-		Last Modified: Tue, 24 May 2016 22:13:19 GMT  
-		Size: 1.2 MB (1215982 bytes)
-	-	`sha256:4a40f149a63873565397eea77b8dfadf5c8f67b7a3ca09beb78cd923ab17c286`  
-		Last Modified: Tue, 24 May 2016 22:13:28 GMT  
-		Size: 2.0 KB (2041 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:5b3f9eae4ffddc5fc1bdff6ebcd0f548635ef42a04b102f61c07743dea4448cc`  
+		Last Modified: Fri, 24 Jun 2016 01:13:55 GMT  
+		Size: 1.3 KB (1254 bytes)
