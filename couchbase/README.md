@@ -1,16 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `4.1.0`, `enterprise-4.1.0` (*enterprise/couchbase-server/4.1.0/Dockerfile*)](https://github.com/couchbase/docker/blob/7eb049d012eed3821ead1d8a728a07bf33db85a1/enterprise/couchbase-server/4.1.0/Dockerfile)
--	[`4.0.0`, `enterprise-4.0.0` (*enterprise/couchbase-server/4.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/7eb049d012eed3821ead1d8a728a07bf33db85a1/enterprise/couchbase-server/4.0.0/Dockerfile)
--	[`community-4.0.0`, `community` (*community/couchbase-server/4.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/7eb049d012eed3821ead1d8a728a07bf33db85a1/community/couchbase-server/4.0.0/Dockerfile)
--	[`3.1.0`, `enterprise-3.1.0` (*enterprise/couchbase-server/3.1.0/Dockerfile*)](https://github.com/couchbase/docker/blob/7eb049d012eed3821ead1d8a728a07bf33db85a1/enterprise/couchbase-server/3.1.0/Dockerfile)
--	[`3.0.3`, `enterprise-3.0.3` (*enterprise/couchbase-server/3.0.3/Dockerfile*)](https://github.com/couchbase/docker/blob/7eb049d012eed3821ead1d8a728a07bf33db85a1/enterprise/couchbase-server/3.0.3/Dockerfile)
--	[`3.0.2`, `enterprise-3.0.2` (*enterprise/couchbase-server/3.0.2/Dockerfile*)](https://github.com/couchbase/docker/blob/7eb049d012eed3821ead1d8a728a07bf33db85a1/enterprise/couchbase-server/3.0.2/Dockerfile)
--	[`community-3.0.1` (*community/couchbase-server/3.0.1/Dockerfile*)](https://github.com/couchbase/docker/blob/7eb049d012eed3821ead1d8a728a07bf33db85a1/community/couchbase-server/3.0.1/Dockerfile)
--	[`2.5.2`, `enterprise-2.5.2` (*enterprise/couchbase-server/2.5.2/Dockerfile*)](https://github.com/couchbase/docker/blob/7eb049d012eed3821ead1d8a728a07bf33db85a1/enterprise/couchbase-server/2.5.2/Dockerfile)
--	[`community-2.2.0` (*community/couchbase-server/2.2.0/Dockerfile*)](https://github.com/couchbase/docker/blob/7eb049d012eed3821ead1d8a728a07bf33db85a1/community/couchbase-server/2.2.0/Dockerfile)
+-	[`latest`, `enterprise`, `4.5.0`, `enterprise-4.5.0` (*enterprise/couchbase-server/4.5.0/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/enterprise/couchbase-server/4.5.0/Dockerfile)
+-	[`community`, `community-4.0.0` (*community/couchbase-server/4.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/community/couchbase-server/4.0.0/Dockerfile)
+-	[`3.1.5`, `enterprise-3.1.5` (*enterprise/couchbase-server/3.1.5/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/enterprise/couchbase-server/3.1.5/Dockerfile)
+-	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/community/couchbase-server/3.1.3/Dockerfile)
 
-[![](https://badge.imagelayers.io/couchbase:latest.svg)](https://imagelayers.io/?images=couchbase:latest,couchbase:4.0.0,couchbase:community-4.0.0,couchbase:3.1.0,couchbase:3.0.3,couchbase:3.0.2,couchbase:community-3.0.1,couchbase:2.5.2,couchbase:community-2.2.0)
+[![](https://badge.imagelayers.io/couchbase:latest.svg)](https://imagelayers.io/?images=couchbase:latest,couchbase:community,couchbase:3.1.5,couchbase:community-3.1.3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/couchbase`)](https://github.com/docker-library/official-images/blob/master/library/couchbase). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchbase).
 
@@ -270,7 +265,7 @@ By default, the `latest` Docker tag points to the latest Enterprise Edition, as 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -284,7 +279,7 @@ Documentation for this image is stored in the [`couchbase/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/couchbase/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/couchbase/docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -292,4 +287,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/couchbase/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/couchbase/docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

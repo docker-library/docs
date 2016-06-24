@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.0.1.38` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/ab90b204bb56d0f40e38b87189fb95748ac19dfd/Dockerfile)
+-	[`latest`, `5.1.0` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/5ff4c04902f7a514533c9005476fb864fcfdc8ff/Dockerfile)
 
 [![](https://badge.imagelayers.io/kaazing-gateway:latest.svg)](https://imagelayers.io/?images=kaazing-gateway:latest)
 
@@ -63,7 +63,7 @@ View [license information](https://github.com/kaazing/gateway/blob/master/LICENS
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

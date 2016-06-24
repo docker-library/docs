@@ -1,9 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.0.0-beta.404`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/04d09c3cf006f360611fcb178d8537c318100d85/Dockerfile)
--	[`v1.0.0-beta.392` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/7f7b1e2c7d8ca00ae07e37e64a0e305f7422f6aa/Dockerfile)
+-	[`v1.0.0-rc3`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/2044fcf109b6dc28e71cc5d351f45363115b71ae/Dockerfile)
 
-[![](https://badge.imagelayers.io/traefik:latest.svg)](https://imagelayers.io/?images=traefik:v1.0.0-beta.404,traefik:v1.0.0-beta.392)
+[![](https://badge.imagelayers.io/traefik:latest.svg)](https://imagelayers.io/?images=traefik:v1.0.0-rc3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/traefik`)](https://github.com/docker-library/official-images/blob/master/library/traefik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik).
 
@@ -81,7 +80,7 @@ View [license information](https://github.com/containous/traefik/blob/master/LIC
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

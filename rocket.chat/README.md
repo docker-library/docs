@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.26.0`, `0.26`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/4fe06cea28936a72f5d917a935b1d29a21b96de8/Dockerfile)
+-	[`0.34.0`, `0.34`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/e98402bdc34e70d0465d1c35bb38611d4d7d1de6/Dockerfile)
 
-[![](https://badge.imagelayers.io/rocket.chat:latest.svg)](https://imagelayers.io/?images=rocket.chat:0.26.0)
+[![](https://badge.imagelayers.io/rocket.chat:latest.svg)](https://imagelayers.io/?images=rocket.chat:0.34.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rocket.chat`)](https://github.com/docker-library/official-images/blob/master/library/rocket.chat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frocket.chat).
 
@@ -21,7 +21,7 @@ It is a great solution for communities and companies wanting to privately host t
 First, start an instance of mongo:
 
 ```console
-$ docker run --name db -d mongo --smallfiles
+$ docker run --name db -d mongo:3.0 --smallfiles
 ```
 
 Then start Rocket.Chat linked to this mongo instance:
@@ -52,7 +52,7 @@ View [license information](https://github.com/RocketChat/Rocket.Chat/blob/master
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

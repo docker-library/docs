@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.4`, `8.2` (*8.2/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/3ec1dafe76069627d9a1f2fe2bca149026ce9576/8.2/Dockerfile)
--	[`8.2.4-onbuild`, `8.2-onbuild` (*8.2/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/1ef759405e541ac9552fb92f2f293c8496e10d07/8.2/onbuild/Dockerfile)
--	[`8.3.2`, `8.3`, `8`, `latest` (*8.3/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/77bf86e359f312ed8925a6cafdddb6a33f4d8758/8.3/Dockerfile)
--	[`8.3.2-onbuild`, `8.3-onbuild`, `8-onbuild`, `onbuild` (*8.3/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c05ef824c01a4f2b010c2acd24031b4d22f88944/8.3/onbuild/Dockerfile)
+-	[`8.4.1`, `8.4` (*8.4/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/04470f5f81423762ffe376e2ee3657cb1c5b6b1a/8.4/Dockerfile)
+-	[`8.4.1-onbuild`, `8.4-onbuild` (*8.4/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/80218c227b188fad17575040421d600303c5f7bf/8.4/onbuild/Dockerfile)
+-	[`8.5.1`, `8.5`, `8`, `latest` (*8.5/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/902ac5c7e65aa0bfe891b6273b8693af704ccfde/8.5/Dockerfile)
+-	[`8.5.1-onbuild`, `8.5-onbuild`, `8-onbuild`, `onbuild` (*8.5/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/ce5121a71f55c2fb0659f552e361b1174c85bccf/8.5/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.2.4,sentry:8.2.4-onbuild,sentry:8.3.2,sentry:8.3.2-onbuild)
+[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.4.1,sentry:8.4.1-onbuild,sentry:8.5.1,sentry:8.5.1-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
@@ -58,8 +58,8 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 6.	The default config needs a celery beat and celery workers, start as many workers as you need (each with a unique name)
 
 	```console
-	$ docker run -d --name sentry-celery-beat -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry celery beat
-	$ docker run -d --name sentry-celery1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry celery worker
+	$ docker run -d --name sentry-cron -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run cron
+	$ docker run -d --name sentry-worker-1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run worker
 	```
 
 ### Port mapping
@@ -136,7 +136,7 @@ View [license information](https://github.com/getsentry/sentry/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

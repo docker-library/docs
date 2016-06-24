@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.4`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/0cc8fb084f2b78a00f6741e1080d9b23f32424c8/r-base/Dockerfile)
+-	[`3.3.0`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/6306669deb6673fa7c53b94586f8f8e624f3c8f8/r-base/Dockerfile)
 
-[![](https://badge.imagelayers.io/r-base:latest.svg)](https://imagelayers.io/?images=r-base:3.2.4)
+[![](https://badge.imagelayers.io/r-base:latest.svg)](https://imagelayers.io/?images=r-base:3.3.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/r-base`)](https://github.com/docker-library/official-images/blob/master/library/r-base). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fr-base).
 
@@ -80,7 +80,7 @@ View [R-project license information](http://www.r-project.org/Licenses/) for the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -94,7 +94,7 @@ Documentation for this image is stored in the [`r-base/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/rocker-org/rocker/issues).
+If you have any problems with or questions about this image, please contact us %%MAILING-LIST%% through a [GitHub issue](https://github.com/rocker-org/rocker/issues).
 
 You can also reach us by email via email at `rocker-maintainers@eddelbuettel.com`.
 
@@ -102,4 +102,4 @@ You can also reach us by email via email at `rocker-maintainers@eddelbuettel.com
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/rocker-org/rocker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans %%MAILING-LIST%% through a [GitHub issue](https://github.com/rocker-org/rocker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

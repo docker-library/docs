@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.5.0-apache`, `4.5.0`, `4.5-apache`, `4.5`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/6e26fd19eb1f04bc3f939098c986e44c7acb9a61/apache/Dockerfile)
--	[`4.5.0-fpm`, `4.5-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/6e26fd19eb1f04bc3f939098c986e44c7acb9a61/fpm/Dockerfile)
+-	[`4.5.3-apache`, `4.5-apache`, `4-apache`, `apache`, `4.5.3`, `4.5`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/4cfa30302dbf66d002ed15b01c881acee605e2dc/apache/Dockerfile)
+-	[`4.5.3-fpm`, `4.5-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/c674e9ceedf582705e0ad8487c16b42b37a5e9da/fpm/Dockerfile)
 
-[![](https://badge.imagelayers.io/wordpress:latest.svg)](https://imagelayers.io/?images=wordpress:4.5.0-apache,wordpress:4.5.0-fpm)
+[![](https://badge.imagelayers.io/wordpress:latest.svg)](https://imagelayers.io/?images=wordpress:4.5.3-apache,wordpress:4.5.3-fpm)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress).
 
@@ -82,7 +82,7 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

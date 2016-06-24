@@ -85,7 +85,7 @@ You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser
 
 ## Setting default vhost
 
-If you wish to change the default vhost, you can do so wiht the `RABBITMQ_DEFAULT_VHOST` environmental variables:
+If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAULT_VHOST` environmental variables:
 
 ```console
 $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost rabbitmq:3-management

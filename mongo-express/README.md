@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.30.48`, `0.30`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/85c54b48ae936d6780668334a677b4872b88b1b7/Dockerfile)
+-	[`0.30.59`, `0.30`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/d1a908ad4cce8bcf4453fd2b40022eeb8f5c3724/Dockerfile)
 
-[![](https://badge.imagelayers.io/mongo-express:latest.svg)](https://imagelayers.io/?images=mongo-express:0.30.48)
+[![](https://badge.imagelayers.io/mongo-express:latest.svg)](https://imagelayers.io/?images=mongo-express:0.30.59)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo-express`)](https://github.com/docker-library/official-images/blob/master/library/mongo-express). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express).
 
@@ -62,20 +62,22 @@ The following are only needed if `ME_CONFIG_MONGODB_ENABLE_ADMIN` is **"false"**
 
 ## Example
 
-	docker run -it --rm \
-	    --name mongo-express \
-	    --link web_db_1:mongo \
-	    -p 8081:8081 \
-	    -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
-	    -e ME_CONFIG_BASICAUTH_USERNAME="user" \
-	    -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
-	    mongo-express
+```console
+$ docker run -it --rm \
+    --name mongo-express \
+    --link web_db_1:mongo \
+    -p 8081:8081 \
+    -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
+    -e ME_CONFIG_BASICAUTH_USERNAME="user" \
+    -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
+    mongo-express
+```
 
 This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

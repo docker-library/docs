@@ -1,17 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.13-apache`, `7.0.13`, `7.0-apache`, `7.0`, `7-apache`, `7` (*7.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/51ac31c7508da311b2cbc7b78d0d778d2e04f59d/7.0/apache/Dockerfile)
--	[`7.0.13-fpm`, `7.0-fpm`, `7-fpm` (*7.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/c4860084f5175595c7243b2712ca95e79c62caa8/7.0/fpm/Dockerfile)
--	[`8.0.11-apache`, `8.0.11`, `8.0-apache`, `8.0` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/cfaf356a29c8d14e3a31d19bf778a7beaf4fd2e4/8.0/apache/Dockerfile)
--	[`8.0.11-fpm`, `8.0-fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/0aacd0ef10b4bd0d7a9e29433ab38376324d2667/8.0/fpm/Dockerfile)
--	[`8.1.6-apache`, `8.1.6`, `8.1-apache`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/7cd59e114e57af0c0d08144ec79cbfbcdf8d0fff/8.1/apache/Dockerfile)
--	[`8.1.6-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/49f10ce1af40883e9499b8e7613375bbfb11476f/8.1/fpm/Dockerfile)
--	[`8.2.3-apache`, `8.2.3`, `8.2-apache`, `8.2`, `8-apache`, `8` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/0b21422e305b503f59732f70b6f85e4234151a35/8.2/apache/Dockerfile)
--	[`8.2.3-fpm`, `8.2-fpm`, `8-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/998e99fcfb0eb917c01504ddf0f544e771856ffc/8.2/fpm/Dockerfile)
--	[`9.0.1-apache`, `9.0.1`, `9.0-apache`, `9.0`, `9-apache`, `9`, `apache`, `latest` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/bfaaed8dc729f4e704b651594d9873e33ef834bd/9.0/apache/Dockerfile)
--	[`9.0.1-fpm`, `9.0-fpm`, `9-fpm`, `fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/bfaaed8dc729f4e704b651594d9873e33ef834bd/9.0/fpm/Dockerfile)
+-	[`8.0.13-apache`, `8.0-apache`, `8.0.13`, `8.0` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/e58cf3d60e84e8dd113337e4a4ab7e4cdb8805ff/8.0/apache/Dockerfile)
+-	[`8.0.13-fpm`, `8.0-fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/e58cf3d60e84e8dd113337e4a4ab7e4cdb8805ff/8.0/fpm/Dockerfile)
+-	[`8.1.8-apache`, `8.1-apache`, `8.1.8`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/410ebaf1fc10badfb39429091628fc3c6e894682/8.1/apache/Dockerfile)
+-	[`8.1.8-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/410ebaf1fc10badfb39429091628fc3c6e894682/8.1/fpm/Dockerfile)
+-	[`8.2.5-apache`, `8.2-apache`, `8-apache`, `8.2.5`, `8.2`, `8` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/410ebaf1fc10badfb39429091628fc3c6e894682/8.2/apache/Dockerfile)
+-	[`8.2.5-fpm`, `8.2-fpm`, `8-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/410ebaf1fc10badfb39429091628fc3c6e894682/8.2/fpm/Dockerfile)
+-	[`9.0.2-apache`, `9.0-apache`, `9-apache`, `apache`, `9.0.2`, `9.0`, `9`, `latest` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/410ebaf1fc10badfb39429091628fc3c6e894682/9.0/apache/Dockerfile)
+-	[`9.0.2-fpm`, `9.0-fpm`, `9-fpm`, `fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/410ebaf1fc10badfb39429091628fc3c6e894682/9.0/fpm/Dockerfile)
 
-[![](https://badge.imagelayers.io/owncloud:latest.svg)](https://imagelayers.io/?images=owncloud:7.0.13-apache,owncloud:7.0.13-fpm,owncloud:8.0.11-apache,owncloud:8.0.11-fpm,owncloud:8.1.6-apache,owncloud:8.1.6-fpm,owncloud:8.2.3-apache,owncloud:8.2.3-fpm,owncloud:9.0.1-apache,owncloud:9.0.1-fpm)
+[![](https://badge.imagelayers.io/owncloud:latest.svg)](https://imagelayers.io/?images=owncloud:8.0.13-apache,owncloud:8.0.13-fpm,owncloud:8.1.8-apache,owncloud:8.1.8-fpm,owncloud:8.2.5-apache,owncloud:8.2.5-fpm,owncloud:9.0.2-apache,owncloud:9.0.2-fpm)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fowncloud).
 
@@ -41,7 +39,7 @@ For a MySQL database you can link an database container, e.g. `--link my-mysql:m
 
 ## Persistent data
 
-All data is stored within the default volume `/var/www/html`. With this volume, ownCloud will only be updated when the file `version.php` is not present.
+All data beyond what lives in the database (file uploads, etc) is stored within the default volume `/var/www/html`. With this volume, ownCloud will only be updated when the file `version.php` is not present.
 
 -	`-v /<mydatalocation>:/var/www/html`
 
@@ -55,13 +53,34 @@ For fine grained data persistence, you can use 3 volumes, as shown below.
 
 When using the 6.0 image, you need to map the host port to the container port that apache listens on when going through the installation wizard. By default, this is port 80.
 
+## ... via [`docker-compose`](https://github.com/docker/compose)
+
+Example `docker-compose.yml` for `owncloud`:
+
+```yaml
+# access via "http://localhost:8080" (or "http://$(docker-machine ip):8080" if using docker-machine)
+# during initial setup, use "mysql" as the MySQL hostname
+
+owncloud:
+  image: owncloud
+  links:
+    - db:mysql
+  ports:
+    - 8080:80
+
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: example
+```
+
 # License
 
 View [license information](https://owncloud.org/contribute/agreement/) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

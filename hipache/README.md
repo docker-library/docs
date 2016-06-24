@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.3.1` (*Dockerfile*)](https://github.com/dotcloud/hipache/blob/0.3.1/Dockerfile)
+-	[`latest`, `0.3.1` (*Dockerfile*)](https://github.com/dotcloud/hipache/blob/c2d4864a663d976ff2560493fe8e0dd424b792b3/Dockerfile)
 
 [![](https://badge.imagelayers.io/hipache:latest.svg)](https://imagelayers.io/?images=hipache:latest)
 
@@ -16,7 +16,7 @@ Hipache was originally developed at [dotCloud](http://www.dotcloud.com), a popul
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

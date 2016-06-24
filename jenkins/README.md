@@ -1,10 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.642.4` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/67f1189b45ba454acc72eb6117107c6f08c2663a/Dockerfile)
--	[`2.0-beta-2` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/fe85c05446a482e9908d735a27c803e81610820c/Dockerfile)
--	[`alpine`, `1.642.4-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/210f6d0745dc4c69dc6f723962a0f395a4778152/Dockerfile)
+-	[`latest`, `1.651.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/223ca363411bf70dbda92e358be092097342d5ad/Dockerfile)
+-	[`alpine`, `1.651.3-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/7616fefc2db53d86d2fe68a01f028e356caf940f/Dockerfile)
 
-[![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:2.0-beta-2,jenkins:alpine)
+[![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
@@ -14,7 +13,9 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 The Jenkins Continuous Integration and Delivery server.
 
-This is a fully functional Jenkins server, based on the Long Term Support release [http://jenkins-ci.org/](http://jenkins-ci.org/).
+This is a fully functional Jenkins server, based on the Long Term Support release [http://jenkins.io/](http://jenkins.io/).
+
+For weekly releases check out [`jenkinsci/jenkins`](https://hub.docker.com/r/jenkinsci/jenkins/)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/3ab4dafb41dd0e959ff9322b3c50af2519af6d85/jenkins/logo.png)
 
@@ -192,7 +193,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

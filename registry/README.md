@@ -1,8 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2`, `2.4`, `2.4.0` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/3b41b10642a3c24e2405b8f4cfa1441c54f1c8a2/Dockerfile)
+-	[`2`, `2.4`, `2.4.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/5cbbc8d1e6046cef5938e3380fd2a5fbd854f921/Dockerfile)
+-	[`2.5.0-rc.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/98cf3dfbb2b811d5516f5409d5d5b804a72b478d/Dockerfile)
 
-[![](https://badge.imagelayers.io/registry:2.svg)](https://imagelayers.io/?images=registry:2)
+[![](https://badge.imagelayers.io/registry:2.svg)](https://imagelayers.io/?images=registry:2,registry:2.5.0-rc.1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fregistry).
 
@@ -45,7 +46,7 @@ If you are interested in commercial support, the [Docker Trusted Registry](https
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -59,7 +60,7 @@ Documentation for this image is stored in the [`registry/` directory](https://gi
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker/docker-registry/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker/distribution-library-image/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -67,4 +68,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker/docker-registry/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker/distribution-library-image/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

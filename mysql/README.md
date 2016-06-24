@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5.49`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/d7e71447ff3ad3c579ac3cca8c0dc090d11d4baf/5.5/Dockerfile)
--	[`5.6.30`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/d7e71447ff3ad3c579ac3cca8c0dc090d11d4baf/5.6/Dockerfile)
--	[`5.7.12`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/d7e71447ff3ad3c579ac3cca8c0dc090d11d4baf/5.7/Dockerfile)
+-	[`5.7.13`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/f7a67d7634a68d319988ad6f99729bfeaa84ceb2/5.7/Dockerfile)
+-	[`5.6.31`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/f7a67d7634a68d319988ad6f99729bfeaa84ceb2/5.6/Dockerfile)
+-	[`5.5.50`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/f7a67d7634a68d319988ad6f99729bfeaa84ceb2/5.5/Dockerfile)
 
-[![](https://badge.imagelayers.io/mysql:latest.svg)](https://imagelayers.io/?images=mysql:5.5.49,mysql:5.6.30,mysql:5.7.12)
+[![](https://badge.imagelayers.io/mysql:latest.svg)](https://imagelayers.io/?images=mysql:5.7.13,mysql:5.6.31,mysql:5.5.50)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmysql).
 
@@ -156,9 +156,17 @@ If there is no database initialized when the container starts, then a default da
 
 If you start your `mysql` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), the `$MYSQL_ROOT_PASSWORD` variable should be omitted from the run command line; it will in any case be ignored, and the pre-existing database will not be changed in any way.
 
+## Creating database dumps
+
+Most of the normal tools will work, although their usage might be a little convoluted in some cases to ensure they have access to the `mysqld` server. A simple way to ensure this is to use `docker exec` and run the tool from the same container, similar to the following:
+
+```console
+$ docker exec some-mysql sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
+```
+
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

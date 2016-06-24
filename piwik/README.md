@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.16.0`, `2.16`, `2`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/ed86be5a1fedc8b6826240c653be2fb13114843b/Dockerfile)
+-	[`2.16.1`, `2.16`, `2`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/70bb9d02587964baee0e652cebc4fb85ac553f38/Dockerfile)
 
-[![](https://badge.imagelayers.io/piwik:latest.svg)](https://imagelayers.io/?images=piwik:2.16.0)
+[![](https://badge.imagelayers.io/piwik:latest.svg)](https://imagelayers.io/?images=piwik:2.16.1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/piwik`)](https://github.com/docker-library/official-images/blob/master/library/piwik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpiwik).
 
@@ -63,7 +63,7 @@ View [license information](https://github.com/piwik/piwik/blob/master/LEGALNOTIC
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.0.
+This image is officially supported on Docker version 1.11.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

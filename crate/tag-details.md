@@ -3,1852 +3,530 @@
 # Tags of `crate`
 
 -	[`crate:latest`](#cratelatest)
+-	[`crate:0.54`](#crate054)
+-	[`crate:0.54.9`](#crate0549)
 -	[`crate:0.52`](#crate052)
 -	[`crate:0.52.4`](#crate0524)
--	[`crate:0.54`](#crate054)
--	[`crate:0.54.8`](#crate0548)
 
 ## `crate:latest`
 
 ```console
-$ docker pull library/crate@sha256:5e991e61531c1fc5ad9a5c6b4d74eea536bc9bf300390761f5432db024e37ce1
+$ docker pull crate@sha256:3db871c6d951db08959e8e49cd6d248fce9bbdc640e63ca96191c4c6ef6d9016
 ```
 
--	Total Virtual Size: 398.8 MB (398778483 bytes)
--	Total v2 Content-Length: 180.0 MB (180017191 bytes)
+-	Platforms:
+	-	linux; amd64
 
-### Layers (24)
+### `crate:latest` - linux; amd64
 
-#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
-
-```dockerfile
-ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
-```
-
--	Created: Mon, 04 Apr 2016 22:02:00 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125051065 bytes)
--	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
--	v2 Content-Length: 51.3 MB (51342828 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
-
-#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **148.1 MB (148113292 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:91673af9bbe9140ed38c5d598d20f3ac96e3da24ac4c0f7cf0c7cc55ace3217a`
+-	Default Command: `["crate"]`
 
 ```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 04 Apr 2016 22:02:03 GMT
--	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 04 Apr 2016 22:08:25 GMT
--	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
--	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44283322 bytes)
--	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
--	v2 Content-Length: 18.5 MB (18527192 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
-
-#### `ebf89852e971f664cebded66860ed8700bceb0b23f8735b100d855e30e623b59`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzip2 \
-		unzip \
-		xz-utils \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 04 Apr 2016 23:06:51 GMT
--	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
--	Docker Version: 1.9.1
--	Virtual Size: 1.2 MB (1171554 bytes)
--	v2 Blob: `sha256:52a884c93bb2af68588628bba83021c9f35845905129aae18592d331830cbdff`
--	v2 Content-Length: 566.6 KB (566558 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:43 GMT
-
-#### `f53b718ffa06fe2f919ceb2debd18d280e3cea1e8b014011fe42abc31a4b8da7`
-
-```dockerfile
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-```
-
--	Created: Mon, 04 Apr 2016 23:19:27 GMT
--	Parent Layer: `ebf89852e971f664cebded66860ed8700bceb0b23f8735b100d855e30e623b59`
--	Docker Version: 1.9.1
--	Virtual Size: 61.0 B
--	v2 Blob: `sha256:070ee56a6f7eaa89a4d6fa9080782779e507ad728dee505245128af70467ac19`
--	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:40 GMT
-
-#### `e9dec0aba9873c6a4c02be81e6962ac43f2e05cc3e16e86b0af0400556c5fc58`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Mon, 04 Apr 2016 23:19:28 GMT
--	Parent Layer: `f53b718ffa06fe2f919ceb2debd18d280e3cea1e8b014011fe42abc31a4b8da7`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `465501aff72f3b498f5dad5d3d2f6ee089ae49c6c861eeed36f4653630674b7f`
-
-```dockerfile
-RUN { \
-		echo '#!/bin/sh'; \
-		echo 'set -e'; \
-		echo; \
-		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
-	} > /usr/local/bin/docker-java-home \
-	&& chmod +x /usr/local/bin/docker-java-home
-```
-
--	Created: Mon, 04 Apr 2016 23:19:29 GMT
--	Parent Layer: `e9dec0aba9873c6a4c02be81e6962ac43f2e05cc3e16e86b0af0400556c5fc58`
--	Docker Version: 1.9.1
--	Virtual Size: 87.0 B
--	v2 Blob: `sha256:f8b8b1302b4f236f33b92ad898548f7353e5c5dc79aa0a4d464e2640b618cd8a`
--	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:35 GMT
-
-#### `3e068a57afebb2501dc523647b0a3213241240d4847303737ff31962e656ddb6`
-
-```dockerfile
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-```
-
--	Created: Mon, 04 Apr 2016 23:19:30 GMT
--	Parent Layer: `465501aff72f3b498f5dad5d3d2f6ee089ae49c6c861eeed36f4653630674b7f`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `fe962ef562700c1f1349124dc05135499b0c63d5428db0a268f2133dc4ddf843`
-
-```dockerfile
-ENV JAVA_VERSION=8u72
-```
-
--	Created: Mon, 04 Apr 2016 23:19:30 GMT
--	Parent Layer: `3e068a57afebb2501dc523647b0a3213241240d4847303737ff31962e656ddb6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `2d481368436064ac1a3dc616d003d88bf55bad83e55c6085465ee83385af2642`
-
-```dockerfile
-ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
-```
-
--	Created: Mon, 04 Apr 2016 23:19:31 GMT
--	Parent Layer: `fe962ef562700c1f1349124dc05135499b0c63d5428db0a268f2133dc4ddf843`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e6ea6054e7716e404382e531fcb0bf0cdde89e224d038606f3412a011b9e57b8`
-
-```dockerfile
-ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-```
-
--	Created: Mon, 04 Apr 2016 23:19:31 GMT
--	Parent Layer: `2d481368436064ac1a3dc616d003d88bf55bad83e55c6085465ee83385af2642`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `b599ec21e5fda2476f61c49453de326bd4c1bb59fc730f2c02c0bf3ba2178dbb`
-
-```dockerfile
-RUN set -x \
-	&& apt-get update \
-	&& apt-get install -y \
-		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
-		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-```
-
--	Created: Mon, 04 Apr 2016 23:20:36 GMT
--	Parent Layer: `e6ea6054e7716e404382e531fcb0bf0cdde89e224d038606f3412a011b9e57b8`
--	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (139978929 bytes)
--	v2 Blob: `sha256:e71221cc95985ee02472f6c5d678df7aa6b1e7b2b5a3fadff7e59f45405b6f9e`
--	v2 Content-Length: 53.3 MB (53333545 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:22 GMT
-
-#### `78ce7242945784d136a3258595667573cd3d687db45531bdb12dba2532121ac4`
-
-```dockerfile
-RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-```
-
--	Created: Mon, 04 Apr 2016 23:20:40 GMT
--	Parent Layer: `b599ec21e5fda2476f61c49453de326bd4c1bb59fc730f2c02c0bf3ba2178dbb`
--	Docker Version: 1.9.1
--	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:349c9e35d5036742ce0c6288c97cce290f09d7db554d9c2fb0543c3613a1e2dc`
--	v2 Content-Length: 284.3 KB (284336 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:02 GMT
-
-#### `e15fce8a9f01784fe0f5ccfa8f93983b11fbc6870984c3e4be6b5d6c813ae89d`
-
-```dockerfile
-MAINTAINER Crate Technology GmbH <office@crate.io>
-```
-
--	Created: Tue, 05 Apr 2016 15:58:08 GMT
--	Parent Layer: `78ce7242945784d136a3258595667573cd3d687db45531bdb12dba2532121ac4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `6d46e4b7032b067562c2a92bd8544e23ea17582733ce74cafcb9bb166955833b`
-
-```dockerfile
-RUN apt-get update &&\
-     apt-get install -y python3 &&\
-     rm -rf /var/lib/apt &&\
-     ln -s /usr/bin/python3 /usr/bin/python
-```
-
--	Created: Tue, 05 Apr 2016 15:58:53 GMT
--	Parent Layer: `e15fce8a9f01784fe0f5ccfa8f93983b11fbc6870984c3e4be6b5d6c813ae89d`
--	Docker Version: 1.9.1
--	Virtual Size: 30.4 MB (30440423 bytes)
--	v2 Blob: `sha256:6bdf9d8306d337ae3871dcf5dabf314e9dc99cf9f4568d04f8787835c3d7eaec`
--	v2 Content-Length: 9.5 MB (9505330 bytes)
--	v2 Last-Modified: Wed, 06 Apr 2016 00:50:37 GMT
-
-#### `d7d685a53b3c995fadc0a963ef5cdd5b10441babc3c713ad4a10cc77d4c5feff`
-
-```dockerfile
-ENV CRATE_VERSION=0.54.8
-```
-
--	Created: Thu, 14 Apr 2016 17:17:35 GMT
--	Parent Layer: `6d46e4b7032b067562c2a92bd8544e23ea17582733ce74cafcb9bb166955833b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e68f65cc596efef44a95c586a24285472570eff1f242b4c585ae2a92e73b5f21`
-
-```dockerfile
-RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
-```
-
--	Created: Thu, 14 Apr 2016 17:17:44 GMT
--	Parent Layer: `d7d685a53b3c995fadc0a963ef5cdd5b10441babc3c713ad4a10cc77d4c5feff`
--	Docker Version: 1.9.1
--	Virtual Size: 57.4 MB (57434197 bytes)
--	v2 Blob: `sha256:04abaaf31179ba86560432cf7f278512a74e4ce3eb813f5d7c482ceca5d34b8f`
--	v2 Content-Length: 46.5 MB (46455903 bytes)
--	v2 Last-Modified: Thu, 14 Apr 2016 17:20:42 GMT
-
-#### `3876ea53ea011ad351cc623c9aba929ca0766bcab1efd8fc5e6ab02f1dbcbc97`
-
-```dockerfile
+# Thu, 23 Jun 2016 19:55:12 GMT
+ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
+# Thu, 23 Jun 2016 20:01:11 GMT
+MAINTAINER Crate.IO GmbH office@crate.io
+# Thu, 23 Jun 2016 20:01:11 GMT
+ENV ANT_VERSION=1.9.7
+# Thu, 23 Jun 2016 20:01:11 GMT
+ENV SIGAR_VERSION=1.6.4
+# Thu, 23 Jun 2016 20:01:13 GMT
+RUN addgroup crate && adduser -G crate -H crate -D
+# Thu, 23 Jun 2016 20:01:14 GMT
+ADD file:ca9d36a1caad530dcca5f621f863c300f4e790c04d027524dd7c6a46665b46b2 in /var/tmp/
+# Thu, 23 Jun 2016 20:04:34 GMT
+RUN set -ex     && apk add --no-cache --virtual .build-deps         tar         git         gcc         cmake         libc-dev         libtirpc-dev         pax-utils         openjdk8         gnupg         perl     && BUILD_DIR=$(mktemp -d)     && cd $BUILD_DIR     && curl -fSL https://www.apache.org/dist/ant/KEYS -o KEYS     && curl -fSL -O https://www.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz.asc     && curl -fSL -O https://www-us.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz     && export GNUPGHOME="$(mktemp -d)"     && gpg --import KEYS     && gpg --batch --verify apache-ant-$ANT_VERSION-bin.tar.gz.asc apache-ant-$ANT_VERSION-bin.tar.gz     && rm -r "$GNUPGHOME" apache-ant-$ANT_VERSION-bin.tar.gz.asc     && tar -zxf apache-ant-$ANT_VERSION-bin.tar.gz     && git clone https://github.com/hyperic/sigar.git --single-branch --branch sigar-$SIGAR_VERSION sigar     && cd sigar     && git apply /var/tmp/sigar_build.patch     && cd bindings/java     && $BUILD_DIR/apache-ant-$ANT_VERSION/bin/ant     && find build -name '*.so*' | xargs install -t /usr/local/lib     && runDeps="$(         scanelf --needed --nobanner --recursive /usr/local             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache --virtual .libsigar-rundeps $runDeps     && apk del .build-deps     && rm -rf $BUILD_DIR
+# Thu, 23 Jun 2016 20:04:35 GMT
+ENV CRATE_VERSION=0.54.9
+# Thu, 23 Jun 2016 20:05:13 GMT
+RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openssl     && apk add --no-cache --virtual .build-deps curl gnupg tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && ln -s /usr/bin/python3 /usr/bin/python     && cp -f /usr/local/lib/*.so /crate/lib/sigar/     && chown -R crate /crate     && apk del .build-deps
+# Thu, 23 Jun 2016 20:05:14 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Thu, 14 Apr 2016 17:17:44 GMT
--	Parent Layer: `e68f65cc596efef44a95c586a24285472570eff1f242b4c585ae2a92e73b5f21`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `49a3e1cd16cd7bebea48b897fbac0acce5b874507537da486b681af4b611ca75`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:14 GMT
 VOLUME [/data]
-```
-
--	Created: Thu, 14 Apr 2016 17:17:45 GMT
--	Parent Layer: `3876ea53ea011ad351cc623c9aba929ca0766bcab1efd8fc5e6ab02f1dbcbc97`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `df6a0e9fefef03351d5e014e109618510155143d44d3d6ac968c5e82f68f25e0`
-
-```dockerfile
-ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
-```
-
--	Created: Thu, 14 Apr 2016 17:17:46 GMT
--	Parent Layer: `49a3e1cd16cd7bebea48b897fbac0acce5b874507537da486b681af4b611ca75`
--	Docker Version: 1.9.1
--	Virtual Size: 100.0 B
--	v2 Blob: `sha256:5147141a6c333fcaff5ee3f4fd7e2d11701be2e8ad8f3bb9994a0d8868f4f0f0`
--	v2 Content-Length: 228.0 B
--	v2 Last-Modified: Thu, 14 Apr 2016 17:20:23 GMT
-
-#### `8f42c939361ba6fb3ccdd344ba7d9a856f2af006405eb8b38493e16e466579e4`
-
-```dockerfile
-ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
-```
-
--	Created: Thu, 14 Apr 2016 17:17:46 GMT
--	Parent Layer: `df6a0e9fefef03351d5e014e109618510155143d44d3d6ac968c5e82f68f25e0`
--	Docker Version: 1.9.1
--	Virtual Size: 529.0 B
--	v2 Blob: `sha256:cdbcc3537f267851da5cef2bc5fbded5154197d87e7b931570032c6e6340c6bd`
--	v2 Content-Length: 395.0 B
--	v2 Last-Modified: Thu, 14 Apr 2016 17:20:20 GMT
-
-#### `0813ba9a18f312f0cef0032faac9a491edd343fd1d2547397170c6b2889ee827`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:15 GMT
+ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml
+# Thu, 23 Jun 2016 20:05:16 GMT
+ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml
+# Thu, 23 Jun 2016 20:05:17 GMT
 WORKDIR /data
-```
-
--	Created: Thu, 14 Apr 2016 17:17:47 GMT
--	Parent Layer: `8f42c939361ba6fb3ccdd344ba7d9a856f2af006405eb8b38493e16e466579e4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `7c61578b232d6932ab7e2d2d11064a90c57bb5c8b9f2f8ce8a5614ee84919045`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:18 GMT
 EXPOSE 4200/tcp 4300/tcp
-```
-
--	Created: Thu, 14 Apr 2016 17:17:48 GMT
--	Parent Layer: `0813ba9a18f312f0cef0032faac9a491edd343fd1d2547397170c6b2889ee827`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `5dd5e0fd0a5513c95a476a69a87e831c26f60104e534541c2de21ea233c653f5`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:18 GMT
 CMD ["crate"]
 ```
 
--	Created: Thu, 14 Apr 2016 17:17:48 GMT
--	Parent Layer: `7c61578b232d6932ab7e2d2d11064a90c57bb5c8b9f2f8ce8a5614ee84919045`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `crate:0.52`
-
-```console
-$ docker pull library/crate@sha256:b7759bbb70ebbed80c277c75c263e3f73779b16a050d1641eedc2a3b4603f4ab
-```
-
--	Total Virtual Size: 402.2 MB (402207764 bytes)
--	Total v2 Content-Length: 180.9 MB (180873134 bytes)
-
-### Layers (24)
-
-#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
-
-```dockerfile
-ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
-```
-
--	Created: Mon, 04 Apr 2016 22:02:00 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125051065 bytes)
--	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
--	v2 Content-Length: 51.3 MB (51342828 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
-
-#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 04 Apr 2016 22:02:03 GMT
--	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 04 Apr 2016 22:08:25 GMT
--	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
--	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44283322 bytes)
--	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
--	v2 Content-Length: 18.5 MB (18527192 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
-
-#### `ebf89852e971f664cebded66860ed8700bceb0b23f8735b100d855e30e623b59`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzip2 \
-		unzip \
-		xz-utils \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 04 Apr 2016 23:06:51 GMT
--	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
--	Docker Version: 1.9.1
--	Virtual Size: 1.2 MB (1171554 bytes)
--	v2 Blob: `sha256:52a884c93bb2af68588628bba83021c9f35845905129aae18592d331830cbdff`
--	v2 Content-Length: 566.6 KB (566558 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:43 GMT
-
-#### `f53b718ffa06fe2f919ceb2debd18d280e3cea1e8b014011fe42abc31a4b8da7`
-
-```dockerfile
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-```
-
--	Created: Mon, 04 Apr 2016 23:19:27 GMT
--	Parent Layer: `ebf89852e971f664cebded66860ed8700bceb0b23f8735b100d855e30e623b59`
--	Docker Version: 1.9.1
--	Virtual Size: 61.0 B
--	v2 Blob: `sha256:070ee56a6f7eaa89a4d6fa9080782779e507ad728dee505245128af70467ac19`
--	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:40 GMT
-
-#### `e9dec0aba9873c6a4c02be81e6962ac43f2e05cc3e16e86b0af0400556c5fc58`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Mon, 04 Apr 2016 23:19:28 GMT
--	Parent Layer: `f53b718ffa06fe2f919ceb2debd18d280e3cea1e8b014011fe42abc31a4b8da7`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `465501aff72f3b498f5dad5d3d2f6ee089ae49c6c861eeed36f4653630674b7f`
-
-```dockerfile
-RUN { \
-		echo '#!/bin/sh'; \
-		echo 'set -e'; \
-		echo; \
-		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
-	} > /usr/local/bin/docker-java-home \
-	&& chmod +x /usr/local/bin/docker-java-home
-```
-
--	Created: Mon, 04 Apr 2016 23:19:29 GMT
--	Parent Layer: `e9dec0aba9873c6a4c02be81e6962ac43f2e05cc3e16e86b0af0400556c5fc58`
--	Docker Version: 1.9.1
--	Virtual Size: 87.0 B
--	v2 Blob: `sha256:f8b8b1302b4f236f33b92ad898548f7353e5c5dc79aa0a4d464e2640b618cd8a`
--	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:35 GMT
-
-#### `3e068a57afebb2501dc523647b0a3213241240d4847303737ff31962e656ddb6`
-
-```dockerfile
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-```
-
--	Created: Mon, 04 Apr 2016 23:19:30 GMT
--	Parent Layer: `465501aff72f3b498f5dad5d3d2f6ee089ae49c6c861eeed36f4653630674b7f`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `fe962ef562700c1f1349124dc05135499b0c63d5428db0a268f2133dc4ddf843`
-
-```dockerfile
-ENV JAVA_VERSION=8u72
-```
-
--	Created: Mon, 04 Apr 2016 23:19:30 GMT
--	Parent Layer: `3e068a57afebb2501dc523647b0a3213241240d4847303737ff31962e656ddb6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `2d481368436064ac1a3dc616d003d88bf55bad83e55c6085465ee83385af2642`
-
-```dockerfile
-ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
-```
-
--	Created: Mon, 04 Apr 2016 23:19:31 GMT
--	Parent Layer: `fe962ef562700c1f1349124dc05135499b0c63d5428db0a268f2133dc4ddf843`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e6ea6054e7716e404382e531fcb0bf0cdde89e224d038606f3412a011b9e57b8`
-
-```dockerfile
-ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-```
-
--	Created: Mon, 04 Apr 2016 23:19:31 GMT
--	Parent Layer: `2d481368436064ac1a3dc616d003d88bf55bad83e55c6085465ee83385af2642`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `b599ec21e5fda2476f61c49453de326bd4c1bb59fc730f2c02c0bf3ba2178dbb`
-
-```dockerfile
-RUN set -x \
-	&& apt-get update \
-	&& apt-get install -y \
-		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
-		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-```
-
--	Created: Mon, 04 Apr 2016 23:20:36 GMT
--	Parent Layer: `e6ea6054e7716e404382e531fcb0bf0cdde89e224d038606f3412a011b9e57b8`
--	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (139978929 bytes)
--	v2 Blob: `sha256:e71221cc95985ee02472f6c5d678df7aa6b1e7b2b5a3fadff7e59f45405b6f9e`
--	v2 Content-Length: 53.3 MB (53333545 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:22 GMT
-
-#### `78ce7242945784d136a3258595667573cd3d687db45531bdb12dba2532121ac4`
-
-```dockerfile
-RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-```
-
--	Created: Mon, 04 Apr 2016 23:20:40 GMT
--	Parent Layer: `b599ec21e5fda2476f61c49453de326bd4c1bb59fc730f2c02c0bf3ba2178dbb`
--	Docker Version: 1.9.1
--	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:349c9e35d5036742ce0c6288c97cce290f09d7db554d9c2fb0543c3613a1e2dc`
--	v2 Content-Length: 284.3 KB (284336 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:02 GMT
-
-#### `e15fce8a9f01784fe0f5ccfa8f93983b11fbc6870984c3e4be6b5d6c813ae89d`
-
-```dockerfile
-MAINTAINER Crate Technology GmbH <office@crate.io>
-```
-
--	Created: Tue, 05 Apr 2016 15:58:08 GMT
--	Parent Layer: `78ce7242945784d136a3258595667573cd3d687db45531bdb12dba2532121ac4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `6d46e4b7032b067562c2a92bd8544e23ea17582733ce74cafcb9bb166955833b`
-
-```dockerfile
-RUN apt-get update &&\
-     apt-get install -y python3 &&\
-     rm -rf /var/lib/apt &&\
-     ln -s /usr/bin/python3 /usr/bin/python
-```
-
--	Created: Tue, 05 Apr 2016 15:58:53 GMT
--	Parent Layer: `e15fce8a9f01784fe0f5ccfa8f93983b11fbc6870984c3e4be6b5d6c813ae89d`
--	Docker Version: 1.9.1
--	Virtual Size: 30.4 MB (30440423 bytes)
--	v2 Blob: `sha256:6bdf9d8306d337ae3871dcf5dabf314e9dc99cf9f4568d04f8787835c3d7eaec`
--	v2 Content-Length: 9.5 MB (9505330 bytes)
--	v2 Last-Modified: Wed, 06 Apr 2016 00:50:37 GMT
-
-#### `a07be10cede7cf430ea543e6bdfc982630fab482a8df7918bd748fc9682c39b2`
-
-```dockerfile
-ENV CRATE_VERSION=0.52.4
-```
-
--	Created: Tue, 05 Apr 2016 15:59:23 GMT
--	Parent Layer: `6d46e4b7032b067562c2a92bd8544e23ea17582733ce74cafcb9bb166955833b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f0b5b16a989846e28cce0ac225f990122e36cd0b62849028c238717e554d74e6`
-
-```dockerfile
-RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
-```
-
--	Created: Tue, 05 Apr 2016 15:59:33 GMT
--	Parent Layer: `a07be10cede7cf430ea543e6bdfc982630fab482a8df7918bd748fc9682c39b2`
--	Docker Version: 1.9.1
--	Virtual Size: 60.9 MB (60863478 bytes)
--	v2 Blob: `sha256:2ad578b87f170e5452f77abdbbce0d622b4d3ff269e9b28b93df88d91f127dc3`
--	v2 Content-Length: 47.3 MB (47311843 bytes)
--	v2 Last-Modified: Wed, 06 Apr 2016 00:52:42 GMT
-
-#### `d13d2e8c481ca54a8232d59d7d19b060b3c52e1bc74e6179f1ac729aad4fcfab`
-
-```dockerfile
-ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 05 Apr 2016 15:59:34 GMT
--	Parent Layer: `f0b5b16a989846e28cce0ac225f990122e36cd0b62849028c238717e554d74e6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `91a3a1a9995ce476df845b90b5f38f19a8d183bda8ebfb386309843a2dd8ff32`
-
-```dockerfile
-VOLUME [/data]
-```
-
--	Created: Tue, 05 Apr 2016 15:59:34 GMT
--	Parent Layer: `d13d2e8c481ca54a8232d59d7d19b060b3c52e1bc74e6179f1ac729aad4fcfab`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f1fca41a0f12650fa33a1f02f38cb6058e60746774363a131703aef7d03641c3`
-
-```dockerfile
-ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
-```
-
--	Created: Tue, 05 Apr 2016 15:59:35 GMT
--	Parent Layer: `91a3a1a9995ce476df845b90b5f38f19a8d183bda8ebfb386309843a2dd8ff32`
--	Docker Version: 1.9.1
--	Virtual Size: 100.0 B
--	v2 Blob: `sha256:5b71a20373482338571ea1ed3b596379b202629c6e487cb8585b35ed2983f002`
--	v2 Content-Length: 230.0 B
--	v2 Last-Modified: Wed, 06 Apr 2016 00:52:23 GMT
-
-#### `de164c7a71949ef1edd02722c87955bcd9567049247718a9154ea172bc44be11`
-
-```dockerfile
-ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
-```
-
--	Created: Tue, 05 Apr 2016 15:59:36 GMT
--	Parent Layer: `f1fca41a0f12650fa33a1f02f38cb6058e60746774363a131703aef7d03641c3`
--	Docker Version: 1.9.1
--	Virtual Size: 529.0 B
--	v2 Blob: `sha256:197a01777334523166fdb90af0680e0f1a985154f2f84615f19bf91968f1e395`
--	v2 Content-Length: 396.0 B
--	v2 Last-Modified: Wed, 06 Apr 2016 00:52:19 GMT
-
-#### `95f22e7622bb7e261d191180c53b780e3ab1540165e3ab36a2c2e478947325d8`
-
-```dockerfile
-WORKDIR /data
-```
-
--	Created: Tue, 05 Apr 2016 15:59:36 GMT
--	Parent Layer: `de164c7a71949ef1edd02722c87955bcd9567049247718a9154ea172bc44be11`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `169b3f206bc714fd7f7404785923777999838998405a786fa5595e6fa49a2acd`
-
-```dockerfile
-EXPOSE 4200/tcp 4300/tcp
-```
-
--	Created: Tue, 05 Apr 2016 15:59:37 GMT
--	Parent Layer: `95f22e7622bb7e261d191180c53b780e3ab1540165e3ab36a2c2e478947325d8`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `797ca0158c2167dc5f05aa731bc81d4f986296f4ddf6c4fa5637f4c300f12802`
-
-```dockerfile
-CMD ["crate"]
-```
-
--	Created: Tue, 05 Apr 2016 15:59:37 GMT
--	Parent Layer: `169b3f206bc714fd7f7404785923777999838998405a786fa5595e6fa49a2acd`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `crate:0.52.4`
-
-```console
-$ docker pull library/crate@sha256:3e4ba1f90245aefab58116fbcd239a0af401c39f7400ccff508f929b161501f4
-```
-
--	Total Virtual Size: 402.2 MB (402207764 bytes)
--	Total v2 Content-Length: 180.9 MB (180873134 bytes)
-
-### Layers (24)
-
-#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
-
-```dockerfile
-ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
-```
-
--	Created: Mon, 04 Apr 2016 22:02:00 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125051065 bytes)
--	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
--	v2 Content-Length: 51.3 MB (51342828 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
-
-#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 04 Apr 2016 22:02:03 GMT
--	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 04 Apr 2016 22:08:25 GMT
--	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
--	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44283322 bytes)
--	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
--	v2 Content-Length: 18.5 MB (18527192 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
-
-#### `ebf89852e971f664cebded66860ed8700bceb0b23f8735b100d855e30e623b59`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzip2 \
-		unzip \
-		xz-utils \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 04 Apr 2016 23:06:51 GMT
--	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
--	Docker Version: 1.9.1
--	Virtual Size: 1.2 MB (1171554 bytes)
--	v2 Blob: `sha256:52a884c93bb2af68588628bba83021c9f35845905129aae18592d331830cbdff`
--	v2 Content-Length: 566.6 KB (566558 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:43 GMT
-
-#### `f53b718ffa06fe2f919ceb2debd18d280e3cea1e8b014011fe42abc31a4b8da7`
-
-```dockerfile
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-```
-
--	Created: Mon, 04 Apr 2016 23:19:27 GMT
--	Parent Layer: `ebf89852e971f664cebded66860ed8700bceb0b23f8735b100d855e30e623b59`
--	Docker Version: 1.9.1
--	Virtual Size: 61.0 B
--	v2 Blob: `sha256:070ee56a6f7eaa89a4d6fa9080782779e507ad728dee505245128af70467ac19`
--	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:40 GMT
-
-#### `e9dec0aba9873c6a4c02be81e6962ac43f2e05cc3e16e86b0af0400556c5fc58`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Mon, 04 Apr 2016 23:19:28 GMT
--	Parent Layer: `f53b718ffa06fe2f919ceb2debd18d280e3cea1e8b014011fe42abc31a4b8da7`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `465501aff72f3b498f5dad5d3d2f6ee089ae49c6c861eeed36f4653630674b7f`
-
-```dockerfile
-RUN { \
-		echo '#!/bin/sh'; \
-		echo 'set -e'; \
-		echo; \
-		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
-	} > /usr/local/bin/docker-java-home \
-	&& chmod +x /usr/local/bin/docker-java-home
-```
-
--	Created: Mon, 04 Apr 2016 23:19:29 GMT
--	Parent Layer: `e9dec0aba9873c6a4c02be81e6962ac43f2e05cc3e16e86b0af0400556c5fc58`
--	Docker Version: 1.9.1
--	Virtual Size: 87.0 B
--	v2 Blob: `sha256:f8b8b1302b4f236f33b92ad898548f7353e5c5dc79aa0a4d464e2640b618cd8a`
--	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:35 GMT
-
-#### `3e068a57afebb2501dc523647b0a3213241240d4847303737ff31962e656ddb6`
-
-```dockerfile
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-```
-
--	Created: Mon, 04 Apr 2016 23:19:30 GMT
--	Parent Layer: `465501aff72f3b498f5dad5d3d2f6ee089ae49c6c861eeed36f4653630674b7f`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `fe962ef562700c1f1349124dc05135499b0c63d5428db0a268f2133dc4ddf843`
-
-```dockerfile
-ENV JAVA_VERSION=8u72
-```
-
--	Created: Mon, 04 Apr 2016 23:19:30 GMT
--	Parent Layer: `3e068a57afebb2501dc523647b0a3213241240d4847303737ff31962e656ddb6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `2d481368436064ac1a3dc616d003d88bf55bad83e55c6085465ee83385af2642`
-
-```dockerfile
-ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
-```
-
--	Created: Mon, 04 Apr 2016 23:19:31 GMT
--	Parent Layer: `fe962ef562700c1f1349124dc05135499b0c63d5428db0a268f2133dc4ddf843`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e6ea6054e7716e404382e531fcb0bf0cdde89e224d038606f3412a011b9e57b8`
-
-```dockerfile
-ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-```
-
--	Created: Mon, 04 Apr 2016 23:19:31 GMT
--	Parent Layer: `2d481368436064ac1a3dc616d003d88bf55bad83e55c6085465ee83385af2642`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `b599ec21e5fda2476f61c49453de326bd4c1bb59fc730f2c02c0bf3ba2178dbb`
-
-```dockerfile
-RUN set -x \
-	&& apt-get update \
-	&& apt-get install -y \
-		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
-		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-```
-
--	Created: Mon, 04 Apr 2016 23:20:36 GMT
--	Parent Layer: `e6ea6054e7716e404382e531fcb0bf0cdde89e224d038606f3412a011b9e57b8`
--	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (139978929 bytes)
--	v2 Blob: `sha256:e71221cc95985ee02472f6c5d678df7aa6b1e7b2b5a3fadff7e59f45405b6f9e`
--	v2 Content-Length: 53.3 MB (53333545 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:22 GMT
-
-#### `78ce7242945784d136a3258595667573cd3d687db45531bdb12dba2532121ac4`
-
-```dockerfile
-RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-```
-
--	Created: Mon, 04 Apr 2016 23:20:40 GMT
--	Parent Layer: `b599ec21e5fda2476f61c49453de326bd4c1bb59fc730f2c02c0bf3ba2178dbb`
--	Docker Version: 1.9.1
--	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:349c9e35d5036742ce0c6288c97cce290f09d7db554d9c2fb0543c3613a1e2dc`
--	v2 Content-Length: 284.3 KB (284336 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:02 GMT
-
-#### `e15fce8a9f01784fe0f5ccfa8f93983b11fbc6870984c3e4be6b5d6c813ae89d`
-
-```dockerfile
-MAINTAINER Crate Technology GmbH <office@crate.io>
-```
-
--	Created: Tue, 05 Apr 2016 15:58:08 GMT
--	Parent Layer: `78ce7242945784d136a3258595667573cd3d687db45531bdb12dba2532121ac4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `6d46e4b7032b067562c2a92bd8544e23ea17582733ce74cafcb9bb166955833b`
-
-```dockerfile
-RUN apt-get update &&\
-     apt-get install -y python3 &&\
-     rm -rf /var/lib/apt &&\
-     ln -s /usr/bin/python3 /usr/bin/python
-```
-
--	Created: Tue, 05 Apr 2016 15:58:53 GMT
--	Parent Layer: `e15fce8a9f01784fe0f5ccfa8f93983b11fbc6870984c3e4be6b5d6c813ae89d`
--	Docker Version: 1.9.1
--	Virtual Size: 30.4 MB (30440423 bytes)
--	v2 Blob: `sha256:6bdf9d8306d337ae3871dcf5dabf314e9dc99cf9f4568d04f8787835c3d7eaec`
--	v2 Content-Length: 9.5 MB (9505330 bytes)
--	v2 Last-Modified: Wed, 06 Apr 2016 00:50:37 GMT
-
-#### `a07be10cede7cf430ea543e6bdfc982630fab482a8df7918bd748fc9682c39b2`
-
-```dockerfile
-ENV CRATE_VERSION=0.52.4
-```
-
--	Created: Tue, 05 Apr 2016 15:59:23 GMT
--	Parent Layer: `6d46e4b7032b067562c2a92bd8544e23ea17582733ce74cafcb9bb166955833b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f0b5b16a989846e28cce0ac225f990122e36cd0b62849028c238717e554d74e6`
-
-```dockerfile
-RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
-```
-
--	Created: Tue, 05 Apr 2016 15:59:33 GMT
--	Parent Layer: `a07be10cede7cf430ea543e6bdfc982630fab482a8df7918bd748fc9682c39b2`
--	Docker Version: 1.9.1
--	Virtual Size: 60.9 MB (60863478 bytes)
--	v2 Blob: `sha256:2ad578b87f170e5452f77abdbbce0d622b4d3ff269e9b28b93df88d91f127dc3`
--	v2 Content-Length: 47.3 MB (47311843 bytes)
--	v2 Last-Modified: Wed, 06 Apr 2016 00:52:42 GMT
-
-#### `d13d2e8c481ca54a8232d59d7d19b060b3c52e1bc74e6179f1ac729aad4fcfab`
-
-```dockerfile
-ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 05 Apr 2016 15:59:34 GMT
--	Parent Layer: `f0b5b16a989846e28cce0ac225f990122e36cd0b62849028c238717e554d74e6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `91a3a1a9995ce476df845b90b5f38f19a8d183bda8ebfb386309843a2dd8ff32`
-
-```dockerfile
-VOLUME [/data]
-```
-
--	Created: Tue, 05 Apr 2016 15:59:34 GMT
--	Parent Layer: `d13d2e8c481ca54a8232d59d7d19b060b3c52e1bc74e6179f1ac729aad4fcfab`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f1fca41a0f12650fa33a1f02f38cb6058e60746774363a131703aef7d03641c3`
-
-```dockerfile
-ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
-```
-
--	Created: Tue, 05 Apr 2016 15:59:35 GMT
--	Parent Layer: `91a3a1a9995ce476df845b90b5f38f19a8d183bda8ebfb386309843a2dd8ff32`
--	Docker Version: 1.9.1
--	Virtual Size: 100.0 B
--	v2 Blob: `sha256:5b71a20373482338571ea1ed3b596379b202629c6e487cb8585b35ed2983f002`
--	v2 Content-Length: 230.0 B
--	v2 Last-Modified: Wed, 06 Apr 2016 00:52:23 GMT
-
-#### `de164c7a71949ef1edd02722c87955bcd9567049247718a9154ea172bc44be11`
-
-```dockerfile
-ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
-```
-
--	Created: Tue, 05 Apr 2016 15:59:36 GMT
--	Parent Layer: `f1fca41a0f12650fa33a1f02f38cb6058e60746774363a131703aef7d03641c3`
--	Docker Version: 1.9.1
--	Virtual Size: 529.0 B
--	v2 Blob: `sha256:197a01777334523166fdb90af0680e0f1a985154f2f84615f19bf91968f1e395`
--	v2 Content-Length: 396.0 B
--	v2 Last-Modified: Wed, 06 Apr 2016 00:52:19 GMT
-
-#### `95f22e7622bb7e261d191180c53b780e3ab1540165e3ab36a2c2e478947325d8`
-
-```dockerfile
-WORKDIR /data
-```
-
--	Created: Tue, 05 Apr 2016 15:59:36 GMT
--	Parent Layer: `de164c7a71949ef1edd02722c87955bcd9567049247718a9154ea172bc44be11`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `169b3f206bc714fd7f7404785923777999838998405a786fa5595e6fa49a2acd`
-
-```dockerfile
-EXPOSE 4200/tcp 4300/tcp
-```
-
--	Created: Tue, 05 Apr 2016 15:59:37 GMT
--	Parent Layer: `95f22e7622bb7e261d191180c53b780e3ab1540165e3ab36a2c2e478947325d8`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `797ca0158c2167dc5f05aa731bc81d4f986296f4ddf6c4fa5637f4c300f12802`
-
-```dockerfile
-CMD ["crate"]
-```
-
--	Created: Tue, 05 Apr 2016 15:59:37 GMT
--	Parent Layer: `169b3f206bc714fd7f7404785923777999838998405a786fa5595e6fa49a2acd`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	Layers:
+	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
+		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
+		Size: 2.3 MB (2320188 bytes)
+	-	`sha256:05b1790998ceeefdec4a3b226db6ac1cb8da5fa7a90695fa8d62cd5ab91cdee7`  
+		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
+		Size: 22.1 KB (22081 bytes)
+	-	`sha256:3eb8d53046d057032545fa606944aa3b012d79877d585da11d405d44a4c7eabf`  
+		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
+		Size: 820.0 B
+	-	`sha256:6b0389d91d646d4ff29433351ec68b780fc1876a2b846f1dd7c2e54fa52dad73`  
+		Last Modified: Thu, 23 Jun 2016 20:05:27 GMT  
+		Size: 1.1 MB (1071956 bytes)
+	-	`sha256:d99580ba0720792079f8cc32647bf0febf2de498371bb3cb93d5dc1b6543458e`  
+		Last Modified: Thu, 23 Jun 2016 20:05:54 GMT  
+		Size: 144.7 MB (144697522 bytes)
+	-	`sha256:4e6aec62770f5c472a9a7f48401fd5e17f81d079b2eac567dbb9d8ad525d5147`  
+		Last Modified: Thu, 23 Jun 2016 20:05:26 GMT  
+		Size: 235.0 B
+	-	`sha256:ef6639050433a80110d8796fcb7f7a834bc103d8d68563df4c255f5bc5878da7`  
+		Last Modified: Thu, 23 Jun 2016 20:05:26 GMT  
+		Size: 400.0 B
+	-	`sha256:b31326b55405547cbc37fc262b033d5a137d5818d85775cc29ddcf893b06bf96`  
+		Last Modified: Thu, 23 Jun 2016 20:05:26 GMT  
+		Size: 90.0 B
 
 ## `crate:0.54`
 
 ```console
-$ docker pull library/crate@sha256:e550deb14e1f92b2138c96f3586bd75a1b953358a415e48353aec68e7bd385aa
+$ docker pull crate@sha256:3db871c6d951db08959e8e49cd6d248fce9bbdc640e63ca96191c4c6ef6d9016
 ```
 
--	Total Virtual Size: 398.8 MB (398778483 bytes)
--	Total v2 Content-Length: 180.0 MB (180017191 bytes)
+-	Platforms:
+	-	linux; amd64
 
-### Layers (24)
+### `crate:0.54` - linux; amd64
 
-#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
-
-```dockerfile
-ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
-```
-
--	Created: Mon, 04 Apr 2016 22:02:00 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125051065 bytes)
--	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
--	v2 Content-Length: 51.3 MB (51342828 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
-
-#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **148.1 MB (148113292 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:91673af9bbe9140ed38c5d598d20f3ac96e3da24ac4c0f7cf0c7cc55ace3217a`
+-	Default Command: `["crate"]`
 
 ```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 04 Apr 2016 22:02:03 GMT
--	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 04 Apr 2016 22:08:25 GMT
--	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
--	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44283322 bytes)
--	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
--	v2 Content-Length: 18.5 MB (18527192 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
-
-#### `ebf89852e971f664cebded66860ed8700bceb0b23f8735b100d855e30e623b59`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzip2 \
-		unzip \
-		xz-utils \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 04 Apr 2016 23:06:51 GMT
--	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
--	Docker Version: 1.9.1
--	Virtual Size: 1.2 MB (1171554 bytes)
--	v2 Blob: `sha256:52a884c93bb2af68588628bba83021c9f35845905129aae18592d331830cbdff`
--	v2 Content-Length: 566.6 KB (566558 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:43 GMT
-
-#### `f53b718ffa06fe2f919ceb2debd18d280e3cea1e8b014011fe42abc31a4b8da7`
-
-```dockerfile
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-```
-
--	Created: Mon, 04 Apr 2016 23:19:27 GMT
--	Parent Layer: `ebf89852e971f664cebded66860ed8700bceb0b23f8735b100d855e30e623b59`
--	Docker Version: 1.9.1
--	Virtual Size: 61.0 B
--	v2 Blob: `sha256:070ee56a6f7eaa89a4d6fa9080782779e507ad728dee505245128af70467ac19`
--	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:40 GMT
-
-#### `e9dec0aba9873c6a4c02be81e6962ac43f2e05cc3e16e86b0af0400556c5fc58`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Mon, 04 Apr 2016 23:19:28 GMT
--	Parent Layer: `f53b718ffa06fe2f919ceb2debd18d280e3cea1e8b014011fe42abc31a4b8da7`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `465501aff72f3b498f5dad5d3d2f6ee089ae49c6c861eeed36f4653630674b7f`
-
-```dockerfile
-RUN { \
-		echo '#!/bin/sh'; \
-		echo 'set -e'; \
-		echo; \
-		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
-	} > /usr/local/bin/docker-java-home \
-	&& chmod +x /usr/local/bin/docker-java-home
-```
-
--	Created: Mon, 04 Apr 2016 23:19:29 GMT
--	Parent Layer: `e9dec0aba9873c6a4c02be81e6962ac43f2e05cc3e16e86b0af0400556c5fc58`
--	Docker Version: 1.9.1
--	Virtual Size: 87.0 B
--	v2 Blob: `sha256:f8b8b1302b4f236f33b92ad898548f7353e5c5dc79aa0a4d464e2640b618cd8a`
--	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:35 GMT
-
-#### `3e068a57afebb2501dc523647b0a3213241240d4847303737ff31962e656ddb6`
-
-```dockerfile
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-```
-
--	Created: Mon, 04 Apr 2016 23:19:30 GMT
--	Parent Layer: `465501aff72f3b498f5dad5d3d2f6ee089ae49c6c861eeed36f4653630674b7f`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `fe962ef562700c1f1349124dc05135499b0c63d5428db0a268f2133dc4ddf843`
-
-```dockerfile
-ENV JAVA_VERSION=8u72
-```
-
--	Created: Mon, 04 Apr 2016 23:19:30 GMT
--	Parent Layer: `3e068a57afebb2501dc523647b0a3213241240d4847303737ff31962e656ddb6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `2d481368436064ac1a3dc616d003d88bf55bad83e55c6085465ee83385af2642`
-
-```dockerfile
-ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
-```
-
--	Created: Mon, 04 Apr 2016 23:19:31 GMT
--	Parent Layer: `fe962ef562700c1f1349124dc05135499b0c63d5428db0a268f2133dc4ddf843`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e6ea6054e7716e404382e531fcb0bf0cdde89e224d038606f3412a011b9e57b8`
-
-```dockerfile
-ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-```
-
--	Created: Mon, 04 Apr 2016 23:19:31 GMT
--	Parent Layer: `2d481368436064ac1a3dc616d003d88bf55bad83e55c6085465ee83385af2642`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `b599ec21e5fda2476f61c49453de326bd4c1bb59fc730f2c02c0bf3ba2178dbb`
-
-```dockerfile
-RUN set -x \
-	&& apt-get update \
-	&& apt-get install -y \
-		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
-		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-```
-
--	Created: Mon, 04 Apr 2016 23:20:36 GMT
--	Parent Layer: `e6ea6054e7716e404382e531fcb0bf0cdde89e224d038606f3412a011b9e57b8`
--	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (139978929 bytes)
--	v2 Blob: `sha256:e71221cc95985ee02472f6c5d678df7aa6b1e7b2b5a3fadff7e59f45405b6f9e`
--	v2 Content-Length: 53.3 MB (53333545 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:22 GMT
-
-#### `78ce7242945784d136a3258595667573cd3d687db45531bdb12dba2532121ac4`
-
-```dockerfile
-RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-```
-
--	Created: Mon, 04 Apr 2016 23:20:40 GMT
--	Parent Layer: `b599ec21e5fda2476f61c49453de326bd4c1bb59fc730f2c02c0bf3ba2178dbb`
--	Docker Version: 1.9.1
--	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:349c9e35d5036742ce0c6288c97cce290f09d7db554d9c2fb0543c3613a1e2dc`
--	v2 Content-Length: 284.3 KB (284336 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:02 GMT
-
-#### `e15fce8a9f01784fe0f5ccfa8f93983b11fbc6870984c3e4be6b5d6c813ae89d`
-
-```dockerfile
-MAINTAINER Crate Technology GmbH <office@crate.io>
-```
-
--	Created: Tue, 05 Apr 2016 15:58:08 GMT
--	Parent Layer: `78ce7242945784d136a3258595667573cd3d687db45531bdb12dba2532121ac4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `6d46e4b7032b067562c2a92bd8544e23ea17582733ce74cafcb9bb166955833b`
-
-```dockerfile
-RUN apt-get update &&\
-     apt-get install -y python3 &&\
-     rm -rf /var/lib/apt &&\
-     ln -s /usr/bin/python3 /usr/bin/python
-```
-
--	Created: Tue, 05 Apr 2016 15:58:53 GMT
--	Parent Layer: `e15fce8a9f01784fe0f5ccfa8f93983b11fbc6870984c3e4be6b5d6c813ae89d`
--	Docker Version: 1.9.1
--	Virtual Size: 30.4 MB (30440423 bytes)
--	v2 Blob: `sha256:6bdf9d8306d337ae3871dcf5dabf314e9dc99cf9f4568d04f8787835c3d7eaec`
--	v2 Content-Length: 9.5 MB (9505330 bytes)
--	v2 Last-Modified: Wed, 06 Apr 2016 00:50:37 GMT
-
-#### `d7d685a53b3c995fadc0a963ef5cdd5b10441babc3c713ad4a10cc77d4c5feff`
-
-```dockerfile
-ENV CRATE_VERSION=0.54.8
-```
-
--	Created: Thu, 14 Apr 2016 17:17:35 GMT
--	Parent Layer: `6d46e4b7032b067562c2a92bd8544e23ea17582733ce74cafcb9bb166955833b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e68f65cc596efef44a95c586a24285472570eff1f242b4c585ae2a92e73b5f21`
-
-```dockerfile
-RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
-```
-
--	Created: Thu, 14 Apr 2016 17:17:44 GMT
--	Parent Layer: `d7d685a53b3c995fadc0a963ef5cdd5b10441babc3c713ad4a10cc77d4c5feff`
--	Docker Version: 1.9.1
--	Virtual Size: 57.4 MB (57434197 bytes)
--	v2 Blob: `sha256:04abaaf31179ba86560432cf7f278512a74e4ce3eb813f5d7c482ceca5d34b8f`
--	v2 Content-Length: 46.5 MB (46455903 bytes)
--	v2 Last-Modified: Thu, 14 Apr 2016 17:20:42 GMT
-
-#### `3876ea53ea011ad351cc623c9aba929ca0766bcab1efd8fc5e6ab02f1dbcbc97`
-
-```dockerfile
+# Thu, 23 Jun 2016 19:55:12 GMT
+ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
+# Thu, 23 Jun 2016 20:01:11 GMT
+MAINTAINER Crate.IO GmbH office@crate.io
+# Thu, 23 Jun 2016 20:01:11 GMT
+ENV ANT_VERSION=1.9.7
+# Thu, 23 Jun 2016 20:01:11 GMT
+ENV SIGAR_VERSION=1.6.4
+# Thu, 23 Jun 2016 20:01:13 GMT
+RUN addgroup crate && adduser -G crate -H crate -D
+# Thu, 23 Jun 2016 20:01:14 GMT
+ADD file:ca9d36a1caad530dcca5f621f863c300f4e790c04d027524dd7c6a46665b46b2 in /var/tmp/
+# Thu, 23 Jun 2016 20:04:34 GMT
+RUN set -ex     && apk add --no-cache --virtual .build-deps         tar         git         gcc         cmake         libc-dev         libtirpc-dev         pax-utils         openjdk8         gnupg         perl     && BUILD_DIR=$(mktemp -d)     && cd $BUILD_DIR     && curl -fSL https://www.apache.org/dist/ant/KEYS -o KEYS     && curl -fSL -O https://www.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz.asc     && curl -fSL -O https://www-us.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz     && export GNUPGHOME="$(mktemp -d)"     && gpg --import KEYS     && gpg --batch --verify apache-ant-$ANT_VERSION-bin.tar.gz.asc apache-ant-$ANT_VERSION-bin.tar.gz     && rm -r "$GNUPGHOME" apache-ant-$ANT_VERSION-bin.tar.gz.asc     && tar -zxf apache-ant-$ANT_VERSION-bin.tar.gz     && git clone https://github.com/hyperic/sigar.git --single-branch --branch sigar-$SIGAR_VERSION sigar     && cd sigar     && git apply /var/tmp/sigar_build.patch     && cd bindings/java     && $BUILD_DIR/apache-ant-$ANT_VERSION/bin/ant     && find build -name '*.so*' | xargs install -t /usr/local/lib     && runDeps="$(         scanelf --needed --nobanner --recursive /usr/local             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache --virtual .libsigar-rundeps $runDeps     && apk del .build-deps     && rm -rf $BUILD_DIR
+# Thu, 23 Jun 2016 20:04:35 GMT
+ENV CRATE_VERSION=0.54.9
+# Thu, 23 Jun 2016 20:05:13 GMT
+RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openssl     && apk add --no-cache --virtual .build-deps curl gnupg tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && ln -s /usr/bin/python3 /usr/bin/python     && cp -f /usr/local/lib/*.so /crate/lib/sigar/     && chown -R crate /crate     && apk del .build-deps
+# Thu, 23 Jun 2016 20:05:14 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Thu, 14 Apr 2016 17:17:44 GMT
--	Parent Layer: `e68f65cc596efef44a95c586a24285472570eff1f242b4c585ae2a92e73b5f21`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `49a3e1cd16cd7bebea48b897fbac0acce5b874507537da486b681af4b611ca75`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:14 GMT
 VOLUME [/data]
-```
-
--	Created: Thu, 14 Apr 2016 17:17:45 GMT
--	Parent Layer: `3876ea53ea011ad351cc623c9aba929ca0766bcab1efd8fc5e6ab02f1dbcbc97`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `df6a0e9fefef03351d5e014e109618510155143d44d3d6ac968c5e82f68f25e0`
-
-```dockerfile
-ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
-```
-
--	Created: Thu, 14 Apr 2016 17:17:46 GMT
--	Parent Layer: `49a3e1cd16cd7bebea48b897fbac0acce5b874507537da486b681af4b611ca75`
--	Docker Version: 1.9.1
--	Virtual Size: 100.0 B
--	v2 Blob: `sha256:5147141a6c333fcaff5ee3f4fd7e2d11701be2e8ad8f3bb9994a0d8868f4f0f0`
--	v2 Content-Length: 228.0 B
--	v2 Last-Modified: Thu, 14 Apr 2016 17:20:23 GMT
-
-#### `8f42c939361ba6fb3ccdd344ba7d9a856f2af006405eb8b38493e16e466579e4`
-
-```dockerfile
-ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
-```
-
--	Created: Thu, 14 Apr 2016 17:17:46 GMT
--	Parent Layer: `df6a0e9fefef03351d5e014e109618510155143d44d3d6ac968c5e82f68f25e0`
--	Docker Version: 1.9.1
--	Virtual Size: 529.0 B
--	v2 Blob: `sha256:cdbcc3537f267851da5cef2bc5fbded5154197d87e7b931570032c6e6340c6bd`
--	v2 Content-Length: 395.0 B
--	v2 Last-Modified: Thu, 14 Apr 2016 17:20:20 GMT
-
-#### `0813ba9a18f312f0cef0032faac9a491edd343fd1d2547397170c6b2889ee827`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:15 GMT
+ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml
+# Thu, 23 Jun 2016 20:05:16 GMT
+ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml
+# Thu, 23 Jun 2016 20:05:17 GMT
 WORKDIR /data
-```
-
--	Created: Thu, 14 Apr 2016 17:17:47 GMT
--	Parent Layer: `8f42c939361ba6fb3ccdd344ba7d9a856f2af006405eb8b38493e16e466579e4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `7c61578b232d6932ab7e2d2d11064a90c57bb5c8b9f2f8ce8a5614ee84919045`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:18 GMT
 EXPOSE 4200/tcp 4300/tcp
-```
-
--	Created: Thu, 14 Apr 2016 17:17:48 GMT
--	Parent Layer: `0813ba9a18f312f0cef0032faac9a491edd343fd1d2547397170c6b2889ee827`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `5dd5e0fd0a5513c95a476a69a87e831c26f60104e534541c2de21ea233c653f5`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:18 GMT
 CMD ["crate"]
 ```
 
--	Created: Thu, 14 Apr 2016 17:17:48 GMT
--	Parent Layer: `7c61578b232d6932ab7e2d2d11064a90c57bb5c8b9f2f8ce8a5614ee84919045`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	Layers:
+	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
+		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
+		Size: 2.3 MB (2320188 bytes)
+	-	`sha256:05b1790998ceeefdec4a3b226db6ac1cb8da5fa7a90695fa8d62cd5ab91cdee7`  
+		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
+		Size: 22.1 KB (22081 bytes)
+	-	`sha256:3eb8d53046d057032545fa606944aa3b012d79877d585da11d405d44a4c7eabf`  
+		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
+		Size: 820.0 B
+	-	`sha256:6b0389d91d646d4ff29433351ec68b780fc1876a2b846f1dd7c2e54fa52dad73`  
+		Last Modified: Thu, 23 Jun 2016 20:05:27 GMT  
+		Size: 1.1 MB (1071956 bytes)
+	-	`sha256:d99580ba0720792079f8cc32647bf0febf2de498371bb3cb93d5dc1b6543458e`  
+		Last Modified: Thu, 23 Jun 2016 20:05:54 GMT  
+		Size: 144.7 MB (144697522 bytes)
+	-	`sha256:4e6aec62770f5c472a9a7f48401fd5e17f81d079b2eac567dbb9d8ad525d5147`  
+		Last Modified: Thu, 23 Jun 2016 20:05:26 GMT  
+		Size: 235.0 B
+	-	`sha256:ef6639050433a80110d8796fcb7f7a834bc103d8d68563df4c255f5bc5878da7`  
+		Last Modified: Thu, 23 Jun 2016 20:05:26 GMT  
+		Size: 400.0 B
+	-	`sha256:b31326b55405547cbc37fc262b033d5a137d5818d85775cc29ddcf893b06bf96`  
+		Last Modified: Thu, 23 Jun 2016 20:05:26 GMT  
+		Size: 90.0 B
 
-## `crate:0.54.8`
+## `crate:0.54.9`
 
 ```console
-$ docker pull library/crate@sha256:1afe8a080b34e64edac4b56b47dc705042a95fa1dd05951887b5d5e1893e186c
+$ docker pull crate@sha256:3db871c6d951db08959e8e49cd6d248fce9bbdc640e63ca96191c4c6ef6d9016
 ```
 
--	Total Virtual Size: 398.8 MB (398778483 bytes)
--	Total v2 Content-Length: 180.0 MB (180017191 bytes)
+-	Platforms:
+	-	linux; amd64
 
-### Layers (24)
+### `crate:0.54.9` - linux; amd64
 
-#### `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
-
-```dockerfile
-ADD file:2ed80fd333c2052addd160264a94c0e3c469f808f54b58f84c4041742424e0a7 in /
-```
-
--	Created: Mon, 04 Apr 2016 22:02:00 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125051065 bytes)
--	v2 Blob: `sha256:efd26ecc95486998b41b3fe167236e3fb3e109c66dd1a51ab5161e40b06cf486`
--	v2 Content-Length: 51.3 MB (51342828 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:04:14 GMT
-
-#### `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **148.1 MB (148113292 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:91673af9bbe9140ed38c5d598d20f3ac96e3da24ac4c0f7cf0c7cc55ace3217a`
+-	Default Command: `["crate"]`
 
 ```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 04 Apr 2016 22:02:03 GMT
--	Parent Layer: `6b8a1ecb2364a8ea74873a6bac5104699c260a392ce403ca137b2ce5c5235114`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 04 Apr 2016 22:08:25 GMT
--	Parent Layer: `d1cc0e6af8490e94cde088bec8b267615464eeb1af20bcbe577d055ff231e634`
--	Docker Version: 1.9.1
--	Virtual Size: 44.3 MB (44283322 bytes)
--	v2 Blob: `sha256:d1784d73276eaab185f50512c4e1d8556c4aab8beac1daa087333f8bdbc52f0c`
--	v2 Content-Length: 18.5 MB (18527192 bytes)
--	v2 Last-Modified: Mon, 04 Apr 2016 22:18:52 GMT
-
-#### `ebf89852e971f664cebded66860ed8700bceb0b23f8735b100d855e30e623b59`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzip2 \
-		unzip \
-		xz-utils \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 04 Apr 2016 23:06:51 GMT
--	Parent Layer: `9d8bd2efff01d3076e5a045e81e3af2c6779e261073d54c924d3fc8540846a55`
--	Docker Version: 1.9.1
--	Virtual Size: 1.2 MB (1171554 bytes)
--	v2 Blob: `sha256:52a884c93bb2af68588628bba83021c9f35845905129aae18592d331830cbdff`
--	v2 Content-Length: 566.6 KB (566558 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:43 GMT
-
-#### `f53b718ffa06fe2f919ceb2debd18d280e3cea1e8b014011fe42abc31a4b8da7`
-
-```dockerfile
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-```
-
--	Created: Mon, 04 Apr 2016 23:19:27 GMT
--	Parent Layer: `ebf89852e971f664cebded66860ed8700bceb0b23f8735b100d855e30e623b59`
--	Docker Version: 1.9.1
--	Virtual Size: 61.0 B
--	v2 Blob: `sha256:070ee56a6f7eaa89a4d6fa9080782779e507ad728dee505245128af70467ac19`
--	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:40 GMT
-
-#### `e9dec0aba9873c6a4c02be81e6962ac43f2e05cc3e16e86b0af0400556c5fc58`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Mon, 04 Apr 2016 23:19:28 GMT
--	Parent Layer: `f53b718ffa06fe2f919ceb2debd18d280e3cea1e8b014011fe42abc31a4b8da7`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `465501aff72f3b498f5dad5d3d2f6ee089ae49c6c861eeed36f4653630674b7f`
-
-```dockerfile
-RUN { \
-		echo '#!/bin/sh'; \
-		echo 'set -e'; \
-		echo; \
-		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
-	} > /usr/local/bin/docker-java-home \
-	&& chmod +x /usr/local/bin/docker-java-home
-```
-
--	Created: Mon, 04 Apr 2016 23:19:29 GMT
--	Parent Layer: `e9dec0aba9873c6a4c02be81e6962ac43f2e05cc3e16e86b0af0400556c5fc58`
--	Docker Version: 1.9.1
--	Virtual Size: 87.0 B
--	v2 Blob: `sha256:f8b8b1302b4f236f33b92ad898548f7353e5c5dc79aa0a4d464e2640b618cd8a`
--	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:35 GMT
-
-#### `3e068a57afebb2501dc523647b0a3213241240d4847303737ff31962e656ddb6`
-
-```dockerfile
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-```
-
--	Created: Mon, 04 Apr 2016 23:19:30 GMT
--	Parent Layer: `465501aff72f3b498f5dad5d3d2f6ee089ae49c6c861eeed36f4653630674b7f`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `fe962ef562700c1f1349124dc05135499b0c63d5428db0a268f2133dc4ddf843`
-
-```dockerfile
-ENV JAVA_VERSION=8u72
-```
-
--	Created: Mon, 04 Apr 2016 23:19:30 GMT
--	Parent Layer: `3e068a57afebb2501dc523647b0a3213241240d4847303737ff31962e656ddb6`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `2d481368436064ac1a3dc616d003d88bf55bad83e55c6085465ee83385af2642`
-
-```dockerfile
-ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
-```
-
--	Created: Mon, 04 Apr 2016 23:19:31 GMT
--	Parent Layer: `fe962ef562700c1f1349124dc05135499b0c63d5428db0a268f2133dc4ddf843`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e6ea6054e7716e404382e531fcb0bf0cdde89e224d038606f3412a011b9e57b8`
-
-```dockerfile
-ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-```
-
--	Created: Mon, 04 Apr 2016 23:19:31 GMT
--	Parent Layer: `2d481368436064ac1a3dc616d003d88bf55bad83e55c6085465ee83385af2642`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `b599ec21e5fda2476f61c49453de326bd4c1bb59fc730f2c02c0bf3ba2178dbb`
-
-```dockerfile
-RUN set -x \
-	&& apt-get update \
-	&& apt-get install -y \
-		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
-		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-```
-
--	Created: Mon, 04 Apr 2016 23:20:36 GMT
--	Parent Layer: `e6ea6054e7716e404382e531fcb0bf0cdde89e224d038606f3412a011b9e57b8`
--	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (139978929 bytes)
--	v2 Blob: `sha256:e71221cc95985ee02472f6c5d678df7aa6b1e7b2b5a3fadff7e59f45405b6f9e`
--	v2 Content-Length: 53.3 MB (53333545 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:22 GMT
-
-#### `78ce7242945784d136a3258595667573cd3d687db45531bdb12dba2532121ac4`
-
-```dockerfile
-RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-```
-
--	Created: Mon, 04 Apr 2016 23:20:40 GMT
--	Parent Layer: `b599ec21e5fda2476f61c49453de326bd4c1bb59fc730f2c02c0bf3ba2178dbb`
--	Docker Version: 1.9.1
--	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:349c9e35d5036742ce0c6288c97cce290f09d7db554d9c2fb0543c3613a1e2dc`
--	v2 Content-Length: 284.3 KB (284336 bytes)
--	v2 Last-Modified: Tue, 05 Apr 2016 16:07:02 GMT
-
-#### `e15fce8a9f01784fe0f5ccfa8f93983b11fbc6870984c3e4be6b5d6c813ae89d`
-
-```dockerfile
-MAINTAINER Crate Technology GmbH <office@crate.io>
-```
-
--	Created: Tue, 05 Apr 2016 15:58:08 GMT
--	Parent Layer: `78ce7242945784d136a3258595667573cd3d687db45531bdb12dba2532121ac4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `6d46e4b7032b067562c2a92bd8544e23ea17582733ce74cafcb9bb166955833b`
-
-```dockerfile
-RUN apt-get update &&\
-     apt-get install -y python3 &&\
-     rm -rf /var/lib/apt &&\
-     ln -s /usr/bin/python3 /usr/bin/python
-```
-
--	Created: Tue, 05 Apr 2016 15:58:53 GMT
--	Parent Layer: `e15fce8a9f01784fe0f5ccfa8f93983b11fbc6870984c3e4be6b5d6c813ae89d`
--	Docker Version: 1.9.1
--	Virtual Size: 30.4 MB (30440423 bytes)
--	v2 Blob: `sha256:6bdf9d8306d337ae3871dcf5dabf314e9dc99cf9f4568d04f8787835c3d7eaec`
--	v2 Content-Length: 9.5 MB (9505330 bytes)
--	v2 Last-Modified: Wed, 06 Apr 2016 00:50:37 GMT
-
-#### `d7d685a53b3c995fadc0a963ef5cdd5b10441babc3c713ad4a10cc77d4c5feff`
-
-```dockerfile
-ENV CRATE_VERSION=0.54.8
-```
-
--	Created: Thu, 14 Apr 2016 17:17:35 GMT
--	Parent Layer: `6d46e4b7032b067562c2a92bd8544e23ea17582733ce74cafcb9bb166955833b`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e68f65cc596efef44a95c586a24285472570eff1f242b4c585ae2a92e73b5f21`
-
-```dockerfile
-RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
-```
-
--	Created: Thu, 14 Apr 2016 17:17:44 GMT
--	Parent Layer: `d7d685a53b3c995fadc0a963ef5cdd5b10441babc3c713ad4a10cc77d4c5feff`
--	Docker Version: 1.9.1
--	Virtual Size: 57.4 MB (57434197 bytes)
--	v2 Blob: `sha256:04abaaf31179ba86560432cf7f278512a74e4ce3eb813f5d7c482ceca5d34b8f`
--	v2 Content-Length: 46.5 MB (46455903 bytes)
--	v2 Last-Modified: Thu, 14 Apr 2016 17:20:42 GMT
-
-#### `3876ea53ea011ad351cc623c9aba929ca0766bcab1efd8fc5e6ab02f1dbcbc97`
-
-```dockerfile
+# Thu, 23 Jun 2016 19:55:12 GMT
+ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
+# Thu, 23 Jun 2016 20:01:11 GMT
+MAINTAINER Crate.IO GmbH office@crate.io
+# Thu, 23 Jun 2016 20:01:11 GMT
+ENV ANT_VERSION=1.9.7
+# Thu, 23 Jun 2016 20:01:11 GMT
+ENV SIGAR_VERSION=1.6.4
+# Thu, 23 Jun 2016 20:01:13 GMT
+RUN addgroup crate && adduser -G crate -H crate -D
+# Thu, 23 Jun 2016 20:01:14 GMT
+ADD file:ca9d36a1caad530dcca5f621f863c300f4e790c04d027524dd7c6a46665b46b2 in /var/tmp/
+# Thu, 23 Jun 2016 20:04:34 GMT
+RUN set -ex     && apk add --no-cache --virtual .build-deps         tar         git         gcc         cmake         libc-dev         libtirpc-dev         pax-utils         openjdk8         gnupg         perl     && BUILD_DIR=$(mktemp -d)     && cd $BUILD_DIR     && curl -fSL https://www.apache.org/dist/ant/KEYS -o KEYS     && curl -fSL -O https://www.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz.asc     && curl -fSL -O https://www-us.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz     && export GNUPGHOME="$(mktemp -d)"     && gpg --import KEYS     && gpg --batch --verify apache-ant-$ANT_VERSION-bin.tar.gz.asc apache-ant-$ANT_VERSION-bin.tar.gz     && rm -r "$GNUPGHOME" apache-ant-$ANT_VERSION-bin.tar.gz.asc     && tar -zxf apache-ant-$ANT_VERSION-bin.tar.gz     && git clone https://github.com/hyperic/sigar.git --single-branch --branch sigar-$SIGAR_VERSION sigar     && cd sigar     && git apply /var/tmp/sigar_build.patch     && cd bindings/java     && $BUILD_DIR/apache-ant-$ANT_VERSION/bin/ant     && find build -name '*.so*' | xargs install -t /usr/local/lib     && runDeps="$(         scanelf --needed --nobanner --recursive /usr/local             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache --virtual .libsigar-rundeps $runDeps     && apk del .build-deps     && rm -rf $BUILD_DIR
+# Thu, 23 Jun 2016 20:04:35 GMT
+ENV CRATE_VERSION=0.54.9
+# Thu, 23 Jun 2016 20:05:13 GMT
+RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openssl     && apk add --no-cache --virtual .build-deps curl gnupg tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && ln -s /usr/bin/python3 /usr/bin/python     && cp -f /usr/local/lib/*.so /crate/lib/sigar/     && chown -R crate /crate     && apk del .build-deps
+# Thu, 23 Jun 2016 20:05:14 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Thu, 14 Apr 2016 17:17:44 GMT
--	Parent Layer: `e68f65cc596efef44a95c586a24285472570eff1f242b4c585ae2a92e73b5f21`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `49a3e1cd16cd7bebea48b897fbac0acce5b874507537da486b681af4b611ca75`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:14 GMT
 VOLUME [/data]
-```
-
--	Created: Thu, 14 Apr 2016 17:17:45 GMT
--	Parent Layer: `3876ea53ea011ad351cc623c9aba929ca0766bcab1efd8fc5e6ab02f1dbcbc97`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `df6a0e9fefef03351d5e014e109618510155143d44d3d6ac968c5e82f68f25e0`
-
-```dockerfile
-ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
-```
-
--	Created: Thu, 14 Apr 2016 17:17:46 GMT
--	Parent Layer: `49a3e1cd16cd7bebea48b897fbac0acce5b874507537da486b681af4b611ca75`
--	Docker Version: 1.9.1
--	Virtual Size: 100.0 B
--	v2 Blob: `sha256:5147141a6c333fcaff5ee3f4fd7e2d11701be2e8ad8f3bb9994a0d8868f4f0f0`
--	v2 Content-Length: 228.0 B
--	v2 Last-Modified: Thu, 14 Apr 2016 17:20:23 GMT
-
-#### `8f42c939361ba6fb3ccdd344ba7d9a856f2af006405eb8b38493e16e466579e4`
-
-```dockerfile
-ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
-```
-
--	Created: Thu, 14 Apr 2016 17:17:46 GMT
--	Parent Layer: `df6a0e9fefef03351d5e014e109618510155143d44d3d6ac968c5e82f68f25e0`
--	Docker Version: 1.9.1
--	Virtual Size: 529.0 B
--	v2 Blob: `sha256:cdbcc3537f267851da5cef2bc5fbded5154197d87e7b931570032c6e6340c6bd`
--	v2 Content-Length: 395.0 B
--	v2 Last-Modified: Thu, 14 Apr 2016 17:20:20 GMT
-
-#### `0813ba9a18f312f0cef0032faac9a491edd343fd1d2547397170c6b2889ee827`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:15 GMT
+ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml
+# Thu, 23 Jun 2016 20:05:16 GMT
+ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml
+# Thu, 23 Jun 2016 20:05:17 GMT
 WORKDIR /data
-```
-
--	Created: Thu, 14 Apr 2016 17:17:47 GMT
--	Parent Layer: `8f42c939361ba6fb3ccdd344ba7d9a856f2af006405eb8b38493e16e466579e4`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `7c61578b232d6932ab7e2d2d11064a90c57bb5c8b9f2f8ce8a5614ee84919045`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:18 GMT
 EXPOSE 4200/tcp 4300/tcp
-```
-
--	Created: Thu, 14 Apr 2016 17:17:48 GMT
--	Parent Layer: `0813ba9a18f312f0cef0032faac9a491edd343fd1d2547397170c6b2889ee827`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `5dd5e0fd0a5513c95a476a69a87e831c26f60104e534541c2de21ea233c653f5`
-
-```dockerfile
+# Thu, 23 Jun 2016 20:05:18 GMT
 CMD ["crate"]
 ```
 
--	Created: Thu, 14 Apr 2016 17:17:48 GMT
--	Parent Layer: `7c61578b232d6932ab7e2d2d11064a90c57bb5c8b9f2f8ce8a5614ee84919045`
+-	Layers:
+	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
+		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
+		Size: 2.3 MB (2320188 bytes)
+	-	`sha256:05b1790998ceeefdec4a3b226db6ac1cb8da5fa7a90695fa8d62cd5ab91cdee7`  
+		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
+		Size: 22.1 KB (22081 bytes)
+	-	`sha256:3eb8d53046d057032545fa606944aa3b012d79877d585da11d405d44a4c7eabf`  
+		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
+		Size: 820.0 B
+	-	`sha256:6b0389d91d646d4ff29433351ec68b780fc1876a2b846f1dd7c2e54fa52dad73`  
+		Last Modified: Thu, 23 Jun 2016 20:05:27 GMT  
+		Size: 1.1 MB (1071956 bytes)
+	-	`sha256:d99580ba0720792079f8cc32647bf0febf2de498371bb3cb93d5dc1b6543458e`  
+		Last Modified: Thu, 23 Jun 2016 20:05:54 GMT  
+		Size: 144.7 MB (144697522 bytes)
+	-	`sha256:4e6aec62770f5c472a9a7f48401fd5e17f81d079b2eac567dbb9d8ad525d5147`  
+		Last Modified: Thu, 23 Jun 2016 20:05:26 GMT  
+		Size: 235.0 B
+	-	`sha256:ef6639050433a80110d8796fcb7f7a834bc103d8d68563df4c255f5bc5878da7`  
+		Last Modified: Thu, 23 Jun 2016 20:05:26 GMT  
+		Size: 400.0 B
+	-	`sha256:b31326b55405547cbc37fc262b033d5a137d5818d85775cc29ddcf893b06bf96`  
+		Last Modified: Thu, 23 Jun 2016 20:05:26 GMT  
+		Size: 90.0 B
+
+## `crate:0.52`
+
+```console
+$ docker pull crate@sha256:22cea05856d2cae3809cf03ace851f4e2e6158d664189388586f850ab60695c1
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `crate:0.52` - linux; amd64
+
 -	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **180.9 MB (180908233 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c4bd3ef36c79ca8bf675868fd679c9ab730cfa27d39467cbb270c9bb3c68b46d`
+-	Default Command: `["crate"]`
+
+```dockerfile
+# Mon, 23 May 2016 22:57:20 GMT
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+# Mon, 23 May 2016 22:57:23 GMT
+CMD ["/bin/bash"]
+# Mon, 23 May 2016 23:00:26 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 24 May 2016 00:08:31 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 24 May 2016 00:37:59 GMT
+RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+# Tue, 24 May 2016 00:38:01 GMT
+ENV LANG=C.UTF-8
+# Tue, 24 May 2016 00:38:03 GMT
+RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
+# Tue, 24 May 2016 00:38:04 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+# Tue, 24 May 2016 00:38:05 GMT
+ENV JAVA_VERSION=8u91
+# Tue, 24 May 2016 00:38:06 GMT
+ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
+# Tue, 24 May 2016 00:38:07 GMT
+ENV CA_CERTIFICATES_JAVA_VERSION=20140324
+# Tue, 24 May 2016 00:39:24 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+# Tue, 24 May 2016 00:39:36 GMT
+RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
+# Tue, 24 May 2016 23:56:51 GMT
+MAINTAINER Crate Technology GmbH <office@crate.io>
+# Tue, 24 May 2016 23:57:34 GMT
+RUN apt-get update &&     apt-get install -y python3 &&     rm -rf /var/lib/apt &&     ln -s /usr/bin/python3 /usr/bin/python
+# Tue, 24 May 2016 23:57:36 GMT
+ENV CRATE_VERSION=0.52.4
+# Tue, 24 May 2016 23:57:45 GMT
+RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
+# Tue, 24 May 2016 23:57:46 GMT
+ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 May 2016 23:57:47 GMT
+VOLUME [/data]
+# Tue, 24 May 2016 23:57:48 GMT
+ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
+# Tue, 24 May 2016 23:57:49 GMT
+ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
+# Tue, 24 May 2016 23:57:50 GMT
+WORKDIR /data
+# Tue, 24 May 2016 23:57:50 GMT
+EXPOSE 4200/tcp 4300/tcp
+# Tue, 24 May 2016 23:57:51 GMT
+CMD ["crate"]
+```
+
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
+		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
+		Size: 18.5 MB (18532084 bytes)
+	-	`sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`  
+		Last Modified: Tue, 24 May 2016 15:44:49 GMT  
+		Size: 566.6 KB (566606 bytes)
+	-	`sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`  
+		Last Modified: Tue, 24 May 2016 15:48:48 GMT  
+		Size: 220.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`  
+		Last Modified: Tue, 24 May 2016 15:48:42 GMT  
+		Size: 242.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`  
+		Last Modified: Tue, 24 May 2016 15:48:28 GMT  
+		Size: 53.4 MB (53350023 bytes)
+	-	`sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`  
+		Last Modified: Tue, 24 May 2016 15:48:09 GMT  
+		Size: 284.4 KB (284392 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:ff2178bb46937ea95b0080ecac9a791d3326f375a019b2672af4062c49e6dde6`  
+		Last Modified: Tue, 31 May 2016 17:13:03 GMT  
+		Size: 9.5 MB (9505420 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:57a5a7a46b0ab5090d367da2ece2d69e1cd5defd8b462b654f59d58b48f604d1`  
+		Last Modified: Tue, 31 May 2016 17:12:51 GMT  
+		Size: 47.3 MB (47311871 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:86e130854bfd26df401a1820fa71a90680dd449eb5ff6b07d2b2f2d9035809ff`  
+		Last Modified: Tue, 31 May 2016 17:12:37 GMT  
+		Size: 230.0 B
+	-	`sha256:e696e0a289efee039adf65f3021a7a1652c6cd9a52d731895d5186714b4cb10b`  
+		Last Modified: Tue, 31 May 2016 17:12:34 GMT  
+		Size: 395.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+
+## `crate:0.52.4`
+
+```console
+$ docker pull crate@sha256:22cea05856d2cae3809cf03ace851f4e2e6158d664189388586f850ab60695c1
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `crate:0.52.4` - linux; amd64
+
+-	Docker Version: 1.9.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **180.9 MB (180908233 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c4bd3ef36c79ca8bf675868fd679c9ab730cfa27d39467cbb270c9bb3c68b46d`
+-	Default Command: `["crate"]`
+
+```dockerfile
+# Mon, 23 May 2016 22:57:20 GMT
+ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
+# Mon, 23 May 2016 22:57:23 GMT
+CMD ["/bin/bash"]
+# Mon, 23 May 2016 23:00:26 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 24 May 2016 00:08:31 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 24 May 2016 00:37:59 GMT
+RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+# Tue, 24 May 2016 00:38:01 GMT
+ENV LANG=C.UTF-8
+# Tue, 24 May 2016 00:38:03 GMT
+RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
+# Tue, 24 May 2016 00:38:04 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+# Tue, 24 May 2016 00:38:05 GMT
+ENV JAVA_VERSION=8u91
+# Tue, 24 May 2016 00:38:06 GMT
+ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
+# Tue, 24 May 2016 00:38:07 GMT
+ENV CA_CERTIFICATES_JAVA_VERSION=20140324
+# Tue, 24 May 2016 00:39:24 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+# Tue, 24 May 2016 00:39:36 GMT
+RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
+# Tue, 24 May 2016 23:56:51 GMT
+MAINTAINER Crate Technology GmbH <office@crate.io>
+# Tue, 24 May 2016 23:57:34 GMT
+RUN apt-get update &&     apt-get install -y python3 &&     rm -rf /var/lib/apt &&     ln -s /usr/bin/python3 /usr/bin/python
+# Tue, 24 May 2016 23:57:36 GMT
+ENV CRATE_VERSION=0.52.4
+# Tue, 24 May 2016 23:57:45 GMT
+RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
+# Tue, 24 May 2016 23:57:46 GMT
+ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 May 2016 23:57:47 GMT
+VOLUME [/data]
+# Tue, 24 May 2016 23:57:48 GMT
+ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /crate/config/crate.yml
+# Tue, 24 May 2016 23:57:49 GMT
+ADD file:11e1eeb01cabb510903c85d827b026cd6c90421ab04602e9739e84f0772d2085 in /crate/config/logging.yml
+# Tue, 24 May 2016 23:57:50 GMT
+WORKDIR /data
+# Tue, 24 May 2016 23:57:50 GMT
+EXPOSE 4200/tcp 4300/tcp
+# Tue, 24 May 2016 23:57:51 GMT
+CMD ["crate"]
+```
+
+-	Layers:
+	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
+		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
+		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
+		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
+		Size: 18.5 MB (18532084 bytes)
+	-	`sha256:aee1f2b2873f99fcb3c5ccb44e2294c70c7e29993fb557a6a9c77cf4af282ed3`  
+		Last Modified: Tue, 24 May 2016 15:44:49 GMT  
+		Size: 566.6 KB (566606 bytes)
+	-	`sha256:3a68342c40115a951c13d85f358423d19e7b258feab00dcb48b69831c314b632`  
+		Last Modified: Tue, 24 May 2016 15:48:48 GMT  
+		Size: 220.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:6cbd71d4d1f400b17d86b2ac88d52224b72e61c9da78520814a3513479f9d2a7`  
+		Last Modified: Tue, 24 May 2016 15:48:42 GMT  
+		Size: 242.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a26b1ce3360b5f5253701d1f2b9c5c566482acc7a0be896d079111e8356ee743`  
+		Last Modified: Tue, 24 May 2016 15:48:28 GMT  
+		Size: 53.4 MB (53350023 bytes)
+	-	`sha256:55bdb2de3391fb3c037dc42fa96f7915948440b7c1d91a678c7f19d7f806fca4`  
+		Last Modified: Tue, 24 May 2016 15:48:09 GMT  
+		Size: 284.4 KB (284392 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:ff2178bb46937ea95b0080ecac9a791d3326f375a019b2672af4062c49e6dde6`  
+		Last Modified: Tue, 31 May 2016 17:13:03 GMT  
+		Size: 9.5 MB (9505420 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:57a5a7a46b0ab5090d367da2ece2d69e1cd5defd8b462b654f59d58b48f604d1`  
+		Last Modified: Tue, 31 May 2016 17:12:51 GMT  
+		Size: 47.3 MB (47311871 bytes)
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:86e130854bfd26df401a1820fa71a90680dd449eb5ff6b07d2b2f2d9035809ff`  
+		Last Modified: Tue, 31 May 2016 17:12:37 GMT  
+		Size: 230.0 B
+	-	`sha256:e696e0a289efee039adf65f3021a7a1652c6cd9a52d731895d5186714b4cb10b`  
+		Last Modified: Tue, 31 May 2016 17:12:34 GMT  
+		Size: 395.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B
