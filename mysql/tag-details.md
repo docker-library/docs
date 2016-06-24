@@ -13,12 +13,103 @@
 
 ## `mysql:5.7.13`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:a9a5b559f8821fe73d58c3606c812d1c044868d42c63817fa5125fd9d8b7b539
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `mysql:5.7.13` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **129.3 MB (129333240 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1195b21c3a45d9bf93aae497f2538f89a09aaded18d6648753aa3ce76670f41d`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
+CMD ["/bin/bash"]
+# Fri, 10 Jun 2016 01:48:39 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+# Fri, 10 Jun 2016 01:48:40 GMT
+ENV GOSU_VERSION=1.7
+# Fri, 10 Jun 2016 01:50:09 GMT
+RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
+# Fri, 10 Jun 2016 01:50:10 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Fri, 10 Jun 2016 02:18:34 GMT
+RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
+# Fri, 10 Jun 2016 02:18:51 GMT
+RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
+# Fri, 10 Jun 2016 02:18:51 GMT
+ENV MYSQL_MAJOR=5.7
+# Fri, 10 Jun 2016 02:18:52 GMT
+ENV MYSQL_VERSION=5.7.13-1debian8
+# Fri, 10 Jun 2016 02:18:53 GMT
+RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
+# Fri, 10 Jun 2016 02:20:06 GMT
+RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
+# Fri, 10 Jun 2016 02:20:07 GMT
+RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
+# Fri, 10 Jun 2016 02:20:07 GMT
+VOLUME [/var/lib/mysql]
+# Fri, 10 Jun 2016 02:20:08 GMT
+COPY file:ad180869b1d1a83532826381678c3a7c2421554c16865c545cdc737cc5f2c8d9 in /usr/local/bin/
+# Fri, 10 Jun 2016 02:20:09 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
+# Fri, 10 Jun 2016 02:20:09 GMT
+ENTRYPOINT &{["docker-entrypoint.sh"]}
+# Fri, 10 Jun 2016 02:20:09 GMT
+EXPOSE 3306/tcp
+# Fri, 10 Jun 2016 02:20:10 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:bd6c32d9a05f118266e0a9f59e1257f51c3eb6aabc62d29b19bf422b4357c54d`  
+		Last Modified: Fri, 24 Jun 2016 19:40:03 GMT  
+		Size: 8.3 MB (8267024 bytes)
+	-	`sha256:0632c43d2f8e05e3d6ab2e7b7e8c4025912faed0fce7fc11b538288c3c0d03a8`  
+		Last Modified: Fri, 24 Jun 2016 19:39:58 GMT  
+		Size: 19.0 KB (19017 bytes)
+	-	`sha256:e76bc01eb91c716178056df9de77834a9107321d3ef552ce0fd14e1da3bf1179`  
+		Last Modified: Fri, 24 Jun 2016 19:39:58 GMT  
+		Size: 216.0 B
+	-	`sha256:c7fb4d78a4d648a0f5b649eff8585f0b2361a273f0c102f52ace2015aa7372eb`  
+		Last Modified: Fri, 24 Jun 2016 19:40:21 GMT  
+		Size: 68.5 MB (68452557 bytes)
+	-	`sha256:438c1fb96f6469a5135731b5437bda2b99598de7aba4c76fd1c90d606abe258d`  
+		Last Modified: Fri, 24 Jun 2016 19:39:56 GMT  
+		Size: 1.1 KB (1123 bytes)
+	-	`sha256:f3ed22f2810a2e2e30a5585c0ac1977407ad76ebcf5bce2069f8c96410689353`  
+		Last Modified: Fri, 24 Jun 2016 19:39:55 GMT  
+		Size: 1.7 KB (1667 bytes)
+	-	`sha256:b836883cb3d90b51b9f29de3b3df4c6120cd70310ef29d9614d36fbf5014d61e`  
+		Last Modified: Fri, 24 Jun 2016 19:39:56 GMT  
+		Size: 119.0 B
 
 ## `mysql:5.7`
 
 ```console
-$ docker pull mysql@sha256:151b7f0b61bbb49aa075dc5cd98f27a87a8d01985804f82466d5b6cd4a83235f
+$ docker pull mysql@sha256:a9a5b559f8821fe73d58c3606c812d1c044868d42c63817fa5125fd9d8b7b539
 ```
 
 -	Platforms:
@@ -26,97 +117,94 @@ $ docker pull mysql@sha256:151b7f0b61bbb49aa075dc5cd98f27a87a8d01985804f82466d5b
 
 ### `mysql:5.7` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **129.1 MB (129056836 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **129.3 MB (129333240 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `e530dc89961c079653a34909612f92431d4a5059f65a1d5197a7df394190399e`
+-	Image ID: `sha256:1195b21c3a45d9bf93aae497f2538f89a09aaded18d6648753aa3ce76670f41d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:41:25 GMT
+# Fri, 10 Jun 2016 01:48:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:41:26 GMT
+# Fri, 10 Jun 2016 01:48:40 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:42:30 GMT
+# Fri, 10 Jun 2016 01:50:09 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:42:32 GMT
+# Fri, 10 Jun 2016 01:50:10 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 04:00:08 GMT
+# Fri, 10 Jun 2016 02:18:34 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 04:00:23 GMT
+# Fri, 10 Jun 2016 02:18:51 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Tue, 24 May 2016 04:03:31 GMT
+# Fri, 10 Jun 2016 02:18:51 GMT
 ENV MYSQL_MAJOR=5.7
-# Tue, 24 May 2016 04:03:32 GMT
-ENV MYSQL_VERSION=5.7.12-1debian8
-# Tue, 24 May 2016 04:03:35 GMT
+# Fri, 10 Jun 2016 02:18:52 GMT
+ENV MYSQL_VERSION=5.7.13-1debian8
+# Fri, 10 Jun 2016 02:18:53 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Tue, 24 May 2016 04:04:37 GMT
+# Fri, 10 Jun 2016 02:20:06 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 04:04:41 GMT
+# Fri, 10 Jun 2016 02:20:07 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 04:04:42 GMT
+# Fri, 10 Jun 2016 02:20:07 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 04:04:44 GMT
-COPY file:133c85375a6317f8526bd1b83733e0b58b2df08ffe08a0fde89544a6491898c1 in /usr/local/bin/
-# Tue, 24 May 2016 04:04:46 GMT
+# Fri, 10 Jun 2016 02:20:08 GMT
+COPY file:ad180869b1d1a83532826381678c3a7c2421554c16865c545cdc737cc5f2c8d9 in /usr/local/bin/
+# Fri, 10 Jun 2016 02:20:09 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 24 May 2016 04:04:47 GMT
+# Fri, 10 Jun 2016 02:20:09 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 04:04:48 GMT
+# Fri, 10 Jun 2016 02:20:09 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 04:04:50 GMT
+# Fri, 10 Jun 2016 02:20:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:6eda8dacf10a76199d47c55875bcbac1e9b0c2aa6646702c20be34cb7d273551`  
-		Last Modified: Tue, 31 May 2016 21:17:42 GMT  
-		Size: 119.0 B
-	-	`sha256:310227c7e00da09877591ae9eb80b08b2160c0d2f87af88f945be23c7543ad85`  
-		Last Modified: Tue, 31 May 2016 21:17:47 GMT  
-		Size: 1.7 KB (1670 bytes)
-	-	`sha256:fe9a3ecc0ca90ff141572117d2ce655821d0f114b7654b1b2505afa2e50cf061`  
-		Last Modified: Tue, 31 May 2016 21:17:53 GMT  
-		Size: 1.1 KB (1121 bytes)
-	-	`sha256:fd7e3b75ae7f9595539d9791fcc37262b3873385d5009f7bfc661a05031265d8`  
-		Last Modified: Tue, 31 May 2016 21:18:23 GMT  
-		Size: 68.2 MB (68215861 bytes)
-	-	`sha256:6197f83904fb736b933f9bf01995dd9b653ba373f22a3998567b636b0848b362`  
-		Last Modified: Tue, 31 May 2016 21:18:30 GMT  
-		Size: 217.0 B
-	-	`sha256:e9e6fbca5bcbf37e4e2b9b3b6a187af395b484151cda550d55808b01c2ebdf47`  
-		Last Modified: Tue, 31 May 2016 21:17:13 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:bd6c32d9a05f118266e0a9f59e1257f51c3eb6aabc62d29b19bf422b4357c54d`  
+		Last Modified: Fri, 24 Jun 2016 19:40:03 GMT  
+		Size: 8.3 MB (8267024 bytes)
+	-	`sha256:0632c43d2f8e05e3d6ab2e7b7e8c4025912faed0fce7fc11b538288c3c0d03a8`  
+		Last Modified: Fri, 24 Jun 2016 19:39:58 GMT  
 		Size: 19.0 KB (19017 bytes)
-	-	`sha256:6dcf95bf56d1283f3db7e827475433910e6d11708b74a1fa6e6353d7dcdedaac`  
-		Last Modified: Tue, 31 May 2016 21:17:22 GMT  
-		Size: 8.2 MB (8244343 bytes)
-	-	`sha256:729d0217f8dbf240a446f8667fa265f51e81c561a1a10f3bed108294a1e5c49a`  
-		Last Modified: Wed, 25 May 2016 21:51:03 GMT  
-		Size: 112.0 B
-	-	`sha256:a65f47c75fe37fae466f54ed7c640ca7ead74a42a63a3130f7468e8951c5f701`  
-		Last Modified: Wed, 25 May 2016 21:51:07 GMT  
-		Size: 1.2 MB (1215972 bytes)
-	-	`sha256:260d7505d8f946e326a8c267560b07513be001da009113b6acaa3995b2f8d34c`  
-		Last Modified: Wed, 25 May 2016 21:51:12 GMT  
-		Size: 2.0 KB (2038 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:e76bc01eb91c716178056df9de77834a9107321d3ef552ce0fd14e1da3bf1179`  
+		Last Modified: Fri, 24 Jun 2016 19:39:58 GMT  
+		Size: 216.0 B
+	-	`sha256:c7fb4d78a4d648a0f5b649eff8585f0b2361a273f0c102f52ace2015aa7372eb`  
+		Last Modified: Fri, 24 Jun 2016 19:40:21 GMT  
+		Size: 68.5 MB (68452557 bytes)
+	-	`sha256:438c1fb96f6469a5135731b5437bda2b99598de7aba4c76fd1c90d606abe258d`  
+		Last Modified: Fri, 24 Jun 2016 19:39:56 GMT  
+		Size: 1.1 KB (1123 bytes)
+	-	`sha256:f3ed22f2810a2e2e30a5585c0ac1977407ad76ebcf5bce2069f8c96410689353`  
+		Last Modified: Fri, 24 Jun 2016 19:39:55 GMT  
+		Size: 1.7 KB (1667 bytes)
+	-	`sha256:b836883cb3d90b51b9f29de3b3df4c6120cd70310ef29d9614d36fbf5014d61e`  
+		Last Modified: Fri, 24 Jun 2016 19:39:56 GMT  
+		Size: 119.0 B
 
 ## `mysql:5`
 
 ```console
-$ docker pull mysql@sha256:383428eb27d52263e255403215d296981d36bdeb8bfa74baea40291a41fd1ea8
+$ docker pull mysql@sha256:a9a5b559f8821fe73d58c3606c812d1c044868d42c63817fa5125fd9d8b7b539
 ```
 
 -	Platforms:
@@ -124,97 +212,94 @@ $ docker pull mysql@sha256:383428eb27d52263e255403215d296981d36bdeb8bfa74baea402
 
 ### `mysql:5` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **129.1 MB (129056836 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **129.3 MB (129333240 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `e530dc89961c079653a34909612f92431d4a5059f65a1d5197a7df394190399e`
+-	Image ID: `sha256:1195b21c3a45d9bf93aae497f2538f89a09aaded18d6648753aa3ce76670f41d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:41:25 GMT
+# Fri, 10 Jun 2016 01:48:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:41:26 GMT
+# Fri, 10 Jun 2016 01:48:40 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:42:30 GMT
+# Fri, 10 Jun 2016 01:50:09 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:42:32 GMT
+# Fri, 10 Jun 2016 01:50:10 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 04:00:08 GMT
+# Fri, 10 Jun 2016 02:18:34 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 04:00:23 GMT
+# Fri, 10 Jun 2016 02:18:51 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Tue, 24 May 2016 04:03:31 GMT
+# Fri, 10 Jun 2016 02:18:51 GMT
 ENV MYSQL_MAJOR=5.7
-# Tue, 24 May 2016 04:03:32 GMT
-ENV MYSQL_VERSION=5.7.12-1debian8
-# Tue, 24 May 2016 04:03:35 GMT
+# Fri, 10 Jun 2016 02:18:52 GMT
+ENV MYSQL_VERSION=5.7.13-1debian8
+# Fri, 10 Jun 2016 02:18:53 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Tue, 24 May 2016 04:04:37 GMT
+# Fri, 10 Jun 2016 02:20:06 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 04:04:41 GMT
+# Fri, 10 Jun 2016 02:20:07 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 04:04:42 GMT
+# Fri, 10 Jun 2016 02:20:07 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 04:04:44 GMT
-COPY file:133c85375a6317f8526bd1b83733e0b58b2df08ffe08a0fde89544a6491898c1 in /usr/local/bin/
-# Tue, 24 May 2016 04:04:46 GMT
+# Fri, 10 Jun 2016 02:20:08 GMT
+COPY file:ad180869b1d1a83532826381678c3a7c2421554c16865c545cdc737cc5f2c8d9 in /usr/local/bin/
+# Fri, 10 Jun 2016 02:20:09 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 24 May 2016 04:04:47 GMT
+# Fri, 10 Jun 2016 02:20:09 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 04:04:48 GMT
+# Fri, 10 Jun 2016 02:20:09 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 04:04:50 GMT
+# Fri, 10 Jun 2016 02:20:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:6eda8dacf10a76199d47c55875bcbac1e9b0c2aa6646702c20be34cb7d273551`  
-		Last Modified: Tue, 31 May 2016 21:17:42 GMT  
-		Size: 119.0 B
-	-	`sha256:310227c7e00da09877591ae9eb80b08b2160c0d2f87af88f945be23c7543ad85`  
-		Last Modified: Tue, 31 May 2016 21:17:47 GMT  
-		Size: 1.7 KB (1670 bytes)
-	-	`sha256:fe9a3ecc0ca90ff141572117d2ce655821d0f114b7654b1b2505afa2e50cf061`  
-		Last Modified: Tue, 31 May 2016 21:17:53 GMT  
-		Size: 1.1 KB (1121 bytes)
-	-	`sha256:fd7e3b75ae7f9595539d9791fcc37262b3873385d5009f7bfc661a05031265d8`  
-		Last Modified: Tue, 31 May 2016 21:18:23 GMT  
-		Size: 68.2 MB (68215861 bytes)
-	-	`sha256:6197f83904fb736b933f9bf01995dd9b653ba373f22a3998567b636b0848b362`  
-		Last Modified: Tue, 31 May 2016 21:18:30 GMT  
-		Size: 217.0 B
-	-	`sha256:e9e6fbca5bcbf37e4e2b9b3b6a187af395b484151cda550d55808b01c2ebdf47`  
-		Last Modified: Tue, 31 May 2016 21:17:13 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:bd6c32d9a05f118266e0a9f59e1257f51c3eb6aabc62d29b19bf422b4357c54d`  
+		Last Modified: Fri, 24 Jun 2016 19:40:03 GMT  
+		Size: 8.3 MB (8267024 bytes)
+	-	`sha256:0632c43d2f8e05e3d6ab2e7b7e8c4025912faed0fce7fc11b538288c3c0d03a8`  
+		Last Modified: Fri, 24 Jun 2016 19:39:58 GMT  
 		Size: 19.0 KB (19017 bytes)
-	-	`sha256:6dcf95bf56d1283f3db7e827475433910e6d11708b74a1fa6e6353d7dcdedaac`  
-		Last Modified: Tue, 31 May 2016 21:17:22 GMT  
-		Size: 8.2 MB (8244343 bytes)
-	-	`sha256:729d0217f8dbf240a446f8667fa265f51e81c561a1a10f3bed108294a1e5c49a`  
-		Last Modified: Wed, 25 May 2016 21:51:03 GMT  
-		Size: 112.0 B
-	-	`sha256:a65f47c75fe37fae466f54ed7c640ca7ead74a42a63a3130f7468e8951c5f701`  
-		Last Modified: Wed, 25 May 2016 21:51:07 GMT  
-		Size: 1.2 MB (1215972 bytes)
-	-	`sha256:260d7505d8f946e326a8c267560b07513be001da009113b6acaa3995b2f8d34c`  
-		Last Modified: Wed, 25 May 2016 21:51:12 GMT  
-		Size: 2.0 KB (2038 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:e76bc01eb91c716178056df9de77834a9107321d3ef552ce0fd14e1da3bf1179`  
+		Last Modified: Fri, 24 Jun 2016 19:39:58 GMT  
+		Size: 216.0 B
+	-	`sha256:c7fb4d78a4d648a0f5b649eff8585f0b2361a273f0c102f52ace2015aa7372eb`  
+		Last Modified: Fri, 24 Jun 2016 19:40:21 GMT  
+		Size: 68.5 MB (68452557 bytes)
+	-	`sha256:438c1fb96f6469a5135731b5437bda2b99598de7aba4c76fd1c90d606abe258d`  
+		Last Modified: Fri, 24 Jun 2016 19:39:56 GMT  
+		Size: 1.1 KB (1123 bytes)
+	-	`sha256:f3ed22f2810a2e2e30a5585c0ac1977407ad76ebcf5bce2069f8c96410689353`  
+		Last Modified: Fri, 24 Jun 2016 19:39:55 GMT  
+		Size: 1.7 KB (1667 bytes)
+	-	`sha256:b836883cb3d90b51b9f29de3b3df4c6120cd70310ef29d9614d36fbf5014d61e`  
+		Last Modified: Fri, 24 Jun 2016 19:39:56 GMT  
+		Size: 119.0 B
 
 ## `mysql:latest`
 
 ```console
-$ docker pull mysql@sha256:b2f400f4a5e003b0543decf61a0a010939f3fba07bafa226f11ed7b5f1e81237
+$ docker pull mysql@sha256:a9a5b559f8821fe73d58c3606c812d1c044868d42c63817fa5125fd9d8b7b539
 ```
 
 -	Platforms:
@@ -222,101 +307,189 @@ $ docker pull mysql@sha256:b2f400f4a5e003b0543decf61a0a010939f3fba07bafa226f11ed
 
 ### `mysql:latest` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **129.1 MB (129056836 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **129.3 MB (129333240 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `e530dc89961c079653a34909612f92431d4a5059f65a1d5197a7df394190399e`
+-	Image ID: `sha256:1195b21c3a45d9bf93aae497f2538f89a09aaded18d6648753aa3ce76670f41d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:41:25 GMT
+# Fri, 10 Jun 2016 01:48:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:41:26 GMT
+# Fri, 10 Jun 2016 01:48:40 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:42:30 GMT
+# Fri, 10 Jun 2016 01:50:09 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:42:32 GMT
+# Fri, 10 Jun 2016 01:50:10 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 04:00:08 GMT
+# Fri, 10 Jun 2016 02:18:34 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 04:00:23 GMT
+# Fri, 10 Jun 2016 02:18:51 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Tue, 24 May 2016 04:03:31 GMT
+# Fri, 10 Jun 2016 02:18:51 GMT
 ENV MYSQL_MAJOR=5.7
-# Tue, 24 May 2016 04:03:32 GMT
-ENV MYSQL_VERSION=5.7.12-1debian8
-# Tue, 24 May 2016 04:03:35 GMT
+# Fri, 10 Jun 2016 02:18:52 GMT
+ENV MYSQL_VERSION=5.7.13-1debian8
+# Fri, 10 Jun 2016 02:18:53 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Tue, 24 May 2016 04:04:37 GMT
+# Fri, 10 Jun 2016 02:20:06 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 04:04:41 GMT
+# Fri, 10 Jun 2016 02:20:07 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 04:04:42 GMT
+# Fri, 10 Jun 2016 02:20:07 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 04:04:44 GMT
-COPY file:133c85375a6317f8526bd1b83733e0b58b2df08ffe08a0fde89544a6491898c1 in /usr/local/bin/
-# Tue, 24 May 2016 04:04:46 GMT
+# Fri, 10 Jun 2016 02:20:08 GMT
+COPY file:ad180869b1d1a83532826381678c3a7c2421554c16865c545cdc737cc5f2c8d9 in /usr/local/bin/
+# Fri, 10 Jun 2016 02:20:09 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 24 May 2016 04:04:47 GMT
+# Fri, 10 Jun 2016 02:20:09 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 04:04:48 GMT
+# Fri, 10 Jun 2016 02:20:09 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 04:04:50 GMT
+# Fri, 10 Jun 2016 02:20:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:6eda8dacf10a76199d47c55875bcbac1e9b0c2aa6646702c20be34cb7d273551`  
-		Last Modified: Tue, 31 May 2016 21:17:42 GMT  
-		Size: 119.0 B
-	-	`sha256:310227c7e00da09877591ae9eb80b08b2160c0d2f87af88f945be23c7543ad85`  
-		Last Modified: Tue, 31 May 2016 21:17:47 GMT  
-		Size: 1.7 KB (1670 bytes)
-	-	`sha256:fe9a3ecc0ca90ff141572117d2ce655821d0f114b7654b1b2505afa2e50cf061`  
-		Last Modified: Tue, 31 May 2016 21:17:53 GMT  
-		Size: 1.1 KB (1121 bytes)
-	-	`sha256:fd7e3b75ae7f9595539d9791fcc37262b3873385d5009f7bfc661a05031265d8`  
-		Last Modified: Tue, 31 May 2016 21:18:23 GMT  
-		Size: 68.2 MB (68215861 bytes)
-	-	`sha256:6197f83904fb736b933f9bf01995dd9b653ba373f22a3998567b636b0848b362`  
-		Last Modified: Tue, 31 May 2016 21:18:30 GMT  
-		Size: 217.0 B
-	-	`sha256:e9e6fbca5bcbf37e4e2b9b3b6a187af395b484151cda550d55808b01c2ebdf47`  
-		Last Modified: Tue, 31 May 2016 21:17:13 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:bd6c32d9a05f118266e0a9f59e1257f51c3eb6aabc62d29b19bf422b4357c54d`  
+		Last Modified: Fri, 24 Jun 2016 19:40:03 GMT  
+		Size: 8.3 MB (8267024 bytes)
+	-	`sha256:0632c43d2f8e05e3d6ab2e7b7e8c4025912faed0fce7fc11b538288c3c0d03a8`  
+		Last Modified: Fri, 24 Jun 2016 19:39:58 GMT  
 		Size: 19.0 KB (19017 bytes)
-	-	`sha256:6dcf95bf56d1283f3db7e827475433910e6d11708b74a1fa6e6353d7dcdedaac`  
-		Last Modified: Tue, 31 May 2016 21:17:22 GMT  
-		Size: 8.2 MB (8244343 bytes)
-	-	`sha256:729d0217f8dbf240a446f8667fa265f51e81c561a1a10f3bed108294a1e5c49a`  
-		Last Modified: Wed, 25 May 2016 21:51:03 GMT  
-		Size: 112.0 B
-	-	`sha256:a65f47c75fe37fae466f54ed7c640ca7ead74a42a63a3130f7468e8951c5f701`  
-		Last Modified: Wed, 25 May 2016 21:51:07 GMT  
-		Size: 1.2 MB (1215972 bytes)
-	-	`sha256:260d7505d8f946e326a8c267560b07513be001da009113b6acaa3995b2f8d34c`  
-		Last Modified: Wed, 25 May 2016 21:51:12 GMT  
-		Size: 2.0 KB (2038 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:e76bc01eb91c716178056df9de77834a9107321d3ef552ce0fd14e1da3bf1179`  
+		Last Modified: Fri, 24 Jun 2016 19:39:58 GMT  
+		Size: 216.0 B
+	-	`sha256:c7fb4d78a4d648a0f5b649eff8585f0b2361a273f0c102f52ace2015aa7372eb`  
+		Last Modified: Fri, 24 Jun 2016 19:40:21 GMT  
+		Size: 68.5 MB (68452557 bytes)
+	-	`sha256:438c1fb96f6469a5135731b5437bda2b99598de7aba4c76fd1c90d606abe258d`  
+		Last Modified: Fri, 24 Jun 2016 19:39:56 GMT  
+		Size: 1.1 KB (1123 bytes)
+	-	`sha256:f3ed22f2810a2e2e30a5585c0ac1977407ad76ebcf5bce2069f8c96410689353`  
+		Last Modified: Fri, 24 Jun 2016 19:39:55 GMT  
+		Size: 1.7 KB (1667 bytes)
+	-	`sha256:b836883cb3d90b51b9f29de3b3df4c6120cd70310ef29d9614d36fbf5014d61e`  
+		Last Modified: Fri, 24 Jun 2016 19:39:56 GMT  
+		Size: 119.0 B
 
 ## `mysql:5.6.31`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:1d99ad1a8a2f8859dc986566cc31741c00a050d5fbf9305e7cd74398ade79f36
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `mysql:5.6.31` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **112.7 MB (112661921 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:01bbb21c400cb35e3341c05d52a9ad3abbf26d043906728fd6bd29e311afe8b4`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
+CMD ["/bin/bash"]
+# Fri, 10 Jun 2016 01:48:39 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+# Fri, 10 Jun 2016 01:48:40 GMT
+ENV GOSU_VERSION=1.7
+# Fri, 10 Jun 2016 01:50:09 GMT
+RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
+# Fri, 10 Jun 2016 01:50:10 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Fri, 10 Jun 2016 02:18:34 GMT
+RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
+# Fri, 10 Jun 2016 02:18:51 GMT
+RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
+# Fri, 10 Jun 2016 02:20:10 GMT
+ENV MYSQL_MAJOR=5.6
+# Fri, 10 Jun 2016 02:20:10 GMT
+ENV MYSQL_VERSION=5.6.31-1debian8
+# Fri, 10 Jun 2016 02:20:11 GMT
+RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
+# Fri, 10 Jun 2016 02:21:28 GMT
+RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
+# Fri, 10 Jun 2016 02:21:29 GMT
+RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
+# Fri, 10 Jun 2016 02:21:29 GMT
+VOLUME [/var/lib/mysql]
+# Fri, 10 Jun 2016 02:21:30 GMT
+COPY file:14d001e99d6aad060e0b27c9e4fb367ae5c9d958487969e94fca6f57c7d732cf in /usr/local/bin/
+# Fri, 10 Jun 2016 02:21:31 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
+# Fri, 10 Jun 2016 02:21:31 GMT
+ENTRYPOINT &{["docker-entrypoint.sh"]}
+# Fri, 10 Jun 2016 02:21:31 GMT
+EXPOSE 3306/tcp
+# Fri, 10 Jun 2016 02:21:31 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:bd6c32d9a05f118266e0a9f59e1257f51c3eb6aabc62d29b19bf422b4357c54d`  
+		Last Modified: Fri, 24 Jun 2016 19:40:03 GMT  
+		Size: 8.3 MB (8267024 bytes)
+	-	`sha256:0632c43d2f8e05e3d6ab2e7b7e8c4025912faed0fce7fc11b538288c3c0d03a8`  
+		Last Modified: Fri, 24 Jun 2016 19:39:58 GMT  
+		Size: 19.0 KB (19017 bytes)
+	-	`sha256:d8bd60447797968dbd98867a2d81ee46ffca173d52a8d3b4164e4018c76d4df4`  
+		Last Modified: Fri, 24 Jun 2016 19:41:00 GMT  
+		Size: 216.0 B
+	-	`sha256:3898783b7b39826d684706f02fc9e3b04aabf5f2d343c83862c10968c95ac414`  
+		Last Modified: Fri, 24 Jun 2016 19:41:17 GMT  
+		Size: 51.8 MB (51781141 bytes)
+	-	`sha256:46026fe91c49a1e04d1c1e57849a61a7b099131d086ad13cdd4d08bdd7a1459e`  
+		Last Modified: Fri, 24 Jun 2016 19:41:00 GMT  
+		Size: 1.2 KB (1176 bytes)
+	-	`sha256:50953e0b43e88b1e57b37e1f27c26bb940eda35b1cc3c255e2b6883a2b9f0fdb`  
+		Last Modified: Fri, 24 Jun 2016 19:41:00 GMT  
+		Size: 1.7 KB (1712 bytes)
+	-	`sha256:d5f03842f2c87a07928075ea542fe847dc494b2a5bb66f17492a62ac7f4a73ed`  
+		Last Modified: Fri, 24 Jun 2016 19:41:00 GMT  
+		Size: 118.0 B
 
 ## `mysql:5.6`
 
 ```console
-$ docker pull mysql@sha256:03646869dfecf96f443640f8b9040fbde78a96269aaf47bbfbb505a4c1adcad9
+$ docker pull mysql@sha256:1d99ad1a8a2f8859dc986566cc31741c00a050d5fbf9305e7cd74398ade79f36
 ```
 
 -	Platforms:
@@ -324,101 +497,191 @@ $ docker pull mysql@sha256:03646869dfecf96f443640f8b9040fbde78a96269aaf47bbfbb50
 
 ### `mysql:5.6` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **112.6 MB (112636728 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **112.7 MB (112661921 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `e34685c198a9bd34f765669c0f45319e1dfdbaa3447de5fe5395e010eb189300`
+-	Image ID: `sha256:01bbb21c400cb35e3341c05d52a9ad3abbf26d043906728fd6bd29e311afe8b4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:41:25 GMT
+# Fri, 10 Jun 2016 01:48:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:41:26 GMT
+# Fri, 10 Jun 2016 01:48:40 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:42:30 GMT
+# Fri, 10 Jun 2016 01:50:09 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:42:32 GMT
+# Fri, 10 Jun 2016 01:50:10 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 04:00:08 GMT
+# Fri, 10 Jun 2016 02:18:34 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 04:00:23 GMT
+# Fri, 10 Jun 2016 02:18:51 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Tue, 24 May 2016 04:00:24 GMT
+# Fri, 10 Jun 2016 02:20:10 GMT
 ENV MYSQL_MAJOR=5.6
-# Tue, 24 May 2016 04:00:25 GMT
-ENV MYSQL_VERSION=5.6.30-1debian8
-# Tue, 24 May 2016 04:00:27 GMT
+# Fri, 10 Jun 2016 02:20:10 GMT
+ENV MYSQL_VERSION=5.6.31-1debian8
+# Fri, 10 Jun 2016 02:20:11 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Tue, 24 May 2016 04:01:31 GMT
+# Fri, 10 Jun 2016 02:21:28 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 04:01:34 GMT
+# Fri, 10 Jun 2016 02:21:29 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Tue, 24 May 2016 04:01:35 GMT
+# Fri, 10 Jun 2016 02:21:29 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 04:01:36 GMT
-COPY file:85611d651d0b74ebd4c5e5109053015fa3c0f1a37507cae6e895ad01a88a2113 in /usr/local/bin/
-# Tue, 24 May 2016 04:01:38 GMT
+# Fri, 10 Jun 2016 02:21:30 GMT
+COPY file:14d001e99d6aad060e0b27c9e4fb367ae5c9d958487969e94fca6f57c7d732cf in /usr/local/bin/
+# Fri, 10 Jun 2016 02:21:31 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 24 May 2016 04:01:39 GMT
+# Fri, 10 Jun 2016 02:21:31 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 04:01:40 GMT
+# Fri, 10 Jun 2016 02:21:31 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 04:01:41 GMT
+# Fri, 10 Jun 2016 02:21:31 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:16434515d19790fa6608ef3f9136f2648203a1b972a2b9d66d05b3cce8cacee9`  
-		Last Modified: Tue, 31 May 2016 21:16:24 GMT  
-		Size: 119.0 B
-	-	`sha256:266b326b31d70bb1b58e16171ffc628af6691e532e7885c87e6d5cf01f50dbbb`  
-		Last Modified: Tue, 31 May 2016 21:16:29 GMT  
-		Size: 1.7 KB (1713 bytes)
-	-	`sha256:624b64bce5c0d7e3b1e9feb15cf49099ce28d38a517315ee4bf38b72b4357446`  
-		Last Modified: Tue, 31 May 2016 21:16:35 GMT  
-		Size: 1.2 KB (1176 bytes)
-	-	`sha256:f8c1edcfb009ba72265d12417e4555a50bba55eb658462e4f029fc98a19955e6`  
-		Last Modified: Tue, 31 May 2016 21:16:59 GMT  
-		Size: 51.8 MB (51795655 bytes)
-	-	`sha256:ee46e19ab7a24d0f242e07c5c3ab8ad2488094ffdc41a27d4b2fe95c6c64db2f`  
-		Last Modified: Tue, 31 May 2016 21:17:05 GMT  
-		Size: 217.0 B
-	-	`sha256:e9e6fbca5bcbf37e4e2b9b3b6a187af395b484151cda550d55808b01c2ebdf47`  
-		Last Modified: Tue, 31 May 2016 21:17:13 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:bd6c32d9a05f118266e0a9f59e1257f51c3eb6aabc62d29b19bf422b4357c54d`  
+		Last Modified: Fri, 24 Jun 2016 19:40:03 GMT  
+		Size: 8.3 MB (8267024 bytes)
+	-	`sha256:0632c43d2f8e05e3d6ab2e7b7e8c4025912faed0fce7fc11b538288c3c0d03a8`  
+		Last Modified: Fri, 24 Jun 2016 19:39:58 GMT  
 		Size: 19.0 KB (19017 bytes)
-	-	`sha256:6dcf95bf56d1283f3db7e827475433910e6d11708b74a1fa6e6353d7dcdedaac`  
-		Last Modified: Tue, 31 May 2016 21:17:22 GMT  
-		Size: 8.2 MB (8244343 bytes)
-	-	`sha256:729d0217f8dbf240a446f8667fa265f51e81c561a1a10f3bed108294a1e5c49a`  
-		Last Modified: Wed, 25 May 2016 21:51:03 GMT  
-		Size: 112.0 B
-	-	`sha256:a65f47c75fe37fae466f54ed7c640ca7ead74a42a63a3130f7468e8951c5f701`  
-		Last Modified: Wed, 25 May 2016 21:51:07 GMT  
-		Size: 1.2 MB (1215972 bytes)
-	-	`sha256:260d7505d8f946e326a8c267560b07513be001da009113b6acaa3995b2f8d34c`  
-		Last Modified: Wed, 25 May 2016 21:51:12 GMT  
-		Size: 2.0 KB (2038 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:d8bd60447797968dbd98867a2d81ee46ffca173d52a8d3b4164e4018c76d4df4`  
+		Last Modified: Fri, 24 Jun 2016 19:41:00 GMT  
+		Size: 216.0 B
+	-	`sha256:3898783b7b39826d684706f02fc9e3b04aabf5f2d343c83862c10968c95ac414`  
+		Last Modified: Fri, 24 Jun 2016 19:41:17 GMT  
+		Size: 51.8 MB (51781141 bytes)
+	-	`sha256:46026fe91c49a1e04d1c1e57849a61a7b099131d086ad13cdd4d08bdd7a1459e`  
+		Last Modified: Fri, 24 Jun 2016 19:41:00 GMT  
+		Size: 1.2 KB (1176 bytes)
+	-	`sha256:50953e0b43e88b1e57b37e1f27c26bb940eda35b1cc3c255e2b6883a2b9f0fdb`  
+		Last Modified: Fri, 24 Jun 2016 19:41:00 GMT  
+		Size: 1.7 KB (1712 bytes)
+	-	`sha256:d5f03842f2c87a07928075ea542fe847dc494b2a5bb66f17492a62ac7f4a73ed`  
+		Last Modified: Fri, 24 Jun 2016 19:41:00 GMT  
+		Size: 118.0 B
 
 ## `mysql:5.5.50`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:1844ece1dda21da02de3a64be89f019fd9ac46f703b9113f76b58e5286008192
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `mysql:5.5.50` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **87.1 MB (87126185 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4cc526aebabe601ed1037e59d1423a8096452f045d194257ad34acc67c40a737`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
+CMD ["/bin/bash"]
+# Fri, 10 Jun 2016 01:48:39 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+# Fri, 10 Jun 2016 01:48:40 GMT
+ENV GOSU_VERSION=1.7
+# Fri, 10 Jun 2016 01:50:09 GMT
+RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
+# Fri, 10 Jun 2016 01:50:10 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Fri, 10 Jun 2016 02:22:30 GMT
+RUN apt-get update && apt-get install -y perl --no-install-recommends && rm -rf /var/lib/apt/lists/*
+# Fri, 10 Jun 2016 02:23:26 GMT
+RUN apt-get update && apt-get install -y libaio1 pwgen && rm -rf /var/lib/apt/lists/*
+# Fri, 10 Jun 2016 02:23:26 GMT
+ENV MYSQL_MAJOR=5.5
+# Fri, 10 Jun 2016 02:23:26 GMT
+ENV MYSQL_VERSION=5.5.50
+# Fri, 10 Jun 2016 02:25:59 GMT
+RUN apt-get update && apt-get install -y wget --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& wget "http://dev.mysql.com/get/Downloads/MySQL-$MYSQL_MAJOR/mysql-$MYSQL_VERSION-linux2.6-x86_64.tar.gz" -O mysql.tar.gz 	&& wget "http://mysql.he.net/Downloads/MySQL-$MYSQL_MAJOR/mysql-$MYSQL_VERSION-linux2.6-x86_64.tar.gz.asc" -O mysql.tar.gz.asc 	&& apt-get purge -y --auto-remove wget 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5 	&& gpg --batch --verify mysql.tar.gz.asc mysql.tar.gz 	&& rm -r "$GNUPGHOME" mysql.tar.gz.asc 	&& mkdir /usr/local/mysql 	&& tar -xzf mysql.tar.gz -C /usr/local/mysql --strip-components=1 	&& rm mysql.tar.gz 	&& rm -rf /usr/local/mysql/mysql-test /usr/local/mysql/sql-bench 	&& rm -rf /usr/local/mysql/bin/*-debug /usr/local/mysql/bin/*_embedded 	&& find /usr/local/mysql -type f -name "*.a" -delete 	&& apt-get update && apt-get install -y binutils && rm -rf /var/lib/apt/lists/* 	&& { find /usr/local/mysql -type f -executable -exec strip --strip-all '{}' + || true; } 	&& apt-get purge -y --auto-remove binutils
+# Fri, 10 Jun 2016 02:25:59 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/mysql/bin:/usr/local/mysql/scripts
+# Fri, 10 Jun 2016 02:26:01 GMT
+RUN mkdir -p /etc/mysql/conf.d 	&& { 		echo '[mysqld]'; 		echo 'skip-host-cache'; 		echo 'skip-name-resolve'; 		echo 'datadir = /var/lib/mysql'; 		echo '!includedir /etc/mysql/conf.d/'; 	} > /etc/mysql/my.cnf
+# Fri, 10 Jun 2016 02:26:02 GMT
+RUN mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
+# Fri, 10 Jun 2016 02:26:02 GMT
+VOLUME [/var/lib/mysql]
+# Fri, 10 Jun 2016 02:26:02 GMT
+COPY file:4644fd6575750f143d1f4da15c186249cf9b5c36f09400a1e768f16cfa4a6e7b in /usr/local/bin/
+# Fri, 10 Jun 2016 02:26:03 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
+# Fri, 10 Jun 2016 02:26:03 GMT
+ENTRYPOINT &{["docker-entrypoint.sh"]}
+# Fri, 10 Jun 2016 02:26:04 GMT
+EXPOSE 3306/tcp
+# Fri, 10 Jun 2016 02:26:04 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:65dbff149e624054cae557e9613c0132efdccae263e44d012c835ef57aaf205c`  
+		Last Modified: Fri, 24 Jun 2016 19:41:47 GMT  
+		Size: 8.2 MB (8237755 bytes)
+	-	`sha256:850c4735e77756c4b0b7d1245e4f3abed21a98dea9d4abc5bff62ee79d0fd8ef`  
+		Last Modified: Fri, 24 Jun 2016 19:41:43 GMT  
+		Size: 131.1 KB (131055 bytes)
+	-	`sha256:1f093c5e8d08afbe59f0b10638d4d89c3e56457156d39b5cf34ea70791f5a625`  
+		Last Modified: Fri, 24 Jun 2016 19:41:49 GMT  
+		Size: 26.2 MB (26163579 bytes)
+	-	`sha256:ae14fe87d312b761f63fd2c780bbec698610d7a8c54281763011065c01aa3657`  
+		Last Modified: Fri, 24 Jun 2016 19:41:41 GMT  
+		Size: 239.0 B
+	-	`sha256:532e9acf2b87472ac22fa04aa66162a7606fe4d6af988a5db5a4b6598347a5ee`  
+		Last Modified: Fri, 24 Jun 2016 19:41:40 GMT  
+		Size: 173.0 B
+	-	`sha256:4796e90cab9886be4489ff440fc519e29308d0630a769041a18dfae755fb4a5b`  
+		Last Modified: Fri, 24 Jun 2016 19:41:40 GMT  
+		Size: 1.7 KB (1747 bytes)
+	-	`sha256:4db10e84fc444b9feb6218e8ae61c256b7893dfb8b70005c3fe5bf33dde7961d`  
+		Last Modified: Fri, 24 Jun 2016 19:41:40 GMT  
+		Size: 120.0 B
 
 ## `mysql:5.5`
 
 ```console
-$ docker pull mysql@sha256:ef69db35725f399b659fd7b71c62d70792fb3e126219eb96225510c4b900153b
+$ docker pull mysql@sha256:1844ece1dda21da02de3a64be89f019fd9ac46f703b9113f76b58e5286008192
 ```
 
 -	Platforms:
@@ -426,91 +689,88 @@ $ docker pull mysql@sha256:ef69db35725f399b659fd7b71c62d70792fb3e126219eb9622551
 
 ### `mysql:5.5` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **87.1 MB (87088059 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **87.1 MB (87126185 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `846dbd34785d5fccf705e0111843dc611e41706880d13484d6ae249c07dc48ff`
+-	Image ID: `sha256:4cc526aebabe601ed1037e59d1423a8096452f045d194257ad34acc67c40a737`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 02:41:25 GMT
+# Fri, 10 Jun 2016 01:48:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 24 May 2016 02:41:26 GMT
+# Fri, 10 Jun 2016 01:48:40 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 24 May 2016 02:42:30 GMT
+# Fri, 10 Jun 2016 01:50:09 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 24 May 2016 02:42:32 GMT
+# Fri, 10 Jun 2016 01:50:10 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 24 May 2016 03:54:11 GMT
+# Fri, 10 Jun 2016 02:22:30 GMT
 RUN apt-get update && apt-get install -y perl --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 03:54:53 GMT
+# Fri, 10 Jun 2016 02:23:26 GMT
 RUN apt-get update && apt-get install -y libaio1 pwgen && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 03:54:54 GMT
+# Fri, 10 Jun 2016 02:23:26 GMT
 ENV MYSQL_MAJOR=5.5
-# Tue, 24 May 2016 03:54:56 GMT
-ENV MYSQL_VERSION=5.5.49
-# Tue, 24 May 2016 03:56:47 GMT
+# Fri, 10 Jun 2016 02:23:26 GMT
+ENV MYSQL_VERSION=5.5.50
+# Fri, 10 Jun 2016 02:25:59 GMT
 RUN apt-get update && apt-get install -y wget --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& wget "http://dev.mysql.com/get/Downloads/MySQL-$MYSQL_MAJOR/mysql-$MYSQL_VERSION-linux2.6-x86_64.tar.gz" -O mysql.tar.gz 	&& wget "http://mysql.he.net/Downloads/MySQL-$MYSQL_MAJOR/mysql-$MYSQL_VERSION-linux2.6-x86_64.tar.gz.asc" -O mysql.tar.gz.asc 	&& apt-get purge -y --auto-remove wget 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5 	&& gpg --batch --verify mysql.tar.gz.asc mysql.tar.gz 	&& rm -r "$GNUPGHOME" mysql.tar.gz.asc 	&& mkdir /usr/local/mysql 	&& tar -xzf mysql.tar.gz -C /usr/local/mysql --strip-components=1 	&& rm mysql.tar.gz 	&& rm -rf /usr/local/mysql/mysql-test /usr/local/mysql/sql-bench 	&& rm -rf /usr/local/mysql/bin/*-debug /usr/local/mysql/bin/*_embedded 	&& find /usr/local/mysql -type f -name "*.a" -delete 	&& apt-get update && apt-get install -y binutils && rm -rf /var/lib/apt/lists/* 	&& { find /usr/local/mysql -type f -executable -exec strip --strip-all '{}' + || true; } 	&& apt-get purge -y --auto-remove binutils
-# Tue, 24 May 2016 03:56:51 GMT
+# Fri, 10 Jun 2016 02:25:59 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/mysql/bin:/usr/local/mysql/scripts
-# Tue, 24 May 2016 03:56:53 GMT
+# Fri, 10 Jun 2016 02:26:01 GMT
 RUN mkdir -p /etc/mysql/conf.d 	&& { 		echo '[mysqld]'; 		echo 'skip-host-cache'; 		echo 'skip-name-resolve'; 		echo 'datadir = /var/lib/mysql'; 		echo '!includedir /etc/mysql/conf.d/'; 	} > /etc/mysql/my.cnf
-# Tue, 24 May 2016 03:56:55 GMT
+# Fri, 10 Jun 2016 02:26:02 GMT
 RUN mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Tue, 24 May 2016 03:56:56 GMT
+# Fri, 10 Jun 2016 02:26:02 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 24 May 2016 03:56:57 GMT
-COPY file:fb6fb9a72cea0c63705931d302142185a068ca8da7ecf56fc110a9060feb9f86 in /usr/local/bin/
-# Tue, 24 May 2016 03:56:59 GMT
+# Fri, 10 Jun 2016 02:26:02 GMT
+COPY file:4644fd6575750f143d1f4da15c186249cf9b5c36f09400a1e768f16cfa4a6e7b in /usr/local/bin/
+# Fri, 10 Jun 2016 02:26:03 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 24 May 2016 03:57:00 GMT
+# Fri, 10 Jun 2016 02:26:03 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 24 May 2016 03:57:01 GMT
+# Fri, 10 Jun 2016 02:26:04 GMT
 EXPOSE 3306/tcp
-# Tue, 24 May 2016 03:57:02 GMT
+# Fri, 10 Jun 2016 02:26:04 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:dc4b54409dbe97ff3b60100ad3d948556658e0bbd28c1fe22e391d629f611fcb`  
-		Last Modified: Tue, 31 May 2016 21:14:35 GMT  
-		Size: 119.0 B
-	-	`sha256:586629f61f81f103d8e66ad89b907523d80705a190e34d42ae03e239290176b4`  
-		Last Modified: Tue, 31 May 2016 21:14:38 GMT  
-		Size: 1.8 KB (1750 bytes)
-	-	`sha256:1ea53cc4e6ff7cd6a8bc71e0facfe936ed9921252913e3ab081a776103a94af6`  
-		Last Modified: Tue, 31 May 2016 21:14:44 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:89e2627e92010328b8051ad7720317540d59d77ac9b417f2f54bf11f71a110ae`  
+		Last Modified: Fri, 17 Jun 2016 22:47:43 GMT  
+		Size: 2.0 KB (2040 bytes)
+	-	`sha256:76f6983b0fe0c473e96c50a59c7799ca8f932d3a24e408281f9d6fabcb9458f2`  
+		Last Modified: Fri, 17 Jun 2016 22:47:44 GMT  
+		Size: 1.2 MB (1236828 bytes)
+	-	`sha256:653577605512ce8db9be36bdd31f41d6742fa3d627c6876ddb70fe4a84dd365a`  
+		Last Modified: Fri, 17 Jun 2016 22:47:41 GMT  
+		Size: 114.0 B
+	-	`sha256:65dbff149e624054cae557e9613c0132efdccae263e44d012c835ef57aaf205c`  
+		Last Modified: Fri, 24 Jun 2016 19:41:47 GMT  
+		Size: 8.2 MB (8237755 bytes)
+	-	`sha256:850c4735e77756c4b0b7d1245e4f3abed21a98dea9d4abc5bff62ee79d0fd8ef`  
+		Last Modified: Fri, 24 Jun 2016 19:41:43 GMT  
+		Size: 131.1 KB (131055 bytes)
+	-	`sha256:1f093c5e8d08afbe59f0b10638d4d89c3e56457156d39b5cf34ea70791f5a625`  
+		Last Modified: Fri, 24 Jun 2016 19:41:49 GMT  
+		Size: 26.2 MB (26163579 bytes)
+	-	`sha256:ae14fe87d312b761f63fd2c780bbec698610d7a8c54281763011065c01aa3657`  
+		Last Modified: Fri, 24 Jun 2016 19:41:41 GMT  
+		Size: 239.0 B
+	-	`sha256:532e9acf2b87472ac22fa04aa66162a7606fe4d6af988a5db5a4b6598347a5ee`  
+		Last Modified: Fri, 24 Jun 2016 19:41:40 GMT  
 		Size: 173.0 B
-	-	`sha256:6bfeb4cf0b1704500bde946c415743302ebb1cbf2b794137b2cc405bdc91ca3b`  
-		Last Modified: Tue, 31 May 2016 21:14:47 GMT  
-		Size: 238.0 B
-	-	`sha256:ca4716b2a2da73373784110d9e70dfdeae7f2741dbd5c8c5c94a39995887b50a`  
-		Last Modified: Tue, 31 May 2016 21:15:06 GMT  
-		Size: 26.2 MB (26197749 bytes)
-	-	`sha256:b47bda57598f22bcdcd65e6eafefb50646205b756df245b74485485638626ebf`  
-		Last Modified: Tue, 31 May 2016 21:15:14 GMT  
-		Size: 100.8 KB (100822 bytes)
-	-	`sha256:b947959cc91d85273644599f7adb37ebb50bf6b16da14905fb5d2ce3af67b665`  
-		Last Modified: Tue, 31 May 2016 21:15:25 GMT  
-		Size: 8.2 MB (8212720 bytes)
-	-	`sha256:729d0217f8dbf240a446f8667fa265f51e81c561a1a10f3bed108294a1e5c49a`  
-		Last Modified: Wed, 25 May 2016 21:51:03 GMT  
-		Size: 112.0 B
-	-	`sha256:a65f47c75fe37fae466f54ed7c640ca7ead74a42a63a3130f7468e8951c5f701`  
-		Last Modified: Wed, 25 May 2016 21:51:07 GMT  
-		Size: 1.2 MB (1215972 bytes)
-	-	`sha256:260d7505d8f946e326a8c267560b07513be001da009113b6acaa3995b2f8d34c`  
-		Last Modified: Wed, 25 May 2016 21:51:12 GMT  
-		Size: 2.0 KB (2038 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:4796e90cab9886be4489ff440fc519e29308d0630a769041a18dfae755fb4a5b`  
+		Last Modified: Fri, 24 Jun 2016 19:41:40 GMT  
+		Size: 1.7 KB (1747 bytes)
+	-	`sha256:4db10e84fc444b9feb6218e8ae61c256b7893dfb8b70005c3fe5bf33dde7961d`  
+		Last Modified: Fri, 24 Jun 2016 19:41:40 GMT  
+		Size: 120.0 B

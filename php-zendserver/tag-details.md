@@ -16,7 +16,7 @@
 ## `php-zendserver:5.5`
 
 ```console
-$ docker pull php-zendserver@sha256:0fa4395657e54fcbe8ff813197d17770d9e01b5d8e04b58ad6492ee275324859
+$ docker pull php-zendserver@sha256:acfc929713c02fbbbaaf2865d6bdef4ef465fa850602997a05589ec0eb3ae31a
 ```
 
 -	Platforms:
@@ -24,125 +24,122 @@ $ docker pull php-zendserver@sha256:0fa4395657e54fcbe8ff813197d17770d9e01b5d8e04
 
 ### `php-zendserver:5.5` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **320.6 MB (320641735 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **326.8 MB (326752885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `21638574a297ca2c08de992f2171eda4280a862d6636dd4c857c0e2b6c7f7b68`
+-	Image ID: `sha256:e4f6eb579498c8a95a7b1668d5c6a2d4bb26b8749d05553d7d42b7a8cbb945df`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
+# Fri, 24 Jun 2016 17:29:06 GMT
+ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
+# Fri, 24 Jun 2016 17:29:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Fri, 24 Jun 2016 17:29:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Fri, 24 Jun 2016 17:29:13 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Fri, 24 Jun 2016 17:29:14 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 17:08:44 GMT
+# Fri, 24 Jun 2016 19:34:46 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Thu, 05 May 2016 17:08:46 GMT
+# Fri, 24 Jun 2016 19:34:47 GMT
 RUN echo "deb http://repos.zend.com/zend-server/8.5/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Thu, 05 May 2016 17:10:44 GMT
+# Fri, 24 Jun 2016 19:37:40 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-5.5 && /usr/local/zend/bin/zendctl.sh stop
-# Thu, 05 May 2016 17:11:00 GMT
-COPY file:c58578a08fd65d729f61aff3f927d14df510678e25adb01bd1be4372106d951d in /etc/
-# Thu, 05 May 2016 17:11:00 GMT
+# Fri, 24 Jun 2016 19:37:42 GMT
+COPY file:edcfdd2c9dca579cd1b5a9a1dce27ec59475c579a934274dc3855efd9a8e7c1e in /etc/
+# Fri, 24 Jun 2016 19:37:42 GMT
 ENV ZS_INIT_VERSION=0.2
-# Thu, 05 May 2016 17:11:01 GMT
+# Fri, 24 Jun 2016 19:37:43 GMT
 ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6932
-# Thu, 05 May 2016 17:11:15 GMT
+# Fri, 24 Jun 2016 19:38:04 GMT
 RUN apt-get install -y curl
-# Thu, 05 May 2016 17:11:16 GMT
+# Fri, 24 Jun 2016 19:38:06 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Thu, 05 May 2016 17:11:17 GMT
+# Fri, 24 Jun 2016 19:38:06 GMT
 WORKDIR /usr/local/zs-init
-# Thu, 05 May 2016 17:11:23 GMT
+# Fri, 24 Jun 2016 19:38:12 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Thu, 05 May 2016 17:12:17 GMT
+# Fri, 24 Jun 2016 19:39:07 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Thu, 05 May 2016 17:12:18 GMT
-COPY dir:b93190fdaa5949e0251d7191975d521b47306352af21835e195923d6b1c2ef70 in /usr/local/bin
-# Thu, 05 May 2016 17:12:18 GMT
-COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /usr/local/zend/var/plugins/
-# Thu, 05 May 2016 17:12:20 GMT
+# Fri, 24 Jun 2016 19:39:08 GMT
+COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin
+# Fri, 24 Jun 2016 19:39:09 GMT
+COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/
+# Fri, 24 Jun 2016 19:39:10 GMT
 RUN rm /var/www/html/index.html
-# Thu, 05 May 2016 17:12:21 GMT
-COPY dir:58f81ce7769099822a16db14dd4168ec8a58f6e744eceea4eb4a7f924b4bf4e4 in /var/www/html
-# Thu, 05 May 2016 17:12:21 GMT
+# Fri, 24 Jun 2016 19:39:11 GMT
+COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html
+# Fri, 24 Jun 2016 19:39:11 GMT
 EXPOSE 80/tcp
-# Thu, 05 May 2016 17:12:22 GMT
+# Fri, 24 Jun 2016 19:39:12 GMT
 EXPOSE 443/tcp
-# Thu, 05 May 2016 17:12:23 GMT
+# Fri, 24 Jun 2016 19:39:12 GMT
 EXPOSE 10081/tcp
-# Thu, 05 May 2016 17:12:23 GMT
+# Fri, 24 Jun 2016 19:39:13 GMT
 EXPOSE 10082/tcp
-# Thu, 05 May 2016 17:12:24 GMT
+# Fri, 24 Jun 2016 19:39:13 GMT
 WORKDIR /var/www/html
-# Thu, 05 May 2016 17:12:24 GMT
+# Fri, 24 Jun 2016 19:39:14 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:ce522d27281ed98fb3da109f17584ee766791b86c5e6b8f0de38241d2e8c1f94`  
-		Last Modified: Fri, 06 May 2016 21:02:55 GMT  
-		Size: 1.2 KB (1240 bytes)
-	-	`sha256:e1ea67a8a1a911ed234b8ac621f30faa37499ee531398dc01b0e662535456270`  
-		Last Modified: Fri, 06 May 2016 21:02:58 GMT  
-		Size: 169.0 B
-	-	`sha256:aa51b680cc06a3126e57ce0f29b67cdb7adf1a5a557dd605ca1fdee25ed38160`  
-		Last Modified: Fri, 06 May 2016 21:03:18 GMT  
-		Size: 2.5 KB (2513 bytes)
-	-	`sha256:0c580b90d702cdaf76887ce75a3a7a17dcaecc7d69b589892e08a9a828d7504e`  
-		Last Modified: Fri, 06 May 2016 21:03:22 GMT  
-		Size: 13.1 KB (13121 bytes)
-	-	`sha256:59c81374116a9165419e9e9eeabb6f786f1389acb9b3b9b016d4af3b7be098cf`  
-		Last Modified: Fri, 06 May 2016 21:03:31 GMT  
-		Size: 8.3 MB (8348946 bytes)
-	-	`sha256:1365480a25f76acefc35b4953d1899e1af36a91254d83d325e70260f0f9254a4`  
-		Last Modified: Fri, 06 May 2016 21:03:35 GMT  
-		Size: 427.3 KB (427297 bytes)
-	-	`sha256:edb97988924e55752c5a30ec0c8654d148244d23cdf76852eb7e0c745249df10`  
-		Last Modified: Fri, 06 May 2016 21:03:42 GMT  
-		Size: 15.6 KB (15596 bytes)
-	-	`sha256:742219e12d4e9635225408cb71fc807d80d7714c34e66ae24239292c7d03f137`  
-		Last Modified: Fri, 06 May 2016 21:03:46 GMT  
-		Size: 471.4 KB (471417 bytes)
-	-	`sha256:744c25c0e878f4c8717450ab9e36f293355bfbfd9b8e76780f6d175d3e77f061`  
-		Last Modified: Fri, 06 May 2016 21:03:57 GMT  
-		Size: 222.0 B
-	-	`sha256:e03274565d4db74366159321baabaabe47635b100d49db7b74cfc1ac35eea7a8`  
-		Last Modified: Fri, 06 May 2016 21:05:44 GMT  
-		Size: 245.6 MB (245582125 bytes)
-	-	`sha256:4e3718fa10f39f81b662588da2602579a506af51468d2c65e1295a069f1bc861`  
-		Last Modified: Fri, 06 May 2016 21:05:56 GMT  
-		Size: 230.0 B
-	-	`sha256:b99c70b031bc42d93c00dfb62e833f05430caafc2416b9fd9d3f5c3042a9aca0`  
-		Last Modified: Fri, 06 May 2016 21:06:02 GMT  
-		Size: 13.1 KB (13054 bytes)
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
+	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
+		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
+		Size: 65.7 MB (65699368 bytes)
+	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 101.4 KB (101415 bytes)
+	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
 		Size: 365.0 B
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
+	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 681.0 B
+	-	`sha256:c2a492aae9d28367ca76cb2767ad428fb4d31b1dc806ab6600f250ee66646a18`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 13.1 KB (13055 bytes)
+	-	`sha256:bd9f3a8f5b862831afd07ca04168f430d7dfd183b04a0e68126562af571580cd`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 229.0 B
+	-	`sha256:2e42c921c86de1dafc8feb4aeb6abaa62807862b75c284fb26a8cc4162723e68`  
+		Last Modified: Fri, 24 Jun 2016 19:40:47 GMT  
+		Size: 251.2 MB (251155547 bytes)
+	-	`sha256:cc1d3c411adf663d3cdf450bb5f217bc4e7320caf748eb0024d1f5ca3c3cc6fa`  
+		Last Modified: Fri, 24 Jun 2016 19:39:23 GMT  
+		Size: 217.0 B
+	-	`sha256:35b11bafc07ef9794e0a5e6b16420d0034b34fcd0f32877cc999e9edb23340d8`  
+		Last Modified: Fri, 24 Jun 2016 19:39:23 GMT  
+		Size: 492.7 KB (492742 bytes)
+	-	`sha256:dbcfad34ace4f62817eb54ce996eba6ea3b97f8033704619f972566c24ebe379`  
+		Last Modified: Fri, 24 Jun 2016 19:39:23 GMT  
+		Size: 15.6 KB (15589 bytes)
+	-	`sha256:201c0fe4906c897f0f87818e2d99961dbcee06bd9e58f855ddab59e85a808f75`  
+		Last Modified: Fri, 24 Jun 2016 19:39:23 GMT  
+		Size: 437.3 KB (437322 bytes)
+	-	`sha256:d0390e0de3169598d49e7b52739ba1f61249e6b488049440672542f559f0679d`  
+		Last Modified: Fri, 24 Jun 2016 19:39:23 GMT  
+		Size: 8.8 MB (8819343 bytes)
+	-	`sha256:6c9520708a77f1eb95ac2fccc10196240cd1a6e1fd952cb2070fb1df5a4e047f`  
+		Last Modified: Fri, 24 Jun 2016 19:39:20 GMT  
+		Size: 13.1 KB (13106 bytes)
+	-	`sha256:bcef4d5be9429bb8665bc66afeef83d41f92ad6b7f38e5c5df89c130c6b03ef4`  
+		Last Modified: Fri, 24 Jun 2016 19:39:21 GMT  
+		Size: 2.5 KB (2504 bytes)
+	-	`sha256:af501dd81182baffdf4eeb1fed3c8644f400318c914825ae8ea189272e117e3f`  
+		Last Modified: Fri, 24 Jun 2016 19:39:20 GMT  
+		Size: 164.0 B
+	-	`sha256:fd37c3b63cd21e9f1d08a5010d5d1604156c7ab8639c6f8d8f0db78fa364c27c`  
+		Last Modified: Fri, 24 Jun 2016 19:39:20 GMT  
+		Size: 1.2 KB (1238 bytes)
 
 ## `php-zendserver:8.5-php5.5`
 
 ```console
-$ docker pull php-zendserver@sha256:4e3331edc328430997e826c8b3891a70d2e1bc49964a7ef41460d29d9491b162
+$ docker pull php-zendserver@sha256:acfc929713c02fbbbaaf2865d6bdef4ef465fa850602997a05589ec0eb3ae31a
 ```
 
 -	Platforms:
@@ -150,125 +147,122 @@ $ docker pull php-zendserver@sha256:4e3331edc328430997e826c8b3891a70d2e1bc49964a
 
 ### `php-zendserver:8.5-php5.5` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **320.6 MB (320641735 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **326.8 MB (326752885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `21638574a297ca2c08de992f2171eda4280a862d6636dd4c857c0e2b6c7f7b68`
+-	Image ID: `sha256:e4f6eb579498c8a95a7b1668d5c6a2d4bb26b8749d05553d7d42b7a8cbb945df`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
+# Fri, 24 Jun 2016 17:29:06 GMT
+ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
+# Fri, 24 Jun 2016 17:29:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Fri, 24 Jun 2016 17:29:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Fri, 24 Jun 2016 17:29:13 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Fri, 24 Jun 2016 17:29:14 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 17:08:44 GMT
+# Fri, 24 Jun 2016 19:34:46 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Thu, 05 May 2016 17:08:46 GMT
+# Fri, 24 Jun 2016 19:34:47 GMT
 RUN echo "deb http://repos.zend.com/zend-server/8.5/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Thu, 05 May 2016 17:10:44 GMT
+# Fri, 24 Jun 2016 19:37:40 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-5.5 && /usr/local/zend/bin/zendctl.sh stop
-# Thu, 05 May 2016 17:11:00 GMT
-COPY file:c58578a08fd65d729f61aff3f927d14df510678e25adb01bd1be4372106d951d in /etc/
-# Thu, 05 May 2016 17:11:00 GMT
+# Fri, 24 Jun 2016 19:37:42 GMT
+COPY file:edcfdd2c9dca579cd1b5a9a1dce27ec59475c579a934274dc3855efd9a8e7c1e in /etc/
+# Fri, 24 Jun 2016 19:37:42 GMT
 ENV ZS_INIT_VERSION=0.2
-# Thu, 05 May 2016 17:11:01 GMT
+# Fri, 24 Jun 2016 19:37:43 GMT
 ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6932
-# Thu, 05 May 2016 17:11:15 GMT
+# Fri, 24 Jun 2016 19:38:04 GMT
 RUN apt-get install -y curl
-# Thu, 05 May 2016 17:11:16 GMT
+# Fri, 24 Jun 2016 19:38:06 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Thu, 05 May 2016 17:11:17 GMT
+# Fri, 24 Jun 2016 19:38:06 GMT
 WORKDIR /usr/local/zs-init
-# Thu, 05 May 2016 17:11:23 GMT
+# Fri, 24 Jun 2016 19:38:12 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Thu, 05 May 2016 17:12:17 GMT
+# Fri, 24 Jun 2016 19:39:07 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Thu, 05 May 2016 17:12:18 GMT
-COPY dir:b93190fdaa5949e0251d7191975d521b47306352af21835e195923d6b1c2ef70 in /usr/local/bin
-# Thu, 05 May 2016 17:12:18 GMT
-COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /usr/local/zend/var/plugins/
-# Thu, 05 May 2016 17:12:20 GMT
+# Fri, 24 Jun 2016 19:39:08 GMT
+COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin
+# Fri, 24 Jun 2016 19:39:09 GMT
+COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/
+# Fri, 24 Jun 2016 19:39:10 GMT
 RUN rm /var/www/html/index.html
-# Thu, 05 May 2016 17:12:21 GMT
-COPY dir:58f81ce7769099822a16db14dd4168ec8a58f6e744eceea4eb4a7f924b4bf4e4 in /var/www/html
-# Thu, 05 May 2016 17:12:21 GMT
+# Fri, 24 Jun 2016 19:39:11 GMT
+COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html
+# Fri, 24 Jun 2016 19:39:11 GMT
 EXPOSE 80/tcp
-# Thu, 05 May 2016 17:12:22 GMT
+# Fri, 24 Jun 2016 19:39:12 GMT
 EXPOSE 443/tcp
-# Thu, 05 May 2016 17:12:23 GMT
+# Fri, 24 Jun 2016 19:39:12 GMT
 EXPOSE 10081/tcp
-# Thu, 05 May 2016 17:12:23 GMT
+# Fri, 24 Jun 2016 19:39:13 GMT
 EXPOSE 10082/tcp
-# Thu, 05 May 2016 17:12:24 GMT
+# Fri, 24 Jun 2016 19:39:13 GMT
 WORKDIR /var/www/html
-# Thu, 05 May 2016 17:12:24 GMT
+# Fri, 24 Jun 2016 19:39:14 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:ce522d27281ed98fb3da109f17584ee766791b86c5e6b8f0de38241d2e8c1f94`  
-		Last Modified: Fri, 06 May 2016 21:02:55 GMT  
-		Size: 1.2 KB (1240 bytes)
-	-	`sha256:e1ea67a8a1a911ed234b8ac621f30faa37499ee531398dc01b0e662535456270`  
-		Last Modified: Fri, 06 May 2016 21:02:58 GMT  
-		Size: 169.0 B
-	-	`sha256:aa51b680cc06a3126e57ce0f29b67cdb7adf1a5a557dd605ca1fdee25ed38160`  
-		Last Modified: Fri, 06 May 2016 21:03:18 GMT  
-		Size: 2.5 KB (2513 bytes)
-	-	`sha256:0c580b90d702cdaf76887ce75a3a7a17dcaecc7d69b589892e08a9a828d7504e`  
-		Last Modified: Fri, 06 May 2016 21:03:22 GMT  
-		Size: 13.1 KB (13121 bytes)
-	-	`sha256:59c81374116a9165419e9e9eeabb6f786f1389acb9b3b9b016d4af3b7be098cf`  
-		Last Modified: Fri, 06 May 2016 21:03:31 GMT  
-		Size: 8.3 MB (8348946 bytes)
-	-	`sha256:1365480a25f76acefc35b4953d1899e1af36a91254d83d325e70260f0f9254a4`  
-		Last Modified: Fri, 06 May 2016 21:03:35 GMT  
-		Size: 427.3 KB (427297 bytes)
-	-	`sha256:edb97988924e55752c5a30ec0c8654d148244d23cdf76852eb7e0c745249df10`  
-		Last Modified: Fri, 06 May 2016 21:03:42 GMT  
-		Size: 15.6 KB (15596 bytes)
-	-	`sha256:742219e12d4e9635225408cb71fc807d80d7714c34e66ae24239292c7d03f137`  
-		Last Modified: Fri, 06 May 2016 21:03:46 GMT  
-		Size: 471.4 KB (471417 bytes)
-	-	`sha256:744c25c0e878f4c8717450ab9e36f293355bfbfd9b8e76780f6d175d3e77f061`  
-		Last Modified: Fri, 06 May 2016 21:03:57 GMT  
-		Size: 222.0 B
-	-	`sha256:e03274565d4db74366159321baabaabe47635b100d49db7b74cfc1ac35eea7a8`  
-		Last Modified: Fri, 06 May 2016 21:05:44 GMT  
-		Size: 245.6 MB (245582125 bytes)
-	-	`sha256:4e3718fa10f39f81b662588da2602579a506af51468d2c65e1295a069f1bc861`  
-		Last Modified: Fri, 06 May 2016 21:05:56 GMT  
-		Size: 230.0 B
-	-	`sha256:b99c70b031bc42d93c00dfb62e833f05430caafc2416b9fd9d3f5c3042a9aca0`  
-		Last Modified: Fri, 06 May 2016 21:06:02 GMT  
-		Size: 13.1 KB (13054 bytes)
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
+	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
+		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
+		Size: 65.7 MB (65699368 bytes)
+	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 101.4 KB (101415 bytes)
+	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
 		Size: 365.0 B
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
+	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 681.0 B
+	-	`sha256:c2a492aae9d28367ca76cb2767ad428fb4d31b1dc806ab6600f250ee66646a18`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 13.1 KB (13055 bytes)
+	-	`sha256:bd9f3a8f5b862831afd07ca04168f430d7dfd183b04a0e68126562af571580cd`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 229.0 B
+	-	`sha256:2e42c921c86de1dafc8feb4aeb6abaa62807862b75c284fb26a8cc4162723e68`  
+		Last Modified: Fri, 24 Jun 2016 19:40:47 GMT  
+		Size: 251.2 MB (251155547 bytes)
+	-	`sha256:cc1d3c411adf663d3cdf450bb5f217bc4e7320caf748eb0024d1f5ca3c3cc6fa`  
+		Last Modified: Fri, 24 Jun 2016 19:39:23 GMT  
+		Size: 217.0 B
+	-	`sha256:35b11bafc07ef9794e0a5e6b16420d0034b34fcd0f32877cc999e9edb23340d8`  
+		Last Modified: Fri, 24 Jun 2016 19:39:23 GMT  
+		Size: 492.7 KB (492742 bytes)
+	-	`sha256:dbcfad34ace4f62817eb54ce996eba6ea3b97f8033704619f972566c24ebe379`  
+		Last Modified: Fri, 24 Jun 2016 19:39:23 GMT  
+		Size: 15.6 KB (15589 bytes)
+	-	`sha256:201c0fe4906c897f0f87818e2d99961dbcee06bd9e58f855ddab59e85a808f75`  
+		Last Modified: Fri, 24 Jun 2016 19:39:23 GMT  
+		Size: 437.3 KB (437322 bytes)
+	-	`sha256:d0390e0de3169598d49e7b52739ba1f61249e6b488049440672542f559f0679d`  
+		Last Modified: Fri, 24 Jun 2016 19:39:23 GMT  
+		Size: 8.8 MB (8819343 bytes)
+	-	`sha256:6c9520708a77f1eb95ac2fccc10196240cd1a6e1fd952cb2070fb1df5a4e047f`  
+		Last Modified: Fri, 24 Jun 2016 19:39:20 GMT  
+		Size: 13.1 KB (13106 bytes)
+	-	`sha256:bcef4d5be9429bb8665bc66afeef83d41f92ad6b7f38e5c5df89c130c6b03ef4`  
+		Last Modified: Fri, 24 Jun 2016 19:39:21 GMT  
+		Size: 2.5 KB (2504 bytes)
+	-	`sha256:af501dd81182baffdf4eeb1fed3c8644f400318c914825ae8ea189272e117e3f`  
+		Last Modified: Fri, 24 Jun 2016 19:39:20 GMT  
+		Size: 164.0 B
+	-	`sha256:fd37c3b63cd21e9f1d08a5010d5d1604156c7ab8639c6f8d8f0db78fa364c27c`  
+		Last Modified: Fri, 24 Jun 2016 19:39:20 GMT  
+		Size: 1.2 KB (1238 bytes)
 
 ## `php-zendserver:5.6`
 
 ```console
-$ docker pull php-zendserver@sha256:dd81f939426eb002d1a164c3734e221d6e88c48017d7addff5a71728cc18830d
+$ docker pull php-zendserver@sha256:be596d91d3d0c3104dcde61b90c2ebfb5352ad8e411982a2b230095b92712a61
 ```
 
 -	Platforms:
@@ -276,152 +270,122 @@ $ docker pull php-zendserver@sha256:dd81f939426eb002d1a164c3734e221d6e88c48017d7
 
 ### `php-zendserver:5.6` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.5 MB (328544315 bytes)**  
+-	Total Size: **326.9 MB (326865496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:322a6ac7f9136345c9164234668f8c07b909c09a53a78e34c209df1362750fde`
+-	Image ID: `sha256:6a2e1527604e2914cfe8a08feadc33a9ea421b265e83de506071206f3b92607e`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
+# Fri, 24 Jun 2016 17:29:06 GMT
+ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
+# Fri, 24 Jun 2016 17:29:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Fri, 24 Jun 2016 17:29:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Fri, 24 Jun 2016 17:29:13 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Fri, 24 Jun 2016 17:29:14 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 17:08:44 GMT
+# Fri, 24 Jun 2016 19:34:46 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Thu, 05 May 2016 17:08:46 GMT
+# Fri, 24 Jun 2016 19:34:47 GMT
 RUN echo "deb http://repos.zend.com/zend-server/8.5/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Thu, 05 May 2016 17:16:05 GMT
+# Fri, 24 Jun 2016 19:47:54 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-5.6 && /usr/local/zend/bin/zendctl.sh stop
-# Thu, 05 May 2016 17:16:15 GMT
-COPY file:c58578a08fd65d729f61aff3f927d14df510678e25adb01bd1be4372106d951d in /etc/
-# Thu, 05 May 2016 17:16:16 GMT
+# Fri, 24 Jun 2016 19:47:56 GMT
+COPY file:edcfdd2c9dca579cd1b5a9a1dce27ec59475c579a934274dc3855efd9a8e7c1e in /etc/
+# Fri, 24 Jun 2016 19:47:56 GMT
 ENV ZS_INIT_VERSION=0.2
-# Thu, 05 May 2016 17:16:17 GMT
+# Fri, 24 Jun 2016 19:47:57 GMT
 ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6932
-# Thu, 05 May 2016 17:16:31 GMT
+# Fri, 24 Jun 2016 19:48:18 GMT
 RUN apt-get install -y curl
-# Thu, 05 May 2016 17:16:33 GMT
+# Fri, 24 Jun 2016 19:48:20 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Thu, 05 May 2016 17:16:34 GMT
+# Fri, 24 Jun 2016 19:48:20 GMT
 WORKDIR /usr/local/zs-init
-# Thu, 05 May 2016 17:16:40 GMT
+# Fri, 24 Jun 2016 19:48:26 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Thu, 05 May 2016 17:17:34 GMT
+# Fri, 24 Jun 2016 19:49:21 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Thu, 05 May 2016 17:17:38 GMT
-COPY dir:b93190fdaa5949e0251d7191975d521b47306352af21835e195923d6b1c2ef70 in /usr/local/bin
-# Thu, 05 May 2016 17:17:39 GMT
-COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /usr/local/zend/var/plugins/
-# Thu, 05 May 2016 17:17:41 GMT
+# Fri, 24 Jun 2016 19:49:22 GMT
+COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin
+# Fri, 24 Jun 2016 19:49:23 GMT
+COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/
+# Fri, 24 Jun 2016 19:49:24 GMT
 RUN rm /var/www/html/index.html
-# Thu, 05 May 2016 17:17:42 GMT
-COPY dir:58f81ce7769099822a16db14dd4168ec8a58f6e744eceea4eb4a7f924b4bf4e4 in /var/www/html
-# Thu, 05 May 2016 17:17:43 GMT
+# Fri, 24 Jun 2016 19:49:25 GMT
+COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html
+# Fri, 24 Jun 2016 19:49:25 GMT
 EXPOSE 80/tcp
-# Thu, 05 May 2016 17:17:44 GMT
+# Fri, 24 Jun 2016 19:49:26 GMT
 EXPOSE 443/tcp
-# Thu, 05 May 2016 17:17:44 GMT
+# Fri, 24 Jun 2016 19:49:26 GMT
 EXPOSE 10081/tcp
-# Thu, 05 May 2016 17:17:45 GMT
+# Fri, 24 Jun 2016 19:49:27 GMT
 EXPOSE 10082/tcp
-# Thu, 05 May 2016 17:17:46 GMT
+# Fri, 24 Jun 2016 19:49:27 GMT
 WORKDIR /var/www/html
-# Thu, 05 May 2016 17:17:47 GMT
+# Fri, 24 Jun 2016 19:49:28 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
+	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
+		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
+		Size: 65.7 MB (65699368 bytes)
+	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 101.4 KB (101415 bytes)
+	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
 		Size: 365.0 B
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b99c70b031bc42d93c00dfb62e833f05430caafc2416b9fd9d3f5c3042a9aca0`  
-		Last Modified: Fri, 06 May 2016 21:06:02 GMT  
-		Size: 13.1 KB (13054 bytes)
-	-	`sha256:4e3718fa10f39f81b662588da2602579a506af51468d2c65e1295a069f1bc861`  
-		Last Modified: Fri, 06 May 2016 21:05:56 GMT  
-		Size: 230.0 B
-	-	`sha256:ce89803cfd8e4f3d4967c6e0bed6ad16cbe90238177347096946dd4326f034e2`  
-		Last Modified: Fri, 06 May 2016 21:11:13 GMT  
-		Size: 253.5 MB (253482259 bytes)
-	-	`sha256:6da0d809a255eca838a37dbba55b27e7c99101e6b354fbb0aec7ebe4dd669380`  
-		Last Modified: Fri, 06 May 2016 21:09:18 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:2b72e728c6993bf00c55ae1859eb41433a37b728e356b38be67b958faa98c995`  
-		Last Modified: Fri, 06 May 2016 21:09:06 GMT  
-		Size: 473.4 KB (473426 bytes)
-	-	`sha256:386a168793bc1a216d8c8601df6ebdd941cd5bd44ab287b0a6bf15e872968d55`  
-		Last Modified: Fri, 06 May 2016 21:08:32 GMT  
-		Size: 15.6 KB (15595 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:ec17e5363e487d1e2fc9e8a7c67b7e9c4394962826456ce64cf7531ccd771fed`  
-		Last Modified: Fri, 06 May 2016 21:08:25 GMT  
-		Size: 427.3 KB (427298 bytes)
-	-	`sha256:90103f9a5e989526ca21429fd6e3201462d6a0a5e48bcbab3f12f49370810324`  
-		Last Modified: Fri, 06 May 2016 21:08:19 GMT  
-		Size: 8.3 MB (8349103 bytes)
-	-	`sha256:a3a1aafd7e57eb392e80794eaf5d9465aa4187aadc0cf9762de1827a73054e46`  
-		Last Modified: Fri, 06 May 2016 21:08:10 GMT  
-		Size: 13.1 KB (13118 bytes)
-	-	`sha256:980b2dd9374567995ecb2bd6f513cea0f665a5ecd9c0282255eab03792e51dc5`  
-		Last Modified: Fri, 06 May 2016 21:08:05 GMT  
-		Size: 2.5 KB (2514 bytes)
-	-	`sha256:b297607ba6d98d75ccf99ead222995eea4d557f7de858aa659a78efcce25805b`  
-		Last Modified: Fri, 06 May 2016 21:07:32 GMT  
-		Size: 167.0 B
-	-	`sha256:4545b5a271eb013f2dff5c82a38f789d187c04bab192b2d2638251534f54273b`  
-		Last Modified: Fri, 06 May 2016 21:07:30 GMT  
-		Size: 1.2 KB (1238 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 681.0 B
+	-	`sha256:c2a492aae9d28367ca76cb2767ad428fb4d31b1dc806ab6600f250ee66646a18`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 13.1 KB (13055 bytes)
+	-	`sha256:bd9f3a8f5b862831afd07ca04168f430d7dfd183b04a0e68126562af571580cd`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 229.0 B
+	-	`sha256:702b208a2007519b09df2042a99d5ebf9a231563d7e76b94b881eb5e3b9ba781`  
+		Last Modified: Fri, 24 Jun 2016 19:50:31 GMT  
+		Size: 251.3 MB (251266279 bytes)
+	-	`sha256:d12537b226b66d9bb01683793d6bcb22dca27212ba5f28a34ed236f15835576f`  
+		Last Modified: Fri, 24 Jun 2016 19:49:38 GMT  
+		Size: 218.0 B
+	-	`sha256:2af269579c3c64b49f0dcd68e9a2bb7cde39de50b2f7132d2f72822968e01ca2`  
+		Last Modified: Fri, 24 Jun 2016 19:49:38 GMT  
+		Size: 494.6 KB (494639 bytes)
+	-	`sha256:7f0111020b5381bfa47be6fb9042ea377d5bcdcf46e1fe4e67f00f700ffb7df2`  
+		Last Modified: Fri, 24 Jun 2016 19:49:37 GMT  
+		Size: 15.6 KB (15594 bytes)
+	-	`sha256:94ddae400f98648683e38e06372891b8eb3d310ef03e1545480cfb7e7696e20e`  
+		Last Modified: Fri, 24 Jun 2016 19:49:37 GMT  
+		Size: 437.3 KB (437326 bytes)
+	-	`sha256:d16784178f1247aa05c3e56c86ab5e1bcd39014b1c11a045601ab77f0e448807`  
+		Last Modified: Fri, 24 Jun 2016 19:49:38 GMT  
+		Size: 8.8 MB (8819315 bytes)
+	-	`sha256:c91d23549e5d8f75716ab048e989f577e7bffd7281b5f6e1edc3cc339552c728`  
+		Last Modified: Fri, 24 Jun 2016 19:49:35 GMT  
+		Size: 13.1 KB (13108 bytes)
+	-	`sha256:5a4c1da7494f91db9d256f9822c693c5288f325b776dcde7a20605d915fd229e`  
+		Last Modified: Fri, 24 Jun 2016 19:49:34 GMT  
+		Size: 2.5 KB (2503 bytes)
+	-	`sha256:03a67423d156699898f39546147b1ac22bde1afe44dc2e638d59a057a84b000b`  
+		Last Modified: Fri, 24 Jun 2016 19:49:35 GMT  
+		Size: 165.0 B
+	-	`sha256:064d49340c596e92215af3d46224e22db943f556a7201f5af5ca343b3bb34501`  
+		Last Modified: Fri, 24 Jun 2016 19:49:35 GMT  
+		Size: 1.2 KB (1236 bytes)
 
 ## `php-zendserver:8.5-php5.6`
 
 ```console
-$ docker pull php-zendserver@sha256:dd81f939426eb002d1a164c3734e221d6e88c48017d7addff5a71728cc18830d
+$ docker pull php-zendserver@sha256:be596d91d3d0c3104dcde61b90c2ebfb5352ad8e411982a2b230095b92712a61
 ```
 
 -	Platforms:
@@ -429,152 +393,122 @@ $ docker pull php-zendserver@sha256:dd81f939426eb002d1a164c3734e221d6e88c48017d7
 
 ### `php-zendserver:8.5-php5.6` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.5 MB (328544315 bytes)**  
+-	Total Size: **326.9 MB (326865496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:322a6ac7f9136345c9164234668f8c07b909c09a53a78e34c209df1362750fde`
+-	Image ID: `sha256:6a2e1527604e2914cfe8a08feadc33a9ea421b265e83de506071206f3b92607e`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
+# Fri, 24 Jun 2016 17:29:06 GMT
+ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
+# Fri, 24 Jun 2016 17:29:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Fri, 24 Jun 2016 17:29:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Fri, 24 Jun 2016 17:29:13 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Fri, 24 Jun 2016 17:29:14 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 17:08:44 GMT
+# Fri, 24 Jun 2016 19:34:46 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Thu, 05 May 2016 17:08:46 GMT
+# Fri, 24 Jun 2016 19:34:47 GMT
 RUN echo "deb http://repos.zend.com/zend-server/8.5/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Thu, 05 May 2016 17:16:05 GMT
+# Fri, 24 Jun 2016 19:47:54 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-5.6 && /usr/local/zend/bin/zendctl.sh stop
-# Thu, 05 May 2016 17:16:15 GMT
-COPY file:c58578a08fd65d729f61aff3f927d14df510678e25adb01bd1be4372106d951d in /etc/
-# Thu, 05 May 2016 17:16:16 GMT
+# Fri, 24 Jun 2016 19:47:56 GMT
+COPY file:edcfdd2c9dca579cd1b5a9a1dce27ec59475c579a934274dc3855efd9a8e7c1e in /etc/
+# Fri, 24 Jun 2016 19:47:56 GMT
 ENV ZS_INIT_VERSION=0.2
-# Thu, 05 May 2016 17:16:17 GMT
+# Fri, 24 Jun 2016 19:47:57 GMT
 ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6932
-# Thu, 05 May 2016 17:16:31 GMT
+# Fri, 24 Jun 2016 19:48:18 GMT
 RUN apt-get install -y curl
-# Thu, 05 May 2016 17:16:33 GMT
+# Fri, 24 Jun 2016 19:48:20 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Thu, 05 May 2016 17:16:34 GMT
+# Fri, 24 Jun 2016 19:48:20 GMT
 WORKDIR /usr/local/zs-init
-# Thu, 05 May 2016 17:16:40 GMT
+# Fri, 24 Jun 2016 19:48:26 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Thu, 05 May 2016 17:17:34 GMT
+# Fri, 24 Jun 2016 19:49:21 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Thu, 05 May 2016 17:17:38 GMT
-COPY dir:b93190fdaa5949e0251d7191975d521b47306352af21835e195923d6b1c2ef70 in /usr/local/bin
-# Thu, 05 May 2016 17:17:39 GMT
-COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /usr/local/zend/var/plugins/
-# Thu, 05 May 2016 17:17:41 GMT
+# Fri, 24 Jun 2016 19:49:22 GMT
+COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin
+# Fri, 24 Jun 2016 19:49:23 GMT
+COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/
+# Fri, 24 Jun 2016 19:49:24 GMT
 RUN rm /var/www/html/index.html
-# Thu, 05 May 2016 17:17:42 GMT
-COPY dir:58f81ce7769099822a16db14dd4168ec8a58f6e744eceea4eb4a7f924b4bf4e4 in /var/www/html
-# Thu, 05 May 2016 17:17:43 GMT
+# Fri, 24 Jun 2016 19:49:25 GMT
+COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html
+# Fri, 24 Jun 2016 19:49:25 GMT
 EXPOSE 80/tcp
-# Thu, 05 May 2016 17:17:44 GMT
+# Fri, 24 Jun 2016 19:49:26 GMT
 EXPOSE 443/tcp
-# Thu, 05 May 2016 17:17:44 GMT
+# Fri, 24 Jun 2016 19:49:26 GMT
 EXPOSE 10081/tcp
-# Thu, 05 May 2016 17:17:45 GMT
+# Fri, 24 Jun 2016 19:49:27 GMT
 EXPOSE 10082/tcp
-# Thu, 05 May 2016 17:17:46 GMT
+# Fri, 24 Jun 2016 19:49:27 GMT
 WORKDIR /var/www/html
-# Thu, 05 May 2016 17:17:47 GMT
+# Fri, 24 Jun 2016 19:49:28 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
+	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
+		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
+		Size: 65.7 MB (65699368 bytes)
+	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 101.4 KB (101415 bytes)
+	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
 		Size: 365.0 B
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b99c70b031bc42d93c00dfb62e833f05430caafc2416b9fd9d3f5c3042a9aca0`  
-		Last Modified: Fri, 06 May 2016 21:06:02 GMT  
-		Size: 13.1 KB (13054 bytes)
-	-	`sha256:4e3718fa10f39f81b662588da2602579a506af51468d2c65e1295a069f1bc861`  
-		Last Modified: Fri, 06 May 2016 21:05:56 GMT  
-		Size: 230.0 B
-	-	`sha256:ce89803cfd8e4f3d4967c6e0bed6ad16cbe90238177347096946dd4326f034e2`  
-		Last Modified: Fri, 06 May 2016 21:11:13 GMT  
-		Size: 253.5 MB (253482259 bytes)
-	-	`sha256:6da0d809a255eca838a37dbba55b27e7c99101e6b354fbb0aec7ebe4dd669380`  
-		Last Modified: Fri, 06 May 2016 21:09:18 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:2b72e728c6993bf00c55ae1859eb41433a37b728e356b38be67b958faa98c995`  
-		Last Modified: Fri, 06 May 2016 21:09:06 GMT  
-		Size: 473.4 KB (473426 bytes)
-	-	`sha256:386a168793bc1a216d8c8601df6ebdd941cd5bd44ab287b0a6bf15e872968d55`  
-		Last Modified: Fri, 06 May 2016 21:08:32 GMT  
-		Size: 15.6 KB (15595 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:ec17e5363e487d1e2fc9e8a7c67b7e9c4394962826456ce64cf7531ccd771fed`  
-		Last Modified: Fri, 06 May 2016 21:08:25 GMT  
-		Size: 427.3 KB (427298 bytes)
-	-	`sha256:90103f9a5e989526ca21429fd6e3201462d6a0a5e48bcbab3f12f49370810324`  
-		Last Modified: Fri, 06 May 2016 21:08:19 GMT  
-		Size: 8.3 MB (8349103 bytes)
-	-	`sha256:a3a1aafd7e57eb392e80794eaf5d9465aa4187aadc0cf9762de1827a73054e46`  
-		Last Modified: Fri, 06 May 2016 21:08:10 GMT  
-		Size: 13.1 KB (13118 bytes)
-	-	`sha256:980b2dd9374567995ecb2bd6f513cea0f665a5ecd9c0282255eab03792e51dc5`  
-		Last Modified: Fri, 06 May 2016 21:08:05 GMT  
-		Size: 2.5 KB (2514 bytes)
-	-	`sha256:b297607ba6d98d75ccf99ead222995eea4d557f7de858aa659a78efcce25805b`  
-		Last Modified: Fri, 06 May 2016 21:07:32 GMT  
-		Size: 167.0 B
-	-	`sha256:4545b5a271eb013f2dff5c82a38f789d187c04bab192b2d2638251534f54273b`  
-		Last Modified: Fri, 06 May 2016 21:07:30 GMT  
-		Size: 1.2 KB (1238 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 681.0 B
+	-	`sha256:c2a492aae9d28367ca76cb2767ad428fb4d31b1dc806ab6600f250ee66646a18`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 13.1 KB (13055 bytes)
+	-	`sha256:bd9f3a8f5b862831afd07ca04168f430d7dfd183b04a0e68126562af571580cd`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 229.0 B
+	-	`sha256:702b208a2007519b09df2042a99d5ebf9a231563d7e76b94b881eb5e3b9ba781`  
+		Last Modified: Fri, 24 Jun 2016 19:50:31 GMT  
+		Size: 251.3 MB (251266279 bytes)
+	-	`sha256:d12537b226b66d9bb01683793d6bcb22dca27212ba5f28a34ed236f15835576f`  
+		Last Modified: Fri, 24 Jun 2016 19:49:38 GMT  
+		Size: 218.0 B
+	-	`sha256:2af269579c3c64b49f0dcd68e9a2bb7cde39de50b2f7132d2f72822968e01ca2`  
+		Last Modified: Fri, 24 Jun 2016 19:49:38 GMT  
+		Size: 494.6 KB (494639 bytes)
+	-	`sha256:7f0111020b5381bfa47be6fb9042ea377d5bcdcf46e1fe4e67f00f700ffb7df2`  
+		Last Modified: Fri, 24 Jun 2016 19:49:37 GMT  
+		Size: 15.6 KB (15594 bytes)
+	-	`sha256:94ddae400f98648683e38e06372891b8eb3d310ef03e1545480cfb7e7696e20e`  
+		Last Modified: Fri, 24 Jun 2016 19:49:37 GMT  
+		Size: 437.3 KB (437326 bytes)
+	-	`sha256:d16784178f1247aa05c3e56c86ab5e1bcd39014b1c11a045601ab77f0e448807`  
+		Last Modified: Fri, 24 Jun 2016 19:49:38 GMT  
+		Size: 8.8 MB (8819315 bytes)
+	-	`sha256:c91d23549e5d8f75716ab048e989f577e7bffd7281b5f6e1edc3cc339552c728`  
+		Last Modified: Fri, 24 Jun 2016 19:49:35 GMT  
+		Size: 13.1 KB (13108 bytes)
+	-	`sha256:5a4c1da7494f91db9d256f9822c693c5288f325b776dcde7a20605d915fd229e`  
+		Last Modified: Fri, 24 Jun 2016 19:49:34 GMT  
+		Size: 2.5 KB (2503 bytes)
+	-	`sha256:03a67423d156699898f39546147b1ac22bde1afe44dc2e638d59a057a84b000b`  
+		Last Modified: Fri, 24 Jun 2016 19:49:35 GMT  
+		Size: 165.0 B
+	-	`sha256:064d49340c596e92215af3d46224e22db943f556a7201f5af5ca343b3bb34501`  
+		Last Modified: Fri, 24 Jun 2016 19:49:35 GMT  
+		Size: 1.2 KB (1236 bytes)
 
 ## `php-zendserver:8.5`
 
 ```console
-$ docker pull php-zendserver@sha256:c632c86c3ffc6fc677bf7e88ecd4589c7eb28700cb071bbf3948008397f34bb1
+$ docker pull php-zendserver@sha256:be596d91d3d0c3104dcde61b90c2ebfb5352ad8e411982a2b230095b92712a61
 ```
 
 -	Platforms:
@@ -582,125 +516,122 @@ $ docker pull php-zendserver@sha256:c632c86c3ffc6fc677bf7e88ecd4589c7eb28700cb07
 
 ### `php-zendserver:8.5` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **328.5 MB (328544027 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **326.9 MB (326865496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `60d7ee4a965d46ca0f4ebfc04caf6dc2e7a0695b9dce1df5f4aec2411a2aca99`
+-	Image ID: `sha256:6a2e1527604e2914cfe8a08feadc33a9ea421b265e83de506071206f3b92607e`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
+# Fri, 24 Jun 2016 17:29:06 GMT
+ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
+# Fri, 24 Jun 2016 17:29:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Fri, 24 Jun 2016 17:29:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Fri, 24 Jun 2016 17:29:13 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Fri, 24 Jun 2016 17:29:14 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 17:08:44 GMT
+# Fri, 24 Jun 2016 19:34:46 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Thu, 05 May 2016 17:08:46 GMT
+# Fri, 24 Jun 2016 19:34:47 GMT
 RUN echo "deb http://repos.zend.com/zend-server/8.5/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Thu, 05 May 2016 17:16:05 GMT
+# Fri, 24 Jun 2016 19:47:54 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-5.6 && /usr/local/zend/bin/zendctl.sh stop
-# Thu, 05 May 2016 17:16:15 GMT
-COPY file:c58578a08fd65d729f61aff3f927d14df510678e25adb01bd1be4372106d951d in /etc/
-# Thu, 05 May 2016 17:16:16 GMT
+# Fri, 24 Jun 2016 19:47:56 GMT
+COPY file:edcfdd2c9dca579cd1b5a9a1dce27ec59475c579a934274dc3855efd9a8e7c1e in /etc/
+# Fri, 24 Jun 2016 19:47:56 GMT
 ENV ZS_INIT_VERSION=0.2
-# Thu, 05 May 2016 17:16:17 GMT
+# Fri, 24 Jun 2016 19:47:57 GMT
 ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6932
-# Thu, 05 May 2016 17:16:31 GMT
+# Fri, 24 Jun 2016 19:48:18 GMT
 RUN apt-get install -y curl
-# Thu, 05 May 2016 17:16:33 GMT
+# Fri, 24 Jun 2016 19:48:20 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Thu, 05 May 2016 17:16:34 GMT
+# Fri, 24 Jun 2016 19:48:20 GMT
 WORKDIR /usr/local/zs-init
-# Thu, 05 May 2016 17:16:40 GMT
+# Fri, 24 Jun 2016 19:48:26 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Thu, 05 May 2016 17:17:34 GMT
+# Fri, 24 Jun 2016 19:49:21 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Thu, 05 May 2016 17:17:38 GMT
-COPY dir:b93190fdaa5949e0251d7191975d521b47306352af21835e195923d6b1c2ef70 in /usr/local/bin
-# Thu, 05 May 2016 17:17:39 GMT
-COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /usr/local/zend/var/plugins/
-# Thu, 05 May 2016 17:17:41 GMT
+# Fri, 24 Jun 2016 19:49:22 GMT
+COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin
+# Fri, 24 Jun 2016 19:49:23 GMT
+COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/
+# Fri, 24 Jun 2016 19:49:24 GMT
 RUN rm /var/www/html/index.html
-# Thu, 05 May 2016 17:17:42 GMT
-COPY dir:58f81ce7769099822a16db14dd4168ec8a58f6e744eceea4eb4a7f924b4bf4e4 in /var/www/html
-# Thu, 05 May 2016 17:17:43 GMT
+# Fri, 24 Jun 2016 19:49:25 GMT
+COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html
+# Fri, 24 Jun 2016 19:49:25 GMT
 EXPOSE 80/tcp
-# Thu, 05 May 2016 17:17:44 GMT
+# Fri, 24 Jun 2016 19:49:26 GMT
 EXPOSE 443/tcp
-# Thu, 05 May 2016 17:17:44 GMT
+# Fri, 24 Jun 2016 19:49:26 GMT
 EXPOSE 10081/tcp
-# Thu, 05 May 2016 17:17:45 GMT
+# Fri, 24 Jun 2016 19:49:27 GMT
 EXPOSE 10082/tcp
-# Thu, 05 May 2016 17:17:46 GMT
+# Fri, 24 Jun 2016 19:49:27 GMT
 WORKDIR /var/www/html
-# Thu, 05 May 2016 17:17:47 GMT
+# Fri, 24 Jun 2016 19:49:28 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:4545b5a271eb013f2dff5c82a38f789d187c04bab192b2d2638251534f54273b`  
-		Last Modified: Fri, 06 May 2016 21:07:30 GMT  
-		Size: 1.2 KB (1238 bytes)
-	-	`sha256:b297607ba6d98d75ccf99ead222995eea4d557f7de858aa659a78efcce25805b`  
-		Last Modified: Fri, 06 May 2016 21:07:32 GMT  
-		Size: 167.0 B
-	-	`sha256:980b2dd9374567995ecb2bd6f513cea0f665a5ecd9c0282255eab03792e51dc5`  
-		Last Modified: Fri, 06 May 2016 21:08:05 GMT  
-		Size: 2.5 KB (2514 bytes)
-	-	`sha256:a3a1aafd7e57eb392e80794eaf5d9465aa4187aadc0cf9762de1827a73054e46`  
-		Last Modified: Fri, 06 May 2016 21:08:10 GMT  
-		Size: 13.1 KB (13118 bytes)
-	-	`sha256:90103f9a5e989526ca21429fd6e3201462d6a0a5e48bcbab3f12f49370810324`  
-		Last Modified: Fri, 06 May 2016 21:08:19 GMT  
-		Size: 8.3 MB (8349103 bytes)
-	-	`sha256:ec17e5363e487d1e2fc9e8a7c67b7e9c4394962826456ce64cf7531ccd771fed`  
-		Last Modified: Fri, 06 May 2016 21:08:25 GMT  
-		Size: 427.3 KB (427298 bytes)
-	-	`sha256:386a168793bc1a216d8c8601df6ebdd941cd5bd44ab287b0a6bf15e872968d55`  
-		Last Modified: Fri, 06 May 2016 21:08:32 GMT  
-		Size: 15.6 KB (15595 bytes)
-	-	`sha256:2b72e728c6993bf00c55ae1859eb41433a37b728e356b38be67b958faa98c995`  
-		Last Modified: Fri, 06 May 2016 21:09:06 GMT  
-		Size: 473.4 KB (473426 bytes)
-	-	`sha256:6da0d809a255eca838a37dbba55b27e7c99101e6b354fbb0aec7ebe4dd669380`  
-		Last Modified: Fri, 06 May 2016 21:09:18 GMT  
-		Size: 220.0 B
-	-	`sha256:ce89803cfd8e4f3d4967c6e0bed6ad16cbe90238177347096946dd4326f034e2`  
-		Last Modified: Fri, 06 May 2016 21:11:13 GMT  
-		Size: 253.5 MB (253482259 bytes)
-	-	`sha256:4e3718fa10f39f81b662588da2602579a506af51468d2c65e1295a069f1bc861`  
-		Last Modified: Fri, 06 May 2016 21:05:56 GMT  
-		Size: 230.0 B
-	-	`sha256:b99c70b031bc42d93c00dfb62e833f05430caafc2416b9fd9d3f5c3042a9aca0`  
-		Last Modified: Fri, 06 May 2016 21:06:02 GMT  
-		Size: 13.1 KB (13054 bytes)
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
+	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
+		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
+		Size: 65.7 MB (65699368 bytes)
+	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 101.4 KB (101415 bytes)
+	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
 		Size: 365.0 B
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
+	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 681.0 B
+	-	`sha256:c2a492aae9d28367ca76cb2767ad428fb4d31b1dc806ab6600f250ee66646a18`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 13.1 KB (13055 bytes)
+	-	`sha256:bd9f3a8f5b862831afd07ca04168f430d7dfd183b04a0e68126562af571580cd`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 229.0 B
+	-	`sha256:702b208a2007519b09df2042a99d5ebf9a231563d7e76b94b881eb5e3b9ba781`  
+		Last Modified: Fri, 24 Jun 2016 19:50:31 GMT  
+		Size: 251.3 MB (251266279 bytes)
+	-	`sha256:d12537b226b66d9bb01683793d6bcb22dca27212ba5f28a34ed236f15835576f`  
+		Last Modified: Fri, 24 Jun 2016 19:49:38 GMT  
+		Size: 218.0 B
+	-	`sha256:2af269579c3c64b49f0dcd68e9a2bb7cde39de50b2f7132d2f72822968e01ca2`  
+		Last Modified: Fri, 24 Jun 2016 19:49:38 GMT  
+		Size: 494.6 KB (494639 bytes)
+	-	`sha256:7f0111020b5381bfa47be6fb9042ea377d5bcdcf46e1fe4e67f00f700ffb7df2`  
+		Last Modified: Fri, 24 Jun 2016 19:49:37 GMT  
+		Size: 15.6 KB (15594 bytes)
+	-	`sha256:94ddae400f98648683e38e06372891b8eb3d310ef03e1545480cfb7e7696e20e`  
+		Last Modified: Fri, 24 Jun 2016 19:49:37 GMT  
+		Size: 437.3 KB (437326 bytes)
+	-	`sha256:d16784178f1247aa05c3e56c86ab5e1bcd39014b1c11a045601ab77f0e448807`  
+		Last Modified: Fri, 24 Jun 2016 19:49:38 GMT  
+		Size: 8.8 MB (8819315 bytes)
+	-	`sha256:c91d23549e5d8f75716ab048e989f577e7bffd7281b5f6e1edc3cc339552c728`  
+		Last Modified: Fri, 24 Jun 2016 19:49:35 GMT  
+		Size: 13.1 KB (13108 bytes)
+	-	`sha256:5a4c1da7494f91db9d256f9822c693c5288f325b776dcde7a20605d915fd229e`  
+		Last Modified: Fri, 24 Jun 2016 19:49:34 GMT  
+		Size: 2.5 KB (2503 bytes)
+	-	`sha256:03a67423d156699898f39546147b1ac22bde1afe44dc2e638d59a057a84b000b`  
+		Last Modified: Fri, 24 Jun 2016 19:49:35 GMT  
+		Size: 165.0 B
+	-	`sha256:064d49340c596e92215af3d46224e22db943f556a7201f5af5ca343b3bb34501`  
+		Last Modified: Fri, 24 Jun 2016 19:49:35 GMT  
+		Size: 1.2 KB (1236 bytes)
 
 ## `php-zendserver:5.4`
 
 ```console
-$ docker pull php-zendserver@sha256:d3645e6d6123ec7c0a5512f4da03130b9d1be53e28a07a9c167770cf510445ba
+$ docker pull php-zendserver@sha256:bcd087ffcce4d8204ee249365a676d2ff1a1677cc1564138a5daac7a81456e86
 ```
 
 -	Platforms:
@@ -708,95 +639,92 @@ $ docker pull php-zendserver@sha256:d3645e6d6123ec7c0a5512f4da03130b9d1be53e28a0
 
 ### `php-zendserver:5.4` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **292.0 MB (292028751 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **292.2 MB (292187352 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `ba66a6a7c642ed1d6afd9c70dd163e8d679fd7a290ed753abe2a3dc66c93a76e`
+-	Image ID: `sha256:6e9493c376e94704302587d3d32fd37caea0030b900d03d192cd242b92506279`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
+# Fri, 24 Jun 2016 17:29:06 GMT
+ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
+# Fri, 24 Jun 2016 17:29:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Fri, 24 Jun 2016 17:29:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Fri, 24 Jun 2016 17:29:13 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Fri, 24 Jun 2016 17:29:14 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 17:21:19 GMT
-COPY file:9d646e5ec609f8aac555ba01c7a0ed524f65783813657b08d5bd5e42a55dbc78 in /usr/local/bin/run
-# Thu, 05 May 2016 17:21:20 GMT
-COPY file:b41779e1f854d0cbd9f908d776d0b3a06d6d01a6cbd70347c053a657292d7cae in /usr/local/bin/nothing
-# Thu, 05 May 2016 17:21:21 GMT
-COPY file:ac4b0c4b7e09dfc52b73efb2494d5d178d4dd971dc6e17a2fb82c01e52458b0a in /usr/lib/x86_64-linux-gnu/
-# Thu, 05 May 2016 17:21:33 GMT
+# Fri, 24 Jun 2016 19:26:17 GMT
+COPY file:bb07e88ada324ca06f0c9c7f7b1a1599834a54faa4fa26bd5754aa56966e7e95 in /usr/local/bin/run
+# Fri, 24 Jun 2016 19:26:17 GMT
+COPY file:912eb834561b6f3501a6e6cf6c0fb8e572ff47f775f09d60fb2bf1c9376719c6 in /usr/local/bin/nothing
+# Fri, 24 Jun 2016 19:26:18 GMT
+COPY file:0b83de880883c5fe59b43b34902295d1c3d7d008c3a84b32c82285fb29414a96 in /usr/lib/x86_64-linux-gnu/
+# Fri, 24 Jun 2016 19:26:35 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Thu, 05 May 2016 17:21:36 GMT
+# Fri, 24 Jun 2016 19:26:37 GMT
 RUN echo "deb http://repos.zend.com/zend-server/7.0/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Thu, 05 May 2016 17:24:09 GMT
+# Fri, 24 Jun 2016 19:32:56 GMT
 RUN apt-get update && apt-get install -y zend-server-php-5.4 && /usr/local/zend/bin/zendctl.sh stop
-# Thu, 05 May 2016 17:24:30 GMT
+# Fri, 24 Jun 2016 19:32:58 GMT
 EXPOSE 80/tcp
-# Thu, 05 May 2016 17:24:35 GMT
+# Fri, 24 Jun 2016 19:32:58 GMT
 EXPOSE 443/tcp
-# Thu, 05 May 2016 17:24:37 GMT
+# Fri, 24 Jun 2016 19:32:59 GMT
 EXPOSE 10081/tcp
-# Thu, 05 May 2016 17:24:40 GMT
+# Fri, 24 Jun 2016 19:32:59 GMT
 EXPOSE 10082/tcp
-# Thu, 05 May 2016 17:24:42 GMT
+# Fri, 24 Jun 2016 19:33:00 GMT
 EXPOSE 10060/tcp
-# Thu, 05 May 2016 17:24:44 GMT
+# Fri, 24 Jun 2016 19:33:00 GMT
 EXPOSE 10061/tcp
-# Thu, 05 May 2016 17:24:45 GMT
+# Fri, 24 Jun 2016 19:33:01 GMT
 EXPOSE 10062/tcp
-# Thu, 05 May 2016 17:24:47 GMT
+# Fri, 24 Jun 2016 19:33:01 GMT
 WORKDIR /var/www/html
-# Thu, 05 May 2016 17:24:48 GMT
+# Fri, 24 Jun 2016 19:33:02 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:65dee6f931effe275b69e1c0e99adf0ad770b40aa6ac2e67c330b5e183854170`  
-		Last Modified: Fri, 06 May 2016 21:14:19 GMT  
-		Size: 225.3 MB (225318656 bytes)
-	-	`sha256:f0ed2f574cf684103efbfff80039ea02f59598a7fdb57792f054c166f8541e43`  
-		Last Modified: Fri, 06 May 2016 21:14:31 GMT  
-		Size: 230.0 B
-	-	`sha256:235d112268ca0937b6eafaa4500e22f421d35ac952e340684e0503d764eff5d4`  
-		Last Modified: Fri, 06 May 2016 21:14:35 GMT  
-		Size: 13.1 KB (13057 bytes)
-	-	`sha256:9c643622fec6f8ba324f00331e64d83b39a29413519a9b79144c87a10e7b9760`  
-		Last Modified: Fri, 06 May 2016 21:14:39 GMT  
-		Size: 918.3 KB (918299 bytes)
-	-	`sha256:9eeb15ed52ca264aa9f163e3d6cc83a6874f704a9606adf17b9a8b3665f48379`  
-		Last Modified: Fri, 06 May 2016 21:14:44 GMT  
-		Size: 11.7 KB (11700 bytes)
-	-	`sha256:ef7a549918c929b20e4331072315470f603d9f677ab4c9b474ead2507217cab8`  
-		Last Modified: Fri, 06 May 2016 21:14:47 GMT  
-		Size: 1.0 KB (1004 bytes)
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
+	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
+		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
+		Size: 65.7 MB (65699368 bytes)
+	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 101.4 KB (101415 bytes)
+	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
 		Size: 365.0 B
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
+	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 681.0 B
+	-	`sha256:2f7f8eccd1fc791bdd080dafe52030e7a614574897dd7bb3d09052f43d975866`  
+		Last Modified: Fri, 24 Jun 2016 19:33:12 GMT  
+		Size: 1000.0 B
+	-	`sha256:a6d706a2ee82ac7a287dca9e4208e70b4b7d9ca5c34ff8b87146efa0847255cf`  
+		Last Modified: Fri, 24 Jun 2016 19:33:14 GMT  
+		Size: 11.7 KB (11701 bytes)
+	-	`sha256:c5c93ebf29b307a8cc51b10167b437be6eb2dfb3948b2a50f357993fcb626e5a`  
+		Last Modified: Fri, 24 Jun 2016 19:33:09 GMT  
+		Size: 918.3 KB (918294 bytes)
+	-	`sha256:8a94c3e66d961feb54f26e043d57ab18f589e2ee56d9e7e40dd5bf73314fdcf4`  
+		Last Modified: Fri, 24 Jun 2016 19:33:09 GMT  
+		Size: 13.1 KB (13057 bytes)
+	-	`sha256:414e615d3a71948df7fff45bab1317f3f03dedd6969692617a01c66c567eb31f`  
+		Last Modified: Fri, 24 Jun 2016 19:33:08 GMT  
+		Size: 231.0 B
+	-	`sha256:c08fe92031186c3404bb326a5e03fe51dc77670768f0efc54cfe61dc7f19a7d9`  
+		Last Modified: Fri, 24 Jun 2016 19:33:54 GMT  
+		Size: 225.4 MB (225441240 bytes)
 
 ## `php-zendserver:7.0-php5.4`
 
 ```console
-$ docker pull php-zendserver@sha256:add51a27bf591674eb5250b1a284b16a7c2e732e89bc6231c2e1e3f1874f4617
+$ docker pull php-zendserver@sha256:bcd087ffcce4d8204ee249365a676d2ff1a1677cc1564138a5daac7a81456e86
 ```
 
 -	Platforms:
@@ -804,122 +732,92 @@ $ docker pull php-zendserver@sha256:add51a27bf591674eb5250b1a284b16a7c2e732e89bc
 
 ### `php-zendserver:7.0-php5.4` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.0 MB (292029039 bytes)**  
+-	Total Size: **292.2 MB (292187352 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b2010a669a2df1bffd45a28c202fef78430ebde0fe0739438b23f02e274b4a2`
+-	Image ID: `sha256:6e9493c376e94704302587d3d32fd37caea0030b900d03d192cd242b92506279`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
+# Fri, 24 Jun 2016 17:29:06 GMT
+ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
+# Fri, 24 Jun 2016 17:29:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Fri, 24 Jun 2016 17:29:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Fri, 24 Jun 2016 17:29:13 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Fri, 24 Jun 2016 17:29:14 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 17:21:19 GMT
-COPY file:9d646e5ec609f8aac555ba01c7a0ed524f65783813657b08d5bd5e42a55dbc78 in /usr/local/bin/run
-# Thu, 05 May 2016 17:21:20 GMT
-COPY file:b41779e1f854d0cbd9f908d776d0b3a06d6d01a6cbd70347c053a657292d7cae in /usr/local/bin/nothing
-# Thu, 05 May 2016 17:21:21 GMT
-COPY file:ac4b0c4b7e09dfc52b73efb2494d5d178d4dd971dc6e17a2fb82c01e52458b0a in /usr/lib/x86_64-linux-gnu/
-# Thu, 05 May 2016 17:21:33 GMT
+# Fri, 24 Jun 2016 19:26:17 GMT
+COPY file:bb07e88ada324ca06f0c9c7f7b1a1599834a54faa4fa26bd5754aa56966e7e95 in /usr/local/bin/run
+# Fri, 24 Jun 2016 19:26:17 GMT
+COPY file:912eb834561b6f3501a6e6cf6c0fb8e572ff47f775f09d60fb2bf1c9376719c6 in /usr/local/bin/nothing
+# Fri, 24 Jun 2016 19:26:18 GMT
+COPY file:0b83de880883c5fe59b43b34902295d1c3d7d008c3a84b32c82285fb29414a96 in /usr/lib/x86_64-linux-gnu/
+# Fri, 24 Jun 2016 19:26:35 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Thu, 05 May 2016 17:21:36 GMT
+# Fri, 24 Jun 2016 19:26:37 GMT
 RUN echo "deb http://repos.zend.com/zend-server/7.0/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Thu, 05 May 2016 17:24:09 GMT
+# Fri, 24 Jun 2016 19:32:56 GMT
 RUN apt-get update && apt-get install -y zend-server-php-5.4 && /usr/local/zend/bin/zendctl.sh stop
-# Thu, 05 May 2016 17:24:30 GMT
+# Fri, 24 Jun 2016 19:32:58 GMT
 EXPOSE 80/tcp
-# Thu, 05 May 2016 17:24:35 GMT
+# Fri, 24 Jun 2016 19:32:58 GMT
 EXPOSE 443/tcp
-# Thu, 05 May 2016 17:24:37 GMT
+# Fri, 24 Jun 2016 19:32:59 GMT
 EXPOSE 10081/tcp
-# Thu, 05 May 2016 17:24:40 GMT
+# Fri, 24 Jun 2016 19:32:59 GMT
 EXPOSE 10082/tcp
-# Thu, 05 May 2016 17:24:42 GMT
+# Fri, 24 Jun 2016 19:33:00 GMT
 EXPOSE 10060/tcp
-# Thu, 05 May 2016 17:24:44 GMT
+# Fri, 24 Jun 2016 19:33:00 GMT
 EXPOSE 10061/tcp
-# Thu, 05 May 2016 17:24:45 GMT
+# Fri, 24 Jun 2016 19:33:01 GMT
 EXPOSE 10062/tcp
-# Thu, 05 May 2016 17:24:47 GMT
+# Fri, 24 Jun 2016 19:33:01 GMT
 WORKDIR /var/www/html
-# Thu, 05 May 2016 17:24:48 GMT
+# Fri, 24 Jun 2016 19:33:02 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
+	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
+		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
+		Size: 65.7 MB (65699368 bytes)
+	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 101.4 KB (101415 bytes)
+	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
 		Size: 365.0 B
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:ef7a549918c929b20e4331072315470f603d9f677ab4c9b474ead2507217cab8`  
-		Last Modified: Fri, 06 May 2016 21:14:47 GMT  
-		Size: 1.0 KB (1004 bytes)
-	-	`sha256:9eeb15ed52ca264aa9f163e3d6cc83a6874f704a9606adf17b9a8b3665f48379`  
-		Last Modified: Fri, 06 May 2016 21:14:44 GMT  
-		Size: 11.7 KB (11700 bytes)
-	-	`sha256:9c643622fec6f8ba324f00331e64d83b39a29413519a9b79144c87a10e7b9760`  
-		Last Modified: Fri, 06 May 2016 21:14:39 GMT  
-		Size: 918.3 KB (918299 bytes)
-	-	`sha256:235d112268ca0937b6eafaa4500e22f421d35ac952e340684e0503d764eff5d4`  
-		Last Modified: Fri, 06 May 2016 21:14:35 GMT  
+	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 681.0 B
+	-	`sha256:2f7f8eccd1fc791bdd080dafe52030e7a614574897dd7bb3d09052f43d975866`  
+		Last Modified: Fri, 24 Jun 2016 19:33:12 GMT  
+		Size: 1000.0 B
+	-	`sha256:a6d706a2ee82ac7a287dca9e4208e70b4b7d9ca5c34ff8b87146efa0847255cf`  
+		Last Modified: Fri, 24 Jun 2016 19:33:14 GMT  
+		Size: 11.7 KB (11701 bytes)
+	-	`sha256:c5c93ebf29b307a8cc51b10167b437be6eb2dfb3948b2a50f357993fcb626e5a`  
+		Last Modified: Fri, 24 Jun 2016 19:33:09 GMT  
+		Size: 918.3 KB (918294 bytes)
+	-	`sha256:8a94c3e66d961feb54f26e043d57ab18f589e2ee56d9e7e40dd5bf73314fdcf4`  
+		Last Modified: Fri, 24 Jun 2016 19:33:09 GMT  
 		Size: 13.1 KB (13057 bytes)
-	-	`sha256:f0ed2f574cf684103efbfff80039ea02f59598a7fdb57792f054c166f8541e43`  
-		Last Modified: Fri, 06 May 2016 21:14:31 GMT  
-		Size: 230.0 B
-	-	`sha256:65dee6f931effe275b69e1c0e99adf0ad770b40aa6ac2e67c330b5e183854170`  
-		Last Modified: Fri, 06 May 2016 21:14:19 GMT  
-		Size: 225.3 MB (225318656 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:414e615d3a71948df7fff45bab1317f3f03dedd6969692617a01c66c567eb31f`  
+		Last Modified: Fri, 24 Jun 2016 19:33:08 GMT  
+		Size: 231.0 B
+	-	`sha256:c08fe92031186c3404bb326a5e03fe51dc77670768f0efc54cfe61dc7f19a7d9`  
+		Last Modified: Fri, 24 Jun 2016 19:33:54 GMT  
+		Size: 225.4 MB (225441240 bytes)
 
 ## `php-zendserver:9.0`
 
 ```console
-$ docker pull php-zendserver@sha256:393d53369cbf7da9e3687a11927ef653615a82b7026276d18d3071eb3d44cee6
+$ docker pull php-zendserver@sha256:de1a6828481def2fcf4c8efbbe92dbebb84728dc03531448beca235a756013eb
 ```
 
 -	Platforms:
@@ -927,125 +825,122 @@ $ docker pull php-zendserver@sha256:393d53369cbf7da9e3687a11927ef653615a82b70262
 
 ### `php-zendserver:9.0` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **335.1 MB (335056061 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **341.0 MB (340950024 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `f685c1c968375d382ce62555abe865470ca80128b55e35a65565e8c07308f1a0`
+-	Image ID: `sha256:1f5b0a09cf4695e36df51ff35da46d500af98ce6dea0c4865e11eddc5f41d208`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
+# Fri, 24 Jun 2016 17:29:06 GMT
+ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
+# Fri, 24 Jun 2016 17:29:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Fri, 24 Jun 2016 17:29:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Fri, 24 Jun 2016 17:29:13 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Fri, 24 Jun 2016 17:29:14 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 17:08:44 GMT
+# Fri, 24 Jun 2016 19:34:46 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Mon, 09 May 2016 18:33:31 GMT
+# Fri, 24 Jun 2016 19:51:04 GMT
 RUN echo "deb http://repos.zend.com/zend-server/9.0/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Mon, 09 May 2016 18:35:41 GMT
+# Fri, 24 Jun 2016 19:54:35 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-7.0 && /usr/local/zend/bin/zendctl.sh stop
-# Mon, 09 May 2016 18:35:57 GMT
-COPY file:c58578a08fd65d729f61aff3f927d14df510678e25adb01bd1be4372106d951d in /etc/
-# Mon, 09 May 2016 18:35:57 GMT
+# Fri, 24 Jun 2016 19:54:37 GMT
+COPY file:edcfdd2c9dca579cd1b5a9a1dce27ec59475c579a934274dc3855efd9a8e7c1e in /etc/
+# Fri, 24 Jun 2016 19:54:38 GMT
 ENV ZS_INIT_VERSION=0.2
-# Mon, 09 May 2016 18:35:58 GMT
+# Fri, 24 Jun 2016 19:54:38 GMT
 ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6932
-# Mon, 09 May 2016 18:36:13 GMT
+# Fri, 24 Jun 2016 19:54:59 GMT
 RUN apt-get install -y curl
-# Mon, 09 May 2016 18:36:14 GMT
+# Fri, 24 Jun 2016 19:55:01 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Mon, 09 May 2016 18:36:15 GMT
+# Fri, 24 Jun 2016 19:55:01 GMT
 WORKDIR /usr/local/zs-init
-# Mon, 09 May 2016 18:36:21 GMT
+# Fri, 24 Jun 2016 19:55:08 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Mon, 09 May 2016 18:37:13 GMT
+# Fri, 24 Jun 2016 19:56:02 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Mon, 09 May 2016 18:37:15 GMT
-COPY dir:b93190fdaa5949e0251d7191975d521b47306352af21835e195923d6b1c2ef70 in /usr/local/bin
-# Mon, 09 May 2016 18:37:15 GMT
-COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /usr/local/zend/var/plugins/
-# Mon, 09 May 2016 18:37:17 GMT
+# Fri, 24 Jun 2016 19:56:03 GMT
+COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin
+# Fri, 24 Jun 2016 19:56:03 GMT
+COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/
+# Fri, 24 Jun 2016 19:56:05 GMT
 RUN rm /var/www/html/index.html
-# Mon, 09 May 2016 18:37:18 GMT
-COPY dir:58f81ce7769099822a16db14dd4168ec8a58f6e744eceea4eb4a7f924b4bf4e4 in /var/www/html
-# Mon, 09 May 2016 18:37:18 GMT
+# Fri, 24 Jun 2016 19:56:06 GMT
+COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html
+# Fri, 24 Jun 2016 19:56:06 GMT
 EXPOSE 80/tcp
-# Mon, 09 May 2016 18:37:19 GMT
+# Fri, 24 Jun 2016 19:56:07 GMT
 EXPOSE 443/tcp
-# Mon, 09 May 2016 18:37:20 GMT
+# Fri, 24 Jun 2016 19:56:07 GMT
 EXPOSE 10081/tcp
-# Mon, 09 May 2016 18:37:20 GMT
+# Fri, 24 Jun 2016 19:56:08 GMT
 EXPOSE 10082/tcp
-# Mon, 09 May 2016 18:37:21 GMT
+# Fri, 24 Jun 2016 19:56:08 GMT
 WORKDIR /var/www/html
-# Mon, 09 May 2016 18:37:22 GMT
+# Fri, 24 Jun 2016 19:56:09 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:81800e8cd64021cc2111c97ae0e92536419d8159a9d2b6d69e8ce7d7591d7982`  
-		Last Modified: Mon, 09 May 2016 18:41:00 GMT  
-		Size: 1.2 KB (1240 bytes)
-	-	`sha256:041978a428671d7363d0fdb3aa0cc8a591a8bda9f4b26a0cea308deccdd71bf8`  
-		Last Modified: Mon, 09 May 2016 18:41:04 GMT  
-		Size: 166.0 B
-	-	`sha256:2cf311791c43735027c80221f6c1339c0669070870d41ba112b05a95ea34cebe`  
-		Last Modified: Mon, 09 May 2016 18:41:07 GMT  
-		Size: 2.5 KB (2504 bytes)
-	-	`sha256:81790d18fa4ca7f04705767691307ea57c810c7652849106c6c0a694b5297bce`  
-		Last Modified: Mon, 09 May 2016 18:41:12 GMT  
-		Size: 13.1 KB (13120 bytes)
-	-	`sha256:80480a976bfc861e40b4dd2bd3314bf22bb31b6a69e351171e52c95e5ae8d980`  
-		Last Modified: Mon, 09 May 2016 18:41:17 GMT  
-		Size: 8.4 MB (8372093 bytes)
-	-	`sha256:1d0af6e9a9026f3153296fd1b805e6223872a6dc29a73e4b22bdf8896676ade3`  
-		Last Modified: Mon, 09 May 2016 18:41:21 GMT  
-		Size: 427.3 KB (427294 bytes)
-	-	`sha256:8f0b1e53c4203589fa3949ab8060faafd045a92dddd25bb2fd82ffa2c1d34331`  
-		Last Modified: Mon, 09 May 2016 18:41:27 GMT  
-		Size: 15.6 KB (15593 bytes)
-	-	`sha256:8291ffbf5f32fe3f4a16463408f4d7849eb291e6f709ff39c7372704f0b6bee3`  
-		Last Modified: Mon, 09 May 2016 18:41:30 GMT  
-		Size: 463.0 KB (462993 bytes)
-	-	`sha256:849d56cfa7f4fcfcc16fc79811d65e6cea05955c1da0561a1245da22a6ae07b3`  
-		Last Modified: Mon, 09 May 2016 18:41:37 GMT  
-		Size: 220.0 B
-	-	`sha256:25ec19c5516b291cf13b16a52f45d098d855946a3950270384aff4db6b8fb844`  
-		Last Modified: Mon, 09 May 2016 18:42:43 GMT  
-		Size: 260.0 MB (259981749 bytes)
-	-	`sha256:fe71b7a67db38fcbe581afb879d5a595188b42b3981f2c16bc93a455117a93a8`  
-		Last Modified: Mon, 09 May 2016 18:42:57 GMT  
-		Size: 230.0 B
-	-	`sha256:b99c70b031bc42d93c00dfb62e833f05430caafc2416b9fd9d3f5c3042a9aca0`  
-		Last Modified: Fri, 06 May 2016 21:06:02 GMT  
-		Size: 13.1 KB (13054 bytes)
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
+	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
+		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
+		Size: 65.7 MB (65699368 bytes)
+	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 101.4 KB (101415 bytes)
+	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
 		Size: 365.0 B
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
+	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 681.0 B
+	-	`sha256:c2a492aae9d28367ca76cb2767ad428fb4d31b1dc806ab6600f250ee66646a18`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 13.1 KB (13055 bytes)
+	-	`sha256:998868e99e7cbf0307ef8b818654cc8ab128a8b9d3bc49b0faf3f644c4028259`  
+		Last Modified: Fri, 24 Jun 2016 19:56:21 GMT  
+		Size: 230.0 B
+	-	`sha256:427ca55f6b9a66b89ebc9005cd8f9374e6e9d082fbbf19ee69291c207d233212`  
+		Last Modified: Fri, 24 Jun 2016 19:57:15 GMT  
+		Size: 265.4 MB (265351901 bytes)
+	-	`sha256:484cc27a7892d0036c6f5b114d8b86ac8efda6dc193881ffafa8e7524ff641a4`  
+		Last Modified: Fri, 24 Jun 2016 19:56:19 GMT  
+		Size: 214.0 B
+	-	`sha256:4d02666155e7768fdd9eb0478bf4da890db4988cc0877346c374da3fcbd41156`  
+		Last Modified: Fri, 24 Jun 2016 19:56:19 GMT  
+		Size: 493.5 KB (493548 bytes)
+	-	`sha256:84da2e7061197aebe983acf41db5abf2f0e63d237e56797fb36949140f8f07dc`  
+		Last Modified: Fri, 24 Jun 2016 19:56:18 GMT  
+		Size: 15.6 KB (15591 bytes)
+	-	`sha256:718d52bdc7cff6136f6a6971954b36eb32623ff125978b211690be04498ce197`  
+		Last Modified: Fri, 24 Jun 2016 19:56:18 GMT  
+		Size: 437.3 KB (437317 bytes)
+	-	`sha256:8f4566aca8eb2b710b03511caa5c527628b86a5359d093f5635703ed69ddc826`  
+		Last Modified: Fri, 24 Jun 2016 19:56:18 GMT  
+		Size: 8.8 MB (8819326 bytes)
+	-	`sha256:19687b19fcd6748ef1faef3ee91e396ad6746b3a2c8fc418d16cce47ccec5829`  
+		Last Modified: Fri, 24 Jun 2016 19:56:16 GMT  
+		Size: 13.1 KB (13109 bytes)
+	-	`sha256:b683f3f92dc9f368756760005608ed48a550314ac845e7d5e703568e83c1f499`  
+		Last Modified: Fri, 24 Jun 2016 19:56:15 GMT  
+		Size: 2.5 KB (2501 bytes)
+	-	`sha256:1e5cec7c4fe91416060f7f2cf210c53a7af9d170a8983a2245761b1bae0c91b0`  
+		Last Modified: Fri, 24 Jun 2016 19:56:16 GMT  
+		Size: 166.0 B
+	-	`sha256:87b375a44a483cb867f368d246a21551208c9381589e20c27e053cca7553ec46`  
+		Last Modified: Fri, 24 Jun 2016 19:56:15 GMT  
+		Size: 1.2 KB (1237 bytes)
 
 ## `php-zendserver:9.0-php7`
 
 ```console
-$ docker pull php-zendserver@sha256:04b629395295f9365c8fec4c0b89f5bc6595503623d66b112a8a78efdf700a38
+$ docker pull php-zendserver@sha256:de1a6828481def2fcf4c8efbbe92dbebb84728dc03531448beca235a756013eb
 ```
 
 -	Platforms:
@@ -1053,125 +948,122 @@ $ docker pull php-zendserver@sha256:04b629395295f9365c8fec4c0b89f5bc6595503623d6
 
 ### `php-zendserver:9.0-php7` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **335.1 MB (335056061 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **341.0 MB (340950024 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `f685c1c968375d382ce62555abe865470ca80128b55e35a65565e8c07308f1a0`
+-	Image ID: `sha256:1f5b0a09cf4695e36df51ff35da46d500af98ce6dea0c4865e11eddc5f41d208`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
+# Fri, 24 Jun 2016 17:29:06 GMT
+ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
+# Fri, 24 Jun 2016 17:29:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Fri, 24 Jun 2016 17:29:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Fri, 24 Jun 2016 17:29:13 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Fri, 24 Jun 2016 17:29:14 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 17:08:44 GMT
+# Fri, 24 Jun 2016 19:34:46 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Mon, 09 May 2016 18:33:31 GMT
+# Fri, 24 Jun 2016 19:51:04 GMT
 RUN echo "deb http://repos.zend.com/zend-server/9.0/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Mon, 09 May 2016 18:35:41 GMT
+# Fri, 24 Jun 2016 19:54:35 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-7.0 && /usr/local/zend/bin/zendctl.sh stop
-# Mon, 09 May 2016 18:35:57 GMT
-COPY file:c58578a08fd65d729f61aff3f927d14df510678e25adb01bd1be4372106d951d in /etc/
-# Mon, 09 May 2016 18:35:57 GMT
+# Fri, 24 Jun 2016 19:54:37 GMT
+COPY file:edcfdd2c9dca579cd1b5a9a1dce27ec59475c579a934274dc3855efd9a8e7c1e in /etc/
+# Fri, 24 Jun 2016 19:54:38 GMT
 ENV ZS_INIT_VERSION=0.2
-# Mon, 09 May 2016 18:35:58 GMT
+# Fri, 24 Jun 2016 19:54:38 GMT
 ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6932
-# Mon, 09 May 2016 18:36:13 GMT
+# Fri, 24 Jun 2016 19:54:59 GMT
 RUN apt-get install -y curl
-# Mon, 09 May 2016 18:36:14 GMT
+# Fri, 24 Jun 2016 19:55:01 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Mon, 09 May 2016 18:36:15 GMT
+# Fri, 24 Jun 2016 19:55:01 GMT
 WORKDIR /usr/local/zs-init
-# Mon, 09 May 2016 18:36:21 GMT
+# Fri, 24 Jun 2016 19:55:08 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Mon, 09 May 2016 18:37:13 GMT
+# Fri, 24 Jun 2016 19:56:02 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Mon, 09 May 2016 18:37:15 GMT
-COPY dir:b93190fdaa5949e0251d7191975d521b47306352af21835e195923d6b1c2ef70 in /usr/local/bin
-# Mon, 09 May 2016 18:37:15 GMT
-COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /usr/local/zend/var/plugins/
-# Mon, 09 May 2016 18:37:17 GMT
+# Fri, 24 Jun 2016 19:56:03 GMT
+COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin
+# Fri, 24 Jun 2016 19:56:03 GMT
+COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/
+# Fri, 24 Jun 2016 19:56:05 GMT
 RUN rm /var/www/html/index.html
-# Mon, 09 May 2016 18:37:18 GMT
-COPY dir:58f81ce7769099822a16db14dd4168ec8a58f6e744eceea4eb4a7f924b4bf4e4 in /var/www/html
-# Mon, 09 May 2016 18:37:18 GMT
+# Fri, 24 Jun 2016 19:56:06 GMT
+COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html
+# Fri, 24 Jun 2016 19:56:06 GMT
 EXPOSE 80/tcp
-# Mon, 09 May 2016 18:37:19 GMT
+# Fri, 24 Jun 2016 19:56:07 GMT
 EXPOSE 443/tcp
-# Mon, 09 May 2016 18:37:20 GMT
+# Fri, 24 Jun 2016 19:56:07 GMT
 EXPOSE 10081/tcp
-# Mon, 09 May 2016 18:37:20 GMT
+# Fri, 24 Jun 2016 19:56:08 GMT
 EXPOSE 10082/tcp
-# Mon, 09 May 2016 18:37:21 GMT
+# Fri, 24 Jun 2016 19:56:08 GMT
 WORKDIR /var/www/html
-# Mon, 09 May 2016 18:37:22 GMT
+# Fri, 24 Jun 2016 19:56:09 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:81800e8cd64021cc2111c97ae0e92536419d8159a9d2b6d69e8ce7d7591d7982`  
-		Last Modified: Mon, 09 May 2016 18:41:00 GMT  
-		Size: 1.2 KB (1240 bytes)
-	-	`sha256:041978a428671d7363d0fdb3aa0cc8a591a8bda9f4b26a0cea308deccdd71bf8`  
-		Last Modified: Mon, 09 May 2016 18:41:04 GMT  
-		Size: 166.0 B
-	-	`sha256:2cf311791c43735027c80221f6c1339c0669070870d41ba112b05a95ea34cebe`  
-		Last Modified: Mon, 09 May 2016 18:41:07 GMT  
-		Size: 2.5 KB (2504 bytes)
-	-	`sha256:81790d18fa4ca7f04705767691307ea57c810c7652849106c6c0a694b5297bce`  
-		Last Modified: Mon, 09 May 2016 18:41:12 GMT  
-		Size: 13.1 KB (13120 bytes)
-	-	`sha256:80480a976bfc861e40b4dd2bd3314bf22bb31b6a69e351171e52c95e5ae8d980`  
-		Last Modified: Mon, 09 May 2016 18:41:17 GMT  
-		Size: 8.4 MB (8372093 bytes)
-	-	`sha256:1d0af6e9a9026f3153296fd1b805e6223872a6dc29a73e4b22bdf8896676ade3`  
-		Last Modified: Mon, 09 May 2016 18:41:21 GMT  
-		Size: 427.3 KB (427294 bytes)
-	-	`sha256:8f0b1e53c4203589fa3949ab8060faafd045a92dddd25bb2fd82ffa2c1d34331`  
-		Last Modified: Mon, 09 May 2016 18:41:27 GMT  
-		Size: 15.6 KB (15593 bytes)
-	-	`sha256:8291ffbf5f32fe3f4a16463408f4d7849eb291e6f709ff39c7372704f0b6bee3`  
-		Last Modified: Mon, 09 May 2016 18:41:30 GMT  
-		Size: 463.0 KB (462993 bytes)
-	-	`sha256:849d56cfa7f4fcfcc16fc79811d65e6cea05955c1da0561a1245da22a6ae07b3`  
-		Last Modified: Mon, 09 May 2016 18:41:37 GMT  
-		Size: 220.0 B
-	-	`sha256:25ec19c5516b291cf13b16a52f45d098d855946a3950270384aff4db6b8fb844`  
-		Last Modified: Mon, 09 May 2016 18:42:43 GMT  
-		Size: 260.0 MB (259981749 bytes)
-	-	`sha256:fe71b7a67db38fcbe581afb879d5a595188b42b3981f2c16bc93a455117a93a8`  
-		Last Modified: Mon, 09 May 2016 18:42:57 GMT  
-		Size: 230.0 B
-	-	`sha256:b99c70b031bc42d93c00dfb62e833f05430caafc2416b9fd9d3f5c3042a9aca0`  
-		Last Modified: Fri, 06 May 2016 21:06:02 GMT  
-		Size: 13.1 KB (13054 bytes)
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
+	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
+		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
+		Size: 65.7 MB (65699368 bytes)
+	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 101.4 KB (101415 bytes)
+	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
 		Size: 365.0 B
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
+	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 681.0 B
+	-	`sha256:c2a492aae9d28367ca76cb2767ad428fb4d31b1dc806ab6600f250ee66646a18`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 13.1 KB (13055 bytes)
+	-	`sha256:998868e99e7cbf0307ef8b818654cc8ab128a8b9d3bc49b0faf3f644c4028259`  
+		Last Modified: Fri, 24 Jun 2016 19:56:21 GMT  
+		Size: 230.0 B
+	-	`sha256:427ca55f6b9a66b89ebc9005cd8f9374e6e9d082fbbf19ee69291c207d233212`  
+		Last Modified: Fri, 24 Jun 2016 19:57:15 GMT  
+		Size: 265.4 MB (265351901 bytes)
+	-	`sha256:484cc27a7892d0036c6f5b114d8b86ac8efda6dc193881ffafa8e7524ff641a4`  
+		Last Modified: Fri, 24 Jun 2016 19:56:19 GMT  
+		Size: 214.0 B
+	-	`sha256:4d02666155e7768fdd9eb0478bf4da890db4988cc0877346c374da3fcbd41156`  
+		Last Modified: Fri, 24 Jun 2016 19:56:19 GMT  
+		Size: 493.5 KB (493548 bytes)
+	-	`sha256:84da2e7061197aebe983acf41db5abf2f0e63d237e56797fb36949140f8f07dc`  
+		Last Modified: Fri, 24 Jun 2016 19:56:18 GMT  
+		Size: 15.6 KB (15591 bytes)
+	-	`sha256:718d52bdc7cff6136f6a6971954b36eb32623ff125978b211690be04498ce197`  
+		Last Modified: Fri, 24 Jun 2016 19:56:18 GMT  
+		Size: 437.3 KB (437317 bytes)
+	-	`sha256:8f4566aca8eb2b710b03511caa5c527628b86a5359d093f5635703ed69ddc826`  
+		Last Modified: Fri, 24 Jun 2016 19:56:18 GMT  
+		Size: 8.8 MB (8819326 bytes)
+	-	`sha256:19687b19fcd6748ef1faef3ee91e396ad6746b3a2c8fc418d16cce47ccec5829`  
+		Last Modified: Fri, 24 Jun 2016 19:56:16 GMT  
+		Size: 13.1 KB (13109 bytes)
+	-	`sha256:b683f3f92dc9f368756760005608ed48a550314ac845e7d5e703568e83c1f499`  
+		Last Modified: Fri, 24 Jun 2016 19:56:15 GMT  
+		Size: 2.5 KB (2501 bytes)
+	-	`sha256:1e5cec7c4fe91416060f7f2cf210c53a7af9d170a8983a2245761b1bae0c91b0`  
+		Last Modified: Fri, 24 Jun 2016 19:56:16 GMT  
+		Size: 166.0 B
+	-	`sha256:87b375a44a483cb867f368d246a21551208c9381589e20c27e053cca7553ec46`  
+		Last Modified: Fri, 24 Jun 2016 19:56:15 GMT  
+		Size: 1.2 KB (1237 bytes)
 
 ## `php-zendserver:latest`
 
 ```console
-$ docker pull php-zendserver@sha256:8813ad373575ccf48d678d0216cf15f006f06add0b783770b45d08e1a2c8de95
+$ docker pull php-zendserver@sha256:de1a6828481def2fcf4c8efbbe92dbebb84728dc03531448beca235a756013eb
 ```
 
 -	Platforms:
@@ -1179,144 +1071,114 @@ $ docker pull php-zendserver@sha256:8813ad373575ccf48d678d0216cf15f006f06add0b78
 
 ### `php-zendserver:latest` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **335.1 MB (335056349 bytes)**  
+-	Total Size: **341.0 MB (340950024 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:880f427f2b86b2e994cd9568aff4d33a16e850eca039798a2faf79fcd3be60bd`
+-	Image ID: `sha256:1f5b0a09cf4695e36df51ff35da46d500af98ce6dea0c4865e11eddc5f41d208`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
+# Fri, 24 Jun 2016 17:29:06 GMT
+ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
+# Fri, 24 Jun 2016 17:29:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Fri, 24 Jun 2016 17:29:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Fri, 24 Jun 2016 17:29:13 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Fri, 24 Jun 2016 17:29:14 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 17:08:44 GMT
+# Fri, 24 Jun 2016 19:34:46 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Mon, 09 May 2016 18:33:31 GMT
+# Fri, 24 Jun 2016 19:51:04 GMT
 RUN echo "deb http://repos.zend.com/zend-server/9.0/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Mon, 09 May 2016 18:35:41 GMT
+# Fri, 24 Jun 2016 19:54:35 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-7.0 && /usr/local/zend/bin/zendctl.sh stop
-# Mon, 09 May 2016 18:35:57 GMT
-COPY file:c58578a08fd65d729f61aff3f927d14df510678e25adb01bd1be4372106d951d in /etc/
-# Mon, 09 May 2016 18:35:57 GMT
+# Fri, 24 Jun 2016 19:54:37 GMT
+COPY file:edcfdd2c9dca579cd1b5a9a1dce27ec59475c579a934274dc3855efd9a8e7c1e in /etc/
+# Fri, 24 Jun 2016 19:54:38 GMT
 ENV ZS_INIT_VERSION=0.2
-# Mon, 09 May 2016 18:35:58 GMT
+# Fri, 24 Jun 2016 19:54:38 GMT
 ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6932
-# Mon, 09 May 2016 18:36:13 GMT
+# Fri, 24 Jun 2016 19:54:59 GMT
 RUN apt-get install -y curl
-# Mon, 09 May 2016 18:36:14 GMT
+# Fri, 24 Jun 2016 19:55:01 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Mon, 09 May 2016 18:36:15 GMT
+# Fri, 24 Jun 2016 19:55:01 GMT
 WORKDIR /usr/local/zs-init
-# Mon, 09 May 2016 18:36:21 GMT
+# Fri, 24 Jun 2016 19:55:08 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Mon, 09 May 2016 18:37:13 GMT
+# Fri, 24 Jun 2016 19:56:02 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Mon, 09 May 2016 18:37:15 GMT
-COPY dir:b93190fdaa5949e0251d7191975d521b47306352af21835e195923d6b1c2ef70 in /usr/local/bin
-# Mon, 09 May 2016 18:37:15 GMT
-COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /usr/local/zend/var/plugins/
-# Mon, 09 May 2016 18:37:17 GMT
+# Fri, 24 Jun 2016 19:56:03 GMT
+COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin
+# Fri, 24 Jun 2016 19:56:03 GMT
+COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/
+# Fri, 24 Jun 2016 19:56:05 GMT
 RUN rm /var/www/html/index.html
-# Mon, 09 May 2016 18:37:18 GMT
-COPY dir:58f81ce7769099822a16db14dd4168ec8a58f6e744eceea4eb4a7f924b4bf4e4 in /var/www/html
-# Mon, 09 May 2016 18:37:18 GMT
+# Fri, 24 Jun 2016 19:56:06 GMT
+COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html
+# Fri, 24 Jun 2016 19:56:06 GMT
 EXPOSE 80/tcp
-# Mon, 09 May 2016 18:37:19 GMT
+# Fri, 24 Jun 2016 19:56:07 GMT
 EXPOSE 443/tcp
-# Mon, 09 May 2016 18:37:20 GMT
+# Fri, 24 Jun 2016 19:56:07 GMT
 EXPOSE 10081/tcp
-# Mon, 09 May 2016 18:37:20 GMT
+# Fri, 24 Jun 2016 19:56:08 GMT
 EXPOSE 10082/tcp
-# Mon, 09 May 2016 18:37:21 GMT
+# Fri, 24 Jun 2016 19:56:08 GMT
 WORKDIR /var/www/html
-# Mon, 09 May 2016 18:37:22 GMT
+# Fri, 24 Jun 2016 19:56:09 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
+	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
+		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
+		Size: 65.7 MB (65699368 bytes)
+	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 101.4 KB (101415 bytes)
+	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
 		Size: 365.0 B
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b99c70b031bc42d93c00dfb62e833f05430caafc2416b9fd9d3f5c3042a9aca0`  
-		Last Modified: Fri, 06 May 2016 21:06:02 GMT  
-		Size: 13.1 KB (13054 bytes)
-	-	`sha256:fe71b7a67db38fcbe581afb879d5a595188b42b3981f2c16bc93a455117a93a8`  
-		Last Modified: Mon, 09 May 2016 18:42:57 GMT  
+	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 681.0 B
+	-	`sha256:c2a492aae9d28367ca76cb2767ad428fb4d31b1dc806ab6600f250ee66646a18`  
+		Last Modified: Fri, 24 Jun 2016 19:39:26 GMT  
+		Size: 13.1 KB (13055 bytes)
+	-	`sha256:998868e99e7cbf0307ef8b818654cc8ab128a8b9d3bc49b0faf3f644c4028259`  
+		Last Modified: Fri, 24 Jun 2016 19:56:21 GMT  
 		Size: 230.0 B
-	-	`sha256:25ec19c5516b291cf13b16a52f45d098d855946a3950270384aff4db6b8fb844`  
-		Last Modified: Mon, 09 May 2016 18:42:43 GMT  
-		Size: 260.0 MB (259981749 bytes)
-	-	`sha256:849d56cfa7f4fcfcc16fc79811d65e6cea05955c1da0561a1245da22a6ae07b3`  
-		Last Modified: Mon, 09 May 2016 18:41:37 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8291ffbf5f32fe3f4a16463408f4d7849eb291e6f709ff39c7372704f0b6bee3`  
-		Last Modified: Mon, 09 May 2016 18:41:30 GMT  
-		Size: 463.0 KB (462993 bytes)
-	-	`sha256:8f0b1e53c4203589fa3949ab8060faafd045a92dddd25bb2fd82ffa2c1d34331`  
-		Last Modified: Mon, 09 May 2016 18:41:27 GMT  
-		Size: 15.6 KB (15593 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1d0af6e9a9026f3153296fd1b805e6223872a6dc29a73e4b22bdf8896676ade3`  
-		Last Modified: Mon, 09 May 2016 18:41:21 GMT  
-		Size: 427.3 KB (427294 bytes)
-	-	`sha256:80480a976bfc861e40b4dd2bd3314bf22bb31b6a69e351171e52c95e5ae8d980`  
-		Last Modified: Mon, 09 May 2016 18:41:17 GMT  
-		Size: 8.4 MB (8372093 bytes)
-	-	`sha256:81790d18fa4ca7f04705767691307ea57c810c7652849106c6c0a694b5297bce`  
-		Last Modified: Mon, 09 May 2016 18:41:12 GMT  
-		Size: 13.1 KB (13120 bytes)
-	-	`sha256:2cf311791c43735027c80221f6c1339c0669070870d41ba112b05a95ea34cebe`  
-		Last Modified: Mon, 09 May 2016 18:41:07 GMT  
-		Size: 2.5 KB (2504 bytes)
-	-	`sha256:041978a428671d7363d0fdb3aa0cc8a591a8bda9f4b26a0cea308deccdd71bf8`  
-		Last Modified: Mon, 09 May 2016 18:41:04 GMT  
+	-	`sha256:427ca55f6b9a66b89ebc9005cd8f9374e6e9d082fbbf19ee69291c207d233212`  
+		Last Modified: Fri, 24 Jun 2016 19:57:15 GMT  
+		Size: 265.4 MB (265351901 bytes)
+	-	`sha256:484cc27a7892d0036c6f5b114d8b86ac8efda6dc193881ffafa8e7524ff641a4`  
+		Last Modified: Fri, 24 Jun 2016 19:56:19 GMT  
+		Size: 214.0 B
+	-	`sha256:4d02666155e7768fdd9eb0478bf4da890db4988cc0877346c374da3fcbd41156`  
+		Last Modified: Fri, 24 Jun 2016 19:56:19 GMT  
+		Size: 493.5 KB (493548 bytes)
+	-	`sha256:84da2e7061197aebe983acf41db5abf2f0e63d237e56797fb36949140f8f07dc`  
+		Last Modified: Fri, 24 Jun 2016 19:56:18 GMT  
+		Size: 15.6 KB (15591 bytes)
+	-	`sha256:718d52bdc7cff6136f6a6971954b36eb32623ff125978b211690be04498ce197`  
+		Last Modified: Fri, 24 Jun 2016 19:56:18 GMT  
+		Size: 437.3 KB (437317 bytes)
+	-	`sha256:8f4566aca8eb2b710b03511caa5c527628b86a5359d093f5635703ed69ddc826`  
+		Last Modified: Fri, 24 Jun 2016 19:56:18 GMT  
+		Size: 8.8 MB (8819326 bytes)
+	-	`sha256:19687b19fcd6748ef1faef3ee91e396ad6746b3a2c8fc418d16cce47ccec5829`  
+		Last Modified: Fri, 24 Jun 2016 19:56:16 GMT  
+		Size: 13.1 KB (13109 bytes)
+	-	`sha256:b683f3f92dc9f368756760005608ed48a550314ac845e7d5e703568e83c1f499`  
+		Last Modified: Fri, 24 Jun 2016 19:56:15 GMT  
+		Size: 2.5 KB (2501 bytes)
+	-	`sha256:1e5cec7c4fe91416060f7f2cf210c53a7af9d170a8983a2245761b1bae0c91b0`  
+		Last Modified: Fri, 24 Jun 2016 19:56:16 GMT  
 		Size: 166.0 B
-	-	`sha256:81800e8cd64021cc2111c97ae0e92536419d8159a9d2b6d69e8ce7d7591d7982`  
-		Last Modified: Mon, 09 May 2016 18:41:00 GMT  
-		Size: 1.2 KB (1240 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:87b375a44a483cb867f368d246a21551208c9381589e20c27e053cca7553ec46`  
+		Last Modified: Fri, 24 Jun 2016 19:56:15 GMT  
+		Size: 1.2 KB (1237 bytes)
