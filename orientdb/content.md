@@ -57,7 +57,7 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     orientdb:latest /orientdb/bin/server.sh  -Ddistributed=true
 ```
 
-For further configuration options please refer to the [Configuration](http://orientdb.com/docs/latest/Configuration.html) section of the online documentation.
+For further configuration options please refer to the [Configuration](http://orientdb.com/docs/last/Configuration.html) section of the online documentation.
 
 ### Environment
 
