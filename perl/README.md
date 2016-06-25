@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.24`, `5.24.0` (*5.024.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/c2d4864a663d976ff2560493fe8e0dd424b792b3/5.024.000-64bit/Dockerfile)
--	[`5.22`, `5.22.2` (*5.022.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/c2d4864a663d976ff2560493fe8e0dd424b792b3/5.022.002-64bit/Dockerfile)
--	[`threaded`, `5-threaded`, `5.24-threaded`, `5.24.0-threaded` (*5.024.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/c2d4864a663d976ff2560493fe8e0dd424b792b3/5.024.000-64bit,threaded/Dockerfile)
--	[`5.22-threaded`, `5.22.2-threaded` (*5.022.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/c2d4864a663d976ff2560493fe8e0dd424b792b3/5.022.002-64bit,threaded/Dockerfile)
+-	[`latest`, `5`, `5.24`, `5.24.0` (*5.024.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.024.000-64bit/Dockerfile)
+-	[`5.22`, `5.22.2` (*5.022.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.022.002-64bit/Dockerfile)
+-	[`threaded`, `5-threaded`, `5.24-threaded`, `5.24.0-threaded` (*5.024.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.024.000-64bit,threaded/Dockerfile)
+-	[`5.22-threaded`, `5.22.2-threaded` (*5.022.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.022.002-64bit,threaded/Dockerfile)
 
 [![](https://badge.imagelayers.io/perl:latest.svg)](https://imagelayers.io/?images=perl:latest,perl:5.22,perl:threaded,perl:5.22-threaded)
 
