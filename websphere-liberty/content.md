@@ -20,8 +20,6 @@ The `webProfile6` image contains the features required for Java EE6 Web Profile 
 
 The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image extends this image and adds the features required for Java EE7 Full Platform compliance. The `javaee7` image is also tagged with `latest`.
 
-There are also corresponding image tags that contain the version number of the Liberty release contained within the image. These are primarily to signpost the current version in use and will be updated when a subsequent release becomes available. Consequently, use these tags only if you explicitly want your build to break when a new release becomes available. The Liberty zero migration policy means that you can use the non-version specific tags knowing that your application will continue to work when a new release becomes available.
-
 # Usage
 
 The images are designed to support a number of different usage patterns. The following examples are based on the Java EE7 Liberty [application deployment sample](https://developer.ibm.com/wasdev/docs/article_appdeployment/) and assume that [DefaultServletEngine.zip](https://github.com/WASdev/sample.servlet/releases/download/V1/DefaultServletEngine.zip) has been extracted to `/tmp` and the `server.xml` updated to accept HTTP connections from outside of the container by adding the following element inside the `server` stanza:
