@@ -13,7 +13,7 @@ repoDir="$dir/../$repo"
 url='https://raw.githubusercontent.com/docker-library/official-images/master/library/'"$repo"
 
 IFS=$'\n'
-tags=( $(curl -fsSL "$url" | grep -vE '^$|^#' | cut -d':' -f1 | sort -u) )
+tags=( $(bashbrew cat -f '{{ range .Entries }}{{ join "\n" .Tags }}{{ "\n" }}{{ end }}' "$url") )
 unset IFS
 
 text=
@@ -21,27 +21,26 @@ for tag in "${tags[@]}"; do
 	for f in "$repoDir/variant-$tag.md" "$dir/variant-$tag.md"; do
 		if [ -f "$f" ]; then
 			text+=$'\n' # give a little space
-			# because parameter expansion eats the trailing newline
-			text+="$(<"$f")"$'\n'
+			text+="$(< "$f")"
+			text+=$'\n' # parameter expansion eats the trailing newline
 			break
 		fi
 	done
 done
+
 if [ "$text" ]; then
-	latest=($(curl -fsSL "$url" | grep "latest.*github.com" | sed -e 's!git://github.com/!!' -e 's/@/ /' -))
-	if [ -z "latest" ]; then
-		exit 0 # If not github or no latest tag, we are done here
-	fi
-	dockerfile='https://raw.githubusercontent.com/'"${latest[1]}"'/'"${latest[2]}"'/'"${latest[3]}"'/Dockerfile'
-	baseImage=$(curl -fsSL "$dockerfile" | awk -F '[: \t]+' '$1 == "FROM" { print $2 }')
-	# give a little space
+	baseImage="$(bashbrew cat -f '{{ .DockerFrom .TagEntry }}' "$url":latest)"
+	baseImage="${baseImage%:*}"
+
 	echo
 	echo
+
 	if [ "$baseImage" = 'buildpack-deps' ]; then
 		f='variant-buildpacks.md'
 	else
 		f='variant.md'
 	fi
 	[ -f "$repoDir/$f" ] && cat "$repoDir/$f" || cat "$dir/$f"
+
 	echo "$text"
 fi
