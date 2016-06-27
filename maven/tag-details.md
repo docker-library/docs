@@ -40,7 +40,7 @@
 ## `maven:3.3.9-jdk-7`
 
 ```console
-$ docker pull maven@sha256:56acbc36cf6fc9a0e249fbd71a7c69f1f73a63b3d48a5f9370aac50c3cda3574
+$ docker pull maven@sha256:ab455f9f9fd7f45fc19352e98b7a318525839552a32a13131fd6c62f94beae09
 ```
 
 -	Platforms:
@@ -48,102 +48,75 @@ $ docker pull maven@sha256:56acbc36cf6fc9a0e249fbd71a7c69f1f73a63b3d48a5f9370aac
 
 ### `maven:3.3.9-jdk-7` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.9 MB (260862346 bytes)**  
+-	Total Size: **261.0 MB (260950654 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c240edf7bd6f2efae679a478cecece40f932bfc7e3340d670b5c61b200c6dbe3`
+-	Image ID: `sha256:614b21884cae0c38d5e38da40160b7313e26bb1d52b9aeefb50fc4c7dcfb6c46`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:54 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 ENV LANG=C.UTF-8
-# Mon, 23 May 2016 23:54:56 GMT
+# Thu, 09 Jun 2016 22:05:17 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Mon, 23 May 2016 23:54:57 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 23 May 2016 23:54:58 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_VERSION=7u101
-# Mon, 23 May 2016 23:54:59 GMT
-ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-1~deb8u1
-# Mon, 23 May 2016 23:56:32 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-2~deb8u1
+# Thu, 09 Jun 2016 22:07:27 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:00:20 GMT
+# Fri, 10 Jun 2016 21:52:04 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:00:23 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:00:25 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a843091b25650e9bc1d8c4f070f78a2fe9a20c7c6b340a0633f8fbd5525a40d4`  
-		Last Modified: Tue, 24 May 2016 15:41:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:799eef929b90bdd3827b40e98bee54dc6127967a606ff17c76c49d39cdbc1703`  
-		Last Modified: Tue, 24 May 2016 15:41:21 GMT  
-		Size: 139.3 MB (139288800 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b1094b21e76fb383be0a4c3ced097dafcbdeb369ac1f9313c2e19c58bd2ef6a1`  
-		Last Modified: Tue, 31 May 2016 20:36:38 GMT  
-		Size: 8.6 MB (8598810 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:5341b7d465f1a959ae98ed72357d750249c43dd3e10009d2f7a5bdae80abf7be`  
+		Last Modified: Thu, 09 Jun 2016 22:17:36 GMT  
+		Size: 242.0 B
+	-	`sha256:b4bcb2ffc258c480d903431b194500bfe9e9296982e15af57ffaa67ab1c6ca24`  
+		Last Modified: Thu, 09 Jun 2016 22:18:02 GMT  
+		Size: 139.3 MB (139304231 bytes)
+	-	`sha256:77120b7f8ae4db1a738c71d52589a03cf4d76dbb6fbdc69029c5f10584ff6f95`  
+		Last Modified: Mon, 27 Jun 2016 17:00:38 GMT  
+		Size: 8.6 MB (8598796 bytes)
 
 ## `maven:3.3-jdk-7`
 
 ```console
-$ docker pull maven@sha256:56acbc36cf6fc9a0e249fbd71a7c69f1f73a63b3d48a5f9370aac50c3cda3574
+$ docker pull maven@sha256:ab455f9f9fd7f45fc19352e98b7a318525839552a32a13131fd6c62f94beae09
 ```
 
 -	Platforms:
@@ -151,102 +124,75 @@ $ docker pull maven@sha256:56acbc36cf6fc9a0e249fbd71a7c69f1f73a63b3d48a5f9370aac
 
 ### `maven:3.3-jdk-7` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.9 MB (260862346 bytes)**  
+-	Total Size: **261.0 MB (260950654 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c240edf7bd6f2efae679a478cecece40f932bfc7e3340d670b5c61b200c6dbe3`
+-	Image ID: `sha256:614b21884cae0c38d5e38da40160b7313e26bb1d52b9aeefb50fc4c7dcfb6c46`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:54 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 ENV LANG=C.UTF-8
-# Mon, 23 May 2016 23:54:56 GMT
+# Thu, 09 Jun 2016 22:05:17 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Mon, 23 May 2016 23:54:57 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 23 May 2016 23:54:58 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_VERSION=7u101
-# Mon, 23 May 2016 23:54:59 GMT
-ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-1~deb8u1
-# Mon, 23 May 2016 23:56:32 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-2~deb8u1
+# Thu, 09 Jun 2016 22:07:27 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:00:20 GMT
+# Fri, 10 Jun 2016 21:52:04 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:00:23 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:00:25 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a843091b25650e9bc1d8c4f070f78a2fe9a20c7c6b340a0633f8fbd5525a40d4`  
-		Last Modified: Tue, 24 May 2016 15:41:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:799eef929b90bdd3827b40e98bee54dc6127967a606ff17c76c49d39cdbc1703`  
-		Last Modified: Tue, 24 May 2016 15:41:21 GMT  
-		Size: 139.3 MB (139288800 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b1094b21e76fb383be0a4c3ced097dafcbdeb369ac1f9313c2e19c58bd2ef6a1`  
-		Last Modified: Tue, 31 May 2016 20:36:38 GMT  
-		Size: 8.6 MB (8598810 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:5341b7d465f1a959ae98ed72357d750249c43dd3e10009d2f7a5bdae80abf7be`  
+		Last Modified: Thu, 09 Jun 2016 22:17:36 GMT  
+		Size: 242.0 B
+	-	`sha256:b4bcb2ffc258c480d903431b194500bfe9e9296982e15af57ffaa67ab1c6ca24`  
+		Last Modified: Thu, 09 Jun 2016 22:18:02 GMT  
+		Size: 139.3 MB (139304231 bytes)
+	-	`sha256:77120b7f8ae4db1a738c71d52589a03cf4d76dbb6fbdc69029c5f10584ff6f95`  
+		Last Modified: Mon, 27 Jun 2016 17:00:38 GMT  
+		Size: 8.6 MB (8598796 bytes)
 
 ## `maven:3-jdk-7`
 
 ```console
-$ docker pull maven@sha256:56acbc36cf6fc9a0e249fbd71a7c69f1f73a63b3d48a5f9370aac50c3cda3574
+$ docker pull maven@sha256:ab455f9f9fd7f45fc19352e98b7a318525839552a32a13131fd6c62f94beae09
 ```
 
 -	Platforms:
@@ -254,102 +200,75 @@ $ docker pull maven@sha256:56acbc36cf6fc9a0e249fbd71a7c69f1f73a63b3d48a5f9370aac
 
 ### `maven:3-jdk-7` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.9 MB (260862346 bytes)**  
+-	Total Size: **261.0 MB (260950654 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c240edf7bd6f2efae679a478cecece40f932bfc7e3340d670b5c61b200c6dbe3`
+-	Image ID: `sha256:614b21884cae0c38d5e38da40160b7313e26bb1d52b9aeefb50fc4c7dcfb6c46`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:54 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 ENV LANG=C.UTF-8
-# Mon, 23 May 2016 23:54:56 GMT
+# Thu, 09 Jun 2016 22:05:17 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Mon, 23 May 2016 23:54:57 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 23 May 2016 23:54:58 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_VERSION=7u101
-# Mon, 23 May 2016 23:54:59 GMT
-ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-1~deb8u1
-# Mon, 23 May 2016 23:56:32 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-2~deb8u1
+# Thu, 09 Jun 2016 22:07:27 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:00:20 GMT
+# Fri, 10 Jun 2016 21:52:04 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:00:23 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:00:25 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a843091b25650e9bc1d8c4f070f78a2fe9a20c7c6b340a0633f8fbd5525a40d4`  
-		Last Modified: Tue, 24 May 2016 15:41:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:799eef929b90bdd3827b40e98bee54dc6127967a606ff17c76c49d39cdbc1703`  
-		Last Modified: Tue, 24 May 2016 15:41:21 GMT  
-		Size: 139.3 MB (139288800 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b1094b21e76fb383be0a4c3ced097dafcbdeb369ac1f9313c2e19c58bd2ef6a1`  
-		Last Modified: Tue, 31 May 2016 20:36:38 GMT  
-		Size: 8.6 MB (8598810 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:5341b7d465f1a959ae98ed72357d750249c43dd3e10009d2f7a5bdae80abf7be`  
+		Last Modified: Thu, 09 Jun 2016 22:17:36 GMT  
+		Size: 242.0 B
+	-	`sha256:b4bcb2ffc258c480d903431b194500bfe9e9296982e15af57ffaa67ab1c6ca24`  
+		Last Modified: Thu, 09 Jun 2016 22:18:02 GMT  
+		Size: 139.3 MB (139304231 bytes)
+	-	`sha256:77120b7f8ae4db1a738c71d52589a03cf4d76dbb6fbdc69029c5f10584ff6f95`  
+		Last Modified: Mon, 27 Jun 2016 17:00:38 GMT  
+		Size: 8.6 MB (8598796 bytes)
 
 ## `maven:3.3.9-jdk-7-onbuild`
 
 ```console
-$ docker pull maven@sha256:5474be00138c458bafa619dae5d8bb5f4d34b11d6a153255b10b20d01e0dd8a2
+$ docker pull maven@sha256:3554886093ff46c5c4e5918a003aa3564f3ea2a4a439ef1e54e5d16836808aab
 ```
 
 -	Platforms:
@@ -357,122 +276,86 @@ $ docker pull maven@sha256:5474be00138c458bafa619dae5d8bb5f4d34b11d6a153255b10b2
 
 ### `maven:3.3.9-jdk-7-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.9 MB (260862599 bytes)**  
+-	Total Size: **261.0 MB (260950812 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:167c604f58416c921455de466d5a7439e5a0500df05f07e66f9ee83c459aad44`
+-	Image ID: `sha256:3f2ebb12d6c0393b050fcf78a48b5cb23591fd3790d32f6560c891fb7b238a14`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:54 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 ENV LANG=C.UTF-8
-# Mon, 23 May 2016 23:54:56 GMT
+# Thu, 09 Jun 2016 22:05:17 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Mon, 23 May 2016 23:54:57 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 23 May 2016 23:54:58 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_VERSION=7u101
-# Mon, 23 May 2016 23:54:59 GMT
-ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-1~deb8u1
-# Mon, 23 May 2016 23:56:32 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-2~deb8u1
+# Thu, 09 Jun 2016 22:07:27 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:00:20 GMT
+# Fri, 10 Jun 2016 21:52:04 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:00:23 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:00:25 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:01:01 GMT
+# Fri, 10 Jun 2016 21:52:13 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:01:01 GMT
+# Fri, 10 Jun 2016 21:52:13 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:01:02 GMT
+# Fri, 10 Jun 2016 21:52:13 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:01:03 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a843091b25650e9bc1d8c4f070f78a2fe9a20c7c6b340a0633f8fbd5525a40d4`  
-		Last Modified: Tue, 24 May 2016 15:41:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:799eef929b90bdd3827b40e98bee54dc6127967a606ff17c76c49d39cdbc1703`  
-		Last Modified: Tue, 24 May 2016 15:41:21 GMT  
-		Size: 139.3 MB (139288800 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b1094b21e76fb383be0a4c3ced097dafcbdeb369ac1f9313c2e19c58bd2ef6a1`  
-		Last Modified: Tue, 31 May 2016 20:36:38 GMT  
-		Size: 8.6 MB (8598810 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e4a6283597630f4619b25dd701d6fef2e7f1ecd077054d14149aa94deb860cf1`  
-		Last Modified: Tue, 31 May 2016 20:39:20 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:5341b7d465f1a959ae98ed72357d750249c43dd3e10009d2f7a5bdae80abf7be`  
+		Last Modified: Thu, 09 Jun 2016 22:17:36 GMT  
+		Size: 242.0 B
+	-	`sha256:b4bcb2ffc258c480d903431b194500bfe9e9296982e15af57ffaa67ab1c6ca24`  
+		Last Modified: Thu, 09 Jun 2016 22:18:02 GMT  
+		Size: 139.3 MB (139304231 bytes)
+	-	`sha256:77120b7f8ae4db1a738c71d52589a03cf4d76dbb6fbdc69029c5f10584ff6f95`  
+		Last Modified: Mon, 27 Jun 2016 17:00:38 GMT  
+		Size: 8.6 MB (8598796 bytes)
+	-	`sha256:d7c92ab9a4757a37ca6a8c12783c0b1544a3cbc6149f92032869c9eb0935fd3b`  
+		Last Modified: Mon, 27 Jun 2016 17:01:06 GMT  
+		Size: 158.0 B
 
 ## `maven:3.3-jdk-7-onbuild`
 
 ```console
-$ docker pull maven@sha256:5474be00138c458bafa619dae5d8bb5f4d34b11d6a153255b10b20d01e0dd8a2
+$ docker pull maven@sha256:3554886093ff46c5c4e5918a003aa3564f3ea2a4a439ef1e54e5d16836808aab
 ```
 
 -	Platforms:
@@ -480,122 +363,86 @@ $ docker pull maven@sha256:5474be00138c458bafa619dae5d8bb5f4d34b11d6a153255b10b2
 
 ### `maven:3.3-jdk-7-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.9 MB (260862599 bytes)**  
+-	Total Size: **261.0 MB (260950812 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:167c604f58416c921455de466d5a7439e5a0500df05f07e66f9ee83c459aad44`
+-	Image ID: `sha256:3f2ebb12d6c0393b050fcf78a48b5cb23591fd3790d32f6560c891fb7b238a14`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:54 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 ENV LANG=C.UTF-8
-# Mon, 23 May 2016 23:54:56 GMT
+# Thu, 09 Jun 2016 22:05:17 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Mon, 23 May 2016 23:54:57 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 23 May 2016 23:54:58 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_VERSION=7u101
-# Mon, 23 May 2016 23:54:59 GMT
-ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-1~deb8u1
-# Mon, 23 May 2016 23:56:32 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-2~deb8u1
+# Thu, 09 Jun 2016 22:07:27 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:00:20 GMT
+# Fri, 10 Jun 2016 21:52:04 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:00:23 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:00:25 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:01:01 GMT
+# Fri, 10 Jun 2016 21:52:13 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:01:01 GMT
+# Fri, 10 Jun 2016 21:52:13 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:01:02 GMT
+# Fri, 10 Jun 2016 21:52:13 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:01:03 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a843091b25650e9bc1d8c4f070f78a2fe9a20c7c6b340a0633f8fbd5525a40d4`  
-		Last Modified: Tue, 24 May 2016 15:41:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:799eef929b90bdd3827b40e98bee54dc6127967a606ff17c76c49d39cdbc1703`  
-		Last Modified: Tue, 24 May 2016 15:41:21 GMT  
-		Size: 139.3 MB (139288800 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b1094b21e76fb383be0a4c3ced097dafcbdeb369ac1f9313c2e19c58bd2ef6a1`  
-		Last Modified: Tue, 31 May 2016 20:36:38 GMT  
-		Size: 8.6 MB (8598810 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e4a6283597630f4619b25dd701d6fef2e7f1ecd077054d14149aa94deb860cf1`  
-		Last Modified: Tue, 31 May 2016 20:39:20 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:5341b7d465f1a959ae98ed72357d750249c43dd3e10009d2f7a5bdae80abf7be`  
+		Last Modified: Thu, 09 Jun 2016 22:17:36 GMT  
+		Size: 242.0 B
+	-	`sha256:b4bcb2ffc258c480d903431b194500bfe9e9296982e15af57ffaa67ab1c6ca24`  
+		Last Modified: Thu, 09 Jun 2016 22:18:02 GMT  
+		Size: 139.3 MB (139304231 bytes)
+	-	`sha256:77120b7f8ae4db1a738c71d52589a03cf4d76dbb6fbdc69029c5f10584ff6f95`  
+		Last Modified: Mon, 27 Jun 2016 17:00:38 GMT  
+		Size: 8.6 MB (8598796 bytes)
+	-	`sha256:d7c92ab9a4757a37ca6a8c12783c0b1544a3cbc6149f92032869c9eb0935fd3b`  
+		Last Modified: Mon, 27 Jun 2016 17:01:06 GMT  
+		Size: 158.0 B
 
 ## `maven:3-jdk-7-onbuild`
 
 ```console
-$ docker pull maven@sha256:5474be00138c458bafa619dae5d8bb5f4d34b11d6a153255b10b20d01e0dd8a2
+$ docker pull maven@sha256:3554886093ff46c5c4e5918a003aa3564f3ea2a4a439ef1e54e5d16836808aab
 ```
 
 -	Platforms:
@@ -603,122 +450,86 @@ $ docker pull maven@sha256:5474be00138c458bafa619dae5d8bb5f4d34b11d6a153255b10b2
 
 ### `maven:3-jdk-7-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.9 MB (260862599 bytes)**  
+-	Total Size: **261.0 MB (260950812 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:167c604f58416c921455de466d5a7439e5a0500df05f07e66f9ee83c459aad44`
+-	Image ID: `sha256:3f2ebb12d6c0393b050fcf78a48b5cb23591fd3790d32f6560c891fb7b238a14`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:54 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 ENV LANG=C.UTF-8
-# Mon, 23 May 2016 23:54:56 GMT
+# Thu, 09 Jun 2016 22:05:17 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Mon, 23 May 2016 23:54:57 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 23 May 2016 23:54:58 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_VERSION=7u101
-# Mon, 23 May 2016 23:54:59 GMT
-ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-1~deb8u1
-# Mon, 23 May 2016 23:56:32 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-2~deb8u1
+# Thu, 09 Jun 2016 22:07:27 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:00:20 GMT
+# Fri, 10 Jun 2016 21:52:04 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:00:23 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:00:24 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:00:25 GMT
+# Fri, 10 Jun 2016 21:52:07 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:01:01 GMT
+# Fri, 10 Jun 2016 21:52:13 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:01:01 GMT
+# Fri, 10 Jun 2016 21:52:13 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:01:02 GMT
+# Fri, 10 Jun 2016 21:52:13 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:01:03 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a843091b25650e9bc1d8c4f070f78a2fe9a20c7c6b340a0633f8fbd5525a40d4`  
-		Last Modified: Tue, 24 May 2016 15:41:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:799eef929b90bdd3827b40e98bee54dc6127967a606ff17c76c49d39cdbc1703`  
-		Last Modified: Tue, 24 May 2016 15:41:21 GMT  
-		Size: 139.3 MB (139288800 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b1094b21e76fb383be0a4c3ced097dafcbdeb369ac1f9313c2e19c58bd2ef6a1`  
-		Last Modified: Tue, 31 May 2016 20:36:38 GMT  
-		Size: 8.6 MB (8598810 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:e4a6283597630f4619b25dd701d6fef2e7f1ecd077054d14149aa94deb860cf1`  
-		Last Modified: Tue, 31 May 2016 20:39:20 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:5341b7d465f1a959ae98ed72357d750249c43dd3e10009d2f7a5bdae80abf7be`  
+		Last Modified: Thu, 09 Jun 2016 22:17:36 GMT  
+		Size: 242.0 B
+	-	`sha256:b4bcb2ffc258c480d903431b194500bfe9e9296982e15af57ffaa67ab1c6ca24`  
+		Last Modified: Thu, 09 Jun 2016 22:18:02 GMT  
+		Size: 139.3 MB (139304231 bytes)
+	-	`sha256:77120b7f8ae4db1a738c71d52589a03cf4d76dbb6fbdc69029c5f10584ff6f95`  
+		Last Modified: Mon, 27 Jun 2016 17:00:38 GMT  
+		Size: 8.6 MB (8598796 bytes)
+	-	`sha256:d7c92ab9a4757a37ca6a8c12783c0b1544a3cbc6149f92032869c9eb0935fd3b`  
+		Last Modified: Mon, 27 Jun 2016 17:01:06 GMT  
+		Size: 158.0 B
 
 ## `maven:3.3.9-jdk-8`
 
 ```console
-$ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127dc49254196b
+$ docker pull maven@sha256:e8b86eefc2a429f063b5ef3175984cbaa7dbccaa2978205f9a4123ccee93cac5
 ```
 
 -	Platforms:
@@ -726,117 +537,87 @@ $ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127
 
 ### `maven:3.3.9-jdk-8` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846325 bytes)**  
+-	Total Size: **252.0 MB (251951108 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42e3884987fb83dc5b78950e0e0e201e88fb012aef7daf6444a11bd003d178b1`
+-	Image ID: `sha256:2c43f939de6e5a4e0a906032254aa203f8c4b54dec98cbdacc4b1ad802f0f891`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
 
 ## `maven:3.3.9`
 
 ```console
-$ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127dc49254196b
+$ docker pull maven@sha256:e8b86eefc2a429f063b5ef3175984cbaa7dbccaa2978205f9a4123ccee93cac5
 ```
 
 -	Platforms:
@@ -844,117 +625,87 @@ $ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127
 
 ### `maven:3.3.9` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846325 bytes)**  
+-	Total Size: **252.0 MB (251951108 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42e3884987fb83dc5b78950e0e0e201e88fb012aef7daf6444a11bd003d178b1`
+-	Image ID: `sha256:2c43f939de6e5a4e0a906032254aa203f8c4b54dec98cbdacc4b1ad802f0f891`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
 
 ## `maven:3.3-jdk-8`
 
 ```console
-$ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127dc49254196b
+$ docker pull maven@sha256:e8b86eefc2a429f063b5ef3175984cbaa7dbccaa2978205f9a4123ccee93cac5
 ```
 
 -	Platforms:
@@ -962,117 +713,87 @@ $ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127
 
 ### `maven:3.3-jdk-8` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846325 bytes)**  
+-	Total Size: **252.0 MB (251951108 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42e3884987fb83dc5b78950e0e0e201e88fb012aef7daf6444a11bd003d178b1`
+-	Image ID: `sha256:2c43f939de6e5a4e0a906032254aa203f8c4b54dec98cbdacc4b1ad802f0f891`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
 
 ## `maven:3.3`
 
 ```console
-$ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127dc49254196b
+$ docker pull maven@sha256:e8b86eefc2a429f063b5ef3175984cbaa7dbccaa2978205f9a4123ccee93cac5
 ```
 
 -	Platforms:
@@ -1080,117 +801,87 @@ $ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127
 
 ### `maven:3.3` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846325 bytes)**  
+-	Total Size: **252.0 MB (251951108 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42e3884987fb83dc5b78950e0e0e201e88fb012aef7daf6444a11bd003d178b1`
+-	Image ID: `sha256:2c43f939de6e5a4e0a906032254aa203f8c4b54dec98cbdacc4b1ad802f0f891`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
 
 ## `maven:3-jdk-8`
 
 ```console
-$ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127dc49254196b
+$ docker pull maven@sha256:e8b86eefc2a429f063b5ef3175984cbaa7dbccaa2978205f9a4123ccee93cac5
 ```
 
 -	Platforms:
@@ -1198,117 +889,87 @@ $ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127
 
 ### `maven:3-jdk-8` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846325 bytes)**  
+-	Total Size: **252.0 MB (251951108 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42e3884987fb83dc5b78950e0e0e201e88fb012aef7daf6444a11bd003d178b1`
+-	Image ID: `sha256:2c43f939de6e5a4e0a906032254aa203f8c4b54dec98cbdacc4b1ad802f0f891`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
 
 ## `maven:3`
 
 ```console
-$ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127dc49254196b
+$ docker pull maven@sha256:e8b86eefc2a429f063b5ef3175984cbaa7dbccaa2978205f9a4123ccee93cac5
 ```
 
 -	Platforms:
@@ -1316,117 +977,87 @@ $ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127
 
 ### `maven:3` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846325 bytes)**  
+-	Total Size: **252.0 MB (251951108 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42e3884987fb83dc5b78950e0e0e201e88fb012aef7daf6444a11bd003d178b1`
+-	Image ID: `sha256:2c43f939de6e5a4e0a906032254aa203f8c4b54dec98cbdacc4b1ad802f0f891`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
 
 ## `maven:latest`
 
 ```console
-$ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127dc49254196b
+$ docker pull maven@sha256:e8b86eefc2a429f063b5ef3175984cbaa7dbccaa2978205f9a4123ccee93cac5
 ```
 
 -	Platforms:
@@ -1434,117 +1065,87 @@ $ docker pull maven@sha256:a778b088c8bedba9d407c776cf30a398c937c207444a2d8add127
 
 ### `maven:latest` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846325 bytes)**  
+-	Total Size: **252.0 MB (251951108 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42e3884987fb83dc5b78950e0e0e201e88fb012aef7daf6444a11bd003d178b1`
+-	Image ID: `sha256:2c43f939de6e5a4e0a906032254aa203f8c4b54dec98cbdacc4b1ad802f0f891`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
 
 ## `maven:3.3.9-jdk-8-onbuild`
 
 ```console
-$ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b428ad05b9e2
+$ docker pull maven@sha256:019a6e247ca1c10c73422648a644b267554063684fab5f74441e31104709549f
 ```
 
 -	Platforms:
@@ -1552,137 +1153,98 @@ $ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b
 
 ### `maven:3.3.9-jdk-8-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846578 bytes)**  
+-	Total Size: **252.0 MB (251951267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac7e67ad888e563f605862f5426495dae605cbc2c919de589d2e159f6fcb13db`
+-	Image ID: `sha256:399ad9fa777d50079b08b3454dae1b275d56aefbfe89ae36f4b0b307c019af2d`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:03:24 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:03:25 GMT
+# Fri, 10 Jun 2016 21:52:20 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:311e5ad8c2ab5d6ff836b3722bf08a356cc14c33565be1e7cc916af1a98cc339`  
-		Last Modified: Tue, 31 May 2016 20:42:34 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
+	-	`sha256:be2efd3cf3b62e52312cacde6db0dd1c96035bda7e3b7c811fbef1eb70440744`  
+		Last Modified: Mon, 27 Jun 2016 16:58:45 GMT  
+		Size: 159.0 B
 
 ## `maven:3.3.9-onbuild`
 
 ```console
-$ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b428ad05b9e2
+$ docker pull maven@sha256:019a6e247ca1c10c73422648a644b267554063684fab5f74441e31104709549f
 ```
 
 -	Platforms:
@@ -1690,137 +1252,98 @@ $ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b
 
 ### `maven:3.3.9-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846578 bytes)**  
+-	Total Size: **252.0 MB (251951267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac7e67ad888e563f605862f5426495dae605cbc2c919de589d2e159f6fcb13db`
+-	Image ID: `sha256:399ad9fa777d50079b08b3454dae1b275d56aefbfe89ae36f4b0b307c019af2d`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:03:24 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:03:25 GMT
+# Fri, 10 Jun 2016 21:52:20 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:311e5ad8c2ab5d6ff836b3722bf08a356cc14c33565be1e7cc916af1a98cc339`  
-		Last Modified: Tue, 31 May 2016 20:42:34 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
+	-	`sha256:be2efd3cf3b62e52312cacde6db0dd1c96035bda7e3b7c811fbef1eb70440744`  
+		Last Modified: Mon, 27 Jun 2016 16:58:45 GMT  
+		Size: 159.0 B
 
 ## `maven:3.3-jdk-8-onbuild`
 
 ```console
-$ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b428ad05b9e2
+$ docker pull maven@sha256:019a6e247ca1c10c73422648a644b267554063684fab5f74441e31104709549f
 ```
 
 -	Platforms:
@@ -1828,137 +1351,98 @@ $ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b
 
 ### `maven:3.3-jdk-8-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846578 bytes)**  
+-	Total Size: **252.0 MB (251951267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac7e67ad888e563f605862f5426495dae605cbc2c919de589d2e159f6fcb13db`
+-	Image ID: `sha256:399ad9fa777d50079b08b3454dae1b275d56aefbfe89ae36f4b0b307c019af2d`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:03:24 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:03:25 GMT
+# Fri, 10 Jun 2016 21:52:20 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:311e5ad8c2ab5d6ff836b3722bf08a356cc14c33565be1e7cc916af1a98cc339`  
-		Last Modified: Tue, 31 May 2016 20:42:34 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
+	-	`sha256:be2efd3cf3b62e52312cacde6db0dd1c96035bda7e3b7c811fbef1eb70440744`  
+		Last Modified: Mon, 27 Jun 2016 16:58:45 GMT  
+		Size: 159.0 B
 
 ## `maven:3.3-onbuild`
 
 ```console
-$ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b428ad05b9e2
+$ docker pull maven@sha256:019a6e247ca1c10c73422648a644b267554063684fab5f74441e31104709549f
 ```
 
 -	Platforms:
@@ -1966,137 +1450,98 @@ $ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b
 
 ### `maven:3.3-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846578 bytes)**  
+-	Total Size: **252.0 MB (251951267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac7e67ad888e563f605862f5426495dae605cbc2c919de589d2e159f6fcb13db`
+-	Image ID: `sha256:399ad9fa777d50079b08b3454dae1b275d56aefbfe89ae36f4b0b307c019af2d`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:03:24 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:03:25 GMT
+# Fri, 10 Jun 2016 21:52:20 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:311e5ad8c2ab5d6ff836b3722bf08a356cc14c33565be1e7cc916af1a98cc339`  
-		Last Modified: Tue, 31 May 2016 20:42:34 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
+	-	`sha256:be2efd3cf3b62e52312cacde6db0dd1c96035bda7e3b7c811fbef1eb70440744`  
+		Last Modified: Mon, 27 Jun 2016 16:58:45 GMT  
+		Size: 159.0 B
 
 ## `maven:3-jdk-8-onbuild`
 
 ```console
-$ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b428ad05b9e2
+$ docker pull maven@sha256:019a6e247ca1c10c73422648a644b267554063684fab5f74441e31104709549f
 ```
 
 -	Platforms:
@@ -2104,137 +1549,98 @@ $ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b
 
 ### `maven:3-jdk-8-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846578 bytes)**  
+-	Total Size: **252.0 MB (251951267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac7e67ad888e563f605862f5426495dae605cbc2c919de589d2e159f6fcb13db`
+-	Image ID: `sha256:399ad9fa777d50079b08b3454dae1b275d56aefbfe89ae36f4b0b307c019af2d`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:03:24 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:03:25 GMT
+# Fri, 10 Jun 2016 21:52:20 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:311e5ad8c2ab5d6ff836b3722bf08a356cc14c33565be1e7cc916af1a98cc339`  
-		Last Modified: Tue, 31 May 2016 20:42:34 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
+	-	`sha256:be2efd3cf3b62e52312cacde6db0dd1c96035bda7e3b7c811fbef1eb70440744`  
+		Last Modified: Mon, 27 Jun 2016 16:58:45 GMT  
+		Size: 159.0 B
 
 ## `maven:3-onbuild`
 
 ```console
-$ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b428ad05b9e2
+$ docker pull maven@sha256:019a6e247ca1c10c73422648a644b267554063684fab5f74441e31104709549f
 ```
 
 -	Platforms:
@@ -2242,137 +1648,98 @@ $ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b
 
 ### `maven:3-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846578 bytes)**  
+-	Total Size: **252.0 MB (251951267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac7e67ad888e563f605862f5426495dae605cbc2c919de589d2e159f6fcb13db`
+-	Image ID: `sha256:399ad9fa777d50079b08b3454dae1b275d56aefbfe89ae36f4b0b307c019af2d`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:03:24 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:03:25 GMT
+# Fri, 10 Jun 2016 21:52:20 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:311e5ad8c2ab5d6ff836b3722bf08a356cc14c33565be1e7cc916af1a98cc339`  
-		Last Modified: Tue, 31 May 2016 20:42:34 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
+	-	`sha256:be2efd3cf3b62e52312cacde6db0dd1c96035bda7e3b7c811fbef1eb70440744`  
+		Last Modified: Mon, 27 Jun 2016 16:58:45 GMT  
+		Size: 159.0 B
 
 ## `maven:onbuild`
 
 ```console
-$ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b428ad05b9e2
+$ docker pull maven@sha256:019a6e247ca1c10c73422648a644b267554063684fab5f74441e31104709549f
 ```
 
 -	Platforms:
@@ -2380,137 +1747,98 @@ $ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b
 
 ### `maven:onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846578 bytes)**  
+-	Total Size: **252.0 MB (251951267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac7e67ad888e563f605862f5426495dae605cbc2c919de589d2e159f6fcb13db`
+-	Image ID: `sha256:399ad9fa777d50079b08b3454dae1b275d56aefbfe89ae36f4b0b307c019af2d`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:03:24 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:03:25 GMT
+# Fri, 10 Jun 2016 21:52:20 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:311e5ad8c2ab5d6ff836b3722bf08a356cc14c33565be1e7cc916af1a98cc339`  
-		Last Modified: Tue, 31 May 2016 20:42:34 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
+	-	`sha256:be2efd3cf3b62e52312cacde6db0dd1c96035bda7e3b7c811fbef1eb70440744`  
+		Last Modified: Mon, 27 Jun 2016 16:58:45 GMT  
+		Size: 159.0 B
 
 ## `maven:3.3.9-jdk-9`
 
 ```console
-$ docker pull maven@sha256:2861d16b99c6ef4ac14641c848ffb195213354d3104072dff4d818462665caae
+$ docker pull maven@sha256:afeb90f43d7bf960debab13c6b4e0d14d6b516631917abc3467de75c247cdf2c
 ```
 
 -	Platforms:
@@ -2518,107 +1846,80 @@ $ docker pull maven@sha256:2861d16b99c6ef4ac14641c848ffb195213354d3104072dff4d81
 
 ### `maven:3.3.9-jdk-9` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **345.9 MB (345934063 bytes)**  
+-	Total Size: **248.3 MB (248311641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73e86a167e0d1592838c00862d3b023f03c6404421510e2123243324f5226243`
+-	Image ID: `sha256:9ec49233e2f49db9b6cfb4832c8922ec58051513b630b0d728b31ce7cf576c59`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:58:07 GMT
-ADD file:da3b5fc938127d19500b2bbc371034d938efc511e08da0e687e46a06761be59f in /
-# Mon, 23 May 2016 22:58:10 GMT
+# Thu, 09 Jun 2016 21:29:06 GMT
+ADD file:8fdc004f9416952c9e1590e8cabcbb49792bbd424d6ee25dae34e39fb952832b in /
+# Thu, 09 Jun 2016 21:29:06 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:03:43 GMT
+# Thu, 09 Jun 2016 21:39:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:04:01 GMT
+# Thu, 09 Jun 2016 21:40:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:49:52 GMT
+# Thu, 09 Jun 2016 22:14:01 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:49:54 GMT
+# Thu, 09 Jun 2016 22:14:02 GMT
 RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
-# Tue, 24 May 2016 00:49:55 GMT
+# Thu, 09 Jun 2016 22:14:02 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:49:57 GMT
+# Thu, 09 Jun 2016 22:14:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:49:57 GMT
+# Thu, 09 Jun 2016 22:14:03 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Tue, 24 May 2016 00:49:59 GMT
-ENV JAVA_VERSION=9~b116
-# Tue, 24 May 2016 00:49:59 GMT
-ENV JAVA_DEBIAN_VERSION=9~b116-1
-# Tue, 24 May 2016 00:50:54 GMT
+# Sat, 25 Jun 2016 01:29:53 GMT
+ENV JAVA_VERSION=9~b124
+# Sat, 25 Jun 2016 01:29:53 GMT
+ENV JAVA_DEBIAN_VERSION=9~b124-1
+# Sat, 25 Jun 2016 01:30:23 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:04:48 GMT
+# Mon, 27 Jun 2016 16:58:03 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:04:50 GMT
+# Mon, 27 Jun 2016 16:58:06 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:04:51 GMT
+# Mon, 27 Jun 2016 16:58:07 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:04:51 GMT
+# Mon, 27 Jun 2016 16:58:07 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:04:52 GMT
+# Mon, 27 Jun 2016 16:58:08 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bbc93ec28c0aac545f17c5c41a07c25ff71313ed4304b098a20cc200de7a6ac3`  
-		Last Modified: Mon, 23 May 2016 23:11:07 GMT  
-		Size: 52.7 MB (52733547 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:fac6cf62f5b092c9f2fa1b2ca7878b28887acc72dc5e1a87b0f350015c591a7c`  
-		Last Modified: Mon, 23 May 2016 23:16:13 GMT  
-		Size: 20.5 MB (20468796 bytes)
-	-	`sha256:f8d6cdaafedeeba79c7ddf3c1e73a7bc69bb85cebd4101e1a42cc8d5369bff8f`  
-		Last Modified: Mon, 23 May 2016 23:16:55 GMT  
-		Size: 47.2 MB (47194650 bytes)
-	-	`sha256:254cd787dfaf008873adb488de457c89928d5da4da63c4310ba19d2ff5cff587`  
-		Last Modified: Tue, 24 May 2016 15:51:08 GMT  
-		Size: 592.2 KB (592186 bytes)
-	-	`sha256:906179aaf91b362eeaaa086892ce4cd0c7bafad296609c4f3a0f0e2a61b34ddc`  
-		Last Modified: Tue, 24 May 2016 15:51:04 GMT  
-		Size: 217.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1bf4173341520673f1907ce06e007700da21084a4f9174864bceffddf32a1ae2`  
-		Last Modified: Tue, 24 May 2016 15:50:59 GMT  
+	-	`sha256:2346a4d49ad1b9c5274a3f172de0791bc0a0dd146df3f2a860a7d471c06ebf6e`  
+		Last Modified: Thu, 09 Jun 2016 21:32:04 GMT  
+		Size: 44.1 MB (44108517 bytes)
+	-	`sha256:881ef9f33a20eb7545a8f0377184054f31f8b6f5369d81b4d91e0a313a867d10`  
+		Last Modified: Thu, 09 Jun 2016 21:49:39 GMT  
+		Size: 20.5 MB (20489787 bytes)
+	-	`sha256:07941125c95738fc85a9df97621da186ed1600919a59109e4e3ce16934405c4c`  
+		Last Modified: Thu, 09 Jun 2016 21:50:04 GMT  
+		Size: 47.2 MB (47223255 bytes)
+	-	`sha256:d57fbf322429d41dd686897eff5145aadb30024eeac110cae15b085a0974f9cb`  
+		Last Modified: Thu, 09 Jun 2016 22:23:44 GMT  
+		Size: 604.7 KB (604706 bytes)
+	-	`sha256:b14578373d89b4e7892bd37440b5365835325f7c23f2ee6b2e5d37f1f39836cf`  
+		Last Modified: Thu, 09 Jun 2016 22:23:43 GMT  
+		Size: 218.0 B
+	-	`sha256:912784d40414a45d3629e1f548410af18e29e92616a1b81c261a79c5d2f2c2be`  
+		Last Modified: Thu, 09 Jun 2016 22:23:43 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:c5bf1c44ddb1c8421db33500deb70390b6f85a38c4753828c56fcb24aeb7d53e`  
-		Last Modified: Tue, 24 May 2016 15:50:40 GMT  
-		Size: 216.3 MB (216345343 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:d5b06e11c48b0db026f232fcc60ca7c3d81c77ee32dbf253f0a78a031af28b85`  
-		Last Modified: Tue, 31 May 2016 20:44:09 GMT  
-		Size: 8.6 MB (8598795 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:f8db15d5cc1666c28ca35e44b11f0bc24a0786d6c952398b31edd2be7f3066a6`  
+		Last Modified: Sat, 25 Jun 2016 01:39:30 GMT  
+		Size: 127.3 MB (127286117 bytes)
+	-	`sha256:8a871615e2891fa11b9ab5dbf6af16b0e20660d08b3d7711dc2473ab9472456a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:16 GMT  
+		Size: 8.6 MB (8598800 bytes)
 
 ## `maven:3.3-jdk-9`
 
 ```console
-$ docker pull maven@sha256:2861d16b99c6ef4ac14641c848ffb195213354d3104072dff4d818462665caae
+$ docker pull maven@sha256:afeb90f43d7bf960debab13c6b4e0d14d6b516631917abc3467de75c247cdf2c
 ```
 
 -	Platforms:
@@ -2626,107 +1927,80 @@ $ docker pull maven@sha256:2861d16b99c6ef4ac14641c848ffb195213354d3104072dff4d81
 
 ### `maven:3.3-jdk-9` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **345.9 MB (345934063 bytes)**  
+-	Total Size: **248.3 MB (248311641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73e86a167e0d1592838c00862d3b023f03c6404421510e2123243324f5226243`
+-	Image ID: `sha256:9ec49233e2f49db9b6cfb4832c8922ec58051513b630b0d728b31ce7cf576c59`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:58:07 GMT
-ADD file:da3b5fc938127d19500b2bbc371034d938efc511e08da0e687e46a06761be59f in /
-# Mon, 23 May 2016 22:58:10 GMT
+# Thu, 09 Jun 2016 21:29:06 GMT
+ADD file:8fdc004f9416952c9e1590e8cabcbb49792bbd424d6ee25dae34e39fb952832b in /
+# Thu, 09 Jun 2016 21:29:06 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:03:43 GMT
+# Thu, 09 Jun 2016 21:39:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:04:01 GMT
+# Thu, 09 Jun 2016 21:40:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:49:52 GMT
+# Thu, 09 Jun 2016 22:14:01 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:49:54 GMT
+# Thu, 09 Jun 2016 22:14:02 GMT
 RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
-# Tue, 24 May 2016 00:49:55 GMT
+# Thu, 09 Jun 2016 22:14:02 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:49:57 GMT
+# Thu, 09 Jun 2016 22:14:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:49:57 GMT
+# Thu, 09 Jun 2016 22:14:03 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Tue, 24 May 2016 00:49:59 GMT
-ENV JAVA_VERSION=9~b116
-# Tue, 24 May 2016 00:49:59 GMT
-ENV JAVA_DEBIAN_VERSION=9~b116-1
-# Tue, 24 May 2016 00:50:54 GMT
+# Sat, 25 Jun 2016 01:29:53 GMT
+ENV JAVA_VERSION=9~b124
+# Sat, 25 Jun 2016 01:29:53 GMT
+ENV JAVA_DEBIAN_VERSION=9~b124-1
+# Sat, 25 Jun 2016 01:30:23 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:04:48 GMT
+# Mon, 27 Jun 2016 16:58:03 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:04:50 GMT
+# Mon, 27 Jun 2016 16:58:06 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:04:51 GMT
+# Mon, 27 Jun 2016 16:58:07 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:04:51 GMT
+# Mon, 27 Jun 2016 16:58:07 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:04:52 GMT
+# Mon, 27 Jun 2016 16:58:08 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bbc93ec28c0aac545f17c5c41a07c25ff71313ed4304b098a20cc200de7a6ac3`  
-		Last Modified: Mon, 23 May 2016 23:11:07 GMT  
-		Size: 52.7 MB (52733547 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:fac6cf62f5b092c9f2fa1b2ca7878b28887acc72dc5e1a87b0f350015c591a7c`  
-		Last Modified: Mon, 23 May 2016 23:16:13 GMT  
-		Size: 20.5 MB (20468796 bytes)
-	-	`sha256:f8d6cdaafedeeba79c7ddf3c1e73a7bc69bb85cebd4101e1a42cc8d5369bff8f`  
-		Last Modified: Mon, 23 May 2016 23:16:55 GMT  
-		Size: 47.2 MB (47194650 bytes)
-	-	`sha256:254cd787dfaf008873adb488de457c89928d5da4da63c4310ba19d2ff5cff587`  
-		Last Modified: Tue, 24 May 2016 15:51:08 GMT  
-		Size: 592.2 KB (592186 bytes)
-	-	`sha256:906179aaf91b362eeaaa086892ce4cd0c7bafad296609c4f3a0f0e2a61b34ddc`  
-		Last Modified: Tue, 24 May 2016 15:51:04 GMT  
-		Size: 217.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1bf4173341520673f1907ce06e007700da21084a4f9174864bceffddf32a1ae2`  
-		Last Modified: Tue, 24 May 2016 15:50:59 GMT  
+	-	`sha256:2346a4d49ad1b9c5274a3f172de0791bc0a0dd146df3f2a860a7d471c06ebf6e`  
+		Last Modified: Thu, 09 Jun 2016 21:32:04 GMT  
+		Size: 44.1 MB (44108517 bytes)
+	-	`sha256:881ef9f33a20eb7545a8f0377184054f31f8b6f5369d81b4d91e0a313a867d10`  
+		Last Modified: Thu, 09 Jun 2016 21:49:39 GMT  
+		Size: 20.5 MB (20489787 bytes)
+	-	`sha256:07941125c95738fc85a9df97621da186ed1600919a59109e4e3ce16934405c4c`  
+		Last Modified: Thu, 09 Jun 2016 21:50:04 GMT  
+		Size: 47.2 MB (47223255 bytes)
+	-	`sha256:d57fbf322429d41dd686897eff5145aadb30024eeac110cae15b085a0974f9cb`  
+		Last Modified: Thu, 09 Jun 2016 22:23:44 GMT  
+		Size: 604.7 KB (604706 bytes)
+	-	`sha256:b14578373d89b4e7892bd37440b5365835325f7c23f2ee6b2e5d37f1f39836cf`  
+		Last Modified: Thu, 09 Jun 2016 22:23:43 GMT  
+		Size: 218.0 B
+	-	`sha256:912784d40414a45d3629e1f548410af18e29e92616a1b81c261a79c5d2f2c2be`  
+		Last Modified: Thu, 09 Jun 2016 22:23:43 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:c5bf1c44ddb1c8421db33500deb70390b6f85a38c4753828c56fcb24aeb7d53e`  
-		Last Modified: Tue, 24 May 2016 15:50:40 GMT  
-		Size: 216.3 MB (216345343 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:d5b06e11c48b0db026f232fcc60ca7c3d81c77ee32dbf253f0a78a031af28b85`  
-		Last Modified: Tue, 31 May 2016 20:44:09 GMT  
-		Size: 8.6 MB (8598795 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:f8db15d5cc1666c28ca35e44b11f0bc24a0786d6c952398b31edd2be7f3066a6`  
+		Last Modified: Sat, 25 Jun 2016 01:39:30 GMT  
+		Size: 127.3 MB (127286117 bytes)
+	-	`sha256:8a871615e2891fa11b9ab5dbf6af16b0e20660d08b3d7711dc2473ab9472456a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:16 GMT  
+		Size: 8.6 MB (8598800 bytes)
 
 ## `maven:3-jdk-9`
 
 ```console
-$ docker pull maven@sha256:2861d16b99c6ef4ac14641c848ffb195213354d3104072dff4d818462665caae
+$ docker pull maven@sha256:afeb90f43d7bf960debab13c6b4e0d14d6b516631917abc3467de75c247cdf2c
 ```
 
 -	Platforms:
@@ -2734,107 +2008,80 @@ $ docker pull maven@sha256:2861d16b99c6ef4ac14641c848ffb195213354d3104072dff4d81
 
 ### `maven:3-jdk-9` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **345.9 MB (345934063 bytes)**  
+-	Total Size: **248.3 MB (248311641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73e86a167e0d1592838c00862d3b023f03c6404421510e2123243324f5226243`
+-	Image ID: `sha256:9ec49233e2f49db9b6cfb4832c8922ec58051513b630b0d728b31ce7cf576c59`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:58:07 GMT
-ADD file:da3b5fc938127d19500b2bbc371034d938efc511e08da0e687e46a06761be59f in /
-# Mon, 23 May 2016 22:58:10 GMT
+# Thu, 09 Jun 2016 21:29:06 GMT
+ADD file:8fdc004f9416952c9e1590e8cabcbb49792bbd424d6ee25dae34e39fb952832b in /
+# Thu, 09 Jun 2016 21:29:06 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:03:43 GMT
+# Thu, 09 Jun 2016 21:39:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:04:01 GMT
+# Thu, 09 Jun 2016 21:40:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:49:52 GMT
+# Thu, 09 Jun 2016 22:14:01 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:49:54 GMT
+# Thu, 09 Jun 2016 22:14:02 GMT
 RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
-# Tue, 24 May 2016 00:49:55 GMT
+# Thu, 09 Jun 2016 22:14:02 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:49:57 GMT
+# Thu, 09 Jun 2016 22:14:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:49:57 GMT
+# Thu, 09 Jun 2016 22:14:03 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Tue, 24 May 2016 00:49:59 GMT
-ENV JAVA_VERSION=9~b116
-# Tue, 24 May 2016 00:49:59 GMT
-ENV JAVA_DEBIAN_VERSION=9~b116-1
-# Tue, 24 May 2016 00:50:54 GMT
+# Sat, 25 Jun 2016 01:29:53 GMT
+ENV JAVA_VERSION=9~b124
+# Sat, 25 Jun 2016 01:29:53 GMT
+ENV JAVA_DEBIAN_VERSION=9~b124-1
+# Sat, 25 Jun 2016 01:30:23 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:04:48 GMT
+# Mon, 27 Jun 2016 16:58:03 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:04:50 GMT
+# Mon, 27 Jun 2016 16:58:06 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:04:51 GMT
+# Mon, 27 Jun 2016 16:58:07 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:04:51 GMT
+# Mon, 27 Jun 2016 16:58:07 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:04:52 GMT
+# Mon, 27 Jun 2016 16:58:08 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bbc93ec28c0aac545f17c5c41a07c25ff71313ed4304b098a20cc200de7a6ac3`  
-		Last Modified: Mon, 23 May 2016 23:11:07 GMT  
-		Size: 52.7 MB (52733547 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:fac6cf62f5b092c9f2fa1b2ca7878b28887acc72dc5e1a87b0f350015c591a7c`  
-		Last Modified: Mon, 23 May 2016 23:16:13 GMT  
-		Size: 20.5 MB (20468796 bytes)
-	-	`sha256:f8d6cdaafedeeba79c7ddf3c1e73a7bc69bb85cebd4101e1a42cc8d5369bff8f`  
-		Last Modified: Mon, 23 May 2016 23:16:55 GMT  
-		Size: 47.2 MB (47194650 bytes)
-	-	`sha256:254cd787dfaf008873adb488de457c89928d5da4da63c4310ba19d2ff5cff587`  
-		Last Modified: Tue, 24 May 2016 15:51:08 GMT  
-		Size: 592.2 KB (592186 bytes)
-	-	`sha256:906179aaf91b362eeaaa086892ce4cd0c7bafad296609c4f3a0f0e2a61b34ddc`  
-		Last Modified: Tue, 24 May 2016 15:51:04 GMT  
-		Size: 217.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1bf4173341520673f1907ce06e007700da21084a4f9174864bceffddf32a1ae2`  
-		Last Modified: Tue, 24 May 2016 15:50:59 GMT  
+	-	`sha256:2346a4d49ad1b9c5274a3f172de0791bc0a0dd146df3f2a860a7d471c06ebf6e`  
+		Last Modified: Thu, 09 Jun 2016 21:32:04 GMT  
+		Size: 44.1 MB (44108517 bytes)
+	-	`sha256:881ef9f33a20eb7545a8f0377184054f31f8b6f5369d81b4d91e0a313a867d10`  
+		Last Modified: Thu, 09 Jun 2016 21:49:39 GMT  
+		Size: 20.5 MB (20489787 bytes)
+	-	`sha256:07941125c95738fc85a9df97621da186ed1600919a59109e4e3ce16934405c4c`  
+		Last Modified: Thu, 09 Jun 2016 21:50:04 GMT  
+		Size: 47.2 MB (47223255 bytes)
+	-	`sha256:d57fbf322429d41dd686897eff5145aadb30024eeac110cae15b085a0974f9cb`  
+		Last Modified: Thu, 09 Jun 2016 22:23:44 GMT  
+		Size: 604.7 KB (604706 bytes)
+	-	`sha256:b14578373d89b4e7892bd37440b5365835325f7c23f2ee6b2e5d37f1f39836cf`  
+		Last Modified: Thu, 09 Jun 2016 22:23:43 GMT  
+		Size: 218.0 B
+	-	`sha256:912784d40414a45d3629e1f548410af18e29e92616a1b81c261a79c5d2f2c2be`  
+		Last Modified: Thu, 09 Jun 2016 22:23:43 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:c5bf1c44ddb1c8421db33500deb70390b6f85a38c4753828c56fcb24aeb7d53e`  
-		Last Modified: Tue, 24 May 2016 15:50:40 GMT  
-		Size: 216.3 MB (216345343 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:d5b06e11c48b0db026f232fcc60ca7c3d81c77ee32dbf253f0a78a031af28b85`  
-		Last Modified: Tue, 31 May 2016 20:44:09 GMT  
-		Size: 8.6 MB (8598795 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:f8db15d5cc1666c28ca35e44b11f0bc24a0786d6c952398b31edd2be7f3066a6`  
+		Last Modified: Sat, 25 Jun 2016 01:39:30 GMT  
+		Size: 127.3 MB (127286117 bytes)
+	-	`sha256:8a871615e2891fa11b9ab5dbf6af16b0e20660d08b3d7711dc2473ab9472456a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:16 GMT  
+		Size: 8.6 MB (8598800 bytes)
 
 ## `maven:3.3.9-jdk-9-onbuild`
 
 ```console
-$ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b428ad05b9e2
+$ docker pull maven@sha256:019a6e247ca1c10c73422648a644b267554063684fab5f74441e31104709549f
 ```
 
 -	Platforms:
@@ -2842,137 +2089,98 @@ $ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b
 
 ### `maven:3.3.9-jdk-9-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846578 bytes)**  
+-	Total Size: **252.0 MB (251951267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac7e67ad888e563f605862f5426495dae605cbc2c919de589d2e159f6fcb13db`
+-	Image ID: `sha256:399ad9fa777d50079b08b3454dae1b275d56aefbfe89ae36f4b0b307c019af2d`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:03:24 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:03:25 GMT
+# Fri, 10 Jun 2016 21:52:20 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:311e5ad8c2ab5d6ff836b3722bf08a356cc14c33565be1e7cc916af1a98cc339`  
-		Last Modified: Tue, 31 May 2016 20:42:34 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
+	-	`sha256:be2efd3cf3b62e52312cacde6db0dd1c96035bda7e3b7c811fbef1eb70440744`  
+		Last Modified: Mon, 27 Jun 2016 16:58:45 GMT  
+		Size: 159.0 B
 
 ## `maven:3.3-jdk-9-onbuild`
 
 ```console
-$ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b428ad05b9e2
+$ docker pull maven@sha256:019a6e247ca1c10c73422648a644b267554063684fab5f74441e31104709549f
 ```
 
 -	Platforms:
@@ -2980,137 +2188,98 @@ $ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b
 
 ### `maven:3.3-jdk-9-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846578 bytes)**  
+-	Total Size: **252.0 MB (251951267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac7e67ad888e563f605862f5426495dae605cbc2c919de589d2e159f6fcb13db`
+-	Image ID: `sha256:399ad9fa777d50079b08b3454dae1b275d56aefbfe89ae36f4b0b307c019af2d`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:03:24 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:03:25 GMT
+# Fri, 10 Jun 2016 21:52:20 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:311e5ad8c2ab5d6ff836b3722bf08a356cc14c33565be1e7cc916af1a98cc339`  
-		Last Modified: Tue, 31 May 2016 20:42:34 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
+	-	`sha256:be2efd3cf3b62e52312cacde6db0dd1c96035bda7e3b7c811fbef1eb70440744`  
+		Last Modified: Mon, 27 Jun 2016 16:58:45 GMT  
+		Size: 159.0 B
 
 ## `maven:3-jdk-9-onbuild`
 
 ```console
-$ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b428ad05b9e2
+$ docker pull maven@sha256:019a6e247ca1c10c73422648a644b267554063684fab5f74441e31104709549f
 ```
 
 -	Platforms:
@@ -3118,137 +2287,98 @@ $ docker pull maven@sha256:044e30888525f2c165cfbbd82cbebbdb5e1d3c1c1ee20fd6eaf9b
 
 ### `maven:3-jdk-9-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251846578 bytes)**  
+-	Total Size: **252.0 MB (251951267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac7e67ad888e563f605862f5426495dae605cbc2c919de589d2e159f6fcb13db`
+-	Image ID: `sha256:399ad9fa777d50079b08b3454dae1b275d56aefbfe89ae36f4b0b307c019af2d`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:01:35 GMT
+# Fri, 10 Jun 2016 21:52:14 GMT
 ENV MAVEN_VERSION=3.3.9
-# Tue, 24 May 2016 18:01:37 GMT
+# Fri, 10 Jun 2016 21:52:16 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:01:38 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:01:39 GMT
+# Fri, 10 Jun 2016 21:52:17 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:03:23 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:03:24 GMT
+# Fri, 10 Jun 2016 21:52:19 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:03:25 GMT
+# Fri, 10 Jun 2016 21:52:20 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:8eb7076a0f3fc18ebbe9ce67c1e5e94e5b7574cd8f68757dc193d90e9840c0c1`  
-		Last Modified: Tue, 31 May 2016 20:40:02 GMT  
-		Size: 8.6 MB (8598799 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:311e5ad8c2ab5d6ff836b3722bf08a356cc14c33565be1e7cc916af1a98cc339`  
-		Last Modified: Tue, 31 May 2016 20:42:34 GMT  
-		Size: 157.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:2503296da5416749b1c8c7e79b0ddc06beabf7fc363eeb30de4c208ddc9f1d5a`  
+		Last Modified: Mon, 27 Jun 2016 16:58:47 GMT  
+		Size: 8.6 MB (8598802 bytes)
+	-	`sha256:be2efd3cf3b62e52312cacde6db0dd1c96035bda7e3b7c811fbef1eb70440744`  
+		Last Modified: Mon, 27 Jun 2016 16:58:45 GMT  
+		Size: 159.0 B
 
 ## `maven:3.3.3-jdk-7`
 
 ```console
-$ docker pull maven@sha256:7a8613deeace803460e94189455001300c39a5474ad625f04d5f8461c24a3dba
+$ docker pull maven@sha256:84562811a48e63f90e711d46434cff42506335240ab06ad6321557868a31fa51
 ```
 
 -	Platforms:
@@ -3256,102 +2386,75 @@ $ docker pull maven@sha256:7a8613deeace803460e94189455001300c39a5474ad625f04d5f8
 
 ### `maven:3.3.3-jdk-7` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.4 MB (260404787 bytes)**  
+-	Total Size: **260.5 MB (260493111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db5a5c2b18d52b0fc0412d23583150e658762999e86faf854ba38544d8f8eafa`
+-	Image ID: `sha256:b998c96be950cf721eac861ebfa27d491e28546bd5f6697c875e3b8195489571`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:54 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 ENV LANG=C.UTF-8
-# Mon, 23 May 2016 23:54:56 GMT
+# Thu, 09 Jun 2016 22:05:17 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Mon, 23 May 2016 23:54:57 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 23 May 2016 23:54:58 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_VERSION=7u101
-# Mon, 23 May 2016 23:54:59 GMT
-ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-1~deb8u1
-# Mon, 23 May 2016 23:56:32 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-2~deb8u1
+# Thu, 09 Jun 2016 22:07:27 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:06:11 GMT
+# Fri, 10 Jun 2016 21:52:21 GMT
 ENV MAVEN_VERSION=3.3.3
-# Tue, 24 May 2016 18:06:13 GMT
+# Fri, 10 Jun 2016 21:52:23 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:06:14 GMT
+# Fri, 10 Jun 2016 21:52:24 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:06:14 GMT
+# Fri, 10 Jun 2016 21:52:24 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:06:15 GMT
+# Fri, 10 Jun 2016 21:52:24 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a843091b25650e9bc1d8c4f070f78a2fe9a20c7c6b340a0633f8fbd5525a40d4`  
-		Last Modified: Tue, 24 May 2016 15:41:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:799eef929b90bdd3827b40e98bee54dc6127967a606ff17c76c49d39cdbc1703`  
-		Last Modified: Tue, 24 May 2016 15:41:21 GMT  
-		Size: 139.3 MB (139288800 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:95e03ea67524a3d9a512a3bb6deb505a42a2df09b7351f6434efd9483c6b5765`  
-		Last Modified: Tue, 31 May 2016 20:47:37 GMT  
-		Size: 8.1 MB (8141251 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:5341b7d465f1a959ae98ed72357d750249c43dd3e10009d2f7a5bdae80abf7be`  
+		Last Modified: Thu, 09 Jun 2016 22:17:36 GMT  
+		Size: 242.0 B
+	-	`sha256:b4bcb2ffc258c480d903431b194500bfe9e9296982e15af57ffaa67ab1c6ca24`  
+		Last Modified: Thu, 09 Jun 2016 22:18:02 GMT  
+		Size: 139.3 MB (139304231 bytes)
+	-	`sha256:214f32f43f38d20f54e544ac496c87229749cabb397181c3c478e66c1520577c`  
+		Last Modified: Mon, 27 Jun 2016 16:57:56 GMT  
+		Size: 8.1 MB (8141253 bytes)
 
 ## `maven:3.3.3-jdk-7-onbuild`
 
 ```console
-$ docker pull maven@sha256:775a9002510cb9aeb359a9b94140d3ce5e5a136f73fa5150dc724baf638004dd
+$ docker pull maven@sha256:2385b8c1e6ae1691847dcca4ca8eed2cc16b6aa33a3cf0861d61fde30b9a1bdb
 ```
 
 -	Platforms:
@@ -3359,122 +2462,86 @@ $ docker pull maven@sha256:775a9002510cb9aeb359a9b94140d3ce5e5a136f73fa5150dc724
 
 ### `maven:3.3.3-jdk-7-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.4 MB (260405039 bytes)**  
+-	Total Size: **260.5 MB (260493270 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ee57eebd22ec8ccdddb617c44893a1e88c38212827ebd463025f80e13c18de4`
+-	Image ID: `sha256:72162a0b152584ff59ea1a9ba78d7c150fba78369296ad9507e40a0470e8f25d`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:54 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 ENV LANG=C.UTF-8
-# Mon, 23 May 2016 23:54:56 GMT
+# Thu, 09 Jun 2016 22:05:17 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Mon, 23 May 2016 23:54:57 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 23 May 2016 23:54:58 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_VERSION=7u101
-# Mon, 23 May 2016 23:54:59 GMT
-ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-1~deb8u1
-# Mon, 23 May 2016 23:56:32 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-2~deb8u1
+# Thu, 09 Jun 2016 22:07:27 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:06:11 GMT
+# Fri, 10 Jun 2016 21:52:21 GMT
 ENV MAVEN_VERSION=3.3.3
-# Tue, 24 May 2016 18:06:13 GMT
+# Fri, 10 Jun 2016 21:52:23 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:06:14 GMT
+# Fri, 10 Jun 2016 21:52:24 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:06:14 GMT
+# Fri, 10 Jun 2016 21:52:24 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:06:15 GMT
+# Fri, 10 Jun 2016 21:52:24 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:06:17 GMT
+# Fri, 10 Jun 2016 21:52:26 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:06:18 GMT
+# Fri, 10 Jun 2016 21:52:26 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:06:19 GMT
+# Fri, 10 Jun 2016 21:52:26 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:06:19 GMT
+# Fri, 10 Jun 2016 21:52:26 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a843091b25650e9bc1d8c4f070f78a2fe9a20c7c6b340a0633f8fbd5525a40d4`  
-		Last Modified: Tue, 24 May 2016 15:41:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:799eef929b90bdd3827b40e98bee54dc6127967a606ff17c76c49d39cdbc1703`  
-		Last Modified: Tue, 24 May 2016 15:41:21 GMT  
-		Size: 139.3 MB (139288800 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:95e03ea67524a3d9a512a3bb6deb505a42a2df09b7351f6434efd9483c6b5765`  
-		Last Modified: Tue, 31 May 2016 20:47:37 GMT  
-		Size: 8.1 MB (8141251 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:0a73c0583cfeefe419370aa1d24d8c9b01f6fc319103370163f149ab2bd18c32`  
-		Last Modified: Tue, 31 May 2016 20:47:58 GMT  
-		Size: 156.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:5341b7d465f1a959ae98ed72357d750249c43dd3e10009d2f7a5bdae80abf7be`  
+		Last Modified: Thu, 09 Jun 2016 22:17:36 GMT  
+		Size: 242.0 B
+	-	`sha256:b4bcb2ffc258c480d903431b194500bfe9e9296982e15af57ffaa67ab1c6ca24`  
+		Last Modified: Thu, 09 Jun 2016 22:18:02 GMT  
+		Size: 139.3 MB (139304231 bytes)
+	-	`sha256:214f32f43f38d20f54e544ac496c87229749cabb397181c3c478e66c1520577c`  
+		Last Modified: Mon, 27 Jun 2016 16:57:56 GMT  
+		Size: 8.1 MB (8141253 bytes)
+	-	`sha256:40eeb274216ca58bb94004bbb2fe818f02b36034113f2dadfda717c69ed5220e`  
+		Last Modified: Mon, 27 Jun 2016 16:59:15 GMT  
+		Size: 159.0 B
 
 ## `maven:3.3.3-jdk-8`
 
 ```console
-$ docker pull maven@sha256:7dcc0b50c27b57bade583ac76f027a9bb8c829405daaeae87811e033a38baf2b
+$ docker pull maven@sha256:518b1cc95440282f98881aaa4da85e0dd8eca419e4f1e62bd3b28eaf6ce52f9b
 ```
 
 -	Platforms:
@@ -3482,117 +2549,87 @@ $ docker pull maven@sha256:7dcc0b50c27b57bade583ac76f027a9bb8c829405daaeae87811e
 
 ### `maven:3.3.3-jdk-8` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.4 MB (251388772 bytes)**  
+-	Total Size: **251.5 MB (251493557 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5ae26b66b39e388b9549bfd0e6bdb01ec9866089cb90fa3e552349d383e7e41`
+-	Image ID: `sha256:baadc9c8b0ce3975092fea0c7f84390519b935b246ff118bb886a30b5b4e094c`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:06:25 GMT
+# Fri, 10 Jun 2016 21:52:27 GMT
 ENV MAVEN_VERSION=3.3.3
-# Tue, 24 May 2016 18:06:27 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:06:28 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:06:28 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:06:29 GMT
+# Fri, 10 Jun 2016 21:52:30 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:db398989929050873d8c0b6c159b8f8c6ee70d4563cb42d82f411cfdf28d40e9`  
-		Last Modified: Tue, 31 May 2016 20:48:15 GMT  
-		Size: 8.1 MB (8141246 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:9d837ce35c41fb58740e0e01c2f850bdf7c0acc59ba9e7e461b494b90563392d`  
+		Last Modified: Mon, 27 Jun 2016 16:59:30 GMT  
+		Size: 8.1 MB (8141251 bytes)
 
 ## `maven:3.3.3`
 
 ```console
-$ docker pull maven@sha256:7dcc0b50c27b57bade583ac76f027a9bb8c829405daaeae87811e033a38baf2b
+$ docker pull maven@sha256:518b1cc95440282f98881aaa4da85e0dd8eca419e4f1e62bd3b28eaf6ce52f9b
 ```
 
 -	Platforms:
@@ -3600,117 +2637,87 @@ $ docker pull maven@sha256:7dcc0b50c27b57bade583ac76f027a9bb8c829405daaeae87811e
 
 ### `maven:3.3.3` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.4 MB (251388772 bytes)**  
+-	Total Size: **251.5 MB (251493557 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5ae26b66b39e388b9549bfd0e6bdb01ec9866089cb90fa3e552349d383e7e41`
+-	Image ID: `sha256:baadc9c8b0ce3975092fea0c7f84390519b935b246ff118bb886a30b5b4e094c`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:06:25 GMT
+# Fri, 10 Jun 2016 21:52:27 GMT
 ENV MAVEN_VERSION=3.3.3
-# Tue, 24 May 2016 18:06:27 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:06:28 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:06:28 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:06:29 GMT
+# Fri, 10 Jun 2016 21:52:30 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:db398989929050873d8c0b6c159b8f8c6ee70d4563cb42d82f411cfdf28d40e9`  
-		Last Modified: Tue, 31 May 2016 20:48:15 GMT  
-		Size: 8.1 MB (8141246 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:9d837ce35c41fb58740e0e01c2f850bdf7c0acc59ba9e7e461b494b90563392d`  
+		Last Modified: Mon, 27 Jun 2016 16:59:30 GMT  
+		Size: 8.1 MB (8141251 bytes)
 
 ## `maven:3.3.3-jdk-8-onbuild`
 
 ```console
-$ docker pull maven@sha256:cff2ab5d7611dd3e621c26926fc07dd94b12d9d556d857d4a1250310f7053cfa
+$ docker pull maven@sha256:f9da7d654fb363093725f447184006759a0e83ff0d048173abaa2fea54e1eb87
 ```
 
 -	Platforms:
@@ -3718,137 +2725,98 @@ $ docker pull maven@sha256:cff2ab5d7611dd3e621c26926fc07dd94b12d9d556d857d4a1250
 
 ### `maven:3.3.3-jdk-8-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.4 MB (251389028 bytes)**  
+-	Total Size: **251.5 MB (251493714 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8874074caae24498caea576d440f5362d9133ec4cf04aec4add1e98f81a9ce8`
+-	Image ID: `sha256:39133bc951de795c7cc795862cbe4e4e311efd597b2f40734ea98587afd10067`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:06:25 GMT
+# Fri, 10 Jun 2016 21:52:27 GMT
 ENV MAVEN_VERSION=3.3.3
-# Tue, 24 May 2016 18:06:27 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:06:28 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:06:28 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:06:29 GMT
+# Fri, 10 Jun 2016 21:52:30 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:06:48 GMT
+# Mon, 13 Jun 2016 20:35:31 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:06:49 GMT
+# Mon, 13 Jun 2016 20:35:32 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:06:49 GMT
+# Mon, 13 Jun 2016 20:35:32 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:06:50 GMT
+# Mon, 13 Jun 2016 20:35:32 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:db398989929050873d8c0b6c159b8f8c6ee70d4563cb42d82f411cfdf28d40e9`  
-		Last Modified: Tue, 31 May 2016 20:48:15 GMT  
-		Size: 8.1 MB (8141246 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a7e08796577954f840e2d7ac1390b7b0ba9ce61d392a5e943ef37a9106239fbf`  
-		Last Modified: Tue, 31 May 2016 20:48:37 GMT  
-		Size: 160.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:9d837ce35c41fb58740e0e01c2f850bdf7c0acc59ba9e7e461b494b90563392d`  
+		Last Modified: Mon, 27 Jun 2016 16:59:30 GMT  
+		Size: 8.1 MB (8141251 bytes)
+	-	`sha256:3c1f4dc1b1804d4d4061dd1ca3a5b012327f7654aadc6acdbb5eb650fed24178`  
+		Last Modified: Mon, 27 Jun 2016 16:59:50 GMT  
+		Size: 157.0 B
 
 ## `maven:3.3.3-onbuild`
 
 ```console
-$ docker pull maven@sha256:cff2ab5d7611dd3e621c26926fc07dd94b12d9d556d857d4a1250310f7053cfa
+$ docker pull maven@sha256:f9da7d654fb363093725f447184006759a0e83ff0d048173abaa2fea54e1eb87
 ```
 
 -	Platforms:
@@ -3856,137 +2824,98 @@ $ docker pull maven@sha256:cff2ab5d7611dd3e621c26926fc07dd94b12d9d556d857d4a1250
 
 ### `maven:3.3.3-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.4 MB (251389028 bytes)**  
+-	Total Size: **251.5 MB (251493714 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8874074caae24498caea576d440f5362d9133ec4cf04aec4add1e98f81a9ce8`
+-	Image ID: `sha256:39133bc951de795c7cc795862cbe4e4e311efd597b2f40734ea98587afd10067`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:06:25 GMT
+# Fri, 10 Jun 2016 21:52:27 GMT
 ENV MAVEN_VERSION=3.3.3
-# Tue, 24 May 2016 18:06:27 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:06:28 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:06:28 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:06:29 GMT
+# Fri, 10 Jun 2016 21:52:30 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:06:48 GMT
+# Mon, 13 Jun 2016 20:35:31 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:06:49 GMT
+# Mon, 13 Jun 2016 20:35:32 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:06:49 GMT
+# Mon, 13 Jun 2016 20:35:32 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:06:50 GMT
+# Mon, 13 Jun 2016 20:35:32 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:db398989929050873d8c0b6c159b8f8c6ee70d4563cb42d82f411cfdf28d40e9`  
-		Last Modified: Tue, 31 May 2016 20:48:15 GMT  
-		Size: 8.1 MB (8141246 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a7e08796577954f840e2d7ac1390b7b0ba9ce61d392a5e943ef37a9106239fbf`  
-		Last Modified: Tue, 31 May 2016 20:48:37 GMT  
-		Size: 160.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:9d837ce35c41fb58740e0e01c2f850bdf7c0acc59ba9e7e461b494b90563392d`  
+		Last Modified: Mon, 27 Jun 2016 16:59:30 GMT  
+		Size: 8.1 MB (8141251 bytes)
+	-	`sha256:3c1f4dc1b1804d4d4061dd1ca3a5b012327f7654aadc6acdbb5eb650fed24178`  
+		Last Modified: Mon, 27 Jun 2016 16:59:50 GMT  
+		Size: 157.0 B
 
 ## `maven:3.3.3-jdk-9`
 
 ```console
-$ docker pull maven@sha256:eb13310053160ec7f8ee9d9592d835efa3afdd4734534935f02f28b603833de7
+$ docker pull maven@sha256:2394af45f3b07ea98c7231df2c7c1b9642735b5a524c999c6e95a6b60f0f3829
 ```
 
 -	Platforms:
@@ -3994,107 +2923,80 @@ $ docker pull maven@sha256:eb13310053160ec7f8ee9d9592d835efa3afdd4734534935f02f2
 
 ### `maven:3.3.3-jdk-9` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **345.5 MB (345476521 bytes)**  
+-	Total Size: **247.9 MB (247854090 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06c28bdbdcf8b4a10710b99945d3f0a9a1ae8c8c765c9f0cc0d785a03c43eda3`
+-	Image ID: `sha256:8e9756e2cb39a5493b12141a0f785bb2e1754640841397f50c35f51d6c462a64`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:58:07 GMT
-ADD file:da3b5fc938127d19500b2bbc371034d938efc511e08da0e687e46a06761be59f in /
-# Mon, 23 May 2016 22:58:10 GMT
+# Thu, 09 Jun 2016 21:29:06 GMT
+ADD file:8fdc004f9416952c9e1590e8cabcbb49792bbd424d6ee25dae34e39fb952832b in /
+# Thu, 09 Jun 2016 21:29:06 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:03:43 GMT
+# Thu, 09 Jun 2016 21:39:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:04:01 GMT
+# Thu, 09 Jun 2016 21:40:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:49:52 GMT
+# Thu, 09 Jun 2016 22:14:01 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:49:54 GMT
+# Thu, 09 Jun 2016 22:14:02 GMT
 RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
-# Tue, 24 May 2016 00:49:55 GMT
+# Thu, 09 Jun 2016 22:14:02 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:49:57 GMT
+# Thu, 09 Jun 2016 22:14:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:49:57 GMT
+# Thu, 09 Jun 2016 22:14:03 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Tue, 24 May 2016 00:49:59 GMT
-ENV JAVA_VERSION=9~b116
-# Tue, 24 May 2016 00:49:59 GMT
-ENV JAVA_DEBIAN_VERSION=9~b116-1
-# Tue, 24 May 2016 00:50:54 GMT
+# Sat, 25 Jun 2016 01:29:53 GMT
+ENV JAVA_VERSION=9~b124
+# Sat, 25 Jun 2016 01:29:53 GMT
+ENV JAVA_DEBIAN_VERSION=9~b124-1
+# Sat, 25 Jun 2016 01:30:23 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 18:07:09 GMT
+# Mon, 27 Jun 2016 17:00:04 GMT
 ENV MAVEN_VERSION=3.3.3
-# Tue, 24 May 2016 18:07:11 GMT
+# Mon, 27 Jun 2016 17:00:06 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:07:12 GMT
+# Mon, 27 Jun 2016 17:00:07 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:07:13 GMT
+# Mon, 27 Jun 2016 17:00:07 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:07:13 GMT
+# Mon, 27 Jun 2016 17:00:08 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bbc93ec28c0aac545f17c5c41a07c25ff71313ed4304b098a20cc200de7a6ac3`  
-		Last Modified: Mon, 23 May 2016 23:11:07 GMT  
-		Size: 52.7 MB (52733547 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:fac6cf62f5b092c9f2fa1b2ca7878b28887acc72dc5e1a87b0f350015c591a7c`  
-		Last Modified: Mon, 23 May 2016 23:16:13 GMT  
-		Size: 20.5 MB (20468796 bytes)
-	-	`sha256:f8d6cdaafedeeba79c7ddf3c1e73a7bc69bb85cebd4101e1a42cc8d5369bff8f`  
-		Last Modified: Mon, 23 May 2016 23:16:55 GMT  
-		Size: 47.2 MB (47194650 bytes)
-	-	`sha256:254cd787dfaf008873adb488de457c89928d5da4da63c4310ba19d2ff5cff587`  
-		Last Modified: Tue, 24 May 2016 15:51:08 GMT  
-		Size: 592.2 KB (592186 bytes)
-	-	`sha256:906179aaf91b362eeaaa086892ce4cd0c7bafad296609c4f3a0f0e2a61b34ddc`  
-		Last Modified: Tue, 24 May 2016 15:51:04 GMT  
-		Size: 217.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1bf4173341520673f1907ce06e007700da21084a4f9174864bceffddf32a1ae2`  
-		Last Modified: Tue, 24 May 2016 15:50:59 GMT  
+	-	`sha256:2346a4d49ad1b9c5274a3f172de0791bc0a0dd146df3f2a860a7d471c06ebf6e`  
+		Last Modified: Thu, 09 Jun 2016 21:32:04 GMT  
+		Size: 44.1 MB (44108517 bytes)
+	-	`sha256:881ef9f33a20eb7545a8f0377184054f31f8b6f5369d81b4d91e0a313a867d10`  
+		Last Modified: Thu, 09 Jun 2016 21:49:39 GMT  
+		Size: 20.5 MB (20489787 bytes)
+	-	`sha256:07941125c95738fc85a9df97621da186ed1600919a59109e4e3ce16934405c4c`  
+		Last Modified: Thu, 09 Jun 2016 21:50:04 GMT  
+		Size: 47.2 MB (47223255 bytes)
+	-	`sha256:d57fbf322429d41dd686897eff5145aadb30024eeac110cae15b085a0974f9cb`  
+		Last Modified: Thu, 09 Jun 2016 22:23:44 GMT  
+		Size: 604.7 KB (604706 bytes)
+	-	`sha256:b14578373d89b4e7892bd37440b5365835325f7c23f2ee6b2e5d37f1f39836cf`  
+		Last Modified: Thu, 09 Jun 2016 22:23:43 GMT  
+		Size: 218.0 B
+	-	`sha256:912784d40414a45d3629e1f548410af18e29e92616a1b81c261a79c5d2f2c2be`  
+		Last Modified: Thu, 09 Jun 2016 22:23:43 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:c5bf1c44ddb1c8421db33500deb70390b6f85a38c4753828c56fcb24aeb7d53e`  
-		Last Modified: Tue, 24 May 2016 15:50:40 GMT  
-		Size: 216.3 MB (216345343 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:d130519be4d27eb982f60e21d9c56f0b09812ada694fdb8db3ddb5a3e3fee7b9`  
-		Last Modified: Tue, 31 May 2016 20:49:00 GMT  
-		Size: 8.1 MB (8141253 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:f8db15d5cc1666c28ca35e44b11f0bc24a0786d6c952398b31edd2be7f3066a6`  
+		Last Modified: Sat, 25 Jun 2016 01:39:30 GMT  
+		Size: 127.3 MB (127286117 bytes)
+	-	`sha256:4a1d3c1ea6d67e9776edf15c43a4c99f5257fd4f4fbb82039736081ad2b24fbb`  
+		Last Modified: Mon, 27 Jun 2016 17:00:16 GMT  
+		Size: 8.1 MB (8141249 bytes)
 
 ## `maven:3.3.3-jdk-9-onbuild`
 
 ```console
-$ docker pull maven@sha256:cff2ab5d7611dd3e621c26926fc07dd94b12d9d556d857d4a1250310f7053cfa
+$ docker pull maven@sha256:f9da7d654fb363093725f447184006759a0e83ff0d048173abaa2fea54e1eb87
 ```
 
 -	Platforms:
@@ -4102,129 +3004,90 @@ $ docker pull maven@sha256:cff2ab5d7611dd3e621c26926fc07dd94b12d9d556d857d4a1250
 
 ### `maven:3.3.3-jdk-9-onbuild` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.4 MB (251389028 bytes)**  
+-	Total Size: **251.5 MB (251493714 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8874074caae24498caea576d440f5362d9133ec4cf04aec4add1e98f81a9ce8`
+-	Image ID: `sha256:39133bc951de795c7cc795862cbe4e4e311efd597b2f40734ea98587afd10067`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 24 May 2016 18:06:25 GMT
+# Fri, 10 Jun 2016 21:52:27 GMT
 ENV MAVEN_VERSION=3.3.3
-# Tue, 24 May 2016 18:06:27 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz     | tar -xzC /usr/share/maven --strip-components=1   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 24 May 2016 18:06:28 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 24 May 2016 18:06:28 GMT
+# Fri, 10 Jun 2016 21:52:29 GMT
 VOLUME [/root/.m2]
-# Tue, 24 May 2016 18:06:29 GMT
+# Fri, 10 Jun 2016 21:52:30 GMT
 CMD ["mvn"]
-# Tue, 24 May 2016 18:06:48 GMT
+# Mon, 13 Jun 2016 20:35:31 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 24 May 2016 18:06:49 GMT
+# Mon, 13 Jun 2016 20:35:32 GMT
 WORKDIR /usr/src/app
-# Tue, 24 May 2016 18:06:49 GMT
+# Mon, 13 Jun 2016 20:35:32 GMT
 ONBUILD ADD . /usr/src/app
-# Tue, 24 May 2016 18:06:50 GMT
+# Mon, 13 Jun 2016 20:35:32 GMT
 ONBUILD RUN mvn install
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:db398989929050873d8c0b6c159b8f8c6ee70d4563cb42d82f411cfdf28d40e9`  
-		Last Modified: Tue, 31 May 2016 20:48:15 GMT  
-		Size: 8.1 MB (8141246 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a7e08796577954f840e2d7ac1390b7b0ba9ce61d392a5e943ef37a9106239fbf`  
-		Last Modified: Tue, 31 May 2016 20:48:37 GMT  
-		Size: 160.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:9d837ce35c41fb58740e0e01c2f850bdf7c0acc59ba9e7e461b494b90563392d`  
+		Last Modified: Mon, 27 Jun 2016 16:59:30 GMT  
+		Size: 8.1 MB (8141251 bytes)
+	-	`sha256:3c1f4dc1b1804d4d4061dd1ca3a5b012327f7654aadc6acdbb5eb650fed24178`  
+		Last Modified: Mon, 27 Jun 2016 16:59:50 GMT  
+		Size: 157.0 B

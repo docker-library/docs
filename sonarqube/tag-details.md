@@ -10,7 +10,7 @@
 ## `sonarqube:latest`
 
 ```console
-$ docker pull sonarqube@sha256:74ebb8295db93e442180194f192e7bff707de57e0661dbd57ce3420caa805c60
+$ docker pull sonarqube@sha256:85d35fe1e676353d0fa8dd3f7fef6f6f2d3ba327afe49ad7816a3dad862a71f8
 ```
 
 -	Platforms:
@@ -18,99 +18,96 @@ $ docker pull sonarqube@sha256:74ebb8295db93e442180194f192e7bff707de57e0661dbd57
 
 ### `sonarqube:latest` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **360.9 MB (360899108 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **361.0 MB (361034109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `b849efba5470a43c827411ba271e4bba85298efb055fbb87ab6e5d3d28e92bf4`
+-	Image ID: `sha256:8cb871b1ae3a52d8523cdb32250a393ba709ff2c4fb2a9f0954f05ba4e62cbe4`
 -	Entrypoint: `[".\/bin\/run.sh"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 02 Jun 2016 22:01:54 GMT
+# Thu, 23 Jun 2016 22:47:09 GMT
 MAINTAINER David Gageot <david.gageot@sonarsource.com>
-# Thu, 02 Jun 2016 22:01:55 GMT
+# Thu, 23 Jun 2016 22:47:09 GMT
 ENV SONAR_VERSION=5.6 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
-# Thu, 02 Jun 2016 22:01:56 GMT
+# Thu, 23 Jun 2016 22:47:10 GMT
 EXPOSE 9000/tcp
-# Thu, 02 Jun 2016 22:02:11 GMT
+# Thu, 23 Jun 2016 22:47:35 GMT
 RUN set -x     && cd /tmp     && curl -fSL -O "https://archive.raspbian.org/raspbian/pool/main/c/ca-certificates/ca-certificates_20130119+deb7u1_all.deb"     && echo "3494ecfd607e4233d8d1a656eceb6bd109d756bc0afe9d3b29dfc0acc4fe19cf  ca-certificates_20130119+deb7u1_all.deb" | sha256sum -c -     && dpkg -P --force-all ca-certificates     && dpkg -i ca-certificates_20130119+deb7u1_all.deb     && rm ca-certificates_20130119+deb7u1_all.deb     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE     && cd /opt     && curl -o sonarqube.zip -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip     && curl -o sonarqube.zip.asc -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip     && unzip sonarqube.zip     && mv sonarqube-$SONAR_VERSION sonarqube     && rm sonarqube.zip*     && rm -rf $SONARQUBE_HOME/bin/*
-# Thu, 02 Jun 2016 22:02:13 GMT
+# Thu, 23 Jun 2016 22:47:36 GMT
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
-# Thu, 02 Jun 2016 22:02:14 GMT
+# Thu, 23 Jun 2016 22:47:36 GMT
 WORKDIR /opt/sonarqube
-# Thu, 02 Jun 2016 22:02:15 GMT
-COPY file:330f77bff6fc3e447c0b56894f0b8a51ebb2164b4eb1f914fba8d5854569e637 in /opt/sonarqube/bin/
-# Thu, 02 Jun 2016 22:02:16 GMT
+# Thu, 23 Jun 2016 22:47:37 GMT
+COPY file:137c5d28bd342cc8742a0ad6123eb8bd930c44da4719a82c9d33387b567c147c in /opt/sonarqube/bin/
+# Thu, 23 Jun 2016 22:47:37 GMT
 ENTRYPOINT &{["./bin/run.sh"]}
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:92ca6482a44943cc8666f4ff41ce1e3db7cb5baeabaee583097092c7a5e6d4b2`  
-		Last Modified: Thu, 02 Jun 2016 22:04:19 GMT  
-		Size: 434.0 B
-	-	`sha256:c9629e7337c5c138b0970cc988f35c4e7ec1ca12615017b553337aa046079995`  
-		Last Modified: Thu, 02 Jun 2016 22:04:41 GMT  
-		Size: 117.7 MB (117651436 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:5b0aa19df922cc93d082ca9ed76f762283ddfd30e2350dc0ccacf9f169f18595`  
+		Last Modified: Mon, 27 Jun 2016 17:13:36 GMT  
+		Size: 117.7 MB (117681370 bytes)
+	-	`sha256:3f80e11aa5c91d7dd84ce0be27f03fc173691299a5099a2388529589fdcdd1ce`  
+		Last Modified: Mon, 27 Jun 2016 17:13:26 GMT  
+		Size: 433.0 B
 
 ## `sonarqube:lts`
 
 ```console
-$ docker pull sonarqube@sha256:4a6c3968af6d6239e5ac1e6be9f073c96d4fa80f184460a279d531b1906c9b76
+$ docker pull sonarqube@sha256:85d35fe1e676353d0fa8dd3f7fef6f6f2d3ba327afe49ad7816a3dad862a71f8
 ```
 
 -	Platforms:
@@ -118,99 +115,96 @@ $ docker pull sonarqube@sha256:4a6c3968af6d6239e5ac1e6be9f073c96d4fa80f184460a27
 
 ### `sonarqube:lts` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **360.9 MB (360899108 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **361.0 MB (361034109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `b849efba5470a43c827411ba271e4bba85298efb055fbb87ab6e5d3d28e92bf4`
+-	Image ID: `sha256:8cb871b1ae3a52d8523cdb32250a393ba709ff2c4fb2a9f0954f05ba4e62cbe4`
 -	Entrypoint: `[".\/bin\/run.sh"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 02 Jun 2016 22:01:54 GMT
+# Thu, 23 Jun 2016 22:47:09 GMT
 MAINTAINER David Gageot <david.gageot@sonarsource.com>
-# Thu, 02 Jun 2016 22:01:55 GMT
+# Thu, 23 Jun 2016 22:47:09 GMT
 ENV SONAR_VERSION=5.6 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
-# Thu, 02 Jun 2016 22:01:56 GMT
+# Thu, 23 Jun 2016 22:47:10 GMT
 EXPOSE 9000/tcp
-# Thu, 02 Jun 2016 22:02:11 GMT
+# Thu, 23 Jun 2016 22:47:35 GMT
 RUN set -x     && cd /tmp     && curl -fSL -O "https://archive.raspbian.org/raspbian/pool/main/c/ca-certificates/ca-certificates_20130119+deb7u1_all.deb"     && echo "3494ecfd607e4233d8d1a656eceb6bd109d756bc0afe9d3b29dfc0acc4fe19cf  ca-certificates_20130119+deb7u1_all.deb" | sha256sum -c -     && dpkg -P --force-all ca-certificates     && dpkg -i ca-certificates_20130119+deb7u1_all.deb     && rm ca-certificates_20130119+deb7u1_all.deb     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE     && cd /opt     && curl -o sonarqube.zip -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip     && curl -o sonarqube.zip.asc -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip     && unzip sonarqube.zip     && mv sonarqube-$SONAR_VERSION sonarqube     && rm sonarqube.zip*     && rm -rf $SONARQUBE_HOME/bin/*
-# Thu, 02 Jun 2016 22:02:13 GMT
+# Thu, 23 Jun 2016 22:47:36 GMT
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
-# Thu, 02 Jun 2016 22:02:14 GMT
+# Thu, 23 Jun 2016 22:47:36 GMT
 WORKDIR /opt/sonarqube
-# Thu, 02 Jun 2016 22:02:15 GMT
-COPY file:330f77bff6fc3e447c0b56894f0b8a51ebb2164b4eb1f914fba8d5854569e637 in /opt/sonarqube/bin/
-# Thu, 02 Jun 2016 22:02:16 GMT
+# Thu, 23 Jun 2016 22:47:37 GMT
+COPY file:137c5d28bd342cc8742a0ad6123eb8bd930c44da4719a82c9d33387b567c147c in /opt/sonarqube/bin/
+# Thu, 23 Jun 2016 22:47:37 GMT
 ENTRYPOINT &{["./bin/run.sh"]}
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:92ca6482a44943cc8666f4ff41ce1e3db7cb5baeabaee583097092c7a5e6d4b2`  
-		Last Modified: Thu, 02 Jun 2016 22:04:19 GMT  
-		Size: 434.0 B
-	-	`sha256:c9629e7337c5c138b0970cc988f35c4e7ec1ca12615017b553337aa046079995`  
-		Last Modified: Thu, 02 Jun 2016 22:04:41 GMT  
-		Size: 117.7 MB (117651436 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:5b0aa19df922cc93d082ca9ed76f762283ddfd30e2350dc0ccacf9f169f18595`  
+		Last Modified: Mon, 27 Jun 2016 17:13:36 GMT  
+		Size: 117.7 MB (117681370 bytes)
+	-	`sha256:3f80e11aa5c91d7dd84ce0be27f03fc173691299a5099a2388529589fdcdd1ce`  
+		Last Modified: Mon, 27 Jun 2016 17:13:26 GMT  
+		Size: 433.0 B
 
 ## `sonarqube:5.6`
 
 ```console
-$ docker pull sonarqube@sha256:b28acd73025a39067325e388539c07293ba4a47e6be5531bff7e2d28aef1480c
+$ docker pull sonarqube@sha256:85d35fe1e676353d0fa8dd3f7fef6f6f2d3ba327afe49ad7816a3dad862a71f8
 ```
 
 -	Platforms:
@@ -218,94 +212,91 @@ $ docker pull sonarqube@sha256:b28acd73025a39067325e388539c07293ba4a47e6be5531bf
 
 ### `sonarqube:5.6` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **360.9 MB (360899108 bytes)**  
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **361.0 MB (361034109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `b849efba5470a43c827411ba271e4bba85298efb055fbb87ab6e5d3d28e92bf4`
+-	Image ID: `sha256:8cb871b1ae3a52d8523cdb32250a393ba709ff2c4fb2a9f0954f05ba4e62cbe4`
 -	Entrypoint: `[".\/bin\/run.sh"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 02 Jun 2016 22:01:54 GMT
+# Thu, 23 Jun 2016 22:47:09 GMT
 MAINTAINER David Gageot <david.gageot@sonarsource.com>
-# Thu, 02 Jun 2016 22:01:55 GMT
+# Thu, 23 Jun 2016 22:47:09 GMT
 ENV SONAR_VERSION=5.6 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
-# Thu, 02 Jun 2016 22:01:56 GMT
+# Thu, 23 Jun 2016 22:47:10 GMT
 EXPOSE 9000/tcp
-# Thu, 02 Jun 2016 22:02:11 GMT
+# Thu, 23 Jun 2016 22:47:35 GMT
 RUN set -x     && cd /tmp     && curl -fSL -O "https://archive.raspbian.org/raspbian/pool/main/c/ca-certificates/ca-certificates_20130119+deb7u1_all.deb"     && echo "3494ecfd607e4233d8d1a656eceb6bd109d756bc0afe9d3b29dfc0acc4fe19cf  ca-certificates_20130119+deb7u1_all.deb" | sha256sum -c -     && dpkg -P --force-all ca-certificates     && dpkg -i ca-certificates_20130119+deb7u1_all.deb     && rm ca-certificates_20130119+deb7u1_all.deb     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE     && cd /opt     && curl -o sonarqube.zip -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip     && curl -o sonarqube.zip.asc -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip     && unzip sonarqube.zip     && mv sonarqube-$SONAR_VERSION sonarqube     && rm sonarqube.zip*     && rm -rf $SONARQUBE_HOME/bin/*
-# Thu, 02 Jun 2016 22:02:13 GMT
+# Thu, 23 Jun 2016 22:47:36 GMT
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
-# Thu, 02 Jun 2016 22:02:14 GMT
+# Thu, 23 Jun 2016 22:47:36 GMT
 WORKDIR /opt/sonarqube
-# Thu, 02 Jun 2016 22:02:15 GMT
-COPY file:330f77bff6fc3e447c0b56894f0b8a51ebb2164b4eb1f914fba8d5854569e637 in /opt/sonarqube/bin/
-# Thu, 02 Jun 2016 22:02:16 GMT
+# Thu, 23 Jun 2016 22:47:37 GMT
+COPY file:137c5d28bd342cc8742a0ad6123eb8bd930c44da4719a82c9d33387b567c147c in /opt/sonarqube/bin/
+# Thu, 23 Jun 2016 22:47:37 GMT
 ENTRYPOINT &{["./bin/run.sh"]}
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:92ca6482a44943cc8666f4ff41ce1e3db7cb5baeabaee583097092c7a5e6d4b2`  
-		Last Modified: Thu, 02 Jun 2016 22:04:19 GMT  
-		Size: 434.0 B
-	-	`sha256:c9629e7337c5c138b0970cc988f35c4e7ec1ca12615017b553337aa046079995`  
-		Last Modified: Thu, 02 Jun 2016 22:04:41 GMT  
-		Size: 117.7 MB (117651436 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:5b0aa19df922cc93d082ca9ed76f762283ddfd30e2350dc0ccacf9f169f18595`  
+		Last Modified: Mon, 27 Jun 2016 17:13:36 GMT  
+		Size: 117.7 MB (117681370 bytes)
+	-	`sha256:3f80e11aa5c91d7dd84ce0be27f03fc173691299a5099a2388529589fdcdd1ce`  
+		Last Modified: Mon, 27 Jun 2016 17:13:26 GMT  
+		Size: 433.0 B
 
 ## `sonarqube:5.6-alpine`
 

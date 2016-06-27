@@ -1068,7 +1068,91 @@ CMD ["catalina.sh" "run"]
 
 ## `tomee:7-jdk-7.0.0-plume`
 
-**does not exist** (yet?)
+```console
+$ docker pull tomee@sha256:6ef23dff9965936719787d063890df6788426ad74b75a0222d70113d0770e06d
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `tomee:7-jdk-7.0.0-plume` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **309.6 MB (309619489 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c7f9877e8c89e8936b61607b6d07952188c7a88d58a9f16598ed5c22f1a8b1be`
+-	Default Command: `["catalina.sh","run"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
+CMD ["/bin/bash"]
+# Thu, 09 Jun 2016 21:35:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Jun 2016 21:37:09 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Jun 2016 22:05:16 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Jun 2016 22:05:16 GMT
+ENV LANG=C.UTF-8
+# Thu, 09 Jun 2016 22:05:17 GMT
+RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_VERSION=7u101
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-2~deb8u1
+# Thu, 09 Jun 2016 22:07:27 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+# Tue, 21 Jun 2016 15:12:43 GMT
+ENV PATH=/usr/local/tomee/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 21 Jun 2016 15:12:44 GMT
+RUN mkdir -p /usr/local/tomee
+# Tue, 21 Jun 2016 15:12:44 GMT
+WORKDIR /usr/local/tomee
+# Tue, 21 Jun 2016 15:12:45 GMT
+ENV GPG_KEYS=BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF 	223D3A74B068ECA354DC385CE126833F9CF64915 	7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF 	82D8419BA697F0E7FB85916EE91287822FDB81B1 	9056B710F1E332780DE7AF34CBAEBE39A46C4CA1 	A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1 	B7574789F5018690043E6DD9C212662E12F3E1DD 	B8B301E6105DF628076BD92C5483E55897ABD9B9 	DBCCD103B8B24F86FFAAB025C8BB472CD297D428 	F067B8140F5DD80E1D3B5D92318242FE9A0B1183 	FAA603D58B1BA4EDF65896D0ED340E0E6D545F97
+# Tue, 21 Jun 2016 15:12:51 GMT
+RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
+# Tue, 21 Jun 2016 15:14:03 GMT
+RUN set -x 	&& curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-7.0.0/apache-tomee-7.0.0-plume.tar.gz.asc -o tomee.tar.gz.asc 	&& curl -fSL http://apache.rediris.es/tomee/tomee-7.0.0/apache-tomee-7.0.0-plume.tar.gz -o tomee.tar.gz 	&& gpg --batch --verify tomee.tar.gz.asc tomee.tar.gz 	&& tar -zxf tomee.tar.gz 	&& mv apache-tomee-plume-7.0.0/* /usr/local/tomee 	&& rm -Rf apache-tomee-plume-7.0.0 	&& rm bin/*.bat 	&& rm tomee.tar.gz*
+# Tue, 21 Jun 2016 15:14:04 GMT
+EXPOSE 8080/tcp
+# Tue, 21 Jun 2016 15:14:04 GMT
+CMD ["catalina.sh" "run"]
+```
+
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:5341b7d465f1a959ae98ed72357d750249c43dd3e10009d2f7a5bdae80abf7be`  
+		Last Modified: Thu, 09 Jun 2016 22:17:36 GMT  
+		Size: 242.0 B
+	-	`sha256:b4bcb2ffc258c480d903431b194500bfe9e9296982e15af57ffaa67ab1c6ca24`  
+		Last Modified: Thu, 09 Jun 2016 22:18:02 GMT  
+		Size: 139.3 MB (139304231 bytes)
+	-	`sha256:7be0613a12d5b896cbf01338828c1b550db1cb6a1fc9b4d2b9ef33725fb81a93`  
+		Last Modified: Tue, 21 Jun 2016 15:20:43 GMT  
+		Size: 146.0 B
+	-	`sha256:2e0028302891a11ff4bc7b6021d4688d4a4a1642f4903da0511c56a2e96c0046`  
+		Last Modified: Tue, 21 Jun 2016 15:20:43 GMT  
+		Size: 29.7 KB (29736 bytes)
+	-	`sha256:c0fa54fb694ee8ad30b5f7767dcfc2c200c04b55db47a475b40cbe651b56301e`  
+		Last Modified: Tue, 21 Jun 2016 15:20:49 GMT  
+		Size: 57.2 MB (57237749 bytes)
 
 ## `tomee:7-jdk-7.0.0-plus`
 

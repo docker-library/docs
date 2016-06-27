@@ -11,7 +11,7 @@
 ## `glassfish:4.0-jdk7`
 
 ```console
-$ docker pull glassfish@sha256:3cbf3496ffb061e5b87c5ea350ff9421242743678367813e98691061ef382c5c
+$ docker pull glassfish@sha256:18bd2b05977fba4aff9ade64577a1286f83de4019fe0363b7a125f107d79cb3e
 ```
 
 -	Platforms:
@@ -19,117 +19,84 @@ $ docker pull glassfish@sha256:3cbf3496ffb061e5b87c5ea350ff9421242743678367813e9
 
 ### `glassfish:4.0-jdk7` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **353.9 MB (353948524 bytes)**  
+-	Total Size: **354.1 MB (354067115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1409d3389c796d24be02cb0ea4278c19d3d459e2836644af91369353935885a`
+-	Image ID: `sha256:e6c286d92eaf449bd0460da7a551c15f2064e09a4bca5297fdece3400d70c454`
 -	Default Command: `["\/bin\/sh","-c","asadmin start-domain --verbose"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:54 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 ENV LANG=C.UTF-8
-# Mon, 23 May 2016 23:54:56 GMT
+# Thu, 09 Jun 2016 22:05:17 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Mon, 23 May 2016 23:54:57 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 23 May 2016 23:54:58 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_VERSION=7u101
-# Mon, 23 May 2016 23:54:59 GMT
-ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-1~deb8u1
-# Mon, 23 May 2016 23:56:32 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-2~deb8u1
+# Thu, 09 Jun 2016 22:07:27 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 25 May 2016 00:25:13 GMT
+# Thu, 09 Jun 2016 23:30:55 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Wed, 25 May 2016 00:25:14 GMT
+# Thu, 09 Jun 2016 23:30:55 GMT
 ENV GLASSFISH_HOME=/usr/local/glassfish4
-# Wed, 25 May 2016 00:25:15 GMT
+# Thu, 09 Jun 2016 23:30:55 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-7-openjdk-amd64/bin:/usr/local/glassfish4/bin
-# Wed, 25 May 2016 00:25:52 GMT
+# Thu, 09 Jun 2016 23:31:56 GMT
 RUN apt-get update &&             apt-get install -y curl unzip zip inotify-tools &&             rm -rf /var/lib/apt/lists/*
-# Wed, 25 May 2016 00:26:01 GMT
+# Thu, 09 Jun 2016 23:32:06 GMT
 RUN curl -L -o /tmp/glassfish-4.0.zip http://download.java.net/glassfish/4.0/release/glassfish-4.0.zip &&             unzip /tmp/glassfish-4.0.zip -d /usr/local &&             rm -f /tmp/glassfish-4.0.zip
-# Wed, 25 May 2016 00:26:03 GMT
+# Thu, 09 Jun 2016 23:32:07 GMT
 EXPOSE 4848/tcp 8080/tcp 8181/tcp
-# Wed, 25 May 2016 00:26:04 GMT
+# Thu, 09 Jun 2016 23:32:07 GMT
 WORKDIR /usr/local/glassfish4
-# Wed, 25 May 2016 00:26:05 GMT
+# Thu, 09 Jun 2016 23:32:07 GMT
 CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a843091b25650e9bc1d8c4f070f78a2fe9a20c7c6b340a0633f8fbd5525a40d4`  
-		Last Modified: Tue, 24 May 2016 15:41:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:799eef929b90bdd3827b40e98bee54dc6127967a606ff17c76c49d39cdbc1703`  
-		Last Modified: Tue, 24 May 2016 15:41:21 GMT  
-		Size: 139.3 MB (139288800 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:89a6e5485b54a7e0338a8310aada628c71ee12fa66f4a4fe3a35bb82b9bcbbf2`  
-		Last Modified: Tue, 31 May 2016 18:50:54 GMT  
-		Size: 577.5 KB (577479 bytes)
-	-	`sha256:0af2fd582e6fc5d797f9986c5c6579f12e5188c75b171c6fe8e67069042b547e`  
-		Last Modified: Tue, 31 May 2016 18:50:35 GMT  
-		Size: 101.1 MB (101107445 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:5341b7d465f1a959ae98ed72357d750249c43dd3e10009d2f7a5bdae80abf7be`  
+		Last Modified: Thu, 09 Jun 2016 22:17:36 GMT  
+		Size: 242.0 B
+	-	`sha256:b4bcb2ffc258c480d903431b194500bfe9e9296982e15af57ffaa67ab1c6ca24`  
+		Last Modified: Thu, 09 Jun 2016 22:18:02 GMT  
+		Size: 139.3 MB (139304231 bytes)
+	-	`sha256:2720d82ac6bca607554ccb3748a86ce85b7521be16d1943c071f44d6dbc46eb5`  
+		Last Modified: Mon, 27 Jun 2016 16:44:31 GMT  
+		Size: 607.8 KB (607847 bytes)
+	-	`sha256:df7b4b15e4c68b2a702643e637138f148dfa46e551dc3a10849e103eaa7e0f26`  
+		Last Modified: Mon, 27 Jun 2016 16:44:40 GMT  
+		Size: 101.1 MB (101107410 bytes)
 
 ## `glassfish:4.0`
 
 ```console
-$ docker pull glassfish@sha256:3cbf3496ffb061e5b87c5ea350ff9421242743678367813e98691061ef382c5c
+$ docker pull glassfish@sha256:18bd2b05977fba4aff9ade64577a1286f83de4019fe0363b7a125f107d79cb3e
 ```
 
 -	Platforms:
@@ -137,117 +104,84 @@ $ docker pull glassfish@sha256:3cbf3496ffb061e5b87c5ea350ff9421242743678367813e9
 
 ### `glassfish:4.0` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **353.9 MB (353948524 bytes)**  
+-	Total Size: **354.1 MB (354067115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1409d3389c796d24be02cb0ea4278c19d3d459e2836644af91369353935885a`
+-	Image ID: `sha256:e6c286d92eaf449bd0460da7a551c15f2064e09a4bca5297fdece3400d70c454`
 -	Default Command: `["\/bin\/sh","-c","asadmin start-domain --verbose"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:54 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 ENV LANG=C.UTF-8
-# Mon, 23 May 2016 23:54:56 GMT
+# Thu, 09 Jun 2016 22:05:17 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Mon, 23 May 2016 23:54:57 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 23 May 2016 23:54:58 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
 ENV JAVA_VERSION=7u101
-# Mon, 23 May 2016 23:54:59 GMT
-ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-1~deb8u1
-# Mon, 23 May 2016 23:56:32 GMT
+# Thu, 09 Jun 2016 22:05:18 GMT
+ENV JAVA_DEBIAN_VERSION=7u101-2.6.6-2~deb8u1
+# Thu, 09 Jun 2016 22:07:27 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 25 May 2016 00:25:13 GMT
+# Thu, 09 Jun 2016 23:30:55 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Wed, 25 May 2016 00:25:14 GMT
+# Thu, 09 Jun 2016 23:30:55 GMT
 ENV GLASSFISH_HOME=/usr/local/glassfish4
-# Wed, 25 May 2016 00:25:15 GMT
+# Thu, 09 Jun 2016 23:30:55 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-7-openjdk-amd64/bin:/usr/local/glassfish4/bin
-# Wed, 25 May 2016 00:25:52 GMT
+# Thu, 09 Jun 2016 23:31:56 GMT
 RUN apt-get update &&             apt-get install -y curl unzip zip inotify-tools &&             rm -rf /var/lib/apt/lists/*
-# Wed, 25 May 2016 00:26:01 GMT
+# Thu, 09 Jun 2016 23:32:06 GMT
 RUN curl -L -o /tmp/glassfish-4.0.zip http://download.java.net/glassfish/4.0/release/glassfish-4.0.zip &&             unzip /tmp/glassfish-4.0.zip -d /usr/local &&             rm -f /tmp/glassfish-4.0.zip
-# Wed, 25 May 2016 00:26:03 GMT
+# Thu, 09 Jun 2016 23:32:07 GMT
 EXPOSE 4848/tcp 8080/tcp 8181/tcp
-# Wed, 25 May 2016 00:26:04 GMT
+# Thu, 09 Jun 2016 23:32:07 GMT
 WORKDIR /usr/local/glassfish4
-# Wed, 25 May 2016 00:26:05 GMT
+# Thu, 09 Jun 2016 23:32:07 GMT
 CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a843091b25650e9bc1d8c4f070f78a2fe9a20c7c6b340a0633f8fbd5525a40d4`  
-		Last Modified: Tue, 24 May 2016 15:41:39 GMT  
-		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:799eef929b90bdd3827b40e98bee54dc6127967a606ff17c76c49d39cdbc1703`  
-		Last Modified: Tue, 24 May 2016 15:41:21 GMT  
-		Size: 139.3 MB (139288800 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:89a6e5485b54a7e0338a8310aada628c71ee12fa66f4a4fe3a35bb82b9bcbbf2`  
-		Last Modified: Tue, 31 May 2016 18:50:54 GMT  
-		Size: 577.5 KB (577479 bytes)
-	-	`sha256:0af2fd582e6fc5d797f9986c5c6579f12e5188c75b171c6fe8e67069042b547e`  
-		Last Modified: Tue, 31 May 2016 18:50:35 GMT  
-		Size: 101.1 MB (101107445 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:5341b7d465f1a959ae98ed72357d750249c43dd3e10009d2f7a5bdae80abf7be`  
+		Last Modified: Thu, 09 Jun 2016 22:17:36 GMT  
+		Size: 242.0 B
+	-	`sha256:b4bcb2ffc258c480d903431b194500bfe9e9296982e15af57ffaa67ab1c6ca24`  
+		Last Modified: Thu, 09 Jun 2016 22:18:02 GMT  
+		Size: 139.3 MB (139304231 bytes)
+	-	`sha256:2720d82ac6bca607554ccb3748a86ce85b7521be16d1943c071f44d6dbc46eb5`  
+		Last Modified: Mon, 27 Jun 2016 16:44:31 GMT  
+		Size: 607.8 KB (607847 bytes)
+	-	`sha256:df7b4b15e4c68b2a702643e637138f148dfa46e551dc3a10849e103eaa7e0f26`  
+		Last Modified: Mon, 27 Jun 2016 16:44:40 GMT  
+		Size: 101.1 MB (101107410 bytes)
 
 ## `glassfish:4.1-jdk8`
 
 ```console
-$ docker pull glassfish@sha256:05097d6bf26ddc5106aa6fc8a15cb95647614b7e5b021c15426bb679ee9949b7
+$ docker pull glassfish@sha256:d030b46f197b07cf339e9c57bcdb8477d09bffe276f4548d2d43c464117c534b
 ```
 
 -	Platforms:
@@ -255,132 +189,96 @@ $ docker pull glassfish@sha256:05097d6bf26ddc5106aa6fc8a15cb95647614b7e5b021c154
 
 ### `glassfish:4.1-jdk8` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **350.5 MB (350502363 bytes)**  
+-	Total Size: **350.6 MB (350627990 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dd148d0b301b62f2dc657155b822668856e4448c26fdd6b2c4751705e51909c`
+-	Image ID: `sha256:0fb8b685f1082a8714a6f7f30681f82dddfde20389aaca26d84ae2e764c961cb`
 -	Default Command: `["\/bin\/sh","-c","asadmin start-domain --verbose"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Wed, 25 May 2016 00:26:36 GMT
+# Thu, 09 Jun 2016 23:32:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Wed, 25 May 2016 00:26:37 GMT
+# Thu, 09 Jun 2016 23:32:08 GMT
 ENV GLASSFISH_HOME=/usr/local/glassfish4
-# Wed, 25 May 2016 00:26:38 GMT
+# Thu, 09 Jun 2016 23:32:08 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/local/glassfish4/bin
-# Wed, 25 May 2016 00:27:16 GMT
+# Thu, 09 Jun 2016 23:33:08 GMT
 RUN apt-get update &&             apt-get install -y curl unzip zip inotify-tools &&             rm -rf /var/lib/apt/lists/*
-# Wed, 25 May 2016 00:27:23 GMT
+# Thu, 09 Jun 2016 23:33:16 GMT
 RUN curl -L -o /tmp/glassfish-4.1.zip http://download.java.net/glassfish/4.1/release/glassfish-4.1.zip &&             unzip /tmp/glassfish-4.1.zip -d /usr/local &&             rm -f /tmp/glassfish-4.1.zip
-# Wed, 25 May 2016 00:27:25 GMT
+# Thu, 09 Jun 2016 23:33:17 GMT
 EXPOSE 4848/tcp 8080/tcp 8181/tcp
-# Wed, 25 May 2016 00:27:26 GMT
+# Thu, 09 Jun 2016 23:33:17 GMT
 WORKDIR /usr/local/glassfish4
-# Wed, 25 May 2016 00:27:26 GMT
+# Thu, 09 Jun 2016 23:33:17 GMT
 CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3354ad25cdf7e3e26d3ff959e47182f772326fea19e006db190457d12e62a1a8`  
-		Last Modified: Tue, 31 May 2016 18:53:33 GMT  
-		Size: 575.9 KB (575860 bytes)
-	-	`sha256:10ff43ff143dcfafe05f0f8373cb208f9b432b15f8e2e937222b3b44a4021b86`  
-		Last Modified: Tue, 31 May 2016 18:53:26 GMT  
-		Size: 106.7 MB (106678913 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:c784620e4a64b53af0d29961b647f9fa8ad7d6daab9376f209fc591204f4d5f7`  
+		Last Modified: Mon, 27 Jun 2016 16:45:04 GMT  
+		Size: 596.8 KB (596813 bytes)
+	-	`sha256:f09f176b8a4a362d35c25aaa4923eb51b97daf600b24ed05f7bb1c4371cc3879`  
+		Last Modified: Mon, 27 Jun 2016 16:45:13 GMT  
+		Size: 106.7 MB (106678871 bytes)
 
 ## `glassfish:4.1`
 
 ```console
-$ docker pull glassfish@sha256:05097d6bf26ddc5106aa6fc8a15cb95647614b7e5b021c15426bb679ee9949b7
+$ docker pull glassfish@sha256:d030b46f197b07cf339e9c57bcdb8477d09bffe276f4548d2d43c464117c534b
 ```
 
 -	Platforms:
@@ -388,132 +286,96 @@ $ docker pull glassfish@sha256:05097d6bf26ddc5106aa6fc8a15cb95647614b7e5b021c154
 
 ### `glassfish:4.1` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **350.5 MB (350502363 bytes)**  
+-	Total Size: **350.6 MB (350627990 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dd148d0b301b62f2dc657155b822668856e4448c26fdd6b2c4751705e51909c`
+-	Image ID: `sha256:0fb8b685f1082a8714a6f7f30681f82dddfde20389aaca26d84ae2e764c961cb`
 -	Default Command: `["\/bin\/sh","-c","asadmin start-domain --verbose"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Wed, 25 May 2016 00:26:36 GMT
+# Thu, 09 Jun 2016 23:32:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Wed, 25 May 2016 00:26:37 GMT
+# Thu, 09 Jun 2016 23:32:08 GMT
 ENV GLASSFISH_HOME=/usr/local/glassfish4
-# Wed, 25 May 2016 00:26:38 GMT
+# Thu, 09 Jun 2016 23:32:08 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/local/glassfish4/bin
-# Wed, 25 May 2016 00:27:16 GMT
+# Thu, 09 Jun 2016 23:33:08 GMT
 RUN apt-get update &&             apt-get install -y curl unzip zip inotify-tools &&             rm -rf /var/lib/apt/lists/*
-# Wed, 25 May 2016 00:27:23 GMT
+# Thu, 09 Jun 2016 23:33:16 GMT
 RUN curl -L -o /tmp/glassfish-4.1.zip http://download.java.net/glassfish/4.1/release/glassfish-4.1.zip &&             unzip /tmp/glassfish-4.1.zip -d /usr/local &&             rm -f /tmp/glassfish-4.1.zip
-# Wed, 25 May 2016 00:27:25 GMT
+# Thu, 09 Jun 2016 23:33:17 GMT
 EXPOSE 4848/tcp 8080/tcp 8181/tcp
-# Wed, 25 May 2016 00:27:26 GMT
+# Thu, 09 Jun 2016 23:33:17 GMT
 WORKDIR /usr/local/glassfish4
-# Wed, 25 May 2016 00:27:26 GMT
+# Thu, 09 Jun 2016 23:33:17 GMT
 CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3354ad25cdf7e3e26d3ff959e47182f772326fea19e006db190457d12e62a1a8`  
-		Last Modified: Tue, 31 May 2016 18:53:33 GMT  
-		Size: 575.9 KB (575860 bytes)
-	-	`sha256:10ff43ff143dcfafe05f0f8373cb208f9b432b15f8e2e937222b3b44a4021b86`  
-		Last Modified: Tue, 31 May 2016 18:53:26 GMT  
-		Size: 106.7 MB (106678913 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:c784620e4a64b53af0d29961b647f9fa8ad7d6daab9376f209fc591204f4d5f7`  
+		Last Modified: Mon, 27 Jun 2016 16:45:04 GMT  
+		Size: 596.8 KB (596813 bytes)
+	-	`sha256:f09f176b8a4a362d35c25aaa4923eb51b97daf600b24ed05f7bb1c4371cc3879`  
+		Last Modified: Mon, 27 Jun 2016 16:45:13 GMT  
+		Size: 106.7 MB (106678871 bytes)
 
 ## `glassfish:latest`
 
 ```console
-$ docker pull glassfish@sha256:05097d6bf26ddc5106aa6fc8a15cb95647614b7e5b021c15426bb679ee9949b7
+$ docker pull glassfish@sha256:d030b46f197b07cf339e9c57bcdb8477d09bffe276f4548d2d43c464117c534b
 ```
 
 -	Platforms:
@@ -521,124 +383,88 @@ $ docker pull glassfish@sha256:05097d6bf26ddc5106aa6fc8a15cb95647614b7e5b021c154
 
 ### `glassfish:latest` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **350.5 MB (350502363 bytes)**  
+-	Total Size: **350.6 MB (350627990 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dd148d0b301b62f2dc657155b822668856e4448c26fdd6b2c4751705e51909c`
+-	Image ID: `sha256:0fb8b685f1082a8714a6f7f30681f82dddfde20389aaca26d84ae2e764c961cb`
 -	Default Command: `["\/bin\/sh","-c","asadmin start-domain --verbose"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 09 Jun 2016 21:35:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 09 Jun 2016 21:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:54:53 GMT
+# Thu, 09 Jun 2016 22:05:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 00:17:43 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 24 May 2016 00:17:44 GMT
+# Thu, 09 Jun 2016 22:10:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 00:17:46 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 24 May 2016 00:17:47 GMT
+# Thu, 09 Jun 2016 22:10:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 24 May 2016 00:17:48 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_VERSION=8u91
-# Tue, 24 May 2016 00:17:50 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Tue, 24 May 2016 00:17:51 GMT
+# Thu, 09 Jun 2016 22:10:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 24 May 2016 00:19:34 GMT
+# Thu, 09 Jun 2016 22:12:21 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 24 May 2016 00:20:15 GMT
+# Thu, 09 Jun 2016 22:12:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Wed, 25 May 2016 00:26:36 GMT
+# Thu, 09 Jun 2016 23:32:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Wed, 25 May 2016 00:26:37 GMT
+# Thu, 09 Jun 2016 23:32:08 GMT
 ENV GLASSFISH_HOME=/usr/local/glassfish4
-# Wed, 25 May 2016 00:26:38 GMT
+# Thu, 09 Jun 2016 23:32:08 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/local/glassfish4/bin
-# Wed, 25 May 2016 00:27:16 GMT
+# Thu, 09 Jun 2016 23:33:08 GMT
 RUN apt-get update &&             apt-get install -y curl unzip zip inotify-tools &&             rm -rf /var/lib/apt/lists/*
-# Wed, 25 May 2016 00:27:23 GMT
+# Thu, 09 Jun 2016 23:33:16 GMT
 RUN curl -L -o /tmp/glassfish-4.1.zip http://download.java.net/glassfish/4.1/release/glassfish-4.1.zip &&             unzip /tmp/glassfish-4.1.zip -d /usr/local &&             rm -f /tmp/glassfish-4.1.zip
-# Wed, 25 May 2016 00:27:25 GMT
+# Thu, 09 Jun 2016 23:33:17 GMT
 EXPOSE 4848/tcp 8080/tcp 8181/tcp
-# Wed, 25 May 2016 00:27:26 GMT
+# Thu, 09 Jun 2016 23:33:17 GMT
 WORKDIR /usr/local/glassfish4
-# Wed, 25 May 2016 00:27:26 GMT
+# Thu, 09 Jun 2016 23:33:17 GMT
 CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:fb6908934fafcc3906170fcb4a01e554699f03cafec761bf1c8ee710111d63c0`  
-		Last Modified: Tue, 24 May 2016 15:41:45 GMT  
-		Size: 593.0 KB (593012 bytes)
-	-	`sha256:9c531a67af6d3d6d478e999a38d3ebf6a1ec84ad9ec965e710711be6290a0f78`  
-		Last Modified: Tue, 24 May 2016 15:46:45 GMT  
-		Size: 220.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3c7a0bc3de6ecc78f48c265804190a7af59ad4f1e014dc6a6321aec8d92d5ca4`  
-		Last Modified: Tue, 24 May 2016 15:46:39 GMT  
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
+		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
+		Size: 622.3 KB (622260 bytes)
+	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
+		Size: 219.0 B
+	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
+		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
 		Size: 241.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1dbf971ee045834367afdb46e60f70e18d7aaefc9eb48484af7e95e804bb256b`  
-		Last Modified: Tue, 24 May 2016 15:46:14 GMT  
-		Size: 130.0 MB (129988181 bytes)
-	-	`sha256:5136e96bff7d58b5283b4bd48948d5d3e57509966849adc4b054b8a1362e781d`  
-		Last Modified: Tue, 24 May 2016 15:45:20 GMT  
-		Size: 284.4 KB (284357 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3354ad25cdf7e3e26d3ff959e47182f772326fea19e006db190457d12e62a1a8`  
-		Last Modified: Tue, 31 May 2016 18:53:33 GMT  
-		Size: 575.9 KB (575860 bytes)
-	-	`sha256:10ff43ff143dcfafe05f0f8373cb208f9b432b15f8e2e937222b3b44a4021b86`  
-		Last Modified: Tue, 31 May 2016 18:53:26 GMT  
-		Size: 106.7 MB (106678913 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
+		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
+		Size: 130.0 MB (130020091 bytes)
+	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
+		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
+		Size: 284.4 KB (284370 bytes)
+	-	`sha256:c784620e4a64b53af0d29961b647f9fa8ad7d6daab9376f209fc591204f4d5f7`  
+		Last Modified: Mon, 27 Jun 2016 16:45:04 GMT  
+		Size: 596.8 KB (596813 bytes)
+	-	`sha256:f09f176b8a4a362d35c25aaa4923eb51b97daf600b24ed05f7bb1c4371cc3879`  
+		Last Modified: Mon, 27 Jun 2016 16:45:13 GMT  
+		Size: 106.7 MB (106678871 bytes)
