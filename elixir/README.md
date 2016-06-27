@@ -1,12 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.5`, `1.2`, `latest` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/22ee98417200ef8d9a049b2b4504e7cf279e911f/1.2/Dockerfile)
--	[`1.2-slim`, `slim` (*1.2/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/22ee98417200ef8d9a049b2b4504e7cf279e911f/1.2/slim/Dockerfile)
--	[`1.2-onbuild`, `onbuild` (*1.2/onbuild/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/22ee98417200ef8d9a049b2b4504e7cf279e911f/1.2/onbuild/Dockerfile)
--	[`1.2.4` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8a1bf2bebcf4488408fc5e9f51c6ef09e0abbee6/1.2/Dockerfile)
--	[`1.2.3` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/08b645312bcbf020214e36679eec248234485b3a/1.2/Dockerfile)
+-	[`1.3.0`, `1.3`, `latest` (*1.3/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/50bb23cfce41cafeb4f6bd0a1eeeb412ddc780ca/1.3/Dockerfile)
+-	[`1.3.0-slim`, `1.3-slim`, `slim` (*1.3/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/50bb23cfce41cafeb4f6bd0a1eeeb412ddc780ca/1.3/slim/Dockerfile)
+-	[`1.2.6`, `1.2` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/Dockerfile)
+-	[`1.2.6-slim`, `1.2-slim` (*1.2/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/slim/Dockerfile)
 
-[![](https://badge.imagelayers.io/elixir:latest.svg)](https://imagelayers.io/?images=elixir:1.2.5,elixir:1.2-slim,elixir:1.2-onbuild,elixir:1.2.4,elixir:1.2.3)
+[![](https://badge.imagelayers.io/elixir:latest.svg)](https://imagelayers.io/?images=elixir:1.3.0,elixir:1.3.0-slim,elixir:1.2.6,elixir:1.2.6-slim)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elixir`)](https://github.com/docker-library/official-images/blob/master/library/elixir). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felixir).
 
@@ -62,14 +61,6 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 ## `elixir:slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `elixir`. Unless you are working in an environment where *only* the elixir image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
-## `elixir:onbuild`
-
-This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM elixir:onbuild` will be enough to create a stand-alone image for your project.
-
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
-
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
 
 # License
 
