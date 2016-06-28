@@ -129,7 +129,7 @@ CMD ["neo4j"]
 ## `neo4j:2.3`
 
 ```console
-$ docker pull neo4j@sha256:a60e7df36135a80f6e3fc343b1847145d0208b486cf0029be5586990ec5cf4ac
+$ docker pull neo4j@sha256:026aa7dc3081a6e5ee64ecb8885e6402c8ea3ac88e11a42acb0010b562099435
 ```
 
 -	Platforms:
@@ -139,9 +139,9 @@ $ docker pull neo4j@sha256:a60e7df36135a80f6e3fc343b1847145d0208b486cf0029be5586
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.0 MB (191994811 bytes)**  
+-	Total Size: **191.5 MB (191477846 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c93aca2fe8bf6c33d638c6c2d1910ee4beaf453c28c35b4fbb7d62415f62d517`
+-	Image ID: `sha256:7ae814aa75ae0329e633e4054f502aef1905e4695382a494b1f63ee60f092af6`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
@@ -174,33 +174,33 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Fri, 10 Jun 2016 21:53:34 GMT
 RUN apt-get update --quiet --quiet     && apt-get install --quiet --quiet --no-install-recommends lsof     && rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 21:53:34 GMT
-ENV NEO4J_VERSION=2.3.3
-# Fri, 10 Jun 2016 21:53:34 GMT
+# Tue, 28 Jun 2016 17:05:58 GMT
+ENV NEO4J_VERSION=2.3.5
+# Tue, 28 Jun 2016 17:05:58 GMT
 ENV NEO4J_EDITION=community
-# Fri, 10 Jun 2016 21:53:35 GMT
-ENV NEO4J_DOWNLOAD_SHA256=01559c55055516a42ee2dd100137b6b55d63f02959a3c6c6db7a152e045828d9
-# Fri, 10 Jun 2016 21:53:35 GMT
+# Tue, 28 Jun 2016 17:05:59 GMT
+ENV NEO4J_DOWNLOAD_SHA256=969159bddc0526681795f039e4250d728c8b60c5e421450259caacfc488c18cf
+# Tue, 28 Jun 2016 17:05:59 GMT
 ENV NEO4J_DOWNLOAD_ROOT=http://dist.neo4j.org
-# Fri, 10 Jun 2016 21:53:35 GMT
-ENV NEO4J_TARBALL=neo4j-community-2.3.3-unix.tar.gz
-# Fri, 10 Jun 2016 21:53:35 GMT
-ENV NEO4J_URI=http://dist.neo4j.org/neo4j-community-2.3.3-unix.tar.gz
-# Fri, 10 Jun 2016 21:53:51 GMT
+# Tue, 28 Jun 2016 17:05:59 GMT
+ENV NEO4J_TARBALL=neo4j-community-2.3.5-unix.tar.gz
+# Tue, 28 Jun 2016 17:06:00 GMT
+ENV NEO4J_URI=http://dist.neo4j.org/neo4j-community-2.3.5-unix.tar.gz
+# Tue, 28 Jun 2016 17:06:12 GMT
 RUN curl --fail --silent --show-error --location --output neo4j.tar.gz $NEO4J_URI     && echo "$NEO4J_DOWNLOAD_SHA256 neo4j.tar.gz" | sha256sum --check --quiet -     && tar --extract --file neo4j.tar.gz --directory /var/lib     && mv /var/lib/neo4j-* /var/lib/neo4j     && rm neo4j.tar.gz
-# Fri, 10 Jun 2016 21:53:51 GMT
+# Tue, 28 Jun 2016 17:06:13 GMT
 WORKDIR /var/lib/neo4j
-# Fri, 10 Jun 2016 21:53:52 GMT
+# Tue, 28 Jun 2016 17:06:14 GMT
 RUN mv data /data     && ln --symbolic /data
-# Fri, 10 Jun 2016 21:53:52 GMT
+# Tue, 28 Jun 2016 17:06:14 GMT
 VOLUME [/data]
-# Fri, 10 Jun 2016 21:53:53 GMT
+# Tue, 28 Jun 2016 17:06:15 GMT
 COPY file:1cbde912429223690d48be2e95a48b785a8c4463fcce7694554d7462d6d4eaae in /docker-entrypoint.sh
-# Fri, 10 Jun 2016 21:53:53 GMT
+# Tue, 28 Jun 2016 17:06:15 GMT
 EXPOSE 7473/tcp 7474/tcp
-# Fri, 10 Jun 2016 21:53:54 GMT
+# Tue, 28 Jun 2016 17:06:15 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 21:53:54 GMT
+# Tue, 28 Jun 2016 17:06:16 GMT
 CMD ["neo4j"]
 ```
 
@@ -229,14 +229,14 @@ CMD ["neo4j"]
 	-	`sha256:72453f7203bc2ed7bc641280107111706b6f86d16016a3615df192d6b98b46d1`  
 		Last Modified: Thu, 23 Jun 2016 17:38:28 GMT  
 		Size: 8.6 MB (8648528 bytes)
-	-	`sha256:fb0ebb89518c267003b235077c2fba03e7080a7616835b2c012271e1c06845d3`  
-		Last Modified: Thu, 23 Jun 2016 17:38:29 GMT  
-		Size: 59.2 MB (59200804 bytes)
-	-	`sha256:42d8c49023fd1e78e3d5f52a6ff580e59e63437d054736a3d7dce1bde0c12bbd`  
-		Last Modified: Thu, 23 Jun 2016 17:38:23 GMT  
-		Size: 710.0 B
-	-	`sha256:08ad48c590be9693497c317b24d4c89e50f3e965403c36db086737a9d6255485`  
-		Last Modified: Thu, 23 Jun 2016 17:38:23 GMT  
+	-	`sha256:7f3036547e40850c7b786ac19d03c9970b268596f4f0ea1608284098ad031b35`  
+		Last Modified: Tue, 28 Jun 2016 17:07:28 GMT  
+		Size: 58.7 MB (58683838 bytes)
+	-	`sha256:ba11a50629f1fa5dc66f135493b5db2a57c7423f3b90756cff958636052bec4f`  
+		Last Modified: Tue, 28 Jun 2016 17:07:22 GMT  
+		Size: 711.0 B
+	-	`sha256:53d6ee6b71b807b89399f07818e28fdc738f84680b7aeccdd8cb586ac6cbc229`  
+		Last Modified: Tue, 28 Jun 2016 17:07:23 GMT  
 		Size: 1.3 KB (1280 bytes)
 
 ## `neo4j:2.3.3-enterprise`
@@ -355,7 +355,7 @@ CMD ["neo4j"]
 ## `neo4j:2.3-enterprise`
 
 ```console
-$ docker pull neo4j@sha256:c88937a72e59d2de9ab232b9f6a787c51671bc96a81a53cf85af22d0d708b75f
+$ docker pull neo4j@sha256:13a88a04f824fa468f68ae76427d60597510d153836a2b61175f8352d75658f4
 ```
 
 -	Platforms:
@@ -365,9 +365,9 @@ $ docker pull neo4j@sha256:c88937a72e59d2de9ab232b9f6a787c51671bc96a81a53cf85af2
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.4 MB (194404421 bytes)**  
+-	Total Size: **194.0 MB (194009280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:54e55391a63221ea3ea042e6cb7289990e1f9ab9651a84ab153ad879a5a3b25d`
+-	Image ID: `sha256:f23fd8982f28171325ee13cbecc4ee82088c8e11ea85617503618bec8f952c07`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
@@ -400,33 +400,33 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Fri, 10 Jun 2016 21:53:34 GMT
 RUN apt-get update --quiet --quiet     && apt-get install --quiet --quiet --no-install-recommends lsof     && rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 21:53:34 GMT
-ENV NEO4J_VERSION=2.3.3
-# Fri, 10 Jun 2016 21:54:12 GMT
+# Tue, 28 Jun 2016 17:05:58 GMT
+ENV NEO4J_VERSION=2.3.5
+# Tue, 28 Jun 2016 17:06:36 GMT
 ENV NEO4J_EDITION=enterprise
-# Fri, 10 Jun 2016 21:54:12 GMT
-ENV NEO4J_DOWNLOAD_SHA256=864b7ebef3a12844c809e75016aa951c60ac90fb0d075a595108824859ce7875
-# Fri, 10 Jun 2016 21:54:12 GMT
+# Tue, 28 Jun 2016 17:06:36 GMT
+ENV NEO4J_DOWNLOAD_SHA256=e12b962b01f5e3d1ab72f52aa311cfb270557ebca13874efb049b15b0cbfa471
+# Tue, 28 Jun 2016 17:06:37 GMT
 ENV NEO4J_DOWNLOAD_ROOT=http://dist.neo4j.org
-# Fri, 10 Jun 2016 21:54:13 GMT
-ENV NEO4J_TARBALL=neo4j-enterprise-2.3.3-unix.tar.gz
-# Fri, 10 Jun 2016 21:54:13 GMT
-ENV NEO4J_URI=http://dist.neo4j.org/neo4j-enterprise-2.3.3-unix.tar.gz
-# Fri, 10 Jun 2016 21:54:25 GMT
+# Tue, 28 Jun 2016 17:06:37 GMT
+ENV NEO4J_TARBALL=neo4j-enterprise-2.3.5-unix.tar.gz
+# Tue, 28 Jun 2016 17:06:37 GMT
+ENV NEO4J_URI=http://dist.neo4j.org/neo4j-enterprise-2.3.5-unix.tar.gz
+# Tue, 28 Jun 2016 17:06:51 GMT
 RUN curl --fail --silent --show-error --location --output neo4j.tar.gz $NEO4J_URI     && echo "$NEO4J_DOWNLOAD_SHA256 neo4j.tar.gz" | sha256sum --check --quiet -     && tar --extract --file neo4j.tar.gz --directory /var/lib     && mv /var/lib/neo4j-* /var/lib/neo4j     && rm neo4j.tar.gz
-# Fri, 10 Jun 2016 21:54:25 GMT
+# Tue, 28 Jun 2016 17:06:51 GMT
 WORKDIR /var/lib/neo4j
-# Fri, 10 Jun 2016 21:54:27 GMT
+# Tue, 28 Jun 2016 17:06:53 GMT
 RUN mv data /data     && ln --symbolic /data
-# Fri, 10 Jun 2016 21:54:27 GMT
+# Tue, 28 Jun 2016 17:06:53 GMT
 VOLUME [/data]
-# Fri, 10 Jun 2016 21:54:27 GMT
+# Tue, 28 Jun 2016 17:06:54 GMT
 COPY file:1cbde912429223690d48be2e95a48b785a8c4463fcce7694554d7462d6d4eaae in /docker-entrypoint.sh
-# Fri, 10 Jun 2016 21:54:28 GMT
+# Tue, 28 Jun 2016 17:06:54 GMT
 EXPOSE 7473/tcp 7474/tcp
-# Fri, 10 Jun 2016 21:54:28 GMT
+# Tue, 28 Jun 2016 17:06:54 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 21:54:28 GMT
+# Tue, 28 Jun 2016 17:06:55 GMT
 CMD ["neo4j"]
 ```
 
@@ -455,14 +455,14 @@ CMD ["neo4j"]
 	-	`sha256:72453f7203bc2ed7bc641280107111706b6f86d16016a3615df192d6b98b46d1`  
 		Last Modified: Thu, 23 Jun 2016 17:38:28 GMT  
 		Size: 8.6 MB (8648528 bytes)
-	-	`sha256:2766e11a60ad17a34d683ac8c38dfc24bc20230242f093d5a5e61cd4aadf53c6`  
-		Last Modified: Thu, 23 Jun 2016 17:38:57 GMT  
-		Size: 61.6 MB (61610413 bytes)
-	-	`sha256:b8414cdf5d21003f6bc228f72697e3a6278ea346f70eceb25d46ec9852a928eb`  
-		Last Modified: Thu, 23 Jun 2016 17:38:50 GMT  
-		Size: 712.0 B
-	-	`sha256:93cc4a9b3ba3e5ff6beb3141ae3d024eeffcaab87d25e8f5b1e27ca5286e32df`  
-		Last Modified: Thu, 23 Jun 2016 17:38:51 GMT  
+	-	`sha256:a4a872afae69360700dca3c3170e503745a4d6ce17f7d6321e637db3ea5f93a6`  
+		Last Modified: Tue, 28 Jun 2016 17:08:16 GMT  
+		Size: 61.2 MB (61215274 bytes)
+	-	`sha256:64b7a40895f6b68b644a39a4fe800e5a05230d4dc0081abc84123d2501c8c446`  
+		Last Modified: Tue, 28 Jun 2016 17:08:11 GMT  
+		Size: 710.0 B
+	-	`sha256:278ffb2498693626c6ee57773bd076fd71b07f5488429d82eb6c972c54a092b0`  
+		Last Modified: Tue, 28 Jun 2016 17:08:11 GMT  
 		Size: 1.3 KB (1279 bytes)
 
 ## `neo4j:3.0.3`
