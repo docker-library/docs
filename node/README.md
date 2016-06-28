@@ -8,10 +8,10 @@
 -	[`0.12.15-onbuild`, `0.12-onbuild`, `0-onbuild` (*0.12/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/0.12/onbuild/Dockerfile)
 -	[`0.12.15-slim`, `0.12-slim`, `0-slim` (*0.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/0.12/slim/Dockerfile)
 -	[`0.12.15-wheezy`, `0.12-wheezy`, `0-wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/0.12/wheezy/Dockerfile)
--	[`4.4.6`, `4.4`, `4`, `argon` (*4.4/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/4.4/Dockerfile)
--	[`4.4.6-onbuild`, `4.4-onbuild`, `4-onbuild`, `argon-onbuild` (*4.4/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/4.4/onbuild/Dockerfile)
--	[`4.4.6-slim`, `4.4-slim`, `4-slim`, `argon-slim` (*4.4/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/4.4/slim/Dockerfile)
--	[`4.4.6-wheezy`, `4.4-wheezy`, `4-wheezy`, `argon-wheezy` (*4.4/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/4.4/wheezy/Dockerfile)
+-	[`4.4.7`, `4.4`, `4`, `argon` (*4.4/Dockerfile*)](https://github.com/nodejs/docker-node/blob/bf93fccf8e127824cd2478f491502c7d3ad0e1aa/4.4/Dockerfile)
+-	[`4.4.7-onbuild`, `4.4-onbuild`, `4-onbuild`, `argon-onbuild` (*4.4/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/bf93fccf8e127824cd2478f491502c7d3ad0e1aa/4.4/onbuild/Dockerfile)
+-	[`4.4.7-slim`, `4.4-slim`, `4-slim`, `argon-slim` (*4.4/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/bf93fccf8e127824cd2478f491502c7d3ad0e1aa/4.4/slim/Dockerfile)
+-	[`4.4.7-wheezy`, `4.4-wheezy`, `4-wheezy`, `argon-wheezy` (*4.4/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/bf93fccf8e127824cd2478f491502c7d3ad0e1aa/4.4/wheezy/Dockerfile)
 -	[`5.12.0`, `5.12`, `5` (*5.12/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/5.12/Dockerfile)
 -	[`5.12.0-onbuild`, `5.12-onbuild`, `5-onbuild` (*5.12/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/5.12/onbuild/Dockerfile)
 -	[`5.12.0-slim`, `5.12-slim`, `5-slim` (*5.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/5.12/slim/Dockerfile)
@@ -21,7 +21,7 @@
 -	[`6.2.2-slim`, `6.2-slim`, `6-slim`, `slim` (*6.2/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/dc9ceb77ad6d98258c825ee45aac219169bc3532/6.2/slim/Dockerfile)
 -	[`6.2.2-wheezy`, `6.2-wheezy`, `6-wheezy`, `wheezy` (*6.2/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/dc9ceb77ad6d98258c825ee45aac219169bc3532/6.2/wheezy/Dockerfile)
 
-[![](https://badge.imagelayers.io/node:latest.svg)](https://imagelayers.io/?images=node:0.10.46,node:0.10.46-onbuild,node:0.10.46-slim,node:0.10.46-wheezy,node:0.12.15,node:0.12.15-onbuild,node:0.12.15-slim,node:0.12.15-wheezy,node:4.4.6,node:4.4.6-onbuild,node:4.4.6-slim,node:4.4.6-wheezy,node:5.12.0,node:5.12.0-onbuild,node:5.12.0-slim,node:5.12.0-wheezy,node:6.2.2,node:6.2.2-onbuild,node:6.2.2-slim,node:6.2.2-wheezy)
+[![](https://badge.imagelayers.io/node:latest.svg)](https://imagelayers.io/?images=node:0.10.46,node:0.10.46-onbuild,node:0.10.46-slim,node:0.10.46-wheezy,node:0.12.15,node:0.12.15-onbuild,node:0.12.15-slim,node:0.12.15-wheezy,node:4.4.7,node:4.4.7-onbuild,node:4.4.7-slim,node:4.4.7-wheezy,node:5.12.0,node:5.12.0-onbuild,node:5.12.0-slim,node:5.12.0-wheezy,node:6.2.2,node:6.2.2-onbuild,node:6.2.2-slim,node:6.2.2-wheezy)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
 
