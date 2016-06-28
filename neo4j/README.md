@@ -1,11 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.3.3`, `2.3` (*2.3.3/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/89955a10604656aa8def4e3d658cc870818d7535/2.3.3/Dockerfile)
--	[`2.3.3-enterprise`, `2.3-enterprise` (*2.3.3-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/89955a10604656aa8def4e3d658cc870818d7535/2.3.3-enterprise/Dockerfile)
+-	[`2.3.4` (*2.3.4/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/3f379d33f5d08f2e483769427ab1e0b898a819ac/2.3.4/Dockerfile)
+-	[`2.3.5`, `2.3` (*2.3.5/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/3f379d33f5d08f2e483769427ab1e0b898a819ac/2.3.5/Dockerfile)
+-	[`2.3.4-enterprise` (*2.3.4-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/3f379d33f5d08f2e483769427ab1e0b898a819ac/2.3.4-enterprise/Dockerfile)
+-	[`2.3.5-enterprise`, `2.3-enterprise` (*2.3.5-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/3f379d33f5d08f2e483769427ab1e0b898a819ac/2.3.5-enterprise/Dockerfile)
 -	[`3.0.3`, `3.0`, `latest` (*3.0.3-community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/860588baa6a9e97c7d10bdbc0084e4c59f3886a6/3.0.3-community/Dockerfile)
 -	[`3.0.3-enterprise`, `3.0-enterprise`, `enterprise` (*3.0.3-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/860588baa6a9e97c7d10bdbc0084e4c59f3886a6/3.0.3-enterprise/Dockerfile)
 
-[![](https://badge.imagelayers.io/neo4j:latest.svg)](https://imagelayers.io/?images=neo4j:2.3.3,neo4j:2.3.3-enterprise,neo4j:3.0.3,neo4j:3.0.3-enterprise)
+[![](https://badge.imagelayers.io/neo4j:latest.svg)](https://imagelayers.io/?images=neo4j:2.3.4,neo4j:2.3.5,neo4j:2.3.4-enterprise,neo4j:2.3.5-enterprise,neo4j:3.0.3,neo4j:3.0.3-enterprise)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/neo4j`)](https://github.com/docker-library/official-images/blob/master/library/neo4j). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneo4j).
 
