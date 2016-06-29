@@ -504,7 +504,7 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ## `django:latest`
 
 ```console
-$ docker pull django@sha256:6449ae64dae2a04d33d5be43ba6e21cbe05300643ab94d89bf40a9ffaf13d437
+$ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710cbb7c0ec2e54
 ```
 
 -	Platforms:
@@ -512,87 +512,63 @@ $ docker pull django@sha256:6449ae64dae2a04d33d5be43ba6e21cbe05300643ab94d89bf40
 
 ### `django:latest` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.5 MB (156450725 bytes)**  
+-	Total Size: **156.8 MB (156793333 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0cb63b45e2b9a8de5763fc9c98b79c38b6217df718238251a21c8c4176fb3d68`
+-	Image ID: `sha256:2982df0d2d1de9c4ae4adb3aa0a9ebab86b9d1fef2f71ac546a82eaa5a40243b`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
 CMD ["/bin/bash"]
-# Tue, 24 May 2016 06:30:25 GMT
+# Fri, 10 Jun 2016 18:44:45 GMT
 RUN apt-get purge -y python.*
-# Tue, 24 May 2016 06:30:26 GMT
+# Fri, 10 Jun 2016 18:44:45 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 May 2016 06:38:07 GMT
+# Fri, 10 Jun 2016 20:30:15 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 06:48:25 GMT
+# Fri, 10 Jun 2016 20:47:20 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Tue, 24 May 2016 06:48:26 GMT
-ENV PYTHON_VERSION=3.4.4
-# Tue, 24 May 2016 06:48:26 GMT
+# Tue, 28 Jun 2016 23:12:36 GMT
+ENV PYTHON_VERSION=3.4.5
+# Tue, 28 Jun 2016 23:12:36 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 24 May 2016 06:51:57 GMT
+# Tue, 28 Jun 2016 23:16:35 GMT
 RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 24 May 2016 06:52:00 GMT
+# Tue, 28 Jun 2016 23:16:37 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 24 May 2016 06:52:00 GMT
+# Tue, 28 Jun 2016 23:16:37 GMT
 CMD ["python3"]
-# Tue, 24 May 2016 10:10:53 GMT
+# Wed, 29 Jun 2016 00:02:33 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 10:10:56 GMT
-ENV DJANGO_VERSION=1.9.6
-# Tue, 24 May 2016 10:11:19 GMT
+# Wed, 29 Jun 2016 00:02:34 GMT
+ENV DJANGO_VERSION=1.9.7
+# Wed, 29 Jun 2016 00:03:01 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a8db98f5f9f5125fef648d322c6f31cfe4e63b992d462087cb0f008e2745c703`  
-		Last Modified: Wed, 25 May 2016 16:16:21 GMT  
-		Size: 3.3 MB (3312899 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:b262f136e11cf4736e2ff5a94aea8dc078fa323666fd6f8849b3b9dfd9865554`  
-		Last Modified: Tue, 31 May 2016 16:49:35 GMT  
-		Size: 20.8 MB (20759581 bytes)
-	-	`sha256:9af105fda7112b9e4d82d6126669fadbc05e3848d3717b9163ec97aa0b9aa2e6`  
-		Last Modified: Tue, 31 May 2016 16:49:24 GMT  
-		Size: 266.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:c42a0d0e92af481a8c5867b6321aca09e531dd6aef415cdc8b172bfa19f93a10`  
-		Last Modified: Tue, 31 May 2016 17:22:29 GMT  
-		Size: 66.2 MB (66166751 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:cb34e98dffa78b195a6f893eef7d7ac5a70e515fc6704856f312d66db94455b0`  
-		Last Modified: Tue, 31 May 2016 17:22:00 GMT  
-		Size: 14.9 MB (14854638 bytes)
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
+		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
+		Size: 3.3 MB (3336139 bytes)
+	-	`sha256:6f3e49e67e1b9b4aca0c528598a35d6de6a73dec67c5b257eb9cef26d100ef5b`  
+		Last Modified: Tue, 28 Jun 2016 23:35:20 GMT  
+		Size: 21.0 MB (20975286 bytes)
+	-	`sha256:e405e2867e7f7387dd6f1e490b10fd5b2f8d792816c08b03a00c037174c51e4d`  
+		Last Modified: Tue, 28 Jun 2016 23:35:13 GMT  
+		Size: 267.0 B
+	-	`sha256:f9d47f66494b316dcfc926ae0c5d82e1e824168611bdcada5275d24a400648c9`  
+		Last Modified: Wed, 29 Jun 2016 00:03:27 GMT  
+		Size: 66.2 MB (66229554 bytes)
+	-	`sha256:63f3a8f1291a779ec4fcdd43560e4d1e44cb3b2506e16a24a3cf9810b7aa62f8`  
+		Last Modified: Wed, 29 Jun 2016 00:03:13 GMT  
+		Size: 14.9 MB (14899552 bytes)
 
 ## `django:python3-onbuild`
 
