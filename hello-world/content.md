@@ -3,7 +3,7 @@
 ```console
 $ docker run hello-world
 
-Hello from Docker.
+Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
 To generate this message, Docker took the following steps:
@@ -26,7 +26,7 @@ For more examples and ideas, visit:
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  693bce725149  967 B
+hello-world  latest  dfc90a840ff1  967 B
 ```
 
 %%LOGO%%

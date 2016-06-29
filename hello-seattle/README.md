@@ -1,24 +1,26 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/a2654a926677e91e30a233758e23b9acb2ef1ea8/hello-world/Dockerfile)
+-	[`latest` (*hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/a2654a926677e91e30a233758e23b9acb2ef1ea8/hello-seattle/Dockerfile)
 
-[![](https://badge.imagelayers.io/hello-world:latest.svg)](https://imagelayers.io/?images=hello-world:latest)
+[![](https://badge.imagelayers.io/hello-seattle:latest.svg)](https://imagelayers.io/?images=hello-seattle:latest)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/hello-world`)](https://github.com/docker-library/official-images/blob/master/library/hello-world). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhello-world).
+For more information about this image and its history, please see [the relevant manifest file (`library/hello-seattle`)](https://github.com/docker-library/official-images/blob/master/library/hello-seattle). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhello-seattle).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `hello-world/tag-details.md` file](https://github.com/docker-library/docs/blob/master/hello-world/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `hello-seattle/tag-details.md` file](https://github.com/docker-library/docs/blob/master/hello-seattle/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
-# Example output
+# Hello, DockerCon 2016 (Seattle)!
+
+This image is a vanity variant of [the `hello-world` image](https://hub.docker.com/_/hello-world/) created specifically for [DockerCon 2016](http://2016.dockercon.com/). Its use is discouraged.
 
 ```console
-$ docker run hello-world
+$ docker run hello-seattle
 
-Hello from Docker!
+Hello from DockerCon 2016 (Seattle)!
 This message shows that your installation appears to be working correctly.
 
 To generate this message, Docker took the following steps:
  1. The Docker client contacted the Docker daemon.
- 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+ 2. The Docker daemon pulled the "hello-seattle" image from the Docker Hub.
  3. The Docker daemon created a new container from that image which runs the
     executable that produces the output you are currently reading.
  4. The Docker daemon streamed that output to the Docker client, which sent it
@@ -33,17 +35,9 @@ Share images, automate workflows, and more with a free Docker Hub account:
 For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 
-
-$ docker images hello-world
-REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  dfc90a840ff1  967 B
 ```
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)
-
-# How is this image created?
-
-This image is a prime example of using the [`scratch`](https://registry.hub.docker.com/_/scratch/) image effectively. See [`hello.asm`](https://github.com/docker-library/hello-world/blob/master/hello.asm) in https://github.com/docker-library/hello-world for the source code of the `hello` binary included in this image.
+See [the `hello-world` image description](https://hub.docker.com/_/hello-world/) for more information about this image (and its construction).
 
 # Supported Docker versions
 
@@ -57,7 +51,7 @@ Please see [the Docker installation documentation](https://docs.docker.com/insta
 
 ## Documentation
 
-Documentation for this image is stored in the [`hello-world/` directory](https://github.com/docker-library/docs/tree/master/hello-world) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`hello-seattle/` directory](https://github.com/docker-library/docs/tree/master/hello-seattle) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
