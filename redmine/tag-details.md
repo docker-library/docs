@@ -28,7 +28,7 @@
 ## `redmine:2.6.10`
 
 ```console
-$ docker pull redmine@sha256:da388b8ed4785717e6ff2396915b6ceeb4cb45229d5212f75723366ce9736f93
+$ docker pull redmine@sha256:30cd687263bbf23d9cde649ff8a9a0b14245ef3d6ffd8c192f9d59a2535331d4
 ```
 
 -	Platforms:
@@ -38,9 +38,9 @@ $ docker pull redmine@sha256:da388b8ed4785717e6ff2396915b6ceeb4cb45229d5212f7572
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.7 MB (207740401 bytes)**  
+-	Total Size: **207.7 MB (207740402 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b21dc310a702e30a680fb751ad7e46ac84cc1c6955c1af48ef2169e6d445806a`
+-	Image ID: `sha256:d12a129d1a6aed41957d2b7ab56701acc3ac49a52ee9eeefcc1ced86b831a993`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -103,13 +103,13 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:25:31 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:25:32 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:33 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:39:33 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:25:34 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -153,14 +153,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 	-	`sha256:b53a77f20612cf54fd30a4dc46e259ffe2a0dfed874cb966052fb95c538f55b7`  
 		Last Modified: Fri, 24 Jun 2016 02:45:01 GMT  
 		Size: 48.9 MB (48858670 bytes)
-	-	`sha256:87f0d5e6b4ae66930f0108f04a2273661047816e4b3b511b8920d8eb11957a0c`  
-		Last Modified: Fri, 24 Jun 2016 02:44:49 GMT  
-		Size: 1.2 KB (1156 bytes)
+	-	`sha256:ce262f96297566b7655fb7af42ff556bd63d3db7ba7a3e54437a3af85eba7d8c`  
+		Last Modified: Tue, 28 Jun 2016 23:45:40 GMT  
+		Size: 1.2 KB (1157 bytes)
 
 ## `redmine:2.6`
 
 ```console
-$ docker pull redmine@sha256:da388b8ed4785717e6ff2396915b6ceeb4cb45229d5212f75723366ce9736f93
+$ docker pull redmine@sha256:30cd687263bbf23d9cde649ff8a9a0b14245ef3d6ffd8c192f9d59a2535331d4
 ```
 
 -	Platforms:
@@ -170,9 +170,9 @@ $ docker pull redmine@sha256:da388b8ed4785717e6ff2396915b6ceeb4cb45229d5212f7572
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.7 MB (207740401 bytes)**  
+-	Total Size: **207.7 MB (207740402 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b21dc310a702e30a680fb751ad7e46ac84cc1c6955c1af48ef2169e6d445806a`
+-	Image ID: `sha256:d12a129d1a6aed41957d2b7ab56701acc3ac49a52ee9eeefcc1ced86b831a993`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -235,13 +235,13 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:25:31 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:25:32 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:33 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:39:33 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:25:34 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -285,14 +285,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 	-	`sha256:b53a77f20612cf54fd30a4dc46e259ffe2a0dfed874cb966052fb95c538f55b7`  
 		Last Modified: Fri, 24 Jun 2016 02:45:01 GMT  
 		Size: 48.9 MB (48858670 bytes)
-	-	`sha256:87f0d5e6b4ae66930f0108f04a2273661047816e4b3b511b8920d8eb11957a0c`  
-		Last Modified: Fri, 24 Jun 2016 02:44:49 GMT  
-		Size: 1.2 KB (1156 bytes)
+	-	`sha256:ce262f96297566b7655fb7af42ff556bd63d3db7ba7a3e54437a3af85eba7d8c`  
+		Last Modified: Tue, 28 Jun 2016 23:45:40 GMT  
+		Size: 1.2 KB (1157 bytes)
 
 ## `redmine:2`
 
 ```console
-$ docker pull redmine@sha256:da388b8ed4785717e6ff2396915b6ceeb4cb45229d5212f75723366ce9736f93
+$ docker pull redmine@sha256:30cd687263bbf23d9cde649ff8a9a0b14245ef3d6ffd8c192f9d59a2535331d4
 ```
 
 -	Platforms:
@@ -302,9 +302,9 @@ $ docker pull redmine@sha256:da388b8ed4785717e6ff2396915b6ceeb4cb45229d5212f7572
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.7 MB (207740401 bytes)**  
+-	Total Size: **207.7 MB (207740402 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b21dc310a702e30a680fb751ad7e46ac84cc1c6955c1af48ef2169e6d445806a`
+-	Image ID: `sha256:d12a129d1a6aed41957d2b7ab56701acc3ac49a52ee9eeefcc1ced86b831a993`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -367,13 +367,13 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:25:31 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:25:32 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:33 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:39:33 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:25:34 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -417,14 +417,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 	-	`sha256:b53a77f20612cf54fd30a4dc46e259ffe2a0dfed874cb966052fb95c538f55b7`  
 		Last Modified: Fri, 24 Jun 2016 02:45:01 GMT  
 		Size: 48.9 MB (48858670 bytes)
-	-	`sha256:87f0d5e6b4ae66930f0108f04a2273661047816e4b3b511b8920d8eb11957a0c`  
-		Last Modified: Fri, 24 Jun 2016 02:44:49 GMT  
-		Size: 1.2 KB (1156 bytes)
+	-	`sha256:ce262f96297566b7655fb7af42ff556bd63d3db7ba7a3e54437a3af85eba7d8c`  
+		Last Modified: Tue, 28 Jun 2016 23:45:40 GMT  
+		Size: 1.2 KB (1157 bytes)
 
 ## `redmine:2.6.10-passenger`
 
 ```console
-$ docker pull redmine@sha256:1115519c5a2a8c627e3c8db740106dddc18464573c3de73d6156cecba957a4f1
+$ docker pull redmine@sha256:b23dfbd9017c509ed1532cefec7420a94adca1d54e57bc20e6e88fc688f389a3
 ```
 
 -	Platforms:
@@ -434,9 +434,9 @@ $ docker pull redmine@sha256:1115519c5a2a8c627e3c8db740106dddc18464573c3de73d615
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.9 MB (239898712 bytes)**  
+-	Total Size: **239.9 MB (239889361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00685abe5e901d82d61388c36debd560e3653914ecfdbb0ef7302b500d4c8e89`
+-	Image ID: `sha256:0698edfcdbcadd96d6edd5c20b669d981d4cb3b14b47ce96b84df7a81a9e30ff`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -499,21 +499,21 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:25:31 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:25:32 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:33 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:39:33 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:25:34 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 24 Jun 2016 02:25:34 GMT
+# Tue, 28 Jun 2016 23:39:35 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Fri, 24 Jun 2016 02:26:52 GMT
+# Tue, 28 Jun 2016 23:40:55 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:26:54 GMT
+# Tue, 28 Jun 2016 23:40:57 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 24 Jun 2016 02:26:55 GMT
+# Tue, 28 Jun 2016 23:40:58 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -557,20 +557,20 @@ CMD ["passenger" "start"]
 	-	`sha256:b53a77f20612cf54fd30a4dc46e259ffe2a0dfed874cb966052fb95c538f55b7`  
 		Last Modified: Fri, 24 Jun 2016 02:45:01 GMT  
 		Size: 48.9 MB (48858670 bytes)
-	-	`sha256:87f0d5e6b4ae66930f0108f04a2273661047816e4b3b511b8920d8eb11957a0c`  
-		Last Modified: Fri, 24 Jun 2016 02:44:49 GMT  
-		Size: 1.2 KB (1156 bytes)
-	-	`sha256:6aa53b26d6b2fa4fd1ced64939e4da40706fa0d585fb8abe065e054161c8f61d`  
-		Last Modified: Fri, 24 Jun 2016 02:45:41 GMT  
-		Size: 21.7 MB (21738399 bytes)
-	-	`sha256:9eee1a87387bbdc540f492450904f982c2a5d3feece205071c2477c4b1514a80`  
-		Last Modified: Fri, 24 Jun 2016 02:45:40 GMT  
-		Size: 10.4 MB (10419912 bytes)
+	-	`sha256:ce262f96297566b7655fb7af42ff556bd63d3db7ba7a3e54437a3af85eba7d8c`  
+		Last Modified: Tue, 28 Jun 2016 23:45:40 GMT  
+		Size: 1.2 KB (1157 bytes)
+	-	`sha256:1b67332e08f0347b2d9c75428ff441eb8295d9dfdb9dd01effc908cea25aa985`  
+		Last Modified: Tue, 28 Jun 2016 23:46:16 GMT  
+		Size: 21.7 MB (21729014 bytes)
+	-	`sha256:6a10742daf30f1c975efb036cae8fe45741c7ea826511b698395537a159aa03c`  
+		Last Modified: Tue, 28 Jun 2016 23:46:15 GMT  
+		Size: 10.4 MB (10419945 bytes)
 
 ## `redmine:2.6-passenger`
 
 ```console
-$ docker pull redmine@sha256:1115519c5a2a8c627e3c8db740106dddc18464573c3de73d6156cecba957a4f1
+$ docker pull redmine@sha256:b23dfbd9017c509ed1532cefec7420a94adca1d54e57bc20e6e88fc688f389a3
 ```
 
 -	Platforms:
@@ -580,9 +580,9 @@ $ docker pull redmine@sha256:1115519c5a2a8c627e3c8db740106dddc18464573c3de73d615
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.9 MB (239898712 bytes)**  
+-	Total Size: **239.9 MB (239889361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00685abe5e901d82d61388c36debd560e3653914ecfdbb0ef7302b500d4c8e89`
+-	Image ID: `sha256:0698edfcdbcadd96d6edd5c20b669d981d4cb3b14b47ce96b84df7a81a9e30ff`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -645,21 +645,21 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:25:31 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:25:32 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:33 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:39:33 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:25:34 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 24 Jun 2016 02:25:34 GMT
+# Tue, 28 Jun 2016 23:39:35 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Fri, 24 Jun 2016 02:26:52 GMT
+# Tue, 28 Jun 2016 23:40:55 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:26:54 GMT
+# Tue, 28 Jun 2016 23:40:57 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 24 Jun 2016 02:26:55 GMT
+# Tue, 28 Jun 2016 23:40:58 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -703,20 +703,20 @@ CMD ["passenger" "start"]
 	-	`sha256:b53a77f20612cf54fd30a4dc46e259ffe2a0dfed874cb966052fb95c538f55b7`  
 		Last Modified: Fri, 24 Jun 2016 02:45:01 GMT  
 		Size: 48.9 MB (48858670 bytes)
-	-	`sha256:87f0d5e6b4ae66930f0108f04a2273661047816e4b3b511b8920d8eb11957a0c`  
-		Last Modified: Fri, 24 Jun 2016 02:44:49 GMT  
-		Size: 1.2 KB (1156 bytes)
-	-	`sha256:6aa53b26d6b2fa4fd1ced64939e4da40706fa0d585fb8abe065e054161c8f61d`  
-		Last Modified: Fri, 24 Jun 2016 02:45:41 GMT  
-		Size: 21.7 MB (21738399 bytes)
-	-	`sha256:9eee1a87387bbdc540f492450904f982c2a5d3feece205071c2477c4b1514a80`  
-		Last Modified: Fri, 24 Jun 2016 02:45:40 GMT  
-		Size: 10.4 MB (10419912 bytes)
+	-	`sha256:ce262f96297566b7655fb7af42ff556bd63d3db7ba7a3e54437a3af85eba7d8c`  
+		Last Modified: Tue, 28 Jun 2016 23:45:40 GMT  
+		Size: 1.2 KB (1157 bytes)
+	-	`sha256:1b67332e08f0347b2d9c75428ff441eb8295d9dfdb9dd01effc908cea25aa985`  
+		Last Modified: Tue, 28 Jun 2016 23:46:16 GMT  
+		Size: 21.7 MB (21729014 bytes)
+	-	`sha256:6a10742daf30f1c975efb036cae8fe45741c7ea826511b698395537a159aa03c`  
+		Last Modified: Tue, 28 Jun 2016 23:46:15 GMT  
+		Size: 10.4 MB (10419945 bytes)
 
 ## `redmine:2-passenger`
 
 ```console
-$ docker pull redmine@sha256:1115519c5a2a8c627e3c8db740106dddc18464573c3de73d6156cecba957a4f1
+$ docker pull redmine@sha256:b23dfbd9017c509ed1532cefec7420a94adca1d54e57bc20e6e88fc688f389a3
 ```
 
 -	Platforms:
@@ -726,9 +726,9 @@ $ docker pull redmine@sha256:1115519c5a2a8c627e3c8db740106dddc18464573c3de73d615
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.9 MB (239898712 bytes)**  
+-	Total Size: **239.9 MB (239889361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00685abe5e901d82d61388c36debd560e3653914ecfdbb0ef7302b500d4c8e89`
+-	Image ID: `sha256:0698edfcdbcadd96d6edd5c20b669d981d4cb3b14b47ce96b84df7a81a9e30ff`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -791,21 +791,21 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:25:31 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:25:32 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:33 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:39:33 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:25:33 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:25:34 GMT
+# Tue, 28 Jun 2016 23:39:34 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 24 Jun 2016 02:25:34 GMT
+# Tue, 28 Jun 2016 23:39:35 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Fri, 24 Jun 2016 02:26:52 GMT
+# Tue, 28 Jun 2016 23:40:55 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:26:54 GMT
+# Tue, 28 Jun 2016 23:40:57 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 24 Jun 2016 02:26:55 GMT
+# Tue, 28 Jun 2016 23:40:58 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -849,20 +849,20 @@ CMD ["passenger" "start"]
 	-	`sha256:b53a77f20612cf54fd30a4dc46e259ffe2a0dfed874cb966052fb95c538f55b7`  
 		Last Modified: Fri, 24 Jun 2016 02:45:01 GMT  
 		Size: 48.9 MB (48858670 bytes)
-	-	`sha256:87f0d5e6b4ae66930f0108f04a2273661047816e4b3b511b8920d8eb11957a0c`  
-		Last Modified: Fri, 24 Jun 2016 02:44:49 GMT  
-		Size: 1.2 KB (1156 bytes)
-	-	`sha256:6aa53b26d6b2fa4fd1ced64939e4da40706fa0d585fb8abe065e054161c8f61d`  
-		Last Modified: Fri, 24 Jun 2016 02:45:41 GMT  
-		Size: 21.7 MB (21738399 bytes)
-	-	`sha256:9eee1a87387bbdc540f492450904f982c2a5d3feece205071c2477c4b1514a80`  
-		Last Modified: Fri, 24 Jun 2016 02:45:40 GMT  
-		Size: 10.4 MB (10419912 bytes)
+	-	`sha256:ce262f96297566b7655fb7af42ff556bd63d3db7ba7a3e54437a3af85eba7d8c`  
+		Last Modified: Tue, 28 Jun 2016 23:45:40 GMT  
+		Size: 1.2 KB (1157 bytes)
+	-	`sha256:1b67332e08f0347b2d9c75428ff441eb8295d9dfdb9dd01effc908cea25aa985`  
+		Last Modified: Tue, 28 Jun 2016 23:46:16 GMT  
+		Size: 21.7 MB (21729014 bytes)
+	-	`sha256:6a10742daf30f1c975efb036cae8fe45741c7ea826511b698395537a159aa03c`  
+		Last Modified: Tue, 28 Jun 2016 23:46:15 GMT  
+		Size: 10.4 MB (10419945 bytes)
 
 ## `redmine:3.0.7`
 
 ```console
-$ docker pull redmine@sha256:3b863fab1d9cbfa10bdfbd622fd354095201096bd7b9243f84c241191df4cbb7
+$ docker pull redmine@sha256:0d53dd852669a00b3d64a09afb1e8336a478275dcbebcf151f91ff13d54b98ae
 ```
 
 -	Platforms:
@@ -874,7 +874,7 @@ $ docker pull redmine@sha256:3b863fab1d9cbfa10bdfbd622fd354095201096bd7b9243f84c
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **223.7 MB (223720228 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc937359b5b63449bbb6ac6fd50e9d484982d5b865960e7d362b4f57472d624e`
+-	Image ID: `sha256:fd0638cb07ab1ffe562a23e682956a623625b60b117315de07caa9a247e2e394`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -937,13 +937,13 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:31:21 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:31:21 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:40:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:40:59 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:41:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:41:00 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -987,14 +987,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 	-	`sha256:ee2e46b2b69a4578abd94f22609cc50f6d313cfe2befa15e2b09ab4e579eaf62`  
 		Last Modified: Fri, 24 Jun 2016 02:46:24 GMT  
 		Size: 64.8 MB (64803925 bytes)
-	-	`sha256:afdd81548b6ad04bc16d4bccdfa0d50200c9cd9b01f002b40912f46836815e72`  
-		Last Modified: Fri, 24 Jun 2016 02:46:12 GMT  
+	-	`sha256:e962c74d24a1a30a4f38725f7b4053d596e26dfa70e5d113757f9daa65662375`  
+		Last Modified: Tue, 28 Jun 2016 23:46:47 GMT  
 		Size: 1.2 KB (1157 bytes)
 
 ## `redmine:3.0`
 
 ```console
-$ docker pull redmine@sha256:3b863fab1d9cbfa10bdfbd622fd354095201096bd7b9243f84c241191df4cbb7
+$ docker pull redmine@sha256:0d53dd852669a00b3d64a09afb1e8336a478275dcbebcf151f91ff13d54b98ae
 ```
 
 -	Platforms:
@@ -1006,7 +1006,7 @@ $ docker pull redmine@sha256:3b863fab1d9cbfa10bdfbd622fd354095201096bd7b9243f84c
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **223.7 MB (223720228 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc937359b5b63449bbb6ac6fd50e9d484982d5b865960e7d362b4f57472d624e`
+-	Image ID: `sha256:fd0638cb07ab1ffe562a23e682956a623625b60b117315de07caa9a247e2e394`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -1069,13 +1069,13 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:31:21 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:31:21 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:40:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:40:59 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:41:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:41:00 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -1119,14 +1119,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 	-	`sha256:ee2e46b2b69a4578abd94f22609cc50f6d313cfe2befa15e2b09ab4e579eaf62`  
 		Last Modified: Fri, 24 Jun 2016 02:46:24 GMT  
 		Size: 64.8 MB (64803925 bytes)
-	-	`sha256:afdd81548b6ad04bc16d4bccdfa0d50200c9cd9b01f002b40912f46836815e72`  
-		Last Modified: Fri, 24 Jun 2016 02:46:12 GMT  
+	-	`sha256:e962c74d24a1a30a4f38725f7b4053d596e26dfa70e5d113757f9daa65662375`  
+		Last Modified: Tue, 28 Jun 2016 23:46:47 GMT  
 		Size: 1.2 KB (1157 bytes)
 
 ## `redmine:3.0.7-passenger`
 
 ```console
-$ docker pull redmine@sha256:14109fdbc6a7e951de36b4e4b4b212cc7e7589cc01d5cb4cb897d5ab933c7ae6
+$ docker pull redmine@sha256:7bf7ff9d359929533e28ccd25739d2949d18fde78f9f25a1014276944049d8c7
 ```
 
 -	Platforms:
@@ -1136,9 +1136,9 @@ $ docker pull redmine@sha256:14109fdbc6a7e951de36b4e4b4b212cc7e7589cc01d5cb4cb89
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255878488 bytes)**  
+-	Total Size: **255.9 MB (255869279 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4a9b5674838a337022c97db6d9426ec50daa8c46416f7f422f3f0755499c829`
+-	Image ID: `sha256:3856e6fca3b0d87ab649e785a8821bbcb99fdfc3aaabada7cdc3e386f7bbfc7e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -1201,21 +1201,21 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:31:21 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:31:21 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:40:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:40:59 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:41:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:41:00 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 24 Jun 2016 02:31:23 GMT
+# Tue, 28 Jun 2016 23:41:01 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Fri, 24 Jun 2016 02:32:38 GMT
+# Tue, 28 Jun 2016 23:42:20 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:32:40 GMT
+# Tue, 28 Jun 2016 23:42:23 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 24 Jun 2016 02:32:41 GMT
+# Tue, 28 Jun 2016 23:42:23 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -1259,20 +1259,20 @@ CMD ["passenger" "start"]
 	-	`sha256:ee2e46b2b69a4578abd94f22609cc50f6d313cfe2befa15e2b09ab4e579eaf62`  
 		Last Modified: Fri, 24 Jun 2016 02:46:24 GMT  
 		Size: 64.8 MB (64803925 bytes)
-	-	`sha256:afdd81548b6ad04bc16d4bccdfa0d50200c9cd9b01f002b40912f46836815e72`  
-		Last Modified: Fri, 24 Jun 2016 02:46:12 GMT  
+	-	`sha256:e962c74d24a1a30a4f38725f7b4053d596e26dfa70e5d113757f9daa65662375`  
+		Last Modified: Tue, 28 Jun 2016 23:46:47 GMT  
 		Size: 1.2 KB (1157 bytes)
-	-	`sha256:074c80ff208039dda39474a5da6f14826708f1a614438f204bc091489f3b48be`  
-		Last Modified: Fri, 24 Jun 2016 02:46:51 GMT  
-		Size: 21.7 MB (21738316 bytes)
-	-	`sha256:e8c7914533d643310034ef477a6ecf87c9b3a956045eb7b05992f301bea4b4ae`  
-		Last Modified: Fri, 24 Jun 2016 02:46:50 GMT  
-		Size: 10.4 MB (10419944 bytes)
+	-	`sha256:822f3e26e9642d0ee8c37ec761c1ea49da1383dd137b2e6bf99cca628687aa34`  
+		Last Modified: Tue, 28 Jun 2016 23:47:15 GMT  
+		Size: 21.7 MB (21729102 bytes)
+	-	`sha256:13bfeb46f8114f4015c33da8061c4879d1d07efb150d6dabe7e5470d77f4b82c`  
+		Last Modified: Tue, 28 Jun 2016 23:47:14 GMT  
+		Size: 10.4 MB (10419949 bytes)
 
 ## `redmine:3.0-passenger`
 
 ```console
-$ docker pull redmine@sha256:14109fdbc6a7e951de36b4e4b4b212cc7e7589cc01d5cb4cb897d5ab933c7ae6
+$ docker pull redmine@sha256:7bf7ff9d359929533e28ccd25739d2949d18fde78f9f25a1014276944049d8c7
 ```
 
 -	Platforms:
@@ -1282,9 +1282,9 @@ $ docker pull redmine@sha256:14109fdbc6a7e951de36b4e4b4b212cc7e7589cc01d5cb4cb89
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255878488 bytes)**  
+-	Total Size: **255.9 MB (255869279 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4a9b5674838a337022c97db6d9426ec50daa8c46416f7f422f3f0755499c829`
+-	Image ID: `sha256:3856e6fca3b0d87ab649e785a8821bbcb99fdfc3aaabada7cdc3e386f7bbfc7e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -1347,21 +1347,21 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:31:21 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:31:21 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:40:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:40:59 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:41:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:31:22 GMT
+# Tue, 28 Jun 2016 23:41:00 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 24 Jun 2016 02:31:23 GMT
+# Tue, 28 Jun 2016 23:41:01 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Fri, 24 Jun 2016 02:32:38 GMT
+# Tue, 28 Jun 2016 23:42:20 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:32:40 GMT
+# Tue, 28 Jun 2016 23:42:23 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 24 Jun 2016 02:32:41 GMT
+# Tue, 28 Jun 2016 23:42:23 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -1405,20 +1405,20 @@ CMD ["passenger" "start"]
 	-	`sha256:ee2e46b2b69a4578abd94f22609cc50f6d313cfe2befa15e2b09ab4e579eaf62`  
 		Last Modified: Fri, 24 Jun 2016 02:46:24 GMT  
 		Size: 64.8 MB (64803925 bytes)
-	-	`sha256:afdd81548b6ad04bc16d4bccdfa0d50200c9cd9b01f002b40912f46836815e72`  
-		Last Modified: Fri, 24 Jun 2016 02:46:12 GMT  
+	-	`sha256:e962c74d24a1a30a4f38725f7b4053d596e26dfa70e5d113757f9daa65662375`  
+		Last Modified: Tue, 28 Jun 2016 23:46:47 GMT  
 		Size: 1.2 KB (1157 bytes)
-	-	`sha256:074c80ff208039dda39474a5da6f14826708f1a614438f204bc091489f3b48be`  
-		Last Modified: Fri, 24 Jun 2016 02:46:51 GMT  
-		Size: 21.7 MB (21738316 bytes)
-	-	`sha256:e8c7914533d643310034ef477a6ecf87c9b3a956045eb7b05992f301bea4b4ae`  
-		Last Modified: Fri, 24 Jun 2016 02:46:50 GMT  
-		Size: 10.4 MB (10419944 bytes)
+	-	`sha256:822f3e26e9642d0ee8c37ec761c1ea49da1383dd137b2e6bf99cca628687aa34`  
+		Last Modified: Tue, 28 Jun 2016 23:47:15 GMT  
+		Size: 21.7 MB (21729102 bytes)
+	-	`sha256:13bfeb46f8114f4015c33da8061c4879d1d07efb150d6dabe7e5470d77f4b82c`  
+		Last Modified: Tue, 28 Jun 2016 23:47:14 GMT  
+		Size: 10.4 MB (10419949 bytes)
 
 ## `redmine:3.1.6`
 
 ```console
-$ docker pull redmine@sha256:41674559e73955cb8ee8dd790de9d1de3b2ef2e6a079b749bf864ed238399894
+$ docker pull redmine@sha256:b85bc69d62c76dbc963f06e3676cb66424a5a03bf5f330fad911516ac0529910
 ```
 
 -	Platforms:
@@ -1428,9 +1428,9 @@ $ docker pull redmine@sha256:41674559e73955cb8ee8dd790de9d1de3b2ef2e6a079b749bf8
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.3 MB (226291464 bytes)**  
+-	Total Size: **226.3 MB (226291467 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b44a8b24c49f2e5623bf40f00e89127385b5d43c4e27f655c0bfb5fe75f00e3`
+-	Image ID: `sha256:7f0ac59a154bbae4816feddba62b63711f810e647c9404a0599da232ae76bc6b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -1493,13 +1493,13 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:37:10 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:37:11 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:37:11 GMT
+# Tue, 28 Jun 2016 23:42:25 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:42:25 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:37:11 GMT
+# Tue, 28 Jun 2016 23:42:26 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:37:12 GMT
+# Tue, 28 Jun 2016 23:42:26 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -1543,14 +1543,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 	-	`sha256:5bc3f54dd912a2865a7147e597b306ece2f6529eecd970a932c6459cd33a6401`  
 		Last Modified: Fri, 24 Jun 2016 02:47:25 GMT  
 		Size: 67.2 MB (67245452 bytes)
-	-	`sha256:0c39f70224d266dd2dc44ec3cd74ffaa4fe89fdfcc28745ca9d9ef48b65feaa8`  
-		Last Modified: Fri, 24 Jun 2016 02:47:13 GMT  
-		Size: 1.2 KB (1157 bytes)
+	-	`sha256:9acbd8cb8c4106f24c040bd481f5eb7cdfab9c43cf027375ce878d0eb1e09e08`  
+		Last Modified: Tue, 28 Jun 2016 23:47:38 GMT  
+		Size: 1.2 KB (1160 bytes)
 
 ## `redmine:3.1`
 
 ```console
-$ docker pull redmine@sha256:41674559e73955cb8ee8dd790de9d1de3b2ef2e6a079b749bf864ed238399894
+$ docker pull redmine@sha256:b85bc69d62c76dbc963f06e3676cb66424a5a03bf5f330fad911516ac0529910
 ```
 
 -	Platforms:
@@ -1560,9 +1560,9 @@ $ docker pull redmine@sha256:41674559e73955cb8ee8dd790de9d1de3b2ef2e6a079b749bf8
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.3 MB (226291464 bytes)**  
+-	Total Size: **226.3 MB (226291467 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b44a8b24c49f2e5623bf40f00e89127385b5d43c4e27f655c0bfb5fe75f00e3`
+-	Image ID: `sha256:7f0ac59a154bbae4816feddba62b63711f810e647c9404a0599da232ae76bc6b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -1625,13 +1625,13 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:37:10 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:37:11 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:37:11 GMT
+# Tue, 28 Jun 2016 23:42:25 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:42:25 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:37:11 GMT
+# Tue, 28 Jun 2016 23:42:26 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:37:12 GMT
+# Tue, 28 Jun 2016 23:42:26 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -1675,14 +1675,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 	-	`sha256:5bc3f54dd912a2865a7147e597b306ece2f6529eecd970a932c6459cd33a6401`  
 		Last Modified: Fri, 24 Jun 2016 02:47:25 GMT  
 		Size: 67.2 MB (67245452 bytes)
-	-	`sha256:0c39f70224d266dd2dc44ec3cd74ffaa4fe89fdfcc28745ca9d9ef48b65feaa8`  
-		Last Modified: Fri, 24 Jun 2016 02:47:13 GMT  
-		Size: 1.2 KB (1157 bytes)
+	-	`sha256:9acbd8cb8c4106f24c040bd481f5eb7cdfab9c43cf027375ce878d0eb1e09e08`  
+		Last Modified: Tue, 28 Jun 2016 23:47:38 GMT  
+		Size: 1.2 KB (1160 bytes)
 
 ## `redmine:3.1.6-passenger`
 
 ```console
-$ docker pull redmine@sha256:4237411ce39835ab44f3e97f01d912842152d315719fecec6acfed2cef8aaf8a
+$ docker pull redmine@sha256:3439c479c1dfdccded5e3d757f8ca9d607ceaf5fd33f830c926418d0e1100b98
 ```
 
 -	Platforms:
@@ -1692,9 +1692,9 @@ $ docker pull redmine@sha256:4237411ce39835ab44f3e97f01d912842152d315719fecec6ac
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.4 MB (258440467 bytes)**  
+-	Total Size: **258.4 MB (258440561 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf499e7d8259aab2f192b7ead99caf3ba6d75b28ccdcb36d334fa7c20d4a23c8`
+-	Image ID: `sha256:a8c0600cb1e2e814409390b89e77eaf9ac6ec3073881c9da442b236f53a76133`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -1757,21 +1757,21 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:37:10 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:37:11 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:37:11 GMT
+# Tue, 28 Jun 2016 23:42:25 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:42:25 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:37:11 GMT
+# Tue, 28 Jun 2016 23:42:26 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:37:12 GMT
+# Tue, 28 Jun 2016 23:42:26 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 24 Jun 2016 02:37:12 GMT
+# Tue, 28 Jun 2016 23:42:27 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Fri, 24 Jun 2016 02:38:29 GMT
+# Tue, 28 Jun 2016 23:43:53 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:38:32 GMT
+# Tue, 28 Jun 2016 23:43:57 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 24 Jun 2016 02:38:32 GMT
+# Tue, 28 Jun 2016 23:43:58 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -1815,20 +1815,20 @@ CMD ["passenger" "start"]
 	-	`sha256:5bc3f54dd912a2865a7147e597b306ece2f6529eecd970a932c6459cd33a6401`  
 		Last Modified: Fri, 24 Jun 2016 02:47:25 GMT  
 		Size: 67.2 MB (67245452 bytes)
-	-	`sha256:0c39f70224d266dd2dc44ec3cd74ffaa4fe89fdfcc28745ca9d9ef48b65feaa8`  
-		Last Modified: Fri, 24 Jun 2016 02:47:13 GMT  
-		Size: 1.2 KB (1157 bytes)
-	-	`sha256:860510d450c47f2186ff13bcd26eb39015c938103415b3d6853a3075fa0ce22f`  
-		Last Modified: Fri, 24 Jun 2016 02:47:52 GMT  
-		Size: 21.7 MB (21729088 bytes)
-	-	`sha256:5a687d085433b2f098884f173fd015b097b389a62ec8db0f5fee4a57c730c1a6`  
-		Last Modified: Fri, 24 Jun 2016 02:47:52 GMT  
-		Size: 10.4 MB (10419915 bytes)
+	-	`sha256:9acbd8cb8c4106f24c040bd481f5eb7cdfab9c43cf027375ce878d0eb1e09e08`  
+		Last Modified: Tue, 28 Jun 2016 23:47:38 GMT  
+		Size: 1.2 KB (1160 bytes)
+	-	`sha256:873adf53fea73b87a85a0c697c80023d80f488dfcd5d45aebe2ce9201b735e0b`  
+		Last Modified: Tue, 28 Jun 2016 23:48:05 GMT  
+		Size: 21.7 MB (21729153 bytes)
+	-	`sha256:b64938e30de22a26fcb1ebbd4db66473cbb7d503d8eaaf44bee0e0b043aadb88`  
+		Last Modified: Tue, 28 Jun 2016 23:48:04 GMT  
+		Size: 10.4 MB (10419941 bytes)
 
 ## `redmine:3.1-passenger`
 
 ```console
-$ docker pull redmine@sha256:4237411ce39835ab44f3e97f01d912842152d315719fecec6acfed2cef8aaf8a
+$ docker pull redmine@sha256:3439c479c1dfdccded5e3d757f8ca9d607ceaf5fd33f830c926418d0e1100b98
 ```
 
 -	Platforms:
@@ -1838,9 +1838,9 @@ $ docker pull redmine@sha256:4237411ce39835ab44f3e97f01d912842152d315719fecec6ac
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.4 MB (258440467 bytes)**  
+-	Total Size: **258.4 MB (258440561 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf499e7d8259aab2f192b7ead99caf3ba6d75b28ccdcb36d334fa7c20d4a23c8`
+-	Image ID: `sha256:a8c0600cb1e2e814409390b89e77eaf9ac6ec3073881c9da442b236f53a76133`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -1903,21 +1903,21 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:37:10 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:37:11 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:37:11 GMT
+# Tue, 28 Jun 2016 23:42:25 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:42:25 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:37:11 GMT
+# Tue, 28 Jun 2016 23:42:26 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:37:12 GMT
+# Tue, 28 Jun 2016 23:42:26 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 24 Jun 2016 02:37:12 GMT
+# Tue, 28 Jun 2016 23:42:27 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Fri, 24 Jun 2016 02:38:29 GMT
+# Tue, 28 Jun 2016 23:43:53 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:38:32 GMT
+# Tue, 28 Jun 2016 23:43:57 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 24 Jun 2016 02:38:32 GMT
+# Tue, 28 Jun 2016 23:43:58 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -1961,20 +1961,20 @@ CMD ["passenger" "start"]
 	-	`sha256:5bc3f54dd912a2865a7147e597b306ece2f6529eecd970a932c6459cd33a6401`  
 		Last Modified: Fri, 24 Jun 2016 02:47:25 GMT  
 		Size: 67.2 MB (67245452 bytes)
-	-	`sha256:0c39f70224d266dd2dc44ec3cd74ffaa4fe89fdfcc28745ca9d9ef48b65feaa8`  
-		Last Modified: Fri, 24 Jun 2016 02:47:13 GMT  
-		Size: 1.2 KB (1157 bytes)
-	-	`sha256:860510d450c47f2186ff13bcd26eb39015c938103415b3d6853a3075fa0ce22f`  
-		Last Modified: Fri, 24 Jun 2016 02:47:52 GMT  
-		Size: 21.7 MB (21729088 bytes)
-	-	`sha256:5a687d085433b2f098884f173fd015b097b389a62ec8db0f5fee4a57c730c1a6`  
-		Last Modified: Fri, 24 Jun 2016 02:47:52 GMT  
-		Size: 10.4 MB (10419915 bytes)
+	-	`sha256:9acbd8cb8c4106f24c040bd481f5eb7cdfab9c43cf027375ce878d0eb1e09e08`  
+		Last Modified: Tue, 28 Jun 2016 23:47:38 GMT  
+		Size: 1.2 KB (1160 bytes)
+	-	`sha256:873adf53fea73b87a85a0c697c80023d80f488dfcd5d45aebe2ce9201b735e0b`  
+		Last Modified: Tue, 28 Jun 2016 23:48:05 GMT  
+		Size: 21.7 MB (21729153 bytes)
+	-	`sha256:b64938e30de22a26fcb1ebbd4db66473cbb7d503d8eaaf44bee0e0b043aadb88`  
+		Last Modified: Tue, 28 Jun 2016 23:48:04 GMT  
+		Size: 10.4 MB (10419941 bytes)
 
 ## `redmine:3.2.3`
 
 ```console
-$ docker pull redmine@sha256:626490af588736438b62fcb6ac3c63e4ba3546b20bab274764ba487e540697b8
+$ docker pull redmine@sha256:d65d0141574877d637378e0508c663864fcbdd65f1025cb57c36a4042aeb1c35
 ```
 
 -	Platforms:
@@ -1984,9 +1984,9 @@ $ docker pull redmine@sha256:626490af588736438b62fcb6ac3c63e4ba3546b20bab274764b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.0 MB (234974314 bytes)**  
+-	Total Size: **235.0 MB (234974317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:267202e96370f3b7666c7048b60a79e567709d566a5a2ea49b966c36044663ee`
+-	Image ID: `sha256:927abfd6c25ed922592dc76eb01bcfade31d75119a0a1579741306a10e3fde5d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -2049,13 +2049,13 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:43:19 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:43:20 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:43:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:44:00 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:44:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -2099,14 +2099,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 	-	`sha256:13074a5a5b872ca5c4bcb6988636c5a0b888b68afe523e0436b17cb8124a3167`  
 		Last Modified: Fri, 24 Jun 2016 02:48:27 GMT  
 		Size: 75.9 MB (75871596 bytes)
-	-	`sha256:0ccdf5faf46775d04f77a34006c07b41899bc7b9141847c480e5f539405c8974`  
-		Last Modified: Fri, 24 Jun 2016 02:48:13 GMT  
-		Size: 1.2 KB (1156 bytes)
+	-	`sha256:4c2fc57dba9b9ec67b4a6b347038b4e611d51a14bc2a73780a39bd697d8e62a1`  
+		Last Modified: Tue, 28 Jun 2016 23:48:30 GMT  
+		Size: 1.2 KB (1159 bytes)
 
 ## `redmine:3.2`
 
 ```console
-$ docker pull redmine@sha256:626490af588736438b62fcb6ac3c63e4ba3546b20bab274764ba487e540697b8
+$ docker pull redmine@sha256:d65d0141574877d637378e0508c663864fcbdd65f1025cb57c36a4042aeb1c35
 ```
 
 -	Platforms:
@@ -2116,9 +2116,9 @@ $ docker pull redmine@sha256:626490af588736438b62fcb6ac3c63e4ba3546b20bab274764b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.0 MB (234974314 bytes)**  
+-	Total Size: **235.0 MB (234974317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:267202e96370f3b7666c7048b60a79e567709d566a5a2ea49b966c36044663ee`
+-	Image ID: `sha256:927abfd6c25ed922592dc76eb01bcfade31d75119a0a1579741306a10e3fde5d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -2181,13 +2181,13 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:43:19 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:43:20 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:43:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:44:00 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:44:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -2231,14 +2231,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 	-	`sha256:13074a5a5b872ca5c4bcb6988636c5a0b888b68afe523e0436b17cb8124a3167`  
 		Last Modified: Fri, 24 Jun 2016 02:48:27 GMT  
 		Size: 75.9 MB (75871596 bytes)
-	-	`sha256:0ccdf5faf46775d04f77a34006c07b41899bc7b9141847c480e5f539405c8974`  
-		Last Modified: Fri, 24 Jun 2016 02:48:13 GMT  
-		Size: 1.2 KB (1156 bytes)
+	-	`sha256:4c2fc57dba9b9ec67b4a6b347038b4e611d51a14bc2a73780a39bd697d8e62a1`  
+		Last Modified: Tue, 28 Jun 2016 23:48:30 GMT  
+		Size: 1.2 KB (1159 bytes)
 
 ## `redmine:3`
 
 ```console
-$ docker pull redmine@sha256:626490af588736438b62fcb6ac3c63e4ba3546b20bab274764ba487e540697b8
+$ docker pull redmine@sha256:d65d0141574877d637378e0508c663864fcbdd65f1025cb57c36a4042aeb1c35
 ```
 
 -	Platforms:
@@ -2248,9 +2248,9 @@ $ docker pull redmine@sha256:626490af588736438b62fcb6ac3c63e4ba3546b20bab274764b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.0 MB (234974314 bytes)**  
+-	Total Size: **235.0 MB (234974317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:267202e96370f3b7666c7048b60a79e567709d566a5a2ea49b966c36044663ee`
+-	Image ID: `sha256:927abfd6c25ed922592dc76eb01bcfade31d75119a0a1579741306a10e3fde5d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -2313,13 +2313,13 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:43:19 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:43:20 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:43:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:44:00 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:44:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -2363,14 +2363,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 	-	`sha256:13074a5a5b872ca5c4bcb6988636c5a0b888b68afe523e0436b17cb8124a3167`  
 		Last Modified: Fri, 24 Jun 2016 02:48:27 GMT  
 		Size: 75.9 MB (75871596 bytes)
-	-	`sha256:0ccdf5faf46775d04f77a34006c07b41899bc7b9141847c480e5f539405c8974`  
-		Last Modified: Fri, 24 Jun 2016 02:48:13 GMT  
-		Size: 1.2 KB (1156 bytes)
+	-	`sha256:4c2fc57dba9b9ec67b4a6b347038b4e611d51a14bc2a73780a39bd697d8e62a1`  
+		Last Modified: Tue, 28 Jun 2016 23:48:30 GMT  
+		Size: 1.2 KB (1159 bytes)
 
 ## `redmine:latest`
 
 ```console
-$ docker pull redmine@sha256:626490af588736438b62fcb6ac3c63e4ba3546b20bab274764ba487e540697b8
+$ docker pull redmine@sha256:d65d0141574877d637378e0508c663864fcbdd65f1025cb57c36a4042aeb1c35
 ```
 
 -	Platforms:
@@ -2380,9 +2380,9 @@ $ docker pull redmine@sha256:626490af588736438b62fcb6ac3c63e4ba3546b20bab274764b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.0 MB (234974314 bytes)**  
+-	Total Size: **235.0 MB (234974317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:267202e96370f3b7666c7048b60a79e567709d566a5a2ea49b966c36044663ee`
+-	Image ID: `sha256:927abfd6c25ed922592dc76eb01bcfade31d75119a0a1579741306a10e3fde5d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -2445,13 +2445,13 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:43:19 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:43:20 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:43:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:44:00 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:44:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -2495,14 +2495,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 	-	`sha256:13074a5a5b872ca5c4bcb6988636c5a0b888b68afe523e0436b17cb8124a3167`  
 		Last Modified: Fri, 24 Jun 2016 02:48:27 GMT  
 		Size: 75.9 MB (75871596 bytes)
-	-	`sha256:0ccdf5faf46775d04f77a34006c07b41899bc7b9141847c480e5f539405c8974`  
-		Last Modified: Fri, 24 Jun 2016 02:48:13 GMT  
-		Size: 1.2 KB (1156 bytes)
+	-	`sha256:4c2fc57dba9b9ec67b4a6b347038b4e611d51a14bc2a73780a39bd697d8e62a1`  
+		Last Modified: Tue, 28 Jun 2016 23:48:30 GMT  
+		Size: 1.2 KB (1159 bytes)
 
 ## `redmine:3.2.3-passenger`
 
 ```console
-$ docker pull redmine@sha256:f5b3df6eef3d8e0ffa3b96fd2130459fe1598b9b5ac4af850b68045f8f802a8f
+$ docker pull redmine@sha256:1df75d784a4d481d2d8c8207274afc0b44254cf87fbd31e15440db3648ba86f6
 ```
 
 -	Platforms:
@@ -2512,9 +2512,9 @@ $ docker pull redmine@sha256:f5b3df6eef3d8e0ffa3b96fd2130459fe1598b9b5ac4af850b6
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.1 MB (267123059 bytes)**  
+-	Total Size: **267.1 MB (267123226 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3fb2d9a66669135472c37ab4a16174b2af36e51872ad54595eb06410f6ef778`
+-	Image ID: `sha256:0b96e68e1c292097399d78221457d3decbdd10006e8c398468bb3badc00b7e9f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -2577,21 +2577,21 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:43:19 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:43:20 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:43:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:44:00 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:44:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:02 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Fri, 24 Jun 2016 02:44:39 GMT
+# Tue, 28 Jun 2016 23:45:27 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:44:41 GMT
+# Tue, 28 Jun 2016 23:45:30 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 24 Jun 2016 02:44:41 GMT
+# Tue, 28 Jun 2016 23:45:32 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -2635,20 +2635,20 @@ CMD ["passenger" "start"]
 	-	`sha256:13074a5a5b872ca5c4bcb6988636c5a0b888b68afe523e0436b17cb8124a3167`  
 		Last Modified: Fri, 24 Jun 2016 02:48:27 GMT  
 		Size: 75.9 MB (75871596 bytes)
-	-	`sha256:0ccdf5faf46775d04f77a34006c07b41899bc7b9141847c480e5f539405c8974`  
-		Last Modified: Fri, 24 Jun 2016 02:48:13 GMT  
-		Size: 1.2 KB (1156 bytes)
-	-	`sha256:dacedf90ee21cb959125e3e3cc8a1e94f6907dcbc41782df01a0ca240d2bb6ac`  
-		Last Modified: Fri, 24 Jun 2016 02:49:09 GMT  
-		Size: 21.7 MB (21728835 bytes)
-	-	`sha256:0c985d1e6ffcf0e81fece935f134fe47a25e412c4f70c5df8a4f3aef2a3e330a`  
-		Last Modified: Fri, 24 Jun 2016 02:49:08 GMT  
-		Size: 10.4 MB (10419910 bytes)
+	-	`sha256:4c2fc57dba9b9ec67b4a6b347038b4e611d51a14bc2a73780a39bd697d8e62a1`  
+		Last Modified: Tue, 28 Jun 2016 23:48:30 GMT  
+		Size: 1.2 KB (1159 bytes)
+	-	`sha256:66d08b60e30f6bb41ae76c9ab2974d53dc170ab82c1f34ff5f5799a9dda0d008`  
+		Last Modified: Tue, 28 Jun 2016 23:49:14 GMT  
+		Size: 21.7 MB (21728977 bytes)
+	-	`sha256:ee4b356ef1189eaa020a3b35f449e995393a6f4532e25785b53e45c5aa26b733`  
+		Last Modified: Tue, 28 Jun 2016 23:49:13 GMT  
+		Size: 10.4 MB (10419932 bytes)
 
 ## `redmine:3.2-passenger`
 
 ```console
-$ docker pull redmine@sha256:f5b3df6eef3d8e0ffa3b96fd2130459fe1598b9b5ac4af850b68045f8f802a8f
+$ docker pull redmine@sha256:1df75d784a4d481d2d8c8207274afc0b44254cf87fbd31e15440db3648ba86f6
 ```
 
 -	Platforms:
@@ -2658,9 +2658,9 @@ $ docker pull redmine@sha256:f5b3df6eef3d8e0ffa3b96fd2130459fe1598b9b5ac4af850b6
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.1 MB (267123059 bytes)**  
+-	Total Size: **267.1 MB (267123226 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3fb2d9a66669135472c37ab4a16174b2af36e51872ad54595eb06410f6ef778`
+-	Image ID: `sha256:0b96e68e1c292097399d78221457d3decbdd10006e8c398468bb3badc00b7e9f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -2723,21 +2723,21 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:43:19 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:43:20 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:43:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:44:00 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:44:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:02 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Fri, 24 Jun 2016 02:44:39 GMT
+# Tue, 28 Jun 2016 23:45:27 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:44:41 GMT
+# Tue, 28 Jun 2016 23:45:30 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 24 Jun 2016 02:44:41 GMT
+# Tue, 28 Jun 2016 23:45:32 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -2781,20 +2781,20 @@ CMD ["passenger" "start"]
 	-	`sha256:13074a5a5b872ca5c4bcb6988636c5a0b888b68afe523e0436b17cb8124a3167`  
 		Last Modified: Fri, 24 Jun 2016 02:48:27 GMT  
 		Size: 75.9 MB (75871596 bytes)
-	-	`sha256:0ccdf5faf46775d04f77a34006c07b41899bc7b9141847c480e5f539405c8974`  
-		Last Modified: Fri, 24 Jun 2016 02:48:13 GMT  
-		Size: 1.2 KB (1156 bytes)
-	-	`sha256:dacedf90ee21cb959125e3e3cc8a1e94f6907dcbc41782df01a0ca240d2bb6ac`  
-		Last Modified: Fri, 24 Jun 2016 02:49:09 GMT  
-		Size: 21.7 MB (21728835 bytes)
-	-	`sha256:0c985d1e6ffcf0e81fece935f134fe47a25e412c4f70c5df8a4f3aef2a3e330a`  
-		Last Modified: Fri, 24 Jun 2016 02:49:08 GMT  
-		Size: 10.4 MB (10419910 bytes)
+	-	`sha256:4c2fc57dba9b9ec67b4a6b347038b4e611d51a14bc2a73780a39bd697d8e62a1`  
+		Last Modified: Tue, 28 Jun 2016 23:48:30 GMT  
+		Size: 1.2 KB (1159 bytes)
+	-	`sha256:66d08b60e30f6bb41ae76c9ab2974d53dc170ab82c1f34ff5f5799a9dda0d008`  
+		Last Modified: Tue, 28 Jun 2016 23:49:14 GMT  
+		Size: 21.7 MB (21728977 bytes)
+	-	`sha256:ee4b356ef1189eaa020a3b35f449e995393a6f4532e25785b53e45c5aa26b733`  
+		Last Modified: Tue, 28 Jun 2016 23:49:13 GMT  
+		Size: 10.4 MB (10419932 bytes)
 
 ## `redmine:3-passenger`
 
 ```console
-$ docker pull redmine@sha256:f5b3df6eef3d8e0ffa3b96fd2130459fe1598b9b5ac4af850b68045f8f802a8f
+$ docker pull redmine@sha256:1df75d784a4d481d2d8c8207274afc0b44254cf87fbd31e15440db3648ba86f6
 ```
 
 -	Platforms:
@@ -2804,9 +2804,9 @@ $ docker pull redmine@sha256:f5b3df6eef3d8e0ffa3b96fd2130459fe1598b9b5ac4af850b6
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.1 MB (267123059 bytes)**  
+-	Total Size: **267.1 MB (267123226 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3fb2d9a66669135472c37ab4a16174b2af36e51872ad54595eb06410f6ef778`
+-	Image ID: `sha256:0b96e68e1c292097399d78221457d3decbdd10006e8c398468bb3badc00b7e9f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -2869,21 +2869,21 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:43:19 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:43:20 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:43:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:44:00 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:44:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:02 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Fri, 24 Jun 2016 02:44:39 GMT
+# Tue, 28 Jun 2016 23:45:27 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:44:41 GMT
+# Tue, 28 Jun 2016 23:45:30 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 24 Jun 2016 02:44:41 GMT
+# Tue, 28 Jun 2016 23:45:32 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -2927,20 +2927,20 @@ CMD ["passenger" "start"]
 	-	`sha256:13074a5a5b872ca5c4bcb6988636c5a0b888b68afe523e0436b17cb8124a3167`  
 		Last Modified: Fri, 24 Jun 2016 02:48:27 GMT  
 		Size: 75.9 MB (75871596 bytes)
-	-	`sha256:0ccdf5faf46775d04f77a34006c07b41899bc7b9141847c480e5f539405c8974`  
-		Last Modified: Fri, 24 Jun 2016 02:48:13 GMT  
-		Size: 1.2 KB (1156 bytes)
-	-	`sha256:dacedf90ee21cb959125e3e3cc8a1e94f6907dcbc41782df01a0ca240d2bb6ac`  
-		Last Modified: Fri, 24 Jun 2016 02:49:09 GMT  
-		Size: 21.7 MB (21728835 bytes)
-	-	`sha256:0c985d1e6ffcf0e81fece935f134fe47a25e412c4f70c5df8a4f3aef2a3e330a`  
-		Last Modified: Fri, 24 Jun 2016 02:49:08 GMT  
-		Size: 10.4 MB (10419910 bytes)
+	-	`sha256:4c2fc57dba9b9ec67b4a6b347038b4e611d51a14bc2a73780a39bd697d8e62a1`  
+		Last Modified: Tue, 28 Jun 2016 23:48:30 GMT  
+		Size: 1.2 KB (1159 bytes)
+	-	`sha256:66d08b60e30f6bb41ae76c9ab2974d53dc170ab82c1f34ff5f5799a9dda0d008`  
+		Last Modified: Tue, 28 Jun 2016 23:49:14 GMT  
+		Size: 21.7 MB (21728977 bytes)
+	-	`sha256:ee4b356ef1189eaa020a3b35f449e995393a6f4532e25785b53e45c5aa26b733`  
+		Last Modified: Tue, 28 Jun 2016 23:49:13 GMT  
+		Size: 10.4 MB (10419932 bytes)
 
 ## `redmine:passenger`
 
 ```console
-$ docker pull redmine@sha256:f5b3df6eef3d8e0ffa3b96fd2130459fe1598b9b5ac4af850b68045f8f802a8f
+$ docker pull redmine@sha256:1df75d784a4d481d2d8c8207274afc0b44254cf87fbd31e15440db3648ba86f6
 ```
 
 -	Platforms:
@@ -2950,9 +2950,9 @@ $ docker pull redmine@sha256:f5b3df6eef3d8e0ffa3b96fd2130459fe1598b9b5ac4af850b6
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.1 MB (267123059 bytes)**  
+-	Total Size: **267.1 MB (267123226 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3fb2d9a66669135472c37ab4a16174b2af36e51872ad54595eb06410f6ef778`
+-	Image ID: `sha256:0b96e68e1c292097399d78221457d3decbdd10006e8c398468bb3badc00b7e9f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -3015,21 +3015,21 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Fri, 24 Jun 2016 02:43:19 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 24 Jun 2016 02:43:20 GMT
-COPY file:5bda2802366c96728c02fa09ca7db4c1b44c3e094e01d362f58a323ca4b42467 in /
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:43:59 GMT
+COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
+# Tue, 28 Jun 2016 23:44:00 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 24 Jun 2016 02:43:20 GMT
+# Tue, 28 Jun 2016 23:44:00 GMT
 EXPOSE 3000/tcp
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 24 Jun 2016 02:43:21 GMT
+# Tue, 28 Jun 2016 23:44:02 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Fri, 24 Jun 2016 02:44:39 GMT
+# Tue, 28 Jun 2016 23:45:27 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:44:41 GMT
+# Tue, 28 Jun 2016 23:45:30 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 24 Jun 2016 02:44:41 GMT
+# Tue, 28 Jun 2016 23:45:32 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -3073,12 +3073,12 @@ CMD ["passenger" "start"]
 	-	`sha256:13074a5a5b872ca5c4bcb6988636c5a0b888b68afe523e0436b17cb8124a3167`  
 		Last Modified: Fri, 24 Jun 2016 02:48:27 GMT  
 		Size: 75.9 MB (75871596 bytes)
-	-	`sha256:0ccdf5faf46775d04f77a34006c07b41899bc7b9141847c480e5f539405c8974`  
-		Last Modified: Fri, 24 Jun 2016 02:48:13 GMT  
-		Size: 1.2 KB (1156 bytes)
-	-	`sha256:dacedf90ee21cb959125e3e3cc8a1e94f6907dcbc41782df01a0ca240d2bb6ac`  
-		Last Modified: Fri, 24 Jun 2016 02:49:09 GMT  
-		Size: 21.7 MB (21728835 bytes)
-	-	`sha256:0c985d1e6ffcf0e81fece935f134fe47a25e412c4f70c5df8a4f3aef2a3e330a`  
-		Last Modified: Fri, 24 Jun 2016 02:49:08 GMT  
-		Size: 10.4 MB (10419910 bytes)
+	-	`sha256:4c2fc57dba9b9ec67b4a6b347038b4e611d51a14bc2a73780a39bd697d8e62a1`  
+		Last Modified: Tue, 28 Jun 2016 23:48:30 GMT  
+		Size: 1.2 KB (1159 bytes)
+	-	`sha256:66d08b60e30f6bb41ae76c9ab2974d53dc170ab82c1f34ff5f5799a9dda0d008`  
+		Last Modified: Tue, 28 Jun 2016 23:49:14 GMT  
+		Size: 21.7 MB (21728977 bytes)
+	-	`sha256:ee4b356ef1189eaa020a3b35f449e995393a6f4532e25785b53e45c5aa26b733`  
+		Last Modified: Tue, 28 Jun 2016 23:49:13 GMT  
+		Size: 10.4 MB (10419932 bytes)
