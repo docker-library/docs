@@ -1233,7 +1233,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:xenial`
 
 ```console
-$ docker pull buildpack-deps@sha256:ff8dfc8421485b8198f81eddb669b061c7455f01fea831781b534573e2078203
+$ docker pull buildpack-deps@sha256:6f41b550ab9b6faf141863a3713370d9ec42158af12ede708d39fda7175ea79d
 ```
 
 -	Platforms:
@@ -1243,49 +1243,49 @@ $ docker pull buildpack-deps@sha256:ff8dfc8421485b8198f81eddb669b061c7455f01fea8
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.9 MB (230875960 bytes)**  
+-	Total Size: **230.9 MB (230889589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d100937884b4e475890acbaee08658e62acf9811f844985bb2ccc76d02cbb92`
+-	Image ID: `sha256:64913e8667c15b9fddfa2f4475879ec93c2d10c4c5214b93ef25ca53c484e8b8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 20:31:29 GMT
-ADD file:f326c511241e30af65244753c65f019bf424d9ce70ff9e338d5422d959370d6c in /
-# Wed, 08 Jun 2016 20:31:30 GMT
+# Wed, 29 Jun 2016 18:47:55 GMT
+ADD file:6532dbda53c0a5b13856b184aa5ff7d0797718c283d7a959b389195eec883efe in /
+# Wed, 29 Jun 2016 18:47:57 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Wed, 08 Jun 2016 20:31:31 GMT
+# Wed, 29 Jun 2016 18:47:59 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:31:32 GMT
+# Wed, 29 Jun 2016 18:48:00 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Wed, 08 Jun 2016 20:31:33 GMT
+# Wed, 29 Jun 2016 18:48:01 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 21:15:19 GMT
+# Wed, 29 Jun 2016 18:55:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 21:15:45 GMT
+# Wed, 29 Jun 2016 18:55:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 21:16:49 GMT
+# Wed, 29 Jun 2016 19:03:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:5ba4f30e5bea63dcc2e7054b8b4f41ab1e5fcc7db0a88fc79359b890bcfe2258`  
-		Last Modified: Fri, 27 May 2016 14:29:17 GMT  
-		Size: 48.6 MB (48647693 bytes)
-	-	`sha256:6874f9870f5f8b13aea44707fddf746825247dda0f3abc9d93438b58c97cdacd`  
-		Last Modified: Thu, 09 Jun 2016 21:59:08 GMT  
-		Size: 21.6 KB (21592 bytes)
-	-	`sha256:4c876570bd7d10c58fc291fa980404290de01bfc01410daeb57a9dd6b86fac57`  
-		Last Modified: Thu, 09 Jun 2016 21:59:08 GMT  
-		Size: 517.0 B
-	-	`sha256:10fb34ebccea88897d4b570120719b23fcbf3e556abdb79fdba6b2e0e4bad9ab`  
-		Last Modified: Thu, 09 Jun 2016 21:59:08 GMT  
+	-	`sha256:f069f1d2105921f2b5520c0d1d18b04a5fe2e10f9a21afe9661cf9939c287e09`  
+		Last Modified: Wed, 29 Jun 2016 18:49:46 GMT  
+		Size: 49.2 MB (49172780 bytes)
+	-	`sha256:ecbeec5633cf8bec4c620f8116bc5d9c8fc85b9ec246f96e89868d4750a9849b`  
+		Last Modified: Wed, 29 Jun 2016 18:49:32 GMT  
+		Size: 30.8 KB (30822 bytes)
+	-	`sha256:ea6f18256d63acd05db88e5120476d17d8fbba76936898222207e945c2274546`  
+		Last Modified: Wed, 29 Jun 2016 18:49:32 GMT  
+		Size: 442.0 B
+	-	`sha256:54bde7b02897355b6813dcad679e18c6a0ed58353548c1fc8e6e0fb4fd455527`  
+		Last Modified: Wed, 29 Jun 2016 18:49:32 GMT  
 		Size: 680.0 B
-	-	`sha256:b2b44f221b60af881fdcc06c9bf4a1794d587e6b9cf62261597c03b603520ac9`  
-		Last Modified: Thu, 09 Jun 2016 21:59:11 GMT  
-		Size: 7.3 MB (7300440 bytes)
-	-	`sha256:abefc18b7bdf0d83b7ef772d0a1fd257d86e34f4b11745eab986375e5dbc99f6`  
-		Last Modified: Thu, 09 Jun 2016 21:59:52 GMT  
-		Size: 41.2 MB (41191586 bytes)
-	-	`sha256:96db01841e55d868e68b3fbdd51cece68c76682f1d5e15c7832645298f230020`  
-		Last Modified: Thu, 09 Jun 2016 22:00:49 GMT  
-		Size: 133.7 MB (133713452 bytes)
+	-	`sha256:f2c4f10195878ff481e91d959fdc9ea239dd54e333bbe527f8dccacac4b61674`  
+		Last Modified: Wed, 29 Jun 2016 18:55:20 GMT  
+		Size: 7.3 MB (7311898 bytes)
+	-	`sha256:8932fed3bbe5560bebf24f71c4c6d2c68b950b6fdc2686981743d8fed28b47ae`  
+		Last Modified: Wed, 29 Jun 2016 18:56:14 GMT  
+		Size: 41.2 MB (41192884 bytes)
+	-	`sha256:b44dba14fda3dc2da9cc97ad87031b6ea352e4e1e0cf0f162c5b7bb0d569a6e7`  
+		Last Modified: Wed, 29 Jun 2016 19:04:19 GMT  
+		Size: 133.2 MB (133180083 bytes)

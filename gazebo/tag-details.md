@@ -409,7 +409,7 @@ CMD ["gzserver"]
 ## `gazebo:libgazebo6`
 
 ```console
-$ docker pull gazebo@sha256:65d66bd21dd56f73e783ee72c2d5dfe51344bdebebc5af5bb614ab59c3bcd27d
+$ docker pull gazebo@sha256:637567758ad5f480b2b6012e8fe818b8e4b35c9f0d3e913b7b4b6a901f68fd01
 ```
 
 -	Platforms:
@@ -419,73 +419,73 @@ $ docker pull gazebo@sha256:65d66bd21dd56f73e783ee72c2d5dfe51344bdebebc5af5bb614
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **483.9 MB (483934241 bytes)**  
+-	Total Size: **483.9 MB (483938356 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:77aeb396ffc21d1a75afc72906aa21a3f67b00aff954a7c3db03f9e9df2a662f`
+-	Image ID: `sha256:3dcf7197141cbbae099ad50e6a698a109f9f6039efe0fa26845545a7b0806b7a`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 20:31:06 GMT
-ADD file:cd748aa6f0d26a270cc30a0a6ba5ce74dbabb758bf0d9381c1ce96c9f1c9b4cd in /
-# Wed, 08 Jun 2016 20:31:07 GMT
+# Fri, 24 Jun 2016 17:29:06 GMT
+ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
+# Fri, 24 Jun 2016 17:29:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Wed, 08 Jun 2016 20:31:09 GMT
+# Fri, 24 Jun 2016 17:29:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:31:10 GMT
+# Fri, 24 Jun 2016 17:29:13 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Wed, 08 Jun 2016 20:31:10 GMT
+# Fri, 24 Jun 2016 17:29:14 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 22:29:24 GMT
+# Fri, 24 Jun 2016 18:33:26 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Wed, 08 Jun 2016 22:29:42 GMT
+# Fri, 24 Jun 2016 18:33:44 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 08 Jun 2016 22:29:43 GMT
+# Fri, 24 Jun 2016 18:33:45 GMT
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 08 Jun 2016 22:44:51 GMT
+# Fri, 24 Jun 2016 18:46:10 GMT
 RUN apt-get update && apt-get install -q -y     gazebo6=6.6.0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 22:44:53 GMT
+# Fri, 24 Jun 2016 18:46:12 GMT
 EXPOSE 11345/tcp
-# Wed, 08 Jun 2016 22:44:54 GMT
+# Fri, 24 Jun 2016 18:46:13 GMT
 COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in /
-# Wed, 08 Jun 2016 22:44:55 GMT
+# Fri, 24 Jun 2016 18:46:13 GMT
 ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
-# Wed, 08 Jun 2016 22:44:57 GMT
+# Fri, 24 Jun 2016 18:46:14 GMT
 CMD ["gzserver"]
-# Wed, 08 Jun 2016 22:44:57 GMT
+# Wed, 29 Jun 2016 19:05:57 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Wed, 08 Jun 2016 22:49:23 GMT
+# Wed, 29 Jun 2016 19:10:28 GMT
 RUN apt-get update && apt-get install -q -y     libgazebo6-dev=6.6.0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:6c953ac5d795ea26fd59dc5bdf4d335625c69f8bcfbdd8307d6009c2e61779c9`  
-		Last Modified: Thu, 26 May 2016 23:13:36 GMT  
-		Size: 65.7 MB (65699277 bytes)
-	-	`sha256:df77235a0a1ffe0dc9290f5a3322734834f6181c3cb422885e7edd8403db1a30`  
-		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 101.4 KB (101391 bytes)
-	-	`sha256:8a069390c20edbbe3147b9dc9c1335d24ab87b373a6136837e487ac0a76c3aef`  
-		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
+	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
+		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
+		Size: 65.7 MB (65699368 bytes)
+	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 101.4 KB (101415 bytes)
+	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
 		Size: 365.0 B
-	-	`sha256:325d7f72769235249695c56cc250ff910f1d11ed1cdcc27578445608f6ede3e9`  
-		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 680.0 B
-	-	`sha256:185d246ae22d64a199724307330c2255dd848af815545e1e39af2f7f93684bda`  
-		Last Modified: Fri, 24 Jun 2016 18:36:49 GMT  
+	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
+		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+		Size: 681.0 B
+	-	`sha256:654eb25264349aa69f086eddbab0eab960282d006ef74541469de64b125f8304`  
+		Last Modified: Fri, 24 Jun 2016 18:35:59 GMT  
 		Size: 13.1 KB (13107 bytes)
-	-	`sha256:e874e9eaffc949a102449d81ab10ba052033f165cf5d35d250d48c352482f734`  
-		Last Modified: Fri, 24 Jun 2016 18:36:52 GMT  
-		Size: 258.2 KB (258202 bytes)
-	-	`sha256:3f70cce5483f5eae341125fe7a54079e5768cd7fef9febffa9efaaf427be2031`  
-		Last Modified: Fri, 24 Jun 2016 18:37:37 GMT  
-		Size: 168.5 MB (168522730 bytes)
-	-	`sha256:05d7e22765ea39c8020cac61b461ddcc5acc8ec7618b48aad87eb10d0aa5a73e`  
-		Last Modified: Fri, 24 Jun 2016 18:36:50 GMT  
-		Size: 190.0 B
-	-	`sha256:65e5d2b30e14e413d46bc1eaab3e603f5ca43cb04d2012be383913f1bc5722c8`  
-		Last Modified: Fri, 24 Jun 2016 18:38:24 GMT  
-		Size: 249.3 MB (249338299 bytes)
+	-	`sha256:5d8d3681a6e347340e978761403c316aae3fe8a221f0a4eecb7882d8bc891ba6`  
+		Last Modified: Fri, 24 Jun 2016 18:36:00 GMT  
+		Size: 258.2 KB (258156 bytes)
+	-	`sha256:345e4503741cb926152a49c75bb506825f18dc7dc14042c57568fdcaa2a90e7e`  
+		Last Modified: Fri, 24 Jun 2016 18:46:59 GMT  
+		Size: 168.5 MB (168521900 bytes)
+	-	`sha256:37ccaded634c0e5c962b675e0ba05850b47485c3819a4bb8560982a2482c6210`  
+		Last Modified: Fri, 24 Jun 2016 18:46:20 GMT  
+		Size: 191.0 B
+	-	`sha256:203d24810001f15290a8bc865510da63cea040c665b631cb8946e072cec03319`  
+		Last Modified: Wed, 29 Jun 2016 19:11:45 GMT  
+		Size: 249.3 MB (249343173 bytes)
 
 ## `gazebo:gzserver7`
 
