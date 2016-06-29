@@ -7,7 +7,7 @@
 ## `hello-world:latest`
 
 ```console
-$ docker pull hello-world@sha256:e52be8ffeeb1f374f440893189cd32f44cb166650e7ab185fa7735b7dc48d619
+$ docker pull hello-world@sha256:af451bc5c4d6e87b64303f707f7bd98debd7fd3175a676c08f4bf46cb48813d4
 ```
 
 -	Platforms:
@@ -17,19 +17,19 @@ $ docker pull hello-world@sha256:e52be8ffeeb1f374f440893189cd32f44cb166650e7ab18
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **605.0 B**  
+-	Total Size: **606.0 B**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:693bce72514984f01f217e878d143162b5f4c1b83b018e7e6dc7394f055e7cd5`
+-	Image ID: `sha256:dfc90a840ff10b20abf878ac70a04dc6c867b5357ecc08dc96d4d2d11f2d84ec`
 -	Default Command: `["\/hello"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 01:04:08 GMT
-COPY file:5b991cab355ee2f81ad3ac443c7b66111b0cb4468522e719e726411075919a65 in /
-# Wed, 08 Jun 2016 01:04:08 GMT
+# Wed, 29 Jun 2016 18:21:10 GMT
+COPY file:6d320e09d7e36a72b524d1c3b037582d364d574ce55118d7a2c544c0904f59bc in /
+# Wed, 29 Jun 2016 18:21:11 GMT
 CMD ["/hello"]
 ```
 
 -	Layers:
-	-	`sha256:a9d36faac0fe2a855f798346f33bd48917bf3af9b6e4b77870ef8862fee8a8a3`  
-		Last Modified: Wed, 08 Jun 2016 20:54:32 GMT  
-		Size: 605.0 B
+	-	`sha256:ad01a741289fa6c1e6d47d9de4ce317fb6539839d2f3998c7707d4e3af88ad23`  
+		Last Modified: Wed, 29 Jun 2016 18:21:18 GMT  
+		Size: 606.0 B
