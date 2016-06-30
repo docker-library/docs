@@ -3,12 +3,12 @@
 # Tags of `kaazing-gateway`
 
 -	[`kaazing-gateway:latest`](#kaazing-gatewaylatest)
--	[`kaazing-gateway:5.1.0`](#kaazing-gateway510)
+-	[`kaazing-gateway:5.1.1`](#kaazing-gateway511)
 
 ## `kaazing-gateway:latest`
 
 ```console
-$ docker pull kaazing-gateway@sha256:a3794ad4d72b5763d036186e4845aaa5c41f03091779f6d105628f816c3d700b
+$ docker pull kaazing-gateway@sha256:f9e293257bc195b7fdd3791503944e6277994a409bf13a3fd8723342bd961359
 ```
 
 -	Platforms:
@@ -18,9 +18,9 @@ $ docker pull kaazing-gateway@sha256:a3794ad4d72b5763d036186e4845aaa5c41f0309177
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.2 MB (138193384 bytes)**  
+-	Total Size: **138.0 MB (138041274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:049cb86806cf5ac6eea04ff1d22b45492e5a83012aa84d00a1393c2907fa6c7c`
+-	Image ID: `sha256:3da36444765270665e12e58d65fc4dabcf5462eaf650a4351638f918be6f7da2`
 -	Default Command: `["gateway.start"]`
 
 ```dockerfile
@@ -54,21 +54,21 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 MAINTAINER Kaazing Docker Maintainers, contact via github issues: https://github.com/kaazing/gateway.docker/issues
 # Thu, 16 Jun 2016 23:24:14 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F8F4B66E022A4668E532DAC03AA0B82C385B4D59
-# Thu, 16 Jun 2016 23:24:14 GMT
-ENV KAAZING_GATEWAY_VERSION=5.1.0
-# Thu, 16 Jun 2016 23:24:14 GMT
-ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.1.0/gateway.distribution-5.1.0.tar.gz
-# Thu, 16 Jun 2016 23:24:14 GMT
+# Thu, 30 Jun 2016 16:41:55 GMT
+ENV KAAZING_GATEWAY_VERSION=5.1.1
+# Thu, 30 Jun 2016 16:41:55 GMT
+ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.1.1/gateway.distribution-5.1.1.tar.gz
+# Thu, 30 Jun 2016 16:41:55 GMT
 WORKDIR /kaazing-gateway
-# Thu, 16 Jun 2016 23:24:21 GMT
+# Thu, 30 Jun 2016 16:42:00 GMT
 RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL 	&& curl -fSL -o gateway.tar.gz.asc ${KAAZING_GATEWAY_URL}.asc 	&& gpg --verify gateway.tar.gz.asc 	&& tar -xvf gateway.tar.gz --strip-components=1 	&& rm gateway.tar.gz*
-# Thu, 16 Jun 2016 23:24:21 GMT
+# Thu, 30 Jun 2016 16:42:01 GMT
 ENV GATEWAY_OPTS=-Xmx512m -Djava.security.egd=file:/dev/urandom
-# Thu, 16 Jun 2016 23:24:21 GMT
+# Thu, 30 Jun 2016 16:42:01 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/kaazing-gateway/bin
-# Thu, 16 Jun 2016 23:24:22 GMT
+# Thu, 30 Jun 2016 16:42:01 GMT
 EXPOSE 8000/tcp
-# Thu, 16 Jun 2016 23:24:22 GMT
+# Thu, 30 Jun 2016 16:42:02 GMT
 CMD ["gateway.start"]
 ```
 
@@ -97,29 +97,29 @@ CMD ["gateway.start"]
 	-	`sha256:8cd7ab39d2846ea0223056ed514b08f9c8f6cf71cd3f68a51e2f19122163dd2b`  
 		Last Modified: Thu, 16 Jun 2016 23:24:28 GMT  
 		Size: 5.9 KB (5930 bytes)
-	-	`sha256:6c5bb29f71e4f815f41ef504ce717bfda371a514843f4b4a4228b97acfc88125`  
-		Last Modified: Thu, 16 Jun 2016 23:24:28 GMT  
+	-	`sha256:db3ad7579412f1b50962c5453c55bdc1487aaeed163feb166d5d934c7968e997`  
+		Last Modified: Thu, 30 Jun 2016 16:42:09 GMT  
 		Size: 103.0 B
-	-	`sha256:99a7440a43c610c81f6e027f1efabbf963e33cd585e9726fca8b200cd13efcc1`  
-		Last Modified: Thu, 16 Jun 2016 23:24:30 GMT  
-		Size: 14.0 MB (14043862 bytes)
+	-	`sha256:e40133fbcc8d7da0b8982ae584c3cf54e62b445a3676a7c037ca556e507c2ed6`  
+		Last Modified: Thu, 30 Jun 2016 16:42:12 GMT  
+		Size: 13.9 MB (13891752 bytes)
 
-## `kaazing-gateway:5.1.0`
+## `kaazing-gateway:5.1.1`
 
 ```console
-$ docker pull kaazing-gateway@sha256:a3794ad4d72b5763d036186e4845aaa5c41f03091779f6d105628f816c3d700b
+$ docker pull kaazing-gateway@sha256:f9e293257bc195b7fdd3791503944e6277994a409bf13a3fd8723342bd961359
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `kaazing-gateway:5.1.0` - linux; amd64
+### `kaazing-gateway:5.1.1` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.2 MB (138193384 bytes)**  
+-	Total Size: **138.0 MB (138041274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:049cb86806cf5ac6eea04ff1d22b45492e5a83012aa84d00a1393c2907fa6c7c`
+-	Image ID: `sha256:3da36444765270665e12e58d65fc4dabcf5462eaf650a4351638f918be6f7da2`
 -	Default Command: `["gateway.start"]`
 
 ```dockerfile
@@ -153,21 +153,21 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 MAINTAINER Kaazing Docker Maintainers, contact via github issues: https://github.com/kaazing/gateway.docker/issues
 # Thu, 16 Jun 2016 23:24:14 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F8F4B66E022A4668E532DAC03AA0B82C385B4D59
-# Thu, 16 Jun 2016 23:24:14 GMT
-ENV KAAZING_GATEWAY_VERSION=5.1.0
-# Thu, 16 Jun 2016 23:24:14 GMT
-ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.1.0/gateway.distribution-5.1.0.tar.gz
-# Thu, 16 Jun 2016 23:24:14 GMT
+# Thu, 30 Jun 2016 16:41:55 GMT
+ENV KAAZING_GATEWAY_VERSION=5.1.1
+# Thu, 30 Jun 2016 16:41:55 GMT
+ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.1.1/gateway.distribution-5.1.1.tar.gz
+# Thu, 30 Jun 2016 16:41:55 GMT
 WORKDIR /kaazing-gateway
-# Thu, 16 Jun 2016 23:24:21 GMT
+# Thu, 30 Jun 2016 16:42:00 GMT
 RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL 	&& curl -fSL -o gateway.tar.gz.asc ${KAAZING_GATEWAY_URL}.asc 	&& gpg --verify gateway.tar.gz.asc 	&& tar -xvf gateway.tar.gz --strip-components=1 	&& rm gateway.tar.gz*
-# Thu, 16 Jun 2016 23:24:21 GMT
+# Thu, 30 Jun 2016 16:42:01 GMT
 ENV GATEWAY_OPTS=-Xmx512m -Djava.security.egd=file:/dev/urandom
-# Thu, 16 Jun 2016 23:24:21 GMT
+# Thu, 30 Jun 2016 16:42:01 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/kaazing-gateway/bin
-# Thu, 16 Jun 2016 23:24:22 GMT
+# Thu, 30 Jun 2016 16:42:01 GMT
 EXPOSE 8000/tcp
-# Thu, 16 Jun 2016 23:24:22 GMT
+# Thu, 30 Jun 2016 16:42:02 GMT
 CMD ["gateway.start"]
 ```
 
@@ -196,9 +196,9 @@ CMD ["gateway.start"]
 	-	`sha256:8cd7ab39d2846ea0223056ed514b08f9c8f6cf71cd3f68a51e2f19122163dd2b`  
 		Last Modified: Thu, 16 Jun 2016 23:24:28 GMT  
 		Size: 5.9 KB (5930 bytes)
-	-	`sha256:6c5bb29f71e4f815f41ef504ce717bfda371a514843f4b4a4228b97acfc88125`  
-		Last Modified: Thu, 16 Jun 2016 23:24:28 GMT  
+	-	`sha256:db3ad7579412f1b50962c5453c55bdc1487aaeed163feb166d5d934c7968e997`  
+		Last Modified: Thu, 30 Jun 2016 16:42:09 GMT  
 		Size: 103.0 B
-	-	`sha256:99a7440a43c610c81f6e027f1efabbf963e33cd585e9726fca8b200cd13efcc1`  
-		Last Modified: Thu, 16 Jun 2016 23:24:30 GMT  
-		Size: 14.0 MB (14043862 bytes)
+	-	`sha256:e40133fbcc8d7da0b8982ae584c3cf54e62b445a3676a7c037ca556e507c2ed6`  
+		Last Modified: Thu, 30 Jun 2016 16:42:12 GMT  
+		Size: 13.9 MB (13891752 bytes)
