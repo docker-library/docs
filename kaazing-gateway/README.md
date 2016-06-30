@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.1.0` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/5ff4c04902f7a514533c9005476fb864fcfdc8ff/Dockerfile)
+-	[`latest`, `5.1.1` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/611ee6af26b64b7eda7ff44ff2409f49d588f6cc/Dockerfile)
 
 [![](https://badge.imagelayers.io/kaazing-gateway:latest.svg)](https://imagelayers.io/?images=kaazing-gateway:latest)
 
