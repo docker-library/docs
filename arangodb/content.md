@@ -100,7 +100,9 @@ unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb arangod --help
 
 ## Persistent Data
 
-ArangoDB use the volume `/var/lib/arangodb` as database directory to store the collection data and the volume `/var/lib/arangodb-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
+ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb-apps3` as apps directory to store any extensions. These directories are marked as docker volumes.
+
+Please note that the old version 2.x used `/var/lib/arangodb` and `/var/lib/arangodb-apps`. We will refer to the 3.x variant in this document. In case you are starting a 2.x image just replace it with the 2.x variant.
 
 See `docker inspect --format "{{ .Config.Volumes}}" arangodb` for all volumes.
 
@@ -113,7 +115,7 @@ You can map the container's volumes to a directory on the host, so that the data
 ```console
 unix> mkdir /tmp/arangodb
 unix> docker -e ARANGO_RANDOM_ROOT_PASSWORD=1 run -p 8529:8529 -d \
-          -v /tmp/arangodb:/var/lib/arangodb \
+          -v /tmp/arangodb:/var/lib/arangodb3 \
           arangodb
 ```
 
@@ -136,7 +138,7 @@ unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --volumes-from arangodb-persis
 If want to save a few bytes you can alternatively use [busybox](https://registry.hub.docker.com/_/busybox) or [alpine](https://registry.hub.docker.com/_/alpine) for creating the volume only containers. Please note that you need to provide the used volumes in this case. For example
 
 ```console
-unix> docker run -d --name arangodb-persist -v /var/lib/arangodb busybox true
+unix> docker run -d --name arangodb-persist -v /var/lib/arangodb3 busybox true
 ```
 
 ### Using as a base image
