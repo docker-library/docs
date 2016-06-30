@@ -34,6 +34,7 @@ The following ports are important and are used by InfluxDB.
 
 -	8086 HTTP API port
 -	8083 Administrator interface port
+-	2003 Graphite support, if it is enabled
 
 The HTTP API port will be automatically exposed when using `docker run -P`.
 
@@ -80,7 +81,7 @@ Find more about configuring InfluxDB [here](https://docs.influxdata.com/influxdb
 InfluxDB supports the Graphite line protocol, but the service and ports are not exposed by default. To run InfluxDB with Graphite support enabled, you can either use a configuration file or set the appropriate environment variables. Run InfluxDB with the default Graphite configuration:
 
 ```console
-docker run -p 8086:8086 \
+docker run -p 8086:8086 -p 2003:2003 \
     -e INFLUXDB_GRAPHITE_ENABLED=true \
     influxdb
 ```
