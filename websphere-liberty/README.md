@@ -5,7 +5,7 @@
 -	[`webProfile6` (*ga/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b9acc6726d03cd7f97be5e7ec246579d8258b6d6/ga/developer/webProfile6/Dockerfile)
 -	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b9acc6726d03cd7f97be5e7ec246579d8258b6d6/ga/developer/webProfile7/Dockerfile)
 -	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b9acc6726d03cd7f97be5e7ec246579d8258b6d6/ga/developer/javaee7/Dockerfile)
--	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b9acc6726d03cd7f97be5e7ec246579d8258b6d6/beta/Dockerfile)
+-	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c2ccb0fe4d282a8bfb51395d12d541da84f3041a/beta/Dockerfile)
 
 [![](https://badge.imagelayers.io/websphere-liberty:latest.svg)](https://imagelayers.io/?images=websphere-liberty:kernel,websphere-liberty:common,websphere-liberty:webProfile6,websphere-liberty:webProfile7,websphere-liberty:javaee7,websphere-liberty:beta)
 
