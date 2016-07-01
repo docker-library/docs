@@ -6,9 +6,9 @@
 -	[`4.3.3`, `4.3` (*4.3/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.3/Dockerfile)
 -	[`4.4.2`, `4.4` (*4.4/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.4/Dockerfile)
 -	[`4.5.1`, `4.5`, `4`, `latest` (*4.5/Dockerfile*)](https://github.com/docker-library/kibana/blob/2015c601bab8b77f0d13475f901c9b85e6014bdb/4.5/Dockerfile)
--	[`5.0.0-alpha3`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/0beddcb3e86d1b623ada81d423aaa98e8500657f/5.0/Dockerfile)
+-	[`5.0.0-alpha4`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/90abf46493103a3c6a7061b400d76f109c4104e7/5.0/Dockerfile)
 
-[![](https://badge.imagelayers.io/kibana:latest.svg)](https://imagelayers.io/?images=kibana:4.0.3,kibana:4.1.8,kibana:4.2.2,kibana:4.3.3,kibana:4.4.2,kibana:4.5.1,kibana:5.0.0-alpha3)
+[![](https://badge.imagelayers.io/kibana:latest.svg)](https://imagelayers.io/?images=kibana:4.0.3,kibana:4.1.8,kibana:4.2.2,kibana:4.3.3,kibana:4.4.2,kibana:4.5.1,kibana:5.0.0-alpha4)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kibana`)](https://github.com/docker-library/official-images/blob/master/library/kibana). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkibana).
 

@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/a2654a926677e91e30a233758e23b9acb2ef1ea8/hello-seattle/Dockerfile)
+-	[`latest` (*hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/85fd7ab65e079b08019032479a3f306964a28f4d/hello-seattle/Dockerfile)
 
 [![](https://badge.imagelayers.io/hello-seattle:latest.svg)](https://imagelayers.io/?images=hello-seattle:latest)
 
