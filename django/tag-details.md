@@ -21,7 +21,7 @@
 ## `django:1.9.7-python3`
 
 ```console
-$ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710cbb7c0ec2e54
+$ docker pull django@sha256:104da6157220a9b6bef2e9e7b1ca230d07972c6fe1c475b390f70d19f9031782
 ```
 
 -	Platforms:
@@ -31,9 +31,9 @@ $ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156793333 bytes)**  
+-	Total Size: **156.8 MB (156777103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2982df0d2d1de9c4ae4adb3aa0a9ebab86b9d1fef2f71ac546a82eaa5a40243b`
+-	Image ID: `sha256:354c35619cbb3a4b8ae657a1ab9f108778d66dc69a1cba10c8d055253f1af64a`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -53,17 +53,17 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Tue, 28 Jun 2016 23:12:36 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:16:35 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:34 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:28:35 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:36 GMT
 CMD ["python3"]
-# Wed, 29 Jun 2016 00:02:33 GMT
+# Fri, 01 Jul 2016 21:53:04 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 00:02:34 GMT
+# Fri, 01 Jul 2016 21:53:05 GMT
 ENV DJANGO_VERSION=1.9.7
-# Wed, 29 Jun 2016 00:03:01 GMT
+# Fri, 01 Jul 2016 21:53:31 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -74,23 +74,23 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:6f3e49e67e1b9b4aca0c528598a35d6de6a73dec67c5b257eb9cef26d100ef5b`  
-		Last Modified: Tue, 28 Jun 2016 23:35:20 GMT  
-		Size: 21.0 MB (20975286 bytes)
-	-	`sha256:e405e2867e7f7387dd6f1e490b10fd5b2f8d792816c08b03a00c037174c51e4d`  
-		Last Modified: Tue, 28 Jun 2016 23:35:13 GMT  
-		Size: 267.0 B
-	-	`sha256:f9d47f66494b316dcfc926ae0c5d82e1e824168611bdcada5275d24a400648c9`  
-		Last Modified: Wed, 29 Jun 2016 00:03:27 GMT  
-		Size: 66.2 MB (66229554 bytes)
-	-	`sha256:63f3a8f1291a779ec4fcdd43560e4d1e44cb3b2506e16a24a3cf9810b7aa62f8`  
-		Last Modified: Wed, 29 Jun 2016 00:03:13 GMT  
-		Size: 14.9 MB (14899552 bytes)
+	-	`sha256:25976dd9cc4f4db8b2b1a9e0bd07c8ad97dec40c8ea4437171f74ea581948eb1`  
+		Last Modified: Fri, 01 Jul 2016 20:47:36 GMT  
+		Size: 21.0 MB (20958855 bytes)
+	-	`sha256:428f7b4ade875d95344e9ebdca0746e1cc30a44c1e7e4c5c8f3b851b58a47ae3`  
+		Last Modified: Fri, 01 Jul 2016 20:47:29 GMT  
+		Size: 268.0 B
+	-	`sha256:48ebb4bc53f1967317970da0d557e3801cb4f2486a18cb2e098c508054742444`  
+		Last Modified: Fri, 01 Jul 2016 21:53:58 GMT  
+		Size: 66.2 MB (66229489 bytes)
+	-	`sha256:5934ba0d921f08f9cd8428e4f9776a6609bce16e8ddb95beb299437521fd3765`  
+		Last Modified: Fri, 01 Jul 2016 21:53:44 GMT  
+		Size: 14.9 MB (14899817 bytes)
 
 ## `django:1.9-python3`
 
 ```console
-$ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710cbb7c0ec2e54
+$ docker pull django@sha256:104da6157220a9b6bef2e9e7b1ca230d07972c6fe1c475b390f70d19f9031782
 ```
 
 -	Platforms:
@@ -100,9 +100,9 @@ $ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156793333 bytes)**  
+-	Total Size: **156.8 MB (156777103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2982df0d2d1de9c4ae4adb3aa0a9ebab86b9d1fef2f71ac546a82eaa5a40243b`
+-	Image ID: `sha256:354c35619cbb3a4b8ae657a1ab9f108778d66dc69a1cba10c8d055253f1af64a`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -122,17 +122,17 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Tue, 28 Jun 2016 23:12:36 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:16:35 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:34 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:28:35 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:36 GMT
 CMD ["python3"]
-# Wed, 29 Jun 2016 00:02:33 GMT
+# Fri, 01 Jul 2016 21:53:04 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 00:02:34 GMT
+# Fri, 01 Jul 2016 21:53:05 GMT
 ENV DJANGO_VERSION=1.9.7
-# Wed, 29 Jun 2016 00:03:01 GMT
+# Fri, 01 Jul 2016 21:53:31 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -143,23 +143,23 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:6f3e49e67e1b9b4aca0c528598a35d6de6a73dec67c5b257eb9cef26d100ef5b`  
-		Last Modified: Tue, 28 Jun 2016 23:35:20 GMT  
-		Size: 21.0 MB (20975286 bytes)
-	-	`sha256:e405e2867e7f7387dd6f1e490b10fd5b2f8d792816c08b03a00c037174c51e4d`  
-		Last Modified: Tue, 28 Jun 2016 23:35:13 GMT  
-		Size: 267.0 B
-	-	`sha256:f9d47f66494b316dcfc926ae0c5d82e1e824168611bdcada5275d24a400648c9`  
-		Last Modified: Wed, 29 Jun 2016 00:03:27 GMT  
-		Size: 66.2 MB (66229554 bytes)
-	-	`sha256:63f3a8f1291a779ec4fcdd43560e4d1e44cb3b2506e16a24a3cf9810b7aa62f8`  
-		Last Modified: Wed, 29 Jun 2016 00:03:13 GMT  
-		Size: 14.9 MB (14899552 bytes)
+	-	`sha256:25976dd9cc4f4db8b2b1a9e0bd07c8ad97dec40c8ea4437171f74ea581948eb1`  
+		Last Modified: Fri, 01 Jul 2016 20:47:36 GMT  
+		Size: 21.0 MB (20958855 bytes)
+	-	`sha256:428f7b4ade875d95344e9ebdca0746e1cc30a44c1e7e4c5c8f3b851b58a47ae3`  
+		Last Modified: Fri, 01 Jul 2016 20:47:29 GMT  
+		Size: 268.0 B
+	-	`sha256:48ebb4bc53f1967317970da0d557e3801cb4f2486a18cb2e098c508054742444`  
+		Last Modified: Fri, 01 Jul 2016 21:53:58 GMT  
+		Size: 66.2 MB (66229489 bytes)
+	-	`sha256:5934ba0d921f08f9cd8428e4f9776a6609bce16e8ddb95beb299437521fd3765`  
+		Last Modified: Fri, 01 Jul 2016 21:53:44 GMT  
+		Size: 14.9 MB (14899817 bytes)
 
 ## `django:1-python3`
 
 ```console
-$ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710cbb7c0ec2e54
+$ docker pull django@sha256:104da6157220a9b6bef2e9e7b1ca230d07972c6fe1c475b390f70d19f9031782
 ```
 
 -	Platforms:
@@ -169,9 +169,9 @@ $ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156793333 bytes)**  
+-	Total Size: **156.8 MB (156777103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2982df0d2d1de9c4ae4adb3aa0a9ebab86b9d1fef2f71ac546a82eaa5a40243b`
+-	Image ID: `sha256:354c35619cbb3a4b8ae657a1ab9f108778d66dc69a1cba10c8d055253f1af64a`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -191,17 +191,17 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Tue, 28 Jun 2016 23:12:36 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:16:35 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:34 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:28:35 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:36 GMT
 CMD ["python3"]
-# Wed, 29 Jun 2016 00:02:33 GMT
+# Fri, 01 Jul 2016 21:53:04 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 00:02:34 GMT
+# Fri, 01 Jul 2016 21:53:05 GMT
 ENV DJANGO_VERSION=1.9.7
-# Wed, 29 Jun 2016 00:03:01 GMT
+# Fri, 01 Jul 2016 21:53:31 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -212,23 +212,23 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:6f3e49e67e1b9b4aca0c528598a35d6de6a73dec67c5b257eb9cef26d100ef5b`  
-		Last Modified: Tue, 28 Jun 2016 23:35:20 GMT  
-		Size: 21.0 MB (20975286 bytes)
-	-	`sha256:e405e2867e7f7387dd6f1e490b10fd5b2f8d792816c08b03a00c037174c51e4d`  
-		Last Modified: Tue, 28 Jun 2016 23:35:13 GMT  
-		Size: 267.0 B
-	-	`sha256:f9d47f66494b316dcfc926ae0c5d82e1e824168611bdcada5275d24a400648c9`  
-		Last Modified: Wed, 29 Jun 2016 00:03:27 GMT  
-		Size: 66.2 MB (66229554 bytes)
-	-	`sha256:63f3a8f1291a779ec4fcdd43560e4d1e44cb3b2506e16a24a3cf9810b7aa62f8`  
-		Last Modified: Wed, 29 Jun 2016 00:03:13 GMT  
-		Size: 14.9 MB (14899552 bytes)
+	-	`sha256:25976dd9cc4f4db8b2b1a9e0bd07c8ad97dec40c8ea4437171f74ea581948eb1`  
+		Last Modified: Fri, 01 Jul 2016 20:47:36 GMT  
+		Size: 21.0 MB (20958855 bytes)
+	-	`sha256:428f7b4ade875d95344e9ebdca0746e1cc30a44c1e7e4c5c8f3b851b58a47ae3`  
+		Last Modified: Fri, 01 Jul 2016 20:47:29 GMT  
+		Size: 268.0 B
+	-	`sha256:48ebb4bc53f1967317970da0d557e3801cb4f2486a18cb2e098c508054742444`  
+		Last Modified: Fri, 01 Jul 2016 21:53:58 GMT  
+		Size: 66.2 MB (66229489 bytes)
+	-	`sha256:5934ba0d921f08f9cd8428e4f9776a6609bce16e8ddb95beb299437521fd3765`  
+		Last Modified: Fri, 01 Jul 2016 21:53:44 GMT  
+		Size: 14.9 MB (14899817 bytes)
 
 ## `django:python3`
 
 ```console
-$ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710cbb7c0ec2e54
+$ docker pull django@sha256:104da6157220a9b6bef2e9e7b1ca230d07972c6fe1c475b390f70d19f9031782
 ```
 
 -	Platforms:
@@ -238,9 +238,9 @@ $ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156793333 bytes)**  
+-	Total Size: **156.8 MB (156777103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2982df0d2d1de9c4ae4adb3aa0a9ebab86b9d1fef2f71ac546a82eaa5a40243b`
+-	Image ID: `sha256:354c35619cbb3a4b8ae657a1ab9f108778d66dc69a1cba10c8d055253f1af64a`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -260,17 +260,17 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Tue, 28 Jun 2016 23:12:36 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:16:35 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:34 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:28:35 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:36 GMT
 CMD ["python3"]
-# Wed, 29 Jun 2016 00:02:33 GMT
+# Fri, 01 Jul 2016 21:53:04 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 00:02:34 GMT
+# Fri, 01 Jul 2016 21:53:05 GMT
 ENV DJANGO_VERSION=1.9.7
-# Wed, 29 Jun 2016 00:03:01 GMT
+# Fri, 01 Jul 2016 21:53:31 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -281,23 +281,23 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:6f3e49e67e1b9b4aca0c528598a35d6de6a73dec67c5b257eb9cef26d100ef5b`  
-		Last Modified: Tue, 28 Jun 2016 23:35:20 GMT  
-		Size: 21.0 MB (20975286 bytes)
-	-	`sha256:e405e2867e7f7387dd6f1e490b10fd5b2f8d792816c08b03a00c037174c51e4d`  
-		Last Modified: Tue, 28 Jun 2016 23:35:13 GMT  
-		Size: 267.0 B
-	-	`sha256:f9d47f66494b316dcfc926ae0c5d82e1e824168611bdcada5275d24a400648c9`  
-		Last Modified: Wed, 29 Jun 2016 00:03:27 GMT  
-		Size: 66.2 MB (66229554 bytes)
-	-	`sha256:63f3a8f1291a779ec4fcdd43560e4d1e44cb3b2506e16a24a3cf9810b7aa62f8`  
-		Last Modified: Wed, 29 Jun 2016 00:03:13 GMT  
-		Size: 14.9 MB (14899552 bytes)
+	-	`sha256:25976dd9cc4f4db8b2b1a9e0bd07c8ad97dec40c8ea4437171f74ea581948eb1`  
+		Last Modified: Fri, 01 Jul 2016 20:47:36 GMT  
+		Size: 21.0 MB (20958855 bytes)
+	-	`sha256:428f7b4ade875d95344e9ebdca0746e1cc30a44c1e7e4c5c8f3b851b58a47ae3`  
+		Last Modified: Fri, 01 Jul 2016 20:47:29 GMT  
+		Size: 268.0 B
+	-	`sha256:48ebb4bc53f1967317970da0d557e3801cb4f2486a18cb2e098c508054742444`  
+		Last Modified: Fri, 01 Jul 2016 21:53:58 GMT  
+		Size: 66.2 MB (66229489 bytes)
+	-	`sha256:5934ba0d921f08f9cd8428e4f9776a6609bce16e8ddb95beb299437521fd3765`  
+		Last Modified: Fri, 01 Jul 2016 21:53:44 GMT  
+		Size: 14.9 MB (14899817 bytes)
 
 ## `django:1.9.7`
 
 ```console
-$ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710cbb7c0ec2e54
+$ docker pull django@sha256:104da6157220a9b6bef2e9e7b1ca230d07972c6fe1c475b390f70d19f9031782
 ```
 
 -	Platforms:
@@ -307,9 +307,9 @@ $ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156793333 bytes)**  
+-	Total Size: **156.8 MB (156777103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2982df0d2d1de9c4ae4adb3aa0a9ebab86b9d1fef2f71ac546a82eaa5a40243b`
+-	Image ID: `sha256:354c35619cbb3a4b8ae657a1ab9f108778d66dc69a1cba10c8d055253f1af64a`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -329,17 +329,17 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Tue, 28 Jun 2016 23:12:36 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:16:35 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:34 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:28:35 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:36 GMT
 CMD ["python3"]
-# Wed, 29 Jun 2016 00:02:33 GMT
+# Fri, 01 Jul 2016 21:53:04 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 00:02:34 GMT
+# Fri, 01 Jul 2016 21:53:05 GMT
 ENV DJANGO_VERSION=1.9.7
-# Wed, 29 Jun 2016 00:03:01 GMT
+# Fri, 01 Jul 2016 21:53:31 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -350,23 +350,23 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:6f3e49e67e1b9b4aca0c528598a35d6de6a73dec67c5b257eb9cef26d100ef5b`  
-		Last Modified: Tue, 28 Jun 2016 23:35:20 GMT  
-		Size: 21.0 MB (20975286 bytes)
-	-	`sha256:e405e2867e7f7387dd6f1e490b10fd5b2f8d792816c08b03a00c037174c51e4d`  
-		Last Modified: Tue, 28 Jun 2016 23:35:13 GMT  
-		Size: 267.0 B
-	-	`sha256:f9d47f66494b316dcfc926ae0c5d82e1e824168611bdcada5275d24a400648c9`  
-		Last Modified: Wed, 29 Jun 2016 00:03:27 GMT  
-		Size: 66.2 MB (66229554 bytes)
-	-	`sha256:63f3a8f1291a779ec4fcdd43560e4d1e44cb3b2506e16a24a3cf9810b7aa62f8`  
-		Last Modified: Wed, 29 Jun 2016 00:03:13 GMT  
-		Size: 14.9 MB (14899552 bytes)
+	-	`sha256:25976dd9cc4f4db8b2b1a9e0bd07c8ad97dec40c8ea4437171f74ea581948eb1`  
+		Last Modified: Fri, 01 Jul 2016 20:47:36 GMT  
+		Size: 21.0 MB (20958855 bytes)
+	-	`sha256:428f7b4ade875d95344e9ebdca0746e1cc30a44c1e7e4c5c8f3b851b58a47ae3`  
+		Last Modified: Fri, 01 Jul 2016 20:47:29 GMT  
+		Size: 268.0 B
+	-	`sha256:48ebb4bc53f1967317970da0d557e3801cb4f2486a18cb2e098c508054742444`  
+		Last Modified: Fri, 01 Jul 2016 21:53:58 GMT  
+		Size: 66.2 MB (66229489 bytes)
+	-	`sha256:5934ba0d921f08f9cd8428e4f9776a6609bce16e8ddb95beb299437521fd3765`  
+		Last Modified: Fri, 01 Jul 2016 21:53:44 GMT  
+		Size: 14.9 MB (14899817 bytes)
 
 ## `django:1.9`
 
 ```console
-$ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710cbb7c0ec2e54
+$ docker pull django@sha256:104da6157220a9b6bef2e9e7b1ca230d07972c6fe1c475b390f70d19f9031782
 ```
 
 -	Platforms:
@@ -376,9 +376,9 @@ $ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156793333 bytes)**  
+-	Total Size: **156.8 MB (156777103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2982df0d2d1de9c4ae4adb3aa0a9ebab86b9d1fef2f71ac546a82eaa5a40243b`
+-	Image ID: `sha256:354c35619cbb3a4b8ae657a1ab9f108778d66dc69a1cba10c8d055253f1af64a`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -398,17 +398,17 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Tue, 28 Jun 2016 23:12:36 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:16:35 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:34 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:28:35 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:36 GMT
 CMD ["python3"]
-# Wed, 29 Jun 2016 00:02:33 GMT
+# Fri, 01 Jul 2016 21:53:04 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 00:02:34 GMT
+# Fri, 01 Jul 2016 21:53:05 GMT
 ENV DJANGO_VERSION=1.9.7
-# Wed, 29 Jun 2016 00:03:01 GMT
+# Fri, 01 Jul 2016 21:53:31 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -419,23 +419,23 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:6f3e49e67e1b9b4aca0c528598a35d6de6a73dec67c5b257eb9cef26d100ef5b`  
-		Last Modified: Tue, 28 Jun 2016 23:35:20 GMT  
-		Size: 21.0 MB (20975286 bytes)
-	-	`sha256:e405e2867e7f7387dd6f1e490b10fd5b2f8d792816c08b03a00c037174c51e4d`  
-		Last Modified: Tue, 28 Jun 2016 23:35:13 GMT  
-		Size: 267.0 B
-	-	`sha256:f9d47f66494b316dcfc926ae0c5d82e1e824168611bdcada5275d24a400648c9`  
-		Last Modified: Wed, 29 Jun 2016 00:03:27 GMT  
-		Size: 66.2 MB (66229554 bytes)
-	-	`sha256:63f3a8f1291a779ec4fcdd43560e4d1e44cb3b2506e16a24a3cf9810b7aa62f8`  
-		Last Modified: Wed, 29 Jun 2016 00:03:13 GMT  
-		Size: 14.9 MB (14899552 bytes)
+	-	`sha256:25976dd9cc4f4db8b2b1a9e0bd07c8ad97dec40c8ea4437171f74ea581948eb1`  
+		Last Modified: Fri, 01 Jul 2016 20:47:36 GMT  
+		Size: 21.0 MB (20958855 bytes)
+	-	`sha256:428f7b4ade875d95344e9ebdca0746e1cc30a44c1e7e4c5c8f3b851b58a47ae3`  
+		Last Modified: Fri, 01 Jul 2016 20:47:29 GMT  
+		Size: 268.0 B
+	-	`sha256:48ebb4bc53f1967317970da0d557e3801cb4f2486a18cb2e098c508054742444`  
+		Last Modified: Fri, 01 Jul 2016 21:53:58 GMT  
+		Size: 66.2 MB (66229489 bytes)
+	-	`sha256:5934ba0d921f08f9cd8428e4f9776a6609bce16e8ddb95beb299437521fd3765`  
+		Last Modified: Fri, 01 Jul 2016 21:53:44 GMT  
+		Size: 14.9 MB (14899817 bytes)
 
 ## `django:1`
 
 ```console
-$ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710cbb7c0ec2e54
+$ docker pull django@sha256:104da6157220a9b6bef2e9e7b1ca230d07972c6fe1c475b390f70d19f9031782
 ```
 
 -	Platforms:
@@ -445,9 +445,9 @@ $ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156793333 bytes)**  
+-	Total Size: **156.8 MB (156777103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2982df0d2d1de9c4ae4adb3aa0a9ebab86b9d1fef2f71ac546a82eaa5a40243b`
+-	Image ID: `sha256:354c35619cbb3a4b8ae657a1ab9f108778d66dc69a1cba10c8d055253f1af64a`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -467,17 +467,17 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Tue, 28 Jun 2016 23:12:36 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:16:35 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:34 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:28:35 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:36 GMT
 CMD ["python3"]
-# Wed, 29 Jun 2016 00:02:33 GMT
+# Fri, 01 Jul 2016 21:53:04 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 00:02:34 GMT
+# Fri, 01 Jul 2016 21:53:05 GMT
 ENV DJANGO_VERSION=1.9.7
-# Wed, 29 Jun 2016 00:03:01 GMT
+# Fri, 01 Jul 2016 21:53:31 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -488,23 +488,23 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:6f3e49e67e1b9b4aca0c528598a35d6de6a73dec67c5b257eb9cef26d100ef5b`  
-		Last Modified: Tue, 28 Jun 2016 23:35:20 GMT  
-		Size: 21.0 MB (20975286 bytes)
-	-	`sha256:e405e2867e7f7387dd6f1e490b10fd5b2f8d792816c08b03a00c037174c51e4d`  
-		Last Modified: Tue, 28 Jun 2016 23:35:13 GMT  
-		Size: 267.0 B
-	-	`sha256:f9d47f66494b316dcfc926ae0c5d82e1e824168611bdcada5275d24a400648c9`  
-		Last Modified: Wed, 29 Jun 2016 00:03:27 GMT  
-		Size: 66.2 MB (66229554 bytes)
-	-	`sha256:63f3a8f1291a779ec4fcdd43560e4d1e44cb3b2506e16a24a3cf9810b7aa62f8`  
-		Last Modified: Wed, 29 Jun 2016 00:03:13 GMT  
-		Size: 14.9 MB (14899552 bytes)
+	-	`sha256:25976dd9cc4f4db8b2b1a9e0bd07c8ad97dec40c8ea4437171f74ea581948eb1`  
+		Last Modified: Fri, 01 Jul 2016 20:47:36 GMT  
+		Size: 21.0 MB (20958855 bytes)
+	-	`sha256:428f7b4ade875d95344e9ebdca0746e1cc30a44c1e7e4c5c8f3b851b58a47ae3`  
+		Last Modified: Fri, 01 Jul 2016 20:47:29 GMT  
+		Size: 268.0 B
+	-	`sha256:48ebb4bc53f1967317970da0d557e3801cb4f2486a18cb2e098c508054742444`  
+		Last Modified: Fri, 01 Jul 2016 21:53:58 GMT  
+		Size: 66.2 MB (66229489 bytes)
+	-	`sha256:5934ba0d921f08f9cd8428e4f9776a6609bce16e8ddb95beb299437521fd3765`  
+		Last Modified: Fri, 01 Jul 2016 21:53:44 GMT  
+		Size: 14.9 MB (14899817 bytes)
 
 ## `django:latest`
 
 ```console
-$ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710cbb7c0ec2e54
+$ docker pull django@sha256:104da6157220a9b6bef2e9e7b1ca230d07972c6fe1c475b390f70d19f9031782
 ```
 
 -	Platforms:
@@ -514,9 +514,9 @@ $ docker pull django@sha256:3ab7ac7252d18241c936efea47dd471a4054abb5254deb135710
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156793333 bytes)**  
+-	Total Size: **156.8 MB (156777103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2982df0d2d1de9c4ae4adb3aa0a9ebab86b9d1fef2f71ac546a82eaa5a40243b`
+-	Image ID: `sha256:354c35619cbb3a4b8ae657a1ab9f108778d66dc69a1cba10c8d055253f1af64a`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -536,17 +536,17 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Tue, 28 Jun 2016 23:12:36 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:16:35 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:34 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:28:35 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 28 Jun 2016 23:16:37 GMT
+# Fri, 01 Jul 2016 20:28:36 GMT
 CMD ["python3"]
-# Wed, 29 Jun 2016 00:02:33 GMT
+# Fri, 01 Jul 2016 21:53:04 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 00:02:34 GMT
+# Fri, 01 Jul 2016 21:53:05 GMT
 ENV DJANGO_VERSION=1.9.7
-# Wed, 29 Jun 2016 00:03:01 GMT
+# Fri, 01 Jul 2016 21:53:31 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -557,23 +557,23 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:6f3e49e67e1b9b4aca0c528598a35d6de6a73dec67c5b257eb9cef26d100ef5b`  
-		Last Modified: Tue, 28 Jun 2016 23:35:20 GMT  
-		Size: 21.0 MB (20975286 bytes)
-	-	`sha256:e405e2867e7f7387dd6f1e490b10fd5b2f8d792816c08b03a00c037174c51e4d`  
-		Last Modified: Tue, 28 Jun 2016 23:35:13 GMT  
-		Size: 267.0 B
-	-	`sha256:f9d47f66494b316dcfc926ae0c5d82e1e824168611bdcada5275d24a400648c9`  
-		Last Modified: Wed, 29 Jun 2016 00:03:27 GMT  
-		Size: 66.2 MB (66229554 bytes)
-	-	`sha256:63f3a8f1291a779ec4fcdd43560e4d1e44cb3b2506e16a24a3cf9810b7aa62f8`  
-		Last Modified: Wed, 29 Jun 2016 00:03:13 GMT  
-		Size: 14.9 MB (14899552 bytes)
+	-	`sha256:25976dd9cc4f4db8b2b1a9e0bd07c8ad97dec40c8ea4437171f74ea581948eb1`  
+		Last Modified: Fri, 01 Jul 2016 20:47:36 GMT  
+		Size: 21.0 MB (20958855 bytes)
+	-	`sha256:428f7b4ade875d95344e9ebdca0746e1cc30a44c1e7e4c5c8f3b851b58a47ae3`  
+		Last Modified: Fri, 01 Jul 2016 20:47:29 GMT  
+		Size: 268.0 B
+	-	`sha256:48ebb4bc53f1967317970da0d557e3801cb4f2486a18cb2e098c508054742444`  
+		Last Modified: Fri, 01 Jul 2016 21:53:58 GMT  
+		Size: 66.2 MB (66229489 bytes)
+	-	`sha256:5934ba0d921f08f9cd8428e4f9776a6609bce16e8ddb95beb299437521fd3765`  
+		Last Modified: Fri, 01 Jul 2016 21:53:44 GMT  
+		Size: 14.9 MB (14899817 bytes)
 
 ## `django:python3-onbuild`
 
 ```console
-$ docker pull django@sha256:df6f10d03ed756c53f28a025bc4111ab21016290fb6771e0945d957c2e065022
+$ docker pull django@sha256:d7c4d71a2aac89a35a7ec474c05e91ac2fabdfa863a412f7e96846a799080628
 ```
 
 -	Platforms:
@@ -583,9 +583,9 @@ $ docker pull django@sha256:df6f10d03ed756c53f28a025bc4111ab21016290fb6771e0945d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **277.6 MB (277625524 bytes)**  
+-	Total Size: **277.6 MB (277594427 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60d58fa2f104df9d3d08028df3508836e2c1ad3be4f7c76408d3358edf32363d`
+-	Image ID: `sha256:84007f1322ed7934d1e7cffa3ce4cf6d7ede8f62b29e177fae4ead53a62838db`
 -	Default Command: `["python","manage.py","runserver","0.0.0.0:8000"]`
 
 ```dockerfile
@@ -609,27 +609,27 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Tue, 28 Jun 2016 23:10:00 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:12:34 GMT
-RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:12:35 GMT
+# Fri, 01 Jul 2016 20:24:32 GMT
+RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:24:33 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 28 Jun 2016 23:12:35 GMT
+# Fri, 01 Jul 2016 20:24:33 GMT
 CMD ["python3"]
-# Tue, 28 Jun 2016 23:21:42 GMT
+# Fri, 01 Jul 2016 20:33:37 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Jun 2016 23:21:42 GMT
+# Fri, 01 Jul 2016 20:33:38 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Jun 2016 23:21:42 GMT
+# Fri, 01 Jul 2016 20:33:38 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Tue, 28 Jun 2016 23:21:43 GMT
+# Fri, 01 Jul 2016 20:33:38 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Tue, 28 Jun 2016 23:21:43 GMT
+# Fri, 01 Jul 2016 20:33:39 GMT
 ONBUILD COPY . /usr/src/app
-# Wed, 29 Jun 2016 00:00:49 GMT
+# Fri, 01 Jul 2016 21:51:15 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 00:00:50 GMT
+# Fri, 01 Jul 2016 21:51:15 GMT
 EXPOSE 8000/tcp
-# Wed, 29 Jun 2016 00:00:51 GMT
+# Fri, 01 Jul 2016 21:51:16 GMT
 CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 ```
 
@@ -649,23 +649,23 @@ CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
 		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
 		Size: 242.5 KB (242498 bytes)
-	-	`sha256:b02b62470313e60c4f307f5e47c0830a53ce8a2e072679f8052443d8a133bd62`  
-		Last Modified: Tue, 28 Jun 2016 23:34:53 GMT  
-		Size: 18.9 MB (18850914 bytes)
-	-	`sha256:5abb647385eeeecd782b42e3e2c85b3cf542f01c3067cfab5013f31f372fc209`  
-		Last Modified: Tue, 28 Jun 2016 23:34:47 GMT  
-		Size: 266.0 B
-	-	`sha256:6597e4d37dfff4ed145f38428c995e464d9500f3d03c025191c846aacbaf1b9c`  
-		Last Modified: Tue, 28 Jun 2016 23:36:36 GMT  
-		Size: 127.0 B
-	-	`sha256:a73733baa38fd34333e2c125e72ca3db59b37b63ffc4a26073cee2a7fb557a4d`  
-		Last Modified: Wed, 29 Jun 2016 00:01:02 GMT  
-		Size: 16.4 MB (16402211 bytes)
+	-	`sha256:100c176f469030ca557351eafebaafeab741d53eb66bfd72abe178ff6ba59322`  
+		Last Modified: Fri, 01 Jul 2016 20:47:08 GMT  
+		Size: 18.8 MB (18834564 bytes)
+	-	`sha256:f85b8d9b217978d1b03ba88dd61cdf957aed4c227a66b234443b9b570c612429`  
+		Last Modified: Fri, 01 Jul 2016 20:47:02 GMT  
+		Size: 267.0 B
+	-	`sha256:1d710d7ab650e127055702ce046992933c0cf024267e17fdb074746431839345`  
+		Last Modified: Fri, 01 Jul 2016 20:48:52 GMT  
+		Size: 125.0 B
+	-	`sha256:3c09a71eb47f7cc02f45be25ea4ee056310dd72654694ebc64bfd7bd71b7e497`  
+		Last Modified: Fri, 01 Jul 2016 21:51:27 GMT  
+		Size: 16.4 MB (16387465 bytes)
 
 ## `django:onbuild`
 
 ```console
-$ docker pull django@sha256:df6f10d03ed756c53f28a025bc4111ab21016290fb6771e0945d957c2e065022
+$ docker pull django@sha256:d7c4d71a2aac89a35a7ec474c05e91ac2fabdfa863a412f7e96846a799080628
 ```
 
 -	Platforms:
@@ -675,9 +675,9 @@ $ docker pull django@sha256:df6f10d03ed756c53f28a025bc4111ab21016290fb6771e0945d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **277.6 MB (277625524 bytes)**  
+-	Total Size: **277.6 MB (277594427 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60d58fa2f104df9d3d08028df3508836e2c1ad3be4f7c76408d3358edf32363d`
+-	Image ID: `sha256:84007f1322ed7934d1e7cffa3ce4cf6d7ede8f62b29e177fae4ead53a62838db`
 -	Default Command: `["python","manage.py","runserver","0.0.0.0:8000"]`
 
 ```dockerfile
@@ -701,27 +701,27 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Tue, 28 Jun 2016 23:10:00 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:12:34 GMT
-RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:12:35 GMT
+# Fri, 01 Jul 2016 20:24:32 GMT
+RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:24:33 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 28 Jun 2016 23:12:35 GMT
+# Fri, 01 Jul 2016 20:24:33 GMT
 CMD ["python3"]
-# Tue, 28 Jun 2016 23:21:42 GMT
+# Fri, 01 Jul 2016 20:33:37 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Jun 2016 23:21:42 GMT
+# Fri, 01 Jul 2016 20:33:38 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Jun 2016 23:21:42 GMT
+# Fri, 01 Jul 2016 20:33:38 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Tue, 28 Jun 2016 23:21:43 GMT
+# Fri, 01 Jul 2016 20:33:38 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Tue, 28 Jun 2016 23:21:43 GMT
+# Fri, 01 Jul 2016 20:33:39 GMT
 ONBUILD COPY . /usr/src/app
-# Wed, 29 Jun 2016 00:00:49 GMT
+# Fri, 01 Jul 2016 21:51:15 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 00:00:50 GMT
+# Fri, 01 Jul 2016 21:51:15 GMT
 EXPOSE 8000/tcp
-# Wed, 29 Jun 2016 00:00:51 GMT
+# Fri, 01 Jul 2016 21:51:16 GMT
 CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 ```
 
@@ -741,23 +741,23 @@ CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
 		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
 		Size: 242.5 KB (242498 bytes)
-	-	`sha256:b02b62470313e60c4f307f5e47c0830a53ce8a2e072679f8052443d8a133bd62`  
-		Last Modified: Tue, 28 Jun 2016 23:34:53 GMT  
-		Size: 18.9 MB (18850914 bytes)
-	-	`sha256:5abb647385eeeecd782b42e3e2c85b3cf542f01c3067cfab5013f31f372fc209`  
-		Last Modified: Tue, 28 Jun 2016 23:34:47 GMT  
-		Size: 266.0 B
-	-	`sha256:6597e4d37dfff4ed145f38428c995e464d9500f3d03c025191c846aacbaf1b9c`  
-		Last Modified: Tue, 28 Jun 2016 23:36:36 GMT  
-		Size: 127.0 B
-	-	`sha256:a73733baa38fd34333e2c125e72ca3db59b37b63ffc4a26073cee2a7fb557a4d`  
-		Last Modified: Wed, 29 Jun 2016 00:01:02 GMT  
-		Size: 16.4 MB (16402211 bytes)
+	-	`sha256:100c176f469030ca557351eafebaafeab741d53eb66bfd72abe178ff6ba59322`  
+		Last Modified: Fri, 01 Jul 2016 20:47:08 GMT  
+		Size: 18.8 MB (18834564 bytes)
+	-	`sha256:f85b8d9b217978d1b03ba88dd61cdf957aed4c227a66b234443b9b570c612429`  
+		Last Modified: Fri, 01 Jul 2016 20:47:02 GMT  
+		Size: 267.0 B
+	-	`sha256:1d710d7ab650e127055702ce046992933c0cf024267e17fdb074746431839345`  
+		Last Modified: Fri, 01 Jul 2016 20:48:52 GMT  
+		Size: 125.0 B
+	-	`sha256:3c09a71eb47f7cc02f45be25ea4ee056310dd72654694ebc64bfd7bd71b7e497`  
+		Last Modified: Fri, 01 Jul 2016 21:51:27 GMT  
+		Size: 16.4 MB (16387465 bytes)
 
 ## `django:1.9.7-python2`
 
 ```console
-$ docker pull django@sha256:047ce227f93ddff0b11bf7dc75a10810560e2b848697784b8b425348b44fc5f3
+$ docker pull django@sha256:8abf7b41e7f4cba7a801617e291b858b7f9b5e7857eb4d88a1d262c0798f73e3
 ```
 
 -	Platforms:
@@ -767,9 +767,9 @@ $ docker pull django@sha256:047ce227f93ddff0b11bf7dc75a10810560e2b848697784b8b42
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.2 MB (153232152 bytes)**  
+-	Total Size: **153.2 MB (153229871 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38dc50ed6821f26ff938c609ff4ab44ce0e8318df118c44a46ab530659e93529`
+-	Image ID: `sha256:e7cac6e75f8266a7aac37ebe5df168a526353125c6888985df4e9309ca1f7b94`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -789,15 +789,15 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.12
 # Tue, 28 Jun 2016 23:01:59 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:05:31 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:05:32 GMT
+# Fri, 01 Jul 2016 20:06:09 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:06:10 GMT
 CMD ["python2"]
-# Tue, 28 Jun 2016 23:57:02 GMT
+# Fri, 01 Jul 2016 21:47:32 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 28 Jun 2016 23:57:03 GMT
+# Fri, 01 Jul 2016 21:47:33 GMT
 ENV DJANGO_VERSION=1.9.7
-# Tue, 28 Jun 2016 23:57:26 GMT
+# Fri, 01 Jul 2016 21:47:52 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -808,20 +808,20 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:5ee2ca7bcf24ec23502ac42c13ed7c4cbb27251c6384dc93d03c4d2b5556781b`  
-		Last Modified: Tue, 28 Jun 2016 23:30:38 GMT  
-		Size: 17.4 MB (17443498 bytes)
-	-	`sha256:4dfe8f7d00515c1283dab73f213c37adcb27a9feeddc804e2dcb88f5bf12019e`  
-		Last Modified: Tue, 28 Jun 2016 23:57:54 GMT  
-		Size: 66.2 MB (66229801 bytes)
-	-	`sha256:6489f14c08d722472ed0d252fa21b62f2bcbcc941cecdaa6780c9d97808ba901`  
-		Last Modified: Tue, 28 Jun 2016 23:57:39 GMT  
-		Size: 14.9 MB (14870179 bytes)
+	-	`sha256:552d2469df8fb3918f96584fb7d6bc2b69efac6863468326326e60a508f5a7b6`  
+		Last Modified: Fri, 01 Jul 2016 20:42:44 GMT  
+		Size: 17.4 MB (17435803 bytes)
+	-	`sha256:2272eedb86aee026463324dca9013829ed9b450134cd241e34f0e155aa102f31`  
+		Last Modified: Fri, 01 Jul 2016 21:48:18 GMT  
+		Size: 66.2 MB (66234955 bytes)
+	-	`sha256:cb28828f60d5b6e9cb14fdeaf324b21fade7bddec160bc32309550648bad1f4e`  
+		Last Modified: Fri, 01 Jul 2016 21:48:05 GMT  
+		Size: 14.9 MB (14870439 bytes)
 
 ## `django:1.9-python2`
 
 ```console
-$ docker pull django@sha256:047ce227f93ddff0b11bf7dc75a10810560e2b848697784b8b425348b44fc5f3
+$ docker pull django@sha256:8abf7b41e7f4cba7a801617e291b858b7f9b5e7857eb4d88a1d262c0798f73e3
 ```
 
 -	Platforms:
@@ -831,9 +831,9 @@ $ docker pull django@sha256:047ce227f93ddff0b11bf7dc75a10810560e2b848697784b8b42
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.2 MB (153232152 bytes)**  
+-	Total Size: **153.2 MB (153229871 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38dc50ed6821f26ff938c609ff4ab44ce0e8318df118c44a46ab530659e93529`
+-	Image ID: `sha256:e7cac6e75f8266a7aac37ebe5df168a526353125c6888985df4e9309ca1f7b94`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -853,15 +853,15 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.12
 # Tue, 28 Jun 2016 23:01:59 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:05:31 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:05:32 GMT
+# Fri, 01 Jul 2016 20:06:09 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:06:10 GMT
 CMD ["python2"]
-# Tue, 28 Jun 2016 23:57:02 GMT
+# Fri, 01 Jul 2016 21:47:32 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 28 Jun 2016 23:57:03 GMT
+# Fri, 01 Jul 2016 21:47:33 GMT
 ENV DJANGO_VERSION=1.9.7
-# Tue, 28 Jun 2016 23:57:26 GMT
+# Fri, 01 Jul 2016 21:47:52 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -872,20 +872,20 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:5ee2ca7bcf24ec23502ac42c13ed7c4cbb27251c6384dc93d03c4d2b5556781b`  
-		Last Modified: Tue, 28 Jun 2016 23:30:38 GMT  
-		Size: 17.4 MB (17443498 bytes)
-	-	`sha256:4dfe8f7d00515c1283dab73f213c37adcb27a9feeddc804e2dcb88f5bf12019e`  
-		Last Modified: Tue, 28 Jun 2016 23:57:54 GMT  
-		Size: 66.2 MB (66229801 bytes)
-	-	`sha256:6489f14c08d722472ed0d252fa21b62f2bcbcc941cecdaa6780c9d97808ba901`  
-		Last Modified: Tue, 28 Jun 2016 23:57:39 GMT  
-		Size: 14.9 MB (14870179 bytes)
+	-	`sha256:552d2469df8fb3918f96584fb7d6bc2b69efac6863468326326e60a508f5a7b6`  
+		Last Modified: Fri, 01 Jul 2016 20:42:44 GMT  
+		Size: 17.4 MB (17435803 bytes)
+	-	`sha256:2272eedb86aee026463324dca9013829ed9b450134cd241e34f0e155aa102f31`  
+		Last Modified: Fri, 01 Jul 2016 21:48:18 GMT  
+		Size: 66.2 MB (66234955 bytes)
+	-	`sha256:cb28828f60d5b6e9cb14fdeaf324b21fade7bddec160bc32309550648bad1f4e`  
+		Last Modified: Fri, 01 Jul 2016 21:48:05 GMT  
+		Size: 14.9 MB (14870439 bytes)
 
 ## `django:1-python2`
 
 ```console
-$ docker pull django@sha256:047ce227f93ddff0b11bf7dc75a10810560e2b848697784b8b425348b44fc5f3
+$ docker pull django@sha256:8abf7b41e7f4cba7a801617e291b858b7f9b5e7857eb4d88a1d262c0798f73e3
 ```
 
 -	Platforms:
@@ -895,9 +895,9 @@ $ docker pull django@sha256:047ce227f93ddff0b11bf7dc75a10810560e2b848697784b8b42
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.2 MB (153232152 bytes)**  
+-	Total Size: **153.2 MB (153229871 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38dc50ed6821f26ff938c609ff4ab44ce0e8318df118c44a46ab530659e93529`
+-	Image ID: `sha256:e7cac6e75f8266a7aac37ebe5df168a526353125c6888985df4e9309ca1f7b94`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -917,15 +917,15 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.12
 # Tue, 28 Jun 2016 23:01:59 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:05:31 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:05:32 GMT
+# Fri, 01 Jul 2016 20:06:09 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:06:10 GMT
 CMD ["python2"]
-# Tue, 28 Jun 2016 23:57:02 GMT
+# Fri, 01 Jul 2016 21:47:32 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 28 Jun 2016 23:57:03 GMT
+# Fri, 01 Jul 2016 21:47:33 GMT
 ENV DJANGO_VERSION=1.9.7
-# Tue, 28 Jun 2016 23:57:26 GMT
+# Fri, 01 Jul 2016 21:47:52 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -936,20 +936,20 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:5ee2ca7bcf24ec23502ac42c13ed7c4cbb27251c6384dc93d03c4d2b5556781b`  
-		Last Modified: Tue, 28 Jun 2016 23:30:38 GMT  
-		Size: 17.4 MB (17443498 bytes)
-	-	`sha256:4dfe8f7d00515c1283dab73f213c37adcb27a9feeddc804e2dcb88f5bf12019e`  
-		Last Modified: Tue, 28 Jun 2016 23:57:54 GMT  
-		Size: 66.2 MB (66229801 bytes)
-	-	`sha256:6489f14c08d722472ed0d252fa21b62f2bcbcc941cecdaa6780c9d97808ba901`  
-		Last Modified: Tue, 28 Jun 2016 23:57:39 GMT  
-		Size: 14.9 MB (14870179 bytes)
+	-	`sha256:552d2469df8fb3918f96584fb7d6bc2b69efac6863468326326e60a508f5a7b6`  
+		Last Modified: Fri, 01 Jul 2016 20:42:44 GMT  
+		Size: 17.4 MB (17435803 bytes)
+	-	`sha256:2272eedb86aee026463324dca9013829ed9b450134cd241e34f0e155aa102f31`  
+		Last Modified: Fri, 01 Jul 2016 21:48:18 GMT  
+		Size: 66.2 MB (66234955 bytes)
+	-	`sha256:cb28828f60d5b6e9cb14fdeaf324b21fade7bddec160bc32309550648bad1f4e`  
+		Last Modified: Fri, 01 Jul 2016 21:48:05 GMT  
+		Size: 14.9 MB (14870439 bytes)
 
 ## `django:python2`
 
 ```console
-$ docker pull django@sha256:047ce227f93ddff0b11bf7dc75a10810560e2b848697784b8b425348b44fc5f3
+$ docker pull django@sha256:8abf7b41e7f4cba7a801617e291b858b7f9b5e7857eb4d88a1d262c0798f73e3
 ```
 
 -	Platforms:
@@ -959,9 +959,9 @@ $ docker pull django@sha256:047ce227f93ddff0b11bf7dc75a10810560e2b848697784b8b42
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.2 MB (153232152 bytes)**  
+-	Total Size: **153.2 MB (153229871 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38dc50ed6821f26ff938c609ff4ab44ce0e8318df118c44a46ab530659e93529`
+-	Image ID: `sha256:e7cac6e75f8266a7aac37ebe5df168a526353125c6888985df4e9309ca1f7b94`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -981,15 +981,15 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.12
 # Tue, 28 Jun 2016 23:01:59 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:05:31 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:05:32 GMT
+# Fri, 01 Jul 2016 20:06:09 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:06:10 GMT
 CMD ["python2"]
-# Tue, 28 Jun 2016 23:57:02 GMT
+# Fri, 01 Jul 2016 21:47:32 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 28 Jun 2016 23:57:03 GMT
+# Fri, 01 Jul 2016 21:47:33 GMT
 ENV DJANGO_VERSION=1.9.7
-# Tue, 28 Jun 2016 23:57:26 GMT
+# Fri, 01 Jul 2016 21:47:52 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -1000,20 +1000,20 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
 		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
 		Size: 3.3 MB (3336139 bytes)
-	-	`sha256:5ee2ca7bcf24ec23502ac42c13ed7c4cbb27251c6384dc93d03c4d2b5556781b`  
-		Last Modified: Tue, 28 Jun 2016 23:30:38 GMT  
-		Size: 17.4 MB (17443498 bytes)
-	-	`sha256:4dfe8f7d00515c1283dab73f213c37adcb27a9feeddc804e2dcb88f5bf12019e`  
-		Last Modified: Tue, 28 Jun 2016 23:57:54 GMT  
-		Size: 66.2 MB (66229801 bytes)
-	-	`sha256:6489f14c08d722472ed0d252fa21b62f2bcbcc941cecdaa6780c9d97808ba901`  
-		Last Modified: Tue, 28 Jun 2016 23:57:39 GMT  
-		Size: 14.9 MB (14870179 bytes)
+	-	`sha256:552d2469df8fb3918f96584fb7d6bc2b69efac6863468326326e60a508f5a7b6`  
+		Last Modified: Fri, 01 Jul 2016 20:42:44 GMT  
+		Size: 17.4 MB (17435803 bytes)
+	-	`sha256:2272eedb86aee026463324dca9013829ed9b450134cd241e34f0e155aa102f31`  
+		Last Modified: Fri, 01 Jul 2016 21:48:18 GMT  
+		Size: 66.2 MB (66234955 bytes)
+	-	`sha256:cb28828f60d5b6e9cb14fdeaf324b21fade7bddec160bc32309550648bad1f4e`  
+		Last Modified: Fri, 01 Jul 2016 21:48:05 GMT  
+		Size: 14.9 MB (14870439 bytes)
 
 ## `django:python2-onbuild`
 
 ```console
-$ docker pull django@sha256:f126f30e4119e13d4b71eff5324de2b315656ac82c9da18db26fc83abf406bd2
+$ docker pull django@sha256:9e30ed0cc5d8d2a13b7b3fce76cfc5caaf683b3f0262a6bd454568e27ce413d8
 ```
 
 -	Platforms:
@@ -1023,9 +1023,9 @@ $ docker pull django@sha256:f126f30e4119e13d4b71eff5324de2b315656ac82c9da18db26f
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **277.6 MB (277563191 bytes)**  
+-	Total Size: **277.6 MB (277578116 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e38084662dd81e604b1900d1436607455de343172d8f9aaaa257d0a8789466c2`
+-	Image ID: `sha256:5fd85c9d62640d66a56eea4ba7778e35dc27d829a91a0bab3c875d29ab285272`
 -	Default Command: `["python","manage.py","runserver","0.0.0.0:8000"]`
 
 ```dockerfile
@@ -1049,27 +1049,27 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.12
 # Tue, 28 Jun 2016 22:59:40 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 28 Jun 2016 23:01:54 GMT
-RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 28 Jun 2016 23:01:57 GMT
+# Fri, 01 Jul 2016 20:02:30 GMT
+RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 01 Jul 2016 20:02:33 GMT
 RUN pip install --no-cache-dir virtualenv
-# Tue, 28 Jun 2016 23:01:58 GMT
+# Fri, 01 Jul 2016 20:02:34 GMT
 CMD ["python2"]
-# Tue, 28 Jun 2016 23:09:57 GMT
+# Fri, 01 Jul 2016 20:10:33 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Jun 2016 23:09:57 GMT
+# Fri, 01 Jul 2016 20:10:33 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Jun 2016 23:09:58 GMT
+# Fri, 01 Jul 2016 20:10:34 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Tue, 28 Jun 2016 23:09:58 GMT
+# Fri, 01 Jul 2016 20:10:34 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Tue, 28 Jun 2016 23:09:58 GMT
+# Fri, 01 Jul 2016 20:10:34 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 28 Jun 2016 23:59:28 GMT
+# Fri, 01 Jul 2016 21:49:51 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 28 Jun 2016 23:59:29 GMT
+# Fri, 01 Jul 2016 21:49:52 GMT
 EXPOSE 8000/tcp
-# Tue, 28 Jun 2016 23:59:30 GMT
+# Fri, 01 Jul 2016 21:49:53 GMT
 CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 ```
 
@@ -1089,15 +1089,15 @@ CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
 		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
 		Size: 242.5 KB (242498 bytes)
-	-	`sha256:fbb7dce8e64f15ac2b5a6f5e5d1982c91d620b72f4b0f65c878aafb99cfca20c`  
-		Last Modified: Tue, 28 Jun 2016 23:30:04 GMT  
-		Size: 15.5 MB (15546699 bytes)
-	-	`sha256:9c4317aaf0d0646b15ab0335c026656f34291bf007788c4d532da882fe6fbeb7`  
-		Last Modified: Tue, 28 Jun 2016 23:30:00 GMT  
-		Size: 3.3 MB (3257071 bytes)
-	-	`sha256:46fc621e5db66421279d633105193c2addba506b331d71b3a2692a2b0912cab0`  
-		Last Modified: Tue, 28 Jun 2016 23:32:16 GMT  
-		Size: 127.0 B
-	-	`sha256:bc96f51e700c87ea442395bb3bc98273a7270e1830734b3f5eaa6721c4672d49`  
-		Last Modified: Tue, 28 Jun 2016 23:59:41 GMT  
-		Size: 16.4 MB (16387288 bytes)
+	-	`sha256:35da995b567c577696ce527afa1f9273dde3e0a844d8531646aa37a31b022ab1`  
+		Last Modified: Fri, 01 Jul 2016 20:42:03 GMT  
+		Size: 15.5 MB (15546737 bytes)
+	-	`sha256:e7611795eb350c351f74487a321a90ea78deca024f84d6c2200ab367c544a962`  
+		Last Modified: Fri, 01 Jul 2016 20:41:59 GMT  
+		Size: 3.3 MB (3257096 bytes)
+	-	`sha256:0e98ca78e689807638f0faac2ab5be34eaf1949f552cb1f9329d323617d7b391`  
+		Last Modified: Fri, 01 Jul 2016 20:44:23 GMT  
+		Size: 125.0 B
+	-	`sha256:4df9b20e7f59340a67163ab22c78c3847d0e54ad8ca7c7755f4d59611f06e16d`  
+		Last Modified: Fri, 01 Jul 2016 21:50:04 GMT  
+		Size: 16.4 MB (16402152 bytes)
