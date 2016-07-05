@@ -3362,32 +3362,516 @@ ONBUILD COPY . /usr/src/app
 
 ## `python:3.6.0a2`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:7c847911c70d791b77db5d333e1f72e88cf72dda666972a245448276159bbeea
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `python:3.6.0a2` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **262.4 MB (262352315 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:854844a562f5e6b14848feb28ecd05d5d417e4863e6798315037ef858d3a90bb`
+-	Default Command: `["python3"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
+CMD ["/bin/bash"]
+# Thu, 09 Jun 2016 21:35:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Jun 2016 21:37:09 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Jun 2016 21:39:19 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 10 Jun 2016 20:09:38 GMT
+RUN apt-get purge -y python.*
+# Fri, 10 Jun 2016 20:09:38 GMT
+ENV LANG=C.UTF-8
+# Tue, 05 Jul 2016 17:58:31 GMT
+ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+# Tue, 05 Jul 2016 17:58:32 GMT
+ENV PYTHON_VERSION=3.6.0a2
+# Tue, 05 Jul 2016 17:58:32 GMT
+ENV PYTHON_PIP_VERSION=8.1.2
+# Tue, 05 Jul 2016 18:00:51 GMT
+RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 05 Jul 2016 18:00:53 GMT
+RUN cd /usr/local/bin 	&& ln -s easy_install-3.6 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 05 Jul 2016 18:00:54 GMT
+CMD ["python3"]
+```
+
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:abb742d515b4cf197291ef3132f11462aaadc5cfbbe362f4ae4f6f7dcdb6453e`  
+		Last Modified: Thu, 09 Jun 2016 21:47:38 GMT  
+		Size: 129.7 MB (129704383 bytes)
+	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
+		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
+		Size: 242.5 KB (242498 bytes)
+	-	`sha256:5885898a5298ef06eb4f854898e7f6053604c372aa43c37b84ad6e2426c9a835`  
+		Last Modified: Tue, 05 Jul 2016 18:14:13 GMT  
+		Size: 20.0 MB (19980041 bytes)
+	-	`sha256:56032388ca7fd7b8067b6e7cbd13d0ed1b71e87c092b32bf99a0ea1dbcf7493b`  
+		Last Modified: Tue, 05 Jul 2016 18:14:06 GMT  
+		Size: 268.0 B
 
 ## `python:3.6`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:7c847911c70d791b77db5d333e1f72e88cf72dda666972a245448276159bbeea
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `python:3.6` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **262.4 MB (262352315 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:854844a562f5e6b14848feb28ecd05d5d417e4863e6798315037ef858d3a90bb`
+-	Default Command: `["python3"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
+CMD ["/bin/bash"]
+# Thu, 09 Jun 2016 21:35:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Jun 2016 21:37:09 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Jun 2016 21:39:19 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 10 Jun 2016 20:09:38 GMT
+RUN apt-get purge -y python.*
+# Fri, 10 Jun 2016 20:09:38 GMT
+ENV LANG=C.UTF-8
+# Tue, 05 Jul 2016 17:58:31 GMT
+ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+# Tue, 05 Jul 2016 17:58:32 GMT
+ENV PYTHON_VERSION=3.6.0a2
+# Tue, 05 Jul 2016 17:58:32 GMT
+ENV PYTHON_PIP_VERSION=8.1.2
+# Tue, 05 Jul 2016 18:00:51 GMT
+RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 05 Jul 2016 18:00:53 GMT
+RUN cd /usr/local/bin 	&& ln -s easy_install-3.6 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 05 Jul 2016 18:00:54 GMT
+CMD ["python3"]
+```
+
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:abb742d515b4cf197291ef3132f11462aaadc5cfbbe362f4ae4f6f7dcdb6453e`  
+		Last Modified: Thu, 09 Jun 2016 21:47:38 GMT  
+		Size: 129.7 MB (129704383 bytes)
+	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
+		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
+		Size: 242.5 KB (242498 bytes)
+	-	`sha256:5885898a5298ef06eb4f854898e7f6053604c372aa43c37b84ad6e2426c9a835`  
+		Last Modified: Tue, 05 Jul 2016 18:14:13 GMT  
+		Size: 20.0 MB (19980041 bytes)
+	-	`sha256:56032388ca7fd7b8067b6e7cbd13d0ed1b71e87c092b32bf99a0ea1dbcf7493b`  
+		Last Modified: Tue, 05 Jul 2016 18:14:06 GMT  
+		Size: 268.0 B
 
 ## `python:3.6.0a2-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:82bdf2df688e3a8c7645d57734a7ff7797e918b50106430a74a38b37d3c09319
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `python:3.6.0a2-slim` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **76.8 MB (76781576 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d623d484f34aef84bb771cc3554c50e31e723a97ecece7ee4891a02bffb06a7a`
+-	Default Command: `["python3"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
+CMD ["/bin/bash"]
+# Fri, 10 Jun 2016 18:44:45 GMT
+RUN apt-get purge -y python.*
+# Fri, 10 Jun 2016 18:44:45 GMT
+ENV LANG=C.UTF-8
+# Fri, 10 Jun 2016 20:30:15 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 05 Jul 2016 18:00:55 GMT
+ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+# Tue, 05 Jul 2016 18:00:55 GMT
+ENV PYTHON_VERSION=3.6.0a2
+# Tue, 05 Jul 2016 18:00:56 GMT
+ENV PYTHON_PIP_VERSION=8.1.2
+# Tue, 05 Jul 2016 18:04:36 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 05 Jul 2016 18:04:38 GMT
+RUN cd /usr/local/bin 	&& ln -s easy_install-3.6 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 05 Jul 2016 18:04:38 GMT
+CMD ["python3"]
+```
+
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
+		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
+		Size: 3.3 MB (3336139 bytes)
+	-	`sha256:374df008715c925998db5e8c8431c28cd748699e465bf3a2dd03143924dfe003`  
+		Last Modified: Tue, 05 Jul 2016 18:14:44 GMT  
+		Size: 22.1 MB (22092634 bytes)
+	-	`sha256:d90966c2929df603ec0f480491a478e8aed7f371491ab11dfa043997a5a90062`  
+		Last Modified: Tue, 05 Jul 2016 18:14:37 GMT  
+		Size: 268.0 B
 
 ## `python:3.6-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:82bdf2df688e3a8c7645d57734a7ff7797e918b50106430a74a38b37d3c09319
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `python:3.6-slim` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **76.8 MB (76781576 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d623d484f34aef84bb771cc3554c50e31e723a97ecece7ee4891a02bffb06a7a`
+-	Default Command: `["python3"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
+CMD ["/bin/bash"]
+# Fri, 10 Jun 2016 18:44:45 GMT
+RUN apt-get purge -y python.*
+# Fri, 10 Jun 2016 18:44:45 GMT
+ENV LANG=C.UTF-8
+# Fri, 10 Jun 2016 20:30:15 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 05 Jul 2016 18:00:55 GMT
+ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+# Tue, 05 Jul 2016 18:00:55 GMT
+ENV PYTHON_VERSION=3.6.0a2
+# Tue, 05 Jul 2016 18:00:56 GMT
+ENV PYTHON_PIP_VERSION=8.1.2
+# Tue, 05 Jul 2016 18:04:36 GMT
+RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 05 Jul 2016 18:04:38 GMT
+RUN cd /usr/local/bin 	&& ln -s easy_install-3.6 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 05 Jul 2016 18:04:38 GMT
+CMD ["python3"]
+```
+
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:2ab25b944ecb380e724354cdbaa45cd1de6405ad91c89dd6b3de2a5021edd42f`  
+		Last Modified: Tue, 28 Jun 2016 23:30:34 GMT  
+		Size: 3.3 MB (3336139 bytes)
+	-	`sha256:374df008715c925998db5e8c8431c28cd748699e465bf3a2dd03143924dfe003`  
+		Last Modified: Tue, 05 Jul 2016 18:14:44 GMT  
+		Size: 22.1 MB (22092634 bytes)
+	-	`sha256:d90966c2929df603ec0f480491a478e8aed7f371491ab11dfa043997a5a90062`  
+		Last Modified: Tue, 05 Jul 2016 18:14:37 GMT  
+		Size: 268.0 B
 
 ## `python:3.6.0a2-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:12efa45d32ccf618f3ac98385e79801a9fb9e3199f27b4244233fc08d674ab0f
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `python:3.6.0a2-alpine` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **23.3 MB (23289754 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3394b194164af93519295b8282ec4a1153039bdb67f70cd04d14fbb7d2c09ba8`
+-	Default Command: `["python3"]`
+
+```dockerfile
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:34:53 GMT
+ENV LANG=C.UTF-8
+# Tue, 05 Jul 2016 18:04:39 GMT
+ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+# Tue, 05 Jul 2016 18:04:39 GMT
+ENV PYTHON_VERSION=3.6.0a2
+# Tue, 05 Jul 2016 18:04:39 GMT
+ENV PYTHON_PIP_VERSION=8.1.2
+# Tue, 05 Jul 2016 18:06:59 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps curl gnupg 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src 	&& tar -xJC /usr/src -f python.tar.xz 	&& mv "/usr/src/Python-$PYTHON_VERSION" /usr/src/python 	&& rm python.tar.xz 	&& apk del .fetch-deps 		&& apk add --no-cache --virtual .build-deps  		bzip2-dev 		gcc 		libc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		xz-dev 		zlib-dev 	&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(getconf _NPROCESSORS_ONLN) 	&& make install 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 05 Jul 2016 18:07:00 GMT
+RUN cd /usr/local/bin 	&& ln -s easy_install-3.6 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 05 Jul 2016 18:07:00 GMT
+CMD ["python3"]
+```
+
+-	Layers:
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:079b59343611b53da089a3e4830e19bb7581bc426e85b5bb6542913a9dff3833`  
+		Last Modified: Tue, 05 Jul 2016 18:15:13 GMT  
+		Size: 21.0 MB (20979209 bytes)
+	-	`sha256:4be82684a70dfa91735493c6bc9d573f69a8c67f4aeabfee57317b4d366387a0`  
+		Last Modified: Tue, 05 Jul 2016 18:15:08 GMT  
+		Size: 259.0 B
 
 ## `python:3.6-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:12efa45d32ccf618f3ac98385e79801a9fb9e3199f27b4244233fc08d674ab0f
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `python:3.6-alpine` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **23.3 MB (23289754 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3394b194164af93519295b8282ec4a1153039bdb67f70cd04d14fbb7d2c09ba8`
+-	Default Command: `["python3"]`
+
+```dockerfile
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:34:53 GMT
+ENV LANG=C.UTF-8
+# Tue, 05 Jul 2016 18:04:39 GMT
+ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+# Tue, 05 Jul 2016 18:04:39 GMT
+ENV PYTHON_VERSION=3.6.0a2
+# Tue, 05 Jul 2016 18:04:39 GMT
+ENV PYTHON_PIP_VERSION=8.1.2
+# Tue, 05 Jul 2016 18:06:59 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps curl gnupg 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src 	&& tar -xJC /usr/src -f python.tar.xz 	&& mv "/usr/src/Python-$PYTHON_VERSION" /usr/src/python 	&& rm python.tar.xz 	&& apk del .fetch-deps 		&& apk add --no-cache --virtual .build-deps  		bzip2-dev 		gcc 		libc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		xz-dev 		zlib-dev 	&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(getconf _NPROCESSORS_ONLN) 	&& make install 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 05 Jul 2016 18:07:00 GMT
+RUN cd /usr/local/bin 	&& ln -s easy_install-3.6 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 05 Jul 2016 18:07:00 GMT
+CMD ["python3"]
+```
+
+-	Layers:
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:079b59343611b53da089a3e4830e19bb7581bc426e85b5bb6542913a9dff3833`  
+		Last Modified: Tue, 05 Jul 2016 18:15:13 GMT  
+		Size: 21.0 MB (20979209 bytes)
+	-	`sha256:4be82684a70dfa91735493c6bc9d573f69a8c67f4aeabfee57317b4d366387a0`  
+		Last Modified: Tue, 05 Jul 2016 18:15:08 GMT  
+		Size: 259.0 B
 
 ## `python:3.6.0a2-onbuild`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:1ae439a2776fd99b5cb9d87bb78ab136a9aea03d902a5abab9bcb561bba1dd0f
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `python:3.6.0a2-onbuild` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **262.4 MB (262352441 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8366a8204517d84bb936cfa39fc5b17e26b5211b5083adaf297fad40287dae38`
+-	Default Command: `["python3"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
+CMD ["/bin/bash"]
+# Thu, 09 Jun 2016 21:35:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Jun 2016 21:37:09 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Jun 2016 21:39:19 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 10 Jun 2016 20:09:38 GMT
+RUN apt-get purge -y python.*
+# Fri, 10 Jun 2016 20:09:38 GMT
+ENV LANG=C.UTF-8
+# Tue, 05 Jul 2016 17:58:31 GMT
+ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+# Tue, 05 Jul 2016 17:58:32 GMT
+ENV PYTHON_VERSION=3.6.0a2
+# Tue, 05 Jul 2016 17:58:32 GMT
+ENV PYTHON_PIP_VERSION=8.1.2
+# Tue, 05 Jul 2016 18:00:51 GMT
+RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 05 Jul 2016 18:00:53 GMT
+RUN cd /usr/local/bin 	&& ln -s easy_install-3.6 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 05 Jul 2016 18:00:54 GMT
+CMD ["python3"]
+# Tue, 05 Jul 2016 18:07:02 GMT
+RUN mkdir -p /usr/src/app
+# Tue, 05 Jul 2016 18:07:02 GMT
+WORKDIR /usr/src/app
+# Tue, 05 Jul 2016 18:07:03 GMT
+ONBUILD COPY requirements.txt /usr/src/app/
+# Tue, 05 Jul 2016 18:07:03 GMT
+ONBUILD RUN pip install --no-cache-dir -r requirements.txt
+# Tue, 05 Jul 2016 18:07:03 GMT
+ONBUILD COPY . /usr/src/app
+```
+
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:abb742d515b4cf197291ef3132f11462aaadc5cfbbe362f4ae4f6f7dcdb6453e`  
+		Last Modified: Thu, 09 Jun 2016 21:47:38 GMT  
+		Size: 129.7 MB (129704383 bytes)
+	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
+		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
+		Size: 242.5 KB (242498 bytes)
+	-	`sha256:5885898a5298ef06eb4f854898e7f6053604c372aa43c37b84ad6e2426c9a835`  
+		Last Modified: Tue, 05 Jul 2016 18:14:13 GMT  
+		Size: 20.0 MB (19980041 bytes)
+	-	`sha256:56032388ca7fd7b8067b6e7cbd13d0ed1b71e87c092b32bf99a0ea1dbcf7493b`  
+		Last Modified: Tue, 05 Jul 2016 18:14:06 GMT  
+		Size: 268.0 B
+	-	`sha256:a13ee0770b99d520a72fab74e8f5f7f2a1d396e3904565ade57b68029d3bc169`  
+		Last Modified: Tue, 05 Jul 2016 18:15:34 GMT  
+		Size: 126.0 B
 
 ## `python:3.6-onbuild`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:1ae439a2776fd99b5cb9d87bb78ab136a9aea03d902a5abab9bcb561bba1dd0f
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `python:3.6-onbuild` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **262.4 MB (262352441 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8366a8204517d84bb936cfa39fc5b17e26b5211b5083adaf297fad40287dae38`
+-	Default Command: `["python3"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
+CMD ["/bin/bash"]
+# Thu, 09 Jun 2016 21:35:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Jun 2016 21:37:09 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Jun 2016 21:39:19 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 10 Jun 2016 20:09:38 GMT
+RUN apt-get purge -y python.*
+# Fri, 10 Jun 2016 20:09:38 GMT
+ENV LANG=C.UTF-8
+# Tue, 05 Jul 2016 17:58:31 GMT
+ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+# Tue, 05 Jul 2016 17:58:32 GMT
+ENV PYTHON_VERSION=3.6.0a2
+# Tue, 05 Jul 2016 17:58:32 GMT
+ENV PYTHON_PIP_VERSION=8.1.2
+# Tue, 05 Jul 2016 18:00:51 GMT
+RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 05 Jul 2016 18:00:53 GMT
+RUN cd /usr/local/bin 	&& ln -s easy_install-3.6 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 05 Jul 2016 18:00:54 GMT
+CMD ["python3"]
+# Tue, 05 Jul 2016 18:07:02 GMT
+RUN mkdir -p /usr/src/app
+# Tue, 05 Jul 2016 18:07:02 GMT
+WORKDIR /usr/src/app
+# Tue, 05 Jul 2016 18:07:03 GMT
+ONBUILD COPY requirements.txt /usr/src/app/
+# Tue, 05 Jul 2016 18:07:03 GMT
+ONBUILD RUN pip install --no-cache-dir -r requirements.txt
+# Tue, 05 Jul 2016 18:07:03 GMT
+ONBUILD COPY . /usr/src/app
+```
+
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
+		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
+		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
+		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
+		Size: 42.5 MB (42525371 bytes)
+	-	`sha256:abb742d515b4cf197291ef3132f11462aaadc5cfbbe362f4ae4f6f7dcdb6453e`  
+		Last Modified: Thu, 09 Jun 2016 21:47:38 GMT  
+		Size: 129.7 MB (129704383 bytes)
+	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
+		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
+		Size: 242.5 KB (242498 bytes)
+	-	`sha256:5885898a5298ef06eb4f854898e7f6053604c372aa43c37b84ad6e2426c9a835`  
+		Last Modified: Tue, 05 Jul 2016 18:14:13 GMT  
+		Size: 20.0 MB (19980041 bytes)
+	-	`sha256:56032388ca7fd7b8067b6e7cbd13d0ed1b71e87c092b32bf99a0ea1dbcf7493b`  
+		Last Modified: Tue, 05 Jul 2016 18:14:06 GMT  
+		Size: 268.0 B
+	-	`sha256:a13ee0770b99d520a72fab74e8f5f7f2a1d396e3904565ade57b68029d3bc169`  
+		Last Modified: Tue, 05 Jul 2016 18:15:34 GMT  
+		Size: 126.0 B
