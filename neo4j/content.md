@@ -6,28 +6,23 @@ Neo4j is a highly scalable, robust, native graph database. It is used in mission
 
 # How to use this image
 
-## Neo4j 2.3
+## Start an instance of neo4j
 
-Documentation for the Neo4j 2.3 image can be found [here](http://neo4j.com/developer/docker-2.x/).
-
-You can start a Neo4j 2.3 container like this:
+You can start a Neo4j container like this:
 
 ```console
 docker run \
     --publish=7474:7474 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j:2.3
+    neo4j
 ```
 
-## Neo4j 3.0
+which allows you to access neo4j through your browser at [http://localhost:7474](http://localhost:7474).
 
-Documentation for the Neo4j 3.0 image can be found [here](http://neo4j.com/developer/docker-3.x/).
+This exposes three ports (`7474`, `7473`, and `7687`) for HTTP, HTTPS, and Bolt access to the Neo4j API. A volume is bound to `/data` to allow the database to be persisted outside the container.
 
-You can start a Neo4j 3.0 container like this:
+By default, this requires you to login with `neo4j/neo4j` and change the password. You can, for development purposes, disable authentication by passing `--env=NEO4J_AUTH=none` to docker run.
 
-```console
-docker run \
-    --publish=7474:7474 --publish=7687:7687 \
-    --volume=$HOME/neo4j/data:/data \
-    neo4j:3.0
-```
+# Documentation
+
+For more examples and complete documentation please go [here for 2.x](http://neo4j.com/developer/docker-2.x/) and [here for 3.x](http://neo4j.com/developer/docker-3.x/).
