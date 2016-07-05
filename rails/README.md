@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.6`, `4.2`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/04006011344175c10b6864193eee74d626b84b11/Dockerfile)
+-	[`5.0.0`, `5.0`, `5`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/15389f3f777fe16044a04709c2000f98948d16fa/Dockerfile)
 -	[`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/9df9b5e6b1519faf22e1565c2caaebf7cc1c665b/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/rails:latest.svg)](https://imagelayers.io/?images=rails:4.2.6,rails:onbuild)
+[![](https://badge.imagelayers.io/rails:latest.svg)](https://imagelayers.io/?images=rails:5.0.0,rails:onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rails`)](https://github.com/docker-library/official-images/blob/master/library/rails). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frails).
 

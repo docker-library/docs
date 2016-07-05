@@ -19,8 +19,12 @@
 -	[`3.5.2-slim`, `3.5-slim`, `3-slim`, `slim` (*3.5/slim/Dockerfile*)](https://github.com/docker-library/python/blob/682708e7866caccd3f476f1d30ca60c0851249e1/3.5/slim/Dockerfile)
 -	[`3.5.2-alpine`, `3.5-alpine`, `3-alpine`, `alpine` (*3.5/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/682708e7866caccd3f476f1d30ca60c0851249e1/3.5/alpine/Dockerfile)
 -	[`3.5.2-onbuild`, `3.5-onbuild`, `3-onbuild`, `onbuild` (*3.5/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/0fa3202789648132971160f686f5a37595108f44/3.5/onbuild/Dockerfile)
+-	[`3.6.0a2`, `3.6` (*3.6/Dockerfile*)](https://github.com/docker-library/python/blob/d92b2e00353ad8f20f6d5c658802741c33ebbd7d/3.6/Dockerfile)
+-	[`3.6.0a2-slim`, `3.6-slim` (*3.6/slim/Dockerfile*)](https://github.com/docker-library/python/blob/8a66fdc3257c2dab06d0fbf614d5cbfa6365c9cc/3.6/slim/Dockerfile)
+-	[`3.6.0a2-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/d92b2e00353ad8f20f6d5c658802741c33ebbd7d/3.6/alpine/Dockerfile)
+-	[`3.6.0a2-onbuild`, `3.6-onbuild` (*3.6/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/635ea5d58b53d165f7bedae90f8933c720a58150/3.6/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/python:latest.svg)](https://imagelayers.io/?images=python:2.7.12,python:2.7.12-slim,python:2.7.12-alpine,python:2.7.12-wheezy,python:2.7.12-onbuild,python:3.3.6,python:3.3.6-slim,python:3.3.6-alpine,python:3.3.6-wheezy,python:3.3.6-onbuild,python:3.4.5,python:3.4.5-slim,python:3.4.5-alpine,python:3.4.5-wheezy,python:3.4.5-onbuild,python:3.5.2,python:3.5.2-slim,python:3.5.2-alpine,python:3.5.2-onbuild)
+[![](https://badge.imagelayers.io/python:latest.svg)](https://imagelayers.io/?images=python:2.7.12,python:2.7.12-slim,python:2.7.12-alpine,python:2.7.12-wheezy,python:2.7.12-onbuild,python:3.3.6,python:3.3.6-slim,python:3.3.6-alpine,python:3.3.6-wheezy,python:3.3.6-onbuild,python:3.4.5,python:3.4.5-slim,python:3.4.5-alpine,python:3.4.5-wheezy,python:3.4.5-onbuild,python:3.5.2,python:3.5.2-slim,python:3.5.2-alpine,python:3.5.2-onbuild,python:3.6.0a2,python:3.6.0a2-slim,python:3.6.0a2-alpine,python:3.6.0a2-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/python`)](https://github.com/docker-library/official-images/blob/master/library/python). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpython).
 
