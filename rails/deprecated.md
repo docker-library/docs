@@ -7,7 +7,10 @@ For example, a `Dockerfile` similar to the following would be a good starting po
 ```dockerfile
 FROM ruby:2.3
 
-RUN apt-get update && apt-get install -y postgresql-client --no-install-recommends && rm -rf /var/lib/apt/lists/*
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends \
+		postgresql-client \
+	&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/app
 COPY Gemfile* ./
