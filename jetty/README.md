@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.3.10`, `9.3`, `9`, `9.3.10-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/25ff3e0419721dd1812a49de72ee3aa37e41bbfd/9.3-jre8/Dockerfile)
--	[`9.3.10-alpine`, `9.3-alpine`, `9-alpine`, `9.3.10-jre8-alpine`, `9.3-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/25ff3e0419721dd1812a49de72ee3aa37e41bbfd/9.3-jre8/alpine/Dockerfile)
--	[`9.2.17`, `9.2`, `9.2.17-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/1ea4d8064136369ed2ec08fc5f4fbc3cae30c8d2/9.2-jre8/Dockerfile)
--	[`9.2.17-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/1ea4d8064136369ed2ec08fc5f4fbc3cae30c8d2/9.2-jre7/Dockerfile)
+-	[`9.3.10`, `9.3`, `9`, `9.3.10-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/e399f08087f8efce4a272225e667c04a09a1996b/9.3-jre8/Dockerfile)
+-	[`9.3.10-alpine`, `9.3-alpine`, `9-alpine`, `9.3.10-jre8-alpine`, `9.3-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/e399f08087f8efce4a272225e667c04a09a1996b/9.3-jre8/alpine/Dockerfile)
+-	[`9.2.17`, `9.2`, `9.2.17-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/e399f08087f8efce4a272225e667c04a09a1996b/9.2-jre8/Dockerfile)
+-	[`9.2.17-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/e399f08087f8efce4a272225e667c04a09a1996b/9.2-jre7/Dockerfile)
 
 [![](https://badge.imagelayers.io/jetty:latest.svg)](https://imagelayers.io/?images=jetty:9.3.10,jetty:9.3.10-alpine,jetty:9.2.17,jetty:9.2.17-jre7)
 
