@@ -120,6 +120,14 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your Percona instance completely unprotected, allowing anyone to gain complete superuser access.
 
+### `MYSQL_RANDOM_ROOT_PASSWORD`
+
+This is an optional variable. Set to `yes` to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+
+### `MYSQL_ONETIME_PASSWORD`
+
+Sets root (*not* the user specified in `MYSQL_USER`!) user as expired once init is complete, forcing a password change on first login. *NOTE*: This feature is supported on MySQL 5.6+ only. Using this option on MySQL 5.5 will throw an appropriate error during initialization.
+
 # Initializing a fresh instance
 
 When a container is started for the first time, a new database `mysql` will be initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh` and `.sql` that are found in `/docker-entrypoint-initdb.d`. You can easily populate your percona services by [mounting a SQL dump into that directory](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data.
