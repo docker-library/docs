@@ -432,7 +432,7 @@ CMD ["lein" "run"]
 ## `clojure:alpine`
 
 ```console
-$ docker pull clojure@sha256:a9f1a2054211d71ed3a47c0013f887b0bba0ec48f7de9e92689c23c0623daebd
+$ docker pull clojure@sha256:debd7525bdb80ef98ede2ed0959c4f40e463e0240ad4f9844cd9d51ebce0947a
 ```
 
 -	Platforms:
@@ -442,9 +442,9 @@ $ docker pull clojure@sha256:a9f1a2054211d71ed3a47c0013f887b0bba0ec48f7de9e92689
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.6 MB (70598255 bytes)**  
+-	Total Size: **70.6 MB (70598261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f4d0d154e9a1aded1811cb1fe7222dd96a94b48b7c67b7f67335de46b3b682f`
+-	Image ID: `sha256:4277a7f38a709ecbe0685c308f9d255065ba54a3063e1a3c910fbd2a779f542b`
 
 ```dockerfile
 # Thu, 23 Jun 2016 19:55:18 GMT
@@ -455,31 +455,31 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Thu, 23 Jun 2016 20:38:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
-# Thu, 23 Jun 2016 20:38:56 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:53 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+# Thu, 07 Jul 2016 19:04:53 GMT
 ENV JAVA_VERSION=8u92
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:54 GMT
 ENV JAVA_ALPINE_VERSION=8.92.14-r1
-# Thu, 23 Jun 2016 20:39:07 GMT
+# Thu, 07 Jul 2016 19:05:06 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 23 Jun 2016 22:18:43 GMT
+# Thu, 07 Jul 2016 20:57:58 GMT
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
-# Thu, 23 Jun 2016 22:18:44 GMT
+# Thu, 07 Jul 2016 20:57:59 GMT
 ENV LEIN_VERSION=2.6.1
-# Thu, 23 Jun 2016 22:18:44 GMT
+# Thu, 07 Jul 2016 20:57:59 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 23 Jun 2016 22:18:45 GMT
+# Thu, 07 Jul 2016 20:58:00 GMT
 WORKDIR /tmp
-# Thu, 23 Jun 2016 22:18:51 GMT
+# Thu, 07 Jul 2016 20:58:05 GMT
 RUN apk add --update tar gnupg bash openssl && rm -rf /var/cache/apk/*
-# Thu, 23 Jun 2016 22:19:11 GMT
+# Thu, 07 Jul 2016 20:58:31 GMT
 RUN mkdir -p $LEIN_INSTALL   && wget -q https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f7643a14fd8a4d5c19eeb416db8ea549d8d2c18a *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mkdir -p /usr/share/java   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
-# Thu, 23 Jun 2016 22:19:11 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
-# Thu, 23 Jun 2016 22:19:12 GMT
+# Thu, 07 Jul 2016 20:58:32 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
+# Thu, 07 Jul 2016 20:58:32 GMT
 ENV LEIN_ROOT=1
-# Thu, 23 Jun 2016 22:19:15 GMT
+# Thu, 07 Jul 2016 20:58:36 GMT
 RUN lein
 ```
 
@@ -490,23 +490,23 @@ RUN lein
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
 		Size: 230.0 B
-	-	`sha256:edeb4344937fef0e7604839f9af5e0cfaedfa6d88d8ee0000534e9b424b9e4be`  
-		Last Modified: Thu, 23 Jun 2016 20:39:26 GMT  
-		Size: 49.3 MB (49325233 bytes)
-	-	`sha256:b5bbda7629958189b60e8adcf91310fa69733f0403c46a8c34cc5195e6b59e20`  
-		Last Modified: Thu, 23 Jun 2016 22:19:23 GMT  
-		Size: 5.2 MB (5181808 bytes)
-	-	`sha256:fdd38dc50afa545d438d9d4af117dcbe4623c69218f0bdd9c5af0a4e5f56a21e`  
-		Last Modified: Thu, 23 Jun 2016 22:19:23 GMT  
-		Size: 13.8 MB (13780532 bytes)
-	-	`sha256:2f321d75a4f7da0b4c125bf95eb0eb3388ea3554799363502760a4470876757f`  
-		Last Modified: Thu, 23 Jun 2016 22:19:22 GMT  
-		Size: 166.0 B
+	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
+		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
+		Size: 49.3 MB (49325243 bytes)
+	-	`sha256:8cdfc7cd5696cc070b3e7042ff38004499901b29cf848bedd7d528f53775e146`  
+		Last Modified: Thu, 07 Jul 2016 20:58:46 GMT  
+		Size: 5.2 MB (5181802 bytes)
+	-	`sha256:3039f18e5b5ba9c38cfdab134a0e456899098a6d7a5bbc9f7bf771bb2e2381ee`  
+		Last Modified: Thu, 07 Jul 2016 20:58:45 GMT  
+		Size: 13.8 MB (13780536 bytes)
+	-	`sha256:2cb421c6e13308eafb16e5cc45a31fca7b07e998d335338493a0cd3d666ed219`  
+		Last Modified: Thu, 07 Jul 2016 20:58:43 GMT  
+		Size: 164.0 B
 
 ## `clojure:lein-2.6.1-alpine`
 
 ```console
-$ docker pull clojure@sha256:a9f1a2054211d71ed3a47c0013f887b0bba0ec48f7de9e92689c23c0623daebd
+$ docker pull clojure@sha256:debd7525bdb80ef98ede2ed0959c4f40e463e0240ad4f9844cd9d51ebce0947a
 ```
 
 -	Platforms:
@@ -516,9 +516,9 @@ $ docker pull clojure@sha256:a9f1a2054211d71ed3a47c0013f887b0bba0ec48f7de9e92689
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.6 MB (70598255 bytes)**  
+-	Total Size: **70.6 MB (70598261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f4d0d154e9a1aded1811cb1fe7222dd96a94b48b7c67b7f67335de46b3b682f`
+-	Image ID: `sha256:4277a7f38a709ecbe0685c308f9d255065ba54a3063e1a3c910fbd2a779f542b`
 
 ```dockerfile
 # Thu, 23 Jun 2016 19:55:18 GMT
@@ -529,31 +529,31 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Thu, 23 Jun 2016 20:38:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
-# Thu, 23 Jun 2016 20:38:56 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:53 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+# Thu, 07 Jul 2016 19:04:53 GMT
 ENV JAVA_VERSION=8u92
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:54 GMT
 ENV JAVA_ALPINE_VERSION=8.92.14-r1
-# Thu, 23 Jun 2016 20:39:07 GMT
+# Thu, 07 Jul 2016 19:05:06 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 23 Jun 2016 22:18:43 GMT
+# Thu, 07 Jul 2016 20:57:58 GMT
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
-# Thu, 23 Jun 2016 22:18:44 GMT
+# Thu, 07 Jul 2016 20:57:59 GMT
 ENV LEIN_VERSION=2.6.1
-# Thu, 23 Jun 2016 22:18:44 GMT
+# Thu, 07 Jul 2016 20:57:59 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 23 Jun 2016 22:18:45 GMT
+# Thu, 07 Jul 2016 20:58:00 GMT
 WORKDIR /tmp
-# Thu, 23 Jun 2016 22:18:51 GMT
+# Thu, 07 Jul 2016 20:58:05 GMT
 RUN apk add --update tar gnupg bash openssl && rm -rf /var/cache/apk/*
-# Thu, 23 Jun 2016 22:19:11 GMT
+# Thu, 07 Jul 2016 20:58:31 GMT
 RUN mkdir -p $LEIN_INSTALL   && wget -q https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f7643a14fd8a4d5c19eeb416db8ea549d8d2c18a *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mkdir -p /usr/share/java   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
-# Thu, 23 Jun 2016 22:19:11 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
-# Thu, 23 Jun 2016 22:19:12 GMT
+# Thu, 07 Jul 2016 20:58:32 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
+# Thu, 07 Jul 2016 20:58:32 GMT
 ENV LEIN_ROOT=1
-# Thu, 23 Jun 2016 22:19:15 GMT
+# Thu, 07 Jul 2016 20:58:36 GMT
 RUN lein
 ```
 
@@ -564,23 +564,23 @@ RUN lein
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
 		Size: 230.0 B
-	-	`sha256:edeb4344937fef0e7604839f9af5e0cfaedfa6d88d8ee0000534e9b424b9e4be`  
-		Last Modified: Thu, 23 Jun 2016 20:39:26 GMT  
-		Size: 49.3 MB (49325233 bytes)
-	-	`sha256:b5bbda7629958189b60e8adcf91310fa69733f0403c46a8c34cc5195e6b59e20`  
-		Last Modified: Thu, 23 Jun 2016 22:19:23 GMT  
-		Size: 5.2 MB (5181808 bytes)
-	-	`sha256:fdd38dc50afa545d438d9d4af117dcbe4623c69218f0bdd9c5af0a4e5f56a21e`  
-		Last Modified: Thu, 23 Jun 2016 22:19:23 GMT  
-		Size: 13.8 MB (13780532 bytes)
-	-	`sha256:2f321d75a4f7da0b4c125bf95eb0eb3388ea3554799363502760a4470876757f`  
-		Last Modified: Thu, 23 Jun 2016 22:19:22 GMT  
-		Size: 166.0 B
+	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
+		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
+		Size: 49.3 MB (49325243 bytes)
+	-	`sha256:8cdfc7cd5696cc070b3e7042ff38004499901b29cf848bedd7d528f53775e146`  
+		Last Modified: Thu, 07 Jul 2016 20:58:46 GMT  
+		Size: 5.2 MB (5181802 bytes)
+	-	`sha256:3039f18e5b5ba9c38cfdab134a0e456899098a6d7a5bbc9f7bf771bb2e2381ee`  
+		Last Modified: Thu, 07 Jul 2016 20:58:45 GMT  
+		Size: 13.8 MB (13780536 bytes)
+	-	`sha256:2cb421c6e13308eafb16e5cc45a31fca7b07e998d335338493a0cd3d666ed219`  
+		Last Modified: Thu, 07 Jul 2016 20:58:43 GMT  
+		Size: 164.0 B
 
 ## `clojure:alpine-onbuild`
 
 ```console
-$ docker pull clojure@sha256:1c1bf977722480c01eaeaf47ecb0c5137959a11d80a5824dfc2c1ac693820cde
+$ docker pull clojure@sha256:016756c3e6e9ad0a8241bf8fb7ab78e3f80c26ac61395df4322588f4eda20193
 ```
 
 -	Platforms:
@@ -590,9 +590,9 @@ $ docker pull clojure@sha256:1c1bf977722480c01eaeaf47ecb0c5137959a11d80a5824dfc2
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.6 MB (70598382 bytes)**  
+-	Total Size: **70.6 MB (70598386 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2de5c7f6260dcf7ddf2f4e083f482bf1c42abaad9586bb08f5f24beed8d132a5`
+-	Image ID: `sha256:c32719b23240cd3c4301f4edebaed81f2696d70fb539a1099fa6baea8cb872c7`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -604,43 +604,43 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Thu, 23 Jun 2016 20:38:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
-# Thu, 23 Jun 2016 20:38:56 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:53 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+# Thu, 07 Jul 2016 19:04:53 GMT
 ENV JAVA_VERSION=8u92
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:54 GMT
 ENV JAVA_ALPINE_VERSION=8.92.14-r1
-# Thu, 23 Jun 2016 20:39:07 GMT
+# Thu, 07 Jul 2016 19:05:06 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 23 Jun 2016 22:18:43 GMT
+# Thu, 07 Jul 2016 20:57:58 GMT
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
-# Thu, 23 Jun 2016 22:18:44 GMT
+# Thu, 07 Jul 2016 20:57:59 GMT
 ENV LEIN_VERSION=2.6.1
-# Thu, 23 Jun 2016 22:18:44 GMT
+# Thu, 07 Jul 2016 20:57:59 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 23 Jun 2016 22:18:45 GMT
+# Thu, 07 Jul 2016 20:58:00 GMT
 WORKDIR /tmp
-# Thu, 23 Jun 2016 22:18:51 GMT
+# Thu, 07 Jul 2016 20:58:05 GMT
 RUN apk add --update tar gnupg bash openssl && rm -rf /var/cache/apk/*
-# Thu, 23 Jun 2016 22:19:11 GMT
+# Thu, 07 Jul 2016 20:58:31 GMT
 RUN mkdir -p $LEIN_INSTALL   && wget -q https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f7643a14fd8a4d5c19eeb416db8ea549d8d2c18a *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mkdir -p /usr/share/java   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
-# Thu, 23 Jun 2016 22:19:11 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
-# Thu, 23 Jun 2016 22:19:12 GMT
+# Thu, 07 Jul 2016 20:58:32 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
+# Thu, 07 Jul 2016 20:58:32 GMT
 ENV LEIN_ROOT=1
-# Thu, 23 Jun 2016 22:19:15 GMT
+# Thu, 07 Jul 2016 20:58:36 GMT
 RUN lein
-# Thu, 23 Jun 2016 22:19:38 GMT
+# Thu, 07 Jul 2016 20:59:37 GMT
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
-# Thu, 23 Jun 2016 22:19:38 GMT
+# Thu, 07 Jul 2016 20:59:38 GMT
 WORKDIR /usr/src/app
-# Thu, 23 Jun 2016 22:19:39 GMT
+# Thu, 07 Jul 2016 20:59:38 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Thu, 23 Jun 2016 22:19:39 GMT
+# Thu, 07 Jul 2016 20:59:39 GMT
 ONBUILD RUN lein deps
-# Thu, 23 Jun 2016 22:19:40 GMT
+# Thu, 07 Jul 2016 20:59:39 GMT
 ONBUILD COPY . /usr/src/app
-# Thu, 23 Jun 2016 22:19:40 GMT
+# Thu, 07 Jul 2016 20:59:40 GMT
 CMD ["lein" "run"]
 ```
 
@@ -651,26 +651,26 @@ CMD ["lein" "run"]
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
 		Size: 230.0 B
-	-	`sha256:edeb4344937fef0e7604839f9af5e0cfaedfa6d88d8ee0000534e9b424b9e4be`  
-		Last Modified: Thu, 23 Jun 2016 20:39:26 GMT  
-		Size: 49.3 MB (49325233 bytes)
-	-	`sha256:b5bbda7629958189b60e8adcf91310fa69733f0403c46a8c34cc5195e6b59e20`  
-		Last Modified: Thu, 23 Jun 2016 22:19:23 GMT  
-		Size: 5.2 MB (5181808 bytes)
-	-	`sha256:fdd38dc50afa545d438d9d4af117dcbe4623c69218f0bdd9c5af0a4e5f56a21e`  
-		Last Modified: Thu, 23 Jun 2016 22:19:23 GMT  
-		Size: 13.8 MB (13780532 bytes)
-	-	`sha256:2f321d75a4f7da0b4c125bf95eb0eb3388ea3554799363502760a4470876757f`  
-		Last Modified: Thu, 23 Jun 2016 22:19:22 GMT  
-		Size: 166.0 B
-	-	`sha256:cc4f139efbbe33854d5f1986276010dc7762167054d66149b91c7f8b490e600f`  
-		Last Modified: Thu, 23 Jun 2016 22:19:46 GMT  
-		Size: 127.0 B
+	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
+		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
+		Size: 49.3 MB (49325243 bytes)
+	-	`sha256:8cdfc7cd5696cc070b3e7042ff38004499901b29cf848bedd7d528f53775e146`  
+		Last Modified: Thu, 07 Jul 2016 20:58:46 GMT  
+		Size: 5.2 MB (5181802 bytes)
+	-	`sha256:3039f18e5b5ba9c38cfdab134a0e456899098a6d7a5bbc9f7bf771bb2e2381ee`  
+		Last Modified: Thu, 07 Jul 2016 20:58:45 GMT  
+		Size: 13.8 MB (13780536 bytes)
+	-	`sha256:2cb421c6e13308eafb16e5cc45a31fca7b07e998d335338493a0cd3d666ed219`  
+		Last Modified: Thu, 07 Jul 2016 20:58:43 GMT  
+		Size: 164.0 B
+	-	`sha256:ebbf606c171f7b09833ab1694d40cdaf67a2ee72f54bae5d05e0a7e588fa7e9e`  
+		Last Modified: Thu, 07 Jul 2016 20:59:48 GMT  
+		Size: 125.0 B
 
 ## `clojure:lein-2.6.1-alpine-onbuild`
 
 ```console
-$ docker pull clojure@sha256:1c1bf977722480c01eaeaf47ecb0c5137959a11d80a5824dfc2c1ac693820cde
+$ docker pull clojure@sha256:016756c3e6e9ad0a8241bf8fb7ab78e3f80c26ac61395df4322588f4eda20193
 ```
 
 -	Platforms:
@@ -680,9 +680,9 @@ $ docker pull clojure@sha256:1c1bf977722480c01eaeaf47ecb0c5137959a11d80a5824dfc2
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.6 MB (70598382 bytes)**  
+-	Total Size: **70.6 MB (70598386 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2de5c7f6260dcf7ddf2f4e083f482bf1c42abaad9586bb08f5f24beed8d132a5`
+-	Image ID: `sha256:c32719b23240cd3c4301f4edebaed81f2696d70fb539a1099fa6baea8cb872c7`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -694,43 +694,43 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Thu, 23 Jun 2016 20:38:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
-# Thu, 23 Jun 2016 20:38:56 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:53 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+# Thu, 07 Jul 2016 19:04:53 GMT
 ENV JAVA_VERSION=8u92
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:54 GMT
 ENV JAVA_ALPINE_VERSION=8.92.14-r1
-# Thu, 23 Jun 2016 20:39:07 GMT
+# Thu, 07 Jul 2016 19:05:06 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 23 Jun 2016 22:18:43 GMT
+# Thu, 07 Jul 2016 20:57:58 GMT
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
-# Thu, 23 Jun 2016 22:18:44 GMT
+# Thu, 07 Jul 2016 20:57:59 GMT
 ENV LEIN_VERSION=2.6.1
-# Thu, 23 Jun 2016 22:18:44 GMT
+# Thu, 07 Jul 2016 20:57:59 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 23 Jun 2016 22:18:45 GMT
+# Thu, 07 Jul 2016 20:58:00 GMT
 WORKDIR /tmp
-# Thu, 23 Jun 2016 22:18:51 GMT
+# Thu, 07 Jul 2016 20:58:05 GMT
 RUN apk add --update tar gnupg bash openssl && rm -rf /var/cache/apk/*
-# Thu, 23 Jun 2016 22:19:11 GMT
+# Thu, 07 Jul 2016 20:58:31 GMT
 RUN mkdir -p $LEIN_INSTALL   && wget -q https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f7643a14fd8a4d5c19eeb416db8ea549d8d2c18a *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mkdir -p /usr/share/java   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
-# Thu, 23 Jun 2016 22:19:11 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
-# Thu, 23 Jun 2016 22:19:12 GMT
+# Thu, 07 Jul 2016 20:58:32 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
+# Thu, 07 Jul 2016 20:58:32 GMT
 ENV LEIN_ROOT=1
-# Thu, 23 Jun 2016 22:19:15 GMT
+# Thu, 07 Jul 2016 20:58:36 GMT
 RUN lein
-# Thu, 23 Jun 2016 22:19:38 GMT
+# Thu, 07 Jul 2016 20:59:37 GMT
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
-# Thu, 23 Jun 2016 22:19:38 GMT
+# Thu, 07 Jul 2016 20:59:38 GMT
 WORKDIR /usr/src/app
-# Thu, 23 Jun 2016 22:19:39 GMT
+# Thu, 07 Jul 2016 20:59:38 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Thu, 23 Jun 2016 22:19:39 GMT
+# Thu, 07 Jul 2016 20:59:39 GMT
 ONBUILD RUN lein deps
-# Thu, 23 Jun 2016 22:19:40 GMT
+# Thu, 07 Jul 2016 20:59:39 GMT
 ONBUILD COPY . /usr/src/app
-# Thu, 23 Jun 2016 22:19:40 GMT
+# Thu, 07 Jul 2016 20:59:40 GMT
 CMD ["lein" "run"]
 ```
 
@@ -741,18 +741,18 @@ CMD ["lein" "run"]
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
 		Size: 230.0 B
-	-	`sha256:edeb4344937fef0e7604839f9af5e0cfaedfa6d88d8ee0000534e9b424b9e4be`  
-		Last Modified: Thu, 23 Jun 2016 20:39:26 GMT  
-		Size: 49.3 MB (49325233 bytes)
-	-	`sha256:b5bbda7629958189b60e8adcf91310fa69733f0403c46a8c34cc5195e6b59e20`  
-		Last Modified: Thu, 23 Jun 2016 22:19:23 GMT  
-		Size: 5.2 MB (5181808 bytes)
-	-	`sha256:fdd38dc50afa545d438d9d4af117dcbe4623c69218f0bdd9c5af0a4e5f56a21e`  
-		Last Modified: Thu, 23 Jun 2016 22:19:23 GMT  
-		Size: 13.8 MB (13780532 bytes)
-	-	`sha256:2f321d75a4f7da0b4c125bf95eb0eb3388ea3554799363502760a4470876757f`  
-		Last Modified: Thu, 23 Jun 2016 22:19:22 GMT  
-		Size: 166.0 B
-	-	`sha256:cc4f139efbbe33854d5f1986276010dc7762167054d66149b91c7f8b490e600f`  
-		Last Modified: Thu, 23 Jun 2016 22:19:46 GMT  
-		Size: 127.0 B
+	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
+		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
+		Size: 49.3 MB (49325243 bytes)
+	-	`sha256:8cdfc7cd5696cc070b3e7042ff38004499901b29cf848bedd7d528f53775e146`  
+		Last Modified: Thu, 07 Jul 2016 20:58:46 GMT  
+		Size: 5.2 MB (5181802 bytes)
+	-	`sha256:3039f18e5b5ba9c38cfdab134a0e456899098a6d7a5bbc9f7bf771bb2e2381ee`  
+		Last Modified: Thu, 07 Jul 2016 20:58:45 GMT  
+		Size: 13.8 MB (13780536 bytes)
+	-	`sha256:2cb421c6e13308eafb16e5cc45a31fca7b07e998d335338493a0cd3d666ed219`  
+		Last Modified: Thu, 07 Jul 2016 20:58:43 GMT  
+		Size: 164.0 B
+	-	`sha256:ebbf606c171f7b09833ab1694d40cdaf67a2ee72f54bae5d05e0a7e588fa7e9e`  
+		Last Modified: Thu, 07 Jul 2016 20:59:48 GMT  
+		Size: 125.0 B

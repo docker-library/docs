@@ -342,7 +342,7 @@ COPY file:2330b2fff176dea477d39a7f788bef1166b565e7599dabd393c5ee5e486144f9 in /u
 ## `jenkins:alpine`
 
 ```console
-$ docker pull jenkins@sha256:b28801694c7aef63df96f19d5c3bf977a622d06425e2f0c4e1a3454e15f457a6
+$ docker pull jenkins@sha256:814eba3c80e68b8a48fa7f700a6853aba4f8e8c66001b6cb5a8bbcc626b4dd55
 ```
 
 -	Platforms:
@@ -352,9 +352,9 @@ $ docker pull jenkins@sha256:b28801694c7aef63df96f19d5c3bf977a622d06425e2f0c4e1a
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.6 MB (137623940 bytes)**  
+-	Total Size: **137.6 MB (137624050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c9e7f31809f8ea8408796209792f7a8dd2bc4abbad8377ccec964c18e81ce45`
+-	Image ID: `sha256:7e4d41d366bc7192eebcf01a5a03998e33a5959259d0c69e15c81e53e7a603ba`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/jenkins.sh"]`
 
 ```dockerfile
@@ -366,74 +366,74 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Thu, 23 Jun 2016 20:38:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
-# Thu, 23 Jun 2016 20:38:56 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:53 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+# Thu, 07 Jul 2016 19:04:53 GMT
 ENV JAVA_VERSION=8u92
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:54 GMT
 ENV JAVA_ALPINE_VERSION=8.92.14-r1
-# Thu, 23 Jun 2016 20:39:07 GMT
+# Thu, 07 Jul 2016 19:05:06 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 23 Jun 2016 22:20:59 GMT
+# Thu, 07 Jul 2016 21:01:11 GMT
 RUN apk add --no-cache git openssh-client curl zip unzip bash ttf-dejavu
-# Thu, 23 Jun 2016 22:21:00 GMT
+# Thu, 07 Jul 2016 21:01:11 GMT
 ENV JENKINS_HOME=/var/jenkins_home
-# Thu, 23 Jun 2016 22:21:00 GMT
+# Thu, 07 Jul 2016 21:01:12 GMT
 ENV JENKINS_SLAVE_AGENT_PORT=50000
-# Thu, 23 Jun 2016 22:21:01 GMT
+# Thu, 07 Jul 2016 21:01:13 GMT
 ARG user=jenkins
-# Thu, 23 Jun 2016 22:21:01 GMT
+# Thu, 07 Jul 2016 21:01:13 GMT
 ARG group=jenkins
-# Thu, 23 Jun 2016 22:21:01 GMT
+# Thu, 07 Jul 2016 21:01:14 GMT
 ARG uid=1000
-# Thu, 23 Jun 2016 22:21:02 GMT
+# Thu, 07 Jul 2016 21:01:14 GMT
 ARG gid=1000
-# Thu, 23 Jun 2016 22:21:04 GMT
+# Thu, 07 Jul 2016 21:01:16 GMT
 # ARGS: gid=1000 group=jenkins uid=1000 user=jenkins
 RUN addgroup -g ${gid} ${group}     && adduser -h "$JENKINS_HOME" -u ${uid} -G ${group} -s /bin/bash -D ${user}
-# Thu, 23 Jun 2016 22:21:04 GMT
+# Thu, 07 Jul 2016 21:01:17 GMT
 VOLUME [/var/jenkins_home]
-# Thu, 23 Jun 2016 22:21:06 GMT
+# Thu, 07 Jul 2016 21:01:18 GMT
 # ARGS: gid=1000 group=jenkins uid=1000 user=jenkins
 RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
-# Thu, 23 Jun 2016 22:21:06 GMT
+# Thu, 07 Jul 2016 21:01:19 GMT
 ENV TINI_SHA=066ad710107dc7ee05d3aa6e4974f01dc98f3888
-# Thu, 23 Jun 2016 22:21:09 GMT
+# Thu, 07 Jul 2016 21:01:22 GMT
 # ARGS: gid=1000 group=jenkins uid=1000 user=jenkins
 RUN curl -fsSL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /bin/tini && chmod +x /bin/tini   && echo "$TINI_SHA  /bin/tini" | sha1sum -c -
-# Thu, 23 Jun 2016 22:21:10 GMT
+# Thu, 07 Jul 2016 21:01:23 GMT
 COPY file:c629bc0b9ecb5b7233000c973f65721df4ce1307a5d5b33ac3871ff61a9172ff in /usr/share/jenkins/ref/init.groovy.d/tcp-slave-agent-port.groovy
-# Thu, 23 Jun 2016 22:21:11 GMT
+# Thu, 07 Jul 2016 21:01:24 GMT
 ARG JENKINS_VERSION
-# Thu, 23 Jun 2016 22:21:11 GMT
+# Thu, 07 Jul 2016 21:01:24 GMT
 ENV JENKINS_VERSION=1.651.3
-# Thu, 23 Jun 2016 22:21:11 GMT
+# Thu, 07 Jul 2016 21:01:25 GMT
 ARG JENKINS_SHA
-# Thu, 23 Jun 2016 22:21:12 GMT
+# Thu, 07 Jul 2016 21:01:25 GMT
 ENV JENKINS_SHA=564e49fbd180d077a22a8c7bb5b8d4d58d2a18ce
-# Thu, 23 Jun 2016 22:21:19 GMT
+# Thu, 07 Jul 2016 21:01:43 GMT
 # ARGS: gid=1000 group=jenkins uid=1000 user=jenkins
 RUN curl -fsSL http://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war -o /usr/share/jenkins/jenkins.war   && echo "$JENKINS_SHA  /usr/share/jenkins/jenkins.war" | sha1sum -c -
-# Thu, 23 Jun 2016 22:21:20 GMT
+# Thu, 07 Jul 2016 21:01:44 GMT
 ENV JENKINS_UC=https://updates.jenkins.io
-# Thu, 23 Jun 2016 22:21:21 GMT
+# Thu, 07 Jul 2016 21:01:45 GMT
 # ARGS: gid=1000 group=jenkins uid=1000 user=jenkins
 RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
-# Thu, 23 Jun 2016 22:21:22 GMT
+# Thu, 07 Jul 2016 21:01:46 GMT
 EXPOSE 8080/tcp
-# Thu, 23 Jun 2016 22:21:22 GMT
+# Thu, 07 Jul 2016 21:01:46 GMT
 EXPOSE 50000/tcp
-# Thu, 23 Jun 2016 22:21:23 GMT
+# Thu, 07 Jul 2016 21:01:47 GMT
 ENV COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log
-# Thu, 23 Jun 2016 22:21:23 GMT
+# Thu, 07 Jul 2016 21:01:48 GMT
 USER [jenkins]
-# Thu, 23 Jun 2016 22:21:24 GMT
+# Thu, 07 Jul 2016 21:01:48 GMT
 COPY file:a4fe256863d9fe1aa9b7bfa2c2ec65812bb42a0d0e0e31108eb76687ec61c66b in /usr/local/bin/jenkins.sh
-# Thu, 23 Jun 2016 22:21:25 GMT
+# Thu, 07 Jul 2016 21:01:49 GMT
 ENTRYPOINT &{["/bin/tini" "--" "/usr/local/bin/jenkins.sh"]}
-# Thu, 23 Jun 2016 22:21:25 GMT
+# Thu, 07 Jul 2016 21:01:50 GMT
 COPY file:91a15772625febc0ac7e53100ec2d5cb100649dcf0ae76c9665e657e1c3e0b6c in /usr/local/bin/plugins.sh
-# Thu, 23 Jun 2016 22:21:26 GMT
+# Thu, 07 Jul 2016 21:01:51 GMT
 COPY file:2330b2fff176dea477d39a7f788bef1166b565e7599dabd393c5ee5e486144f9 in /usr/local/bin/install-plugins.sh
 ```
 
@@ -444,44 +444,44 @@ COPY file:2330b2fff176dea477d39a7f788bef1166b565e7599dabd393c5ee5e486144f9 in /u
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
 		Size: 230.0 B
-	-	`sha256:edeb4344937fef0e7604839f9af5e0cfaedfa6d88d8ee0000534e9b424b9e4be`  
-		Last Modified: Thu, 23 Jun 2016 20:39:26 GMT  
-		Size: 49.3 MB (49325233 bytes)
-	-	`sha256:f9cd619fb41e5eeae2d684122fbc9d7b558c610f0fbc1d74dee9b7c77402d13a`  
-		Last Modified: Thu, 23 Jun 2016 22:21:43 GMT  
-		Size: 21.1 MB (21121090 bytes)
-	-	`sha256:8eb215e62c562c9baea6aac7ff3fb887a52cf3c543cb867fffc6c3eeb84f21f5`  
-		Last Modified: Thu, 23 Jun 2016 22:21:36 GMT  
-		Size: 31.6 KB (31608 bytes)
-	-	`sha256:88190af5b53c29bd261eb335ec5221b7372c79bd7a5018a31f915b89fddad72d`  
-		Last Modified: Thu, 23 Jun 2016 22:21:35 GMT  
-		Size: 176.0 B
-	-	`sha256:71014f614181f3466a6b07c15fa91bd2a6d2e4412a331c008e58b6dd9f77d1a0`  
-		Last Modified: Thu, 23 Jun 2016 22:21:35 GMT  
-		Size: 335.2 KB (335226 bytes)
-	-	`sha256:05ebaef57db9ab9ea2e893a88a2ee0861ca2ae46bee5153e89497bafa11d500c`  
-		Last Modified: Thu, 23 Jun 2016 22:21:35 GMT  
-		Size: 421.0 B
-	-	`sha256:25f6d9de2887e815c6f9b00826a0ece5e437f8bd09cf8c1f432897ba04dc4462`  
-		Last Modified: Thu, 23 Jun 2016 22:21:37 GMT  
+	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
+		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
+		Size: 49.3 MB (49325243 bytes)
+	-	`sha256:312621b60e3da8b5d62acc881bc035b3feebfa8a5b493a7a700967a37c07bb5e`  
+		Last Modified: Thu, 07 Jul 2016 21:02:09 GMT  
+		Size: 21.1 MB (21121171 bytes)
+	-	`sha256:4f6de9da8178d1f79b0c020aea33cdcc1c3542917a236565bf91a0d80da67a31`  
+		Last Modified: Thu, 07 Jul 2016 21:02:00 GMT  
+		Size: 31.6 KB (31625 bytes)
+	-	`sha256:6d6f9701668451096b212257840f499723e5ac8cc25936384fc2cb2ff7160fab`  
+		Last Modified: Thu, 07 Jul 2016 21:02:02 GMT  
+		Size: 178.0 B
+	-	`sha256:99692af6124edf7dcdff7640bb96cb77ab8b3399dfb3a65394332af07108ce05`  
+		Last Modified: Thu, 07 Jul 2016 21:02:01 GMT  
+		Size: 335.2 KB (335223 bytes)
+	-	`sha256:498cff4a55158d7b81927f43d14de8ec241de364cc04f2299b2ebf2dc992d954`  
+		Last Modified: Thu, 07 Jul 2016 21:02:00 GMT  
+		Size: 423.0 B
+	-	`sha256:7fc0253af676e177a1a117dca4d07e2987e56a15e601597cbb42a7a1ae658305`  
+		Last Modified: Thu, 07 Jul 2016 21:02:04 GMT  
 		Size: 64.5 MB (64496697 bytes)
-	-	`sha256:390310ac59c4b51c3e4e355376bcfa90951f4905f229dab61b97646225a1c987`  
-		Last Modified: Thu, 23 Jun 2016 22:21:32 GMT  
-		Size: 424.0 B
-	-	`sha256:e0442ba16280b8d61c5d6c2bb671df998ce3ac6d7cfaf325729750763304a2f8`  
-		Last Modified: Thu, 23 Jun 2016 22:21:32 GMT  
-		Size: 934.0 B
-	-	`sha256:b9ec08ae638a9a9d1c407e8b550414509a75138280aabb166b07bf1909d072a4`  
-		Last Modified: Thu, 23 Jun 2016 22:21:32 GMT  
-		Size: 629.0 B
-	-	`sha256:c762223b242be7456b68968d1c9679ce4e012dd873c0d55a1d06e5fe864b16bb`  
-		Last Modified: Thu, 23 Jun 2016 22:21:33 GMT  
-		Size: 986.0 B
+	-	`sha256:d9ab27f6c64167b781aef4bc7e89a1cf330e8ed2c1df2aa9b1952df036fb38b9`  
+		Last Modified: Thu, 07 Jul 2016 21:01:58 GMT  
+		Size: 428.0 B
+	-	`sha256:51f867919fc6d0af81e946df8a5ada9bad802a3de13ebe1426adf60b1624097c`  
+		Last Modified: Thu, 07 Jul 2016 21:01:58 GMT  
+		Size: 933.0 B
+	-	`sha256:262b6e47f1b9b9409b0f7490c82dab0a7b8a527838ecf0072800ef1cbd75e63d`  
+		Last Modified: Thu, 07 Jul 2016 21:01:58 GMT  
+		Size: 628.0 B
+	-	`sha256:4adbe8e24f7be53384e1947b02fa420b6466d86dcca6962b42acccf1f65c7456`  
+		Last Modified: Thu, 07 Jul 2016 21:01:58 GMT  
+		Size: 985.0 B
 
 ## `jenkins:1.651.3-alpine`
 
 ```console
-$ docker pull jenkins@sha256:b28801694c7aef63df96f19d5c3bf977a622d06425e2f0c4e1a3454e15f457a6
+$ docker pull jenkins@sha256:814eba3c80e68b8a48fa7f700a6853aba4f8e8c66001b6cb5a8bbcc626b4dd55
 ```
 
 -	Platforms:
@@ -491,9 +491,9 @@ $ docker pull jenkins@sha256:b28801694c7aef63df96f19d5c3bf977a622d06425e2f0c4e1a
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.6 MB (137623940 bytes)**  
+-	Total Size: **137.6 MB (137624050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c9e7f31809f8ea8408796209792f7a8dd2bc4abbad8377ccec964c18e81ce45`
+-	Image ID: `sha256:7e4d41d366bc7192eebcf01a5a03998e33a5959259d0c69e15c81e53e7a603ba`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/jenkins.sh"]`
 
 ```dockerfile
@@ -505,74 +505,74 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Thu, 23 Jun 2016 20:38:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
-# Thu, 23 Jun 2016 20:38:56 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:53 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+# Thu, 07 Jul 2016 19:04:53 GMT
 ENV JAVA_VERSION=8u92
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:54 GMT
 ENV JAVA_ALPINE_VERSION=8.92.14-r1
-# Thu, 23 Jun 2016 20:39:07 GMT
+# Thu, 07 Jul 2016 19:05:06 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 23 Jun 2016 22:20:59 GMT
+# Thu, 07 Jul 2016 21:01:11 GMT
 RUN apk add --no-cache git openssh-client curl zip unzip bash ttf-dejavu
-# Thu, 23 Jun 2016 22:21:00 GMT
+# Thu, 07 Jul 2016 21:01:11 GMT
 ENV JENKINS_HOME=/var/jenkins_home
-# Thu, 23 Jun 2016 22:21:00 GMT
+# Thu, 07 Jul 2016 21:01:12 GMT
 ENV JENKINS_SLAVE_AGENT_PORT=50000
-# Thu, 23 Jun 2016 22:21:01 GMT
+# Thu, 07 Jul 2016 21:01:13 GMT
 ARG user=jenkins
-# Thu, 23 Jun 2016 22:21:01 GMT
+# Thu, 07 Jul 2016 21:01:13 GMT
 ARG group=jenkins
-# Thu, 23 Jun 2016 22:21:01 GMT
+# Thu, 07 Jul 2016 21:01:14 GMT
 ARG uid=1000
-# Thu, 23 Jun 2016 22:21:02 GMT
+# Thu, 07 Jul 2016 21:01:14 GMT
 ARG gid=1000
-# Thu, 23 Jun 2016 22:21:04 GMT
+# Thu, 07 Jul 2016 21:01:16 GMT
 # ARGS: gid=1000 group=jenkins uid=1000 user=jenkins
 RUN addgroup -g ${gid} ${group}     && adduser -h "$JENKINS_HOME" -u ${uid} -G ${group} -s /bin/bash -D ${user}
-# Thu, 23 Jun 2016 22:21:04 GMT
+# Thu, 07 Jul 2016 21:01:17 GMT
 VOLUME [/var/jenkins_home]
-# Thu, 23 Jun 2016 22:21:06 GMT
+# Thu, 07 Jul 2016 21:01:18 GMT
 # ARGS: gid=1000 group=jenkins uid=1000 user=jenkins
 RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
-# Thu, 23 Jun 2016 22:21:06 GMT
+# Thu, 07 Jul 2016 21:01:19 GMT
 ENV TINI_SHA=066ad710107dc7ee05d3aa6e4974f01dc98f3888
-# Thu, 23 Jun 2016 22:21:09 GMT
+# Thu, 07 Jul 2016 21:01:22 GMT
 # ARGS: gid=1000 group=jenkins uid=1000 user=jenkins
 RUN curl -fsSL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /bin/tini && chmod +x /bin/tini   && echo "$TINI_SHA  /bin/tini" | sha1sum -c -
-# Thu, 23 Jun 2016 22:21:10 GMT
+# Thu, 07 Jul 2016 21:01:23 GMT
 COPY file:c629bc0b9ecb5b7233000c973f65721df4ce1307a5d5b33ac3871ff61a9172ff in /usr/share/jenkins/ref/init.groovy.d/tcp-slave-agent-port.groovy
-# Thu, 23 Jun 2016 22:21:11 GMT
+# Thu, 07 Jul 2016 21:01:24 GMT
 ARG JENKINS_VERSION
-# Thu, 23 Jun 2016 22:21:11 GMT
+# Thu, 07 Jul 2016 21:01:24 GMT
 ENV JENKINS_VERSION=1.651.3
-# Thu, 23 Jun 2016 22:21:11 GMT
+# Thu, 07 Jul 2016 21:01:25 GMT
 ARG JENKINS_SHA
-# Thu, 23 Jun 2016 22:21:12 GMT
+# Thu, 07 Jul 2016 21:01:25 GMT
 ENV JENKINS_SHA=564e49fbd180d077a22a8c7bb5b8d4d58d2a18ce
-# Thu, 23 Jun 2016 22:21:19 GMT
+# Thu, 07 Jul 2016 21:01:43 GMT
 # ARGS: gid=1000 group=jenkins uid=1000 user=jenkins
 RUN curl -fsSL http://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war -o /usr/share/jenkins/jenkins.war   && echo "$JENKINS_SHA  /usr/share/jenkins/jenkins.war" | sha1sum -c -
-# Thu, 23 Jun 2016 22:21:20 GMT
+# Thu, 07 Jul 2016 21:01:44 GMT
 ENV JENKINS_UC=https://updates.jenkins.io
-# Thu, 23 Jun 2016 22:21:21 GMT
+# Thu, 07 Jul 2016 21:01:45 GMT
 # ARGS: gid=1000 group=jenkins uid=1000 user=jenkins
 RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
-# Thu, 23 Jun 2016 22:21:22 GMT
+# Thu, 07 Jul 2016 21:01:46 GMT
 EXPOSE 8080/tcp
-# Thu, 23 Jun 2016 22:21:22 GMT
+# Thu, 07 Jul 2016 21:01:46 GMT
 EXPOSE 50000/tcp
-# Thu, 23 Jun 2016 22:21:23 GMT
+# Thu, 07 Jul 2016 21:01:47 GMT
 ENV COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log
-# Thu, 23 Jun 2016 22:21:23 GMT
+# Thu, 07 Jul 2016 21:01:48 GMT
 USER [jenkins]
-# Thu, 23 Jun 2016 22:21:24 GMT
+# Thu, 07 Jul 2016 21:01:48 GMT
 COPY file:a4fe256863d9fe1aa9b7bfa2c2ec65812bb42a0d0e0e31108eb76687ec61c66b in /usr/local/bin/jenkins.sh
-# Thu, 23 Jun 2016 22:21:25 GMT
+# Thu, 07 Jul 2016 21:01:49 GMT
 ENTRYPOINT &{["/bin/tini" "--" "/usr/local/bin/jenkins.sh"]}
-# Thu, 23 Jun 2016 22:21:25 GMT
+# Thu, 07 Jul 2016 21:01:50 GMT
 COPY file:91a15772625febc0ac7e53100ec2d5cb100649dcf0ae76c9665e657e1c3e0b6c in /usr/local/bin/plugins.sh
-# Thu, 23 Jun 2016 22:21:26 GMT
+# Thu, 07 Jul 2016 21:01:51 GMT
 COPY file:2330b2fff176dea477d39a7f788bef1166b565e7599dabd393c5ee5e486144f9 in /usr/local/bin/install-plugins.sh
 ```
 
@@ -583,36 +583,36 @@ COPY file:2330b2fff176dea477d39a7f788bef1166b565e7599dabd393c5ee5e486144f9 in /u
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
 		Size: 230.0 B
-	-	`sha256:edeb4344937fef0e7604839f9af5e0cfaedfa6d88d8ee0000534e9b424b9e4be`  
-		Last Modified: Thu, 23 Jun 2016 20:39:26 GMT  
-		Size: 49.3 MB (49325233 bytes)
-	-	`sha256:f9cd619fb41e5eeae2d684122fbc9d7b558c610f0fbc1d74dee9b7c77402d13a`  
-		Last Modified: Thu, 23 Jun 2016 22:21:43 GMT  
-		Size: 21.1 MB (21121090 bytes)
-	-	`sha256:8eb215e62c562c9baea6aac7ff3fb887a52cf3c543cb867fffc6c3eeb84f21f5`  
-		Last Modified: Thu, 23 Jun 2016 22:21:36 GMT  
-		Size: 31.6 KB (31608 bytes)
-	-	`sha256:88190af5b53c29bd261eb335ec5221b7372c79bd7a5018a31f915b89fddad72d`  
-		Last Modified: Thu, 23 Jun 2016 22:21:35 GMT  
-		Size: 176.0 B
-	-	`sha256:71014f614181f3466a6b07c15fa91bd2a6d2e4412a331c008e58b6dd9f77d1a0`  
-		Last Modified: Thu, 23 Jun 2016 22:21:35 GMT  
-		Size: 335.2 KB (335226 bytes)
-	-	`sha256:05ebaef57db9ab9ea2e893a88a2ee0861ca2ae46bee5153e89497bafa11d500c`  
-		Last Modified: Thu, 23 Jun 2016 22:21:35 GMT  
-		Size: 421.0 B
-	-	`sha256:25f6d9de2887e815c6f9b00826a0ece5e437f8bd09cf8c1f432897ba04dc4462`  
-		Last Modified: Thu, 23 Jun 2016 22:21:37 GMT  
+	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
+		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
+		Size: 49.3 MB (49325243 bytes)
+	-	`sha256:312621b60e3da8b5d62acc881bc035b3feebfa8a5b493a7a700967a37c07bb5e`  
+		Last Modified: Thu, 07 Jul 2016 21:02:09 GMT  
+		Size: 21.1 MB (21121171 bytes)
+	-	`sha256:4f6de9da8178d1f79b0c020aea33cdcc1c3542917a236565bf91a0d80da67a31`  
+		Last Modified: Thu, 07 Jul 2016 21:02:00 GMT  
+		Size: 31.6 KB (31625 bytes)
+	-	`sha256:6d6f9701668451096b212257840f499723e5ac8cc25936384fc2cb2ff7160fab`  
+		Last Modified: Thu, 07 Jul 2016 21:02:02 GMT  
+		Size: 178.0 B
+	-	`sha256:99692af6124edf7dcdff7640bb96cb77ab8b3399dfb3a65394332af07108ce05`  
+		Last Modified: Thu, 07 Jul 2016 21:02:01 GMT  
+		Size: 335.2 KB (335223 bytes)
+	-	`sha256:498cff4a55158d7b81927f43d14de8ec241de364cc04f2299b2ebf2dc992d954`  
+		Last Modified: Thu, 07 Jul 2016 21:02:00 GMT  
+		Size: 423.0 B
+	-	`sha256:7fc0253af676e177a1a117dca4d07e2987e56a15e601597cbb42a7a1ae658305`  
+		Last Modified: Thu, 07 Jul 2016 21:02:04 GMT  
 		Size: 64.5 MB (64496697 bytes)
-	-	`sha256:390310ac59c4b51c3e4e355376bcfa90951f4905f229dab61b97646225a1c987`  
-		Last Modified: Thu, 23 Jun 2016 22:21:32 GMT  
-		Size: 424.0 B
-	-	`sha256:e0442ba16280b8d61c5d6c2bb671df998ce3ac6d7cfaf325729750763304a2f8`  
-		Last Modified: Thu, 23 Jun 2016 22:21:32 GMT  
-		Size: 934.0 B
-	-	`sha256:b9ec08ae638a9a9d1c407e8b550414509a75138280aabb166b07bf1909d072a4`  
-		Last Modified: Thu, 23 Jun 2016 22:21:32 GMT  
-		Size: 629.0 B
-	-	`sha256:c762223b242be7456b68968d1c9679ce4e012dd873c0d55a1d06e5fe864b16bb`  
-		Last Modified: Thu, 23 Jun 2016 22:21:33 GMT  
-		Size: 986.0 B
+	-	`sha256:d9ab27f6c64167b781aef4bc7e89a1cf330e8ed2c1df2aa9b1952df036fb38b9`  
+		Last Modified: Thu, 07 Jul 2016 21:01:58 GMT  
+		Size: 428.0 B
+	-	`sha256:51f867919fc6d0af81e946df8a5ada9bad802a3de13ebe1426adf60b1624097c`  
+		Last Modified: Thu, 07 Jul 2016 21:01:58 GMT  
+		Size: 933.0 B
+	-	`sha256:262b6e47f1b9b9409b0f7490c82dab0a7b8a527838ecf0072800ef1cbd75e63d`  
+		Last Modified: Thu, 07 Jul 2016 21:01:58 GMT  
+		Size: 628.0 B
+	-	`sha256:4adbe8e24f7be53384e1947b02fa420b6466d86dcca6962b42acccf1f65c7456`  
+		Last Modified: Thu, 07 Jul 2016 21:01:58 GMT  
+		Size: 985.0 B

@@ -1771,12 +1771,107 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 
 ## `drupal:8.1.4-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull drupal@sha256:eaae79d5478aa6ecdeda77f5dec3a9e3e2a01d15f7b448d6eddafbd1574c4bda
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `drupal:8.1.4-fpm` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **194.4 MB (194393870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a28b71fac634e215385a4857067afb0288765eef101191a22edede15c4c3a360`
+-	Default Command: `["php-fpm"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:28:42 GMT
+ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
+# Thu, 09 Jun 2016 21:28:43 GMT
+CMD ["/bin/bash"]
+# Fri, 10 Jun 2016 02:34:30 GMT
+ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
+# Fri, 10 Jun 2016 02:35:57 GMT
+RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
+# Fri, 10 Jun 2016 02:35:58 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Fri, 10 Jun 2016 02:35:59 GMT
+RUN mkdir -p $PHP_INI_DIR/conf.d
+# Fri, 10 Jun 2016 02:49:04 GMT
+ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
+# Fri, 10 Jun 2016 02:49:05 GMT
+ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
+# Thu, 23 Jun 2016 23:45:57 GMT
+ENV PHP_VERSION=7.0.8
+# Thu, 23 Jun 2016 23:45:57 GMT
+ENV PHP_FILENAME=php-7.0.8.tar.xz
+# Thu, 23 Jun 2016 23:45:57 GMT
+ENV PHP_SHA256=0a2142c458b0846f556b16da1c927d74c101aa951bb840549abe5c58584fb394
+# Thu, 23 Jun 2016 23:52:55 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
+# Thu, 23 Jun 2016 23:52:56 GMT
+COPY multi:a8819301efc7ce6569bcf183723931153c5b968224bce96498ddbabe72ce7eaa in /usr/local/bin/
+# Thu, 23 Jun 2016 23:52:57 GMT
+WORKDIR /var/www/html
+# Thu, 23 Jun 2016 23:52:58 GMT
+RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
+# Thu, 23 Jun 2016 23:52:58 GMT
+EXPOSE 9000/tcp
+# Thu, 23 Jun 2016 23:52:58 GMT
+CMD ["php-fpm"]
+# Fri, 24 Jun 2016 15:51:16 GMT
+RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
+# Fri, 24 Jun 2016 15:51:18 GMT
+RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
+# Fri, 24 Jun 2016 15:51:18 GMT
+WORKDIR /var/www/html
+# Thu, 07 Jul 2016 20:02:09 GMT
+ENV DRUPAL_VERSION=8.1.4
+# Thu, 07 Jul 2016 20:02:09 GMT
+ENV DRUPAL_MD5=8c07b855ffd028124eb8848526abf4d9
+# Thu, 07 Jul 2016 20:02:18 GMT
+RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
+```
+
+-	Layers:
+	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
+		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
+		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
+		Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
+		Size: 77.3 MB (77343405 bytes)
+	-	`sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
+		Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+		Size: 180.0 B
+	-	`sha256:e69f79501f0c8fe0a4d5d93c830d5c0b43136034205dd1ebd40e3afb55b46154`  
+		Last Modified: Fri, 24 Jun 2016 00:58:02 GMT  
+		Size: 40.9 MB (40880798 bytes)
+	-	`sha256:9ccd071fc0eb4a5ef9c501d58fdf747d6d778582cb67ecd9c3fae1f6e2a94339`  
+		Last Modified: Fri, 24 Jun 2016 00:57:47 GMT  
+		Size: 1.8 KB (1755 bytes)
+	-	`sha256:86f9de0440b7344a03138851f909f8c8c5fb657f636db3fabe022ef46ac55027`  
+		Last Modified: Fri, 24 Jun 2016 00:57:47 GMT  
+		Size: 128.0 B
+	-	`sha256:94950ea9014f4188b2ab05d9ea0770140bd1f8e0e828c8c4fc4300731df680a7`  
+		Last Modified: Fri, 24 Jun 2016 00:57:47 GMT  
+		Size: 7.7 KB (7690 bytes)
+	-	`sha256:142a908a14718d9e222bdde163c3c0c420c3c43c7d1ae51002780bd1d6ef9299`  
+		Last Modified: Fri, 24 Jun 2016 15:51:40 GMT  
+		Size: 12.2 MB (12246085 bytes)
+	-	`sha256:076d9e70b081f640631ff47c3e3f9859a076f5132f607f90d5937c592c8169fd`  
+		Last Modified: Fri, 24 Jun 2016 15:51:35 GMT  
+		Size: 334.0 B
+	-	`sha256:24d9264309054039341c834dd8a85e4302c3e2cb2ed9e88c48db1c3ca8d0f68f`  
+		Last Modified: Thu, 07 Jul 2016 20:04:52 GMT  
+		Size: 12.6 MB (12560960 bytes)
 
 ## `drupal:8.1-fpm`
 
 ```console
-$ docker pull drupal@sha256:fa11c4597724e794fea8cde82c66cd3c634b6e0349f66dc30e771c04d16eb3ce
+$ docker pull drupal@sha256:eaae79d5478aa6ecdeda77f5dec3a9e3e2a01d15f7b448d6eddafbd1574c4bda
 ```
 
 -	Platforms:
@@ -1786,9 +1881,9 @@ $ docker pull drupal@sha256:fa11c4597724e794fea8cde82c66cd3c634b6e0349f66dc30e77
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.4 MB (194355434 bytes)**  
+-	Total Size: **194.4 MB (194393870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0315f7f084d63335e3fd3ece074435fe883150f26c689dc6cf03751c97c80074`
+-	Image ID: `sha256:a28b71fac634e215385a4857067afb0288765eef101191a22edede15c4c3a360`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
@@ -1832,11 +1927,11 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& 
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Fri, 24 Jun 2016 15:51:18 GMT
 WORKDIR /var/www/html
-# Fri, 24 Jun 2016 15:51:19 GMT
-ENV DRUPAL_VERSION=8.1.3
-# Fri, 24 Jun 2016 15:51:19 GMT
-ENV DRUPAL_MD5=f2eef421c2a0610b32519f8f2e094b7c
-# Fri, 24 Jun 2016 15:51:28 GMT
+# Thu, 07 Jul 2016 20:02:09 GMT
+ENV DRUPAL_VERSION=8.1.4
+# Thu, 07 Jul 2016 20:02:09 GMT
+ENV DRUPAL_MD5=8c07b855ffd028124eb8848526abf4d9
+# Thu, 07 Jul 2016 20:02:18 GMT
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -1868,14 +1963,14 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	-	`sha256:076d9e70b081f640631ff47c3e3f9859a076f5132f607f90d5937c592c8169fd`  
 		Last Modified: Fri, 24 Jun 2016 15:51:35 GMT  
 		Size: 334.0 B
-	-	`sha256:e2732497155c77184f56255847133d33daab31a66cf1fdd9ce50e747d30d36f1`  
-		Last Modified: Fri, 24 Jun 2016 15:51:42 GMT  
-		Size: 12.5 MB (12522524 bytes)
+	-	`sha256:24d9264309054039341c834dd8a85e4302c3e2cb2ed9e88c48db1c3ca8d0f68f`  
+		Last Modified: Thu, 07 Jul 2016 20:04:52 GMT  
+		Size: 12.6 MB (12560960 bytes)
 
 ## `drupal:8-fpm`
 
 ```console
-$ docker pull drupal@sha256:fa11c4597724e794fea8cde82c66cd3c634b6e0349f66dc30e771c04d16eb3ce
+$ docker pull drupal@sha256:eaae79d5478aa6ecdeda77f5dec3a9e3e2a01d15f7b448d6eddafbd1574c4bda
 ```
 
 -	Platforms:
@@ -1885,9 +1980,9 @@ $ docker pull drupal@sha256:fa11c4597724e794fea8cde82c66cd3c634b6e0349f66dc30e77
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.4 MB (194355434 bytes)**  
+-	Total Size: **194.4 MB (194393870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0315f7f084d63335e3fd3ece074435fe883150f26c689dc6cf03751c97c80074`
+-	Image ID: `sha256:a28b71fac634e215385a4857067afb0288765eef101191a22edede15c4c3a360`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
@@ -1931,11 +2026,11 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& 
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Fri, 24 Jun 2016 15:51:18 GMT
 WORKDIR /var/www/html
-# Fri, 24 Jun 2016 15:51:19 GMT
-ENV DRUPAL_VERSION=8.1.3
-# Fri, 24 Jun 2016 15:51:19 GMT
-ENV DRUPAL_MD5=f2eef421c2a0610b32519f8f2e094b7c
-# Fri, 24 Jun 2016 15:51:28 GMT
+# Thu, 07 Jul 2016 20:02:09 GMT
+ENV DRUPAL_VERSION=8.1.4
+# Thu, 07 Jul 2016 20:02:09 GMT
+ENV DRUPAL_MD5=8c07b855ffd028124eb8848526abf4d9
+# Thu, 07 Jul 2016 20:02:18 GMT
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -1967,14 +2062,14 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	-	`sha256:076d9e70b081f640631ff47c3e3f9859a076f5132f607f90d5937c592c8169fd`  
 		Last Modified: Fri, 24 Jun 2016 15:51:35 GMT  
 		Size: 334.0 B
-	-	`sha256:e2732497155c77184f56255847133d33daab31a66cf1fdd9ce50e747d30d36f1`  
-		Last Modified: Fri, 24 Jun 2016 15:51:42 GMT  
-		Size: 12.5 MB (12522524 bytes)
+	-	`sha256:24d9264309054039341c834dd8a85e4302c3e2cb2ed9e88c48db1c3ca8d0f68f`  
+		Last Modified: Thu, 07 Jul 2016 20:04:52 GMT  
+		Size: 12.6 MB (12560960 bytes)
 
 ## `drupal:fpm`
 
 ```console
-$ docker pull drupal@sha256:fa11c4597724e794fea8cde82c66cd3c634b6e0349f66dc30e771c04d16eb3ce
+$ docker pull drupal@sha256:eaae79d5478aa6ecdeda77f5dec3a9e3e2a01d15f7b448d6eddafbd1574c4bda
 ```
 
 -	Platforms:
@@ -1984,9 +2079,9 @@ $ docker pull drupal@sha256:fa11c4597724e794fea8cde82c66cd3c634b6e0349f66dc30e77
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.4 MB (194355434 bytes)**  
+-	Total Size: **194.4 MB (194393870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0315f7f084d63335e3fd3ece074435fe883150f26c689dc6cf03751c97c80074`
+-	Image ID: `sha256:a28b71fac634e215385a4857067afb0288765eef101191a22edede15c4c3a360`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
@@ -2030,11 +2125,11 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& 
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Fri, 24 Jun 2016 15:51:18 GMT
 WORKDIR /var/www/html
-# Fri, 24 Jun 2016 15:51:19 GMT
-ENV DRUPAL_VERSION=8.1.3
-# Fri, 24 Jun 2016 15:51:19 GMT
-ENV DRUPAL_MD5=f2eef421c2a0610b32519f8f2e094b7c
-# Fri, 24 Jun 2016 15:51:28 GMT
+# Thu, 07 Jul 2016 20:02:09 GMT
+ENV DRUPAL_VERSION=8.1.4
+# Thu, 07 Jul 2016 20:02:09 GMT
+ENV DRUPAL_MD5=8c07b855ffd028124eb8848526abf4d9
+# Thu, 07 Jul 2016 20:02:18 GMT
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -2066,6 +2161,6 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	-	`sha256:076d9e70b081f640631ff47c3e3f9859a076f5132f607f90d5937c592c8169fd`  
 		Last Modified: Fri, 24 Jun 2016 15:51:35 GMT  
 		Size: 334.0 B
-	-	`sha256:e2732497155c77184f56255847133d33daab31a66cf1fdd9ce50e747d30d36f1`  
-		Last Modified: Fri, 24 Jun 2016 15:51:42 GMT  
-		Size: 12.5 MB (12522524 bytes)
+	-	`sha256:24d9264309054039341c834dd8a85e4302c3e2cb2ed9e88c48db1c3ca8d0f68f`  
+		Last Modified: Thu, 07 Jul 2016 20:04:52 GMT  
+		Size: 12.6 MB (12560960 bytes)
