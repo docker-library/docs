@@ -5,7 +5,7 @@
 -	[`registry:2`](#registry2)
 -	[`registry:2.4`](#registry24)
 -	[`registry:2.4.1`](#registry241)
--	[`registry:2.5.0-rc.1`](#registry250-rc1)
+-	[`registry:2.5.0-rc.2`](#registry250-rc2)
 
 ## `registry:2`
 
@@ -169,22 +169,22 @@ CMD ["serve" "/etc/docker/registry/config.yml"]
 		Last Modified: Tue, 14 Jun 2016 21:49:38 GMT  
 		Size: 376.0 B
 
-## `registry:2.5.0-rc.1`
+## `registry:2.5.0-rc.2`
 
 ```console
-$ docker pull registry@sha256:7cc1a9c8568e09a7b7f7eee525b782200b3e2c909b16ee60259e2526c094523f
+$ docker pull registry@sha256:48652aa50499a144e627b98f5e4bc7a73f147ab31db6312198b69aa1e8218a72
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `registry:2.5.0-rc.1` - linux; amd64
+### `registry:2.5.0-rc.2` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.6 MB (9647537 bytes)**  
+-	Total Size: **9.6 MB (9649019 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8653cf68d1cf6a9b726647d4f1efc0601e78dc0f1a5e9951d8d790f08d0c5efe`
+-	Image ID: `sha256:fac1f78f1ce5e9d1b4005f3090d9903b44dfa59ed5cc06884735cf564f1a3df8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
@@ -193,19 +193,19 @@ $ docker pull registry@sha256:7cc1a9c8568e09a7b7f7eee525b782200b3e2c909b16ee6025
 ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
 # Thu, 23 Jun 2016 22:02:26 GMT
 RUN set -ex     && apk add --no-cache ca-certificates apache2-utils
-# Thu, 23 Jun 2016 22:02:27 GMT
-COPY file:6c5ed69f928def4885b481543870f20036a225029d06868d48d06adddc34a6db in /bin/registry
-# Thu, 23 Jun 2016 22:02:30 GMT
+# Wed, 06 Jul 2016 23:04:58 GMT
+COPY file:38351b7ec542f13b4a45ed30dd226819682f34ca94d6e166551f8362a028420b in /bin/registry
+# Wed, 06 Jul 2016 23:04:59 GMT
 COPY file:ebd8cc424c954b92e88c610df5e73cf9166a7695c712510a7cc9fb2e9b8be143 in /etc/docker/registry/config.yml
-# Thu, 23 Jun 2016 22:02:31 GMT
+# Wed, 06 Jul 2016 23:04:59 GMT
 VOLUME [/var/lib/registry]
-# Thu, 23 Jun 2016 22:02:31 GMT
+# Wed, 06 Jul 2016 23:05:00 GMT
 EXPOSE 5000/tcp
-# Thu, 23 Jun 2016 22:02:32 GMT
+# Wed, 06 Jul 2016 23:05:00 GMT
 COPY file:7b57f7ab1a8cf85c00768560fffc926543a60c9c9f7a2b172767dcc9a3203394 in /entrypoint.sh
-# Thu, 23 Jun 2016 22:02:33 GMT
+# Wed, 06 Jul 2016 23:05:01 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 23 Jun 2016 22:02:33 GMT
+# Wed, 06 Jul 2016 23:05:01 GMT
 CMD ["/etc/docker/registry/config.yml"]
 ```
 
@@ -216,12 +216,12 @@ CMD ["/etc/docker/registry/config.yml"]
 	-	`sha256:2ee5ed28ffa762104505295c3c256c52a87fe8af0114b9e0198e9036495e10b8`  
 		Last Modified: Thu, 23 Jun 2016 22:02:42 GMT  
 		Size: 614.1 KB (614066 bytes)
-	-	`sha256:36b257bf8a686fbdd8aa93788030b7d3d31b3ce99afeb7a5f3ad1e1d4705efa3`  
-		Last Modified: Thu, 23 Jun 2016 22:02:43 GMT  
-		Size: 6.7 MB (6722596 bytes)
-	-	`sha256:6eaad6646b3e21e4b45302edd997fd85e1fc42fe3ea77896ca2d0ab8f72112c6`  
-		Last Modified: Thu, 23 Jun 2016 22:02:40 GMT  
-		Size: 374.0 B
-	-	`sha256:02cd9930426518b05eb16f50929ab6214e810d925549bddd7949ba21d7399b80`  
-		Last Modified: Thu, 23 Jun 2016 22:02:40 GMT  
-		Size: 215.0 B
+	-	`sha256:7eb475e569a46351d5c891999af6b2abcb0bd87d7b45c89e896a7d9f3d3c2210`  
+		Last Modified: Wed, 06 Jul 2016 23:05:38 GMT  
+		Size: 6.7 MB (6724078 bytes)
+	-	`sha256:e128cab7d048335b1fe3fb8156d544bf9513e7ed7755632e2663a7a13b336c6c`  
+		Last Modified: Wed, 06 Jul 2016 23:05:35 GMT  
+		Size: 375.0 B
+	-	`sha256:b20115f37f0fed2e08356804507d55d2c7895405ae0dc1c8199b774a7ed8c40b`  
+		Last Modified: Wed, 06 Jul 2016 23:05:35 GMT  
+		Size: 214.0 B
