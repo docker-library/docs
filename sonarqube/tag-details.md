@@ -301,7 +301,7 @@ ENTRYPOINT &{["./bin/run.sh"]}
 ## `sonarqube:5.6-alpine`
 
 ```console
-$ docker pull sonarqube@sha256:8b1e8c0ff5cae4bd2f356939ab9135bdf74fb988546fe1e3b4bc7e059e096706
+$ docker pull sonarqube@sha256:1fae6a3b5c8a09f7ee4d5c6c1efcec2e3301c7c6a16f7332878aa2dc22e3d3c2
 ```
 
 -	Platforms:
@@ -311,9 +311,9 @@ $ docker pull sonarqube@sha256:8b1e8c0ff5cae4bd2f356939ab9135bdf74fb988546fe1e3b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.6 MB (172627208 bytes)**  
+-	Total Size: **172.6 MB (172627223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6aa8e3b9182c5e6238ccec6654dca759452e1897db299c30010e8e12f892527c`
+-	Image ID: `sha256:d3666ea9bde0ec7e5ee967a63f3dd2048e83bfe6947e0a51212cec36b9c679d9`
 -	Entrypoint: `[".\/bin\/run.sh"]`
 
 ```dockerfile
@@ -325,29 +325,29 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Thu, 23 Jun 2016 20:38:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
-# Thu, 23 Jun 2016 20:38:56 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:53 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+# Thu, 07 Jul 2016 19:04:53 GMT
 ENV JAVA_VERSION=8u92
-# Thu, 23 Jun 2016 20:38:57 GMT
+# Thu, 07 Jul 2016 19:04:54 GMT
 ENV JAVA_ALPINE_VERSION=8.92.14-r1
-# Thu, 23 Jun 2016 20:39:07 GMT
+# Thu, 07 Jul 2016 19:05:06 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 23 Jun 2016 22:20:00 GMT
+# Thu, 07 Jul 2016 22:01:59 GMT
 MAINTAINER David Gageot <david.gageot@sonarsource.com>
-# Thu, 23 Jun 2016 22:20:00 GMT
+# Thu, 07 Jul 2016 22:02:00 GMT
 ENV SONAR_VERSION=5.6 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
-# Thu, 23 Jun 2016 22:20:01 GMT
+# Thu, 07 Jul 2016 22:02:00 GMT
 EXPOSE 9000/tcp
-# Thu, 23 Jun 2016 22:20:19 GMT
+# Thu, 07 Jul 2016 22:02:18 GMT
 RUN set -x     && apk add --no-cache gnupg unzip curl     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE     && mkdir /opt     && cd /opt     && curl -o sonarqube.zip -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip     && curl -o sonarqube.zip.asc -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip     && unzip sonarqube.zip     && mv sonarqube-$SONAR_VERSION sonarqube     && rm sonarqube.zip*     && rm -rf $SONARQUBE_HOME/bin/*
-# Thu, 23 Jun 2016 22:20:20 GMT
+# Thu, 07 Jul 2016 22:02:19 GMT
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
-# Thu, 23 Jun 2016 22:20:20 GMT
+# Thu, 07 Jul 2016 22:02:20 GMT
 WORKDIR /opt/sonarqube
-# Thu, 23 Jun 2016 22:20:21 GMT
+# Thu, 07 Jul 2016 22:02:21 GMT
 COPY file:83e169627dc34c4308fd222d47a1ae7c388a283efdc49980a885a8788308a052 in /opt/sonarqube/bin/
-# Thu, 23 Jun 2016 22:20:22 GMT
+# Thu, 07 Jul 2016 22:02:22 GMT
 ENTRYPOINT &{["./bin/run.sh"]}
 ```
 
@@ -358,12 +358,12 @@ ENTRYPOINT &{["./bin/run.sh"]}
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
 		Size: 230.0 B
-	-	`sha256:edeb4344937fef0e7604839f9af5e0cfaedfa6d88d8ee0000534e9b424b9e4be`  
-		Last Modified: Thu, 23 Jun 2016 20:39:26 GMT  
-		Size: 49.3 MB (49325233 bytes)
-	-	`sha256:8a2b054847630a492fb8bf648983443dd60467364dfb20fd4436b8b2ec7bc766`  
-		Last Modified: Thu, 23 Jun 2016 22:20:39 GMT  
-		Size: 121.0 MB (120991027 bytes)
-	-	`sha256:f2a7ebe4362e6d3e91b9dd40cde463923dbe1a799b0adb0b7931f249e7162583`  
-		Last Modified: Thu, 23 Jun 2016 22:20:29 GMT  
-		Size: 432.0 B
+	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
+		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
+		Size: 49.3 MB (49325243 bytes)
+	-	`sha256:2fe824a2569f7a78bae2ec079578b5b1cd39620ea3c156a416e1bb11f2494df6`  
+		Last Modified: Thu, 07 Jul 2016 22:02:41 GMT  
+		Size: 121.0 MB (120991035 bytes)
+	-	`sha256:c6e430b04505f0684f95fc2bd2751b3ce3377eae1343a7ef93af3742449c7cc4`  
+		Last Modified: Thu, 07 Jul 2016 22:02:29 GMT  
+		Size: 429.0 B

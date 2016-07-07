@@ -3,7 +3,7 @@
 # Tags of `bonita`
 
 -	[`bonita:7.0.3`](#bonita703)
--	[`bonita:7.2.3`](#bonita723)
+-	[`bonita:7.2.4`](#bonita724)
 -	[`bonita:latest`](#bonitalatest)
 
 ## `bonita:7.0.3`
@@ -116,22 +116,22 @@ CMD ["/opt/files/startup.sh"]
 		Last Modified: Fri, 24 Jun 2016 18:15:31 GMT  
 		Size: 2.2 KB (2198 bytes)
 
-## `bonita:7.2.3`
+## `bonita:7.2.4`
 
 ```console
-$ docker pull bonita@sha256:fc0699928a3120ccec0621195cb48f297762fc5bbd3e8a55463ff3167bb4d911
+$ docker pull bonita@sha256:5d8b1af4d2dd9b8cd8abf0d96f9f211a4646f02da91506993027c4266c3275b0
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `bonita:7.2.3` - linux; amd64
+### `bonita:7.2.4` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.0 MB (206966732 bytes)**  
+-	Total Size: **207.0 MB (206969952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b9ccf34b320d49f2d64c2d0b05c49315072bc593d9827d1073c788d92f39b12`
+-	Image ID: `sha256:f70f6f3a8d61a152c42688b976e760fa1405cf7c4522db90b1b6411c80e2ae24`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
@@ -157,33 +157,33 @@ RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 # Fri, 24 Jun 2016 18:15:01 GMT
 RUN wget -q "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --print-architecture)" -O /usr/local/bin/gosu   && wget -q "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --print-architecture).asc" -O /usr/local/bin/gosu.asc   && gpg --verify /usr/local/bin/gosu.asc   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Fri, 24 Jun 2016 18:15:54 GMT
-ENV BONITA_VERSION=7.2.3
-# Fri, 24 Jun 2016 18:15:54 GMT
+# Thu, 07 Jul 2016 21:18:48 GMT
+ENV BONITA_VERSION=7.2.4
+# Thu, 07 Jul 2016 21:18:49 GMT
 ENV TOMCAT_VERSION=7.0.67
-# Fri, 24 Jun 2016 18:15:55 GMT
-ENV BONITA_SHA256=5547acb5d45eaaffec14600afea72e99668278c8fc9c050e45ba6dedb389ff2c
-# Fri, 24 Jun 2016 18:15:55 GMT
+# Thu, 07 Jul 2016 21:18:49 GMT
+ENV BONITA_SHA256=6b444fd6a681491f89a12cf801650ecbbd9b2342f6073baca0909c4bf1e36e07
+# Thu, 07 Jul 2016 21:18:50 GMT
 ENV POSTGRES_JDBC_DRIVER=postgresql-9.3-1102.jdbc41.jar
-# Fri, 24 Jun 2016 18:15:56 GMT
+# Thu, 07 Jul 2016 21:18:50 GMT
 ENV POSTGRES_SHA256=b78749d536da75c382d0a71c717cde6850df64e16594676fc7cacb5a74541d66
-# Fri, 24 Jun 2016 18:15:56 GMT
+# Thu, 07 Jul 2016 21:18:51 GMT
 ENV MYSQL_JDBC_DRIVER=mysql-connector-java-5.1.26
-# Fri, 24 Jun 2016 18:15:57 GMT
+# Thu, 07 Jul 2016 21:18:51 GMT
 ENV MYSQL_SHA256=40b2d49f6f2551cc7fa54552af806e8026bf8405f03342205852e57a3205a868
-# Fri, 24 Jun 2016 18:16:00 GMT
+# Thu, 07 Jul 2016 21:18:56 GMT
 RUN mkdir /opt/files   && wget -q https://jdbc.postgresql.org/download/${POSTGRES_JDBC_DRIVER} -O /opt/files/${POSTGRES_JDBC_DRIVER}   && echo "$POSTGRES_SHA256" /opt/files/${POSTGRES_JDBC_DRIVER} | sha256sum -c -   && wget -q http://dev.mysql.com/get/Downloads/Connector-J/${MYSQL_JDBC_DRIVER}.zip -O /opt/files/${MYSQL_JDBC_DRIVER}.zip   && echo "$MYSQL_SHA256" /opt/files/${MYSQL_JDBC_DRIVER}.zip | sha256sum -c -   && unzip -q /opt/files/${MYSQL_JDBC_DRIVER}.zip -d /opt/files/   && mv /opt/files/${MYSQL_JDBC_DRIVER}/${MYSQL_JDBC_DRIVER}-bin.jar /opt/files/   && rm -r /opt/files/${MYSQL_JDBC_DRIVER}   && rm /opt/files/${MYSQL_JDBC_DRIVER}.zip
-# Fri, 24 Jun 2016 18:16:12 GMT
+# Thu, 07 Jul 2016 21:19:15 GMT
 RUN wget -q http://download.forge.ow2.org/bonita/BonitaBPMCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip -O /opt/files/BonitaBPMCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip   && echo "$BONITA_SHA256" /opt/files/BonitaBPMCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip | sha256sum -c -
-# Fri, 24 Jun 2016 18:16:13 GMT
+# Thu, 07 Jul 2016 21:19:16 GMT
 VOLUME [/opt/bonita]
-# Fri, 24 Jun 2016 18:16:14 GMT
+# Thu, 07 Jul 2016 21:19:17 GMT
 COPY dir:c46d790a33226426e306313e34c7d1f3c42ed57c5e8a3410a973d72aeb886df3 in /opt/files
-# Fri, 24 Jun 2016 18:16:14 GMT
+# Thu, 07 Jul 2016 21:19:17 GMT
 COPY dir:4024f665b5e26ffe45bb55870cc8577a94dfc16fda7d53f0fe54dbfe45c11977 in /opt/templates
-# Fri, 24 Jun 2016 18:16:15 GMT
+# Thu, 07 Jul 2016 21:19:18 GMT
 EXPOSE 8080/tcp
-# Fri, 24 Jun 2016 18:16:15 GMT
+# Thu, 07 Jul 2016 21:19:19 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
@@ -215,23 +215,23 @@ CMD ["/opt/files/startup.sh"]
 	-	`sha256:7b8c2e9560357d6a7d3ccf4e5150c561bc4058fcf0b422dadb9b5db635e124f5`  
 		Last Modified: Fri, 24 Jun 2016 18:15:32 GMT  
 		Size: 807.6 KB (807587 bytes)
-	-	`sha256:63d73519aaaf129179b49a115709771d3a50799d13ac5ae85e59bb66ede98730`  
-		Last Modified: Fri, 24 Jun 2016 18:16:23 GMT  
-		Size: 1.4 MB (1382493 bytes)
-	-	`sha256:43e3257c9d082657f141c7bca2523be2d925f26b4003eb9b16e4a0ad36cf3f6a`  
-		Last Modified: Fri, 24 Jun 2016 18:16:29 GMT  
-		Size: 74.0 MB (73955637 bytes)
-	-	`sha256:8f2fdd6fe61f9dfdd26cb1f6154b8f31a621f22f4d492a1d7513cd023768dc75`  
-		Last Modified: Fri, 24 Jun 2016 18:16:23 GMT  
-		Size: 5.8 KB (5799 bytes)
-	-	`sha256:05d3b741167c5c138bd8c99d7076257d3734425c640dfa718bb1c3509f2c2246`  
-		Last Modified: Fri, 24 Jun 2016 18:16:24 GMT  
-		Size: 2.2 KB (2196 bytes)
+	-	`sha256:bcf77e08f29c1fb6edc14a22ea48d5432bcf895244b008e90e1c3fbde89be539`  
+		Last Modified: Thu, 07 Jul 2016 21:19:36 GMT  
+		Size: 1.4 MB (1382495 bytes)
+	-	`sha256:756cb1500efdb9bfd4ff21093ca726d1138c92cbadbcf7674d5a792201de88f7`  
+		Last Modified: Thu, 07 Jul 2016 21:19:43 GMT  
+		Size: 74.0 MB (73958853 bytes)
+	-	`sha256:eb807ad7d1a1a9f40e8fc543604063c6148dfefae41c0edf4b6f433ef1c1d348`  
+		Last Modified: Thu, 07 Jul 2016 21:19:36 GMT  
+		Size: 5.8 KB (5802 bytes)
+	-	`sha256:6d16b3d2634932b58831c20e426d6d8f7d4fba8a34aff31a44b69dfe8994a3c1`  
+		Last Modified: Thu, 07 Jul 2016 21:19:36 GMT  
+		Size: 2.2 KB (2195 bytes)
 
 ## `bonita:latest`
 
 ```console
-$ docker pull bonita@sha256:fc0699928a3120ccec0621195cb48f297762fc5bbd3e8a55463ff3167bb4d911
+$ docker pull bonita@sha256:5d8b1af4d2dd9b8cd8abf0d96f9f211a4646f02da91506993027c4266c3275b0
 ```
 
 -	Platforms:
@@ -241,9 +241,9 @@ $ docker pull bonita@sha256:fc0699928a3120ccec0621195cb48f297762fc5bbd3e8a55463f
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.0 MB (206966732 bytes)**  
+-	Total Size: **207.0 MB (206969952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b9ccf34b320d49f2d64c2d0b05c49315072bc593d9827d1073c788d92f39b12`
+-	Image ID: `sha256:f70f6f3a8d61a152c42688b976e760fa1405cf7c4522db90b1b6411c80e2ae24`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
@@ -269,33 +269,33 @@ RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 # Fri, 24 Jun 2016 18:15:01 GMT
 RUN wget -q "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --print-architecture)" -O /usr/local/bin/gosu   && wget -q "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --print-architecture).asc" -O /usr/local/bin/gosu.asc   && gpg --verify /usr/local/bin/gosu.asc   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Fri, 24 Jun 2016 18:15:54 GMT
-ENV BONITA_VERSION=7.2.3
-# Fri, 24 Jun 2016 18:15:54 GMT
+# Thu, 07 Jul 2016 21:18:48 GMT
+ENV BONITA_VERSION=7.2.4
+# Thu, 07 Jul 2016 21:18:49 GMT
 ENV TOMCAT_VERSION=7.0.67
-# Fri, 24 Jun 2016 18:15:55 GMT
-ENV BONITA_SHA256=5547acb5d45eaaffec14600afea72e99668278c8fc9c050e45ba6dedb389ff2c
-# Fri, 24 Jun 2016 18:15:55 GMT
+# Thu, 07 Jul 2016 21:18:49 GMT
+ENV BONITA_SHA256=6b444fd6a681491f89a12cf801650ecbbd9b2342f6073baca0909c4bf1e36e07
+# Thu, 07 Jul 2016 21:18:50 GMT
 ENV POSTGRES_JDBC_DRIVER=postgresql-9.3-1102.jdbc41.jar
-# Fri, 24 Jun 2016 18:15:56 GMT
+# Thu, 07 Jul 2016 21:18:50 GMT
 ENV POSTGRES_SHA256=b78749d536da75c382d0a71c717cde6850df64e16594676fc7cacb5a74541d66
-# Fri, 24 Jun 2016 18:15:56 GMT
+# Thu, 07 Jul 2016 21:18:51 GMT
 ENV MYSQL_JDBC_DRIVER=mysql-connector-java-5.1.26
-# Fri, 24 Jun 2016 18:15:57 GMT
+# Thu, 07 Jul 2016 21:18:51 GMT
 ENV MYSQL_SHA256=40b2d49f6f2551cc7fa54552af806e8026bf8405f03342205852e57a3205a868
-# Fri, 24 Jun 2016 18:16:00 GMT
+# Thu, 07 Jul 2016 21:18:56 GMT
 RUN mkdir /opt/files   && wget -q https://jdbc.postgresql.org/download/${POSTGRES_JDBC_DRIVER} -O /opt/files/${POSTGRES_JDBC_DRIVER}   && echo "$POSTGRES_SHA256" /opt/files/${POSTGRES_JDBC_DRIVER} | sha256sum -c -   && wget -q http://dev.mysql.com/get/Downloads/Connector-J/${MYSQL_JDBC_DRIVER}.zip -O /opt/files/${MYSQL_JDBC_DRIVER}.zip   && echo "$MYSQL_SHA256" /opt/files/${MYSQL_JDBC_DRIVER}.zip | sha256sum -c -   && unzip -q /opt/files/${MYSQL_JDBC_DRIVER}.zip -d /opt/files/   && mv /opt/files/${MYSQL_JDBC_DRIVER}/${MYSQL_JDBC_DRIVER}-bin.jar /opt/files/   && rm -r /opt/files/${MYSQL_JDBC_DRIVER}   && rm /opt/files/${MYSQL_JDBC_DRIVER}.zip
-# Fri, 24 Jun 2016 18:16:12 GMT
+# Thu, 07 Jul 2016 21:19:15 GMT
 RUN wget -q http://download.forge.ow2.org/bonita/BonitaBPMCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip -O /opt/files/BonitaBPMCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip   && echo "$BONITA_SHA256" /opt/files/BonitaBPMCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip | sha256sum -c -
-# Fri, 24 Jun 2016 18:16:13 GMT
+# Thu, 07 Jul 2016 21:19:16 GMT
 VOLUME [/opt/bonita]
-# Fri, 24 Jun 2016 18:16:14 GMT
+# Thu, 07 Jul 2016 21:19:17 GMT
 COPY dir:c46d790a33226426e306313e34c7d1f3c42ed57c5e8a3410a973d72aeb886df3 in /opt/files
-# Fri, 24 Jun 2016 18:16:14 GMT
+# Thu, 07 Jul 2016 21:19:17 GMT
 COPY dir:4024f665b5e26ffe45bb55870cc8577a94dfc16fda7d53f0fe54dbfe45c11977 in /opt/templates
-# Fri, 24 Jun 2016 18:16:15 GMT
+# Thu, 07 Jul 2016 21:19:18 GMT
 EXPOSE 8080/tcp
-# Fri, 24 Jun 2016 18:16:15 GMT
+# Thu, 07 Jul 2016 21:19:19 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
@@ -327,15 +327,15 @@ CMD ["/opt/files/startup.sh"]
 	-	`sha256:7b8c2e9560357d6a7d3ccf4e5150c561bc4058fcf0b422dadb9b5db635e124f5`  
 		Last Modified: Fri, 24 Jun 2016 18:15:32 GMT  
 		Size: 807.6 KB (807587 bytes)
-	-	`sha256:63d73519aaaf129179b49a115709771d3a50799d13ac5ae85e59bb66ede98730`  
-		Last Modified: Fri, 24 Jun 2016 18:16:23 GMT  
-		Size: 1.4 MB (1382493 bytes)
-	-	`sha256:43e3257c9d082657f141c7bca2523be2d925f26b4003eb9b16e4a0ad36cf3f6a`  
-		Last Modified: Fri, 24 Jun 2016 18:16:29 GMT  
-		Size: 74.0 MB (73955637 bytes)
-	-	`sha256:8f2fdd6fe61f9dfdd26cb1f6154b8f31a621f22f4d492a1d7513cd023768dc75`  
-		Last Modified: Fri, 24 Jun 2016 18:16:23 GMT  
-		Size: 5.8 KB (5799 bytes)
-	-	`sha256:05d3b741167c5c138bd8c99d7076257d3734425c640dfa718bb1c3509f2c2246`  
-		Last Modified: Fri, 24 Jun 2016 18:16:24 GMT  
-		Size: 2.2 KB (2196 bytes)
+	-	`sha256:bcf77e08f29c1fb6edc14a22ea48d5432bcf895244b008e90e1c3fbde89be539`  
+		Last Modified: Thu, 07 Jul 2016 21:19:36 GMT  
+		Size: 1.4 MB (1382495 bytes)
+	-	`sha256:756cb1500efdb9bfd4ff21093ca726d1138c92cbadbcf7674d5a792201de88f7`  
+		Last Modified: Thu, 07 Jul 2016 21:19:43 GMT  
+		Size: 74.0 MB (73958853 bytes)
+	-	`sha256:eb807ad7d1a1a9f40e8fc543604063c6148dfefae41c0edf4b6f433ef1c1d348`  
+		Last Modified: Thu, 07 Jul 2016 21:19:36 GMT  
+		Size: 5.8 KB (5802 bytes)
+	-	`sha256:6d16b3d2634932b58831c20e426d6d8f7d4fba8a34aff31a44b69dfe8994a3c1`  
+		Last Modified: Thu, 07 Jul 2016 21:19:36 GMT  
+		Size: 2.2 KB (2195 bytes)
