@@ -1,16 +1,22 @@
-# What is Docker?
+# What is Docker in Docker?
 
-Docker is an open-source project that automates the deployment of applications inside software containers, by providing an additional layer of abstraction and automation of operating-system-level virtualization on Linux, Mac OS and Windows.
+Although running Docker inside Docker is generally not recommended, there are some legitimate use cases, such as development of Docker itself.
+
+*Docker is an open-source project that automates the deployment of applications inside software containers, by providing an additional layer of abstraction and automation of operating-system-level virtualization on Linux, Mac OS and Windows.*
 
 > [wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_%28software%29)
 
 %%LOGO%%
 
+Before running Docker-in-Docker, be sure to read through [Jérôme Petazzoni's excellent blog post on the subject](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/), where he outlines some of the pros and cons of doing so (and some nasty gotchas you might run into).
+
+If you are still convinced that you need Docker-in-Docker and not just access to a container's host Docker server, then read on.
+
 # How to use this image
 
 [![asciicast](https://asciinema.org/a/24707.png)](https://asciinema.org/a/24707)
 
-## start a daemon instance
+## Start a daemon instance
 
 ```console
 $ docker run --privileged --name some-docker -d docker:1.8-dind
@@ -20,9 +26,7 @@ $ docker run --privileged --name some-docker -d docker:1.8-dind
 
 This image includes `EXPOSE 2375` (the Docker port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
 
-Before running Docker-in-Docker, be sure to read through [Jérôme Petazzoni's excellent blog post on the subject](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/), where he outlines some of the pros and cons of doing so (and some nasty gotchas you might run into).
-
-## connect to it from a second container
+## Connect to it from a second container
 
 ```console
 $ docker run --rm --link some-docker:docker docker:1.7 version
@@ -109,7 +113,7 @@ Server:
  OS/Arch:      linux/amd64
 ```
 
-## custom daemon flags
+## Custom daemon flags
 
 ```console
 $ docker run --privileged --name some-devicemapper-docker -d docker:dind --storage-driver=devicemapper
