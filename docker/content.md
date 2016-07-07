@@ -1,9 +1,8 @@
 # What is Docker in Docker?
 
-Although running Docker inside Docker is generally not recommended, there are some legitimate use cases, such as
-developing Docker itself.
+Although running Docker inside Docker is generally not recommended, there are some legitimate use cases, such as development of Docker itself.
 
-_Docker is an open-source project that automates the deployment of applications inside software containers, by providing an additional layer of abstraction and automation of operating-system-level virtualization on Linux, Mac OS and Windows._
+*Docker is an open-source project that automates the deployment of applications inside software containers, by providing an additional layer of abstraction and automation of operating-system-level virtualization on Linux, Mac OS and Windows.*
 
 > [wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_%28software%29)
 
@@ -84,7 +83,7 @@ WARNING: bridge-nf-call-ip6tables is disabled
 $ docker run --rm --link some-docker:docker docker:git build https://github.com/docker-library/hello-world.git
 Sending build context to Docker daemon 132.1 kB
 Step 0 : FROM scratch
- --->
+ ---> 
 Step 1 : COPY hello /
  ---> 29bef505052d
 Removing intermediate container f98aab888906
