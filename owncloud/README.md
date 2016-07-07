@@ -58,20 +58,29 @@ When using the 6.0 image, you need to map the host port to the container port th
 Example `docker-compose.yml` for `owncloud`:
 
 ```yaml
-# access via "http://localhost:8080" (or "http://$(docker-machine ip):8080" if using docker-machine)
-# during initial setup, use "mysql" as the MySQL hostname
+# ownCloud with MariaDB/MySQL
+#
+# Access via "http://localhost:8080" (or "http://$(docker-machine ip):8080" if using docker-machine)
+#
+# During initial ownCloud setup, select "Storage & database" --> "Configure the database" --> "MySQL/MariaDB"
+# Database user: root
+# Database password: example
+# Database name: pick any name
+# Database host: replace "localhost" with "mysql"
 
-owncloud:
-  image: owncloud
-  links:
-    - db:mysql
-  ports:
-    - 8080:80
+version: '2'
 
-db:
-  image: mariadb
-  environment:
-    MYSQL_ROOT_PASSWORD: example
+services:
+
+  owncloud:
+    image: owncloud
+    ports:
+      - 8080:80
+
+  mysql:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: example
 ```
 
 # License
