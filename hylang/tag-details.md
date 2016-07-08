@@ -10,7 +10,7 @@
 ## `hylang:0.11.1`
 
 ```console
-$ docker pull hylang@sha256:416ecbf0854ee1c6e77d669977e830e73b2e7ec731eabf27e9b3a181a1a5a30d
+$ docker pull hylang@sha256:a0e8ce6a576f36d5c8a0a14b9b60a0b48ad14f13801a078990158036c90e60ba
 ```
 
 -	Platforms:
@@ -20,9 +20,9 @@ $ docker pull hylang@sha256:416ecbf0854ee1c6e77d669977e830e73b2e7ec731eabf27e9b3
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.2 MB (265158843 bytes)**  
+-	Total Size: **265.2 MB (265159276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d02207e4cde0e8a24c939ab14115cafbdc3bc00752c78ffb012344d1af0ba74a`
+-	Image ID: `sha256:17ae04a18a1a21ccf4d29ba40dc458c0a7dc450c80e066dea5f04a15c44b6d7a`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -46,19 +46,19 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.5.2
 # Tue, 28 Jun 2016 23:21:44 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Fri, 01 Jul 2016 20:35:51 GMT
-RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
-# Fri, 01 Jul 2016 20:35:52 GMT
+# Fri, 08 Jul 2016 19:18:35 GMT
+RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 08 Jul 2016 19:18:36 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.5 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Fri, 01 Jul 2016 20:35:52 GMT
+# Fri, 08 Jul 2016 19:18:37 GMT
 CMD ["python3"]
-# Fri, 01 Jul 2016 21:55:01 GMT
+# Fri, 08 Jul 2016 20:30:45 GMT
 MAINTAINER Paul R. Tagliamonte <paultag@hylang.org>
-# Fri, 01 Jul 2016 21:55:02 GMT
+# Fri, 08 Jul 2016 20:30:46 GMT
 ADD dir:866a4ac77e162758d5a87e8e6eeada7a7cc3a0f86d1565f43e2fab5ad260d7f7 in /opt/hylang/hy
-# Fri, 01 Jul 2016 21:55:08 GMT
+# Fri, 08 Jul 2016 20:30:53 GMT
 RUN pip3 install -e /opt/hylang/hy
-# Fri, 01 Jul 2016 21:55:08 GMT
+# Fri, 08 Jul 2016 20:30:54 GMT
 CMD ["hy"]
 ```
 
@@ -78,23 +78,23 @@ CMD ["hy"]
 	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
 		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
 		Size: 242.5 KB (242498 bytes)
-	-	`sha256:fc47c86cd2eabe1eb1362117e34c64c25d1581be338d17f422db012b173f34c9`  
-		Last Modified: Fri, 01 Jul 2016 20:49:19 GMT  
-		Size: 20.1 MB (20106543 bytes)
-	-	`sha256:1253703cd472c03a1a0d90cbe8c60232536fd5ef3e5cad005f30a3721428c95f`  
-		Last Modified: Fri, 01 Jul 2016 20:49:13 GMT  
-		Size: 266.0 B
-	-	`sha256:ceae5771730e57ea7c122bb79f7ece3e2c26394ebc5b796c3770fa0fbc36683d`  
-		Last Modified: Fri, 01 Jul 2016 21:55:16 GMT  
-		Size: 358.4 KB (358367 bytes)
-	-	`sha256:f6adabcf858e7aa518b8b7608eea0dc92e5b30056e0cb4e0adf841e7801e2a9b`  
-		Last Modified: Fri, 01 Jul 2016 21:55:17 GMT  
-		Size: 2.3 MB (2321661 bytes)
+	-	`sha256:88768398e199278f781aaa93bcc0fb047c1438d1c4d66850f9771651899bced8`  
+		Last Modified: Fri, 08 Jul 2016 19:47:55 GMT  
+		Size: 20.1 MB (20107003 bytes)
+	-	`sha256:eebbb7c52ba8e3f721330cac481a324904769860083cd3f7bfb01d88669288c6`  
+		Last Modified: Fri, 08 Jul 2016 19:47:44 GMT  
+		Size: 264.0 B
+	-	`sha256:d1460891a0c797b11ad58e9cf7173433c886dd5c61a82c9060984571d78387c8`  
+		Last Modified: Fri, 08 Jul 2016 20:31:02 GMT  
+		Size: 358.4 KB (358362 bytes)
+	-	`sha256:4297f5b39460b019021fcb05d752e850c7fd6cd2b506aaf86e27d7709c938860`  
+		Last Modified: Fri, 08 Jul 2016 20:31:03 GMT  
+		Size: 2.3 MB (2321641 bytes)
 
 ## `hylang:0.11`
 
 ```console
-$ docker pull hylang@sha256:416ecbf0854ee1c6e77d669977e830e73b2e7ec731eabf27e9b3a181a1a5a30d
+$ docker pull hylang@sha256:a0e8ce6a576f36d5c8a0a14b9b60a0b48ad14f13801a078990158036c90e60ba
 ```
 
 -	Platforms:
@@ -104,9 +104,9 @@ $ docker pull hylang@sha256:416ecbf0854ee1c6e77d669977e830e73b2e7ec731eabf27e9b3
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.2 MB (265158843 bytes)**  
+-	Total Size: **265.2 MB (265159276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d02207e4cde0e8a24c939ab14115cafbdc3bc00752c78ffb012344d1af0ba74a`
+-	Image ID: `sha256:17ae04a18a1a21ccf4d29ba40dc458c0a7dc450c80e066dea5f04a15c44b6d7a`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -130,19 +130,19 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.5.2
 # Tue, 28 Jun 2016 23:21:44 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Fri, 01 Jul 2016 20:35:51 GMT
-RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
-# Fri, 01 Jul 2016 20:35:52 GMT
+# Fri, 08 Jul 2016 19:18:35 GMT
+RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 08 Jul 2016 19:18:36 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.5 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Fri, 01 Jul 2016 20:35:52 GMT
+# Fri, 08 Jul 2016 19:18:37 GMT
 CMD ["python3"]
-# Fri, 01 Jul 2016 21:55:01 GMT
+# Fri, 08 Jul 2016 20:30:45 GMT
 MAINTAINER Paul R. Tagliamonte <paultag@hylang.org>
-# Fri, 01 Jul 2016 21:55:02 GMT
+# Fri, 08 Jul 2016 20:30:46 GMT
 ADD dir:866a4ac77e162758d5a87e8e6eeada7a7cc3a0f86d1565f43e2fab5ad260d7f7 in /opt/hylang/hy
-# Fri, 01 Jul 2016 21:55:08 GMT
+# Fri, 08 Jul 2016 20:30:53 GMT
 RUN pip3 install -e /opt/hylang/hy
-# Fri, 01 Jul 2016 21:55:08 GMT
+# Fri, 08 Jul 2016 20:30:54 GMT
 CMD ["hy"]
 ```
 
@@ -162,23 +162,23 @@ CMD ["hy"]
 	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
 		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
 		Size: 242.5 KB (242498 bytes)
-	-	`sha256:fc47c86cd2eabe1eb1362117e34c64c25d1581be338d17f422db012b173f34c9`  
-		Last Modified: Fri, 01 Jul 2016 20:49:19 GMT  
-		Size: 20.1 MB (20106543 bytes)
-	-	`sha256:1253703cd472c03a1a0d90cbe8c60232536fd5ef3e5cad005f30a3721428c95f`  
-		Last Modified: Fri, 01 Jul 2016 20:49:13 GMT  
-		Size: 266.0 B
-	-	`sha256:ceae5771730e57ea7c122bb79f7ece3e2c26394ebc5b796c3770fa0fbc36683d`  
-		Last Modified: Fri, 01 Jul 2016 21:55:16 GMT  
-		Size: 358.4 KB (358367 bytes)
-	-	`sha256:f6adabcf858e7aa518b8b7608eea0dc92e5b30056e0cb4e0adf841e7801e2a9b`  
-		Last Modified: Fri, 01 Jul 2016 21:55:17 GMT  
-		Size: 2.3 MB (2321661 bytes)
+	-	`sha256:88768398e199278f781aaa93bcc0fb047c1438d1c4d66850f9771651899bced8`  
+		Last Modified: Fri, 08 Jul 2016 19:47:55 GMT  
+		Size: 20.1 MB (20107003 bytes)
+	-	`sha256:eebbb7c52ba8e3f721330cac481a324904769860083cd3f7bfb01d88669288c6`  
+		Last Modified: Fri, 08 Jul 2016 19:47:44 GMT  
+		Size: 264.0 B
+	-	`sha256:d1460891a0c797b11ad58e9cf7173433c886dd5c61a82c9060984571d78387c8`  
+		Last Modified: Fri, 08 Jul 2016 20:31:02 GMT  
+		Size: 358.4 KB (358362 bytes)
+	-	`sha256:4297f5b39460b019021fcb05d752e850c7fd6cd2b506aaf86e27d7709c938860`  
+		Last Modified: Fri, 08 Jul 2016 20:31:03 GMT  
+		Size: 2.3 MB (2321641 bytes)
 
 ## `hylang:0`
 
 ```console
-$ docker pull hylang@sha256:416ecbf0854ee1c6e77d669977e830e73b2e7ec731eabf27e9b3a181a1a5a30d
+$ docker pull hylang@sha256:a0e8ce6a576f36d5c8a0a14b9b60a0b48ad14f13801a078990158036c90e60ba
 ```
 
 -	Platforms:
@@ -188,9 +188,9 @@ $ docker pull hylang@sha256:416ecbf0854ee1c6e77d669977e830e73b2e7ec731eabf27e9b3
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.2 MB (265158843 bytes)**  
+-	Total Size: **265.2 MB (265159276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d02207e4cde0e8a24c939ab14115cafbdc3bc00752c78ffb012344d1af0ba74a`
+-	Image ID: `sha256:17ae04a18a1a21ccf4d29ba40dc458c0a7dc450c80e066dea5f04a15c44b6d7a`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -214,19 +214,19 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.5.2
 # Tue, 28 Jun 2016 23:21:44 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Fri, 01 Jul 2016 20:35:51 GMT
-RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
-# Fri, 01 Jul 2016 20:35:52 GMT
+# Fri, 08 Jul 2016 19:18:35 GMT
+RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 08 Jul 2016 19:18:36 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.5 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Fri, 01 Jul 2016 20:35:52 GMT
+# Fri, 08 Jul 2016 19:18:37 GMT
 CMD ["python3"]
-# Fri, 01 Jul 2016 21:55:01 GMT
+# Fri, 08 Jul 2016 20:30:45 GMT
 MAINTAINER Paul R. Tagliamonte <paultag@hylang.org>
-# Fri, 01 Jul 2016 21:55:02 GMT
+# Fri, 08 Jul 2016 20:30:46 GMT
 ADD dir:866a4ac77e162758d5a87e8e6eeada7a7cc3a0f86d1565f43e2fab5ad260d7f7 in /opt/hylang/hy
-# Fri, 01 Jul 2016 21:55:08 GMT
+# Fri, 08 Jul 2016 20:30:53 GMT
 RUN pip3 install -e /opt/hylang/hy
-# Fri, 01 Jul 2016 21:55:08 GMT
+# Fri, 08 Jul 2016 20:30:54 GMT
 CMD ["hy"]
 ```
 
@@ -246,23 +246,23 @@ CMD ["hy"]
 	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
 		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
 		Size: 242.5 KB (242498 bytes)
-	-	`sha256:fc47c86cd2eabe1eb1362117e34c64c25d1581be338d17f422db012b173f34c9`  
-		Last Modified: Fri, 01 Jul 2016 20:49:19 GMT  
-		Size: 20.1 MB (20106543 bytes)
-	-	`sha256:1253703cd472c03a1a0d90cbe8c60232536fd5ef3e5cad005f30a3721428c95f`  
-		Last Modified: Fri, 01 Jul 2016 20:49:13 GMT  
-		Size: 266.0 B
-	-	`sha256:ceae5771730e57ea7c122bb79f7ece3e2c26394ebc5b796c3770fa0fbc36683d`  
-		Last Modified: Fri, 01 Jul 2016 21:55:16 GMT  
-		Size: 358.4 KB (358367 bytes)
-	-	`sha256:f6adabcf858e7aa518b8b7608eea0dc92e5b30056e0cb4e0adf841e7801e2a9b`  
-		Last Modified: Fri, 01 Jul 2016 21:55:17 GMT  
-		Size: 2.3 MB (2321661 bytes)
+	-	`sha256:88768398e199278f781aaa93bcc0fb047c1438d1c4d66850f9771651899bced8`  
+		Last Modified: Fri, 08 Jul 2016 19:47:55 GMT  
+		Size: 20.1 MB (20107003 bytes)
+	-	`sha256:eebbb7c52ba8e3f721330cac481a324904769860083cd3f7bfb01d88669288c6`  
+		Last Modified: Fri, 08 Jul 2016 19:47:44 GMT  
+		Size: 264.0 B
+	-	`sha256:d1460891a0c797b11ad58e9cf7173433c886dd5c61a82c9060984571d78387c8`  
+		Last Modified: Fri, 08 Jul 2016 20:31:02 GMT  
+		Size: 358.4 KB (358362 bytes)
+	-	`sha256:4297f5b39460b019021fcb05d752e850c7fd6cd2b506aaf86e27d7709c938860`  
+		Last Modified: Fri, 08 Jul 2016 20:31:03 GMT  
+		Size: 2.3 MB (2321641 bytes)
 
 ## `hylang:latest`
 
 ```console
-$ docker pull hylang@sha256:416ecbf0854ee1c6e77d669977e830e73b2e7ec731eabf27e9b3a181a1a5a30d
+$ docker pull hylang@sha256:a0e8ce6a576f36d5c8a0a14b9b60a0b48ad14f13801a078990158036c90e60ba
 ```
 
 -	Platforms:
@@ -272,9 +272,9 @@ $ docker pull hylang@sha256:416ecbf0854ee1c6e77d669977e830e73b2e7ec731eabf27e9b3
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.2 MB (265158843 bytes)**  
+-	Total Size: **265.2 MB (265159276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d02207e4cde0e8a24c939ab14115cafbdc3bc00752c78ffb012344d1af0ba74a`
+-	Image ID: `sha256:17ae04a18a1a21ccf4d29ba40dc458c0a7dc450c80e066dea5f04a15c44b6d7a`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -298,19 +298,19 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.5.2
 # Tue, 28 Jun 2016 23:21:44 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Fri, 01 Jul 2016 20:35:51 GMT
-RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure --enable-shared --enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
-# Fri, 01 Jul 2016 20:35:52 GMT
+# Fri, 08 Jul 2016 19:18:35 GMT
+RUN set -ex 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 08 Jul 2016 19:18:36 GMT
 RUN cd /usr/local/bin 	&& ln -s easy_install-3.5 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Fri, 01 Jul 2016 20:35:52 GMT
+# Fri, 08 Jul 2016 19:18:37 GMT
 CMD ["python3"]
-# Fri, 01 Jul 2016 21:55:01 GMT
+# Fri, 08 Jul 2016 20:30:45 GMT
 MAINTAINER Paul R. Tagliamonte <paultag@hylang.org>
-# Fri, 01 Jul 2016 21:55:02 GMT
+# Fri, 08 Jul 2016 20:30:46 GMT
 ADD dir:866a4ac77e162758d5a87e8e6eeada7a7cc3a0f86d1565f43e2fab5ad260d7f7 in /opt/hylang/hy
-# Fri, 01 Jul 2016 21:55:08 GMT
+# Fri, 08 Jul 2016 20:30:53 GMT
 RUN pip3 install -e /opt/hylang/hy
-# Fri, 01 Jul 2016 21:55:08 GMT
+# Fri, 08 Jul 2016 20:30:54 GMT
 CMD ["hy"]
 ```
 
@@ -330,15 +330,15 @@ CMD ["hy"]
 	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
 		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
 		Size: 242.5 KB (242498 bytes)
-	-	`sha256:fc47c86cd2eabe1eb1362117e34c64c25d1581be338d17f422db012b173f34c9`  
-		Last Modified: Fri, 01 Jul 2016 20:49:19 GMT  
-		Size: 20.1 MB (20106543 bytes)
-	-	`sha256:1253703cd472c03a1a0d90cbe8c60232536fd5ef3e5cad005f30a3721428c95f`  
-		Last Modified: Fri, 01 Jul 2016 20:49:13 GMT  
-		Size: 266.0 B
-	-	`sha256:ceae5771730e57ea7c122bb79f7ece3e2c26394ebc5b796c3770fa0fbc36683d`  
-		Last Modified: Fri, 01 Jul 2016 21:55:16 GMT  
-		Size: 358.4 KB (358367 bytes)
-	-	`sha256:f6adabcf858e7aa518b8b7608eea0dc92e5b30056e0cb4e0adf841e7801e2a9b`  
-		Last Modified: Fri, 01 Jul 2016 21:55:17 GMT  
-		Size: 2.3 MB (2321661 bytes)
+	-	`sha256:88768398e199278f781aaa93bcc0fb047c1438d1c4d66850f9771651899bced8`  
+		Last Modified: Fri, 08 Jul 2016 19:47:55 GMT  
+		Size: 20.1 MB (20107003 bytes)
+	-	`sha256:eebbb7c52ba8e3f721330cac481a324904769860083cd3f7bfb01d88669288c6`  
+		Last Modified: Fri, 08 Jul 2016 19:47:44 GMT  
+		Size: 264.0 B
+	-	`sha256:d1460891a0c797b11ad58e9cf7173433c886dd5c61a82c9060984571d78387c8`  
+		Last Modified: Fri, 08 Jul 2016 20:31:02 GMT  
+		Size: 358.4 KB (358362 bytes)
+	-	`sha256:4297f5b39460b019021fcb05d752e850c7fd6cd2b506aaf86e27d7709c938860`  
+		Last Modified: Fri, 08 Jul 2016 20:31:03 GMT  
+		Size: 2.3 MB (2321641 bytes)
