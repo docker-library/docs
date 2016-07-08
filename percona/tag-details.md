@@ -6,7 +6,7 @@
 -	[`percona:5.7`](#percona57)
 -	[`percona:5`](#percona5)
 -	[`percona:latest`](#perconalatest)
--	[`percona:5.6.30`](#percona5630)
+-	[`percona:5.6.31`](#percona5631)
 -	[`percona:5.6`](#percona56)
 -	[`percona:5.5.49`](#percona5549)
 -	[`percona:5.5`](#percona55)
@@ -391,22 +391,22 @@ CMD ["mysqld"]
 		Last Modified: Thu, 07 Jul 2016 19:21:39 GMT  
 		Size: 119.0 B
 
-## `percona:5.6.30`
+## `percona:5.6.31`
 
 ```console
-$ docker pull percona@sha256:748f8d615426eb6b522f7cb915ed3586dda1cbc05dc54b77205ca16a16d8cf48
+$ docker pull percona@sha256:181e10a40c9f9e5d2385cb9aa5eadbbd903237e0f770ec7124623a27f0adc34c
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `percona:5.6.30` - linux; amd64
+### `percona:5.6.31` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.5 MB (105514016 bytes)**  
+-	Total Size: **105.6 MB (105555266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d2feadb7999d4da0188f0d47922e4a020428d87f044372ee5da7ddbcb3802a7`
+-	Image ID: `sha256:1cffae95fbaabdabce3f11dba63db3f33e01c728b284b48e4daa702faef7c05d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -431,23 +431,23 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d/percona.list
 # Fri, 10 Jun 2016 02:31:08 GMT
 ENV PERCONA_MAJOR=5.6
-# Fri, 10 Jun 2016 02:31:08 GMT
-ENV PERCONA_VERSION=5.6.30-76.3-1.jessie
-# Fri, 10 Jun 2016 02:32:35 GMT
+# Fri, 08 Jul 2016 18:34:05 GMT
+ENV PERCONA_VERSION=5.6.31-77.0-1.jessie
+# Fri, 08 Jul 2016 18:35:30 GMT
 RUN { 		echo percona-server-server-$PERCONA_MAJOR percona-server-server/root_password password 'unused'; 		echo percona-server-server-$PERCONA_MAJOR percona-server-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		percona-server-server-$PERCONA_MAJOR=$PERCONA_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Fri, 10 Jun 2016 02:32:36 GMT
+# Fri, 08 Jul 2016 18:35:32 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Fri, 10 Jun 2016 02:32:37 GMT
+# Fri, 08 Jul 2016 18:35:33 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Fri, 10 Jun 2016 02:32:37 GMT
+# Fri, 08 Jul 2016 18:35:34 GMT
 COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
-# Fri, 10 Jun 2016 02:32:38 GMT
+# Fri, 08 Jul 2016 18:35:36 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 10 Jun 2016 02:32:39 GMT
+# Fri, 08 Jul 2016 18:35:37 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 02:32:39 GMT
+# Fri, 08 Jul 2016 18:35:37 GMT
 EXPOSE 3306/tcp
-# Fri, 10 Jun 2016 02:32:39 GMT
+# Fri, 08 Jul 2016 18:35:38 GMT
 CMD ["mysqld"]
 ```
 
@@ -473,23 +473,23 @@ CMD ["mysqld"]
 	-	`sha256:0a73b4938f714cc6478632eb1c23cef146262a6d9859c5bb876d5843df53fc39`  
 		Last Modified: Thu, 07 Jul 2016 19:21:38 GMT  
 		Size: 208.0 B
-	-	`sha256:88a12146d3d67f48ff18755c902d38431cf4125b9735a38bf27f2671172fd23f`  
-		Last Modified: Thu, 07 Jul 2016 19:22:51 GMT  
-		Size: 52.8 MB (52813699 bytes)
-	-	`sha256:2556b7d7dd239330842ca5a902febe8bfe1311f333568393020807a752acfaca`  
-		Last Modified: Thu, 07 Jul 2016 19:22:35 GMT  
-		Size: 1.9 KB (1889 bytes)
-	-	`sha256:f5906e62f759a228b5d4203fae68516c70902353db427bd55a2bdde03e9e9f53`  
-		Last Modified: Thu, 07 Jul 2016 19:22:35 GMT  
-		Size: 1.7 KB (1667 bytes)
-	-	`sha256:705fc8197b0c50f1c77124982ed7f75aad9736aa45fec9a22e624a14ccb71cb7`  
-		Last Modified: Thu, 07 Jul 2016 19:22:35 GMT  
-		Size: 120.0 B
+	-	`sha256:15e8470b50f2069ae385f283af07b862bb327d97449ebff937246c4342b7d783`  
+		Last Modified: Fri, 08 Jul 2016 18:36:35 GMT  
+		Size: 52.9 MB (52854955 bytes)
+	-	`sha256:a4697357fc9d588a719857dd344f135d11a98917d8baea288d97c3a302a0a3eb`  
+		Last Modified: Fri, 08 Jul 2016 18:36:20 GMT  
+		Size: 1.9 KB (1888 bytes)
+	-	`sha256:ac75f30db2a4a203561166d2b72ca8e459e08fc18adfd41a42f4cb49942785a0`  
+		Last Modified: Fri, 08 Jul 2016 18:36:21 GMT  
+		Size: 1.7 KB (1665 bytes)
+	-	`sha256:762a83211a776e01a0cca840b0078cd0ecddc47cc5e12274c9967d9b8e25f9ca`  
+		Last Modified: Fri, 08 Jul 2016 18:36:20 GMT  
+		Size: 117.0 B
 
 ## `percona:5.6`
 
 ```console
-$ docker pull percona@sha256:748f8d615426eb6b522f7cb915ed3586dda1cbc05dc54b77205ca16a16d8cf48
+$ docker pull percona@sha256:181e10a40c9f9e5d2385cb9aa5eadbbd903237e0f770ec7124623a27f0adc34c
 ```
 
 -	Platforms:
@@ -499,9 +499,9 @@ $ docker pull percona@sha256:748f8d615426eb6b522f7cb915ed3586dda1cbc05dc54b77205
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.5 MB (105514016 bytes)**  
+-	Total Size: **105.6 MB (105555266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d2feadb7999d4da0188f0d47922e4a020428d87f044372ee5da7ddbcb3802a7`
+-	Image ID: `sha256:1cffae95fbaabdabce3f11dba63db3f33e01c728b284b48e4daa702faef7c05d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -526,23 +526,23 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d/percona.list
 # Fri, 10 Jun 2016 02:31:08 GMT
 ENV PERCONA_MAJOR=5.6
-# Fri, 10 Jun 2016 02:31:08 GMT
-ENV PERCONA_VERSION=5.6.30-76.3-1.jessie
-# Fri, 10 Jun 2016 02:32:35 GMT
+# Fri, 08 Jul 2016 18:34:05 GMT
+ENV PERCONA_VERSION=5.6.31-77.0-1.jessie
+# Fri, 08 Jul 2016 18:35:30 GMT
 RUN { 		echo percona-server-server-$PERCONA_MAJOR percona-server-server/root_password password 'unused'; 		echo percona-server-server-$PERCONA_MAJOR percona-server-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		percona-server-server-$PERCONA_MAJOR=$PERCONA_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Fri, 10 Jun 2016 02:32:36 GMT
+# Fri, 08 Jul 2016 18:35:32 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
-# Fri, 10 Jun 2016 02:32:37 GMT
+# Fri, 08 Jul 2016 18:35:33 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Fri, 10 Jun 2016 02:32:37 GMT
+# Fri, 08 Jul 2016 18:35:34 GMT
 COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/
-# Fri, 10 Jun 2016 02:32:38 GMT
+# Fri, 08 Jul 2016 18:35:36 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 10 Jun 2016 02:32:39 GMT
+# Fri, 08 Jul 2016 18:35:37 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Fri, 10 Jun 2016 02:32:39 GMT
+# Fri, 08 Jul 2016 18:35:37 GMT
 EXPOSE 3306/tcp
-# Fri, 10 Jun 2016 02:32:39 GMT
+# Fri, 08 Jul 2016 18:35:38 GMT
 CMD ["mysqld"]
 ```
 
@@ -568,18 +568,18 @@ CMD ["mysqld"]
 	-	`sha256:0a73b4938f714cc6478632eb1c23cef146262a6d9859c5bb876d5843df53fc39`  
 		Last Modified: Thu, 07 Jul 2016 19:21:38 GMT  
 		Size: 208.0 B
-	-	`sha256:88a12146d3d67f48ff18755c902d38431cf4125b9735a38bf27f2671172fd23f`  
-		Last Modified: Thu, 07 Jul 2016 19:22:51 GMT  
-		Size: 52.8 MB (52813699 bytes)
-	-	`sha256:2556b7d7dd239330842ca5a902febe8bfe1311f333568393020807a752acfaca`  
-		Last Modified: Thu, 07 Jul 2016 19:22:35 GMT  
-		Size: 1.9 KB (1889 bytes)
-	-	`sha256:f5906e62f759a228b5d4203fae68516c70902353db427bd55a2bdde03e9e9f53`  
-		Last Modified: Thu, 07 Jul 2016 19:22:35 GMT  
-		Size: 1.7 KB (1667 bytes)
-	-	`sha256:705fc8197b0c50f1c77124982ed7f75aad9736aa45fec9a22e624a14ccb71cb7`  
-		Last Modified: Thu, 07 Jul 2016 19:22:35 GMT  
-		Size: 120.0 B
+	-	`sha256:15e8470b50f2069ae385f283af07b862bb327d97449ebff937246c4342b7d783`  
+		Last Modified: Fri, 08 Jul 2016 18:36:35 GMT  
+		Size: 52.9 MB (52854955 bytes)
+	-	`sha256:a4697357fc9d588a719857dd344f135d11a98917d8baea288d97c3a302a0a3eb`  
+		Last Modified: Fri, 08 Jul 2016 18:36:20 GMT  
+		Size: 1.9 KB (1888 bytes)
+	-	`sha256:ac75f30db2a4a203561166d2b72ca8e459e08fc18adfd41a42f4cb49942785a0`  
+		Last Modified: Fri, 08 Jul 2016 18:36:21 GMT  
+		Size: 1.7 KB (1665 bytes)
+	-	`sha256:762a83211a776e01a0cca840b0078cd0ecddc47cc5e12274c9967d9b8e25f9ca`  
+		Last Modified: Fri, 08 Jul 2016 18:36:20 GMT  
+		Size: 117.0 B
 
 ## `percona:5.5.49`
 

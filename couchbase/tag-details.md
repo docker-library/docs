@@ -603,7 +603,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:3.1.5`
 
 ```console
-$ docker pull couchbase@sha256:a03bd7a89591b59da2274364cf7d4e66759df4064c80e3975a77d91bb4fe6f4e
+$ docker pull couchbase@sha256:4f896daf85cf92861559180ce2ed8e8e2ce963769e446c8cf06f7b06b76f22cf
 ```
 
 -	Platforms:
@@ -613,95 +613,95 @@ $ docker pull couchbase@sha256:a03bd7a89591b59da2274364cf7d4e66759df4064c80e3975
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **277.3 MB (277299614 bytes)**  
+-	Total Size: **277.3 MB (277328593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72e6406ac460ad2d363b8158e1e878e51e6051fdcde6f4ac770cf375e6e37807`
+-	Image ID: `sha256:270d956941cc6a0ac2b0238058a4a9ac7f40c035c66c81531a3e9e7c5033cede`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:28:46 GMT
-ADD file:c15c64f42bbecdf500d0863a770b9dafd2d563dfd956da8302e0f944cccba9c9 in /
-# Fri, 24 Jun 2016 17:28:48 GMT
+# Fri, 08 Jul 2016 18:38:49 GMT
+ADD file:a5827d860bc00fbb0b885782e98401c104f962c243de0390e1db0b51cc61e1c8 in /
+# Fri, 08 Jul 2016 18:38:51 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:28:50 GMT
+# Fri, 08 Jul 2016 18:38:53 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:28:51 GMT
+# Fri, 08 Jul 2016 18:38:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:28:52 GMT
+# Fri, 08 Jul 2016 18:38:55 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:23:32 GMT
+# Fri, 08 Jul 2016 18:55:17 GMT
 MAINTAINER Couchbase Docker Team <docker@couchbase.com>
-# Fri, 24 Jun 2016 18:23:58 GMT
+# Fri, 08 Jul 2016 18:55:48 GMT
 RUN apt-get update &&     apt-get install -yq runit wget python-httplib2 chrpath     lsof lshw sysstat net-tools numactl  &&     apt-get autoremove && apt-get clean &&     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Fri, 24 Jun 2016 18:23:58 GMT
+# Fri, 08 Jul 2016 18:55:49 GMT
 ENV CB_VERSION=3.1.5 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PACKAGE=couchbase-server-enterprise_3.1.5-ubuntu12.04_amd64.deb CB_SHA256=b4a7cbbe8a891debd9f95f165247d783c035d939b3ddedadc73a9cb4563f4fc3 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
-# Fri, 24 Jun 2016 18:24:00 GMT
+# Fri, 08 Jul 2016 18:55:50 GMT
 RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
-# Fri, 24 Jun 2016 18:24:41 GMT
+# Fri, 08 Jul 2016 18:56:37 GMT
 RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&     echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - &&     dpkg -i ./$CB_PACKAGE && rm -f ./$CB_PACKAGE
-# Fri, 24 Jun 2016 18:24:42 GMT
+# Fri, 08 Jul 2016 18:56:38 GMT
 COPY file:7a3bf353a4f0d8eed060426fec4bacdf779a522d4c631430af31c172eb79f95b in /etc/service/couchbase-server/run
-# Fri, 24 Jun 2016 18:24:43 GMT
+# Fri, 08 Jul 2016 18:56:39 GMT
 COPY file:8196fd8e201c5fc3873a0faa3cec28b0d85633e363c0c5788434f5b9a81cfa5b in /usr/local/bin/
-# Fri, 24 Jun 2016 18:24:44 GMT
+# Fri, 08 Jul 2016 18:56:41 GMT
 RUN ln -s dummy.sh /usr/local/bin/iptables-save &&     ln -s dummy.sh /usr/local/bin/lvdisplay &&     ln -s dummy.sh /usr/local/bin/vgdisplay &&     ln -s dummy.sh /usr/local/bin/pvdisplay
-# Fri, 24 Jun 2016 18:24:46 GMT
+# Fri, 08 Jul 2016 18:56:43 GMT
 RUN chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl
-# Fri, 24 Jun 2016 18:24:47 GMT
+# Fri, 08 Jul 2016 18:56:44 GMT
 COPY file:2e05ad6c8605276336133e65ef3a65ce79eaae1794ede978d3de602732e217ac in /
-# Fri, 24 Jun 2016 18:24:48 GMT
+# Fri, 08 Jul 2016 18:56:44 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 24 Jun 2016 18:24:48 GMT
+# Fri, 08 Jul 2016 18:56:45 GMT
 CMD ["couchbase-server"]
-# Fri, 24 Jun 2016 18:24:49 GMT
+# Fri, 08 Jul 2016 18:56:45 GMT
 EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 18093/tcp 8091/tcp 8092/tcp 8093/tcp 8094/tcp
-# Fri, 24 Jun 2016 18:24:49 GMT
+# Fri, 08 Jul 2016 18:56:46 GMT
 VOLUME [/opt/couchbase/var]
 ```
 
 -	Layers:
-	-	`sha256:cc99613160bd0f60c72ad5ba1b726c3d6838e6c9f84353819a5c7ca16cb91e95`  
-		Last Modified: Fri, 24 Jun 2016 17:29:54 GMT  
-		Size: 44.3 MB (44335952 bytes)
-	-	`sha256:7b4fddeacb942c7041959c60b4171c3e33089e53c03039050a9778c4c123a2b3`  
-		Last Modified: Fri, 24 Jun 2016 17:29:42 GMT  
-		Size: 87.8 KB (87796 bytes)
-	-	`sha256:25455fa86fcc120e13503b3a12ba2f805af826f24cc4026261c098cca6242485`  
-		Last Modified: Fri, 24 Jun 2016 17:29:42 GMT  
-		Size: 716.0 B
-	-	`sha256:087ee67bc4a387b3bc1787bf8f6b66c5b020fbfa0b0540a6d9ecb91830e739df`  
-		Last Modified: Fri, 24 Jun 2016 17:29:42 GMT  
-		Size: 680.0 B
-	-	`sha256:9361da8dbc7a47d2e7879de071dc098fdae5c6d42e4e9064f2ffd1f858457242`  
-		Last Modified: Fri, 24 Jun 2016 18:25:03 GMT  
-		Size: 9.5 MB (9491326 bytes)
-	-	`sha256:36235d467ce5a024352dc054079863f098a07376de24e1f0bd37305a220ab947`  
-		Last Modified: Fri, 24 Jun 2016 18:24:59 GMT  
-		Size: 1.7 KB (1709 bytes)
-	-	`sha256:5e9d16ddb2f8c34b547b2611564c3fe46b803ad7e2d9f56a5962b4507f016b02`  
-		Last Modified: Fri, 24 Jun 2016 18:25:56 GMT  
-		Size: 213.1 MB (213104999 bytes)
-	-	`sha256:b4d1343011796f4010f978a69d85fcbfb1d06a50c7a5e0424d217a504e1c7923`  
-		Last Modified: Fri, 24 Jun 2016 18:24:56 GMT  
-		Size: 336.0 B
-	-	`sha256:890b711bbfa6fe6e41feee9387bbaadbc204bc5fd86c7430159dea6cb1f2c482`  
-		Last Modified: Fri, 24 Jun 2016 18:24:56 GMT  
-		Size: 230.0 B
-	-	`sha256:81dbcf59324291ff9ef5672cf9cae162625a113b5ea4d34afbb7c3e2fdc35ea7`  
-		Last Modified: Fri, 24 Jun 2016 18:24:57 GMT  
-		Size: 210.0 B
-	-	`sha256:e724dd8e0df807c1e6c95e90927fcd37e8c94717d07c847001f89e7139a2649f`  
-		Last Modified: Fri, 24 Jun 2016 18:24:59 GMT  
-		Size: 10.3 MB (10275407 bytes)
-	-	`sha256:b92c21937ee573a030d9dc896efb723159ee8be475d576b67b01709074a38901`  
-		Last Modified: Fri, 24 Jun 2016 18:24:56 GMT  
-		Size: 253.0 B
+	-	`sha256:76582687379951c724499c3f12ea80dd492283a4115aa509474880830e9d14f4`  
+		Last Modified: Fri, 08 Jul 2016 18:40:28 GMT  
+		Size: 44.4 MB (44362818 bytes)
+	-	`sha256:54b547b873253c5aa919a602a37828ca99b68d00e9c3ece8d0311648ea3a9e51`  
+		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
+		Size: 78.6 KB (78634 bytes)
+	-	`sha256:6ad0a1551226a44db2a61999149235d5ad61446e96ba2d57382d157857d59b5d`  
+		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
+		Size: 724.0 B
+	-	`sha256:b14b694087e21079904b53feedf66595145b0d5de18dd622162ee871e41cf7f1`  
+		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
+		Size: 681.0 B
+	-	`sha256:444689df2a855b74c963276acc176415acad82bed86e057c414ca59efd29f8f1`  
+		Last Modified: Fri, 08 Jul 2016 18:57:02 GMT  
+		Size: 9.5 MB (9491517 bytes)
+	-	`sha256:efd30118fa06d9c972b199c812e71886fa5bdedbfbc37b4f5627d70551c11ce5`  
+		Last Modified: Fri, 08 Jul 2016 18:56:57 GMT  
+		Size: 1.7 KB (1713 bytes)
+	-	`sha256:f431e25e842e7b5f406ad88fb26857b9f3be861fadbbdd10dcdfa07a6a91c872`  
+		Last Modified: Fri, 08 Jul 2016 18:58:19 GMT  
+		Size: 213.1 MB (213116042 bytes)
+	-	`sha256:61c81ce8c85efba05b6b7ecb6de567d5f25af0d01a3de6aa07b2af4742040c54`  
+		Last Modified: Fri, 08 Jul 2016 18:56:55 GMT  
+		Size: 337.0 B
+	-	`sha256:1e0b89829c635f28b13ebe2026675335a28415234f00f1a3113559f385e93a5a`  
+		Last Modified: Fri, 08 Jul 2016 18:56:55 GMT  
+		Size: 231.0 B
+	-	`sha256:02e589aae685825b084fc692b4cec28ec0c47141a6e51b20c9c01cfdbbf04223`  
+		Last Modified: Fri, 08 Jul 2016 18:56:55 GMT  
+		Size: 211.0 B
+	-	`sha256:8404924a653a0b64770aa08a4462334dfd3893964d2653875c7eb64ccc1f7ddb`  
+		Last Modified: Fri, 08 Jul 2016 18:56:59 GMT  
+		Size: 10.3 MB (10275431 bytes)
+	-	`sha256:ec84eb073b3428cb567e4f9113eb110d1984d94910e9920e5701d559f438c674`  
+		Last Modified: Fri, 08 Jul 2016 18:56:55 GMT  
+		Size: 254.0 B
 
 ## `couchbase:enterprise-3.1.5`
 
 ```console
-$ docker pull couchbase@sha256:a03bd7a89591b59da2274364cf7d4e66759df4064c80e3975a77d91bb4fe6f4e
+$ docker pull couchbase@sha256:4f896daf85cf92861559180ce2ed8e8e2ce963769e446c8cf06f7b06b76f22cf
 ```
 
 -	Platforms:
@@ -711,95 +711,95 @@ $ docker pull couchbase@sha256:a03bd7a89591b59da2274364cf7d4e66759df4064c80e3975
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **277.3 MB (277299614 bytes)**  
+-	Total Size: **277.3 MB (277328593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72e6406ac460ad2d363b8158e1e878e51e6051fdcde6f4ac770cf375e6e37807`
+-	Image ID: `sha256:270d956941cc6a0ac2b0238058a4a9ac7f40c035c66c81531a3e9e7c5033cede`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:28:46 GMT
-ADD file:c15c64f42bbecdf500d0863a770b9dafd2d563dfd956da8302e0f944cccba9c9 in /
-# Fri, 24 Jun 2016 17:28:48 GMT
+# Fri, 08 Jul 2016 18:38:49 GMT
+ADD file:a5827d860bc00fbb0b885782e98401c104f962c243de0390e1db0b51cc61e1c8 in /
+# Fri, 08 Jul 2016 18:38:51 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:28:50 GMT
+# Fri, 08 Jul 2016 18:38:53 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:28:51 GMT
+# Fri, 08 Jul 2016 18:38:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:28:52 GMT
+# Fri, 08 Jul 2016 18:38:55 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:23:32 GMT
+# Fri, 08 Jul 2016 18:55:17 GMT
 MAINTAINER Couchbase Docker Team <docker@couchbase.com>
-# Fri, 24 Jun 2016 18:23:58 GMT
+# Fri, 08 Jul 2016 18:55:48 GMT
 RUN apt-get update &&     apt-get install -yq runit wget python-httplib2 chrpath     lsof lshw sysstat net-tools numactl  &&     apt-get autoremove && apt-get clean &&     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Fri, 24 Jun 2016 18:23:58 GMT
+# Fri, 08 Jul 2016 18:55:49 GMT
 ENV CB_VERSION=3.1.5 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PACKAGE=couchbase-server-enterprise_3.1.5-ubuntu12.04_amd64.deb CB_SHA256=b4a7cbbe8a891debd9f95f165247d783c035d939b3ddedadc73a9cb4563f4fc3 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
-# Fri, 24 Jun 2016 18:24:00 GMT
+# Fri, 08 Jul 2016 18:55:50 GMT
 RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
-# Fri, 24 Jun 2016 18:24:41 GMT
+# Fri, 08 Jul 2016 18:56:37 GMT
 RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&     echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - &&     dpkg -i ./$CB_PACKAGE && rm -f ./$CB_PACKAGE
-# Fri, 24 Jun 2016 18:24:42 GMT
+# Fri, 08 Jul 2016 18:56:38 GMT
 COPY file:7a3bf353a4f0d8eed060426fec4bacdf779a522d4c631430af31c172eb79f95b in /etc/service/couchbase-server/run
-# Fri, 24 Jun 2016 18:24:43 GMT
+# Fri, 08 Jul 2016 18:56:39 GMT
 COPY file:8196fd8e201c5fc3873a0faa3cec28b0d85633e363c0c5788434f5b9a81cfa5b in /usr/local/bin/
-# Fri, 24 Jun 2016 18:24:44 GMT
+# Fri, 08 Jul 2016 18:56:41 GMT
 RUN ln -s dummy.sh /usr/local/bin/iptables-save &&     ln -s dummy.sh /usr/local/bin/lvdisplay &&     ln -s dummy.sh /usr/local/bin/vgdisplay &&     ln -s dummy.sh /usr/local/bin/pvdisplay
-# Fri, 24 Jun 2016 18:24:46 GMT
+# Fri, 08 Jul 2016 18:56:43 GMT
 RUN chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl
-# Fri, 24 Jun 2016 18:24:47 GMT
+# Fri, 08 Jul 2016 18:56:44 GMT
 COPY file:2e05ad6c8605276336133e65ef3a65ce79eaae1794ede978d3de602732e217ac in /
-# Fri, 24 Jun 2016 18:24:48 GMT
+# Fri, 08 Jul 2016 18:56:44 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 24 Jun 2016 18:24:48 GMT
+# Fri, 08 Jul 2016 18:56:45 GMT
 CMD ["couchbase-server"]
-# Fri, 24 Jun 2016 18:24:49 GMT
+# Fri, 08 Jul 2016 18:56:45 GMT
 EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 18093/tcp 8091/tcp 8092/tcp 8093/tcp 8094/tcp
-# Fri, 24 Jun 2016 18:24:49 GMT
+# Fri, 08 Jul 2016 18:56:46 GMT
 VOLUME [/opt/couchbase/var]
 ```
 
 -	Layers:
-	-	`sha256:cc99613160bd0f60c72ad5ba1b726c3d6838e6c9f84353819a5c7ca16cb91e95`  
-		Last Modified: Fri, 24 Jun 2016 17:29:54 GMT  
-		Size: 44.3 MB (44335952 bytes)
-	-	`sha256:7b4fddeacb942c7041959c60b4171c3e33089e53c03039050a9778c4c123a2b3`  
-		Last Modified: Fri, 24 Jun 2016 17:29:42 GMT  
-		Size: 87.8 KB (87796 bytes)
-	-	`sha256:25455fa86fcc120e13503b3a12ba2f805af826f24cc4026261c098cca6242485`  
-		Last Modified: Fri, 24 Jun 2016 17:29:42 GMT  
-		Size: 716.0 B
-	-	`sha256:087ee67bc4a387b3bc1787bf8f6b66c5b020fbfa0b0540a6d9ecb91830e739df`  
-		Last Modified: Fri, 24 Jun 2016 17:29:42 GMT  
-		Size: 680.0 B
-	-	`sha256:9361da8dbc7a47d2e7879de071dc098fdae5c6d42e4e9064f2ffd1f858457242`  
-		Last Modified: Fri, 24 Jun 2016 18:25:03 GMT  
-		Size: 9.5 MB (9491326 bytes)
-	-	`sha256:36235d467ce5a024352dc054079863f098a07376de24e1f0bd37305a220ab947`  
-		Last Modified: Fri, 24 Jun 2016 18:24:59 GMT  
-		Size: 1.7 KB (1709 bytes)
-	-	`sha256:5e9d16ddb2f8c34b547b2611564c3fe46b803ad7e2d9f56a5962b4507f016b02`  
-		Last Modified: Fri, 24 Jun 2016 18:25:56 GMT  
-		Size: 213.1 MB (213104999 bytes)
-	-	`sha256:b4d1343011796f4010f978a69d85fcbfb1d06a50c7a5e0424d217a504e1c7923`  
-		Last Modified: Fri, 24 Jun 2016 18:24:56 GMT  
-		Size: 336.0 B
-	-	`sha256:890b711bbfa6fe6e41feee9387bbaadbc204bc5fd86c7430159dea6cb1f2c482`  
-		Last Modified: Fri, 24 Jun 2016 18:24:56 GMT  
-		Size: 230.0 B
-	-	`sha256:81dbcf59324291ff9ef5672cf9cae162625a113b5ea4d34afbb7c3e2fdc35ea7`  
-		Last Modified: Fri, 24 Jun 2016 18:24:57 GMT  
-		Size: 210.0 B
-	-	`sha256:e724dd8e0df807c1e6c95e90927fcd37e8c94717d07c847001f89e7139a2649f`  
-		Last Modified: Fri, 24 Jun 2016 18:24:59 GMT  
-		Size: 10.3 MB (10275407 bytes)
-	-	`sha256:b92c21937ee573a030d9dc896efb723159ee8be475d576b67b01709074a38901`  
-		Last Modified: Fri, 24 Jun 2016 18:24:56 GMT  
-		Size: 253.0 B
+	-	`sha256:76582687379951c724499c3f12ea80dd492283a4115aa509474880830e9d14f4`  
+		Last Modified: Fri, 08 Jul 2016 18:40:28 GMT  
+		Size: 44.4 MB (44362818 bytes)
+	-	`sha256:54b547b873253c5aa919a602a37828ca99b68d00e9c3ece8d0311648ea3a9e51`  
+		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
+		Size: 78.6 KB (78634 bytes)
+	-	`sha256:6ad0a1551226a44db2a61999149235d5ad61446e96ba2d57382d157857d59b5d`  
+		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
+		Size: 724.0 B
+	-	`sha256:b14b694087e21079904b53feedf66595145b0d5de18dd622162ee871e41cf7f1`  
+		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
+		Size: 681.0 B
+	-	`sha256:444689df2a855b74c963276acc176415acad82bed86e057c414ca59efd29f8f1`  
+		Last Modified: Fri, 08 Jul 2016 18:57:02 GMT  
+		Size: 9.5 MB (9491517 bytes)
+	-	`sha256:efd30118fa06d9c972b199c812e71886fa5bdedbfbc37b4f5627d70551c11ce5`  
+		Last Modified: Fri, 08 Jul 2016 18:56:57 GMT  
+		Size: 1.7 KB (1713 bytes)
+	-	`sha256:f431e25e842e7b5f406ad88fb26857b9f3be861fadbbdd10dcdfa07a6a91c872`  
+		Last Modified: Fri, 08 Jul 2016 18:58:19 GMT  
+		Size: 213.1 MB (213116042 bytes)
+	-	`sha256:61c81ce8c85efba05b6b7ecb6de567d5f25af0d01a3de6aa07b2af4742040c54`  
+		Last Modified: Fri, 08 Jul 2016 18:56:55 GMT  
+		Size: 337.0 B
+	-	`sha256:1e0b89829c635f28b13ebe2026675335a28415234f00f1a3113559f385e93a5a`  
+		Last Modified: Fri, 08 Jul 2016 18:56:55 GMT  
+		Size: 231.0 B
+	-	`sha256:02e589aae685825b084fc692b4cec28ec0c47141a6e51b20c9c01cfdbbf04223`  
+		Last Modified: Fri, 08 Jul 2016 18:56:55 GMT  
+		Size: 211.0 B
+	-	`sha256:8404924a653a0b64770aa08a4462334dfd3893964d2653875c7eb64ccc1f7ddb`  
+		Last Modified: Fri, 08 Jul 2016 18:56:59 GMT  
+		Size: 10.3 MB (10275431 bytes)
+	-	`sha256:ec84eb073b3428cb567e4f9113eb110d1984d94910e9920e5701d559f438c674`  
+		Last Modified: Fri, 08 Jul 2016 18:56:55 GMT  
+		Size: 254.0 B
 
 ## `couchbase:community-3.1.3`
 
 ```console
-$ docker pull couchbase@sha256:32aea42780f4f97249fa2489873eabd8770666d66d0078260436ee9aed62484d
+$ docker pull couchbase@sha256:91d8ca70a5cf96f9b7203d57e909c70f286832c5ad023dccfe9aa88fa0565182
 ```
 
 -	Platforms:
@@ -809,87 +809,87 @@ $ docker pull couchbase@sha256:32aea42780f4f97249fa2489873eabd8770666d66d0078260
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **277.4 MB (277391306 bytes)**  
+-	Total Size: **277.4 MB (277387512 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b05d3cd36d5db3045d09ebedfc55fe4bf23d769979047cb9e53c149ae832819c`
+-	Image ID: `sha256:0d74310e1a00940a4e524cf9cb2729205d76366bb736600eec41eaeb3b94b633`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:28:46 GMT
-ADD file:c15c64f42bbecdf500d0863a770b9dafd2d563dfd956da8302e0f944cccba9c9 in /
-# Fri, 24 Jun 2016 17:28:48 GMT
+# Fri, 08 Jul 2016 18:38:49 GMT
+ADD file:a5827d860bc00fbb0b885782e98401c104f962c243de0390e1db0b51cc61e1c8 in /
+# Fri, 08 Jul 2016 18:38:51 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:28:50 GMT
+# Fri, 08 Jul 2016 18:38:53 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:28:51 GMT
+# Fri, 08 Jul 2016 18:38:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:28:52 GMT
+# Fri, 08 Jul 2016 18:38:55 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:23:32 GMT
+# Fri, 08 Jul 2016 18:55:17 GMT
 MAINTAINER Couchbase Docker Team <docker@couchbase.com>
-# Fri, 24 Jun 2016 18:23:58 GMT
+# Fri, 08 Jul 2016 18:55:48 GMT
 RUN apt-get update &&     apt-get install -yq runit wget python-httplib2 chrpath     lsof lshw sysstat net-tools numactl  &&     apt-get autoremove && apt-get clean &&     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Fri, 24 Jun 2016 18:26:43 GMT
+# Fri, 08 Jul 2016 18:58:43 GMT
 ENV CB_VERSION=3.1.3 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PACKAGE=couchbase-server-community_3.1.3-ubuntu12.04_amd64.deb CB_SHA256=dc919f78a74ae1f627b9bee26e3da70a33ceb1b3fd3259f2ed85b0754e6fcd41 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
-# Fri, 24 Jun 2016 18:26:45 GMT
+# Fri, 08 Jul 2016 18:58:45 GMT
 RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
-# Fri, 24 Jun 2016 18:27:22 GMT
+# Fri, 08 Jul 2016 18:59:25 GMT
 RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&     echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - &&     dpkg -i ./$CB_PACKAGE && rm -f ./$CB_PACKAGE
-# Fri, 24 Jun 2016 18:27:23 GMT
+# Fri, 08 Jul 2016 18:59:27 GMT
 COPY file:7a3bf353a4f0d8eed060426fec4bacdf779a522d4c631430af31c172eb79f95b in /etc/service/couchbase-server/run
-# Fri, 24 Jun 2016 18:27:24 GMT
+# Fri, 08 Jul 2016 18:59:29 GMT
 COPY file:8196fd8e201c5fc3873a0faa3cec28b0d85633e363c0c5788434f5b9a81cfa5b in /usr/local/bin/
-# Fri, 24 Jun 2016 18:27:26 GMT
+# Fri, 08 Jul 2016 18:59:31 GMT
 RUN ln -s dummy.sh /usr/local/bin/iptables-save &&     ln -s dummy.sh /usr/local/bin/lvdisplay &&     ln -s dummy.sh /usr/local/bin/vgdisplay &&     ln -s dummy.sh /usr/local/bin/pvdisplay
-# Fri, 24 Jun 2016 18:27:31 GMT
+# Fri, 08 Jul 2016 18:59:33 GMT
 RUN chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl
-# Fri, 24 Jun 2016 18:27:31 GMT
+# Fri, 08 Jul 2016 18:59:34 GMT
 COPY file:2e05ad6c8605276336133e65ef3a65ce79eaae1794ede978d3de602732e217ac in /
-# Fri, 24 Jun 2016 18:27:32 GMT
+# Fri, 08 Jul 2016 18:59:34 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 24 Jun 2016 18:27:33 GMT
+# Fri, 08 Jul 2016 18:59:35 GMT
 CMD ["couchbase-server"]
-# Fri, 24 Jun 2016 18:27:33 GMT
+# Fri, 08 Jul 2016 18:59:36 GMT
 EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 18093/tcp 8091/tcp 8092/tcp 8093/tcp 8094/tcp
-# Fri, 24 Jun 2016 18:27:34 GMT
+# Fri, 08 Jul 2016 18:59:37 GMT
 VOLUME [/opt/couchbase/var]
 ```
 
 -	Layers:
-	-	`sha256:cc99613160bd0f60c72ad5ba1b726c3d6838e6c9f84353819a5c7ca16cb91e95`  
-		Last Modified: Fri, 24 Jun 2016 17:29:54 GMT  
-		Size: 44.3 MB (44335952 bytes)
-	-	`sha256:7b4fddeacb942c7041959c60b4171c3e33089e53c03039050a9778c4c123a2b3`  
-		Last Modified: Fri, 24 Jun 2016 17:29:42 GMT  
-		Size: 87.8 KB (87796 bytes)
-	-	`sha256:25455fa86fcc120e13503b3a12ba2f805af826f24cc4026261c098cca6242485`  
-		Last Modified: Fri, 24 Jun 2016 17:29:42 GMT  
-		Size: 716.0 B
-	-	`sha256:087ee67bc4a387b3bc1787bf8f6b66c5b020fbfa0b0540a6d9ecb91830e739df`  
-		Last Modified: Fri, 24 Jun 2016 17:29:42 GMT  
-		Size: 680.0 B
-	-	`sha256:9361da8dbc7a47d2e7879de071dc098fdae5c6d42e4e9064f2ffd1f858457242`  
-		Last Modified: Fri, 24 Jun 2016 18:25:03 GMT  
-		Size: 9.5 MB (9491326 bytes)
-	-	`sha256:92ddd9872b1c216d0d91758bf548e4444f1b91b880b54dd49f7f598d51100c94`  
-		Last Modified: Fri, 24 Jun 2016 18:27:43 GMT  
-		Size: 1.7 KB (1710 bytes)
-	-	`sha256:df38126e29084fdb6f71cd94f0af7006d8b2d96966bc27a76d2ab8ac5adf3c06`  
-		Last Modified: Fri, 24 Jun 2016 18:28:38 GMT  
-		Size: 213.2 MB (213196681 bytes)
-	-	`sha256:265ef9422c85068f7bd0933a0abdc67b0551aa2cedf881bf9457f46db96c69e2`  
-		Last Modified: Fri, 24 Jun 2016 18:27:40 GMT  
-		Size: 336.0 B
-	-	`sha256:4c0088e8365d0620f410dc1ff4302f29535a503faceded59b71daf61a4d8e4ee`  
-		Last Modified: Fri, 24 Jun 2016 18:27:40 GMT  
-		Size: 230.0 B
-	-	`sha256:6017d8f373514890b3829790de4fa6cefeedc5336b2589b14ab2ebebace0e89e`  
-		Last Modified: Fri, 24 Jun 2016 18:27:40 GMT  
-		Size: 212.0 B
-	-	`sha256:c6c1409f87267edf568a7c39adac91bcc1426771c902bc115ad8b2a2e9ffe46c`  
-		Last Modified: Fri, 24 Jun 2016 18:27:44 GMT  
-		Size: 10.3 MB (10275415 bytes)
-	-	`sha256:2b341306651afefad90e0bbb98fdc8f629873ae3b3aaf9fc6b68206a5649b842`  
-		Last Modified: Fri, 24 Jun 2016 18:27:40 GMT  
-		Size: 252.0 B
+	-	`sha256:76582687379951c724499c3f12ea80dd492283a4115aa509474880830e9d14f4`  
+		Last Modified: Fri, 08 Jul 2016 18:40:28 GMT  
+		Size: 44.4 MB (44362818 bytes)
+	-	`sha256:54b547b873253c5aa919a602a37828ca99b68d00e9c3ece8d0311648ea3a9e51`  
+		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
+		Size: 78.6 KB (78634 bytes)
+	-	`sha256:6ad0a1551226a44db2a61999149235d5ad61446e96ba2d57382d157857d59b5d`  
+		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
+		Size: 724.0 B
+	-	`sha256:b14b694087e21079904b53feedf66595145b0d5de18dd622162ee871e41cf7f1`  
+		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
+		Size: 681.0 B
+	-	`sha256:444689df2a855b74c963276acc176415acad82bed86e057c414ca59efd29f8f1`  
+		Last Modified: Fri, 08 Jul 2016 18:57:02 GMT  
+		Size: 9.5 MB (9491517 bytes)
+	-	`sha256:332079faf0dee0e72b7205ad5805dbeadf42f788779768f7fd41d06e538a8e00`  
+		Last Modified: Fri, 08 Jul 2016 18:59:47 GMT  
+		Size: 1.7 KB (1713 bytes)
+	-	`sha256:a563837cbf10f20202bc760cc0ea202557642291985f3cedffc87a51474dea95`  
+		Last Modified: Fri, 08 Jul 2016 19:01:05 GMT  
+		Size: 213.2 MB (213174982 bytes)
+	-	`sha256:a5df1762a44416fe171ac77dbf2ac6d8d1bb61435ea8daa0e590600f8de50543`  
+		Last Modified: Fri, 08 Jul 2016 18:59:44 GMT  
+		Size: 333.0 B
+	-	`sha256:e827c674428822a3ad2231a656244bf92dee91f61d293f6f845762dbd41e557e`  
+		Last Modified: Fri, 08 Jul 2016 18:59:44 GMT  
+		Size: 231.0 B
+	-	`sha256:7851ee44cf811e042be237340e5660c6a184f39010542c99194cea767cf147d8`  
+		Last Modified: Fri, 08 Jul 2016 18:59:44 GMT  
+		Size: 210.0 B
+	-	`sha256:aeefa5f9c50deb716daf433df67056261ff9e93dd96c91bf64f486632e00dcb2`  
+		Last Modified: Fri, 08 Jul 2016 18:59:49 GMT  
+		Size: 10.3 MB (10275416 bytes)
+	-	`sha256:308d5071e906948c016444e1b529db38e92dd8aecc0147712040123681f0f46c`  
+		Last Modified: Fri, 08 Jul 2016 18:59:45 GMT  
+		Size: 253.0 B
