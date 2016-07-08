@@ -1,5 +1,4 @@
-Vault
-=====
+# Vault
 
 Vault is a tool for securely accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, and more. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log. For more information, please see:
 
@@ -8,8 +7,7 @@ Vault is a tool for securely accessing secrets. A secret is anything that you wa
 
 %%LOGO%%
 
-Using the Container
-===================
+# Using the Container
 
 We chose Alpine as a lightweight base with a reasonably small surface area for security concerns, but with enough functionality for development and interactive debugging.
 
@@ -25,8 +23,7 @@ The container exposes two optional `VOLUME`s:
 
 The container has a Vault configuration directory set up at `/vault/config` and the server will load any HCL or JSON configuration files placed here by binding a volume or by composing a new image and adding files. Alternatively, configuration can be added by passing the configuration JSON via environment variable `VAULT_LOCAL_CONFIG`. Please note that due to a bug in the current release of Vault (0.6.0), you should *not* use the name `local.json` for any configuration file in this directory.
 
-Running Vault for Development
------------------------------
+## Running Vault for Development
 
 ```console
 $ docker run -d --name=dev-vault vault
@@ -45,8 +42,7 @@ As an example:
 $ docker run -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=127.0.0.1:1234' vault
 ```
 
-Running Vault in Server Mode
-----------------------------
+## Running Vault in Server Mode
 
 ```console
 $ docker run --cap-add=IPC_LOCK  -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}}, "default_lease_ttl": "168h", "max_lease_ttl": "720h"}' vault server
