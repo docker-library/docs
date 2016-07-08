@@ -6,10 +6,10 @@
 -	[`2.0.2`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/2.0/Dockerfile)
 -	[`2.1.2`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/2.1/Dockerfile)
 -	[`2.2.2`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/2.2/Dockerfile)
--	[`2.3.3`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/2.3/Dockerfile)
+-	[`2.3.4`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1e62c7d84cc549883e3404d79356d3fadfdf6c3d/2.3/Dockerfile)
 -	[`5.0.0-alpha4`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/5.0/Dockerfile)
 
-[![](https://badge.imagelayers.io/elasticsearch:latest.svg)](https://imagelayers.io/?images=elasticsearch:1.5.2,elasticsearch:1.6.2,elasticsearch:1.7.5,elasticsearch:2.0.2,elasticsearch:2.1.2,elasticsearch:2.2.2,elasticsearch:2.3.3,elasticsearch:5.0.0-alpha4)
+[![](https://badge.imagelayers.io/elasticsearch:latest.svg)](https://imagelayers.io/?images=elasticsearch:1.5.2,elasticsearch:1.6.2,elasticsearch:1.7.5,elasticsearch:2.0.2,elasticsearch:2.1.2,elasticsearch:2.2.2,elasticsearch:2.3.4,elasticsearch:5.0.0-alpha4)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch).
 
