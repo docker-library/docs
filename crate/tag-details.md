@@ -11,7 +11,7 @@
 ## `crate:latest`
 
 ```console
-$ docker pull crate@sha256:c6661da08f21f747e87a6a949388bd7bad83e9fbccad2c7ebda986c79cca9f5f
+$ docker pull crate@sha256:4681cd28c2fae581be07746df38973481cfbb99263492e9daf5ca3a43a80eccf
 ```
 
 -	Platforms:
@@ -21,79 +21,232 @@ $ docker pull crate@sha256:c6661da08f21f747e87a6a949388bd7bad83e9fbccad2c7ebda98
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.1 MB (148143066 bytes)**  
+-	Total Size: **151.1 MB (151119261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:051359a8141afd6abfd0d4bf641a68a83e9749be3bece80d5940ca90ca1a93a1`
+-	Image ID: `sha256:21e713f83eff4b120cb071e4dbcfda92c3d7625caab51aa6d3aebd6d90f16171`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Thu, 23 Jun 2016 19:55:12 GMT
-ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
-# Thu, 23 Jun 2016 20:01:11 GMT
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Mon, 11 Jul 2016 19:34:59 GMT
 MAINTAINER Crate.IO GmbH office@crate.io
-# Thu, 23 Jun 2016 20:01:11 GMT
-ENV ANT_VERSION=1.9.7
-# Thu, 23 Jun 2016 20:01:11 GMT
-ENV SIGAR_VERSION=1.6.4
-# Thu, 23 Jun 2016 20:01:13 GMT
+# Mon, 11 Jul 2016 19:35:00 GMT
+ENV GOSU_VERSION=1.9
+# Mon, 11 Jul 2016 19:35:18 GMT
+RUN set -x     && apk add --no-cache --virtual .gosu-deps         dpkg         gnupg         curl     && export ARCH=$(echo $(dpkg --print-architecture) | cut -d"-" -f3)     && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH"     && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apk del .gosu-deps
+# Mon, 11 Jul 2016 19:35:19 GMT
 RUN addgroup crate && adduser -G crate -H crate -D
-# Thu, 23 Jun 2016 20:01:14 GMT
-ADD file:ca9d36a1caad530dcca5f621f863c300f4e790c04d027524dd7c6a46665b46b2 in /var/tmp/
-# Thu, 23 Jun 2016 20:04:34 GMT
-RUN set -ex     && apk add --no-cache --virtual .build-deps         tar         git         gcc         cmake         libc-dev         libtirpc-dev         pax-utils         openjdk8         gnupg         perl     && BUILD_DIR=$(mktemp -d)     && cd $BUILD_DIR     && curl -fSL https://www.apache.org/dist/ant/KEYS -o KEYS     && curl -fSL -O https://www.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz.asc     && curl -fSL -O https://www-us.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz     && export GNUPGHOME="$(mktemp -d)"     && gpg --import KEYS     && gpg --batch --verify apache-ant-$ANT_VERSION-bin.tar.gz.asc apache-ant-$ANT_VERSION-bin.tar.gz     && rm -r "$GNUPGHOME" apache-ant-$ANT_VERSION-bin.tar.gz.asc     && tar -zxf apache-ant-$ANT_VERSION-bin.tar.gz     && git clone https://github.com/hyperic/sigar.git --single-branch --branch sigar-$SIGAR_VERSION sigar     && cd sigar     && git apply /var/tmp/sigar_build.patch     && cd bindings/java     && $BUILD_DIR/apache-ant-$ANT_VERSION/bin/ant     && find build -name '*.so*' | xargs install -t /usr/local/lib     && runDeps="$(         scanelf --needed --nobanner --recursive /usr/local             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache --virtual .libsigar-rundeps $runDeps     && apk del .build-deps     && rm -rf $BUILD_DIR
-# Mon, 27 Jun 2016 22:57:20 GMT
-ENV CRATE_VERSION=0.54.11
-# Mon, 27 Jun 2016 22:57:57 GMT
-RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openssl     && apk add --no-cache --virtual .build-deps curl gnupg tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && ln -s /usr/bin/python3 /usr/bin/python     && cp -f /usr/local/lib/*.so /crate/lib/sigar/     && chown -R crate /crate     && apk del .build-deps
-# Mon, 27 Jun 2016 22:57:58 GMT
+# Mon, 11 Jul 2016 19:35:19 GMT
+ENV CRATE_VERSION=0.55.2
+# Mon, 11 Jul 2016 19:35:47 GMT
+RUN apk add --no-cache --virtual .crate-rundeps         openjdk8-jre-base         python3         openssl         sigar     && apk add --no-cache --virtual .build-deps         curl         gnupg         tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && ln -s /usr/bin/python3 /usr/bin/python     && rm /crate/plugins/sigar/lib/libsigar-amd64-linux.so     && chown -R crate /crate     && apk del .build-deps
+# Mon, 11 Jul 2016 19:35:47 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 27 Jun 2016 22:57:59 GMT
+# Mon, 11 Jul 2016 19:35:48 GMT
 VOLUME [/data]
-# Mon, 27 Jun 2016 22:58:00 GMT
+# Mon, 11 Jul 2016 19:35:48 GMT
 ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml
-# Mon, 27 Jun 2016 22:58:01 GMT
+# Mon, 11 Jul 2016 19:35:49 GMT
 ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml
-# Mon, 27 Jun 2016 22:58:01 GMT
+# Mon, 11 Jul 2016 19:35:49 GMT
+COPY file:9517f117528edc569ebb34a2c1d3d7bcf342cb124f3b833a681768549d61ebfb in /
+# Mon, 11 Jul 2016 19:35:50 GMT
 WORKDIR /data
-# Mon, 27 Jun 2016 22:58:06 GMT
+# Mon, 11 Jul 2016 19:35:50 GMT
 EXPOSE 4200/tcp 4300/tcp
-# Mon, 27 Jun 2016 22:58:06 GMT
+# Mon, 11 Jul 2016 19:35:50 GMT
+ENTRYPOINT &{["/docker-entrypoint.sh"]}
+# Mon, 11 Jul 2016 19:35:51 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
-		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
-		Size: 2.3 MB (2320188 bytes)
-	-	`sha256:05b1790998ceeefdec4a3b226db6ac1cb8da5fa7a90695fa8d62cd5ab91cdee7`  
-		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
-		Size: 22.1 KB (22081 bytes)
-	-	`sha256:3eb8d53046d057032545fa606944aa3b012d79877d585da11d405d44a4c7eabf`  
-		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
-		Size: 820.0 B
-	-	`sha256:6b0389d91d646d4ff29433351ec68b780fc1876a2b846f1dd7c2e54fa52dad73`  
-		Last Modified: Thu, 23 Jun 2016 20:05:27 GMT  
-		Size: 1.1 MB (1071956 bytes)
-	-	`sha256:a8c270d741b485a9a1ade69545c438113fe25d9648789f31b9046c0d495fc327`  
-		Last Modified: Mon, 27 Jun 2016 22:58:38 GMT  
-		Size: 144.7 MB (144727294 bytes)
-	-	`sha256:8e877ffe2af91b29b8c1a9c817c31b0b5d350e6b32282b70e78db5640cd87d21`  
-		Last Modified: Mon, 27 Jun 2016 22:58:14 GMT  
-		Size: 235.0 B
-	-	`sha256:b4cf72fef5b307dcd9df0e346a188534aae42dda7064448cf701b833c40b1632`  
-		Last Modified: Mon, 27 Jun 2016 22:58:14 GMT  
-		Size: 400.0 B
-	-	`sha256:406f0193f4c2caee97013f846c5a21a84674054ba9b6ac2de9ab006ffb56309e`  
-		Last Modified: Mon, 27 Jun 2016 22:58:14 GMT  
-		Size: 92.0 B
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:d3fc8c0e2d5743f55e355862d4d9eb8113f368a69446fb2e80db590744f1b014`  
+		Last Modified: Mon, 11 Jul 2016 19:36:02 GMT  
+		Size: 581.8 KB (581764 bytes)
+	-	`sha256:34791ba5b6d32b7f3559a6301bf26d3d5b3c4e948c1474266b975dd0846c0d12`  
+		Last Modified: Mon, 11 Jul 2016 19:36:02 GMT  
+		Size: 22.2 KB (22199 bytes)
+	-	`sha256:13ec3e75803286be74991c9499ffd6a47a93798e64c9adcef03b096df31fa8bf`  
+		Last Modified: Mon, 11 Jul 2016 19:36:19 GMT  
+		Size: 148.2 MB (148204058 bytes)
+	-	`sha256:43f5bffc3bed691b0b18b4fee87b065024d12360e5e2a1273026f9ada59fb2ca`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 234.0 B
+	-	`sha256:34cd262663a68934fd055c4525e4944d789f26b89b28e457bc8359c331afd5de`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 399.0 B
+	-	`sha256:c6dc91865039c332c5a60f5d88f9589bf076f2b9f6c6b6d70ab2b9461e7368b5`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 231.0 B
+	-	`sha256:c2dd13968a0be952da2cb55302dcd4983161508c3c31b6f0c2c9c577c97ccb99`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 90.0 B
 
 ## `crate:0.55`
 
-**does not exist** (yet?)
+```console
+$ docker pull crate@sha256:4681cd28c2fae581be07746df38973481cfbb99263492e9daf5ca3a43a80eccf
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `crate:0.55` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **151.1 MB (151119261 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:21e713f83eff4b120cb071e4dbcfda92c3d7625caab51aa6d3aebd6d90f16171`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["crate"]`
+
+```dockerfile
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Mon, 11 Jul 2016 19:34:59 GMT
+MAINTAINER Crate.IO GmbH office@crate.io
+# Mon, 11 Jul 2016 19:35:00 GMT
+ENV GOSU_VERSION=1.9
+# Mon, 11 Jul 2016 19:35:18 GMT
+RUN set -x     && apk add --no-cache --virtual .gosu-deps         dpkg         gnupg         curl     && export ARCH=$(echo $(dpkg --print-architecture) | cut -d"-" -f3)     && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH"     && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apk del .gosu-deps
+# Mon, 11 Jul 2016 19:35:19 GMT
+RUN addgroup crate && adduser -G crate -H crate -D
+# Mon, 11 Jul 2016 19:35:19 GMT
+ENV CRATE_VERSION=0.55.2
+# Mon, 11 Jul 2016 19:35:47 GMT
+RUN apk add --no-cache --virtual .crate-rundeps         openjdk8-jre-base         python3         openssl         sigar     && apk add --no-cache --virtual .build-deps         curl         gnupg         tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && ln -s /usr/bin/python3 /usr/bin/python     && rm /crate/plugins/sigar/lib/libsigar-amd64-linux.so     && chown -R crate /crate     && apk del .build-deps
+# Mon, 11 Jul 2016 19:35:47 GMT
+ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Mon, 11 Jul 2016 19:35:48 GMT
+VOLUME [/data]
+# Mon, 11 Jul 2016 19:35:48 GMT
+ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml
+# Mon, 11 Jul 2016 19:35:49 GMT
+ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml
+# Mon, 11 Jul 2016 19:35:49 GMT
+COPY file:9517f117528edc569ebb34a2c1d3d7bcf342cb124f3b833a681768549d61ebfb in /
+# Mon, 11 Jul 2016 19:35:50 GMT
+WORKDIR /data
+# Mon, 11 Jul 2016 19:35:50 GMT
+EXPOSE 4200/tcp 4300/tcp
+# Mon, 11 Jul 2016 19:35:50 GMT
+ENTRYPOINT &{["/docker-entrypoint.sh"]}
+# Mon, 11 Jul 2016 19:35:51 GMT
+CMD ["crate"]
+```
+
+-	Layers:
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:d3fc8c0e2d5743f55e355862d4d9eb8113f368a69446fb2e80db590744f1b014`  
+		Last Modified: Mon, 11 Jul 2016 19:36:02 GMT  
+		Size: 581.8 KB (581764 bytes)
+	-	`sha256:34791ba5b6d32b7f3559a6301bf26d3d5b3c4e948c1474266b975dd0846c0d12`  
+		Last Modified: Mon, 11 Jul 2016 19:36:02 GMT  
+		Size: 22.2 KB (22199 bytes)
+	-	`sha256:13ec3e75803286be74991c9499ffd6a47a93798e64c9adcef03b096df31fa8bf`  
+		Last Modified: Mon, 11 Jul 2016 19:36:19 GMT  
+		Size: 148.2 MB (148204058 bytes)
+	-	`sha256:43f5bffc3bed691b0b18b4fee87b065024d12360e5e2a1273026f9ada59fb2ca`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 234.0 B
+	-	`sha256:34cd262663a68934fd055c4525e4944d789f26b89b28e457bc8359c331afd5de`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 399.0 B
+	-	`sha256:c6dc91865039c332c5a60f5d88f9589bf076f2b9f6c6b6d70ab2b9461e7368b5`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 231.0 B
+	-	`sha256:c2dd13968a0be952da2cb55302dcd4983161508c3c31b6f0c2c9c577c97ccb99`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 90.0 B
 
 ## `crate:0.55.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull crate@sha256:4681cd28c2fae581be07746df38973481cfbb99263492e9daf5ca3a43a80eccf
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `crate:0.55.2` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **151.1 MB (151119261 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:21e713f83eff4b120cb071e4dbcfda92c3d7625caab51aa6d3aebd6d90f16171`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["crate"]`
+
+```dockerfile
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Mon, 11 Jul 2016 19:34:59 GMT
+MAINTAINER Crate.IO GmbH office@crate.io
+# Mon, 11 Jul 2016 19:35:00 GMT
+ENV GOSU_VERSION=1.9
+# Mon, 11 Jul 2016 19:35:18 GMT
+RUN set -x     && apk add --no-cache --virtual .gosu-deps         dpkg         gnupg         curl     && export ARCH=$(echo $(dpkg --print-architecture) | cut -d"-" -f3)     && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH"     && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apk del .gosu-deps
+# Mon, 11 Jul 2016 19:35:19 GMT
+RUN addgroup crate && adduser -G crate -H crate -D
+# Mon, 11 Jul 2016 19:35:19 GMT
+ENV CRATE_VERSION=0.55.2
+# Mon, 11 Jul 2016 19:35:47 GMT
+RUN apk add --no-cache --virtual .crate-rundeps         openjdk8-jre-base         python3         openssl         sigar     && apk add --no-cache --virtual .build-deps         curl         gnupg         tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && ln -s /usr/bin/python3 /usr/bin/python     && rm /crate/plugins/sigar/lib/libsigar-amd64-linux.so     && chown -R crate /crate     && apk del .build-deps
+# Mon, 11 Jul 2016 19:35:47 GMT
+ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Mon, 11 Jul 2016 19:35:48 GMT
+VOLUME [/data]
+# Mon, 11 Jul 2016 19:35:48 GMT
+ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml
+# Mon, 11 Jul 2016 19:35:49 GMT
+ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml
+# Mon, 11 Jul 2016 19:35:49 GMT
+COPY file:9517f117528edc569ebb34a2c1d3d7bcf342cb124f3b833a681768549d61ebfb in /
+# Mon, 11 Jul 2016 19:35:50 GMT
+WORKDIR /data
+# Mon, 11 Jul 2016 19:35:50 GMT
+EXPOSE 4200/tcp 4300/tcp
+# Mon, 11 Jul 2016 19:35:50 GMT
+ENTRYPOINT &{["/docker-entrypoint.sh"]}
+# Mon, 11 Jul 2016 19:35:51 GMT
+CMD ["crate"]
+```
+
+-	Layers:
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:d3fc8c0e2d5743f55e355862d4d9eb8113f368a69446fb2e80db590744f1b014`  
+		Last Modified: Mon, 11 Jul 2016 19:36:02 GMT  
+		Size: 581.8 KB (581764 bytes)
+	-	`sha256:34791ba5b6d32b7f3559a6301bf26d3d5b3c4e948c1474266b975dd0846c0d12`  
+		Last Modified: Mon, 11 Jul 2016 19:36:02 GMT  
+		Size: 22.2 KB (22199 bytes)
+	-	`sha256:13ec3e75803286be74991c9499ffd6a47a93798e64c9adcef03b096df31fa8bf`  
+		Last Modified: Mon, 11 Jul 2016 19:36:19 GMT  
+		Size: 148.2 MB (148204058 bytes)
+	-	`sha256:43f5bffc3bed691b0b18b4fee87b065024d12360e5e2a1273026f9ada59fb2ca`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 234.0 B
+	-	`sha256:34cd262663a68934fd055c4525e4944d789f26b89b28e457bc8359c331afd5de`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 399.0 B
+	-	`sha256:c6dc91865039c332c5a60f5d88f9589bf076f2b9f6c6b6d70ab2b9461e7368b5`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 231.0 B
+	-	`sha256:c2dd13968a0be952da2cb55302dcd4983161508c3c31b6f0c2c9c577c97ccb99`  
+		Last Modified: Mon, 11 Jul 2016 19:35:59 GMT  
+		Size: 90.0 B
 
 ## `crate:0.52`
 
