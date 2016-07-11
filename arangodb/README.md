@@ -4,7 +4,7 @@
 -	[`2.6`, `2.6.10` (*jessie/2.6.10/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/803663b157696616d70e2bb44ce6e256f912e3a6/jessie/2.6.10/Dockerfile)
 -	[`2.7`, `2.7.5` (*jessie/2.7.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/dbfcc5f3edb37f622a2acd221b58106547b05fae/jessie/2.7.5/Dockerfile)
 -	[`2.8`, `2.8.9` (*jessie/2.8.9/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/b29a6ffa3d8914781f24d7468d7ff368cabac623/jessie/2.8.9/Dockerfile)
--	[`3.0`, `3.0.1`, `latest` (*jessie/3.0.1/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/fc8a624249c8916376b863e58ab2584bed3715d5/jessie/3.0.1/Dockerfile)
+-	[`3.0`, `3.0.2`, `latest` (*jessie/3.0.2/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/d2a6a5549265917e5d0f8f62482a4cd1e3752696/jessie/3.0.2/Dockerfile)
 
 [![](https://badge.imagelayers.io/arangodb:latest.svg)](https://imagelayers.io/?images=arangodb:2.5.5,arangodb:2.6,arangodb:2.7,arangodb:2.8,arangodb:3.0)
 
@@ -114,7 +114,7 @@ unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb arangod --help
 
 ## Persistent Data
 
-ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb-apps3` as apps directory to store any extensions. These directories are marked as docker volumes.
+ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
 
 Please note that the old version 2.x used `/var/lib/arangodb` and `/var/lib/arangodb-apps`. We will refer to the 3.x variant in this document. In case you are starting a 2.x image just replace it with the 2.x variant.
 

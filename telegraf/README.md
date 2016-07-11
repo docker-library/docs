@@ -3,10 +3,10 @@
 -	[`0.12`, `0.12.0` (*0.12/Dockerfile*)](https://github.com/influxdata/telegraf-docker/blob/9f5442edabacd2a72627246e7ee8c7d276bd0f28/0.12/Dockerfile)
 -	[`0.13`, `0.13.1`, `latest` (*telegraf/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/telegraf/0.13/Dockerfile)
 -	[`0.13-alpine`, `0.13.1-alpine`, `alpine` (*telegraf/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/telegraf/0.13/alpine/Dockerfile)
--	[`1.0.0-beta1` (*telegraf/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/telegraf/1.0/Dockerfile)
--	[`1.0.0-beta1-alpine` (*telegraf/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/telegraf/1.0/alpine/Dockerfile)
+-	[`1.0.0-beta2` (*telegraf/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/c86e302d706350f7dac93e4c8103c069437d3c75/telegraf/1.0/Dockerfile)
+-	[`1.0.0-beta2-alpine` (*telegraf/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/c86e302d706350f7dac93e4c8103c069437d3c75/telegraf/1.0/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/telegraf:latest.svg)](https://imagelayers.io/?images=telegraf:0.12,telegraf:0.13,telegraf:0.13-alpine,telegraf:1.0.0-beta1,telegraf:1.0.0-beta1-alpine)
+[![](https://badge.imagelayers.io/telegraf:latest.svg)](https://imagelayers.io/?images=telegraf:0.12,telegraf:0.13,telegraf:0.13-alpine,telegraf:1.0.0-beta2,telegraf:1.0.0-beta2-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/telegraf`)](https://github.com/docker-library/official-images/blob/master/library/telegraf). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftelegraf).
 
