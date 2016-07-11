@@ -10,8 +10,8 @@
 -	[`telegraf:0.13-alpine`](#telegraf013-alpine)
 -	[`telegraf:0.13.1-alpine`](#telegraf0131-alpine)
 -	[`telegraf:alpine`](#telegrafalpine)
--	[`telegraf:1.0.0-beta1`](#telegraf100-beta1)
--	[`telegraf:1.0.0-beta1-alpine`](#telegraf100-beta1-alpine)
+-	[`telegraf:1.0.0-beta2`](#telegraf100-beta2)
+-	[`telegraf:1.0.0-beta2-alpine`](#telegraf100-beta2-alpine)
 
 ## `telegraf:0.12`
 
@@ -524,22 +524,22 @@ CMD ["telegraf"]
 		Last Modified: Thu, 23 Jun 2016 22:14:45 GMT  
 		Size: 181.0 B
 
-## `telegraf:1.0.0-beta1`
+## `telegraf:1.0.0-beta2`
 
 ```console
-$ docker pull telegraf@sha256:c248cfddbc5da6c7960e92d134ddc29e32e5088a3e7497986b6db72fd8b4d02b
+$ docker pull telegraf@sha256:14f29d0e70c48c7d327e0aa44d5b64be9fba4a45786bb23caa77d047b2b8e58e
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `telegraf:1.0.0-beta1` - linux; amd64
+### `telegraf:1.0.0-beta2` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.8 MB (79843548 bytes)**  
+-	Total Size: **79.9 MB (79886448 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f4a4a4f74581c07dea6940c269745f014b2772f00f17b921dcef4df445c435d`
+-	Image ID: `sha256:933328bcb1101bc98bc77382fefb7afa271c77fa26502ac5b8bf59b577130bc9`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -558,17 +558,17 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 24 Jun 2016 20:18:54 GMT
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
-# Fri, 24 Jun 2016 20:19:27 GMT
-ENV TELEGRAF_VERSION=1.0.0-beta1
-# Fri, 24 Jun 2016 20:19:30 GMT
+# Mon, 11 Jul 2016 18:28:21 GMT
+ENV TELEGRAF_VERSION=1.0.0-beta2
+# Mon, 11 Jul 2016 18:28:28 GMT
 RUN wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}_amd64.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}_amd64.deb.asc telegraf_${TELEGRAF_VERSION}_amd64.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}_amd64.deb &&     rm -f telegraf_${TELEGRAF_VERSION}_amd64.deb*
-# Fri, 24 Jun 2016 20:19:31 GMT
+# Mon, 11 Jul 2016 18:28:28 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Fri, 24 Jun 2016 20:19:31 GMT
+# Mon, 11 Jul 2016 18:28:29 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh
-# Fri, 24 Jun 2016 20:19:32 GMT
+# Mon, 11 Jul 2016 18:28:30 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 24 Jun 2016 20:19:32 GMT
+# Mon, 11 Jul 2016 18:28:30 GMT
 CMD ["telegraf"]
 ```
 
@@ -591,46 +591,46 @@ CMD ["telegraf"]
 	-	`sha256:422ae8561244f04c994a83787e1fdf77ae8f1ebe8e5c060d81ccd967a9315de0`  
 		Last Modified: Fri, 24 Jun 2016 20:19:08 GMT  
 		Size: 6.9 KB (6856 bytes)
-	-	`sha256:cbdb84de9d980f66a44b2c68744a57af9e39fb95b99fd2676ad884f81a928dc6`  
-		Last Modified: Fri, 24 Jun 2016 20:19:43 GMT  
-		Size: 9.4 MB (9414833 bytes)
-	-	`sha256:3c8acebce1bf64e1a6f376a3cc40d5f139ee0913d6f6adb68c063124f524b275`  
-		Last Modified: Fri, 24 Jun 2016 20:19:39 GMT  
-		Size: 185.0 B
+	-	`sha256:4ded4c96008a5aeac654f717b42955843c69e2081dec987d26392ee35c9ec1fc`  
+		Last Modified: Mon, 11 Jul 2016 18:31:03 GMT  
+		Size: 9.5 MB (9457732 bytes)
+	-	`sha256:42161f916dd0b12dd4ead064591ef269aca16d5a3146830f8da2fe4d9be5113a`  
+		Last Modified: Mon, 11 Jul 2016 18:30:59 GMT  
+		Size: 186.0 B
 
-## `telegraf:1.0.0-beta1-alpine`
+## `telegraf:1.0.0-beta2-alpine`
 
 ```console
-$ docker pull telegraf@sha256:6b6f48778fd6ec75a4bc1fe7ce34331da2d67d66dbe68293830b76accf4993aa
+$ docker pull telegraf@sha256:8f55824005f0b397c7468f279adb9ff0d7eda604834045a27fb3b95b2860ceb4
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `telegraf:1.0.0-beta1-alpine` - linux; amd64
+### `telegraf:1.0.0-beta2-alpine` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.0 MB (9047057 bytes)**  
+-	Total Size: **9.1 MB (9082910 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83470ac6ee5dee3a84d779c988744cee2b298458d4434236fc1e089e11f25fdb`
+-	Image ID: `sha256:6374b41539850bd56ef4881dfb2512a2e582a1155bda876730274f832e8898ac`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
 # Thu, 23 Jun 2016 19:55:18 GMT
 ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
-# Thu, 23 Jun 2016 22:15:09 GMT
-ENV TELEGRAF_VERSION=1.0.0-beta1
-# Thu, 23 Jun 2016 22:15:21 GMT
+# Mon, 11 Jul 2016 18:28:31 GMT
+ENV TELEGRAF_VERSION=1.0.0-beta2
+# Mon, 11 Jul 2016 18:29:40 GMT
 RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&     update-ca-certificates &&     gpg --keyserver hkp://ha.pool.sks-keyservers.net         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     gpg --batch --verify telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     mkdir -p /usr/src /etc/telegraf &&     tar -C /usr/src -xzf telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     mv /usr/src/telegraf*/telegraf.conf /etc/telegraf/ &&     chmod +x /usr/src/telegraf*/* &&     cp -a /usr/src/telegraf*/* /usr/bin/ &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps
-# Thu, 23 Jun 2016 22:15:22 GMT
+# Mon, 11 Jul 2016 18:29:41 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Thu, 23 Jun 2016 22:15:23 GMT
+# Mon, 11 Jul 2016 18:29:41 GMT
 COPY file:43e6828e001b57ab465cff8dfd3d30830289afe7ca5944b61641956bfe38cd1c in /entrypoint.sh
-# Thu, 23 Jun 2016 22:15:23 GMT
+# Mon, 11 Jul 2016 18:29:42 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 23 Jun 2016 22:15:24 GMT
+# Mon, 11 Jul 2016 18:29:43 GMT
 CMD ["telegraf"]
 ```
 
@@ -638,9 +638,9 @@ CMD ["telegraf"]
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
 		Size: 2.3 MB (2310286 bytes)
-	-	`sha256:857b4f8439d557e78ef8f6a20cca7b84bcc01eb8e328b7596402221cc72fce3b`  
-		Last Modified: Thu, 23 Jun 2016 22:15:32 GMT  
-		Size: 6.7 MB (6736588 bytes)
-	-	`sha256:05ee61c0b064402df8b64856b15f46f42fc4957e52dec64a88b69ea2ff277e39`  
-		Last Modified: Thu, 23 Jun 2016 22:15:30 GMT  
-		Size: 183.0 B
+	-	`sha256:be126e5563dd21af6a79282a08a519c555945e2c52e68cffff1697fc87cf891e`  
+		Last Modified: Mon, 11 Jul 2016 18:31:19 GMT  
+		Size: 6.8 MB (6772442 bytes)
+	-	`sha256:e04d59bb5a56f0b88a4455b17a47918d1f0330da17e450e6f1cfe491e3c74395`  
+		Last Modified: Mon, 11 Jul 2016 18:31:17 GMT  
+		Size: 182.0 B

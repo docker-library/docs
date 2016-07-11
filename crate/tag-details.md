@@ -3,8 +3,8 @@
 # Tags of `crate`
 
 -	[`crate:latest`](#cratelatest)
--	[`crate:0.54`](#crate054)
--	[`crate:0.54.11`](#crate05411)
+-	[`crate:0.55`](#crate055)
+-	[`crate:0.55.2`](#crate0552)
 -	[`crate:0.52`](#crate052)
 -	[`crate:0.52.4`](#crate0524)
 
@@ -87,163 +87,13 @@ CMD ["crate"]
 		Last Modified: Mon, 27 Jun 2016 22:58:14 GMT  
 		Size: 92.0 B
 
-## `crate:0.54`
+## `crate:0.55`
 
-```console
-$ docker pull crate@sha256:c6661da08f21f747e87a6a949388bd7bad83e9fbccad2c7ebda986c79cca9f5f
-```
+**does not exist** (yet?)
 
--	Platforms:
-	-	linux; amd64
+## `crate:0.55.2`
 
-### `crate:0.54` - linux; amd64
-
--	Docker Version: 1.10.3
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.1 MB (148143066 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:051359a8141afd6abfd0d4bf641a68a83e9749be3bece80d5940ca90ca1a93a1`
--	Default Command: `["crate"]`
-
-```dockerfile
-# Thu, 23 Jun 2016 19:55:12 GMT
-ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
-# Thu, 23 Jun 2016 20:01:11 GMT
-MAINTAINER Crate.IO GmbH office@crate.io
-# Thu, 23 Jun 2016 20:01:11 GMT
-ENV ANT_VERSION=1.9.7
-# Thu, 23 Jun 2016 20:01:11 GMT
-ENV SIGAR_VERSION=1.6.4
-# Thu, 23 Jun 2016 20:01:13 GMT
-RUN addgroup crate && adduser -G crate -H crate -D
-# Thu, 23 Jun 2016 20:01:14 GMT
-ADD file:ca9d36a1caad530dcca5f621f863c300f4e790c04d027524dd7c6a46665b46b2 in /var/tmp/
-# Thu, 23 Jun 2016 20:04:34 GMT
-RUN set -ex     && apk add --no-cache --virtual .build-deps         tar         git         gcc         cmake         libc-dev         libtirpc-dev         pax-utils         openjdk8         gnupg         perl     && BUILD_DIR=$(mktemp -d)     && cd $BUILD_DIR     && curl -fSL https://www.apache.org/dist/ant/KEYS -o KEYS     && curl -fSL -O https://www.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz.asc     && curl -fSL -O https://www-us.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz     && export GNUPGHOME="$(mktemp -d)"     && gpg --import KEYS     && gpg --batch --verify apache-ant-$ANT_VERSION-bin.tar.gz.asc apache-ant-$ANT_VERSION-bin.tar.gz     && rm -r "$GNUPGHOME" apache-ant-$ANT_VERSION-bin.tar.gz.asc     && tar -zxf apache-ant-$ANT_VERSION-bin.tar.gz     && git clone https://github.com/hyperic/sigar.git --single-branch --branch sigar-$SIGAR_VERSION sigar     && cd sigar     && git apply /var/tmp/sigar_build.patch     && cd bindings/java     && $BUILD_DIR/apache-ant-$ANT_VERSION/bin/ant     && find build -name '*.so*' | xargs install -t /usr/local/lib     && runDeps="$(         scanelf --needed --nobanner --recursive /usr/local             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache --virtual .libsigar-rundeps $runDeps     && apk del .build-deps     && rm -rf $BUILD_DIR
-# Mon, 27 Jun 2016 22:57:20 GMT
-ENV CRATE_VERSION=0.54.11
-# Mon, 27 Jun 2016 22:57:57 GMT
-RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openssl     && apk add --no-cache --virtual .build-deps curl gnupg tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && ln -s /usr/bin/python3 /usr/bin/python     && cp -f /usr/local/lib/*.so /crate/lib/sigar/     && chown -R crate /crate     && apk del .build-deps
-# Mon, 27 Jun 2016 22:57:58 GMT
-ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 27 Jun 2016 22:57:59 GMT
-VOLUME [/data]
-# Mon, 27 Jun 2016 22:58:00 GMT
-ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml
-# Mon, 27 Jun 2016 22:58:01 GMT
-ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml
-# Mon, 27 Jun 2016 22:58:01 GMT
-WORKDIR /data
-# Mon, 27 Jun 2016 22:58:06 GMT
-EXPOSE 4200/tcp 4300/tcp
-# Mon, 27 Jun 2016 22:58:06 GMT
-CMD ["crate"]
-```
-
--	Layers:
-	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
-		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
-		Size: 2.3 MB (2320188 bytes)
-	-	`sha256:05b1790998ceeefdec4a3b226db6ac1cb8da5fa7a90695fa8d62cd5ab91cdee7`  
-		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
-		Size: 22.1 KB (22081 bytes)
-	-	`sha256:3eb8d53046d057032545fa606944aa3b012d79877d585da11d405d44a4c7eabf`  
-		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
-		Size: 820.0 B
-	-	`sha256:6b0389d91d646d4ff29433351ec68b780fc1876a2b846f1dd7c2e54fa52dad73`  
-		Last Modified: Thu, 23 Jun 2016 20:05:27 GMT  
-		Size: 1.1 MB (1071956 bytes)
-	-	`sha256:a8c270d741b485a9a1ade69545c438113fe25d9648789f31b9046c0d495fc327`  
-		Last Modified: Mon, 27 Jun 2016 22:58:38 GMT  
-		Size: 144.7 MB (144727294 bytes)
-	-	`sha256:8e877ffe2af91b29b8c1a9c817c31b0b5d350e6b32282b70e78db5640cd87d21`  
-		Last Modified: Mon, 27 Jun 2016 22:58:14 GMT  
-		Size: 235.0 B
-	-	`sha256:b4cf72fef5b307dcd9df0e346a188534aae42dda7064448cf701b833c40b1632`  
-		Last Modified: Mon, 27 Jun 2016 22:58:14 GMT  
-		Size: 400.0 B
-	-	`sha256:406f0193f4c2caee97013f846c5a21a84674054ba9b6ac2de9ab006ffb56309e`  
-		Last Modified: Mon, 27 Jun 2016 22:58:14 GMT  
-		Size: 92.0 B
-
-## `crate:0.54.11`
-
-```console
-$ docker pull crate@sha256:c6661da08f21f747e87a6a949388bd7bad83e9fbccad2c7ebda986c79cca9f5f
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `crate:0.54.11` - linux; amd64
-
--	Docker Version: 1.10.3
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.1 MB (148143066 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:051359a8141afd6abfd0d4bf641a68a83e9749be3bece80d5940ca90ca1a93a1`
--	Default Command: `["crate"]`
-
-```dockerfile
-# Thu, 23 Jun 2016 19:55:12 GMT
-ADD file:86864edb9037700501e6e016262c29922e0c67762b4525901ca5a8194a078bfb in /
-# Thu, 23 Jun 2016 20:01:11 GMT
-MAINTAINER Crate.IO GmbH office@crate.io
-# Thu, 23 Jun 2016 20:01:11 GMT
-ENV ANT_VERSION=1.9.7
-# Thu, 23 Jun 2016 20:01:11 GMT
-ENV SIGAR_VERSION=1.6.4
-# Thu, 23 Jun 2016 20:01:13 GMT
-RUN addgroup crate && adduser -G crate -H crate -D
-# Thu, 23 Jun 2016 20:01:14 GMT
-ADD file:ca9d36a1caad530dcca5f621f863c300f4e790c04d027524dd7c6a46665b46b2 in /var/tmp/
-# Thu, 23 Jun 2016 20:04:34 GMT
-RUN set -ex     && apk add --no-cache --virtual .build-deps         tar         git         gcc         cmake         libc-dev         libtirpc-dev         pax-utils         openjdk8         gnupg         perl     && BUILD_DIR=$(mktemp -d)     && cd $BUILD_DIR     && curl -fSL https://www.apache.org/dist/ant/KEYS -o KEYS     && curl -fSL -O https://www.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz.asc     && curl -fSL -O https://www-us.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz     && export GNUPGHOME="$(mktemp -d)"     && gpg --import KEYS     && gpg --batch --verify apache-ant-$ANT_VERSION-bin.tar.gz.asc apache-ant-$ANT_VERSION-bin.tar.gz     && rm -r "$GNUPGHOME" apache-ant-$ANT_VERSION-bin.tar.gz.asc     && tar -zxf apache-ant-$ANT_VERSION-bin.tar.gz     && git clone https://github.com/hyperic/sigar.git --single-branch --branch sigar-$SIGAR_VERSION sigar     && cd sigar     && git apply /var/tmp/sigar_build.patch     && cd bindings/java     && $BUILD_DIR/apache-ant-$ANT_VERSION/bin/ant     && find build -name '*.so*' | xargs install -t /usr/local/lib     && runDeps="$(         scanelf --needed --nobanner --recursive /usr/local             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache --virtual .libsigar-rundeps $runDeps     && apk del .build-deps     && rm -rf $BUILD_DIR
-# Mon, 27 Jun 2016 22:57:20 GMT
-ENV CRATE_VERSION=0.54.11
-# Mon, 27 Jun 2016 22:57:57 GMT
-RUN apk add --no-cache --virtual .crate-rundeps openjdk8-jre-base python3 openssl     && apk add --no-cache --virtual .build-deps curl gnupg tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && ln -s /usr/bin/python3 /usr/bin/python     && cp -f /usr/local/lib/*.so /crate/lib/sigar/     && chown -R crate /crate     && apk del .build-deps
-# Mon, 27 Jun 2016 22:57:58 GMT
-ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 27 Jun 2016 22:57:59 GMT
-VOLUME [/data]
-# Mon, 27 Jun 2016 22:58:00 GMT
-ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml
-# Mon, 27 Jun 2016 22:58:01 GMT
-ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml
-# Mon, 27 Jun 2016 22:58:01 GMT
-WORKDIR /data
-# Mon, 27 Jun 2016 22:58:06 GMT
-EXPOSE 4200/tcp 4300/tcp
-# Mon, 27 Jun 2016 22:58:06 GMT
-CMD ["crate"]
-```
-
--	Layers:
-	-	`sha256:6c123565ed5e79b6c944d6da64bd785ad3ec03c6e853dcb733254aebb215ae55`  
-		Last Modified: Thu, 23 Jun 2016 19:56:02 GMT  
-		Size: 2.3 MB (2320188 bytes)
-	-	`sha256:05b1790998ceeefdec4a3b226db6ac1cb8da5fa7a90695fa8d62cd5ab91cdee7`  
-		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
-		Size: 22.1 KB (22081 bytes)
-	-	`sha256:3eb8d53046d057032545fa606944aa3b012d79877d585da11d405d44a4c7eabf`  
-		Last Modified: Thu, 23 Jun 2016 20:05:28 GMT  
-		Size: 820.0 B
-	-	`sha256:6b0389d91d646d4ff29433351ec68b780fc1876a2b846f1dd7c2e54fa52dad73`  
-		Last Modified: Thu, 23 Jun 2016 20:05:27 GMT  
-		Size: 1.1 MB (1071956 bytes)
-	-	`sha256:a8c270d741b485a9a1ade69545c438113fe25d9648789f31b9046c0d495fc327`  
-		Last Modified: Mon, 27 Jun 2016 22:58:38 GMT  
-		Size: 144.7 MB (144727294 bytes)
-	-	`sha256:8e877ffe2af91b29b8c1a9c817c31b0b5d350e6b32282b70e78db5640cd87d21`  
-		Last Modified: Mon, 27 Jun 2016 22:58:14 GMT  
-		Size: 235.0 B
-	-	`sha256:b4cf72fef5b307dcd9df0e346a188534aae42dda7064448cf701b833c40b1632`  
-		Last Modified: Mon, 27 Jun 2016 22:58:14 GMT  
-		Size: 400.0 B
-	-	`sha256:406f0193f4c2caee97013f846c5a21a84674054ba9b6ac2de9ab006ffb56309e`  
-		Last Modified: Mon, 27 Jun 2016 22:58:14 GMT  
-		Size: 92.0 B
+**does not exist** (yet?)
 
 ## `crate:0.52`
 
