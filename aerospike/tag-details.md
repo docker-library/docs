@@ -2,25 +2,25 @@
 
 # Tags of `aerospike`
 
--	[`aerospike:3.8.4`](#aerospike384)
+-	[`aerospike:3.9.0`](#aerospike390)
 -	[`aerospike:latest`](#aerospikelatest)
 
-## `aerospike:3.8.4`
+## `aerospike:3.9.0`
 
 ```console
-$ docker pull aerospike@sha256:55c3aa7cadce113562a5c7b57a6717ea1745a5756b5bd31cbda90b6e3a352c13
+$ docker pull aerospike@sha256:ab083d72af273bc4fe601f99521aafa7eccd4b5eb2c57a1e5fb99bfa21908d67
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `aerospike:3.8.4` - linux; amd64
+### `aerospike:3.9.0` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.0 MB (59972861 bytes)**  
+-	Total Size: **68.3 MB (68342321 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e749e98506f0fbe5be4fc25e96c4ecf88485dbadbef86411b9a1f11f4352abc`
+-	Image ID: `sha256:c9205cc11061d50d3aa00ad6093b466410aa5151c231573643ce20eb3117063b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 
@@ -35,23 +35,23 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 # Fri, 08 Jul 2016 18:39:43 GMT
 CMD ["/bin/bash"]
-# Fri, 08 Jul 2016 18:44:57 GMT
-ENV AEROSPIKE_VERSION=3.8.4
-# Fri, 08 Jul 2016 18:44:57 GMT
-ENV AEROSPIKE_SHA256=d9d78eafd7905d521646591d242f6dcf2ef9ca90f1187eb00f46e9613fee189f
-# Fri, 08 Jul 2016 18:45:24 GMT
-RUN apt-get update -y   &&  apt-get install -y wget logrotate ca-certificates   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-ubuntu16.04.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:45:25 GMT
+# Wed, 13 Jul 2016 21:11:53 GMT
+ENV AEROSPIKE_VERSION=3.9.0
+# Wed, 13 Jul 2016 21:11:54 GMT
+ENV AEROSPIKE_SHA256=2da6d4f98c7dfd30b865fd7977860f77529ae52cd115ac3faee68b78a2981c7c
+# Wed, 13 Jul 2016 21:12:20 GMT
+RUN apt-get update -y   &&  apt-get install -y wget python logrotate ca-certificates   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-ubuntu16.04.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*
+# Wed, 13 Jul 2016 21:12:21 GMT
 COPY file:59f374b27ea4d0d2d9576cccc7c2a2a8893a36c2b0498759af9fde54286c59e8 in /etc/aerospike/aerospike.conf
-# Fri, 08 Jul 2016 18:45:26 GMT
+# Wed, 13 Jul 2016 21:12:21 GMT
 COPY file:ae9470d86ba973bb1d9911d608b000e6da810777ec7bb4e93d778fdbdeae4501 in /entrypoint.sh
-# Fri, 08 Jul 2016 18:45:27 GMT
+# Wed, 13 Jul 2016 21:12:22 GMT
 VOLUME [/opt/aerospike/data]
-# Fri, 08 Jul 2016 18:45:28 GMT
+# Wed, 13 Jul 2016 21:12:22 GMT
 EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
-# Fri, 08 Jul 2016 18:45:28 GMT
+# Wed, 13 Jul 2016 21:12:22 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 08 Jul 2016 18:45:29 GMT
+# Wed, 13 Jul 2016 21:12:23 GMT
 CMD ["asd"]
 ```
 
@@ -68,20 +68,20 @@ CMD ["asd"]
 	-	`sha256:091663bd70db6ceba4405547c1e143f8ef676910aa914fe9edd87340cd3742b4`  
 		Last Modified: Fri, 08 Jul 2016 18:42:37 GMT  
 		Size: 679.0 B
-	-	`sha256:e46cf7fb0c6655b63d338d9400ed27cb990c3f2bce5d7f09d6d718f97560afd4`  
-		Last Modified: Fri, 08 Jul 2016 18:45:42 GMT  
-		Size: 10.7 MB (10691016 bytes)
-	-	`sha256:f35be25cc3034c7ebf781e1d66eb790e247f6576cac50f09edef6e27eeb821a7`  
-		Last Modified: Fri, 08 Jul 2016 18:45:37 GMT  
-		Size: 966.0 B
-	-	`sha256:19bf2e73da5a6f68fdfeb33e44aa3da94e3bae2529c057d19fd1e3fbcba9570a`  
-		Last Modified: Fri, 08 Jul 2016 18:45:38 GMT  
+	-	`sha256:18a8d56ea3797ff964b5d3e28ef231f860a597949686121ee4071b9b887a69c6`  
+		Last Modified: Wed, 13 Jul 2016 21:12:36 GMT  
+		Size: 19.1 MB (19060477 bytes)
+	-	`sha256:2c5bb8c3497cc6597a8b7c0c1490ca327f51f330b658fd6ffa81fb8a1b1843b9`  
+		Last Modified: Wed, 13 Jul 2016 21:12:30 GMT  
+		Size: 965.0 B
+	-	`sha256:51064624b773b671767b8c87c8bea5160169f600609231f3a967072a64f6443a`  
+		Last Modified: Wed, 13 Jul 2016 21:12:30 GMT  
 		Size: 309.0 B
 
 ## `aerospike:latest`
 
 ```console
-$ docker pull aerospike@sha256:55c3aa7cadce113562a5c7b57a6717ea1745a5756b5bd31cbda90b6e3a352c13
+$ docker pull aerospike@sha256:ab083d72af273bc4fe601f99521aafa7eccd4b5eb2c57a1e5fb99bfa21908d67
 ```
 
 -	Platforms:
@@ -91,9 +91,9 @@ $ docker pull aerospike@sha256:55c3aa7cadce113562a5c7b57a6717ea1745a5756b5bd31cb
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.0 MB (59972861 bytes)**  
+-	Total Size: **68.3 MB (68342321 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e749e98506f0fbe5be4fc25e96c4ecf88485dbadbef86411b9a1f11f4352abc`
+-	Image ID: `sha256:c9205cc11061d50d3aa00ad6093b466410aa5151c231573643ce20eb3117063b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 
@@ -108,23 +108,23 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 # Fri, 08 Jul 2016 18:39:43 GMT
 CMD ["/bin/bash"]
-# Fri, 08 Jul 2016 18:44:57 GMT
-ENV AEROSPIKE_VERSION=3.8.4
-# Fri, 08 Jul 2016 18:44:57 GMT
-ENV AEROSPIKE_SHA256=d9d78eafd7905d521646591d242f6dcf2ef9ca90f1187eb00f46e9613fee189f
-# Fri, 08 Jul 2016 18:45:24 GMT
-RUN apt-get update -y   &&  apt-get install -y wget logrotate ca-certificates   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-ubuntu16.04.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:45:25 GMT
+# Wed, 13 Jul 2016 21:11:53 GMT
+ENV AEROSPIKE_VERSION=3.9.0
+# Wed, 13 Jul 2016 21:11:54 GMT
+ENV AEROSPIKE_SHA256=2da6d4f98c7dfd30b865fd7977860f77529ae52cd115ac3faee68b78a2981c7c
+# Wed, 13 Jul 2016 21:12:20 GMT
+RUN apt-get update -y   &&  apt-get install -y wget python logrotate ca-certificates   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-ubuntu16.04.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*
+# Wed, 13 Jul 2016 21:12:21 GMT
 COPY file:59f374b27ea4d0d2d9576cccc7c2a2a8893a36c2b0498759af9fde54286c59e8 in /etc/aerospike/aerospike.conf
-# Fri, 08 Jul 2016 18:45:26 GMT
+# Wed, 13 Jul 2016 21:12:21 GMT
 COPY file:ae9470d86ba973bb1d9911d608b000e6da810777ec7bb4e93d778fdbdeae4501 in /entrypoint.sh
-# Fri, 08 Jul 2016 18:45:27 GMT
+# Wed, 13 Jul 2016 21:12:22 GMT
 VOLUME [/opt/aerospike/data]
-# Fri, 08 Jul 2016 18:45:28 GMT
+# Wed, 13 Jul 2016 21:12:22 GMT
 EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
-# Fri, 08 Jul 2016 18:45:28 GMT
+# Wed, 13 Jul 2016 21:12:22 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 08 Jul 2016 18:45:29 GMT
+# Wed, 13 Jul 2016 21:12:23 GMT
 CMD ["asd"]
 ```
 
@@ -141,12 +141,12 @@ CMD ["asd"]
 	-	`sha256:091663bd70db6ceba4405547c1e143f8ef676910aa914fe9edd87340cd3742b4`  
 		Last Modified: Fri, 08 Jul 2016 18:42:37 GMT  
 		Size: 679.0 B
-	-	`sha256:e46cf7fb0c6655b63d338d9400ed27cb990c3f2bce5d7f09d6d718f97560afd4`  
-		Last Modified: Fri, 08 Jul 2016 18:45:42 GMT  
-		Size: 10.7 MB (10691016 bytes)
-	-	`sha256:f35be25cc3034c7ebf781e1d66eb790e247f6576cac50f09edef6e27eeb821a7`  
-		Last Modified: Fri, 08 Jul 2016 18:45:37 GMT  
-		Size: 966.0 B
-	-	`sha256:19bf2e73da5a6f68fdfeb33e44aa3da94e3bae2529c057d19fd1e3fbcba9570a`  
-		Last Modified: Fri, 08 Jul 2016 18:45:38 GMT  
+	-	`sha256:18a8d56ea3797ff964b5d3e28ef231f860a597949686121ee4071b9b887a69c6`  
+		Last Modified: Wed, 13 Jul 2016 21:12:36 GMT  
+		Size: 19.1 MB (19060477 bytes)
+	-	`sha256:2c5bb8c3497cc6597a8b7c0c1490ca327f51f330b658fd6ffa81fb8a1b1843b9`  
+		Last Modified: Wed, 13 Jul 2016 21:12:30 GMT  
+		Size: 965.0 B
+	-	`sha256:51064624b773b671767b8c87c8bea5160169f600609231f3a967072a64f6443a`  
+		Last Modified: Wed, 13 Jul 2016 21:12:30 GMT  
 		Size: 309.0 B
