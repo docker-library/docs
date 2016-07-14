@@ -5843,7 +5843,7 @@ CMD ["php-fpm"]
 ## `php:5.5.37-zts`
 
 ```console
-$ docker pull php@sha256:0eaac00e2472bf02d3949efb082db93e8cd3f0196356334c46316da446a97174
+$ docker pull php@sha256:7c4e85fbc6a6b7b10335fe51bd8bd7ddae32c47719f1652e3689f456f0a778f0
 ```
 
 -	Platforms:
@@ -5853,9 +5853,9 @@ $ docker pull php@sha256:0eaac00e2472bf02d3949efb082db93e8cd3f0196356334c46316da
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.1 MB (151102614 bytes)**  
+-	Total Size: **145.4 MB (145385594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b97e0a8eb62eeee8410d6251e2e2d0a7e3c25e2fbc85bf6c9bc51286272d38a`
+-	Image ID: `sha256:b797009ab1e5c7fca6ab3389a75b04b9091011dc9c2cd3813d36884295c75907`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
@@ -5865,27 +5865,31 @@ ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 CMD ["/bin/bash"]
 # Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 10 Jun 2016 02:35:57 GMT
-RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 02:35:58 GMT
+# Thu, 14 Jul 2016 00:18:15 GMT
+RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 		xz-utils 	--no-install-recommends && rm -r /var/lib/apt/lists/*
+# Thu, 14 Jul 2016 00:18:16 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 10 Jun 2016 02:35:59 GMT
+# Thu, 14 Jul 2016 00:18:18 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Fri, 10 Jun 2016 02:55:58 GMT
+# Thu, 14 Jul 2016 00:50:08 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
-# Fri, 10 Jun 2016 03:46:00 GMT
+# Thu, 14 Jul 2016 02:14:12 GMT
 ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE857D9A90D90EC1 F38252826ACD957EF380D39F2F7956BC5DA04B5D
-# Fri, 24 Jun 2016 21:38:02 GMT
+# Thu, 14 Jul 2016 02:14:13 GMT
 ENV PHP_VERSION=5.5.37
-# Fri, 24 Jun 2016 21:38:02 GMT
+# Thu, 14 Jul 2016 02:14:13 GMT
 ENV PHP_FILENAME=php-5.5.37.tar.xz
-# Fri, 24 Jun 2016 21:38:02 GMT
+# Thu, 14 Jul 2016 02:14:13 GMT
 ENV PHP_SHA256=c322444fdf6d3ba26aa67d67ee32d1e815a877f35831351c83763431a80e3612
-# Fri, 24 Jun 2016 21:44:45 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Fri, 24 Jun 2016 21:44:47 GMT
-COPY multi:a8819301efc7ce6569bcf183723931153c5b968224bce96498ddbabe72ce7eaa in /usr/local/bin/
-# Fri, 24 Jun 2016 21:44:47 GMT
+# Thu, 14 Jul 2016 02:14:17 GMT
+RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Thu, 14 Jul 2016 02:14:17 GMT
+COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
+# Thu, 14 Jul 2016 02:20:59 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
+# Thu, 14 Jul 2016 02:21:00 GMT
+COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
+# Thu, 14 Jul 2016 02:21:00 GMT
 CMD ["php" "-a"]
 ```
 
@@ -5893,23 +5897,29 @@ CMD ["php" "-a"]
 	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
 		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
 		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
-		Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
-		Size: 77.3 MB (77343405 bytes)
-	-	`sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
-		Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+	-	`sha256:9e955ea566151d5982903050c40f83202a7ff3142692cae9855ab3b98ae8bea0`  
+		Last Modified: Thu, 14 Jul 2016 02:27:10 GMT  
+		Size: 77.6 MB (77604440 bytes)
+	-	`sha256:217d5abb6c1144cbfc2489fb39f6cf4d6df04375a07c863852b874f31975a99b`  
+		Last Modified: Thu, 14 Jul 2016 02:26:50 GMT  
 		Size: 180.0 B
-	-	`sha256:8a39cbb7416d95d64334df9a30a5f2fa07bdb05fd8ccac1ec07ae6a16472b529`  
-		Last Modified: Fri, 24 Jun 2016 22:00:44 GMT  
-		Size: 22.4 MB (22404733 bytes)
-	-	`sha256:2fa8cef161e66a8fd85e4a4363263a2c4a629a4b49e58e7c9f9245eca61afdb4`  
-		Last Modified: Fri, 24 Jun 2016 22:00:37 GMT  
-		Size: 1.8 KB (1761 bytes)
+	-	`sha256:57452ff6d8ae238debf016845626526399f29f05c2d8fa0d00380cd7274f2860`  
+		Last Modified: Thu, 14 Jul 2016 02:40:30 GMT  
+		Size: 11.1 MB (11079006 bytes)
+	-	`sha256:f813680c422c0685ecc5814fab2dbb4f38433ba1c57490c3815ee92206a2d6bd`  
+		Last Modified: Thu, 14 Jul 2016 02:40:28 GMT  
+		Size: 601.0 B
+	-	`sha256:c4f125ed6a8e7c66844cd54d2f186bf0c1cb07b8a94c045951c38f9124b55512`  
+		Last Modified: Thu, 14 Jul 2016 02:40:30 GMT  
+		Size: 5.3 MB (5347073 bytes)
+	-	`sha256:79d7e087be44e5e12f6ea567c986f75827d6c704c2ac9929731bf9a85a65c0ab`  
+		Last Modified: Thu, 14 Jul 2016 02:40:28 GMT  
+		Size: 1.8 KB (1759 bytes)
 
 ## `php:5.5-zts`
 
 ```console
-$ docker pull php@sha256:0eaac00e2472bf02d3949efb082db93e8cd3f0196356334c46316da446a97174
+$ docker pull php@sha256:7c4e85fbc6a6b7b10335fe51bd8bd7ddae32c47719f1652e3689f456f0a778f0
 ```
 
 -	Platforms:
@@ -5919,9 +5929,9 @@ $ docker pull php@sha256:0eaac00e2472bf02d3949efb082db93e8cd3f0196356334c46316da
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.1 MB (151102614 bytes)**  
+-	Total Size: **145.4 MB (145385594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b97e0a8eb62eeee8410d6251e2e2d0a7e3c25e2fbc85bf6c9bc51286272d38a`
+-	Image ID: `sha256:b797009ab1e5c7fca6ab3389a75b04b9091011dc9c2cd3813d36884295c75907`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
@@ -5931,27 +5941,31 @@ ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
 CMD ["/bin/bash"]
 # Fri, 10 Jun 2016 02:34:30 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 10 Jun 2016 02:35:57 GMT
-RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 02:35:58 GMT
+# Thu, 14 Jul 2016 00:18:15 GMT
+RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		libedit2 		libsqlite3-0 		libxml2 		xz-utils 	--no-install-recommends && rm -r /var/lib/apt/lists/*
+# Thu, 14 Jul 2016 00:18:16 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 10 Jun 2016 02:35:59 GMT
+# Thu, 14 Jul 2016 00:18:18 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Fri, 10 Jun 2016 02:55:58 GMT
+# Thu, 14 Jul 2016 00:50:08 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
-# Fri, 10 Jun 2016 03:46:00 GMT
+# Thu, 14 Jul 2016 02:14:12 GMT
 ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE857D9A90D90EC1 F38252826ACD957EF380D39F2F7956BC5DA04B5D
-# Fri, 24 Jun 2016 21:38:02 GMT
+# Thu, 14 Jul 2016 02:14:13 GMT
 ENV PHP_VERSION=5.5.37
-# Fri, 24 Jun 2016 21:38:02 GMT
+# Thu, 14 Jul 2016 02:14:13 GMT
 ENV PHP_FILENAME=php-5.5.37.tar.xz
-# Fri, 24 Jun 2016 21:38:02 GMT
+# Thu, 14 Jul 2016 02:14:13 GMT
 ENV PHP_SHA256=c322444fdf6d3ba26aa67d67ee32d1e815a877f35831351c83763431a80e3612
-# Fri, 24 Jun 2016 21:44:45 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		xz-utils 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src/php 	&& tar -xf "$PHP_FILENAME" -C /usr/src/php --strip-components=1 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
-# Fri, 24 Jun 2016 21:44:47 GMT
-COPY multi:a8819301efc7ce6569bcf183723931153c5b968224bce96498ddbabe72ce7eaa in /usr/local/bin/
-# Fri, 24 Jun 2016 21:44:47 GMT
+# Thu, 14 Jul 2016 02:14:17 GMT
+RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Thu, 14 Jul 2016 02:14:17 GMT
+COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
+# Thu, 14 Jul 2016 02:20:59 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
+# Thu, 14 Jul 2016 02:21:00 GMT
+COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
+# Thu, 14 Jul 2016 02:21:00 GMT
 CMD ["php" "-a"]
 ```
 
@@ -5959,23 +5973,29 @@ CMD ["php" "-a"]
 	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
 		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
 		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:357b76a4983822c380125e911928d20bf853d3a4ca869181c757d855408a9c90`  
-		Last Modified: Tue, 14 Jun 2016 21:44:40 GMT  
-		Size: 77.3 MB (77343405 bytes)
-	-	`sha256:0e87614c69f0ba521d6a89ea9b82a5712ff209dfa89e14b1fef8be2056d5680d`  
-		Last Modified: Tue, 14 Jun 2016 21:44:12 GMT  
+	-	`sha256:9e955ea566151d5982903050c40f83202a7ff3142692cae9855ab3b98ae8bea0`  
+		Last Modified: Thu, 14 Jul 2016 02:27:10 GMT  
+		Size: 77.6 MB (77604440 bytes)
+	-	`sha256:217d5abb6c1144cbfc2489fb39f6cf4d6df04375a07c863852b874f31975a99b`  
+		Last Modified: Thu, 14 Jul 2016 02:26:50 GMT  
 		Size: 180.0 B
-	-	`sha256:8a39cbb7416d95d64334df9a30a5f2fa07bdb05fd8ccac1ec07ae6a16472b529`  
-		Last Modified: Fri, 24 Jun 2016 22:00:44 GMT  
-		Size: 22.4 MB (22404733 bytes)
-	-	`sha256:2fa8cef161e66a8fd85e4a4363263a2c4a629a4b49e58e7c9f9245eca61afdb4`  
-		Last Modified: Fri, 24 Jun 2016 22:00:37 GMT  
-		Size: 1.8 KB (1761 bytes)
+	-	`sha256:57452ff6d8ae238debf016845626526399f29f05c2d8fa0d00380cd7274f2860`  
+		Last Modified: Thu, 14 Jul 2016 02:40:30 GMT  
+		Size: 11.1 MB (11079006 bytes)
+	-	`sha256:f813680c422c0685ecc5814fab2dbb4f38433ba1c57490c3815ee92206a2d6bd`  
+		Last Modified: Thu, 14 Jul 2016 02:40:28 GMT  
+		Size: 601.0 B
+	-	`sha256:c4f125ed6a8e7c66844cd54d2f186bf0c1cb07b8a94c045951c38f9124b55512`  
+		Last Modified: Thu, 14 Jul 2016 02:40:30 GMT  
+		Size: 5.3 MB (5347073 bytes)
+	-	`sha256:79d7e087be44e5e12f6ea567c986f75827d6c704c2ac9929731bf9a85a65c0ab`  
+		Last Modified: Thu, 14 Jul 2016 02:40:28 GMT  
+		Size: 1.8 KB (1759 bytes)
 
 ## `php:5.5.37-zts-alpine`
 
 ```console
-$ docker pull php@sha256:67b15bf4426cd47a26c18232e584814abde9e5aa66a31951ff3158352aa97f78
+$ docker pull php@sha256:cfe9b45a8b0f3cdd0525f734fba5461fad971a4635789e9d05e6f0d2c4bdfa77
 ```
 
 -	Platforms:
@@ -5985,9 +6005,9 @@ $ docker pull php@sha256:67b15bf4426cd47a26c18232e584814abde9e5aa66a31951ff31583
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.1 MB (27142633 bytes)**  
+-	Total Size: **21.2 MB (21170615 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0604c0b9650ca702e8bc436339345a4c66b05fe56e1b2d744a5346658cc11e6`
+-	Image ID: `sha256:0e32debec58a8f54851e3752002662a9187481f3fcf1bfe4efca7f5641a3dd6a`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
@@ -5995,29 +6015,33 @@ $ docker pull php@sha256:67b15bf4426cd47a26c18232e584814abde9e5aa66a31951ff31583
 ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
 # Thu, 23 Jun 2016 20:42:24 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
-# Thu, 23 Jun 2016 20:42:29 GMT
-RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl
-# Thu, 23 Jun 2016 20:42:31 GMT
+# Thu, 14 Jul 2016 00:25:13 GMT
+RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
+# Thu, 14 Jul 2016 00:25:14 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 23 Jun 2016 20:42:31 GMT
+# Thu, 14 Jul 2016 00:25:14 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Thu, 23 Jun 2016 20:42:33 GMT
+# Thu, 14 Jul 2016 00:25:16 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Thu, 23 Jun 2016 20:53:08 GMT
+# Thu, 14 Jul 2016 00:57:10 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
-# Thu, 23 Jun 2016 20:53:08 GMT
+# Thu, 14 Jul 2016 02:21:01 GMT
 ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE857D9A90D90EC1 F38252826ACD957EF380D39F2F7956BC5DA04B5D
-# Fri, 24 Jun 2016 21:44:48 GMT
+# Thu, 14 Jul 2016 02:21:01 GMT
 ENV PHP_VERSION=5.5.37
-# Fri, 24 Jun 2016 21:44:48 GMT
+# Thu, 14 Jul 2016 02:21:01 GMT
 ENV PHP_FILENAME=php-5.5.37.tar.xz
-# Fri, 24 Jun 2016 21:44:48 GMT
+# Thu, 14 Jul 2016 02:21:02 GMT
 ENV PHP_SHA256=c322444fdf6d3ba26aa67d67ee32d1e815a877f35831351c83763431a80e3612
-# Fri, 24 Jun 2016 21:50:29 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		curl-dev 		gnupg 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src 	&& tar -Jxf "$PHP_FILENAME" -C /usr/src 	&& mv "/usr/src/php-$PHP_VERSION" /usr/src/php 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(getconf _NPROCESSORS_ONLN)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 	&& apk del .build-deps
-# Fri, 24 Jun 2016 21:50:30 GMT
-COPY multi:a8819301efc7ce6569bcf183723931153c5b968224bce96498ddbabe72ce7eaa in /usr/local/bin/
-# Fri, 24 Jun 2016 21:50:31 GMT
+# Thu, 14 Jul 2016 02:21:15 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 	&& mkdir -p /usr/src 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME" 	&& apk del .fetch-deps
+# Thu, 14 Jul 2016 02:21:15 GMT
+COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
+# Thu, 14 Jul 2016 02:26:36 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(getconf _NPROCESSORS_ONLN)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 	&& apk del .build-deps 	&& docker-php-source delete
+# Thu, 14 Jul 2016 02:26:37 GMT
+COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
+# Thu, 14 Jul 2016 02:26:38 GMT
 CMD ["php" "-a"]
 ```
 
@@ -6025,26 +6049,32 @@ CMD ["php" "-a"]
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
 		Size: 2.3 MB (2310286 bytes)
-	-	`sha256:d9f63633faf6fb4690f46e5bde2a91f01b6d0606a92100da82c9c2a6369fc58b`  
-		Last Modified: Thu, 23 Jun 2016 20:52:18 GMT  
-		Size: 701.8 KB (701840 bytes)
-	-	`sha256:ac309a5bc5d51dc6c7114a73edad6f412cb04d2ca064fa23022a270f3cad0f37`  
-		Last Modified: Thu, 23 Jun 2016 20:52:17 GMT  
-		Size: 22.2 KB (22249 bytes)
-	-	`sha256:4523ec888a6232918800af220c346c3872cafe1e264a59313963095625d28e7a`  
-		Last Modified: Thu, 23 Jun 2016 20:52:18 GMT  
-		Size: 168.0 B
-	-	`sha256:a6c0deef57a9c8c7ee855a8860de2bbf8a5c5dd35a7f3e72e25458babc4e55bf`  
-		Last Modified: Fri, 24 Jun 2016 22:01:15 GMT  
-		Size: 24.1 MB (24106341 bytes)
-	-	`sha256:a2beaaae1fc92bdb491f6575908d5dc5f2ae8b8c035860ac0ef9a66b6457a932`  
-		Last Modified: Fri, 24 Jun 2016 22:01:04 GMT  
-		Size: 1.7 KB (1749 bytes)
+	-	`sha256:1b3613d61be61d6a72f714206d5fbbf84705628adb6b6aaa5f35f03c86fd0662`  
+		Last Modified: Thu, 14 Jul 2016 02:28:37 GMT  
+		Size: 1.0 MB (1047264 bytes)
+	-	`sha256:224a3add4676f18c760f9fd1ee23993839ddba36ad800b9c1813df3210a7999b`  
+		Last Modified: Thu, 14 Jul 2016 02:28:36 GMT  
+		Size: 22.2 KB (22238 bytes)
+	-	`sha256:fe3ebed9cd92ee8c8c28017074eb45c1cc4affc5c1b67259083051a76f81f117`  
+		Last Modified: Thu, 14 Jul 2016 02:28:33 GMT  
+		Size: 166.0 B
+	-	`sha256:554b66773f7ce8428433976d32651c7ec7a51a01ffe47ea40315ab956a09e639`  
+		Last Modified: Thu, 14 Jul 2016 02:40:56 GMT  
+		Size: 11.1 MB (11093111 bytes)
+	-	`sha256:7c745573cec367ced55a45e7e86f801467da1b29980937fb530cb3442f50f244`  
+		Last Modified: Thu, 14 Jul 2016 02:40:53 GMT  
+		Size: 593.0 B
+	-	`sha256:2ba36f8bc8c651470f6c3422705503aab7064d830009979c1249f39dd21c8c09`  
+		Last Modified: Thu, 14 Jul 2016 02:40:56 GMT  
+		Size: 6.7 MB (6695215 bytes)
+	-	`sha256:6d245fa1eefb033cff7836f01ecae6ac862030179234b0d0ee70e79b51ba5428`  
+		Last Modified: Thu, 14 Jul 2016 02:40:53 GMT  
+		Size: 1.7 KB (1742 bytes)
 
 ## `php:5.5-zts-alpine`
 
 ```console
-$ docker pull php@sha256:67b15bf4426cd47a26c18232e584814abde9e5aa66a31951ff3158352aa97f78
+$ docker pull php@sha256:cfe9b45a8b0f3cdd0525f734fba5461fad971a4635789e9d05e6f0d2c4bdfa77
 ```
 
 -	Platforms:
@@ -6054,9 +6084,9 @@ $ docker pull php@sha256:67b15bf4426cd47a26c18232e584814abde9e5aa66a31951ff31583
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.1 MB (27142633 bytes)**  
+-	Total Size: **21.2 MB (21170615 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0604c0b9650ca702e8bc436339345a4c66b05fe56e1b2d744a5346658cc11e6`
+-	Image ID: `sha256:0e32debec58a8f54851e3752002662a9187481f3fcf1bfe4efca7f5641a3dd6a`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
@@ -6064,29 +6094,33 @@ $ docker pull php@sha256:67b15bf4426cd47a26c18232e584814abde9e5aa66a31951ff31583
 ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
 # Thu, 23 Jun 2016 20:42:24 GMT
 ENV PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
-# Thu, 23 Jun 2016 20:42:29 GMT
-RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl
-# Thu, 23 Jun 2016 20:42:31 GMT
+# Thu, 14 Jul 2016 00:25:13 GMT
+RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
+# Thu, 14 Jul 2016 00:25:14 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 23 Jun 2016 20:42:31 GMT
+# Thu, 14 Jul 2016 00:25:14 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Thu, 23 Jun 2016 20:42:33 GMT
+# Thu, 14 Jul 2016 00:25:16 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Thu, 23 Jun 2016 20:53:08 GMT
+# Thu, 14 Jul 2016 00:57:10 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
-# Thu, 23 Jun 2016 20:53:08 GMT
+# Thu, 14 Jul 2016 02:21:01 GMT
 ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE857D9A90D90EC1 F38252826ACD957EF380D39F2F7956BC5DA04B5D
-# Fri, 24 Jun 2016 21:44:48 GMT
+# Thu, 14 Jul 2016 02:21:01 GMT
 ENV PHP_VERSION=5.5.37
-# Fri, 24 Jun 2016 21:44:48 GMT
+# Thu, 14 Jul 2016 02:21:01 GMT
 ENV PHP_FILENAME=php-5.5.37.tar.xz
-# Fri, 24 Jun 2016 21:44:48 GMT
+# Thu, 14 Jul 2016 02:21:02 GMT
 ENV PHP_SHA256=c322444fdf6d3ba26aa67d67ee32d1e815a877f35831351c83763431a80e3612
-# Fri, 24 Jun 2016 21:50:29 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		curl-dev 		gnupg 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" 	&& echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify "$PHP_FILENAME.asc" "$PHP_FILENAME" 	&& rm -r "$GNUPGHOME" "$PHP_FILENAME.asc" 	&& mkdir -p /usr/src 	&& tar -Jxf "$PHP_FILENAME" -C /usr/src 	&& mv "/usr/src/php-$PHP_VERSION" /usr/src/php 	&& rm "$PHP_FILENAME" 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(getconf _NPROCESSORS_ONLN)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 	&& apk del .build-deps
-# Fri, 24 Jun 2016 21:50:30 GMT
-COPY multi:a8819301efc7ce6569bcf183723931153c5b968224bce96498ddbabe72ce7eaa in /usr/local/bin/
-# Fri, 24 Jun 2016 21:50:31 GMT
+# Thu, 14 Jul 2016 02:21:15 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 	&& mkdir -p /usr/src 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME" 	&& apk del .fetch-deps
+# Thu, 14 Jul 2016 02:21:15 GMT
+COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
+# Thu, 14 Jul 2016 02:26:36 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(getconf _NPROCESSORS_ONLN)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 	&& apk del .build-deps 	&& docker-php-source delete
+# Thu, 14 Jul 2016 02:26:37 GMT
+COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
+# Thu, 14 Jul 2016 02:26:38 GMT
 CMD ["php" "-a"]
 ```
 
@@ -6094,18 +6128,24 @@ CMD ["php" "-a"]
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
 		Size: 2.3 MB (2310286 bytes)
-	-	`sha256:d9f63633faf6fb4690f46e5bde2a91f01b6d0606a92100da82c9c2a6369fc58b`  
-		Last Modified: Thu, 23 Jun 2016 20:52:18 GMT  
-		Size: 701.8 KB (701840 bytes)
-	-	`sha256:ac309a5bc5d51dc6c7114a73edad6f412cb04d2ca064fa23022a270f3cad0f37`  
-		Last Modified: Thu, 23 Jun 2016 20:52:17 GMT  
-		Size: 22.2 KB (22249 bytes)
-	-	`sha256:4523ec888a6232918800af220c346c3872cafe1e264a59313963095625d28e7a`  
-		Last Modified: Thu, 23 Jun 2016 20:52:18 GMT  
-		Size: 168.0 B
-	-	`sha256:a6c0deef57a9c8c7ee855a8860de2bbf8a5c5dd35a7f3e72e25458babc4e55bf`  
-		Last Modified: Fri, 24 Jun 2016 22:01:15 GMT  
-		Size: 24.1 MB (24106341 bytes)
-	-	`sha256:a2beaaae1fc92bdb491f6575908d5dc5f2ae8b8c035860ac0ef9a66b6457a932`  
-		Last Modified: Fri, 24 Jun 2016 22:01:04 GMT  
-		Size: 1.7 KB (1749 bytes)
+	-	`sha256:1b3613d61be61d6a72f714206d5fbbf84705628adb6b6aaa5f35f03c86fd0662`  
+		Last Modified: Thu, 14 Jul 2016 02:28:37 GMT  
+		Size: 1.0 MB (1047264 bytes)
+	-	`sha256:224a3add4676f18c760f9fd1ee23993839ddba36ad800b9c1813df3210a7999b`  
+		Last Modified: Thu, 14 Jul 2016 02:28:36 GMT  
+		Size: 22.2 KB (22238 bytes)
+	-	`sha256:fe3ebed9cd92ee8c8c28017074eb45c1cc4affc5c1b67259083051a76f81f117`  
+		Last Modified: Thu, 14 Jul 2016 02:28:33 GMT  
+		Size: 166.0 B
+	-	`sha256:554b66773f7ce8428433976d32651c7ec7a51a01ffe47ea40315ab956a09e639`  
+		Last Modified: Thu, 14 Jul 2016 02:40:56 GMT  
+		Size: 11.1 MB (11093111 bytes)
+	-	`sha256:7c745573cec367ced55a45e7e86f801467da1b29980937fb530cb3442f50f244`  
+		Last Modified: Thu, 14 Jul 2016 02:40:53 GMT  
+		Size: 593.0 B
+	-	`sha256:2ba36f8bc8c651470f6c3422705503aab7064d830009979c1249f39dd21c8c09`  
+		Last Modified: Thu, 14 Jul 2016 02:40:56 GMT  
+		Size: 6.7 MB (6695215 bytes)
+	-	`sha256:6d245fa1eefb033cff7836f01ecae6ac862030179234b0d0ee70e79b51ba5428`  
+		Last Modified: Thu, 14 Jul 2016 02:40:53 GMT  
+		Size: 1.7 KB (1742 bytes)
