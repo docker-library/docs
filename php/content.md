@@ -71,7 +71,7 @@ We provide the helper scripts `docker-php-ext-configure`, `docker-php-ext-instal
 In order to keep the images smaller, PHP's source is kept in a compressed tar file. To facilitate linking of PHP's source with any extension, we also provide the helper script `docker-php-source` to easily extract the tar or delete the extracted source. Note: if you do use `docker-php-source` to extract the source, be sure to delete it in the same layer of the docker image.
 
 ```Dockerfile
-FROM php:5-apache
+FROM php:5.6-apache
 RUN docker-php-source extract \
 	# do important things \
 	&& docker-php-source delete
@@ -82,7 +82,7 @@ RUN docker-php-source extract \
 For example, if you want to have a PHP-FPM image with `iconv`, `mcrypt` and `gd` extensions, you can inherit the base image that you like, and write your own `Dockerfile` like this:
 
 ```dockerfile
-FROM php:5-fpm
+FROM php:5.6-fpm
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
@@ -100,7 +100,7 @@ Remember, you must install dependencies for your extensions manually. If an exte
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
 
 ```dockerfile
-FROM php:5-fpm
+FROM php:5.6-fpm
 RUN apt-get update && apt-get install -y libmemcached-dev \
 	&& pecl install memcached \
 	&& docker-php-ext-enable memcached
@@ -111,7 +111,7 @@ RUN apt-get update && apt-get install -y libmemcached-dev \
 Some extensions are not provided via either Core or PECL; these can be installed too, although the process is less automated:
 
 ```dockerfile
-FROM php:5-apache
+FROM php:5.6-apache
 RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.gz' -o xcache.tar.gz \
     && mkdir -p xcache \
     && tar -xf xcache.tar.gz -C xcache --strip-components=1 \
