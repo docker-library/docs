@@ -64,6 +64,27 @@ COPY src/ /var/www/html/
 
 Where `src/` is the directory containing all your PHP code and `config/` contains your `php.ini` file.
 
+### How to install composer
+
+We provide the helper script `docker-php-composer-install` to more easily install composer.
+
+### Create a `Dockerfile` in your PHP project
+
+```dockerfile
+FROM php:7
+COPY . /usr/src/myapp
+RUN docker-php-composer-install && cd /usr/src/myapp && composer install --no-dev --optimize-autoloader
+WORKDIR /usr/src/myapp
+CMD [ "php", "./your-script.php" ]
+```
+
+Then, run the commands to build and run the Docker image:
+
+```console
+$ docker build -t my-php-app .
+$ docker run -it --rm --name my-running-app my-php-app
+```
+
 ### How to install more PHP extensions
 
 We provide the helper scripts `docker-php-ext-configure`, `docker-php-ext-install`, and `docker-php-ext-enable` to more easily install PHP extensions.
