@@ -47,7 +47,7 @@ FROM php:5.6-apache
 COPY src/ /var/www/html/
 ```
 
-Where `src/` is the directory containing all your php code. Then, run the commands to build and run the Docker image:
+Where `src/` is the directory containing all your PHP code. Then, run the commands to build and run the Docker image:
 
 ```console
 $ docker build -t my-php-app .
@@ -62,13 +62,13 @@ COPY config/php.ini /usr/local/etc/php/
 COPY src/ /var/www/html/
 ```
 
-Where `src/` is the directory containing all your php code and `config/` contains your `php.ini` file.
+Where `src/` is the directory containing all your PHP code and `config/` contains your `php.ini` file.
 
 ### How to install more PHP extensions
 
 We provide the helper scripts `docker-php-ext-configure`, `docker-php-ext-install`, and `docker-php-ext-enable` to more easily install PHP extensions.
 
-In order to keep the images smaller, the php source is kept in a compressed tar file. To facilitate linking of the php source with any extension, we also provide the helper script `docker-php-source` to easily extract the tar or delete the extracted source. Note: if you do use `docker-php-source` to extract the source, be sure to delete it in the same layer of the docker image.
+In order to keep the images smaller, PHP's source is kept in a compressed tar file. To facilitate linking of PHP's source with any extension, we also provide the helper script `docker-php-source` to easily extract the tar or delete the extracted source. Note: if you do use `docker-php-source` to extract the source, be sure to delete it in the same layer of the docker image.
 
 ```Dockerfile
 FROM php:5-apache
