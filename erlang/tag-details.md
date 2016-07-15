@@ -2,21 +2,27 @@
 
 # Tags of `erlang`
 
+-	[`erlang:19.0.1`](#erlang1901)
 -	[`erlang:19.0`](#erlang190)
 -	[`erlang:19`](#erlang19)
 -	[`erlang:latest`](#erlanglatest)
+-	[`erlang:19.0.1-slim`](#erlang1901-slim)
 -	[`erlang:19.0-slim`](#erlang190-slim)
 -	[`erlang:19-slim`](#erlang19-slim)
 -	[`erlang:slim`](#erlangslim)
+-	[`erlang:19.0.1-onbuild`](#erlang1901-onbuild)
 -	[`erlang:19.0-onbuild`](#erlang190-onbuild)
 -	[`erlang:19-onbuild`](#erlang19-onbuild)
 -	[`erlang:onbuild`](#erlangonbuild)
+-	[`erlang:18.3.4.1`](#erlang18341)
 -	[`erlang:18.3.4`](#erlang1834)
 -	[`erlang:18.3`](#erlang183)
 -	[`erlang:18`](#erlang18)
+-	[`erlang:18.3.4.1-slim`](#erlang18341-slim)
 -	[`erlang:18.3.4-slim`](#erlang1834-slim)
 -	[`erlang:18.3-slim`](#erlang183-slim)
 -	[`erlang:18-slim`](#erlang18-slim)
+-	[`erlang:18.3.4.1-onbuild`](#erlang18341-onbuild)
 -	[`erlang:18.3.4-onbuild`](#erlang1834-onbuild)
 -	[`erlang:18.3-onbuild`](#erlang183-onbuild)
 -	[`erlang:18-onbuild`](#erlang18-onbuild)
@@ -28,6 +34,10 @@
 -	[`erlang:17.5.6-slim`](#erlang1756-slim)
 -	[`erlang:17.5-slim`](#erlang175-slim)
 -	[`erlang:17-slim`](#erlang17-slim)
+
+## `erlang:19.0.1`
+
+**does not exist** (yet?)
 
 ## `erlang:19.0`
 
@@ -233,6 +243,10 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Last Modified: Thu, 23 Jun 2016 20:53:04 GMT  
 		Size: 1.5 MB (1470900 bytes)
 
+## `erlang:19.0.1-slim`
+
+**does not exist** (yet?)
+
 ## `erlang:19.0-slim`
 
 ```console
@@ -349,6 +363,10 @@ CMD ["erl"]
 	-	`sha256:69004eb7db78851f7fe16faccaf04812c50ae04fab7d7e8326afe97eec2ca3a4`  
 		Last Modified: Thu, 23 Jun 2016 20:54:07 GMT  
 		Size: 65.4 MB (65353356 bytes)
+
+## `erlang:19.0.1-onbuild`
+
+**does not exist** (yet?)
 
 ## `erlang:19.0-onbuild`
 
@@ -605,6 +623,10 @@ CMD ["rebar3" "shell"]
 		Last Modified: Thu, 23 Jun 2016 20:54:35 GMT  
 		Size: 127.0 B
 
+## `erlang:18.3.4.1`
+
+**does not exist** (yet?)
+
 ## `erlang:18.3.4`
 
 ```console
@@ -809,6 +831,10 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Last Modified: Thu, 23 Jun 2016 20:55:04 GMT  
 		Size: 1.5 MB (1474982 bytes)
 
+## `erlang:18.3.4.1-slim`
+
+**does not exist** (yet?)
+
 ## `erlang:18.3.4-slim`
 
 ```console
@@ -925,6 +951,10 @@ CMD ["erl"]
 	-	`sha256:2f30ea70778a49fd3082c4290a56a14eb4e25af66a3b023f2f96f81aae96b38a`  
 		Last Modified: Thu, 23 Jun 2016 20:56:23 GMT  
 		Size: 65.2 MB (65182762 bytes)
+
+## `erlang:18.3.4.1-onbuild`
+
+**does not exist** (yet?)
 
 ## `erlang:18.3.4-onbuild`
 
