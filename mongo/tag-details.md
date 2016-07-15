@@ -405,12 +405,95 @@ CMD ["mongod"]
 
 ## `mongo:3.2.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:fc89af57055910959cd94c3f852150fc0dafc95e2b081b57d109711dbcf0d506
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `mongo:3.2.8` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **112.6 MB (112592618 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7f09d45df511bc095d508e1f158de8be0a120bca0f4dffe52d7ecc4c626e686b`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["mongod"]`
+
+```dockerfile
+# Thu, 09 Jun 2016 21:30:19 GMT
+ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
+# Thu, 09 Jun 2016 21:30:20 GMT
+CMD ["/bin/bash"]
+# Fri, 10 Jun 2016 01:59:39 GMT
+RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
+# Fri, 10 Jun 2016 02:00:35 GMT
+RUN apt-get update 	&& apt-get install -y --no-install-recommends 		numactl 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 10 Jun 2016 02:00:35 GMT
+ENV GOSU_VERSION=1.7
+# Fri, 10 Jun 2016 02:01:03 GMT
+RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
+# Fri, 10 Jun 2016 02:01:22 GMT
+ENV GPG_KEYS=DFFA3DCF326E302C4787673A01C4E7FAAAB2461C 	42F3E95A2C4F08279C4960ADD68FA50FEA312927
+# Fri, 10 Jun 2016 02:01:24 GMT
+RUN set -ex 	&& for key in $GPG_KEYS; do 		apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
+# Fri, 10 Jun 2016 02:01:24 GMT
+ENV MONGO_MAJOR=3.2
+# Thu, 14 Jul 2016 00:14:14 GMT
+ENV MONGO_VERSION=3.2.8
+# Thu, 14 Jul 2016 00:14:15 GMT
+RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
+# Thu, 14 Jul 2016 00:14:30 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y 		mongodb-org=$MONGO_VERSION 		mongodb-org-server=$MONGO_VERSION 		mongodb-org-shell=$MONGO_VERSION 		mongodb-org-mongos=$MONGO_VERSION 		mongodb-org-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
+# Thu, 14 Jul 2016 00:14:32 GMT
+RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
+# Thu, 14 Jul 2016 00:14:32 GMT
+VOLUME [/data/db /data/configdb]
+# Thu, 14 Jul 2016 00:14:33 GMT
+COPY file:7f1f8bb27f73563768bb938208148a281b70ba028a8d544671abcb276c8f741c in /entrypoint.sh
+# Thu, 14 Jul 2016 00:14:34 GMT
+ENTRYPOINT &{["/entrypoint.sh"]}
+# Thu, 14 Jul 2016 00:14:34 GMT
+EXPOSE 27017/tcp
+# Thu, 14 Jul 2016 00:14:35 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
+		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
+		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:de56a622d4acdc12916de202e84f4d1f0d24c594cdf6f065be5d9720c514c77f`  
+		Last Modified: Fri, 17 Jun 2016 23:26:06 GMT  
+		Size: 1.7 KB (1691 bytes)
+	-	`sha256:6f6965220a2d63b891a9e8f634afc3bec1f2a01971d14b2805fcf31d18f0a4f8`  
+		Last Modified: Fri, 17 Jun 2016 23:27:14 GMT  
+		Size: 166.4 KB (166423 bytes)
+	-	`sha256:290580b9cb914028108dfe9ac547c3f5aa519b3142a618710cc49581b9f9258e`  
+		Last Modified: Fri, 17 Jun 2016 23:27:15 GMT  
+		Size: 1.2 MB (1193789 bytes)
+	-	`sha256:74518025c1d4c33202e33e2653d7015513cfa15fb21185426b615f51cdf3ee84`  
+		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
+		Size: 3.1 KB (3109 bytes)
+	-	`sha256:7caf7e3d8fb709892d18cceb39ee8e8e5ec10f1fdd2061e61ae5bab72e91fb5c`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
+		Size: 225.0 B
+	-	`sha256:dcfe9afaf9143248bad9b4582d52b50399ad3f90ddbf46d8943ea22c09302d83`  
+		Last Modified: Thu, 14 Jul 2016 00:15:52 GMT  
+		Size: 74.0 MB (74017340 bytes)
+	-	`sha256:b3c5b8f22de47e79bdcff2b2f8da36535fb134e64b15876fc0c83e67b4f52349`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
+		Size: 140.0 B
+	-	`sha256:b66f9b8214cfefc12692c3420b442016d9ad5b21b305e791eb58d875027688a3`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
+		Size: 352.0 B
 
 ## `mongo:3.2`
 
 ```console
-$ docker pull mongo@sha256:5b9a35332e2e538d721e83dab78041fe251b89d97b16990a45489189ea423967
+$ docker pull mongo@sha256:fc89af57055910959cd94c3f852150fc0dafc95e2b081b57d109711dbcf0d506
 ```
 
 -	Platforms:
@@ -420,9 +503,9 @@ $ docker pull mongo@sha256:5b9a35332e2e538d721e83dab78041fe251b89d97b16990a45489
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **112.6 MB (112563210 bytes)**  
+-	Total Size: **112.6 MB (112592618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:282fd552add6aa67509775e68e32aeabb2ea88726299367d49e36847c65833b4`
+-	Image ID: `sha256:7f09d45df511bc095d508e1f158de8be0a120bca0f4dffe52d7ecc4c626e686b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -445,23 +528,23 @@ ENV GPG_KEYS=DFFA3DCF326E302C4787673A01C4E7FAAAB2461C 	42F3E95A2C4F08279C4960ADD
 RUN set -ex 	&& for key in $GPG_KEYS; do 		apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Fri, 10 Jun 2016 02:01:24 GMT
 ENV MONGO_MAJOR=3.2
-# Fri, 17 Jun 2016 23:25:39 GMT
-ENV MONGO_VERSION=3.2.7
-# Fri, 17 Jun 2016 23:25:40 GMT
+# Thu, 14 Jul 2016 00:14:14 GMT
+ENV MONGO_VERSION=3.2.8
+# Thu, 14 Jul 2016 00:14:15 GMT
 RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
-# Fri, 17 Jun 2016 23:25:53 GMT
+# Thu, 14 Jul 2016 00:14:30 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		mongodb-org=$MONGO_VERSION 		mongodb-org-server=$MONGO_VERSION 		mongodb-org-shell=$MONGO_VERSION 		mongodb-org-mongos=$MONGO_VERSION 		mongodb-org-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Fri, 17 Jun 2016 23:25:54 GMT
+# Thu, 14 Jul 2016 00:14:32 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Fri, 17 Jun 2016 23:25:55 GMT
+# Thu, 14 Jul 2016 00:14:32 GMT
 VOLUME [/data/db /data/configdb]
-# Fri, 17 Jun 2016 23:25:55 GMT
+# Thu, 14 Jul 2016 00:14:33 GMT
 COPY file:7f1f8bb27f73563768bb938208148a281b70ba028a8d544671abcb276c8f741c in /entrypoint.sh
-# Fri, 17 Jun 2016 23:25:55 GMT
+# Thu, 14 Jul 2016 00:14:34 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:25:56 GMT
+# Thu, 14 Jul 2016 00:14:34 GMT
 EXPOSE 27017/tcp
-# Fri, 17 Jun 2016 23:25:56 GMT
+# Thu, 14 Jul 2016 00:14:35 GMT
 CMD ["mongod"]
 ```
 
@@ -481,23 +564,23 @@ CMD ["mongod"]
 	-	`sha256:74518025c1d4c33202e33e2653d7015513cfa15fb21185426b615f51cdf3ee84`  
 		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
 		Size: 3.1 KB (3109 bytes)
-	-	`sha256:3be42c3d566bb5451117dd1b349da4bfde750027dfb2e208b0e80ecd681c700d`  
-		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
-		Size: 227.0 B
-	-	`sha256:1f3f56933a5142a19e79cb7daca88866208331d2cc0cb54258e302a54d958689`  
-		Last Modified: Fri, 17 Jun 2016 23:28:18 GMT  
-		Size: 74.0 MB (73987931 bytes)
-	-	`sha256:9a2e0c784afa0b0f50c54280951e7d38ab1388f2c97a602d6ac17b0f4f5cbaec`  
-		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
+	-	`sha256:7caf7e3d8fb709892d18cceb39ee8e8e5ec10f1fdd2061e61ae5bab72e91fb5c`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
+		Size: 225.0 B
+	-	`sha256:dcfe9afaf9143248bad9b4582d52b50399ad3f90ddbf46d8943ea22c09302d83`  
+		Last Modified: Thu, 14 Jul 2016 00:15:52 GMT  
+		Size: 74.0 MB (74017340 bytes)
+	-	`sha256:b3c5b8f22de47e79bdcff2b2f8da36535fb134e64b15876fc0c83e67b4f52349`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
 		Size: 140.0 B
-	-	`sha256:a600166aa315e4ac6ceba2a023015844b2b9b9074dd0d709cadd871767b61679`  
-		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
-		Size: 351.0 B
+	-	`sha256:b66f9b8214cfefc12692c3420b442016d9ad5b21b305e791eb58d875027688a3`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
+		Size: 352.0 B
 
 ## `mongo:3`
 
 ```console
-$ docker pull mongo@sha256:5b9a35332e2e538d721e83dab78041fe251b89d97b16990a45489189ea423967
+$ docker pull mongo@sha256:fc89af57055910959cd94c3f852150fc0dafc95e2b081b57d109711dbcf0d506
 ```
 
 -	Platforms:
@@ -507,9 +590,9 @@ $ docker pull mongo@sha256:5b9a35332e2e538d721e83dab78041fe251b89d97b16990a45489
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **112.6 MB (112563210 bytes)**  
+-	Total Size: **112.6 MB (112592618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:282fd552add6aa67509775e68e32aeabb2ea88726299367d49e36847c65833b4`
+-	Image ID: `sha256:7f09d45df511bc095d508e1f158de8be0a120bca0f4dffe52d7ecc4c626e686b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -532,23 +615,23 @@ ENV GPG_KEYS=DFFA3DCF326E302C4787673A01C4E7FAAAB2461C 	42F3E95A2C4F08279C4960ADD
 RUN set -ex 	&& for key in $GPG_KEYS; do 		apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Fri, 10 Jun 2016 02:01:24 GMT
 ENV MONGO_MAJOR=3.2
-# Fri, 17 Jun 2016 23:25:39 GMT
-ENV MONGO_VERSION=3.2.7
-# Fri, 17 Jun 2016 23:25:40 GMT
+# Thu, 14 Jul 2016 00:14:14 GMT
+ENV MONGO_VERSION=3.2.8
+# Thu, 14 Jul 2016 00:14:15 GMT
 RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
-# Fri, 17 Jun 2016 23:25:53 GMT
+# Thu, 14 Jul 2016 00:14:30 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		mongodb-org=$MONGO_VERSION 		mongodb-org-server=$MONGO_VERSION 		mongodb-org-shell=$MONGO_VERSION 		mongodb-org-mongos=$MONGO_VERSION 		mongodb-org-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Fri, 17 Jun 2016 23:25:54 GMT
+# Thu, 14 Jul 2016 00:14:32 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Fri, 17 Jun 2016 23:25:55 GMT
+# Thu, 14 Jul 2016 00:14:32 GMT
 VOLUME [/data/db /data/configdb]
-# Fri, 17 Jun 2016 23:25:55 GMT
+# Thu, 14 Jul 2016 00:14:33 GMT
 COPY file:7f1f8bb27f73563768bb938208148a281b70ba028a8d544671abcb276c8f741c in /entrypoint.sh
-# Fri, 17 Jun 2016 23:25:55 GMT
+# Thu, 14 Jul 2016 00:14:34 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:25:56 GMT
+# Thu, 14 Jul 2016 00:14:34 GMT
 EXPOSE 27017/tcp
-# Fri, 17 Jun 2016 23:25:56 GMT
+# Thu, 14 Jul 2016 00:14:35 GMT
 CMD ["mongod"]
 ```
 
@@ -568,23 +651,23 @@ CMD ["mongod"]
 	-	`sha256:74518025c1d4c33202e33e2653d7015513cfa15fb21185426b615f51cdf3ee84`  
 		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
 		Size: 3.1 KB (3109 bytes)
-	-	`sha256:3be42c3d566bb5451117dd1b349da4bfde750027dfb2e208b0e80ecd681c700d`  
-		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
-		Size: 227.0 B
-	-	`sha256:1f3f56933a5142a19e79cb7daca88866208331d2cc0cb54258e302a54d958689`  
-		Last Modified: Fri, 17 Jun 2016 23:28:18 GMT  
-		Size: 74.0 MB (73987931 bytes)
-	-	`sha256:9a2e0c784afa0b0f50c54280951e7d38ab1388f2c97a602d6ac17b0f4f5cbaec`  
-		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
+	-	`sha256:7caf7e3d8fb709892d18cceb39ee8e8e5ec10f1fdd2061e61ae5bab72e91fb5c`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
+		Size: 225.0 B
+	-	`sha256:dcfe9afaf9143248bad9b4582d52b50399ad3f90ddbf46d8943ea22c09302d83`  
+		Last Modified: Thu, 14 Jul 2016 00:15:52 GMT  
+		Size: 74.0 MB (74017340 bytes)
+	-	`sha256:b3c5b8f22de47e79bdcff2b2f8da36535fb134e64b15876fc0c83e67b4f52349`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
 		Size: 140.0 B
-	-	`sha256:a600166aa315e4ac6ceba2a023015844b2b9b9074dd0d709cadd871767b61679`  
-		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
-		Size: 351.0 B
+	-	`sha256:b66f9b8214cfefc12692c3420b442016d9ad5b21b305e791eb58d875027688a3`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
+		Size: 352.0 B
 
 ## `mongo:latest`
 
 ```console
-$ docker pull mongo@sha256:5b9a35332e2e538d721e83dab78041fe251b89d97b16990a45489189ea423967
+$ docker pull mongo@sha256:fc89af57055910959cd94c3f852150fc0dafc95e2b081b57d109711dbcf0d506
 ```
 
 -	Platforms:
@@ -594,9 +677,9 @@ $ docker pull mongo@sha256:5b9a35332e2e538d721e83dab78041fe251b89d97b16990a45489
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **112.6 MB (112563210 bytes)**  
+-	Total Size: **112.6 MB (112592618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:282fd552add6aa67509775e68e32aeabb2ea88726299367d49e36847c65833b4`
+-	Image ID: `sha256:7f09d45df511bc095d508e1f158de8be0a120bca0f4dffe52d7ecc4c626e686b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -619,23 +702,23 @@ ENV GPG_KEYS=DFFA3DCF326E302C4787673A01C4E7FAAAB2461C 	42F3E95A2C4F08279C4960ADD
 RUN set -ex 	&& for key in $GPG_KEYS; do 		apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Fri, 10 Jun 2016 02:01:24 GMT
 ENV MONGO_MAJOR=3.2
-# Fri, 17 Jun 2016 23:25:39 GMT
-ENV MONGO_VERSION=3.2.7
-# Fri, 17 Jun 2016 23:25:40 GMT
+# Thu, 14 Jul 2016 00:14:14 GMT
+ENV MONGO_VERSION=3.2.8
+# Thu, 14 Jul 2016 00:14:15 GMT
 RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
-# Fri, 17 Jun 2016 23:25:53 GMT
+# Thu, 14 Jul 2016 00:14:30 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		mongodb-org=$MONGO_VERSION 		mongodb-org-server=$MONGO_VERSION 		mongodb-org-shell=$MONGO_VERSION 		mongodb-org-mongos=$MONGO_VERSION 		mongodb-org-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Fri, 17 Jun 2016 23:25:54 GMT
+# Thu, 14 Jul 2016 00:14:32 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Fri, 17 Jun 2016 23:25:55 GMT
+# Thu, 14 Jul 2016 00:14:32 GMT
 VOLUME [/data/db /data/configdb]
-# Fri, 17 Jun 2016 23:25:55 GMT
+# Thu, 14 Jul 2016 00:14:33 GMT
 COPY file:7f1f8bb27f73563768bb938208148a281b70ba028a8d544671abcb276c8f741c in /entrypoint.sh
-# Fri, 17 Jun 2016 23:25:55 GMT
+# Thu, 14 Jul 2016 00:14:34 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 17 Jun 2016 23:25:56 GMT
+# Thu, 14 Jul 2016 00:14:34 GMT
 EXPOSE 27017/tcp
-# Fri, 17 Jun 2016 23:25:56 GMT
+# Thu, 14 Jul 2016 00:14:35 GMT
 CMD ["mongod"]
 ```
 
@@ -655,18 +738,18 @@ CMD ["mongod"]
 	-	`sha256:74518025c1d4c33202e33e2653d7015513cfa15fb21185426b615f51cdf3ee84`  
 		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
 		Size: 3.1 KB (3109 bytes)
-	-	`sha256:3be42c3d566bb5451117dd1b349da4bfde750027dfb2e208b0e80ecd681c700d`  
-		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
-		Size: 227.0 B
-	-	`sha256:1f3f56933a5142a19e79cb7daca88866208331d2cc0cb54258e302a54d958689`  
-		Last Modified: Fri, 17 Jun 2016 23:28:18 GMT  
-		Size: 74.0 MB (73987931 bytes)
-	-	`sha256:9a2e0c784afa0b0f50c54280951e7d38ab1388f2c97a602d6ac17b0f4f5cbaec`  
-		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
+	-	`sha256:7caf7e3d8fb709892d18cceb39ee8e8e5ec10f1fdd2061e61ae5bab72e91fb5c`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
+		Size: 225.0 B
+	-	`sha256:dcfe9afaf9143248bad9b4582d52b50399ad3f90ddbf46d8943ea22c09302d83`  
+		Last Modified: Thu, 14 Jul 2016 00:15:52 GMT  
+		Size: 74.0 MB (74017340 bytes)
+	-	`sha256:b3c5b8f22de47e79bdcff2b2f8da36535fb134e64b15876fc0c83e67b4f52349`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
 		Size: 140.0 B
-	-	`sha256:a600166aa315e4ac6ceba2a023015844b2b9b9074dd0d709cadd871767b61679`  
-		Last Modified: Fri, 17 Jun 2016 23:27:53 GMT  
-		Size: 351.0 B
+	-	`sha256:b66f9b8214cfefc12692c3420b442016d9ad5b21b305e791eb58d875027688a3`  
+		Last Modified: Thu, 14 Jul 2016 00:15:27 GMT  
+		Size: 352.0 B
 
 ## `mongo:3.3.9`
 
