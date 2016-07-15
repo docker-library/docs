@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`19.0`, `19`, `latest` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/ea32d5f6f1735f9f55bee04b112166da96eb9c73/19/Dockerfile)
--	[`19.0-slim`, `19-slim`, `slim` (*19/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/ea32d5f6f1735f9f55bee04b112166da96eb9c73/19/slim/Dockerfile)
--	[`19.0-onbuild`, `19-onbuild`, `onbuild` (*19/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/847b82cdb8896d8d865bf32f2833787b5c62587c/19/onbuild/Dockerfile)
--	[`18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/aeae7ea95d8f42cb3c810fb962720235e304cb60/18/Dockerfile)
--	[`18.3.4-slim`, `18.3-slim`, `18-slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/aeae7ea95d8f42cb3c810fb962720235e304cb60/18/slim/Dockerfile)
--	[`18.3.4-onbuild`, `18.3-onbuild`, `18-onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/20e41464075dc0fc76709be77701530eddb6fe33/18/onbuild/Dockerfile)
+-	[`19.0.1`, `19.0`, `19`, `latest` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/19/Dockerfile)
+-	[`19.0.1-slim`, `19.0-slim`, `19-slim`, `slim` (*19/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/19/slim/Dockerfile)
+-	[`19.0.1-onbuild`, `19.0-onbuild`, `19-onbuild`, `onbuild` (*19/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/19/onbuild/Dockerfile)
+-	[`18.3.4.1`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/18/Dockerfile)
+-	[`18.3.4.1-slim`, `18.3.4-slim`, `18.3-slim`, `18-slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/18/slim/Dockerfile)
+-	[`18.3.4.1-onbuild`, `18.3.4-onbuild`, `18.3-onbuild`, `18-onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/18/onbuild/Dockerfile)
 -	[`17.5.6.9`, `17.5.6`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/ea32d5f6f1735f9f55bee04b112166da96eb9c73/17/Dockerfile)
 -	[`17.5.6.9-slim`, `17.5.6-slim`, `17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/ea32d5f6f1735f9f55bee04b112166da96eb9c73/17/slim/Dockerfile)
 
-[![](https://badge.imagelayers.io/erlang:latest.svg)](https://imagelayers.io/?images=erlang:19.0,erlang:19.0-slim,erlang:19.0-onbuild,erlang:18.3.4,erlang:18.3.4-slim,erlang:18.3.4-onbuild,erlang:17.5.6.9,erlang:17.5.6.9-slim)
+[![](https://badge.imagelayers.io/erlang:latest.svg)](https://imagelayers.io/?images=erlang:19.0.1,erlang:19.0.1-slim,erlang:19.0.1-onbuild,erlang:18.3.4.1,erlang:18.3.4.1-slim,erlang:18.3.4.1-onbuild,erlang:17.5.6.9,erlang:17.5.6.9-slim)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/erlang`)](https://github.com/docker-library/official-images/blob/master/library/erlang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ferlang).
 
