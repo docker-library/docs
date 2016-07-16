@@ -2100,7 +2100,7 @@ CMD ["passenger" "start"]
 ## `redmine:passenger`
 
 ```console
-$ docker pull redmine@sha256:1df75d784a4d481d2d8c8207274afc0b44254cf87fbd31e15440db3648ba86f6
+$ docker pull redmine@sha256:ef50eff0125591d0805c3c42adf11772be92ef28627ff39a308e1cbcba7ac785
 ```
 
 -	Platforms:
@@ -2110,9 +2110,9 @@ $ docker pull redmine@sha256:1df75d784a4d481d2d8c8207274afc0b44254cf87fbd31e1544
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.1 MB (267123226 bytes)**  
+-	Total Size: **267.4 MB (267356784 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b96e68e1c292097399d78221457d3decbdd10006e8c398468bb3badc00b7e9f`
+-	Image ID: `sha256:2864e9baa493ced6eabef8e5a228f15fdd3f38422d7392e54b2f1c89a534c7bb`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -2165,31 +2165,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		imagemagick 	
 ENV RAILS_ENV=production
 # Fri, 24 Jun 2016 02:22:11 GMT
 WORKDIR /usr/src/redmine
-# Fri, 24 Jun 2016 02:38:32 GMT
-ENV REDMINE_VERSION=3.2.3
-# Fri, 24 Jun 2016 02:38:33 GMT
-ENV REDMINE_DOWNLOAD_MD5=46178231093ed8a90e9d9b6c1e7d42b6
-# Fri, 24 Jun 2016 02:38:52 GMT
+# Fri, 15 Jul 2016 20:50:30 GMT
+ENV REDMINE_VERSION=3.3.0
+# Fri, 15 Jul 2016 20:50:31 GMT
+ENV REDMINE_DOWNLOAD_MD5=0c0abb2d4efde455c3505d8caf01cb2d
+# Fri, 15 Jul 2016 20:50:36 GMT
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz 	&& echo "$REDMINE_DOWNLOAD_MD5 redmine.tar.gz" | md5sum -c - 	&& tar -xvf redmine.tar.gz --strip-components=1 	&& rm redmine.tar.gz files/delete.me log/delete.me 	&& mkdir -p tmp/pdf public/plugin_assets 	&& chown -R redmine:redmine ./
-# Fri, 24 Jun 2016 02:43:18 GMT
+# Fri, 15 Jul 2016 20:55:14 GMT
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 24 Jun 2016 02:43:19 GMT
+# Fri, 15 Jul 2016 20:55:15 GMT
 VOLUME [/usr/src/redmine/files]
-# Tue, 28 Jun 2016 23:43:59 GMT
+# Fri, 15 Jul 2016 20:55:16 GMT
 COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
-# Tue, 28 Jun 2016 23:44:00 GMT
+# Fri, 15 Jul 2016 20:55:17 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Tue, 28 Jun 2016 23:44:00 GMT
+# Fri, 15 Jul 2016 20:55:17 GMT
 EXPOSE 3000/tcp
-# Tue, 28 Jun 2016 23:44:01 GMT
+# Fri, 15 Jul 2016 20:55:18 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Tue, 28 Jun 2016 23:44:02 GMT
+# Fri, 15 Jul 2016 20:55:19 GMT
 ENV PASSENGER_VERSION=5.0.29
-# Tue, 28 Jun 2016 23:45:27 GMT
+# Fri, 15 Jul 2016 20:56:37 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Tue, 28 Jun 2016 23:45:30 GMT
+# Fri, 15 Jul 2016 20:56:40 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Tue, 28 Jun 2016 23:45:32 GMT
+# Fri, 15 Jul 2016 20:56:40 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -2227,18 +2227,18 @@ CMD ["passenger" "start"]
 	-	`sha256:77ef9ec5ac6ac6e5e8bdd30aa50087bfb81a69acde49fde54220209000fd74c3`  
 		Last Modified: Fri, 24 Jun 2016 02:44:49 GMT  
 		Size: 133.0 B
-	-	`sha256:79693e0cdcb90b484daf9d27ca797b418b6160a1b607a58123b7262c62756b4b`  
-		Last Modified: Fri, 24 Jun 2016 02:48:14 GMT  
-		Size: 2.3 MB (2330672 bytes)
-	-	`sha256:13074a5a5b872ca5c4bcb6988636c5a0b888b68afe523e0436b17cb8124a3167`  
-		Last Modified: Fri, 24 Jun 2016 02:48:27 GMT  
-		Size: 75.9 MB (75871596 bytes)
-	-	`sha256:4c2fc57dba9b9ec67b4a6b347038b4e611d51a14bc2a73780a39bd697d8e62a1`  
-		Last Modified: Tue, 28 Jun 2016 23:48:30 GMT  
-		Size: 1.2 KB (1159 bytes)
-	-	`sha256:66d08b60e30f6bb41ae76c9ab2974d53dc170ab82c1f34ff5f5799a9dda0d008`  
-		Last Modified: Tue, 28 Jun 2016 23:49:14 GMT  
-		Size: 21.7 MB (21728977 bytes)
-	-	`sha256:ee4b356ef1189eaa020a3b35f449e995393a6f4532e25785b53e45c5aa26b733`  
-		Last Modified: Tue, 28 Jun 2016 23:49:13 GMT  
-		Size: 10.4 MB (10419932 bytes)
+	-	`sha256:9fba566f307bb3d8a5fe4b0c4918b416b31e2646a00dca043d00da2621097ae0`  
+		Last Modified: Fri, 15 Jul 2016 20:58:07 GMT  
+		Size: 2.4 MB (2370086 bytes)
+	-	`sha256:e3c17b67afbb20981e435169df3de027399ff1f0f5669b4d91f9c270e09694d9`  
+		Last Modified: Fri, 15 Jul 2016 20:58:21 GMT  
+		Size: 76.1 MB (76065435 bytes)
+	-	`sha256:a97ca26ee133e4922115d798c6543fa190cafe8f8d2966400b5f25a9a9e2564f`  
+		Last Modified: Fri, 15 Jul 2016 20:58:06 GMT  
+		Size: 1.2 KB (1158 bytes)
+	-	`sha256:bd7ff0d0fc7affed81266a6e1e002a5387e0ce22bac4bebeb7e4e16f15fced7f`  
+		Last Modified: Fri, 15 Jul 2016 20:59:14 GMT  
+		Size: 21.7 MB (21729300 bytes)
+	-	`sha256:db2eca55e16dc8d03068bc7a1e58d69ae04e797dfe73bbd5867ab95a898ec184`  
+		Last Modified: Fri, 15 Jul 2016 20:59:11 GMT  
+		Size: 10.4 MB (10419915 bytes)
