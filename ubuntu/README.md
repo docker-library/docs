@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20160707`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a638d604a2eb4f80015d2d4d2eb7de2b1bcbb40f/precise/Dockerfile)
--	[`14.04.4`, `14.04`, `trusty-20160624`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a638d604a2eb4f80015d2d4d2eb7de2b1bcbb40f/trusty/Dockerfile)
--	[`15.10`, `wily-20160706`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a638d604a2eb4f80015d2d4d2eb7de2b1bcbb40f/wily/Dockerfile)
--	[`16.04`, `xenial-20160706`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a638d604a2eb4f80015d2d4d2eb7de2b1bcbb40f/xenial/Dockerfile)
--	[`16.10`, `yakkety-20160708`, `yakkety` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a638d604a2eb4f80015d2d4d2eb7de2b1bcbb40f/yakkety/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise-20160707`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e68c4b0d4c860a8e0547cfea6f1b07f0adb9ff46/precise/Dockerfile)
+-	[`14.04.4`, `14.04`, `trusty-20160711`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e68c4b0d4c860a8e0547cfea6f1b07f0adb9ff46/trusty/Dockerfile)
+-	[`15.10`, `wily-20160706`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e68c4b0d4c860a8e0547cfea6f1b07f0adb9ff46/wily/Dockerfile)
+-	[`16.04`, `xenial-20160713`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e68c4b0d4c860a8e0547cfea6f1b07f0adb9ff46/xenial/Dockerfile)
+-	[`16.10`, `yakkety-20160717`, `yakkety`, `devel` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e68c4b0d4c860a8e0547cfea6f1b07f0adb9ff46/yakkety/Dockerfile)
 
 [![](https://badge.imagelayers.io/ubuntu:latest.svg)](https://imagelayers.io/?images=ubuntu:12.04.5,ubuntu:14.04.4,ubuntu:15.10,ubuntu:16.04,ubuntu:16.10)
 
