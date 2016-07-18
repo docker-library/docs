@@ -25,7 +25,7 @@
 ## `neurodebian:precise`
 
 ```console
-$ docker pull neurodebian@sha256:34f6f2160df907960788175263363d2e79321f018123971ed676b40f16a55645
+$ docker pull neurodebian@sha256:38b364b0449be8881842d111daf03887dcfd12edb1936b29223743d90ecb4b80
 ```
 
 -	Platforms:
@@ -35,29 +35,29 @@ $ docker pull neurodebian@sha256:34f6f2160df907960788175263363d2e79321f018123971
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.5 MB (44458412 bytes)**  
+-	Total Size: **44.5 MB (44467646 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd7e7b0a6ad2fcbf959dd318f480b990b96c63862d7dfdf2afd2fb0529530094`
+-	Image ID: `sha256:6bce798d709bf5857546cf9b89285d7d2678a96d2ae4e64846facd50d1b84091`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 08 Jul 2016 18:38:49 GMT
 ADD file:a5827d860bc00fbb0b885782e98401c104f962c243de0390e1db0b51cc61e1c8 in /
-# Fri, 08 Jul 2016 18:38:51 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 08 Jul 2016 18:38:53 GMT
+# Mon, 18 Jul 2016 17:34:30 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:32 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:38:55 GMT
+# Mon, 18 Jul 2016 17:34:34 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 08 Jul 2016 18:38:55 GMT
+# Mon, 18 Jul 2016 17:34:35 GMT
 CMD ["/bin/bash"]
-# Fri, 08 Jul 2016 19:10:21 GMT
+# Mon, 18 Jul 2016 18:33:47 GMT
 RUN echo 'deb http://neuro.debian.net/debian precise main' > /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:10:22 GMT
+# Mon, 18 Jul 2016 18:33:48 GMT
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:10:24 GMT
+# Mon, 18 Jul 2016 18:33:50 GMT
 RUN echo '#deb-src http://neuro.debian.net/debian-devel precise main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:10:26 GMT
+# Mon, 18 Jul 2016 18:33:52 GMT
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
@@ -65,32 +65,32 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 	-	`sha256:76582687379951c724499c3f12ea80dd492283a4115aa509474880830e9d14f4`  
 		Last Modified: Fri, 08 Jul 2016 18:40:28 GMT  
 		Size: 44.4 MB (44362818 bytes)
-	-	`sha256:54b547b873253c5aa919a602a37828ca99b68d00e9c3ece8d0311648ea3a9e51`  
-		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
-		Size: 78.6 KB (78634 bytes)
-	-	`sha256:6ad0a1551226a44db2a61999149235d5ad61446e96ba2d57382d157857d59b5d`  
-		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
-		Size: 724.0 B
-	-	`sha256:b14b694087e21079904b53feedf66595145b0d5de18dd622162ee871e41cf7f1`  
-		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
-		Size: 681.0 B
-	-	`sha256:4593298db4fb6e7f7728a8072ade7b590f41eb2df699a978501b3e42f0c15416`  
-		Last Modified: Fri, 08 Jul 2016 19:10:35 GMT  
-		Size: 214.0 B
-	-	`sha256:1b82971a7c64cb66db8cf4b0969aa9e66122b58e822e41b8a4172edeee2d40a5`  
-		Last Modified: Fri, 08 Jul 2016 19:10:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7c7b33b60a1fd49d77d71c023d70cc71d82f62299c9794d13802af7f284809c3`  
-		Last Modified: Fri, 08 Jul 2016 19:10:36 GMT  
-		Size: 238.0 B
-	-	`sha256:94f642af6362a0a8e9ab3340bd0e49f1b4bbe0a773e5401236375c8891384af0`  
-		Last Modified: Fri, 08 Jul 2016 19:10:35 GMT  
+	-	`sha256:580e6785cdfb8e5f9d2048241d8a29752d63a508e11d836330a75320a1d2c780`  
+		Last Modified: Mon, 18 Jul 2016 17:35:55 GMT  
+		Size: 87.9 KB (87874 bytes)
+	-	`sha256:3b463dce042919034b143e09611cd48d92731ebf0415dd6f8e45671b5559e203`  
+		Last Modified: Mon, 18 Jul 2016 17:35:54 GMT  
+		Size: 721.0 B
+	-	`sha256:27ec34d038d233ee561e5f4528967823c9bf708e37fde1c4fc90eebf560703ac`  
+		Last Modified: Mon, 18 Jul 2016 17:35:55 GMT  
+		Size: 680.0 B
+	-	`sha256:c55684f0d547c7fa9a0ee8e94359eedd5cc80348e079bfbcba1dc4b53d626355`  
+		Last Modified: Mon, 18 Jul 2016 18:34:00 GMT  
+		Size: 212.0 B
+	-	`sha256:15c33eca99a574748c45bbe3a8b86415bad5747a8550bbd2ad810e80c28601d5`  
+		Last Modified: Mon, 18 Jul 2016 18:34:00 GMT  
+		Size: 221.0 B
+	-	`sha256:438b77c6abe51994e5ecaf1d6568aeefafbeed502243d9e602cbfeba3dbe7155`  
+		Last Modified: Mon, 18 Jul 2016 18:34:01 GMT  
+		Size: 237.0 B
+	-	`sha256:339b56ef228a07bda82b9888653003f83c7429151167d8d72e484e17fb94a8ad`  
+		Last Modified: Mon, 18 Jul 2016 18:34:00 GMT  
 		Size: 14.9 KB (14883 bytes)
 
 ## `neurodebian:nd12.04`
 
 ```console
-$ docker pull neurodebian@sha256:34f6f2160df907960788175263363d2e79321f018123971ed676b40f16a55645
+$ docker pull neurodebian@sha256:38b364b0449be8881842d111daf03887dcfd12edb1936b29223743d90ecb4b80
 ```
 
 -	Platforms:
@@ -100,29 +100,29 @@ $ docker pull neurodebian@sha256:34f6f2160df907960788175263363d2e79321f018123971
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.5 MB (44458412 bytes)**  
+-	Total Size: **44.5 MB (44467646 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd7e7b0a6ad2fcbf959dd318f480b990b96c63862d7dfdf2afd2fb0529530094`
+-	Image ID: `sha256:6bce798d709bf5857546cf9b89285d7d2678a96d2ae4e64846facd50d1b84091`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 08 Jul 2016 18:38:49 GMT
 ADD file:a5827d860bc00fbb0b885782e98401c104f962c243de0390e1db0b51cc61e1c8 in /
-# Fri, 08 Jul 2016 18:38:51 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 08 Jul 2016 18:38:53 GMT
+# Mon, 18 Jul 2016 17:34:30 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:32 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:38:55 GMT
+# Mon, 18 Jul 2016 17:34:34 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 08 Jul 2016 18:38:55 GMT
+# Mon, 18 Jul 2016 17:34:35 GMT
 CMD ["/bin/bash"]
-# Fri, 08 Jul 2016 19:10:21 GMT
+# Mon, 18 Jul 2016 18:33:47 GMT
 RUN echo 'deb http://neuro.debian.net/debian precise main' > /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:10:22 GMT
+# Mon, 18 Jul 2016 18:33:48 GMT
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:10:24 GMT
+# Mon, 18 Jul 2016 18:33:50 GMT
 RUN echo '#deb-src http://neuro.debian.net/debian-devel precise main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:10:26 GMT
+# Mon, 18 Jul 2016 18:33:52 GMT
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
@@ -130,32 +130,32 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 	-	`sha256:76582687379951c724499c3f12ea80dd492283a4115aa509474880830e9d14f4`  
 		Last Modified: Fri, 08 Jul 2016 18:40:28 GMT  
 		Size: 44.4 MB (44362818 bytes)
-	-	`sha256:54b547b873253c5aa919a602a37828ca99b68d00e9c3ece8d0311648ea3a9e51`  
-		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
-		Size: 78.6 KB (78634 bytes)
-	-	`sha256:6ad0a1551226a44db2a61999149235d5ad61446e96ba2d57382d157857d59b5d`  
-		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
-		Size: 724.0 B
-	-	`sha256:b14b694087e21079904b53feedf66595145b0d5de18dd622162ee871e41cf7f1`  
-		Last Modified: Fri, 08 Jul 2016 18:40:14 GMT  
-		Size: 681.0 B
-	-	`sha256:4593298db4fb6e7f7728a8072ade7b590f41eb2df699a978501b3e42f0c15416`  
-		Last Modified: Fri, 08 Jul 2016 19:10:35 GMT  
-		Size: 214.0 B
-	-	`sha256:1b82971a7c64cb66db8cf4b0969aa9e66122b58e822e41b8a4172edeee2d40a5`  
-		Last Modified: Fri, 08 Jul 2016 19:10:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7c7b33b60a1fd49d77d71c023d70cc71d82f62299c9794d13802af7f284809c3`  
-		Last Modified: Fri, 08 Jul 2016 19:10:36 GMT  
-		Size: 238.0 B
-	-	`sha256:94f642af6362a0a8e9ab3340bd0e49f1b4bbe0a773e5401236375c8891384af0`  
-		Last Modified: Fri, 08 Jul 2016 19:10:35 GMT  
+	-	`sha256:580e6785cdfb8e5f9d2048241d8a29752d63a508e11d836330a75320a1d2c780`  
+		Last Modified: Mon, 18 Jul 2016 17:35:55 GMT  
+		Size: 87.9 KB (87874 bytes)
+	-	`sha256:3b463dce042919034b143e09611cd48d92731ebf0415dd6f8e45671b5559e203`  
+		Last Modified: Mon, 18 Jul 2016 17:35:54 GMT  
+		Size: 721.0 B
+	-	`sha256:27ec34d038d233ee561e5f4528967823c9bf708e37fde1c4fc90eebf560703ac`  
+		Last Modified: Mon, 18 Jul 2016 17:35:55 GMT  
+		Size: 680.0 B
+	-	`sha256:c55684f0d547c7fa9a0ee8e94359eedd5cc80348e079bfbcba1dc4b53d626355`  
+		Last Modified: Mon, 18 Jul 2016 18:34:00 GMT  
+		Size: 212.0 B
+	-	`sha256:15c33eca99a574748c45bbe3a8b86415bad5747a8550bbd2ad810e80c28601d5`  
+		Last Modified: Mon, 18 Jul 2016 18:34:00 GMT  
+		Size: 221.0 B
+	-	`sha256:438b77c6abe51994e5ecaf1d6568aeefafbeed502243d9e602cbfeba3dbe7155`  
+		Last Modified: Mon, 18 Jul 2016 18:34:01 GMT  
+		Size: 237.0 B
+	-	`sha256:339b56ef228a07bda82b9888653003f83c7429151167d8d72e484e17fb94a8ad`  
+		Last Modified: Mon, 18 Jul 2016 18:34:00 GMT  
 		Size: 14.9 KB (14883 bytes)
 
 ## `neurodebian:trusty`
 
 ```console
-$ docker pull neurodebian@sha256:29115f65fc4a6c60da618c5facc64bd4124fe7f2a94528d7e07d4d8c20863ff6
+$ docker pull neurodebian@sha256:6663a147688772072281b84e5ef122f81e5b8a110a8b4ceb155fbf227be5cbac
 ```
 
 -	Platforms:
@@ -165,62 +165,62 @@ $ docker pull neurodebian@sha256:29115f65fc4a6c60da618c5facc64bd4124fe7f2a94528d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **65.8 MB (65817286 bytes)**  
+-	Total Size: **65.8 MB (65807914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6962a7c63b911ba0cd9d2395214c5f835ee32060ee1a1b862373e7be3846b637`
+-	Image ID: `sha256:12c241943bfc07b3ea5ed4dabbbbe1e9a08fe58f2cb4c1d67892ce1d7c784402`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Mon, 18 Jul 2016 17:34:50 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Mon, 18 Jul 2016 17:34:53 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:54 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Mon, 18 Jul 2016 17:34:57 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Mon, 18 Jul 2016 17:34:58 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 19:25:34 GMT
+# Mon, 18 Jul 2016 18:34:19 GMT
 RUN echo 'deb http://neuro.debian.net/debian trusty main' > /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 24 Jun 2016 19:25:36 GMT
+# Mon, 18 Jul 2016 18:34:21 GMT
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 24 Jun 2016 19:25:37 GMT
+# Mon, 18 Jul 2016 18:34:22 GMT
 RUN echo '#deb-src http://neuro.debian.net/debian-devel trusty main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 24 Jun 2016 19:25:54 GMT
+# Mon, 18 Jul 2016 18:34:40 GMT
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:c3449840d086430a7a40b7b6203bb2bbfe5e60c1476d338f9a13793aa5b3702d`  
-		Last Modified: Fri, 24 Jun 2016 19:26:01 GMT  
-		Size: 216.0 B
-	-	`sha256:aba2551c323112f29d623bfe163556ca939ad9e30da593881a329ea05c80f496`  
-		Last Modified: Fri, 24 Jun 2016 19:26:02 GMT  
-		Size: 222.0 B
-	-	`sha256:4c24c38752c64ee2bd00e1df7db6d85f1e5d0ff492e1da6fe04ca2696e79dc29`  
-		Last Modified: Fri, 24 Jun 2016 19:26:01 GMT  
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 92.3 KB (92340 bytes)
+	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 366.0 B
+	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 682.0 B
+	-	`sha256:4db401fbcc9f31839a3ef1b6fb93e10e78777ed4754363367d14f7b3a9696890`  
+		Last Modified: Mon, 18 Jul 2016 18:34:48 GMT  
+		Size: 214.0 B
+	-	`sha256:8185db0ca6121b9f8605a841de0a987676130e5d69abe4b40a30f4bb10a62e1c`  
+		Last Modified: Mon, 18 Jul 2016 18:34:48 GMT  
+		Size: 223.0 B
+	-	`sha256:a823055cc445fae5fc8da44976b79503cba31411b97251fb8a124ad02ae169c3`  
+		Last Modified: Mon, 18 Jul 2016 18:34:48 GMT  
 		Size: 239.0 B
-	-	`sha256:6cd4df667600f02bd107217b792c0e9dfaa7bf707713c280cff5248e959affdf`  
-		Last Modified: Fri, 24 Jun 2016 19:26:01 GMT  
-		Size: 14.8 KB (14780 bytes)
+	-	`sha256:e429e8005bea786d4ad0343c180c4a59154189c23e68d1e620aea4b4ba312c32`  
+		Last Modified: Mon, 18 Jul 2016 18:34:48 GMT  
+		Size: 14.8 KB (14781 bytes)
 
 ## `neurodebian:nd14.04`
 
 ```console
-$ docker pull neurodebian@sha256:29115f65fc4a6c60da618c5facc64bd4124fe7f2a94528d7e07d4d8c20863ff6
+$ docker pull neurodebian@sha256:6663a147688772072281b84e5ef122f81e5b8a110a8b4ceb155fbf227be5cbac
 ```
 
 -	Platforms:
@@ -230,57 +230,57 @@ $ docker pull neurodebian@sha256:29115f65fc4a6c60da618c5facc64bd4124fe7f2a94528d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **65.8 MB (65817286 bytes)**  
+-	Total Size: **65.8 MB (65807914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6962a7c63b911ba0cd9d2395214c5f835ee32060ee1a1b862373e7be3846b637`
+-	Image ID: `sha256:12c241943bfc07b3ea5ed4dabbbbe1e9a08fe58f2cb4c1d67892ce1d7c784402`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Mon, 18 Jul 2016 17:34:50 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Mon, 18 Jul 2016 17:34:53 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:54 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Mon, 18 Jul 2016 17:34:57 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Mon, 18 Jul 2016 17:34:58 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 19:25:34 GMT
+# Mon, 18 Jul 2016 18:34:19 GMT
 RUN echo 'deb http://neuro.debian.net/debian trusty main' > /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 24 Jun 2016 19:25:36 GMT
+# Mon, 18 Jul 2016 18:34:21 GMT
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 24 Jun 2016 19:25:37 GMT
+# Mon, 18 Jul 2016 18:34:22 GMT
 RUN echo '#deb-src http://neuro.debian.net/debian-devel trusty main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 24 Jun 2016 19:25:54 GMT
+# Mon, 18 Jul 2016 18:34:40 GMT
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:c3449840d086430a7a40b7b6203bb2bbfe5e60c1476d338f9a13793aa5b3702d`  
-		Last Modified: Fri, 24 Jun 2016 19:26:01 GMT  
-		Size: 216.0 B
-	-	`sha256:aba2551c323112f29d623bfe163556ca939ad9e30da593881a329ea05c80f496`  
-		Last Modified: Fri, 24 Jun 2016 19:26:02 GMT  
-		Size: 222.0 B
-	-	`sha256:4c24c38752c64ee2bd00e1df7db6d85f1e5d0ff492e1da6fe04ca2696e79dc29`  
-		Last Modified: Fri, 24 Jun 2016 19:26:01 GMT  
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 92.3 KB (92340 bytes)
+	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 366.0 B
+	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 682.0 B
+	-	`sha256:4db401fbcc9f31839a3ef1b6fb93e10e78777ed4754363367d14f7b3a9696890`  
+		Last Modified: Mon, 18 Jul 2016 18:34:48 GMT  
+		Size: 214.0 B
+	-	`sha256:8185db0ca6121b9f8605a841de0a987676130e5d69abe4b40a30f4bb10a62e1c`  
+		Last Modified: Mon, 18 Jul 2016 18:34:48 GMT  
+		Size: 223.0 B
+	-	`sha256:a823055cc445fae5fc8da44976b79503cba31411b97251fb8a124ad02ae169c3`  
+		Last Modified: Mon, 18 Jul 2016 18:34:48 GMT  
 		Size: 239.0 B
-	-	`sha256:6cd4df667600f02bd107217b792c0e9dfaa7bf707713c280cff5248e959affdf`  
-		Last Modified: Fri, 24 Jun 2016 19:26:01 GMT  
-		Size: 14.8 KB (14780 bytes)
+	-	`sha256:e429e8005bea786d4ad0343c180c4a59154189c23e68d1e620aea4b4ba312c32`  
+		Last Modified: Mon, 18 Jul 2016 18:34:48 GMT  
+		Size: 14.8 KB (14781 bytes)
 
 ## `neurodebian:vivid`
 
@@ -411,7 +411,7 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ## `neurodebian:wily`
 
 ```console
-$ docker pull neurodebian@sha256:644ae8ac6503dd14f4f954134a961c00055e038ec883ffeee98ffc4a4885e4ed
+$ docker pull neurodebian@sha256:49bab0382d5badcb2d883d9021dac416017ef8ba6543330280d7965470aad879
 ```
 
 -	Platforms:
@@ -421,29 +421,29 @@ $ docker pull neurodebian@sha256:644ae8ac6503dd14f4f954134a961c00055e038ec883ffe
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.1 MB (51105529 bytes)**  
+-	Total Size: **51.1 MB (51105618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f43bd319f97d8a2c2c27e0ded6e24c87d67cc7b67998637daac71092d83ef0df`
+-	Image ID: `sha256:70c32323589e6b754978267ce44b6e5243b596351d5935a44fe0ec9ea706010b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 08 Jul 2016 18:39:16 GMT
 ADD file:d5d47c6a963e950e735765bfaf16851fc7297115de6c17bdd61148288e5b8873 in /
-# Fri, 08 Jul 2016 18:39:18 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 08 Jul 2016 18:39:20 GMT
+# Mon, 18 Jul 2016 17:35:06 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:35:08 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:39:22 GMT
+# Mon, 18 Jul 2016 17:35:09 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 08 Jul 2016 18:39:22 GMT
+# Mon, 18 Jul 2016 17:35:10 GMT
 CMD ["/bin/bash"]
-# Fri, 08 Jul 2016 19:10:57 GMT
+# Mon, 18 Jul 2016 18:35:08 GMT
 RUN echo 'deb http://neuro.debian.net/debian wily main' > /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:10:59 GMT
+# Mon, 18 Jul 2016 18:35:10 GMT
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:11:01 GMT
+# Mon, 18 Jul 2016 18:35:12 GMT
 RUN echo '#deb-src http://neuro.debian.net/debian-devel wily main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:11:03 GMT
+# Mon, 18 Jul 2016 18:35:14 GMT
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
@@ -451,32 +451,32 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 	-	`sha256:7dcf5a4443927558c6720517b7996d912d98288d6f565e99195d1b72431a38ca`  
 		Last Modified: Fri, 08 Jul 2016 18:42:06 GMT  
 		Size: 51.1 MB (51067308 bytes)
-	-	`sha256:e364dd51c286572ba2089627ab3ea67589908ade37159d61dc98772cf6232327`  
-		Last Modified: Fri, 08 Jul 2016 18:41:42 GMT  
-		Size: 21.6 KB (21584 bytes)
-	-	`sha256:69d55d4f9a396900ad93bbdf5766082d6301cd336b7762cb6a59830d1ad607bc`  
-		Last Modified: Fri, 08 Jul 2016 18:41:42 GMT  
-		Size: 506.0 B
-	-	`sha256:372861b65afceddfd72f421d2ad1a9f1ade132d8255344c8947a91f08dc7410a`  
-		Last Modified: Fri, 08 Jul 2016 18:41:42 GMT  
-		Size: 679.0 B
-	-	`sha256:059ab01805cffeebca2268f1464db3c65b7c54cb3165f018735f1338020874a4`  
-		Last Modified: Fri, 08 Jul 2016 19:11:12 GMT  
-		Size: 214.0 B
-	-	`sha256:c85aa37d64ab0fa30b0eab55bdc74dd6061df74cd40e1df3c244f1244e614109`  
-		Last Modified: Fri, 08 Jul 2016 19:11:12 GMT  
-		Size: 220.0 B
-	-	`sha256:cf8cfa8152e30268eff8bb1f8b4b5b2adc11eb59e6804d75c305b809543212d7`  
-		Last Modified: Fri, 08 Jul 2016 19:11:12 GMT  
-		Size: 237.0 B
-	-	`sha256:c1f79b21b9a17795b7121c15e3f0d63125a390d0885cd07748f274e5a066b6af`  
-		Last Modified: Fri, 08 Jul 2016 19:11:13 GMT  
+	-	`sha256:9eebba75a87f9339364057266fcd7c79489b809835388c2d5dd662f0d47ffaef`  
+		Last Modified: Mon, 18 Jul 2016 17:37:36 GMT  
+		Size: 21.7 KB (21663 bytes)
+	-	`sha256:1f0440d87cc73c252220267fbf1712ddd2c5df8a333a594c6a4f543af5fec207`  
+		Last Modified: Mon, 18 Jul 2016 17:37:36 GMT  
+		Size: 511.0 B
+	-	`sha256:dacd0555c1b42ff436bba2b824b6e2f04ddb70fd484b4bbb489bd11e4e2c1f24`  
+		Last Modified: Mon, 18 Jul 2016 17:37:37 GMT  
+		Size: 681.0 B
+	-	`sha256:229b6e81eed4c061f175c45cee08ab6600747ab0142725ef015b66ba657e6fe0`  
+		Last Modified: Mon, 18 Jul 2016 18:35:22 GMT  
+		Size: 215.0 B
+	-	`sha256:8c1d963c91ef15db6f0875e7bfe8362cddf56c744a847bc7da2336b867d0d39b`  
+		Last Modified: Mon, 18 Jul 2016 18:35:22 GMT  
+		Size: 221.0 B
+	-	`sha256:033574038faa93afa7891e65e2b922b1777363a64d234fc0759b1c6db452a9eb`  
+		Last Modified: Mon, 18 Jul 2016 18:35:22 GMT  
+		Size: 238.0 B
+	-	`sha256:e364d36dc1ac2fe87a2b7cf3a0cd9cf4f564f557a6081735f7c62e7e9e0c1f67`  
+		Last Modified: Mon, 18 Jul 2016 18:35:22 GMT  
 		Size: 14.8 KB (14781 bytes)
 
 ## `neurodebian:nd15.10`
 
 ```console
-$ docker pull neurodebian@sha256:644ae8ac6503dd14f4f954134a961c00055e038ec883ffeee98ffc4a4885e4ed
+$ docker pull neurodebian@sha256:49bab0382d5badcb2d883d9021dac416017ef8ba6543330280d7965470aad879
 ```
 
 -	Platforms:
@@ -486,29 +486,29 @@ $ docker pull neurodebian@sha256:644ae8ac6503dd14f4f954134a961c00055e038ec883ffe
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.1 MB (51105529 bytes)**  
+-	Total Size: **51.1 MB (51105618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f43bd319f97d8a2c2c27e0ded6e24c87d67cc7b67998637daac71092d83ef0df`
+-	Image ID: `sha256:70c32323589e6b754978267ce44b6e5243b596351d5935a44fe0ec9ea706010b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 08 Jul 2016 18:39:16 GMT
 ADD file:d5d47c6a963e950e735765bfaf16851fc7297115de6c17bdd61148288e5b8873 in /
-# Fri, 08 Jul 2016 18:39:18 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 08 Jul 2016 18:39:20 GMT
+# Mon, 18 Jul 2016 17:35:06 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:35:08 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:39:22 GMT
+# Mon, 18 Jul 2016 17:35:09 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 08 Jul 2016 18:39:22 GMT
+# Mon, 18 Jul 2016 17:35:10 GMT
 CMD ["/bin/bash"]
-# Fri, 08 Jul 2016 19:10:57 GMT
+# Mon, 18 Jul 2016 18:35:08 GMT
 RUN echo 'deb http://neuro.debian.net/debian wily main' > /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:10:59 GMT
+# Mon, 18 Jul 2016 18:35:10 GMT
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:11:01 GMT
+# Mon, 18 Jul 2016 18:35:12 GMT
 RUN echo '#deb-src http://neuro.debian.net/debian-devel wily main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 08 Jul 2016 19:11:03 GMT
+# Mon, 18 Jul 2016 18:35:14 GMT
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
@@ -516,26 +516,26 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 	-	`sha256:7dcf5a4443927558c6720517b7996d912d98288d6f565e99195d1b72431a38ca`  
 		Last Modified: Fri, 08 Jul 2016 18:42:06 GMT  
 		Size: 51.1 MB (51067308 bytes)
-	-	`sha256:e364dd51c286572ba2089627ab3ea67589908ade37159d61dc98772cf6232327`  
-		Last Modified: Fri, 08 Jul 2016 18:41:42 GMT  
-		Size: 21.6 KB (21584 bytes)
-	-	`sha256:69d55d4f9a396900ad93bbdf5766082d6301cd336b7762cb6a59830d1ad607bc`  
-		Last Modified: Fri, 08 Jul 2016 18:41:42 GMT  
-		Size: 506.0 B
-	-	`sha256:372861b65afceddfd72f421d2ad1a9f1ade132d8255344c8947a91f08dc7410a`  
-		Last Modified: Fri, 08 Jul 2016 18:41:42 GMT  
-		Size: 679.0 B
-	-	`sha256:059ab01805cffeebca2268f1464db3c65b7c54cb3165f018735f1338020874a4`  
-		Last Modified: Fri, 08 Jul 2016 19:11:12 GMT  
-		Size: 214.0 B
-	-	`sha256:c85aa37d64ab0fa30b0eab55bdc74dd6061df74cd40e1df3c244f1244e614109`  
-		Last Modified: Fri, 08 Jul 2016 19:11:12 GMT  
-		Size: 220.0 B
-	-	`sha256:cf8cfa8152e30268eff8bb1f8b4b5b2adc11eb59e6804d75c305b809543212d7`  
-		Last Modified: Fri, 08 Jul 2016 19:11:12 GMT  
-		Size: 237.0 B
-	-	`sha256:c1f79b21b9a17795b7121c15e3f0d63125a390d0885cd07748f274e5a066b6af`  
-		Last Modified: Fri, 08 Jul 2016 19:11:13 GMT  
+	-	`sha256:9eebba75a87f9339364057266fcd7c79489b809835388c2d5dd662f0d47ffaef`  
+		Last Modified: Mon, 18 Jul 2016 17:37:36 GMT  
+		Size: 21.7 KB (21663 bytes)
+	-	`sha256:1f0440d87cc73c252220267fbf1712ddd2c5df8a333a594c6a4f543af5fec207`  
+		Last Modified: Mon, 18 Jul 2016 17:37:36 GMT  
+		Size: 511.0 B
+	-	`sha256:dacd0555c1b42ff436bba2b824b6e2f04ddb70fd484b4bbb489bd11e4e2c1f24`  
+		Last Modified: Mon, 18 Jul 2016 17:37:37 GMT  
+		Size: 681.0 B
+	-	`sha256:229b6e81eed4c061f175c45cee08ab6600747ab0142725ef015b66ba657e6fe0`  
+		Last Modified: Mon, 18 Jul 2016 18:35:22 GMT  
+		Size: 215.0 B
+	-	`sha256:8c1d963c91ef15db6f0875e7bfe8362cddf56c744a847bc7da2336b867d0d39b`  
+		Last Modified: Mon, 18 Jul 2016 18:35:22 GMT  
+		Size: 221.0 B
+	-	`sha256:033574038faa93afa7891e65e2b922b1777363a64d234fc0759b1c6db452a9eb`  
+		Last Modified: Mon, 18 Jul 2016 18:35:22 GMT  
+		Size: 238.0 B
+	-	`sha256:e364d36dc1ac2fe87a2b7cf3a0cd9cf4f564f557a6081735f7c62e7e9e0c1f67`  
+		Last Modified: Mon, 18 Jul 2016 18:35:22 GMT  
 		Size: 14.8 KB (14781 bytes)
 
 ## `neurodebian:squeeze`
