@@ -9,9 +9,9 @@
 -	[`arangodb:2.7`](#arangodb27)
 -	[`arangodb:2.7.5`](#arangodb275)
 -	[`arangodb:2.8`](#arangodb28)
--	[`arangodb:2.8.9`](#arangodb289)
+-	[`arangodb:2.8.11`](#arangodb2811)
 -	[`arangodb:3.0`](#arangodb30)
--	[`arangodb:3.0.2`](#arangodb302)
+-	[`arangodb:3.0.3`](#arangodb303)
 -	[`arangodb:latest`](#arangodblatest)
 
 ## `arangodb:2.5.5`
@@ -377,7 +377,7 @@ CMD ["/usr/sbin/arangod"]
 ## `arangodb:2.8`
 
 ```console
-$ docker pull arangodb@sha256:2a03ddead2389a80eb4604407bd8e0700938e31ae49e5073e8369f5d0f21353e
+$ docker pull arangodb@sha256:0d8ccaa864c98b16a58e273de66e2f3167189db805034f19c53f2ff89092cb87
 ```
 
 -	Platforms:
@@ -387,9 +387,9 @@ $ docker pull arangodb@sha256:2a03ddead2389a80eb4604407bd8e0700938e31ae49e5073e8
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.2 MB (110191785 bytes)**  
+-	Total Size: **110.2 MB (110191537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ca1719c05e987385390e786c75be1a0cca5fcdc30f303019b3b533fa1df1cc7`
+-	Image ID: `sha256:75b3c558dd9bdfa971f9921b52333c1f64639d87f1d5512835425176764a527f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
@@ -404,31 +404,31 @@ MAINTAINER Frank Celler <info@arangodb.com>
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
 # Fri, 10 Jun 2016 04:54:36 GMT
 ENV ARCHITECTURE=amd64
-# Fri, 10 Jun 2016 04:59:25 GMT
-ENV ARANGO_VERSION=2.8.9
-# Fri, 10 Jun 2016 04:59:25 GMT
+# Mon, 18 Jul 2016 16:45:23 GMT
+ENV ARANGO_VERSION=2.8.11
+# Mon, 18 Jul 2016 16:45:24 GMT
 ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
-# Fri, 10 Jun 2016 04:59:26 GMT
-ENV ARANGO_PACKAGE=arangodb_2.8.9_amd64.deb
-# Fri, 10 Jun 2016 04:59:26 GMT
-ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.8.9_amd64.deb
-# Fri, 10 Jun 2016 04:59:26 GMT
-ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.8.9_amd64.deb.asc
-# Fri, 10 Jun 2016 05:01:07 GMT
+# Mon, 18 Jul 2016 16:45:25 GMT
+ENV ARANGO_PACKAGE=arangodb_2.8.11_amd64.deb
+# Mon, 18 Jul 2016 16:45:25 GMT
+ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.8.11_amd64.deb
+# Mon, 18 Jul 2016 16:45:26 GMT
+ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.8.11_amd64.deb.asc
+# Mon, 18 Jul 2016 16:47:04 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libgoogle-perftools4         ca-certificates         pwgen         wget     &&     rm -rf /var/lib/apt/lists/* &&     wget ${ARANGO_SIGNATURE_URL} &&           wget ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     dpkg -i ${ARANGO_PACKAGE} &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^#\s*uid\s*=.*!uid = arangodb!'         -e 's!^#\s*gid\s*=.*!gid = arangodb!'         /etc/arangodb/arangod.conf     &&     apt-get purge -y --auto-remove ca-certificates wget &&     rm -f ${ARANGO_PACKAGE}*
-# Fri, 10 Jun 2016 05:01:09 GMT
+# Mon, 18 Jul 2016 16:47:06 GMT
 RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/lib/arangodb-apps
-# Fri, 10 Jun 2016 05:01:09 GMT
+# Mon, 18 Jul 2016 16:47:07 GMT
 VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
-# Fri, 10 Jun 2016 05:01:09 GMT
+# Mon, 18 Jul 2016 16:47:08 GMT
 COPY file:d5e2df43b028efe92b9f4dc2dfd67aa54840beb1e09b6c23c32ae8403b0ae7e4 in /entrypoint.sh
-# Fri, 10 Jun 2016 05:01:10 GMT
+# Mon, 18 Jul 2016 16:47:09 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 10 Jun 2016 05:01:10 GMT
+# Mon, 18 Jul 2016 16:47:09 GMT
 EXPOSE 8529/tcp
-# Fri, 10 Jun 2016 05:01:10 GMT
+# Mon, 18 Jul 2016 16:47:10 GMT
 USER [arangodb]
-# Fri, 10 Jun 2016 05:01:10 GMT
+# Mon, 18 Jul 2016 16:47:11 GMT
 CMD ["arangod"]
 ```
 
@@ -439,32 +439,32 @@ CMD ["arangod"]
 	-	`sha256:67a300b324c122317cf2ea9fbf8beda6b6600f9adca4d7c244cd3292e1c03373`  
 		Last Modified: Wed, 29 Jun 2016 17:22:47 GMT  
 		Size: 6.8 KB (6771 bytes)
-	-	`sha256:4600cd27d8ad0c19ede04655dd0bec5cb971000df675603574f27714c4d815a8`  
-		Last Modified: Wed, 29 Jun 2016 17:25:25 GMT  
-		Size: 58.8 MB (58831218 bytes)
-	-	`sha256:6e894a8c9bc2b46c465e689994975106dbc1a441b21691a20527e101e4bb16a0`  
-		Last Modified: Wed, 29 Jun 2016 17:25:07 GMT  
-		Size: 166.0 B
-	-	`sha256:74dc8af26e1dde9cfc3cdce2938c01b3e999dc8db5d8aaca8f0dfcef4602a27d`  
-		Last Modified: Wed, 29 Jun 2016 17:25:07 GMT  
+	-	`sha256:e7489091ccef26accf3f86df7e44ab853d9742fe6085021ff50d2736ff152ed2`  
+		Last Modified: Mon, 18 Jul 2016 16:50:27 GMT  
+		Size: 58.8 MB (58830971 bytes)
+	-	`sha256:e43bf0ac909d45549d722ec966c66eb0f13a8bdb03649917bf77d378676bc8d2`  
+		Last Modified: Mon, 18 Jul 2016 16:50:11 GMT  
+		Size: 165.0 B
+	-	`sha256:23529b0caf11cfef25e8b94eb08674b188d17137e819685eda1080d77846a8c3`  
+		Last Modified: Mon, 18 Jul 2016 16:50:11 GMT  
 		Size: 1.1 KB (1095 bytes)
 
-## `arangodb:2.8.9`
+## `arangodb:2.8.11`
 
 ```console
-$ docker pull arangodb@sha256:2a03ddead2389a80eb4604407bd8e0700938e31ae49e5073e8369f5d0f21353e
+$ docker pull arangodb@sha256:0d8ccaa864c98b16a58e273de66e2f3167189db805034f19c53f2ff89092cb87
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `arangodb:2.8.9` - linux; amd64
+### `arangodb:2.8.11` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.2 MB (110191785 bytes)**  
+-	Total Size: **110.2 MB (110191537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ca1719c05e987385390e786c75be1a0cca5fcdc30f303019b3b533fa1df1cc7`
+-	Image ID: `sha256:75b3c558dd9bdfa971f9921b52333c1f64639d87f1d5512835425176764a527f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
@@ -479,31 +479,31 @@ MAINTAINER Frank Celler <info@arangodb.com>
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
 # Fri, 10 Jun 2016 04:54:36 GMT
 ENV ARCHITECTURE=amd64
-# Fri, 10 Jun 2016 04:59:25 GMT
-ENV ARANGO_VERSION=2.8.9
-# Fri, 10 Jun 2016 04:59:25 GMT
+# Mon, 18 Jul 2016 16:45:23 GMT
+ENV ARANGO_VERSION=2.8.11
+# Mon, 18 Jul 2016 16:45:24 GMT
 ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
-# Fri, 10 Jun 2016 04:59:26 GMT
-ENV ARANGO_PACKAGE=arangodb_2.8.9_amd64.deb
-# Fri, 10 Jun 2016 04:59:26 GMT
-ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.8.9_amd64.deb
-# Fri, 10 Jun 2016 04:59:26 GMT
-ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.8.9_amd64.deb.asc
-# Fri, 10 Jun 2016 05:01:07 GMT
+# Mon, 18 Jul 2016 16:45:25 GMT
+ENV ARANGO_PACKAGE=arangodb_2.8.11_amd64.deb
+# Mon, 18 Jul 2016 16:45:25 GMT
+ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.8.11_amd64.deb
+# Mon, 18 Jul 2016 16:45:26 GMT
+ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.8.11_amd64.deb.asc
+# Mon, 18 Jul 2016 16:47:04 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libgoogle-perftools4         ca-certificates         pwgen         wget     &&     rm -rf /var/lib/apt/lists/* &&     wget ${ARANGO_SIGNATURE_URL} &&           wget ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     dpkg -i ${ARANGO_PACKAGE} &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^#\s*uid\s*=.*!uid = arangodb!'         -e 's!^#\s*gid\s*=.*!gid = arangodb!'         /etc/arangodb/arangod.conf     &&     apt-get purge -y --auto-remove ca-certificates wget &&     rm -f ${ARANGO_PACKAGE}*
-# Fri, 10 Jun 2016 05:01:09 GMT
+# Mon, 18 Jul 2016 16:47:06 GMT
 RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/lib/arangodb-apps
-# Fri, 10 Jun 2016 05:01:09 GMT
+# Mon, 18 Jul 2016 16:47:07 GMT
 VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
-# Fri, 10 Jun 2016 05:01:09 GMT
+# Mon, 18 Jul 2016 16:47:08 GMT
 COPY file:d5e2df43b028efe92b9f4dc2dfd67aa54840beb1e09b6c23c32ae8403b0ae7e4 in /entrypoint.sh
-# Fri, 10 Jun 2016 05:01:10 GMT
+# Mon, 18 Jul 2016 16:47:09 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 10 Jun 2016 05:01:10 GMT
+# Mon, 18 Jul 2016 16:47:09 GMT
 EXPOSE 8529/tcp
-# Fri, 10 Jun 2016 05:01:10 GMT
+# Mon, 18 Jul 2016 16:47:10 GMT
 USER [arangodb]
-# Fri, 10 Jun 2016 05:01:10 GMT
+# Mon, 18 Jul 2016 16:47:11 GMT
 CMD ["arangod"]
 ```
 
@@ -514,20 +514,20 @@ CMD ["arangod"]
 	-	`sha256:67a300b324c122317cf2ea9fbf8beda6b6600f9adca4d7c244cd3292e1c03373`  
 		Last Modified: Wed, 29 Jun 2016 17:22:47 GMT  
 		Size: 6.8 KB (6771 bytes)
-	-	`sha256:4600cd27d8ad0c19ede04655dd0bec5cb971000df675603574f27714c4d815a8`  
-		Last Modified: Wed, 29 Jun 2016 17:25:25 GMT  
-		Size: 58.8 MB (58831218 bytes)
-	-	`sha256:6e894a8c9bc2b46c465e689994975106dbc1a441b21691a20527e101e4bb16a0`  
-		Last Modified: Wed, 29 Jun 2016 17:25:07 GMT  
-		Size: 166.0 B
-	-	`sha256:74dc8af26e1dde9cfc3cdce2938c01b3e999dc8db5d8aaca8f0dfcef4602a27d`  
-		Last Modified: Wed, 29 Jun 2016 17:25:07 GMT  
+	-	`sha256:e7489091ccef26accf3f86df7e44ab853d9742fe6085021ff50d2736ff152ed2`  
+		Last Modified: Mon, 18 Jul 2016 16:50:27 GMT  
+		Size: 58.8 MB (58830971 bytes)
+	-	`sha256:e43bf0ac909d45549d722ec966c66eb0f13a8bdb03649917bf77d378676bc8d2`  
+		Last Modified: Mon, 18 Jul 2016 16:50:11 GMT  
+		Size: 165.0 B
+	-	`sha256:23529b0caf11cfef25e8b94eb08674b188d17137e819685eda1080d77846a8c3`  
+		Last Modified: Mon, 18 Jul 2016 16:50:11 GMT  
 		Size: 1.1 KB (1095 bytes)
 
 ## `arangodb:3.0`
 
 ```console
-$ docker pull arangodb@sha256:ea588e83b4ea30df63e80e319631aef336bae566f28a9476aea7cfb311ffc1ec
+$ docker pull arangodb@sha256:29e9a7fc0752199c6b2ca36bdec89f591c54604a8742324dc6b5e01530516d26
 ```
 
 -	Platforms:
@@ -537,9 +537,9 @@ $ docker pull arangodb@sha256:ea588e83b4ea30df63e80e319631aef336bae566f28a9476ae
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.1 MB (119114892 bytes)**  
+-	Total Size: **119.1 MB (119116877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59c1acf363491e980773121e686f34f2c868647492411e597f106130ac0a6e23`
+-	Image ID: `sha256:08fa50aa6a78692a3f219d5d919bd71ca2eb8a52b5e1d247fdcfacb9ece4b961`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
@@ -552,33 +552,33 @@ CMD ["/bin/bash"]
 MAINTAINER Frank Celler <info@arangodb.com>
 # Wed, 29 Jun 2016 17:20:43 GMT
 ENV ARCHITECTURE=amd64
-# Mon, 11 Jul 2016 18:06:19 GMT
-ENV ARANGO_VERSION=3.0.2
-# Mon, 11 Jul 2016 18:06:20 GMT
+# Mon, 18 Jul 2016 16:47:12 GMT
+ENV ARANGO_VERSION=3.0.3
+# Mon, 18 Jul 2016 16:47:13 GMT
 ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0
-# Mon, 11 Jul 2016 18:06:20 GMT
-ENV ARANGO_PACKAGE=arangodb3_3.0.2_amd64.deb
-# Mon, 11 Jul 2016 18:06:20 GMT
-ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.2_amd64.deb
-# Mon, 11 Jul 2016 18:06:21 GMT
-ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.2_amd64.deb.asc
-# Mon, 11 Jul 2016 18:06:23 GMT
+# Mon, 18 Jul 2016 16:47:13 GMT
+ENV ARANGO_PACKAGE=arangodb3_3.0.3_amd64.deb
+# Mon, 18 Jul 2016 16:47:14 GMT
+ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.3_amd64.deb
+# Mon, 18 Jul 2016 16:47:15 GMT
+ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.3_amd64.deb.asc
+# Mon, 18 Jul 2016 16:47:17 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
-# Mon, 11 Jul 2016 18:07:25 GMT
+# Mon, 18 Jul 2016 16:48:20 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libjemalloc1 	libsnappy1         ca-certificates         pwgen         curl     &&     rm -rf /var/lib/apt/lists/*
-# Mon, 11 Jul 2016 18:07:26 GMT
+# Mon, 18 Jul 2016 16:48:22 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Mon, 11 Jul 2016 18:08:10 GMT
+# Mon, 18 Jul 2016 16:49:04 GMT
 RUN curl -O ${ARANGO_SIGNATURE_URL} &&           curl -O ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     (echo arangodb3 arangodb/password password test | debconf-set-selections) &&     (echo arangodb3 arangodb/password_again password test | debconf-set-selections) &&     DEBIAN_FRONTEND="noninteractive" dpkg -i ${ARANGO_PACKAGE} &&     rm -rf /var/lib/arangodb3/* &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^#\s*uid\s*=.*!uid = arangodb!'         -e 's!^#\s*gid\s*=.*!gid = arangodb!'         /etc/arangodb3/arangod.conf     &&     DEBIAN_FRONTEND="noninteractive" apt-get purge -y --auto-remove ca-certificates &&     rm -f ${ARANGO_PACKAGE}*
-# Mon, 11 Jul 2016 18:08:10 GMT
-VOLUME [/var/lib/arangodb3 /var/lib/arangodb-apps3]
-# Mon, 11 Jul 2016 18:08:11 GMT
+# Mon, 18 Jul 2016 16:49:05 GMT
+VOLUME [/var/lib/arangodb3 /var/lib/arangodb3-apps]
+# Mon, 18 Jul 2016 16:49:06 GMT
 COPY file:b4d76a688137b83503d77bb818e5dfa72d9e1f7b1e660f6d81e5a2ad5567e562 in /entrypoint.sh
-# Mon, 11 Jul 2016 18:08:11 GMT
+# Mon, 18 Jul 2016 16:49:07 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 11 Jul 2016 18:08:11 GMT
+# Mon, 18 Jul 2016 16:49:07 GMT
 EXPOSE 8529/tcp
-# Mon, 11 Jul 2016 18:08:12 GMT
+# Mon, 18 Jul 2016 16:49:08 GMT
 CMD ["arangod"]
 ```
 
@@ -586,38 +586,38 @@ CMD ["arangod"]
 	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
 		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
 		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:99867ae746a193c95d09be71a271c5c6f4c18949d0a7dc2ba090d466c18ee0aa`  
-		Last Modified: Mon, 11 Jul 2016 18:09:27 GMT  
-		Size: 6.8 KB (6769 bytes)
-	-	`sha256:83fa48c3bf7a8472641b3734e54aefacd87544cae8b1e8c3a1134a5be6ae6d1f`  
-		Last Modified: Mon, 11 Jul 2016 18:09:30 GMT  
-		Size: 6.7 MB (6703499 bytes)
-	-	`sha256:976600ae4742de0c95b50568797be44a9b4754a74e5f860e937433a4df3a3034`  
-		Last Modified: Mon, 11 Jul 2016 18:09:27 GMT  
-		Size: 112.0 B
-	-	`sha256:f9ff512ed934e3682fb6dfeccf122102a784e77e74d94488f22ed0a4c56d58ee`  
-		Last Modified: Mon, 11 Jul 2016 18:09:43 GMT  
-		Size: 61.1 MB (61050554 bytes)
-	-	`sha256:4369c25c5c5524ae17fbfbf7f2857031e4450a6615705795eb059870b5f0f060`  
-		Last Modified: Mon, 11 Jul 2016 18:09:27 GMT  
+	-	`sha256:758f58ee3e6f9a693b1cdefdb842150f0ebc8851827e32d112481ad1b86bf4ac`  
+		Last Modified: Mon, 18 Jul 2016 16:50:52 GMT  
+		Size: 6.8 KB (6768 bytes)
+	-	`sha256:d03f037f094ea407da842aec6202bd5783093b7b317d156dc1128ce57f82e8bb`  
+		Last Modified: Mon, 18 Jul 2016 16:50:54 GMT  
+		Size: 6.7 MB (6703536 bytes)
+	-	`sha256:e6895097ba7a1d7f52a612c572ab0f42c62577a21884737aee11cdb872203735`  
+		Last Modified: Mon, 18 Jul 2016 16:50:52 GMT  
+		Size: 113.0 B
+	-	`sha256:5c088af307311e1af34c13698f139dfd5d14cae90698ab7c195d96add1b09cd6`  
+		Last Modified: Mon, 18 Jul 2016 16:51:09 GMT  
+		Size: 61.1 MB (61052502 bytes)
+	-	`sha256:1b30bd1d74d909d04d8ba8b98e298976acab71e76667a99d17a7e44292ba7d30`  
+		Last Modified: Mon, 18 Jul 2016 16:50:52 GMT  
 		Size: 1.4 KB (1423 bytes)
 
-## `arangodb:3.0.2`
+## `arangodb:3.0.3`
 
 ```console
-$ docker pull arangodb@sha256:ea588e83b4ea30df63e80e319631aef336bae566f28a9476aea7cfb311ffc1ec
+$ docker pull arangodb@sha256:29e9a7fc0752199c6b2ca36bdec89f591c54604a8742324dc6b5e01530516d26
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `arangodb:3.0.2` - linux; amd64
+### `arangodb:3.0.3` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.1 MB (119114892 bytes)**  
+-	Total Size: **119.1 MB (119116877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59c1acf363491e980773121e686f34f2c868647492411e597f106130ac0a6e23`
+-	Image ID: `sha256:08fa50aa6a78692a3f219d5d919bd71ca2eb8a52b5e1d247fdcfacb9ece4b961`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
@@ -630,33 +630,33 @@ CMD ["/bin/bash"]
 MAINTAINER Frank Celler <info@arangodb.com>
 # Wed, 29 Jun 2016 17:20:43 GMT
 ENV ARCHITECTURE=amd64
-# Mon, 11 Jul 2016 18:06:19 GMT
-ENV ARANGO_VERSION=3.0.2
-# Mon, 11 Jul 2016 18:06:20 GMT
+# Mon, 18 Jul 2016 16:47:12 GMT
+ENV ARANGO_VERSION=3.0.3
+# Mon, 18 Jul 2016 16:47:13 GMT
 ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0
-# Mon, 11 Jul 2016 18:06:20 GMT
-ENV ARANGO_PACKAGE=arangodb3_3.0.2_amd64.deb
-# Mon, 11 Jul 2016 18:06:20 GMT
-ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.2_amd64.deb
-# Mon, 11 Jul 2016 18:06:21 GMT
-ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.2_amd64.deb.asc
-# Mon, 11 Jul 2016 18:06:23 GMT
+# Mon, 18 Jul 2016 16:47:13 GMT
+ENV ARANGO_PACKAGE=arangodb3_3.0.3_amd64.deb
+# Mon, 18 Jul 2016 16:47:14 GMT
+ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.3_amd64.deb
+# Mon, 18 Jul 2016 16:47:15 GMT
+ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.3_amd64.deb.asc
+# Mon, 18 Jul 2016 16:47:17 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
-# Mon, 11 Jul 2016 18:07:25 GMT
+# Mon, 18 Jul 2016 16:48:20 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libjemalloc1 	libsnappy1         ca-certificates         pwgen         curl     &&     rm -rf /var/lib/apt/lists/*
-# Mon, 11 Jul 2016 18:07:26 GMT
+# Mon, 18 Jul 2016 16:48:22 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Mon, 11 Jul 2016 18:08:10 GMT
+# Mon, 18 Jul 2016 16:49:04 GMT
 RUN curl -O ${ARANGO_SIGNATURE_URL} &&           curl -O ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     (echo arangodb3 arangodb/password password test | debconf-set-selections) &&     (echo arangodb3 arangodb/password_again password test | debconf-set-selections) &&     DEBIAN_FRONTEND="noninteractive" dpkg -i ${ARANGO_PACKAGE} &&     rm -rf /var/lib/arangodb3/* &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^#\s*uid\s*=.*!uid = arangodb!'         -e 's!^#\s*gid\s*=.*!gid = arangodb!'         /etc/arangodb3/arangod.conf     &&     DEBIAN_FRONTEND="noninteractive" apt-get purge -y --auto-remove ca-certificates &&     rm -f ${ARANGO_PACKAGE}*
-# Mon, 11 Jul 2016 18:08:10 GMT
-VOLUME [/var/lib/arangodb3 /var/lib/arangodb-apps3]
-# Mon, 11 Jul 2016 18:08:11 GMT
+# Mon, 18 Jul 2016 16:49:05 GMT
+VOLUME [/var/lib/arangodb3 /var/lib/arangodb3-apps]
+# Mon, 18 Jul 2016 16:49:06 GMT
 COPY file:b4d76a688137b83503d77bb818e5dfa72d9e1f7b1e660f6d81e5a2ad5567e562 in /entrypoint.sh
-# Mon, 11 Jul 2016 18:08:11 GMT
+# Mon, 18 Jul 2016 16:49:07 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 11 Jul 2016 18:08:11 GMT
+# Mon, 18 Jul 2016 16:49:07 GMT
 EXPOSE 8529/tcp
-# Mon, 11 Jul 2016 18:08:12 GMT
+# Mon, 18 Jul 2016 16:49:08 GMT
 CMD ["arangod"]
 ```
 
@@ -664,26 +664,26 @@ CMD ["arangod"]
 	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
 		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
 		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:99867ae746a193c95d09be71a271c5c6f4c18949d0a7dc2ba090d466c18ee0aa`  
-		Last Modified: Mon, 11 Jul 2016 18:09:27 GMT  
-		Size: 6.8 KB (6769 bytes)
-	-	`sha256:83fa48c3bf7a8472641b3734e54aefacd87544cae8b1e8c3a1134a5be6ae6d1f`  
-		Last Modified: Mon, 11 Jul 2016 18:09:30 GMT  
-		Size: 6.7 MB (6703499 bytes)
-	-	`sha256:976600ae4742de0c95b50568797be44a9b4754a74e5f860e937433a4df3a3034`  
-		Last Modified: Mon, 11 Jul 2016 18:09:27 GMT  
-		Size: 112.0 B
-	-	`sha256:f9ff512ed934e3682fb6dfeccf122102a784e77e74d94488f22ed0a4c56d58ee`  
-		Last Modified: Mon, 11 Jul 2016 18:09:43 GMT  
-		Size: 61.1 MB (61050554 bytes)
-	-	`sha256:4369c25c5c5524ae17fbfbf7f2857031e4450a6615705795eb059870b5f0f060`  
-		Last Modified: Mon, 11 Jul 2016 18:09:27 GMT  
+	-	`sha256:758f58ee3e6f9a693b1cdefdb842150f0ebc8851827e32d112481ad1b86bf4ac`  
+		Last Modified: Mon, 18 Jul 2016 16:50:52 GMT  
+		Size: 6.8 KB (6768 bytes)
+	-	`sha256:d03f037f094ea407da842aec6202bd5783093b7b317d156dc1128ce57f82e8bb`  
+		Last Modified: Mon, 18 Jul 2016 16:50:54 GMT  
+		Size: 6.7 MB (6703536 bytes)
+	-	`sha256:e6895097ba7a1d7f52a612c572ab0f42c62577a21884737aee11cdb872203735`  
+		Last Modified: Mon, 18 Jul 2016 16:50:52 GMT  
+		Size: 113.0 B
+	-	`sha256:5c088af307311e1af34c13698f139dfd5d14cae90698ab7c195d96add1b09cd6`  
+		Last Modified: Mon, 18 Jul 2016 16:51:09 GMT  
+		Size: 61.1 MB (61052502 bytes)
+	-	`sha256:1b30bd1d74d909d04d8ba8b98e298976acab71e76667a99d17a7e44292ba7d30`  
+		Last Modified: Mon, 18 Jul 2016 16:50:52 GMT  
 		Size: 1.4 KB (1423 bytes)
 
 ## `arangodb:latest`
 
 ```console
-$ docker pull arangodb@sha256:ea588e83b4ea30df63e80e319631aef336bae566f28a9476aea7cfb311ffc1ec
+$ docker pull arangodb@sha256:29e9a7fc0752199c6b2ca36bdec89f591c54604a8742324dc6b5e01530516d26
 ```
 
 -	Platforms:
@@ -693,9 +693,9 @@ $ docker pull arangodb@sha256:ea588e83b4ea30df63e80e319631aef336bae566f28a9476ae
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.1 MB (119114892 bytes)**  
+-	Total Size: **119.1 MB (119116877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59c1acf363491e980773121e686f34f2c868647492411e597f106130ac0a6e23`
+-	Image ID: `sha256:08fa50aa6a78692a3f219d5d919bd71ca2eb8a52b5e1d247fdcfacb9ece4b961`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
@@ -708,33 +708,33 @@ CMD ["/bin/bash"]
 MAINTAINER Frank Celler <info@arangodb.com>
 # Wed, 29 Jun 2016 17:20:43 GMT
 ENV ARCHITECTURE=amd64
-# Mon, 11 Jul 2016 18:06:19 GMT
-ENV ARANGO_VERSION=3.0.2
-# Mon, 11 Jul 2016 18:06:20 GMT
+# Mon, 18 Jul 2016 16:47:12 GMT
+ENV ARANGO_VERSION=3.0.3
+# Mon, 18 Jul 2016 16:47:13 GMT
 ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0
-# Mon, 11 Jul 2016 18:06:20 GMT
-ENV ARANGO_PACKAGE=arangodb3_3.0.2_amd64.deb
-# Mon, 11 Jul 2016 18:06:20 GMT
-ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.2_amd64.deb
-# Mon, 11 Jul 2016 18:06:21 GMT
-ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.2_amd64.deb.asc
-# Mon, 11 Jul 2016 18:06:23 GMT
+# Mon, 18 Jul 2016 16:47:13 GMT
+ENV ARANGO_PACKAGE=arangodb3_3.0.3_amd64.deb
+# Mon, 18 Jul 2016 16:47:14 GMT
+ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.3_amd64.deb
+# Mon, 18 Jul 2016 16:47:15 GMT
+ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.3_amd64.deb.asc
+# Mon, 18 Jul 2016 16:47:17 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
-# Mon, 11 Jul 2016 18:07:25 GMT
+# Mon, 18 Jul 2016 16:48:20 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libjemalloc1 	libsnappy1         ca-certificates         pwgen         curl     &&     rm -rf /var/lib/apt/lists/*
-# Mon, 11 Jul 2016 18:07:26 GMT
+# Mon, 18 Jul 2016 16:48:22 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Mon, 11 Jul 2016 18:08:10 GMT
+# Mon, 18 Jul 2016 16:49:04 GMT
 RUN curl -O ${ARANGO_SIGNATURE_URL} &&           curl -O ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     (echo arangodb3 arangodb/password password test | debconf-set-selections) &&     (echo arangodb3 arangodb/password_again password test | debconf-set-selections) &&     DEBIAN_FRONTEND="noninteractive" dpkg -i ${ARANGO_PACKAGE} &&     rm -rf /var/lib/arangodb3/* &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^#\s*uid\s*=.*!uid = arangodb!'         -e 's!^#\s*gid\s*=.*!gid = arangodb!'         /etc/arangodb3/arangod.conf     &&     DEBIAN_FRONTEND="noninteractive" apt-get purge -y --auto-remove ca-certificates &&     rm -f ${ARANGO_PACKAGE}*
-# Mon, 11 Jul 2016 18:08:10 GMT
-VOLUME [/var/lib/arangodb3 /var/lib/arangodb-apps3]
-# Mon, 11 Jul 2016 18:08:11 GMT
+# Mon, 18 Jul 2016 16:49:05 GMT
+VOLUME [/var/lib/arangodb3 /var/lib/arangodb3-apps]
+# Mon, 18 Jul 2016 16:49:06 GMT
 COPY file:b4d76a688137b83503d77bb818e5dfa72d9e1f7b1e660f6d81e5a2ad5567e562 in /entrypoint.sh
-# Mon, 11 Jul 2016 18:08:11 GMT
+# Mon, 18 Jul 2016 16:49:07 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 11 Jul 2016 18:08:11 GMT
+# Mon, 18 Jul 2016 16:49:07 GMT
 EXPOSE 8529/tcp
-# Mon, 11 Jul 2016 18:08:12 GMT
+# Mon, 18 Jul 2016 16:49:08 GMT
 CMD ["arangod"]
 ```
 
@@ -742,18 +742,18 @@ CMD ["arangod"]
 	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
 		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
 		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:99867ae746a193c95d09be71a271c5c6f4c18949d0a7dc2ba090d466c18ee0aa`  
-		Last Modified: Mon, 11 Jul 2016 18:09:27 GMT  
-		Size: 6.8 KB (6769 bytes)
-	-	`sha256:83fa48c3bf7a8472641b3734e54aefacd87544cae8b1e8c3a1134a5be6ae6d1f`  
-		Last Modified: Mon, 11 Jul 2016 18:09:30 GMT  
-		Size: 6.7 MB (6703499 bytes)
-	-	`sha256:976600ae4742de0c95b50568797be44a9b4754a74e5f860e937433a4df3a3034`  
-		Last Modified: Mon, 11 Jul 2016 18:09:27 GMT  
-		Size: 112.0 B
-	-	`sha256:f9ff512ed934e3682fb6dfeccf122102a784e77e74d94488f22ed0a4c56d58ee`  
-		Last Modified: Mon, 11 Jul 2016 18:09:43 GMT  
-		Size: 61.1 MB (61050554 bytes)
-	-	`sha256:4369c25c5c5524ae17fbfbf7f2857031e4450a6615705795eb059870b5f0f060`  
-		Last Modified: Mon, 11 Jul 2016 18:09:27 GMT  
+	-	`sha256:758f58ee3e6f9a693b1cdefdb842150f0ebc8851827e32d112481ad1b86bf4ac`  
+		Last Modified: Mon, 18 Jul 2016 16:50:52 GMT  
+		Size: 6.8 KB (6768 bytes)
+	-	`sha256:d03f037f094ea407da842aec6202bd5783093b7b317d156dc1128ce57f82e8bb`  
+		Last Modified: Mon, 18 Jul 2016 16:50:54 GMT  
+		Size: 6.7 MB (6703536 bytes)
+	-	`sha256:e6895097ba7a1d7f52a612c572ab0f42c62577a21884737aee11cdb872203735`  
+		Last Modified: Mon, 18 Jul 2016 16:50:52 GMT  
+		Size: 113.0 B
+	-	`sha256:5c088af307311e1af34c13698f139dfd5d14cae90698ab7c195d96add1b09cd6`  
+		Last Modified: Mon, 18 Jul 2016 16:51:09 GMT  
+		Size: 61.1 MB (61052502 bytes)
+	-	`sha256:1b30bd1d74d909d04d8ba8b98e298976acab71e76667a99d17a7e44292ba7d30`  
+		Last Modified: Mon, 18 Jul 2016 16:50:52 GMT  
 		Size: 1.4 KB (1423 bytes)
