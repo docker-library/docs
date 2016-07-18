@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3.1`, `1.3`, `latest` (*1.3/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/49ebbff02fdfde9180c6dfa07f55ded968f97b53/1.3/Dockerfile)
--	[`1.3.1-slim`, `1.3-slim`, `slim` (*1.3/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/49ebbff02fdfde9180c6dfa07f55ded968f97b53/1.3/slim/Dockerfile)
+-	[`1.3.2`, `1.3`, `latest` (*1.3/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/ec6d6952600bbe05ccd7c19c22a82fc70316733b/1.3/Dockerfile)
+-	[`1.3.2-slim`, `1.3-slim`, `slim` (*1.3/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/ec6d6952600bbe05ccd7c19c22a82fc70316733b/1.3/slim/Dockerfile)
 -	[`1.2.6`, `1.2` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/Dockerfile)
 -	[`1.2.6-slim`, `1.2-slim` (*1.2/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/slim/Dockerfile)
 
-[![](https://badge.imagelayers.io/elixir:latest.svg)](https://imagelayers.io/?images=elixir:1.3.1,elixir:1.3.1-slim,elixir:1.2.6,elixir:1.2.6-slim)
+[![](https://badge.imagelayers.io/elixir:latest.svg)](https://imagelayers.io/?images=elixir:1.3.2,elixir:1.3.2-slim,elixir:1.2.6,elixir:1.2.6-slim)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elixir`)](https://github.com/docker-library/official-images/blob/master/library/elixir). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felixir).
 
