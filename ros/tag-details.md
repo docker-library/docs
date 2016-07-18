@@ -22,7 +22,7 @@
 ## `ros:indigo-ros-core`
 
 ```console
-$ docker pull ros@sha256:8bb19a88466eb0804505b8b64198891c0ca4e191e52fb2d7789dca8254ac6874
+$ docker pull ros@sha256:9a0dac04bec4f0929bbe5e70c929956b2e38bf019a8115e717452ad002d7b6f5
 ```
 
 -	Platforms:
@@ -32,83 +32,83 @@ $ docker pull ros@sha256:8bb19a88466eb0804505b8b64198891c0ca4e191e52fb2d7789dca8
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.6 MB (249612658 bytes)**  
+-	Total Size: **249.6 MB (249619519 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8772ad507c2d930c4cf62a432ee7b90c2ae3a85570c1d5d4d5f790fa38e12571`
+-	Image ID: `sha256:a544b337b5b26b09154fc74c387374bd1a4bab86a9b45fb6188ac8b88401a78f`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Mon, 18 Jul 2016 17:34:50 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Mon, 18 Jul 2016 17:34:53 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:54 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Mon, 18 Jul 2016 17:34:57 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Mon, 18 Jul 2016 17:34:58 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 20:03:46 GMT
+# Mon, 18 Jul 2016 19:05:53 GMT
 MAINTAINER Tully Foote tfoote+buildfarm@osrfoundation.org
-# Fri, 24 Jun 2016 20:03:49 GMT
+# Mon, 18 Jul 2016 19:05:56 GMT
 RUN locale-gen en_US.UTF-8
-# Fri, 24 Jun 2016 20:03:49 GMT
+# Mon, 18 Jul 2016 19:05:56 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 24 Jun 2016 20:04:07 GMT
+# Mon, 18 Jul 2016 19:06:15 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 24 Jun 2016 20:04:08 GMT
+# Mon, 18 Jul 2016 19:06:16 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 24 Jun 2016 20:05:47 GMT
+# Mon, 18 Jul 2016 19:07:54 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 20:05:58 GMT
+# Mon, 18 Jul 2016 19:08:05 GMT
 RUN rosdep init     && rosdep update
-# Fri, 24 Jun 2016 20:05:58 GMT
+# Mon, 18 Jul 2016 19:08:06 GMT
 ENV ROS_DISTRO=indigo
-# Fri, 24 Jun 2016 20:08:30 GMT
+# Mon, 18 Jul 2016 19:10:38 GMT
 RUN apt-get update && apt-get install -y     ros-indigo-ros-core=1.1.4-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 20:08:31 GMT
+# Mon, 18 Jul 2016 19:10:40 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in /
-# Fri, 24 Jun 2016 20:08:32 GMT
+# Mon, 18 Jul 2016 19:10:40 GMT
 ENTRYPOINT &{["/ros_entrypoint.sh"]}
-# Fri, 24 Jun 2016 20:08:32 GMT
+# Mon, 18 Jul 2016 19:10:41 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:4d6651aae8bc83a7cb9dc7544adeefe81369a70d5df8fd7733a78789ef2c32f3`  
-		Last Modified: Fri, 24 Jun 2016 20:08:43 GMT  
-		Size: 329.2 KB (329188 bytes)
-	-	`sha256:b2a831e99b405d8c6a12dbbf9a600d35e19f9da13396bfc759c13cfb08c65dfa`  
-		Last Modified: Fri, 24 Jun 2016 20:08:42 GMT  
-		Size: 13.1 KB (13070 bytes)
-	-	`sha256:37bd005d0940c11d0c40900ba072adf2bb26a2f5200ab54b45a78a1f2b643ad4`  
-		Last Modified: Fri, 24 Jun 2016 20:08:39 GMT  
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 92.3 KB (92340 bytes)
+	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 366.0 B
+	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 682.0 B
+	-	`sha256:f6675829cf13b49fb5d7afa4153cc834f0739bc7d25cacd7915bd58e9935da53`  
+		Last Modified: Mon, 18 Jul 2016 19:10:54 GMT  
+		Size: 329.2 KB (329185 bytes)
+	-	`sha256:0ffd474e471fc5604c08bd8925c1e19f391dba9c684ac1e65f4a0141c771b50d`  
+		Last Modified: Mon, 18 Jul 2016 19:10:52 GMT  
+		Size: 13.1 KB (13071 bytes)
+	-	`sha256:ee5645edeaaeed66f0df1c6bd4da8bbb5dd910a67c5323215a36aa8b9468ee9e`  
+		Last Modified: Mon, 18 Jul 2016 19:10:50 GMT  
 		Size: 223.0 B
-	-	`sha256:800815708586712669e2761b3b81962327e2e1e48ee479e7a6d1fb3bcfad0f24`  
-		Last Modified: Fri, 24 Jun 2016 20:08:51 GMT  
-		Size: 32.9 MB (32870801 bytes)
-	-	`sha256:42f5c3ed1ff87ca2b6011c1726fe0b9e1301fa6ea26a94c29bbd67f278b13ed9`  
-		Last Modified: Fri, 24 Jun 2016 20:08:40 GMT  
-		Size: 614.0 KB (614050 bytes)
-	-	`sha256:8aeb5969fba4a58ea911c5ec7a2926252c99415c77e58d963818232853aa6256`  
-		Last Modified: Fri, 24 Jun 2016 20:09:24 GMT  
-		Size: 150.0 MB (149983301 bytes)
-	-	`sha256:545b74da1b4d37ddb95f375586fb25f9c55739e75cd64febb0ae5db8cff905c8`  
-		Last Modified: Fri, 24 Jun 2016 20:08:39 GMT  
-		Size: 196.0 B
+	-	`sha256:c1a82b6288ded8b62f1cd6625b1fee4ec208d2cf2f9e79a3ea599359b0c3bbc6`  
+		Last Modified: Mon, 18 Jul 2016 19:11:04 GMT  
+		Size: 32.9 MB (32870505 bytes)
+	-	`sha256:29ea19c111a704f52c77df988862b9570734510cc71fb2981a640d5f9ecd8d24`  
+		Last Modified: Mon, 18 Jul 2016 19:10:50 GMT  
+		Size: 630.2 KB (630200 bytes)
+	-	`sha256:535cc521df40f09786be60d3a19726f4f2cc1e4a19e11d15f738e90d5aaf5611`  
+		Last Modified: Mon, 18 Jul 2016 19:11:35 GMT  
+		Size: 150.0 MB (149983681 bytes)
+	-	`sha256:ae8f8fe463f9e71c250ff9bb6065c0e565aee495201ab67a602bbdd26fbf43ad`  
+		Last Modified: Mon, 18 Jul 2016 19:10:49 GMT  
+		Size: 197.0 B
 
 ## `ros:indigo-ros-base`
 
@@ -519,7 +519,7 @@ RUN apt-get update && apt-get install -y     ros-indigo-perception=1.1.4-0*     
 ## `ros:jade-ros-core`
 
 ```console
-$ docker pull ros@sha256:251bbecaee29a10ab3fb4cc470f16c39f88ce7aad576b53666156d1374f9e053
+$ docker pull ros@sha256:31ae15c7e7537a3ae75901a3ccb8a8682db0686dbcbb60095d1d39a48128a379
 ```
 
 -	Platforms:
@@ -529,83 +529,83 @@ $ docker pull ros@sha256:251bbecaee29a10ab3fb4cc470f16c39f88ce7aad576b53666156d1
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.7 MB (249676563 bytes)**  
+-	Total Size: **249.7 MB (249680600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d15f10ced77b102966aff89c6b440a6b53dc7309e0bc1931ff6168492343eca`
+-	Image ID: `sha256:826c72bfaee55e4086feb03bb79e6701ab39eb7095443a0d1a015a2ecb11834d`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Mon, 18 Jul 2016 17:34:50 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Mon, 18 Jul 2016 17:34:53 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:54 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Mon, 18 Jul 2016 17:34:57 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Mon, 18 Jul 2016 17:34:58 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 20:03:46 GMT
+# Mon, 18 Jul 2016 19:05:53 GMT
 MAINTAINER Tully Foote tfoote+buildfarm@osrfoundation.org
-# Fri, 24 Jun 2016 20:03:49 GMT
+# Mon, 18 Jul 2016 19:05:56 GMT
 RUN locale-gen en_US.UTF-8
-# Fri, 24 Jun 2016 20:03:49 GMT
+# Mon, 18 Jul 2016 19:05:56 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 24 Jun 2016 20:04:07 GMT
+# Mon, 18 Jul 2016 19:06:15 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 24 Jun 2016 20:04:08 GMT
+# Mon, 18 Jul 2016 19:06:16 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 24 Jun 2016 20:05:47 GMT
+# Mon, 18 Jul 2016 19:07:54 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 20:05:58 GMT
+# Mon, 18 Jul 2016 19:08:05 GMT
 RUN rosdep init     && rosdep update
-# Fri, 24 Jun 2016 20:12:35 GMT
+# Mon, 18 Jul 2016 19:12:26 GMT
 ENV ROS_DISTRO=jade
-# Fri, 24 Jun 2016 20:15:07 GMT
+# Mon, 18 Jul 2016 19:15:02 GMT
 RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 20:15:09 GMT
+# Mon, 18 Jul 2016 19:15:04 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in /
-# Fri, 24 Jun 2016 20:15:09 GMT
+# Mon, 18 Jul 2016 19:15:04 GMT
 ENTRYPOINT &{["/ros_entrypoint.sh"]}
-# Fri, 24 Jun 2016 20:15:10 GMT
+# Mon, 18 Jul 2016 19:15:05 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:4d6651aae8bc83a7cb9dc7544adeefe81369a70d5df8fd7733a78789ef2c32f3`  
-		Last Modified: Fri, 24 Jun 2016 20:08:43 GMT  
-		Size: 329.2 KB (329188 bytes)
-	-	`sha256:b2a831e99b405d8c6a12dbbf9a600d35e19f9da13396bfc759c13cfb08c65dfa`  
-		Last Modified: Fri, 24 Jun 2016 20:08:42 GMT  
-		Size: 13.1 KB (13070 bytes)
-	-	`sha256:37bd005d0940c11d0c40900ba072adf2bb26a2f5200ab54b45a78a1f2b643ad4`  
-		Last Modified: Fri, 24 Jun 2016 20:08:39 GMT  
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 92.3 KB (92340 bytes)
+	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 366.0 B
+	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 682.0 B
+	-	`sha256:f6675829cf13b49fb5d7afa4153cc834f0739bc7d25cacd7915bd58e9935da53`  
+		Last Modified: Mon, 18 Jul 2016 19:10:54 GMT  
+		Size: 329.2 KB (329185 bytes)
+	-	`sha256:0ffd474e471fc5604c08bd8925c1e19f391dba9c684ac1e65f4a0141c771b50d`  
+		Last Modified: Mon, 18 Jul 2016 19:10:52 GMT  
+		Size: 13.1 KB (13071 bytes)
+	-	`sha256:ee5645edeaaeed66f0df1c6bd4da8bbb5dd910a67c5323215a36aa8b9468ee9e`  
+		Last Modified: Mon, 18 Jul 2016 19:10:50 GMT  
 		Size: 223.0 B
-	-	`sha256:800815708586712669e2761b3b81962327e2e1e48ee479e7a6d1fb3bcfad0f24`  
-		Last Modified: Fri, 24 Jun 2016 20:08:51 GMT  
-		Size: 32.9 MB (32870801 bytes)
-	-	`sha256:42f5c3ed1ff87ca2b6011c1726fe0b9e1301fa6ea26a94c29bbd67f278b13ed9`  
-		Last Modified: Fri, 24 Jun 2016 20:08:40 GMT  
-		Size: 614.0 KB (614050 bytes)
-	-	`sha256:77eb40cd4acd4bea988573bd91ebeaa5f55bc009755f2abd9a51d1d863d332d1`  
-		Last Modified: Fri, 24 Jun 2016 20:15:59 GMT  
-		Size: 150.0 MB (150047207 bytes)
-	-	`sha256:6d1353870c13d5b55b4f4229f17e766ae28dfef6e82a878cfb782b77cd9e9bae`  
-		Last Modified: Fri, 24 Jun 2016 20:15:17 GMT  
-		Size: 195.0 B
+	-	`sha256:c1a82b6288ded8b62f1cd6625b1fee4ec208d2cf2f9e79a3ea599359b0c3bbc6`  
+		Last Modified: Mon, 18 Jul 2016 19:11:04 GMT  
+		Size: 32.9 MB (32870505 bytes)
+	-	`sha256:29ea19c111a704f52c77df988862b9570734510cc71fb2981a640d5f9ecd8d24`  
+		Last Modified: Mon, 18 Jul 2016 19:10:50 GMT  
+		Size: 630.2 KB (630200 bytes)
+	-	`sha256:ae04cfa9c509c24aa58c4f533f5b8916f295217bf041f86f7e8906a8b1d8b718`  
+		Last Modified: Mon, 18 Jul 2016 19:15:57 GMT  
+		Size: 150.0 MB (150044762 bytes)
+	-	`sha256:3552dd371a373bb4881286ebf84425c708bbc1c2c00e23da19307193814fac6d`  
+		Last Modified: Mon, 18 Jul 2016 19:15:14 GMT  
+		Size: 197.0 B
 
 ## `ros:jade-ros-base`
 
@@ -1401,7 +1401,7 @@ RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.0-0*     &
 ## `ros:kinetic-robot`
 
 ```console
-$ docker pull ros@sha256:9d5b6b500d66c5a85401e804c07d9439040150b34285f4247d8a2a85e6fbb8d8
+$ docker pull ros@sha256:3a6f3c344387387e61d27b253587db77a10fd91cf041eeb7fd24d0d2a49cbcda
 ```
 
 -	Platforms:
@@ -1411,102 +1411,102 @@ $ docker pull ros@sha256:9d5b6b500d66c5a85401e804c07d9439040150b34285f4247d8a2a8
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.5 MB (433490016 bytes)**  
+-	Total Size: **442.5 MB (442457390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bfa9a00f3204589946ac8e0e68b809914530497fca5e90f893be49b53f8cd52`
+-	Image ID: `sha256:d2e240fafacfc4dcedfa8494358c2a4b43c296c8b79941f4d589af1f9728d41e`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 20:31:29 GMT
-ADD file:f326c511241e30af65244753c65f019bf424d9ce70ff9e338d5422d959370d6c in /
-# Wed, 08 Jun 2016 20:31:30 GMT
+# Fri, 08 Jul 2016 18:39:36 GMT
+ADD file:49ae6eed5178a2866c5023c4e7a9ae303f4828a5586569106aff27a8ce9cadf6 in /
+# Fri, 08 Jul 2016 18:39:39 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Wed, 08 Jun 2016 20:31:31 GMT
+# Fri, 08 Jul 2016 18:39:41 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:31:32 GMT
+# Fri, 08 Jul 2016 18:39:43 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Wed, 08 Jun 2016 20:31:33 GMT
+# Fri, 08 Jul 2016 18:39:43 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 20:41:49 GMT
+# Fri, 08 Jul 2016 19:22:51 GMT
 MAINTAINER Tully Foote tfoote+buildfarm@osrfoundation.org
-# Thu, 09 Jun 2016 20:41:51 GMT
+# Fri, 08 Jul 2016 19:22:54 GMT
 RUN locale-gen en_US.UTF-8
-# Thu, 09 Jun 2016 20:41:51 GMT
+# Fri, 08 Jul 2016 19:22:55 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 09 Jun 2016 20:41:54 GMT
+# Fri, 08 Jul 2016 19:22:59 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Thu, 09 Jun 2016 20:41:56 GMT
+# Fri, 08 Jul 2016 19:23:01 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Thu, 09 Jun 2016 20:43:01 GMT
+# Fri, 08 Jul 2016 19:24:25 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 20:43:13 GMT
+# Fri, 08 Jul 2016 19:24:45 GMT
 RUN rosdep init     && rosdep update
-# Thu, 09 Jun 2016 20:43:13 GMT
+# Fri, 08 Jul 2016 19:24:46 GMT
 ENV ROS_DISTRO=kinetic
-# Thu, 09 Jun 2016 20:44:48 GMT
+# Fri, 08 Jul 2016 19:27:11 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.0-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 20:44:50 GMT
+# Fri, 08 Jul 2016 19:27:14 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in /
-# Thu, 09 Jun 2016 20:44:50 GMT
+# Fri, 08 Jul 2016 19:27:14 GMT
 ENTRYPOINT &{["/ros_entrypoint.sh"]}
-# Thu, 09 Jun 2016 20:44:51 GMT
+# Fri, 08 Jul 2016 19:27:15 GMT
 CMD ["bash"]
-# Thu, 09 Jun 2016 20:44:53 GMT
+# Mon, 18 Jul 2016 18:59:42 GMT
 MAINTAINER Tully Foote tfoote+buildfarm@osrfoundation.org
-# Thu, 09 Jun 2016 20:45:09 GMT
+# Mon, 18 Jul 2016 18:59:59 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.0-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 20:45:10 GMT
+# Mon, 18 Jul 2016 19:16:11 GMT
 MAINTAINER Tully Foote tfoote+buildfarm@osrfoundation.org
-# Thu, 09 Jun 2016 20:46:32 GMT
+# Mon, 18 Jul 2016 19:24:25 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.0-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:5ba4f30e5bea63dcc2e7054b8b4f41ab1e5fcc7db0a88fc79359b890bcfe2258`  
-		Last Modified: Fri, 27 May 2016 14:29:17 GMT  
-		Size: 48.6 MB (48647693 bytes)
-	-	`sha256:6874f9870f5f8b13aea44707fddf746825247dda0f3abc9d93438b58c97cdacd`  
-		Last Modified: Thu, 09 Jun 2016 21:59:08 GMT  
-		Size: 21.6 KB (21592 bytes)
-	-	`sha256:4c876570bd7d10c58fc291fa980404290de01bfc01410daeb57a9dd6b86fac57`  
-		Last Modified: Thu, 09 Jun 2016 21:59:08 GMT  
-		Size: 517.0 B
-	-	`sha256:10fb34ebccea88897d4b570120719b23fcbf3e556abdb79fdba6b2e0e4bad9ab`  
-		Last Modified: Thu, 09 Jun 2016 21:59:08 GMT  
-		Size: 680.0 B
-	-	`sha256:f32052e74d3a5980da9a49fa52948cb4fba80124f1bfa929358712672d182e2b`  
-		Last Modified: Fri, 24 Jun 2016 20:00:07 GMT  
-		Size: 339.4 KB (339415 bytes)
-	-	`sha256:cdd9a8ec3a455b44942f459bbcc53d3f3e1844ee482e025f2b3c25cd46c3eb80`  
-		Last Modified: Fri, 24 Jun 2016 20:00:07 GMT  
-		Size: 13.1 KB (13070 bytes)
-	-	`sha256:f11bdaa48b281b1c171e0deeda7199731e32781a8eb7a1cf7966957ac062e52e`  
-		Last Modified: Fri, 24 Jun 2016 20:00:02 GMT  
+	-	`sha256:90d6565b970a2a27b197806e3a2bd19cc0fd1fc9241f7c00ae2f1295b3cac38d`  
+		Last Modified: Thu, 07 Jul 2016 12:52:32 GMT  
+		Size: 49.3 MB (49257890 bytes)
+	-	`sha256:40553bdb84743dd9a3216ab110d274a01e309b916b3c628525a255969c6bdd61`  
+		Last Modified: Fri, 08 Jul 2016 18:42:37 GMT  
+		Size: 21.6 KB (21556 bytes)
+	-	`sha256:c3129e7479abf3d666ac61caefdb62d03bfbd0f322f01d1f8bf30633a98c1bb8`  
+		Last Modified: Fri, 08 Jul 2016 18:42:37 GMT  
+		Size: 445.0 B
+	-	`sha256:091663bd70db6ceba4405547c1e143f8ef676910aa914fe9edd87340cd3742b4`  
+		Last Modified: Fri, 08 Jul 2016 18:42:37 GMT  
+		Size: 679.0 B
+	-	`sha256:77b369ebb1884ce3e37307341d708ae158a77d97d6f011a2dccb1d76048e03a0`  
+		Last Modified: Fri, 08 Jul 2016 19:27:27 GMT  
+		Size: 339.4 KB (339413 bytes)
+	-	`sha256:651e1ca03689ea489b2d4b9594b4d46f3c1c592657c91884fba84f856efc5fed`  
+		Last Modified: Fri, 08 Jul 2016 19:27:26 GMT  
+		Size: 13.1 KB (13072 bytes)
+	-	`sha256:9755ad6b38c49ef9ad0eaa50cf7f64478de073a689f3085fb8463e6c313bbbff`  
+		Last Modified: Fri, 08 Jul 2016 19:27:26 GMT  
 		Size: 222.0 B
-	-	`sha256:a06174927752c5d95090f259190657ea03f1bc95816b80f7494408b842743b48`  
-		Last Modified: Fri, 24 Jun 2016 20:00:31 GMT  
-		Size: 57.6 MB (57584428 bytes)
-	-	`sha256:1e2c92a17e2ff830ef9b602eb5a2dd55cd48dc54f24c2774fbb9136bc774d866`  
-		Last Modified: Fri, 24 Jun 2016 20:00:00 GMT  
-		Size: 603.2 KB (603166 bytes)
-	-	`sha256:3466c7e86604783a9f4eda7b89ec4350baa964fadb9a670a9d517d5c69f6cd8c`  
-		Last Modified: Fri, 24 Jun 2016 20:01:19 GMT  
-		Size: 190.1 MB (190147823 bytes)
-	-	`sha256:6384acbc31b28d08e465140d73db6d76e3f71db63e8ddfec87abced064c00fbc`  
-		Last Modified: Fri, 24 Jun 2016 19:59:59 GMT  
-		Size: 197.0 B
-	-	`sha256:1d41f1d410a23bc239515554ae79aadebf85a14a457fbbee084df8703785c6d4`  
-		Last Modified: Fri, 24 Jun 2016 20:00:02 GMT  
-		Size: 4.7 MB (4665729 bytes)
-	-	`sha256:966637096e4ede61f5841e1d7e3c8b7fc0ecc4d609ef239184e3d4c3e48e2a10`  
-		Last Modified: Fri, 24 Jun 2016 20:00:55 GMT  
-		Size: 131.5 MB (131465484 bytes)
+	-	`sha256:43d5c1cb01c8239326c60d54243f34beefa50bc2ba1259fdb596edadeebbe291`  
+		Last Modified: Fri, 08 Jul 2016 19:27:51 GMT  
+		Size: 57.6 MB (57585769 bytes)
+	-	`sha256:5e25bd4b2228a9307dbf047cbfcac7603b8b33549e2b05932023593087a8650c`  
+		Last Modified: Fri, 08 Jul 2016 19:27:24 GMT  
+		Size: 624.1 KB (624125 bytes)
+	-	`sha256:75aee8140ec59014b431af136aa95b4a2a7a031873d0f2175a55759e192c1e32`  
+		Last Modified: Fri, 08 Jul 2016 19:28:49 GMT  
+		Size: 189.7 MB (189658103 bytes)
+	-	`sha256:da4890924e9c3f083be453fdfa4292a7b4a5fe8bcc15e3de7fde200a4fae812a`  
+		Last Modified: Fri, 08 Jul 2016 19:27:24 GMT  
+		Size: 195.0 B
+	-	`sha256:92258fc5a678453624224a0bd83dbb6db00190a23a26633a45f9f2799b7f4d0e`  
+		Last Modified: Mon, 18 Jul 2016 19:00:09 GMT  
+		Size: 4.7 MB (4667901 bytes)
+	-	`sha256:82fd69150a44cb9d7f2dc7beb1cb3b80bfdf2a0f0de6fa883cb90bed8329e50c`  
+		Last Modified: Mon, 18 Jul 2016 19:25:15 GMT  
+		Size: 140.3 MB (140288020 bytes)
 
 ## `ros:kinetic-perception`
 
 ```console
-$ docker pull ros@sha256:d8817480236b84077a86e0acb0b25e4cca42cc010dfee6c827ca322a291db590
+$ docker pull ros@sha256:d527bef677e400e09e4cf6aaf38779f2f99f297ecab47dbef3e06dbb00de07c7
 ```
 
 -	Platforms:
@@ -1516,94 +1516,94 @@ $ docker pull ros@sha256:d8817480236b84077a86e0acb0b25e4cca42cc010dfee6c827ca322
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **705.7 MB (705683819 bytes)**  
+-	Total Size: **705.8 MB (705773500 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:163360079de9cfac11e1df6be6559ee66e5e55a345b30d8cd3d88ce6cf1a5989`
+-	Image ID: `sha256:88ccf2a6bf1a02bf474d9a0185bf34d44046e21ce172d0fa6801289acc51a848`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 29 Jun 2016 18:47:55 GMT
-ADD file:6532dbda53c0a5b13856b184aa5ff7d0797718c283d7a959b389195eec883efe in /
-# Wed, 29 Jun 2016 18:47:57 GMT
+# Fri, 08 Jul 2016 18:39:36 GMT
+ADD file:49ae6eed5178a2866c5023c4e7a9ae303f4828a5586569106aff27a8ce9cadf6 in /
+# Fri, 08 Jul 2016 18:39:39 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Wed, 29 Jun 2016 18:47:59 GMT
+# Fri, 08 Jul 2016 18:39:41 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 18:48:00 GMT
+# Fri, 08 Jul 2016 18:39:43 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Wed, 29 Jun 2016 18:48:01 GMT
+# Fri, 08 Jul 2016 18:39:43 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jun 2016 19:17:37 GMT
+# Fri, 08 Jul 2016 19:22:51 GMT
 MAINTAINER Tully Foote tfoote+buildfarm@osrfoundation.org
-# Wed, 29 Jun 2016 19:17:39 GMT
+# Fri, 08 Jul 2016 19:22:54 GMT
 RUN locale-gen en_US.UTF-8
-# Wed, 29 Jun 2016 19:17:40 GMT
+# Fri, 08 Jul 2016 19:22:55 GMT
 ENV LANG=en_US.UTF-8
-# Wed, 29 Jun 2016 19:17:43 GMT
+# Fri, 08 Jul 2016 19:22:59 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Wed, 29 Jun 2016 19:17:44 GMT
+# Fri, 08 Jul 2016 19:23:01 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Wed, 29 Jun 2016 19:18:49 GMT
+# Fri, 08 Jul 2016 19:24:25 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 19:19:01 GMT
+# Fri, 08 Jul 2016 19:24:45 GMT
 RUN rosdep init     && rosdep update
-# Wed, 29 Jun 2016 19:19:02 GMT
+# Fri, 08 Jul 2016 19:24:46 GMT
 ENV ROS_DISTRO=kinetic
-# Wed, 29 Jun 2016 19:20:42 GMT
+# Fri, 08 Jul 2016 19:27:11 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 19:20:44 GMT
+# Fri, 08 Jul 2016 19:27:14 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in /
-# Wed, 29 Jun 2016 19:20:44 GMT
+# Fri, 08 Jul 2016 19:27:14 GMT
 ENTRYPOINT &{["/ros_entrypoint.sh"]}
-# Wed, 29 Jun 2016 19:20:45 GMT
+# Fri, 08 Jul 2016 19:27:15 GMT
 CMD ["bash"]
-# Fri, 08 Jul 2016 19:21:45 GMT
+# Mon, 18 Jul 2016 18:59:42 GMT
 MAINTAINER Tully Foote tfoote+buildfarm@osrfoundation.org
-# Fri, 08 Jul 2016 19:22:08 GMT
+# Mon, 18 Jul 2016 18:59:59 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.0-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 19:44:53 GMT
+# Mon, 18 Jul 2016 19:16:11 GMT
 MAINTAINER Tully Foote tfoote+buildfarm@osrfoundation.org
-# Fri, 08 Jul 2016 19:49:34 GMT
+# Mon, 18 Jul 2016 19:20:17 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.0-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:f069f1d2105921f2b5520c0d1d18b04a5fe2e10f9a21afe9661cf9939c287e09`  
-		Last Modified: Wed, 29 Jun 2016 18:49:46 GMT  
-		Size: 49.2 MB (49172780 bytes)
-	-	`sha256:ecbeec5633cf8bec4c620f8116bc5d9c8fc85b9ec246f96e89868d4750a9849b`  
-		Last Modified: Wed, 29 Jun 2016 18:49:32 GMT  
-		Size: 30.8 KB (30822 bytes)
-	-	`sha256:ea6f18256d63acd05db88e5120476d17d8fbba76936898222207e945c2274546`  
-		Last Modified: Wed, 29 Jun 2016 18:49:32 GMT  
-		Size: 442.0 B
-	-	`sha256:54bde7b02897355b6813dcad679e18c6a0ed58353548c1fc8e6e0fb4fd455527`  
-		Last Modified: Wed, 29 Jun 2016 18:49:32 GMT  
-		Size: 680.0 B
-	-	`sha256:0b89bc85b9d5538eed6f5847bc3a5eb82fe13e6f37c86419d904d70d89a5bf9c`  
-		Last Modified: Wed, 29 Jun 2016 19:20:55 GMT  
-		Size: 339.4 KB (339411 bytes)
-	-	`sha256:a995c0a6c6ae7cf94c82561e37d26e1223b03904b83307c2003b4f6f3852ce13`  
-		Last Modified: Wed, 29 Jun 2016 19:20:55 GMT  
-		Size: 13.1 KB (13071 bytes)
-	-	`sha256:7d9a23bd6db4f0a709d294cc9ee74906b5848e543a6cd65f0d880580a0df7996`  
-		Last Modified: Wed, 29 Jun 2016 19:20:52 GMT  
-		Size: 221.0 B
-	-	`sha256:fa97036c8ad5001b01209f7eb0033fca279630971a2f53ff84bafc02fbd82d91`  
-		Last Modified: Wed, 29 Jun 2016 19:21:16 GMT  
-		Size: 57.6 MB (57594691 bytes)
-	-	`sha256:ae3307edd540370b6e894a2189e09ca2006adb80956012d925943f0a23393a63`  
-		Last Modified: Wed, 29 Jun 2016 19:20:52 GMT  
-		Size: 618.9 KB (618901 bytes)
-	-	`sha256:76483c11917a39074573cee5399da3e2ab2301ce9ddeb1da8f74acbc34b3eca5`  
-		Last Modified: Wed, 29 Jun 2016 19:21:49 GMT  
-		Size: 189.7 MB (189660282 bytes)
-	-	`sha256:f660b0b2e8aa540fb8014051402e83cca144e8afda1336ce10b8c0f8f76a2315`  
-		Last Modified: Wed, 29 Jun 2016 19:20:52 GMT  
+	-	`sha256:90d6565b970a2a27b197806e3a2bd19cc0fd1fc9241f7c00ae2f1295b3cac38d`  
+		Last Modified: Thu, 07 Jul 2016 12:52:32 GMT  
+		Size: 49.3 MB (49257890 bytes)
+	-	`sha256:40553bdb84743dd9a3216ab110d274a01e309b916b3c628525a255969c6bdd61`  
+		Last Modified: Fri, 08 Jul 2016 18:42:37 GMT  
+		Size: 21.6 KB (21556 bytes)
+	-	`sha256:c3129e7479abf3d666ac61caefdb62d03bfbd0f322f01d1f8bf30633a98c1bb8`  
+		Last Modified: Fri, 08 Jul 2016 18:42:37 GMT  
+		Size: 445.0 B
+	-	`sha256:091663bd70db6ceba4405547c1e143f8ef676910aa914fe9edd87340cd3742b4`  
+		Last Modified: Fri, 08 Jul 2016 18:42:37 GMT  
+		Size: 679.0 B
+	-	`sha256:77b369ebb1884ce3e37307341d708ae158a77d97d6f011a2dccb1d76048e03a0`  
+		Last Modified: Fri, 08 Jul 2016 19:27:27 GMT  
+		Size: 339.4 KB (339413 bytes)
+	-	`sha256:651e1ca03689ea489b2d4b9594b4d46f3c1c592657c91884fba84f856efc5fed`  
+		Last Modified: Fri, 08 Jul 2016 19:27:26 GMT  
+		Size: 13.1 KB (13072 bytes)
+	-	`sha256:9755ad6b38c49ef9ad0eaa50cf7f64478de073a689f3085fb8463e6c313bbbff`  
+		Last Modified: Fri, 08 Jul 2016 19:27:26 GMT  
+		Size: 222.0 B
+	-	`sha256:43d5c1cb01c8239326c60d54243f34beefa50bc2ba1259fdb596edadeebbe291`  
+		Last Modified: Fri, 08 Jul 2016 19:27:51 GMT  
+		Size: 57.6 MB (57585769 bytes)
+	-	`sha256:5e25bd4b2228a9307dbf047cbfcac7603b8b33549e2b05932023593087a8650c`  
+		Last Modified: Fri, 08 Jul 2016 19:27:24 GMT  
+		Size: 624.1 KB (624125 bytes)
+	-	`sha256:75aee8140ec59014b431af136aa95b4a2a7a031873d0f2175a55759e192c1e32`  
+		Last Modified: Fri, 08 Jul 2016 19:28:49 GMT  
+		Size: 189.7 MB (189658103 bytes)
+	-	`sha256:da4890924e9c3f083be453fdfa4292a7b4a5fe8bcc15e3de7fde200a4fae812a`  
+		Last Modified: Fri, 08 Jul 2016 19:27:24 GMT  
 		Size: 195.0 B
-	-	`sha256:39138e65e101c29dcbc3012ffa610efa36a7944b06539d8eb33037ab2483b17c`  
-		Last Modified: Fri, 08 Jul 2016 19:22:21 GMT  
-		Size: 4.7 MB (4658044 bytes)
-	-	`sha256:1ce8781fcfffeafb9c43bb21fdd852242a6422d3983a7037e722843744d9340e`  
-		Last Modified: Fri, 08 Jul 2016 19:52:33 GMT  
-		Size: 403.6 MB (403594279 bytes)
+	-	`sha256:92258fc5a678453624224a0bd83dbb6db00190a23a26633a45f9f2799b7f4d0e`  
+		Last Modified: Mon, 18 Jul 2016 19:00:09 GMT  
+		Size: 4.7 MB (4667901 bytes)
+	-	`sha256:e8a3eeb529e48e9b6e2e8c261615c0d8a0230873bcde2182212eacd454c218a0`  
+		Last Modified: Mon, 18 Jul 2016 19:22:28 GMT  
+		Size: 403.6 MB (403604130 bytes)
