@@ -16,7 +16,7 @@
 ## `telegraf:0.12`
 
 ```console
-$ docker pull telegraf@sha256:49c68bed11bf845042629484f2bfbe32f39a07e248bb5bb42e8392378195e585
+$ docker pull telegraf@sha256:f38acc3f56a3735f2bcfdfb01909e147cb7a17de50654669e97dec9cdfe0d13f
 ```
 
 -	Platforms:
@@ -26,71 +26,71 @@ $ docker pull telegraf@sha256:49c68bed11bf845042629484f2bfbe32f39a07e248bb5bb42e
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.5 MB (79470365 bytes)**  
+-	Total Size: **79.5 MB (79460467 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:645d69578bfe70cda77de48b5dd09c98d9cab952358414610aeb371de7a0bfaf`
+-	Image ID: `sha256:1b4526e7f09677bf123b72bdfc295842c78fc302ac4518b92ae0529c606f5489`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Mon, 18 Jul 2016 17:34:50 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Mon, 18 Jul 2016 17:34:53 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:54 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Mon, 18 Jul 2016 17:34:57 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Mon, 18 Jul 2016 17:34:58 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:19:48 GMT
+# Mon, 18 Jul 2016 18:10:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 20:18:54 GMT
+# Mon, 18 Jul 2016 19:25:28 GMT
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
-# Fri, 24 Jun 2016 20:18:54 GMT
+# Mon, 18 Jul 2016 19:25:29 GMT
 ENV TELEGRAF_VERSION=0.12.0
-# Fri, 24 Jun 2016 20:18:59 GMT
+# Mon, 18 Jul 2016 19:25:34 GMT
 RUN wget -q https://s3.amazonaws.com/get.influxdb.org/telegraf/telegraf_$TELEGRAF_VERSION-1_amd64.deb.asc &&     wget -q https://s3.amazonaws.com/get.influxdb.org/telegraf/telegraf_$TELEGRAF_VERSION-1_amd64.deb &&     gpg --batch --verify telegraf_$TELEGRAF_VERSION-1_amd64.deb.asc telegraf_$TELEGRAF_VERSION-1_amd64.deb &&     dpkg -i telegraf_$TELEGRAF_VERSION-1_amd64.deb &&     rm -f telegraf_$TELEGRAF_VERSION-1_amd64.deb*
-# Fri, 24 Jun 2016 20:18:59 GMT
+# Mon, 18 Jul 2016 19:25:35 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Fri, 24 Jun 2016 20:19:00 GMT
+# Mon, 18 Jul 2016 19:25:35 GMT
 COPY file:b1f698df13c6ba0d317a807c67e49549da5cded27353d8823ce643ef2059b2bf in /entrypoint.sh
-# Fri, 24 Jun 2016 20:19:01 GMT
+# Mon, 18 Jul 2016 19:25:36 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 24 Jun 2016 20:19:01 GMT
+# Mon, 18 Jul 2016 19:25:37 GMT
 CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:7d347d9063d029c97a306ad58b09bbbc9168b51a90170804b9bb457364af5bc9`  
-		Last Modified: Fri, 24 Jun 2016 18:19:57 GMT  
-		Size: 4.6 MB (4619845 bytes)
-	-	`sha256:422ae8561244f04c994a83787e1fdf77ae8f1ebe8e5c060d81ccd967a9315de0`  
-		Last Modified: Fri, 24 Jun 2016 20:19:08 GMT  
-		Size: 6.9 KB (6856 bytes)
-	-	`sha256:ed338c01223339f46d0d6c32ce166d6b2aad3ee81d8fed873a74889ae4c31fb3`  
-		Last Modified: Fri, 24 Jun 2016 20:19:11 GMT  
-		Size: 9.0 MB (9041593 bytes)
-	-	`sha256:8bd313eb81c5f63a41a1cc85b66b1dd8c4e503ac3dde04b4fdcd7aa27130ddd0`  
-		Last Modified: Fri, 24 Jun 2016 20:19:08 GMT  
-		Size: 242.0 B
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 92.3 KB (92340 bytes)
+	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 366.0 B
+	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 682.0 B
+	-	`sha256:15ad7a7bbe0e989ce0dd1d68e948145d52c46cb7ad3d4d9ff783dbd4966113c5`  
+		Last Modified: Mon, 18 Jul 2016 18:10:42 GMT  
+		Size: 4.6 MB (4619331 bytes)
+	-	`sha256:0b21980502041f61fcc60c370d0b7896d33cf216dd87c46a8a86796aba4934d4`  
+		Last Modified: Mon, 18 Jul 2016 19:25:45 GMT  
+		Size: 6.8 KB (6847 bytes)
+	-	`sha256:8300ea97c0e9a4f2d9d7a4eef8266e8b10d28683620f46a18e978ff862d29625`  
+		Last Modified: Mon, 18 Jul 2016 19:25:49 GMT  
+		Size: 9.0 MB (9041589 bytes)
+	-	`sha256:a99c37abbc98d313523471b73a47c15f1512f9e85cf6d6cbab165fc0a4c1c4a0`  
+		Last Modified: Mon, 18 Jul 2016 19:25:44 GMT  
+		Size: 243.0 B
 
 ## `telegraf:0.12.0`
 
 ```console
-$ docker pull telegraf@sha256:49c68bed11bf845042629484f2bfbe32f39a07e248bb5bb42e8392378195e585
+$ docker pull telegraf@sha256:f38acc3f56a3735f2bcfdfb01909e147cb7a17de50654669e97dec9cdfe0d13f
 ```
 
 -	Platforms:
@@ -100,71 +100,71 @@ $ docker pull telegraf@sha256:49c68bed11bf845042629484f2bfbe32f39a07e248bb5bb42e
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.5 MB (79470365 bytes)**  
+-	Total Size: **79.5 MB (79460467 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:645d69578bfe70cda77de48b5dd09c98d9cab952358414610aeb371de7a0bfaf`
+-	Image ID: `sha256:1b4526e7f09677bf123b72bdfc295842c78fc302ac4518b92ae0529c606f5489`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Mon, 18 Jul 2016 17:34:50 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Mon, 18 Jul 2016 17:34:53 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:54 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Mon, 18 Jul 2016 17:34:57 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Mon, 18 Jul 2016 17:34:58 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:19:48 GMT
+# Mon, 18 Jul 2016 18:10:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 20:18:54 GMT
+# Mon, 18 Jul 2016 19:25:28 GMT
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
-# Fri, 24 Jun 2016 20:18:54 GMT
+# Mon, 18 Jul 2016 19:25:29 GMT
 ENV TELEGRAF_VERSION=0.12.0
-# Fri, 24 Jun 2016 20:18:59 GMT
+# Mon, 18 Jul 2016 19:25:34 GMT
 RUN wget -q https://s3.amazonaws.com/get.influxdb.org/telegraf/telegraf_$TELEGRAF_VERSION-1_amd64.deb.asc &&     wget -q https://s3.amazonaws.com/get.influxdb.org/telegraf/telegraf_$TELEGRAF_VERSION-1_amd64.deb &&     gpg --batch --verify telegraf_$TELEGRAF_VERSION-1_amd64.deb.asc telegraf_$TELEGRAF_VERSION-1_amd64.deb &&     dpkg -i telegraf_$TELEGRAF_VERSION-1_amd64.deb &&     rm -f telegraf_$TELEGRAF_VERSION-1_amd64.deb*
-# Fri, 24 Jun 2016 20:18:59 GMT
+# Mon, 18 Jul 2016 19:25:35 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Fri, 24 Jun 2016 20:19:00 GMT
+# Mon, 18 Jul 2016 19:25:35 GMT
 COPY file:b1f698df13c6ba0d317a807c67e49549da5cded27353d8823ce643ef2059b2bf in /entrypoint.sh
-# Fri, 24 Jun 2016 20:19:01 GMT
+# Mon, 18 Jul 2016 19:25:36 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 24 Jun 2016 20:19:01 GMT
+# Mon, 18 Jul 2016 19:25:37 GMT
 CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:7d347d9063d029c97a306ad58b09bbbc9168b51a90170804b9bb457364af5bc9`  
-		Last Modified: Fri, 24 Jun 2016 18:19:57 GMT  
-		Size: 4.6 MB (4619845 bytes)
-	-	`sha256:422ae8561244f04c994a83787e1fdf77ae8f1ebe8e5c060d81ccd967a9315de0`  
-		Last Modified: Fri, 24 Jun 2016 20:19:08 GMT  
-		Size: 6.9 KB (6856 bytes)
-	-	`sha256:ed338c01223339f46d0d6c32ce166d6b2aad3ee81d8fed873a74889ae4c31fb3`  
-		Last Modified: Fri, 24 Jun 2016 20:19:11 GMT  
-		Size: 9.0 MB (9041593 bytes)
-	-	`sha256:8bd313eb81c5f63a41a1cc85b66b1dd8c4e503ac3dde04b4fdcd7aa27130ddd0`  
-		Last Modified: Fri, 24 Jun 2016 20:19:08 GMT  
-		Size: 242.0 B
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 92.3 KB (92340 bytes)
+	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 366.0 B
+	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 682.0 B
+	-	`sha256:15ad7a7bbe0e989ce0dd1d68e948145d52c46cb7ad3d4d9ff783dbd4966113c5`  
+		Last Modified: Mon, 18 Jul 2016 18:10:42 GMT  
+		Size: 4.6 MB (4619331 bytes)
+	-	`sha256:0b21980502041f61fcc60c370d0b7896d33cf216dd87c46a8a86796aba4934d4`  
+		Last Modified: Mon, 18 Jul 2016 19:25:45 GMT  
+		Size: 6.8 KB (6847 bytes)
+	-	`sha256:8300ea97c0e9a4f2d9d7a4eef8266e8b10d28683620f46a18e978ff862d29625`  
+		Last Modified: Mon, 18 Jul 2016 19:25:49 GMT  
+		Size: 9.0 MB (9041589 bytes)
+	-	`sha256:a99c37abbc98d313523471b73a47c15f1512f9e85cf6d6cbab165fc0a4c1c4a0`  
+		Last Modified: Mon, 18 Jul 2016 19:25:44 GMT  
+		Size: 243.0 B
 
 ## `telegraf:0.13`
 
 ```console
-$ docker pull telegraf@sha256:357f67b0f65ea6e7b56cc864677c9a3c96834c2046011856b185be663f14921b
+$ docker pull telegraf@sha256:605e9364caa4e14a3e564bde81930f18059e00bf1ca5f0d04d3451674efc831c
 ```
 
 -	Platforms:
@@ -174,71 +174,71 @@ $ docker pull telegraf@sha256:357f67b0f65ea6e7b56cc864677c9a3c96834c2046011856b1
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.7 MB (79684296 bytes)**  
+-	Total Size: **79.7 MB (79674506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df84ee857174621abc9adabd968afdc42358e87550f690733e4c23d7f794599e`
+-	Image ID: `sha256:96bb1244808025bbc39bf703d58966e9e63c737a74f4f1846425a0c1e5a0fc3d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Mon, 18 Jul 2016 17:34:50 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Mon, 18 Jul 2016 17:34:53 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:54 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Mon, 18 Jul 2016 17:34:57 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Mon, 18 Jul 2016 17:34:58 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:19:48 GMT
+# Mon, 18 Jul 2016 18:10:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 20:18:54 GMT
+# Mon, 18 Jul 2016 19:25:28 GMT
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
-# Fri, 24 Jun 2016 20:19:50 GMT
+# Mon, 18 Jul 2016 19:26:05 GMT
 ENV TELEGRAF_VERSION=0.13.1
-# Fri, 24 Jun 2016 20:19:53 GMT
+# Mon, 18 Jul 2016 19:26:09 GMT
 RUN wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}_amd64.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}_amd64.deb.asc telegraf_${TELEGRAF_VERSION}_amd64.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}_amd64.deb &&     rm -f telegraf_${TELEGRAF_VERSION}_amd64.deb*
-# Fri, 24 Jun 2016 20:19:54 GMT
+# Mon, 18 Jul 2016 19:26:09 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Fri, 24 Jun 2016 20:19:55 GMT
+# Mon, 18 Jul 2016 19:26:10 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh
-# Fri, 24 Jun 2016 20:19:55 GMT
+# Mon, 18 Jul 2016 19:26:11 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 24 Jun 2016 20:19:56 GMT
+# Mon, 18 Jul 2016 19:26:11 GMT
 CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:7d347d9063d029c97a306ad58b09bbbc9168b51a90170804b9bb457364af5bc9`  
-		Last Modified: Fri, 24 Jun 2016 18:19:57 GMT  
-		Size: 4.6 MB (4619845 bytes)
-	-	`sha256:422ae8561244f04c994a83787e1fdf77ae8f1ebe8e5c060d81ccd967a9315de0`  
-		Last Modified: Fri, 24 Jun 2016 20:19:08 GMT  
-		Size: 6.9 KB (6856 bytes)
-	-	`sha256:596cbd49c6778b7db778b4f1ecddc4d6dda8f6dcebf1de5ee71e1084fada565a`  
-		Last Modified: Fri, 24 Jun 2016 20:20:06 GMT  
-		Size: 9.3 MB (9255581 bytes)
-	-	`sha256:14b3d94c04a7edb4d375c96c6e11052286bb2e31e338e1207315c80df3d62a54`  
-		Last Modified: Fri, 24 Jun 2016 20:20:02 GMT  
-		Size: 185.0 B
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 92.3 KB (92340 bytes)
+	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 366.0 B
+	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 682.0 B
+	-	`sha256:15ad7a7bbe0e989ce0dd1d68e948145d52c46cb7ad3d4d9ff783dbd4966113c5`  
+		Last Modified: Mon, 18 Jul 2016 18:10:42 GMT  
+		Size: 4.6 MB (4619331 bytes)
+	-	`sha256:0b21980502041f61fcc60c370d0b7896d33cf216dd87c46a8a86796aba4934d4`  
+		Last Modified: Mon, 18 Jul 2016 19:25:45 GMT  
+		Size: 6.8 KB (6847 bytes)
+	-	`sha256:f04ec491ba378a3b985a04ccd33126fae498c9ea61b1a21950ac08eed382cdd3`  
+		Last Modified: Mon, 18 Jul 2016 19:26:23 GMT  
+		Size: 9.3 MB (9255687 bytes)
+	-	`sha256:1564b58efa30451ce0b2b22359dc55919e1db76b9e3f295b9b938d966a9354c5`  
+		Last Modified: Mon, 18 Jul 2016 19:26:20 GMT  
+		Size: 184.0 B
 
 ## `telegraf:0.13.1`
 
 ```console
-$ docker pull telegraf@sha256:357f67b0f65ea6e7b56cc864677c9a3c96834c2046011856b185be663f14921b
+$ docker pull telegraf@sha256:605e9364caa4e14a3e564bde81930f18059e00bf1ca5f0d04d3451674efc831c
 ```
 
 -	Platforms:
@@ -248,71 +248,71 @@ $ docker pull telegraf@sha256:357f67b0f65ea6e7b56cc864677c9a3c96834c2046011856b1
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.7 MB (79684296 bytes)**  
+-	Total Size: **79.7 MB (79674506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df84ee857174621abc9adabd968afdc42358e87550f690733e4c23d7f794599e`
+-	Image ID: `sha256:96bb1244808025bbc39bf703d58966e9e63c737a74f4f1846425a0c1e5a0fc3d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Mon, 18 Jul 2016 17:34:50 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Mon, 18 Jul 2016 17:34:53 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:54 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Mon, 18 Jul 2016 17:34:57 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Mon, 18 Jul 2016 17:34:58 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:19:48 GMT
+# Mon, 18 Jul 2016 18:10:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 20:18:54 GMT
+# Mon, 18 Jul 2016 19:25:28 GMT
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
-# Fri, 24 Jun 2016 20:19:50 GMT
+# Mon, 18 Jul 2016 19:26:05 GMT
 ENV TELEGRAF_VERSION=0.13.1
-# Fri, 24 Jun 2016 20:19:53 GMT
+# Mon, 18 Jul 2016 19:26:09 GMT
 RUN wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}_amd64.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}_amd64.deb.asc telegraf_${TELEGRAF_VERSION}_amd64.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}_amd64.deb &&     rm -f telegraf_${TELEGRAF_VERSION}_amd64.deb*
-# Fri, 24 Jun 2016 20:19:54 GMT
+# Mon, 18 Jul 2016 19:26:09 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Fri, 24 Jun 2016 20:19:55 GMT
+# Mon, 18 Jul 2016 19:26:10 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh
-# Fri, 24 Jun 2016 20:19:55 GMT
+# Mon, 18 Jul 2016 19:26:11 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 24 Jun 2016 20:19:56 GMT
+# Mon, 18 Jul 2016 19:26:11 GMT
 CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:7d347d9063d029c97a306ad58b09bbbc9168b51a90170804b9bb457364af5bc9`  
-		Last Modified: Fri, 24 Jun 2016 18:19:57 GMT  
-		Size: 4.6 MB (4619845 bytes)
-	-	`sha256:422ae8561244f04c994a83787e1fdf77ae8f1ebe8e5c060d81ccd967a9315de0`  
-		Last Modified: Fri, 24 Jun 2016 20:19:08 GMT  
-		Size: 6.9 KB (6856 bytes)
-	-	`sha256:596cbd49c6778b7db778b4f1ecddc4d6dda8f6dcebf1de5ee71e1084fada565a`  
-		Last Modified: Fri, 24 Jun 2016 20:20:06 GMT  
-		Size: 9.3 MB (9255581 bytes)
-	-	`sha256:14b3d94c04a7edb4d375c96c6e11052286bb2e31e338e1207315c80df3d62a54`  
-		Last Modified: Fri, 24 Jun 2016 20:20:02 GMT  
-		Size: 185.0 B
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 92.3 KB (92340 bytes)
+	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 366.0 B
+	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 682.0 B
+	-	`sha256:15ad7a7bbe0e989ce0dd1d68e948145d52c46cb7ad3d4d9ff783dbd4966113c5`  
+		Last Modified: Mon, 18 Jul 2016 18:10:42 GMT  
+		Size: 4.6 MB (4619331 bytes)
+	-	`sha256:0b21980502041f61fcc60c370d0b7896d33cf216dd87c46a8a86796aba4934d4`  
+		Last Modified: Mon, 18 Jul 2016 19:25:45 GMT  
+		Size: 6.8 KB (6847 bytes)
+	-	`sha256:f04ec491ba378a3b985a04ccd33126fae498c9ea61b1a21950ac08eed382cdd3`  
+		Last Modified: Mon, 18 Jul 2016 19:26:23 GMT  
+		Size: 9.3 MB (9255687 bytes)
+	-	`sha256:1564b58efa30451ce0b2b22359dc55919e1db76b9e3f295b9b938d966a9354c5`  
+		Last Modified: Mon, 18 Jul 2016 19:26:20 GMT  
+		Size: 184.0 B
 
 ## `telegraf:latest`
 
 ```console
-$ docker pull telegraf@sha256:357f67b0f65ea6e7b56cc864677c9a3c96834c2046011856b185be663f14921b
+$ docker pull telegraf@sha256:605e9364caa4e14a3e564bde81930f18059e00bf1ca5f0d04d3451674efc831c
 ```
 
 -	Platforms:
@@ -322,66 +322,66 @@ $ docker pull telegraf@sha256:357f67b0f65ea6e7b56cc864677c9a3c96834c2046011856b1
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.7 MB (79684296 bytes)**  
+-	Total Size: **79.7 MB (79674506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df84ee857174621abc9adabd968afdc42358e87550f690733e4c23d7f794599e`
+-	Image ID: `sha256:96bb1244808025bbc39bf703d58966e9e63c737a74f4f1846425a0c1e5a0fc3d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Mon, 18 Jul 2016 17:34:50 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Mon, 18 Jul 2016 17:34:53 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:54 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Mon, 18 Jul 2016 17:34:57 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Mon, 18 Jul 2016 17:34:58 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:19:48 GMT
+# Mon, 18 Jul 2016 18:10:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 20:18:54 GMT
+# Mon, 18 Jul 2016 19:25:28 GMT
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
-# Fri, 24 Jun 2016 20:19:50 GMT
+# Mon, 18 Jul 2016 19:26:05 GMT
 ENV TELEGRAF_VERSION=0.13.1
-# Fri, 24 Jun 2016 20:19:53 GMT
+# Mon, 18 Jul 2016 19:26:09 GMT
 RUN wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}_amd64.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}_amd64.deb.asc telegraf_${TELEGRAF_VERSION}_amd64.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}_amd64.deb &&     rm -f telegraf_${TELEGRAF_VERSION}_amd64.deb*
-# Fri, 24 Jun 2016 20:19:54 GMT
+# Mon, 18 Jul 2016 19:26:09 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Fri, 24 Jun 2016 20:19:55 GMT
+# Mon, 18 Jul 2016 19:26:10 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh
-# Fri, 24 Jun 2016 20:19:55 GMT
+# Mon, 18 Jul 2016 19:26:11 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 24 Jun 2016 20:19:56 GMT
+# Mon, 18 Jul 2016 19:26:11 GMT
 CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:7d347d9063d029c97a306ad58b09bbbc9168b51a90170804b9bb457364af5bc9`  
-		Last Modified: Fri, 24 Jun 2016 18:19:57 GMT  
-		Size: 4.6 MB (4619845 bytes)
-	-	`sha256:422ae8561244f04c994a83787e1fdf77ae8f1ebe8e5c060d81ccd967a9315de0`  
-		Last Modified: Fri, 24 Jun 2016 20:19:08 GMT  
-		Size: 6.9 KB (6856 bytes)
-	-	`sha256:596cbd49c6778b7db778b4f1ecddc4d6dda8f6dcebf1de5ee71e1084fada565a`  
-		Last Modified: Fri, 24 Jun 2016 20:20:06 GMT  
-		Size: 9.3 MB (9255581 bytes)
-	-	`sha256:14b3d94c04a7edb4d375c96c6e11052286bb2e31e338e1207315c80df3d62a54`  
-		Last Modified: Fri, 24 Jun 2016 20:20:02 GMT  
-		Size: 185.0 B
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 92.3 KB (92340 bytes)
+	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 366.0 B
+	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 682.0 B
+	-	`sha256:15ad7a7bbe0e989ce0dd1d68e948145d52c46cb7ad3d4d9ff783dbd4966113c5`  
+		Last Modified: Mon, 18 Jul 2016 18:10:42 GMT  
+		Size: 4.6 MB (4619331 bytes)
+	-	`sha256:0b21980502041f61fcc60c370d0b7896d33cf216dd87c46a8a86796aba4934d4`  
+		Last Modified: Mon, 18 Jul 2016 19:25:45 GMT  
+		Size: 6.8 KB (6847 bytes)
+	-	`sha256:f04ec491ba378a3b985a04ccd33126fae498c9ea61b1a21950ac08eed382cdd3`  
+		Last Modified: Mon, 18 Jul 2016 19:26:23 GMT  
+		Size: 9.3 MB (9255687 bytes)
+	-	`sha256:1564b58efa30451ce0b2b22359dc55919e1db76b9e3f295b9b938d966a9354c5`  
+		Last Modified: Mon, 18 Jul 2016 19:26:20 GMT  
+		Size: 184.0 B
 
 ## `telegraf:0.13-alpine`
 
@@ -527,7 +527,7 @@ CMD ["telegraf"]
 ## `telegraf:1.0.0-beta2`
 
 ```console
-$ docker pull telegraf@sha256:14f29d0e70c48c7d327e0aa44d5b64be9fba4a45786bb23caa77d047b2b8e58e
+$ docker pull telegraf@sha256:cc735356e3984db369acc50f0d3b6e2fa4a6b2cc4c4588a550e9cdea823461d0
 ```
 
 -	Platforms:
@@ -537,66 +537,66 @@ $ docker pull telegraf@sha256:14f29d0e70c48c7d327e0aa44d5b64be9fba4a45786bb23caa
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.9 MB (79886448 bytes)**  
+-	Total Size: **79.9 MB (79876626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:933328bcb1101bc98bc77382fefb7afa271c77fa26502ac5b8bf59b577130bc9`
+-	Image ID: `sha256:40b1e2fc17021c791130cb20e724093ae78193f36cdb4175167ecefc3cb47757`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Mon, 18 Jul 2016 17:34:50 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Mon, 18 Jul 2016 17:34:53 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Mon, 18 Jul 2016 17:34:54 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Mon, 18 Jul 2016 17:34:57 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Mon, 18 Jul 2016 17:34:58 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:19:48 GMT
+# Mon, 18 Jul 2016 18:10:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 20:18:54 GMT
+# Mon, 18 Jul 2016 19:25:28 GMT
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
-# Mon, 11 Jul 2016 18:28:21 GMT
+# Mon, 18 Jul 2016 19:26:53 GMT
 ENV TELEGRAF_VERSION=1.0.0-beta2
-# Mon, 11 Jul 2016 18:28:28 GMT
+# Mon, 18 Jul 2016 19:26:56 GMT
 RUN wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}_amd64.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}_amd64.deb.asc telegraf_${TELEGRAF_VERSION}_amd64.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}_amd64.deb &&     rm -f telegraf_${TELEGRAF_VERSION}_amd64.deb*
-# Mon, 11 Jul 2016 18:28:28 GMT
+# Mon, 18 Jul 2016 19:26:57 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Mon, 11 Jul 2016 18:28:29 GMT
+# Mon, 18 Jul 2016 19:26:58 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh
-# Mon, 11 Jul 2016 18:28:30 GMT
+# Mon, 18 Jul 2016 19:26:59 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 11 Jul 2016 18:28:30 GMT
+# Mon, 18 Jul 2016 19:26:59 GMT
 CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:7d347d9063d029c97a306ad58b09bbbc9168b51a90170804b9bb457364af5bc9`  
-		Last Modified: Fri, 24 Jun 2016 18:19:57 GMT  
-		Size: 4.6 MB (4619845 bytes)
-	-	`sha256:422ae8561244f04c994a83787e1fdf77ae8f1ebe8e5c060d81ccd967a9315de0`  
-		Last Modified: Fri, 24 Jun 2016 20:19:08 GMT  
-		Size: 6.9 KB (6856 bytes)
-	-	`sha256:4ded4c96008a5aeac654f717b42955843c69e2081dec987d26392ee35c9ec1fc`  
-		Last Modified: Mon, 11 Jul 2016 18:31:03 GMT  
-		Size: 9.5 MB (9457732 bytes)
-	-	`sha256:42161f916dd0b12dd4ead064591ef269aca16d5a3146830f8da2fe4d9be5113a`  
-		Last Modified: Mon, 11 Jul 2016 18:30:59 GMT  
-		Size: 186.0 B
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 92.3 KB (92340 bytes)
+	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 366.0 B
+	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
+		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
+		Size: 682.0 B
+	-	`sha256:15ad7a7bbe0e989ce0dd1d68e948145d52c46cb7ad3d4d9ff783dbd4966113c5`  
+		Last Modified: Mon, 18 Jul 2016 18:10:42 GMT  
+		Size: 4.6 MB (4619331 bytes)
+	-	`sha256:0b21980502041f61fcc60c370d0b7896d33cf216dd87c46a8a86796aba4934d4`  
+		Last Modified: Mon, 18 Jul 2016 19:25:45 GMT  
+		Size: 6.8 KB (6847 bytes)
+	-	`sha256:2f22769e9d4a5b5fc8d6a6415d04927ea63b5ab61b9b8e8902e1219fec3bae89`  
+		Last Modified: Mon, 18 Jul 2016 19:27:11 GMT  
+		Size: 9.5 MB (9457804 bytes)
+	-	`sha256:f0a9c156a0d5315b86828f9d084a6f8a0a94cd845e9292779b30f2548ece5673`  
+		Last Modified: Mon, 18 Jul 2016 19:27:08 GMT  
+		Size: 187.0 B
 
 ## `telegraf:1.0.0-beta2-alpine`
 
