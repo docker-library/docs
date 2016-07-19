@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.0.0`, `reblochon`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/556367439faa4266171318b433201e3fdd7f81f2/Dockerfile)
+-	[`v1.0.1`, `reblochon`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/a390a09245fe8f47fc30f826b80e4a8723cc1587/Dockerfile)
 
-[![](https://badge.imagelayers.io/traefik:latest.svg)](https://imagelayers.io/?images=traefik:v1.0.0)
+[![](https://badge.imagelayers.io/traefik:latest.svg)](https://imagelayers.io/?images=traefik:v1.0.1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/traefik`)](https://github.com/docker-library/official-images/blob/master/library/traefik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik).
 
