@@ -498,7 +498,7 @@ RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& 
 ## `gcc:6`
 
 ```console
-$ docker pull gcc@sha256:35256b5f4e4d5643c9631c92e3505154cd2ea666d2f83812b418cfdb1d5866e8
+$ docker pull gcc@sha256:50f45b9107dab2a3bd92420855e9bda12f70cf233a95e104c40c808fe80f3675
 ```
 
 -	Platforms:
@@ -508,9 +508,9 @@ $ docker pull gcc@sha256:35256b5f4e4d5643c9631c92e3505154cd2ea666d2f83812b418cfd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **442.6 MB (442628228 bytes)**  
+-	Total Size: **453.4 MB (453352192 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0b516dc179947e8fb7fe92d2d469da28f9a56fca399f7deecac858ba42b5649`
+-	Image ID: `sha256:8610f3d97feae3efe214db8ea7287554a2bb5ead8f9bf59cd959115145904b59`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -530,12 +530,12 @@ ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC079
 RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Fri, 10 Jun 2016 17:24:37 GMT
 ENV GCC_VERSION=6.1.0
-# Fri, 10 Jun 2016 18:49:41 GMT
-RUN buildDeps='flex' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig 	&& gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 	&& mkdir -p /usr/src/gcc 	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 	&& rm gcc.tar.bz2* 	&& cd /usr/src/gcc 	&& ./contrib/download_prerequisites 	&& { rm *.tar.* || true; } 	&& dir="$(mktemp -d)" 	&& cd "$dir" 	&& /usr/src/gcc/configure 		--disable-multilib 		--enable-languages=c,c++,go 	&& make -j"$(nproc)" 	&& make install-strip 	&& cd .. 	&& rm -rf "$dir" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 10 Jun 2016 18:49:45 GMT
+# Wed, 20 Jul 2016 00:00:02 GMT
+RUN buildDeps='flex' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig 	&& gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 	&& mkdir -p /usr/src/gcc 	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 	&& rm gcc.tar.bz2* 	&& cd /usr/src/gcc 	&& ./contrib/download_prerequisites 	&& { rm *.tar.* || true; } 	&& dir="$(mktemp -d)" 	&& cd "$dir" 	&& /usr/src/gcc/configure 		--disable-multilib 		--enable-languages=c,c++,fortran,go 	&& make -j"$(nproc)" 	&& make install-strip 	&& cd .. 	&& rm -rf "$dir" 	&& apt-get purge -y --auto-remove $buildDeps
+# Wed, 20 Jul 2016 00:00:08 GMT
 RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf 	&& ldconfig -v
-# Fri, 10 Jun 2016 18:49:47 GMT
-RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
+# Wed, 20 Jul 2016 00:00:09 GMT
+RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ 	&& dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
 ```
 
 -	Layers:
@@ -554,20 +554,20 @@ RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& 
 	-	`sha256:d32a4c04e369315bdecbe764088d0f55a9bde24ccbd0acba6f596ab98518967a`  
 		Last Modified: Sat, 25 Jun 2016 01:22:17 GMT  
 		Size: 98.2 KB (98200 bytes)
-	-	`sha256:276c31cf0a4cde0995a3b8fcd09435e4c746a3ee0f36e4ebfbec550451773f12`  
-		Last Modified: Sat, 25 Jun 2016 01:29:12 GMT  
-		Size: 200.4 MB (200357840 bytes)
-	-	`sha256:a455d29f9189bd57556881c2ee1540c6d3580267a80a713833e34e366a29de83`  
-		Last Modified: Sat, 25 Jun 2016 01:27:09 GMT  
-		Size: 10.6 KB (10563 bytes)
-	-	`sha256:dcfe5869552b327b6cdf6bd3b52071d4cc1210e1692ed0ade8833a581d4a7260`  
-		Last Modified: Sat, 25 Jun 2016 01:27:09 GMT  
-		Size: 32.1 KB (32117 bytes)
+	-	`sha256:b7642b007f9dabc6960f2cebaf60645d105620531609b0b0ae193bb77d9f5a28`  
+		Last Modified: Wed, 20 Jul 2016 00:06:36 GMT  
+		Size: 211.1 MB (211081761 bytes)
+	-	`sha256:f5716448e2507573d15e5e8650a7c24dd974c5a906425f3b95ebd78254952e5c`  
+		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
+		Size: 10.6 KB (10599 bytes)
+	-	`sha256:59b52273642be1543212a990ecd11c774a348bb8d3cc4be19e102e826b682131`  
+		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
+		Size: 32.1 KB (32124 bytes)
 
 ## `gcc:latest`
 
 ```console
-$ docker pull gcc@sha256:35256b5f4e4d5643c9631c92e3505154cd2ea666d2f83812b418cfdb1d5866e8
+$ docker pull gcc@sha256:50f45b9107dab2a3bd92420855e9bda12f70cf233a95e104c40c808fe80f3675
 ```
 
 -	Platforms:
@@ -577,9 +577,9 @@ $ docker pull gcc@sha256:35256b5f4e4d5643c9631c92e3505154cd2ea666d2f83812b418cfd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **442.6 MB (442628228 bytes)**  
+-	Total Size: **453.4 MB (453352192 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0b516dc179947e8fb7fe92d2d469da28f9a56fca399f7deecac858ba42b5649`
+-	Image ID: `sha256:8610f3d97feae3efe214db8ea7287554a2bb5ead8f9bf59cd959115145904b59`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -599,12 +599,12 @@ ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC079
 RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Fri, 10 Jun 2016 17:24:37 GMT
 ENV GCC_VERSION=6.1.0
-# Fri, 10 Jun 2016 18:49:41 GMT
-RUN buildDeps='flex' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig 	&& gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 	&& mkdir -p /usr/src/gcc 	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 	&& rm gcc.tar.bz2* 	&& cd /usr/src/gcc 	&& ./contrib/download_prerequisites 	&& { rm *.tar.* || true; } 	&& dir="$(mktemp -d)" 	&& cd "$dir" 	&& /usr/src/gcc/configure 		--disable-multilib 		--enable-languages=c,c++,go 	&& make -j"$(nproc)" 	&& make install-strip 	&& cd .. 	&& rm -rf "$dir" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 10 Jun 2016 18:49:45 GMT
+# Wed, 20 Jul 2016 00:00:02 GMT
+RUN buildDeps='flex' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig 	&& gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 	&& mkdir -p /usr/src/gcc 	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 	&& rm gcc.tar.bz2* 	&& cd /usr/src/gcc 	&& ./contrib/download_prerequisites 	&& { rm *.tar.* || true; } 	&& dir="$(mktemp -d)" 	&& cd "$dir" 	&& /usr/src/gcc/configure 		--disable-multilib 		--enable-languages=c,c++,fortran,go 	&& make -j"$(nproc)" 	&& make install-strip 	&& cd .. 	&& rm -rf "$dir" 	&& apt-get purge -y --auto-remove $buildDeps
+# Wed, 20 Jul 2016 00:00:08 GMT
 RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf 	&& ldconfig -v
-# Fri, 10 Jun 2016 18:49:47 GMT
-RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
+# Wed, 20 Jul 2016 00:00:09 GMT
+RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ 	&& dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
 ```
 
 -	Layers:
@@ -623,12 +623,12 @@ RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& 
 	-	`sha256:d32a4c04e369315bdecbe764088d0f55a9bde24ccbd0acba6f596ab98518967a`  
 		Last Modified: Sat, 25 Jun 2016 01:22:17 GMT  
 		Size: 98.2 KB (98200 bytes)
-	-	`sha256:276c31cf0a4cde0995a3b8fcd09435e4c746a3ee0f36e4ebfbec550451773f12`  
-		Last Modified: Sat, 25 Jun 2016 01:29:12 GMT  
-		Size: 200.4 MB (200357840 bytes)
-	-	`sha256:a455d29f9189bd57556881c2ee1540c6d3580267a80a713833e34e366a29de83`  
-		Last Modified: Sat, 25 Jun 2016 01:27:09 GMT  
-		Size: 10.6 KB (10563 bytes)
-	-	`sha256:dcfe5869552b327b6cdf6bd3b52071d4cc1210e1692ed0ade8833a581d4a7260`  
-		Last Modified: Sat, 25 Jun 2016 01:27:09 GMT  
-		Size: 32.1 KB (32117 bytes)
+	-	`sha256:b7642b007f9dabc6960f2cebaf60645d105620531609b0b0ae193bb77d9f5a28`  
+		Last Modified: Wed, 20 Jul 2016 00:06:36 GMT  
+		Size: 211.1 MB (211081761 bytes)
+	-	`sha256:f5716448e2507573d15e5e8650a7c24dd974c5a906425f3b95ebd78254952e5c`  
+		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
+		Size: 10.6 KB (10599 bytes)
+	-	`sha256:59b52273642be1543212a990ecd11c774a348bb8d3cc4be19e102e826b682131`  
+		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
+		Size: 32.1 KB (32124 bytes)
