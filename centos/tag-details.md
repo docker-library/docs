@@ -603,7 +603,7 @@ CMD ["/bin/bash"]
 ## `centos:centos6.6`
 
 ```console
-$ docker pull centos@sha256:7c7b833c4a9ee617a1bf1a2b61ba3a976fcd6b703bfe1fd74de1ef5f0dc4d35f
+$ docker pull centos@sha256:69230f134a0c55fd41a510342f55ca562950b895da1122ef138d398d219d4319
 ```
 
 -	Platforms:
@@ -611,26 +611,23 @@ $ docker pull centos@sha256:7c7b833c4a9ee617a1bf1a2b61ba3a976fcd6b703bfe1fd74de1
 
 ### `centos:centos6.6` - linux; amd64
 
--	Docker Version: 1.8.2
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.0 MB (72038798 bytes)**  
+-	Total Size: **72.0 MB (72038689 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:881cca81e67f43309c968caa2c5d1ca83b2cffb9d0a9e74e359be56309e8da61`
+-	Image ID: `sha256:2c886f766286449b76ad90a7ce577b988e48fe5a3ed9a75c53fb81f783946831`
 
 ```dockerfile
-# Wed, 22 Apr 2015 05:12:47 GMT
+# Fri, 01 Jul 2016 22:35:22 GMT
 MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
-# Tue, 13 Oct 2015 23:31:50 GMT
-ADD file:9ff85de7a936502e83fadeed82d6f11231ce7e842eea23d73f6f5fb7182f1111 in /
+# Fri, 01 Jul 2016 22:36:35 GMT
+ADD file:a5c79d873c20d685b71d899211c5d58b90c08473604aba82a9d655a58fcd1488 in /
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:35d9d5d11536c0c6843ecd106dc710b5c54b8198aa28710e73dba2cbe555847f`  
-		Last Modified: Wed, 14 Oct 2015 21:34:59 GMT  
-		Size: 72.0 MB (72038766 bytes)
+	-	`sha256:3eaa9b70c44a88d9d4c2bcac5f8af1f7f63e12eae72fd21a029a54ad95a47f50`  
+		Last Modified: Fri, 01 Jul 2016 22:59:57 GMT  
+		Size: 72.0 MB (72038689 bytes)
 
 ## `centos:6.6`
 
