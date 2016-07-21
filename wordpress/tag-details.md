@@ -18,7 +18,7 @@
 ## `wordpress:4.5.3-apache`
 
 ```console
-$ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d56f401d73dee6aaf
+$ docker pull wordpress@sha256:0f73fa5e20b0194c6cffc78143e9b9b966c952b57118be12526edb058726cd92
 ```
 
 -	Platforms:
@@ -28,9 +28,9 @@ $ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.8 MB (169760008 bytes)**  
+-	Total Size: **169.8 MB (169760111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62c34502e1373fa819afaa293cadecdc0af695cbd3216860df471637d9290c18`
+-	Image ID: `sha256:ba0d4f420656196a96f3106b8e22b4e2c00351e48b5218456a8e4833051cc816`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -103,11 +103,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:54:00 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:54:01 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:54:02 GMT
+# Wed, 20 Jul 2016 18:54:38 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:38 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:54:03 GMT
+# Wed, 20 Jul 2016 18:54:39 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -163,14 +163,14 @@ CMD ["apache2-foreground"]
 	-	`sha256:3610af5215668fba7514fcf156520062d1d6f77b20bbd1052bc623d6b465241f`  
 		Last Modified: Thu, 14 Jul 2016 16:54:13 GMT  
 		Size: 7.6 MB (7611910 bytes)
-	-	`sha256:afe5c40fefd1259f758e88e94176421190863325fe815a6e387a9e2610e2eae0`  
-		Last Modified: Thu, 14 Jul 2016 16:54:12 GMT  
-		Size: 2.5 KB (2491 bytes)
+	-	`sha256:417100314774c683d3e675538f264ee2de225e6fb0b99b797a084c260d557782`  
+		Last Modified: Wed, 20 Jul 2016 18:54:50 GMT  
+		Size: 2.6 KB (2594 bytes)
 
 ## `wordpress:4.5-apache`
 
 ```console
-$ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d56f401d73dee6aaf
+$ docker pull wordpress@sha256:0f73fa5e20b0194c6cffc78143e9b9b966c952b57118be12526edb058726cd92
 ```
 
 -	Platforms:
@@ -180,9 +180,9 @@ $ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.8 MB (169760008 bytes)**  
+-	Total Size: **169.8 MB (169760111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62c34502e1373fa819afaa293cadecdc0af695cbd3216860df471637d9290c18`
+-	Image ID: `sha256:ba0d4f420656196a96f3106b8e22b4e2c00351e48b5218456a8e4833051cc816`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -255,11 +255,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:54:00 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:54:01 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:54:02 GMT
+# Wed, 20 Jul 2016 18:54:38 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:38 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:54:03 GMT
+# Wed, 20 Jul 2016 18:54:39 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -315,14 +315,14 @@ CMD ["apache2-foreground"]
 	-	`sha256:3610af5215668fba7514fcf156520062d1d6f77b20bbd1052bc623d6b465241f`  
 		Last Modified: Thu, 14 Jul 2016 16:54:13 GMT  
 		Size: 7.6 MB (7611910 bytes)
-	-	`sha256:afe5c40fefd1259f758e88e94176421190863325fe815a6e387a9e2610e2eae0`  
-		Last Modified: Thu, 14 Jul 2016 16:54:12 GMT  
-		Size: 2.5 KB (2491 bytes)
+	-	`sha256:417100314774c683d3e675538f264ee2de225e6fb0b99b797a084c260d557782`  
+		Last Modified: Wed, 20 Jul 2016 18:54:50 GMT  
+		Size: 2.6 KB (2594 bytes)
 
 ## `wordpress:4-apache`
 
 ```console
-$ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d56f401d73dee6aaf
+$ docker pull wordpress@sha256:0f73fa5e20b0194c6cffc78143e9b9b966c952b57118be12526edb058726cd92
 ```
 
 -	Platforms:
@@ -332,9 +332,9 @@ $ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.8 MB (169760008 bytes)**  
+-	Total Size: **169.8 MB (169760111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62c34502e1373fa819afaa293cadecdc0af695cbd3216860df471637d9290c18`
+-	Image ID: `sha256:ba0d4f420656196a96f3106b8e22b4e2c00351e48b5218456a8e4833051cc816`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -407,11 +407,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:54:00 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:54:01 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:54:02 GMT
+# Wed, 20 Jul 2016 18:54:38 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:38 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:54:03 GMT
+# Wed, 20 Jul 2016 18:54:39 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -467,14 +467,14 @@ CMD ["apache2-foreground"]
 	-	`sha256:3610af5215668fba7514fcf156520062d1d6f77b20bbd1052bc623d6b465241f`  
 		Last Modified: Thu, 14 Jul 2016 16:54:13 GMT  
 		Size: 7.6 MB (7611910 bytes)
-	-	`sha256:afe5c40fefd1259f758e88e94176421190863325fe815a6e387a9e2610e2eae0`  
-		Last Modified: Thu, 14 Jul 2016 16:54:12 GMT  
-		Size: 2.5 KB (2491 bytes)
+	-	`sha256:417100314774c683d3e675538f264ee2de225e6fb0b99b797a084c260d557782`  
+		Last Modified: Wed, 20 Jul 2016 18:54:50 GMT  
+		Size: 2.6 KB (2594 bytes)
 
 ## `wordpress:apache`
 
 ```console
-$ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d56f401d73dee6aaf
+$ docker pull wordpress@sha256:0f73fa5e20b0194c6cffc78143e9b9b966c952b57118be12526edb058726cd92
 ```
 
 -	Platforms:
@@ -484,9 +484,9 @@ $ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.8 MB (169760008 bytes)**  
+-	Total Size: **169.8 MB (169760111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62c34502e1373fa819afaa293cadecdc0af695cbd3216860df471637d9290c18`
+-	Image ID: `sha256:ba0d4f420656196a96f3106b8e22b4e2c00351e48b5218456a8e4833051cc816`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -559,11 +559,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:54:00 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:54:01 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:54:02 GMT
+# Wed, 20 Jul 2016 18:54:38 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:38 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:54:03 GMT
+# Wed, 20 Jul 2016 18:54:39 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -619,14 +619,14 @@ CMD ["apache2-foreground"]
 	-	`sha256:3610af5215668fba7514fcf156520062d1d6f77b20bbd1052bc623d6b465241f`  
 		Last Modified: Thu, 14 Jul 2016 16:54:13 GMT  
 		Size: 7.6 MB (7611910 bytes)
-	-	`sha256:afe5c40fefd1259f758e88e94176421190863325fe815a6e387a9e2610e2eae0`  
-		Last Modified: Thu, 14 Jul 2016 16:54:12 GMT  
-		Size: 2.5 KB (2491 bytes)
+	-	`sha256:417100314774c683d3e675538f264ee2de225e6fb0b99b797a084c260d557782`  
+		Last Modified: Wed, 20 Jul 2016 18:54:50 GMT  
+		Size: 2.6 KB (2594 bytes)
 
 ## `wordpress:4.5.3`
 
 ```console
-$ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d56f401d73dee6aaf
+$ docker pull wordpress@sha256:0f73fa5e20b0194c6cffc78143e9b9b966c952b57118be12526edb058726cd92
 ```
 
 -	Platforms:
@@ -636,9 +636,9 @@ $ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.8 MB (169760008 bytes)**  
+-	Total Size: **169.8 MB (169760111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62c34502e1373fa819afaa293cadecdc0af695cbd3216860df471637d9290c18`
+-	Image ID: `sha256:ba0d4f420656196a96f3106b8e22b4e2c00351e48b5218456a8e4833051cc816`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -711,11 +711,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:54:00 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:54:01 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:54:02 GMT
+# Wed, 20 Jul 2016 18:54:38 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:38 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:54:03 GMT
+# Wed, 20 Jul 2016 18:54:39 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -771,14 +771,14 @@ CMD ["apache2-foreground"]
 	-	`sha256:3610af5215668fba7514fcf156520062d1d6f77b20bbd1052bc623d6b465241f`  
 		Last Modified: Thu, 14 Jul 2016 16:54:13 GMT  
 		Size: 7.6 MB (7611910 bytes)
-	-	`sha256:afe5c40fefd1259f758e88e94176421190863325fe815a6e387a9e2610e2eae0`  
-		Last Modified: Thu, 14 Jul 2016 16:54:12 GMT  
-		Size: 2.5 KB (2491 bytes)
+	-	`sha256:417100314774c683d3e675538f264ee2de225e6fb0b99b797a084c260d557782`  
+		Last Modified: Wed, 20 Jul 2016 18:54:50 GMT  
+		Size: 2.6 KB (2594 bytes)
 
 ## `wordpress:4.5`
 
 ```console
-$ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d56f401d73dee6aaf
+$ docker pull wordpress@sha256:0f73fa5e20b0194c6cffc78143e9b9b966c952b57118be12526edb058726cd92
 ```
 
 -	Platforms:
@@ -788,9 +788,9 @@ $ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.8 MB (169760008 bytes)**  
+-	Total Size: **169.8 MB (169760111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62c34502e1373fa819afaa293cadecdc0af695cbd3216860df471637d9290c18`
+-	Image ID: `sha256:ba0d4f420656196a96f3106b8e22b4e2c00351e48b5218456a8e4833051cc816`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -863,11 +863,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:54:00 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:54:01 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:54:02 GMT
+# Wed, 20 Jul 2016 18:54:38 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:38 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:54:03 GMT
+# Wed, 20 Jul 2016 18:54:39 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -923,14 +923,14 @@ CMD ["apache2-foreground"]
 	-	`sha256:3610af5215668fba7514fcf156520062d1d6f77b20bbd1052bc623d6b465241f`  
 		Last Modified: Thu, 14 Jul 2016 16:54:13 GMT  
 		Size: 7.6 MB (7611910 bytes)
-	-	`sha256:afe5c40fefd1259f758e88e94176421190863325fe815a6e387a9e2610e2eae0`  
-		Last Modified: Thu, 14 Jul 2016 16:54:12 GMT  
-		Size: 2.5 KB (2491 bytes)
+	-	`sha256:417100314774c683d3e675538f264ee2de225e6fb0b99b797a084c260d557782`  
+		Last Modified: Wed, 20 Jul 2016 18:54:50 GMT  
+		Size: 2.6 KB (2594 bytes)
 
 ## `wordpress:4`
 
 ```console
-$ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d56f401d73dee6aaf
+$ docker pull wordpress@sha256:0f73fa5e20b0194c6cffc78143e9b9b966c952b57118be12526edb058726cd92
 ```
 
 -	Platforms:
@@ -940,9 +940,9 @@ $ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.8 MB (169760008 bytes)**  
+-	Total Size: **169.8 MB (169760111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62c34502e1373fa819afaa293cadecdc0af695cbd3216860df471637d9290c18`
+-	Image ID: `sha256:ba0d4f420656196a96f3106b8e22b4e2c00351e48b5218456a8e4833051cc816`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1015,11 +1015,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:54:00 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:54:01 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:54:02 GMT
+# Wed, 20 Jul 2016 18:54:38 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:38 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:54:03 GMT
+# Wed, 20 Jul 2016 18:54:39 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1075,14 +1075,14 @@ CMD ["apache2-foreground"]
 	-	`sha256:3610af5215668fba7514fcf156520062d1d6f77b20bbd1052bc623d6b465241f`  
 		Last Modified: Thu, 14 Jul 2016 16:54:13 GMT  
 		Size: 7.6 MB (7611910 bytes)
-	-	`sha256:afe5c40fefd1259f758e88e94176421190863325fe815a6e387a9e2610e2eae0`  
-		Last Modified: Thu, 14 Jul 2016 16:54:12 GMT  
-		Size: 2.5 KB (2491 bytes)
+	-	`sha256:417100314774c683d3e675538f264ee2de225e6fb0b99b797a084c260d557782`  
+		Last Modified: Wed, 20 Jul 2016 18:54:50 GMT  
+		Size: 2.6 KB (2594 bytes)
 
 ## `wordpress:latest`
 
 ```console
-$ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d56f401d73dee6aaf
+$ docker pull wordpress@sha256:0f73fa5e20b0194c6cffc78143e9b9b966c952b57118be12526edb058726cd92
 ```
 
 -	Platforms:
@@ -1092,9 +1092,9 @@ $ docker pull wordpress@sha256:e47d9f495ec814f2a30e4f7168300f8afbf7ac600ef38c6d5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.8 MB (169760008 bytes)**  
+-	Total Size: **169.8 MB (169760111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62c34502e1373fa819afaa293cadecdc0af695cbd3216860df471637d9290c18`
+-	Image ID: `sha256:ba0d4f420656196a96f3106b8e22b4e2c00351e48b5218456a8e4833051cc816`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1167,11 +1167,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:54:00 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:54:01 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:54:02 GMT
+# Wed, 20 Jul 2016 18:54:38 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:38 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:54:03 GMT
+# Wed, 20 Jul 2016 18:54:39 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1227,14 +1227,14 @@ CMD ["apache2-foreground"]
 	-	`sha256:3610af5215668fba7514fcf156520062d1d6f77b20bbd1052bc623d6b465241f`  
 		Last Modified: Thu, 14 Jul 2016 16:54:13 GMT  
 		Size: 7.6 MB (7611910 bytes)
-	-	`sha256:afe5c40fefd1259f758e88e94176421190863325fe815a6e387a9e2610e2eae0`  
-		Last Modified: Thu, 14 Jul 2016 16:54:12 GMT  
-		Size: 2.5 KB (2491 bytes)
+	-	`sha256:417100314774c683d3e675538f264ee2de225e6fb0b99b797a084c260d557782`  
+		Last Modified: Wed, 20 Jul 2016 18:54:50 GMT  
+		Size: 2.6 KB (2594 bytes)
 
 ## `wordpress:4.5.3-fpm`
 
 ```console
-$ docker pull wordpress@sha256:632f4b443525fe0efa9a47e95bd8ad375605ab56c919c9c9d68484bc8434d25e
+$ docker pull wordpress@sha256:5e6fb4bfdc387d08efcf308d0ba9f7a131c99e912f9191e07f3dd33d9a8799bb
 ```
 
 -	Platforms:
@@ -1244,9 +1244,9 @@ $ docker pull wordpress@sha256:632f4b443525fe0efa9a47e95bd8ad375605ab56c919c9c9d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.9 MB (159875677 bytes)**  
+-	Total Size: **159.9 MB (159875782 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0ec88c0c535b0a8e5e1b86d68ce3bb82cb1c585fce5a7e1cb4bc97c7de68761`
+-	Image ID: `sha256:3d96d372177dc02a635bfd913c79e95ef9c41069ce1ed8e6962b1d4c45feef15`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1301,11 +1301,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:57:17 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:57:18 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:57:18 GMT
+# Wed, 20 Jul 2016 18:54:41 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:41 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:57:19 GMT
+# Wed, 20 Jul 2016 18:54:42 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1346,14 +1346,14 @@ CMD ["php-fpm"]
 	-	`sha256:927c7c11288db5eb0ae9a012fbdae92997661c3c36bd8ec98ae098881b8c251a`  
 		Last Modified: Thu, 14 Jul 2016 16:57:30 GMT  
 		Size: 7.6 MB (7611904 bytes)
-	-	`sha256:333cf6e36e1a1741bb81f79ed9ded8640ef53d1a3b2a7f4b22d0c9fb9d4af333`  
-		Last Modified: Thu, 14 Jul 2016 16:57:30 GMT  
-		Size: 2.5 KB (2490 bytes)
+	-	`sha256:5d7c01f3411e07dead19a58f25a1bfd1208cb74035989f3e8ec8c14cc627ccbf`  
+		Last Modified: Wed, 20 Jul 2016 18:56:12 GMT  
+		Size: 2.6 KB (2595 bytes)
 
 ## `wordpress:4.5-fpm`
 
 ```console
-$ docker pull wordpress@sha256:632f4b443525fe0efa9a47e95bd8ad375605ab56c919c9c9d68484bc8434d25e
+$ docker pull wordpress@sha256:5e6fb4bfdc387d08efcf308d0ba9f7a131c99e912f9191e07f3dd33d9a8799bb
 ```
 
 -	Platforms:
@@ -1363,9 +1363,9 @@ $ docker pull wordpress@sha256:632f4b443525fe0efa9a47e95bd8ad375605ab56c919c9c9d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.9 MB (159875677 bytes)**  
+-	Total Size: **159.9 MB (159875782 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0ec88c0c535b0a8e5e1b86d68ce3bb82cb1c585fce5a7e1cb4bc97c7de68761`
+-	Image ID: `sha256:3d96d372177dc02a635bfd913c79e95ef9c41069ce1ed8e6962b1d4c45feef15`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1420,11 +1420,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:57:17 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:57:18 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:57:18 GMT
+# Wed, 20 Jul 2016 18:54:41 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:41 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:57:19 GMT
+# Wed, 20 Jul 2016 18:54:42 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1465,14 +1465,14 @@ CMD ["php-fpm"]
 	-	`sha256:927c7c11288db5eb0ae9a012fbdae92997661c3c36bd8ec98ae098881b8c251a`  
 		Last Modified: Thu, 14 Jul 2016 16:57:30 GMT  
 		Size: 7.6 MB (7611904 bytes)
-	-	`sha256:333cf6e36e1a1741bb81f79ed9ded8640ef53d1a3b2a7f4b22d0c9fb9d4af333`  
-		Last Modified: Thu, 14 Jul 2016 16:57:30 GMT  
-		Size: 2.5 KB (2490 bytes)
+	-	`sha256:5d7c01f3411e07dead19a58f25a1bfd1208cb74035989f3e8ec8c14cc627ccbf`  
+		Last Modified: Wed, 20 Jul 2016 18:56:12 GMT  
+		Size: 2.6 KB (2595 bytes)
 
 ## `wordpress:4-fpm`
 
 ```console
-$ docker pull wordpress@sha256:632f4b443525fe0efa9a47e95bd8ad375605ab56c919c9c9d68484bc8434d25e
+$ docker pull wordpress@sha256:5e6fb4bfdc387d08efcf308d0ba9f7a131c99e912f9191e07f3dd33d9a8799bb
 ```
 
 -	Platforms:
@@ -1482,9 +1482,9 @@ $ docker pull wordpress@sha256:632f4b443525fe0efa9a47e95bd8ad375605ab56c919c9c9d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.9 MB (159875677 bytes)**  
+-	Total Size: **159.9 MB (159875782 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0ec88c0c535b0a8e5e1b86d68ce3bb82cb1c585fce5a7e1cb4bc97c7de68761`
+-	Image ID: `sha256:3d96d372177dc02a635bfd913c79e95ef9c41069ce1ed8e6962b1d4c45feef15`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1539,11 +1539,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:57:17 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:57:18 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:57:18 GMT
+# Wed, 20 Jul 2016 18:54:41 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:41 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:57:19 GMT
+# Wed, 20 Jul 2016 18:54:42 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1584,14 +1584,14 @@ CMD ["php-fpm"]
 	-	`sha256:927c7c11288db5eb0ae9a012fbdae92997661c3c36bd8ec98ae098881b8c251a`  
 		Last Modified: Thu, 14 Jul 2016 16:57:30 GMT  
 		Size: 7.6 MB (7611904 bytes)
-	-	`sha256:333cf6e36e1a1741bb81f79ed9ded8640ef53d1a3b2a7f4b22d0c9fb9d4af333`  
-		Last Modified: Thu, 14 Jul 2016 16:57:30 GMT  
-		Size: 2.5 KB (2490 bytes)
+	-	`sha256:5d7c01f3411e07dead19a58f25a1bfd1208cb74035989f3e8ec8c14cc627ccbf`  
+		Last Modified: Wed, 20 Jul 2016 18:56:12 GMT  
+		Size: 2.6 KB (2595 bytes)
 
 ## `wordpress:fpm`
 
 ```console
-$ docker pull wordpress@sha256:632f4b443525fe0efa9a47e95bd8ad375605ab56c919c9c9d68484bc8434d25e
+$ docker pull wordpress@sha256:5e6fb4bfdc387d08efcf308d0ba9f7a131c99e912f9191e07f3dd33d9a8799bb
 ```
 
 -	Platforms:
@@ -1601,9 +1601,9 @@ $ docker pull wordpress@sha256:632f4b443525fe0efa9a47e95bd8ad375605ab56c919c9c9d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.9 MB (159875677 bytes)**  
+-	Total Size: **159.9 MB (159875782 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0ec88c0c535b0a8e5e1b86d68ce3bb82cb1c585fce5a7e1cb4bc97c7de68761`
+-	Image ID: `sha256:3d96d372177dc02a635bfd913c79e95ef9c41069ce1ed8e6962b1d4c45feef15`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1658,11 +1658,11 @@ ENV WORDPRESS_VERSION=4.5.3
 ENV WORDPRESS_SHA1=835b68748dae5a9d31c059313cd0150f03a49269
 # Thu, 14 Jul 2016 16:57:17 GMT
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - 	&& tar -xzf wordpress.tar.gz -C /usr/src/ 	&& rm wordpress.tar.gz 	&& chown -R www-data:www-data /usr/src/wordpress
-# Thu, 14 Jul 2016 16:57:18 GMT
-COPY file:28ccaf78edbf6e7811305e5409bbaa660f9992cad70c071c67cd040bfcb9057e in /entrypoint.sh
-# Thu, 14 Jul 2016 16:57:18 GMT
+# Wed, 20 Jul 2016 18:54:41 GMT
+COPY file:2fd25399c5e019f7e3a27e0e13bd6c76f8fa6869aadbcbe1c7871afc4814d7ff in /entrypoint.sh
+# Wed, 20 Jul 2016 18:54:41 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:57:19 GMT
+# Wed, 20 Jul 2016 18:54:42 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1703,6 +1703,6 @@ CMD ["php-fpm"]
 	-	`sha256:927c7c11288db5eb0ae9a012fbdae92997661c3c36bd8ec98ae098881b8c251a`  
 		Last Modified: Thu, 14 Jul 2016 16:57:30 GMT  
 		Size: 7.6 MB (7611904 bytes)
-	-	`sha256:333cf6e36e1a1741bb81f79ed9ded8640ef53d1a3b2a7f4b22d0c9fb9d4af333`  
-		Last Modified: Thu, 14 Jul 2016 16:57:30 GMT  
-		Size: 2.5 KB (2490 bytes)
+	-	`sha256:5d7c01f3411e07dead19a58f25a1bfd1208cb74035989f3e8ec8c14cc627ccbf`  
+		Last Modified: Wed, 20 Jul 2016 18:56:12 GMT  
+		Size: 2.6 KB (2595 bytes)

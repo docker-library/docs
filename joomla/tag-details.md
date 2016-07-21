@@ -2,43 +2,43 @@
 
 # Tags of `joomla`
 
--	[`joomla:3.5.1-apache`](#joomla351-apache)
--	[`joomla:3.5.1`](#joomla351)
--	[`joomla:3.5-apache`](#joomla35-apache)
--	[`joomla:3.5`](#joomla35)
+-	[`joomla:3.6.0-apache`](#joomla360-apache)
+-	[`joomla:3.6.0`](#joomla360)
+-	[`joomla:3.6-apache`](#joomla36-apache)
+-	[`joomla:3.6`](#joomla36)
 -	[`joomla:3-apache`](#joomla3-apache)
 -	[`joomla:apache`](#joomlaapache)
 -	[`joomla:3`](#joomla3)
 -	[`joomla:latest`](#joomlalatest)
--	[`joomla:3.5.1-apache-php7`](#joomla351-apache-php7)
--	[`joomla:3.5-apache-php7`](#joomla35-apache-php7)
+-	[`joomla:3.6.0-apache-php7`](#joomla360-apache-php7)
+-	[`joomla:3.6-apache-php7`](#joomla36-apache-php7)
 -	[`joomla:3-apache-php7`](#joomla3-apache-php7)
 -	[`joomla:apache-php7`](#joomlaapache-php7)
--	[`joomla:3.5.1-fpm`](#joomla351-fpm)
--	[`joomla:3.5-fpm`](#joomla35-fpm)
+-	[`joomla:3.6.0-fpm`](#joomla360-fpm)
+-	[`joomla:3.6-fpm`](#joomla36-fpm)
 -	[`joomla:3-fpm`](#joomla3-fpm)
 -	[`joomla:fpm`](#joomlafpm)
--	[`joomla:3.5.1-fpm-php7`](#joomla351-fpm-php7)
--	[`joomla:3.5-fpm-php7`](#joomla35-fpm-php7)
+-	[`joomla:3.6.0-fpm-php7`](#joomla360-fpm-php7)
+-	[`joomla:3.6-fpm-php7`](#joomla36-fpm-php7)
 -	[`joomla:3-fpm-php7`](#joomla3-fpm-php7)
 -	[`joomla:fpm-php7`](#joomlafpm-php7)
 
-## `joomla:3.5.1-apache`
+## `joomla:3.6.0-apache`
 
 ```console
-$ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da7424217a49eab2fdb7
+$ docker pull joomla@sha256:7416a1ab740ed5b2ad84e3fa6c47216a99b03dd0b086e2888f11aa6583f4c6ae
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `joomla:3.5.1-apache` - linux; amd64
+### `joomla:3.6.0-apache` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **170.8 MB (170808990 bytes)**  
+-	Total Size: **170.9 MB (170907295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d10959baf1b527603ad68ce38d096a91ce4d16a0c433ac85d6876fdbe249abe1`
+-	Image ID: `sha256:c0046be8bae5a35bc9a21307e88cc1a8e51579bf9b7c529456b6efe621a499d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -107,19 +107,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:38:08 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:38:09 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:38:10 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:38:18 GMT
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:43 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:38:19 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:38:20 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -172,32 +172,32 @@ CMD ["apache2-foreground"]
 	-	`sha256:66085e52c44c4294833511b3068201ae08ae3891024566c7b7b27ee7952fb39e`  
 		Last Modified: Thu, 14 Jul 2016 16:38:32 GMT  
 		Size: 265.1 KB (265081 bytes)
-	-	`sha256:96554e58368bf5f32941fdca9c47a30ef1303c30d6a505c6231225652d1d7854`  
-		Last Modified: Thu, 14 Jul 2016 16:38:34 GMT  
-		Size: 8.4 MB (8380276 bytes)
-	-	`sha256:910d1b0b08266a0903decd8ddea110edd696a32ecfa0150656fe558437040112`  
-		Last Modified: Thu, 14 Jul 2016 16:38:31 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:9d6cda05c984b4103cc9b356ff614ce592ac35de888e6e112231046efd63d3b8`  
-		Last Modified: Thu, 14 Jul 2016 16:38:30 GMT  
-		Size: 605.0 B
+	-	`sha256:01a820653c2d0ce37b09cea5d53690ad5fd49cebbbf8a6cddec669d12f2cfb49`  
+		Last Modified: Thu, 21 Jul 2016 17:10:39 GMT  
+		Size: 8.5 MB (8478581 bytes)
+	-	`sha256:73e43da2300d0a76a0467a3d6aaa928a04bb4b34fd28baec4821e75e2790fe61`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:be32fea93baad8b018a4fbc82497aa282af56fa92d7a9207c2c0e0df57cf7871`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 606.0 B
 
-## `joomla:3.5.1`
+## `joomla:3.6.0`
 
 ```console
-$ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da7424217a49eab2fdb7
+$ docker pull joomla@sha256:7416a1ab740ed5b2ad84e3fa6c47216a99b03dd0b086e2888f11aa6583f4c6ae
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `joomla:3.5.1` - linux; amd64
+### `joomla:3.6.0` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **170.8 MB (170808990 bytes)**  
+-	Total Size: **170.9 MB (170907295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d10959baf1b527603ad68ce38d096a91ce4d16a0c433ac85d6876fdbe249abe1`
+-	Image ID: `sha256:c0046be8bae5a35bc9a21307e88cc1a8e51579bf9b7c529456b6efe621a499d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -266,19 +266,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:38:08 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:38:09 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:38:10 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:38:18 GMT
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:43 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:38:19 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:38:20 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -331,32 +331,32 @@ CMD ["apache2-foreground"]
 	-	`sha256:66085e52c44c4294833511b3068201ae08ae3891024566c7b7b27ee7952fb39e`  
 		Last Modified: Thu, 14 Jul 2016 16:38:32 GMT  
 		Size: 265.1 KB (265081 bytes)
-	-	`sha256:96554e58368bf5f32941fdca9c47a30ef1303c30d6a505c6231225652d1d7854`  
-		Last Modified: Thu, 14 Jul 2016 16:38:34 GMT  
-		Size: 8.4 MB (8380276 bytes)
-	-	`sha256:910d1b0b08266a0903decd8ddea110edd696a32ecfa0150656fe558437040112`  
-		Last Modified: Thu, 14 Jul 2016 16:38:31 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:9d6cda05c984b4103cc9b356ff614ce592ac35de888e6e112231046efd63d3b8`  
-		Last Modified: Thu, 14 Jul 2016 16:38:30 GMT  
-		Size: 605.0 B
+	-	`sha256:01a820653c2d0ce37b09cea5d53690ad5fd49cebbbf8a6cddec669d12f2cfb49`  
+		Last Modified: Thu, 21 Jul 2016 17:10:39 GMT  
+		Size: 8.5 MB (8478581 bytes)
+	-	`sha256:73e43da2300d0a76a0467a3d6aaa928a04bb4b34fd28baec4821e75e2790fe61`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:be32fea93baad8b018a4fbc82497aa282af56fa92d7a9207c2c0e0df57cf7871`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 606.0 B
 
-## `joomla:3.5-apache`
+## `joomla:3.6-apache`
 
 ```console
-$ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da7424217a49eab2fdb7
+$ docker pull joomla@sha256:7416a1ab740ed5b2ad84e3fa6c47216a99b03dd0b086e2888f11aa6583f4c6ae
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `joomla:3.5-apache` - linux; amd64
+### `joomla:3.6-apache` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **170.8 MB (170808990 bytes)**  
+-	Total Size: **170.9 MB (170907295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d10959baf1b527603ad68ce38d096a91ce4d16a0c433ac85d6876fdbe249abe1`
+-	Image ID: `sha256:c0046be8bae5a35bc9a21307e88cc1a8e51579bf9b7c529456b6efe621a499d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -425,19 +425,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:38:08 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:38:09 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:38:10 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:38:18 GMT
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:43 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:38:19 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:38:20 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -490,32 +490,32 @@ CMD ["apache2-foreground"]
 	-	`sha256:66085e52c44c4294833511b3068201ae08ae3891024566c7b7b27ee7952fb39e`  
 		Last Modified: Thu, 14 Jul 2016 16:38:32 GMT  
 		Size: 265.1 KB (265081 bytes)
-	-	`sha256:96554e58368bf5f32941fdca9c47a30ef1303c30d6a505c6231225652d1d7854`  
-		Last Modified: Thu, 14 Jul 2016 16:38:34 GMT  
-		Size: 8.4 MB (8380276 bytes)
-	-	`sha256:910d1b0b08266a0903decd8ddea110edd696a32ecfa0150656fe558437040112`  
-		Last Modified: Thu, 14 Jul 2016 16:38:31 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:9d6cda05c984b4103cc9b356ff614ce592ac35de888e6e112231046efd63d3b8`  
-		Last Modified: Thu, 14 Jul 2016 16:38:30 GMT  
-		Size: 605.0 B
+	-	`sha256:01a820653c2d0ce37b09cea5d53690ad5fd49cebbbf8a6cddec669d12f2cfb49`  
+		Last Modified: Thu, 21 Jul 2016 17:10:39 GMT  
+		Size: 8.5 MB (8478581 bytes)
+	-	`sha256:73e43da2300d0a76a0467a3d6aaa928a04bb4b34fd28baec4821e75e2790fe61`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:be32fea93baad8b018a4fbc82497aa282af56fa92d7a9207c2c0e0df57cf7871`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 606.0 B
 
-## `joomla:3.5`
+## `joomla:3.6`
 
 ```console
-$ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da7424217a49eab2fdb7
+$ docker pull joomla@sha256:7416a1ab740ed5b2ad84e3fa6c47216a99b03dd0b086e2888f11aa6583f4c6ae
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `joomla:3.5` - linux; amd64
+### `joomla:3.6` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **170.8 MB (170808990 bytes)**  
+-	Total Size: **170.9 MB (170907295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d10959baf1b527603ad68ce38d096a91ce4d16a0c433ac85d6876fdbe249abe1`
+-	Image ID: `sha256:c0046be8bae5a35bc9a21307e88cc1a8e51579bf9b7c529456b6efe621a499d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -584,19 +584,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:38:08 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:38:09 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:38:10 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:38:18 GMT
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:43 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:38:19 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:38:20 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -649,20 +649,20 @@ CMD ["apache2-foreground"]
 	-	`sha256:66085e52c44c4294833511b3068201ae08ae3891024566c7b7b27ee7952fb39e`  
 		Last Modified: Thu, 14 Jul 2016 16:38:32 GMT  
 		Size: 265.1 KB (265081 bytes)
-	-	`sha256:96554e58368bf5f32941fdca9c47a30ef1303c30d6a505c6231225652d1d7854`  
-		Last Modified: Thu, 14 Jul 2016 16:38:34 GMT  
-		Size: 8.4 MB (8380276 bytes)
-	-	`sha256:910d1b0b08266a0903decd8ddea110edd696a32ecfa0150656fe558437040112`  
-		Last Modified: Thu, 14 Jul 2016 16:38:31 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:9d6cda05c984b4103cc9b356ff614ce592ac35de888e6e112231046efd63d3b8`  
-		Last Modified: Thu, 14 Jul 2016 16:38:30 GMT  
-		Size: 605.0 B
+	-	`sha256:01a820653c2d0ce37b09cea5d53690ad5fd49cebbbf8a6cddec669d12f2cfb49`  
+		Last Modified: Thu, 21 Jul 2016 17:10:39 GMT  
+		Size: 8.5 MB (8478581 bytes)
+	-	`sha256:73e43da2300d0a76a0467a3d6aaa928a04bb4b34fd28baec4821e75e2790fe61`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:be32fea93baad8b018a4fbc82497aa282af56fa92d7a9207c2c0e0df57cf7871`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 606.0 B
 
 ## `joomla:3-apache`
 
 ```console
-$ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da7424217a49eab2fdb7
+$ docker pull joomla@sha256:7416a1ab740ed5b2ad84e3fa6c47216a99b03dd0b086e2888f11aa6583f4c6ae
 ```
 
 -	Platforms:
@@ -672,9 +672,9 @@ $ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da742421
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **170.8 MB (170808990 bytes)**  
+-	Total Size: **170.9 MB (170907295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d10959baf1b527603ad68ce38d096a91ce4d16a0c433ac85d6876fdbe249abe1`
+-	Image ID: `sha256:c0046be8bae5a35bc9a21307e88cc1a8e51579bf9b7c529456b6efe621a499d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -743,19 +743,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:38:08 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:38:09 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:38:10 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:38:18 GMT
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:43 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:38:19 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:38:20 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -808,20 +808,20 @@ CMD ["apache2-foreground"]
 	-	`sha256:66085e52c44c4294833511b3068201ae08ae3891024566c7b7b27ee7952fb39e`  
 		Last Modified: Thu, 14 Jul 2016 16:38:32 GMT  
 		Size: 265.1 KB (265081 bytes)
-	-	`sha256:96554e58368bf5f32941fdca9c47a30ef1303c30d6a505c6231225652d1d7854`  
-		Last Modified: Thu, 14 Jul 2016 16:38:34 GMT  
-		Size: 8.4 MB (8380276 bytes)
-	-	`sha256:910d1b0b08266a0903decd8ddea110edd696a32ecfa0150656fe558437040112`  
-		Last Modified: Thu, 14 Jul 2016 16:38:31 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:9d6cda05c984b4103cc9b356ff614ce592ac35de888e6e112231046efd63d3b8`  
-		Last Modified: Thu, 14 Jul 2016 16:38:30 GMT  
-		Size: 605.0 B
+	-	`sha256:01a820653c2d0ce37b09cea5d53690ad5fd49cebbbf8a6cddec669d12f2cfb49`  
+		Last Modified: Thu, 21 Jul 2016 17:10:39 GMT  
+		Size: 8.5 MB (8478581 bytes)
+	-	`sha256:73e43da2300d0a76a0467a3d6aaa928a04bb4b34fd28baec4821e75e2790fe61`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:be32fea93baad8b018a4fbc82497aa282af56fa92d7a9207c2c0e0df57cf7871`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 606.0 B
 
 ## `joomla:apache`
 
 ```console
-$ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da7424217a49eab2fdb7
+$ docker pull joomla@sha256:7416a1ab740ed5b2ad84e3fa6c47216a99b03dd0b086e2888f11aa6583f4c6ae
 ```
 
 -	Platforms:
@@ -831,9 +831,9 @@ $ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da742421
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **170.8 MB (170808990 bytes)**  
+-	Total Size: **170.9 MB (170907295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d10959baf1b527603ad68ce38d096a91ce4d16a0c433ac85d6876fdbe249abe1`
+-	Image ID: `sha256:c0046be8bae5a35bc9a21307e88cc1a8e51579bf9b7c529456b6efe621a499d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -902,19 +902,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:38:08 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:38:09 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:38:10 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:38:18 GMT
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:43 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:38:19 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:38:20 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -967,20 +967,20 @@ CMD ["apache2-foreground"]
 	-	`sha256:66085e52c44c4294833511b3068201ae08ae3891024566c7b7b27ee7952fb39e`  
 		Last Modified: Thu, 14 Jul 2016 16:38:32 GMT  
 		Size: 265.1 KB (265081 bytes)
-	-	`sha256:96554e58368bf5f32941fdca9c47a30ef1303c30d6a505c6231225652d1d7854`  
-		Last Modified: Thu, 14 Jul 2016 16:38:34 GMT  
-		Size: 8.4 MB (8380276 bytes)
-	-	`sha256:910d1b0b08266a0903decd8ddea110edd696a32ecfa0150656fe558437040112`  
-		Last Modified: Thu, 14 Jul 2016 16:38:31 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:9d6cda05c984b4103cc9b356ff614ce592ac35de888e6e112231046efd63d3b8`  
-		Last Modified: Thu, 14 Jul 2016 16:38:30 GMT  
-		Size: 605.0 B
+	-	`sha256:01a820653c2d0ce37b09cea5d53690ad5fd49cebbbf8a6cddec669d12f2cfb49`  
+		Last Modified: Thu, 21 Jul 2016 17:10:39 GMT  
+		Size: 8.5 MB (8478581 bytes)
+	-	`sha256:73e43da2300d0a76a0467a3d6aaa928a04bb4b34fd28baec4821e75e2790fe61`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:be32fea93baad8b018a4fbc82497aa282af56fa92d7a9207c2c0e0df57cf7871`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 606.0 B
 
 ## `joomla:3`
 
 ```console
-$ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da7424217a49eab2fdb7
+$ docker pull joomla@sha256:7416a1ab740ed5b2ad84e3fa6c47216a99b03dd0b086e2888f11aa6583f4c6ae
 ```
 
 -	Platforms:
@@ -990,9 +990,9 @@ $ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da742421
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **170.8 MB (170808990 bytes)**  
+-	Total Size: **170.9 MB (170907295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d10959baf1b527603ad68ce38d096a91ce4d16a0c433ac85d6876fdbe249abe1`
+-	Image ID: `sha256:c0046be8bae5a35bc9a21307e88cc1a8e51579bf9b7c529456b6efe621a499d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1061,19 +1061,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:38:08 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:38:09 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:38:10 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:38:18 GMT
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:43 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:38:19 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:38:20 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1126,20 +1126,20 @@ CMD ["apache2-foreground"]
 	-	`sha256:66085e52c44c4294833511b3068201ae08ae3891024566c7b7b27ee7952fb39e`  
 		Last Modified: Thu, 14 Jul 2016 16:38:32 GMT  
 		Size: 265.1 KB (265081 bytes)
-	-	`sha256:96554e58368bf5f32941fdca9c47a30ef1303c30d6a505c6231225652d1d7854`  
-		Last Modified: Thu, 14 Jul 2016 16:38:34 GMT  
-		Size: 8.4 MB (8380276 bytes)
-	-	`sha256:910d1b0b08266a0903decd8ddea110edd696a32ecfa0150656fe558437040112`  
-		Last Modified: Thu, 14 Jul 2016 16:38:31 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:9d6cda05c984b4103cc9b356ff614ce592ac35de888e6e112231046efd63d3b8`  
-		Last Modified: Thu, 14 Jul 2016 16:38:30 GMT  
-		Size: 605.0 B
+	-	`sha256:01a820653c2d0ce37b09cea5d53690ad5fd49cebbbf8a6cddec669d12f2cfb49`  
+		Last Modified: Thu, 21 Jul 2016 17:10:39 GMT  
+		Size: 8.5 MB (8478581 bytes)
+	-	`sha256:73e43da2300d0a76a0467a3d6aaa928a04bb4b34fd28baec4821e75e2790fe61`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:be32fea93baad8b018a4fbc82497aa282af56fa92d7a9207c2c0e0df57cf7871`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 606.0 B
 
 ## `joomla:latest`
 
 ```console
-$ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da7424217a49eab2fdb7
+$ docker pull joomla@sha256:7416a1ab740ed5b2ad84e3fa6c47216a99b03dd0b086e2888f11aa6583f4c6ae
 ```
 
 -	Platforms:
@@ -1149,9 +1149,9 @@ $ docker pull joomla@sha256:f34d151650288d36d6d83e78c80c906c43c80e166207da742421
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **170.8 MB (170808990 bytes)**  
+-	Total Size: **170.9 MB (170907295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d10959baf1b527603ad68ce38d096a91ce4d16a0c433ac85d6876fdbe249abe1`
+-	Image ID: `sha256:c0046be8bae5a35bc9a21307e88cc1a8e51579bf9b7c529456b6efe621a499d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1220,19 +1220,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:38:08 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:38:09 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:38:10 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:38:18 GMT
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:34 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:43 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:38:19 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:38:20 GMT
+# Thu, 21 Jul 2016 17:09:44 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:38:21 GMT
+# Thu, 21 Jul 2016 17:09:45 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1285,32 +1285,32 @@ CMD ["apache2-foreground"]
 	-	`sha256:66085e52c44c4294833511b3068201ae08ae3891024566c7b7b27ee7952fb39e`  
 		Last Modified: Thu, 14 Jul 2016 16:38:32 GMT  
 		Size: 265.1 KB (265081 bytes)
-	-	`sha256:96554e58368bf5f32941fdca9c47a30ef1303c30d6a505c6231225652d1d7854`  
-		Last Modified: Thu, 14 Jul 2016 16:38:34 GMT  
-		Size: 8.4 MB (8380276 bytes)
-	-	`sha256:910d1b0b08266a0903decd8ddea110edd696a32ecfa0150656fe558437040112`  
-		Last Modified: Thu, 14 Jul 2016 16:38:31 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:9d6cda05c984b4103cc9b356ff614ce592ac35de888e6e112231046efd63d3b8`  
-		Last Modified: Thu, 14 Jul 2016 16:38:30 GMT  
-		Size: 605.0 B
+	-	`sha256:01a820653c2d0ce37b09cea5d53690ad5fd49cebbbf8a6cddec669d12f2cfb49`  
+		Last Modified: Thu, 21 Jul 2016 17:10:39 GMT  
+		Size: 8.5 MB (8478581 bytes)
+	-	`sha256:73e43da2300d0a76a0467a3d6aaa928a04bb4b34fd28baec4821e75e2790fe61`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:be32fea93baad8b018a4fbc82497aa282af56fa92d7a9207c2c0e0df57cf7871`  
+		Last Modified: Thu, 21 Jul 2016 17:10:35 GMT  
+		Size: 606.0 B
 
-## `joomla:3.5.1-apache-php7`
+## `joomla:3.6.0-apache-php7`
 
 ```console
-$ docker pull joomla@sha256:5fdafe4d3b8bfdc933c51c133949780d1184538cc204ffed3a21b8c151d84076
+$ docker pull joomla@sha256:4643acf8db963e975fdeef1ab893d27163e98d5a0ff35047ac55c2301ecb263a
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `joomla:3.5.1-apache-php7` - linux; amd64
+### `joomla:3.6.0-apache-php7` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.4 MB (174402972 bytes)**  
+-	Total Size: **174.5 MB (174501260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:446fd4ef533ef9bee19696ded0e6ec2aaca5eb653e6eb794360621a90654e1b0`
+-	Image ID: `sha256:78f8f37bc6fcce0e062b3b202fac19215033b35117ff6a4cd786c0331bebfa90`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1379,19 +1379,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:46:37 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:46:38 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:46:38 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:46:47 GMT
+# Thu, 21 Jul 2016 17:09:46 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:47 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:55 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:46:48 GMT
+# Thu, 21 Jul 2016 17:09:55 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:46:49 GMT
+# Thu, 21 Jul 2016 17:09:56 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:46:50 GMT
+# Thu, 21 Jul 2016 17:09:57 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:46:50 GMT
+# Thu, 21 Jul 2016 17:09:57 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1444,32 +1444,32 @@ CMD ["apache2-foreground"]
 	-	`sha256:ad55df8ddc8764ac0366a57120169bb8b2dc233d2adfaf9ce0c7702e9b4a1d85`  
 		Last Modified: Thu, 14 Jul 2016 16:46:59 GMT  
 		Size: 257.3 KB (257338 bytes)
-	-	`sha256:cd2aedc42ed6cf40a2caa16dad5a8b85218944cf05ce8123267ed885b95007cf`  
-		Last Modified: Thu, 14 Jul 2016 16:47:02 GMT  
-		Size: 8.4 MB (8380286 bytes)
-	-	`sha256:db2e9e2060ff65cb2fe11c7a61180f93cabee9f56648f95c9b94c4696c7eb3f0`  
-		Last Modified: Thu, 14 Jul 2016 16:46:59 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:1bd5019175181d9c9943ff3644cc3cf430910e5f7d1cf3aa602a4dd4b053ec67`  
-		Last Modified: Thu, 14 Jul 2016 16:46:58 GMT  
+	-	`sha256:2faab33880d5f5594fd982bb83e1bd91e56ed47184373b1c4b33c71b8651e31a`  
+		Last Modified: Thu, 21 Jul 2016 17:12:04 GMT  
+		Size: 8.5 MB (8478575 bytes)
+	-	`sha256:2e2f04a3665cc33db5c48c8741672eaaf194669cb43ab9c52ba5ce53f61e6694`  
+		Last Modified: Thu, 21 Jul 2016 17:12:01 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:427586fe06d50dfccc165860bda8ba765774a06ff49603c5feffdf71c98497a6`  
+		Last Modified: Thu, 21 Jul 2016 17:12:01 GMT  
 		Size: 604.0 B
 
-## `joomla:3.5-apache-php7`
+## `joomla:3.6-apache-php7`
 
 ```console
-$ docker pull joomla@sha256:5fdafe4d3b8bfdc933c51c133949780d1184538cc204ffed3a21b8c151d84076
+$ docker pull joomla@sha256:4643acf8db963e975fdeef1ab893d27163e98d5a0ff35047ac55c2301ecb263a
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `joomla:3.5-apache-php7` - linux; amd64
+### `joomla:3.6-apache-php7` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.4 MB (174402972 bytes)**  
+-	Total Size: **174.5 MB (174501260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:446fd4ef533ef9bee19696ded0e6ec2aaca5eb653e6eb794360621a90654e1b0`
+-	Image ID: `sha256:78f8f37bc6fcce0e062b3b202fac19215033b35117ff6a4cd786c0331bebfa90`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1538,19 +1538,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:46:37 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:46:38 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:46:38 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:46:47 GMT
+# Thu, 21 Jul 2016 17:09:46 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:47 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:55 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:46:48 GMT
+# Thu, 21 Jul 2016 17:09:55 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:46:49 GMT
+# Thu, 21 Jul 2016 17:09:56 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:46:50 GMT
+# Thu, 21 Jul 2016 17:09:57 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:46:50 GMT
+# Thu, 21 Jul 2016 17:09:57 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1603,20 +1603,20 @@ CMD ["apache2-foreground"]
 	-	`sha256:ad55df8ddc8764ac0366a57120169bb8b2dc233d2adfaf9ce0c7702e9b4a1d85`  
 		Last Modified: Thu, 14 Jul 2016 16:46:59 GMT  
 		Size: 257.3 KB (257338 bytes)
-	-	`sha256:cd2aedc42ed6cf40a2caa16dad5a8b85218944cf05ce8123267ed885b95007cf`  
-		Last Modified: Thu, 14 Jul 2016 16:47:02 GMT  
-		Size: 8.4 MB (8380286 bytes)
-	-	`sha256:db2e9e2060ff65cb2fe11c7a61180f93cabee9f56648f95c9b94c4696c7eb3f0`  
-		Last Modified: Thu, 14 Jul 2016 16:46:59 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:1bd5019175181d9c9943ff3644cc3cf430910e5f7d1cf3aa602a4dd4b053ec67`  
-		Last Modified: Thu, 14 Jul 2016 16:46:58 GMT  
+	-	`sha256:2faab33880d5f5594fd982bb83e1bd91e56ed47184373b1c4b33c71b8651e31a`  
+		Last Modified: Thu, 21 Jul 2016 17:12:04 GMT  
+		Size: 8.5 MB (8478575 bytes)
+	-	`sha256:2e2f04a3665cc33db5c48c8741672eaaf194669cb43ab9c52ba5ce53f61e6694`  
+		Last Modified: Thu, 21 Jul 2016 17:12:01 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:427586fe06d50dfccc165860bda8ba765774a06ff49603c5feffdf71c98497a6`  
+		Last Modified: Thu, 21 Jul 2016 17:12:01 GMT  
 		Size: 604.0 B
 
 ## `joomla:3-apache-php7`
 
 ```console
-$ docker pull joomla@sha256:5fdafe4d3b8bfdc933c51c133949780d1184538cc204ffed3a21b8c151d84076
+$ docker pull joomla@sha256:4643acf8db963e975fdeef1ab893d27163e98d5a0ff35047ac55c2301ecb263a
 ```
 
 -	Platforms:
@@ -1626,9 +1626,9 @@ $ docker pull joomla@sha256:5fdafe4d3b8bfdc933c51c133949780d1184538cc204ffed3a21
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.4 MB (174402972 bytes)**  
+-	Total Size: **174.5 MB (174501260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:446fd4ef533ef9bee19696ded0e6ec2aaca5eb653e6eb794360621a90654e1b0`
+-	Image ID: `sha256:78f8f37bc6fcce0e062b3b202fac19215033b35117ff6a4cd786c0331bebfa90`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1697,19 +1697,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:46:37 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:46:38 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:46:38 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:46:47 GMT
+# Thu, 21 Jul 2016 17:09:46 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:47 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:55 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:46:48 GMT
+# Thu, 21 Jul 2016 17:09:55 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:46:49 GMT
+# Thu, 21 Jul 2016 17:09:56 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:46:50 GMT
+# Thu, 21 Jul 2016 17:09:57 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:46:50 GMT
+# Thu, 21 Jul 2016 17:09:57 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1762,20 +1762,20 @@ CMD ["apache2-foreground"]
 	-	`sha256:ad55df8ddc8764ac0366a57120169bb8b2dc233d2adfaf9ce0c7702e9b4a1d85`  
 		Last Modified: Thu, 14 Jul 2016 16:46:59 GMT  
 		Size: 257.3 KB (257338 bytes)
-	-	`sha256:cd2aedc42ed6cf40a2caa16dad5a8b85218944cf05ce8123267ed885b95007cf`  
-		Last Modified: Thu, 14 Jul 2016 16:47:02 GMT  
-		Size: 8.4 MB (8380286 bytes)
-	-	`sha256:db2e9e2060ff65cb2fe11c7a61180f93cabee9f56648f95c9b94c4696c7eb3f0`  
-		Last Modified: Thu, 14 Jul 2016 16:46:59 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:1bd5019175181d9c9943ff3644cc3cf430910e5f7d1cf3aa602a4dd4b053ec67`  
-		Last Modified: Thu, 14 Jul 2016 16:46:58 GMT  
+	-	`sha256:2faab33880d5f5594fd982bb83e1bd91e56ed47184373b1c4b33c71b8651e31a`  
+		Last Modified: Thu, 21 Jul 2016 17:12:04 GMT  
+		Size: 8.5 MB (8478575 bytes)
+	-	`sha256:2e2f04a3665cc33db5c48c8741672eaaf194669cb43ab9c52ba5ce53f61e6694`  
+		Last Modified: Thu, 21 Jul 2016 17:12:01 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:427586fe06d50dfccc165860bda8ba765774a06ff49603c5feffdf71c98497a6`  
+		Last Modified: Thu, 21 Jul 2016 17:12:01 GMT  
 		Size: 604.0 B
 
 ## `joomla:apache-php7`
 
 ```console
-$ docker pull joomla@sha256:5fdafe4d3b8bfdc933c51c133949780d1184538cc204ffed3a21b8c151d84076
+$ docker pull joomla@sha256:4643acf8db963e975fdeef1ab893d27163e98d5a0ff35047ac55c2301ecb263a
 ```
 
 -	Platforms:
@@ -1785,9 +1785,9 @@ $ docker pull joomla@sha256:5fdafe4d3b8bfdc933c51c133949780d1184538cc204ffed3a21
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.4 MB (174402972 bytes)**  
+-	Total Size: **174.5 MB (174501260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:446fd4ef533ef9bee19696ded0e6ec2aaca5eb653e6eb794360621a90654e1b0`
+-	Image ID: `sha256:78f8f37bc6fcce0e062b3b202fac19215033b35117ff6a4cd786c0331bebfa90`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1856,19 +1856,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:46:37 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:46:38 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:46:38 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:46:47 GMT
+# Thu, 21 Jul 2016 17:09:46 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:47 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:09:55 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:46:48 GMT
+# Thu, 21 Jul 2016 17:09:55 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:46:49 GMT
+# Thu, 21 Jul 2016 17:09:56 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:46:50 GMT
+# Thu, 21 Jul 2016 17:09:57 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:46:50 GMT
+# Thu, 21 Jul 2016 17:09:57 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1921,32 +1921,32 @@ CMD ["apache2-foreground"]
 	-	`sha256:ad55df8ddc8764ac0366a57120169bb8b2dc233d2adfaf9ce0c7702e9b4a1d85`  
 		Last Modified: Thu, 14 Jul 2016 16:46:59 GMT  
 		Size: 257.3 KB (257338 bytes)
-	-	`sha256:cd2aedc42ed6cf40a2caa16dad5a8b85218944cf05ce8123267ed885b95007cf`  
-		Last Modified: Thu, 14 Jul 2016 16:47:02 GMT  
-		Size: 8.4 MB (8380286 bytes)
-	-	`sha256:db2e9e2060ff65cb2fe11c7a61180f93cabee9f56648f95c9b94c4696c7eb3f0`  
-		Last Modified: Thu, 14 Jul 2016 16:46:59 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:1bd5019175181d9c9943ff3644cc3cf430910e5f7d1cf3aa602a4dd4b053ec67`  
-		Last Modified: Thu, 14 Jul 2016 16:46:58 GMT  
+	-	`sha256:2faab33880d5f5594fd982bb83e1bd91e56ed47184373b1c4b33c71b8651e31a`  
+		Last Modified: Thu, 21 Jul 2016 17:12:04 GMT  
+		Size: 8.5 MB (8478575 bytes)
+	-	`sha256:2e2f04a3665cc33db5c48c8741672eaaf194669cb43ab9c52ba5ce53f61e6694`  
+		Last Modified: Thu, 21 Jul 2016 17:12:01 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:427586fe06d50dfccc165860bda8ba765774a06ff49603c5feffdf71c98497a6`  
+		Last Modified: Thu, 21 Jul 2016 17:12:01 GMT  
 		Size: 604.0 B
 
-## `joomla:3.5.1-fpm`
+## `joomla:3.6.0-fpm`
 
 ```console
-$ docker pull joomla@sha256:610932222777083e761ffacc6d588f20017dfbe8276d61cfc9dd8baf0ef4f35b
+$ docker pull joomla@sha256:103da5748f0b1a9ac14d95c2f19ae7060d2038fac8f69b79a9e3224bacf148f3
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `joomla:3.5.1-fpm` - linux; amd64
+### `joomla:3.6.0-fpm` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.9 MB (160923658 bytes)**  
+-	Total Size: **161.0 MB (161021974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f3752e6738cd41af9966e7ed8fd978ccd5b7cf9df662c28915a197f2b6bf127`
+-	Image ID: `sha256:d283927e9f51fb25a917e475a7f3e0396a974e6bf3899d1778da7b32b5b46fec`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1997,19 +1997,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:41:23 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:41:23 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:41:24 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:41:32 GMT
+# Thu, 21 Jul 2016 17:09:58 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:59 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:10:07 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:41:34 GMT
+# Thu, 21 Jul 2016 17:10:11 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:41:35 GMT
+# Thu, 21 Jul 2016 17:10:11 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:41:35 GMT
+# Thu, 21 Jul 2016 17:10:12 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:41:36 GMT
+# Thu, 21 Jul 2016 17:10:13 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2047,32 +2047,32 @@ CMD ["php-fpm"]
 	-	`sha256:05d99932a7043240757d4387ecb97b62cc3eae1b6d6d0f84d50cf6bb43c136bd`  
 		Last Modified: Thu, 14 Jul 2016 16:41:45 GMT  
 		Size: 265.1 KB (265066 bytes)
-	-	`sha256:502d14941a3fcf36dd78c8f607b7cab3af0936954fa0b49c05cb1dfde864a8fc`  
-		Last Modified: Thu, 14 Jul 2016 16:41:48 GMT  
-		Size: 8.4 MB (8380275 bytes)
-	-	`sha256:8f71c537777c2feca47220e879f89a34b3000f1090211cc06799cc0107cf5729`  
-		Last Modified: Thu, 14 Jul 2016 16:41:45 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:69f3ee7ae2e61a46a972b9a8947bdffd4d344904c4dc357dbb7e77423598f500`  
-		Last Modified: Thu, 14 Jul 2016 16:41:44 GMT  
-		Size: 604.0 B
+	-	`sha256:ea64a0ebe0fa34309ac23f891c826ec47a1638ef02b001b22867fcdf84921eb7`  
+		Last Modified: Thu, 21 Jul 2016 17:12:51 GMT  
+		Size: 8.5 MB (8478591 bytes)
+	-	`sha256:a69058f192e1c3dfe55c8b9283f7d45b097d89f7786b3819258a9c27a4fe957d`  
+		Last Modified: Thu, 21 Jul 2016 17:12:47 GMT  
+		Size: 1.2 KB (1164 bytes)
+	-	`sha256:4edf8a0bf740d6ba279462022660eec8cbeb35b2b87af35ed2f954ad28cbb47e`  
+		Last Modified: Thu, 21 Jul 2016 17:12:48 GMT  
+		Size: 603.0 B
 
-## `joomla:3.5-fpm`
+## `joomla:3.6-fpm`
 
 ```console
-$ docker pull joomla@sha256:610932222777083e761ffacc6d588f20017dfbe8276d61cfc9dd8baf0ef4f35b
+$ docker pull joomla@sha256:103da5748f0b1a9ac14d95c2f19ae7060d2038fac8f69b79a9e3224bacf148f3
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `joomla:3.5-fpm` - linux; amd64
+### `joomla:3.6-fpm` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.9 MB (160923658 bytes)**  
+-	Total Size: **161.0 MB (161021974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f3752e6738cd41af9966e7ed8fd978ccd5b7cf9df662c28915a197f2b6bf127`
+-	Image ID: `sha256:d283927e9f51fb25a917e475a7f3e0396a974e6bf3899d1778da7b32b5b46fec`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2123,19 +2123,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:41:23 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:41:23 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:41:24 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:41:32 GMT
+# Thu, 21 Jul 2016 17:09:58 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:59 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:10:07 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:41:34 GMT
+# Thu, 21 Jul 2016 17:10:11 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:41:35 GMT
+# Thu, 21 Jul 2016 17:10:11 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:41:35 GMT
+# Thu, 21 Jul 2016 17:10:12 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:41:36 GMT
+# Thu, 21 Jul 2016 17:10:13 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2173,20 +2173,20 @@ CMD ["php-fpm"]
 	-	`sha256:05d99932a7043240757d4387ecb97b62cc3eae1b6d6d0f84d50cf6bb43c136bd`  
 		Last Modified: Thu, 14 Jul 2016 16:41:45 GMT  
 		Size: 265.1 KB (265066 bytes)
-	-	`sha256:502d14941a3fcf36dd78c8f607b7cab3af0936954fa0b49c05cb1dfde864a8fc`  
-		Last Modified: Thu, 14 Jul 2016 16:41:48 GMT  
-		Size: 8.4 MB (8380275 bytes)
-	-	`sha256:8f71c537777c2feca47220e879f89a34b3000f1090211cc06799cc0107cf5729`  
-		Last Modified: Thu, 14 Jul 2016 16:41:45 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:69f3ee7ae2e61a46a972b9a8947bdffd4d344904c4dc357dbb7e77423598f500`  
-		Last Modified: Thu, 14 Jul 2016 16:41:44 GMT  
-		Size: 604.0 B
+	-	`sha256:ea64a0ebe0fa34309ac23f891c826ec47a1638ef02b001b22867fcdf84921eb7`  
+		Last Modified: Thu, 21 Jul 2016 17:12:51 GMT  
+		Size: 8.5 MB (8478591 bytes)
+	-	`sha256:a69058f192e1c3dfe55c8b9283f7d45b097d89f7786b3819258a9c27a4fe957d`  
+		Last Modified: Thu, 21 Jul 2016 17:12:47 GMT  
+		Size: 1.2 KB (1164 bytes)
+	-	`sha256:4edf8a0bf740d6ba279462022660eec8cbeb35b2b87af35ed2f954ad28cbb47e`  
+		Last Modified: Thu, 21 Jul 2016 17:12:48 GMT  
+		Size: 603.0 B
 
 ## `joomla:3-fpm`
 
 ```console
-$ docker pull joomla@sha256:610932222777083e761ffacc6d588f20017dfbe8276d61cfc9dd8baf0ef4f35b
+$ docker pull joomla@sha256:103da5748f0b1a9ac14d95c2f19ae7060d2038fac8f69b79a9e3224bacf148f3
 ```
 
 -	Platforms:
@@ -2196,9 +2196,9 @@ $ docker pull joomla@sha256:610932222777083e761ffacc6d588f20017dfbe8276d61cfc9dd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.9 MB (160923658 bytes)**  
+-	Total Size: **161.0 MB (161021974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f3752e6738cd41af9966e7ed8fd978ccd5b7cf9df662c28915a197f2b6bf127`
+-	Image ID: `sha256:d283927e9f51fb25a917e475a7f3e0396a974e6bf3899d1778da7b32b5b46fec`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2249,19 +2249,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:41:23 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:41:23 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:41:24 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:41:32 GMT
+# Thu, 21 Jul 2016 17:09:58 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:59 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:10:07 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:41:34 GMT
+# Thu, 21 Jul 2016 17:10:11 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:41:35 GMT
+# Thu, 21 Jul 2016 17:10:11 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:41:35 GMT
+# Thu, 21 Jul 2016 17:10:12 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:41:36 GMT
+# Thu, 21 Jul 2016 17:10:13 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2299,20 +2299,20 @@ CMD ["php-fpm"]
 	-	`sha256:05d99932a7043240757d4387ecb97b62cc3eae1b6d6d0f84d50cf6bb43c136bd`  
 		Last Modified: Thu, 14 Jul 2016 16:41:45 GMT  
 		Size: 265.1 KB (265066 bytes)
-	-	`sha256:502d14941a3fcf36dd78c8f607b7cab3af0936954fa0b49c05cb1dfde864a8fc`  
-		Last Modified: Thu, 14 Jul 2016 16:41:48 GMT  
-		Size: 8.4 MB (8380275 bytes)
-	-	`sha256:8f71c537777c2feca47220e879f89a34b3000f1090211cc06799cc0107cf5729`  
-		Last Modified: Thu, 14 Jul 2016 16:41:45 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:69f3ee7ae2e61a46a972b9a8947bdffd4d344904c4dc357dbb7e77423598f500`  
-		Last Modified: Thu, 14 Jul 2016 16:41:44 GMT  
-		Size: 604.0 B
+	-	`sha256:ea64a0ebe0fa34309ac23f891c826ec47a1638ef02b001b22867fcdf84921eb7`  
+		Last Modified: Thu, 21 Jul 2016 17:12:51 GMT  
+		Size: 8.5 MB (8478591 bytes)
+	-	`sha256:a69058f192e1c3dfe55c8b9283f7d45b097d89f7786b3819258a9c27a4fe957d`  
+		Last Modified: Thu, 21 Jul 2016 17:12:47 GMT  
+		Size: 1.2 KB (1164 bytes)
+	-	`sha256:4edf8a0bf740d6ba279462022660eec8cbeb35b2b87af35ed2f954ad28cbb47e`  
+		Last Modified: Thu, 21 Jul 2016 17:12:48 GMT  
+		Size: 603.0 B
 
 ## `joomla:fpm`
 
 ```console
-$ docker pull joomla@sha256:610932222777083e761ffacc6d588f20017dfbe8276d61cfc9dd8baf0ef4f35b
+$ docker pull joomla@sha256:103da5748f0b1a9ac14d95c2f19ae7060d2038fac8f69b79a9e3224bacf148f3
 ```
 
 -	Platforms:
@@ -2322,9 +2322,9 @@ $ docker pull joomla@sha256:610932222777083e761ffacc6d588f20017dfbe8276d61cfc9dd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.9 MB (160923658 bytes)**  
+-	Total Size: **161.0 MB (161021974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f3752e6738cd41af9966e7ed8fd978ccd5b7cf9df662c28915a197f2b6bf127`
+-	Image ID: `sha256:d283927e9f51fb25a917e475a7f3e0396a974e6bf3899d1778da7b32b5b46fec`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2375,19 +2375,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:41:23 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:41:23 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:41:24 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:41:32 GMT
+# Thu, 21 Jul 2016 17:09:58 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:09:59 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:10:07 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:41:34 GMT
+# Thu, 21 Jul 2016 17:10:11 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:41:35 GMT
+# Thu, 21 Jul 2016 17:10:11 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:41:35 GMT
+# Thu, 21 Jul 2016 17:10:12 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:41:36 GMT
+# Thu, 21 Jul 2016 17:10:13 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2425,32 +2425,32 @@ CMD ["php-fpm"]
 	-	`sha256:05d99932a7043240757d4387ecb97b62cc3eae1b6d6d0f84d50cf6bb43c136bd`  
 		Last Modified: Thu, 14 Jul 2016 16:41:45 GMT  
 		Size: 265.1 KB (265066 bytes)
-	-	`sha256:502d14941a3fcf36dd78c8f607b7cab3af0936954fa0b49c05cb1dfde864a8fc`  
-		Last Modified: Thu, 14 Jul 2016 16:41:48 GMT  
-		Size: 8.4 MB (8380275 bytes)
-	-	`sha256:8f71c537777c2feca47220e879f89a34b3000f1090211cc06799cc0107cf5729`  
-		Last Modified: Thu, 14 Jul 2016 16:41:45 GMT  
-		Size: 1.2 KB (1163 bytes)
-	-	`sha256:69f3ee7ae2e61a46a972b9a8947bdffd4d344904c4dc357dbb7e77423598f500`  
-		Last Modified: Thu, 14 Jul 2016 16:41:44 GMT  
-		Size: 604.0 B
+	-	`sha256:ea64a0ebe0fa34309ac23f891c826ec47a1638ef02b001b22867fcdf84921eb7`  
+		Last Modified: Thu, 21 Jul 2016 17:12:51 GMT  
+		Size: 8.5 MB (8478591 bytes)
+	-	`sha256:a69058f192e1c3dfe55c8b9283f7d45b097d89f7786b3819258a9c27a4fe957d`  
+		Last Modified: Thu, 21 Jul 2016 17:12:47 GMT  
+		Size: 1.2 KB (1164 bytes)
+	-	`sha256:4edf8a0bf740d6ba279462022660eec8cbeb35b2b87af35ed2f954ad28cbb47e`  
+		Last Modified: Thu, 21 Jul 2016 17:12:48 GMT  
+		Size: 603.0 B
 
-## `joomla:3.5.1-fpm-php7`
+## `joomla:3.6.0-fpm-php7`
 
 ```console
-$ docker pull joomla@sha256:b5c9b149b78c8dab5d0400203e0d2e7e9343f1db212fdc5d720b1f9a6ee2f464
+$ docker pull joomla@sha256:fc203713fccc113020015981c7176d74efbdf35aa2247cdd172884956bbe67b2
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `joomla:3.5.1-fpm-php7` - linux; amd64
+### `joomla:3.6.0-fpm-php7` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.6 MB (164552383 bytes)**  
+-	Total Size: **164.7 MB (164650690 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ff9dd27e857efcea00e71cdd1443a0c5947990fa0d953c3b9485bfac988cb8c`
+-	Image ID: `sha256:b016e8cd8ca2138e69dbd8084431b0dbdecc849dab83694d5058442958b83ca4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2501,19 +2501,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:43:57 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:43:58 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:43:58 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:44:06 GMT
+# Thu, 21 Jul 2016 17:10:14 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:10:14 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:10:23 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:44:08 GMT
+# Thu, 21 Jul 2016 17:10:24 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:44:09 GMT
+# Thu, 21 Jul 2016 17:10:25 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:44:09 GMT
+# Thu, 21 Jul 2016 17:10:25 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:44:10 GMT
+# Thu, 21 Jul 2016 17:10:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2551,32 +2551,32 @@ CMD ["php-fpm"]
 	-	`sha256:56c5ba56be313824f42fc41fa552cb76d6ed1036e7373534c7c05487b58f0840`  
 		Last Modified: Thu, 14 Jul 2016 16:44:19 GMT  
 		Size: 257.3 KB (257338 bytes)
-	-	`sha256:47ec4b4e4a374447a4c0efd1c562f552862a9b5c03da8262cac38c35b1406a6c`  
-		Last Modified: Thu, 14 Jul 2016 16:44:21 GMT  
-		Size: 8.4 MB (8380282 bytes)
-	-	`sha256:22803b17a42a5f82f58846b554f300413a689abdb3b4c7b9f399378b3f1b0983`  
-		Last Modified: Thu, 14 Jul 2016 16:44:19 GMT  
-		Size: 1.2 KB (1165 bytes)
-	-	`sha256:cfae23d102769a394cd8c892879229e92a29a59efb164cf2bf37763d0abfc4b7`  
-		Last Modified: Thu, 14 Jul 2016 16:44:18 GMT  
-		Size: 605.0 B
+	-	`sha256:159f959fb021828b467f14e14da29fe838f92e311d4b730c9c4b833ec1e154c4`  
+		Last Modified: Thu, 21 Jul 2016 17:13:36 GMT  
+		Size: 8.5 MB (8478591 bytes)
+	-	`sha256:597eda9404feaf85708485bf5417f5e46512432e16f6298ff5cea52698c6b7ff`  
+		Last Modified: Thu, 21 Jul 2016 17:13:33 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:cf6e231c908651ad20b1b5c6dff19df7d2ee2d8747e37498182018a791dc60b9`  
+		Last Modified: Thu, 21 Jul 2016 17:13:33 GMT  
+		Size: 606.0 B
 
-## `joomla:3.5-fpm-php7`
+## `joomla:3.6-fpm-php7`
 
 ```console
-$ docker pull joomla@sha256:b5c9b149b78c8dab5d0400203e0d2e7e9343f1db212fdc5d720b1f9a6ee2f464
+$ docker pull joomla@sha256:fc203713fccc113020015981c7176d74efbdf35aa2247cdd172884956bbe67b2
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `joomla:3.5-fpm-php7` - linux; amd64
+### `joomla:3.6-fpm-php7` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.6 MB (164552383 bytes)**  
+-	Total Size: **164.7 MB (164650690 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ff9dd27e857efcea00e71cdd1443a0c5947990fa0d953c3b9485bfac988cb8c`
+-	Image ID: `sha256:b016e8cd8ca2138e69dbd8084431b0dbdecc849dab83694d5058442958b83ca4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2627,19 +2627,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:43:57 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:43:58 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:43:58 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:44:06 GMT
+# Thu, 21 Jul 2016 17:10:14 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:10:14 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:10:23 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:44:08 GMT
+# Thu, 21 Jul 2016 17:10:24 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:44:09 GMT
+# Thu, 21 Jul 2016 17:10:25 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:44:09 GMT
+# Thu, 21 Jul 2016 17:10:25 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:44:10 GMT
+# Thu, 21 Jul 2016 17:10:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2677,20 +2677,20 @@ CMD ["php-fpm"]
 	-	`sha256:56c5ba56be313824f42fc41fa552cb76d6ed1036e7373534c7c05487b58f0840`  
 		Last Modified: Thu, 14 Jul 2016 16:44:19 GMT  
 		Size: 257.3 KB (257338 bytes)
-	-	`sha256:47ec4b4e4a374447a4c0efd1c562f552862a9b5c03da8262cac38c35b1406a6c`  
-		Last Modified: Thu, 14 Jul 2016 16:44:21 GMT  
-		Size: 8.4 MB (8380282 bytes)
-	-	`sha256:22803b17a42a5f82f58846b554f300413a689abdb3b4c7b9f399378b3f1b0983`  
-		Last Modified: Thu, 14 Jul 2016 16:44:19 GMT  
-		Size: 1.2 KB (1165 bytes)
-	-	`sha256:cfae23d102769a394cd8c892879229e92a29a59efb164cf2bf37763d0abfc4b7`  
-		Last Modified: Thu, 14 Jul 2016 16:44:18 GMT  
-		Size: 605.0 B
+	-	`sha256:159f959fb021828b467f14e14da29fe838f92e311d4b730c9c4b833ec1e154c4`  
+		Last Modified: Thu, 21 Jul 2016 17:13:36 GMT  
+		Size: 8.5 MB (8478591 bytes)
+	-	`sha256:597eda9404feaf85708485bf5417f5e46512432e16f6298ff5cea52698c6b7ff`  
+		Last Modified: Thu, 21 Jul 2016 17:13:33 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:cf6e231c908651ad20b1b5c6dff19df7d2ee2d8747e37498182018a791dc60b9`  
+		Last Modified: Thu, 21 Jul 2016 17:13:33 GMT  
+		Size: 606.0 B
 
 ## `joomla:3-fpm-php7`
 
 ```console
-$ docker pull joomla@sha256:b5c9b149b78c8dab5d0400203e0d2e7e9343f1db212fdc5d720b1f9a6ee2f464
+$ docker pull joomla@sha256:fc203713fccc113020015981c7176d74efbdf35aa2247cdd172884956bbe67b2
 ```
 
 -	Platforms:
@@ -2700,9 +2700,9 @@ $ docker pull joomla@sha256:b5c9b149b78c8dab5d0400203e0d2e7e9343f1db212fdc5d720b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.6 MB (164552383 bytes)**  
+-	Total Size: **164.7 MB (164650690 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ff9dd27e857efcea00e71cdd1443a0c5947990fa0d953c3b9485bfac988cb8c`
+-	Image ID: `sha256:b016e8cd8ca2138e69dbd8084431b0dbdecc849dab83694d5058442958b83ca4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2753,19 +2753,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:43:57 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:43:58 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:43:58 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:44:06 GMT
+# Thu, 21 Jul 2016 17:10:14 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:10:14 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:10:23 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:44:08 GMT
+# Thu, 21 Jul 2016 17:10:24 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:44:09 GMT
+# Thu, 21 Jul 2016 17:10:25 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:44:09 GMT
+# Thu, 21 Jul 2016 17:10:25 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:44:10 GMT
+# Thu, 21 Jul 2016 17:10:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2803,20 +2803,20 @@ CMD ["php-fpm"]
 	-	`sha256:56c5ba56be313824f42fc41fa552cb76d6ed1036e7373534c7c05487b58f0840`  
 		Last Modified: Thu, 14 Jul 2016 16:44:19 GMT  
 		Size: 257.3 KB (257338 bytes)
-	-	`sha256:47ec4b4e4a374447a4c0efd1c562f552862a9b5c03da8262cac38c35b1406a6c`  
-		Last Modified: Thu, 14 Jul 2016 16:44:21 GMT  
-		Size: 8.4 MB (8380282 bytes)
-	-	`sha256:22803b17a42a5f82f58846b554f300413a689abdb3b4c7b9f399378b3f1b0983`  
-		Last Modified: Thu, 14 Jul 2016 16:44:19 GMT  
-		Size: 1.2 KB (1165 bytes)
-	-	`sha256:cfae23d102769a394cd8c892879229e92a29a59efb164cf2bf37763d0abfc4b7`  
-		Last Modified: Thu, 14 Jul 2016 16:44:18 GMT  
-		Size: 605.0 B
+	-	`sha256:159f959fb021828b467f14e14da29fe838f92e311d4b730c9c4b833ec1e154c4`  
+		Last Modified: Thu, 21 Jul 2016 17:13:36 GMT  
+		Size: 8.5 MB (8478591 bytes)
+	-	`sha256:597eda9404feaf85708485bf5417f5e46512432e16f6298ff5cea52698c6b7ff`  
+		Last Modified: Thu, 21 Jul 2016 17:13:33 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:cf6e231c908651ad20b1b5c6dff19df7d2ee2d8747e37498182018a791dc60b9`  
+		Last Modified: Thu, 21 Jul 2016 17:13:33 GMT  
+		Size: 606.0 B
 
 ## `joomla:fpm-php7`
 
 ```console
-$ docker pull joomla@sha256:b5c9b149b78c8dab5d0400203e0d2e7e9343f1db212fdc5d720b1f9a6ee2f464
+$ docker pull joomla@sha256:fc203713fccc113020015981c7176d74efbdf35aa2247cdd172884956bbe67b2
 ```
 
 -	Platforms:
@@ -2826,9 +2826,9 @@ $ docker pull joomla@sha256:b5c9b149b78c8dab5d0400203e0d2e7e9343f1db212fdc5d720b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.6 MB (164552383 bytes)**  
+-	Total Size: **164.7 MB (164650690 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ff9dd27e857efcea00e71cdd1443a0c5947990fa0d953c3b9485bfac988cb8c`
+-	Image ID: `sha256:b016e8cd8ca2138e69dbd8084431b0dbdecc849dab83694d5058442958b83ca4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2879,19 +2879,19 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 RUN docker-php-ext-install mysqli
 # Thu, 14 Jul 2016 16:43:57 GMT
 VOLUME [/var/www/html]
-# Thu, 14 Jul 2016 16:43:58 GMT
-ENV JOOMLA_VERSION=3.5.1
-# Thu, 14 Jul 2016 16:43:58 GMT
-ENV JOOMLA_SHA1=e24649f806d12c608004b9049b8bb90a9a701b63
-# Thu, 14 Jul 2016 16:44:06 GMT
+# Thu, 21 Jul 2016 17:10:14 GMT
+ENV JOOMLA_VERSION=3.6.0
+# Thu, 21 Jul 2016 17:10:14 GMT
+ENV JOOMLA_SHA1=9e71357f689218705b15e653b7cdd57b498d4fa4
+# Thu, 21 Jul 2016 17:10:23 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 14 Jul 2016 16:44:08 GMT
+# Thu, 21 Jul 2016 17:10:24 GMT
 COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh
-# Thu, 14 Jul 2016 16:44:09 GMT
+# Thu, 21 Jul 2016 17:10:25 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php
-# Thu, 14 Jul 2016 16:44:09 GMT
+# Thu, 21 Jul 2016 17:10:25 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 14 Jul 2016 16:44:10 GMT
+# Thu, 21 Jul 2016 17:10:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2929,12 +2929,12 @@ CMD ["php-fpm"]
 	-	`sha256:56c5ba56be313824f42fc41fa552cb76d6ed1036e7373534c7c05487b58f0840`  
 		Last Modified: Thu, 14 Jul 2016 16:44:19 GMT  
 		Size: 257.3 KB (257338 bytes)
-	-	`sha256:47ec4b4e4a374447a4c0efd1c562f552862a9b5c03da8262cac38c35b1406a6c`  
-		Last Modified: Thu, 14 Jul 2016 16:44:21 GMT  
-		Size: 8.4 MB (8380282 bytes)
-	-	`sha256:22803b17a42a5f82f58846b554f300413a689abdb3b4c7b9f399378b3f1b0983`  
-		Last Modified: Thu, 14 Jul 2016 16:44:19 GMT  
-		Size: 1.2 KB (1165 bytes)
-	-	`sha256:cfae23d102769a394cd8c892879229e92a29a59efb164cf2bf37763d0abfc4b7`  
-		Last Modified: Thu, 14 Jul 2016 16:44:18 GMT  
-		Size: 605.0 B
+	-	`sha256:159f959fb021828b467f14e14da29fe838f92e311d4b730c9c4b833ec1e154c4`  
+		Last Modified: Thu, 21 Jul 2016 17:13:36 GMT  
+		Size: 8.5 MB (8478591 bytes)
+	-	`sha256:597eda9404feaf85708485bf5417f5e46512432e16f6298ff5cea52698c6b7ff`  
+		Last Modified: Thu, 21 Jul 2016 17:13:33 GMT  
+		Size: 1.2 KB (1162 bytes)
+	-	`sha256:cf6e231c908651ad20b1b5c6dff19df7d2ee2d8747e37498182018a791dc60b9`  
+		Last Modified: Thu, 21 Jul 2016 17:13:33 GMT  
+		Size: 606.0 B
