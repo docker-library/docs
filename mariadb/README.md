@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`10.1.16`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/2c8418204a2ca6d39b9999641451200dee9212bc/10.1/Dockerfile)
--	[`10.0.26`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/dfc7026e1c2588388a929151810a28e6319ddead/10.0/Dockerfile)
--	[`5.5.50`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/35bec16e10203a30ed66f4e0a1571ce816c6b4d2/5.5/Dockerfile)
+-	[`10.1.16`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/d969a465ee48fe10f4b532276f7337ddaaf3fc36/10.1/Dockerfile)
+-	[`10.0.26`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/d969a465ee48fe10f4b532276f7337ddaaf3fc36/10.0/Dockerfile)
+-	[`5.5.50`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/d969a465ee48fe10f4b532276f7337ddaaf3fc36/5.5/Dockerfile)
 
 [![](https://badge.imagelayers.io/mariadb:latest.svg)](https://imagelayers.io/?images=mariadb:10.1.16,mariadb:10.0.26,mariadb:5.5.50)
 

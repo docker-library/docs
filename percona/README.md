@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.7.13`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/b1f72280a3464a12979111287255da27c6537405/5.7/Dockerfile)
--	[`5.6.31`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/97b1c658432db2deae77b6577681d45e6c8ee493/5.6/Dockerfile)
--	[`5.5.50`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/9eb3ba8a16b4a037dbfe2314d17055743795e712/5.5/Dockerfile)
+-	[`5.7.13`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/9f24653b2c4dd2e40cdced347c0ca388b8ab0cb2/5.7/Dockerfile)
+-	[`5.6.31`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/9f24653b2c4dd2e40cdced347c0ca388b8ab0cb2/5.6/Dockerfile)
+-	[`5.5.50`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/9f24653b2c4dd2e40cdced347c0ca388b8ab0cb2/5.5/Dockerfile)
 
 [![](https://badge.imagelayers.io/percona:latest.svg)](https://imagelayers.io/?images=percona:5.7.13,percona:5.6.31,percona:5.5.50)
 
