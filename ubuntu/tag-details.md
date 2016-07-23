@@ -250,7 +250,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:14.04`
 
 ```console
-$ docker pull ubuntu@sha256:b2c8a4d46473ab082200880391ddf8c06f2a67da4fa905ce2747dcd95d8d7af7
+$ docker pull ubuntu@sha256:9274d908eb6d9a3784e93290fcc49f3c5618db9e1b0174ee27f9fc75aa3c0fb0
 ```
 
 -	Platforms:
@@ -260,21 +260,21 @@ $ docker pull ubuntu@sha256:b2c8a4d46473ab082200880391ddf8c06f2a67da4fa905ce2747
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **65.8 MB (65792457 bytes)**  
+-	Total Size: **65.8 MB (65771677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2f1fdd93175cf7982534844bd1f4f0ed43a5e3afcdc16ec45edef5a6dd78730`
+-	Image ID: `sha256:0ccb13bf19544abff3bd1f5e69e17c2ad99439408a5a0bac15cf00443bdeb2c7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Jul 2016 17:34:50 GMT
+# Fri, 22 Jul 2016 15:18:56 GMT
 ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
-# Mon, 18 Jul 2016 17:34:53 GMT
+# Fri, 22 Jul 2016 15:18:58 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:34:54 GMT
+# Fri, 22 Jul 2016 15:19:00 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:34:57 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:34:58 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -282,20 +282,20 @@ CMD ["/bin/bash"]
 	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
 		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
 		Size: 65.7 MB (65699069 bytes)
-	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
-		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
-		Size: 92.3 KB (92340 bytes)
-	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
-		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
-		Size: 366.0 B
-	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
-		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
-		Size: 682.0 B
+	-	`sha256:ed40d4bcb31369df1a018c64e560e94dfd106d0b2851db25f921d3708d64fac5`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 71.6 KB (71563 bytes)
+	-	`sha256:b171f9dbc13b68a99386e4d54e28e26144688973ad7bbdd9ec1f822dc8b0ac0a`  
+		Last Modified: Fri, 22 Jul 2016 15:21:06 GMT  
+		Size: 365.0 B
+	-	`sha256:ccfc4df4fbba7d591c1eff4972018e67c1142b21b64bc36fba3f93bd33f2ebd9`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 680.0 B
 
 ## `ubuntu:trusty-20160711`
 
 ```console
-$ docker pull ubuntu@sha256:b2c8a4d46473ab082200880391ddf8c06f2a67da4fa905ce2747dcd95d8d7af7
+$ docker pull ubuntu@sha256:9274d908eb6d9a3784e93290fcc49f3c5618db9e1b0174ee27f9fc75aa3c0fb0
 ```
 
 -	Platforms:
@@ -305,21 +305,21 @@ $ docker pull ubuntu@sha256:b2c8a4d46473ab082200880391ddf8c06f2a67da4fa905ce2747
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **65.8 MB (65792457 bytes)**  
+-	Total Size: **65.8 MB (65771677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2f1fdd93175cf7982534844bd1f4f0ed43a5e3afcdc16ec45edef5a6dd78730`
+-	Image ID: `sha256:0ccb13bf19544abff3bd1f5e69e17c2ad99439408a5a0bac15cf00443bdeb2c7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Jul 2016 17:34:50 GMT
+# Fri, 22 Jul 2016 15:18:56 GMT
 ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
-# Mon, 18 Jul 2016 17:34:53 GMT
+# Fri, 22 Jul 2016 15:18:58 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:34:54 GMT
+# Fri, 22 Jul 2016 15:19:00 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:34:57 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:34:58 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -327,20 +327,20 @@ CMD ["/bin/bash"]
 	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
 		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
 		Size: 65.7 MB (65699069 bytes)
-	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
-		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
-		Size: 92.3 KB (92340 bytes)
-	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
-		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
-		Size: 366.0 B
-	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
-		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
-		Size: 682.0 B
+	-	`sha256:ed40d4bcb31369df1a018c64e560e94dfd106d0b2851db25f921d3708d64fac5`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 71.6 KB (71563 bytes)
+	-	`sha256:b171f9dbc13b68a99386e4d54e28e26144688973ad7bbdd9ec1f822dc8b0ac0a`  
+		Last Modified: Fri, 22 Jul 2016 15:21:06 GMT  
+		Size: 365.0 B
+	-	`sha256:ccfc4df4fbba7d591c1eff4972018e67c1142b21b64bc36fba3f93bd33f2ebd9`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 680.0 B
 
 ## `ubuntu:trusty`
 
 ```console
-$ docker pull ubuntu@sha256:b2c8a4d46473ab082200880391ddf8c06f2a67da4fa905ce2747dcd95d8d7af7
+$ docker pull ubuntu@sha256:9274d908eb6d9a3784e93290fcc49f3c5618db9e1b0174ee27f9fc75aa3c0fb0
 ```
 
 -	Platforms:
@@ -350,21 +350,21 @@ $ docker pull ubuntu@sha256:b2c8a4d46473ab082200880391ddf8c06f2a67da4fa905ce2747
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **65.8 MB (65792457 bytes)**  
+-	Total Size: **65.8 MB (65771677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2f1fdd93175cf7982534844bd1f4f0ed43a5e3afcdc16ec45edef5a6dd78730`
+-	Image ID: `sha256:0ccb13bf19544abff3bd1f5e69e17c2ad99439408a5a0bac15cf00443bdeb2c7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Jul 2016 17:34:50 GMT
+# Fri, 22 Jul 2016 15:18:56 GMT
 ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
-# Mon, 18 Jul 2016 17:34:53 GMT
+# Fri, 22 Jul 2016 15:18:58 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:34:54 GMT
+# Fri, 22 Jul 2016 15:19:00 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:34:57 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:34:58 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -372,20 +372,20 @@ CMD ["/bin/bash"]
 	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
 		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
 		Size: 65.7 MB (65699069 bytes)
-	-	`sha256:4767a2d70a73a271b76a76e4d5edf1426c49ccc24dc7df06ebccd880f01bbeab`  
-		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
-		Size: 92.3 KB (92340 bytes)
-	-	`sha256:422639bc8a94f4f9ece99c13140bd78b9f25eb62492dd0402ffa4ec58b0d6d9b`  
-		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
-		Size: 366.0 B
-	-	`sha256:a797489a324abb3d09826e5f5a529034aecdc962d54ca4dd642f9548c455295f`  
-		Last Modified: Mon, 18 Jul 2016 17:36:35 GMT  
-		Size: 682.0 B
+	-	`sha256:ed40d4bcb31369df1a018c64e560e94dfd106d0b2851db25f921d3708d64fac5`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 71.6 KB (71563 bytes)
+	-	`sha256:b171f9dbc13b68a99386e4d54e28e26144688973ad7bbdd9ec1f822dc8b0ac0a`  
+		Last Modified: Fri, 22 Jul 2016 15:21:06 GMT  
+		Size: 365.0 B
+	-	`sha256:ccfc4df4fbba7d591c1eff4972018e67c1142b21b64bc36fba3f93bd33f2ebd9`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 680.0 B
 
 ## `ubuntu:15.10`
 
 ```console
-$ docker pull ubuntu@sha256:57542ccb01a9be52d4d514b2212cc2d8d54df1b7e6f40d5eb7ed1d93360d3d45
+$ docker pull ubuntu@sha256:02521a2d079595241c6793b2044f02eecf294034f31d6e235ac4b2b54ffc41f3
 ```
 
 -	Platforms:
@@ -395,21 +395,21 @@ $ docker pull ubuntu@sha256:57542ccb01a9be52d4d514b2212cc2d8d54df1b7e6f40d5eb7ed
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.1 MB (51090163 bytes)**  
+-	Total Size: **51.1 MB (51069322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:370864ce917e6c32db825613fa6f6b103f89c190426120797f26466a25f45280`
+-	Image ID: `sha256:9b9cb95443b5f846cd3c8cfa3f64e63b6ba68de2618a08875a119c81a8f96698`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 08 Jul 2016 18:39:16 GMT
 ADD file:d5d47c6a963e950e735765bfaf16851fc7297115de6c17bdd61148288e5b8873 in /
-# Mon, 18 Jul 2016 17:35:06 GMT
+# Fri, 22 Jul 2016 15:19:09 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:35:08 GMT
+# Fri, 22 Jul 2016 15:19:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:35:09 GMT
+# Fri, 22 Jul 2016 15:19:12 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:35:10 GMT
+# Fri, 22 Jul 2016 15:19:13 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -417,20 +417,20 @@ CMD ["/bin/bash"]
 	-	`sha256:7dcf5a4443927558c6720517b7996d912d98288d6f565e99195d1b72431a38ca`  
 		Last Modified: Fri, 08 Jul 2016 18:42:06 GMT  
 		Size: 51.1 MB (51067308 bytes)
-	-	`sha256:9eebba75a87f9339364057266fcd7c79489b809835388c2d5dd662f0d47ffaef`  
-		Last Modified: Mon, 18 Jul 2016 17:37:36 GMT  
-		Size: 21.7 KB (21663 bytes)
-	-	`sha256:1f0440d87cc73c252220267fbf1712ddd2c5df8a333a594c6a4f543af5fec207`  
-		Last Modified: Mon, 18 Jul 2016 17:37:36 GMT  
-		Size: 511.0 B
-	-	`sha256:dacd0555c1b42ff436bba2b824b6e2f04ddb70fd484b4bbb489bd11e4e2c1f24`  
-		Last Modified: Mon, 18 Jul 2016 17:37:37 GMT  
-		Size: 681.0 B
+	-	`sha256:759aa75f3ceee7f3f8ea4b29b012f025d81fc3302145431930511d0f451ed4b9`  
+		Last Modified: Fri, 22 Jul 2016 15:21:46 GMT  
+		Size: 825.0 B
+	-	`sha256:3fa871dc8a2b6b81da68842fdc09c8aaf22dd455b00eb6f9489b99ef686f503e`  
+		Last Modified: Fri, 22 Jul 2016 15:21:46 GMT  
+		Size: 510.0 B
+	-	`sha256:224c42ae46e73ea08ec728b621ac89f2dc8741b2b804fdeec8aa6672aff00513`  
+		Last Modified: Fri, 22 Jul 2016 15:21:46 GMT  
+		Size: 679.0 B
 
 ## `ubuntu:wily-20160706`
 
 ```console
-$ docker pull ubuntu@sha256:a59fa59d471d4ae1d4ce2d96f4d0230d01f1d9fbfd621f2a38f14f354416bca9
+$ docker pull ubuntu@sha256:02521a2d079595241c6793b2044f02eecf294034f31d6e235ac4b2b54ffc41f3
 ```
 
 -	Platforms:
@@ -440,21 +440,21 @@ $ docker pull ubuntu@sha256:a59fa59d471d4ae1d4ce2d96f4d0230d01f1d9fbfd621f2a38f1
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.1 MB (51090077 bytes)**  
+-	Total Size: **51.1 MB (51069322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d18fc309478ffd6c86bc951662f63668b47165a0a69e488e8e89e27d73cf3793`
+-	Image ID: `sha256:9b9cb95443b5f846cd3c8cfa3f64e63b6ba68de2618a08875a119c81a8f96698`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 08 Jul 2016 18:39:16 GMT
 ADD file:d5d47c6a963e950e735765bfaf16851fc7297115de6c17bdd61148288e5b8873 in /
-# Fri, 08 Jul 2016 18:39:18 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 08 Jul 2016 18:39:20 GMT
+# Fri, 22 Jul 2016 15:19:09 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Fri, 22 Jul 2016 15:19:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:39:22 GMT
+# Fri, 22 Jul 2016 15:19:12 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 08 Jul 2016 18:39:22 GMT
+# Fri, 22 Jul 2016 15:19:13 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -462,20 +462,20 @@ CMD ["/bin/bash"]
 	-	`sha256:7dcf5a4443927558c6720517b7996d912d98288d6f565e99195d1b72431a38ca`  
 		Last Modified: Fri, 08 Jul 2016 18:42:06 GMT  
 		Size: 51.1 MB (51067308 bytes)
-	-	`sha256:e364dd51c286572ba2089627ab3ea67589908ade37159d61dc98772cf6232327`  
-		Last Modified: Fri, 08 Jul 2016 18:41:42 GMT  
-		Size: 21.6 KB (21584 bytes)
-	-	`sha256:69d55d4f9a396900ad93bbdf5766082d6301cd336b7762cb6a59830d1ad607bc`  
-		Last Modified: Fri, 08 Jul 2016 18:41:42 GMT  
-		Size: 506.0 B
-	-	`sha256:372861b65afceddfd72f421d2ad1a9f1ade132d8255344c8947a91f08dc7410a`  
-		Last Modified: Fri, 08 Jul 2016 18:41:42 GMT  
+	-	`sha256:759aa75f3ceee7f3f8ea4b29b012f025d81fc3302145431930511d0f451ed4b9`  
+		Last Modified: Fri, 22 Jul 2016 15:21:46 GMT  
+		Size: 825.0 B
+	-	`sha256:3fa871dc8a2b6b81da68842fdc09c8aaf22dd455b00eb6f9489b99ef686f503e`  
+		Last Modified: Fri, 22 Jul 2016 15:21:46 GMT  
+		Size: 510.0 B
+	-	`sha256:224c42ae46e73ea08ec728b621ac89f2dc8741b2b804fdeec8aa6672aff00513`  
+		Last Modified: Fri, 22 Jul 2016 15:21:46 GMT  
 		Size: 679.0 B
 
 ## `ubuntu:wily`
 
 ```console
-$ docker pull ubuntu@sha256:57542ccb01a9be52d4d514b2212cc2d8d54df1b7e6f40d5eb7ed1d93360d3d45
+$ docker pull ubuntu@sha256:02521a2d079595241c6793b2044f02eecf294034f31d6e235ac4b2b54ffc41f3
 ```
 
 -	Platforms:
@@ -485,21 +485,21 @@ $ docker pull ubuntu@sha256:57542ccb01a9be52d4d514b2212cc2d8d54df1b7e6f40d5eb7ed
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.1 MB (51090163 bytes)**  
+-	Total Size: **51.1 MB (51069322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:370864ce917e6c32db825613fa6f6b103f89c190426120797f26466a25f45280`
+-	Image ID: `sha256:9b9cb95443b5f846cd3c8cfa3f64e63b6ba68de2618a08875a119c81a8f96698`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 08 Jul 2016 18:39:16 GMT
 ADD file:d5d47c6a963e950e735765bfaf16851fc7297115de6c17bdd61148288e5b8873 in /
-# Mon, 18 Jul 2016 17:35:06 GMT
+# Fri, 22 Jul 2016 15:19:09 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:35:08 GMT
+# Fri, 22 Jul 2016 15:19:11 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:35:09 GMT
+# Fri, 22 Jul 2016 15:19:12 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:35:10 GMT
+# Fri, 22 Jul 2016 15:19:13 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -507,20 +507,20 @@ CMD ["/bin/bash"]
 	-	`sha256:7dcf5a4443927558c6720517b7996d912d98288d6f565e99195d1b72431a38ca`  
 		Last Modified: Fri, 08 Jul 2016 18:42:06 GMT  
 		Size: 51.1 MB (51067308 bytes)
-	-	`sha256:9eebba75a87f9339364057266fcd7c79489b809835388c2d5dd662f0d47ffaef`  
-		Last Modified: Mon, 18 Jul 2016 17:37:36 GMT  
-		Size: 21.7 KB (21663 bytes)
-	-	`sha256:1f0440d87cc73c252220267fbf1712ddd2c5df8a333a594c6a4f543af5fec207`  
-		Last Modified: Mon, 18 Jul 2016 17:37:36 GMT  
-		Size: 511.0 B
-	-	`sha256:dacd0555c1b42ff436bba2b824b6e2f04ddb70fd484b4bbb489bd11e4e2c1f24`  
-		Last Modified: Mon, 18 Jul 2016 17:37:37 GMT  
-		Size: 681.0 B
+	-	`sha256:759aa75f3ceee7f3f8ea4b29b012f025d81fc3302145431930511d0f451ed4b9`  
+		Last Modified: Fri, 22 Jul 2016 15:21:46 GMT  
+		Size: 825.0 B
+	-	`sha256:3fa871dc8a2b6b81da68842fdc09c8aaf22dd455b00eb6f9489b99ef686f503e`  
+		Last Modified: Fri, 22 Jul 2016 15:21:46 GMT  
+		Size: 510.0 B
+	-	`sha256:224c42ae46e73ea08ec728b621ac89f2dc8741b2b804fdeec8aa6672aff00513`  
+		Last Modified: Fri, 22 Jul 2016 15:21:46 GMT  
+		Size: 679.0 B
 
 ## `ubuntu:16.04`
 
 ```console
-$ docker pull ubuntu@sha256:7ce82491d6e35d3aa7458a56e470a821baecee651fba76957111402591d20fc1
+$ docker pull ubuntu@sha256:c6674c44c6439673bf56536c1a15916639c47ea04c3d6296c5df938add67b54b
 ```
 
 -	Platforms:
@@ -530,21 +530,21 @@ $ docker pull ubuntu@sha256:7ce82491d6e35d3aa7458a56e470a821baecee651fba76957111
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.3 MB (49348334 bytes)**  
+-	Total Size: **49.3 MB (49327506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac526a356ca46f915e822e2f8051b9cf3404c756b725661c51191564ae4e6ea7`
+-	Image ID: `sha256:42118e3df429f09ca581a9deb3df274601930e428e452f7e4e9f1833c56a100a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Jul 2016 17:35:22 GMT
+# Fri, 22 Jul 2016 15:19:25 GMT
 ADD file:fdbd881d78f9d7d9245d0838389ebc793bef13243b9e3269512046cd75216baf in /
-# Mon, 18 Jul 2016 17:35:24 GMT
+# Fri, 22 Jul 2016 15:19:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:35:26 GMT
+# Fri, 22 Jul 2016 15:19:29 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:35:27 GMT
+# Fri, 22 Jul 2016 15:19:31 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:35:28 GMT
+# Fri, 22 Jul 2016 15:19:31 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -552,20 +552,20 @@ CMD ["/bin/bash"]
 	-	`sha256:43db9dbdcb300fc39b23e88a1721bdaa95c7fe396bd89d6a4b1a39e8da1a2d4c`  
 		Last Modified: Mon, 18 Jul 2016 17:38:23 GMT  
 		Size: 49.3 MB (49325555 bytes)
-	-	`sha256:85a9cd1fcca227737b80281fed1c60453a7a49b02a956bb6531276df5646e77e`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
-		Size: 21.7 KB (21651 bytes)
-	-	`sha256:c23af84961027ee5a7725040d44b30d563eb6a79f013d2c924e31cae43367f33`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
-		Size: 447.0 B
-	-	`sha256:e88c36ca55d86a9331db93eef6dcac6a7027c19205fdb706185703ef28db154e`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
+	-	`sha256:2dc64e8f8d4f2e7511f002e12474ae01a482a9727d620f49a3871b5882891b3f`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
+		Size: 828.0 B
+	-	`sha256:670a583e1b5043337f8c73dcad9ff019f2ac0971475456fd4fdf296f2c5b939f`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
+		Size: 442.0 B
+	-	`sha256:183b0bfcd10e095bb23120d43204762e2aa9b5a53e2060817a2460bafc76ad37`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
 		Size: 681.0 B
 
 ## `ubuntu:xenial-20160713`
 
 ```console
-$ docker pull ubuntu@sha256:7ce82491d6e35d3aa7458a56e470a821baecee651fba76957111402591d20fc1
+$ docker pull ubuntu@sha256:c6674c44c6439673bf56536c1a15916639c47ea04c3d6296c5df938add67b54b
 ```
 
 -	Platforms:
@@ -575,21 +575,21 @@ $ docker pull ubuntu@sha256:7ce82491d6e35d3aa7458a56e470a821baecee651fba76957111
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.3 MB (49348334 bytes)**  
+-	Total Size: **49.3 MB (49327506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac526a356ca46f915e822e2f8051b9cf3404c756b725661c51191564ae4e6ea7`
+-	Image ID: `sha256:42118e3df429f09ca581a9deb3df274601930e428e452f7e4e9f1833c56a100a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Jul 2016 17:35:22 GMT
+# Fri, 22 Jul 2016 15:19:25 GMT
 ADD file:fdbd881d78f9d7d9245d0838389ebc793bef13243b9e3269512046cd75216baf in /
-# Mon, 18 Jul 2016 17:35:24 GMT
+# Fri, 22 Jul 2016 15:19:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:35:26 GMT
+# Fri, 22 Jul 2016 15:19:29 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:35:27 GMT
+# Fri, 22 Jul 2016 15:19:31 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:35:28 GMT
+# Fri, 22 Jul 2016 15:19:31 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -597,20 +597,20 @@ CMD ["/bin/bash"]
 	-	`sha256:43db9dbdcb300fc39b23e88a1721bdaa95c7fe396bd89d6a4b1a39e8da1a2d4c`  
 		Last Modified: Mon, 18 Jul 2016 17:38:23 GMT  
 		Size: 49.3 MB (49325555 bytes)
-	-	`sha256:85a9cd1fcca227737b80281fed1c60453a7a49b02a956bb6531276df5646e77e`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
-		Size: 21.7 KB (21651 bytes)
-	-	`sha256:c23af84961027ee5a7725040d44b30d563eb6a79f013d2c924e31cae43367f33`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
-		Size: 447.0 B
-	-	`sha256:e88c36ca55d86a9331db93eef6dcac6a7027c19205fdb706185703ef28db154e`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
+	-	`sha256:2dc64e8f8d4f2e7511f002e12474ae01a482a9727d620f49a3871b5882891b3f`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
+		Size: 828.0 B
+	-	`sha256:670a583e1b5043337f8c73dcad9ff019f2ac0971475456fd4fdf296f2c5b939f`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
+		Size: 442.0 B
+	-	`sha256:183b0bfcd10e095bb23120d43204762e2aa9b5a53e2060817a2460bafc76ad37`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
 		Size: 681.0 B
 
 ## `ubuntu:xenial`
 
 ```console
-$ docker pull ubuntu@sha256:7ce82491d6e35d3aa7458a56e470a821baecee651fba76957111402591d20fc1
+$ docker pull ubuntu@sha256:c6674c44c6439673bf56536c1a15916639c47ea04c3d6296c5df938add67b54b
 ```
 
 -	Platforms:
@@ -620,21 +620,21 @@ $ docker pull ubuntu@sha256:7ce82491d6e35d3aa7458a56e470a821baecee651fba76957111
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.3 MB (49348334 bytes)**  
+-	Total Size: **49.3 MB (49327506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac526a356ca46f915e822e2f8051b9cf3404c756b725661c51191564ae4e6ea7`
+-	Image ID: `sha256:42118e3df429f09ca581a9deb3df274601930e428e452f7e4e9f1833c56a100a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Jul 2016 17:35:22 GMT
+# Fri, 22 Jul 2016 15:19:25 GMT
 ADD file:fdbd881d78f9d7d9245d0838389ebc793bef13243b9e3269512046cd75216baf in /
-# Mon, 18 Jul 2016 17:35:24 GMT
+# Fri, 22 Jul 2016 15:19:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:35:26 GMT
+# Fri, 22 Jul 2016 15:19:29 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:35:27 GMT
+# Fri, 22 Jul 2016 15:19:31 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:35:28 GMT
+# Fri, 22 Jul 2016 15:19:31 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -642,20 +642,20 @@ CMD ["/bin/bash"]
 	-	`sha256:43db9dbdcb300fc39b23e88a1721bdaa95c7fe396bd89d6a4b1a39e8da1a2d4c`  
 		Last Modified: Mon, 18 Jul 2016 17:38:23 GMT  
 		Size: 49.3 MB (49325555 bytes)
-	-	`sha256:85a9cd1fcca227737b80281fed1c60453a7a49b02a956bb6531276df5646e77e`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
-		Size: 21.7 KB (21651 bytes)
-	-	`sha256:c23af84961027ee5a7725040d44b30d563eb6a79f013d2c924e31cae43367f33`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
-		Size: 447.0 B
-	-	`sha256:e88c36ca55d86a9331db93eef6dcac6a7027c19205fdb706185703ef28db154e`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
+	-	`sha256:2dc64e8f8d4f2e7511f002e12474ae01a482a9727d620f49a3871b5882891b3f`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
+		Size: 828.0 B
+	-	`sha256:670a583e1b5043337f8c73dcad9ff019f2ac0971475456fd4fdf296f2c5b939f`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
+		Size: 442.0 B
+	-	`sha256:183b0bfcd10e095bb23120d43204762e2aa9b5a53e2060817a2460bafc76ad37`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
 		Size: 681.0 B
 
 ## `ubuntu:latest`
 
 ```console
-$ docker pull ubuntu@sha256:7ce82491d6e35d3aa7458a56e470a821baecee651fba76957111402591d20fc1
+$ docker pull ubuntu@sha256:c6674c44c6439673bf56536c1a15916639c47ea04c3d6296c5df938add67b54b
 ```
 
 -	Platforms:
@@ -665,21 +665,21 @@ $ docker pull ubuntu@sha256:7ce82491d6e35d3aa7458a56e470a821baecee651fba76957111
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.3 MB (49348334 bytes)**  
+-	Total Size: **49.3 MB (49327506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac526a356ca46f915e822e2f8051b9cf3404c756b725661c51191564ae4e6ea7`
+-	Image ID: `sha256:42118e3df429f09ca581a9deb3df274601930e428e452f7e4e9f1833c56a100a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Jul 2016 17:35:22 GMT
+# Fri, 22 Jul 2016 15:19:25 GMT
 ADD file:fdbd881d78f9d7d9245d0838389ebc793bef13243b9e3269512046cd75216baf in /
-# Mon, 18 Jul 2016 17:35:24 GMT
+# Fri, 22 Jul 2016 15:19:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:35:26 GMT
+# Fri, 22 Jul 2016 15:19:29 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:35:27 GMT
+# Fri, 22 Jul 2016 15:19:31 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:35:28 GMT
+# Fri, 22 Jul 2016 15:19:31 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -687,20 +687,20 @@ CMD ["/bin/bash"]
 	-	`sha256:43db9dbdcb300fc39b23e88a1721bdaa95c7fe396bd89d6a4b1a39e8da1a2d4c`  
 		Last Modified: Mon, 18 Jul 2016 17:38:23 GMT  
 		Size: 49.3 MB (49325555 bytes)
-	-	`sha256:85a9cd1fcca227737b80281fed1c60453a7a49b02a956bb6531276df5646e77e`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
-		Size: 21.7 KB (21651 bytes)
-	-	`sha256:c23af84961027ee5a7725040d44b30d563eb6a79f013d2c924e31cae43367f33`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
-		Size: 447.0 B
-	-	`sha256:e88c36ca55d86a9331db93eef6dcac6a7027c19205fdb706185703ef28db154e`  
-		Last Modified: Mon, 18 Jul 2016 17:38:09 GMT  
+	-	`sha256:2dc64e8f8d4f2e7511f002e12474ae01a482a9727d620f49a3871b5882891b3f`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
+		Size: 828.0 B
+	-	`sha256:670a583e1b5043337f8c73dcad9ff019f2ac0971475456fd4fdf296f2c5b939f`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
+		Size: 442.0 B
+	-	`sha256:183b0bfcd10e095bb23120d43204762e2aa9b5a53e2060817a2460bafc76ad37`  
+		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
 		Size: 681.0 B
 
 ## `ubuntu:16.10`
 
 ```console
-$ docker pull ubuntu@sha256:d0337f02f917703f0f90cdd063ad9756c1bf69b756d5f7e63747ab7a58fae22f
+$ docker pull ubuntu@sha256:16c7a1a4fff04d0ce1ddcb69a683c6807071cd003d52775edc63580ce3c20961
 ```
 
 -	Platforms:
@@ -710,21 +710,21 @@ $ docker pull ubuntu@sha256:d0337f02f917703f0f90cdd063ad9756c1bf69b756d5f7e63747
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.4 MB (39408765 bytes)**  
+-	Total Size: **39.4 MB (39387970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89be4b5bde17024d2ce5c5561dc9ed36a14d82aff01e9b842ec5d2f2e7505c6e`
+-	Image ID: `sha256:175e129b1641afe59ad966aedfb524ae06101a623c4d417dad91af5b869746ea`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Jul 2016 17:35:39 GMT
+# Fri, 22 Jul 2016 15:19:43 GMT
 ADD file:82c8008af11d2eb33438f6fc768606e7e2468b7a87e09af447c57fb7ba689fbd in /
-# Mon, 18 Jul 2016 17:35:41 GMT
+# Fri, 22 Jul 2016 15:19:44 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:35:43 GMT
+# Fri, 22 Jul 2016 15:19:46 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:35:45 GMT
+# Fri, 22 Jul 2016 15:19:48 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:35:45 GMT
+# Fri, 22 Jul 2016 15:19:49 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -732,20 +732,20 @@ CMD ["/bin/bash"]
 	-	`sha256:e603d74d09dbf451a844b3332c225ab9092293d5de8d159a67551be15438e667`  
 		Last Modified: Mon, 18 Jul 2016 17:39:15 GMT  
 		Size: 39.4 MB (39385890 bytes)
-	-	`sha256:38306d0db49afb4a30907d022c4b4bc341c579da86604fcae83bbd8849e40ab4`  
-		Last Modified: Mon, 18 Jul 2016 17:39:05 GMT  
-		Size: 21.6 KB (21623 bytes)
-	-	`sha256:0c7549ea4bd08bcb02872eea69e9485839cb6a49e7fca29d4bb428c03f54dade`  
-		Last Modified: Mon, 18 Jul 2016 17:39:04 GMT  
-		Size: 389.0 B
-	-	`sha256:ec0925546532db0c7e35f8c88be38f7aa4877337e04bab24f895c357aeb3223b`  
-		Last Modified: Mon, 18 Jul 2016 17:39:04 GMT  
-		Size: 863.0 B
+	-	`sha256:19758b3f895381f0b57c47b3968df75c37a94f92557233308c35e01408ccaa84`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 825.0 B
+	-	`sha256:f72f46e336180483da93a71be9411ea0c72385c0acb5d9fd68e62ce307e1b70d`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 391.0 B
+	-	`sha256:6450d7bf258fabcb8ae17736096f28b89d010e3134091051cc5a54340d8414fd`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 864.0 B
 
 ## `ubuntu:yakkety-20160717`
 
 ```console
-$ docker pull ubuntu@sha256:d0337f02f917703f0f90cdd063ad9756c1bf69b756d5f7e63747ab7a58fae22f
+$ docker pull ubuntu@sha256:16c7a1a4fff04d0ce1ddcb69a683c6807071cd003d52775edc63580ce3c20961
 ```
 
 -	Platforms:
@@ -755,21 +755,21 @@ $ docker pull ubuntu@sha256:d0337f02f917703f0f90cdd063ad9756c1bf69b756d5f7e63747
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.4 MB (39408765 bytes)**  
+-	Total Size: **39.4 MB (39387970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89be4b5bde17024d2ce5c5561dc9ed36a14d82aff01e9b842ec5d2f2e7505c6e`
+-	Image ID: `sha256:175e129b1641afe59ad966aedfb524ae06101a623c4d417dad91af5b869746ea`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Jul 2016 17:35:39 GMT
+# Fri, 22 Jul 2016 15:19:43 GMT
 ADD file:82c8008af11d2eb33438f6fc768606e7e2468b7a87e09af447c57fb7ba689fbd in /
-# Mon, 18 Jul 2016 17:35:41 GMT
+# Fri, 22 Jul 2016 15:19:44 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:35:43 GMT
+# Fri, 22 Jul 2016 15:19:46 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:35:45 GMT
+# Fri, 22 Jul 2016 15:19:48 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:35:45 GMT
+# Fri, 22 Jul 2016 15:19:49 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -777,20 +777,20 @@ CMD ["/bin/bash"]
 	-	`sha256:e603d74d09dbf451a844b3332c225ab9092293d5de8d159a67551be15438e667`  
 		Last Modified: Mon, 18 Jul 2016 17:39:15 GMT  
 		Size: 39.4 MB (39385890 bytes)
-	-	`sha256:38306d0db49afb4a30907d022c4b4bc341c579da86604fcae83bbd8849e40ab4`  
-		Last Modified: Mon, 18 Jul 2016 17:39:05 GMT  
-		Size: 21.6 KB (21623 bytes)
-	-	`sha256:0c7549ea4bd08bcb02872eea69e9485839cb6a49e7fca29d4bb428c03f54dade`  
-		Last Modified: Mon, 18 Jul 2016 17:39:04 GMT  
-		Size: 389.0 B
-	-	`sha256:ec0925546532db0c7e35f8c88be38f7aa4877337e04bab24f895c357aeb3223b`  
-		Last Modified: Mon, 18 Jul 2016 17:39:04 GMT  
-		Size: 863.0 B
+	-	`sha256:19758b3f895381f0b57c47b3968df75c37a94f92557233308c35e01408ccaa84`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 825.0 B
+	-	`sha256:f72f46e336180483da93a71be9411ea0c72385c0acb5d9fd68e62ce307e1b70d`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 391.0 B
+	-	`sha256:6450d7bf258fabcb8ae17736096f28b89d010e3134091051cc5a54340d8414fd`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 864.0 B
 
 ## `ubuntu:yakkety`
 
 ```console
-$ docker pull ubuntu@sha256:d0337f02f917703f0f90cdd063ad9756c1bf69b756d5f7e63747ab7a58fae22f
+$ docker pull ubuntu@sha256:16c7a1a4fff04d0ce1ddcb69a683c6807071cd003d52775edc63580ce3c20961
 ```
 
 -	Platforms:
@@ -800,21 +800,21 @@ $ docker pull ubuntu@sha256:d0337f02f917703f0f90cdd063ad9756c1bf69b756d5f7e63747
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.4 MB (39408765 bytes)**  
+-	Total Size: **39.4 MB (39387970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89be4b5bde17024d2ce5c5561dc9ed36a14d82aff01e9b842ec5d2f2e7505c6e`
+-	Image ID: `sha256:175e129b1641afe59ad966aedfb524ae06101a623c4d417dad91af5b869746ea`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Jul 2016 17:35:39 GMT
+# Fri, 22 Jul 2016 15:19:43 GMT
 ADD file:82c8008af11d2eb33438f6fc768606e7e2468b7a87e09af447c57fb7ba689fbd in /
-# Mon, 18 Jul 2016 17:35:41 GMT
+# Fri, 22 Jul 2016 15:19:44 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:35:43 GMT
+# Fri, 22 Jul 2016 15:19:46 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:35:45 GMT
+# Fri, 22 Jul 2016 15:19:48 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:35:45 GMT
+# Fri, 22 Jul 2016 15:19:49 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -822,20 +822,20 @@ CMD ["/bin/bash"]
 	-	`sha256:e603d74d09dbf451a844b3332c225ab9092293d5de8d159a67551be15438e667`  
 		Last Modified: Mon, 18 Jul 2016 17:39:15 GMT  
 		Size: 39.4 MB (39385890 bytes)
-	-	`sha256:38306d0db49afb4a30907d022c4b4bc341c579da86604fcae83bbd8849e40ab4`  
-		Last Modified: Mon, 18 Jul 2016 17:39:05 GMT  
-		Size: 21.6 KB (21623 bytes)
-	-	`sha256:0c7549ea4bd08bcb02872eea69e9485839cb6a49e7fca29d4bb428c03f54dade`  
-		Last Modified: Mon, 18 Jul 2016 17:39:04 GMT  
-		Size: 389.0 B
-	-	`sha256:ec0925546532db0c7e35f8c88be38f7aa4877337e04bab24f895c357aeb3223b`  
-		Last Modified: Mon, 18 Jul 2016 17:39:04 GMT  
-		Size: 863.0 B
+	-	`sha256:19758b3f895381f0b57c47b3968df75c37a94f92557233308c35e01408ccaa84`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 825.0 B
+	-	`sha256:f72f46e336180483da93a71be9411ea0c72385c0acb5d9fd68e62ce307e1b70d`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 391.0 B
+	-	`sha256:6450d7bf258fabcb8ae17736096f28b89d010e3134091051cc5a54340d8414fd`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 864.0 B
 
 ## `ubuntu:devel`
 
 ```console
-$ docker pull ubuntu@sha256:d0337f02f917703f0f90cdd063ad9756c1bf69b756d5f7e63747ab7a58fae22f
+$ docker pull ubuntu@sha256:16c7a1a4fff04d0ce1ddcb69a683c6807071cd003d52775edc63580ce3c20961
 ```
 
 -	Platforms:
@@ -845,21 +845,21 @@ $ docker pull ubuntu@sha256:d0337f02f917703f0f90cdd063ad9756c1bf69b756d5f7e63747
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.4 MB (39408765 bytes)**  
+-	Total Size: **39.4 MB (39387970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89be4b5bde17024d2ce5c5561dc9ed36a14d82aff01e9b842ec5d2f2e7505c6e`
+-	Image ID: `sha256:175e129b1641afe59ad966aedfb524ae06101a623c4d417dad91af5b869746ea`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Jul 2016 17:35:39 GMT
+# Fri, 22 Jul 2016 15:19:43 GMT
 ADD file:82c8008af11d2eb33438f6fc768606e7e2468b7a87e09af447c57fb7ba689fbd in /
-# Mon, 18 Jul 2016 17:35:41 GMT
+# Fri, 22 Jul 2016 15:19:44 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Jul 2016 17:35:43 GMT
+# Fri, 22 Jul 2016 15:19:46 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Jul 2016 17:35:45 GMT
+# Fri, 22 Jul 2016 15:19:48 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Jul 2016 17:35:45 GMT
+# Fri, 22 Jul 2016 15:19:49 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -867,12 +867,12 @@ CMD ["/bin/bash"]
 	-	`sha256:e603d74d09dbf451a844b3332c225ab9092293d5de8d159a67551be15438e667`  
 		Last Modified: Mon, 18 Jul 2016 17:39:15 GMT  
 		Size: 39.4 MB (39385890 bytes)
-	-	`sha256:38306d0db49afb4a30907d022c4b4bc341c579da86604fcae83bbd8849e40ab4`  
-		Last Modified: Mon, 18 Jul 2016 17:39:05 GMT  
-		Size: 21.6 KB (21623 bytes)
-	-	`sha256:0c7549ea4bd08bcb02872eea69e9485839cb6a49e7fca29d4bb428c03f54dade`  
-		Last Modified: Mon, 18 Jul 2016 17:39:04 GMT  
-		Size: 389.0 B
-	-	`sha256:ec0925546532db0c7e35f8c88be38f7aa4877337e04bab24f895c357aeb3223b`  
-		Last Modified: Mon, 18 Jul 2016 17:39:04 GMT  
-		Size: 863.0 B
+	-	`sha256:19758b3f895381f0b57c47b3968df75c37a94f92557233308c35e01408ccaa84`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 825.0 B
+	-	`sha256:f72f46e336180483da93a71be9411ea0c72385c0acb5d9fd68e62ce307e1b70d`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 391.0 B
+	-	`sha256:6450d7bf258fabcb8ae17736096f28b89d010e3134091051cc5a54340d8414fd`  
+		Last Modified: Fri, 22 Jul 2016 15:22:54 GMT  
+		Size: 864.0 B
