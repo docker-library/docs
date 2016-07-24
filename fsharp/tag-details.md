@@ -9,7 +9,7 @@
 ## `fsharp:4.0.0.4`
 
 ```console
-$ docker pull fsharp@sha256:b91424d393f3922cd18549dd98aca117d3c46b7f3036da761d8ae316301e22da
+$ docker pull fsharp@sha256:e82ff2151ef802e26792d3e26e6c7a591109020804d838258c5eee70d7a1c0f7
 ```
 
 -	Platforms:
@@ -19,84 +19,84 @@ $ docker pull fsharp@sha256:b91424d393f3922cd18549dd98aca117d3c46b7f3036da761d8a
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.3 MB (261280512 bytes)**  
+-	Total Size: **261.1 MB (261145778 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac254eeb34a1b8452e7cb99e3800c6a7715d14595ca501c44ecfd2769ca7819f`
+-	Image ID: `sha256:de861cc5f669b86b01932cbb1b16e9ddc136ac45a57a948faf33ead77bf0bbc4`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Fri, 22 Jul 2016 15:18:56 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Fri, 22 Jul 2016 15:18:58 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Fri, 22 Jul 2016 15:19:00 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:19:48 GMT
+# Fri, 22 Jul 2016 16:56:40 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 18:21:11 GMT
+# Fri, 22 Jul 2016 16:57:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 18:58:43 GMT
+# Fri, 22 Jul 2016 16:59:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 Jul 2016 22:24:54 GMT
+# Fri, 22 Jul 2016 17:40:00 GMT
 MAINTAINER Henrik Feldt
-# Fri, 15 Jul 2016 22:24:54 GMT
+# Fri, 22 Jul 2016 17:40:00 GMT
 ENV MONO_VERSION=4.2.3.4
-# Fri, 15 Jul 2016 22:25:12 GMT
+# Fri, 22 Jul 2016 17:40:18 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 15 Jul 2016 22:25:12 GMT
+# Fri, 22 Jul 2016 17:40:19 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 15 Jul 2016 22:26:48 GMT
+# Fri, 22 Jul 2016 17:42:07 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 15 Jul 2016 22:26:49 GMT
+# Fri, 22 Jul 2016 17:42:08 GMT
 ENV FSHARP_VERSION=4.0.0.4
-# Fri, 15 Jul 2016 22:26:49 GMT
+# Fri, 22 Jul 2016 17:42:09 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.0.4 FSHARP_ARCHIVE=4.0.0.4.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.0.4.tar.gz
-# Fri, 15 Jul 2016 22:34:04 GMT
+# Fri, 22 Jul 2016 17:49:25 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 15 Jul 2016 22:34:04 GMT
+# Fri, 22 Jul 2016 17:49:26 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:ed40d4bcb31369df1a018c64e560e94dfd106d0b2851db25f921d3708d64fac5`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 71.6 KB (71563 bytes)
+	-	`sha256:b171f9dbc13b68a99386e4d54e28e26144688973ad7bbdd9ec1f822dc8b0ac0a`  
+		Last Modified: Fri, 22 Jul 2016 15:21:06 GMT  
 		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:7d347d9063d029c97a306ad58b09bbbc9168b51a90170804b9bb457364af5bc9`  
-		Last Modified: Fri, 24 Jun 2016 18:19:57 GMT  
-		Size: 4.6 MB (4619845 bytes)
-	-	`sha256:2a5568b50420b9473214b05c353ebff716ea0649a8c18e0d9b3a5ee2ad5a1ca5`  
-		Last Modified: Fri, 24 Jun 2016 18:21:27 GMT  
-		Size: 29.0 MB (29035922 bytes)
-	-	`sha256:79353f08fa97083773d931c13855278a1affc2726fcb142ab2430fd833cea5bf`  
-		Last Modified: Wed, 29 Jun 2016 18:59:14 GMT  
-		Size: 99.8 MB (99819417 bytes)
-	-	`sha256:66f9b081b2752dde04a5f777911e9e2318e5631550d802d44e64f96ebfe42305`  
-		Last Modified: Fri, 15 Jul 2016 22:41:37 GMT  
-		Size: 13.5 KB (13536 bytes)
-	-	`sha256:476c6035e451b2db7312cacf188555581ed814f21adb5197940f9e72d6dff7b8`  
-		Last Modified: Fri, 15 Jul 2016 22:41:55 GMT  
-		Size: 52.9 MB (52935771 bytes)
-	-	`sha256:f444077de0f54a8f074416cb10fef4f089aa7e33effd9d103f4ebe3c90989e56`  
-		Last Modified: Fri, 15 Jul 2016 22:41:41 GMT  
-		Size: 9.1 MB (9054192 bytes)
+	-	`sha256:ccfc4df4fbba7d591c1eff4972018e67c1142b21b64bc36fba3f93bd33f2ebd9`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 680.0 B
+	-	`sha256:5036c705f4c89d1622d6199f627d63b89766bd9d524093d750c2e13b119c12dd`  
+		Last Modified: Fri, 22 Jul 2016 17:27:58 GMT  
+		Size: 4.6 MB (4598315 bytes)
+	-	`sha256:a4f5a357f49fcc813854779c9fba583dff945e30bd330bdbc5d0bbc7f3c156eb`  
+		Last Modified: Fri, 22 Jul 2016 17:28:09 GMT  
+		Size: 29.0 MB (29004589 bytes)
+	-	`sha256:b4dc22b2034a5a8736e3d7cb07f589eb19ca6aa203b7a5f5de044366fa2e4e98`  
+		Last Modified: Fri, 22 Jul 2016 17:28:21 GMT  
+		Size: 99.8 MB (99788535 bytes)
+	-	`sha256:a8941525e35f601064b9f9849ce3ff9a2603c0cb132eef9971d6cce37ef57d23`  
+		Last Modified: Fri, 22 Jul 2016 17:49:34 GMT  
+		Size: 13.5 KB (13533 bytes)
+	-	`sha256:e907201658e241b79e861323842140ed18191c31948adec9ec4ac9accdd1831d`  
+		Last Modified: Fri, 22 Jul 2016 17:49:52 GMT  
+		Size: 52.9 MB (52914891 bytes)
+	-	`sha256:5a87130ac524040d91bcf27b13bc4881f5149ae5e42906d6ebef01c0dcd7ef3f`  
+		Last Modified: Fri, 22 Jul 2016 17:49:37 GMT  
+		Size: 9.1 MB (9054238 bytes)
 
 ## `fsharp:4.0.1.1`
 
 ```console
-$ docker pull fsharp@sha256:c13b9feb5408eec6c89b9441ca9643d7ac60af1cfb4dbcceb214741111a89be8
+$ docker pull fsharp@sha256:434a3d6480e62f285ba1e03560fd25fa16377334679d456f34c7f6ca6aa805b6
 ```
 
 -	Platforms:
@@ -106,86 +106,86 @@ $ docker pull fsharp@sha256:c13b9feb5408eec6c89b9441ca9643d7ac60af1cfb4dbcceb214
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **262.5 MB (262536134 bytes)**  
+-	Total Size: **262.4 MB (262401345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc172cf675c66dae34373e0d56904320a8d32478262e9cf66374051196d2ab88`
+-	Image ID: `sha256:03f84662e87effe102907cac2bb8622db43cd77ffef654f46061585528f286fb`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Fri, 22 Jul 2016 15:18:56 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Fri, 22 Jul 2016 15:18:58 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Fri, 22 Jul 2016 15:19:00 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:19:48 GMT
+# Fri, 22 Jul 2016 16:56:40 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 18:21:11 GMT
+# Fri, 22 Jul 2016 16:57:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 18:58:43 GMT
+# Fri, 22 Jul 2016 16:59:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 Jul 2016 22:24:54 GMT
+# Fri, 22 Jul 2016 17:40:00 GMT
 MAINTAINER Henrik Feldt
-# Fri, 15 Jul 2016 22:24:54 GMT
+# Fri, 22 Jul 2016 17:40:00 GMT
 ENV MONO_VERSION=4.2.3.4
-# Fri, 15 Jul 2016 22:25:12 GMT
+# Fri, 22 Jul 2016 17:40:18 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 15 Jul 2016 22:25:12 GMT
+# Fri, 22 Jul 2016 17:40:19 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 15 Jul 2016 22:26:48 GMT
+# Fri, 22 Jul 2016 17:42:07 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 15 Jul 2016 22:34:05 GMT
+# Fri, 22 Jul 2016 17:50:01 GMT
 ENV FSHARP_VERSION=4.0.1.1
-# Fri, 15 Jul 2016 22:34:05 GMT
+# Fri, 22 Jul 2016 17:50:01 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.1.1 FSHARP_ARCHIVE=4.0.1.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.1.1.tar.gz
-# Fri, 15 Jul 2016 22:41:29 GMT
+# Fri, 22 Jul 2016 17:57:21 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 15 Jul 2016 22:41:29 GMT
+# Fri, 22 Jul 2016 17:57:22 GMT
 WORKDIR /root
-# Fri, 15 Jul 2016 22:41:29 GMT
+# Fri, 22 Jul 2016 17:57:22 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:ed40d4bcb31369df1a018c64e560e94dfd106d0b2851db25f921d3708d64fac5`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 71.6 KB (71563 bytes)
+	-	`sha256:b171f9dbc13b68a99386e4d54e28e26144688973ad7bbdd9ec1f822dc8b0ac0a`  
+		Last Modified: Fri, 22 Jul 2016 15:21:06 GMT  
 		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:7d347d9063d029c97a306ad58b09bbbc9168b51a90170804b9bb457364af5bc9`  
-		Last Modified: Fri, 24 Jun 2016 18:19:57 GMT  
-		Size: 4.6 MB (4619845 bytes)
-	-	`sha256:2a5568b50420b9473214b05c353ebff716ea0649a8c18e0d9b3a5ee2ad5a1ca5`  
-		Last Modified: Fri, 24 Jun 2016 18:21:27 GMT  
-		Size: 29.0 MB (29035922 bytes)
-	-	`sha256:79353f08fa97083773d931c13855278a1affc2726fcb142ab2430fd833cea5bf`  
-		Last Modified: Wed, 29 Jun 2016 18:59:14 GMT  
-		Size: 99.8 MB (99819417 bytes)
-	-	`sha256:66f9b081b2752dde04a5f777911e9e2318e5631550d802d44e64f96ebfe42305`  
-		Last Modified: Fri, 15 Jul 2016 22:41:37 GMT  
-		Size: 13.5 KB (13536 bytes)
-	-	`sha256:476c6035e451b2db7312cacf188555581ed814f21adb5197940f9e72d6dff7b8`  
-		Last Modified: Fri, 15 Jul 2016 22:41:55 GMT  
-		Size: 52.9 MB (52935771 bytes)
-	-	`sha256:441e07e13587bc277bdcdafabd6ae43768e52e0450579e05954f490416d4309b`  
-		Last Modified: Fri, 15 Jul 2016 22:42:14 GMT  
-		Size: 10.3 MB (10309814 bytes)
+	-	`sha256:ccfc4df4fbba7d591c1eff4972018e67c1142b21b64bc36fba3f93bd33f2ebd9`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 680.0 B
+	-	`sha256:5036c705f4c89d1622d6199f627d63b89766bd9d524093d750c2e13b119c12dd`  
+		Last Modified: Fri, 22 Jul 2016 17:27:58 GMT  
+		Size: 4.6 MB (4598315 bytes)
+	-	`sha256:a4f5a357f49fcc813854779c9fba583dff945e30bd330bdbc5d0bbc7f3c156eb`  
+		Last Modified: Fri, 22 Jul 2016 17:28:09 GMT  
+		Size: 29.0 MB (29004589 bytes)
+	-	`sha256:b4dc22b2034a5a8736e3d7cb07f589eb19ca6aa203b7a5f5de044366fa2e4e98`  
+		Last Modified: Fri, 22 Jul 2016 17:28:21 GMT  
+		Size: 99.8 MB (99788535 bytes)
+	-	`sha256:a8941525e35f601064b9f9849ce3ff9a2603c0cb132eef9971d6cce37ef57d23`  
+		Last Modified: Fri, 22 Jul 2016 17:49:34 GMT  
+		Size: 13.5 KB (13533 bytes)
+	-	`sha256:e907201658e241b79e861323842140ed18191c31948adec9ec4ac9accdd1831d`  
+		Last Modified: Fri, 22 Jul 2016 17:49:52 GMT  
+		Size: 52.9 MB (52914891 bytes)
+	-	`sha256:786a125b7282aa651f632be64bc257ffc627e5e37e52fbca23b8bc03a6c8955d`  
+		Last Modified: Fri, 22 Jul 2016 17:57:35 GMT  
+		Size: 10.3 MB (10309805 bytes)
 
 ## `fsharp:latest`
 
 ```console
-$ docker pull fsharp@sha256:c13b9feb5408eec6c89b9441ca9643d7ac60af1cfb4dbcceb214741111a89be8
+$ docker pull fsharp@sha256:434a3d6480e62f285ba1e03560fd25fa16377334679d456f34c7f6ca6aa805b6
 ```
 
 -	Platforms:
@@ -195,78 +195,78 @@ $ docker pull fsharp@sha256:c13b9feb5408eec6c89b9441ca9643d7ac60af1cfb4dbcceb214
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **262.5 MB (262536134 bytes)**  
+-	Total Size: **262.4 MB (262401345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc172cf675c66dae34373e0d56904320a8d32478262e9cf66374051196d2ab88`
+-	Image ID: `sha256:03f84662e87effe102907cac2bb8622db43cd77ffef654f46061585528f286fb`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Fri, 22 Jul 2016 15:18:56 GMT
+ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
+# Fri, 22 Jul 2016 15:18:58 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Fri, 22 Jul 2016 15:19:00 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Fri, 22 Jul 2016 15:19:02 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:19:48 GMT
+# Fri, 22 Jul 2016 16:56:40 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 18:21:11 GMT
+# Fri, 22 Jul 2016 16:57:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 29 Jun 2016 18:58:43 GMT
+# Fri, 22 Jul 2016 16:59:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 Jul 2016 22:24:54 GMT
+# Fri, 22 Jul 2016 17:40:00 GMT
 MAINTAINER Henrik Feldt
-# Fri, 15 Jul 2016 22:24:54 GMT
+# Fri, 22 Jul 2016 17:40:00 GMT
 ENV MONO_VERSION=4.2.3.4
-# Fri, 15 Jul 2016 22:25:12 GMT
+# Fri, 22 Jul 2016 17:40:18 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 15 Jul 2016 22:25:12 GMT
+# Fri, 22 Jul 2016 17:40:19 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 15 Jul 2016 22:26:48 GMT
+# Fri, 22 Jul 2016 17:42:07 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 15 Jul 2016 22:34:05 GMT
+# Fri, 22 Jul 2016 17:50:01 GMT
 ENV FSHARP_VERSION=4.0.1.1
-# Fri, 15 Jul 2016 22:34:05 GMT
+# Fri, 22 Jul 2016 17:50:01 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.1.1 FSHARP_ARCHIVE=4.0.1.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.1.1.tar.gz
-# Fri, 15 Jul 2016 22:41:29 GMT
+# Fri, 22 Jul 2016 17:57:21 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 15 Jul 2016 22:41:29 GMT
+# Fri, 22 Jul 2016 17:57:22 GMT
 WORKDIR /root
-# Fri, 15 Jul 2016 22:41:29 GMT
+# Fri, 22 Jul 2016 17:57:22 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
+	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
+		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
+		Size: 65.7 MB (65699069 bytes)
+	-	`sha256:ed40d4bcb31369df1a018c64e560e94dfd106d0b2851db25f921d3708d64fac5`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 71.6 KB (71563 bytes)
+	-	`sha256:b171f9dbc13b68a99386e4d54e28e26144688973ad7bbdd9ec1f822dc8b0ac0a`  
+		Last Modified: Fri, 22 Jul 2016 15:21:06 GMT  
 		Size: 365.0 B
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
-	-	`sha256:7d347d9063d029c97a306ad58b09bbbc9168b51a90170804b9bb457364af5bc9`  
-		Last Modified: Fri, 24 Jun 2016 18:19:57 GMT  
-		Size: 4.6 MB (4619845 bytes)
-	-	`sha256:2a5568b50420b9473214b05c353ebff716ea0649a8c18e0d9b3a5ee2ad5a1ca5`  
-		Last Modified: Fri, 24 Jun 2016 18:21:27 GMT  
-		Size: 29.0 MB (29035922 bytes)
-	-	`sha256:79353f08fa97083773d931c13855278a1affc2726fcb142ab2430fd833cea5bf`  
-		Last Modified: Wed, 29 Jun 2016 18:59:14 GMT  
-		Size: 99.8 MB (99819417 bytes)
-	-	`sha256:66f9b081b2752dde04a5f777911e9e2318e5631550d802d44e64f96ebfe42305`  
-		Last Modified: Fri, 15 Jul 2016 22:41:37 GMT  
-		Size: 13.5 KB (13536 bytes)
-	-	`sha256:476c6035e451b2db7312cacf188555581ed814f21adb5197940f9e72d6dff7b8`  
-		Last Modified: Fri, 15 Jul 2016 22:41:55 GMT  
-		Size: 52.9 MB (52935771 bytes)
-	-	`sha256:441e07e13587bc277bdcdafabd6ae43768e52e0450579e05954f490416d4309b`  
-		Last Modified: Fri, 15 Jul 2016 22:42:14 GMT  
-		Size: 10.3 MB (10309814 bytes)
+	-	`sha256:ccfc4df4fbba7d591c1eff4972018e67c1142b21b64bc36fba3f93bd33f2ebd9`  
+		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+		Size: 680.0 B
+	-	`sha256:5036c705f4c89d1622d6199f627d63b89766bd9d524093d750c2e13b119c12dd`  
+		Last Modified: Fri, 22 Jul 2016 17:27:58 GMT  
+		Size: 4.6 MB (4598315 bytes)
+	-	`sha256:a4f5a357f49fcc813854779c9fba583dff945e30bd330bdbc5d0bbc7f3c156eb`  
+		Last Modified: Fri, 22 Jul 2016 17:28:09 GMT  
+		Size: 29.0 MB (29004589 bytes)
+	-	`sha256:b4dc22b2034a5a8736e3d7cb07f589eb19ca6aa203b7a5f5de044366fa2e4e98`  
+		Last Modified: Fri, 22 Jul 2016 17:28:21 GMT  
+		Size: 99.8 MB (99788535 bytes)
+	-	`sha256:a8941525e35f601064b9f9849ce3ff9a2603c0cb132eef9971d6cce37ef57d23`  
+		Last Modified: Fri, 22 Jul 2016 17:49:34 GMT  
+		Size: 13.5 KB (13533 bytes)
+	-	`sha256:e907201658e241b79e861323842140ed18191c31948adec9ec4ac9accdd1831d`  
+		Last Modified: Fri, 22 Jul 2016 17:49:52 GMT  
+		Size: 52.9 MB (52914891 bytes)
+	-	`sha256:786a125b7282aa651f632be64bc257ffc627e5e37e52fbca23b8bc03a6c8955d`  
+		Last Modified: Fri, 22 Jul 2016 17:57:35 GMT  
+		Size: 10.3 MB (10309805 bytes)
