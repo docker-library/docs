@@ -5,11 +5,12 @@
 -	[`nuxeo:latest`](#nuxeolatest)
 -	[`nuxeo:FT`](#nuxeoft)
 -	[`nuxeo:8`](#nuxeo8)
+-	[`nuxeo:8.3`](#nuxeo83)
 -	[`nuxeo:8.2`](#nuxeo82)
 -	[`nuxeo:LTS-2015`](#nuxeolts-2015)
 -	[`nuxeo:LTS`](#nuxeolts)
--	[`nuxeo:7.10`](#nuxeo710)
 -	[`nuxeo:7`](#nuxeo7)
+-	[`nuxeo:7.10`](#nuxeo710)
 -	[`nuxeo:LTS-2014`](#nuxeolts-2014)
 -	[`nuxeo:6`](#nuxeo6)
 -	[`nuxeo:6.0`](#nuxeo60)
@@ -404,6 +405,10 @@ CMD ["nuxeoctl" "console"]
 		Last Modified: Mon, 27 Jun 2016 17:07:51 GMT  
 		Size: 1.5 KB (1478 bytes)
 
+## `nuxeo:8.3`
+
+**does not exist** (yet?)
+
 ## `nuxeo:8.2`
 
 ```console
@@ -794,7 +799,7 @@ CMD ["nuxeoctl" "console"]
 		Last Modified: Mon, 27 Jun 2016 17:06:34 GMT  
 		Size: 1.5 KB (1479 bytes)
 
-## `nuxeo:7.10`
+## `nuxeo:7`
 
 ```console
 $ docker pull nuxeo@sha256:b2ca7e1458012c9b3602721b8de607106d1fd00603daef5e9614458863cb2d1c
@@ -803,7 +808,7 @@ $ docker pull nuxeo@sha256:b2ca7e1458012c9b3602721b8de607106d1fd00603daef5e96144
 -	Platforms:
 	-	linux; amd64
 
-### `nuxeo:7.10` - linux; amd64
+### `nuxeo:7` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -924,7 +929,7 @@ CMD ["nuxeoctl" "console"]
 		Last Modified: Mon, 27 Jun 2016 17:06:34 GMT  
 		Size: 1.5 KB (1479 bytes)
 
-## `nuxeo:7`
+## `nuxeo:7.10`
 
 ```console
 $ docker pull nuxeo@sha256:b2ca7e1458012c9b3602721b8de607106d1fd00603daef5e9614458863cb2d1c
@@ -933,7 +938,7 @@ $ docker pull nuxeo@sha256:b2ca7e1458012c9b3602721b8de607106d1fd00603daef5e96144
 -	Platforms:
 	-	linux; amd64
 
-### `nuxeo:7` - linux; amd64
+### `nuxeo:7.10` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
