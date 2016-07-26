@@ -144,7 +144,87 @@ CMD ["sh"]
 
 ## `docker:1.12.0-rc4-dind`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:ffc74a7edf796350eb4238350039564aa1a6181a4eea5e45c5cc77177d50a444
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `docker:1.12.0-rc4-dind` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **33.9 MB (33949314 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e201b3d23af63a04b6248cac98f734308668c71d1d925527951ea7832c5267ef`
+-	Entrypoint: `["dockerd-entrypoint.sh"]`
+-	Default Command: `[]`
+
+```dockerfile
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:17:11 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl
+# Thu, 23 Jun 2016 20:17:12 GMT
+ENV DOCKER_BUCKET=test.docker.com
+# Fri, 15 Jul 2016 20:40:46 GMT
+ENV DOCKER_VERSION=1.12.0-rc4
+# Fri, 15 Jul 2016 20:40:47 GMT
+ENV DOCKER_SHA256=fca3e76267d5dc9f6f9d42341c7daf525032a322e2ae16f0e69d71541abb6b6d
+# Fri, 15 Jul 2016 20:40:51 GMT
+RUN set -x 	&& curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSION.tgz" -o docker.tgz 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - 	&& tar -xzvf docker.tgz 	&& mv docker/* /usr/local/bin/ 	&& rmdir docker 	&& rm docker.tgz 	&& docker -v
+# Fri, 15 Jul 2016 20:40:51 GMT
+COPY file:50006c902e7677711aeffe4ab7b7042d649618b96dec760f322a8566dd83ab25 in /usr/local/bin/
+# Fri, 15 Jul 2016 20:40:52 GMT
+ENTRYPOINT &{["docker-entrypoint.sh"]}
+# Fri, 15 Jul 2016 20:40:52 GMT
+CMD ["sh"]
+# Fri, 15 Jul 2016 20:40:58 GMT
+RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
+# Fri, 15 Jul 2016 20:40:59 GMT
+RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& echo 'dockremap:165536:65536' >> /etc/subuid 	&& echo 'dockremap:165536:65536' >> /etc/subgid
+# Fri, 15 Jul 2016 20:40:59 GMT
+ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
+# Fri, 15 Jul 2016 20:41:01 GMT
+RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind" -O /usr/local/bin/dind 	&& chmod +x /usr/local/bin/dind
+# Fri, 15 Jul 2016 20:41:01 GMT
+COPY file:a00ae81495fdf69e63bb25e3b665aa29cb53cfe5788e6134adfc0f35caff6295 in /usr/local/bin/
+# Fri, 15 Jul 2016 20:41:02 GMT
+VOLUME [/var/lib/docker]
+# Fri, 15 Jul 2016 20:41:02 GMT
+EXPOSE 2375/tcp
+# Fri, 15 Jul 2016 20:41:02 GMT
+ENTRYPOINT &{["dockerd-entrypoint.sh"]}
+# Fri, 15 Jul 2016 20:41:03 GMT
+CMD []
+```
+
+-	Layers:
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:49e2842bdfdf9757b6fb042a914386833eb89594a0f6643fc8a7ca8e925dd58c`  
+		Last Modified: Thu, 23 Jun 2016 20:17:29 GMT  
+		Size: 913.0 KB (913008 bytes)
+	-	`sha256:9172ef230b68fcd6394982728874a30f834ec7f97b8cdb3b51475ee24d1c6fd8`  
+		Last Modified: Fri, 15 Jul 2016 20:41:30 GMT  
+		Size: 28.6 MB (28626507 bytes)
+	-	`sha256:11ad524cf02fe03ab7ea81d99ef91b542f1176206b3252f637cf9d5068586d3b`  
+		Last Modified: Fri, 15 Jul 2016 20:41:18 GMT  
+		Size: 467.0 B
+	-	`sha256:3b5c662ce0d23bb3b908225b6996d9f47ed46ad013b5a71b99255d75ba786900`  
+		Last Modified: Fri, 15 Jul 2016 20:42:02 GMT  
+		Size: 2.1 MB (2065065 bytes)
+	-	`sha256:0b0aa59b5f8cf0b46f805486e0146a4d2c369922fea9f8877728e707a801be60`  
+		Last Modified: Fri, 15 Jul 2016 20:42:02 GMT  
+		Size: 31.7 KB (31721 bytes)
+	-	`sha256:582521ee2e94ad59c2d3b9fd1c22aaaac7fa75c6a9eb867bb3788599d30baae7`  
+		Last Modified: Fri, 15 Jul 2016 20:42:01 GMT  
+		Size: 1.8 KB (1821 bytes)
+	-	`sha256:57f83c66e5bdb9919ffd457bb4654a5847d2a7efa4d2cb3f20ad3a899a28f8d0`  
+		Last Modified: Fri, 15 Jul 2016 20:42:02 GMT  
+		Size: 439.0 B
 
 ## `docker:1.12-rc-dind`
 
