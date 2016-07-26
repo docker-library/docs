@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0`, `8` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/ee881ca4b80ee6dc504ba365c681a75c8c5a192d/8.0/Dockerfile)
--	[`9.0`, `9`, `latest` (*9.0/Dockerfile*)](https://github.com/odoo/docker/blob/ee881ca4b80ee6dc504ba365c681a75c8c5a192d/9.0/Dockerfile)
+-	[`8.0`, `8` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/b3d55d295954fed2c6101854f1b133340c05c767/8.0/Dockerfile)
+-	[`9.0`, `9`, `latest` (*9.0/Dockerfile*)](https://github.com/odoo/docker/blob/b3d55d295954fed2c6101854f1b133340c05c767/9.0/Dockerfile)
 
 [![](https://badge.imagelayers.io/odoo:latest.svg)](https://imagelayers.io/?images=odoo:8.0,odoo:9.0)
 
