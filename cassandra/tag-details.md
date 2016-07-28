@@ -16,7 +16,7 @@
 ## `cassandra:2.1.15`
 
 ```console
-$ docker pull cassandra@sha256:a1fef314fcb3129c082ce8d17ba2eb9a3173a4af4802aff825f93443b1893930
+$ docker pull cassandra@sha256:d009d84b0f7ffc6ede21759bd2b3494c4604b4bc756cb4e3bd019c6d9ce19a16
 ```
 
 -	Platforms:
@@ -26,87 +26,87 @@ $ docker pull cassandra@sha256:a1fef314fcb3129c082ce8d17ba2eb9a3173a4af4802aff82
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.1 MB (167108953 bytes)**  
+-	Total Size: **166.7 MB (166657059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58119909e348c1df70c2f373cc2747d51bc474e8d1f69cad7f5f108607eb7ad7`
+-	Image ID: `sha256:cb527d0d04385e51ed2daed0b3f69d226b468fb5704e241ba7bb46ceed76c585`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:28:47 GMT
+# Thu, 28 Jul 2016 17:47:57 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
-# Thu, 09 Jun 2016 23:40:17 GMT
+# Thu, 28 Jul 2016 22:00:08 GMT
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
-# Thu, 09 Jun 2016 23:40:18 GMT
+# Thu, 28 Jul 2016 22:00:09 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:41:55 GMT
+# Thu, 28 Jul 2016 22:01:39 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Thu, 09 Jun 2016 23:42:13 GMT
+# Thu, 28 Jul 2016 22:01:57 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-# Thu, 09 Jun 2016 23:42:14 GMT
+# Thu, 28 Jul 2016 22:01:59 GMT
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 21x main' >> /etc/apt/sources.list.d/cassandra.list
-# Fri, 08 Jul 2016 19:16:34 GMT
+# Thu, 28 Jul 2016 22:01:59 GMT
 ENV CASSANDRA_VERSION=2.1.15
-# Fri, 08 Jul 2016 19:19:27 GMT
+# Thu, 28 Jul 2016 22:04:13 GMT
 RUN apt-get update 	&& apt-get install -y cassandra="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 19:19:30 GMT
+# Thu, 28 Jul 2016 22:04:15 GMT
 RUN sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' /etc/cassandra/cassandra-env.sh
-# Fri, 08 Jul 2016 19:19:31 GMT
+# Thu, 28 Jul 2016 22:04:15 GMT
 ENV CASSANDRA_CONFIG=/etc/cassandra
-# Fri, 08 Jul 2016 19:19:32 GMT
+# Thu, 28 Jul 2016 22:04:16 GMT
 COPY file:fe6ed91be8debf19da443f09935b578bf6599e644b7a670bf7048d33fb2efa9e in /docker-entrypoint.sh
-# Fri, 08 Jul 2016 19:19:33 GMT
+# Thu, 28 Jul 2016 22:04:17 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 19:19:34 GMT
+# Thu, 28 Jul 2016 22:04:19 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Fri, 08 Jul 2016 19:19:35 GMT
+# Thu, 28 Jul 2016 22:04:19 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 08 Jul 2016 19:19:35 GMT
+# Thu, 28 Jul 2016 22:04:20 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Fri, 08 Jul 2016 19:19:36 GMT
+# Thu, 28 Jul 2016 22:04:21 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:fdf442b3a2aacd7c59060647a1aae6df1b9e502a124d789bda352ba603028d00`  
-		Last Modified: Thu, 09 Jun 2016 21:31:09 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
+		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
 		Size: 220.0 B
-	-	`sha256:3f338921a7f43ae1721905952be1622bf8e1aa8fe6327edd5ba0d80845d4262b`  
-		Last Modified: Thu, 09 Jun 2016 23:51:39 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:46699e0990a44225b4e9d0c18809fc50bd4c07d7a9e10eda3f73a95c888f289a`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 1.2 MB (1236834 bytes)
-	-	`sha256:0ea0efbc9d2928f201d5f81cbeb787762a00fdeca73da3b5b1bf7573fa779d5c`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 3.0 KB (3049 bytes)
-	-	`sha256:ef4febd04fbf0893b12bbaccf89fac0b8c0974e7dd468a02baa2fe437adfde75`  
-		Last Modified: Thu, 09 Jun 2016 23:51:37 GMT  
+	-	`sha256:a21cf6fac262949e18309d772fb0f6c06a832892c6daa2fbcbb41bcb7bd09cf0`  
+		Last Modified: Thu, 28 Jul 2016 22:04:31 GMT  
+		Size: 2.0 KB (2045 bytes)
+	-	`sha256:e5070e58285ffbd1a421c50c71797c5658758c66d620b2bf6ae31780aa2492e6`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 1.2 MB (1216515 bytes)
+	-	`sha256:0b2931b3c576a2b7ed8b316ba43d67a5dc1cbbef25acacef8853179b34b76702`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 3.0 KB (3045 bytes)
+	-	`sha256:9cd902c441d93d5ae138099553632e08392a1927666a33658471aecbe6bbe18f`  
+		Last Modified: Thu, 28 Jul 2016 22:04:29 GMT  
 		Size: 220.0 B
-	-	`sha256:c76ac263bbc026d0827daa7eb6915da908a6aefc71250bc9df382324abb35736`  
-		Last Modified: Fri, 08 Jul 2016 19:26:12 GMT  
-		Size: 114.5 MB (114488486 bytes)
-	-	`sha256:553449b164eb6b99f2eb84c8ee1dce1e7d80435602468be46c3cfae942062293`  
-		Last Modified: Fri, 08 Jul 2016 19:25:44 GMT  
-		Size: 4.7 KB (4654 bytes)
-	-	`sha256:813b2cc9f53866e64504827f0ed013cab833ea918f18143f79a589d6fc389c09`  
-		Last Modified: Fri, 08 Jul 2016 19:25:44 GMT  
-		Size: 722.0 B
-	-	`sha256:00de475dbb23100fa5a07fb54f504521fac5c27032bf7b73757e7b27688a6abb`  
-		Last Modified: Fri, 08 Jul 2016 19:25:44 GMT  
-		Size: 20.2 KB (20193 bytes)
+	-	`sha256:ab0a60c3e526a1c5ebc5eaab5289029d88b6a51f57c3f91d335a8a9f6a831c00`  
+		Last Modified: Thu, 28 Jul 2016 22:04:48 GMT  
+		Size: 114.0 MB (114043829 bytes)
+	-	`sha256:136ecee901ea2c3316343cd6e091206a39d4b5905d8a746fe6e78881863ad80e`  
+		Last Modified: Thu, 28 Jul 2016 22:04:29 GMT  
+		Size: 4.7 KB (4658 bytes)
+	-	`sha256:6cc1c30c0c05e56ba5fb436a3d684c625d418fdad0680fd20a19637c116a5e8a`  
+		Last Modified: Thu, 28 Jul 2016 22:04:29 GMT  
+		Size: 721.0 B
+	-	`sha256:11eed61ec10454a929c16610553cf9f5896be406d738291bf5864971d645c50f`  
+		Last Modified: Thu, 28 Jul 2016 22:04:29 GMT  
+		Size: 20.2 KB (20195 bytes)
 
 ## `cassandra:2.1`
 
 ```console
-$ docker pull cassandra@sha256:a1fef314fcb3129c082ce8d17ba2eb9a3173a4af4802aff825f93443b1893930
+$ docker pull cassandra@sha256:d009d84b0f7ffc6ede21759bd2b3494c4604b4bc756cb4e3bd019c6d9ce19a16
 ```
 
 -	Platforms:
@@ -116,87 +116,87 @@ $ docker pull cassandra@sha256:a1fef314fcb3129c082ce8d17ba2eb9a3173a4af4802aff82
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.1 MB (167108953 bytes)**  
+-	Total Size: **166.7 MB (166657059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58119909e348c1df70c2f373cc2747d51bc474e8d1f69cad7f5f108607eb7ad7`
+-	Image ID: `sha256:cb527d0d04385e51ed2daed0b3f69d226b468fb5704e241ba7bb46ceed76c585`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:28:47 GMT
+# Thu, 28 Jul 2016 17:47:57 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
-# Thu, 09 Jun 2016 23:40:17 GMT
+# Thu, 28 Jul 2016 22:00:08 GMT
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
-# Thu, 09 Jun 2016 23:40:18 GMT
+# Thu, 28 Jul 2016 22:00:09 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:41:55 GMT
+# Thu, 28 Jul 2016 22:01:39 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Thu, 09 Jun 2016 23:42:13 GMT
+# Thu, 28 Jul 2016 22:01:57 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-# Thu, 09 Jun 2016 23:42:14 GMT
+# Thu, 28 Jul 2016 22:01:59 GMT
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 21x main' >> /etc/apt/sources.list.d/cassandra.list
-# Fri, 08 Jul 2016 19:16:34 GMT
+# Thu, 28 Jul 2016 22:01:59 GMT
 ENV CASSANDRA_VERSION=2.1.15
-# Fri, 08 Jul 2016 19:19:27 GMT
+# Thu, 28 Jul 2016 22:04:13 GMT
 RUN apt-get update 	&& apt-get install -y cassandra="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 19:19:30 GMT
+# Thu, 28 Jul 2016 22:04:15 GMT
 RUN sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' /etc/cassandra/cassandra-env.sh
-# Fri, 08 Jul 2016 19:19:31 GMT
+# Thu, 28 Jul 2016 22:04:15 GMT
 ENV CASSANDRA_CONFIG=/etc/cassandra
-# Fri, 08 Jul 2016 19:19:32 GMT
+# Thu, 28 Jul 2016 22:04:16 GMT
 COPY file:fe6ed91be8debf19da443f09935b578bf6599e644b7a670bf7048d33fb2efa9e in /docker-entrypoint.sh
-# Fri, 08 Jul 2016 19:19:33 GMT
+# Thu, 28 Jul 2016 22:04:17 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 19:19:34 GMT
+# Thu, 28 Jul 2016 22:04:19 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Fri, 08 Jul 2016 19:19:35 GMT
+# Thu, 28 Jul 2016 22:04:19 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 08 Jul 2016 19:19:35 GMT
+# Thu, 28 Jul 2016 22:04:20 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Fri, 08 Jul 2016 19:19:36 GMT
+# Thu, 28 Jul 2016 22:04:21 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:fdf442b3a2aacd7c59060647a1aae6df1b9e502a124d789bda352ba603028d00`  
-		Last Modified: Thu, 09 Jun 2016 21:31:09 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
+		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
 		Size: 220.0 B
-	-	`sha256:3f338921a7f43ae1721905952be1622bf8e1aa8fe6327edd5ba0d80845d4262b`  
-		Last Modified: Thu, 09 Jun 2016 23:51:39 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:46699e0990a44225b4e9d0c18809fc50bd4c07d7a9e10eda3f73a95c888f289a`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 1.2 MB (1236834 bytes)
-	-	`sha256:0ea0efbc9d2928f201d5f81cbeb787762a00fdeca73da3b5b1bf7573fa779d5c`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 3.0 KB (3049 bytes)
-	-	`sha256:ef4febd04fbf0893b12bbaccf89fac0b8c0974e7dd468a02baa2fe437adfde75`  
-		Last Modified: Thu, 09 Jun 2016 23:51:37 GMT  
+	-	`sha256:a21cf6fac262949e18309d772fb0f6c06a832892c6daa2fbcbb41bcb7bd09cf0`  
+		Last Modified: Thu, 28 Jul 2016 22:04:31 GMT  
+		Size: 2.0 KB (2045 bytes)
+	-	`sha256:e5070e58285ffbd1a421c50c71797c5658758c66d620b2bf6ae31780aa2492e6`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 1.2 MB (1216515 bytes)
+	-	`sha256:0b2931b3c576a2b7ed8b316ba43d67a5dc1cbbef25acacef8853179b34b76702`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 3.0 KB (3045 bytes)
+	-	`sha256:9cd902c441d93d5ae138099553632e08392a1927666a33658471aecbe6bbe18f`  
+		Last Modified: Thu, 28 Jul 2016 22:04:29 GMT  
 		Size: 220.0 B
-	-	`sha256:c76ac263bbc026d0827daa7eb6915da908a6aefc71250bc9df382324abb35736`  
-		Last Modified: Fri, 08 Jul 2016 19:26:12 GMT  
-		Size: 114.5 MB (114488486 bytes)
-	-	`sha256:553449b164eb6b99f2eb84c8ee1dce1e7d80435602468be46c3cfae942062293`  
-		Last Modified: Fri, 08 Jul 2016 19:25:44 GMT  
-		Size: 4.7 KB (4654 bytes)
-	-	`sha256:813b2cc9f53866e64504827f0ed013cab833ea918f18143f79a589d6fc389c09`  
-		Last Modified: Fri, 08 Jul 2016 19:25:44 GMT  
-		Size: 722.0 B
-	-	`sha256:00de475dbb23100fa5a07fb54f504521fac5c27032bf7b73757e7b27688a6abb`  
-		Last Modified: Fri, 08 Jul 2016 19:25:44 GMT  
-		Size: 20.2 KB (20193 bytes)
+	-	`sha256:ab0a60c3e526a1c5ebc5eaab5289029d88b6a51f57c3f91d335a8a9f6a831c00`  
+		Last Modified: Thu, 28 Jul 2016 22:04:48 GMT  
+		Size: 114.0 MB (114043829 bytes)
+	-	`sha256:136ecee901ea2c3316343cd6e091206a39d4b5905d8a746fe6e78881863ad80e`  
+		Last Modified: Thu, 28 Jul 2016 22:04:29 GMT  
+		Size: 4.7 KB (4658 bytes)
+	-	`sha256:6cc1c30c0c05e56ba5fb436a3d684c625d418fdad0680fd20a19637c116a5e8a`  
+		Last Modified: Thu, 28 Jul 2016 22:04:29 GMT  
+		Size: 721.0 B
+	-	`sha256:11eed61ec10454a929c16610553cf9f5896be406d738291bf5864971d645c50f`  
+		Last Modified: Thu, 28 Jul 2016 22:04:29 GMT  
+		Size: 20.2 KB (20195 bytes)
 
 ## `cassandra:2.2.7`
 
 ```console
-$ docker pull cassandra@sha256:a15037573f57f30a121a5620df39d61a9d714cafc0be4c27d551d5a37c8d3703
+$ docker pull cassandra@sha256:8b6e48f7560a156a87d2f308103bbde2176148e82e0ff826335420a27c9da67c
 ```
 
 -	Platforms:
@@ -206,87 +206,87 @@ $ docker pull cassandra@sha256:a15037573f57f30a121a5620df39d61a9d714cafc0be4c27d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.4 MB (171387345 bytes)**  
+-	Total Size: **170.9 MB (170942639 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b35273cdcd8be94c8e27dfe8768c02919a186978b28b215337630a44c72c48e5`
+-	Image ID: `sha256:6d947182cb5450d0a7b182d63ae37e292e1e97bcd3a96bee9dd90c2eca5b3217`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:28:47 GMT
+# Thu, 28 Jul 2016 17:47:57 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
-# Thu, 09 Jun 2016 23:40:17 GMT
+# Thu, 28 Jul 2016 22:00:08 GMT
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
-# Thu, 09 Jun 2016 23:40:18 GMT
+# Thu, 28 Jul 2016 22:00:09 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:41:55 GMT
+# Thu, 28 Jul 2016 22:01:39 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Thu, 09 Jun 2016 23:42:13 GMT
+# Thu, 28 Jul 2016 22:01:57 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-# Thu, 09 Jun 2016 23:44:41 GMT
+# Thu, 28 Jul 2016 22:11:11 GMT
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 22x main' >> /etc/apt/sources.list.d/cassandra.list
-# Fri, 08 Jul 2016 19:19:37 GMT
+# Thu, 28 Jul 2016 22:11:12 GMT
 ENV CASSANDRA_VERSION=2.2.7
-# Fri, 08 Jul 2016 19:22:33 GMT
+# Thu, 28 Jul 2016 22:13:22 GMT
 RUN apt-get update 	&& apt-get install -y cassandra="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 19:22:36 GMT
+# Thu, 28 Jul 2016 22:13:24 GMT
 RUN sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' /etc/cassandra/cassandra-env.sh
-# Fri, 08 Jul 2016 19:22:37 GMT
+# Thu, 28 Jul 2016 22:13:25 GMT
 ENV CASSANDRA_CONFIG=/etc/cassandra
-# Fri, 08 Jul 2016 19:22:38 GMT
+# Thu, 28 Jul 2016 22:13:30 GMT
 COPY file:fe6ed91be8debf19da443f09935b578bf6599e644b7a670bf7048d33fb2efa9e in /docker-entrypoint.sh
-# Fri, 08 Jul 2016 19:22:38 GMT
+# Thu, 28 Jul 2016 22:13:31 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 19:22:40 GMT
+# Thu, 28 Jul 2016 22:13:33 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Fri, 08 Jul 2016 19:22:44 GMT
+# Thu, 28 Jul 2016 22:13:33 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 08 Jul 2016 19:22:45 GMT
+# Thu, 28 Jul 2016 22:13:34 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Fri, 08 Jul 2016 19:22:45 GMT
+# Thu, 28 Jul 2016 22:13:35 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:fdf442b3a2aacd7c59060647a1aae6df1b9e502a124d789bda352ba603028d00`  
-		Last Modified: Thu, 09 Jun 2016 21:31:09 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
+		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
 		Size: 220.0 B
-	-	`sha256:3f338921a7f43ae1721905952be1622bf8e1aa8fe6327edd5ba0d80845d4262b`  
-		Last Modified: Thu, 09 Jun 2016 23:51:39 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:46699e0990a44225b4e9d0c18809fc50bd4c07d7a9e10eda3f73a95c888f289a`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 1.2 MB (1236834 bytes)
-	-	`sha256:0ea0efbc9d2928f201d5f81cbeb787762a00fdeca73da3b5b1bf7573fa779d5c`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 3.0 KB (3049 bytes)
-	-	`sha256:242fd47aed66450312c579422f3faeb651571c7659adf564793540047eb61617`  
-		Last Modified: Thu, 09 Jun 2016 23:52:17 GMT  
-		Size: 220.0 B
-	-	`sha256:bfcc3f20fb322634a9d7b203dd1178229de1e7a16465eb41bfebaccff72f9684`  
-		Last Modified: Fri, 08 Jul 2016 19:27:21 GMT  
-		Size: 118.8 MB (118766010 bytes)
-	-	`sha256:e6febcfea85abb369f7116ae802c4cc1f5717a8caae4fe3f1cb1107c0ece991f`  
-		Last Modified: Fri, 08 Jul 2016 19:26:40 GMT  
-		Size: 4.6 KB (4626 bytes)
-	-	`sha256:ac0cda23b69f4ff4069a55fb2f47c3f9408c15914ebff633c93a1bb8cec9fbc0`  
-		Last Modified: Fri, 08 Jul 2016 19:26:40 GMT  
+	-	`sha256:a21cf6fac262949e18309d772fb0f6c06a832892c6daa2fbcbb41bcb7bd09cf0`  
+		Last Modified: Thu, 28 Jul 2016 22:04:31 GMT  
+		Size: 2.0 KB (2045 bytes)
+	-	`sha256:e5070e58285ffbd1a421c50c71797c5658758c66d620b2bf6ae31780aa2492e6`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 1.2 MB (1216515 bytes)
+	-	`sha256:0b2931b3c576a2b7ed8b316ba43d67a5dc1cbbef25acacef8853179b34b76702`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 3.0 KB (3045 bytes)
+	-	`sha256:0af4d92864762844ebce9d19aa61dd723e6ba8492eabe9891b6aff9a37f6a528`  
+		Last Modified: Thu, 28 Jul 2016 22:13:43 GMT  
+		Size: 219.0 B
+	-	`sha256:d441751fd05000e91c622827064ea272e620af76b6c7756678176ee441b7dd44`  
+		Last Modified: Thu, 28 Jul 2016 22:14:07 GMT  
+		Size: 118.3 MB (118328544 bytes)
+	-	`sha256:3542e2b56a66d4a7b22161aa8430f89a2a1f04341d73b705e98530222a9c52f1`  
+		Last Modified: Thu, 28 Jul 2016 22:13:43 GMT  
+		Size: 4.6 KB (4628 bytes)
+	-	`sha256:a95069fffaef552084592e3475a8159126c23f176eee9c7a9895196ece9e1560`  
+		Last Modified: Thu, 28 Jul 2016 22:13:44 GMT  
 		Size: 722.0 B
-	-	`sha256:1f08b09cc26e6fa5a13c88b73e93d61712f16f3ecba34050c0b9d15c94419e0a`  
-		Last Modified: Fri, 08 Jul 2016 19:26:40 GMT  
-		Size: 21.1 KB (21089 bytes)
+	-	`sha256:a35b36a6da8544d8718b9832931fb789df3b1e28ee3e9de3839af137ec7bb775`  
+		Last Modified: Thu, 28 Jul 2016 22:13:44 GMT  
+		Size: 21.1 KB (21090 bytes)
 
 ## `cassandra:2.2`
 
 ```console
-$ docker pull cassandra@sha256:a15037573f57f30a121a5620df39d61a9d714cafc0be4c27d551d5a37c8d3703
+$ docker pull cassandra@sha256:8b6e48f7560a156a87d2f308103bbde2176148e82e0ff826335420a27c9da67c
 ```
 
 -	Platforms:
@@ -296,87 +296,87 @@ $ docker pull cassandra@sha256:a15037573f57f30a121a5620df39d61a9d714cafc0be4c27d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.4 MB (171387345 bytes)**  
+-	Total Size: **170.9 MB (170942639 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b35273cdcd8be94c8e27dfe8768c02919a186978b28b215337630a44c72c48e5`
+-	Image ID: `sha256:6d947182cb5450d0a7b182d63ae37e292e1e97bcd3a96bee9dd90c2eca5b3217`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:28:47 GMT
+# Thu, 28 Jul 2016 17:47:57 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
-# Thu, 09 Jun 2016 23:40:17 GMT
+# Thu, 28 Jul 2016 22:00:08 GMT
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
-# Thu, 09 Jun 2016 23:40:18 GMT
+# Thu, 28 Jul 2016 22:00:09 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:41:55 GMT
+# Thu, 28 Jul 2016 22:01:39 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Thu, 09 Jun 2016 23:42:13 GMT
+# Thu, 28 Jul 2016 22:01:57 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-# Thu, 09 Jun 2016 23:44:41 GMT
+# Thu, 28 Jul 2016 22:11:11 GMT
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 22x main' >> /etc/apt/sources.list.d/cassandra.list
-# Fri, 08 Jul 2016 19:19:37 GMT
+# Thu, 28 Jul 2016 22:11:12 GMT
 ENV CASSANDRA_VERSION=2.2.7
-# Fri, 08 Jul 2016 19:22:33 GMT
+# Thu, 28 Jul 2016 22:13:22 GMT
 RUN apt-get update 	&& apt-get install -y cassandra="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 19:22:36 GMT
+# Thu, 28 Jul 2016 22:13:24 GMT
 RUN sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' /etc/cassandra/cassandra-env.sh
-# Fri, 08 Jul 2016 19:22:37 GMT
+# Thu, 28 Jul 2016 22:13:25 GMT
 ENV CASSANDRA_CONFIG=/etc/cassandra
-# Fri, 08 Jul 2016 19:22:38 GMT
+# Thu, 28 Jul 2016 22:13:30 GMT
 COPY file:fe6ed91be8debf19da443f09935b578bf6599e644b7a670bf7048d33fb2efa9e in /docker-entrypoint.sh
-# Fri, 08 Jul 2016 19:22:38 GMT
+# Thu, 28 Jul 2016 22:13:31 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 19:22:40 GMT
+# Thu, 28 Jul 2016 22:13:33 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Fri, 08 Jul 2016 19:22:44 GMT
+# Thu, 28 Jul 2016 22:13:33 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 08 Jul 2016 19:22:45 GMT
+# Thu, 28 Jul 2016 22:13:34 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Fri, 08 Jul 2016 19:22:45 GMT
+# Thu, 28 Jul 2016 22:13:35 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:fdf442b3a2aacd7c59060647a1aae6df1b9e502a124d789bda352ba603028d00`  
-		Last Modified: Thu, 09 Jun 2016 21:31:09 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
+		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
 		Size: 220.0 B
-	-	`sha256:3f338921a7f43ae1721905952be1622bf8e1aa8fe6327edd5ba0d80845d4262b`  
-		Last Modified: Thu, 09 Jun 2016 23:51:39 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:46699e0990a44225b4e9d0c18809fc50bd4c07d7a9e10eda3f73a95c888f289a`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 1.2 MB (1236834 bytes)
-	-	`sha256:0ea0efbc9d2928f201d5f81cbeb787762a00fdeca73da3b5b1bf7573fa779d5c`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 3.0 KB (3049 bytes)
-	-	`sha256:242fd47aed66450312c579422f3faeb651571c7659adf564793540047eb61617`  
-		Last Modified: Thu, 09 Jun 2016 23:52:17 GMT  
-		Size: 220.0 B
-	-	`sha256:bfcc3f20fb322634a9d7b203dd1178229de1e7a16465eb41bfebaccff72f9684`  
-		Last Modified: Fri, 08 Jul 2016 19:27:21 GMT  
-		Size: 118.8 MB (118766010 bytes)
-	-	`sha256:e6febcfea85abb369f7116ae802c4cc1f5717a8caae4fe3f1cb1107c0ece991f`  
-		Last Modified: Fri, 08 Jul 2016 19:26:40 GMT  
-		Size: 4.6 KB (4626 bytes)
-	-	`sha256:ac0cda23b69f4ff4069a55fb2f47c3f9408c15914ebff633c93a1bb8cec9fbc0`  
-		Last Modified: Fri, 08 Jul 2016 19:26:40 GMT  
+	-	`sha256:a21cf6fac262949e18309d772fb0f6c06a832892c6daa2fbcbb41bcb7bd09cf0`  
+		Last Modified: Thu, 28 Jul 2016 22:04:31 GMT  
+		Size: 2.0 KB (2045 bytes)
+	-	`sha256:e5070e58285ffbd1a421c50c71797c5658758c66d620b2bf6ae31780aa2492e6`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 1.2 MB (1216515 bytes)
+	-	`sha256:0b2931b3c576a2b7ed8b316ba43d67a5dc1cbbef25acacef8853179b34b76702`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 3.0 KB (3045 bytes)
+	-	`sha256:0af4d92864762844ebce9d19aa61dd723e6ba8492eabe9891b6aff9a37f6a528`  
+		Last Modified: Thu, 28 Jul 2016 22:13:43 GMT  
+		Size: 219.0 B
+	-	`sha256:d441751fd05000e91c622827064ea272e620af76b6c7756678176ee441b7dd44`  
+		Last Modified: Thu, 28 Jul 2016 22:14:07 GMT  
+		Size: 118.3 MB (118328544 bytes)
+	-	`sha256:3542e2b56a66d4a7b22161aa8430f89a2a1f04341d73b705e98530222a9c52f1`  
+		Last Modified: Thu, 28 Jul 2016 22:13:43 GMT  
+		Size: 4.6 KB (4628 bytes)
+	-	`sha256:a95069fffaef552084592e3475a8159126c23f176eee9c7a9895196ece9e1560`  
+		Last Modified: Thu, 28 Jul 2016 22:13:44 GMT  
 		Size: 722.0 B
-	-	`sha256:1f08b09cc26e6fa5a13c88b73e93d61712f16f3ecba34050c0b9d15c94419e0a`  
-		Last Modified: Fri, 08 Jul 2016 19:26:40 GMT  
-		Size: 21.1 KB (21089 bytes)
+	-	`sha256:a35b36a6da8544d8718b9832931fb789df3b1e28ee3e9de3839af137ec7bb775`  
+		Last Modified: Thu, 28 Jul 2016 22:13:44 GMT  
+		Size: 21.1 KB (21090 bytes)
 
 ## `cassandra:2`
 
 ```console
-$ docker pull cassandra@sha256:bcf176ecb662f236aa24d3e44dea7b990d9f4d65b23552a7f77cb428394767ac
+$ docker pull cassandra@sha256:8b6e48f7560a156a87d2f308103bbde2176148e82e0ff826335420a27c9da67c
 ```
 
 -	Platforms:
@@ -386,87 +386,87 @@ $ docker pull cassandra@sha256:bcf176ecb662f236aa24d3e44dea7b990d9f4d65b23552a7f
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.6 MB (172596858 bytes)**  
+-	Total Size: **170.9 MB (170942639 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b64e295b32278d5161cf4b6d14e8cf77f73cf76dfa8a2ae434c0d8b217905615`
+-	Image ID: `sha256:6d947182cb5450d0a7b182d63ae37e292e1e97bcd3a96bee9dd90c2eca5b3217`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:28:47 GMT
+# Thu, 28 Jul 2016 17:47:57 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
-# Thu, 09 Jun 2016 23:40:17 GMT
+# Thu, 28 Jul 2016 22:00:08 GMT
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
-# Thu, 09 Jun 2016 23:40:18 GMT
+# Thu, 28 Jul 2016 22:00:09 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:41:55 GMT
+# Thu, 28 Jul 2016 22:01:39 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Thu, 09 Jun 2016 23:42:13 GMT
+# Thu, 28 Jul 2016 22:01:57 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-# Thu, 09 Jun 2016 23:44:41 GMT
+# Thu, 28 Jul 2016 22:11:11 GMT
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 22x main' >> /etc/apt/sources.list.d/cassandra.list
-# Thu, 09 Jun 2016 23:44:41 GMT
-ENV CASSANDRA_VERSION=2.2.6
-# Thu, 09 Jun 2016 23:47:08 GMT
+# Thu, 28 Jul 2016 22:11:12 GMT
+ENV CASSANDRA_VERSION=2.2.7
+# Thu, 28 Jul 2016 22:13:22 GMT
 RUN apt-get update 	&& apt-get install -y cassandra="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 23:47:09 GMT
+# Thu, 28 Jul 2016 22:13:24 GMT
 RUN sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' /etc/cassandra/cassandra-env.sh
-# Thu, 09 Jun 2016 23:47:09 GMT
+# Thu, 28 Jul 2016 22:13:25 GMT
 ENV CASSANDRA_CONFIG=/etc/cassandra
-# Thu, 09 Jun 2016 23:47:09 GMT
+# Thu, 28 Jul 2016 22:13:30 GMT
 COPY file:fe6ed91be8debf19da443f09935b578bf6599e644b7a670bf7048d33fb2efa9e in /docker-entrypoint.sh
-# Thu, 09 Jun 2016 23:47:10 GMT
+# Thu, 28 Jul 2016 22:13:31 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 09 Jun 2016 23:47:10 GMT
+# Thu, 28 Jul 2016 22:13:33 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Thu, 09 Jun 2016 23:47:11 GMT
+# Thu, 28 Jul 2016 22:13:33 GMT
 VOLUME [/var/lib/cassandra]
-# Thu, 09 Jun 2016 23:47:11 GMT
+# Thu, 28 Jul 2016 22:13:34 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Thu, 09 Jun 2016 23:47:11 GMT
+# Thu, 28 Jul 2016 22:13:35 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:fdf442b3a2aacd7c59060647a1aae6df1b9e502a124d789bda352ba603028d00`  
-		Last Modified: Thu, 09 Jun 2016 21:31:09 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
+		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
 		Size: 220.0 B
-	-	`sha256:3f338921a7f43ae1721905952be1622bf8e1aa8fe6327edd5ba0d80845d4262b`  
-		Last Modified: Thu, 09 Jun 2016 23:51:39 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:46699e0990a44225b4e9d0c18809fc50bd4c07d7a9e10eda3f73a95c888f289a`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 1.2 MB (1236834 bytes)
-	-	`sha256:0ea0efbc9d2928f201d5f81cbeb787762a00fdeca73da3b5b1bf7573fa779d5c`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 3.0 KB (3049 bytes)
-	-	`sha256:242fd47aed66450312c579422f3faeb651571c7659adf564793540047eb61617`  
-		Last Modified: Thu, 09 Jun 2016 23:52:17 GMT  
-		Size: 220.0 B
-	-	`sha256:f292efdfa38a70f51a03bd368ddbd019ad9feb7e6cf069f57ab40a1bc93dd236`  
-		Last Modified: Thu, 09 Jun 2016 23:52:40 GMT  
-		Size: 120.0 MB (119975570 bytes)
-	-	`sha256:6969a5c0b6f2f03ac10c68898815220a26ad0b7905f743d4eee1a45d321d20f6`  
-		Last Modified: Thu, 09 Jun 2016 23:52:17 GMT  
-		Size: 4.6 KB (4626 bytes)
-	-	`sha256:7cea0728df1e6e7806b111202386791ab243984b54d2901ba957d2b8140b6e4c`  
-		Last Modified: Thu, 09 Jun 2016 23:52:17 GMT  
+	-	`sha256:a21cf6fac262949e18309d772fb0f6c06a832892c6daa2fbcbb41bcb7bd09cf0`  
+		Last Modified: Thu, 28 Jul 2016 22:04:31 GMT  
+		Size: 2.0 KB (2045 bytes)
+	-	`sha256:e5070e58285ffbd1a421c50c71797c5658758c66d620b2bf6ae31780aa2492e6`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 1.2 MB (1216515 bytes)
+	-	`sha256:0b2931b3c576a2b7ed8b316ba43d67a5dc1cbbef25acacef8853179b34b76702`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 3.0 KB (3045 bytes)
+	-	`sha256:0af4d92864762844ebce9d19aa61dd723e6ba8492eabe9891b6aff9a37f6a528`  
+		Last Modified: Thu, 28 Jul 2016 22:13:43 GMT  
+		Size: 219.0 B
+	-	`sha256:d441751fd05000e91c622827064ea272e620af76b6c7756678176ee441b7dd44`  
+		Last Modified: Thu, 28 Jul 2016 22:14:07 GMT  
+		Size: 118.3 MB (118328544 bytes)
+	-	`sha256:3542e2b56a66d4a7b22161aa8430f89a2a1f04341d73b705e98530222a9c52f1`  
+		Last Modified: Thu, 28 Jul 2016 22:13:43 GMT  
+		Size: 4.6 KB (4628 bytes)
+	-	`sha256:a95069fffaef552084592e3475a8159126c23f176eee9c7a9895196ece9e1560`  
+		Last Modified: Thu, 28 Jul 2016 22:13:44 GMT  
 		Size: 722.0 B
-	-	`sha256:751a123d922372876b2846c886254c4d770d68f38f5c6b8d9bde1ecb95b36454`  
-		Last Modified: Thu, 09 Jun 2016 23:52:17 GMT  
-		Size: 21.0 KB (21042 bytes)
+	-	`sha256:a35b36a6da8544d8718b9832931fb789df3b1e28ee3e9de3839af137ec7bb775`  
+		Last Modified: Thu, 28 Jul 2016 22:13:44 GMT  
+		Size: 21.1 KB (21090 bytes)
 
 ## `cassandra:3.0.8`
 
 ```console
-$ docker pull cassandra@sha256:a8720466f6fa70c2a21b05942509a53c594ff88c7ebe48e91793ca492085d532
+$ docker pull cassandra@sha256:ddd66f73de1a4b6d8eb3bd19eb0ea17b4f943c2442a56316a5470bc8cbf040d5
 ```
 
 -	Platforms:
@@ -476,87 +476,87 @@ $ docker pull cassandra@sha256:a8720466f6fa70c2a21b05942509a53c594ff88c7ebe48e91
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.0 MB (157046802 bytes)**  
+-	Total Size: **157.0 MB (157021365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b478fa7433fa2a4628daac70f6be6788e17634ebc887a9f32a73b8ca22f94eed`
+-	Image ID: `sha256:0100f4c6e60597d0f1eb6c3a0fff2710d62816270c680dec1cd1e5afb8b84953`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:28:47 GMT
+# Thu, 28 Jul 2016 17:47:57 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
-# Thu, 09 Jun 2016 23:40:17 GMT
+# Thu, 28 Jul 2016 22:00:08 GMT
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
-# Thu, 09 Jun 2016 23:40:18 GMT
+# Thu, 28 Jul 2016 22:00:09 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:41:55 GMT
+# Thu, 28 Jul 2016 22:01:39 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Thu, 09 Jun 2016 23:42:13 GMT
+# Thu, 28 Jul 2016 22:01:57 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-# Thu, 09 Jun 2016 23:47:12 GMT
+# Thu, 28 Jul 2016 22:05:09 GMT
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 30x main' >> /etc/apt/sources.list.d/cassandra.list
-# Fri, 08 Jul 2016 19:22:47 GMT
+# Thu, 28 Jul 2016 22:05:09 GMT
 ENV CASSANDRA_VERSION=3.0.8
-# Fri, 08 Jul 2016 19:25:22 GMT
+# Thu, 28 Jul 2016 22:07:13 GMT
 RUN apt-get update 	&& apt-get install -y cassandra="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 19:25:24 GMT
+# Thu, 28 Jul 2016 22:07:15 GMT
 RUN sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' /etc/cassandra/cassandra-env.sh
-# Fri, 08 Jul 2016 19:25:25 GMT
+# Thu, 28 Jul 2016 22:07:15 GMT
 ENV CASSANDRA_CONFIG=/etc/cassandra
-# Fri, 08 Jul 2016 19:25:26 GMT
+# Thu, 28 Jul 2016 22:07:16 GMT
 COPY file:fe6ed91be8debf19da443f09935b578bf6599e644b7a670bf7048d33fb2efa9e in /docker-entrypoint.sh
-# Fri, 08 Jul 2016 19:25:27 GMT
+# Thu, 28 Jul 2016 22:07:17 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 19:25:30 GMT
+# Thu, 28 Jul 2016 22:07:18 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Fri, 08 Jul 2016 19:25:31 GMT
+# Thu, 28 Jul 2016 22:07:19 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 08 Jul 2016 19:25:31 GMT
+# Thu, 28 Jul 2016 22:07:19 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Fri, 08 Jul 2016 19:25:32 GMT
+# Thu, 28 Jul 2016 22:07:20 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:fdf442b3a2aacd7c59060647a1aae6df1b9e502a124d789bda352ba603028d00`  
-		Last Modified: Thu, 09 Jun 2016 21:31:09 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
+		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
 		Size: 220.0 B
-	-	`sha256:3f338921a7f43ae1721905952be1622bf8e1aa8fe6327edd5ba0d80845d4262b`  
-		Last Modified: Thu, 09 Jun 2016 23:51:39 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:46699e0990a44225b4e9d0c18809fc50bd4c07d7a9e10eda3f73a95c888f289a`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 1.2 MB (1236834 bytes)
-	-	`sha256:0ea0efbc9d2928f201d5f81cbeb787762a00fdeca73da3b5b1bf7573fa779d5c`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 3.0 KB (3049 bytes)
-	-	`sha256:b6d79161856dc88c25c9564f3d98a41e861f8d2c9067b6764e2229dc155487f7`  
-		Last Modified: Thu, 09 Jun 2016 23:53:00 GMT  
+	-	`sha256:a21cf6fac262949e18309d772fb0f6c06a832892c6daa2fbcbb41bcb7bd09cf0`  
+		Last Modified: Thu, 28 Jul 2016 22:04:31 GMT  
+		Size: 2.0 KB (2045 bytes)
+	-	`sha256:e5070e58285ffbd1a421c50c71797c5658758c66d620b2bf6ae31780aa2492e6`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 1.2 MB (1216515 bytes)
+	-	`sha256:0b2931b3c576a2b7ed8b316ba43d67a5dc1cbbef25acacef8853179b34b76702`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 3.0 KB (3045 bytes)
+	-	`sha256:6b35f15511f52a90f0116a27f3d753e89e628c3d35097b01e88dce5b82ddb361`  
+		Last Modified: Thu, 28 Jul 2016 22:07:28 GMT  
 		Size: 220.0 B
-	-	`sha256:3e25938ce8189ee6bf8f01c7640439970121ef1074cafcb1b3e73db7812ef51e`  
-		Last Modified: Fri, 08 Jul 2016 19:28:38 GMT  
-		Size: 104.4 MB (104422869 bytes)
-	-	`sha256:25d89b22c9d4c0e9620fb38db9448a986fc378820c63c8f1ad1dd62362a4a9d3`  
-		Last Modified: Fri, 08 Jul 2016 19:28:02 GMT  
-		Size: 4.7 KB (4696 bytes)
-	-	`sha256:8ad54db5b904652cf9471f40caea9b9f004ee928d5ed4bb23c0e833116027969`  
-		Last Modified: Fri, 08 Jul 2016 19:28:02 GMT  
-		Size: 721.0 B
-	-	`sha256:99106d5283ad069021559e996dd1c7c2ebf8b9c650556885472e1764908554bf`  
-		Last Modified: Fri, 08 Jul 2016 19:28:02 GMT  
-		Size: 23.6 KB (23618 bytes)
+	-	`sha256:3aeeeea7ee685000a48e591f260b6809b8926c828c68109b9a936bbf5ea9a042`  
+		Last Modified: Thu, 28 Jul 2016 22:07:49 GMT  
+		Size: 104.4 MB (104404676 bytes)
+	-	`sha256:39b323e3a124d172976a5ec3893d7c853368e7c6a58655196ef5604537a0e020`  
+		Last Modified: Thu, 28 Jul 2016 22:07:28 GMT  
+		Size: 4.7 KB (4695 bytes)
+	-	`sha256:9c71150e7f8b5c36aeef631b450f8006e11da511e79b1590ee5acca073511c0a`  
+		Last Modified: Thu, 28 Jul 2016 22:07:28 GMT  
+		Size: 722.0 B
+	-	`sha256:2f3e9924d0600fc9b319dc5b32c4f30215280ffcd973e5a16216557cc201825c`  
+		Last Modified: Thu, 28 Jul 2016 22:07:28 GMT  
+		Size: 23.6 KB (23616 bytes)
 
 ## `cassandra:3.0`
 
 ```console
-$ docker pull cassandra@sha256:a8720466f6fa70c2a21b05942509a53c594ff88c7ebe48e91793ca492085d532
+$ docker pull cassandra@sha256:ddd66f73de1a4b6d8eb3bd19eb0ea17b4f943c2442a56316a5470bc8cbf040d5
 ```
 
 -	Platforms:
@@ -566,87 +566,87 @@ $ docker pull cassandra@sha256:a8720466f6fa70c2a21b05942509a53c594ff88c7ebe48e91
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.0 MB (157046802 bytes)**  
+-	Total Size: **157.0 MB (157021365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b478fa7433fa2a4628daac70f6be6788e17634ebc887a9f32a73b8ca22f94eed`
+-	Image ID: `sha256:0100f4c6e60597d0f1eb6c3a0fff2710d62816270c680dec1cd1e5afb8b84953`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:28:47 GMT
+# Thu, 28 Jul 2016 17:47:57 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
-# Thu, 09 Jun 2016 23:40:17 GMT
+# Thu, 28 Jul 2016 22:00:08 GMT
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
-# Thu, 09 Jun 2016 23:40:18 GMT
+# Thu, 28 Jul 2016 22:00:09 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:41:55 GMT
+# Thu, 28 Jul 2016 22:01:39 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Thu, 09 Jun 2016 23:42:13 GMT
+# Thu, 28 Jul 2016 22:01:57 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-# Thu, 09 Jun 2016 23:47:12 GMT
+# Thu, 28 Jul 2016 22:05:09 GMT
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 30x main' >> /etc/apt/sources.list.d/cassandra.list
-# Fri, 08 Jul 2016 19:22:47 GMT
+# Thu, 28 Jul 2016 22:05:09 GMT
 ENV CASSANDRA_VERSION=3.0.8
-# Fri, 08 Jul 2016 19:25:22 GMT
+# Thu, 28 Jul 2016 22:07:13 GMT
 RUN apt-get update 	&& apt-get install -y cassandra="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 19:25:24 GMT
+# Thu, 28 Jul 2016 22:07:15 GMT
 RUN sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' /etc/cassandra/cassandra-env.sh
-# Fri, 08 Jul 2016 19:25:25 GMT
+# Thu, 28 Jul 2016 22:07:15 GMT
 ENV CASSANDRA_CONFIG=/etc/cassandra
-# Fri, 08 Jul 2016 19:25:26 GMT
+# Thu, 28 Jul 2016 22:07:16 GMT
 COPY file:fe6ed91be8debf19da443f09935b578bf6599e644b7a670bf7048d33fb2efa9e in /docker-entrypoint.sh
-# Fri, 08 Jul 2016 19:25:27 GMT
+# Thu, 28 Jul 2016 22:07:17 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 19:25:30 GMT
+# Thu, 28 Jul 2016 22:07:18 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Fri, 08 Jul 2016 19:25:31 GMT
+# Thu, 28 Jul 2016 22:07:19 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 08 Jul 2016 19:25:31 GMT
+# Thu, 28 Jul 2016 22:07:19 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Fri, 08 Jul 2016 19:25:32 GMT
+# Thu, 28 Jul 2016 22:07:20 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:fdf442b3a2aacd7c59060647a1aae6df1b9e502a124d789bda352ba603028d00`  
-		Last Modified: Thu, 09 Jun 2016 21:31:09 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
+		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
 		Size: 220.0 B
-	-	`sha256:3f338921a7f43ae1721905952be1622bf8e1aa8fe6327edd5ba0d80845d4262b`  
-		Last Modified: Thu, 09 Jun 2016 23:51:39 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:46699e0990a44225b4e9d0c18809fc50bd4c07d7a9e10eda3f73a95c888f289a`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 1.2 MB (1236834 bytes)
-	-	`sha256:0ea0efbc9d2928f201d5f81cbeb787762a00fdeca73da3b5b1bf7573fa779d5c`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 3.0 KB (3049 bytes)
-	-	`sha256:b6d79161856dc88c25c9564f3d98a41e861f8d2c9067b6764e2229dc155487f7`  
-		Last Modified: Thu, 09 Jun 2016 23:53:00 GMT  
+	-	`sha256:a21cf6fac262949e18309d772fb0f6c06a832892c6daa2fbcbb41bcb7bd09cf0`  
+		Last Modified: Thu, 28 Jul 2016 22:04:31 GMT  
+		Size: 2.0 KB (2045 bytes)
+	-	`sha256:e5070e58285ffbd1a421c50c71797c5658758c66d620b2bf6ae31780aa2492e6`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 1.2 MB (1216515 bytes)
+	-	`sha256:0b2931b3c576a2b7ed8b316ba43d67a5dc1cbbef25acacef8853179b34b76702`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 3.0 KB (3045 bytes)
+	-	`sha256:6b35f15511f52a90f0116a27f3d753e89e628c3d35097b01e88dce5b82ddb361`  
+		Last Modified: Thu, 28 Jul 2016 22:07:28 GMT  
 		Size: 220.0 B
-	-	`sha256:3e25938ce8189ee6bf8f01c7640439970121ef1074cafcb1b3e73db7812ef51e`  
-		Last Modified: Fri, 08 Jul 2016 19:28:38 GMT  
-		Size: 104.4 MB (104422869 bytes)
-	-	`sha256:25d89b22c9d4c0e9620fb38db9448a986fc378820c63c8f1ad1dd62362a4a9d3`  
-		Last Modified: Fri, 08 Jul 2016 19:28:02 GMT  
-		Size: 4.7 KB (4696 bytes)
-	-	`sha256:8ad54db5b904652cf9471f40caea9b9f004ee928d5ed4bb23c0e833116027969`  
-		Last Modified: Fri, 08 Jul 2016 19:28:02 GMT  
-		Size: 721.0 B
-	-	`sha256:99106d5283ad069021559e996dd1c7c2ebf8b9c650556885472e1764908554bf`  
-		Last Modified: Fri, 08 Jul 2016 19:28:02 GMT  
-		Size: 23.6 KB (23618 bytes)
+	-	`sha256:3aeeeea7ee685000a48e591f260b6809b8926c828c68109b9a936bbf5ea9a042`  
+		Last Modified: Thu, 28 Jul 2016 22:07:49 GMT  
+		Size: 104.4 MB (104404676 bytes)
+	-	`sha256:39b323e3a124d172976a5ec3893d7c853368e7c6a58655196ef5604537a0e020`  
+		Last Modified: Thu, 28 Jul 2016 22:07:28 GMT  
+		Size: 4.7 KB (4695 bytes)
+	-	`sha256:9c71150e7f8b5c36aeef631b450f8006e11da511e79b1590ee5acca073511c0a`  
+		Last Modified: Thu, 28 Jul 2016 22:07:28 GMT  
+		Size: 722.0 B
+	-	`sha256:2f3e9924d0600fc9b319dc5b32c4f30215280ffcd973e5a16216557cc201825c`  
+		Last Modified: Thu, 28 Jul 2016 22:07:28 GMT  
+		Size: 23.6 KB (23616 bytes)
 
 ## `cassandra:3.7`
 
 ```console
-$ docker pull cassandra@sha256:a6b2b9656659edf30ece10252d75f8bfe0bde5699a6f8258c3da279bebd115f4
+$ docker pull cassandra@sha256:201f7a0fd29490032435945ee4985c0aa69eff36b2882e9a6d4b436eb140b1cc
 ```
 
 -	Platforms:
@@ -656,87 +656,87 @@ $ docker pull cassandra@sha256:a6b2b9656659edf30ece10252d75f8bfe0bde5699a6f8258c
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.3 MB (161293633 bytes)**  
+-	Total Size: **161.3 MB (161270038 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:075b7d5e2ed5c2bc6ff6135d5864860fd494e191935276a3224de364be2cf5c2`
+-	Image ID: `sha256:8def53570a2a6a41e58af5c24ae077f3856530ff67fc46d3e3bdec445de78431`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:28:47 GMT
+# Thu, 28 Jul 2016 17:47:57 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
-# Thu, 09 Jun 2016 23:40:17 GMT
+# Thu, 28 Jul 2016 22:00:08 GMT
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
-# Thu, 09 Jun 2016 23:40:18 GMT
+# Thu, 28 Jul 2016 22:00:09 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:41:55 GMT
+# Thu, 28 Jul 2016 22:01:39 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Thu, 09 Jun 2016 23:42:13 GMT
+# Thu, 28 Jul 2016 22:01:57 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-# Thu, 16 Jun 2016 19:26:15 GMT
+# Thu, 28 Jul 2016 22:08:10 GMT
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 37x main' >> /etc/apt/sources.list.d/cassandra.list
-# Thu, 16 Jun 2016 19:26:16 GMT
+# Thu, 28 Jul 2016 22:08:10 GMT
 ENV CASSANDRA_VERSION=3.7
-# Thu, 16 Jun 2016 19:28:06 GMT
+# Thu, 28 Jul 2016 22:10:02 GMT
 RUN apt-get update 	&& apt-get install -y cassandra="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jun 2016 19:28:08 GMT
+# Thu, 28 Jul 2016 22:10:04 GMT
 RUN sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' /etc/cassandra/cassandra-env.sh
-# Thu, 16 Jun 2016 19:28:08 GMT
+# Thu, 28 Jul 2016 22:10:05 GMT
 ENV CASSANDRA_CONFIG=/etc/cassandra
-# Thu, 16 Jun 2016 19:28:08 GMT
+# Thu, 28 Jul 2016 22:10:06 GMT
 COPY file:fe6ed91be8debf19da443f09935b578bf6599e644b7a670bf7048d33fb2efa9e in /docker-entrypoint.sh
-# Thu, 16 Jun 2016 19:28:09 GMT
+# Thu, 28 Jul 2016 22:10:07 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 16 Jun 2016 19:28:10 GMT
+# Thu, 28 Jul 2016 22:10:08 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Thu, 16 Jun 2016 19:28:10 GMT
+# Thu, 28 Jul 2016 22:10:09 GMT
 VOLUME [/var/lib/cassandra]
-# Thu, 16 Jun 2016 19:28:11 GMT
+# Thu, 28 Jul 2016 22:10:10 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Thu, 16 Jun 2016 19:28:11 GMT
+# Thu, 28 Jul 2016 22:10:10 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:fdf442b3a2aacd7c59060647a1aae6df1b9e502a124d789bda352ba603028d00`  
-		Last Modified: Thu, 09 Jun 2016 21:31:09 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
+		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
 		Size: 220.0 B
-	-	`sha256:3f338921a7f43ae1721905952be1622bf8e1aa8fe6327edd5ba0d80845d4262b`  
-		Last Modified: Thu, 09 Jun 2016 23:51:39 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:46699e0990a44225b4e9d0c18809fc50bd4c07d7a9e10eda3f73a95c888f289a`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 1.2 MB (1236834 bytes)
-	-	`sha256:0ea0efbc9d2928f201d5f81cbeb787762a00fdeca73da3b5b1bf7573fa779d5c`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 3.0 KB (3049 bytes)
-	-	`sha256:d00f907500cb75edf7377b2df002bdc0be5fd5f74e8d06c5ec127ce8a8a7f541`  
-		Last Modified: Thu, 16 Jun 2016 19:28:52 GMT  
-		Size: 221.0 B
-	-	`sha256:114617bd5c758820b145fb5224c5f702697af4c12bb37ee63c2e9e9da1cc2299`  
-		Last Modified: Thu, 16 Jun 2016 19:29:13 GMT  
-		Size: 108.7 MB (108667165 bytes)
-	-	`sha256:b2844011e628c1a30e0c8be5f3af084faf14c1538d6315d65bddc407258d4e8f`  
-		Last Modified: Thu, 16 Jun 2016 19:28:51 GMT  
-		Size: 4.3 KB (4281 bytes)
-	-	`sha256:d14a8aef819db7efd6f864bd7056ff4abc8a17cb7bea0e289a358a3c4837d2a1`  
-		Last Modified: Thu, 16 Jun 2016 19:28:52 GMT  
+	-	`sha256:a21cf6fac262949e18309d772fb0f6c06a832892c6daa2fbcbb41bcb7bd09cf0`  
+		Last Modified: Thu, 28 Jul 2016 22:04:31 GMT  
+		Size: 2.0 KB (2045 bytes)
+	-	`sha256:e5070e58285ffbd1a421c50c71797c5658758c66d620b2bf6ae31780aa2492e6`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 1.2 MB (1216515 bytes)
+	-	`sha256:0b2931b3c576a2b7ed8b316ba43d67a5dc1cbbef25acacef8853179b34b76702`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 3.0 KB (3045 bytes)
+	-	`sha256:9e9b53e3210130f3b2789832ec48cdbe6e592040b8ce908aeb3b45b99c1f7422`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
+		Size: 219.0 B
+	-	`sha256:fb99acbde69104e479cd03f85c0f8d4fcce45acb4a8bb9a45ac07fef6d9c6a72`  
+		Last Modified: Thu, 28 Jul 2016 22:10:40 GMT  
+		Size: 108.7 MB (108650819 bytes)
+	-	`sha256:b94798960e868dda23454553f6657a65dd990dbbcf3e29e99020c94dfd8d2549`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
+		Size: 4.3 KB (4280 bytes)
+	-	`sha256:50f848158d09d1c345a0ff64900ba6fcd533ff1ad75fe2184237a33868bc29fd`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
 		Size: 722.0 B
-	-	`sha256:65c783cabfcc19b12ce58db1cb6e829e723a6f1561e85d6ea87edde3ccd51963`  
-		Last Modified: Thu, 16 Jun 2016 19:28:52 GMT  
-		Size: 26.6 KB (26566 bytes)
+	-	`sha256:64f278bc781c5718acd0f4934cf70e1279479e0ce7ffeb0a28ef3e32309ce6e4`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
+		Size: 26.6 KB (26562 bytes)
 
 ## `cassandra:3`
 
 ```console
-$ docker pull cassandra@sha256:a6b2b9656659edf30ece10252d75f8bfe0bde5699a6f8258c3da279bebd115f4
+$ docker pull cassandra@sha256:201f7a0fd29490032435945ee4985c0aa69eff36b2882e9a6d4b436eb140b1cc
 ```
 
 -	Platforms:
@@ -746,87 +746,87 @@ $ docker pull cassandra@sha256:a6b2b9656659edf30ece10252d75f8bfe0bde5699a6f8258c
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.3 MB (161293633 bytes)**  
+-	Total Size: **161.3 MB (161270038 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:075b7d5e2ed5c2bc6ff6135d5864860fd494e191935276a3224de364be2cf5c2`
+-	Image ID: `sha256:8def53570a2a6a41e58af5c24ae077f3856530ff67fc46d3e3bdec445de78431`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:28:47 GMT
+# Thu, 28 Jul 2016 17:47:57 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
-# Thu, 09 Jun 2016 23:40:17 GMT
+# Thu, 28 Jul 2016 22:00:08 GMT
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
-# Thu, 09 Jun 2016 23:40:18 GMT
+# Thu, 28 Jul 2016 22:00:09 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:41:55 GMT
+# Thu, 28 Jul 2016 22:01:39 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Thu, 09 Jun 2016 23:42:13 GMT
+# Thu, 28 Jul 2016 22:01:57 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-# Thu, 16 Jun 2016 19:26:15 GMT
+# Thu, 28 Jul 2016 22:08:10 GMT
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 37x main' >> /etc/apt/sources.list.d/cassandra.list
-# Thu, 16 Jun 2016 19:26:16 GMT
+# Thu, 28 Jul 2016 22:08:10 GMT
 ENV CASSANDRA_VERSION=3.7
-# Thu, 16 Jun 2016 19:28:06 GMT
+# Thu, 28 Jul 2016 22:10:02 GMT
 RUN apt-get update 	&& apt-get install -y cassandra="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jun 2016 19:28:08 GMT
+# Thu, 28 Jul 2016 22:10:04 GMT
 RUN sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' /etc/cassandra/cassandra-env.sh
-# Thu, 16 Jun 2016 19:28:08 GMT
+# Thu, 28 Jul 2016 22:10:05 GMT
 ENV CASSANDRA_CONFIG=/etc/cassandra
-# Thu, 16 Jun 2016 19:28:08 GMT
+# Thu, 28 Jul 2016 22:10:06 GMT
 COPY file:fe6ed91be8debf19da443f09935b578bf6599e644b7a670bf7048d33fb2efa9e in /docker-entrypoint.sh
-# Thu, 16 Jun 2016 19:28:09 GMT
+# Thu, 28 Jul 2016 22:10:07 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 16 Jun 2016 19:28:10 GMT
+# Thu, 28 Jul 2016 22:10:08 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Thu, 16 Jun 2016 19:28:10 GMT
+# Thu, 28 Jul 2016 22:10:09 GMT
 VOLUME [/var/lib/cassandra]
-# Thu, 16 Jun 2016 19:28:11 GMT
+# Thu, 28 Jul 2016 22:10:10 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Thu, 16 Jun 2016 19:28:11 GMT
+# Thu, 28 Jul 2016 22:10:10 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:fdf442b3a2aacd7c59060647a1aae6df1b9e502a124d789bda352ba603028d00`  
-		Last Modified: Thu, 09 Jun 2016 21:31:09 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
+		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
 		Size: 220.0 B
-	-	`sha256:3f338921a7f43ae1721905952be1622bf8e1aa8fe6327edd5ba0d80845d4262b`  
-		Last Modified: Thu, 09 Jun 2016 23:51:39 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:46699e0990a44225b4e9d0c18809fc50bd4c07d7a9e10eda3f73a95c888f289a`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 1.2 MB (1236834 bytes)
-	-	`sha256:0ea0efbc9d2928f201d5f81cbeb787762a00fdeca73da3b5b1bf7573fa779d5c`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 3.0 KB (3049 bytes)
-	-	`sha256:d00f907500cb75edf7377b2df002bdc0be5fd5f74e8d06c5ec127ce8a8a7f541`  
-		Last Modified: Thu, 16 Jun 2016 19:28:52 GMT  
-		Size: 221.0 B
-	-	`sha256:114617bd5c758820b145fb5224c5f702697af4c12bb37ee63c2e9e9da1cc2299`  
-		Last Modified: Thu, 16 Jun 2016 19:29:13 GMT  
-		Size: 108.7 MB (108667165 bytes)
-	-	`sha256:b2844011e628c1a30e0c8be5f3af084faf14c1538d6315d65bddc407258d4e8f`  
-		Last Modified: Thu, 16 Jun 2016 19:28:51 GMT  
-		Size: 4.3 KB (4281 bytes)
-	-	`sha256:d14a8aef819db7efd6f864bd7056ff4abc8a17cb7bea0e289a358a3c4837d2a1`  
-		Last Modified: Thu, 16 Jun 2016 19:28:52 GMT  
+	-	`sha256:a21cf6fac262949e18309d772fb0f6c06a832892c6daa2fbcbb41bcb7bd09cf0`  
+		Last Modified: Thu, 28 Jul 2016 22:04:31 GMT  
+		Size: 2.0 KB (2045 bytes)
+	-	`sha256:e5070e58285ffbd1a421c50c71797c5658758c66d620b2bf6ae31780aa2492e6`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 1.2 MB (1216515 bytes)
+	-	`sha256:0b2931b3c576a2b7ed8b316ba43d67a5dc1cbbef25acacef8853179b34b76702`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 3.0 KB (3045 bytes)
+	-	`sha256:9e9b53e3210130f3b2789832ec48cdbe6e592040b8ce908aeb3b45b99c1f7422`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
+		Size: 219.0 B
+	-	`sha256:fb99acbde69104e479cd03f85c0f8d4fcce45acb4a8bb9a45ac07fef6d9c6a72`  
+		Last Modified: Thu, 28 Jul 2016 22:10:40 GMT  
+		Size: 108.7 MB (108650819 bytes)
+	-	`sha256:b94798960e868dda23454553f6657a65dd990dbbcf3e29e99020c94dfd8d2549`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
+		Size: 4.3 KB (4280 bytes)
+	-	`sha256:50f848158d09d1c345a0ff64900ba6fcd533ff1ad75fe2184237a33868bc29fd`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
 		Size: 722.0 B
-	-	`sha256:65c783cabfcc19b12ce58db1cb6e829e723a6f1561e85d6ea87edde3ccd51963`  
-		Last Modified: Thu, 16 Jun 2016 19:28:52 GMT  
-		Size: 26.6 KB (26566 bytes)
+	-	`sha256:64f278bc781c5718acd0f4934cf70e1279479e0ce7ffeb0a28ef3e32309ce6e4`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
+		Size: 26.6 KB (26562 bytes)
 
 ## `cassandra:latest`
 
 ```console
-$ docker pull cassandra@sha256:a6b2b9656659edf30ece10252d75f8bfe0bde5699a6f8258c3da279bebd115f4
+$ docker pull cassandra@sha256:201f7a0fd29490032435945ee4985c0aa69eff36b2882e9a6d4b436eb140b1cc
 ```
 
 -	Platforms:
@@ -836,79 +836,79 @@ $ docker pull cassandra@sha256:a6b2b9656659edf30ece10252d75f8bfe0bde5699a6f8258c
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.3 MB (161293633 bytes)**  
+-	Total Size: **161.3 MB (161270038 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:075b7d5e2ed5c2bc6ff6135d5864860fd494e191935276a3224de364be2cf5c2`
+-	Image ID: `sha256:8def53570a2a6a41e58af5c24ae077f3856530ff67fc46d3e3bdec445de78431`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:28:47 GMT
+# Thu, 28 Jul 2016 17:47:57 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
-# Thu, 09 Jun 2016 23:40:17 GMT
+# Thu, 28 Jul 2016 22:00:08 GMT
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
-# Thu, 09 Jun 2016 23:40:18 GMT
+# Thu, 28 Jul 2016 22:00:09 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:41:55 GMT
+# Thu, 28 Jul 2016 22:01:39 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Thu, 09 Jun 2016 23:42:13 GMT
+# Thu, 28 Jul 2016 22:01:57 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-# Thu, 16 Jun 2016 19:26:15 GMT
+# Thu, 28 Jul 2016 22:08:10 GMT
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 37x main' >> /etc/apt/sources.list.d/cassandra.list
-# Thu, 16 Jun 2016 19:26:16 GMT
+# Thu, 28 Jul 2016 22:08:10 GMT
 ENV CASSANDRA_VERSION=3.7
-# Thu, 16 Jun 2016 19:28:06 GMT
+# Thu, 28 Jul 2016 22:10:02 GMT
 RUN apt-get update 	&& apt-get install -y cassandra="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jun 2016 19:28:08 GMT
+# Thu, 28 Jul 2016 22:10:04 GMT
 RUN sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' /etc/cassandra/cassandra-env.sh
-# Thu, 16 Jun 2016 19:28:08 GMT
+# Thu, 28 Jul 2016 22:10:05 GMT
 ENV CASSANDRA_CONFIG=/etc/cassandra
-# Thu, 16 Jun 2016 19:28:08 GMT
+# Thu, 28 Jul 2016 22:10:06 GMT
 COPY file:fe6ed91be8debf19da443f09935b578bf6599e644b7a670bf7048d33fb2efa9e in /docker-entrypoint.sh
-# Thu, 16 Jun 2016 19:28:09 GMT
+# Thu, 28 Jul 2016 22:10:07 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 16 Jun 2016 19:28:10 GMT
+# Thu, 28 Jul 2016 22:10:08 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Thu, 16 Jun 2016 19:28:10 GMT
+# Thu, 28 Jul 2016 22:10:09 GMT
 VOLUME [/var/lib/cassandra]
-# Thu, 16 Jun 2016 19:28:11 GMT
+# Thu, 28 Jul 2016 22:10:10 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Thu, 16 Jun 2016 19:28:11 GMT
+# Thu, 28 Jul 2016 22:10:10 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:fdf442b3a2aacd7c59060647a1aae6df1b9e502a124d789bda352ba603028d00`  
-		Last Modified: Thu, 09 Jun 2016 21:31:09 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
+		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
 		Size: 220.0 B
-	-	`sha256:3f338921a7f43ae1721905952be1622bf8e1aa8fe6327edd5ba0d80845d4262b`  
-		Last Modified: Thu, 09 Jun 2016 23:51:39 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:46699e0990a44225b4e9d0c18809fc50bd4c07d7a9e10eda3f73a95c888f289a`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 1.2 MB (1236834 bytes)
-	-	`sha256:0ea0efbc9d2928f201d5f81cbeb787762a00fdeca73da3b5b1bf7573fa779d5c`  
-		Last Modified: Thu, 09 Jun 2016 23:51:40 GMT  
-		Size: 3.0 KB (3049 bytes)
-	-	`sha256:d00f907500cb75edf7377b2df002bdc0be5fd5f74e8d06c5ec127ce8a8a7f541`  
-		Last Modified: Thu, 16 Jun 2016 19:28:52 GMT  
-		Size: 221.0 B
-	-	`sha256:114617bd5c758820b145fb5224c5f702697af4c12bb37ee63c2e9e9da1cc2299`  
-		Last Modified: Thu, 16 Jun 2016 19:29:13 GMT  
-		Size: 108.7 MB (108667165 bytes)
-	-	`sha256:b2844011e628c1a30e0c8be5f3af084faf14c1538d6315d65bddc407258d4e8f`  
-		Last Modified: Thu, 16 Jun 2016 19:28:51 GMT  
-		Size: 4.3 KB (4281 bytes)
-	-	`sha256:d14a8aef819db7efd6f864bd7056ff4abc8a17cb7bea0e289a358a3c4837d2a1`  
-		Last Modified: Thu, 16 Jun 2016 19:28:52 GMT  
+	-	`sha256:a21cf6fac262949e18309d772fb0f6c06a832892c6daa2fbcbb41bcb7bd09cf0`  
+		Last Modified: Thu, 28 Jul 2016 22:04:31 GMT  
+		Size: 2.0 KB (2045 bytes)
+	-	`sha256:e5070e58285ffbd1a421c50c71797c5658758c66d620b2bf6ae31780aa2492e6`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 1.2 MB (1216515 bytes)
+	-	`sha256:0b2931b3c576a2b7ed8b316ba43d67a5dc1cbbef25acacef8853179b34b76702`  
+		Last Modified: Thu, 28 Jul 2016 22:04:32 GMT  
+		Size: 3.0 KB (3045 bytes)
+	-	`sha256:9e9b53e3210130f3b2789832ec48cdbe6e592040b8ce908aeb3b45b99c1f7422`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
+		Size: 219.0 B
+	-	`sha256:fb99acbde69104e479cd03f85c0f8d4fcce45acb4a8bb9a45ac07fef6d9c6a72`  
+		Last Modified: Thu, 28 Jul 2016 22:10:40 GMT  
+		Size: 108.7 MB (108650819 bytes)
+	-	`sha256:b94798960e868dda23454553f6657a65dd990dbbcf3e29e99020c94dfd8d2549`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
+		Size: 4.3 KB (4280 bytes)
+	-	`sha256:50f848158d09d1c345a0ff64900ba6fcd533ff1ad75fe2184237a33868bc29fd`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
 		Size: 722.0 B
-	-	`sha256:65c783cabfcc19b12ce58db1cb6e829e723a6f1561e85d6ea87edde3ccd51963`  
-		Last Modified: Thu, 16 Jun 2016 19:28:52 GMT  
-		Size: 26.6 KB (26566 bytes)
+	-	`sha256:64f278bc781c5718acd0f4934cf70e1279479e0ce7ffeb0a28ef3e32309ce6e4`  
+		Last Modified: Thu, 28 Jul 2016 22:10:19 GMT  
+		Size: 26.6 KB (26562 bytes)

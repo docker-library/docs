@@ -33,7 +33,7 @@
 ## `buildpack-deps:jessie-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:d9914c1d5b7fb4a90d996cac6664bb82034c8e2ee7205bef2699b467fc04003e
+$ docker pull buildpack-deps@sha256:6e1fbb3f3fb0b2bb5c74a83339db0cd1a39e7b5046577f86323b52660fd94f18
 ```
 
 -	Platforms:
@@ -43,32 +43,32 @@ $ docker pull buildpack-deps@sha256:d9914c1d5b7fb4a90d996cac6664bb82034c8e2ee720
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69899754 bytes)**  
+-	Total Size: **69.9 MB (69892589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beb210b3e177a19d796846346dd0803b76547d7b58f647e9982723000dbee934`
+-	Image ID: `sha256:230c2f600806bf0b7b31b0c060c409a4a049fd31575f34b41444f27e030d8c04`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
 
 ## `buildpack-deps:curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:d9914c1d5b7fb4a90d996cac6664bb82034c8e2ee7205bef2699b467fc04003e
+$ docker pull buildpack-deps@sha256:6e1fbb3f3fb0b2bb5c74a83339db0cd1a39e7b5046577f86323b52660fd94f18
 ```
 
 -	Platforms:
@@ -78,27 +78,27 @@ $ docker pull buildpack-deps@sha256:d9914c1d5b7fb4a90d996cac6664bb82034c8e2ee720
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69899754 bytes)**  
+-	Total Size: **69.9 MB (69892589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beb210b3e177a19d796846346dd0803b76547d7b58f647e9982723000dbee934`
+-	Image ID: `sha256:230c2f600806bf0b7b31b0c060c409a4a049fd31575f34b41444f27e030d8c04`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
 
 ## `buildpack-deps:jessie-scm`
 
@@ -473,7 +473,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 ## `buildpack-deps:sid-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:349181f00b969385ae12b74440ce0318e3a3b5815ee703705e650c30f0198d36
+$ docker pull buildpack-deps@sha256:4aeacb19187032aad7b54275ec4c2706ada6764ca34c6d6843db40a5dae0dc9a
 ```
 
 -	Platforms:
@@ -483,32 +483,32 @@ $ docker pull buildpack-deps@sha256:349181f00b969385ae12b74440ce0318e3a3b5815ee7
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **111.8 MB (111821559 bytes)**  
+-	Total Size: **110.5 MB (110491663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd611630bb4d05dba799674090081839780a4a79046c080a70005111281220c0`
+-	Image ID: `sha256:9ebe6e73d820757a61c9f9a379de7a078c5109b4a8a2921a645ffce15575ddd6`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:29:06 GMT
-ADD file:8fdc004f9416952c9e1590e8cabcbb49792bbd424d6ee25dae34e39fb952832b in /
-# Thu, 09 Jun 2016 21:29:06 GMT
+# Thu, 28 Jul 2016 17:48:23 GMT
+ADD file:ef6cd3ee88d7045391cb7b6c1014d225d1abe9c0539fa50b9260639774032866 in /
+# Thu, 28 Jul 2016 17:48:24 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:39:36 GMT
+# Thu, 28 Jul 2016 18:23:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:40:04 GMT
+# Thu, 28 Jul 2016 18:24:22 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:2346a4d49ad1b9c5274a3f172de0791bc0a0dd146df3f2a860a7d471c06ebf6e`  
-		Last Modified: Thu, 09 Jun 2016 21:32:04 GMT  
-		Size: 44.1 MB (44108517 bytes)
-	-	`sha256:881ef9f33a20eb7545a8f0377184054f31f8b6f5369d81b4d91e0a313a867d10`  
-		Last Modified: Thu, 09 Jun 2016 21:49:39 GMT  
-		Size: 20.5 MB (20489787 bytes)
-	-	`sha256:07941125c95738fc85a9df97621da186ed1600919a59109e4e3ce16934405c4c`  
-		Last Modified: Thu, 09 Jun 2016 21:50:04 GMT  
-		Size: 47.2 MB (47223255 bytes)
+	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
+		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
+		Size: 42.5 MB (42487630 bytes)
+	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
+		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
+		Size: 20.5 MB (20510432 bytes)
+	-	`sha256:aa88ad4d042668a78f51a91bda0606d38e6428ec8291c78b9ca6fc056bb7881e`  
+		Last Modified: Thu, 28 Jul 2016 21:55:32 GMT  
+		Size: 47.5 MB (47493601 bytes)
 
 ## `buildpack-deps:sid`
 
@@ -558,7 +558,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 ## `buildpack-deps:stretch-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:7eb9d4e665c4bff5b54e5a8aace1b191e9ae7d42e761c03ed851ddaa156561b4
+$ docker pull buildpack-deps@sha256:323a9e48d86ca260cf8281d10ed2ef96236dfffff902d35e72e5ffdb1a4c68b6
 ```
 
 -	Platforms:
@@ -568,27 +568,27 @@ $ docker pull buildpack-deps@sha256:7eb9d4e665c4bff5b54e5a8aace1b191e9ae7d42e761
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.6 MB (64602725 bytes)**  
+-	Total Size: **62.6 MB (62581494 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c84747acacf6464dd1f789e71ad23a096762d0e3ab008f7ab8f739d6e0f205e`
+-	Image ID: `sha256:181add192073644933dafbc7a4b40c815a504bf3d586d576b263ba85928a8f21`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:29:38 GMT
-ADD file:e91fa3dd38b229ee62e6a72db099274d69a22affdae34e06276400a0824255bf in /
-# Thu, 09 Jun 2016 21:29:39 GMT
+# Thu, 28 Jul 2016 17:48:51 GMT
+ADD file:b9d44ee8d22c829c1f1ff0a7458f40a2591b599c18ac5f9e778e818fbb4a1344 in /
+# Thu, 28 Jul 2016 17:48:52 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:41:46 GMT
+# Thu, 28 Jul 2016 18:25:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:c12270f957b9db8fe01efad59a55d34a28364597c051658e92590dfc22f18db8`  
-		Last Modified: Thu, 09 Jun 2016 21:33:01 GMT  
-		Size: 44.1 MB (44107040 bytes)
-	-	`sha256:c6e2dbd99782b2d2b51a2dd9ce8ff9ef579d1ad7c2d9fe93c2416684d6d0d762`  
-		Last Modified: Thu, 09 Jun 2016 21:51:52 GMT  
-		Size: 20.5 MB (20495685 bytes)
+	-	`sha256:05a57567480c26a5f94fde377da4e0792f5e745a5d37e39f467a104fd9bd8942`  
+		Last Modified: Thu, 28 Jul 2016 17:53:00 GMT  
+		Size: 42.1 MB (42066618 bytes)
+	-	`sha256:b65f1c5ce8b9053174d46b6372180cacaa3ed05d007fcb63784119c492eb6c17`  
+		Last Modified: Thu, 28 Jul 2016 21:57:30 GMT  
+		Size: 20.5 MB (20514876 bytes)
 
 ## `buildpack-deps:stretch-scm`
 
@@ -633,7 +633,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:stretch`
 
 ```console
-$ docker pull buildpack-deps@sha256:24e40e8b27b20c263c97f66c0a20f514f978a45677b6b2b1492597ae4c34e167
+$ docker pull buildpack-deps@sha256:8afee6dde60fa8a4530b3e618b3743e1e5c6d35d47d4d64856882a992dd57129
 ```
 
 -	Platforms:
@@ -643,37 +643,37 @@ $ docker pull buildpack-deps@sha256:24e40e8b27b20c263c97f66c0a20f514f978a45677b6
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **364.7 MB (364722626 bytes)**  
+-	Total Size: **383.4 MB (383404207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e6bbfd104a2b7c762bee14bdea597137f34e2432a73245a6e575a234cca49c0f`
+-	Image ID: `sha256:62fad5474098ebfd430815108dfd976a2efb18ffb116ba26d5229bbe8a75f379`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:29:38 GMT
-ADD file:e91fa3dd38b229ee62e6a72db099274d69a22affdae34e06276400a0824255bf in /
-# Thu, 09 Jun 2016 21:29:39 GMT
+# Thu, 28 Jul 2016 17:48:51 GMT
+ADD file:b9d44ee8d22c829c1f1ff0a7458f40a2591b599c18ac5f9e778e818fbb4a1344 in /
+# Thu, 28 Jul 2016 17:48:52 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:41:46 GMT
+# Thu, 28 Jul 2016 18:25:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:42:11 GMT
+# Thu, 28 Jul 2016 18:26:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:43:29 GMT
+# Thu, 28 Jul 2016 18:27:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:c12270f957b9db8fe01efad59a55d34a28364597c051658e92590dfc22f18db8`  
-		Last Modified: Thu, 09 Jun 2016 21:33:01 GMT  
-		Size: 44.1 MB (44107040 bytes)
-	-	`sha256:c6e2dbd99782b2d2b51a2dd9ce8ff9ef579d1ad7c2d9fe93c2416684d6d0d762`  
-		Last Modified: Thu, 09 Jun 2016 21:51:52 GMT  
-		Size: 20.5 MB (20495685 bytes)
-	-	`sha256:a0ff8e8f8d17ac63f06a66574f40e0b088317554c87dc32a2af7bf7db97c2b44`  
-		Last Modified: Thu, 09 Jun 2016 21:52:17 GMT  
-		Size: 47.1 MB (47102585 bytes)
-	-	`sha256:efd975bcfa4e478a2c7aca7042e1b26fea08a3c7d2efe185f75ec25d09606b75`  
-		Last Modified: Thu, 09 Jun 2016 21:53:42 GMT  
-		Size: 253.0 MB (253017316 bytes)
+	-	`sha256:05a57567480c26a5f94fde377da4e0792f5e745a5d37e39f467a104fd9bd8942`  
+		Last Modified: Thu, 28 Jul 2016 17:53:00 GMT  
+		Size: 42.1 MB (42066618 bytes)
+	-	`sha256:b65f1c5ce8b9053174d46b6372180cacaa3ed05d007fcb63784119c492eb6c17`  
+		Last Modified: Thu, 28 Jul 2016 21:57:30 GMT  
+		Size: 20.5 MB (20514876 bytes)
+	-	`sha256:ca3a235a952f4b8f801fbd39d587bb8aab80c57f02978f28b8c332160f507158`  
+		Last Modified: Thu, 28 Jul 2016 21:57:44 GMT  
+		Size: 49.2 MB (49244893 bytes)
+	-	`sha256:e9afc1a5b3fcced4ff90678faffd6a681f3faa038d4f6eca8a7ccb7d776ff456`  
+		Last Modified: Thu, 28 Jul 2016 21:58:39 GMT  
+		Size: 271.6 MB (271577820 bytes)
 
 ## `buildpack-deps:trusty-curl`
 
