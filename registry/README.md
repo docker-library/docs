@@ -10,9 +10,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # Docker Registry
 
-The tags >= 2 refer to the [new registry](https://github.com/docker/distribution).
-
-Older tags refer to the [deprecated registry](https://github.com/docker/docker-registry).
+Tags < 1.0 refer to the [deprecated registry](https://github.com/docker/docker-registry).
 
 ## Run the Registry
 
