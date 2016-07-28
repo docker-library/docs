@@ -85,7 +85,7 @@ CMD ["/bin/bash"]
 ## `debian:jessie`
 
 ```console
-$ docker pull debian@sha256:8b1fc3a7a55c42e3445155b2f8f40c55de5f8bc8012992b26b570530c4bded9e
+$ docker pull debian@sha256:ffb60fdbc401b2a692eef8d04616fca15905dce259d1499d96521970ed0bec36
 ```
 
 -	Platforms:
@@ -95,27 +95,27 @@ $ docker pull debian@sha256:8b1fc3a7a55c42e3445155b2f8f40c55de5f8bc8012992b26b57
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51352535 bytes)**  
+-	Total Size: **51.4 MB (51365611 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b088884749bd93867ddb48ff404d4bbff09a17af8d95bc863efa5d133f87b78`
+-	Image ID: `sha256:1b01529cc499d51767c62f9fc8083043610546b4e050898809ec54e00dbb1a34`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
 
 ## `debian:latest`
 
 ```console
-$ docker pull debian@sha256:8b1fc3a7a55c42e3445155b2f8f40c55de5f8bc8012992b26b570530c4bded9e
+$ docker pull debian@sha256:ffb60fdbc401b2a692eef8d04616fca15905dce259d1499d96521970ed0bec36
 ```
 
 -	Platforms:
@@ -125,27 +125,27 @@ $ docker pull debian@sha256:8b1fc3a7a55c42e3445155b2f8f40c55de5f8bc8012992b26b57
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51352535 bytes)**  
+-	Total Size: **51.4 MB (51365611 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b088884749bd93867ddb48ff404d4bbff09a17af8d95bc863efa5d133f87b78`
+-	Image ID: `sha256:1b01529cc499d51767c62f9fc8083043610546b4e050898809ec54e00dbb1a34`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
 
 ## `debian:jessie-backports`
 
 ```console
-$ docker pull debian@sha256:19671abba70026f3a480f911712305f61fc0c7fc57925f89427b724349d033dd
+$ docker pull debian@sha256:cef2d2046218bf0b1d1188e3a443ea3d3d05a4a03f6c1dac7cc8fa7fc5089b71
 ```
 
 -	Platforms:
@@ -155,26 +155,26 @@ $ docker pull debian@sha256:19671abba70026f3a480f911712305f61fc0c7fc57925f89427b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51352755 bytes)**  
+-	Total Size: **51.4 MB (51365831 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df08a8b175df5050e385d4e1d95e4c0c9cecd3138e0250efe089709f1c8d4cc9`
+-	Image ID: `sha256:56e997898da4683b9ef63537f398e462b7469e7fbb8d2aba1ee2e6673b8c6979`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:28:47 GMT
+# Thu, 28 Jul 2016 17:47:57 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:fdf442b3a2aacd7c59060647a1aae6df1b9e502a124d789bda352ba603028d00`  
-		Last Modified: Thu, 09 Jun 2016 21:31:09 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
+		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
 		Size: 220.0 B
 
 ## `debian:oldstable`
@@ -245,7 +245,7 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 ## `debian:sid`
 
 ```console
-$ docker pull debian@sha256:305536934680c84853b6761a9409fd2c34a9500afef4dec954ed3b1624a1a250
+$ docker pull debian@sha256:c463cafb67f3ccca4bbf1c906900786db794e19aad2189400b1eca9319f57973
 ```
 
 -	Platforms:
@@ -255,27 +255,27 @@ $ docker pull debian@sha256:305536934680c84853b6761a9409fd2c34a9500afef4dec954ed
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.1 MB (44108517 bytes)**  
+-	Total Size: **42.5 MB (42487630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c429e3b3ace3b4ba1c43d34b4f763961f2cccc32ba665403519ca264466669a`
+-	Image ID: `sha256:43a75bb0dc5e339c7a01408324298bc5f69dbf225ff63f6def2da6e52cb708ca`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:29:06 GMT
-ADD file:8fdc004f9416952c9e1590e8cabcbb49792bbd424d6ee25dae34e39fb952832b in /
-# Thu, 09 Jun 2016 21:29:06 GMT
+# Thu, 28 Jul 2016 17:48:23 GMT
+ADD file:ef6cd3ee88d7045391cb7b6c1014d225d1abe9c0539fa50b9260639774032866 in /
+# Thu, 28 Jul 2016 17:48:24 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:2346a4d49ad1b9c5274a3f172de0791bc0a0dd146df3f2a860a7d471c06ebf6e`  
-		Last Modified: Thu, 09 Jun 2016 21:32:04 GMT  
-		Size: 44.1 MB (44108517 bytes)
+	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
+		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
+		Size: 42.5 MB (42487630 bytes)
 
 ## `debian:stable`
 
 ```console
-$ docker pull debian@sha256:d4fe78e77721514f4e31e1a00dbd7be3ee92eb0434385ec30f69bbc51dfc6ed5
+$ docker pull debian@sha256:33bd29f0ea52eed0039ea2a633116d8e9ffe723002acba9a47417af13e62fb32
 ```
 
 -	Platforms:
@@ -285,27 +285,27 @@ $ docker pull debian@sha256:d4fe78e77721514f4e31e1a00dbd7be3ee92eb0434385ec30f69
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51353487 bytes)**  
+-	Total Size: **51.4 MB (51367231 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7de7f3704715333450c5f88fbbaf0fa53b4ee56aeaa49bbddd19fbf3bb54071e`
+-	Image ID: `sha256:eaa6a79eaf93557c838e08433f13240ccd31ecb15503c6d42a523d94f8d5ce88`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:29:22 GMT
-ADD file:e99ba8e71f4581a18801938497800c137d073e1e5ef67c6c5090681fee6e816c in /
-# Thu, 09 Jun 2016 21:29:23 GMT
+# Thu, 28 Jul 2016 17:48:37 GMT
+ADD file:8fda2628a33b0261dfc57f39e1cc8ee68363d492515cfef36a40a67ea30e2cac in /
+# Thu, 28 Jul 2016 17:48:38 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:212230531b56329e7ce719552a679eb6654c30f9e9a7a55582da1eb9ef338a2c`  
-		Last Modified: Thu, 09 Jun 2016 21:32:30 GMT  
-		Size: 51.4 MB (51353487 bytes)
+	-	`sha256:6f0e36e9ed69ba010ef8245494daebe273ba99cf75d61281be08272297255c72`  
+		Last Modified: Thu, 28 Jul 2016 17:52:18 GMT  
+		Size: 51.4 MB (51367231 bytes)
 
 ## `debian:stable-backports`
 
 ```console
-$ docker pull debian@sha256:5357297abb06c7ad0fbd2a0239912f8a9d8ac6fb51e34d9722dd4a40d16246a9
+$ docker pull debian@sha256:4e0c142a0a08830b2ab31dc7fce8a75f281bd14ab6c50ea69340c0d86d72fbe7
 ```
 
 -	Platforms:
@@ -315,32 +315,32 @@ $ docker pull debian@sha256:5357297abb06c7ad0fbd2a0239912f8a9d8ac6fb51e34d9722dd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51353707 bytes)**  
+-	Total Size: **51.4 MB (51367451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:036ecd52e0b69fb558899f5177c2ac894ecb83ad8f242ed620b5385c9bb70b80`
+-	Image ID: `sha256:d207e4b860a3981a5009b496b4558a56a13f553d826cec14fa3a238000a74a53`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:29:22 GMT
-ADD file:e99ba8e71f4581a18801938497800c137d073e1e5ef67c6c5090681fee6e816c in /
-# Thu, 09 Jun 2016 21:29:23 GMT
+# Thu, 28 Jul 2016 17:48:37 GMT
+ADD file:8fda2628a33b0261dfc57f39e1cc8ee68363d492515cfef36a40a67ea30e2cac in /
+# Thu, 28 Jul 2016 17:48:38 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:29:25 GMT
+# Thu, 28 Jul 2016 17:48:40 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:212230531b56329e7ce719552a679eb6654c30f9e9a7a55582da1eb9ef338a2c`  
-		Last Modified: Thu, 09 Jun 2016 21:32:30 GMT  
-		Size: 51.4 MB (51353487 bytes)
-	-	`sha256:1889fcc0d2a7bfef47ec6f51a4be91e5755a5d0106c5d8377fb60956cdcf0c7f`  
-		Last Modified: Thu, 09 Jun 2016 21:32:41 GMT  
+	-	`sha256:6f0e36e9ed69ba010ef8245494daebe273ba99cf75d61281be08272297255c72`  
+		Last Modified: Thu, 28 Jul 2016 17:52:18 GMT  
+		Size: 51.4 MB (51367231 bytes)
+	-	`sha256:8d501663c3d9dd32e249d241c99a626f29f9c5b3c762b8bd0696709267d054bd`  
+		Last Modified: Thu, 28 Jul 2016 17:52:35 GMT  
 		Size: 220.0 B
 
 ## `debian:stretch`
 
 ```console
-$ docker pull debian@sha256:2bc7e3db8a9f4d43f015cd8c289bc767093ff92b721e50435df80d268e1d4cd3
+$ docker pull debian@sha256:6ba15e1753eb0e05c32983df8e379ebe0af382319726369cd8a37f9aeae60e08
 ```
 
 -	Platforms:
@@ -350,22 +350,22 @@ $ docker pull debian@sha256:2bc7e3db8a9f4d43f015cd8c289bc767093ff92b721e50435df8
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.1 MB (44107040 bytes)**  
+-	Total Size: **42.1 MB (42066618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:600f65e3b219dcf012c0be99172ac6535cc09c54926bc033c4c208de14df129b`
+-	Image ID: `sha256:be3f1e8c0ddf1c1160c7676ba6eadb6786cef212636fa50e0f55e19754fba61f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:29:38 GMT
-ADD file:e91fa3dd38b229ee62e6a72db099274d69a22affdae34e06276400a0824255bf in /
-# Thu, 09 Jun 2016 21:29:39 GMT
+# Thu, 28 Jul 2016 17:48:51 GMT
+ADD file:b9d44ee8d22c829c1f1ff0a7458f40a2591b599c18ac5f9e778e818fbb4a1344 in /
+# Thu, 28 Jul 2016 17:48:52 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:c12270f957b9db8fe01efad59a55d34a28364597c051658e92590dfc22f18db8`  
-		Last Modified: Thu, 09 Jun 2016 21:33:01 GMT  
-		Size: 44.1 MB (44107040 bytes)
+	-	`sha256:05a57567480c26a5f94fde377da4e0792f5e745a5d37e39f467a104fd9bd8942`  
+		Last Modified: Thu, 28 Jul 2016 17:53:00 GMT  
+		Size: 42.1 MB (42066618 bytes)
 
 ## `debian:testing`
 
@@ -400,7 +400,7 @@ CMD ["/bin/bash"]
 ## `debian:unstable`
 
 ```console
-$ docker pull debian@sha256:6eca8af1ce3f5f8c46f103e5b2603c8d05b123f532a706ad58aa8d64bacacb16
+$ docker pull debian@sha256:454f068d80c0c9d25e77e333a1e3fb3d5ba92229943ebbafeaafe710ea7ff7ed
 ```
 
 -	Platforms:
@@ -410,22 +410,22 @@ $ docker pull debian@sha256:6eca8af1ce3f5f8c46f103e5b2603c8d05b123f532a706ad58aa
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.1 MB (44108411 bytes)**  
+-	Total Size: **42.5 MB (42487628 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:540ba962d496b5d4a73078ebb80ce5386440cc42684519d13e9bfbd47bf5a90e`
+-	Image ID: `sha256:64ee096873ff2d620f1b2af60b1b1b7a276ee93a438ff17f6ecee6849759cbc2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:05 GMT
-ADD file:0031e3918275b7fa44a7eaab992b66a8664cc70fe1d884b99946628cdf5e2033 in /
-# Thu, 09 Jun 2016 21:30:06 GMT
+# Thu, 28 Jul 2016 17:49:16 GMT
+ADD file:aea4328d4ebd3a764e9c8ace8efc930f4f2b046c3b701f14687a23aef19d6ae4 in /
+# Thu, 28 Jul 2016 17:49:17 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:0f409b0f5b3dbf1973baec7c850ef50c683abe9da6265cad81e7674989b77110`  
-		Last Modified: Thu, 09 Jun 2016 21:33:51 GMT  
-		Size: 44.1 MB (44108411 bytes)
+	-	`sha256:0259414f5a544fe64e774b001060935d4c7a813cecf88ec590e806be8423a1ac`  
+		Last Modified: Thu, 28 Jul 2016 17:54:08 GMT  
+		Size: 42.5 MB (42487628 bytes)
 
 ## `debian:7.11`
 
@@ -460,7 +460,7 @@ CMD ["/bin/bash"]
 ## `debian:7`
 
 ```console
-$ docker pull debian@sha256:bd768708961266e250feb775923cdb5bc6b270e696063d955e661d137cdf32e8
+$ docker pull debian@sha256:1e21d6ccae906c032fb20c9d5a8d834d6673b6f760aefcf41315a253f87d9c2b
 ```
 
 -	Platforms:
@@ -470,27 +470,27 @@ $ docker pull debian@sha256:bd768708961266e250feb775923cdb5bc6b270e696063d955e66
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37209549 bytes)**  
+-	Total Size: **37.2 MB (37209635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c82789231a5edad10fd4ba9d48ef032cefd0f7d43ef20fb2946c759f6fd0e24`
+-	Image ID: `sha256:dc81f1af026c21c1b2eb9861da188a154027ef11a46df42986165ce7b8e952c2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
 
 ## `debian:wheezy`
 
 ```console
-$ docker pull debian@sha256:bd768708961266e250feb775923cdb5bc6b270e696063d955e661d137cdf32e8
+$ docker pull debian@sha256:1e21d6ccae906c032fb20c9d5a8d834d6673b6f760aefcf41315a253f87d9c2b
 ```
 
 -	Platforms:
@@ -500,27 +500,27 @@ $ docker pull debian@sha256:bd768708961266e250feb775923cdb5bc6b270e696063d955e66
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37209549 bytes)**  
+-	Total Size: **37.2 MB (37209635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c82789231a5edad10fd4ba9d48ef032cefd0f7d43ef20fb2946c759f6fd0e24`
+-	Image ID: `sha256:dc81f1af026c21c1b2eb9861da188a154027ef11a46df42986165ce7b8e952c2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
 
 ## `debian:wheezy-backports`
 
 ```console
-$ docker pull debian@sha256:acfb90ad536e4f045799a3850e31347a20397c212ed3560d34b2ef07b2d3747c
+$ docker pull debian@sha256:e67438c38bf243bee7f2fcc3ed406cf556dfa099129b994091f9ddd91c277ced
 ```
 
 -	Platforms:
@@ -530,32 +530,32 @@ $ docker pull debian@sha256:acfb90ad536e4f045799a3850e31347a20397c212ed3560d34b2
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37209770 bytes)**  
+-	Total Size: **37.2 MB (37209856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5a266a7c6594debc25ffa65728b165e159d38bf7e7d1a12c0777911d3c9461a`
+-	Image ID: `sha256:d64290830fe635d7b9a1d60c26137d2100095b7bd330d201e96ff1cf2f1ad17c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:30:22 GMT
+# Thu, 28 Jul 2016 17:49:32 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:1553acd52c79db814ca4a9aa79178578cc1943e002cd1f999753b96280898d7b`  
-		Last Modified: Thu, 09 Jun 2016 21:34:24 GMT  
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:cc4402be4fc96d6dac557b20785cd6fa472d12705d1a52a56bdc1afa1f666051`  
+		Last Modified: Thu, 28 Jul 2016 17:55:05 GMT  
 		Size: 221.0 B
 
 ## `debian:rc-buggy`
 
 ```console
-$ docker pull debian@sha256:ec1a4b2fbf8a29ab231e5ecba05baf81cee17bf0b131d7e8ef5734f46eb7b9eb
+$ docker pull debian@sha256:f71d7c65faed50e06189db7f18effeec92e219c5cf050b44609a8d4707364c5c
 ```
 
 -	Platforms:
@@ -565,32 +565,32 @@ $ docker pull debian@sha256:ec1a4b2fbf8a29ab231e5ecba05baf81cee17bf0b131d7e8ef57
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.1 MB (44108738 bytes)**  
+-	Total Size: **42.5 MB (42487851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2fb3dd393820b436eeb288055840d7237ecae1df73c56d07be09b50247f1243d`
+-	Image ID: `sha256:34173ffa69891170834aa225a840f3159dbf411868c8036afc76ffe580c1f8c6`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:29:06 GMT
-ADD file:8fdc004f9416952c9e1590e8cabcbb49792bbd424d6ee25dae34e39fb952832b in /
-# Thu, 09 Jun 2016 21:29:06 GMT
+# Thu, 28 Jul 2016 17:48:23 GMT
+ADD file:ef6cd3ee88d7045391cb7b6c1014d225d1abe9c0539fa50b9260639774032866 in /
+# Thu, 28 Jul 2016 17:48:24 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:30:24 GMT
+# Thu, 28 Jul 2016 17:49:34 GMT
 RUN awk '$1 ~ "^deb" { $3 = "rc-buggy"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/experimental.list
 ```
 
 -	Layers:
-	-	`sha256:2346a4d49ad1b9c5274a3f172de0791bc0a0dd146df3f2a860a7d471c06ebf6e`  
-		Last Modified: Thu, 09 Jun 2016 21:32:04 GMT  
-		Size: 44.1 MB (44108517 bytes)
-	-	`sha256:f0f37bfb541f7a574e2c966e3f7b18b0f6470fe13bd65370d47a8ce2e9359dba`  
-		Last Modified: Thu, 09 Jun 2016 21:34:32 GMT  
+	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
+		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
+		Size: 42.5 MB (42487630 bytes)
+	-	`sha256:60e06159cb5160c852e3425d109df707b0a2405d672b30b08401fb221a775ada`  
+		Last Modified: Thu, 28 Jul 2016 17:55:19 GMT  
 		Size: 221.0 B
 
 ## `debian:experimental`
 
 ```console
-$ docker pull debian@sha256:0eee1256bef1c2a8afc2dcb7bdf1b1cf894157755d1cb7367405d4e01349e5ee
+$ docker pull debian@sha256:20803a52c6b8ba77050705239e37b4aea078a4370decfa757d4a7b3149255dae
 ```
 
 -	Platforms:
@@ -600,24 +600,24 @@ $ docker pull debian@sha256:0eee1256bef1c2a8afc2dcb7bdf1b1cf894157755d1cb7367405
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.1 MB (44108628 bytes)**  
+-	Total Size: **42.5 MB (42487846 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ea7e30c1e8d34400125c0e82e0169c884632553b46c9dd24eb84a94496aaadc`
+-	Image ID: `sha256:00e801f90c58fe208a754a6e85064fcd05704fb406b643b054e5bb1c75c75d26`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:05 GMT
-ADD file:0031e3918275b7fa44a7eaab992b66a8664cc70fe1d884b99946628cdf5e2033 in /
-# Thu, 09 Jun 2016 21:30:06 GMT
+# Thu, 28 Jul 2016 17:49:16 GMT
+ADD file:aea4328d4ebd3a764e9c8ace8efc930f4f2b046c3b701f14687a23aef19d6ae4 in /
+# Thu, 28 Jul 2016 17:49:17 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:30:25 GMT
+# Thu, 28 Jul 2016 17:49:36 GMT
 RUN awk '$1 ~ "^deb" { $3 = "experimental"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/experimental.list
 ```
 
 -	Layers:
-	-	`sha256:0f409b0f5b3dbf1973baec7c850ef50c683abe9da6265cad81e7674989b77110`  
-		Last Modified: Thu, 09 Jun 2016 21:33:51 GMT  
-		Size: 44.1 MB (44108411 bytes)
-	-	`sha256:5d0d86d1ff11238f244690429846b4a1bf3e9a61aa75c95939c978050def5ee6`  
-		Last Modified: Thu, 09 Jun 2016 21:34:40 GMT  
-		Size: 217.0 B
+	-	`sha256:0259414f5a544fe64e774b001060935d4c7a813cecf88ec590e806be8423a1ac`  
+		Last Modified: Thu, 28 Jul 2016 17:54:08 GMT  
+		Size: 42.5 MB (42487628 bytes)
+	-	`sha256:994f0621b61274e6043c615f222d72687396b12e50cc9c4a685a5f891da69f5b`  
+		Last Modified: Thu, 28 Jul 2016 17:55:34 GMT  
+		Size: 218.0 B
