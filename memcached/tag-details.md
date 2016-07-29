@@ -13,12 +13,76 @@
 
 ## `memcached:1.4.29`
 
-**does not exist** (yet?)
+```console
+$ docker pull memcached@sha256:74b2c31c3769c991842b1be7b398c5caf0d1e42a82ef4a14208b3c3b35ceb19a
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `memcached:1.4.29` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **52.2 MB (52228091 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9bd9e4198c184ace56949dfbb663bc98f17e728657b38aea3e410a24fc7d6625`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["memcached"]`
+
+```dockerfile
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
+CMD ["/bin/bash"]
+# Fri, 29 Jul 2016 19:48:54 GMT
+RUN groupadd -r memcache && useradd -r -g memcache memcache
+# Fri, 29 Jul 2016 19:49:48 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		libevent-2.0-5 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 29 Jul 2016 19:49:49 GMT
+ENV MEMCACHED_VERSION=1.4.29
+# Fri, 29 Jul 2016 19:49:50 GMT
+ENV MEMCACHED_SHA1=8994b4d0dbcc8d536f3d6cd4763489a3c51ca44b
+# Fri, 29 Jul 2016 19:51:26 GMT
+RUN buildDeps=' 		gcc 		libc6-dev 		libevent-dev 		make 		perl 		wget 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O memcached.tar.gz "http://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 	&& cd /usr/src/memcached 	&& ./configure 	&& make -j$(nproc) 	&& make install 	&& cd / && rm -rf /usr/src/memcached 	&& apt-get purge -y --auto-remove $buildDeps
+# Fri, 29 Jul 2016 19:51:27 GMT
+COPY file:621e178b267679ef7140edd23c3ad9e717ed767ed55322a4e198798311bc1d36 in /usr/local/bin/
+# Fri, 29 Jul 2016 19:51:29 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
+# Fri, 29 Jul 2016 19:51:29 GMT
+ENTRYPOINT &{["docker-entrypoint.sh"]}
+# Fri, 29 Jul 2016 19:51:30 GMT
+USER [memcache]
+# Fri, 29 Jul 2016 19:51:31 GMT
+EXPOSE 11211/tcp
+# Fri, 29 Jul 2016 19:51:32 GMT
+CMD ["memcached"]
+```
+
+-	Layers:
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:1ef673e51c1fec3edd62ffd7ea49df87aeaa7f781ed02c0d4ef888ba8b438e38`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 2.0 KB (2037 bytes)
+	-	`sha256:5dfcd2189a7da17f5f513960091edaaf5fcea1ae5b6ba42cff17a909e62fdba7`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 237.8 KB (237765 bytes)
+	-	`sha256:af71c66a5346b1ebd29cbb1d95200ffacf933d79377283a3bf621a3cac9362b8`  
+		Last Modified: Fri, 29 Jul 2016 19:51:43 GMT  
+		Size: 622.3 KB (622269 bytes)
+	-	`sha256:0534b40dcd980eeea65f45a63a58cf84f2c54836bbc45315905ba883eb011b34`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 291.0 B
+	-	`sha256:9ae4e6e7375ebf849374dc2be5d1ef62dad75dc6140bdc60c98691d562822e02`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 118.0 B
 
 ## `memcached:1.4`
 
 ```console
-$ docker pull memcached@sha256:bab03d0db0afd3b2f881e5ea3a5fba7f5352b469dd87010ca1f2ae7dd052d69f
+$ docker pull memcached@sha256:74b2c31c3769c991842b1be7b398c5caf0d1e42a82ef4a14208b3c3b35ceb19a
 ```
 
 -	Platforms:
@@ -28,65 +92,65 @@ $ docker pull memcached@sha256:bab03d0db0afd3b2f881e5ea3a5fba7f5352b469dd87010ca
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.3 MB (52259521 bytes)**  
+-	Total Size: **52.2 MB (52228091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5e3fb8c40a6dc3f0aa0b75b9a4569c5e66376b9fdb0a7512a8144d04a6ac428`
+-	Image ID: `sha256:9bd9e4198c184ace56949dfbb663bc98f17e728657b38aea3e410a24fc7d6625`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Fri, 10 Jun 2016 01:56:57 GMT
+# Fri, 29 Jul 2016 19:48:54 GMT
 RUN groupadd -r memcache && useradd -r -g memcache memcache
-# Fri, 10 Jun 2016 01:57:52 GMT
+# Fri, 29 Jul 2016 19:49:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libevent-2.0-5 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 07 Jul 2016 19:16:46 GMT
-ENV MEMCACHED_VERSION=1.4.28
-# Thu, 07 Jul 2016 19:16:47 GMT
-ENV MEMCACHED_SHA1=c27662ca84933f5ebd837a86dde9378d05c1f200
-# Thu, 07 Jul 2016 19:18:20 GMT
+# Fri, 29 Jul 2016 19:49:49 GMT
+ENV MEMCACHED_VERSION=1.4.29
+# Fri, 29 Jul 2016 19:49:50 GMT
+ENV MEMCACHED_SHA1=8994b4d0dbcc8d536f3d6cd4763489a3c51ca44b
+# Fri, 29 Jul 2016 19:51:26 GMT
 RUN buildDeps=' 		gcc 		libc6-dev 		libevent-dev 		make 		perl 		wget 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O memcached.tar.gz "http://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 	&& cd /usr/src/memcached 	&& ./configure 	&& make -j$(nproc) 	&& make install 	&& cd / && rm -rf /usr/src/memcached 	&& apt-get purge -y --auto-remove $buildDeps
-# Thu, 07 Jul 2016 19:18:20 GMT
+# Fri, 29 Jul 2016 19:51:27 GMT
 COPY file:621e178b267679ef7140edd23c3ad9e717ed767ed55322a4e198798311bc1d36 in /usr/local/bin/
-# Thu, 07 Jul 2016 19:18:22 GMT
+# Fri, 29 Jul 2016 19:51:29 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Thu, 07 Jul 2016 19:18:22 GMT
+# Fri, 29 Jul 2016 19:51:29 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Thu, 07 Jul 2016 19:18:23 GMT
+# Fri, 29 Jul 2016 19:51:30 GMT
 USER [memcache]
-# Thu, 07 Jul 2016 19:18:24 GMT
+# Fri, 29 Jul 2016 19:51:31 GMT
 EXPOSE 11211/tcp
-# Thu, 07 Jul 2016 19:18:24 GMT
+# Fri, 29 Jul 2016 19:51:32 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:868898c37c222d7c2f384f786bd48040966be80118390661155529829f4b3747`  
-		Last Modified: Fri, 17 Jun 2016 22:52:17 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:19e53c924a166258e61de36fde2ef43b394238d1c9b232702e313863ae51f49d`  
-		Last Modified: Fri, 17 Jun 2016 22:52:18 GMT  
-		Size: 267.8 KB (267847 bytes)
-	-	`sha256:8554d5ab247dc8922eecc4f4a0f4a7c86e3892954c839ab0783bb1ae5798510c`  
-		Last Modified: Thu, 07 Jul 2016 19:18:57 GMT  
-		Size: 636.7 KB (636692 bytes)
-	-	`sha256:2d12d8b3edb225de487739a77b527ab5e08267e5213cceb229241efe7f6adfbc`  
-		Last Modified: Thu, 07 Jul 2016 19:18:56 GMT  
-		Size: 289.0 B
-	-	`sha256:93784575d02d7c592c3a8c6607f7630e0b7267d6497cb47861116561e1d6756d`  
-		Last Modified: Thu, 07 Jul 2016 19:18:56 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:1ef673e51c1fec3edd62ffd7ea49df87aeaa7f781ed02c0d4ef888ba8b438e38`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 2.0 KB (2037 bytes)
+	-	`sha256:5dfcd2189a7da17f5f513960091edaaf5fcea1ae5b6ba42cff17a909e62fdba7`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 237.8 KB (237765 bytes)
+	-	`sha256:af71c66a5346b1ebd29cbb1d95200ffacf933d79377283a3bf621a3cac9362b8`  
+		Last Modified: Fri, 29 Jul 2016 19:51:43 GMT  
+		Size: 622.3 KB (622269 bytes)
+	-	`sha256:0534b40dcd980eeea65f45a63a58cf84f2c54836bbc45315905ba883eb011b34`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 291.0 B
+	-	`sha256:9ae4e6e7375ebf849374dc2be5d1ef62dad75dc6140bdc60c98691d562822e02`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
 		Size: 118.0 B
 
 ## `memcached:1`
 
 ```console
-$ docker pull memcached@sha256:bab03d0db0afd3b2f881e5ea3a5fba7f5352b469dd87010ca1f2ae7dd052d69f
+$ docker pull memcached@sha256:74b2c31c3769c991842b1be7b398c5caf0d1e42a82ef4a14208b3c3b35ceb19a
 ```
 
 -	Platforms:
@@ -96,65 +160,65 @@ $ docker pull memcached@sha256:bab03d0db0afd3b2f881e5ea3a5fba7f5352b469dd87010ca
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.3 MB (52259521 bytes)**  
+-	Total Size: **52.2 MB (52228091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5e3fb8c40a6dc3f0aa0b75b9a4569c5e66376b9fdb0a7512a8144d04a6ac428`
+-	Image ID: `sha256:9bd9e4198c184ace56949dfbb663bc98f17e728657b38aea3e410a24fc7d6625`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Fri, 10 Jun 2016 01:56:57 GMT
+# Fri, 29 Jul 2016 19:48:54 GMT
 RUN groupadd -r memcache && useradd -r -g memcache memcache
-# Fri, 10 Jun 2016 01:57:52 GMT
+# Fri, 29 Jul 2016 19:49:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libevent-2.0-5 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 07 Jul 2016 19:16:46 GMT
-ENV MEMCACHED_VERSION=1.4.28
-# Thu, 07 Jul 2016 19:16:47 GMT
-ENV MEMCACHED_SHA1=c27662ca84933f5ebd837a86dde9378d05c1f200
-# Thu, 07 Jul 2016 19:18:20 GMT
+# Fri, 29 Jul 2016 19:49:49 GMT
+ENV MEMCACHED_VERSION=1.4.29
+# Fri, 29 Jul 2016 19:49:50 GMT
+ENV MEMCACHED_SHA1=8994b4d0dbcc8d536f3d6cd4763489a3c51ca44b
+# Fri, 29 Jul 2016 19:51:26 GMT
 RUN buildDeps=' 		gcc 		libc6-dev 		libevent-dev 		make 		perl 		wget 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O memcached.tar.gz "http://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 	&& cd /usr/src/memcached 	&& ./configure 	&& make -j$(nproc) 	&& make install 	&& cd / && rm -rf /usr/src/memcached 	&& apt-get purge -y --auto-remove $buildDeps
-# Thu, 07 Jul 2016 19:18:20 GMT
+# Fri, 29 Jul 2016 19:51:27 GMT
 COPY file:621e178b267679ef7140edd23c3ad9e717ed767ed55322a4e198798311bc1d36 in /usr/local/bin/
-# Thu, 07 Jul 2016 19:18:22 GMT
+# Fri, 29 Jul 2016 19:51:29 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Thu, 07 Jul 2016 19:18:22 GMT
+# Fri, 29 Jul 2016 19:51:29 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Thu, 07 Jul 2016 19:18:23 GMT
+# Fri, 29 Jul 2016 19:51:30 GMT
 USER [memcache]
-# Thu, 07 Jul 2016 19:18:24 GMT
+# Fri, 29 Jul 2016 19:51:31 GMT
 EXPOSE 11211/tcp
-# Thu, 07 Jul 2016 19:18:24 GMT
+# Fri, 29 Jul 2016 19:51:32 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:868898c37c222d7c2f384f786bd48040966be80118390661155529829f4b3747`  
-		Last Modified: Fri, 17 Jun 2016 22:52:17 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:19e53c924a166258e61de36fde2ef43b394238d1c9b232702e313863ae51f49d`  
-		Last Modified: Fri, 17 Jun 2016 22:52:18 GMT  
-		Size: 267.8 KB (267847 bytes)
-	-	`sha256:8554d5ab247dc8922eecc4f4a0f4a7c86e3892954c839ab0783bb1ae5798510c`  
-		Last Modified: Thu, 07 Jul 2016 19:18:57 GMT  
-		Size: 636.7 KB (636692 bytes)
-	-	`sha256:2d12d8b3edb225de487739a77b527ab5e08267e5213cceb229241efe7f6adfbc`  
-		Last Modified: Thu, 07 Jul 2016 19:18:56 GMT  
-		Size: 289.0 B
-	-	`sha256:93784575d02d7c592c3a8c6607f7630e0b7267d6497cb47861116561e1d6756d`  
-		Last Modified: Thu, 07 Jul 2016 19:18:56 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:1ef673e51c1fec3edd62ffd7ea49df87aeaa7f781ed02c0d4ef888ba8b438e38`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 2.0 KB (2037 bytes)
+	-	`sha256:5dfcd2189a7da17f5f513960091edaaf5fcea1ae5b6ba42cff17a909e62fdba7`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 237.8 KB (237765 bytes)
+	-	`sha256:af71c66a5346b1ebd29cbb1d95200ffacf933d79377283a3bf621a3cac9362b8`  
+		Last Modified: Fri, 29 Jul 2016 19:51:43 GMT  
+		Size: 622.3 KB (622269 bytes)
+	-	`sha256:0534b40dcd980eeea65f45a63a58cf84f2c54836bbc45315905ba883eb011b34`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 291.0 B
+	-	`sha256:9ae4e6e7375ebf849374dc2be5d1ef62dad75dc6140bdc60c98691d562822e02`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
 		Size: 118.0 B
 
 ## `memcached:latest`
 
 ```console
-$ docker pull memcached@sha256:bab03d0db0afd3b2f881e5ea3a5fba7f5352b469dd87010ca1f2ae7dd052d69f
+$ docker pull memcached@sha256:74b2c31c3769c991842b1be7b398c5caf0d1e42a82ef4a14208b3c3b35ceb19a
 ```
 
 -	Platforms:
@@ -164,59 +228,59 @@ $ docker pull memcached@sha256:bab03d0db0afd3b2f881e5ea3a5fba7f5352b469dd87010ca
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.3 MB (52259521 bytes)**  
+-	Total Size: **52.2 MB (52228091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5e3fb8c40a6dc3f0aa0b75b9a4569c5e66376b9fdb0a7512a8144d04a6ac428`
+-	Image ID: `sha256:9bd9e4198c184ace56949dfbb663bc98f17e728657b38aea3e410a24fc7d6625`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Fri, 10 Jun 2016 01:56:57 GMT
+# Fri, 29 Jul 2016 19:48:54 GMT
 RUN groupadd -r memcache && useradd -r -g memcache memcache
-# Fri, 10 Jun 2016 01:57:52 GMT
+# Fri, 29 Jul 2016 19:49:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libevent-2.0-5 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 07 Jul 2016 19:16:46 GMT
-ENV MEMCACHED_VERSION=1.4.28
-# Thu, 07 Jul 2016 19:16:47 GMT
-ENV MEMCACHED_SHA1=c27662ca84933f5ebd837a86dde9378d05c1f200
-# Thu, 07 Jul 2016 19:18:20 GMT
+# Fri, 29 Jul 2016 19:49:49 GMT
+ENV MEMCACHED_VERSION=1.4.29
+# Fri, 29 Jul 2016 19:49:50 GMT
+ENV MEMCACHED_SHA1=8994b4d0dbcc8d536f3d6cd4763489a3c51ca44b
+# Fri, 29 Jul 2016 19:51:26 GMT
 RUN buildDeps=' 		gcc 		libc6-dev 		libevent-dev 		make 		perl 		wget 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O memcached.tar.gz "http://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 	&& cd /usr/src/memcached 	&& ./configure 	&& make -j$(nproc) 	&& make install 	&& cd / && rm -rf /usr/src/memcached 	&& apt-get purge -y --auto-remove $buildDeps
-# Thu, 07 Jul 2016 19:18:20 GMT
+# Fri, 29 Jul 2016 19:51:27 GMT
 COPY file:621e178b267679ef7140edd23c3ad9e717ed767ed55322a4e198798311bc1d36 in /usr/local/bin/
-# Thu, 07 Jul 2016 19:18:22 GMT
+# Fri, 29 Jul 2016 19:51:29 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Thu, 07 Jul 2016 19:18:22 GMT
+# Fri, 29 Jul 2016 19:51:29 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Thu, 07 Jul 2016 19:18:23 GMT
+# Fri, 29 Jul 2016 19:51:30 GMT
 USER [memcache]
-# Thu, 07 Jul 2016 19:18:24 GMT
+# Fri, 29 Jul 2016 19:51:31 GMT
 EXPOSE 11211/tcp
-# Thu, 07 Jul 2016 19:18:24 GMT
+# Fri, 29 Jul 2016 19:51:32 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:868898c37c222d7c2f384f786bd48040966be80118390661155529829f4b3747`  
-		Last Modified: Fri, 17 Jun 2016 22:52:17 GMT  
-		Size: 2.0 KB (2040 bytes)
-	-	`sha256:19e53c924a166258e61de36fde2ef43b394238d1c9b232702e313863ae51f49d`  
-		Last Modified: Fri, 17 Jun 2016 22:52:18 GMT  
-		Size: 267.8 KB (267847 bytes)
-	-	`sha256:8554d5ab247dc8922eecc4f4a0f4a7c86e3892954c839ab0783bb1ae5798510c`  
-		Last Modified: Thu, 07 Jul 2016 19:18:57 GMT  
-		Size: 636.7 KB (636692 bytes)
-	-	`sha256:2d12d8b3edb225de487739a77b527ab5e08267e5213cceb229241efe7f6adfbc`  
-		Last Modified: Thu, 07 Jul 2016 19:18:56 GMT  
-		Size: 289.0 B
-	-	`sha256:93784575d02d7c592c3a8c6607f7630e0b7267d6497cb47861116561e1d6756d`  
-		Last Modified: Thu, 07 Jul 2016 19:18:56 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:1ef673e51c1fec3edd62ffd7ea49df87aeaa7f781ed02c0d4ef888ba8b438e38`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 2.0 KB (2037 bytes)
+	-	`sha256:5dfcd2189a7da17f5f513960091edaaf5fcea1ae5b6ba42cff17a909e62fdba7`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 237.8 KB (237765 bytes)
+	-	`sha256:af71c66a5346b1ebd29cbb1d95200ffacf933d79377283a3bf621a3cac9362b8`  
+		Last Modified: Fri, 29 Jul 2016 19:51:43 GMT  
+		Size: 622.3 KB (622269 bytes)
+	-	`sha256:0534b40dcd980eeea65f45a63a58cf84f2c54836bbc45315905ba883eb011b34`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
+		Size: 291.0 B
+	-	`sha256:9ae4e6e7375ebf849374dc2be5d1ef62dad75dc6140bdc60c98691d562822e02`  
+		Last Modified: Fri, 29 Jul 2016 19:51:41 GMT  
 		Size: 118.0 B
 
 ## `memcached:1.4.29-alpine`
