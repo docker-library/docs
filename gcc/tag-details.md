@@ -360,7 +360,7 @@ RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& 
 ## `gcc:6.1.0`
 
 ```console
-$ docker pull gcc@sha256:50f45b9107dab2a3bd92420855e9bda12f70cf233a95e104c40c808fe80f3675
+$ docker pull gcc@sha256:3a2a713e1abb9d5753d15b5cca5ed7364b1ad7239862316c3dacd3308a6495f0
 ```
 
 -	Platforms:
@@ -370,66 +370,66 @@ $ docker pull gcc@sha256:50f45b9107dab2a3bd92420855e9bda12f70cf233a95e104c40c808
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **453.4 MB (453352192 bytes)**  
+-	Total Size: **453.3 MB (453252712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8610f3d97feae3efe214db8ea7287554a2bb5ead8f9bf59cd959115145904b59`
+-	Image ID: `sha256:d8448d25789ab48ededb6ec86ac3328e9e81df70a30925763fec4d0f588a05c7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:39:19 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 14:58:06 GMT
+# Thu, 28 Jul 2016 23:58:45 GMT
 ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06
-# Fri, 10 Jun 2016 14:58:11 GMT
+# Thu, 28 Jul 2016 23:58:50 GMT
 RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
-# Fri, 10 Jun 2016 17:24:37 GMT
+# Fri, 29 Jul 2016 01:11:14 GMT
 ENV GCC_VERSION=6.1.0
-# Wed, 20 Jul 2016 00:00:02 GMT
+# Fri, 29 Jul 2016 02:33:43 GMT
 RUN buildDeps='flex' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig 	&& gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 	&& mkdir -p /usr/src/gcc 	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 	&& rm gcc.tar.bz2* 	&& cd /usr/src/gcc 	&& ./contrib/download_prerequisites 	&& { rm *.tar.* || true; } 	&& dir="$(mktemp -d)" 	&& cd "$dir" 	&& /usr/src/gcc/configure 		--disable-multilib 		--enable-languages=c,c++,fortran,go 	&& make -j"$(nproc)" 	&& make install-strip 	&& cd .. 	&& rm -rf "$dir" 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 20 Jul 2016 00:00:08 GMT
+# Fri, 29 Jul 2016 02:33:48 GMT
 RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf 	&& ldconfig -v
-# Wed, 20 Jul 2016 00:00:09 GMT
+# Fri, 29 Jul 2016 02:33:49 GMT
 RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ 	&& dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:abb742d515b4cf197291ef3132f11462aaadc5cfbbe362f4ae4f6f7dcdb6453e`  
-		Last Modified: Thu, 09 Jun 2016 21:47:38 GMT  
-		Size: 129.7 MB (129704383 bytes)
-	-	`sha256:d32a4c04e369315bdecbe764088d0f55a9bde24ccbd0acba6f596ab98518967a`  
-		Last Modified: Sat, 25 Jun 2016 01:22:17 GMT  
-		Size: 98.2 KB (98200 bytes)
-	-	`sha256:b7642b007f9dabc6960f2cebaf60645d105620531609b0b0ae193bb77d9f5a28`  
-		Last Modified: Wed, 20 Jul 2016 00:06:36 GMT  
-		Size: 211.1 MB (211081761 bytes)
-	-	`sha256:f5716448e2507573d15e5e8650a7c24dd974c5a906425f3b95ebd78254952e5c`  
-		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
-		Size: 10.6 KB (10599 bytes)
-	-	`sha256:59b52273642be1543212a990ecd11c774a348bb8d3cc4be19e102e826b682131`  
-		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
-		Size: 32.1 KB (32124 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:dc6e8c0b4daa81ab4dded50925e529fe46a23bcb170b977b969d2db88b324f04`  
+		Last Modified: Fri, 29 Jul 2016 01:09:39 GMT  
+		Size: 98.8 KB (98775 bytes)
+	-	`sha256:ffc96de8e06ade6f2d040a2ba3b6b98a18b90beac86d5361730082d011cab566`  
+		Last Modified: Fri, 29 Jul 2016 02:37:06 GMT  
+		Size: 211.1 MB (211060999 bytes)
+	-	`sha256:1e8f211ee864eb502a5c9b82a7ca2727f839c0b138e48711ff07a5561883da1e`  
+		Last Modified: Fri, 29 Jul 2016 02:34:03 GMT  
+		Size: 10.6 KB (10595 bytes)
+	-	`sha256:0e13bb188f333ccd9e5b41de47e59ec8f5bd7be138f1cb62a4e03e65529c17af`  
+		Last Modified: Fri, 29 Jul 2016 02:34:03 GMT  
+		Size: 1.8 KB (1837 bytes)
 
 ## `gcc:6.1`
 
 ```console
-$ docker pull gcc@sha256:50f45b9107dab2a3bd92420855e9bda12f70cf233a95e104c40c808fe80f3675
+$ docker pull gcc@sha256:3a2a713e1abb9d5753d15b5cca5ed7364b1ad7239862316c3dacd3308a6495f0
 ```
 
 -	Platforms:
@@ -439,66 +439,66 @@ $ docker pull gcc@sha256:50f45b9107dab2a3bd92420855e9bda12f70cf233a95e104c40c808
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **453.4 MB (453352192 bytes)**  
+-	Total Size: **453.3 MB (453252712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8610f3d97feae3efe214db8ea7287554a2bb5ead8f9bf59cd959115145904b59`
+-	Image ID: `sha256:d8448d25789ab48ededb6ec86ac3328e9e81df70a30925763fec4d0f588a05c7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:39:19 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 14:58:06 GMT
+# Thu, 28 Jul 2016 23:58:45 GMT
 ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06
-# Fri, 10 Jun 2016 14:58:11 GMT
+# Thu, 28 Jul 2016 23:58:50 GMT
 RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
-# Fri, 10 Jun 2016 17:24:37 GMT
+# Fri, 29 Jul 2016 01:11:14 GMT
 ENV GCC_VERSION=6.1.0
-# Wed, 20 Jul 2016 00:00:02 GMT
+# Fri, 29 Jul 2016 02:33:43 GMT
 RUN buildDeps='flex' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig 	&& gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 	&& mkdir -p /usr/src/gcc 	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 	&& rm gcc.tar.bz2* 	&& cd /usr/src/gcc 	&& ./contrib/download_prerequisites 	&& { rm *.tar.* || true; } 	&& dir="$(mktemp -d)" 	&& cd "$dir" 	&& /usr/src/gcc/configure 		--disable-multilib 		--enable-languages=c,c++,fortran,go 	&& make -j"$(nproc)" 	&& make install-strip 	&& cd .. 	&& rm -rf "$dir" 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 20 Jul 2016 00:00:08 GMT
+# Fri, 29 Jul 2016 02:33:48 GMT
 RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf 	&& ldconfig -v
-# Wed, 20 Jul 2016 00:00:09 GMT
+# Fri, 29 Jul 2016 02:33:49 GMT
 RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ 	&& dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:abb742d515b4cf197291ef3132f11462aaadc5cfbbe362f4ae4f6f7dcdb6453e`  
-		Last Modified: Thu, 09 Jun 2016 21:47:38 GMT  
-		Size: 129.7 MB (129704383 bytes)
-	-	`sha256:d32a4c04e369315bdecbe764088d0f55a9bde24ccbd0acba6f596ab98518967a`  
-		Last Modified: Sat, 25 Jun 2016 01:22:17 GMT  
-		Size: 98.2 KB (98200 bytes)
-	-	`sha256:b7642b007f9dabc6960f2cebaf60645d105620531609b0b0ae193bb77d9f5a28`  
-		Last Modified: Wed, 20 Jul 2016 00:06:36 GMT  
-		Size: 211.1 MB (211081761 bytes)
-	-	`sha256:f5716448e2507573d15e5e8650a7c24dd974c5a906425f3b95ebd78254952e5c`  
-		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
-		Size: 10.6 KB (10599 bytes)
-	-	`sha256:59b52273642be1543212a990ecd11c774a348bb8d3cc4be19e102e826b682131`  
-		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
-		Size: 32.1 KB (32124 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:dc6e8c0b4daa81ab4dded50925e529fe46a23bcb170b977b969d2db88b324f04`  
+		Last Modified: Fri, 29 Jul 2016 01:09:39 GMT  
+		Size: 98.8 KB (98775 bytes)
+	-	`sha256:ffc96de8e06ade6f2d040a2ba3b6b98a18b90beac86d5361730082d011cab566`  
+		Last Modified: Fri, 29 Jul 2016 02:37:06 GMT  
+		Size: 211.1 MB (211060999 bytes)
+	-	`sha256:1e8f211ee864eb502a5c9b82a7ca2727f839c0b138e48711ff07a5561883da1e`  
+		Last Modified: Fri, 29 Jul 2016 02:34:03 GMT  
+		Size: 10.6 KB (10595 bytes)
+	-	`sha256:0e13bb188f333ccd9e5b41de47e59ec8f5bd7be138f1cb62a4e03e65529c17af`  
+		Last Modified: Fri, 29 Jul 2016 02:34:03 GMT  
+		Size: 1.8 KB (1837 bytes)
 
 ## `gcc:6`
 
 ```console
-$ docker pull gcc@sha256:50f45b9107dab2a3bd92420855e9bda12f70cf233a95e104c40c808fe80f3675
+$ docker pull gcc@sha256:3a2a713e1abb9d5753d15b5cca5ed7364b1ad7239862316c3dacd3308a6495f0
 ```
 
 -	Platforms:
@@ -508,66 +508,66 @@ $ docker pull gcc@sha256:50f45b9107dab2a3bd92420855e9bda12f70cf233a95e104c40c808
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **453.4 MB (453352192 bytes)**  
+-	Total Size: **453.3 MB (453252712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8610f3d97feae3efe214db8ea7287554a2bb5ead8f9bf59cd959115145904b59`
+-	Image ID: `sha256:d8448d25789ab48ededb6ec86ac3328e9e81df70a30925763fec4d0f588a05c7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:39:19 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 14:58:06 GMT
+# Thu, 28 Jul 2016 23:58:45 GMT
 ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06
-# Fri, 10 Jun 2016 14:58:11 GMT
+# Thu, 28 Jul 2016 23:58:50 GMT
 RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
-# Fri, 10 Jun 2016 17:24:37 GMT
+# Fri, 29 Jul 2016 01:11:14 GMT
 ENV GCC_VERSION=6.1.0
-# Wed, 20 Jul 2016 00:00:02 GMT
+# Fri, 29 Jul 2016 02:33:43 GMT
 RUN buildDeps='flex' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig 	&& gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 	&& mkdir -p /usr/src/gcc 	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 	&& rm gcc.tar.bz2* 	&& cd /usr/src/gcc 	&& ./contrib/download_prerequisites 	&& { rm *.tar.* || true; } 	&& dir="$(mktemp -d)" 	&& cd "$dir" 	&& /usr/src/gcc/configure 		--disable-multilib 		--enable-languages=c,c++,fortran,go 	&& make -j"$(nproc)" 	&& make install-strip 	&& cd .. 	&& rm -rf "$dir" 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 20 Jul 2016 00:00:08 GMT
+# Fri, 29 Jul 2016 02:33:48 GMT
 RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf 	&& ldconfig -v
-# Wed, 20 Jul 2016 00:00:09 GMT
+# Fri, 29 Jul 2016 02:33:49 GMT
 RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ 	&& dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:abb742d515b4cf197291ef3132f11462aaadc5cfbbe362f4ae4f6f7dcdb6453e`  
-		Last Modified: Thu, 09 Jun 2016 21:47:38 GMT  
-		Size: 129.7 MB (129704383 bytes)
-	-	`sha256:d32a4c04e369315bdecbe764088d0f55a9bde24ccbd0acba6f596ab98518967a`  
-		Last Modified: Sat, 25 Jun 2016 01:22:17 GMT  
-		Size: 98.2 KB (98200 bytes)
-	-	`sha256:b7642b007f9dabc6960f2cebaf60645d105620531609b0b0ae193bb77d9f5a28`  
-		Last Modified: Wed, 20 Jul 2016 00:06:36 GMT  
-		Size: 211.1 MB (211081761 bytes)
-	-	`sha256:f5716448e2507573d15e5e8650a7c24dd974c5a906425f3b95ebd78254952e5c`  
-		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
-		Size: 10.6 KB (10599 bytes)
-	-	`sha256:59b52273642be1543212a990ecd11c774a348bb8d3cc4be19e102e826b682131`  
-		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
-		Size: 32.1 KB (32124 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:dc6e8c0b4daa81ab4dded50925e529fe46a23bcb170b977b969d2db88b324f04`  
+		Last Modified: Fri, 29 Jul 2016 01:09:39 GMT  
+		Size: 98.8 KB (98775 bytes)
+	-	`sha256:ffc96de8e06ade6f2d040a2ba3b6b98a18b90beac86d5361730082d011cab566`  
+		Last Modified: Fri, 29 Jul 2016 02:37:06 GMT  
+		Size: 211.1 MB (211060999 bytes)
+	-	`sha256:1e8f211ee864eb502a5c9b82a7ca2727f839c0b138e48711ff07a5561883da1e`  
+		Last Modified: Fri, 29 Jul 2016 02:34:03 GMT  
+		Size: 10.6 KB (10595 bytes)
+	-	`sha256:0e13bb188f333ccd9e5b41de47e59ec8f5bd7be138f1cb62a4e03e65529c17af`  
+		Last Modified: Fri, 29 Jul 2016 02:34:03 GMT  
+		Size: 1.8 KB (1837 bytes)
 
 ## `gcc:latest`
 
 ```console
-$ docker pull gcc@sha256:50f45b9107dab2a3bd92420855e9bda12f70cf233a95e104c40c808fe80f3675
+$ docker pull gcc@sha256:3a2a713e1abb9d5753d15b5cca5ed7364b1ad7239862316c3dacd3308a6495f0
 ```
 
 -	Platforms:
@@ -577,58 +577,58 @@ $ docker pull gcc@sha256:50f45b9107dab2a3bd92420855e9bda12f70cf233a95e104c40c808
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **453.4 MB (453352192 bytes)**  
+-	Total Size: **453.3 MB (453252712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8610f3d97feae3efe214db8ea7287554a2bb5ead8f9bf59cd959115145904b59`
+-	Image ID: `sha256:d8448d25789ab48ededb6ec86ac3328e9e81df70a30925763fec4d0f588a05c7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:39:19 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 14:58:06 GMT
+# Thu, 28 Jul 2016 23:58:45 GMT
 ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06
-# Fri, 10 Jun 2016 14:58:11 GMT
+# Thu, 28 Jul 2016 23:58:50 GMT
 RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
-# Fri, 10 Jun 2016 17:24:37 GMT
+# Fri, 29 Jul 2016 01:11:14 GMT
 ENV GCC_VERSION=6.1.0
-# Wed, 20 Jul 2016 00:00:02 GMT
+# Fri, 29 Jul 2016 02:33:43 GMT
 RUN buildDeps='flex' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig 	&& gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 	&& mkdir -p /usr/src/gcc 	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 	&& rm gcc.tar.bz2* 	&& cd /usr/src/gcc 	&& ./contrib/download_prerequisites 	&& { rm *.tar.* || true; } 	&& dir="$(mktemp -d)" 	&& cd "$dir" 	&& /usr/src/gcc/configure 		--disable-multilib 		--enable-languages=c,c++,fortran,go 	&& make -j"$(nproc)" 	&& make install-strip 	&& cd .. 	&& rm -rf "$dir" 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 20 Jul 2016 00:00:08 GMT
+# Fri, 29 Jul 2016 02:33:48 GMT
 RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf 	&& ldconfig -v
-# Wed, 20 Jul 2016 00:00:09 GMT
+# Fri, 29 Jul 2016 02:33:49 GMT
 RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ 	&& dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:abb742d515b4cf197291ef3132f11462aaadc5cfbbe362f4ae4f6f7dcdb6453e`  
-		Last Modified: Thu, 09 Jun 2016 21:47:38 GMT  
-		Size: 129.7 MB (129704383 bytes)
-	-	`sha256:d32a4c04e369315bdecbe764088d0f55a9bde24ccbd0acba6f596ab98518967a`  
-		Last Modified: Sat, 25 Jun 2016 01:22:17 GMT  
-		Size: 98.2 KB (98200 bytes)
-	-	`sha256:b7642b007f9dabc6960f2cebaf60645d105620531609b0b0ae193bb77d9f5a28`  
-		Last Modified: Wed, 20 Jul 2016 00:06:36 GMT  
-		Size: 211.1 MB (211081761 bytes)
-	-	`sha256:f5716448e2507573d15e5e8650a7c24dd974c5a906425f3b95ebd78254952e5c`  
-		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
-		Size: 10.6 KB (10599 bytes)
-	-	`sha256:59b52273642be1543212a990ecd11c774a348bb8d3cc4be19e102e826b682131`  
-		Last Modified: Wed, 20 Jul 2016 00:05:20 GMT  
-		Size: 32.1 KB (32124 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:dc6e8c0b4daa81ab4dded50925e529fe46a23bcb170b977b969d2db88b324f04`  
+		Last Modified: Fri, 29 Jul 2016 01:09:39 GMT  
+		Size: 98.8 KB (98775 bytes)
+	-	`sha256:ffc96de8e06ade6f2d040a2ba3b6b98a18b90beac86d5361730082d011cab566`  
+		Last Modified: Fri, 29 Jul 2016 02:37:06 GMT  
+		Size: 211.1 MB (211060999 bytes)
+	-	`sha256:1e8f211ee864eb502a5c9b82a7ca2727f839c0b138e48711ff07a5561883da1e`  
+		Last Modified: Fri, 29 Jul 2016 02:34:03 GMT  
+		Size: 10.6 KB (10595 bytes)
+	-	`sha256:0e13bb188f333ccd9e5b41de47e59ec8f5bd7be138f1cb62a4e03e65529c17af`  
+		Last Modified: Fri, 29 Jul 2016 02:34:03 GMT  
+		Size: 1.8 KB (1837 bytes)
