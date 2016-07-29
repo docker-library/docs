@@ -27,7 +27,7 @@
 ## `centos:latest`
 
 ```console
-$ docker pull centos@sha256:7b754086d2c7d74ac39dc0a2545d7b06d4266f873d502feb5b3e8bfca27c5dd8
+$ docker pull centos@sha256:a66ffcb73930584413de83311ca11a4cb4938c9b2521d331026dad970c19adf4
 ```
 
 -	Platforms:
@@ -37,31 +37,31 @@ $ docker pull centos@sha256:7b754086d2c7d74ac39dc0a2545d7b06d4266f873d502feb5b3e
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.6 MB (70583564 bytes)**  
+-	Total Size: **70.6 MB (70582749 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50dae1ee86770fdc303c2cac03d3f7f62cd78ba6a8ad27b303447680853152f5`
+-	Image ID: `sha256:97063303644439d9cea259b0e5f4b468633c90d88bf526acc67e5ae0a6e9427c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 01 Jul 2016 22:34:12 GMT
 MAINTAINER https://github.com/CentOS/sig-cloud-instance-images
-# Tue, 19 Jul 2016 20:36:57 GMT
-ADD file:d9bb42dd655c9b4d19b9d516c27d8c434d55e709054dd9756de1f0ad0e362548 in /
-# Tue, 19 Jul 2016 20:37:01 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160719
-# Tue, 19 Jul 2016 20:37:04 GMT
+# Fri, 29 Jul 2016 20:59:04 GMT
+ADD file:44ef4e10b27d8c464ad675a8a514a382c8748bb17d1bd707df084f6315076149 in /
+# Fri, 29 Jul 2016 20:59:07 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160729
+# Fri, 29 Jul 2016 20:59:10 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:8c3d77a518cbc66dad00ac5b6061a4d7c7f14c3d8b516c7d635642d11418cd29`  
-		Last Modified: Tue, 19 Jul 2016 20:38:10 GMT  
-		Size: 70.6 MB (70583564 bytes)
+	-	`sha256:3d8673bd162aafaf70e94029801a409fa3210363707ea1e7956b6f8ff9351cc8`  
+		Last Modified: Fri, 29 Jul 2016 21:00:19 GMT  
+		Size: 70.6 MB (70582749 bytes)
 
 ## `centos:centos7`
 
 ```console
-$ docker pull centos@sha256:7b754086d2c7d74ac39dc0a2545d7b06d4266f873d502feb5b3e8bfca27c5dd8
+$ docker pull centos@sha256:a66ffcb73930584413de83311ca11a4cb4938c9b2521d331026dad970c19adf4
 ```
 
 -	Platforms:
@@ -71,31 +71,31 @@ $ docker pull centos@sha256:7b754086d2c7d74ac39dc0a2545d7b06d4266f873d502feb5b3e
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.6 MB (70583564 bytes)**  
+-	Total Size: **70.6 MB (70582749 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50dae1ee86770fdc303c2cac03d3f7f62cd78ba6a8ad27b303447680853152f5`
+-	Image ID: `sha256:97063303644439d9cea259b0e5f4b468633c90d88bf526acc67e5ae0a6e9427c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 01 Jul 2016 22:34:12 GMT
 MAINTAINER https://github.com/CentOS/sig-cloud-instance-images
-# Tue, 19 Jul 2016 20:36:57 GMT
-ADD file:d9bb42dd655c9b4d19b9d516c27d8c434d55e709054dd9756de1f0ad0e362548 in /
-# Tue, 19 Jul 2016 20:37:01 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160719
-# Tue, 19 Jul 2016 20:37:04 GMT
+# Fri, 29 Jul 2016 20:59:04 GMT
+ADD file:44ef4e10b27d8c464ad675a8a514a382c8748bb17d1bd707df084f6315076149 in /
+# Fri, 29 Jul 2016 20:59:07 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160729
+# Fri, 29 Jul 2016 20:59:10 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:8c3d77a518cbc66dad00ac5b6061a4d7c7f14c3d8b516c7d635642d11418cd29`  
-		Last Modified: Tue, 19 Jul 2016 20:38:10 GMT  
-		Size: 70.6 MB (70583564 bytes)
+	-	`sha256:3d8673bd162aafaf70e94029801a409fa3210363707ea1e7956b6f8ff9351cc8`  
+		Last Modified: Fri, 29 Jul 2016 21:00:19 GMT  
+		Size: 70.6 MB (70582749 bytes)
 
 ## `centos:7`
 
 ```console
-$ docker pull centos@sha256:7b754086d2c7d74ac39dc0a2545d7b06d4266f873d502feb5b3e8bfca27c5dd8
+$ docker pull centos@sha256:a66ffcb73930584413de83311ca11a4cb4938c9b2521d331026dad970c19adf4
 ```
 
 -	Platforms:
@@ -105,31 +105,31 @@ $ docker pull centos@sha256:7b754086d2c7d74ac39dc0a2545d7b06d4266f873d502feb5b3e
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.6 MB (70583564 bytes)**  
+-	Total Size: **70.6 MB (70582749 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50dae1ee86770fdc303c2cac03d3f7f62cd78ba6a8ad27b303447680853152f5`
+-	Image ID: `sha256:97063303644439d9cea259b0e5f4b468633c90d88bf526acc67e5ae0a6e9427c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 01 Jul 2016 22:34:12 GMT
 MAINTAINER https://github.com/CentOS/sig-cloud-instance-images
-# Tue, 19 Jul 2016 20:36:57 GMT
-ADD file:d9bb42dd655c9b4d19b9d516c27d8c434d55e709054dd9756de1f0ad0e362548 in /
-# Tue, 19 Jul 2016 20:37:01 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160719
-# Tue, 19 Jul 2016 20:37:04 GMT
+# Fri, 29 Jul 2016 20:59:04 GMT
+ADD file:44ef4e10b27d8c464ad675a8a514a382c8748bb17d1bd707df084f6315076149 in /
+# Fri, 29 Jul 2016 20:59:07 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160729
+# Fri, 29 Jul 2016 20:59:10 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:8c3d77a518cbc66dad00ac5b6061a4d7c7f14c3d8b516c7d635642d11418cd29`  
-		Last Modified: Tue, 19 Jul 2016 20:38:10 GMT  
-		Size: 70.6 MB (70583564 bytes)
+	-	`sha256:3d8673bd162aafaf70e94029801a409fa3210363707ea1e7956b6f8ff9351cc8`  
+		Last Modified: Fri, 29 Jul 2016 21:00:19 GMT  
+		Size: 70.6 MB (70582749 bytes)
 
 ## `centos:centos6`
 
 ```console
-$ docker pull centos@sha256:06fee3c42ca43701900ce3d4a9460f1648a2cd7e741f395e1ac78ee17eec8f80
+$ docker pull centos@sha256:cd6d68000b47a91e7c94b558d7e3e653c3f0eac1a77842d97b0b7ad955cad608
 ```
 
 -	Platforms:
@@ -139,31 +139,31 @@ $ docker pull centos@sha256:06fee3c42ca43701900ce3d4a9460f1648a2cd7e741f395e1ac7
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.7 MB (68728940 bytes)**  
+-	Total Size: **68.8 MB (68764174 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf2c3ece5e418fd063bfad5e7e8d083182195152f90aac3a5ca4dbfbf6a1fc2a`
+-	Image ID: `sha256:a3c09d36ab4a03089d5bbe6e719a72b7f6c62a2ae800f89180343f9ee09366c1`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 01 Jul 2016 22:34:12 GMT
 MAINTAINER https://github.com/CentOS/sig-cloud-instance-images
-# Fri, 01 Jul 2016 22:34:34 GMT
-ADD file:f0ec297ab653ffb2c57c7dc1884625d12bbf1d3cc8e1cd9380911cff26b27ee6 in /
-# Fri, 01 Jul 2016 22:34:38 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160701
-# Fri, 01 Jul 2016 22:34:39 GMT
+# Fri, 29 Jul 2016 20:59:30 GMT
+ADD file:523e22a5f754e288fa8d10aa537664136a31a6a5424e2968517a18f51e5c0593 in /
+# Fri, 29 Jul 2016 20:59:33 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160729
+# Fri, 29 Jul 2016 20:59:36 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:9614861c927596c3ad5b87e2473e6c5a94cda7f9e145cca11f30aae1ed730e8e`  
-		Last Modified: Fri, 01 Jul 2016 22:55:22 GMT  
-		Size: 68.7 MB (68728940 bytes)
+	-	`sha256:08a7a0bb61228a03e099486f3ffbb4e617a7b61d69aa7e8e803d925e1c5ebaaa`  
+		Last Modified: Fri, 29 Jul 2016 21:01:18 GMT  
+		Size: 68.8 MB (68764174 bytes)
 
 ## `centos:6`
 
 ```console
-$ docker pull centos@sha256:06fee3c42ca43701900ce3d4a9460f1648a2cd7e741f395e1ac78ee17eec8f80
+$ docker pull centos@sha256:cd6d68000b47a91e7c94b558d7e3e653c3f0eac1a77842d97b0b7ad955cad608
 ```
 
 -	Platforms:
@@ -173,26 +173,26 @@ $ docker pull centos@sha256:06fee3c42ca43701900ce3d4a9460f1648a2cd7e741f395e1ac7
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.7 MB (68728940 bytes)**  
+-	Total Size: **68.8 MB (68764174 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf2c3ece5e418fd063bfad5e7e8d083182195152f90aac3a5ca4dbfbf6a1fc2a`
+-	Image ID: `sha256:a3c09d36ab4a03089d5bbe6e719a72b7f6c62a2ae800f89180343f9ee09366c1`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 01 Jul 2016 22:34:12 GMT
 MAINTAINER https://github.com/CentOS/sig-cloud-instance-images
-# Fri, 01 Jul 2016 22:34:34 GMT
-ADD file:f0ec297ab653ffb2c57c7dc1884625d12bbf1d3cc8e1cd9380911cff26b27ee6 in /
-# Fri, 01 Jul 2016 22:34:38 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160701
-# Fri, 01 Jul 2016 22:34:39 GMT
+# Fri, 29 Jul 2016 20:59:30 GMT
+ADD file:523e22a5f754e288fa8d10aa537664136a31a6a5424e2968517a18f51e5c0593 in /
+# Fri, 29 Jul 2016 20:59:33 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160729
+# Fri, 29 Jul 2016 20:59:36 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:9614861c927596c3ad5b87e2473e6c5a94cda7f9e145cca11f30aae1ed730e8e`  
-		Last Modified: Fri, 01 Jul 2016 22:55:22 GMT  
-		Size: 68.7 MB (68728940 bytes)
+	-	`sha256:08a7a0bb61228a03e099486f3ffbb4e617a7b61d69aa7e8e803d925e1c5ebaaa`  
+		Last Modified: Fri, 29 Jul 2016 21:01:18 GMT  
+		Size: 68.8 MB (68764174 bytes)
 
 ## `centos:centos5`
 
