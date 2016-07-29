@@ -84,7 +84,7 @@
 ## `java:6b38-jdk`
 
 ```console
-$ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0a2be3e60e5
+$ docker pull java@sha256:096bfe9cc83afe8bd9ad190f5abd3f20abb7419b3e16795eb60e8a42afca4fef
 ```
 
 -	Platforms:
@@ -94,60 +94,60 @@ $ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 MB (187126572 bytes)**  
+-	Total Size: **188.6 MB (188557002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9350f9969b32ee97871f97c9a516b29e07e653bb63167d1b009305c87663a226`
+-	Image ID: `sha256:4564290f02577a4e6f9ab1a6ab4c36a6abff326dc5486e7c5c043bf71ece558e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:43:48 GMT
+# Thu, 28 Jul 2016 18:27:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:44:24 GMT
+# Thu, 28 Jul 2016 18:28:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:56 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:57 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:02:58 GMT
+# Fri, 29 Jul 2016 04:45:06 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_VERSION=6b38
-# Thu, 09 Jun 2016 22:03:00 GMT
+# Fri, 29 Jul 2016 04:45:08 GMT
 ENV JAVA_DEBIAN_VERSION=6b38-1.13.10-1~deb7u1
-# Thu, 09 Jun 2016 22:03:48 GMT
+# Fri, 29 Jul 2016 04:45:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
-		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
-		Size: 6.8 MB (6751390 bytes)
-	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
-		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
-		Size: 37.4 MB (37389872 bytes)
-	-	`sha256:4a16cc0342b14794c6ca22363ac3dd5f2866b5e63e21e603921de319fbf4ee5a`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 443.9 KB (443912 bytes)
-	-	`sha256:5a3b7089077e0ecbbf566ef6af4290140acf5ffc7b0ff637f9db0b8c5ab46fe1`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 241.0 B
-	-	`sha256:be27e7389c704cca0ee1e1c65e92144dbb3d64d9af49dad3b50f3ec8b552d2df`  
-		Last Modified: Thu, 09 Jun 2016 22:16:06 GMT  
-		Size: 105.3 MB (105331608 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
+		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
+		Size: 6.7 MB (6730996 bytes)
+	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
+		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
+		Size: 38.9 MB (38887392 bytes)
+	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 412.9 KB (412892 bytes)
+	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 242.0 B
+	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
+		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
+		Size: 105.3 MB (105315845 bytes)
 
 ## `java:6b38`
 
 ```console
-$ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0a2be3e60e5
+$ docker pull java@sha256:096bfe9cc83afe8bd9ad190f5abd3f20abb7419b3e16795eb60e8a42afca4fef
 ```
 
 -	Platforms:
@@ -157,60 +157,60 @@ $ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 MB (187126572 bytes)**  
+-	Total Size: **188.6 MB (188557002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9350f9969b32ee97871f97c9a516b29e07e653bb63167d1b009305c87663a226`
+-	Image ID: `sha256:4564290f02577a4e6f9ab1a6ab4c36a6abff326dc5486e7c5c043bf71ece558e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:43:48 GMT
+# Thu, 28 Jul 2016 18:27:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:44:24 GMT
+# Thu, 28 Jul 2016 18:28:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:56 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:57 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:02:58 GMT
+# Fri, 29 Jul 2016 04:45:06 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_VERSION=6b38
-# Thu, 09 Jun 2016 22:03:00 GMT
+# Fri, 29 Jul 2016 04:45:08 GMT
 ENV JAVA_DEBIAN_VERSION=6b38-1.13.10-1~deb7u1
-# Thu, 09 Jun 2016 22:03:48 GMT
+# Fri, 29 Jul 2016 04:45:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
-		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
-		Size: 6.8 MB (6751390 bytes)
-	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
-		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
-		Size: 37.4 MB (37389872 bytes)
-	-	`sha256:4a16cc0342b14794c6ca22363ac3dd5f2866b5e63e21e603921de319fbf4ee5a`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 443.9 KB (443912 bytes)
-	-	`sha256:5a3b7089077e0ecbbf566ef6af4290140acf5ffc7b0ff637f9db0b8c5ab46fe1`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 241.0 B
-	-	`sha256:be27e7389c704cca0ee1e1c65e92144dbb3d64d9af49dad3b50f3ec8b552d2df`  
-		Last Modified: Thu, 09 Jun 2016 22:16:06 GMT  
-		Size: 105.3 MB (105331608 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
+		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
+		Size: 6.7 MB (6730996 bytes)
+	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
+		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
+		Size: 38.9 MB (38887392 bytes)
+	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 412.9 KB (412892 bytes)
+	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 242.0 B
+	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
+		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
+		Size: 105.3 MB (105315845 bytes)
 
 ## `java:6-jdk`
 
 ```console
-$ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0a2be3e60e5
+$ docker pull java@sha256:096bfe9cc83afe8bd9ad190f5abd3f20abb7419b3e16795eb60e8a42afca4fef
 ```
 
 -	Platforms:
@@ -220,60 +220,60 @@ $ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 MB (187126572 bytes)**  
+-	Total Size: **188.6 MB (188557002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9350f9969b32ee97871f97c9a516b29e07e653bb63167d1b009305c87663a226`
+-	Image ID: `sha256:4564290f02577a4e6f9ab1a6ab4c36a6abff326dc5486e7c5c043bf71ece558e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:43:48 GMT
+# Thu, 28 Jul 2016 18:27:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:44:24 GMT
+# Thu, 28 Jul 2016 18:28:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:56 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:57 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:02:58 GMT
+# Fri, 29 Jul 2016 04:45:06 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_VERSION=6b38
-# Thu, 09 Jun 2016 22:03:00 GMT
+# Fri, 29 Jul 2016 04:45:08 GMT
 ENV JAVA_DEBIAN_VERSION=6b38-1.13.10-1~deb7u1
-# Thu, 09 Jun 2016 22:03:48 GMT
+# Fri, 29 Jul 2016 04:45:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
-		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
-		Size: 6.8 MB (6751390 bytes)
-	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
-		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
-		Size: 37.4 MB (37389872 bytes)
-	-	`sha256:4a16cc0342b14794c6ca22363ac3dd5f2866b5e63e21e603921de319fbf4ee5a`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 443.9 KB (443912 bytes)
-	-	`sha256:5a3b7089077e0ecbbf566ef6af4290140acf5ffc7b0ff637f9db0b8c5ab46fe1`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 241.0 B
-	-	`sha256:be27e7389c704cca0ee1e1c65e92144dbb3d64d9af49dad3b50f3ec8b552d2df`  
-		Last Modified: Thu, 09 Jun 2016 22:16:06 GMT  
-		Size: 105.3 MB (105331608 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
+		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
+		Size: 6.7 MB (6730996 bytes)
+	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
+		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
+		Size: 38.9 MB (38887392 bytes)
+	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 412.9 KB (412892 bytes)
+	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 242.0 B
+	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
+		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
+		Size: 105.3 MB (105315845 bytes)
 
 ## `java:6`
 
 ```console
-$ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0a2be3e60e5
+$ docker pull java@sha256:096bfe9cc83afe8bd9ad190f5abd3f20abb7419b3e16795eb60e8a42afca4fef
 ```
 
 -	Platforms:
@@ -283,60 +283,60 @@ $ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 MB (187126572 bytes)**  
+-	Total Size: **188.6 MB (188557002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9350f9969b32ee97871f97c9a516b29e07e653bb63167d1b009305c87663a226`
+-	Image ID: `sha256:4564290f02577a4e6f9ab1a6ab4c36a6abff326dc5486e7c5c043bf71ece558e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:43:48 GMT
+# Thu, 28 Jul 2016 18:27:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:44:24 GMT
+# Thu, 28 Jul 2016 18:28:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:56 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:57 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:02:58 GMT
+# Fri, 29 Jul 2016 04:45:06 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_VERSION=6b38
-# Thu, 09 Jun 2016 22:03:00 GMT
+# Fri, 29 Jul 2016 04:45:08 GMT
 ENV JAVA_DEBIAN_VERSION=6b38-1.13.10-1~deb7u1
-# Thu, 09 Jun 2016 22:03:48 GMT
+# Fri, 29 Jul 2016 04:45:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
-		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
-		Size: 6.8 MB (6751390 bytes)
-	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
-		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
-		Size: 37.4 MB (37389872 bytes)
-	-	`sha256:4a16cc0342b14794c6ca22363ac3dd5f2866b5e63e21e603921de319fbf4ee5a`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 443.9 KB (443912 bytes)
-	-	`sha256:5a3b7089077e0ecbbf566ef6af4290140acf5ffc7b0ff637f9db0b8c5ab46fe1`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 241.0 B
-	-	`sha256:be27e7389c704cca0ee1e1c65e92144dbb3d64d9af49dad3b50f3ec8b552d2df`  
-		Last Modified: Thu, 09 Jun 2016 22:16:06 GMT  
-		Size: 105.3 MB (105331608 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
+		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
+		Size: 6.7 MB (6730996 bytes)
+	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
+		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
+		Size: 38.9 MB (38887392 bytes)
+	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 412.9 KB (412892 bytes)
+	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 242.0 B
+	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
+		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
+		Size: 105.3 MB (105315845 bytes)
 
 ## `java:openjdk-6b38-jdk`
 
 ```console
-$ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0a2be3e60e5
+$ docker pull java@sha256:096bfe9cc83afe8bd9ad190f5abd3f20abb7419b3e16795eb60e8a42afca4fef
 ```
 
 -	Platforms:
@@ -346,60 +346,60 @@ $ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 MB (187126572 bytes)**  
+-	Total Size: **188.6 MB (188557002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9350f9969b32ee97871f97c9a516b29e07e653bb63167d1b009305c87663a226`
+-	Image ID: `sha256:4564290f02577a4e6f9ab1a6ab4c36a6abff326dc5486e7c5c043bf71ece558e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:43:48 GMT
+# Thu, 28 Jul 2016 18:27:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:44:24 GMT
+# Thu, 28 Jul 2016 18:28:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:56 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:57 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:02:58 GMT
+# Fri, 29 Jul 2016 04:45:06 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_VERSION=6b38
-# Thu, 09 Jun 2016 22:03:00 GMT
+# Fri, 29 Jul 2016 04:45:08 GMT
 ENV JAVA_DEBIAN_VERSION=6b38-1.13.10-1~deb7u1
-# Thu, 09 Jun 2016 22:03:48 GMT
+# Fri, 29 Jul 2016 04:45:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
-		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
-		Size: 6.8 MB (6751390 bytes)
-	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
-		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
-		Size: 37.4 MB (37389872 bytes)
-	-	`sha256:4a16cc0342b14794c6ca22363ac3dd5f2866b5e63e21e603921de319fbf4ee5a`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 443.9 KB (443912 bytes)
-	-	`sha256:5a3b7089077e0ecbbf566ef6af4290140acf5ffc7b0ff637f9db0b8c5ab46fe1`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 241.0 B
-	-	`sha256:be27e7389c704cca0ee1e1c65e92144dbb3d64d9af49dad3b50f3ec8b552d2df`  
-		Last Modified: Thu, 09 Jun 2016 22:16:06 GMT  
-		Size: 105.3 MB (105331608 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
+		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
+		Size: 6.7 MB (6730996 bytes)
+	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
+		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
+		Size: 38.9 MB (38887392 bytes)
+	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 412.9 KB (412892 bytes)
+	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 242.0 B
+	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
+		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
+		Size: 105.3 MB (105315845 bytes)
 
 ## `java:openjdk-6b38`
 
 ```console
-$ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0a2be3e60e5
+$ docker pull java@sha256:096bfe9cc83afe8bd9ad190f5abd3f20abb7419b3e16795eb60e8a42afca4fef
 ```
 
 -	Platforms:
@@ -409,60 +409,60 @@ $ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 MB (187126572 bytes)**  
+-	Total Size: **188.6 MB (188557002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9350f9969b32ee97871f97c9a516b29e07e653bb63167d1b009305c87663a226`
+-	Image ID: `sha256:4564290f02577a4e6f9ab1a6ab4c36a6abff326dc5486e7c5c043bf71ece558e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:43:48 GMT
+# Thu, 28 Jul 2016 18:27:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:44:24 GMT
+# Thu, 28 Jul 2016 18:28:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:56 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:57 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:02:58 GMT
+# Fri, 29 Jul 2016 04:45:06 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_VERSION=6b38
-# Thu, 09 Jun 2016 22:03:00 GMT
+# Fri, 29 Jul 2016 04:45:08 GMT
 ENV JAVA_DEBIAN_VERSION=6b38-1.13.10-1~deb7u1
-# Thu, 09 Jun 2016 22:03:48 GMT
+# Fri, 29 Jul 2016 04:45:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
-		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
-		Size: 6.8 MB (6751390 bytes)
-	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
-		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
-		Size: 37.4 MB (37389872 bytes)
-	-	`sha256:4a16cc0342b14794c6ca22363ac3dd5f2866b5e63e21e603921de319fbf4ee5a`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 443.9 KB (443912 bytes)
-	-	`sha256:5a3b7089077e0ecbbf566ef6af4290140acf5ffc7b0ff637f9db0b8c5ab46fe1`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 241.0 B
-	-	`sha256:be27e7389c704cca0ee1e1c65e92144dbb3d64d9af49dad3b50f3ec8b552d2df`  
-		Last Modified: Thu, 09 Jun 2016 22:16:06 GMT  
-		Size: 105.3 MB (105331608 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
+		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
+		Size: 6.7 MB (6730996 bytes)
+	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
+		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
+		Size: 38.9 MB (38887392 bytes)
+	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 412.9 KB (412892 bytes)
+	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 242.0 B
+	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
+		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
+		Size: 105.3 MB (105315845 bytes)
 
 ## `java:openjdk-6-jdk`
 
 ```console
-$ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0a2be3e60e5
+$ docker pull java@sha256:096bfe9cc83afe8bd9ad190f5abd3f20abb7419b3e16795eb60e8a42afca4fef
 ```
 
 -	Platforms:
@@ -472,60 +472,60 @@ $ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 MB (187126572 bytes)**  
+-	Total Size: **188.6 MB (188557002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9350f9969b32ee97871f97c9a516b29e07e653bb63167d1b009305c87663a226`
+-	Image ID: `sha256:4564290f02577a4e6f9ab1a6ab4c36a6abff326dc5486e7c5c043bf71ece558e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:43:48 GMT
+# Thu, 28 Jul 2016 18:27:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:44:24 GMT
+# Thu, 28 Jul 2016 18:28:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:56 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:57 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:02:58 GMT
+# Fri, 29 Jul 2016 04:45:06 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_VERSION=6b38
-# Thu, 09 Jun 2016 22:03:00 GMT
+# Fri, 29 Jul 2016 04:45:08 GMT
 ENV JAVA_DEBIAN_VERSION=6b38-1.13.10-1~deb7u1
-# Thu, 09 Jun 2016 22:03:48 GMT
+# Fri, 29 Jul 2016 04:45:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
-		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
-		Size: 6.8 MB (6751390 bytes)
-	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
-		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
-		Size: 37.4 MB (37389872 bytes)
-	-	`sha256:4a16cc0342b14794c6ca22363ac3dd5f2866b5e63e21e603921de319fbf4ee5a`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 443.9 KB (443912 bytes)
-	-	`sha256:5a3b7089077e0ecbbf566ef6af4290140acf5ffc7b0ff637f9db0b8c5ab46fe1`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 241.0 B
-	-	`sha256:be27e7389c704cca0ee1e1c65e92144dbb3d64d9af49dad3b50f3ec8b552d2df`  
-		Last Modified: Thu, 09 Jun 2016 22:16:06 GMT  
-		Size: 105.3 MB (105331608 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
+		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
+		Size: 6.7 MB (6730996 bytes)
+	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
+		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
+		Size: 38.9 MB (38887392 bytes)
+	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 412.9 KB (412892 bytes)
+	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 242.0 B
+	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
+		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
+		Size: 105.3 MB (105315845 bytes)
 
 ## `java:openjdk-6`
 
 ```console
-$ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0a2be3e60e5
+$ docker pull java@sha256:096bfe9cc83afe8bd9ad190f5abd3f20abb7419b3e16795eb60e8a42afca4fef
 ```
 
 -	Platforms:
@@ -535,55 +535,55 @@ $ docker pull java@sha256:daaf293b8e999bcd3c8c499b2ef45d701ebb0bd930b12a36c452a0
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 MB (187126572 bytes)**  
+-	Total Size: **188.6 MB (188557002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9350f9969b32ee97871f97c9a516b29e07e653bb63167d1b009305c87663a226`
+-	Image ID: `sha256:4564290f02577a4e6f9ab1a6ab4c36a6abff326dc5486e7c5c043bf71ece558e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:43:48 GMT
+# Thu, 28 Jul 2016 18:27:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:44:24 GMT
+# Thu, 28 Jul 2016 18:28:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:56 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:02:57 GMT
+# Fri, 29 Jul 2016 04:45:04 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:02:58 GMT
+# Fri, 29 Jul 2016 04:45:06 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
-# Thu, 09 Jun 2016 22:02:59 GMT
+# Fri, 29 Jul 2016 04:45:07 GMT
 ENV JAVA_VERSION=6b38
-# Thu, 09 Jun 2016 22:03:00 GMT
+# Fri, 29 Jul 2016 04:45:08 GMT
 ENV JAVA_DEBIAN_VERSION=6b38-1.13.10-1~deb7u1
-# Thu, 09 Jun 2016 22:03:48 GMT
+# Fri, 29 Jul 2016 04:45:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:6523e37a38fa9bfac81a0773979ea1b66dce8df121a732b1c3c86c13965e00d6`  
-		Last Modified: Thu, 09 Jun 2016 21:55:48 GMT  
-		Size: 6.8 MB (6751390 bytes)
-	-	`sha256:808895c4b06b9264d617f83d39d8c4dd8d8b4dccdb53102a49707851cd59db47`  
-		Last Modified: Thu, 09 Jun 2016 21:56:11 GMT  
-		Size: 37.4 MB (37389872 bytes)
-	-	`sha256:4a16cc0342b14794c6ca22363ac3dd5f2866b5e63e21e603921de319fbf4ee5a`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 443.9 KB (443912 bytes)
-	-	`sha256:5a3b7089077e0ecbbf566ef6af4290140acf5ffc7b0ff637f9db0b8c5ab46fe1`  
-		Last Modified: Thu, 09 Jun 2016 22:15:49 GMT  
-		Size: 241.0 B
-	-	`sha256:be27e7389c704cca0ee1e1c65e92144dbb3d64d9af49dad3b50f3ec8b552d2df`  
-		Last Modified: Thu, 09 Jun 2016 22:16:06 GMT  
-		Size: 105.3 MB (105331608 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
+		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
+		Size: 6.7 MB (6730996 bytes)
+	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
+		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
+		Size: 38.9 MB (38887392 bytes)
+	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 412.9 KB (412892 bytes)
+	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
+		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
+		Size: 242.0 B
+	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
+		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
+		Size: 105.3 MB (105315845 bytes)
 
 ## `java:6b38-jre`
 
