@@ -16,7 +16,7 @@ Hipache was originally developed at [dotCloud](http://www.dotcloud.com), a popul
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
