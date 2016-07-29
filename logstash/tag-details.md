@@ -1249,7 +1249,7 @@ CMD ["-e" ""]
 ## `logstash:2.2.4-1`
 
 ```console
-$ docker pull logstash@sha256:66c53be0cc6e041f2e5afa24e224a303ec4fe656a59b2ecf88b5d8909c71b1ef
+$ docker pull logstash@sha256:4d40439ec35a61078e784bcca6d65fd0b1a179010dd8a9a066275f3d4354f05b
 ```
 
 -	Platforms:
@@ -1259,119 +1259,119 @@ $ docker pull logstash@sha256:66c53be0cc6e041f2e5afa24e224a303ec4fe656a59b2ecf88
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.1 MB (202066208 bytes)**  
+-	Total Size: **202.0 MB (201976332 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3fec10b49d4bed28ada6f2483ade34f51e80fdb9619c721e0fd0df0af964ddf`
+-	Image ID: `sha256:e3242978458be061323f41b9f8115aad3fc2613ece9f718d7adc17ab4598dd7c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
+# Fri, 29 Jul 2016 17:18:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
+# Fri, 29 Jul 2016 17:18:46 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
+# Fri, 29 Jul 2016 17:18:47 GMT
 ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
+# Fri, 29 Jul 2016 17:18:54 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
+# Fri, 29 Jul 2016 17:19:12 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:48:18 GMT
+# Fri, 29 Jul 2016 17:47:25 GMT
 ENV LOGSTASH_MAJOR=2.2
-# Fri, 10 Jun 2016 16:48:18 GMT
+# Fri, 29 Jul 2016 17:47:26 GMT
 ENV LOGSTASH_VERSION=1:2.2.4-1
-# Fri, 10 Jun 2016 16:48:20 GMT
+# Fri, 29 Jul 2016 17:47:28 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:49:56 GMT
+# Fri, 29 Jul 2016 17:48:40 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:49:58 GMT
+# Fri, 29 Jul 2016 17:48:41 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jun 2016 20:57:23 GMT
+# Fri, 29 Jul 2016 17:48:41 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Thu, 16 Jun 2016 20:57:25 GMT
+# Fri, 29 Jul 2016 17:48:43 GMT
 RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
-# Thu, 16 Jun 2016 20:57:25 GMT
+# Fri, 29 Jul 2016 17:48:44 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Thu, 16 Jun 2016 20:57:25 GMT
+# Fri, 29 Jul 2016 17:48:45 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 16 Jun 2016 20:57:26 GMT
+# Fri, 29 Jul 2016 17:48:45 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:a7de2cf3c5b8adf4a4ed4376ab3181a952cb6d98e13453d6bfeddeb81da01dd1`  
+		Last Modified: Fri, 29 Jul 2016 17:46:35 GMT  
+		Size: 933.8 KB (933803 bytes)
+	-	`sha256:9f935a937c4d4c83ca78559b46d2d6e565fe44e2469c39bb32ec8487b7627afe`  
+		Last Modified: Fri, 29 Jul 2016 17:46:34 GMT  
+		Size: 193.0 B
+	-	`sha256:92d2fb236d668f662440b5d0b3af549691e8197bf5718015470d2304b9cff0c0`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
 		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:f4050a4ce535c53a155acb42392bb21301bd11c438b6754a00931ee47c30c015`  
-		Last Modified: Fri, 10 Jun 2016 16:56:36 GMT  
-		Size: 221.0 B
-	-	`sha256:f6404940d5b12949934e86b24244ada90ec23c099b5cfc401726fa3d1b1b17b8`  
-		Last Modified: Fri, 10 Jun 2016 16:56:54 GMT  
-		Size: 76.2 MB (76157951 bytes)
-	-	`sha256:f708c1d9323becc5cd2ae5f6b2afeb7f5aba758a1edc4625495ce0661f74cd00`  
-		Last Modified: Thu, 16 Jun 2016 20:58:47 GMT  
-		Size: 252.0 B
+	-	`sha256:2e9ef30e353e63e20d7133de5a8d6d23cf027868adb29200c3d273e997c7a6a2`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
+		Size: 1.5 KB (1451 bytes)
+	-	`sha256:1ce64787636f2e3c1a401f0addea9cd015f12b29597afbfb136dcae72b89aa37`  
+		Last Modified: Fri, 29 Jul 2016 17:48:54 GMT  
+		Size: 222.0 B
+	-	`sha256:88d3c45f006933861f70dc72fefc815f8023ce1381929233750d5fc7e57a1f7f`  
+		Last Modified: Fri, 29 Jul 2016 17:49:06 GMT  
+		Size: 76.1 MB (76137803 bytes)
+	-	`sha256:fe9b4bfb92adc2498960d0f396db95ce915ac00f55f4b31c2c07e81d329a6c67`  
+		Last Modified: Fri, 29 Jul 2016 17:48:54 GMT  
+		Size: 251.0 B
 
 ## `logstash:2.2.4`
 
 ```console
-$ docker pull logstash@sha256:66c53be0cc6e041f2e5afa24e224a303ec4fe656a59b2ecf88b5d8909c71b1ef
+$ docker pull logstash@sha256:4d40439ec35a61078e784bcca6d65fd0b1a179010dd8a9a066275f3d4354f05b
 ```
 
 -	Platforms:
@@ -1381,119 +1381,119 @@ $ docker pull logstash@sha256:66c53be0cc6e041f2e5afa24e224a303ec4fe656a59b2ecf88
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.1 MB (202066208 bytes)**  
+-	Total Size: **202.0 MB (201976332 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3fec10b49d4bed28ada6f2483ade34f51e80fdb9619c721e0fd0df0af964ddf`
+-	Image ID: `sha256:e3242978458be061323f41b9f8115aad3fc2613ece9f718d7adc17ab4598dd7c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
+# Fri, 29 Jul 2016 17:18:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
+# Fri, 29 Jul 2016 17:18:46 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
+# Fri, 29 Jul 2016 17:18:47 GMT
 ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
+# Fri, 29 Jul 2016 17:18:54 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
+# Fri, 29 Jul 2016 17:19:12 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:48:18 GMT
+# Fri, 29 Jul 2016 17:47:25 GMT
 ENV LOGSTASH_MAJOR=2.2
-# Fri, 10 Jun 2016 16:48:18 GMT
+# Fri, 29 Jul 2016 17:47:26 GMT
 ENV LOGSTASH_VERSION=1:2.2.4-1
-# Fri, 10 Jun 2016 16:48:20 GMT
+# Fri, 29 Jul 2016 17:47:28 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:49:56 GMT
+# Fri, 29 Jul 2016 17:48:40 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:49:58 GMT
+# Fri, 29 Jul 2016 17:48:41 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jun 2016 20:57:23 GMT
+# Fri, 29 Jul 2016 17:48:41 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Thu, 16 Jun 2016 20:57:25 GMT
+# Fri, 29 Jul 2016 17:48:43 GMT
 RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
-# Thu, 16 Jun 2016 20:57:25 GMT
+# Fri, 29 Jul 2016 17:48:44 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Thu, 16 Jun 2016 20:57:25 GMT
+# Fri, 29 Jul 2016 17:48:45 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 16 Jun 2016 20:57:26 GMT
+# Fri, 29 Jul 2016 17:48:45 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:a7de2cf3c5b8adf4a4ed4376ab3181a952cb6d98e13453d6bfeddeb81da01dd1`  
+		Last Modified: Fri, 29 Jul 2016 17:46:35 GMT  
+		Size: 933.8 KB (933803 bytes)
+	-	`sha256:9f935a937c4d4c83ca78559b46d2d6e565fe44e2469c39bb32ec8487b7627afe`  
+		Last Modified: Fri, 29 Jul 2016 17:46:34 GMT  
+		Size: 193.0 B
+	-	`sha256:92d2fb236d668f662440b5d0b3af549691e8197bf5718015470d2304b9cff0c0`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
 		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:f4050a4ce535c53a155acb42392bb21301bd11c438b6754a00931ee47c30c015`  
-		Last Modified: Fri, 10 Jun 2016 16:56:36 GMT  
-		Size: 221.0 B
-	-	`sha256:f6404940d5b12949934e86b24244ada90ec23c099b5cfc401726fa3d1b1b17b8`  
-		Last Modified: Fri, 10 Jun 2016 16:56:54 GMT  
-		Size: 76.2 MB (76157951 bytes)
-	-	`sha256:f708c1d9323becc5cd2ae5f6b2afeb7f5aba758a1edc4625495ce0661f74cd00`  
-		Last Modified: Thu, 16 Jun 2016 20:58:47 GMT  
-		Size: 252.0 B
+	-	`sha256:2e9ef30e353e63e20d7133de5a8d6d23cf027868adb29200c3d273e997c7a6a2`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
+		Size: 1.5 KB (1451 bytes)
+	-	`sha256:1ce64787636f2e3c1a401f0addea9cd015f12b29597afbfb136dcae72b89aa37`  
+		Last Modified: Fri, 29 Jul 2016 17:48:54 GMT  
+		Size: 222.0 B
+	-	`sha256:88d3c45f006933861f70dc72fefc815f8023ce1381929233750d5fc7e57a1f7f`  
+		Last Modified: Fri, 29 Jul 2016 17:49:06 GMT  
+		Size: 76.1 MB (76137803 bytes)
+	-	`sha256:fe9b4bfb92adc2498960d0f396db95ce915ac00f55f4b31c2c07e81d329a6c67`  
+		Last Modified: Fri, 29 Jul 2016 17:48:54 GMT  
+		Size: 251.0 B
 
 ## `logstash:2.2`
 
 ```console
-$ docker pull logstash@sha256:66c53be0cc6e041f2e5afa24e224a303ec4fe656a59b2ecf88b5d8909c71b1ef
+$ docker pull logstash@sha256:4d40439ec35a61078e784bcca6d65fd0b1a179010dd8a9a066275f3d4354f05b
 ```
 
 -	Platforms:
@@ -1503,119 +1503,119 @@ $ docker pull logstash@sha256:66c53be0cc6e041f2e5afa24e224a303ec4fe656a59b2ecf88
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.1 MB (202066208 bytes)**  
+-	Total Size: **202.0 MB (201976332 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3fec10b49d4bed28ada6f2483ade34f51e80fdb9619c721e0fd0df0af964ddf`
+-	Image ID: `sha256:e3242978458be061323f41b9f8115aad3fc2613ece9f718d7adc17ab4598dd7c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
+# Fri, 29 Jul 2016 17:18:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
+# Fri, 29 Jul 2016 17:18:46 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
+# Fri, 29 Jul 2016 17:18:47 GMT
 ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
+# Fri, 29 Jul 2016 17:18:54 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
+# Fri, 29 Jul 2016 17:19:12 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:48:18 GMT
+# Fri, 29 Jul 2016 17:47:25 GMT
 ENV LOGSTASH_MAJOR=2.2
-# Fri, 10 Jun 2016 16:48:18 GMT
+# Fri, 29 Jul 2016 17:47:26 GMT
 ENV LOGSTASH_VERSION=1:2.2.4-1
-# Fri, 10 Jun 2016 16:48:20 GMT
+# Fri, 29 Jul 2016 17:47:28 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 10 Jun 2016 16:49:56 GMT
+# Fri, 29 Jul 2016 17:48:40 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:49:58 GMT
+# Fri, 29 Jul 2016 17:48:41 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jun 2016 20:57:23 GMT
+# Fri, 29 Jul 2016 17:48:41 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Thu, 16 Jun 2016 20:57:25 GMT
+# Fri, 29 Jul 2016 17:48:43 GMT
 RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
-# Thu, 16 Jun 2016 20:57:25 GMT
+# Fri, 29 Jul 2016 17:48:44 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Thu, 16 Jun 2016 20:57:25 GMT
+# Fri, 29 Jul 2016 17:48:45 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 16 Jun 2016 20:57:26 GMT
+# Fri, 29 Jul 2016 17:48:45 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:a7de2cf3c5b8adf4a4ed4376ab3181a952cb6d98e13453d6bfeddeb81da01dd1`  
+		Last Modified: Fri, 29 Jul 2016 17:46:35 GMT  
+		Size: 933.8 KB (933803 bytes)
+	-	`sha256:9f935a937c4d4c83ca78559b46d2d6e565fe44e2469c39bb32ec8487b7627afe`  
+		Last Modified: Fri, 29 Jul 2016 17:46:34 GMT  
+		Size: 193.0 B
+	-	`sha256:92d2fb236d668f662440b5d0b3af549691e8197bf5718015470d2304b9cff0c0`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
 		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:f4050a4ce535c53a155acb42392bb21301bd11c438b6754a00931ee47c30c015`  
-		Last Modified: Fri, 10 Jun 2016 16:56:36 GMT  
-		Size: 221.0 B
-	-	`sha256:f6404940d5b12949934e86b24244ada90ec23c099b5cfc401726fa3d1b1b17b8`  
-		Last Modified: Fri, 10 Jun 2016 16:56:54 GMT  
-		Size: 76.2 MB (76157951 bytes)
-	-	`sha256:f708c1d9323becc5cd2ae5f6b2afeb7f5aba758a1edc4625495ce0661f74cd00`  
-		Last Modified: Thu, 16 Jun 2016 20:58:47 GMT  
-		Size: 252.0 B
+	-	`sha256:2e9ef30e353e63e20d7133de5a8d6d23cf027868adb29200c3d273e997c7a6a2`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
+		Size: 1.5 KB (1451 bytes)
+	-	`sha256:1ce64787636f2e3c1a401f0addea9cd015f12b29597afbfb136dcae72b89aa37`  
+		Last Modified: Fri, 29 Jul 2016 17:48:54 GMT  
+		Size: 222.0 B
+	-	`sha256:88d3c45f006933861f70dc72fefc815f8023ce1381929233750d5fc7e57a1f7f`  
+		Last Modified: Fri, 29 Jul 2016 17:49:06 GMT  
+		Size: 76.1 MB (76137803 bytes)
+	-	`sha256:fe9b4bfb92adc2498960d0f396db95ce915ac00f55f4b31c2c07e81d329a6c67`  
+		Last Modified: Fri, 29 Jul 2016 17:48:54 GMT  
+		Size: 251.0 B
 
 ## `logstash:2.3.4-1`
 
 ```console
-$ docker pull logstash@sha256:cf47a007a44ab5aa8a33f191f006fcd493c79e868af2a7e1154673f511779309
+$ docker pull logstash@sha256:52ee09b92448ead5563f3b37fc2fbebe56e270ff69e073dfb478a17a6243d041
 ```
 
 -	Platforms:
@@ -1625,119 +1625,119 @@ $ docker pull logstash@sha256:cf47a007a44ab5aa8a33f191f006fcd493c79e868af2a7e115
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.7 MB (206662793 bytes)**  
+-	Total Size: **206.6 MB (206563251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a78027bf7294a6bf0ce310d3d87cddee6c6194645eec9b258b92cb306a6a67a8`
+-	Image ID: `sha256:26ce095441d9b7ae38b0c42b6f058fd55ba67e5eaf48fe00c986f08425afe427`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
+# Fri, 29 Jul 2016 17:18:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
+# Fri, 29 Jul 2016 17:18:46 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
+# Fri, 29 Jul 2016 17:18:47 GMT
 ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
+# Fri, 29 Jul 2016 17:18:54 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
+# Fri, 29 Jul 2016 17:19:12 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:50:00 GMT
+# Fri, 29 Jul 2016 17:49:34 GMT
 ENV LOGSTASH_MAJOR=2.3
-# Fri, 08 Jul 2016 18:29:08 GMT
+# Fri, 29 Jul 2016 17:49:35 GMT
 ENV LOGSTASH_VERSION=1:2.3.4-1
-# Fri, 08 Jul 2016 18:29:09 GMT
+# Fri, 29 Jul 2016 17:49:37 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 08 Jul 2016 18:30:21 GMT
+# Fri, 29 Jul 2016 17:50:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:30:22 GMT
+# Fri, 29 Jul 2016 17:50:53 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Jul 2016 18:30:23 GMT
+# Fri, 29 Jul 2016 17:50:54 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Fri, 08 Jul 2016 18:30:24 GMT
+# Fri, 29 Jul 2016 17:50:56 GMT
 RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
-# Fri, 08 Jul 2016 18:30:25 GMT
+# Fri, 29 Jul 2016 17:50:57 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 08 Jul 2016 18:30:26 GMT
+# Fri, 29 Jul 2016 17:50:57 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 18:30:26 GMT
+# Fri, 29 Jul 2016 17:50:58 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:a7de2cf3c5b8adf4a4ed4376ab3181a952cb6d98e13453d6bfeddeb81da01dd1`  
+		Last Modified: Fri, 29 Jul 2016 17:46:35 GMT  
+		Size: 933.8 KB (933803 bytes)
+	-	`sha256:9f935a937c4d4c83ca78559b46d2d6e565fe44e2469c39bb32ec8487b7627afe`  
+		Last Modified: Fri, 29 Jul 2016 17:46:34 GMT  
+		Size: 193.0 B
+	-	`sha256:92d2fb236d668f662440b5d0b3af549691e8197bf5718015470d2304b9cff0c0`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
 		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:ee7ec612e56d47309a4dc12ec8cbfdfe49adc9486d4bc2a14670054c3c65465b`  
-		Last Modified: Fri, 08 Jul 2016 18:32:28 GMT  
+	-	`sha256:2e9ef30e353e63e20d7133de5a8d6d23cf027868adb29200c3d273e997c7a6a2`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
+		Size: 1.5 KB (1451 bytes)
+	-	`sha256:9b3ba42ab7a4654c3081ae1486daf5d41a2d4417680385c001a2c6f952d9d171`  
+		Last Modified: Fri, 29 Jul 2016 17:51:07 GMT  
 		Size: 223.0 B
-	-	`sha256:a81e2c6d6f3fb32b4032c554cda8a8bd9ed1087b72386675c58f5fe2e35970ef`  
-		Last Modified: Fri, 08 Jul 2016 18:32:40 GMT  
-		Size: 80.8 MB (80754535 bytes)
-	-	`sha256:4628c56a6f3633813c053061c43b05e5e7ed5f7c6e4d512fb220841a8fde8991`  
-		Last Modified: Fri, 08 Jul 2016 18:32:28 GMT  
+	-	`sha256:c73ae08f215d7f320e551c574ba22f0236384a39363e934cd472cef0a949a624`  
+		Last Modified: Fri, 29 Jul 2016 17:51:19 GMT  
+		Size: 80.7 MB (80724721 bytes)
+	-	`sha256:b34c95fd5d23e6105c2919caeafa6ffc8be3b44c3f5eae2d2de39fec84419058`  
+		Last Modified: Fri, 29 Jul 2016 17:51:07 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.3.4`
 
 ```console
-$ docker pull logstash@sha256:cf47a007a44ab5aa8a33f191f006fcd493c79e868af2a7e1154673f511779309
+$ docker pull logstash@sha256:52ee09b92448ead5563f3b37fc2fbebe56e270ff69e073dfb478a17a6243d041
 ```
 
 -	Platforms:
@@ -1747,119 +1747,119 @@ $ docker pull logstash@sha256:cf47a007a44ab5aa8a33f191f006fcd493c79e868af2a7e115
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.7 MB (206662793 bytes)**  
+-	Total Size: **206.6 MB (206563251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a78027bf7294a6bf0ce310d3d87cddee6c6194645eec9b258b92cb306a6a67a8`
+-	Image ID: `sha256:26ce095441d9b7ae38b0c42b6f058fd55ba67e5eaf48fe00c986f08425afe427`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
+# Fri, 29 Jul 2016 17:18:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
+# Fri, 29 Jul 2016 17:18:46 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
+# Fri, 29 Jul 2016 17:18:47 GMT
 ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
+# Fri, 29 Jul 2016 17:18:54 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
+# Fri, 29 Jul 2016 17:19:12 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:50:00 GMT
+# Fri, 29 Jul 2016 17:49:34 GMT
 ENV LOGSTASH_MAJOR=2.3
-# Fri, 08 Jul 2016 18:29:08 GMT
+# Fri, 29 Jul 2016 17:49:35 GMT
 ENV LOGSTASH_VERSION=1:2.3.4-1
-# Fri, 08 Jul 2016 18:29:09 GMT
+# Fri, 29 Jul 2016 17:49:37 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 08 Jul 2016 18:30:21 GMT
+# Fri, 29 Jul 2016 17:50:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:30:22 GMT
+# Fri, 29 Jul 2016 17:50:53 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Jul 2016 18:30:23 GMT
+# Fri, 29 Jul 2016 17:50:54 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Fri, 08 Jul 2016 18:30:24 GMT
+# Fri, 29 Jul 2016 17:50:56 GMT
 RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
-# Fri, 08 Jul 2016 18:30:25 GMT
+# Fri, 29 Jul 2016 17:50:57 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 08 Jul 2016 18:30:26 GMT
+# Fri, 29 Jul 2016 17:50:57 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 18:30:26 GMT
+# Fri, 29 Jul 2016 17:50:58 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:a7de2cf3c5b8adf4a4ed4376ab3181a952cb6d98e13453d6bfeddeb81da01dd1`  
+		Last Modified: Fri, 29 Jul 2016 17:46:35 GMT  
+		Size: 933.8 KB (933803 bytes)
+	-	`sha256:9f935a937c4d4c83ca78559b46d2d6e565fe44e2469c39bb32ec8487b7627afe`  
+		Last Modified: Fri, 29 Jul 2016 17:46:34 GMT  
+		Size: 193.0 B
+	-	`sha256:92d2fb236d668f662440b5d0b3af549691e8197bf5718015470d2304b9cff0c0`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
 		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:ee7ec612e56d47309a4dc12ec8cbfdfe49adc9486d4bc2a14670054c3c65465b`  
-		Last Modified: Fri, 08 Jul 2016 18:32:28 GMT  
+	-	`sha256:2e9ef30e353e63e20d7133de5a8d6d23cf027868adb29200c3d273e997c7a6a2`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
+		Size: 1.5 KB (1451 bytes)
+	-	`sha256:9b3ba42ab7a4654c3081ae1486daf5d41a2d4417680385c001a2c6f952d9d171`  
+		Last Modified: Fri, 29 Jul 2016 17:51:07 GMT  
 		Size: 223.0 B
-	-	`sha256:a81e2c6d6f3fb32b4032c554cda8a8bd9ed1087b72386675c58f5fe2e35970ef`  
-		Last Modified: Fri, 08 Jul 2016 18:32:40 GMT  
-		Size: 80.8 MB (80754535 bytes)
-	-	`sha256:4628c56a6f3633813c053061c43b05e5e7ed5f7c6e4d512fb220841a8fde8991`  
-		Last Modified: Fri, 08 Jul 2016 18:32:28 GMT  
+	-	`sha256:c73ae08f215d7f320e551c574ba22f0236384a39363e934cd472cef0a949a624`  
+		Last Modified: Fri, 29 Jul 2016 17:51:19 GMT  
+		Size: 80.7 MB (80724721 bytes)
+	-	`sha256:b34c95fd5d23e6105c2919caeafa6ffc8be3b44c3f5eae2d2de39fec84419058`  
+		Last Modified: Fri, 29 Jul 2016 17:51:07 GMT  
 		Size: 251.0 B
 
 ## `logstash:2.3`
 
 ```console
-$ docker pull logstash@sha256:cf47a007a44ab5aa8a33f191f006fcd493c79e868af2a7e1154673f511779309
+$ docker pull logstash@sha256:52ee09b92448ead5563f3b37fc2fbebe56e270ff69e073dfb478a17a6243d041
 ```
 
 -	Platforms:
@@ -1869,119 +1869,119 @@ $ docker pull logstash@sha256:cf47a007a44ab5aa8a33f191f006fcd493c79e868af2a7e115
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.7 MB (206662793 bytes)**  
+-	Total Size: **206.6 MB (206563251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a78027bf7294a6bf0ce310d3d87cddee6c6194645eec9b258b92cb306a6a67a8`
+-	Image ID: `sha256:26ce095441d9b7ae38b0c42b6f058fd55ba67e5eaf48fe00c986f08425afe427`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
+# Fri, 29 Jul 2016 17:18:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
+# Fri, 29 Jul 2016 17:18:46 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
+# Fri, 29 Jul 2016 17:18:47 GMT
 ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
+# Fri, 29 Jul 2016 17:18:54 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
+# Fri, 29 Jul 2016 17:19:12 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:50:00 GMT
+# Fri, 29 Jul 2016 17:49:34 GMT
 ENV LOGSTASH_MAJOR=2.3
-# Fri, 08 Jul 2016 18:29:08 GMT
+# Fri, 29 Jul 2016 17:49:35 GMT
 ENV LOGSTASH_VERSION=1:2.3.4-1
-# Fri, 08 Jul 2016 18:29:09 GMT
+# Fri, 29 Jul 2016 17:49:37 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 08 Jul 2016 18:30:21 GMT
+# Fri, 29 Jul 2016 17:50:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:30:22 GMT
+# Fri, 29 Jul 2016 17:50:53 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Jul 2016 18:30:23 GMT
+# Fri, 29 Jul 2016 17:50:54 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Fri, 08 Jul 2016 18:30:24 GMT
+# Fri, 29 Jul 2016 17:50:56 GMT
 RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
-# Fri, 08 Jul 2016 18:30:25 GMT
+# Fri, 29 Jul 2016 17:50:57 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 08 Jul 2016 18:30:26 GMT
+# Fri, 29 Jul 2016 17:50:57 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 18:30:26 GMT
+# Fri, 29 Jul 2016 17:50:58 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:a7de2cf3c5b8adf4a4ed4376ab3181a952cb6d98e13453d6bfeddeb81da01dd1`  
+		Last Modified: Fri, 29 Jul 2016 17:46:35 GMT  
+		Size: 933.8 KB (933803 bytes)
+	-	`sha256:9f935a937c4d4c83ca78559b46d2d6e565fe44e2469c39bb32ec8487b7627afe`  
+		Last Modified: Fri, 29 Jul 2016 17:46:34 GMT  
+		Size: 193.0 B
+	-	`sha256:92d2fb236d668f662440b5d0b3af549691e8197bf5718015470d2304b9cff0c0`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
 		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:ee7ec612e56d47309a4dc12ec8cbfdfe49adc9486d4bc2a14670054c3c65465b`  
-		Last Modified: Fri, 08 Jul 2016 18:32:28 GMT  
+	-	`sha256:2e9ef30e353e63e20d7133de5a8d6d23cf027868adb29200c3d273e997c7a6a2`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
+		Size: 1.5 KB (1451 bytes)
+	-	`sha256:9b3ba42ab7a4654c3081ae1486daf5d41a2d4417680385c001a2c6f952d9d171`  
+		Last Modified: Fri, 29 Jul 2016 17:51:07 GMT  
 		Size: 223.0 B
-	-	`sha256:a81e2c6d6f3fb32b4032c554cda8a8bd9ed1087b72386675c58f5fe2e35970ef`  
-		Last Modified: Fri, 08 Jul 2016 18:32:40 GMT  
-		Size: 80.8 MB (80754535 bytes)
-	-	`sha256:4628c56a6f3633813c053061c43b05e5e7ed5f7c6e4d512fb220841a8fde8991`  
-		Last Modified: Fri, 08 Jul 2016 18:32:28 GMT  
+	-	`sha256:c73ae08f215d7f320e551c574ba22f0236384a39363e934cd472cef0a949a624`  
+		Last Modified: Fri, 29 Jul 2016 17:51:19 GMT  
+		Size: 80.7 MB (80724721 bytes)
+	-	`sha256:b34c95fd5d23e6105c2919caeafa6ffc8be3b44c3f5eae2d2de39fec84419058`  
+		Last Modified: Fri, 29 Jul 2016 17:51:07 GMT  
 		Size: 251.0 B
 
 ## `logstash:2`
 
 ```console
-$ docker pull logstash@sha256:cf47a007a44ab5aa8a33f191f006fcd493c79e868af2a7e1154673f511779309
+$ docker pull logstash@sha256:52ee09b92448ead5563f3b37fc2fbebe56e270ff69e073dfb478a17a6243d041
 ```
 
 -	Platforms:
@@ -1991,119 +1991,119 @@ $ docker pull logstash@sha256:cf47a007a44ab5aa8a33f191f006fcd493c79e868af2a7e115
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.7 MB (206662793 bytes)**  
+-	Total Size: **206.6 MB (206563251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a78027bf7294a6bf0ce310d3d87cddee6c6194645eec9b258b92cb306a6a67a8`
+-	Image ID: `sha256:26ce095441d9b7ae38b0c42b6f058fd55ba67e5eaf48fe00c986f08425afe427`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
+# Fri, 29 Jul 2016 17:18:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
+# Fri, 29 Jul 2016 17:18:46 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
+# Fri, 29 Jul 2016 17:18:47 GMT
 ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
+# Fri, 29 Jul 2016 17:18:54 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
+# Fri, 29 Jul 2016 17:19:12 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:50:00 GMT
+# Fri, 29 Jul 2016 17:49:34 GMT
 ENV LOGSTASH_MAJOR=2.3
-# Fri, 08 Jul 2016 18:29:08 GMT
+# Fri, 29 Jul 2016 17:49:35 GMT
 ENV LOGSTASH_VERSION=1:2.3.4-1
-# Fri, 08 Jul 2016 18:29:09 GMT
+# Fri, 29 Jul 2016 17:49:37 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 08 Jul 2016 18:30:21 GMT
+# Fri, 29 Jul 2016 17:50:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:30:22 GMT
+# Fri, 29 Jul 2016 17:50:53 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Jul 2016 18:30:23 GMT
+# Fri, 29 Jul 2016 17:50:54 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Fri, 08 Jul 2016 18:30:24 GMT
+# Fri, 29 Jul 2016 17:50:56 GMT
 RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
-# Fri, 08 Jul 2016 18:30:25 GMT
+# Fri, 29 Jul 2016 17:50:57 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 08 Jul 2016 18:30:26 GMT
+# Fri, 29 Jul 2016 17:50:57 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 18:30:26 GMT
+# Fri, 29 Jul 2016 17:50:58 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:a7de2cf3c5b8adf4a4ed4376ab3181a952cb6d98e13453d6bfeddeb81da01dd1`  
+		Last Modified: Fri, 29 Jul 2016 17:46:35 GMT  
+		Size: 933.8 KB (933803 bytes)
+	-	`sha256:9f935a937c4d4c83ca78559b46d2d6e565fe44e2469c39bb32ec8487b7627afe`  
+		Last Modified: Fri, 29 Jul 2016 17:46:34 GMT  
+		Size: 193.0 B
+	-	`sha256:92d2fb236d668f662440b5d0b3af549691e8197bf5718015470d2304b9cff0c0`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
 		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:ee7ec612e56d47309a4dc12ec8cbfdfe49adc9486d4bc2a14670054c3c65465b`  
-		Last Modified: Fri, 08 Jul 2016 18:32:28 GMT  
+	-	`sha256:2e9ef30e353e63e20d7133de5a8d6d23cf027868adb29200c3d273e997c7a6a2`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
+		Size: 1.5 KB (1451 bytes)
+	-	`sha256:9b3ba42ab7a4654c3081ae1486daf5d41a2d4417680385c001a2c6f952d9d171`  
+		Last Modified: Fri, 29 Jul 2016 17:51:07 GMT  
 		Size: 223.0 B
-	-	`sha256:a81e2c6d6f3fb32b4032c554cda8a8bd9ed1087b72386675c58f5fe2e35970ef`  
-		Last Modified: Fri, 08 Jul 2016 18:32:40 GMT  
-		Size: 80.8 MB (80754535 bytes)
-	-	`sha256:4628c56a6f3633813c053061c43b05e5e7ed5f7c6e4d512fb220841a8fde8991`  
-		Last Modified: Fri, 08 Jul 2016 18:32:28 GMT  
+	-	`sha256:c73ae08f215d7f320e551c574ba22f0236384a39363e934cd472cef0a949a624`  
+		Last Modified: Fri, 29 Jul 2016 17:51:19 GMT  
+		Size: 80.7 MB (80724721 bytes)
+	-	`sha256:b34c95fd5d23e6105c2919caeafa6ffc8be3b44c3f5eae2d2de39fec84419058`  
+		Last Modified: Fri, 29 Jul 2016 17:51:07 GMT  
 		Size: 251.0 B
 
 ## `logstash:latest`
 
 ```console
-$ docker pull logstash@sha256:cf47a007a44ab5aa8a33f191f006fcd493c79e868af2a7e1154673f511779309
+$ docker pull logstash@sha256:52ee09b92448ead5563f3b37fc2fbebe56e270ff69e073dfb478a17a6243d041
 ```
 
 -	Platforms:
@@ -2113,113 +2113,113 @@ $ docker pull logstash@sha256:cf47a007a44ab5aa8a33f191f006fcd493c79e868af2a7e115
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.7 MB (206662793 bytes)**  
+-	Total Size: **206.6 MB (206563251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a78027bf7294a6bf0ce310d3d87cddee6c6194645eec9b258b92cb306a6a67a8`
+-	Image ID: `sha256:26ce095441d9b7ae38b0c42b6f058fd55ba67e5eaf48fe00c986f08425afe427`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
+# Fri, 29 Jul 2016 17:18:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
+# Fri, 29 Jul 2016 17:18:46 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
+# Fri, 29 Jul 2016 17:18:47 GMT
 ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
+# Fri, 29 Jul 2016 17:18:54 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
+# Fri, 29 Jul 2016 17:19:12 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:50:00 GMT
+# Fri, 29 Jul 2016 17:49:34 GMT
 ENV LOGSTASH_MAJOR=2.3
-# Fri, 08 Jul 2016 18:29:08 GMT
+# Fri, 29 Jul 2016 17:49:35 GMT
 ENV LOGSTASH_VERSION=1:2.3.4-1
-# Fri, 08 Jul 2016 18:29:09 GMT
+# Fri, 29 Jul 2016 17:49:37 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 08 Jul 2016 18:30:21 GMT
+# Fri, 29 Jul 2016 17:50:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:30:22 GMT
+# Fri, 29 Jul 2016 17:50:53 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Jul 2016 18:30:23 GMT
+# Fri, 29 Jul 2016 17:50:54 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Fri, 08 Jul 2016 18:30:24 GMT
+# Fri, 29 Jul 2016 17:50:56 GMT
 RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
-# Fri, 08 Jul 2016 18:30:25 GMT
+# Fri, 29 Jul 2016 17:50:57 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 08 Jul 2016 18:30:26 GMT
+# Fri, 29 Jul 2016 17:50:57 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 18:30:26 GMT
+# Fri, 29 Jul 2016 17:50:58 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:a7de2cf3c5b8adf4a4ed4376ab3181a952cb6d98e13453d6bfeddeb81da01dd1`  
+		Last Modified: Fri, 29 Jul 2016 17:46:35 GMT  
+		Size: 933.8 KB (933803 bytes)
+	-	`sha256:9f935a937c4d4c83ca78559b46d2d6e565fe44e2469c39bb32ec8487b7627afe`  
+		Last Modified: Fri, 29 Jul 2016 17:46:34 GMT  
+		Size: 193.0 B
+	-	`sha256:92d2fb236d668f662440b5d0b3af549691e8197bf5718015470d2304b9cff0c0`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
 		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:ee7ec612e56d47309a4dc12ec8cbfdfe49adc9486d4bc2a14670054c3c65465b`  
-		Last Modified: Fri, 08 Jul 2016 18:32:28 GMT  
+	-	`sha256:2e9ef30e353e63e20d7133de5a8d6d23cf027868adb29200c3d273e997c7a6a2`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
+		Size: 1.5 KB (1451 bytes)
+	-	`sha256:9b3ba42ab7a4654c3081ae1486daf5d41a2d4417680385c001a2c6f952d9d171`  
+		Last Modified: Fri, 29 Jul 2016 17:51:07 GMT  
 		Size: 223.0 B
-	-	`sha256:a81e2c6d6f3fb32b4032c554cda8a8bd9ed1087b72386675c58f5fe2e35970ef`  
-		Last Modified: Fri, 08 Jul 2016 18:32:40 GMT  
-		Size: 80.8 MB (80754535 bytes)
-	-	`sha256:4628c56a6f3633813c053061c43b05e5e7ed5f7c6e4d512fb220841a8fde8991`  
-		Last Modified: Fri, 08 Jul 2016 18:32:28 GMT  
+	-	`sha256:c73ae08f215d7f320e551c574ba22f0236384a39363e934cd472cef0a949a624`  
+		Last Modified: Fri, 29 Jul 2016 17:51:19 GMT  
+		Size: 80.7 MB (80724721 bytes)
+	-	`sha256:b34c95fd5d23e6105c2919caeafa6ffc8be3b44c3f5eae2d2de39fec84419058`  
+		Last Modified: Fri, 29 Jul 2016 17:51:07 GMT  
 		Size: 251.0 B
 
 ## `logstash:5.0.0-alpha4-1`
@@ -2350,7 +2350,7 @@ CMD ["-e" ""]
 ## `logstash:5.0.0-alpha4`
 
 ```console
-$ docker pull logstash@sha256:709aff5cc2ce88da57a9f425c74f6b09ff13ca726a9cf92e3714a251f4172277
+$ docker pull logstash@sha256:e72ca07c1258688815a351a9386af183d6f3ec5e193f5741fa8d4f0a108e1d25
 ```
 
 -	Platforms:
@@ -2360,117 +2360,117 @@ $ docker pull logstash@sha256:709aff5cc2ce88da57a9f425c74f6b09ff13ca726a9cf92e37
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.0 MB (216043658 bytes)**  
+-	Total Size: **216.0 MB (215953274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e93b85de17e12e95b50db955049dc47e08552ecd8c59dd7a425875d74a5d824`
+-	Image ID: `sha256:50ffee04cb5d482c48af3bfc7c866f834fd72969d917456b4a5c7aa49d8780fa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 16:41:04 GMT
+# Fri, 29 Jul 2016 17:18:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libzmq3 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 16:41:05 GMT
+# Fri, 29 Jul 2016 17:18:46 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Fri, 10 Jun 2016 16:41:06 GMT
+# Fri, 29 Jul 2016 17:18:47 GMT
 ENV GOSU_VERSION=1.7
-# Fri, 10 Jun 2016 16:41:11 GMT
+# Fri, 29 Jul 2016 17:18:54 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 10 Jun 2016 16:41:33 GMT
+# Fri, 29 Jul 2016 17:19:12 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 10 Jun 2016 16:51:41 GMT
+# Fri, 29 Jul 2016 17:52:07 GMT
 ENV LOGSTASH_MAJOR=5.0
-# Fri, 01 Jul 2016 19:44:02 GMT
+# Fri, 29 Jul 2016 17:52:07 GMT
 ENV LOGSTASH_VERSION=1:5.0.0~alpha4-1
-# Fri, 01 Jul 2016 19:44:04 GMT
+# Fri, 29 Jul 2016 17:52:09 GMT
 RUN echo "deb http://packages.elastic.co/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
-# Fri, 01 Jul 2016 19:45:21 GMT
+# Fri, 29 Jul 2016 18:05:38 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 01 Jul 2016 19:45:22 GMT
+# Fri, 29 Jul 2016 18:05:39 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 01 Jul 2016 19:45:23 GMT
+# Fri, 29 Jul 2016 18:05:39 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Fri, 01 Jul 2016 19:45:24 GMT
+# Fri, 29 Jul 2016 18:05:40 GMT
 RUN set -ex 	&& if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^(path.log|path.config):!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi
-# Fri, 01 Jul 2016 19:45:25 GMT
+# Fri, 29 Jul 2016 18:05:41 GMT
 COPY file:e25e9bbce7bd2a5373b3d6a54afe70f3338f9e3fb5fc933284ea0d73eaa8985c in /
-# Fri, 01 Jul 2016 19:45:26 GMT
+# Fri, 29 Jul 2016 18:05:41 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 01 Jul 2016 19:45:26 GMT
+# Fri, 29 Jul 2016 18:05:42 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:25368b2a6df8456a71cb1029228df1a35bb4437fc8e2820585af8008554a2fa0`  
-		Last Modified: Fri, 10 Jun 2016 16:53:40 GMT  
-		Size: 954.7 KB (954722 bytes)
-	-	`sha256:51c43aabfa0c74eba7b0be81d4df4c746d95a4867e69772468dfb8de4c961e76`  
-		Last Modified: Fri, 10 Jun 2016 16:53:39 GMT  
-		Size: 194.0 B
-	-	`sha256:2b7b1af7c6d72bacff3d0b3c85db1305ea1de89638806f45640f589eee2b0d36`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:a7de2cf3c5b8adf4a4ed4376ab3181a952cb6d98e13453d6bfeddeb81da01dd1`  
+		Last Modified: Fri, 29 Jul 2016 17:46:35 GMT  
+		Size: 933.8 KB (933803 bytes)
+	-	`sha256:9f935a937c4d4c83ca78559b46d2d6e565fe44e2469c39bb32ec8487b7627afe`  
+		Last Modified: Fri, 29 Jul 2016 17:46:34 GMT  
+		Size: 193.0 B
+	-	`sha256:92d2fb236d668f662440b5d0b3af549691e8197bf5718015470d2304b9cff0c0`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
 		Size: 807.9 KB (807927 bytes)
-	-	`sha256:749801b75ce0f7f82fada0bc17187ab72e0b2e47fc2dc5d327b6c4733276effb`  
-		Last Modified: Fri, 10 Jun 2016 16:53:37 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:db50fa00dd29f4b55883a622360da0ed3ee6490ccdd6e1eacf209600051074bb`  
-		Last Modified: Fri, 01 Jul 2016 19:48:06 GMT  
-		Size: 222.0 B
-	-	`sha256:40a844ef18b3a2a9faf40133dff00e0b92222302605cf632506175dc439c2464`  
-		Last Modified: Fri, 01 Jul 2016 19:48:25 GMT  
-		Size: 90.1 MB (90134080 bytes)
-	-	`sha256:da426a2852df8569d5cbf3bc506dacbedd94543245cf3a4f731248e74c5481b6`  
-		Last Modified: Fri, 01 Jul 2016 19:48:06 GMT  
-		Size: 1.3 KB (1321 bytes)
-	-	`sha256:64c823d6bb3dd7198ed3d5803ac4a55cd59501662a97c237bd74543b9d0dcd89`  
-		Last Modified: Fri, 01 Jul 2016 19:48:07 GMT  
-		Size: 251.0 B
+	-	`sha256:2e9ef30e353e63e20d7133de5a8d6d23cf027868adb29200c3d273e997c7a6a2`  
+		Last Modified: Fri, 29 Jul 2016 17:46:32 GMT  
+		Size: 1.5 KB (1451 bytes)
+	-	`sha256:76d6144fce189ca42d5237580accedca777df18c96d31fa9e6db66ad7ec62c24`  
+		Last Modified: Fri, 29 Jul 2016 18:05:50 GMT  
+		Size: 224.0 B
+	-	`sha256:5544bf558788e5bb68b33076b0363a586d749da554154cb4fe1b4f838181d2eb`  
+		Last Modified: Fri, 29 Jul 2016 18:06:09 GMT  
+		Size: 90.1 MB (90113423 bytes)
+	-	`sha256:be3be324ae8446ff828e0ab07af1c3ffdb2b99fdb2cf26f9e75a3392a8cb5256`  
+		Last Modified: Fri, 29 Jul 2016 18:05:51 GMT  
+		Size: 1.3 KB (1319 bytes)
+	-	`sha256:096e323faadc6dc51549213afece1a19601493cd033408dd3f93990b2aaea2c1`  
+		Last Modified: Fri, 29 Jul 2016 18:05:51 GMT  
+		Size: 252.0 B
 
 ## `logstash:5.0.0`
 
