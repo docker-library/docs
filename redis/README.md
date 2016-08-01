@@ -3,11 +3,11 @@
 -	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.0/Dockerfile)
 -	[`3.0.7-32bit`, `3.0-32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.0/32bit/Dockerfile)
 -	[`3.0.7-alpine`, `3.0-alpine` (*3.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/c49a42f6efcd2b971e43e93116a976b058035544/3.0/alpine/Dockerfile)
--	[`3.2.1`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/5d3e1e5ff708d038527c719d52f3e87f1970d721/3.2/Dockerfile)
--	[`3.2.1-32bit`, `3.2-32bit`, `3-32bit`, `32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/5d3e1e5ff708d038527c719d52f3e87f1970d721/3.2/32bit/Dockerfile)
--	[`3.2.1-alpine`, `3.2-alpine`, `3-alpine`, `alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/5d3e1e5ff708d038527c719d52f3e87f1970d721/3.2/alpine/Dockerfile)
+-	[`3.2.2`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/4c7dd909f428409bd8b8ada7db04e6eda919787f/3.2/Dockerfile)
+-	[`3.2.2-32bit`, `3.2-32bit`, `3-32bit`, `32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/4c7dd909f428409bd8b8ada7db04e6eda919787f/3.2/32bit/Dockerfile)
+-	[`3.2.2-alpine`, `3.2-alpine`, `3-alpine`, `alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/4c7dd909f428409bd8b8ada7db04e6eda919787f/3.2/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/redis:latest.svg)](https://imagelayers.io/?images=redis:3.0.7,redis:3.0.7-32bit,redis:3.0.7-alpine,redis:3.2.1,redis:3.2.1-32bit,redis:3.2.1-alpine)
+[![](https://badge.imagelayers.io/redis:latest.svg)](https://imagelayers.io/?images=redis:3.0.7,redis:3.0.7-32bit,redis:3.0.7-alpine,redis:3.2.2,redis:3.2.2-32bit,redis:3.2.2-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/redis`)](https://github.com/docker-library/official-images/blob/master/library/redis). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredis).
 
