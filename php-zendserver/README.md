@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5`, `8.5-php5.5` (*8.5/5.5/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/df88fc00133cb8578e5d571a74336f831e5ef8cd/8.5/5.5/Dockerfile)
--	[`5.6`, `8.5-php5.6`, `8.5` (*8.5/5.6/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/df88fc00133cb8578e5d571a74336f831e5ef8cd/8.5/5.6/Dockerfile)
--	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/df88fc00133cb8578e5d571a74336f831e5ef8cd/7.0/5.4/Dockerfile)
--	[`9.0`, `9.0-php7`, `latest` (*9.0/7.0/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/359ed95e4d49da8123eb01c4b929917c7595754c/9.0/7.0/Dockerfile)
+-	[`5.5`, `8.5-php5.5` (*8.5/5.5/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/01d0fe3e9b64a1539d63a2183f48e492e29fe9c8/8.5/5.5/Dockerfile)
+-	[`5.6`, `8.5-php5.6`, `8.5` (*8.5/5.6/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/01d0fe3e9b64a1539d63a2183f48e492e29fe9c8/8.5/5.6/Dockerfile)
+-	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/01d0fe3e9b64a1539d63a2183f48e492e29fe9c8/7.0/5.4/Dockerfile)
+-	[`9.0`, `9.0-php7`, `latest` (*9.0/7.0/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/01d0fe3e9b64a1539d63a2183f48e492e29fe9c8/9.0/7.0/Dockerfile)
 
 [![](https://badge.imagelayers.io/php-zendserver:latest.svg)](https://imagelayers.io/?images=php-zendserver:5.5,php-zendserver:5.6,php-zendserver:5.4,php-zendserver:9.0)
 

@@ -18,14 +18,11 @@
 -	[`wheezy-curl` (*wheezy/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a0a59c61102e8b079d568db69368fb89421f75f2/wheezy/curl/Dockerfile)
 -	[`wheezy-scm` (*wheezy/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/wheezy/scm/Dockerfile)
 -	[`wheezy` (*wheezy/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/e7534be05255522954f50542ebf9c5f06485838d/wheezy/Dockerfile)
--	[`wily-curl` (*wily/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/af914a5bde2a749884177393c8140384048dc5f9/wily/curl/Dockerfile)
--	[`wily-scm` (*wily/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/wily/scm/Dockerfile)
--	[`wily` (*wily/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/e7534be05255522954f50542ebf9c5f06485838d/wily/Dockerfile)
 -	[`xenial-curl` (*xenial/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/curl/Dockerfile)
 -	[`xenial-scm` (*xenial/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/scm/Dockerfile)
 -	[`xenial` (*xenial/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/e7534be05255522954f50542ebf9c5f06485838d/xenial/Dockerfile)
 
-[![](https://badge.imagelayers.io/buildpack-deps:latest.svg)](https://imagelayers.io/?images=buildpack-deps:jessie-curl,buildpack-deps:jessie-scm,buildpack-deps:jessie,buildpack-deps:precise-curl,buildpack-deps:precise-scm,buildpack-deps:precise,buildpack-deps:sid-curl,buildpack-deps:sid-scm,buildpack-deps:sid,buildpack-deps:stretch-curl,buildpack-deps:stretch-scm,buildpack-deps:stretch,buildpack-deps:trusty-curl,buildpack-deps:trusty-scm,buildpack-deps:trusty,buildpack-deps:wheezy-curl,buildpack-deps:wheezy-scm,buildpack-deps:wheezy,buildpack-deps:wily-curl,buildpack-deps:wily-scm,buildpack-deps:wily,buildpack-deps:xenial-curl,buildpack-deps:xenial-scm,buildpack-deps:xenial)
+[![](https://badge.imagelayers.io/buildpack-deps:latest.svg)](https://imagelayers.io/?images=buildpack-deps:jessie-curl,buildpack-deps:jessie-scm,buildpack-deps:jessie,buildpack-deps:precise-curl,buildpack-deps:precise-scm,buildpack-deps:precise,buildpack-deps:sid-curl,buildpack-deps:sid-scm,buildpack-deps:sid,buildpack-deps:stretch-curl,buildpack-deps:stretch-scm,buildpack-deps:stretch,buildpack-deps:trusty-curl,buildpack-deps:trusty-scm,buildpack-deps:trusty,buildpack-deps:wheezy-curl,buildpack-deps:wheezy-scm,buildpack-deps:wheezy,buildpack-deps:xenial-curl,buildpack-deps:xenial-scm,buildpack-deps:xenial)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/buildpack-deps`)](https://github.com/docker-library/official-images/blob/master/library/buildpack-deps). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbuildpack-deps).
 
