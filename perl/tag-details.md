@@ -18,7 +18,7 @@
 ## `perl:latest`
 
 ```console
-$ docker pull perl@sha256:5e01e31ad4b2968a8cb35943d2d2850686fa44dffc99ad8304a38da6f7938c8a
+$ docker pull perl@sha256:0d33dc7b94391571a23321028bac68e70bbaff81b005f918c4aa4f1e1a735c1c
 ```
 
 -	Platforms:
@@ -26,87 +26,72 @@ $ docker pull perl@sha256:5e01e31ad4b2968a8cb35943d2d2850686fa44dffc99ad8304a38d
 
 ### `perl:latest` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.7 MB (254747097 bytes)**  
+-	Total Size: **254.8 MB (254782952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74a1c7b73b077b8c4a8229ba391c5b5d071f34e69828ff3c71e37f9936a079d6`
+-	Image ID: `sha256:17205ddff923bd8f12069da84ffe8d311dab0c47757a3b4866d1f1cbdaf5f323`
 -	Default Command: `["perl5.24.0","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:37:36 GMT
-COPY file:3d5f6c4b851f2e2d52297dc0a80efe73ed78c301d289d0db6f30b4b73dc85c73 in /usr/src/perl/
-# Tue, 24 May 2016 19:37:37 GMT
+# Mon, 01 Aug 2016 20:31:39 GMT
+COPY file:21749e9b9dd48119d6468e64e9fc7ba979cd3bac662c7c9978b4a6d3262fa809 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:31:40 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 19:44:58 GMT
+# Mon, 01 Aug 2016 20:39:08 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.24.0.tar.bz2 -o perl-5.24.0.tar.bz2     && echo '298fa605138c1a00dab95643130ae0edab369b4d *perl-5.24.0.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.24.0.tar.bz2 -C /usr/src/perl     && rm perl-5.24.0.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 19:44:59 GMT
+# Mon, 01 Aug 2016 20:39:09 GMT
 WORKDIR /root
-# Tue, 24 May 2016 19:45:00 GMT
+# Mon, 01 Aug 2016 20:39:09 GMT
 CMD ["perl5.24.0" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:74464db97a2f138849ed8b32d975f290cbc42410a2d2414c245cbf3ce1be16a2`  
-		Last Modified: Tue, 31 May 2016 22:47:12 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:81c9865d31f1fb73f65bd99124a3214d813456dab3227fef2f7b7419082a97ca`  
+		Last Modified: Mon, 01 Aug 2016 20:39:18 GMT  
 		Size: 395.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:97171fba3f2f212c18987a3ac7807c272f9ac431f3fe41909a3605f280efb1e5`  
-		Last Modified: Tue, 31 May 2016 22:47:04 GMT  
-		Size: 12.7 MB (12701726 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:8b75261a882991f9a1ae342f57889f76edecf95f50d7fcd9e6cd65b155e84d90`  
+		Last Modified: Mon, 01 Aug 2016 20:39:24 GMT  
+		Size: 12.7 MB (12701758 bytes)
 
 ## `perl:5`
 
 ```console
-$ docker pull perl@sha256:5e01e31ad4b2968a8cb35943d2d2850686fa44dffc99ad8304a38da6f7938c8a
+$ docker pull perl@sha256:0d33dc7b94391571a23321028bac68e70bbaff81b005f918c4aa4f1e1a735c1c
 ```
 
 -	Platforms:
@@ -114,87 +99,72 @@ $ docker pull perl@sha256:5e01e31ad4b2968a8cb35943d2d2850686fa44dffc99ad8304a38d
 
 ### `perl:5` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.7 MB (254747097 bytes)**  
+-	Total Size: **254.8 MB (254782952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74a1c7b73b077b8c4a8229ba391c5b5d071f34e69828ff3c71e37f9936a079d6`
+-	Image ID: `sha256:17205ddff923bd8f12069da84ffe8d311dab0c47757a3b4866d1f1cbdaf5f323`
 -	Default Command: `["perl5.24.0","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:37:36 GMT
-COPY file:3d5f6c4b851f2e2d52297dc0a80efe73ed78c301d289d0db6f30b4b73dc85c73 in /usr/src/perl/
-# Tue, 24 May 2016 19:37:37 GMT
+# Mon, 01 Aug 2016 20:31:39 GMT
+COPY file:21749e9b9dd48119d6468e64e9fc7ba979cd3bac662c7c9978b4a6d3262fa809 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:31:40 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 19:44:58 GMT
+# Mon, 01 Aug 2016 20:39:08 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.24.0.tar.bz2 -o perl-5.24.0.tar.bz2     && echo '298fa605138c1a00dab95643130ae0edab369b4d *perl-5.24.0.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.24.0.tar.bz2 -C /usr/src/perl     && rm perl-5.24.0.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 19:44:59 GMT
+# Mon, 01 Aug 2016 20:39:09 GMT
 WORKDIR /root
-# Tue, 24 May 2016 19:45:00 GMT
+# Mon, 01 Aug 2016 20:39:09 GMT
 CMD ["perl5.24.0" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:74464db97a2f138849ed8b32d975f290cbc42410a2d2414c245cbf3ce1be16a2`  
-		Last Modified: Tue, 31 May 2016 22:47:12 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:81c9865d31f1fb73f65bd99124a3214d813456dab3227fef2f7b7419082a97ca`  
+		Last Modified: Mon, 01 Aug 2016 20:39:18 GMT  
 		Size: 395.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:97171fba3f2f212c18987a3ac7807c272f9ac431f3fe41909a3605f280efb1e5`  
-		Last Modified: Tue, 31 May 2016 22:47:04 GMT  
-		Size: 12.7 MB (12701726 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:8b75261a882991f9a1ae342f57889f76edecf95f50d7fcd9e6cd65b155e84d90`  
+		Last Modified: Mon, 01 Aug 2016 20:39:24 GMT  
+		Size: 12.7 MB (12701758 bytes)
 
 ## `perl:5.24`
 
 ```console
-$ docker pull perl@sha256:5e01e31ad4b2968a8cb35943d2d2850686fa44dffc99ad8304a38da6f7938c8a
+$ docker pull perl@sha256:0d33dc7b94391571a23321028bac68e70bbaff81b005f918c4aa4f1e1a735c1c
 ```
 
 -	Platforms:
@@ -202,87 +172,72 @@ $ docker pull perl@sha256:5e01e31ad4b2968a8cb35943d2d2850686fa44dffc99ad8304a38d
 
 ### `perl:5.24` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.7 MB (254747097 bytes)**  
+-	Total Size: **254.8 MB (254782952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74a1c7b73b077b8c4a8229ba391c5b5d071f34e69828ff3c71e37f9936a079d6`
+-	Image ID: `sha256:17205ddff923bd8f12069da84ffe8d311dab0c47757a3b4866d1f1cbdaf5f323`
 -	Default Command: `["perl5.24.0","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:37:36 GMT
-COPY file:3d5f6c4b851f2e2d52297dc0a80efe73ed78c301d289d0db6f30b4b73dc85c73 in /usr/src/perl/
-# Tue, 24 May 2016 19:37:37 GMT
+# Mon, 01 Aug 2016 20:31:39 GMT
+COPY file:21749e9b9dd48119d6468e64e9fc7ba979cd3bac662c7c9978b4a6d3262fa809 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:31:40 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 19:44:58 GMT
+# Mon, 01 Aug 2016 20:39:08 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.24.0.tar.bz2 -o perl-5.24.0.tar.bz2     && echo '298fa605138c1a00dab95643130ae0edab369b4d *perl-5.24.0.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.24.0.tar.bz2 -C /usr/src/perl     && rm perl-5.24.0.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 19:44:59 GMT
+# Mon, 01 Aug 2016 20:39:09 GMT
 WORKDIR /root
-# Tue, 24 May 2016 19:45:00 GMT
+# Mon, 01 Aug 2016 20:39:09 GMT
 CMD ["perl5.24.0" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:74464db97a2f138849ed8b32d975f290cbc42410a2d2414c245cbf3ce1be16a2`  
-		Last Modified: Tue, 31 May 2016 22:47:12 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:81c9865d31f1fb73f65bd99124a3214d813456dab3227fef2f7b7419082a97ca`  
+		Last Modified: Mon, 01 Aug 2016 20:39:18 GMT  
 		Size: 395.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:97171fba3f2f212c18987a3ac7807c272f9ac431f3fe41909a3605f280efb1e5`  
-		Last Modified: Tue, 31 May 2016 22:47:04 GMT  
-		Size: 12.7 MB (12701726 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:8b75261a882991f9a1ae342f57889f76edecf95f50d7fcd9e6cd65b155e84d90`  
+		Last Modified: Mon, 01 Aug 2016 20:39:24 GMT  
+		Size: 12.7 MB (12701758 bytes)
 
 ## `perl:5.24.0`
 
 ```console
-$ docker pull perl@sha256:5e01e31ad4b2968a8cb35943d2d2850686fa44dffc99ad8304a38da6f7938c8a
+$ docker pull perl@sha256:0d33dc7b94391571a23321028bac68e70bbaff81b005f918c4aa4f1e1a735c1c
 ```
 
 -	Platforms:
@@ -290,87 +245,72 @@ $ docker pull perl@sha256:5e01e31ad4b2968a8cb35943d2d2850686fa44dffc99ad8304a38d
 
 ### `perl:5.24.0` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.7 MB (254747097 bytes)**  
+-	Total Size: **254.8 MB (254782952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74a1c7b73b077b8c4a8229ba391c5b5d071f34e69828ff3c71e37f9936a079d6`
+-	Image ID: `sha256:17205ddff923bd8f12069da84ffe8d311dab0c47757a3b4866d1f1cbdaf5f323`
 -	Default Command: `["perl5.24.0","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:37:36 GMT
-COPY file:3d5f6c4b851f2e2d52297dc0a80efe73ed78c301d289d0db6f30b4b73dc85c73 in /usr/src/perl/
-# Tue, 24 May 2016 19:37:37 GMT
+# Mon, 01 Aug 2016 20:31:39 GMT
+COPY file:21749e9b9dd48119d6468e64e9fc7ba979cd3bac662c7c9978b4a6d3262fa809 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:31:40 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 19:44:58 GMT
+# Mon, 01 Aug 2016 20:39:08 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.24.0.tar.bz2 -o perl-5.24.0.tar.bz2     && echo '298fa605138c1a00dab95643130ae0edab369b4d *perl-5.24.0.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.24.0.tar.bz2 -C /usr/src/perl     && rm perl-5.24.0.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 19:44:59 GMT
+# Mon, 01 Aug 2016 20:39:09 GMT
 WORKDIR /root
-# Tue, 24 May 2016 19:45:00 GMT
+# Mon, 01 Aug 2016 20:39:09 GMT
 CMD ["perl5.24.0" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:74464db97a2f138849ed8b32d975f290cbc42410a2d2414c245cbf3ce1be16a2`  
-		Last Modified: Tue, 31 May 2016 22:47:12 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:81c9865d31f1fb73f65bd99124a3214d813456dab3227fef2f7b7419082a97ca`  
+		Last Modified: Mon, 01 Aug 2016 20:39:18 GMT  
 		Size: 395.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:97171fba3f2f212c18987a3ac7807c272f9ac431f3fe41909a3605f280efb1e5`  
-		Last Modified: Tue, 31 May 2016 22:47:04 GMT  
-		Size: 12.7 MB (12701726 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:8b75261a882991f9a1ae342f57889f76edecf95f50d7fcd9e6cd65b155e84d90`  
+		Last Modified: Mon, 01 Aug 2016 20:39:24 GMT  
+		Size: 12.7 MB (12701758 bytes)
 
 ## `perl:5.22`
 
 ```console
-$ docker pull perl@sha256:0eaef3866843f6c0bf9e65b8960b1fa454fa10a9196c5c3bf2bb70c69c484cef
+$ docker pull perl@sha256:85d698eaf7d394889b43453fe4a77fc615e7dfc0eb9dbc565e9419ee659e5a46
 ```
 
 -	Platforms:
@@ -378,87 +318,72 @@ $ docker pull perl@sha256:0eaef3866843f6c0bf9e65b8960b1fa454fa10a9196c5c3bf2bb70
 
 ### `perl:5.22` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.5 MB (254513660 bytes)**  
+-	Total Size: **254.5 MB (254549375 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5c4d23c304d70ad8ac8216f666bd8cc335151338c34f075c7d8e0440685aeae`
+-	Image ID: `sha256:cf5bd9a314aa857d6d785eb02cbb3796dbc75a7718d940f16cc1249c5724dd8a`
 -	Default Command: `["perl5.22.2","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:46:34 GMT
-COPY file:8a0914adf7de088db97cf10c23a8a15234a1ab9729883cf931ebd70a0f0c0ea2 in /usr/src/perl/
-# Tue, 24 May 2016 19:46:34 GMT
+# Mon, 01 Aug 2016 20:15:34 GMT
+COPY file:3350578ae238d520a6b8fc3a800a5f5df942499a0f8fda6c82b5ba594f4fc068 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:15:35 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 19:53:37 GMT
+# Mon, 01 Aug 2016 20:22:42 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.2.tar.bz2 -o perl-5.22.2.tar.bz2     && echo 'e2f465446dcd45a7fa3da696037f9ebe73e78e55 *perl-5.22.2.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.22.2.tar.bz2 -C /usr/src/perl     && rm perl-5.22.2.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 19:53:38 GMT
+# Mon, 01 Aug 2016 20:22:42 GMT
 WORKDIR /root
-# Tue, 24 May 2016 19:53:39 GMT
+# Mon, 01 Aug 2016 20:22:43 GMT
 CMD ["perl5.22.2" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:04d75dad9facf03c0b18fe896352155588284a88b4a40e24d840e04efb857fa8`  
-		Last Modified: Tue, 31 May 2016 22:50:30 GMT  
-		Size: 398.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1d80cbe0874ffa90531d8f3c8a8f431190b8f1b786e1eb09a740820d4a4c54c0`  
-		Last Modified: Tue, 31 May 2016 22:50:22 GMT  
-		Size: 12.5 MB (12468286 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:55ac5e1230ab0393db07ff47e87ded9c881d8df30eb24e205d493af4b84f3787`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 396.0 B
+	-	`sha256:c498a400435e139fd8e71457ab82f430397c24017739015a6974da0ad6f563a8`  
+		Last Modified: Mon, 01 Aug 2016 20:22:57 GMT  
+		Size: 12.5 MB (12468180 bytes)
 
 ## `perl:5.22.2`
 
 ```console
-$ docker pull perl@sha256:0eaef3866843f6c0bf9e65b8960b1fa454fa10a9196c5c3bf2bb70c69c484cef
+$ docker pull perl@sha256:85d698eaf7d394889b43453fe4a77fc615e7dfc0eb9dbc565e9419ee659e5a46
 ```
 
 -	Platforms:
@@ -466,87 +391,72 @@ $ docker pull perl@sha256:0eaef3866843f6c0bf9e65b8960b1fa454fa10a9196c5c3bf2bb70
 
 ### `perl:5.22.2` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.5 MB (254513660 bytes)**  
+-	Total Size: **254.5 MB (254549375 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5c4d23c304d70ad8ac8216f666bd8cc335151338c34f075c7d8e0440685aeae`
+-	Image ID: `sha256:cf5bd9a314aa857d6d785eb02cbb3796dbc75a7718d940f16cc1249c5724dd8a`
 -	Default Command: `["perl5.22.2","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:46:34 GMT
-COPY file:8a0914adf7de088db97cf10c23a8a15234a1ab9729883cf931ebd70a0f0c0ea2 in /usr/src/perl/
-# Tue, 24 May 2016 19:46:34 GMT
+# Mon, 01 Aug 2016 20:15:34 GMT
+COPY file:3350578ae238d520a6b8fc3a800a5f5df942499a0f8fda6c82b5ba594f4fc068 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:15:35 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 19:53:37 GMT
+# Mon, 01 Aug 2016 20:22:42 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.2.tar.bz2 -o perl-5.22.2.tar.bz2     && echo 'e2f465446dcd45a7fa3da696037f9ebe73e78e55 *perl-5.22.2.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.22.2.tar.bz2 -C /usr/src/perl     && rm perl-5.22.2.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 19:53:38 GMT
+# Mon, 01 Aug 2016 20:22:42 GMT
 WORKDIR /root
-# Tue, 24 May 2016 19:53:39 GMT
+# Mon, 01 Aug 2016 20:22:43 GMT
 CMD ["perl5.22.2" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:04d75dad9facf03c0b18fe896352155588284a88b4a40e24d840e04efb857fa8`  
-		Last Modified: Tue, 31 May 2016 22:50:30 GMT  
-		Size: 398.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:1d80cbe0874ffa90531d8f3c8a8f431190b8f1b786e1eb09a740820d4a4c54c0`  
-		Last Modified: Tue, 31 May 2016 22:50:22 GMT  
-		Size: 12.5 MB (12468286 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:55ac5e1230ab0393db07ff47e87ded9c881d8df30eb24e205d493af4b84f3787`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 396.0 B
+	-	`sha256:c498a400435e139fd8e71457ab82f430397c24017739015a6974da0ad6f563a8`  
+		Last Modified: Mon, 01 Aug 2016 20:22:57 GMT  
+		Size: 12.5 MB (12468180 bytes)
 
 ## `perl:threaded`
 
 ```console
-$ docker pull perl@sha256:38cca110a3d6a3a79b6d71d5e7842f6b959d1adc268f7bb8af1bbb3b3bc0cae0
+$ docker pull perl@sha256:8092e1a3c31b47e4d279d5bee5f45a815f82c0c2fd08fdbd063ef5313e405cc2
 ```
 
 -	Platforms:
@@ -554,87 +464,72 @@ $ docker pull perl@sha256:38cca110a3d6a3a79b6d71d5e7842f6b959d1adc268f7bb8af1bbb
 
 ### `perl:threaded` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.8 MB (254788294 bytes)**  
+-	Total Size: **254.8 MB (254823960 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab23552aebc12eb7e3995b4c04e8ecfb69261b717479c0dff8a45677c5f94982`
+-	Image ID: `sha256:76abbb2daebc9f053d3e36f19232d6994529b5631bc9780a3242391852ea2b78`
 -	Default Command: `["perl5.24.0","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:37:36 GMT
-COPY file:3d5f6c4b851f2e2d52297dc0a80efe73ed78c301d289d0db6f30b4b73dc85c73 in /usr/src/perl/
-# Tue, 24 May 2016 19:37:37 GMT
+# Mon, 01 Aug 2016 20:31:39 GMT
+COPY file:21749e9b9dd48119d6468e64e9fc7ba979cd3bac662c7c9978b4a6d3262fa809 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:31:40 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 20:02:33 GMT
+# Mon, 01 Aug 2016 20:48:08 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.24.0.tar.bz2 -o perl-5.24.0.tar.bz2     && echo '298fa605138c1a00dab95643130ae0edab369b4d *perl-5.24.0.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.24.0.tar.bz2 -C /usr/src/perl     && rm perl-5.24.0.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Dusethreads -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 20:02:34 GMT
+# Mon, 01 Aug 2016 20:48:09 GMT
 WORKDIR /root
-# Tue, 24 May 2016 20:02:35 GMT
+# Mon, 01 Aug 2016 20:48:09 GMT
 CMD ["perl5.24.0" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:74464db97a2f138849ed8b32d975f290cbc42410a2d2414c245cbf3ce1be16a2`  
-		Last Modified: Tue, 31 May 2016 22:47:12 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:81c9865d31f1fb73f65bd99124a3214d813456dab3227fef2f7b7419082a97ca`  
+		Last Modified: Mon, 01 Aug 2016 20:39:18 GMT  
 		Size: 395.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:486fdf489d94faad66c119696ddd34eb7e74211d42a9294a6506835a1fe00d80`  
-		Last Modified: Tue, 31 May 2016 22:51:05 GMT  
-		Size: 12.7 MB (12742923 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:88e2286edecb25cddc71bcc402b48032a05abfaaffa897190908bd012c8a4a79`  
+		Last Modified: Mon, 01 Aug 2016 20:48:23 GMT  
+		Size: 12.7 MB (12742766 bytes)
 
 ## `perl:5-threaded`
 
 ```console
-$ docker pull perl@sha256:38cca110a3d6a3a79b6d71d5e7842f6b959d1adc268f7bb8af1bbb3b3bc0cae0
+$ docker pull perl@sha256:8092e1a3c31b47e4d279d5bee5f45a815f82c0c2fd08fdbd063ef5313e405cc2
 ```
 
 -	Platforms:
@@ -642,87 +537,72 @@ $ docker pull perl@sha256:38cca110a3d6a3a79b6d71d5e7842f6b959d1adc268f7bb8af1bbb
 
 ### `perl:5-threaded` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.8 MB (254788294 bytes)**  
+-	Total Size: **254.8 MB (254823960 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab23552aebc12eb7e3995b4c04e8ecfb69261b717479c0dff8a45677c5f94982`
+-	Image ID: `sha256:76abbb2daebc9f053d3e36f19232d6994529b5631bc9780a3242391852ea2b78`
 -	Default Command: `["perl5.24.0","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:37:36 GMT
-COPY file:3d5f6c4b851f2e2d52297dc0a80efe73ed78c301d289d0db6f30b4b73dc85c73 in /usr/src/perl/
-# Tue, 24 May 2016 19:37:37 GMT
+# Mon, 01 Aug 2016 20:31:39 GMT
+COPY file:21749e9b9dd48119d6468e64e9fc7ba979cd3bac662c7c9978b4a6d3262fa809 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:31:40 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 20:02:33 GMT
+# Mon, 01 Aug 2016 20:48:08 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.24.0.tar.bz2 -o perl-5.24.0.tar.bz2     && echo '298fa605138c1a00dab95643130ae0edab369b4d *perl-5.24.0.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.24.0.tar.bz2 -C /usr/src/perl     && rm perl-5.24.0.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Dusethreads -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 20:02:34 GMT
+# Mon, 01 Aug 2016 20:48:09 GMT
 WORKDIR /root
-# Tue, 24 May 2016 20:02:35 GMT
+# Mon, 01 Aug 2016 20:48:09 GMT
 CMD ["perl5.24.0" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:74464db97a2f138849ed8b32d975f290cbc42410a2d2414c245cbf3ce1be16a2`  
-		Last Modified: Tue, 31 May 2016 22:47:12 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:81c9865d31f1fb73f65bd99124a3214d813456dab3227fef2f7b7419082a97ca`  
+		Last Modified: Mon, 01 Aug 2016 20:39:18 GMT  
 		Size: 395.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:486fdf489d94faad66c119696ddd34eb7e74211d42a9294a6506835a1fe00d80`  
-		Last Modified: Tue, 31 May 2016 22:51:05 GMT  
-		Size: 12.7 MB (12742923 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:88e2286edecb25cddc71bcc402b48032a05abfaaffa897190908bd012c8a4a79`  
+		Last Modified: Mon, 01 Aug 2016 20:48:23 GMT  
+		Size: 12.7 MB (12742766 bytes)
 
 ## `perl:5.24-threaded`
 
 ```console
-$ docker pull perl@sha256:38cca110a3d6a3a79b6d71d5e7842f6b959d1adc268f7bb8af1bbb3b3bc0cae0
+$ docker pull perl@sha256:8092e1a3c31b47e4d279d5bee5f45a815f82c0c2fd08fdbd063ef5313e405cc2
 ```
 
 -	Platforms:
@@ -730,87 +610,72 @@ $ docker pull perl@sha256:38cca110a3d6a3a79b6d71d5e7842f6b959d1adc268f7bb8af1bbb
 
 ### `perl:5.24-threaded` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.8 MB (254788294 bytes)**  
+-	Total Size: **254.8 MB (254823960 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab23552aebc12eb7e3995b4c04e8ecfb69261b717479c0dff8a45677c5f94982`
+-	Image ID: `sha256:76abbb2daebc9f053d3e36f19232d6994529b5631bc9780a3242391852ea2b78`
 -	Default Command: `["perl5.24.0","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:37:36 GMT
-COPY file:3d5f6c4b851f2e2d52297dc0a80efe73ed78c301d289d0db6f30b4b73dc85c73 in /usr/src/perl/
-# Tue, 24 May 2016 19:37:37 GMT
+# Mon, 01 Aug 2016 20:31:39 GMT
+COPY file:21749e9b9dd48119d6468e64e9fc7ba979cd3bac662c7c9978b4a6d3262fa809 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:31:40 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 20:02:33 GMT
+# Mon, 01 Aug 2016 20:48:08 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.24.0.tar.bz2 -o perl-5.24.0.tar.bz2     && echo '298fa605138c1a00dab95643130ae0edab369b4d *perl-5.24.0.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.24.0.tar.bz2 -C /usr/src/perl     && rm perl-5.24.0.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Dusethreads -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 20:02:34 GMT
+# Mon, 01 Aug 2016 20:48:09 GMT
 WORKDIR /root
-# Tue, 24 May 2016 20:02:35 GMT
+# Mon, 01 Aug 2016 20:48:09 GMT
 CMD ["perl5.24.0" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:74464db97a2f138849ed8b32d975f290cbc42410a2d2414c245cbf3ce1be16a2`  
-		Last Modified: Tue, 31 May 2016 22:47:12 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:81c9865d31f1fb73f65bd99124a3214d813456dab3227fef2f7b7419082a97ca`  
+		Last Modified: Mon, 01 Aug 2016 20:39:18 GMT  
 		Size: 395.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:486fdf489d94faad66c119696ddd34eb7e74211d42a9294a6506835a1fe00d80`  
-		Last Modified: Tue, 31 May 2016 22:51:05 GMT  
-		Size: 12.7 MB (12742923 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:88e2286edecb25cddc71bcc402b48032a05abfaaffa897190908bd012c8a4a79`  
+		Last Modified: Mon, 01 Aug 2016 20:48:23 GMT  
+		Size: 12.7 MB (12742766 bytes)
 
 ## `perl:5.24.0-threaded`
 
 ```console
-$ docker pull perl@sha256:38cca110a3d6a3a79b6d71d5e7842f6b959d1adc268f7bb8af1bbb3b3bc0cae0
+$ docker pull perl@sha256:8092e1a3c31b47e4d279d5bee5f45a815f82c0c2fd08fdbd063ef5313e405cc2
 ```
 
 -	Platforms:
@@ -818,87 +683,72 @@ $ docker pull perl@sha256:38cca110a3d6a3a79b6d71d5e7842f6b959d1adc268f7bb8af1bbb
 
 ### `perl:5.24.0-threaded` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.8 MB (254788294 bytes)**  
+-	Total Size: **254.8 MB (254823960 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab23552aebc12eb7e3995b4c04e8ecfb69261b717479c0dff8a45677c5f94982`
+-	Image ID: `sha256:76abbb2daebc9f053d3e36f19232d6994529b5631bc9780a3242391852ea2b78`
 -	Default Command: `["perl5.24.0","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:37:36 GMT
-COPY file:3d5f6c4b851f2e2d52297dc0a80efe73ed78c301d289d0db6f30b4b73dc85c73 in /usr/src/perl/
-# Tue, 24 May 2016 19:37:37 GMT
+# Mon, 01 Aug 2016 20:31:39 GMT
+COPY file:21749e9b9dd48119d6468e64e9fc7ba979cd3bac662c7c9978b4a6d3262fa809 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:31:40 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 20:02:33 GMT
+# Mon, 01 Aug 2016 20:48:08 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.24.0.tar.bz2 -o perl-5.24.0.tar.bz2     && echo '298fa605138c1a00dab95643130ae0edab369b4d *perl-5.24.0.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.24.0.tar.bz2 -C /usr/src/perl     && rm perl-5.24.0.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Dusethreads -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 20:02:34 GMT
+# Mon, 01 Aug 2016 20:48:09 GMT
 WORKDIR /root
-# Tue, 24 May 2016 20:02:35 GMT
+# Mon, 01 Aug 2016 20:48:09 GMT
 CMD ["perl5.24.0" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:74464db97a2f138849ed8b32d975f290cbc42410a2d2414c245cbf3ce1be16a2`  
-		Last Modified: Tue, 31 May 2016 22:47:12 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:81c9865d31f1fb73f65bd99124a3214d813456dab3227fef2f7b7419082a97ca`  
+		Last Modified: Mon, 01 Aug 2016 20:39:18 GMT  
 		Size: 395.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:486fdf489d94faad66c119696ddd34eb7e74211d42a9294a6506835a1fe00d80`  
-		Last Modified: Tue, 31 May 2016 22:51:05 GMT  
-		Size: 12.7 MB (12742923 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:88e2286edecb25cddc71bcc402b48032a05abfaaffa897190908bd012c8a4a79`  
+		Last Modified: Mon, 01 Aug 2016 20:48:23 GMT  
+		Size: 12.7 MB (12742766 bytes)
 
 ## `perl:5.22-threaded`
 
 ```console
-$ docker pull perl@sha256:f603ddda94f8882cc7c8326f957e9f367bf802a1b98e93eb612a55880d2cc78e
+$ docker pull perl@sha256:f03ef3cbab3a7bde9a143760ffeaa344cb9b2f62b87d349de0fa5f47d396a739
 ```
 
 -	Platforms:
@@ -906,87 +756,72 @@ $ docker pull perl@sha256:f603ddda94f8882cc7c8326f957e9f367bf802a1b98e93eb612a55
 
 ### `perl:5.22-threaded` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.6 MB (254551306 bytes)**  
+-	Total Size: **254.6 MB (254587675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9e652f5471a0c2f16fca977421d8c9df3c5f841431afb76348db00201031a37`
+-	Image ID: `sha256:f487f83b941f28234aa1906573b4bf0f7a551d54699a6998f442cdf346de9d06`
 -	Default Command: `["perl5.22.2","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:46:34 GMT
-COPY file:8a0914adf7de088db97cf10c23a8a15234a1ab9729883cf931ebd70a0f0c0ea2 in /usr/src/perl/
-# Tue, 24 May 2016 19:46:34 GMT
+# Mon, 01 Aug 2016 20:15:34 GMT
+COPY file:3350578ae238d520a6b8fc3a800a5f5df942499a0f8fda6c82b5ba594f4fc068 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:15:35 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 20:12:03 GMT
+# Mon, 01 Aug 2016 20:31:06 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.2.tar.bz2 -o perl-5.22.2.tar.bz2     && echo 'e2f465446dcd45a7fa3da696037f9ebe73e78e55 *perl-5.22.2.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.22.2.tar.bz2 -C /usr/src/perl     && rm perl-5.22.2.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Dusethreads -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 20:12:04 GMT
+# Mon, 01 Aug 2016 20:31:07 GMT
 WORKDIR /root
-# Tue, 24 May 2016 20:12:05 GMT
+# Mon, 01 Aug 2016 20:31:07 GMT
 CMD ["perl5.22.2" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:04d75dad9facf03c0b18fe896352155588284a88b4a40e24d840e04efb857fa8`  
-		Last Modified: Tue, 31 May 2016 22:50:30 GMT  
-		Size: 398.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:786d03a40a42657f0a06aa5fd36498a7a4f1a5d8873e913919581ae74447d513`  
-		Last Modified: Tue, 31 May 2016 22:52:03 GMT  
-		Size: 12.5 MB (12505932 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:55ac5e1230ab0393db07ff47e87ded9c881d8df30eb24e205d493af4b84f3787`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 396.0 B
+	-	`sha256:5f12792598a987eb75b5e75aae6763487fa81b0ff17c710332b0a141996a6e16`  
+		Last Modified: Mon, 01 Aug 2016 20:31:21 GMT  
+		Size: 12.5 MB (12506480 bytes)
 
 ## `perl:5.22.2-threaded`
 
 ```console
-$ docker pull perl@sha256:f603ddda94f8882cc7c8326f957e9f367bf802a1b98e93eb612a55880d2cc78e
+$ docker pull perl@sha256:f03ef3cbab3a7bde9a143760ffeaa344cb9b2f62b87d349de0fa5f47d396a739
 ```
 
 -	Platforms:
@@ -994,79 +829,64 @@ $ docker pull perl@sha256:f603ddda94f8882cc7c8326f957e9f367bf802a1b98e93eb612a55
 
 ### `perl:5.22.2-threaded` - linux; amd64
 
--	Docker Version: 1.9.1
+-	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.6 MB (254551306 bytes)**  
+-	Total Size: **254.6 MB (254587675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9e652f5471a0c2f16fca977421d8c9df3c5f841431afb76348db00201031a37`
+-	Image ID: `sha256:f487f83b941f28234aa1906573b4bf0f7a551d54699a6998f442cdf346de9d06`
 -	Default Command: `["perl5.22.2","-de0"]`
 
 ```dockerfile
-# Mon, 23 May 2016 22:57:20 GMT
-ADD file:5d8521419ad6cfb6956ed26ab70a44422d512f82462046ba8e68b7dcb8283f7e in /
-# Mon, 23 May 2016 22:57:23 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Mon, 23 May 2016 23:00:26 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:01:29 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 23 May 2016 23:03:05 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:10 GMT
+# Mon, 01 Aug 2016 20:14:54 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 24 May 2016 19:37:34 GMT
+# Mon, 01 Aug 2016 20:15:31 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 24 May 2016 19:37:35 GMT
+# Mon, 01 Aug 2016 20:15:33 GMT
 RUN mkdir /usr/src/perl
-# Tue, 24 May 2016 19:46:34 GMT
-COPY file:8a0914adf7de088db97cf10c23a8a15234a1ab9729883cf931ebd70a0f0c0ea2 in /usr/src/perl/
-# Tue, 24 May 2016 19:46:34 GMT
+# Mon, 01 Aug 2016 20:15:34 GMT
+COPY file:3350578ae238d520a6b8fc3a800a5f5df942499a0f8fda6c82b5ba594f4fc068 in /usr/src/perl/
+# Mon, 01 Aug 2016 20:15:35 GMT
 WORKDIR /usr/src/perl
-# Tue, 24 May 2016 20:12:03 GMT
+# Mon, 01 Aug 2016 20:31:06 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.2.tar.bz2 -o perl-5.22.2.tar.bz2     && echo 'e2f465446dcd45a7fa3da696037f9ebe73e78e55 *perl-5.22.2.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.22.2.tar.bz2 -C /usr/src/perl     && rm perl-5.22.2.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Dusethreads -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 24 May 2016 20:12:04 GMT
+# Mon, 01 Aug 2016 20:31:07 GMT
 WORKDIR /root
-# Tue, 24 May 2016 20:12:05 GMT
+# Mon, 01 Aug 2016 20:31:07 GMT
 CMD ["perl5.22.2" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:51f5c6a04d83efd2d45c5fd59537218924bc46705e3de6ffc8bc07b51481610b`  
-		Last Modified: Mon, 23 May 2016 23:09:48 GMT  
-		Size: 51.4 MB (51356334 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:7004cfc6e122f4db6c1d62a0658c2189afedc8a53e2c794c9c4ec464f7a142ea`  
-		Last Modified: Mon, 23 May 2016 23:14:09 GMT  
-		Size: 18.5 MB (18532084 bytes)
-	-	`sha256:5f37c8a7cfbdd6951c0fd36e662a41cbe7d0cd90338d8c6deae347edf8e777a8`  
-		Last Modified: Mon, 23 May 2016 23:14:53 GMT  
-		Size: 42.5 MB (42492777 bytes)
-	-	`sha256:8ad7684cace483c28058074ae28af19ab38690dda1b70f919ae77edf8ce6a28e`  
-		Last Modified: Mon, 23 May 2016 23:15:41 GMT  
-		Size: 129.7 MB (129663323 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:3e217fc28b02737b4f33dd66ce05dc4767466e2312a04bf885cc67aab91d354a`  
-		Last Modified: Tue, 31 May 2016 22:47:20 GMT  
-		Size: 168.0 B
-	-	`sha256:0b4b4e7b9e1ff81e9e67b2e06e0f255ee67114a155e046a887f82260390bc871`  
-		Last Modified: Tue, 31 May 2016 22:47:16 GMT  
-		Size: 130.0 B
-	-	`sha256:04d75dad9facf03c0b18fe896352155588284a88b4a40e24d840e04efb857fa8`  
-		Last Modified: Tue, 31 May 2016 22:50:30 GMT  
-		Size: 398.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:786d03a40a42657f0a06aa5fd36498a7a4f1a5d8873e913919581ae74447d513`  
-		Last Modified: Tue, 31 May 2016 22:52:03 GMT  
-		Size: 12.5 MB (12505932 bytes)
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2da62e3bb8c2f658d6f72e7bbfec588cf0165388ed386e0e1d7e730e04fe37ee`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 166.0 B
+	-	`sha256:a5d7b3625db26fc246cf9271b1060fce283da1ae0606588c2088d3317fb6a408`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 127.0 B
+	-	`sha256:55ac5e1230ab0393db07ff47e87ded9c881d8df30eb24e205d493af4b84f3787`  
+		Last Modified: Mon, 01 Aug 2016 20:22:52 GMT  
+		Size: 396.0 B
+	-	`sha256:5f12792598a987eb75b5e75aae6763487fa81b0ff17c710332b0a141996a6e16`  
+		Last Modified: Mon, 01 Aug 2016 20:31:21 GMT  
+		Size: 12.5 MB (12506480 bytes)
