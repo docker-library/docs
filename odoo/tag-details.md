@@ -11,7 +11,7 @@
 ## `odoo:8.0`
 
 ```console
-$ docker pull odoo@sha256:0749ed43abde86c4c2d96eaf0178c8d0150992133601ed4d9733003e076d7c00
+$ docker pull odoo@sha256:f3371983202bf62d74287fe0cd30a3153a25cbb5cca44a9018f3e9605be5cb18
 ```
 
 -	Platforms:
@@ -21,76 +21,76 @@ $ docker pull odoo@sha256:0749ed43abde86c4c2d96eaf0178c8d0150992133601ed4d973300
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.8 MB (265815404 bytes)**  
+-	Total Size: **266.1 MB (266070414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b64bdf12f2e86294a0a4e42421f6c2ddaaa156946c1237a703e9088d6e6d77d6`
+-	Image ID: `sha256:36f6d3b121b4cffcffa62ecb4fff940fac0808b3f991db1f2dd16825b4549a5c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["openerp-server"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 22:26:52 GMT
+# Mon, 01 Aug 2016 19:56:14 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Thu, 09 Jun 2016 22:29:07 GMT
+# Mon, 01 Aug 2016 19:58:29 GMT
 RUN set -x;         apt-get update         && apt-get install -y --no-install-recommends             ca-certificates             curl             node-less             node-clean-css             python-pyinotify             python-renderpm             python-support         && curl -o wkhtmltox.deb -SL http://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb         && echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 wkhtmltox.deb' | sha1sum -c -         && dpkg --force-depends -i wkhtmltox.deb         && apt-get -y install -f --no-install-recommends         && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm         && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
-# Thu, 09 Jun 2016 22:29:07 GMT
+# Mon, 01 Aug 2016 19:58:30 GMT
 ENV ODOO_VERSION=8.0
-# Thu, 09 Jun 2016 22:29:08 GMT
-ENV ODOO_RELEASE=20160609
-# Thu, 09 Jun 2016 22:31:58 GMT
-RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb         && echo 'd112d8f2c2f89fe9996d4142a22d58fc8fe79d63 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
-# Thu, 09 Jun 2016 22:31:59 GMT
+# Mon, 01 Aug 2016 19:58:30 GMT
+ENV ODOO_RELEASE=20160726
+# Mon, 01 Aug 2016 20:01:03 GMT
+RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb         && echo '6679fad48c761cf8587faa243afcfc17f5a9eb73 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
+# Mon, 01 Aug 2016 20:01:06 GMT
 COPY file:156abbd9c6016388d9d2e1584d9e9c49a4085dba32d97d1ed88fee992bb89e61 in /
-# Thu, 09 Jun 2016 22:32:00 GMT
+# Mon, 01 Aug 2016 20:01:07 GMT
 COPY file:1172e26dac1f2b6dd4d3b3ae484c69b33109695606154cdb13dcfa032d798e88 in /etc/odoo/
-# Thu, 09 Jun 2016 22:32:01 GMT
+# Mon, 01 Aug 2016 20:01:10 GMT
 RUN chown odoo /etc/odoo/openerp-server.conf
-# Thu, 09 Jun 2016 22:32:02 GMT
+# Mon, 01 Aug 2016 20:01:15 GMT
 RUN mkdir -p /mnt/extra-addons         && chown -R odoo /mnt/extra-addons
-# Thu, 09 Jun 2016 22:32:02 GMT
+# Mon, 01 Aug 2016 20:01:16 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Thu, 09 Jun 2016 22:32:03 GMT
+# Mon, 01 Aug 2016 20:01:17 GMT
 EXPOSE 8069/tcp 8071/tcp
-# Thu, 09 Jun 2016 22:32:03 GMT
+# Mon, 01 Aug 2016 20:01:17 GMT
 ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
-# Thu, 09 Jun 2016 22:32:04 GMT
+# Mon, 01 Aug 2016 20:01:18 GMT
 USER [odoo]
-# Thu, 09 Jun 2016 22:32:04 GMT
+# Mon, 01 Aug 2016 20:01:19 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 09 Jun 2016 22:32:04 GMT
+# Mon, 01 Aug 2016 20:01:20 GMT
 CMD ["openerp-server"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:37eada17c7dfce85f355ae5d9f784f150dde3370da14241b739441a48237a5fb`  
-		Last Modified: Thu, 09 Jun 2016 22:35:50 GMT  
-		Size: 83.8 MB (83789881 bytes)
-	-	`sha256:d101a2e278fe096e8d015d6b5fec8a6cbcf7673bac581b88471df813fb068cb9`  
-		Last Modified: Thu, 09 Jun 2016 22:36:02 GMT  
-		Size: 130.7 MB (130671345 bytes)
-	-	`sha256:ef2b992cd8320279934c0f570fb2ca3e766311ed7c12c6ff22ce34070f440e78`  
-		Last Modified: Thu, 09 Jun 2016 22:35:22 GMT  
-		Size: 342.0 B
-	-	`sha256:2fc09f803eb7ff621bade38d9a04d8d12f9df7348a08ecba737a5f2ade5a7224`  
-		Last Modified: Thu, 09 Jun 2016 22:35:22 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:59210089e05763d3e2d318fce03f00d2cf6e408d9a277ad96bff93985579041a`  
+		Last Modified: Mon, 01 Aug 2016 20:01:57 GMT  
+		Size: 83.8 MB (83758751 bytes)
+	-	`sha256:24b95c0b07d90ff1f327c3be4ba3a26032128eb32bc7d0823e67ca94f8e2d662`  
+		Last Modified: Mon, 01 Aug 2016 20:02:09 GMT  
+		Size: 130.9 MB (130944403 bytes)
+	-	`sha256:97035019514e539582442e72ae4a16d766bd5e5bb8506b2134774ddeff2cde91`  
+		Last Modified: Mon, 01 Aug 2016 20:01:30 GMT  
+		Size: 345.0 B
+	-	`sha256:4d7cf1a4cc3b5dbbb653134f609fdd8fccdef34adf9104190849b641f4b6d12a`  
+		Last Modified: Mon, 01 Aug 2016 20:01:29 GMT  
 		Size: 588.0 B
-	-	`sha256:fad19482d571d920de41afb6c0448079435a4d739cecc3c1087fafd3c95c7958`  
-		Last Modified: Thu, 09 Jun 2016 22:35:23 GMT  
-		Size: 589.0 B
-	-	`sha256:3b854b3379b0066a9a624e6dd9e5a4344d23af20a57ae7fe0f852800463c829d`  
-		Last Modified: Thu, 09 Jun 2016 22:35:22 GMT  
+	-	`sha256:e238f100332be45b0dc54eab705d9e8632af18fbde4561c64ae2f86628ed9ee3`  
+		Last Modified: Mon, 01 Aug 2016 20:01:29 GMT  
+		Size: 592.0 B
+	-	`sha256:602249924d2bcaa133bc7f2c6f54d7acc0185c8feebae647811552d44638b756`  
+		Last Modified: Mon, 01 Aug 2016 20:01:30 GMT  
 		Size: 124.0 B
 
 ## `odoo:8`
 
 ```console
-$ docker pull odoo@sha256:0749ed43abde86c4c2d96eaf0178c8d0150992133601ed4d9733003e076d7c00
+$ docker pull odoo@sha256:f3371983202bf62d74287fe0cd30a3153a25cbb5cca44a9018f3e9605be5cb18
 ```
 
 -	Platforms:
@@ -100,76 +100,76 @@ $ docker pull odoo@sha256:0749ed43abde86c4c2d96eaf0178c8d0150992133601ed4d973300
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.8 MB (265815404 bytes)**  
+-	Total Size: **266.1 MB (266070414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b64bdf12f2e86294a0a4e42421f6c2ddaaa156946c1237a703e9088d6e6d77d6`
+-	Image ID: `sha256:36f6d3b121b4cffcffa62ecb4fff940fac0808b3f991db1f2dd16825b4549a5c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["openerp-server"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 22:26:52 GMT
+# Mon, 01 Aug 2016 19:56:14 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Thu, 09 Jun 2016 22:29:07 GMT
+# Mon, 01 Aug 2016 19:58:29 GMT
 RUN set -x;         apt-get update         && apt-get install -y --no-install-recommends             ca-certificates             curl             node-less             node-clean-css             python-pyinotify             python-renderpm             python-support         && curl -o wkhtmltox.deb -SL http://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb         && echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 wkhtmltox.deb' | sha1sum -c -         && dpkg --force-depends -i wkhtmltox.deb         && apt-get -y install -f --no-install-recommends         && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm         && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
-# Thu, 09 Jun 2016 22:29:07 GMT
+# Mon, 01 Aug 2016 19:58:30 GMT
 ENV ODOO_VERSION=8.0
-# Thu, 09 Jun 2016 22:29:08 GMT
-ENV ODOO_RELEASE=20160609
-# Thu, 09 Jun 2016 22:31:58 GMT
-RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb         && echo 'd112d8f2c2f89fe9996d4142a22d58fc8fe79d63 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
-# Thu, 09 Jun 2016 22:31:59 GMT
+# Mon, 01 Aug 2016 19:58:30 GMT
+ENV ODOO_RELEASE=20160726
+# Mon, 01 Aug 2016 20:01:03 GMT
+RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb         && echo '6679fad48c761cf8587faa243afcfc17f5a9eb73 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
+# Mon, 01 Aug 2016 20:01:06 GMT
 COPY file:156abbd9c6016388d9d2e1584d9e9c49a4085dba32d97d1ed88fee992bb89e61 in /
-# Thu, 09 Jun 2016 22:32:00 GMT
+# Mon, 01 Aug 2016 20:01:07 GMT
 COPY file:1172e26dac1f2b6dd4d3b3ae484c69b33109695606154cdb13dcfa032d798e88 in /etc/odoo/
-# Thu, 09 Jun 2016 22:32:01 GMT
+# Mon, 01 Aug 2016 20:01:10 GMT
 RUN chown odoo /etc/odoo/openerp-server.conf
-# Thu, 09 Jun 2016 22:32:02 GMT
+# Mon, 01 Aug 2016 20:01:15 GMT
 RUN mkdir -p /mnt/extra-addons         && chown -R odoo /mnt/extra-addons
-# Thu, 09 Jun 2016 22:32:02 GMT
+# Mon, 01 Aug 2016 20:01:16 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Thu, 09 Jun 2016 22:32:03 GMT
+# Mon, 01 Aug 2016 20:01:17 GMT
 EXPOSE 8069/tcp 8071/tcp
-# Thu, 09 Jun 2016 22:32:03 GMT
+# Mon, 01 Aug 2016 20:01:17 GMT
 ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
-# Thu, 09 Jun 2016 22:32:04 GMT
+# Mon, 01 Aug 2016 20:01:18 GMT
 USER [odoo]
-# Thu, 09 Jun 2016 22:32:04 GMT
+# Mon, 01 Aug 2016 20:01:19 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 09 Jun 2016 22:32:04 GMT
+# Mon, 01 Aug 2016 20:01:20 GMT
 CMD ["openerp-server"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:37eada17c7dfce85f355ae5d9f784f150dde3370da14241b739441a48237a5fb`  
-		Last Modified: Thu, 09 Jun 2016 22:35:50 GMT  
-		Size: 83.8 MB (83789881 bytes)
-	-	`sha256:d101a2e278fe096e8d015d6b5fec8a6cbcf7673bac581b88471df813fb068cb9`  
-		Last Modified: Thu, 09 Jun 2016 22:36:02 GMT  
-		Size: 130.7 MB (130671345 bytes)
-	-	`sha256:ef2b992cd8320279934c0f570fb2ca3e766311ed7c12c6ff22ce34070f440e78`  
-		Last Modified: Thu, 09 Jun 2016 22:35:22 GMT  
-		Size: 342.0 B
-	-	`sha256:2fc09f803eb7ff621bade38d9a04d8d12f9df7348a08ecba737a5f2ade5a7224`  
-		Last Modified: Thu, 09 Jun 2016 22:35:22 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:59210089e05763d3e2d318fce03f00d2cf6e408d9a277ad96bff93985579041a`  
+		Last Modified: Mon, 01 Aug 2016 20:01:57 GMT  
+		Size: 83.8 MB (83758751 bytes)
+	-	`sha256:24b95c0b07d90ff1f327c3be4ba3a26032128eb32bc7d0823e67ca94f8e2d662`  
+		Last Modified: Mon, 01 Aug 2016 20:02:09 GMT  
+		Size: 130.9 MB (130944403 bytes)
+	-	`sha256:97035019514e539582442e72ae4a16d766bd5e5bb8506b2134774ddeff2cde91`  
+		Last Modified: Mon, 01 Aug 2016 20:01:30 GMT  
+		Size: 345.0 B
+	-	`sha256:4d7cf1a4cc3b5dbbb653134f609fdd8fccdef34adf9104190849b641f4b6d12a`  
+		Last Modified: Mon, 01 Aug 2016 20:01:29 GMT  
 		Size: 588.0 B
-	-	`sha256:fad19482d571d920de41afb6c0448079435a4d739cecc3c1087fafd3c95c7958`  
-		Last Modified: Thu, 09 Jun 2016 22:35:23 GMT  
-		Size: 589.0 B
-	-	`sha256:3b854b3379b0066a9a624e6dd9e5a4344d23af20a57ae7fe0f852800463c829d`  
-		Last Modified: Thu, 09 Jun 2016 22:35:22 GMT  
+	-	`sha256:e238f100332be45b0dc54eab705d9e8632af18fbde4561c64ae2f86628ed9ee3`  
+		Last Modified: Mon, 01 Aug 2016 20:01:29 GMT  
+		Size: 592.0 B
+	-	`sha256:602249924d2bcaa133bc7f2c6f54d7acc0185c8feebae647811552d44638b756`  
+		Last Modified: Mon, 01 Aug 2016 20:01:30 GMT  
 		Size: 124.0 B
 
 ## `odoo:9.0`
 
 ```console
-$ docker pull odoo@sha256:d735ea41d479061cac62fb54bb277bdc5459a123650f565def48675a61c9d7e4
+$ docker pull odoo@sha256:2886ffdea7cb80682d83e6688ac2545c04ad1aa6432db9751af3e7a823e836ed
 ```
 
 -	Platforms:
@@ -179,76 +179,76 @@ $ docker pull odoo@sha256:d735ea41d479061cac62fb54bb277bdc5459a123650f565def4867
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.2 MB (272231281 bytes)**  
+-	Total Size: **272.9 MB (272866869 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:150aa7d1c789cdcd430dab45b2b66e473071224a09c9e0e8fc405e6063e019ff`
+-	Image ID: `sha256:2765898f2e476a2ffac9e59851823c7fe50bc79d675f676a1405089c8237585d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["openerp-server"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 22:26:52 GMT
+# Mon, 01 Aug 2016 19:56:14 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Thu, 09 Jun 2016 22:29:07 GMT
+# Mon, 01 Aug 2016 19:58:29 GMT
 RUN set -x;         apt-get update         && apt-get install -y --no-install-recommends             ca-certificates             curl             node-less             node-clean-css             python-pyinotify             python-renderpm             python-support         && curl -o wkhtmltox.deb -SL http://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb         && echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 wkhtmltox.deb' | sha1sum -c -         && dpkg --force-depends -i wkhtmltox.deb         && apt-get -y install -f --no-install-recommends         && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm         && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
-# Thu, 09 Jun 2016 22:32:05 GMT
+# Mon, 01 Aug 2016 20:02:28 GMT
 ENV ODOO_VERSION=9.0
-# Thu, 09 Jun 2016 22:32:05 GMT
-ENV ODOO_RELEASE=20160609
-# Thu, 09 Jun 2016 22:35:11 GMT
-RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}c.${ODOO_RELEASE}_all.deb         && echo '56e7e5dc2525fd8c1522c05deb0f7f349a966260 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
-# Thu, 09 Jun 2016 22:35:13 GMT
+# Mon, 01 Aug 2016 20:02:29 GMT
+ENV ODOO_RELEASE=20160726
+# Mon, 01 Aug 2016 20:05:03 GMT
+RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}c.${ODOO_RELEASE}_all.deb         && echo 'cbd0cbaed27da28eaae1c6460f36d398c8acbf77 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
+# Mon, 01 Aug 2016 20:05:05 GMT
 COPY file:156abbd9c6016388d9d2e1584d9e9c49a4085dba32d97d1ed88fee992bb89e61 in /
-# Thu, 09 Jun 2016 22:35:13 GMT
+# Mon, 01 Aug 2016 20:05:06 GMT
 COPY file:1172e26dac1f2b6dd4d3b3ae484c69b33109695606154cdb13dcfa032d798e88 in /etc/odoo/
-# Thu, 09 Jun 2016 22:35:14 GMT
+# Mon, 01 Aug 2016 20:05:08 GMT
 RUN chown odoo /etc/odoo/openerp-server.conf
-# Thu, 09 Jun 2016 22:35:16 GMT
+# Mon, 01 Aug 2016 20:05:10 GMT
 RUN mkdir -p /mnt/extra-addons         && chown -R odoo /mnt/extra-addons
-# Thu, 09 Jun 2016 22:35:16 GMT
+# Mon, 01 Aug 2016 20:05:11 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Thu, 09 Jun 2016 22:35:16 GMT
+# Mon, 01 Aug 2016 20:05:12 GMT
 EXPOSE 8069/tcp 8071/tcp
-# Thu, 09 Jun 2016 22:35:17 GMT
+# Mon, 01 Aug 2016 20:05:14 GMT
 ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
-# Thu, 09 Jun 2016 22:35:17 GMT
+# Mon, 01 Aug 2016 20:05:16 GMT
 USER [odoo]
-# Thu, 09 Jun 2016 22:35:17 GMT
+# Mon, 01 Aug 2016 20:05:16 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 09 Jun 2016 22:35:18 GMT
+# Mon, 01 Aug 2016 20:05:17 GMT
 CMD ["openerp-server"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:37eada17c7dfce85f355ae5d9f784f150dde3370da14241b739441a48237a5fb`  
-		Last Modified: Thu, 09 Jun 2016 22:35:50 GMT  
-		Size: 83.8 MB (83789881 bytes)
-	-	`sha256:9314615c2805a212fc22517e05159380c35e729d1d2d4175624f029f4b62e316`  
-		Last Modified: Thu, 09 Jun 2016 22:36:53 GMT  
-		Size: 137.1 MB (137087220 bytes)
-	-	`sha256:f153af85a6151b01acec12a4af91ff4e23bccd6aed9ab0fc00fac108d8237a9f`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:59210089e05763d3e2d318fce03f00d2cf6e408d9a277ad96bff93985579041a`  
+		Last Modified: Mon, 01 Aug 2016 20:01:57 GMT  
+		Size: 83.8 MB (83758751 bytes)
+	-	`sha256:55c6ab9ddca9acb1ae3c05eb0df3838c786fcce84f86d900db1e1a9d95581ebc`  
+		Last Modified: Mon, 01 Aug 2016 20:06:01 GMT  
+		Size: 137.7 MB (137740862 bytes)
+	-	`sha256:0ff4ee116ff2e36b0d17a1ba097cdff8dfdf93b2b32c998283aec9409a469f1b`  
+		Last Modified: Mon, 01 Aug 2016 20:05:27 GMT  
 		Size: 344.0 B
-	-	`sha256:6090c3204ab72497caeade8d7b901d9aec7c7cad555a0cc2023571c47fc2937e`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
-		Size: 587.0 B
-	-	`sha256:0be67daafdf2fd99ad4db03a243c413a0090c0391dbff7aafd10c3dcf6fc5592`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
+	-	`sha256:b0e835ad7b97693cd98dfa4a95451e1b593f90a9d08c6c87c192f426432bc505`  
+		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
+		Size: 588.0 B
+	-	`sha256:3cbd8091436be0c8e5c409f1afaa42e32de4f42b1e7cf8ef4481eb26f329b494`  
+		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
 		Size: 590.0 B
-	-	`sha256:71449695c56cf18244bd736883358eda9f0a369009c3f460898f6d81a0d7ac2e`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
-		Size: 124.0 B
+	-	`sha256:f943eb8cd383e18c2e3de2bab17f41b05bcc66319f468e152bd478faa9f814c4`  
+		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
+		Size: 123.0 B
 
 ## `odoo:9`
 
 ```console
-$ docker pull odoo@sha256:d735ea41d479061cac62fb54bb277bdc5459a123650f565def48675a61c9d7e4
+$ docker pull odoo@sha256:2886ffdea7cb80682d83e6688ac2545c04ad1aa6432db9751af3e7a823e836ed
 ```
 
 -	Platforms:
@@ -258,76 +258,76 @@ $ docker pull odoo@sha256:d735ea41d479061cac62fb54bb277bdc5459a123650f565def4867
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.2 MB (272231281 bytes)**  
+-	Total Size: **272.9 MB (272866869 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:150aa7d1c789cdcd430dab45b2b66e473071224a09c9e0e8fc405e6063e019ff`
+-	Image ID: `sha256:2765898f2e476a2ffac9e59851823c7fe50bc79d675f676a1405089c8237585d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["openerp-server"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 22:26:52 GMT
+# Mon, 01 Aug 2016 19:56:14 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Thu, 09 Jun 2016 22:29:07 GMT
+# Mon, 01 Aug 2016 19:58:29 GMT
 RUN set -x;         apt-get update         && apt-get install -y --no-install-recommends             ca-certificates             curl             node-less             node-clean-css             python-pyinotify             python-renderpm             python-support         && curl -o wkhtmltox.deb -SL http://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb         && echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 wkhtmltox.deb' | sha1sum -c -         && dpkg --force-depends -i wkhtmltox.deb         && apt-get -y install -f --no-install-recommends         && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm         && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
-# Thu, 09 Jun 2016 22:32:05 GMT
+# Mon, 01 Aug 2016 20:02:28 GMT
 ENV ODOO_VERSION=9.0
-# Thu, 09 Jun 2016 22:32:05 GMT
-ENV ODOO_RELEASE=20160609
-# Thu, 09 Jun 2016 22:35:11 GMT
-RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}c.${ODOO_RELEASE}_all.deb         && echo '56e7e5dc2525fd8c1522c05deb0f7f349a966260 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
-# Thu, 09 Jun 2016 22:35:13 GMT
+# Mon, 01 Aug 2016 20:02:29 GMT
+ENV ODOO_RELEASE=20160726
+# Mon, 01 Aug 2016 20:05:03 GMT
+RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}c.${ODOO_RELEASE}_all.deb         && echo 'cbd0cbaed27da28eaae1c6460f36d398c8acbf77 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
+# Mon, 01 Aug 2016 20:05:05 GMT
 COPY file:156abbd9c6016388d9d2e1584d9e9c49a4085dba32d97d1ed88fee992bb89e61 in /
-# Thu, 09 Jun 2016 22:35:13 GMT
+# Mon, 01 Aug 2016 20:05:06 GMT
 COPY file:1172e26dac1f2b6dd4d3b3ae484c69b33109695606154cdb13dcfa032d798e88 in /etc/odoo/
-# Thu, 09 Jun 2016 22:35:14 GMT
+# Mon, 01 Aug 2016 20:05:08 GMT
 RUN chown odoo /etc/odoo/openerp-server.conf
-# Thu, 09 Jun 2016 22:35:16 GMT
+# Mon, 01 Aug 2016 20:05:10 GMT
 RUN mkdir -p /mnt/extra-addons         && chown -R odoo /mnt/extra-addons
-# Thu, 09 Jun 2016 22:35:16 GMT
+# Mon, 01 Aug 2016 20:05:11 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Thu, 09 Jun 2016 22:35:16 GMT
+# Mon, 01 Aug 2016 20:05:12 GMT
 EXPOSE 8069/tcp 8071/tcp
-# Thu, 09 Jun 2016 22:35:17 GMT
+# Mon, 01 Aug 2016 20:05:14 GMT
 ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
-# Thu, 09 Jun 2016 22:35:17 GMT
+# Mon, 01 Aug 2016 20:05:16 GMT
 USER [odoo]
-# Thu, 09 Jun 2016 22:35:17 GMT
+# Mon, 01 Aug 2016 20:05:16 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 09 Jun 2016 22:35:18 GMT
+# Mon, 01 Aug 2016 20:05:17 GMT
 CMD ["openerp-server"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:37eada17c7dfce85f355ae5d9f784f150dde3370da14241b739441a48237a5fb`  
-		Last Modified: Thu, 09 Jun 2016 22:35:50 GMT  
-		Size: 83.8 MB (83789881 bytes)
-	-	`sha256:9314615c2805a212fc22517e05159380c35e729d1d2d4175624f029f4b62e316`  
-		Last Modified: Thu, 09 Jun 2016 22:36:53 GMT  
-		Size: 137.1 MB (137087220 bytes)
-	-	`sha256:f153af85a6151b01acec12a4af91ff4e23bccd6aed9ab0fc00fac108d8237a9f`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:59210089e05763d3e2d318fce03f00d2cf6e408d9a277ad96bff93985579041a`  
+		Last Modified: Mon, 01 Aug 2016 20:01:57 GMT  
+		Size: 83.8 MB (83758751 bytes)
+	-	`sha256:55c6ab9ddca9acb1ae3c05eb0df3838c786fcce84f86d900db1e1a9d95581ebc`  
+		Last Modified: Mon, 01 Aug 2016 20:06:01 GMT  
+		Size: 137.7 MB (137740862 bytes)
+	-	`sha256:0ff4ee116ff2e36b0d17a1ba097cdff8dfdf93b2b32c998283aec9409a469f1b`  
+		Last Modified: Mon, 01 Aug 2016 20:05:27 GMT  
 		Size: 344.0 B
-	-	`sha256:6090c3204ab72497caeade8d7b901d9aec7c7cad555a0cc2023571c47fc2937e`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
-		Size: 587.0 B
-	-	`sha256:0be67daafdf2fd99ad4db03a243c413a0090c0391dbff7aafd10c3dcf6fc5592`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
+	-	`sha256:b0e835ad7b97693cd98dfa4a95451e1b593f90a9d08c6c87c192f426432bc505`  
+		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
+		Size: 588.0 B
+	-	`sha256:3cbd8091436be0c8e5c409f1afaa42e32de4f42b1e7cf8ef4481eb26f329b494`  
+		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
 		Size: 590.0 B
-	-	`sha256:71449695c56cf18244bd736883358eda9f0a369009c3f460898f6d81a0d7ac2e`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
-		Size: 124.0 B
+	-	`sha256:f943eb8cd383e18c2e3de2bab17f41b05bcc66319f468e152bd478faa9f814c4`  
+		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
+		Size: 123.0 B
 
 ## `odoo:latest`
 
 ```console
-$ docker pull odoo@sha256:d735ea41d479061cac62fb54bb277bdc5459a123650f565def48675a61c9d7e4
+$ docker pull odoo@sha256:2886ffdea7cb80682d83e6688ac2545c04ad1aa6432db9751af3e7a823e836ed
 ```
 
 -	Platforms:
@@ -337,68 +337,68 @@ $ docker pull odoo@sha256:d735ea41d479061cac62fb54bb277bdc5459a123650f565def4867
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.2 MB (272231281 bytes)**  
+-	Total Size: **272.9 MB (272866869 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:150aa7d1c789cdcd430dab45b2b66e473071224a09c9e0e8fc405e6063e019ff`
+-	Image ID: `sha256:2765898f2e476a2ffac9e59851823c7fe50bc79d675f676a1405089c8237585d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["openerp-server"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 22:26:52 GMT
+# Mon, 01 Aug 2016 19:56:14 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Thu, 09 Jun 2016 22:29:07 GMT
+# Mon, 01 Aug 2016 19:58:29 GMT
 RUN set -x;         apt-get update         && apt-get install -y --no-install-recommends             ca-certificates             curl             node-less             node-clean-css             python-pyinotify             python-renderpm             python-support         && curl -o wkhtmltox.deb -SL http://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb         && echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 wkhtmltox.deb' | sha1sum -c -         && dpkg --force-depends -i wkhtmltox.deb         && apt-get -y install -f --no-install-recommends         && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm         && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
-# Thu, 09 Jun 2016 22:32:05 GMT
+# Mon, 01 Aug 2016 20:02:28 GMT
 ENV ODOO_VERSION=9.0
-# Thu, 09 Jun 2016 22:32:05 GMT
-ENV ODOO_RELEASE=20160609
-# Thu, 09 Jun 2016 22:35:11 GMT
-RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}c.${ODOO_RELEASE}_all.deb         && echo '56e7e5dc2525fd8c1522c05deb0f7f349a966260 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
-# Thu, 09 Jun 2016 22:35:13 GMT
+# Mon, 01 Aug 2016 20:02:29 GMT
+ENV ODOO_RELEASE=20160726
+# Mon, 01 Aug 2016 20:05:03 GMT
+RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}c.${ODOO_RELEASE}_all.deb         && echo 'cbd0cbaed27da28eaae1c6460f36d398c8acbf77 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
+# Mon, 01 Aug 2016 20:05:05 GMT
 COPY file:156abbd9c6016388d9d2e1584d9e9c49a4085dba32d97d1ed88fee992bb89e61 in /
-# Thu, 09 Jun 2016 22:35:13 GMT
+# Mon, 01 Aug 2016 20:05:06 GMT
 COPY file:1172e26dac1f2b6dd4d3b3ae484c69b33109695606154cdb13dcfa032d798e88 in /etc/odoo/
-# Thu, 09 Jun 2016 22:35:14 GMT
+# Mon, 01 Aug 2016 20:05:08 GMT
 RUN chown odoo /etc/odoo/openerp-server.conf
-# Thu, 09 Jun 2016 22:35:16 GMT
+# Mon, 01 Aug 2016 20:05:10 GMT
 RUN mkdir -p /mnt/extra-addons         && chown -R odoo /mnt/extra-addons
-# Thu, 09 Jun 2016 22:35:16 GMT
+# Mon, 01 Aug 2016 20:05:11 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Thu, 09 Jun 2016 22:35:16 GMT
+# Mon, 01 Aug 2016 20:05:12 GMT
 EXPOSE 8069/tcp 8071/tcp
-# Thu, 09 Jun 2016 22:35:17 GMT
+# Mon, 01 Aug 2016 20:05:14 GMT
 ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
-# Thu, 09 Jun 2016 22:35:17 GMT
+# Mon, 01 Aug 2016 20:05:16 GMT
 USER [odoo]
-# Thu, 09 Jun 2016 22:35:17 GMT
+# Mon, 01 Aug 2016 20:05:16 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 09 Jun 2016 22:35:18 GMT
+# Mon, 01 Aug 2016 20:05:17 GMT
 CMD ["openerp-server"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:37eada17c7dfce85f355ae5d9f784f150dde3370da14241b739441a48237a5fb`  
-		Last Modified: Thu, 09 Jun 2016 22:35:50 GMT  
-		Size: 83.8 MB (83789881 bytes)
-	-	`sha256:9314615c2805a212fc22517e05159380c35e729d1d2d4175624f029f4b62e316`  
-		Last Modified: Thu, 09 Jun 2016 22:36:53 GMT  
-		Size: 137.1 MB (137087220 bytes)
-	-	`sha256:f153af85a6151b01acec12a4af91ff4e23bccd6aed9ab0fc00fac108d8237a9f`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:59210089e05763d3e2d318fce03f00d2cf6e408d9a277ad96bff93985579041a`  
+		Last Modified: Mon, 01 Aug 2016 20:01:57 GMT  
+		Size: 83.8 MB (83758751 bytes)
+	-	`sha256:55c6ab9ddca9acb1ae3c05eb0df3838c786fcce84f86d900db1e1a9d95581ebc`  
+		Last Modified: Mon, 01 Aug 2016 20:06:01 GMT  
+		Size: 137.7 MB (137740862 bytes)
+	-	`sha256:0ff4ee116ff2e36b0d17a1ba097cdff8dfdf93b2b32c998283aec9409a469f1b`  
+		Last Modified: Mon, 01 Aug 2016 20:05:27 GMT  
 		Size: 344.0 B
-	-	`sha256:6090c3204ab72497caeade8d7b901d9aec7c7cad555a0cc2023571c47fc2937e`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
-		Size: 587.0 B
-	-	`sha256:0be67daafdf2fd99ad4db03a243c413a0090c0391dbff7aafd10c3dcf6fc5592`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
+	-	`sha256:b0e835ad7b97693cd98dfa4a95451e1b593f90a9d08c6c87c192f426432bc505`  
+		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
+		Size: 588.0 B
+	-	`sha256:3cbd8091436be0c8e5c409f1afaa42e32de4f42b1e7cf8ef4481eb26f329b494`  
+		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
 		Size: 590.0 B
-	-	`sha256:71449695c56cf18244bd736883358eda9f0a369009c3f460898f6d81a0d7ac2e`  
-		Last Modified: Thu, 09 Jun 2016 22:36:18 GMT  
-		Size: 124.0 B
+	-	`sha256:f943eb8cd383e18c2e3de2bab17f41b05bcc66319f468e152bd478faa9f814c4`  
+		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
+		Size: 123.0 B
