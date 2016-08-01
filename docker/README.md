@@ -1,16 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.12.0-rc5`, `1.12-rc`, `rc` (*1.12-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/c35f7c0ded8b4153d5d7711054ac17132a3e7155/1.12-rc/Dockerfile)
--	[`1.12.0-rc5-dind`, `1.12-rc-dind`, `rc-dind` (*1.12-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/1c8b144ed9ec49ac8cc7ca75f8628fd8de6c82b5/1.12-rc/dind/Dockerfile)
--	[`1.12.0-rc5-git`, `1.12-rc-git`, `rc-git` (*1.12-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/4d1f83ee6e25a5c2bb1c8a04de0643b1a964ba5e/1.12-rc/git/Dockerfile)
--	[`1.11.2`, `1.11`, `1`, `latest` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/7ef1746a46a29d89bac9aca8d0788bd629eb00e6/1.11/Dockerfile)
--	[`1.11.2-dind`, `1.11-dind`, `1-dind`, `dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/1c8b144ed9ec49ac8cc7ca75f8628fd8de6c82b5/1.11/dind/Dockerfile)
--	[`1.11.2-git`, `1.11-git`, `1-git`, `git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
--	[`1.10.3`, `1.10` (*1.10/Dockerfile*)](https://github.com/docker-library/docker/blob/7ef1746a46a29d89bac9aca8d0788bd629eb00e6/1.10/Dockerfile)
--	[`1.10.3-dind`, `1.10-dind` (*1.10/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/1c8b144ed9ec49ac8cc7ca75f8628fd8de6c82b5/1.10/dind/Dockerfile)
--	[`1.10.3-git`, `1.10-git` (*1.10/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/git/Dockerfile)
+-	[`1.12.0`, `1.12`, `1`, `latest` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/Dockerfile)
+-	[`1.12.0-dind`, `1.12-dind`, `1-dind`, `dind` (*1.12/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/dind/Dockerfile)
+-	[`1.12.0-git`, `1.12-git`, `1-git`, `git` (*1.12/git/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/git/Dockerfile)
+-	[`1.11.2`, `1.11` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/7ef1746a46a29d89bac9aca8d0788bd629eb00e6/1.11/Dockerfile)
+-	[`1.11.2-dind`, `1.11-dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/1c8b144ed9ec49ac8cc7ca75f8628fd8de6c82b5/1.11/dind/Dockerfile)
+-	[`1.11.2-git`, `1.11-git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
 
-[![](https://badge.imagelayers.io/docker:latest.svg)](https://imagelayers.io/?images=docker:1.12.0-rc5,docker:1.12.0-rc5-dind,docker:1.12.0-rc5-git,docker:1.11.2,docker:1.11.2-dind,docker:1.11.2-git,docker:1.10.3,docker:1.10.3-dind,docker:1.10.3-git)
+[![](https://badge.imagelayers.io/docker:latest.svg)](https://imagelayers.io/?images=docker:1.12.0,docker:1.12.0-dind,docker:1.12.0-git,docker:1.11.2,docker:1.11.2-dind,docker:1.11.2-git)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker).
 
