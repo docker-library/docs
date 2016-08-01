@@ -2023,7 +2023,7 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.2.4.4`
 
 ```console
-$ docker pull mono@sha256:a0627d0bc929a15e96bee0dcffc5b21237587db0b11ebba6be552b5b4d4dd8ee
+$ docker pull mono@sha256:3df5123045f1f003bd20faa16e764612c374349fabf7bdee015033b7ad5f7845
 ```
 
 -	Platforms:
@@ -2033,44 +2033,44 @@ $ docker pull mono@sha256:a0627d0bc929a15e96bee0dcffc5b21237587db0b11ebba6be552b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.5 MB (229529501 bytes)**  
+-	Total Size: **231.0 MB (230995764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c704c7d1003d162ebc145e808493957dccb4f03f57824ce2f6705ecd5a1e7809`
+-	Image ID: `sha256:a932a26682c25258f03b0bcb91737a9e344bc6c15b8fb4da1cd3a910e27722fa`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Fri, 10 Jun 2016 02:05:26 GMT
+# Fri, 29 Jul 2016 20:02:49 GMT
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
-# Fri, 10 Jun 2016 02:05:40 GMT
+# Fri, 29 Jul 2016 20:03:05 GMT
 RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 02:13:41 GMT
+# Fri, 29 Jul 2016 20:05:44 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# Fri, 17 Jun 2016 17:41:28 GMT
+# Mon, 01 Aug 2016 17:10:32 GMT
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.4.4 main" > /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:3fddca3924ba0ae7e0bc9cc77822049dcf677920cc7306fd6ff2bd72c8be9930`  
-		Last Modified: Fri, 17 Jun 2016 17:43:55 GMT  
-		Size: 7.6 MB (7584298 bytes)
-	-	`sha256:e2e9478e366158d0346c0f3f5ee58bbb2206a0ddc873687ffd9225b664746a9c`  
-		Last Modified: Fri, 17 Jun 2016 17:50:31 GMT  
-		Size: 29.3 KB (29328 bytes)
-	-	`sha256:98969d6c8de2744991d5ef8f1e2e11ab9a72202c8d1d21dce5c7f805a8ea2130`  
-		Last Modified: Fri, 17 Jun 2016 17:54:52 GMT  
-		Size: 184.7 MB (184706326 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
+		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
+		Size: 7.6 MB (7553771 bytes)
+	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
+		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
+		Size: 29.3 KB (29325 bytes)
+	-	`sha256:f60b7bf821cb44c9999948359d6a828aa9ee6e175a5f32efee233abcbece4013`  
+		Last Modified: Mon, 01 Aug 2016 17:11:49 GMT  
+		Size: 186.2 MB (186203033 bytes)
 
 ## `mono:4.2.4`
 
 ```console
-$ docker pull mono@sha256:a0627d0bc929a15e96bee0dcffc5b21237587db0b11ebba6be552b5b4d4dd8ee
+$ docker pull mono@sha256:3df5123045f1f003bd20faa16e764612c374349fabf7bdee015033b7ad5f7845
 ```
 
 -	Platforms:
@@ -2080,44 +2080,44 @@ $ docker pull mono@sha256:a0627d0bc929a15e96bee0dcffc5b21237587db0b11ebba6be552b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.5 MB (229529501 bytes)**  
+-	Total Size: **231.0 MB (230995764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c704c7d1003d162ebc145e808493957dccb4f03f57824ce2f6705ecd5a1e7809`
+-	Image ID: `sha256:a932a26682c25258f03b0bcb91737a9e344bc6c15b8fb4da1cd3a910e27722fa`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Fri, 10 Jun 2016 02:05:26 GMT
+# Fri, 29 Jul 2016 20:02:49 GMT
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
-# Fri, 10 Jun 2016 02:05:40 GMT
+# Fri, 29 Jul 2016 20:03:05 GMT
 RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 02:13:41 GMT
+# Fri, 29 Jul 2016 20:05:44 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# Fri, 17 Jun 2016 17:41:28 GMT
+# Mon, 01 Aug 2016 17:10:32 GMT
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.4.4 main" > /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:3fddca3924ba0ae7e0bc9cc77822049dcf677920cc7306fd6ff2bd72c8be9930`  
-		Last Modified: Fri, 17 Jun 2016 17:43:55 GMT  
-		Size: 7.6 MB (7584298 bytes)
-	-	`sha256:e2e9478e366158d0346c0f3f5ee58bbb2206a0ddc873687ffd9225b664746a9c`  
-		Last Modified: Fri, 17 Jun 2016 17:50:31 GMT  
-		Size: 29.3 KB (29328 bytes)
-	-	`sha256:98969d6c8de2744991d5ef8f1e2e11ab9a72202c8d1d21dce5c7f805a8ea2130`  
-		Last Modified: Fri, 17 Jun 2016 17:54:52 GMT  
-		Size: 184.7 MB (184706326 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
+		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
+		Size: 7.6 MB (7553771 bytes)
+	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
+		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
+		Size: 29.3 KB (29325 bytes)
+	-	`sha256:f60b7bf821cb44c9999948359d6a828aa9ee6e175a5f32efee233abcbece4013`  
+		Last Modified: Mon, 01 Aug 2016 17:11:49 GMT  
+		Size: 186.2 MB (186203033 bytes)
 
 ## `mono:4.2`
 
 ```console
-$ docker pull mono@sha256:a0627d0bc929a15e96bee0dcffc5b21237587db0b11ebba6be552b5b4d4dd8ee
+$ docker pull mono@sha256:3df5123045f1f003bd20faa16e764612c374349fabf7bdee015033b7ad5f7845
 ```
 
 -	Platforms:
@@ -2127,39 +2127,39 @@ $ docker pull mono@sha256:a0627d0bc929a15e96bee0dcffc5b21237587db0b11ebba6be552b
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.5 MB (229529501 bytes)**  
+-	Total Size: **231.0 MB (230995764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c704c7d1003d162ebc145e808493957dccb4f03f57824ce2f6705ecd5a1e7809`
+-	Image ID: `sha256:a932a26682c25258f03b0bcb91737a9e344bc6c15b8fb4da1cd3a910e27722fa`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:30:19 GMT
-ADD file:add5fc8cb18678647f395d0a743c4ca93466b70b9e42847d850aa206b7ad0d8d in /
-# Thu, 09 Jun 2016 21:30:20 GMT
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
 CMD ["/bin/bash"]
-# Fri, 10 Jun 2016 02:05:26 GMT
+# Fri, 29 Jul 2016 20:02:49 GMT
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
-# Fri, 10 Jun 2016 02:05:40 GMT
+# Fri, 29 Jul 2016 20:03:05 GMT
 RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 02:13:41 GMT
+# Fri, 29 Jul 2016 20:05:44 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# Fri, 17 Jun 2016 17:41:28 GMT
+# Mon, 01 Aug 2016 17:10:32 GMT
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.4.4 main" > /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:8ceedfe606fc6a2449001a47b33357a1aefaa3538bff8ce98af64fc6cd810225`  
-		Last Modified: Thu, 09 Jun 2016 21:34:10 GMT  
-		Size: 37.2 MB (37209549 bytes)
-	-	`sha256:3fddca3924ba0ae7e0bc9cc77822049dcf677920cc7306fd6ff2bd72c8be9930`  
-		Last Modified: Fri, 17 Jun 2016 17:43:55 GMT  
-		Size: 7.6 MB (7584298 bytes)
-	-	`sha256:e2e9478e366158d0346c0f3f5ee58bbb2206a0ddc873687ffd9225b664746a9c`  
-		Last Modified: Fri, 17 Jun 2016 17:50:31 GMT  
-		Size: 29.3 KB (29328 bytes)
-	-	`sha256:98969d6c8de2744991d5ef8f1e2e11ab9a72202c8d1d21dce5c7f805a8ea2130`  
-		Last Modified: Fri, 17 Jun 2016 17:54:52 GMT  
-		Size: 184.7 MB (184706326 bytes)
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)
+	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
+		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
+		Size: 7.6 MB (7553771 bytes)
+	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
+		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
+		Size: 29.3 KB (29325 bytes)
+	-	`sha256:f60b7bf821cb44c9999948359d6a828aa9ee6e175a5f32efee233abcbece4013`  
+		Last Modified: Mon, 01 Aug 2016 17:11:49 GMT  
+		Size: 186.2 MB (186203033 bytes)
 
 ## `mono:4.2.4.4-onbuild`
 
