@@ -32,7 +32,7 @@
 ## `solr:5.3.2`
 
 ```console
-$ docker pull solr@sha256:29cabacaed891e2aa1ab14397b8f18a933140d2763f286170797556b2dd88639
+$ docker pull solr@sha256:0f3923c8a3af4e03e0bab8917fc7ab076f352efc03764ef357a20ba739c173c6
 ```
 
 -	Platforms:
@@ -42,130 +42,130 @@ $ docker pull solr@sha256:29cabacaed891e2aa1ab14397b8f18a933140d2763f28617079755
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.2 MB (269196915 bytes)**  
+-	Total Size: **269.1 MB (269117686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ee23155d90d5463bf5f947e384a82bebe3c178d97ff842ff8a5d94c0ff7e3d5`
+-	Image ID: `sha256:f469d888f016236821d4a9041e48b84b99a1b45c1342f9563bfdf083a17e8bbc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 23:13:52 GMT
+# Mon, 01 Aug 2016 23:43:14 GMT
 MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
-# Fri, 10 Jun 2016 23:13:52 GMT
+# Mon, 01 Aug 2016 23:43:15 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 20 Jun 2016 22:39:43 GMT
+# Mon, 01 Aug 2016 23:43:16 GMT
 ARG GPG_KEYSERVER
-# Mon, 20 Jun 2016 22:40:47 GMT
+# Mon, 01 Aug 2016 23:44:30 GMT
 RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
-# Mon, 20 Jun 2016 22:40:47 GMT
+# Mon, 01 Aug 2016 23:44:31 GMT
 ENV SOLR_USER=solr
-# Mon, 20 Jun 2016 22:40:47 GMT
+# Mon, 01 Aug 2016 23:44:32 GMT
 ENV SOLR_UID=8983
-# Mon, 20 Jun 2016 22:40:48 GMT
+# Mon, 01 Aug 2016 23:44:34 GMT
 RUN groupadd -r -g $SOLR_UID $SOLR_USER &&   useradd -r -u $SOLR_UID -g $SOLR_USER $SOLR_USER
-# Mon, 20 Jun 2016 22:40:49 GMT
+# Mon, 01 Aug 2016 23:44:35 GMT
 ENV SOLR_KEY=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
-# Mon, 20 Jun 2016 22:40:49 GMT
+# Mon, 01 Aug 2016 23:44:36 GMT
 ENV GPG_KEYSERVER=hkp://ha.pool.sks-keyservers.net
-# Mon, 20 Jun 2016 22:40:52 GMT
+# Mon, 01 Aug 2016 23:44:39 GMT
 RUN gpg --keyserver "$GPG_KEYSERVER" --recv-keys "$SOLR_KEY"
-# Mon, 20 Jun 2016 22:40:52 GMT
+# Mon, 01 Aug 2016 23:44:40 GMT
 ENV SOLR_VERSION=5.3.2
-# Mon, 20 Jun 2016 22:40:53 GMT
+# Mon, 01 Aug 2016 23:44:41 GMT
 ENV SOLR_SHA256=7c26601229ed712c639d00882f35304d87e0032028be4754d098a9b694877f48
-# Mon, 20 Jun 2016 22:40:53 GMT
+# Mon, 01 Aug 2016 23:44:41 GMT
 ENV SOLR_URL=https://archive.apache.org/dist/lucene/solr/5.3.2/solr-5.3.2.tgz
-# Mon, 20 Jun 2016 22:41:16 GMT
+# Mon, 01 Aug 2016 23:45:08 GMT
 RUN mkdir -p /opt/solr &&   wget -nv $SOLR_URL -O /opt/solr.tgz &&   wget -nv $SOLR_URL.asc -O /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   (>&2 ls -l /opt/solr.tgz /opt/solr.tgz.asc) &&   gpg --batch --verify /opt/solr.tgz.asc /opt/solr.tgz &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   mkdir -p /opt/solr/server/solr/lib /opt/solr/server/solr/mycores &&   sed -i -e 's/#SOLR_PORT=8983/SOLR_PORT=8983/' /opt/solr/bin/solr.in.sh &&   sed -i -e '/-Dsolr.clustering.enabled=true/ a SOLR_OPTS="$SOLR_OPTS -Dsun.net.inetaddr.ttl=60 -Dsun.net.inetaddr.negative.ttl=60"' /opt/solr/bin/solr.in.sh &&   chown -R $SOLR_USER:$SOLR_USER /opt/solr &&   mkdir /docker-entrypoint-initdb.d /opt/docker-solr/
-# Mon, 20 Jun 2016 22:41:17 GMT
+# Mon, 01 Aug 2016 23:45:09 GMT
 COPY dir:e7e155eea31238308402c3128237b81a9d96ede91c8ac8361c75c62f06b63e9b in /opt/docker-solr/scripts
-# Mon, 20 Jun 2016 22:41:19 GMT
+# Mon, 01 Aug 2016 23:45:11 GMT
 RUN chown -R $SOLR_USER:$SOLR_USER /opt/docker-solr
-# Mon, 20 Jun 2016 22:41:19 GMT
+# Mon, 01 Aug 2016 23:45:12 GMT
 ENV PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 20 Jun 2016 22:41:19 GMT
+# Mon, 01 Aug 2016 23:45:13 GMT
 EXPOSE 8983/tcp
-# Mon, 20 Jun 2016 22:41:19 GMT
+# Mon, 01 Aug 2016 23:45:14 GMT
 WORKDIR /opt/solr
-# Mon, 20 Jun 2016 22:41:20 GMT
+# Mon, 01 Aug 2016 23:45:15 GMT
 USER [solr]
-# Mon, 20 Jun 2016 22:41:20 GMT
+# Mon, 01 Aug 2016 23:45:16 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Mon, 20 Jun 2016 22:41:20 GMT
+# Mon, 01 Aug 2016 23:45:17 GMT
 CMD ["solr"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:4825e4e94d5fb8a3858dfaa38095f8072a7769ea168232f8521cf5ddf473bc3a`  
-		Last Modified: Mon, 20 Jun 2016 22:46:04 GMT  
-		Size: 10.1 MB (10110282 bytes)
-	-	`sha256:80b36c8af0b02a95703aac23867e0792eedd9a83366eae7ea33418d63d8b61f8`  
-		Last Modified: Mon, 20 Jun 2016 22:45:58 GMT  
-		Size: 4.6 KB (4638 bytes)
-	-	`sha256:dcb421c50711673aa5577f4b915a509154249e01c06776d306d5dc04fa6ddf12`  
-		Last Modified: Mon, 20 Jun 2016 22:45:58 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:cf0d369f713a519082dd8c05e3b0f955c8dbde3e20ee73e7e98f4aad1f484c22`  
+		Last Modified: Mon, 01 Aug 2016 23:45:39 GMT  
+		Size: 10.1 MB (10079757 bytes)
+	-	`sha256:3111e3d6131c5bd999f372d8f321f79c41efb0f3cdfa1c82e3a832cddc59bd0a`  
+		Last Modified: Mon, 01 Aug 2016 23:45:31 GMT  
+		Size: 4.6 KB (4633 bytes)
+	-	`sha256:7bed65aec4d0877eef0e1a35b7abefe325adcf3d4b3365b1e195ba0797bc0860`  
+		Last Modified: Mon, 01 Aug 2016 23:45:31 GMT  
 		Size: 8.0 KB (7963 bytes)
-	-	`sha256:efdafa1b23ade008a535605d365ac9f57e290c341ee5061dd6fd81e19c56f023`  
-		Last Modified: Mon, 20 Jun 2016 22:46:27 GMT  
-		Size: 134.9 MB (134926786 bytes)
-	-	`sha256:ea86987983c2ce1b01f58a05825ad46c414b21f2e0858cf2f645bf45dc99a009`  
-		Last Modified: Mon, 20 Jun 2016 22:45:57 GMT  
-		Size: 1.9 KB (1875 bytes)
-	-	`sha256:e69bcee7f2d3266e90045fbed0b012c890bd067c36bb1bd08ad0fedfdc9300aa`  
-		Last Modified: Mon, 20 Jun 2016 22:45:57 GMT  
+	-	`sha256:1f4fe7cefb475971d6cc83d3c8f13cf046d46f5d41401a5a815f8c40a0530c48`  
+		Last Modified: Mon, 01 Aug 2016 23:45:52 GMT  
+		Size: 134.9 MB (134926896 bytes)
+	-	`sha256:4bab5915231e8e709a0f8022dfdaf89cabf5f94740660a9ca53d4d804b88ddfa`  
+		Last Modified: Mon, 01 Aug 2016 23:45:29 GMT  
+		Size: 1.9 KB (1873 bytes)
+	-	`sha256:78528ee3dd6b2f52b20c7bbbb12808718a9edc089ed02f442b182f4200725078`  
+		Last Modified: Mon, 01 Aug 2016 23:45:30 GMT  
 		Size: 1.9 KB (1882 bytes)
 
 ## `solr:5.3`
 
 ```console
-$ docker pull solr@sha256:29cabacaed891e2aa1ab14397b8f18a933140d2763f286170797556b2dd88639
+$ docker pull solr@sha256:0f3923c8a3af4e03e0bab8917fc7ab076f352efc03764ef357a20ba739c173c6
 ```
 
 -	Platforms:
@@ -175,124 +175,124 @@ $ docker pull solr@sha256:29cabacaed891e2aa1ab14397b8f18a933140d2763f28617079755
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.2 MB (269196915 bytes)**  
+-	Total Size: **269.1 MB (269117686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ee23155d90d5463bf5f947e384a82bebe3c178d97ff842ff8a5d94c0ff7e3d5`
+-	Image ID: `sha256:f469d888f016236821d4a9041e48b84b99a1b45c1342f9563bfdf083a17e8bbc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 23:13:52 GMT
+# Mon, 01 Aug 2016 23:43:14 GMT
 MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
-# Fri, 10 Jun 2016 23:13:52 GMT
+# Mon, 01 Aug 2016 23:43:15 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 20 Jun 2016 22:39:43 GMT
+# Mon, 01 Aug 2016 23:43:16 GMT
 ARG GPG_KEYSERVER
-# Mon, 20 Jun 2016 22:40:47 GMT
+# Mon, 01 Aug 2016 23:44:30 GMT
 RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
-# Mon, 20 Jun 2016 22:40:47 GMT
+# Mon, 01 Aug 2016 23:44:31 GMT
 ENV SOLR_USER=solr
-# Mon, 20 Jun 2016 22:40:47 GMT
+# Mon, 01 Aug 2016 23:44:32 GMT
 ENV SOLR_UID=8983
-# Mon, 20 Jun 2016 22:40:48 GMT
+# Mon, 01 Aug 2016 23:44:34 GMT
 RUN groupadd -r -g $SOLR_UID $SOLR_USER &&   useradd -r -u $SOLR_UID -g $SOLR_USER $SOLR_USER
-# Mon, 20 Jun 2016 22:40:49 GMT
+# Mon, 01 Aug 2016 23:44:35 GMT
 ENV SOLR_KEY=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
-# Mon, 20 Jun 2016 22:40:49 GMT
+# Mon, 01 Aug 2016 23:44:36 GMT
 ENV GPG_KEYSERVER=hkp://ha.pool.sks-keyservers.net
-# Mon, 20 Jun 2016 22:40:52 GMT
+# Mon, 01 Aug 2016 23:44:39 GMT
 RUN gpg --keyserver "$GPG_KEYSERVER" --recv-keys "$SOLR_KEY"
-# Mon, 20 Jun 2016 22:40:52 GMT
+# Mon, 01 Aug 2016 23:44:40 GMT
 ENV SOLR_VERSION=5.3.2
-# Mon, 20 Jun 2016 22:40:53 GMT
+# Mon, 01 Aug 2016 23:44:41 GMT
 ENV SOLR_SHA256=7c26601229ed712c639d00882f35304d87e0032028be4754d098a9b694877f48
-# Mon, 20 Jun 2016 22:40:53 GMT
+# Mon, 01 Aug 2016 23:44:41 GMT
 ENV SOLR_URL=https://archive.apache.org/dist/lucene/solr/5.3.2/solr-5.3.2.tgz
-# Mon, 20 Jun 2016 22:41:16 GMT
+# Mon, 01 Aug 2016 23:45:08 GMT
 RUN mkdir -p /opt/solr &&   wget -nv $SOLR_URL -O /opt/solr.tgz &&   wget -nv $SOLR_URL.asc -O /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   (>&2 ls -l /opt/solr.tgz /opt/solr.tgz.asc) &&   gpg --batch --verify /opt/solr.tgz.asc /opt/solr.tgz &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   mkdir -p /opt/solr/server/solr/lib /opt/solr/server/solr/mycores &&   sed -i -e 's/#SOLR_PORT=8983/SOLR_PORT=8983/' /opt/solr/bin/solr.in.sh &&   sed -i -e '/-Dsolr.clustering.enabled=true/ a SOLR_OPTS="$SOLR_OPTS -Dsun.net.inetaddr.ttl=60 -Dsun.net.inetaddr.negative.ttl=60"' /opt/solr/bin/solr.in.sh &&   chown -R $SOLR_USER:$SOLR_USER /opt/solr &&   mkdir /docker-entrypoint-initdb.d /opt/docker-solr/
-# Mon, 20 Jun 2016 22:41:17 GMT
+# Mon, 01 Aug 2016 23:45:09 GMT
 COPY dir:e7e155eea31238308402c3128237b81a9d96ede91c8ac8361c75c62f06b63e9b in /opt/docker-solr/scripts
-# Mon, 20 Jun 2016 22:41:19 GMT
+# Mon, 01 Aug 2016 23:45:11 GMT
 RUN chown -R $SOLR_USER:$SOLR_USER /opt/docker-solr
-# Mon, 20 Jun 2016 22:41:19 GMT
+# Mon, 01 Aug 2016 23:45:12 GMT
 ENV PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 20 Jun 2016 22:41:19 GMT
+# Mon, 01 Aug 2016 23:45:13 GMT
 EXPOSE 8983/tcp
-# Mon, 20 Jun 2016 22:41:19 GMT
+# Mon, 01 Aug 2016 23:45:14 GMT
 WORKDIR /opt/solr
-# Mon, 20 Jun 2016 22:41:20 GMT
+# Mon, 01 Aug 2016 23:45:15 GMT
 USER [solr]
-# Mon, 20 Jun 2016 22:41:20 GMT
+# Mon, 01 Aug 2016 23:45:16 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Mon, 20 Jun 2016 22:41:20 GMT
+# Mon, 01 Aug 2016 23:45:17 GMT
 CMD ["solr"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:4825e4e94d5fb8a3858dfaa38095f8072a7769ea168232f8521cf5ddf473bc3a`  
-		Last Modified: Mon, 20 Jun 2016 22:46:04 GMT  
-		Size: 10.1 MB (10110282 bytes)
-	-	`sha256:80b36c8af0b02a95703aac23867e0792eedd9a83366eae7ea33418d63d8b61f8`  
-		Last Modified: Mon, 20 Jun 2016 22:45:58 GMT  
-		Size: 4.6 KB (4638 bytes)
-	-	`sha256:dcb421c50711673aa5577f4b915a509154249e01c06776d306d5dc04fa6ddf12`  
-		Last Modified: Mon, 20 Jun 2016 22:45:58 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:cf0d369f713a519082dd8c05e3b0f955c8dbde3e20ee73e7e98f4aad1f484c22`  
+		Last Modified: Mon, 01 Aug 2016 23:45:39 GMT  
+		Size: 10.1 MB (10079757 bytes)
+	-	`sha256:3111e3d6131c5bd999f372d8f321f79c41efb0f3cdfa1c82e3a832cddc59bd0a`  
+		Last Modified: Mon, 01 Aug 2016 23:45:31 GMT  
+		Size: 4.6 KB (4633 bytes)
+	-	`sha256:7bed65aec4d0877eef0e1a35b7abefe325adcf3d4b3365b1e195ba0797bc0860`  
+		Last Modified: Mon, 01 Aug 2016 23:45:31 GMT  
 		Size: 8.0 KB (7963 bytes)
-	-	`sha256:efdafa1b23ade008a535605d365ac9f57e290c341ee5061dd6fd81e19c56f023`  
-		Last Modified: Mon, 20 Jun 2016 22:46:27 GMT  
-		Size: 134.9 MB (134926786 bytes)
-	-	`sha256:ea86987983c2ce1b01f58a05825ad46c414b21f2e0858cf2f645bf45dc99a009`  
-		Last Modified: Mon, 20 Jun 2016 22:45:57 GMT  
-		Size: 1.9 KB (1875 bytes)
-	-	`sha256:e69bcee7f2d3266e90045fbed0b012c890bd067c36bb1bd08ad0fedfdc9300aa`  
-		Last Modified: Mon, 20 Jun 2016 22:45:57 GMT  
+	-	`sha256:1f4fe7cefb475971d6cc83d3c8f13cf046d46f5d41401a5a815f8c40a0530c48`  
+		Last Modified: Mon, 01 Aug 2016 23:45:52 GMT  
+		Size: 134.9 MB (134926896 bytes)
+	-	`sha256:4bab5915231e8e709a0f8022dfdaf89cabf5f94740660a9ca53d4d804b88ddfa`  
+		Last Modified: Mon, 01 Aug 2016 23:45:29 GMT  
+		Size: 1.9 KB (1873 bytes)
+	-	`sha256:78528ee3dd6b2f52b20c7bbbb12808718a9edc089ed02f442b182f4200725078`  
+		Last Modified: Mon, 01 Aug 2016 23:45:30 GMT  
 		Size: 1.9 KB (1882 bytes)
 
 ## `solr:5.3.2-alpine`

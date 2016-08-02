@@ -8,7 +8,7 @@
 ## `rakudo-star:2016.07`
 
 ```console
-$ docker pull rakudo-star@sha256:9e15b14f5907cbb88085511e6a3ebd5c1eee67e7fdaaacb3a5dc8e09b27b1c62
+$ docker pull rakudo-star@sha256:b3f897829681e42402fdba8dd084abd7e80131ff8e1ad7ed8a249f43682c2764
 ```
 
 -	Platforms:
@@ -18,55 +18,55 @@ $ docker pull rakudo-star@sha256:9e15b14f5907cbb88085511e6a3ebd5c1eee67e7fdaaacb
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.0 MB (122975562 bytes)**  
+-	Total Size: **122.9 MB (122941072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f507f2bc8611e3aa2857e2511a4c050702c7c4201e72bd5d0f5a1b7236d4f2be`
+-	Image ID: `sha256:14a66fbee7b71913272dd63037e533358701b306a3711f1bff2022006ed43df7`
 -	Default Command: `["perl6"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 22:21:40 GMT
+# Mon, 01 Aug 2016 23:14:52 GMT
 MAINTAINER Rob Hoelz
-# Fri, 10 Jun 2016 22:21:41 GMT
+# Mon, 01 Aug 2016 23:14:54 GMT
 RUN groupadd -r perl6 && useradd -r -g perl6 perl6
-# Fri, 22 Jul 2016 18:45:30 GMT
+# Mon, 01 Aug 2016 23:14:54 GMT
 ENV rakudo_version=2016.07
-# Fri, 22 Jul 2016 18:59:44 GMT
+# Mon, 01 Aug 2016 23:30:48 GMT
 RUN buildDeps='         gcc         libc6-dev         libencode-perl         make     '     && set -x     && apt-get update     && apt-get --yes install --no-install-recommends $buildDeps     && rm -rf /var/lib/apt/lists/*     && mkdir /root/rakudo     && curl -fsSL http://rakudo.org/downloads/star/rakudo-star-${rakudo_version}.tar.gz -o rakudo.tar.gz     && tar xzf rakudo.tar.gz --strip-components=1 -C /root/rakudo     && (         cd /root/rakudo         && perl Configure.pl --prefix=/usr --gen-moar         && make install     )     && rm -rf /rakudo.tar.gz /root/rakudo     && apt-get purge -y --auto-remove $buildDeps
-# Fri, 22 Jul 2016 18:59:45 GMT
+# Mon, 01 Aug 2016 23:30:49 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin
-# Fri, 22 Jul 2016 18:59:46 GMT
+# Mon, 01 Aug 2016 23:30:50 GMT
 CMD ["perl6"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:6e458f4e166e1c52f566690671c8fd47bf0f84c71319d00f04fa4f61056af88c`  
-		Last Modified: Fri, 22 Jul 2016 18:59:54 GMT  
-		Size: 2.0 KB (2047 bytes)
-	-	`sha256:800365ba9b6c45c67fd24e7a27aaffa573294a9c1beb9eb85037d7e0c3a5344e`  
-		Last Modified: Fri, 22 Jul 2016 19:00:00 GMT  
-		Size: 10.5 MB (10548390 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:3d7c75c0b915a8be151ca434c3c4cc942103c5fc1a6a62147b628411bb05f247`  
+		Last Modified: Mon, 01 Aug 2016 23:31:00 GMT  
+		Size: 2.1 KB (2052 bytes)
+	-	`sha256:fef574c42394824547e288d7016600aa5f2de0ddef6d4ed202829ef8b5831dc9`  
+		Last Modified: Mon, 01 Aug 2016 23:31:06 GMT  
+		Size: 10.6 MB (10551046 bytes)
 
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull rakudo-star@sha256:9e15b14f5907cbb88085511e6a3ebd5c1eee67e7fdaaacb3a5dc8e09b27b1c62
+$ docker pull rakudo-star@sha256:b3f897829681e42402fdba8dd084abd7e80131ff8e1ad7ed8a249f43682c2764
 ```
 
 -	Platforms:
@@ -76,47 +76,47 @@ $ docker pull rakudo-star@sha256:9e15b14f5907cbb88085511e6a3ebd5c1eee67e7fdaaacb
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.0 MB (122975562 bytes)**  
+-	Total Size: **122.9 MB (122941072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f507f2bc8611e3aa2857e2511a4c050702c7c4201e72bd5d0f5a1b7236d4f2be`
+-	Image ID: `sha256:14a66fbee7b71913272dd63037e533358701b306a3711f1bff2022006ed43df7`
 -	Default Command: `["perl6"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 22:21:40 GMT
+# Mon, 01 Aug 2016 23:14:52 GMT
 MAINTAINER Rob Hoelz
-# Fri, 10 Jun 2016 22:21:41 GMT
+# Mon, 01 Aug 2016 23:14:54 GMT
 RUN groupadd -r perl6 && useradd -r -g perl6 perl6
-# Fri, 22 Jul 2016 18:45:30 GMT
+# Mon, 01 Aug 2016 23:14:54 GMT
 ENV rakudo_version=2016.07
-# Fri, 22 Jul 2016 18:59:44 GMT
+# Mon, 01 Aug 2016 23:30:48 GMT
 RUN buildDeps='         gcc         libc6-dev         libencode-perl         make     '     && set -x     && apt-get update     && apt-get --yes install --no-install-recommends $buildDeps     && rm -rf /var/lib/apt/lists/*     && mkdir /root/rakudo     && curl -fsSL http://rakudo.org/downloads/star/rakudo-star-${rakudo_version}.tar.gz -o rakudo.tar.gz     && tar xzf rakudo.tar.gz --strip-components=1 -C /root/rakudo     && (         cd /root/rakudo         && perl Configure.pl --prefix=/usr --gen-moar         && make install     )     && rm -rf /rakudo.tar.gz /root/rakudo     && apt-get purge -y --auto-remove $buildDeps
-# Fri, 22 Jul 2016 18:59:45 GMT
+# Mon, 01 Aug 2016 23:30:49 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin
-# Fri, 22 Jul 2016 18:59:46 GMT
+# Mon, 01 Aug 2016 23:30:50 GMT
 CMD ["perl6"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:6e458f4e166e1c52f566690671c8fd47bf0f84c71319d00f04fa4f61056af88c`  
-		Last Modified: Fri, 22 Jul 2016 18:59:54 GMT  
-		Size: 2.0 KB (2047 bytes)
-	-	`sha256:800365ba9b6c45c67fd24e7a27aaffa573294a9c1beb9eb85037d7e0c3a5344e`  
-		Last Modified: Fri, 22 Jul 2016 19:00:00 GMT  
-		Size: 10.5 MB (10548390 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:3d7c75c0b915a8be151ca434c3c4cc942103c5fc1a6a62147b628411bb05f247`  
+		Last Modified: Mon, 01 Aug 2016 23:31:00 GMT  
+		Size: 2.1 KB (2052 bytes)
+	-	`sha256:fef574c42394824547e288d7016600aa5f2de0ddef6d4ed202829ef8b5831dc9`  
+		Last Modified: Mon, 01 Aug 2016 23:31:06 GMT  
+		Size: 10.6 MB (10551046 bytes)
