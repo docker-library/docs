@@ -1808,7 +1808,7 @@ CMD ["passenger" "start"]
 ## `redmine:3.3-passenger`
 
 ```console
-$ docker pull redmine@sha256:ef50eff0125591d0805c3c42adf11772be92ef28627ff39a308e1cbcba7ac785
+$ docker pull redmine@sha256:2ad7162365f9b2025196fef96ead1bf13e6261a34c040b6b637e9570eaf99143
 ```
 
 -	Platforms:
@@ -1818,138 +1818,138 @@ $ docker pull redmine@sha256:ef50eff0125591d0805c3c42adf11772be92ef28627ff39a308
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.4 MB (267356784 bytes)**  
+-	Total Size: **267.5 MB (267466541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2864e9baa493ced6eabef8e5a228f15fdd3f38422d7392e54b2f1c89a534c7bb`
+-	Image ID: `sha256:3aab91d8f306032629777a642721903b88942ee74933c576d0dd872672590615`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Fri, 10 Jun 2016 21:03:42 GMT
+# Tue, 02 Aug 2016 01:13:54 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		curl 		libffi-dev 		libgdbm3 		libssl-dev 		libyaml-dev 		procps 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 21:03:43 GMT
+# Tue, 02 Aug 2016 01:13:56 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Fri, 10 Jun 2016 22:52:28 GMT
+# Tue, 02 Aug 2016 01:27:00 GMT
 ENV RUBY_MAJOR=2.2
-# Fri, 10 Jun 2016 22:52:28 GMT
+# Tue, 02 Aug 2016 01:27:00 GMT
 ENV RUBY_VERSION=2.2.5
-# Fri, 10 Jun 2016 22:52:28 GMT
+# Tue, 02 Aug 2016 01:27:00 GMT
 ENV RUBY_DOWNLOAD_SHA256=30c4b31697a4ca4ea0c8db8ad30cf45e6690a0f09687e5d483c933c03ca335e3
-# Fri, 24 Jun 2016 01:32:17 GMT
+# Tue, 02 Aug 2016 01:27:01 GMT
 ENV RUBYGEMS_VERSION=2.6.6
-# Fri, 24 Jun 2016 01:37:26 GMT
+# Tue, 02 Aug 2016 01:32:08 GMT
 RUN set -ex 	&& buildDeps=' 		autoconf 		bison 		gcc 		libbz2-dev 		libgdbm-dev 		libglib2.0-dev 		libncurses-dev 		libreadline-dev 		libxml2-dev 		libxslt-dev 		make 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 	&& curl -fSL -o ruby.tar.gz "http://cache.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ruby-$RUBY_VERSION.tar.gz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/ruby 	&& tar -xzf ruby.tar.gz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.gz 	&& cd /usr/src/ruby 	&& { echo '#define ENABLE_PATH_CHECK 0'; echo; cat file.c; } > file.c.new && mv file.c.new file.c 	&& autoconf 	&& ./configure --disable-install-doc 	&& make -j"$(nproc)" 	&& make install 	&& apt-get purge -y --auto-remove $buildDeps 	&& gem update --system $RUBYGEMS_VERSION 	&& rm -r /usr/src/ruby
-# Fri, 24 Jun 2016 01:37:26 GMT
+# Tue, 02 Aug 2016 01:32:08 GMT
 ENV BUNDLER_VERSION=1.12.5
-# Fri, 24 Jun 2016 01:37:28 GMT
+# Tue, 02 Aug 2016 01:32:10 GMT
 RUN gem install bundler --version "$BUNDLER_VERSION"
-# Fri, 24 Jun 2016 01:37:29 GMT
+# Tue, 02 Aug 2016 01:32:11 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 24 Jun 2016 01:37:29 GMT
+# Tue, 02 Aug 2016 01:32:11 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 24 Jun 2016 01:37:29 GMT
+# Tue, 02 Aug 2016 01:32:11 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 24 Jun 2016 01:37:30 GMT
+# Tue, 02 Aug 2016 01:32:13 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Fri, 24 Jun 2016 01:37:31 GMT
+# Tue, 02 Aug 2016 01:32:13 GMT
 CMD ["irb"]
-# Fri, 24 Jun 2016 02:20:27 GMT
+# Tue, 02 Aug 2016 01:50:30 GMT
 RUN groupadd -r redmine && useradd -r -g redmine redmine
-# Fri, 24 Jun 2016 02:20:27 GMT
+# Tue, 02 Aug 2016 01:50:31 GMT
 ENV GOSU_VERSION=1.7
-# Fri, 24 Jun 2016 02:20:33 GMT
+# Tue, 02 Aug 2016 01:50:37 GMT
 RUN set -x 	&& curl -fSL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& curl -fSL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 24 Jun 2016 02:20:34 GMT
+# Tue, 02 Aug 2016 01:50:37 GMT
 ENV TINI_VERSION=v0.9.0
-# Fri, 24 Jun 2016 02:20:37 GMT
+# Tue, 02 Aug 2016 01:50:41 GMT
 RUN set -x 	&& curl -fSL -o /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini" 	&& curl -fSL -o /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5 	&& gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini 	&& rm -r "$GNUPGHOME" /usr/local/bin/tini.asc 	&& chmod +x /usr/local/bin/tini 	&& tini -h
-# Fri, 24 Jun 2016 02:22:10 GMT
+# Tue, 02 Aug 2016 01:52:14 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		imagemagick 		libmysqlclient18 		libpq5 		libsqlite3-0 				bzr 		git 		mercurial 		openssh-client 		subversion 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 02:22:11 GMT
+# Tue, 02 Aug 2016 01:52:15 GMT
 ENV RAILS_ENV=production
-# Fri, 24 Jun 2016 02:22:11 GMT
+# Tue, 02 Aug 2016 01:52:16 GMT
 WORKDIR /usr/src/redmine
-# Fri, 15 Jul 2016 20:50:30 GMT
+# Tue, 02 Aug 2016 16:46:11 GMT
 ENV REDMINE_VERSION=3.3.0
-# Fri, 15 Jul 2016 20:50:31 GMT
+# Tue, 02 Aug 2016 16:46:11 GMT
 ENV REDMINE_DOWNLOAD_MD5=0c0abb2d4efde455c3505d8caf01cb2d
-# Fri, 15 Jul 2016 20:50:36 GMT
+# Tue, 02 Aug 2016 16:46:16 GMT
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz 	&& echo "$REDMINE_DOWNLOAD_MD5 redmine.tar.gz" | md5sum -c - 	&& tar -xvf redmine.tar.gz --strip-components=1 	&& rm redmine.tar.gz files/delete.me log/delete.me 	&& mkdir -p tmp/pdf public/plugin_assets 	&& chown -R redmine:redmine ./
-# Fri, 15 Jul 2016 20:55:14 GMT
+# Tue, 02 Aug 2016 16:51:19 GMT
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 15 Jul 2016 20:55:15 GMT
+# Tue, 02 Aug 2016 16:51:20 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 15 Jul 2016 20:55:16 GMT
+# Tue, 02 Aug 2016 16:51:22 GMT
 COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
-# Fri, 15 Jul 2016 20:55:17 GMT
+# Tue, 02 Aug 2016 16:51:22 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 15 Jul 2016 20:55:17 GMT
+# Tue, 02 Aug 2016 16:51:23 GMT
 EXPOSE 3000/tcp
-# Fri, 15 Jul 2016 20:55:18 GMT
+# Tue, 02 Aug 2016 16:51:24 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 15 Jul 2016 20:55:19 GMT
-ENV PASSENGER_VERSION=5.0.29
-# Fri, 15 Jul 2016 20:56:37 GMT
+# Tue, 02 Aug 2016 16:51:26 GMT
+ENV PASSENGER_VERSION=5.0.30
+# Tue, 02 Aug 2016 16:52:51 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 15 Jul 2016 20:56:40 GMT
+# Tue, 02 Aug 2016 16:52:54 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 15 Jul 2016 20:56:40 GMT
+# Tue, 02 Aug 2016 16:52:55 GMT
 CMD ["passenger" "start"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:a49b446cc15b78164ec1c32720cf7e4ab8bac96d55845048f992a5aa798203af`  
-		Last Modified: Thu, 23 Jun 2016 21:57:55 GMT  
-		Size: 13.7 MB (13672111 bytes)
-	-	`sha256:8d27130dcbaff01887d70f8b6fcb0a2d54bbceb86a940d2c9e2e3336c9789200`  
-		Last Modified: Thu, 23 Jun 2016 21:57:46 GMT  
-		Size: 203.0 B
-	-	`sha256:902182b2d33e2db7a5e63a5ed68500e26e4b26f42ad1149407dd78f941ead0e9`  
-		Last Modified: Fri, 24 Jun 2016 01:59:54 GMT  
-		Size: 33.6 MB (33579941 bytes)
-	-	`sha256:80032c2acdb27350953362a73dccb3bb1cd7349775c2833831a9aa7dfa58cba7`  
-		Last Modified: Fri, 24 Jun 2016 01:59:43 GMT  
-		Size: 557.3 KB (557259 bytes)
-	-	`sha256:fc954da8ac0ed2d93a07d9222ff8f3c73b6d346ed56ca0d258dd3aa59b1d341b`  
-		Last Modified: Fri, 24 Jun 2016 01:59:43 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:5e51c641b978ba0004deb05c92048bb81c519060e8d009a3e79f22f3c0863907`  
+		Last Modified: Tue, 02 Aug 2016 01:43:46 GMT  
+		Size: 13.7 MB (13654999 bytes)
+	-	`sha256:bde819570a66d2224ed174073eb3abcba8b3985050ce80aa9810e1a6ddcf356d`  
+		Last Modified: Tue, 02 Aug 2016 01:43:40 GMT  
+		Size: 204.0 B
+	-	`sha256:f2140563ccc6502bff7592f89c6969c49739895ea0459b39f768884e2e46831f`  
+		Last Modified: Tue, 02 Aug 2016 01:46:09 GMT  
+		Size: 33.6 MB (33597861 bytes)
+	-	`sha256:c8ea9232701950d0d89203bc6f6195075b3a643049001573bed1af025082bdde`  
+		Last Modified: Tue, 02 Aug 2016 01:45:58 GMT  
+		Size: 557.3 KB (557295 bytes)
+	-	`sha256:7601efebf92d2e9554d2120f4d5bfb5fe96ddf82ba7d34d98da535091f2cfb0a`  
+		Last Modified: Tue, 02 Aug 2016 01:45:58 GMT  
 		Size: 161.0 B
-	-	`sha256:61f7928e0153cd74ddef3f2166a913557d74f187d76a4f99342ba5c141991338`  
-		Last Modified: Fri, 24 Jun 2016 02:44:55 GMT  
-		Size: 2.0 KB (2041 bytes)
-	-	`sha256:caa65198443f9adf885c30022db3486f6cf624d7e87ce59af47f68144f169fec`  
-		Last Modified: Fri, 24 Jun 2016 02:44:52 GMT  
-		Size: 807.9 KB (807926 bytes)
-	-	`sha256:faba7721aa382faff80c35b8425e71af1a62aaca52e0a9d8303fc58fb831e946`  
-		Last Modified: Fri, 24 Jun 2016 02:44:51 GMT  
-		Size: 7.1 KB (7114 bytes)
-	-	`sha256:c54110c65e5e668f50dfeb6f498a0dd1fba44ce412115e25199ad819376814ec`  
-		Last Modified: Fri, 24 Jun 2016 02:45:08 GMT  
-		Size: 56.8 MB (56791466 bytes)
-	-	`sha256:77ef9ec5ac6ac6e5e8bdd30aa50087bfb81a69acde49fde54220209000fd74c3`  
-		Last Modified: Fri, 24 Jun 2016 02:44:49 GMT  
-		Size: 133.0 B
-	-	`sha256:9fba566f307bb3d8a5fe4b0c4918b416b31e2646a00dca043d00da2621097ae0`  
-		Last Modified: Fri, 15 Jul 2016 20:58:07 GMT  
-		Size: 2.4 MB (2370086 bytes)
-	-	`sha256:e3c17b67afbb20981e435169df3de027399ff1f0f5669b4d91f9c270e09694d9`  
-		Last Modified: Fri, 15 Jul 2016 20:58:21 GMT  
-		Size: 76.1 MB (76065435 bytes)
-	-	`sha256:a97ca26ee133e4922115d798c6543fa190cafe8f8d2966400b5f25a9a9e2564f`  
-		Last Modified: Fri, 15 Jul 2016 20:58:06 GMT  
-		Size: 1.2 KB (1158 bytes)
-	-	`sha256:bd7ff0d0fc7affed81266a6e1e002a5387e0ce22bac4bebeb7e4e16f15fced7f`  
-		Last Modified: Fri, 15 Jul 2016 20:59:14 GMT  
-		Size: 21.7 MB (21729300 bytes)
-	-	`sha256:db2eca55e16dc8d03068bc7a1e58d69ae04e797dfe73bbd5867ab95a898ec184`  
-		Last Modified: Fri, 15 Jul 2016 20:59:11 GMT  
-		Size: 10.4 MB (10419915 bytes)
+	-	`sha256:8da514fc3bd06ffc1acfe31693038f5d6775e62fc8de6b66b9f6b3aa8ae49721`  
+		Last Modified: Tue, 02 Aug 2016 16:53:12 GMT  
+		Size: 2.0 KB (2039 bytes)
+	-	`sha256:ab2f424de4ae2351451eb6ff17aa662ec13b6789bfe5f9d717dc6bc9eb77bc84`  
+		Last Modified: Tue, 02 Aug 2016 16:53:12 GMT  
+		Size: 807.9 KB (807919 bytes)
+	-	`sha256:84337851087ae3f6faa6fc20f194c8a31f50ff0a2fbde6cd39664a1a184f8249`  
+		Last Modified: Tue, 02 Aug 2016 16:53:11 GMT  
+		Size: 7.1 KB (7109 bytes)
+	-	`sha256:e5be001836e1a67e42e443eb43b8ff7b30d1e369b3e4f16a52de804effd3d1c8`  
+		Last Modified: Tue, 02 Aug 2016 16:53:29 GMT  
+		Size: 56.8 MB (56772218 bytes)
+	-	`sha256:304800e37e936d4b8e7337ca23d3208399718db056afbd373881a2b6cb8eafb2`  
+		Last Modified: Tue, 02 Aug 2016 16:53:08 GMT  
+		Size: 132.0 B
+	-	`sha256:1fff72a9537e7e3b7e47158d43f7e44aa06ed37a0a98b9578960fd0cafb55816`  
+		Last Modified: Tue, 02 Aug 2016 16:55:45 GMT  
+		Size: 2.4 MB (2370089 bytes)
+	-	`sha256:e05cfb27aa3dd0589a00836a4d2f9dd0ba3391e7a45eb76a533ea005f49dc3f6`  
+		Last Modified: Tue, 02 Aug 2016 16:55:57 GMT  
+		Size: 76.2 MB (76203579 bytes)
+	-	`sha256:e7c1caf8fd0e814a435939ae11d28e2a6bcbcbd1cfc6f28965f101e45d1167bf`  
+		Last Modified: Tue, 02 Aug 2016 16:55:42 GMT  
+		Size: 1.2 KB (1157 bytes)
+	-	`sha256:fd7010d23334a50bfbefeaf52554a226d328336d9d8359f88ebfb57f60fd6021`  
+		Last Modified: Tue, 02 Aug 2016 16:56:53 GMT  
+		Size: 21.7 MB (21707408 bytes)
+	-	`sha256:b3c49cfa2f574ecd7fadac1e81544e3ddd6000fef6f9adbbd3c21a21d8c7f38d`  
+		Last Modified: Tue, 02 Aug 2016 16:56:50 GMT  
+		Size: 10.4 MB (10418760 bytes)
 
 ## `redmine:3-passenger`
 
@@ -2100,7 +2100,7 @@ CMD ["passenger" "start"]
 ## `redmine:passenger`
 
 ```console
-$ docker pull redmine@sha256:ef50eff0125591d0805c3c42adf11772be92ef28627ff39a308e1cbcba7ac785
+$ docker pull redmine@sha256:2ad7162365f9b2025196fef96ead1bf13e6261a34c040b6b637e9570eaf99143
 ```
 
 -	Platforms:
@@ -2110,135 +2110,135 @@ $ docker pull redmine@sha256:ef50eff0125591d0805c3c42adf11772be92ef28627ff39a308
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.4 MB (267356784 bytes)**  
+-	Total Size: **267.5 MB (267466541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2864e9baa493ced6eabef8e5a228f15fdd3f38422d7392e54b2f1c89a534c7bb`
+-	Image ID: `sha256:3aab91d8f306032629777a642721903b88942ee74933c576d0dd872672590615`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Fri, 10 Jun 2016 21:03:42 GMT
+# Tue, 02 Aug 2016 01:13:54 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		curl 		libffi-dev 		libgdbm3 		libssl-dev 		libyaml-dev 		procps 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 21:03:43 GMT
+# Tue, 02 Aug 2016 01:13:56 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Fri, 10 Jun 2016 22:52:28 GMT
+# Tue, 02 Aug 2016 01:27:00 GMT
 ENV RUBY_MAJOR=2.2
-# Fri, 10 Jun 2016 22:52:28 GMT
+# Tue, 02 Aug 2016 01:27:00 GMT
 ENV RUBY_VERSION=2.2.5
-# Fri, 10 Jun 2016 22:52:28 GMT
+# Tue, 02 Aug 2016 01:27:00 GMT
 ENV RUBY_DOWNLOAD_SHA256=30c4b31697a4ca4ea0c8db8ad30cf45e6690a0f09687e5d483c933c03ca335e3
-# Fri, 24 Jun 2016 01:32:17 GMT
+# Tue, 02 Aug 2016 01:27:01 GMT
 ENV RUBYGEMS_VERSION=2.6.6
-# Fri, 24 Jun 2016 01:37:26 GMT
+# Tue, 02 Aug 2016 01:32:08 GMT
 RUN set -ex 	&& buildDeps=' 		autoconf 		bison 		gcc 		libbz2-dev 		libgdbm-dev 		libglib2.0-dev 		libncurses-dev 		libreadline-dev 		libxml2-dev 		libxslt-dev 		make 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 	&& curl -fSL -o ruby.tar.gz "http://cache.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ruby-$RUBY_VERSION.tar.gz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/ruby 	&& tar -xzf ruby.tar.gz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.gz 	&& cd /usr/src/ruby 	&& { echo '#define ENABLE_PATH_CHECK 0'; echo; cat file.c; } > file.c.new && mv file.c.new file.c 	&& autoconf 	&& ./configure --disable-install-doc 	&& make -j"$(nproc)" 	&& make install 	&& apt-get purge -y --auto-remove $buildDeps 	&& gem update --system $RUBYGEMS_VERSION 	&& rm -r /usr/src/ruby
-# Fri, 24 Jun 2016 01:37:26 GMT
+# Tue, 02 Aug 2016 01:32:08 GMT
 ENV BUNDLER_VERSION=1.12.5
-# Fri, 24 Jun 2016 01:37:28 GMT
+# Tue, 02 Aug 2016 01:32:10 GMT
 RUN gem install bundler --version "$BUNDLER_VERSION"
-# Fri, 24 Jun 2016 01:37:29 GMT
+# Tue, 02 Aug 2016 01:32:11 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 24 Jun 2016 01:37:29 GMT
+# Tue, 02 Aug 2016 01:32:11 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 24 Jun 2016 01:37:29 GMT
+# Tue, 02 Aug 2016 01:32:11 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 24 Jun 2016 01:37:30 GMT
+# Tue, 02 Aug 2016 01:32:13 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Fri, 24 Jun 2016 01:37:31 GMT
+# Tue, 02 Aug 2016 01:32:13 GMT
 CMD ["irb"]
-# Fri, 24 Jun 2016 02:20:27 GMT
+# Tue, 02 Aug 2016 01:50:30 GMT
 RUN groupadd -r redmine && useradd -r -g redmine redmine
-# Fri, 24 Jun 2016 02:20:27 GMT
+# Tue, 02 Aug 2016 01:50:31 GMT
 ENV GOSU_VERSION=1.7
-# Fri, 24 Jun 2016 02:20:33 GMT
+# Tue, 02 Aug 2016 01:50:37 GMT
 RUN set -x 	&& curl -fSL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& curl -fSL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 24 Jun 2016 02:20:34 GMT
+# Tue, 02 Aug 2016 01:50:37 GMT
 ENV TINI_VERSION=v0.9.0
-# Fri, 24 Jun 2016 02:20:37 GMT
+# Tue, 02 Aug 2016 01:50:41 GMT
 RUN set -x 	&& curl -fSL -o /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini" 	&& curl -fSL -o /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5 	&& gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini 	&& rm -r "$GNUPGHOME" /usr/local/bin/tini.asc 	&& chmod +x /usr/local/bin/tini 	&& tini -h
-# Fri, 24 Jun 2016 02:22:10 GMT
+# Tue, 02 Aug 2016 01:52:14 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		imagemagick 		libmysqlclient18 		libpq5 		libsqlite3-0 				bzr 		git 		mercurial 		openssh-client 		subversion 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 02:22:11 GMT
+# Tue, 02 Aug 2016 01:52:15 GMT
 ENV RAILS_ENV=production
-# Fri, 24 Jun 2016 02:22:11 GMT
+# Tue, 02 Aug 2016 01:52:16 GMT
 WORKDIR /usr/src/redmine
-# Fri, 15 Jul 2016 20:50:30 GMT
+# Tue, 02 Aug 2016 16:46:11 GMT
 ENV REDMINE_VERSION=3.3.0
-# Fri, 15 Jul 2016 20:50:31 GMT
+# Tue, 02 Aug 2016 16:46:11 GMT
 ENV REDMINE_DOWNLOAD_MD5=0c0abb2d4efde455c3505d8caf01cb2d
-# Fri, 15 Jul 2016 20:50:36 GMT
+# Tue, 02 Aug 2016 16:46:16 GMT
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz 	&& echo "$REDMINE_DOWNLOAD_MD5 redmine.tar.gz" | md5sum -c - 	&& tar -xvf redmine.tar.gz --strip-components=1 	&& rm redmine.tar.gz files/delete.me log/delete.me 	&& mkdir -p tmp/pdf public/plugin_assets 	&& chown -R redmine:redmine ./
-# Fri, 15 Jul 2016 20:55:14 GMT
+# Tue, 02 Aug 2016 16:51:19 GMT
 RUN buildDeps='		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 15 Jul 2016 20:55:15 GMT
+# Tue, 02 Aug 2016 16:51:20 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 15 Jul 2016 20:55:16 GMT
+# Tue, 02 Aug 2016 16:51:22 GMT
 COPY file:58d2440ac347219d708111ff008abc0f4ff8cb9201b7893105b66b0ccf0a2521 in /
-# Fri, 15 Jul 2016 20:55:17 GMT
+# Tue, 02 Aug 2016 16:51:22 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 15 Jul 2016 20:55:17 GMT
+# Tue, 02 Aug 2016 16:51:23 GMT
 EXPOSE 3000/tcp
-# Fri, 15 Jul 2016 20:55:18 GMT
+# Tue, 02 Aug 2016 16:51:24 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Fri, 15 Jul 2016 20:55:19 GMT
-ENV PASSENGER_VERSION=5.0.29
-# Fri, 15 Jul 2016 20:56:37 GMT
+# Tue, 02 Aug 2016 16:51:26 GMT
+ENV PASSENGER_VERSION=5.0.30
+# Tue, 02 Aug 2016 16:52:51 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 15 Jul 2016 20:56:40 GMT
+# Tue, 02 Aug 2016 16:52:54 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Fri, 15 Jul 2016 20:56:40 GMT
+# Tue, 02 Aug 2016 16:52:55 GMT
 CMD ["passenger" "start"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:a49b446cc15b78164ec1c32720cf7e4ab8bac96d55845048f992a5aa798203af`  
-		Last Modified: Thu, 23 Jun 2016 21:57:55 GMT  
-		Size: 13.7 MB (13672111 bytes)
-	-	`sha256:8d27130dcbaff01887d70f8b6fcb0a2d54bbceb86a940d2c9e2e3336c9789200`  
-		Last Modified: Thu, 23 Jun 2016 21:57:46 GMT  
-		Size: 203.0 B
-	-	`sha256:902182b2d33e2db7a5e63a5ed68500e26e4b26f42ad1149407dd78f941ead0e9`  
-		Last Modified: Fri, 24 Jun 2016 01:59:54 GMT  
-		Size: 33.6 MB (33579941 bytes)
-	-	`sha256:80032c2acdb27350953362a73dccb3bb1cd7349775c2833831a9aa7dfa58cba7`  
-		Last Modified: Fri, 24 Jun 2016 01:59:43 GMT  
-		Size: 557.3 KB (557259 bytes)
-	-	`sha256:fc954da8ac0ed2d93a07d9222ff8f3c73b6d346ed56ca0d258dd3aa59b1d341b`  
-		Last Modified: Fri, 24 Jun 2016 01:59:43 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:5e51c641b978ba0004deb05c92048bb81c519060e8d009a3e79f22f3c0863907`  
+		Last Modified: Tue, 02 Aug 2016 01:43:46 GMT  
+		Size: 13.7 MB (13654999 bytes)
+	-	`sha256:bde819570a66d2224ed174073eb3abcba8b3985050ce80aa9810e1a6ddcf356d`  
+		Last Modified: Tue, 02 Aug 2016 01:43:40 GMT  
+		Size: 204.0 B
+	-	`sha256:f2140563ccc6502bff7592f89c6969c49739895ea0459b39f768884e2e46831f`  
+		Last Modified: Tue, 02 Aug 2016 01:46:09 GMT  
+		Size: 33.6 MB (33597861 bytes)
+	-	`sha256:c8ea9232701950d0d89203bc6f6195075b3a643049001573bed1af025082bdde`  
+		Last Modified: Tue, 02 Aug 2016 01:45:58 GMT  
+		Size: 557.3 KB (557295 bytes)
+	-	`sha256:7601efebf92d2e9554d2120f4d5bfb5fe96ddf82ba7d34d98da535091f2cfb0a`  
+		Last Modified: Tue, 02 Aug 2016 01:45:58 GMT  
 		Size: 161.0 B
-	-	`sha256:61f7928e0153cd74ddef3f2166a913557d74f187d76a4f99342ba5c141991338`  
-		Last Modified: Fri, 24 Jun 2016 02:44:55 GMT  
-		Size: 2.0 KB (2041 bytes)
-	-	`sha256:caa65198443f9adf885c30022db3486f6cf624d7e87ce59af47f68144f169fec`  
-		Last Modified: Fri, 24 Jun 2016 02:44:52 GMT  
-		Size: 807.9 KB (807926 bytes)
-	-	`sha256:faba7721aa382faff80c35b8425e71af1a62aaca52e0a9d8303fc58fb831e946`  
-		Last Modified: Fri, 24 Jun 2016 02:44:51 GMT  
-		Size: 7.1 KB (7114 bytes)
-	-	`sha256:c54110c65e5e668f50dfeb6f498a0dd1fba44ce412115e25199ad819376814ec`  
-		Last Modified: Fri, 24 Jun 2016 02:45:08 GMT  
-		Size: 56.8 MB (56791466 bytes)
-	-	`sha256:77ef9ec5ac6ac6e5e8bdd30aa50087bfb81a69acde49fde54220209000fd74c3`  
-		Last Modified: Fri, 24 Jun 2016 02:44:49 GMT  
-		Size: 133.0 B
-	-	`sha256:9fba566f307bb3d8a5fe4b0c4918b416b31e2646a00dca043d00da2621097ae0`  
-		Last Modified: Fri, 15 Jul 2016 20:58:07 GMT  
-		Size: 2.4 MB (2370086 bytes)
-	-	`sha256:e3c17b67afbb20981e435169df3de027399ff1f0f5669b4d91f9c270e09694d9`  
-		Last Modified: Fri, 15 Jul 2016 20:58:21 GMT  
-		Size: 76.1 MB (76065435 bytes)
-	-	`sha256:a97ca26ee133e4922115d798c6543fa190cafe8f8d2966400b5f25a9a9e2564f`  
-		Last Modified: Fri, 15 Jul 2016 20:58:06 GMT  
-		Size: 1.2 KB (1158 bytes)
-	-	`sha256:bd7ff0d0fc7affed81266a6e1e002a5387e0ce22bac4bebeb7e4e16f15fced7f`  
-		Last Modified: Fri, 15 Jul 2016 20:59:14 GMT  
-		Size: 21.7 MB (21729300 bytes)
-	-	`sha256:db2eca55e16dc8d03068bc7a1e58d69ae04e797dfe73bbd5867ab95a898ec184`  
-		Last Modified: Fri, 15 Jul 2016 20:59:11 GMT  
-		Size: 10.4 MB (10419915 bytes)
+	-	`sha256:8da514fc3bd06ffc1acfe31693038f5d6775e62fc8de6b66b9f6b3aa8ae49721`  
+		Last Modified: Tue, 02 Aug 2016 16:53:12 GMT  
+		Size: 2.0 KB (2039 bytes)
+	-	`sha256:ab2f424de4ae2351451eb6ff17aa662ec13b6789bfe5f9d717dc6bc9eb77bc84`  
+		Last Modified: Tue, 02 Aug 2016 16:53:12 GMT  
+		Size: 807.9 KB (807919 bytes)
+	-	`sha256:84337851087ae3f6faa6fc20f194c8a31f50ff0a2fbde6cd39664a1a184f8249`  
+		Last Modified: Tue, 02 Aug 2016 16:53:11 GMT  
+		Size: 7.1 KB (7109 bytes)
+	-	`sha256:e5be001836e1a67e42e443eb43b8ff7b30d1e369b3e4f16a52de804effd3d1c8`  
+		Last Modified: Tue, 02 Aug 2016 16:53:29 GMT  
+		Size: 56.8 MB (56772218 bytes)
+	-	`sha256:304800e37e936d4b8e7337ca23d3208399718db056afbd373881a2b6cb8eafb2`  
+		Last Modified: Tue, 02 Aug 2016 16:53:08 GMT  
+		Size: 132.0 B
+	-	`sha256:1fff72a9537e7e3b7e47158d43f7e44aa06ed37a0a98b9578960fd0cafb55816`  
+		Last Modified: Tue, 02 Aug 2016 16:55:45 GMT  
+		Size: 2.4 MB (2370089 bytes)
+	-	`sha256:e05cfb27aa3dd0589a00836a4d2f9dd0ba3391e7a45eb76a533ea005f49dc3f6`  
+		Last Modified: Tue, 02 Aug 2016 16:55:57 GMT  
+		Size: 76.2 MB (76203579 bytes)
+	-	`sha256:e7c1caf8fd0e814a435939ae11d28e2a6bcbcbd1cfc6f28965f101e45d1167bf`  
+		Last Modified: Tue, 02 Aug 2016 16:55:42 GMT  
+		Size: 1.2 KB (1157 bytes)
+	-	`sha256:fd7010d23334a50bfbefeaf52554a226d328336d9d8359f88ebfb57f60fd6021`  
+		Last Modified: Tue, 02 Aug 2016 16:56:53 GMT  
+		Size: 21.7 MB (21707408 bytes)
+	-	`sha256:b3c49cfa2f574ecd7fadac1e81544e3ddd6000fef6f9adbbd3c21a21d8c7f38d`  
+		Last Modified: Tue, 02 Aug 2016 16:56:50 GMT  
+		Size: 10.4 MB (10418760 bytes)
