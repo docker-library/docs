@@ -89,7 +89,7 @@ You can also use `couchdb` as the base image for your own couchdb instance and p
 Example Dockerfile:
 
 ```dockerfile
-FROM couchdb:latest
+FROM couchdb
 
 COPY local.ini /usr/local/etc/couchdb/
 ```

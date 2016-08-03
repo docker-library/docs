@@ -58,7 +58,7 @@ $ Rscript myscript.R
 Use `r-base` as a base for your own Dockerfiles. For instance, something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM r-base:latest
+FROM r-base
 COPY . /usr/local/src/myscripts
 WORKDIR /usr/local/src/myscripts
 CMD ["Rscript", "myscript.R"]
