@@ -28,7 +28,7 @@ To start the Crate cluster in containers distributed to three hosts without mult
     --volume /mnt/data:/data \
     --ulimit nofile=65535 \
     --ulimit memlock=9223372036854775807 \
-        crate:latest \
+        crate \
         crate \
           -Des.cluster.name=crate-cluster \
           -Des.node.name=crate1 \
