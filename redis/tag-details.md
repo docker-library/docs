@@ -1167,7 +1167,7 @@ CMD ["redis-server"]
 ## `redis:3.2-alpine`
 
 ```console
-$ docker pull redis@sha256:62496a4357f2e75db743c3d448da7adb16bc88a53e07b12ea36113d99efbf9ae
+$ docker pull redis@sha256:175209a5383dfd9102452d744205302358f9c3101253550a63da38909f75b462
 ```
 
 -	Platforms:
@@ -1177,9 +1177,9 @@ $ docker pull redis@sha256:62496a4357f2e75db743c3d448da7adb16bc88a53e07b12ea3611
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.6 MB (7637510 bytes)**  
+-	Total Size: **8.0 MB (8016114 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf00bce24717b96ed87d34842238bc09ee40317ec243debcad227d85350f6dea`
+-	Image ID: `sha256:46838178915bff38b86371ceb98263d7ceb7a004167d634889629263065bc9f6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -1190,27 +1190,27 @@ ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
 RUN addgroup -S redis && adduser -S -G redis redis
 # Thu, 23 Jun 2016 21:59:06 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Tue, 02 Aug 2016 01:03:08 GMT
-ENV REDIS_VERSION=3.2.2
-# Tue, 02 Aug 2016 01:03:09 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.2.2.tar.gz
-# Tue, 02 Aug 2016 01:03:09 GMT
-ENV REDIS_DOWNLOAD_SHA1=3141be9757532139f445bd5f6f4fae293bc33d27
-# Tue, 02 Aug 2016 01:04:05 GMT
+# Wed, 03 Aug 2016 22:02:17 GMT
+ENV REDIS_VERSION=3.2.3
+# Wed, 03 Aug 2016 22:02:17 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.2.3.tar.gz
+# Wed, 03 Aug 2016 22:02:18 GMT
+ENV REDIS_DOWNLOAD_SHA1=92d6d93ef2efc91e595c8bf578bf72baff397507
+# Wed, 03 Aug 2016 22:03:15 GMT
 RUN set -x 	&& apk add --no-cache --virtual .build-deps 		gcc 		linux-headers 		make 		musl-dev 		tar 	&& wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL" 	&& echo "$REDIS_DOWNLOAD_SHA1 *redis.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/redis 	&& tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1 	&& rm redis.tar.gz 	&& make -C /usr/src/redis 	&& make -C /usr/src/redis install 	&& rm -r /usr/src/redis 	&& apk del .build-deps
-# Tue, 02 Aug 2016 01:04:07 GMT
+# Wed, 03 Aug 2016 22:03:17 GMT
 RUN mkdir /data && chown redis:redis /data
-# Tue, 02 Aug 2016 01:04:07 GMT
+# Wed, 03 Aug 2016 22:03:18 GMT
 VOLUME [/data]
-# Tue, 02 Aug 2016 01:04:07 GMT
+# Wed, 03 Aug 2016 22:03:19 GMT
 WORKDIR /data
-# Tue, 02 Aug 2016 01:04:08 GMT
+# Wed, 03 Aug 2016 22:03:20 GMT
 COPY file:869e36f581ffa336718eae9150af15c758eb4bab174ab05f374d099dd811cf5d in /usr/local/bin/
-# Tue, 02 Aug 2016 01:04:08 GMT
+# Wed, 03 Aug 2016 22:03:20 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 02 Aug 2016 01:04:09 GMT
+# Wed, 03 Aug 2016 22:03:21 GMT
 EXPOSE 6379/tcp
-# Tue, 02 Aug 2016 01:04:09 GMT
+# Wed, 03 Aug 2016 22:03:22 GMT
 CMD ["redis-server"]
 ```
 
@@ -1224,14 +1224,14 @@ CMD ["redis-server"]
 	-	`sha256:0e8c804c16443f8c8b05d1a0b9fc07ac6b68e8225368e6382f8c812d306022c8`  
 		Last Modified: Thu, 23 Jun 2016 22:00:19 GMT  
 		Size: 7.9 KB (7925 bytes)
-	-	`sha256:82da6fbd82ddfc10a27a95302627367715a4a59bfb3bb6b6cb2e1ff06fd7f197`  
-		Last Modified: Tue, 02 Aug 2016 01:07:14 GMT  
-		Size: 5.3 MB (5286890 bytes)
-	-	`sha256:ae0a4a787a20ff0578a65f59378b0b474c0df729aaa521362923dab7a87f4b0e`  
-		Last Modified: Tue, 02 Aug 2016 01:07:12 GMT  
-		Size: 99.0 B
-	-	`sha256:c1e3916dec7cd618b853711562b7a8a9105eb205aa6307606bbae418f06fad73`  
-		Last Modified: Tue, 02 Aug 2016 01:07:12 GMT  
+	-	`sha256:d8b4de369957b5e06fe15d7be504d21c35fb1c50b5bfdc5f043356a782da85b9`  
+		Last Modified: Wed, 03 Aug 2016 22:06:16 GMT  
+		Size: 5.7 MB (5665496 bytes)
+	-	`sha256:afc57913b3192d71503330de2b5a281009bb269c721ba89cbc12f506b28c7139`  
+		Last Modified: Wed, 03 Aug 2016 22:06:12 GMT  
+		Size: 97.0 B
+	-	`sha256:a3dc4fe0f83dfd762fea17b9b539101693c610001618e12071694741d0e4684b`  
+		Last Modified: Wed, 03 Aug 2016 22:06:13 GMT  
 		Size: 814.0 B
 
 ## `redis:3-alpine`
