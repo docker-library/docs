@@ -740,7 +740,7 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ## `django:python2-onbuild`
 
 ```console
-$ docker pull django@sha256:7427057fa555205ce6926fdb51b93d1d02f2657cbd9267a668a85994bea155a4
+$ docker pull django@sha256:9c6317e3f88b82b47e157285ab42b4328a96e8755881af032693e8c51d77dfef
 ```
 
 -	Platforms:
@@ -750,81 +750,81 @@ $ docker pull django@sha256:7427057fa555205ce6926fdb51b93d1d02f2657cbd9267a668a8
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.5 MB (280531160 bytes)**  
+-	Total Size: **282.0 MB (281965842 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90175561cad2541c26c9b01e2b6a3d21d08b2d21cda827c63f659852b5b1cced`
+-	Image ID: `sha256:e0637fadde7bafd3c81a5b9585d1b5c4dd4851f5b03940828f256d6d025ed6bf`
 -	Default Command: `["python","manage.py","runserver","0.0.0.0:8000"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:39:19 GMT
+# Thu, 28 Jul 2016 18:23:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 20:09:38 GMT
-RUN apt-get purge -y python.*
-# Fri, 10 Jun 2016 20:09:38 GMT
+# Mon, 01 Aug 2016 23:28:08 GMT
+RUN set -ex 	&& for bits in 		/usr/bin/*2to3* 		/usr/bin/*python* 		/usr/bin/pdb* 		/usr/bin/py* 	; do 		dpkg-divert --rename "$bits"; 	done
+# Mon, 01 Aug 2016 23:28:09 GMT
 ENV LANG=C.UTF-8
-# Fri, 10 Jun 2016 20:26:56 GMT
+# Mon, 01 Aug 2016 23:28:10 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Tue, 28 Jun 2016 22:59:39 GMT
+# Mon, 01 Aug 2016 23:28:11 GMT
 ENV PYTHON_VERSION=2.7.12
-# Tue, 28 Jun 2016 22:59:40 GMT
+# Mon, 01 Aug 2016 23:28:12 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Tue, 19 Jul 2016 20:04:04 GMT
+# Mon, 01 Aug 2016 23:32:12 GMT
 RUN set -ex 	&& buildDeps=' 		tcl-dev 		tk-dev 	' 	&& runDeps=' 		tcl 		tk 	' 	&& apt-get update && apt-get install -y $runDeps $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-shared 		--enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 		    \( -type d -a -name test -o -name tests \) 		    -o 		    \( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 19 Jul 2016 20:04:08 GMT
+# Mon, 01 Aug 2016 23:32:16 GMT
 RUN pip install --no-cache-dir virtualenv
-# Tue, 19 Jul 2016 20:04:09 GMT
+# Mon, 01 Aug 2016 23:32:17 GMT
 CMD ["python2"]
-# Tue, 19 Jul 2016 20:20:52 GMT
+# Mon, 01 Aug 2016 23:43:27 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 19 Jul 2016 20:20:52 GMT
+# Mon, 01 Aug 2016 23:43:28 GMT
 WORKDIR /usr/src/app
-# Tue, 19 Jul 2016 20:20:53 GMT
+# Mon, 01 Aug 2016 23:43:29 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Tue, 19 Jul 2016 20:20:54 GMT
+# Mon, 01 Aug 2016 23:43:29 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Tue, 19 Jul 2016 20:20:54 GMT
+# Mon, 01 Aug 2016 23:43:30 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 19 Jul 2016 23:10:18 GMT
+# Wed, 03 Aug 2016 21:43:46 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 19 Jul 2016 23:10:19 GMT
+# Wed, 03 Aug 2016 21:43:47 GMT
 EXPOSE 8000/tcp
-# Tue, 19 Jul 2016 23:10:20 GMT
+# Wed, 03 Aug 2016 21:43:47 GMT
 CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:abb742d515b4cf197291ef3132f11462aaadc5cfbbe362f4ae4f6f7dcdb6453e`  
-		Last Modified: Thu, 09 Jun 2016 21:47:38 GMT  
-		Size: 129.7 MB (129704383 bytes)
-	-	`sha256:7663bd2e167e1baec490bc208bdf854dae81b324bed9595edecc9136f06da7fe`  
-		Last Modified: Wed, 15 Jun 2016 21:14:50 GMT  
-		Size: 242.5 KB (242498 bytes)
-	-	`sha256:b68f5aeb12b3e87ab85cd6da870e24504adb9f53845c99e1ee478f537f2a932a`  
-		Last Modified: Tue, 19 Jul 2016 21:36:56 GMT  
-		Size: 18.5 MB (18531429 bytes)
-	-	`sha256:a0ff23346326ed09a5305df63e1d48d629cdf5a69d935d60ce7567fc6b6ecc12`  
-		Last Modified: Tue, 19 Jul 2016 21:36:48 GMT  
-		Size: 3.3 MB (3257142 bytes)
-	-	`sha256:7c4b07a5274dfabe447ac40e4908d636fe880917cce8b125af74af2639e3b504`  
-		Last Modified: Tue, 19 Jul 2016 21:40:06 GMT  
-		Size: 128.0 B
-	-	`sha256:bf51096b9d3c0d25a44957c51dd5bbb503d7e671e5c439e3ef3c8465c1f0ad8b`  
-		Last Modified: Tue, 19 Jul 2016 23:10:38 GMT  
-		Size: 16.4 MB (16370455 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
+		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
+		Size: 129.7 MB (129692532 bytes)
+	-	`sha256:2b5e123cc71cd3b4d168bfec44bf359a2de7bf1dc0a569cd60e0da8e65f865b7`  
+		Last Modified: Tue, 02 Aug 2016 00:33:18 GMT  
+		Size: 1.7 MB (1736275 bytes)
+	-	`sha256:1eb3ddaf042fac673610639eb1e785000b990450a5bb98df617263457e78199f`  
+		Last Modified: Tue, 02 Aug 2016 00:33:25 GMT  
+		Size: 18.5 MB (18515833 bytes)
+	-	`sha256:d2b82fb13fb4aee19dda8bf0a1c796baf3c538bf56bdb6aaccb064b70a837167`  
+		Last Modified: Tue, 02 Aug 2016 00:33:19 GMT  
+		Size: 3.3 MB (3257149 bytes)
+	-	`sha256:7580e5ce40420fb9ce7656f57e549164d1718704c45001978e4546295861d139`  
+		Last Modified: Tue, 02 Aug 2016 00:36:18 GMT  
+		Size: 125.0 B
+	-	`sha256:cf6cc9c06b1cf230386ce6baeeb7edd6d496d7576967ae948054a0daa96473d4`  
+		Last Modified: Wed, 03 Aug 2016 21:46:56 GMT  
+		Size: 16.4 MB (16375954 bytes)
