@@ -593,7 +593,7 @@ CMD ["iex"]
 ## `elixir:1.2-slim`
 
 ```console
-$ docker pull elixir@sha256:e8c1f72ed66988c2ec44ad72606427037f3995690c397196e7e376cef778bd54
+$ docker pull elixir@sha256:625825f649843e02eacee876394136240f93c4ec88b78c501d2e97e65db8efb7
 ```
 
 -	Platforms:
@@ -603,37 +603,37 @@ $ docker pull elixir@sha256:e8c1f72ed66988c2ec44ad72606427037f3995690c397196e7e3
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.1 MB (120124850 bytes)**  
+-	Total Size: **120.1 MB (120094639 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17ddfd59c0081ae30ad442a54d32dbc3da8638b7a2ce17c3a5a7362a14c5bb22`
+-	Image ID: `sha256:7cd973687dab7803322e0d411ca926b573777aaf40973256707aeba2504e72ae`
 -	Default Command: `["iex"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Fri, 15 Jul 2016 17:40:09 GMT
+# Thu, 28 Jul 2016 23:47:25 GMT
 ENV OTP_VERSION=18.3.4.1
-# Fri, 15 Jul 2016 17:50:31 GMT
+# Thu, 28 Jul 2016 23:57:46 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" 	&& OTP_DOWNLOAD_SHA256="3b9852083f3e5cf0668757af76833547233b8e67f4c28b51a6f49d4625bb23de" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.0 		libsctp1 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		gcc 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& ./configure --enable-sctp 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Fri, 15 Jul 2016 17:50:32 GMT
+# Thu, 28 Jul 2016 23:57:46 GMT
 CMD ["erl"]
-# Fri, 15 Jul 2016 19:35:29 GMT
+# Wed, 03 Aug 2016 21:02:16 GMT
 ENV ELIXIR_VERSION=v1.2.6 LANG=C.UTF-8
-# Fri, 15 Jul 2016 19:36:52 GMT
+# Wed, 03 Aug 2016 21:03:37 GMT
 RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION#*@}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="bb4324eb7c9568fa30f0f2ed3c1b86ebbd5251f7c820f1beb0e5eed5fb8a9729" 	&& buildDeps=' 		ca-certificates 		curl 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 Jul 2016 19:36:53 GMT
+# Wed, 03 Aug 2016 21:03:38 GMT
 CMD ["iex"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:f346d7737a40e637a07ef16ba05de7b27ebc7ddc0c14b383bd00c7a91f1468e8`  
-		Last Modified: Fri, 15 Jul 2016 17:54:23 GMT  
-		Size: 65.3 MB (65267826 bytes)
-	-	`sha256:f9b7edaeb8719421397d6abeb01b3ca576de4e217b8da09faddeba3fedff2eef`  
-		Last Modified: Fri, 15 Jul 2016 19:37:02 GMT  
-		Size: 3.5 MB (3504489 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:71cb7ff0105a8764fde9ecf875e1211ba1a003c77bd38977556518f26ea3f04a`  
+		Last Modified: Thu, 28 Jul 2016 23:58:09 GMT  
+		Size: 65.2 MB (65244648 bytes)
+	-	`sha256:41a40075b145317e450297568d3f7aded64836b63b1877a834e683d1bdbcea21`  
+		Last Modified: Wed, 03 Aug 2016 21:03:48 GMT  
+		Size: 3.5 MB (3484380 bytes)

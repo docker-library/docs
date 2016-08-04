@@ -599,7 +599,7 @@ CMD ["redis-server"]
 ## `redis:3.2`
 
 ```console
-$ docker pull redis@sha256:47b121ff60fa791bb2c7d355e05c0fd0ef3060251741561c38a15bf865a6b1b0
+$ docker pull redis@sha256:5d6848c82ab452ce6046493bc7c0fefa894784037803ba61f1c51f064ae68129
 ```
 
 -	Platforms:
@@ -609,9 +609,9 @@ $ docker pull redis@sha256:47b121ff60fa791bb2c7d355e05c0fd0ef3060251741561c38a15
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.2 MB (74249958 bytes)**  
+-	Total Size: **74.2 MB (74249912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d43368b263260a4aa6c67461109f2058bdd39874b2bf9a202a33e295f978635`
+-	Image ID: `sha256:e5181bd07b8e6af7c8f42d29ce895d352cbe80d0876af2ca5fc9a0ea0fff3ed1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -628,27 +628,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 ENV GOSU_VERSION=1.7
 # Tue, 02 Aug 2016 00:51:47 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Tue, 02 Aug 2016 00:57:18 GMT
-ENV REDIS_VERSION=3.2.2
-# Tue, 02 Aug 2016 00:57:18 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.2.2.tar.gz
-# Tue, 02 Aug 2016 00:57:19 GMT
-ENV REDIS_DOWNLOAD_SHA1=3141be9757532139f445bd5f6f4fae293bc33d27
-# Tue, 02 Aug 2016 00:59:30 GMT
+# Wed, 03 Aug 2016 21:56:32 GMT
+ENV REDIS_VERSION=3.2.3
+# Wed, 03 Aug 2016 21:56:32 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.2.3.tar.gz
+# Wed, 03 Aug 2016 21:56:33 GMT
+ENV REDIS_DOWNLOAD_SHA1=92d6d93ef2efc91e595c8bf578bf72baff397507
+# Wed, 03 Aug 2016 21:58:43 GMT
 RUN buildDeps='gcc libc6-dev make' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL" 	&& echo "$REDIS_DOWNLOAD_SHA1 *redis.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/redis 	&& tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1 	&& rm redis.tar.gz 	&& make -C /usr/src/redis 	&& make -C /usr/src/redis install 	&& rm -r /usr/src/redis 	&& apt-get purge -y --auto-remove $buildDeps
-# Tue, 02 Aug 2016 00:59:32 GMT
+# Wed, 03 Aug 2016 21:58:45 GMT
 RUN mkdir /data && chown redis:redis /data
-# Tue, 02 Aug 2016 00:59:32 GMT
+# Wed, 03 Aug 2016 21:58:46 GMT
 VOLUME [/data]
-# Tue, 02 Aug 2016 00:59:33 GMT
+# Wed, 03 Aug 2016 21:58:47 GMT
 WORKDIR /data
-# Tue, 02 Aug 2016 00:59:33 GMT
+# Wed, 03 Aug 2016 21:58:48 GMT
 COPY file:623a677e44e5f65f2b0c0d4a65ca480984f4f1195d55853520678dec1c46c410 in /usr/local/bin/
-# Tue, 02 Aug 2016 00:59:34 GMT
+# Wed, 03 Aug 2016 21:58:48 GMT
 ENTRYPOINT &{["docker-entrypoint.sh"]}
-# Tue, 02 Aug 2016 00:59:34 GMT
+# Wed, 03 Aug 2016 21:58:49 GMT
 EXPOSE 6379/tcp
-# Tue, 02 Aug 2016 00:59:34 GMT
+# Wed, 03 Aug 2016 21:58:50 GMT
 CMD ["redis-server"]
 ```
 
@@ -665,15 +665,15 @@ CMD ["redis-server"]
 	-	`sha256:18f7595fe6936868f8503042be938038d3ea2f37128a867c7ac6bdbc648b1dfe`  
 		Last Modified: Tue, 02 Aug 2016 01:04:20 GMT  
 		Size: 807.9 KB (807935 bytes)
-	-	`sha256:8fcc2ef61a98516365daa1999f2c68d94401e8564ece83834e32ffdba2a90b19`  
-		Last Modified: Tue, 02 Aug 2016 01:05:42 GMT  
-		Size: 5.5 MB (5464253 bytes)
-	-	`sha256:4609f96f13839adbb6451aa398de9c216f4a8e3c75bb4aac949f487923408fc5`  
-		Last Modified: Tue, 02 Aug 2016 01:05:40 GMT  
-		Size: 96.0 B
-	-	`sha256:f016915f91e5d282ad61862816c5ad0f9216e8cd2d20650dd6f30cc0a791a600`  
-		Last Modified: Tue, 02 Aug 2016 01:05:40 GMT  
-		Size: 822.0 B
+	-	`sha256:a9a3bf83ed85728de87b355ee45410c4315404fd4937b54d37afd76493dcead9`  
+		Last Modified: Wed, 03 Aug 2016 22:04:37 GMT  
+		Size: 5.5 MB (5464206 bytes)
+	-	`sha256:bc38414eb438b74cacd78e7001dba25f9f9854918a36e7786c12e7f9729fdf1c`  
+		Last Modified: Wed, 03 Aug 2016 22:04:35 GMT  
+		Size: 98.0 B
+	-	`sha256:3ee3ab1b6aa12b385c809162e2d89eaf42f27990d57acf6910d3d11613fc680f`  
+		Last Modified: Wed, 03 Aug 2016 22:04:35 GMT  
+		Size: 821.0 B
 
 ## `redis:3`
 
