@@ -1143,7 +1143,7 @@ CMD ["elasticsearch"]
 ## `elasticsearch:2.1.2`
 
 ```console
-$ docker pull elasticsearch@sha256:f5c0415b473d83a16ad15b162131a3627a5f8c171cffd535e92b1fb0de8bdb00
+$ docker pull elasticsearch@sha256:8a568e0f3c4f0325ad15b88b4ab1195d999561636ad19ae28842995d3b470032
 ```
 
 -	Platforms:
@@ -1153,115 +1153,115 @@ $ docker pull elasticsearch@sha256:f5c0415b473d83a16ad15b162131a3627a5f8c171cffd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.0 MB (153974128 bytes)**  
+-	Total Size: **153.9 MB (153904202 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e13d5eb4306a6b6764248ca35468fc98c19a569e15a83bb094f75be38f9e448d`
+-	Image ID: `sha256:222946e23c631a3b32db0ac04af88becd0790081a15587416b99fb07fed1f90f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 09 Jun 2016 23:11:43 GMT
+# Wed, 03 Aug 2016 20:45:22 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:11:48 GMT
+# Wed, 03 Aug 2016 20:45:29 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Thu, 09 Jun 2016 23:12:05 GMT
+# Wed, 03 Aug 2016 20:45:47 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Thu, 07 Jul 2016 20:10:02 GMT
+# Wed, 03 Aug 2016 20:58:50 GMT
 ENV ELASTICSEARCH_VERSION=2.1.2
-# Thu, 07 Jul 2016 20:10:02 GMT
+# Wed, 03 Aug 2016 20:58:50 GMT
 ENV ELASTICSEARCH_REPO_BASE=http://packages.elasticsearch.org/elasticsearch/2.x/debian
-# Thu, 07 Jul 2016 20:10:04 GMT
+# Wed, 03 Aug 2016 20:58:52 GMT
 RUN echo "deb $ELASTICSEARCH_REPO_BASE stable main" > /etc/apt/sources.list.d/elasticsearch.list
-# Thu, 07 Jul 2016 20:11:05 GMT
+# Wed, 03 Aug 2016 20:59:53 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 07 Jul 2016 20:11:05 GMT
+# Wed, 03 Aug 2016 20:59:54 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 07 Jul 2016 20:11:06 GMT
+# Wed, 03 Aug 2016 20:59:55 GMT
 WORKDIR /usr/share/elasticsearch
-# Thu, 07 Jul 2016 20:11:07 GMT
+# Wed, 03 Aug 2016 20:59:57 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Thu, 07 Jul 2016 20:11:08 GMT
+# Wed, 03 Aug 2016 20:59:58 GMT
 COPY dir:5ec5fadebeaa388fd27b7738b6b8d6306c5b8b7d9ef468d45d3efa4b858b338f in ./config
-# Thu, 07 Jul 2016 20:11:09 GMT
+# Wed, 03 Aug 2016 20:59:59 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Thu, 07 Jul 2016 20:11:10 GMT
+# Wed, 03 Aug 2016 21:00:00 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in /
-# Thu, 07 Jul 2016 20:11:10 GMT
+# Wed, 03 Aug 2016 21:00:01 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Thu, 07 Jul 2016 20:11:11 GMT
+# Wed, 03 Aug 2016 21:00:02 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Thu, 07 Jul 2016 20:11:11 GMT
+# Wed, 03 Aug 2016 21:00:03 GMT
 CMD ["elasticsearch"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:79f385f1115e109d3ed7740a55ea72064b5c7409b60c2c3df63906d1052ebcf6`  
-		Last Modified: Mon, 27 Jun 2016 16:40:34 GMT  
-		Size: 807.9 KB (807931 bytes)
-	-	`sha256:ef4e10d7f225af978b6c1d6ce74866d7e65f577241cd94ce0ae7aa7f540d647b`  
-		Last Modified: Mon, 27 Jun 2016 16:40:33 GMT  
-		Size: 1.4 KB (1446 bytes)
-	-	`sha256:1e68e37386b9c829a4a6337f675739b7a4aaa85db9153b5dd4bcced9d5ee76ca`  
-		Last Modified: Thu, 07 Jul 2016 20:16:33 GMT  
-		Size: 226.0 B
-	-	`sha256:e45822f17627a0ce2f0eb9b5f37445d36b49945a9968fa3dffbfff1c3a780e47`  
-		Last Modified: Thu, 07 Jul 2016 20:16:37 GMT  
-		Size: 29.0 MB (29019810 bytes)
-	-	`sha256:e251d6f26e9e66acbaa4a25263360e2812bee98d19f59d8e077d93bb0de2c7c3`  
-		Last Modified: Thu, 07 Jul 2016 20:16:33 GMT  
-		Size: 215.0 B
-	-	`sha256:879933ab826fc3289cbfebcc2304c47a6aab922089d354552d690b5581619893`  
-		Last Modified: Thu, 07 Jul 2016 20:16:33 GMT  
-		Size: 541.0 B
-	-	`sha256:8cc37b8b3ec893fd43a15b760f6cd20fc22f6365bfe23f101e80fa512e6a1c52`  
-		Last Modified: Thu, 07 Jul 2016 20:16:33 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:b875ddc1a18feeb5e5d95ab1e783e59b952f6d9ec15438eb20ac012e6190f0c3`  
+		Last Modified: Wed, 03 Aug 2016 20:47:13 GMT  
+		Size: 807.9 KB (807933 bytes)
+	-	`sha256:b218b8ae55567c31bb9fc89900b023141b2ae57620522bf793cc976ce03c4576`  
+		Last Modified: Wed, 03 Aug 2016 20:47:12 GMT  
+		Size: 1.4 KB (1447 bytes)
+	-	`sha256:53693a20d2c6169ff0f95baaecfd6c582d52d60aa431550c408cbd8beccb2751`  
+		Last Modified: Wed, 03 Aug 2016 21:00:17 GMT  
+		Size: 227.0 B
+	-	`sha256:1327c96bd1180446637a740a43310f07229d36f9424461c34acab783b94cc33f`  
+		Last Modified: Wed, 03 Aug 2016 21:00:16 GMT  
+		Size: 29.0 MB (28998691 bytes)
+	-	`sha256:f88c3f02f76a01ab1209c4a6466795448dc8b6511dd8159afbc0c1c2660f6688`  
+		Last Modified: Wed, 03 Aug 2016 21:00:12 GMT  
+		Size: 213.0 B
+	-	`sha256:7bf5b7c7163cf74d2e607f57b7b8b3befa3afa5259983d268ae39ce53ad54c98`  
+		Last Modified: Wed, 03 Aug 2016 21:00:16 GMT  
+		Size: 539.0 B
+	-	`sha256:dab5005f699ca2ab6abeb707d399854999bacd28687b812e1c8d078b7ed7c8a9`  
+		Last Modified: Wed, 03 Aug 2016 21:00:13 GMT  
 		Size: 470.0 B
 
 ## `elasticsearch:2.1`
@@ -1763,7 +1763,7 @@ CMD ["elasticsearch"]
 ## `elasticsearch:2.3`
 
 ```console
-$ docker pull elasticsearch@sha256:d866f6945a401e9486dc54c5242665692855ae58d4f0c42439925e9e5d9370ed
+$ docker pull elasticsearch@sha256:02140fde6b635dff7fc50f89717e0ee4f18c11cf2cfb696a758b0d1eca25b470
 ```
 
 -	Platforms:
@@ -1773,115 +1773,115 @@ $ docker pull elasticsearch@sha256:d866f6945a401e9486dc54c5242665692855ae58d4f0c
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.5 MB (152513811 bytes)**  
+-	Total Size: **152.4 MB (152444694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0390797eb4feaa966b5e4e0dfecf02e509ead64bfd8ab03dc42965447a0c1eb`
+-	Image ID: `sha256:fc3c469a2353687d643019b0460ba1e35613bad99c25b8be7c1aa7976c3ea7b8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 09 Jun 2016 23:11:43 GMT
+# Wed, 03 Aug 2016 20:45:22 GMT
 ENV GOSU_VERSION=1.7
-# Thu, 09 Jun 2016 23:11:48 GMT
+# Wed, 03 Aug 2016 20:45:29 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Thu, 09 Jun 2016 23:12:05 GMT
+# Wed, 03 Aug 2016 20:45:47 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 08 Jul 2016 18:19:01 GMT
-ENV ELASTICSEARCH_VERSION=2.3.4
-# Fri, 08 Jul 2016 18:19:02 GMT
+# Wed, 03 Aug 2016 22:32:39 GMT
+ENV ELASTICSEARCH_VERSION=2.3.5
+# Wed, 03 Aug 2016 22:32:39 GMT
 ENV ELASTICSEARCH_REPO_BASE=http://packages.elasticsearch.org/elasticsearch/2.x/debian
-# Fri, 08 Jul 2016 18:19:03 GMT
+# Wed, 03 Aug 2016 22:32:41 GMT
 RUN echo "deb $ELASTICSEARCH_REPO_BASE stable main" > /etc/apt/sources.list.d/elasticsearch.list
-# Fri, 08 Jul 2016 18:20:02 GMT
+# Wed, 03 Aug 2016 22:33:43 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Jul 2016 18:20:02 GMT
+# Wed, 03 Aug 2016 22:33:43 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Jul 2016 18:20:03 GMT
+# Wed, 03 Aug 2016 22:33:43 GMT
 WORKDIR /usr/share/elasticsearch
-# Fri, 08 Jul 2016 18:20:04 GMT
+# Wed, 03 Aug 2016 22:33:45 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Fri, 08 Jul 2016 18:20:05 GMT
+# Wed, 03 Aug 2016 22:33:45 GMT
 COPY dir:5ec5fadebeaa388fd27b7738b6b8d6306c5b8b7d9ef468d45d3efa4b858b338f in ./config
-# Fri, 08 Jul 2016 18:20:06 GMT
+# Wed, 03 Aug 2016 22:33:46 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Fri, 08 Jul 2016 18:20:07 GMT
+# Wed, 03 Aug 2016 22:33:46 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in /
-# Fri, 08 Jul 2016 18:20:07 GMT
+# Wed, 03 Aug 2016 22:33:47 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Fri, 08 Jul 2016 18:20:08 GMT
+# Wed, 03 Aug 2016 22:33:47 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 08 Jul 2016 18:20:08 GMT
+# Wed, 03 Aug 2016 22:33:48 GMT
 CMD ["elasticsearch"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:79f385f1115e109d3ed7740a55ea72064b5c7409b60c2c3df63906d1052ebcf6`  
-		Last Modified: Mon, 27 Jun 2016 16:40:34 GMT  
-		Size: 807.9 KB (807931 bytes)
-	-	`sha256:ef4e10d7f225af978b6c1d6ce74866d7e65f577241cd94ce0ae7aa7f540d647b`  
-		Last Modified: Mon, 27 Jun 2016 16:40:33 GMT  
-		Size: 1.4 KB (1446 bytes)
-	-	`sha256:7718adde794fddba8ef660d04d31a268faf7a91c66b9d557dffdcbdd836cd789`  
-		Last Modified: Fri, 08 Jul 2016 18:22:11 GMT  
-		Size: 225.0 B
-	-	`sha256:659b7b49db7d1c5bfc1177340fd697e072fbd8fb59d657947127b7a1ad01a0a0`  
-		Last Modified: Fri, 08 Jul 2016 18:22:15 GMT  
-		Size: 27.6 MB (27559495 bytes)
-	-	`sha256:c7debea693509b493320bdcbb63c079b459cb69b17c21e2035bbfb915a5bc6d0`  
-		Last Modified: Fri, 08 Jul 2016 18:22:11 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
 		Size: 217.0 B
-	-	`sha256:b3db15ab8afafcaab332b8a85e273fd8dc51cf030f09362aa4ec666d2cdf1ee1`  
-		Last Modified: Fri, 08 Jul 2016 18:22:11 GMT  
-		Size: 539.0 B
-	-	`sha256:38c25943c55b4a8fa35d5d0743e363063a98693aeaeed102aadf89536039e215`  
-		Last Modified: Fri, 08 Jul 2016 18:22:11 GMT  
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:b875ddc1a18feeb5e5d95ab1e783e59b952f6d9ec15438eb20ac012e6190f0c3`  
+		Last Modified: Wed, 03 Aug 2016 20:47:13 GMT  
+		Size: 807.9 KB (807933 bytes)
+	-	`sha256:b218b8ae55567c31bb9fc89900b023141b2ae57620522bf793cc976ce03c4576`  
+		Last Modified: Wed, 03 Aug 2016 20:47:12 GMT  
+		Size: 1.4 KB (1447 bytes)
+	-	`sha256:622982e45d4c08c7a891dded614e48f33cf41c837a2d008ee268e9f63f93bd3c`  
+		Last Modified: Wed, 03 Aug 2016 22:36:19 GMT  
+		Size: 227.0 B
+	-	`sha256:6650fcd440848c763aac4e992f36d366304148ee938dfce36273d77d62176c95`  
+		Last Modified: Wed, 03 Aug 2016 22:36:24 GMT  
+		Size: 27.5 MB (27539181 bytes)
+	-	`sha256:e885a57863836cd2c7e257003025565a0ebbff7324cdd2f29154bb3731f0450a`  
+		Last Modified: Wed, 03 Aug 2016 22:36:19 GMT  
+		Size: 215.0 B
+	-	`sha256:66a0a6f664592c7bbde62571f1f0676a9010b784cd9c665213453adb2f84daea`  
+		Last Modified: Wed, 03 Aug 2016 22:36:19 GMT  
+		Size: 540.0 B
+	-	`sha256:e00c21f6ec1cba10389fa5d55b86f0a141288bce0aac8fe7ed988689af1bee18`  
+		Last Modified: Wed, 03 Aug 2016 22:36:19 GMT  
 		Size: 469.0 B
 
 ## `elasticsearch:2`
