@@ -645,7 +645,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:6.0.45-jre8`
 
 ```console
-$ docker pull tomcat@sha256:6d8fc7a55a1ba468be8f491c0b7e5003b402a8efd68b38ad4fd8eec6b7affbc2
+$ docker pull tomcat@sha256:a66077c0119bcd43467bb6ecd1cc3102b61e7574f042e655aaab73fea221f667
 ```
 
 -	Platforms:
@@ -655,103 +655,103 @@ $ docker pull tomcat@sha256:6d8fc7a55a1ba468be8f491c0b7e5003b402a8efd68b38ad4fd8
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.4 MB (132405050 bytes)**  
+-	Total Size: **132.3 MB (132305892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8996421a2765f02c05f37ffba12496626748de20ec281d346731552209f8b16`
+-	Image ID: `sha256:c27e5937e72bc3f00a23d1f8715d51634fceb6f6e95df3b067bea2b31c0d3731`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 23:19:47 GMT
+# Tue, 02 Aug 2016 00:03:26 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 10 Jun 2016 23:19:47 GMT
+# Tue, 02 Aug 2016 00:03:28 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 23:19:48 GMT
+# Tue, 02 Aug 2016 00:03:31 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Fri, 10 Jun 2016 23:19:48 GMT
+# Tue, 02 Aug 2016 00:03:32 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 10 Jun 2016 23:24:20 GMT
+# Wed, 03 Aug 2016 20:17:58 GMT
 RUN apt-get update && apt-get install -y libapr1 && rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 23:24:28 GMT
+# Wed, 03 Aug 2016 20:19:10 GMT
 RUN set -ex 	&& for key in 		05AB33110949707C93A279E3D3EFE6B686867BA6 		07E48665A34DCAFAE522E5E6266191C37C037D42 		47309207D818FFD8DCD3F83F1931D684307A10A5 		541FBE7D8F78B25E055DDEE13C370389288584E7 		61B832AC2F1C5A90F0F9B00A1C506407564C17A3 		79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 		80FF76D88A969FE46108558A80B953A041E49465 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		A27677289986DB50844682F8ACB77FC2E86E29AC 		A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 		B3F49CD3B9BD2996DA90F817ED3873F5D3262722 		DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 		F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE 		F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23 	; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
-# Fri, 10 Jun 2016 23:24:29 GMT
+# Wed, 03 Aug 2016 20:19:13 GMT
 ENV TOMCAT_MAJOR=6
-# Fri, 10 Jun 2016 23:24:29 GMT
+# Wed, 03 Aug 2016 20:19:14 GMT
 ENV TOMCAT_VERSION=6.0.45
-# Fri, 10 Jun 2016 23:24:29 GMT
+# Wed, 03 Aug 2016 20:19:15 GMT
 ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.45/bin/apache-tomcat-6.0.45.tar.gz
-# Fri, 10 Jun 2016 23:26:28 GMT
+# Wed, 03 Aug 2016 20:21:25 GMT
 RUN set -x 		&& curl -fSL "$TOMCAT_TGZ_URL" -o tomcat.tar.gz 	&& curl -fSL "$TOMCAT_TGZ_URL.asc" -o tomcat.tar.gz.asc 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/jni/native" 		&& ./configure 			--libdir=/usr/lib/jni 			--prefix="$CATALINA_HOME" 			--with-apr=/usr/bin/apr-1-config 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Fri, 10 Jun 2016 23:26:28 GMT
+# Wed, 03 Aug 2016 20:21:26 GMT
 EXPOSE 8080/tcp
-# Fri, 10 Jun 2016 23:26:28 GMT
+# Wed, 03 Aug 2016 20:21:27 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:1b424810697eca671c329ceb9d7dcfb3958a32764a6ad0113bfaab804779c835`  
-		Last Modified: Wed, 15 Jun 2016 21:28:22 GMT  
-		Size: 145.0 B
-	-	`sha256:c364371983cbc6769a144a6df82b337636ca63bb2e80d49e4b5d64805f6af728`  
-		Last Modified: Wed, 15 Jun 2016 21:28:23 GMT  
-		Size: 252.6 KB (252601 bytes)
-	-	`sha256:6a79634cddeeae0b6c932342c6e7226553078078f97838ba3377250b99653e36`  
-		Last Modified: Wed, 15 Jun 2016 21:28:23 GMT  
-		Size: 265.6 KB (265634 bytes)
-	-	`sha256:8e87503824962d020a1b9bbdf38eaf780b9c1da25fab3593d2c288d07a47a252`  
-		Last Modified: Wed, 15 Jun 2016 21:28:24 GMT  
-		Size: 7.7 MB (7743181 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:a7ad81be6b9312f0b4e6d6ef31c799b83a7fb1797e398d3c0d16d992c9552904`  
+		Last Modified: Tue, 02 Aug 2016 16:50:21 GMT  
+		Size: 144.0 B
+	-	`sha256:a164747d9ecf93622a7aa86b22b31cdcd15626205c44039e0c1a2bca3599da54`  
+		Last Modified: Wed, 03 Aug 2016 20:21:41 GMT  
+		Size: 222.4 KB (222430 bytes)
+	-	`sha256:9c0ad750df99679fc66c893b044e2f4f44c1297c88e5939f80525312ed8cecaa`  
+		Last Modified: Wed, 03 Aug 2016 20:21:40 GMT  
+		Size: 266.2 KB (266211 bytes)
+	-	`sha256:11aaba2452236b56cff03f7b7e6d5945202b57a55641a6d60028cc0a93f7d85a`  
+		Last Modified: Wed, 03 Aug 2016 20:21:46 GMT  
+		Size: 7.7 MB (7722425 bytes)
 
 ## `tomcat:6.0-jre8`
 
 ```console
-$ docker pull tomcat@sha256:6d8fc7a55a1ba468be8f491c0b7e5003b402a8efd68b38ad4fd8eec6b7affbc2
+$ docker pull tomcat@sha256:a66077c0119bcd43467bb6ecd1cc3102b61e7574f042e655aaab73fea221f667
 ```
 
 -	Platforms:
@@ -761,98 +761,98 @@ $ docker pull tomcat@sha256:6d8fc7a55a1ba468be8f491c0b7e5003b402a8efd68b38ad4fd8
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.4 MB (132405050 bytes)**  
+-	Total Size: **132.3 MB (132305892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8996421a2765f02c05f37ffba12496626748de20ec281d346731552209f8b16`
+-	Image ID: `sha256:c27e5937e72bc3f00a23d1f8715d51634fceb6f6e95df3b067bea2b31c0d3731`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:08:24 GMT
+# Fri, 29 Jul 2016 04:48:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:33 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:12:26 GMT
+# Fri, 29 Jul 2016 04:48:34 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:12:27 GMT
+# Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:37 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:12:28 GMT
+# Fri, 29 Jul 2016 04:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:13:51 GMT
+# Fri, 29 Jul 2016 16:47:50 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:13:54 GMT
+# Fri, 29 Jul 2016 16:47:53 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 23:19:47 GMT
+# Tue, 02 Aug 2016 00:03:26 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 10 Jun 2016 23:19:47 GMT
+# Tue, 02 Aug 2016 00:03:28 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 23:19:48 GMT
+# Tue, 02 Aug 2016 00:03:31 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Fri, 10 Jun 2016 23:19:48 GMT
+# Tue, 02 Aug 2016 00:03:32 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 10 Jun 2016 23:24:20 GMT
+# Wed, 03 Aug 2016 20:17:58 GMT
 RUN apt-get update && apt-get install -y libapr1 && rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 23:24:28 GMT
+# Wed, 03 Aug 2016 20:19:10 GMT
 RUN set -ex 	&& for key in 		05AB33110949707C93A279E3D3EFE6B686867BA6 		07E48665A34DCAFAE522E5E6266191C37C037D42 		47309207D818FFD8DCD3F83F1931D684307A10A5 		541FBE7D8F78B25E055DDEE13C370389288584E7 		61B832AC2F1C5A90F0F9B00A1C506407564C17A3 		79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 		80FF76D88A969FE46108558A80B953A041E49465 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		A27677289986DB50844682F8ACB77FC2E86E29AC 		A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 		B3F49CD3B9BD2996DA90F817ED3873F5D3262722 		DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 		F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE 		F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23 	; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
-# Fri, 10 Jun 2016 23:24:29 GMT
+# Wed, 03 Aug 2016 20:19:13 GMT
 ENV TOMCAT_MAJOR=6
-# Fri, 10 Jun 2016 23:24:29 GMT
+# Wed, 03 Aug 2016 20:19:14 GMT
 ENV TOMCAT_VERSION=6.0.45
-# Fri, 10 Jun 2016 23:24:29 GMT
+# Wed, 03 Aug 2016 20:19:15 GMT
 ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.45/bin/apache-tomcat-6.0.45.tar.gz
-# Fri, 10 Jun 2016 23:26:28 GMT
+# Wed, 03 Aug 2016 20:21:25 GMT
 RUN set -x 		&& curl -fSL "$TOMCAT_TGZ_URL" -o tomcat.tar.gz 	&& curl -fSL "$TOMCAT_TGZ_URL.asc" -o tomcat.tar.gz.asc 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/jni/native" 		&& ./configure 			--libdir=/usr/lib/jni 			--prefix="$CATALINA_HOME" 			--with-apr=/usr/bin/apr-1-config 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Fri, 10 Jun 2016 23:26:28 GMT
+# Wed, 03 Aug 2016 20:21:26 GMT
 EXPOSE 8080/tcp
-# Fri, 10 Jun 2016 23:26:28 GMT
+# Wed, 03 Aug 2016 20:21:27 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:be275827e8b7f9057582be291be9d0b1ea48379640585e97987ac337c495c0cd`  
-		Last Modified: Thu, 09 Jun 2016 22:19:23 GMT  
-		Size: 587.3 KB (587338 bytes)
-	-	`sha256:4cbd0b70645ad8e4638b0ae616594bd6c43e268b18430fa622e26386d4a8424e`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 220.0 B
-	-	`sha256:7d811bfac6eb74d6fcfd0e32ebb445b68d0e606ed2b5183db848374b0b63b0ee`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 242.0 B
-	-	`sha256:d35e5f0a148b5551d0e9215821bcfaf76e5f6ab76ff17687cf201ce2beb6e2d0`  
-		Last Modified: Thu, 09 Jun 2016 22:22:47 GMT  
-		Size: 53.4 MB (53371555 bytes)
-	-	`sha256:a17d585d8b66adf42eeb8e1b4f18c891b8e81f6af584233493638b3efe5fa460`  
-		Last Modified: Thu, 09 Jun 2016 22:22:35 GMT  
-		Size: 284.4 KB (284380 bytes)
-	-	`sha256:1b424810697eca671c329ceb9d7dcfb3958a32764a6ad0113bfaab804779c835`  
-		Last Modified: Wed, 15 Jun 2016 21:28:22 GMT  
-		Size: 145.0 B
-	-	`sha256:c364371983cbc6769a144a6df82b337636ca63bb2e80d49e4b5d64805f6af728`  
-		Last Modified: Wed, 15 Jun 2016 21:28:23 GMT  
-		Size: 252.6 KB (252601 bytes)
-	-	`sha256:6a79634cddeeae0b6c932342c6e7226553078078f97838ba3377250b99653e36`  
-		Last Modified: Wed, 15 Jun 2016 21:28:23 GMT  
-		Size: 265.6 KB (265634 bytes)
-	-	`sha256:8e87503824962d020a1b9bbdf38eaf780b9c1da25fab3593d2c288d07a47a252`  
-		Last Modified: Wed, 15 Jun 2016 21:28:24 GMT  
-		Size: 7.7 MB (7743181 bytes)
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 566.7 KB (566729 bytes)
+	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 217.0 B
+	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 241.0 B
+	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
+		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
+		Size: 53.4 MB (53350533 bytes)
+	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
+		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
+		Size: 284.4 KB (284373 bytes)
+	-	`sha256:a7ad81be6b9312f0b4e6d6ef31c799b83a7fb1797e398d3c0d16d992c9552904`  
+		Last Modified: Tue, 02 Aug 2016 16:50:21 GMT  
+		Size: 144.0 B
+	-	`sha256:a164747d9ecf93622a7aa86b22b31cdcd15626205c44039e0c1a2bca3599da54`  
+		Last Modified: Wed, 03 Aug 2016 20:21:41 GMT  
+		Size: 222.4 KB (222430 bytes)
+	-	`sha256:9c0ad750df99679fc66c893b044e2f4f44c1297c88e5939f80525312ed8cecaa`  
+		Last Modified: Wed, 03 Aug 2016 20:21:40 GMT  
+		Size: 266.2 KB (266211 bytes)
+	-	`sha256:11aaba2452236b56cff03f7b7e6d5945202b57a55641a6d60028cc0a93f7d85a`  
+		Last Modified: Wed, 03 Aug 2016 20:21:46 GMT  
+		Size: 7.7 MB (7722425 bytes)
 
 ## `tomcat:6-jre8`
 
