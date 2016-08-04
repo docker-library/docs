@@ -2910,7 +2910,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.
 ## `mono:latest`
 
 ```console
-$ docker pull mono@sha256:5baac2fd14bc5796d6c9c4b43d9b8f2be1bd1ad24046b7ea5b2a1c1e90dbb10c
+$ docker pull mono@sha256:d2db9e0ff5b232fb40592662eb98f5c3270249a4aa09076e8cf63c681cfbb9a1
 ```
 
 -	Platforms:
@@ -2920,9 +2920,9 @@ $ docker pull mono@sha256:5baac2fd14bc5796d6c9c4b43d9b8f2be1bd1ad24046b7ea5b2a1c
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **253.5 MB (253456953 bytes)**  
+-	Total Size: **252.2 MB (252228981 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1931d689c384d13704288ebf1c160035e13fe2d837e9936255b38351c8f1e468`
+-	Image ID: `sha256:4bcf669858be376de345af762203de20ce8f96a71f126ffc2984ea9b23e33465`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2932,27 +2932,27 @@ ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
 CMD ["/bin/bash"]
 # Fri, 29 Jul 2016 20:02:49 GMT
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
-# Fri, 29 Jul 2016 20:03:05 GMT
-RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 29 Jul 2016 20:05:44 GMT
+# Thu, 04 Aug 2016 01:06:36 GMT
+RUN apt-get update   && apt-get install -y curl   && rm -rf /var/lib/apt/lists/*
+# Thu, 04 Aug 2016 01:06:38 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# Fri, 29 Jul 2016 20:07:54 GMT
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.0.182 main" > /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 04 Aug 2016 01:11:00 GMT
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.2.11 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
 ```
 
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
 		Size: 37.2 MB (37209635 bytes)
-	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
-		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
-	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
-		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
-	-	`sha256:8767dd7fe2357297654bcb8b038815298bbba820339580edaf458b6e4913b9e2`  
-		Last Modified: Fri, 29 Jul 2016 20:09:07 GMT  
-		Size: 208.7 MB (208664222 bytes)
+	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
+		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
+		Size: 7.6 MB (7554036 bytes)
+	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
+		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
+		Size: 29.3 KB (29333 bytes)
+	-	`sha256:2ce1af140bb81e4c169ec7aabb3299676656f25d8b7bc0361c907a80d601b684`  
+		Last Modified: Thu, 04 Aug 2016 01:23:02 GMT  
+		Size: 207.4 MB (207435977 bytes)
 
 ## `mono:4.4.2.11-onbuild`
 
