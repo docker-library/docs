@@ -2,9 +2,9 @@
 
 -	[`6b38-jdk`, `6b38`, `6-jdk`, `6`, `openjdk-6b38-jdk`, `openjdk-6b38`, `openjdk-6-jdk`, `openjdk-6` (*6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jdk/Dockerfile)
 -	[`6b38-jre`, `6-jre`, `openjdk-6b38-jre`, `openjdk-6-jre` (*6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jre/Dockerfile)
--	[`7u101-jdk`, `7u101`, `7-jdk`, `7`, `openjdk-7u101-jdk`, `openjdk-7u101`, `openjdk-7-jdk`, `openjdk-7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a3f06bcbc86d16912a309cf4538a00caf9a6100c/7-jdk/Dockerfile)
+-	[`7u111-jdk`, `7u111`, `7-jdk`, `7`, `openjdk-7u111-jdk`, `openjdk-7u111`, `openjdk-7-jdk`, `openjdk-7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/ac78a119a294925b60c8fe4e64c79abab1dd8dbf/7-jdk/Dockerfile)
 -	[`7u91-jdk-alpine`, `7u91-alpine`, `7-jdk-alpine`, `7-alpine`, `openjdk-7u91-jdk-alpine`, `openjdk-7u91-alpine`, `openjdk-7-jdk-alpine`, `openjdk-7-alpine` (*7-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/54c64cf47d2b705418feb68b811419a223c5a040/7-jdk/alpine/Dockerfile)
--	[`7u101-jre`, `7-jre`, `openjdk-7u101-jre`, `openjdk-7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a3f06bcbc86d16912a309cf4538a00caf9a6100c/7-jre/Dockerfile)
+-	[`7u111-jre`, `7-jre`, `openjdk-7u111-jre`, `openjdk-7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/ac78a119a294925b60c8fe4e64c79abab1dd8dbf/7-jre/Dockerfile)
 -	[`7u91-jre-alpine`, `7-jre-alpine`, `openjdk-7u91-jre-alpine`, `openjdk-7-jre-alpine` (*7-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/54c64cf47d2b705418feb68b811419a223c5a040/7-jre/alpine/Dockerfile)
 -	[`8u91-jdk`, `8u91`, `8-jdk`, `8`, `jdk`, `latest`, `openjdk-8u91-jdk`, `openjdk-8u91`, `openjdk-8-jdk`, `openjdk-8` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a0a4970a343a3c021dad760f2281d20f61931e3c/8-jdk/Dockerfile)
 -	[`8u92-jdk-alpine`, `8u92-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine`, `openjdk-8u92-jdk-alpine`, `openjdk-8u92-alpine`, `openjdk-8-jdk-alpine`, `openjdk-8-alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/54c64cf47d2b705418feb68b811419a223c5a040/8-jdk/alpine/Dockerfile)
@@ -13,7 +13,7 @@
 -	[`9-b124-jdk`, `9-b124`, `9-jdk`, `9`, `openjdk-9-b124-jdk`, `openjdk-9-b124`, `openjdk-9-jdk`, `openjdk-9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/d1890fa5206eee489ab6285afa2a52f409dcfdc4/9-jdk/Dockerfile)
 -	[`9-b124-jre`, `9-jre`, `openjdk-9-b124-jre`, `openjdk-9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/d1890fa5206eee489ab6285afa2a52f409dcfdc4/9-jre/Dockerfile)
 
-[![](https://badge.imagelayers.io/java:latest.svg)](https://imagelayers.io/?images=java:6b38-jdk,java:6b38-jre,java:7u101-jdk,java:7u91-jdk-alpine,java:7u101-jre,java:7u91-jre-alpine,java:8u91-jdk,java:8u92-jdk-alpine,java:8u91-jre,java:8u92-jre-alpine,java:9-b124-jdk,java:9-b124-jre)
+[![](https://badge.imagelayers.io/java:latest.svg)](https://imagelayers.io/?images=java:6b38-jdk,java:6b38-jre,java:7u111-jdk,java:7u91-jdk-alpine,java:7u111-jre,java:7u91-jre-alpine,java:8u91-jdk,java:8u92-jdk-alpine,java:8u91-jre,java:8u92-jre-alpine,java:9-b124-jdk,java:9-b124-jre)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjava).
 
