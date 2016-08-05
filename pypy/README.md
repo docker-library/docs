@@ -11,7 +11,7 @@
 
 For more information about this image and its history, please see [the relevant manifest file (`library/pypy`)](https://github.com/docker-library/official-images/blob/master/library/pypy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpypy).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `pypy/tag-details.md` file](https://github.com/docker-library/docs/blob/master/pypy/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/pypy/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/pypy/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is PyPy?
 
