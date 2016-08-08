@@ -1,9 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `lts`, `5.6.1` (*5.6.1/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/06fcdc6ef062f43a5513bd327a79e7c5011fb0a3/5.6.1/Dockerfile)
--	[`alpine`, `lts-alpine`, `5.6.1-alpine` (*5.6.1-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/06fcdc6ef062f43a5513bd327a79e7c5011fb0a3/5.6.1-alpine/Dockerfile)
+-	[`latest`, `6.0` (*6.0/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/73534fd899d29eb1373ea073edbfe7a4074ede6e/6.0/Dockerfile)
+-	[`lts`, `5.6.1` (*5.6.1/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/73534fd899d29eb1373ea073edbfe7a4074ede6e/5.6.1/Dockerfile)
+-	[`alpine`, `6.0-alpine` (*6.0-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/73534fd899d29eb1373ea073edbfe7a4074ede6e/6.0-alpine/Dockerfile)
+-	[`lts-alpine`, `5.6.1-alpine` (*5.6.1-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/73534fd899d29eb1373ea073edbfe7a4074ede6e/5.6.1-alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:alpine)
+[![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:lts,sonarqube:alpine,sonarqube:lts-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsonarqube).
 
