@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.7.1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/195787dca586b41971e2037b48d3f6dca04c9667/Dockerfile)
--	[`alpine`, `2.7.1-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/e9126dcdd10fc0a2d0961a06d65c6a816f223797/Dockerfile)
+-	[`latest`, `2.7.2` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/3a83b9d680fa3e669c6877f9fd0ab924e5b85e35/Dockerfile)
+-	[`alpine`, `2.7.2-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/98aaef679b60c78cdf5122dd46589cb949b0710d/Dockerfile)
 
 [![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:alpine)
 
