@@ -15,11 +15,11 @@
 # use -p or -P as needed.
 
 $ docker run -d --name nats-main nats
-[INF] Starting gnatsd version 0.7.2
-[INF] Starting http monitor on port 8222
-[INF] Listening for route connections on 0.0.0.0:6222
+[INF] Starting nats-server version 0.9.2
+[INF] Starting http monitor on :8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] gnatsd is ready
+[INF] Server is ready
+[INF] Listening for route connections on 0.0.0.0:6222
 
 ...
 
@@ -28,16 +28,18 @@ $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:
 
 # If you want to verify the routes are connected, try
 $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting gnatsd version 0.7.2
-[INF] Starting http monitor on port 8222
-[INF] Listening for route connections on :6222
+[INF] Starting nats-server version 0.9.2
+[DBG] Go build version go1.6.3
+[INF] Starting http monitor on :8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] gnatsd is ready
+[DBG] Server id is Zy0Q82lXHHh7JK39R4nJYU
+[INF] Server is ready
+[INF] Listening for route connections on 0.0.0.0:6222
 [DBG] Trying to connect to route on nats-main:6222
-[DBG] 172.17.0.52:6222 - rid:1 - Route connection created
-[DBG] 172.17.0.52:6222 - rid:1 - Route connect msg sent
-[DBG] 172.17.0.52:6222 - rid:1 - Registering remote route "ee35d227433a738c729f9422a59667bb"
-[DBG] 172.17.0.52:6222 - rid:1 - Route sent local subscriptions
+[DBG] 172.17.0.3:6222 - rid:1 - Route connection created
+[DBG] 172.17.0.3:6222 - rid:1 - Route connect msg sent
+[DBG] 172.17.0.3:6222 - rid:1 - Registering remote route "RLW2KS2rmVwpUZsOvBzCw5"
+[DBG] 172.17.0.3:6222 - rid:1 - Route sent local subscriptions
 ```
 
 The server will load the configuration file below. Any command line flags can override these values.
@@ -95,6 +97,7 @@ Logging Options:
 Authorization Options:
         --user user                  User required for connections
         --pass password              Password required for connections
+        --auth <token>               Authorization token required for connections
 
 TLS Options:
         --tls                        Enable TLS, do not verify clients (default: false)
@@ -104,7 +107,8 @@ TLS Options:
         --tlscacert FILE             Client certificate CA for verification
 
 Cluster Options:
-        --routes [rurl-1, rurl-2]    Routes to solicit and connect
+        --routes <rurl-1, rurl-2>    Routes to solicit and connect
+        --cluster <cluster-url>      Cluster URL for solicited routes
 
 Common Options:
     -h, --help                       Show this message
