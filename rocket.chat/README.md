@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.35.0`, `0.35`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/d048a0d60f75b6a7e704e097488fd167484885cd/Dockerfile)
+-	[`0.36.0`, `0.36`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/6a71d57ee5576455a0acfdf0ab144ef5489022ef/Dockerfile)
 
-[![](https://badge.imagelayers.io/rocket.chat:latest.svg)](https://imagelayers.io/?images=rocket.chat:0.35.0)
+[![](https://badge.imagelayers.io/rocket.chat:latest.svg)](https://imagelayers.io/?images=rocket.chat:0.36.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rocket.chat`)](https://github.com/docker-library/official-images/blob/master/library/rocket.chat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frocket.chat).
 
