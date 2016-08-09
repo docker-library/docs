@@ -1,19 +1,19 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1`, `1.9`, `1.9.15` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/41aa13f7d2c24407e483c40fb1e8b33e73462ff1/mainline/jessie/Dockerfile)
--	[`stable`, `1.10`, `1.10.0` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/41aa13f7d2c24407e483c40fb1e8b33e73462ff1/stable/jessie/Dockerfile)
--	[`mainline-alpine`, `alpine`, `1-alpine`, `1.9-alpine`, `1.9.15-alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/41aa13f7d2c24407e483c40fb1e8b33e73462ff1/mainline/alpine/Dockerfile)
--	[`stable-alpine`, `1.10-alpine`, `1.10.0-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/41aa13f7d2c24407e483c40fb1e8b33e73462ff1/stable/alpine/Dockerfile)
+-	[`latest`, `1`, `1.11`, `1.11.1` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/11fc019b2be3ad51ba5d097b1857a099c4056213/mainline/jessie/Dockerfile)
+-	[`stable`, `1.10`, `1.10.1` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/11fc019b2be3ad51ba5d097b1857a099c4056213/stable/jessie/Dockerfile)
+-	[`mainline-alpine`, `alpine`, `1-alpine`, `1.11-alpine`, `1.11.1-alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/11fc019b2be3ad51ba5d097b1857a099c4056213/mainline/alpine/Dockerfile)
+-	[`stable-alpine`, `1.10-alpine`, `1.10.1-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/11fc019b2be3ad51ba5d097b1857a099c4056213/stable/alpine/Dockerfile)
 
 [![](https://badge.imagelayers.io/nginx:latest.svg)](https://imagelayers.io/?images=nginx:latest,nginx:stable,nginx:mainline-alpine,nginx:stable-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnginx).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `nginx/tag-details.md` file](https://github.com/docker-library/docs/blob/master/nginx/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/nginx/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/nginx/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Nginx?
 
-Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer, HTTP cache, and a web server (origin server). The nginx project started with a strong focus on high concurrency, high performance and low memory usage. It is licensed under the 2-clause BSD-like license and it runs on Linux, BSD variants, Mac OS X, Solaris, AIX, HP-UX, as well as on other *nix flavors. It also has a proof of concept port for Microsoft Window..
+Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer, HTTP cache, and a web server (origin server). The nginx project started with a strong focus on high concurrency, high performance and low memory usage. It is licensed under the 2-clause BSD-like license and it runs on Linux, BSD variants, Mac OS X, Solaris, AIX, HP-UX, as well as on other *nix flavors. It also has a proof of concept port for Microsoft Windows.
 
 > [wikipedia.org/wiki/Nginx](https://en.wikipedia.org/wiki/Nginx)
 
@@ -118,7 +118,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -9,7 +9,7 @@
 
 For more information about this image and its history, please see [the relevant manifest file (`library/notary`)](https://github.com/docker-library/official-images/blob/master/library/notary). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnotary).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `notary/tag-details.md` file](https://github.com/docker-library/docs/blob/master/notary/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/notary/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/notary/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # How to use this repository
 
@@ -53,7 +53,7 @@ The components you *must* provide are the certificates and keys, and the links f
 
 If you require a different configuration, you should wrap this image with your own Dockerfile.
 
-For more details on how to configure your Notary server, please read the[docs](https://github.com/docker/notary/blob/master/docs/notary-server-config.md).
+For more details on how to configure your Notary server, please read the [docs](https://github.com/docker/notary/blob/master/docs/reference/server-config.md).
 
 # Notary Signer
 
@@ -84,7 +84,7 @@ The components you *must* provide are the certificates and keys, and the link fo
 
 If you require a different configuration, you should wrap this image with your own Dockerfile.
 
-For more details on how to configure your Notary signer, please read the [docs](https://github.com/docker/notary/blob/master/docs/notary-signer-config.md).
+For more details on how to configure your Notary signer, please read the [docs](https://github.com/docker/notary/blob/master/docs/reference/signer-config.md).
 
 ## Database Migrations
 
@@ -98,7 +98,7 @@ View [license information](https://github.com/docker/notary/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,14 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `FT`, `8`, `8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b37540c919e58c027f7a2f5211ad12f667f1bb76/8.2/Dockerfile)
--	[`LTS-2015`, `LTS`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b37540c919e58c027f7a2f5211ad12f667f1bb76/7.10/Dockerfile)
+-	[`latest`, `FT`, `8`, `8.3` (*8.3/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/9738485ee1a4f96ed401053dd265e4f914c880ba/8.3/Dockerfile)
+-	[`8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b37540c919e58c027f7a2f5211ad12f667f1bb76/8.2/Dockerfile)
+-	[`LTS-2015`, `LTS`, `7`, `7.10` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b37540c919e58c027f7a2f5211ad12f667f1bb76/7.10/Dockerfile)
 -	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b37540c919e58c027f7a2f5211ad12f667f1bb76/6.0/Dockerfile)
 
-[![](https://badge.imagelayers.io/nuxeo:latest.svg)](https://imagelayers.io/?images=nuxeo:latest,nuxeo:LTS-2015,nuxeo:LTS-2014)
+[![](https://badge.imagelayers.io/nuxeo:latest.svg)](https://imagelayers.io/?images=nuxeo:latest,nuxeo:8.2,nuxeo:LTS-2015,nuxeo:LTS-2014)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nuxeo`)](https://github.com/docker-library/official-images/blob/master/library/nuxeo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnuxeo).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `nuxeo/tag-details.md` file](https://github.com/docker-library/docs/blob/master/nuxeo/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/nuxeo/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/nuxeo/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Nuxeo ?
 
@@ -111,6 +112,14 @@ If set to "true", this will enable the [automation trace mode](https://doc.nuxeo
 
 If set to "true", this will enable the development mode that will allow [hot reload](https://doc.nuxeo.com/display/CORG/Supporting+Hot+Reload) when developing with [Nuxeo Studio](http://www.nuxeo.com/products/studio/).
 
+### `NUXEO_BINARY_STORE`
+
+Tells the location of the binary store which configure the [binary storage](https://doc.nuxeo.com/x/fYYZAQ)
+
+### `NUXEO_TRANSIENT_STORE`
+
+Tells the location of [the transient storage](http://doc.nuxeo.com/display/NXDOC/Transient+Store)
+
 # How to extend this image
 
 ## Adding additional configuration
@@ -122,6 +131,10 @@ FROM nuxeo:7.10
 ADD nuxeo.conf /nuxeo.conf
 ```
 
+## Launching custom shell scripts
+
+You can add your own shell scripts in a special `/docker-entrypoint-initnuxeo.d` directory. When ending in `.sh`, they will be run on default entrypoint startup.
+
 ## ffmpeg
 
 As it contains some non-free Codecs, we dont't ship a binary version of `ffmpeg` as part of this image. However, you can simply add the compilation in a derived images by adding these lines to your Dockerfile
@@ -130,7 +143,7 @@ As it contains some non-free Codecs, we dont't ship a binary version of `ffmpeg`
 FROM nuxeo:7.10
 
 RUN echo "deb http://httpredir.debian.org/debian jessie non-free" >> /etc/apt/sources.list
-RUN apt-get update && apt-get install -y --no-install-recommends libfaac-dev
+RUN apt-get update && apt-get install -y --no-install-recommends libfaac-dev git
 
 WORKDIR /tmp
 # Build ffmpeg
@@ -171,7 +184,7 @@ View [license information](http://doc.nuxeo.com/x/gIK7) for the software contain
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

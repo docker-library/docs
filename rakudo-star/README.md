@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2016.04`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/f9c2b6026b8c875ad97cddacfc0158bfdc25d21c/Dockerfile)
+-	[`2016.07`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/36a51266a1ac2f5dd6da46756cc7a7789ea8343c/Dockerfile)
 
-[![](https://badge.imagelayers.io/rakudo-star:latest.svg)](https://imagelayers.io/?images=rakudo-star:2016.04)
+[![](https://badge.imagelayers.io/rakudo-star:latest.svg)](https://imagelayers.io/?images=rakudo-star:2016.07)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frakudo-star).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rakudo-star/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rakudo-star/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rakudo-star/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rakudo-star/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Rakudo Star?
 
@@ -52,7 +52,7 @@ View [license information](https://github.com/rakudo/star/blob/master/LICENSE) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

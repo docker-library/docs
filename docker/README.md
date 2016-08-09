@@ -1,31 +1,37 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.11.1`, `1.11`, `1`, `latest` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/f7ee50684c7ec92ce885c8b93a4ed22ddbb660f8/1.11/Dockerfile)
--	[`1.11.1-dind`, `1.11-dind`, `1-dind`, `dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/dind/Dockerfile)
--	[`1.11.1-git`, `1.11-git`, `1-git`, `git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
--	[`1.10.3`, `1.10` (*1.10/Dockerfile*)](https://github.com/docker-library/docker/blob/744110cf7268354ae30928e76f392c7864d1afea/1.10/Dockerfile)
--	[`1.10.3-dind`, `1.10-dind` (*1.10/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/83b2eab8bdb5d35bf343313154ab55938fca3807/1.10/dind/Dockerfile)
--	[`1.10.3-git`, `1.10-git` (*1.10/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/git/Dockerfile)
+-	[`1.12.0`, `1.12`, `1`, `latest` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/39269f78ed82ab27b8a560b43f3091b2f503052b/1.12/Dockerfile)
+-	[`1.12.0-dind`, `1.12-dind`, `1-dind`, `dind` (*1.12/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/dind/Dockerfile)
+-	[`1.12.0-git`, `1.12-git`, `1-git`, `git` (*1.12/git/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/git/Dockerfile)
+-	[`1.11.2`, `1.11` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/b83d8a3f9b77c2592f383cd58625e000af4f2dde/1.11/Dockerfile)
+-	[`1.11.2-dind`, `1.11-dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/1c8b144ed9ec49ac8cc7ca75f8628fd8de6c82b5/1.11/dind/Dockerfile)
+-	[`1.11.2-git`, `1.11-git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
 
-[![](https://badge.imagelayers.io/docker:latest.svg)](https://imagelayers.io/?images=docker:1.11.1,docker:1.11.1-dind,docker:1.11.1-git,docker:1.10.3,docker:1.10.3-dind,docker:1.10.3-git)
+[![](https://badge.imagelayers.io/docker:latest.svg)](https://imagelayers.io/?images=docker:1.12.0,docker:1.12.0-dind,docker:1.12.0-git,docker:1.11.2,docker:1.11.2-dind,docker:1.11.2-git)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `docker/tag-details.md` file](https://github.com/docker-library/docs/blob/master/docker/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/docker/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/docker/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-# What is Docker?
+# What is Docker in Docker?
 
-Docker is an open-source project that automates the deployment of applications inside software containers, by providing an additional layer of abstraction and automation of operating-system-level virtualization on Linux, Mac OS and Windows.
+Although running Docker inside Docker is generally not recommended, there are some legitimate use cases, such as development of Docker itself.
+
+*Docker is an open-source project that automates the deployment of applications inside software containers, by providing an additional layer of abstraction and automation of operating-system-level virtualization on Linux, Mac OS and Windows.*
 
 > [wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_%28software%29)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/c350af05d3fac7b5c3f6327ac82fe4d990d8729c/docker/logo.png)
 
+Before running Docker-in-Docker, be sure to read through [Jérôme Petazzoni's excellent blog post on the subject](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/), where he outlines some of the pros and cons of doing so (and some nasty gotchas you might run into).
+
+If you are still convinced that you need Docker-in-Docker and not just access to a container's host Docker server, then read on.
+
 # How to use this image
 
 [![asciicast](https://asciinema.org/a/24707.png)](https://asciinema.org/a/24707)
 
-## start a daemon instance
+## Start a daemon instance
 
 ```console
 $ docker run --privileged --name some-docker -d docker:1.8-dind
@@ -35,9 +41,7 @@ $ docker run --privileged --name some-docker -d docker:1.8-dind
 
 This image includes `EXPOSE 2375` (the Docker port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
 
-Before running Docker-in-Docker, be sure to read through [Jérôme Petazzoni's excellent blog post on the subject](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/), where he outlines some of the pros and cons of doing so (and some nasty gotchas you might run into).
-
-## connect to it from a second container
+## Connect to it from a second container
 
 ```console
 $ docker run --rm --link some-docker:docker docker:1.7 version
@@ -124,7 +128,7 @@ Server:
  OS/Arch:      linux/amd64
 ```
 
-## custom daemon flags
+## Custom daemon flags
 
 ```console
 $ docker run --privileged --name some-devicemapper-docker -d docker:dind --storage-driver=devicemapper
@@ -154,7 +158,7 @@ View [license information](https://github.com/docker/docker/blob/eb7b2ed6bbe3fbe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

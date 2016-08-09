@@ -1,18 +1,16 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2`, `2.4`, `2.4.0` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/3b41b10642a3c24e2405b8f4cfa1441c54f1c8a2/Dockerfile)
+-	[`2`, `2.5`, `2.5.0`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/f7992f4a9f7fade2be6240ffe84270b9438fc1bf/Dockerfile)
 
-[![](https://badge.imagelayers.io/registry:2.svg)](https://imagelayers.io/?images=registry:2)
+[![](https://badge.imagelayers.io/registry:latest.svg)](https://imagelayers.io/?images=registry:2)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fregistry).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `registry/tag-details.md` file](https://github.com/docker-library/docs/blob/master/registry/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/registry/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/registry/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Docker Registry
 
-The tags >= 2 refer to the [new registry](https://github.com/docker/distribution).
-
-Older tags refer to the [deprecated registry](https://github.com/docker/docker-registry).
+Tags < 1.0 refer to the [deprecated registry](https://github.com/docker/docker-registry).
 
 ## Run the Registry
 
@@ -45,7 +43,7 @@ If you are interested in commercial support, the [Docker Trusted Registry](https
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -59,7 +57,7 @@ Documentation for this image is stored in the [`registry/` directory](https://gi
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker/docker-registry/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker/distribution-library-image/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -67,4 +65,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker/docker-registry/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker/distribution-library-image/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

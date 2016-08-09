@@ -1,13 +1,16 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.12`, `0.12.2` (*0.12/Dockerfile*)](https://github.com/influxdata/influxdb-docker/blob/d59001dbf8ea00655efcdea7c848d36a7c469454/0.12/Dockerfile)
--	[`0.13`, `0.13.0`, `latest` (*0.13/Dockerfile*)](https://github.com/influxdata/influxdb-docker/blob/d59001dbf8ea00655efcdea7c848d36a7c469454/0.13/Dockerfile)
+-	[`0.12`, `0.12.2` (*0.12/Dockerfile*)](https://github.com/influxdata/influxdb-docker/blob/6d869aa598baf9d23019682ecff42d022a00ce17/0.12/Dockerfile)
+-	[`0.13`, `0.13.0`, `latest` (*influxdb/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a2e36a415b71cd2b0bff87d0eaaf6d5329451c7c/influxdb/0.13/Dockerfile)
+-	[`0.13-alpine`, `0.13.0-alpine`, `alpine` (*influxdb/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a2e36a415b71cd2b0bff87d0eaaf6d5329451c7c/influxdb/0.13/alpine/Dockerfile)
+-	[`1.0.0-beta3` (*influxdb/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d6d3fd59d7c84461daa5a048d1381937b5e1b282/influxdb/1.0/Dockerfile)
+-	[`1.0.0-beta3-alpine` (*influxdb/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d6d3fd59d7c84461daa5a048d1381937b5e1b282/influxdb/1.0/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/influxdb:latest.svg)](https://imagelayers.io/?images=influxdb:0.12,influxdb:0.13)
+[![](https://badge.imagelayers.io/influxdb:latest.svg)](https://imagelayers.io/?images=influxdb:0.12,influxdb:0.13,influxdb:0.13-alpine,influxdb:1.0.0-beta3,influxdb:1.0.0-beta3-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `influxdb/tag-details.md` file](https://github.com/docker-library/docs/blob/master/influxdb/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/influxdb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/influxdb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # InfluxDB
 
@@ -41,16 +44,14 @@ $ docker run -p 8083:8083 -p 8086:8086 \
 
 ### Exposed Ports
 
-The following ports are important and will be automatically exposed when using `docker run -P`.
+The following ports are important and are used by InfluxDB.
 
--	8083 Admin interface port
--	8086 HTTP API PORT
+-	8086 HTTP API port
+-	8083 Administrator interface port
 
-Other important ports that aren't exposed by default:
+The HTTP API port will be automatically exposed when using `docker run -P`.
 
--	8091 Meta service port
-
-These two ports do not need to be exposed in a single server configuration.
+The administrator interface is not automatically exposed when using `docker run -P`. While the administrator interface is run by default, the adminstrator interface requires that the web browser have access to InfluxDB on the same port in the container as from the web browser. Since `-P` exposes the HTTP port to the host on a random port, the administrator interface is not compatible with this setting.
 
 Find more about API Endpoints & Ports [here](https://docs.influxdata.com/influxdb/latest/concepts/api/).
 
@@ -125,20 +126,32 @@ $ docker run --name=influxdb -d -p 8083:8083 -p 8086:8086 influxdb
 Run the influx client in another container:
 
 ```console
-$ docker run --rm --link=influxdb -it influxdb influx -host influxdb
+$ docker run --rm --net=container:influxdb -it influxdb influx -host influxdb
 ```
 
-Alternatively, jump directly into the container:
-
-```console
-$ docker exec -it influxdb influx
-```
+At the moment, you cannot use `docker exec` to run the influx client since `docker exec` will not properly allocate a TTY. This is due to a current bug in Docker that is detailed in [docker/docker#8755](https://github.com/docker/docker/issues/8755).
 
 ### Web Administrator Interface
 
 Navigate to [localhost:8083](http://localhost:8083) with your browser while running the container.
 
-See more about using the web admin [here](https://docs.influxdata.com/influxdb/latest/tools/web_admin/).
+See more about using the web administrator interface [here](https://docs.influxdata.com/influxdb/latest/tools/web_admin/).
+
+# Image Variants
+
+The `influxdb` images come in many flavors, each designed for a specific use case.
+
+## `influxdb:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `influxdb:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
@@ -146,7 +159,7 @@ View [license information](https://github.com/influxdata/influxdb/blob/master/LI
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -160,7 +173,7 @@ Documentation for this image is stored in the [`influxdb/` directory](https://gi
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/influxdata/influxdb-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -168,4 +181,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/influxdata/influxdb-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

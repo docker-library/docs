@@ -1,12 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.25`, `1.4`, `1`, `latest` (*Dockerfile*)](https://github.com/docker-library/memcached/blob/a8c4206768821aa47579c6413be85be914875caa/Dockerfile)
+-	[`1.4.29`, `1.4`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/memcached/blob/7b8ed32cdbc0b14fd86bf4b6fb9136a08c9af29e/debian/Dockerfile)
+-	[`1.4.29-alpine`, `1.4-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/docker-library/memcached/blob/7b8ed32cdbc0b14fd86bf4b6fb9136a08c9af29e/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/memcached:latest.svg)](https://imagelayers.io/?images=memcached:1.4.25)
+[![](https://badge.imagelayers.io/memcached:latest.svg)](https://imagelayers.io/?images=memcached:1.4.29,memcached:1.4.29-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/memcached`)](https://github.com/docker-library/official-images/blob/master/library/memcached). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmemcached).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `memcached/tag-details.md` file](https://github.com/docker-library/docs/blob/master/memcached/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/memcached/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/memcached/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Memcached?
 
@@ -38,7 +39,23 @@ $ docker run --name my-memcache -d memcached memcached -m 64
 
 This would set the memcache server to use 64 megabytes for storage.
 
-For infomation on configuring your memcached server, see the extensive [wiki](https://code.google.com/p/memcached/wiki/NewStart).
+For infomation on configuring your memcached server, see the extensive [wiki](https://github.com/memcached/memcached/wiki).
+
+# Image Variants
+
+The `memcached` images come in many flavors, each designed for a specific use case.
+
+## `memcached:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `memcached:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
@@ -46,7 +63,7 @@ View [license information](https://github.com/memcached/memcached/blob/master/LI
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

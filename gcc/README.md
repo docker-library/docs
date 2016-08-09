@@ -1,16 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.8.5`, `4.8` (*4.8/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/4.8/Dockerfile)
--	[`4.9.3`, `4.9`, `4` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/4.9/Dockerfile)
--	[`5.2.0`, `5.2` (*5.2/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/5.2/Dockerfile)
--	[`5.3.0`, `5.3`, `5` (*5.3/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/5.3/Dockerfile)
--	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/2f180f02a73a9a68a6a6e62d96c11acd65a01b7d/6.1/Dockerfile)
+-	[`5.2.0`, `5.2` (*5.2/Dockerfile*)](https://github.com/docker-library/gcc/blob/df055b1ba29bd666470f4735f2a7bab9acffd0b3/5.2/Dockerfile)
+-	[`5.3.0`, `5.3`, `5` (*5.3/Dockerfile*)](https://github.com/docker-library/gcc/blob/df055b1ba29bd666470f4735f2a7bab9acffd0b3/5.3/Dockerfile)
+-	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/d9c8446748f7d69626f2e9425376a6672fff09af/6.1/Dockerfile)
 
-[![](https://badge.imagelayers.io/gcc:latest.svg)](https://imagelayers.io/?images=gcc:4.8.5,gcc:4.9.3,gcc:5.2.0,gcc:5.3.0,gcc:6.1.0)
+[![](https://badge.imagelayers.io/gcc:latest.svg)](https://imagelayers.io/?images=gcc:5.2.0,gcc:5.3.0,gcc:6.1.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgcc).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `gcc/tag-details.md` file](https://github.com/docker-library/docs/blob/master/gcc/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/gcc/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/gcc/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is GCC?
 
@@ -61,7 +59,7 @@ View [license information](https://gcc.gnu.org/viewcvs/gcc/trunk/gcc/COPYING3?vi
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

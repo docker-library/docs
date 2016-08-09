@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.22`, `5.22.2` (*5.022.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20160430.0/5.022.002-64bit/Dockerfile)
--	[`5.20`, `5.20.3` (*5.020.003-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20160430.0/5.020.003-64bit/Dockerfile)
--	[`threaded`, `5-threaded`, `5.22-threaded`, `5.22.2-threaded` (*5.022.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20160430.0/5.022.002-64bit,threaded/Dockerfile)
--	[`5.20-threaded`, `5.20.3-threaded` (*5.020.003-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20160430.0/5.020.003-64bit,threaded/Dockerfile)
+-	[`latest`, `5`, `5.24`, `5.24.0` (*5.024.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.024.000-64bit/Dockerfile)
+-	[`5.22`, `5.22.2` (*5.022.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.022.002-64bit/Dockerfile)
+-	[`threaded`, `5-threaded`, `5.24-threaded`, `5.24.0-threaded` (*5.024.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.024.000-64bit,threaded/Dockerfile)
+-	[`5.22-threaded`, `5.22.2-threaded` (*5.022.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.022.002-64bit,threaded/Dockerfile)
 
-[![](https://badge.imagelayers.io/perl:latest.svg)](https://imagelayers.io/?images=perl:latest,perl:5.20,perl:threaded,perl:5.20-threaded)
+[![](https://badge.imagelayers.io/perl:latest.svg)](https://imagelayers.io/?images=perl:latest,perl:5.22,perl:threaded,perl:5.22-threaded)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/perl`)](https://github.com/docker-library/official-images/blob/master/library/perl). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fperl).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `perl/tag-details.md` file](https://github.com/docker-library/docs/blob/master/perl/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/perl/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/perl/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Perl?
 
@@ -51,7 +51,7 @@ View [license information](http://dev.perl.org/licenses/) for the software conta
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

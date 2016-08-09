@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.4`, `2.0` (*jessie/2.0.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/cfcec8d1a2c3c2b5713f540a4e540f0ba4b9790b/jessie/2.0.4/Dockerfile)
--	[`2.1.6`, `2.1` (*jessie/2.1.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/cfcec8d1a2c3c2b5713f540a4e540f0ba4b9790b/jessie/2.1.6/Dockerfile)
--	[`2.2.6`, `2.2` (*jessie/2.2.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/cfcec8d1a2c3c2b5713f540a4e540f0ba4b9790b/jessie/2.2.6/Dockerfile)
--	[`2.3.2`, `2.3`, `2`, `latest` (*jessie/2.3.2/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/cfcec8d1a2c3c2b5713f540a4e540f0ba4b9790b/jessie/2.3.2/Dockerfile)
+-	[`2.0.4`, `2.0` (*jessie/2.0.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/d129775a6b33cb9e9a3ced40edda31ba9016a647/jessie/2.0.4/Dockerfile)
+-	[`2.1.6`, `2.1` (*jessie/2.1.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/d129775a6b33cb9e9a3ced40edda31ba9016a647/jessie/2.1.6/Dockerfile)
+-	[`2.2.6`, `2.2` (*jessie/2.2.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/d129775a6b33cb9e9a3ced40edda31ba9016a647/jessie/2.2.6/Dockerfile)
+-	[`2.3.4`, `2.3`, `2`, `latest` (*jessie/2.3.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/d129775a6b33cb9e9a3ced40edda31ba9016a647/jessie/2.3.4/Dockerfile)
 
-[![](https://badge.imagelayers.io/rethinkdb:latest.svg)](https://imagelayers.io/?images=rethinkdb:2.0.4,rethinkdb:2.1.6,rethinkdb:2.2.6,rethinkdb:2.3.2)
+[![](https://badge.imagelayers.io/rethinkdb:latest.svg)](https://imagelayers.io/?images=rethinkdb:2.0.4,rethinkdb:2.1.6,rethinkdb:2.2.6,rethinkdb:2.3.4)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rethinkdb`)](https://github.com/docker-library/official-images/blob/master/library/rethinkdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frethinkdb).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rethinkdb/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rethinkdb/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rethinkdb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rethinkdb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is RethinkDB?
 
@@ -66,7 +66,7 @@ View [license information](http://www.gnu.org/licenses/agpl-3.0.html) for the so
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -80,7 +80,7 @@ Documentation for this image is stored in the [`rethinkdb/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/stuartpb/rethinkdb-dockerfiles/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/rethinkdb/rethinkdb-dockerfiles/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -88,4 +88,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/stuartpb/rethinkdb-dockerfiles/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/rethinkdb/rethinkdb-dockerfiles/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

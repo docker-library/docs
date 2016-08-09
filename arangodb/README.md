@@ -3,13 +3,14 @@
 -	[`2.5.5`, `2.5` (*jessie/2.5.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/636cd874df38edd77a187c08e1803693b3d978d3/jessie/2.5.5/Dockerfile)
 -	[`2.6`, `2.6.10` (*jessie/2.6.10/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/803663b157696616d70e2bb44ce6e256f912e3a6/jessie/2.6.10/Dockerfile)
 -	[`2.7`, `2.7.5` (*jessie/2.7.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/dbfcc5f3edb37f622a2acd221b58106547b05fae/jessie/2.7.5/Dockerfile)
--	[`2.8`, `2.8.7`, `latest` (*jessie/2.8.7/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/d0371ab9b578499d47e56d7245f023c780fea023/jessie/2.8.7/Dockerfile)
+-	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/05366cb4c6a6aab8e1ff9ca74c81b09d9a57b5b5/jessie/2.8.11/Dockerfile)
+-	[`3.0`, `3.0.4`, `latest` (*jessie/3.0.4/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/089d57d96f8ee315ee7af76366f3ada6158fa9a0/jessie/3.0.4/Dockerfile)
 
-[![](https://badge.imagelayers.io/arangodb:latest.svg)](https://imagelayers.io/?images=arangodb:2.5.5,arangodb:2.6,arangodb:2.7,arangodb:2.8)
+[![](https://badge.imagelayers.io/arangodb:latest.svg)](https://imagelayers.io/?images=arangodb:2.5.5,arangodb:2.6,arangodb:2.7,arangodb:2.8,arangodb:3.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/arangodb`)](https://github.com/docker-library/official-images/blob/master/library/arangodb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Farangodb).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `arangodb/tag-details.md` file](https://github.com/docker-library/docs/blob/master/arangodb/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/arangodb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/arangodb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is ArangoDB?
 
@@ -113,7 +114,9 @@ unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb arangod --help
 
 ## Persistent Data
 
-ArangoDB use the volume `/var/lib/arangodb` as database directory to store the collection data and the volume `/var/lib/arangodb-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
+ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
+
+Please note that the old version 2.x used `/var/lib/arangodb` and `/var/lib/arangodb-apps`. We will refer to the 3.x variant in this document. In case you are starting a 2.x image just replace it with the 2.x variant.
 
 See `docker inspect --format "{{ .Config.Volumes}}" arangodb` for all volumes.
 
@@ -126,7 +129,7 @@ You can map the container's volumes to a directory on the host, so that the data
 ```console
 unix> mkdir /tmp/arangodb
 unix> docker -e ARANGO_RANDOM_ROOT_PASSWORD=1 run -p 8529:8529 -d \
-          -v /tmp/arangodb:/var/lib/arangodb \
+          -v /tmp/arangodb:/var/lib/arangodb3 \
           arangodb
 ```
 
@@ -149,7 +152,7 @@ unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --volumes-from arangodb-persis
 If want to save a few bytes you can alternatively use [busybox](https://registry.hub.docker.com/_/busybox) or [alpine](https://registry.hub.docker.com/_/alpine) for creating the volume only containers. Please note that you need to provide the used volumes in this case. For example
 
 ```console
-unix> docker run -d --name arangodb-persist -v /var/lib/arangodb busybox true
+unix> docker run -d --name arangodb-persist -v /var/lib/arangodb3 busybox true
 ```
 
 ### Using as a base image
@@ -162,7 +165,7 @@ If you are using the image as a base image please make sure to wrap any CMD in t
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

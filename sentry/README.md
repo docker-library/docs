@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.3.3`, `8.3` (*8.3/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/2dc5abbda0e68da3519637941f796f56e886ca88/8.3/Dockerfile)
--	[`8.3.3-onbuild`, `8.3-onbuild` (*8.3/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c05ef824c01a4f2b010c2acd24031b4d22f88944/8.3/onbuild/Dockerfile)
--	[`8.4.0`, `8.4`, `8`, `latest` (*8.4/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/80218c227b188fad17575040421d600303c5f7bf/8.4/Dockerfile)
--	[`8.4.0-onbuild`, `8.4-onbuild`, `8-onbuild`, `onbuild` (*8.4/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/80218c227b188fad17575040421d600303c5f7bf/8.4/onbuild/Dockerfile)
+-	[`8.6.0`, `8.6` (*8.6/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/09d2b56ded2f669f40d5295bfe36529bbafb914d/8.6/Dockerfile)
+-	[`8.6.0-onbuild`, `8.6-onbuild` (*8.6/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/09d2b56ded2f669f40d5295bfe36529bbafb914d/8.6/onbuild/Dockerfile)
+-	[`8.7.0`, `8.7`, `8`, `latest` (*8.7/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/22e75e5254b5707b77a747cd4e90bc4327f2ce9b/8.7/Dockerfile)
+-	[`8.7.0-onbuild`, `8.7-onbuild`, `8-onbuild`, `onbuild` (*8.7/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/22e75e5254b5707b77a747cd4e90bc4327f2ce9b/8.7/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.3.3,sentry:8.3.3-onbuild,sentry:8.4.0,sentry:8.4.0-onbuild)
+[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.6.0,sentry:8.6.0-onbuild,sentry:8.7.0,sentry:8.7.0-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `sentry/tag-details.md` file](https://github.com/docker-library/docs/blob/master/sentry/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/sentry/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/sentry/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Sentry?
 
@@ -38,7 +38,7 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 3.	Generate a new secret key to be shared by all `sentry` containers. This value will then be used as the `SENTRY_SECRET_KEY` environment variable.
 
 	```console
-	$ docker run --rm sentry generate-secret-key
+	$ docker run --rm sentry config generate-secret-key
 	```
 
 4.	If this is a new database, you'll need to run `upgrade`
@@ -58,8 +58,8 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 6.	The default config needs a celery beat and celery workers, start as many workers as you need (each with a unique name)
 
 	```console
-	$ docker run -d --name sentry-celery-beat -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry celery beat
-	$ docker run -d --name sentry-celery1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry celery worker
+	$ docker run -d --name sentry-cron -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run cron
+	$ docker run -d --name sentry-worker-1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run worker
 	```
 
 ### Port mapping
@@ -83,7 +83,7 @@ When you start the `sentry` image, you can adjust the configuration of the Sentr
 A secret key used for cryptographic functions within Sentry. This key should be unique and consistent across all running instances. You can generate a new secret key doing something like:
 
 ```console
-$ docker run --rm sentry generate-secret-key
+$ docker run --rm sentry config generate-secret-key
 ```
 
 ### `SENTRY_POSTGRES_HOST`, `SENTRY_POSTGRES_PORT`, `SENTRY_DB_NAME`, `SENTRY_DB_USER`, `SENTRY_DB_PASSWORD`
@@ -130,13 +130,21 @@ It's also possible to develop custom extensions within your `onbuild` package. I
 
 See the [official Sentry documentation](https://docs.getsentry.com/on-premise/server/installation/) for more information.
 
+To create your custom `sentry:onbuild` package, simply do the following:
+
+1.	Create a Dockerfile containing `FROM sentry:onbuild`
+2.	In the same directory, add your custom configuration files.
+3.	You can get copies of those files to use as templates from the [docker-sentry GitHub repo](https://github.com/getsentry/docker-sentry/).
+4.	Build your image: `docker build -t mysentry .`
+5.	Run your custom image using `mysentry` instead of `sentry`.
+
 # License
 
 View [license information](https://github.com/getsentry/sentry/blob/master/LICENSE) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

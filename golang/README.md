@@ -1,19 +1,23 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.4`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/d7e2a8d90a9b8f5dfd5bcd428e0c33b68c40cc19/1.5/Dockerfile)
+-	[`1.5.4`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/7fd2b76513e537343f088da671a51f5b2ea7d4c3/1.5/Dockerfile)
 -	[`1.5.4-onbuild`, `1.5-onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/f1f65c0ab0097a5e3d079d5a74e2468e8d47563d/1.5/onbuild/Dockerfile)
--	[`1.5.4-wheezy`, `1.5-wheezy` (*1.5/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/d7e2a8d90a9b8f5dfd5bcd428e0c33b68c40cc19/1.5/wheezy/Dockerfile)
--	[`1.5.4-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/d7e2a8d90a9b8f5dfd5bcd428e0c33b68c40cc19/1.5/alpine/Dockerfile)
--	[`1.6.2`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/golang/blob/0ce80411b9f41e9c3a21fc0a1bffba6ae761825a/1.6/Dockerfile)
--	[`1.6.2-onbuild`, `1.6-onbuild`, `1-onbuild`, `onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/onbuild/Dockerfile)
--	[`1.6.2-wheezy`, `1.6-wheezy`, `1-wheezy`, `wheezy` (*1.6/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/0ce80411b9f41e9c3a21fc0a1bffba6ae761825a/1.6/wheezy/Dockerfile)
--	[`1.6.2-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/0ce80411b9f41e9c3a21fc0a1bffba6ae761825a/1.6/alpine/Dockerfile)
+-	[`1.5.4-wheezy`, `1.5-wheezy` (*1.5/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/7fd2b76513e537343f088da671a51f5b2ea7d4c3/1.5/wheezy/Dockerfile)
+-	[`1.5.4-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/5a84ebfbf3c55674dd6f36c66828c2e7461f2f0b/1.5/alpine/Dockerfile)
+-	[`1.6.3`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/Dockerfile)
+-	[`1.6.3-onbuild`, `1.6-onbuild`, `1-onbuild`, `onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/onbuild/Dockerfile)
+-	[`1.6.3-wheezy`, `1.6-wheezy`, `1-wheezy`, `wheezy` (*1.6/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/wheezy/Dockerfile)
+-	[`1.6.3-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/alpine/Dockerfile)
+-	[`1.7rc6`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/golang/blob/14bd36d716dfedf39bce5a2ac0b06f09f1049985/1.7/Dockerfile)
+-	[`1.7rc6-onbuild`, `1.7-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/2372c8cafe9cc958bade33ad0b8b54de8869c21f/1.7/onbuild/Dockerfile)
+-	[`1.7rc6-wheezy`, `1.7-wheezy` (*1.7/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/14bd36d716dfedf39bce5a2ac0b06f09f1049985/1.7/wheezy/Dockerfile)
+-	[`1.7rc6-alpine`, `1.7-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/14bd36d716dfedf39bce5a2ac0b06f09f1049985/1.7/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/golang:latest.svg)](https://imagelayers.io/?images=golang:1.5.4,golang:1.5.4-onbuild,golang:1.5.4-wheezy,golang:1.5.4-alpine,golang:1.6.2,golang:1.6.2-onbuild,golang:1.6.2-wheezy,golang:1.6.2-alpine)
+[![](https://badge.imagelayers.io/golang:latest.svg)](https://imagelayers.io/?images=golang:1.5.4,golang:1.5.4-onbuild,golang:1.5.4-wheezy,golang:1.5.4-alpine,golang:1.6.3,golang:1.6.3-onbuild,golang:1.6.3-wheezy,golang:1.6.3-alpine,golang:1.7rc6,golang:1.7rc6-onbuild,golang:1.7rc6-wheezy,golang:1.7rc6-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgolang).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `golang/tag-details.md` file](https://github.com/docker-library/docs/blob/master/golang/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/golang/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/golang/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Go?
 
@@ -87,14 +91,6 @@ The `golang` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `golang:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
 ## `golang:onbuild`
 
 This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM golang:onbuild` will be enough to create a stand-alone image for your project.
@@ -103,13 +99,21 @@ While the `onbuild` variant is really useful for "getting off the ground running
 
 Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
 
+## `golang:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # License
 
 View [license information](http://golang.org/LICENSE) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.8.0`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4d4b57f1ffdcf1be9c90de445e1862ce3e974eb7/Dockerfile)
+-	[`0.9.2`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/471bbbe6669d7e6bafe85a30dfa1f5490822bc80/Dockerfile)
 
-[![](https://badge.imagelayers.io/nats:latest.svg)](https://imagelayers.io/?images=nats:0.8.0)
+[![](https://badge.imagelayers.io/nats:latest.svg)](https://imagelayers.io/?images=nats:0.9.2)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nats`)](https://github.com/docker-library/official-images/blob/master/library/nats). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `nats/tag-details.md` file](https://github.com/docker-library/docs/blob/master/nats/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/nats/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/nats/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # [NATS](https://nats.io): A high-performance cloud native messaging system.
 
@@ -25,11 +25,11 @@ For detailed information about the virtual/transfer sizes and individual layers 
 # use -p or -P as needed.
 
 $ docker run -d --name nats-main nats
-[INF] Starting gnatsd version 0.7.2
-[INF] Starting http monitor on port 8222
-[INF] Listening for route connections on 0.0.0.0:6222
+[INF] Starting nats-server version 0.9.2
+[INF] Starting http monitor on :8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] gnatsd is ready
+[INF] Server is ready
+[INF] Listening for route connections on 0.0.0.0:6222
 
 ...
 
@@ -38,16 +38,18 @@ $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:
 
 # If you want to verify the routes are connected, try
 $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting gnatsd version 0.7.2
-[INF] Starting http monitor on port 8222
-[INF] Listening for route connections on :6222
+[INF] Starting nats-server version 0.9.2
+[DBG] Go build version go1.6.3
+[INF] Starting http monitor on :8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] gnatsd is ready
+[DBG] Server id is Zy0Q82lXHHh7JK39R4nJYU
+[INF] Server is ready
+[INF] Listening for route connections on 0.0.0.0:6222
 [DBG] Trying to connect to route on nats-main:6222
-[DBG] 172.17.0.52:6222 - rid:1 - Route connection created
-[DBG] 172.17.0.52:6222 - rid:1 - Route connect msg sent
-[DBG] 172.17.0.52:6222 - rid:1 - Registering remote route "ee35d227433a738c729f9422a59667bb"
-[DBG] 172.17.0.52:6222 - rid:1 - Route sent local subscriptions
+[DBG] 172.17.0.3:6222 - rid:1 - Route connection created
+[DBG] 172.17.0.3:6222 - rid:1 - Route connect msg sent
+[DBG] 172.17.0.3:6222 - rid:1 - Registering remote route "RLW2KS2rmVwpUZsOvBzCw5"
+[DBG] 172.17.0.3:6222 - rid:1 - Route sent local subscriptions
 ```
 
 The server will load the configuration file below. Any command line flags can override these values.
@@ -105,6 +107,7 @@ Logging Options:
 Authorization Options:
         --user user                  User required for connections
         --pass password              Password required for connections
+        --auth <token>               Authorization token required for connections
 
 TLS Options:
         --tls                        Enable TLS, do not verify clients (default: false)
@@ -114,7 +117,8 @@ TLS Options:
         --tlscacert FILE             Client certificate CA for verification
 
 Cluster Options:
-        --routes [rurl-1, rurl-2]    Routes to solicit and connect
+        --routes <rurl-1, rurl-2>    Routes to solicit and connect
+        --cluster <cluster-url>      Cluster URL for solicited routes
 
 Common Options:
     -h, --help                       Show this message
@@ -128,7 +132,7 @@ View [license information](https://github.com/nats-io/gnatsd/blob/master/LICENSE
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

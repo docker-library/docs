@@ -1,16 +1,19 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`18.3.3`, `18.3`, `18`, `latest` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/2daeab9ef204095169b3cc96def31ce08a5f7358/18/Dockerfile)
--	[`18.3-slim`, `18-slim`, `slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/2daeab9ef204095169b3cc96def31ce08a5f7358/18/slim/Dockerfile)
--	[`18.3-onbuild`, `18-onbuild`, `onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/2daeab9ef204095169b3cc96def31ce08a5f7358/18/onbuild/Dockerfile)
--	[`17.5.6.8`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/Dockerfile)
--	[`17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/slim/Dockerfile)
+-	[`19.0.1`, `19.0`, `19`, `latest` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/19/Dockerfile)
+-	[`19.0.1-slim`, `19.0-slim`, `19-slim`, `slim` (*19/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/19/slim/Dockerfile)
+-	[`19.0.1-onbuild`, `19.0-onbuild`, `19-onbuild`, `onbuild` (*19/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/19/onbuild/Dockerfile)
+-	[`18.3.4.1`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/18/Dockerfile)
+-	[`18.3.4.1-slim`, `18.3.4-slim`, `18.3-slim`, `18-slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/18/slim/Dockerfile)
+-	[`18.3.4.1-onbuild`, `18.3.4-onbuild`, `18.3-onbuild`, `18-onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/01a4e03a5f1fd0ae7cf6d396ae6fe5695555645d/18/onbuild/Dockerfile)
+-	[`17.5.6.9`, `17.5.6`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/ea32d5f6f1735f9f55bee04b112166da96eb9c73/17/Dockerfile)
+-	[`17.5.6.9-slim`, `17.5.6-slim`, `17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/ea32d5f6f1735f9f55bee04b112166da96eb9c73/17/slim/Dockerfile)
 
-[![](https://badge.imagelayers.io/erlang:latest.svg)](https://imagelayers.io/?images=erlang:18.3.3,erlang:18.3-slim,erlang:18.3-onbuild,erlang:17.5.6.8,erlang:17.5-slim)
+[![](https://badge.imagelayers.io/erlang:latest.svg)](https://imagelayers.io/?images=erlang:19.0.1,erlang:19.0.1-slim,erlang:19.0.1-onbuild,erlang:18.3.4.1,erlang:18.3.4.1-slim,erlang:18.3.4.1-onbuild,erlang:17.5.6.9,erlang:17.5.6.9-slim)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/erlang`)](https://github.com/docker-library/official-images/blob/master/library/erlang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ferlang).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `erlang/tag-details.md` file](https://github.com/docker-library/docs/blob/master/erlang/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/erlang/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/erlang/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Erlang?
 
@@ -69,6 +72,10 @@ The `erlang` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
+## `erlang:slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `erlang`. Unless you are working in an environment where *only* the erlang image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
 ## `erlang:onbuild`
 
 This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM erlang:onbuild` will be enough to create a stand-alone image for your project.
@@ -76,10 +83,6 @@ This image makes building derivative images easier. For most use cases, creating
 While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
 
 Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
-
-## `erlang:slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `erlang`. Unless you are working in an environment where *only* the erlang image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
@@ -90,7 +93,7 @@ View [license information](http://www.erlang.org/about.html) for the software co
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

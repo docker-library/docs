@@ -1,16 +1,17 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `23` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/39d5e72640cefb5e6923afd255dd51a2eb06e146/Dockerfile)
+-	[`latest`, `24` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/3a14c0a840dceb7865d814dfb4150ef33a982d63/Dockerfile)
+-	[`23` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/ec63b8db44c2d8c97e29faeb55955ca25bd9076e/Dockerfile)
 -	[`22` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/bccd42bf4e9102ef10eff372488167948fdd0430/Dockerfile)
 -	[`21` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/e32493b9601c3535cd6e0d0a8ff61d8fa95afb83/Dockerfile)
--	[`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/d5c60b14647267a280a56cc71c6630d8df61644b/Dockerfile)
+-	[`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/d28b4d3e1c4d613a12701557b0d686c28490af69/Dockerfile)
 -	[`20`, `heisenbug` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/10ada29063147fde9e39190f4c2344b6e6e659e6/Dockerfile)
 
-[![](https://badge.imagelayers.io/fedora:latest.svg)](https://imagelayers.io/?images=fedora:latest,fedora:22,fedora:21,fedora:rawhide,fedora:20)
+[![](https://badge.imagelayers.io/fedora:latest.svg)](https://imagelayers.io/?images=fedora:latest,fedora:23,fedora:22,fedora:21,fedora:rawhide,fedora:20)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/fedora`)](https://github.com/docker-library/official-images/blob/master/library/fedora). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffedora).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `fedora/tag-details.md` file](https://github.com/docker-library/docs/blob/master/fedora/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/fedora/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/fedora/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Fedora
 
@@ -26,7 +27,7 @@ This image is a relatively small footprint in comparison to a standard Fedora in
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

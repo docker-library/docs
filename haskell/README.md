@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.10.3`, `7.10`, `7`, `latest` (*7.10/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/a396f0d9b35cabeb60920abd87a8b2612530cb1b/7.10/Dockerfile)
+-	[`8.0.1`, `8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/e0efde5504642864811a7697ab945067bb6a042e/8.0/Dockerfile)
 
-[![](https://badge.imagelayers.io/haskell:latest.svg)](https://imagelayers.io/?images=haskell:7.10.3)
+[![](https://badge.imagelayers.io/haskell:latest.svg)](https://imagelayers.io/?images=haskell:8.0.1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haskell`)](https://github.com/docker-library/official-images/blob/master/library/haskell). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaskell).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `haskell/tag-details.md` file](https://github.com/docker-library/docs/blob/master/haskell/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/haskell/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/haskell/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Haskell?
 
@@ -91,7 +91,7 @@ This image is licensed under the MIT License (see [LICENSE](https://github.com/d
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

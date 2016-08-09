@@ -7,7 +7,7 @@
 
 For more information about this image and its history, please see [the relevant manifest file (`library/irssi`)](https://github.com/docker-library/official-images/blob/master/library/irssi). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Firssi).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `irssi/tag-details.md` file](https://github.com/docker-library/docs/blob/master/irssi/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/irssi/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/irssi/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is irssi?
 
@@ -70,7 +70,7 @@ View [license information](https://github.com/irssi/irssi/blob/master/COPYING) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

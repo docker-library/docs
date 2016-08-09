@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.30.55`, `0.30`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/eaca6a6e5f040c2d96093f5e3bba5e0d6d59feed/Dockerfile)
+-	[`0.30.59`, `0.30`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/d1a908ad4cce8bcf4453fd2b40022eeb8f5c3724/Dockerfile)
 
-[![](https://badge.imagelayers.io/mongo-express:latest.svg)](https://imagelayers.io/?images=mongo-express:0.30.55)
+[![](https://badge.imagelayers.io/mongo-express:latest.svg)](https://imagelayers.io/?images=mongo-express:0.30.59)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo-express`)](https://github.com/docker-library/official-images/blob/master/library/mongo-express). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mongo-express/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mongo-express/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mongo-express/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mongo-express/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is mongo-express?
 
@@ -77,7 +77,7 @@ This example links to a container name typical of `docker-compose`, changes the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

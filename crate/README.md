@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.54`, `0.54.9` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/1d7d393fd77f1ca795a1c4a489de5a82d53d8b85/Dockerfile)
+-	[`latest`, `0.55`, `0.55.2` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/2bf4133c89dc22f49246b93d559d8029cd895fe2/Dockerfile)
 -	[`0.52`, `0.52.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/cce8f796ba8936250eb380235cde47be494d1e95/Dockerfile)
 
 [![](https://badge.imagelayers.io/crate:latest.svg)](https://imagelayers.io/?images=crate:latest,crate:0.52)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrate).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `crate/tag-details.md` file](https://github.com/docker-library/docs/blob/master/crate/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/crate/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/crate/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What Is Crate?
 
@@ -39,7 +39,7 @@ To start the Crate cluster in containers distributed to three hosts without mult
     --volume /mnt/data:/data \
     --ulimit nofile=65535 \
     --ulimit memlock=9223372036854775807 \
-        crate:latest \
+        crate \
         crate \
           -Des.cluster.name=crate-cluster \
           -Des.node.name=crate1 \
@@ -133,7 +133,7 @@ View [license information](https://github.com/crate/crate/blob/master/LICENSE.tx
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

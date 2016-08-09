@@ -1,14 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.3.8`, `9.3`, `9`, `9.3.8-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/5735e4acf1cf1d12e5be386195491394675f98fe/9.3-jre8/Dockerfile)
--	[`9.2.15`, `9.2`, `9.2.15-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/10f05b129dfd6caa03dc3038a19fab44fb6dcf67/9.2-jre8/Dockerfile)
--	[`9.2.15-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/10f05b129dfd6caa03dc3038a19fab44fb6dcf67/9.2-jre7/Dockerfile)
+-	[`9.3.10`, `9.3`, `9`, `9.3.10-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c228052ac9459c1303601e90fd66a44d7be6b8ce/9.3-jre8/Dockerfile)
+-	[`9.3.10-alpine`, `9.3-alpine`, `9-alpine`, `9.3.10-jre8-alpine`, `9.3-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c228052ac9459c1303601e90fd66a44d7be6b8ce/9.3-jre8/alpine/Dockerfile)
+-	[`9.2.17`, `9.2`, `9.2.17-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c228052ac9459c1303601e90fd66a44d7be6b8ce/9.2-jre8/Dockerfile)
+-	[`9.2.17-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c228052ac9459c1303601e90fd66a44d7be6b8ce/9.2-jre7/Dockerfile)
 
-[![](https://badge.imagelayers.io/jetty:latest.svg)](https://imagelayers.io/?images=jetty:9.3.8,jetty:9.2.15,jetty:9.2.15-jre7)
+[![](https://badge.imagelayers.io/jetty:latest.svg)](https://imagelayers.io/?images=jetty:9.3.10,jetty:9.3.10-alpine,jetty:9.2.17,jetty:9.2.17-jre7)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjetty).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jetty/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jetty/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/jetty/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/jetty/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Jetty?
 
@@ -106,13 +107,29 @@ If you would like the image to start immediately as user `jetty` instead of star
 $ docker run -d -u jetty jetty
 ```
 
+# Image Variants
+
+The `jetty` images come in many flavors, each designed for a specific use case.
+
+## `jetty:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `jetty:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # License
 
 View [license information](http://eclipse.org/jetty/licenses.php) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

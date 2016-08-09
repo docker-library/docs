@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.0.3` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/a4da793e2e8db73532ceb9a7cbbc9b82ab90ca1a/7.0/Dockerfile)
--	[`7.2.3`, `latest` (*7.2/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/6f67495930c84b02ecd689fc09d0bc953e792bfb/7.2/Dockerfile)
+-	[`7.2.4`, `latest` (*7.2/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/c8d6cbb007b77a9ce5b22a7e874608962f863e99/7.2/Dockerfile)
 
-[![](https://badge.imagelayers.io/bonita:latest.svg)](https://imagelayers.io/?images=bonita:7.0.3,bonita:7.2.3)
+[![](https://badge.imagelayers.io/bonita:latest.svg)](https://imagelayers.io/?images=bonita:7.0.3,bonita:7.2.4)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/bonita`)](https://github.com/docker-library/official-images/blob/master/library/bonita). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbonita).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `bonita/tag-details.md` file](https://github.com/docker-library/docs/blob/master/bonita/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/bonita/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/bonita/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Bonita BPM?
 
@@ -326,7 +326,7 @@ Bonita BPM image includes two parts :
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

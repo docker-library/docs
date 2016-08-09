@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.651.2` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/373c45a59fbaa2b15e77408425205b158352480e/Dockerfile)
--	[`alpine`, `1.651.2-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/bf76339b2a65acb309bcdc472cfcc9306eeb45f3/Dockerfile)
+-	[`latest`, `2.7.2` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/3a83b9d680fa3e669c6877f9fd0ab924e5b85e35/Dockerfile)
+-	[`alpine`, `2.7.2-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/98aaef679b60c78cdf5122dd46589cb949b0710d/Dockerfile)
 
 [![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jenkins/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jenkins/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/jenkins/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/jenkins/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Jenkins
 
@@ -193,7 +193,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

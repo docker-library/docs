@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.0.1.38` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/ab90b204bb56d0f40e38b87189fb95748ac19dfd/Dockerfile)
+-	[`latest`, `5.1.1` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/611ee6af26b64b7eda7ff44ff2409f49d588f6cc/Dockerfile)
 
 [![](https://badge.imagelayers.io/kaazing-gateway:latest.svg)](https://imagelayers.io/?images=kaazing-gateway:latest)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kaazing-gateway`)](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkaazing-gateway).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `kaazing-gateway/tag-details.md` file](https://github.com/docker-library/docs/blob/master/kaazing-gateway/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/kaazing-gateway/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/kaazing-gateway/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is the KAAZING Gateway?
 
@@ -63,7 +63,7 @@ View [license information](https://github.com/kaazing/gateway/blob/master/LICENS
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0`, `0.11`, `0.11.1` (*Dockerfile*)](https://github.com/hylang/hy/blob/0.11.1/Dockerfile)
+-	[`0.11.1`, `0.11`, `0`, `latest` (*Dockerfile*)](https://github.com/hylang/hy/blob/54b13955d1f98f8a7d835a4ed8f452bb9f1135bc/Dockerfile)
 
-[![](https://badge.imagelayers.io/hylang:latest.svg)](https://imagelayers.io/?images=hylang:latest)
+[![](https://badge.imagelayers.io/hylang:latest.svg)](https://imagelayers.io/?images=hylang:0.11.1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/hylang`)](https://github.com/docker-library/official-images/blob/master/library/hylang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhylang).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `hylang/tag-details.md` file](https://github.com/docker-library/docs/blob/master/hylang/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/hylang/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/hylang/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Hy?
 
@@ -48,7 +48,7 @@ View [license information](https://github.com/hylang/hy/blob/master/LICENSE) for
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

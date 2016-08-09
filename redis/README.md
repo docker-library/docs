@@ -1,19 +1,17 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8.23`, `2.8`, `2` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/2.8/Dockerfile)
--	[`2.8.23-32bit`, `2.8-32bit`, `2-32bit` (*2.8/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/2.8/32bit/Dockerfile)
 -	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.0/Dockerfile)
 -	[`3.0.7-32bit`, `3.0-32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.0/32bit/Dockerfile)
--	[`3.0.7-alpine`, `3.0-alpine` (*3.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.0/alpine/Dockerfile)
--	[`3.2.0`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.2/Dockerfile)
--	[`3.2.0-32bit`, `3.2-32bit`, `3-32bit`, `32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.2/32bit/Dockerfile)
--	[`3.2.0-alpine`, `3.2-alpine`, `3-alpine`, `alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.2/alpine/Dockerfile)
+-	[`3.0.7-alpine`, `3.0-alpine` (*3.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/c49a42f6efcd2b971e43e93116a976b058035544/3.0/alpine/Dockerfile)
+-	[`3.2.3`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/ab537600e90916e0425c938054db1bf50256853c/3.2/Dockerfile)
+-	[`3.2.3-32bit`, `3.2-32bit`, `3-32bit`, `32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/ab537600e90916e0425c938054db1bf50256853c/3.2/32bit/Dockerfile)
+-	[`3.2.3-alpine`, `3.2-alpine`, `3-alpine`, `alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/ab537600e90916e0425c938054db1bf50256853c/3.2/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/redis:latest.svg)](https://imagelayers.io/?images=redis:2.8.23,redis:2.8.23-32bit,redis:3.0.7,redis:3.0.7-32bit,redis:3.0.7-alpine,redis:3.2.0,redis:3.2.0-32bit,redis:3.2.0-alpine)
+[![](https://badge.imagelayers.io/redis:latest.svg)](https://imagelayers.io/?images=redis:3.0.7,redis:3.0.7-32bit,redis:3.0.7-alpine,redis:3.2.3,redis:3.2.3-32bit,redis:3.2.3-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/redis`)](https://github.com/docker-library/official-images/blob/master/library/redis). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredis).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `redis/tag-details.md` file](https://github.com/docker-library/docs/blob/master/redis/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/redis/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/redis/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Redis?
 
@@ -99,7 +97,7 @@ View [license information](http://redis.io/topics/license) for the software cont
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

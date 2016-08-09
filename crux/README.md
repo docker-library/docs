@@ -6,7 +6,7 @@
 
 For more information about this image and its history, please see [the relevant manifest file (`library/crux`)](https://github.com/docker-library/official-images/blob/master/library/crux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrux).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `crux/tag-details.md` file](https://github.com/docker-library/docs/blob/master/crux/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/crux/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/crux/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is CRUX?
 
@@ -26,7 +26,7 @@ Finally, it strives to use new features as they become available, as long as the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

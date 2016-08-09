@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.8.1`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/7d027db20c7347c23e7944b842fcc77ca9e0a34e/Dockerfile)
+-	[`3.9.0.3`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/27944b4607e63498931f3c1602ccf2322bb84a0e/Dockerfile)
 
-[![](https://badge.imagelayers.io/aerospike:latest.svg)](https://imagelayers.io/?images=aerospike:3.8.1)
+[![](https://badge.imagelayers.io/aerospike:latest.svg)](https://imagelayers.io/?images=aerospike:3.9.0.3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/aerospike`)](https://github.com/docker-library/official-images/blob/master/library/aerospike). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Faerospike).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `aerospike/tag-details.md` file](https://github.com/docker-library/docs/blob/master/aerospike/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/aerospike/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/aerospike/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Aerospike
 
@@ -99,7 +99,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

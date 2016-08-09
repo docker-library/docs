@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.30.0`, `0.30`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/a9a40ab6aa0bbab6f3abe52b31dd810b1714dada/Dockerfile)
+-	[`0.36.0`, `0.36`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/6a71d57ee5576455a0acfdf0ab144ef5489022ef/Dockerfile)
 
-[![](https://badge.imagelayers.io/rocket.chat:latest.svg)](https://imagelayers.io/?images=rocket.chat:0.30.0)
+[![](https://badge.imagelayers.io/rocket.chat:latest.svg)](https://imagelayers.io/?images=rocket.chat:0.36.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rocket.chat`)](https://github.com/docker-library/official-images/blob/master/library/rocket.chat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frocket.chat).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rocket.chat/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rocket.chat/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rocket.chat/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rocket.chat/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Rocket.Chat
 
@@ -21,7 +21,7 @@ It is a great solution for communities and companies wanting to privately host t
 First, start an instance of mongo:
 
 ```console
-$ docker run --name db -d mongo --smallfiles
+$ docker run --name db -d mongo:3.0 --smallfiles
 ```
 
 Then start Rocket.Chat linked to this mongo instance:
@@ -52,7 +52,7 @@ View [license information](https://github.com/RocketChat/Rocket.Chat/blob/master
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.1.
+This image is officially supported on Docker version 1.12.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
