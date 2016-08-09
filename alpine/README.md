@@ -6,8 +6,6 @@
 -	[`3.4`, `latest` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/45ba65c1116aaf668f7ab5f2b3ae2ef4b00738be/versions/library-3.4/Dockerfile)
 -	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/30bc683424fd34eb520aa856fea9984382a8f8fc/versions/library-edge/Dockerfile)
 
-[![](https://badge.imagelayers.io/alpine:latest.svg)](https://imagelayers.io/?images=alpine:3.1,alpine:3.2,alpine:3.3,alpine:3.4,alpine:edge)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/alpine`)](https://github.com/docker-library/official-images/blob/master/library/alpine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Falpine).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/alpine/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/alpine/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

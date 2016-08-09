@@ -3,8 +3,6 @@
 -	[`1.6.21`, `1.6`, `stable`, `latest` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/def15a99429271388c9f2958dcc1a825f729e3d3/1.6/Dockerfile)
 -	[`1.8.0`, `1.8`, `develop` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/def15a99429271388c9f2958dcc1a825f729e3d3/1.8/Dockerfile)
 
-[![](https://badge.imagelayers.io/eggdrop:latest.svg)](https://imagelayers.io/?images=eggdrop:1.6.21,eggdrop:1.8.0)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/eggdrop`)](https://github.com/docker-library/official-images/blob/master/library/eggdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feggdrop).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/eggdrop/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/eggdrop/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

@@ -13,8 +13,6 @@
 -	[`9-b130-jdk`, `9-b130`, `9-jdk`, `9`, `openjdk-9-b130-jdk`, `openjdk-9-b130`, `openjdk-9-jdk`, `openjdk-9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a344905a72f381b3084c4c1cd0b3a24bcc9b4e23/9-jdk/Dockerfile)
 -	[`9-b130-jre`, `9-jre`, `openjdk-9-b130-jre`, `openjdk-9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a344905a72f381b3084c4c1cd0b3a24bcc9b4e23/9-jre/Dockerfile)
 
-[![](https://badge.imagelayers.io/java:latest.svg)](https://imagelayers.io/?images=java:6b38-jdk,java:6b38-jre,java:7u111-jdk,java:7u91-jdk-alpine,java:7u111-jre,java:7u91-jre-alpine,java:8u91-jdk,java:8u92-jdk-alpine,java:8u91-jre,java:8u92-jre-alpine,java:9-b130-jdk,java:9-b130-jre)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjava).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/java/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/java/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

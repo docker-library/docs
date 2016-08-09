@@ -5,8 +5,6 @@
 -	[`3.2.8`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/92669ba9c463593f85007faf371522201167a5ee/3.2/Dockerfile)
 -	[`3.3.10`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/mongo/blob/7065352d915f03584da8a57cc070e612106496ef/3.3/Dockerfile)
 
-[![](https://badge.imagelayers.io/mongo:latest.svg)](https://imagelayers.io/?images=mongo:2.6.12,mongo:3.0.12,mongo:3.2.8,mongo:3.3.10)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mongo/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mongo/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

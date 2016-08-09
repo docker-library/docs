@@ -9,8 +9,6 @@
 -	[`1.7-jdk`, `1.7.25-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/ad0479fa0d278f5eb311e01417c079a97305eeb3/1.7/jdk/Dockerfile)
 -	[`1.7-onbuild`, `1.7.25-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/ad0479fa0d278f5eb311e01417c079a97305eeb3/1.7/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/jruby:latest.svg)](https://imagelayers.io/?images=jruby:latest,jruby:9-alpine,jruby:9.1-jdk,jruby:9.1-jdk-alpine,jruby:9-onbuild,jruby:1.7,jruby:1.7-jdk,jruby:1.7-onbuild)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjruby).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/jruby/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/jruby/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

@@ -3,8 +3,6 @@
 -	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/f063b22fc1e9f3d78e025f3a3842299721cd78bf/4.0.0.4/Dockerfile)
 -	[`4.0.1.1`, `latest` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/1a01ecbe00ef0c1399893ed5cda40c197614f48d/4.0.1.1/Dockerfile)
 
-[![](https://badge.imagelayers.io/fsharp:latest.svg)](https://imagelayers.io/?images=fsharp:4.0.0.4,fsharp:4.0.1.1)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/fsharp`)](https://github.com/docker-library/official-images/blob/master/library/fsharp). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffsharp).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/fsharp/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/fsharp/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

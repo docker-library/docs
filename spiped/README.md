@@ -3,8 +3,6 @@
 -	[`1.5.0`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/04b9fa8c5b8ea5ca75f656ce1104e93096f09d02/1.5/Dockerfile)
 -	[`1.5.0-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*1.5/alpine/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/04b9fa8c5b8ea5ca75f656ce1104e93096f09d02/1.5/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/spiped:latest.svg)](https://imagelayers.io/?images=spiped:1.5.0,spiped:1.5.0-alpine)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/spiped`)](https://github.com/docker-library/official-images/blob/master/library/spiped). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fspiped).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/spiped/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/spiped/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

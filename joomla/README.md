@@ -5,8 +5,6 @@
 -	[`3.6.0-fpm`, `3.6-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/527331d50231c06ed700fca193fdf983f732904d/fpm/Dockerfile)
 -	[`3.6.0-fpm-php7`, `3.6-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/527331d50231c06ed700fca193fdf983f732904d/fpm-php7/Dockerfile)
 
-[![](https://badge.imagelayers.io/joomla:latest.svg)](https://imagelayers.io/?images=joomla:3.6.0-apache,joomla:3.6.0-apache-php7,joomla:3.6.0-fpm,joomla:3.6.0-fpm-php7)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjoomla).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/joomla/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/joomla/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

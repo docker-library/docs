@@ -5,8 +5,6 @@
 -	[`2.2.6`, `2.2` (*jessie/2.2.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/d129775a6b33cb9e9a3ced40edda31ba9016a647/jessie/2.2.6/Dockerfile)
 -	[`2.3.4`, `2.3`, `2`, `latest` (*jessie/2.3.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/d129775a6b33cb9e9a3ced40edda31ba9016a647/jessie/2.3.4/Dockerfile)
 
-[![](https://badge.imagelayers.io/rethinkdb:latest.svg)](https://imagelayers.io/?images=rethinkdb:2.0.4,rethinkdb:2.1.6,rethinkdb:2.2.6,rethinkdb:2.3.4)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/rethinkdb`)](https://github.com/docker-library/official-images/blob/master/library/rethinkdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frethinkdb).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rethinkdb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rethinkdb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

@@ -6,8 +6,6 @@
 -	[`1.0.0-beta3` (*kapacitor/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22315c8e211defb2589fa6831c682391de492b88/kapacitor/1.0/Dockerfile)
 -	[`1.0.0-beta3-alpine` (*kapacitor/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22315c8e211defb2589fa6831c682391de492b88/kapacitor/1.0/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/kapacitor:latest.svg)](https://imagelayers.io/?images=kapacitor:0.12,kapacitor:0.13,kapacitor:0.13-alpine,kapacitor:1.0.0-beta3,kapacitor:1.0.0-beta3-alpine)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/kapacitor`)](https://github.com/docker-library/official-images/blob/master/library/kapacitor). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/kapacitor/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/kapacitor/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

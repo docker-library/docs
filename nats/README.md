@@ -2,8 +2,6 @@
 
 -	[`0.9.2`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/471bbbe6669d7e6bafe85a30dfa1f5490822bc80/Dockerfile)
 
-[![](https://badge.imagelayers.io/nats:latest.svg)](https://imagelayers.io/?images=nats:0.9.2)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/nats`)](https://github.com/docker-library/official-images/blob/master/library/nats). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/nats/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/nats/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

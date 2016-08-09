@@ -2,8 +2,6 @@
 
 -	[`latest`, `base` (*Dockerfile*)](https://github.com/clearlinux/docker-brew-clearlinux/blob/0ceb073491db6b8e15c370e35c42e93c5ba2951e/Dockerfile)
 
-[![](https://badge.imagelayers.io/clearlinux:latest.svg)](https://imagelayers.io/?images=clearlinux:latest)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/clearlinux`)](https://github.com/docker-library/official-images/blob/master/library/clearlinux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclearlinux).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/clearlinux/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/clearlinux/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

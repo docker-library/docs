@@ -2,8 +2,6 @@
 
 -	[`latest`, `5.1.1` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/611ee6af26b64b7eda7ff44ff2409f49d588f6cc/Dockerfile)
 
-[![](https://badge.imagelayers.io/kaazing-gateway:latest.svg)](https://imagelayers.io/?images=kaazing-gateway:latest)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/kaazing-gateway`)](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkaazing-gateway).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/kaazing-gateway/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/kaazing-gateway/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

@@ -24,8 +24,6 @@
 -	[`3.6.0a3-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/7ea58b992e65e0c95226e8acb1a4f3b2e2f72554/3.6/alpine/Dockerfile)
 -	[`3.6.0a3-onbuild`, `3.6-onbuild` (*3.6/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/635ea5d58b53d165f7bedae90f8933c720a58150/3.6/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/python:latest.svg)](https://imagelayers.io/?images=python:2.7.12,python:2.7.12-slim,python:2.7.12-alpine,python:2.7.12-wheezy,python:2.7.12-onbuild,python:3.3.6,python:3.3.6-slim,python:3.3.6-alpine,python:3.3.6-wheezy,python:3.3.6-onbuild,python:3.4.5,python:3.4.5-slim,python:3.4.5-alpine,python:3.4.5-wheezy,python:3.4.5-onbuild,python:3.5.2,python:3.5.2-slim,python:3.5.2-alpine,python:3.5.2-onbuild,python:3.6.0a3,python:3.6.0a3-slim,python:3.6.0a3-alpine,python:3.6.0a3-onbuild)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/python`)](https://github.com/docker-library/official-images/blob/master/library/python). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpython).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/python/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/python/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

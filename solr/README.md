@@ -11,8 +11,6 @@
 -	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1c2f9a0791e854c05c41952d5a086d57ebadc5f2/6.1/Dockerfile)
 -	[`6.1.0-alpine`, `6.1-alpine`, `6-alpine`, `alpine` (*6.1/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1c2f9a0791e854c05c41952d5a086d57ebadc5f2/6.1/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/solr:latest.svg)](https://imagelayers.io/?images=solr:5.3.2,solr:5.3.2-alpine,solr:5.4.1,solr:5.4.1-alpine,solr:5.5.2,solr:5.5.2-alpine,solr:6.0.1,solr:6.0.1-alpine,solr:6.1.0,solr:6.1.0-alpine)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/solr`)](https://github.com/docker-library/official-images/blob/master/library/solr). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsolr).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/solr/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/solr/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

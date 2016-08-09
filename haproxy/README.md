@@ -7,8 +7,6 @@
 -	[`1.6.7`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/fee22521901f01ccde1a1f63c6d3b619053ef196/1.6/Dockerfile)
 -	[`1.6.7-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/fee22521901f01ccde1a1f63c6d3b619053ef196/1.6/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/haproxy:latest.svg)](https://imagelayers.io/?images=haproxy:1.4.27,haproxy:1.4.27-alpine,haproxy:1.5.18,haproxy:1.5.18-alpine,haproxy:1.6.7,haproxy:1.6.7-alpine)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaproxy).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/haproxy/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/haproxy/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

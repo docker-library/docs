@@ -13,8 +13,6 @@
 -	[`3.3.3-jdk-9` (*jdk-9/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/993474f006a59f487ef795864fab6115f9b1b8b5/jdk-9/Dockerfile)
 -	[`3.3.3-jdk-9-onbuild` (*jdk-9/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/993474f006a59f487ef795864fab6115f9b1b8b5/jdk-9/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/maven:latest.svg)](https://imagelayers.io/?images=maven:3.3.9-jdk-7,maven:3.3.9-jdk-7-onbuild,maven:3.3.9-jdk-8,maven:3.3.9-jdk-8-onbuild,maven:3.3.9-jdk-9,maven:3.3.9-jdk-9-onbuild,maven:3.3.3-jdk-7,maven:3.3.3-jdk-7-onbuild,maven:3.3.3-jdk-8,maven:3.3.3-jdk-8-onbuild,maven:3.3.3-jdk-9,maven:3.3.3-jdk-9-onbuild)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/maven`)](https://github.com/docker-library/official-images/blob/master/library/maven). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmaven).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/maven/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/maven/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

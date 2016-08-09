@@ -5,8 +5,6 @@
 -	[`9.2.17`, `9.2`, `9.2.17-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c228052ac9459c1303601e90fd66a44d7be6b8ce/9.2-jre8/Dockerfile)
 -	[`9.2.17-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c228052ac9459c1303601e90fd66a44d7be6b8ce/9.2-jre7/Dockerfile)
 
-[![](https://badge.imagelayers.io/jetty:latest.svg)](https://imagelayers.io/?images=jetty:9.3.10,jetty:9.3.10-alpine,jetty:9.2.17,jetty:9.2.17-jre7)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjetty).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/jetty/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/jetty/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

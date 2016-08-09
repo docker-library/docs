@@ -6,8 +6,6 @@
 -	[`1.0.0-beta3` (*telegraf/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22315c8e211defb2589fa6831c682391de492b88/telegraf/1.0/Dockerfile)
 -	[`1.0.0-beta3-alpine` (*telegraf/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22315c8e211defb2589fa6831c682391de492b88/telegraf/1.0/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/telegraf:latest.svg)](https://imagelayers.io/?images=telegraf:0.12,telegraf:0.13,telegraf:0.13-alpine,telegraf:1.0.0-beta3,telegraf:1.0.0-beta3-alpine)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/telegraf`)](https://github.com/docker-library/official-images/blob/master/library/telegraf). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftelegraf).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/telegraf/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/telegraf/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

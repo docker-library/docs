@@ -5,8 +5,6 @@
 -	[`16.04`, `xenial-20160713`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e68c4b0d4c860a8e0547cfea6f1b07f0adb9ff46/xenial/Dockerfile)
 -	[`16.10`, `yakkety-20160717`, `yakkety`, `devel` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e68c4b0d4c860a8e0547cfea6f1b07f0adb9ff46/yakkety/Dockerfile)
 
-[![](https://badge.imagelayers.io/ubuntu:latest.svg)](https://imagelayers.io/?images=ubuntu:12.04.5,ubuntu:14.04.4,ubuntu:16.04,ubuntu:16.10)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fubuntu).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/ubuntu/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/ubuntu/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

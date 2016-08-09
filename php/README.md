@@ -22,8 +22,6 @@
 -	[`5.5.38-zts`, `5.5-zts` (*5.5/zts/Dockerfile*)](https://github.com/docker-library/php/blob/2cc40ce1de4206a9bc55e38331937b4bd7d58700/5.5/zts/Dockerfile)
 -	[`5.5.38-zts-alpine`, `5.5-zts-alpine` (*5.5/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/2cc40ce1de4206a9bc55e38331937b4bd7d58700/5.5/zts/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/php:latest.svg)](https://imagelayers.io/?images=php:7.0.9-cli,php:7.0.9-alpine,php:7.0.9-apache,php:7.0.9-fpm,php:7.0.9-fpm-alpine,php:7.0.9-zts,php:7.0.9-zts-alpine,php:5.6.24-cli,php:5.6.24-alpine,php:5.6.24-apache,php:5.6.24-fpm,php:5.6.24-fpm-alpine,php:5.6.24-zts,php:5.6.24-zts-alpine,php:5.5.38-cli,php:5.5.38-alpine,php:5.5.38-apache,php:5.5.38-fpm,php:5.5.38-fpm-alpine,php:5.5.38-zts,php:5.5.38-zts-alpine)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/php/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/php/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

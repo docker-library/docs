@@ -6,8 +6,6 @@
 -	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/05366cb4c6a6aab8e1ff9ca74c81b09d9a57b5b5/jessie/2.8.11/Dockerfile)
 -	[`3.0`, `3.0.4`, `latest` (*jessie/3.0.4/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/089d57d96f8ee315ee7af76366f3ada6158fa9a0/jessie/3.0.4/Dockerfile)
 
-[![](https://badge.imagelayers.io/arangodb:latest.svg)](https://imagelayers.io/?images=arangodb:2.5.5,arangodb:2.6,arangodb:2.7,arangodb:2.8,arangodb:3.0)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/arangodb`)](https://github.com/docker-library/official-images/blob/master/library/arangodb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Farangodb).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/arangodb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/arangodb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

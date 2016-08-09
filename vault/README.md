@@ -2,8 +2,6 @@
 
 -	[`v0.6.0`, `latest` (*0.6/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/a77fd5f7256af73c082cfef56403ecc4df58fa94/0.6/Dockerfile)
 
-[![](https://badge.imagelayers.io/vault:latest.svg)](https://imagelayers.io/?images=vault:v0.6.0)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/vault`)](https://github.com/docker-library/official-images/blob/master/library/vault). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvault).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/vault/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/vault/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

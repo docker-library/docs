@@ -5,8 +5,6 @@
 -	[`mainline-alpine`, `alpine`, `1-alpine`, `1.11-alpine`, `1.11.1-alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/11fc019b2be3ad51ba5d097b1857a099c4056213/mainline/alpine/Dockerfile)
 -	[`stable-alpine`, `1.10-alpine`, `1.10.1-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/11fc019b2be3ad51ba5d097b1857a099c4056213/stable/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/nginx:latest.svg)](https://imagelayers.io/?images=nginx:latest,nginx:stable,nginx:mainline-alpine,nginx:stable-alpine)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnginx).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/nginx/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/nginx/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

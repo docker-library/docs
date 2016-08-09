@@ -4,8 +4,6 @@
 -	[`5.6.31`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/9f24653b2c4dd2e40cdced347c0ca388b8ab0cb2/5.6/Dockerfile)
 -	[`5.5.50`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/9f24653b2c4dd2e40cdced347c0ca388b8ab0cb2/5.5/Dockerfile)
 
-[![](https://badge.imagelayers.io/percona:latest.svg)](https://imagelayers.io/?images=percona:5.7.13,percona:5.6.31,percona:5.5.50)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpercona).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/percona/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/percona/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

@@ -6,8 +6,6 @@
 -	[`1.0.0-beta3` (*influxdb/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d6d3fd59d7c84461daa5a048d1381937b5e1b282/influxdb/1.0/Dockerfile)
 -	[`1.0.0-beta3-alpine` (*influxdb/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d6d3fd59d7c84461daa5a048d1381937b5e1b282/influxdb/1.0/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/influxdb:latest.svg)](https://imagelayers.io/?images=influxdb:0.12,influxdb:0.13,influxdb:0.13-alpine,influxdb:1.0.0-beta3,influxdb:1.0.0-beta3-alpine)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/influxdb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/influxdb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

@@ -7,8 +7,6 @@
 -	[`3.0.3`, `3.0`, `latest` (*3.0.3-community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/860588baa6a9e97c7d10bdbc0084e4c59f3886a6/3.0.3-community/Dockerfile)
 -	[`3.0.3-enterprise`, `3.0-enterprise`, `enterprise` (*3.0.3-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/860588baa6a9e97c7d10bdbc0084e4c59f3886a6/3.0.3-enterprise/Dockerfile)
 
-[![](https://badge.imagelayers.io/neo4j:latest.svg)](https://imagelayers.io/?images=neo4j:2.3.4,neo4j:2.3.5,neo4j:2.3.4-enterprise,neo4j:2.3.5-enterprise,neo4j:3.0.3,neo4j:3.0.3-enterprise)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/neo4j`)](https://github.com/docker-library/official-images/blob/master/library/neo4j). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneo4j).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/neo4j/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/neo4j/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

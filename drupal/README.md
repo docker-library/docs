@@ -7,8 +7,6 @@
 -	[`8.2.0-beta1-apache`, `8.2.0-apache`, `8.2-apache`, `8.2.0-beta1`, `8.2.0`, `8.2` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/9e3acfda8fa75484df417bb010971b27dc845782/8.2/apache/Dockerfile)
 -	[`8.2.0-beta1-fpm`, `8.2.0-fpm`, `8.2-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/9e3acfda8fa75484df417bb010971b27dc845782/8.2/fpm/Dockerfile)
 
-[![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.50-apache,drupal:7.50-fpm,drupal:8.1.8-apache,drupal:8.1.8-fpm,drupal:8.2.0-beta1-apache,drupal:8.2.0-beta1-fpm)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdrupal).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/drupal/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/drupal/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

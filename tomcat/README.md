@@ -15,8 +15,6 @@
 -	[`9.0.0.M9-jre8`, `9.0.0-jre8`, `9.0-jre8`, `9-jre8`, `9.0.0.M9`, `9.0.0`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b0cb4ee4d375ade382d77c450903b7c3a0c2b39f/9.0/jre8/Dockerfile)
 -	[`9.0.0.M9-jre8-alpine`, `9.0.0-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine`, `9.0.0.M9-alpine`, `9.0.0-alpine`, `9.0-alpine`, `9-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b0cb4ee4d375ade382d77c450903b7c3a0c2b39f/9.0/jre8-alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/tomcat:latest.svg)](https://imagelayers.io/?images=tomcat:6.0.45-jre7,tomcat:6.0.45-jre8,tomcat:7.0.70-jre7,tomcat:7.0.70-jre7-alpine,tomcat:7.0.70-jre8,tomcat:7.0.70-jre8-alpine,tomcat:8.0.36-jre7,tomcat:8.0.36-jre7-alpine,tomcat:8.0.36-jre8,tomcat:8.0.36-jre8-alpine,tomcat:8.5.4-jre8,tomcat:8.5.4-jre8-alpine,tomcat:9.0.0.M9-jre8,tomcat:9.0.0.M9-jre8-alpine)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomcat).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/tomcat/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/tomcat/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

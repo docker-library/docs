@@ -5,8 +5,6 @@
 -	[`alpine`, `lein-2.6.1-alpine` (*alpine/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/534102a7ee7e6f4825e86a648a52c44cc25eb39d/alpine/Dockerfile)
 -	[`alpine-onbuild`, `lein-2.6.1-alpine-onbuild` (*alpine-onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/73e7427a6cfec285a3d901e4a9ae25b8109c3d0c/alpine-onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/clojure:latest.svg)](https://imagelayers.io/?images=clojure:latest,clojure:onbuild,clojure:alpine,clojure:alpine-onbuild)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclojure).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/clojure/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/clojure/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

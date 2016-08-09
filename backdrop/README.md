@@ -3,8 +3,6 @@
 -	[`1.3.4`, `1.3`, `1`, `1.3.4-apache`, `1.3-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/ce9edf32f4263d00181cc58a5fb23437316675b3/1/apache/Dockerfile)
 -	[`1.3.4-fpm`, `1.3-fpm`, `1-fpm`, `fpm` (*1/fpm/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/ce9edf32f4263d00181cc58a5fb23437316675b3/1/fpm/Dockerfile)
 
-[![](https://badge.imagelayers.io/backdrop:latest.svg)](https://imagelayers.io/?images=backdrop:1.3.4,backdrop:1.3.4-fpm)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/backdrop`)](https://github.com/docker-library/official-images/blob/master/library/backdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbackdrop).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/backdrop/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/backdrop/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

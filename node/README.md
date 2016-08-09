@@ -21,8 +21,6 @@
 -	[`6.3.1-slim`, `6.3-slim`, `6-slim`, `slim` (*6.3/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ae9e2d4f04a0fa82261df86fd9556a76cefc020d/6.3/slim/Dockerfile)
 -	[`6.3.1-wheezy`, `6.3-wheezy`, `6-wheezy`, `wheezy` (*6.3/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ae9e2d4f04a0fa82261df86fd9556a76cefc020d/6.3/wheezy/Dockerfile)
 
-[![](https://badge.imagelayers.io/node:latest.svg)](https://imagelayers.io/?images=node:0.10.46,node:0.10.46-onbuild,node:0.10.46-slim,node:0.10.46-wheezy,node:0.12.15,node:0.12.15-onbuild,node:0.12.15-slim,node:0.12.15-wheezy,node:4.4.7,node:4.4.7-onbuild,node:4.4.7-slim,node:4.4.7-wheezy,node:5.12.0,node:5.12.0-onbuild,node:5.12.0-slim,node:5.12.0-wheezy,node:6.3.1,node:6.3.1-onbuild,node:6.3.1-slim,node:6.3.1-wheezy)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/node/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/node/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).

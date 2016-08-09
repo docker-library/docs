@@ -5,8 +5,6 @@
 -	[`1.10-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/eb6088320ccd1449f21c4050583bd835913e56ec/2.7/Dockerfile)
 -	[`python2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/2.7/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/django:latest.svg)](https://imagelayers.io/?images=django:1.10-python3,django:python3-onbuild,django:1.10-python2,django:python2-onbuild)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/django`)](https://github.com/docker-library/official-images/blob/master/library/django). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdjango).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/django/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/django/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
