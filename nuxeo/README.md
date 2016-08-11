@@ -118,6 +118,16 @@ Tells the location of the binary store which configure the [binary storage](http
 
 Tells the location of [the transient storage](http://doc.nuxeo.com/display/NXDOC/Transient+Store)
 
+### `NUXEO_DDL_MODE`
+
+Allows to setup [Database creation option](https://doc.nuxeo.com/x/hwQz#RepositoryConfiguration-DatabaseCreationOption) by fixing the `ddlMode` value.
+
+### `NUXEO_CUSTOM_PARAM`
+
+Allows to add custom parameters to `nuxeo.conf`. Multiple parameters can be splitted by a `\n`. For instance :
+
+	NUXEO_CUSTOM_PARAM="repository.clustering.enabled=false\nrepository.clustering.delay=1000"
+
 # How to extend this image
 
 ## Adding additional configuration
