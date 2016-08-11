@@ -14,11 +14,11 @@ COPY server.xml /config/
 RUN installUtility install --acceptLicense defaultServer
 ```
 
-The `common` image adds a set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-1.0`, `sessionDatabase-1.0`, `ssl-1.0`, and `webCache-1.0`. This image is the basis for the `webProfile6` and `webProfile7` images.
-
 The `webProfile6` image contains the features required for Java EE6 Web Profile compliance. It also pulls in additional features to bring the contents in to line with the features available for download by using the runtime JAR, most notably the features required for OSGi applications.
 
 The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image extends this image and adds the features required for Java EE7 Full Platform compliance. The `javaee7` image is also tagged with `latest`.
+
+The `webProfile6`, `webProfile7` and `javaee7` images all also contain a common set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-1.0`, `sessionDatabase-1.0`, `ssl-1.0`, and `webCache-1.0`.
 
 # Usage
 
