@@ -6,8 +6,10 @@
 -	[`8.1.9-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/8.1/fpm/Dockerfile)
 -	[`8.2.7-apache`, `8.2-apache`, `8-apache`, `8.2.7`, `8.2`, `8` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/8.2/apache/Dockerfile)
 -	[`8.2.7-fpm`, `8.2-fpm`, `8-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/8.2/fpm/Dockerfile)
--	[`9.0.4-apache`, `9.0-apache`, `9-apache`, `apache`, `9.0.4`, `9.0`, `9`, `latest` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/9.0/apache/Dockerfile)
--	[`9.0.4-fpm`, `9.0-fpm`, `9-fpm`, `fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/9.0/fpm/Dockerfile)
+-	[`9.0.4-apache`, `9.0-apache`, `9.0.4`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/9.0/apache/Dockerfile)
+-	[`9.0.4-fpm`, `9.0-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/9.0/fpm/Dockerfile)
+-	[`9.1.0-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.0`, `9.1`, `9`, `latest` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/6011c09fec9dea07faae2282bdeba541a5b77a53/9.1/apache/Dockerfile)
+-	[`9.1.0-fpm`, `9.1-fpm`, `9-fpm`, `fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/6011c09fec9dea07faae2282bdeba541a5b77a53/9.1/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fowncloud).
 

@@ -14,13 +14,6 @@
 -	[`5.6.24-fpm-alpine`, `5.6-fpm-alpine`, `5-fpm-alpine` (*5.6/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/d6b446a77a77c8247e2206be8f966fdb24516862/5.6/fpm/alpine/Dockerfile)
 -	[`5.6.24-zts`, `5.6-zts`, `5-zts` (*5.6/zts/Dockerfile*)](https://github.com/docker-library/php/blob/d6b446a77a77c8247e2206be8f966fdb24516862/5.6/zts/Dockerfile)
 -	[`5.6.24-zts-alpine`, `5.6-zts-alpine`, `5-zts-alpine` (*5.6/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/d6b446a77a77c8247e2206be8f966fdb24516862/5.6/zts/alpine/Dockerfile)
--	[`5.5.38-cli`, `5.5-cli`, `5.5.38`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/d6b446a77a77c8247e2206be8f966fdb24516862/5.5/Dockerfile)
--	[`5.5.38-alpine`, `5.5-alpine` (*5.5/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/d6b446a77a77c8247e2206be8f966fdb24516862/5.5/alpine/Dockerfile)
--	[`5.5.38-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/d6b446a77a77c8247e2206be8f966fdb24516862/5.5/apache/Dockerfile)
--	[`5.5.38-fpm`, `5.5-fpm` (*5.5/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/d6b446a77a77c8247e2206be8f966fdb24516862/5.5/fpm/Dockerfile)
--	[`5.5.38-fpm-alpine`, `5.5-fpm-alpine` (*5.5/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/d6b446a77a77c8247e2206be8f966fdb24516862/5.5/fpm/alpine/Dockerfile)
--	[`5.5.38-zts`, `5.5-zts` (*5.5/zts/Dockerfile*)](https://github.com/docker-library/php/blob/d6b446a77a77c8247e2206be8f966fdb24516862/5.5/zts/Dockerfile)
--	[`5.5.38-zts-alpine`, `5.5-zts-alpine` (*5.5/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/d6b446a77a77c8247e2206be8f966fdb24516862/5.5/zts/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp).
 
