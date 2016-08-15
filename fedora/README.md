@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `24` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/3a14c0a840dceb7865d814dfb4150ef33a982d63/Dockerfile)
+-	[`latest`, `24` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/1762564a8ddc8448a62e101b0094a9c247ef94f8/Dockerfile)
 -	[`23` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/ec63b8db44c2d8c97e29faeb55955ca25bd9076e/Dockerfile)
 -	[`22` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/bccd42bf4e9102ef10eff372488167948fdd0430/Dockerfile)
 -	[`21` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/e32493b9601c3535cd6e0d0a8ff61d8fa95afb83/Dockerfile)
--	[`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/d28b4d3e1c4d613a12701557b0d686c28490af69/Dockerfile)
+-	[`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/40fb5b05b614631b014e71e5dece31e41f8be010/Dockerfile)
 -	[`20`, `heisenbug` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/10ada29063147fde9e39190f4c2344b6e6e659e6/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/fedora`)](https://github.com/docker-library/official-images/blob/master/library/fedora). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffedora).
