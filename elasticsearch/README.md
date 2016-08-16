@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.2`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/1.5/Dockerfile)
--	[`1.6.2`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/1.6/Dockerfile)
--	[`1.7.5`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/1.7/Dockerfile)
--	[`2.0.2`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/2.0/Dockerfile)
--	[`2.1.2`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/2.1/Dockerfile)
--	[`2.2.2`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/2.2/Dockerfile)
--	[`2.3.5`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/95b84a6e29f056d0f9608e5e1bb2129067852e6b/2.3/Dockerfile)
--	[`5.0.0-alpha5`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/56315cbb71d3f04e6da05989ace7a5ecd4f2bfed/5.0/Dockerfile)
+-	[`1.5.2`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/1.5/Dockerfile)
+-	[`1.6.2`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/1.6/Dockerfile)
+-	[`1.7.5`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/1.7/Dockerfile)
+-	[`2.0.2`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.0/Dockerfile)
+-	[`2.1.2`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.1/Dockerfile)
+-	[`2.2.2`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.2/Dockerfile)
+-	[`2.3.5`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.3/Dockerfile)
+-	[`5.0.0-alpha5`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/5.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch).
 
