@@ -1,20 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.4`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/7fd2b76513e537343f088da671a51f5b2ea7d4c3/1.5/Dockerfile)
--	[`1.5.4-onbuild`, `1.5-onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/f1f65c0ab0097a5e3d079d5a74e2468e8d47563d/1.5/onbuild/Dockerfile)
--	[`1.5.4-wheezy`, `1.5-wheezy` (*1.5/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/7fd2b76513e537343f088da671a51f5b2ea7d4c3/1.5/wheezy/Dockerfile)
--	[`1.5.4-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/5a84ebfbf3c55674dd6f36c66828c2e7461f2f0b/1.5/alpine/Dockerfile)
--	[`1.5.4-windowsservercore`, `1.5-windowsservercore` (*1.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/83760719bbaadb8d778aa48d53bf2e9d9bd55741/1.5/windows/windowsservercore/Dockerfile)
--	[`1.6.3`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/Dockerfile)
--	[`1.6.3-onbuild`, `1.6-onbuild`, `1-onbuild`, `onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/onbuild/Dockerfile)
--	[`1.6.3-wheezy`, `1.6-wheezy`, `1-wheezy`, `wheezy` (*1.6/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/wheezy/Dockerfile)
--	[`1.6.3-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/alpine/Dockerfile)
--	[`1.6.3-windowsservercore`, `1.6-windowsservercore`, `1-windowsservercore`, `windowsservercore` (*1.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/83760719bbaadb8d778aa48d53bf2e9d9bd55741/1.6/windows/windowsservercore/Dockerfile)
--	[`1.7rc6`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/golang/blob/14bd36d716dfedf39bce5a2ac0b06f09f1049985/1.7/Dockerfile)
--	[`1.7rc6-onbuild`, `1.7-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/2372c8cafe9cc958bade33ad0b8b54de8869c21f/1.7/onbuild/Dockerfile)
--	[`1.7rc6-wheezy`, `1.7-wheezy` (*1.7/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/14bd36d716dfedf39bce5a2ac0b06f09f1049985/1.7/wheezy/Dockerfile)
--	[`1.7rc6-alpine`, `1.7-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/14bd36d716dfedf39bce5a2ac0b06f09f1049985/1.7/alpine/Dockerfile)
--	[`1.7rc6-windowsservercore`, `1.7-windowsservercore` (*1.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/83760719bbaadb8d778aa48d53bf2e9d9bd55741/1.7/windows/windowsservercore/Dockerfile)
+-	[`1.6.3`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/Dockerfile)
+-	[`1.6.3-onbuild`, `1.6-onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/onbuild/Dockerfile)
+-	[`1.6.3-wheezy`, `1.6-wheezy` (*1.6/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/wheezy/Dockerfile)
+-	[`1.6.3-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/alpine/Dockerfile)
+-	[`1.6.3-windowsservercore`, `1.6-windowsservercore` (*1.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/83760719bbaadb8d778aa48d53bf2e9d9bd55741/1.6/windows/windowsservercore/Dockerfile)
+-	[`1.7.0`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/golang/blob/ba5f6a10dcc46edeb66377261f873e3b61af36f5/1.7/Dockerfile)
+-	[`1.7.0-onbuild`, `1.7-onbuild`, `1-onbuild`, `onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/2372c8cafe9cc958bade33ad0b8b54de8869c21f/1.7/onbuild/Dockerfile)
+-	[`1.7.0-wheezy`, `1.7-wheezy`, `1-wheezy`, `wheezy` (*1.7/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/ba5f6a10dcc46edeb66377261f873e3b61af36f5/1.7/wheezy/Dockerfile)
+-	[`1.7.0-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/ba5f6a10dcc46edeb66377261f873e3b61af36f5/1.7/alpine/Dockerfile)
+-	[`1.7.0-windowsservercore`, `1.7-windowsservercore`, `1-windowsservercore`, `windowsservercore` (*1.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/ba5f6a10dcc46edeb66377261f873e3b61af36f5/1.7/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgolang).
 
