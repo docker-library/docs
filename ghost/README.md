@@ -44,7 +44,7 @@ $ docker run --name some-ghost --volumes-from some-ghost-data ghost
 
 # What is the node version?
 
-As this is a needed when you have to open a ticket (https://github.com/TryGhost/Ghost/issues) it's good to quickly be able to find the Node version. The version is going to vary as the node:4-slim tag is updated. To do so:
+This information is a needed when you want to open a ticket over https://github.com/TryGhost/Ghost/issues. The version is going to vary as the node:4-slim tag is updated. To find the version...
 
 Log into the container
 
@@ -54,8 +54,7 @@ Then run:
 
 ```node --version```
 
-The output should looks like:
-v4.4.7
+The output should looks like: `v4.4.7`
 
 # Supported Docker versions
 
