@@ -42,6 +42,20 @@ Alternatively you can use a [data container](http://docs.docker.com/userguide/do
 $ docker run --name some-ghost --volumes-from some-ghost-data ghost
 ```
 
+# What is the node version?
+
+This information is a needed when you want to open a ticket over https://github.com/TryGhost/Ghost/issues. The version is going to vary as the node:4-slim tag is updated. To find the version...
+
+Log into the container
+
+```docker exec -it <container-id> bash```
+
+Then run:
+
+```node --version```
+
+The output should looks like: `v4.4.7`
+
 # Supported Docker versions
 
 This image is officially supported on Docker version 1.12.0.
