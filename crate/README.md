@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.55`, `0.55.3` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/b78e59b54fa5b3780b9eee75e598b8586e1fc79c/Dockerfile)
+-	[`latest`, `0.55`, `0.55.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/19f24bd044f24e5ad72cf898804eaa90dddd0a70/Dockerfile)
 -	[`0.52`, `0.52.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/cce8f796ba8936250eb380235cde47be494d1e95/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrate).
@@ -78,19 +78,13 @@ Crate stores all important data in */data*. It's advised to mount this directory
 
 ## Use Custom Crate Configuration
 
-Crate is controlled by a single configuration file which has sensible defaults already. If you derive your container from the Crate container, make sure to place your file inside it and let Crate know where to find it:
+Starting with 0.55.0, Crate does no longer support providing custom configuration files. However it is still possible to mount Crate's configuration into `/crate/config/crate.yml`.
 
 ```console
-# docker run -d crate crate -Des.config=</path/to>/crate.yml
+# docker run -d -v <custom/config/path>/crate.yml:/crate/config/crate.yml crate crate
 ```
 
-Other configuration settings may be specified upon startup using the `-D` option prefix. For example, configuring the cluster name by using system properties works like this:
-
-```console
-# docker run -d crate crate -Des.cluster.name=<my-cluster-name>
-```
-
-For further configuration options refer to the [Configuration](https://crate.io/docs/stable/configuration.html) section of our documentation.
+For further configuration options refer to the[Configuration](https://crate.io/docs/stable/configuration.html) section of our documentation.
 
 ## Environment
 
