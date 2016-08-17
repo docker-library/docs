@@ -42,6 +42,15 @@ Alternatively you can use a [data container](http://docs.docker.com/userguide/do
 $ docker run --name some-ghost --volumes-from some-ghost-data ghost
 ```
 
+# What is the Node.js version?
+
+When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes necessary to know the version of Node.js in use:
+
+```console
+$ docker exec <container-id> node --version
+v4.4.7
+```
+
 # Supported Docker versions
 
 This image is officially supported on Docker version 1.12.0.
