@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.5.3-apache`, `4.5-apache`, `4-apache`, `apache`, `4.5.3`, `4.5`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/6afa0720da89f31d6c61fd38bb0d6de6e9a14a49/apache/Dockerfile)
--	[`4.5.3-fpm`, `4.5-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/6afa0720da89f31d6c61fd38bb0d6de6e9a14a49/fpm/Dockerfile)
+-	[`4.6.0-apache`, `4.6-apache`, `4-apache`, `apache`, `4.6.0`, `4.6`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/40d7cd3ef5f806a9c74243141b51c590c632af40/apache/Dockerfile)
+-	[`4.6.0-fpm`, `4.6-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/40d7cd3ef5f806a9c74243141b51c590c632af40/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress).
 
