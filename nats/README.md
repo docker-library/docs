@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.2`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/471bbbe6669d7e6bafe85a30dfa1f5490822bc80/Dockerfile)
+-	[`0.9.4`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/d37917c2830bfe3b54de8d92ac36b62cc1309cfc/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nats`)](https://github.com/docker-library/official-images/blob/master/library/nats). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats).
 
@@ -23,8 +23,8 @@ For detailed information about the virtual/transfer sizes and individual layers 
 # use -p or -P as needed.
 
 $ docker run -d --name nats-main nats
-[INF] Starting nats-server version 0.9.2
-[INF] Starting http monitor on :8222
+[INF] Starting nats-server version 0.9.4
+[INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
 [INF] Listening for route connections on 0.0.0.0:6222
@@ -36,18 +36,18 @@ $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:
 
 # If you want to verify the routes are connected, try
 $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 0.9.2
+[INF] Starting nats-server version 0.9.4
 [DBG] Go build version go1.6.3
-[INF] Starting http monitor on :8222
+[INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[DBG] Server id is Zy0Q82lXHHh7JK39R4nJYU
+[DBG] Server id is HQLO4vvXi434nlqWjbTbec
 [INF] Server is ready
 [INF] Listening for route connections on 0.0.0.0:6222
 [DBG] Trying to connect to route on nats-main:6222
-[DBG] 172.17.0.3:6222 - rid:1 - Route connection created
-[DBG] 172.17.0.3:6222 - rid:1 - Route connect msg sent
-[DBG] 172.17.0.3:6222 - rid:1 - Registering remote route "RLW2KS2rmVwpUZsOvBzCw5"
-[DBG] 172.17.0.3:6222 - rid:1 - Route sent local subscriptions
+[DBG] 172.17.0.2:6222 - rid:1 - Route connection created
+[DBG] 172.17.0.2:6222 - rid:1 - Route connect msg sent
+[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "PRJPXBdDnqK5ATfyQ7Jjlv"
+[DBG] 172.17.0.2:6222 - rid:1 - Route sent local subscriptions
 ```
 
 The server will load the configuration file below. Any command line flags can override these values.
@@ -117,6 +117,7 @@ TLS Options:
 Cluster Options:
         --routes <rurl-1, rurl-2>    Routes to solicit and connect
         --cluster <cluster-url>      Cluster URL for solicited routes
+        --no_advertise <bool>        Advertise known cluster IPs to clients
 
 Common Options:
     -h, --help                       Show this message
