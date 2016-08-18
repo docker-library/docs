@@ -99,7 +99,7 @@ This container is running with systemd in a limited context, with the cgroups fi
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

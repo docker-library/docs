@@ -86,7 +86,7 @@ View [license information](https://bitbucket.org/pypy/pypy/src/c3ff0dd6252b6ba0d
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
