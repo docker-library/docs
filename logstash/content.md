@@ -23,3 +23,21 @@ If you need to run logstash with a configuration file, `logstash.conf`, that's l
 ```console
 $ docker run -it --rm -v "$PWD":/config-dir logstash -f /config-dir/logstash.conf
 ```
+
+### Using a `Dockerfile`
+
+If you'd like to have a production Logstash image with a pre-baked configuration file, use of a `Dockerfile` is recommended:
+
+```dockerfile
+FROM logstash
+
+COPY logstash.conf /some/config-dir/
+
+CMD ["-f", "/some/config-dir/logstash.conf"]
+```
+
+Then, build with `docker build -t my-logstash .` and deploy with something like the following:
+
+```console
+$ docker run -it --rm my-logstash
+```
