@@ -1,28 +1,31 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7.12`, `2.7`, `2` (*2.7/Dockerfile*)](https://github.com/docker-library/python/blob/f1bc9f790605ecf0dabce4c24ef9ee5ce205e496/2.7/Dockerfile)
--	[`2.7.12-slim`, `2.7-slim`, `2-slim` (*2.7/slim/Dockerfile*)](https://github.com/docker-library/python/blob/2664a9b68104d35c99aa79c56eea24423e6f9807/2.7/slim/Dockerfile)
--	[`2.7.12-alpine`, `2.7-alpine`, `2-alpine` (*2.7/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/2664a9b68104d35c99aa79c56eea24423e6f9807/2.7/alpine/Dockerfile)
--	[`2.7.12-wheezy`, `2.7-wheezy`, `2-wheezy` (*2.7/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/f1bc9f790605ecf0dabce4c24ef9ee5ce205e496/2.7/wheezy/Dockerfile)
+-	[`2.7.12`, `2.7`, `2` (*2.7/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/2.7/Dockerfile)
+-	[`2.7.12-slim`, `2.7-slim`, `2-slim` (*2.7/slim/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/2.7/slim/Dockerfile)
+-	[`2.7.12-alpine`, `2.7-alpine`, `2-alpine` (*2.7/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/2.7/alpine/Dockerfile)
+-	[`2.7.12-wheezy`, `2.7-wheezy`, `2-wheezy` (*2.7/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/2.7/wheezy/Dockerfile)
 -	[`2.7.12-onbuild`, `2.7-onbuild`, `2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/7663560df7547e69d13b1b548675502f4e0917d1/2.7/onbuild/Dockerfile)
--	[`3.3.6`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.3/Dockerfile)
--	[`3.3.6-slim`, `3.3-slim` (*3.3/slim/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.3/slim/Dockerfile)
--	[`3.3.6-alpine`, `3.3-alpine` (*3.3/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.3/alpine/Dockerfile)
--	[`3.3.6-wheezy`, `3.3-wheezy` (*3.3/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.3/wheezy/Dockerfile)
+-	[`2.7.12-windowsservercore`, `2.7-windowsservercore`, `2-windowsservercore` (*2.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/1ad743decae71db424840812eb8dd49557aed9d0/2.7/windows/windowsservercore/Dockerfile)
+-	[`3.3.6`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.3/Dockerfile)
+-	[`3.3.6-slim`, `3.3-slim` (*3.3/slim/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.3/slim/Dockerfile)
+-	[`3.3.6-alpine`, `3.3-alpine` (*3.3/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.3/alpine/Dockerfile)
+-	[`3.3.6-wheezy`, `3.3-wheezy` (*3.3/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.3/wheezy/Dockerfile)
 -	[`3.3.6-onbuild`, `3.3-onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.3/onbuild/Dockerfile)
--	[`3.4.5`, `3.4` (*3.4/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.4/Dockerfile)
--	[`3.4.5-slim`, `3.4-slim` (*3.4/slim/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.4/slim/Dockerfile)
--	[`3.4.5-alpine`, `3.4-alpine` (*3.4/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.4/alpine/Dockerfile)
--	[`3.4.5-wheezy`, `3.4-wheezy` (*3.4/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.4/wheezy/Dockerfile)
+-	[`3.4.5`, `3.4` (*3.4/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.4/Dockerfile)
+-	[`3.4.5-slim`, `3.4-slim` (*3.4/slim/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.4/slim/Dockerfile)
+-	[`3.4.5-alpine`, `3.4-alpine` (*3.4/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.4/alpine/Dockerfile)
+-	[`3.4.5-wheezy`, `3.4-wheezy` (*3.4/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.4/wheezy/Dockerfile)
 -	[`3.4.5-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.4/onbuild/Dockerfile)
--	[`3.5.2`, `3.5`, `3`, `latest` (*3.5/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.5/Dockerfile)
--	[`3.5.2-slim`, `3.5-slim`, `3-slim`, `slim` (*3.5/slim/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.5/slim/Dockerfile)
--	[`3.5.2-alpine`, `3.5-alpine`, `3-alpine`, `alpine` (*3.5/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.5/alpine/Dockerfile)
+-	[`3.5.2`, `3.5`, `3`, `latest` (*3.5/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.5/Dockerfile)
+-	[`3.5.2-slim`, `3.5-slim`, `3-slim`, `slim` (*3.5/slim/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.5/slim/Dockerfile)
+-	[`3.5.2-alpine`, `3.5-alpine`, `3-alpine`, `alpine` (*3.5/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.5/alpine/Dockerfile)
 -	[`3.5.2-onbuild`, `3.5-onbuild`, `3-onbuild`, `onbuild` (*3.5/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.5/onbuild/Dockerfile)
--	[`3.6.0a3`, `3.6` (*3.6/Dockerfile*)](https://github.com/docker-library/python/blob/f1bc9f790605ecf0dabce4c24ef9ee5ce205e496/3.6/Dockerfile)
--	[`3.6.0a3-slim`, `3.6-slim` (*3.6/slim/Dockerfile*)](https://github.com/docker-library/python/blob/f1bc9f790605ecf0dabce4c24ef9ee5ce205e496/3.6/slim/Dockerfile)
--	[`3.6.0a3-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/f1bc9f790605ecf0dabce4c24ef9ee5ce205e496/3.6/alpine/Dockerfile)
--	[`3.6.0a3-onbuild`, `3.6-onbuild` (*3.6/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/635ea5d58b53d165f7bedae90f8933c720a58150/3.6/onbuild/Dockerfile)
+-	[`3.5.2-windowsservercore`, `3.5-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.5/windows/windowsservercore/Dockerfile)
+-	[`3.6.0a4`, `3.6` (*3.6/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.6/Dockerfile)
+-	[`3.6.0a4-slim`, `3.6-slim` (*3.6/slim/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.6/slim/Dockerfile)
+-	[`3.6.0a4-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.6/alpine/Dockerfile)
+-	[`3.6.0a4-onbuild`, `3.6-onbuild` (*3.6/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/635ea5d58b53d165f7bedae90f8933c720a58150/3.6/onbuild/Dockerfile)
+-	[`3.6.0a4-windowsservercore`, `3.6-windowsservercore` (*3.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.6/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/python`)](https://github.com/docker-library/official-images/blob/master/library/python). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpython).
 
@@ -102,6 +105,15 @@ This image feeds your `requirements.txt` file automatically to `pip` in order to
 While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
 
 Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
+
+## `python:windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

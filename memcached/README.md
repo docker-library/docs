@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.30`, `1.4`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/memcached/blob/3653cceece53495fc99af785c3ce130197f0922d/debian/Dockerfile)
--	[`1.4.30-alpine`, `1.4-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/docker-library/memcached/blob/3653cceece53495fc99af785c3ce130197f0922d/alpine/Dockerfile)
+-	[`1.4.31`, `1.4`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/memcached/blob/f3517ea1de0ac9ac2a86dc2670afac3874512e2b/debian/Dockerfile)
+-	[`1.4.31-alpine`, `1.4-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/docker-library/memcached/blob/f3517ea1de0ac9ac2a86dc2670afac3874512e2b/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/memcached`)](https://github.com/docker-library/official-images/blob/master/library/memcached). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmemcached).
 
