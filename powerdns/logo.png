@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>PowerDNS - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"PowerDNS","wgTitle":"PowerDNS","wgCurRevisionId":734140896,"wgRevisionId":734140896,"wgArticleId":1198471,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["DNS software","Free software programmed in C++","Free network-related software","Lua-scriptable software","DNS server software for Linux"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"PowerDNS","wgRelevantArticleId":1198471,"wgRequestId":"V7nzcQpAEKYAAAmjuZYAAABC","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikibaseItemId":"Q460562","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.nojs":"ready","ext.tmh.thumbnail.styles":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.28.0-wmf.15"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/PowerDNS"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=PowerDNS&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=PowerDNS&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/PowerDNS"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-PowerDNS rootpage-PowerDNS skin-vector action-view feature-page-action-bar-v2">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">PowerDNS</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div role="note" class="hatnote">Not to be confused with <a href="/wiki/Pdnsd" title="Pdnsd">pdnsd</a>, a caching DNS proxy.</div>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">PowerDNS Server</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Official_PowerDNS_logo_250_pixels.png" class="image"><img alt="Official PowerDNS logo 250 pixels.png" src="//upload.wikimedia.org/wikipedia/en/8/8d/Official_PowerDNS_logo_250_pixels.png" width="250" height="33" data-file-width="250" data-file-height="33" /></a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Original author(s)</a></th>
+<td>PowerDNS.COM BV</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td>PowerDNS Community, <a href="/wiki/Bert_Hubert" title="Bert Hubert">Bert Hubert</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>4.0.1 / July&#160;29,&#160;2016<span style="display:none">&#160;(<span class="bday dtstart published updated">2016-07-29</span>)</span><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Written in</th>
+<td><a href="/wiki/C%2B%2B" title="C++">C++</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td><a href="/wiki/Unix-like" title="Unix-like">Unix-like</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td><a href="/wiki/Domain_Name_System" title="Domain Name System">DNS</a> server</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a> v2</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><a rel="nofollow" class="external text" href="https://www.powerdns.com/">www.powerdns.com</a></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">PowerDNS Recursor</caption>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Original author(s)</a></th>
+<td>PowerDNS.COM BV</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td>PowerDNS Community, <a href="/wiki/Bert_Hubert" title="Bert Hubert">Bert Hubert</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>4.0.1 / July&#160;29,&#160;2016<span style="display:none">&#160;(<span class="bday dtstart published updated">2016-07-29</span>)</span><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Written in</th>
+<td><a href="/wiki/C%2B%2B" title="C++">C++</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td><a href="/wiki/Unix-like" title="Unix-like">Unix-like</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td><a href="/wiki/Domain_Name_System" title="Domain Name System">DNS</a> server</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a> v2</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><a rel="nofollow" class="external text" href="https://www.powerdns.com/">www.powerdns.com</a></td>
+</tr>
+</table>
+<p><b>PowerDNS</b> is a <a href="/wiki/Name_server" title="Name server">DNS server</a>, written in <a href="/wiki/C%2B%2B" title="C++">C++</a> and licensed under the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a>. It runs on most <a href="/wiki/Unix" title="Unix">Unix</a> derivatives. PowerDNS features a large number of different <i>backends</i> ranging from simple <a href="/wiki/BIND" title="BIND">BIND</a> style zonefiles to <a href="/wiki/Relational_database" title="Relational database">relational databases</a> and <a href="/wiki/Load_balancing_(computing)" title="Load balancing (computing)">load balancing</a>/<a href="/wiki/Failover" title="Failover">failover</a> <a href="/wiki/Algorithms" class="mw-redirect" title="Algorithms">algorithms</a>. A DNS <a href="/wiki/Recursion" title="Recursion">recursor</a> is provided as a separate program.</p>
+<p>PowerDNS is a product of the Dutch company PowerDNS.COM BV, with numerous contributions from the <a href="/wiki/Open_source" class="mw-redirect" title="Open source">open source</a> community. The principal author is <a href="/wiki/Bert_Hubert" title="Bert Hubert">Bert Hubert</a>. In March 2015, PowerDNS.COM BV merged with <a href="/wiki/Open-Xchange" title="Open-Xchange">Open-Xchange</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Features"><span class="tocnumber">1</span> <span class="toctext">Features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#DNSSEC"><span class="tocnumber">1.1</span> <span class="toctext">DNSSEC</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Recursor"><span class="tocnumber">2</span> <span class="toctext">Recursor</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PowerDNS&amp;action=edit&amp;section=1" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>PowerDNS Authoritative Server (<b>pdns_server</b>) consists of a single core, and multiple <a href="/wiki/Library_(computer_science)" class="mw-redirect" title="Library (computer science)">dynamically loadable</a> <a href="/wiki/Backend" class="mw-redirect" title="Backend">backends</a> that run <a href="/wiki/Multi-threaded" class="mw-redirect" title="Multi-threaded">multi-threaded</a>. The core handles all packet processing and DNS intelligence, while one or more backends deliver <a href="/wiki/DNS_record" class="mw-redirect" title="DNS record">DNS records</a> using arbitrary <a href="/wiki/Computer_storage" class="mw-redirect" title="Computer storage">storage methods</a>.</p>
+<p><a href="/wiki/DNS_zone_transfer" title="DNS zone transfer">Zone transfers</a> and <a href="/w/index.php?title=DNS_notify&amp;action=edit&amp;redlink=1" class="new" title="DNS notify (page does not exist)">update notifications</a> are supported, and the processes can run <i>unprivileged</i> and <i><a href="/wiki/Chroot" title="Chroot">chrooted</a></i>. Various <i><a href="/wiki/DNS_cache" class="mw-redirect" title="DNS cache">caches</a></i> are maintained to speed up query processing. <i><a href="/wiki/Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">Run-time</a> control</i> is available through the <b>pdns_control</b> command, which allows reloading of separate zones, cache purges, zone notifications and dumps <a href="/wiki/Statistics" title="Statistics">statistics</a> in <a href="/wiki/Multi_Router_Traffic_Grapher" title="Multi Router Traffic Grapher">Multi Router Traffic Grapher</a> / <a href="/wiki/Rrdtool" class="mw-redirect" title="Rrdtool">rrdtool</a> format. Realtime information can also be obtained through the optional built-in <a href="/wiki/Web_server" title="Web server">web server</a>.</p>
+<p>There are many independent projects to create management interfaces for PowerDNS, including <a rel="nofollow" class="external text" href="http://www.poweradmin.org/">PowerAdmin</a>, <a rel="nofollow" class="external text" href="http://code.google.com/p/pdnsops/">PDNSOps</a>, <a rel="nofollow" class="external text" href="http://kennethkalmer.github.com/powerdns-on-rails/">PowerDNS on rails</a> and <a rel="nofollow" class="external text" href="http://www.nicmus.com/community.html">JPower Admin</a> and even a drupal module called <a rel="nofollow" class="external text" href="http://drupal.org/project/poweradmin">PowerAdmin</a>.</p>
+<h3><span class="mw-headline" id="DNSSEC">DNSSEC</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PowerDNS&amp;action=edit&amp;section=2" title="Edit section: DNSSEC">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The PowerDNS Authoritative Server supports <a href="/wiki/DNSSEC" class="mw-redirect" title="DNSSEC">DNSSEC</a> as of version 3.0. While pre-signed zones can be served, it is also possible to perform online signing &amp; key management. This has the upside of being relatively easy, but the downside that the cryptographic keying material is present on the servers itself.</p>
+<h2><span class="mw-headline" id="Recursor">Recursor</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PowerDNS&amp;action=edit&amp;section=3" title="Edit section: Recursor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>PowerDNS Recursor (<b>pdns_recursor</b><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup>) is a <i>resolving</i> DNS server, that runs as a separate process. The authoritative pdns_server can be configured to <a href="/wiki/Proxy_server" title="Proxy server">proxy</a> <i>recursive queries</i> to the recursor, and optionally overlay <i>authoritative zone data</i>.</p>
+<p>This part of PowerDNS is single threaded, but is written as if it were multi-threaded, by the use of <a href="/wiki/Boost_(C%2B%2B_libraries)" title="Boost (C++ libraries)">Boost</a> and the MTasker library,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> which is a simple cooperative multitasking library. It is also available as a standalone package.</p>
+<p>It does not have to run a pdns_server process as a gatekeeper for pdns_recursor, if the goal is simply to provide caching/recursing/resolving nameservice as running pdns_recursor on its own is even more efficient than behind the authoritative component.</p>
+<p>As of 2007, the Recursor is used by several of the largest Internet providers of the world, including <a href="/wiki/AOL" title="AOL">AOL</a>, <a href="/wiki/Shaw_Cable" class="mw-redirect" title="Shaw Cable">Shaw Cable</a> and <a href="/wiki/Neuf_Cegetel" title="Neuf Cegetel">Neuf Cegetel</a>.</p>
+<p>Support for DNSSEC validation was added to the recursor in version 4.0.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PowerDNS&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/Comparison_of_DNS_server_software" title="Comparison of DNS server software">Comparison of DNS server software</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PowerDNS&amp;action=edit&amp;section=5" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://doc.powerdns.com/md/changelog/#powerdns-authoritative-server-401">"3. Release notes"</a>. <i>doc.powerdns.com</i>. 2016-07-29<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-07-29</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APowerDNS&amp;rft.atitle=3.+Release+notes&amp;rft.date=2016-07-29&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdoc.powerdns.com%2Fmd%2Fchangelog%2F%23powerdns-authoritative-server-401&amp;rft.jtitle=doc.powerdns.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://doc.powerdns.com/md/changelog/#powerdns-recursor-401">"3. Release notes"</a>. <i>doc.powerdns.com</i>. 2016-07-29<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-07-29</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APowerDNS&amp;rft.atitle=3.+Release+notes&amp;rft.date=2016-07-29&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdoc.powerdns.com%2Fmd%2Fchangelog%2F%23powerdns-recursor-401&amp;rft.jtitle=doc.powerdns.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://doc.powerdns.com/built-in-recursor.html">"Chapter 18. PowerDNS Recursor: a high performance resolving nameserver"</a>. Doc.powerdns.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-05-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APowerDNS&amp;rft.btitle=Chapter+18.+PowerDNS+Recursor%3A+a+high+performance+resolving+nameserver&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdoc.powerdns.com%2Fbuilt-in-recursor.html&amp;rft.pub=Doc.powerdns.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://ds9a.nl/mtasker/">MTasker</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PowerDNS&amp;action=edit&amp;section=6" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.powerdns.com/">PowerDNS website</a></li>
+<li><a rel="nofollow" class="external text" href="http://rtfm.powerdns.com">PowerDNS documentation</a></li>
+<li><a rel="nofollow" class="external text" href="http://wiki.powerdns.com/">Open Source Community page</a></li>
+<li><a rel="nofollow" class="external text" href="http://doc.powerdns.com/geo.html">GeoBackend documentation</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.powerdns.net/">PowerDNS Express Hosted DNS solution</a></li>
+</ul>
+
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1198471-0!*!0!!en!4!* and timestamp 20160812120737 and revision id 734140896
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=PowerDNS&amp;oldid=734140896">https://en.wikipedia.org/w/index.php?title=PowerDNS&amp;oldid=734140896</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:DNS_software" title="Category:DNS software">DNS software</a></li><li><a href="/wiki/Category:Free_software_programmed_in_C%2B%2B" title="Category:Free software programmed in C++">Free software programmed in C++</a></li><li><a href="/wiki/Category:Free_network-related_software" title="Category:Free network-related software">Free network-related software</a></li><li><a href="/wiki/Category:Lua-scriptable_software" title="Category:Lua-scriptable software">Lua-scriptable software</a></li><li><a href="/wiki/Category:DNS_server_software_for_Linux" title="Category:DNS server software for Linux">DNS server software for Linux</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=PowerDNS" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=PowerDNS" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/PowerDNS"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:PowerDNS"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/PowerDNS" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=PowerDNS&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=PowerDNS&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/PowerDNS" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/PowerDNS" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=PowerDNS&amp;oldid=734140896" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=PowerDNS&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q460562" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=PowerDNS&amp;id=734140896" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=PowerDNS">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=PowerDNS&amp;returnto=PowerDNS&amp;oldid=734140896&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=PowerDNS&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/PowerDNS" title="PowerDNS – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/PowerDNS" title="PowerDNS – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/PowerDNS" title="PowerDNS – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/PowerDNS" title="PowerDNS – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q460562#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 12 August 2016, at 12:07.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=PowerDNS&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage","ext.centralNotice.startUp","ext.centralNotice.geoIP"]);});</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set( {
+    "wgPageParseReport": {
+        "limitreport": {
+            "cputime": "0.140",
+            "walltime": "0.187",
+            "ppvisitednodes": {
+                "value": 829,
+                "limit": 1000000
+            },
+            "ppgeneratednodes": {
+                "value": 0,
+                "limit": 1500000
+            },
+            "postexpandincludesize": {
+                "value": 15428,
+                "limit": 2097152
+            },
+            "templateargumentsize": {
+                "value": 1516,
+                "limit": 2097152
+            },
+            "expansiondepth": {
+                "value": 19,
+                "limit": 40
+            },
+            "expensivefunctioncount": {
+                "value": 2,
+                "limit": 500
+            },
+            "timingprofile": [
+                "100.00%  156.415      1 -total",
+                " 43.05%   67.330      2 Template:Infobox_software",
+                " 38.94%   60.909      2 Template:Infobox",
+                " 34.84%   54.498      1 Template:Reflist",
+                " 28.81%   45.067      3 Template:Cite_web",
+                " 15.32%   23.956      1 Template:Distinguish2",
+                " 13.98%   21.860      1 Template:Hatnote",
+                " 10.45%   16.345      2 Template:Release_date",
+                "  5.59%    8.749      1 Template:Portal",
+                "  4.55%    7.122      2 Template:MONTHNAME"
+            ]
+        },
+        "scribunto": {
+            "limitreport-timeusage": {
+                "value": "0.060",
+                "limit": "10.000"
+            },
+            "limitreport-memusage": {
+                "value": 2162923,
+                "limit": 52428800
+            }
+        },
+        "EntityAccessCount": 0,
+        "cachereport": {
+            "origin": "mw1199",
+            "timestamp": "20160812120737",
+            "ttl": 2592000,
+            "transientcontent": false
+        }
+    }
+} );});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":76,"wgHostname":"mw1211"});});</script>
+	</body>
+</html>
