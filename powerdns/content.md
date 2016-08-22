@@ -5,4 +5,3 @@ PowerDNS is a DNS server, written in C++ and licensed under the GPL. It runs on 
 > [github.com/PowerDNS](https://github.com/PowerDNS)
 
 %%LOGO%%
-
