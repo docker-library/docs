@@ -10,6 +10,10 @@ Development of Ubuntu is led by UK-based Canonical Ltd., a company owned by Sout
 
 # What's in this image?
 
+This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
+
+The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use.
+
 ## `/etc/apt/sources.list`
 
 ### `ubuntu:16.04`
