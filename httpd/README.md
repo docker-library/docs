@@ -32,7 +32,7 @@ Then, run the commands to build and run the Docker image:
 
 ```console
 $ docker build -t my-apache2 .
-$ docker run -it --rm --name my-running-app my-apache2
+$ docker run -dit --name my-running-app my-apache2
 ```
 
 ### Without a `Dockerfile`
@@ -40,7 +40,7 @@ $ docker run -it --rm --name my-running-app my-apache2
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
 ```console
-$ docker run -it --rm --name my-apache-app -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+$ docker run -dit --name my-apache-app -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
 ```
 
 ### Configuration
