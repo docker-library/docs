@@ -10,7 +10,7 @@ Kong's documentation can be found at [getkong.org/docs](http://getkong.org/docs)
 
 # How to use this image
 
-First, Kong requires a running Cassandra or PostgreSQL cluster before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
+First, Kong requires a running Cassandra 2.2.x or PostgreSQL 9.4/9.5 cluster before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
 
 ## 1. Link Kong to either a Cassandra or PostgreSQL container
 
@@ -40,22 +40,19 @@ docker run -d --name kong-database \
 
 ### Start Kong
 
-Once the database is running, we can start a Kong container and link it to the database container, and configuring the `DATABASE` environment variable with either `cassandra` or `postgres` depending on which database you decided to use:
+Once the database is running, we can start a Kong container and link it to the database container, and configuring the `KONG_DATABASE` environment variable with either `cassandra` or `postgres` depending on which database you decided to use:
 
 ```shell
 $ docker run -d --name kong \
-    -e "DATABASE=cassandra" \
+    -e "KONG_DATABASE=cassandra" \
     --link kong-database:kong-database \
     -p 8000:8000 \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 7946:7946 \
     -p 7946:7946/udp \
-    --security-opt seccomp:unconfined \
-    mashape/kong
+    kong
 ```
-
-**Note:** If Docker complains that `--security-opt` is an invalid option, just remove it and re-execute the command (it was introduced in Docker 1.3).
 
 If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([proxy][http://getkong.org/docs/latest/configuration/#proxy_port]), `8443` ([proxy SSL](http://getkong.org/docs/latest/configuration/#proxy_listen_ssl)) and `8001` ([admin api](http://getkong.org/docs/latest/configuration/#admin_api_port)) ports. Port `7946` ([cluster](http://getkong.org/docs/latest/configuration/#cluster_listen)) is being used only by other Kong nodes.
 
@@ -63,22 +60,20 @@ You can now read the docs at [getkong.org/docs](http://getkong.org/docs) to lear
 
 ## 2. Use Kong with a custom configuration (and a custom Cassandra/PostgreSQL cluster)
 
-This container stores the [Kong configuration file](http://getkong.org/docs/latest/configuration/) in a [Data Volume](https://docs.docker.com/userguide/dockervolumes/). You can store this file on your host (name it `kong.yml` and place it in a directory) and mount it as a volume by doing so:
+You can override any property of the [Kong configuration file](http://getkong.org/docs/latest/configuration/) with environment variables. Just prepend any Kong configuration property with the `KONG_` prefix, for example:
 
 ```shell
-$ docker run -d \
-    -v /path/to/your/kong/configuration/directory/:/etc/kong/ \
+$ docker run -d --name kong \
+    -e "KONG_LOG_LEVEL=info" \
+    -e "KONG_CUSTOM_PLUGINS=helloworld" \
+    -e "KONG_PG_HOST=1.1.1.1" \
     -p 8000:8000 \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 7946:7946 \
     -p 7946:7946/udp \
-    --security-opt seccomp:unconfined \
-    --name kong \
-    mashape/kong
+    kong
 ```
-
-When attached this way you can edit your configuration file from your host machine and restart your container. You can also make the container point to a different Cassandra/PostgreSQL instance, so no need to link it to a Cassandra/PostgreSQL container.
 
 ## Reload Kong in a running container
 
