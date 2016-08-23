@@ -46,6 +46,12 @@ $ docker run -it --link some-mysql:mysql --rm mysql sh -c 'exec mysql -h"$MYSQL_
 
 ... where `some-mysql` is the name of your original mysql container.
 
+This image can also be used as a client for non-Docker or remote MySQL instances:
+
+```console
+$ docker run -it --rm mysql mysql -hsome.mysql.host -usome-mysql-user -p
+```
+
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
 ## Container shell access and viewing MySQL logs
