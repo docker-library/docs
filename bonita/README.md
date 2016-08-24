@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.3` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/a4da793e2e8db73532ceb9a7cbbc9b82ab90ca1a/7.0/Dockerfile)
--	[`7.2.4`, `latest` (*7.2/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/c8d6cbb007b77a9ce5b22a7e874608962f863e99/7.2/Dockerfile)
+-	[`7.2.4` (*7.2/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/c8d6cbb007b77a9ce5b22a7e874608962f863e99/7.2/Dockerfile)
+-	[`7.3.1`, `latest` (*7.3/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/115be1c84d7fab9555e4ea9fbfdd638c8686b524/7.3/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/bonita`)](https://github.com/docker-library/official-images/blob/master/library/bonita). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbonita).
 
