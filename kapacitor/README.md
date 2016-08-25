@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.12`, `0.12.0` (*0.12/Dockerfile*)](https://github.com/influxdata/kapacitor-docker/blob/bbfea78a0a43bd4c6d67e139afb518bac3aa424b/0.12/Dockerfile)
--	[`0.13`, `0.13.1`, `latest` (*kapacitor/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/kapacitor/0.13/Dockerfile)
--	[`0.13-alpine`, `0.13.1-alpine`, `alpine` (*kapacitor/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/kapacitor/0.13/alpine/Dockerfile)
--	[`1.0.0-beta3` (*kapacitor/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22315c8e211defb2589fa6831c682391de492b88/kapacitor/1.0/Dockerfile)
--	[`1.0.0-beta3-alpine` (*kapacitor/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22315c8e211defb2589fa6831c682391de492b88/kapacitor/1.0/alpine/Dockerfile)
+-	[`0.13`, `0.13.1`, `latest` (*kapacitor/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/kapacitor/0.13/Dockerfile)
+-	[`0.13-alpine`, `0.13.1-alpine`, `alpine` (*kapacitor/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/kapacitor/0.13/alpine/Dockerfile)
+-	[`1.0.0-rc1` (*kapacitor/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/kapacitor/1.0/Dockerfile)
+-	[`1.0.0-rc1-alpine` (*kapacitor/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/kapacitor/1.0/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kapacitor`)](https://github.com/docker-library/official-images/blob/master/library/kapacitor). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor).
 

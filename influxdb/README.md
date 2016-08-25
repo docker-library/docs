@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.12`, `0.12.2` (*0.12/Dockerfile*)](https://github.com/influxdata/influxdb-docker/blob/6d869aa598baf9d23019682ecff42d022a00ce17/0.12/Dockerfile)
--	[`0.13`, `0.13.0`, `latest` (*influxdb/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a2e36a415b71cd2b0bff87d0eaaf6d5329451c7c/influxdb/0.13/Dockerfile)
--	[`0.13-alpine`, `0.13.0-alpine`, `alpine` (*influxdb/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a2e36a415b71cd2b0bff87d0eaaf6d5329451c7c/influxdb/0.13/alpine/Dockerfile)
--	[`1.0.0-beta3` (*influxdb/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d6d3fd59d7c84461daa5a048d1381937b5e1b282/influxdb/1.0/Dockerfile)
--	[`1.0.0-beta3-alpine` (*influxdb/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d6d3fd59d7c84461daa5a048d1381937b5e1b282/influxdb/1.0/alpine/Dockerfile)
+-	[`0.13`, `0.13.0`, `latest` (*influxdb/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/influxdb/0.13/Dockerfile)
+-	[`0.13-alpine`, `0.13.0-alpine`, `alpine` (*influxdb/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/influxdb/0.13/alpine/Dockerfile)
+-	[`1.0.0-rc1` (*influxdb/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/influxdb/1.0/Dockerfile)
+-	[`1.0.0-rc1-alpine` (*influxdb/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/influxdb/1.0/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
 
