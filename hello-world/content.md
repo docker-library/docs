@@ -33,4 +33,4 @@ hello-world  latest  c54a2cc56cbb  1.848 kB
 
 # How is this image created?
 
-This image is a prime example of using the [`scratch`](https://registry.hub.docker.com/_/scratch/) image effectively. See [`hello.asm`](%%GITHUB-REPO%%/blob/master/hello.asm) in %%GITHUB-REPO%% for the source code of the `hello` binary included in this image.
+This image is a prime example of using the [`scratch`](https://registry.hub.docker.com/_/scratch/) image effectively. See [`hello.c`](%%GITHUB-REPO%%/blob/master/hello.c) in %%GITHUB-REPO%% for the source code of the `hello` binary included in this image.
