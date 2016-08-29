@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.0.18` (*2.0/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/a43637b03a105ceb1104cbf5e42e93e1ffed0944/2.0/Dockerfile)
--	[`2.1.21` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/a0746de27f438afa66f4abdae9a46e660524570d/2.1/Dockerfile)
--	[`2.2.7`, `latest` (*2.2/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/a0746de27f438afa66f4abdae9a46e660524570d/2.2/Dockerfile)
+-	[`2.1.22` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/56fffddb4d4181a24c764cf3908b0411e3b92794/2.1/Dockerfile)
+-	[`2.2.8`, `latest` (*2.2/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/56fffddb4d4181a24c764cf3908b0411e3b92794/2.2/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/orientdb`)](https://github.com/docker-library/official-images/blob/master/library/orientdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Forientdb).
 
