@@ -4,7 +4,8 @@
 -	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.0/Dockerfile)
 -	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.1/Dockerfile)
 -	[`2.2.4-1`, `2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.2/Dockerfile)
--	[`2.3.4-1`, `2.3.4`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.3/Dockerfile)
+-	[`2.3.4-1`, `2.3.4`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.3/Dockerfile)
+-	[`2.4.0-1`, `2.4.0`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/cbcdf161825af8e9acb8eaa420750a397af6b169/2.4/Dockerfile)
 -	[`5.0.0-alpha5-1`, `5.0.0-alpha5`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/5.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash).

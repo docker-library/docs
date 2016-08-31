@@ -6,7 +6,8 @@
 -	[`2.0.2`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.0/Dockerfile)
 -	[`2.1.2`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.1/Dockerfile)
 -	[`2.2.2`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.2/Dockerfile)
--	[`2.3.5`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.3/Dockerfile)
+-	[`2.3.5`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.3/Dockerfile)
+-	[`2.4.0`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/7a502275158cac1affa4372eab937a21913cd3e0/2.4/Dockerfile)
 -	[`5.0.0-alpha5`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/5.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch).
