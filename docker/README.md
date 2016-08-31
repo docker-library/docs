@@ -34,6 +34,8 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 
 ## Start a daemon instance
 
+**IMPORTANT:** this image defaults to `--storage-driver=vfs`, which will be very slow and inefficient (but is the only driver which is guaranteed to work regardless of your underlying filesystem). Which driver you should use varies depending on your needs, but a good rule of thumb is that your DinD instance should be using the same driver as your host (which can be seen under `Storage Driver` in the output of `docker info`). See the "Custom daemon flags" section below for how to specify your storage driver.
+
 ```console
 $ docker run --privileged --name some-docker -d docker:1.8-dind
 ```
@@ -132,7 +134,7 @@ Server:
 ## Custom daemon flags
 
 ```console
-$ docker run --privileged --name some-devicemapper-docker -d docker:dind --storage-driver=devicemapper
+$ docker run --privileged --name some-overlay-docker -d docker:dind --storage-driver=overlay
 ```
 
 ## Where to Store Data
