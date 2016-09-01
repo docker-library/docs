@@ -1,3 +1,7 @@
+# **DEPRECATED**
+
+This image is officially deprecated as it has been abandoned by the original maintainer. This content will be removed from the Official Repositories program in the near future, so users will need to move to an alternative soon. A good place to look is the [`glassfish/server`](https://hub.docker.com/r/glassfish/server) repository on DockerHub, which is managed by an Oracle employee associated with the Glassfish project.
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.0-jdk7`, `4.0` (*4.0-jdk7/Dockerfile*)](https://github.com/aws/aws-eb-glassfish/blob/aafcfc5e812dfb9b998105d3ca9da1b7f10664e1/4.0-jdk7/Dockerfile)
