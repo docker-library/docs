@@ -1,11 +1,16 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.5-1-a2bacae`, `1.4.5-1`, `1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/29f240de10ac358dba1bed7e777ab35742029858/1.4/Dockerfile)
--	[`1.5.4-1`, `1.5.4`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/722165120c05043a69c0482d7fecaff404428e51/1.5/Dockerfile)
+-	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/1.5/Dockerfile)
+-	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.0/Dockerfile)
+-	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.1/Dockerfile)
+-	[`2.2.4-1`, `2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.2/Dockerfile)
+-	[`2.3.4-1`, `2.3.4`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.3/Dockerfile)
+-	[`2.4.0-1`, `2.4.0`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/cbcdf161825af8e9acb8eaa420750a397af6b169/2.4/Dockerfile)
+-	[`5.0.0-alpha5-1`, `5.0.0-alpha5`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/5.0/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `logstash/tag-details.md` file](https://github.com/docker-library/docs/blob/master/logstash/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/logstash/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/logstash/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Logstash?
 
@@ -13,7 +18,7 @@ Logstash is a tool that can be used to collect, process and forward events and l
 
 > [wikitech.wikimedia.org/wiki/Logstash](https://wikitech.wikimedia.org/wiki/Logstash)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/logstash/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/3a5ee2af49550e2c692a15c339725b4967720db1/logstash/logo.png)
 
 # How to use this image
 
@@ -22,7 +27,7 @@ Logstash is a tool that can be used to collect, process and forward events and l
 If you need to run logstash with configuration provided on the commandline, you can use the logstash image as follows:
 
 ```console
-$ docker run -it --rm logstash logstash -e 'input { stdin { } } output { stdout { } }'
+$ docker run -it --rm logstash -e 'input { stdin { } } output { stdout { } }'
 ```
 
 ## Start Logstash with configuration file
@@ -30,7 +35,25 @@ $ docker run -it --rm logstash logstash -e 'input { stdin { } } output { stdout 
 If you need to run logstash with a configuration file, `logstash.conf`, that's located in your current directory, you can use the logstash image as follows:
 
 ```console
-$ docker run -it --rm -v "$PWD":/config-dir logstash logstash -f /config-dir/logstash.conf
+$ docker run -it --rm -v "$PWD":/config-dir logstash -f /config-dir/logstash.conf
+```
+
+### Using a `Dockerfile`
+
+If you'd like to have a production Logstash image with a pre-baked configuration file, use of a `Dockerfile` is recommended:
+
+```dockerfile
+FROM logstash
+
+COPY logstash.conf /some/config-dir/
+
+CMD ["-f", "/some/config-dir/logstash.conf"]
+```
+
+Then, build with `docker build -t my-logstash .` and deploy with something like the following:
+
+```console
+$ docker run -it --rm my-logstash
 ```
 
 # License
@@ -39,9 +62,11 @@ View [license information](https://github.com/elastic/logstash/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.12.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -51,7 +76,7 @@ Documentation for this image is stored in the [`logstash/` directory](https://gi
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/logstash/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/logstash/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

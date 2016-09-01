@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.5.5`, `3.5`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/30315af9719a5531da3d445d0fe1ceff86326d8b/Dockerfile)
--	[`3.5.5-management`, `3.5-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/30315af9719a5531da3d445d0fe1ceff86326d8b/management/Dockerfile)
+-	[`3.6.5`, `3.6`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/29121864d4892b2481706df023a53e31fececd02/Dockerfile)
+-	[`3.6.5-management`, `3.6-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/dc712681dcaeadb0371be66be5e96563be364e5d/management/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frabbitmq).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rabbitmq/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rabbitmq/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rabbitmq/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rabbitmq/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is RabbitMQ?
 
@@ -13,7 +13,7 @@ RabbitMQ is open source message broker software (sometimes called message-orient
 
 > [wikipedia.org/wiki/RabbitMQ](https://en.wikipedia.org/wiki/RabbitMQ)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/rabbitmq/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/81187b7b50f5af5bdb64d75882f4d9c782ad52c3/rabbitmq/logo.png)
 
 # How to use this image
 
@@ -94,11 +94,21 @@ You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser
 
 ## Setting default vhost
 
-If you wish to change the default vhost, you can do so wiht the `RABBITMQ_DEFAULT_VHOST` environmental variables:
+If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAULT_VHOST` environmental variables:
 
 ```console
 $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost rabbitmq:3-management
 ```
+
+## Enabling HiPE
+
+See the [RabbitMQ "Configuration"](http://www.rabbitmq.com/configure.html#config-items) for more information about various configuration options.
+
+For enabling the HiPE compiler on startup use `RABBITMQ_HIPE_COMPILE` set to `1`. Accroding to the official documentation:
+
+> Set to true to precompile parts of RabbitMQ with HiPE, a just-in-time compiler for Erlang. This will increase server throughput at the cost of increased startup time. You might see 20-50% better performance at the cost of a few minutes delay at startup.
+
+It is therefore important to take that startup delay into consideration when configuring health checks, automated clustering etc.
 
 ## Connecting to the daemon
 
@@ -112,9 +122,11 @@ View [license information](https://www.rabbitmq.com/mpl.html) for the software c
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.12.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -124,7 +136,7 @@ Documentation for this image is stored in the [`rabbitmq/` directory](https://gi
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/rabbitmq/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/rabbitmq/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

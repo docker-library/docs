@@ -8,27 +8,25 @@ Documentation for Aerospike is available at [http://aerospike.com/docs](https://
 
 # Using this Image
 
-The following will run `asd` with all the exposed ports forward to the host machine.
+The following will run `asd` with all the exposed ports forwarded to the host machine.
 
 ```console
 $ docker run -d --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server
 ```
 
-**NOTE** Although this is the simplest method to getting Aerospike up and running, but it is not the preferred method. To properly run the container, please specify an **custom configuration** with the **access-address** defined.
+**NOTE** Although this is the simplest method to getting Aerospike up and running, but it is not the preferred method. To properly run the container, please specify a **custom configuration** with the **access-address** defined.
 
-# Advanced Usage
+## Custom Aerospike Configuration
 
-## Custom Configuration
-
-By default, `asd` will use the configuration file in `/etc/aerospike/aerospike.conf`, which is added to the directory by the Dockerfile. To provide a custom configuration, you should first mount a directory containing the file using the `-v` option for `docker`:
+By default, `asd` will use the configuration file at `/etc/aerospike/aerospike.conf`, which is added to the directory by the Dockerfile. To provide a custom configuration, you should first mount a directory containing the custom aerospike.conf file using the `-v` option for `docker`:
 
 	-v <DIRECTORY>:/opt/aerospike/etc
 
-Where `<DIRECTORY>` is the path to a directory containing your custom configuration file. Next, you will want to tell `asd` to use a configuration file from `/opt/aerospike/etc`, by using the `--config-file` option for `aerospike/aerospike-server`:
+Where `<DIRECTORY>` is the path to a directory containing your custom aerospike.conf file. Next, you will want to tell `asd` to use the configuration file that was just mounted by using the `--config-file` option for `aerospike/aerospike-server`:
 
 	--config-file /opt/aerospike/etc/aerospike.conf
 
-This will use tell `asd` to use the file in `/opt/aerospike/etc/aerospike.conf`, which is mapped to `<DIRECTORY>/aerospike.conf`.
+This will tell `asd` to use the config file at `/opt/aerospike/etc/aerospike.conf`, which is mapped from `<DIRECTORY>/aerospike.conf`.
 
 A full example:
 
@@ -36,7 +34,7 @@ A full example:
 $ docker run -d -v <DIRECTORY>:/opt/aerospike/etc --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server asd --foreground --config-file /opt/aerospike/etc/aerospike.conf
 ```
 
-## access-address Configuration
+### access-address Configuration
 
 In order for Aerospike to properly broadcast its address to the cluster or applications, the **access-address** needs to be set in the configuration file. If it is not set, then the IP address within the container will be used, which is not accessible to other nodes.
 
@@ -74,3 +72,9 @@ Mesh networking requires setting up links between each node in the cluster. This
 
 1.	Define a configuration for each node in the cluster, as defined in [Network Heartbeat Configuration](http://www.aerospike.com/docs/operations/configure/network/heartbeat/#mesh-unicast-heartbeat).
 2.	Use `asinfo` to send the `tip` command, to make the node aware of another node, as defined in [tip command in asinfo](http://www.aerospike.com/docs/tools/asinfo/#tip).
+
+For more details and examples of clustering Aerospike in Docker, please see [Deploying Aerospike clusters with Docker](http://www.aerospike.com/docs/deploy_guides/docker/).
+
+## Sending Performance Data to Aerospike
+
+Aerospike Telemetry is a feature that allows us to collect certain use data – not the database data – on your Aerospike Community Edition server use. We'd like to know when clusters are created and destroyed, cluster size, cluster workload, how often queries are run, whether instances are deployed purely in-memory or with Flash. Aerospike Telemetry collects information from running Community Edition server instances every 10 minutes. The data helps us to understand how the product is being used, identify issues, and create a better experience for the end user. [More Info](http://www.aerospike.com/aerospike-telemetry/)

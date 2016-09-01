@@ -1,21 +1,29 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.10.40`, `0.10` (*0.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d798690bdae91174715ac083e31198674f044b68/0.10/Dockerfile)
--	[`0.10.40-onbuild`, `0.10-onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/9c93908dfcdc140c14aa78cbb4830850bcf99012/0.10/onbuild/Dockerfile)
--	[`0.10.40-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d798690bdae91174715ac083e31198674f044b68/0.10/slim/Dockerfile)
--	[`0.10.40-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d798690bdae91174715ac083e31198674f044b68/0.10/wheezy/Dockerfile)
--	[`0.12.7`, `0.12`, `0` (*0.12/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d798690bdae91174715ac083e31198674f044b68/0.12/Dockerfile)
--	[`0.12.7-onbuild`, `0.12-onbuild`, `0-onbuild` (*0.12/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/701976f243b4bd08bc0b70e0a452eaa187363372/0.12/onbuild/Dockerfile)
--	[`0.12.7-slim`, `0.12-slim`, `0-slim` (*0.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d798690bdae91174715ac083e31198674f044b68/0.12/slim/Dockerfile)
--	[`0.12.7-wheezy`, `0.12-wheezy`, `0-wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d798690bdae91174715ac083e31198674f044b68/0.12/wheezy/Dockerfile)
--	[`4.1.1`, `4.1`, `4`, `latest` (*4.1/Dockerfile*)](https://github.com/nodejs/docker-node/blob/3136e8429bd4017cf55a09761faf866c2cb8b104/4.1/Dockerfile)
--	[`4.1.1-onbuild`, `4.1-onbuild`, `4-onbuild`, `onbuild` (*4.1/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/3136e8429bd4017cf55a09761faf866c2cb8b104/4.1/onbuild/Dockerfile)
--	[`4.1.1-slim`, `4.1-slim`, `4-slim`, `slim` (*4.1/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/3136e8429bd4017cf55a09761faf866c2cb8b104/4.1/slim/Dockerfile)
--	[`4.1.1-wheezy`, `4.1-wheezy`, `4-wheezy`, `wheezy` (*4.1/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/3136e8429bd4017cf55a09761faf866c2cb8b104/4.1/wheezy/Dockerfile)
+-	[`0.10.46`, `0.10` (*0.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.10/Dockerfile)
+-	[`0.10.46-onbuild`, `0.10-onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/0.10/onbuild/Dockerfile)
+-	[`0.10.46-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.10/slim/Dockerfile)
+-	[`0.10.46-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.10/wheezy/Dockerfile)
+-	[`0.12.15`, `0.12`, `0` (*0.12/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.12/Dockerfile)
+-	[`0.12.15-onbuild`, `0.12-onbuild`, `0-onbuild` (*0.12/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/0.12/onbuild/Dockerfile)
+-	[`0.12.15-slim`, `0.12-slim`, `0-slim` (*0.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.12/slim/Dockerfile)
+-	[`0.12.15-wheezy`, `0.12-wheezy`, `0-wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.12/wheezy/Dockerfile)
+-	[`4.5.0`, `4.5`, `4`, `argon` (*4.5/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/4.5/Dockerfile)
+-	[`4.5.0-onbuild`, `4.5-onbuild`, `4-onbuild`, `argon-onbuild` (*4.5/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4ad33b57b2fa9d9bfc92e2369b14adb42e1eb90c/4.5/onbuild/Dockerfile)
+-	[`4.5.0-slim`, `4.5-slim`, `4-slim`, `argon-slim` (*4.5/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/4.5/slim/Dockerfile)
+-	[`4.5.0-wheezy`, `4.5-wheezy`, `4-wheezy`, `argon-wheezy` (*4.5/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/4.5/wheezy/Dockerfile)
+-	[`5.12.0`, `5.12`, `5` (*5.12/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/5.12/Dockerfile)
+-	[`5.12.0-onbuild`, `5.12-onbuild`, `5-onbuild` (*5.12/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/5.12/onbuild/Dockerfile)
+-	[`5.12.0-slim`, `5.12-slim`, `5-slim` (*5.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/5.12/slim/Dockerfile)
+-	[`5.12.0-wheezy`, `5.12-wheezy`, `5-wheezy` (*5.12/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/5.12/wheezy/Dockerfile)
+-	[`6.5.0`, `6.5`, `6`, `latest` (*6.5/Dockerfile*)](https://github.com/nodejs/docker-node/blob/910443c39c80291f0bf24712d8d94279cf15b7b5/6.5/Dockerfile)
+-	[`6.5.0-onbuild`, `6.5-onbuild`, `6-onbuild`, `onbuild` (*6.5/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/910443c39c80291f0bf24712d8d94279cf15b7b5/6.5/onbuild/Dockerfile)
+-	[`6.5.0-slim`, `6.5-slim`, `6-slim`, `slim` (*6.5/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/910443c39c80291f0bf24712d8d94279cf15b7b5/6.5/slim/Dockerfile)
+-	[`6.5.0-wheezy`, `6.5-wheezy`, `6-wheezy`, `wheezy` (*6.5/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/910443c39c80291f0bf24712d8d94279cf15b7b5/6.5/wheezy/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `node/tag-details.md` file](https://github.com/docker-library/docs/blob/master/node/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/node/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/node/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Node.js?
 
@@ -27,14 +35,14 @@ Node.js internally uses the Google V8 JavaScript engine to execute code; a large
 
 > [wikipedia.org/wiki/Node.js](https://en.wikipedia.org/wiki/Node.js)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/node/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/node/logo.png)
 
 # How to use this image
 
 ## Create a `Dockerfile` in your Node.js app project
 
 ```dockerfile
-FROM node:0.10-onbuild
+FROM node:4-onbuild
 # replace this with your application's default port
 EXPOSE 8888
 ```
@@ -55,7 +63,7 @@ The image assumes that your application has a file named [`package.json`](https:
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Node.js script by using the Node.js Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp node:0.10 node your-daemon-or-script.js
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/app -w /usr/src/app node:4 node your-daemon-or-script.js
 ```
 
 # Image Variants
@@ -84,9 +92,11 @@ View [license information](https://github.com/joyent/node/blob/master/LICENSE) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.12.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -96,7 +106,7 @@ Documentation for this image is stored in the [`node/` directory](https://github
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/joyent/docker-node/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/nodejs/docker-node/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -104,4 +114,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/joyent/docker-node/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/nodejs/docker-node/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

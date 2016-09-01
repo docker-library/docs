@@ -39,7 +39,7 @@ The available tags include supported distros along with a hierarchy tags based o
 - `robot`: basic install for robots  
 - `perception`: basic install for perception tasks
 
-The rest of the common meta-packages such as `desktop` and `desktop-full` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://registry.hub.docker.com/u/osrf/ros). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
+The rest of the common meta-packages such as `desktop` and `desktop-full` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
 
 ### Volumes
 
@@ -61,7 +61,6 @@ The ROS runtime "graph" is a peer-to-peer network of processes (potentially dist
 
 ## Deployment example
 
-**NOTE:** This requires the experimental version of Docker for future networking features.  
 If we want our all ROS nodes to easily talk to each other, we'll can use a virtual network to connect the separate containers. In this short example, we'll create a virtual network, spin up a new container running `roscore` advertised as the `master` service on the new network, then spawn a message publisher and subscriber process as services on the same network.
 
 ### Build image
@@ -96,8 +95,8 @@ $ docker build --tag ros:ros-tutorials .
 > To create a container for the ROS master and advertise it's service:
 
 ```console
-$ docker run -it --rm\
-    --publish-service=master.foo \
+$ docker run -it --rm \
+    --net foo \
     --name master \
     ros:ros-tutorials \
     roscore
@@ -106,11 +105,11 @@ $ docker run -it --rm\
 > Now you can see that master is running and is ready manage our other ROS nodes. To add our `talker` node, we'll need to point the relevant environment variable to the master service:
 
 ```console
-$ docker run -it --rm\
-    --publish-service=talker.foo \
+$ docker run -it --rm \
+    --net foo \
+    --name talker \
     --env ROS_HOSTNAME=talker \
     --env ROS_MASTER_URI=http://master:11311 \
-    --name talker \
     ros:ros-tutorials \
     rosrun roscpp_tutorials talker
 ```
@@ -118,11 +117,11 @@ $ docker run -it --rm\
 > Then in another terminal, run the `listener` node similarly:
 
 ```console
-$ docker run -it --rm\
-    --publish-service=listener.foo \
+$ docker run -it --rm \
+    --net foo \
+    --name listener \
     --env ROS_HOSTNAME=listener \
     --env ROS_MASTER_URI=http://master:11311 \
-    --name listener \
     ros:ros-tutorials \
     rosrun roscpp_tutorials listener
 ```
@@ -173,6 +172,65 @@ $ rostopic list
 $ docker stop master talker listener
 $ docker rm master talker listener
 ```
+
+### Compose
+
+Now that you have an appreciation for bootstrapping a distributed ROS example manually, lets try and automate it using [`docker-compose`](https://docs.docker.com/compose/)\.
+
+> Start by making a folder named `rostutorials` and moving the Dockerfile we used earlier inside this directory. Then create a yaml file named `docker-compose.yml` in the same directory and paste the following inside:
+
+```yaml
+version: '2'
+services:
+  master:
+    build: .
+    container_name: master
+    command:
+      - roscore
+  
+  talker:
+    build: .
+    container_name: talker
+    environment:
+      - "ROS_HOSTNAME=talker"
+      - "ROS_MASTER_URI=http://master:11311"
+    command: rosrun roscpp_tutorials talker
+  
+  listener:
+    build: .
+    container_name: listener
+    environment:
+      - "ROS_HOSTNAME=listener"
+      - "ROS_MASTER_URI=http://master:11311"
+    command: rosrun roscpp_tutorials listener
+```
+
+> Now from inside the same folder, use docker-copose to launch our ROS nodes and specify that they coexist on their own network:
+
+```console
+$ docker-compose up -d
+```
+
+> Notice that a new network named `rostutorials_default` has now been created, you can inspect it further with:
+
+```console
+$ docker network inspect rostutorials_default
+```
+
+> We can monitor the logged output of each service, such as the listener node like so:
+
+```console
+$ docker-compose logs listener
+```
+
+> Finally, we can stop and remove all the relevant containers using docker-copose from the same directory:
+
+```console
+$ docker-compose stop
+$ docker-compose rm
+```
+
+> Note: the auto-generated network, `rostutorials_default`, will persist over the life of the docker engine or until you explicitly remove it using [`docker network rm`](https://docs.docker.com/engine/reference/commandline/network_rm/)\.
 
 # More Resources
 

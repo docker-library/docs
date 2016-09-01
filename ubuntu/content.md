@@ -10,7 +10,34 @@ Development of Ubuntu is led by UK-based Canonical Ltd., a company owned by Sout
 
 # What's in this image?
 
+This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
+
+The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use.
+
 ## `/etc/apt/sources.list`
+
+### `ubuntu:16.04`
+
+```console
+$ docker run ubuntu:16.04 grep -v '^#' /etc/apt/sources.list
+
+deb http://archive.ubuntu.com/ubuntu/ xenial main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ xenial main restricted
+
+deb http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+
+deb http://archive.ubuntu.com/ubuntu/ xenial universe
+deb-src http://archive.ubuntu.com/ubuntu/ xenial universe
+deb http://archive.ubuntu.com/ubuntu/ xenial-updates universe
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates universe
+
+
+deb http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
+deb http://archive.ubuntu.com/ubuntu/ xenial-security universe
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-security universe
+```
 
 ### `ubuntu:14.04`
 
@@ -33,27 +60,4 @@ deb http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
 deb-src http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
 deb http://archive.ubuntu.com/ubuntu/ trusty-security universe
 deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
-```
-
-### `ubuntu:12.04`
-
-```console
-$ docker run ubuntu:12.04 cat /etc/apt/sources.list
-
-deb http://archive.ubuntu.com/ubuntu/ precise main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ precise main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ precise-updates main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ precise-updates main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ precise universe
-deb-src http://archive.ubuntu.com/ubuntu/ precise universe
-deb http://archive.ubuntu.com/ubuntu/ precise-updates universe
-deb-src http://archive.ubuntu.com/ubuntu/ precise-updates universe
-
-
-deb http://archive.ubuntu.com/ubuntu/ precise-security main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ precise-security main restricted
-deb http://archive.ubuntu.com/ubuntu/ precise-security universe
-deb-src http://archive.ubuntu.com/ubuntu/ precise-security universe
 ```

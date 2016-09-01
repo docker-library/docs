@@ -1,13 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.8.5`, `4.8` (*4.8/Dockerfile*)](https://github.com/docker-library/gcc/blob/d7108b41b79e9cdfee2d59bcd84b8bb65ae424d5/4.8/Dockerfile)
--	[`4.9.3`, `4.9`, `4` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/d7108b41b79e9cdfee2d59bcd84b8bb65ae424d5/4.9/Dockerfile)
--	[`5.1.0`, `5.1` (*5.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/d7108b41b79e9cdfee2d59bcd84b8bb65ae424d5/5.1/Dockerfile)
--	[`5.2.0`, `5.2`, `5`, `latest` (*5.2/Dockerfile*)](https://github.com/docker-library/gcc/blob/2db1810f653d5a2b6135f81ed0d1f7659e462d7b/5.2/Dockerfile)
+-	[`5.2.0`, `5.2` (*5.2/Dockerfile*)](https://github.com/docker-library/gcc/blob/df055b1ba29bd666470f4735f2a7bab9acffd0b3/5.2/Dockerfile)
+-	[`5.3.0`, `5.3`, `5` (*5.3/Dockerfile*)](https://github.com/docker-library/gcc/blob/df055b1ba29bd666470f4735f2a7bab9acffd0b3/5.3/Dockerfile)
+-	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/d9c8446748f7d69626f2e9425376a6672fff09af/6.1/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgcc).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `gcc/tag-details.md` file](https://github.com/docker-library/docs/blob/master/gcc/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/gcc/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/gcc/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is GCC?
 
@@ -15,7 +14,7 @@ The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Proje
 
 > [wikipedia.org/wiki/GNU_Compiler_Collection](https://en.wikipedia.org/wiki/GNU_Compiler_Collection)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/gcc/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/60b29a700d22613526487c7d5fcf4d723ed2ef0a/gcc/logo.png)
 
 # How to use this image
 
@@ -58,9 +57,11 @@ View [license information](https://gcc.gnu.org/viewcvs/gcc/trunk/gcc/COPYING3?vi
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.12.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -70,7 +71,7 @@ Documentation for this image is stored in the [`gcc/` directory](https://github.
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/gcc/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/gcc/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

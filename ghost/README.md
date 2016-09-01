@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.7.0`, `0.7`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/6eb29f459dd267495c642c3e541bfd7f376150c6/Dockerfile)
+-	[`0.10.0`, `0.10`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/b1a49c5deb435395b4720575ef2bf46f1396d82f/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fghost).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ghost/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ghost/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/ghost/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/ghost/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Ghost
 
@@ -12,7 +12,7 @@ Ghost is a free and open source blogging platform written in JavaScript and dist
 
 > [wikipedia.org/wiki/Ghost_(blogging_platform)](http://en.wikipedia.org/wiki/Ghost_%28blogging_platform%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/ghost/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c5b6d94dc8f0557925ab37ca43141c0efc5cc363/ghost/logo.png)
 
 # How to use this image
 
@@ -42,11 +42,22 @@ Alternatively you can use a [data container](http://docs.docker.com/userguide/do
 $ docker run --name some-ghost --volumes-from some-ghost-data ghost
 ```
 
+# What is the Node.js version?
+
+When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes necessary to know the version of Node.js in use:
+
+```console
+$ docker exec <container-id> node --version
+v4.4.7
+```
+
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.12.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -56,7 +67,7 @@ Documentation for this image is stored in the [`ghost/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/ghost/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/ghost/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

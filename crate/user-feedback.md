@@ -2,13 +2,15 @@
 
 Documentation for this image is stored in the [`%%REPO%%/` directory](https://github.com/docker-library/docs/tree/master/%%REPO%%) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
+Visit [Crate on Docker](https://crate.io/docs/install/containers/docker/) and get further documentation about how to get started with Crate.
+
 ## Issues
 
-If you have any problems with or questions about this image, please contact us %%MAILING-LIST%% through a [GitHub issue](%%GITHUB-REPO%%/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/crate/docker-crate/issues).
 
-If you have any questions or suggestions we would be very happy to help you. So, feel free to swing by our IRC channel `#crate` on [Freenode](http://freenode.net).
+If you have any questions or suggestions, we are happy to help! Feel free to join our [public Crate community on Slack](https://crate.io/docs/support/slackin/).
 
-For further information and official contact please visit [https://crate.io](https://crate.io).
+For further information and official contact visit [https://crate.io](https://crate.io).
 
 ## Contributing
 

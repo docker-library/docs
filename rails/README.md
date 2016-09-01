@@ -1,11 +1,36 @@
+# **DEPRECATED**
+
+This image is officially deprecated in favor of [the standard `ruby` image](https://hub.docker.com/_/ruby/), and will receive no further updates after 2016-12-31 (Dec 31, 2016). Please adjust your usage accordingly.
+
+For most usages of this image, it was already not bringing in `rails` from this image, but actually from your project's `Gemfile`, so the only "value" being added here was the pre-installing of `nodejs`, `mysql-client`, `postgresql-client`, and `sqlite3` for various uses of the `rails` framework.
+
+For example, a `Dockerfile` similar to the following would be a good starting point for a Rails project using PostgreSQL:
+
+```dockerfile
+FROM ruby:2.3
+
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends \
+		postgresql-client \
+	&& rm -rf /var/lib/apt/lists/*
+
+WORKDIR /usr/src/app
+COPY Gemfile* ./
+RUN bundle install
+COPY . .
+
+EXPOSE 3000
+CMD ["rails", "server", "-b", "0.0.0.0"]
+```
+
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.4`, `4.2`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/7926577517fb974f9de9ca1511162d6d5e000435/Dockerfile)
--	[`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/9fb5d2b7e0f2e7029855028e07e86ab7ec54abaa/onbuild/Dockerfile)
+-	[`5.0.0.1`, `5.0.0`, `5.0`, `5`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/74262f5482517f779681590b0194758ff75cf77c/Dockerfile)
+-	[`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/9df9b5e6b1519faf22e1565c2caaebf7cc1c665b/onbuild/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rails`)](https://github.com/docker-library/official-images/blob/master/library/rails). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/rails`)](https://github.com/docker-library/official-images/blob/master/library/rails). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frails).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rails/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rails/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rails/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rails/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Ruby on Rails?
 
@@ -13,7 +38,7 @@ Ruby on Rails or, simply, Rails is an open source web application framework whic
 
 > [wikipedia.org/wiki/Ruby_on_Rails](https://en.wikipedia.org/wiki/Ruby_on_Rails)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/rails/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/rails/logo.png)
 
 # How to use this image
 
@@ -56,7 +81,7 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
 If you want to generate the scaffolding for a new Rails project, you can do the following:
 
 ```console
-$ docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new webapp
+$ docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new --skip-bundle webapp
 ```
 
 This will create a sub-directory named `webapp` inside your current directory.
@@ -83,9 +108,11 @@ View [license information](https://github.com/rails/rails#license) for the softw
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.12.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -95,7 +122,7 @@ Documentation for this image is stored in the [`rails/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/rails/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/rails/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

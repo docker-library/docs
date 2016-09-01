@@ -1,17 +1,21 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`indigo-ros-core` (*ros/indigo/indigo-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/8a11109079636bcd3bdf341993d39e2b7d503c6c/ros/indigo/indigo-ros-core/Dockerfile)
--	[`indigo-ros-base`, `indigo`, `latest` (*ros/indigo/indigo-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/8a11109079636bcd3bdf341993d39e2b7d503c6c/ros/indigo/indigo-ros-base/Dockerfile)
--	[`indigo-robot` (*ros/indigo/indigo-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/8a11109079636bcd3bdf341993d39e2b7d503c6c/ros/indigo/indigo-robot/Dockerfile)
--	[`indigo-perception` (*ros/indigo/indigo-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/8a11109079636bcd3bdf341993d39e2b7d503c6c/ros/indigo/indigo-perception/Dockerfile)
--	[`jade-ros-core` (*ros/jade/jade-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/d579b9325fd8546a29dfc064661b005cfbc9cf8b/ros/jade/jade-ros-core/Dockerfile)
--	[`jade-ros-base`, `jade` (*ros/jade/jade-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/d579b9325fd8546a29dfc064661b005cfbc9cf8b/ros/jade/jade-ros-base/Dockerfile)
--	[`jade-robot` (*ros/jade/jade-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/d579b9325fd8546a29dfc064661b005cfbc9cf8b/ros/jade/jade-robot/Dockerfile)
--	[`jade-perception` (*ros/jade/jade-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/d579b9325fd8546a29dfc064661b005cfbc9cf8b/ros/jade/jade-perception/Dockerfile)
+-	[`indigo-ros-core` (*ros/indigo/indigo-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/e4ba7284358c569ebb7818b85e8520fbe9157269/ros/indigo/indigo-ros-core/Dockerfile)
+-	[`indigo-ros-base`, `indigo` (*ros/indigo/indigo-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/e4ba7284358c569ebb7818b85e8520fbe9157269/ros/indigo/indigo-ros-base/Dockerfile)
+-	[`indigo-robot` (*ros/indigo/indigo-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/e4ba7284358c569ebb7818b85e8520fbe9157269/ros/indigo/indigo-robot/Dockerfile)
+-	[`indigo-perception` (*ros/indigo/indigo-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/e4ba7284358c569ebb7818b85e8520fbe9157269/ros/indigo/indigo-perception/Dockerfile)
+-	[`jade-ros-core` (*ros/jade/jade-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/e4ba7284358c569ebb7818b85e8520fbe9157269/ros/jade/jade-ros-core/Dockerfile)
+-	[`jade-ros-base`, `jade` (*ros/jade/jade-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/e4ba7284358c569ebb7818b85e8520fbe9157269/ros/jade/jade-ros-base/Dockerfile)
+-	[`jade-robot` (*ros/jade/jade-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/e4ba7284358c569ebb7818b85e8520fbe9157269/ros/jade/jade-robot/Dockerfile)
+-	[`jade-perception` (*ros/jade/jade-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/e4ba7284358c569ebb7818b85e8520fbe9157269/ros/jade/jade-perception/Dockerfile)
+-	[`kinetic-ros-core` (*ros/kinetic/kinetic-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/bf5219b2ae079b65896232dd0c345a8bc75bc5df/ros/kinetic/kinetic-ros-core/Dockerfile)
+-	[`kinetic-ros-base`, `kinetic`, `latest` (*ros/kinetic/kinetic-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/bf5219b2ae079b65896232dd0c345a8bc75bc5df/ros/kinetic/kinetic-ros-base/Dockerfile)
+-	[`kinetic-robot` (*ros/kinetic/kinetic-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/bf5219b2ae079b65896232dd0c345a8bc75bc5df/ros/kinetic/kinetic-robot/Dockerfile)
+-	[`kinetic-perception` (*ros/kinetic/kinetic-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/bf5219b2ae079b65896232dd0c345a8bc75bc5df/ros/kinetic/kinetic-perception/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fros).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ros/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ros/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/ros/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/ros/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is [ROS](http://www.ros.org/)?
 
@@ -19,7 +23,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 
 > [wikipedia.org/wiki/Robot_Operating_System](https://en.wikipedia.org/wiki/Robot_Operating_System)
 
-[![logo](https://raw.githubusercontent.com/docker-library/docs/master/ros/logo.png)](http://www.ros.org/)
+[![logo](https://raw.githubusercontent.com/docker-library/docs/0074e9dac72a35e5058f356885121aa82572682f/ros/logo.png)](http://www.ros.org/)
 
 # How to use this image
 
@@ -54,7 +58,7 @@ The available tags include supported distros along with a hierarchy tags based o
 - `robot`: basic install for robots  
 - `perception`: basic install for perception tasks
 
-The rest of the common meta-packages such as `desktop` and `desktop-full` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://registry.hub.docker.com/u/osrf/ros). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
+The rest of the common meta-packages such as `desktop` and `desktop-full` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
 
 ### Volumes
 
@@ -76,7 +80,6 @@ The ROS runtime "graph" is a peer-to-peer network of processes (potentially dist
 
 ## Deployment example
 
-**NOTE:** This requires the experimental version of Docker for future networking features.  
 If we want our all ROS nodes to easily talk to each other, we'll can use a virtual network to connect the separate containers. In this short example, we'll create a virtual network, spin up a new container running `roscore` advertised as the `master` service on the new network, then spawn a message publisher and subscriber process as services on the same network.
 
 ### Build image
@@ -111,8 +114,8 @@ $ docker build --tag ros:ros-tutorials .
 > To create a container for the ROS master and advertise it's service:
 
 ```console
-$ docker run -it --rm\
-    --publish-service=master.foo \
+$ docker run -it --rm \
+    --net foo \
     --name master \
     ros:ros-tutorials \
     roscore
@@ -121,11 +124,11 @@ $ docker run -it --rm\
 > Now you can see that master is running and is ready manage our other ROS nodes. To add our `talker` node, we'll need to point the relevant environment variable to the master service:
 
 ```console
-$ docker run -it --rm\
-    --publish-service=talker.foo \
+$ docker run -it --rm \
+    --net foo \
+    --name talker \
     --env ROS_HOSTNAME=talker \
     --env ROS_MASTER_URI=http://master:11311 \
-    --name talker \
     ros:ros-tutorials \
     rosrun roscpp_tutorials talker
 ```
@@ -133,11 +136,11 @@ $ docker run -it --rm\
 > Then in another terminal, run the `listener` node similarly:
 
 ```console
-$ docker run -it --rm\
-    --publish-service=listener.foo \
+$ docker run -it --rm \
+    --net foo \
+    --name listener \
     --env ROS_HOSTNAME=listener \
     --env ROS_MASTER_URI=http://master:11311 \
-    --name listener \
     ros:ros-tutorials \
     rosrun roscpp_tutorials listener
 ```
@@ -189,6 +192,65 @@ $ docker stop master talker listener
 $ docker rm master talker listener
 ```
 
+### Compose
+
+Now that you have an appreciation for bootstrapping a distributed ROS example manually, lets try and automate it using [`docker-compose`](https://docs.docker.com/compose/)\.
+
+> Start by making a folder named `rostutorials` and moving the Dockerfile we used earlier inside this directory. Then create a yaml file named `docker-compose.yml` in the same directory and paste the following inside:
+
+```yaml
+version: '2'
+services:
+  master:
+    build: .
+    container_name: master
+    command:
+      - roscore
+  
+  talker:
+    build: .
+    container_name: talker
+    environment:
+      - "ROS_HOSTNAME=talker"
+      - "ROS_MASTER_URI=http://master:11311"
+    command: rosrun roscpp_tutorials talker
+  
+  listener:
+    build: .
+    container_name: listener
+    environment:
+      - "ROS_HOSTNAME=listener"
+      - "ROS_MASTER_URI=http://master:11311"
+    command: rosrun roscpp_tutorials listener
+```
+
+> Now from inside the same folder, use docker-copose to launch our ROS nodes and specify that they coexist on their own network:
+
+```console
+$ docker-compose up -d
+```
+
+> Notice that a new network named `rostutorials_default` has now been created, you can inspect it further with:
+
+```console
+$ docker network inspect rostutorials_default
+```
+
+> We can monitor the logged output of each service, such as the listener node like so:
+
+```console
+$ docker-compose logs listener
+```
+
+> Finally, we can stop and remove all the relevant containers using docker-copose from the same directory:
+
+```console
+$ docker-compose stop
+$ docker-compose rm
+```
+
+> Note: the auto-generated network, `rostutorials_default`, will persist over the life of the docker engine or until you explicitly remove it using [`docker network rm`](https://docs.docker.com/engine/reference/commandline/network_rm/)\.
+
 # More Resources
 
 [ROS.org](http://www.ros.org/): Main ROS website  
@@ -205,9 +267,11 @@ While the core parts of ROS are licensed under the BSD license, other licenses a
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.12.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -217,7 +281,7 @@ Documentation for this image is stored in the [`ros/` directory](https://github.
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/osrf/docker_images/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/osrf/docker_images/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

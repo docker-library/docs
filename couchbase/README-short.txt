@@ -1,1 +1,1 @@
-Couchbase Server is an open-source distributed (shared-nothing architecture) NoSQL Database.
+Couchbase Server is a NoSQL document database with a distributed architecture.

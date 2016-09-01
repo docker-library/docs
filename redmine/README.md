@@ -1,13 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.7`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/redmine/blob/b1ee49aa86501363e5832fad93938cf40428c5b7/2.6/Dockerfile)
--	[`2.6.7-passenger`, `2.6-passenger`, `2-passenger` (*2.6/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/558a0dbd4f88d47d5af8987a4f1dc6a9ba61a49c/2.6/passenger/Dockerfile)
--	[`3.0.5`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/b1ee49aa86501363e5832fad93938cf40428c5b7/3.0/Dockerfile)
--	[`3.0.5-passenger`, `3.0-passenger`, `3-passenger`, `passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/558a0dbd4f88d47d5af8987a4f1dc6a9ba61a49c/3.0/passenger/Dockerfile)
+-	[`3.1.6`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/c7fbe17fb7c3f1b33cb2d6fbdeaf1ee42ac9cbb9/3.1/Dockerfile)
+-	[`3.1.6-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/31ec3c8963424bbc1730806a65d9914c84df17de/3.1/passenger/Dockerfile)
+-	[`3.2.3`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/c7fbe17fb7c3f1b33cb2d6fbdeaf1ee42ac9cbb9/3.2/Dockerfile)
+-	[`3.2.3-passenger`, `3.2-passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/31ec3c8963424bbc1730806a65d9914c84df17de/3.2/passenger/Dockerfile)
+-	[`3.3.0`, `3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/c7fbe17fb7c3f1b33cb2d6fbdeaf1ee42ac9cbb9/3.3/Dockerfile)
+-	[`3.3.0-passenger`, `3.3-passenger`, `3-passenger`, `passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/31ec3c8963424bbc1730806a65d9914c84df17de/3.3/passenger/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredmine).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `redmine/tag-details.md` file](https://github.com/docker-library/docs/blob/master/redmine/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/redmine/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/redmine/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Redmine?
 
@@ -15,7 +17,7 @@ Redmine is a free and open source, web-based project management and issue tracki
 
 > [wikipedia.org/wiki/Redmine](https://en.wikipedia.org/wiki/Redmine)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/redmine/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/969091c4c590befe236a71d4a7bce5823fff020d/redmine/logo.png)
 
 # How to use this image
 
@@ -109,9 +111,11 @@ This variable is used to create an initial `config/secrets.yml` and set the `sec
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.12.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -121,7 +125,7 @@ Documentation for this image is stored in the [`redmine/` directory](https://git
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/redmine/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/redmine/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

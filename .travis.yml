@@ -3,8 +3,19 @@ language: go
 sudo: false
 
 install:
-  - mkdir -p "${GOPATH%%:*}/src/github.com/shurcooL/markdownfmt"
-  - git clone https://github.com/tianon/markdownfmt.git "${GOPATH%%:*}/src/github.com/shurcooL/markdownfmt"
+  - export GOPATH_FIRST="${GOPATH%%:*}"
+  - >
+      git clone \
+        --depth 1 \
+        https://github.com/tianon/markdownfmt.git \
+        "$GOPATH_FIRST/src/github.com/shurcooL/markdownfmt"
+  - export BLACKFRIDAY_VERSION="$(awk '$1 == "ENV" && $2 == "BLACKFRIDAY_VERSION" { print $3; exit }' "$GOPATH_FIRST/src/github.com/shurcooL/markdownfmt/Dockerfile")"
+  - >
+      git clone \
+        --depth 1 \
+        -b "$BLACKFRIDAY_VERSION" \
+        https://github.com/russross/blackfriday.git \
+        "$GOPATH_FIRST/src/github.com/russross/blackfriday"
   - go get -v github.com/shurcooL/markdownfmt
 
 script:
@@ -26,6 +37,16 @@ script:
     done;
     if [ "$failed" ]; then
       echo >&2 "Too long (or too many lines):$failed";
+      exit 1;
+    fi
+  - failed='';
+    for repo in */; do
+      if [ ! -e "$repo/github-repo" ]; then
+        failed+=" $repo";
+      fi
+    done;
+    if [ "$failed" ]; then
+    echo >&2 "Missing github-repo for:$failed";
       exit 1;
     fi
   - if [ "$TRAVIS_PULL_REQUEST" != 'false' ]; then

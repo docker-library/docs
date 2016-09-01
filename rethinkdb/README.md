@@ -1,31 +1,20 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.15.1` (*jessie/1.15.1/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/1.15.1/Dockerfile)
--	[`1.15.2` (*jessie/1.15.2/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/1.15.2/Dockerfile)
--	[`1.15.3`, `1.15` (*jessie/1.15.3/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/1.15.3/Dockerfile)
--	[`1.16.0` (*jessie/1.16.0/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/1.16.0/Dockerfile)
--	[`1.16.1` (*jessie/1.16.1/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/1.16.1/Dockerfile)
--	[`1.16.2` (*jessie/1.16.2/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/1.16.2/Dockerfile)
--	[`1.16.3`, `1.16`, `1` (*jessie/1.16.3/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/1.16.3/Dockerfile)
--	[`2.0.0` (*jessie/2.0.0/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/2.0.0/Dockerfile)
--	[`2.0.1` (*jessie/2.0.1/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/2.0.1/Dockerfile)
--	[`2.0.2` (*jessie/2.0.2/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/2.0.2/Dockerfile)
--	[`2.0.3` (*jessie/2.0.3/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/2.0.3/Dockerfile)
--	[`2.0.4`, `2.0` (*jessie/2.0.4/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/2.0.4/Dockerfile)
--	[`2.1.0` (*jessie/2.1.0/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/2.1.0/Dockerfile)
--	[`2.1.1` (*jessie/2.1.1/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/2.1.1/Dockerfile)
--	[`2.1.2` (*jessie/2.1.2/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/2.1.2/Dockerfile)
--	[`2.1.3`, `2.1`, `2`, `latest` (*jessie/2.1.3/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e676e24872e8244a9d75930bf441ebd40588369c/jessie/2.1.3/Dockerfile)
+-	[`2.0.4`, `2.0` (*jessie/2.0.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.0.4/Dockerfile)
+-	[`2.1.6`, `2.1` (*jessie/2.1.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.1.6/Dockerfile)
+-	[`2.2.6`, `2.2` (*jessie/2.2.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.2.6/Dockerfile)
+-	[`2.3.4` (*jessie/2.3.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.3.4/Dockerfile)
+-	[`2.3.5`, `2.3`, `2`, `latest` (*jessie/2.3.5/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.3.5/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rethinkdb`)](https://github.com/docker-library/official-images/blob/master/library/rethinkdb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/rethinkdb`)](https://github.com/docker-library/official-images/blob/master/library/rethinkdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frethinkdb).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rethinkdb/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rethinkdb/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rethinkdb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rethinkdb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is RethinkDB?
 
 RethinkDB is an open-source, distributed database built to store JSON documents and effortlessly scale to multiple machines. It's easy to set up and learn and features a simple but powerful query language that supports table joins, groupings, aggregations, and functions.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/rethinkdb/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/af9f91fe186f3ea3afee511d0a53b50088fdc381/rethinkdb/logo.png)
 
 # How to use this image
 
@@ -76,9 +65,11 @@ View [license information](http://www.gnu.org/licenses/agpl-3.0.html) for the so
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.12.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -88,7 +79,7 @@ Documentation for this image is stored in the [`rethinkdb/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/stuartpb/rethinkdb-dockerfiles/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/rethinkdb/rethinkdb-dockerfiles/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -96,4 +87,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/stuartpb/rethinkdb-dockerfiles/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/rethinkdb/rethinkdb-dockerfiles/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

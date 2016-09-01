@@ -1,18 +1,17 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`precise`, `nd12.04` (*dockerfiles/precise/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/2872942a3d69d4ea732000c8fa29dd6ce0e32cc8/dockerfiles/precise/Dockerfile)
--	[`trusty`, `nd14.04` (*dockerfiles/trusty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/2872942a3d69d4ea732000c8fa29dd6ce0e32cc8/dockerfiles/trusty/Dockerfile)
--	[`utopic`, `nd14.10` (*dockerfiles/utopic/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/2872942a3d69d4ea732000c8fa29dd6ce0e32cc8/dockerfiles/utopic/Dockerfile)
--	[`vivid`, `nd15.04` (*dockerfiles/vivid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/2872942a3d69d4ea732000c8fa29dd6ce0e32cc8/dockerfiles/vivid/Dockerfile)
--	[`squeeze`, `nd60` (*dockerfiles/squeeze/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/2872942a3d69d4ea732000c8fa29dd6ce0e32cc8/dockerfiles/squeeze/Dockerfile)
--	[`wheezy`, `nd70` (*dockerfiles/wheezy/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/2872942a3d69d4ea732000c8fa29dd6ce0e32cc8/dockerfiles/wheezy/Dockerfile)
--	[`jessie`, `nd80`, `latest` (*dockerfiles/jessie/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/2872942a3d69d4ea732000c8fa29dd6ce0e32cc8/dockerfiles/jessie/Dockerfile)
--	[`stretch`, `nd90` (*dockerfiles/stretch/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/2872942a3d69d4ea732000c8fa29dd6ce0e32cc8/dockerfiles/stretch/Dockerfile)
--	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/2872942a3d69d4ea732000c8fa29dd6ce0e32cc8/dockerfiles/sid/Dockerfile)
+-	[`precise`, `nd12.04` (*dockerfiles/precise/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/336c4d3566c3c8311960c001e6032dab6d59c3b3/dockerfiles/precise/Dockerfile)
+-	[`trusty`, `nd14.04` (*dockerfiles/trusty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/336c4d3566c3c8311960c001e6032dab6d59c3b3/dockerfiles/trusty/Dockerfile)
+-	[`xenial`, `nd16.04` (*dockerfiles/xenial/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/336c4d3566c3c8311960c001e6032dab6d59c3b3/dockerfiles/xenial/Dockerfile)
+-	[`yakkety`, `nd16.10` (*dockerfiles/yakkety/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/336c4d3566c3c8311960c001e6032dab6d59c3b3/dockerfiles/yakkety/Dockerfile)
+-	[`wheezy`, `nd70` (*dockerfiles/wheezy/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/336c4d3566c3c8311960c001e6032dab6d59c3b3/dockerfiles/wheezy/Dockerfile)
+-	[`jessie`, `nd80` (*dockerfiles/jessie/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/336c4d3566c3c8311960c001e6032dab6d59c3b3/dockerfiles/jessie/Dockerfile)
+-	[`stretch`, `nd90` (*dockerfiles/stretch/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/336c4d3566c3c8311960c001e6032dab6d59c3b3/dockerfiles/stretch/Dockerfile)
+-	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/336c4d3566c3c8311960c001e6032dab6d59c3b3/dockerfiles/sid/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/neurodebian`)](https://github.com/docker-library/official-images/blob/master/library/neurodebian). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/neurodebian`)](https://github.com/docker-library/official-images/blob/master/library/neurodebian). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneurodebian).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `neurodebian/tag-details.md` file](https://github.com/docker-library/docs/blob/master/neurodebian/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/neurodebian/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/neurodebian/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is NeuroDebian?
 
@@ -20,7 +19,7 @@ NeuroDebian provides a large collection of popular neuroscience research softwar
 
 > [neuro.debian.net](http://neuro.debian.net/)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/neurodebian/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/90ee9ce81aa27322936d7faf585ffc45b7def890/neurodebian/logo.png)
 
 # About this image
 
@@ -43,9 +42,11 @@ deb http://neuro.debian.net/debian data main
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.12.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -55,7 +56,7 @@ Documentation for this image is stored in the [`neurodebian/` directory](https:/
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/neurodebian/dockerfiles/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/neurodebian/dockerfiles/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

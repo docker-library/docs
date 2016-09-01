@@ -1,11 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.4-apache`, `3.4.4`, `3.4-apache`, `3.4`, `3-apache`, `apache`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/2d3bc88028d3f767b951fb5cd41d9d653ce6619d/apache/Dockerfile)
--	[`3.4.4-fpm`, `3.4-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/2d3bc88028d3f767b951fb5cd41d9d653ce6619d/fpm/Dockerfile)
+-	[`3.6.2-apache`, `3.6-apache`, `3-apache`, `apache`, `3.6.2`, `3.6`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/e13971cf7a5413b8ed3ec7028b7c3d283d193a40/apache/Dockerfile)
+-	[`3.6.2-apache-php7`, `3.6-apache-php7`, `3-apache-php7`, `apache-php7` (*apache-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/e13971cf7a5413b8ed3ec7028b7c3d283d193a40/apache-php7/Dockerfile)
+-	[`3.6.2-fpm`, `3.6-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/e13971cf7a5413b8ed3ec7028b7c3d283d193a40/fpm/Dockerfile)
+-	[`3.6.2-fpm-php7`, `3.6-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/e13971cf7a5413b8ed3ec7028b7c3d283d193a40/fpm-php7/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjoomla).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `joomla/tag-details.md` file](https://github.com/docker-library/docs/blob/master/joomla/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/joomla/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/joomla/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Joomla?
 
@@ -13,7 +15,7 @@ Joomla is a free and open-source content management system (CMS) for publishing 
 
 > [wikipedia.org/wiki/Joomla](https://en.wikipedia.org/wiki/Joomla)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/joomla/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/593aeead7600f80c50ea4f0cdde05998f743789b/joomla/logo.png)
 
 # How to use this image
 
@@ -82,9 +84,11 @@ View [license information](http://www.gnu.org/licenses/gpl-2.0.txt) for the soft
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.12.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -94,7 +98,7 @@ Documentation for this image is stored in the [`joomla/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/joomla/docker-joomla/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/joomla/docker-joomla/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

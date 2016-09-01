@@ -1,1 +1,1 @@
-Crate is a shared nothing, fully searchable, document oriented cluster datastore
+Crate is an open source, highly scalable, shared-nothing distributed SQL database.
