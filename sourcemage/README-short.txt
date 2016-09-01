@@ -1,1 +1,1 @@
-Source Mage is a source-based GNU/Linux distribution with maximum flexibility in customization.
+Source Mage is a source-based GNU/Linux distribution with maximum flexibility in customization for power users.
