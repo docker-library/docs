@@ -2,8 +2,6 @@
 
 -	[`1.0`, `latest` (*1.0/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/39c3c62cd649b1d64178b24cd23d9196461dc818/1.0/Dockerfile)
 
-[![](https://badge.imagelayers.io/photon:latest.svg)](https://imagelayers.io/?images=photon:1.0)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/photon`)](https://github.com/docker-library/official-images/blob/master/library/photon). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphoton).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/photon/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/photon/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
@@ -38,7 +36,7 @@ View [license information](https://github.com/vmware/photon/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

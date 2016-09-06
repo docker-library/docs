@@ -3,8 +3,6 @@
 -	[`0.8.19`, `0.8`, `0`, `latest`, `0.8.19-debian`, `0.8-debian`, `0-debian`, `debian` (*debian/Dockerfile*)](https://github.com/jfrazelle/irssi/blob/1377885afb36b08ec0984e8563f945895776caa8/debian/Dockerfile)
 -	[`0.8.19-alpine`, `0.8-alpine`, `0-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jfrazelle/irssi/blob/1377885afb36b08ec0984e8563f945895776caa8/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/irssi:latest.svg)](https://imagelayers.io/?images=irssi:0.8.19,irssi:0.8.19-alpine)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/irssi`)](https://github.com/docker-library/official-images/blob/master/library/irssi). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Firssi).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/irssi/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/irssi/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
@@ -70,7 +68,7 @@ View [license information](https://github.com/irssi/irssi/blob/master/COPYING) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

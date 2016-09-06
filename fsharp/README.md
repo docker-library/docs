@@ -1,9 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/f063b22fc1e9f3d78e025f3a3842299721cd78bf/4.0.0.4/Dockerfile)
--	[`4.0.1.1`, `latest` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/1a01ecbe00ef0c1399893ed5cda40c197614f48d/4.0.1.1/Dockerfile)
-
-[![](https://badge.imagelayers.io/fsharp:latest.svg)](https://imagelayers.io/?images=fsharp:4.0.0.4,fsharp:4.0.1.1)
+-	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/57b3ddadc85a63bf586ab89b523bb8326dad9c12/4.0.0.4/Dockerfile)
+-	[`4.0.1.1`, `latest` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/57b3ddadc85a63bf586ab89b523bb8326dad9c12/4.0.1.1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/fsharp`)](https://github.com/docker-library/official-images/blob/master/library/fsharp). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffsharp).
 
@@ -37,7 +35,7 @@ View [the Apache 2.0 license](https://github.com/fsharp/fsharp/blob/d518f91418ef
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,12 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.12`, `0.12.0` (*0.12/Dockerfile*)](https://github.com/influxdata/kapacitor-docker/blob/bbfea78a0a43bd4c6d67e139afb518bac3aa424b/0.12/Dockerfile)
--	[`0.13`, `0.13.1`, `latest` (*kapacitor/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/kapacitor/0.13/Dockerfile)
--	[`0.13-alpine`, `0.13.1-alpine`, `alpine` (*kapacitor/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/kapacitor/0.13/alpine/Dockerfile)
--	[`1.0.0-beta3` (*kapacitor/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22315c8e211defb2589fa6831c682391de492b88/kapacitor/1.0/Dockerfile)
--	[`1.0.0-beta3-alpine` (*kapacitor/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22315c8e211defb2589fa6831c682391de492b88/kapacitor/1.0/alpine/Dockerfile)
-
-[![](https://badge.imagelayers.io/kapacitor:latest.svg)](https://imagelayers.io/?images=kapacitor:0.12,kapacitor:0.13,kapacitor:0.13-alpine,kapacitor:1.0.0-beta3,kapacitor:1.0.0-beta3-alpine)
+-	[`0.13`, `0.13.1`, `latest` (*kapacitor/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/kapacitor/0.13/Dockerfile)
+-	[`0.13-alpine`, `0.13.1-alpine`, `alpine` (*kapacitor/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/kapacitor/0.13/alpine/Dockerfile)
+-	[`1.0.0-rc2` (*kapacitor/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/269f3d4ee4a91ff8fe05d6a1c71a1e0ced1b900b/kapacitor/1.0/Dockerfile)
+-	[`1.0.0-rc2-alpine` (*kapacitor/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/269f3d4ee4a91ff8fe05d6a1c71a1e0ced1b900b/kapacitor/1.0/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kapacitor`)](https://github.com/docker-library/official-images/blob/master/library/kapacitor). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor).
 
@@ -167,7 +165,7 @@ View [license information](https://github.com/influxdata/kapacitor/blob/master/L
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,8 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.36.0`, `0.36`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/6a71d57ee5576455a0acfdf0ab144ef5489022ef/Dockerfile)
-
-[![](https://badge.imagelayers.io/rocket.chat:latest.svg)](https://imagelayers.io/?images=rocket.chat:0.36.0)
+-	[`0.38.0`, `0.38`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/f26193a41722ad47bf649d443e87b2effd8e7c44/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rocket.chat`)](https://github.com/docker-library/official-images/blob/master/library/rocket.chat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frocket.chat).
 
@@ -14,7 +12,7 @@ Rocket.Chat is a Web Chat Server, developed in JavaScript, using the Meteor full
 
 It is a great solution for communities and companies wanting to privately host their own chat service or for developers looking forward to build and evolve their own chat platforms.
 
-![logo](https://rawgit.com/docker-library/docs/a6616e4fc5d554756247938b57677c763f32c0f4/rocket.chat/logo.svg)
+![logo](https://rawgit.com/docker-library/docs/03a593f2d33ac163b1b346a60de29aa59f7f78db/rocket.chat/logo.svg)
 
 # How to use this image
 
@@ -52,7 +50,7 @@ View [license information](https://github.com/RocketChat/Rocket.Chat/blob/master
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

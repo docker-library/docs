@@ -5,8 +5,6 @@
 -	[`alpine`, `6.0-alpine` (*6.0-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/73534fd899d29eb1373ea073edbfe7a4074ede6e/6.0-alpine/Dockerfile)
 -	[`lts-alpine`, `5.6.1-alpine` (*5.6.1-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/73534fd899d29eb1373ea073edbfe7a4074ede6e/5.6.1-alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:lts,sonarqube:alpine,sonarqube:lts-alpine)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsonarqube).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/sonarqube/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/sonarqube/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
@@ -82,7 +80,7 @@ View [license information](http://www.gnu.org/licenses/lgpl.txt) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

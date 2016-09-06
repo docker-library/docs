@@ -4,8 +4,6 @@
 -	[`1.25.0-musl`, `1.25-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/a0558a9006ce0dd6f6ec5d56cfd3f32ebeeb815f/musl/Dockerfile)
 -	[`1.25.0-uclibc`, `1.25-uclibc`, `1-uclibc`, `uclibc`, `1.25.0`, `1.25`, `1`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/a0558a9006ce0dd6f6ec5d56cfd3f32ebeeb815f/uclibc/Dockerfile)
 
-[![](https://badge.imagelayers.io/busybox:latest.svg)](https://imagelayers.io/?images=busybox:1.25.0-glibc,busybox:1.25.0-musl,busybox:1.25.0-uclibc)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/busybox`)](https://github.com/docker-library/official-images/blob/master/library/busybox). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbusybox).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/busybox/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/busybox/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
@@ -56,7 +54,7 @@ View [license information](http://www.busybox.net/license.html) for the software
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

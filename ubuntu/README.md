@@ -1,11 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20160707`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e68c4b0d4c860a8e0547cfea6f1b07f0adb9ff46/precise/Dockerfile)
--	[`14.04.4`, `14.04`, `trusty-20160711`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e68c4b0d4c860a8e0547cfea6f1b07f0adb9ff46/trusty/Dockerfile)
--	[`16.04`, `xenial-20160713`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e68c4b0d4c860a8e0547cfea6f1b07f0adb9ff46/xenial/Dockerfile)
--	[`16.10`, `yakkety-20160717`, `yakkety`, `devel` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e68c4b0d4c860a8e0547cfea6f1b07f0adb9ff46/yakkety/Dockerfile)
-
-[![](https://badge.imagelayers.io/ubuntu:latest.svg)](https://imagelayers.io/?images=ubuntu:12.04.5,ubuntu:14.04.4,ubuntu:16.04,ubuntu:16.10)
+-	[`12.04.5`, `12.04`, `precise-20160819`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/aec74cf404240664b289d28948d9284a4afd1181/precise/Dockerfile)
+-	[`14.04.5`, `14.04`, `trusty-20160819`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/aec74cf404240664b289d28948d9284a4afd1181/trusty/Dockerfile)
+-	[`16.04`, `xenial-20160818`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/aec74cf404240664b289d28948d9284a4afd1181/xenial/Dockerfile)
+-	[`16.10`, `yakkety-20160826`, `yakkety`, `devel` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/aec74cf404240664b289d28948d9284a4afd1181/yakkety/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fubuntu).
 
@@ -23,7 +21,34 @@ Development of Ubuntu is led by UK-based Canonical Ltd., a company owned by Sout
 
 # What's in this image?
 
+This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
+
+The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use.
+
 ## `/etc/apt/sources.list`
+
+### `ubuntu:16.04`
+
+```console
+$ docker run ubuntu:16.04 grep -v '^#' /etc/apt/sources.list
+
+deb http://archive.ubuntu.com/ubuntu/ xenial main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ xenial main restricted
+
+deb http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+
+deb http://archive.ubuntu.com/ubuntu/ xenial universe
+deb-src http://archive.ubuntu.com/ubuntu/ xenial universe
+deb http://archive.ubuntu.com/ubuntu/ xenial-updates universe
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates universe
+
+
+deb http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
+deb http://archive.ubuntu.com/ubuntu/ xenial-security universe
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-security universe
+```
 
 ### `ubuntu:14.04`
 
@@ -48,32 +73,9 @@ deb http://archive.ubuntu.com/ubuntu/ trusty-security universe
 deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
 ```
 
-### `ubuntu:12.04`
-
-```console
-$ docker run ubuntu:12.04 cat /etc/apt/sources.list
-
-deb http://archive.ubuntu.com/ubuntu/ precise main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ precise main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ precise-updates main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ precise-updates main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ precise universe
-deb-src http://archive.ubuntu.com/ubuntu/ precise universe
-deb http://archive.ubuntu.com/ubuntu/ precise-updates universe
-deb-src http://archive.ubuntu.com/ubuntu/ precise-updates universe
-
-
-deb http://archive.ubuntu.com/ubuntu/ precise-security main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ precise-security main restricted
-deb http://archive.ubuntu.com/ubuntu/ precise-security universe
-deb-src http://archive.ubuntu.com/ubuntu/ precise-security universe
-```
-
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

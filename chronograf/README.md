@@ -1,9 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.12`, `0.12.0` (*0.12/Dockerfile*)](https://github.com/influxdata/chronograf-docker/blob/82b30f8a10b7dde9b13953400288768f109bf749/0.12/Dockerfile)
--	[`0.13`, `0.13.0`, `latest` (*chronograf/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/chronograf/0.13/Dockerfile)
-
-[![](https://badge.imagelayers.io/chronograf:latest.svg)](https://imagelayers.io/?images=chronograf:0.12,chronograf:0.13)
+-	[`0.13`, `0.13.0`, `latest` (*chronograf/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/chronograf/0.13/Dockerfile)
+-	[`1.0.0-rc1` (*chronograf/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/chronograf/1.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/chronograf`)](https://github.com/docker-library/official-images/blob/master/library/chronograf). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fchronograf).
 
@@ -62,7 +61,7 @@ View [license information](https://github.com/influxdata/chronograf/blob/master/
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

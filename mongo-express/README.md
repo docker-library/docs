@@ -1,8 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.30.59`, `0.30`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/d1a908ad4cce8bcf4453fd2b40022eeb8f5c3724/Dockerfile)
-
-[![](https://badge.imagelayers.io/mongo-express:latest.svg)](https://imagelayers.io/?images=mongo-express:0.30.59)
+-	[`0.31.0`, `0.31`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/8307e91473be1b6849e89acc4d347eec0116293a/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo-express`)](https://github.com/docker-library/official-images/blob/master/library/mongo-express). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express).
 
@@ -77,7 +75,7 @@ This example links to a container name typical of `docker-compose`, changes the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,13 +1,29 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.3.4` (*2.3.4/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/3f379d33f5d08f2e483769427ab1e0b898a819ac/2.3.4/Dockerfile)
--	[`2.3.5`, `2.3` (*2.3.5/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/3f379d33f5d08f2e483769427ab1e0b898a819ac/2.3.5/Dockerfile)
--	[`2.3.4-enterprise` (*2.3.4-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/3f379d33f5d08f2e483769427ab1e0b898a819ac/2.3.4-enterprise/Dockerfile)
--	[`2.3.5-enterprise`, `2.3-enterprise` (*2.3.5-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/3f379d33f5d08f2e483769427ab1e0b898a819ac/2.3.5-enterprise/Dockerfile)
--	[`3.0.3`, `3.0`, `latest` (*3.0.3-community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/860588baa6a9e97c7d10bdbc0084e4c59f3886a6/3.0.3-community/Dockerfile)
--	[`3.0.3-enterprise`, `3.0-enterprise`, `enterprise` (*3.0.3-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/860588baa6a9e97c7d10bdbc0084e4c59f3886a6/3.0.3-enterprise/Dockerfile)
-
-[![](https://badge.imagelayers.io/neo4j:latest.svg)](https://imagelayers.io/?images=neo4j:2.3.4,neo4j:2.3.5,neo4j:2.3.4-enterprise,neo4j:2.3.5-enterprise,neo4j:3.0.3,neo4j:3.0.3-enterprise)
+-	[`3.0.4`, `3.0`, `latest` (*3.0.4/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/1ad894c32a9cf2a7147f4bdd76eb7a52f8df9d12/3.0.4/community/Dockerfile)
+-	[`3.0.4-enterprise`, `3.0-enterprise`, `enterprise` (*3.0.4/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/1ad894c32a9cf2a7147f4bdd76eb7a52f8df9d12/3.0.4/enterprise/Dockerfile)
+-	[`3.0.3` (*3.0.3/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/3.0.3/community/Dockerfile)
+-	[`3.0.3-enterprise` (*3.0.3/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/3.0.3/enterprise/Dockerfile)
+-	[`3.0.2` (*3.0.2/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/3.0.2/community/Dockerfile)
+-	[`3.0.2-enterprise` (*3.0.2/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/3.0.2/enterprise/Dockerfile)
+-	[`3.0.1` (*3.0.1/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/3.0.1/community/Dockerfile)
+-	[`3.0.1-enterprise` (*3.0.1/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/3.0.1/enterprise/Dockerfile)
+-	[`3.0.0` (*3.0.0/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/3.0.0/community/Dockerfile)
+-	[`3.0.0-enterprise` (*3.0.0/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/3.0.0/enterprise/Dockerfile)
+-	[`2.3.6`, `2.3` (*2.3.6/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/3be2e1ae6ec47195c6ac9226de8793d5f4fd8162/2.3.6/community/Dockerfile)
+-	[`2.3.6-enterprise`, `2.3-enterprise` (*2.3.6/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/3be2e1ae6ec47195c6ac9226de8793d5f4fd8162/2.3.6/enterprise/Dockerfile)
+-	[`2.3.5` (*2.3.5/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/2.3.5/community/Dockerfile)
+-	[`2.3.5-enterprise` (*2.3.5/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/2.3.5/enterprise/Dockerfile)
+-	[`2.3.4` (*2.3.4/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/2.3.4/community/Dockerfile)
+-	[`2.3.4-enterprise` (*2.3.4/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/2.3.4/enterprise/Dockerfile)
+-	[`2.3.3` (*2.3.3/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/2.3.3/community/Dockerfile)
+-	[`2.3.3-enterprise` (*2.3.3/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/2.3.3/enterprise/Dockerfile)
+-	[`2.3.2` (*2.3.2/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/2.3.2/community/Dockerfile)
+-	[`2.3.2-enterprise` (*2.3.2/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/2.3.2/enterprise/Dockerfile)
+-	[`2.3.1` (*2.3.1/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/2.3.1/community/Dockerfile)
+-	[`2.3.1-enterprise` (*2.3.1/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/2.3.1/enterprise/Dockerfile)
+-	[`2.3.0` (*2.3.0/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/be3136e85d255ccd695b0bfb352304c40f05fc84/2.3.0/community/Dockerfile)
+-	[`2.3.0-enterprise` (*2.3.0/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/be3136e85d255ccd695b0bfb352304c40f05fc84/2.3.0/enterprise/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/neo4j`)](https://github.com/docker-library/official-images/blob/master/library/neo4j). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneo4j).
 
@@ -57,7 +73,7 @@ For more examples and complete documentation please go [here for 2.x](http://neo
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

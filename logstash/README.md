@@ -1,13 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/bb4f8b0d3f3e92a04dfbfee1d2b94196f64bd78c/1.5/Dockerfile)
--	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/bb4f8b0d3f3e92a04dfbfee1d2b94196f64bd78c/2.0/Dockerfile)
--	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/bb4f8b0d3f3e92a04dfbfee1d2b94196f64bd78c/2.1/Dockerfile)
--	[`2.2.4-1`, `2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/bb4f8b0d3f3e92a04dfbfee1d2b94196f64bd78c/2.2/Dockerfile)
--	[`2.3.4-1`, `2.3.4`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/b0342c0fdfe41b89a02b4edd75303e6a143a19c1/2.3/Dockerfile)
--	[`5.0.0-alpha4-1`, `5.0.0-alpha4`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/963e75bbedf450b7a1733f2571410adc152aac12/5.0/Dockerfile)
-
-[![](https://badge.imagelayers.io/logstash:latest.svg)](https://imagelayers.io/?images=logstash:1.5.6-1,logstash:2.0.0-1,logstash:2.1.3-1,logstash:2.2.4-1,logstash:2.3.4-1,logstash:5.0.0-alpha4-1)
+-	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/1.5/Dockerfile)
+-	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.0/Dockerfile)
+-	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.1/Dockerfile)
+-	[`2.2.4-1`, `2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.2/Dockerfile)
+-	[`2.3.4-1`, `2.3.4`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.3/Dockerfile)
+-	[`2.4.0-1`, `2.4.0`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/cbcdf161825af8e9acb8eaa420750a397af6b169/2.4/Dockerfile)
+-	[`5.0.0-alpha5-1`, `5.0.0-alpha5`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/5.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash).
 
@@ -28,7 +27,7 @@ Logstash is a tool that can be used to collect, process and forward events and l
 If you need to run logstash with configuration provided on the commandline, you can use the logstash image as follows:
 
 ```console
-$ docker run -it --rm logstash logstash -e 'input { stdin { } } output { stdout { } }'
+$ docker run -it --rm logstash -e 'input { stdin { } } output { stdout { } }'
 ```
 
 ## Start Logstash with configuration file
@@ -36,7 +35,25 @@ $ docker run -it --rm logstash logstash -e 'input { stdin { } } output { stdout 
 If you need to run logstash with a configuration file, `logstash.conf`, that's located in your current directory, you can use the logstash image as follows:
 
 ```console
-$ docker run -it --rm -v "$PWD":/config-dir logstash logstash -f /config-dir/logstash.conf
+$ docker run -it --rm -v "$PWD":/config-dir logstash -f /config-dir/logstash.conf
+```
+
+### Using a `Dockerfile`
+
+If you'd like to have a production Logstash image with a pre-baked configuration file, use of a `Dockerfile` is recommended:
+
+```dockerfile
+FROM logstash
+
+COPY logstash.conf /some/config-dir/
+
+CMD ["-f", "/some/config-dir/logstash.conf"]
+```
+
+Then, build with `docker build -t my-logstash .` and deploy with something like the following:
+
+```console
+$ docker run -it --rm my-logstash
 ```
 
 # License
@@ -45,7 +62,7 @@ View [license information](https://github.com/elastic/logstash/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

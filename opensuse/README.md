@@ -4,8 +4,6 @@
 -	[`13.2`, `harlequin` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/2479d8d0f90bce3c2e33dd2fc311d6599c336fdf/docker/Dockerfile)
 -	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/046d77c122ee04485df87870f31713f87a30c1e2/docker/Dockerfile)
 
-[![](https://badge.imagelayers.io/opensuse:latest.svg)](https://imagelayers.io/?images=opensuse:42.1,opensuse:13.2,opensuse:tumbleweed)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/opensuse`)](https://github.com/docker-library/official-images/blob/master/library/opensuse). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fopensuse).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/opensuse/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/opensuse/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
@@ -35,7 +33,7 @@ However the following repositories are already part of the image:
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

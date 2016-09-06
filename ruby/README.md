@@ -13,8 +13,6 @@
 -	[`2.3.1-alpine`, `2.3-alpine`, `2-alpine`, `alpine` (*2.3/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/2d6449f03976ededa14be5cac1e9e070b74e4de4/2.3/alpine/Dockerfile)
 -	[`2.3.1-onbuild`, `2.3-onbuild`, `2-onbuild`, `onbuild` (*2.3/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/1b08f346713a1293c2a9238e470e086126e2e28f/2.3/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/ruby:latest.svg)](https://imagelayers.io/?images=ruby:2.1.10,ruby:2.1.10-slim,ruby:2.1.10-alpine,ruby:2.1.10-onbuild,ruby:2.2.5,ruby:2.2.5-slim,ruby:2.2.5-alpine,ruby:2.2.5-onbuild,ruby:2.3.1,ruby:2.3.1-slim,ruby:2.3.1-alpine,ruby:2.3.1-onbuild)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fruby).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/ruby/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/ruby/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
@@ -98,7 +96,7 @@ View [license information](https://www.ruby-lang.org/en/about/license.txt) for t
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

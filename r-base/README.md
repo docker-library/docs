@@ -2,8 +2,6 @@
 
 -	[`3.3.1`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/118be9ab285173237441836d84bab714c0920cca/r-base/Dockerfile)
 
-[![](https://badge.imagelayers.io/r-base:latest.svg)](https://imagelayers.io/?images=r-base:3.3.1)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/r-base`)](https://github.com/docker-library/official-images/blob/master/library/r-base). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fr-base).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/r-base/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/r-base/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
@@ -80,7 +78,7 @@ View [R-project license information](http://www.r-project.org/Licenses/) for the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -23,8 +23,6 @@
 -	[`4.4.2.11`, `4.4.2`, `4.4`, `4`, `latest` (*4.4.2.11/Dockerfile*)](https://github.com/mono/docker/blob/b2efdab5e0ef9ef0b91930956a7f5049ec0e4146/4.4.2.11/Dockerfile)
 -	[`4.4.2.11-onbuild`, `4.4.2-onbuild`, `4.4-onbuild`, `4-onbuild`, `onbuild` (*4.4.2.11/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/b2efdab5e0ef9ef0b91930956a7f5049ec0e4146/4.4.2.11/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/mono:latest.svg)](https://imagelayers.io/?images=mono:3.10.0,mono:3.10.0-onbuild,mono:3.12.1,mono:3.12.1-onbuild,mono:3.8.0,mono:3.8.0-onbuild,mono:4.0.5.1,mono:4.0.5.1-onbuild,mono:4.2.1.102,mono:4.2.1.102-onbuild,mono:4.2.2.30,mono:4.2.2.30-onbuild,mono:4.2.3.4,mono:4.2.3.4-onbuild,mono:4.2.4.4,mono:4.2.4.4-onbuild,mono:4.4.0.182,mono:4.4.0.182-onbuild,mono:4.4.1.0,mono:4.4.1.0-onbuild,mono:4.4.2.11,mono:4.4.2.11-onbuild)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mono/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mono/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
@@ -92,7 +90,7 @@ This Docker Image is licensed with the Expat License. See the [Mono Project lice
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,11 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.0-apache`, `3.6.0`, `3.6-apache`, `3.6`, `3-apache`, `apache`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/527331d50231c06ed700fca193fdf983f732904d/apache/Dockerfile)
--	[`3.6.0-apache-php7`, `3.6-apache-php7`, `3-apache-php7`, `apache-php7` (*apache-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/527331d50231c06ed700fca193fdf983f732904d/apache-php7/Dockerfile)
--	[`3.6.0-fpm`, `3.6-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/527331d50231c06ed700fca193fdf983f732904d/fpm/Dockerfile)
--	[`3.6.0-fpm-php7`, `3.6-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/527331d50231c06ed700fca193fdf983f732904d/fpm-php7/Dockerfile)
-
-[![](https://badge.imagelayers.io/joomla:latest.svg)](https://imagelayers.io/?images=joomla:3.6.0-apache,joomla:3.6.0-apache-php7,joomla:3.6.0-fpm,joomla:3.6.0-fpm-php7)
+-	[`3.6.2-apache`, `3.6-apache`, `3-apache`, `apache`, `3.6.2`, `3.6`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/e13971cf7a5413b8ed3ec7028b7c3d283d193a40/apache/Dockerfile)
+-	[`3.6.2-apache-php7`, `3.6-apache-php7`, `3-apache-php7`, `apache-php7` (*apache-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/e13971cf7a5413b8ed3ec7028b7c3d283d193a40/apache-php7/Dockerfile)
+-	[`3.6.2-fpm`, `3.6-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/e13971cf7a5413b8ed3ec7028b7c3d283d193a40/fpm/Dockerfile)
+-	[`3.6.2-fpm-php7`, `3.6-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/e13971cf7a5413b8ed3ec7028b7c3d283d193a40/fpm-php7/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjoomla).
 
@@ -86,7 +84,7 @@ View [license information](http://www.gnu.org/licenses/gpl-2.0.txt) for the soft
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -2,8 +2,6 @@
 
 -	[`latest` (*hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/85fd7ab65e079b08019032479a3f306964a28f4d/hola-mundo/Dockerfile)
 
-[![](https://badge.imagelayers.io/hola-mundo:latest.svg)](https://imagelayers.io/?images=hola-mundo:latest)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/hola-mundo`)](https://github.com/docker-library/official-images/blob/master/library/hola-mundo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhola-mundo).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/hola-mundo/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/hola-mundo/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
@@ -41,7 +39,7 @@ See [the `hello-world` image description](https://hub.docker.com/_/hello-world/)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

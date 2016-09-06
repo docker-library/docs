@@ -5,8 +5,6 @@
 -	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/7.0/5.4/Dockerfile)
 -	[`9.0`, `9.0-php7`, `latest` (*9.0/7.0/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/9.0/7.0/Dockerfile)
 
-[![](https://badge.imagelayers.io/php-zendserver:latest.svg)](https://imagelayers.io/?images=php-zendserver:5.5,php-zendserver:5.6,php-zendserver:5.4,php-zendserver:9.0)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/php-zendserver`)](https://github.com/docker-library/official-images/blob/master/library/php-zendserver). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp-zendserver).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/php-zendserver/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/php-zendserver/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
@@ -152,7 +150,7 @@ Each Zend Server Docker container requires 1GB of availible memory.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

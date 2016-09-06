@@ -1,10 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.7.14`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/77f0a50ecd54edafe48ce3a2a328c22e9e7564a8/5.7/Dockerfile)
--	[`5.6.32`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/77f0a50ecd54edafe48ce3a2a328c22e9e7564a8/5.6/Dockerfile)
--	[`5.5.51`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/77f0a50ecd54edafe48ce3a2a328c22e9e7564a8/5.5/Dockerfile)
-
-[![](https://badge.imagelayers.io/mysql:latest.svg)](https://imagelayers.io/?images=mysql:5.7.14,mysql:5.6.32,mysql:5.5.51)
+-	[`5.7.14`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/dbb83a94ee0a994651dd430d27caeac652cf9e78/5.7/Dockerfile)
+-	[`5.6.32`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/dbb83a94ee0a994651dd430d27caeac652cf9e78/5.6/Dockerfile)
+-	[`5.5.51`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/dbb83a94ee0a994651dd430d27caeac652cf9e78/5.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmysql).
 
@@ -47,6 +45,12 @@ $ docker run -it --link some-mysql:mysql --rm mysql sh -c 'exec mysql -h"$MYSQL_
 ```
 
 ... where `some-mysql` is the name of your original mysql container.
+
+This image can also be used as a client for non-Docker or remote MySQL instances:
+
+```console
+$ docker run -it --rm mysql mysql -hsome.mysql.host -usome-mysql-user -p
+```
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
@@ -174,7 +178,7 @@ $ docker exec some-mysql sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

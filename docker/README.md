@@ -1,13 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.12.0`, `1.12`, `1`, `latest` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/39269f78ed82ab27b8a560b43f3091b2f503052b/1.12/Dockerfile)
--	[`1.12.0-dind`, `1.12-dind`, `1-dind`, `dind` (*1.12/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/dind/Dockerfile)
--	[`1.12.0-git`, `1.12-git`, `1-git`, `git` (*1.12/git/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/git/Dockerfile)
+-	[`1.12.1`, `1.12`, `1`, `latest` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/e65e856a4226445f865ec51ea4b6d3bc8353386b/1.12/Dockerfile)
+-	[`1.12.1-dind`, `1.12-dind`, `1-dind`, `dind` (*1.12/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/dind/Dockerfile)
+-	[`1.12.1-git`, `1.12-git`, `1-git`, `git` (*1.12/git/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/git/Dockerfile)
+-	[`1.12.1-experimental`, `1.12-experimental`, `1-experimental`, `experimental` (*1.12/experimental/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/Dockerfile)
+-	[`1.12.1-experimental-dind`, `1.12-experimental-dind`, `1-experimental-dind`, `experimental-dind` (*1.12/experimental/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/dind/Dockerfile)
+-	[`1.12.1-experimental-git`, `1.12-experimental-git`, `1-experimental-git`, `experimental-git` (*1.12/experimental/git/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/git/Dockerfile)
 -	[`1.11.2`, `1.11` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/b83d8a3f9b77c2592f383cd58625e000af4f2dde/1.11/Dockerfile)
 -	[`1.11.2-dind`, `1.11-dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/1c8b144ed9ec49ac8cc7ca75f8628fd8de6c82b5/1.11/dind/Dockerfile)
 -	[`1.11.2-git`, `1.11-git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
-
-[![](https://badge.imagelayers.io/docker:latest.svg)](https://imagelayers.io/?images=docker:1.12.0,docker:1.12.0-dind,docker:1.12.0-git,docker:1.11.2,docker:1.11.2-dind,docker:1.11.2-git)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker).
 
@@ -32,6 +33,8 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 [![asciicast](https://asciinema.org/a/24707.png)](https://asciinema.org/a/24707)
 
 ## Start a daemon instance
+
+**IMPORTANT:** this image defaults to `--storage-driver=vfs`, which will be very slow and inefficient (but is the only driver which is guaranteed to work regardless of your underlying filesystem). Which driver you should use varies depending on your needs, but a good rule of thumb is that your DinD instance should be using the same driver as your host (which can be seen under `Storage Driver` in the output of `docker info`). See the "Custom daemon flags" section below for how to specify your storage driver.
 
 ```console
 $ docker run --privileged --name some-docker -d docker:1.8-dind
@@ -131,7 +134,7 @@ Server:
 ## Custom daemon flags
 
 ```console
-$ docker run --privileged --name some-devicemapper-docker -d docker:dind --storage-driver=devicemapper
+$ docker run --privileged --name some-overlay-docker -d docker:dind --storage-driver=overlay
 ```
 
 ## Where to Store Data
@@ -158,7 +161,7 @@ View [license information](https://github.com/docker/docker/blob/eb7b2ed6bbe3fbe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

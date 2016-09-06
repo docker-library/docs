@@ -2,8 +2,6 @@
 
 -	[`6.0.2`, `6.0`, `6`, `latest` (*6.0/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/ac09cec81d3dacc9175371815e42a2b7495473b4/6.0/Dockerfile)
 
-[![](https://badge.imagelayers.io/lightstreamer:latest.svg)](https://imagelayers.io/?images=lightstreamer:6.0.2)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/lightstreamer`)](https://github.com/docker-library/official-images/blob/master/library/lightstreamer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flightstreamer).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/lightstreamer/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/lightstreamer/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
@@ -140,7 +138,7 @@ View [license information](http://www.lightstreamer.com/lightstreamer-sla) for t
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -4,10 +4,8 @@
 -	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/667427cf0ac38b7ff7d9fcbd29493b54adf9d53d/1.4/alpine/Dockerfile)
 -	[`1.5.18`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/e128fc85947f0de7213185c9f948150e39cbc766/1.5/Dockerfile)
 -	[`1.5.18-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/667427cf0ac38b7ff7d9fcbd29493b54adf9d53d/1.5/alpine/Dockerfile)
--	[`1.6.7`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/fee22521901f01ccde1a1f63c6d3b619053ef196/1.6/Dockerfile)
--	[`1.6.7-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/fee22521901f01ccde1a1f63c6d3b619053ef196/1.6/alpine/Dockerfile)
-
-[![](https://badge.imagelayers.io/haproxy:latest.svg)](https://imagelayers.io/?images=haproxy:1.4.27,haproxy:1.4.27-alpine,haproxy:1.5.18,haproxy:1.5.18-alpine,haproxy:1.6.7,haproxy:1.6.7-alpine)
+-	[`1.6.9`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/24fd0637e58d931e99ae6717b3e13bb389985fa1/1.6/Dockerfile)
+-	[`1.6.9-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/24fd0637e58d931e99ae6717b3e13bb389985fa1/1.6/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaproxy).
 
@@ -94,7 +92,7 @@ View [license information](http://www.haproxy.org/download/1.5/doc/LICENSE) for 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

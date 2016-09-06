@@ -1,8 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base` (*Dockerfile*)](https://github.com/clearlinux/docker-brew-clearlinux/blob/0ceb073491db6b8e15c370e35c42e93c5ba2951e/Dockerfile)
-
-[![](https://badge.imagelayers.io/clearlinux:latest.svg)](https://imagelayers.io/?images=clearlinux:latest)
+-	[`latest`, `base` (*Dockerfile*)](https://github.com/clearlinux/docker-brew-clearlinux/blob/0f1e92867c2fcaf0d94f9941444f6f917832f6ff/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/clearlinux`)](https://github.com/docker-library/official-images/blob/master/library/clearlinux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclearlinux).
 
@@ -29,7 +27,7 @@ Where editors contains the usual suspects for command line editors and dev-utils
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

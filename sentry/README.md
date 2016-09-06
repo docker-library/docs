@@ -1,11 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.6.0`, `8.6` (*8.6/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/09d2b56ded2f669f40d5295bfe36529bbafb914d/8.6/Dockerfile)
+-	[`8.6.0`, `8.6` (*8.6/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/2bef8f6386c891f9b8ce1d6940f0aff81c25d475/8.6/Dockerfile)
 -	[`8.6.0-onbuild`, `8.6-onbuild` (*8.6/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/09d2b56ded2f669f40d5295bfe36529bbafb914d/8.6/onbuild/Dockerfile)
--	[`8.7.0`, `8.7`, `8`, `latest` (*8.7/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/22e75e5254b5707b77a747cd4e90bc4327f2ce9b/8.7/Dockerfile)
+-	[`8.7.0`, `8.7`, `8`, `latest` (*8.7/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/2bef8f6386c891f9b8ce1d6940f0aff81c25d475/8.7/Dockerfile)
 -	[`8.7.0-onbuild`, `8.7-onbuild`, `8-onbuild`, `onbuild` (*8.7/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/22e75e5254b5707b77a747cd4e90bc4327f2ce9b/8.7/onbuild/Dockerfile)
-
-[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.6.0,sentry:8.6.0-onbuild,sentry:8.7.0,sentry:8.7.0-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
@@ -144,7 +142,7 @@ View [license information](https://github.com/getsentry/sentry/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

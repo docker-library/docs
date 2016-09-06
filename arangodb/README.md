@@ -4,9 +4,7 @@
 -	[`2.6`, `2.6.10` (*jessie/2.6.10/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/803663b157696616d70e2bb44ce6e256f912e3a6/jessie/2.6.10/Dockerfile)
 -	[`2.7`, `2.7.5` (*jessie/2.7.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/dbfcc5f3edb37f622a2acd221b58106547b05fae/jessie/2.7.5/Dockerfile)
 -	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/05366cb4c6a6aab8e1ff9ca74c81b09d9a57b5b5/jessie/2.8.11/Dockerfile)
--	[`3.0`, `3.0.4`, `latest` (*jessie/3.0.4/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/089d57d96f8ee315ee7af76366f3ada6158fa9a0/jessie/3.0.4/Dockerfile)
-
-[![](https://badge.imagelayers.io/arangodb:latest.svg)](https://imagelayers.io/?images=arangodb:2.5.5,arangodb:2.6,arangodb:2.7,arangodb:2.8,arangodb:3.0)
+-	[`3.0`, `3.0.5`, `latest` (*jessie/3.0.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/a8466f62875774c39b2f0ed55f7edba8ce2f7ebf/jessie/3.0.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/arangodb`)](https://github.com/docker-library/official-images/blob/master/library/arangodb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Farangodb).
 
@@ -165,7 +163,7 @@ If you are using the image as a base image please make sure to wrap any CMD in t
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

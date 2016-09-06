@@ -1,8 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.0`, `0.9`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/13c06085f3de1264fc8c40a0d66fd4eafbfc322e/Dockerfile)
-
-[![](https://badge.imagelayers.io/ghost:latest.svg)](https://imagelayers.io/?images=ghost:0.9.0)
+-	[`0.10.0`, `0.10`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/b1a49c5deb435395b4720575ef2bf46f1396d82f/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fghost).
 
@@ -44,9 +42,18 @@ Alternatively you can use a [data container](http://docs.docker.com/userguide/do
 $ docker run --name some-ghost --volumes-from some-ghost-data ghost
 ```
 
+# What is the Node.js version?
+
+When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes necessary to know the version of Node.js in use:
+
+```console
+$ docker exec <container-id> node --version
+v4.4.7
+```
+
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.0.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
