@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8-jre`, `jre`, `8`, `latest` (*ibmjava/8-jre/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/b9765ee26706884459e96ed701415add510e6944/ibmjava/8-jre/x86_64/ubuntu/Dockerfile)
--	[`8-jre-alpine`, `jre-alpine` (*ibmjava/8-jre/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/0c67d341472c6aae479701a649f6433a7c03f486/ibmjava/8-jre/x86_64/alpine/Dockerfile)
--	[`8-sfj`, `sfj` (*ibmjava/8-sfj/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/b9765ee26706884459e96ed701415add510e6944/ibmjava/8-sfj/x86_64/ubuntu/Dockerfile)
--	[`8-sfj-alpine`, `sfj-alpine` (*ibmjava/8-sfj/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/0c67d341472c6aae479701a649f6433a7c03f486/ibmjava/8-sfj/x86_64/alpine/Dockerfile)
--	[`8-sdk`, `sdk` (*ibmjava/8-sdk/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/b9765ee26706884459e96ed701415add510e6944/ibmjava/8-sdk/x86_64/ubuntu/Dockerfile)
+-	[`8-jre`, `jre`, `8`, `latest` (*ibmjava/8-jre/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/1f0549ef043eb91ce252dfdd4355cfc890f2ab84/ibmjava/8-jre/x86_64/ubuntu/Dockerfile)
+-	[`8-jre-alpine`, `jre-alpine` (*ibmjava/8-jre/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/1f0549ef043eb91ce252dfdd4355cfc890f2ab84/ibmjava/8-jre/x86_64/alpine/Dockerfile)
+-	[`8-sfj`, `sfj` (*ibmjava/8-sfj/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/1f0549ef043eb91ce252dfdd4355cfc890f2ab84/ibmjava/8-sfj/x86_64/ubuntu/Dockerfile)
+-	[`8-sfj-alpine`, `sfj-alpine` (*ibmjava/8-sfj/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/1f0549ef043eb91ce252dfdd4355cfc890f2ab84/ibmjava/8-sfj/x86_64/alpine/Dockerfile)
+-	[`8-sdk`, `sdk` (*ibmjava/8-sdk/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/1f0549ef043eb91ce252dfdd4355cfc890f2ab84/ibmjava/8-sdk/x86_64/ubuntu/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ibmjava`)](https://github.com/docker-library/official-images/blob/master/library/ibmjava). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fibmjava).
 
