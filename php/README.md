@@ -1,5 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
+-	[`7.1.0RC1-cli`, `7.1-cli`, `7.1.0RC1`, `7.1` (*7.1/Dockerfile*)](https://github.com/docker-library/php/blob/ce3d81c7eefbe69860a8eaf63c05db5dd7a98a8d/7.1/Dockerfile)
+-	[`7.1.0RC1-alpine`, `7.1-alpine` (*7.1/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/ce3d81c7eefbe69860a8eaf63c05db5dd7a98a8d/7.1/alpine/Dockerfile)
+-	[`7.1.0RC1-apache`, `7.1-apache` (*7.1/apache/Dockerfile*)](https://github.com/docker-library/php/blob/ce3d81c7eefbe69860a8eaf63c05db5dd7a98a8d/7.1/apache/Dockerfile)
+-	[`7.1.0RC1-fpm`, `7.1-fpm` (*7.1/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/ce3d81c7eefbe69860a8eaf63c05db5dd7a98a8d/7.1/fpm/Dockerfile)
+-	[`7.1.0RC1-fpm-alpine`, `7.1-fpm-alpine` (*7.1/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/ce3d81c7eefbe69860a8eaf63c05db5dd7a98a8d/7.1/fpm/alpine/Dockerfile)
+-	[`7.1.0RC1-zts`, `7.1-zts` (*7.1/zts/Dockerfile*)](https://github.com/docker-library/php/blob/ce3d81c7eefbe69860a8eaf63c05db5dd7a98a8d/7.1/zts/Dockerfile)
+-	[`7.1.0RC1-zts-alpine`, `7.1-zts-alpine` (*7.1/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/ce3d81c7eefbe69860a8eaf63c05db5dd7a98a8d/7.1/zts/alpine/Dockerfile)
 -	[`7.0.10-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.10`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://github.com/docker-library/php/blob/2f96a00aaa90ee1c503140724936ca7005273df5/7.0/Dockerfile)
 -	[`7.0.10-alpine`, `7.0-alpine`, `7-alpine`, `alpine` (*7.0/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/2f96a00aaa90ee1c503140724936ca7005273df5/7.0/alpine/Dockerfile)
 -	[`7.0.10-apache`, `7.0-apache`, `7-apache`, `apache` (*7.0/apache/Dockerfile*)](https://github.com/docker-library/php/blob/2f96a00aaa90ee1c503140724936ca7005273df5/7.0/apache/Dockerfile)

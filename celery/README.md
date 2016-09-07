@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1.23`, `3.1`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/celery/blob/0652407560f353e749cbe001e8bdbb5db86c2291/Dockerfile)
+-	[`4.0.0rc3`, `4.0`, `4` (*4.0/Dockerfile*)](https://github.com/docker-library/celery/blob/2b56f641be3c38c4367fa7501268b43398199922/4.0/Dockerfile)
+-	[`3.1.23`, `3.1`, `3`, `latest` (*3.1/Dockerfile*)](https://github.com/docker-library/celery/blob/2b56f641be3c38c4367fa7501268b43398199922/3.1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/celery`)](https://github.com/docker-library/official-images/blob/master/library/celery). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcelery).
 
