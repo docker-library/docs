@@ -156,10 +156,10 @@ Once the cluster is bootstrapped and quorum is achieved, you must use care to ke
 
 ## Exposing Consul's DNS Server on Port 53
 
-By default, Consul's DNS server is exposed on port 8600. Because this is cumbersome to configure with facilities like `resolv.conf`, you may want to expose DNS on port 53 using port arguments on your run command:
+By default, Consul's DNS server is exposed on port 8600. Because this is cumbersome to configure with facilities like `resolv.conf`, you may want to expose DNS on port 53. Consul 0.7 and later supports this by setting an environment variable that runs `setcap` on the Consul binary, allowing it to bind to privileged ports. Here's an example:
 
 ```console
-$ docker run -d --net=host -p 53:8600/tcp -p 53:8600/udp consul
+$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' consul -dns-port=53
 ```
 
 If you are binding Consul's client interfaces to the host's loopback address, then you should be able to configure your host's `resolv.conf` to route DNS requests to Consul by including "127.0.0.1" as the primary DNS server. This would expose Consul's DNS to all applications running on the host, but due to Docker's built-in DNS server, you can't point to this directly from inside your containers; Docker will issue an error message if you attempt to do this. You must configure Consul to listen on a non-localhost address that is reachable from within other containers.
@@ -167,7 +167,7 @@ If you are binding Consul's client interfaces to the host's loopback address, th
 Once you bind Consul's client interfaces to the bridge or other network, you can use the `--dns` option in your *other containers* in order for them to use Consul's DNS server, mapped to port 53. Here's an example:
 
 ```console
-$ docker run -d --net=host -p 53:8600/tcp -p 53:8600/udp consul agent -bind=<bridge ip>
+$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' consul agent -dns-port=53 -bind=<bridge ip>
 ```
 
 Now start another container and point it at Consul's DNS, using the bridge address of the host:
