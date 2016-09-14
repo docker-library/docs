@@ -156,7 +156,9 @@ Once the cluster is bootstrapped and quorum is achieved, you must use care to ke
 
 ## Exposing Consul's DNS Server on Port 53
 
-By default, Consul's DNS server is exposed on port 8600. Because this is cumbersome to configure with facilities like `resolv.conf`, you may want to expose DNS on port 53. Consul 0.7 and later supports this by setting an environment variable that runs `setcap` on the Consul binary, allowing it to bind to privileged ports. Here's an example:
+By default, Consul's DNS server is exposed on port 8600. Because this is cumbersome to configure with facilities like `resolv.conf`, you may want to expose DNS on port 53. Consul 0.7 and later supports this by setting an environment variable that runs `setcap` on the Consul binary, allowing it to bind to privileged ports. Note that not all Docker storage backends support this feature (notably AUFS).
+
+Here's an example:
 
 ```console
 $ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' consul -dns-port=53
