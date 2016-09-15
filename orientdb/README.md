@@ -2,7 +2,7 @@
 
 -	[`2.0.18` (*2.0/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/a43637b03a105ceb1104cbf5e42e93e1ffed0944/2.0/Dockerfile)
 -	[`2.1.23` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/37b0a2405c4f6d011a5e8fa4f1e42c9b77f45f28/2.1/Dockerfile)
--	[`2.2.9`, `latest` (*2.2/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/37b0a2405c4f6d011a5e8fa4f1e42c9b77f45f28/2.2/Dockerfile)
+-	[`2.2.10`, `latest` (*2.2/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/9901cc4ee6fc6c09ba9446e9fd579a0eabc6b337/2.2/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/orientdb`)](https://github.com/docker-library/official-images/blob/master/library/orientdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Forientdb).
 
