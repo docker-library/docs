@@ -1,6 +1,5 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.0`, `5.2` (*5.2/Dockerfile*)](https://github.com/docker-library/gcc/blob/df055b1ba29bd666470f4735f2a7bab9acffd0b3/5.2/Dockerfile)
 -	[`5.3.0`, `5.3`, `5` (*5.3/Dockerfile*)](https://github.com/docker-library/gcc/blob/df055b1ba29bd666470f4735f2a7bab9acffd0b3/5.3/Dockerfile)
 -	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/d9c8446748f7d69626f2e9425376a6672fff09af/6.1/Dockerfile)
 

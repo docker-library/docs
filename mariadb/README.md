@@ -2,7 +2,7 @@
 
 -	[`10.1.17`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/7556dd6530170f6e41126423fd292dae159c272a/10.1/Dockerfile)
 -	[`10.0.27`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/9d7717c9d7e98619a3b7e7d4337e64b0de7d2f5b/10.0/Dockerfile)
--	[`5.5.51`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/0bcd1e2db0ef04f4abac85e2a759b04231ba60a0/5.5/Dockerfile)
+-	[`5.5.52`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/a0c4133675061dde79d08e13f20e365570acd866/5.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmariadb).
 
