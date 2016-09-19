@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20160819`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/aec74cf404240664b289d28948d9284a4afd1181/precise/Dockerfile)
--	[`14.04.5`, `14.04`, `trusty-20160819`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/aec74cf404240664b289d28948d9284a4afd1181/trusty/Dockerfile)
--	[`16.04`, `xenial-20160818`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/aec74cf404240664b289d28948d9284a4afd1181/xenial/Dockerfile)
--	[`16.10`, `yakkety-20160826`, `yakkety`, `devel` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/aec74cf404240664b289d28948d9284a4afd1181/yakkety/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise-20160819`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/29349edf0456a8644d5d7a2965bc8e9cfab5302b/precise/Dockerfile)
+-	[`14.04.5`, `14.04`, `trusty-20160914`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/29349edf0456a8644d5d7a2965bc8e9cfab5302b/trusty/Dockerfile)
+-	[`16.04`, `xenial-20160914`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/29349edf0456a8644d5d7a2965bc8e9cfab5302b/xenial/Dockerfile)
+-	[`16.10`, `yakkety-20160919`, `yakkety`, `devel` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/29349edf0456a8644d5d7a2965bc8e9cfab5302b/yakkety/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fubuntu).
 
