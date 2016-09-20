@@ -4,7 +4,10 @@ This repository contains the docs for each of the Docker official images. See [d
 
 All Markdown files here are run through [tianon's fork of `markdownfmt`](https://github.com/tianon/markdownfmt) (only forked to add some smaller-diff preference and minor DockerHub-compatibility changes), and verified as formatted correctly via Travis-CI.
 
-[![Build Status](https://travis-ci.org/docker-library/docs.svg?branch=master)](https://travis-ci.org/docker-library/docs)
+-	[Travis CI:  
+	![build status badge](https://travis-ci.org/docker-library/docs.svg?branch=master)](https://travis-ci.org/docker-library/docs)
+-	[Automated `update.sh` and `push.sh`:  
+	![build status badge](https://doi-janky.infosiftr.net/job/docs/job/update/badge/icon)](https://doi-janky.infosiftr.net/job/docs/job/update/)
 
 # How do I add a new image's docs
 
