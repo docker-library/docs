@@ -2,8 +2,8 @@
 
 -	[`7.50-apache`, `7-apache`, `7.50`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/61f25e58353d7ca9b2e07a46ff152892b2f7d9cf/7/apache/Dockerfile)
 -	[`7.50-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/61f25e58353d7ca9b2e07a46ff152892b2f7d9cf/7/fpm/Dockerfile)
--	[`8.1.9-apache`, `8.1-apache`, `8-apache`, `apache`, `8.1.9`, `8.1`, `8`, `latest` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/9a95a290b9b9bbe6f4669ad85e712312f0ebd84b/8.1/apache/Dockerfile)
--	[`8.1.9-fpm`, `8.1-fpm`, `8-fpm`, `fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/9a95a290b9b9bbe6f4669ad85e712312f0ebd84b/8.1/fpm/Dockerfile)
+-	[`8.1.10-apache`, `8.1-apache`, `8-apache`, `apache`, `8.1.10`, `8.1`, `8`, `latest` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/35aada37a9179e8e9e70d29bbbb894ade2cad36a/8.1/apache/Dockerfile)
+-	[`8.1.10-fpm`, `8.1-fpm`, `8-fpm`, `fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/35aada37a9179e8e9e70d29bbbb894ade2cad36a/8.1/fpm/Dockerfile)
 -	[`8.2.0-rc1-apache`, `8.2.0-apache`, `8.2-apache`, `8.2.0-rc1`, `8.2.0`, `8.2` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/9a95a290b9b9bbe6f4669ad85e712312f0ebd84b/8.2/apache/Dockerfile)
 -	[`8.2.0-rc1-fpm`, `8.2.0-fpm`, `8.2-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/9a95a290b9b9bbe6f4669ad85e712312f0ebd84b/8.2/fpm/Dockerfile)
 

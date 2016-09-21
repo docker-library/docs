@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.7.14`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/c44a378d50a1d58f58c202c9a0f59f434fdd72b0/5.7/Dockerfile)
--	[`5.6.32`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/10541a9b50359dfe9c8ea59165adecf3a97b8760/5.6/Dockerfile)
--	[`5.5.51`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/10541a9b50359dfe9c8ea59165adecf3a97b8760/5.5/Dockerfile)
+-	[`5.7.14`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/8f69178d3e8ee9b85eeb92f2b404236ffe1f6a0c/5.7/Dockerfile)
+-	[`5.6.32`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/f8979af93c4ba4d9646cad026909d5f2691fceec/5.6/Dockerfile)
+-	[`5.5.51`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/5bf6984507572e1c26ff9466940797c3e40973ba/5.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpercona).
 
