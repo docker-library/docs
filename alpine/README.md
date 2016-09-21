@@ -1,15 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/15b474abe9efb3140468010c8c264e8ad20757f6/versions/library-3.1/Dockerfile)
--	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/8d8e867fa7a829d898224a60041412060236a104/versions/library-3.2/Dockerfile)
--	[`3.3`, `latest` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/d59b1d8ffd48d19c574bdd88c25b031bc83dfaad/versions/library-3.3/Dockerfile)
--	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/f523d0089492f0ef38b96fc9a4062b1882748819/versions/library-edge/Dockerfile)
-
-[![](https://badge.imagelayers.io/alpine:latest.svg)](https://imagelayers.io/?images=alpine:3.1,alpine:3.2,alpine:3.3,alpine:edge)
+-	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/dec6a79c8d2b1070cf8d5a2bcc20641df2e55323/versions/library-3.1/Dockerfile)
+-	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/19f37b3de39bb35452bc89fa5a0e7b22e3f96abd/versions/library-3.2/Dockerfile)
+-	[`3.3` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/57b6addd430c541a2e758e1017460bad0576dc22/versions/library-3.3/Dockerfile)
+-	[`3.4`, `latest` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/033d79ce31bc445084bdcd49d7fc2ac59482f441/versions/library-3.4/Dockerfile)
+-	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/a1a7dd561e474aea636741c694645fc95ded6008/versions/library-edge/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/alpine`)](https://github.com/docker-library/official-images/blob/master/library/alpine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Falpine).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `alpine/tag-details.md` file](https://github.com/docker-library/docs/blob/master/alpine/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/alpine/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/alpine/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Alpine Linux?
 
@@ -24,8 +23,8 @@ For detailed information about the virtual/transfer sizes and individual layers 
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.1
-RUN apk add --update mysql-client && rm -rf /var/cache/apk/*
+FROM alpine:3.3
+RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
 
@@ -47,7 +46,7 @@ This image is well documented. [Check out the documentation at Viewdocs](http://
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,12 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.30.43`, `0.30`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/3290958fd1ff8218baad0ed85cf3e66123baab84/Dockerfile)
-
-[![](https://badge.imagelayers.io/mongo-express:latest.svg)](https://imagelayers.io/?images=mongo-express:0.30.43)
+-	[`0.31.0`, `0.31`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/8307e91473be1b6849e89acc4d347eec0116293a/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo-express`)](https://github.com/docker-library/official-images/blob/master/library/mongo-express). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mongo-express/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mongo-express/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mongo-express/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mongo-express/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is mongo-express?
 
@@ -62,20 +60,22 @@ The following are only needed if `ME_CONFIG_MONGODB_ENABLE_ADMIN` is **"false"**
 
 ## Example
 
-	docker run -it --rm \
-	    --name mongo-express \
-	    --link web_db_1:mongo \
-	    -p 8081:8081 \
-	    -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
-	    -e ME_CONFIG_BASICAUTH_USERNAME="user" \
-	    -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
-	    knickers/mongo-express
+```console
+$ docker run -it --rm \
+    --name mongo-express \
+    --link web_db_1:mongo \
+    -p 8081:8081 \
+    -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
+    -e ME_CONFIG_BASICAUTH_USERNAME="user" \
+    -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
+    mongo-express
+```
 
 This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

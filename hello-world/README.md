@@ -1,19 +1,17 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*Dockerfile*)](https://github.com/docker-library/hello-world/blob/22ecfe456f254d5babe6e413bed2de77cfaba047/Dockerfile)
-
-[![](https://badge.imagelayers.io/hello-world:latest.svg)](https://imagelayers.io/?images=hello-world:latest)
+-	[`latest` (*hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/85fd7ab65e079b08019032479a3f306964a28f4d/hello-world/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/hello-world`)](https://github.com/docker-library/official-images/blob/master/library/hello-world). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhello-world).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `hello-world/tag-details.md` file](https://github.com/docker-library/docs/blob/master/hello-world/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/hello-world/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/hello-world/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Example output
 
 ```console
 $ docker run hello-world
 
-Hello from Docker.
+Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
 To generate this message, Docker took the following steps:
@@ -31,12 +29,12 @@ Share images, automate workflows, and more with a free Docker Hub account:
  https://hub.docker.com
 
 For more examples and ideas, visit:
- https://docs.docker.com/userguide/
+ https://docs.docker.com/engine/userguide/
 
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  690ed74de00f  960 B
+hello-world  latest  c54a2cc56cbb  1.848 kB
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)
@@ -47,7 +45,7 @@ This image is a prime example of using the [`scratch`](https://registry.hub.dock
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

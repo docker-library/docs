@@ -1,17 +1,17 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `9`, `9.0`, `9.0-jre`, `9.0.5`, `9.0.5-jre`, `9.0.5.0`, `9.0.5.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/2448a2d7288d8dd3aa455b6c90c29fc414c5c418/9000/jre/Dockerfile)
--	[`9.0-jdk`, `9.0.5-jdk`, `9.0.5.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/2448a2d7288d8dd3aa455b6c90c29fc414c5c418/9000/jdk/Dockerfile)
--	[`9-onbuild`, `9.0-onbuild`, `9.0.5-onbuild`, `9.0.5.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/2448a2d7288d8dd3aa455b6c90c29fc414c5c418/9000/onbuild/Dockerfile)
--	[`1.7`, `1.7.24`, `1.7-jre`, `1.7.24-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/2448a2d7288d8dd3aa455b6c90c29fc414c5c418/1.7/jre/Dockerfile)
--	[`1.7-jdk`, `1.7.24-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/2448a2d7288d8dd3aa455b6c90c29fc414c5c418/1.7/jdk/Dockerfile)
--	[`1.7-onbuild`, `1.7.24-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/2448a2d7288d8dd3aa455b6c90c29fc414c5c418/1.7/onbuild/Dockerfile)
-
-[![](https://badge.imagelayers.io/jruby:latest.svg)](https://imagelayers.io/?images=jruby:latest,jruby:9.0-jdk,jruby:9-onbuild,jruby:1.7,jruby:1.7-jdk,jruby:1.7-onbuild)
+-	[`latest`, `9`, `9.1`, `9.1-jre`, `9.1.5`, `9.1.5-jre`, `9.1.5.0`, `9.1.5.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/d6339011a5cba59f036874de9ca68f7763b192ff/9000/jre/Dockerfile)
+-	[`9-alpine`, `9.1-alpine`, `9.1-jre-alpine`, `9.1.5-alpine`, `9.1.5-jre-alpine`, `9.1.5.0-alpine`, `9.1.5.0-jre-alpine` (*9000/alpine-jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/d6339011a5cba59f036874de9ca68f7763b192ff/9000/alpine-jre/Dockerfile)
+-	[`9.1-jdk`, `9.1.5-jdk`, `9.1.5.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/d6339011a5cba59f036874de9ca68f7763b192ff/9000/jdk/Dockerfile)
+-	[`9.1-jdk-alpine`, `9.1.5-jdk-alpine`, `9.1.5.0-jdk-alpine` (*9000/alpine-jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/d6339011a5cba59f036874de9ca68f7763b192ff/9000/alpine-jdk/Dockerfile)
+-	[`9-onbuild`, `9.1-onbuild`, `9.1.5-onbuild`, `9.1.5.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/d6339011a5cba59f036874de9ca68f7763b192ff/9000/onbuild/Dockerfile)
+-	[`1.7`, `1.7.25`, `1.7-jre`, `1.7.25-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/ad0479fa0d278f5eb311e01417c079a97305eeb3/1.7/jre/Dockerfile)
+-	[`1.7-jdk`, `1.7.25-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/ad0479fa0d278f5eb311e01417c079a97305eeb3/1.7/jdk/Dockerfile)
+-	[`1.7-onbuild`, `1.7.25-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/ad0479fa0d278f5eb311e01417c079a97305eeb3/1.7/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjruby).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jruby/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jruby/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/jruby/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/jruby/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is JRuby?
 
@@ -67,7 +67,7 @@ View [license information](https://github.com/jruby/jruby/blob/master/COPYING) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

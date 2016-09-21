@@ -1,1 +1,1 @@
-Crate is a shared nothing, fully searchable, SQL database with the NoSQL goodies.
+Crate is an open source, highly scalable, shared-nothing distributed SQL database.

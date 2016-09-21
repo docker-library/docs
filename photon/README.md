@@ -1,17 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0RC`, `latest` (*1.0RC/Dockerfile*)](https://github.com/frapposelli/photon-docker-image/blob/ef1d8be98877d927b6058c09364834692b7aa0fc/1.0RC/Dockerfile)
--	[`1.0TP2` (*1.0TP2/Dockerfile*)](https://github.com/frapposelli/photon-docker-image/blob/ef1d8be98877d927b6058c09364834692b7aa0fc/1.0TP2/Dockerfile)
-
-[![](https://badge.imagelayers.io/photon:latest.svg)](https://imagelayers.io/?images=photon:1.0RC,photon:1.0TP2)
+-	[`1.0`, `latest` (*1.0/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/39c3c62cd649b1d64178b24cd23d9196461dc818/1.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/photon`)](https://github.com/docker-library/official-images/blob/master/library/photon). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphoton).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `photon/tag-details.md` file](https://github.com/docker-library/docs/blob/master/photon/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/photon/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/photon/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # VMware Photon OS
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/201d521fc5f94009950a919679a1cb33d3ffcefe/photon/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/de9a58372c9e1e58ccb08186ab6ebed278b86521/photon/logo.png)
 
 Photon OS is a technology preview of a minimal Linux container host. It is designed to have a small footprint and boot extremely quickly on VMware platforms. Photon OS is intended to invite collaboration around running containerized applications in a virtualized environment.
 
@@ -39,7 +36,7 @@ View [license information](https://github.com/vmware/photon/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -53,7 +50,7 @@ Documentation for this image is stored in the [`photon/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/frapposelli/photon-docker-image/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/vmware/photon-docker-image/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -61,4 +58,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/frapposelli/photon-docker-image/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/vmware/photon-docker-image/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

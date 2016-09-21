@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.4`, `1.2`, `latest` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8a1bf2bebcf4488408fc5e9f51c6ef09e0abbee6/1.2/Dockerfile)
--	[`1.2.3` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/08b645312bcbf020214e36679eec248234485b3a/1.2/Dockerfile)
-
-[![](https://badge.imagelayers.io/elixir:latest.svg)](https://imagelayers.io/?images=elixir:1.2.4,elixir:1.2.3)
+-	[`1.3.2`, `1.3`, `latest` (*1.3/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/ec6d6952600bbe05ccd7c19c22a82fc70316733b/1.3/Dockerfile)
+-	[`1.3.2-slim`, `1.3-slim`, `slim` (*1.3/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/ec6d6952600bbe05ccd7c19c22a82fc70316733b/1.3/slim/Dockerfile)
+-	[`1.2.6`, `1.2` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/Dockerfile)
+-	[`1.2.6-slim`, `1.2-slim` (*1.2/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/slim/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elixir`)](https://github.com/docker-library/official-images/blob/master/library/elixir). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felixir).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `elixir/tag-details.md` file](https://github.com/docker-library/docs/blob/master/elixir/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/elixir/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/elixir/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Elixir?
 
@@ -48,6 +48,18 @@ iex(snode@elixir)2> :c.uptime
 $ docker run -it --rm --name elixir-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp elixir elixir your-escript.exs
 ```
 
+# Image Variants
+
+The `elixir` images come in many flavors, each designed for a specific use case.
+
+## `elixir:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `elixir:slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `elixir`. Unless you are working in an environment where *only* the elixir image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
 # License
 
 Copyright 2012 Plataformatec
@@ -60,7 +72,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

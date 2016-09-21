@@ -1,0 +1,33 @@
+{{- /*
+
+This template defines the "Supported tags and Dockerfile links" portion of an image description.
+
+*/ -}}
+
+{{- define "dockerfilePath" -}}
+	{{- if ne .Directory "." -}}
+		{{- .Directory -}}
+		/
+	{{- end -}}
+	Dockerfile
+{{- end -}}
+
+{{- range $i, $e := $.Entries -}}
+	{{- /* force bashbrew to "fetch" the GitCommit so that it is fully resolved */ -}}
+	{{- $from := $.DockerFrom $e -}}
+
+	{{- $repoUrlBase := $e.GitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
+	{{- $isGitHub := hasPrefix "https://github.com/" $repoUrlBase -}}
+
+	{{- if $i -}}
+		{{- "\n" -}}
+	{{- end -}}
+
+	- {{- "\t" -}}
+	{{- if $isGitHub -}} [ {{- end -}}
+	` {{- $e.Tags | join "`, `" -}} ` (* {{- template "dockerfilePath" $e -}} *)
+	{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $e.GitCommit -}} / {{- template "dockerfilePath" $e -}} ) {{- end -}}
+	{{- /* TODO decide what to do (if anything) about non-GitHub repos with respect to URL */ -}}
+{{- end -}}
+
+{{- "\n\n" -}}

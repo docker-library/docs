@@ -19,7 +19,7 @@ $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postg
 This image includes `EXPOSE 5432` (the postgres port), so standard container linking will make it automatically available to the linked containers. The default `postgres` user and database are created in the entrypoint with `initdb`.
 
 > The postgres database is a default database meant for use by users, utilities and third party applications.  
-> [postgresql.org/docs](http://www.postgresql.org/docs/9.3/interactive/app-initdb.html)
+> [postgresql.org/docs](http://www.postgresql.org/docs/9.5/interactive/app-initdb.html)
 
 ## connect to it from an application
 
@@ -30,7 +30,16 @@ $ docker run --name some-app --link some-postgres:postgres -d application-that-u
 ## ... or via `psql`
 
 ```console
-$ docker run -it --link some-postgres:postgres --rm postgres sh -c 'exec psql -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" -U postgres'
+$ docker run -it --rm --link some-postgres:postgres postgres psql -h postgres -U postgres
+psql (9.5.0)
+Type "help" for help.
+
+postgres=# SELECT 1;
+ ?column? 
+----------
+        1
+(1 row)
+
 ```
 
 ## Environment Variables

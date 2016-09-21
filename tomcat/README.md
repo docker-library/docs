@@ -1,19 +1,23 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.45-jre7`, `6.0-jre7`, `6-jre7`, `6.0.45`, `6.0`, `6` (*6/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/6/jre7/Dockerfile)
--	[`6.0.45-jre8`, `6.0-jre8`, `6-jre8` (*6/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/6/jre8/Dockerfile)
--	[`7.0.68-jre7`, `7.0-jre7`, `7-jre7`, `7.0.68`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/7/jre7/Dockerfile)
--	[`7.0.68-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/7/jre8/Dockerfile)
--	[`8.0.33-jre7`, `8.0-jre7`, `8-jre7`, `8.0.33`, `8.0`, `8`, `latest` (*8.0/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/8.0/jre7/Dockerfile)
--	[`8.0.33-jre8`, `8.0-jre8`, `8-jre8` (*8.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/8.0/jre8/Dockerfile)
--	[`8.5.0-jre8`, `8.5-jre8`, `8.5.0`, `8.5` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/82551c9d60c48d35a68b8eb2cc069913be9078ae/8.5/jre8/Dockerfile)
--	[`9.0.0.M4-jre8`, `9.0.0-jre8`, `9.0-jre8`, `9-jre8`, `9.0.0.M4`, `9.0.0`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/92b97a945a2241f868a91d2919e0e7e3f5c84216/9.0/jre8/Dockerfile)
-
-[![](https://badge.imagelayers.io/tomcat:latest.svg)](https://imagelayers.io/?images=tomcat:6.0.45-jre7,tomcat:6.0.45-jre8,tomcat:7.0.68-jre7,tomcat:7.0.68-jre8,tomcat:8.0.33-jre7,tomcat:8.0.33-jre8,tomcat:8.5.0-jre8,tomcat:9.0.0.M4-jre8)
+-	[`6.0.45-jre7`, `6.0-jre7`, `6-jre7`, `6.0.45`, `6.0`, `6` (*6/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/989f50ed5db788921a4954109b90362e2209295e/6/jre7/Dockerfile)
+-	[`6.0.45-jre8`, `6.0-jre8`, `6-jre8` (*6/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/989f50ed5db788921a4954109b90362e2209295e/6/jre8/Dockerfile)
+-	[`7.0.72-jre7`, `7.0-jre7`, `7-jre7`, `7.0.72`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b2bcdfb78e2fdc63423dfc210066b381f6f73a14/7/jre7/Dockerfile)
+-	[`7.0.72-jre7-alpine`, `7.0-jre7-alpine`, `7-jre7-alpine`, `7.0.72-alpine`, `7.0-alpine`, `7-alpine` (*7/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b2bcdfb78e2fdc63423dfc210066b381f6f73a14/7/jre7-alpine/Dockerfile)
+-	[`7.0.72-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b2bcdfb78e2fdc63423dfc210066b381f6f73a14/7/jre8/Dockerfile)
+-	[`7.0.72-jre8-alpine`, `7.0-jre8-alpine`, `7-jre8-alpine` (*7/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b2bcdfb78e2fdc63423dfc210066b381f6f73a14/7/jre8-alpine/Dockerfile)
+-	[`8.0.37-jre7`, `8.0-jre7`, `8-jre7`, `jre7`, `8.0.37`, `8.0`, `8`, `latest` (*8.0/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.0/jre7/Dockerfile)
+-	[`8.0.37-jre7-alpine`, `8.0-jre7-alpine`, `8-jre7-alpine`, `jre7-alpine`, `8.0.37-alpine`, `8.0-alpine`, `8-alpine`, `alpine` (*8.0/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.0/jre7-alpine/Dockerfile)
+-	[`8.0.37-jre8`, `8.0-jre8`, `8-jre8`, `jre8` (*8.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.0/jre8/Dockerfile)
+-	[`8.0.37-jre8-alpine`, `8.0-jre8-alpine`, `8-jre8-alpine`, `jre8-alpine` (*8.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.0/jre8-alpine/Dockerfile)
+-	[`8.5.5-jre8`, `8.5-jre8`, `8.5.5`, `8.5` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.5/jre8/Dockerfile)
+-	[`8.5.5-jre8-alpine`, `8.5-jre8-alpine`, `8.5.5-alpine`, `8.5-alpine` (*8.5/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.5/jre8-alpine/Dockerfile)
+-	[`9.0.0.M10-jre8`, `9.0.0-jre8`, `9.0-jre8`, `9-jre8`, `9.0.0.M10`, `9.0.0`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/9.0/jre8/Dockerfile)
+-	[`9.0.0.M10-jre8-alpine`, `9.0.0-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine`, `9.0.0.M10-alpine`, `9.0.0-alpine`, `9.0-alpine`, `9-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/9.0/jre8-alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomcat).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `tomcat/tag-details.md` file](https://github.com/docker-library/docs/blob/master/tomcat/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/tomcat/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/tomcat/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Tomcat?
 
@@ -57,13 +61,29 @@ The default Tomcat environment in the image for version 6 is:
 
 The configuration files are available in `/usr/local/tomcat/conf/`. By default, no user is included in the "manager-gui" role required to operate the "/manager/html" web application. If you wish to use this app, you must define such a user in `tomcat-users.xml`.
 
+# Image Variants
+
+The `tomcat` images come in many flavors, each designed for a specific use case.
+
+## `tomcat:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `tomcat:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # License
 
 View [license information](https://www.apache.org/licenses/LICENSE-2.0) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

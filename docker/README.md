@@ -1,34 +1,40 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.11.0-rc5`, `1.11-rc`, `rc` (*1.11-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/2816eb6a25ff80eb68f773379162964742047608/1.11-rc/Dockerfile)
--	[`1.11.0-rc5-dind`, `1.11-rc-dind`, `rc-dind` (*1.11-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/83b2eab8bdb5d35bf343313154ab55938fca3807/1.11-rc/dind/Dockerfile)
--	[`1.11.0-rc5-git`, `1.11-rc-git`, `rc-git` (*1.11-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/b4404c1aadf1a09b5216b27fb35499bdcfd4d77a/1.11-rc/git/Dockerfile)
--	[`1.10.3`, `1.10`, `1`, `latest` (*1.10/Dockerfile*)](https://github.com/docker-library/docker/blob/744110cf7268354ae30928e76f392c7864d1afea/1.10/Dockerfile)
--	[`1.10.3-dind`, `1.10-dind`, `1-dind`, `dind` (*1.10/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/83b2eab8bdb5d35bf343313154ab55938fca3807/1.10/dind/Dockerfile)
--	[`1.10.3-git`, `1.10-git`, `1-git`, `git` (*1.10/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/git/Dockerfile)
--	[`1.9.1`, `1.9` (*1.9/Dockerfile*)](https://github.com/docker-library/docker/blob/7a61b09b70b0aba202019c6325821437981126f4/1.9/Dockerfile)
--	[`1.9.1-dind`, `1.9-dind` (*1.9/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/83b2eab8bdb5d35bf343313154ab55938fca3807/1.9/dind/Dockerfile)
--	[`1.9.1-git`, `1.9-git` (*1.9/git/Dockerfile*)](https://github.com/docker-library/docker/blob/7a61b09b70b0aba202019c6325821437981126f4/1.9/git/Dockerfile)
-
-[![](https://badge.imagelayers.io/docker:latest.svg)](https://imagelayers.io/?images=docker:1.11.0-rc5,docker:1.11.0-rc5-dind,docker:1.11.0-rc5-git,docker:1.10.3,docker:1.10.3-dind,docker:1.10.3-git,docker:1.9.1,docker:1.9.1-dind,docker:1.9.1-git)
+-	[`1.12.1`, `1.12`, `1`, `latest` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/e65e856a4226445f865ec51ea4b6d3bc8353386b/1.12/Dockerfile)
+-	[`1.12.1-dind`, `1.12-dind`, `1-dind`, `dind` (*1.12/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/dind/Dockerfile)
+-	[`1.12.1-git`, `1.12-git`, `1-git`, `git` (*1.12/git/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/git/Dockerfile)
+-	[`1.12.1-experimental`, `1.12-experimental`, `1-experimental`, `experimental` (*1.12/experimental/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/Dockerfile)
+-	[`1.12.1-experimental-dind`, `1.12-experimental-dind`, `1-experimental-dind`, `experimental-dind` (*1.12/experimental/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/dind/Dockerfile)
+-	[`1.12.1-experimental-git`, `1.12-experimental-git`, `1-experimental-git`, `experimental-git` (*1.12/experimental/git/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/git/Dockerfile)
+-	[`1.11.2`, `1.11` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/b83d8a3f9b77c2592f383cd58625e000af4f2dde/1.11/Dockerfile)
+-	[`1.11.2-dind`, `1.11-dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/1c8b144ed9ec49ac8cc7ca75f8628fd8de6c82b5/1.11/dind/Dockerfile)
+-	[`1.11.2-git`, `1.11-git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `docker/tag-details.md` file](https://github.com/docker-library/docs/blob/master/docker/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/docker/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/docker/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-# What is Docker?
+# What is Docker in Docker?
 
-Docker is an open-source project that automates the deployment of applications inside software containers, by providing an additional layer of abstraction and automation of operating-system-level virtualization on Linux, Mac OS and Windows.
+Although running Docker inside Docker is generally not recommended, there are some legitimate use cases, such as development of Docker itself.
+
+*Docker is an open-source project that automates the deployment of applications inside software containers, by providing an additional layer of abstraction and automation of operating-system-level virtualization on Linux, Mac OS and Windows.*
 
 > [wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_%28software%29)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/c350af05d3fac7b5c3f6327ac82fe4d990d8729c/docker/logo.png)
 
+Before running Docker-in-Docker, be sure to read through [Jérôme Petazzoni's excellent blog post on the subject](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/), where he outlines some of the pros and cons of doing so (and some nasty gotchas you might run into).
+
+If you are still convinced that you need Docker-in-Docker and not just access to a container's host Docker server, then read on.
+
 # How to use this image
 
 [![asciicast](https://asciinema.org/a/24707.png)](https://asciinema.org/a/24707)
 
-## start a daemon instance
+## Start a daemon instance
+
+**IMPORTANT:** this image defaults to `--storage-driver=vfs`, which will be very slow and inefficient (but is the only driver which is guaranteed to work regardless of your underlying filesystem). Which driver you should use varies depending on your needs, but a good rule of thumb is that your DinD instance should be using the same driver as your host (which can be seen under `Storage Driver` in the output of `docker info`). See the "Custom daemon flags" section below for how to specify your storage driver.
 
 ```console
 $ docker run --privileged --name some-docker -d docker:1.8-dind
@@ -38,9 +44,7 @@ $ docker run --privileged --name some-docker -d docker:1.8-dind
 
 This image includes `EXPOSE 2375` (the Docker port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
 
-Before running Docker-in-Docker, be sure to read through [Jérôme Petazzoni's excellent blog post on the subject](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/), where he outlines some of the pros and cons of doing so (and some nasty gotchas you might run into).
-
-## connect to it from a second container
+## Connect to it from a second container
 
 ```console
 $ docker run --rm --link some-docker:docker docker:1.7 version
@@ -127,10 +131,10 @@ Server:
  OS/Arch:      linux/amd64
 ```
 
-## custom daemon flags
+## Custom daemon flags
 
 ```console
-$ docker run --privileged --name some-devicemapper-docker -d docker:dind --storage-driver=devicemapper
+$ docker run --privileged --name some-overlay-docker -d docker:dind --storage-driver=overlay
 ```
 
 ## Where to Store Data
@@ -157,7 +161,7 @@ View [license information](https://github.com/docker/docker/blob/eb7b2ed6bbe3fbe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

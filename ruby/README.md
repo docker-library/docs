@@ -1,23 +1,21 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.9`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.1/Dockerfile)
--	[`2.1.9-onbuild`, `2.1-onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.1/onbuild/Dockerfile)
--	[`2.1.9-slim`, `2.1-slim` (*2.1/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.1/slim/Dockerfile)
--	[`2.1.9-alpine`, `2.1-alpine` (*2.1/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.1/alpine/Dockerfile)
--	[`2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/ruby/blob/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.2/Dockerfile)
--	[`2.2.4-onbuild`, `2.2-onbuild` (*2.2/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.2/onbuild/Dockerfile)
--	[`2.2.4-slim`, `2.2-slim` (*2.2/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.2/slim/Dockerfile)
--	[`2.2.4-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.2/alpine/Dockerfile)
--	[`2.3.0`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/ruby/blob/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.3/Dockerfile)
--	[`2.3.0-onbuild`, `2.3-onbuild`, `2-onbuild`, `onbuild` (*2.3/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/1b08f346713a1293c2a9238e470e086126e2e28f/2.3/onbuild/Dockerfile)
--	[`2.3.0-slim`, `2.3-slim`, `2-slim`, `slim` (*2.3/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.3/slim/Dockerfile)
--	[`2.3.0-alpine`, `2.3-alpine`, `2-alpine`, `alpine` (*2.3/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/1f19e5d966aadfaac7ce4a9d4db8f982db2fe690/2.3/alpine/Dockerfile)
-
-[![](https://badge.imagelayers.io/ruby:latest.svg)](https://imagelayers.io/?images=ruby:2.1.9,ruby:2.1.9-onbuild,ruby:2.1.9-slim,ruby:2.1.9-alpine,ruby:2.2.4,ruby:2.2.4-onbuild,ruby:2.2.4-slim,ruby:2.2.4-alpine,ruby:2.3.0,ruby:2.3.0-onbuild,ruby:2.3.0-slim,ruby:2.3.0-alpine)
+-	[`2.1.10`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/82016a6f0a94260e3771835455f577d1117da527/2.1/Dockerfile)
+-	[`2.1.10-slim`, `2.1-slim` (*2.1/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/82016a6f0a94260e3771835455f577d1117da527/2.1/slim/Dockerfile)
+-	[`2.1.10-alpine`, `2.1-alpine` (*2.1/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/82016a6f0a94260e3771835455f577d1117da527/2.1/alpine/Dockerfile)
+-	[`2.1.10-onbuild`, `2.1-onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.1/onbuild/Dockerfile)
+-	[`2.2.5`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/ruby/blob/b0c1198e8917675c3d3b895967018418f77d1cdd/2.2/Dockerfile)
+-	[`2.2.5-slim`, `2.2-slim` (*2.2/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/b0c1198e8917675c3d3b895967018418f77d1cdd/2.2/slim/Dockerfile)
+-	[`2.2.5-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/b0c1198e8917675c3d3b895967018418f77d1cdd/2.2/alpine/Dockerfile)
+-	[`2.2.5-onbuild`, `2.2-onbuild` (*2.2/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.2/onbuild/Dockerfile)
+-	[`2.3.1`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/ruby/blob/39c4d80c42e0dffc14b2d6dce89daa28201b4d04/2.3/Dockerfile)
+-	[`2.3.1-slim`, `2.3-slim`, `2-slim`, `slim` (*2.3/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/39c4d80c42e0dffc14b2d6dce89daa28201b4d04/2.3/slim/Dockerfile)
+-	[`2.3.1-alpine`, `2.3-alpine`, `2-alpine`, `alpine` (*2.3/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/39c4d80c42e0dffc14b2d6dce89daa28201b4d04/2.3/alpine/Dockerfile)
+-	[`2.3.1-onbuild`, `2.3-onbuild`, `2-onbuild`, `onbuild` (*2.3/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/1b08f346713a1293c2a9238e470e086126e2e28f/2.3/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fruby).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ruby/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ruby/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/ruby/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/ruby/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Ruby?
 
@@ -64,6 +62,10 @@ For many simple, single file projects, you may find it inconvenient to write a c
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp ruby:2.1 ruby your-daemon-or-script.rb
 ```
 
+## Encoding
+
+By default, Ruby inherits the locale of the environment in which it is run. For most users running Ruby on their desktop systems, that means it's likely using some variation of `*.UTF-8` (`en_US.UTF-8`, etc). In Docker however, the default locale is `C`, which can have unexpected results. If your application needs to interact with UTF-8, it is recommended that you explicitly adjust the locale of your image/container via `-e LANG=C.UTF-8` or `ENV LANG C.UTF-8`.
+
 # Image Variants
 
 The `ruby` images come in many flavors, each designed for a specific use case.
@@ -71,6 +73,10 @@ The `ruby` images come in many flavors, each designed for a specific use case.
 ## `ruby:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `ruby:slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `ruby`. Unless you are working in an environment where *only* the ruby image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 ## `ruby:alpine`
 
@@ -88,17 +94,13 @@ While the `onbuild` variant is really useful for "getting off the ground running
 
 Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
 
-## `ruby:slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `ruby`. Unless you are working in an environment where *only* the ruby image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
 # License
 
 View [license information](https://www.ruby-lang.org/en/about/license.txt) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

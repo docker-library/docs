@@ -3,7 +3,7 @@
 ```console
 $ docker run hello-world
 
-Hello from Docker.
+Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
 To generate this message, Docker took the following steps:
@@ -21,12 +21,12 @@ Share images, automate workflows, and more with a free Docker Hub account:
  https://hub.docker.com
 
 For more examples and ideas, visit:
- https://docs.docker.com/userguide/
+ https://docs.docker.com/engine/userguide/
 
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  690ed74de00f  960 B
+hello-world  latest  c54a2cc56cbb  1.848 kB
 ```
 
 %%LOGO%%

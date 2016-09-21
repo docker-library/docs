@@ -1,12 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.16.0`, `2.16`, `2`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/ed86be5a1fedc8b6826240c653be2fb13114843b/Dockerfile)
-
-[![](https://badge.imagelayers.io/piwik:latest.svg)](https://imagelayers.io/?images=piwik:2.16.0)
+-	[`2.16.2`, `2.16`, `2`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/5e0bb9e49ae72291cf357c9ef1b4671c4ae25f9c/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/piwik`)](https://github.com/docker-library/official-images/blob/master/library/piwik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpiwik).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `piwik/tag-details.md` file](https://github.com/docker-library/docs/blob/master/piwik/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/piwik/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/piwik/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Piwik
 
@@ -63,7 +61,7 @@ View [license information](https://github.com/piwik/piwik/blob/master/LEGALNOTIC
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

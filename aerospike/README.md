@@ -1,12 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.5.1`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/86ce8288c9309d59c649d13cfe8ddf3b71adf12a/Dockerfile)
-
-[![](https://badge.imagelayers.io/aerospike:latest.svg)](https://imagelayers.io/?images=aerospike:3.7.5.1)
+-	[`3.9.1-1`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/176a3b8cc79eb883052a8fb1cf3802960b82e600/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/aerospike`)](https://github.com/docker-library/official-images/blob/master/library/aerospike). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Faerospike).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `aerospike/tag-details.md` file](https://github.com/docker-library/docs/blob/master/aerospike/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/aerospike/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/aerospike/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Aerospike
 
@@ -85,6 +83,10 @@ Mesh networking requires setting up links between each node in the cluster. This
 
 For more details and examples of clustering Aerospike in Docker, please see [Deploying Aerospike clusters with Docker](http://www.aerospike.com/docs/deploy_guides/docker/).
 
+## Sending Performance Data to Aerospike
+
+Aerospike Telemetry is a feature that allows us to collect certain use data – not the database data – on your Aerospike Community Edition server use. We'd like to know when clusters are created and destroyed, cluster size, cluster workload, how often queries are run, whether instances are deployed purely in-memory or with Flash. Aerospike Telemetry collects information from running Community Edition server instances every 10 minutes. The data helps us to understand how the product is being used, identify issues, and create a better experience for the end user. [More Info](http://www.aerospike.com/aerospike-telemetry/)
+
 # License
 
 Copyright 2014-2015 Aerospike, Inc.
@@ -95,7 +97,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.3.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
