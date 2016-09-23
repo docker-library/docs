@@ -5,8 +5,8 @@
 -	[`3.0.12-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/89549b2b779421c057b04858477012b7aa17f498/3.0/windows/windowsservercore/Dockerfile)
 -	[`3.2.9`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/4d7bd01562edefad38a240c40a4b162a1cd7b9c2/3.2/Dockerfile)
 -	[`3.2.9-windowsservercore`, `3.2-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/89549b2b779421c057b04858477012b7aa17f498/3.2/windows/windowsservercore/Dockerfile)
--	[`3.3.12`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/mongo/blob/174bd96682dc3613df9b670658ac81c9dd17ba74/3.3/Dockerfile)
--	[`3.3.12-windowsservercore`, `3.3-windowsservercore` (*3.3/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/174bd96682dc3613df9b670658ac81c9dd17ba74/3.3/windows/windowsservercore/Dockerfile)
+-	[`3.3.14`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/mongo/blob/abe4de7ed3e951c3c37cdab0891914aca3f99fef/3.3/Dockerfile)
+-	[`3.3.14-windowsservercore`, `3.3-windowsservercore` (*3.3/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/abe4de7ed3e951c3c37cdab0891914aca3f99fef/3.3/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo).
 
