@@ -1,12 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.0.1`, `reblochon`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/a390a09245fe8f47fc30f826b80e4a8723cc1587/Dockerfile)
-
-[![](https://badge.imagelayers.io/traefik:latest.svg)](https://imagelayers.io/?images=traefik:v1.0.1)
+-	[`v1.0.2`, `reblochon`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/d196677d04b5bc804dbc3c264ac5be664601d6a3/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/traefik`)](https://github.com/docker-library/official-images/blob/master/library/traefik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `traefik/tag-details.md` file](https://github.com/docker-library/docs/blob/master/traefik/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/traefik/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/traefik/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/a6cc2c5f4bc6658168f2a0abbb0307acaefff80e/traefik/logo.png)
 
@@ -80,7 +78,7 @@ View [license information](https://github.com/containous/traefik/blob/master/LIC
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

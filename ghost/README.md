@@ -1,12 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.8.0`, `0.8`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/e625fca128f8f6b41533e78a9c262701ce9027f5/Dockerfile)
-
-[![](https://badge.imagelayers.io/ghost:latest.svg)](https://imagelayers.io/?images=ghost:0.8.0)
+-	[`0.11.0`, `0.11`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/e9592030a951f9fd865cfabcc05252326e7192a7/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fghost).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ghost/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ghost/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/ghost/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/ghost/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Ghost
 
@@ -44,9 +42,18 @@ Alternatively you can use a [data container](http://docs.docker.com/userguide/do
 $ docker run --name some-ghost --volumes-from some-ghost-data ghost
 ```
 
+# What is the Node.js version?
+
+When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes necessary to know the version of Node.js in use:
+
+```console
+$ docker exec <container-id> node --version
+v4.4.7
+```
+
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

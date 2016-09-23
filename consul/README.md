@@ -1,12 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`v0.6.4`, `latest` (*0.6/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/9a59dc1a87adc164b72ac67bc9e4364a3fc4138d/0.6/Dockerfile)
-
-[![](https://badge.imagelayers.io/consul:latest.svg)](https://imagelayers.io/?images=consul:v0.6.4)
+-	[`latest`, `v0.7.0` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/470868df3885ad93f45a2c63c648bf119a544fa4/0.X/Dockerfile)
+-	[`v0.6.4` (*0.6/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/9a59dc1a87adc164b72ac67bc9e4364a3fc4138d/0.6/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/consul`)](https://github.com/docker-library/official-images/blob/master/library/consul). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconsul).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `consul/tag-details.md` file](https://github.com/docker-library/docs/blob/master/consul/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/consul/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/consul/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Consul
 
@@ -31,15 +30,15 @@ We don't cover Consul's multi-datacenter capability here, but as long as `--net=
 
 # Using the Container
 
-We chose Alpine as a lightweight base with a reasonably small surface area for security concerns, but with enough functionality for development, interactive debugging, and useful health, watch, and exec scripts running under Consul in the container.
+We chose Alpine as a lightweight base with a reasonably small surface area for security concerns, but with enough functionality for development, interactive debugging, and useful health, watch, and exec scripts running under Consul in the container. As of Consul 0.7, the image also includes `curl` since it is so commonly used for health checks.
 
 Consul always runs under [dumb-init](https://github.com/Yelp/dumb-init), which handles reaping zombie processes and forwards signals on to all processes running in the container. We also use [gosu](https://github.com/tianon/gosu) to run Consul as a non-root "consul" user for better security. These binaries are all built by HashiCorp and signed with our [GPG key](https://www.hashicorp.com/security.html), so you can verify the signed package used to build a given base image.
 
 Running the Consul container with no arguments will give you a Consul server in [development mode](https://www.consul.io/docs/agent/options.html#_dev). The provided entry point script will also look for Consul subcommands and run `consul` as the correct user and with that subcommand. For example, you can execute `docker run consul members` and it will run the `consul members` command inside the container. The entry point also adds some special configuration options as detailed in the sections below when running the `agent` subcommand. Any other command gets `exec`-ed inside the container under `dumb-init`.
 
-The container exposes `VOLUME /consul/data`, which is a path were Consul will place its persisted state. This isn't used in any way when running in development mode. For client agents, this stores some information about the cluster and the client's health checks in case the container is restarted. For server agents, this stores the client information plus snapshots and data related to the consensus algorithm and other state like Consul's key/value store and catalog. For servers it is highly desirable to keep this volume's data around when restarting containers to recover from outage scenarios.
+The container exposes `VOLUME /consul/data`, which is a path were Consul will place its persisted state. This isn't used in any way when running in development mode. For client agents, this stores some information about the cluster and the client's health checks in case the container is restarted. For server agents, this stores the client information plus snapshots and data related to the consensus algorithm and other state like Consul's key/value store and catalog. For servers it is highly desirable to keep this volume's data around when restarting containers to recover from outage scenarios. If this is bind mounted then ownership will be changed to the consul user when the container starts.
 
-The container has a Consul configuration directory set up at `/consul/config` and the agent will load any configuration files placed here by binding a volume or by composing a new image and adding files. Alternatively, configuration can be added by passing the configuration JSON via environment variable `CONSUL_LOCAL_CONFIG`.
+The container has a Consul configuration directory set up at `/consul/config` and the agent will load any configuration files placed here by binding a volume or by composing a new image and adding files. Alternatively, configuration can be added by passing the configuration JSON via environment variable `CONSUL_LOCAL_CONFIG`. If this is bind mounted then ownership will be changed to the consul user when the container starts.
 
 Since Consul is almost always run with `--net=host` in Docker, some care is required when configuring Consul's IP addresses. Consul has the concept of its cluster address as well as its client address. The cluster address is the address at which other Consul agents may contact a given agent. The client address is the address where other processes on the host contact Consul in order to make HTTP or DNS requests. You will typically need to tell Consul what its cluster address is when starting so that it binds to the correct interface and advertises a workable interface to the rest of the Consul agents. You'll see this in the examples below as the `-bind=<external ip>` argument to Consul.
 
@@ -166,10 +165,12 @@ Once the cluster is bootstrapped and quorum is achieved, you must use care to ke
 
 ## Exposing Consul's DNS Server on Port 53
 
-By default, Consul's DNS server is exposed on port 8600. Because this is cumbersome to configure with facilities like `resolv.conf`, you may want to expose DNS on port 53 using port arguments on your run command:
+By default, Consul's DNS server is exposed on port 8600. Because this is cumbersome to configure with facilities like `resolv.conf`, you may want to expose DNS on port 53. Consul 0.7 and later supports this by setting an environment variable that runs `setcap` on the Consul binary, allowing it to bind to privileged ports. Note that not all Docker storage backends support this feature (notably AUFS).
+
+Here's an example:
 
 ```console
-$ docker run -d --net=host -p 53:8600/tcp -p 53:8600/udp consul
+$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' consul -dns-port=53
 ```
 
 If you are binding Consul's client interfaces to the host's loopback address, then you should be able to configure your host's `resolv.conf` to route DNS requests to Consul by including "127.0.0.1" as the primary DNS server. This would expose Consul's DNS to all applications running on the host, but due to Docker's built-in DNS server, you can't point to this directly from inside your containers; Docker will issue an error message if you attempt to do this. You must configure Consul to listen on a non-localhost address that is reachable from within other containers.
@@ -177,7 +178,7 @@ If you are binding Consul's client interfaces to the host's loopback address, th
 Once you bind Consul's client interfaces to the bridge or other network, you can use the `--dns` option in your *other containers* in order for them to use Consul's DNS server, mapped to port 53. Here's an example:
 
 ```console
-$ docker run -d --net=host -p 53:8600/tcp -p 53:8600/udp consul agent -bind=<bridge ip>
+$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' consul agent -dns-port=53 -bind=<bridge ip>
 ```
 
 Now start another container and point it at Consul's DNS, using the bridge address of the host:
@@ -210,7 +211,7 @@ View [license information](https://raw.githubusercontent.com/hashicorp/consul/ma
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

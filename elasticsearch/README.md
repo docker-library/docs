@@ -1,19 +1,18 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.2`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/1.5/Dockerfile)
--	[`1.6.2`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/1.6/Dockerfile)
--	[`1.7.5`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/1.7/Dockerfile)
--	[`2.0.2`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/2.0/Dockerfile)
--	[`2.1.2`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/2.1/Dockerfile)
--	[`2.2.2`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/2.2/Dockerfile)
--	[`2.3.4`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1e62c7d84cc549883e3404d79356d3fadfdf6c3d/2.3/Dockerfile)
--	[`5.0.0-alpha4`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2bfa45254a681e4f667c96c5de13438209e2f0ec/5.0/Dockerfile)
-
-[![](https://badge.imagelayers.io/elasticsearch:latest.svg)](https://imagelayers.io/?images=elasticsearch:1.5.2,elasticsearch:1.6.2,elasticsearch:1.7.5,elasticsearch:2.0.2,elasticsearch:2.1.2,elasticsearch:2.2.2,elasticsearch:2.3.4,elasticsearch:5.0.0-alpha4)
+-	[`1.5.2`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/1.5/Dockerfile)
+-	[`1.6.2`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/1.6/Dockerfile)
+-	[`1.7.5`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/1.7/Dockerfile)
+-	[`2.0.2`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.0/Dockerfile)
+-	[`2.1.2`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.1/Dockerfile)
+-	[`2.2.2`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.2/Dockerfile)
+-	[`2.3.5`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/2.3/Dockerfile)
+-	[`2.4.0`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/7a502275158cac1affa4372eab937a21913cd3e0/2.4/Dockerfile)
+-	[`5.0.0-alpha5`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2536978b4ef8b58866e933f7e6918ba7161802ac/5.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `elasticsearch/tag-details.md` file](https://github.com/docker-library/docs/blob/master/elasticsearch/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/elasticsearch/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/elasticsearch/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Elasticsearch?
 
@@ -36,7 +35,7 @@ $ docker run -d elasticsearch
 You can also pass in additional flags to `elasticsearch`:
 
 ```console
-$ docker run -d elasticsearch elasticsearch -Des.node.name="TestNode"
+$ docker run -d elasticsearch -Des.node.name="TestNode"
 ```
 
 This image comes with a default set of configuration files for `elasticsearch`, but if you want to provide your own set of configuration files, you can do so via a volume mounted at `/usr/share/elasticsearch/config`:
@@ -59,7 +58,7 @@ View [license information](https://github.com/elasticsearch/elasticsearch/blob/6
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

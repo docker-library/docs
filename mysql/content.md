@@ -36,6 +36,12 @@ $ docker run -it --link some-%%REPO%%:mysql --rm %%REPO%% sh -c 'exec mysql -h"$
 
 ... where `some-%%REPO%%` is the name of your original %%REPO%% container.
 
+This image can also be used as a client for non-Docker or remote MySQL instances:
+
+```console
+$ docker run -it --rm %%REPO%% mysql -hsome.mysql.host -usome-mysql-user -p
+```
+
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
 ## Container shell access and viewing MySQL logs
@@ -116,7 +122,7 @@ Sets root (*not* the user specified in `MYSQL_USER`!) user as expired once init 
 
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database `mysql` will be initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh` and `.sql` that are found in `/docker-entrypoint-initdb.d`. You can easily populate your %%REPO%% services by [mounting a SQL dump into that directory](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your %%REPO%% services by [mounting a SQL dump into that directory](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data.
 
 # Caveats
 

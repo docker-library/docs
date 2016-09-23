@@ -1,18 +1,16 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.3`, `4.0` (*4.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.0/Dockerfile)
--	[`4.1.10`, `4.1` (*4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/6328ebb12009f2b8bee76c22e7ba4e11c1c9175e/4.1/Dockerfile)
+-	[`4.1.11`, `4.1` (*4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/7ce21f8aa1e58443c3031fdbdf83a08ce34e49a4/4.1/Dockerfile)
 -	[`4.2.2`, `4.2` (*4.2/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.2/Dockerfile)
 -	[`4.3.3`, `4.3` (*4.3/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.3/Dockerfile)
 -	[`4.4.2`, `4.4` (*4.4/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.4/Dockerfile)
--	[`4.5.3`, `4.5`, `4`, `latest` (*4.5/Dockerfile*)](https://github.com/docker-library/kibana/blob/6328ebb12009f2b8bee76c22e7ba4e11c1c9175e/4.5/Dockerfile)
--	[`5.0.0-alpha4`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/90abf46493103a3c6a7061b400d76f109c4104e7/5.0/Dockerfile)
-
-[![](https://badge.imagelayers.io/kibana:latest.svg)](https://imagelayers.io/?images=kibana:4.0.3,kibana:4.1.10,kibana:4.2.2,kibana:4.3.3,kibana:4.4.2,kibana:4.5.3,kibana:5.0.0-alpha4)
+-	[`4.5.4`, `4.5` (*4.5/Dockerfile*)](https://github.com/docker-library/kibana/blob/7ce21f8aa1e58443c3031fdbdf83a08ce34e49a4/4.5/Dockerfile)
+-	[`4.6.1`, `4.6`, `4`, `latest` (*4.6/Dockerfile*)](https://github.com/docker-library/kibana/blob/e930401355dc9b268b3e7d036794263a8e0f7a82/4.6/Dockerfile)
+-	[`5.0.0-alpha5`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/f1e01a0c5d64b1eea3c9d90a2cba93d9f3924bd0/5.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kibana`)](https://github.com/docker-library/official-images/blob/master/library/kibana). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkibana).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `kibana/tag-details.md` file](https://github.com/docker-library/docs/blob/master/kibana/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/kibana/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/kibana/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Kibana?
 
@@ -58,7 +56,7 @@ View [license information](https://github.com/elastic/kibana/blob/4557a6fc0ba08c
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,13 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.7.1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/195787dca586b41971e2037b48d3f6dca04c9667/Dockerfile)
--	[`alpine`, `2.7.1-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/e9126dcdd10fc0a2d0961a06d65c6a816f223797/Dockerfile)
-
-[![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:alpine)
+-	[`latest`, `2.7.4` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/6eaa9b15926232310317490a3b9975ef61be763c/Dockerfile)
+-	[`alpine`, `2.7.4-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/d2eeb20813164526f0443599fd82fd79fadee77e/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jenkins/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jenkins/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/jenkins/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/jenkins/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Jenkins
 
@@ -95,7 +93,7 @@ docker run --name myjenkins -p 8080:8080 -p 50000:50000 --env JAVA_OPTS="-Djava.
 
 # Passing Jenkins launcher parameters
 
-Argument you pass to docker running the jenkins image are passed to jenkins launcher, so you can run for sample :
+Arguments you pass to docker running the jenkins image are passed to jenkins launcher, so you can run for example :
 
 ```console
 $ docker run jenkins --version
@@ -103,7 +101,7 @@ $ docker run jenkins --version
 
 This will dump Jenkins version, just like when you run jenkins as an executable war.
 
-You also can define jenkins arguments as `JENKINS_OPTS`. This is usefull to define a set of arguments to pass to jenkins launcher as you define a derived jenkins image based on the official one with some customized settings. The following sample Dockerfile uses this option to force use of HTTPS with a certificate included in the image
+You also can define jenkins arguments as `JENKINS_OPTS`. This is useful to define a set of arguments to pass to jenkins launcher as you define a derived jenkins image based on the official one with some customized settings. The following sample Dockerfile uses this option to force use of HTTPS with a certificate included in the image
 
 ```console
 FROM jenkins:1.565.3
@@ -193,7 +191,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

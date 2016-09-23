@@ -19,11 +19,9 @@
 -	[`8-jdk-7.0.0-plus` (*8-jdk-7.0.0-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/30c7337214e705e2e8197948b31bec0fe4f51557/8-jdk-7.0.0-plus/Dockerfile)
 -	[`8-jdk-7.0.0-webprofile`, `latest` (*8-jdk-7.0.0-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/30c7337214e705e2e8197948b31bec0fe4f51557/8-jdk-7.0.0-webprofile/Dockerfile)
 
-[![](https://badge.imagelayers.io/tomee:latest.svg)](https://imagelayers.io/?images=tomee:6-jre-1.7.4-jaxrs,tomee:6-jre-1.7.4-plume,tomee:6-jre-1.7.4-plus,tomee:6-jre-1.7.4-webprofile,tomee:7-jre-1.7.4-jaxrs,tomee:7-jre-1.7.4-plume,tomee:7-jre-1.7.4-plus,tomee:7-jre-1.7.4-webprofile,tomee:8-jre-1.7.4-jaxrs,tomee:8-jre-1.7.4-plume,tomee:8-jre-1.7.4-plus,tomee:8-jre-1.7.4-webprofile,tomee:7-jdk-7.0.0-plume,tomee:7-jdk-7.0.0-plus,tomee:7-jdk-7.0.0-webprofile,tomee:8-jdk-7.0.0-plume,tomee:8-jdk-7.0.0-plus,tomee:8-jdk-7.0.0-webprofile)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/tomee`)](https://github.com/docker-library/official-images/blob/master/library/tomee). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomee).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `tomee/tag-details.md` file](https://github.com/docker-library/docs/blob/master/tomee/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/tomee/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/tomee/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is TomEE?
 
@@ -85,7 +83,7 @@ View [license information](http://www.apache.org/licenses/LICENSE-2.0) for the s
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,23 +1,19 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.4`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/7fd2b76513e537343f088da671a51f5b2ea7d4c3/1.5/Dockerfile)
--	[`1.5.4-onbuild`, `1.5-onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/f1f65c0ab0097a5e3d079d5a74e2468e8d47563d/1.5/onbuild/Dockerfile)
--	[`1.5.4-wheezy`, `1.5-wheezy` (*1.5/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/7fd2b76513e537343f088da671a51f5b2ea7d4c3/1.5/wheezy/Dockerfile)
--	[`1.5.4-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/5a84ebfbf3c55674dd6f36c66828c2e7461f2f0b/1.5/alpine/Dockerfile)
--	[`1.6.3`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/Dockerfile)
--	[`1.6.3-onbuild`, `1.6-onbuild`, `1-onbuild`, `onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/onbuild/Dockerfile)
--	[`1.6.3-wheezy`, `1.6-wheezy`, `1-wheezy`, `wheezy` (*1.6/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/wheezy/Dockerfile)
--	[`1.6.3-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/alpine/Dockerfile)
--	[`1.7rc2`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.7/Dockerfile)
--	[`1.7rc2-onbuild`, `1.7-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/2372c8cafe9cc958bade33ad0b8b54de8869c21f/1.7/onbuild/Dockerfile)
--	[`1.7rc2-wheezy`, `1.7-wheezy` (*1.7/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.7/wheezy/Dockerfile)
--	[`1.7rc2-alpine`, `1.7-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.7/alpine/Dockerfile)
-
-[![](https://badge.imagelayers.io/golang:latest.svg)](https://imagelayers.io/?images=golang:1.5.4,golang:1.5.4-onbuild,golang:1.5.4-wheezy,golang:1.5.4-alpine,golang:1.6.3,golang:1.6.3-onbuild,golang:1.6.3-wheezy,golang:1.6.3-alpine,golang:1.7rc2,golang:1.7rc2-onbuild,golang:1.7rc2-wheezy,golang:1.7rc2-alpine)
+-	[`1.6.3`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/Dockerfile)
+-	[`1.6.3-onbuild`, `1.6-onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/onbuild/Dockerfile)
+-	[`1.6.3-wheezy`, `1.6-wheezy` (*1.6/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/wheezy/Dockerfile)
+-	[`1.6.3-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/9f666dc2f4f51df564613f787d28b3a2353243e0/1.6/alpine/Dockerfile)
+-	[`1.6.3-windowsservercore`, `1.6-windowsservercore` (*1.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/83760719bbaadb8d778aa48d53bf2e9d9bd55741/1.6/windows/windowsservercore/Dockerfile)
+-	[`1.7.1`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/golang/blob/3a3e91c242b58a7d4e6022b3710b2e871f0ee5d6/1.7/Dockerfile)
+-	[`1.7.1-onbuild`, `1.7-onbuild`, `1-onbuild`, `onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/2372c8cafe9cc958bade33ad0b8b54de8869c21f/1.7/onbuild/Dockerfile)
+-	[`1.7.1-wheezy`, `1.7-wheezy`, `1-wheezy`, `wheezy` (*1.7/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/3a3e91c242b58a7d4e6022b3710b2e871f0ee5d6/1.7/wheezy/Dockerfile)
+-	[`1.7.1-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/3a3e91c242b58a7d4e6022b3710b2e871f0ee5d6/1.7/alpine/Dockerfile)
+-	[`1.7.1-windowsservercore`, `1.7-windowsservercore`, `1-windowsservercore`, `windowsservercore` (*1.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/3a3e91c242b58a7d4e6022b3710b2e871f0ee5d6/1.7/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgolang).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `golang/tag-details.md` file](https://github.com/docker-library/docs/blob/master/golang/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/golang/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/golang/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Go?
 
@@ -107,13 +103,22 @@ This variant is highly recommended when final image size being as small as possi
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
+## `golang:windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+
 # License
 
 View [license information](http://golang.org/LICENSE) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

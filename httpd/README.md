@@ -1,15 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.2.31`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/12bf8c8883340c98b3988a7bade8ef2d0d6dcf8a/2.2/Dockerfile)
--	[`2.2.31-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/12bf8c8883340c98b3988a7bade8ef2d0d6dcf8a/2.2/alpine/Dockerfile)
+-	[`2.2.31-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/8a0e3b8535245d914e703ae12afffc699f241cb8/2.2/alpine/Dockerfile)
 -	[`2.4.23`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/12bf8c8883340c98b3988a7bade8ef2d0d6dcf8a/2.4/Dockerfile)
--	[`2.4.23-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/12bf8c8883340c98b3988a7bade8ef2d0d6dcf8a/2.4/alpine/Dockerfile)
-
-[![](https://badge.imagelayers.io/httpd:latest.svg)](https://imagelayers.io/?images=httpd:2.2.31,httpd:2.2.31-alpine,httpd:2.4.23,httpd:2.4.23-alpine)
+-	[`2.4.23-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/8a0e3b8535245d914e703ae12afffc699f241cb8/2.4/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/httpd`)](https://github.com/docker-library/official-images/blob/master/library/httpd). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhttpd).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `httpd/tag-details.md` file](https://github.com/docker-library/docs/blob/master/httpd/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/httpd/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/httpd/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is httpd?
 
@@ -34,7 +32,7 @@ Then, run the commands to build and run the Docker image:
 
 ```console
 $ docker build -t my-apache2 .
-$ docker run -it --rm --name my-running-app my-apache2
+$ docker run -dit --name my-running-app my-apache2
 ```
 
 ### Without a `Dockerfile`
@@ -42,7 +40,7 @@ $ docker run -it --rm --name my-running-app my-apache2
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
 ```console
-$ docker run -it --rm --name my-apache-app -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+$ docker run -dit --name my-apache-app -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
 ```
 
 ### Configuration
@@ -82,7 +80,7 @@ View [license information](https://www.apache.org/licenses/) for the software co
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

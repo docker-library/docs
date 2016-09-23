@@ -1,13 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.3`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/a1b25fc6cd2a6175d17a8ae5241c31996e8faaa8/Dockerfile)
--	[`1.2.4-rc2` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/925e43d214604e3522a1e5882e2557fdb006f3d2/Dockerfile)
-
-[![](https://badge.imagelayers.io/swarm:latest.svg)](https://imagelayers.io/?images=swarm:1.2.3,swarm:1.2.4-rc2)
+-	[`1.2.5`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/67e6cf4171fcabd2e3b8b809105e7dfb15114ce1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fswarm).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `swarm/tag-details.md` file](https://github.com/docker-library/docs/blob/master/swarm/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/swarm/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/swarm/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Swarm: a Docker-native clustering system
 
@@ -70,7 +67,7 @@ View [license information](https://github.com/docker/swarm/blob/master/LICENSE.c
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

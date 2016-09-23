@@ -1,14 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.7.13`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/f7a67d7634a68d319988ad6f99729bfeaa84ceb2/5.7/Dockerfile)
--	[`5.6.31`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/f7a67d7634a68d319988ad6f99729bfeaa84ceb2/5.6/Dockerfile)
--	[`5.5.50`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/f7a67d7634a68d319988ad6f99729bfeaa84ceb2/5.5/Dockerfile)
-
-[![](https://badge.imagelayers.io/mysql:latest.svg)](https://imagelayers.io/?images=mysql:5.7.13,mysql:5.6.31,mysql:5.5.50)
+-	[`5.7.15`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/9f95658f528699d2c2017ca42ad163a9d5c5e7c1/5.7/Dockerfile)
+-	[`5.6.33`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/9fc086343ebd36af0448438622188264d1dc2e1c/5.6/Dockerfile)
+-	[`5.5.52`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/9fc086343ebd36af0448438622188264d1dc2e1c/5.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmysql).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mysql/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mysql/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mysql/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mysql/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is MySQL?
 
@@ -47,6 +45,12 @@ $ docker run -it --link some-mysql:mysql --rm mysql sh -c 'exec mysql -h"$MYSQL_
 ```
 
 ... where `some-mysql` is the name of your original mysql container.
+
+This image can also be used as a client for non-Docker or remote MySQL instances:
+
+```console
+$ docker run -it --rm mysql mysql -hsome.mysql.host -usome-mysql-user -p
+```
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
@@ -128,7 +132,7 @@ Sets root (*not* the user specified in `MYSQL_USER`!) user as expired once init 
 
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database `mysql` will be initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh` and `.sql` that are found in `/docker-entrypoint-initdb.d`. You can easily populate your mysql services by [mounting a SQL dump into that directory](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your mysql services by [mounting a SQL dump into that directory](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data.
 
 # Caveats
 
@@ -174,7 +178,7 @@ $ docker exec some-mysql sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

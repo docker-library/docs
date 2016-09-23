@@ -1,14 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`10.1.16`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/2c8418204a2ca6d39b9999641451200dee9212bc/10.1/Dockerfile)
--	[`10.0.26`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/dfc7026e1c2588388a929151810a28e6319ddead/10.0/Dockerfile)
--	[`5.5.50`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/35bec16e10203a30ed66f4e0a1571ce816c6b4d2/5.5/Dockerfile)
-
-[![](https://badge.imagelayers.io/mariadb:latest.svg)](https://imagelayers.io/?images=mariadb:10.1.16,mariadb:10.0.26,mariadb:5.5.50)
+-	[`10.1.17`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/7556dd6530170f6e41126423fd292dae159c272a/10.1/Dockerfile)
+-	[`10.0.27`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/9d7717c9d7e98619a3b7e7d4337e64b0de7d2f5b/10.0/Dockerfile)
+-	[`5.5.52`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/a0c4133675061dde79d08e13f20e365570acd866/5.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmariadb).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mariadb/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mariadb/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mariadb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mariadb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is MariaDB?
 
@@ -176,7 +174,7 @@ $ docker exec some-mariadb sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQ
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

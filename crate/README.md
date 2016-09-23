@@ -1,13 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.55`, `0.55.2` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/2bf4133c89dc22f49246b93d559d8029cd895fe2/Dockerfile)
+-	[`latest`, `0.55`, `0.55.5` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/03df8b7b20d4467099eebccc8005046bc5e23c80/Dockerfile)
 -	[`0.52`, `0.52.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/cce8f796ba8936250eb380235cde47be494d1e95/Dockerfile)
-
-[![](https://badge.imagelayers.io/crate:latest.svg)](https://imagelayers.io/?images=crate:latest,crate:0.52)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrate).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `crate/tag-details.md` file](https://github.com/docker-library/docs/blob/master/crate/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/crate/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/crate/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What Is Crate?
 
@@ -39,7 +37,7 @@ To start the Crate cluster in containers distributed to three hosts without mult
     --volume /mnt/data:/data \
     --ulimit nofile=65535 \
     --ulimit memlock=9223372036854775807 \
-        crate:latest \
+        crate \
         crate \
           -Des.cluster.name=crate-cluster \
           -Des.node.name=crate1 \
@@ -80,19 +78,13 @@ Crate stores all important data in */data*. It's advised to mount this directory
 
 ## Use Custom Crate Configuration
 
-Crate is controlled by a single configuration file which has sensible defaults already. If you derive your container from the Crate container, make sure to place your file inside it and let Crate know where to find it:
+Starting with 0.55.0, Crate does no longer support providing custom configuration files. However it is still possible to mount Crate's configuration into `/crate/config/crate.yml`.
 
 ```console
-# docker run -d crate crate -Des.config=</path/to>/crate.yml
+# docker run -d -v <custom/config/path>/crate.yml:/crate/config/crate.yml crate crate
 ```
 
-Other configuration settings may be specified upon startup using the `-D` option prefix. For example, configuring the cluster name by using system properties works like this:
-
-```console
-# docker run -d crate crate -Des.cluster.name=<my-cluster-name>
-```
-
-For further configuration options refer to the [Configuration](https://crate.io/docs/stable/configuration.html) section of our documentation.
+For further configuration options refer to the[Configuration](https://crate.io/docs/stable/configuration.html) section of our documentation.
 
 ## Environment
 
@@ -133,7 +125,7 @@ View [license information](https://github.com/crate/crate/blob/master/LICENSE.tx
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

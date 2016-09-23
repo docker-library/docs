@@ -1,14 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.7.13`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/b1f72280a3464a12979111287255da27c6537405/5.7/Dockerfile)
--	[`5.6.31`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/97b1c658432db2deae77b6577681d45e6c8ee493/5.6/Dockerfile)
--	[`5.5.50`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/9eb3ba8a16b4a037dbfe2314d17055743795e712/5.5/Dockerfile)
-
-[![](https://badge.imagelayers.io/percona:latest.svg)](https://imagelayers.io/?images=percona:5.7.13,percona:5.6.31,percona:5.5.50)
+-	[`5.7.14`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/8f69178d3e8ee9b85eeb92f2b404236ffe1f6a0c/5.7/Dockerfile)
+-	[`5.6.32`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/f8979af93c4ba4d9646cad026909d5f2691fceec/5.6/Dockerfile)
+-	[`5.5.51`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/5bf6984507572e1c26ff9466940797c3e40973ba/5.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpercona).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `percona/tag-details.md` file](https://github.com/docker-library/docs/blob/master/percona/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/percona/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/percona/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Percona Server
 
@@ -176,7 +174,7 @@ $ docker exec some-percona sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQ
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,15 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1`, `1.11`, `1.11.1` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/11fc019b2be3ad51ba5d097b1857a099c4056213/mainline/jessie/Dockerfile)
--	[`stable`, `1.10`, `1.10.1` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/11fc019b2be3ad51ba5d097b1857a099c4056213/stable/jessie/Dockerfile)
--	[`mainline-alpine`, `alpine`, `1-alpine`, `1.11-alpine`, `1.11.1-alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/11fc019b2be3ad51ba5d097b1857a099c4056213/mainline/alpine/Dockerfile)
--	[`stable-alpine`, `1.10-alpine`, `1.10.1-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/11fc019b2be3ad51ba5d097b1857a099c4056213/stable/alpine/Dockerfile)
-
-[![](https://badge.imagelayers.io/nginx:latest.svg)](https://imagelayers.io/?images=nginx:latest,nginx:stable,nginx:mainline-alpine,nginx:stable-alpine)
+-	[`1.11.4`, `mainline`, `1`, `1.11`, `latest` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/0dd9ef6a337474293b5e36c95a85da99b11e1a0a/mainline/jessie/Dockerfile)
+-	[`1.11.4-alpine`, `mainline-alpine`, `1-alpine`, `1.11-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/0dd9ef6a337474293b5e36c95a85da99b11e1a0a/mainline/alpine/Dockerfile)
+-	[`1.10.1`, `stable`, `1.10` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/11fc019b2be3ad51ba5d097b1857a099c4056213/stable/jessie/Dockerfile)
+-	[`1.10.1-alpine`, `stable-alpine`, `1.10-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/e117bd83e9befe5582bc1da8f72248398fffa16c/stable/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnginx).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `nginx/tag-details.md` file](https://github.com/docker-library/docs/blob/master/nginx/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/nginx/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/nginx/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Nginx?
 
@@ -118,7 +116,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

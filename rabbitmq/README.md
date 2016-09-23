@@ -1,13 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.3`, `3.6`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/01cebb700efb951058263f3439ab83fbe81222aa/Dockerfile)
--	[`3.6.3-management`, `3.6-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/dc712681dcaeadb0371be66be5e96563be364e5d/management/Dockerfile)
-
-[![](https://badge.imagelayers.io/rabbitmq:latest.svg)](https://imagelayers.io/?images=rabbitmq:3.6.3,rabbitmq:3.6.3-management)
+-	[`3.6.5`, `3.6`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/29121864d4892b2481706df023a53e31fececd02/Dockerfile)
+-	[`3.6.5-management`, `3.6-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/dc712681dcaeadb0371be66be5e96563be364e5d/management/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frabbitmq).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rabbitmq/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rabbitmq/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rabbitmq/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rabbitmq/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is RabbitMQ?
 
@@ -124,7 +122,7 @@ View [license information](https://www.rabbitmq.com/mpl.html) for the software c
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

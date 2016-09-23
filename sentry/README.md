@@ -1,15 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.5.1`, `8.5` (*8.5/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/d69a0096ee2f885047f95bdd2e2edfc761674580/8.5/Dockerfile)
--	[`8.5.1-onbuild`, `8.5-onbuild` (*8.5/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/ce5121a71f55c2fb0659f552e361b1174c85bccf/8.5/onbuild/Dockerfile)
--	[`8.6.0`, `8.6`, `8`, `latest` (*8.6/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/09d2b56ded2f669f40d5295bfe36529bbafb914d/8.6/Dockerfile)
--	[`8.6.0-onbuild`, `8.6-onbuild`, `8-onbuild`, `onbuild` (*8.6/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/09d2b56ded2f669f40d5295bfe36529bbafb914d/8.6/onbuild/Dockerfile)
-
-[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.5.1,sentry:8.5.1-onbuild,sentry:8.6.0,sentry:8.6.0-onbuild)
+-	[`8.7.0`, `8.7` (*8.7/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/2bef8f6386c891f9b8ce1d6940f0aff81c25d475/8.7/Dockerfile)
+-	[`8.7.0-onbuild`, `8.7-onbuild` (*8.7/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/22e75e5254b5707b77a747cd4e90bc4327f2ce9b/8.7/onbuild/Dockerfile)
+-	[`8.8.0`, `8.8`, `8`, `latest` (*8.8/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/90e5f20bf418a42986c9716d07a4de980a4dfc07/8.8/Dockerfile)
+-	[`8.8.0-onbuild`, `8.8-onbuild`, `8-onbuild`, `onbuild` (*8.8/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/90e5f20bf418a42986c9716d07a4de980a4dfc07/8.8/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `sentry/tag-details.md` file](https://github.com/docker-library/docs/blob/master/sentry/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/sentry/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/sentry/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Sentry?
 
@@ -144,7 +142,7 @@ View [license information](https://github.com/getsentry/sentry/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

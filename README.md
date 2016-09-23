@@ -4,7 +4,10 @@ This repository contains the docs for each of the Docker official images. See [d
 
 All Markdown files here are run through [tianon's fork of `markdownfmt`](https://github.com/tianon/markdownfmt) (only forked to add some smaller-diff preference and minor DockerHub-compatibility changes), and verified as formatted correctly via Travis-CI.
 
-[![Build Status](https://travis-ci.org/docker-library/docs.svg?branch=master)](https://travis-ci.org/docker-library/docs)
+-	[Travis CI:  
+	![build status badge](https://travis-ci.org/docker-library/docs.svg?branch=master)](https://travis-ci.org/docker-library/docs)
+-	[Automated `update.sh` and `push.sh`:  
+	![build status badge](https://doi-janky.infosiftr.net/job/docs/job/update/badge/icon)](https://doi-janky.infosiftr.net/job/docs/job/update/)
 
 # How do I add a new image's docs
 
@@ -103,6 +106,6 @@ This file is an optional override of the default `user-feedback.md` for those re
 
 # Issues and Contributing
 
-If you would like to make a new Official Image, be sure to follow the [guidelines](https://docs.docker.com/docker-hub/official_repos/) and optionally talk to officialrepos@docker.com.
+If you would like to make a new Official Image, be sure to follow the [guidelines](https://docs.docker.com/docker-hub/official_repos/).
 
 Feel free to make a pull request for fixes and improvements to current documentation. For questions or problems on this repo come talk to us via the `#docker-library` IRC channel on [Freenode](https://freenode.net) or open up an issue.

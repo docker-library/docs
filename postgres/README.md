@@ -1,17 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.6-beta2`, `9.6` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/3cff98db82f2dd6c3647296335bbc37233e0b9bc/9.6/Dockerfile)
--	[`9.5.3`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/04b1d366d51a942b88fff6c62943f92c7c38d9b6/9.5/Dockerfile)
--	[`9.4.8`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/04b1d366d51a942b88fff6c62943f92c7c38d9b6/9.4/Dockerfile)
--	[`9.3.13`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/04b1d366d51a942b88fff6c62943f92c7c38d9b6/9.3/Dockerfile)
--	[`9.2.17`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/04b1d366d51a942b88fff6c62943f92c7c38d9b6/9.2/Dockerfile)
--	[`9.1.22`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/04b1d366d51a942b88fff6c62943f92c7c38d9b6/9.1/Dockerfile)
-
-[![](https://badge.imagelayers.io/postgres:latest.svg)](https://imagelayers.io/?images=postgres:9.6-beta2,postgres:9.5.3,postgres:9.4.8,postgres:9.3.13,postgres:9.2.17,postgres:9.1.22)
+-	[`9.6-rc1`, `9.6` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/1b305a586eb552197fe96e3bf2fd95f3d5b81f79/9.6/Dockerfile)
+-	[`9.5.4`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.5/Dockerfile)
+-	[`9.4.9`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.4/Dockerfile)
+-	[`9.3.14`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.3/Dockerfile)
+-	[`9.2.18`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.2/Dockerfile)
+-	[`9.1.23`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostgres).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `postgres/tag-details.md` file](https://github.com/docker-library/docs/blob/master/postgres/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/postgres/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/postgres/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is PostgreSQL?
 
@@ -34,7 +32,7 @@ $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postg
 This image includes `EXPOSE 5432` (the postgres port), so standard container linking will make it automatically available to the linked containers. The default `postgres` user and database are created in the entrypoint with `initdb`.
 
 > The postgres database is a default database meant for use by users, utilities and third party applications.  
-> [postgresql.org/docs](http://www.postgresql.org/docs/9.3/interactive/app-initdb.html)
+> [postgresql.org/docs](http://www.postgresql.org/docs/9.5/interactive/app-initdb.html)
 
 ## connect to it from an application
 
@@ -116,7 +114,7 @@ If there is no database when `postgres` starts in a container, then `postgres` w
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

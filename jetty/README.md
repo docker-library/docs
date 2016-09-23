@@ -1,15 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.3.10`, `9.3`, `9`, `9.3.10-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c228052ac9459c1303601e90fd66a44d7be6b8ce/9.3-jre8/Dockerfile)
--	[`9.3.10-alpine`, `9.3-alpine`, `9-alpine`, `9.3.10-jre8-alpine`, `9.3-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c228052ac9459c1303601e90fd66a44d7be6b8ce/9.3-jre8/alpine/Dockerfile)
--	[`9.2.17`, `9.2`, `9.2.17-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c228052ac9459c1303601e90fd66a44d7be6b8ce/9.2-jre8/Dockerfile)
--	[`9.2.17-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c228052ac9459c1303601e90fd66a44d7be6b8ce/9.2-jre7/Dockerfile)
-
-[![](https://badge.imagelayers.io/jetty:latest.svg)](https://imagelayers.io/?images=jetty:9.3.10,jetty:9.3.10-alpine,jetty:9.2.17,jetty:9.2.17-jre7)
+-	[`9.3.11`, `9.3`, `9`, `9.3.11-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.3-jre8/Dockerfile)
+-	[`9.3.11-alpine`, `9.3-alpine`, `9-alpine`, `9.3.11-jre8-alpine`, `9.3-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.3-jre8/alpine/Dockerfile)
+-	[`9.2.18`, `9.2`, `9.2.18-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.2-jre8/Dockerfile)
+-	[`9.2.18-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.2-jre7/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjetty).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jetty/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jetty/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/jetty/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/jetty/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Jetty?
 
@@ -129,7 +127,7 @@ View [license information](http://eclipse.org/jetty/licenses.php) for the softwa
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

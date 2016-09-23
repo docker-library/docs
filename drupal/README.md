@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.50-apache`, `7-apache`, `7.50`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/41970d6f598cf64fe90aa63651ba52cdc384c002/7/apache/Dockerfile)
--	[`7.50-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/41970d6f598cf64fe90aa63651ba52cdc384c002/7/fpm/Dockerfile)
--	[`8.1.7-apache`, `8.1-apache`, `8-apache`, `apache`, `8.1.7`, `8.1`, `8`, `latest` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/570d5995dfc3a98a71bea55ae957307c266ba694/8.1/apache/Dockerfile)
--	[`8.1.7-fpm`, `8.1-fpm`, `8-fpm`, `fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/570d5995dfc3a98a71bea55ae957307c266ba694/8.1/fpm/Dockerfile)
-
-[![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.50-apache,drupal:7.50-fpm,drupal:8.1.7-apache,drupal:8.1.7-fpm)
+-	[`7.50-apache`, `7-apache`, `7.50`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/61f25e58353d7ca9b2e07a46ff152892b2f7d9cf/7/apache/Dockerfile)
+-	[`7.50-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/61f25e58353d7ca9b2e07a46ff152892b2f7d9cf/7/fpm/Dockerfile)
+-	[`8.1.10-apache`, `8.1-apache`, `8-apache`, `apache`, `8.1.10`, `8.1`, `8`, `latest` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/35aada37a9179e8e9e70d29bbbb894ade2cad36a/8.1/apache/Dockerfile)
+-	[`8.1.10-fpm`, `8.1-fpm`, `8-fpm`, `fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/35aada37a9179e8e9e70d29bbbb894ade2cad36a/8.1/fpm/Dockerfile)
+-	[`8.2.0-rc1-apache`, `8.2.0-apache`, `8.2-apache`, `8.2.0-rc1`, `8.2.0`, `8.2` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/9a95a290b9b9bbe6f4669ad85e712312f0ebd84b/8.2/apache/Dockerfile)
+-	[`8.2.0-rc1-fpm`, `8.2.0-fpm`, `8.2-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/9a95a290b9b9bbe6f4669ad85e712312f0ebd84b/8.2/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdrupal).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `drupal/tag-details.md` file](https://github.com/docker-library/docs/blob/master/drupal/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/drupal/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/drupal/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Drupal?
 
@@ -76,7 +76,7 @@ View [license information](https://www.drupal.org/licensing/faq) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

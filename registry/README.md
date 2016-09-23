@@ -1,19 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2`, `2.4`, `2.4.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/5cbbc8d1e6046cef5938e3380fd2a5fbd854f921/Dockerfile)
--	[`2.5.0-rc.2` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/ac4732789b3e30a887b9f2c5bb163473cd89d0cb/Dockerfile)
-
-[![](https://badge.imagelayers.io/registry:2.svg)](https://imagelayers.io/?images=registry:2,registry:2.5.0-rc.2)
+-	[`2`, `2.5`, `2.5.1`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/3b4a84c1f152b60688e99d2efadf305479541482/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fregistry).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `registry/tag-details.md` file](https://github.com/docker-library/docs/blob/master/registry/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/registry/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/registry/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Docker Registry
 
-The tags >= 2 refer to the [new registry](https://github.com/docker/distribution).
-
-Older tags refer to the [deprecated registry](https://github.com/docker/docker-registry).
+Tags < 1.0 refer to the [deprecated registry](https://github.com/docker/docker-registry).
 
 ## Run the Registry
 
@@ -46,7 +41,7 @@ If you are interested in commercial support, the [Docker Trusted Registry](https
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

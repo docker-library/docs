@@ -5,11 +5,9 @@
 -	[`server-0.2.0` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/3ea5b74928929415f2faaa5df574c4745bf6d286/notary-server/Dockerfile)
 -	[`signer-0.2.0` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/3ea5b74928929415f2faaa5df574c4745bf6d286/notary-signer/Dockerfile)
 
-[![](https://badge.imagelayers.io/notary:server.svg)](https://imagelayers.io/?images=notary:server,notary:signer,notary:server-0.2.0,notary:signer-0.2.0)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/notary`)](https://github.com/docker-library/official-images/blob/master/library/notary). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnotary).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `notary/tag-details.md` file](https://github.com/docker-library/docs/blob/master/notary/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/notary/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/notary/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # How to use this repository
 
@@ -98,7 +96,7 @@ View [license information](https://github.com/docker/notary/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

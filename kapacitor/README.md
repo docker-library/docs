@@ -1,16 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.12`, `0.12.0` (*0.12/Dockerfile*)](https://github.com/influxdata/kapacitor-docker/blob/bbfea78a0a43bd4c6d67e139afb518bac3aa424b/0.12/Dockerfile)
--	[`0.13`, `0.13.1`, `latest` (*kapacitor/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/kapacitor/0.13/Dockerfile)
--	[`0.13-alpine`, `0.13.1-alpine`, `alpine` (*kapacitor/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/215cf009c143dc739b5b10084ae330ca7f3665d6/kapacitor/0.13/alpine/Dockerfile)
--	[`1.0.0-beta3` (*kapacitor/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22315c8e211defb2589fa6831c682391de492b88/kapacitor/1.0/Dockerfile)
--	[`1.0.0-beta3-alpine` (*kapacitor/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22315c8e211defb2589fa6831c682391de492b88/kapacitor/1.0/alpine/Dockerfile)
-
-[![](https://badge.imagelayers.io/kapacitor:latest.svg)](https://imagelayers.io/?images=kapacitor:0.12,kapacitor:0.13,kapacitor:0.13-alpine,kapacitor:1.0.0-beta3,kapacitor:1.0.0-beta3-alpine)
+-	[`0.13`, `0.13.1` (*kapacitor/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ec08f02c8a4a15bcea2a6c46517eceb9284633a2/kapacitor/0.13/Dockerfile)
+-	[`0.13-alpine`, `0.13.1-alpine` (*kapacitor/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ec08f02c8a4a15bcea2a6c46517eceb9284633a2/kapacitor/0.13/alpine/Dockerfile)
+-	[`1.0`, `1.0.0`, `latest` (*kapacitor/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ec08f02c8a4a15bcea2a6c46517eceb9284633a2/kapacitor/1.0/Dockerfile)
+-	[`1.0-alpine`, `1.0.0-alpine`, `alpine` (*kapacitor/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ec08f02c8a4a15bcea2a6c46517eceb9284633a2/kapacitor/1.0/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kapacitor`)](https://github.com/docker-library/official-images/blob/master/library/kapacitor). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `kapacitor/tag-details.md` file](https://github.com/docker-library/docs/blob/master/kapacitor/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/kapacitor/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/kapacitor/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Kapacitor
 
@@ -167,7 +164,7 @@ View [license information](https://github.com/influxdata/kapacitor/blob/master/L
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

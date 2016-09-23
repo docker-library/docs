@@ -1,19 +1,19 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.14-apache`, `8.0-apache`, `8.0.14`, `8.0` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/8.0/apache/Dockerfile)
--	[`8.0.14-fpm`, `8.0-fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/8.0/fpm/Dockerfile)
--	[`8.1.9-apache`, `8.1-apache`, `8.1.9`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/8.1/apache/Dockerfile)
--	[`8.1.9-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/8.1/fpm/Dockerfile)
--	[`8.2.7-apache`, `8.2-apache`, `8-apache`, `8.2.7`, `8.2`, `8` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/8.2/apache/Dockerfile)
--	[`8.2.7-fpm`, `8.2-fpm`, `8-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/8.2/fpm/Dockerfile)
--	[`9.0.4-apache`, `9.0-apache`, `9-apache`, `apache`, `9.0.4`, `9.0`, `9`, `latest` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/9.0/apache/Dockerfile)
--	[`9.0.4-fpm`, `9.0-fpm`, `9-fpm`, `fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/94143a2da24c5f5ca90fede12cd5bb1aa5dc1f1a/9.0/fpm/Dockerfile)
-
-[![](https://badge.imagelayers.io/owncloud:latest.svg)](https://imagelayers.io/?images=owncloud:8.0.14-apache,owncloud:8.0.14-fpm,owncloud:8.1.9-apache,owncloud:8.1.9-fpm,owncloud:8.2.7-apache,owncloud:8.2.7-fpm,owncloud:9.0.4-apache,owncloud:9.0.4-fpm)
+-	[`8.0.15-apache`, `8.0-apache`, `8.0.15`, `8.0` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/12b61400b292cfdef89ae568f726798f197ec409/8.0/apache/Dockerfile)
+-	[`8.0.15-fpm`, `8.0-fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/12b61400b292cfdef89ae568f726798f197ec409/8.0/fpm/Dockerfile)
+-	[`8.1.10-apache`, `8.1-apache`, `8.1.10`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/066a4f1d22f703605b00d70178dd7bb71b7d7140/8.1/apache/Dockerfile)
+-	[`8.1.10-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/066a4f1d22f703605b00d70178dd7bb71b7d7140/8.1/fpm/Dockerfile)
+-	[`8.2.8-apache`, `8.2-apache`, `8-apache`, `8.2.8`, `8.2`, `8` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f73b5dc1306f54c0744ad3dce726cbd7fb0530a7/8.2/apache/Dockerfile)
+-	[`8.2.8-fpm`, `8.2-fpm`, `8-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f73b5dc1306f54c0744ad3dce726cbd7fb0530a7/8.2/fpm/Dockerfile)
+-	[`9.0.5-apache`, `9.0-apache`, `9.0.5`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/92727b0d210b489161340f740b3693eb87915e16/9.0/apache/Dockerfile)
+-	[`9.0.5-fpm`, `9.0-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/92727b0d210b489161340f740b3693eb87915e16/9.0/fpm/Dockerfile)
+-	[`9.1.1-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.1`, `9.1`, `9`, `latest` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/51ba952ab82bdc0755275d31fc288af39ac1ba74/9.1/apache/Dockerfile)
+-	[`9.1.1-fpm`, `9.1-fpm`, `9-fpm`, `fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/51ba952ab82bdc0755275d31fc288af39ac1ba74/9.1/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fowncloud).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `owncloud/tag-details.md` file](https://github.com/docker-library/docs/blob/master/owncloud/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/owncloud/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/owncloud/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is ownCloud?
 
@@ -89,7 +89,7 @@ View [license information](https://owncloud.org/contribute/agreement/) for the s
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

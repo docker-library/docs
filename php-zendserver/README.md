@@ -1,15 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5`, `8.5-php5.5` (*8.5/5.5/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/df88fc00133cb8578e5d571a74336f831e5ef8cd/8.5/5.5/Dockerfile)
--	[`5.6`, `8.5-php5.6`, `8.5` (*8.5/5.6/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/df88fc00133cb8578e5d571a74336f831e5ef8cd/8.5/5.6/Dockerfile)
--	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/df88fc00133cb8578e5d571a74336f831e5ef8cd/7.0/5.4/Dockerfile)
--	[`9.0`, `9.0-php7`, `latest` (*9.0/7.0/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/359ed95e4d49da8123eb01c4b929917c7595754c/9.0/7.0/Dockerfile)
-
-[![](https://badge.imagelayers.io/php-zendserver:latest.svg)](https://imagelayers.io/?images=php-zendserver:5.5,php-zendserver:5.6,php-zendserver:5.4,php-zendserver:9.0)
+-	[`5.5`, `8.5-php5.5` (*8.5/5.5/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/8.5/5.5/Dockerfile)
+-	[`5.6`, `8.5-php5.6`, `8.5` (*8.5/5.6/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/8.5/5.6/Dockerfile)
+-	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/7.0/5.4/Dockerfile)
+-	[`9.0`, `9.0-php7`, `latest` (*9.0/7.0/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/9.0/7.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/php-zendserver`)](https://github.com/docker-library/official-images/blob/master/library/php-zendserver). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp-zendserver).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `php-zendserver/tag-details.md` file](https://github.com/docker-library/docs/blob/master/php-zendserver/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/php-zendserver/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/php-zendserver/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Zend Server?
 
@@ -152,7 +150,7 @@ Each Zend Server Docker container requires 1GB of availible memory.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

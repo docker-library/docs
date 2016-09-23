@@ -1,15 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `lein-2.6.1` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/0d4a0abe13497a6081ebd080e83d1be0abab3f59/Dockerfile)
--	[`onbuild`, `lein-2.6.1-onbuild` (*onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/0d4a0abe13497a6081ebd080e83d1be0abab3f59/onbuild/Dockerfile)
--	[`alpine`, `lein-2.6.1-alpine` (*alpine/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/534102a7ee7e6f4825e86a648a52c44cc25eb39d/alpine/Dockerfile)
--	[`alpine-onbuild`, `lein-2.6.1-alpine-onbuild` (*alpine-onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/73e7427a6cfec285a3d901e4a9ae25b8109c3d0c/alpine-onbuild/Dockerfile)
-
-[![](https://badge.imagelayers.io/clojure:latest.svg)](https://imagelayers.io/?images=clojure:latest,clojure:onbuild,clojure:alpine,clojure:alpine-onbuild)
+-	[`latest`, `lein-2.7.0` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/8cf0e16895dfebd99cc4d93e86d66d4bc03f4ac1/Dockerfile)
+-	[`onbuild`, `lein-2.7.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/8cf0e16895dfebd99cc4d93e86d66d4bc03f4ac1/onbuild/Dockerfile)
+-	[`alpine`, `lein-2.7.0-alpine` (*alpine/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/8cf0e16895dfebd99cc4d93e86d66d4bc03f4ac1/alpine/Dockerfile)
+-	[`alpine-onbuild`, `lein-2.7.0-alpine-onbuild` (*alpine-onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/8cf0e16895dfebd99cc4d93e86d66d4bc03f4ac1/alpine-onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclojure).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `clojure/tag-details.md` file](https://github.com/docker-library/docs/blob/master/clojure/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/clojure/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/clojure/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Clojure?
 
@@ -96,7 +94,7 @@ View [license information](http://clojure.org/license) for the software containe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -2,14 +2,15 @@
 
 -	[`2.6.12`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/fc91d681fa5808c30c3118ce7fe3f993beccc82d/2.6/Dockerfile)
 -	[`3.0.12`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/4b1d085ccab5728a9b9e4b65c5ed19820420809e/3.0/Dockerfile)
--	[`3.2.8`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/92669ba9c463593f85007faf371522201167a5ee/3.2/Dockerfile)
--	[`3.3.10`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/mongo/blob/7065352d915f03584da8a57cc070e612106496ef/3.3/Dockerfile)
-
-[![](https://badge.imagelayers.io/mongo:latest.svg)](https://imagelayers.io/?images=mongo:2.6.12,mongo:3.0.12,mongo:3.2.8,mongo:3.3.10)
+-	[`3.0.12-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/89549b2b779421c057b04858477012b7aa17f498/3.0/windows/windowsservercore/Dockerfile)
+-	[`3.2.9`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/4d7bd01562edefad38a240c40a4b162a1cd7b9c2/3.2/Dockerfile)
+-	[`3.2.9-windowsservercore`, `3.2-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/89549b2b779421c057b04858477012b7aa17f498/3.2/windows/windowsservercore/Dockerfile)
+-	[`3.3.12`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/mongo/blob/174bd96682dc3613df9b670658ac81c9dd17ba74/3.3/Dockerfile)
+-	[`3.3.12-windowsservercore`, `3.3-windowsservercore` (*3.3/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/174bd96682dc3613df9b670658ac81c9dd17ba74/3.3/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mongo/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mongo/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mongo/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mongo/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is MongoDB?
 
@@ -114,13 +115,30 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 ```
 
+# Image Variants
+
+The `mongo` images come in many flavors, each designed for a specific use case.
+
+## `mongo:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `mongo:windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+
 # License
 
 View [license information](https://github.com/mongodb/mongo/blob/7c3cfac300cfcca4f73f1c3b18457f0f8fae3f69/README#L71) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

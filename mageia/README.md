@@ -2,11 +2,9 @@
 
 -	[`latest`, `5` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/85a4253a175cde455b9926b4a83fb8d5ceea096f/5/Dockerfile)
 
-[![](https://badge.imagelayers.io/mageia:latest.svg)](https://imagelayers.io/?images=mageia:latest)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/mageia`)](https://github.com/docker-library/official-images/blob/master/library/mageia). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmageia).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mageia/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mageia/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mageia/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mageia/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Mageia?
 
@@ -45,7 +43,7 @@ All images install the following packages:
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

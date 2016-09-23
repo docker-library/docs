@@ -2,15 +2,13 @@
 
 -	[`latest`, `0.61` (*stable/Dockerfile*)](https://github.com/vaygr/docker-sourcemage/blob/2d7efdca5633554194e2b12fae334ac4b6804b25/stable/Dockerfile)
 
-[![](https://badge.imagelayers.io/sourcemage:latest.svg)](https://imagelayers.io/?images=sourcemage:latest)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/sourcemage`)](https://github.com/docker-library/official-images/blob/master/library/sourcemage). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsourcemage).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `sourcemage/tag-details.md` file](https://github.com/docker-library/docs/blob/master/sourcemage/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/sourcemage/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/sourcemage/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Docker images for Source Mage GNU/Linux
 
-[Source Mage](https://beta.sourcemage.ru/) (or *SMGL* in abbreviated form) is a source-based *GNU/Linux* distribution based on a sorcery metaphor of "casting" and "dispelling" programs, which we refer to as "**spells**", and a package manager called "**Sorcery**". Our packages are designed to allow the user to customize the package any way they want (custom CFLAGS, LDFLAGS, `./configure` flags, etc.) as well as offering as many of the package options as possible to the user up-front (you will not need to know what options a package has or what optional dependencies it can use ahead of time). Source code is always downloaded from the publisher's website and rarely patched. SMGL also includes many advanced features such as self-healing and sub-dependencies.
+[Source Mage](https://sourcemage.org/) (or *SMGL* in abbreviated form) is a source-based *GNU/Linux* distribution based on a sorcery metaphor of "casting" and "dispelling" programs, which we refer to as "**spells**", and a package manager called "**Sorcery**". Our packages are designed to allow the user to customize the package any way they want (custom CFLAGS, LDFLAGS, `./configure` flags, etc.) as well as offering as many of the package options as possible to the user up-front (you will not need to know what options a package has or what optional dependencies it can use ahead of time). Source code is always downloaded from the publisher's website and rarely patched. SMGL also includes many advanced features such as self-healing and sub-dependencies.
 
 All of our scripts are [GPL](https://www.gnu.org/licenses/gpl.html)'d and our package manager and packages are written in [bash](https://www.gnu.org/software/bash/), so they are easy to learn and modify. Sorcery supports custom packages maintained by users, which can override default packages and will never be touched by updates.
 
@@ -18,7 +16,7 @@ All of our scripts are [GPL](https://www.gnu.org/licenses/gpl.html)'d and our pa
 
 # Images
 
-These images are based on our [chroot images](https://beta.sourcemage.ru/Install/Chroot). To use them, simply do the following:
+These images are based on our [chroot images](https://sourcemage.org/Install/Chroot). To use them, simply do the following:
 
 ```shell
 $ docker run -it sourcemage
@@ -34,7 +32,7 @@ $ docker run -it sourcemage:0.61
 
 # Notes
 
--	in order to get the full benefit of [castfs](https://beta.sourcemage.ru/castfs) you need additional flags (`--device /dev/fuse --cap-add SYS_ADMIN`) for access to `/dev/fuse` device within a container, but you've been warned because there are security implications to granting such capabilities/privileges to the container; otherwise [installwatch](https://beta.sourcemage.ru/installwatch) will be used
+-	in order to get the full benefit of [castfs](https://sourcemage.org/castfs) you need additional flags (`--device /dev/fuse --cap-add SYS_ADMIN`) for access to `/dev/fuse` device within a container, but you've been warned because there are security implications to granting such capabilities/privileges to the container; otherwise [installwatch](https://sourcemage.org/installwatch) will be used
 -	`0.61` indicates the grimoire version this image is based on, otherwise `latest` will be pulled
 
 # License
@@ -45,7 +43,7 @@ All Source Mage code released under the [GNU General Public License 2.0](https:/
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
