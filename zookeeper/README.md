@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.6`, `3.3` (*3.3.6/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/c11fc48ea8096bbc725619f3e4e0d2382b8171bd/3.3.6/Dockerfile)
--	[`3.4.9`, `3.4`, `latest` (*3.4.9/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/c11fc48ea8096bbc725619f3e4e0d2382b8171bd/3.4.9/Dockerfile)
+-	[`3.3.6`, `3.3` (*3.3.6/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/05459469a865f17d961bd018a6dbfd46187fb6e8/3.3.6/Dockerfile)
+-	[`3.4.9`, `3.4`, `latest` (*3.4.9/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/05459469a865f17d961bd018a6dbfd46187fb6e8/3.4.9/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/zookeeper`)](https://github.com/docker-library/official-images/blob/master/library/zookeeper). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fzookeeper).
 
