@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+
+  redmine:
+    image: redmine
+    ports:
+      - 8080:80
+    environment:
+      REDMINE_DB_MYSQL: mysql
+      REDMINE_DB_PASSWORD: example
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: redmine
