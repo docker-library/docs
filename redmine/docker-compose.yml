@@ -5,15 +5,17 @@ services:
   redmine:
     image: redmine
     ports:
-      - 8080:80
+      - 8080:3000
     environment:
-      REDMINE_DB_MYSQL: mysql
+      REDMINE_DB_MYSQL: db
       REDMINE_DB_PASSWORD: example
     depends_on:
-      - mysql
+      - db
+    restart: always
 
-  mysql:
+  db:
     image: mariadb
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: redmine
+    restart: always
