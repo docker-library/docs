@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1.6`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/c7fbe17fb7c3f1b33cb2d6fbdeaf1ee42ac9cbb9/3.1/Dockerfile)
+-	[`3.1.6`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/dd11f72412d392db8b8a86ed81821643f8a52835/3.1/Dockerfile)
 -	[`3.1.6-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/31ec3c8963424bbc1730806a65d9914c84df17de/3.1/passenger/Dockerfile)
--	[`3.2.3`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/c7fbe17fb7c3f1b33cb2d6fbdeaf1ee42ac9cbb9/3.2/Dockerfile)
+-	[`3.2.3`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/dd11f72412d392db8b8a86ed81821643f8a52835/3.2/Dockerfile)
 -	[`3.2.3-passenger`, `3.2-passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/31ec3c8963424bbc1730806a65d9914c84df17de/3.2/passenger/Dockerfile)
--	[`3.3.0`, `3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/c7fbe17fb7c3f1b33cb2d6fbdeaf1ee42ac9cbb9/3.3/Dockerfile)
+-	[`3.3.0`, `3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/dd11f72412d392db8b8a86ed81821643f8a52835/3.3/Dockerfile)
 -	[`3.3.0-passenger`, `3.3-passenger`, `3-passenger`, `passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/31ec3c8963424bbc1730806a65d9914c84df17de/3.3/passenger/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredmine).
@@ -54,6 +54,36 @@ Running Redmine with a database server is the recommened way.
 	```console
 	$ docker run -d --name some-redmine --link some-postgres:postgres redmine
 	```
+
+## ... via [`docker-compose`](https://github.com/docker/compose)
+
+Example `docker-compose.yml` for `redmine`:
+
+```yaml
+version: '2'
+
+services:
+
+  redmine:
+    image: redmine
+    ports:
+      - 8080:3000
+    environment:
+      REDMINE_DB_MYSQL: db
+      REDMINE_DB_PASSWORD: example
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: redmine
+    restart: always
+```
+
+Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
 
 ## Alternative Web Server
 

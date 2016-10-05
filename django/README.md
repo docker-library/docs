@@ -1,8 +1,33 @@
+# **DEPRECATED**
+
+This image is officially deprecated in favor of [the standard `python` image](https://hub.docker.com/_/python/), and will receive no further updates after 2016-12-31 (Dec 31, 2016). Please adjust your usage accordingly.
+
+For most usages of this image, it was already not bringing in `django` from this image, but actually from your project's `requirements.txt`, so the only "value" being added here was the pre-installing of `mysql-client`, `postgresql-client`, and `sqlite3` for various uses of the `django` framework.
+
+For example, a `Dockerfile` similar to the following would be a good starting point for a Django project using PostgreSQL:
+
+```dockerfile
+FROM python:3.4
+
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends \
+		postgresql-client \
+	&& rm -rf /var/lib/apt/lists/*
+
+WORKDIR /usr/src/app
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+COPY . .
+
+EXPOSE 8000
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+```
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.10-python3`, `1-python3`, `python3`, `1.10`, `1`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/eb6088320ccd1449f21c4050583bd835913e56ec/3.4/Dockerfile)
+-	[`1.10.1-python3`, `1.10-python3`, `1-python3`, `python3`, `1.10.1`, `1.10`, `1`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/16723cfa3765534e4e9eebe4f70c5404eb2b4532/3.4/Dockerfile)
 -	[`python3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/4fe080675e4a85ef6ee25c811e9d3d3ef0905794/3.4/onbuild/Dockerfile)
--	[`1.10-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/eb6088320ccd1449f21c4050583bd835913e56ec/2.7/Dockerfile)
+-	[`1.10.1-python2`, `1.10-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/16723cfa3765534e4e9eebe4f70c5404eb2b4532/2.7/Dockerfile)
 -	[`python2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/2.7/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/django`)](https://github.com/docker-library/official-images/blob/master/library/django). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdjango).

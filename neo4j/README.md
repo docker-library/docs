@@ -1,7 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.4`, `3.0`, `latest` (*3.0.4/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/1ad894c32a9cf2a7147f4bdd76eb7a52f8df9d12/3.0.4/community/Dockerfile)
--	[`3.0.4-enterprise`, `3.0-enterprise`, `enterprise` (*3.0.4/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/1ad894c32a9cf2a7147f4bdd76eb7a52f8df9d12/3.0.4/enterprise/Dockerfile)
+-	[`3.0.6`, `3.0`, `latest` (*3.0.6/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/22114d5022d6bd414fc7d34046b7a5f9cfdc930c/3.0.6/community/Dockerfile)
+-	[`3.0.6-enterprise`, `3.0-enterprise`, `enterprise` (*3.0.6/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/22114d5022d6bd414fc7d34046b7a5f9cfdc930c/3.0.6/enterprise/Dockerfile)
+-	[`3.0.5` (*3.0.5/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/22114d5022d6bd414fc7d34046b7a5f9cfdc930c/3.0.5/community/Dockerfile)
+-	[`3.0.5-enterprise` (*3.0.5/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/22114d5022d6bd414fc7d34046b7a5f9cfdc930c/3.0.5/enterprise/Dockerfile)
+-	[`3.0.4` (*3.0.4/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/1ad894c32a9cf2a7147f4bdd76eb7a52f8df9d12/3.0.4/community/Dockerfile)
+-	[`3.0.4-enterprise` (*3.0.4/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/1ad894c32a9cf2a7147f4bdd76eb7a52f8df9d12/3.0.4/enterprise/Dockerfile)
 -	[`3.0.3` (*3.0.3/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/3.0.3/community/Dockerfile)
 -	[`3.0.3-enterprise` (*3.0.3/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/3.0.3/enterprise/Dockerfile)
 -	[`3.0.2` (*3.0.2/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/e93e47d841dbcd93793c44c393195803ba60b16f/3.0.2/community/Dockerfile)
@@ -56,7 +60,7 @@ By default, this requires you to login with `neo4j/neo4j` and change the passwor
 
 ## Note on version 2.3
 
-Neo4j 3.0 introduced several major user-facing changes, primarily the new binary Bolt protocol. This is not available in 2.3 and as such, there is no need to expose the `7687` port. Due to changes made to the structure of configuration files, several environment variables used to configure the image has changed as well. Please see the [2.x specific section in the manual](http://neo4j.com/developer/docker-2.x/) for further details.
+Neo4j 3.0 introduced several major user-facing changes, primarily the new binary Bolt protocol. This is not available in 2.3 and as such, there is no need to expose the `7687` port. Due to changes made to the structure of configuration files, several environment variables used to configure the image has changed as well. Please see the [2.x specific section in the manual](http://neo4j.com/developer/docker-23/) for further details.
 
 You can start an instance of Neo4j 2.3 like this:
 
@@ -69,7 +73,7 @@ docker run \
 
 # Documentation
 
-For more examples and complete documentation please go [here for 2.x](http://neo4j.com/developer/docker-2.x/) and [here for 3.x](http://neo4j.com/developer/docker-3.x/).
+For more examples and complete documentation please go [here for 2.x](http://neo4j.com/developer/docker-23/) and [here for 3.x](http://neo4j.com/docs/operations-manual/current/deployment/single-instance/docker/).
 
 # Supported Docker versions
 

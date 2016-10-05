@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.0`, `latest` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/2260a724f914c2155f6b70bf5aa80732ebdf6497/Dockerfile)
+-	[`0.9`, `0.9.2`, `latest` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/6360dbcc1122a0243839e2eff3dd1cdbeb15e1d5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kong`)](https://github.com/docker-library/official-images/blob/master/library/kong). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkong).
 
@@ -52,8 +52,10 @@ Once the database is running, we can start a Kong container and link it to the d
 
 ```shell
 $ docker run -d --name kong \
-    -e "KONG_DATABASE=cassandra" \
     --link kong-database:kong-database \
+    -e "KONG_DATABASE=cassandra" \
+    -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
+    -e "KONG_PG_HOST=kong-database" \
     -p 8000:8000 \
     -p 8443:8443 \
     -p 8001:8001 \

@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.7.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/f027728bc196bc4ac606c2122fdc483fd5389615/Dockerfile)
--	[`alpine`, `2.7.3-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/147ddb18c8ad3ce21c07ca281a355f452ab940a6/Dockerfile)
+-	[`latest`, `2.7.4` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/6eaa9b15926232310317490a3b9975ef61be763c/Dockerfile)
+-	[`alpine`, `2.7.4-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/d2eeb20813164526f0443599fd82fd79fadee77e/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 

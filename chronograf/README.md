@@ -1,6 +1,5 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.12`, `0.12.0` (*0.12/Dockerfile*)](https://github.com/influxdata/chronograf-docker/blob/82b30f8a10b7dde9b13953400288768f109bf749/0.12/Dockerfile)
 -	[`0.13`, `0.13.0`, `latest` (*chronograf/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/chronograf/0.13/Dockerfile)
 -	[`1.0.0-rc1` (*chronograf/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/chronograf/1.0/Dockerfile)
 

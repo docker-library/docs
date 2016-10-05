@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.16.2`, `2.16`, `2`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/5e0bb9e49ae72291cf357c9ef1b4671c4ae25f9c/Dockerfile)
+-	[`2.16.2`, `2.16`, `2`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/2f8892a595e78b966141d70d51fdef5e6d627298/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/piwik`)](https://github.com/docker-library/official-images/blob/master/library/piwik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpiwik).
 

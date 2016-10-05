@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8`, `1.8.0`, `develop` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/49321b7d9b37d7a177a9a1b9c5f14eb13df5e204/1.8/Dockerfile)
+-	[`develop` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/4ae97421deb6751d767f0f4bf3102f60a3dc0093/1.8/Dockerfile)
+-	[`1.8`, `1.8.0`, `1.8.0rc1` (*1.8rc1/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/1553e9c0483811ace4bbd6a3b1b37eaf8d49dac0/1.8rc1/Dockerfile)
 -	[`1.6`, `1.6.21`, `stable`, `latest` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/87d717b0c05d4c43460a411c9871e9190c94f8bb/1.6/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/eggdrop`)](https://github.com/docker-library/official-images/blob/master/library/eggdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feggdrop).

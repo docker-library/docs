@@ -21,10 +21,10 @@
 -	[`3.5.2-alpine`, `3.5-alpine`, `3-alpine`, `alpine` (*3.5/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.5/alpine/Dockerfile)
 -	[`3.5.2-onbuild`, `3.5-onbuild`, `3-onbuild`, `onbuild` (*3.5/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.5/onbuild/Dockerfile)
 -	[`3.5.2-windowsservercore`, `3.5-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.5/windows/windowsservercore/Dockerfile)
--	[`3.6.0a4`, `3.6` (*3.6/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.6/Dockerfile)
--	[`3.6.0a4-slim`, `3.6-slim` (*3.6/slim/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.6/slim/Dockerfile)
--	[`3.6.0a4-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.6/alpine/Dockerfile)
--	[`3.6.0a4-onbuild`, `3.6-onbuild` (*3.6/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/635ea5d58b53d165f7bedae90f8933c720a58150/3.6/onbuild/Dockerfile)
+-	[`3.6.0b1`, `3.6` (*3.6/Dockerfile*)](https://github.com/docker-library/python/blob/a70c6819aa38d938d56e96408aa6e7c3a9162c64/3.6/Dockerfile)
+-	[`3.6.0b1-slim`, `3.6-slim` (*3.6/slim/Dockerfile*)](https://github.com/docker-library/python/blob/a70c6819aa38d938d56e96408aa6e7c3a9162c64/3.6/slim/Dockerfile)
+-	[`3.6.0b1-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/a70c6819aa38d938d56e96408aa6e7c3a9162c64/3.6/alpine/Dockerfile)
+-	[`3.6.0b1-onbuild`, `3.6-onbuild` (*3.6/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/635ea5d58b53d165f7bedae90f8933c720a58150/3.6/onbuild/Dockerfile)
 -	[`3.6.0a4-windowsservercore`, `3.6-windowsservercore` (*3.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.6/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/python`)](https://github.com/docker-library/official-images/blob/master/library/python). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpython).

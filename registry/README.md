@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2`, `2.5`, `2.5.0`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/f7992f4a9f7fade2be6240ffe84270b9438fc1bf/Dockerfile)
+-	[`2`, `2.5`, `2.5.1`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/3b4a84c1f152b60688e99d2efadf305479541482/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fregistry).
 
