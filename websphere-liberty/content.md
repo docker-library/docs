@@ -1,10 +1,8 @@
-Overview
-========
+# Overview
 
 The images in this repository contain IBM WebSphere Application Server Liberty for Developers and the IBM Java Runtime Environment. See the license section below for restrictions relating to the use of this image. For more information about WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
 
-Images
-======
+# Images
 
 There are multiple images available in this repository. The image with the tag `beta` contains the contents of the install archive for the latest monthly beta. The other images are all based on the latest generally available fix pack.
 
@@ -22,8 +20,7 @@ The `webProfile7` image contains the features required for Java EE7 Web Profile 
 
 The `webProfile6`, `webProfile7` and `javaee7` images all also contain a common set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-1.0`, `sessionDatabase-1.0`, `ssl-1.0`, and `webCache-1.0`.
 
-Usage
-=====
+# Usage
 
 The images are designed to support a number of different usage patterns. The following examples are based on the Java EE7 Liberty [application deployment sample](https://developer.ibm.com/wasdev/docs/article_appdeployment/) and assume that [DefaultServletEngine.zip](https://github.com/WASdev/sample.servlet/releases/download/V1/DefaultServletEngine.zip) has been extracted to `/tmp` and the `server.xml` updated to accept HTTP connections from outside of the container by adding the following element inside the `server` stanza:
 
@@ -87,8 +84,7 @@ The images are designed to support a number of different usage patterns. The fol
 	  --volumes-from app websphere-liberty:webProfile7
 	```
 
-Using IBM JRE Class data sharing
-================================
+# Using IBM JRE Class data sharing
 
 The IBM JRE provides a feature [Class data sharing](http://www-01.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/understanding/shared_classes.html) which offers transparent and dynamic sharing of data between multiple Java Virtual Machines running on the same host by using shared memory backed by a file. When running the Liberty Docker image, it looks for the file at `/opt/ibm/wlp/output/.classCache`. To benefit from Class data sharing, this location needs to be shared between containers either through the host or a data volume container.
 
@@ -112,8 +108,7 @@ Then, run the WebSphere Liberty image with the volumes from the data volume cont
 docker run -d -p 80:9080 -p 443:9443 --volumes-from classcache app
 ```
 
-Running WebSphere Liberty in read-only mode
-===========================================
+# Running WebSphere Liberty in read-only mode
 
 Liberty writes to two different directories when running: `/opt/ibm/wlp/output` and `/logs`. In order to run the Liberty image in read-only mode these may be mounted as temporary file systems. If using the provided image, the keystore will be generated on initial start up in the server configuration. This means that the server configuration directory either needs to be read-write or the keystore will need to be built into the image. In the example command `/config` is mounted as a read-write volume.
 
