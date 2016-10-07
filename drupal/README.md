@@ -1,11 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.50-apache`, `7-apache`, `7.50`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/61f25e58353d7ca9b2e07a46ff152892b2f7d9cf/7/apache/Dockerfile)
--	[`7.50-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/61f25e58353d7ca9b2e07a46ff152892b2f7d9cf/7/fpm/Dockerfile)
--	[`8.1.10-apache`, `8.1-apache`, `8-apache`, `apache`, `8.1.10`, `8.1`, `8`, `latest` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/35aada37a9179e8e9e70d29bbbb894ade2cad36a/8.1/apache/Dockerfile)
--	[`8.1.10-fpm`, `8.1-fpm`, `8-fpm`, `fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/35aada37a9179e8e9e70d29bbbb894ade2cad36a/8.1/fpm/Dockerfile)
--	[`8.2.0-rc2-apache`, `8.2.0-apache`, `8.2-apache`, `8.2.0-rc2`, `8.2.0`, `8.2` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/7996e3654f78992d322619358aa7277b99c857ca/8.2/apache/Dockerfile)
--	[`8.2.0-rc2-fpm`, `8.2.0-fpm`, `8.2-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/7996e3654f78992d322619358aa7277b99c857ca/8.2/fpm/Dockerfile)
+-	[`8.2.0-apache`, `8.2-apache`, `8-apache`, `apache`, `8.2.0`, `8.2`, `8`, `latest` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/1b3df9afb3a949b1c8ee29b52018abc8ccc3600e/8.2/apache/Dockerfile)
+-	[`8.2.0-fpm`, `8.2-fpm`, `8-fpm`, `fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/1b3df9afb3a949b1c8ee29b52018abc8ccc3600e/8.2/fpm/Dockerfile)
+-	[`7.51-apache`, `7-apache`, `7.51`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/814261d4b2d82854c50746c3e480dd514d5aa1d0/7/apache/Dockerfile)
+-	[`7.51-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/814261d4b2d82854c50746c3e480dd514d5aa1d0/7/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdrupal).
 
