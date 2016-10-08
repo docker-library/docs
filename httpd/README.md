@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.31`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/12bf8c8883340c98b3988a7bade8ef2d0d6dcf8a/2.2/Dockerfile)
--	[`2.2.31-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/8a0e3b8535245d914e703ae12afffc699f241cb8/2.2/alpine/Dockerfile)
--	[`2.4.23`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/12bf8c8883340c98b3988a7bade8ef2d0d6dcf8a/2.4/Dockerfile)
--	[`2.4.23-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/8a0e3b8535245d914e703ae12afffc699f241cb8/2.4/alpine/Dockerfile)
+-	[`2.2.31`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/b13054c7de5c74bbaa6d595dbe38969e6d4f860c/2.2/Dockerfile)
+-	[`2.2.31-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/b13054c7de5c74bbaa6d595dbe38969e6d4f860c/2.2/alpine/Dockerfile)
+-	[`2.4.23`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/b13054c7de5c74bbaa6d595dbe38969e6d4f860c/2.4/Dockerfile)
+-	[`2.4.23-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/b13054c7de5c74bbaa6d595dbe38969e6d4f860c/2.4/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/httpd`)](https://github.com/docker-library/official-images/blob/master/library/httpd). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhttpd).
 

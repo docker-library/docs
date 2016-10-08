@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.3.11`, `9.3`, `9`, `9.3.11-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.3-jre8/Dockerfile)
--	[`9.3.11-alpine`, `9.3-alpine`, `9-alpine`, `9.3.11-jre8-alpine`, `9.3-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.3-jre8/alpine/Dockerfile)
--	[`9.2.18`, `9.2`, `9.2.18-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.2-jre8/Dockerfile)
--	[`9.2.18-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.2-jre7/Dockerfile)
+-	[`9.3.12`, `9.3`, `9`, `9.3.12-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/09617a1ddc50bb080df9fa94ec5d636015449dbd/9.3-jre8/Dockerfile)
+-	[`9.3.12-alpine`, `9.3-alpine`, `9-alpine`, `9.3.12-jre8-alpine`, `9.3-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/09617a1ddc50bb080df9fa94ec5d636015449dbd/9.3-jre8/alpine/Dockerfile)
+-	[`9.2.19`, `9.2`, `9.2.19-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/422148d13cca3dfe4f4e6299185f7434725f9bd7/9.2-jre8/Dockerfile)
+-	[`9.2.19-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/422148d13cca3dfe4f4e6299185f7434725f9bd7/9.2-jre7/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjetty).
 
@@ -70,6 +70,14 @@ RUN java -jar "$JETTY_HOME/start.jar" --add-to-startd=jmx,stats
 ```
 
 Modules may be configured in a `Dockerfile` by editing the properties in the corresponding `/var/lib/jetty/start.d/*.mod` file or the module can be deactivated by removing that file.
+
+### JVM Configuration
+
+JVM options can be set by passing the `JAVA_OPTIONS` environment variable to the container. For example, to set the maximum heap size to 1 gigabyte, you can run the container as follows:
+
+```console
+$ docker run -e JAVA_OPTIONS="-Xmx1g" -d jetty
+```
 
 ## Read-only container
 

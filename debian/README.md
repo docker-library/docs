@@ -1,17 +1,17 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.6`, `8`, `jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/261f8d1fd3b61f1f790c1f47b006ca150064189b/jessie/Dockerfile)
--	[`jessie-backports` (*jessie/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/261f8d1fd3b61f1f790c1f47b006ca150064189b/jessie/backports/Dockerfile)
--	[`oldstable` (*oldstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/261f8d1fd3b61f1f790c1f47b006ca150064189b/oldstable/Dockerfile)
--	[`oldstable-backports` (*oldstable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/261f8d1fd3b61f1f790c1f47b006ca150064189b/oldstable/backports/Dockerfile)
--	[`sid` (*sid/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/5262a068af848af6e4084a1853999f4df1d68a2a/sid/Dockerfile)
--	[`stable` (*stable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/261f8d1fd3b61f1f790c1f47b006ca150064189b/stable/Dockerfile)
--	[`stable-backports` (*stable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/261f8d1fd3b61f1f790c1f47b006ca150064189b/stable/backports/Dockerfile)
--	[`stretch` (*stretch/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/5262a068af848af6e4084a1853999f4df1d68a2a/stretch/Dockerfile)
--	[`testing` (*testing/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/5262a068af848af6e4084a1853999f4df1d68a2a/testing/Dockerfile)
--	[`unstable` (*unstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/5262a068af848af6e4084a1853999f4df1d68a2a/unstable/Dockerfile)
--	[`7.11`, `7`, `wheezy` (*wheezy/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/261f8d1fd3b61f1f790c1f47b006ca150064189b/wheezy/Dockerfile)
--	[`wheezy-backports` (*wheezy/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/261f8d1fd3b61f1f790c1f47b006ca150064189b/wheezy/backports/Dockerfile)
+-	[`8.6`, `8`, `jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/88ae21052affd8a14553bb969f9d41c464032122/jessie/Dockerfile)
+-	[`jessie-backports` (*jessie/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/88ae21052affd8a14553bb969f9d41c464032122/jessie/backports/Dockerfile)
+-	[`oldstable` (*oldstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/a687a618203e1c0891b42d684ac72a85e1f0bfa6/oldstable/Dockerfile)
+-	[`oldstable-backports` (*oldstable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/a687a618203e1c0891b42d684ac72a85e1f0bfa6/oldstable/backports/Dockerfile)
+-	[`sid` (*sid/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/ee8b1cb93b20e3b9afc264126f1fe9b5518735c5/sid/Dockerfile)
+-	[`stable` (*stable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/88ae21052affd8a14553bb969f9d41c464032122/stable/Dockerfile)
+-	[`stable-backports` (*stable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/88ae21052affd8a14553bb969f9d41c464032122/stable/backports/Dockerfile)
+-	[`stretch` (*stretch/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/ee8b1cb93b20e3b9afc264126f1fe9b5518735c5/stretch/Dockerfile)
+-	[`testing` (*testing/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/ee8b1cb93b20e3b9afc264126f1fe9b5518735c5/testing/Dockerfile)
+-	[`unstable` (*unstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/ee8b1cb93b20e3b9afc264126f1fe9b5518735c5/unstable/Dockerfile)
+-	[`7.11`, `7`, `wheezy` (*wheezy/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/a687a618203e1c0891b42d684ac72a85e1f0bfa6/wheezy/Dockerfile)
+-	[`wheezy-backports` (*wheezy/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/a687a618203e1c0891b42d684ac72a85e1f0bfa6/wheezy/backports/Dockerfile)
 -	[`rc-buggy` (*debian/rc-buggy/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/22a998f815d55217afa0075411b810b8889ceac1/debian/rc-buggy/Dockerfile)
 -	[`experimental` (*debian/experimental/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/22a998f815d55217afa0075411b810b8889ceac1/debian/experimental/Dockerfile)
 
@@ -37,6 +37,18 @@ http://httpredir.debian.org/debian testing main`).
 The mirror of choice for these images is [the httpredir.debian.org redirecting mirror](http://httpredir.debian.org) so that it's as close to optimal as possible, regardless of location or connection. See the [httpredir homepage](http://httpredir.debian.org) for more information.
 
 If you find yourself needing a Debian release which is EOL (and thus only available from [archive.debian.org](http://archive.debian.org)), you should check out [the `debian/eol` image](https://hub.docker.com/r/debian/eol/), which includes tags for Debian releases as far back as Potato (Debian 2.2), the first release to fully utilize APT.
+
+## Locales
+
+Given that it is a faithful "minbase" install of Debian, this image only includes the `C`, `C.UTF-8`, and `POSIX` locales by default. For most uses requiring a UTF-8 locale, `C.UTF-8` is likely sufficient (`-e LANG=C.UTF-8` or `ENV LANG C.UTF-8`).
+
+For uses where that is not sufficient, other locales can be installed/generated via the `locales` package. [PostgreSQL has a good example of doing so](https://github.com/docker-library/postgres/blob/69bc540ecfffecce72d49fa7e4a46680350037f9/9.6/Dockerfile#L21-L24), copied below:
+
+```dockerfile
+RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
+	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
+ENV LANG en_US.utf8
+```
 
 ## How It's Made
 

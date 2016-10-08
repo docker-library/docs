@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `lein-2.7.0` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/8cf0e16895dfebd99cc4d93e86d66d4bc03f4ac1/Dockerfile)
--	[`onbuild`, `lein-2.7.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/8cf0e16895dfebd99cc4d93e86d66d4bc03f4ac1/onbuild/Dockerfile)
--	[`alpine`, `lein-2.7.0-alpine` (*alpine/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/8cf0e16895dfebd99cc4d93e86d66d4bc03f4ac1/alpine/Dockerfile)
--	[`alpine-onbuild`, `lein-2.7.0-alpine-onbuild` (*alpine-onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/8cf0e16895dfebd99cc4d93e86d66d4bc03f4ac1/alpine-onbuild/Dockerfile)
+-	[`latest`, `lein-2.7.1` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/c77c13529de02183433da15e8227eba63cc96724/Dockerfile)
+-	[`onbuild`, `lein-2.7.1-onbuild` (*onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/c77c13529de02183433da15e8227eba63cc96724/onbuild/Dockerfile)
+-	[`alpine`, `lein-2.7.1-alpine` (*alpine/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/c77c13529de02183433da15e8227eba63cc96724/alpine/Dockerfile)
+-	[`alpine-onbuild`, `lein-2.7.1-alpine-onbuild` (*alpine-onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/c77c13529de02183433da15e8227eba63cc96724/alpine-onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclojure).
 

@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base` (*Dockerfile*)](https://github.com/clearlinux/docker-brew-clearlinux/blob/0f1e92867c2fcaf0d94f9941444f6f917832f6ff/Dockerfile)
+-	[`latest`, `base` (*Dockerfile*)](https://github.com/clearlinux/docker-brew-clearlinux/blob/de83daab518dd1d86be3cecf442e3d7617e4aa2b/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/clearlinux`)](https://github.com/docker-library/official-images/blob/master/library/clearlinux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclearlinux).
 

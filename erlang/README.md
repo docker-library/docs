@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`19.0.7`, `19.0`, `19`, `latest` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/6da7cea045b2603a42db5804cc15e6cffbb65e19/19/Dockerfile)
--	[`19.0.7-slim`, `19.0-slim`, `19-slim`, `slim` (*19/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/6da7cea045b2603a42db5804cc15e6cffbb65e19/19/slim/Dockerfile)
--	[`19.0.7-onbuild`, `19.0-onbuild`, `19-onbuild`, `onbuild` (*19/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/847b82cdb8896d8d865bf32f2833787b5c62587c/19/onbuild/Dockerfile)
+-	[`19.1`, `19`, `latest` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/9be249effe93e3c61fa0749078e55ef8d050a16e/19/Dockerfile)
+-	[`19.1-slim`, `19-slim`, `slim` (*19/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/9be249effe93e3c61fa0749078e55ef8d050a16e/19/slim/Dockerfile)
+-	[`19.1-onbuild`, `19-onbuild`, `onbuild` (*19/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/9be249effe93e3c61fa0749078e55ef8d050a16e/19/onbuild/Dockerfile)
 -	[`18.3.4.4`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7f5e7b4768136caa5f15e0b84d6b503fa430ef7b/18/Dockerfile)
 -	[`18.3.4.4-slim`, `18.3.4-slim`, `18.3-slim`, `18-slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7f5e7b4768136caa5f15e0b84d6b503fa430ef7b/18/slim/Dockerfile)
 -	[`18.3.4.4-onbuild`, `18.3.4-onbuild`, `18.3-onbuild`, `18-onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/20e41464075dc0fc76709be77701530eddb6fe33/18/onbuild/Dockerfile)

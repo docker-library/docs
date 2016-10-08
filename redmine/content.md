@@ -42,6 +42,10 @@ Running Redmine with a database server is the recommened way.
 	$ docker run -d --name some-%%REPO%% --link some-postgres:postgres %%REPO%%
 	```
 
+## %%COMPOSE%%
+
+Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
+
 ## Alternative Web Server
 
 The other tags in this repository, like those with `passenger`, use the same environment and `--links` as the default tags that use WEBrick (`rails s`) but instead give you the option of a different web and application server. `passenger` uses [Phusion Passenger](https://www.phusionpassenger.com/). [`tini`](https://github.com/krallin/tini) is used for reaping [zombies](https://en.wikipedia.org/wiki/Zombie_process).

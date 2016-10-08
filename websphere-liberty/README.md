@@ -5,7 +5,7 @@
 -	[`webProfile6` (*ga/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b50db5440367cae75862a718d92f3b460a458a24/ga/developer/webProfile6/Dockerfile)
 -	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b50db5440367cae75862a718d92f3b460a458a24/ga/developer/webProfile7/Dockerfile)
 -	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b50db5440367cae75862a718d92f3b460a458a24/ga/developer/javaee7/Dockerfile)
--	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/894421b313af103cac79e55d18b3d6a583255dd6/beta/Dockerfile)
+-	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/0b36208258a0c0df3c2355045278c780fa4211ca/beta/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwebsphere-liberty).
 

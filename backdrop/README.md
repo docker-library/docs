@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3.4`, `1.3`, `1`, `1.3.4-apache`, `1.3-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/ce9edf32f4263d00181cc58a5fb23437316675b3/1/apache/Dockerfile)
--	[`1.3.4-fpm`, `1.3-fpm`, `1-fpm`, `fpm` (*1/fpm/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/ce9edf32f4263d00181cc58a5fb23437316675b3/1/fpm/Dockerfile)
+-	[`1.5.0`, `1.5`, `1`, `1.5.0-apache`, `1.5-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/204f01a842a77ea6b4f99797b3e7bdc31db05925/1/apache/Dockerfile)
+-	[`1.5.0-fpm`, `1.5-fpm`, `1-fpm`, `fpm` (*1/fpm/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/204f01a842a77ea6b4f99797b3e7bdc31db05925/1/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/backdrop`)](https://github.com/docker-library/official-images/blob/master/library/backdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbackdrop).
 
