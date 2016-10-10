@@ -74,3 +74,9 @@ The Plone image uses several environment variable that allow to specify a more s
 ## Documentation
 
 Full documentation for end users can be found in the ["docs"](https://github.com/plone/plone.docker/tree/master/docs) folder. It is also available online at http://docs.plone.org/
+
+## Credits
+
+This docker image was originally financed by the [European Environment Agency](http://eea.europa.eu), an agency of the European Union.
+
+Thanks to [Antonio De Marinis [@demarant](https://github.com/demarant), [Sven Strack (@svx)](https://github.com/svx) and [Alin Voinea (@avoinea)](https://github.com/avoinea) for their preliminary work.
