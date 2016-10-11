@@ -28,9 +28,13 @@ Assuming you have `storm-starter-topologies-1.0.2.jar` in the current directory.
 
 		$ docker run -d --restart always --name supervisor --link some-zookeeper:zookeeper --link some-nimbus:nimbus storm:1.0.2 storm supervisor
 
-4.	Now we can submit a topology to our cluster.
+4.	Now you can submit a topology to our cluster.
 
 		$ docker run --link some-nimbus:nimbus -it --rm -v $(pwd)/storm-starter-topologies-1.0.2.jar:/topology.jar storm:1.0.2 storm jar /topology.jar org.apache.storm.starter.WordCountTopology topology
+
+5.	Optionally, you can start the Storm UI.
+
+		$ docker run -d -p 8080:8080 --restart always --name ui --link some-nimbus:nimbus storm:1.0.2 storm ui
 
 ## %%COMPOSE%%
 
