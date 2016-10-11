@@ -121,6 +121,16 @@ Then, run the WebSphere Liberty image with the volumes from the data volume cont
 docker run -d -p 80:9080 -p 443:9443 --volumes-from classcache app
 ```
 
+# Running WebSphere Liberty in read-only mode
+
+Liberty writes to two different directories when running: `/opt/ibm/wlp/output` and `/logs`. In order to run the Liberty image in read-only mode these may be mounted as temporary file systems. If using the provided image, the keystore will be generated on initial start up in the server configuration. This means that the server configuration directory either needs to be read-write or the keystore will need to be built into the image. In the example command `/config` is mounted as a read-write volume.
+
+```console
+docker run -d -p 80:9080 -p 443:9443 \
+    --tmpfs /opt/ibm/wlp/output --tmpfs /logs -v /config --read-only \
+    websphere-liberty:javaee7
+```
+
 # License
 
 The Dockerfiles and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).

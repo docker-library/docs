@@ -10,8 +10,8 @@
 -	[`8u92-jdk-alpine`, `8u92-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/54c64cf47d2b705418feb68b811419a223c5a040/8-jdk/alpine/Dockerfile)
 -	[`8u102-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/baaaf7714f9c66e4c5decf2c108a2738b7186c7f/8-jre/Dockerfile)
 -	[`8u92-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/54c64cf47d2b705418feb68b811419a223c5a040/8-jre/alpine/Dockerfile)
--	[`9-b136-jdk`, `9-b136`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2ff433f60dd918bd852442dbb4f7b24a148c2fb0/9-jdk/Dockerfile)
--	[`9-b136-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2ff433f60dd918bd852442dbb4f7b24a148c2fb0/9-jre/Dockerfile)
+-	[`9-b139-jdk`, `9-b139`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/6882089f1c079469c3e2cadca1ed8371fb8495f2/9-jdk/Dockerfile)
+-	[`9-b139-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/6882089f1c079469c3e2cadca1ed8371fb8495f2/9-jre/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/openjdk`)](https://github.com/docker-library/official-images/blob/master/library/openjdk). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fopenjdk).
 

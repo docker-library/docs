@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3.3`, `1.3`, `latest` (*1.3/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/ded1bb8a2438374853a5a94a3ef1171d081dacff/1.3/Dockerfile)
--	[`1.3.3-slim`, `1.3-slim`, `slim` (*1.3/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/ded1bb8a2438374853a5a94a3ef1171d081dacff/1.3/slim/Dockerfile)
+-	[`1.3.4`, `1.3`, `latest` (*1.3/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/d8d656d7c0dc9dd2956a22276c93cb97568ea6d4/1.3/Dockerfile)
+-	[`1.3.4-slim`, `1.3-slim`, `slim` (*1.3/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/d8d656d7c0dc9dd2956a22276c93cb97568ea6d4/1.3/slim/Dockerfile)
 -	[`1.2.6`, `1.2` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/Dockerfile)
 -	[`1.2.6-slim`, `1.2-slim` (*1.2/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/slim/Dockerfile)
 
