@@ -79,4 +79,4 @@ Full documentation for end users can be found in the ["docs"](https://github.com
 
 This docker image was originally financed by the [European Environment Agency](http://eea.europa.eu), an agency of the European Union.
 
-Thanks to [Antonio De Marinis [@demarant](https://github.com/demarant), [Sven Strack (@svx)](https://github.com/svx) and [Alin Voinea (@avoinea)](https://github.com/avoinea) for their preliminary work.
+Thanks to [Antonio De Marinis](https://github.com/demarant), [Sven Strack](https://github.com/svx) and [Alin Voinea](https://github.com/avoinea) for their preliminary work.
