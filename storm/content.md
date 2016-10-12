@@ -46,16 +46,20 @@ This image uses [default configuration](https://github.com/apache/storm/blob/v1.
 
 1.	Using command line arguments.
 
-		$ docker run -d --restart always --name nimbus storm:1.0.2 storm nimbus -c storm.log.dir="/logs" -c storm.zookeeper.servers="[zookeeper]"
+		$ docker run -d --restart always --name nimbus storm:1.0.2 storm nimbus -c storm.zookeeper.servers="[zookeeper]"
 
 2.	Assuming you have `storm.yaml` in the current directory you can mount it as a volume.
 
-		$ docker run -it -v $(pwd)/storm.yaml:/apache-storm-1.0.2/conf/storm.yaml storm:1.0.2 storm nimbus
+		$ docker run -it -v $(pwd)/storm.yaml:/conf/storm.yaml storm:1.0.2 storm nimbus
+
+## Logging
+
+This image uses [default logging configuration](https://github.com/apache/storm/tree/v1.0.2/log4j2). All logs go to the `/logs` directory by default.
 
 ## Data persistence
 
 No data are persisted by default. For convenience there are `/data` and `/logs` directories in the image owned by `storm` user. Use them accordingly to persist data and logs using volumes.
 
-	$ docker run -it -v /logs -v /data storm:1.0.2 storm nimbus -c storm.log.dir="/logs" -c storm.local.dir="/data"
+	$ docker run -it -v /logs -v /data storm:1.0.2 storm nimbus
 
 *Please be noticed that using paths other than those predefined is likely to cause permission denied errors. It's because for [security reasons](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#user) the Storm is running under the non-root `storm` user.*
