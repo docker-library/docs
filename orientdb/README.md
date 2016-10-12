@@ -81,7 +81,7 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
