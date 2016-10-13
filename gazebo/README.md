@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`gzserver4` (*gazebo/gazebo4/gzserver4/Dockerfile*)](https://github.com/osrf/docker_images/blob/40b2e3c4b6fa61132c4b5f2ccbc7ae9bfff7cf8e/gazebo/gazebo4/gzserver4/Dockerfile)
--	[`libgazebo4` (*gazebo/gazebo4/libgazebo4/Dockerfile*)](https://github.com/osrf/docker_images/blob/40b2e3c4b6fa61132c4b5f2ccbc7ae9bfff7cf8e/gazebo/gazebo4/libgazebo4/Dockerfile)
--	[`gzserver5` (*gazebo/gazebo5/gzserver5/Dockerfile*)](https://github.com/osrf/docker_images/blob/40b2e3c4b6fa61132c4b5f2ccbc7ae9bfff7cf8e/gazebo/gazebo5/gzserver5/Dockerfile)
--	[`libgazebo5` (*gazebo/gazebo5/libgazebo5/Dockerfile*)](https://github.com/osrf/docker_images/blob/40b2e3c4b6fa61132c4b5f2ccbc7ae9bfff7cf8e/gazebo/gazebo5/libgazebo5/Dockerfile)
--	[`gzserver6` (*gazebo/gazebo6/gzserver6/Dockerfile*)](https://github.com/osrf/docker_images/blob/40b2e3c4b6fa61132c4b5f2ccbc7ae9bfff7cf8e/gazebo/gazebo6/gzserver6/Dockerfile)
--	[`libgazebo6` (*gazebo/gazebo6/libgazebo6/Dockerfile*)](https://github.com/osrf/docker_images/blob/40b2e3c4b6fa61132c4b5f2ccbc7ae9bfff7cf8e/gazebo/gazebo6/libgazebo6/Dockerfile)
--	[`gzserver7` (*gazebo/gazebo7/gzserver7/Dockerfile*)](https://github.com/osrf/docker_images/blob/40b2e3c4b6fa61132c4b5f2ccbc7ae9bfff7cf8e/gazebo/gazebo7/gzserver7/Dockerfile)
--	[`libgazebo7`, `latest` (*gazebo/gazebo7/libgazebo7/Dockerfile*)](https://github.com/osrf/docker_images/blob/40b2e3c4b6fa61132c4b5f2ccbc7ae9bfff7cf8e/gazebo/gazebo7/libgazebo7/Dockerfile)
+-	[`gzserver4` (*gazebo/gazebo4/gzserver4/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo4/gzserver4/Dockerfile)
+-	[`libgazebo4` (*gazebo/gazebo4/libgazebo4/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo4/libgazebo4/Dockerfile)
+-	[`gzserver5` (*gazebo/gazebo5/gzserver5/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo5/gzserver5/Dockerfile)
+-	[`libgazebo5` (*gazebo/gazebo5/libgazebo5/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo5/libgazebo5/Dockerfile)
+-	[`gzserver6` (*gazebo/gazebo6/gzserver6/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo6/gzserver6/Dockerfile)
+-	[`libgazebo6` (*gazebo/gazebo6/libgazebo6/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo6/libgazebo6/Dockerfile)
+-	[`gzserver7` (*gazebo/gazebo7/gzserver7/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo7/gzserver7/Dockerfile)
+-	[`libgazebo7`, `latest` (*gazebo/gazebo7/libgazebo7/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo7/libgazebo7/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/gazebo`)](https://github.com/docker-library/official-images/blob/master/library/gazebo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgazebo).
 

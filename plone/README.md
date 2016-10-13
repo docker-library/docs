@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.6`, `5.0`, `5`, `latest` (*5.0/5.0.6/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/5.0/5.0.6/debian/Dockerfile)
--	[`5.0.5` (*5.0/5.0.5/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/5.0/5.0.5/debian/Dockerfile)
--	[`5.0.4` (*5.0/5.0.4/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/5.0/5.0.4/debian/Dockerfile)
--	[`5.0.3` (*5.0/5.0.3/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/5.0/5.0.3/debian/Dockerfile)
--	[`5.0.2` (*5.0/5.0.2/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/5.0/5.0.2/debian/Dockerfile)
--	[`4.3.11`, `4.3`, `4` (*4.3/4.3.11/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/4.3/4.3.11/debian/Dockerfile)
--	[`4.3.10` (*4.3/4.3.10/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/4.3/4.3.10/debian/Dockerfile)
--	[`4.3.9` (*4.3/4.3.9/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/4.3/4.3.9/debian/Dockerfile)
--	[`4.3.8` (*4.3/4.3.8/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/4.3/4.3.8/debian/Dockerfile)
--	[`4.3.7` (*4.3/4.3.7/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/4.3/4.3.7/debian/Dockerfile)
+-	[`5.0.6`, `5.0`, `5`, `latest` (*5.0/5.0.6/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/5.0/5.0.6/debian/Dockerfile)
+-	[`5.0.5` (*5.0/5.0.5/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/5.0/5.0.5/debian/Dockerfile)
+-	[`5.0.4` (*5.0/5.0.4/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/5.0/5.0.4/debian/Dockerfile)
+-	[`5.0.3` (*5.0/5.0.3/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/5.0/5.0.3/debian/Dockerfile)
+-	[`5.0.2` (*5.0/5.0.2/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/5.0/5.0.2/debian/Dockerfile)
+-	[`4.3.11`, `4.3`, `4` (*4.3/4.3.11/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/4.3/4.3.11/debian/Dockerfile)
+-	[`4.3.10` (*4.3/4.3.10/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/4.3/4.3.10/debian/Dockerfile)
+-	[`4.3.9` (*4.3/4.3.9/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/4.3/4.3.9/debian/Dockerfile)
+-	[`4.3.8` (*4.3/4.3.8/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/4.3/4.3.8/debian/Dockerfile)
+-	[`4.3.7` (*4.3/4.3.7/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/4.3/4.3.7/debian/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/plone`)](https://github.com/docker-library/official-images/blob/master/library/plone). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fplone).
 
