@@ -12,7 +12,7 @@ Apache ZooKeeper is a software project of the Apache Software Foundation, provid
 
 	$ docker run --name some-zookeeper --restart always -d zookeeper
 
-This image includes `EXPOSE 2181` (the zookeeper port), so standard container linking will make it automatically available to the linked containers. Since the Zookeeper "fails fast" it's better to always restart it.
+This image includes `EXPOSE 2181 2888 3888` (the zookeeper client port, follower port, election port respectively), so standard container linking will make it automatically available to the linked containers. Since the Zookeeper "fails fast" it's better to always restart it.
 
 ## Connect to Zookeeper from an application in another Docker container
 
