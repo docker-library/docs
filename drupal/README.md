@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.0-apache`, `8.2-apache`, `8-apache`, `apache`, `8.2.0`, `8.2`, `8`, `latest` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/1b3df9afb3a949b1c8ee29b52018abc8ccc3600e/8.2/apache/Dockerfile)
--	[`8.2.0-fpm`, `8.2-fpm`, `8-fpm`, `fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/1b3df9afb3a949b1c8ee29b52018abc8ccc3600e/8.2/fpm/Dockerfile)
+-	[`8.2.1-apache`, `8.2-apache`, `8-apache`, `apache`, `8.2.1`, `8.2`, `8`, `latest` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/13f73afd9cfaabfae09340617dc25beebe4028ba/8.2/apache/Dockerfile)
+-	[`8.2.1-fpm`, `8.2-fpm`, `8-fpm`, `fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/13f73afd9cfaabfae09340617dc25beebe4028ba/8.2/fpm/Dockerfile)
 -	[`7.51-apache`, `7-apache`, `7.51`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/814261d4b2d82854c50746c3e480dd514d5aa1d0/7/apache/Dockerfile)
 -	[`7.51-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/814261d4b2d82854c50746c3e480dd514d5aa1d0/7/fpm/Dockerfile)
 

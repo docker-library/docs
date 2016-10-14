@@ -12,12 +12,9 @@
 -	[`8-jre-1.7.4-plume` (*8-jre-1.7.4-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/592da5738fd23d6c8a483efce1710cf03ee508c6/8-jre-1.7.4-plume/Dockerfile)
 -	[`8-jre-1.7.4-plus` (*8-jre-1.7.4-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/592da5738fd23d6c8a483efce1710cf03ee508c6/8-jre-1.7.4-plus/Dockerfile)
 -	[`8-jre-1.7.4-webprofile` (*8-jre-1.7.4-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/592da5738fd23d6c8a483efce1710cf03ee508c6/8-jre-1.7.4-webprofile/Dockerfile)
--	[`7-jdk-7.0.0-plume` (*7-jdk-7.0.0-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/30c7337214e705e2e8197948b31bec0fe4f51557/7-jdk-7.0.0-plume/Dockerfile)
--	[`7-jdk-7.0.0-plus` (*7-jdk-7.0.0-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/30c7337214e705e2e8197948b31bec0fe4f51557/7-jdk-7.0.0-plus/Dockerfile)
--	[`7-jdk-7.0.0-webprofile` (*7-jdk-7.0.0-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/30c7337214e705e2e8197948b31bec0fe4f51557/7-jdk-7.0.0-webprofile/Dockerfile)
--	[`8-jdk-7.0.0-plume` (*8-jdk-7.0.0-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/30c7337214e705e2e8197948b31bec0fe4f51557/8-jdk-7.0.0-plume/Dockerfile)
--	[`8-jdk-7.0.0-plus` (*8-jdk-7.0.0-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/30c7337214e705e2e8197948b31bec0fe4f51557/8-jdk-7.0.0-plus/Dockerfile)
--	[`8-jdk-7.0.0-webprofile`, `latest` (*8-jdk-7.0.0-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/30c7337214e705e2e8197948b31bec0fe4f51557/8-jdk-7.0.0-webprofile/Dockerfile)
+-	[`8-jdk-7.0.1-plume` (*8-jdk-7.0.1-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/8c5b5a96305a9b935d304789fcf3707938a175d6/8-jdk-7.0.1-plume/Dockerfile)
+-	[`8-jdk-7.0.1-plus` (*8-jdk-7.0.1-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/8c5b5a96305a9b935d304789fcf3707938a175d6/8-jdk-7.0.1-plus/Dockerfile)
+-	[`8-jdk-7.0.1-webprofile`, `latest` (*8-jdk-7.0.1-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/8c5b5a96305a9b935d304789fcf3707938a175d6/8-jdk-7.0.1-webprofile/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/tomee`)](https://github.com/docker-library/official-images/blob/master/library/tomee). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomee).
 

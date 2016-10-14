@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`42.1`, `leap`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/5c63b0a9d2c8b13b81855751168066666d77adb1/docker/Dockerfile)
--	[`13.2`, `harlequin` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/2479d8d0f90bce3c2e33dd2fc311d6599c336fdf/docker/Dockerfile)
--	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/046d77c122ee04485df87870f31713f87a30c1e2/docker/Dockerfile)
+-	[`42.1`, `leap`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/c8abb4323ef1744bfb9e5d4f127d9076083f0a6e/docker/Dockerfile)
+-	[`13.2`, `harlequin` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/308dda3268f8512795c32cf0e738d5e668f2d3a1/docker/Dockerfile)
+-	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/0a2809c7b06e21c055b7adfe9e90941516f3d126/docker/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/opensuse`)](https://github.com/docker-library/official-images/blob/master/library/opensuse). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fopensuse).
 
