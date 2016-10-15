@@ -1,15 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.6`, `5.0`, `5`, `latest` (*5.0/5.0.6/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/5.0/5.0.6/debian/Dockerfile)
--	[`5.0.5` (*5.0/5.0.5/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/5.0/5.0.5/debian/Dockerfile)
--	[`5.0.4` (*5.0/5.0.4/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/5.0/5.0.4/debian/Dockerfile)
--	[`5.0.3` (*5.0/5.0.3/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/5.0/5.0.3/debian/Dockerfile)
--	[`5.0.2` (*5.0/5.0.2/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/5.0/5.0.2/debian/Dockerfile)
--	[`4.3.11`, `4.3`, `4` (*4.3/4.3.11/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/4.3/4.3.11/debian/Dockerfile)
--	[`4.3.10` (*4.3/4.3.10/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/4.3/4.3.10/debian/Dockerfile)
--	[`4.3.9` (*4.3/4.3.9/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/4.3/4.3.9/debian/Dockerfile)
--	[`4.3.8` (*4.3/4.3.8/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/4.3/4.3.8/debian/Dockerfile)
--	[`4.3.7` (*4.3/4.3.7/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/443c34c35e774820621bf5c0966c81c3b45cb284/4.3/4.3.7/debian/Dockerfile)
+-	[`5.0.6`, `5.0`, `5`, `latest` (*5.0/5.0.6/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/5.0/5.0.6/debian/Dockerfile)
+-	[`4.3.11`, `4.3`, `4` (*4.3/4.3.11/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/4.3/4.3.11/debian/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/plone`)](https://github.com/docker-library/official-images/blob/master/library/plone). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fplone).
 
@@ -112,10 +104,6 @@ Please see [the Docker installation documentation](https://docs.docker.com/insta
 
 # User Feedback
 
-## Documentation
-
-Documentation for this image is stored in the [`plone/` directory](https://github.com/docker-library/docs/tree/master/plone) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
-
 ## Issues
 
 If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/plone/plone.docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
@@ -127,3 +115,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/plone/plone.docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`plone/` directory](https://github.com/docker-library/docs/tree/master/plone) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
