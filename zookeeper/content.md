@@ -38,7 +38,31 @@ Zookeeper configuration is located in `/conf`. One way to change it is mounting 
 
 ## Environment variables
 
-Variables below are mandatory if you want to run Zookeeper in replicated mode.
+ZooKeeper recommended defaults are used if `zoo.cfg` file is not provided. They can be overridden using the following environment variables.
+
+	$ docker run -e "ZOO_INIT_LIMIT=10" --name some-zookeeper --restart always -d 31z4/zookeeper
+
+### `ZOO_TICK_TIME`
+
+Defaults to `2000`. ZooKeeper's `tickTime`
+
+> The length of a single tick, which is the basic time unit used by ZooKeeper, as measured in milliseconds. It is used to regulate heartbeats, and timeouts. For example, the minimum session timeout will be two ticks
+
+### `ZOO_INIT_LIMIT`
+
+Defaults to `5`. ZooKeeper's `initLimit`
+
+> Amount of time, in ticks (see tickTime), to allow followers to connect and sync to a leader. Increased this value as needed, if the amount of data managed by ZooKeeper is large.
+
+### `ZOO_SYNC_LIMIT`
+
+Defaults to `2`. ZooKeeper's `syncLimit`
+
+> Amount of time, in ticks (see tickTime), to allow followers to sync with ZooKeeper. If followers fall too far behind a leader, they will be dropped.
+
+## Replicated mode
+
+Environment variables below are mandatory if you want to run Zookeeper in replicated mode.
 
 ### `ZOO_MY_ID`
 
@@ -50,6 +74,6 @@ This variable allows you to specify a list of machines of the Zookeeper ensemble
 
 ## Where to store data
 
-This image is configured with volumes at `/data` and `/datalog` to hold the Zookeeper in-memory database snapshots and the transaction log of updates to the database, respectively.
+This image is configured with volumes at `/data`, `/datalog` and `/conf` to hold the Zookeeper in-memory database snapshots, the transaction log of updates to the database and configuration, respectively.
 
 > Be careful where you put the transaction log. A dedicated transaction log device is key to consistent good performance. Putting the log on a busy device will adversely effect performance.
