@@ -1,4 +1,5 @@
-# What is TomEE?
+What is TomEE?
+==============
 
 Apache TomEE, pronounced "Tommy", is an all-Apache Java EE Web Profile certified stack where Apache Tomcat is top dog. Apache TomEE is assembled from a vanilla Apache Tomcat zip file. We start with Apache Tomcat, add our jars and zip up the rest. The result is Tomcat with added EE features - TomEE.
 
@@ -13,7 +14,8 @@ Apache TomEE comes with four different flavors, Web Profile, JAX-RS, Plus and Pl
 
 All Dockerfile files of supported versions can be found at https://github.com/tomitribe/docker-tomee
 
-# Apache TomEE and Tomitribe
+Apache TomEE and Tomitribe
+==========================
 
 Tomitribe provides commercial support, professional services and training for Apache TomEE. We offers a new business model that furthers the development and growth of the Open Source project all the while fulfilling business requirement for production support. The Tomitribe Community Partnership Program connects businesses with the community.
 
@@ -24,9 +26,19 @@ Below are some press releases that might be helpful:
 -	Tomitribe Announces Enterprise Service Support for Apache TomEE http://www.tomitribe.com/company/press/tomitribe_enterprise_service_support_for_apache_tomee_javaone_2013/
 -	Tomitribe Introduces Community Partnership Program Conference http://www.tomitribe.com/company/press/tomitribe-introduces-community-partnership-program-and-presents-java-ee-sessions-at-javaone-2014-conference/
 
-# How to use this image.
+Apache TomEE and ManageCat
+==========================
 
-Run the default TomEE server (`CMD ["catalina.sh", "run"]`):
+Another commercial support company provides enterprise support for Apache TomEE is ManageCat. ManageCat involves with a lot of Apache Java EE projects to contribute open source Java EE ecosystem. ManageCat co-founder is also a founder of open source Apache OpenWebBeans project (http://openwebbans.apache.org) which is heavily used in Apache TomEE application server for CDI integration.
+
+ManageCat is a cloud management and service platform for Apache Tomcat and Apache TomEE servers. Involving with a lot of Apache Java EE projects, we want to transfer not only our knowledge about Apache TomEE and also other Java EE technologies including JPA, EJB, CDI, JSF, JSTL, JTA, JMS. We will help our customers to develop and deploy their production based Java EE applications smoothly.
+
+-	ManageCat Announces Enterprise Service Support for Apache Tomcat and TomEE, http://managecat.com/index.php/enterprise-tomcat-support
+
+How to use this image.
+======================
+
+Run the default TomEE server (`CMD ["catalina.sh", "run"]`\):
 
 ```console
 $ docker run -it --rm tomee:<java-version>\-<tomeeversion>\-<flavour>
@@ -50,4 +62,6 @@ The configuration files are available in `/usr/local/tomee/conf/`. By default, n
 
 You can also use this image as base image for deploying your war application. To do it you need to create a Dockerfile based on Tomee Docker image and add the war file in `webapps` directory:
 
-	ADD <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
+```
+ADD <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
+```
