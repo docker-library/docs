@@ -74,6 +74,6 @@ This variable allows you to specify a list of machines of the Zookeeper ensemble
 
 ## Where to store data
 
-This image is configured with volumes at `/data`, `/datalog` and `/conf` to hold the Zookeeper in-memory database snapshots, the transaction log of updates to the database and configuration, respectively.
+This image is configured with volumes at `/data` and `/datalog` to hold the Zookeeper in-memory database snapshots and the transaction log of updates to the database, respectively.
 
 > Be careful where you put the transaction log. A dedicated transaction log device is key to consistent good performance. Putting the log on a busy device will adversely effect performance.
