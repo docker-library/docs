@@ -52,14 +52,14 @@ Finally, a Silverpeas instance can be started by specifying the required databas
 	    -e DB_NAME="Silverpeas" \
 	    -e DB_USER="silverpeas" \
 	    -e DB_PASSWORD="thesilverpeaspassword" \
-	    -v /var/log/silverpeas:/opt/silverpeas/log \
-	    -v /var/lib/silverpeas/data:/opt/silverpeas/data \
+	    -v silverpeas-log:/opt/silverpeas/log \
+	    -v silverpeas-data:/opt/silverpeas/data \
 	    --link postgresql:database \
 	    silverpeas
 
 The Silverpeas images expose the 8000 port and here this port is mapped to the 8080 port of the host. For a PostgreSQL database system, you can omit the `DB_SERVERTYPE` environment variable.
 
-It is recommended to mount the volumes `/opt/silverpeas/log` and `/opt/silverpeas/data` of the container: the first volume contains the logs produced by Silverpeas whereas the second volume contains all the data that are created and managed by the users in Silverpeas. (Using a [Data Volume Container](https://docs.docker.com/engine/userguide/containers/dockervolumes/) to map `/opt/silverpeas/log` and `/opt/silverpeas/data` is a better solution.)
+By default, some volumes are created inside the container, so that we can access them in the host.(Refers the [Docker Documentation](https://docs.docker.com/engine/tutorials/dockervolumes/#locating-a-volume) to locate them.) Among them `/opt/silverpeas/log` and `/opt/silverpeas/data`: the first volume contains the logs produced by Silverpeas whereas the second volume contains all the data that are created and managed by the users in Silverpeas. Because the latter has already a directories structure created at image creation, a host directory cannot be mounted into the container at `opt/silverpeas/data` without losing the volume's content (the mount point overlays the pre-existing content of the volume). In our example, in order to easily locate the two volumes, we label them explicitly with respectively the labels `silverpeas-log` and `silverpeas-data`. (Using a [Data Volume Container](https://docs.docker.com/engine/userguide/containers/dockervolumes/) to map `/opt/silverpeas/log` and `/opt/silverpeas/data` is a better solution.)
 
 ### Start a Silverpeas instance with a finer configuration
 
@@ -67,8 +67,8 @@ The Silverpeas global configuration is defined in the `/opt/silverpeas/configura
 
 	$ docker run --name silverpeas -p 8080:8000 -d \
 	    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties
-	    -v /var/log/silverpeas:/opt/silverpeas/log \
-	    -v /var/lib/silverpeas:/opt/silverpeas/data \
+	    -v silverpeas-log:/opt/silverpeas/log \
+	    -v silverpeas-data:/opt/silverpeas/data \
 	    --link postgresql:database \
 	    silverpeas
 
@@ -76,22 +76,22 @@ where `/etc/silverpeas/config.properties` is your own configuration file on the 
 
 ## Start a Silverpeas instance with a database on the host
 
-For a database system running on the host (or on a remote host), you have to specify this host both to the container at starting and to Silverpeas by defining it into its global configuration file:
+For a database system running on the host (or on a remote host) with 192.168.1.14 as IP address, you have to specify this host both to the container at starting and to Silverpeas by defining it into its global configuration file:
 
 	$ docker run --name silverpeas -p 8080:8000 -d \
-	    --add-host=database:172.17.0.1 \
+	    --add-host=database:192.168.1.14 \
 	    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties \
-	    -v /var/log/silverpeas:/opt/silverpeas/log \
-	    -v /var/lib/silverpeas:/opt/silverpeas/data \
+	    -v silverpeas-log:/opt/silverpeas/log \
+	    -v silverpeas-data:/opt/silverpeas/data \
 	    silverpeas
 
-where `database` is the hostname on which is running the database system and that is referred as such in your `/etc/silverpeas/config.properties` file. This hostname is mapped to the IP address of the Docker gateway in your installation of the Docker Engine (in my case `172.17.0.1`).
+where `database` is the hostname referred by the `DB_SERVER` parameter in your `/etc/silverpeas/config.properties` file as the host running the database system and that is mapped here to the actual IP address of this host. The hostname is added in the `/etc/hosts` file in the container.
 
 For a PostgreSQL database system, some configurations are required in order to be accessed from the Silverpeas container:
 
--	In the file `postgresql.conf`, edit the parameter `listen_addresses` to add the address of the Docker gateway (in my case `172.17.0.1`)
+-	In the file `postgresql.conf`, edit the parameter `listen_addresses` to add the address of the PostgreSQL host (`192.168.1.14` in our example)
 
-	listen_addresses = 'localhost,172.17.0.1'
+	listen_addresses = 'localhost,192.168.1.14'
 
 -	In the file `pg_hba.conf`, add an entry for the Docker subnetwork
 
@@ -107,7 +107,7 @@ To manage more effectively the data produced by an application, the Docker team 
 -	the user data and those produced by Silverpeas from the user data in `/opt/silverpeas/data`,
 -	the user domains and the domain authentication definitions in respectively `/opt/silverpeas/properties/org/silverpeas/domains` and `/opt/silverpeas/properties/org/silverpeas/authentication`.
 
-The directories `/opt/silverpeas/log`, `/opt/silverpeas/data`, and `/opt/silverpeas/properties` are all defined as volumes in the Docker image and then can be mounted on the host.
+The directories `/opt/silverpeas/log`, `/opt/silverpeas/data`, and `/opt/silverpeas/properties` are all defined as volumes in the Docker image.
 
 To define a Data Volume Container for Silverpeas:
 
