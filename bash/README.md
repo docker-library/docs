@@ -7,6 +7,7 @@
 -	[`4.0.44`, `4.0` (*4.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/4.0/Dockerfile)
 -	[`3.2.57`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/3.2/Dockerfile)
 -	[`3.1.23`, `3.1` (*3.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/3.1/Dockerfile)
+-	[`3.0.22`, `3.0` (*3.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/0fb93762d52d5f73ea53557706f19a255ef990d1/3.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/bash`)](https://github.com/docker-library/official-images/blob/master/library/bash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbash).
 
