@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6.9.0`, `6.9`, `6`, `boron`, `latest` (*6.9/Dockerfile*)](https://github.com/nodejs/docker-node/blob/3e7f85f2b285be63ed06fda8b8e8d8b2915fed12/6.9/Dockerfile)
--	[`6.9.0-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild`, `onbuild` (*6.9/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/3e7f85f2b285be63ed06fda8b8e8d8b2915fed12/6.9/onbuild/Dockerfile)
--	[`6.9.0-slim`, `6.9-slim`, `6-slim`, `boron-slim`, `slim` (*6.9/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/3e7f85f2b285be63ed06fda8b8e8d8b2915fed12/6.9/slim/Dockerfile)
--	[`6.9.0-wheezy`, `6.9-wheezy`, `6-wheezy`, `boron-wheezy`, `wheezy` (*6.9/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/3e7f85f2b285be63ed06fda8b8e8d8b2915fed12/6.9/wheezy/Dockerfile)
+-	[`6.9.1`, `6.9`, `6`, `boron`, `latest` (*6.9/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/Dockerfile)
+-	[`6.9.1-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild`, `onbuild` (*6.9/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/onbuild/Dockerfile)
+-	[`6.9.1-slim`, `6.9-slim`, `6-slim`, `boron-slim`, `slim` (*6.9/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/slim/Dockerfile)
+-	[`6.9.1-wheezy`, `6.9-wheezy`, `6-wheezy`, `boron-wheezy`, `wheezy` (*6.9/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/wheezy/Dockerfile)
 -	[`4.6.1`, `4.6`, `4`, `argon` (*4.6/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a37f33d34909d9e700b2875c684b8e728b236dc4/4.6/Dockerfile)
 -	[`4.6.1-onbuild`, `4.6-onbuild`, `4-onbuild`, `argon-onbuild` (*4.6/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a37f33d34909d9e700b2875c684b8e728b236dc4/4.6/onbuild/Dockerfile)
 -	[`4.6.1-slim`, `4.6-slim`, `4-slim`, `argon-slim` (*4.6/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a37f33d34909d9e700b2875c684b8e728b236dc4/4.6/slim/Dockerfile)
