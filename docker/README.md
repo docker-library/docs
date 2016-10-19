@@ -1,19 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.12.2-rc2`, `1.12-rc`, `rc` (*1.12-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/b1560edfa1e5bb0fbbada15600612da6104d2e04/1.12-rc/Dockerfile)
--	[`1.12.2-rc2-dind`, `1.12-rc-dind`, `rc-dind` (*1.12-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/dba6c6279614ac0a7e520f0b7f7c027250488a4f/1.12-rc/dind/Dockerfile)
--	[`1.12.2-rc2-git`, `1.12-rc-git`, `rc-git` (*1.12-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/dba6c6279614ac0a7e520f0b7f7c027250488a4f/1.12-rc/git/Dockerfile)
--	[`1.12.2-rc2-experimental`, `1.12-rc-experimental`, `rc-experimental` (*1.12-rc/experimental/Dockerfile*)](https://github.com/docker-library/docker/blob/b1560edfa1e5bb0fbbada15600612da6104d2e04/1.12-rc/experimental/Dockerfile)
--	[`1.12.2-rc2-experimental-dind`, `1.12-rc-experimental-dind`, `rc-experimental-dind` (*1.12-rc/experimental/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/dba6c6279614ac0a7e520f0b7f7c027250488a4f/1.12-rc/experimental/dind/Dockerfile)
--	[`1.12.2-rc2-experimental-git`, `1.12-rc-experimental-git`, `rc-experimental-git` (*1.12-rc/experimental/git/Dockerfile*)](https://github.com/docker-library/docker/blob/dba6c6279614ac0a7e520f0b7f7c027250488a4f/1.12-rc/experimental/git/Dockerfile)
--	[`1.12.1`, `1.12`, `1`, `latest` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/e65e856a4226445f865ec51ea4b6d3bc8353386b/1.12/Dockerfile)
--	[`1.12.1-dind`, `1.12-dind`, `1-dind`, `dind` (*1.12/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/dind/Dockerfile)
--	[`1.12.1-git`, `1.12-git`, `1-git`, `git` (*1.12/git/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/git/Dockerfile)
--	[`1.12.1-experimental`, `1.12-experimental`, `1-experimental`, `experimental` (*1.12/experimental/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/Dockerfile)
--	[`1.12.1-experimental-dind`, `1.12-experimental-dind`, `1-experimental-dind`, `experimental-dind` (*1.12/experimental/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/dind/Dockerfile)
--	[`1.12.1-experimental-git`, `1.12-experimental-git`, `1-experimental-git`, `experimental-git` (*1.12/experimental/git/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/git/Dockerfile)
--	[`1.11.2`, `1.11` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/b83d8a3f9b77c2592f383cd58625e000af4f2dde/1.11/Dockerfile)
--	[`1.11.2-dind`, `1.11-dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/1c8b144ed9ec49ac8cc7ca75f8628fd8de6c82b5/1.11/dind/Dockerfile)
+-	[`1.12.2`, `1.12`, `1`, `latest` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/a7fc73eef011c47cc2518149bc77a4b9bc7f9f41/1.12/Dockerfile)
+-	[`1.12.2-dind`, `1.12-dind`, `1-dind`, `dind` (*1.12/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/5e30187978ad75d0f2ae5fc6c2a0b668bdf16885/1.12/dind/Dockerfile)
+-	[`1.12.2-git`, `1.12-git`, `1-git`, `git` (*1.12/git/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/git/Dockerfile)
+-	[`1.12.2-experimental`, `1.12-experimental`, `1-experimental`, `experimental` (*1.12/experimental/Dockerfile*)](https://github.com/docker-library/docker/blob/a7fc73eef011c47cc2518149bc77a4b9bc7f9f41/1.12/experimental/Dockerfile)
+-	[`1.12.2-experimental-dind`, `1.12-experimental-dind`, `1-experimental-dind`, `experimental-dind` (*1.12/experimental/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/5e30187978ad75d0f2ae5fc6c2a0b668bdf16885/1.12/experimental/dind/Dockerfile)
+-	[`1.12.2-experimental-git`, `1.12-experimental-git`, `1-experimental-git`, `experimental-git` (*1.12/experimental/git/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/git/Dockerfile)
+-	[`1.11.2`, `1.11` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/5e30187978ad75d0f2ae5fc6c2a0b668bdf16885/1.11/Dockerfile)
+-	[`1.11.2-dind`, `1.11-dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/5e30187978ad75d0f2ae5fc6c2a0b668bdf16885/1.11/dind/Dockerfile)
 -	[`1.11.2-git`, `1.11-git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker).
@@ -167,17 +161,13 @@ View [license information](https://github.com/docker/docker/blob/eb7b2ed6bbe3fbe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`docker/` directory](https://github.com/docker-library/docs/tree/master/docker) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -190,3 +180,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`docker/` directory](https://github.com/docker-library/docs/tree/master/docker) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

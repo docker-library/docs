@@ -20,8 +20,9 @@ All Markdown files here are run through [tianon's fork of `markdownfmt`](https:/
 
 Optionally:
 
--	run `./update.sh myimage` to generate `myimage/README.md` for your review. **Note:** do not actually commit the `README.md` file; it is automatically generated/committed before being uploaded to Docker Hub.
 -	run `./markdownfmt.sh -l myimage` to verify whether format of your markdown files is compliant to `tianon/markdownfmt`. In case you see any file names, markdownfmt detected some issues, which might result in a failed build during continuous integration. run `./markdownfmt.sh -d myimage` to see a diff of changes required to pass.
+-	run `./update.sh myimage` to generate `myimage/README.md` for manual review of the generated copy.  
+	**Note:** do not actually commit the `README.md` file; it is automatically generated/committed before being uploaded to Docker Hub.
 
 # How do I update an image's docs
 
@@ -32,6 +33,8 @@ To update `README.md` for a specific image do not edit `README.md` directly. Ple
 ## `update.sh`
 
 This is the main script used to generate the `README.md` files for each image. The generated file is committed along with the files used to generate it (see below on what customizations are available). Accepted arguments are which image(s) you want to update or no arguments to update all of them.
+
+This script assumes [`bashbrew`](https://github.com/docker-library/official-images/tree/81e90ca8dcec892ade7eb348cba5a4a5d6851e17/bashbrew) is in your `PATH` (for scraping relevant tag information from the library manifest file for each repository).
 
 ## `generate-repo-stub-readme.sh`
 

@@ -21,11 +21,11 @@
 -	[`3.5.2-alpine`, `3.5-alpine`, `3-alpine`, `alpine` (*3.5/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.5/alpine/Dockerfile)
 -	[`3.5.2-onbuild`, `3.5-onbuild`, `3-onbuild`, `onbuild` (*3.5/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.5/onbuild/Dockerfile)
 -	[`3.5.2-windowsservercore`, `3.5-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.5/windows/windowsservercore/Dockerfile)
--	[`3.6.0b1`, `3.6` (*3.6/Dockerfile*)](https://github.com/docker-library/python/blob/a70c6819aa38d938d56e96408aa6e7c3a9162c64/3.6/Dockerfile)
--	[`3.6.0b1-slim`, `3.6-slim` (*3.6/slim/Dockerfile*)](https://github.com/docker-library/python/blob/a70c6819aa38d938d56e96408aa6e7c3a9162c64/3.6/slim/Dockerfile)
--	[`3.6.0b1-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/a70c6819aa38d938d56e96408aa6e7c3a9162c64/3.6/alpine/Dockerfile)
--	[`3.6.0b1-onbuild`, `3.6-onbuild` (*3.6/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/635ea5d58b53d165f7bedae90f8933c720a58150/3.6/onbuild/Dockerfile)
--	[`3.6.0a4-windowsservercore`, `3.6-windowsservercore` (*3.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/855b85c8309e925814dfa97d61310080dcd08db6/3.6/windows/windowsservercore/Dockerfile)
+-	[`3.6.0b2`, `3.6` (*3.6/Dockerfile*)](https://github.com/docker-library/python/blob/a29d327288ff02b2f54be0d2b7340736e2329bdc/3.6/Dockerfile)
+-	[`3.6.0b2-slim`, `3.6-slim` (*3.6/slim/Dockerfile*)](https://github.com/docker-library/python/blob/a29d327288ff02b2f54be0d2b7340736e2329bdc/3.6/slim/Dockerfile)
+-	[`3.6.0b2-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/a29d327288ff02b2f54be0d2b7340736e2329bdc/3.6/alpine/Dockerfile)
+-	[`3.6.0b2-onbuild`, `3.6-onbuild` (*3.6/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/635ea5d58b53d165f7bedae90f8933c720a58150/3.6/onbuild/Dockerfile)
+-	[`3.6.0b2-windowsservercore`, `3.6-windowsservercore` (*3.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/a29d327288ff02b2f54be0d2b7340736e2329bdc/3.6/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/python`)](https://github.com/docker-library/official-images/blob/master/library/python). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpython).
 
@@ -121,17 +121,13 @@ View license information for [Python 2](https://docs.python.org/2/license.html) 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`python/` directory](https://github.com/docker-library/docs/tree/master/python) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -144,3 +140,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/python/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`python/` directory](https://github.com/docker-library/docs/tree/master/python) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

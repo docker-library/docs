@@ -192,17 +192,13 @@ View [license information](http://doc.nuxeo.com/x/gIK7) for the software contain
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`nuxeo/` directory](https://github.com/docker-library/docs/tree/master/nuxeo) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -215,3 +211,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/nuxeo/docker-nuxeo/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`nuxeo/` directory](https://github.com/docker-library/docs/tree/master/nuxeo) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

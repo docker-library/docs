@@ -16,8 +16,8 @@ The image has been OpenJDK-specific since it was first introduced, and as of 201
 -	[`8u92-jdk-alpine`, `8u92-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine`, `openjdk-8u92-jdk-alpine`, `openjdk-8u92-alpine`, `openjdk-8-jdk-alpine`, `openjdk-8-alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/54c64cf47d2b705418feb68b811419a223c5a040/8-jdk/alpine/Dockerfile)
 -	[`8u102-jre`, `8-jre`, `jre`, `openjdk-8u102-jre`, `openjdk-8-jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/baaaf7714f9c66e4c5decf2c108a2738b7186c7f/8-jre/Dockerfile)
 -	[`8u92-jre-alpine`, `8-jre-alpine`, `jre-alpine`, `openjdk-8u92-jre-alpine`, `openjdk-8-jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/54c64cf47d2b705418feb68b811419a223c5a040/8-jre/alpine/Dockerfile)
--	[`9-b136-jdk`, `9-b136`, `9-jdk`, `9`, `openjdk-9-b136-jdk`, `openjdk-9-b136`, `openjdk-9-jdk`, `openjdk-9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2ff433f60dd918bd852442dbb4f7b24a148c2fb0/9-jdk/Dockerfile)
--	[`9-b136-jre`, `9-jre`, `openjdk-9-b136-jre`, `openjdk-9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2ff433f60dd918bd852442dbb4f7b24a148c2fb0/9-jre/Dockerfile)
+-	[`9-b140-jdk`, `9-b140`, `9-jdk`, `9`, `openjdk-9-b140-jdk`, `openjdk-9-b140`, `openjdk-9-jdk`, `openjdk-9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2e2d5c3f7ca9303b53d9d8f8ce22c0232a152d5f/9-jdk/Dockerfile)
+-	[`9-b140-jre`, `9-jre`, `openjdk-9-b140-jre`, `openjdk-9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2e2d5c3f7ca9303b53d9d8f8ce22c0232a152d5f/9-jre/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjava).
 
@@ -97,17 +97,13 @@ View [license information](http://openjdk.java.net/legal/gplv2+ce.html) for the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`java/` directory](https://github.com/docker-library/docs/tree/master/java) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -120,3 +116,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/java/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`java/` directory](https://github.com/docker-library/docs/tree/master/java) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

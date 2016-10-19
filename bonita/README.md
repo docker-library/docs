@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.2.4` (*7.2/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/c8d6cbb007b77a9ce5b22a7e874608962f863e99/7.2/Dockerfile)
--	[`7.3.2`, `latest` (*7.3/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/50a2a367f8538ada69e3e17889896d98ff28ca21/7.3/Dockerfile)
+-	[`7.3.3`, `latest` (*7.3/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/19d78ec0f212891e97814b2db30891b9b280f7e5/7.3/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/bonita`)](https://github.com/docker-library/official-images/blob/master/library/bonita). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbonita).
 
@@ -378,17 +378,13 @@ Bonita BPM image includes two parts :
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`bonita/` directory](https://github.com/docker-library/docs/tree/master/bonita) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -401,3 +397,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/Bonitasoft-Community/docker_bonita/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`bonita/` directory](https://github.com/docker-library/docs/tree/master/bonita) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

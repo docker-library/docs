@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.7.4` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/2fb0684fe6eb11a3c1145d71e0cb50bf2dda8d11/Dockerfile)
--	[`alpine`, `2.7.4-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/3fc5d6038dc717055b15001cd7e039e965f24542/Dockerfile)
+-	[`latest`, `2.19.1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/2fb0684fe6eb11a3c1145d71e0cb50bf2dda8d11/Dockerfile)
+-	[`2.7.4` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/6eaa9b15926232310317490a3b9975ef61be763c/Dockerfile)
+-	[`alpine`, `2.19.1-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/3fc5d6038dc717055b15001cd7e039e965f24542/Dockerfile)
+-	[`2.7.4-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/d2eeb20813164526f0443599fd82fd79fadee77e/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
@@ -191,17 +193,13 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`jenkins/` directory](https://github.com/docker-library/docs/tree/master/jenkins) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -214,3 +212,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/cloudbees/jenkins-ci.org-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`jenkins/` directory](https://github.com/docker-library/docs/tree/master/jenkins) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
