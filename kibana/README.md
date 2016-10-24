@@ -5,7 +5,7 @@
 -	[`4.3.3`, `4.3` (*4.3/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.3/Dockerfile)
 -	[`4.4.2`, `4.4` (*4.4/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.4/Dockerfile)
 -	[`4.5.4`, `4.5` (*4.5/Dockerfile*)](https://github.com/docker-library/kibana/blob/7ce21f8aa1e58443c3031fdbdf83a08ce34e49a4/4.5/Dockerfile)
--	[`4.6.1`, `4.6`, `4`, `latest` (*4.6/Dockerfile*)](https://github.com/docker-library/kibana/blob/e930401355dc9b268b3e7d036794263a8e0f7a82/4.6/Dockerfile)
+-	[`4.6.2`, `4.6`, `4`, `latest` (*4.6/Dockerfile*)](https://github.com/docker-library/kibana/blob/712060cfe4782cf8c0abdadb641cd038277e8541/4.6/Dockerfile)
 -	[`5.0.0-rc1`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/f01982e6fd068565a79822b1ff0e82d2f3d0a4f4/5.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kibana`)](https://github.com/docker-library/official-images/blob/master/library/kibana). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkibana).
