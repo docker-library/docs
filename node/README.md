@@ -1,9 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6.9.1`, `6.9`, `6`, `boron`, `latest` (*6.9/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/Dockerfile)
--	[`6.9.1-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild`, `onbuild` (*6.9/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/onbuild/Dockerfile)
--	[`6.9.1-slim`, `6.9-slim`, `6-slim`, `boron-slim`, `slim` (*6.9/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/slim/Dockerfile)
--	[`6.9.1-wheezy`, `6.9-wheezy`, `6-wheezy`, `boron-wheezy`, `wheezy` (*6.9/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/wheezy/Dockerfile)
+-	[`7.0.0`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://github.com/nodejs/docker-node/blob/056200187f0ab41872084246447bd8d8a6bf4f86/7.0/Dockerfile)
+-	[`7.0.0-onbuild`, `7.0-onbuild`, `7-onbuild`, `onbuild` (*7.0/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/056200187f0ab41872084246447bd8d8a6bf4f86/7.0/onbuild/Dockerfile)
+-	[`7.0.0-slim`, `7.0-slim`, `7-slim`, `slim` (*7.0/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/056200187f0ab41872084246447bd8d8a6bf4f86/7.0/slim/Dockerfile)
+-	[`7.0.0-wheezy`, `7.0-wheezy`, `7-wheezy`, `wheezy` (*7.0/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/056200187f0ab41872084246447bd8d8a6bf4f86/7.0/wheezy/Dockerfile)
+-	[`6.9.1`, `6.9`, `6`, `boron` (*6.9/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/Dockerfile)
+-	[`6.9.1-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild` (*6.9/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/onbuild/Dockerfile)
+-	[`6.9.1-slim`, `6.9-slim`, `6-slim`, `boron-slim` (*6.9/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/slim/Dockerfile)
+-	[`6.9.1-wheezy`, `6.9-wheezy`, `6-wheezy`, `boron-wheezy` (*6.9/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/wheezy/Dockerfile)
 -	[`4.6.1`, `4.6`, `4`, `argon` (*4.6/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a37f33d34909d9e700b2875c684b8e728b236dc4/4.6/Dockerfile)
 -	[`4.6.1-onbuild`, `4.6-onbuild`, `4-onbuild`, `argon-onbuild` (*4.6/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a37f33d34909d9e700b2875c684b8e728b236dc4/4.6/onbuild/Dockerfile)
 -	[`4.6.1-slim`, `4.6-slim`, `4-slim`, `argon-slim` (*4.6/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a37f33d34909d9e700b2875c684b8e728b236dc4/4.6/slim/Dockerfile)
