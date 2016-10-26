@@ -1,14 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.2`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e9c56dda865977051c5eceea99eeb1af9ffa4408/1.5/Dockerfile)
--	[`1.6.2`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e9c56dda865977051c5eceea99eeb1af9ffa4408/1.6/Dockerfile)
--	[`1.7.5`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e9c56dda865977051c5eceea99eeb1af9ffa4408/1.7/Dockerfile)
--	[`2.0.2`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e9c56dda865977051c5eceea99eeb1af9ffa4408/2.0/Dockerfile)
--	[`2.1.2`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e9c56dda865977051c5eceea99eeb1af9ffa4408/2.1/Dockerfile)
--	[`2.2.2`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e9c56dda865977051c5eceea99eeb1af9ffa4408/2.2/Dockerfile)
--	[`2.3.5`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e9c56dda865977051c5eceea99eeb1af9ffa4408/2.3/Dockerfile)
--	[`2.4.1`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e9c56dda865977051c5eceea99eeb1af9ffa4408/2.4/Dockerfile)
--	[`5.0.0-rc1`, `5.0.0`, `5.0`, `5` (*5.0-rc/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e9c56dda865977051c5eceea99eeb1af9ffa4408/5.0-rc/Dockerfile)
+-	[`1.5.2`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/1.5/Dockerfile)
+-	[`1.6.2`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/1.6/Dockerfile)
+-	[`1.7.5`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/1.7/Dockerfile)
+-	[`2.0.2`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/2.0/Dockerfile)
+-	[`2.1.2`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/2.1/Dockerfile)
+-	[`2.2.2`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/2.2/Dockerfile)
+-	[`2.3.5`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/2.3/Dockerfile)
+-	[`2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/2.4/Dockerfile)
+-	[`5.0.0`, `5.0`, `5`, `latest` (*5.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/acd142324bdd9b4cb06a8e08bd701b340deaa02d/5.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch).
 
@@ -25,6 +25,19 @@ Elasticsearch is a registered trademark of Elasticsearch BV.
 ![logo](https://raw.githubusercontent.com/docker-library/docs/7688e51a41c0c10dca4e6c376be886ce64b9620f/elasticsearch/logo.png)
 
 # How to use this image
+
+## Host Setup
+
+**Note:** since 5.0, Elasticsearch only listens on `localhost` by default, so this image sets `network.host` to `0.0.0.0` (given that `localhost` is not terribly useful in the Docker context).
+
+As a result, Elasticsearch is more strict about the bootstrap checks that it performs, especially when checking the value of `vm.max_map_count` which is not namespaced and thus must be set to an acceptable value on the host (as opposed to simply using `--sysctl` on `docker run`).
+
+See the following sections of the upstream documentation for more information:
+
+-	[Setup Elasticsearch » Important System Configuration » Virtual memory](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/vm-max-map-count.html)
+-	[Setup Elasticsearch » Bootstrap Checks » Maximum map count check](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/_maximum_map_count_check.html)
+
+## Running Containers
 
 You can run the default `elasticsearch` command simply:
 
