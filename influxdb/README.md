@@ -4,6 +4,8 @@
 -	[`0.13-alpine`, `0.13.0-alpine` (*influxdb/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ec08f02c8a4a15bcea2a6c46517eceb9284633a2/influxdb/0.13/alpine/Dockerfile)
 -	[`1.0`, `1.0.2`, `latest` (*influxdb/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/Dockerfile)
 -	[`1.0-alpine`, `1.0.2-alpine`, `alpine` (*influxdb/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/alpine/Dockerfile)
+-	[`1.1.0-rc1` (*influxdb/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/6328eaddffcb11337d779694c38b4cb228184e5f/influxdb/1.1/Dockerfile)
+-	[`1.1.0-rc1-alpine` (*influxdb/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/6328eaddffcb11337d779694c38b4cb228184e5f/influxdb/1.1/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
 
