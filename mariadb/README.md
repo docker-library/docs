@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`10.1.18`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/5faca097859879a9629312ee1d31fb22a06c6bf3/10.1/Dockerfile)
--	[`10.0.27`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/9d7717c9d7e98619a3b7e7d4337e64b0de7d2f5b/10.0/Dockerfile)
--	[`5.5.52`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/a0c4133675061dde79d08e13f20e365570acd866/5.5/Dockerfile)
+-	[`10.1.18`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/92e16504a8e9840eb70937aa2da76f38ea002718/10.1/Dockerfile)
+-	[`10.0.28`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/c9f0360d841db8bbb0c99d1e84059f05de3faf9e/10.0/Dockerfile)
+-	[`5.5.53`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/110ab9c9ff42821d1459c6a45cc8c330763f724b/5.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmariadb).
 
@@ -174,17 +174,13 @@ $ docker exec some-mariadb sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQ
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`mariadb/` directory](https://github.com/docker-library/docs/tree/master/mariadb) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -197,3 +193,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/mariadb/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`mariadb/` directory](https://github.com/docker-library/docs/tree/master/mariadb) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

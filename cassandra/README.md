@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.15`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ef57ef961003e27469b86178f0b4d184bb64d82e/2.1/Dockerfile)
+-	[`2.1.16`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/3204fb896811b4d20527b8d4a509d65189fd6913/2.1/Dockerfile)
 -	[`2.2.8`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ef57ef961003e27469b86178f0b4d184bb64d82e/2.2/Dockerfile)
 -	[`3.0.9`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ef57ef961003e27469b86178f0b4d184bb64d82e/3.0/Dockerfile)
 -	[`3.9`, `3`, `latest` (*3.9/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ce8566d1ce825d2d0e16b2b0b76befed1defe62c/3.9/Dockerfile)
@@ -175,17 +175,13 @@ If there is no database initialized when the container starts, then a default da
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`cassandra/` directory](https://github.com/docker-library/docs/tree/master/cassandra) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -198,3 +194,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/cassandra/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`cassandra/` directory](https://github.com/docker-library/docs/tree/master/cassandra) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

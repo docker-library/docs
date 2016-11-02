@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.6.0`, `9.6`, `9`, `latest` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/b2317dd369030a5f3f030b1daa1fc80da3cab9e0/9.6/Dockerfile)
--	[`9.5.4`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/1c0bc9d905d569fead777b9b8e3836e8af1c394c/9.5/Dockerfile)
--	[`9.4.9`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.4/Dockerfile)
--	[`9.3.14`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.3/Dockerfile)
--	[`9.2.18`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.2/Dockerfile)
--	[`9.1.23`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.1/Dockerfile)
+-	[`9.6.1`, `9.6`, `9`, `latest` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/e4942cb0f79b61024963dc0ac196375b26fa60dd/9.6/Dockerfile)
+-	[`9.5.5`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/db63c8c4eff2aa81c3f2c9e42f1ede447c7cf99c/9.5/Dockerfile)
+-	[`9.4.10`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/56b1a0c47ae8361eca133e41c6ddd68ad492ac2d/9.4/Dockerfile)
+-	[`9.3.15`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/570ca9e8ea81cb6da73ea765132755f277cd0b66/9.3/Dockerfile)
+-	[`9.2.19`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/c01405b7c324350cc796ba9e861326aee158f75e/9.2/Dockerfile)
+-	[`9.1.24`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/2df7c179897a4a0c5dbb5a68543e46fb77215067/9.1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostgres).
 
@@ -114,17 +114,13 @@ If there is no database when `postgres` starts in a container, then `postgres` w
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`postgres/` directory](https://github.com/docker-library/docs/tree/master/postgres) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -137,3 +133,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or through a [GitHub issue](https://github.com/docker-library/postgres/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`postgres/` directory](https://github.com/docker-library/docs/tree/master/postgres) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

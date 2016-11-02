@@ -14,6 +14,8 @@ This image is built from official rootfs tarballs provided by Canonical (specifi
 
 The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use.
 
+Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+
 ## `/etc/apt/sources.list`
 
 ### `ubuntu:16.04`

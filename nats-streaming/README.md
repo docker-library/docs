@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.2.2`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/d7e21255fec8967f7dbdacdb4501c8e78d821e49/Dockerfile)
+-	[`0.3.0`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/1fcbfd456264c5da5888e279d9ea865166eeb3cf/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nats-streaming`)](https://github.com/docker-library/official-images/blob/master/library/nats-streaming). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats-streaming).
 
@@ -25,25 +25,37 @@ $ docker run -d nats-streaming
 
 Output that you would get if you had started with `-ti` instead of `d` (for daemon):
 
-[INF] Starting nats-streaming-server[test-cluster] version 0.2.2
-[INF] Starting nats-server version 0.9.2
-[INF] Starting http monitor on :8222
+[INF] Starting nats-streaming-server[test-cluster] version 0.3.0
+[INF] Starting nats-server version 0.9.4
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
 [INF] STAN: Message store is MEMORY
-[INF] STAN: Maximum of 1000000 will be stored
+[INF] STAN: --------- Store Limits ---------
+[INF] STAN: Channels:                  100 *
+[INF] STAN: -------- channels limits -------
+[INF] STAN:   Subscriptions:          1000 *
+[INF] STAN:   Messages     :       1000000 *
+[INF] STAN:   Bytes        :     976.56 MB *
+[INF] STAN:   Age          :     unlimited *
+[INF] STAN: --------------------------------
 
 To use a file based store instead, you would run:
 
 $ docker run -d nats-streaming -store file -dir datastore
 
-[INF] Starting nats-streaming-server[test-cluster] version 0.2.2
-[INF] Starting nats-server version 0.9.2
-[INF] Starting http monitor on :8222
+[INF] Starting nats-streaming-server[test-cluster] version 0.3.0
+[INF] Starting nats-server version 0.9.4
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
 [INF] STAN: Message store is FILE
-[INF] STAN: Maximum of 1000000 will be stored
+[INF] STAN: --------- Store Limits ---------
+[INF] STAN: Channels:                  100 *
+[INF] STAN: -------- channels limits -------
+[INF] STAN:   Subscriptions:          1000 *
+[INF] STAN:   Messages     :       1000000 *
+[INF] STAN:   Bytes        :     976.56 MB *
+[INF] STAN:   Age          :     unlimited *
+[INF] STAN: --------------------------------
 
 You can also connect to a remote NATS Server running in a docker image.
 First, run NATS Server:
@@ -54,9 +66,17 @@ Now, start the Streaming server and link it to the above docker image:
 
 $ docker run -d --link nats-main nats-streaming -ns nats://nats-main:4222 
 
-[INF] Starting nats-streaming-server[test-cluster] version 0.2.2
+[INF] Starting nats-streaming-server[test-cluster] version 0.3.0
+[INF] Server is ready
 [INF] STAN: Message store is MEMORY
-[INF] STAN: Maximum of 1000000 will be stored
+[INF] STAN: --------- Store Limits ---------
+[INF] STAN: Channels:                  100 *
+[INF] STAN: -------- channels limits -------
+[INF] STAN:   Subscriptions:          1000 *
+[INF] STAN:   Messages     :       1000000 *
+[INF] STAN:   Bytes        :     976.56 MB *
+[INF] STAN:   Age          :     unlimited *
+[INF] STAN: --------------------------------
 
 Notice that the output shows that the NATS Server was not started, as opposed to the first output.
 
@@ -69,11 +89,24 @@ Streaming Server Options:
     -cid, --cluster_id  <cluster ID> Cluster ID (default: test-cluster)
     -st,  --store <type>             Store type: MEMORY|FILE (default: MEMORY)
           --dir <directory>          For FILE store type, this is the root directory
-    -mc,  --max_channels <number>    Max number of channels (aka subjects, topics, etc...)
-    -msu, --max_subs <number>        Max number of subscriptions per channel
-    -mm,  --max_msgs <number>        Max number of messages per channel
-    -mb,  --max_bytes <number>       Max messages total size per channel
+    -mc,  --max_channels <number>    Max number of channels (0 for unlimited)
+    -msu, --max_subs <number>        Max number of subscriptions per channel (0 for unlimited)
+    -mm,  --max_msgs <number>        Max number of messages per channel (0 for unlimited)
+    -mb,  --max_bytes <number>       Max messages total size per channel (0 for unlimited)
+    -ma,  --max_age <seconds>        Max duration a message can be stored ("0s" for unlimited)
     -ns,  --nats_server <url>        Connect to this external NATS Server (embedded otherwise)
+    -sc,  --stan_config <file>       Streaming server configuration file
+
+Streaming Server File Store Options:
+    --file_compact_enabled           Enable file compaction
+    --file_compact_frag              File fragmentation threshold for compaction
+    --file_compact_interval <int>    Minimum interval (in seconds) between file compactions
+    --file_compact_min_size <int>    Minimum file size for compaction
+    --file_buffer_size <int>         File buffer size (in bytes)
+    --file_crc                       Enable file CRC-32 checksum
+    --file_crc_poly <int>            Polynomial used to make the table used for CRC-32 checksum
+    --file_sync                      Enable File.Sync on Flush
+    --file_cache                     Enable messages caching
 
 Streaming Server TLS Options:
     -secure                          Use a TLS connection to the NATS server without
@@ -127,23 +160,23 @@ Common Options:
         --help_tls                   TLS help.
 ```
 
+# Configuration
+
+Details on how to configure further the NATS Streaming server can be found [here](https://github.com/nats-io/nats-streaming-server#configuring)
+
 # License
 
 View [license information](https://github.com/nats-io/nats-streaming-server/blob/master/LICENSE) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`nats-streaming/` directory](https://github.com/docker-library/docs/tree/master/nats-streaming) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -156,3 +189,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/nats-io/nats-streaming-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`nats-streaming/` directory](https://github.com/docker-library/docs/tree/master/nats-streaming) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

@@ -5,7 +5,7 @@
 -	[`webProfile6` (*ga/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b50db5440367cae75862a718d92f3b460a458a24/ga/developer/webProfile6/Dockerfile)
 -	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b50db5440367cae75862a718d92f3b460a458a24/ga/developer/webProfile7/Dockerfile)
 -	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b50db5440367cae75862a718d92f3b460a458a24/ga/developer/javaee7/Dockerfile)
--	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/0b36208258a0c0df3c2355045278c780fa4211ca/beta/Dockerfile)
+-	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/7d28fb9597e8555ed661bf56f4704d512b481d9d/beta/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwebsphere-liberty).
 
@@ -121,6 +121,16 @@ Then, run the WebSphere Liberty image with the volumes from the data volume cont
 docker run -d -p 80:9080 -p 443:9443 --volumes-from classcache app
 ```
 
+# Running WebSphere Liberty in read-only mode
+
+Liberty writes to two different directories when running: `/opt/ibm/wlp/output` and `/logs`. In order to run the Liberty image in read-only mode these may be mounted as temporary file systems. If using the provided image, the keystore will be generated on initial start up in the server configuration. This means that the server configuration directory either needs to be read-write or the keystore will need to be built into the image. In the example command `/config` is mounted as a read-write volume.
+
+```console
+docker run -d -p 80:9080 -p 443:9443 \
+    --tmpfs /opt/ibm/wlp/output --tmpfs /logs -v /config --read-only \
+    websphere-liberty:javaee7
+```
+
 # License
 
 The Dockerfiles and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
@@ -135,7 +145,7 @@ Note: These licenses do not permit further distribution and that the terms for W
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

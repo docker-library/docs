@@ -1,12 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.6.12`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/fc91d681fa5808c30c3118ce7fe3f993beccc82d/2.6/Dockerfile)
--	[`3.0.12`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/4b1d085ccab5728a9b9e4b65c5ed19820420809e/3.0/Dockerfile)
--	[`3.0.12-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/89549b2b779421c057b04858477012b7aa17f498/3.0/windows/windowsservercore/Dockerfile)
--	[`3.2.10`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/368cc7355471feba3071a4e0b7e44edf61401213/3.2/Dockerfile)
+-	[`3.0.13`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/0ac2867637ef5989e4dc051efa0ae296010e58c9/3.0/Dockerfile)
+-	[`3.0.13-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/3ef57d04d5ee528a01c3578b908e90b4177e74e9/3.0/windows/windowsservercore/Dockerfile)
+-	[`3.2.10`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/0ac2867637ef5989e4dc051efa0ae296010e58c9/3.2/Dockerfile)
 -	[`3.2.10-windowsservercore`, `3.2-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/368cc7355471feba3071a4e0b7e44edf61401213/3.2/windows/windowsservercore/Dockerfile)
--	[`3.3.15`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/mongo/blob/944c44b6304ab387e4640fddaa808bc93f32b176/3.3/Dockerfile)
+-	[`3.3.15`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/mongo/blob/0ac2867637ef5989e4dc051efa0ae296010e58c9/3.3/Dockerfile)
 -	[`3.3.15-windowsservercore`, `3.3-windowsservercore` (*3.3/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/944c44b6304ab387e4640fddaa808bc93f32b176/3.3/windows/windowsservercore/Dockerfile)
+-	[`3.4.0-rc2`, `3.4.0`, `3.4`, `3.4-rc` (*3.4-rc/Dockerfile*)](https://github.com/docker-library/mongo/blob/0ac2867637ef5989e4dc051efa0ae296010e58c9/3.4-rc/Dockerfile)
+-	[`3.4.0-rc2-windowsservercore`, `3.4.0-windowsservercore`, `3.4-windowsservercore`, `3.4-rc-windowsservercore` (*3.4-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/ec80a4a2218babddb8b572209e45841b96c1954c/3.4-rc/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo).
 
@@ -138,17 +140,13 @@ View [license information](https://github.com/mongodb/mongo/blob/7c3cfac300cfcca
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`mongo/` directory](https://github.com/docker-library/docs/tree/master/mongo) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -161,3 +159,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/mongo/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`mongo/` directory](https://github.com/docker-library/docs/tree/master/mongo) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
