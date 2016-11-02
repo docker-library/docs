@@ -61,7 +61,7 @@ RUN chown -R tomcat:tomcat $CATALINA_HOME/conf
 RUN chown -R tomcat:tomcat $CATALINA_HOME/logs
 RUN chown -R tomcat:tomcat $CATALINA_HOME/work
 RUN chmod 570 $CATALINA_HOME/bin/catalina.sh
-RUN chmod -R 500 $CATALINA_HOME/conf
+RUN chmod -R 400 $CATALINA_HOME/conf
 RUN chmod -R 300 $CATALINA_HOME/logs
 RUN chmod -R 770 $CATALINA_HOME/work
 RUN chmod -R 550 $CATALINA_HOME/webapps/
