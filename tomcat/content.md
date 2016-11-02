@@ -49,22 +49,16 @@ ADD target/*.war $CATALINA_HOME/webapps/
 
 Consider adding the following to your Dockerfile. These commands will harden the file permissions in order to prevent any eventually vulnerable application that runs on tomcat from tampering with tomcat itself.
 ```
-RUN rm -rf $CATALINA_HOME/webapps/*
-RUN rm -rf $CATALINA_HOME/server/webapps/*
-RUN rm -rf $CATALINA_HOME/conf/Catalina/localhost/host-manager.xml
-RUN rm -rf $CATALINA_HOME/conf/Catalina/localhost/manager.xml
-RUN groupadd tomcat
-RUN useradd -g tomcat tomcat
-RUN chown -R root:tomcat $CATALINA_HOME
-RUN chmod -R 550 $CATALINA_HOME
-RUN chown -R tomcat:tomcat $CATALINA_HOME/conf
-RUN chown -R tomcat:tomcat $CATALINA_HOME/logs
-RUN chown -R tomcat:tomcat $CATALINA_HOME/work
-RUN chmod 570 $CATALINA_HOME/bin/catalina.sh
-RUN chmod -R 500 $CATALINA_HOME/conf
-RUN chmod -R 300 $CATALINA_HOME/logs
-RUN chmod -R 770 $CATALINA_HOME/work
-RUN chmod -R 550 $CATALINA_HOME/webapps/
+RUN rm -rf $CATALINA_HOME/webapps/* && rm -rf $CATALINA_HOME/server/webapps/* && \
+  rm -rf $CATALINA_HOME/conf/Catalina/localhost/host-manager.xml && \
+  rm -rf $CATALINA_HOME/conf/Catalina/localhost/manager.xml && \
+  groupadd tomcat && useradd -g tomcat tomcat && \
+  chown -R root:tomcat $CATALINA_HOME && chmod -R 550 $CATALINA_HOME && \
+  chown -R tomcat:tomcat $CATALINA_HOME/conf && chown -R tomcat:tomcat $CATALINA_HOME/logs && \
+  chown -R tomcat:tomcat $CATALINA_HOME/work && chmod 570 $CATALINA_HOME/bin/catalina.sh && \
+  chmod -R 500 $CATALINA_HOME/conf && chmod -R 300 $CATALINA_HOME/logs && \
+  chmod -R 770 $CATALINA_HOME/work && chmod -R 550 $CATALINA_HOME/webapps/ && \
+  chmod -R 600 $CATALINA_HOME/temp
 ```
 As the last command within your Dockerfile add the following, in order to run Tomcat as the tomcat user rather than as root:
 ```
@@ -78,22 +72,16 @@ Dockerfile:
 ```
 FROM tomcat:8
 
-RUN rm -rf $CATALINA_HOME/webapps/*
-RUN rm -rf $CATALINA_HOME/server/webapps/*
-RUN rm -rf $CATALINA_HOME/conf/Catalina/localhost/host-manager.xml
-RUN rm -rf $CATALINA_HOME/conf/Catalina/localhost/manager.xml
-RUN groupadd tomcat
-RUN useradd -g tomcat tomcat
-RUN chown -R root:tomcat $CATALINA_HOME
-RUN chmod -R 550 $CATALINA_HOME
-RUN chown -R tomcat:tomcat $CATALINA_HOME/conf
-RUN chown -R tomcat:tomcat $CATALINA_HOME/logs
-RUN chown -R tomcat:tomcat $CATALINA_HOME/work
-RUN chmod 570 $CATALINA_HOME/bin/catalina.sh
-RUN chmod -R 500 $CATALINA_HOME/conf
-RUN chmod -R 300 $CATALINA_HOME/logs
-RUN chmod -R 770 $CATALINA_HOME/work
-RUN chmod -R 550 $CATALINA_HOME/webapps/
+RUN rm -rf $CATALINA_HOME/webapps/* && rm -rf $CATALINA_HOME/server/webapps/* && \
+  rm -rf $CATALINA_HOME/conf/Catalina/localhost/host-manager.xml && \
+  rm -rf $CATALINA_HOME/conf/Catalina/localhost/manager.xml && \
+  groupadd tomcat && useradd -g tomcat tomcat && \
+  chown -R root:tomcat $CATALINA_HOME && chmod -R 550 $CATALINA_HOME && \
+  chown -R tomcat:tomcat $CATALINA_HOME/conf && chown -R tomcat:tomcat $CATALINA_HOME/logs && \
+  chown -R tomcat:tomcat $CATALINA_HOME/work && chmod 570 $CATALINA_HOME/bin/catalina.sh && \
+  chmod -R 500 $CATALINA_HOME/conf && chmod -R 300 $CATALINA_HOME/logs && \
+  chmod -R 770 $CATALINA_HOME/work && chmod -R 550 $CATALINA_HOME/webapps/ && \
+  chmod -R 600 $CATALINA_HOME/temp
 
 USER tomcat
 ```
