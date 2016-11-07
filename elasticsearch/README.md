@@ -1,6 +1,5 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.2`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/1.5/Dockerfile)
 -	[`1.6.2`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/1.6/Dockerfile)
 -	[`1.7.5`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/1.7/Dockerfile)
 -	[`2.0.2`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/2.0/Dockerfile)
