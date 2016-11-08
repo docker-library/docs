@@ -21,6 +21,9 @@
 -	[`xenial-curl` (*xenial/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/curl/Dockerfile)
 -	[`xenial-scm` (*xenial/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/scm/Dockerfile)
 -	[`xenial` (*xenial/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/11492c68d993221fd5cd4d8a980354634fc165dd/xenial/Dockerfile)
+-	[`yakkety-curl` (*yakkety/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a94a81caf4d56853baade2cdd794dbe0c93396b2/yakkety/curl/Dockerfile)
+-	[`yakkety-scm` (*yakkety/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a94a81caf4d56853baade2cdd794dbe0c93396b2/yakkety/scm/Dockerfile)
+-	[`yakkety` (*yakkety/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a94a81caf4d56853baade2cdd794dbe0c93396b2/yakkety/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/buildpack-deps`)](https://github.com/docker-library/official-images/blob/master/library/buildpack-deps). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbuildpack-deps).
 
