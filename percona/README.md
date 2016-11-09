@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.7.14`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/c44a378d50a1d58f58c202c9a0f59f434fdd72b0/5.7/Dockerfile)
--	[`5.6.32`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/10541a9b50359dfe9c8ea59165adecf3a97b8760/5.6/Dockerfile)
--	[`5.5.51`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/10541a9b50359dfe9c8ea59165adecf3a97b8760/5.5/Dockerfile)
+-	[`5.7.15`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/0366da072fe5dc95af26d8a9f9ace48c72670720/5.7/Dockerfile)
+-	[`5.6.33`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/0366da072fe5dc95af26d8a9f9ace48c72670720/5.6/Dockerfile)
+-	[`5.5.52`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/0366da072fe5dc95af26d8a9f9ace48c72670720/5.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpercona).
 
@@ -174,17 +174,13 @@ $ docker exec some-percona sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQ
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`percona/` directory](https://github.com/docker-library/docs/tree/master/percona) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -197,3 +193,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/percona/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`percona/` directory](https://github.com/docker-library/docs/tree/master/percona) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

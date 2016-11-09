@@ -1,25 +1,25 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.10.46`, `0.10` (*0.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.10/Dockerfile)
--	[`0.10.46-onbuild`, `0.10-onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/0.10/onbuild/Dockerfile)
--	[`0.10.46-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.10/slim/Dockerfile)
--	[`0.10.46-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.10/wheezy/Dockerfile)
--	[`0.12.15`, `0.12`, `0` (*0.12/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.12/Dockerfile)
--	[`0.12.15-onbuild`, `0.12-onbuild`, `0-onbuild` (*0.12/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/0.12/onbuild/Dockerfile)
--	[`0.12.15-slim`, `0.12-slim`, `0-slim` (*0.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.12/slim/Dockerfile)
--	[`0.12.15-wheezy`, `0.12-wheezy`, `0-wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/0.12/wheezy/Dockerfile)
--	[`4.5.0`, `4.5`, `4`, `argon` (*4.5/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/4.5/Dockerfile)
--	[`4.5.0-onbuild`, `4.5-onbuild`, `4-onbuild`, `argon-onbuild` (*4.5/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4ad33b57b2fa9d9bfc92e2369b14adb42e1eb90c/4.5/onbuild/Dockerfile)
--	[`4.5.0-slim`, `4.5-slim`, `4-slim`, `argon-slim` (*4.5/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/4.5/slim/Dockerfile)
--	[`4.5.0-wheezy`, `4.5-wheezy`, `4-wheezy`, `argon-wheezy` (*4.5/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/4.5/wheezy/Dockerfile)
--	[`5.12.0`, `5.12`, `5` (*5.12/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/5.12/Dockerfile)
--	[`5.12.0-onbuild`, `5.12-onbuild`, `5-onbuild` (*5.12/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/50b56d39a236fd519eda2231757aa2173e270807/5.12/onbuild/Dockerfile)
--	[`5.12.0-slim`, `5.12-slim`, `5-slim` (*5.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/5.12/slim/Dockerfile)
--	[`5.12.0-wheezy`, `5.12-wheezy`, `5-wheezy` (*5.12/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5ad063e3ba340743e394114d3038d0fd4e0fe570/5.12/wheezy/Dockerfile)
--	[`6.5.0`, `6.5`, `6`, `latest` (*6.5/Dockerfile*)](https://github.com/nodejs/docker-node/blob/910443c39c80291f0bf24712d8d94279cf15b7b5/6.5/Dockerfile)
--	[`6.5.0-onbuild`, `6.5-onbuild`, `6-onbuild`, `onbuild` (*6.5/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/910443c39c80291f0bf24712d8d94279cf15b7b5/6.5/onbuild/Dockerfile)
--	[`6.5.0-slim`, `6.5-slim`, `6-slim`, `slim` (*6.5/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/910443c39c80291f0bf24712d8d94279cf15b7b5/6.5/slim/Dockerfile)
--	[`6.5.0-wheezy`, `6.5-wheezy`, `6-wheezy`, `wheezy` (*6.5/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/910443c39c80291f0bf24712d8d94279cf15b7b5/6.5/wheezy/Dockerfile)
+-	[`7.0.0`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/7.0/Dockerfile)
+-	[`7.0.0-onbuild`, `7.0-onbuild`, `7-onbuild`, `onbuild` (*7.0/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/056200187f0ab41872084246447bd8d8a6bf4f86/7.0/onbuild/Dockerfile)
+-	[`7.0.0-slim`, `7.0-slim`, `7-slim`, `slim` (*7.0/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/7.0/slim/Dockerfile)
+-	[`7.0.0-wheezy`, `7.0-wheezy`, `7-wheezy`, `wheezy` (*7.0/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/7.0/wheezy/Dockerfile)
+-	[`6.9.1`, `6.9`, `6`, `boron` (*6.9/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/6.9/Dockerfile)
+-	[`6.9.1-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild` (*6.9/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/onbuild/Dockerfile)
+-	[`6.9.1-slim`, `6.9-slim`, `6-slim`, `boron-slim` (*6.9/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/6.9/slim/Dockerfile)
+-	[`6.9.1-wheezy`, `6.9-wheezy`, `6-wheezy`, `boron-wheezy` (*6.9/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/6.9/wheezy/Dockerfile)
+-	[`4.6.1`, `4.6`, `4`, `argon` (*4.6/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/4.6/Dockerfile)
+-	[`4.6.1-onbuild`, `4.6-onbuild`, `4-onbuild`, `argon-onbuild` (*4.6/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a37f33d34909d9e700b2875c684b8e728b236dc4/4.6/onbuild/Dockerfile)
+-	[`4.6.1-slim`, `4.6-slim`, `4-slim`, `argon-slim` (*4.6/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/4.6/slim/Dockerfile)
+-	[`4.6.1-wheezy`, `4.6-wheezy`, `4-wheezy`, `argon-wheezy` (*4.6/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/4.6/wheezy/Dockerfile)
+-	[`0.12.17`, `0.12`, `0` (*0.12/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/0.12/Dockerfile)
+-	[`0.12.17-onbuild`, `0.12-onbuild`, `0-onbuild` (*0.12/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/c3ff7866303b4c595ab07529cdf35f9df58f5b21/0.12/onbuild/Dockerfile)
+-	[`0.12.17-slim`, `0.12-slim`, `0-slim` (*0.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/0.12/slim/Dockerfile)
+-	[`0.12.17-wheezy`, `0.12-wheezy`, `0-wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/0.12/wheezy/Dockerfile)
+-	[`0.10.48`, `0.10` (*0.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/0.10/Dockerfile)
+-	[`0.10.48-onbuild`, `0.10-onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/2716d804bd63f85a46e5fecbb36323a5d06ea5f6/0.10/onbuild/Dockerfile)
+-	[`0.10.48-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/0.10/slim/Dockerfile)
+-	[`0.10.48-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/0.10/wheezy/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
 
@@ -92,17 +92,13 @@ View [license information](https://github.com/joyent/node/blob/master/LICENSE) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`node/` directory](https://github.com/docker-library/docs/tree/master/node) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -115,3 +111,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/nodejs/docker-node/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`node/` directory](https://github.com/docker-library/docs/tree/master/node) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

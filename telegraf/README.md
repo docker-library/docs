@@ -1,10 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.12`, `0.12.0` (*0.12/Dockerfile*)](https://github.com/influxdata/telegraf-docker/blob/9f5442edabacd2a72627246e7ee8c7d276bd0f28/0.12/Dockerfile)
--	[`0.13`, `0.13.1`, `latest` (*telegraf/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/telegraf/0.13/Dockerfile)
--	[`0.13-alpine`, `0.13.1-alpine`, `alpine` (*telegraf/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/telegraf/0.13/alpine/Dockerfile)
--	[`1.0.0-rc1` (*telegraf/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/telegraf/1.0/Dockerfile)
--	[`1.0.0-rc1-alpine` (*telegraf/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/telegraf/1.0/alpine/Dockerfile)
+-	[`1.0`, `1.0.1` (*telegraf/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a86d1ecbaa12a696c10ed66bf4390c42fe733582/telegraf/1.0/Dockerfile)
+-	[`1.0-alpine`, `1.0.1-alpine` (*telegraf/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a86d1ecbaa12a696c10ed66bf4390c42fe733582/telegraf/1.0/alpine/Dockerfile)
+-	[`1.1`, `1.1.0`, `latest` (*telegraf/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/5bfae0d45f25aa52a2bfd2ebcc7f1af52dad90ae/telegraf/1.1/Dockerfile)
+-	[`1.1-alpine`, `1.1.0-alpine`, `alpine` (*telegraf/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/5bfae0d45f25aa52a2bfd2ebcc7f1af52dad90ae/telegraf/1.1/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/telegraf`)](https://github.com/docker-library/official-images/blob/master/library/telegraf). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftelegraf).
 
@@ -206,17 +205,13 @@ View [license information](https://github.com/influxdata/telegraf/blob/master/LI
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`telegraf/` directory](https://github.com/docker-library/docs/tree/master/telegraf) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -229,3 +224,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`telegraf/` directory](https://github.com/docker-library/docs/tree/master/telegraf) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

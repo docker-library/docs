@@ -10,6 +10,19 @@ Elasticsearch is a registered trademark of Elasticsearch BV.
 
 # How to use this image
 
+## Host Setup
+
+**Note:** since 5.0, Elasticsearch only listens on `localhost` by default, so this image sets `network.host` to `0.0.0.0` (given that `localhost` is not terribly useful in the Docker context).
+
+As a result, Elasticsearch is more strict about the bootstrap checks that it performs, especially when checking the value of `vm.max_map_count` which is not namespaced and thus must be set to an acceptable value on the host (as opposed to simply using `--sysctl` on `docker run`).
+
+See the following sections of the upstream documentation for more information:
+
+-	[Setup Elasticsearch » Important System Configuration » Virtual memory](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/vm-max-map-count.html)
+-	[Setup Elasticsearch » Bootstrap Checks » Maximum map count check](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/_maximum_map_count_check.html)
+
+## Running Containers
+
 You can run the default `elasticsearch` command simply:
 
 ```console

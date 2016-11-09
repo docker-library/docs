@@ -1,10 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.12`, `0.12.2` (*0.12/Dockerfile*)](https://github.com/influxdata/influxdb-docker/blob/6d869aa598baf9d23019682ecff42d022a00ce17/0.12/Dockerfile)
--	[`0.13`, `0.13.0`, `latest` (*influxdb/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/influxdb/0.13/Dockerfile)
--	[`0.13-alpine`, `0.13.0-alpine`, `alpine` (*influxdb/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/influxdb/0.13/alpine/Dockerfile)
--	[`1.0.0-rc2` (*influxdb/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/269f3d4ee4a91ff8fe05d6a1c71a1e0ced1b900b/influxdb/1.0/Dockerfile)
--	[`1.0.0-rc2-alpine` (*influxdb/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/269f3d4ee4a91ff8fe05d6a1c71a1e0ced1b900b/influxdb/1.0/alpine/Dockerfile)
+-	[`0.13`, `0.13.0` (*influxdb/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ec08f02c8a4a15bcea2a6c46517eceb9284633a2/influxdb/0.13/Dockerfile)
+-	[`0.13-alpine`, `0.13.0-alpine` (*influxdb/0.13/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ec08f02c8a4a15bcea2a6c46517eceb9284633a2/influxdb/0.13/alpine/Dockerfile)
+-	[`1.0`, `1.0.2`, `latest` (*influxdb/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/Dockerfile)
+-	[`1.0-alpine`, `1.0.2-alpine`, `alpine` (*influxdb/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/alpine/Dockerfile)
+-	[`1.1.0-rc1` (*influxdb/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/6328eaddffcb11337d779694c38b4cb228184e5f/influxdb/1.1/Dockerfile)
+-	[`1.1.0-rc1-alpine` (*influxdb/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/6328eaddffcb11337d779694c38b4cb228184e5f/influxdb/1.1/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
 
@@ -157,17 +158,13 @@ View [license information](https://github.com/influxdata/influxdb/blob/master/LI
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`influxdb/` directory](https://github.com/docker-library/docs/tree/master/influxdb) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -180,3 +177,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`influxdb/` directory](https://github.com/docker-library/docs/tree/master/influxdb) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

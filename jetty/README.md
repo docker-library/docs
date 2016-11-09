@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.3.11`, `9.3`, `9`, `9.3.11-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.3-jre8/Dockerfile)
--	[`9.3.11-alpine`, `9.3-alpine`, `9-alpine`, `9.3.11-jre8-alpine`, `9.3-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.3-jre8/alpine/Dockerfile)
--	[`9.2.18`, `9.2`, `9.2.18-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.2-jre8/Dockerfile)
--	[`9.2.18-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/41c3c040f5868519b806cdab2336b7b8e47f9339/9.2-jre7/Dockerfile)
+-	[`9.3.12`, `9.3`, `9`, `9.3.12-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/09617a1ddc50bb080df9fa94ec5d636015449dbd/9.3-jre8/Dockerfile)
+-	[`9.3.12-alpine`, `9.3-alpine`, `9-alpine`, `9.3.12-jre8-alpine`, `9.3-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/09617a1ddc50bb080df9fa94ec5d636015449dbd/9.3-jre8/alpine/Dockerfile)
+-	[`9.2.19`, `9.2`, `9.2.19-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/422148d13cca3dfe4f4e6299185f7434725f9bd7/9.2-jre8/Dockerfile)
+-	[`9.2.19-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/422148d13cca3dfe4f4e6299185f7434725f9bd7/9.2-jre7/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjetty).
 
@@ -71,6 +71,14 @@ RUN java -jar "$JETTY_HOME/start.jar" --add-to-startd=jmx,stats
 
 Modules may be configured in a `Dockerfile` by editing the properties in the corresponding `/var/lib/jetty/start.d/*.mod` file or the module can be deactivated by removing that file.
 
+### JVM Configuration
+
+JVM options can be set by passing the `JAVA_OPTIONS` environment variable to the container. For example, to set the maximum heap size to 1 gigabyte, you can run the container as follows:
+
+```console
+$ docker run -e JAVA_OPTIONS="-Xmx1g" -d jetty
+```
+
 ## Read-only container
 
 To run `jetty` as a read-only container, have Docker create the `/tmp/jetty` and `/run/jetty` directories as volumes:
@@ -127,17 +135,13 @@ View [license information](http://eclipse.org/jetty/licenses.php) for the softwa
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`jetty/` directory](https://github.com/docker-library/docs/tree/master/jetty) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -150,3 +154,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/appropriate/docker-jetty/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`jetty/` directory](https://github.com/docker-library/docs/tree/master/jetty) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
