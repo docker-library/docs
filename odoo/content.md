@@ -101,7 +101,6 @@ This previous `docker-compose.yml` would be using the defaults for all the envir
 
 If you needed to modify the environment variables it could look like:
 
-
 ```yml
 version: '2'
 services:
