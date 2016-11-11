@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.6`, `3.0`, `latest` (*3.0.6/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/22114d5022d6bd414fc7d34046b7a5f9cfdc930c/3.0.6/community/Dockerfile)
--	[`3.0.6-enterprise`, `3.0-enterprise`, `enterprise` (*3.0.6/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/22114d5022d6bd414fc7d34046b7a5f9cfdc930c/3.0.6/enterprise/Dockerfile)
+-	[`3.0.7`, `3.0`, `latest` (*3.0.7/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/56ac90c26a96f570ba8090c37b8dfcd613fd537f/3.0.7/community/Dockerfile)
+-	[`3.0.7-enterprise`, `3.0-enterprise`, `enterprise` (*3.0.7/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/56ac90c26a96f570ba8090c37b8dfcd613fd537f/3.0.7/enterprise/Dockerfile)
+-	[`3.0.6` (*3.0.6/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/22114d5022d6bd414fc7d34046b7a5f9cfdc930c/3.0.6/community/Dockerfile)
+-	[`3.0.6-enterprise` (*3.0.6/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/22114d5022d6bd414fc7d34046b7a5f9cfdc930c/3.0.6/enterprise/Dockerfile)
 -	[`3.0.5` (*3.0.5/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/22114d5022d6bd414fc7d34046b7a5f9cfdc930c/3.0.5/community/Dockerfile)
 -	[`3.0.5-enterprise` (*3.0.5/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/22114d5022d6bd414fc7d34046b7a5f9cfdc930c/3.0.5/enterprise/Dockerfile)
 -	[`3.0.4` (*3.0.4/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/1ad894c32a9cf2a7147f4bdd76eb7a52f8df9d12/3.0.4/community/Dockerfile)
