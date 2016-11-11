@@ -3,9 +3,39 @@ joomla:
   links:
     - joomladb:mysql
   ports:
-    - 8080:80
+    - 10080:80
+  volumes:
+    -  /srv/docker/smartprojects/joomla_www:/var/www/html
+  environment:
+    JOOMLA_DB_PASSWORD: "CHANGE$This!"
+  restart: always
 
 joomladb:
   image: mysql:5.6
   environment:
-    MYSQL_ROOT_PASSWORD: example
+    MYSQL_ROOT_PASSWORD: "CHANGE$This!"
+  volumes:
+    - /srv/docker/smartprojects/mysql:/var/lib/mysql
+  ports: #This is exposed in case you want to login to the mysql from the docker host. It is not mandatory to expose it.
+    - 10306:3306
+  restart: always
+
+# The below phpmyadmin is optional. Remove it if you do not require it.
+# Never expose phpmyadmin to the internet!
+phpmyadmin: 
+    image: phpmyadmin/phpmyadmin
+    environment:
+     - PMA_ARBITRARY=1
+    restart: always
+    ports:
+     - 10081:80
+    volumes:
+     - /srv/docker/smartprojects/phpmyadmin/sessions:/sessions
+    links:
+     - joomladb:mysql
+
+# To login to phpmyadmin, use: Server:mysql Username:root Password:CHANGE$This!
+
+#to start: docker-compose -f docker-compose-joomla.yml up &
+#to stop:  docker-compose -f docker-compose-joomla.yml stop
+#to rm:    docker-compose -f docker-compose-joomla.yml rm -f
