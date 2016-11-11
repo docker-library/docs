@@ -1,14 +1,17 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.1.0`, `7.1`, `7`, `latest` (*7.1/Dockerfile*)](https://github.com/nodejs/docker-node/blob/2c1bba840c6c64869755f67dafe2cd8f608dfc75/7.1/Dockerfile)
+-	[`7.1.0`, `7.1`, `7`, `latest` (*7.1/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d20d305f0bf5935385a32558501f3a5c65e34878/7.1/Dockerfile)
+-	[`7.1.0-alpine`, `7.1-alpine`, `7-alpine`, `alpine` (*7.1/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d20d305f0bf5935385a32558501f3a5c65e34878/7.1/alpine/Dockerfile)
 -	[`7.1.0-onbuild`, `7.1-onbuild`, `7-onbuild`, `onbuild` (*7.1/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/2c1bba840c6c64869755f67dafe2cd8f608dfc75/7.1/onbuild/Dockerfile)
 -	[`7.1.0-slim`, `7.1-slim`, `7-slim`, `slim` (*7.1/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/2c1bba840c6c64869755f67dafe2cd8f608dfc75/7.1/slim/Dockerfile)
 -	[`7.1.0-wheezy`, `7.1-wheezy`, `7-wheezy`, `wheezy` (*7.1/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/2c1bba840c6c64869755f67dafe2cd8f608dfc75/7.1/wheezy/Dockerfile)
--	[`6.9.1`, `6.9`, `6`, `boron` (*6.9/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/6.9/Dockerfile)
+-	[`6.9.1`, `6.9`, `6`, `boron` (*6.9/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d20d305f0bf5935385a32558501f3a5c65e34878/6.9/Dockerfile)
+-	[`6.9.1-alpine`, `6.9-alpine`, `6-alpine`, `boron-alpine` (*6.9/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d20d305f0bf5935385a32558501f3a5c65e34878/6.9/alpine/Dockerfile)
 -	[`6.9.1-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild` (*6.9/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/613d09a89a63c916883a9cf6d17000ab4c784aec/6.9/onbuild/Dockerfile)
 -	[`6.9.1-slim`, `6.9-slim`, `6-slim`, `boron-slim` (*6.9/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/6.9/slim/Dockerfile)
 -	[`6.9.1-wheezy`, `6.9-wheezy`, `6-wheezy`, `boron-wheezy` (*6.9/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/6.9/wheezy/Dockerfile)
--	[`4.6.2`, `4.6`, `4`, `argon` (*4.6/Dockerfile*)](https://github.com/nodejs/docker-node/blob/1d00e55ede1c9b6023b0473b5cf9399375d73fc8/4.6/Dockerfile)
+-	[`4.6.2`, `4.6`, `4`, `argon` (*4.6/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d20d305f0bf5935385a32558501f3a5c65e34878/4.6/Dockerfile)
+-	[`4.6.2-alpine`, `4.6-alpine`, `4-alpine`, `argon-alpine` (*4.6/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/d20d305f0bf5935385a32558501f3a5c65e34878/4.6/alpine/Dockerfile)
 -	[`4.6.2-onbuild`, `4.6-onbuild`, `4-onbuild`, `argon-onbuild` (*4.6/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/1d00e55ede1c9b6023b0473b5cf9399375d73fc8/4.6/onbuild/Dockerfile)
 -	[`4.6.2-slim`, `4.6-slim`, `4-slim`, `argon-slim` (*4.6/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/1d00e55ede1c9b6023b0473b5cf9399375d73fc8/4.6/slim/Dockerfile)
 -	[`4.6.2-wheezy`, `4.6-wheezy`, `4-wheezy`, `argon-wheezy` (*4.6/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/1d00e55ede1c9b6023b0473b5cf9399375d73fc8/4.6/wheezy/Dockerfile)
@@ -73,6 +76,14 @@ The `node` images come in many flavors, each designed for a specific use case.
 ## `node:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `node:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 ## `node:onbuild`
 
