@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.15-apache`, `8.0-apache`, `8.0.15`, `8.0` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/12b61400b292cfdef89ae568f726798f197ec409/8.0/apache/Dockerfile)
--	[`8.0.15-fpm`, `8.0-fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/12b61400b292cfdef89ae568f726798f197ec409/8.0/fpm/Dockerfile)
--	[`8.1.10-apache`, `8.1-apache`, `8.1.10`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/066a4f1d22f703605b00d70178dd7bb71b7d7140/8.1/apache/Dockerfile)
--	[`8.1.10-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/066a4f1d22f703605b00d70178dd7bb71b7d7140/8.1/fpm/Dockerfile)
--	[`8.2.8-apache`, `8.2-apache`, `8-apache`, `8.2.8`, `8.2`, `8` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f73b5dc1306f54c0744ad3dce726cbd7fb0530a7/8.2/apache/Dockerfile)
--	[`8.2.8-fpm`, `8.2-fpm`, `8-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f73b5dc1306f54c0744ad3dce726cbd7fb0530a7/8.2/fpm/Dockerfile)
--	[`9.0.5-apache`, `9.0-apache`, `9.0.5`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/92727b0d210b489161340f740b3693eb87915e16/9.0/apache/Dockerfile)
--	[`9.0.5-fpm`, `9.0-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/92727b0d210b489161340f740b3693eb87915e16/9.0/fpm/Dockerfile)
--	[`9.1.1-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.1`, `9.1`, `9`, `latest` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/51ba952ab82bdc0755275d31fc288af39ac1ba74/9.1/apache/Dockerfile)
--	[`9.1.1-fpm`, `9.1-fpm`, `9-fpm`, `fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/51ba952ab82bdc0755275d31fc288af39ac1ba74/9.1/fpm/Dockerfile)
+-	[`8.0.16-apache`, `8.0-apache`, `8.0.16`, `8.0` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/2c9fddfe6a17a2c1d631dd7a6f1c7f87763f7d10/8.0/apache/Dockerfile)
+-	[`8.0.16-fpm`, `8.0-fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/2c9fddfe6a17a2c1d631dd7a6f1c7f87763f7d10/8.0/fpm/Dockerfile)
+-	[`8.1.11-apache`, `8.1-apache`, `8.1.11`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/11331ee6c9af343e4b25efd62135742fe4a48259/8.1/apache/Dockerfile)
+-	[`8.1.11-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/11331ee6c9af343e4b25efd62135742fe4a48259/8.1/fpm/Dockerfile)
+-	[`8.2.9-apache`, `8.2-apache`, `8-apache`, `8.2.9`, `8.2`, `8` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/ff9352a1c798b21f93fdca4b31165be91e879665/8.2/apache/Dockerfile)
+-	[`8.2.9-fpm`, `8.2-fpm`, `8-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/ff9352a1c798b21f93fdca4b31165be91e879665/8.2/fpm/Dockerfile)
+-	[`9.0.6-apache`, `9.0-apache`, `9.0.6`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/375db22095df9a8d5b27f9f656eff92fcfad3b2e/9.0/apache/Dockerfile)
+-	[`9.0.6-fpm`, `9.0-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/375db22095df9a8d5b27f9f656eff92fcfad3b2e/9.0/fpm/Dockerfile)
+-	[`9.1.2-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.2`, `9.1`, `9`, `latest` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/373a10dfe09623b32510f64912d2188c6395f64e/9.1/apache/Dockerfile)
+-	[`9.1.2-fpm`, `9.1-fpm`, `9-fpm`, `fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/373a10dfe09623b32510f64912d2188c6395f64e/9.1/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fowncloud).
 

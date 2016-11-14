@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.16`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/3204fb896811b4d20527b8d4a509d65189fd6913/2.1/Dockerfile)
--	[`2.2.8`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ef57ef961003e27469b86178f0b4d184bb64d82e/2.2/Dockerfile)
--	[`3.0.9`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ef57ef961003e27469b86178f0b4d184bb64d82e/3.0/Dockerfile)
--	[`3.9`, `3`, `latest` (*3.9/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ce8566d1ce825d2d0e16b2b0b76befed1defe62c/3.9/Dockerfile)
+-	[`2.1.16`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/4bb926527d4a9eb534508fe0bbae604dee81f40a/2.1/Dockerfile)
+-	[`2.2.8`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/4bb926527d4a9eb534508fe0bbae604dee81f40a/2.2/Dockerfile)
+-	[`3.0.9`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/4bb926527d4a9eb534508fe0bbae604dee81f40a/3.0/Dockerfile)
+-	[`3.9`, `3`, `latest` (*3.9/Dockerfile*)](https://github.com/docker-library/cassandra/blob/4bb926527d4a9eb534508fe0bbae604dee81f40a/3.9/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcassandra).
 

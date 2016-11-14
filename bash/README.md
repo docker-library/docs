@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.4.0`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/4.4/Dockerfile)
+-	[`4.4.5`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/tianon/docker-bash/blob/d3283a47fbb92419b7b6fc1fccd30b95d75e9ab6/4.4/Dockerfile)
 -	[`4.3.48`, `4.3` (*4.3/Dockerfile*)](https://github.com/tianon/docker-bash/blob/2f7c9c45567b18b74c321f0ff1e460ae1117a9b5/4.3/Dockerfile)
 -	[`4.2.53`, `4.2` (*4.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/4.2/Dockerfile)
 -	[`4.1.17`, `4.1` (*4.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/4.1/Dockerfile)

@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2-5.4.1`, `2-5.4`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/1ac033f2edcaace74052e2ebefc8dae47cefff46/2/Dockerfile)
--	[`2-5.4.1-slim`, `2-5.4-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/95f6702ded19c44f5dc872ff5ea0374138804829/2/slim/Dockerfile)
--	[`2-5.4.1-onbuild`, `2-5.4-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
+-	[`2-5.6.0`, `2-5.6`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/491b6dc82d4275a452d48b800ee7a91e48ef9991/2/Dockerfile)
+-	[`2-5.6.0-slim`, `2-5.6-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/491b6dc82d4275a452d48b800ee7a91e48ef9991/2/slim/Dockerfile)
+-	[`2-5.6.0-onbuild`, `2-5.6-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
 -	[`3-5.5.0-alpha`, `3-5.5.0`, `3-5.5`, `3-5`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/d280acb013c2248452caf98117334eab9da5a8f6/3/Dockerfile)
 -	[`3-5.5.0-alpha-slim`, `3-5.5.0-slim`, `3-5.5-slim`, `3-5-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/95f6702ded19c44f5dc872ff5ea0374138804829/3/slim/Dockerfile)
 -	[`3-5.5.0-alpha-onbuild`, `3-5.5.0-onbuild`, `3-5.5-onbuild`, `3-5-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
