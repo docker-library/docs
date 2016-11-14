@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.31.5`, `0.31`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/74a6862ded6e8827da9677e60d5b1910f40e9a45/Dockerfile)
+-	[`0.32.0`, `0.32`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/b080000a8c03ef81455fa6aca8c0c8d1a35ef365/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo-express`)](https://github.com/docker-library/official-images/blob/master/library/mongo-express). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express).
 
@@ -40,7 +40,7 @@ Environment vairables are passed to the `run` command for configuring a mongo-ex
 	ME_CONFIG_MONGODB_ADMINUSERNAME | ''              | MongoDB admin username
 	ME_CONFIG_MONGODB_ADMINPASSWORD | ''              | MongoDB admin password
 	ME_CONFIG_MONGODB_PORT          | 27017           | MongoDB port
-	ME_CONFIG_MONGODB_SERVER        | 'mongo'         | MongoDB container name
+	ME_CONFIG_MONGODB_SERVER        | 'mongo'         | MongoDB container name. Use comma delimited list of host names for replica sets.
 	ME_CONFIG_OPTIONS_EDITORTHEME   | 'default'       | mongo-express editor color theme, [more here](http://codemirror.net/demo/theme.html)
 	ME_CONFIG_REQUEST_SIZE          | '100kb'         | Maximum payload size. CRUD operations above this size will fail in [body-parser](https://www.npmjs.com/package/body-parser).
 	ME_CONFIG_SITE_BASEURL          | '/'             | Set the baseUrl to ease mounting at a subdirectory. Remember to include a leading and trailing slash.
