@@ -2,8 +2,8 @@
 
 -	[`1.0`, `1.0.1` (*telegraf/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a86d1ecbaa12a696c10ed66bf4390c42fe733582/telegraf/1.0/Dockerfile)
 -	[`1.0-alpine`, `1.0.1-alpine` (*telegraf/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a86d1ecbaa12a696c10ed66bf4390c42fe733582/telegraf/1.0/alpine/Dockerfile)
--	[`1.1`, `1.1.0`, `latest` (*telegraf/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/5bfae0d45f25aa52a2bfd2ebcc7f1af52dad90ae/telegraf/1.1/Dockerfile)
--	[`1.1-alpine`, `1.1.0-alpine`, `alpine` (*telegraf/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/5bfae0d45f25aa52a2bfd2ebcc7f1af52dad90ae/telegraf/1.1/alpine/Dockerfile)
+-	[`1.1`, `1.1.1`, `latest` (*telegraf/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/902362bdf052871ad6232dbf66fb3d767ccca5db/telegraf/1.1/Dockerfile)
+-	[`1.1-alpine`, `1.1.1-alpine`, `alpine` (*telegraf/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/902362bdf052871ad6232dbf66fb3d767ccca5db/telegraf/1.1/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/telegraf`)](https://github.com/docker-library/official-images/blob/master/library/telegraf). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftelegraf).
 
