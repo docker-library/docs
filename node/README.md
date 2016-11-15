@@ -19,10 +19,6 @@
 -	[`0.12.17-onbuild`, `0.12-onbuild`, `0-onbuild` (*0.12/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/c3ff7866303b4c595ab07529cdf35f9df58f5b21/0.12/onbuild/Dockerfile)
 -	[`0.12.17-slim`, `0.12-slim`, `0-slim` (*0.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/0.12/slim/Dockerfile)
 -	[`0.12.17-wheezy`, `0.12-wheezy`, `0-wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/0.12/wheezy/Dockerfile)
--	[`0.10.48`, `0.10` (*0.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/0.10/Dockerfile)
--	[`0.10.48-onbuild`, `0.10-onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/2716d804bd63f85a46e5fecbb36323a5d06ea5f6/0.10/onbuild/Dockerfile)
--	[`0.10.48-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/0.10/slim/Dockerfile)
--	[`0.10.48-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b18c441de44515015f7670d7be0186503ae156ec/0.10/wheezy/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
 
