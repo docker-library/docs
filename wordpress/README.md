@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.6.1-apache`, `4.6-apache`, `4-apache`, `apache`, `4.6.1`, `4.6`, `4`, `latest`, `4.6.1-php5.6-apache`, `4.6-php5.6-apache`, `4-php5.6-apache`, `php5.6-apache`, `4.6.1-php5.6`, `4.6-php5.6`, `4-php5.6`, `php5.6` (*php5.6/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/7d40c4237f01892bb6dbc67d1a82f5b15f807ca1/php5.6/apache/Dockerfile)
--	[`4.6.1-fpm`, `4.6-fpm`, `4-fpm`, `fpm`, `4.6.1-php5.6-fpm`, `4.6-php5.6-fpm`, `4-php5.6-fpm`, `php5.6-fpm` (*php5.6/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/7d40c4237f01892bb6dbc67d1a82f5b15f807ca1/php5.6/fpm/Dockerfile)
--	[`4.6.1-php7.0-apache`, `4.6-php7.0-apache`, `4-php7.0-apache`, `php7.0-apache`, `4.6.1-php7.0`, `4.6-php7.0`, `4-php7.0`, `php7.0` (*php7.0/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/7d40c4237f01892bb6dbc67d1a82f5b15f807ca1/php7.0/apache/Dockerfile)
--	[`4.6.1-php7.0-fpm`, `4.6-php7.0-fpm`, `4-php7.0-fpm`, `php7.0-fpm` (*php7.0/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/7d40c4237f01892bb6dbc67d1a82f5b15f807ca1/php7.0/fpm/Dockerfile)
+-	[`4.6.1-apache`, `4.6-apache`, `4-apache`, `apache`, `4.6.1`, `4.6`, `4`, `latest`, `4.6.1-php5.6-apache`, `4.6-php5.6-apache`, `4-php5.6-apache`, `php5.6-apache`, `4.6.1-php5.6`, `4.6-php5.6`, `4-php5.6`, `php5.6` (*php5.6/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/8ab70dd61a996d58c0addf4867a768efe649bf65/php5.6/apache/Dockerfile)
+-	[`4.6.1-fpm`, `4.6-fpm`, `4-fpm`, `fpm`, `4.6.1-php5.6-fpm`, `4.6-php5.6-fpm`, `4-php5.6-fpm`, `php5.6-fpm` (*php5.6/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/8ab70dd61a996d58c0addf4867a768efe649bf65/php5.6/fpm/Dockerfile)
+-	[`4.6.1-php7.0-apache`, `4.6-php7.0-apache`, `4-php7.0-apache`, `php7.0-apache`, `4.6.1-php7.0`, `4.6-php7.0`, `4-php7.0`, `php7.0` (*php7.0/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/8ab70dd61a996d58c0addf4867a768efe649bf65/php7.0/apache/Dockerfile)
+-	[`4.6.1-php7.0-fpm`, `4.6-php7.0-fpm`, `4-php7.0-fpm`, `php7.0-fpm` (*php7.0/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/8ab70dd61a996d58c0addf4867a768efe649bf65/php7.0/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress).
 

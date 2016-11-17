@@ -4,14 +4,14 @@
 -	[`2.1.10-slim`, `2.1-slim` (*2.1/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/ef8c21b5ed1f994ff080e21f02551cdf03b396c9/2.1/slim/Dockerfile)
 -	[`2.1.10-alpine`, `2.1-alpine` (*2.1/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/ef8c21b5ed1f994ff080e21f02551cdf03b396c9/2.1/alpine/Dockerfile)
 -	[`2.1.10-onbuild`, `2.1-onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.1/onbuild/Dockerfile)
--	[`2.2.5`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/ruby/blob/9898bab20a28b2df0b279dcca4b8dee399a4b4d0/2.2/Dockerfile)
--	[`2.2.5-slim`, `2.2-slim` (*2.2/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/9898bab20a28b2df0b279dcca4b8dee399a4b4d0/2.2/slim/Dockerfile)
--	[`2.2.5-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/9898bab20a28b2df0b279dcca4b8dee399a4b4d0/2.2/alpine/Dockerfile)
--	[`2.2.5-onbuild`, `2.2-onbuild` (*2.2/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.2/onbuild/Dockerfile)
--	[`2.3.1`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/ruby/blob/ec068a416df98e3c01b47f07a314b12a6412cfc5/2.3/Dockerfile)
--	[`2.3.1-slim`, `2.3-slim`, `2-slim`, `slim` (*2.3/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/ec068a416df98e3c01b47f07a314b12a6412cfc5/2.3/slim/Dockerfile)
--	[`2.3.1-alpine`, `2.3-alpine`, `2-alpine`, `alpine` (*2.3/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/ec068a416df98e3c01b47f07a314b12a6412cfc5/2.3/alpine/Dockerfile)
--	[`2.3.1-onbuild`, `2.3-onbuild`, `2-onbuild`, `onbuild` (*2.3/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/1b08f346713a1293c2a9238e470e086126e2e28f/2.3/onbuild/Dockerfile)
+-	[`2.2.6`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/ruby/blob/1913ca0a1268c9a3d18ca5771a85ec3428c9cb3d/2.2/Dockerfile)
+-	[`2.2.6-slim`, `2.2-slim` (*2.2/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/1913ca0a1268c9a3d18ca5771a85ec3428c9cb3d/2.2/slim/Dockerfile)
+-	[`2.2.6-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/1913ca0a1268c9a3d18ca5771a85ec3428c9cb3d/2.2/alpine/Dockerfile)
+-	[`2.2.6-onbuild`, `2.2-onbuild` (*2.2/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.2/onbuild/Dockerfile)
+-	[`2.3.2`, `2.3`, `2`, `latest` (*2.3/Dockerfile*)](https://github.com/docker-library/ruby/blob/9b3ffd5380f085847c4d0d885bc366f58a85a64a/2.3/Dockerfile)
+-	[`2.3.2-slim`, `2.3-slim`, `2-slim`, `slim` (*2.3/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/9b3ffd5380f085847c4d0d885bc366f58a85a64a/2.3/slim/Dockerfile)
+-	[`2.3.2-alpine`, `2.3-alpine`, `2-alpine`, `alpine` (*2.3/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/9b3ffd5380f085847c4d0d885bc366f58a85a64a/2.3/alpine/Dockerfile)
+-	[`2.3.2-onbuild`, `2.3-onbuild`, `2-onbuild`, `onbuild` (*2.3/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/1b08f346713a1293c2a9238e470e086126e2e28f/2.3/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fruby).
 
