@@ -6,8 +6,8 @@
 -	[`3.2.11-windowsservercore`, `3.2-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/21a6f6cf3eff13a39b20c86224730a29823370ca/3.2/windows/windowsservercore/Dockerfile)
 -	[`3.3.15`, `3.3`, `unstable` (*3.3/Dockerfile*)](https://github.com/docker-library/mongo/blob/0ac2867637ef5989e4dc051efa0ae296010e58c9/3.3/Dockerfile)
 -	[`3.3.15-windowsservercore`, `3.3-windowsservercore`, `unstable-windowsservercore` (*3.3/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/a51b641c84e1a8d543b6a234a090f8263188139a/3.3/windows/windowsservercore/Dockerfile)
--	[`3.4.0-rc4`, `3.4.0`, `3.4`, `3.4-rc`, `rc` (*3.4-rc/Dockerfile*)](https://github.com/docker-library/mongo/blob/af08171f377164a3e996e660dd26d16dd7a00321/3.4-rc/Dockerfile)
--	[`3.4.0-rc4-windowsservercore`, `3.4.0-windowsservercore`, `3.4-windowsservercore`, `3.4-rc-windowsservercore`, `rc-windowsservercore` (*3.4-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/e3bc09e3a6fc447168d94a860caadc445b7364ba/3.4-rc/windows/windowsservercore/Dockerfile)
+-	[`3.4.0-rc5`, `3.4.0`, `3.4`, `3.4-rc`, `rc` (*3.4-rc/Dockerfile*)](https://github.com/docker-library/mongo/blob/f5a955ece2dc3da903c804115c75a9b0b5bc2edf/3.4-rc/Dockerfile)
+-	[`3.4.0-rc5-windowsservercore`, `3.4.0-windowsservercore`, `3.4-windowsservercore`, `3.4-rc-windowsservercore`, `rc-windowsservercore` (*3.4-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/0e4966760ba48fb611d3efb3975484444b5def1e/3.4-rc/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo).
 
