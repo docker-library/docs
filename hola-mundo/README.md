@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest` (*hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/85fd7ab65e079b08019032479a3f306964a28f4d/hola-mundo/Dockerfile)
+-	[`nanoserver` (*hola-mundo/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/0f30176f82bc9984e7a75f96205f86dc3758e2e8/hola-mundo/nanoserver/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/hola-mundo`)](https://github.com/docker-library/official-images/blob/master/library/hola-mundo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhola-mundo).
 

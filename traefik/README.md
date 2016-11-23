@@ -1,7 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.1.0-rc4`, `camembert` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/c8760c0b023570d7fff14934fa340759f8174e00/Dockerfile)
--	[`v1.0.3`, `reblochon`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/9d877ca7171211aabc2955ab1a301a685f6852fe/Dockerfile)
+-	[`v1.1.0`, `camembert`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/22634bd4df4e1ee0f7b32fbdbf96ee3f87e06bb5/Dockerfile)
+-	[`v1.1.0-alpine`, `camembert-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/22634bd4df4e1ee0f7b32fbdbf96ee3f87e06bb5/alpine/Dockerfile)
+-	[`v1.0.3`, `reblochon` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/9d877ca7171211aabc2955ab1a301a685f6852fe/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/traefik`)](https://github.com/docker-library/official-images/blob/master/library/traefik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik).
 

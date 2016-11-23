@@ -24,8 +24,12 @@
 -	[`4.4.2.11-onbuild`, `4.4.2-onbuild`, `4.4-onbuild` (*4.4.2.11/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/b2efdab5e0ef9ef0b91930956a7f5049ec0e4146/4.4.2.11/onbuild/Dockerfile)
 -	[`4.6.0.245`, `4.6.0` (*4.6.0.245/Dockerfile*)](https://github.com/mono/docker/blob/9fdd0e79b4eb3e7e7e818fbd58bd324d4c5ab7e1/4.6.0.245/Dockerfile)
 -	[`4.6.0.245-onbuild`, `4.6.0-onbuild` (*4.6.0.245/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/9fdd0e79b4eb3e7e7e818fbd58bd324d4c5ab7e1/4.6.0.245/onbuild/Dockerfile)
--	[`4.6.1.3`, `4.6.1`, `4.6`, `4`, `latest` (*4.6.1.3/Dockerfile*)](https://github.com/mono/docker/blob/f0f1e0b9f693bd7c58d9623d402c8dc69234bbe1/4.6.1.3/Dockerfile)
--	[`4.6.1.3-onbuild`, `4.6.1-onbuild`, `4.6-onbuild`, `4-onbuild`, `onbuild` (*4.6.1.3/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/f0f1e0b9f693bd7c58d9623d402c8dc69234bbe1/4.6.1.3/onbuild/Dockerfile)
+-	[`4.6.1.3` (*4.6.1.3/Dockerfile*)](https://github.com/mono/docker/blob/f0f1e0b9f693bd7c58d9623d402c8dc69234bbe1/4.6.1.3/Dockerfile)
+-	[`4.6.1.3-onbuild` (*4.6.1.3/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/f0f1e0b9f693bd7c58d9623d402c8dc69234bbe1/4.6.1.3/onbuild/Dockerfile)
+-	[`4.6.1.5`, `4.6.1` (*4.6.1.5/Dockerfile*)](https://github.com/mono/docker/blob/8e5f8d9d00f596b838bf8d7d307ddb47f008a691/4.6.1.5/Dockerfile)
+-	[`4.6.1.5-onbuild`, `4.6.1-onbuild` (*4.6.1.5/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/8e5f8d9d00f596b838bf8d7d307ddb47f008a691/4.6.1.5/onbuild/Dockerfile)
+-	[`4.6.2.7`, `4.6.2`, `4.6`, `4`, `latest` (*4.6.2.7/Dockerfile*)](https://github.com/mono/docker/blob/a41b568af8e26dac60a11432b5bb1c910d44f44a/4.6.2.7/Dockerfile)
+-	[`4.6.2.7-onbuild`, `4.6.2-onbuild`, `4.6-onbuild`, `4-onbuild`, `onbuild` (*4.6.2.7/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/a41b568af8e26dac60a11432b5bb1c910d44f44a/4.6.2.7/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono).
 
