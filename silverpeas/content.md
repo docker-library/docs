@@ -23,9 +23,9 @@ For the same reasons, the Docker images of Silverpeas aren't shipped with the Or
 The Silverpeas images use the following environment variables to set the database access parameters:
 
 -	`DB_SERVERTYPE` to specify the database system to use with Silverpeas: POSTGRESQL for PostgreSQL, MSSQL for Microsoft SQLServer, ORACLE for Oracle. By default, it is set to POSTGRESQL.
--	`DB_SERVER` to specify the IP address or the name of the host on which the database system is running. By default, it is set to `localhost`.
+-	`DB_SERVER` to specify the IP address or the name of the host on which the database system is running. By default, it is set to `database`, so that any container running a database can be linked to the Silverpeas container with this name.
 -	`DB_NAME` to specify the database to use with Silverpeas. By default, it is set to `Silverpeas`.
--	`DB_USER` to specify the user identifier to use by Silverpeas to access the database. By default, it is set to `silverpeas`.
+-	`DB_USER` to specify the user identifier to use by Silverpeas to access the database. By default, it is set to `silverpeas` (it is recommended to dedicate a user account in the database for each application).
 -	`DB_PASSWORD` to specify the password associated with the user identifier above.
 
 These environment variables can be also defined as properties into the Silverpeas global configuration file `config.properties` (see below).
@@ -36,20 +36,18 @@ In [Docker Hub](https://hub.docker.com/), no Docker images of Microsoft SQLServe
 
 	$ docker run --name postgresql -d \
 	    -e POSTGRES_PASSWORD="mysecretpassword" \
-	    -v /var/lib/postgresql/data:/var/lib/postgresql/data \
-	    postgres
+	    -v postgresql-data:/var/lib/postgresql/data \
+	    postgres:9.6
 
-The directory with the database file is mounted on the host so the data won't be lost when upgrading PostgreSQL to a new version (a Data Volume Container can be used instead).
+We recommended strongly to mount the directory with the database file on the host so the data won't be lost when upgrading PostgreSQL to a newer version (a Data Volume Container can be used instead). For any information how to start a PostgreSQL container, you can refer its [documentation]((https://hub.docker.com/_/postgres/).
 
-Once the database system is running, a database for Silverpeas has to be created and a user with administrative rights on this database should be added.
+Once the database system is running, a database for Silverpeas has to be created and a user with administrative rights on this database should be added; it is recommended to create a dedicated user account in the database for each application. For this document, and by default, a database `Silverpeas` and a user `silverpeas` for that database are created for Silverpeas.
 
 ### Start a Silverpeas instance with the default configuration
 
 Finally, a Silverpeas instance can be started by specifying the required database access parameters with the environment variables. In the example, the database is named `Silverpeas` and the priviledged user is `silverpeas` with as password `thesilverpeaspassword`:
 
 	$ docker run --name silverpeas -p 8080:8000 -d \
-	    -e DB_SERVERTYPE="POSTGRESQL" \
-	    -e DB_SERVER="database" \
 	    -e DB_NAME="Silverpeas" \
 	    -e DB_USER="silverpeas" \
 	    -e DB_PASSWORD="thesilverpeaspassword" \
@@ -58,13 +56,13 @@ Finally, a Silverpeas instance can be started by specifying the required databas
 	    --link postgresql:database \
 	    silverpeas
 
-The Silverpeas images expose the 8000 port and here this port is mapped to the 8080 port of the host. For a PostgreSQL database system, you can omit the `DB_SERVERTYPE` environment variable. Here, as the PostgreSQL database is linked under the alias `database`, it is required to specifiy it also as the database hostname with the `DB_SERVER` environment variable.
+Here, as the PostgreSQL database is linked under the alias `database`, we don't have to explicitly indicate its hostname with the `DB_SERVER` environment variable. The Silverpeas images expose the 8000 port and here this port is mapped to the 8080 port of the host.
 
 By default, some volumes are created inside the container, so that we can access them in the host.(Refers the [Docker Documentation](https://docs.docker.com/engine/tutorials/dockervolumes/#locating-a-volume) to locate them.) Among them `/opt/silverpeas/log` and `/opt/silverpeas/data`: the first volume contains the logs produced by Silverpeas whereas the second volume contains all the data that are created and managed by the users in Silverpeas. Because the latter has already a directories structure created at image creation, a host directory cannot be mounted into the container at `opt/silverpeas/data` without losing the volume's content (the mount point overlays the pre-existing content of the volume). In our example, in order to easily locate the two volumes, we label them explicitly with respectively the labels `silverpeas-log` and `silverpeas-data`. (Using a [Data Volume Container](https://docs.docker.com/engine/userguide/containers/dockervolumes/) to map `/opt/silverpeas/log` and `/opt/silverpeas/data` is a better solution.)
 
 ### Start a Silverpeas instance with a finer configuration
 
-The Silverpeas global configuration is defined in the `/opt/silverpeas/configuration/config.properties` file whose a sample is provided by `/opt/silverpeas/configuration/sample_config.properties`. You can explicitly create the `config.properties` file with, additionally to the database access parameters, your peculiar configuration parameters and then start a Silverpeas instance with your configuration file:
+The Silverpeas global configuration is defined in the `/opt/silverpeas/configuration/config.properties` file whose a sample can be found [here](https://raw.githubusercontent.com/Silverpeas/Silverpeas-Distribution/master/src/main/dist/configuration/sample_config.properties) or in the container directory `/opt/silverpeas/configuration/`. You can explicitly create the `config.properties` file with, additionally to the database access parameters, your peculiar configuration parameters and then start a Silverpeas instance with this configuration file:
 
 	$ docker run --name silverpeas -p 8080:8000 -d \
 	    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties
@@ -144,9 +142,9 @@ If you have to customize the settings of Silverpeas or add, for example, a new d
 
 # Document conversion
 
-Some features in Silverpeas (export, preview, content visualization, ...) requires a document converter. The document conversion is performed in Silverpeas by the program LibreOffice running as a daemon. So, in order to enable and to use these features, you have first to use a Data Volume Container to store all the Silverpeas data and second to run a container embbeding a LibreOffice program running as a daemon. There is no official Docker images of LibreOffice but DockerHub hosts some of unofficial images of it ([xcgd/libreoffice](https://hub.docker.com/r/xcgd/libreoffice/) for example).
+Some features in Silverpeas (export, preview, content visualization, ...) requires a document converter. The document converter isn't mandatory to use Silverpeas but it gives access to additional features. The document conversion is performed in Silverpeas by the program LibreOffice running as a daemon. So, in order to enable and to use these features, you have first to use a Data Volume Container to store all the Silverpeas data and second to run a container embbeding a LibreOffice program running as a daemon. There is no official Docker images of LibreOffice but DockerHub hosts some of unofficial images of it ([xcgd/libreoffice](https://hub.docker.com/r/xcgd/libreoffice/) for example).
 
-Once a Data Volume Container created for Silverpeas as explained in the section above, you have to link it with the Docker image running LibreOffice as a daemon in order the program have access the documents to convert:
+Once a Data Volume Container is created for Silverpeas as explained in the section above, you have to link it with the Docker image running LibreOffice as a daemon in order the program have access the documents to convert:
 
 	$ docker run --name libreoffice -d \
 	    --volumes-from silverpeas-store \
