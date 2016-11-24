@@ -13,7 +13,7 @@ This image requires a running PostgreSQL server.
 ## Start a PostgreSQL server
 
 ```console
-$ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres:9.4
+$ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres:9.6
 ```
 
 ## Start an Odoo instance
@@ -69,6 +69,92 @@ $ docker run -p 8071:8069 --name odoo3 --link db:db -t odoo
 ```
 
 Please note that for plain use of mails and reports functionalities, when the host and container ports differ (e.g. 8070 and 8069), one has to set, in Odoo, Settings->Parameters->System Parameters (requires technical features), web.base.url to the container port (e.g. 127.0.0.1:8069).
+
+## Use with Docker Compose
+
+The Odoo Docker image has some environment variables (with default values) that you can set to fit your needs:
+
+-	`HOST`: the name of the "host" or address of the PostgreSQL database inside the Odoo container. By default it's: `db`.
+-	`PORT`: the port in where that database container is listening. By default it's the standard PostgreSQL port: `5432`.
+-	`USER`: the user that you gave to the PostgreSQL database container (the same as `POSTGRES_USER` in the database container). By default it's: `odoo`. Currently it is required that the name of the user you give to the PostgreSQL and Odoo container is "`odoo`", see [issue#10377](https://github.com/odoo/odoo/issues/10377).
+-	`PASSWORD`: the password that you gave to the PostgreSQL database container (the same as `POSTGRES_PASSWORD` in the database container). By default it's: `odoo`.
+
+So, a `docker-compose.yml` file could contain just:
+
+```yml
+version: '2'
+services:
+  web:
+    image: odoo:10
+    depends_on:
+      - db
+    ports:
+      - "8069:8069"
+  db:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+```
+
+This previous `docker-compose.yml` would be using the defaults for all the environment variables.
+
+If you needed to modify the environment variables it could look like:
+
+```yml
+version: '2'
+services:
+  web:
+    image: odoo:10
+    depends_on:
+      - mydb
+    ports:
+      - "8069:8069"
+    environment:
+    - HOST=mydb
+    - USER=odoo
+    - PASSWORD=myodoo
+
+  mydb:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=myodoo
+```
+
+If you use volumes for the data of the database and the odoo files, and also mount directories with addons and configurations a `docker-compose.yml` file could be:
+
+```yml
+version: '2'
+services:
+  web:
+    image: odoo:9
+    depends_on:
+      - db
+    ports:
+      - "8069:8069"
+    volumes:
+      - odoo-web-data:/var/lib/odoo
+      - ./config:/etc/odoo
+      - ./addons:/mnt/extra-addons
+  db:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - odoo-db-data:/var/lib/postgresql/data/pgdata
+volumes:
+  odoo-web-data:
+  odoo-db-data:
+```
+
+Then you can start your stack from the same directory with the `docker-compose.yml` file with:
+
+```console
+docker-compose up -d
+```
 
 # How to upgrade this image
 
