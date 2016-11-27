@@ -131,5 +131,5 @@ Please replace `admin-pass` with a real password for the `admin` user. Then you 
 To use this image as base image for your web application, simply add your application JAR as `/app/app.jar`:
 
 ```dockerfile
-ADD <location/of/your/webapp.jar> /app/app.jar
+COPY <location/of/your/webapp.jar> /app/app.jar
 ```
