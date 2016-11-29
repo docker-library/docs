@@ -1,9 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.19.1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/2fb0684fe6eb11a3c1145d71e0cb50bf2dda8d11/Dockerfile)
--	[`2.7.4` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/6eaa9b15926232310317490a3b9975ef61be763c/Dockerfile)
--	[`alpine`, `2.19.1-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/3fc5d6038dc717055b15001cd7e039e965f24542/Dockerfile)
--	[`2.7.4-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/d2eeb20813164526f0443599fd82fd79fadee77e/Dockerfile)
+-	[`latest`, `2.19.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/5d9a559059b4fb487a8ee6c511f68b43cfe82732/Dockerfile)
+-	[`alpine`, `2.19.3-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/7da69e4cbe3d06bf42fc964203a90d6bd211a3e1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
@@ -49,7 +47,7 @@ This is highly recommended. Treat the jenkins_home directory as you would a data
 
 If your volume is inside a container - you can use `docker cp $ID:/var/jenkins_home` command to extract the data, or other options to find where the volume data is. Note that some symlinks on some OSes may be converted to copies (this can confuse jenkins with lastStableBuild links etc)
 
-For more info check Docker docs section on [Managing data in containers](https://docs.docker.com/userguide/dockervolumes/)
+For more info check Docker docs section on [Managing data in containers](https://docs.docker.com/engine/tutorials/dockervolumes/)
 
 # Setting the number of executors
 
@@ -193,7 +191,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,26 +1,26 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.1.0RC3-cli`, `7.1-rc-cli`, `rc-cli`, `7.1.0RC3`, `7.1-rc`, `rc` (*7.1-rc/Dockerfile*)](https://github.com/docker-library/php/blob/ecde4f3843bf8e652111beb4cbdd15aabfd90d02/7.1-rc/Dockerfile)
--	[`7.1.0RC3-alpine`, `7.1-rc-alpine`, `rc-alpine` (*7.1-rc/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/ecde4f3843bf8e652111beb4cbdd15aabfd90d02/7.1-rc/alpine/Dockerfile)
--	[`7.1.0RC3-apache`, `7.1-rc-apache`, `rc-apache` (*7.1-rc/apache/Dockerfile*)](https://github.com/docker-library/php/blob/ecde4f3843bf8e652111beb4cbdd15aabfd90d02/7.1-rc/apache/Dockerfile)
--	[`7.1.0RC3-fpm`, `7.1-rc-fpm`, `rc-fpm` (*7.1-rc/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/ecde4f3843bf8e652111beb4cbdd15aabfd90d02/7.1-rc/fpm/Dockerfile)
--	[`7.1.0RC3-fpm-alpine`, `7.1-rc-fpm-alpine`, `rc-fpm-alpine` (*7.1-rc/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/ecde4f3843bf8e652111beb4cbdd15aabfd90d02/7.1-rc/fpm/alpine/Dockerfile)
--	[`7.1.0RC3-zts`, `7.1-rc-zts`, `rc-zts` (*7.1-rc/zts/Dockerfile*)](https://github.com/docker-library/php/blob/ecde4f3843bf8e652111beb4cbdd15aabfd90d02/7.1-rc/zts/Dockerfile)
--	[`7.1.0RC3-zts-alpine`, `7.1-rc-zts-alpine`, `rc-zts-alpine` (*7.1-rc/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/ecde4f3843bf8e652111beb4cbdd15aabfd90d02/7.1-rc/zts/alpine/Dockerfile)
--	[`7.0.12-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.12`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/7.0/Dockerfile)
--	[`7.0.12-alpine`, `7.0-alpine`, `7-alpine`, `alpine` (*7.0/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/7.0/alpine/Dockerfile)
--	[`7.0.12-apache`, `7.0-apache`, `7-apache`, `apache` (*7.0/apache/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/7.0/apache/Dockerfile)
--	[`7.0.12-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/7.0/fpm/Dockerfile)
--	[`7.0.12-fpm-alpine`, `7.0-fpm-alpine`, `7-fpm-alpine`, `fpm-alpine` (*7.0/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/7.0/fpm/alpine/Dockerfile)
--	[`7.0.12-zts`, `7.0-zts`, `7-zts`, `zts` (*7.0/zts/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/7.0/zts/Dockerfile)
--	[`7.0.12-zts-alpine`, `7.0-zts-alpine`, `7-zts-alpine`, `zts-alpine` (*7.0/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/7.0/zts/alpine/Dockerfile)
--	[`5.6.27-cli`, `5.6-cli`, `5-cli`, `5.6.27`, `5.6`, `5` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/5.6/Dockerfile)
--	[`5.6.27-alpine`, `5.6-alpine`, `5-alpine` (*5.6/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/5.6/alpine/Dockerfile)
--	[`5.6.27-apache`, `5.6-apache`, `5-apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/5.6/apache/Dockerfile)
--	[`5.6.27-fpm`, `5.6-fpm`, `5-fpm` (*5.6/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/5.6/fpm/Dockerfile)
--	[`5.6.27-fpm-alpine`, `5.6-fpm-alpine`, `5-fpm-alpine` (*5.6/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/5.6/fpm/alpine/Dockerfile)
--	[`5.6.27-zts`, `5.6-zts`, `5-zts` (*5.6/zts/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/5.6/zts/Dockerfile)
--	[`5.6.27-zts-alpine`, `5.6-zts-alpine`, `5-zts-alpine` (*5.6/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/5.6/zts/alpine/Dockerfile)
+-	[`7.1.0RC6-cli`, `7.1-rc-cli`, `rc-cli`, `7.1.0RC6`, `7.1-rc`, `rc` (*7.1-rc/Dockerfile*)](https://github.com/docker-library/php/blob/4ea9e241d26b245fa04896a608c73e84522f8689/7.1-rc/Dockerfile)
+-	[`7.1.0RC6-alpine`, `7.1-rc-alpine`, `rc-alpine` (*7.1-rc/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4ea9e241d26b245fa04896a608c73e84522f8689/7.1-rc/alpine/Dockerfile)
+-	[`7.1.0RC6-apache`, `7.1-rc-apache`, `rc-apache` (*7.1-rc/apache/Dockerfile*)](https://github.com/docker-library/php/blob/4ea9e241d26b245fa04896a608c73e84522f8689/7.1-rc/apache/Dockerfile)
+-	[`7.1.0RC6-fpm`, `7.1-rc-fpm`, `rc-fpm` (*7.1-rc/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/4ea9e241d26b245fa04896a608c73e84522f8689/7.1-rc/fpm/Dockerfile)
+-	[`7.1.0RC6-fpm-alpine`, `7.1-rc-fpm-alpine`, `rc-fpm-alpine` (*7.1-rc/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4ea9e241d26b245fa04896a608c73e84522f8689/7.1-rc/fpm/alpine/Dockerfile)
+-	[`7.1.0RC6-zts`, `7.1-rc-zts`, `rc-zts` (*7.1-rc/zts/Dockerfile*)](https://github.com/docker-library/php/blob/4ea9e241d26b245fa04896a608c73e84522f8689/7.1-rc/zts/Dockerfile)
+-	[`7.1.0RC6-zts-alpine`, `7.1-rc-zts-alpine`, `rc-zts-alpine` (*7.1-rc/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/4ea9e241d26b245fa04896a608c73e84522f8689/7.1-rc/zts/alpine/Dockerfile)
+-	[`7.0.13-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.13`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://github.com/docker-library/php/blob/b208b3bd750feea2c236af0586e544dd1daad8a2/7.0/Dockerfile)
+-	[`7.0.13-alpine`, `7.0-alpine`, `7-alpine`, `alpine` (*7.0/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/b208b3bd750feea2c236af0586e544dd1daad8a2/7.0/alpine/Dockerfile)
+-	[`7.0.13-apache`, `7.0-apache`, `7-apache`, `apache` (*7.0/apache/Dockerfile*)](https://github.com/docker-library/php/blob/b208b3bd750feea2c236af0586e544dd1daad8a2/7.0/apache/Dockerfile)
+-	[`7.0.13-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/b208b3bd750feea2c236af0586e544dd1daad8a2/7.0/fpm/Dockerfile)
+-	[`7.0.13-fpm-alpine`, `7.0-fpm-alpine`, `7-fpm-alpine`, `fpm-alpine` (*7.0/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/b208b3bd750feea2c236af0586e544dd1daad8a2/7.0/fpm/alpine/Dockerfile)
+-	[`7.0.13-zts`, `7.0-zts`, `7-zts`, `zts` (*7.0/zts/Dockerfile*)](https://github.com/docker-library/php/blob/b208b3bd750feea2c236af0586e544dd1daad8a2/7.0/zts/Dockerfile)
+-	[`7.0.13-zts-alpine`, `7.0-zts-alpine`, `7-zts-alpine`, `zts-alpine` (*7.0/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/b208b3bd750feea2c236af0586e544dd1daad8a2/7.0/zts/alpine/Dockerfile)
+-	[`5.6.28-cli`, `5.6-cli`, `5-cli`, `5.6.28`, `5.6`, `5` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/7d058f79e6fdf7b8e97d5004d1098c436d348a47/5.6/Dockerfile)
+-	[`5.6.28-alpine`, `5.6-alpine`, `5-alpine` (*5.6/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/7d058f79e6fdf7b8e97d5004d1098c436d348a47/5.6/alpine/Dockerfile)
+-	[`5.6.28-apache`, `5.6-apache`, `5-apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/7d058f79e6fdf7b8e97d5004d1098c436d348a47/5.6/apache/Dockerfile)
+-	[`5.6.28-fpm`, `5.6-fpm`, `5-fpm` (*5.6/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/7d058f79e6fdf7b8e97d5004d1098c436d348a47/5.6/fpm/Dockerfile)
+-	[`5.6.28-fpm-alpine`, `5.6-fpm-alpine`, `5-fpm-alpine` (*5.6/fpm/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/7d058f79e6fdf7b8e97d5004d1098c436d348a47/5.6/fpm/alpine/Dockerfile)
+-	[`5.6.28-zts`, `5.6-zts`, `5-zts` (*5.6/zts/Dockerfile*)](https://github.com/docker-library/php/blob/7d058f79e6fdf7b8e97d5004d1098c436d348a47/5.6/zts/Dockerfile)
+-	[`5.6.28-zts-alpine`, `5.6-zts-alpine`, `5-zts-alpine` (*5.6/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/7d058f79e6fdf7b8e97d5004d1098c436d348a47/5.6/zts/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp).
 
@@ -185,7 +185,7 @@ View [license information](http://php.net/license/) for the software contained i
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

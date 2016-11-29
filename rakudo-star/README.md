@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2016.07`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/36a51266a1ac2f5dd6da46756cc7a7789ea8343c/Dockerfile)
+-	[`2016.10`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/ae899ba5c0ac5449f825f8b7d49b4112400c445e/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frakudo-star).
 
@@ -50,7 +50,7 @@ View [license information](https://github.com/rakudo/star/blob/master/LICENSE) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

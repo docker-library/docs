@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.31.0`, `0.31`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/8307e91473be1b6849e89acc4d347eec0116293a/Dockerfile)
+-	[`0.32.0`, `0.32`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/b080000a8c03ef81455fa6aca8c0c8d1a35ef365/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo-express`)](https://github.com/docker-library/official-images/blob/master/library/mongo-express). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express).
 
@@ -40,7 +40,7 @@ Environment vairables are passed to the `run` command for configuring a mongo-ex
 	ME_CONFIG_MONGODB_ADMINUSERNAME | ''              | MongoDB admin username
 	ME_CONFIG_MONGODB_ADMINPASSWORD | ''              | MongoDB admin password
 	ME_CONFIG_MONGODB_PORT          | 27017           | MongoDB port
-	ME_CONFIG_MONGODB_SERVER        | 'mongo'         | MongoDB container name
+	ME_CONFIG_MONGODB_SERVER        | 'mongo'         | MongoDB container name. Use comma delimited list of host names for replica sets.
 	ME_CONFIG_OPTIONS_EDITORTHEME   | 'default'       | mongo-express editor color theme, [more here](http://codemirror.net/demo/theme.html)
 	ME_CONFIG_REQUEST_SIZE          | '100kb'         | Maximum payload size. CRUD operations above this size will fail in [body-parser](https://www.npmjs.com/package/body-parser).
 	ME_CONFIG_SITE_BASEURL          | '/'             | Set the baseUrl to ease mounting at a subdirectory. Remember to include a leading and trailing slash.
@@ -75,7 +75,7 @@ This example links to a container name typical of `docker-compose`, changes the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

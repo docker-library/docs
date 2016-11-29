@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.11.2`, `0.11`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/66c839be52f64d771968fff0262ebf94ff2f2886/Dockerfile)
+-	[`0.11.3`, `0.11`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/9e9522838f378c6c4acaf87a5fabaceab34cd2e0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fghost).
 
@@ -36,7 +36,7 @@ You can also point the image to your existing content on your host:
 $ docker run --name some-ghost -v /path/to/ghost/blog:/var/lib/ghost ghost
 ```
 
-Alternatively you can use a [data container](http://docs.docker.com/userguide/dockervolumes/) that has a volume that points to `/var/lib/ghost` and then reference it:
+Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost` and then reference it:
 
 ```console
 $ docker run --name some-ghost --volumes-from some-ghost-data ghost
@@ -53,7 +53,7 @@ v4.4.7
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

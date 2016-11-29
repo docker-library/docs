@@ -32,7 +32,7 @@ Environment vairables are passed to the `run` command for configuring a mongo-ex
 	ME_CONFIG_MONGODB_ADMINUSERNAME | ''              | MongoDB admin username
 	ME_CONFIG_MONGODB_ADMINPASSWORD | ''              | MongoDB admin password
 	ME_CONFIG_MONGODB_PORT          | 27017           | MongoDB port
-	ME_CONFIG_MONGODB_SERVER        | 'mongo'         | MongoDB container name
+	ME_CONFIG_MONGODB_SERVER        | 'mongo'         | MongoDB container name. Use comma delimited list of host names for replica sets.
 	ME_CONFIG_OPTIONS_EDITORTHEME   | 'default'       | mongo-express editor color theme, [more here](http://codemirror.net/demo/theme.html)
 	ME_CONFIG_REQUEST_SIZE          | '100kb'         | Maximum payload size. CRUD operations above this size will fail in [body-parser](https://www.npmjs.com/package/body-parser).
 	ME_CONFIG_SITE_BASEURL          | '/'             | Set the baseUrl to ease mounting at a subdirectory. Remember to include a leading and trailing slash.

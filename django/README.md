@@ -25,9 +25,9 @@ CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.10.2-python3`, `1.10-python3`, `1-python3`, `python3`, `1.10.2`, `1.10`, `1`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/55ed1a6140b7152aa96a230ddb4d5a1f45fa6e52/3.4/Dockerfile)
+-	[`1.10.3-python3`, `1.10-python3`, `1-python3`, `python3`, `1.10.3`, `1.10`, `1`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/642cc5e4ccdc2f706d445b072ebc6c4193e22c10/3.4/Dockerfile)
 -	[`python3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/4fe080675e4a85ef6ee25c811e9d3d3ef0905794/3.4/onbuild/Dockerfile)
--	[`1.10.2-python2`, `1.10-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/55ed1a6140b7152aa96a230ddb4d5a1f45fa6e52/2.7/Dockerfile)
+-	[`1.10.3-python2`, `1.10-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/642cc5e4ccdc2f706d445b072ebc6c4193e22c10/2.7/Dockerfile)
 -	[`python2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/2.7/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/django`)](https://github.com/docker-library/official-images/blob/master/library/django). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdjango).
@@ -107,7 +107,7 @@ View [license information](https://github.com/django/django/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

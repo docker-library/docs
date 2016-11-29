@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`develop` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/305a5052d269ee21a20829ec0f9af1fa6ac2e782/1.8/Dockerfile)
--	[`1.8`, `1.8.0`, `1.8.0rc1` (*1.8rc1/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/1553e9c0483811ace4bbd6a3b1b37eaf8d49dac0/1.8rc1/Dockerfile)
+-	[`develop` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/9f3828141fbd3c6584cac8d89afb5ebb9bcea603/1.8/Dockerfile)
+-	[`1.8`, `1.8.0`, `1.8.0rc4` (*1.8rc4/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/9f3828141fbd3c6584cac8d89afb5ebb9bcea603/1.8rc4/Dockerfile)
 -	[`1.6`, `1.6.21`, `stable`, `latest` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/87d717b0c05d4c43460a411c9871e9190c94f8bb/1.6/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/eggdrop`)](https://github.com/docker-library/official-images/blob/master/library/eggdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feggdrop).
@@ -58,7 +58,7 @@ View [license information](https://www.gnu.org/licenses/gpl-3.0.en.html) for the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

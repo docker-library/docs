@@ -1,11 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.6.0`, `9.6`, `9`, `latest` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/b2317dd369030a5f3f030b1daa1fc80da3cab9e0/9.6/Dockerfile)
--	[`9.5.4`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/1c0bc9d905d569fead777b9b8e3836e8af1c394c/9.5/Dockerfile)
--	[`9.4.9`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.4/Dockerfile)
--	[`9.3.14`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.3/Dockerfile)
--	[`9.2.18`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.2/Dockerfile)
--	[`9.1.23`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/fc36c25f8ac352f1fea6d0e7cf8d9bd92a4e720f/9.1/Dockerfile)
+-	[`9.6.1`, `9.6`, `9`, `latest` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/edd455e5b1dbfddc280beb244228054374f2f3dd/9.6/Dockerfile)
+-	[`9.6.1-alpine`, `9.6-alpine`, `9-alpine`, `alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/d2b38544770a63fed430694a7aed33de3ad8b808/9.6/alpine/Dockerfile)
+-	[`9.5.5`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/edd455e5b1dbfddc280beb244228054374f2f3dd/9.5/Dockerfile)
+-	[`9.5.5-alpine`, `9.5-alpine` (*9.5/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/d2b38544770a63fed430694a7aed33de3ad8b808/9.5/alpine/Dockerfile)
+-	[`9.4.10`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/edd455e5b1dbfddc280beb244228054374f2f3dd/9.4/Dockerfile)
+-	[`9.4.10-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/d2b38544770a63fed430694a7aed33de3ad8b808/9.4/alpine/Dockerfile)
+-	[`9.3.15`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/edd455e5b1dbfddc280beb244228054374f2f3dd/9.3/Dockerfile)
+-	[`9.3.15-alpine`, `9.3-alpine` (*9.3/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/d2b38544770a63fed430694a7aed33de3ad8b808/9.3/alpine/Dockerfile)
+-	[`9.2.19`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/edd455e5b1dbfddc280beb244228054374f2f3dd/9.2/Dockerfile)
+-	[`9.2.19-alpine`, `9.2-alpine` (*9.2/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/d2b38544770a63fed430694a7aed33de3ad8b808/9.2/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostgres).
 
@@ -112,9 +116,25 @@ Since database initialization only happens on container startup, this allows us 
 
 If there is no database when `postgres` starts in a container, then `postgres` will create the default database for you. While this is the expected behavior of `postgres`, this means that it will not accept incoming connections during that time. This may cause issues when using automation tools, such as `fig`, that start several containers simultaneously.
 
+# Image Variants
+
+The `postgres` images come in many flavors, each designed for a specific use case.
+
+## `postgres:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `postgres:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

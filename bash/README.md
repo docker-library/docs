@@ -1,12 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.4.0`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/4.4/Dockerfile)
+-	[`4.4.5`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/tianon/docker-bash/blob/d3283a47fbb92419b7b6fc1fccd30b95d75e9ab6/4.4/Dockerfile)
 -	[`4.3.48`, `4.3` (*4.3/Dockerfile*)](https://github.com/tianon/docker-bash/blob/2f7c9c45567b18b74c321f0ff1e460ae1117a9b5/4.3/Dockerfile)
 -	[`4.2.53`, `4.2` (*4.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/4.2/Dockerfile)
 -	[`4.1.17`, `4.1` (*4.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/4.1/Dockerfile)
 -	[`4.0.44`, `4.0` (*4.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/4.0/Dockerfile)
 -	[`3.2.57`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/3.2/Dockerfile)
 -	[`3.1.23`, `3.1` (*3.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4813d8692c050fab37ce67f205977b11c4eea42c/3.1/Dockerfile)
+-	[`3.0.22`, `3.0` (*3.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/0fb93762d52d5f73ea53557706f19a255ef990d1/3.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/bash`)](https://github.com/docker-library/official-images/blob/master/library/bash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbash).
 
@@ -76,7 +77,7 @@ Bash is free software, distributed under the terms of the [GNU General Public Li
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

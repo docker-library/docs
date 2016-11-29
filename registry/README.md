@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2`, `2.5`, `2.5.1`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/3b4a84c1f152b60688e99d2efadf305479541482/Dockerfile)
+-	[`2.6.0-rc.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/badae459fc79845d0ca889e9002261a35738de87/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fregistry).
 
@@ -41,7 +42,7 @@ If you are interested in commercial support, the [Docker Trusted Registry](https
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
