@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.62` (*stable/Dockerfile*)](https://github.com/vaygr/docker-sourcemage/blob/aa8c0a7a08572eddb067fc1373dd5313c1d78e98/stable/Dockerfile)
+-	[`latest`, `0.61` (*stable/Dockerfile*)](https://github.com/vaygr/docker-sourcemage/blob/2d7efdca5633554194e2b12fae334ac4b6804b25/stable/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sourcemage`)](https://github.com/docker-library/official-images/blob/master/library/sourcemage). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsourcemage).
 
@@ -25,7 +25,7 @@ $ docker run -it sourcemage
 or
 
 ```shell
-$ docker run -it sourcemage:0.62
+$ docker run -it sourcemage:0.61
 ```
 
 ---
@@ -33,7 +33,7 @@ $ docker run -it sourcemage:0.62
 # Notes
 
 -	in order to get the full benefit of [castfs](https://sourcemage.org/castfs) you need additional flags (`--device /dev/fuse --cap-add SYS_ADMIN`) for access to `/dev/fuse` device within a container, but you've been warned because there are security implications to granting such capabilities/privileges to the container; otherwise [installwatch](https://sourcemage.org/installwatch) will be used
--	`0.62` indicates the grimoire version this image is based on, otherwise `latest` will be pulled
+-	`0.61` indicates the grimoire version this image is based on, otherwise `latest` will be pulled
 
 # License
 
