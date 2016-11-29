@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.0`, `5.2` (*5.2/Dockerfile*)](https://github.com/docker-library/gcc/blob/df055b1ba29bd666470f4735f2a7bab9acffd0b3/5.2/Dockerfile)
--	[`5.3.0`, `5.3`, `5` (*5.3/Dockerfile*)](https://github.com/docker-library/gcc/blob/df055b1ba29bd666470f4735f2a7bab9acffd0b3/5.3/Dockerfile)
--	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/d9c8446748f7d69626f2e9425376a6672fff09af/6.1/Dockerfile)
+-	[`4.9.4`, `4.9`, `4` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/8c7687860cdd4ef9227c249ca4587984e2636a55/4.9/Dockerfile)
+-	[`5.4.0`, `5.4`, `5` (*5/Dockerfile*)](https://github.com/docker-library/gcc/blob/8c7687860cdd4ef9227c249ca4587984e2636a55/5/Dockerfile)
+-	[`6.2.0`, `6.2`, `6`, `latest` (*6/Dockerfile*)](https://github.com/docker-library/gcc/blob/8c7687860cdd4ef9227c249ca4587984e2636a55/6/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgcc).
 
@@ -57,17 +57,13 @@ View [license information](https://gcc.gnu.org/viewcvs/gcc/trunk/gcc/COPYING3?vi
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`gcc/` directory](https://github.com/docker-library/docs/tree/master/gcc) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -80,3 +76,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/gcc/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`gcc/` directory](https://github.com/docker-library/docs/tree/master/gcc) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

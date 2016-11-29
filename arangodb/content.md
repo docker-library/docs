@@ -32,7 +32,7 @@ Furthermore, ArangoDB offers a microservice framework called [Foxx](https://www.
 In order to start an ArangoDB instance run
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance -d arangodb
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance arangodb
 ```
 
 Will create and launch the arangodb docker instance as background process. The Identifier of the process is printed. By default ArangoDB listen on port 8529 for request and the image includes `EXPOSE 8529`. If you link an application container it is automatically available in the linked container. See the following examples.
