@@ -60,7 +60,7 @@ Modify the default configuration, which will now be available under `$PWD`. Then
 ```console
 $ docker run -p 9092:9092 \
       -v $PWD/kapacitor.conf:/etc/kapacitor/kapacitor.conf:ro \
-      kapacitord
+      kapacitor
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.
