@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/1.5/Dockerfile)
--	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.0/Dockerfile)
--	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.1/Dockerfile)
--	[`2.2.4-1`, `2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.2/Dockerfile)
--	[`2.3.4-1`, `2.3.4`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.3/Dockerfile)
--	[`2.4.1-1`, `2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/60506b52e56e262851b01df1875ee9f24b81c4c1/2.4/Dockerfile)
--	[`5.0.1-1`, `5.0.1`, `5.0`, `5`, `latest` (*5.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/61c818c07bcecf7733dc821a4e4f4770f7e136ce/5.0/Dockerfile)
+-	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/f4cb56f776ea44cc2b10cb8a670ecf6309baf3d7/1.5/Dockerfile)
+-	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/f4cb56f776ea44cc2b10cb8a670ecf6309baf3d7/2.0/Dockerfile)
+-	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/f4cb56f776ea44cc2b10cb8a670ecf6309baf3d7/2.1/Dockerfile)
+-	[`2.2.4-1`, `2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/f4cb56f776ea44cc2b10cb8a670ecf6309baf3d7/2.2/Dockerfile)
+-	[`2.3.4-1`, `2.3.4`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/f4cb56f776ea44cc2b10cb8a670ecf6309baf3d7/2.3/Dockerfile)
+-	[`2.4.1-1`, `2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/f4cb56f776ea44cc2b10cb8a670ecf6309baf3d7/2.4/Dockerfile)
+-	[`5.0.2-1`, `5.0.2`, `5.0`, `5`, `latest` (*5.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/79bc3b0c32cb559654228ca79cc9ed4b0f1b158c/5.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash).
 
