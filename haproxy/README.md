@@ -56,6 +56,8 @@ $ docker run -it --rm --name haproxy-syntax-check haproxy:1.5 haproxy -c -f /usr
 $ docker run -d --name my-running-haproxy my-haproxy
 ```
 
+You may need to publish the ports your haproxy is listening on to the host by specifying the -p option, for example -p 8080:80 to publish port 8080 from the container host to port 80 in the container. Make sure the port you're using is free.
+
 ## Directly via bind mount
 
 ```console
