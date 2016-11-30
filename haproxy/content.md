@@ -32,7 +32,7 @@ $ docker build -t my-haproxy .
 ## Test the configuration file
 
 ```console
-$ docker run -it --rm --name haproxy-syntax-check haproxy:1.5 haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
+$ docker run -it --rm --name haproxy-syntax-check my-haproxy haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
 ```
 
 ## Run the container
