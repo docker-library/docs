@@ -59,7 +59,7 @@ $ docker run -d --name my-running-haproxy my-haproxy
 ## Directly via bind mount
 
 ```console
-$ docker run -d --name my-running-haproxy -v /path/to/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro my-haproxy
+$ docker run -d --name my-running-haproxy -v /path/to/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro haproxy:1.5
 ```
 
 ### Reloading config
