@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2-5.4.1`, `2-5.4`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/8a1c5f0710de482fcac5247c16b5918fedfc07de/2/Dockerfile)
--	[`2-5.4.1-slim`, `2-5.4-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/8a1c5f0710de482fcac5247c16b5918fedfc07de/2/slim/Dockerfile)
--	[`2-5.4.1-onbuild`, `2-5.4-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
--	[`3-5.2.0-alpha1`, `3-5.2.0`, `3-5.2`, `3-5`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/72cec48996d57b0e30b0bf1447c89847a0dbd368/3/Dockerfile)
--	[`3-5.2.0-alpha1-slim`, `3-5.2.0-slim`, `3-5.2-slim`, `3-5-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/72cec48996d57b0e30b0bf1447c89847a0dbd368/3/slim/Dockerfile)
--	[`3-5.2.0-alpha1-onbuild`, `3-5.2.0-onbuild`, `3-5.2-onbuild`, `3-5-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
+-	[`2-5.6.0`, `2-5.6`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/491b6dc82d4275a452d48b800ee7a91e48ef9991/2/Dockerfile)
+-	[`2-5.6.0-slim`, `2-5.6-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/491b6dc82d4275a452d48b800ee7a91e48ef9991/2/slim/Dockerfile)
+-	[`2-5.6.0-onbuild`, `2-5.6-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
+-	[`3-5.5.0-alpha`, `3-5.5.0`, `3-5.5`, `3-5`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/d280acb013c2248452caf98117334eab9da5a8f6/3/Dockerfile)
+-	[`3-5.5.0-alpha-slim`, `3-5.5.0-slim`, `3-5.5-slim`, `3-5-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/95f6702ded19c44f5dc872ff5ea0374138804829/3/slim/Dockerfile)
+-	[`3-5.5.0-alpha-onbuild`, `3-5.5.0-onbuild`, `3-5.5-onbuild`, `3-5-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/pypy`)](https://github.com/docker-library/official-images/blob/master/library/pypy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpypy).
 
@@ -86,17 +86,13 @@ View [license information](https://bitbucket.org/pypy/pypy/src/c3ff0dd6252b6ba0d
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`pypy/` directory](https://github.com/docker-library/docs/tree/master/pypy) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -109,3 +105,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/pypy/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`pypy/` directory](https://github.com/docker-library/docs/tree/master/pypy) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

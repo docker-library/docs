@@ -1,7 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.55`, `0.55.5` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/03df8b7b20d4467099eebccc8005046bc5e23c80/Dockerfile)
--	[`0.52`, `0.52.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/cce8f796ba8936250eb380235cde47be494d1e95/Dockerfile)
+-	[`latest`, `0.56.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/758abd27c3fe8cc08f6094a90867f7502f584077/Dockerfile)
+-	[`0.55`, `0.55.7` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/6f946af1ea0e0aefd75dd9fa781572e728cb8c88/Dockerfile)
+-	[`0.56` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/c1fef97dacc607792b0002f8b7bf29761f408438/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrate).
 
@@ -125,19 +126,13 @@ View [license information](https://github.com/crate/crate/blob/master/LICENSE.tx
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`crate/` directory](https://github.com/docker-library/docs/tree/master/crate) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
-
-Visit [Crate on Docker](https://crate.io/docs/install/containers/docker/) and get further documentation about how to get started with Crate.
 
 ## Issues
 
@@ -150,3 +145,9 @@ For further information and official contact visit [https://crate.io](https://cr
 ## Contributing
 
 You are very welcome to contribute features or fixes! Before we can accept any pull requests to Crate Data we need you to agree to our [CLA](https://crate.io/community/contribute/). For further information please refer to [CONTRIBUTING.rst](https://github.com/crate/crate/blob/master/CONTRIBUTING.rst).
+
+## Documentation
+
+Documentation for this image is stored in the [`crate/` directory](https://github.com/docker-library/docs/tree/master/crate) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+
+Visit [Crate on Docker](https://crate.io/docs/install/containers/docker/) and get further documentation about how to get started with Crate.

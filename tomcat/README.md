@@ -1,19 +1,19 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.45-jre7`, `6.0-jre7`, `6-jre7`, `6.0.45`, `6.0`, `6` (*6/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/989f50ed5db788921a4954109b90362e2209295e/6/jre7/Dockerfile)
--	[`6.0.45-jre8`, `6.0-jre8`, `6-jre8` (*6/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/989f50ed5db788921a4954109b90362e2209295e/6/jre8/Dockerfile)
--	[`7.0.72-jre7`, `7.0-jre7`, `7-jre7`, `7.0.72`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b2bcdfb78e2fdc63423dfc210066b381f6f73a14/7/jre7/Dockerfile)
--	[`7.0.72-jre7-alpine`, `7.0-jre7-alpine`, `7-jre7-alpine`, `7.0.72-alpine`, `7.0-alpine`, `7-alpine` (*7/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b2bcdfb78e2fdc63423dfc210066b381f6f73a14/7/jre7-alpine/Dockerfile)
--	[`7.0.72-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b2bcdfb78e2fdc63423dfc210066b381f6f73a14/7/jre8/Dockerfile)
--	[`7.0.72-jre8-alpine`, `7.0-jre8-alpine`, `7-jre8-alpine` (*7/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b2bcdfb78e2fdc63423dfc210066b381f6f73a14/7/jre8-alpine/Dockerfile)
--	[`8.0.37-jre7`, `8.0-jre7`, `8-jre7`, `jre7`, `8.0.37`, `8.0`, `8`, `latest` (*8.0/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.0/jre7/Dockerfile)
--	[`8.0.37-jre7-alpine`, `8.0-jre7-alpine`, `8-jre7-alpine`, `jre7-alpine`, `8.0.37-alpine`, `8.0-alpine`, `8-alpine`, `alpine` (*8.0/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.0/jre7-alpine/Dockerfile)
--	[`8.0.37-jre8`, `8.0-jre8`, `8-jre8`, `jre8` (*8.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.0/jre8/Dockerfile)
--	[`8.0.37-jre8-alpine`, `8.0-jre8-alpine`, `8-jre8-alpine`, `jre8-alpine` (*8.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.0/jre8-alpine/Dockerfile)
--	[`8.5.5-jre8`, `8.5-jre8`, `8.5.5`, `8.5` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.5/jre8/Dockerfile)
--	[`8.5.5-jre8-alpine`, `8.5-jre8-alpine`, `8.5.5-alpine`, `8.5-alpine` (*8.5/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/8.5/jre8-alpine/Dockerfile)
--	[`9.0.0.M10-jre8`, `9.0.0-jre8`, `9.0-jre8`, `9-jre8`, `9.0.0.M10`, `9.0.0`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/9.0/jre8/Dockerfile)
--	[`9.0.0.M10-jre8-alpine`, `9.0.0-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine`, `9.0.0.M10-alpine`, `9.0.0-alpine`, `9.0-alpine`, `9-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6b46a2812e6a8ad528a8004fa16ea66cc48b1420/9.0/jre8-alpine/Dockerfile)
+-	[`6.0.48-jre7`, `6.0-jre7`, `6-jre7`, `6.0.48`, `6.0`, `6` (*6/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/e31b8a805c2e4d6e5c98abb640c5e74cb334033b/6/jre7/Dockerfile)
+-	[`6.0.48-jre8`, `6.0-jre8`, `6-jre8` (*6/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/e31b8a805c2e4d6e5c98abb640c5e74cb334033b/6/jre8/Dockerfile)
+-	[`7.0.73-jre7`, `7.0-jre7`, `7-jre7`, `7.0.73`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/1651e929e7d4c9785b602cb93cdd2503573c3834/7/jre7/Dockerfile)
+-	[`7.0.73-jre7-alpine`, `7.0-jre7-alpine`, `7-jre7-alpine`, `7.0.73-alpine`, `7.0-alpine`, `7-alpine` (*7/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/1651e929e7d4c9785b602cb93cdd2503573c3834/7/jre7-alpine/Dockerfile)
+-	[`7.0.73-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/1651e929e7d4c9785b602cb93cdd2503573c3834/7/jre8/Dockerfile)
+-	[`7.0.73-jre8-alpine`, `7.0-jre8-alpine`, `7-jre8-alpine` (*7/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/1651e929e7d4c9785b602cb93cdd2503573c3834/7/jre8-alpine/Dockerfile)
+-	[`8.0.39-jre7`, `8.0-jre7`, `8-jre7`, `jre7`, `8.0.39`, `8.0`, `8`, `latest` (*8.0/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/3c72bd6721ab6645badc72c164cbe6f3a8970bdb/8.0/jre7/Dockerfile)
+-	[`8.0.39-jre7-alpine`, `8.0-jre7-alpine`, `8-jre7-alpine`, `jre7-alpine`, `8.0.39-alpine`, `8.0-alpine`, `8-alpine`, `alpine` (*8.0/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/3c72bd6721ab6645badc72c164cbe6f3a8970bdb/8.0/jre7-alpine/Dockerfile)
+-	[`8.0.39-jre8`, `8.0-jre8`, `8-jre8`, `jre8` (*8.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/3c72bd6721ab6645badc72c164cbe6f3a8970bdb/8.0/jre8/Dockerfile)
+-	[`8.0.39-jre8-alpine`, `8.0-jre8-alpine`, `8-jre8-alpine`, `jre8-alpine` (*8.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/3c72bd6721ab6645badc72c164cbe6f3a8970bdb/8.0/jre8-alpine/Dockerfile)
+-	[`8.5.8-jre8`, `8.5-jre8`, `8.5.8`, `8.5` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/d44c35d4ec4907263cdfad76d6c56e6676ddd382/8.5/jre8/Dockerfile)
+-	[`8.5.8-jre8-alpine`, `8.5-jre8-alpine`, `8.5.8-alpine`, `8.5-alpine` (*8.5/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/d44c35d4ec4907263cdfad76d6c56e6676ddd382/8.5/jre8-alpine/Dockerfile)
+-	[`9.0.0.M13-jre8`, `9.0.0-jre8`, `9.0-jre8`, `9-jre8`, `9.0.0.M13`, `9.0.0`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/29f8484d577632d5124082f87719d7ee28ab939e/9.0/jre8/Dockerfile)
+-	[`9.0.0.M13-jre8-alpine`, `9.0.0-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine`, `9.0.0.M13-alpine`, `9.0.0-alpine`, `9.0-alpine`, `9-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/29f8484d577632d5124082f87719d7ee28ab939e/9.0/jre8-alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomcat).
 
@@ -83,17 +83,13 @@ View [license information](https://www.apache.org/licenses/LICENSE-2.0) for the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`tomcat/` directory](https://github.com/docker-library/docs/tree/master/tomcat) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -106,3 +102,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/tomcat/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`tomcat/` directory](https://github.com/docker-library/docs/tree/master/tomcat) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

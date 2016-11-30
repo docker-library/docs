@@ -1,6 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.0.2`, `reblochon`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/d196677d04b5bc804dbc3c264ac5be664601d6a3/Dockerfile)
+-	[`v1.1.1`, `camembert`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/90136036ac847c7920452ee0c21668abc836ea25/Dockerfile)
+-	[`v1.1.1-alpine`, `camembert-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/90136036ac847c7920452ee0c21668abc836ea25/alpine/Dockerfile)
+-	[`v1.0.3`, `reblochon` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/9d877ca7171211aabc2955ab1a301a685f6852fe/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/traefik`)](https://github.com/docker-library/official-images/blob/master/library/traefik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik).
 
@@ -78,17 +80,13 @@ View [license information](https://github.com/containous/traefik/blob/master/LIC
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`traefik/` directory](https://github.com/docker-library/docs/tree/master/traefik) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -101,3 +99,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/containous/traefik-library-image/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`traefik/` directory](https://github.com/docker-library/docs/tree/master/traefik) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

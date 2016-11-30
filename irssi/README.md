@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.8.20`, `0.8`, `0`, `latest`, `0.8.20-debian`, `0.8-debian`, `0-debian`, `debian` (*debian/Dockerfile*)](https://github.com/jfrazelle/irssi/blob/af1a8245096671eed463d0108c0e786349c31710/debian/Dockerfile)
--	[`0.8.20-alpine`, `0.8-alpine`, `0-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jfrazelle/irssi/blob/af1a8245096671eed463d0108c0e786349c31710/alpine/Dockerfile)
+-	[`0.8.20`, `0.8`, `0`, `latest`, `0.8.20-debian`, `0.8-debian`, `0-debian`, `debian` (*debian/Dockerfile*)](https://github.com/jessfraz/irssi/blob/af1a8245096671eed463d0108c0e786349c31710/debian/Dockerfile)
+-	[`0.8.20-alpine`, `0.8-alpine`, `0-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jessfraz/irssi/blob/af1a8245096671eed463d0108c0e786349c31710/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/irssi`)](https://github.com/docker-library/official-images/blob/master/library/irssi). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Firssi).
 
@@ -68,7 +68,7 @@ View [license information](https://github.com/irssi/irssi/blob/master/COPYING) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -76,13 +76,9 @@ Please see [the Docker installation documentation](https://docs.docker.com/insta
 
 # User Feedback
 
-## Documentation
-
-Documentation for this image is stored in the [`irssi/` directory](https://github.com/docker-library/docs/tree/master/irssi) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
-
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/jfrazelle/irssi/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/jessfraz/irssi/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -90,4 +86,8 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/jfrazelle/irssi/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/jessfraz/irssi/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`irssi/` directory](https://github.com/docker-library/docs/tree/master/irssi) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

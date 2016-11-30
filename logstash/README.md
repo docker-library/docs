@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/1.5/Dockerfile)
--	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.0/Dockerfile)
--	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.1/Dockerfile)
--	[`2.2.4-1`, `2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.2/Dockerfile)
--	[`2.3.4-1`, `2.3.4`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/2.3/Dockerfile)
--	[`2.4.0-1`, `2.4.0`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/cbcdf161825af8e9acb8eaa420750a397af6b169/2.4/Dockerfile)
--	[`5.0.0-alpha5-1`, `5.0.0-alpha5`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/afa907d363949924dee64006c7c96ad70329d7c8/5.0/Dockerfile)
+-	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/1.5/Dockerfile)
+-	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.0/Dockerfile)
+-	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.1/Dockerfile)
+-	[`2.2.4-1`, `2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.2/Dockerfile)
+-	[`2.3.4-1`, `2.3.4`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.3/Dockerfile)
+-	[`2.4.1-1`, `2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/60506b52e56e262851b01df1875ee9f24b81c4c1/2.4/Dockerfile)
+-	[`5.0.1-1`, `5.0.1`, `5.0`, `5`, `latest` (*5.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/61c818c07bcecf7733dc821a4e4f4770f7e136ce/5.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash).
 
@@ -62,17 +62,13 @@ View [license information](https://github.com/elastic/logstash/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`logstash/` directory](https://github.com/docker-library/docs/tree/master/logstash) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -85,3 +81,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/logstash/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`logstash/` directory](https://github.com/docker-library/docs/tree/master/logstash) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

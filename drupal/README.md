@@ -1,11 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.50-apache`, `7-apache`, `7.50`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/61f25e58353d7ca9b2e07a46ff152892b2f7d9cf/7/apache/Dockerfile)
--	[`7.50-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/61f25e58353d7ca9b2e07a46ff152892b2f7d9cf/7/fpm/Dockerfile)
--	[`8.1.10-apache`, `8.1-apache`, `8-apache`, `apache`, `8.1.10`, `8.1`, `8`, `latest` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/35aada37a9179e8e9e70d29bbbb894ade2cad36a/8.1/apache/Dockerfile)
--	[`8.1.10-fpm`, `8.1-fpm`, `8-fpm`, `fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/35aada37a9179e8e9e70d29bbbb894ade2cad36a/8.1/fpm/Dockerfile)
--	[`8.2.0-rc1-apache`, `8.2.0-apache`, `8.2-apache`, `8.2.0-rc1`, `8.2.0`, `8.2` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/9a95a290b9b9bbe6f4669ad85e712312f0ebd84b/8.2/apache/Dockerfile)
--	[`8.2.0-rc1-fpm`, `8.2.0-fpm`, `8.2-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/9a95a290b9b9bbe6f4669ad85e712312f0ebd84b/8.2/fpm/Dockerfile)
+-	[`8.2.3-apache`, `8.2-apache`, `8-apache`, `apache`, `8.2.3`, `8.2`, `8`, `latest` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/1c6f01397baf322b81a6cade18685aa57aa5c1f0/8.2/apache/Dockerfile)
+-	[`8.2.3-fpm`, `8.2-fpm`, `8-fpm`, `fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/1c6f01397baf322b81a6cade18685aa57aa5c1f0/8.2/fpm/Dockerfile)
+-	[`7.52-apache`, `7-apache`, `7.52`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/efb88fb830fe538727d71bbe309dc869778ba45c/7/apache/Dockerfile)
+-	[`7.52-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/efb88fb830fe538727d71bbe309dc869778ba45c/7/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdrupal).
 
@@ -76,17 +74,13 @@ View [license information](https://www.drupal.org/licensing/faq) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`drupal/` directory](https://github.com/docker-library/docs/tree/master/drupal) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -99,3 +93,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/drupal/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`drupal/` directory](https://github.com/docker-library/docs/tree/master/drupal) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

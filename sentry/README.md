@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.7.0`, `8.7` (*8.7/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/2bef8f6386c891f9b8ce1d6940f0aff81c25d475/8.7/Dockerfile)
--	[`8.7.0-onbuild`, `8.7-onbuild` (*8.7/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/22e75e5254b5707b77a747cd4e90bc4327f2ce9b/8.7/onbuild/Dockerfile)
--	[`8.8.0`, `8.8`, `8`, `latest` (*8.8/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/90e5f20bf418a42986c9716d07a4de980a4dfc07/8.8/Dockerfile)
--	[`8.8.0-onbuild`, `8.8-onbuild`, `8-onbuild`, `onbuild` (*8.8/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/90e5f20bf418a42986c9716d07a4de980a4dfc07/8.8/onbuild/Dockerfile)
+-	[`8.10.0`, `8.10`, `8`, `latest` (*8.10/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/71597dc5f0532721a3bd24405021e273df471866/8.10/Dockerfile)
+-	[`8.10.0-onbuild`, `8.10-onbuild`, `8-onbuild`, `onbuild` (*8.10/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/8e4ec0e019a9cfc653f09b16531cef507e015af1/8.10/onbuild/Dockerfile)
+-	[`8.9.0`, `8.9` (*8.9/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/06d750bddc0e6499446e73ca22fbd4c915b29cbd/8.9/Dockerfile)
+-	[`8.9.0-onbuild`, `8.9-onbuild` (*8.9/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/06d750bddc0e6499446e73ca22fbd4c915b29cbd/8.9/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
@@ -142,17 +142,13 @@ View [license information](https://github.com/getsentry/sentry/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -165,3 +161,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

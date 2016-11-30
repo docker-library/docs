@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `9`, `9.1`, `9.1-jre`, `9.1.5`, `9.1.5-jre`, `9.1.5.0`, `9.1.5.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/d6339011a5cba59f036874de9ca68f7763b192ff/9000/jre/Dockerfile)
--	[`9-alpine`, `9.1-alpine`, `9.1-jre-alpine`, `9.1.5-alpine`, `9.1.5-jre-alpine`, `9.1.5.0-alpine`, `9.1.5.0-jre-alpine` (*9000/alpine-jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/d6339011a5cba59f036874de9ca68f7763b192ff/9000/alpine-jre/Dockerfile)
--	[`9.1-jdk`, `9.1.5-jdk`, `9.1.5.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/d6339011a5cba59f036874de9ca68f7763b192ff/9000/jdk/Dockerfile)
--	[`9.1-jdk-alpine`, `9.1.5-jdk-alpine`, `9.1.5.0-jdk-alpine` (*9000/alpine-jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/d6339011a5cba59f036874de9ca68f7763b192ff/9000/alpine-jdk/Dockerfile)
--	[`9-onbuild`, `9.1-onbuild`, `9.1.5-onbuild`, `9.1.5.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/d6339011a5cba59f036874de9ca68f7763b192ff/9000/onbuild/Dockerfile)
+-	[`latest`, `9`, `9.1`, `9.1-jre`, `9.1.6`, `9.1.6-jre`, `9.1.6.0`, `9.1.6.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/jre/Dockerfile)
+-	[`9-alpine`, `9.1-alpine`, `9.1-jre-alpine`, `9.1.6-alpine`, `9.1.6-jre-alpine`, `9.1.6.0-alpine`, `9.1.6.0-jre-alpine` (*9000/alpine-jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/alpine-jre/Dockerfile)
+-	[`9.1-jdk`, `9.1.6-jdk`, `9.1.6.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/jdk/Dockerfile)
+-	[`9.1-jdk-alpine`, `9.1.6-jdk-alpine`, `9.1.6.0-jdk-alpine` (*9000/alpine-jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/alpine-jdk/Dockerfile)
+-	[`9-onbuild`, `9.1-onbuild`, `9.1.6-onbuild`, `9.1.6.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/onbuild/Dockerfile)
 -	[`1.7`, `1.7.25`, `1.7-jre`, `1.7.25-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/ad0479fa0d278f5eb311e01417c079a97305eeb3/1.7/jre/Dockerfile)
 -	[`1.7-jdk`, `1.7.25-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/ad0479fa0d278f5eb311e01417c079a97305eeb3/1.7/jdk/Dockerfile)
 -	[`1.7-onbuild`, `1.7.25-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/ad0479fa0d278f5eb311e01417c079a97305eeb3/1.7/onbuild/Dockerfile)
@@ -67,17 +67,13 @@ View [license information](https://github.com/jruby/jruby/blob/master/COPYING) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`jruby/` directory](https://github.com/docker-library/docs/tree/master/jruby) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -90,3 +86,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/cpuguy83/docker-jruby/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`jruby/` directory](https://github.com/docker-library/docs/tree/master/jruby) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

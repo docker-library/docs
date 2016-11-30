@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.6.1-apache`, `4.6-apache`, `4-apache`, `apache`, `4.6.1`, `4.6`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/d6294d103d2eb8d618dd09e28240ea2de2577c25/apache/Dockerfile)
--	[`4.6.1-fpm`, `4.6-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/d6294d103d2eb8d618dd09e28240ea2de2577c25/fpm/Dockerfile)
+-	[`4.6.1-apache`, `4.6-apache`, `4-apache`, `apache`, `4.6.1`, `4.6`, `4`, `latest`, `4.6.1-php5.6-apache`, `4.6-php5.6-apache`, `4-php5.6-apache`, `php5.6-apache`, `4.6.1-php5.6`, `4.6-php5.6`, `4-php5.6`, `php5.6` (*php5.6/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/8ab70dd61a996d58c0addf4867a768efe649bf65/php5.6/apache/Dockerfile)
+-	[`4.6.1-fpm`, `4.6-fpm`, `4-fpm`, `fpm`, `4.6.1-php5.6-fpm`, `4.6-php5.6-fpm`, `4-php5.6-fpm`, `php5.6-fpm` (*php5.6/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/8ab70dd61a996d58c0addf4867a768efe649bf65/php5.6/fpm/Dockerfile)
+-	[`4.6.1-php7.0-apache`, `4.6-php7.0-apache`, `4-php7.0-apache`, `php7.0-apache`, `4.6.1-php7.0`, `4.6-php7.0`, `4-php7.0`, `php7.0` (*php7.0/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/8ab70dd61a996d58c0addf4867a768efe649bf65/php7.0/apache/Dockerfile)
+-	[`4.6.1-php7.0-fpm`, `4.6-php7.0-fpm`, `4-php7.0-fpm`, `php7.0-fpm` (*php7.0/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/8ab70dd61a996d58c0addf4867a768efe649bf65/php7.0/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress).
 
@@ -84,17 +86,13 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`wordpress/` directory](https://github.com/docker-library/docs/tree/master/wordpress) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -107,3 +105,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/wordpress/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`wordpress/` directory](https://github.com/docker-library/docs/tree/master/wordpress) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

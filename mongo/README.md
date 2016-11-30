@@ -1,12 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.12`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/fc91d681fa5808c30c3118ce7fe3f993beccc82d/2.6/Dockerfile)
--	[`3.0.12`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/4b1d085ccab5728a9b9e4b65c5ed19820420809e/3.0/Dockerfile)
--	[`3.0.12-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/89549b2b779421c057b04858477012b7aa17f498/3.0/windows/windowsservercore/Dockerfile)
--	[`3.2.9`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/4d7bd01562edefad38a240c40a4b162a1cd7b9c2/3.2/Dockerfile)
--	[`3.2.9-windowsservercore`, `3.2-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/89549b2b779421c057b04858477012b7aa17f498/3.2/windows/windowsservercore/Dockerfile)
--	[`3.3.12`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/mongo/blob/174bd96682dc3613df9b670658ac81c9dd17ba74/3.3/Dockerfile)
--	[`3.3.12-windowsservercore`, `3.3-windowsservercore` (*3.3/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/174bd96682dc3613df9b670658ac81c9dd17ba74/3.3/windows/windowsservercore/Dockerfile)
+-	[`3.0.14`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/b37a4891feffeafb77febd2833d96b59cf28d6a8/3.0/Dockerfile)
+-	[`3.0.14-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/a51b641c84e1a8d543b6a234a090f8263188139a/3.0/windows/windowsservercore/Dockerfile)
+-	[`3.2.11`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/21a6f6cf3eff13a39b20c86224730a29823370ca/3.2/Dockerfile)
+-	[`3.2.11-windowsservercore`, `3.2-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/21a6f6cf3eff13a39b20c86224730a29823370ca/3.2/windows/windowsservercore/Dockerfile)
+-	[`3.3.15`, `3.3`, `unstable` (*3.3/Dockerfile*)](https://github.com/docker-library/mongo/blob/0ac2867637ef5989e4dc051efa0ae296010e58c9/3.3/Dockerfile)
+-	[`3.3.15-windowsservercore`, `3.3-windowsservercore`, `unstable-windowsservercore` (*3.3/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/a51b641c84e1a8d543b6a234a090f8263188139a/3.3/windows/windowsservercore/Dockerfile)
+-	[`3.4.0-rc5`, `3.4.0`, `3.4`, `3.4-rc`, `rc` (*3.4-rc/Dockerfile*)](https://github.com/docker-library/mongo/blob/f5a955ece2dc3da903c804115c75a9b0b5bc2edf/3.4-rc/Dockerfile)
+-	[`3.4.0-rc5-windowsservercore`, `3.4.0-windowsservercore`, `3.4-windowsservercore`, `3.4-rc-windowsservercore`, `rc-windowsservercore` (*3.4-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/0e4966760ba48fb611d3efb3975484444b5def1e/3.4-rc/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo).
 
@@ -93,8 +94,8 @@ some-db
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `mongo` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
 **WARNING (Windows & OS X)**: The default Docker setup on Windows and OS X uses a VirtualBox VM to host the Docker daemon. Unfortunately, the mechanism VirtualBox uses to share folders between the host system and the Docker container is not compatible with the memory mapped files used by MongoDB (see [vbox bug](https://www.virtualbox.org/ticket/819), [docs.mongodb.org](https://docs.mongodb.org/manual/administration/production-notes/#fsync-on-directories) and related [jira.mongodb.org](https://jira.mongodb.org/browse/SERVER-8600) bug). This means that it is not possible to run a MongoDB container with the data directory mapped to the host.
 
@@ -138,17 +139,13 @@ View [license information](https://github.com/mongodb/mongo/blob/7c3cfac300cfcca
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.1.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`mongo/` directory](https://github.com/docker-library/docs/tree/master/mongo) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -161,3 +158,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/mongo/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`mongo/` directory](https://github.com/docker-library/docs/tree/master/mongo) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
