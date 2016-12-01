@@ -12,6 +12,12 @@
 -	[`1.7.3-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/4fd5df86eea53623b1009b3621b40a97f9f359e5/1.7/alpine/Dockerfile)
 -	[`1.7.3-windowsservercore`, `1.7-windowsservercore`, `1-windowsservercore`, `windowsservercore` (*1.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/4fd5df86eea53623b1009b3621b40a97f9f359e5/1.7/windows/windowsservercore/Dockerfile)
 -	[`1.7.3-nanoserver`, `1.7-nanoserver`, `1-nanoserver`, `nanoserver` (*1.7/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/4fd5df86eea53623b1009b3621b40a97f9f359e5/1.7/windows/nanoserver/Dockerfile)
+-	[`1.8beta1`, `1.8` (*1.8/Dockerfile*)](https://github.com/docker-library/golang/blob/7319cccdf0c2b8cbcb4ea214f310e8d15fe5c1dd/1.8/Dockerfile)
+-	[`1.8beta1-onbuild`, `1.8-onbuild` (*1.8/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/7319cccdf0c2b8cbcb4ea214f310e8d15fe5c1dd/1.8/onbuild/Dockerfile)
+-	[`1.8beta1-wheezy`, `1.8-wheezy` (*1.8/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/7319cccdf0c2b8cbcb4ea214f310e8d15fe5c1dd/1.8/wheezy/Dockerfile)
+-	[`1.8beta1-alpine`, `1.8-alpine` (*1.8/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/7a5e33ec522b17dffa51c2763610a2967475529d/1.8/alpine/Dockerfile)
+-	[`1.8beta1-windowsservercore`, `1.8-windowsservercore` (*1.8/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/7319cccdf0c2b8cbcb4ea214f310e8d15fe5c1dd/1.8/windows/windowsservercore/Dockerfile)
+-	[`1.8beta1-nanoserver`, `1.8-nanoserver` (*1.8/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/7319cccdf0c2b8cbcb4ea214f310e8d15fe5c1dd/1.8/windows/nanoserver/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgolang).
 
