@@ -25,7 +25,7 @@ $ docker run -it sourcemage
 or
 
 ```shell
-$ docker run -it sourcemage:0.61
+$ docker run -it sourcemage:0.62
 ```
 
 ---
@@ -33,7 +33,7 @@ $ docker run -it sourcemage:0.61
 # Notes
 
 -	in order to get the full benefit of [castfs](https://sourcemage.org/castfs) you need additional flags (`--device /dev/fuse --cap-add SYS_ADMIN`) for access to `/dev/fuse` device within a container, but you've been warned because there are security implications to granting such capabilities/privileges to the container; otherwise [installwatch](https://sourcemage.org/installwatch) will be used
--	`0.61` indicates the grimoire version this image is based on, otherwise `latest` will be pulled
+-	`0.62` indicates the grimoire version this image is based on, otherwise `latest` will be pulled
 
 # License
 
