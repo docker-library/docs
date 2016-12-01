@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.2`, `1.2`, `1`, `latest` (*1.2/Dockerfile*)](https://github.com/composer/docker/blob/703171abd9d2a83f002beaf455af725d178a5e24/1.2/Dockerfile)
--	[`1.1.3`, `1.1` (*1.1/Dockerfile*)](https://github.com/composer/docker/blob/703171abd9d2a83f002beaf455af725d178a5e24/1.1/Dockerfile)
+-	[`1.2.2`, `1.2`, `1`, `latest` (*1.2/Dockerfile*)](https://github.com/composer/docker/blob/be6ecf58913f704399d11a352818b22951832a60/1.2/Dockerfile)
+-	[`1.1.3`, `1.1` (*1.1/Dockerfile*)](https://github.com/composer/docker/blob/be6ecf58913f704399d11a352818b22951832a60/1.1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/composer`)](https://github.com/docker-library/official-images/blob/master/library/composer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcomposer).
 
