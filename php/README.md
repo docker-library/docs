@@ -155,6 +155,18 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
     && docker-php-ext-enable xcache
 ```
 
+## How to install more PHP extensions
+
+We provide a convenient script named `docker-php-ext-install`, you can use it to easily install PHP extension. If you want to have a PHP container with more extensions, you can write your own Dockerfile like this:
+
+    FROM php:5.5.19-fpm
+    # Install modules
+    RUN apt-get update && apt-get install -y \
+        apt-utils re2c g++ \
+        zlib1g zlib1g-dbg zlib1g-dev zlibc \
+        && docker-php-ext-install gd
+    CMD ["php-fpm"]
+
 ### Without a `Dockerfile`
 
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
