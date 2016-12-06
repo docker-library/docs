@@ -2,8 +2,8 @@
 
 -	[`1.0`, `1.0.2` (*kapacitor/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dec27fb32f5d9696cd0627f3ac97d353f7557b31/kapacitor/1.0/Dockerfile)
 -	[`1.0-alpine`, `1.0.2-alpine` (*kapacitor/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dec27fb32f5d9696cd0627f3ac97d353f7557b31/kapacitor/1.0/alpine/Dockerfile)
--	[`1.1`, `1.1.1`, `latest` (*kapacitor/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/f12b39f17a2a96cca971c949e5ad45653493a601/kapacitor/1.1/Dockerfile)
--	[`1.1-alpine`, `1.1.1-alpine`, `alpine` (*kapacitor/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/f12b39f17a2a96cca971c949e5ad45653493a601/kapacitor/1.1/alpine/Dockerfile)
+-	[`1.1`, `1.1.1`, `latest` (*kapacitor/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/9cb739374cf02d3b88ed1cfbaea98638a7a37850/kapacitor/1.1/Dockerfile)
+-	[`1.1-alpine`, `1.1.1-alpine`, `alpine` (*kapacitor/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/9cb739374cf02d3b88ed1cfbaea98638a7a37850/kapacitor/1.1/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kapacitor`)](https://github.com/docker-library/official-images/blob/master/library/kapacitor). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor).
 

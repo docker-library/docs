@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.0-rc2`, `1.13-rc`, `rc` (*1.13-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/311dcd3d4de06631fd8ca9affdec4a4a6b4d5512/1.13-rc/Dockerfile)
--	[`1.13.0-rc2-dind`, `1.13-rc-dind`, `rc-dind` (*1.13-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c1af76ec4c97ff24dcf6675b55b12105216dc711/1.13-rc/dind/Dockerfile)
--	[`1.13.0-rc2-git`, `1.13-rc-git`, `rc-git` (*1.13-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/737f83092a47b012d09a0cbf0ed72759550301cb/1.13-rc/git/Dockerfile)
--	[`1.12.3`, `1.12`, `1`, `latest` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/36e2107fb879d5d5c3dbb5d8d93aeef0a2d45ac8/1.12/Dockerfile)
+-	[`1.13.0-rc3`, `1.13-rc`, `rc` (*1.13-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/e3d26cada8093a8a6814e7b341f03298d1b276fb/1.13-rc/Dockerfile)
+-	[`1.13.0-rc3-dind`, `1.13-rc-dind`, `rc-dind` (*1.13-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c1af76ec4c97ff24dcf6675b55b12105216dc711/1.13-rc/dind/Dockerfile)
+-	[`1.13.0-rc3-git`, `1.13-rc-git`, `rc-git` (*1.13-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/737f83092a47b012d09a0cbf0ed72759550301cb/1.13-rc/git/Dockerfile)
+-	[`1.12.3`, `1.12`, `1`, `latest` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/0c44c1c6c25a34eb9abe320805e0f89bf5b0ace2/1.12/Dockerfile)
 -	[`1.12.3-dind`, `1.12-dind`, `1-dind`, `dind` (*1.12/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c1af76ec4c97ff24dcf6675b55b12105216dc711/1.12/dind/Dockerfile)
 -	[`1.12.3-git`, `1.12-git`, `1-git`, `git` (*1.12/git/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/git/Dockerfile)
 -	[`1.12.3-experimental`, `1.12-experimental`, `1-experimental`, `experimental` (*1.12/experimental/Dockerfile*)](https://github.com/docker-library/docker/blob/36e2107fb879d5d5c3dbb5d8d93aeef0a2d45ac8/1.12/experimental/Dockerfile)
 -	[`1.12.3-experimental-dind`, `1.12-experimental-dind`, `1-experimental-dind`, `experimental-dind` (*1.12/experimental/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c1af76ec4c97ff24dcf6675b55b12105216dc711/1.12/experimental/dind/Dockerfile)
 -	[`1.12.3-experimental-git`, `1.12-experimental-git`, `1-experimental-git`, `experimental-git` (*1.12/experimental/git/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/git/Dockerfile)
--	[`1.11.2`, `1.11` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/5e30187978ad75d0f2ae5fc6c2a0b668bdf16885/1.11/Dockerfile)
+-	[`1.11.2`, `1.11` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/0c44c1c6c25a34eb9abe320805e0f89bf5b0ace2/1.11/Dockerfile)
 -	[`1.11.2-dind`, `1.11-dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/5e30187978ad75d0f2ae5fc6c2a0b668bdf16885/1.11/dind/Dockerfile)
 -	[`1.11.2-git`, `1.11-git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
 
