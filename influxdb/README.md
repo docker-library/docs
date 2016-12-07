@@ -2,8 +2,8 @@
 
 -	[`1.0`, `1.0.2` (*influxdb/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/Dockerfile)
 -	[`1.0-alpine`, `1.0.2-alpine` (*influxdb/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/alpine/Dockerfile)
--	[`1.1`, `1.1.0`, `latest` (*influxdb/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d7ef94eb81e4d5c6d56f0c14fb66e57982da21a1/influxdb/1.1/Dockerfile)
--	[`1.1-alpine`, `1.1.0-alpine`, `alpine` (*influxdb/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d7ef94eb81e4d5c6d56f0c14fb66e57982da21a1/influxdb/1.1/alpine/Dockerfile)
+-	[`1.1`, `1.1.1`, `latest` (*influxdb/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fccddeace2827eb50d09bbd2a722d25fb707369f/influxdb/1.1/Dockerfile)
+-	[`1.1-alpine`, `1.1.1-alpine`, `alpine` (*influxdb/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fccddeace2827eb50d09bbd2a722d25fb707369f/influxdb/1.1/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
 
