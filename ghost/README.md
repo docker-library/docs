@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.11.3`, `0.11`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/9e9522838f378c6c4acaf87a5fabaceab34cd2e0/Dockerfile)
+-	[`0.11.3`, `0.11`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/4afb4dbe3b4306056b16b3aa7fc8f7aca2b1d281/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fghost).
 
