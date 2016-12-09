@@ -100,16 +100,20 @@ For a PostgreSQL database system, some configurations are required in order to b
 
 # Using a Data Volume Container
 
-To manage more effectively the data produced by an application, the Docker team recommends to use a Data Volume Container. In Silverpeas, there are four types of data produced by the application:
+The data produced by Silverpeas mean to be persistent, available for the next versions of Silverpeas, and they have to be accessible to other containers like the one running LibreOffice. For doing, the Docker team recommends to use a Data Volume Container.
+
+In Silverpeas, there are four types of data produced by the application:
 
 -	the logging stored in `/opt/silverpeas/log`,
 -	the user data and those produced by Silverpeas from the user data in `/opt/silverpeas/data`,
--	the user domains and the domain authentication definitions in respectively `/opt/silverpeas/properties/org/silverpeas/domains` and `/opt/silverpeas/properties/org/silverpeas/authentication`,
+-	the user domains and the domain authentication definitions created in the backoffice in respectively `/opt/silverpeas/properties/org/silverpeas/domains` and `/opt/silverpeas/properties/org/silverpeas/authentication`,
 -	the workflows created by the workflow editor in `/opt/silverpeas/xmlcomponents/workflows`.
 
 Beside these directories, according to your specific needs, custom configuration scripts can be added in the directories `/opt/silverpeas/configuration/jboss` and `/opt/silverpeas/configuration/silverpeas`.
 
 The directories `/opt/silverpeas/log`, `/opt/silverpeas/data`, `/opt/silverpeas/properties`, `/opt/silverpeas/xmlcomponents/workflows`, and `/opt/silverpeas/configuration` are all defined as volumes in the Docker image.
+
+All these different kind of data have to be consistent for a given state of Silverpeas; they form a coherent whole. Then, defining a Data Volume Container to gather all of these volumes is a better solution over multiple shared-storage volume definitions. You can, with a such Data Volume Container, backup, restore or migrate more easily the full set of the data of Silverpeas.
 
 To define a Data Volume Container for Silverpeas, for example:
 
