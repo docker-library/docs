@@ -22,13 +22,13 @@ When OrientDB starts it asks for the root password. The root user is able to man
 $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 -e ORIENTDB_ROOT_PASSWORD=rootpwd orientdb
 ```
 
-The [Studio](http://orientdb.com/docs/last/Home-page.html) is accessible to http://<docker-host>:2480 (e.g.: http://localhost:2480)
+The [Studio](http://orientdb.com/docs/last/Studio-Home-page.html) is accessible to http://<docker-host>:2480 (e.g.: http://localhost:2480)
 
 ### Attach persistent volumes
 
-The docker image contains an OrientDB installation with basic configuration. If you need to provide your own config folder from which OrientDB will read its startup settings, simply attach a persistent volume for configuration folder. Providing a configuration folder enables integration with software configuration tools such as Ansible or Puppet.
+The docker image contains an OrientDB installation with basic configuration. If you need to provide **your own** config folder to **override** the one included in the OrientDB container, simply attach a persistent volume for configuration folder. Providing a configuration folder enables integration with software configuration tools such as Ansible, Chef or Puppet.
 
-The same applies for the databases folder which if local to the running container would go away as soon as it died/you killed it. Obviously use volumes from dedicated data container is another option.
+The same applies for the databases folder, which if local to the running container would go away as soon as it died/you killed it. Obviously use volumes from dedicated data container is another option.
 
 ```console
 $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
@@ -38,6 +38,8 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
     orientdb
 ```
+
+**NOTE**: don't provide an **empty** config folder as volume, because OrientDB will startup with a very minimal configuration.
 
 ### Running OrientDB tools
 

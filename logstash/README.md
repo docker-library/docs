@@ -1,17 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.2`, `5.0`, `5`, `latest` (*5.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/5.0/Dockerfile)
--	[`5.0.2-alpine`, `5.0-alpine`, `5-alpine`, `alpine` (*5.0/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/5.0/alpine/Dockerfile)
+-	[`5.1.1`, `5.1`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/aa556fc3ae9d6cadc26390d8c57bc94710122b7d/5/Dockerfile)
+-	[`5.1.1-alpine`, `5.1-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/aa556fc3ae9d6cadc26390d8c57bc94710122b7d/5/alpine/Dockerfile)
 -	[`2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.4/Dockerfile)
 -	[`2.4.1-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.4/alpine/Dockerfile)
--	[`2.3.4`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.3/Dockerfile)
--	[`2.3.4-alpine`, `2.3-alpine` (*2.3/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.3/alpine/Dockerfile)
--	[`2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.2/Dockerfile)
--	[`2.2.4-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.2/alpine/Dockerfile)
--	[`2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.1/Dockerfile)
--	[`2.1.3-alpine`, `2.1-alpine` (*2.1/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.1/alpine/Dockerfile)
--	[`2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.0/Dockerfile)
--	[`2.0.0-alpine`, `2.0-alpine` (*2.0/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.0/alpine/Dockerfile)
 -	[`1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/1.5/Dockerfile)
 -	[`1.5.6-alpine`, `1.5-alpine`, `1-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/1.5/alpine/Dockerfile)
 
