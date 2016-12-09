@@ -1,17 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`kernel`, `8.5.5.9-kernel` (*websphere-liberty/8.5.5/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/074289767a4d5d51d8d5c0cdb4d140489b605282/websphere-liberty/8.5.5/developer/kernel/Dockerfile)
--	[`common`, `8.5.5.9-common` (*websphere-liberty/8.5.5/developer/common/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/074289767a4d5d51d8d5c0cdb4d140489b605282/websphere-liberty/8.5.5/developer/common/Dockerfile)
--	[`webProfile6`, `8.5.5.9-webProfile6` (*websphere-liberty/8.5.5/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/074289767a4d5d51d8d5c0cdb4d140489b605282/websphere-liberty/8.5.5/developer/webProfile6/Dockerfile)
--	[`webProfile7`, `8.5.5.9-webProfile7` (*websphere-liberty/8.5.5/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/074289767a4d5d51d8d5c0cdb4d140489b605282/websphere-liberty/8.5.5/developer/webProfile7/Dockerfile)
--	[`javaee7`, `8.5.5.9-javaee7`, `8.5.5.9`, `8.5.5`, `latest` (*websphere-liberty/8.5.5/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/074289767a4d5d51d8d5c0cdb4d140489b605282/websphere-liberty/8.5.5/developer/javaee7/Dockerfile)
--	[`beta` (*websphere-liberty/beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/a929e657995d92c6cbf407acd8c2ac2b2a8215c2/websphere-liberty/beta/Dockerfile)
-
-[![](https://badge.imagelayers.io/websphere-liberty:latest.svg)](https://imagelayers.io/?images=websphere-liberty:kernel,websphere-liberty:common,websphere-liberty:webProfile6,websphere-liberty:webProfile7,websphere-liberty:javaee7,websphere-liberty:beta)
+-	[`kernel` (*ga/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/78139a90b89d1b64502778fe63f9b4f4a93257b4/ga/developer/kernel/Dockerfile)
+-	[`microProfile` (*ga/developer/microProfile/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/78139a90b89d1b64502778fe63f9b4f4a93257b4/ga/developer/microProfile/Dockerfile)
+-	[`webProfile6` (*ga/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/78139a90b89d1b64502778fe63f9b4f4a93257b4/ga/developer/webProfile6/Dockerfile)
+-	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/78139a90b89d1b64502778fe63f9b4f4a93257b4/ga/developer/webProfile7/Dockerfile)
+-	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/78139a90b89d1b64502778fe63f9b4f4a93257b4/ga/developer/javaee7/Dockerfile)
+-	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c63e151757a992fd5eb9da11d8bbf9501468b39b/beta/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwebsphere-liberty).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `websphere-liberty/tag-details.md` file](https://github.com/docker-library/docs/blob/master/websphere-liberty/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/websphere-liberty/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/websphere-liberty/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Overview
 
@@ -29,13 +27,11 @@ COPY server.xml /config/
 RUN installUtility install --acceptLicense defaultServer
 ```
 
-The `common` image adds a set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-1.0`, `sessionDatabase-1.0`, `ssl-1.0`, and `webCache-1.0`. This image is the basis for the `webProfile6` and `webProfile7` images.
-
 The `webProfile6` image contains the features required for Java EE6 Web Profile compliance. It also pulls in additional features to bring the contents in to line with the features available for download by using the runtime JAR, most notably the features required for OSGi applications.
 
 The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image extends this image and adds the features required for Java EE7 Full Platform compliance. The `javaee7` image is also tagged with `latest`.
 
-There are also corresponding image tags that contain the version number of the Liberty release contained within the image. These are primarily to signpost the current version in use and will be updated when a subsequent release becomes available. Consequently, use these tags only if you explicitly want your build to break when a new release becomes available. The Liberty zero migration policy means that you can use the non-version specific tags knowing that your application will continue to work when a new release becomes available.
+The `webProfile6`, `webProfile7` and `javaee7` images all also contain a common set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-1.0`, `sessionDatabase-1.0`, `ssl-1.0`, and `webCache-1.0`.
 
 # Usage
 
@@ -125,6 +121,16 @@ Then, run the WebSphere Liberty image with the volumes from the data volume cont
 docker run -d -p 80:9080 -p 443:9443 --volumes-from classcache app
 ```
 
+# Running WebSphere Liberty in read-only mode
+
+Liberty writes to two different directories when running: `/opt/ibm/wlp/output` and `/logs`. In order to run the Liberty image in read-only mode these may be mounted as temporary file systems. If using the provided image, the keystore will be generated on initial start up in the server configuration. This means that the server configuration directory either needs to be read-write or the keystore will need to be built into the image. In the example command `/config` is mounted as a read-write volume.
+
+```console
+docker run -d -p 80:9080 -p 443:9443 \
+    --tmpfs /opt/ibm/wlp/output --tmpfs /logs -v /config --read-only \
+    websphere-liberty:javaee7
+```
+
 # License
 
 The Dockerfiles and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
@@ -132,14 +138,14 @@ The Dockerfiles and associated scripts are licensed under the [Apache License 2.
 Licenses for the products installed within the images are as follows:
 
 -	[IBM JRE](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&li_formnum=L-JWOD-9SYNCP&title=IBM%C2%AE+SDK%2C+Java+Technology+Edition%2C+Version+8.0&l=en) (International License Agreement for Non-Warranted Programs)
--	[IBM WebSphere Application Server](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/8.5.5.8/lafiles/runtime/en.html) in the non-beta images (International License Agreement for Non-Warranted Programs)
+-	[IBM WebSphere Application Server](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/16.0.0.2/lafiles/runtime/en.html) in the non-beta images (International License Agreement for Non-Warranted Programs)
 -	[IBM WebSphere Application Server Liberty Beta](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/beta/lafiles/en.html) in the `beta` image (International License Agreement for Early Release of Programs)
 
-Note: These licenses do not permit further distribution and that the terms for WebSphere Application Server in the non-beta images restrict usage to a developer machine or build server only, or subject to a maximum 2 gigabyte heap usage across all instances. Instructions are available to enable entitled customers to [upgrade](https://github.com/WASdev/ci.docker/tree/master/websphere-liberty/8.5.5/production-upgrade) the Docker Hub image for production use or [build](https://github.com/WASdev/ci.docker/tree/master/websphere-liberty/8.5.5/production-install) their own production licensed image.
+Note: These licenses do not permit further distribution and that the terms for WebSphere Application Server in the non-beta images restrict usage to a developer machine or build server only, or subject to a maximum 2 gigabyte heap usage across all instances. Instructions are available to enable entitled customers to [upgrade](https://github.com/WASdev/ci.docker/tree/master/ga/production-upgrade) the Docker Hub image for production use or [build](https://github.com/WASdev/ci.docker/tree/master/ga/production-install) their own production licensed image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

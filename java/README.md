@@ -1,23 +1,27 @@
+# **DEPRECATED**
+
+This image is officially deprecated in favor of [the `openjdk` image](https://hub.docker.com/_/openjdk/), and will receive no further updates after 2016-12-31 (Dec 31, 2016). Please adjust your usage accordingly.
+
+The image has been OpenJDK-specific since it was first introduced, and as of 2016-08-10 we also have [an `ibmjava` image](https://hub.docker.com/_/ibmjava/), which made it even more clear that each repository should represent one upstream instead of one language stack or community, so this rename reflects that clarity appropriately.
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`6b38-jdk`, `6b38`, `6-jdk`, `6`, `openjdk-6b38-jdk`, `openjdk-6b38`, `openjdk-6-jdk`, `openjdk-6` (*6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jdk/Dockerfile)
 -	[`6b38-jre`, `6-jre`, `openjdk-6b38-jre`, `openjdk-6-jre` (*6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jre/Dockerfile)
--	[`7u101-jdk`, `7u101`, `7-jdk`, `7`, `openjdk-7u101-jdk`, `openjdk-7u101`, `openjdk-7-jdk`, `openjdk-7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a3f06bcbc86d16912a309cf4538a00caf9a6100c/7-jdk/Dockerfile)
--	[`7u91-jdk-alpine`, `7u91-alpine`, `7-jdk-alpine`, `7-alpine`, `openjdk-7u91-jdk-alpine`, `openjdk-7u91-alpine`, `openjdk-7-jdk-alpine`, `openjdk-7-alpine` (*7-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/f60edc7cfe9fa4d4473ef027c6fb2d5e1f6c17f9/7-jdk/alpine/Dockerfile)
--	[`7u101-jre`, `7-jre`, `openjdk-7u101-jre`, `openjdk-7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a3f06bcbc86d16912a309cf4538a00caf9a6100c/7-jre/Dockerfile)
--	[`7u91-jre-alpine`, `7-jre-alpine`, `openjdk-7u91-jre-alpine`, `openjdk-7-jre-alpine` (*7-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/f60edc7cfe9fa4d4473ef027c6fb2d5e1f6c17f9/7-jre/alpine/Dockerfile)
--	[`8u91-jdk`, `8u91`, `8-jdk`, `8`, `jdk`, `latest`, `openjdk-8u91-jdk`, `openjdk-8u91`, `openjdk-8-jdk`, `openjdk-8` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a0a4970a343a3c021dad760f2281d20f61931e3c/8-jdk/Dockerfile)
--	[`8u92-jdk-alpine`, `8u92-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine`, `openjdk-8u92-jdk-alpine`, `openjdk-8u92-alpine`, `openjdk-8-jdk-alpine`, `openjdk-8-alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/c6c90f5e09a5dc1a1ccd662de8210342f94c673e/8-jdk/alpine/Dockerfile)
--	[`8u91-jre`, `8-jre`, `jre`, `openjdk-8u91-jre`, `openjdk-8-jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a0a4970a343a3c021dad760f2281d20f61931e3c/8-jre/Dockerfile)
--	[`8u92-jre-alpine`, `8-jre-alpine`, `jre-alpine`, `openjdk-8u92-jre-alpine`, `openjdk-8-jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/c6c90f5e09a5dc1a1ccd662de8210342f94c673e/8-jre/alpine/Dockerfile)
--	[`9-b116-jdk`, `9-b116`, `9-jdk`, `9`, `openjdk-9-b116-jdk`, `openjdk-9-b116`, `openjdk-9-jdk`, `openjdk-9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4427d56d00bbd05b6c7e0f5ce7a3a7a01b6d4177/9-jdk/Dockerfile)
--	[`9-b116-jre`, `9-jre`, `openjdk-9-b116-jre`, `openjdk-9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4427d56d00bbd05b6c7e0f5ce7a3a7a01b6d4177/9-jre/Dockerfile)
-
-[![](https://badge.imagelayers.io/java:latest.svg)](https://imagelayers.io/?images=java:6b38-jdk,java:6b38-jre,java:7u101-jdk,java:7u91-jdk-alpine,java:7u101-jre,java:7u91-jre-alpine,java:8u91-jdk,java:8u92-jdk-alpine,java:8u91-jre,java:8u92-jre-alpine,java:9-b116-jdk,java:9-b116-jre)
+-	[`7u111-jdk`, `7u111`, `7-jdk`, `7`, `openjdk-7u111-jdk`, `openjdk-7u111`, `openjdk-7-jdk`, `openjdk-7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/054cea7585e6c0e4e98d133378ea38061a2ae3ac/7-jdk/Dockerfile)
+-	[`7u121-jdk-alpine`, `7u121-alpine`, `7-jdk-alpine`, `7-alpine`, `openjdk-7u121-jdk-alpine`, `openjdk-7u121-alpine`, `openjdk-7-jdk-alpine`, `openjdk-7-alpine` (*7-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5257acb51a1230a2dc46b1c349d674a725562f9d/7-jdk/alpine/Dockerfile)
+-	[`7u111-jre`, `7-jre`, `openjdk-7u111-jre`, `openjdk-7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/054cea7585e6c0e4e98d133378ea38061a2ae3ac/7-jre/Dockerfile)
+-	[`7u121-jre-alpine`, `7-jre-alpine`, `openjdk-7u121-jre-alpine`, `openjdk-7-jre-alpine` (*7-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5257acb51a1230a2dc46b1c349d674a725562f9d/7-jre/alpine/Dockerfile)
+-	[`8u111-jdk`, `8u111`, `8-jdk`, `8`, `jdk`, `latest`, `openjdk-8u111-jdk`, `openjdk-8u111`, `openjdk-8-jdk`, `openjdk-8` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e6e9cf8b21516ba764189916d35be57486203c95/8-jdk/Dockerfile)
+-	[`8u111-jdk-alpine`, `8u111-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine`, `openjdk-8u111-jdk-alpine`, `openjdk-8u111-alpine`, `openjdk-8-jdk-alpine`, `openjdk-8-alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/9a0822673dffd3e5ba66f18a8547aa60faed6d08/8-jdk/alpine/Dockerfile)
+-	[`8u111-jre`, `8-jre`, `jre`, `openjdk-8u111-jre`, `openjdk-8-jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e6e9cf8b21516ba764189916d35be57486203c95/8-jre/Dockerfile)
+-	[`8u111-jre-alpine`, `8-jre-alpine`, `jre-alpine`, `openjdk-8u111-jre-alpine`, `openjdk-8-jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/9a0822673dffd3e5ba66f18a8547aa60faed6d08/8-jre/alpine/Dockerfile)
+-	[`9-b147-jdk`, `9-b147`, `9-jdk`, `9`, `openjdk-9-b147-jdk`, `openjdk-9-b147`, `openjdk-9-jdk`, `openjdk-9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2ec4f3ac935c208117752da22d61d9bb0be319c5/9-jdk/Dockerfile)
+-	[`9-b147-jre`, `9-jre`, `openjdk-9-b147-jre`, `openjdk-9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2ec4f3ac935c208117752da22d61d9bb0be319c5/9-jre/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjava).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `java/tag-details.md` file](https://github.com/docker-library/docs/blob/master/java/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/java/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/java/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Java?
 
@@ -71,23 +75,35 @@ As all of the major upstream Linux distributions are unwilling to redistribute O
 -	CentOS requires users to go and download the rpm provided by Oracle at java.com and thus accept the Oracle license ([wiki.centos.org](https://wiki.centos.org/HowTos/JavaRuntimeEnvironment)).
 -	RedHat provides instructions to add a repo that is maintained by Oracle ([access.redhat.com](https://access.redhat.com/solutions/732883)).
 
+# Image Variants
+
+The `java` images come in many flavors, each designed for a specific use case.
+
+## `java:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `java:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # License
 
 View [license information](http://openjdk.java.net/legal/gplv2+ce.html) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`java/` directory](https://github.com/docker-library/docs/tree/master/java) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -100,3 +116,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/java/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`java/` directory](https://github.com/docker-library/docs/tree/master/java) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

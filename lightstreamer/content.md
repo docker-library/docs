@@ -23,7 +23,7 @@ This will map port 8080 inside the container to port 80 on local host. Then poin
 It is possibile to customize each aspect of the Lightstreamer instance running into the container. For example, a specific configuration file may be supplied as follows:
 
 ```console
-$ docker run --name ls-server -v /path/to/my-lightstreamer-conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 lightstreamer
+$ docker run --name ls-server -v /path/to/my-lightstreamer_conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 lightstreamer
 ```
 
 In the same way, you could provide a custom logging configuration, maybe in this case also specifying a dedicated volume to ensure both the persistence of log files and better performance of the container:
@@ -45,13 +45,13 @@ FROM lightstreamer
 
 # Please specify a COPY command only for the the required custom configuration file
 COPY my-lightstreamer_conf.xml /lightstreamer/conf/lightstreamer_conf.xml
-COPY my-lightstreamer_log.xml /lightstreamer/conf/lightstreamer_log_conf.xml
+COPY my-lightstreamer_log_conf.xml /lightstreamer/conf/lightstreamer_log_conf.xml
 ```
 
 where `my-lightstreamer_conf.xml` and `my-lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory as the Dockerfile. By simply running the command:
 
 ```console
-$ docker build -t my-lightstreamer
+$ docker build -t my-lightstreamer .
 ```
 
 the new image will be built along with the provided files. After that, launch the container:
@@ -87,11 +87,11 @@ $ docker run --name ls-server -v /path/to/my-adapters:/lightstreamer/adapters -d
 In this case, the `/path/to/my-adapters` folder has to be structured with the required layout for an adapters folder:
 
 ```console
-/path/to/my-adapaters+
-                     +my_adapter_set_1
-                     +my_adapter_set_2
-                     ...
-                     +my_adapter_set_N
+/path/to/my-adapters+
+                    +my_adapter_set_1
+                    +my_adapter_set_2
+                    ...
+                    +my_adapter_set_N
                      
 ```
 

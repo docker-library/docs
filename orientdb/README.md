@@ -1,14 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.0.18` (*2.0/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/a43637b03a105ceb1104cbf5e42e93e1ffed0944/2.0/Dockerfile)
--	[`2.1.19` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/a4d5ab55f745eaf008fb3a1f6092a853e2183b1a/2.1/Dockerfile)
--	[`2.2.3`, `latest` (*2.2/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/6eaac5d489bce8f0345cceb8da8efd7033a2246c/2.2/Dockerfile)
-
-[![](https://badge.imagelayers.io/orientdb:latest.svg)](https://imagelayers.io/?images=orientdb:2.0.18,orientdb:2.1.19,orientdb:2.2.3)
+-	[`2.1.25` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/eb9c688528d4ce7d50eec34391a3cbb4fea88868/2.1/Dockerfile)
+-	[`2.2.13`, `latest` (*2.2/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/eb9c688528d4ce7d50eec34391a3cbb4fea88868/2.2/x86_64/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/orientdb`)](https://github.com/docker-library/official-images/blob/master/library/orientdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Forientdb).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `orientdb/tag-details.md` file](https://github.com/docker-library/docs/blob/master/orientdb/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/orientdb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/orientdb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is OrientDB?
 
@@ -21,7 +19,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 When OrientDB starts it asks for the root password. The root user is able to manage the OrientDB server: create new databases, manage users and roles. The root password can be passed to the container using an environment property:
 
 ```console
-$ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 -e ORIENTDB_ROOT_PASSWORD=rootpwd orientdb:latest
+$ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 -e ORIENTDB_ROOT_PASSWORD=rootpwd orientdb
 ```
 
 The [Studio](http://orientdb.com/docs/last/Home-page.html) is accessible to http://<docker-host>:2480 (e.g.: http://localhost:2480)
@@ -38,7 +36,7 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -v <databases_path>:/orientdb/databases \
     -v <backup_path>:/orientdb/backup \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
-    orientdb:latest
+    orientdb
 ```
 
 ### Running OrientDB tools
@@ -46,13 +44,13 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
 The OrientDB image contains a full fledge installation, so it is possible to run the [console](http://orientdb.com/docs/last/Console-Commands.html)
 
 ```console
-$ docker run --rm -it orientdb:latest /orientdb/bin/console.sh
+$ docker run --rm -it orientdb /orientdb/bin/console.sh
 ```
 
 or even the etl
 
 ```console
-$ docker run  --rm -it -v <config_path>:/orientdb/config orientdb:latest /orientdb/bin/oetl.sh ../config/oetl-config.json
+$ docker run  --rm -it -v <config_path>:/orientdb/config orientdb /orientdb/bin/oetl.sh ../config/oetl-config.json
 ```
 
 ### Override configuration parameters
@@ -66,10 +64,10 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -v <backup_path>:/orientdb/backup \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
     -e ORIENTDB_NODE_NAME=odb1 \
-    orientdb:latest /orientdb/bin/server.sh  -Ddistributed=true
+    orientdb /orientdb/bin/server.sh  -Ddistributed=true
 ```
 
-For further configuration options please refer to the [Configuration](http://orientdb.com/docs/latest/Configuration.html) section of the online documentation.
+For further configuration options please refer to the [Configuration](http://orientdb.com/docs/last/Configuration.html) section of the online documentation.
 
 ### Environment
 
@@ -78,22 +76,18 @@ Environment parameters such as heap size could be passed via command line:
 ```console
 $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
-    orientdb:latest /orientdb/bin/server.sh -Xmx8g
+    orientdb /orientdb/bin/server.sh -Xmx8g
 ```
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.3.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`orientdb/` directory](https://github.com/docker-library/docs/tree/master/orientdb) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -106,3 +100,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/orientechnologies/orientdb-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`orientdb/` directory](https://github.com/docker-library/docs/tree/master/orientdb) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
