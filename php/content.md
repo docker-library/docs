@@ -84,13 +84,13 @@ For example, if you want to have a PHP-FPM image with `iconv`, `mcrypt` and `gd`
 ```dockerfile
 FROM php:7.0-fpm
 RUN apt-get update && apt-get install -y \
-        libfreetype6-dev \
-        libjpeg62-turbo-dev \
-        libmcrypt-dev \
-        libpng12-dev \
-    && docker-php-ext-install -j$(nproc) iconv mcrypt \
-    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
-    && docker-php-ext-install -j$(nproc) gd
+		libfreetype6-dev \
+		libjpeg62-turbo-dev \
+		libmcrypt-dev \
+		libpng12-dev \
+	&& docker-php-ext-install -j$(nproc) iconv mcrypt \
+	&& docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+	&& docker-php-ext-install -j$(nproc) gd
 ```
 
 Remember, you must install dependencies for your extensions manually. If an extension needs custom `configure` arguments, you can use the `docker-php-ext-configure` script like this example. There is no need to run `docker-php-source` manually in this case, since that is handled by the `configure` and `install` scripts.
