@@ -100,9 +100,9 @@ Remember, you must install dependencies for your extensions manually. If an exte
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
 
 ```dockerfile
-FROM php:7.0-fpm
-RUN apt-get update && apt-get install -y libmemcached-dev \
-	&& pecl install memcached \
+FROM php:5.6-fpm
+RUN apt-get update && apt-get install -y libmemcached-dev zlib1g-dev \
+	&& pecl install memcached-2.2.0 \
 	&& docker-php-ext-enable memcached
 ```
 
