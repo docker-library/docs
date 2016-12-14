@@ -1,8 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.6.0` (*0.6/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d12aa78cdbdce22b3d3e30f1093843f21b0a8fa/0.6/Dockerfile)
--	[`0.6`, `0.6.2`, `latest` (*0.6.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d3957180d689ecddb537aa799a878171280e8a3/0.6.2/Dockerfile)
+-	[`0.6`, `0.6.3`, `latest` (*0.6.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/f9a97ab152b51d39f54ab51136b2819305f70caf/0.6.3/Dockerfile)
 -	[`0.6.1` (*0.6.1/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d12aa78cdbdce22b3d3e30f1093843f21b0a8fa/0.6.1/Dockerfile)
+-	[`0.6.2` (*0.6.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d3957180d689ecddb537aa799a878171280e8a3/0.6.2/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/vault`)](https://github.com/docker-library/official-images/blob/master/library/vault). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvault).
 

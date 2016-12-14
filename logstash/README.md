@@ -52,7 +52,27 @@ CMD ["-f", "/some/config-dir/logstash.conf"]
 Then, build with `docker build -t my-logstash .` and deploy with something like the following:
 
 ```console
-$ docker run -it --rm my-logstash
+$ docker run -d my-logstash
+```
+
+## Installing plugins
+
+If you need to add any logstash plugins that do not ship with Logstash by default, the simplest solution is a Dockerfile using `logstash-plugin` included with Logsatsh. You can also pack in your customized config file.
+
+```dockerfile
+FROM logstash:5
+
+RUN logstash-plugin install logstash-filter-de_dot
+
+COPY logstash.conf /some/config-dir/
+
+CMD ["-f", "/some/config-dir/logstash.conf"]
+```
+
+Then, build with `docker build -t my-logstash .` and deploy just like the previous example:
+
+```console
+$ docker run -d my-logstash
 ```
 
 # Image Variants
