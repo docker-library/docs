@@ -1,8 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `FT`, `8`, `8.3` (*8.3/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/8535464e476b39e10001242ad7c885519fadc2a6/8.3/Dockerfile)
--	[`8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/8535464e476b39e10001242ad7c885519fadc2a6/8.2/Dockerfile)
--	[`LTS-2015`, `LTS`, `7`, `7.10` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/8535464e476b39e10001242ad7c885519fadc2a6/7.10/Dockerfile)
+-	[`latest`, `LTS`, `LTS-2016`, `8`, `8.10`, `FT` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4c45ac6f74a5571dd23ee86a00fb85aadbece05c/8.10/Dockerfile)
+-	[`8.3` (*8.3/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/a02183111045dadb357e68e11e93c5551c570c43/8.3/Dockerfile)
+-	[`8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/a02183111045dadb357e68e11e93c5551c570c43/8.2/Dockerfile)
+-	[`LTS-2015`, `7`, `7.10` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/a02183111045dadb357e68e11e93c5551c570c43/7.10/Dockerfile)
 -	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/8535464e476b39e10001242ad7c885519fadc2a6/6.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nuxeo`)](https://github.com/docker-library/official-images/blob/master/library/nuxeo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnuxeo).

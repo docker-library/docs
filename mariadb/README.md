@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`10.1.19`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/6452a881b90283f46c88925b08c2d580a49a27cc/10.1/Dockerfile)
--	[`10.0.28`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/6452a881b90283f46c88925b08c2d580a49a27cc/10.0/Dockerfile)
--	[`5.5.53`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/6452a881b90283f46c88925b08c2d580a49a27cc/5.5/Dockerfile)
+-	[`10.1.19`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/2b065acb53b18eb44e1d78a1a41f0a46f829c291/10.1/Dockerfile)
+-	[`10.0.28`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/2b065acb53b18eb44e1d78a1a41f0a46f829c291/10.0/Dockerfile)
+-	[`5.5.53`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/2b065acb53b18eb44e1d78a1a41f0a46f829c291/5.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmariadb).
 
