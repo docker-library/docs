@@ -65,6 +65,8 @@ Note the `--cap-add=IPC_LOCK`: this is required in order for Vault to lock memor
 
 At startup, the server will read configuration HCL and JSON files from `/vault/config` (any information passed into `VAULT_LOCAL_CONFIG` is written into `local.json` in this directory and read as part of reading the directory for configuration files). Please see Vault's [configuration documentation](https://www.vaultproject.io/docs/config/index.html) for a full list of options.
 
+Since 0.6.3 this container also supports the `VAULT_REDIRECT_INTERFACE` and `VAULT_CLUSTER_INTERFACE` environment variables. If set, the IP addresses used for the redirect and cluster addresses in Vault's configuration will be the address of the named interface inside the container (e.g. `eth0`).
+
 # License
 
 View [license information](https://raw.githubusercontent.com/hashicorp/vault/master/LICENSE) for the software contained in this image.
