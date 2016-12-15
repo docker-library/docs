@@ -43,8 +43,6 @@ $ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/ngin
 
 For information on the syntax of the Nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
 
-Be sure to include `daemon off;` in your custom configuration to ensure that Nginx stays in the foreground so that Docker can track the process properly (otherwise your container will stop immediately after starting)!
-
 If you wish to adapt the default configuration, use something like the following to copy it from a running Nginx container:
 
 ```console
@@ -60,8 +58,9 @@ FROM nginx
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
 
-Then, build with `docker build -t custom-nginx .` and run:
+If you add a custom `CMD` in the Dockerfile, be sure to include `-g daemon off;` to `CMD` that Nginx stays in the foreground so that Docker can track the process properly (otherwise your container will stop immediately after starting)!
 
+Then, build with `docker build -t custom-nginx .` and run:
 
 ```console
 $ docker run --name my-custom-nginx-container -d custom-nginx
