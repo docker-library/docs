@@ -38,7 +38,7 @@ Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browse
 ## complex configuration
 
 ```console
-$ docker run --name some-nginx -v /some/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
+$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
 ```
 
 For information on the syntax of the Nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
@@ -48,20 +48,23 @@ Be sure to include `daemon off;` in your custom configuration to ensure that Ngi
 If you wish to adapt the default configuration, use something like the following to copy it from a running Nginx container:
 
 ```console
-$ docker cp some-nginx:/etc/nginx/nginx.conf /some/nginx.conf
+$ docker run --name tmp-nginx-container -d nginx
+$ docker cp tmp-nginx-container:/etc/nginx/nginx.conf /host/path/nginx.conf
+$ docker rm -f tmp-nginx-container
 ```
 
-As above, this can also be accomplished more cleanly using a simple `Dockerfile`:
+As above, this can also be accomplished more cleanly using a simple `Dockerfile` (in `/host/path/`):
 
 ```dockerfile
 FROM nginx
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
 
-Then, build with `docker build -t some-custom-nginx .` and run:
+Then, build with `docker build -t custom-nginx .` and run:
+
 
 ```console
-$ docker run --name some-nginx -d some-custom-nginx
+$ docker run --name my-custom-nginx-container -d custom-nginx
 ```
 
 ### using environment variables in nginx configuration
