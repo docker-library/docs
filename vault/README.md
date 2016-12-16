@@ -1,9 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.6.0` (*0.6/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d12aa78cdbdce22b3d3e30f1093843f21b0a8fa/0.6/Dockerfile)
--	[`0.6`, `0.6.3`, `latest` (*0.6.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/f9a97ab152b51d39f54ab51136b2819305f70caf/0.6.3/Dockerfile)
+-	[`0.6`, `0.6.4`, `latest` (*0.6.4/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/7bbdde58de683a2bb6e384e4c20e30308b4ff882/0.6.4/Dockerfile)
 -	[`0.6.1` (*0.6.1/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d12aa78cdbdce22b3d3e30f1093843f21b0a8fa/0.6.1/Dockerfile)
 -	[`0.6.2` (*0.6.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d3957180d689ecddb537aa799a878171280e8a3/0.6.2/Dockerfile)
+-	[`0.6.3` (*0.6.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/7bbdde58de683a2bb6e384e4c20e30308b4ff882/0.6.3/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/vault`)](https://github.com/docker-library/official-images/blob/master/library/vault). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvault).
 
@@ -37,7 +38,7 @@ The container has a Vault configuration directory set up at `/vault/config` and 
 ## Running Vault for Development
 
 ```console
-$ docker run -d --name=dev-vault vault
+$ docker run --cap-add=IPC_LOCK -d --name=dev-vault vault
 ```
 
 This runs a completely in-memory Vault server, which is useful for development but should not be used in production.
@@ -50,13 +51,13 @@ When running in development mode, two additional options can be set via environm
 As an example:
 
 ```console
-$ docker run -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=127.0.0.1:1234' vault
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=127.0.0.1:1234' vault
 ```
 
 ## Running Vault in Server Mode
 
 ```console
-$ docker run --cap-add=IPC_LOCK  -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}}, "default_lease_ttl": "168h", "max_lease_ttl": "720h"}' vault server
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}}, "default_lease_ttl": "168h", "max_lease_ttl": "720h"}' vault server
 ```
 
 This runs a Vault server using the `file` storage backend at path `/vault/file`, with a default secret lease duration of one week and a maximum of 30 days.
