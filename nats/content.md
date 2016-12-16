@@ -15,7 +15,7 @@
 # use -p or -P as needed.
 
 $ docker run -d --name nats-main nats
-[INF] Starting nats-server version 0.9.4
+[INF] Starting nats-server version 0.9.6
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
@@ -28,7 +28,7 @@ $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:
 
 # If you want to verify the routes are connected, try
 $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 0.9.4
+[INF] Starting nats-server version 0.9.6
 [DBG] Go build version go1.6.3
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
@@ -78,41 +78,42 @@ cluster {
 
 ```bash
 Server Options:
-    -a, --addr HOST                  Bind to HOST address (default: 0.0.0.0)
-    -p, --port PORT                  Use PORT for clients (default: 4222)
-    -P, --pid FILE                   File to store PID
-    -m, --http_port PORT             Use HTTP PORT for monitoring
-    -ms,--https_port PORT            Use HTTPS PORT for monitoring
-    -c, --config FILE                Configuration File
+    -a, --addr <host>                Bind to host address (default: 0.0.0.0)
+    -p, --port <port>                Use port for clients (default: 4222)
+    -P, --pid <file>                 File to store PID
+    -m, --http_port <port>           Use port for http monitoring
+    -ms,--https_port <port>          Use port for https monitoring
+    -c, --config <file>              Configuration file
 
 Logging Options:
-    -l, --log FILE                   File to redirect log output
+    -l, --log <file>                 File to redirect log output
     -T, --logtime                    Timestamp log entries (default: true)
     -s, --syslog                     Enable syslog as log method
-    -r, --remote_syslog              Syslog server addr (udp://localhost:514)
+    -r, --remote_syslog <addr>       Syslog server addr (udp://localhost:514)
     -D, --debug                      Enable debugging output
     -V, --trace                      Trace the raw protocol
-    -DV                              Debug and Trace
+    -DV                              Debug and trace
 
 Authorization Options:
-        --user user                  User required for connections
-        --pass password              Password required for connections
+        --user <user>                User required for connections
+        --pass <password>            Password required for connections
         --auth <token>               Authorization token required for connections
 
 TLS Options:
         --tls                        Enable TLS, do not verify clients (default: false)
-        --tlscert FILE               Server certificate file
-        --tlskey FILE                Private key for server certificate
-        --tlsverify                  Enable TLS, very client certificates
-        --tlscacert FILE             Client certificate CA for verification
+        --tlscert <file>             Server certificate file
+        --tlskey <file>              Private key for server certificate
+        --tlsverify                  Enable TLS, verify client certificates
+        --tlscacert <file>           Client certificate CA for verification
 
 Cluster Options:
         --routes <rurl-1, rurl-2>    Routes to solicit and connect
         --cluster <cluster-url>      Cluster URL for solicited routes
         --no_advertise <bool>        Advertise known cluster IPs to clients
 
+
 Common Options:
     -h, --help                       Show this message
     -v, --version                    Show version
-        --help_tls                   TLS help.
+        --help_tls                   TLS help
 ```
