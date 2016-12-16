@@ -198,7 +198,7 @@ View [license information](http://php.net/license/) for the software contained i
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.4.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
