@@ -28,6 +28,14 @@ $ docker run -i -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/to/eggdrop/fi
 
 Please note that, even in daemon mode, the -i flag for docker run is required.
 
+## Adding scripts
+
+An easy way to add scripts would be to create a scripts directory on the host and mount it to /home/eggdrop/eggdrop/data. This would be accomplished by adding an option similar to
+
+	-v /path/to/host/scripts:/home/eggdrop/eggdrop/scripts
+	
+to your docker run command line (and of course, don't forget to edit your configuration file to actually load it!)
+
 ## Exposing network ports
 
 If you want to expose network connections for your bot, you'll also want to use the -p flag to expose whichever port you specified in the config as the listen port (default is 3333). For example, to expose port 3333, add
