@@ -36,7 +36,15 @@ After running the eggdrop container for the first time, the configuration file, 
 $ docker run -i -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop
 ```
 
-Please note that, even in daemon mode, the -i flag for docker run is required.
+Please note that, even in daemon mode, the `-i` flag for `docker run` is required.
+
+## Adding scripts
+
+An easy way to add scripts would be to create a scripts directory on the host and mount it to `/home/eggdrop/eggdrop/data`. This would be accomplished by adding an option similar to
+
+	-v /path/to/host/scripts:/home/eggdrop/eggdrop/scripts
+
+to your docker run command line (and of course, don't forget to edit your configuration file to actually load it!)
 
 ## Exposing network ports
 
