@@ -16,8 +16,8 @@ The image has been OpenJDK-specific since it was first introduced, and as of 201
 -	[`8u111-jdk-alpine`, `8u111-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine`, `openjdk-8u111-jdk-alpine`, `openjdk-8u111-alpine`, `openjdk-8-jdk-alpine`, `openjdk-8-alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/9a0822673dffd3e5ba66f18a8547aa60faed6d08/8-jdk/alpine/Dockerfile)
 -	[`8u111-jre`, `8-jre`, `jre`, `openjdk-8u111-jre`, `openjdk-8-jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e6e9cf8b21516ba764189916d35be57486203c95/8-jre/Dockerfile)
 -	[`8u111-jre-alpine`, `8-jre-alpine`, `jre-alpine`, `openjdk-8u111-jre-alpine`, `openjdk-8-jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/9a0822673dffd3e5ba66f18a8547aa60faed6d08/8-jre/alpine/Dockerfile)
--	[`9-b148-jdk`, `9-b148`, `9-jdk`, `9`, `openjdk-9-b148-jdk`, `openjdk-9-b148`, `openjdk-9-jdk`, `openjdk-9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e1981fe71526d3c568cdad28fe7607a5d258fcd3/9-jdk/Dockerfile)
--	[`9-b148-jre`, `9-jre`, `openjdk-9-b148-jre`, `openjdk-9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e1981fe71526d3c568cdad28fe7607a5d258fcd3/9-jre/Dockerfile)
+-	[`9-b149-jdk`, `9-b149`, `9-jdk`, `9`, `openjdk-9-b149-jdk`, `openjdk-9-b149`, `openjdk-9-jdk`, `openjdk-9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e2c8648d39ef1492df3482de3fda0ee3f8955fb1/9-jdk/Dockerfile)
+-	[`9-b149-jre`, `9-jre`, `openjdk-9-b149-jre`, `openjdk-9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e2c8648d39ef1492df3482de3fda0ee3f8955fb1/9-jre/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjava).
 
