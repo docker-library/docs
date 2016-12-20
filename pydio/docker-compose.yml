@@ -1,0 +1,116 @@
+# Pydio different example setups
+#
+# Access via "http://localhost:8080" for a Pydio running on apache via mod-php
+# Access via "http://localhost:8081" for a Pydio running on php-fpm accessed via an apache webserver (external container) https://www.mysql.com/
+# Access via "http://localhost:8082" for a Pydio running on php-fpm accessed via an nginx webserver (external container) https://www.postgresql.org/
+# Access via "http://localhost:8081" for a Pydio running on php-fpm accessed via a caddy webserver (external container) https://caddyserver.com/
+# Access via cli by running the following eg : docker-compose run pydio-cli -u <USER> -r <REPOSITORY>
+#
+# During the initial wizard, you can choose if you want to use the mysql or postgres database started in this compose by selecting the driver and entering either mysql or postgres as Database host
+# Database user: pydio
+# Database password: P@ssw0rd
+# Database name: pydio
+#
+# Note that all the webserver examples below are set to use the same pydio-fpm. This just gives you an idea of all the different setups imaginable.
+
+version: '2'
+services:
+    #---------------------------------------------------------------------------
+    # Pydio Apache - Running with an apache webserver and mod php enabled
+    #---------------------------------------------------------------------------
+    pydio-apache:
+        image: pydio-apache
+        ports:
+            - 8080:80
+        expose:
+            - 80
+
+    pydio-fpm:
+        image: pydio-fpm
+        user:  www-data
+        links:
+            - mysql
+            - postgres
+        volumes:
+            - /usr/share/pydio
+            - /etc/pydio
+            - /data:/var/lib/pydio/data
+
+    pydio-cli:
+        user: www-data
+        image: pydio-cli
+        volumes_from:
+            - pydio-fpm
+
+    #---------------------------------------------------------------------------
+    # Databases
+    #---------------------------------------------------------------------------
+    # Mysql database
+    mysql:
+        image: library/mysql
+        expose:
+            - 3306
+        environment:
+            MYSQL_ROOT_PASSWORD: P@ssw0rd
+            MYSQL_USER: pydio
+            MYSQL_PASSWORD: P@ssw0rd
+            MYSQL_DATABASE: pydio
+
+    postgres:
+        image: library/postgres
+        expose:
+            - 5432
+        environment:
+            POSTGRES_USER: pydio
+            POSTGRES_PASSWORD: P@ssw0rd
+            POSTGRES_DB: pydio
+
+    #---------------------------------------------------------------------------
+    # Webservers - For pydio-fpm
+    #---------------------------------------------------------------------------
+
+    # nginx - running on port 8081
+    nginx:
+        image: library/nginx
+        ports:
+            - 8081:80
+        expose:
+            - 80
+        environment:
+            NGINX_PORT: 80
+            PYDIO_HOST: pydio-fpm
+        depends_on:
+            - pydio-fpm
+        command: /bin/bash -c "envsubst \$$PYDIO_HOST < /etc/pydio/nginx.conf > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
+        volumes_from:
+            - pydio-fpm
+
+    # apache - running on port 8082
+    apache:
+        image: library/httpd
+        ports:
+            - 8082:80
+        expose:
+            - 80
+        environment:
+            PYDIO_HOST: pydio-fpm
+        depends_on:
+            - pydio-fpm
+        command: /bin/bash -c "cat /etc/pydio/httpd.conf >> /usr/local/apache2/conf/httpd.conf && cat /usr/local/apache2/conf/httpd.conf &&  httpd-foreground;"
+        volumes_from:
+            - pydio-fpm
+
+    # caddy - running on port 8083
+    caddy:
+        image: jumanjiman/caddy
+        ports:
+            - 8083:8080
+        expose:
+            - 8080
+        environment:
+            PYDIO_HOST: pydio-fpm
+        depends_on:
+            - pydio-fpm
+        command: "-conf=/etc/pydio/caddy.conf"
+        volumes_from:
+            - pydio-fpm
