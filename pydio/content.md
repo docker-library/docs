@@ -1,6 +1,6 @@
 # What is Pydio?
 
-Pydio is a secure, self-hosted file sharing open-source software deployed on-premise or in a private cloud for businesses.
+Pydio is a secure, self-hosted file sharing open-source software for businesses deployed on-premise or in a private cloud.
 
 It gives you and your collaborators access to your private or shared data via a slick web interface, mobile apps or desktop synchronisation clients.
 
