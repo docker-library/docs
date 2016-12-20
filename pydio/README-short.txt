@@ -1,1 +1,1 @@
-Pydio is a self-hosted file sync and share server.
+Pydio is a secure, self-hosted file sharing open-source software deployed on-premise or in a private cloud for businesses.
