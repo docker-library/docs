@@ -118,7 +118,7 @@ docker run -d -p 80:9080 -p 443:9443 \
     websphere-liberty:javaee7
 ```
 
-## Changing locale
+# Changing locale
 
 The base Ubuntu image does not include additional language packs. To use an alternative locale, build your own image that installs the required language pack and then sets the `LANG` environment variable. For example, the following Dockerfile starts with the `websphere-liberty:webProfile7` image, installs the Portuguese language pack, and sets Brazilian Portuguese as the default locale:
 
