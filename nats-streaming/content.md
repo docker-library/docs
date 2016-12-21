@@ -17,37 +17,38 @@ $ docker run -d nats-streaming
 
 Output that you would get if you had started with `-ti` instead of `d` (for daemon):
 
-[1] 2016/12/09 21:14:38.010926 [INF] Starting nats-streaming-server[test-cluster] version 0.3.4
-[1] 2016/12/09 21:14:38.011636 [INF] Starting nats-server version 0.9.5
-[1] 2016/12/09 21:14:38.011915 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2016/12/09 21:14:38.012193 [INF] Server is ready
-[1] 2016/12/09 21:14:38.294321 [INF] STAN: Message store is MEMORY
-[1] 2016/12/09 21:14:38.294362 [INF] STAN: --------- Store Limits ---------
-[1] 2016/12/09 21:14:38.294370 [INF] STAN: Channels:                  100 *
-[1] 2016/12/09 21:14:38.294375 [INF] STAN: -------- channels limits -------
-[1] 2016/12/09 21:14:38.294380 [INF] STAN:   Subscriptions:          1000 *
-[1] 2016/12/09 21:14:38.294385 [INF] STAN:   Messages     :       1000000 *
-[1] 2016/12/09 21:14:38.294472 [INF] STAN:   Bytes        :     976.56 MB *
-[1] 2016/12/09 21:14:38.294491 [INF] STAN:   Age          :     unlimited *
-[1] 2016/12/09 21:14:38.294494 [INF] STAN: --------------------------------
+[1] 2016/12/21 17:37:56.743377 [INF] Starting nats-streaming-server[test-cluster] version 0.3.6
+[1] 2016/12/21 17:37:56.743575 [INF] Starting nats-server version 0.9.6
+[1] 2016/12/21 17:37:56.743600 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2016/12/21 17:37:56.743851 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2016/12/21 17:37:56.743891 [INF] Server is ready
+[1] 2016/12/21 17:37:57.023416 [INF] STAN: Message store is MEMORY
+[1] 2016/12/21 17:37:57.023453 [INF] STAN: --------- Store Limits ---------
+[1] 2016/12/21 17:37:57.023464 [INF] STAN: Channels:                  100 *
+[1] 2016/12/21 17:37:57.023467 [INF] STAN: -------- channels limits -------
+[1] 2016/12/21 17:37:57.023473 [INF] STAN:   Subscriptions:          1000 *
+[1] 2016/12/21 17:37:57.023478 [INF] STAN:   Messages     :       1000000 *
+[1] 2016/12/21 17:37:57.023489 [INF] STAN:   Bytes        :     976.56 MB *
+[1] 2016/12/21 17:37:57.023502 [INF] STAN:   Age          :     unlimited *
+[1] 2016/12/21 17:37:57.023506 [INF] STAN: --------------------------------
 
 To use a file based store instead, you would run:
 
 $ docker run -d nats-streaming -store file -dir datastore
 
-[1] 2016/12/09 21:15:23.869508 [INF] Starting nats-streaming-server[test-cluster] version 0.3.4
-[1] 2016/12/09 21:15:23.871555 [INF] Starting nats-server version 0.9.5
-[1] 2016/12/09 21:15:23.871671 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2016/12/09 21:15:23.871888 [INF] Server is ready
-[1] 2016/12/09 21:15:24.152361 [INF] STAN: Message store is FILE
-[1] 2016/12/09 21:15:24.152375 [INF] STAN: --------- Store Limits ---------
-[1] 2016/12/09 21:15:24.152380 [INF] STAN: Channels:                  100 *
-[1] 2016/12/09 21:15:24.152383 [INF] STAN: -------- channels limits -------
-[1] 2016/12/09 21:15:24.152386 [INF] STAN:   Subscriptions:          1000 *
-[1] 2016/12/09 21:15:24.152388 [INF] STAN:   Messages     :       1000000 *
-[1] 2016/12/09 21:15:24.152430 [INF] STAN:   Bytes        :     976.56 MB *
-[1] 2016/12/09 21:15:24.152434 [INF] STAN:   Age          :     unlimited *
-[1] 2016/12/09 21:15:24.152467 [INF] STAN: --------------------------------
+[1] 2016/12/21 17:38:25.128903 [INF] Starting nats-streaming-server[test-cluster] version 0.3.6
+[1] 2016/12/21 17:38:25.130717 [INF] Starting nats-server version 0.9.6
+[1] 2016/12/21 17:38:25.130746 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2016/12/21 17:38:25.130819 [INF] Server is ready
+[1] 2016/12/21 17:38:25.409344 [INF] STAN: Message store is FILE
+[1] 2016/12/21 17:38:25.409422 [INF] STAN: --------- Store Limits ---------
+[1] 2016/12/21 17:38:25.409435 [INF] STAN: Channels:                  100 *
+[1] 2016/12/21 17:38:25.409440 [INF] STAN: -------- channels limits -------
+[1] 2016/12/21 17:38:25.409445 [INF] STAN:   Subscriptions:          1000 *
+[1] 2016/12/21 17:38:25.409450 [INF] STAN:   Messages     :       1000000 *
+[1] 2016/12/21 17:38:25.409464 [INF] STAN:   Bytes        :     976.56 MB *
+[1] 2016/12/21 17:38:25.409495 [INF] STAN:   Age          :     unlimited *
+[1] 2016/12/21 17:38:25.409505 [INF] STAN: --------------------------------
 
 You can also connect to a remote NATS Server running in a docker image.
 First, run NATS Server:
@@ -56,18 +57,18 @@ $ docker run -d --name=nats-main nats
 
 Now, start the Streaming server and link it to the above docker image:
 
-$ docker run -d --link nats-main nats-streaming -ns nats://nats-main:4222 
+$ docker run -d --link nats-main nats-streaming -store file -dir datastore -ns nats://nats-main:4222
 
-[1] 2016/12/09 21:16:47.502814 [INF] Starting nats-streaming-server[test-cluster] version 0.3.4
-[1] 2016/12/09 21:16:47.871777 [INF] STAN: Message store is FILE
-[1] 2016/12/09 21:16:47.871809 [INF] STAN: --------- Store Limits ---------
-[1] 2016/12/09 21:16:47.871815 [INF] STAN: Channels:                  100 *
-[1] 2016/12/09 21:16:47.871817 [INF] STAN: -------- channels limits -------
-[1] 2016/12/09 21:16:47.871820 [INF] STAN:   Subscriptions:          1000 *
-[1] 2016/12/09 21:16:47.871823 [INF] STAN:   Messages     :       1000000 *
-[1] 2016/12/09 21:16:47.871831 [INF] STAN:   Bytes        :     976.56 MB *
-[1] 2016/12/09 21:16:47.871834 [INF] STAN:   Age          :     unlimited *
-[1] 2016/12/09 21:16:47.871836 [INF] STAN: --------------------------------
+[1] 2016/12/21 17:40:51.007013 [INF] Starting nats-streaming-server[test-cluster] version 0.3.6
+[1] 2016/12/21 17:40:51.419640 [INF] STAN: Message store is FILE
+[1] 2016/12/21 17:40:51.419752 [INF] STAN: --------- Store Limits ---------
+[1] 2016/12/21 17:40:51.419779 [INF] STAN: Channels:                  100 *
+[1] 2016/12/21 17:40:51.419799 [INF] STAN: -------- channels limits -------
+[1] 2016/12/21 17:40:51.419820 [INF] STAN:   Subscriptions:          1000 *
+[1] 2016/12/21 17:40:51.420004 [INF] STAN:   Messages     :       1000000 *
+[1] 2016/12/21 17:40:51.420083 [INF] STAN:   Bytes        :     976.56 MB *
+[1] 2016/12/21 17:40:51.420275 [INF] STAN:   Age          :     unlimited *
+[1] 2016/12/21 17:40:51.420711 [INF] STAN: --------------------------------
 
 Notice that the output shows that the NATS Server was not started, as opposed to the first output.
 
@@ -87,6 +88,9 @@ Streaming Server Options:
     -ma,  --max_age <seconds>        Max duration a message can be stored ("0s" for unlimited)
     -ns,  --nats_server <url>        Connect to this external NATS Server (embedded otherwise)
     -sc,  --stan_config <file>       Streaming server configuration file
+    -hbi, --hb_interval <duration>   Interval at which server sends heartbeat to a client
+    -hbt, --hb_timeout <duration>    How long server waits for a heartbeat response
+    -hbf, --hb_fail_count <number>   Number of failed heartbeats before server closes the client connection
 
 Streaming Server File Store Options:
     --file_compact_enabled           Enable file compaction
