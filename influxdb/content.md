@@ -37,7 +37,9 @@ The following ports are important and are used by InfluxDB.
 
 The HTTP API port will be automatically exposed when using `docker run -P`.
 
-The administrator interface is not automatically exposed when using `docker run -P`. While the administrator interface is run by default, the adminstrator interface requires that the web browser have access to InfluxDB on the same port in the container as from the web browser. Since `-P` exposes the HTTP port to the host on a random port, the administrator interface is not compatible with this setting.
+The administrator interface is not automatically exposed when using `docker run -P` and is disabled by default. The adminstrator interface requires that the web browser have access to InfluxDB on the same port in the container as from the web browser. Since `-P` exposes the HTTP port to the host on a random port, the administrator interface is not compatible with this setting.
+
+The administrator interface is deprecated as of 1.1.0 and will be removed in the future.
 
 Find more about API Endpoints & Ports [here](https://docs.influxdata.com/influxdb/latest/concepts/api/).
 
@@ -54,7 +56,7 @@ $ docker run --rm influxdb influxd config > influxdb.conf
 Modify the default configuration, which will now be available under `$PWD`. Then start the InfluxDB container.
 
 ```console
-$ docker run -p 8083:8083 -p 8086:8086 \
+$ docker run -p 8086:8086 \
       -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
       influxdb -config /etc/influxdb/influxdb.conf
 ```
@@ -78,7 +80,7 @@ Find more about configuring InfluxDB [here](https://docs.influxdata.com/influxdb
 InfluxDB supports the Graphite line protocol, but the service and ports are not exposed by default. To run InfluxDB with Graphite support enabled, you can either use a configuration file or set the appropriate environment variables. Run InfluxDB with the default Graphite configuration:
 
 ```console
-docker run -p 8083:8083 -p 8086:8086 \
+docker run -p 8086:8086 \
     -e INFLUXDB_GRAPHITE_ENABLED=true \
     influxdb
 ```
@@ -106,19 +108,13 @@ Read more about this in the [official documentation](https://docs.influxdata.com
 Start the container:
 
 ```console
-$ docker run --name=influxdb -d -p 8083:8083 -p 8086:8086 influxdb
+$ docker run --name=influxdb -d -p 8086:8086 influxdb
 ```
 
 Run the influx client in another container:
 
 ```console
-$ docker run --rm --net=container:influxdb -it influxdb influx -host influxdb
+$ docker run --rm --link=influxdb -it influxdb influx -host influxdb
 ```
 
 At the moment, you cannot use `docker exec` to run the influx client since `docker exec` will not properly allocate a TTY. This is due to a current bug in Docker that is detailed in [docker/docker#8755](https://github.com/docker/docker/issues/8755).
-
-### Web Administrator Interface
-
-Navigate to [localhost:8083](http://localhost:8083) with your browser while running the container.
-
-See more about using the web administrator interface [here](https://docs.influxdata.com/influxdb/latest/tools/web_admin/).

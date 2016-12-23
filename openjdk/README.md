@@ -10,8 +10,8 @@
 -	[`8u111-jdk-alpine`, `8u111-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/9a0822673dffd3e5ba66f18a8547aa60faed6d08/8-jdk/alpine/Dockerfile)
 -	[`8u111-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e6e9cf8b21516ba764189916d35be57486203c95/8-jre/Dockerfile)
 -	[`8u111-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/9a0822673dffd3e5ba66f18a8547aa60faed6d08/8-jre/alpine/Dockerfile)
--	[`9-b144-jdk`, `9-b144`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a2d46845f90bd841871419063cf12ebe4c2e2b72/9-jdk/Dockerfile)
--	[`9-b144-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a2d46845f90bd841871419063cf12ebe4c2e2b72/9-jre/Dockerfile)
+-	[`9-b149-jdk`, `9-b149`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e2c8648d39ef1492df3482de3fda0ee3f8955fb1/9-jdk/Dockerfile)
+-	[`9-b149-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e2c8648d39ef1492df3482de3fda0ee3f8955fb1/9-jre/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/openjdk`)](https://github.com/docker-library/official-images/blob/master/library/openjdk). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fopenjdk).
 
@@ -80,7 +80,7 @@ View [license information](http://openjdk.java.net/legal/gplv2+ce.html) for the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

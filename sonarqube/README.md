@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `6.1` (*6.1/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/d73a971436d36a56f53145aa3490ad9addfc4ec6/6.1/Dockerfile)
--	[`lts`, `5.6.3` (*5.6.3/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/d73a971436d36a56f53145aa3490ad9addfc4ec6/5.6.3/Dockerfile)
--	[`alpine`, `6.1-alpine` (*6.1-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/d73a971436d36a56f53145aa3490ad9addfc4ec6/6.1-alpine/Dockerfile)
--	[`lts-alpine`, `5.6.3-alpine` (*5.6.3-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/d73a971436d36a56f53145aa3490ad9addfc4ec6/5.6.3-alpine/Dockerfile)
+-	[`latest`, `6.2` (*6.2/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/6.2/Dockerfile)
+-	[`lts`, `5.6.4` (*5.6.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/5.6.4/Dockerfile)
+-	[`alpine`, `6.2-alpine` (*6.2-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/6.2-alpine/Dockerfile)
+-	[`lts-alpine`, `5.6.4-alpine` (*5.6.4-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/5.6.4-alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsonarqube).
 
@@ -80,7 +80,7 @@ View [license information](http://www.gnu.org/licenses/lgpl.txt) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.19.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/5d9a559059b4fb487a8ee6c511f68b43cfe82732/Dockerfile)
--	[`alpine`, `2.19.3-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/7da69e4cbe3d06bf42fc964203a90d6bd211a3e1/Dockerfile)
+-	[`latest`, `2.19.4` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/79e871d7ea9085cabb287dd53705b4432e36cf6f/Dockerfile)
+-	[`alpine`, `2.19.4-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/41839c39bfcc00d8cbfcca607fdbb69cbfc58d5b/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
@@ -191,7 +191,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

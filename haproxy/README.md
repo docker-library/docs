@@ -6,8 +6,8 @@
 -	[`1.5.18-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/667427cf0ac38b7ff7d9fcbd29493b54adf9d53d/1.5/alpine/Dockerfile)
 -	[`1.6.10`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/3f825ac60d7af1739f65897f64241c5577dfc31e/1.6/Dockerfile)
 -	[`1.6.10-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/3f825ac60d7af1739f65897f64241c5577dfc31e/1.6/alpine/Dockerfile)
--	[`1.7.0`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a5840a9a7025365059aac0f7d15149f4553b3f44/1.7/Dockerfile)
--	[`1.7.0-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a5840a9a7025365059aac0f7d15149f4553b3f44/1.7/alpine/Dockerfile)
+-	[`1.7.1`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/84fa05e8980f556b0330d69f5c756633a5a85f8b/1.7/Dockerfile)
+-	[`1.7.1-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/84fa05e8980f556b0330d69f5c756633a5a85f8b/1.7/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaproxy).
 
@@ -47,7 +47,7 @@ $ docker build -t my-haproxy .
 ## Test the configuration file
 
 ```console
-$ docker run -it --rm --name haproxy-syntax-check haproxy:1.5 haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
+$ docker run -it --rm --name haproxy-syntax-check my-haproxy haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
 ```
 
 ## Run the container
@@ -55,6 +55,8 @@ $ docker run -it --rm --name haproxy-syntax-check haproxy:1.5 haproxy -c -f /usr
 ```console
 $ docker run -d --name my-running-haproxy my-haproxy
 ```
+
+You may need to publish the ports your haproxy is listening on to the host by specifying the -p option, for example -p 8080:80 to publish port 8080 from the container host to port 80 in the container. Make sure the port you're using is free.
 
 ## Directly via bind mount
 
@@ -94,7 +96,7 @@ View [license information](http://www.haproxy.org/download/1.5/doc/LICENSE) for 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

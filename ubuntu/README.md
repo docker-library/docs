@@ -1,9 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20161102`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/4c7620da47ebd6e82febf6d01881943c9b219ebb/precise/Dockerfile)
--	[`14.04.5`, `14.04`, `trusty-20161101`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/4c7620da47ebd6e82febf6d01881943c9b219ebb/trusty/Dockerfile)
--	[`16.04`, `xenial-20161114`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/4c7620da47ebd6e82febf6d01881943c9b219ebb/xenial/Dockerfile)
--	[`16.10`, `yakkety-20161104`, `yakkety` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/4c7620da47ebd6e82febf6d01881943c9b219ebb/yakkety/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise-20161209`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/9c78896fe39d5be95cc4a6ae6c0475599a1bc396/precise/Dockerfile)
+-	[`14.04.5`, `14.04`, `trusty-20161214`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/9c78896fe39d5be95cc4a6ae6c0475599a1bc396/trusty/Dockerfile)
+-	[`16.04`, `xenial-20161213`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/9c78896fe39d5be95cc4a6ae6c0475599a1bc396/xenial/Dockerfile)
+-	[`16.10`, `yakkety-20161213`, `yakkety` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/9c78896fe39d5be95cc4a6ae6c0475599a1bc396/yakkety/Dockerfile)
+-	[`17.04`, `zesty-20161212`, `zesty`, `devel` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/9c78896fe39d5be95cc4a6ae6c0475599a1bc396/zesty/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fubuntu).
 
@@ -77,7 +78,7 @@ deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

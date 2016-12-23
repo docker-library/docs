@@ -2,8 +2,8 @@
 
 -	[`1.0`, `1.0.2` (*kapacitor/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dec27fb32f5d9696cd0627f3ac97d353f7557b31/kapacitor/1.0/Dockerfile)
 -	[`1.0-alpine`, `1.0.2-alpine` (*kapacitor/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dec27fb32f5d9696cd0627f3ac97d353f7557b31/kapacitor/1.0/alpine/Dockerfile)
--	[`1.1`, `1.1.0`, `latest` (*kapacitor/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/5bfae0d45f25aa52a2bfd2ebcc7f1af52dad90ae/kapacitor/1.1/Dockerfile)
--	[`1.1-alpine`, `1.1.0-alpine`, `alpine` (*kapacitor/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/5bfae0d45f25aa52a2bfd2ebcc7f1af52dad90ae/kapacitor/1.1/alpine/Dockerfile)
+-	[`1.1`, `1.1.1`, `latest` (*kapacitor/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/9cb739374cf02d3b88ed1cfbaea98638a7a37850/kapacitor/1.1/Dockerfile)
+-	[`1.1-alpine`, `1.1.1-alpine`, `alpine` (*kapacitor/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/9cb739374cf02d3b88ed1cfbaea98638a7a37850/kapacitor/1.1/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kapacitor`)](https://github.com/docker-library/official-images/blob/master/library/kapacitor). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor).
 
@@ -60,7 +60,7 @@ Modify the default configuration, which will now be available under `$PWD`. Then
 ```console
 $ docker run -p 9092:9092 \
       -v $PWD/kapacitor.conf:/etc/kapacitor/kapacitor.conf:ro \
-      kapacitord
+      kapacitor
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.
@@ -164,7 +164,7 @@ View [license information](https://github.com/influxdata/kapacitor/blob/master/L
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

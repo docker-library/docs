@@ -1,5 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
+-	[`1.2.6-rc1` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/e33419371f34db2ebbe9a67271de30620e01e88e/Dockerfile)
 -	[`1.2.5`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/67e6cf4171fcabd2e3b8b809105e7dfb15114ce1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fswarm).
@@ -67,7 +68,7 @@ View [license information](https://github.com/docker/swarm/blob/master/LICENSE.c
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

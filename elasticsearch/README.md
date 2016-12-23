@@ -1,13 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.2`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/1.6/Dockerfile)
--	[`1.7.6`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e7bc23dc00f0ddbaa57cb8c035f08955d9d9e680/1.7/Dockerfile)
--	[`2.0.2`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/2.0/Dockerfile)
--	[`2.1.2`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/2.1/Dockerfile)
--	[`2.2.2`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/2.2/Dockerfile)
--	[`2.3.5`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8347a4697d32878dbacd7086b34f76a9e19113ae/2.3/Dockerfile)
--	[`2.4.2`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/dc045380f272db31d5a9993501bc410f667946cc/2.4/Dockerfile)
--	[`5.0.1`, `5.0`, `5`, `latest` (*5.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/605ca406cbd254f70872af0df8fecf524d126c53/5.0/Dockerfile)
+-	[`5.1.1`, `5.1`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/4e4394f9563a109180289d8eb2ff3bc6c1e2dcb2/5/Dockerfile)
+-	[`5.1.1-alpine`, `5.1-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e0d91f112e9b145a36bcaeff866e25853f5e965c/5/alpine/Dockerfile)
+-	[`2.4.3`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1a539d229073ccde66f94487889d17d939f9689c/2.4/Dockerfile)
+-	[`2.4.3-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1a539d229073ccde66f94487889d17d939f9689c/2.4/alpine/Dockerfile)
+-	[`1.7.6`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/4e4394f9563a109180289d8eb2ff3bc6c1e2dcb2/1.7/Dockerfile)
+-	[`1.7.6-alpine`, `1.7-alpine`, `1-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e0d91f112e9b145a36bcaeff866e25853f5e965c/1.7/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch).
 
@@ -35,6 +33,10 @@ See the following sections of the upstream documentation for more information:
 
 -	[Setup Elasticsearch » Important System Configuration » Virtual memory](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/vm-max-map-count.html)
 -	[Setup Elasticsearch » Bootstrap Checks » Maximum map count check](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/_maximum_map_count_check.html)
+
+This [comment in elastic/elasticsearch#4978](https://github.com/elastic/elasticsearch/issues/4978#issuecomment-258676104) shows why this change was added in upstream. Production mode is when listening on non-localhost.
+
+> Elasticsearch will not start in production mode if `vm.max_map_count` is not high enough. [...] If the value on your system is NOT high enough, then your cluster is going to crash and burn at some stage and you will lose data.
 
 ## Running Containers
 
@@ -64,13 +66,29 @@ $ docker run -d -v "$PWD/esdata":/usr/share/elasticsearch/data elasticsearch
 
 This image includes `EXPOSE 9200 9300` ([default `http.port`](http://www.elastic.co/guide/en/elasticsearch/reference/1.5/modules-http.html)), so standard container linking will make it automatically available to the linked containers.
 
+# Image Variants
+
+The `elasticsearch` images come in many flavors, each designed for a specific use case.
+
+## `elasticsearch:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `elasticsearch:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # License
 
 View [license information](https://github.com/elasticsearch/elasticsearch/blob/66b5ed86f7adede8102cd4d979b9f4924e5bd837/LICENSE.txt) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,12 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/1.5/Dockerfile)
--	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.0/Dockerfile)
--	[`2.1.3-1`, `2.1.3`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.1/Dockerfile)
--	[`2.2.4-1`, `2.2.4`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.2/Dockerfile)
--	[`2.3.4-1`, `2.3.4`, `2.3` (*2.3/Dockerfile*)](https://github.com/docker-library/logstash/blob/09b1537c0a0c912c87639b816da61323752cabd8/2.3/Dockerfile)
--	[`2.4.1-1`, `2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/60506b52e56e262851b01df1875ee9f24b81c4c1/2.4/Dockerfile)
--	[`5.0.1-1`, `5.0.1`, `5.0`, `5`, `latest` (*5.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/61c818c07bcecf7733dc821a4e4f4770f7e136ce/5.0/Dockerfile)
+-	[`5.1.1`, `5.1`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/aa556fc3ae9d6cadc26390d8c57bc94710122b7d/5/Dockerfile)
+-	[`5.1.1-alpine`, `5.1-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/aa556fc3ae9d6cadc26390d8c57bc94710122b7d/5/alpine/Dockerfile)
+-	[`2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.4/Dockerfile)
+-	[`2.4.1-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.4/alpine/Dockerfile)
+-	[`1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/1.5/Dockerfile)
+-	[`1.5.6-alpine`, `1.5-alpine`, `1-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/1.5/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash).
 
@@ -53,8 +52,44 @@ CMD ["-f", "/some/config-dir/logstash.conf"]
 Then, build with `docker build -t my-logstash .` and deploy with something like the following:
 
 ```console
-$ docker run -it --rm my-logstash
+$ docker run -d my-logstash
 ```
+
+## Installing plugins
+
+If you need to add any logstash plugins that do not ship with Logstash by default, the simplest solution is a Dockerfile using `logstash-plugin` included with Logsatsh. You can also pack in your customized config file.
+
+```dockerfile
+FROM logstash:5
+
+RUN logstash-plugin install logstash-filter-de_dot
+
+COPY logstash.conf /some/config-dir/
+
+CMD ["-f", "/some/config-dir/logstash.conf"]
+```
+
+Then, build with `docker build -t my-logstash .` and deploy just like the previous example:
+
+```console
+$ docker run -d my-logstash
+```
+
+# Image Variants
+
+The `logstash` images come in many flavors, each designed for a specific use case.
+
+## `logstash:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `logstash:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
@@ -62,7 +97,7 @@ View [license information](https://github.com/elastic/logstash/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`develop` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/9f3828141fbd3c6584cac8d89afb5ebb9bcea603/1.8/Dockerfile)
--	[`1.8`, `1.8.0`, `1.8.0rc4` (*1.8rc4/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/9f3828141fbd3c6584cac8d89afb5ebb9bcea603/1.8rc4/Dockerfile)
--	[`1.6`, `1.6.21`, `stable`, `latest` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/87d717b0c05d4c43460a411c9871e9190c94f8bb/1.6/Dockerfile)
+-	[`develop` (*develop/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/b40c105f85fc9db680c9d12a547502e62c66bb3b/develop/Dockerfile)
+-	[`1.8`, `1.8.0`, `stable`, `latest` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/98f9d9a8c56b7b88b249135ab6b87019efa82337/1.8/Dockerfile)
+-	[`1.6`, `1.6.21` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/87d717b0c05d4c43460a411c9871e9190c94f8bb/1.6/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/eggdrop`)](https://github.com/docker-library/official-images/blob/master/library/eggdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feggdrop).
 
@@ -36,7 +36,15 @@ After running the eggdrop container for the first time, the configuration file, 
 $ docker run -i -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop
 ```
 
-Please note that, even in daemon mode, the -i flag for docker run is required.
+Please note that, even in daemon mode, the `-i` flag for `docker run` is required.
+
+## Adding scripts
+
+An easy way to add scripts would be to create a scripts directory on the host and mount it to `/home/eggdrop/eggdrop/data`. This would be accomplished by adding an option similar to
+
+	-v /path/to/host/scripts:/home/eggdrop/eggdrop/scripts
+
+to your docker run command line (and of course, don't forget to edit your configuration file to actually load it!)
 
 ## Exposing network ports
 
@@ -58,7 +66,7 @@ View [license information](https://www.gnu.org/licenses/gpl-3.0.en.html) for the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

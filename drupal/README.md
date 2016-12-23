@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.3-apache`, `8.2-apache`, `8-apache`, `apache`, `8.2.3`, `8.2`, `8`, `latest` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/1c6f01397baf322b81a6cade18685aa57aa5c1f0/8.2/apache/Dockerfile)
--	[`8.2.3-fpm`, `8.2-fpm`, `8-fpm`, `fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/1c6f01397baf322b81a6cade18685aa57aa5c1f0/8.2/fpm/Dockerfile)
--	[`7.52-apache`, `7-apache`, `7.52`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/efb88fb830fe538727d71bbe309dc869778ba45c/7/apache/Dockerfile)
--	[`7.52-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/efb88fb830fe538727d71bbe309dc869778ba45c/7/fpm/Dockerfile)
+-	[`8.2.4-apache`, `8.2-apache`, `8-apache`, `apache`, `8.2.4`, `8.2`, `8`, `latest` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/aa623002a920a130a638b4b30d664aa59a662d2d/8.2/apache/Dockerfile)
+-	[`8.2.4-fpm`, `8.2-fpm`, `8-fpm`, `fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/aa623002a920a130a638b4b30d664aa59a662d2d/8.2/fpm/Dockerfile)
+-	[`7.53-apache`, `7-apache`, `7.53`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/5dd56ed77e995f2cad08b6206d9e335c3a150168/7/apache/Dockerfile)
+-	[`7.53-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/5dd56ed77e995f2cad08b6206d9e335c3a150168/7/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdrupal).
 
@@ -74,7 +74,7 @@ View [license information](https://www.drupal.org/licensing/faq) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

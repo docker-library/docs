@@ -24,6 +24,9 @@
 -	[`yakkety-curl` (*yakkety/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a94a81caf4d56853baade2cdd794dbe0c93396b2/yakkety/curl/Dockerfile)
 -	[`yakkety-scm` (*yakkety/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a94a81caf4d56853baade2cdd794dbe0c93396b2/yakkety/scm/Dockerfile)
 -	[`yakkety` (*yakkety/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a94a81caf4d56853baade2cdd794dbe0c93396b2/yakkety/Dockerfile)
+-	[`zesty-curl` (*zesty/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9aa327dcc582d5384affbc5a19672e3077489e97/zesty/curl/Dockerfile)
+-	[`zesty-scm` (*zesty/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9aa327dcc582d5384affbc5a19672e3077489e97/zesty/scm/Dockerfile)
+-	[`zesty` (*zesty/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9aa327dcc582d5384affbc5a19672e3077489e97/zesty/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/buildpack-deps`)](https://github.com/docker-library/official-images/blob/master/library/buildpack-deps). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbuildpack-deps).
 
@@ -59,7 +62,7 @@ View [license information](https://www.debian.org/social_contract#guidelines) fo
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
