@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2016.09.0.20161118`, `2016.09`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/11dffca07aebe78c254fac1e4e38b4d04bafb85c/Dockerfile)
--	[`2016.09.0.20161118-with-sources`, `2016.09-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/a9962fe03d732b19f744aeba9b19fe3783b248a0/Dockerfile)
+-	[`2016.09.1.20161221`, `2016.09`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/e1b56e68ebd2b274c64e0a0a18ae0a9a8122822d/Dockerfile)
+-	[`2016.09.1.20161221-with-sources`, `2016.09-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/2de60e8c98421694c293639659a88ed81ce29298/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/amazonlinux`)](https://github.com/docker-library/official-images/blob/master/library/amazonlinux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Famazonlinux).
 

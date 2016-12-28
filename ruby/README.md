@@ -12,10 +12,10 @@
 -	[`2.3.3-slim`, `2.3-slim`, `2-slim`, `slim` (*2.3/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/c9208def0c430de0144408e16140bd49254c4ca9/2.3/slim/Dockerfile)
 -	[`2.3.3-alpine`, `2.3-alpine`, `2-alpine`, `alpine` (*2.3/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/c9208def0c430de0144408e16140bd49254c4ca9/2.3/alpine/Dockerfile)
 -	[`2.3.3-onbuild`, `2.3-onbuild`, `2-onbuild`, `onbuild` (*2.3/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/1b08f346713a1293c2a9238e470e086126e2e28f/2.3/onbuild/Dockerfile)
--	[`2.4.0-preview3`, `2.4-rc` (*2.4-rc/Dockerfile*)](https://github.com/docker-library/ruby/blob/c9208def0c430de0144408e16140bd49254c4ca9/2.4-rc/Dockerfile)
--	[`2.4.0-preview3-slim`, `2.4-rc-slim` (*2.4-rc/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/c9208def0c430de0144408e16140bd49254c4ca9/2.4-rc/slim/Dockerfile)
--	[`2.4.0-preview3-alpine`, `2.4-rc-alpine` (*2.4-rc/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/c9208def0c430de0144408e16140bd49254c4ca9/2.4-rc/alpine/Dockerfile)
--	[`2.4.0-preview3-onbuild`, `2.4-rc-onbuild` (*2.4-rc/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/c9208def0c430de0144408e16140bd49254c4ca9/2.4-rc/onbuild/Dockerfile)
+-	[`2.4.0-rc1`, `2.4-rc` (*2.4-rc/Dockerfile*)](https://github.com/docker-library/ruby/blob/6103b0a0779fdbc9906ee6d14b118a807114d32d/2.4-rc/Dockerfile)
+-	[`2.4.0-rc1-slim`, `2.4-rc-slim` (*2.4-rc/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/6103b0a0779fdbc9906ee6d14b118a807114d32d/2.4-rc/slim/Dockerfile)
+-	[`2.4.0-rc1-alpine`, `2.4-rc-alpine` (*2.4-rc/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/6103b0a0779fdbc9906ee6d14b118a807114d32d/2.4-rc/alpine/Dockerfile)
+-	[`2.4.0-rc1-onbuild`, `2.4-rc-onbuild` (*2.4-rc/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/c9208def0c430de0144408e16140bd49254c4ca9/2.4-rc/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fruby).
 
