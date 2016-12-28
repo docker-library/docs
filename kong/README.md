@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9`, `0.9.6`, `latest` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/e2122a810d54e661d2e451b3c417ed826f0e06ac/Dockerfile)
+-	[`0.9`, `0.9.7`, `latest` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/7082b428648da59748c9c5cf9517e20bba75732d/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kong`)](https://github.com/docker-library/official-images/blob/master/library/kong). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkong).
 
