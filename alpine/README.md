@@ -3,8 +3,8 @@
 -	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/6a7732123b1e22c836e7ff538828ecf9eb0ebbb3/versions/library-3.1/Dockerfile)
 -	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/39157ab3587065a0e0928663dea293ae43110cd9/versions/library-3.2/Dockerfile)
 -	[`3.3` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/62168e0f780d64f2124a7be94ed31991a31ae5ad/versions/library-3.3/Dockerfile)
--	[`3.4`, `latest` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/71c9ce882016759bcc0d47f372d20a1b6ec93cd5/versions/library-3.4/Dockerfile)
--	[`3.5` (*versions/library-3.5/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c584d0198d5dea1c5d942e1e1a7b2504ecdb4d30/versions/library-3.5/Dockerfile)
+-	[`3.4` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/71c9ce882016759bcc0d47f372d20a1b6ec93cd5/versions/library-3.4/Dockerfile)
+-	[`3.5`, `latest` (*versions/library-3.5/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c584d0198d5dea1c5d942e1e1a7b2504ecdb4d30/versions/library-3.5/Dockerfile)
 -	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/b14ddc0a4f7aed069027aa7943609a4e8e3001fc/versions/library-edge/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/alpine`)](https://github.com/docker-library/official-images/blob/master/library/alpine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Falpine).
