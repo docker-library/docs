@@ -39,9 +39,9 @@ In [Docker Hub](https://hub.docker.com/), no Docker images of Microsoft SQLServe
 	    -v postgresql-data:/var/lib/postgresql/data \
 	    postgres:9.6
 
-We recommended strongly to mount the directory with the database file on the host so the data won't be lost when upgrading PostgreSQL to a newer version (a Data Volume Container can be used instead). For any information how to start a PostgreSQL container, you can refer its [documentation]((https://hub.docker.com/_/postgres/).
+We recommend strongly to mount the directory with the database file on the host so the data won't be lost when upgrading PostgreSQL to a newer version (a Data Volume Container can be used instead). For any information how to start a PostgreSQL container, you can refer its [documentation]((https://hub.docker.com/_/postgres/).
 
-Once the database system is running, a database for Silverpeas has to be created and a user with administrative rights on this database should be added; it is recommended to create a dedicated user account in the database for each application. For this document, and by default, a database `Silverpeas` and a user `silverpeas` for that database are created for Silverpeas.
+Once the database system is running, a database for Silverpeas has to be created and a user with administrative rights on this database should be added; it is recommended to create a dedicated user account in the database for each application and therefore for Silverpeas. In this document, and by default, a database `Silverpeas` and a user `silverpeas` for that database are created.
 
 ### Start a Silverpeas instance with the default configuration
 
@@ -100,18 +100,17 @@ For a PostgreSQL database system, some configurations are required in order to b
 
 # Using a Data Volume Container
 
-The data produced by Silverpeas mean to be persistent, available for the next versions of Silverpeas, and they have to be accessible to other containers like the one running LibreOffice. For doing, the Docker team recommends to use a Data Volume Container.
+The data produced by Silverpeas mean to be persistent, available to the next versions of Silverpeas, and they have to be accessible to other containers like the one running LibreOffice. For doing, the Docker team recommends to use a Data Volume Container.
 
 In Silverpeas, there are four types of data produced by the application:
 
 -	the logging stored in `/opt/silverpeas/log`,
 -	the user data and those produced by Silverpeas from the user data in `/opt/silverpeas/data`,
--	the user domains and the domain authentication definitions created in the backoffice in respectively `/opt/silverpeas/properties/org/silverpeas/domains` and `/opt/silverpeas/properties/org/silverpeas/authentication`,
 -	the workflows created by the workflow editor in `/opt/silverpeas/xmlcomponents/workflows`.
 
 Beside these directories, according to your specific needs, custom configuration scripts can be added in the directories `/opt/silverpeas/configuration/jboss` and `/opt/silverpeas/configuration/silverpeas`.
 
-The directories `/opt/silverpeas/log`, `/opt/silverpeas/data`, `/opt/silverpeas/properties`, `/opt/silverpeas/xmlcomponents/workflows`, and `/opt/silverpeas/configuration` are all defined as volumes in the Docker image.
+The directories `/opt/silverpeas/log`, `/opt/silverpeas/data`, and `/opt/silverpeas/xmlcomponents/workflows` are all defined as volumes in the Docker image.
 
 All these different kind of data have to be consistent for a given state of Silverpeas; they form a coherent whole. Then, defining a Data Volume Container to gather all of these volumes is a better solution over multiple shared-storage volume definitions. You can, with a such Data Volume Container, backup, restore or migrate more easily the full set of the data of Silverpeas.
 
@@ -120,7 +119,7 @@ To define a Data Volume Container for Silverpeas, for example:
 	$ docker create --name silverpeas-store \
 	    -v silverpeas-data:/opt/silverpeas/data \
 	    -v silverpeas-log:/opt/silverpeas/log \
-	    -v silverpeas-properties:/opt/silverpeas/properties \
+	    -v silverpeas-workflows:/opt/silverpeas/xmlcomponents/workflows \
 	    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/properties \
 	    silverpeas \
 	    /bin/true
@@ -132,7 +131,7 @@ Then to mount the volumes in the Silverpeas container:
 	    --volumes-from silverpeas-store \
 	    silverpeas
 
-If you have to customize the settings of Silverpeas or add, for example, a new database definition, then specify these settings with the Data Volume Container:
+If you have to customize the settings of Silverpeas or add, for example, a new database definition, then specify these settings with the Data Volume Container, so that they will be available to the next versions of Silverpeas which will be then configured correctly like your previous Silverpeas installation:
 
 	$ docker create --name silverpeas-store \
 	    -v silverpeas-data:/opt/silverpeas/data \
