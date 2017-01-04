@@ -5,9 +5,9 @@
 -	[`9.1-jdk`, `9.1.6-jdk`, `9.1.6.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/jdk/Dockerfile)
 -	[`9.1-jdk-alpine`, `9.1.6-jdk-alpine`, `9.1.6.0-jdk-alpine` (*9000/alpine-jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/alpine-jdk/Dockerfile)
 -	[`9-onbuild`, `9.1-onbuild`, `9.1.6-onbuild`, `9.1.6.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/onbuild/Dockerfile)
--	[`1.7`, `1.7.25`, `1.7-jre`, `1.7.25-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/ad0479fa0d278f5eb311e01417c079a97305eeb3/1.7/jre/Dockerfile)
--	[`1.7-jdk`, `1.7.25-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/ad0479fa0d278f5eb311e01417c079a97305eeb3/1.7/jdk/Dockerfile)
--	[`1.7-onbuild`, `1.7.25-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/ad0479fa0d278f5eb311e01417c079a97305eeb3/1.7/onbuild/Dockerfile)
+-	[`1.7`, `1.7.25`, `1.7-jre`, `1.7.25-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/1.7/jre/Dockerfile)
+-	[`1.7-jdk`, `1.7.25-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/1.7/jdk/Dockerfile)
+-	[`1.7-onbuild`, `1.7.25-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/1.7/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjruby).
 
