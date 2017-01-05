@@ -18,20 +18,22 @@ The Kaazing Gateway is a network gateway created to provide a single access poin
 
 By default the gateway runs a WebSocket echo service similar to [websocket.org](https://www.websocket.org/echo.html).
 
+You must give your gateway container a hostname. To do this, use the *docker run* -e option to define an environment variable, GATEWAY_OPTS, along with the -h option (your hostname may vary):
+
 ```console
-$ docker run --name some-kaazing-gateway -h somehostname -d -p 8000:8000 kaazing-gateway
+$ docker run --name some-kaazing-gateway -e GATEWAY_OPTS="-Dgateway.hostname=somehostname" -h somehostname -d -p 8000:8000 kaazing-gateway
 ```
 
 You should then be able to connect to ws://somehostname:8000 from the [WebSocket echo test](https://www.websocket.org/echo.html).
 
-Note: this assumes that `somehostname` is resolvable from your browser, you may need to add an etc/hosts entry for `somehostname` on your `dockerhost ip`.
+Note: this assumes that `somehostname` is resolvable from your browser. You may need to add an etc/hosts entry for `somehostname` on your `dockerhost ip`.
 
 ## Custom Configuration
 
 To launch a container with a specific configuration you can do the following:
 
 ```console
-$ docker run --name some-kaazing-gateway -v /some/gateway-config.xml:/kaazing-gateway/conf/gateway-config.xml:ro -d kaazing-gateway
+$ docker run --name some-kaazing-gateway -e GATEWAY_OPTS="-Dgateway.hostname=somehostname" -h somehostname -v /some/gateway-config.xml:/kaazing-gateway/conf/gateway-config.xml:ro -d kaazing-gateway
 ```
 
 For information on the syntax of the Kaazing Gateway configuration files, see [the official documentation](http://developer.kaazing.com/documentation/5.0/index.html) (specifically the [Configuration Guide](http://developer.kaazing.com/documentation/5.0/admin-reference/r_conf_elementindex.html)).
@@ -55,6 +57,9 @@ Then, build with `docker build -t some-custom-kaazing-gateway .` and run:
 $ docker run --name some-kaazing-gateway -d some-custom-kaazing-gateway
 ```
 
+## GATEWAY_OPTS
+
+For more information on the GATEWAY_OPTS environment variable, see [Configure Kaazing Gateway Using the GATEWAY_OPTS Environment Variable](https://kaazing.com/doc/5.0/admin-reference/p_configure_gateway_opts/).
 # License
 
 View [license information](https://github.com/kaazing/gateway/blob/master/LICENSE.txt) for the software contained in this image.
