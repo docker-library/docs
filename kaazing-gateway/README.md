@@ -28,7 +28,7 @@ Note: the additional GATEWAY_OPTS options, *-Xmx512m -Djava.security.egd=file:/d
 
 You should then be able to connect to ws://somehostname:8000 from the [WebSocket echo test](https://www.websocket.org/echo.html).
 
-Note: this assumes that `somehostname` is resolvable from your browser. You may need to add an etc/hosts entry for `somehostname` on your `dockerhost ip`.
+Note: all of the above assumes that `somehostname` is resolvable from your browser. You may need to add an etc/hosts entry for `somehostname` on your `dockerhost ip`.
 
 ## Custom Configuration
 
