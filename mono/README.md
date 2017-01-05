@@ -28,8 +28,10 @@
 -	[`4.6.1.3-onbuild` (*4.6.1.3/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/f0f1e0b9f693bd7c58d9623d402c8dc69234bbe1/4.6.1.3/onbuild/Dockerfile)
 -	[`4.6.1.5`, `4.6.1` (*4.6.1.5/Dockerfile*)](https://github.com/mono/docker/blob/8e5f8d9d00f596b838bf8d7d307ddb47f008a691/4.6.1.5/Dockerfile)
 -	[`4.6.1.5-onbuild`, `4.6.1-onbuild` (*4.6.1.5/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/8e5f8d9d00f596b838bf8d7d307ddb47f008a691/4.6.1.5/onbuild/Dockerfile)
--	[`4.6.2.7`, `4.6.2`, `4.6`, `4`, `latest` (*4.6.2.7/Dockerfile*)](https://github.com/mono/docker/blob/a41b568af8e26dac60a11432b5bb1c910d44f44a/4.6.2.7/Dockerfile)
--	[`4.6.2.7-onbuild`, `4.6.2-onbuild`, `4.6-onbuild`, `4-onbuild`, `onbuild` (*4.6.2.7/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/a41b568af8e26dac60a11432b5bb1c910d44f44a/4.6.2.7/onbuild/Dockerfile)
+-	[`4.6.2.16`, `4.6.2`, `4.6`, `4`, `latest` (*4.6.2.16/Dockerfile*)](https://github.com/mono/docker/blob/1db7e68061e2aaf81ed5ac413c217a7fd12c0228/4.6.2.16/Dockerfile)
+-	[`4.6.2.16-onbuild`, `4.6.2-onbuild`, `4.6-onbuild`, `4-onbuild`, `onbuild` (*4.6.2.16/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/e1b6667f66443a0b768d9681c68bbb1e2f898601/4.6.2.16/onbuild/Dockerfile)
+-	[`4.6.2.7` (*4.6.2.7/Dockerfile*)](https://github.com/mono/docker/blob/f370f5daa6344f6006f40e9cb638aef38faa67a0/4.6.2.7/Dockerfile)
+-	[`4.6.2.7-onbuild` (*4.6.2.7/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/a41b568af8e26dac60a11432b5bb1c910d44f44a/4.6.2.7/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono).
 
