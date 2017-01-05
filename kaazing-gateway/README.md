@@ -62,6 +62,7 @@ $ docker run --name some-kaazing-gateway -d some-custom-kaazing-gateway
 ## GATEWAY_OPTS
 
 For more information on the GATEWAY_OPTS environment variable, see [Configure Kaazing Gateway Using the GATEWAY_OPTS Environment Variable](https://kaazing.com/doc/5.0/admin-reference/p_configure_gateway_opts/).
+
 # License
 
 View [license information](https://github.com/kaazing/gateway/blob/master/LICENSE.txt) for the software contained in this image.
