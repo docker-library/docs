@@ -18,11 +18,13 @@ The Kaazing Gateway is a network gateway created to provide a single access poin
 
 By default the gateway runs a WebSocket echo service similar to [websocket.org](https://www.websocket.org/echo.html).
 
-You must give your gateway container a hostname. To do this, use the *docker run* -e option to define an environment variable, GATEWAY_OPTS, along with the -h option (your hostname may vary):
+You must give your gateway container a hostname. To do this, use the *docker run -h somehostname* option, along with the -e option to define an environment variable, GATEWAY_OPTS, to pass this hostname to the gateway configuration  (your hostname may vary):
 
 ```console
-$ docker run --name some-kaazing-gateway -e GATEWAY_OPTS="-Dgateway.hostname=somehostname" -h somehostname -d -p 8000:8000 kaazing-gateway
+$ docker run --name some-kaazing-gateway -h somehostname -e GATEWAY_OPTS="-Dgateway.hostname=somehostname -Xmx512m  -Djava.security.egd=file:/dev/urandom"-d -p 8000:8000 kaazing-gateway
 ```
+
+Note: the additional GATEWAY_OPTS options, *-Xmx512m -Djava.security.egd=file:/dev/urandom*, are from the original Dockerfile for the gateway. The *-Xmx512m* value specifies a minimum Java heap size of 512 MB, and *-Djava.security.egd=file:/dev/urandom* is to facilitate faster startup on VMs. See the `Dockerfile` link referenced above for details.
 
 You should then be able to connect to ws://somehostname:8000 from the [WebSocket echo test](https://www.websocket.org/echo.html).
 
@@ -33,7 +35,7 @@ Note: this assumes that `somehostname` is resolvable from your browser. You may 
 To launch a container with a specific configuration you can do the following:
 
 ```console
-$ docker run --name some-kaazing-gateway -e GATEWAY_OPTS="-Dgateway.hostname=somehostname" -h somehostname -v /some/gateway-config.xml:/kaazing-gateway/conf/gateway-config.xml:ro -d kaazing-gateway
+$ docker run --name some-kaazing-gateway -h somehostname -e GATEWAY_OPTS="-Dgateway.hostname=somehostname -Xmx512m -Djava.security.egd=file:/dev/urandom" -v /some/gateway-config.xml:/kaazing-gateway/conf/gateway-config.xml:ro -d kaazing-gateway
 ```
 
 For information on the syntax of the Kaazing Gateway configuration files, see [the official documentation](http://developer.kaazing.com/documentation/5.0/index.html) (specifically the [Configuration Guide](http://developer.kaazing.com/documentation/5.0/admin-reference/r_conf_elementindex.html)).
