@@ -6,6 +6,9 @@
 -	[`4.7.0-php7.0-apache`, `4.7-php7.0-apache`, `4-php7.0-apache`, `php7.0-apache`, `4.7.0-php7.0`, `4.7-php7.0`, `4-php7.0`, `php7.0` (*php7.0/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/637afb53dc03b4af19149a0880e796346f97c137/php7.0/apache/Dockerfile)
 -	[`4.7.0-php7.0-fpm`, `4.7-php7.0-fpm`, `4-php7.0-fpm`, `php7.0-fpm` (*php7.0/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/637afb53dc03b4af19149a0880e796346f97c137/php7.0/fpm/Dockerfile)
 -	[`4.7.0-php7.0-fpm-alpine`, `4.7-php7.0-fpm-alpine`, `4-php7.0-fpm-alpine`, `php7.0-fpm-alpine` (*php7.0/fpm-alpine/Dockerfile*)](https://github.com/docker-library/wordpress/blob/637afb53dc03b4af19149a0880e796346f97c137/php7.0/fpm-alpine/Dockerfile)
+-	[`4.7.0-php7.1-apache`, `4.7-php7.1-apache`, `4-php7.1-apache`, `php7.1-apache`, `4.7.0-php7.1`, `4.7-php7.1`, `4-php7.1`, `php7.1` (*php7.1/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f56ccb5de179757eeb043ef5fedea6c3cf4e3bf2/php7.1/apache/Dockerfile)
+-	[`4.7.0-php7.1-fpm`, `4.7-php7.1-fpm`, `4-php7.1-fpm`, `php7.1-fpm` (*php7.1/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f56ccb5de179757eeb043ef5fedea6c3cf4e3bf2/php7.1/fpm/Dockerfile)
+-	[`4.7.0-php7.1-fpm-alpine`, `4.7-php7.1-fpm-alpine`, `4-php7.1-fpm-alpine`, `php7.1-fpm-alpine` (*php7.1/fpm-alpine/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f56ccb5de179757eeb043ef5fedea6c3cf4e3bf2/php7.1/fpm-alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress).
 
