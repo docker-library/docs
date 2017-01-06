@@ -1,7 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.8`, `latest` (*docker/1.4.8/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/5487395fb67ad2e2b6dac1ff67bd0ac289383f09/docker/1.4.8/Dockerfile)
--	[`1.4.4` (*docker/1.4.4/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/5487395fb67ad2e2b6dac1ff67bd0ac289383f09/docker/1.4.4/Dockerfile)
+-	[`1.4.10`, `latest` (*docker/1.4.10/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/53616be0e296f6186f52c791e241c76d53380078/docker/1.4.10/Dockerfile)
+-	[`1.4.8` (*docker/1.4.8/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/25a1f7d1994fd4b8d1d25ab0275f7a8f071abfb1/docker/1.4.8/Dockerfile)
+-	[`1.4.4` (*docker/1.4.4/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/25a1f7d1994fd4b8d1d25ab0275f7a8f071abfb1/docker/1.4.4/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/eclipse-mosquitto`)](https://github.com/docker-library/official-images/blob/master/library/eclipse-mosquitto). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feclipse-mosquitto).
 
@@ -25,9 +26,9 @@ Three directories have been created in the image to be used for configuration, p
 
 ## Configuration
 
-When running the image, the default configuration values are used. To use a custom configuration file, mount a **local** configuration file to `/mosquitto/conf/mosquitto.conf`
+When running the image, the default configuration values are used. To use a custom configuration file, mount a **local** configuration file to `/mosquitto/config/mosquitto.conf`
 
-	docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/data/mosquitto.conf eclipse-mosquitto
+	docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
 
 Configuration can be changed to:
 
@@ -46,7 +47,7 @@ i.e. add the following to `mosquitto.conf`:
 
 Run a container using the new image:
 
-	docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/data/mosquitto.conf -v /mosquitto/data -v /mosquitto/log eclipse-mosquitto
+	docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf -v /mosquitto/data -v /mosquitto/log eclipse-mosquitto
 
 **Note**: if the mosquitto configuration (mosquitto.conf) was modified to use non-default ports, the docker run command will need to be updated to expose the ports that have been configured.
 
