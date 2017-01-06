@@ -10,13 +10,13 @@ The Kaazing Gateway is a network gateway created to provide a single access poin
 
 By default the gateway runs a WebSocket echo service similar to [websocket.org](https://www.websocket.org/echo.html).
 
-You must give your gateway container a hostname. To do this, use the *docker run -h somehostname* option, along with the -e option to define an environment variable, GATEWAY_OPTS, to pass this hostname to the gateway configuration  (your hostname may vary):
+You must give your gateway container a hostname. To do this, use the `docker run -h somehostname` option, along with the -e option to define an environment variable, GATEWAY_OPTS, to pass this hostname to the gateway configuration (your hostname may vary):
 
 ```console
-$ docker run --name some-kaazing-gateway -h somehostname -e GATEWAY_OPTS="-Dgateway.hostname=somehostname -Xmx512m  -Djava.security.egd=file:/dev/urandom"-d -p 8000:8000 kaazing-gateway
+$ docker run --name some-kaazing-gateway -h somehostname -e GATEWAY_OPTS="-Dgateway.hostname=somehostname -Xmx512m -Djava.security.egd=file:/dev/urandom"-d -p 8000:8000 kaazing-gateway
 ```
 
-Note: the additional GATEWAY_OPTS options, *-Xmx512m -Djava.security.egd=file:/dev/urandom*, are added in order to preserve these values from the original Dockerfile for the gateway. The *-Xmx512m* value specifies a minimum Java heap size of 512 MB, and *-Djava.security.egd=file:/dev/urandom* is to facilitate faster startup on VMs. See the `Dockerfile` link referenced above for details.
+Note: the additional GATEWAY_OPTS options, `-Xmx512m -Djava.security.egd=file:/dev/urandom`, are added in order to preserve these values from the original Dockerfile for the gateway. The `-Xmx512m` value specifies a minimum Java heap size of 512 MB, and `-Djava.security.egd=file:/dev/urandom` is to facilitate faster startup on VMs. See the `Dockerfile` link referenced above for details.
 
 You should then be able to connect to ws://somehostname:8000 from the [WebSocket echo test](https://www.websocket.org/echo.html).
 
