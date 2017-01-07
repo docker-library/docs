@@ -57,6 +57,39 @@ $ docker run --name some-drupal --link some-postgres:postgres -d drupal
 -	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://registry.hub.docker.com/_/postgres/))
 -	ADVANCED OPTIONS; Database host: `postgres` (for using the `/etc/hosts` entry added by `--link` to access the linked container's PostgreSQL instance)
 
+## ... via [`docker-compose`](https://github.com/docker/compose)
+
+Example `docker-compose.yml` for `drupal`:
+
+```yaml
+# Drupal with PostgreSQL
+#
+# Access via "http://localhost:8080" (or "http://$(docker-machine ip):8080" if using docker-machine)
+#
+# During initial Drupal setup,
+# Database type: PostgreSQL
+# Database name: postgres
+# Database username: postgres
+# Database password: example
+# ADVANCED OPTIONS; Database host: postgres
+
+version: '2'
+
+services:
+
+  drupal:
+    image: drupal:8.2-apache
+    ports:
+      - 8080:80
+    restart: always
+
+  postgres:
+    image: postgres:9.6
+    environment:
+      POSTGRES_PASSWORD: example
+    restart: always
+```
+
 ## Adding additional libraries / extensions
 
 This image does not provide any additional PHP extensions or other libraries, even if they are required by popular plugins. There are an infinite number of possible plugins, and they potentially require any extension PHP supports. Including every PHP extension that exists would dramatically increase the image size.
