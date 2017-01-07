@@ -10,8 +10,8 @@ The goal of the Swift project is to create the best available language for uses 
 
 **Expressive**. Swift benefits from decades of advancement in computer science to offer syntax that is a joy to use, with modern features developers expect. But Swift is never done. We will monitor language advancements and embrace what works, continually evolving to make Swift even better.
 
-> [wikipedia.org/wiki/Swift_(programming_language)](https://en.wikipedia.org/wiki/Swift_(programming_language))
-> [swift.org](https://swift.org/about/)
+> [wikipedia.org/wiki/Swift_(programming_language)](https://en.wikipedia.org/wiki/Swift_(programming_language))   
+> [swift.org](https://swift.org/about/)   
 > [Swift on Github](https://github.com/apple/swift)
 
 %%LOGO%%
