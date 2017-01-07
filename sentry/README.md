@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.8.0`, `8.8` (*8.8/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/90e5f20bf418a42986c9716d07a4de980a4dfc07/8.8/Dockerfile)
--	[`8.8.0-onbuild`, `8.8-onbuild` (*8.8/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/90e5f20bf418a42986c9716d07a4de980a4dfc07/8.8/onbuild/Dockerfile)
--	[`8.9.0`, `8.9`, `8`, `latest` (*8.9/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/06d750bddc0e6499446e73ca22fbd4c915b29cbd/8.9/Dockerfile)
--	[`8.9.0-onbuild`, `8.9-onbuild`, `8-onbuild`, `onbuild` (*8.9/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/06d750bddc0e6499446e73ca22fbd4c915b29cbd/8.9/onbuild/Dockerfile)
+-	[`8.11.0`, `8.11` (*8.11/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/60d4b0e5ad293ceabfd0d00ec4bc08c5d353ca2c/8.11/Dockerfile)
+-	[`8.11.0-onbuild`, `8.11-onbuild` (*8.11/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/60d4b0e5ad293ceabfd0d00ec4bc08c5d353ca2c/8.11/onbuild/Dockerfile)
+-	[`8.12.0`, `8.12`, `8`, `latest` (*8.12/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c47576b88672708eeb2a6e2b66cea9dcbfe8c945/8.12/Dockerfile)
+-	[`8.12.0-onbuild`, `8.12-onbuild`, `8-onbuild`, `onbuild` (*8.12/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c47576b88672708eeb2a6e2b66cea9dcbfe8c945/8.12/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
@@ -142,7 +142,7 @@ View [license information](https://github.com/getsentry/sentry/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,11 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.4.27`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.4/Dockerfile)
--	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/667427cf0ac38b7ff7d9fcbd29493b54adf9d53d/1.4/alpine/Dockerfile)
--	[`1.5.18`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/e128fc85947f0de7213185c9f948150e39cbc766/1.5/Dockerfile)
--	[`1.5.18-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/667427cf0ac38b7ff7d9fcbd29493b54adf9d53d/1.5/alpine/Dockerfile)
--	[`1.6.9`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/24fd0637e58d931e99ae6717b3e13bb389985fa1/1.6/Dockerfile)
--	[`1.6.9-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/24fd0637e58d931e99ae6717b3e13bb389985fa1/1.6/alpine/Dockerfile)
+-	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dbf5702c136a1de7046a935b1d79516d6f82c861/1.4/alpine/Dockerfile)
+-	[`1.5.19`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/67667912113013d9dfd14b503c14e120ceab9899/1.5/Dockerfile)
+-	[`1.5.19-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dbf5702c136a1de7046a935b1d79516d6f82c861/1.5/alpine/Dockerfile)
+-	[`1.6.11`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/12dae72c28e152ac9dcd499f156cb0ab79d7c23f/1.6/Dockerfile)
+-	[`1.6.11-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dbf5702c136a1de7046a935b1d79516d6f82c861/1.6/alpine/Dockerfile)
+-	[`1.7.1`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/84fa05e8980f556b0330d69f5c756633a5a85f8b/1.7/Dockerfile)
+-	[`1.7.1-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dbf5702c136a1de7046a935b1d79516d6f82c861/1.7/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaproxy).
 
@@ -25,14 +27,14 @@ Since no two users of HAProxy are likely to configure it exactly alike, this ima
 
 Please refer to [upstream's excellent (and comprehensive) documentation](https://cbonte.github.io/haproxy-dconv/) on the subject of configuring HAProxy for your needs.
 
-It is also worth checking out the [`examples/` directory from upstream](http://www.haproxy.org/git?p=haproxy-1.5.git;a=tree;f=examples).
+It is also worth checking out the [`examples/` directory from upstream](http://www.haproxy.org/git?p=haproxy-1.7.git;a=tree;f=examples).
 
 Note: Many configuration examples propose to put `daemon` into the `global` section to run haproxy as daemon. Do **not** configure this or the Docker container will exit immediately after launching because the haproxy process would go into the background.
 
 ## Create a `Dockerfile`
 
 ```dockerfile
-FROM haproxy:1.5
+FROM haproxy:1.7
 COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
 ```
 
@@ -45,7 +47,7 @@ $ docker build -t my-haproxy .
 ## Test the configuration file
 
 ```console
-$ docker run -it --rm --name haproxy-syntax-check haproxy:1.5 haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
+$ docker run -it --rm --name haproxy-syntax-check my-haproxy haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
 ```
 
 ## Run the container
@@ -54,10 +56,12 @@ $ docker run -it --rm --name haproxy-syntax-check haproxy:1.5 haproxy -c -f /usr
 $ docker run -d --name my-running-haproxy my-haproxy
 ```
 
+You may need to publish the ports your haproxy is listening on to the host by specifying the -p option, for example -p 8080:80 to publish port 8080 from the container host to port 80 in the container. Make sure the port you're using is free.
+
 ## Directly via bind mount
 
 ```console
-$ docker run -d --name my-running-haproxy -v /path/to/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro haproxy:1.5
+$ docker run -d --name my-running-haproxy -v /path/to/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro haproxy:1.7
 ```
 
 ### Reloading config
@@ -68,7 +72,7 @@ If you used a bind mount for the config and have edited your `haproxy.cfg` file,
 $ docker kill -s HUP my-running-haproxy
 ```
 
-The entrypoint script in the image checks for running the command `haproxy` and replaces it with `haproxy-systemd-wrapper` from haproxy upstream which takes care of signal handling to do the graceful reload. Under the hood this uses the `-sf` option of haproxy so "there are two small windows of a few milliseconds each where it is possible that a few connection failures will be noticed during high loads" (see [Stopping and restarting HAProxy](http://www.haproxy.org/download/1.6/doc/management.txt)).
+The entrypoint script in the image checks for running the command `haproxy` and replaces it with `haproxy-systemd-wrapper` from haproxy upstream which takes care of signal handling to do the graceful reload. Under the hood this uses the `-sf` option of haproxy so "there are two small windows of a few milliseconds each where it is possible that a few connection failures will be noticed during high loads" (see [Stopping and restarting HAProxy](http://www.haproxy.org/download/1.7/doc/management.txt)).
 
 # Image Variants
 
@@ -92,7 +96,7 @@ View [license information](http://www.haproxy.org/download/1.5/doc/LICENSE) for 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

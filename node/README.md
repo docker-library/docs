@@ -1,21 +1,20 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6.8.0`, `6.8`, `6`, `latest` (*6.8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f3c3821591765ad0727bdde2cb98f41dc1b9b4b9/6.8/Dockerfile)
--	[`6.8.0-onbuild`, `6.8-onbuild`, `6-onbuild`, `onbuild` (*6.8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f3c3821591765ad0727bdde2cb98f41dc1b9b4b9/6.8/onbuild/Dockerfile)
--	[`6.8.0-slim`, `6.8-slim`, `6-slim`, `slim` (*6.8/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f3c3821591765ad0727bdde2cb98f41dc1b9b4b9/6.8/slim/Dockerfile)
--	[`6.8.0-wheezy`, `6.8-wheezy`, `6-wheezy`, `wheezy` (*6.8/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f3c3821591765ad0727bdde2cb98f41dc1b9b4b9/6.8/wheezy/Dockerfile)
--	[`4.6.0`, `4.6`, `4`, `argon` (*4.6/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/4.6/Dockerfile)
--	[`4.6.0-onbuild`, `4.6-onbuild`, `4-onbuild`, `argon-onbuild` (*4.6/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/4.6/onbuild/Dockerfile)
--	[`4.6.0-slim`, `4.6-slim`, `4-slim`, `argon-slim` (*4.6/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/4.6/slim/Dockerfile)
--	[`4.6.0-wheezy`, `4.6-wheezy`, `4-wheezy`, `argon-wheezy` (*4.6/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/4.6/wheezy/Dockerfile)
--	[`0.12.16`, `0.12`, `0` (*0.12/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/0.12/Dockerfile)
--	[`0.12.16-onbuild`, `0.12-onbuild`, `0-onbuild` (*0.12/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/0.12/onbuild/Dockerfile)
--	[`0.12.16-slim`, `0.12-slim`, `0-slim` (*0.12/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/0.12/slim/Dockerfile)
--	[`0.12.16-wheezy`, `0.12-wheezy`, `0-wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/0.12/wheezy/Dockerfile)
--	[`0.10.47`, `0.10` (*0.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/0.10/Dockerfile)
--	[`0.10.47-onbuild`, `0.10-onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/0.10/onbuild/Dockerfile)
--	[`0.10.47-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/0.10/slim/Dockerfile)
--	[`0.10.47-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4029a8f71920e1e23efa79602167014f9c325ba0/0.10/wheezy/Dockerfile)
+-	[`7.4.0`, `7.4`, `7`, `latest` (*7.4/Dockerfile*)](https://github.com/nodejs/docker-node/blob/28425ed95cebaea2ff589c1516d79c60181983b2/7.4/Dockerfile)
+-	[`7.4.0-alpine`, `7.4-alpine`, `7-alpine`, `alpine` (*7.4/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/28425ed95cebaea2ff589c1516d79c60181983b2/7.4/alpine/Dockerfile)
+-	[`7.4.0-onbuild`, `7.4-onbuild`, `7-onbuild`, `onbuild` (*7.4/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/28425ed95cebaea2ff589c1516d79c60181983b2/7.4/onbuild/Dockerfile)
+-	[`7.4.0-slim`, `7.4-slim`, `7-slim`, `slim` (*7.4/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/28425ed95cebaea2ff589c1516d79c60181983b2/7.4/slim/Dockerfile)
+-	[`7.4.0-wheezy`, `7.4-wheezy`, `7-wheezy`, `wheezy` (*7.4/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/28425ed95cebaea2ff589c1516d79c60181983b2/7.4/wheezy/Dockerfile)
+-	[`6.9.4`, `6.9`, `6`, `boron` (*6.9/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ad54b39ef23e0c7e0df3ac4234c3ee77b58c3f5d/6.9/Dockerfile)
+-	[`6.9.4-alpine`, `6.9-alpine`, `6-alpine`, `boron-alpine` (*6.9/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ad54b39ef23e0c7e0df3ac4234c3ee77b58c3f5d/6.9/alpine/Dockerfile)
+-	[`6.9.4-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild` (*6.9/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ad54b39ef23e0c7e0df3ac4234c3ee77b58c3f5d/6.9/onbuild/Dockerfile)
+-	[`6.9.4-slim`, `6.9-slim`, `6-slim`, `boron-slim` (*6.9/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ad54b39ef23e0c7e0df3ac4234c3ee77b58c3f5d/6.9/slim/Dockerfile)
+-	[`6.9.4-wheezy`, `6.9-wheezy`, `6-wheezy`, `boron-wheezy` (*6.9/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ad54b39ef23e0c7e0df3ac4234c3ee77b58c3f5d/6.9/wheezy/Dockerfile)
+-	[`4.7.2`, `4.7`, `4`, `argon` (*4.7/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ad54b39ef23e0c7e0df3ac4234c3ee77b58c3f5d/4.7/Dockerfile)
+-	[`4.7.2-alpine`, `4.7-alpine`, `4-alpine`, `argon-alpine` (*4.7/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ad54b39ef23e0c7e0df3ac4234c3ee77b58c3f5d/4.7/alpine/Dockerfile)
+-	[`4.7.2-onbuild`, `4.7-onbuild`, `4-onbuild`, `argon-onbuild` (*4.7/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ad54b39ef23e0c7e0df3ac4234c3ee77b58c3f5d/4.7/onbuild/Dockerfile)
+-	[`4.7.2-slim`, `4.7-slim`, `4-slim`, `argon-slim` (*4.7/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ad54b39ef23e0c7e0df3ac4234c3ee77b58c3f5d/4.7/slim/Dockerfile)
+-	[`4.7.2-wheezy`, `4.7-wheezy`, `4-wheezy`, `argon-wheezy` (*4.7/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ad54b39ef23e0c7e0df3ac4234c3ee77b58c3f5d/4.7/wheezy/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
 
@@ -70,6 +69,14 @@ The `node` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
+## `node:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 ## `node:onbuild`
 
 This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM node:onbuild` will be enough to create a stand-alone image for your project.
@@ -88,7 +95,7 @@ View [license information](https://github.com/joyent/node/blob/master/LICENSE) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

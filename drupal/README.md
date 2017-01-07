@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.1-apache`, `8.2-apache`, `8-apache`, `apache`, `8.2.1`, `8.2`, `8`, `latest` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/13f73afd9cfaabfae09340617dc25beebe4028ba/8.2/apache/Dockerfile)
--	[`8.2.1-fpm`, `8.2-fpm`, `8-fpm`, `fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/13f73afd9cfaabfae09340617dc25beebe4028ba/8.2/fpm/Dockerfile)
--	[`7.51-apache`, `7-apache`, `7.51`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/814261d4b2d82854c50746c3e480dd514d5aa1d0/7/apache/Dockerfile)
--	[`7.51-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/814261d4b2d82854c50746c3e480dd514d5aa1d0/7/fpm/Dockerfile)
+-	[`8.2.5-apache`, `8.2-apache`, `8-apache`, `apache`, `8.2.5`, `8.2`, `8`, `latest` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/a2832ca75e94580be81aafffdfc330c1713b519d/8.2/apache/Dockerfile)
+-	[`8.2.5-fpm`, `8.2-fpm`, `8-fpm`, `fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/a2832ca75e94580be81aafffdfc330c1713b519d/8.2/fpm/Dockerfile)
+-	[`7.53-apache`, `7-apache`, `7.53`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/5dd56ed77e995f2cad08b6206d9e335c3a150168/7/apache/Dockerfile)
+-	[`7.53-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/5dd56ed77e995f2cad08b6206d9e335c3a150168/7/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdrupal).
 
@@ -57,6 +57,39 @@ $ docker run --name some-drupal --link some-postgres:postgres -d drupal
 -	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://registry.hub.docker.com/_/postgres/))
 -	ADVANCED OPTIONS; Database host: `postgres` (for using the `/etc/hosts` entry added by `--link` to access the linked container's PostgreSQL instance)
 
+## ... via [`docker-compose`](https://github.com/docker/compose)
+
+Example `docker-compose.yml` for `drupal`:
+
+```yaml
+# Drupal with PostgreSQL
+#
+# Access via "http://localhost:8080" (or "http://$(docker-machine ip):8080" if using docker-machine)
+#
+# During initial Drupal setup,
+# Database type: PostgreSQL
+# Database name: postgres
+# Database username: postgres
+# Database password: example
+# ADVANCED OPTIONS; Database host: postgres
+
+version: '2'
+
+services:
+
+  drupal:
+    image: drupal:8.2-apache
+    ports:
+      - 8080:80
+    restart: always
+
+  postgres:
+    image: postgres:9.6
+    environment:
+      POSTGRES_PASSWORD: example
+    restart: always
+```
+
 ## Adding additional libraries / extensions
 
 This image does not provide any additional PHP extensions or other libraries, even if they are required by popular plugins. There are an infinite number of possible plugins, and they potentially require any extension PHP supports. Including every PHP extension that exists would dramatically increase the image size.
@@ -74,7 +107,7 @@ View [license information](https://www.drupal.org/licensing/faq) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

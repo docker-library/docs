@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.25.1-glibc`, `1.25-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/ad6b0303b320f64e63fef9291fcac5a4742c0855/glibc/Dockerfile)
--	[`1.25.1-musl`, `1.25-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/ad6b0303b320f64e63fef9291fcac5a4742c0855/musl/Dockerfile)
--	[`1.25.1-uclibc`, `1.25-uclibc`, `1-uclibc`, `uclibc`, `1.25.1`, `1.25`, `1`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/ad6b0303b320f64e63fef9291fcac5a4742c0855/uclibc/Dockerfile)
+-	[`1.26.1-glibc`, `1.26-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/257261b9e1acf1285f6cc3282b4ae5c5c30a2d82/glibc/Dockerfile)
+-	[`1.26.1-musl`, `1.26-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/257261b9e1acf1285f6cc3282b4ae5c5c30a2d82/musl/Dockerfile)
+-	[`1.26.1-uclibc`, `1.26-uclibc`, `1-uclibc`, `uclibc`, `1.26.1`, `1.26`, `1`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/257261b9e1acf1285f6cc3282b4ae5c5c30a2d82/uclibc/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/busybox`)](https://github.com/docker-library/official-images/blob/master/library/busybox). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbusybox).
 
@@ -54,7 +54,7 @@ View [license information](http://www.busybox.net/license.html) for the software
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

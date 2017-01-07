@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.6`, `3.3` (*3.3.6/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/f0b1f9f7c6fec5a98563a20d79bdcec5f263fd6a/3.3.6/Dockerfile)
--	[`3.4.9`, `3.4`, `latest` (*3.4.9/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/f0b1f9f7c6fec5a98563a20d79bdcec5f263fd6a/3.4.9/Dockerfile)
+-	[`3.3.6`, `3.3` (*3.3.6/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/7e7eac6d6c11428849ec13bb7d240e4cfa21b2e7/3.3.6/Dockerfile)
+-	[`3.4.9`, `3.4`, `latest` (*3.4.9/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/7e7eac6d6c11428849ec13bb7d240e4cfa21b2e7/3.4.9/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/zookeeper`)](https://github.com/docker-library/official-images/blob/master/library/zookeeper). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fzookeeper).
 
@@ -21,7 +21,7 @@ Apache ZooKeeper is a software project of the Apache Software Foundation, provid
 
 	$ docker run --name some-zookeeper --restart always -d zookeeper
 
-This image includes `EXPOSE 2181` (the zookeeper port), so standard container linking will make it automatically available to the linked containers. Since the Zookeeper "fails fast" it's better to always restart it.
+This image includes `EXPOSE 2181 2888 3888` (the zookeeper client port, follower port, election port respectively), so standard container linking will make it automatically available to the linked containers. Since the Zookeeper "fails fast" it's better to always restart it.
 
 ## Connect to Zookeeper from an application in another Docker container
 
@@ -80,7 +80,31 @@ Zookeeper configuration is located in `/conf`. One way to change it is mounting 
 
 ## Environment variables
 
-Variables below are mandatory if you want to run Zookeeper in replicated mode.
+ZooKeeper recommended defaults are used if `zoo.cfg` file is not provided. They can be overridden using the following environment variables.
+
+	$ docker run -e "ZOO_INIT_LIMIT=10" --name some-zookeeper --restart always -d 31z4/zookeeper
+
+### `ZOO_TICK_TIME`
+
+Defaults to `2000`. ZooKeeper's `tickTime`
+
+> The length of a single tick, which is the basic time unit used by ZooKeeper, as measured in milliseconds. It is used to regulate heartbeats, and timeouts. For example, the minimum session timeout will be two ticks
+
+### `ZOO_INIT_LIMIT`
+
+Defaults to `5`. ZooKeeper's `initLimit`
+
+> Amount of time, in ticks (see tickTime), to allow followers to connect and sync to a leader. Increased this value as needed, if the amount of data managed by ZooKeeper is large.
+
+### `ZOO_SYNC_LIMIT`
+
+Defaults to `2`. ZooKeeper's `syncLimit`
+
+> Amount of time, in ticks (see tickTime), to allow followers to sync with ZooKeeper. If followers fall too far behind a leader, they will be dropped.
+
+## Replicated mode
+
+Environment variables below are mandatory if you want to run Zookeeper in replicated mode.
 
 ### `ZOO_MY_ID`
 
@@ -102,7 +126,7 @@ View [license information](https://github.com/apache/zookeeper/blob/release-3.4.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

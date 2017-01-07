@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.0.18` (*2.0/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/a43637b03a105ceb1104cbf5e42e93e1ffed0944/2.0/Dockerfile)
--	[`2.1.23` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/37b0a2405c4f6d011a5e8fa4f1e42c9b77f45f28/2.1/Dockerfile)
--	[`2.2.11`, `latest` (*2.2/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/11a5e240390265e4138fb18c52eec3ba603ff229/2.2/Dockerfile)
+-	[`2.1.25` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/eb9c688528d4ce7d50eec34391a3cbb4fea88868/2.1/Dockerfile)
+-	[`2.2.14`, `latest` (*2.2/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/6a4be54372625a9dac05ca9fee7fbe0067593531/2.2/x86_64/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/orientdb`)](https://github.com/docker-library/official-images/blob/master/library/orientdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Forientdb).
 
@@ -22,13 +22,13 @@ When OrientDB starts it asks for the root password. The root user is able to man
 $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 -e ORIENTDB_ROOT_PASSWORD=rootpwd orientdb
 ```
 
-The [Studio](http://orientdb.com/docs/last/Home-page.html) is accessible to http://<docker-host>:2480 (e.g.: http://localhost:2480)
+The [Studio](http://orientdb.com/docs/last/Studio-Home-page.html) is accessible to http://<docker-host>:2480 (e.g.: http://localhost:2480)
 
 ### Attach persistent volumes
 
-The docker image contains an OrientDB installation with basic configuration. If you need to provide your own config folder from which OrientDB will read its startup settings, simply attach a persistent volume for configuration folder. Providing a configuration folder enables integration with software configuration tools such as Ansible or Puppet.
+The docker image contains an OrientDB installation with basic configuration. If you need to provide **your own** config folder to **override** the one included in the OrientDB container, simply attach a persistent volume for configuration folder. Providing a configuration folder enables integration with software configuration tools such as Ansible, Chef or Puppet.
 
-The same applies for the databases folder which if local to the running container would go away as soon as it died/you killed it. Obviously use volumes from dedicated data container is another option.
+The same applies for the databases folder, which if local to the running container would go away as soon as it died/you killed it. Obviously use volumes from dedicated data container is another option.
 
 ```console
 $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
@@ -38,6 +38,8 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
     orientdb
 ```
+
+**NOTE**: don't provide an **empty** config folder as volume, because OrientDB will startup with a very minimal configuration.
 
 ### Running OrientDB tools
 
@@ -81,7 +83,7 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

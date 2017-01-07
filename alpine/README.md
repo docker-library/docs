@@ -1,10 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/a9a9643b27e2c3ac5c54aa6652a465795719edf9/versions/library-3.1/Dockerfile)
--	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/322a7330bb18e07a71b648033f5b76e122c064d3/versions/library-3.2/Dockerfile)
--	[`3.3` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/3d320a4b32a6b19c31b4b8b36752138e442031c9/versions/library-3.3/Dockerfile)
--	[`3.4`, `latest` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/8f23fc2e995ab8f7f0f5960c6a1ddd12f57efd0c/versions/library-3.4/Dockerfile)
--	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/626d0f762c17632c260c7be43a953817bf986c86/versions/library-edge/Dockerfile)
+-	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/6a7732123b1e22c836e7ff538828ecf9eb0ebbb3/versions/library-3.1/Dockerfile)
+-	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/39157ab3587065a0e0928663dea293ae43110cd9/versions/library-3.2/Dockerfile)
+-	[`3.3` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/62168e0f780d64f2124a7be94ed31991a31ae5ad/versions/library-3.3/Dockerfile)
+-	[`3.4` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/71c9ce882016759bcc0d47f372d20a1b6ec93cd5/versions/library-3.4/Dockerfile)
+-	[`3.5`, `latest` (*versions/library-3.5/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c584d0198d5dea1c5d942e1e1a7b2504ecdb4d30/versions/library-3.5/Dockerfile)
+-	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/b14ddc0a4f7aed069027aa7943609a4e8e3001fc/versions/library-edge/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/alpine`)](https://github.com/docker-library/official-images/blob/master/library/alpine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Falpine).
 
@@ -46,7 +47,7 @@ This image is well documented. [Check out the documentation at Viewdocs](http://
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

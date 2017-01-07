@@ -1,0 +1,26 @@
+# Drupal with PostgreSQL
+#
+# Access via "http://localhost:8080" (or "http://$(docker-machine ip):8080" if using docker-machine)
+#
+# During initial Drupal setup,
+# Database type: PostgreSQL
+# Database name: postgres
+# Database username: postgres
+# Database password: example
+# ADVANCED OPTIONS; Database host: postgres
+
+version: '2'
+
+services:
+
+  drupal:
+    image: drupal:8.2-apache
+    ports:
+      - 8080:80
+    restart: always
+
+  postgres:
+    image: postgres:9.6
+    environment:
+      POSTGRES_PASSWORD: example
+    restart: always
