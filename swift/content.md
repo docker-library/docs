@@ -1,4 +1,5 @@
-# What is Swift?
+What is Swift?
+==============
 
 Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.
 
@@ -10,13 +11,14 @@ The goal of the Swift project is to create the best available language for uses 
 
 **Expressive**. Swift benefits from decades of advancement in computer science to offer syntax that is a joy to use, with modern features developers expect. But Swift is never done. We will monitor language advancements and embrace what works, continually evolving to make Swift even better.
 
-> [wikipedia.org/wiki/Swift_(programming_language)](https://en.wikipedia.org/wiki/Swift_(programming_language))   
-> [swift.org](https://swift.org/about/)   
+> [wikipedia.org/wiki/Swift_(programming_language)](https://en.wikipedia.org/wiki/Swift_(programming_language))  
+> [swift.org](https://swift.org/about/)  
 > [Swift on Github](https://github.com/apple/swift)
 
 %%LOGO%%
 
-# How to use this image
+How to use this image
+=====================
 
 ##### Pull the Docker Image From Docker Hub:
 
@@ -44,10 +46,12 @@ and then attach it
 docker attach swiftfun
 ```
 
-## Contributions
+Contributions
+-------------
 
 Contributions via pull requests are welcome and encouraged :)
 
-## License
+License
+-------
 
 docker-swift is licensed under the [MIT License.](LICENSE.md)
