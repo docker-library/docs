@@ -8,7 +8,6 @@
 
 #### You can find the Docker Hub repo here: [https://hub.docker.com/r/swiftdocker/swift/](https://hub.docker.com/r/swiftdocker/swift/)
 
-
 ### Docker Instructions
 
 ##### Pull the Docker Image From Docker Hub:
@@ -36,7 +35,6 @@ and then attach it
 ```bash
 docker attach swiftfun
 ```
-
 
 ## Contributions
 
