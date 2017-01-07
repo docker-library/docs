@@ -1,5 +1,4 @@
-What is Swift?
-==============
+# What is Swift?
 
 Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.
 
@@ -17,8 +16,7 @@ The goal of the Swift project is to create the best available language for uses 
 
 %%LOGO%%
 
-How to use this image
-=====================
+# How to use this image
 
 ##### Pull the Docker Image From Docker Hub:
 
@@ -46,12 +44,10 @@ and then attach it
 docker attach swiftfun
 ```
 
-Contributions
--------------
+## Contributions
 
 Contributions via pull requests are welcome and encouraged :)
 
-License
--------
+## License
 
 docker-swift is licensed under the [MIT License.](LICENSE.md)
