@@ -126,7 +126,7 @@ View [license information](https://github.com/apache/zookeeper/blob/release-3.4.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 1.12.6.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

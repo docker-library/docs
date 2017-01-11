@@ -78,7 +78,7 @@ View [R-project license information](http://www.r-project.org/Licenses/) for the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 1.12.6.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
