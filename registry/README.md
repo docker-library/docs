@@ -9,32 +9,27 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # Docker Registry
 
-Tags < 1.0 refer to the [deprecated registry](https://github.com/docker/docker-registry).
+This image contains an implementation of the Docker Registry HTTP API V2 for use with Docker 1.6+. See [github.com/docker/distribution](https://github.com/docker/distribution) for more details about what it is.
 
-## Run the Registry
-
--	install docker according to the [following instructions](http://docs.docker.io/installation/#installation)
-
-### Run the registry docker container: Quick version
-
--	run the registry: `docker run -p 5000:5000 -v <HOST_DIR>:/tmp/registry-dev registry`
--	Modify your docker startup line/script: add "-H tcp://127.0.0.1:2375 -H unix:///var/run/docker.sock --insecure-registry <REGISTRY_HOSTNAME>:5000"
-
-### Recommended: run the registry docker container
+## Run a local registry: Quick Version
 
 ```console
-$ docker run \
-         -e SETTINGS_FLAVOR=s3 \
-         -e AWS_BUCKET=acme-docker \
-         -e STORAGE_PATH=/registry \
-         -e AWS_KEY=AKIAHSHB43HS3J92MXZ \
-         -e AWS_SECRET=xdDowwlK7TJajV1Y7EoOZrmuPEJlHYcNP2k4j49T \
-         -e SEARCH_BACKEND=sqlalchemy \
-         -p 5000:5000 \
-         registry
+$ docker run -d -p 5000:5000 --restart always --name registry registry:2
 ```
 
-NOTE: The container will try to allocate the port 5000. If the port is already taken, find out which container is already using it by running `docker ps`.
+Now, use it from within Docker:
+
+```console
+$ docker pull ubuntu
+$ docker tag ubuntu localhost:5000/ubuntu
+$ docker push localhost:5000/ubuntu
+```
+
+## Recommended Reading
+
+The [documentation over at docs.docker.com](https://docs.docker.com/registry/) is a good place to learn more about what the registry is, how it works, and how to use it.
+
+Specifically, [the section regarding deployment](https://docs.docker.com/registry/deploying/) has pointers for more complex use cases than simply running a registry on localhost.
 
 # Support
 
