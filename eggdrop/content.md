@@ -14,9 +14,28 @@ To run this container the first time, you'll need to pass in, at minimum, a nick
 $ docker run -ti -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/for/host/data:/home/eggdrop/eggdrop/data eggdrop
 ```
 
-should be used. This will modify the appropriate values within the config file, then start your bot with the nickname FooBot and connect it to irc.freenode.net.
+should be used. This will modify the appropriate values within the config file, then start your bot with the nickname FooBot and connect it to irc.freenode.net. Read on for additional configuration options.
 
 These variables are only needed for your first run- after the first use, you can edit the config file directly.
+
+## Environmental Variables
+
+### SERVER
+This variable sets the IRC server Eggdrop will connect to. Examples are:
+```
+  -e SERVER=just.a.normal.server
+  -e SERVER=you.need.to.change.this:6667
+  -e SERVER=another.example.com:7000:password
+  -e SERVER=[2001:db8:618:5c0:263::]:6669:password
+  -e SERVER=ssl.example.net:+6697
+```
+Only one server can be specified via an environmental variable. The + denotes an SSL-enabled port. After the first run, it is advised to edit the eggdrop config directly to add additional servers (see Long-term Persistence below).
+
+### NICK
+This variable sets the nickname used by eggdrop. After the first use, you should change it by editing the eggdrop config directly (see Long-term Persistence below).
+
+### CONFIG
+This variable is used to tell eggdrop which config file to use. If not set, the default of 'eggdrop.conf' is used. Any config file used with Docker Eggdrop must end in ".conf", as in eggdrop.conf or mybot.conf
 
 ## Long-term Persistence
 
@@ -30,11 +49,11 @@ Please note that, even in daemon mode, the `-i` flag for `docker run` is require
 
 ## Adding scripts
 
-An easy way to add scripts would be to create a scripts directory on the host and mount it to `/home/eggdrop/eggdrop/data`. This would be accomplished by adding an option similar to
+An easy way to add scripts would be to create a scripts directory on the host and mount it to `/home/eggdrop/eggdrop/scripts` (or the path of your choosing). This would be accomplished by adding an option similar to
 
 	-v /path/to/host/scripts:/home/eggdrop/eggdrop/scripts
 
-to your docker run command line (and of course, don't forget to edit your configuration file to actually load it!)
+to your docker run command line (and then edit your config file to load the scripts from the path that matches where you mounted the scripts dir). 
 
 ## Exposing network ports
 
