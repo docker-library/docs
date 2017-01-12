@@ -23,6 +23,7 @@ Please note that, even in daemon mode, the `-i` flag for `docker run` is require
 ### `SERVER`
 
 This variable sets the IRC server Eggdrop will connect to. Examples are:
+
 ```console
   -e SERVER=just.a.normal.server
   -e SERVER=you.need.to.change.this:6667
@@ -61,7 +62,7 @@ An easy way to add scripts would be to create a scripts directory on the host an
 	-v /path/to/host/scripts:/home/eggdrop/eggdrop/scripts
 ```
 
-to your docker run command line (and then edit your config file to load the scripts from the path that matches where you mounted the scripts dir). 
+to your docker run command line (and then edit your config file to load the scripts from the path that matches where you mounted the scripts dir).
 
 ## Exposing network ports
 
