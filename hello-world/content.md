@@ -17,8 +17,8 @@ To generate this message, Docker took the following steps:
 To try something more ambitious, you can run an Ubuntu container with:
  $ docker run -it ubuntu bash
 
-Share images, automate workflows, and more with a free Docker Hub account:
- https://hub.docker.com
+Share images, automate workflows, and more with a free Docker ID:
+ https://cloud.docker.com/
 
 For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
@@ -26,7 +26,7 @@ For more examples and ideas, visit:
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  c54a2cc56cbb  1.848 kB
+hello-world  latest  48b5124b2768  1.84 kB
 ```
 
 %%LOGO%%
