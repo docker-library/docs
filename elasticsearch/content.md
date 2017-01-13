@@ -16,7 +16,13 @@ Elasticsearch is a registered trademark of Elasticsearch BV.
 
 As a result, this image does not support clustering out of the box and extra configuration must be set in order to support it.
 
-Supporting clustering imply having Elasticsearch in a production mode which is more strict about the bootstrap checks that it performs, especially when checking the value of `vm.max_map_count` which is not namespaced and thus must be set to an acceptable value on the host (as opposed to simply using `--sysctl` on `docker run`).
+Supporting clustering implies having Elasticsearch in a production mode which is more strict about the bootstrap checks that it performs, especially when checking the value of `vm.max_map_count` which is not namespaced and thus must be set to an acceptable value on the host (as opposed to simply using `--sysctl` on `docker run`).
+
+One example of adding clustering support is to pass the configuration on the `docker run`:
+
+```console
+$ docker run -d --name elas elasticsearch -Etransport.host=0.0.0.0 -Ediscovery.zen.minimum_master_nodes=1
+```
 
 See the following sections of the upstream documentation for more information:
 
