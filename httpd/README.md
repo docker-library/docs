@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.31`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/fa5223d83a5225aa3fd5b23229b785c7764142bf/2.2/Dockerfile)
--	[`2.2.31-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/41d8483def4933a805bc6413b5a60df17a94b949/2.2/alpine/Dockerfile)
+-	[`2.2.32`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/a5ab6fb434c13a3578a2e7e6ce2cf30d66c625bc/2.2/Dockerfile)
+-	[`2.2.32-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/a5ab6fb434c13a3578a2e7e6ce2cf30d66c625bc/2.2/alpine/Dockerfile)
 -	[`2.4.25`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/1990a58d6acaf056dd24b10d5923a60c27eda949/2.4/Dockerfile)
 -	[`2.4.25-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/b95f1aba991d613f971fe8c66dc23fb4d8f3e9a7/2.4/alpine/Dockerfile)
 

@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.1`, `5.1`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/9648a7bfb4f0b6aef7da619c60826e102293a7d5/5/Dockerfile)
--	[`5.1.1-alpine`, `5.1-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/9648a7bfb4f0b6aef7da619c60826e102293a7d5/5/alpine/Dockerfile)
--	[`2.4.3`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ffd7a19f1e68329cc310f145c232e83abec09067/2.4/Dockerfile)
--	[`2.4.3-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1107caed5c403a63d99c1b1ae1f7002d387c7e85/2.4/alpine/Dockerfile)
+-	[`5.1.2`, `5.1`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/f2e19796b765e2e448d0e8c651d51be992b56d08/5/Dockerfile)
+-	[`5.1.2-alpine`, `5.1-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/f2e19796b765e2e448d0e8c651d51be992b56d08/5/alpine/Dockerfile)
+-	[`2.4.4`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8f00ad520c1c33b879a715700905d3c25c526331/2.4/Dockerfile)
+-	[`2.4.4-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8f00ad520c1c33b879a715700905d3c25c526331/2.4/alpine/Dockerfile)
 -	[`1.7.6`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ffd7a19f1e68329cc310f145c232e83abec09067/1.7/Dockerfile)
 -	[`1.7.6-alpine`, `1.7-alpine`, `1-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1107caed5c403a63d99c1b1ae1f7002d387c7e85/1.7/alpine/Dockerfile)
 
