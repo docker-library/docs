@@ -23,18 +23,26 @@ Elasticsearch is a registered trademark of Elasticsearch BV.
 
 # How to use this image
 
-## Host Setup
+## Cluster
 
-**Note:** since 5.0, Elasticsearch only listens on `localhost` by default, so this image sets `network.host` to `0.0.0.0` (given that `localhost` is not terribly useful in the Docker context).
+**Note:** since 5.0, Elasticsearch only listens on `localhost` by default on both http and transport, so this image sets `http.host` to `0.0.0.0` (given that `localhost` is not terribly useful in the Docker context).
 
-As a result, Elasticsearch is more strict about the bootstrap checks that it performs, especially when checking the value of `vm.max_map_count` which is not namespaced and thus must be set to an acceptable value on the host (as opposed to simply using `--sysctl` on `docker run`).
+As a result, this image does not support clustering out of the box and extra configuration must be set in order to support it.
+
+Supporting clustering implies having Elasticsearch in a production mode which is more strict about the bootstrap checks that it performs, especially when checking the value of `vm.max_map_count` which is not namespaced and thus must be set to an acceptable value on the host (as opposed to simply using `--sysctl` on `docker run`).
+
+One example of adding clustering support is to pass the configuration on the `docker run`:
+
+```console
+$ docker run -d --name elas elasticsearch -Etransport.host=0.0.0.0 -Ediscovery.zen.minimum_master_nodes=1
+```
 
 See the following sections of the upstream documentation for more information:
 
 -	[Setup Elasticsearch » Important System Configuration » Virtual memory](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/vm-max-map-count.html)
 -	[Setup Elasticsearch » Bootstrap Checks » Maximum map count check](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/_maximum_map_count_check.html)
 
-This [comment in elastic/elasticsearch#4978](https://github.com/elastic/elasticsearch/issues/4978#issuecomment-258676104) shows why this change was added in upstream. Production mode is when listening on non-localhost.
+This [comment in elastic/elasticsearch#4978](https://github.com/elastic/elasticsearch/issues/4978#issuecomment-258676104) shows why this change was added in upstream.
 
 > Elasticsearch will not start in production mode if `vm.max_map_count` is not high enough. [...] If the value on your system is NOT high enough, then your cluster is going to crash and burn at some stage and you will lose data.
 
