@@ -22,7 +22,7 @@ $ docker run -d -p 80:80 pydio:latest
 
 You can access your Pydio using this url http://localhost/. A wizard will let you set up the main accounts and access to the database. You can use SQLite for a quick run-through or link your container to a MySQL or PostgreSQL database.
 
-To do so, just run the same command but adding a link to your existing database container - eg :
+To do so, just run the same command but add a link to your existing database container - eg :
 
 ```console
 $ docker run -d -p 80:80 --link mysql:db pydio:latest
