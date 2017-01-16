@@ -27,11 +27,11 @@ To quickly prototype SQL-powered RESTful web services from the command line, you
 This example starts a new MySQL container and links it under name `mysql` in the Rapidoid container, where a RESTful service is defined by specifying SQL query for the route `GET /users`. The service returns the result (a list of MySQL users) in JSON format.
 
 ```console
-DB_ID=$(docker run -d -e MYSQL_ROOT_PASSWORD=db-pass mysql)
+docker run -d --name some-mysql -e MYSQL_ROOT_PASSWORD=db-pass mysql
 
 docker run -it --rm \
     -p 8888:8888 \
-    --link $DB_ID:mysql \
+    --link some-mysql:mysql \
     %%REPO%% \
     profiles=mysql \
     jdbc.password=db-pass \
