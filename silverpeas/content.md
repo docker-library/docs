@@ -41,7 +41,7 @@ In [Docker Hub](https://hub.docker.com/), no Docker images of Microsoft SQLServe
 
 We recommend strongly to mount the directory with the database file on the host so the data won't be lost when upgrading PostgreSQL to a newer version (a Data Volume Container can be used instead). For any information how to start a PostgreSQL container, you can refer its [documentation]((https://hub.docker.com/_/postgres/).
 
-Once the database system is running, a database for Silverpeas has to be created and a user with administrative rights on this database should be added; it is recommended to create a dedicated user account in the database for each application and therefore for Silverpeas. In this document, and by default, a database `Silverpeas` and a user `silverpeas` for that database are created.
+Once the database system is running, a database for Silverpeas has to be created and a user with administrative rights on this database (and only on this database) should be added; it is recommended for a security reason to create a dedicated user account in the database for each application and therefore for Silverpeas. In this document, and by default, a database `Silverpeas` and a user `silverpeas` for that database are created.
 
 ### Start a Silverpeas instance with the default configuration
 
@@ -56,7 +56,7 @@ Finally, a Silverpeas instance can be started by specifying the required databas
 	    --link postgresql:database \
 	    silverpeas
 
-Here, as the PostgreSQL database is linked under the alias `database`, we don't have to explicitly indicate its hostname with the `DB_SERVER` environment variable. The Silverpeas images expose the 8000 port and here this port is mapped to the 8080 port of the host.
+Here, as the PostgreSQL database is linked under the alias `database`, we don't have to explicitly indicate its hostname with the `DB_SERVER` environment variable. The Silverpeas images expose the 8000 port and here this port is mapped to the 8080 port of the host; Silverpeas is then accessible at `http://localhost:8080/silverpeas`. You can sign in Silverpeas with the administrator account `SilverAdmin` and with as password `SilverAdmin`.
 
 By default, some volumes are created inside the container, so that we can access them in the host.(Refers the [Docker Documentation](https://docs.docker.com/engine/tutorials/dockervolumes/#locating-a-volume) to locate them.) Among them `/opt/silverpeas/log` and `/opt/silverpeas/data`: the first volume contains the logs produced by Silverpeas whereas the second volume contains all the data that are created and managed by the users in Silverpeas. Because the latter has already a directories structure created at image creation, a host directory cannot be mounted into the container at `opt/silverpeas/data` without losing the volume's content (the mount point overlays the pre-existing content of the volume). In our example, in order to easily locate the two volumes, we label them explicitly with respectively the labels `silverpeas-log` and `silverpeas-data`. (Using a [Data Volume Container](https://docs.docker.com/engine/userguide/containers/dockervolumes/) to map `/opt/silverpeas/log` and `/opt/silverpeas/data` is a better solution.)
 
@@ -71,7 +71,7 @@ The Silverpeas global configuration is defined in the `/opt/silverpeas/configura
 	    --link postgresql:database \
 	    silverpeas
 
-where `/etc/silverpeas/config.properties` is your own configuration file on the host.
+where `/etc/silverpeas/config.properties` is your own configuration file on the host. For security reason, we strongly recommend to set explicitly the administrator's credentials with the properties `SILVERPEAS_ADMIN_LOGIN` and `SILVERPEAS_ADMIN_PASSWORD` in the `config.properties` file. (Don't forget to set also the administrator email address with the property `SILVERPEAS_ADMIN_EMAIL`.)
 
 ## Start a Silverpeas instance with a database on the host
 
