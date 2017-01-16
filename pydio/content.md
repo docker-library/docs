@@ -36,9 +36,9 @@ If you want the files you've uploaded on your Pydio container - or the code, or 
 
 The locations to know on the Pydio container are :
 
-Conf : /etc/pydio/conf
-Data : /var/lib/pydio/data
-Code : /usr/share/pydio
+- Conf : /etc/pydio/conf
+- Data : /var/lib/pydio/data
+- Code : /usr/share/pydio
 
 You can set either all path as volume on your local file system with the following command
 
