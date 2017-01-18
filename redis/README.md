@@ -3,9 +3,13 @@
 -	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.0/Dockerfile)
 -	[`3.0.7-32bit`, `3.0-32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.0/32bit/Dockerfile)
 -	[`3.0.7-alpine`, `3.0-alpine` (*3.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/9db6cc1645465f134d03584dbbbd962ce822479a/3.0/alpine/Dockerfile)
+-	[`3.0.7-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/redis/blob/ad72d7a7f3c05a9b658ec64894d4193c89bba01b/3.0/windows/windowsservercore/Dockerfile)
+-	[`3.0.7-nanoserver`, `3.0-nanoserver` (*3.0/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/redis/blob/ad72d7a7f3c05a9b658ec64894d4193c89bba01b/3.0/windows/nanoserver/Dockerfile)
 -	[`3.2.6`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/2e14b84ea86939438834a453090966a9bd4367fb/3.2/Dockerfile)
 -	[`3.2.6-32bit`, `3.2-32bit`, `3-32bit`, `32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/2e14b84ea86939438834a453090966a9bd4367fb/3.2/32bit/Dockerfile)
 -	[`3.2.6-alpine`, `3.2-alpine`, `3-alpine`, `alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/9db6cc1645465f134d03584dbbbd962ce822479a/3.2/alpine/Dockerfile)
+-	[`3.2.6-windowsservercore`, `3.2-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/redis/blob/709e6a8df205f73afcc6f6257cab104175de1f5f/3.2/windows/windowsservercore/Dockerfile)
+-	[`3.2.6-nanoserver`, `3.2-nanoserver`, `3-nanoserver`, `nanoserver` (*3.2/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/redis/blob/2daf4fd7d858c8f2ad9694c4f460b8c6a7f782aa/3.2/windows/nanoserver/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/redis`)](https://github.com/docker-library/official-images/blob/master/library/redis). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredis).
 
@@ -88,6 +92,15 @@ This image is based on the popular [Alpine Linux project](http://alpinelinux.org
 This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
+## `redis:windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
