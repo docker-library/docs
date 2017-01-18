@@ -94,7 +94,7 @@ View [license information](http://clojure.org/license) for the software containe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.6.
+This image is officially supported on Docker version 1.13.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
