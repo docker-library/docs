@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.3.6`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/d4c16d81cdfb43b502983473c4d4f53eb15cdad2/Dockerfile)
+-	[`0.3.8`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/8c51cccfe250cb144becd082e3ccdf531a31b30a/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nats-streaming`)](https://github.com/docker-library/official-images/blob/master/library/nats-streaming). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats-streaming).
 
@@ -25,38 +25,38 @@ $ docker run -d nats-streaming
 
 Output that you would get if you had started with `-ti` instead of `d` (for daemon):
 
-[1] 2016/12/21 17:37:56.743377 [INF] Starting nats-streaming-server[test-cluster] version 0.3.6
-[1] 2016/12/21 17:37:56.743575 [INF] Starting nats-server version 0.9.6
-[1] 2016/12/21 17:37:56.743600 [INF] Starting http monitor on 0.0.0.0:8222
-[1] 2016/12/21 17:37:56.743851 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2016/12/21 17:37:56.743891 [INF] Server is ready
-[1] 2016/12/21 17:37:57.023416 [INF] STAN: Message store is MEMORY
-[1] 2016/12/21 17:37:57.023453 [INF] STAN: --------- Store Limits ---------
-[1] 2016/12/21 17:37:57.023464 [INF] STAN: Channels:                  100 *
-[1] 2016/12/21 17:37:57.023467 [INF] STAN: -------- channels limits -------
-[1] 2016/12/21 17:37:57.023473 [INF] STAN:   Subscriptions:          1000 *
-[1] 2016/12/21 17:37:57.023478 [INF] STAN:   Messages     :       1000000 *
-[1] 2016/12/21 17:37:57.023489 [INF] STAN:   Bytes        :     976.56 MB *
-[1] 2016/12/21 17:37:57.023502 [INF] STAN:   Age          :     unlimited *
-[1] 2016/12/21 17:37:57.023506 [INF] STAN: --------------------------------
+[1] 2017/01/19 20:27:37.540307 [INF] Starting nats-streaming-server[test-cluster] version 0.3.8
+[1] 2017/01/19 20:27:37.540462 [INF] Starting nats-server version 0.9.6
+[1] 2017/01/19 20:27:37.540493 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2017/01/19 20:27:37.540550 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2017/01/19 20:27:37.540574 [INF] Server is ready
+[1] 2017/01/19 20:27:37.825728 [INF] STAN: Message store is MEMORY
+[1] 2017/01/19 20:27:37.825798 [INF] STAN: --------- Store Limits ---------
+[1] 2017/01/19 20:27:37.825828 [INF] STAN: Channels:                  100 *
+[1] 2017/01/19 20:27:37.825853 [INF] STAN: -------- channels limits -------
+[1] 2017/01/19 20:27:37.825859 [INF] STAN:   Subscriptions:          1000 *
+[1] 2017/01/19 20:27:37.825864 [INF] STAN:   Messages     :       1000000 *
+[1] 2017/01/19 20:27:37.825876 [INF] STAN:   Bytes        :     976.56 MB *
+[1] 2017/01/19 20:27:37.825945 [INF] STAN:   Age          :     unlimited *
+[1] 2017/01/19 20:27:37.825949 [INF] STAN: --------------------------------
 
 To use a file based store instead, you would run:
 
 $ docker run -d nats-streaming -store file -dir datastore
 
-[1] 2016/12/21 17:38:25.128903 [INF] Starting nats-streaming-server[test-cluster] version 0.3.6
-[1] 2016/12/21 17:38:25.130717 [INF] Starting nats-server version 0.9.6
-[1] 2016/12/21 17:38:25.130746 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2016/12/21 17:38:25.130819 [INF] Server is ready
-[1] 2016/12/21 17:38:25.409344 [INF] STAN: Message store is FILE
-[1] 2016/12/21 17:38:25.409422 [INF] STAN: --------- Store Limits ---------
-[1] 2016/12/21 17:38:25.409435 [INF] STAN: Channels:                  100 *
-[1] 2016/12/21 17:38:25.409440 [INF] STAN: -------- channels limits -------
-[1] 2016/12/21 17:38:25.409445 [INF] STAN:   Subscriptions:          1000 *
-[1] 2016/12/21 17:38:25.409450 [INF] STAN:   Messages     :       1000000 *
-[1] 2016/12/21 17:38:25.409464 [INF] STAN:   Bytes        :     976.56 MB *
-[1] 2016/12/21 17:38:25.409495 [INF] STAN:   Age          :     unlimited *
-[1] 2016/12/21 17:38:25.409505 [INF] STAN: --------------------------------
+[1] 2017/01/19 20:28:45.169437 [INF] Starting nats-streaming-server[test-cluster] version 0.3.8
+[1] 2017/01/19 20:28:45.169722 [INF] Starting nats-server version 0.9.6
+[1] 2017/01/19 20:28:45.169748 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2017/01/19 20:28:45.169816 [INF] Server is ready
+[1] 2017/01/19 20:28:45.449668 [INF] STAN: Message store is FILE
+[1] 2017/01/19 20:28:45.449705 [INF] STAN: --------- Store Limits ---------
+[1] 2017/01/19 20:28:45.449714 [INF] STAN: Channels:                  100 *
+[1] 2017/01/19 20:28:45.449719 [INF] STAN: -------- channels limits -------
+[1] 2017/01/19 20:28:45.449724 [INF] STAN:   Subscriptions:          1000 *
+[1] 2017/01/19 20:28:45.449729 [INF] STAN:   Messages     :       1000000 *
+[1] 2017/01/19 20:28:45.449799 [INF] STAN:   Bytes        :     976.56 MB *
+[1] 2017/01/19 20:28:45.449805 [INF] STAN:   Age          :     unlimited *
+[1] 2017/01/19 20:28:45.449828 [INF] STAN: --------------------------------
 
 You can also connect to a remote NATS Server running in a docker image.
 First, run NATS Server:
@@ -67,16 +67,17 @@ Now, start the Streaming server and link it to the above docker image:
 
 $ docker run -d --link nats-main nats-streaming -store file -dir datastore -ns nats://nats-main:4222
 
-[1] 2016/12/21 17:40:51.007013 [INF] Starting nats-streaming-server[test-cluster] version 0.3.6
-[1] 2016/12/21 17:40:51.419640 [INF] STAN: Message store is FILE
-[1] 2016/12/21 17:40:51.419752 [INF] STAN: --------- Store Limits ---------
-[1] 2016/12/21 17:40:51.419779 [INF] STAN: Channels:                  100 *
-[1] 2016/12/21 17:40:51.419799 [INF] STAN: -------- channels limits -------
-[1] 2016/12/21 17:40:51.419820 [INF] STAN:   Subscriptions:          1000 *
-[1] 2016/12/21 17:40:51.420004 [INF] STAN:   Messages     :       1000000 *
-[1] 2016/12/21 17:40:51.420083 [INF] STAN:   Bytes        :     976.56 MB *
-[1] 2016/12/21 17:40:51.420275 [INF] STAN:   Age          :     unlimited *
-[1] 2016/12/21 17:40:51.420711 [INF] STAN: --------------------------------
+[1] 2017/01/19 20:29:19.178044 [INF] Starting nats-streaming-server[test-cluster] version 0.3.8
+[1] 2017/01/19 20:29:19.459272 [INF] STAN: Message store is FILE
+[1] 2017/01/19 20:29:19.459322 [INF] STAN: --------- Store Limits ---------
+[1] 2017/01/19 20:29:19.459336 [INF] STAN: Channels:                  100 *
+[1] 2017/01/19 20:29:19.459343 [INF] STAN: -------- channels limits -------
+[1] 2017/01/19 20:29:19.459351 [INF] STAN:   Subscriptions:          1000 *
+[1] 2017/01/19 20:29:19.459375 [INF] STAN:   Messages     :       1000000 *
+[1] 2017/01/19 20:29:19.459396 [INF] STAN:   Bytes        :     976.56 MB *
+[1] 2017/01/19 20:29:19.459407 [INF] STAN:   Age          :     unlimited *
+[1] 2017/01/19 20:29:19.459413 [INF] STAN: --------------------------------
+
 
 Notice that the output shows that the NATS Server was not started, as opposed to the first output.
 
