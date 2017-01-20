@@ -4,10 +4,10 @@
 -	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dbf5702c136a1de7046a935b1d79516d6f82c861/1.4/alpine/Dockerfile)
 -	[`1.5.19`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/67667912113013d9dfd14b503c14e120ceab9899/1.5/Dockerfile)
 -	[`1.5.19-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dbf5702c136a1de7046a935b1d79516d6f82c861/1.5/alpine/Dockerfile)
--	[`1.6.11`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/12dae72c28e152ac9dcd499f156cb0ab79d7c23f/1.6/Dockerfile)
--	[`1.6.11-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dbf5702c136a1de7046a935b1d79516d6f82c861/1.6/alpine/Dockerfile)
--	[`1.7.2`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/d704d453c6ab9cdaa5498c1e14b6e5d0622e629d/1.7/Dockerfile)
--	[`1.7.2-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/d704d453c6ab9cdaa5498c1e14b6e5d0622e629d/1.7/alpine/Dockerfile)
+-	[`1.6.11`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/20816337017096e325c64627e58141e7c9628004/1.6/Dockerfile)
+-	[`1.6.11-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/20816337017096e325c64627e58141e7c9628004/1.6/alpine/Dockerfile)
+-	[`1.7.2`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/20816337017096e325c64627e58141e7c9628004/1.7/Dockerfile)
+-	[`1.7.2-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/20816337017096e325c64627e58141e7c9628004/1.7/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaproxy).
 
