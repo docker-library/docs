@@ -86,5 +86,3 @@ You can use this [stack](https://github.com/convertigo/docker/blob/master/compos
 	wget https://raw.githubusercontent.com/convertigo/docker/master/compose/mbaas/docker-compose.yml
 	docker-compose up -d
 
-# How to extend this image
-
