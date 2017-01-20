@@ -7,7 +7,7 @@ Convertigo Community edition is an open source MBaaS (Mobile Back end as a Servi
 1. Convertigo Studio: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program MBaaS workflows and to build Mobile apps UIs. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
 1. Convertigo SDKs : Can be used with third party Mobile development tools such as Xcode (iOS) Android Studio (Android) and Visual Sudio (Windows Mobile, Windows UWP and Xamarin). SDKS are available on each platform standard repository (Bintray for Android, Cocoapods for iOS and Nuget for .NET) 
 
-Convertigo Community edition brought to you by Convertigo SA (Paris & San Francisco). The patform is currently used by more than 100K developpers worldwide, building enterprise class mobile apps.
+Convertigo Community edition brought to you by Convertigo SA (Paris & San Francisco). The platform is currently used by more than 100K developpers worldwide, building enterprise class mobile apps.
 
 > [www.convertigo.com](https://www.convertigo.com)
 
@@ -18,22 +18,19 @@ Convertigo Community edition brought to you by Convertigo SA (Paris & San Franci
 ## Quick start
 
 ```console
-$ docker run --name C8O -d -p 28080:28080 convertigo-mbaas
+$ docker run --name C8O -d -p 28080:28080 convertigo
 ```
 
 This will start a container running the minium Convertigo MBaaS server. 
 
-You can access the Server admin console  on http://localhost:28080/convertigo and login using the default credentials: admin / admin
+You can access the Server admin console  on http://[dockerhost]:28080/convertigo and login using the default credentials: admin / admin
 
-## Link Convertigo to a Billing database
-
-### MySQL
-
-MySQL is the recommanded database.
 
 ## Link Convertigo to a CouchDB dabase for FullSync (Convertigo EE only)
 
-Convertigo MBaaS uses Apache CouchDB 1.61 as NoSQL repository.
+Convertigo MBaaS uses Apache CouchDB 1.6.1 as NoSQL repository.
+
+## Link Convertigo to a Billing database
 
 ### MySQL
 
@@ -61,25 +58,10 @@ You can share the same workspace by all Convertigo containers. This this case, w
 ## Environment variables
 
 
-### `PLATFORM_PASSWORD`
-
-
-### `PLATFORM_LOGIN`
-
-
-### `TENANT_PASSWORD`
-
-
-### `TENANT_LOGIN`
-
-
-### `REST_API_DYN_AUTH_CHECKS`
-
-
-### `HTTP_API`
-
-
-### `JAVA_OPTS`
+### `JAVA_OPTS` variables
+- -Xmx the maximum heapsize default to 1.4M
+- -Dcems.workspace=
+- To be continued
 
 
 # How to extend this image
