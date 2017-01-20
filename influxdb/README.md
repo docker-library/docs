@@ -2,8 +2,10 @@
 
 -	[`1.0`, `1.0.2` (*influxdb/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/Dockerfile)
 -	[`1.0-alpine`, `1.0.2-alpine` (*influxdb/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/alpine/Dockerfile)
--	[`1.1`, `1.1.1`, `latest` (*influxdb/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fccddeace2827eb50d09bbd2a722d25fb707369f/influxdb/1.1/Dockerfile)
--	[`1.1-alpine`, `1.1.1-alpine`, `alpine` (*influxdb/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fccddeace2827eb50d09bbd2a722d25fb707369f/influxdb/1.1/alpine/Dockerfile)
+-	[`1.1`, `1.1.1`, `latest` (*influxdb/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/influxdb/1.1/Dockerfile)
+-	[`1.1-alpine`, `1.1.1-alpine`, `alpine` (*influxdb/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/influxdb/1.1/alpine/Dockerfile)
+-	[`1.2.0-rc1` (*influxdb/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/61a3386069c770dd519976de6b1faa3c2dccf952/influxdb/1.2/Dockerfile)
+-	[`1.2.0-rc1-alpine` (*influxdb/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/61a3386069c770dd519976de6b1faa3c2dccf952/influxdb/1.2/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
 
@@ -152,7 +154,7 @@ View [license information](https://github.com/influxdata/influxdb/blob/master/LI
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 1.13.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
