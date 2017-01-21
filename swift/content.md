@@ -51,11 +51,3 @@ and then attach it
 ```bash
 docker attach swiftfun
 ```
-
-## Contributions
-
-Contributions via pull requests are welcome and encouraged :)
-
-## License
-
-docker-swift is licensed under the [MIT License.](LICENSE.md)
