@@ -1,1 +1,1 @@
-Convertigo is an open source  Mobile back-end as a Service (MBaaS) combined with a mobile application developement platform (MADP)
+Convertigo is an open source MBaaS/MADP platform for mobile application development and back-end.
