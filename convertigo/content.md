@@ -2,10 +2,10 @@
 
 Convertigo Community edition is an open source MBaaS (Mobile Back end as a Service) combined with a MADP (Mobile application development platform). The platform is used to build complex Cross-platform Enterprise Mobile apps in a few days. Convertigo platform is composed of several components:
  
-1. Convertigo: The back-end MBaaS server part. Runs as a Docker container with **convertigo** image
-2. Convertigo Web Connector: An optional HTML web Connector server able to connect to any HTML based legacy app. Runs as a Docker container with a **web-connector** tag
-3. Convertigo Studio: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program MBaaS workflows and to build Mobile apps UIs. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
-4. Convertigo SDKs : Can be used with third party Mobile development tools such as Xcode (iOS) Android Studio (Android) and Visual Studio (Windows Mobile, Windows UWP and Xamarin). SDKS are available on each platform standard repository (Bintray for Android, Cocoapods for iOS and Nuget for .NET) 
+1. **Convertigo**: The back-end MBaaS server part. Runs as a Docker container with **convertigo** image
+2. **Convertigo Web Connector**: An optional HTML web Connector server able to connect to any HTML based legacy app. Runs as a Docker container with a **web-connector** tag
+3. **Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program MBaaS workflows and to build Mobile apps UIs. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
+4. **Convertigo SDKs**: Can be used with third party Mobile development tools such as Xcode (iOS) Android Studio (Android) and Visual Studio (Windows Mobile, Windows UWP and Xamarin). SDKS are available on each platform standard repository (Bintray for Android, Cocoapods for iOS and Nuget for .NET) 
 
 Convertigo Community edition brought to you by Convertigo SA (Paris & San Francisco). The platform is currently used by more than 100K developers  worldwide, building enterprise class mobile apps.
 
@@ -41,11 +41,11 @@ Then launch Convertigo and link it to the running 'fullsync' container. Converti
 
 MySQL is the recommended database for holding Convertigo MBaaS server analytics. You can use this command to run convertigo and link it to a running MySQL container. Change [mysql] (as the container name), [data base admin user], [data base admin user] with the values for your MySQL configuration. 
 
-	docker run -d --name C8O-MBAAS --link [mysql]:mysql -p 28080:28080 			 			 			\
-		-e JAVA_OPTS="-Dconvertigo.engine.billing.enabled=true						 			 		\ 
-           		-Dconvertigo.engine.billing.persistence.jdbc.username=[data base admin user]	 		\
-           		-Dconvertigo.engine.billing.persistence.jdbc.password=[data base admin user]	 		\
-				-Dconvertigo.engine.billing.persistence.jdbc.url=jdbc:mysql://mysql:3306/c8oAnalytics"	\
+	docker run -d --name C8O-MBAAS --link [mysql]:mysql -p 28080:28080                                   \
+		-e JAVA_OPTS="-Dconvertigo.engine.billing.enabled=true                                           \ 
+           		-Dconvertigo.engine.billing.persistence.jdbc.username=[username for the c8oAnalytics db] \
+           		-Dconvertigo.engine.billing.persistence.jdbc.password=[password for the c8oAnalytics db] \
+				-Dconvertigo.engine.billing.persistence.jdbc.url=jdbc:mysql://mysql:3306/c8oAnalytics"   \
     convertigo
 
 
