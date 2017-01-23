@@ -2,8 +2,10 @@
 
 -	[`3.1.0`, `3.1`, `latest` (*3.1.0/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/36ac547bcffcce2c7c0f249b340d062ba08e2598/3.1.0/community/Dockerfile)
 -	[`3.1.0-enterprise`, `3.1-enterprise`, `enterprise` (*3.1.0/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/36ac547bcffcce2c7c0f249b340d062ba08e2598/3.1.0/enterprise/Dockerfile)
--	[`3.0.7`, `3.0` (*3.0.7/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/36ac547bcffcce2c7c0f249b340d062ba08e2598/3.0.7/community/Dockerfile)
--	[`3.0.7-enterprise`, `3.0-enterprise` (*3.0.7/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/36ac547bcffcce2c7c0f249b340d062ba08e2598/3.0.7/enterprise/Dockerfile)
+-	[`3.0.8`, `3.0` (*3.0.8/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/a03e31e5ed14c3a53ad7c4429f9808e0b354b944/3.0.8/community/Dockerfile)
+-	[`3.0.8-enterprise`, `3.0-enterprise` (*3.0.8/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/a03e31e5ed14c3a53ad7c4429f9808e0b354b944/3.0.8/enterprise/Dockerfile)
+-	[`3.0.7` (*3.0.7/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/36ac547bcffcce2c7c0f249b340d062ba08e2598/3.0.7/community/Dockerfile)
+-	[`3.0.7-enterprise` (*3.0.7/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/36ac547bcffcce2c7c0f249b340d062ba08e2598/3.0.7/enterprise/Dockerfile)
 -	[`3.0.6` (*3.0.6/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/36ac547bcffcce2c7c0f249b340d062ba08e2598/3.0.6/community/Dockerfile)
 -	[`3.0.6-enterprise` (*3.0.6/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/36ac547bcffcce2c7c0f249b340d062ba08e2598/3.0.6/enterprise/Dockerfile)
 -	[`3.0.5` (*3.0.5/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/36ac547bcffcce2c7c0f249b340d062ba08e2598/3.0.5/community/Dockerfile)
