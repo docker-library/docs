@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`lein-2.7.1`, `latest` (*debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/lein/Dockerfile)
--	[`lein-2.7.1-onbuild`, `onbuild` (*debian/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/lein/onbuild/Dockerfile)
+-	[`lein-2.7.1`, `lein`, `latest` (*debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/lein/Dockerfile)
+-	[`lein-2.7.1-onbuild`, `lein-onbuild`, `onbuild` (*debian/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/lein/onbuild/Dockerfile)
 -	[`lein-2.7.1-alpine`, `lein-alpine`, `alpine` (*alpine/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/alpine/lein/Dockerfile)
 -	[`lein-2.7.1-alpine-onbuild`, `lein-alpine-onbuild`, `alpine-onbuild` (*alpine/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/alpine/lein/onbuild/Dockerfile)
 -	[`boot-2.7.1`, `boot` (*debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/boot/Dockerfile)
