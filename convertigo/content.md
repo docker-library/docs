@@ -3,9 +3,9 @@
 Convertigo Community edition is an open source MBaaS (Mobile Back end as a Service) combined with a MADP (Mobile application development platform). The platform is used to build complex Cross-platform Enterprise Mobile apps in a few days. Convertigo platform is composed of several components:
  
 1. Convertigo: The back-end MBaaS server part. Runs as a Docker container with **convertigo** image
-2. Convertigo Web Connector: An optional HTML web Connector server able to connect to any HTML based legacy app. Runs as a Docker container with **convertigo-web-connector** image
-1. Convertigo Studio: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program MBaaS workflows and to build Mobile apps UIs. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
-1. Convertigo SDKs : Can be used with third party Mobile development tools such as Xcode (iOS) Android Studio (Android) and Visual Studio (Windows Mobile, Windows UWP and Xamarin). SDKS are available on each platform standard repository (Bintray for Android, Cocoapods for iOS and Nuget for .NET) 
+2. Convertigo Web Connector: An optional HTML web Connector server able to connect to any HTML based legacy app. Runs as a Docker container with a **web-connector** tag
+3. Convertigo Studio: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program MBaaS workflows and to build Mobile apps UIs. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
+4. Convertigo SDKs : Can be used with third party Mobile development tools such as Xcode (iOS) Android Studio (Android) and Visual Studio (Windows Mobile, Windows UWP and Xamarin). SDKS are available on each platform standard repository (Bintray for Android, Cocoapods for iOS and Nuget for .NET) 
 
 Convertigo Community edition brought to you by Convertigo SA (Paris & San Francisco). The platform is currently used by more than 100K developers  worldwide, building enterprise class mobile apps.
 
@@ -67,15 +67,29 @@ You can share the same workspace by all Convertigo containers. This this case, w
 
 ## Security
 
+The default administration account of a Convertigo serveur is **admin** / **admin** and the **testplatform** is anonymous.
 
-## Environment variables
+These accounts can be configured through the *administration console* and saved in the **workspace**.
 
+### `CONVERTIGO_ADMIN_USER` and `CONVERTIGO_ADMIN_PASSWORD` variables
 
-### `JAVA_OPTS` variables
-Any Java variables such as -Xmx or -D[something]
+You can change the default administration account :
 
-	docker run -d --name C8O-MBAAS -e JAVA_OPTS="-Xmx4096 " -p 28080:28080 convertigo 
- 
+	docker run -d --name C8O-MBAAS -e CONVERTIGO_ADMIN_USER=administrator -e CONVERTIGO_ADMIN_PASSWORD=s3cret -p 28080:28080 convertigo
+
+### `CONVERTIGO_TESTPLATFORM_USER` and `CONVERTIGO_TESTPLATFORM_PASSWORD` variables
+
+You can lock the **testplatform** by setting the account :
+
+	docker run -d --name C8O-MBAAS -e CONVERTIGO_TESTPLATFORM_USER=tp_user -e CONVERTIGO_TESTPLATFORM_PASSWORD=s3cret -p 28080:28080 convertigo
+
+## `JAVA_OPTS` Environment variable
+
+Convertigo is based on a *Java* process with some defaults *JVM* options. You can override our defaults *JVM* options with you own.
+
+Add any *Java JVM* options such as -Xmx or -D[something]
+
+	docker run -d --name C8O-MBAAS -e JAVA_OPTS="-Xmx4096 -DjvmRoute=server1" -p 28080:28080 convertigo
 
 ## Pre configurated Docker compose stack
 
