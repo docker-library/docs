@@ -1,9 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `lein-2.7.1` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/c77c13529de02183433da15e8227eba63cc96724/Dockerfile)
--	[`onbuild`, `lein-2.7.1-onbuild` (*onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/c77c13529de02183433da15e8227eba63cc96724/onbuild/Dockerfile)
--	[`alpine`, `lein-2.7.1-alpine` (*alpine/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/2a0ab08313a24effa5d7b93b1ced8204763e6628/alpine/Dockerfile)
--	[`alpine-onbuild`, `lein-2.7.1-alpine-onbuild` (*alpine-onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/2a0ab08313a24effa5d7b93b1ced8204763e6628/alpine-onbuild/Dockerfile)
+-	[`lein-2.7.1`, `latest` (*debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/lein/Dockerfile)
+-	[`lein-2.7.1-onbuild`, `onbuild` (*debian/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/lein/onbuild/Dockerfile)
+-	[`lein-2.7.1-alpine`, `lein-alpine`, `alpine` (*alpine/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/alpine/lein/Dockerfile)
+-	[`lein-2.7.1-alpine-onbuild`, `lein-alpine-onbuild`, `alpine-onbuild` (*alpine/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/alpine/lein/onbuild/Dockerfile)
+-	[`boot-2.7.1`, `boot` (*debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/boot/Dockerfile)
+-	[`boot-2.7.1-alpine`, `boot-alpine` (*alpine/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/alpine/boot/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclojure).
 
