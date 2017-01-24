@@ -1,6 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.6`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/b2c678c7bcc6bc8d68fb33cb1f169f4b66db308d/Dockerfile)
+-	[`0.9.6`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/24da6ab2af9e849f6a96e32ed2efcb7c0799ab13/Dockerfile)
+-	[`0.9.6-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/24da6ab2af9e849f6a96e32ed2efcb7c0799ab13/windows/nanoserver/Dockerfile)
+-	[`0.9.6-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/24da6ab2af9e849f6a96e32ed2efcb7c0799ab13/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nats`)](https://github.com/docker-library/official-images/blob/master/library/nats). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats).
 
@@ -125,6 +127,23 @@ Common Options:
     -v, --version                    Show version
         --help_tls                   TLS help
 ```
+
+# Image Variants
+
+The `nats` images come in many flavors, each designed for a specific use case.
+
+## `nats:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `nats:windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
