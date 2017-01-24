@@ -1,11 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0`, `1.0.2` (*influxdb/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/Dockerfile)
--	[`1.0-alpine`, `1.0.2-alpine` (*influxdb/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/alpine/Dockerfile)
--	[`1.1`, `1.1.1`, `latest` (*influxdb/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/influxdb/1.1/Dockerfile)
--	[`1.1-alpine`, `1.1.1-alpine`, `alpine` (*influxdb/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/influxdb/1.1/alpine/Dockerfile)
--	[`1.2.0-rc2` (*influxdb/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/78442398996836ae32f67d71333d09e41049a742/influxdb/1.2/Dockerfile)
--	[`1.2.0-rc2-alpine` (*influxdb/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/78442398996836ae32f67d71333d09e41049a742/influxdb/1.2/alpine/Dockerfile)
+-	[`1.1`, `1.1.1` (*influxdb/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/influxdb/1.1/Dockerfile)
+-	[`1.1-alpine`, `1.1.1-alpine` (*influxdb/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/influxdb/1.1/alpine/Dockerfile)
+-	[`1.2`, `1.2.0`, `latest` (*influxdb/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/82eda29631bd35a31cbc93f758ad58e89eab86ae/influxdb/1.2/Dockerfile)
+-	[`1.2-alpine`, `1.2.0-alpine`, `alpine` (*influxdb/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/82eda29631bd35a31cbc93f758ad58e89eab86ae/influxdb/1.2/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
 

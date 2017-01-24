@@ -1,11 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0`, `1.0.2` (*kapacitor/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dec27fb32f5d9696cd0627f3ac97d353f7557b31/kapacitor/1.0/Dockerfile)
--	[`1.0-alpine`, `1.0.2-alpine` (*kapacitor/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dec27fb32f5d9696cd0627f3ac97d353f7557b31/kapacitor/1.0/alpine/Dockerfile)
--	[`1.1`, `1.1.1`, `latest` (*kapacitor/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/kapacitor/1.1/Dockerfile)
--	[`1.1-alpine`, `1.1.1-alpine`, `alpine` (*kapacitor/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/kapacitor/1.1/alpine/Dockerfile)
--	[`1.2.0-rc1` (*kapacitor/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/kapacitor/1.2/Dockerfile)
--	[`1.2.0-rc1-alpine` (*kapacitor/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/kapacitor/1.2/alpine/Dockerfile)
+-	[`1.1`, `1.1.1` (*kapacitor/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/kapacitor/1.1/Dockerfile)
+-	[`1.1-alpine`, `1.1.1-alpine` (*kapacitor/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/kapacitor/1.1/alpine/Dockerfile)
+-	[`1.2`, `1.2.0`, `latest` (*kapacitor/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/82eda29631bd35a31cbc93f758ad58e89eab86ae/kapacitor/1.2/Dockerfile)
+-	[`1.2-alpine`, `1.2.0-alpine`, `alpine` (*kapacitor/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/82eda29631bd35a31cbc93f758ad58e89eab86ae/kapacitor/1.2/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kapacitor`)](https://github.com/docker-library/official-images/blob/master/library/kapacitor). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor).
 
