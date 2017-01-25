@@ -30,13 +30,13 @@ To start the Crate cluster in containers distributed to three hosts without mult
     --ulimit memlock=9223372036854775807 \
         crate \
         crate \
-          -Des.cluster.name=crate-cluster \
-          -Des.node.name=crate1 \
-          -Des.transport.publish_port=4300 \
-          -Des.network.publish_host="$HOST" \
-          -Des.multicast.enabled=false \
-          -Des.discovery.zen.ping.unicast.hosts="$HOSTS" \
-          -Des.discovery.zen.minimum_master_nodes=2
+          -Ccluster.name=crate-cluster \
+          -Cnode.name=crate1 \
+          -Ctransport.publish_port=4300 \
+          -Cnetwork.publish_host="$HOST" \
+          -Cmulticast.enabled=false \
+          -Cdiscovery.zen.ping.unicast.hosts="$HOSTS" \
+          -Cdiscovery.zen.minimum_master_nodes=2
 ```
 
 # The crate Docker Image
@@ -97,10 +97,10 @@ Crate publishes the hostname it runs on for discovery within the cluster. If the
 
 ```console
 # docker run -d -p 4200:4200 -p 4300:4300 \
-    crate crate -Des.network.publish_host=host1.example.com
+    crate crate -Cnetwork.publish_host=host1.example.com
 ```
 
-If you change the transport port from the default `4300` to something else, you need to pass the publish port to Crate by adding `-Des.transport.publish_port=4321` to your command.
+If you change the transport port from the default `4300` to something else, you need to pass the publish port to Crate by adding `-Ctransport.publish_port=4321` to your command.
 
 ## Crate Shell
 
