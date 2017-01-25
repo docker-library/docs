@@ -46,6 +46,41 @@ $ docker run --name some-%%REPO%% --link some-postgres:postgres -d %%REPO%%
 -	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://registry.hub.docker.com/_/postgres/))
 -	ADVANCED OPTIONS; Database host: `postgres` (for using the `/etc/hosts` entry added by `--link` to access the linked container's PostgreSQL instance)
 
+## Volumes
+
+By default, this image does not include any volumes. There is a lot of good discussion on this topic in [docker-library/drupal#3](https://github.com/docker-library/drupal/issues/3), which is definitely recommended reading.
+
+There is consensus that `/var/www/html/modules`, `/var/www/html/profiles`, and `/var/www/html/themes` are things that generally ought to be volumes (and might have an explicit `VOLUME` declaration in a future update to this image), but handling of `/var/www/html/sites` is somewhat more complex, since the contents of that directory *do* need to be initialized with the contents from the image.
+
+If using bind-mounts, one way to accomplish pre-seeding your local `sites` directory would be something like the following:
+
+```console
+$ docker run --rm %%REPO%% tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
+```
+
+This can then be bind-mounted into a new container:
+
+```console
+$ docker run --name some-%%REPO%% --link some-postgres:postgres -d \
+	-v /path/on/host/modules:/var/www/html/modules \
+	-v /path/on/host/profiles:/var/www/html/profiles \
+	-v /path/on/host/sites:/var/www/html/sites \
+	-v /path/on/host/themes:/var/www/html/themes \
+	%%REPO%%
+```
+
+Another solution using Docker Volumes:
+
+```console
+$ docker volume create %%REPO%%-sites
+$ docker run --rm -v %%REPO%%-sites:/temporary/sites %%REPO%% cp -aRT /var/www/html/sites /temporary/sites
+$ docker run --name some-%%REPO%% --link some-postgres:postgres -d \
+	-v %%REPO%%-modules:/var/www/html/modules \
+	-v %%REPO%%-profiles:/var/www/html/profiles \
+	-v %%REPO%%-sites:/var/www/html/sites \
+	-v %%REPO%%-themes:/var/www/html/themes \
+```
+
 ## %%COMPOSE%%
 
 ## Adding additional libraries / extensions
