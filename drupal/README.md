@@ -57,6 +57,41 @@ $ docker run --name some-drupal --link some-postgres:postgres -d drupal
 -	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://registry.hub.docker.com/_/postgres/))
 -	ADVANCED OPTIONS; Database host: `postgres` (for using the `/etc/hosts` entry added by `--link` to access the linked container's PostgreSQL instance)
 
+## Volumes
+
+By default, this image does not include any volumes. There is a lot of good discussion on this topic in [docker-library/drupal#3](https://github.com/docker-library/drupal/issues/3), which is definitely recommended reading.
+
+There is consensus that `/var/www/html/modules`, `/var/www/html/profiles`, and `/var/www/html/themes` are things that generally ought to be volumes (and might have an explicit `VOLUME` declaration in a future update to this image), but handling of `/var/www/html/sites` is somewhat more complex, since the contents of that directory *do* need to be initialized with the contents from the image.
+
+If using bind-mounts, one way to accomplish pre-seeding your local `sites` directory would be something like the following:
+
+```console
+$ docker run --rm drupal tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
+```
+
+This can then be bind-mounted into a new container:
+
+```console
+$ docker run --name some-drupal --link some-postgres:postgres -d \
+	-v /path/on/host/modules:/var/www/html/modules \
+	-v /path/on/host/profiles:/var/www/html/profiles \
+	-v /path/on/host/sites:/var/www/html/sites \
+	-v /path/on/host/themes:/var/www/html/themes \
+	drupal
+```
+
+Another solution using Docker Volumes:
+
+```console
+$ docker volume create drupal-sites
+$ docker run --rm -v drupal-sites:/temporary/sites drupal cp -aRT /var/www/html/sites /temporary/sites
+$ docker run --name some-drupal --link some-postgres:postgres -d \
+	-v drupal-modules:/var/www/html/modules \
+	-v drupal-profiles:/var/www/html/profiles \
+	-v drupal-sites:/var/www/html/sites \
+	-v drupal-themes:/var/www/html/themes \
+```
+
 ## ... via [`docker-compose`](https://github.com/docker/compose)
 
 Example `docker-compose.yml` for `drupal`:
@@ -64,7 +99,8 @@ Example `docker-compose.yml` for `drupal`:
 ```yaml
 # Drupal with PostgreSQL
 #
-# Access via "http://localhost:8080" (or "http://$(docker-machine ip):8080" if using docker-machine)
+# Access via "http://localhost:8080"
+#   (or "http://$(docker-machine ip):8080" if using docker-machine)
 #
 # During initial Drupal setup,
 # Database type: PostgreSQL
@@ -81,6 +117,14 @@ services:
     image: drupal:8.2-apache
     ports:
       - 8080:80
+    volumes:
+      - /var/www/html/modules
+      - /var/www/html/profiles
+      - /var/www/html/themes
+      # this takes advantage of the feature in Docker that a new anonymous
+      # volume (which is what we're creating here) will be initialized with the
+      # existing content of the image at the same location
+      - /var/www/html/sites
     restart: always
 
   postgres:
