@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.7.2` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/81e8c00044cb955a7a232c91dcfcb06611e18cba/0.X/Dockerfile)
+-	[`latest`, `0.7.3` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/c267a8ce53fc5df512ab3bc132967806bde67e16/0.X/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/consul`)](https://github.com/docker-library/official-images/blob/master/library/consul). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconsul).
 
