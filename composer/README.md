@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3.1`, `1.3`, `1`, `latest` (*1.3/Dockerfile*)](https://github.com/composer/docker/blob/eb996e63c904992ebe1092e8732afa553a29932a/1.3/Dockerfile)
+-	[`1.3.2`, `1.3`, `1`, `latest` (*1.3/Dockerfile*)](https://github.com/composer/docker/blob/0a198f372bd82ae7473c38b05c9ae195f9088abe/1.3/Dockerfile)
 -	[`1.2.4`, `1.2` (*1.2/Dockerfile*)](https://github.com/composer/docker/blob/690f3d623ac1ba30be337a254b2126584e6e2aa5/1.2/Dockerfile)
 -	[`1.1.3`, `1.1` (*1.1/Dockerfile*)](https://github.com/composer/docker/blob/be6ecf58913f704399d11a352818b22951832a60/1.1/Dockerfile)
 
