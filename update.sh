@@ -30,13 +30,6 @@ for repo in "${repos[@]}"; do
 	if [ -e "$repo/content.md" ]; then
 		githubRepo="$(cat "$repo/github-repo")"
 		
-		mailingList="$(cat "$repo/mailing-list.md" 2>/dev/null || true)"
-		if [ "$mailingList" ]; then
-			mailingList=" $mailingList "
-		else
-			mailingList=' '
-		fi
-		
 		dockerVersions="$(cat "$repo/docker-versions.md" 2>/dev/null || cat "$helperDir/docker-versions.md")"
 		
 		userFeedback="$(cat "$repo/user-feedback.md" 2>/dev/null || cat "$helperDir/user-feedback.md")"
