@@ -8,17 +8,23 @@ A safe home for all your data. Access & share your files, calendars, contacts, m
 
 # How to use this image
 
-This image is designed to be used in a micro-service environment. It consists of the Nextcloud installation in an [php-fpm](https://hub.docker.com/_/php/) container. To use this image it must be combined with any webserver that can proxy the http requests to the FastCGI-port of the container.
+This image is designed to be used in a micro-service environment. It consists of the Nextcloud installation in an [php](https://hub.docker.com/_/php/) container. To use this image it could be combined with any webserver that can proxy the http requests to the container.
 
 ## Start Nextcloud
 
-Starting Nextcloud php-fpm instance listening on port 9000 is as easy as the following:
+Starting Nextcloud php instance listening on port 80 is as easy as the following:
 
 ```console
 $ docker run -d nextcloud
 ```
 
-Now you can get access to fpm running on port 9000 inside the container. If you want to access it from the internet, we recommend using a reverse proxy in front. You can install it directly on your machine or use an additional container (You can find more information on that on the docker-compose section). Once you have a reverse proxy, you can access Nextcloud at http://localhost/ and go through the wizard.
+Now you can get access to it running on port 80 inside the container. If you want to access it from the internet, we recommend using a reverse proxy in front. You can install it directly on your machine or use an additional container (You can find more information on that on the docker-compose section). Once you have a reverse proxy, you can access Nextcloud at http://localhost/ and go through the wizard.
+
+If you still want to make it listen to public requests directly, you could just run:
+
+```console
+$ docker run -d -p 80:80 nextcloud
+```
 
 By default this container uses SQLite for data storage, but the wizard allows connecting to an existing database. For a MySQL database you can link an database container, e.g. `--link my-mysql:mysql`, and then use `mysql` as the database host on setup.
 
