@@ -213,6 +213,8 @@ If you have any problems with or questions about this image, please contact us t
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
+For general questions about Silverpeas, see our [user mailing list](https://groups.google.com/forum/#!forum/silverpeas-users).
+
 ## Contributing
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
