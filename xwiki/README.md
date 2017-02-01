@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*xwiki-mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/52b982b1c18ed06b87b20d33c677a3efb7b361f6/xwiki-mysql-tomcat/Dockerfile)
--	[`8` (*xwiki-mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/56aa09e5859e22b370a950ec08f9c3a04067915e/xwiki-mysql-tomcat/Dockerfile)
--	[`mysql-tomcat` (*xwiki-mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/52b982b1c18ed06b87b20d33c677a3efb7b361f6/xwiki-mysql-tomcat/Dockerfile)
--	[`8-mysql-tomcat` (*xwiki-mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/56aa09e5859e22b370a950ec08f9c3a04067915e/xwiki-mysql-tomcat/Dockerfile)
+-	[`latest` (*xwiki-mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/6c386ede3706ca0bff2a65d6559e15497d8e4a30/xwiki-mysql-tomcat/Dockerfile)
+-	[`8` (*xwiki-mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/44b586d58e03d569c731519edfb6f6e7175d5c82/xwiki-mysql-tomcat/Dockerfile)
+-	[`mysql-tomcat` (*xwiki-mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/6c386ede3706ca0bff2a65d6559e15497d8e4a30/xwiki-mysql-tomcat/Dockerfile)
+-	[`8-mysql-tomcat` (*xwiki-mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/44b586d58e03d569c731519edfb6f6e7175d5c82/xwiki-mysql-tomcat/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/xwiki`)](https://github.com/docker-library/official-images/blob/master/library/tomee). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fxwiki).
 
