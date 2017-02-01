@@ -2,8 +2,8 @@
 
 -	[`3.0.14`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/30d09dbd6343d3cbd1bbea2d6afde49f5d9a9295/3.0/Dockerfile)
 -	[`3.0.14-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/a51b641c84e1a8d543b6a234a090f8263188139a/3.0/windows/windowsservercore/Dockerfile)
--	[`3.2.11`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/30d09dbd6343d3cbd1bbea2d6afde49f5d9a9295/3.2/Dockerfile)
--	[`3.2.11-windowsservercore`, `3.2-windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/21a6f6cf3eff13a39b20c86224730a29823370ca/3.2/windows/windowsservercore/Dockerfile)
+-	[`3.2.12`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/5c0e43ac8eba7c2fb8cc3de9542f48b31c48da14/3.2/Dockerfile)
+-	[`3.2.12-windowsservercore`, `3.2-windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/5c0e43ac8eba7c2fb8cc3de9542f48b31c48da14/3.2/windows/windowsservercore/Dockerfile)
 -	[`3.4.1`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/30d09dbd6343d3cbd1bbea2d6afde49f5d9a9295/3.4/Dockerfile)
 -	[`3.4.1-windowsservercore`, `3.4-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.4/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/6f548652b0139ff50182c56d3c74efd875f6fb5c/3.4/windows/windowsservercore/Dockerfile)
 
