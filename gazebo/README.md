@@ -28,7 +28,7 @@ Robot simulation is an essential tool in every roboticist's toolbox. A well-desi
 ## Create a `Dockerfile` in your Gazebo project
 
 ```dockerfile
-FROM gazebo:gzserver5
+FROM gazebo:gzserver8
 # place here your application's setup specifics
 CMD [ "gzserver", "my-gazebo-app-args" ]
 ```
@@ -86,6 +86,7 @@ $ docker run -d -v="/tmp/.gazebo/:/root/.gazebo/" --name=gazebo gazebo
 
 ```console
 $ docker exec -it gazebo bash
+$ apt-get update && apt-get install -y curl
 $ curl -o double_pendulum.sdf http://models.gazebosim.org/double_pendulum_with_base/model-1_4.sdf
 $ gz model --model-name double_pendulum --spawn-file double_pendulum.sdf
 ```
