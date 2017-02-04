@@ -27,5 +27,5 @@ $ docker run -p 6697:6697 -v znc-cfg:/znc-data znc
 The port should match the port you used during `--makeconf`. Note that 6667 is
 often blocked by web browsers, and therefore is not recommended.
 
-If you use any external module, put the .cpp, .py or .pl file to
+If you use any external module, put the .cpp, .py or .pm file to
 `/znc-data/modules` (you may need to create that directory).
