@@ -32,7 +32,7 @@ You can also pass in additional flags to `kibana`:
 $ docker run --link some-elasticsearch:elasticsearch -d kibana --plugins /somewhere/else
 ```
 
-This image includes `EXPOSE 5601` ([default `port`](https://www.elastic.co/guide/en/kibana/current/_setting_kibana_server_properties.html)). If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
+This image includes `EXPOSE 5601` ([default `port`](https://www.elastic.co/guide/en/kibana/5.2/settings.html)). If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
 $ docker run --name some-kibana --link some-elasticsearch:elasticsearch -p 5601:5601 -d kibana
