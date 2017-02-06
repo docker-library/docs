@@ -8,8 +8,7 @@ Apache Kafka is an open-source stream processing platform developed by the Apach
 
 # How to use this image
 
-Kafka depends on Zookeeper, so you will always need to have a Zookeeper server running when creating a Kafka container.
-Using the official Zookeeper library is suggested.
+Kafka depends on Zookeeper, so you will always need to have a Zookeeper server running when creating a Kafka container. Using the official Zookeeper library is suggested.
 
 ## Start a Zookeeper server instance
 
@@ -50,7 +49,7 @@ Kafka broker configuration `server.properties` is located in `/config`. One way 
 
 Kafka defaults are used if `server.properties` file is not provided. They can be overridden using the following environment variables.
 
-    $ docker run -e "KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181" --name some-kafka --restart always -d gprivitera/kafka
+	$ docker run -e "KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181" --name some-kafka --restart always -d gprivitera/kafka
 
 ### `KAFKA_ZOOKEEPER_CONNECT`
 
@@ -74,13 +73,11 @@ This environment variables is mandatory if you want to run multiple brokers corr
 
 > The id must be unique and permanent within each node in the cluster.
 
-
 ### `KAFKA_NUM_PARTITIONS`
 
 Defaults to `1`. Kafka's `num.partitions`
 
 > The default number of log partitions per topic
-
 
 ### `KAFKA_DEFAULT_REPLICATION_FACTOR`
 
