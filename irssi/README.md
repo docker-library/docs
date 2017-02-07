@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0.0`, `1.0`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/jessfraz/irssi/blob/ac74c7fdeeb4367d326b04f4990417be5cf27546/debian/Dockerfile)
--	[`1.0.0-alpine`, `1.0-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jessfraz/irssi/blob/ac74c7fdeeb4367d326b04f4990417be5cf27546/alpine/Dockerfile)
+-	[`1.0.1`, `1.0`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/jessfraz/irssi/blob/062d081e278c43458c27586bbd2f0e2ba5321fa1/debian/Dockerfile)
+-	[`1.0.1-alpine`, `1.0-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jessfraz/irssi/blob/062d081e278c43458c27586bbd2f0e2ba5321fa1/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/irssi`)](https://github.com/docker-library/official-images/blob/master/library/irssi). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Firssi).
 
