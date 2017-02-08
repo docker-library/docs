@@ -10,7 +10,7 @@ As an application wiki, XWiki allows for the storing of structured data and the 
 
 # Introduction
 
-The goal is to provide a production-ready XWiki system running in Docker. This why:
+The goal is to provide a production-ready XWiki system running in Docker. This is why:
 - The OS is based on Debian and not on some smaller-footprint distribution like Alpine
 - Several containers are used with Docker Compose: one for the DB and another for XWiki + Servlet container. This allows the ability to run them on different machines for example. 
 
