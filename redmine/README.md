@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.1.7`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/665a1f399082dc01543b36c9aecd0cf4c5ee214e/3.1/Dockerfile)
--	[`3.1.7-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/6fa0f95398d439c53d5c6a86f8f6ebc44d8b1fe0/3.1/passenger/Dockerfile)
+-	[`3.1.7-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/06af4923eb88ca34909dc0fa4c2be77e6e80064d/3.1/passenger/Dockerfile)
 -	[`3.2.5`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/d03bfc8dda6aba04d47abcc4d91c9a022be3ffef/3.2/Dockerfile)
--	[`3.2.5-passenger`, `3.2-passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/6fa0f95398d439c53d5c6a86f8f6ebc44d8b1fe0/3.2/passenger/Dockerfile)
+-	[`3.2.5-passenger`, `3.2-passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/06af4923eb88ca34909dc0fa4c2be77e6e80064d/3.2/passenger/Dockerfile)
 -	[`3.3.2`, `3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/751dc04d76bdec5b92238a6acaa31df610b7d651/3.3/Dockerfile)
--	[`3.3.2-passenger`, `3.3-passenger`, `3-passenger`, `passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/6fa0f95398d439c53d5c6a86f8f6ebc44d8b1fe0/3.3/passenger/Dockerfile)
+-	[`3.3.2-passenger`, `3.3-passenger`, `3-passenger`, `passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/06af4923eb88ca34909dc0fa4c2be77e6e80064d/3.3/passenger/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredmine).
 
