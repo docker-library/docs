@@ -6,7 +6,7 @@ As an application wiki, XWiki allows for the storing of structured data and the 
 
 [XWiki.org's extension wiki](http://extensions.xwiki.org) is home to XWiki extensions ranging from [code snippets](http://snippets.xwiki.org) which can be pasted into wiki pages to loadable core modules. Many of XWiki Enterprise's features are provided by extensions which are bundled with it.
 
-![logo](http://www.xwiki.org/xwiki/bin/view/Main/Logo?xpage=plain&act=svg&finput=logo-xwikiorange.svg&foutput=logo-xwikiorange.png&width=200)
+%%LOGO%%
 
 # Introduction
 
@@ -16,8 +16,6 @@ The goal is to provide a production-ready XWiki system running in Docker. This i
 -	Several containers are used with Docker Compose: one for the DB and another for XWiki + Servlet container. This allows the ability to run them on different machines for example.
 
 # How to use this image
-
-[![](https://images.microbadger.com/badges/version/xwiki/xwiki-mysql-tomcat.svg)](https://microbadger.com/images/xwiki/xwiki-mysql-tomcat) [![](https://images.microbadger.com/badges/image/xwiki/xwiki-mysql-tomcat.svg)](https://microbadger.com/images/xwiki/xwiki-mysql-tomcat)
 
 You should first install [Docker](https://www.docker.com/) on your machine.
 
@@ -46,7 +44,7 @@ For reference here's a minimal Docker Compose file using MySQL that you could us
 version: '2'
 services:
   web:
-    image: "xwiki/xwiki-mysql-tomcat:latest"
+    image: "xwiki:mysql-tomcat"
     depends_on:
       - db
     ports:
@@ -57,7 +55,7 @@ services:
       - MYSQL_USER=xwiki
       - MYSQL_PASSWORD=xwiki
   db:
-    image: "mysql:5"
+    image: "mysql:5.7"
     volumes:
       - ./mysql/xwiki.cnf:/etc/mysql/conf.d/xwiki.cnf
       - mysql-data:/var/lib/mysql
