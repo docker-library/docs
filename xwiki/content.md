@@ -86,14 +86,6 @@ Note that if you want to set a custom version of XWiki you can checkout `master`
 
 Note that `docker-compose up` will automatically build the XWiki image on the first run. If you need to rebuild it you can issue `docker-compose up --build`. You can also build the image with `docker build . -t xwiki-mysql-tomcat:latest` for example.
 
-## Building
-
-This is the simplest solution and the one recommended. Here are the steps:
-
--	Install Git and run `git clone https://github.com/xwiki-contrib/docker-xwiki.git` or download the sources from the GitHub UI. Then choose the branch or tag that you wish to use:
-	-	The `master`branch will get you the latest released version of XWiki
-	-	The `8.x` branch will get you the latest released version of XWiki for the 8.x cycle
-
 # Details for xwiki-mysql-tomcat
 
 ## Configuration Options
