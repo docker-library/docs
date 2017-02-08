@@ -210,7 +210,7 @@ View [license information](https://raw.githubusercontent.com/hashicorp/consul/ma
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.13.0.
+This image is officially supported on Docker version 1.13.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

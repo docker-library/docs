@@ -1,10 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.0` (*0.6/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d12aa78cdbdce22b3d3e30f1093843f21b0a8fa/0.6/Dockerfile)
--	[`0.6`, `0.6.4`, `latest` (*0.6.4/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/43c483e210d7f822782abb120b5d77cc7db7c44e/0.6.4/Dockerfile)
--	[`0.6.1` (*0.6.1/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d12aa78cdbdce22b3d3e30f1093843f21b0a8fa/0.6.1/Dockerfile)
--	[`0.6.2` (*0.6.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d3957180d689ecddb537aa799a878171280e8a3/0.6.2/Dockerfile)
--	[`0.6.3` (*0.6.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/43c483e210d7f822782abb120b5d77cc7db7c44e/0.6.3/Dockerfile)
+-	[`0.6`, `0.6.5`, `latest` (*0.6.5/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/c087a27b5ec93445e89dc46f25af973f114f1399/0.6.5/Dockerfile)
+-	[`0.6.2` (*0.6.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/c087a27b5ec93445e89dc46f25af973f114f1399/0.6.2/Dockerfile)
+-	[`0.6.3` (*0.6.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/c087a27b5ec93445e89dc46f25af973f114f1399/0.6.3/Dockerfile)
+-	[`0.6.4` (*0.6.4/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/c087a27b5ec93445e89dc46f25af973f114f1399/0.6.4/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/vault`)](https://github.com/docker-library/official-images/blob/master/library/vault). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvault).
 
@@ -25,8 +24,7 @@ We chose Alpine as a lightweight base with a reasonably small surface area for s
 
 Vault always runs under [dumb-init](https://github.com/Yelp/dumb-init), which handles reaping zombie processes and forwards signals on to all processes running in the container. This binary is built by HashiCorp and signed with our [GPG key](https://www.hashicorp.com/security.html), so you can verify the signed package used to build a given base image.
 
-Running the Vault container with no arguments will give you a Vault server in [development mode](https://www.vaultproject.io/docs/concepts/dev-server.html). The provided entry point script will also look for Vault subcommands and run `vault` with that subcommand. For example, you can execute `docker run vault
-status` and it will run the `vault status` command inside the container. The entry point also adds some special configuration options as detailed in the sections below when running the `server` subcommand. Any other command gets `exec`-ed inside the container under `dumb-init`.
+Running the Vault container with no arguments will give you a Vault server in [development mode](https://www.vaultproject.io/docs/concepts/dev-server.html). The provided entry point script will also look for Vault subcommands and run `vault` with that subcommand. For example, you can execute `docker run vault status` and it will run the `vault status` command inside the container. The entry point also adds some special configuration options as detailed in the sections below when running the `server` subcommand. Any other command gets `exec`-ed inside the container under `dumb-init`.
 
 The container exposes two optional `VOLUME`s:
 
@@ -34,6 +32,10 @@ The container exposes two optional `VOLUME`s:
 -	`/vault/file`, to use for writing persistent storage data when using the`file` data storage plugin. By default nothing is written here (a `dev` server uses an in-memory data store); the `file` data storage backend must be enabled in Vault's configuration before the container is started.
 
 The container has a Vault configuration directory set up at `/vault/config` and the server will load any HCL or JSON configuration files placed here by binding a volume or by composing a new image and adding files. Alternatively, configuration can be added by passing the configuration JSON via environment variable `VAULT_LOCAL_CONFIG`. Please note that due to a bug in the current release of Vault (0.6.0), you should *not* use the name `local.json` for any configuration file in this directory.
+
+## Memory Locking and 'setcap'
+
+The container will attempt to lock memory to prevent sensitive values from being swapped to disk and as a result must have `--cap-add=IPC_LOCK` provided to `docker run`. Since the Vault binary runs as a non-root user, `setcap` is used to give the binary the ability to lock memory. With some Docker storage plugins in some distributions this call will not work correctly; it seems to fail most often with AUFS. The memory locking behavior can be disabled by setting the `SKIP_SETCAP` environment variable to any non-empty value.
 
 ## Running Vault for Development
 
@@ -74,7 +76,7 @@ View [license information](https://raw.githubusercontent.com/hashicorp/vault/mas
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.13.0.
+This image is officially supported on Docker version 1.13.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
