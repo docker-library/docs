@@ -35,7 +35,7 @@ You need to run 2 containers:
 
 Start by running a MySQL container and ensure you configure MySQL to use UTF8. The command below will also configure the MySQL container to save its data on your localhost in a `/my/own/mysql` directory: 
 
-```
+```console
 docker run --name mysql-xwiki -v /my/own/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki -d mysql:5.7 --character-set-server=utf8 --collation-server=utf8_bin --explicit-defaults-for-timestamp=1 
 ```
 
@@ -43,7 +43,7 @@ You should adapt the command line to use the passwords that you wish for the MyS
 
 Then run XWiki in another container by issuing the following command:
 
-```
+```console
 docker run --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki --link mysql-xwiki:db xwiki:mysql-tomcat
 ```
 
