@@ -21,8 +21,8 @@ You should first install [Docker](https://www.docker.com/) on your machine.
 
 Then there are several options:
 
-1.	Get the [sources of this project](https://github.com/xwiki-contrib/docker-xwiki) and build them.
-2.	Just pull the xwiki image from DockerHub.
+1.	Pull the xwiki image from DockerHub.
+2.	Get the [sources of this project](https://github.com/xwiki-contrib/docker-xwiki) and build them.
 
 ## Pulling existing image
 
@@ -31,10 +31,34 @@ You need to run 2 containers:
 -	One for the XWiki image
 -	One for the database image to which XWiki connects to
 
-The simplest is to use the Docker Compose file we provide. Run the following steps:
+### Using docker run
 
--	`wget https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/xwiki-mysql-tomcat/docker-compose-using.yml`
-	-	If you're not using the `latest` tag then use the corresponding GitHub branch/tag. For example for the `8.x` branch: `wget https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/8.x/xwiki-mysql-tomcat/docker-compose-using.yml`
+Start by running a MySQL container and ensure you configure MySQL to use UTF8. The command below will also configure the MySQL container to save its data on your localhost in a `/my/own/mysql` directory:
+
+```console
+docker run --name mysql-xwiki -v /my/own/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki -d mysql:5.7 --character-set-server=utf8 --collation-server=utf8_bin --explicit-defaults-for-timestamp=1 
+```
+
+You should adapt the command line to use the passwords that you wish for the MySQL root password and for the xwiki user password.
+
+Then run XWiki in another container by issuing the following command:
+
+```console
+docker run --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki --link mysql-xwiki:db xwiki:mysql-tomcat
+```
+
+Be careful to use the same MySQL username, password and database names that you've used on the first command to start the MySQL container.
+
+### Using docker-compose
+
+Another solution is to use the Docker Compose file we provide. Run the following steps:
+
+-	`wget https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/xwiki-mysql-tomcat/mysql/xwiki.cnf`: This will download the MySQL configuration (UTF8, etc)
+	-	If you don't have `wget` or prefer to use `curl`: `curl -fSL https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/xwiki-mysql-tomcat/mysql/xwiki.cnf -o xwiki.cnf`
+	-	If you're not using the `latest` tag then use the corresponding GitHub branch/tag. For example for the `8.x` branch: `wget https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/8.x/xwiki-mysql-tomcat/mysql/xwiki.cnf`
+-	`wget -O docker-compose.yml https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/xwiki-mysql-tomcat/docker-compose-using.yml`
+	-	If you don't have `wget` or prefer to use `curl`: `curl -fSL https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/xwiki-mysql-tomcat/docker-compose-using.yml -o docker-compose.yml`
+	-	If you're not using the `latest` tag then use the corresponding GitHub branch/tag. For example for the `8.x` branch: `wget -O docker-compose.yml https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/8.x/xwiki-mysql-tomcat/docker-compose-using.yml`
 -	You can edit the compose file retrieved to change the default username/password and other environment variables.
 -	`docker-compose up`
 
@@ -49,15 +73,15 @@ services:
       - db
     ports:
       - "8080:8080"
-    volumes:
-      - xwiki-data:/var/lib/xwiki
     environment:
       - MYSQL_USER=xwiki
       - MYSQL_PASSWORD=xwiki
+    volumes:
+      - xwiki-data:/usr/local/xwiki
   db:
     image: "mysql:5.7"
     volumes:
-      - ./mysql/xwiki.cnf:/etc/mysql/conf.d/xwiki.cnf
+      - ./xwiki.cnf:/etc/mysql/conf.d/xwiki.cnf
       - mysql-data:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=xwiki
@@ -98,6 +122,8 @@ The first time you create a container out of the xwiki image, a shell script (`/
 ## Miscellaneous
 
 Volumes:
+
+If you don't map any volume when using `docker run` or if you use `docker-compose` then Docker will create some internal volumes attached to your containers as follows.
 
 -	Two volumes are created:
 	-	A volume named `<prefix>_mysql-data` that contains the database data.
