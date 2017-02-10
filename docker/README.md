@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.0`, `1.13`, `1`, `latest` (*1.13/Dockerfile*)](https://github.com/docker-library/docker/blob/b202ec7e529f5426e2ad7e8c0a8b82cacd406573/1.13/Dockerfile)
--	[`1.13.0-dind`, `1.13-dind`, `1-dind`, `dind` (*1.13/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/b202ec7e529f5426e2ad7e8c0a8b82cacd406573/1.13/dind/Dockerfile)
--	[`1.13.0-git`, `1.13-git`, `1-git`, `git` (*1.13/git/Dockerfile*)](https://github.com/docker-library/docker/blob/b202ec7e529f5426e2ad7e8c0a8b82cacd406573/1.13/git/Dockerfile)
+-	[`1.13.1`, `1.13`, `1`, `latest` (*1.13/Dockerfile*)](https://github.com/docker-library/docker/blob/50ec917e1b7601d655daee8893567e8cfd213248/1.13/Dockerfile)
+-	[`1.13.1-dind`, `1.13-dind`, `1-dind`, `dind` (*1.13/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/b202ec7e529f5426e2ad7e8c0a8b82cacd406573/1.13/dind/Dockerfile)
+-	[`1.13.1-git`, `1.13-git`, `1-git`, `git` (*1.13/git/Dockerfile*)](https://github.com/docker-library/docker/blob/b202ec7e529f5426e2ad7e8c0a8b82cacd406573/1.13/git/Dockerfile)
 -	[`1.12.6`, `1.12` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/05678f7f3198d0787d78de9bdc084dcffccf7276/1.12/Dockerfile)
 -	[`1.12.6-dind`, `1.12-dind` (*1.12/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c1af76ec4c97ff24dcf6675b55b12105216dc711/1.12/dind/Dockerfile)
 -	[`1.12.6-git`, `1.12-git` (*1.12/git/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/git/Dockerfile)
