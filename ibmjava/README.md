@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8-jre`, `jre`, `8`, `latest` (*ibmjava/8-jre/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/3042461027dfb7a19b9ae7c7d41e777889caaa9d/ibmjava/8-jre/x86_64/ubuntu/Dockerfile)
--	[`8-jre-alpine`, `jre-alpine` (*ibmjava/8-jre/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/3042461027dfb7a19b9ae7c7d41e777889caaa9d/ibmjava/8-jre/x86_64/alpine/Dockerfile)
--	[`8-sfj`, `sfj` (*ibmjava/8-sfj/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/3042461027dfb7a19b9ae7c7d41e777889caaa9d/ibmjava/8-sfj/x86_64/ubuntu/Dockerfile)
--	[`8-sfj-alpine`, `sfj-alpine` (*ibmjava/8-sfj/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/3042461027dfb7a19b9ae7c7d41e777889caaa9d/ibmjava/8-sfj/x86_64/alpine/Dockerfile)
--	[`8-sdk`, `sdk` (*ibmjava/8-sdk/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/3042461027dfb7a19b9ae7c7d41e777889caaa9d/ibmjava/8-sdk/x86_64/ubuntu/Dockerfile)
+-	[`8-jre`, `jre`, `8`, `latest` (*ibmjava/8-jre/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/55b323f6e498d302239926d163c9ef04eb0d92b9/ibmjava/8-jre/x86_64/ubuntu/Dockerfile)
+-	[`8-jre-alpine`, `jre-alpine` (*ibmjava/8-jre/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/55b323f6e498d302239926d163c9ef04eb0d92b9/ibmjava/8-jre/x86_64/alpine/Dockerfile)
+-	[`8-sfj`, `sfj` (*ibmjava/8-sfj/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/55b323f6e498d302239926d163c9ef04eb0d92b9/ibmjava/8-sfj/x86_64/ubuntu/Dockerfile)
+-	[`8-sfj-alpine`, `sfj-alpine` (*ibmjava/8-sfj/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/55b323f6e498d302239926d163c9ef04eb0d92b9/ibmjava/8-sfj/x86_64/alpine/Dockerfile)
+-	[`8-sdk`, `sdk` (*ibmjava/8-sdk/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/55b323f6e498d302239926d163c9ef04eb0d92b9/ibmjava/8-sdk/x86_64/ubuntu/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ibmjava`)](https://github.com/docker-library/official-images/blob/master/library/ibmjava). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fibmjava).
 
@@ -12,7 +12,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 ### Overview
 
-The images in this repository contain IBM® SDK, Java™ Technology Edition, version 1.8.0\_sr4 (8.0-4.0). See [what's new](http://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/preface/changes_80/changes.html). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation, see the [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SSYKE2/welcome_javasdk_family.html). For tutorials, recipes, and Java usage in Bluemix, see [IBM developerWorks](http://www.ibm.com/developerworks/java).
+The images in this repository contain IBM® SDK, Java™ Technology Edition, version 1.8.0\_sr3fp22 (8.0-3.22). See [what's new](http://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/preface/changes_80/changes.html). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation, see the [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SSYKE2/welcome_javasdk_family.html). For tutorials, recipes, and Java usage in Bluemix, see [IBM developerWorks](http://www.ibm.com/developerworks/java).
 
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Oracle and/or its affiliates.
 
