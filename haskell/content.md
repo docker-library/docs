@@ -17,7 +17,7 @@ This image ships a minimal Haskell toolchain with the following packages from th
 -	`cabal-install`
 -	`happy`
 
-As of `7.10.3`, the `stack` tool is included via FPComplete's Debian repository.
+As of `7.10.3`, the `stack` tool is included.
 
 Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). While older GHC release tags are available in this DockerHub repository, only the latest stable release (or upcoming release candidates) will be shown in the "Supported tags ..." section at the top of this page.
 
@@ -26,15 +26,15 @@ Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). 
 Start an interactive interpreter session with `ghci`:
 
 ```console
-$ docker run -it --rm haskell:7.10.3
-GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
+$ docker run -it --rm haskell:8
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
 Prelude>
 ```
 
 Dockerize an application from Hackage with a `Dockerfile`:
 
 ```dockerfile
-FROM haskell:7
+FROM haskell:8
 RUN stack install pandoc pandoc-citeproc
 ENTRYPOINT ["pandoc"]
 ```
@@ -42,7 +42,7 @@ ENTRYPOINT ["pandoc"]
 Alternatively, using `cabal`:
 
 ```dockerfile
-FROM haskell:7
+FROM haskell:8
 RUN cabal update && cabal install pandoc pandoc-citeproc
 ENTRYPOINT ["pandoc"]
 ```
