@@ -50,7 +50,7 @@ After running the eggdrop container for the first time, the configuration file, 
 $ docker run -i -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop
 ```
 
-If you provide your own config file, specify it as the argument to the docker container:
+If you provide your own config file, place it in the data dir and specify it as the argument to the docker container:
 
 ```console
 $ docker run -i -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop mybot.conf
