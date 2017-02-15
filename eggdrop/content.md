@@ -72,6 +72,12 @@ If you want to expose network connections for your bot, you'll also want to use 
 
 to your docker run command line.
 
+## Docker-isms
+
+IMPORTANT - Due to how alpine (doesn't) handle DNS functionality properly, for the time being you MUST eith a) manually add a DNS server to your eggdrop config (`set dns-servers "8.8.8.8 8.8.4.4"` would do the trick) or b) disable the DNS module (commenting out `loadmodule dns` in the config) in order for DNS resolution to work. We hope to build a check for this into a future version of eggdrop that will work around this, as it doesn't appear the alpine maintainers are interesting in fixing this functionality. 
+
+You'll know you're affected by this quirk if you see errors such as `nslookup: can't resolve '(null)': Name does not resolve` or the generic `Failed connect to irc.freenode.net (DNS lookup failed)`.
+
 ## Troubleshooting / Support
 
 For additional help, you can join the #eggdrop channel on Freenode
