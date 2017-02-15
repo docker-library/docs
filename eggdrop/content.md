@@ -38,6 +38,10 @@ Only one server can be specified via an environmental variable. The + denotes an
 
 This variable sets the nickname used by eggdrop. After the first use, you should change it by editing the eggdrop config directly (see Long-term Persistence below).
 
+### `LISTEN`
+
+This variable will set the TCP port that Eggdrop will listen for incoming connections on (the equivilent of `listen XXXX all` in the config). If you set this, you will likely need to adjust the `-p` flag to match in your `docker run` command. 
+
 ## Long-term Persistence
 
 After running the eggdrop container for the first time, the configuration file, user file and channel file will all be available inside the container at /home/eggdrop/eggdrop/data/ . NOTE! These files are only as persistent as the container they exist in. If you expect to use a different container over the course of using the Eggdrop docker image (intentionally or not) you will want to create a persistent data store. The easiest way to do this is to mount a directory on your host machine to /home/eggdrop/eggdrop/data. If you do this prior to your first run, you can easily edit the eggdrop configuration file on the host. Otherwise, you can also drop in existing config, user, or channel files into the mounted directory for use in the eggdrop container. You'll also likely want to daemonize eggdrop (ie, run it in the background). To do this, start your container with something similar to
