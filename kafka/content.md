@@ -51,36 +51,34 @@ Kafka defaults are used if `server.properties` file is not provided. They can be
 
 	$ docker run -e "KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181" --name some-kafka --restart always -d gprivitera/kafka
 
-### `KAFKA_ZOOKEEPER_CONNECT`
+Refer to the [official documentation](https://kafka.apache.org/documentation/) for more configuration details.
 
-Defaults to `zookeeper`. Kafka's `zookeeper.connect`
+#### `KAFKA_ZOOKEEPER_CONNECT`
 
-> Specifies the ZooKeeper connection string in the form hostname:port where host and port are the host and port of a ZooKeeper server. To allow connecting through other ZooKeeper nodes when that ZooKeeper machine is down you can also specify multiple hosts in the form hostname1:port1,hostname2:port2,hostname3:port3.
+Sets Kafka's `zookeeper.connect`
 
-### `KAFKA_LOGS_DIR`
+#### `KAFKA_LOGS_DIR`
 
-Defaults to `/kafka-logs`. Kafka's `log.dirs`
-
-> The directories in which the log data is kept.
+Sets Kafka's `log.dirs`
 
 ## Multiple brokers mode
 
-### `KAFKA_BROKER_ID`
+#### `KAFKA_BROKER_ID`
 
-Defaults to `0`. Kafka's `broker.id`
+Sets Kafka's `broker.id`
 
-This environment variables is mandatory if you want to run multiple brokers correctly.
+#### `KAFKA_LISTENERS`
 
-> The id must be unique and permanent within each node in the cluster.
+Sets Kafka's `listeners`
 
-### `KAFKA_NUM_PARTITIONS`
+#### `KAFKA_ADVERTISED_LISTENERS`
 
-Defaults to `1`. Kafka's `num.partitions`
+Sets Kafka's `advertised.listeners`
 
-> The default number of log partitions per topic
+#### `KAFKA_NUM_PARTITIONS`
 
-### `KAFKA_DEFAULT_REPLICATION_FACTOR`
+Sets Kafka's `num.partitions`
 
-Defaults to `1`. Kafka's `default.replication.factor`
+#### `KAFKA_DEFAULT_REPLICATION_FACTOR`
 
-> Default replication factor for automatically created topics
+Sets Kafka's `default.replication.factor`
