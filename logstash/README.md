@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.0`, `5.2`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/3e0af5d894e622dadf08ec849386ed64da23bb4b/5/Dockerfile)
--	[`5.2.0-alpine`, `5.2-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/3e0af5d894e622dadf08ec849386ed64da23bb4b/5/alpine/Dockerfile)
+-	[`5.2.1`, `5.2`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/8b6fc0025e4201cca3a35b0bd0c9e564371f9d5f/5/Dockerfile)
+-	[`5.2.1-alpine`, `5.2-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/b9d2c963d400d391b35c9e3f2cb644ddb923a9c4/5/alpine/Dockerfile)
 -	[`2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/754eeb919e42b1f6f2708b73f6f13cbc06fd722c/2.4/Dockerfile)
--	[`2.4.1-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/2.4/alpine/Dockerfile)
+-	[`2.4.1-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/6e2d8dc1263d098129a264deeca065129b6c4bca/2.4/alpine/Dockerfile)
 -	[`1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/754eeb919e42b1f6f2708b73f6f13cbc06fd722c/1.5/Dockerfile)
--	[`1.5.6-alpine`, `1.5-alpine`, `1-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/93d338f878f4adb1e4e8fa31407d9b4263c41932/1.5/alpine/Dockerfile)
+-	[`1.5.6-alpine`, `1.5-alpine`, `1-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/7eaa1cd9db876cd1e57371a7a515988c9768e7cc/1.5/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash).
 
