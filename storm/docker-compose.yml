@@ -6,7 +6,7 @@ services:
         restart: always
 
     nimbus:
-        image: storm:1.0.3
+        image: storm:1.0
         container_name: nimbus
         command: storm nimbus
         depends_on:
@@ -18,7 +18,7 @@ services:
             - 6627:6627
 
     supervisor:
-        image: storm:1.0.3
+        image: storm:1.0
         container_name: supervisor
         command: storm supervisor
         depends_on:
