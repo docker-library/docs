@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.3`, `6.0` (*6.0/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/5cb379d682574ad2170166d93306124c633a644f/6.0/Dockerfile)
--	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/94415d471c10c4e64ca1bae2d753cbe94fd5fa61/6.1/Dockerfile)
+-	[`6.0.3`, `6.0` (*6.0/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/ca600ed95f9fa8ec632ef2ad0526c15d917a52b7/6.0/Dockerfile)
+-	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/22d6045bab9625ea9f8b3e1e53c4c34383335ed3/6.1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/lightstreamer`)](https://github.com/docker-library/official-images/blob/master/library/lightstreamer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flightstreamer).
 
