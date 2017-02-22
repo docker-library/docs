@@ -1,0 +1,3 @@
+This image is officially deprecated in favor of [the `logstash` image provided by elastic.co](https://www.elastic.co/guide/en/logstash/5.2/docker.html) which is available to pull via `docker.elastic.co/logstash/logstash:[version]` like `5.2.1`. This image will receive no further updates after 2017-06-20 (June 20, 2017). Please adjust your usage accordingly.
+
+The team at Elastic.co prefer to offer Docker images on their infrastructure rather than through the "Official Images" program and the images are fully supported by them through their subscription program. You can also reach the community on the [forums](https://discuss.elastic.co/c/logstash).
