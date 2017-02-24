@@ -1,3 +1,9 @@
+# **DEPRECATED**
+
+This image is officially deprecated in favor of [the `logstash` image provided by elastic.co](https://www.elastic.co/guide/en/logstash/current/docker.html) which is available to pull via `docker.elastic.co/logstash/logstash:[version]` like `5.2.1`. This image will receive no further updates after 2017-06-20 (June 20, 2017). Please adjust your usage accordingly.
+
+Elastic provides open-source support for Logstash via the [elastic/logstash GitHub repository](https://github.com/elastic/logstash) and the Docker image via the [elastic/logstash-docker GitHub repository](https://github.com/elastic/logstash-docker), as well as community support via its [forums](https://discuss.elastic.co/c/logstash).
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.2.1`, `5.2`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/8b6fc0025e4201cca3a35b0bd0c9e564371f9d5f/5/Dockerfile)
