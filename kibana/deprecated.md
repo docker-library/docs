@@ -1,0 +1,3 @@
+This image is officially deprecated in favor of [the `kibana` image provided by elastic.co](https://www.elastic.co/guide/en/kibana/current/_pulling_the_image.html) which is available to pull via `docker.elastic.co/kibana/kibana:[version]` like `5.2.1`. This image will receive no further updates after 2017-06-20 (June 20, 2017). Please adjust your usage accordingly.
+
+Elastic provides open-source support for Kibana via the [elastic/kibana GitHub repository](https://github.com/elastic/kibana) and the Docker image via the [elastic/kibana-docker GitHub repository](https://github.com/elastic/kibana-docker), as well as community support via its [forums](https://discuss.elastic.co/c/kibana).
