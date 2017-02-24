@@ -33,7 +33,7 @@ You need to run 2 containers:
 
 ### Using docker run
 
-Start by creating a dedicated docker network
+Start by creating a dedicated docker network:
 
 ```console
 docker network create -d bridge xwiki-nw 
@@ -53,7 +53,7 @@ Then run XWiki in another container by issuing the following command:
 docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki -e DB_CONTAINER_NAME=mysql-xwiki xwiki:mysql-tomcat
 ```
 
-Be careful to use the same MySQL username, password and database names that you've used on the first command to start the MySQL container. Also, please don't forget to add a '-e DB_CONTAINER_NAME=' env variable with the name of the previously created MySQL container so that XWiki knows where its database is.
+Be careful to use the same MySQL username, password and database names that you've used on the first command to start the MySQL container. Also, please don't forget to add a `-e DB_CONTAINER_NAME=` env variable with the name of the previously created MySQL container so that XWiki knows where its database is.
 
 At this point, XWiki should start in interactive blocking mode, allowing you to see logs in the console. Should you wish to run it in "detached mode", just add a "-d" flag in the previous command.
 
@@ -64,6 +64,7 @@ docker run -d --net=xwiki-nw ...
 ### Using docker-compose
 
 Another solution is to use the Docker Compose file we provide. Run the following steps:
+
 -	`wget https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/8/mysql-tomcat/mysql/xwiki.cnf`: This will download the MySQL configuration (UTF8, etc)
 	-	If you don't have `wget` or prefer to use `curl`: `curl -fSL https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/8/mysql-tomcat/mysql/xwiki.cnf -o xwiki.cnf`
 -	`wget -O docker-compose.yml https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/docker-compose-using.yml`
