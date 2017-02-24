@@ -39,7 +39,7 @@ Start by creating a dedicated docker network:
 docker network create -d bridge xwiki-nw
 ```
 
-Then run a MySQL container and ensure you configure MySQL to use UTF8. The command below will also configure the MySQL container to save its data on your localhost in a `/my/own/mysql` directory: 
+Then run a MySQL container and ensure you configure MySQL to use UTF8. The command below will also configure the MySQL container to save its data on your localhost in a `/my/own/mysql` directory:
 
 ```console
 docker run --net=xwiki-nw --name mysql-xwiki -v /my/own/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki -d mysql:5.7 --character-set-server=utf8 --collation-server=utf8_bin --explicit-defaults-for-timestamp=1
