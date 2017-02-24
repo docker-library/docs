@@ -33,10 +33,16 @@ You need to run 2 containers:
 
 ### Using docker run
 
-Start by running a MySQL container and ensure you configure MySQL to use UTF8. The command below will also configure the MySQL container to save its data on your localhost in a `/my/own/mysql` directory:
+Start by creating a dedicated docker network
 
 ```console
-docker run --name mysql-xwiki -v /my/own/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki -d mysql:5.7 --character-set-server=utf8 --collation-server=utf8_bin --explicit-defaults-for-timestamp=1 
+docker network create -d bridge xwiki-nw 
+```
+
+Then run a MySQL container and ensure you configure MySQL to use UTF8. The command below will also configure the MySQL container to save its data on your localhost in a `/my/own/mysql` directory: 
+
+```console
+docker run --net=xwiki-nw --name mysql-xwiki -v /my/own/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki -d mysql:5.7 --character-set-server=utf8 --collation-server=utf8_bin --explicit-defaults-for-timestamp=1 
 ```
 
 You should adapt the command line to use the passwords that you wish for the MySQL root password and for the xwiki user password.
@@ -44,28 +50,34 @@ You should adapt the command line to use the passwords that you wish for the MyS
 Then run XWiki in another container by issuing the following command:
 
 ```console
-docker run --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki --link mysql-xwiki:db xwiki:mysql-tomcat
+docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki -e DB_CONTAINER_NAME=mysql-xwiki xwiki:mysql-tomcat
 ```
 
-Be careful to use the same MySQL username, password and database names that you've used on the first command to start the MySQL container.
+Be careful to use the same MySQL username, password and database names that you've used on the first command to start the MySQL container. Also, please don't forget to add a '-e DB_CONTAINER_NAME=' env variable with the name of the previously created MySQL container so that XWiki knows where its database is.
+
+At this point, XWiki should start in interactive blocking mode, allowing you to see logs in the console. Should you wish to run it in "detached mode", just add a "-d" flag in the previous command.
+
+```console
+docker run -d --net=xwiki-nw ...
+```
 
 ### Using docker-compose
 
 Another solution is to use the Docker Compose file we provide. Run the following steps:
-
--	`wget https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/xwiki-mysql-tomcat/mysql/xwiki.cnf`: This will download the MySQL configuration (UTF8, etc)
-	-	If you don't have `wget` or prefer to use `curl`: `curl -fSL https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/xwiki-mysql-tomcat/mysql/xwiki.cnf -o xwiki.cnf`
-	-	If you're not using the `latest` tag then use the corresponding GitHub branch/tag. For example for the `8.x` branch: `wget https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/8.x/xwiki-mysql-tomcat/mysql/xwiki.cnf`
--	`wget -O docker-compose.yml https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/xwiki-mysql-tomcat/docker-compose-using.yml`
-	-	If you don't have `wget` or prefer to use `curl`: `curl -fSL https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/xwiki-mysql-tomcat/docker-compose-using.yml -o docker-compose.yml`
-	-	If you're not using the `latest` tag then use the corresponding GitHub branch/tag. For example for the `8.x` branch: `wget -O docker-compose.yml https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/8.x/xwiki-mysql-tomcat/docker-compose-using.yml`
+-	`wget https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/8/mysql-tomcat/mysql/xwiki.cnf`: This will download the MySQL configuration (UTF8, etc)
+	-	If you don't have `wget` or prefer to use `curl`: `curl -fSL https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/8/mysql-tomcat/mysql/xwiki.cnf -o xwiki.cnf`
+-	`wget -O docker-compose.yml https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/docker-compose-using.yml`
+	-	If you don't have `wget` or prefer to use `curl`: `curl -fSL https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/docker-compose-using.yml -o docker-compose.yml`
 -	You can edit the compose file retrieved to change the default username/password and other environment variables.
 -	`docker-compose up`
 
-For reference here's a minimal Docker Compose file using MySQL that you could use as an example (full example [here](https://github.com/xwiki-contrib/docker-xwiki/blob/master/xwiki-mysql-tomcat/docker-compose-using.yml)):
+For reference here's a minimal Docker Compose file using MySQL that you could use as an example (full example [here](https://github.com/xwiki-contrib/docker-xwiki/blob/master/docker-compose-using.yml)):
 
 ```yaml
 version: '2'
+networks:
+  bridge:
+    driver: bridge
 services:
   web:
     image: "xwiki:mysql-tomcat"
@@ -76,8 +88,11 @@ services:
     environment:
       - MYSQL_USER=xwiki
       - MYSQL_PASSWORD=xwiki
+      - DB_CONTAINER_NAME=xwiki-mysql
     volumes:
       - xwiki-data:/usr/local/xwiki
+    networks:
+      - bridge
   db:
     image: "mysql:5.7"
     volumes:
@@ -88,6 +103,8 @@ services:
       - MYSQL_USER=xwiki
       - MYSQL_PASSWORD=xwiki
       - MYSQL_DATABASE=xwiki
+    networks:
+      - bridge
 volumes:
   mysql-data: {}
   xwiki-data: {}
@@ -97,16 +114,14 @@ volumes:
 
 This allows you to rebuild the XWiki docker image locally. Here are the steps:
 
--	Install Git and run `git clone https://github.com/xwiki-contrib/docker-xwiki.git` or download the sources from the GitHub UI. Then choose the branch or tag that you wish to use:
-	-	The `master`branch will get you the latest released version of XWiki
-	-	The `8.x` branch will get you the latest released version of XWiki for the 8.x cycle
-	-	The `8.4.4` tag will get you exactly XWiki 8.4.4.
+-	Install Git and run `git clone https://github.com/xwiki-contrib/docker-xwiki.git` or download the sources from the GitHub UI. Then go to the directory corresponding to the docker tag you wish to use. For example: `cd 8/mysql-tomcat`
+	-	The `8/mysql-tomcat` directory will get you the latest released XWiki version of the 8.x cycle running on Tomcat and for MySQL.
+	-	The `9/mysql-tomcat` directory will get you the latest released XWiki version of the 9.x cycle running on Tomcat and for MySQL.
 	-	etc.
--	Go the directory corresponding to the configuration you wish to build, for example: `cd xwiki-mysql-tomcat`.
 -	Run `docker-compose up`
 -	Start a browser and point it to `http://localhost:8080`
 
-Note that if you want to set a custom version of XWiki you can checkout `master` and edit the `env` file and set the values you need in there. It's also possible to override them on the command line with `docker-compose run -e "XWIKI_VERSION=8.4.4"`.
+Note that if you want to set a custom version of XWiki you can edit the `.env` file and set the values you need in there. It's also possible to override them on the command line with `docker-compose run -e "XWIKI_VERSION=8.4.4"`.
 
 Note that `docker-compose up` will automatically build the XWiki image on the first run. If you need to rebuild it you can issue `docker-compose up --build`. You can also build the image with `docker build . -t xwiki-mysql-tomcat:latest` for example.
 
@@ -114,10 +129,12 @@ Note that `docker-compose up` will automatically build the XWiki image on the fi
 
 ## Configuration Options
 
-The first time you create a container out of the xwiki image, a shell script (`/usr/local/bin/start_xwiki.sh`) is executed in the container to setup some configuration. The following environment variables can be passed:
+The first time you create a container out of the xwiki image, a shell script (`/usr/local/bin/docker-entrypoint.sh`) is executed in the container to setup some configuration. The following environment variables can be passed:
 
 -	`MYSQL_USER`: The MySQL user name used by XWiki to read/write to the DB.
 -	`MYSQL_PASSWORD`: The MySQL user password used by XWiki to read/write to the DB.
+-	`MYSQL_DATABASE`: The name fo the XWiki database to use/create in MySQL.
+-	`DB_CONTAINER_NAME`: The name of the docker container used to run the DB.
 
 ## Miscellaneous
 
