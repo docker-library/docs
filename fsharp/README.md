@@ -1,7 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/57b3ddadc85a63bf586ab89b523bb8326dad9c12/4.0.0.4/Dockerfile)
--	[`4.0.1.1`, `latest` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/57b3ddadc85a63bf586ab89b523bb8326dad9c12/4.0.1.1/Dockerfile)
+-	[`latest`, `4`, `4.1`, `4.1.0.1` (*4.1.0.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.1.0.1/Dockerfile)
+-	[`4.0`, `4.0.1`, `4.0.1.1` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.0.1.1/Dockerfile)
+-	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.0.0.4/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/fsharp`)](https://github.com/docker-library/official-images/blob/master/library/fsharp). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffsharp).
 
