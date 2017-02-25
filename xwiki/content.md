@@ -50,10 +50,10 @@ You should adapt the command line to use the passwords that you wish for the MyS
 Then run XWiki in another container by issuing the following command:
 
 ```console
-docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki -e DB_CONTAINER_NAME=mysql-xwiki xwiki:mysql-tomcat
+docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e DB_USER=xwiki -e DB_PASSWORD=xwiki -e DB_DATABASE=xwiki -e DB_HOST=mysql-xwiki xwiki:mysql-tomcat
 ```
 
-Be careful to use the same MySQL username, password and database names that you've used on the first command to start the MySQL container. Also, please don't forget to add a `-e DB_CONTAINER_NAME=` env variable with the name of the previously created MySQL container so that XWiki knows where its database is.
+Be careful to use the same MySQL username, password and database names that you've used on the first command to start the MySQL container. Also, please don't forget to add a `-e DB_HOST=` environment variable with the name of the previously created MySQL container so that XWiki knows where its database is.
 
 At this point, XWiki should start in interactive blocking mode, allowing you to see logs in the console. Should you wish to run it in "detached mode", just add a "-d" flag in the previous command.
 
@@ -87,9 +87,9 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - MYSQL_USER=xwiki
-      - MYSQL_PASSWORD=xwiki
-      - DB_CONTAINER_NAME=xwiki-mysql
+      - DB_USER=xwiki
+      - DB_PASSWORD=xwiki
+      - DB_HOST=xwiki-mysql
     volumes:
       - xwiki-data:/usr/local/xwiki
     networks:
@@ -132,10 +132,10 @@ Note that `docker-compose up` will automatically build the XWiki image on the fi
 
 The first time you create a container out of the xwiki image, a shell script (`/usr/local/bin/docker-entrypoint.sh`) is executed in the container to setup some configuration. The following environment variables can be passed:
 
--	`MYSQL_USER`: The MySQL user name used by XWiki to read/write to the DB.
--	`MYSQL_PASSWORD`: The MySQL user password used by XWiki to read/write to the DB.
--	`MYSQL_DATABASE`: The name fo the XWiki database to use/create in MySQL.
--	`DB_CONTAINER_NAME`: The name of the docker container used to run the DB.
+-	`DB_USER`: The user name used by XWiki to read/write to the DB.
+-	`DB_PASSWORD`: The user password used by XWiki to read/write to the DB.
+-	`DB_DATABASE`: The name of the XWiki database to use/create.
+-	`DB_HOST`: The name of the host (or docker container) containing the database. Default is "db".
 
 ## Miscellaneous
 
