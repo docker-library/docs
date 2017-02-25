@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.1`, `8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/e0efde5504642864811a7697ab945067bb6a042e/8.0/Dockerfile)
+-	[`8.0.2`, `8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/5f1ae82bd27501322100b915c9ae6cc9f9aea129/8.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haskell`)](https://github.com/docker-library/official-images/blob/master/library/haskell). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaskell).
 
