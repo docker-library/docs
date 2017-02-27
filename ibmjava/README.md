@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8-jre`, `jre`, `8`, `latest` (*ibmjava/8-jre/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/55b323f6e498d302239926d163c9ef04eb0d92b9/ibmjava/8-jre/x86_64/ubuntu/Dockerfile)
--	[`8-jre-alpine`, `jre-alpine` (*ibmjava/8-jre/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/55b323f6e498d302239926d163c9ef04eb0d92b9/ibmjava/8-jre/x86_64/alpine/Dockerfile)
--	[`8-sfj`, `sfj` (*ibmjava/8-sfj/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/55b323f6e498d302239926d163c9ef04eb0d92b9/ibmjava/8-sfj/x86_64/ubuntu/Dockerfile)
--	[`8-sfj-alpine`, `sfj-alpine` (*ibmjava/8-sfj/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/55b323f6e498d302239926d163c9ef04eb0d92b9/ibmjava/8-sfj/x86_64/alpine/Dockerfile)
--	[`8-sdk`, `sdk` (*ibmjava/8-sdk/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/55b323f6e498d302239926d163c9ef04eb0d92b9/ibmjava/8-sdk/x86_64/ubuntu/Dockerfile)
+-	[`8-jre`, `jre`, `8`, `latest` (*ibmjava/8-jre/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/5d1ad660a35e727911a3afbf14a95450a30e788d/ibmjava/8-jre/x86_64/ubuntu/Dockerfile)
+-	[`8-jre-alpine`, `jre-alpine` (*ibmjava/8-jre/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/5d1ad660a35e727911a3afbf14a95450a30e788d/ibmjava/8-jre/x86_64/alpine/Dockerfile)
+-	[`8-sfj`, `sfj` (*ibmjava/8-sfj/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/5d1ad660a35e727911a3afbf14a95450a30e788d/ibmjava/8-sfj/x86_64/ubuntu/Dockerfile)
+-	[`8-sfj-alpine`, `sfj-alpine` (*ibmjava/8-sfj/x86_64/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/5d1ad660a35e727911a3afbf14a95450a30e788d/ibmjava/8-sfj/x86_64/alpine/Dockerfile)
+-	[`8-sdk`, `sdk` (*ibmjava/8-sdk/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/5d1ad660a35e727911a3afbf14a95450a30e788d/ibmjava/8-sdk/x86_64/ubuntu/Dockerfile)
 -	[`9-ea2-sdk`, `9-sdk`, `9` (*ibmjava/9-sdk/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/24047d83b092b95ba6a1865c51a6fb2367f9abc6/ibmjava/9-sdk/x86_64/ubuntu/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ibmjava`)](https://github.com/docker-library/official-images/blob/master/library/ibmjava). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fibmjava).
@@ -13,13 +13,13 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 ### Overview
 
-The images in this repository contain IBM® SDK, Java™ Technology Edition, version 1.8.0\_sr3fp22 (8.0-3.22) and 1.9.0\_ea2 (9.0 early access). For Java 8 images, see [what's new](http://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/preface/changes_80/changes.html). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation, see the [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SSYKE2/welcome_javasdk_family.html). For tutorials, recipes, and Java usage in Bluemix, see [IBM developerWorks](http://www.ibm.com/developerworks/java).
+The images in this repository contain IBM® SDK, Java™ Technology Edition, version 1.8.0\_sr4fp1 (8.0-4.1) and 1.9.0\_ea2 (9.0 early access). For Java 8 images, see [what's new](http://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/preface/changes_80/changes.html). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation, see the [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SSYKE2/welcome_javasdk_family.html). For tutorials, recipes, and Java usage in Bluemix, see [IBM developerWorks](http://www.ibm.com/developerworks/java).
 
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Oracle and/or its affiliates.
 
 #### Java 9 Beta
 
-Java 9 Beta Images are now available for you to test and provide feedback ! Please see the [Open Beta Community](https://www.ibm.com/developerworks/community/groups/service/html/communityoverview?communityUuid=d4eb8c70-3a8c-4316-8cc6-b08b3e277a4b) page for more details. The images are available for all three supported architectures (x86\_64, s390x and ppc64le). Currently the images only have the SDK (Software Developers Kit).
+Java 9 Beta Images are now available for you to test and provide feedback ! Please see the [Open Beta Community](https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/W0f473c0e23e2_435b_9c7d_7f4de7f136a4/page/Welcome%20to%20IBM%20SDK%2C%20Java%20Technology%20Edition%2C%20Version%209%20open%20beta) page for more details. The images are available for all three supported architectures (x86\_64, s390x and ppc64le). Currently the images only have the SDK (Software Developers Kit).
 
 ### Images
 
@@ -134,7 +134,8 @@ The Dockerfiles and associated scripts are licensed under the [Apache License 2.
 
 Licenses for the products installed within the images:
 
--	IBM® SDK, Java™ Technology Edition: [International License Agreement for Non-Warranted Programs](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&li_formnum=L-PMAA-A3Z8P2&title=IBM® SDK, Java™ Technology Edition Docker Image, Version 8.0&l=en).
+-	IBM® SDK, Java™ Technology Edition Version 8: [International License Agreement for Non-Warranted Programs](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&li_formnum=L-PMAA-A3Z8P2&title=IBM® SDK, Java™ Technology Edition Docker Image, Version 8.0&l=en).
+-	IBM® SDK, Java™ Technology Edition Version 9 Early Access: [International License Agreement for Non-Warranted Programs](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&li_formnum=L-JWOD-AFSFP8&title=IBM® SDK, Java™ Technology Edition Version 9.0 Early Access&l=en).
 
 # Supported Docker versions
 
