@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20161209`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/b6f1fe19228e5b6b7aed98dcba02f18088282f90/precise/Dockerfile)
--	[`14.04.5`, `14.04`, `trusty-20170119`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/b6f1fe19228e5b6b7aed98dcba02f18088282f90/trusty/Dockerfile)
--	[`16.04`, `xenial-20170119`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/b6f1fe19228e5b6b7aed98dcba02f18088282f90/xenial/Dockerfile)
--	[`16.10`, `yakkety-20170104`, `yakkety` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/b6f1fe19228e5b6b7aed98dcba02f18088282f90/yakkety/Dockerfile)
--	[`17.04`, `zesty-20170118`, `zesty`, `devel` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/b6f1fe19228e5b6b7aed98dcba02f18088282f90/zesty/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise-20170214`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e1055dbe9145b36c0b2728d0ed0215c67627e2c0/precise/Dockerfile)
+-	[`14.04.5`, `14.04`, `trusty-20170214`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e1055dbe9145b36c0b2728d0ed0215c67627e2c0/trusty/Dockerfile)
+-	[`16.04`, `xenial-20170214`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e1055dbe9145b36c0b2728d0ed0215c67627e2c0/xenial/Dockerfile)
+-	[`16.10`, `yakkety-20170224`, `yakkety` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e1055dbe9145b36c0b2728d0ed0215c67627e2c0/yakkety/Dockerfile)
+-	[`17.04`, `zesty-20170224`, `zesty`, `devel` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e1055dbe9145b36c0b2728d0ed0215c67627e2c0/zesty/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fubuntu).
 
