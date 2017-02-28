@@ -30,4 +30,5 @@ often blocked by web browsers, and therefore is not recommended.
 If you use any external module, put the .cpp, .py or .pm file to
 `/znc-data/modules` (you may need to create that directory).
 
-IPv6 is currently disabled in this image.
+Musl silently doesn't support `AI_ADDRCONFIG` yet, and ZNC doesn't support [Happy Eyeballs](https://en.wikipedia.org/wiki/Happy_Eyeballs) yet.
+Together they cause very slow connection. So for now IPv6 is disabled here.
