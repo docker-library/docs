@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9`, `0.9.3`, `latest` (*0.9/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/d322572f7dd6ea468a14a4d832fbec26f152c71e/0.9/Dockerfile)
+-	[`0.9`, `0.9.3` (*0.9/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/d322572f7dd6ea468a14a4d832fbec26f152c71e/0.9/Dockerfile)
+-	[`0.10`, `0.10.0`, `latest` (*0.10/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/e1f81dfe3e8fac5588e12d2b880166d1743dbecd/0.10/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/thrift`)](https://github.com/docker-library/official-images/blob/master/library/thrift). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fthrift).
 
