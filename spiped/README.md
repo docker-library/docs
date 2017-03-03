@@ -76,7 +76,7 @@ View [license information](https://github.com/Tarsnap/spiped/blob/master/COPYRIG
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.13.1.
+This image is officially supported on Docker version 17.03.0-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

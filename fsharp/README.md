@@ -36,7 +36,7 @@ View [the Apache 2.0 license](https://github.com/fsharp/fsharp/blob/d518f91418ef
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.13.1.
+This image is officially supported on Docker version 17.03.0-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
