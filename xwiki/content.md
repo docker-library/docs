@@ -106,8 +106,178 @@ services:
       - MYSQL_DATABASE=xwiki
     networks:
       - bridge
+# How to use this image
+
+You should first install [Docker](https://www.docker.com/) on your machine.
+
+Then there are several options:
+
+1.	Pull the xwiki image from DockerHub.
+2.	Get the [sources of this project](https://github.com/xwiki-contrib/docker-xwiki) and build them.
+
+## Pulling existing image
+
+You need to run 2 containers:
+
+-	One for the XWiki image
+-	One for the database image to which XWiki connects to
+
+### Using docker run
+
+Start by creating a dedicated docker network:
+
+```console
+docker network create -d bridge xwiki-nw
+```
+
+Then run a container for the database and make sure it's configured to use an UTF8 encoding. The following databases are supported out of the box:
+ 
+-	MySQL
+-	PostgreSQL
+
+#### Starting MySQL
+
+The command below will also configure the MySQL container to save its data on your localhost in a `/my/own/mysql` directory:
+
+```console
+docker run --net=xwiki-nw --name mysql-xwiki -v /my/own/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=xwiki -e MYSQL_USER=xwiki -e MYSQL_PASSWORD=xwiki -e MYSQL_DATABASE=xwiki -d mysql:5.7 --character-set-server=utf8 --collation-server=utf8_bin --explicit-defaults-for-timestamp=1
+```
+
+You should adapt the command line to use the passwords that you wish for the MySQL root password and for the xwiki user password.
+
+#### Starting PostgreSQL
+
+The command below will also configure the PostgreSQL container to save its data on your localhost in a `/my/own/postgres` directory:
+
+```console
+docker run --net=xwiki-nw --name postgres-xwiki -v /my/own/postgres:/var/lib/postgresql/data -e POSTGRES_ROOT_PASSWORD=xwiki -e POSTGRES_USER=xwiki -e POSTGRES_PASSWORD=xwiki -e POSTGRES_DB=xwiki -e POSTGRES_INITDB_ARGS="--encoding=UTF8" -d postgres:9.5
+```
+
+You should adapt the command line to use the passwords that you wish for the PostgreSQL root password and for the xwiki user password.
+
+#### Starting XWiki
+
+Then run XWiki in another container by issuing one of the following command.
+
+For MySQL:
+
+```console
+docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e DB_USER=xwiki -e DB_PASSWORD=xwiki -e DB_DATABASE=xwiki -e DB_HOST=mysql-xwiki xwiki:mysql-tomcat
+```
+
+For PostgreSQL:
+
+```console
+docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e DB_USER=xwiki -e DB_PASSWORD=xwiki -e DB_DATABASE=xwiki -e DB_HOST=postgres-xwiki xwiki:postgres-tomcat
+```
+
+Be careful to use the same DB username, password and database names that you've used on the first command to start the DB container. Also, please don't forget to add a `-e DB_HOST=` environment variable with the name of the previously created DB container so that XWiki knows where its database is.
+
+At this point, XWiki should start in interactive blocking mode, allowing you to see logs in the console. Should you wish to run it in "detached mode", just add a "-d" flag in the previous command.
+
+```console
+docker run -d --net=xwiki-nw ...
+```
+
+### Using docker-compose
+
+Another solution is to use the Docker Compose files we provide.
+
+#### For MySQL
+
+-	`wget https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/8/mysql-tomcat/mysql/xwiki.cnf`: This will download the MySQL configuration (UTF8, etc)
+	-	If you don't have `wget` or prefer to use `curl`: `curl -fSL https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/8/mysql-tomcat/mysql/xwiki.cnf -o xwiki.cnf`
+-	`wget -O docker-compose.yml https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/docker-compose-mysql.yml`
+	-	If you don't have `wget` or prefer to use `curl`: `curl -fSL https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/docker-compose-mysql.yml -o docker-compose.yml`
+-	You can edit the compose file retrieved to change the default username/password and other environment variables.
+-	`docker-compose up`
+
+For reference here's a minimal Docker Compose file using MySQL that you could use as an example (full example [here](https://github.com/xwiki-contrib/docker-xwiki/blob/master/docker-compose-mysql.yml)):
+
+```yaml
+version: '2'
+networks:
+  bridge:
+    driver: bridge
+services:
+  web:
+    image: "xwiki:mysql-tomcat"
+    container_name: xwiki-mysql-tomcat-web
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_USER=xwiki
+      - DB_PASSWORD=xwiki
+      - DB_HOST=xwiki-mysql-db
+    volumes:
+      - xwiki-data:/usr/local/xwiki
+    networks:
+      - bridge
+  db:
+    image: "mysql:5.7"
+    container_name: xwiki-mysql-db
+    volumes:
+      - ./xwiki.cnf:/etc/mysql/conf.d/xwiki.cnf
+      - mysql-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=xwiki
+      - MYSQL_USER=xwiki
+      - MYSQL_PASSWORD=xwiki
+      - MYSQL_DATABASE=xwiki
+    networks:
+      - bridge
 volumes:
   mysql-data: {}
+  xwiki-data: {}
+```
+
+#### For PostgreSQL
+
+-	`wget -O docker-compose.yml https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/docker-compose-postgres.yml`
+	-	If you don't have `wget` or prefer to use `curl`: `curl -fSL https://raw.githubusercontent.com/xwiki-contrib/docker-xwiki/master/docker-compose-postgres.yml -o docker-compose.yml`
+-	You can edit the compose file retrieved to change the default username/password and other environment variables.
+-	`docker-compose up`
+
+For reference here's a minimal Docker Compose file using PostgreSQL that you could use as an example (full example [here](https://github.com/xwiki-contrib/docker-xwiki/blob/master/docker-compose-postgres.yml)):
+
+```yaml
+version: '2'
+networks:
+  bridge:
+    driver: bridge
+services:
+  web:
+    image: "xwiki:postgres-tomcat"
+    container_name: xwiki-postgres-tomcat-web
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_USER=xwiki
+      - DB_PASSWORD=xwiki
+      - DB_HOST=xwiki-postgres-db
+    volumes:
+      - xwiki-data:/usr/local/xwiki
+    networks:
+      - bridge
+  db:
+    image: "postgres:9.5"
+    container_name: xwiki-postgres-db
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_ROOT_PASSWORD=xwiki
+      - POSTGRES_PASSWORD=xwiki
+      - POSTGRES_USER=xwiki
+      - POSTGRES_DB=xwiki
+      - POSTGRES_INITDB_ARGS="--encoding=UTF8"
+    networks:
+      - bridge
+volumes:
+  postgres-data: {}
   xwiki-data: {}
 ```
 
@@ -117,6 +287,7 @@ This allows you to rebuild the XWiki docker image locally. Here are the steps:
 
 -	Install Git and run `git clone https://github.com/xwiki-contrib/docker-xwiki.git` or download the sources from the GitHub UI. Then go to the directory corresponding to the docker tag you wish to use. For example: `cd 8/mysql-tomcat`
 	-	The `8/mysql-tomcat` directory will get you the latest released XWiki version of the 8.x cycle running on Tomcat and for MySQL.
+	-	The `8/postgres-tomcat` directory will get you the latest released XWiki version of the 8.x cycle running on Tomcat and for MySQL.
 	-	The `9/mysql-tomcat` directory will get you the latest released XWiki version of the 9.x cycle running on Tomcat and for MySQL.
 	-	etc.
 -	Run `docker-compose up`
@@ -126,7 +297,7 @@ Note that if you want to set a custom version of XWiki you can edit the `.env` f
 
 Note that `docker-compose up` will automatically build the XWiki image on the first run. If you need to rebuild it you can issue `docker-compose up --build`. You can also build the image with `docker build . -t xwiki-mysql-tomcat:latest` for example.
 
-# Details for xwiki-mysql-tomcat
+# Details for the xwiki image
 
 ## Configuration Options
 
@@ -144,7 +315,7 @@ Volumes:
 If you don't map any volume when using `docker run` or if you use `docker-compose` then Docker will create some internal volumes attached to your containers as follows.
 
 -	Two volumes are created:
-	-	A volume named `<prefix>_mysql-data` that contains the database data.
+	-	A volume named `<prefix>_mysql-data` or `<prefix>_postgres-data` that contains the database data.
 	-	A volume named `<prefix>_xwiki-data` that contains XWiki's permanent directory.
 -	To find out where those volumes are located on your local host machine you can inspect them with `docker volume inspect <volume name>`. To find the volume name, you can list all volumes with `docker volume ls`.
 
