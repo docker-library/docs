@@ -131,7 +131,7 @@ docker network create -d bridge xwiki-nw
 ```
 
 Then run a container for the database and make sure it's configured to use an UTF8 encoding. The following databases are supported out of the box:
- 
+
 -	MySQL
 -	PostgreSQL
 
