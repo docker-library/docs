@@ -60,6 +60,9 @@ sub prompt_for_edit {
 	my $proposedText = slurp $proposedFile or warn 'missing ' . $proposedFile;
 	$proposedText = trim(decode('UTF-8', $proposedText));
 	
+	# remove our warning about generated files (Hub doesn't support HTML comments in Markdown)
+	$proposedText =~ s% ^ <!-- .*? --> \s* %%sx;
+	
 	if ($lengthLimit > 0 && length($proposedText) > $lengthLimit) {
 		# TODO https://github.com/docker/hub-beta-feedback/issues/238
 		my $fullUrl = "$githubBase/$proposedFile";
