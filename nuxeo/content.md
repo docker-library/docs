@@ -25,6 +25,8 @@ nuxeo
 
 This will install the same image as above but comes with some demo Nuxeo packages to demonstrate its various usage (DAM, DM, search etc...)
 
+You can find additional informations on how to use this image in [Nuxeo documentation](https://doc.nuxeo.com/nxdoc/setting-up-your-nuxeo-environment/)
+
 ## Environment Variables
 
 The Nuxeo image uses several environment variable that allow to specify a more specific setup.
@@ -69,7 +71,9 @@ If Redis is setup, you can ovewrite the default port configuration (default to 6
 
 ### `NUXEO_CLID`
 
-Allow to setup a CLID for Nuxeo Connect registration.
+Allow to setup a CLID for Nuxeo Connect registration. This parameter is in the form `part1\npart2`, so depending on the environment you may have to escape the `\` character.
+
+You can find additional informations the registration process in the [Nuxeo documentation](https://doc.nuxeo.com/nxdoc/setting-up-your-nuxeo-environment/)
 
 ### `NUXEO_INSTALL_HOTFIX`
 
