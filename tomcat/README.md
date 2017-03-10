@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "tomcat/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "tomcat/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`6.0.48-jre7`, `6.0-jre7`, `6-jre7`, `6.0.48`, `6.0`, `6` (*6/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/9a0ce75409536c8c72ef266654d8a64e9354f7e9/6/jre7/Dockerfile)

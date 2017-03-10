@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "python/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "python/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.7.13`, `2.7`, `2` (*2.7/Dockerfile*)](https://github.com/docker-library/python/blob/a248f4583c5f788e1af02016f762cdc323ee5765/2.7/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "kong/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "kong/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.10`, `0.10.0`, `latest` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/7c5a4ffc05bf0aa37e0b09132b5b7dc47eaea577/Dockerfile)

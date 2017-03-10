@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "percona/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "percona/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.7.17`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/2ae90072239e8fd56bb9dbff13b3f3a2b0f82b83/5.7/Dockerfile)

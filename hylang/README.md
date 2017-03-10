@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "hylang/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "hylang/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.12.0`, `0.12`, `0`, `latest` (*Dockerfile*)](https://github.com/hylang/hy/blob/dda456ddd9d76560db869f2b6dd65a04d073c1bd/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "backdrop/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "backdrop/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.6.1`, `1.6`, `1`, `1.6.1-apache`, `1.6-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/801cbb3fc4c167433ff7f440824abdb5f31a7d93/1/apache/Dockerfile)

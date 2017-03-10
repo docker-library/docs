@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "ruby/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "ruby/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.1.10`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/daf4be52f413ad4121f9366f5e1b9a02f763f7b1/2.1/Dockerfile)

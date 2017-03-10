@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "mariadb/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "mariadb/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`10.1.21`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/b558f64b736650b94df9a90e68ff9e3bc03d4bdb/10.1/Dockerfile)

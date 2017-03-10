@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "swift/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "swift/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.0.2`, `3.0`, `3`, `latest` (*Dockerfile*)](https://github.com/swiftdocker/docker-swift/blob/94a43272fe6411c12045414cfc797d3c0bcf2823/Dockerfile)

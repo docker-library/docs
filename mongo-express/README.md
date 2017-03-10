@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "mongo-express/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "mongo-express/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.38.0`, `0.38`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/500a1db15deef043a6937302a1407b25369c8b4a/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "hola-mundo/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "hola-mundo/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest` (*hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/bdee60d7ff6b98037657dc34a10e9ca4ffd6785f/hola-mundo/Dockerfile)

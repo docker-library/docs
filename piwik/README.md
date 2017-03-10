@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "piwik/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "piwik/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.0.2`, `3.0`, `3`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/ddc78a24c43759a671d27054f20b15644a36af45/Dockerfile)

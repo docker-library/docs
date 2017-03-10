@@ -23,6 +23,22 @@ EXPOSE 8000
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 ```
 
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "django/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "django/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.10.4-python3`, `1.10-python3`, `1-python3`, `python3`, `1.10.4`, `1.10`, `1`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/d7f1d0e61cffe81d6ca9797c63fc25eba7e277db/3.4/Dockerfile)

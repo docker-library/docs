@@ -4,6 +4,22 @@ This image is deprecated due to maintainer inactivity (last updated Aug 2015; [d
 
 If a representative of the CRUX community would like to step up and continue maintenance, [the contribution guidelines](https://github.com/docker-library/official-images/blob/master/README.md#contributing-to-the-standard-library) are the best place to start.
 
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "crux/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "crux/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `3.1` (*Dockerfile*)](https://github.com/prologic/docker-crux/blob/c614d61c53c05c02a43a34187fa1370db2c61524/Dockerfile)

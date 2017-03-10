@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "eggdrop/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "eggdrop/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`develop` (*develop/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/a084b297e427c87eeb660b135164b9600593e289/develop/Dockerfile)

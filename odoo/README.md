@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "odoo/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "odoo/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.0`, `8` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/f8af1a80b14d9e594fdef4df2ff78e655352473c/8.0/Dockerfile)

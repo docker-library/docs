@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "solr/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "solr/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.5.3`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/20e09a91045415c324bb6575bd63191624fa3875/5.5/Dockerfile)

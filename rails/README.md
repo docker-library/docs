@@ -23,6 +23,22 @@ EXPOSE 3000
 CMD ["rails", "server", "-b", "0.0.0.0"]
 ```
 
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "rails/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "rails/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.0.1`, `5.0`, `5`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/e16e955a67f48c1e8dc0af87ba6c0b7f8302bad2/Dockerfile)

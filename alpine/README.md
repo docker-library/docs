@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "alpine/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "alpine/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/cb0a5a01230693785e876a91b3484c4c05b2b06b/versions/library-3.1/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "rocket.chat/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "rocket.chat/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.53.0`, `0.53`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/ee23a70e201c55e56121b165d48de3d7c3493665/Dockerfile)

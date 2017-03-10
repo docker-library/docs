@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "perl/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "perl/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `5`, `5.24`, `5.24.1` (*5.024.001-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8b57a74dbc745fb2723bc60ba98768846dae37f6/5.024.001-64bit/Dockerfile)

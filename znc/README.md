@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "znc/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "znc/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.6.4`, `1.6`, `latest` (*full/Dockerfile*)](https://github.com/znc/znc-docker/blob/4656af8c0a93cae3f59af966970f0716709caec7/full/Dockerfile)

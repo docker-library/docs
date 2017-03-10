@@ -8,6 +8,22 @@ See [iojs.org](https://iojs.org/) for more information, specifically the followi
 >
 > There won't be any further io.js releases. All of the features in io.js are available in Node.js v4 and above.
 
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "iojs/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "iojs/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.8.4`, `1.8`, `1` (*1.8/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/54780958c85a399f6516a90d128cc49fc0ad96f8/1.8/Dockerfile)

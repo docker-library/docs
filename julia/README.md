@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "julia/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "julia/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.5.1`, `0.5`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/8de8734c2f3547332bc1e8688ba0eff58b3a1a50/Dockerfile)

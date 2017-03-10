@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "groovy/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "groovy/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.4.8-jdk7`, `2.4-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/0402f0037b9bdf1d69ce844a381b81304877df3a/jdk7/Dockerfile)

@@ -4,6 +4,22 @@ This image is officially deprecated in favor of [the `kibana` image provided by 
 
 Elastic provides open-source support for Kibana via the [elastic/kibana GitHub repository](https://github.com/elastic/kibana) and the Docker image via the [elastic/kibana-docker GitHub repository](https://github.com/elastic/kibana-docker), as well as community support via its [forums](https://discuss.elastic.co/c/kibana).
 
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "kibana/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "kibana/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.2.2`, `5.2`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/kibana/blob/beb960fe04ec8cf2b32b114ddbbf41cebc0271b0/5/Dockerfile)

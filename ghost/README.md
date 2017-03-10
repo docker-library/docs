@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "ghost/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "ghost/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.11.7`, `0.11`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/f57b040e28dca92eb3e1b072baa9922b12712b6c/Dockerfile)

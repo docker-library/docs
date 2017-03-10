@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "opensuse/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "opensuse/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`42.2`, `leap`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/a8957648fda4fe9628021c45d3d9937641d74d77/docker/Dockerfile)

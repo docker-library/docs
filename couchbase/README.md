@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "couchbase/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "couchbase/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `enterprise`, `4.6.0`, `enterprise-4.6.0` (*enterprise/couchbase-server/4.6.0/Dockerfile*)](https://github.com/couchbase/docker/blob/8c3e58c1fd2572dee95c9b9dda0bdf5342bb8091/enterprise/couchbase-server/4.6.0/Dockerfile)

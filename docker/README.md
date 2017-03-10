@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "docker/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "docker/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`17.03.0-ce`, `17.03.0`, `17.03`, `17`, `latest` (*17.03/Dockerfile*)](https://github.com/docker-library/docker/blob/bf822e2b9b4f755156b825444562c9865f22557f/17.03/Dockerfile)

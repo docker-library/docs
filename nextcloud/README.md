@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "nextcloud/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "nextcloud/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`10.0.3-apache`, `10.0-apache`, `10-apache`, `10.0.3`, `10.0`, `10` (*10.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/e8590ef1b7cd06aa3312cbdbfed951f4723e6ba3/10.0/apache/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "crate/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "crate/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/76bc222522685306fe2124022d3d7f1a6cf54f3c/Dockerfile)

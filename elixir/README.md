@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "elixir/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "elixir/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.4.2`, `1.4`, `latest` (*1.4/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/36ed572a13d5bba010834574c72efbd44f000288/1.4/Dockerfile)

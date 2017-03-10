@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "golang/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "golang/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.7.5`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/golang/blob/349270dbc128e396888cb2423ffc85d2c3039a27/1.7/Dockerfile)

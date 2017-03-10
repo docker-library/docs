@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "bash/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "bash/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.4.12`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/tianon/docker-bash/blob/bdf5b9d720c272a05a84b6357dc278d35fc9d453/4.4/Dockerfile)

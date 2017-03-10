@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "redmine/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "redmine/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.1.7`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/665a1f399082dc01543b36c9aecd0cf4c5ee214e/3.1/Dockerfile)

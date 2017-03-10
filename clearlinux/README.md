@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "clearlinux/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "clearlinux/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `base` (*Dockerfile*)](https://github.com/clearlinux/docker-brew-clearlinux/blob/d81cccb0d30f3191ddddc521b96b9c6445617c81/Dockerfile)

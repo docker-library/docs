@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "gazebo/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "gazebo/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`gzserver4` (*gazebo/gazebo4/gzserver4/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo4/gzserver4/Dockerfile)

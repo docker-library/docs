@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "sentry/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "sentry/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.13.0`, `8.13` (*8.13/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f9835042aadb805e755a826ca7748334b11ef09b/8.13/Dockerfile)

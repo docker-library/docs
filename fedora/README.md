@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "fedora/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "fedora/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `25` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/726319786a1326f1e4f9e0b3eadf3ba9bec0e486/Dockerfile)

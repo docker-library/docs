@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "kaazing-gateway/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "kaazing-gateway/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `5.5.0` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/27281b1f0a8d09ce3897ba3325f1da669266d0b1/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "fsharp/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "fsharp/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `4`, `4.1`, `4.1.0.1` (*4.1.0.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.1.0.1/Dockerfile)

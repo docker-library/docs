@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "spiped/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "spiped/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.5.0`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/caa1ecb53270efd9a088e3856398c48622b5afc8/1.5/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "swarm/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "swarm/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.2.6`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/3725bf97c64a9425fc609d32df907170657a6b84/Dockerfile)

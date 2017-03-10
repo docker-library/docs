@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "wordpress/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "wordpress/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.7.3-apache`, `4.7-apache`, `4-apache`, `apache`, `4.7.3`, `4.7`, `4`, `latest`, `4.7.3-php5.6-apache`, `4.7-php5.6-apache`, `4-php5.6-apache`, `php5.6-apache`, `4.7.3-php5.6`, `4.7-php5.6`, `4-php5.6`, `php5.6` (*php5.6/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/3a1ca61731e6070764d5b7235e3b6617798b8af8/php5.6/apache/Dockerfile)

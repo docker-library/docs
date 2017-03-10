@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "rapidoid/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "rapidoid/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.3.2`, `5.3`, `5`, `latest` (*Dockerfile*)](https://github.com/rapidoid/docker-rapidoid/blob/553f23fecc8e55cf98155d0fd25a76a8e4854672/Dockerfile)

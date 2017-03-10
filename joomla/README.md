@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "joomla/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "joomla/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.6.5-apache`, `3.6-apache`, `3-apache`, `apache`, `3.6.5`, `3.6`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/80dfb1c98d72f50077b7a49c44e49a49bf3e9c69/apache/Dockerfile)

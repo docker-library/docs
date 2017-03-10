@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "postgres/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "postgres/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`9.6.2`, `9.6`, `9`, `latest` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/5159417968c6a08e2ed784498cba28f22a74b03e/9.6/Dockerfile)

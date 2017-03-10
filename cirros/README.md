@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "cirros/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "cirros/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `0.3.4` (*Dockerfile*)](https://github.com/ewindisch/docker-cirros/blob/fd9aa114c465237518535d3545d4f9c4bc1d0aa5/Dockerfile)

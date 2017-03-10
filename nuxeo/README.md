@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "nuxeo/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "nuxeo/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `LTS`, `LTS-2016`, `8`, `8.10`, `FT` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/537f17593e1c3348f3163ae6986b603168e59fc5/8.10/Dockerfile)

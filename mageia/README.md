@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "mageia/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "mageia/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5`, `5.1`, `latest` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/c01771b53f87dd8d130879122d13025a9d957000/5/Dockerfile)

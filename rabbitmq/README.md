@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "rabbitmq/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "rabbitmq/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.6.6`, `3.6`, `3`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/366975d8089b28fb2a58054835f80e1a74328d05/debian/Dockerfile)

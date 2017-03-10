@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "xwiki/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "xwiki/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`8`, `8.4`, `8.4.4`, `8-mysql-tomcat`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `latest` (*8/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/478f413940c46b325ad8d2b99e430273966b3981/8/mysql-tomcat/Dockerfile)

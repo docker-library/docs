@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "jenkins/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "jenkins/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `2.32.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/8d23b180d1a8afbcaab37f2a8167b5ace8632ec9/Dockerfile)

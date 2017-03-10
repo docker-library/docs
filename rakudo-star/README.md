@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "rakudo-star/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "rakudo-star/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`2017.01`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/e1029a0142efcdd151a573a6bf9e16d1a0ab7573/Dockerfile)

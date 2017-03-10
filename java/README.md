@@ -4,6 +4,22 @@ This image is officially deprecated in favor of [the `openjdk` image](https://hu
 
 The image has been OpenJDK-specific since it was first introduced, and as of 2016-08-10 we also have [an `ibmjava` image](https://hub.docker.com/_/ibmjava/), which made it even more clear that each repository should represent one upstream instead of one language stack or community, so this rename reflects that clarity appropriately.
 
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "java/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "java/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`6b38-jdk`, `6b38`, `6-jdk`, `6`, `openjdk-6b38-jdk`, `openjdk-6b38`, `openjdk-6-jdk`, `openjdk-6` (*6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jdk/Dockerfile)

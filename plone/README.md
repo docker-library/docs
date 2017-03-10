@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "plone/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "plone/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.0.6`, `5.0`, `5`, `latest` (*5.0/5.0.6/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/5.0/5.0.6/debian/Dockerfile)

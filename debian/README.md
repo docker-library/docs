@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "debian/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "debian/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.7`, `8`, `jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/a3d2e76fdd618d1ca1b145c0a2268e828d547ea2/jessie/Dockerfile)

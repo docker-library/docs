@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "nats-streaming/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "nats-streaming/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.3.8`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/8c51cccfe250cb144becd082e3ccdf531a31b30a/Dockerfile)

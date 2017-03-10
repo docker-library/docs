@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "pypy/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "pypy/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`2-5.6.0`, `2-5.6`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/491b6dc82d4275a452d48b800ee7a91e48ef9991/2/Dockerfile)

@@ -4,6 +4,22 @@ This image is officially deprecated in favor of [the `logstash` image provided b
 
 Elastic provides open-source support for Logstash via the [elastic/logstash GitHub repository](https://github.com/elastic/logstash) and the Docker image via the [elastic/logstash-docker GitHub repository](https://github.com/elastic/logstash-docker), as well as community support via its [forums](https://discuss.elastic.co/c/logstash).
 
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "logstash/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "logstash/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.2.2`, `5.2`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/7c748e108c6a64d00e7b2dff4831ba6ffc85de2a/5/Dockerfile)

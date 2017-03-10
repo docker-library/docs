@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "websphere-liberty/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "websphere-liberty/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`kernel` (*ga/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b946ebd7c0a7d3953419723bc8a3c3041943439e/ga/developer/kernel/Dockerfile)

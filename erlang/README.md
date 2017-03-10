@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "erlang/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "erlang/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`19.2.3`, `19.2`, `19`, `latest` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/5962d4d7291b268eff8ff2513637eedabe9fe90f/19/Dockerfile)

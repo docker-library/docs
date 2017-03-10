@@ -4,6 +4,22 @@ This image is officially deprecated in favor of [the `elasticsearch` image provi
 
 Elastic provides open-source support for Elasticsearch via the [elastic/elasticsearch GitHub repository](https://github.com/elastic/elasticsearch) and the Docker image via the [elastic/elasticsearch-docker GitHub repository](https://github.com/elastic/elasticsearch-docker), as well as community support via its [forums](https://discuss.elastic.co/c/elasticsearch).
 
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "elasticsearch/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "elasticsearch/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.2.2`, `5.2`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/d1765774a1effc5436f3d1f4ad6826dd9ed2186f/5/Dockerfile)

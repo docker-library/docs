@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "ibmjava/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "ibmjava/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`8-jre`, `jre`, `8`, `latest` (*ibmjava/8-jre/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/5d1ad660a35e727911a3afbf14a95450a30e788d/ibmjava/8-jre/x86_64/ubuntu/Dockerfile)

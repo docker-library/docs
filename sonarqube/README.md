@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "sonarqube/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "sonarqube/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `6.2` (*6.2/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/1fd8217f7ad0e3dfdfd07a9a944e755bda64deee/6.2/Dockerfile)

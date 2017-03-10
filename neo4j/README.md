@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "neo4j/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "neo4j/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.1.2`, `3.1`, `latest` (*3.1.2/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/45fd4b39e21d47b9d57b9c891ca4e9f6f66534ed/3.1.2/community/Dockerfile)

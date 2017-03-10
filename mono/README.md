@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "mono/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "mono/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.10.0`, `3.10` (*3.10.0/Dockerfile*)](https://github.com/mono/docker/blob/915b71717dae5448dd2cceeeca084a0690aed8d0/3.10.0/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "adminer/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "adminer/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.2.5-standalone`, `4.2-standalone`, `4-standalone`, `standalone`, `4.2.5`, `4.2`, `4`, `latest` (*4.2/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/66fd66f352b5447d154bfed125d10b0c9ea61c2b/4.2/Dockerfile)

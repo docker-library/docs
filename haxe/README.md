@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "haxe/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "haxe/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.1.3`, `3.1` (*3.1/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/0f4f8783c73fb791c0265680df8bc851727d2297/3.1/Dockerfile)

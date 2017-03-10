@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "jruby/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "jruby/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `9`, `9.1`, `9.1-jre`, `9.1.8`, `9.1.8-jre`, `9.1.8.0`, `9.1.8.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/044aee807e44475c2085e43baab9b91055597461/9000/jre/Dockerfile)

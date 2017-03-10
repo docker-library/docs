@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "irssi/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "irssi/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.0.1`, `1.0`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/jessfraz/irssi/blob/02529da6afd7846e0024c9a8b72ab6a32b4cd402/debian/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "storm/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "storm/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.9.7`, `0.9` (*0.9.7/Dockerfile*)](https://github.com/31z4/storm-docker/blob/93746fa3936afb3751565860632d3e49d53e9b0e/0.9.7/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "traefik/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "traefik/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`v1.2.0-rc2`, `1.2.0-rc2`, `morbier` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/fa6fb13db40245897577a76e8bf598d361e19bb1/Dockerfile)

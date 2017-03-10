@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "aerospike/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "aerospike/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.11.0.2` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/48648683cdb584e4b9e8f8090596aa348d81f107/Dockerfile)

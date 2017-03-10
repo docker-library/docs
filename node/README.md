@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "node/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "node/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.7.2`, `7.7`, `7`, `latest` (*7.7/Dockerfile*)](https://github.com/nodejs/docker-node/blob/74265fec6d203678fabfa6939abb629dd45553b7/7.7/Dockerfile)

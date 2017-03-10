@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "centos/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "centos/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `centos7`, `7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/338acec5394e5200cfe613e4340cdda782673f6d/docker/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "nats/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "nats/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.9.6`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/24da6ab2af9e849f6a96e32ed2efcb7c0799ab13/Dockerfile)

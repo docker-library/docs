@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "oraclelinux/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "oraclelinux/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`7-slim` (*OracleLinux/7-slim/Dockerfile*)](https://github.com/oracle/docker-images/blob/e5227c710ea2c92b0611127552134d757a3d02cc/OracleLinux/7-slim/Dockerfile)

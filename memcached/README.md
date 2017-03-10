@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "memcached/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "memcached/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.4.35`, `1.4`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/memcached/blob/c7e9192a40c261a9d8743eafa348fc6af1b454f8/debian/Dockerfile)

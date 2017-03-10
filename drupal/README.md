@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "drupal/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "drupal/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.3.0-rc1-apache`, `8.3-rc-apache`, `rc-apache`, `8.3.0-rc1`, `8.3-rc`, `rc` (*8.3-rc/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/e8e2309427218cb2e250a3af013e8efe54703404/8.3-rc/apache/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "php/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "php/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.1.2-cli`, `7.1-cli`, `7-cli`, `cli`, `7.1.2`, `7.1`, `7`, `latest` (*7.1/Dockerfile*)](https://github.com/docker-library/php/blob/738fcd0bdaed0b27e56b4975be94abe2dbe0b0b4/7.1/Dockerfile)

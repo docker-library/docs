@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "silverpeas/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "silverpeas/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`6.0-alpha2`, `latest` (*Dockerfile*)](https://github.com/Silverpeas/docker-silverpeas-prod/blob/77c7c86d82aeee270cf23ef1272cfd95767df3c4/Dockerfile)

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "busybox/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "busybox/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.26.2-glibc`, `1.26-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/b18bec4367d42f4b4749379911f29346f1068cde/glibc/Dockerfile)

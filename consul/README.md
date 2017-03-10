@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "consul/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "consul/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `0.7.5` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/22839eee5174a56f31f7ad29005e19c8d5cc25a9/0.X/Dockerfile)

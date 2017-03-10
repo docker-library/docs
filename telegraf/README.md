@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "telegraf/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "telegraf/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.1`, `1.1.2` (*telegraf/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ceb9e81abf0b7707d5184ffdf4c228ee33cda178/telegraf/1.1/Dockerfile)
