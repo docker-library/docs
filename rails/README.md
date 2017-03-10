@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "rails/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "rails/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # **DEPRECATED**
 
 This image is officially deprecated in favor of [the standard `ruby` image](https://hub.docker.com/_/ruby/), and will receive no further updates after 2016-12-31 (Dec 31, 2016). Please adjust your usage accordingly.
@@ -22,22 +38,6 @@ COPY . .
 EXPOSE 3000
 CMD ["rails", "server", "-b", "0.0.0.0"]
 ```
-
-<!--
-
-********************************************************************************
-
-WARNING:
-
-    DO NOT EDIT "rails/README.md"
-
-    IT IS AUTO-GENERATED
-
-    (from the other files in "rails/" combined with a set of templates)
-
-********************************************************************************
-
--->
 
 # Supported tags and respective `Dockerfile` links
 
