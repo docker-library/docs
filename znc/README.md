@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.4`, `1.6`, `latest` (*full/Dockerfile*)](https://github.com/znc/znc-docker/blob/4656af8c0a93cae3f59af966970f0716709caec7/full/Dockerfile)
--	[`1.6.4-slim`, `1.6-slim`, `slim` (*slim/Dockerfile*)](https://github.com/znc/znc-docker/blob/4656af8c0a93cae3f59af966970f0716709caec7/slim/Dockerfile)
+-	[`1.6.5`, `1.6`, `latest` (*full/Dockerfile*)](https://github.com/znc/znc-docker/blob/3a25a4a6ac50b4d969449696708aae2a2d8aeb22/full/Dockerfile)
+-	[`1.6.5-slim`, `1.6-slim`, `slim` (*slim/Dockerfile*)](https://github.com/znc/znc-docker/blob/3a25a4a6ac50b4d969449696708aae2a2d8aeb22/slim/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/znc`)](https://github.com/docker-library/official-images/blob/master/library/znc). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fznc).
 
