@@ -18,7 +18,7 @@ WARNING:
 
 -	[`2.1.17`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d83b850cd17bc9198876f8686197c730e29c7448/2.1/Dockerfile)
 -	[`2.2.9`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d83b850cd17bc9198876f8686197c730e29c7448/2.2/Dockerfile)
--	[`3.0.11`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d83b850cd17bc9198876f8686197c730e29c7448/3.0/Dockerfile)
+-	[`3.0.12`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/7ba44ab0fe6d8afdcad2ffe101303f13da20fff6/3.0/Dockerfile)
 -	[`3.10`, `3`, `latest` (*3.10/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d83b850cd17bc9198876f8686197c730e29c7448/3.10/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcassandra).

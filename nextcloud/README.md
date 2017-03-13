@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.0.3-apache`, `10.0-apache`, `10-apache`, `10.0.3`, `10.0`, `10` (*10.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/e8590ef1b7cd06aa3312cbdbfed951f4723e6ba3/10.0/apache/Dockerfile)
--	[`10.0.3-fpm`, `10.0-fpm`, `10-fpm` (*10.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/e8590ef1b7cd06aa3312cbdbfed951f4723e6ba3/10.0/fpm/Dockerfile)
--	[`11.0.1-apache`, `11.0-apache`, `11-apache`, `apache`, `11.0.1`, `11.0`, `11`, `latest` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/e8590ef1b7cd06aa3312cbdbfed951f4723e6ba3/11.0/apache/Dockerfile)
--	[`11.0.1-fpm`, `11.0-fpm`, `11-fpm`, `fpm` (*11.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/e8590ef1b7cd06aa3312cbdbfed951f4723e6ba3/11.0/fpm/Dockerfile)
--	[`9.0.56-apache`, `9.0-apache`, `9-apache`, `9.0.56`, `9.0`, `9` (*9.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/e0c8ce80b26d4755a9a2bfeb3c42c40c89d8c4f8/9.0/apache/Dockerfile)
--	[`9.0.56-fpm`, `9.0-fpm`, `9-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/e0c8ce80b26d4755a9a2bfeb3c42c40c89d8c4f8/9.0/fpm/Dockerfile)
+-	[`10.0.4-apache`, `10.0-apache`, `10-apache`, `10.0.4`, `10.0`, `10` (*10.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/843d309ee62b9d2704e6141d2103f9ded97e35b6/10.0/apache/Dockerfile)
+-	[`10.0.4-fpm`, `10.0-fpm`, `10-fpm` (*10.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/843d309ee62b9d2704e6141d2103f9ded97e35b6/10.0/fpm/Dockerfile)
+-	[`11.0.2-apache`, `11.0-apache`, `11-apache`, `11.0.2`, `11.0`, `11` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/843d309ee62b9d2704e6141d2103f9ded97e35b6/11.0/apache/Dockerfile)
+-	[`11.0.2-fpm`, `11.0-fpm`, `11-fpm` (*11.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/843d309ee62b9d2704e6141d2103f9ded97e35b6/11.0/fpm/Dockerfile)
+-	[`9.0.57-apache`, `9.0-apache`, `9-apache`, `9.0.57`, `9.0`, `9` (*9.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/843d309ee62b9d2704e6141d2103f9ded97e35b6/9.0/apache/Dockerfile)
+-	[`9.0.57-fpm`, `9.0-fpm`, `9-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/843d309ee62b9d2704e6141d2103f9ded97e35b6/9.0/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nextcloud`)](https://github.com/docker-library/official-images/blob/master/library/nextcloud). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnextcloud).
 
