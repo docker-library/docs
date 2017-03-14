@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `4.6.0`, `enterprise-4.6.0` (*enterprise/couchbase-server/4.6.0/Dockerfile*)](https://github.com/couchbase/docker/blob/8c3e58c1fd2572dee95c9b9dda0bdf5342bb8091/enterprise/couchbase-server/4.6.0/Dockerfile)
--	[`community`, `community-4.5.0` (*community/couchbase-server/4.5.0/Dockerfile*)](https://github.com/couchbase/docker/blob/8c3e58c1fd2572dee95c9b9dda0bdf5342bb8091/community/couchbase-server/4.5.0/Dockerfile)
--	[`3.1.6`, `enterprise-3.1.6` (*enterprise/couchbase-server/3.1.6/Dockerfile*)](https://github.com/couchbase/docker/blob/8c3e58c1fd2572dee95c9b9dda0bdf5342bb8091/enterprise/couchbase-server/3.1.6/Dockerfile)
--	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/8c3e58c1fd2572dee95c9b9dda0bdf5342bb8091/community/couchbase-server/3.1.3/Dockerfile)
+-	[`latest`, `enterprise`, `4.6.1`, `enterprise-4.6.1` (*enterprise/couchbase-server/4.6.1/Dockerfile*)](https://github.com/couchbase/docker/blob/0bdfd0897553eb448ac21d662065581f4b879199/enterprise/couchbase-server/4.6.1/Dockerfile)
+-	[`community`, `community-4.5.0` (*community/couchbase-server/4.5.0/Dockerfile*)](https://github.com/couchbase/docker/blob/0bdfd0897553eb448ac21d662065581f4b879199/community/couchbase-server/4.5.0/Dockerfile)
+-	[`3.1.6`, `enterprise-3.1.6` (*enterprise/couchbase-server/3.1.6/Dockerfile*)](https://github.com/couchbase/docker/blob/0bdfd0897553eb448ac21d662065581f4b879199/enterprise/couchbase-server/3.1.6/Dockerfile)
+-	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/0bdfd0897553eb448ac21d662065581f4b879199/community/couchbase-server/3.1.3/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/couchbase`)](https://github.com/docker-library/official-images/blob/master/library/couchbase). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchbase).
 
