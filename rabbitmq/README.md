@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.7`, `3.6`, `3`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/9646c8c3908387ff91e027566204ef6421a31f2d/debian/Dockerfile)
--	[`3.6.7-management`, `3.6-management`, `3-management`, `management` (*debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/366975d8089b28fb2a58054835f80e1a74328d05/debian/management/Dockerfile)
--	[`3.6.7-alpine`, `3.6-alpine`, `3-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/e8b2c67785ed0708fee28fedbccb6d84abf3b293/alpine/Dockerfile)
--	[`3.6.7-management-alpine`, `3.6-management-alpine`, `3-management-alpine`, `management-alpine` (*alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/74a9d28d4882360eab74a1b9d78ec67143cef345/alpine/management/Dockerfile)
+-	[`3.6.8`, `3.6`, `3`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/59ecc28d6c3de1aef51cc8a4e869093417dcd4f9/debian/Dockerfile)
+-	[`3.6.8-management`, `3.6-management`, `3-management`, `management` (*debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/366975d8089b28fb2a58054835f80e1a74328d05/debian/management/Dockerfile)
+-	[`3.6.8-alpine`, `3.6-alpine`, `3-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/07a16a2856ee8ae9dc50e0ad264e175bf1178dc1/alpine/Dockerfile)
+-	[`3.6.8-management-alpine`, `3.6-management-alpine`, `3-management-alpine`, `management-alpine` (*alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/74a9d28d4882360eab74a1b9d78ec67143cef345/alpine/management/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frabbitmq).
 
