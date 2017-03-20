@@ -31,7 +31,7 @@ The supported data models can be mixed in queries and allow ArangoDB to be the a
 
 > [arangodb.com](https://arangodb.com)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/fc374e65196006a9b55da56446332f953f3c88b3/arangodb/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/788ad3d196c4f69bd73801812abcab7707f70101/arangodb/logo.png)
 
 ## Key Features in ArangoDB
 
@@ -139,7 +139,7 @@ You can map the container's volumes to a directory on the host, so that the data
 
 ```console
 unix> mkdir /tmp/arangodb
-unix> docker -e ARANGO_RANDOM_ROOT_PASSWORD=1 run -p 8529:8529 -d \
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d \
           -v /tmp/arangodb:/var/lib/arangodb3 \
           arangodb
 ```
