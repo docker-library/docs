@@ -16,16 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.9-jdk7`, `2.4-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/a287bd53aac3bfb0e4a05bd31a4fe3d6b954c837/jdk7/Dockerfile)
--	[`2.4.9-jre7`, `2.4-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/a287bd53aac3bfb0e4a05bd31a4fe3d6b954c837/jre7/Dockerfile)
--	[`2.4.9-jdk7-alpine`, `2.4-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/a287bd53aac3bfb0e4a05bd31a4fe3d6b954c837/jdk7-alpine/Dockerfile)
--	[`2.4.9-jre7-alpine`, `2.4-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/a287bd53aac3bfb0e4a05bd31a4fe3d6b954c837/jre7-alpine/Dockerfile)
--	[`2.4.9-jdk8`, `2.4-jdk8`, `jdk8`, `2.4.9-jdk`, `2.4-jdk`, `jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/a287bd53aac3bfb0e4a05bd31a4fe3d6b954c837/jdk8/Dockerfile)
--	[`2.4.9-jre8`, `2.4-jre8`, `jre8`, `2.4.9-jre`, `2.4-jre`, `jre`, `2.4.9`, `2.4`, `latest` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/a287bd53aac3bfb0e4a05bd31a4fe3d6b954c837/jre8/Dockerfile)
--	[`2.4.9-jdk8-alpine`, `2.4-jdk8-alpine`, `jdk8-alpine`, `2.4.9-jdk-alpine`, `2.4-jdk-alpine`, `jdk-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/a287bd53aac3bfb0e4a05bd31a4fe3d6b954c837/jdk8-alpine/Dockerfile)
--	[`2.4.9-jre8-alpine`, `2.4-jre8-alpine`, `jre8-alpine`, `2.4.9-jre-alpine`, `2.4-jre-alpine`, `jre-alpine`, `2.4.9-alpine`, `2.4-alpine`, `alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/a287bd53aac3bfb0e4a05bd31a4fe3d6b954c837/jre8-alpine/Dockerfile)
--	[`2.4.9-jdk9`, `2.4-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/a287bd53aac3bfb0e4a05bd31a4fe3d6b954c837/jdk9/Dockerfile)
--	[`2.4.9-jre9`, `2.4-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/a287bd53aac3bfb0e4a05bd31a4fe3d6b954c837/jre9/Dockerfile)
+-	[`2.4.10-jdk7`, `2.4-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/dbc61ddbc286b5847e8778747264e92bcd29c93d/jdk7/Dockerfile)
+-	[`2.4.10-jre7`, `2.4-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/dbc61ddbc286b5847e8778747264e92bcd29c93d/jre7/Dockerfile)
+-	[`2.4.10-jdk7-alpine`, `2.4-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/dbc61ddbc286b5847e8778747264e92bcd29c93d/jdk7-alpine/Dockerfile)
+-	[`2.4.10-jre7-alpine`, `2.4-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/dbc61ddbc286b5847e8778747264e92bcd29c93d/jre7-alpine/Dockerfile)
+-	[`2.4.10-jdk8`, `2.4-jdk8`, `jdk8`, `2.4.10-jdk`, `2.4-jdk`, `jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/dbc61ddbc286b5847e8778747264e92bcd29c93d/jdk8/Dockerfile)
+-	[`2.4.10-jre8`, `2.4-jre8`, `jre8`, `2.4.10-jre`, `2.4-jre`, `jre`, `2.4.10`, `2.4`, `latest` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/dbc61ddbc286b5847e8778747264e92bcd29c93d/jre8/Dockerfile)
+-	[`2.4.10-jdk8-alpine`, `2.4-jdk8-alpine`, `jdk8-alpine`, `2.4.10-jdk-alpine`, `2.4-jdk-alpine`, `jdk-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/dbc61ddbc286b5847e8778747264e92bcd29c93d/jdk8-alpine/Dockerfile)
+-	[`2.4.10-jre8-alpine`, `2.4-jre8-alpine`, `jre8-alpine`, `2.4.10-jre-alpine`, `2.4-jre-alpine`, `jre-alpine`, `2.4.10-alpine`, `2.4-alpine`, `alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/dbc61ddbc286b5847e8778747264e92bcd29c93d/jre8-alpine/Dockerfile)
+-	[`2.4.10-jdk9`, `2.4-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/dbc61ddbc286b5847e8778747264e92bcd29c93d/jdk9/Dockerfile)
+-	[`2.4.10-jre9`, `2.4-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/dbc61ddbc286b5847e8778747264e92bcd29c93d/jre9/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/groovy`)](https://github.com/docker-library/official-images/blob/master/library/groovy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgroovy).
 
