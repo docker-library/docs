@@ -114,7 +114,7 @@ You can map the container's volumes to a directory on the host, so that the data
 
 ```console
 unix> mkdir /tmp/arangodb
-unix> docker -e ARANGO_RANDOM_ROOT_PASSWORD=1 run -p 8529:8529 -d \
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d \
           -v /tmp/arangodb:/var/lib/arangodb3 \
           arangodb
 ```
