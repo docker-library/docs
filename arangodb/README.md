@@ -17,7 +17,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/05366cb4c6a6aab8e1ff9ca74c81b09d9a57b5b5/jessie/2.8.11/Dockerfile)
--	[`3.1`, `3.1.14`, `latest` (*jessie/3.1.14/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/a617a4fd263064d11567f097d16c235bfa737625/jessie/3.1.14/Dockerfile)
+-	[`3.1`, `3.1.15`, `latest` (*jessie/3.1.15/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/a33416dbaa5cfeb57c447aa10dccae6e6580f027/jessie/3.1.15/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/arangodb`)](https://github.com/docker-library/official-images/blob/master/library/arangodb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Farangodb).
 
