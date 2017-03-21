@@ -17,6 +17,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`2`, `2.6`, `2.6.0`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/4339e1083299550aeb5915e0d5a5238d159872da/Dockerfile)
+-	[`2.6.1-rc.2` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/125d5f1ef4f3d60f5a19cf9dc867be80e1b3ef00/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fregistry).
 
