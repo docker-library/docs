@@ -19,9 +19,9 @@ WARNING:
 -	[`2-5.7.0`, `2-5.7`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/ca2e765c5093389cf9b805fc959d43645a502a77/2/Dockerfile)
 -	[`2-5.7.0-slim`, `2-5.7-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/ca2e765c5093389cf9b805fc959d43645a502a77/2/slim/Dockerfile)
 -	[`2-5.7.0-onbuild`, `2-5.7-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
--	[`3-5.5.0-alpha`, `3-5.5.0`, `3-5.5`, `3-5`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/d280acb013c2248452caf98117334eab9da5a8f6/3/Dockerfile)
--	[`3-5.5.0-alpha-slim`, `3-5.5.0-slim`, `3-5.5-slim`, `3-5-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/95f6702ded19c44f5dc872ff5ea0374138804829/3/slim/Dockerfile)
--	[`3-5.5.0-alpha-onbuild`, `3-5.5.0-onbuild`, `3-5.5-onbuild`, `3-5-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
+-	[`3-5.7.0`, `3-5.7`, `3-5`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/efd06021f245f79c905bf0db5e24031ca62a4dbe/3/Dockerfile)
+-	[`3-5.7.0-slim`, `3-5.7-slim`, `3-5-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/efd06021f245f79c905bf0db5e24031ca62a4dbe/3/slim/Dockerfile)
+-	[`3-5.7.0-onbuild`, `3-5.7-onbuild`, `3-5-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/pypy`)](https://github.com/docker-library/official-images/blob/master/library/pypy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpypy).
 
