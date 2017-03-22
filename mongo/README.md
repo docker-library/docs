@@ -39,7 +39,7 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 
 # How to use this image
 
-## start a mongo instance
+## Start a mongo instance
 
 ```console
 $ docker run --name some-mongo -d mongo
@@ -47,7 +47,7 @@ $ docker run --name some-mongo -d mongo
 
 This image includes `EXPOSE 27017` (the mongo port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
 
-## connect to it from an application
+## Connect to mongo from an application
 
 ```console
 $ docker run --name some-app --link some-mongo:mongo -d application-that-uses-mongo
@@ -73,35 +73,40 @@ $ docker run --name some-mongo -d mongo --storageEngine wiredTiger
 
 MongoDB does not require authentication by default, but it can be configured to do so. For more details about the functionality described here, please see the sections in the official documentation which describe [authentication](https://docs.mongodb.org/manual/core/authentication/) and [authorization](https://docs.mongodb.org/manual/core/authorization/) in more detail.
 
-#### Start the Database
+The mongo image supports creating an initial admin or root user on database initialisation. 
 
-```console
-$ docker run --name some-mongo -d mongo --auth
-```
+#### Admin User Setup
 
-#### Add the Initial Admin User
+The environment variables to control the admin or "root" user setup are 
 
-```console
-$ docker exec -it some-mongo mongo admin
-connecting to: admin
-> db.createUser({ user: 'jsmith', pwd: 'some-initial-password', roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
-Successfully added user: {
-	"user" : "jsmith",
-	"roles" : [
-		{
-			"role" : "userAdminAnyDatabase",
-			"db" : "admin"
-		}
-	]
-}
-```
+- `MONGO_INITDB_ROOT_USERNAME`
+- `MONGO_INITDB_ROOT_PASSWORD`
+
+Example
+
+    docker run \
+      --name some-mongo \
+      -e MONGO_INITDB_ROOT_USERNAME=admin \
+      -e MONGO_INITDB_ROOT_PASSWORD=password \
+      mongod
+
+Authentication is automatically enabled by the docker `entrypoint.sh` script when the environment variables are provided so the suppled `mongod` command can't include the `--auth` option.
 
 #### Connect Externally
 
 ```console
-$ docker run -it --rm --link some-mongo:mongo mongo mongo -u jsmith -p some-initial-password --authenticationDatabase admin some-mongo/some-db
+$ docker run -it --rm --link some-mongo:mongo mongo \
+    mongo -u "admin" -p "password" --authenticationDatabase admin some-mongo/some-db
 > db.getName();
 some-db
+```
+
+## Custom Initialisation
+
+The mongo image also provides the `/docker-entrypoint-initdb.d/` path to deploy custom `.js` or `.sh` setup scripts that will be run once on database initialisation. Any `.js` scripts will be run against the `test` database by default or `MONGO_INITDB_DATABASE` if it is defined in the environment.
+
+```
+COPY mysetup.sh /docker-entrypoint-initdb.d/
 ```
 
 ## Where to Store Data
