@@ -16,21 +16,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.7.3`, `7.7`, `7`, `latest` (*7.7/Dockerfile*)](https://github.com/nodejs/docker-node/blob/66084ef79197a4fd1198568fb41bd547ee62b8ae/7.7/Dockerfile)
--	[`7.7.3-alpine`, `7.7-alpine`, `7-alpine`, `alpine` (*7.7/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/66084ef79197a4fd1198568fb41bd547ee62b8ae/7.7/alpine/Dockerfile)
--	[`7.7.3-onbuild`, `7.7-onbuild`, `7-onbuild`, `onbuild` (*7.7/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/66084ef79197a4fd1198568fb41bd547ee62b8ae/7.7/onbuild/Dockerfile)
--	[`7.7.3-slim`, `7.7-slim`, `7-slim`, `slim` (*7.7/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/66084ef79197a4fd1198568fb41bd547ee62b8ae/7.7/slim/Dockerfile)
--	[`7.7.3-wheezy`, `7.7-wheezy`, `7-wheezy`, `wheezy` (*7.7/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/66084ef79197a4fd1198568fb41bd547ee62b8ae/7.7/wheezy/Dockerfile)
--	[`6.10.0`, `6.10`, `6`, `boron` (*6.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/debf4ea17cee8c078df632e975ea69f1969094c0/6.10/Dockerfile)
--	[`6.10.0-alpine`, `6.10-alpine`, `6-alpine`, `boron-alpine` (*6.10/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/debf4ea17cee8c078df632e975ea69f1969094c0/6.10/alpine/Dockerfile)
--	[`6.10.0-onbuild`, `6.10-onbuild`, `6-onbuild`, `boron-onbuild` (*6.10/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/db2660f326fdad12a21dd5e7351053a4d0691099/6.10/onbuild/Dockerfile)
--	[`6.10.0-slim`, `6.10-slim`, `6-slim`, `boron-slim` (*6.10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/debf4ea17cee8c078df632e975ea69f1969094c0/6.10/slim/Dockerfile)
--	[`6.10.0-wheezy`, `6.10-wheezy`, `6-wheezy`, `boron-wheezy` (*6.10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/debf4ea17cee8c078df632e975ea69f1969094c0/6.10/wheezy/Dockerfile)
--	[`4.8.0`, `4.8`, `4`, `argon` (*4.8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/debf4ea17cee8c078df632e975ea69f1969094c0/4.8/Dockerfile)
--	[`4.8.0-alpine`, `4.8-alpine`, `4-alpine`, `argon-alpine` (*4.8/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/debf4ea17cee8c078df632e975ea69f1969094c0/4.8/alpine/Dockerfile)
--	[`4.8.0-onbuild`, `4.8-onbuild`, `4-onbuild`, `argon-onbuild` (*4.8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/8345a12b6da2f0f124eb60cc248158a40b66d77f/4.8/onbuild/Dockerfile)
--	[`4.8.0-slim`, `4.8-slim`, `4-slim`, `argon-slim` (*4.8/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/debf4ea17cee8c078df632e975ea69f1969094c0/4.8/slim/Dockerfile)
--	[`4.8.0-wheezy`, `4.8-wheezy`, `4-wheezy`, `argon-wheezy` (*4.8/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/debf4ea17cee8c078df632e975ea69f1969094c0/4.8/wheezy/Dockerfile)
+-	[`7.7.4`, `7.7`, `7`, `latest` (*7.7/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6f9f865df604e72ad2cabe2d78ab12c8f61640cb/7.7/Dockerfile)
+-	[`7.7.4-alpine`, `7.7-alpine`, `7-alpine`, `alpine` (*7.7/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6f9f865df604e72ad2cabe2d78ab12c8f61640cb/7.7/alpine/Dockerfile)
+-	[`7.7.4-onbuild`, `7.7-onbuild`, `7-onbuild`, `onbuild` (*7.7/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6f9f865df604e72ad2cabe2d78ab12c8f61640cb/7.7/onbuild/Dockerfile)
+-	[`7.7.4-slim`, `7.7-slim`, `7-slim`, `slim` (*7.7/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6f9f865df604e72ad2cabe2d78ab12c8f61640cb/7.7/slim/Dockerfile)
+-	[`7.7.4-wheezy`, `7.7-wheezy`, `7-wheezy`, `wheezy` (*7.7/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6f9f865df604e72ad2cabe2d78ab12c8f61640cb/7.7/wheezy/Dockerfile)
+-	[`6.10.1`, `6.10`, `6`, `boron` (*6.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/6.10/Dockerfile)
+-	[`6.10.1-alpine`, `6.10-alpine`, `6-alpine`, `boron-alpine` (*6.10/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/6.10/alpine/Dockerfile)
+-	[`6.10.1-onbuild`, `6.10-onbuild`, `6-onbuild`, `boron-onbuild` (*6.10/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/6.10/onbuild/Dockerfile)
+-	[`6.10.1-slim`, `6.10-slim`, `6-slim`, `boron-slim` (*6.10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/6.10/slim/Dockerfile)
+-	[`6.10.1-wheezy`, `6.10-wheezy`, `6-wheezy`, `boron-wheezy` (*6.10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/6.10/wheezy/Dockerfile)
+-	[`4.8.1`, `4.8`, `4`, `argon` (*4.8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/4.8/Dockerfile)
+-	[`4.8.1-alpine`, `4.8-alpine`, `4-alpine`, `argon-alpine` (*4.8/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/4.8/alpine/Dockerfile)
+-	[`4.8.1-onbuild`, `4.8-onbuild`, `4-onbuild`, `argon-onbuild` (*4.8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/4.8/onbuild/Dockerfile)
+-	[`4.8.1-slim`, `4.8-slim`, `4-slim`, `argon-slim` (*4.8/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/4.8/slim/Dockerfile)
+-	[`4.8.1-wheezy`, `4.8-wheezy`, `4-wheezy`, `argon-wheezy` (*4.8/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/4.8/wheezy/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
 
