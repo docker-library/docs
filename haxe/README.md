@@ -22,8 +22,8 @@ WARNING:
 -	[`3.2.1-onbuild`, `3.2-onbuild` (*3.2/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/e0f9cb5a3cc190acd42565113e3380b5853f5746/3.2/onbuild/Dockerfile)
 -	[`3.3.0-rc.1`, `3.3.0`, `3.3` (*3.3/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/0f4f8783c73fb791c0265680df8bc851727d2297/3.3/Dockerfile)
 -	[`3.3.0-rc.1-onbuild`, `3.3.0-onbuild`, `3.3-onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/e0f9cb5a3cc190acd42565113e3380b5853f5746/3.3/onbuild/Dockerfile)
--	[`3.4.0`, `3.4`, `latest` (*3.4/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/0f4f8783c73fb791c0265680df8bc851727d2297/3.4/Dockerfile)
--	[`3.4.0-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/0f4f8783c73fb791c0265680df8bc851727d2297/3.4/onbuild/Dockerfile)
+-	[`3.4.2`, `3.4`, `latest` (*3.4/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/8e6c65a2d72c239e8ddaf5af9157bb146d71016d/3.4/Dockerfile)
+-	[`3.4.2-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/8e6c65a2d72c239e8ddaf5af9157bb146d71016d/3.4/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haxe`)](https://github.com/docker-library/official-images/blob/master/library/haxe). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaxe).
 
