@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.5-standalone`, `4.2-standalone`, `4-standalone`, `standalone`, `4.2.5`, `4.2`, `4`, `latest` (*4.2/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/66fd66f352b5447d154bfed125d10b0c9ea61c2b/4.2/Dockerfile)
--	[`4.2.5-fastcgi`, `4.2-fastcgi`, `4-fastcgi`, `fastcgi` (*4.2/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/66fd66f352b5447d154bfed125d10b0c9ea61c2b/4.2/fastcgi/Dockerfile)
+-	[`4.3.0-standalone`, `4.3-standalone`, `4-standalone`, `standalone`, `4.3.0`, `4.3`, `4`, `latest` (*4.3/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/583a3425bf560b744f0ac16be398b2b589474c8b/4.3/Dockerfile)
+-	[`4.3.0-fastcgi`, `4.3-fastcgi`, `4-fastcgi`, `fastcgi` (*4.3/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/a07553cc164c5fd9533cda44568a58dfad0fa864/4.3/fastcgi/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/adminer`)](https://github.com/docker-library/official-images/blob/master/library/adminer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fadminer).
 
