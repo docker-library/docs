@@ -47,6 +47,15 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 `docker run --rm -v "$PWD":/scripts -w /scripts --name groovy groovy:alpine groovy <script> <script-args>`
 
+## Reusing the Grapes cache
+
+The local Grapes cache can be reused across containers by creating a volume and mounting it in */home/groovy/.groovy/grapes*.
+
+```console
+docker volume create --name grapes-cache
+docker run -it -v grapes-cache:/home/groovy/.groovy/grapes groovy:alpine
+```
+
 # Image Variants
 
 The `groovy` images come in many flavors, each designed for a specific use case.
