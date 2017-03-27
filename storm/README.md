@@ -107,7 +107,7 @@ This image uses [default configuration](https://github.com/apache/storm/blob/v1.
 
 1.	Using command line arguments.
 
-		$ docker run -d --restart always --name nimbus storm:1.0 storm nimbus -c storm.zookeeper.servers="[zookeeper]"
+		$ docker run -d --restart always --name nimbus storm:1.0 storm nimbus -c storm.zookeeper.servers='["zookeeper"]'
 
 2.	Assuming you have `storm.yaml` in the current directory you can mount it as a volume.
 
