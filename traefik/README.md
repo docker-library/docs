@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.2.0`, `1.2.0`, `morbier`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/57cb9f1df31fe50555e95ddd4e3296cd43568030/Dockerfile)
--	[`v1.2.0-alpine`, `1.2.0-alpine`, `morbier-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/57cb9f1df31fe50555e95ddd4e3296cd43568030/alpine/Dockerfile)
+-	[`v1.2.1`, `1.2.1`, `v1.2`, `1.2`, `morbier`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/5444b825df0cd3884956e5a5bf19d7d240ccb056/Dockerfile)
+-	[`v1.2.1-alpine`, `1.2.1-alpine`, `v1.2-alpine`, `1.2-alpine`, `morbier-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/5444b825df0cd3884956e5a5bf19d7d240ccb056/alpine/Dockerfile)
 -	[`v1.1.2`, `1.1.2`, `camembert` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3645f9dfbd417ee8dad608257c7aeec3a407711f/Dockerfile)
 -	[`v1.1.2-alpine`, `1.1.2-alpine`, `camembert-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3645f9dfbd417ee8dad608257c7aeec3a407711f/alpine/Dockerfile)
 
