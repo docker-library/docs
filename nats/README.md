@@ -167,7 +167,7 @@ View [license information](https://github.com/nats-io/gnatsd/blob/master/LICENSE
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 17.03.0-ce.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

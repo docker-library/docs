@@ -111,7 +111,7 @@ View [license information](https://www.gnu.org/licenses/gpl-3.0.en.html) for the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 17.03.0-ce.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
