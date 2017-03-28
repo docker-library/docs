@@ -2,7 +2,7 @@
 
 Please report issues with this docker image on this [Github project](https://github.com/docker-flink/docker-flink).
 
-For general questions about Flink, see the [Community & Project Info](https://flink.apache.org/community.html), in particular the flink user mailing list.
+For general questions about Flink, see the [Community & Project Info](https://flink.apache.org/community.html), in particular the Flink user mailing list.
 
 ## Contributing
 

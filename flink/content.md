@@ -2,7 +2,7 @@
 
 Apache Flink is an open source stream processing framework with powerful stream- and batch-processing capabilities.
 
-Learn more about Flink at [http://flink.apache.org/](http://flink.apache.org/)
+Learn more about Flink at [https://flink.apache.org/](https://flink.apache.org/)
 
 > [wikipedia.org/wiki/Apache_Flink](https://en.wikipedia.org/wiki/Apache_Flink)
 
@@ -10,7 +10,7 @@ Learn more about Flink at [http://flink.apache.org/](http://flink.apache.org/)
 
 # How to use this Docker image
 
-## Run a flink local cluster
+## Run a Flink local cluster
 
 To run a single Flink local cluster:
 
@@ -20,7 +20,7 @@ $ docker run --name flink_local -p 8081:8081 -t flink local
 
 Then with a web browser go to `http://localhost:8081/` to see the Flink Job Manager Console (adjust the hostname for your docker host).
 
-To use Flink, you can submit a job to the cluster using the Web UI or you can also do it from a different flink container, for example:
+To use Flink, you can submit a job to the cluster using the Web UI or you can also do it from a different Flink container, for example:
 
 ```console
 $ docker run -t flink flink run -m <jobmanager:port> -c <your_class> <your_jar> <your_params>
@@ -81,7 +81,7 @@ docker-compose scale taskmanager=<N>
 
 ## Configuration
 
-For reference these are the default ports used by flink image:
+These are the default ports used by the Flink image:
 
 - The Web Client is on port `8081`
 - JobManager RPC port `6123`
