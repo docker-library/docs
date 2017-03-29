@@ -39,12 +39,12 @@ Then launch Convertigo and link it to the running 'fullsync' container. Converti
 
 ### MySQL
 
-MySQL is the recommended database for holding Convertigo MBaaS server analytics. You can use this command to run convertigo and link it to a running MySQL container. Change [mysql](as the container name), [data base admin user], [data base admin user] with the values for your MySQL configuration.
+MySQL is the recommended database for holding Convertigo MBaaS server analytics. You can use this command to run convertigo and link it to a running MySQL container. Change `[mysql-container]` to the container name, and `[username for the c8oAnalytics db]`, `[password for specified db user]` with the values for your MySQL configuration.
 
-	docker run -d --name C8O-MBAAS --link [mysql]:mysql -p 28080:28080                                   \
+	docker run -d --name C8O-MBAAS --link [mysql-container]:mysql -p 28080:28080                         \
 	    -e JAVA_OPTS="-Dconvertigo.engine.billing.enabled=true                                           \ 
 	            -Dconvertigo.engine.billing.persistence.jdbc.username=[username for the c8oAnalytics db] \
-	            -Dconvertigo.engine.billing.persistence.jdbc.password=[password for the c8oAnalytics db] \
+	            -Dconvertigo.engine.billing.persistence.jdbc.password=[password for specified db user]   \
 	            -Dconvertigo.engine.billing.persistence.jdbc.url=jdbc:mysql://mysql:3306/c8oAnalytics"   \
 	convertigo
 
