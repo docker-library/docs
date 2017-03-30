@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.4.2`, `9.4`, `9`, `9.4.2-jre8`, `9.4-jre8`, `9-jre8`, `latest`, `jre8` (*9.4-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/1012ed9083262dfbbc7fb1505f3d014663ddac62/9.4-jre8/Dockerfile)
--	[`9.4.2-alpine`, `9.4-alpine`, `9-alpine`, `9.4.2-jre8-alpine`, `9.4-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.4-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/1012ed9083262dfbbc7fb1505f3d014663ddac62/9.4-jre8/alpine/Dockerfile)
--	[`9.3.16`, `9.3`, `9.3.16-jre8`, `9.3-jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/1012ed9083262dfbbc7fb1505f3d014663ddac62/9.3-jre8/Dockerfile)
--	[`9.3.16-alpine`, `9.3-alpine`, `9.3.16-jre8-alpine`, `9.3-jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/1012ed9083262dfbbc7fb1505f3d014663ddac62/9.3-jre8/alpine/Dockerfile)
+-	[`9.4.3`, `9.4`, `9`, `9.4.3-jre8`, `9.4-jre8`, `9-jre8`, `latest`, `jre8` (*9.4-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/f58bb68ef8ab2faacc87cc3a067a8aeb40018b03/9.4-jre8/Dockerfile)
+-	[`9.4.3-alpine`, `9.4-alpine`, `9-alpine`, `9.4.3-jre8-alpine`, `9.4-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.4-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/f58bb68ef8ab2faacc87cc3a067a8aeb40018b03/9.4-jre8/alpine/Dockerfile)
+-	[`9.3.17`, `9.3`, `9.3.17-jre8`, `9.3-jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/3fd7b3fcf67614c7ecfd197b5c3ba444006ad2cd/9.3-jre8/Dockerfile)
+-	[`9.3.17-alpine`, `9.3-alpine`, `9.3.17-jre8-alpine`, `9.3-jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/3fd7b3fcf67614c7ecfd197b5c3ba444006ad2cd/9.3-jre8/alpine/Dockerfile)
 -	[`9.2.21`, `9.2`, `9.2.21-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/1012ed9083262dfbbc7fb1505f3d014663ddac62/9.2-jre8/Dockerfile)
 -	[`9.2.21-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/1012ed9083262dfbbc7fb1505f3d014663ddac62/9.2-jre7/Dockerfile)
 
