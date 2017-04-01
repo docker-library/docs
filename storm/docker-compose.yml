@@ -1,12 +1,12 @@
 version: '2'
 services:
     zookeeper:
-        image: zookeeper:3.4
+        image: zookeeper
         container_name: zookeeper
         restart: always
 
     nimbus:
-        image: storm:1.0
+        image: storm
         container_name: nimbus
         command: storm nimbus
         depends_on:
@@ -18,7 +18,7 @@ services:
             - 6627:6627
 
     supervisor:
-        image: storm:1.0
+        image: storm
         container_name: supervisor
         command: storm supervisor
         depends_on:
