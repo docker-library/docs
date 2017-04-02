@@ -1,11 +1,27 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "erlang/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "erlang/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`19.2`, `19`, `latest` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/f52f97dbd128f2eca3eee86b3471b4e6ef6d8594/19/Dockerfile)
--	[`19.2-slim`, `19-slim`, `slim` (*19/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/f52f97dbd128f2eca3eee86b3471b4e6ef6d8594/19/slim/Dockerfile)
--	[`19.2-onbuild`, `19-onbuild`, `onbuild` (*19/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/9be249effe93e3c61fa0749078e55ef8d050a16e/19/onbuild/Dockerfile)
--	[`18.3.4.4`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7f5e7b4768136caa5f15e0b84d6b503fa430ef7b/18/Dockerfile)
--	[`18.3.4.4-slim`, `18.3.4-slim`, `18.3-slim`, `18-slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7f5e7b4768136caa5f15e0b84d6b503fa430ef7b/18/slim/Dockerfile)
--	[`18.3.4.4-onbuild`, `18.3.4-onbuild`, `18.3-onbuild`, `18-onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/20e41464075dc0fc76709be77701530eddb6fe33/18/onbuild/Dockerfile)
+-	[`19.3`, `19`, `latest` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/9584350e96a6fed028ed858312d8de43a0e238e0/19/Dockerfile)
+-	[`19.3-slim`, `19-slim`, `slim` (*19/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/9584350e96a6fed028ed858312d8de43a0e238e0/19/slim/Dockerfile)
+-	[`19.3-onbuild`, `19-onbuild`, `onbuild` (*19/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/1b03fdd83ec769e7962ec0dce01e25613a46dacf/19/onbuild/Dockerfile)
+-	[`18.3.4.5`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/1b03fdd83ec769e7962ec0dce01e25613a46dacf/18/Dockerfile)
+-	[`18.3.4.5-slim`, `18.3.4-slim`, `18.3-slim`, `18-slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/1b03fdd83ec769e7962ec0dce01e25613a46dacf/18/slim/Dockerfile)
+-	[`18.3.4.5-onbuild`, `18.3.4-onbuild`, `18.3-onbuild`, `18-onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/20e41464075dc0fc76709be77701530eddb6fe33/18/onbuild/Dockerfile)
 -	[`17.5.6.9`, `17.5.6`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/ea32d5f6f1735f9f55bee04b112166da96eb9c73/17/Dockerfile)
 -	[`17.5.6.9-slim`, `17.5.6-slim`, `17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/ea32d5f6f1735f9f55bee04b112166da96eb9c73/17/slim/Dockerfile)
 
@@ -91,7 +107,7 @@ View [license information](http://www.erlang.org/about.html) for the software co
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

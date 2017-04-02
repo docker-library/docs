@@ -1,11 +1,27 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "mongo/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "mongo/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.14`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/b37a4891feffeafb77febd2833d96b59cf28d6a8/3.0/Dockerfile)
+-	[`3.0.14`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/5fa47142887600edcd437e7689f40342b3572e71/3.0/Dockerfile)
 -	[`3.0.14-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/a51b641c84e1a8d543b6a234a090f8263188139a/3.0/windows/windowsservercore/Dockerfile)
--	[`3.2.11`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/21a6f6cf3eff13a39b20c86224730a29823370ca/3.2/Dockerfile)
--	[`3.2.11-windowsservercore`, `3.2-windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/21a6f6cf3eff13a39b20c86224730a29823370ca/3.2/windows/windowsservercore/Dockerfile)
--	[`3.4.1`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/6f548652b0139ff50182c56d3c74efd875f6fb5c/3.4/Dockerfile)
--	[`3.4.1-windowsservercore`, `3.4-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.4/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/6f548652b0139ff50182c56d3c74efd875f6fb5c/3.4/windows/windowsservercore/Dockerfile)
+-	[`3.2.12`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/5fa47142887600edcd437e7689f40342b3572e71/3.2/Dockerfile)
+-	[`3.2.12-windowsservercore`, `3.2-windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/5c0e43ac8eba7c2fb8cc3de9542f48b31c48da14/3.2/windows/windowsservercore/Dockerfile)
+-	[`3.4.3`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/812b8fb401a929c312c7222a26b707a6415450c6/3.4/Dockerfile)
+-	[`3.4.3-windowsservercore`, `3.4-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.4/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/2754d33460e0bfe196dccdccf9a8ff2b43816d00/3.4/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo).
 
@@ -137,7 +153,7 @@ View [license information](https://github.com/mongodb/mongo/blob/7c3cfac300cfcca
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

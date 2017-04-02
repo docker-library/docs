@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "django/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "django/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # **DEPRECATED**
 
 This image is officially deprecated in favor of [the standard `python` image](https://hub.docker.com/_/python/), and will receive no further updates after 2016-12-31 (Dec 31, 2016). Please adjust your usage accordingly.
@@ -107,7 +123,7 @@ View [license information](https://github.com/django/django/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

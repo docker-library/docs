@@ -1,8 +1,24 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "orientdb/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "orientdb/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.18` (*2.0/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/a43637b03a105ceb1104cbf5e42e93e1ffed0944/2.0/Dockerfile)
--	[`2.1.25` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/eb9c688528d4ce7d50eec34391a3cbb4fea88868/2.1/Dockerfile)
--	[`2.2.14`, `latest` (*2.2/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/6a4be54372625a9dac05ca9fee7fbe0067593531/2.2/x86_64/alpine/Dockerfile)
+-	[`2.0.18` (*2.0/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/8a9633c19fa9c53a5446b9b62997ff389813e785/2.0/Dockerfile)
+-	[`2.1.25` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/8a9633c19fa9c53a5446b9b62997ff389813e785/2.1/Dockerfile)
+-	[`2.2.17`, `latest` (*2.2/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/23d39969598a124e23983f628c296f1cffc66b07/2.2/x86_64/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/orientdb`)](https://github.com/docker-library/official-images/blob/master/library/orientdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Forientdb).
 
@@ -83,7 +99,7 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,6 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "kong/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "kong/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9`, `0.9.7`, `latest` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/7082b428648da59748c9c5cf9517e20bba75732d/Dockerfile)
+-	[`0.10`, `0.10.1`, `latest` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/1edce50d74f0f3de63185a85a2741d2d2bf47112/Dockerfile)
+-	[`0.9`, `0.9.9` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/b512fa58a9c5a085b21bc5ffb90299cbc4e48eba/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kong`)](https://github.com/docker-library/official-images/blob/master/library/kong). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkong).
 
@@ -101,7 +118,7 @@ View [license information](https://getkong.org/license/) for the software contai
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

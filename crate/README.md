@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "crate/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "crate/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.0`, `1.0.1` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/51d0d07e455bb6658341cbd7bf8a670c94fdd92c/Dockerfile)
+-	[`latest`, `1.0`, `1.0.5` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/13192a62e2be5483ccaa91dfabd20d930556f634/Dockerfile)
 -	[`0.57`, `0.57.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/54ceb9d7065ee853faf3b050ddaeeee3580585b8/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrate).
@@ -39,13 +55,13 @@ To start the Crate cluster in containers distributed to three hosts without mult
     --ulimit memlock=9223372036854775807 \
         crate \
         crate \
-          -Des.cluster.name=crate-cluster \
-          -Des.node.name=crate1 \
-          -Des.transport.publish_port=4300 \
-          -Des.network.publish_host="$HOST" \
-          -Des.multicast.enabled=false \
-          -Des.discovery.zen.ping.unicast.hosts="$HOSTS" \
-          -Des.discovery.zen.minimum_master_nodes=2
+          -Ccluster.name=crate-cluster \
+          -Cnode.name=crate1 \
+          -Ctransport.publish_port=4300 \
+          -Cnetwork.publish_host="$HOST" \
+          -Cmulticast.enabled=false \
+          -Cdiscovery.zen.ping.unicast.hosts="$HOSTS" \
+          -Cdiscovery.zen.minimum_master_nodes=2
 ```
 
 # The crate Docker Image
@@ -106,10 +122,10 @@ Crate publishes the hostname it runs on for discovery within the cluster. If the
 
 ```console
 # docker run -d -p 4200:4200 -p 4300:4300 \
-    crate crate -Des.network.publish_host=host1.example.com
+    crate crate -Cnetwork.publish_host=host1.example.com
 ```
 
-If you change the transport port from the default `4300` to something else, you need to pass the publish port to Crate by adding `-Des.transport.publish_port=4321` to your command.
+If you change the transport port from the default `4300` to something else, you need to pass the publish port to Crate by adding `-Ctransport.publish_port=4321` to your command.
 
 ## Crate Shell
 
@@ -125,7 +141,7 @@ View [license information](https://github.com/crate/crate/blob/master/LICENSE.tx
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -147,6 +163,6 @@ You are very welcome to contribute features or fixes! Before we can accept any p
 
 ## Documentation
 
-Documentation for this image is stored in the [`crate/` directory](https://github.com/docker-library/docs/tree/master/crate) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`crate/` directory](https://github.com/docker-library/docs/tree/master/crate) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 Visit [Crate on Docker](https://crate.io/docs/install/containers/docker/) and get further documentation about how to get started with Crate.

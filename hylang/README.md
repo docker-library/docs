@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "hylang/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "hylang/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.11.1`, `0.11`, `0`, `latest` (*Dockerfile*)](https://github.com/hylang/hy/blob/54b13955d1f98f8a7d835a4ed8f452bb9f1135bc/Dockerfile)
+-	[`0.12.1`, `0.12`, `0`, `latest` (*Dockerfile*)](https://github.com/hylang/hy/blob/7a4a2ca6687da381a2b67598b90a2e28beeceaed/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/hylang`)](https://github.com/docker-library/official-images/blob/master/library/hylang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhylang).
 
@@ -46,7 +62,7 @@ View [license information](https://github.com/hylang/hy/blob/master/LICENSE) for
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

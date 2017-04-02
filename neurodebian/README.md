@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "neurodebian/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "neurodebian/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`precise`, `nd12.04` (*dockerfiles/precise/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/383ae2cf242d4737e813d42c402315c3a8cd4569/dockerfiles/precise/Dockerfile)
@@ -42,7 +58,7 @@ deb http://neuro.debian.net/debian data main
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

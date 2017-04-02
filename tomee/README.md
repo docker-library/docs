@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "tomee/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "tomee/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`6-jre-1.7.4-jaxrs` (*6-jre-1.7.4-jaxrs/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/592da5738fd23d6c8a483efce1710cf03ee508c6/6-jre-1.7.4-jaxrs/Dockerfile)
@@ -88,7 +104,7 @@ View [license information](http://www.apache.org/licenses/LICENSE-2.0) for the s
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,11 +1,31 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "redis/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "redis/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.0/Dockerfile)
 -	[`3.0.7-32bit`, `3.0-32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/6cb8a8015f126e2a7251c5d011b86b657e9febd6/3.0/32bit/Dockerfile)
 -	[`3.0.7-alpine`, `3.0-alpine` (*3.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/9db6cc1645465f134d03584dbbbd962ce822479a/3.0/alpine/Dockerfile)
--	[`3.2.6`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/2e14b84ea86939438834a453090966a9bd4367fb/3.2/Dockerfile)
--	[`3.2.6-32bit`, `3.2-32bit`, `3-32bit`, `32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/2e14b84ea86939438834a453090966a9bd4367fb/3.2/32bit/Dockerfile)
--	[`3.2.6-alpine`, `3.2-alpine`, `3-alpine`, `alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/9db6cc1645465f134d03584dbbbd962ce822479a/3.2/alpine/Dockerfile)
+-	[`3.0.504-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/redis/blob/ad72d7a7f3c05a9b658ec64894d4193c89bba01b/3.0/windows/windowsservercore/Dockerfile)
+-	[`3.0.504-nanoserver`, `3.0-nanoserver` (*3.0/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/redis/blob/ad72d7a7f3c05a9b658ec64894d4193c89bba01b/3.0/windows/nanoserver/Dockerfile)
+-	[`3.2.8`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/3f926a47370a19fc88d57d0245823758cbf19b2d/3.2/Dockerfile)
+-	[`3.2.8-32bit`, `3.2-32bit`, `3-32bit`, `32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/3f926a47370a19fc88d57d0245823758cbf19b2d/3.2/32bit/Dockerfile)
+-	[`3.2.8-alpine`, `3.2-alpine`, `3-alpine`, `alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/3f926a47370a19fc88d57d0245823758cbf19b2d/3.2/alpine/Dockerfile)
+-	[`3.2.100-windowsservercore`, `3.2-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/redis/blob/709e6a8df205f73afcc6f6257cab104175de1f5f/3.2/windows/windowsservercore/Dockerfile)
+-	[`3.2.100-nanoserver`, `3.2-nanoserver`, `3-nanoserver`, `nanoserver` (*3.2/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/redis/blob/2daf4fd7d858c8f2ad9694c4f460b8c6a7f782aa/3.2/windows/nanoserver/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/redis`)](https://github.com/docker-library/official-images/blob/master/library/redis). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredis).
 
@@ -13,7 +33,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # What is Redis?
 
-Redis is an open-source, networked, in-memory, key-value data store with optional durability. It is written in ANSI C. The development of Redis has been sponsored by Pivotal since May 2013; before that, it was sponsored by VMware. According to the monthly ranking by DB-Engines.com, Redis is the most popular key-value store. The name Redis means REmote DIctionary Server.
+Redis is an open-source, networked, in-memory, key-value data store with optional durability. It is written in ANSI C. The development of Redis is sponsored by Redis Labs today; before that, it was sponsored by Pivotal and VMware. According to the monthly ranking by DB-Engines.com, Redis is the most popular key-value store. The name Redis means REmote DIctionary Server.
 
 > [wikipedia.org/wiki/Redis](https://en.wikipedia.org/wiki/Redis)
 
@@ -89,13 +109,22 @@ This variant is highly recommended when final image size being as small as possi
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
+## `redis:windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+
 # License
 
 View [license information](http://redis.io/topics/license) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

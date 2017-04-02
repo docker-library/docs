@@ -36,7 +36,6 @@ Systemd is now included in both the centos:7 and centos:latest base containers, 
 
 ```dockerfile
 FROM centos:7
-MAINTAINER "you" <your@email.here>
 ENV container docker
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
 systemd-tmpfiles-setup.service ] || rm -f $i; done); \

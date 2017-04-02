@@ -1,7 +1,24 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "fsharp/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "fsharp/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/57b3ddadc85a63bf586ab89b523bb8326dad9c12/4.0.0.4/Dockerfile)
--	[`4.0.1.1`, `latest` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/57b3ddadc85a63bf586ab89b523bb8326dad9c12/4.0.1.1/Dockerfile)
+-	[`latest`, `4`, `4.1`, `4.1.0.1` (*4.1.0.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.1.0.1/Dockerfile)
+-	[`4.0`, `4.0.1`, `4.0.1.1` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.0.1.1/Dockerfile)
+-	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.0.0.4/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/fsharp`)](https://github.com/docker-library/official-images/blob/master/library/fsharp). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffsharp).
 
@@ -35,7 +52,7 @@ View [the Apache 2.0 license](https://github.com/fsharp/fsharp/blob/d518f91418ef
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "haskell/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "haskell/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.1`, `8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/e0efde5504642864811a7697ab945067bb6a042e/8.0/Dockerfile)
+-	[`8.0.2`, `8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/5f1ae82bd27501322100b915c9ae6cc9f9aea129/8.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haskell`)](https://github.com/docker-library/official-images/blob/master/library/haskell). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaskell).
 
@@ -25,7 +41,7 @@ This image ships a minimal Haskell toolchain with the following packages from th
 -	`cabal-install`
 -	`happy`
 
-As of `7.10.3`, the `stack` tool is included via FPComplete's Debian repository.
+As of `7.10.3`, the `stack` tool is included.
 
 Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). While older GHC release tags are available in this DockerHub repository, only the latest stable release (or upcoming release candidates) will be shown in the "Supported tags ..." section at the top of this page.
 
@@ -34,15 +50,15 @@ Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). 
 Start an interactive interpreter session with `ghci`:
 
 ```console
-$ docker run -it --rm haskell:7.10.3
-GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
+$ docker run -it --rm haskell:8
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
 Prelude>
 ```
 
 Dockerize an application from Hackage with a `Dockerfile`:
 
 ```dockerfile
-FROM haskell:7
+FROM haskell:8
 RUN stack install pandoc pandoc-citeproc
 ENTRYPOINT ["pandoc"]
 ```
@@ -50,7 +66,7 @@ ENTRYPOINT ["pandoc"]
 Alternatively, using `cabal`:
 
 ```dockerfile
-FROM haskell:7
+FROM haskell:8
 RUN cabal update && cabal install pandoc pandoc-citeproc
 ENTRYPOINT ["pandoc"]
 ```
@@ -89,7 +105,7 @@ This image is licensed under the MIT License (see [LICENSE](https://github.com/d
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

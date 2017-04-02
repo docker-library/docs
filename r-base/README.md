@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "r-base/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "r-base/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.2`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/b2cdaad0026645c6cb3ed78f460042ed2197449a/r-base/Dockerfile)
+-	[`3.3.3`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/8620b7759022c7860ac54887066b79d224fe01dd/r-base/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/r-base`)](https://github.com/docker-library/official-images/blob/master/library/r-base). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fr-base).
 
@@ -78,7 +94,7 @@ View [R-project license information](http://www.r-project.org/Licenses/) for the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -100,4 +116,4 @@ Before you start to code, we recommend discussing your plans through a [GitHub i
 
 ## Documentation
 
-Documentation for this image is stored in the [`r-base/` directory](https://github.com/docker-library/docs/tree/master/r-base) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`r-base/` directory](https://github.com/docker-library/docs/tree/master/r-base) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

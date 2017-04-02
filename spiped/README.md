@@ -1,7 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "spiped/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "spiped/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.0`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/04b9fa8c5b8ea5ca75f656ce1104e93096f09d02/1.5/Dockerfile)
--	[`1.5.0-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*1.5/alpine/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/04b9fa8c5b8ea5ca75f656ce1104e93096f09d02/1.5/alpine/Dockerfile)
+-	[`1.5.0`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/caa1ecb53270efd9a088e3856398c48622b5afc8/1.5/Dockerfile)
+-	[`1.5.0-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*1.5/alpine/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/543c0f7021284d0aa36d5a894b2467656095126b/1.5/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/spiped`)](https://github.com/docker-library/official-images/blob/master/library/spiped). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fspiped).
 
@@ -29,19 +45,19 @@ usage: spiped {-e | -d} -s <source socket> -t <target socket> -k <key file>
 For example running spiped to take encrypted connections on port 8025 and forward them to port 25 on localhost would look like this:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 8025:8025 spiped -d -s '[0.0.0.0]:8025' -t '[127.0.0.1]:25'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 8025:8025 --init spiped -d -s '[0.0.0.0]:8025' -t '[127.0.0.1]:25'
 ```
 
 Usually you would combine this image with another linked container. The following example would take encrypted connections on port 9200 and forward them to port 9200 in the container with the name `elasticsearch`:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 9200:9200 --link elasticsearch:elasticsearch spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 9200:9200 --link elasticsearch:elasticsearch --init spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
 ```
 
 If you don’t need any to bind to a privileged port you can pass `--user spiped` to make *spiped* run as an unprivileged user:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --link elasticsearch:elasticsearch spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --link elasticsearch:elasticsearch --init spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
 ```
 
 ### Generating a key
@@ -76,7 +92,7 @@ View [license information](https://github.com/Tarsnap/spiped/blob/master/COPYRIG
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

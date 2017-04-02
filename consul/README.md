@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "consul/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "consul/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.7.2` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/81e8c00044cb955a7a232c91dcfcb06611e18cba/0.X/Dockerfile)
+-	[`latest`, `0.7.5` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/22839eee5174a56f31f7ad29005e19c8d5cc25a9/0.X/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/consul`)](https://github.com/docker-library/official-images/blob/master/library/consul). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconsul).
 
@@ -210,7 +226,7 @@ View [license information](https://raw.githubusercontent.com/hashicorp/consul/ma
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

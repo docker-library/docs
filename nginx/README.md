@@ -1,9 +1,25 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "nginx/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "nginx/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.11.8`, `mainline`, `1`, `1.11`, `latest` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3e8a6ee0603bf6c9cd8846c5fa43e96b13b0f44b/mainline/jessie/Dockerfile)
--	[`1.11.8-alpine`, `mainline-alpine`, `1-alpine`, `1.11-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3e8a6ee0603bf6c9cd8846c5fa43e96b13b0f44b/mainline/alpine/Dockerfile)
--	[`1.10.2`, `stable`, `1.10` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/25a3fc7343c6916fce1fba32caa1e8de8409d79f/stable/jessie/Dockerfile)
--	[`1.10.2-alpine`, `stable-alpine`, `1.10-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/25a3fc7343c6916fce1fba32caa1e8de8409d79f/stable/alpine/Dockerfile)
+-	[`1.11.12`, `mainline`, `1`, `1.11`, `latest` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/29b52049eba48ce0eaef84696149b9b16160e900/mainline/jessie/Dockerfile)
+-	[`1.11.12-alpine`, `mainline-alpine`, `1-alpine`, `1.11-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/29b52049eba48ce0eaef84696149b9b16160e900/mainline/alpine/Dockerfile)
+-	[`1.10.3`, `stable`, `1.10` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/014e624239987a0a46bee5b44088a8c5150bf0bb/stable/jessie/Dockerfile)
+-	[`1.10.3-alpine`, `stable-alpine`, `1.10-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/014e624239987a0a46bee5b44088a8c5150bf0bb/stable/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnginx).
 
@@ -49,30 +65,32 @@ Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browse
 ## complex configuration
 
 ```console
-$ docker run --name some-nginx -v /some/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
+$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
 ```
 
 For information on the syntax of the Nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
 
-Be sure to include `daemon off;` in your custom configuration to ensure that Nginx stays in the foreground so that Docker can track the process properly (otherwise your container will stop immediately after starting)!
-
 If you wish to adapt the default configuration, use something like the following to copy it from a running Nginx container:
 
 ```console
-$ docker cp some-nginx:/etc/nginx/nginx.conf /some/nginx.conf
+$ docker run --name tmp-nginx-container -d nginx
+$ docker cp tmp-nginx-container:/etc/nginx/nginx.conf /host/path/nginx.conf
+$ docker rm -f tmp-nginx-container
 ```
 
-As above, this can also be accomplished more cleanly using a simple `Dockerfile`:
+As above, this can also be accomplished more cleanly using a simple `Dockerfile` (in `/host/path/`):
 
 ```dockerfile
 FROM nginx
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
 
-Then, build with `docker build -t some-custom-nginx .` and run:
+If you add a custom `CMD` in the Dockerfile, be sure to include `-g daemon off;` to `CMD` that Nginx stays in the foreground so that Docker can track the process properly (otherwise your container will stop immediately after starting)!
+
+Then, build with `docker build -t custom-nginx .` and run:
 
 ```console
-$ docker run --name some-nginx -d some-custom-nginx
+$ docker run --name my-custom-nginx-container -d custom-nginx
 ```
 
 ### using environment variables in nginx configuration
@@ -116,7 +134,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

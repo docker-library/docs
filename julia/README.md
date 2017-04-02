@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "julia/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "julia/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.5.0`, `0.5`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/0f29b23863e4ff1c99b13a30e845b66c7468f79b/Dockerfile)
+-	[`0.5.1`, `0.5`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/8de8734c2f3547332bc1e8688ba0eff58b3a1a50/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/julia`)](https://github.com/docker-library/official-images/blob/master/library/julia). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjulia).
 
@@ -36,7 +52,7 @@ View [license information](http://julialang.org/) for the software contained in 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

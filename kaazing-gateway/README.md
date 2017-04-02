@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "kaazing-gateway/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "kaazing-gateway/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.3.2` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/d4ac1f583abb55841b135713912803d1c70ce385/Dockerfile)
+-	[`latest`, `5.5.0` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/27281b1f0a8d09ce3897ba3325f1da669266d0b1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kaazing-gateway`)](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkaazing-gateway).
 
@@ -69,7 +85,7 @@ View [license information](https://github.com/kaazing/gateway/blob/master/LICENS
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

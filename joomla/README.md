@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "joomla/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "joomla/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.6.5-apache`, `3.6-apache`, `3-apache`, `apache`, `3.6.5`, `3.6`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/80dfb1c98d72f50077b7a49c44e49a49bf3e9c69/apache/Dockerfile)
@@ -84,7 +100,7 @@ View [license information](http://www.gnu.org/licenses/gpl-2.0.txt) for the soft
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

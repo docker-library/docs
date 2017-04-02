@@ -1,17 +1,30 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "docker/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "docker/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.0-rc5`, `1.13-rc`, `rc` (*1.13-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/ee49c1bacae27314f4b1baf40145a3a8714f1eab/1.13-rc/Dockerfile)
--	[`1.13.0-rc5-dind`, `1.13-rc-dind`, `rc-dind` (*1.13-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c1af76ec4c97ff24dcf6675b55b12105216dc711/1.13-rc/dind/Dockerfile)
--	[`1.13.0-rc5-git`, `1.13-rc-git`, `rc-git` (*1.13-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/737f83092a47b012d09a0cbf0ed72759550301cb/1.13-rc/git/Dockerfile)
--	[`1.12.5`, `1.12`, `1`, `latest` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/b7f1d172ede348d109f04e732f2b65af7663883c/1.12/Dockerfile)
--	[`1.12.5-dind`, `1.12-dind`, `1-dind`, `dind` (*1.12/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c1af76ec4c97ff24dcf6675b55b12105216dc711/1.12/dind/Dockerfile)
--	[`1.12.5-git`, `1.12-git`, `1-git`, `git` (*1.12/git/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/git/Dockerfile)
--	[`1.12.5-experimental`, `1.12-experimental`, `1-experimental`, `experimental` (*1.12/experimental/Dockerfile*)](https://github.com/docker-library/docker/blob/b7f1d172ede348d109f04e732f2b65af7663883c/1.12/experimental/Dockerfile)
--	[`1.12.5-experimental-dind`, `1.12-experimental-dind`, `1-experimental-dind`, `experimental-dind` (*1.12/experimental/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c1af76ec4c97ff24dcf6675b55b12105216dc711/1.12/experimental/dind/Dockerfile)
--	[`1.12.5-experimental-git`, `1.12-experimental-git`, `1-experimental-git`, `experimental-git` (*1.12/experimental/git/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/git/Dockerfile)
--	[`1.11.2`, `1.11` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/b7f1d172ede348d109f04e732f2b65af7663883c/1.11/Dockerfile)
--	[`1.11.2-dind`, `1.11-dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/5e30187978ad75d0f2ae5fc6c2a0b668bdf16885/1.11/dind/Dockerfile)
--	[`1.11.2-git`, `1.11-git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
+-	[`17.04.0-ce-rc2`, `17.04.0-ce`, `17.04.0`, `17.04-rc`, `rc` (*17.04-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/47df35c317a61dfea5394b6edb4a44576fc91a6d/17.04-rc/Dockerfile)
+-	[`17.04.0-ce-rc2-dind`, `17.04.0-ce-dind`, `17.04.0-dind`, `17.04-rc-dind`, `rc-dind` (*17.04-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/e9c09260bfaea5199c6c053a83fc46564aa14990/17.04-rc/dind/Dockerfile)
+-	[`17.04.0-ce-rc2-git`, `17.04.0-ce-git`, `17.04.0-git`, `17.04-rc-git`, `rc-git` (*17.04-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/e9c09260bfaea5199c6c053a83fc46564aa14990/17.04-rc/git/Dockerfile)
+-	[`17.03.1-ce`, `17.03.1`, `17.03`, `17`, `latest`, `stable` (*17.03/Dockerfile*)](https://github.com/docker-library/docker/blob/91d454d113abfb2328c88bbd48b81e495605e809/17.03/Dockerfile)
+-	[`17.03.1-ce-dind`, `17.03.1-dind`, `17.03-dind`, `17-dind`, `dind`, `stable-dind` (*17.03/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/bf822e2b9b4f755156b825444562c9865f22557f/17.03/dind/Dockerfile)
+-	[`17.03.1-ce-git`, `17.03.1-git`, `17.03-git`, `17-git`, `git`, `stable-git` (*17.03/git/Dockerfile*)](https://github.com/docker-library/docker/blob/bf822e2b9b4f755156b825444562c9865f22557f/17.03/git/Dockerfile)
+-	[`1.13.1`, `1.13` (*1.13/Dockerfile*)](https://github.com/docker-library/docker/blob/50ec917e1b7601d655daee8893567e8cfd213248/1.13/Dockerfile)
+-	[`1.13.1-dind`, `1.13-dind` (*1.13/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/b202ec7e529f5426e2ad7e8c0a8b82cacd406573/1.13/dind/Dockerfile)
+-	[`1.13.1-git`, `1.13-git` (*1.13/git/Dockerfile*)](https://github.com/docker-library/docker/blob/b202ec7e529f5426e2ad7e8c0a8b82cacd406573/1.13/git/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker).
 
@@ -43,7 +56,7 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 $ docker run --privileged --name some-docker -d docker:1.8-dind
 ```
 
-**Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/reference/run/#runtime-privilege-linux-capabilities-and-lxc-configuration).
+**Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
 
 This image includes `EXPOSE 2375` (the Docker port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
 
@@ -164,7 +177,7 @@ View [license information](https://github.com/docker/docker/blob/eb7b2ed6bbe3fbe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

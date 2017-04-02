@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "mongo-express/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "mongo-express/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.34.0`, `0.34`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/adc882a30c412639936ee4ac0f3edf22baba37af/Dockerfile)
+-	[`0.38.0`, `0.38`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/500a1db15deef043a6937302a1407b25369c8b4a/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo-express`)](https://github.com/docker-library/official-images/blob/master/library/mongo-express). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express).
 
@@ -75,7 +91,7 @@ This example links to a container name typical of `docker-compose`, changes the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "crux/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "crux/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # **DEPRECATED**
 
 This image is deprecated due to maintainer inactivity (last updated Aug 2015; [docker-library/official-images#1012](https://github.com/docker-library/official-images/pull/1012)).
@@ -30,7 +46,7 @@ Finally, it strives to use new features as they become available, as long as the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,8 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "composer/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "composer/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3.0`, `1.3`, `1`, `latest` (*1.3/Dockerfile*)](https://github.com/composer/docker/blob/42d33131b49f1696205f3b708c6d1513b20823ce/1.3/Dockerfile)
--	[`1.2.4`, `1.2` (*1.2/Dockerfile*)](https://github.com/composer/docker/blob/690f3d623ac1ba30be337a254b2126584e6e2aa5/1.2/Dockerfile)
--	[`1.1.3`, `1.1` (*1.1/Dockerfile*)](https://github.com/composer/docker/blob/be6ecf58913f704399d11a352818b22951832a60/1.1/Dockerfile)
+-	[`1.4.1`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/composer/docker/blob/c5557dc348d9b986aec883e919d202ff76fa5d56/1.4/Dockerfile)
+-	[`1.3.3`, `1.3` (*1.3/Dockerfile*)](https://github.com/composer/docker/blob/542d2ce1c1218dabec97b3dfc5815bfe87756a57/1.3/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/composer`)](https://github.com/docker-library/official-images/blob/master/library/composer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcomposer).
 
@@ -54,6 +69,19 @@ docker run --rm --interactive --tty \
     composer install
 ```
 
+When combining the use of private repositories with running Composer as another (local) user, you might run into non-existant user errors. To work around this, simply mount the host passwd and group files (read-only) into the container:
+
+```sh
+docker run --rm --interactive --tty \
+    --volume $PWD:/app \
+    --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
+    --volume /etc/passwd:/etc/passwd:ro \
+    --volume /etc/group:/etc/group:ro \
+    --user $(id -u):$(id -g) \
+    --env SSH_AUTH_SOCK=/ssh-auth.sock \
+    composer install
+```
+
 ## Suggestions
 
 ### PHP Extensions
@@ -85,6 +113,8 @@ composer () {
         --interactive \
         --rm \
         --user $(id -u):$(id -g) \
+        --volume /etc/passwd:/etc/passwd:ro \
+        --volume /etc/group:/etc/group:ro \
         --volume $(pwd):/app \
         composer "$@"
 }
@@ -96,7 +126,7 @@ View [license information](https://github.com/composer/composer/blob/master/LICE
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

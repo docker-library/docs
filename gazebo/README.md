@@ -1,13 +1,31 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "gazebo/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "gazebo/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`gzserver4` (*gazebo/gazebo4/gzserver4/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo4/gzserver4/Dockerfile)
--	[`libgazebo4` (*gazebo/gazebo4/libgazebo4/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo4/libgazebo4/Dockerfile)
--	[`gzserver5` (*gazebo/gazebo5/gzserver5/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo5/gzserver5/Dockerfile)
--	[`libgazebo5` (*gazebo/gazebo5/libgazebo5/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo5/libgazebo5/Dockerfile)
--	[`gzserver6` (*gazebo/gazebo6/gzserver6/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo6/gzserver6/Dockerfile)
--	[`libgazebo6` (*gazebo/gazebo6/libgazebo6/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo6/libgazebo6/Dockerfile)
--	[`gzserver7` (*gazebo/gazebo7/gzserver7/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo7/gzserver7/Dockerfile)
--	[`libgazebo7`, `latest` (*gazebo/gazebo7/libgazebo7/Dockerfile*)](https://github.com/osrf/docker_images/blob/32010a4955ccbfb2427063e67a75d13617749963/gazebo/gazebo7/libgazebo7/Dockerfile)
+-	[`gzserver4` (*gazebo/gazebo4/gzserver4/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo4/gzserver4/Dockerfile)
+-	[`libgazebo4` (*gazebo/gazebo4/libgazebo4/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo4/libgazebo4/Dockerfile)
+-	[`gzserver5` (*gazebo/gazebo5/gzserver5/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo5/gzserver5/Dockerfile)
+-	[`libgazebo5` (*gazebo/gazebo5/libgazebo5/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo5/libgazebo5/Dockerfile)
+-	[`gzserver6` (*gazebo/gazebo6/gzserver6/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo6/gzserver6/Dockerfile)
+-	[`libgazebo6` (*gazebo/gazebo6/libgazebo6/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo6/libgazebo6/Dockerfile)
+-	[`gzserver7` (*gazebo/gazebo7/gzserver7/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo7/gzserver7/Dockerfile)
+-	[`libgazebo7` (*gazebo/gazebo7/libgazebo7/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo7/libgazebo7/Dockerfile)
+-	[`gzserver8` (*gazebo/gazebo8/gzserver8/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo8/gzserver8/Dockerfile)
+-	[`libgazebo8`, `latest` (*gazebo/gazebo8/libgazebo8/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo8/libgazebo8/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/gazebo`)](https://github.com/docker-library/official-images/blob/master/library/gazebo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgazebo).
 
@@ -26,7 +44,7 @@ Robot simulation is an essential tool in every roboticist's toolbox. A well-desi
 ## Create a `Dockerfile` in your Gazebo project
 
 ```dockerfile
-FROM gazebo:gzserver5
+FROM gazebo:gzserver8
 # place here your application's setup specifics
 CMD [ "gzserver", "my-gazebo-app-args" ]
 ```
@@ -84,6 +102,7 @@ $ docker run -d -v="/tmp/.gazebo/:/root/.gazebo/" --name=gazebo gazebo
 
 ```console
 $ docker exec -it gazebo bash
+$ apt-get update && apt-get install -y curl
 $ curl -o double_pendulum.sdf http://models.gazebosim.org/double_pendulum_with_base/model-1_4.sdf
 $ gz model --model-name double_pendulum --spawn-file double_pendulum.sdf
 ```
@@ -160,7 +179,7 @@ Gazebo is open-source licensed under [Apache 2.0](http://opensource.org/licenses
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

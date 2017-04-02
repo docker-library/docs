@@ -1,6 +1,27 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "nextcloud/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "nextcloud/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`10.0.0`, `10.0`, `10`, `latest` (*Dockerfile*)](https://github.com/nextcloud/docker/blob/3b2c8bfc2e196f264eed9fc851b3986240e0d483/Dockerfile)
+-	[`10.0.4-apache`, `10.0-apache`, `10-apache`, `10.0.4`, `10.0`, `10` (*10.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/534665db850902068eca461cf1e67c2309e8ebaa/10.0/apache/Dockerfile)
+-	[`10.0.4-fpm`, `10.0-fpm`, `10-fpm` (*10.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/534665db850902068eca461cf1e67c2309e8ebaa/10.0/fpm/Dockerfile)
+-	[`11.0.2-apache`, `11.0-apache`, `11-apache`, `apache`, `11.0.2`, `11.0`, `11`, `latest` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/843d309ee62b9d2704e6141d2103f9ded97e35b6/11.0/apache/Dockerfile)
+-	[`11.0.2-fpm`, `11.0-fpm`, `11-fpm`, `fpm` (*11.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/843d309ee62b9d2704e6141d2103f9ded97e35b6/11.0/fpm/Dockerfile)
+-	[`9.0.57-apache`, `9.0-apache`, `9-apache`, `9.0.57`, `9.0`, `9` (*9.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/534665db850902068eca461cf1e67c2309e8ebaa/9.0/apache/Dockerfile)
+-	[`9.0.57-fpm`, `9.0-fpm`, `9-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/534665db850902068eca461cf1e67c2309e8ebaa/9.0/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nextcloud`)](https://github.com/docker-library/official-images/blob/master/library/nextcloud). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnextcloud).
 
@@ -65,7 +86,7 @@ View [license information](https://github.com/nextcloud/server/blob/master/COPYI
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

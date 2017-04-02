@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "eclipse-mosquitto/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "eclipse-mosquitto/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.4.10`, `latest` (*docker/1.4.10/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/53616be0e296f6186f52c791e241c76d53380078/docker/1.4.10/Dockerfile)
@@ -57,7 +73,7 @@ Eclipse Mosquitto is released under the [EPL](https://www.eclipse.org/legal/epl-
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

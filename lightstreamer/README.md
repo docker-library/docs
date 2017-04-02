@@ -1,6 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "lightstreamer/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "lightstreamer/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.3`, `6.0`, `6`, `latest` (*6.0/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/784b417d4415e12f1bb1b15f7f697273de3a7ded/6.0/Dockerfile)
+-	[`6.0.3`, `6.0` (*6.0/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/ca600ed95f9fa8ec632ef2ad0526c15d917a52b7/6.0/Dockerfile)
+-	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/22d6045bab9625ea9f8b3e1e53c4c34383335ed3/6.1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/lightstreamer`)](https://github.com/docker-library/official-images/blob/master/library/lightstreamer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flightstreamer).
 
@@ -138,7 +155,7 @@ View [license information](http://www.lightstreamer.com/lightstreamer-sla) for t
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

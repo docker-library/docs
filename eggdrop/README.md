@@ -1,8 +1,24 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "eggdrop/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "eggdrop/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`develop` (*develop/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/f5712546aaef06b4b374ab118207c5ae9bf0e0e8/develop/Dockerfile)
--	[`1.8`, `1.8.0`, `stable`, `latest` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/98f9d9a8c56b7b88b249135ab6b87019efa82337/1.8/Dockerfile)
--	[`1.6`, `1.6.21` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/87d717b0c05d4c43460a411c9871e9190c94f8bb/1.6/Dockerfile)
+-	[`develop` (*develop/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/69a7cf0e524bfb66940159cfa3c52f83801ba2ab/develop/Dockerfile)
+-	[`1.8`, `1.8.1`, `stable`, `latest` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/d4b8304746296685059033464148d12dd7d00927/1.8/Dockerfile)
+-	[`1.6`, `1.6.21` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/d38f639793663f1203b3bda586e8e44740c7e984/1.6/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/eggdrop`)](https://github.com/docker-library/official-images/blob/master/library/eggdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feggdrop).
 
@@ -24,9 +40,29 @@ To run this container the first time, you'll need to pass in, at minimum, a nick
 $ docker run -ti -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/for/host/data:/home/eggdrop/eggdrop/data eggdrop
 ```
 
-should be used. This will modify the appropriate values within the config file, then start your bot with the nickname FooBot and connect it to irc.freenode.net.
+should be used. This will modify the appropriate values within the config file, then start your bot with the nickname FooBot and connect it to irc.freenode.net. These variables are only needed for your first run- after the first use, you can edit the config file directly. Additional configuration options are listed in the following sections.
 
-These variables are only needed for your first run- after the first use, you can edit the config file directly.
+Please note that, even in daemon mode, the `-i` flag for `docker run` is required.
+
+## Environmental Variables
+
+### `SERVER`
+
+This variable sets the IRC server Eggdrop will connect to. Examples are:
+
+```console
+  -e SERVER=just.a.normal.server
+  -e SERVER=you.need.to.change.this:6667
+  -e SERVER=another.example.com:7000:password
+  -e SERVER=[2001:db8:618:5c0:263::]:6669:password
+  -e SERVER=ssl.example.net:+6697
+```
+
+Only one server can be specified via an environmental variable. The + denotes an SSL-enabled port. After the first run, it is advised to edit the eggdrop config directly to add additional servers (see Long-term Persistence below).
+
+### `NICK`
+
+This variable sets the nickname used by eggdrop. After the first use, you should change it by editing the eggdrop config directly (see Long-term Persistence below).
 
 ## Long-term Persistence
 
@@ -36,15 +72,23 @@ After running the eggdrop container for the first time, the configuration file, 
 $ docker run -i -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop
 ```
 
-Please note that, even in daemon mode, the `-i` flag for `docker run` is required.
+If you provide your own config file, specify it as the argument to the docker container:
+
+```console
+$ docker run -i -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop mybot.conf
+```
+
+Any config file used with docker MUST end in .conf, such as eggdrop.conf or mybot.conf
 
 ## Adding scripts
 
-An easy way to add scripts would be to create a scripts directory on the host and mount it to `/home/eggdrop/eggdrop/data`. This would be accomplished by adding an option similar to
+An easy way to add scripts would be to create a scripts directory on the host and mount it to `/home/eggdrop/eggdrop/scripts` (or the path of your choosing). This would be accomplished by adding an option similar to
 
+```console
 	-v /path/to/host/scripts:/home/eggdrop/eggdrop/scripts
+```
 
-to your docker run command line (and of course, don't forget to edit your configuration file to actually load it!)
+to your docker run command line (and then edit your config file to load the scripts from the path that matches where you mounted the scripts dir).
 
 ## Exposing network ports
 
@@ -66,7 +110,7 @@ View [license information](https://www.gnu.org/licenses/gpl-3.0.en.html) for the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

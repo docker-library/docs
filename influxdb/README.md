@@ -1,9 +1,25 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "influxdb/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "influxdb/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0`, `1.0.2` (*influxdb/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/Dockerfile)
--	[`1.0-alpine`, `1.0.2-alpine` (*influxdb/1.0/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/21becafddfa32acce5bdcfd44d29709dd89f3d23/influxdb/1.0/alpine/Dockerfile)
--	[`1.1`, `1.1.1`, `latest` (*influxdb/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fccddeace2827eb50d09bbd2a722d25fb707369f/influxdb/1.1/Dockerfile)
--	[`1.1-alpine`, `1.1.1-alpine`, `alpine` (*influxdb/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fccddeace2827eb50d09bbd2a722d25fb707369f/influxdb/1.1/alpine/Dockerfile)
+-	[`1.1`, `1.1.4` (*influxdb/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fcc2a1db0bcc7061b78bfd58b1da6df33bad2d30/influxdb/1.1/Dockerfile)
+-	[`1.1-alpine`, `1.1.4-alpine` (*influxdb/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fcc2a1db0bcc7061b78bfd58b1da6df33bad2d30/influxdb/1.1/alpine/Dockerfile)
+-	[`1.2`, `1.2.2`, `latest` (*influxdb/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/97165ea663d6bf5fb06ceaeae5d7a179eb6855e7/influxdb/1.2/Dockerfile)
+-	[`1.2-alpine`, `1.2.2-alpine`, `alpine` (*influxdb/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/97165ea663d6bf5fb06ceaeae5d7a179eb6855e7/influxdb/1.2/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
 
@@ -45,6 +61,7 @@ The following ports are important and are used by InfluxDB.
 
 -	8086 HTTP API port
 -	8083 Administrator interface port
+-	2003 Graphite support, if it is enabled
 
 The HTTP API port will be automatically exposed when using `docker run -P`.
 
@@ -91,7 +108,7 @@ Find more about configuring InfluxDB [here](https://docs.influxdata.com/influxdb
 InfluxDB supports the Graphite line protocol, but the service and ports are not exposed by default. To run InfluxDB with Graphite support enabled, you can either use a configuration file or set the appropriate environment variables. Run InfluxDB with the default Graphite configuration:
 
 ```console
-docker run -p 8086:8086 \
+docker run -p 8086:8086 -p 2003:2003 \
     -e INFLUXDB_GRAPHITE_ENABLED=true \
     influxdb
 ```
@@ -152,7 +169,7 @@ View [license information](https://github.com/influxdata/influxdb/blob/master/LI
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

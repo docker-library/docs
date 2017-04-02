@@ -1,25 +1,41 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "debian/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "debian/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`8.6`, `8`, `jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d220bea42308935d3bee1b40701f39e8c0d69860/jessie/Dockerfile)
--	[`jessie-slim` (*jessie/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d220bea42308935d3bee1b40701f39e8c0d69860/jessie/slim/Dockerfile)
--	[`jessie-backports` (*jessie/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d220bea42308935d3bee1b40701f39e8c0d69860/jessie/backports/Dockerfile)
--	[`oldstable` (*oldstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/a7561bee7a4bbc2e5f7ea6b8a7377d8abe6eb2a6/oldstable/Dockerfile)
--	[`oldstable-slim` (*oldstable/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/a7561bee7a4bbc2e5f7ea6b8a7377d8abe6eb2a6/oldstable/slim/Dockerfile)
--	[`oldstable-backports` (*oldstable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/a7561bee7a4bbc2e5f7ea6b8a7377d8abe6eb2a6/oldstable/backports/Dockerfile)
--	[`sid` (*sid/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/99079665857cbbdf221f8d3e44d5081dd13e4ff7/sid/Dockerfile)
--	[`sid-slim` (*sid/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/99079665857cbbdf221f8d3e44d5081dd13e4ff7/sid/slim/Dockerfile)
--	[`stable` (*stable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d220bea42308935d3bee1b40701f39e8c0d69860/stable/Dockerfile)
--	[`stable-slim` (*stable/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d220bea42308935d3bee1b40701f39e8c0d69860/stable/slim/Dockerfile)
--	[`stable-backports` (*stable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/d220bea42308935d3bee1b40701f39e8c0d69860/stable/backports/Dockerfile)
--	[`stretch` (*stretch/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/99079665857cbbdf221f8d3e44d5081dd13e4ff7/stretch/Dockerfile)
--	[`stretch-slim` (*stretch/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/99079665857cbbdf221f8d3e44d5081dd13e4ff7/stretch/slim/Dockerfile)
--	[`testing` (*testing/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/99079665857cbbdf221f8d3e44d5081dd13e4ff7/testing/Dockerfile)
--	[`testing-slim` (*testing/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/99079665857cbbdf221f8d3e44d5081dd13e4ff7/testing/slim/Dockerfile)
--	[`unstable` (*unstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/99079665857cbbdf221f8d3e44d5081dd13e4ff7/unstable/Dockerfile)
--	[`unstable-slim` (*unstable/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/99079665857cbbdf221f8d3e44d5081dd13e4ff7/unstable/slim/Dockerfile)
--	[`7.11`, `7`, `wheezy` (*wheezy/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/a7561bee7a4bbc2e5f7ea6b8a7377d8abe6eb2a6/wheezy/Dockerfile)
--	[`wheezy-slim` (*wheezy/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/a7561bee7a4bbc2e5f7ea6b8a7377d8abe6eb2a6/wheezy/slim/Dockerfile)
--	[`wheezy-backports` (*wheezy/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/a7561bee7a4bbc2e5f7ea6b8a7377d8abe6eb2a6/wheezy/backports/Dockerfile)
+-	[`8.7`, `8`, `jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e8131d071a42b8e88cabbb0aa33023c7b66b7b93/jessie/Dockerfile)
+-	[`jessie-slim` (*jessie/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e8131d071a42b8e88cabbb0aa33023c7b66b7b93/jessie/slim/Dockerfile)
+-	[`jessie-backports` (*jessie/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e8131d071a42b8e88cabbb0aa33023c7b66b7b93/jessie/backports/Dockerfile)
+-	[`oldstable` (*oldstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/9781ca42b257384c5cb3792aae6bc52af4ecabfd/oldstable/Dockerfile)
+-	[`oldstable-slim` (*oldstable/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/9781ca42b257384c5cb3792aae6bc52af4ecabfd/oldstable/slim/Dockerfile)
+-	[`oldstable-backports` (*oldstable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/9781ca42b257384c5cb3792aae6bc52af4ecabfd/oldstable/backports/Dockerfile)
+-	[`sid` (*sid/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/84acea02caa27a742d423069251ee269d1a39e2a/sid/Dockerfile)
+-	[`sid-slim` (*sid/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/84acea02caa27a742d423069251ee269d1a39e2a/sid/slim/Dockerfile)
+-	[`stable` (*stable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e8131d071a42b8e88cabbb0aa33023c7b66b7b93/stable/Dockerfile)
+-	[`stable-slim` (*stable/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e8131d071a42b8e88cabbb0aa33023c7b66b7b93/stable/slim/Dockerfile)
+-	[`stable-backports` (*stable/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e8131d071a42b8e88cabbb0aa33023c7b66b7b93/stable/backports/Dockerfile)
+-	[`9.0`, `9`, `stretch` (*stretch/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/84acea02caa27a742d423069251ee269d1a39e2a/stretch/Dockerfile)
+-	[`stretch-slim` (*stretch/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/84acea02caa27a742d423069251ee269d1a39e2a/stretch/slim/Dockerfile)
+-	[`testing` (*testing/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/84acea02caa27a742d423069251ee269d1a39e2a/testing/Dockerfile)
+-	[`testing-slim` (*testing/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/84acea02caa27a742d423069251ee269d1a39e2a/testing/slim/Dockerfile)
+-	[`unstable` (*unstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/84acea02caa27a742d423069251ee269d1a39e2a/unstable/Dockerfile)
+-	[`unstable-slim` (*unstable/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/84acea02caa27a742d423069251ee269d1a39e2a/unstable/slim/Dockerfile)
+-	[`7.11`, `7`, `wheezy` (*wheezy/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/9781ca42b257384c5cb3792aae6bc52af4ecabfd/wheezy/Dockerfile)
+-	[`wheezy-slim` (*wheezy/slim/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/9781ca42b257384c5cb3792aae6bc52af4ecabfd/wheezy/slim/Dockerfile)
+-	[`wheezy-backports` (*wheezy/backports/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/9781ca42b257384c5cb3792aae6bc52af4ecabfd/wheezy/backports/Dockerfile)
 -	[`rc-buggy` (*debian/rc-buggy/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/22a998f815d55217afa0075411b810b8889ceac1/debian/rc-buggy/Dockerfile)
 -	[`experimental` (*debian/experimental/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/22a998f815d55217afa0075411b810b8889ceac1/debian/experimental/Dockerfile)
 
@@ -71,7 +87,7 @@ Additional interesting information is provided in files on the [relevant `dist` 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

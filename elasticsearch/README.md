@@ -1,10 +1,32 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "elasticsearch/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "elasticsearch/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# **DEPRECATED**
+
+This image is officially deprecated in favor of [the `elasticsearch` image provided by elastic.co](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) which is available to pull via `docker.elastic.co/elasticsearch/elasticsearch:[version]` like `5.2.1`. This image will receive no further updates after 2017-06-20 (June 20, 2017). Please adjust your usage accordingly.
+
+Elastic provides open-source support for Elasticsearch via the [elastic/elasticsearch GitHub repository](https://github.com/elastic/elasticsearch) and the Docker image via the [elastic/elasticsearch-docker GitHub repository](https://github.com/elastic/elasticsearch-docker), as well as community support via its [forums](https://discuss.elastic.co/c/elasticsearch).
+
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.1`, `5.1`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1107caed5c403a63d99c1b1ae1f7002d387c7e85/5/Dockerfile)
--	[`5.1.1-alpine`, `5.1-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1107caed5c403a63d99c1b1ae1f7002d387c7e85/5/alpine/Dockerfile)
--	[`2.4.3`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1107caed5c403a63d99c1b1ae1f7002d387c7e85/2.4/Dockerfile)
--	[`2.4.3-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1107caed5c403a63d99c1b1ae1f7002d387c7e85/2.4/alpine/Dockerfile)
--	[`1.7.6`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1107caed5c403a63d99c1b1ae1f7002d387c7e85/1.7/Dockerfile)
+-	[`5.2.2`, `5.2`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/d1765774a1effc5436f3d1f4ad6826dd9ed2186f/5/Dockerfile)
+-	[`5.2.2-alpine`, `5.2-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/d1765774a1effc5436f3d1f4ad6826dd9ed2186f/5/alpine/Dockerfile)
+-	[`2.4.4`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8f00ad520c1c33b879a715700905d3c25c526331/2.4/Dockerfile)
+-	[`2.4.4-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8f00ad520c1c33b879a715700905d3c25c526331/2.4/alpine/Dockerfile)
+-	[`1.7.6`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ffd7a19f1e68329cc310f145c232e83abec09067/1.7/Dockerfile)
 -	[`1.7.6-alpine`, `1.7-alpine`, `1-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/1107caed5c403a63d99c1b1ae1f7002d387c7e85/1.7/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch).
@@ -23,18 +45,26 @@ Elasticsearch is a registered trademark of Elasticsearch BV.
 
 # How to use this image
 
-## Host Setup
+## Cluster
 
-**Note:** since 5.0, Elasticsearch only listens on `localhost` by default, so this image sets `network.host` to `0.0.0.0` (given that `localhost` is not terribly useful in the Docker context).
+**Note:** since 5.0, Elasticsearch only listens on `localhost` by default on both http and transport, so this image sets `http.host` to `0.0.0.0` (given that `localhost` is not terribly useful in the Docker context).
 
-As a result, Elasticsearch is more strict about the bootstrap checks that it performs, especially when checking the value of `vm.max_map_count` which is not namespaced and thus must be set to an acceptable value on the host (as opposed to simply using `--sysctl` on `docker run`).
+As a result, this image does not support clustering out of the box and extra configuration must be set in order to support it.
+
+Supporting clustering implies having Elasticsearch in a production mode which is more strict about the bootstrap checks that it performs, especially when checking the value of `vm.max_map_count` which is not namespaced and thus must be set to an acceptable value on the host (as opposed to simply using `--sysctl` on `docker run`).
+
+One example of adding clustering support is to pass the configuration on the `docker run`:
+
+```console
+$ docker run -d --name elas elasticsearch -Etransport.host=0.0.0.0 -Ediscovery.zen.minimum_master_nodes=1
+```
 
 See the following sections of the upstream documentation for more information:
 
 -	[Setup Elasticsearch » Important System Configuration » Virtual memory](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/vm-max-map-count.html)
 -	[Setup Elasticsearch » Bootstrap Checks » Maximum map count check](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/_maximum_map_count_check.html)
 
-This [comment in elastic/elasticsearch#4978](https://github.com/elastic/elasticsearch/issues/4978#issuecomment-258676104) shows why this change was added in upstream. Production mode is when listening on non-localhost.
+This [comment in elastic/elasticsearch#4978](https://github.com/elastic/elasticsearch/issues/4978#issuecomment-258676104) shows why this change was added in upstream.
 
 > Elasticsearch will not start in production mode if `vm.max_map_count` is not high enough. [...] If the value on your system is NOT high enough, then your cluster is going to crash and burn at some stage and you will lose data.
 
@@ -88,7 +118,7 @@ View [license information](https://github.com/elasticsearch/elasticsearch/blob/6
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

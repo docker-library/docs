@@ -1,7 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "hello-seattle/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "hello-seattle/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/85fd7ab65e079b08019032479a3f306964a28f4d/hello-seattle/Dockerfile)
--	[`nanoserver` (*hello-seattle/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/0f30176f82bc9984e7a75f96205f86dc3758e2e8/hello-seattle/nanoserver/Dockerfile)
+-	[`latest` (*hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/bdee60d7ff6b98037657dc34a10e9ca4ffd6785f/hello-seattle/Dockerfile)
+-	[`nanoserver` (*hello-seattle/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/1f13a5bc3b787747eeefb3b0051d8d29f851260d/hello-seattle/nanoserver/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/hello-seattle`)](https://github.com/docker-library/official-images/blob/master/library/hello-seattle). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhello-seattle).
 
@@ -40,7 +56,7 @@ See [the `hello-world` image description](https://hub.docker.com/_/hello-world/)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

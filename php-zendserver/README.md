@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "php-zendserver/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "php-zendserver/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.5`, `8.5-php5.5` (*8.5/5.5/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/8.5/5.5/Dockerfile)
@@ -150,7 +166,7 @@ Each Zend Server Docker container requires 1GB of availible memory.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

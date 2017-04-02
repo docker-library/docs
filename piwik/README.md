@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "piwik/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "piwik/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.0`, `3.0`, `3`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/864ad02f7f84d7d4c44bf3ee839fc0383eb8dad7/Dockerfile)
+-	[`3.0.2`, `3.0`, `3`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/ddc78a24c43759a671d27054f20b15644a36af45/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/piwik`)](https://github.com/docker-library/official-images/blob/master/library/piwik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpiwik).
 
@@ -61,7 +77,7 @@ View [license information](https://github.com/piwik/piwik/blob/master/LEGALNOTIC
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

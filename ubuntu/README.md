@@ -1,10 +1,26 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "ubuntu/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "ubuntu/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20161209`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/9c78896fe39d5be95cc4a6ae6c0475599a1bc396/precise/Dockerfile)
--	[`14.04.5`, `14.04`, `trusty-20161214`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/9c78896fe39d5be95cc4a6ae6c0475599a1bc396/trusty/Dockerfile)
--	[`16.04`, `xenial-20161213`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/9c78896fe39d5be95cc4a6ae6c0475599a1bc396/xenial/Dockerfile)
--	[`16.10`, `yakkety-20161213`, `yakkety` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/9c78896fe39d5be95cc4a6ae6c0475599a1bc396/yakkety/Dockerfile)
--	[`17.04`, `zesty-20161212`, `zesty`, `devel` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/9c78896fe39d5be95cc4a6ae6c0475599a1bc396/zesty/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise-20170214`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/precise/Dockerfile)
+-	[`14.04.5`, `14.04`, `trusty-20170214`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/trusty/Dockerfile)
+-	[`16.04`, `xenial-20170214`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/xenial/Dockerfile)
+-	[`16.10`, `yakkety-20170224`, `yakkety`, `rolling` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/yakkety/Dockerfile)
+-	[`17.04`, `zesty-20170224`, `zesty`, `devel` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/zesty/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fubuntu).
 
@@ -27,6 +43,18 @@ This image is built from official rootfs tarballs provided by Canonical (specifi
 The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use.
 
 Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+
+## Locales
+
+Given that it is a minimal install of Ubuntu, this image only includes the `C`, `C.UTF-8`, and `POSIX` locales by default. For most uses requiring a UTF-8 locale, `C.UTF-8` is likely sufficient (`-e LANG=C.UTF-8` or `ENV LANG C.UTF-8`).
+
+For uses where that is not sufficient, other locales can be installed/generated via the `locales` package. [PostgreSQL has a good example of doing so](https://github.com/docker-library/postgres/blob/69bc540ecfffecce72d49fa7e4a46680350037f9/9.6/Dockerfile#L21-L24), copied below:
+
+```dockerfile
+RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
+	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
+ENV LANG en_US.utf8
+```
 
 ## `/etc/apt/sources.list`
 
@@ -78,7 +106,7 @@ deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

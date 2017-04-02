@@ -44,6 +44,19 @@ docker run --rm --interactive --tty \
     composer install
 ```
 
+When combining the use of private repositories with running Composer as another (local) user, you might run into non-existant user errors. To work around this, simply mount the host passwd and group files (read-only) into the container:
+
+```sh
+docker run --rm --interactive --tty \
+    --volume $PWD:/app \
+    --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
+    --volume /etc/passwd:/etc/passwd:ro \
+    --volume /etc/group:/etc/group:ro \
+    --user $(id -u):$(id -g) \
+    --env SSH_AUTH_SOCK=/ssh-auth.sock \
+    composer install
+```
+
 ## Suggestions
 
 ### PHP Extensions
@@ -75,6 +88,8 @@ composer () {
         --interactive \
         --rm \
         --user $(id -u):$(id -g) \
+        --volume /etc/passwd:/etc/passwd:ro \
+        --volume /etc/group:/etc/group:ro \
         --volume $(pwd):/app \
         composer "$@"
 }

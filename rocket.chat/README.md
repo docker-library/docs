@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "rocket.chat/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "rocket.chat/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.48.2`, `0.48`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/65ca59ce402400d6e57c5b497011ce3572cae9b3/Dockerfile)
+-	[`0.54.2`, `0.54`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/b3edd574f8bceb7504be78074f561fd6674b96f8/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rocket.chat`)](https://github.com/docker-library/official-images/blob/master/library/rocket.chat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frocket.chat).
 
@@ -50,7 +66,7 @@ View [license information](https://github.com/RocketChat/Rocket.Chat/blob/master
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

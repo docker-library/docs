@@ -1,13 +1,29 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "jruby/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "jruby/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `9`, `9.1`, `9.1-jre`, `9.1.6`, `9.1.6-jre`, `9.1.6.0`, `9.1.6.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/jre/Dockerfile)
--	[`9-alpine`, `9.1-alpine`, `9.1-jre-alpine`, `9.1.6-alpine`, `9.1.6-jre-alpine`, `9.1.6.0-alpine`, `9.1.6.0-jre-alpine` (*9000/alpine-jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/alpine-jre/Dockerfile)
--	[`9.1-jdk`, `9.1.6-jdk`, `9.1.6.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/jdk/Dockerfile)
--	[`9.1-jdk-alpine`, `9.1.6-jdk-alpine`, `9.1.6.0-jdk-alpine` (*9000/alpine-jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/alpine-jdk/Dockerfile)
--	[`9-onbuild`, `9.1-onbuild`, `9.1.6-onbuild`, `9.1.6.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/9000/onbuild/Dockerfile)
--	[`1.7`, `1.7.25`, `1.7-jre`, `1.7.25-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/1.7/jre/Dockerfile)
--	[`1.7-jdk`, `1.7.25-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/1.7/jdk/Dockerfile)
--	[`1.7-onbuild`, `1.7.25-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/11d2f7ede980a68f5058ed4d8fa8e11bb3fc9d92/1.7/onbuild/Dockerfile)
+-	[`latest`, `9`, `9.1`, `9.1-jre`, `9.1.8`, `9.1.8-jre`, `9.1.8.0`, `9.1.8.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/044aee807e44475c2085e43baab9b91055597461/9000/jre/Dockerfile)
+-	[`9-alpine`, `9.1-alpine`, `9.1-jre-alpine`, `9.1.8-alpine`, `9.1.8-jre-alpine`, `9.1.8.0-alpine`, `9.1.8.0-jre-alpine` (*9000/alpine-jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/044aee807e44475c2085e43baab9b91055597461/9000/alpine-jre/Dockerfile)
+-	[`9.1-jdk`, `9.1.8-jdk`, `9.1.8.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/044aee807e44475c2085e43baab9b91055597461/9000/jdk/Dockerfile)
+-	[`9.1-jdk-alpine`, `9.1.8-jdk-alpine`, `9.1.8.0-jdk-alpine` (*9000/alpine-jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/044aee807e44475c2085e43baab9b91055597461/9000/alpine-jdk/Dockerfile)
+-	[`9-onbuild`, `9.1-onbuild`, `9.1.8-onbuild`, `9.1.8.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/044aee807e44475c2085e43baab9b91055597461/9000/onbuild/Dockerfile)
+-	[`1.7`, `1.7.26`, `1.7-jre`, `1.7.26-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/044aee807e44475c2085e43baab9b91055597461/1.7/jre/Dockerfile)
+-	[`1.7-jdk`, `1.7.26-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/044aee807e44475c2085e43baab9b91055597461/1.7/jdk/Dockerfile)
+-	[`1.7-onbuild`, `1.7.26-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/044aee807e44475c2085e43baab9b91055597461/1.7/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjruby).
 
@@ -67,7 +83,7 @@ View [license information](https://github.com/jruby/jruby/blob/master/COPYING) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "notary/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "notary/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`server`, `server-0.5.0` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/ff7ae14c71fa0f87f9e6bd8de81a78c20db66664/notary-server/Dockerfile)
@@ -100,7 +116,7 @@ View [license information](https://github.com/docker/notary/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

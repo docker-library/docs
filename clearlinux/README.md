@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "clearlinux/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "clearlinux/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base` (*Dockerfile*)](https://github.com/clearlinux/docker-brew-clearlinux/blob/4d594721b83c7db6b7031cde6d8e9e103640e549/Dockerfile)
+-	[`latest`, `base` (*Dockerfile*)](https://github.com/clearlinux/docker-brew-clearlinux/blob/d81cccb0d30f3191ddddc521b96b9c6445617c81/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/clearlinux`)](https://github.com/docker-library/official-images/blob/master/library/clearlinux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclearlinux).
 
@@ -27,7 +43,7 @@ Where editors contains the usual suspects for command line editors and dev-utils
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

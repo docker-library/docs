@@ -1,7 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "irssi/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "irssi/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0.0`, `1.0`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/jessfraz/irssi/blob/ac74c7fdeeb4367d326b04f4990417be5cf27546/debian/Dockerfile)
--	[`1.0.0-alpine`, `1.0-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jessfraz/irssi/blob/ac74c7fdeeb4367d326b04f4990417be5cf27546/alpine/Dockerfile)
+-	[`1.0.2`, `1.0`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/jessfraz/irssi/blob/f1d77f854e3eb49ba761723d608bfb6b3ddb867a/debian/Dockerfile)
+-	[`1.0.2-alpine`, `1.0-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jessfraz/irssi/blob/f1d77f854e3eb49ba761723d608bfb6b3ddb867a/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/irssi`)](https://github.com/docker-library/official-images/blob/master/library/irssi). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Firssi).
 
@@ -68,7 +84,7 @@ View [license information](https://github.com/irssi/irssi/blob/master/COPYING) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,7 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "elixir/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "elixir/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.0`, `1.4`, `latest` (*1.4/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/81908da9ecc7de1007d12c764918aa056d03af9b/1.4/Dockerfile)
--	[`1.4.0-slim`, `1.4-slim`, `slim` (*1.4/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/81908da9ecc7de1007d12c764918aa056d03af9b/1.4/slim/Dockerfile)
+-	[`1.4.2`, `1.4`, `latest` (*1.4/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/36ed572a13d5bba010834574c72efbd44f000288/1.4/Dockerfile)
+-	[`1.4.2-slim`, `1.4-slim`, `slim` (*1.4/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/36ed572a13d5bba010834574c72efbd44f000288/1.4/slim/Dockerfile)
 -	[`1.3.4`, `1.3` (*1.3/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/d8d656d7c0dc9dd2956a22276c93cb97568ea6d4/1.3/Dockerfile)
 -	[`1.3.4-slim`, `1.3-slim` (*1.3/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/d8d656d7c0dc9dd2956a22276c93cb97568ea6d4/1.3/slim/Dockerfile)
 -	[`1.2.6`, `1.2` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/Dockerfile)
@@ -74,7 +90,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

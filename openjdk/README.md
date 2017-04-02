@@ -1,17 +1,35 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "openjdk/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "openjdk/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`6b38-jdk`, `6b38`, `6-jdk`, `6` (*6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jdk/Dockerfile)
 -	[`6b38-jre`, `6-jre` (*6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jre/Dockerfile)
--	[`7u111-jdk`, `7u111`, `7-jdk`, `7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/054cea7585e6c0e4e98d133378ea38061a2ae3ac/7-jdk/Dockerfile)
+-	[`7u121-jdk`, `7u121`, `7-jdk`, `7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e3386b5a2b4004da498e145cf840561d50acd7fb/7-jdk/Dockerfile)
 -	[`7u121-jdk-alpine`, `7u121-alpine`, `7-jdk-alpine`, `7-alpine` (*7-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0476812eabd178c77534f3c03bd0a2673822d7b9/7-jdk/alpine/Dockerfile)
--	[`7u111-jre`, `7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/054cea7585e6c0e4e98d133378ea38061a2ae3ac/7-jre/Dockerfile)
+-	[`7u121-jre`, `7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e3386b5a2b4004da498e145cf840561d50acd7fb/7-jre/Dockerfile)
 -	[`7u121-jre-alpine`, `7-jre-alpine` (*7-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0476812eabd178c77534f3c03bd0a2673822d7b9/7-jre/alpine/Dockerfile)
--	[`8u111-jdk`, `8u111`, `8-jdk`, `8`, `jdk`, `latest` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e6e9cf8b21516ba764189916d35be57486203c95/8-jdk/Dockerfile)
--	[`8u111-jdk-alpine`, `8u111-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0476812eabd178c77534f3c03bd0a2673822d7b9/8-jdk/alpine/Dockerfile)
--	[`8u111-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e6e9cf8b21516ba764189916d35be57486203c95/8-jre/Dockerfile)
--	[`8u111-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0476812eabd178c77534f3c03bd0a2673822d7b9/8-jre/alpine/Dockerfile)
--	[`9-b149-jdk`, `9-b149`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e2c8648d39ef1492df3482de3fda0ee3f8955fb1/9-jdk/Dockerfile)
--	[`9-b149-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e2c8648d39ef1492df3482de3fda0ee3f8955fb1/9-jre/Dockerfile)
+-	[`8u121-jdk`, `8u121`, `8-jdk`, `8`, `jdk`, `latest` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/445f8b8d18d7c61e2ae7fda76d8883b5d51ae0a5/8-jdk/Dockerfile)
+-	[`8u121-jdk-alpine`, `8u121-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4e39684901490c13eaef7892c44e39043d7c4bed/8-jdk/alpine/Dockerfile)
+-	[`8u121-jdk-windowsservercore`, `8u121-windowsservercore`, `8-jdk-windowsservercore`, `8-windowsservercore`, `jdk-windowsservercore`, `windowsservercore` (*8-jdk/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4815a7dc43f0fb212c40f357624fb4ec943992bf/8-jdk/windows/windowsservercore/Dockerfile)
+-	[`8u121-jdk-nanoserver`, `8u121-nanoserver`, `8-jdk-nanoserver`, `8-nanoserver`, `jdk-nanoserver`, `nanoserver` (*8-jdk/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4815a7dc43f0fb212c40f357624fb4ec943992bf/8-jdk/windows/nanoserver/Dockerfile)
+-	[`8u121-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/445f8b8d18d7c61e2ae7fda76d8883b5d51ae0a5/8-jre/Dockerfile)
+-	[`8u121-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4e39684901490c13eaef7892c44e39043d7c4bed/8-jre/alpine/Dockerfile)
+-	[`9-b161-jdk`, `9-b161`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/50c491c7c2378182866d89e857eb1f0c77985507/9-jdk/Dockerfile)
+-	[`9-b161-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/50c491c7c2378182866d89e857eb1f0c77985507/9-jre/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/openjdk`)](https://github.com/docker-library/official-images/blob/master/library/openjdk). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fopenjdk).
 
@@ -74,13 +92,22 @@ This variant is highly recommended when final image size being as small as possi
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
+## `openjdk:windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+
 # License
 
 View [license information](http://openjdk.java.net/legal/gplv2+ce.html) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

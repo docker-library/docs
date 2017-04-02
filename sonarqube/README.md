@@ -1,9 +1,25 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "sonarqube/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "sonarqube/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `6.2` (*6.2/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/6.2/Dockerfile)
--	[`lts`, `5.6.4` (*5.6.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/5.6.4/Dockerfile)
--	[`alpine`, `6.2-alpine` (*6.2-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/6.2-alpine/Dockerfile)
--	[`lts-alpine`, `5.6.4-alpine` (*5.6.4-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/5.6.4-alpine/Dockerfile)
+-	[`latest`, `6.3` (*6.3/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/df10e8c9d58d09653100d96d823d8f96e08705cb/6.3/Dockerfile)
+-	[`lts`, `5.6.6` (*5.6.6/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/df10e8c9d58d09653100d96d823d8f96e08705cb/5.6.6/Dockerfile)
+-	[`alpine`, `6.3-alpine` (*6.3-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/df10e8c9d58d09653100d96d823d8f96e08705cb/6.3-alpine/Dockerfile)
+-	[`lts-alpine`, `5.6.6-alpine` (*5.6.6-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/df10e8c9d58d09653100d96d823d8f96e08705cb/5.6.6-alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsonarqube).
 
@@ -80,7 +96,7 @@ View [license information](http://www.gnu.org/licenses/lgpl.txt) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

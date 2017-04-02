@@ -1,7 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "swarm/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "swarm/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.6-rc1` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/e33419371f34db2ebbe9a67271de30620e01e88e/Dockerfile)
--	[`1.2.5`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/67e6cf4171fcabd2e3b8b809105e7dfb15114ce1/Dockerfile)
+-	[`1.2.6`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/3725bf97c64a9425fc609d32df907170657a6b84/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fswarm).
 
@@ -13,7 +28,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 `swarm` is a simple tool which controls a cluster of Docker hosts and exposes it as a single "virtual" host.
 
-`swarm` uses the standard Docker API as its frontend, which means any tool which speaks Docker can control swarm transparently: dokku, fig, krane, flynn, deis, docker-ui, shipyard, drone.io, Jenkins... and of course the Docker client itself.
+`swarm` uses the standard Docker API as its frontend, which means any tool which speaks Docker can control swarm transparently: dokku, docker-compose, krane, flynn, deis, docker-ui, shipyard, drone.io, Jenkins... and of course the Docker client itself.
 
 Like the other Docker projects, `swarm` follows the "batteries included but removable" principle. It ships with a simple scheduling backend out of the box, and as initial development settles, an API will develop to enable pluggable backends. The goal is to provide a smooth out-of-box experience for simple use cases, and allow swapping in more powerful backends, like `Mesos`, for large scale production deployments.
 
@@ -68,7 +83,7 @@ View [license information](https://github.com/docker/swarm/blob/master/LICENSE.c
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

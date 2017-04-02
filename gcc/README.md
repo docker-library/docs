@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "gcc/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "gcc/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.9.4`, `4.9`, `4` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/8c7687860cdd4ef9227c249ca4587984e2636a55/4.9/Dockerfile)
@@ -57,7 +73,7 @@ View [license information](https://gcc.gnu.org/viewcvs/gcc/trunk/gcc/COPYING3?vi
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

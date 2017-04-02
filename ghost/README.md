@@ -1,6 +1,22 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "ghost/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "ghost/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.11.3`, `0.11`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/3aae08aeeb4d14d681a36742a5ab5e46366a5fe1/Dockerfile)
+-	[`0.11.7`, `0.11`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/f57b040e28dca92eb3e1b072baa9922b12712b6c/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fghost).
 
@@ -53,7 +69,7 @@ v4.4.7
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "photon/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "photon/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.0`, `latest` (*1.0/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/39c3c62cd649b1d64178b24cd23d9196461dc818/1.0/Dockerfile)
@@ -36,7 +52,7 @@ View [license information](https://github.com/vmware/photon/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

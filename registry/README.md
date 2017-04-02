@@ -1,7 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "registry/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "registry/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2`, `2.5`, `2.5.1`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/3b4a84c1f152b60688e99d2efadf305479541482/Dockerfile)
--	[`2.6.0-rc.2` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/dc0a30b78b8bebd24a42234055390ff7d4d65904/Dockerfile)
+-	[`2`, `2.6`, `2.6.0`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/4339e1083299550aeb5915e0d5a5238d159872da/Dockerfile)
+-	[`2.6.1-rc.2` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/125d5f1ef4f3d60f5a19cf9dc867be80e1b3ef00/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fregistry).
 
@@ -9,32 +25,27 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # Docker Registry
 
-Tags < 1.0 refer to the [deprecated registry](https://github.com/docker/docker-registry).
+This image contains an implementation of the Docker Registry HTTP API V2 for use with Docker 1.6+. See [github.com/docker/distribution](https://github.com/docker/distribution) for more details about what it is.
 
-## Run the Registry
-
--	install docker according to the [following instructions](http://docs.docker.io/installation/#installation)
-
-### Run the registry docker container: Quick version
-
--	run the registry: `docker run -p 5000:5000 -v <HOST_DIR>:/tmp/registry-dev registry`
--	Modify your docker startup line/script: add "-H tcp://127.0.0.1:2375 -H unix:///var/run/docker.sock --insecure-registry <REGISTRY_HOSTNAME>:5000"
-
-### Recommended: run the registry docker container
+## Run a local registry: Quick Version
 
 ```console
-$ docker run \
-         -e SETTINGS_FLAVOR=s3 \
-         -e AWS_BUCKET=acme-docker \
-         -e STORAGE_PATH=/registry \
-         -e AWS_KEY=AKIAHSHB43HS3J92MXZ \
-         -e AWS_SECRET=xdDowwlK7TJajV1Y7EoOZrmuPEJlHYcNP2k4j49T \
-         -e SEARCH_BACKEND=sqlalchemy \
-         -p 5000:5000 \
-         registry
+$ docker run -d -p 5000:5000 --restart always --name registry registry:2
 ```
 
-NOTE: The container will try to allocate the port 5000. If the port is already taken, find out which container is already using it by running `docker ps`.
+Now, use it from within Docker:
+
+```console
+$ docker pull ubuntu
+$ docker tag ubuntu localhost:5000/ubuntu
+$ docker push localhost:5000/ubuntu
+```
+
+## Recommended Reading
+
+The [documentation over at docs.docker.com](https://docs.docker.com/registry/) is a good place to learn more about what the registry is, how it works, and how to use it.
+
+Specifically, [the section regarding deployment](https://docs.docker.com/registry/deploying/) has pointers for more complex use cases than simply running a registry on localhost.
 
 # Support
 
@@ -42,7 +53,7 @@ If you are interested in commercial support, the [Docker Trusted Registry](https
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

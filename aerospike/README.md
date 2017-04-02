@@ -1,6 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "aerospike/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "aerospike/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`3.10.1.1`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/c54477af5e0b62f506d5234dca012db63c906224/Dockerfile)
+-	[`3.11.1.1` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/8db577355639ed676b45bce0fd18c9a12fdace34/Dockerfile)
+-	[`3.12.0`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/bebf2d588c7254bd26b5a024e644dfb492af2e6d/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/aerospike`)](https://github.com/docker-library/official-images/blob/master/library/aerospike). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Faerospike).
 
@@ -97,7 +114,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

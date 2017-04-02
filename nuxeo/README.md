@@ -1,10 +1,26 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "nuxeo/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "nuxeo/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `LTS`, `LTS-2016`, `8`, `8.10`, `FT` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4c45ac6f74a5571dd23ee86a00fb85aadbece05c/8.10/Dockerfile)
--	[`8.3` (*8.3/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/d7252d23d06e0ade25a0054a7ae940e8537a99b2/8.3/Dockerfile)
--	[`8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/a02183111045dadb357e68e11e93c5551c570c43/8.2/Dockerfile)
--	[`LTS-2015`, `7`, `7.10` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/a02183111045dadb357e68e11e93c5551c570c43/7.10/Dockerfile)
--	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/8535464e476b39e10001242ad7c885519fadc2a6/6.0/Dockerfile)
+-	[`latest`, `LTS`, `LTS-2016`, `8`, `8.10`, `FT` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/537f17593e1c3348f3163ae6986b603168e59fc5/8.10/Dockerfile)
+-	[`8.3` (*8.3/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/537f17593e1c3348f3163ae6986b603168e59fc5/8.3/Dockerfile)
+-	[`8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/537f17593e1c3348f3163ae6986b603168e59fc5/8.2/Dockerfile)
+-	[`LTS-2015`, `7`, `7.10` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/537f17593e1c3348f3163ae6986b603168e59fc5/7.10/Dockerfile)
+-	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/537f17593e1c3348f3163ae6986b603168e59fc5/6.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nuxeo`)](https://github.com/docker-library/official-images/blob/master/library/nuxeo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnuxeo).
 
@@ -36,6 +52,8 @@ nuxeo
 ```
 
 This will install the same image as above but comes with some demo Nuxeo packages to demonstrate its various usage (DAM, DM, search etc...)
+
+You can find additional informations on how to use this image in [Nuxeo documentation](https://doc.nuxeo.com/nxdoc/setting-up-your-nuxeo-environment/)
 
 ## Environment Variables
 
@@ -81,7 +99,9 @@ If Redis is setup, you can ovewrite the default port configuration (default to 6
 
 ### `NUXEO_CLID`
 
-Allow to setup a CLID for Nuxeo Connect registration.
+Allow to setup a CLID for Nuxeo Connect registration. This parameter is in the form `part1\npart2`, so depending on the environment you may have to escape the `\` character.
+
+You can find additional informations the registration process in the [Nuxeo documentation](https://doc.nuxeo.com/nxdoc/setting-up-your-nuxeo-environment/)
 
 ### `NUXEO_INSTALL_HOTFIX`
 
@@ -193,7 +213,7 @@ View [license information](http://doc.nuxeo.com/x/gIK7) for the software contain
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

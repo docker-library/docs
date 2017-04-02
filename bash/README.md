@@ -1,13 +1,29 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "bash/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "bash/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`4.4.5`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/tianon/docker-bash/blob/f9be0e9789a3852ff28b16e3f739df1bb2130377/4.4/Dockerfile)
--	[`4.3.48`, `4.3` (*4.3/Dockerfile*)](https://github.com/tianon/docker-bash/blob/f9be0e9789a3852ff28b16e3f739df1bb2130377/4.3/Dockerfile)
--	[`4.2.53`, `4.2` (*4.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/f9be0e9789a3852ff28b16e3f739df1bb2130377/4.2/Dockerfile)
--	[`4.1.17`, `4.1` (*4.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/f9be0e9789a3852ff28b16e3f739df1bb2130377/4.1/Dockerfile)
--	[`4.0.44`, `4.0` (*4.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/f9be0e9789a3852ff28b16e3f739df1bb2130377/4.0/Dockerfile)
--	[`3.2.57`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/f9be0e9789a3852ff28b16e3f739df1bb2130377/3.2/Dockerfile)
--	[`3.1.23`, `3.1` (*3.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/f9be0e9789a3852ff28b16e3f739df1bb2130377/3.1/Dockerfile)
--	[`3.0.22`, `3.0` (*3.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/f9be0e9789a3852ff28b16e3f739df1bb2130377/3.0/Dockerfile)
+-	[`4.4.12`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/tianon/docker-bash/blob/1cbb5cf49b4c53bd5a986abf7a1afeb9a80eac1e/4.4/Dockerfile)
+-	[`4.3.48`, `4.3` (*4.3/Dockerfile*)](https://github.com/tianon/docker-bash/blob/1cbb5cf49b4c53bd5a986abf7a1afeb9a80eac1e/4.3/Dockerfile)
+-	[`4.2.53`, `4.2` (*4.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/1cbb5cf49b4c53bd5a986abf7a1afeb9a80eac1e/4.2/Dockerfile)
+-	[`4.1.17`, `4.1` (*4.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/1cbb5cf49b4c53bd5a986abf7a1afeb9a80eac1e/4.1/Dockerfile)
+-	[`4.0.44`, `4.0` (*4.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/4438745d601d10d300e363f24205a3ca75307803/4.0/Dockerfile)
+-	[`3.2.57`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/1cbb5cf49b4c53bd5a986abf7a1afeb9a80eac1e/3.2/Dockerfile)
+-	[`3.1.23`, `3.1` (*3.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/1cbb5cf49b4c53bd5a986abf7a1afeb9a80eac1e/3.1/Dockerfile)
+-	[`3.0.22`, `3.0` (*3.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/1cbb5cf49b4c53bd5a986abf7a1afeb9a80eac1e/3.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/bash`)](https://github.com/docker-library/official-images/blob/master/library/bash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbash).
 
@@ -77,7 +93,7 @@ Bash is free software, distributed under the terms of the [GNU General Public Li
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

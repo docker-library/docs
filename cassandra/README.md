@@ -1,9 +1,25 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "cassandra/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "cassandra/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.16`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/4bb926527d4a9eb534508fe0bbae604dee81f40a/2.1/Dockerfile)
--	[`2.2.8`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/4bb926527d4a9eb534508fe0bbae604dee81f40a/2.2/Dockerfile)
--	[`3.0.10`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d3a91560b21e73994235a72a4c3153e775e1654d/3.0/Dockerfile)
--	[`3.9`, `3`, `latest` (*3.9/Dockerfile*)](https://github.com/docker-library/cassandra/blob/4bb926527d4a9eb534508fe0bbae604dee81f40a/3.9/Dockerfile)
+-	[`2.1.17`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d83b850cd17bc9198876f8686197c730e29c7448/2.1/Dockerfile)
+-	[`2.2.9`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d83b850cd17bc9198876f8686197c730e29c7448/2.2/Dockerfile)
+-	[`3.0.12`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/7ba44ab0fe6d8afdcad2ffe101303f13da20fff6/3.0/Dockerfile)
+-	[`3.10`, `3`, `latest` (*3.10/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d83b850cd17bc9198876f8686197c730e29c7448/3.10/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcassandra).
 
@@ -175,7 +191,7 @@ If there is no database initialized when the container starts, then a default da
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,8 +1,25 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "traefik/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "traefik/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.1.2`, `camembert`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3645f9dfbd417ee8dad608257c7aeec3a407711f/Dockerfile)
--	[`v1.1.2-alpine`, `camembert-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3645f9dfbd417ee8dad608257c7aeec3a407711f/alpine/Dockerfile)
--	[`v1.0.3`, `reblochon` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/9d877ca7171211aabc2955ab1a301a685f6852fe/Dockerfile)
+-	[`v1.2.1`, `1.2.1`, `v1.2`, `1.2`, `morbier`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/5444b825df0cd3884956e5a5bf19d7d240ccb056/Dockerfile)
+-	[`v1.2.1-alpine`, `1.2.1-alpine`, `v1.2-alpine`, `1.2-alpine`, `morbier-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/5444b825df0cd3884956e5a5bf19d7d240ccb056/alpine/Dockerfile)
+-	[`v1.1.2`, `1.1.2`, `camembert` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3645f9dfbd417ee8dad608257c7aeec3a407711f/Dockerfile)
+-	[`v1.1.2-alpine`, `1.1.2-alpine`, `camembert-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3645f9dfbd417ee8dad608257c7aeec3a407711f/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/traefik`)](https://github.com/docker-library/official-images/blob/master/library/traefik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik).
 
@@ -80,7 +97,7 @@ View [license information](https://github.com/containous/traefik/blob/master/LIC
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

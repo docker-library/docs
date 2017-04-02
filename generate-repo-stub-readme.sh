@@ -26,6 +26,13 @@ fi
 canonicalRepo="$(curl -fsSLI -o /dev/null -w '%{url_effective}\n' "$canonicalRepo")" # follow redirects (http://stackoverflow.com/a/3077316/433558)
 travisRepo="${canonicalRepo#*://github.com/}"
 
+if [ -f "$repo/deprecated.md" ]; then
+	echo '# DEPRECATED'
+	echo
+	cat "$repo/deprecated.md"
+	echo
+fi
+
 cat <<EOREADME
 # About this Repo
 

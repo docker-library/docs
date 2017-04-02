@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "iojs/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "iojs/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # **DEPRECATED**
 
 This image is officially deprecated in favor of [the `node` image](https://hub.docker.com/_/node/). Please adjust your usage accordingly!
@@ -87,7 +103,7 @@ View [license information](https://github.com/iojs/io.js/blob/master/LICENSE) fo
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

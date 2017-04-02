@@ -1,7 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "jenkins/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "jenkins/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.32.1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/3cf0212a1a795902cabbd67b2920f4bedeb762fc/Dockerfile)
--	[`alpine`, `2.32.1-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/c8ef1879caef495f692b8c46eeb1de88a3783886/Dockerfile)
+-	[`latest`, `2.32.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/8d23b180d1a8afbcaab37f2a8167b5ace8632ec9/Dockerfile)
+-	[`alpine`, `2.32.3-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/6bb01b6a218e0d9618faf7ce80c4b5bfa9331545/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
@@ -191,7 +207,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

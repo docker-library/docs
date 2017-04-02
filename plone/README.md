@@ -1,7 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "plone/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "plone/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.6`, `5.0`, `5`, `latest` (*5.0/5.0.6/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/5.0/5.0.6/debian/Dockerfile)
--	[`4.3.11`, `4.3`, `4` (*4.3/4.3.11/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/72ef7b021f167329d055ea9744b6b85e21496624/4.3/4.3.11/debian/Dockerfile)
+-	[`5.0.7`, `5.0`, `5`, `latest` (*5.0/5.0.7/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/44f25221c677cc729e0c69c33f64f69c396a1024/5.0/5.0.7/debian/Dockerfile)
+-	[`4.3.12`, `4.3`, `4` (*4.3/4.3.12/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/44f25221c677cc729e0c69c33f64f69c396a1024/4.3/4.3.12/debian/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/plone`)](https://github.com/docker-library/official-images/blob/master/library/plone). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fplone).
 
@@ -96,7 +112,7 @@ View [license information](https://plone.org/foundation/copyrights/license-faq) 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

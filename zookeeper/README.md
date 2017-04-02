@@ -1,3 +1,19 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "zookeeper/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "zookeeper/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.3.6`, `3.3` (*3.3.6/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/7e7eac6d6c11428849ec13bb7d240e4cfa21b2e7/3.3.6/Dockerfile)
@@ -42,7 +58,7 @@ services:
         image: zookeeper
         restart: always
         ports:
-            - 2181
+            - 2181:2181
         environment:
             ZOO_MY_ID: 1
             ZOO_SERVERS: server.1=zoo1:2888:3888 server.2=zoo2:2888:3888 server.3=zoo3:2888:3888
@@ -51,7 +67,7 @@ services:
         image: zookeeper
         restart: always
         ports:
-            - 2181
+            - 2182:2181
         environment:
             ZOO_MY_ID: 2
             ZOO_SERVERS: server.1=zoo1:2888:3888 server.2=zoo2:2888:3888 server.3=zoo3:2888:3888
@@ -60,13 +76,13 @@ services:
         image: zookeeper
         restart: always
         ports:
-            - 2181
+            - 2183:2181
         environment:
             ZOO_MY_ID: 3
             ZOO_SERVERS: server.1=zoo1:2888:3888 server.2=zoo2:2888:3888 server.3=zoo3:2888:3888
 ```
 
-This will start Zookeeper in [replicated mode](http://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Run `docker-compose up` and wait for it to initialize completely. Run `docker-compose ps` to figure out exposed ports.
+This will start Zookeeper in [replicated mode](http://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Run `docker-compose up` and wait for it to initialize completely. Ports `2181-2183` will be exposed.
 
 > Please be aware that setting up multiple servers on a single machine will not create any redundancy. If something were to happen which caused the machine to die, all of the zookeeper servers would be offline. Full redundancy requires that each server have its own machine. It must be a completely separate physical server. Multiple virtual machines on the same physical host are still vulnerable to the complete failure of that host.
 
@@ -118,7 +134,7 @@ This variable allows you to specify a list of machines of the Zookeeper ensemble
 
 This image is configured with volumes at `/data` and `/datalog` to hold the Zookeeper in-memory database snapshots and the transaction log of updates to the database, respectively.
 
-> Be careful where you put the transaction log. A dedicated transaction log device is key to consistent good performance. Putting the log on a busy device will adversely effect performance.
+> Be careful where you put the transaction log. A dedicated transaction log device is key to consistent good performance. Putting the log on a busy device will adversely affect performance.
 
 # License
 
@@ -126,7 +142,7 @@ View [license information](https://github.com/apache/zookeeper/blob/release-3.4.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

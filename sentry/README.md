@@ -1,9 +1,25 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "sentry/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "sentry/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`8.11.0`, `8.11` (*8.11/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/60d4b0e5ad293ceabfd0d00ec4bc08c5d353ca2c/8.11/Dockerfile)
--	[`8.11.0-onbuild`, `8.11-onbuild` (*8.11/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/60d4b0e5ad293ceabfd0d00ec4bc08c5d353ca2c/8.11/onbuild/Dockerfile)
--	[`8.12.0`, `8.12`, `8`, `latest` (*8.12/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c47576b88672708eeb2a6e2b66cea9dcbfe8c945/8.12/Dockerfile)
--	[`8.12.0-onbuild`, `8.12-onbuild`, `8-onbuild`, `onbuild` (*8.12/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c47576b88672708eeb2a6e2b66cea9dcbfe8c945/8.12/onbuild/Dockerfile)
+-	[`8.13.0`, `8.13` (*8.13/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f9835042aadb805e755a826ca7748334b11ef09b/8.13/Dockerfile)
+-	[`8.13.0-onbuild`, `8.13-onbuild` (*8.13/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f9835042aadb805e755a826ca7748334b11ef09b/8.13/onbuild/Dockerfile)
+-	[`8.14.1`, `8.14`, `8`, `latest` (*8.14/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c73e82b78c827de107e055bf0b2a07f395a0650c/8.14/Dockerfile)
+-	[`8.14.1-onbuild`, `8.14-onbuild`, `8-onbuild`, `onbuild` (*8.14/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/02492c01dd4a360b04466ce5a98511d748965c07/8.14/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
@@ -142,7 +158,7 @@ View [license information](https://github.com/getsentry/sentry/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,9 +1,30 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "drupal/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "drupal/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.5-apache`, `8.2-apache`, `8-apache`, `apache`, `8.2.5`, `8.2`, `8`, `latest` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/a2832ca75e94580be81aafffdfc330c1713b519d/8.2/apache/Dockerfile)
--	[`8.2.5-fpm`, `8.2-fpm`, `8-fpm`, `fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/a2832ca75e94580be81aafffdfc330c1713b519d/8.2/fpm/Dockerfile)
--	[`7.53-apache`, `7-apache`, `7.53`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/5dd56ed77e995f2cad08b6206d9e335c3a150168/7/apache/Dockerfile)
--	[`7.53-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/5dd56ed77e995f2cad08b6206d9e335c3a150168/7/fpm/Dockerfile)
+-	[`8.3.0-rc2-apache`, `8.3-rc-apache`, `rc-apache`, `8.3.0-rc2`, `8.3-rc`, `rc` (*8.3-rc/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/407abbdffe21637509688ec29cd761e0b56b6812/8.3-rc/apache/Dockerfile)
+-	[`8.3.0-rc2-fpm`, `8.3-rc-fpm`, `rc-fpm` (*8.3-rc/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/407abbdffe21637509688ec29cd761e0b56b6812/8.3-rc/fpm/Dockerfile)
+-	[`8.3.0-rc2-fpm-alpine`, `8.3-rc-fpm-alpine`, `rc-fpm-alpine` (*8.3-rc/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/407abbdffe21637509688ec29cd761e0b56b6812/8.3-rc/fpm-alpine/Dockerfile)
+-	[`8.2.7-apache`, `8.2-apache`, `8-apache`, `apache`, `8.2.7`, `8.2`, `8`, `latest` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/67dab10dcf957e66d8d257c069e40b255a5f2a7c/8.2/apache/Dockerfile)
+-	[`8.2.7-fpm`, `8.2-fpm`, `8-fpm`, `fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/67dab10dcf957e66d8d257c069e40b255a5f2a7c/8.2/fpm/Dockerfile)
+-	[`8.2.7-fpm-alpine`, `8.2-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine` (*8.2/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/67dab10dcf957e66d8d257c069e40b255a5f2a7c/8.2/fpm-alpine/Dockerfile)
+-	[`7.54-apache`, `7-apache`, `7.54`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/e8e2309427218cb2e250a3af013e8efe54703404/7/apache/Dockerfile)
+-	[`7.54-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/e8e2309427218cb2e250a3af013e8efe54703404/7/fpm/Dockerfile)
+-	[`7.54-fpm-alpine`, `7-fpm-alpine` (*7/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/e8e2309427218cb2e250a3af013e8efe54703404/7/fpm-alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdrupal).
 
@@ -57,6 +78,41 @@ $ docker run --name some-drupal --link some-postgres:postgres -d drupal
 -	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://registry.hub.docker.com/_/postgres/))
 -	ADVANCED OPTIONS; Database host: `postgres` (for using the `/etc/hosts` entry added by `--link` to access the linked container's PostgreSQL instance)
 
+## Volumes
+
+By default, this image does not include any volumes. There is a lot of good discussion on this topic in [docker-library/drupal#3](https://github.com/docker-library/drupal/issues/3), which is definitely recommended reading.
+
+There is consensus that `/var/www/html/modules`, `/var/www/html/profiles`, and `/var/www/html/themes` are things that generally ought to be volumes (and might have an explicit `VOLUME` declaration in a future update to this image), but handling of `/var/www/html/sites` is somewhat more complex, since the contents of that directory *do* need to be initialized with the contents from the image.
+
+If using bind-mounts, one way to accomplish pre-seeding your local `sites` directory would be something like the following:
+
+```console
+$ docker run --rm drupal tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
+```
+
+This can then be bind-mounted into a new container:
+
+```console
+$ docker run --name some-drupal --link some-postgres:postgres -d \
+	-v /path/on/host/modules:/var/www/html/modules \
+	-v /path/on/host/profiles:/var/www/html/profiles \
+	-v /path/on/host/sites:/var/www/html/sites \
+	-v /path/on/host/themes:/var/www/html/themes \
+	drupal
+```
+
+Another solution using Docker Volumes:
+
+```console
+$ docker volume create drupal-sites
+$ docker run --rm -v drupal-sites:/temporary/sites drupal cp -aRT /var/www/html/sites /temporary/sites
+$ docker run --name some-drupal --link some-postgres:postgres -d \
+	-v drupal-modules:/var/www/html/modules \
+	-v drupal-profiles:/var/www/html/profiles \
+	-v drupal-sites:/var/www/html/sites \
+	-v drupal-themes:/var/www/html/themes \
+```
+
 ## ... via [`docker-compose`](https://github.com/docker/compose)
 
 Example `docker-compose.yml` for `drupal`:
@@ -64,7 +120,8 @@ Example `docker-compose.yml` for `drupal`:
 ```yaml
 # Drupal with PostgreSQL
 #
-# Access via "http://localhost:8080" (or "http://$(docker-machine ip):8080" if using docker-machine)
+# Access via "http://localhost:8080"
+#   (or "http://$(docker-machine ip):8080" if using docker-machine)
 #
 # During initial Drupal setup,
 # Database type: PostgreSQL
@@ -81,6 +138,14 @@ services:
     image: drupal:8.2-apache
     ports:
       - 8080:80
+    volumes:
+      - /var/www/html/modules
+      - /var/www/html/profiles
+      - /var/www/html/themes
+      # this takes advantage of the feature in Docker that a new anonymous
+      # volume (which is what we're creating here) will be initialized with the
+      # existing content of the image at the same location
+      - /var/www/html/sites
     restart: always
 
   postgres:
@@ -107,7 +172,7 @@ View [license information](https://www.drupal.org/licensing/faq) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

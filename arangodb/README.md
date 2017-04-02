@@ -1,9 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "arangodb/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "arangodb/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2.5.5`, `2.5` (*jessie/2.5.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/636cd874df38edd77a187c08e1803693b3d978d3/jessie/2.5.5/Dockerfile)
--	[`2.7`, `2.7.5` (*jessie/2.7.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/dbfcc5f3edb37f622a2acd221b58106547b05fae/jessie/2.7.5/Dockerfile)
 -	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/05366cb4c6a6aab8e1ff9ca74c81b09d9a57b5b5/jessie/2.8.11/Dockerfile)
--	[`3.1`, `3.1.7`, `latest` (*jessie/3.1.7/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/c2776c0587ceea1af3458b6c344f2229d59cc309/jessie/3.1.7/Dockerfile)
+-	[`3.1`, `3.1.16`, `latest` (*jessie/3.1.16/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/2442ff75200f062f7bb990f992801bb0173ad604/jessie/3.1.16/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/arangodb`)](https://github.com/docker-library/official-images/blob/master/library/arangodb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Farangodb).
 
@@ -17,7 +31,7 @@ The supported data models can be mixed in queries and allow ArangoDB to be the a
 
 > [arangodb.com](https://arangodb.com)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/fc374e65196006a9b55da56446332f953f3c88b3/arangodb/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/788ad3d196c4f69bd73801812abcab7707f70101/arangodb/logo.png)
 
 ## Key Features in ArangoDB
 
@@ -125,7 +139,7 @@ You can map the container's volumes to a directory on the host, so that the data
 
 ```console
 unix> mkdir /tmp/arangodb
-unix> docker -e ARANGO_RANDOM_ROOT_PASSWORD=1 run -p 8529:8529 -d \
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d \
           -v /tmp/arangodb:/var/lib/arangodb3 \
           arangodb
 ```
@@ -162,7 +176,7 @@ If you are using the image as a base image please make sure to wrap any CMD in t
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

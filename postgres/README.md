@@ -1,15 +1,31 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "postgres/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "postgres/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`9.6.1`, `9.6`, `9`, `latest` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/a00e979002aaa80840d58a5f8cc541342e06788f/9.6/Dockerfile)
--	[`9.6.1-alpine`, `9.6-alpine`, `9-alpine`, `alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/bcf8da33d85f2a558ae1611cb310d27fe8359fea/9.6/alpine/Dockerfile)
--	[`9.5.5`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/4f3238cf60b514d5c20e86096817718474f53d73/9.5/Dockerfile)
--	[`9.5.5-alpine`, `9.5-alpine` (*9.5/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/bcf8da33d85f2a558ae1611cb310d27fe8359fea/9.5/alpine/Dockerfile)
--	[`9.4.10`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/4f3238cf60b514d5c20e86096817718474f53d73/9.4/Dockerfile)
--	[`9.4.10-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/bcf8da33d85f2a558ae1611cb310d27fe8359fea/9.4/alpine/Dockerfile)
--	[`9.3.15`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/4f3238cf60b514d5c20e86096817718474f53d73/9.3/Dockerfile)
--	[`9.3.15-alpine`, `9.3-alpine` (*9.3/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/bcf8da33d85f2a558ae1611cb310d27fe8359fea/9.3/alpine/Dockerfile)
--	[`9.2.19`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/4f3238cf60b514d5c20e86096817718474f53d73/9.2/Dockerfile)
--	[`9.2.19-alpine`, `9.2-alpine` (*9.2/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/bcf8da33d85f2a558ae1611cb310d27fe8359fea/9.2/alpine/Dockerfile)
+-	[`9.6.2`, `9.6`, `9`, `latest` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/913bc48bfdccab58c6c15f11841da5146e7bf968/9.6/Dockerfile)
+-	[`9.6.2-alpine`, `9.6-alpine`, `9-alpine`, `alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/123aedc09bc067740fb28921c500ded83c018bd4/9.6/alpine/Dockerfile)
+-	[`9.5.6`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/913bc48bfdccab58c6c15f11841da5146e7bf968/9.5/Dockerfile)
+-	[`9.5.6-alpine`, `9.5-alpine` (*9.5/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/123aedc09bc067740fb28921c500ded83c018bd4/9.5/alpine/Dockerfile)
+-	[`9.4.11`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/913bc48bfdccab58c6c15f11841da5146e7bf968/9.4/Dockerfile)
+-	[`9.4.11-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/123aedc09bc067740fb28921c500ded83c018bd4/9.4/alpine/Dockerfile)
+-	[`9.3.16`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/913bc48bfdccab58c6c15f11841da5146e7bf968/9.3/Dockerfile)
+-	[`9.3.16-alpine`, `9.3-alpine` (*9.3/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/123aedc09bc067740fb28921c500ded83c018bd4/9.3/alpine/Dockerfile)
+-	[`9.2.20`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/913bc48bfdccab58c6c15f11841da5146e7bf968/9.2/Dockerfile)
+-	[`9.2.20-alpine`, `9.2-alpine` (*9.2/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/123aedc09bc067740fb28921c500ded83c018bd4/9.2/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostgres).
 
@@ -83,6 +99,47 @@ This optional environment variable can be used to define a different name for th
 
 This optional environment variable can be used to send arguments to `postgres initdb`. The value is a space separated string of arguments as `postgres initdb` would expect them. This is useful for adding functionality like data page checksums: `-e POSTGRES_INITDB_ARGS="--data-checksums"`.
 
+## Arbitrary `--user` Notes
+
+As of [docker-library/postgres#253](https://github.com/docker-library/postgres/pull/253), this image supports running as a (mostly) arbitrary user via `--user` on `docker run`.
+
+The main caveat to note is that `postgres` doesn't care what UID it runs as (as long as the owner of `/var/lib/postgresql/data` matches), but `initdb` *does* care (and needs the user to exist in `/etc/passwd`):
+
+```console
+$ docker run -it --rm --user www-data postgres
+The files belonging to this database system will be owned by user "www-data".
+...
+
+$ docker run -it --rm --user 1000:1000 postgres
+initdb: could not look up effective user ID 1000: user does not exist
+```
+
+The two easiest ways to get around this:
+
+1.	bind-mount `/etc/passwd` read-only from the host (if the UID you desire is a valid user on your host):
+
+	```console
+	$ docker run -it --rm --user "$(id -u):$(id -g)" -v /etc/passwd:/etc/passwd:ro postgres
+	The files belonging to this database system will be owned by user "jsmith".
+	...
+	```
+
+2.	initialize the target directory separately from the final runtime (with a `chown` in between):
+
+	```console
+	$ docker volume create pgdata
+	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data postgres
+	The files belonging to this database system will be owned by user "postgres".
+	...
+	( once it's finished initializing successfully and is waiting for connections, stop it )
+	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data bash chown -R 1000:1000 /var/lib/postgresql/data
+	$ docker run -it --rm --user 1000:1000 -v pgdata:/var/lib/postgresql/data postgres
+	LOG:  database system was shut down at 2017-01-20 00:03:23 UTC
+	LOG:  MultiXact member wraparound protections are now enabled
+	LOG:  autovacuum launcher started
+	LOG:  database system is ready to accept connections
+	```
+
 # How to extend this image
 
 If you would like to do additional initialization in an image derived from this one, add one or more `*.sql` or `*.sh` scripts under `/docker-entrypoint-initdb.d` (creating the directory if necessary). After the entrypoint calls `initdb` to create the default `postgres` user and database, it will run any `*.sql` files and source any `*.sh` scripts found in that directory to do further initialization before starting the service.
@@ -102,6 +159,8 @@ EOSQL
 
 These initialization files will be executed in sorted name order as defined by the current locale, which defaults to `en_US.utf8`. Any `*.sql` files will be executed by `POSTGRES_USER`, which defaults to the `postgres` superuser. It is recommended that any `psql` commands that are run inside of a `*.sh` script be executed as `POSTGRES_USER` by using the `--username "$POSTGRES_USER"` flag. This user will be able to connect without a password due to the presence of `trust` authentication for Unix socket connections made inside the container.
 
+Additionally, as of [docker-library/postgres#253](https://github.com/docker-library/postgres/pull/253), these initialization scripts are run as the `postgres` user (or as the "semi-arbitrary user" specified with the `--user` flag to `docker run`; see the section titled "Arbitrary `--user` Notes" for more details).
+
 You can also extend the image with a simple `Dockerfile` to set a different locale. The following example will set the default locale to `de_DE.utf8`:
 
 ```dockerfile
@@ -114,7 +173,7 @@ Since database initialization only happens on container startup, this allows us 
 
 # Caveats
 
-If there is no database when `postgres` starts in a container, then `postgres` will create the default database for you. While this is the expected behavior of `postgres`, this means that it will not accept incoming connections during that time. This may cause issues when using automation tools, such as `fig`, that start several containers simultaneously.
+If there is no database when `postgres` starts in a container, then `postgres` will create the default database for you. While this is the expected behavior of `postgres`, this means that it will not accept incoming connections during that time. This may cause issues when using automation tools, such as `docker-compose`, that start several containers simultaneously.
 
 # Image Variants
 
@@ -134,7 +193,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

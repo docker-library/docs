@@ -1,7 +1,23 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "hello-world/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "hello-world/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/85fd7ab65e079b08019032479a3f306964a28f4d/hello-world/Dockerfile)
--	[`nanoserver` (*hello-world/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/0f30176f82bc9984e7a75f96205f86dc3758e2e8/hello-world/nanoserver/Dockerfile)
+-	[`latest` (*hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/bdee60d7ff6b98037657dc34a10e9ca4ffd6785f/hello-world/Dockerfile)
+-	[`nanoserver` (*hello-world/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/1f13a5bc3b787747eeefb3b0051d8d29f851260d/hello-world/nanoserver/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/hello-world`)](https://github.com/docker-library/official-images/blob/master/library/hello-world). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhello-world).
 
@@ -26,8 +42,8 @@ To generate this message, Docker took the following steps:
 To try something more ambitious, you can run an Ubuntu container with:
  $ docker run -it ubuntu bash
 
-Share images, automate workflows, and more with a free Docker Hub account:
- https://hub.docker.com
+Share images, automate workflows, and more with a free Docker ID:
+ https://cloud.docker.com/
 
 For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
@@ -35,7 +51,7 @@ For more examples and ideas, visit:
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  c54a2cc56cbb  1.848 kB
+hello-world  latest  48b5124b2768  1.84 kB
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)
@@ -46,7 +62,7 @@ This image is a prime example of using the [`scratch`](https://registry.hub.dock
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.5.
+This image is officially supported on Docker version 17.03.1-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
