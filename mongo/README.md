@@ -18,10 +18,12 @@ WARNING:
 
 -	[`3.0.14`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/5fa47142887600edcd437e7689f40342b3572e71/3.0/Dockerfile)
 -	[`3.0.14-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/a51b641c84e1a8d543b6a234a090f8263188139a/3.0/windows/windowsservercore/Dockerfile)
--	[`3.2.12`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/5fa47142887600edcd437e7689f40342b3572e71/3.2/Dockerfile)
+-	[`3.2.12`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/17f05e95936bc3ec911446ffe4c2f5889363083d/3.2/Dockerfile)
 -	[`3.2.12-windowsservercore`, `3.2-windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/5c0e43ac8eba7c2fb8cc3de9542f48b31c48da14/3.2/windows/windowsservercore/Dockerfile)
--	[`3.4.3`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/812b8fb401a929c312c7222a26b707a6415450c6/3.4/Dockerfile)
+-	[`3.4.3`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/17f05e95936bc3ec911446ffe4c2f5889363083d/3.4/Dockerfile)
 -	[`3.4.3-windowsservercore`, `3.4-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.4/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/2754d33460e0bfe196dccdccf9a8ff2b43816d00/3.4/windows/windowsservercore/Dockerfile)
+-	[`3.5.5`, `3.5`, `unstable` (*3.5/Dockerfile*)](https://github.com/docker-library/mongo/blob/17f05e95936bc3ec911446ffe4c2f5889363083d/3.5/Dockerfile)
+-	[`3.5.5-windowsservercore`, `3.5-windowsservercore`, `unstable-windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/17f05e95936bc3ec911446ffe4c2f5889363083d/3.5/windows/windowsservercore/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo).
 
