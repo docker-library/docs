@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.3.3`, `5.3`, `5`, `latest` (*Dockerfile*)](https://github.com/rapidoid/docker-rapidoid/blob/029b4b186f0aa6ff21d1df60fbf2b3a4ec5798e6/Dockerfile)
+-	[`5.3.4`, `5.3`, `5`, `latest` (*Dockerfile*)](https://github.com/rapidoid/docker-rapidoid/blob/7d2e37df8a87985f267aa4e77f4f15744c411d62/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rapidoid`)](https://github.com/docker-library/official-images/blob/master/library/rapidoid). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frapidoid).
 
