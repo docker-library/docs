@@ -138,7 +138,7 @@ This image is configured with volumes at `/data` and `/datalog` to hold the Zook
 
 # License
 
-View [license information](https://github.com/apache/zookeeper/blob/release-3.4.9/LICENSE.txt) for the software contained in this image.
+View [license information](https://github.com/apache/zookeeper/blob/master/LICENSE.txt) for the software contained in this image.
 
 # Supported Docker versions
 
