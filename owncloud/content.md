@@ -36,4 +36,12 @@ For fine grained data persistence, you can use 3 volumes, as shown below.
 
 When using the 6.0 image, you need to map the host port to the container port that apache listens on when going through the installation wizard. By default, this is port 80.
 
+## Using `occ`
+
+The [`occ` tool from upstream](https://doc.owncloud.org/server/9.0/admin_manual/configuration_server/occ_command.html) is simplest to use via `docker exec`, similar to the example provided there:
+
+```console
+$ docker exec -u www-data some-owncloud php occ status
+```
+
 ## %%COMPOSE%%
