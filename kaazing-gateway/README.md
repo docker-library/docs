@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.5.0` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/27281b1f0a8d09ce3897ba3325f1da669266d0b1/Dockerfile)
+-	[`latest`, `5.6.0` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/a40c8da9d2c2925bdd78b9a6d1b6da3fe89322d1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kaazing-gateway`)](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkaazing-gateway).
 
