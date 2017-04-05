@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.13.0`, `8.13` (*8.13/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f9835042aadb805e755a826ca7748334b11ef09b/8.13/Dockerfile)
--	[`8.13.0-onbuild`, `8.13-onbuild` (*8.13/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f9835042aadb805e755a826ca7748334b11ef09b/8.13/onbuild/Dockerfile)
--	[`8.14.1`, `8.14`, `8`, `latest` (*8.14/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c73e82b78c827de107e055bf0b2a07f395a0650c/8.14/Dockerfile)
--	[`8.14.1-onbuild`, `8.14-onbuild`, `8-onbuild`, `onbuild` (*8.14/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/02492c01dd4a360b04466ce5a98511d748965c07/8.14/onbuild/Dockerfile)
+-	[`8.14.1`, `8.14` (*8.14/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c73e82b78c827de107e055bf0b2a07f395a0650c/8.14/Dockerfile)
+-	[`8.14.1-onbuild`, `8.14-onbuild` (*8.14/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/02492c01dd4a360b04466ce5a98511d748965c07/8.14/onbuild/Dockerfile)
+-	[`8.15.0`, `8.15`, `8`, `latest` (*8.15/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/a40471912184a4a013d00e13ef1bdca581860bd3/8.15/Dockerfile)
+-	[`8.15.0-onbuild`, `8.15-onbuild`, `8-onbuild`, `onbuild` (*8.15/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/a40471912184a4a013d00e13ef1bdca581860bd3/8.15/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
