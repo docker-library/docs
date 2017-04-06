@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.11.12`, `mainline`, `1`, `1.11`, `latest` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/29b52049eba48ce0eaef84696149b9b16160e900/mainline/jessie/Dockerfile)
--	[`1.11.12-alpine`, `mainline-alpine`, `1-alpine`, `1.11-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/29b52049eba48ce0eaef84696149b9b16160e900/mainline/alpine/Dockerfile)
+-	[`1.11.13`, `mainline`, `1`, `1.11`, `latest` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/0c7611139f2ce7c5a6b1febbfd5b436c8c7d2d53/mainline/jessie/Dockerfile)
+-	[`1.11.13-alpine`, `mainline-alpine`, `1-alpine`, `1.11-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/0c7611139f2ce7c5a6b1febbfd5b436c8c7d2d53/mainline/alpine/Dockerfile)
 -	[`1.10.3`, `stable`, `1.10` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/014e624239987a0a46bee5b44088a8c5150bf0bb/stable/jessie/Dockerfile)
 -	[`1.10.3-alpine`, `stable-alpine`, `1.10-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/014e624239987a0a46bee5b44088a8c5150bf0bb/stable/alpine/Dockerfile)
 
