@@ -18,9 +18,9 @@ WARNING:
 
 -	[`5.3.4`, `5.3`, `5`, `latest` (*Dockerfile*)](https://github.com/rapidoid/docker-rapidoid/blob/7d2e37df8a87985f267aa4e77f4f15744c411d62/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rapidoid`)](https://github.com/docker-library/official-images/blob/master/library/rapidoid). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frapidoid).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/rapidoid` directory](https://github.com/docker-library/repo-info/blob/master/repos/rapidoid) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rapidoid/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rapidoid/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/rapidoid`)](https://github.com/docker-library/official-images/blob/master/library/rapidoid). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frapidoid).
 
 # What is Rapidoid?
 

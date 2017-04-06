@@ -21,9 +21,9 @@ WARNING:
 -	[`2.4.25`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/e885c0d63078153dc89fa0212314e590fec7fc93/2.4/Dockerfile)
 -	[`2.4.25-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/b95f1aba991d613f971fe8c66dc23fb4d8f3e9a7/2.4/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/httpd`)](https://github.com/docker-library/official-images/blob/master/library/httpd). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhttpd).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/httpd` directory](https://github.com/docker-library/repo-info/blob/master/repos/httpd) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/httpd/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/httpd/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/httpd`)](https://github.com/docker-library/official-images/blob/master/library/httpd). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhttpd).
 
 # What is httpd?
 

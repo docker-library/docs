@@ -25,9 +25,9 @@ WARNING:
 -	[`1.7.5`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/1848d2933afbefd0e0a068dc7b5a753ab7842e6c/1.7/Dockerfile)
 -	[`1.7.5-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/1848d2933afbefd0e0a068dc7b5a753ab7842e6c/1.7/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaproxy).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/haproxy` directory](https://github.com/docker-library/repo-info/blob/master/repos/haproxy) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/haproxy/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/haproxy/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaproxy).
 
 # What is HAProxy?
 

@@ -21,9 +21,9 @@ WARNING:
 -	[`1.0.3`, `1.0` (*1.0.3/Dockerfile*)](https://github.com/31z4/storm-docker/blob/9c53ecc1f5ef88c9745373a6fb5e9c7f2d0cc2eb/1.0.3/Dockerfile)
 -	[`1.1.0`, `1.1`, `latest` (*1.1.0/Dockerfile*)](https://github.com/31z4/storm-docker/blob/e20c50c9704ed64765ba80e6964df4c0c189be3e/1.1.0/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/storm`)](https://github.com/docker-library/official-images/blob/master/library/storm). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fstorm).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/storm` directory](https://github.com/docker-library/repo-info/blob/master/repos/storm) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/storm/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/storm/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/storm`)](https://github.com/docker-library/official-images/blob/master/library/storm). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fstorm).
 
 # What is Apache Storm?
 

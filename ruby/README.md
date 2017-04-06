@@ -33,9 +33,9 @@ WARNING:
 -	[`2.4.1-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/e98bec810e6f1bd88ad0106f2e3b3f3291f5f5bb/2.4/alpine/Dockerfile)
 -	[`2.4.1-onbuild`, `2.4-onbuild`, `2-onbuild`, `onbuild` (*2.4/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/752c5f7cf44870ceae77134b346d20093053c370/2.4/onbuild/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fruby).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/ruby` directory](https://github.com/docker-library/repo-info/blob/master/repos/ruby) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/ruby/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/ruby/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fruby).
 
 # What is Ruby?
 

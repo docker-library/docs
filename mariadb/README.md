@@ -20,9 +20,9 @@ WARNING:
 -	[`10.0.30`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/21eed39fdd34c84ecd83cc077ad3253cfa875c5c/10.0/Dockerfile)
 -	[`5.5.54`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/21eed39fdd34c84ecd83cc077ad3253cfa875c5c/5.5/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmariadb).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/mariadb` directory](https://github.com/docker-library/repo-info/blob/master/repos/mariadb) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mariadb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mariadb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmariadb).
 
 # What is MariaDB?
 

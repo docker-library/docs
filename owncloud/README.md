@@ -27,9 +27,9 @@ WARNING:
 -	[`9.1.4-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.4`, `9.1`, `9`, `latest` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/61f63930e743211540df45e0c32165ec043dd6f5/9.1/apache/Dockerfile)
 -	[`9.1.4-fpm`, `9.1-fpm`, `9-fpm`, `fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/61f63930e743211540df45e0c32165ec043dd6f5/9.1/fpm/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fowncloud).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/owncloud` directory](https://github.com/docker-library/repo-info/blob/master/repos/owncloud) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/owncloud/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/owncloud/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fowncloud).
 
 # What is ownCloud?
 

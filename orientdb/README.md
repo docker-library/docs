@@ -21,9 +21,9 @@ WARNING:
 -	[`2.2.18`, `latest` (*2.2/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/2b6305aa0293796280c27be782d2710d68fc74b6/2.2/x86_64/alpine/Dockerfile)
 -	[`2.2.18-spatial` (*2.2-spatial/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/2b6305aa0293796280c27be782d2710d68fc74b6/2.2-spatial/x86_64/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/orientdb`)](https://github.com/docker-library/official-images/blob/master/library/orientdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Forientdb).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/orientdb` directory](https://github.com/docker-library/repo-info/blob/master/repos/orientdb) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/orientdb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/orientdb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/orientdb`)](https://github.com/docker-library/official-images/blob/master/library/orientdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Forientdb).
 
 # What is OrientDB?
 

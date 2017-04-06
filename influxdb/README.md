@@ -21,9 +21,9 @@ WARNING:
 -	[`1.2`, `1.2.2`, `latest` (*influxdb/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/97165ea663d6bf5fb06ceaeae5d7a179eb6855e7/influxdb/1.2/Dockerfile)
 -	[`1.2-alpine`, `1.2.2-alpine`, `alpine` (*influxdb/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/97165ea663d6bf5fb06ceaeae5d7a179eb6855e7/influxdb/1.2/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/influxdb` directory](https://github.com/docker-library/repo-info/blob/master/repos/influxdb) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/influxdb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/influxdb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
 
 # InfluxDB
 

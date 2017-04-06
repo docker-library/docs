@@ -18,9 +18,9 @@ WARNING:
 
 -	[`0.9.2`, `0.9`, `0`, `latest` (*Dockerfile*)](https://github.com/idno/Known-Docker/blob/986a2618080f32bbbcb9af3c8e7c15297d9658ea/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/known`)](https://github.com/docker-library/official-images/blob/master/library/known). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fknown).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/known` directory](https://github.com/docker-library/repo-info/blob/master/repos/known) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/known/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/known/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/known`)](https://github.com/docker-library/official-images/blob/master/library/known). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fknown).
 
 # Known: social publishing for groups and individuals
 

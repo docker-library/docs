@@ -26,9 +26,9 @@ WARNING:
 -	[`4.7.3-php7.1-fpm`, `4.7-php7.1-fpm`, `4-php7.1-fpm`, `php7.1-fpm` (*php7.1/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/3a1ca61731e6070764d5b7235e3b6617798b8af8/php7.1/fpm/Dockerfile)
 -	[`4.7.3-php7.1-fpm-alpine`, `4.7-php7.1-fpm-alpine`, `4-php7.1-fpm-alpine`, `php7.1-fpm-alpine` (*php7.1/fpm-alpine/Dockerfile*)](https://github.com/docker-library/wordpress/blob/3a1ca61731e6070764d5b7235e3b6617798b8af8/php7.1/fpm-alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/wordpress` directory](https://github.com/docker-library/repo-info/blob/master/repos/wordpress) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/wordpress/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/wordpress/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress).
 
 # What is WordPress?
 

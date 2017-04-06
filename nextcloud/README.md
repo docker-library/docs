@@ -23,9 +23,9 @@ WARNING:
 -	[`9.0.57-apache`, `9.0-apache`, `9-apache`, `9.0.57`, `9.0`, `9` (*9.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/534665db850902068eca461cf1e67c2309e8ebaa/9.0/apache/Dockerfile)
 -	[`9.0.57-fpm`, `9.0-fpm`, `9-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/534665db850902068eca461cf1e67c2309e8ebaa/9.0/fpm/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/nextcloud`)](https://github.com/docker-library/official-images/blob/master/library/nextcloud). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnextcloud).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/nextcloud` directory](https://github.com/docker-library/repo-info/blob/master/repos/nextcloud) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/nextcloud/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/nextcloud/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/nextcloud`)](https://github.com/docker-library/official-images/blob/master/library/nextcloud). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnextcloud).
 
 # What is Nextcloud?
 

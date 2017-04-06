@@ -20,9 +20,9 @@ WARNING:
 -	[`5.6.35`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/14bca28392a7571d5288affb108acd4fc794f104/5.6/Dockerfile)
 -	[`5.5.54`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/e75f7e598d0b12bfa7cee85496f5311f00ecc46f/5.5/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpercona).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/percona` directory](https://github.com/docker-library/repo-info/blob/master/repos/percona) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/percona/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/percona/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpercona).
 
 # Percona Server
 

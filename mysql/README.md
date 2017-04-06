@@ -21,9 +21,9 @@ WARNING:
 -	[`5.6.35`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/f42fa91856b557940a4ddd86d70cc2518cab818b/5.6/Dockerfile)
 -	[`5.5.54`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/f42fa91856b557940a4ddd86d70cc2518cab818b/5.5/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmysql).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/mysql` directory](https://github.com/docker-library/repo-info/blob/master/repos/mysql) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mysql/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mysql/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmysql).
 
 # What is MySQL?
 

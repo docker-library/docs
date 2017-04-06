@@ -19,9 +19,9 @@ WARNING:
 -	[`latest`, `2.46.1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/38a7f8a3700d6637a6f08ff563beaef9926ce5ee/Dockerfile)
 -	[`alpine`, `2.46.1-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/a11bb3e367da9756cc9d95d153b1fb50431ebcaf/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/jenkins` directory](https://github.com/docker-library/repo-info/blob/master/repos/jenkins) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/jenkins/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/jenkins/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
 # Jenkins
 

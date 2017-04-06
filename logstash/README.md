@@ -29,9 +29,9 @@ Elastic provides open-source support for Logstash via the [elastic/logstash GitH
 -	[`1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/754eeb919e42b1f6f2708b73f6f13cbc06fd722c/1.5/Dockerfile)
 -	[`1.5.6-alpine`, `1.5-alpine`, `1-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/7eaa1cd9db876cd1e57371a7a515988c9768e7cc/1.5/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/logstash` directory](https://github.com/docker-library/repo-info/blob/master/repos/logstash) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/logstash/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/logstash/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash).
 
 # What is Logstash?
 

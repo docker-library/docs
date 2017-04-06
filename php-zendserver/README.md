@@ -21,9 +21,9 @@ WARNING:
 -	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/7.0/5.4/Dockerfile)
 -	[`9.0.1`, `9.0.1-php7`, `latest` (*9.0.1/7.0/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/851cbb2346939e98bb0a8a15cd9973fd950fd66b/9.0.1/7.0/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/php-zendserver`)](https://github.com/docker-library/official-images/blob/master/library/php-zendserver). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp-zendserver).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/php-zendserver` directory](https://github.com/docker-library/repo-info/blob/master/repos/php-zendserver) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/php-zendserver/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/php-zendserver/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/php-zendserver`)](https://github.com/docker-library/official-images/blob/master/library/php-zendserver). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp-zendserver).
 
 # What is Zend Server?
 

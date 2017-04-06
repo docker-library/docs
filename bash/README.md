@@ -25,9 +25,9 @@ WARNING:
 -	[`3.1.23`, `3.1` (*3.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/1cbb5cf49b4c53bd5a986abf7a1afeb9a80eac1e/3.1/Dockerfile)
 -	[`3.0.22`, `3.0` (*3.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/1cbb5cf49b4c53bd5a986abf7a1afeb9a80eac1e/3.0/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/bash`)](https://github.com/docker-library/official-images/blob/master/library/bash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbash).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/bash` directory](https://github.com/docker-library/repo-info/blob/master/repos/bash) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/bash/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/bash/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/bash`)](https://github.com/docker-library/official-images/blob/master/library/bash). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbash).
 
 # What is Bash?
 

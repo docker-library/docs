@@ -21,9 +21,9 @@ WARNING:
 -	[`8-postgres-tomcat`, `8.4-postgres-tomcat`, `8.4.4-postgres-tomcat`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres` (*8/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/478f413940c46b325ad8d2b99e430273966b3981/8/postgres-tomcat/Dockerfile)
 -	[`9-postgres-tomcat`, `9.1-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres` (*9/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/478f413940c46b325ad8d2b99e430273966b3981/9/postgres-tomcat/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/xwiki`)](https://github.com/docker-library/official-images/blob/master/library/xwiki). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fxwiki).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/xwiki` directory](https://github.com/docker-library/repo-info/blob/master/repos/xwiki) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/xwiki/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/xwiki/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/xwiki`)](https://github.com/docker-library/official-images/blob/master/library/xwiki). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fxwiki).
 
 # What is XWiki
 

@@ -25,9 +25,9 @@ WARNING:
 -	[`3.4.2`, `3.4`, `latest` (*3.4/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/8e6c65a2d72c239e8ddaf5af9157bb146d71016d/3.4/Dockerfile)
 -	[`3.4.2-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/8e6c65a2d72c239e8ddaf5af9157bb146d71016d/3.4/onbuild/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/haxe`)](https://github.com/docker-library/official-images/blob/master/library/haxe). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaxe).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/haxe` directory](https://github.com/docker-library/repo-info/blob/master/repos/haxe) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/haxe/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/haxe/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/haxe`)](https://github.com/docker-library/official-images/blob/master/library/haxe). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaxe).
 
 # What is Haxe?
 

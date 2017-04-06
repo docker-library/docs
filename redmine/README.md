@@ -23,9 +23,9 @@ WARNING:
 -	[`3.3.2`, `3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/751dc04d76bdec5b92238a6acaa31df610b7d651/3.3/Dockerfile)
 -	[`3.3.2-passenger`, `3.3-passenger`, `3-passenger`, `passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/06af4923eb88ca34909dc0fa4c2be77e6e80064d/3.3/passenger/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredmine).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/redmine` directory](https://github.com/docker-library/repo-info/blob/master/repos/redmine) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/redmine/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/redmine/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredmine).
 
 # What is Redmine?
 

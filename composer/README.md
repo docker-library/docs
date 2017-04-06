@@ -19,9 +19,9 @@ WARNING:
 -	[`1.4.1`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/composer/docker/blob/c5557dc348d9b986aec883e919d202ff76fa5d56/1.4/Dockerfile)
 -	[`1.3.3`, `1.3` (*1.3/Dockerfile*)](https://github.com/composer/docker/blob/542d2ce1c1218dabec97b3dfc5815bfe87756a57/1.3/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/composer`)](https://github.com/docker-library/official-images/blob/master/library/composer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcomposer).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/composer` directory](https://github.com/docker-library/repo-info/blob/master/repos/composer) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/composer/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/composer/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/composer`)](https://github.com/docker-library/official-images/blob/master/library/composer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcomposer).
 
 # What is Composer?
 

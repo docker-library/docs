@@ -19,9 +19,9 @@ WARNING:
 -	[`latest` (*hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/bdee60d7ff6b98037657dc34a10e9ca4ffd6785f/hola-mundo/Dockerfile)
 -	[`nanoserver` (*hola-mundo/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/1f13a5bc3b787747eeefb3b0051d8d29f851260d/hola-mundo/nanoserver/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/hola-mundo`)](https://github.com/docker-library/official-images/blob/master/library/hola-mundo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhola-mundo).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/hola-mundo` directory](https://github.com/docker-library/repo-info/blob/master/repos/hola-mundo) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/hola-mundo/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/hola-mundo/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/hola-mundo`)](https://github.com/docker-library/official-images/blob/master/library/hola-mundo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhola-mundo).
 
 # ¡Hola, DockerCon EU 2015 (Barcelona)!
 

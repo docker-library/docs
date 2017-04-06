@@ -44,9 +44,9 @@ CMD ["rails", "server", "-b", "0.0.0.0"]
 -	[`5.0.1`, `5.0`, `5`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/e16e955a67f48c1e8dc0af87ba6c0b7f8302bad2/Dockerfile)
 -	[`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/9df9b5e6b1519faf22e1565c2caaebf7cc1c665b/onbuild/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rails`)](https://github.com/docker-library/official-images/blob/master/library/rails). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frails).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/rails` directory](https://github.com/docker-library/repo-info/blob/master/repos/rails) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rails/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rails/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/rails`)](https://github.com/docker-library/official-images/blob/master/library/rails). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frails).
 
 # What is Ruby on Rails?
 

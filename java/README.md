@@ -35,9 +35,9 @@ The image has been OpenJDK-specific since it was first introduced, and as of 201
 -	[`9-b149-jdk`, `9-b149`, `9-jdk`, `9`, `openjdk-9-b149-jdk`, `openjdk-9-b149`, `openjdk-9-jdk`, `openjdk-9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e2c8648d39ef1492df3482de3fda0ee3f8955fb1/9-jdk/Dockerfile)
 -	[`9-b149-jre`, `9-jre`, `openjdk-9-b149-jre`, `openjdk-9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e2c8648d39ef1492df3482de3fda0ee3f8955fb1/9-jre/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjava).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/java` directory](https://github.com/docker-library/repo-info/blob/master/repos/java) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/java/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/java/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjava).
 
 # What is Java?
 

@@ -21,9 +21,9 @@ WARNING:
 -	[`1.2`, `1.2.0`, `latest` (*kapacitor/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/620b924e25f49baaccabebb2c7601937c4c365c3/kapacitor/1.2/Dockerfile)
 -	[`1.2-alpine`, `1.2.0-alpine`, `alpine` (*kapacitor/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/620b924e25f49baaccabebb2c7601937c4c365c3/kapacitor/1.2/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/kapacitor`)](https://github.com/docker-library/official-images/blob/master/library/kapacitor). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/kapacitor` directory](https://github.com/docker-library/repo-info/blob/master/repos/kapacitor) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/kapacitor/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/kapacitor/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/kapacitor`)](https://github.com/docker-library/official-images/blob/master/library/kapacitor). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor).
 
 # Kapacitor
 

@@ -25,9 +25,9 @@ WARNING:
 -	[`1.7-jdk`, `1.7.26-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/044aee807e44475c2085e43baab9b91055597461/1.7/jdk/Dockerfile)
 -	[`1.7-onbuild`, `1.7.26-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/044aee807e44475c2085e43baab9b91055597461/1.7/onbuild/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjruby).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/jruby` directory](https://github.com/docker-library/repo-info/blob/master/repos/jruby) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/jruby/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/jruby/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjruby).
 
 # What is JRuby?
 

@@ -19,9 +19,9 @@ WARNING:
 -	[`1.6.3`, `1.6`, `1`, `1.6.1-apache`, `1.6-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/3b87747cfc0b90e21983f6f42ebbacb86a11bfa3/1/apache/Dockerfile)
 -	[`1.6.3-fpm`, `1.6-fpm`, `1-fpm`, `fpm` (*1/fpm/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/3b87747cfc0b90e21983f6f42ebbacb86a11bfa3/1/fpm/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/backdrop`)](https://github.com/docker-library/official-images/blob/master/library/backdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbackdrop).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/backdrop` directory](https://github.com/docker-library/repo-info/blob/master/repos/backdrop) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/backdrop/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/backdrop/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/backdrop`)](https://github.com/docker-library/official-images/blob/master/library/backdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbackdrop).
 
 # What is Backdrop CMS?
 

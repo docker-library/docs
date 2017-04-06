@@ -27,9 +27,9 @@ WARNING:
 -	[`9.2.20`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/913bc48bfdccab58c6c15f11841da5146e7bf968/9.2/Dockerfile)
 -	[`9.2.20-alpine`, `9.2-alpine` (*9.2/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/123aedc09bc067740fb28921c500ded83c018bd4/9.2/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostgres).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/postgres` directory](https://github.com/docker-library/repo-info/blob/master/repos/postgres) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/postgres/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/postgres/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostgres).
 
 # What is PostgreSQL?
 

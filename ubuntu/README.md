@@ -22,9 +22,9 @@ WARNING:
 -	[`16.10`, `yakkety-20170224`, `yakkety`, `rolling` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/yakkety/Dockerfile)
 -	[`17.04`, `zesty-20170224`, `zesty`, `devel` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/zesty/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fubuntu).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/ubuntu` directory](https://github.com/docker-library/repo-info/blob/master/repos/ubuntu) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/ubuntu/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/ubuntu/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fubuntu).
 
 # What is Ubuntu?
 

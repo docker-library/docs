@@ -18,9 +18,9 @@ WARNING:
 
 -	[`latest`, `0.8.0` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/12887eb9e0333e49909985b3523ff69c61099e70/0.X/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/consul`)](https://github.com/docker-library/official-images/blob/master/library/consul). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconsul).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/consul` directory](https://github.com/docker-library/repo-info/blob/master/repos/consul) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/consul/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/consul/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/consul`)](https://github.com/docker-library/official-images/blob/master/library/consul). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconsul).
 
 # Consul
 

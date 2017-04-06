@@ -29,9 +29,9 @@ Elastic provides open-source support for Elasticsearch via the [elastic/elastics
 -	[`1.7.6`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ffd7a19f1e68329cc310f145c232e83abec09067/1.7/Dockerfile)
 -	[`1.7.6-alpine`, `1.7-alpine`, `1-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/5727443ead111be19b55bfe5412dae5133cab8b1/1.7/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/elasticsearch` directory](https://github.com/docker-library/repo-info/blob/master/repos/elasticsearch) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/elasticsearch/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/elasticsearch/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch).
 
 # What is Elasticsearch?
 

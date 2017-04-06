@@ -19,9 +19,9 @@ WARNING:
 -	[`7.3.3` (*7.3/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/19d78ec0f212891e97814b2db30891b9b280f7e5/7.3/Dockerfile)
 -	[`7.4.3`, `latest` (*7.4/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/5e4d4c6d86a90b2f7639215e4098097200a8751a/7.4/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/bonita`)](https://github.com/docker-library/official-images/blob/master/library/bonita). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbonita).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/bonita` directory](https://github.com/docker-library/repo-info/blob/master/repos/bonita) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/bonita/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/bonita/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/bonita`)](https://github.com/docker-library/official-images/blob/master/library/bonita). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbonita).
 
 # What is Bonita BPM?
 

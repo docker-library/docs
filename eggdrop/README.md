@@ -20,9 +20,9 @@ WARNING:
 -	[`1.8`, `1.8.1`, `stable`, `latest` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/d4b8304746296685059033464148d12dd7d00927/1.8/Dockerfile)
 -	[`1.6`, `1.6.21` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/d38f639793663f1203b3bda586e8e44740c7e984/1.6/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/eggdrop`)](https://github.com/docker-library/official-images/blob/master/library/eggdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feggdrop).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/eggdrop` directory](https://github.com/docker-library/repo-info/blob/master/repos/eggdrop) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/eggdrop/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/eggdrop/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/eggdrop`)](https://github.com/docker-library/official-images/blob/master/library/eggdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feggdrop).
 
 # What is Eggdrop?
 

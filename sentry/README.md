@@ -21,9 +21,9 @@ WARNING:
 -	[`8.15.0`, `8.15`, `8`, `latest` (*8.15/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/a40471912184a4a013d00e13ef1bdca581860bd3/8.15/Dockerfile)
 -	[`8.15.0-onbuild`, `8.15-onbuild`, `8-onbuild`, `onbuild` (*8.15/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/a40471912184a4a013d00e13ef1bdca581860bd3/8.15/onbuild/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/sentry` directory](https://github.com/docker-library/repo-info/blob/master/repos/sentry) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/sentry/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/sentry/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
 # What is Sentry?
 

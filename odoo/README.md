@@ -20,9 +20,9 @@ WARNING:
 -	[`9.0`, `9` (*9.0/Dockerfile*)](https://github.com/odoo/docker/blob/f8af1a80b14d9e594fdef4df2ff78e655352473c/9.0/Dockerfile)
 -	[`10.0`, `10`, `latest` (*10.0/Dockerfile*)](https://github.com/odoo/docker/blob/f8af1a80b14d9e594fdef4df2ff78e655352473c/10.0/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/odoo`)](https://github.com/docker-library/official-images/blob/master/library/odoo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fodoo).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/odoo` directory](https://github.com/docker-library/repo-info/blob/master/repos/odoo) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/odoo/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/odoo/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/odoo`)](https://github.com/docker-library/official-images/blob/master/library/odoo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fodoo).
 
 # What is Odoo?
 

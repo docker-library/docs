@@ -19,9 +19,9 @@ WARNING:
 -	[`7.4.5`, `7.4`, `latest` (*7.4/7.4.5/Dockerfile*)](https://github.com/convertigo/docker/blob/866dff0b76231906e1efdeafd63fe522d20b6c05/7.4/7.4.5/Dockerfile)
 -	[`web-connector-7.4.5`, `web-connector-7.4`, `web-connector` (*7.4/7.4.5/web-connector/Dockerfile*)](https://github.com/convertigo/docker/blob/866dff0b76231906e1efdeafd63fe522d20b6c05/7.4/7.4.5/web-connector/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/convertigo`)](https://github.com/docker-library/official-images/blob/master/library/convertigo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconvertigo).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/convertigo` directory](https://github.com/docker-library/repo-info/blob/master/repos/convertigo) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/convertigo/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/convertigo/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/convertigo`)](https://github.com/docker-library/official-images/blob/master/library/convertigo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconvertigo).
 
 # What is Convertigo Mobility Platform ?
 

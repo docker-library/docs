@@ -19,9 +19,9 @@ WARNING:
 -	[`1.5.0`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/caa1ecb53270efd9a088e3856398c48622b5afc8/1.5/Dockerfile)
 -	[`1.5.0-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*1.5/alpine/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/543c0f7021284d0aa36d5a894b2467656095126b/1.5/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/spiped`)](https://github.com/docker-library/official-images/blob/master/library/spiped). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fspiped).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/spiped` directory](https://github.com/docker-library/repo-info/blob/master/repos/spiped) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/spiped/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/spiped/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/spiped`)](https://github.com/docker-library/official-images/blob/master/library/spiped). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fspiped).
 
 # spiped
 

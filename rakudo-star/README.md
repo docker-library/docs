@@ -18,9 +18,9 @@ WARNING:
 
 -	[`2017.01`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/e1029a0142efcdd151a573a6bf9e16d1a0ab7573/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frakudo-star).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/rakudo-star` directory](https://github.com/docker-library/repo-info/blob/master/repos/rakudo-star) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rakudo-star/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rakudo-star/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frakudo-star).
 
 # What is Rakudo Star?
 

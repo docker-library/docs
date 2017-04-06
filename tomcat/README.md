@@ -31,9 +31,9 @@ WARNING:
 -	[`9.0.0.M19-jre8`, `9.0.0-jre8`, `9.0-jre8`, `9-jre8`, `9.0.0.M19`, `9.0.0`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f3006804326b1fed9a20158ccb8007d5da80e31a/9.0/jre8/Dockerfile)
 -	[`9.0.0.M19-jre8-alpine`, `9.0.0-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine`, `9.0.0.M19-alpine`, `9.0.0-alpine`, `9.0-alpine`, `9-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/07b235d59c6a87e8c8ca14918105de993797435a/9.0/jre8-alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomcat).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/tomcat` directory](https://github.com/docker-library/repo-info/blob/master/repos/tomcat) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/tomcat/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/tomcat/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomcat).
 
 # What is Tomcat?
 

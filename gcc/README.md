@@ -20,9 +20,9 @@ WARNING:
 -	[`5.4.0`, `5.4`, `5` (*5/Dockerfile*)](https://github.com/docker-library/gcc/blob/8c7687860cdd4ef9227c249ca4587984e2636a55/5/Dockerfile)
 -	[`6.3.0`, `6.3`, `6`, `latest` (*6/Dockerfile*)](https://github.com/docker-library/gcc/blob/758ef9b4b4978a3a06ea84422a76ed906c94c606/6/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgcc).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/gcc` directory](https://github.com/docker-library/repo-info/blob/master/repos/gcc) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/gcc/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/gcc/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgcc).
 
 # What is GCC?
 

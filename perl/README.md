@@ -21,9 +21,9 @@ WARNING:
 -	[`5.22`, `5.22.3` (*5.022.003-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8b57a74dbc745fb2723bc60ba98768846dae37f6/5.022.003-64bit/Dockerfile)
 -	[`5.22-threaded`, `5.22.3-threaded` (*5.022.003-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8b57a74dbc745fb2723bc60ba98768846dae37f6/5.022.003-64bit,threaded/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/perl`)](https://github.com/docker-library/official-images/blob/master/library/perl). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fperl).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/perl` directory](https://github.com/docker-library/repo-info/blob/master/repos/perl) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/perl/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/perl/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/perl`)](https://github.com/docker-library/official-images/blob/master/library/perl). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fperl).
 
 # What is Perl?
 

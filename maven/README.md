@@ -27,9 +27,9 @@ WARNING:
 -	[`3.3.9-jdk-9`, `3.3-jdk-9`, `3-jdk-9` (*jdk-9/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/33eeccbb0ce15440f5ccebcd87040c6be2bf9e91/jdk-9/Dockerfile)
 -	[`3.3.9-jdk-9-onbuild`, `3.3-jdk-9-onbuild`, `3-jdk-9-onbuild` (*jdk-9/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/33eeccbb0ce15440f5ccebcd87040c6be2bf9e91/jdk-9/onbuild/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/maven`)](https://github.com/docker-library/official-images/blob/master/library/maven). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmaven).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/maven` directory](https://github.com/docker-library/repo-info/blob/master/repos/maven) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/maven/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/maven/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/maven`)](https://github.com/docker-library/official-images/blob/master/library/maven). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmaven).
 
 # What is Maven?
 

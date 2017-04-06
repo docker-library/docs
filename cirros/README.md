@@ -19,9 +19,9 @@ WARNING:
 -	[`latest`, `0.3.4` (*Dockerfile*)](https://github.com/ewindisch/docker-cirros/blob/fd9aa114c465237518535d3545d4f9c4bc1d0aa5/Dockerfile)
 -	[`0.3.3` (*Dockerfile*)](https://github.com/ewindisch/docker-cirros/blob/5ef3f5024b0aa80553cc34be9eff6685cb31b458/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/cirros`)](https://github.com/docker-library/official-images/blob/master/library/cirros). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcirros).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/cirros` directory](https://github.com/docker-library/repo-info/blob/master/repos/cirros) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/cirros/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/cirros/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/cirros`)](https://github.com/docker-library/official-images/blob/master/library/cirros). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcirros).
 
 # What is CirrOS?
 

@@ -18,9 +18,9 @@ WARNING:
 
 -	[`8.0.2`, `8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/5f1ae82bd27501322100b915c9ae6cc9f9aea129/8.0/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/haskell`)](https://github.com/docker-library/official-images/blob/master/library/haskell). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaskell).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/haskell` directory](https://github.com/docker-library/repo-info/blob/master/repos/haskell) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/haskell/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/haskell/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/haskell`)](https://github.com/docker-library/official-images/blob/master/library/haskell). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaskell).
 
 # What is Haskell?
 

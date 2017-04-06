@@ -21,9 +21,9 @@ WARNING:
 -	[`3.1.6`, `enterprise-3.1.6` (*enterprise/couchbase-server/3.1.6/Dockerfile*)](https://github.com/couchbase/docker/blob/0bdfd0897553eb448ac21d662065581f4b879199/enterprise/couchbase-server/3.1.6/Dockerfile)
 -	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/0bdfd0897553eb448ac21d662065581f4b879199/community/couchbase-server/3.1.3/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/couchbase`)](https://github.com/docker-library/official-images/blob/master/library/couchbase). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchbase).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/couchbase` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchbase) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/couchbase/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/couchbase/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/couchbase`)](https://github.com/docker-library/official-images/blob/master/library/couchbase). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchbase).
 
 # What is Couchbase Server?
 

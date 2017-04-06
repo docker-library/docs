@@ -25,9 +25,9 @@ WARNING:
 -	[`6.5.0`, `6.5` (*6.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1738f9a3cbad82e46c5ccebfb44707da13d05479/6.5/Dockerfile)
 -	[`6.5.0-alpine`, `6.5-alpine` (*6.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1738f9a3cbad82e46c5ccebfb44707da13d05479/6.5/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/solr`)](https://github.com/docker-library/official-images/blob/master/library/solr). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsolr).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/solr` directory](https://github.com/docker-library/repo-info/blob/master/repos/solr) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/solr/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/solr/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/solr`)](https://github.com/docker-library/official-images/blob/master/library/solr). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsolr).
 
 # What is Solr?
 

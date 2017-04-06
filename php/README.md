@@ -38,9 +38,9 @@ WARNING:
 -	[`5.6.30-zts`, `5.6-zts`, `5-zts` (*5.6/zts/Dockerfile*)](https://github.com/docker-library/php/blob/75854bb7e97d3e01c9b3597674450be43521e296/5.6/zts/Dockerfile)
 -	[`5.6.30-zts-alpine`, `5.6-zts-alpine`, `5-zts-alpine` (*5.6/zts/alpine/Dockerfile*)](https://github.com/docker-library/php/blob/75854bb7e97d3e01c9b3597674450be43521e296/5.6/zts/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/php` directory](https://github.com/docker-library/repo-info/blob/master/repos/php) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/php/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/php/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp).
 
 # What is PHP?
 

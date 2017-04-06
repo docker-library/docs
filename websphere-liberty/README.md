@@ -23,9 +23,9 @@ WARNING:
 -	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/d4bbe6c7382cecde5d1993a266cc1bc3df6d29d9/ga/developer/javaee7/Dockerfile)
 -	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/d4bbe6c7382cecde5d1993a266cc1bc3df6d29d9/beta/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwebsphere-liberty).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/websphere-liberty` directory](https://github.com/docker-library/repo-info/blob/master/repos/websphere-liberty) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/websphere-liberty/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/websphere-liberty/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwebsphere-liberty).
 
 # Overview
 

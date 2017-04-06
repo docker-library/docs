@@ -44,9 +44,9 @@ WARNING:
 -	[`zesty-scm` (*zesty/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9aa327dcc582d5384affbc5a19672e3077489e97/zesty/scm/Dockerfile)
 -	[`zesty` (*zesty/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/zesty/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/buildpack-deps`)](https://github.com/docker-library/official-images/blob/master/library/buildpack-deps). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbuildpack-deps).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/buildpack-deps` directory](https://github.com/docker-library/repo-info/blob/master/repos/buildpack-deps) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/buildpack-deps/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/buildpack-deps/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/buildpack-deps`)](https://github.com/docker-library/official-images/blob/master/library/buildpack-deps). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbuildpack-deps).
 
 # What is `buildpack-deps`?
 

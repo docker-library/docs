@@ -19,9 +19,9 @@ WARNING:
 -	[`4.3.0-standalone`, `4.3-standalone`, `4-standalone`, `standalone`, `4.3.0`, `4.3`, `4`, `latest` (*4.3/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/583a3425bf560b744f0ac16be398b2b589474c8b/4.3/Dockerfile)
 -	[`4.3.0-fastcgi`, `4.3-fastcgi`, `4-fastcgi`, `fastcgi` (*4.3/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/a07553cc164c5fd9533cda44568a58dfad0fa864/4.3/fastcgi/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/adminer`)](https://github.com/docker-library/official-images/blob/master/library/adminer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fadminer).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/adminer` directory](https://github.com/docker-library/repo-info/blob/master/repos/adminer) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/adminer/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/adminer/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/adminer`)](https://github.com/docker-library/official-images/blob/master/library/adminer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fadminer).
 
 # Adminer
 

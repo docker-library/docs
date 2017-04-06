@@ -20,9 +20,9 @@ WARNING:
 -	[`1.4.8` (*docker/1.4.8/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/25a1f7d1994fd4b8d1d25ab0275f7a8f071abfb1/docker/1.4.8/Dockerfile)
 -	[`1.4.4` (*docker/1.4.4/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/25a1f7d1994fd4b8d1d25ab0275f7a8f071abfb1/docker/1.4.4/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/eclipse-mosquitto`)](https://github.com/docker-library/official-images/blob/master/library/eclipse-mosquitto). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feclipse-mosquitto).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/eclipse-mosquitto` directory](https://github.com/docker-library/repo-info/blob/master/repos/eclipse-mosquitto) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/eclipse-mosquitto/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/eclipse-mosquitto/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/eclipse-mosquitto`)](https://github.com/docker-library/official-images/blob/master/library/eclipse-mosquitto). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feclipse-mosquitto).
 
 # What is Eclipse Mosquitto?
 

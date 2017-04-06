@@ -32,9 +32,9 @@ WARNING:
 -	[`8-jdk-7.0.1-plus` (*8-jdk-7.0.1-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/8c5b5a96305a9b935d304789fcf3707938a175d6/8-jdk-7.0.1-plus/Dockerfile)
 -	[`8-jdk-7.0.1-webprofile`, `latest` (*8-jdk-7.0.1-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/8c5b5a96305a9b935d304789fcf3707938a175d6/8-jdk-7.0.1-webprofile/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/tomee`)](https://github.com/docker-library/official-images/blob/master/library/tomee). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomee).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/tomee` directory](https://github.com/docker-library/repo-info/blob/master/repos/tomee) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/tomee/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/tomee/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/tomee`)](https://github.com/docker-library/official-images/blob/master/library/tomee). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomee).
 
 # What is TomEE?
 

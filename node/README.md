@@ -32,9 +32,9 @@ WARNING:
 -	[`4.8.2-slim`, `4.8-slim`, `4-slim`, `argon-slim` (*4.8/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/9bc214cd9f0cc1a84d74f03665aa87e37535cd14/4.8/slim/Dockerfile)
 -	[`4.8.2-wheezy`, `4.8-wheezy`, `4-wheezy`, `argon-wheezy` (*4.8/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/9bc214cd9f0cc1a84d74f03665aa87e37535cd14/4.8/wheezy/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/node` directory](https://github.com/docker-library/repo-info/blob/master/repos/node) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/node/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/node/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
 
 # What is Node.js?
 

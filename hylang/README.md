@@ -18,9 +18,9 @@ WARNING:
 
 -	[`0.12.1`, `0.12`, `0`, `latest` (*Dockerfile*)](https://github.com/hylang/hy/blob/7a4a2ca6687da381a2b67598b90a2e28beeceaed/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/hylang`)](https://github.com/docker-library/official-images/blob/master/library/hylang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhylang).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/hylang` directory](https://github.com/docker-library/repo-info/blob/master/repos/hylang) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/hylang/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/hylang/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/hylang`)](https://github.com/docker-library/official-images/blob/master/library/hylang). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhylang).
 
 # What is Hy?
 

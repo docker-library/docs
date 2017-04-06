@@ -23,9 +23,9 @@ WARNING:
 -	[`boot-2.7.1`, `boot` (*debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/boot/Dockerfile)
 -	[`boot-2.7.1-alpine`, `boot-alpine` (*alpine/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/alpine/boot/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclojure).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/clojure` directory](https://github.com/docker-library/repo-info/blob/master/repos/clojure) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/clojure/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/clojure/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclojure).
 
 # What is Clojure?
 

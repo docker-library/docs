@@ -21,9 +21,9 @@ WARNING:
 -	[`3.6.9-alpine`, `3.6-alpine`, `3-alpine`, `alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/79277042564875d55e4b05a60c65b6eb46651a94/3.6/alpine/Dockerfile)
 -	[`3.6.9-management-alpine`, `3.6-management-alpine`, `3-management-alpine`, `management-alpine` (*3.6/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/79277042564875d55e4b05a60c65b6eb46651a94/3.6/alpine/management/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frabbitmq).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/rabbitmq` directory](https://github.com/docker-library/repo-info/blob/master/repos/rabbitmq) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rabbitmq/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rabbitmq/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frabbitmq).
 
 # What is RabbitMQ?
 

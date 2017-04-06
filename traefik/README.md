@@ -21,9 +21,9 @@ WARNING:
 -	[`v1.1.2`, `1.1.2`, `camembert` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3645f9dfbd417ee8dad608257c7aeec3a407711f/Dockerfile)
 -	[`v1.1.2-alpine`, `1.1.2-alpine`, `camembert-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3645f9dfbd417ee8dad608257c7aeec3a407711f/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/traefik`)](https://github.com/docker-library/official-images/blob/master/library/traefik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/traefik` directory](https://github.com/docker-library/repo-info/blob/master/repos/traefik) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/traefik/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/traefik/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/traefik`)](https://github.com/docker-library/official-images/blob/master/library/traefik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik).
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/a6cc2c5f4bc6658168f2a0abbb0307acaefff80e/traefik/logo.png)
 

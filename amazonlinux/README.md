@@ -19,9 +19,9 @@ WARNING:
 -	[`2016.09.1.20161221`, `2016.09`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/e1b56e68ebd2b274c64e0a0a18ae0a9a8122822d/Dockerfile)
 -	[`2016.09.1.20161221-with-sources`, `2016.09-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/2de60e8c98421694c293639659a88ed81ce29298/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/amazonlinux`)](https://github.com/docker-library/official-images/blob/master/library/amazonlinux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Famazonlinux).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/amazonlinux` directory](https://github.com/docker-library/repo-info/blob/master/repos/amazonlinux) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/amazonlinux/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/amazonlinux/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/amazonlinux`)](https://github.com/docker-library/official-images/blob/master/library/amazonlinux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Famazonlinux).
 
 ## What is Amazon Linux?
 

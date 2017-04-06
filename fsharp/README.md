@@ -20,9 +20,9 @@ WARNING:
 -	[`4.0`, `4.0.1`, `4.0.1.1` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.0.1.1/Dockerfile)
 -	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.0.0.4/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/fsharp`)](https://github.com/docker-library/official-images/blob/master/library/fsharp). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffsharp).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/fsharp` directory](https://github.com/docker-library/repo-info/blob/master/repos/fsharp) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/fsharp/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/fsharp/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/fsharp`)](https://github.com/docker-library/official-images/blob/master/library/fsharp). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffsharp).
 
 # What is F#?
 

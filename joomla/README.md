@@ -21,9 +21,9 @@ WARNING:
 -	[`3.6.5-fpm`, `3.6-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/80dfb1c98d72f50077b7a49c44e49a49bf3e9c69/fpm/Dockerfile)
 -	[`3.6.5-fpm-php7`, `3.6-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/80dfb1c98d72f50077b7a49c44e49a49bf3e9c69/fpm-php7/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjoomla).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/joomla` directory](https://github.com/docker-library/repo-info/blob/master/repos/joomla) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/joomla/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/joomla/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjoomla).
 
 # What is Joomla?
 

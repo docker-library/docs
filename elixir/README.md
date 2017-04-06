@@ -23,9 +23,9 @@ WARNING:
 -	[`1.2.6`, `1.2` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/Dockerfile)
 -	[`1.2.6-slim`, `1.2-slim` (*1.2/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/slim/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/elixir`)](https://github.com/docker-library/official-images/blob/master/library/elixir). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felixir).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/elixir` directory](https://github.com/docker-library/repo-info/blob/master/repos/elixir) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/elixir/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/elixir/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/elixir`)](https://github.com/docker-library/official-images/blob/master/library/elixir). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felixir).
 
 # What is Elixir?
 

@@ -27,9 +27,9 @@ WARNING:
 -	[`3.4.1-jdk9`, `3.4-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jdk9/Dockerfile)
 -	[`3.4.1-jre9`, `3.4-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jre9/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/gradle`)](https://github.com/docker-library/official-images/blob/master/library/gradle). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgradle).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/gradle` directory](https://github.com/docker-library/repo-info/blob/master/repos/gradle) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/gradle/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/gradle/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/gradle`)](https://github.com/docker-library/official-images/blob/master/library/gradle). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgradle).
 
 # What is Gradle?
 

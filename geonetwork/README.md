@@ -21,9 +21,9 @@ WARNING:
 -	[`3.2.1`, `3.2`, `latest` (*3.2.1/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/507a1d8b02f15615566f7ac45662dbf3bc4d3649/3.2.1/Dockerfile)
 -	[`3.2.1-postgres`, `3.2-postgres`, `postgres` (*3.2.1/postgres/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/507a1d8b02f15615566f7ac45662dbf3bc4d3649/3.2.1/postgres/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/geonetwork`)](https://github.com/docker-library/official-images/blob/master/library/geonetwork). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgeonetwork).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/geonetwork` directory](https://github.com/docker-library/repo-info/blob/master/repos/geonetwork) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/geonetwork/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/geonetwork/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/geonetwork`)](https://github.com/docker-library/official-images/blob/master/library/geonetwork). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgeonetwork).
 
 # What is GeoNetwork?
 

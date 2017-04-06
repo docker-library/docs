@@ -51,9 +51,9 @@ WARNING:
 -	[`4.8.0.495`, `4.8.0`, `4.8`, `4`, `latest` (*4.8.0.495/Dockerfile*)](https://github.com/mono/docker/blob/0dcec42351bdb86248361a5eff6cafbc99a538ce/4.8.0.495/Dockerfile)
 -	[`4.8.0.495-onbuild`, `4.8.0-onbuild`, `4.8-onbuild`, `4-onbuild`, `onbuild` (*4.8.0.495/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/0dcec42351bdb86248361a5eff6cafbc99a538ce/4.8.0.495/onbuild/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/mono` directory](https://github.com/docker-library/repo-info/blob/master/repos/mono) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mono/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mono/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono).
 
 # What is Mono
 

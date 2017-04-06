@@ -18,9 +18,9 @@ WARNING:
 
 -	[`0.3.8`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/8c51cccfe250cb144becd082e3ccdf531a31b30a/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/nats-streaming`)](https://github.com/docker-library/official-images/blob/master/library/nats-streaming). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats-streaming).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/nats-streaming` directory](https://github.com/docker-library/repo-info/blob/master/repos/nats-streaming) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/nats-streaming/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/nats-streaming/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/nats-streaming`)](https://github.com/docker-library/official-images/blob/master/library/nats-streaming). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats-streaming).
 
 # [NATS Streaming](https://nats.io): A high-performance cloud native messaging streaming system.
 

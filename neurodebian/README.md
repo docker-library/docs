@@ -25,9 +25,9 @@ WARNING:
 -	[`stretch`, `nd90` (*dockerfiles/stretch/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/383ae2cf242d4737e813d42c402315c3a8cd4569/dockerfiles/stretch/Dockerfile)
 -	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/383ae2cf242d4737e813d42c402315c3a8cd4569/dockerfiles/sid/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/neurodebian`)](https://github.com/docker-library/official-images/blob/master/library/neurodebian). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneurodebian).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/neurodebian` directory](https://github.com/docker-library/repo-info/blob/master/repos/neurodebian) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/neurodebian/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/neurodebian/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/neurodebian`)](https://github.com/docker-library/official-images/blob/master/library/neurodebian). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneurodebian).
 
 # What is NeuroDebian?
 

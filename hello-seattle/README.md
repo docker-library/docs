@@ -19,9 +19,9 @@ WARNING:
 -	[`latest` (*hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/bdee60d7ff6b98037657dc34a10e9ca4ffd6785f/hello-seattle/Dockerfile)
 -	[`nanoserver` (*hello-seattle/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/1f13a5bc3b787747eeefb3b0051d8d29f851260d/hello-seattle/nanoserver/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/hello-seattle`)](https://github.com/docker-library/official-images/blob/master/library/hello-seattle). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhello-seattle).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/hello-seattle` directory](https://github.com/docker-library/repo-info/blob/master/repos/hello-seattle) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/hello-seattle/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/hello-seattle/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/hello-seattle`)](https://github.com/docker-library/official-images/blob/master/library/hello-seattle). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhello-seattle).
 
 # Hello, DockerCon 2016 (Seattle)!
 

@@ -20,9 +20,9 @@ WARNING:
 -	[`24` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/f3726622b5012c1f374bf9f596616eab3cd4988c/Dockerfile)
 -	[`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/a7ae28fbed5ebf675d6a352f74d86149228e47f1/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/fedora`)](https://github.com/docker-library/official-images/blob/master/library/fedora). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffedora).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/fedora` directory](https://github.com/docker-library/repo-info/blob/master/repos/fedora) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/fedora/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/fedora/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/fedora`)](https://github.com/docker-library/official-images/blob/master/library/fedora). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffedora).
 
 # Fedora
 

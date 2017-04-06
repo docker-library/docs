@@ -29,9 +29,9 @@ WARNING:
 -	[`kinetic-robot` (*ros/kinetic/kinetic-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-robot/Dockerfile)
 -	[`kinetic-perception` (*ros/kinetic/kinetic-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-perception/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fros).
+For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/ros` directory](https://github.com/docker-library/repo-info/blob/master/repos/ros) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/ros/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/ros/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+For more information about this image and its history, please see [the relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fros).
 
 # What is [ROS](http://www.ros.org/)?
 
