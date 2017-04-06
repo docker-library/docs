@@ -63,7 +63,7 @@ This image is well documented. [Check out the documentation at Viewdocs](http://
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 17.03.1-ce.
+This image is officially supported on Docker version 17.04.0-ce.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
