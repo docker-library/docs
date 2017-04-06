@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.9`, `3.6`, `3`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/84eccd5c9be6609d30f6f02f924db505daaef172/debian/Dockerfile)
--	[`3.6.9-management`, `3.6-management`, `3-management`, `management` (*debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/366975d8089b28fb2a58054835f80e1a74328d05/debian/management/Dockerfile)
--	[`3.6.9-alpine`, `3.6-alpine`, `3-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/84eccd5c9be6609d30f6f02f924db505daaef172/alpine/Dockerfile)
--	[`3.6.9-management-alpine`, `3.6-management-alpine`, `3-management-alpine`, `management-alpine` (*alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/74a9d28d4882360eab74a1b9d78ec67143cef345/alpine/management/Dockerfile)
+-	[`3.6.9`, `3.6`, `3`, `latest` (*3.6/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/79277042564875d55e4b05a60c65b6eb46651a94/3.6/debian/Dockerfile)
+-	[`3.6.9-management`, `3.6-management`, `3-management`, `management` (*3.6/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/79277042564875d55e4b05a60c65b6eb46651a94/3.6/debian/management/Dockerfile)
+-	[`3.6.9-alpine`, `3.6-alpine`, `3-alpine`, `alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/79277042564875d55e4b05a60c65b6eb46651a94/3.6/alpine/Dockerfile)
+-	[`3.6.9-management-alpine`, `3.6-management-alpine`, `3-management-alpine`, `management-alpine` (*3.6/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/79277042564875d55e4b05a60c65b6eb46651a94/3.6/alpine/management/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frabbitmq).
 
