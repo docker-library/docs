@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.2`, `3.0`, `3`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/ddc78a24c43759a671d27054f20b15644a36af45/Dockerfile)
+-	[`3.0.3`, `3.0`, `3`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/136976a34f2d49ca8ebb2d8394728eed4d229e70/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/piwik`)](https://github.com/docker-library/official-images/blob/master/library/piwik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpiwik).
 
