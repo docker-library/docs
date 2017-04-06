@@ -72,7 +72,7 @@ Out-of-the-box, Nginx doesn't support using environment variables inside most co
 
 Here is an example using docker-compose.yml:
 
-```
+```yaml
 web:
   image: nginx
   volumes:
@@ -91,18 +91,16 @@ The `mysite.template` file may then contain variable references like this:
 `
 
 ## running nginx in debug mode
- 
-Images since version 1.9.8 come with `nginx-debug` binary that produces
-complete output when using higher verbosity log levels. It can be used 
-with simple CMD substitution:
+
+Images since version 1.9.8 come with `nginx-debug` binary that produces complete output when using higher verbosity log levels. It can be used with simple CMD substitution:
 
 ```console
-docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx nginx-debug -g 'daemon off;'
+$ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx nginx-debug -g 'daemon off;'
 ```
 
 Similar configuration in docker-compose.yml may look like this:
 
-```
+```yaml
 web:
   image: nginx
   volumes:
