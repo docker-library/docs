@@ -99,7 +99,8 @@ Out-of-the-box, Nginx doesn't support using environment variables inside most co
 
 Here is an example using docker-compose.yml:
 
-```web:
+```yaml
+web:
   image: nginx
   volumes:
    - ./mysite.template:/etc/nginx/conf.d/mysite.template
@@ -111,10 +112,28 @@ Here is an example using docker-compose.yml:
   command: /bin/bash -c "envsubst < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
 ```
 
-The `mysite.template` file may then contain variable references like this :
+The `mysite.template` file may then contain variable references like this:
 
 `listen       ${NGINX_PORT};
 `
+
+## running nginx in debug mode
+
+Images since version 1.9.8 come with `nginx-debug` binary that produces complete output when using higher verbosity log levels. It can be used with simple CMD substitution:
+
+```console
+$ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx nginx-debug -g 'daemon off;'
+```
+
+Similar configuration in docker-compose.yml may look like this:
+
+```yaml
+web:
+  image: nginx
+  volumes:
+    - ./nginx.conf:/etc/nginx/nginx.conf:ro
+  command: [nginx-debug, '-g', 'daemon off;']
+```
 
 # Image Variants
 
