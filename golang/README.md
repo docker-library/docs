@@ -23,12 +23,12 @@ WARNING:
 -	[`1.7.5-alpine3.5`, `1.7-alpine3.5` (*1.7/alpine3.5/Dockerfile*)](https://github.com/docker-library/golang/blob/349270dbc128e396888cb2423ffc85d2c3039a27/1.7/alpine3.5/Dockerfile)
 -	[`1.7.5-windowsservercore`, `1.7-windowsservercore` (*1.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/3bccc597c14b6274d7855d968f881ac6407b0a61/1.7/windows/windowsservercore/Dockerfile)
 -	[`1.7.5-nanoserver`, `1.7-nanoserver` (*1.7/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/349270dbc128e396888cb2423ffc85d2c3039a27/1.7/windows/nanoserver/Dockerfile)
--	[`1.8.0`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/Dockerfile)
--	[`1.8.0-onbuild`, `1.8-onbuild`, `1-onbuild`, `onbuild` (*1.8/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/onbuild/Dockerfile)
--	[`1.8.0-stretch`, `1.8-stretch`, `1-stretch`, `stretch` (*1.8/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/stretch/Dockerfile)
--	[`1.8.0-alpine`, `1.8-alpine`, `1-alpine`, `alpine` (*1.8/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/alpine/Dockerfile)
--	[`1.8.0-windowsservercore`, `1.8-windowsservercore`, `1-windowsservercore`, `windowsservercore` (*1.8/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/windows/windowsservercore/Dockerfile)
--	[`1.8.0-nanoserver`, `1.8-nanoserver`, `1-nanoserver`, `nanoserver` (*1.8/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/windows/nanoserver/Dockerfile)
+-	[`1.8.1`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/golang/blob/7e9aedf483dc0a035747f37af37ed260f2a6cf57/1.8/Dockerfile)
+-	[`1.8.1-onbuild`, `1.8-onbuild`, `1-onbuild`, `onbuild` (*1.8/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/onbuild/Dockerfile)
+-	[`1.8.1-stretch`, `1.8-stretch`, `1-stretch`, `stretch` (*1.8/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/7e9aedf483dc0a035747f37af37ed260f2a6cf57/1.8/stretch/Dockerfile)
+-	[`1.8.1-alpine`, `1.8-alpine`, `1-alpine`, `alpine` (*1.8/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/7e9aedf483dc0a035747f37af37ed260f2a6cf57/1.8/alpine/Dockerfile)
+-	[`1.8.1-windowsservercore`, `1.8-windowsservercore`, `1-windowsservercore`, `windowsservercore` (*1.8/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/7e9aedf483dc0a035747f37af37ed260f2a6cf57/1.8/windows/windowsservercore/Dockerfile)
+-	[`1.8.1-nanoserver`, `1.8-nanoserver`, `1-nanoserver`, `nanoserver` (*1.8/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/7e9aedf483dc0a035747f37af37ed260f2a6cf57/1.8/windows/nanoserver/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/golang` directory](https://github.com/docker-library/repo-info/blob/master/repos/golang) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
