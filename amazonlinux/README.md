@@ -16,8 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2016.09.1.20161221`, `2016.09`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/e1b56e68ebd2b274c64e0a0a18ae0a9a8122822d/Dockerfile)
--	[`2016.09.1.20161221-with-sources`, `2016.09-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/2de60e8c98421694c293639659a88ed81ce29298/Dockerfile)
+-	[`2017.03.0.20170401`, `2017.03`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/0b9e43b1675ad911037317052c30074fc962ece0/Dockerfile)
+-	[`2017.03.0.20170401-with-sources`, `2017.03-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/9a0f82efd72c4ce7a00ae0d1145798e833e3fc6c/Dockerfile)
+-	[`2016.09.1.20161221`, `2016.09` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/e1b56e68ebd2b274c64e0a0a18ae0a9a8122822d/Dockerfile)
+-	[`2016.09.1.20161221-with-sources`, `2016.09-with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/2de60e8c98421694c293639659a88ed81ce29298/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/amazonlinux` directory](https://github.com/docker-library/repo-info/blob/master/repos/amazonlinux) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 

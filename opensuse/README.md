@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`42.2`, `leap`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/531fb9d9ba9451e3392155b89a1316807c2ecea6/docker/Dockerfile)
--	[`42.1` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/68e9e1d05ef28d178c837d444329d322ba29461d/docker/Dockerfile)
+-	[`42.2`, `leap`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/a6f0327966cc93e5bf6dc371a705cda2e5b92801/docker/Dockerfile)
+-	[`42.1` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/8f95c58a0e15c0940cf984d48db9a3fa8ad2d208/docker/Dockerfile)
 -	[`13.2`, `harlequin` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/81aea7039301342026ed4b2ce5644f4fa838a87a/docker/Dockerfile)
--	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/0b12677a3e3815a0d27da19ac2c2421278c45cbe/docker/Dockerfile)
+-	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/261a13c0c2f73e92bde8e9196e74aef72c0f54bb/docker/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/opensuse` directory](https://github.com/docker-library/repo-info/blob/master/repos/opensuse) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
