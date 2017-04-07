@@ -25,6 +25,9 @@ WARNING:
 -	[`4.7.3-php7.1-apache`, `4.7-php7.1-apache`, `4-php7.1-apache`, `php7.1-apache`, `4.7.3-php7.1`, `4.7-php7.1`, `4-php7.1`, `php7.1` (*php7.1/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/3a1ca61731e6070764d5b7235e3b6617798b8af8/php7.1/apache/Dockerfile)
 -	[`4.7.3-php7.1-fpm`, `4.7-php7.1-fpm`, `4-php7.1-fpm`, `php7.1-fpm` (*php7.1/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/3a1ca61731e6070764d5b7235e3b6617798b8af8/php7.1/fpm/Dockerfile)
 -	[`4.7.3-php7.1-fpm-alpine`, `4.7-php7.1-fpm-alpine`, `4-php7.1-fpm-alpine`, `php7.1-fpm-alpine` (*php7.1/fpm-alpine/Dockerfile*)](https://github.com/docker-library/wordpress/blob/3a1ca61731e6070764d5b7235e3b6617798b8af8/php7.1/fpm-alpine/Dockerfile)
+-	[`cli-1.1.0`, `cli-1.1`, `cli-1`, `cli`, `cli-1.1.0-php5.6`, `cli-1.1-php5.6`, `cli-1-php5.6`, `cli-php5.6` (*php5.6/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/0bd17ea187310d703d84feb5f412955d038e12fe/php5.6/cli/Dockerfile)
+-	[`cli-1.1.0-php7.0`, `cli-1.1-php7.0`, `cli-1-php7.0`, `cli-php7.0` (*php7.0/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/0bd17ea187310d703d84feb5f412955d038e12fe/php7.0/cli/Dockerfile)
+-	[`cli-1.1.0-php7.1`, `cli-1.1-php7.1`, `cli-1-php7.1`, `cli-php7.1` (*php7.1/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/0bd17ea187310d703d84feb5f412955d038e12fe/php7.1/cli/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/wordpress` directory](https://github.com/docker-library/repo-info/blob/master/repos/wordpress) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
