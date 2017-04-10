@@ -16,16 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.9-jdk-7`, `3.3-jdk-7`, `3-jdk-7` (*jdk-7/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/33eeccbb0ce15440f5ccebcd87040c6be2bf9e91/jdk-7/Dockerfile)
--	[`3.3.9-jdk-7-onbuild`, `3.3-jdk-7-onbuild`, `3-jdk-7-onbuild` (*jdk-7/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/33eeccbb0ce15440f5ccebcd87040c6be2bf9e91/jdk-7/onbuild/Dockerfile)
--	[`3.3.9-jdk-7-alpine`, `3.3-jdk-7-alpine`, `3-jdk-7-alpine` (*jdk-7/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/322d0dff5d0531ccaf47bf49338cb3e294fd66c8/jdk-7/Dockerfile)
--	[`3.3.9-jdk-7-onbuild-alpine`, `3.3-jdk-7-onbuild-alpine`, `3-jdk-7-onbuild-alpine` (*jdk-7/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/322d0dff5d0531ccaf47bf49338cb3e294fd66c8/jdk-7/onbuild/Dockerfile)
--	[`3.3.9-jdk-8`, `3.3.9`, `3.3-jdk-8`, `3.3`, `3-jdk-8`, `3`, `latest` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/33eeccbb0ce15440f5ccebcd87040c6be2bf9e91/jdk-8/Dockerfile)
--	[`3.3.9-jdk-8-onbuild`, `3.3.9-onbuild`, `3.3-jdk-8-onbuild`, `3.3-onbuild`, `3-jdk-8-onbuild`, `3-onbuild`, `onbuild` (*jdk-8/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/33eeccbb0ce15440f5ccebcd87040c6be2bf9e91/jdk-8/onbuild/Dockerfile)
--	[`3.3.9-jdk-8-alpine`, `3.3.9-alpine`, `3.3-jdk-8-alpine`, `3.3-alpine`, `3-jdk-8-alpine`, `3-alpine`, `alpine` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/322d0dff5d0531ccaf47bf49338cb3e294fd66c8/jdk-8/Dockerfile)
--	[`3.3.9-jdk-8-onbuild-alpine`, `3.3.9-onbuild-alpine`, `3.3-jdk-8-onbuild-alpine`, `3.3-onbuild-alpine`, `3-jdk-8-onbuild-alpine`, `3-onbuild-alpine`, `onbuild-alpine` (*jdk-8/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/322d0dff5d0531ccaf47bf49338cb3e294fd66c8/jdk-8/onbuild/Dockerfile)
--	[`3.3.9-jdk-9`, `3.3-jdk-9`, `3-jdk-9` (*jdk-9/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/33eeccbb0ce15440f5ccebcd87040c6be2bf9e91/jdk-9/Dockerfile)
--	[`3.3.9-jdk-9-onbuild`, `3.3-jdk-9-onbuild`, `3-jdk-9-onbuild` (*jdk-9/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/33eeccbb0ce15440f5ccebcd87040c6be2bf9e91/jdk-9/onbuild/Dockerfile)
+-	[`3.5.0-jdk-7`, `3.5-jdk-7`, `3-jdk-7` (*jdk-7/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/ecf54b9839caed8aa2bcf9b8f7bb19594634ee89/jdk-7/Dockerfile)
+-	[`3.5.0-jdk-7-onbuild`, `3.5-jdk-7-onbuild`, `3-jdk-7-onbuild` (*jdk-7/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/ecf54b9839caed8aa2bcf9b8f7bb19594634ee89/jdk-7/onbuild/Dockerfile)
+-	[`3.5.0-jdk-7-alpine`, `3.5-jdk-7-alpine`, `3-jdk-7-alpine` (*jdk-7/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/7e98522ee97c73c22da1b62329a0f20757bad5fb/jdk-7/Dockerfile)
+-	[`3.5.0-jdk-7-onbuild-alpine`, `3.5-jdk-7-onbuild-alpine`, `3-jdk-7-onbuild-alpine` (*jdk-7/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/7e98522ee97c73c22da1b62329a0f20757bad5fb/jdk-7/onbuild/Dockerfile)
+-	[`3.5.0-jdk-8`, `3.5.0`, `3.5-jdk-8`, `3.5`, `3-jdk-8`, `3`, `latest` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/ecf54b9839caed8aa2bcf9b8f7bb19594634ee89/jdk-8/Dockerfile)
+-	[`3.5.0-jdk-8-onbuild`, `3.5.0-onbuild`, `3.5-jdk-8-onbuild`, `3.5-onbuild`, `3-jdk-8-onbuild`, `3-onbuild`, `onbuild` (*jdk-8/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/ecf54b9839caed8aa2bcf9b8f7bb19594634ee89/jdk-8/onbuild/Dockerfile)
+-	[`3.5.0-jdk-8-alpine`, `3.5.0-alpine`, `3.5-jdk-8-alpine`, `3.5-alpine`, `3-jdk-8-alpine`, `3-alpine`, `alpine` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/7e98522ee97c73c22da1b62329a0f20757bad5fb/jdk-8/Dockerfile)
+-	[`3.5.0-jdk-8-onbuild-alpine`, `3.5.0-onbuild-alpine`, `3.5-jdk-8-onbuild-alpine`, `3.5-onbuild-alpine`, `3-jdk-8-onbuild-alpine`, `3-onbuild-alpine`, `onbuild-alpine` (*jdk-8/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/7e98522ee97c73c22da1b62329a0f20757bad5fb/jdk-8/onbuild/Dockerfile)
+-	[`3.5.0-jdk-9`, `3.5-jdk-9`, `3-jdk-9` (*jdk-9/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/ecf54b9839caed8aa2bcf9b8f7bb19594634ee89/jdk-9/Dockerfile)
+-	[`3.5.0-jdk-9-onbuild`, `3.5-jdk-9-onbuild`, `3-jdk-9-onbuild` (*jdk-9/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/ecf54b9839caed8aa2bcf9b8f7bb19594634ee89/jdk-9/onbuild/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/maven` directory](https://github.com/docker-library/repo-info/blob/master/repos/maven) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
