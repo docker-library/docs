@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.51-jre7`, `6.0-jre7`, `6-jre7`, `6.0.51`, `6.0`, `6` (*6/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/4b5335ec27aee302823bea2e30dcf7b3118e61f2/6/jre7/Dockerfile)
--	[`6.0.51-jre8`, `6.0-jre8`, `6-jre8` (*6/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/4b5335ec27aee302823bea2e30dcf7b3118e61f2/6/jre8/Dockerfile)
+-	[`6.0.53-jre7`, `6.0-jre7`, `6-jre7`, `6.0.53`, `6.0`, `6` (*6/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/78b5ae4bf558d626859cbb63b2837fd6980ca1f1/6/jre7/Dockerfile)
+-	[`6.0.53-jre8`, `6.0-jre8`, `6-jre8` (*6/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/78b5ae4bf558d626859cbb63b2837fd6980ca1f1/6/jre8/Dockerfile)
 -	[`7.0.77-jre7`, `7.0-jre7`, `7-jre7`, `7.0.77`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6f4b7544afb91088a666ef620e8ad5e989ed9abb/7/jre7/Dockerfile)
 -	[`7.0.77-jre7-alpine`, `7.0-jre7-alpine`, `7-jre7-alpine`, `7.0.77-alpine`, `7.0-alpine`, `7-alpine` (*7/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/7a16673434d629938f064b5aed86df44ee49b53a/7/jre7-alpine/Dockerfile)
 -	[`7.0.77-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/6f4b7544afb91088a666ef620e8ad5e989ed9abb/7/jre8/Dockerfile)

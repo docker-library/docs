@@ -16,7 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.3`, `3.0`, `3`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/136976a34f2d49ca8ebb2d8394728eed4d229e70/Dockerfile)
+-	[`3.0.3-apache`, `3.0-apache`, `3-apache`, `apache`, `3.0.3`, `3.0`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/b00cca0f4bce10167cda80c6ca640ffc771812df/apache/Dockerfile)
+-	[`3.0.3-fpm`, `3.0-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/b00cca0f4bce10167cda80c6ca640ffc771812df/fpm/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/piwik` directory](https://github.com/docker-library/repo-info/blob/master/repos/piwik) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 

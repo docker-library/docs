@@ -19,7 +19,7 @@ WARNING:
 -	[`8.0.0`, `8.0`, `8` (*8.0/Dockerfile*)](https://github.com/docker-library/mysql/blob/f42fa91856b557940a4ddd86d70cc2518cab818b/8.0/Dockerfile)
 -	[`5.7.17`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/f42fa91856b557940a4ddd86d70cc2518cab818b/5.7/Dockerfile)
 -	[`5.6.35`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/f42fa91856b557940a4ddd86d70cc2518cab818b/5.6/Dockerfile)
--	[`5.5.54`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/f42fa91856b557940a4ddd86d70cc2518cab818b/5.5/Dockerfile)
+-	[`5.5.55`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/2297b60ac72c157ad8e2435ff971e6a49bc47f47/5.5/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/mysql` directory](https://github.com/docker-library/repo-info/blob/master/repos/mysql) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
