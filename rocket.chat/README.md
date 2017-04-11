@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.55.0-rc.1`, `0.55.0-rc`, `0.55`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/b82656047fd1d91e4124c5626e970d86b6dfc36b/Dockerfile)
+-	[`0.54.2`, `0.54`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/a721d599218803d2acb27f92b11d2cdcf0a226d5/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/rocket.chat` directory](https://github.com/docker-library/repo-info/blob/master/repos/rocket.chat) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
