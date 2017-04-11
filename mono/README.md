@@ -48,8 +48,10 @@ WARNING:
 -	[`4.6.2.16-onbuild`, `4.6.2-onbuild`, `4.6-onbuild` (*4.6.2.16/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/e1b6667f66443a0b768d9681c68bbb1e2f898601/4.6.2.16/onbuild/Dockerfile)
 -	[`4.6.2.7` (*4.6.2.7/Dockerfile*)](https://github.com/mono/docker/blob/f370f5daa6344f6006f40e9cb638aef38faa67a0/4.6.2.7/Dockerfile)
 -	[`4.6.2.7-onbuild` (*4.6.2.7/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/a41b568af8e26dac60a11432b5bb1c910d44f44a/4.6.2.7/onbuild/Dockerfile)
--	[`4.8.0.495`, `4.8.0`, `4.8`, `4`, `latest` (*4.8.0.495/Dockerfile*)](https://github.com/mono/docker/blob/0dcec42351bdb86248361a5eff6cafbc99a538ce/4.8.0.495/Dockerfile)
--	[`4.8.0.495-onbuild`, `4.8.0-onbuild`, `4.8-onbuild`, `4-onbuild`, `onbuild` (*4.8.0.495/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/0dcec42351bdb86248361a5eff6cafbc99a538ce/4.8.0.495/onbuild/Dockerfile)
+-	[`4.8.0.495` (*4.8.0.495/Dockerfile*)](https://github.com/mono/docker/blob/0dcec42351bdb86248361a5eff6cafbc99a538ce/4.8.0.495/Dockerfile)
+-	[`4.8.0.495-onbuild` (*4.8.0.495/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/0dcec42351bdb86248361a5eff6cafbc99a538ce/4.8.0.495/onbuild/Dockerfile)
+-	[`4.8.0.524`, `4.8.0`, `4.8`, `4`, `latest` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/13dbbc26567ac279f344c5be0491a95ba16e9604/4.8.0.524/Dockerfile)
+-	[`4.8.0.524-onbuild`, `4.8.0-onbuild`, `4.8-onbuild`, `4-onbuild`, `onbuild` (*4.8.0.524/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/13dbbc26567ac279f344c5be0491a95ba16e9604/4.8.0.524/onbuild/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/mono` directory](https://github.com/docker-library/repo-info/blob/master/repos/mono) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
