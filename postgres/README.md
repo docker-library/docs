@@ -177,6 +177,39 @@ ENV LANG de_DE.utf8
 
 Since database initialization only happens on container startup, this allows us to set the language before it is created.
 
+## Example use of this image
+
+Dockerfile
+```
+FROM postgres:8.4.22
+MAINTAINER Leonard Seymore <leonardseymore@gmail.com>
+
+ENV POSTGRES_USERNAME postgres
+ENV POSTGRES_PASSWORD postgres
+ENV USERNAME mydb_username
+ENV PASSWORD mydb_password
+ENV DATABASE mydb_name
+ENV SCHEMA mydb_schema_name
+ENV PGPASSWORD $PASSWORD
+
+ADD scripts /docker-entrypoint-initdb.d
+```
+
+Example initialization script (init.sh) in scripts directory
+```
+#!/bin/bash
+
+echo "Running custom init script"
+
+gosu postgres postgres --single <<- EOSQL
+    create user $USERNAME with password '$PASSWORD' nocreateuser nocreatedb;
+    create database $DATABASE with owner=$USERNAME;
+    create schema $SCHEMA AUTHORIZATION $USERNAME;
+EOSQL
+
+echo "Custom init script complete."
+```
+
 # Caveats
 
 If there is no database when `postgres` starts in a container, then `postgres` will create the default database for you. While this is the expected behavior of `postgres`, this means that it will not accept incoming connections during that time. This may cause issues when using automation tools, such as `docker-compose`, that start several containers simultaneously.
