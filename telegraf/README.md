@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.1`, `1.1.2` (*telegraf/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/5c505409450ba443d94484844787958e22b8be81/telegraf/1.1/Dockerfile)
--	[`1.1-alpine`, `1.1.2-alpine` (*telegraf/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/5c505409450ba443d94484844787958e22b8be81/telegraf/1.1/alpine/Dockerfile)
--	[`1.2`, `1.2.1`, `latest` (*telegraf/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/5c505409450ba443d94484844787958e22b8be81/telegraf/1.2/Dockerfile)
--	[`1.2-alpine`, `1.2.1-alpine`, `alpine` (*telegraf/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/5c505409450ba443d94484844787958e22b8be81/telegraf/1.2/alpine/Dockerfile)
+-	[`1.1`, `1.1.2` (*telegraf/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d3babf9a87cb217d99aeabcea369c917b81121e1/telegraf/1.1/Dockerfile)
+-	[`1.1-alpine`, `1.1.2-alpine` (*telegraf/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d3babf9a87cb217d99aeabcea369c917b81121e1/telegraf/1.1/alpine/Dockerfile)
+-	[`1.2`, `1.2.1`, `latest` (*telegraf/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d3babf9a87cb217d99aeabcea369c917b81121e1/telegraf/1.2/Dockerfile)
+-	[`1.2-alpine`, `1.2.1-alpine`, `alpine` (*telegraf/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/d3babf9a87cb217d99aeabcea369c917b81121e1/telegraf/1.2/alpine/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/telegraf` directory](https://github.com/docker-library/repo-info/blob/master/repos/telegraf) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
