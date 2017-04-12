@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `4.6.1`, `enterprise-4.6.1` (*enterprise/couchbase-server/4.6.1/Dockerfile*)](https://github.com/couchbase/docker/blob/0bdfd0897553eb448ac21d662065581f4b879199/enterprise/couchbase-server/4.6.1/Dockerfile)
--	[`community`, `community-4.5.0` (*community/couchbase-server/4.5.0/Dockerfile*)](https://github.com/couchbase/docker/blob/0bdfd0897553eb448ac21d662065581f4b879199/community/couchbase-server/4.5.0/Dockerfile)
--	[`3.1.6`, `enterprise-3.1.6` (*enterprise/couchbase-server/3.1.6/Dockerfile*)](https://github.com/couchbase/docker/blob/0bdfd0897553eb448ac21d662065581f4b879199/enterprise/couchbase-server/3.1.6/Dockerfile)
--	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/0bdfd0897553eb448ac21d662065581f4b879199/community/couchbase-server/3.1.3/Dockerfile)
+-	[`latest`, `enterprise`, `4.6.1`, `enterprise-4.6.1` (*enterprise/couchbase-server/4.6.1/Dockerfile*)](https://github.com/couchbase/docker/blob/22c40f12ed18132cef4c2e819f7b222b66324129/enterprise/couchbase-server/4.6.1/Dockerfile)
+-	[`community`, `community-4.5.1` (*community/couchbase-server/4.5.1/Dockerfile*)](https://github.com/couchbase/docker/blob/22c40f12ed18132cef4c2e819f7b222b66324129/community/couchbase-server/4.5.1/Dockerfile)
+-	[`3.1.6`, `enterprise-3.1.6` (*enterprise/couchbase-server/3.1.6/Dockerfile*)](https://github.com/couchbase/docker/blob/22c40f12ed18132cef4c2e819f7b222b66324129/enterprise/couchbase-server/3.1.6/Dockerfile)
+-	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/22c40f12ed18132cef4c2e819f7b222b66324129/community/couchbase-server/3.1.3/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/couchbase` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchbase) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
