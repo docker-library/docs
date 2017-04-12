@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20170214`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/precise/Dockerfile)
--	[`14.04.5`, `14.04`, `trusty-20170214`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/trusty/Dockerfile)
--	[`16.04`, `xenial-20170214`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/xenial/Dockerfile)
--	[`16.10`, `yakkety-20170224`, `yakkety`, `rolling` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/yakkety/Dockerfile)
--	[`17.04`, `zesty-20170224`, `zesty`, `devel` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/1a5cb40f41ac4829d8c301ccd2cf3b7a13687a8b/zesty/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise-20170331`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/94a6b954435615aba4beffaf62f14699083eafca/precise/Dockerfile)
+-	[`14.04.5`, `14.04`, `trusty-20170330`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/94a6b954435615aba4beffaf62f14699083eafca/trusty/Dockerfile)
+-	[`16.04`, `xenial-20170410`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/94a6b954435615aba4beffaf62f14699083eafca/xenial/Dockerfile)
+-	[`16.10`, `yakkety-20170327`, `yakkety`, `rolling` (*yakkety/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/94a6b954435615aba4beffaf62f14699083eafca/yakkety/Dockerfile)
+-	[`17.04`, `zesty-20170411`, `zesty`, `devel` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/94a6b954435615aba4beffaf62f14699083eafca/zesty/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/ubuntu` directory](https://github.com/docker-library/repo-info/blob/master/repos/ubuntu) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
