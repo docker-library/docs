@@ -18,7 +18,7 @@ WARNING:
 
 -	[`10.1.22`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/21eed39fdd34c84ecd83cc077ad3253cfa875c5c/10.1/Dockerfile)
 -	[`10.0.30`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/21eed39fdd34c84ecd83cc077ad3253cfa875c5c/10.0/Dockerfile)
--	[`5.5.54`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/21eed39fdd34c84ecd83cc077ad3253cfa875c5c/5.5/Dockerfile)
+-	[`5.5.55`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/2741b77629c3526aa20b709a53892ca9287e0859/5.5/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/mariadb` directory](https://github.com/docker-library/repo-info/blob/master/repos/mariadb) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
