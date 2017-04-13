@@ -19,7 +19,7 @@ WARNING:
 -	[`5.5`, `8.5-php5.5` (*8.5/5.5/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/8.5/5.5/Dockerfile)
 -	[`5.6`, `8.5-php5.6`, `8.5` (*8.5/5.6/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/8.5/5.6/Dockerfile)
 -	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/7.0/5.4/Dockerfile)
--	[`9.0.1`, `9.0.1-php7`, `latest` (*9.0.1/7.0/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/851cbb2346939e98bb0a8a15cd9973fd950fd66b/9.0.1/7.0/Dockerfile)
+-	[`9.1`, `latest` (*9.1/7.1/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/3b21f7ade08cee1b72b623bc516ae756393bdcb3/9.1/7.1/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/php-zendserver` directory](https://github.com/docker-library/repo-info/blob/master/repos/php-zendserver) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
