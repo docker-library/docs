@@ -21,7 +21,7 @@ WARNING:
 -	[`webProfile6` (*ga/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/d4bbe6c7382cecde5d1993a266cc1bc3df6d29d9/ga/developer/webProfile6/Dockerfile)
 -	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/d4bbe6c7382cecde5d1993a266cc1bc3df6d29d9/ga/developer/webProfile7/Dockerfile)
 -	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/d4bbe6c7382cecde5d1993a266cc1bc3df6d29d9/ga/developer/javaee7/Dockerfile)
--	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/d4bbe6c7382cecde5d1993a266cc1bc3df6d29d9/beta/Dockerfile)
+-	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/88318f6a21a3d9528cb416f61761579112c72b0f/beta/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/websphere-liberty` directory](https://github.com/docker-library/repo-info/blob/master/repos/websphere-liberty) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
