@@ -123,9 +123,13 @@ When you start the `cassandra` image, you can adjust the configuration of the Ca
 
 This variable is for controlling which IP address to listen for incoming connections on. The default value is `auto`, which will set the [`listen_address`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__listen_address) option in `cassandra.yaml` to the IP address of the container as it starts. This default should work in most use cases.
 
+If running in this container in [Rancher](rancher.com) then setting a value of `rancher`, will retrieve the `private_ip` value from Rancher's [metadata service](http://docs.rancher.com/rancher/metadata-service/).
+
 ### `CASSANDRA_BROADCAST_ADDRESS`
 
 This variable is for controlling which IP address to advertise to other nodes. The default value is the value of `CASSANDRA_LISTEN_ADDRESS`. It will set the [`broadcast_address`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__broadcast_address) and [`broadcast_rpc_address`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__broadcast_rpc_address) options in `cassandra.yaml`.
+
+If running in this container in [Rancher](rancher.com) then setting a value of `rancher`, will retrieve the `private_ip` value from Rancher's [metadata service](http://docs.rancher.com/rancher/metadata-service/).
 
 ### `CASSANDRA_RPC_ADDRESS`
 
