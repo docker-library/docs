@@ -127,11 +127,13 @@ This variable is mandatory and specifies the password that will be set for the M
 
 ### `MYSQL_DATABASE`
 
-This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](http://dev.mysql.com/doc/en/adding-users.html)) to this database.
+This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](http://dev.mysql.com/doc/en/adding-users.html)) to this database. To create more than one database use MYSQL_DATABASE1, MYSQL_DATABASE2 and so on.
 
 ### `MYSQL_USER`, `MYSQL_PASSWORD`
 
 These variables are optional, used in conjunction to create a new user and to set that user's password. This user will be granted superuser permissions (see above) for the database specified by the `MYSQL_DATABASE` variable. Both variables are required for a user to be created.
+
+If you create more than one database (see above) the user supplied as MYSQL_USER will be granted access to all databases. If you need separate users with access to only one database specify them as eg. MYSQL_USER1 and MYSQL_PASSWORD1 where the number matches the appropriate database.
 
 Do note that there is no need to use this mechanism to create the root superuser, that user gets created by default with the password specified by the `MYSQL_ROOT_PASSWORD` variable.
 
