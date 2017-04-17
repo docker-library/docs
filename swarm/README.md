@@ -42,7 +42,7 @@ $ docker run --rm swarm create
 # on each of your nodes, start the swarm agent
 #  <node_ip> doesn't have to be public (eg. 192.168.0.X),
 #  as long as the swarm manager can access it.
-$ docker run -d swarm join --addr=<node_ip:2375> token://<cluster_id>
+$ docker run -d swarm join --advertise=<node_ip:2375> token://<cluster_id>
 
 # start the manager on any machine or your laptop
 $ docker run -t -p <swarm_port>:2375 -t swarm manage token://<cluster_id>
