@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.8.0` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/12887eb9e0333e49909985b3523ff69c61099e70/0.X/Dockerfile)
+-	[`latest`, `0.8.1` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/ab9d553087fffb25ebabb41c38e5cea3deef1019/0.X/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/consul` directory](https://github.com/docker-library/repo-info/blob/master/repos/consul) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
