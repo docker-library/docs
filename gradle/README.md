@@ -16,16 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.1-jdk7`, `3.4-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jdk7/Dockerfile)
--	[`3.4.1-jre7`, `3.4-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jre7/Dockerfile)
--	[`3.4.1-jdk7-alpine`, `3.4-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jdk7-alpine/Dockerfile)
--	[`3.4.1-jre7-alpine`, `3.4-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jre7-alpine/Dockerfile)
--	[`3.4.1-jdk8`, `3.4-jdk8`, `jdk8`, `3.4.1-jdk`, `3.4-jdk`, `jdk`, `3.4.1`, `3.4`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jdk8/Dockerfile)
--	[`3.4.1-jre8`, `3.4-jre8`, `jre8`, `3.4.1-jre`, `3.4-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jre8/Dockerfile)
--	[`3.4.1-jdk8-alpine`, `3.4-jdk8-alpine`, `jdk8-alpine`, `3.4.1-jdk-alpine`, `3.4-jdk-alpine`, `jdk-alpine`, `3.4.1-alpine`, `3.4-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jdk8-alpine/Dockerfile)
--	[`3.4.1-jre8-alpine`, `3.4-jre8-alpine`, `jre8-alpine`, `3.4.1-jre-alpine`, `3.4-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jre8-alpine/Dockerfile)
--	[`3.4.1-jdk9`, `3.4-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jdk9/Dockerfile)
--	[`3.4.1-jre9`, `3.4-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jre9/Dockerfile)
+-	[`3.5-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/fac6450faeec2232e1ed15051a751236e40ffda2/jdk7/Dockerfile)
+-	[`3.5-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/fac6450faeec2232e1ed15051a751236e40ffda2/jre7/Dockerfile)
+-	[`3.5-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/fac6450faeec2232e1ed15051a751236e40ffda2/jdk7-alpine/Dockerfile)
+-	[`3.5-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/fac6450faeec2232e1ed15051a751236e40ffda2/jre7-alpine/Dockerfile)
+-	[`3.5-jdk8`, `jdk8`, `3.5-jdk`, `jdk`, `3.5`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/fac6450faeec2232e1ed15051a751236e40ffda2/jdk8/Dockerfile)
+-	[`3.5-jre8`, `jre8`, `3.5-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/fac6450faeec2232e1ed15051a751236e40ffda2/jre8/Dockerfile)
+-	[`3.5-jdk8-alpine`, `jdk8-alpine`, `3.5-jdk-alpine`, `jdk-alpine`, `3.5-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/fac6450faeec2232e1ed15051a751236e40ffda2/jdk8-alpine/Dockerfile)
+-	[`3.5-jre8-alpine`, `jre8-alpine`, `3.5-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/fac6450faeec2232e1ed15051a751236e40ffda2/jre8-alpine/Dockerfile)
+-	[`3.5-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/fac6450faeec2232e1ed15051a751236e40ffda2/jdk9/Dockerfile)
+-	[`3.5-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/fac6450faeec2232e1ed15051a751236e40ffda2/jre9/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/gradle` directory](https://github.com/docker-library/repo-info/blob/master/repos/gradle) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
