@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.3.0-standalone`, `4.3-standalone`, `4-standalone`, `standalone`, `4.3.0`, `4.3`, `4`, `latest` (*4.3/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/583a3425bf560b744f0ac16be398b2b589474c8b/4.3/Dockerfile)
--	[`4.3.0-fastcgi`, `4.3-fastcgi`, `4-fastcgi`, `fastcgi` (*4.3/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/a07553cc164c5fd9533cda44568a58dfad0fa864/4.3/fastcgi/Dockerfile)
+-	[`4.3.1-standalone`, `4.3-standalone`, `4-standalone`, `standalone`, `4.3.1`, `4.3`, `4`, `latest` (*4.3/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/e1aaa5a4a298198d739d794d239f97edcae0c1b8/4.3/Dockerfile)
+-	[`4.3.1-fastcgi`, `4.3-fastcgi`, `4-fastcgi`, `fastcgi` (*4.3/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/e1aaa5a4a298198d739d794d239f97edcae0c1b8/4.3/fastcgi/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/adminer` directory](https://github.com/docker-library/repo-info/blob/master/repos/adminer) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
