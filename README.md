@@ -85,7 +85,7 @@ This is the short description for the docker hub, limited to 100 characters in a
 
 ## `<image name>/logo.png`
 
-Logo for the contained software. While there are not hard rules on formatting, most existing logos are square or landscape and stay within a few hundred pixels of width.
+Logo for the contained software, which should be sized to 256x256 pixels.
 
 ## `<image name>/license.md`
 
