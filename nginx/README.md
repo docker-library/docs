@@ -18,8 +18,10 @@ WARNING:
 
 -	[`1.11.13`, `mainline`, `1`, `1.11`, `latest` (*mainline/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/0c7611139f2ce7c5a6b1febbfd5b436c8c7d2d53/mainline/jessie/Dockerfile)
 -	[`1.11.13-alpine`, `mainline-alpine`, `1-alpine`, `1.11-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/0c7611139f2ce7c5a6b1febbfd5b436c8c7d2d53/mainline/alpine/Dockerfile)
--	[`1.10.3`, `stable`, `1.10` (*stable/jessie/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/014e624239987a0a46bee5b44088a8c5150bf0bb/stable/jessie/Dockerfile)
--	[`1.10.3-alpine`, `stable-alpine`, `1.10-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/014e624239987a0a46bee5b44088a8c5150bf0bb/stable/alpine/Dockerfile)
+-	[`1.12.0`, `stable`, `1.12` (*stable/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/4d1f7f8ec281117d1d79bed4c6bc28b86039ca84/stable/stretch/Dockerfile)
+-	[`1.12.0-perl`, `stable-perl`, `1.12-perl` (*stable/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/4d1f7f8ec281117d1d79bed4c6bc28b86039ca84/stable/stretch-perl/Dockerfile)
+-	[`1.12.0-alpine`, `stable-alpine`, `1.12-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/4d1f7f8ec281117d1d79bed4c6bc28b86039ca84/stable/alpine/Dockerfile)
+-	[`1.12.0-alpine-perl`, `stable-alpine-perl`, `1.12-alpine-perl` (*stable/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/4d1f7f8ec281117d1d79bed4c6bc28b86039ca84/stable/alpine-perl/Dockerfile)
 
 For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/nginx` directory](https://github.com/docker-library/repo-info/blob/master/repos/nginx) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
