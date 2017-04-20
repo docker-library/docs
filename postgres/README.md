@@ -79,6 +79,10 @@ postgres=# SELECT 1;
 
 The PostgreSQL image uses several environment variables which are easy to miss. While none of the variables are required, they may significantly aid you in using the image.
 
+### `POSTGRES_DB`
+
+This environment variable can be used to create an new database inside the PostgreSQL container.
+
 ### `POSTGRES_PASSWORD`
 
 This environment variable is recommended for you to use the PostgreSQL image. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the `POSTGRES_USER` environment variable. In the above example, it is being set to "mysecretpassword".
