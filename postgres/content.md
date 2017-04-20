@@ -56,6 +56,10 @@ Note: The PostgreSQL image sets up `trust` authentication locally so you may not
 
 This optional environment variable is used in conjunction with `POSTGRES_PASSWORD` to set a user and its password. This variable will create the specified user with superuser power and a database with the same name. If it is not specified, then the default user of `postgres` will be used.
 
+### `POSTGRES_DB`
+
+This optional environment variable can be used to choose the name of your initial database. The PostgreSQL container will automatically create a database using the name provided in this variable.
+
 ### `PGDATA`
 
 This optional environment variable can be used to define another location - like a subdirectory - for the database files. The default is `/var/lib/postgresql/data`, but if the data volume you're using is a fs mountpoint (like with GCE persistent disks), Postgres `initdb` recommends a subdirectory (for example `/var/lib/postgresql/data/pgdata` ) be created to contain the data.
