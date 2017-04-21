@@ -6,6 +6,9 @@ Drupal is a free and open-source content-management framework written in PHP and
 
 %%LOGO%%
 
+# Who maintains this
+This image is not maintained by the Drupal community or the Drupal security team.  This issue is maintained by the docker community. 
+
 # How to use this image
 
 The basic pattern for starting a `%%REPO%%` instance is:
