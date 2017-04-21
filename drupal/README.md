@@ -35,6 +35,10 @@ Drupal is a free and open-source content-management framework written in PHP and
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/a0f37ddfd711f858bb968d6c85715f5bc1f7393f/drupal/logo.png)
 
+# Who maintains this
+
+This image is not maintained by the Drupal community or the Drupal Security Team. This image is maintained by the docker community.
+
 # How to use this image
 
 The basic pattern for starting a `drupal` instance is:
