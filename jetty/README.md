@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.4.3`, `9.4`, `9`, `9.4.3-jre8`, `9.4-jre8`, `9-jre8`, `latest`, `jre8` (*9.4-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/f58bb68ef8ab2faacc87cc3a067a8aeb40018b03/9.4-jre8/Dockerfile)
--	[`9.4.3-alpine`, `9.4-alpine`, `9-alpine`, `9.4.3-jre8-alpine`, `9.4-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.4-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/f58bb68ef8ab2faacc87cc3a067a8aeb40018b03/9.4-jre8/alpine/Dockerfile)
+-	[`9.4.4`, `9.4`, `9`, `9.4.4-jre8`, `9.4-jre8`, `9-jre8`, `latest`, `jre8` (*9.4-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/0e622bf5794bfe90e16441e27ea33bb5368012a2/9.4-jre8/Dockerfile)
+-	[`9.4.4-alpine`, `9.4-alpine`, `9-alpine`, `9.4.4-jre8-alpine`, `9.4-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.4-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/0e622bf5794bfe90e16441e27ea33bb5368012a2/9.4-jre8/alpine/Dockerfile)
 -	[`9.3.18`, `9.3`, `9.3.18-jre8`, `9.3-jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/82e55dfbd8fe709bd66eb6ef7b45af040f4e29f1/9.3-jre8/Dockerfile)
 -	[`9.3.18-alpine`, `9.3-alpine`, `9.3.18-jre8-alpine`, `9.3-jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/82e55dfbd8fe709bd66eb6ef7b45af040f4e29f1/9.3-jre8/alpine/Dockerfile)
 -	[`9.2.21`, `9.2`, `9.2.21-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/1012ed9083262dfbbc7fb1505f3d014663ddac62/9.2-jre8/Dockerfile)
