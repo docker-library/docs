@@ -21,9 +21,30 @@ WARNING:
 -	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/7.0/5.4/Dockerfile)
 -	[`9.1`, `latest` (*9.1/7.1/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/3b21f7ade08cee1b72b623bc516ae756393bdcb3/9.1/7.1/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/php-zendserver` directory](https://github.com/docker-library/repo-info/blob/master/repos/php-zendserver) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/php-zendserver`)](https://github.com/docker-library/official-images/blob/master/library/php-zendserver). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp-zendserver).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[Zend Support Center](https://www.zend.com/en/support-center)
+
+-	**Maintained by**:  
+	[Zend Technologies](https://github.com/zendtech/php-zendserver-docker)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/php-zendserver/` directory](https://github.com/docker-library/repo-info/blob/master/repos/php-zendserver) ([history](https://github.com/docker-library/repo-info/commits/master/repos/php-zendserver))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/php-zendserver`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp-zendserver)  
+	[official-images repo's `library/php-zendserver` file](https://github.com/docker-library/official-images/blob/master/library/php-zendserver) ([history](https://github.com/docker-library/official-images/commits/master/library/php-zendserver))
+
+-	**Source of this description**:  
+	[docs repo's `php-zendserver/` directory](https://github.com/docker-library/docs/tree/master/php-zendserver) ([history](https://github.com/docker-library/docs/commits/master/php-zendserver))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Zend Server?
 
@@ -163,15 +184,3 @@ Each Zend Server Docker container requires 1GB of availible memory.
 # License
 
 [Zend Technologies Ltd.](https://www.zend.com/topics/License-EULA-2010-09-2.pdf)
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-Think we’ve missed something? Let us know at: http://www.zend.com/en/support-center

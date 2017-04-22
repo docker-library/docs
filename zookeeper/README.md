@@ -19,9 +19,30 @@ WARNING:
 -	[`3.3.6`, `3.3` (*3.3.6/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/7e7eac6d6c11428849ec13bb7d240e4cfa21b2e7/3.3.6/Dockerfile)
 -	[`3.4.10`, `3.4`, `latest` (*3.4.10/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/f12428ab7c6ea263ef037cf258129b83276c009c/3.4.10/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/zookeeper` directory](https://github.com/docker-library/repo-info/blob/master/repos/zookeeper) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/zookeeper`)](https://github.com/docker-library/official-images/blob/master/library/zookeeper). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fzookeeper).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/31z4/zookeeper-docker/issues](https://github.com/31z4/zookeeper-docker/issues)
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/31z4/zookeeper-docker)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/zookeeper/` directory](https://github.com/docker-library/repo-info/blob/master/repos/zookeeper) ([history](https://github.com/docker-library/repo-info/commits/master/repos/zookeeper))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/zookeeper`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fzookeeper)  
+	[official-images repo's `library/zookeeper` file](https://github.com/docker-library/official-images/blob/master/library/zookeeper) ([history](https://github.com/docker-library/official-images/commits/master/library/zookeeper))
+
+-	**Source of this description**:  
+	[docs repo's `zookeeper/` directory](https://github.com/docker-library/docs/tree/master/zookeeper) ([history](https://github.com/docker-library/docs/commits/master/zookeeper))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Apache Zookeeper?
 
@@ -139,29 +160,3 @@ This image is configured with volumes at `/data` and `/datalog` to hold the Zook
 # License
 
 View [license information](https://github.com/apache/zookeeper/blob/master/LICENSE.txt) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/31z4/zookeeper-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/31z4/zookeeper-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`zookeeper/` directory](https://github.com/docker-library/docs/tree/master/zookeeper) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

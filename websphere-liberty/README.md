@@ -23,9 +23,30 @@ WARNING:
 -	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/d4bbe6c7382cecde5d1993a266cc1bc3df6d29d9/ga/developer/javaee7/Dockerfile)
 -	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/88318f6a21a3d9528cb416f61761579112c72b0f/beta/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/websphere-liberty` directory](https://github.com/docker-library/repo-info/blob/master/repos/websphere-liberty) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwebsphere-liberty).
+-	**Where to get help**:  
+	[the WASdev community](https://developer.ibm.com/wasdev/help/)
+
+-	**Where to file issues**:  
+	[https://github.com/WASdev/ci.docker/issues](https://github.com/WASdev/ci.docker/issues)
+
+-	**Maintained by**:  
+	[the IBM WASdev Community](https://github.com/WASdev/ci.docker)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/websphere-liberty/` directory](https://github.com/docker-library/repo-info/blob/master/repos/websphere-liberty) ([history](https://github.com/docker-library/repo-info/commits/master/repos/websphere-liberty))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/websphere-liberty`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwebsphere-liberty)  
+	[official-images repo's `library/websphere-liberty` file](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty) ([history](https://github.com/docker-library/official-images/commits/master/library/websphere-liberty))
+
+-	**Source of this description**:  
+	[docs repo's `websphere-liberty/` directory](https://github.com/docker-library/docs/tree/master/websphere-liberty) ([history](https://github.com/docker-library/docs/commits/master/websphere-liberty))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Overview
 
@@ -170,15 +191,3 @@ Licenses for the products installed within the images are as follows:
 -	[IBM WebSphere Application Server Liberty Beta](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/beta/lafiles/en.html) in the `beta` image (International License Agreement for Early Release of Programs)
 
 Note: These licenses do not permit further distribution and that the terms for WebSphere Application Server in the non-beta images restrict usage to a developer machine or build server only, or subject to a maximum 2 gigabyte heap usage across all instances. Instructions are available to enable entitled customers to [upgrade](https://github.com/WASdev/ci.docker/tree/master/ga/production-upgrade) the Docker Hub image for production use or [build](https://github.com/WASdev/ci.docker/tree/master/ga/production-install) their own production licensed image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-For issues relating specifically to this Docker image, please use the [GitHub issue tracker](https://github.com/WASdev/ci.docker/issues). For more general issues relating to IBM WebSphere Application Server Liberty you can [get help](https://developer.ibm.com/wasdev/help/) through the WASdev community. We welcome contributions following [our guidelines](https://github.com/WASdev/wasdev.github.io/blob/master/CONTRIBUTING.md).

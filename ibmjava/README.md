@@ -23,9 +23,30 @@ WARNING:
 -	[`8-sdk`, `sdk` (*ibmjava/8/sdk/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/aec80710a876930f5e008ad254959ce2c464285c/ibmjava/8/sdk/x86_64/ubuntu/Dockerfile)
 -	[`9-ea2-sdk`, `9-sdk`, `9` (*ibmjava/9-sdk/x86_64/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/24047d83b092b95ba6a1865c51a6fb2367f9abc6/ibmjava/9-sdk/x86_64/ubuntu/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/ibmjava` directory](https://github.com/docker-library/repo-info/blob/master/repos/ibmjava) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ibmjava`)](https://github.com/docker-library/official-images/blob/master/library/ibmjava). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fibmjava).
+-	**Where to get help**:  
+	[the developerWorks forum for IBM Java Runtimes and SDKs](https://www.ibm.com/developerworks/community/forums/html/forum?id=11111111-0000-0000-0000-000000000367)
+
+-	**Where to file issues**:  
+	[GitHub](https://github.com/ibmruntimes/ci.docker/issues); for troubleshooting, see our [How Do I ...?](http://www.ibm.com/developerworks/java/jdk/howdoi/) page
+
+-	**Maintained by**:  
+	[IBM Runtime Technologies](https://github.com/ibmruntimes/ci.docker)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/ibmjava/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ibmjava) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ibmjava))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/ibmjava`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fibmjava)  
+	[official-images repo's `library/ibmjava` file](https://github.com/docker-library/official-images/blob/master/library/ibmjava) ([history](https://github.com/docker-library/official-images/commits/master/library/ibmjava))
+
+-	**Source of this description**:  
+	[docs repo's `ibmjava/` directory](https://github.com/docker-library/docs/tree/master/ibmjava) ([history](https://github.com/docker-library/docs/commits/master/ibmjava))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 ### Overview
 
@@ -152,21 +173,3 @@ Licenses for the products installed within the images:
 
 -	IBM® SDK, Java™ Technology Edition Version 8: [International License Agreement for Non-Warranted Programs](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&li_formnum=L-PMAA-A3Z8P2&title=IBM® SDK, Java™ Technology Edition Docker Image, Version 8.0&l=en).
 -	IBM® SDK, Java™ Technology Edition Version 9 Early Access: [International License Agreement for Non-Warranted Programs](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&li_formnum=L-JWOD-AFSFP8&title=IBM® SDK, Java™ Technology Edition Version 9.0 Early Access&l=en).
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-#### Issues
-
-For issues relating specifically to this Docker image, please use the [GitHub issue tracker](https://github.com/ibmruntimes/ci.docker/issues).
-
-For more general issues relating to IBM® SDK, Java™ Technology Edition you can ask questions in the developerWorks forum: [IBM Java Runtimes and SDKs](https://www.ibm.com/developerworks/community/forums/html/forum?id=11111111-0000-0000-0000-000000000367).
-
-For general information on Troubleshooting with the SDK, please do take a look at our [How Do I ...?](http://www.ibm.com/developerworks/java/jdk/howdoi/) page.

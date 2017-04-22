@@ -29,9 +29,30 @@ WARNING:
 -	[`cli-1.1.0-php7.0`, `cli-1.1-php7.0`, `cli-1-php7.0`, `cli-php7.0` (*php7.0/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/0bd17ea187310d703d84feb5f412955d038e12fe/php7.0/cli/Dockerfile)
 -	[`cli-1.1.0-php7.1`, `cli-1.1-php7.1`, `cli-1-php7.1`, `cli-php7.1` (*php7.1/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/0bd17ea187310d703d84feb5f412955d038e12fe/php7.1/cli/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/wordpress` directory](https://github.com/docker-library/repo-info/blob/master/repos/wordpress) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/wordpress/issues](https://github.com/docker-library/wordpress/issues)
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/wordpress)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/wordpress/` directory](https://github.com/docker-library/repo-info/blob/master/repos/wordpress) ([history](https://github.com/docker-library/repo-info/commits/master/repos/wordpress))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/wordpress`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress)  
+	[official-images repo's `library/wordpress` file](https://github.com/docker-library/official-images/blob/master/library/wordpress) ([history](https://github.com/docker-library/official-images/commits/master/library/wordpress))
+
+-	**Source of this description**:  
+	[docs repo's `wordpress/` directory](https://github.com/docker-library/docs/tree/master/wordpress) ([history](https://github.com/docker-library/docs/commits/master/wordpress))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is WordPress?
 
@@ -107,29 +128,3 @@ The following Docker Hub features can help with the task of keeping your depende
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
 -	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `wordpress` is updated.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/wordpress/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/wordpress/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`wordpress/` directory](https://github.com/docker-library/docs/tree/master/wordpress) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

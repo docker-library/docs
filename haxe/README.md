@@ -25,9 +25,30 @@ WARNING:
 -	[`3.4.2`, `3.4`, `latest` (*3.4/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/8e6c65a2d72c239e8ddaf5af9157bb146d71016d/3.4/Dockerfile)
 -	[`3.4.2-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/8e6c65a2d72c239e8ddaf5af9157bb146d71016d/3.4/onbuild/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/haxe` directory](https://github.com/docker-library/repo-info/blob/master/repos/haxe) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/haxe`)](https://github.com/docker-library/official-images/blob/master/library/haxe). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaxe).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/HaxeFoundation/docker-library-haxe/issues](https://github.com/HaxeFoundation/docker-library-haxe/issues)
+
+-	**Maintained by**:  
+	[the Haxe Foundation](https://github.com/HaxeFoundation/docker-library-haxe)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/haxe/` directory](https://github.com/docker-library/repo-info/blob/master/repos/haxe) ([history](https://github.com/docker-library/repo-info/commits/master/repos/haxe))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/haxe`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaxe)  
+	[official-images repo's `library/haxe` file](https://github.com/docker-library/official-images/blob/master/library/haxe) ([history](https://github.com/docker-library/official-images/commits/master/library/haxe))
+
+-	**Source of this description**:  
+	[docs repo's `haxe/` directory](https://github.com/docker-library/docs/tree/master/haxe) ([history](https://github.com/docker-library/docs/commits/master/haxe))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Haxe?
 
@@ -96,29 +117,3 @@ $ docker build -t my-haxe-app --build-arg BUILD_HXML=compile.hxml .
 # License
 
 View [license information](https://haxe.org/foundation/open-source.html) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/HaxeFoundation/docker-library-haxe/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/HaxeFoundation/docker-library-haxe/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`haxe/` directory](https://github.com/docker-library/docs/tree/master/haxe) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

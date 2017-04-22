@@ -67,9 +67,30 @@ WARNING:
 -	[`2.3.0` (*2.3.0/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/36ac547bcffcce2c7c0f249b340d062ba08e2598/2.3.0/community/Dockerfile)
 -	[`2.3.0-enterprise` (*2.3.0/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/36ac547bcffcce2c7c0f249b340d062ba08e2598/2.3.0/enterprise/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/neo4j` directory](https://github.com/docker-library/repo-info/blob/master/repos/neo4j) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/neo4j`)](https://github.com/docker-library/official-images/blob/master/library/neo4j). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneo4j).
+-	**Where to get help**:  
+	[Stack Overflow](http://stackoverflow.com/questions/tagged/neo4j)
+
+-	**Where to file issues**:  
+	[https://github.com/neo4j/docker-neo4j/issues](https://github.com/neo4j/docker-neo4j/issues)
+
+-	**Maintained by**:  
+	[Neo4j](https://github.com/neo4j/docker-neo4j)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/neo4j/` directory](https://github.com/docker-library/repo-info/blob/master/repos/neo4j) ([history](https://github.com/docker-library/repo-info/commits/master/repos/neo4j))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/neo4j`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneo4j)  
+	[official-images repo's `library/neo4j` file](https://github.com/docker-library/official-images/blob/master/library/neo4j) ([history](https://github.com/docker-library/official-images/commits/master/library/neo4j))
+
+-	**Source of this description**:  
+	[docs repo's `neo4j/` directory](https://github.com/docker-library/docs/tree/master/neo4j) ([history](https://github.com/docker-library/docs/commits/master/neo4j))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Neo4j?
 
@@ -112,23 +133,3 @@ docker run \
 # Documentation
 
 For more examples and complete documentation please go [here for 2.x](http://neo4j.com/developer/docker-23/) and [here for 3.x](http://neo4j.com/docs/operations-manual/current/deployment/single-instance/docker/).
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/neo4j/docker-neo4j/issues).
-
-For general Neo4j questions, please ask on [StackOverflow](http://stackoverflow.com/questions/tagged/neo4j).
-
-## Contributing
-
-We welcome pull requests on [GitHub](https://github.com/neo4j/docker-neo4j/pulls).

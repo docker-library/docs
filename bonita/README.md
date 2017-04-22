@@ -19,9 +19,30 @@ WARNING:
 -	[`7.3.3` (*7.3/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/19d78ec0f212891e97814b2db30891b9b280f7e5/7.3/Dockerfile)
 -	[`7.4.3`, `latest` (*7.4/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/5e4d4c6d86a90b2f7639215e4098097200a8751a/7.4/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/bonita` directory](https://github.com/docker-library/repo-info/blob/master/repos/bonita) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/bonita`)](https://github.com/docker-library/official-images/blob/master/library/bonita). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbonita).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/Bonitasoft-Community/docker_bonita/issues](https://github.com/Bonitasoft-Community/docker_bonita/issues)
+
+-	**Maintained by**:  
+	[Bonitasoft Community](https://github.com/Bonitasoft-Community/docker_bonita)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/bonita/` directory](https://github.com/docker-library/repo-info/blob/master/repos/bonita) ([history](https://github.com/docker-library/repo-info/commits/master/repos/bonita))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/bonita`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbonita)  
+	[official-images repo's `library/bonita` file](https://github.com/docker-library/official-images/blob/master/library/bonita) ([history](https://github.com/docker-library/official-images/commits/master/library/bonita))
+
+-	**Source of this description**:  
+	[docs repo's `bonita/` directory](https://github.com/docker-library/docs/tree/master/bonita) ([history](https://github.com/docker-library/docs/commits/master/bonita))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Bonita BPM?
 
@@ -391,29 +412,3 @@ Bonita BPM image includes two parts :
 -	Bonita BPM Engine under [LGPL v2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
 
 -	Bonita BPM Portal under [GPL v2.0](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/Bonitasoft-Community/docker_bonita/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/Bonitasoft-Community/docker_bonita/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`bonita/` directory](https://github.com/docker-library/docs/tree/master/bonita) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

@@ -19,9 +19,30 @@ WARNING:
 -	[`latest`, `1.6.1`, `1.6`, `1` (*1.6.1/Dockerfile*)](https://github.com/klaemo/docker-couchdb/blob/29ed69965ed616a9d0df9a6ffa081773d86c78bc/1.6.1/Dockerfile)
 -	[`1.6.1-couchperuser`, `1.6-couchperuser`, `1-couchperuser` (*1.6.1-couchperuser/Dockerfile*)](https://github.com/klaemo/docker-couchdb/blob/29ed69965ed616a9d0df9a6ffa081773d86c78bc/1.6.1-couchperuser/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/couchdb` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchdb) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/couchdb`)](https://github.com/docker-library/official-images/blob/master/library/couchdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchdb).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/klaemo/docker-couchdb/issues](https://github.com/klaemo/docker-couchdb/issues)
+
+-	**Maintained by**:  
+	[Apache CouchDB](https://github.com/klaemo/docker-couchdb)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/couchdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/couchdb))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/couchdb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchdb)  
+	[official-images repo's `library/couchdb` file](https://github.com/docker-library/official-images/blob/master/library/couchdb) ([history](https://github.com/docker-library/official-images/commits/master/library/couchdb))
+
+-	**Source of this description**:  
+	[docs repo's `couchdb/` directory](https://github.com/docker-library/docs/tree/master/couchdb) ([history](https://github.com/docker-library/docs/commits/master/couchdb))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Apache CouchDB?
 
@@ -133,29 +154,3 @@ This image uses Erlang `17.3` from Debian Jessie's repository. Debian's version 
 # License
 
 Apache CouchDB is licensed under the [Apache License](https://github.com/apache/couchdb/blob/master/LICENSE).
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/klaemo/docker-couchdb/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/klaemo/docker-couchdb/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`couchdb/` directory](https://github.com/docker-library/docs/tree/master/couchdb) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

@@ -18,9 +18,30 @@ WARNING:
 
 -	[`6.0-alpha2`, `latest` (*Dockerfile*)](https://github.com/Silverpeas/docker-silverpeas-prod/blob/77c7c86d82aeee270cf23ef1272cfd95767df3c4/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/silverpeas` directory](https://github.com/docker-library/repo-info/blob/master/repos/silverpeas) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/silverpeas`)](https://github.com/docker-library/official-images/blob/master/library/silverpeas). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsilverpeas).
+-	**Where to get help**:  
+	[the Silverpeas user mailing list](https://groups.google.com/forum/#!forum/silverpeas-users)
+
+-	**Where to file issues**:  
+	[https://github.com/Silverpeas/docker-silverpeas-prod/issues](https://github.com/Silverpeas/docker-silverpeas-prod/issues)
+
+-	**Maintained by**:  
+	[Silverpeas](https://github.com/Silverpeas/docker-silverpeas-prod)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/silverpeas/` directory](https://github.com/docker-library/repo-info/blob/master/repos/silverpeas) ([history](https://github.com/docker-library/repo-info/commits/master/repos/silverpeas))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/silverpeas`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsilverpeas)  
+	[official-images repo's `library/silverpeas` file](https://github.com/docker-library/official-images/blob/master/library/silverpeas) ([history](https://github.com/docker-library/official-images/commits/master/library/silverpeas))
+
+-	**Source of this description**:  
+	[docs repo's `silverpeas/` directory](https://github.com/docker-library/docs/tree/master/silverpeas) ([history](https://github.com/docker-library/docs/commits/master/silverpeas))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Silverpeas
 
@@ -212,31 +233,3 @@ Silverpeas uses FLOSS softwares. These are (in a non exhaustive list):
 -	Libraries under the MIT license like JQuery and Angular JS.
 -	Libraries and applications under the Apache 2.0 license like the Apache Commons libraries and the Image Magick tool.
 -	Libraries and applications under the GPL/LGPL license like SWFTools, FlexPaper Flash GPL, LibreOffice, OpenJDK.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/Silverpeas/docker-silverpeas-prod/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-For general questions about Silverpeas, see our [user mailing list](https://groups.google.com/forum/#!forum/silverpeas-users).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/Silverpeas/docker-silverpeas-prod/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`silverpeas/` directory](https://github.com/docker-library/docs/tree/master/silverpeas) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

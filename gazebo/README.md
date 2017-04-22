@@ -27,9 +27,30 @@ WARNING:
 -	[`gzserver8` (*gazebo/gazebo8/gzserver8/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo8/gzserver8/Dockerfile)
 -	[`libgazebo8`, `latest` (*gazebo/gazebo8/libgazebo8/Dockerfile*)](https://github.com/osrf/docker_images/blob/4bef0d70d4855205d86528899a6686c098fb7fc0/gazebo/gazebo8/libgazebo8/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/gazebo` directory](https://github.com/docker-library/repo-info/blob/master/repos/gazebo) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/gazebo`)](https://github.com/docker-library/official-images/blob/master/library/gazebo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgazebo).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/osrf/docker_images/issues](https://github.com/osrf/docker_images/issues)
+
+-	**Maintained by**:  
+	[the Open Source Robotics Foundation](https://github.com/osrf/docker_images)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/gazebo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/gazebo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/gazebo))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/gazebo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgazebo)  
+	[official-images repo's `library/gazebo` file](https://github.com/docker-library/official-images/blob/master/library/gazebo) ([history](https://github.com/docker-library/official-images/commits/master/library/gazebo))
+
+-	**Source of this description**:  
+	[docs repo's `gazebo/` directory](https://github.com/docker-library/docs/tree/master/gazebo) ([history](https://github.com/docker-library/docs/commits/master/gazebo))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is [Gazebo](http://www.gazebosim.org/)?
 
@@ -176,29 +197,3 @@ $ gazebo --verbose --play state.log
 # License
 
 Gazebo is open-source licensed under [Apache 2.0](http://opensource.org/licenses/Apache-2.0).
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/osrf/docker_images/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/osrf/docker_images/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`gazebo/` directory](https://github.com/docker-library/docs/tree/master/gazebo) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

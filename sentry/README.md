@@ -21,9 +21,30 @@ WARNING:
 -	[`8.15.0`, `8.15`, `8`, `latest` (*8.15/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/a40471912184a4a013d00e13ef1bdca581860bd3/8.15/Dockerfile)
 -	[`8.15.0-onbuild`, `8.15-onbuild`, `8-onbuild`, `onbuild` (*8.15/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/a40471912184a4a013d00e13ef1bdca581860bd3/8.15/onbuild/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/sentry` directory](https://github.com/docker-library/repo-info/blob/master/repos/sentry) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/getsentry/docker-sentry/issues](https://github.com/getsentry/docker-sentry/issues)
+
+-	**Maintained by**:  
+	[Sentry](https://github.com/getsentry/docker-sentry)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/sentry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sentry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sentry))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/sentry`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry)  
+	[official-images repo's `library/sentry` file](https://github.com/docker-library/official-images/blob/master/library/sentry) ([history](https://github.com/docker-library/official-images/commits/master/library/sentry))
+
+-	**Source of this description**:  
+	[docs repo's `sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) ([history](https://github.com/docker-library/docs/commits/master/sentry))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Sentry?
 
@@ -155,29 +176,3 @@ To create your custom `sentry:onbuild` package, simply do the following:
 # License
 
 View [license information](https://github.com/getsentry/sentry/blob/master/LICENSE) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

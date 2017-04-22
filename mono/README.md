@@ -53,9 +53,30 @@ WARNING:
 -	[`4.8.0.524`, `4.8.0`, `4.8`, `4`, `latest` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/13dbbc26567ac279f344c5be0491a95ba16e9604/4.8.0.524/Dockerfile)
 -	[`4.8.0.524-onbuild`, `4.8.0-onbuild`, `4.8-onbuild`, `4-onbuild`, `onbuild` (*4.8.0.524/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/13dbbc26567ac279f344c5be0491a95ba16e9604/4.8.0.524/onbuild/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/mono` directory](https://github.com/docker-library/repo-info/blob/master/repos/mono) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/mono/docker/issues](https://github.com/mono/docker/issues)
+
+-	**Maintained by**:  
+	[the Mono Project](https://github.com/mono/docker)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/mono/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mono) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mono))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/mono`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono)  
+	[official-images repo's `library/mono` file](https://github.com/docker-library/official-images/blob/master/library/mono) ([history](https://github.com/docker-library/official-images/commits/master/library/mono))
+
+-	**Source of this description**:  
+	[docs repo's `mono/` directory](https://github.com/docker-library/docs/tree/master/mono) ([history](https://github.com/docker-library/docs/commits/master/mono))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Mono
 
@@ -117,15 +138,3 @@ Once you've got a handle on how your project functions within Docker, you'll pro
 # License
 
 This Docker Image is licensed with the Expat License. See the [Mono Project licensing FAQ](http://www.mono-project.com/docs/faq/licensing/) for details on how Mono and associated libraries are licensed.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-Please report issues on the [GitHub project](https://github.com/mono/docker).

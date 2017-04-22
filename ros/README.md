@@ -29,9 +29,30 @@ WARNING:
 -	[`kinetic-robot` (*ros/kinetic/kinetic-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-robot/Dockerfile)
 -	[`kinetic-perception` (*ros/kinetic/kinetic-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-perception/Dockerfile)
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/ros` directory](https://github.com/docker-library/repo-info/blob/master/repos/ros) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fros).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/osrf/docker_images/issues](https://github.com/osrf/docker_images/issues)
+
+-	**Maintained by**:  
+	[the Open Source Robotics Foundation](https://github.com/osrf/docker_images)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/ros/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ros) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ros))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/ros`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fros)  
+	[official-images repo's `library/ros` file](https://github.com/docker-library/official-images/blob/master/library/ros) ([history](https://github.com/docker-library/official-images/commits/master/library/ros))
+
+-	**Source of this description**:  
+	[docs repo's `ros/` directory](https://github.com/docker-library/docs/tree/master/ros) ([history](https://github.com/docker-library/docs/commits/master/ros))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is [ROS](http://www.ros.org/)?
 
@@ -280,29 +301,3 @@ $ docker-compose rm
 The core of ROS is licensed under the standard three-clause BSD license. This is a very permissive open license that allows for reuse in commercial and closed source products. You can find more about the BSD license from the Opensource.org [BSD 3-Clause](http://opensource.org/licenses/BSD-3-Clause) page and Wikipedia's [BSD Licenses](http://en.wikipedia.org/wiki/BSD_licenses) entry.
 
 While the core parts of ROS are licensed under the BSD license, other licenses are commonly used in the community packages, such as the [Apache 2.0](http://opensource.org/licenses/Apache-2.0) license, the [GPL](http://opensource.org/licenses/gpl-license) license, the [MIT](http://opensource.org/licenses/MIT) license, and even proprietary licenses. Each package in the ROS ecosystem is required to specify a license, so that it is easy for you to quickly identify if a package will meet your licensing needs.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.04.0-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/osrf/docker_images/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/osrf/docker_images/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`ros/` directory](https://github.com/docker-library/docs/tree/master/ros) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
