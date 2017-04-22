@@ -7,6 +7,7 @@ exitCode=0
 for requiredFile in \
 	content.md \
 	github-repo \
+	maintainer.md \
 ; do
 	failed=''
 	for repo in */; do

@@ -20,8 +20,6 @@ replace_field() {
 	sed -ri "s/${extraSed}%%${field}%%${extraSed}/$sed_escaped_value/g" "$repo/README.md"
 }
 
-dockerLatest="$(curl -fsSL 'https://get.docker.com/latest')"
-
 for repo in "${repos[@]}"; do
 	if [ -x "$repo/update.sh" ]; then
 		( set -x; "$repo/update.sh" )
@@ -29,10 +27,10 @@ for repo in "${repos[@]}"; do
 	
 	if [ -e "$repo/content.md" ]; then
 		githubRepo="$(cat "$repo/github-repo")"
+		maintainer="$(cat "$repo/maintainer.md")"
 		
-		dockerVersions="$(cat "$repo/docker-versions.md" 2>/dev/null || cat "$helperDir/docker-versions.md")"
-		
-		userFeedback="$(cat "$repo/user-feedback.md" 2>/dev/null || cat "$helperDir/user-feedback.md")"
+		issues="$(cat "$repo/issues.md" 2>/dev/null || cat "$helperDir/issues.md")"
+		getHelp="$(cat "$repo/get-help.md" 2>/dev/null || cat "$helperDir/get-help.md")"
 		
 		license="$(cat "$repo/license.md" 2>/dev/null || true)"
 		if [ "$license" ]; then
@@ -78,7 +76,7 @@ for repo in "${repos[@]}"; do
 			cat "$helperDir/template.md"
 		} > "$repo/README.md"
 		
-		echo '  TAGS => generate-dockerfile-links-partial.sh'
+		echo '  TAGS => generate-dockerfile-links-partial.sh "'"$repo"'"'
 		partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"
 		[ "$partial" ]
 		replace_field "$repo" 'TAGS' "$partial"
@@ -99,17 +97,17 @@ for repo in "${repos[@]}"; do
 		echo '  COMPOSE-YML => '"$repo"'/docker-compose.yml'
 		replace_field "$repo" 'COMPOSE-YML' "$composeYml"
 		
-		echo '  DOCKER-VERSIONS => '"$repo"'/docker-versions.md'
-		replace_field "$repo" 'DOCKER-VERSIONS' "$dockerVersions"
-		
-		echo '  DOCKER-LATEST => "'"$dockerLatest"'"'
-		replace_field "$repo" 'DOCKER-LATEST' "$dockerLatest"
-		
 		echo '  LICENSE => '"$repo"'/license.md'
 		replace_field "$repo" 'LICENSE' "$license"
 		
-		echo '  USER-FEEDBACK => '"$repo"'/user-feedback.md'
-		replace_field "$repo" 'USER-FEEDBACK' "$userFeedback"
+		echo '  ISSUES => "'"$issues"'"'
+		replace_field "$repo" 'ISSUES' "$issues"
+		
+		echo '  GET-HELP => "'"$getHelp"'"'
+		replace_field "$repo" 'GET-HELP' "$getHelp"
+		
+		echo '  MAINTAINER => "'"$maintainer"'"'
+		replace_field "$repo" 'MAINTAINER' "$maintainer"
 		
 		echo '  REPO => "'"$repo"'"'
 		replace_field "$repo" 'REPO' "$repo"
