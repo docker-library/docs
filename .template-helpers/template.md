@@ -2,16 +2,29 @@
 
 %%TAGS%%
 
-For detailed information about the published artifacts of each of the above supported tags (image metadata, transfer size, etc), please see [the `repos/%%REPO%%` directory](https://github.com/docker-library/repo-info/blob/master/repos/%%REPO%%) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/%%REPO%%`)](https://github.com/docker-library/official-images/blob/master/library/%%REPO%%). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2F%%REPO%%).
+-	**Where to get help**:  
+	%%GET-HELP%%
+
+-	**Where to file issues**:  
+	%%ISSUES%%
+
+-	**Maintained by**:  
+	%%MAINTAINER%%
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/%%REPO%%/` directory](https://github.com/docker-library/repo-info/blob/master/repos/%%REPO%%) ([history](https://github.com/docker-library/repo-info/commits/master/repos/%%REPO%%))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/%%REPO%%`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2F%%REPO%%)  
+	[official-images repo's `library/%%REPO%%` file](https://github.com/docker-library/official-images/blob/master/library/%%REPO%%) ([history](https://github.com/docker-library/official-images/commits/master/library/%%REPO%%))
+
+-	**Source of this description**:  
+	[docs repo's `%%REPO%%/` directory](https://github.com/docker-library/docs/tree/master/%%REPO%%) ([history](https://github.com/docker-library/docs/commits/master/%%REPO%%))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 %%CONTENT%%%%VARIANT%%%%LICENSE%%
-
-# Supported Docker versions
-
-%%DOCKER-VERSIONS%%
-
-# User Feedback
-
-%%USER-FEEDBACK%%
