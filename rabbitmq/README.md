@@ -156,6 +156,8 @@ $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOS
 
 ## Enabling HiPE
 
+**Warning:** if you're using the Alpine variant, there is currently [an outstanding bug (Alpine Linux bug #5700) with the `erlang-hipe` package](https://bugs.alpinelinux.org/issues/5700) which prevents HiPE from working in Alpine Linux. See [docker-library/rabbitmq#151](https://github.com/docker-library/rabbitmq/issues/151) for more discussion.
+
 See the [RabbitMQ "Configuration"](http://www.rabbitmq.com/configure.html#config-items) for more information about various configuration options.
 
 For enabling the HiPE compiler on startup use `RABBITMQ_HIPE_COMPILE` set to `1`. Accroding to the official documentation:
