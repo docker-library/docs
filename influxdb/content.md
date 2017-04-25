@@ -13,7 +13,7 @@ InfluxDB is a time series database built from the ground up to handle high write
 The InfluxDB image exposes a shared volume under `/var/lib/influxdb`, so you can mount a host directory to that point to access persisted container data. A typical invocation of the container might be:
 
 ```console
-$ docker run -p 8083:8083 -p 8086:8086 \
+$ docker run -p 8086:8086 \
       -v $PWD:/var/lib/influxdb \
       influxdb
 ```
@@ -23,7 +23,7 @@ Modify `$PWD` to the directory where you want to store data associated with the 
 You can also have Docker control the volume mountpoint by using a named volume.
 
 ```console
-$ docker run -p 8083:8083 -p 8086:8086 \
+$ docker run -p 8086:8086 \
       -v influxdb:/var/lib/influxdb \
       influxdb
 ```
@@ -33,14 +33,14 @@ $ docker run -p 8083:8083 -p 8086:8086 \
 The following ports are important and are used by InfluxDB.
 
 -	8086 HTTP API port
--	8083 Administrator interface port
+-	8083 Administrator interface port, if it is enabled
 -	2003 Graphite support, if it is enabled
 
 The HTTP API port will be automatically exposed when using `docker run -P`.
 
 The administrator interface is not automatically exposed when using `docker run -P` and is disabled by default. The adminstrator interface requires that the web browser have access to InfluxDB on the same port in the container as from the web browser. Since `-P` exposes the HTTP port to the host on a random port, the administrator interface is not compatible with this setting.
 
-The administrator interface is deprecated as of 1.1.0 and will be removed in the future.
+The administrator interface is deprecated as of 1.1.0 and will be removed in 1.3.0.
 
 Find more about API Endpoints & Ports [here](https://docs.influxdata.com/influxdb/latest/concepts/api/).
 
@@ -87,6 +87,18 @@ docker run -p 8086:8086 -p 2003:2003 \
 ```
 
 See the [README on GitHub](https://github.com/influxdata/influxdb/blob/master/services/graphite/README.md) for more detailed documentation to set up the Graphite service. In order to take advantage of graphite templates, you should use a configuration file by outputting a default configuration file using the steps above and modifying the `[[graphite]]` section.
+
+### Administrator Interface
+
+The administrator interface is deprecated as of 1.1.0 and will be removed in 1.3.0. It is disabled by default. If needed, it can still be enabled by setting an environment variable like below:
+
+```console
+docker run -p 8086:8086 -p 8083:8083 \
+    -e INFLUXDB_ADMIN_ENABLED=true \
+    influxdb
+```
+
+To use the administrator interface, both the HTTP API and the administrator interface API's must be forwarded to the same port.
 
 ### HTTP API
 
