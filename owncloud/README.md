@@ -20,12 +20,12 @@ WARNING:
 -	[`8.0.16-fpm`, `8.0-fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/2c9fddfe6a17a2c1d631dd7a6f1c7f87763f7d10/8.0/fpm/Dockerfile)
 -	[`8.1.12-apache`, `8.1-apache`, `8.1.12`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/2e581bdb03a2961e5dad7764f59ff363da94e6fb/8.1/apache/Dockerfile)
 -	[`8.1.12-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/2e581bdb03a2961e5dad7764f59ff363da94e6fb/8.1/fpm/Dockerfile)
--	[`8.2.10-apache`, `8.2-apache`, `8-apache`, `8.2.10`, `8.2`, `8` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/d7fbed06a3ff66601d5940cf865d920672a9fadf/8.2/apache/Dockerfile)
--	[`8.2.10-fpm`, `8.2-fpm`, `8-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/d7fbed06a3ff66601d5940cf865d920672a9fadf/8.2/fpm/Dockerfile)
--	[`9.0.8-apache`, `9.0-apache`, `9.0.8`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/d68839fc9d471e9776d1f51f273303e863db9e2b/9.0/apache/Dockerfile)
--	[`9.0.8-fpm`, `9.0-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/d68839fc9d471e9776d1f51f273303e863db9e2b/9.0/fpm/Dockerfile)
--	[`9.1.4-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.4`, `9.1`, `9`, `latest` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/61f63930e743211540df45e0c32165ec043dd6f5/9.1/apache/Dockerfile)
--	[`9.1.4-fpm`, `9.1-fpm`, `9-fpm`, `fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/61f63930e743211540df45e0c32165ec043dd6f5/9.1/fpm/Dockerfile)
+-	[`8.2.11-apache`, `8.2-apache`, `8-apache`, `8.2.11`, `8.2`, `8` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/3182c1fc072fb43c165d65de7bee16aa2374efd7/8.2/apache/Dockerfile)
+-	[`8.2.11-fpm`, `8.2-fpm`, `8-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/3182c1fc072fb43c165d65de7bee16aa2374efd7/8.2/fpm/Dockerfile)
+-	[`9.0.9-apache`, `9.0-apache`, `9.0.9`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f6016dc858a63c398df0e6797e5b45ca0eaca336/9.0/apache/Dockerfile)
+-	[`9.0.9-fpm`, `9.0-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f6016dc858a63c398df0e6797e5b45ca0eaca336/9.0/fpm/Dockerfile)
+-	[`9.1.5-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.5`, `9.1`, `9`, `latest` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/167aa3b02320358a8cc3cdbbbc3ffb4643d6e369/9.1/apache/Dockerfile)
+-	[`9.1.5-fpm`, `9.1-fpm`, `9-fpm`, `fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/167aa3b02320358a8cc3cdbbbc3ffb4643d6e369/9.1/fpm/Dockerfile)
 
 # Quick reference
 
