@@ -1,1 +1,1 @@
-Apache Flink is an open source stream processing framework with powerful stream- and batch-processing capabilities.
+Apache Flink® is a powerful open-source distributed stream and batch processing framework.

@@ -83,10 +83,10 @@ docker-compose scale taskmanager=<N>
 
 These are the default ports used by the Flink image:
 
-- The Web Client is on port `8081`
-- JobManager RPC port `6123`
-- TaskManagers RPC port `6122`
-- TaskManagers Data port `6121`
+-	The Web Client is on port `8081`
+-	JobManager RPC port `6123`
+-	TaskManagers RPC port `6122`
+-	TaskManagers Data port `6121`
 
 # About this repository
 
