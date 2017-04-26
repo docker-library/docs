@@ -70,7 +70,7 @@ CMD ["/usr/sbin/init"]
 Build this image:
 
 ```console
-$ docker build --rm -t local/c7-systemd-httpd
+$ docker build --rm -t local/c7-systemd-httpd .
 ```
 
 ## Running a systemd enabled app container
