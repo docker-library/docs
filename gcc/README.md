@@ -60,8 +60,8 @@ The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Proje
 The most straightforward way to use this image is to use a gcc container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM gcc:4.9
-COPY . /usr/src/myapp
+FROM gcc
+VOLUME  /usr/src/myapp
 WORKDIR /usr/src/myapp
 RUN gcc -o myapp main.c
 CMD ["./myapp"]
