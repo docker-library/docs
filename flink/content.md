@@ -18,7 +18,7 @@ To run a single Flink local cluster:
 $ docker run --name flink_local -p 8081:8081 -t flink local
 ```
 
-Then with a web browser go to `http://localhost:8081/` to see the Flink Web Dashboard (adjust the hostname for your docker host).
+Then with a web browser go to `http://localhost:8081/` to see the Flink Web Dashboard (adjust the hostname for your Docker host).
 
 To use Flink, you can submit a job to the cluster using the Web UI or you can also do it from a different Flink container, for example:
 
