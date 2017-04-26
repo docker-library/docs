@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.0.5-apache`, `10.0-apache`, `10-apache`, `10.0.5`, `10.0`, `10` (*10.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/2bb94165af875755fa775a2ce08c2306f7ee6374/10.0/apache/Dockerfile)
--	[`10.0.5-fpm`, `10.0-fpm`, `10-fpm` (*10.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/2bb94165af875755fa775a2ce08c2306f7ee6374/10.0/fpm/Dockerfile)
--	[`11.0.3-apache`, `11.0-apache`, `11-apache`, `apache`, `11.0.3`, `11.0`, `11`, `latest` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/6c9dd8442493c82f03cbcde8def0b7231b8fdb48/11.0/apache/Dockerfile)
--	[`11.0.3-fpm`, `11.0-fpm`, `11-fpm`, `fpm` (*11.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/6c9dd8442493c82f03cbcde8def0b7231b8fdb48/11.0/fpm/Dockerfile)
--	[`9.0.58-apache`, `9.0-apache`, `9-apache`, `9.0.58`, `9.0`, `9` (*9.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/c178ab0a8aaf1442149eee91d9e9eea8a4375ce9/9.0/apache/Dockerfile)
--	[`9.0.58-fpm`, `9.0-fpm`, `9-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/c178ab0a8aaf1442149eee91d9e9eea8a4375ce9/9.0/fpm/Dockerfile)
+-	[`10.0.5-apache`, `10.0-apache`, `10-apache`, `10.0.5`, `10.0`, `10` (*10.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/71199bd69ad66f50f92c12ea72887eeeae5c6780/10.0/apache/Dockerfile)
+-	[`10.0.5-fpm`, `10.0-fpm`, `10-fpm` (*10.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/71199bd69ad66f50f92c12ea72887eeeae5c6780/10.0/fpm/Dockerfile)
+-	[`11.0.3-apache`, `11.0-apache`, `11-apache`, `apache`, `11.0.3`, `11.0`, `11`, `latest` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/71199bd69ad66f50f92c12ea72887eeeae5c6780/11.0/apache/Dockerfile)
+-	[`11.0.3-fpm`, `11.0-fpm`, `11-fpm`, `fpm` (*11.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/71199bd69ad66f50f92c12ea72887eeeae5c6780/11.0/fpm/Dockerfile)
+-	[`9.0.58-apache`, `9.0-apache`, `9-apache`, `9.0.58`, `9.0`, `9` (*9.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/71199bd69ad66f50f92c12ea72887eeeae5c6780/9.0/apache/Dockerfile)
+-	[`9.0.58-fpm`, `9.0-fpm`, `9-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/71199bd69ad66f50f92c12ea72887eeeae5c6780/9.0/fpm/Dockerfile)
 
 # Quick reference
 
