@@ -18,7 +18,7 @@ To run a single Flink local cluster:
 $ docker run --name flink_local -p 8081:8081 -t flink local
 ```
 
-Then with a web browser go to `http://localhost:8081/` to see the Flink Job Manager Console (adjust the hostname for your docker host).
+Then with a web browser go to `http://localhost:8081/` to see the Flink Web Dashboard (adjust the hostname for your docker host).
 
 To use Flink, you can submit a job to the cluster using the Web UI or you can also do it from a different Flink container, for example:
 
@@ -26,15 +26,15 @@ To use Flink, you can submit a job to the cluster using the Web UI or you can al
 $ docker run -t flink flink run -m <jobmanager:port> -c <your_class> <your_jar> <your_params>
 ```
 
-## Running a job manager or a task manager
+## Running a JobManager or a TaskManager
 
-You can run an jobmanager (master).
+You can run a JobManager (master).
 
 ```console
 $ docker run --name flink_jobmanager -d -t flink taskmanager
 ```
 
-You can also run a taskmanager (worker). Notice that workers need to register with the jobmanager directly or via zookeeper so the master starts to send them tasks to execute.
+You can also run a TaskManager (worker). Notice that workers need to register with the JobManager directly or via ZooKeeper so the master starts to send them tasks to execute.
 
 ```console
 $ docker run --name flink_taskmanager -d -t flink taskmanager
