@@ -66,15 +66,6 @@ Run this from the directory of the Gradle project you want to build.
 
 `docker run --rm -v "$PWD":/project -w /project --name gradle gradle:alpine gradle <gradle-task>`
 
-## Reusing the Gradle cache
-
-The local Gradle cache can be reused across containers by creating a volume and mounting it in */home/gradle/.gradle*.
-
-```console
-docker volume create --name gradle-cache
-docker run -it -v gradle-cache:/home/gradle/.gradle gradle:alpine gradle build
-```
-
 # Image Variants
 
 The `gradle` images come in many flavors, each designed for a specific use case.
