@@ -16,20 +16,20 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6b38-jdk`, `6b38`, `6-jdk`, `6` (*6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jdk/Dockerfile)
--	[`6b38-jre`, `6-jre` (*6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jre/Dockerfile)
--	[`7u121-jdk`, `7u121`, `7-jdk`, `7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e3386b5a2b4004da498e145cf840561d50acd7fb/7-jdk/Dockerfile)
+-	[`6b38-jdk`, `6b38`, `6-jdk`, `6` (*6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/882461ade8207de7647d083009200de85eb978bc/6-jdk/Dockerfile)
+-	[`6b38-jre`, `6-jre` (*6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/882461ade8207de7647d083009200de85eb978bc/6-jre/Dockerfile)
+-	[`7u121-jdk`, `7u121`, `7-jdk`, `7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/882461ade8207de7647d083009200de85eb978bc/7-jdk/Dockerfile)
 -	[`7u121-jdk-alpine`, `7u121-alpine`, `7-jdk-alpine`, `7-alpine` (*7-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0476812eabd178c77534f3c03bd0a2673822d7b9/7-jdk/alpine/Dockerfile)
--	[`7u121-jre`, `7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e3386b5a2b4004da498e145cf840561d50acd7fb/7-jre/Dockerfile)
+-	[`7u121-jre`, `7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/882461ade8207de7647d083009200de85eb978bc/7-jre/Dockerfile)
 -	[`7u121-jre-alpine`, `7-jre-alpine` (*7-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0476812eabd178c77534f3c03bd0a2673822d7b9/7-jre/alpine/Dockerfile)
--	[`8u121-jdk`, `8u121`, `8-jdk`, `8`, `jdk`, `latest` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/445f8b8d18d7c61e2ae7fda76d8883b5d51ae0a5/8-jdk/Dockerfile)
+-	[`8u121-jdk`, `8u121`, `8-jdk`, `8`, `jdk`, `latest` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/882461ade8207de7647d083009200de85eb978bc/8-jdk/Dockerfile)
 -	[`8u121-jdk-alpine`, `8u121-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4e39684901490c13eaef7892c44e39043d7c4bed/8-jdk/alpine/Dockerfile)
 -	[`8u131-jdk-windowsservercore`, `8u131-windowsservercore`, `8-jdk-windowsservercore`, `8-windowsservercore`, `jdk-windowsservercore`, `windowsservercore` (*8-jdk/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/openjdk/blob/9745c87a15896ec558429a826e23926e721e4846/8-jdk/windows/windowsservercore/Dockerfile)
 -	[`8u131-jdk-nanoserver`, `8u131-nanoserver`, `8-jdk-nanoserver`, `8-nanoserver`, `jdk-nanoserver`, `nanoserver` (*8-jdk/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/openjdk/blob/9745c87a15896ec558429a826e23926e721e4846/8-jdk/windows/nanoserver/Dockerfile)
--	[`8u121-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/445f8b8d18d7c61e2ae7fda76d8883b5d51ae0a5/8-jre/Dockerfile)
+-	[`8u121-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/882461ade8207de7647d083009200de85eb978bc/8-jre/Dockerfile)
 -	[`8u121-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4e39684901490c13eaef7892c44e39043d7c4bed/8-jre/alpine/Dockerfile)
--	[`9-b161-jdk`, `9-b161`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/50c491c7c2378182866d89e857eb1f0c77985507/9-jdk/Dockerfile)
--	[`9-b161-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/50c491c7c2378182866d89e857eb1f0c77985507/9-jre/Dockerfile)
+-	[`9-b161-jdk`, `9-b161`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/882461ade8207de7647d083009200de85eb978bc/9-jdk/Dockerfile)
+-	[`9-b161-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/882461ade8207de7647d083009200de85eb978bc/9-jre/Dockerfile)
 
 # Quick reference
 

@@ -61,7 +61,7 @@ Development of Ubuntu is led by UK-based Canonical Ltd., a company owned by Sout
 
 This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use.
+The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
 Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
