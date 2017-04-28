@@ -38,6 +38,10 @@ $ docker run --name some-%%REPO%% -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
     -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d %%REPO%%
 ```
 
+To get wordpress working with nginx, will require a custom build of nginx to enable fpm support. You'll also need to expose port 9000 (default fpm port for the wordpress build):
+
+	docker run --name some-wordpress -p 9000:9000 --link some-mysql:mysql -d wordpress:fpm
+	
 ## %%COMPOSE%%
 
 Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
