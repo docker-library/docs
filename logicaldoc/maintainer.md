@@ -1,0 +1,1 @@
+[LogicalDOC](%%GITHUB-REPO%%)
