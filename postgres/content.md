@@ -105,6 +105,7 @@ The two easiest ways to get around this:
 	The files belonging to this database system will be owned by user "postgres".
 	...
 	( once it's finished initializing successfully and is waiting for connections, stop it )
+	( if you need the process to exit automatically, append `--help` to the command to avoid the daemon restarting )
 	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data bash chown -R 1000:1000 /var/lib/postgresql/data
 	$ docker run -it --rm --user 1000:1000 -v pgdata:/var/lib/postgresql/data postgres
 	LOG:  database system was shut down at 2017-01-20 00:03:23 UTC
