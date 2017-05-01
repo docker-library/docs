@@ -1,1 +1,1 @@
-../.common-templates/maintainer-community.md
+[Tim Düsterhus (of the Docker Community)](%%GITHUB-REPO%%)
