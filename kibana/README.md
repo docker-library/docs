@@ -22,7 +22,7 @@ Elastic provides open-source support for Kibana via the [elastic/kibana GitHub r
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.3.1`, `5.3`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/kibana/blob/17280c315c2865d0e6bb6dfacd0ed7eead881ca7/5/Dockerfile)
+-	[`5.3.2`, `5.3`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/kibana/blob/d919877a1420ac42a95a398bbf035deeb0b171f4/5/Dockerfile)
 -	[`4.6.4`, `4.6`, `4` (*4.6/Dockerfile*)](https://github.com/docker-library/kibana/blob/902581f626cba60693e32ca54f91f487b6be7e98/4.6/Dockerfile)
 -	[`4.1.11`, `4.1` (*4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/144fccdd6a2c8c05fc79c27d3eb62a90b274f19b/4.1/Dockerfile)
 

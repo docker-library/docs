@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.0`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/caa1ecb53270efd9a088e3856398c48622b5afc8/1.5/Dockerfile)
--	[`1.5.0-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*1.5/alpine/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/543c0f7021284d0aa36d5a894b2467656095126b/1.5/alpine/Dockerfile)
+-	[`1.6.0`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/c9dfc2d06685a700788f85d833875de31e0f2538/1.6/Dockerfile)
+-	[`1.6.0-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/TimWolla/docker-spiped/blob/c9dfc2d06685a700788f85d833875de31e0f2538/1.6/alpine/Dockerfile)
 
 # Quick reference
 
@@ -28,7 +28,7 @@ WARNING:
 	[https://github.com/TimWolla/docker-spiped/issues](https://github.com/TimWolla/docker-spiped/issues)
 
 -	**Maintained by**:  
-	[Tim Wolla (of the Docker Community)](https://github.com/TimWolla/docker-spiped), [with Colin's support (from spiped upstream)](https://github.com/docker-library/official-images/pull/1714#issuecomment-219556607)
+	[Tim Düsterhus (of the Docker Community)](https://github.com/TimWolla/docker-spiped), [with Colin's support (from spiped upstream)](https://github.com/docker-library/official-images/pull/1714#issuecomment-219556607)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/spiped/` directory](https://github.com/docker-library/repo-info/blob/master/repos/spiped) ([history](https://github.com/docker-library/repo-info/commits/master/repos/spiped))  

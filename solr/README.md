@@ -20,10 +20,10 @@ WARNING:
 -	[`5.5.4-alpine`, `5.5-alpine`, `5-alpine` (*5.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/5.5/alpine/Dockerfile)
 -	[`6.3.0`, `6.3` (*6.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/6.3/Dockerfile)
 -	[`6.3.0-alpine`, `6.3-alpine` (*6.3/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/6.3/alpine/Dockerfile)
--	[`6.4.2`, `6.4`, `6`, `latest` (*6.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/6.4/Dockerfile)
--	[`6.4.2-alpine`, `6.4-alpine`, `6-alpine`, `alpine` (*6.4/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/6.4/alpine/Dockerfile)
--	[`6.5.0`, `6.5` (*6.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1738f9a3cbad82e46c5ccebfb44707da13d05479/6.5/Dockerfile)
--	[`6.5.0-alpine`, `6.5-alpine` (*6.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1738f9a3cbad82e46c5ccebfb44707da13d05479/6.5/alpine/Dockerfile)
+-	[`6.4.2`, `6.4` (*6.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/6.4/Dockerfile)
+-	[`6.4.2-alpine`, `6.4-alpine` (*6.4/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/6.4/alpine/Dockerfile)
+-	[`6.5.1`, `6.5` (*6.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/9a5abca27d60292ce0dc6dcb41bb3d6fed5c54dc/6.5/Dockerfile)
+-	[`6.5.1-alpine`, `6.5-alpine` (*6.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/9a5abca27d60292ce0dc6dcb41bb3d6fed5c54dc/6.5/alpine/Dockerfile)
 
 # Quick reference
 
@@ -227,22 +227,6 @@ You can also use legacy links, see the [Can I run ZooKeeper and Solr with Docker
 This repository is available on [github.com/docker-solr/docker-solr](https://github.com/docker-solr/docker-solr), and the official build is on the [Docker Hub](https://hub.docker.com/_/solr/).
 
 This repository is based on (and replaces) `makuk66/docker-solr`, and has been sponsored by [Lucidworks](http://www.lucidworks.com/).
-
-# Image Variants
-
-The `solr` images come in many flavors, each designed for a specific use case.
-
-## `solr:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `solr:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
