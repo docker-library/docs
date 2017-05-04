@@ -1,1 +1,1 @@
-[the Docker Community](%%GITHUB-REPO%%)
+[members of the Apache Flink community](%%GITHUB-REPO%%)
