@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2017.01`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/e1029a0142efcdd151a573a6bf9e16d1a0ab7573/Dockerfile)
+-	[`2017.04`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/7f0916782f33dc289b5ad0035b5227472e3de14d/Dockerfile)
 
 # Quick reference
 
