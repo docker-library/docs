@@ -52,6 +52,3 @@ The LogicalDOC image uses environment variables that allow to obtain a more spec
 * **DB_USER**: the username (default is 'ldoc')
 * **DB_PASSWORD**: the password (default is 'changeme')
 
-## Docker-Compose
-
-Some docker-compose examples are available in the repository of this container on GitHub https://github.com/logicaldoc/logicaldoc
