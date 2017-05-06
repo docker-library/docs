@@ -1,6 +1,6 @@
 # LogicalDOC Enterprise Edition
 Official Docker image for LogicalDOC Enterprise.
-Nore: This image requires to be connected to an external database
+Note: This image requires to be connected to an external database
 
 ## What is LogicalDOC ?
 The LogicalDOC is a flexible and highly performant Document Management System platform
