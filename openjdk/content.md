@@ -41,7 +41,7 @@ This will add your current directory as a volume to the container, set the worki
 
 ## Make JVM respect CPU and RAM limits
 
-On starup JVM tries to detect the number of available CPU cores and the amount of RAM to adjust its internal parameters (like the number of garbage collector threads to spawn) accordingly. When container is run with limited CPU/RAM, standard system API, used by JVM for probing, will return host-wide values. This can cause excessive CPU usage and memory allocation errors with older versions of JVM.
+On startup JVM tries to detect the number of available CPU cores and the amount of RAM to adjust its internal parameters (like the number of garbage collector threads to spawn) accordingly. When container is run with limited CPU/RAM, standard system API, used by JVM for probing, will return host-wide values. This can cause excessive CPU usage and memory allocation errors with older versions of JVM.
 
 Inside Linux containers, recent versions of OpenJDK 8 can correctly detect container-limited number of CPU cores by default. To enable the detection of container-limited amount of RAM the following options can be used:
 
