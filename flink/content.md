@@ -23,7 +23,7 @@ Then with a web browser go to `http://localhost:8081/` to see the Flink Web Dash
 To use Flink, you can submit a job to the cluster using the Web UI or you can also do it from a different Flink container, for example:
 
 ```console
-$ docker run -t flink flink run -m <jobmanager:port> -c <your_class> <your_jar> <your_params>
+$ docker run --rm -t flink flink run -m <jobmanager:port> -c <your_class> <your_jar> <your_params>
 ```
 
 ## Running a JobManager or a TaskManager
