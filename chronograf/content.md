@@ -6,40 +6,59 @@ Chronograf is a simple to install graphing and visualization application that yo
 
 ## Using this image
 
-By default, Chronograf listens on port `10000` and stores its data in a volume at `/var/lib/chronograf`. You can start an instance with:
+### Running the container
+
+Chronograf runs on port 8888. It can be run and accessed by exposing that port:
 
 ```console
-$ docker run -p 10000:10000 chronograf
+$ docker run -p 8888:8888 chronograf
 ```
 
-You can also use a custom configuration file or environment variables to modify Chronograf settings.
+### Mounting a volume
 
-### Using a custom config file
-
-A sample configuration file can be obtained by:
+The Chronograf image exposes a shared volume under `/var/lib/chronograf`, so you can mount a host directory to that point to access persisted container data. A typical invocation of the container might be:
 
 ```console
-$ docker run --rm chronograf -sample-config > chronograf.conf
+$ docker run -p 8888:8888 \
+      -v $PWD:/var/lib/chronograf \
+      chronograf
 ```
 
-Once you've customized `chronograf.conf`, you can run the Chronograf container with it mounted in the expected location (note the name change!):
+Modify `$PWD` to the directory where you want to store data associated with the InfluxDB container.
+
+You can also have Docker control the volume mountpoint by using a named volume.
 
 ```console
-$ docker run -p 10000:10000 \
-      -v $PWD/chronograf.conf:/etc/chronograf/chronograf.conf:ro
+$ docker run -p 8888:8888 \
+      -v chronograf:/var/lib/chronograf \
+      chronograf
 ```
 
-Modify `$PWD` to the directory where you want to store the configuration file.
+### Using the container with InfluxDB
 
-### Using environment variables (preferred)
+The instructions here are very similar to the instructions when using `telegraf` with `influxdb`. These examples assume you are using Docker's built-in service discovery capability. In order to do so, we'll first create a new network:
 
-You may have noticed that the default `Bind` value in the configuration is set to `127.0.0.1:10000`, though the container will listen on `0.0.0.0:10000` instead. This is due to a default configuration file being provided inside of the image. You can override values inside of the configuration file using environment variables following the `CamelCase` to `CHRONOGRAF_CAMEL_CASE` pattern:
+```console
+$ docker network create influxdb
+```
 
-| SETTING                 | ENV VAR                               |
-|-------------------------|---------------------------------------|
-| Bind                    | CHRONOGRAF_BIND                       |
-| LocalDatabase           | CHRONOGRAF_LOCAL_DATABASE             |
-| QueryResponseBytesLimit | CHRONOGRAF_QUERY_RESPONSE_BYTES_LIMIT |
+Next, we'll start our InfluxDB container named `influxdb`:
+
+```console
+$ docker run -d --name=influxdb \
+      --net=influxdb \
+      influxdb
+```
+
+We can now start a Chronograf container that references this database.
+
+```console
+$ docker run -p 8888:8888 \
+      --net=influxdb
+      chronograf --influxdb-url=http://influxdb:8086
+```
+
+Try combining this with Telegraf to get dashboards for your infrastructure within minutes!
 
 ## Official Documentation
 
