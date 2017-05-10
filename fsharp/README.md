@@ -16,9 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `4`, `4.1`, `4.1.0.1` (*4.1.0.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.1.0.1/Dockerfile)
--	[`4.0`, `4.0.1`, `4.0.1.1` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.0.1.1/Dockerfile)
--	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/289a5e0066c69255c055dd5ee22f2e583d37fab4/4.0.0.4/Dockerfile)
+-	[`latest`, `4`, `4.1`, `4.1.18` (*4.1.18/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.1.18/mono/Dockerfile)
+-	[`4.1.0.1` (*4.1.0.1/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.1.0.1/mono/Dockerfile)
+-	[`4.0`, `4.0.1`, `4.0.1.1` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.0.1.1/Dockerfile)
+-	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.0.0.4/Dockerfile)
 
 # Quick reference
 

@@ -89,11 +89,12 @@ With the advancements and standardization of software containers, roboticists ar
 
 ## Deployment suggestions
 
-The available tags include supported distros along with a hierarchy tags based off the most common meta-package dependencies, designed to have a small footprint and simple configuration:  
-- `ros-core`: barebone ROS install  
-- `ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)  
-- `robot`: basic install for robots  
-- `perception`: basic install for perception tasks
+The available tags include supported distros along with a hierarchy tags based off the most common meta-package dependencies, designed to have a small footprint and simple configuration:
+
+-	`ros-core`: barebone ROS install
+-	`ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)
+-	`robot`: basic install for robots
+-	`perception`: basic install for perception tasks
 
 The rest of the common meta-packages such as `desktop` and `desktop-full` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
 

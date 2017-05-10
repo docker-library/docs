@@ -56,17 +56,23 @@ Apache ZooKeeper is a software project of the Apache Software Foundation, provid
 
 ## Start a Zookeeper server instance
 
-	$ docker run --name some-zookeeper --restart always -d zookeeper
+```console
+$ docker run --name some-zookeeper --restart always -d zookeeper
+```
 
 This image includes `EXPOSE 2181 2888 3888` (the zookeeper client port, follower port, election port respectively), so standard container linking will make it automatically available to the linked containers. Since the Zookeeper "fails fast" it's better to always restart it.
 
 ## Connect to Zookeeper from an application in another Docker container
 
-	$ docker run --name some-app --link some-zookeeper:zookeeper -d application-that-uses-zookeeper
+```console
+$ docker run --name some-app --link some-zookeeper:zookeeper -d application-that-uses-zookeeper
+```
 
 ## Connect to Zookeeper from the Zookeeper command line client
 
-	$ docker run -it --rm --link some-zookeeper:zookeeper zookeeper zkCli.sh -server zookeeper
+```console
+$ docker run -it --rm --link some-zookeeper:zookeeper zookeeper zkCli.sh -server zookeeper
+```
 
 ## ... via [`docker-compose`](https://github.com/docker/compose)
 
@@ -113,13 +119,17 @@ Consider using [Docker Swarm](https://www.docker.com/products/docker-swarm) when
 
 Zookeeper configuration is located in `/conf`. One way to change it is mounting your config file as a volume:
 
-	$ docker run --name some-zookeeper --restart always -d -v $(pwd)/zoo.cfg:/conf/zoo.cfg zookeeper
+```console
+$ docker run --name some-zookeeper --restart always -d -v $(pwd)/zoo.cfg:/conf/zoo.cfg zookeeper
+```
 
 ## Environment variables
 
 ZooKeeper recommended defaults are used if `zoo.cfg` file is not provided. They can be overridden using the following environment variables.
 
-	$ docker run -e "ZOO_INIT_LIMIT=10" --name some-zookeeper --restart always -d 31z4/zookeeper
+```console
+$ docker run -e "ZOO_INIT_LIMIT=10" --name some-zookeeper --restart always -d 31z4/zookeeper
+```
 
 ### `ZOO_TICK_TIME`
 

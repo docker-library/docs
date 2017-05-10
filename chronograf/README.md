@@ -46,7 +46,7 @@ WARNING:
 
 # Chronograf
 
-Chronograf is a simple to install graphing and visualization application that you deploy behind your firewall to perform ad-hoc exploration of your InfluxDB data. It includes support for templates and a library of intelligent, pre-configured dashboards for common data sets.
+Chronograf is InfluxData’s open source web application. Use Chronograf with the other components of the [TICK](https://www.influxdata.com/products/) stack for infrastructure monitoring, alert management, data visualization, and database management.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/chronograf/logo.png)
 
@@ -108,7 +108,7 @@ Try combining this with Telegraf to get dashboards for your infrastructure withi
 
 ## Official Documentation
 
-See the [official docs](https://docs.influxdata.com/chronograf/latest/introduction/getting_started/) for information on creating visualizations.
+See the [official docs](https://docs.influxdata.com/chronograf/latest/) for information on creating visualizations.
 
 # Image Variants
 
