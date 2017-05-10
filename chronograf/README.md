@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.13`, `0.13.0`, `latest` (*chronograf/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/chronograf/0.13/Dockerfile)
--	[`1.0.0-rc1` (*chronograf/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/chronograf/1.0/Dockerfile)
+-	[`1.3`, `1.3.0`, `latest` (*chronograf/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/c2f56dd3818aaf015ed205f769f40770d9c7441c/chronograf/1.3/Dockerfile)
+-	[`1.3-alpine`, `1.3.0-alpine`, `alpine` (*chronograf/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/c2f56dd3818aaf015ed205f769f40770d9c7441c/chronograf/1.3/alpine/Dockerfile)
 
 # Quick reference
 
@@ -52,44 +52,79 @@ Chronograf is a simple to install graphing and visualization application that yo
 
 ## Using this image
 
-By default, Chronograf listens on port `10000` and stores its data in a volume at `/var/lib/chronograf`. You can start an instance with:
+### Running the container
+
+Chronograf runs on port 8888. It can be run and accessed by exposing that port:
 
 ```console
-$ docker run -p 10000:10000 chronograf
+$ docker run -p 8888:8888 chronograf
 ```
 
-You can also use a custom configuration file or environment variables to modify Chronograf settings.
+### Mounting a volume
 
-### Using a custom config file
-
-A sample configuration file can be obtained by:
+The Chronograf image exposes a shared volume under `/var/lib/chronograf`, so you can mount a host directory to that point to access persisted container data. A typical invocation of the container might be:
 
 ```console
-$ docker run --rm chronograf -sample-config > chronograf.conf
+$ docker run -p 8888:8888 \
+      -v $PWD:/var/lib/chronograf \
+      chronograf
 ```
 
-Once you've customized `chronograf.conf`, you can run the Chronograf container with it mounted in the expected location (note the name change!):
+Modify `$PWD` to the directory where you want to store data associated with the InfluxDB container.
+
+You can also have Docker control the volume mountpoint by using a named volume.
 
 ```console
-$ docker run -p 10000:10000 \
-      -v $PWD/chronograf.conf:/etc/chronograf/chronograf.conf:ro
+$ docker run -p 8888:8888 \
+      -v chronograf:/var/lib/chronograf \
+      chronograf
 ```
 
-Modify `$PWD` to the directory where you want to store the configuration file.
+### Using the container with InfluxDB
 
-### Using environment variables (preferred)
+The instructions here are very similar to the instructions when using `telegraf` with `influxdb`. These examples assume you are using Docker's built-in service discovery capability. In order to do so, we'll first create a new network:
 
-You may have noticed that the default `Bind` value in the configuration is set to `127.0.0.1:10000`, though the container will listen on `0.0.0.0:10000` instead. This is due to a default configuration file being provided inside of the image. You can override values inside of the configuration file using environment variables following the `CamelCase` to `CHRONOGRAF_CAMEL_CASE` pattern:
+```console
+$ docker network create influxdb
+```
 
-| SETTING                 | ENV VAR                               |
-|-------------------------|---------------------------------------|
-| Bind                    | CHRONOGRAF_BIND                       |
-| LocalDatabase           | CHRONOGRAF_LOCAL_DATABASE             |
-| QueryResponseBytesLimit | CHRONOGRAF_QUERY_RESPONSE_BYTES_LIMIT |
+Next, we'll start our InfluxDB container named `influxdb`:
+
+```console
+$ docker run -d --name=influxdb \
+      --net=influxdb \
+      influxdb
+```
+
+We can now start a Chronograf container that references this database.
+
+```console
+$ docker run -p 8888:8888 \
+      --net=influxdb
+      chronograf --influxdb-url=http://influxdb:8086
+```
+
+Try combining this with Telegraf to get dashboards for your infrastructure within minutes!
 
 ## Official Documentation
 
 See the [official docs](https://docs.influxdata.com/chronograf/latest/introduction/getting_started/) for information on creating visualizations.
+
+# Image Variants
+
+The `chronograf` images come in many flavors, each designed for a specific use case.
+
+## `chronograf:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `chronograf:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
