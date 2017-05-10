@@ -3,7 +3,12 @@ set -Eeuo pipefail
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")/.."
 
-files="$(find -name '*.md' -print0 | xargs -0 markdownfmt -l)"
+files="$(
+	find \( \
+			-name '*.md' \
+			-not -name 'README.md' \
+		\) -print0 \
+		| xargs -0 markdownfmt -l)"
 if [ "$files" ]; then
 	echo >&2 'Need markdownfmt:'
 	echo >&2 "$files"
