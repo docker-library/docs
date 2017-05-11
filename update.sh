@@ -115,6 +115,9 @@ for image in "${images[@]}"; do
 		echo '  MAINTAINER => "'"$maintainer"'"'
 		replace_field "$targetFile" 'MAINTAINER' "$maintainer"
 
+		echo '  IMAGE => "'"$image"'"'
+		replace_field "$targetFile" 'IMAGE' "$image"
+
 		echo '  REPO => "'"$repo"'"'
 		replace_field "$targetFile" 'REPO' "$repo"
 
