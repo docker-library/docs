@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.5.1`, `0.5`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/8de8734c2f3547332bc1e8688ba0eff58b3a1a50/Dockerfile)
+-	[`0.5.2`, `0.5`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/61929cae66213ef964e8d23351d7b1a9a0cfc674/Dockerfile)
 
 # Quick reference
 

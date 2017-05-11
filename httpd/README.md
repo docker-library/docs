@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.32`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/a5ab6fb434c13a3578a2e7e6ce2cf30d66c625bc/2.2/Dockerfile)
--	[`2.2.32-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/a5ab6fb434c13a3578a2e7e6ce2cf30d66c625bc/2.2/alpine/Dockerfile)
--	[`2.4.25`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/e885c0d63078153dc89fa0212314e590fec7fc93/2.4/Dockerfile)
--	[`2.4.25-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/b95f1aba991d613f971fe8c66dc23fb4d8f3e9a7/2.4/alpine/Dockerfile)
+-	[`2.2.32`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/1883f2ec8be5f2a0cd176673a249c618ad7976ba/2.2/Dockerfile)
+-	[`2.2.32-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/1883f2ec8be5f2a0cd176673a249c618ad7976ba/2.2/alpine/Dockerfile)
+-	[`2.4.25`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/1883f2ec8be5f2a0cd176673a249c618ad7976ba/2.4/Dockerfile)
+-	[`2.4.25-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/1883f2ec8be5f2a0cd176673a249c618ad7976ba/2.4/alpine/Dockerfile)
 
 # Quick reference
 
