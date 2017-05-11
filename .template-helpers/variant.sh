@@ -10,10 +10,14 @@ fi
 
 dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 repoDir="$dir/../$repo"
-url='https://raw.githubusercontent.com/docker-library/official-images/master/library/'"$repo"
+
+# if we haven't set BASHBREW_LIBRARY explicitly (like Jenkins does, for example), don't trust the local library
+if [ -z "${BASHBREW_LIBRARY:-}" ]; then
+	repo="https://github.com/docker-library/official-images/raw/master/library/$repo"
+fi
 
 IFS=$'\n'
-tags=( $(bashbrew cat -f '{{ range .Entries }}{{ join "\n" .Tags }}{{ "\n" }}{{ end }}' "$url") )
+tags=( $(bashbrew cat -f '{{ range .Entries }}{{ join "\n" .Tags }}{{ "\n" }}{{ end }}' "$repo") )
 unset IFS
 
 text=
@@ -29,7 +33,7 @@ for tag in "${tags[@]}"; do
 done
 
 if [ "$text" ]; then
-	baseImage="$(bashbrew cat -f '{{ .DockerFrom .TagEntry }}' "$url":latest)"
+	baseImage="$(bashbrew cat -f '{{ .DockerFrom .TagEntry }}' "$repo":latest)"
 	baseImage="${baseImage%:*}"
 
 	echo
