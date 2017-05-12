@@ -26,5 +26,4 @@ The LogicalDOC DMS is accessible at http://${DOCKER_HOST}:8080/ and default User
 
 ## Your UserNo
 
-You can pass a LogicalDOC activation code (the UserNo) when you launch this image.
-In this way when your run the image the first time the activation procedure will be completed automatically and you will have a system completely setted up (ready-to-go).
+You can pass a LogicalDOC activation code (the UserNo) when you launch this image. In this way when your run the image the first time the activation procedure will be completed automatically and you will have a system completely setted up (ready-to-go).
