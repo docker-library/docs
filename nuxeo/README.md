@@ -16,12 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `9`, `9.1`, `FT` (*9.1/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/12c5d2e01e3a3a492a57ab46e1f8795c9e68cbc3/9.1/Dockerfile)
--	[`LTS`, `LTS-2016`, `8`, `8.10` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/12c5d2e01e3a3a492a57ab46e1f8795c9e68cbc3/8.10/Dockerfile)
--	[`8.3` (*8.3/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/12c5d2e01e3a3a492a57ab46e1f8795c9e68cbc3/8.3/Dockerfile)
--	[`8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/12c5d2e01e3a3a492a57ab46e1f8795c9e68cbc3/8.2/Dockerfile)
--	[`LTS-2015`, `7`, `7.10` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/12c5d2e01e3a3a492a57ab46e1f8795c9e68cbc3/7.10/Dockerfile)
--	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/12c5d2e01e3a3a492a57ab46e1f8795c9e68cbc3/6.0/Dockerfile)
+-	[`6.0`, `6`, `LTS-2014` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4da3ff891d3d6911304cbbe0895333ae4c84ffa7/6.0/Dockerfile)
+-	[`7.10`, `7`, `LTS-2015` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4da3ff891d3d6911304cbbe0895333ae4c84ffa7/7.10/Dockerfile)
+-	[`8.10`, `8`, `LTS-2016`, `LTS` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/bbe7c0d45e6608bbd50283bf753be4c501daec52/8.10/Dockerfile)
+-	[`9.1`, `9`, `FT`, `latest` (*9.1/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/bbe7c0d45e6608bbd50283bf753be4c501daec52/9.1/Dockerfile)
 
 # Quick reference
 
