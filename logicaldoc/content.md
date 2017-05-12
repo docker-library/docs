@@ -43,3 +43,5 @@ This will run the same image as above but with 4000 MB memory allocated to Logic
 ## Environment Variables
 
 The LogicalDOC image uses environment variables that allow to obtain a more specific setup.
+
+* **LDOC_MEMORY**: memory allocated for LogicalDOC expressed in MB (default is 2000)
