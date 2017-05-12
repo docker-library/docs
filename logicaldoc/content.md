@@ -33,3 +33,5 @@ You can pass a LogicalDOC activation code (the UserNo) when you launch this imag
 ```console
 docker run -d -p 8080:8080 -p 1000:22 --env LDOC_USERNO=<your userno> --env LDOC_MEMORY=4000 --link mysql-ld logicaldoc/logicaldoc
 ```
+
+This will run the same image as above but with 4000 MB memory allocated to LogicalDOC, moreover it opens the SSH access through port 1000.
