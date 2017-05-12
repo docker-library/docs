@@ -178,6 +178,19 @@ RUN apt-get update && apt-get install -y libmemcached-dev zlib1g-dev \
 	&& docker-php-ext-enable memcached
 ```
 
+### Mysqli extensions
+
+If you need database access from your php app, you may need to install `mysqli` extensions.
+
+```dockerfile
+FROM php:5.6-apache
+# Install modules
+RUN apt-get update && apt-get install -y \
+        php5-mysql \
+        && docker-php-ext-install -j$(nproc) mysqli
+CMD ["apache2-foreground"]
+```
+
 #### Other extensions
 
 Some extensions are not provided via either Core or PECL; these can be installed too, although the process is less automated:
