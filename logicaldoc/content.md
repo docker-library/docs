@@ -44,4 +44,4 @@ This will run the same image as above but with 4000 MB memory allocated to Logic
 
 The LogicalDOC image uses environment variables that allow to obtain a more specific setup :
 
--	 `LDOC_MEMORY` : 
+-	 what i have to do to have a list, stupid markup language, i hope you die 
