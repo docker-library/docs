@@ -27,13 +27,3 @@ CMD ["/my-static-binary"]
 ```
 
 This `Dockerfile` will allow you to create a minimal image for your statically compiled binary. You will have to compile the binary in some other place like another container. For a simpler alternative that's similarly tiny but easier to extend, [see `alpine`](https://hub.docker.com/_/alpine/).
-
-## Image Variants
-
-This image contains BusyBox built against various "libc" variants (for a comparison of "libc" variants, [Eta Labs has a very nice chart](http://www.etalabs.net/compare_libcs.html) which lists many similarities and differences).
-
--	`%%IMAGE%%:glibc`: [glibc from Debian](https://packages.debian.org/jessie/libc6) (which is then included in the image)
--	`%%IMAGE%%:musl`: [musl from Alpine](https://pkgs.alpinelinux.org/package/main/x86_64/musl) (statically compiled)
--	`%%IMAGE%%:uclibc`: [uClibc](https://uclibc.org) via [Buildroot](https://buildroot.org) (statically compiled)
-
-For more information about the specific particulars of the build process for each variant, see `Dockerfile.builder` in the same directory as each variant's `Dockerfile` (see links above).
