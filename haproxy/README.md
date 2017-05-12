@@ -66,7 +66,7 @@ Please refer to [upstream's excellent (and comprehensive) documentation](https:/
 
 It is also worth checking out the [`examples/` directory from upstream](http://www.haproxy.org/git?p=haproxy-1.7.git;a=tree;f=examples).
 
-Note: Many configuration examples propose to put `daemon` into the `global` section to run haproxy as daemon. Do **not** configure this or the Docker container will exit immediately after launching because the haproxy process would go into the background.
+Note: Many configuration examples propose to put `daemon` into the `global` section to run HAProxy as daemon. Do **not** configure this or the Docker container will exit immediately after launching because the HAProxy process would go into the background.
 
 ## Create a `Dockerfile`
 
@@ -93,7 +93,7 @@ $ docker run -it --rm --name haproxy-syntax-check my-haproxy haproxy -c -f /usr/
 $ docker run -d --name my-running-haproxy my-haproxy
 ```
 
-You may need to publish the ports your haproxy is listening on to the host by specifying the -p option, for example -p 8080:80 to publish port 8080 from the container host to port 80 in the container. Make sure the port you're using is free.
+You may need to publish the ports your HAProxy is listening on to the host by specifying the -p option, for example -p 8080:80 to publish port 8080 from the container host to port 80 in the container. Make sure the port you're using is free.
 
 ## Directly via bind mount
 
@@ -105,13 +105,13 @@ Note that your host's `/path/to/etc/haproxy` folder should be populated with a f
 
 ### Reloading config
 
-If you used a bind mount for the config and have edited your `haproxy.cfg` file, you can use haproxy's graceful reload feature by sending a `SIGHUP` to the container:
+If you used a bind mount for the config and have edited your `haproxy.cfg` file, you can use HAProxy's graceful reload feature by sending a `SIGHUP` to the container:
 
 ```console
 $ docker kill -s HUP my-running-haproxy
 ```
 
-The entrypoint script in the image checks for running the command `haproxy` and replaces it with `haproxy-systemd-wrapper` from haproxy upstream which takes care of signal handling to do the graceful reload. Under the hood this uses the `-sf` option of haproxy so "there are two small windows of a few milliseconds each where it is possible that a few connection failures will be noticed during high loads" (see [Stopping and restarting HAProxy](http://www.haproxy.org/download/1.7/doc/management.txt)).
+The entrypoint script in the image checks for running the command `haproxy` and replaces it with `haproxy-systemd-wrapper` from HAProxy upstream which takes care of signal handling to do the graceful reload. Under the hood this uses the `-sf` option of `haproxy` so "there are two small windows of a few milliseconds each where it is possible that a few connection failures will be noticed during high loads" (see [Stopping and restarting HAProxy](http://www.haproxy.org/download/1.7/doc/management.txt)).
 
 # Image Variants
 

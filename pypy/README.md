@@ -107,7 +107,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `pypy:slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `pypy`. Unless you are working in an environment where *only* the pypy image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `pypy`. Unless you are working in an environment where *only* the `pypy` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 ## `pypy:onbuild`
 

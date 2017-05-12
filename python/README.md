@@ -81,18 +81,32 @@ Python is an interpreted, interactive, object-oriented, open-source programming 
 ## Create a `Dockerfile` in your Python app project
 
 ```dockerfile
-FROM python:3-onbuild
+FROM python:3
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
 CMD [ "python", "./your-daemon-or-script.py" ]
 ```
 
 or (if you need to use Python 2):
 
 ```dockerfile
-FROM python:2-onbuild
+FROM python:2
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
 CMD [ "python", "./your-daemon-or-script.py" ]
 ```
-
-These images include multiple `ONBUILD` triggers, which should be all you need to bootstrap most applications. The build will `COPY` a `requirements.txt` file, `RUN pip install` on said file, and then copy the current directory into `/usr/src/app`.
 
 You can then build and run the Docker image:
 
@@ -125,7 +139,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `python:slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `python`. Unless you are working in an environment where *only* the python image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `python`. Unless you are working in an environment where *only* the `python` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 ## `python:alpine`
 
