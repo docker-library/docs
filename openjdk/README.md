@@ -28,8 +28,8 @@ WARNING:
 -	[`8u131-jdk-nanoserver`, `8u131-nanoserver`, `8-jdk-nanoserver`, `8-nanoserver`, `jdk-nanoserver`, `nanoserver` (*8-jdk/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/openjdk/blob/9745c87a15896ec558429a826e23926e721e4846/8-jdk/windows/nanoserver/Dockerfile)
 -	[`8u121-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/bd3c2a9867c9dc6a9a8425a8df5c54edf0cbf2cc/8-jre/Dockerfile)
 -	[`8u121-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4e39684901490c13eaef7892c44e39043d7c4bed/8-jre/alpine/Dockerfile)
--	[`9-b168-jdk`, `9-b168`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/cf54b49f29ea633bd7d0fdbcaa1b052ea9ad18e9/9-jdk/Dockerfile)
--	[`9-b168-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/cf54b49f29ea633bd7d0fdbcaa1b052ea9ad18e9/9-jre/Dockerfile)
+-	[`9-b169-jdk`, `9-b169`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b93e629663f80ca4214097b5a3c248d9a866779b/9-jdk/Dockerfile)
+-	[`9-b169-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b93e629663f80ca4214097b5a3c248d9a866779b/9-jre/Dockerfile)
 
 # Quick reference
 
