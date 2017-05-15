@@ -49,7 +49,7 @@ The LogicalDOC image uses environment variables that allow to obtain a more spec
 -	`SSH_PSWD` : pasword of the **logicaldoc** SSH user (default is logicaldoc)
 -	`DB_ENGINE` : the database type, possible vaues are: mysql(default), mssql, oracle, postgres
 -	`DB_HOST` : the database server host (default is mysql-ld)
--       `DB_PORT` : the database communication port (default is 3306)
+-	`DB_PORT` : the database communication port (default is 3306)
 -	`DB_NAME` : the database name (default is logicaldoc)
 -	`DB_INSTANCE` : some databases require the instance specification
 -	`DB_USER` : the username (default is ldoc)
