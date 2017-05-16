@@ -27,3 +27,15 @@ Read more:
 
 	- [Getting Started With CrateDB on Docker](https://crate.io/docs/install/containers/docker/)
 	- [CrateDB Docker Best Practices](https://crate.io/docs/reference/best_practice/docker.html)
+
+## Issues
+
+For issue specific to the CrateDB Docker image, report issues via [the `docker-crate` GitHub issue tracker](https://github.com/crate/docker-crate/issues)
+
+For issues with CrateDB itself, report issues via [the `crate` GitHub issue tracker](https://github.com/crate/crate/issues)
+
+## Contributing
+
+This image is primarily maintained by [Crate.io](http://crate.io/), but we welcome community contributions!
+
+See the [developer docs](https://github.com/crate/docker-crateblob/master/DEVELOP.rst) and the [contribution docs](https://github.com/crate/docker-crate/blob/master/CONTRIBUTING.rst) for more information.
