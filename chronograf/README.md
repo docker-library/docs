@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3`, `1.3.0`, `latest` (*chronograf/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/c2f56dd3818aaf015ed205f769f40770d9c7441c/chronograf/1.3/Dockerfile)
--	[`1.3-alpine`, `1.3.0-alpine`, `alpine` (*chronograf/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/c2f56dd3818aaf015ed205f769f40770d9c7441c/chronograf/1.3/alpine/Dockerfile)
+-	[`1.3`, `1.3.0`, `latest` (*chronograf/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/7be94386cd401e0706ad259c1189f75925e76272/chronograf/1.3/Dockerfile)
+-	[`1.3-alpine`, `1.3.0-alpine`, `alpine` (*chronograf/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/3a8019600cefcb4ffc85c3e3a155980d2dc3f5ff/chronograf/1.3/alpine/Dockerfile)
 
 # Quick reference
 
@@ -116,7 +116,7 @@ The `chronograf` images come in many flavors, each designed for a specific use c
 
 ## `chronograf:<version>`
 
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 ## `chronograf:alpine`
 
