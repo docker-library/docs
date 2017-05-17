@@ -2,16 +2,16 @@
 
 # What Is CrateDB?
 
-[CrateDB](github.com/crate/crate) is a distributed SQL database that makes it simple to store and analyze massive amounts of machine data in real-time.
+[CrateDB](http://github.com/crate/crate) is a distributed SQL database that makes it simple to store and analyze massive amounts of machine data in real-time.
 
 Features of CrateDB:
 
-	- Standard SQL plus dynamic schemas, queryable objects, geospatial features, time series data, first-class BLOB support, and realtime full-text search.
-	- Horizontally scalable, highly available, and fault tolerant clusters that run very well in virtualized and containerised environments.
-	- Extremely fast distributed query execution.
-	- Auto-partitioning, auto-sharding, and auto-replication.
-	- Self-healing and auto-rebalancing.
-	- CrateDB offers the scalability and flexibility typically associated with a NoSQL database and is designed to run on inexpensive commodity servers and can be deployed and run across any sort of network. From personal computers to multi-region hybrid clouds.
+-	Standard SQL plus dynamic schemas, queryable objects, geospatial features, time series data, first-class BLOB support, and realtime full-text search.
+-	Horizontally scalable, highly available, and fault tolerant clusters that run very well in virtualized and containerised environments.
+-	Extremely fast distributed query execution.
+-	Auto-partitioning, auto-sharding, and auto-replication.
+-	Self-healing and auto-rebalancing.
+-	CrateDB offers the scalability and flexibility typically associated with a NoSQL database and is designed to run on inexpensive commodity servers and can be deployed and run across any sort of network. From personal computers to multi-region hybrid clouds.
 
 The smallest CrateDB clusters can easily ingest tens of thousands of records per second. And this data can be queried, ad-hoc, in parallel across the whole cluster in real time.
 
@@ -25,8 +25,8 @@ Once you're up and running, head on over to [the introductory docs](https://crat
 
 Read more:
 
-	- [Getting Started With CrateDB on Docker](https://crate.io/docs/install/containers/docker/)
-	- [CrateDB Docker Best Practices](https://crate.io/docs/reference/best_practice/docker.html)
+-	[Getting Started With CrateDB on Docker](https://crate.io/docs/install/containers/docker/)
+-	[CrateDB Docker Best Practices](https://crate.io/docs/reference/best_practice/docker.html)
 
 ## Issues
 
