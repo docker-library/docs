@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.3-apache`, `3.0-apache`, `3-apache`, `apache`, `3.0.3`, `3.0`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/b00cca0f4bce10167cda80c6ca640ffc771812df/apache/Dockerfile)
--	[`3.0.3-fpm`, `3.0-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/b00cca0f4bce10167cda80c6ca640ffc771812df/fpm/Dockerfile)
+-	[`3.0.4-apache`, `3.0-apache`, `3-apache`, `apache`, `3.0.4`, `3.0`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/4d9eadce21a4900442b16a3ef4c8ab7582cc7c83/apache/Dockerfile)
+-	[`3.0.4-fpm`, `3.0-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/4d9eadce21a4900442b16a3ef4c8ab7582cc7c83/fpm/Dockerfile)
 
 # Quick reference
 
