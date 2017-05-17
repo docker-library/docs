@@ -28,9 +28,18 @@ WARNING:
 -	[`8-jre-1.7.4-plume` (*8-jre-1.7.4-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/592da5738fd23d6c8a483efce1710cf03ee508c6/8-jre-1.7.4-plume/Dockerfile)
 -	[`8-jre-1.7.4-plus` (*8-jre-1.7.4-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/592da5738fd23d6c8a483efce1710cf03ee508c6/8-jre-1.7.4-plus/Dockerfile)
 -	[`8-jre-1.7.4-webprofile` (*8-jre-1.7.4-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/592da5738fd23d6c8a483efce1710cf03ee508c6/8-jre-1.7.4-webprofile/Dockerfile)
--	[`8-jdk-7.0.1-plume` (*8-jdk-7.0.1-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/8c5b5a96305a9b935d304789fcf3707938a175d6/8-jdk-7.0.1-plume/Dockerfile)
--	[`8-jdk-7.0.1-plus` (*8-jdk-7.0.1-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/8c5b5a96305a9b935d304789fcf3707938a175d6/8-jdk-7.0.1-plus/Dockerfile)
--	[`8-jdk-7.0.1-webprofile`, `latest` (*8-jdk-7.0.1-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/8c5b5a96305a9b935d304789fcf3707938a175d6/8-jdk-7.0.1-webprofile/Dockerfile)
+-	[`8-jre-7.0.0-plume` (*8-jre-7.0.0-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.0-plume/Dockerfile)
+-	[`8-jre-7.0.0-plus` (*8-jre-7.0.0-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.0-plus/Dockerfile)
+-	[`8-jre-7.0.0-webprofile` (*8-jre-7.0.0-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.0-webprofile/Dockerfile)
+-	[`8-jre-7.0.1-plume` (*8-jre-7.0.1-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.1-plume/Dockerfile)
+-	[`8-jre-7.0.1-plus` (*8-jre-7.0.1-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.1-plus/Dockerfile)
+-	[`8-jre-7.0.1-webprofile` (*8-jre-7.0.1-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.1-webprofile/Dockerfile)
+-	[`8-jre-7.0.2-plume` (*8-jre-7.0.2-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.2-plume/Dockerfile)
+-	[`8-jre-7.0.2-plus` (*8-jre-7.0.2-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.2-plus/Dockerfile)
+-	[`8-jre-7.0.2-webprofile` (*8-jre-7.0.2-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.2-webprofile/Dockerfile)
+-	[`8-jre-7.0.3-plume` (*8-jre-7.0.3-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.3-plume/Dockerfile)
+-	[`8-jre-7.0.3-plus` (*8-jre-7.0.3-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.3-plus/Dockerfile)
+-	[`8-jre-7.0.3-webprofile`, `latest` (*8-jre-7.0.3-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.3-webprofile/Dockerfile)
 
 # Quick reference
 
