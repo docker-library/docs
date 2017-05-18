@@ -1,6 +1,6 @@
 ## `%%IMAGE%%:onbuild`
 
-This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM %%IMAGE%%:onbuild` will be enough to create a stand-alone image for your project.
+The `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).
 
 While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
 
