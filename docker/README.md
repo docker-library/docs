@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.05.0-ce`, `17.05.0`, `17.05`, `17`, `latest`, `edge` (*17.05/Dockerfile*)](https://github.com/docker-library/docker/blob/ce78a19aac321bbe50d060426b5b633cb5f74825/17.05/Dockerfile)
--	[`17.05.0-ce-dind`, `17.05.0-dind`, `17.05-dind`, `17-dind`, `dind`, `edge-dind` (*17.05/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/ce78a19aac321bbe50d060426b5b633cb5f74825/17.05/dind/Dockerfile)
+-	[`17.05.0-ce`, `17.05.0`, `17.05`, `17`, `latest`, `edge` (*17.05/Dockerfile*)](https://github.com/docker-library/docker/blob/5a196cae40e2a0ab5050cf6d79b697e032352b24/17.05/Dockerfile)
+-	[`17.05.0-ce-dind`, `17.05.0-dind`, `17.05-dind`, `17-dind`, `dind`, `edge-dind` (*17.05/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/5a196cae40e2a0ab5050cf6d79b697e032352b24/17.05/dind/Dockerfile)
 -	[`17.05.0-ce-git`, `17.05.0-git`, `17.05-git`, `17-git`, `git`, `edge-git` (*17.05/git/Dockerfile*)](https://github.com/docker-library/docker/blob/ce78a19aac321bbe50d060426b5b633cb5f74825/17.05/git/Dockerfile)
--	[`17.03.1-ce`, `17.03.1`, `17.03`, `stable` (*17.03/Dockerfile*)](https://github.com/docker-library/docker/blob/47d5d4ead8a95871d011b005394c9f2f7af68dab/17.03/Dockerfile)
--	[`17.03.1-ce-dind`, `17.03.1-dind`, `17.03-dind`, `stable-dind` (*17.03/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/bf822e2b9b4f755156b825444562c9865f22557f/17.03/dind/Dockerfile)
+-	[`17.03.1-ce`, `17.03.1`, `17.03`, `stable` (*17.03/Dockerfile*)](https://github.com/docker-library/docker/blob/5a196cae40e2a0ab5050cf6d79b697e032352b24/17.03/Dockerfile)
+-	[`17.03.1-ce-dind`, `17.03.1-dind`, `17.03-dind`, `stable-dind` (*17.03/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/5a196cae40e2a0ab5050cf6d79b697e032352b24/17.03/dind/Dockerfile)
 -	[`17.03.1-ce-git`, `17.03.1-git`, `17.03-git`, `stable-git` (*17.03/git/Dockerfile*)](https://github.com/docker-library/docker/blob/bf822e2b9b4f755156b825444562c9865f22557f/17.03/git/Dockerfile)
 
 # Quick reference
