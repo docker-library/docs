@@ -94,12 +94,12 @@ $ docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
     -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d wordpress
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `wordpress`:
+Example `stack.yml` for `wordpress`:
 
 ```yaml
-version: '2'
+version: '3.1'
 
 services:
 
@@ -111,12 +111,14 @@ services:
       WORDPRESS_DB_PASSWORD: example
 
   mysql:
-    image: mariadb
+    image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/0cb43ce8ad1da073bbc30c6245cdffb433ba51ba/wordpress/stack.yml)
+
+Run `docker stack deploy -c stack.yml wordpress` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ## Adding additional libraries / extensions
 
