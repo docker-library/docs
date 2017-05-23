@@ -53,7 +53,7 @@ for image in "${images[@]}"; do
 			logoCommit="$(git log -1 --format='format:%H' -- "$logoFile" 2>/dev/null || true)"
 			[ "$logoCommit" ] || logoCommit='master'
 			if [ "${logoFile##*.}" = 'svg' ]; then
-				logo="![logo](https://rawgit.com/docker-library/docs/$logoCommit/$logoFile)"
+				logo="![logo](https://cdn.rawgit.com/docker-library/docs/$logoCommit/$logoFile)"
 			else
 				logo="![logo](https://raw.githubusercontent.com/docker-library/docs/$logoCommit/$logoFile)"
 			fi
