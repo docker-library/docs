@@ -49,7 +49,7 @@ Rocket.Chat is a Web Chat Server, developed in JavaScript, using the Meteor full
 
 It is a great solution for communities and companies wanting to privately host their own chat service or for developers looking forward to build and evolve their own chat platforms.
 
-![logo](https://rawgit.com/docker-library/docs/03a593f2d33ac163b1b346a60de29aa59f7f78db/rocket.chat/logo.svg)
+![logo](https://cdn.rawgit.com/docker-library/docs/03a593f2d33ac163b1b346a60de29aa59f7f78db/rocket.chat/logo.svg)
 
 # How to use this image
 

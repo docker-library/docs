@@ -56,7 +56,7 @@ Piwik is the leading open-source analytics platform that gives you more than jus
 -	User-centric insights
 -	Customisable and extensible
 
-![logo](https://rawgit.com/docker-library/docs/db93419075dcb0e24c48bba055582180df9438ea/piwik/logo.svg)
+![logo](https://cdn.rawgit.com/docker-library/docs/db93419075dcb0e24c48bba055582180df9438ea/piwik/logo.svg)
 
 # How to use this image
 
