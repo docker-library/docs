@@ -16,18 +16,22 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`indigo-ros-core` (*ros/indigo/indigo-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/indigo/indigo-ros-core/Dockerfile)
--	[`indigo-ros-base`, `indigo` (*ros/indigo/indigo-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/indigo/indigo-ros-base/Dockerfile)
--	[`indigo-robot` (*ros/indigo/indigo-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/indigo/indigo-robot/Dockerfile)
--	[`indigo-perception` (*ros/indigo/indigo-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/indigo/indigo-perception/Dockerfile)
--	[`jade-ros-core` (*ros/jade/jade-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/jade/jade-ros-core/Dockerfile)
--	[`jade-ros-base`, `jade` (*ros/jade/jade-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/jade/jade-ros-base/Dockerfile)
--	[`jade-robot` (*ros/jade/jade-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/jade/jade-robot/Dockerfile)
--	[`jade-perception` (*ros/jade/jade-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/jade/jade-perception/Dockerfile)
--	[`kinetic-ros-core` (*ros/kinetic/kinetic-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-ros-core/Dockerfile)
--	[`kinetic-ros-base`, `kinetic`, `latest` (*ros/kinetic/kinetic-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-ros-base/Dockerfile)
--	[`kinetic-robot` (*ros/kinetic/kinetic-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-robot/Dockerfile)
--	[`kinetic-perception` (*ros/kinetic/kinetic-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-perception/Dockerfile)
+-	[`indigo-ros-core` (*ros/indigo/indigo-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/indigo/indigo-ros-core/Dockerfile)
+-	[`indigo-ros-base`, `indigo` (*ros/indigo/indigo-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/indigo/indigo-ros-base/Dockerfile)
+-	[`indigo-robot` (*ros/indigo/indigo-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/indigo/indigo-robot/Dockerfile)
+-	[`indigo-perception` (*ros/indigo/indigo-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/indigo/indigo-perception/Dockerfile)
+-	[`jade-ros-core` (*ros/jade/jade-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/jade/jade-ros-core/Dockerfile)
+-	[`jade-ros-base`, `jade` (*ros/jade/jade-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/jade/jade-ros-base/Dockerfile)
+-	[`jade-robot` (*ros/jade/jade-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/jade/jade-robot/Dockerfile)
+-	[`jade-perception` (*ros/jade/jade-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/jade/jade-perception/Dockerfile)
+-	[`kinetic-ros-core` (*ros/kinetic/kinetic-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/kinetic/kinetic-ros-core/Dockerfile)
+-	[`kinetic-ros-base`, `kinetic`, `latest` (*ros/kinetic/kinetic-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/kinetic/kinetic-ros-base/Dockerfile)
+-	[`kinetic-robot` (*ros/kinetic/kinetic-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/kinetic/kinetic-robot/Dockerfile)
+-	[`kinetic-perception` (*ros/kinetic/kinetic-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7d44b3a7768b3863667dd4ec55137b7796ed5cf2/ros/kinetic/kinetic-perception/Dockerfile)
+-	[`lunar-ros-core` (*ros/lunar/lunar-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/20336857df1b99803788b08461d875171e761d5c/ros/lunar/lunar-ros-core/Dockerfile)
+-	[`lunar-ros-base`, `lunar` (*ros/lunar/lunar-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/20336857df1b99803788b08461d875171e761d5c/ros/lunar/lunar-ros-base/Dockerfile)
+-	[`lunar-robot` (*ros/lunar/lunar-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/20336857df1b99803788b08461d875171e761d5c/ros/lunar/lunar-robot/Dockerfile)
+-	[`lunar-perception` (*ros/lunar/lunar-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/20336857df1b99803788b08461d875171e761d5c/ros/lunar/lunar-perception/Dockerfile)
 
 # Quick reference
 
