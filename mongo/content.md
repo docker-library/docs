@@ -44,13 +44,22 @@ $ docker run --name some-mongo -d mongo --storageEngine wiredTiger
 
 MongoDB does not require authentication by default, but it can be configured to do so. For more details about the functionality described here, please see the sections in the official documentation which describe [authentication](https://docs.mongodb.org/manual/core/authentication/) and [authorization](https://docs.mongodb.org/manual/core/authorization/) in more detail.
 
+#### Add the Initial Admin User via environment variables
+
+```console
+$ docker run -e MONGO_INITDB_ROOT_USERNAME=user -e MONGO_INITDB_ROOT_PASSWORD=password mongo
+```
+
+This automatically adds the `--auth` flag when starting mongod.
+
+
 #### Start the Database
 
 ```console
 $ docker run --name some-mongo -d mongo --auth
 ```
 
-#### Add the Initial Admin User
+#### Add the Initial Admin User via mongo console
 
 ```console
 $ docker exec -it some-mongo mongo admin
