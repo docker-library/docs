@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`lein-2.7.1`, `lein`, `latest` (*debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/lein/Dockerfile)
--	[`lein-2.7.1-onbuild`, `lein-onbuild`, `onbuild` (*debian/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/lein/onbuild/Dockerfile)
--	[`lein-2.7.1-alpine`, `lein-alpine`, `alpine` (*alpine/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/alpine/lein/Dockerfile)
--	[`lein-2.7.1-alpine-onbuild`, `lein-alpine-onbuild`, `alpine-onbuild` (*alpine/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/alpine/lein/onbuild/Dockerfile)
--	[`boot-2.7.1`, `boot` (*debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/debian/boot/Dockerfile)
--	[`boot-2.7.1-alpine`, `boot-alpine` (*alpine/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f0fd68d6a197b4d1852aefab698b35ce1ea9881e/alpine/boot/Dockerfile)
+-	[`lein-2.7.1`, `lein`, `latest` (*debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/adeda5b2e562fef82b9aca22e9770e312841dc0f/debian/lein/Dockerfile)
+-	[`lein-2.7.1-onbuild`, `lein-onbuild`, `onbuild` (*debian/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/adeda5b2e562fef82b9aca22e9770e312841dc0f/debian/lein/onbuild/Dockerfile)
+-	[`lein-2.7.1-alpine`, `lein-alpine`, `alpine` (*alpine/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/adeda5b2e562fef82b9aca22e9770e312841dc0f/alpine/lein/Dockerfile)
+-	[`lein-2.7.1-alpine-onbuild`, `lein-alpine-onbuild`, `alpine-onbuild` (*alpine/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/adeda5b2e562fef82b9aca22e9770e312841dc0f/alpine/lein/onbuild/Dockerfile)
+-	[`boot-2.7.1`, `boot` (*debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/adeda5b2e562fef82b9aca22e9770e312841dc0f/debian/boot/Dockerfile)
+-	[`boot-2.7.1-alpine`, `boot-alpine` (*alpine/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/adeda5b2e562fef82b9aca22e9770e312841dc0f/alpine/boot/Dockerfile)
 
 # Quick reference
 
