@@ -22,10 +22,10 @@ WARNING:
 -	[`8.1.12-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/2e581bdb03a2961e5dad7764f59ff363da94e6fb/8.1/fpm/Dockerfile)
 -	[`8.2.11-apache`, `8.2-apache`, `8-apache`, `8.2.11`, `8.2`, `8` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/3182c1fc072fb43c165d65de7bee16aa2374efd7/8.2/apache/Dockerfile)
 -	[`8.2.11-fpm`, `8.2-fpm`, `8-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/3182c1fc072fb43c165d65de7bee16aa2374efd7/8.2/fpm/Dockerfile)
--	[`9.0.9-apache`, `9.0-apache`, `9.0.9`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f6016dc858a63c398df0e6797e5b45ca0eaca336/9.0/apache/Dockerfile)
--	[`9.0.9-fpm`, `9.0-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f6016dc858a63c398df0e6797e5b45ca0eaca336/9.0/fpm/Dockerfile)
--	[`9.1.5-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.5`, `9.1`, `9`, `latest` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/167aa3b02320358a8cc3cdbbbc3ffb4643d6e369/9.1/apache/Dockerfile)
--	[`9.1.5-fpm`, `9.1-fpm`, `9-fpm`, `fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/167aa3b02320358a8cc3cdbbbc3ffb4643d6e369/9.1/fpm/Dockerfile)
+-	[`9.0.10-apache`, `9.0-apache`, `9.0.10`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/6bb84a4253c8a84af6a9b3968eb61388c65be5fb/9.0/apache/Dockerfile)
+-	[`9.0.10-fpm`, `9.0-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/6bb84a4253c8a84af6a9b3968eb61388c65be5fb/9.0/fpm/Dockerfile)
+-	[`9.1.6-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.6`, `9.1`, `9`, `latest` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/4a90ae0bfeec972185fd920130b70b6c51eec6f4/9.1/apache/Dockerfile)
+-	[`9.1.6-fpm`, `9.1-fpm`, `9-fpm`, `fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/4a90ae0bfeec972185fd920130b70b6c51eec6f4/9.1/fpm/Dockerfile)
 
 # Quick reference
 
