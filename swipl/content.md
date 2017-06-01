@@ -10,7 +10,7 @@ SWI-Prolog is a versatile implementation of the Prolog language. Its robust mult
 
 ## Start a REPL
 
-This image can be run directly to obtain an SWI-Prolog environment with most useful modules pre-built.  When started without parameters, the SWI-Prolog REPL is launched automatically:
+This image can be run directly to obtain an SWI-Prolog environment with most useful modules pre-built. When started without parameters, the SWI-Prolog REPL is launched automatically:
 
 ```console
 docker run -it %%IMAGE%% 
