@@ -19,7 +19,7 @@ WARNING:
 -	[`2.2.32`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/1883f2ec8be5f2a0cd176673a249c618ad7976ba/2.2/Dockerfile)
 -	[`2.2.32-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/1883f2ec8be5f2a0cd176673a249c618ad7976ba/2.2/alpine/Dockerfile)
 -	[`2.4.25`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/1883f2ec8be5f2a0cd176673a249c618ad7976ba/2.4/Dockerfile)
--	[`2.4.25-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/1883f2ec8be5f2a0cd176673a249c618ad7976ba/2.4/alpine/Dockerfile)
+-	[`2.4.25-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/656b3859734d70b47386fd8bac58d5f719df596b/2.4/alpine/Dockerfile)
 
 # Quick reference
 
