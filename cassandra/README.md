@@ -180,6 +180,15 @@ This variable sets the rack name of this node. It will set the [`rack`](http://d
 
 This variable sets the snitch implementation this node will use. It will set the [`endpoint_snitch`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__endpoint_snitch) option of `cassandra.yml`.
 
+### `MAX_HEAP_SIZE` and `HEAP_NEWSIZE`
+
+These variables will set the maximum memory used for the JVM heap and the Young Generation space respectively. BOTH must either be specified or left to default values. The default (since?) is to use max( min( total_memory/2, 1G), min( total_memory/4, 8G) ). That means on a machine with less than 2G of RAM, half will be allocated, on a 4G-32G RAM machine it will be 25% allocated to the heap, and for machines with more than 32G 8G will be set in the -Xmx and -Xms JVM arguments.
+The Young Gen Space is by default 100M per core in the system, but not more than 25% of the max heap size.
+
+### `CASSANDRA_HEAPDUMP_DIR`
+
+The directory where a heap dump should occur, i.e. setting to the -XX:HeapDumpPath= JVM option. If this environment variable is not set, the JVM option is not set.
+ 
 # Caveats
 
 ## Where to Store Data
