@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.3.3` (*7.3/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/19d78ec0f212891e97814b2db30891b9b280f7e5/7.3/Dockerfile)
--	[`7.4.3`, `latest` (*7.4/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/5e4d4c6d86a90b2f7639215e4098097200a8751a/7.4/Dockerfile)
+-	[`7.4.3` (*7.4/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/5e4d4c6d86a90b2f7639215e4098097200a8751a/7.4/Dockerfile)
+-	[`7.5.0`, `latest` (*7.5/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/d5b521cca0d88eab6f093ef38045d456ebbecde4/7.5/Dockerfile)
 
 # Quick reference
 
@@ -205,9 +205,9 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 
 		```console
 		cd bonita_migration
-		wget http://download.forge.ow2.org/bonita/bonita-migration-distrib-2.20.0.zip
+		wget http://download.forge.ow2.org/bonita/bonita-migration-distrib-2.22.0.zip
 		wget http://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
-		unzip bonita-migration-distrib-2.20.0.zip
+		unzip bonita-migration-distrib-2.22.0.zip
 		unzip BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
 		```
 
@@ -222,13 +222,13 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 
 		```console
 		cd bonita_migration
-		wget http://download.forge.ow2.org/bonita/bonita-migration-distrib-2.20.0.zip
-		unzip bonita-migration-distrib-2.20.0.zip
+		wget http://download.forge.ow2.org/bonita/bonita-migration-distrib-2.22.0.zip
+		unzip bonita-migration-distrib-2.22.0.zip
 		```
 
 -	Configure the migration tool
 
-		cd bonita-migration-distrib-2.20.0
+		cd bonita-migration-distrib-2.22.0
 
 	edit the migration tool config to point towards the copy of bonita home and db
 
@@ -260,17 +260,17 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 	-	If >= 7.3.0
 
 	```console
-	$ docker run --name=bonita_7.4.2_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.4.2
+	$ docker run --name=bonita_7.5.0_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.5.0
 	```
 
 -	Reapply specific configuration if needed, for example with a version >= 7.3.0 :
 
 	```console
-	$ docker exec -ti bonita_7.4.2_postgres /bin/bash
+	$ docker exec -ti bonita_7.5.0_postgres /bin/bash
 	```
 
 	```console
-	$ cd /opt/bonita/BonitaBPMCommunity-7.4.2-Tomcat-7.0.67/setup
+	$ cd /opt/bonita/BonitaBPMCommunity-7.5.0-Tomcat-7.0.76/setup
 	$ ./setup.sh pull
 	$ TENANT_LOGIN=tech_user
 	$ TENANT_PASSWORD=secret
@@ -290,7 +290,7 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 	```
 
 	```console
-	$ docker restart bonita_7.4.2_postgres
+	$ docker restart bonita_7.5.0_postgres
 	```
 
 For more details regarding Bonita migration, see the [documentation](http://documentation.bonitasoft.com/?page=migrate-from-an-earlier-version-of-bonita-bpm).
@@ -393,7 +393,7 @@ For example, you can increase the log level :
 
 	mkdir -p custom_bonita
 	echo '#!/bin/bash' > custom_bonita/bonita.sh
-	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaBPMCommunity-7.4.2-Tomcat-7.0.67/server/conf/logging.properties' >> custom_bonita/bonita.sh
+	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaBPMCommunity-7.5.0-Tomcat-7.0.76/server/conf/logging.properties' >> custom_bonita/bonita.sh
 	chmod +x custom_bonita/bonita.sh
 	
 	docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
@@ -402,7 +402,7 @@ Note: There are several ways to check the `bonita` logs. One of them is
 
 ```console
 $ docker exec -ti bonita_custom /bin/bash
-tail -f /opt/bonita/BonitaBPMCommunity-7.4.2-Tomcat-7.0.67/server/logs/bonita.`date +%Y-%m-%d`.log
+tail -f /opt/bonita/BonitaBPMCommunity-7.5.0-Tomcat-7.0.76/server/logs/bonita.`date +%Y-%m-%d`.log
 ```
 
 # License
