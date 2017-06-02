@@ -22,8 +22,8 @@ Elastic provides open-source support for Elasticsearch via the [elastic/elastics
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.4.0`, `5.4`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/f9b79ebc2e8fd42372b8f302321585c4d09f9ccc/5/Dockerfile)
--	[`5.4.0-alpine`, `5.4-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/f9b79ebc2e8fd42372b8f302321585c4d09f9ccc/5/alpine/Dockerfile)
+-	[`5.4.1`, `5.4`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ca669a81afb503dedac6ba1bb8bef2abc158f081/5/Dockerfile)
+-	[`5.4.1-alpine`, `5.4-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ca669a81afb503dedac6ba1bb8bef2abc158f081/5/alpine/Dockerfile)
 -	[`2.4.5`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ee9ba02f90f6b34ca33c20140ecff2b6db7c0c90/2.4/Dockerfile)
 -	[`2.4.5-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ee9ba02f90f6b34ca33c20140ecff2b6db7c0c90/2.4/alpine/Dockerfile)
 -	[`1.7.6`, `1.7`, `1` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ffd7a19f1e68329cc310f145c232e83abec09067/1.7/Dockerfile)
