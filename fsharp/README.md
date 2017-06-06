@@ -16,7 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `4`, `4.1`, `4.1.18` (*4.1.18/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.1.18/mono/Dockerfile)
+-	[`latest`, `4`, `4.1`, `4.1.18` (*4.1.18/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/ad4c4d67a1975b2b0ff0acc49dc46b3271836831/4.1.18/mono/Dockerfile)
+-	[`4.1.18-wheezy-slim` (*4.1.18/mono-wheezy/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/33b5be9aea66ea1d258daf23055fa6d9bcb164ff/4.1.18/mono-wheezy/Dockerfile)
 -	[`4.1.0.1` (*4.1.0.1/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.1.0.1/mono/Dockerfile)
 -	[`4.0`, `4.0.1`, `4.0.1.1` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.0.1.1/Dockerfile)
 -	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.0.0.4/Dockerfile)
