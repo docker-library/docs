@@ -114,6 +114,6 @@ web:
 
 With Amplify it is possible to collect and aggregate metrics across containers, and present a coherent set of visualizations of the key performance data, such as active connections or requests per second. It is also easy to quickly check for any performance degradations, traffic anomalies, and get a deeper insight into the nginx configuration in general.
 
-In order to use Amplify, the Amplify Agent should be [installed](https://github.com/nginxinc/docker-nginx-amplify) inside the container.
+In order to use Amplify, a small Python-based agent software (Amplify Agent) should be [installed](https://github.com/nginxinc/docker-nginx-amplify) inside the container.
 
 For more information about Amplify, please check the official documentation [here](https://github.com/nginxinc/nginx-amplify-doc).
