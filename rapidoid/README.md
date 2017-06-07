@@ -79,6 +79,7 @@ docker run -it --rm \
     --link some-mysql:mysql \
     rapidoid \
     profiles=mysql \
+    jdbc.host=mysql \
     jdbc.password=db-pass \
     '/users <= SELECT user FROM mysql.user'
 ```
@@ -93,7 +94,7 @@ docker run -it --rm \
 
 ## Serving static files
 
-Rapidoid will automatically serve static files from the folders: `/app/static` (or `/app/public`, which is deprecated). To serve the contents of the `/your-www-root` directory, please mount it as `/app/static`:
+Rapidoid will automatically serve static files from the folders: `/app/static`. To serve the contents of the `/your-www-root` directory, please mount it as `/app/static`:
 
 ```console
 $ docker run -it --rm \
@@ -106,15 +107,15 @@ $ docker run -it --rm \
 
 Rapidoid will try to read the configuration from `/app/config.yml`. The configuration can also be specified with command-line arguments or environment variables.
 
-To configure a custom port (by default `8888`) for the default and the Admin server, run the following command. If `admin.port` is not configured, the default server is also used as Admin server, so only one port will be opened (`on.port`).
+To configure a custom port (by default `8888`) for the default and the Admin server, run the following command. If `rapidoid-admin.port` is not configured, the default server is also used as Admin server, so only one port will be opened (`rapidoid.port`).
 
 ```console
 $ docker run -it --rm \
     -p 4444:4444 \
     -p 9999:9999 \
     rapidoid \
-    on.port=4444 \
-    admin.port=9999 \
+    rapidoid.port=4444 \
+    rapidoid-admin.port=9999 \
     app.services=ping \
     admin.services=status
 ```
@@ -127,8 +128,8 @@ The same setup can be configured with environment variables:
 $ docker run -it --rm \
     -p 4444:4444 \
     -p 9999:9999 \
-    -e ON_PORT=4444 \
-    -e ADMIN_PORT=9999 \
+    -e RAPIDOID_PORT=4444 \
+    -e RAPIDOID-ADMIN_PORT=9999 \
     rapidoid \
     app.services=ping \
     admin.services=status
