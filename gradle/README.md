@@ -66,6 +66,8 @@ Run this from the directory of the Gradle project you want to build.
 
 `docker run --rm -v "$PWD":/project -w /project --name gradle gradle:alpine gradle <gradle-task>`
 
+**Note: Java 9 support is experimental**
+
 # Image Variants
 
 The `gradle` images come in many flavors, each designed for a specific use case.

@@ -86,6 +86,8 @@ docker volume create --name grapes-cache
 docker run -it -v grapes-cache:/home/groovy/.groovy/grapes groovy:alpine
 ```
 
+**Note: Java 9 support is experimental**
+
 # Image Variants
 
 The `groovy` images come in many flavors, each designed for a specific use case.
