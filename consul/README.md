@@ -50,7 +50,7 @@ Consul is a distributed, highly-available, and multi-datacenter aware tool for s
 -	[Consul documentation](https://www.consul.io/)
 -	[Consul on GitHub](https://github.com/hashicorp/consul)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/27b03f6f9076e05839961530006185998660f321/consul/logo.png)
+![logo](https://cdn.rawgit.com/docker-library/docs/8adb88e1e328c244711742f65319ed4064cff9a2/consul/logo.svg)
 
 # Consul and Docker
 

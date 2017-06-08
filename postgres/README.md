@@ -17,15 +17,15 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`9.6.3`, `9.6`, `9`, `latest` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/54053ad27ac099abff3d4964bf7460fb9c541d5d/9.6/Dockerfile)
--	[`9.6.3-alpine`, `9.6-alpine`, `9-alpine`, `alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/54053ad27ac099abff3d4964bf7460fb9c541d5d/9.6/alpine/Dockerfile)
+-	[`9.6.3-alpine`, `9.6-alpine`, `9-alpine`, `alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/2b0f642834a9ab4bad3155ff4a2a0e3ee457b75b/9.6/alpine/Dockerfile)
 -	[`9.5.7`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/54053ad27ac099abff3d4964bf7460fb9c541d5d/9.5/Dockerfile)
--	[`9.5.7-alpine`, `9.5-alpine` (*9.5/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/54053ad27ac099abff3d4964bf7460fb9c541d5d/9.5/alpine/Dockerfile)
+-	[`9.5.7-alpine`, `9.5-alpine` (*9.5/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/2b0f642834a9ab4bad3155ff4a2a0e3ee457b75b/9.5/alpine/Dockerfile)
 -	[`9.4.12`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/54053ad27ac099abff3d4964bf7460fb9c541d5d/9.4/Dockerfile)
--	[`9.4.12-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/54053ad27ac099abff3d4964bf7460fb9c541d5d/9.4/alpine/Dockerfile)
+-	[`9.4.12-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/2b0f642834a9ab4bad3155ff4a2a0e3ee457b75b/9.4/alpine/Dockerfile)
 -	[`9.3.17`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/54053ad27ac099abff3d4964bf7460fb9c541d5d/9.3/Dockerfile)
--	[`9.3.17-alpine`, `9.3-alpine` (*9.3/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/54053ad27ac099abff3d4964bf7460fb9c541d5d/9.3/alpine/Dockerfile)
+-	[`9.3.17-alpine`, `9.3-alpine` (*9.3/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/2b0f642834a9ab4bad3155ff4a2a0e3ee457b75b/9.3/alpine/Dockerfile)
 -	[`9.2.21`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/54053ad27ac099abff3d4964bf7460fb9c541d5d/9.2/Dockerfile)
--	[`9.2.21-alpine`, `9.2-alpine` (*9.2/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/54053ad27ac099abff3d4964bf7460fb9c541d5d/9.2/alpine/Dockerfile)
+-	[`9.2.21-alpine`, `9.2-alpine` (*9.2/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/2b0f642834a9ab4bad3155ff4a2a0e3ee457b75b/9.2/alpine/Dockerfile)
 
 # Quick reference
 
