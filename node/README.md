@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.0`, `8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/nodejs/docker-node/blob/0a3a6dbbef745e908dbf83ca38e0fd06f869e061/8.0/Dockerfile)
--	[`8.0.0-alpine`, `8.0-alpine`, `8-alpine`, `alpine` (*8.0/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/09e42c172ffd6f8631fb1cb7a0785fd890c0f11a/8.0/alpine/Dockerfile)
--	[`8.0.0-onbuild`, `8.0-onbuild`, `8-onbuild`, `onbuild` (*8.0/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/0a3a6dbbef745e908dbf83ca38e0fd06f869e061/8.0/onbuild/Dockerfile)
--	[`8.0.0-slim`, `8.0-slim`, `8-slim`, `slim` (*8.0/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/09e42c172ffd6f8631fb1cb7a0785fd890c0f11a/8.0/slim/Dockerfile)
--	[`8.0.0-wheezy`, `8.0-wheezy`, `8-wheezy`, `wheezy` (*8.0/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/09e42c172ffd6f8631fb1cb7a0785fd890c0f11a/8.0/wheezy/Dockerfile)
+-	[`8.1.0`, `8.1`, `8`, `latest` (*8.1/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a8eef541ef29ae81f53f0fdd177ec20bbead3ed2/8.1/Dockerfile)
+-	[`8.1.0-alpine`, `8.1-alpine`, `8-alpine`, `alpine` (*8.1/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a8eef541ef29ae81f53f0fdd177ec20bbead3ed2/8.1/alpine/Dockerfile)
+-	[`8.1.0-onbuild`, `8.1-onbuild`, `8-onbuild`, `onbuild` (*8.1/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a8eef541ef29ae81f53f0fdd177ec20bbead3ed2/8.1/onbuild/Dockerfile)
+-	[`8.1.0-slim`, `8.1-slim`, `8-slim`, `slim` (*8.1/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a8eef541ef29ae81f53f0fdd177ec20bbead3ed2/8.1/slim/Dockerfile)
+-	[`8.1.0-wheezy`, `8.1-wheezy`, `8-wheezy`, `wheezy` (*8.1/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a8eef541ef29ae81f53f0fdd177ec20bbead3ed2/8.1/wheezy/Dockerfile)
 -	[`6.11.0`, `6.11`, `6`, `boron` (*6.11/Dockerfile*)](https://github.com/nodejs/docker-node/blob/e2b78b4bde9440f2189007004a2ae4880f3eb030/6.11/Dockerfile)
 -	[`6.11.0-alpine`, `6.11-alpine`, `6-alpine`, `boron-alpine` (*6.11/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/e2b78b4bde9440f2189007004a2ae4880f3eb030/6.11/alpine/Dockerfile)
 -	[`6.11.0-onbuild`, `6.11-onbuild`, `6-onbuild`, `boron-onbuild` (*6.11/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/e2b78b4bde9440f2189007004a2ae4880f3eb030/6.11/onbuild/Dockerfile)
