@@ -16,8 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/bdee60d7ff6b98037657dc34a10e9ca4ffd6785f/hola-mundo/Dockerfile)
--	[`nanoserver` (*hola-mundo/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/1f13a5bc3b787747eeefb3b0051d8d29f851260d/hola-mundo/nanoserver/Dockerfile)
+-	[`latest` (*amd64/hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hola-mundo/Dockerfile)
 
 # Quick reference
 
