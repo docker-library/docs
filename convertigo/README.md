@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.4.5`, `7.4`, `latest` (*7.4/7.4.5/Dockerfile*)](https://github.com/convertigo/docker/blob/866dff0b76231906e1efdeafd63fe522d20b6c05/7.4/7.4.5/Dockerfile)
--	[`web-connector-7.4.5`, `web-connector-7.4`, `web-connector` (*7.4/7.4.5/web-connector/Dockerfile*)](https://github.com/convertigo/docker/blob/866dff0b76231906e1efdeafd63fe522d20b6c05/7.4/7.4.5/web-connector/Dockerfile)
+-	[`7.4.6`, `7.4`, `latest` (*7.4/7.4.6/Dockerfile*)](https://github.com/convertigo/docker/blob/fb5ac90d57ebb78b00fe1bdb306bef7ad268cce5/7.4/7.4.6/Dockerfile)
+-	[`web-connector-7.4.6`, `web-connector-7.4`, `web-connector` (*7.4/7.4.6/web-connector/Dockerfile*)](https://github.com/convertigo/docker/blob/fb5ac90d57ebb78b00fe1bdb306bef7ad268cce5/7.4/7.4.6/web-connector/Dockerfile)
 
 # Quick reference
 
@@ -147,7 +147,7 @@ Convertigo is based on a *Java* process with some defaults *JVM* options. You ca
 Add any *Java JVM* options such as -Xmx or -D[something]
 
 ```console
-$ docker run -d --name C8O-MBAAS -e JAVA_OPTS="-Xmx4096 -DjvmRoute=server1" -p 28080:28080 convertigo
+$ docker run -d --name C8O-MBAAS -e JAVA_OPTS="-Xmx4096m -DjvmRoute=server1" -p 28080:28080 convertigo
 ```
 
 ## Pre configurated Docker compose stack
