@@ -21,7 +21,7 @@ WARNING:
 -	[`webProfile6` (*ga/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/8008b344085e4e49d7d702fdb0db1fa5363c0899/ga/developer/webProfile6/Dockerfile)
 -	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/8008b344085e4e49d7d702fdb0db1fa5363c0899/ga/developer/webProfile7/Dockerfile)
 -	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/8008b344085e4e49d7d702fdb0db1fa5363c0899/ga/developer/javaee7/Dockerfile)
--	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/90d698a5d0c9e82f77aefee492a006c520670859/beta/Dockerfile)
+-	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/a823b76c3f956c34753c029ee9f494b80ed4ad75/beta/Dockerfile)
 
 # Quick reference
 
