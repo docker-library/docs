@@ -101,7 +101,7 @@ Convertigo is based on a *Java* process with some defaults *JVM* options. You ca
 Add any *Java JVM* options such as -Xmx or -D[something]
 
 ```console
-$ docker run -d --name C8O-MBAAS -e JAVA_OPTS="-Xmx4096 -DjvmRoute=server1" -p 28080:28080 convertigo
+$ docker run -d --name C8O-MBAAS -e JAVA_OPTS="-Xmx4096m -DjvmRoute=server1" -p 28080:28080 convertigo
 ```
 
 ## Pre configurated Docker compose stack
