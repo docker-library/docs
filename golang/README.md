@@ -16,6 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`1.9beta1`, `1.9-rc`, `1.9`, `rc` (*1.9-rc/Dockerfile*)](https://github.com/docker-library/golang/blob/cdeca62eb84c34680e2f4ec018d1d6cfaa818681/1.9-rc/Dockerfile)
+-	[`1.9beta1-alpine`, `1.9-rc-alpine`, `1.9-alpine`, `rc-alpine` (*1.9-rc/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/cdeca62eb84c34680e2f4ec018d1d6cfaa818681/1.9-rc/alpine/Dockerfile)
 -	[`1.8.3`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/golang/blob/97b2ff201ec59b9a037197d132c64eb937370c64/1.8/Dockerfile)
 -	[`1.8.3-onbuild`, `1.8-onbuild`, `1-onbuild`, `onbuild` (*1.8/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/onbuild/Dockerfile)
 -	[`1.8.3-stretch`, `1.8-stretch`, `1-stretch`, `stretch` (*1.8/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/97b2ff201ec59b9a037197d132c64eb937370c64/1.8/stretch/Dockerfile)

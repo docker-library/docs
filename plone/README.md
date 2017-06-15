@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.7`, `5.0`, `5`, `latest` (*5.0/5.0.7/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/44f25221c677cc729e0c69c33f64f69c396a1024/5.0/5.0.7/debian/Dockerfile)
+-	[`5.0.8`, `5.0`, `5`, `latest` (*5.0/5.0.8/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/61cce5aaee119c3aa912529738195fc3881cc37e/5.0/5.0.8/debian/Dockerfile)
 -	[`4.3.14`, `4.3`, `4` (*4.3/4.3.14/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/d465f6866dd13be589c94abe880e8e6561df1d5d/4.3/4.3.14/debian/Dockerfile)
 
 # Quick reference
