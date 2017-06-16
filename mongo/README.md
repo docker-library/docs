@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.15`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/8df1bc6fda6141aac6ab7a550edc4dc120d40a0b/3.0/Dockerfile)
--	[`3.2.14`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/333b2d1a5dae3d40e31da7459f6dfb8a1847e890/3.2/Dockerfile)
--	[`3.4.5`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/e25d020918434d29378b4ca58c34843c215cd043/3.4/Dockerfile)
--	[`3.5.8`, `3.5`, `unstable` (*3.5/Dockerfile*)](https://github.com/docker-library/mongo/blob/45055cc0c67da614a3edf24369fb1484701f88e3/3.5/Dockerfile)
+-	[`3.0.15`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/00a8519463e776e797c227681a595986d8f9dbe1/3.0/Dockerfile)
+-	[`3.2.14`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/00a8519463e776e797c227681a595986d8f9dbe1/3.2/Dockerfile)
+-	[`3.4.5`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/00a8519463e776e797c227681a595986d8f9dbe1/3.4/Dockerfile)
+-	[`3.5.8`, `3.5`, `unstable` (*3.5/Dockerfile*)](https://github.com/docker-library/mongo/blob/00a8519463e776e797c227681a595986d8f9dbe1/3.5/Dockerfile)
 
 # Quick reference
 

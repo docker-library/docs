@@ -23,9 +23,9 @@ WARNING:
 -	[`7u131-jre`, `7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/93316d3b14379d29fe0cd363bd6839eb8dd8cc7b/7-jre/Dockerfile)
 -	[`7u131-jre-alpine`, `7-jre-alpine` (*7-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/43e145f3fc5fd98a141f0c1c6fe90b9ea93977da/7-jre/alpine/Dockerfile)
 -	[`8u131-jdk`, `8u131`, `8-jdk`, `8`, `jdk`, `latest` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/415b0cc42d91ef5d70597d8a24d942967728242b/8-jdk/Dockerfile)
--	[`8u131-jdk-alpine`, `8u131-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/43e145f3fc5fd98a141f0c1c6fe90b9ea93977da/8-jdk/alpine/Dockerfile)
+-	[`8u131-jdk-alpine`, `8u131-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/238cc35696423794b1951fc63d4cc9ffb8ca9685/8-jdk/alpine/Dockerfile)
 -	[`8u131-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/415b0cc42d91ef5d70597d8a24d942967728242b/8-jre/Dockerfile)
--	[`8u131-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/43e145f3fc5fd98a141f0c1c6fe90b9ea93977da/8-jre/alpine/Dockerfile)
+-	[`8u131-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/238cc35696423794b1951fc63d4cc9ffb8ca9685/8-jre/alpine/Dockerfile)
 -	[`9-b170-jdk`, `9-b170`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/c34391ea981c804c097981bad8403ec4bd934285/9-jdk/Dockerfile)
 -	[`9-b170-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/c34391ea981c804c097981bad8403ec4bd934285/9-jre/Dockerfile)
 
