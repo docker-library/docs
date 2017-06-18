@@ -35,3 +35,7 @@ $ docker run --name some-kibana -e ELASTICSEARCH_URL=http://some-elasticsearch:9
 ```
 
 Then, access it via `http://localhost:5601` or `http://host-ip:5601` in a browser.
+
+## %%STACK%%
+
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:5601`, `http://localhost:5601`, or `http://host-ip:5601` (as appropriate).
