@@ -18,7 +18,8 @@ WARNING:
 
 -	[`3.12.1`, `3.12.0`, `3.12`, `3` (*3.12.1/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/3.12.1/Dockerfile)
 -	[`4.8.0.524`, `4.8.0`, `4.8`, `4` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/4.8.0.524/Dockerfile)
--	[`5.0.0.100`, `5.0.0`, `5.0`, `5`, `latest` (*5.0.0.100/Dockerfile*)](https://github.com/mono/docker/blob/5d27cb132d84e12b8d983f4690c1ef716dc177db/5.0.0.100/Dockerfile)
+-	[`5.0.0.100`, `5.0.0` (*5.0.0.100/Dockerfile*)](https://github.com/mono/docker/blob/d7a8871afc770695b81977272792d8966340939e/5.0.0.100/Dockerfile)
+-	[`5.0.1.1`, `5.0.1`, `5.0`, `5`, `latest` (*5.0.1.1/Dockerfile*)](https://github.com/mono/docker/blob/39b989ea0ef3e787fb75410521217cb7cb7df05e/5.0.1.1/Dockerfile)
 
 # Quick reference
 
