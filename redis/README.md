@@ -19,9 +19,13 @@ WARNING:
 -	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/fa0e115934f352cbfa8d0d471b43a18e865e28b3/3.0/Dockerfile)
 -	[`3.0.7-32bit`, `3.0-32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/fa0e115934f352cbfa8d0d471b43a18e865e28b3/3.0/32bit/Dockerfile)
 -	[`3.0.7-alpine`, `3.0-alpine` (*3.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/fa0e115934f352cbfa8d0d471b43a18e865e28b3/3.0/alpine/Dockerfile)
--	[`3.2.9`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/fa0e115934f352cbfa8d0d471b43a18e865e28b3/3.2/Dockerfile)
--	[`3.2.9-32bit`, `3.2-32bit`, `3-32bit`, `32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/fa0e115934f352cbfa8d0d471b43a18e865e28b3/3.2/32bit/Dockerfile)
--	[`3.2.9-alpine`, `3.2-alpine`, `3-alpine`, `alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/fa0e115934f352cbfa8d0d471b43a18e865e28b3/3.2/alpine/Dockerfile)
+-	[`3.0.504-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/redis/blob/ad72d7a7f3c05a9b658ec64894d4193c89bba01b/3.0/windows/windowsservercore/Dockerfile)
+-	[`3.0.504-nanoserver`, `3.0-nanoserver` (*3.0/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/redis/blob/ad72d7a7f3c05a9b658ec64894d4193c89bba01b/3.0/windows/nanoserver/Dockerfile)
+-	[`3.2.9`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/f131897d1f6305b8f6ebae695344f19c523e2c65/3.2/Dockerfile)
+-	[`3.2.9-32bit`, `3.2-32bit`, `3-32bit`, `32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/f131897d1f6305b8f6ebae695344f19c523e2c65/3.2/32bit/Dockerfile)
+-	[`3.2.9-alpine`, `3.2-alpine`, `3-alpine`, `alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/f131897d1f6305b8f6ebae695344f19c523e2c65/3.2/alpine/Dockerfile)
+-	[`3.2.100-windowsservercore`, `3.2-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/redis/blob/f131897d1f6305b8f6ebae695344f19c523e2c65/3.2/windows/windowsservercore/Dockerfile)
+-	[`3.2.100-nanoserver`, `3.2-nanoserver`, `3-nanoserver`, `nanoserver` (*3.2/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/redis/blob/f131897d1f6305b8f6ebae695344f19c523e2c65/3.2/windows/nanoserver/Dockerfile)
 
 # Quick reference
 
