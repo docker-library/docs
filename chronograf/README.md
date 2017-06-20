@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3`, `1.3.2`, `1.3.2.1`, `latest` (*chronograf/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fa357816a5057b26839e009ad10a2fa82e5cc581/chronograf/1.3/Dockerfile)
--	[`1.3-alpine`, `1.3.2-alpine`, `1.3.2.1-alpine`, `alpine` (*chronograf/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fa357816a5057b26839e009ad10a2fa82e5cc581/chronograf/1.3/alpine/Dockerfile)
+-	[`1.3`, `1.3.3`, `1.3.3.0`, `latest` (*chronograf/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/8dcb787863ca08526b91acc67344622caa5e128b/chronograf/1.3/Dockerfile)
+-	[`1.3-alpine`, `1.3.3-alpine`, `1.3.3.0-alpine`, `alpine` (*chronograf/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/8dcb787863ca08526b91acc67344622caa5e128b/chronograf/1.3/alpine/Dockerfile)
 
 # Quick reference
 
