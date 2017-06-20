@@ -22,12 +22,12 @@ Elastic provides open-source support for Logstash via the [elastic/logstash GitH
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.4.1`, `5.4`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/fcab4d9ce9b16bb2b14f263fc05d54204300a86b/5/Dockerfile)
--	[`5.4.1-alpine`, `5.4-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/fcab4d9ce9b16bb2b14f263fc05d54204300a86b/5/alpine/Dockerfile)
--	[`2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/754eeb919e42b1f6f2708b73f6f13cbc06fd722c/2.4/Dockerfile)
--	[`2.4.1-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/6e2d8dc1263d098129a264deeca065129b6c4bca/2.4/alpine/Dockerfile)
--	[`1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/754eeb919e42b1f6f2708b73f6f13cbc06fd722c/1.5/Dockerfile)
--	[`1.5.6-alpine`, `1.5-alpine`, `1-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/7eaa1cd9db876cd1e57371a7a515988c9768e7cc/1.5/alpine/Dockerfile)
+-	[`5.4.2`, `5.4`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/490a19e4869686e73bb71eeda233d2e886bde609/5/Dockerfile)
+-	[`5.4.2-alpine`, `5.4-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/490a19e4869686e73bb71eeda233d2e886bde609/5/alpine/Dockerfile)
+-	[`2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/19330c802e6f198f015c0c4723a6d86ed449d93f/2.4/Dockerfile)
+-	[`2.4.1-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/19330c802e6f198f015c0c4723a6d86ed449d93f/2.4/alpine/Dockerfile)
+-	[`1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/19330c802e6f198f015c0c4723a6d86ed449d93f/1.5/Dockerfile)
+-	[`1.5.6-alpine`, `1.5-alpine`, `1-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/19330c802e6f198f015c0c4723a6d86ed449d93f/1.5/alpine/Dockerfile)
 
 # Quick reference
 
