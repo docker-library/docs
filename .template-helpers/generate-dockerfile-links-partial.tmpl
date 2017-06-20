@@ -4,21 +4,13 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 
 */ -}}
 
-{{- define "dockerfilePath" -}}
-	{{- $dir := .ArchDirectory arch -}}
-	{{- if ne $dir "." -}}
-		{{- $dir -}}
-		/
-	{{- end -}}
-	Dockerfile
-{{- end -}}
-
 {{- range $i, $e := $.Entries -}}
-	{{- if $e.HasArchitecture arch -}}
+	{{- $arch := ternary (ternary arch ($e.Architectures | first) ($e.HasArchitecture arch)) arch (eq arch "amd64") -}}
+	{{- if $e.HasArchitecture $arch -}}
 		{{- /* force bashbrew to "fetch" the GitCommit so that it is fully resolved */ -}}
-		{{- $from := $.DockerFrom $e -}}
+		{{- $from := $.ArchDockerFrom $arch $e -}}
 
-		{{- $gitRepo := $e.ArchGitRepo arch -}}
+		{{- $gitRepo := $e.ArchGitRepo $arch -}}
 		{{- $repoUrlBase := $gitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
 		{{- $isGitHub := hasPrefix "https://github.com/" $repoUrlBase -}}
 
@@ -28,9 +20,11 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 
 		- {{- "\t" -}}
 		{{- if $isGitHub -}} [ {{- end -}}
-		` {{- $e.Tags | join "`, `" -}} ` (* {{- template "dockerfilePath" $e -}} *)
-		{{- $gitCommit := $e.ArchGitCommit arch -}}
-		{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $gitCommit -}} / {{- template "dockerfilePath" $e -}} ) {{- end -}}
+		{{- $dir := .ArchDirectory $arch -}}
+		{{- $dockerfilePath := ternary "Dockerfile" (join "/" $dir "Dockerfile") (eq $dir ".") -}}
+		` {{- $e.Tags | join "`, `" -}} ` (* {{- $dockerfilePath -}} *)
+		{{- $gitCommit := $e.ArchGitCommit $arch -}}
+		{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $gitCommit -}} / {{- $dockerfilePath -}} ) {{- end -}}
 		{{- /* TODO decide what to do (if anything) about non-GitHub repos with respect to URL */ -}}
 	{{- end -}}
 {{- end -}}
