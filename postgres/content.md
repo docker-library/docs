@@ -42,6 +42,10 @@ postgres=# SELECT 1;
 
 ```
 
+## %%STACK%%
+
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+
 ## Environment Variables
 
 The PostgreSQL image uses several environment variables which are easy to miss. While none of the variables are required, they may significantly aid you in using the image.

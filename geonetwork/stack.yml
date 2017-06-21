@@ -5,7 +5,7 @@
 # Default user: admin
 # Default password: admin
 
-version: '2'
+version: '3.1'
 services:
 
     geonetwork:
@@ -15,4 +15,8 @@ services:
       environment:
           DATA_DIR: /var/lib/geonetwork_data
       volumes:
-         - "/host/geonetwork-docker:/var/lib/geonetwork_data"
+         - geonetwork:/var/lib/geonetwork_data
+
+volumes:
+    geonetwork:
+

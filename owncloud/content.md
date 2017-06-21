@@ -44,4 +44,6 @@ The [`occ` tool from upstream](https://doc.owncloud.org/server/9.0/admin_manual/
 $ docker exec -u www-data some-owncloud php occ status
 ```
 
-## %%COMPOSE%%
+## %%STACK%%
+
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/`, `http://localhost:8080/`, or `http://host-ip:8080` (as appropriate).
