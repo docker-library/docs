@@ -89,6 +89,28 @@ $ docker run --name some-kibana -e ELASTICSEARCH_URL=http://some-elasticsearch:9
 
 Then, access it via `http://localhost:5601` or `http://host-ip:5601` in a browser.
 
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+
+Example `stack.yml` for `kibana`:
+
+```yaml
+version: '3.1'
+
+services:
+
+    kibana:
+        image: kibana
+        ports:
+            - 5601:5601
+
+    elasticsearch:
+        image: elasticsearch
+```
+
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/96c08fac215f64844b9db61038a571b86534a12b/kibana/stack.yml)
+
+Run `docker stack deploy -c stack.yml kibana` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:5601`, `http://localhost:5601`, or `http://host-ip:5601` (as appropriate).
+
 # License
 
 View [license information](https://github.com/elastic/kibana/blob/4557a6fc0ba08c5e7ac813a180179e5e2631c90a/LICENSE.md) for the software contained in this image.

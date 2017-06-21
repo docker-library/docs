@@ -100,9 +100,9 @@ If you want the data directory to live beyond restarts, or even destruction of t
 $ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork_data -v /host/geonetwork-docker:/var/lib/geonetwork_data geonetwork
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `geonetwork`:
+Example `stack.yml` for `geonetwork`:
 
 ```yaml
 # GeoNetwork
@@ -112,7 +112,7 @@ Example `docker-compose.yml` for `geonetwork`:
 # Default user: admin
 # Default password: admin
 
-version: '2'
+version: '3.1'
 services:
 
     geonetwork:
@@ -122,10 +122,15 @@ services:
       environment:
           DATA_DIR: /var/lib/geonetwork_data
       volumes:
-         - "/host/geonetwork-docker:/var/lib/geonetwork_data"
+         - geonetwork:/var/lib/geonetwork_data
+
+volumes:
+    geonetwork:
 ```
 
-Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080/geonetwork` or `http://host-ip:8080/geonetwork`.
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/54359bd26c41e63c6e50ccd338b5a18d8b572c60/geonetwork/stack.yml)
+
+Run `docker stack deploy -c stack.yml geonetwork` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/geonetwork`, `http://localhost:8080/geonetwork`, or `http://host-ip:8080/geonetwork` (as appropriate).
 
 ## Default credentials
 

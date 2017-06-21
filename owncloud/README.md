@@ -98,9 +98,9 @@ The [`occ` tool from upstream](https://doc.owncloud.org/server/9.0/admin_manual/
 $ docker exec -u www-data some-owncloud php occ status
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `owncloud`:
+Example `stack.yml` for `owncloud`:
 
 ```yaml
 # ownCloud with MariaDB/MySQL
@@ -113,7 +113,7 @@ Example `docker-compose.yml` for `owncloud`:
 # Database name: pick any name
 # Database host: replace "localhost" with "mysql"
 
-version: '2'
+version: '3.1'
 
 services:
 
@@ -127,6 +127,10 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: example
 ```
+
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/54359bd26c41e63c6e50ccd338b5a18d8b572c60/owncloud/stack.yml)
+
+Run `docker stack deploy -c stack.yml owncloud` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/`, `http://localhost:8080/`, or `http://host-ip:8080` (as appropriate).
 
 # License
 

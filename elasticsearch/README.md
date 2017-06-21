@@ -115,6 +115,28 @@ $ docker run -d -v "$PWD/esdata":/usr/share/elasticsearch/data elasticsearch
 
 This image includes `EXPOSE 9200 9300` ([default `http.port`](http://www.elastic.co/guide/en/elasticsearch/reference/1.5/modules-http.html)), so standard container linking will make it automatically available to the linked containers.
 
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+
+Example `stack.yml` for `elasticsearch`:
+
+```yaml
+version: '3.1'
+
+services:
+
+    elasticsearch:
+        image: elasticsearch
+
+    kibana:
+        image: kibana
+        ports:
+            - 5601:5601
+```
+
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/96c08fac215f64844b9db61038a571b86534a12b/elasticsearch/stack.yml)
+
+Run `docker stack deploy -c stack.yml elasticsearch` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:5601`, `http://localhost:5601`, or `http://host-ip:5601` (as appropriate).
+
 # Image Variants
 
 The `elasticsearch` images come in many flavors, each designed for a specific use case.

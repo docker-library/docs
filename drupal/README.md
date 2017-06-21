@@ -131,9 +131,9 @@ $ docker run --name some-drupal --link some-postgres:postgres -d \
 	-v drupal-themes:/var/www/html/themes \
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `drupal`:
+Example `stack.yml` for `drupal`:
 
 ```yaml
 # Drupal with PostgreSQL
@@ -148,7 +148,7 @@ Example `docker-compose.yml` for `drupal`:
 # Database password: example
 # ADVANCED OPTIONS; Database host: postgres
 
-version: '2'
+version: '3.1'
 
 services:
 
@@ -172,6 +172,10 @@ services:
       POSTGRES_PASSWORD: example
     restart: always
 ```
+
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/54359bd26c41e63c6e50ccd338b5a18d8b572c60/drupal/stack.yml)
+
+Run `docker stack deploy -c stack.yml drupal` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate). When installing select `postgres` as database with the following parameters: `dbname=postgres` `user=postgres` `pass=example` `hostname=postgres`
 
 ## Adding additional libraries / extensions
 

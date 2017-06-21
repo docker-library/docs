@@ -92,6 +92,31 @@ $ docker run -it --rm mysql mysql -hsome.mysql.host -usome-mysql-user -p
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+
+Example `stack.yml` for `mysql`:
+
+```yaml
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+    db:
+        image: mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: example
+
+    adminer:
+        image: adminer
+        ports:
+            - 8080:8080
+```
+
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/96c08fac215f64844b9db61038a571b86534a12b/mysql/stack.yml)
+
+Run `docker stack deploy -c stack.yml mysql` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+
 ## Container shell access and viewing MySQL logs
 
 The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `mysql` container:
