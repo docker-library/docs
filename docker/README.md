@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.06.0-ce-rc4`, `17.06.0-ce`, `17.06.0`, `17.06-rc`, `rc`, `test` (*17.06-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/dab211d7162038d6d595017e4fd01dad78057d0b/17.06-rc/Dockerfile)
--	[`17.06.0-ce-rc4-dind`, `17.06.0-ce-dind`, `17.06.0-dind`, `17.06-rc-dind`, `rc-dind`, `test-dind` (*17.06-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/e7e2e3119360567641d334f1d274952236632357/17.06-rc/dind/Dockerfile)
--	[`17.06.0-ce-rc4-git`, `17.06.0-ce-git`, `17.06.0-git`, `17.06-rc-git`, `rc-git`, `test-git` (*17.06-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/e7e2e3119360567641d334f1d274952236632357/17.06-rc/git/Dockerfile)
+-	[`17.06.0-ce-rc5`, `17.06.0-ce`, `17.06.0`, `17.06-rc`, `rc`, `test` (*17.06-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/b39a2369d4017d89c6f369a63be5d59011d88fd5/17.06-rc/Dockerfile)
+-	[`17.06.0-ce-rc5-dind`, `17.06.0-ce-dind`, `17.06.0-dind`, `17.06-rc-dind`, `rc-dind`, `test-dind` (*17.06-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/e7e2e3119360567641d334f1d274952236632357/17.06-rc/dind/Dockerfile)
+-	[`17.06.0-ce-rc5-git`, `17.06.0-ce-git`, `17.06.0-git`, `17.06-rc-git`, `rc-git`, `test-git` (*17.06-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/e7e2e3119360567641d334f1d274952236632357/17.06-rc/git/Dockerfile)
 -	[`17.05.0-ce`, `17.05.0`, `17.05`, `17`, `latest`, `edge` (*17.05/Dockerfile*)](https://github.com/docker-library/docker/blob/dab211d7162038d6d595017e4fd01dad78057d0b/17.05/Dockerfile)
 -	[`17.05.0-ce-dind`, `17.05.0-dind`, `17.05-dind`, `17-dind`, `dind`, `edge-dind` (*17.05/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/5a196cae40e2a0ab5050cf6d79b697e032352b24/17.05/dind/Dockerfile)
 -	[`17.05.0-ce-git`, `17.05.0-git`, `17.05-git`, `17-git`, `git`, `edge-git` (*17.05/git/Dockerfile*)](https://github.com/docker-library/docker/blob/ce78a19aac321bbe50d060426b5b633cb5f74825/17.05/git/Dockerfile)
