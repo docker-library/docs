@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.46.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/2898b724af190d62981f9a43a9b992e34ab4d2f9/Dockerfile)
--	[`alpine`, `2.46.3-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/e2b9acedda09eee31d36b4fdf1f9481a65befec4/Dockerfile)
+-	[`latest`, `2.60.1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/9f29488b77c2005bbbc5c936d47e697689f8ef6e/Dockerfile)
+-	[`alpine`, `2.60.1-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/5f0f8b79ac154cc62a945b5f195dcbd68f8968d3/Dockerfile)
 
 # Quick reference
 
