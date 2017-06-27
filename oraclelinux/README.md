@@ -26,7 +26,6 @@ WARNING:
 -	[`6.8` (*OracleLinux/6.8/Dockerfile*)](https://github.com/oracle/docker-images/blob/d2eeaec9289e9a44c5d86870093c6cfe52adea73/OracleLinux/6.8/Dockerfile)
 -	[`6.7` (*OracleLinux/6.7/Dockerfile*)](https://github.com/oracle/docker-images/blob/d2eeaec9289e9a44c5d86870093c6cfe52adea73/OracleLinux/6.7/Dockerfile)
 -	[`6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker-images/blob/d2eeaec9289e9a44c5d86870093c6cfe52adea73/OracleLinux/6.6/Dockerfile)
--	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker-images/blob/d2eeaec9289e9a44c5d86870093c6cfe52adea73/OracleLinux/5.11/Dockerfile)
 
 # Quick reference
 
