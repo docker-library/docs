@@ -43,6 +43,17 @@ $ docker run -d --name sonarqube \
 
 More recipes can be found [here](https://github.com/SonarSource/docker-sonarqube/blob/master/recipes.md).
 
+## Plugin installation
+ 
+ You can feed sonar a comma separated list of additional plugins to install on startup through the variable `SONARQUBE_PLUGIN_LIST`.
+ ```console
+ $ docker run \
+ 	-e SONARQUBE_PLUGIN_LIST=sonar-github-plugin:1.4.1.822,sonar-flex-plugin:2.3 \
+ 	sonarqube
+ ```
+ 
+ The plugins must be given in the following form: `PLUGIN_NAME`**:**`PLUGIN_VERSION`. Name and version must precisely match the name and version given in the download links from the [Sonarqube Plugin Library](https://docs.sonarqube.org/display/PLUG/PluginLibrary).
+ 
 ## Administration
 
 The administration guide can be found [here](http://docs.sonarqube.org/display/SONAR/Administration+Guide).
