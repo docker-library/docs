@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.4.0`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/048c972a51fdacfe406cc254cfde35b8bcc0e1aa/Dockerfile)
+-	[`0.5.0`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/3301b7b0e11bfd128eb4ba572fc1fdbfaab8d3e3/Dockerfile)
 
 # Quick reference
 
