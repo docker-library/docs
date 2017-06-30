@@ -17,9 +17,9 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`8`, `8.4`, `8.4.5`, `8-mysql-tomcat`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `latest` (*8/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/50b6fe1af4b98337bc7d6053f840169e457f21a6/8/mysql-tomcat/Dockerfile)
--	[`9`, `9.3`, `9.3.1`, `9.4`, `9-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable` (*9/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/074c853fdb84c4522894cce8ab6d6d442e97c402/9/mysql-tomcat/Dockerfile)
+-	[`9`, `9.5`, `9.5.1`, `9-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable` (*9/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/ba197c9d13201e7879f032126a444713a1800c63/9/mysql-tomcat/Dockerfile)
 -	[`8-postgres-tomcat`, `8.4-postgres-tomcat`, `8.4.5-postgres-tomcat`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres` (*8/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/50b6fe1af4b98337bc7d6053f840169e457f21a6/8/postgres-tomcat/Dockerfile)
--	[`9-postgres-tomcat`, `9.3-postgres-tomcat`, `9.3.1-postgres-tomcat`, `9.4-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres` (*9/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/074c853fdb84c4522894cce8ab6d6d442e97c402/9/postgres-tomcat/Dockerfile)
+-	[`9-postgres-tomcat`, `9.5-postgres-tomcat`, `9.5.1-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres` (*9/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/ba197c9d13201e7879f032126a444713a1800c63/9/postgres-tomcat/Dockerfile)
 
 # Quick reference
 
