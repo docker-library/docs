@@ -153,7 +153,7 @@ services:
       - MYSQL_USER=nextcloud
 
   app:
-    image: nextcloud
+    image: nextcloud:fpm
     links:
       - db
     volumes:
