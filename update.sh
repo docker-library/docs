@@ -26,7 +26,7 @@ for image in "${images[@]}"; do
 	namespace="${namespace%/}"
 
 	if [ -x "$repo/update.sh" ]; then
-		( set -x; "$repo/update.sh" )
+		( set -x; "$repo/update.sh" "$image" )
 	fi
 
 	if [ -e "$repo/content.md" ]; then
