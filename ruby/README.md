@@ -16,10 +16,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.10`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/c5693b25aa865489fee130e572a3f11bccebd21b/2.1/Dockerfile)
--	[`2.1.10-slim`, `2.1-slim` (*2.1/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/c5693b25aa865489fee130e572a3f11bccebd21b/2.1/slim/Dockerfile)
--	[`2.1.10-alpine`, `2.1-alpine` (*2.1/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/c5693b25aa865489fee130e572a3f11bccebd21b/2.1/alpine/Dockerfile)
--	[`2.1.10-onbuild`, `2.1-onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.1/onbuild/Dockerfile)
 -	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/ruby/blob/82b764e1635acbfcce392d4c0cb6f703a739e173/2.2/Dockerfile)
 -	[`2.2.7-slim`, `2.2-slim` (*2.2/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/82b764e1635acbfcce392d4c0cb6f703a739e173/2.2/slim/Dockerfile)
 -	[`2.2.7-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/82b764e1635acbfcce392d4c0cb6f703a739e173/2.2/alpine/Dockerfile)
