@@ -3,8 +3,8 @@ set -Eeuo pipefail
 
 image="${1:-hello-world}"
 
-docker pull hello-world &> /dev/null || exit
-docker pull "$image" &> /dev/null || exit
+docker pull hello-world &> /dev/null || exit 0
+docker pull "$image" &> /dev/null || exit 0
 
 exec > "$(dirname "$(readlink -f "$BASH_SOURCE")")/content.md"
 
