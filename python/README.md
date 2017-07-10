@@ -44,12 +44,12 @@ WARNING:
 -	[`3.6.1-alpine3.6`, `3.6-alpine3.6`, `3-alpine3.6`, `alpine3.6` (*3.6/alpine3.6/Dockerfile*)](https://github.com/docker-library/python/blob/88ba87d31a3033d4dbefecf44ce25aa1b69ab3e5/3.6/alpine3.6/Dockerfile)
 -	[`3.6.1-onbuild`, `3.6-onbuild`, `3-onbuild`, `onbuild` (*3.6/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/7eca63adca38729424a9bab957f006f5caad870f/3.6/onbuild/Dockerfile)
 -	[`3.6.1-windowsservercore`, `3.6-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/db2d58d73043c85ceecc8e675372b4dc6a77d136/3.6/windows/windowsservercore/Dockerfile)
--	[`3.6.2rc1`, `3.6-rc`, `rc` (*3.6-rc/Dockerfile*)](https://github.com/docker-library/python/blob/73d283d3dccd196f758466f29a715e6ab9b533a7/3.6-rc/Dockerfile)
--	[`3.6.2rc1-slim`, `3.6-rc-slim`, `rc-slim` (*3.6-rc/slim/Dockerfile*)](https://github.com/docker-library/python/blob/73d283d3dccd196f758466f29a715e6ab9b533a7/3.6-rc/slim/Dockerfile)
--	[`3.6.2rc1-alpine`, `3.6-rc-alpine`, `rc-alpine` (*3.6-rc/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/73d283d3dccd196f758466f29a715e6ab9b533a7/3.6-rc/alpine/Dockerfile)
--	[`3.6.2rc1-alpine3.6`, `3.6-rc-alpine3.6`, `rc-alpine3.6` (*3.6-rc/alpine3.6/Dockerfile*)](https://github.com/docker-library/python/blob/73d283d3dccd196f758466f29a715e6ab9b533a7/3.6-rc/alpine3.6/Dockerfile)
--	[`3.6.2rc1-onbuild`, `3.6-rc-onbuild`, `rc-onbuild` (*3.6-rc/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/73d283d3dccd196f758466f29a715e6ab9b533a7/3.6-rc/onbuild/Dockerfile)
--	[`3.6.2rc1-windowsservercore`, `3.6-rc-windowsservercore`, `rc-windowsservercore` (*3.6-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/73d283d3dccd196f758466f29a715e6ab9b533a7/3.6-rc/windows/windowsservercore/Dockerfile)
+-	[`3.6.2rc2`, `3.6-rc`, `rc` (*3.6-rc/Dockerfile*)](https://github.com/docker-library/python/blob/6db347bbd39cb34aa762bfb5807ed327e8d8b72c/3.6-rc/Dockerfile)
+-	[`3.6.2rc2-slim`, `3.6-rc-slim`, `rc-slim` (*3.6-rc/slim/Dockerfile*)](https://github.com/docker-library/python/blob/6db347bbd39cb34aa762bfb5807ed327e8d8b72c/3.6-rc/slim/Dockerfile)
+-	[`3.6.2rc2-alpine`, `3.6-rc-alpine`, `rc-alpine` (*3.6-rc/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/6db347bbd39cb34aa762bfb5807ed327e8d8b72c/3.6-rc/alpine/Dockerfile)
+-	[`3.6.2rc2-alpine3.6`, `3.6-rc-alpine3.6`, `rc-alpine3.6` (*3.6-rc/alpine3.6/Dockerfile*)](https://github.com/docker-library/python/blob/6db347bbd39cb34aa762bfb5807ed327e8d8b72c/3.6-rc/alpine3.6/Dockerfile)
+-	[`3.6.2rc2-onbuild`, `3.6-rc-onbuild`, `rc-onbuild` (*3.6-rc/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/73d283d3dccd196f758466f29a715e6ab9b533a7/3.6-rc/onbuild/Dockerfile)
+-	[`3.6.2rc2-windowsservercore`, `3.6-rc-windowsservercore`, `rc-windowsservercore` (*3.6-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/6db347bbd39cb34aa762bfb5807ed327e8d8b72c/3.6-rc/windows/windowsservercore/Dockerfile)
 
 # Quick reference
 

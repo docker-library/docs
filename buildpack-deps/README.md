@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`jessie-curl`, `curl` (*jessie/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/jessie/curl/Dockerfile)
--	[`jessie-scm`, `scm` (*jessie/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/jessie/scm/Dockerfile)
--	[`jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/jessie/Dockerfile)
+-	[`jessie-curl` (*jessie/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/jessie/curl/Dockerfile)
+-	[`jessie-scm` (*jessie/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/jessie/scm/Dockerfile)
+-	[`jessie` (*jessie/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/jessie/Dockerfile)
 -	[`sid-curl` (*sid/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/sid/curl/Dockerfile)
 -	[`sid-scm` (*sid/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/sid/scm/Dockerfile)
 -	[`sid` (*sid/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/sid/Dockerfile)
--	[`stretch-curl` (*stretch/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/stretch/curl/Dockerfile)
--	[`stretch-scm` (*stretch/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/stretch/scm/Dockerfile)
--	[`stretch` (*stretch/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/stretch/Dockerfile)
+-	[`stretch-curl`, `curl` (*stretch/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/stretch/curl/Dockerfile)
+-	[`stretch-scm`, `scm` (*stretch/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/stretch/scm/Dockerfile)
+-	[`stretch`, `latest` (*stretch/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/stretch/Dockerfile)
 -	[`trusty-curl` (*trusty/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/trusty/curl/Dockerfile)
 -	[`trusty-scm` (*trusty/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/trusty/scm/Dockerfile)
 -	[`trusty` (*trusty/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/trusty/Dockerfile)
