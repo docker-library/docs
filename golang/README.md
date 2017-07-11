@@ -16,23 +16,23 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9beta2`, `1.9-rc`, `1.9`, `rc` (*1.9-rc/Dockerfile*)](https://github.com/docker-library/golang/blob/cc59d934fca2e3a7dd8ebcd0eee82f34589f3bd3/1.9-rc/Dockerfile)
--	[`1.9beta2-alpine`, `1.9-rc-alpine`, `1.9-alpine`, `rc-alpine` (*1.9-rc/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/cc59d934fca2e3a7dd8ebcd0eee82f34589f3bd3/1.9-rc/alpine/Dockerfile)
+-	[`1.9beta2-stretch`, `1.9-rc-stretch`, `1.9-stretch`, `rc-stretch`, `1.9beta2`, `1.9-rc`, `1.9`, `rc` (*1.9-rc/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/2a15dfff04accfd31c2a45b3bb7423aa86aa2d60/1.9-rc/stretch/Dockerfile)
+-	[`1.9beta2-alpine3.6`, `1.9-rc-alpine3.6`, `1.9-alpine3.6`, `rc-alpine3.6`, `1.9beta2-alpine`, `1.9-rc-alpine`, `1.9-alpine`, `rc-alpine` (*1.9-rc/alpine3.6/Dockerfile*)](https://github.com/docker-library/golang/blob/2a15dfff04accfd31c2a45b3bb7423aa86aa2d60/1.9-rc/alpine3.6/Dockerfile)
 -	[`1.9beta2-windowsservercore`, `1.9-rc-windowsservercore`, `1.9-windowsservercore`, `rc-windowsservercore` (*1.9-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/cc59d934fca2e3a7dd8ebcd0eee82f34589f3bd3/1.9-rc/windows/windowsservercore/Dockerfile)
 -	[`1.9beta2-nanoserver`, `1.9-rc-nanoserver`, `1.9-nanoserver`, `rc-nanoserver` (*1.9-rc/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/cc59d934fca2e3a7dd8ebcd0eee82f34589f3bd3/1.9-rc/windows/nanoserver/Dockerfile)
--	[`1.8.3`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/golang/blob/97b2ff201ec59b9a037197d132c64eb937370c64/1.8/Dockerfile)
--	[`1.8.3-onbuild`, `1.8-onbuild`, `1-onbuild`, `onbuild` (*1.8/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/onbuild/Dockerfile)
 -	[`1.8.3-stretch`, `1.8-stretch`, `1-stretch`, `stretch` (*1.8/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/97b2ff201ec59b9a037197d132c64eb937370c64/1.8/stretch/Dockerfile)
--	[`1.8.3-alpine`, `1.8-alpine`, `1-alpine`, `alpine` (*1.8/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/64b88dc3e9d83e71eafc000fed1f0d5e289b3e65/1.8/alpine/Dockerfile)
+-	[`1.8.3-jessie`, `1.8-jessie`, `1-jessie`, `jessie`, `1.8.3`, `1.8`, `1`, `latest` (*1.8/jessie/Dockerfile*)](https://github.com/docker-library/golang/blob/2a15dfff04accfd31c2a45b3bb7423aa86aa2d60/1.8/jessie/Dockerfile)
 -	[`1.8.3-alpine3.6`, `1.8-alpine3.6`, `1-alpine3.6`, `alpine3.6` (*1.8/alpine3.6/Dockerfile*)](https://github.com/docker-library/golang/blob/495a742832974d434c6e3356e19c93b0e82543c8/1.8/alpine3.6/Dockerfile)
+-	[`1.8.3-alpine3.5`, `1.8-alpine3.5`, `1-alpine3.5`, `alpine3.5`, `1.8.3-alpine`, `1.8-alpine`, `1-alpine`, `alpine` (*1.8/alpine3.5/Dockerfile*)](https://github.com/docker-library/golang/blob/2a15dfff04accfd31c2a45b3bb7423aa86aa2d60/1.8/alpine3.5/Dockerfile)
+-	[`1.8.3-onbuild`, `1.8-onbuild`, `1-onbuild`, `onbuild` (*1.8/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/onbuild/Dockerfile)
 -	[`1.8.3-windowsservercore`, `1.8-windowsservercore`, `1-windowsservercore`, `windowsservercore` (*1.8/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/64b88dc3e9d83e71eafc000fed1f0d5e289b3e65/1.8/windows/windowsservercore/Dockerfile)
 -	[`1.8.3-nanoserver`, `1.8-nanoserver`, `1-nanoserver`, `nanoserver` (*1.8/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/64b88dc3e9d83e71eafc000fed1f0d5e289b3e65/1.8/windows/nanoserver/Dockerfile)
--	[`1.7.6`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/golang/blob/97b2ff201ec59b9a037197d132c64eb937370c64/1.7/Dockerfile)
--	[`1.7.6-onbuild`, `1.7-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/2372c8cafe9cc958bade33ad0b8b54de8869c21f/1.7/onbuild/Dockerfile)
+-	[`1.7.6-jessie`, `1.7-jessie`, `1.7.6`, `1.7` (*1.7/jessie/Dockerfile*)](https://github.com/docker-library/golang/blob/2a15dfff04accfd31c2a45b3bb7423aa86aa2d60/1.7/jessie/Dockerfile)
 -	[`1.7.6-wheezy`, `1.7-wheezy` (*1.7/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/97b2ff201ec59b9a037197d132c64eb937370c64/1.7/wheezy/Dockerfile)
--	[`1.7.6-alpine`, `1.7-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/9e519a8844c25e38fe67547e8f681ada486e473b/1.7/alpine/Dockerfile)
 -	[`1.7.6-alpine3.6`, `1.7-alpine3.6` (*1.7/alpine3.6/Dockerfile*)](https://github.com/docker-library/golang/blob/495a742832974d434c6e3356e19c93b0e82543c8/1.7/alpine3.6/Dockerfile)
 -	[`1.7.6-alpine3.5`, `1.7-alpine3.5` (*1.7/alpine3.5/Dockerfile*)](https://github.com/docker-library/golang/blob/9e519a8844c25e38fe67547e8f681ada486e473b/1.7/alpine3.5/Dockerfile)
+-	[`1.7.6-alpine3.4`, `1.7-alpine3.4`, `1.7.6-alpine`, `1.7-alpine` (*1.7/alpine3.4/Dockerfile*)](https://github.com/docker-library/golang/blob/2a15dfff04accfd31c2a45b3bb7423aa86aa2d60/1.7/alpine3.4/Dockerfile)
+-	[`1.7.6-onbuild`, `1.7-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/2372c8cafe9cc958bade33ad0b8b54de8869c21f/1.7/onbuild/Dockerfile)
 -	[`1.7.6-windowsservercore`, `1.7-windowsservercore` (*1.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/9e519a8844c25e38fe67547e8f681ada486e473b/1.7/windows/windowsservercore/Dockerfile)
 -	[`1.7.6-nanoserver`, `1.7-nanoserver` (*1.7/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/9e519a8844c25e38fe67547e8f681ada486e473b/1.7/windows/nanoserver/Dockerfile)
 
@@ -137,14 +137,6 @@ The `golang` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `golang:onbuild`
-
-The `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).
-
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
-
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
-
 ## `golang:alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
@@ -152,6 +144,14 @@ This image is based on the popular [Alpine Linux project](http://alpinelinux.org
 This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
+## `golang:onbuild`
+
+The `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).
+
+While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
+
+Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
 
 ## `golang:windowsservercore`
 
