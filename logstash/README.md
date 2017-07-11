@@ -22,9 +22,9 @@ Elastic provides open-source support for Logstash via the [elastic/logstash GitH
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.4.3`, `5.4`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/bdde1cd454f189dcad01c82a2ebaa729c406cc6f/5/Dockerfile)
--	[`5.4.3-alpine`, `5.4-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/bdde1cd454f189dcad01c82a2ebaa729c406cc6f/5/alpine/Dockerfile)
--	[`2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/19330c802e6f198f015c0c4723a6d86ed449d93f/2.4/Dockerfile)
+-	[`5.5.0`, `5.5`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/4f425e9008de3d0375d1749d390029808aed8d96/5/Dockerfile)
+-	[`5.5.0-alpine`, `5.5-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/a418c50f6258665e72ef5f6275a69685a01107ef/5/alpine/Dockerfile)
+-	[`2.4.1`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/4f425e9008de3d0375d1749d390029808aed8d96/2.4/Dockerfile)
 -	[`2.4.1-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/19330c802e6f198f015c0c4723a6d86ed449d93f/2.4/alpine/Dockerfile)
 
 # Quick reference
