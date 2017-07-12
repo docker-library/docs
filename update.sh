@@ -25,6 +25,13 @@ for image in "${images[@]}"; do
 	namespace="${image%$repo}"
 	namespace="${namespace%/}"
 
+	# this is used by subscripts to determine whether we're pushing /_/xxx or /r/ARCH/xxx
+	# (especialy for "supported tags")
+	export ARCH_SPECIFIC_DOCS=
+	if [ -n "$namespace" ] && [ -n "${BASHBREW_ARCH:-}" ]; then
+		export ARCH_SPECIFIC_DOCS=1
+	fi
+
 	if [ -x "$repo/update.sh" ]; then
 		( set -x; "$repo/update.sh" "$image" )
 	fi
