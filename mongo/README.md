@@ -22,8 +22,8 @@ WARNING:
 -	[`3.2.15-windowsservercore`, `3.2-windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/d1c2ba0001233372a1ab8515ee5e1e968e0d64f9/3.2/windows/windowsservercore/Dockerfile)
 -	[`3.4.6`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/c02ca4cce8c69e5069b75cb574d1b99d7b4edaeb/3.4/Dockerfile)
 -	[`3.4.6-windowsservercore`, `3.4-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.4/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/c02ca4cce8c69e5069b75cb574d1b99d7b4edaeb/3.4/windows/windowsservercore/Dockerfile)
--	[`3.5.9`, `3.5`, `unstable` (*3.5/Dockerfile*)](https://github.com/docker-library/mongo/blob/d291ed022225ad57d32c98668bcfd5a52baa2e13/3.5/Dockerfile)
--	[`3.5.9-windowsservercore`, `3.5-windowsservercore`, `unstable-windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/d291ed022225ad57d32c98668bcfd5a52baa2e13/3.5/windows/windowsservercore/Dockerfile)
+-	[`3.5.10`, `3.5`, `unstable` (*3.5/Dockerfile*)](https://github.com/docker-library/mongo/blob/7900cc8b57ad4e638bcf9f92fef3d85eb86e714a/3.5/Dockerfile)
+-	[`3.5.10-windowsservercore`, `3.5-windowsservercore`, `unstable-windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/7900cc8b57ad4e638bcf9f92fef3d85eb86e714a/3.5/windows/windowsservercore/Dockerfile)
 
 # Quick reference
 
