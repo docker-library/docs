@@ -16,6 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`artful-curl` (*artful/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/36018aca7e9637c9c04ff623625e59de12d7f161/artful/curl/Dockerfile)
+-	[`artful-scm` (*artful/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/36018aca7e9637c9c04ff623625e59de12d7f161/artful/scm/Dockerfile)
+-	[`artful` (*artful/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/36018aca7e9637c9c04ff623625e59de12d7f161/artful/Dockerfile)
+-	[`buster-curl` (*buster/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/72021102be2a05177d2c01e466495ba1c9d0b4f5/buster/curl/Dockerfile)
+-	[`buster-scm` (*buster/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1449b1e7ba5a389167893e6edb6245ca94cd4fd6/buster/scm/Dockerfile)
+-	[`buster` (*buster/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1449b1e7ba5a389167893e6edb6245ca94cd4fd6/buster/Dockerfile)
 -	[`jessie-curl` (*jessie/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/jessie/curl/Dockerfile)
 -	[`jessie-scm` (*jessie/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/jessie/scm/Dockerfile)
 -	[`jessie` (*jessie/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/jessie/Dockerfile)
