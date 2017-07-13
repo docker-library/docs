@@ -17,7 +17,18 @@ if [ -z "${BASHBREW_LIBRARY:-}" ]; then
 fi
 
 IFS=$'\n'
-tags=( $(bashbrew cat -f '{{ range .Entries }}{{ join "\n" .Tags }}{{ "\n" }}{{ end }}' "$repo") )
+tags=( $(bashbrew cat -f '
+	{{- $archSpecific := getenv "ARCH_SPECIFIC_DOCS" -}}
+
+	{{- range .Entries -}}
+		{{- $arch := $archSpecific | ternary arch (.HasArchitecture arch | ternary arch (.Architectures | first)) -}}
+
+		{{- if .HasArchitecture $arch -}}
+			{{- join "\n" .Tags -}}
+			{{- "\n" -}}
+		{{- end -}}
+	{{- end -}}
+' "$repo") )
 unset IFS
 
 text=
