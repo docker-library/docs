@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5.4`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/5.5/Dockerfile)
+-	[`5.5.4`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/600fd5c682b63cca400ef87fe7738d752f6ca0ed/5.5/Dockerfile)
 -	[`5.5.4-alpine`, `5.5-alpine`, `5-alpine` (*5.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/5.5/alpine/Dockerfile)
--	[`6.3.0`, `6.3` (*6.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/6.3/Dockerfile)
+-	[`6.3.0`, `6.3` (*6.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/600fd5c682b63cca400ef87fe7738d752f6ca0ed/6.3/Dockerfile)
 -	[`6.3.0-alpine`, `6.3-alpine` (*6.3/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/6.3/alpine/Dockerfile)
--	[`6.4.2`, `6.4` (*6.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/6.4/Dockerfile)
+-	[`6.4.2`, `6.4` (*6.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/600fd5c682b63cca400ef87fe7738d752f6ca0ed/6.4/Dockerfile)
 -	[`6.4.2-alpine`, `6.4-alpine` (*6.4/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/6.4/alpine/Dockerfile)
--	[`6.5.1`, `6.5` (*6.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/6.5/Dockerfile)
+-	[`6.5.1`, `6.5` (*6.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/600fd5c682b63cca400ef87fe7738d752f6ca0ed/6.5/Dockerfile)
 -	[`6.5.1-alpine`, `6.5-alpine` (*6.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/6.5/alpine/Dockerfile)
--	[`6.6.0`, `6.6`, `6`, `latest` (*6.6/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/c61a0c9b012c7313c2b5d0d97ddc06693270b734/6.6/Dockerfile)
+-	[`6.6.0`, `6.6`, `6`, `latest` (*6.6/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/600fd5c682b63cca400ef87fe7738d752f6ca0ed/6.6/Dockerfile)
 -	[`6.6.0-alpine`, `6.6-alpine`, `6-alpine`, `alpine` (*6.6/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/c61a0c9b012c7313c2b5d0d97ddc06693270b734/6.6/alpine/Dockerfile)
 
 # Quick reference
