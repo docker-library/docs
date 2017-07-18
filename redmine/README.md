@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.1`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/redmine/blob/2cb323bae92d7bdb9266f2b89e82e54ec9947e49/3.4/Dockerfile)
--	[`3.4.1-passenger`, `3.4-passenger`, `3-passenger`, `passenger` (*3.4/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/75ead634c9033abef6490ac6d167b597d9e109ea/3.4/passenger/Dockerfile)
+-	[`3.4.2`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/redmine/blob/ef5e3f30a26cb30d91d940019c0e8719e3007eb3/3.4/Dockerfile)
+-	[`3.4.2-passenger`, `3.4-passenger`, `3-passenger`, `passenger` (*3.4/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/75ead634c9033abef6490ac6d167b597d9e109ea/3.4/passenger/Dockerfile)
 -	[`3.3.4`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/2cb323bae92d7bdb9266f2b89e82e54ec9947e49/3.3/Dockerfile)
 -	[`3.3.4-passenger`, `3.3-passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/665769df8d46481583611c0cb96e57f5e3769550/3.3/passenger/Dockerfile)
 -	[`3.2.7`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/2cb323bae92d7bdb9266f2b89e82e54ec9947e49/3.2/Dockerfile)
