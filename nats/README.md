@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0.0`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/90d28dc0964ba4f4b811cf21d593496939bf7990/Dockerfile)
--	[`1.0.0-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/90d28dc0964ba4f4b811cf21d593496939bf7990/windows/nanoserver/Dockerfile)
--	[`1.0.0-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/90d28dc0964ba4f4b811cf21d593496939bf7990/windows/windowsservercore/Dockerfile)
+-	[`1.0.2`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4a2e6f17092b5b8481637c1881f781ae25374309/Dockerfile)
+-	[`1.0.2-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4a2e6f17092b5b8481637c1881f781ae25374309/windows/nanoserver/Dockerfile)
+-	[`1.0.2-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4a2e6f17092b5b8481637c1881f781ae25374309/windows/windowsservercore/Dockerfile)
 
 # Quick reference
 
@@ -62,7 +62,7 @@ WARNING:
 # use -p or -P as needed.
 
 $ docker run -d --name nats-main nats
-[INF] Starting nats-server version 1.0.0
+[INF] Starting nats-server version 1.0.2
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
@@ -78,7 +78,7 @@ $ docker run -d --name=nats-2 --link nats-main nats -c gnatsd.conf --routes=nats
 
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 1.0.0
+[INF] Starting nats-server version 1.0.2
 [DBG] Go build version go1.7.6
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
