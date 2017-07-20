@@ -19,16 +19,17 @@ To date, Mageia:
 ## Create a Dockerfile for your container
 
 ```dockerfile
-FROM mageia:5
+FROM mageia:6
 MAINTAINER  "Foo Bar" <foo@bar.com>
 CMD [ "bash" ]
 ```
 
 ## Installed packages
 
-All images install the following packages:
+The images include the following packages:
 
 -	basesystem-minimal
--	urpmi
+-	dnf (Mageia 6+)
 -	locales
 -	locales-en
+-	urpmi
