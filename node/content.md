@@ -42,6 +42,12 @@ node_modules
 
 We have assembled a [Best Practices Guide](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md) for those using these images on a daily basis.
 
+All of the images contain pre-installed versions of `node`,
+[`npm`](https://www.npmjs.com/), and [`yarn`](https://yarnpkg.com). For each
+supported architecture, the supported variants are different. In the file
+[architectures](https://github.com/nodejs/docker-node/blob/master/architectures),
+it lists all supported variants for all of the architectures that we support now.
+
 ## Run a single Node.js script
 
 For many simple, single file projects, you may find it inconvenient to write a
@@ -96,4 +102,3 @@ verbosity of the output.
 ```
 $ docker run node npm --loglevel=warn ...
 ```
-
