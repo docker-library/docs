@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.0`, `8.2`, `8`, `latest` (*8.2/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4f2354e558a0cd93ae53278f83f5f0a35af23be0/8.2/Dockerfile)
--	[`8.2.0-alpine`, `8.2-alpine`, `8-alpine`, `alpine` (*8.2/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4f2354e558a0cd93ae53278f83f5f0a35af23be0/8.2/alpine/Dockerfile)
--	[`8.2.0-onbuild`, `8.2-onbuild`, `8-onbuild`, `onbuild` (*8.2/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4f2354e558a0cd93ae53278f83f5f0a35af23be0/8.2/onbuild/Dockerfile)
--	[`8.2.0-slim`, `8.2-slim`, `8-slim`, `slim` (*8.2/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4f2354e558a0cd93ae53278f83f5f0a35af23be0/8.2/slim/Dockerfile)
--	[`8.2.0-wheezy`, `8.2-wheezy`, `8-wheezy`, `wheezy` (*8.2/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/4f2354e558a0cd93ae53278f83f5f0a35af23be0/8.2/wheezy/Dockerfile)
+-	[`8.2.1`, `8.2`, `8`, `latest` (*8.2/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f547c4c7281027d5d90f4665815140126e1f70d5/8.2/Dockerfile)
+-	[`8.2.1-alpine`, `8.2-alpine`, `8-alpine`, `alpine` (*8.2/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f547c4c7281027d5d90f4665815140126e1f70d5/8.2/alpine/Dockerfile)
+-	[`8.2.1-onbuild`, `8.2-onbuild`, `8-onbuild`, `onbuild` (*8.2/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f547c4c7281027d5d90f4665815140126e1f70d5/8.2/onbuild/Dockerfile)
+-	[`8.2.1-slim`, `8.2-slim`, `8-slim`, `slim` (*8.2/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f547c4c7281027d5d90f4665815140126e1f70d5/8.2/slim/Dockerfile)
+-	[`8.2.1-wheezy`, `8.2-wheezy`, `8-wheezy`, `wheezy` (*8.2/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f547c4c7281027d5d90f4665815140126e1f70d5/8.2/wheezy/Dockerfile)
 -	[`7.10.1`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/0aadad9c44ff26afc81469d77df9b948be47c312/7.10/Dockerfile)
 -	[`7.10.1-alpine`, `7.10-alpine`, `7-alpine` (*7.10/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/0aadad9c44ff26afc81469d77df9b948be47c312/7.10/alpine/Dockerfile)
 -	[`7.10.1-onbuild`, `7.10-onbuild`, `7-onbuild` (*7.10/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/0fcdf0b2660e73ab1054f932f4beac5b3946fb21/7.10/onbuild/Dockerfile)
