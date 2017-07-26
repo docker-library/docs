@@ -21,6 +21,7 @@ WARNING:
 -	[`0.7.0` (*0.7.0/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.0/Dockerfile)
 -	[`0.7.2` (*0.7.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.2/Dockerfile)
 -	[`0.7.3`, `latest` (*0.7.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.3/Dockerfile)
+-	[`0.8.0-beta1` (*0.8.0-beta1/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/20c626ab1c89a17c24f370ae18cfe6cbc0eb8d33/0.8.0-beta1/Dockerfile)
 
 # Quick reference
 
