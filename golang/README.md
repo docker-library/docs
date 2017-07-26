@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9beta2-stretch`, `1.9-rc-stretch`, `1.9-stretch`, `rc-stretch`, `1.9beta2`, `1.9-rc`, `1.9`, `rc` (*1.9-rc/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/2a15dfff04accfd31c2a45b3bb7423aa86aa2d60/1.9-rc/stretch/Dockerfile)
--	[`1.9beta2-alpine3.6`, `1.9-rc-alpine3.6`, `1.9-alpine3.6`, `rc-alpine3.6`, `1.9beta2-alpine`, `1.9-rc-alpine`, `1.9-alpine`, `rc-alpine` (*1.9-rc/alpine3.6/Dockerfile*)](https://github.com/docker-library/golang/blob/2a15dfff04accfd31c2a45b3bb7423aa86aa2d60/1.9-rc/alpine3.6/Dockerfile)
--	[`1.9beta2-windowsservercore`, `1.9-rc-windowsservercore`, `1.9-windowsservercore`, `rc-windowsservercore` (*1.9-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/cc59d934fca2e3a7dd8ebcd0eee82f34589f3bd3/1.9-rc/windows/windowsservercore/Dockerfile)
--	[`1.9beta2-nanoserver`, `1.9-rc-nanoserver`, `1.9-nanoserver`, `rc-nanoserver` (*1.9-rc/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/cc59d934fca2e3a7dd8ebcd0eee82f34589f3bd3/1.9-rc/windows/nanoserver/Dockerfile)
+-	[`1.9rc1-stretch`, `1.9-rc-stretch`, `1.9-stretch`, `rc-stretch`, `1.9rc1`, `1.9-rc`, `1.9`, `rc` (*1.9-rc/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/347de3fe79db411821e841f782c156f6fe1d9704/1.9-rc/stretch/Dockerfile)
+-	[`1.9rc1-alpine3.6`, `1.9-rc-alpine3.6`, `1.9-alpine3.6`, `rc-alpine3.6`, `1.9rc1-alpine`, `1.9-rc-alpine`, `1.9-alpine`, `rc-alpine` (*1.9-rc/alpine3.6/Dockerfile*)](https://github.com/docker-library/golang/blob/347de3fe79db411821e841f782c156f6fe1d9704/1.9-rc/alpine3.6/Dockerfile)
+-	[`1.9rc1-windowsservercore`, `1.9-rc-windowsservercore`, `1.9-windowsservercore`, `rc-windowsservercore` (*1.9-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/347de3fe79db411821e841f782c156f6fe1d9704/1.9-rc/windows/windowsservercore/Dockerfile)
+-	[`1.9rc1-nanoserver`, `1.9-rc-nanoserver`, `1.9-nanoserver`, `rc-nanoserver` (*1.9-rc/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/347de3fe79db411821e841f782c156f6fe1d9704/1.9-rc/windows/nanoserver/Dockerfile)
 -	[`1.8.3-stretch`, `1.8-stretch`, `1-stretch`, `stretch` (*1.8/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/97b2ff201ec59b9a037197d132c64eb937370c64/1.8/stretch/Dockerfile)
 -	[`1.8.3-jessie`, `1.8-jessie`, `1-jessie`, `jessie`, `1.8.3`, `1.8`, `1`, `latest` (*1.8/jessie/Dockerfile*)](https://github.com/docker-library/golang/blob/2a15dfff04accfd31c2a45b3bb7423aa86aa2d60/1.8/jessie/Dockerfile)
 -	[`1.8.3-alpine3.6`, `1.8-alpine3.6`, `1-alpine3.6`, `alpine3.6` (*1.8/alpine3.6/Dockerfile*)](https://github.com/docker-library/golang/blob/495a742832974d434c6e3356e19c93b0e82543c8/1.8/alpine3.6/Dockerfile)

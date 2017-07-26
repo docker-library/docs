@@ -34,12 +34,12 @@ WARNING:
 -	[`8u131-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/8-jre/Dockerfile)
 -	[`8u131-jre-slim`, `8-jre-slim`, `jre-slim` (*8-jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/8-jre/slim/Dockerfile)
 -	[`8u131-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/8-jre/alpine/Dockerfile)
--	[`9-b179-jdk`, `9-b179`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e73f9d4dfc2eac73d068dcd12690c1c0b09ba769/9-jdk/Dockerfile)
--	[`9-b179-jdk-slim`, `9-b179-slim`, `9-jdk-slim`, `9-slim` (*9-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e73f9d4dfc2eac73d068dcd12690c1c0b09ba769/9-jdk/slim/Dockerfile)
+-	[`9-b179-jdk`, `9-b179`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/aa4a339f9aa5a0ef0eaac0c08297b796b2ef81ae/9-jdk/Dockerfile)
+-	[`9-b179-jdk-slim`, `9-b179-slim`, `9-jdk-slim`, `9-slim` (*9-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/aa4a339f9aa5a0ef0eaac0c08297b796b2ef81ae/9-jdk/slim/Dockerfile)
 -	[`9-b154-jdk-windowsservercore`, `9-b154-windowsservercore`, `9-jdk-windowsservercore`, `9-windowsservercore` (*9-jdk/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/openjdk/blob/ba6f55a8a023c30b212e08dd5ea89951a96992ae/9-jdk/windows/windowsservercore/Dockerfile)
 -	[`9-b154-jdk-nanoserver`, `9-b154-nanoserver`, `9-jdk-nanoserver`, `9-nanoserver` (*9-jdk/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/openjdk/blob/ba6f55a8a023c30b212e08dd5ea89951a96992ae/9-jdk/windows/nanoserver/Dockerfile)
--	[`9-b179-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e73f9d4dfc2eac73d068dcd12690c1c0b09ba769/9-jre/Dockerfile)
--	[`9-b179-jre-slim`, `9-jre-slim` (*9-jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e73f9d4dfc2eac73d068dcd12690c1c0b09ba769/9-jre/slim/Dockerfile)
+-	[`9-b179-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/aa4a339f9aa5a0ef0eaac0c08297b796b2ef81ae/9-jre/Dockerfile)
+-	[`9-b179-jre-slim`, `9-jre-slim` (*9-jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/aa4a339f9aa5a0ef0eaac0c08297b796b2ef81ae/9-jre/slim/Dockerfile)
 
 # Quick reference
 
