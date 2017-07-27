@@ -16,8 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.5`, `1.4`, `latest` (*1.4/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/Dockerfile)
--	[`1.4.5-slim`, `1.4-slim`, `slim` (*1.4/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/slim/Dockerfile)
+-	[`1.5.0`, `1.5`, `latest` (*1.5/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/44078809bd868e654d93766f8ac3c778f688a951/1.5/Dockerfile)
+-	[`1.5.0-slim`, `1.5-slim`, `slim` (*1.5/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/a57ae22bc9505ccdc7662f2556143e1048361d47/1.5/slim/Dockerfile)
+-	[`1.5.0-alpine`, `1.5-alpine`, `alpine` (*1.5/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/a57ae22bc9505ccdc7662f2556143e1048361d47/1.5/alpine/Dockerfile)
+-	[`1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/Dockerfile)
+-	[`1.4.5-slim`, `1.4-slim` (*1.4/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/slim/Dockerfile)
 -	[`1.3.4`, `1.3` (*1.3/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/d8d656d7c0dc9dd2956a22276c93cb97568ea6d4/1.3/Dockerfile)
 -	[`1.3.4-slim`, `1.3-slim` (*1.3/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/d8d656d7c0dc9dd2956a22276c93cb97568ea6d4/1.3/slim/Dockerfile)
 -	[`1.2.6`, `1.2` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/Dockerfile)
@@ -98,6 +101,14 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 ## `elixir:slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `elixir`. Unless you are working in an environment where *only* the `elixir` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
+## `elixir:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

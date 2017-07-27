@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.3.3`, `1.3.3`, `v1.3`, `1.3`, `raclette`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/127ae9f3c881ce53f73f0fa0cd52fe947b77ef6b/Dockerfile)
--	[`v1.3.3-alpine`, `1.3.3-alpine`, `v1.3-alpine`, `1.3-alpine`, `raclette-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/127ae9f3c881ce53f73f0fa0cd52fe947b77ef6b/alpine/Dockerfile)
+-	[`v1.3.4`, `1.3.4`, `v1.3`, `1.3`, `raclette`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/33eb11c2139a48ac3725d39251b7d0f5610eaf36/Dockerfile)
+-	[`v1.3.4-alpine`, `1.3.4-alpine`, `v1.3-alpine`, `1.3-alpine`, `raclette-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/33eb11c2139a48ac3725d39251b7d0f5610eaf36/alpine/Dockerfile)
 
 # Quick reference
 
