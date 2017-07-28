@@ -50,4 +50,3 @@ ONBUILD COPY . /usr/src/app
 ```
 
 Building this as a `perl:onbuild` image can let you reduce your project's `Dockerfile` into a single line of `FROM perl:onbuild`, which may be enough to build a stand-alone image for your project.
-
