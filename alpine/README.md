@@ -22,7 +22,7 @@ WARNING:
 -	[`3.4` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/7f558cc0542cf47b28686385cc0a2cc41fe10325/versions/library-3.4/Dockerfile)
 -	[`3.5` (*versions/library-3.5/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/9b354b8bb3cc7b343e72ef4ec34ef38ec525728d/versions/library-3.5/Dockerfile)
 -	[`3.6`, `latest` (*versions/library-3.6/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c6cb2bbffbc92d4c35cdaf584dd1c43a860104ea/versions/library-3.6/Dockerfile)
--	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/6b13db64300ccfc74e1915e758064a5c8b05ad9a/versions/library-edge/Dockerfile)
+-	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c0f432b0e678c1096e041e7e63a089444ad544c9/versions/library-edge/Dockerfile)
 
 # Quick reference
 

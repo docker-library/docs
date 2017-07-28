@@ -16,10 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`42.2`, `leap`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/bbbd0361426f153f2a774bb43d8fd2d371e6dadf/docker/Dockerfile)
+-	[`42.3`, `leap`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/ee4fecdbaf779964d031bd01d39e11fc02dbc502/docker/Dockerfile)
+-	[`42.2` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/85eed4628bd0fd63ba44daade22f59bcc6a4f20f/docker/Dockerfile)
 -	[`42.1` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/28ae2ecb12d4ec628bd0ca561ae5ed6b64c1eecd/docker/Dockerfile)
--	[`13.2`, `harlequin` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/95fbd2db7e98c8ecf32cc422696cfb82fc53f530/docker/Dockerfile)
--	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/768a555e36931cd5c17835bf7139a1b0db83dc0e/docker/Dockerfile)
+-	[`13.2`, `harlequin` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/9f10701463d217a0d9d8053a6bfe8be545449ea3/docker/Dockerfile)
+-	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/7b600c66152013a0cd3591173dc5cc5a287da880/docker/Dockerfile)
 
 # Quick reference
 
