@@ -34,7 +34,7 @@ $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/
 
 ## Creating a reusable `perl:onbuild` image for Perl projects
 
-Suppose you have a project that uses [Carton](https://metacpan.org/pod/Carton) to manage Perl dependencies. You can write a `Dockerfile` that makes use of the [ONBUILD](https://docs.docker.com/engine/reference/builder/#onbuild) instruction like this:
+Suppose you have a project that uses [Carton](https://metacpan.org/pod/Carton) to manage Perl dependencies. You can create a `perl:onbuild` image that makes use of the [ONBUILD](https://docs.docker.com/engine/reference/builder/#onbuild) instruction in its `Dockerfile`, like this:
 
 ```dockerfile
 FROM perl:5.26
@@ -49,4 +49,4 @@ ONBUILD RUN carton install
 ONBUILD COPY . /usr/src/app
 ```
 
-Building this as a `perl:onbuild` image can let you reduce your project's `Dockerfile` into a single line of `FROM perl:onbuild`, which may be enough to build a stand-alone image for your project.
+Then, in your project, you can now reduce your project's `Dockerfile` into a single line of `FROM perl:onbuild`, which may be enough to build a stand-alone image.
