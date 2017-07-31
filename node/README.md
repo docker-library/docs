@@ -99,6 +99,14 @@ $ docker run -it --rm --name my-running-app my-nodejs-app
 
 The image assumes that your application has a file named [`package.json`](https://docs.npmjs.com/files/package.json) listing its dependencies and defining its [start script](https://docs.npmjs.com/misc/scripts#default-values).
 
+It also assumes that you have a file named [`.dockerignore`](https://docs.docker.com/engine/reference/builder/#/dockerignore-file) otherwise it will copy your local npm modules:
+
+	node_modules
+
+We have assembled a [Best Practices Guide](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md) for those using these images on a daily basis.
+
+All of the images contain pre-installed versions of `node`, [`npm`](https://www.npmjs.com/), and [`yarn`](https://yarnpkg.com). For each supported architecture, the supported variants are different. In the file [architectures](https://github.com/nodejs/docker-node/blob/master/architectures), it lists all supported variants for all of the architectures that we support now.
+
 ## Run a single Node.js script
 
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Node.js script by using the Node.js Docker image directly:
@@ -106,6 +114,34 @@ For many simple, single file projects, you may find it inconvenient to write a c
 ```console
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/app -w /usr/src/app node:4 node your-daemon-or-script.js
 ```
+
+## Verbosity
+
+By default the Node.js Docker Image has npm log verbosity set to `info` instead of the default `warn`. This is because of the way Docker is isolated from the host operating system and you are not guaranteed to be able to retrieve the `npm-debug.log` file when npm fails.
+
+When npm fails, it writes it's verbose log to a log file inside the container. If npm fails during an install when building a Docker Image with the `docker build` command, this log file will become inaccessible when Docker exits.
+
+The Docker Working Group have chosen to be overly verbose during a build to provide an easy audit trail when install fails. If you prefer npm to be less verbose you can easily reset the verbosity of npm using the following techniques:
+
+### Dockerfile
+
+If you create your own `Dockerfile` which inherits from the `node` image you can simply use `ENV` to override `NPM_CONFIG_LOGLEVEL`.
+
+	FROM node
+	ENV NPM_CONFIG_LOGLEVEL warn
+	...
+
+### Docker Run
+
+If you run the node image using `docker run` you can use the `-e` flag to override `NPM_CONFIG_LOGLEVEL`.
+
+	$ docker run -e NPM_CONFIG_LOGLEVEL=warn node ...
+
+### NPM run
+
+If you are running npm commands you can use `--loglevel` to control the verbosity of the output.
+
+	$ docker run node npm --loglevel=warn ...
 
 # Image Variants
 
@@ -137,4 +173,4 @@ This image does not contain the common packages contained in the default tag and
 
 # License
 
-View [license information](https://github.com/joyent/node/blob/master/LICENSE) for the software contained in this image.
+View [license information](https://github.com/nodejs/node/blob/master/LICENSE) for Node.js or [license information](https://github.com/nodejs/docker-node/blob/master/LICENSE) for the Node.js Docker project.
