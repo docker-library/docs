@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.07.0-ce-rc1`, `17.07.0-ce`, `17.07.0`, `17.07-rc`, `rc`, `test` (*17.07-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/c49283cd0ab1dff78a4cb1b5c62618b8b1744595/17.07-rc/Dockerfile)
+-	[`17.07.0-ce-rc1`, `17.07.0-ce`, `17.07.0`, `17.07-rc`, `rc`, `test` (*17.07-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/2288558e94f6b04f70c7db47766d37a09a1c8edb/17.07-rc/Dockerfile)
 -	[`17.07.0-ce-rc1-dind`, `17.07.0-ce-dind`, `17.07.0-dind`, `17.07-rc-dind`, `rc-dind`, `test-dind` (*17.07-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c49283cd0ab1dff78a4cb1b5c62618b8b1744595/17.07-rc/dind/Dockerfile)
 -	[`17.07.0-ce-rc1-git`, `17.07.0-ce-git`, `17.07.0-git`, `17.07-rc-git`, `rc-git`, `test-git` (*17.07-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/c49283cd0ab1dff78a4cb1b5c62618b8b1744595/17.07-rc/git/Dockerfile)
 -	[`17.06.1-ce-rc2`, `17.06.1-ce`, `17.06.1`, `17.06-rc` (*17.06-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/f3b3989b217c4ed2bf655f904eed0812b01c3326/17.06-rc/Dockerfile)
