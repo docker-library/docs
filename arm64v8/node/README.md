@@ -1,10 +1,5 @@
 # Node.js
 
-[![dockeri.co](http://dockeri.co/image/_/node)](https://registry.hub.docker.com/_/node/)
-
-[![GitHub issues](https://img.shields.io/github/issues/nodejs/docker-node.svg "GitHub issues")](https://github.com/nodejs/docker-node)
-[![GitHub stars](https://img.shields.io/github/stars/nodejs/docker-node.svg "GitHub stars")](https://github.com/nodejs/docker-node)
-
 The official Node.js docker image, made with love by the node community.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
