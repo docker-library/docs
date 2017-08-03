@@ -26,7 +26,7 @@ Then, access it via `http://localhost:3001` or `http://host-ip:3001` in a browse
 
 # Stateful
 
-Mount your existing content using the Alpine base image:
+Mount your existing content. In this example we also use the Alpine base image.
 
 ### Ghost 1.x.x
 
