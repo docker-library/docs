@@ -45,18 +45,18 @@ $ docker run —d --name ghostdemo -p 3001:2368 -v /path/to/ghost/blog:/var/lib/
 If you want to run Ghost 0.11.xx, be aware of the container’s path difference:
 
 - Ghost 1.x.x is: `/var/lib/ghost/content/`
-- Ghost 0.11.x is: ``/var/lib/ghost/` 
+- Ghost 0.11.x is: `/var/lib/ghost/` 
 
-# Sqlite Database
+# SQLite Database
 
-This Docker image for Ghost use Sqlite. There is nothing special to configure.
+This Docker image for Ghost uses SQLite. There is nothing special to configure.
 
 # Docker Volume
 
-Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost` and then reference it:
+Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost/content/` (or /var/lib/ghost/ for 0.11.x) and then reference it:
 
 ```console
-$ docker run --name some-ghost --volumes-from some-ghost-data ghost
+$ docker run —d name ghostdemo --volumes-from ghostdemo-data ghost
 ```
 
 # What is the Node.js version?
