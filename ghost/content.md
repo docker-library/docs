@@ -42,10 +42,10 @@ $ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/g
 
 ### Breaking change 
 
-If you want to run Ghost 0.11.xx, be aware of the container’s path difference:
+If you want to run Ghost 0.11.xx, be aware of the container's path difference:
 
-- Ghost 1.x.x is: `/var/lib/ghost/content`
-- Ghost 0.11.x is: `/var/lib/ghost` 
+   Ghost 1.x.x is: `/var/lib/ghost/content`
+   Ghost 0.11.x is: `/var/lib/ghost` 
 
 # SQLite Database
 
