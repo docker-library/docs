@@ -1,5 +1,4 @@
-What is MediaWiki?
-==================
+# What is MediaWiki?
 
 MediaWiki is free and open-source wiki software. Originally developed by Magnus Manske and improved by Lee Daniel Crocker, it runs on many websites, including Wikipedia, Wiktionary and Wikimedia Commons. It is written in the PHP programming language and stores the contents into a database. Like WordPress, which is based on a similar licensing and architecture, it has become the dominant software in its category.
 
@@ -7,8 +6,7 @@ MediaWiki is free and open-source wiki software. Originally developed by Magnus 
 
 %%LOGO%%
 
-How to use this image
-=====================
+# How to use this image
 
 The basic pattern for starting a `%%REPO%%` instance is:
 
@@ -28,35 +26,31 @@ There are multiple database types supported by this image, most easily used via 
 
 When first accessing the webserver provided by this image, it will go through a brief setup process. The details provided below are specifically for the "Set up database" step of that configuration process.
 
-MySQL
------
+## MySQL
 
 ```console
 $ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%REPO%%
 ```
 
--	Database type: `MySQL, MariaDB, or equivalent`
--	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mariadb`](https://registry.hub.docker.com/_/mariadb/)\)
--	ADVANCED OPTIONS; Database host: `mysql` (for using the `/etc/hosts` entry added by `--link` to access the linked container's MySQL instance)
+-   Database type: `MySQL, MariaDB, or equivalent`
+-   Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mariadb`](https://registry.hub.docker.com/_/mariadb/))
+-   ADVANCED OPTIONS; Database host: `mysql` (for using the `/etc/hosts` entry added by `--link` to access the linked container's MySQL instance)
 
-Volumes
--------
+## Volumes
 
 By default, this image does not include any volumes.
 
-The paths `/var/www/html/images` and `/var/www/html/LocalSettings.php` are things that generally ought to be volumes, but do not explicitly have a `VOLUME` declaration in this image because volumes cannot be removed.
+The paths `/var/www/html/images` and `/var/www/html/LocalSettings.php`  are things that generally ought to be volumes, but do not explicitly have a `VOLUME` declaration in this image because volumes cannot be removed.
 
 ```console
 $ docker run --rm %%REPO%% tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
 ```
 
-%%STACK%%
----------
+## %%STACK%%
 
 Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
-Adding additional libraries / extensions
-----------------------------------------
+## Adding additional libraries / extensions
 
 This image does not provide any additional PHP extensions or other libraries, even if they are required by popular plugins. There are an infinite number of possible plugins, and they potentially require any extension PHP supports. Including every PHP extension that exists would dramatically increase the image size.
 
@@ -64,5 +58,5 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
--	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
--	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `%%REPO%%` is updated.
+-   [Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
+-   [Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `%%REPO%%` is updated.
