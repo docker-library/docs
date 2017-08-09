@@ -20,8 +20,8 @@ WARNING:
 -	[`0.6.5` (*0.6.5/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/c087a27b5ec93445e89dc46f25af973f114f1399/0.6.5/Dockerfile)
 -	[`0.7.0` (*0.7.0/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.0/Dockerfile)
 -	[`0.7.2` (*0.7.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.2/Dockerfile)
--	[`0.7.3`, `latest` (*0.7.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.3/Dockerfile)
--	[`0.8.0-rc1` (*0.8.0-rc1/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/638047d80dc87b97f7bda67c758f54b2826959ce/0.8.0-rc1/Dockerfile)
+-	[`0.7.3` (*0.7.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.3/Dockerfile)
+-	[`0.8.0`, `latest` (*0.8.0/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/d1cbdce2b531e9223356efb14e828afa556e1f70/0.8.0/Dockerfile)
 
 # Quick reference
 
