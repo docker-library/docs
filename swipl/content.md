@@ -22,7 +22,7 @@ It is also useful to build images on top of this base image which rely on SWI-Pr
 
 ```dockerfile
 FROM %%IMAGE%%
-ADD souce.tar.gz /app
+COPY . /app
 CMD ["swipl", "/app/start.pl"]
 ```
 
