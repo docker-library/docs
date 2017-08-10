@@ -35,7 +35,7 @@ $ docker run -it --rm --name my-running-app my-rust-app
 There may be occasions where it is not appropriate to run your app inside a container. To compiler, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:1.19.0 cargo build --release
+$ docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:1.19.0 cargo build --release
 ```
 
 This will add your current directory, as a volume, to the container, set the working directory to the volume, and run the command `cargo build --release`. This tells Cargo, Rust's build system, to compile the crate in `myapp` and output the executable to `target/release/myapp`.
