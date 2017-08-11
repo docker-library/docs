@@ -120,7 +120,7 @@ $ docker run -it --link some-cassandra:cassandra --rm cassandra cqlsh cassandra
 
 ... where `some-cassandra` is the name of your original Cassandra Server container.
 
-More information about the CQL can be found in the [Cassandra documentation](https://cassandra.apache.org/doc/cql3/CQL.html).
+More information about the CQL can be found in the [Cassandra documentation](https://cassandra.apache.org/doc/latest/cql/index.html).
 
 ## Container shell access and viewing Cassandra logs
 
