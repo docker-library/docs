@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `7.5.11` (*7.5.11/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/e8d1f0bf3db5e9cbfa331aba06bb740a76a81f83/7.5.11/stretch/Dockerfile)
+-	[`latest`, `7.5.12` (*7.5.12/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/c62441347c7984269ab315fbf042850cbe3407fa/7.5.12/stretch/Dockerfile)
 
 # Quick reference
 
