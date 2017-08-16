@@ -61,7 +61,7 @@ docker run --rm --interactive --tty \
 
 ### PHP Extensions
 
-We aim to deliver an image that is as lean as possible, build for running Composer only.
+We aim to deliver an image that is as lean as possible, built for running Composer only.
 
 Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/articles/scripts.md) require the availability of certain PHP extensions. In this scenario, you have two options:
 
