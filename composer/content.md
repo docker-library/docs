@@ -21,7 +21,7 @@ You can mount the Composer home directory from your host inside the Container to
 ```sh
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
-    --volume $COMPOSER_HOME:/composer \
+    --volume $COMPOSER_HOME:/tmp \
     composer install
 ```
 
@@ -61,7 +61,7 @@ docker run --rm --interactive --tty \
 
 ### PHP Extensions
 
-We strive to deliver an image that is as lean as possible, aimed at running Composer only.
+We aim to deliver an image that is as lean as possible, built for running Composer only.
 
 Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/articles/scripts.md) require the availability of certain PHP extensions. In this scenario, you have two options:
 
