@@ -218,7 +218,7 @@ Then you need to stop your running XWiki container. You should keep your DB cont
 
 Caveats:
 
--	Right now we have an [outstanding issue](https://jira.xwiki.org/browse/XDOCKER-20) and thus if you've had to modify `xwiki.properties` or `xwiki.cfg` inside the XWiki container, you'll need to port your changes inside the new container (see the section below). 
+-	Right now we have an [outstanding issue](https://jira.xwiki.org/browse/XDOCKER-20) and thus if you've had to modify `xwiki.properties` or `xwiki.cfg` inside the XWiki container, you'll need to port your changes inside the new container (see the section below).
 
 # Details for the xwiki image
 
