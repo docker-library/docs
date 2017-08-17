@@ -206,6 +206,20 @@ Note that if you want to set a custom version of XWiki you can edit the `.env` f
 
 Note that `docker-compose up` will automatically build the XWiki image on the first run. If you need to rebuild it you can issue `docker-compose up --build`. You can also build the image with `docker build . -t xwiki-mysql-tomcat:latest` for example.
 
+# Upgrading XWiki
+
+You've installed an XWiki docker image and used it and now comes the time when you'd like to upgrade XWiki to a newer version.
+
+If you've followed the instructions above you've mapped the XWiki permanent directory to a local directory on your host.
+
+Thus all you need to do is to execute the installation instructions above as if you were installing a new version of the XWiki docker image.
+
+Then you need to stop your running XWiki container. You should keep your DB container running. Then all you have to do is start a new container as described above, using the new XWiki docker image.
+
+Caveats:
+
+-	Right now we have an [outstanding issue](https://jira.xwiki.org/browse/XDOCKER-20) and thus if you've had to modify `xwiki.properties` or `xwiki.cfg` inside the XWiki container, you'll need to port your changes inside the new container (see the section below).
+
 # Details for the xwiki image
 
 ## Configuration Options
@@ -216,6 +230,14 @@ The first time you create a container out of the xwiki image, a shell script (`/
 -	`DB_PASSWORD`: The user password used by XWiki to read/write to the DB.
 -	`DB_DATABASE`: The name of the XWiki database to use/create.
 -	`DB_HOST`: The name of the host (or docker container) containing the database. Default is "db".
+
+If you need to configure XWiki (e.g. modify `xwiki.properties` or `xwiki.cfg`) or perform some additional configuration, you can execute another container and attach to the running XWiki container by issuing:
+
+```console
+docker exec -it <xwiki container id> bash -l
+```
+
+Note that we plan to [lift this limitation in the future](https://jira.xwiki.org/browse/XDOCKER-20).
 
 ## Passing JVM options
 
