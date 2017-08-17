@@ -20,8 +20,8 @@ WARNING:
 -	[`10.0.6-fpm`, `10.0-fpm`, `10-fpm` (*10.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/e714562be972718c33d06d875e4d53ac63a9aeec/10.0/fpm/Dockerfile)
 -	[`11.0.4-apache`, `11.0-apache`, `11-apache`, `11.0.4`, `11.0`, `11` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/444cd43edfdeef05744a5641c913b03583de7894/11.0/apache/Dockerfile)
 -	[`11.0.4-fpm`, `11.0-fpm`, `11-fpm` (*11.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/444cd43edfdeef05744a5641c913b03583de7894/11.0/fpm/Dockerfile)
--	[`12.0.1-apache`, `12.0-apache`, `12-apache`, `apache`, `12.0.1`, `12.0`, `12`, `latest` (*12.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/444cd43edfdeef05744a5641c913b03583de7894/12.0/apache/Dockerfile)
--	[`12.0.1-fpm`, `12.0-fpm`, `12-fpm`, `fpm` (*12.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/444cd43edfdeef05744a5641c913b03583de7894/12.0/fpm/Dockerfile)
+-	[`12.0.2-apache`, `12.0-apache`, `12-apache`, `apache`, `12.0.2`, `12.0`, `12`, `latest` (*12.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/2220249a20b6b92e25f51eb7c1f39a77b7838c49/12.0/apache/Dockerfile)
+-	[`12.0.2-fpm`, `12.0-fpm`, `12-fpm`, `fpm` (*12.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/2220249a20b6b92e25f51eb7c1f39a77b7838c49/12.0/fpm/Dockerfile)
 
 # Quick reference
 
