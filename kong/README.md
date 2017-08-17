@@ -47,9 +47,9 @@ WARNING:
 
 # What is Kong?
 
-Kong was built to secure, manage and extend Microservices & APIs. If you're building for web, mobile or IoT (Internet of Things) you will likely end up needing to implement common functionality on top of your actual software. Kong can help by acting as a gateway for any HTTP resource while providing logging, authentication and other functionality through plugins.
+Kong is a scalable, open source API Layer (also known as an API Gateway, or API Middleware). Kong was originally built at Mashape to secure, manage and extend over 15,000 Microservices for its API Marketplace, which generates billions of requests per month.
 
-Powered by NGINX and Cassandra with a focus on high performance and reliability, Kong runs in production at Mashape where it has handled billions of API requests for over ten thousand APIs.
+Backed by the battle-tested NGINX with a focus on high performance, Kong was made available as an open-source platform in 2015. Under active development, Kong is now used in production at hundreds of organizations from startups, to large enterprises and government departments including: The New York Times, Expedia, Healthcare.gov, The Guardian, Condè Nast and The University of Auckland.
 
 Kong's documentation can be found at [getkong.org/docs](http://getkong.org/docs).
 
@@ -57,7 +57,7 @@ Kong's documentation can be found at [getkong.org/docs](http://getkong.org/docs)
 
 # How to use this image
 
-First, Kong requires a running Cassandra 2.2.x or PostgreSQL 9.4/9.5 cluster before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
+First, Kong requires a running Cassandra 2.2.x/3.x or PostgreSQL 9.4/9.5 cluster before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
 
 ## 1. Link Kong to either a Cassandra or PostgreSQL container
 
@@ -70,7 +70,7 @@ Start a Cassandra container by executing:
 ```shell
 $ docker run -d --name kong-database \
                 -p 9042:9042 \
-                cassandra:2.2
+                cassandra:3
 ```
 
 ### Postgres
@@ -85,9 +85,26 @@ docker run -d --name kong-database \
                 postgres:9.4
 ```
 
+## 2. Prepare your database
+
+Run the database migrations with an ephemeral Kong container:
+
+```shell
+docker run -it --rm \
+    --link kong-database:kong-database \
+    -e "KONG_DATABASE=postgres" \
+    -e "KONG_PG_HOST=kong-database" \
+    -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
+    kong:latest kong migrations up
+```
+
+In the above example, both Cassandra and PostgreSQL are configured, but you should update the `KONG_DATABASE` environment variable with either `cassandra` or `postgres`.
+
+**Note**: migrations should never be run concurrently; only one Kong node should be performing migrations at a time.
+
 ### Start Kong
 
-Once the database is running, we can start a Kong container and link it to the database container, and configuring the `KONG_DATABASE` environment variable with either `cassandra` or `postgres` depending on which database you decided to use:
+Once the database has been started and prepared, we can start a Kong container and link it to the database container, and configuring the `KONG_DATABASE` environment variable with either `cassandra` or `postgres` depending on which database you decided to use:
 
 ```shell
 $ docker run -d --name kong \
@@ -98,16 +115,15 @@ $ docker run -d --name kong \
     -p 8000:8000 \
     -p 8443:8443 \
     -p 8001:8001 \
-    -p 7946:7946 \
-    -p 7946:7946/udp \
+    -p 8444:8444 \
     kong
 ```
 
-If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([proxy][http://getkong.org/docs/latest/configuration/#proxy_port]), `8443` ([proxy SSL](http://getkong.org/docs/latest/configuration/#proxy_listen_ssl)) and `8001` ([admin api](http://getkong.org/docs/latest/configuration/#admin_api_port)) ports. Port `7946` ([cluster](http://getkong.org/docs/latest/configuration/#cluster_listen)) is being used only by other Kong nodes.
+If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([Proxy][http://getkong.org/docs/latest/configuration/#proxy_port]), `8443` ([Proxy SSL](http://getkong.org/docs/latest/configuration/#proxy_listen_ssl)), `8001` ([Admin API](http://getkong.org/docs/latest/configuration/#admin_listen)) and `8444` ([Admin API SSL](http://getkong.org/docs/latest/configuration/#admin_listen_ssl)) ports.
 
 You can now read the docs at [getkong.org/docs](http://getkong.org/docs) to learn more about Kong.
 
-## 2. Use Kong with a custom configuration (and a custom Cassandra/PostgreSQL cluster)
+## 3. Use Kong with a custom configuration (and a custom Cassandra/PostgreSQL cluster)
 
 You can override any property of the [Kong configuration file](http://getkong.org/docs/latest/configuration/) with environment variables. Just prepend any Kong configuration property with the `KONG_` prefix, for example:
 
