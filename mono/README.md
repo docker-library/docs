@@ -16,10 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.12.1`, `3.12.0`, `3.12`, `3` (*3.12.1/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/3.12.1/Dockerfile)
+-	[`5.2.0.215`, `5.2.0`, `5.2`, `5`, `latest` (*5.2.0.215/Dockerfile*)](https://github.com/mono/docker/blob/c895836e0e8cb7ee0d8124f360d2febcf376019d/5.2.0.215/Dockerfile)
+-	[`5.2.0.215-slim`, `5.2.0-slim`, `5.2-slim`, `5-slim`, `slim` (*5.2.0.215/slim/Dockerfile*)](https://github.com/mono/docker/blob/c895836e0e8cb7ee0d8124f360d2febcf376019d/5.2.0.215/slim/Dockerfile)
+-	[`5.0.1.1`, `5.0.1`, `5.0` (*5.0.1.1/Dockerfile*)](https://github.com/mono/docker/blob/39b989ea0ef3e787fb75410521217cb7cb7df05e/5.0.1.1/Dockerfile)
 -	[`4.8.0.524`, `4.8.0`, `4.8`, `4` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/4.8.0.524/Dockerfile)
--	[`5.0.0.100`, `5.0.0` (*5.0.0.100/Dockerfile*)](https://github.com/mono/docker/blob/d7a8871afc770695b81977272792d8966340939e/5.0.0.100/Dockerfile)
--	[`5.0.1.1`, `5.0.1`, `5.0`, `5`, `latest` (*5.0.1.1/Dockerfile*)](https://github.com/mono/docker/blob/39b989ea0ef3e787fb75410521217cb7cb7df05e/5.0.1.1/Dockerfile)
+-	[`3.12.1`, `3.12.0`, `3.12`, `3` (*3.12.1/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/3.12.1/Dockerfile)
 
 # Quick reference
 
@@ -86,6 +87,18 @@ You should see any output from your app now.
 This Docker image is provided by Xamarin, for users of the Mono Project.
 
 Thanks to [Michael Friis](http://friism.com/) for his preliminary work.
+
+# Image Variants
+
+The `mono` images come in many flavors, each designed for a specific use case.
+
+## `mono:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `mono:slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `mono`. Unless you are working in an environment where *only* the `mono` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
