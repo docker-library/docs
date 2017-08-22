@@ -20,7 +20,6 @@ WARNING:
 -	[`5.2.0.215-slim`, `5.2.0-slim`, `5.2-slim`, `5-slim`, `slim` (*5.2.0.215/slim/Dockerfile*)](https://github.com/mono/docker/blob/c895836e0e8cb7ee0d8124f360d2febcf376019d/5.2.0.215/slim/Dockerfile)
 -	[`5.0.1.1`, `5.0.1`, `5.0` (*5.0.1.1/Dockerfile*)](https://github.com/mono/docker/blob/39b989ea0ef3e787fb75410521217cb7cb7df05e/5.0.1.1/Dockerfile)
 -	[`4.8.0.524`, `4.8.0`, `4.8`, `4` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/4.8.0.524/Dockerfile)
--	[`3.12.1`, `3.12.0`, `3.12`, `3` (*3.12.1/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/3.12.1/Dockerfile)
 
 # Quick reference
 
