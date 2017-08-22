@@ -16,6 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`0.11-alpine`, `0.11.0-alpine` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/55d0b1e894b328483e36b40b178fc080662da773/Dockerfile)
 -	[`0.11`, `0.11.0`, `latest` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/199530170a710d96145e6e529678ec0ef076a484/Dockerfile)
 -	[`0.10`, `0.10.3` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/a209825a9a74f9921c71c13ecb6e39a1b8e18aef/Dockerfile)
 -	[`0.9`, `0.9.9` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/b512fa58a9c5a085b21bc5ffb90299cbc4e48eba/Dockerfile)
