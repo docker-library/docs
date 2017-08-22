@@ -125,6 +125,7 @@ $ docker run --name=influxdb -d -p 8086:8086 influxdb
 ```
 
 Run the influx client in this container:
+
 ```console
 $ docker exec -ti influxdb influx
 ```
