@@ -81,7 +81,7 @@ $ docker run --name some-mediawiki --link some-mysql:mysql -d mediawiki
 
 -	Database type: `MySQL, MariaDB, or equivalent`
 -	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mariadb`](https://registry.hub.docker.com/_/mariadb/))
--	ADVANCED OPTIONS; Database host: `mysql` (for using the `/etc/hosts` entry added by `--link` to access the linked container's MySQL instance)
+-	ADVANCED OPTIONS; Database host: `some-mysql` (for using the `/etc/hosts` entry added by `--link` to access the linked container's MySQL instance)
 
 ## Volumes
 
@@ -134,7 +134,7 @@ Run `docker stack deploy -c stack.yml mediawiki` (or `docker-compose -f stack.ym
 
 This image does not provide any additional PHP extensions or other libraries, even if they are required by popular plugins. There are an infinite number of possible plugins, and they potentially require any extension PHP supports. Including every PHP extension that exists would dramatically increase the image size.
 
-If you need additional PHP extensions, you'll need to create your own image `FROM` this one. The [documentation of the `php` image](https://github.com/docker-library/docs/blob/master/php/README.md#how-to-install-more-php-extensions) explains how to compile additional extensions.
+If you need additional PHP extensions, you'll need to create your own image `FROM` this one. The [documentation of the `php` image](https://github.com/docker-library/docs/blob/31280550a3c7104fef824450753844d2f3d917be/php/README.md#how-to-install-more-php-extensions) explains how to compile additional extensions.
 
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
