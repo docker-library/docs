@@ -117,9 +117,9 @@ for image in "${images[@]}"; do
 
 		echo '  STACK => '"$repo"'/stack.md'
 		replace_field "$targetFile" 'STACK' "$stack"
-		echo '  STACK-YML => '"$repo"'/docker-stack.yml'
+		echo '  STACK-YML => '"$repo"'/stack.yml'
 		replace_field "$targetFile" 'STACK-YML' "$stackYml"
-		echo '  STACK-URL => '"$repo"'/docker-stack.yml'
+		echo '  STACK-URL => '"$repo"'/stack.yml'
 		replace_field "$targetFile" 'STACK-URL' "$stackUrl"
 
 		echo '  COMPOSE => '"$repo"'/compose.md'
