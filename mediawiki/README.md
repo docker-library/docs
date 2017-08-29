@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`stable`, `latest`, `1.29`, `1.29.1` (*stable/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/659cf5aedb8f785bb400a63f9c450f458ead260c/stable/Dockerfile)
--	[`legacy`, `1.28`, `1.28.2` (*legacy/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/659cf5aedb8f785bb400a63f9c450f458ead260c/legacy/Dockerfile)
--	[`lts`, `1.27`, `1.27.3` (*lts/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/659cf5aedb8f785bb400a63f9c450f458ead260c/lts/Dockerfile)
+-	[`stable`, `latest`, `1.29`, `1.29.1` (*stable/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/4f836fabe384623b9a6d9e43a5d025c267bfe496/stable/Dockerfile)
+-	[`legacy`, `1.28`, `1.28.2` (*legacy/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/4f836fabe384623b9a6d9e43a5d025c267bfe496/legacy/Dockerfile)
+-	[`lts`, `1.27`, `1.27.3` (*lts/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/4f836fabe384623b9a6d9e43a5d025c267bfe496/lts/Dockerfile)
 
 # Quick reference
 
