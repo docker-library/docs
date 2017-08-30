@@ -6,10 +6,12 @@
 
 # How to use this image
 
+Note that if you are mounting a volume and the uid running Docker is not _1000_, you should run as user _root_ (`-u root`).
+
 ## Building a Gradle project
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -v "$PWD":/project -w /project --name gradle gradle:alpine gradle <gradle-task>`
+`docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project gradle:latest gradle <gradle-task>`
 
 **Note: Java 9 support is experimental**
