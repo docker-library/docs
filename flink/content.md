@@ -31,7 +31,7 @@ $ docker run --rm -t flink flink run -m <jobmanager:port> -c <your_class> <your_
 You can run a JobManager (master).
 
 ```console
-$ docker run --name flink_jobmanager -d -t flink taskmanager
+$ docker run --name flink_jobmanager -d -t flink jobmanager
 ```
 
 You can also run a TaskManager (worker). Notice that workers need to register with the JobManager directly or via ZooKeeper so the master starts to send them tasks to execute.
