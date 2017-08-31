@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/05366cb4c6a6aab8e1ff9ca74c81b09d9a57b5b5/jessie/2.8.11/Dockerfile)
--	[`3.2`, `3.2.2`, `latest` (*stretch/3.2.2/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/aecd03e23898c9659d4611d9696b257086da08ff/stretch/3.2.2/Dockerfile)
+-	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/d6fca9a137cd21345b1d380fc0e72daacb6130ce/jessie/2.8.11/Dockerfile)
+-	[`3.2`, `3.2.2`, `latest` (*stretch/3.2.2/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/d6fca9a137cd21345b1d380fc0e72daacb6130ce/stretch/3.2.2/Dockerfile)
 
 # Quick reference
 
