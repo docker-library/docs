@@ -7,7 +7,7 @@ files="$(
 	find \( \
 			-name '*.md' \
 			-not -name 'README.md' \
-		\) -print0 \
+		\) -exec test -s '{}' ';' -print0 \
 		| xargs -0 markdownfmt -l)"
 if [ "$files" ]; then
 	echo >&2 'Need markdownfmt:'
