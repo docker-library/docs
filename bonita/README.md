@@ -17,7 +17,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.4.3` (*7.4/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/5e4d4c6d86a90b2f7639215e4098097200a8751a/7.4/Dockerfile)
--	[`7.5.2`, `latest` (*7.5/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/88bafab8f86e544090a65afc0970db5f6a286242/7.5/Dockerfile)
+-	[`7.5.4`, `latest` (*7.5/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/3d28a037ecf87d6b710b1debe43ccf7fc31282e2/7.5/Dockerfile)
 
 # Quick reference
 
@@ -260,17 +260,17 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 	-	If >= 7.3.0
 
 	```console
-	$ docker run --name=bonita_7.5.2_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.5.2
+	$ docker run --name=bonita_7.5.4_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.5.4
 	```
 
 -	Reapply specific configuration if needed, for example with a version >= 7.3.0 :
 
 	```console
-	$ docker exec -ti bonita_7.5.2_postgres /bin/bash
+	$ docker exec -ti bonita_7.5.4_postgres /bin/bash
 	```
 
 	```console
-	$ cd /opt/bonita/BonitaBPMCommunity-7.5.2-Tomcat-7.0.76/setup
+	$ cd /opt/bonita/BonitaBPMCommunity-7.5.4-Tomcat-7.0.76/setup
 	$ ./setup.sh pull
 	$ TENANT_LOGIN=tech_user
 	$ TENANT_PASSWORD=secret
@@ -290,7 +290,7 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 	```
 
 	```console
-	$ docker restart bonita_7.5.2_postgres
+	$ docker restart bonita_7.5.4_postgres
 	```
 
 For more details regarding Bonita migration, see the [documentation](http://documentation.bonitasoft.com/?page=migrate-from-an-earlier-version-of-bonita-bpm).
@@ -385,6 +385,14 @@ These variables are optional, and used in conjunction to create users and databa
 
 `DB_ADMIN_PASS` if no value is provided, this is automatically set using the value from the linked container: `MYSQL_ENV_MYSQL_ROOT_PASSWORD` or `POSTGRES_ENV_POSTGRES_PASSWORD`.
 
+### `DB_DROP_EXISTING`, `BIZ_DB_DROP_EXISTING`
+
+`DB_DROP_EXISTING` and `BIZ_DB_DROP_EXISTING` can be used to drop existing databases in order to reuse an existing database instance.
+
+`DB_DROP_EXISTING` default value is `N`.
+
+`BIZ_DB_DROP_EXISTING` default value is `N`.
+
 # How to extend this image
 
 If you would like to do additional initialization, you can add a `*.sh` script under `/opt/custom-init.d`. The `startup.sh` file will source any `*.sh` script found in this directory to do further initialization before starting the service.
@@ -393,7 +401,7 @@ For example, you can increase the log level :
 
 	mkdir -p custom_bonita
 	echo '#!/bin/bash' > custom_bonita/bonita.sh
-	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaBPMCommunity-7.5.2-Tomcat-7.0.76/server/conf/logging.properties' >> custom_bonita/bonita.sh
+	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaBPMCommunity-7.5.4-Tomcat-7.0.76/server/conf/logging.properties' >> custom_bonita/bonita.sh
 	chmod +x custom_bonita/bonita.sh
 	
 	docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
@@ -402,7 +410,7 @@ Note: There are several ways to check the `bonita` logs. One of them is
 
 ```console
 $ docker exec -ti bonita_custom /bin/bash
-tail -f /opt/bonita/BonitaBPMCommunity-7.5.2-Tomcat-7.0.76/server/logs/bonita.`date +%Y-%m-%d`.log
+tail -f /opt/bonita/BonitaBPMCommunity-7.5.4-Tomcat-7.0.76/server/logs/bonita.`date +%Y-%m-%d`.log
 ```
 
 # License
