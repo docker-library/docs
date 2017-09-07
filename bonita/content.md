@@ -339,6 +339,14 @@ These variables are optional, and used in conjunction to create users and databa
 
 `DB_ADMIN_PASS` if no value is provided, this is automatically set using the value from the linked container: `MYSQL_ENV_MYSQL_ROOT_PASSWORD` or `POSTGRES_ENV_POSTGRES_PASSWORD`.
 
+### `DB_DROP_EXISTING`, `BIZ_DB_DROP_EXISTING`
+
+`DB_DROP_EXISTING` and `BIZ_DB_DROP_EXISTING` can be used to drop existing databases in order to reuse an existing database instance.
+
+`DB_DROP_EXISTING` default value is `N`.
+
+`BIZ_DB_DROP_EXISTING` default value is `N`.
+
 # How to extend this image
 
 If you would like to do additional initialization, you can add a `*.sh` script under `/opt/custom-init.d`. The `startup.sh` file will source any `*.sh` script found in this directory to do further initialization before starting the service.
