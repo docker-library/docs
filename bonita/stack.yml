@@ -1,0 +1,56 @@
+# Use tech_user/secret as user/password credentials
+version: '3'
+
+services:
+
+    db:
+        image: postgres:9.3
+        environment:
+            POSTGRES_PASSWORD: example
+        entrypoint: &postgres-script
+           - sh
+           - -c
+           - |
+             set -e
+             echo '#!/bin/bash' > /docker-entrypoint-initdb.d/bonita.sh
+             echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$$/max_prepared_transactions = 100/" "$$PGDATA"/postgresql.conf' >> /docker-entrypoint-initdb.d/bonita.sh
+             chmod +x /docker-entrypoint-initdb.d/bonita.sh
+             /docker-entrypoint.sh postgres
+
+    bonita:
+        image: bonita
+        ports:
+            - 8080:8080
+        environment:
+            - POSTGRES_ENV_POSTGRES_PASSWORD=example
+            - DB_VENDOR=postgres
+            - DB_HOST=db
+            - TENANT_LOGIN=tech_user
+            - TENANT_PASSWORD=secret
+            - PLATFORM_LOGIN=pfadmin
+            - PLATFORM_PASSWORD=pfsecret
+        depends_on:
+            - db
+        entrypoint: &bonita-script
+           - sh
+           - -c
+           - |
+             set -e
+             cat > /wait-for-postgres.sh <<- EOM
+             #!/bin/bash
+             # wait-for-postgres.sh
+             set -e
+             host="\$$1"
+             shift
+             cmd="\$$@"
+             PGPASSWORD=\$$POSTGRES_ENV_POSTGRES_PASSWORD
+             export PGPASSWORD
+             until psql -h "\$$host" -U "postgres" -c '\l'; do
+               >&2 echo "Postgres is unavailable - sleeping"
+               sleep 1
+             done
+             >&2 echo "Postgres is up - executing command"
+             exec \$$cmd
+             EOM
+             chmod +x /wait-for-postgres.sh
+             /wait-for-postgres.sh $$DB_HOST /opt/files/startup.sh
