@@ -70,6 +70,12 @@ Defaults to `2`. ZooKeeper's `syncLimit`
 
 > Amount of time, in ticks (see tickTime), to allow followers to sync with ZooKeeper. If followers fall too far behind a leader, they will be dropped.
 
+### `ZOO_MAX_CLIENT_CNXNS`
+
+Defaults to `60`. ZooKeeper's `maxClientCnxns`
+
+> Limits the number of concurrent connections (at the socket level) that a single client, identified by IP address, may make to a single member of the ZooKeeper ensemble.
+
 ## Replicated mode
 
 Environment variables below are mandatory if you want to run Zookeeper in replicated mode.
